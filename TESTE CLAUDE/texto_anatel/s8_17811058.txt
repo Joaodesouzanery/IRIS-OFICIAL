@@ -1,0 +1,50 @@
+SEI/ANATEL - 15919020 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 168, de 06 de julho de 2026
+Processo nº 53524.000430/2021-11
+Recorrente/Interessado: DATORA MOBILE TELECOMUNICAÇÕES S.A.
+CNPJ nº 18.384.930/0001-51
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. LANÇAMENTO TRIBUTÁRIO, ESTIMATIVAS DE RECEITA, INTERCONEXÃO E MULTA DE OFÍCIO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por DATORA MOBILE TELECOMUNICAÇÕES S.A., atualmente denominada ARQIA TELECOMUNICAÇÕES S.A., contra o Despacho Decisório nº 623/2025/CODI/SCO, que reconheceu a procedência dos lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações - Fust do exercício de 2019.
+2. Fato relevante. A Anatel constituiu o crédito tributário por meio da Notificação de Lançamento nº 001-005974/2023. A Contribuinte apresentou impugnação e, depois, Recurso Administrativo.
+3. As alegações da Recorrente. A Recorrente alegou: (i) nulidade da notificação por cerceamento de defesa; (ii) incidência indevida do Fust sobre estimativas de receitas; (iii) bitributação; (iv) exclusão das receitas de interconexão da base de cálculo; (v) ilegalidade da Súmula nº 7 da Anatel; e (vi) caráter confiscatório da multa de ofício.
+4. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO reconheceu a procedência dos lançamentos e manteve a decisão em sede recursal, com encaminhamento dos autos ao Conselho Diretor para julgamento de mérito.
+II. QUESTÃO EM DISCUSSÃO
+Há seis questões em discussão: (i) saber se a notificação de lançamento é nula por cerceamento de defesa; (ii) saber se as estimativas de receitas integram a base de cálculo do Fust ; (iii) saber se houve bitributação em razão do reconhecimento contábil das receitas por estimativa e posterior ajuste; (iv) saber se as receitas de interconexão devem ser excluídas da base de cálculo do Fust ; (v) saber se a Súmula nº 7 da Anatel contraria o art. 6º, parágrafo único, da Lei nº 9.998/2000; e (vi) saber se a multa de ofício tem caráter confiscatório.
+III. RAZÕES DE DECIDIR
+1. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, porque o caso não preencheu os requisitos do art. 5º da Portaria nº 642/2013 nem atingiu o valor de alçada indicado no Parecer nº 00161/2026/PFE-ANATEL/PGF/AGU.
+2. O Recurso é tempestivo, cabível, foi interposto por parte legítima e atende ao requisito de interesse recursal.
+3. Não houve cerceamento de defesa. A Contribuinte teve acesso à Notificação de Lançamento, ao Relatório de Fiscalização e aos anexos, inclusive à planilha com o detalhamento das receitas consideradas pela fiscalização.
+4. O Relatório de Fiscalização descreveu os fatos, identificou o sujeito passivo, indicou os períodos fiscalizados, discriminou as bases de cálculo, quantificou a exigência e apresentou o enquadramento legal da cobrança.
+5. A Impugnação e o Recurso demonstram que a Recorrente compreendeu os fundamentos da autuação e exerceu o contraditório e a ampla defesa.
+6. As estimativas de receitas integram a base de cálculo do Fust quando vinculadas à prestação de serviços de telecomunicações e reconhecidas no regime de competência.
+7. O reconhecimento contábil por estimativa não transforma a receita em valor hipotético estranho à receita operacional bruta do período.
+8. O regime de competência impõe o reconhecimento da receita no momento da prestação do serviço, ainda que o faturamento ou o recebimento ocorram em momento posterior.
+9. Não houve bitributação. O registro inicial por estimativa e os ajustes posteriores constituem etapas do reconhecimento contábil da mesma realidade econômica.
+10. A caracterização de bitributação exigiria prova de manutenção definitiva e cumulativa da mesma receita na base de cálculo, sem estorno, compensação ou substituição, o que não foi demonstrado.
+11. As receitas de interconexão não são automaticamente excluídas da base de cálculo do Fust .
+12. A hipótese de não incidência depende de comprovação de que se trata de transferência entre prestadoras sobre a qual já houve recolhimento pela Prestadora que emitiu a conta ao usuário final.
+13. A Recorrente não comprovou o preenchimento dessa condição. Os documentos apresentados foram insuficientes para demonstrar o recolhimento prévio da contribuição sobre o conjunto das receitas de interconexão apuradas em 2019.
+14. A Súmula nº 7 da Anatel permanece válida e aplicável. Ela não cria obrigação nova e apenas consolida a interpretação administrativa de que a exclusão das receitas de interconexão exige comprovação concreta dos pressupostos normativos.
+15. A multa de ofício tem fundamento no art. 44, I, da Lei nº 9.430/1996. Sua aplicação é vinculada quando verificada declaração inexata e apurada diferença de contribuição.
+16. A multa de 75% (setenta e cinco por cento) não tem caráter confiscatório no caso concreto, pois preserva finalidade punitiva e pedagógica e encontra respaldo em precedentes do Supremo Tribunal Federal - STF.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido.
+Tese de julgamento: "1. Não há nulidade da notificação de lançamento quando o sujeito passivo tem acesso aos fundamentos fáticos e jurídicos da exigência e exerce plenamente o contraditório e a ampla defesa. 2. As estimativas de receitas vinculadas a serviços de telecomunicações e reconhecidas no regime de competência integram a base de cálculo do Fust . 3. Não há bitributação quando o registro por estimativa e os ajustes posteriores constituem etapas do reconhecimento contábil da mesma receita. 4. A exclusão de receitas de interconexão da base de cálculo do Fust depende de comprovação de que se trata de transferência entre prestadoras já tributada na origem. 5. A Súmula nº 7 da Anatel é compatível com o art. 6º, parágrafo único, da Lei nº 9.998/2000. 6. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 não tem caráter confiscatório no percentual aplicado ao caso."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN; Lei nº 9.430/1996, art. 44, I; Lei nº 9.998/2000, art. 6º, IV e parágrafo único; Decreto nº 70.235/1972, art. 33; Decreto nº 3.624/2000, art. 7º, § 2º; Resolução nº 729/2020; Portaria nº 642/2013, art. 5º, IV; e Portaria Anatel nº 2.946/2025.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014, DJe 05.02.2015; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014, DJe 13.05.2014; Conselho Administrativo de Recursos Fiscais - CARF, Acórdão nº 1402-001.756; CARF, Acórdão nº 2201-005.239; Súmula Anatel nº 7; Súmula Anatel nº 26, de 26.07.2024; e Súmula CARF nº 11.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 59/2026/EH (SEI nº 15857279), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15919020 e o código CRC 270F56F5.
+ | 
+Referência: Processo nº 53524.000430/2021-11 | 
+SEI nº 15919020 |

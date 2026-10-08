@@ -1,0 +1,51 @@
+SEI/ANATEL - 16171345 - Acórdão
+Boletim de Serviço Eletrônico em 26/08/2026
+DOU de 26/08/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 220, de 24 de agosto de 2026
+Processo nº 53500.012754/2019-56
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544.0001-47
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 207, de 24 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCEDIMENTO SANCIONADOR. OBRIGAÇÃO DE FAZER EM SUBSTITUIÇÃO À MULTA. RECOMPOSIÇÃO DOS PARÂMETROS DE EXECUÇÃO. PEDIDO PARCIALMENTE DEFERIDO.
+I. CASO EM EXAME
+1. Os pedidos. CLARO S.A. aderiu à obrigação de fazer imposta no Acórdão nº 50/2026, em substituição à multa aplicada no Procedimento para Apuração de Descumprimento de Obrigações - Pado, e requereu a reformulação dos parâmetros de execução da sanção.
+2. A sanção. A obrigação consiste na antecipação de metas dos compromissos de abrangência do Edital nº 1/2021 nas faixas de radiofrequências de 2,3 GHz e 3,5 GHz.
+3. Os fundamentos do pedido. A Prestadora alegou insuficiência do prazo para execução, elevado número de localidades necessário ao cumprimento da obrigação e coexistência com outras obrigações regulatórias. Apresentou proposta alternativa com concentração predominante de recursos em metas de 5G.
+4. A manifestação técnica. A área técnica apontou a necessidade de atualização do valor da obrigação nos termos do Regulamento de Aplicação de Sanções Administrativas - RASA e submeteu a matéria ao Conselho Diretor com proposta intermediária de recomposição dos parâmetros da sanção.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se compete ao Conselho Diretor deliberar sobre a recomposição da obrigação de fazer; (ii) saber se o valor de referência da sanção deve ser atualizado nos termos do art. 36-A, § 6º, II, do RASA; e (iii) saber se os parâmetros fixados no Acórdão nº 50/2026 devem ser recompostos para compatibilizar o interesse público com a viabilidade material de execução da obrigação.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor deliberar sobre a recomposição da obrigação de fazer por ele originalmente imposta. A reformulação da sanção integra o mesmo juízo de oportunidade e conveniência que orientou sua aplicação.
+2. O valor da multa substituída por obrigação de fazer deve ser corrigido pela Taxa do Sistema Especial de Liquidação e de Custódia - SELIC entre a intimação da decisão de primeira instância e a intimação da decisão recursal que promoveu a substituição.
+3. Aplicados o art. 36-A, § 6º, II, e o desconto de 5% (cinco por cento) previsto no art. 36-A, § 3º, do RASA, o valor da obrigação corresponde a R$ 6.094.072,68 (seis milhões, noventa e quatro mil e setenta e dois reais e sessenta e oito centavos).
+4. Subsiste o interesse público na manutenção da obrigação de fazer. A medida direciona recursos sancionatórios para a antecipação de compromissos de conectividade do Edital nº 1/2021 e prioriza localidades sem alternativa de serviço de voz além do Serviço Telefônico Fixo Comutado - STFC.
+5. A proposta da Prestadora não pode ser acolhida nos exatos termos formulados. Ela foi estruturada com base em valor inferior ao devido e reduz, significativamente, a prioridade regulatória atribuída às localidades da faixa de 2,3 GHz.
+6. A manutenção integral dos parâmetros originais compromete a exequibilidade da sanção, porque exigiria, no prazo remanescente, a implantação de número elevado de localidades no prazo remanescente.
+7. É cabível a recomposição parcial da obrigação. Na faixa de 2,3 GHz, a obrigação deve contemplar a antecipação, em um ano, de metas com vencimento em 31 de dezembro de 2028, a serem cumpridas até 31 de dezembro de 2027, com atendimento de, no mínimo, 30 localidades.
+8. O montante remanescente do valor total da obrigação deve ser destinado, na faixa de 3,5 GHz, à antecipação, em um ano, de metas com vencimento em 31 de julho de 2028, a serem cumpridas até 31 de julho de 2027.
+9. A recomposição dos parâmetros exige nova proposta técnica da Prestadora, compatível com o valor corrigido da obrigação, com os percentuais fixados e com a indicação específica dos municípios e localidades a serem contemplados.
+10. Permanecem aplicáveis os demais termos do Acórdão nº 50/2026 que não conflitem com a presente deliberação.
+IV. DISPOSITIVO E TESE
+Pedidos parcialmente deferidos. Retificação do valor da obrigação de fazer para R$ 6.094.072,68 (seis milhões, noventa e quatro mil e setenta e dois reais e sessenta e oito centavos). Manutenção da substituição da multa por obrigação de fazer. Recomposição parcial dos parâmetros fixados no Acórdão nº 50/2026. Determinação para apresentação de nova proposta técnica pela Prestadora e restituição dos autos à Superintendência de Controle de Obrigações - SCO para análise, validação e acompanhamento da execução.
+Tese de julgamento: "1. Compete ao Conselho Diretor deliberar sobre a recomposição de obrigação de fazer por ele originalmente imposta. 2. Na substituição recursal de multa por obrigação de fazer, o valor da sanção deve ser atualizado pela Taxa Selic até a intimação da decisão recursal, com incidência posterior do desconto de 5% previsto no art. 36-A, § 3º, do RASA. 3. É cabível a recomposição dos parâmetros da obrigação de fazer quando necessária para compatibilizar o interesse público com a viabilidade material de execução da sanção. 4. Na hipótese, a obrigação deve contemplar, na faixa de 2,3 GHz, a antecipação, em um ano, de metas com vencimento em 31 de dezembro de 2028, com atendimento de, no mínimo, 30 localidades, e, na faixa de 3,5 GHz, a destinação do montante remanescente à antecipação, em um ano, de metas com vencimento em 31 de julho de 2028 A recomposição dos parâmetros da obrigação não implica aprovação automática da proposta da prestadora, que deve apresentar novo projeto técnico à validação da SCO."
+Dispositivos relevantes citados: Resolução nº 589/2012, arts. 15, 16-A, § 2º, 36-A, § 3º e § 6º, II, e 36-B; Resolução nº 784/2025, art. 3º, parágrafo único.
+Jurisprudência relevante citada: Anatel, Acórdão nº 50, Processo nº 53500.012754/2019-56, Rel. Conselheiro Alexandre Reis Siqueira Freire, Conselho Diretor, Reunião nº 950, j. 12.02.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 69/2026/NP (SEI nº 16018009), integrante deste acórdão:
+a) recompor a obrigação de fazer constante do Acórdão nº 50/2026 (SEI nº 15260917), em observãncia ao art. 36-A, §6º, inciso II, do Regulamento de Aplicação de Sanções Administrativas - RASA, para o montante de R$ 6.094.072,68 (seis milhões, noventa e quatro mil, setenta e dois reais e sessenta e oito centavos), já considerado o desconto de 5% (cinco por cento) previsto no art. 36-A, § 3º, do mesmo normativo;
+b) deferir parcialmente os pedidos formulados pela CLARO S.A., para recompor os parâmetros de cumprimento da obrigação de fazer imposta no Acórdão nº 50/2026 (SEI nº 15260917), nos seguintes termos:
+b.1) na faixa de radiofrequências de 2,3 GHz, a obrigação deverá contemplar a antecipação, em 1 (um) ano, de metas com vencimento em 31 de dezembro de 2028, a serem cumpridas até 31 de dezembro de 2027, com atendimento de, no mínimo, 30 (trinta) localidades; e
+b.2) na faixa de radiofrequências de 3,5 GHz, o montante remanescente do valor total da obrigação, deverá ser destinado à antecipação, em 1 (um) ano, de metas com vencimento em 31 de julho de 2028, a serem cumpridas até 31 de julho de 2027;
+c) determinar que a Prestadora apresente nova proposta técnica, compatível com o valor corrigido da obrigação, com os percentuais de alocação ora fixados e com a indicação específica dos municípios e localidades a serem contemplados, para posterior avaliação e validação pela Superintendência de Controle de Obrigações - SCO;
+d) ratificar o Acórdão nº 50/2026 quanto aos demais termos nele estabelecidos para o cumprimento da obrigação de fazer, naquilo que não conflitarem com a presente deliberação; e
+e) restituir os autos à Superintendência de Controle de Obrigações - SCO para adoção das providências cabíveis, inclusive notificação da Prestadora, análise da nova proposta técnica e acompanhamento da execução da obrigação.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 24/08/2026, às 21:12, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16171345 e o código CRC 545699C9.
+ | 
+Referência: Processo nº 53500.012754/2019-56 | 
+SEI nº 16171345 |

@@ -1,0 +1,85 @@
+SEI/ANATEL - 15355805 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 28/2026/OP
+Processo nº 53500.000026/2023-88
+Interessado: BIG TELCO TELECOMUNICACOES LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo interposto por BIG TELCO TELECOMUNICAÇÕES LTDA., inscrita no CNPJ/MF sob o nº 05.597.358/0001-67, em face do Despacho Decisório nº 827/2025/COGE/SCO, de 15 de dezembro de 2025 (SEI nº 14556047), da Superintendente de Controle de Obrigações, que não conheceu do recurso interposto contra a decisão do Despacho Decisório nº 639/2025/COGE/SCO, de 20 de agosto de 2025 (SEI nº 14089911), por ser intempestivo.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. INTEMPESTIVIDADE. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto por BIG TELCO TELECOMUNICAÇÕES LTDA. contra decisão que não conheceu recurso anterior por intempestividade.
+ O recurso original foi apresentado fora do prazo legal, após intimação eletrônica realizada por meio do Sistema Eletrônico de Informações (SEI).
+ Alegação de nulidade da intimação por ausência de comprovação de acesso efetivo ao documento e suposto cerceamento de defesa.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se a intimação eletrônica realizada pelo SEI, com presunção de leitura tácita, atende aos requisitos legais e se há nulidade por ausência de comprovação de acesso efetivo ao documento.
+III. RAZÕES DE DECIDIR
+ O Regulamento do Processo Eletrônico na Anatel prevê a obrigatoriedade de consulta periódica ao SEI por parte do usuário externo, imputando-lhe a responsabilidade de verificar o recebimento de intimações.
+ A intimação eletrônica é considerada pessoal para todos os efeitos legais, sendo presumida a ciência após decurso de dez dias corridos do envio, nos termos do regulamento.
+ O sistema registra a possibilidade de acesso dentro do prazo legal, impedindo alegação de desconhecimento indefinidamente.
+ Não há nulidade da intimação por presunção de leitura tácita, nem violação aos princípios do contraditório e da ampla defesa.
+ O recurso original foi intempestivo por desídia da prestadora ao não cumprir sua obrigação de consulta periódica ao SEI.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: "1. A intimação eletrônica realizada pelo SEI é válida e presume-se realizada após decurso de dez dias corridos do envio, independentemente de acesso efetivo ao documento. 2. Não há nulidade da intimação nem cerceamento de defesa quando o administrado deixa de cumprir sua obrigação de consulta periódica ao sistema. 3. O recurso apresentado fora do prazo legal é intempestivo e não deve ser conhecido."
+Dispositivos relevantes citados: Resolução nº 682/2017, arts. 9º, 10, 11 e 20; Lei nº 9.784/1999, art. 50; CF/1988, art. 5º, LV; Resolução nº 612/2013, arts. 115 e 116.
+REFERÊNCIAS
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal.
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento do Processo Eletrônico na Anatel, aprovado pela Resolução nº 682, de 31 de agosto de 2017.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo interposto por BIG TELCO TELECOMUNICAÇÕES LTDA., inscrita no CNPJ/MF sob o nº 05.597.358/0001-67, em face do Despacho Decisório nº 827/2025/COGE/SCO, de 15 de dezembro de 2025 (SEI nº 14556047), da Superintendente de Controle de Obrigações, que, nos termos do art. 115, § 1°, "a" c/c art. 116, I, ambos do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, não conheceu do recurso intempestivo interposto contra a decisão do Despacho Decisório nº 639/2025/COGE/SCO, de 20 de agosto de 2025 (SEI nº 14089911), o qual aplicou a sanção de multa no valor de R$ 114.245,42 (cento e quatorze mil, duzentos e quarenta e cinco reais e quarenta e dois centavos), por infração ao art. 8º Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019, ambos combinados com o art. 65-M do Regulamento dos Serviços de Telecomunicações (RST), aprovado pela Resolução nº 73, de 25 de novembro de 1998.
+As alegações recursais foram analisadas pelo Informe nº 170/2026/COGE/SCO (SEI nº 15202881).
+Nos termos do Despacho Decisório nº 175/2026/COGE/SCO (SEI nº 15225089), a Superintendente de Controle de Obrigações - SCO conheceu do Recurso interposto.
+Foi dispensada a manifestação da Procuradoria Federal Especializada da Anatel, nos termos da Portaria nº 642, de 26 de junho de 2013.
+Os autos foram encaminhados para manifestação deste colegiado, por meio do MACD nº 192/2026 (SEI nº 15315668).
+Fui designado relator da matéria em 19 de março de 2026 (Certidão SEI nº 15353842).
+É o relatório.
+DA ANÁLISE
+Primeiramente, cumpre frisar que a instauração e instrução do presente processo obedeceram rigorosamente às disposições contidas no Regimento Interno da Anatel (RIA), atendendo à sua finalidade, com observância dos princípios do devido processo legal, do contraditório e da ampla defesa, e especialmente da motivação, conforme dispõe o art. 50 da Lei nº 9.784/1999, Lei de Processo Administrativo.
+Quanto à admissibilidade do Recurso Administrativo em tela, atende aos requisitos de tempestividade, visto que interposto no prazo recursal de 10 (dez) dias; legitimidade, posto que a peça recursal foi subscrita pelo representante legal da empresa; e, por fim, de interesse em recorrer, uma vez que o Interessado é o destinatário direto da decisão contra a qual se insurge, razão pela qual considero acertada a decisão proferida pela Superintendente de Controle de Obrigações contida no Despacho Decisório nº 175/2026/COGE/SCO (SEI nº 15225089).
+O PADO foi instaurado para apuração de irregularidade referente à prática de spoofing no tráfego gerado na rede da prestadora, ou seja de utilização de Recursos de Numeração para identificar terminais originadores de chamadas que não correspondam à numeração designada aos usuários, buscando identificar as fontes de geração dessas chamadas.
+O presente recurso foi interposto contra a decisão que não conheceu o anterior por intempestividade, nos termos do Despacho Decisório nº 827/2025/COGE/SCO (SEI nº 14556047). 
+Desta feita, a análise recursal deverá ficar restrita, preliminarmente, à questão da admissibilidade do recurso original. Uma vez que, somente no caso em que seja reformada a decisão sobre a admissibilidade do recurso originalmente interposto é que caberá a deliberação sobre o mérito, nos termos do § 3º do art. 115 do Regimento Interno da Anatel.
+A empresa foi notificada da decisão constante do Despacho Decisório nº 639/2025/COGE/SCO (SEI nº 14089911) por meio do Ofício nº 1110/2025/COGE/SCO-ANATEL (SEI nº 14089912), recebido em 28/08/2025, por decurso do prazo tácito, conforme Certidão de Intimação Cumprida SEI nº 14282574, tendo protocolizado, em 01/10/2025, a Petição SEI nº 14476842, conforme Recibo Eletrônico de Protocolo SEI nº 14476843.
+A Recorrente alega que o Despacho Decisório nº 639/2025/COGE/SCO deveria ser declarado nulo, por ter se baseado em presunção de “leitura tácita” de intimação eletrônica, sem qualquer comprovação de acesso efetivo da empresa ao documento, o que, segundo alega, feriria os princípios do contraditório e da ampla defesa previstos na Lei nº 9.784/1999 e no art. 5º, inciso LV, da Constituição Federal, e configuraria cerceamento de defesa.
+O Informe nº 1029/2025/COGE/SCO (SEI nº 14556042) apresentou a devida fundamentação sobre a improcedência de referido argumento, pelos motivos que abaixo reproduzo, e que adoto como razão de decidir:
+5.5. O funcionamento do Sistema Eletrônico de Informações (SEI) para tramitação de processos administrativos na ANATEL, bem como para a prática de atos processuais por usuários externos está devidamente previsto no Regulamento do Processo Eletrônico na Anatel, aprovado pela Resolução nº 682, de 31 de agosto de 2017, o qual estabelece, em seu art. 9º, inciso I, a obrigatoriedade de cadastro de representantes como usuário externo para pessoas jurídicas outorgadas.
+5.6. O referido Regulamento determina, ainda, que a partir do cadastro do usuário externo, todos os atos e comunicação processual entre a Agência e a entidade representada dar-se-ão por meio eletrônico, de forma que não são admitidas intimação e protocolização por meio diverso, exceto quando houver inviabilidade técnica ou indisponibilidade do meio eletrônico cujo prolongamento cause dano relevante à celeridade ou à instrução do processo, ou quando houver exceção prevista em instrumento normativo próprio.
+5.7. Além disso, o cadastro como representante importa na aceitação de todos os termos e condições que regem o processo eletrônico na Anatel, conforme previsto no referido Regulamento e demais normas aplicáveis, e habilita o usuário externo a ser intimado quanto a atos processuais, nos termos do art. 10, inciso III, do Regulamento do Processo Eletrônico na Anatel.
+5.8. Por sua vez, o art. 11 do Regulamento do Processo Eletrônico na Anatel, dispõe o seguinte acerca das responsabilidades do usuário externo:
+Art. 11. São da exclusiva responsabilidade do usuário externo:
+I - o sigilo de sua senha de acesso, não sendo oponível, em qualquer hipótese, alegação de uso indevido;
+II - a conformidade entre os dados informados no formulário eletrônico de peticionamento e aqueles contidos no documento enviado, incluindo o preenchimento dos campos obrigatórios e anexação dos documentos essenciais e complementares;
+III - a confecção da petição e dos documentos digitais em conformidade com os requisitos estabelecidos pelo sistema, no que se refere ao formato e ao tamanho dos arquivos transmitidos eletronicamente;
+IV - a conservação dos originais em papel de documentos digitalizados enviados por meio de peticionamento eletrônico até que decaia o direito da Administração de rever os atos praticados no processo, para que, caso solicitado, sejam apresentados à Anatel para qualquer tipo de conferência;
+V - a verificação, por meio do recibo eletrônico de protocolo, do recebimento das petições e dos documentos transmitidos eletronicamente;
+VI - a realização, por meio eletrônico, de todos os atos e comunicações processuais entre a Agência, o usuário ou a entidade porventura representada, não sendo admitidas intimação ou protocolização por meio diverso, exceto quando houver inviabilidade técnica ou indisponibilidade do meio eletrônico, nos termos do § 2º do artigo 9º deste Regulamento;
+VII - a observância de que os atos processuais em meio eletrônico se consideram realizados no dia e na hora do recebimento pelo SEI, considerando-se tempestivos os atos praticados até às 23 horas e 59 minutos e 59 segundos do último dia do prazo, conforme horário oficial de Brasília, na forma do § 1º do art. 19 deste Regulamento, independentemente do fuso horário no qual se encontre o usuário externo;
+VIII - a consulta periódica ao SEI ou ao sistema por meio do qual se efetivou o peticionamento eletrônico, a fim de verificar o recebimento de intimações;
+IX - as condições de sua rede de comunicação, o acesso a seu provedor de internet e a configuração do computador utilizado nas transmissões eletrônicas; e,
+X - a observância dos relatórios de interrupções de funcionamento previstos no art. 18 deste Regulamento.
+Parágrafo único. A não obtenção do cadastro como usuário externo, bem como eventual erro de transmissão ou recepção de dados não imputáveis a falhas do SEI ou de sistema integrado, não servirão de escusa para o descumprimento de obrigações e prazos.
+5.9. Portanto, percebe-se que o referido Regulamento, cujos termos foram integralmente admitidos pela prestadora no momento de cadastro do representante, imputa taxativamente ao usuário externo a responsabilidade de verificar o recebimento de intimações por meio da consulta periódica ao SEI, as quais são consideradas intimações pessoais para todos os efeitos legais e que, se não consultadas em até 10 (dez) dias corridos contados do envio da intimação, são automaticamente consideradas realizadas na data do término desse prazo, nos termos do art. 20, caput, e § 2º, do normativo em comento.
+5.10. Desta forma, é seguro afirmar que a prestadora não cumpriu com a sua obrigação de verificar periodicamente o recebimento de intimações, sendo que eventuais erros de transmissão ou recepção de dados não imputáveis a falhas do SEI ou de sistema integrado, não devem servir de escusa para o descumprimento de obrigações e prazos, nos termos do parágrafo único do art. 11, do mencionado Regulamento.
+5.11. Em relação à alegação de que a mera disponibilização de um documento em sistema eletrônico, sem comprovação de acesso efetivo por parte do administrado, não se coadunaria com as exigências previstas na Lei nº 9.784/1999, que regula o processo administrativo no âmbito da Administração Pública Federal, é evidente que o argumento não merece prosperar.
+5.12. Isso porque o SEI registra, nos autos, tanto a data e hora em que o usuário efetivamente acessa o documento quanto o decurso do prazo sem acesso. Logo, há comprovação eletrônica, não da leitura subjetiva, mas da possibilidade de acesso dentro do prazo legal e, em caso de inércia, da presunção legal de ciência, termos estes que foram aceitos no momento de cadastro do representante como usuário externo, repise-se. Tal sistemática impede que o administrado alegue desconhecimento indefinidamente e assegura a fluidez e a segurança dos processos regulatórios.
+5.13. Diante do exposto, não há de se falar em nulidade da intimação por presunção de leitura tácita, nem sequer violação aos princípios do contraditório e da ampla defesa previstos na Lei nº 9.784/1999 e no art. 5º, inciso LV, da Constituição Federal. Tampouco houve cerceamento de defesa, uma vez que foi oportunizada a recorribilidade da decisão que impôs a sanção de multa, dentro do prazo legal e regulamentar, o que não ocorreu por desídia da própria prestadora ao não cumprir sua obrigação prevista no art. 11, inciso VIII, do Regulamento do Processo Eletrônico na Anatel.
+Entendo, pois, acertada a decisão consubstanciada no Despacho Decisório nº 827/2025/COGE/SCO (SEI nº 14556047) que não conheceu do Recurso interposto contra o Despacho Decisório nº 639/2025/COGE/SCO (SEI nº 14089911), em razão da ausência do requisito da tempestividade.
+Pelo exposto, sugiro o conhecimento e não provimento do Recurso ora interposto.
+Por fim, tendo em vista a não superação do aspecto da tempestividade do recurso anterior, não há que se adentrar nas questões de mérito trazidas pela recorrente. 
+Da relação com a Agenda 2030: Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+Por fim, com relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), destaco que a proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15355805 e o código CRC 9A514A09.
+ | 
+Referência: Processo nº 53500.000026/2023-88 | 
+SEI nº 15355805 |

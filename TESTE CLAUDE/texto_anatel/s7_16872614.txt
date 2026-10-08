@@ -1,0 +1,216 @@
+SEI/ANATEL - 15076580 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 16/2026/CL
+Processo nº 53500.000883/2026-21
+Interessado: UNIFIQUE TELECOMUNICAÇÕES S.A., Ligga Telecomunicacoes S.a., Sercomtel S.a. - Telecomunicacoes, Iez! Telecom Ltda., Brisanet Serviços de Telecomunicações S.A
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Pedidos de: (i) prorrogação excepcional do prazo para início de utilização de frequências autorizadas em caráter secundário; e (ii) suspensão de outorgas em 700 MHz a terceiros até a realização do certame previsto.
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. USO DE RADIOFREQUÊNCIA EM CARÁTER SECUNDÁRIO NA FAIXA DE 700 MHZ. PRORROGAÇÃO DO PRAZO PARA INÍCIO DE OPERAÇÃO. SUSPENSÃO DE OUTORGAS A TERCEIROS. PEDIDO PARCIALMENTE DEFERIDO.
+I. CASO EM EXAME
+1. Dois pedidos conjuntos, de Iez! Telecom Ltda., Unifique Telecomunicações S.A., Brisanet Serviços de Telecomunicações S.A., Ligga Telecomunicações S.A. e Sercomtel S.A. – Telecomunicações, para: (i) prorrogar, em caráter excepcional, o prazo de início de utilização fixados nos Atos nº 9.823, nº 9.828, nº 10.073, nº 10.460, nº 10.461, nº 10.644, nº 10.648 e nº 10.674, emitidos em decorrência do Acórdão nº 148, de 2024; e (ii) não autorizar a terceiros, o uso em caráter secundário de radiofrequências na faixa de 700 MHz que serão objeto de futura licitação, até a definição dos vencedores do certame e suas autorizações de uso em caráter primário.
+II. QUESTÃO EM DISCUSSÃO
+2. Há duas questões em discussão: (i) saber se é possível prorrogar, em caráter excepcional, os prazos para início utilização efetiva das radiofrequências autorizadas em caráter secundário nas faixas em questão; e (ii) saber se é adequada a suspensão de novas outorgas em caráter secundário a terceiros nas referidas faixas até a conclusão do Leilão de 700 MHz previsto.
+III. RAZÕES DE DECIDIR
+3. A Anatel tem competência para disciplinar o uso do espectro e regular sua utilização eficiente e adequada.
+4. O art. 45 do RUE autoriza a Anatel a prorrogar o prazo de início da utilização efetiva das radiofrequências por não mais que 12 (doze) meses, se o interessado comprovar caso fortuito ou força maior.
+5. No caso concreto, a postergação do certame das subfaixas de 700 MHz, previsto para o segundo semestre de 2025 nos termos da Agenda Regulatória 2025/2026, não se configura como caso fortuito ou força maior por não impedir o cumprimento da obrigação.
+6. Contudo, o contexto excepcional que viabilizou as outorgas em caráter secundário nessas faixas, voltado à acelerar a sua ocupação, admite a extensão do prazo para início da utilização efetiva por ser medida que viabilizará o mais rápido proveito para a população quando considerado o cronograma do Edital de Licitação das subfaixas de 700 MHz, recém aprovado pelo TCU.
+7. Trata-se, contudo, de medida extraordinária, cujo precedente não serve como parâmetro para solicitações similares no futuro, especialmente no caso de outorgas em caráter primário decorrentes de licitação, em que a aplicação integral do art. 45 do RUE se impõe.
+8. De outro lado, o regime excepcional previsto nos Acórdãos nº 39 (SEI nº 11539456) e nº 148 (SEI nº 15016875) cumpriu integralmente o seu desiderato, não se justificando mais a sua manutenção dada a proximidade de publicação do Edital de Licitação das subfaixas de 700 MHz.
+IV. DISPOSITIVO E TESE
+9. Pedido parcialmente deferido.
+10. Deferida a prorrogação dos prazos máximos para uso efetivo de radiofrequências estabelecidos nos Atos nº 9.823, nº 9.828, nº 10.073, nº 10.460, nº 10.461, nº 10.644, nº 10.648 e nº 10.674 por 12 (doze) meses ou até a data de autorização de uso em caráter primário das faixas de frequências em questão, o que ocorrer primeiro.
+11. Vedadas novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do serviço móvel pessoal com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456) com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 11539456).
+Tese de julgamento: "1. A Anatel tem competência para disciplinar e regular a utilização eficiente e adequada do espectro de radiofrequências, considerado o interesse público. 2. Em situação excepcional como a dos autos, é possível prorrogar o prazo de utilização efetiva de radiofrequências autorizadas em caráter secundário por mais 12 (doze) meses ou até as datas de autorização de uso em caráter primário das faixas, o que ocorrer primeiro. 3. Cumprido o desiderato do regime excepcional previsto nos Acórdãos nº 39 (SEI nº 11539456) e nº 148 (SEI nº 15016875), devem ser vedadas novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do serviço móvel pessoal com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456) com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 11539456)."
+Dispositivos relevantes citados: Lei nº 9.472/1997(LGT), arts. 1º, 127 e 160; Resolução nº 612/2013 (Regimento Interno da Anatel), art. 39; Resolução nº 671/2016 (RUE), arts. 18 e 45; Portaria nº 642/2013.
+Jurisprudência relevante citada: Anatel, Acórdãos nº 139 e 148, Conselho Diretor, 2024.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT).
+Lei nº 13.879, de 3 de outubro de 2019 - Altera a LGT.
+Decreto nº 11.704, de 14 de setembro de 2023 - institui a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável.
+Decreto nº 11.738, de 18 de outubro de 2023 - Dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Decreto nº 12.150, de 20 de agosto de 2024. Instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), aprovado pela Resolução nº 772, de 16 de janeiro de 2025.
+Portaria nº 642, de 26 de julho de 2013 - disciplina os casos de manifestação obrigatória da PFE-Anatel.
+RELATÓRIO
+Cuida-se de pedido de Iez! Telecom Ltda, CNPJ nº 37.278.419/0001-10, Unifique Telecomunicações S.A., CNPJ nº 02.255.187/0001-08, Brisanet Serviços de Telecomunicações S.A., CNPJ nº 04.601.397/0001-28, Ligga Telecomunicações S.A., CNPJ nº 04.368.865/0001-66 e Sercomtel S.A. - Telecomunicações, CNPJ nº 01.371.416/0001-89, prestadoras regionais do Serviço Móvel Pessoal (SMP), visando à prorrogação por até 12 meses do prazo estabelecido para a utilização efetiva de blocos de radiofrequências autorizados em caráter secundário nas faixas de 708 a 718 MHz / 763 a 773 MHz.
+Em decorrência do Acórdão nº 148 (SEI nº 15016875), de 20 de junho de 2024, as referidas prestadoras receberam autorizações de uso de blocos de radiofrequências em caráter secundário, com os prazos para sua utilização efetiva em cada município autorizado indicados na Tabela 1, sob pena de extinção da respectiva autorização:
+Tabela 1: Atos de autorização nas faixas de 708 a 718 MHz / 763 a 773 MHz
+ Prestadora
+ | 
+ Ato de Autorização 
+ | 
+ Subfaixa de Frequência (MHz)
+ | 
+ Prazo para início da utilização 
+ | 
+ IEZ! TELECOM LTDA
+ CNPJ nº 37.278.419/0001-10
+ | 
+ Ato º 10.073, de 2/7/2024, publicado no DOU em 11/7/2024 (SEI nº 12220869)
+ | 
+ 713MHz e 768 MHz
+ | 
+ 11/1/2026
+ | 
+ UNIFIQUE TELECOMUNICAÇÕES S.A.
+ CNPJ nº 02.255.187/0001-08
+ | 
+ Ato nº 10.460, de 12/7/2024, publicado no DOU em 22/7/2024 (SEI nº 12272492)
+ | 
+ 713MHz e 768 MHz
+ | 
+ 22/1/2026
+ | 
+ BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A.
+ CNPJ nº 04.601.397/0001-28
+ | 
+ Atos nº 9.823 e nº 9.828, de 26/6/2024, publicados no DOU em 11/7/2024 (SEI nº 12191039 e nº 12191659)
+ | 
+ 713MHz e 768 MHz
+ | 
+ 11/1/2026
+ | 
+ LIGGA TELECOMUNICAÇÕES S.A.
+ CNPJ nº 04.368.865/0001-6
+ | 
+ Ato nº 10.461,de 12/7/2024, publicado no DOU em 22/7/2024 (SEI nº 12273594)
+ | 
+ 713MHz e 768 MHz
+ | 
+ 22/1/2026
+ | 
+ SERCOMTEL S.A. - TELECOMUNICAÇÕES
+ CNPJ nº 01.371.416/0001-89
+ | 
+ Atos nº 10.644, nº 10.648 e nº 10.674, de 17/7/2024, publicados no DOU em 22/7/2024 (SEI nº 12292849, 12293056 e 12295743)
+ | 
+ 713MHz e 768 MHz
+ | 
+ 22/1/2026
+ | 
+Em 6 de janeiro de 2026, as interessadas apresentaram um pedido conjunto para postergação dos prazos para início de utilização previstos em seus atos de autorização (SEI nº 15004604). Alegaram que fatos supervenientes e alheios à vontade das requerentes, em especial a postergação do próximo Leilão de 700 MHz, alteram o cenário regulatório originalmente considerado, com impactos diretos na cadência de investimentos e na ativação de serviços planejados.
+Para evitar questionamentos e insegurança quanto à continuidade das autorizações de uso em questão, solicitaram à Anatel que:
+Carta pedido de prorrogação (SEI nº 15004604)
+"I. prorrogue, em caráter excepcional, o prazo de 18 (dezoito) meses previsto nos respectivos atos de autorização para entrada em operação do uso secundário da faixa de 700 MHz, conservadoramente por mais 12 (doze) meses, conforme previsto no RUE-Anatel, ou estendendo-o até a realização/conclusão do leilão do 700 MHz (ou, subsidiariamente, até a outorga definitiva do(s) direito(s) de uso primário, conforme a modelagem final do certame), sem aplicação de penalidade/extinção por decurso do prazo originalmente previsto;
+II. mantenha a decisão de não autorizar, em caráter secundário, os blocos da faixa de 700 MHz que serão objeto da iminente licitação, a quaisquer terceiros, até a definição do(s) vencedor(es) do referido edital e a consequente implantação e outorga do uso primário;"
+Os argumento das requerentes foram analisados no Informe nº 164/2026/ORLE/SOR (SEI nº 15008971). Opinou-se que: (i) no caso concreto, as autorizações não decorrem de licitação e, portanto, não há disposição legal impedindo a postergação do início de operação; e (ii) a restrição a outorgas em caráter secundário a terceiros está alinhada à Portaria nº 18.902, de 10 de julho de 2025, do Ministério das Comunicações (MCom) que dá prioridade às prestadoras regionais detentoras de faixas em 3,5 GHz no futuro Leilão de 700 MHz. Propôs-se o encaminhamento dos autos ao Conselho Diretor para fins de apreciação e deliberação.
+Assim, a Matéria para Apreciação do Conselho Diretor nº 13/2026 (SEI nº 15016875) foi encaminhada a este Colegiado (SEI nº 15062554) e distribuída para minha relatoria em 22 de janeiro de 2026 (SEI nº 15074784).
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise está dividida em 4 (quatro) partes. Na primeira, confirma-se a competência deste Colegiado para decidir sobre o presente caso. Na segunda e na terceira, abordam-se os pedidos postergação de prazo e de restrição a outorgas nas faixas em questão, respectivamente. Por fim, verifica-se a consistência da presente análise em face do plano estratégico da Agência, dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU e das melhores práticas do setor.
+I - Da competência do Conselho Diretor
+De acordo com art. 1º da Lei nº 9.472, de 1997, Lei Geral de Telecomunicações (LGT), é competência da União, por meio da Anatel, disciplinar o uso do espectro de radiofrequências no país:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências."
+Na exploração dos serviços no regime privado, a Agência deve-se garantir o uso eficiente do espectro, sendo-lhe facultado restringir o emprego de determinadas radiofrequências ou faixas, considerado o interesse público:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 127. A disciplina da exploração dos serviços no regime privado terá por objetivo viabilizar o cumprimento das leis, em especial das relativas às telecomunicações, à ordem econômica e aos direitos dos consumidores, destinando-se a garantir:
+[...]
+VII - o uso eficiente do espectro de radiofreqüências;
+(...)
+Art. 160. A Agência regulará a utilização eficiente e adequada do espectro, podendo restringir o emprego de determinadas radiofreqüências ou faixas, considerado o interesse público." 
+Nesse sentido, o art. 18 do Regulamento de Uso do Espectro de Radiofrequências (RUE) faculta à Agência estabelecer restrições, limites ou condições a interessados no uso de radiofrequências, quanto à obtenção, prorrogação de prazo e transferência de autorização:
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016
+"Art. 18. Visando promover e preservar a justa e ampla competição e impedir a concentração econômica do mercado, a Anatel pode estabelecer restrições, limites ou condições a interessados no uso de radiofrequências quanto à obtenção, prorrogação de prazo e transferência de autorização." (Grifou-se)
+Os referido art. 18 embasou as decisões do Acórdão nº 148 (SEI nº 15016875), com fundamento na Análise nº 1/2024/CL (SEI nº 11884198), que viabilizaram as presentes outorgas em caráter secundário e estabeleceram suas condições em uma situação excepcional, tratada sob regras ad-hoc:
+Análise nº 1/2024/CL (SEI nº 11884198)
+4.164. É de se notar que o Regulamento prevê as normas gerais para as autorizações, porém admite que a Agência, em casos especiais, defina normas específicas, a depender da necessidade. Avaliando-se a situação excepcional enfrentada, de abandono da faixa licitada e urgência de sua ocupação, a Anatel, em juízo de conveniência e oportunidade, houve por bem definir regras ad hoc, conforme lhe autoriza o RUE.
+Nesse contexto, tratando-se igualmente de situação excepcional, não há dúvida de que compete a este Colegiado deliberar sobre os dois pedidos das requerentes aqui em análise: (a) postergação do prazo para início de operação definidos; e (b) suspensão de outorgas até decisão do Leilão de 700 MHz.
+Observa-se que as deliberações em pauta não figuram dentre as hipóteses de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) previstas na Portaria nº 642, de 26 de julho de 2013. Na ausência de dúvida jurídica, o RIA tampouco exige manifestação obrigatória da Procuradoria:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares."
+Assim, compete ao Conselho Diretor da Agência decidir sobre o objeto dos presentes autos.
+II - Do prazo de início de operação
+Conforme relatado, em pedido conjunto, protocolizado em 6 de janeiro de 2026 (SEI nº 15004604), as requerentes sustentam que fatos supervenientes e alheios a sua vontade, em particular a postergação do futuro Leilão de 700 MHz, tiveram impacto nos planejamentos técnicos e financeiros:
+Carta pedido de prorrogação (SEI nº 15004604)
+"No entanto, fatos supervenientes e alheios à vontade das Requerentes – em especial a postergação da conclusão do processo que culminará com o Edital de Licitação dos 700 MHz e a consequente incerteza regulatória quanto às metas de cobertura e obrigações finais que serão impostas ao(s) futuro(s) titular(es) primário(s), tornou-se necessária a adoção de medidas de mitigação de risco regulatório, com impacto direto na cadência de investimentos (CAPEX) e no planejamento de ativação em todos os municípios inicialmente pretendidos. 
+É notório que, diferentemente das atuais detentoras da faixa de 700 MHz em caráter primário, as PPP Regionais terão que adquirir equipamentos novos – diferentes dos compatíveis com a faixa de 3.5 GHz – e investir massivamente na rede de 700 MHz, sendo que a segurança jurídica e a respectiva estabilidade para alcançar o retorno sobre os investimentos não ocorrem no prazo de poucos meses. 
+Por esta razão, o cronograma da licitação – até 31/12/2025 – estava compatível com o início da operação em secundário do 700 MHz pelas PPP Regionais, cujo limite é no mês de janeiro/2026. Todavia, o descasamento da licitação traz incerteza que impossibilita a antecipação segura da operação na faixa de 700 MHz calcada somente na autorização em secundário."
+Em razão de tal fato novo, solicitaram a prorrogação, em caráter excepcional, do prazo de 18 (dezoito) meses previsto nos respectivos Atos de Autorização para entrada em operação de seus serviços na faixa de 700 MHz, sem aplicação de penalidade ou extinção por decurso do prazo como originalmente previsto no Acórdão nº 148 (SEI nº 15016875). A postergação pedida foi por mais 12 (doze) meses ou até a conclusão do Leilão do 700 MHz ou, ainda, subsidiariamente, até a outorga definitiva dos direitos de uso primário.
+O art. 45 do RUE estabelece que o prazo para a utilização efetiva da radiofrequência previsto nos referidos Atos só pode ser prorrogado uma única vez, por não mais que 12 (doze) meses, se o interessado comprovar caso fortuito ou força maior:
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016
+"Art. 45. A partir da data de publicação do ato de autorização de uso de radiofrequências no Diário Oficial da União, será estabelecido prazo para utilização efetiva da radiofrequência, em caráter definitivo, nos termos do ato de autorização do serviço associado, não superior a 18 (dezoito) meses, prorrogável uma única vez, por não mais que 12 (doze) meses, se o interessado comprovar caso fortuito ou força maior.
+§ 1º O prazo mencionado no caput aplicar-se-á quando não estabelecido de forma diversa no edital de licitação ou na regulamentação específica do serviço de telecomunicações ou de radiodifusão."
+O corpo técnico opinou que não haveria disposição legal impedindo tal prorrogação no presente caso, considerando que as autorizações em caráter secundário em questão não decorreram de licitação:
+Informe nº 164/2026/ORLE/SOR (SEI nº 15008971)
+3.28. O Regulamento do Uso de Espectro (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016, estabelece condições para a prorrogação do prazo para utilização efetiva de radiofrequências autorizadas, conforme a seguir:
+[...]
+3.29. Desta sorte, o referido diploma legal admite a prorrogação do prazo para utilização efetiva de radiofrequências, uma única vez, por até 12 (doze) meses, quando não houver disciplina diversa em edital ou regulamento específico e desde que comprovado caso fortuito ou força maior.
+3.30. No caso concreto, as autorizações em caráter secundário não decorrem de licitação e, portanto, não há disposição legal impedindo a prorrogação, sendo que as PPP Regionais pleiteiam a extensão do prazo até a definição do certame licitatório da faixa de 700 MHz já em marcha, aprovado pela Anatel e, atualmente, em análise do Tribunal de Contas da União (TCU).
+3.31. O prazo de 18 (dezoito) meses para início da utilização efetiva do espectro em caráter secundário, conforme acima relatado, foi concebido como mecanismo de preservação do uso eficiente do espectro e de mitigação de ocupação precária prolongada, nos termos da fundamentação das análises e votos que instruíram os Acórdãos nº 148/2024 e nº 39/2024. Tais deliberações, registre-se, não dispõem contra a prorrogação, razão pela qual entende-se possível observar a previsão legal constante do RUE.
+Concordo com a área técnica ao afirmar que o art. 45 do RUE é aplicável à espécie, entendimento que, inclusive, estampei de forma implícita na sobredita Análise nº 1/2024/CL (SEI nº 11884198), que acabou por fixar em 18 meses o prazo para entrada em operação comercial. Veja-se:
+Análise nº 1/2024/CL (SEI nº 11884198)
+4.83. Assim, proponho dar provimento aos pedidos de reconsideração, para fixar o prazo de 18 (dezoito) meses para a efetiva utilização da radiofrequência, com possibilidade de prorrogação como previsto na regulamentação, não se perdendo de vista que as autorizadas deverão cessar a utilização quando iniciada a operação da faixa de 700 MHz em caráter primário, seja pela adjudicação do objeto do leilão a alguma proponente do lote A.1, seja pelo resultado de novo leilão, ou mesmo por outra destinação que a Anatel houver por bem dar à faixa. Trata-se, enfim, de uma autorização transitória que, não necessariamente, chegará ao termo previsto. Por isso, com vistas a fazer o melhor uso da faixa, sua utilização deve iniciar-se tão cedo quanto possível.
+Nessa linha, o posicionamento da área técnica foi sólido ao afirmar as razões que tornam razoável e economicamente justificável a prorrogação solicitada pelas entidades. De fato, o ideal sob o ponto de vista das empresas é que haja compatibilidade temporal entre o início da operação em caráter secundário e a expectativa de conclusão do certame licitatório, com definição das obrigações de uso primário.
+Contudo, não é possível considerar o atraso do certame referente às subfaixas de 700 MHz como um "caso fortuito ou de força maior" que autorize a prorrogação, nos termos do art. 45 do RUE.
+O caso fortuito e a força maior, em que pesem as sólidas discussões doutrinárias no direito civil para a delimitação de ambos os institutos, representam eventos imprevisíveis e inevitáveis, alheios à vontade das partes, que impedem o cumprimento de uma obrigação.
+Dessa forma, em que pese verifique que existe a motivação e o racional econômicos apresentados pelas entidades solicitantes que tornam mais conveniente o casamento dos investimentos com o certame, o fato é que não há qualquer impedimento para uso secundário no caso concreto pelo pequeno atraso no Leilão das subfaixas de 700 MHz.
+Tal fato levaria, segundo a regulamentação, à necessidade de indeferimento do pedido.
+Ademais, mesmo que se configurasse como caso fortuito ou força maior, a expectativa das entidades era de que o leilão fosse aprovado no segundo semestre de 2025, conforme item 5 da Agenda Regulatória 2025/2026, enquanto que o maior prazo fixado para entrada em operação fixado entre as solicitantes foi 22 de janeiro de 2026, uma diferença de poucos dias.
+Contudo, em que pese essas constatações afastem a aderência ao art. 45 do RUE, entendo que, no presente caso, o pleito deve ser deferido.
+Primeiramente, é evidente que as outorgas em caráter secundário das solicitantes decorreram de uma situação excepcional de ocupação provisória da faixa criada pela desistência de uma participante do Leilão do 5G, o que motivou uma solução também excepcional de restrições para o uso secundário do espectro configurado por: (a) preferência às PPPs que adquiriram lotes nas subfaixas de 3,5 GHz; (b) prazos curtos de ocupação; (c) prazos especiais de desocupação quando do início da utilização em caráter primário da faixa; e (d) critérios de coordenação específicos.
+Entendo que essa excepcionalidade da medida de ocupação provisória justifica uma prorrogação também excepcional no caso concreto, que não deve ser parâmetro para solicitações similares no futuro, especialmente no caso de outorgas em caráter primário decorrentes de licitação, em que a aplicação integral do art. 45 do RUE se impõe.
+O fato é que, com a aprovação do leilão dos 700 MHz pelo TCU no último dia 4 de fevereiro e sua iminente publicação, o certame deve se estender até o fim do mês de julho ou até o início do mês de agosto de 2026, com sessão de julgamento das propostas potencialmente ocorrendo em abril de 2026.
+A autorização excepcional do uso secundário, portanto, seria uma medida que autorizaria as empresas em questão, que já têm outorgas em caráter secundário, a iniciarem a ocupação excepcional da faixa de 700 MHz quando tiverem razoável certeza do resultado do julgamento das propostas, o que poderia viabilizar, potencialmente, inclusive a antecipação de metas do 5G pelos investimentos conjuntos em ambas as faixas, que têm suas primeiras obrigações vencendo no final do ano de 2026.
+Em suma, essa é a medida que, no caso concreto, viabilizaria a maior utilidade para a população visto que o indeferimento faria com que as referidas entidades só pudessem ocupar a faixa a partir dos atos de outorga a serem firmados em julho/agosto de 2026.
+Nessas circunstâncias, é de se conceder excepcionalmente a prorrogação dos prazos máximo para utilizar efetivamente as radiofrequências estabelecidos nos Atos nº 9.823 (SEI nº 12191039), nº 9.828 (SEI nº 12191659), nº 10.073 (SEI nº 12220869), nº 10.460 (SEI nº 12272492), nº 10.461 (SEI nº 12273594), nº 10.644 (SEI nº 12292849), nº 10.648 (SEI nº 12293056) e nº 10.674 (SEI nº12295743) por 12 (doze) meses ou até a data de autorização de uso em caráter primário das faixas de frequências em questão, o que ocorrer primeiro.
+III - Da restrição a novas outorgas
+Como já visto, no mesmo pedido conjunto, protocolizado em 6 de janeiro de 2026 (SEI nº 15004604), as requerentes solicitaram que a Agência "mantenha a decisão de não autorizar, em caráter secundário, os blocos da faixa de 700 MHz que serão objeto da iminente licitação, a quaisquer terceiros, até a definição do(s) vencedor(es) do referido edital e a consequente implantação e outorga do uso primário"
+Para motivar tal pedido, alegaram que novas outorgas na faixa em questão, especialmente para detentoras de poder de mercado significativo (PMS) teriam efeitos indesejáveis e contrários ao interesse público:
+Carta pedido de prorrogação (SEI nº 15004604)
+"As PPP REGIONAIS têm conhecimento de que prestadoras de grande porte e com maior portfólio de espectro, em especial aquelas classificadas com Poder de Mercado Significativo (PMS) nos mercados relevantes regulados, vêm pleiteando o uso em caráter secundário do 700 MHz em municípios nos quais as regionais não tenham demandado. Ressalta-se que elas já possuem em caráter primário faixas de 700 MHz, bem como outras frequências – como o 800 MHz – , além de múltiplas outras faixas compatíveis.
+A eventual concessão desse uso secundário, antes da definição do(s) vencedor(es) do edital do 700 MHz, pode produzir efeitos indesejáveis e contrários ao interesse público, tais como:
+(i) criação de vantagem competitiva de curto prazo por “pré-ocupação” do espectro;
+(ii) redução de incentivos de investimento das prestadoras regionais, justamente as destinatárias prioritárias da política pública de fomento à competição e expansão;
+(iii) aumento da complexidade e risco de contencioso no pós-leilão (expectativas de continuidade/renovações, disputas sobre interferência), tendo em vista que a ativação das cidades poderá sofrer atrasos adicionais, pois será necessário cumprir todo o rito de notificação à Prestadora, concessão de prazos, entre outras etapas processuais.
+Em síntese: se o 700 MHz é o insumo-chave para permitir que regionais ampliem cobertura com eficiência, não é aderente ao objetivo regulatório permitir que, na lacuna temporal do leilão, o espectro seja alocado secundariamente a agentes com maior poder econômico e maior acervo de radiofrequências, gerando assimetria possivelmente irreversível."
+Reitero que o regime excepcional previsto nos Acórdãos nº 39 (SEI nº 11539456) e nº 148 (SEI nº 15016875) foi uma medida absolutamente excepcional adotada por esta Agência para racionalizar o uso do espectro e providenciar a ocupação antecipada, em caráter provisório, da faixa de 700 MHz enquanto não sobreviesse o novo certame licitatório, que agora se avizinha.
+Nesse esteio, entendo que, com a iminente publicação do edital, o regime excepcional instituído cumpriu integralmente o seu desiderato, não se justificando mais a sua manutenção, motivo pelo qual proponho a este Conselho Diretor determinar a suspensão da concessão de outorgas em caráter secundário nas subfaixas de 700 MHz a serem licitadas, como forma de privilegiar o seu uso em caráter primário.
+Ao contrário do solicitado pela entidades, contudo, a referida proibição deve abranger qualquer entidade, tenham elas ou não obtido outorga em caráter secundário anteriormente.
+Face ao exposto, voto por vedar, a partir desta data, novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do serviço móvel pessoal com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456) com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 11539456).
+Por fim, encerrada essa experimentação regulatória, os resultados alcançados, bem como a demora de algumas empresas na entrada em operação nas faixas solicitadas, devem ser avaliados e considerados por esta Agência em caso de necessidade de medidas similares a serem adotadas no futuro.
+IV - Dos objetivos regulatórios
+IV.1 - Do Plano Estratégico da Agência
+O Plano Estratégico da Anatel 2023-2027 orienta as ações da Agência para promover a conectividade, a qualidade dos serviços de comunicação e o desenvolvimento do setor de telecomunicações no Brasil. 
+Seus principais objetivos estão contidos no Mapa Estratégico representado na Figura 1 abaixo:
+Figura 1: Objetivos Estratégicos 2023-2027. 
+Ressalto que o objeto presente processo está em sintonia com a integralidade dos objetivos de resultado da Agência, bem como com seus principais objetivos estratégicos de processo.
+Destaca-se aqui, em particular, os objetivos de Infraestrutura e Qualidade "1A - Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos" e "1-B - Viabilizar a expansão e a implantação da infraestrutura de rede base", na medida em que as autorizações de uso em caráter secundário na faixa de 700 MHZ possibilitam que as redes móveis de 4G cheguem, em curto prazo, a inúmeras localidades que ainda não dispõem de tal infraestrutura.
+Pode-se também enfatizar o impacto positivo da presente decisão na eficiência de uso do espectro de 700 MHz que foi devolvido pela Winity, em sintonia com o objetivo de Dinamismo do Mercado "2C - Promover o uso eficiente dos recursos escassos".
+III.2 - Da Agenda 2030 da ONU
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura 2 abaixo ilustra esses objetivos:
+Figura 2: Objetivos do Desenvolvimento Sustentável (ODS) Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como bem salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-ANATEL (SEI nº 11203364).
+A proposta de encaminhamento contida na presente Análise resulta diretamente no incremento da conectividade, estando em boa sintonia com os principais objetivos da Agenda 2030, em particular com os ODS nº 1, 2, 4, 8, 9 e 16, conforme explicado a seguir.
+O ODS nº 1, que se refere à Erradicação da Pobreza é atendido, pois a conectividade permite que homens e mulheres, particularmente os mais pobres e vulneráveis, tenham direitos igualitários aos recursos econômicos com o acesso a diversos serviços disponíveis no mundo digital.
+Também o ODS nº 2, referente à Fome Zero e Agricultura Sustentável, é atingido pela ampliação das redes de 4G em áreas suburbanas e rurais, que possibilita incrementar a eficiência na agricultura, contribuindo para o aumento sustentável na produtividade agrícola.
+O acesso à Internet, viabilizado pelas redes de 4G, tem papel fundamental na promoção da educação por meios digitais, facilitando a disseminação de informações e conhecimentos, o que contribui para a concretização do ODS nº 4, que busca alcançar uma Educação de Qualidade.
+O ODS nº 8, que trata de Trabalho Decente e Crescimento Econômico é igualmente servido, pois a ampliação da infraestrutura móvel, aqui tratada, traz crescimento econômico e cria melhores oportunidades de trabalho, especialmente em áreas isoladas e em desenvolvimento. 
+A ampliação da conectividade também contribui ao ODS nº 9, Indústria, Inovação e Infraestrutura, uma vez que as redes de 4G são elementos de suporte à industrialização, fomentando o desenvolvimento e a inovação.
+A expansão da conectividade contribui ademais para a concretização do ODS nº 11 – Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis, promovendo diversidade e flexibilidade na conexão as pessoas, levando a ambientes urbanos e rurais mais seguros e sustentáveis.
+Finalmente, o ODS nº 16, Paz, Justiça e Instituições Eficazes é atendido pois a conectividade universal e significativa conduz a sociedades mais inclusivas, proporcionando serviços públicos e acesso à justiça para todos, permitindo construir instituições responsáveis em todos os níveis. 
+Reforça-se assim o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+III.3 - Das melhores práticas
+Vale destacar o compromisso da Anatel com a adoção de boas práticas regulatórias preconizadas pelo "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG", editado no Decreto Presidencial nº 11.738, de 19 de outubro de 2023.
+Cumpre destacar ainda o interesse da Agência pelo "Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG", desenvolvido pela Controladoria Geral da União (CGU), com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), que busca disseminar uma cultura de mensuração da qualidade regulatória no Brasil.
+CONCLUSÃO
+Voto por:
+deferir o pedido de prorrogação dos prazos máximo para utilizar efetivamente as radiofrequências estabelecidos nos Atos nº 9.823 (SEI nº 12191039), nº 9.828 (SEI nº 12191659), nº 10.073 (SEI nº 12220869), nº 10.460 (SEI nº 12272492), nº 10.461 (SEI nº 12273594), nº 10.644 (SEI nº 12292849), nº 10.648 (SEI nº 12293056) e nº 10.674 (SEI nº12295743) por 12 (doze) meses ou até a data de autorização de uso em caráter primário das faixas de frequências em questão, o que ocorrer primeiro; e,
+vedar novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do serviço móvel pessoal com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456) com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 11539456).
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 13/02/2026, às 11:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15076580 e o código CRC C884B167.
+ | 
+Referência: Processo nº 53500.000883/2026-21 | 
+SEI nº 15076580 |

@@ -1,0 +1,93 @@
+SEI/ANATEL - 15097551 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 12/2026/OP
+Processo nº 53516.008400/2011-81
+Interessado: GLOBAL VILLAGE TELECOM S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 13866986) interposto por Telefônica Brasil S.A., CNPJ nº 02.558.157/0001-62, incorporadora de GLOBAL VILLAGE TELECOM S.A., CNPJ nº 03.420.926/0001-24, contra o Despacho Decisório nº 103/2025/COUN/SCO (SEI nº 13319477), da Superintendência de Controle de Obrigações, que julgou procedentes os lançamentos dos créditos tributários referentes à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), do exercício de 2009.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA (CFRP). EXERCÍCIO DE 2009. CRÉDITO TRIBUTÁRIO. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto por Telefônica Brasil S.A., incorporadora de Global Village Telecom S.A., contra o Despacho Decisório nº 103/2025/COUN/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes à CFRP do exercício de 2009.
+ A recorrente alega: (i) extinção do crédito tributário em razão de depósitos judiciais; (ii) decadência do crédito tributário; (iii) ausência de fato gerador, em respeito ao princípio da anterioridade tributária; e (iv) não incidência da CFRP sobre o equipamento denominado DSLAM.
+II. QUESTÃO EM DISCUSSÃO
+ Há quatro questões em discussão: (i) saber se houve extinção do crédito tributário por depósitos judiciais; (ii) saber se ocorreu decadência do crédito tributário; (iii) saber se há ausência de fato gerador em razão do princípio da anterioridade tributária; e (iv) saber se incide CFRP sobre o equipamento DSLAM.
+III. RAZÕES DE DECIDIR
+ A recorrente não comprovou a realização dos depósitos judiciais, não se desincumbindo do ônus processual de provar os fatos alegados.
+ O crédito tributário refere-se a estações não licenciadas, submetendo-se ao prazo decadencial do art. 173, I, do CTN, não estando configurada a decadência.
+ A discussão sobre violação ao princípio da anterioridade tributária está judicializada, configurando renúncia tácita à apreciação administrativa do tema.
+ Equipamentos DSLAM, BRAS e roteadores são considerados estações de telecomunicações do Serviço de Comunicação Multimídia, sendo regular a cobrança da CFRP sobre tais equipamentos.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: "1. Não comprovada a extinção do crédito tributário por depósitos judiciais. 2. Não configurada a decadência do crédito tributário referente a estações não licenciadas. 3. A judicialização da discussão sobre anterioridade tributária impede a apreciação administrativa do tema. 4. É regular a incidência da CFRP sobre equipamentos DSLAM, BRAS e roteadores, considerados estações de telecomunicações."
+Dispositivos relevantes citados: Lei nº 5.172/1966, art. 173, I; Lei nº 9.998/2000; Lei nº 9.784/1999, art. 36; Resolução Anatel nº 612/2013, art. 85.
+Jurisprudência relevante citada: STJ, REsp nº 1001348, Rel. Min. José Delgado, 08/04/2008; Súmula Vinculante nº 1 do CARF.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 13866986) interposto por Telefônica Brasil S.A., CNPJ nº 02.558.157/0001-62, incorporadora de GLOBAL VILLAGE TELECOM S.A., CNPJ nº 03.420.926/0001-24, contra o Despacho Decisório nº 103/2025/COUN/SCO (SEI nº 13319477), da Superintendência de Controle de Obrigações, que julgou procedentes os lançamentos dos créditos tributários referentes à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), do exercício de 2009.
+Em 16/05/2025, conforme AR (SEI nº 13795866) referente ao Ofício nº 137/2025/COUN/SCO-ANATEL (SEI nº 13319479), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 768/2025/COUN/SCO (SEI nº 14617636), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 793/2025/COGE/SCO (SEI nº 14638194), a Superintendente de Controle de Obrigações conheceu do Recurso interposto.
+A matéria foi encaminhada para deliberação deste Colegiado por meio da MACD nº 796/2025 (SEI nº 14638239).
+Fui designado relator da matéria por meio do sorteio realizado em 12/01/2026, nos termos da Certidão de Distribuição SEI nº 15024765.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, restam atendidos os requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente requer, em síntese: (i) a extinção do crédito tributário em razão dos depósitos judiciais que foram feitos em face do montante devido; (ii) a decadência do crédito tributário; (iii) ausência de fato gerador, em respeito ao princípio da anterioridade tributária; (iv) não incidência da CFRP sobre o equipamento denominado DSLAM.
+No tocante à alegação de extinção dos créditos tributários suscitada pela Recorrente tanto em sede de Impugnação quanto no presente recurso, vale destacar que a mesma não fez prova nos autos da realização dos mesmos.
+ De forma não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Sendo assim, entendo que não merece prosperar a alegação da Interessada.
+No tocante à alegada decadência do crédito tributário, a prestadora reitera argumento trazido em sua Impugnação, e que foi devidamente rebatido no Informe nº 90/2025/COUN/SCO (SEI nº 13319474), cujo trecho abaixo transcrevo, e adoto como razão de decidir:
+5.2.2. A Procuradoria Federal da Anatel, orienta que se faça o lançamento da CFRP e TFF pela modalidade de lançamento por homologação. Esse tema foi submetido ao Conselho Diretor no processo nº 53500.009857/2012-62 que, por meio da Análise nº 104/2016/SEI/OR, decidiu que a TFF e CFRP são lançamentos por homologação, podendo a empresa efetuar o pagamento antecipado.
+5.2.3. Portanto, em conformidade com o entendimento da PFE-Anatel, do Conselho Diretor e do STJ, a CFRP e a TFF são regularmente constituídas por meio de lançamento por homologação, de modo que o valor do tributo é calculado a partir de informações fornecidas pelo próprio contribuinte – no caso, relativas ao quantitativo de estações licenciadas – e pago antecipadamente, sem qualquer exame prévio da Anatel, até o dia 31 de março de cada ano.
+5.2.4. Somente as estações licenciadas é que submetem-se ao prazo decadencial do artigo 150, §4º do Código Tributário Nacional. Ao contrário, as Estações Não Licenciadas (ENL) se submetem-se à decadência do art. 173, I, CTN.
+5.2.5. O caso em concreto refere-se à Estações Não Licenciadas (ENL), conforme verifica-se do Extrato SIGEC (SEI nº 11726217), uma vez que verifica-se o código de receita nº 4201 - CFRP-ENL.
+5.2.6. A forma de contagem do art. 173, I, CTN deve ser feito conforme a legislação do Imposto de Renda, conforme art. 32, §4º da Lei nº 11.652/2008.
+5.2.7. Dessa forma, para o imposto de renda, o exercício financeiro coincide com o ano calendário, ou seja, começa em 01/01/2008 e termina em 31/12/2008. O prazo para pagamento do tributo se encerra em 31/03/2009. Assim, o exercício seguinte àquele em que o lançamento poderia ter sido efetuado é o dia 01/01/2010, o que faz com que o último dia do prazo se encerre em 31/12/2014. No entanto, em 09/09/2014, o contribuinte recebeu essas notificações, conforme atesta cópia de AR (SEI nº 6351568).
+Portanto, entendo não ter ocorrido a decadência do crédito tributário.
+A violação ao princípio da anterioridade tributária, previsto no art. 150, III, alíneas b e c da Constituição Federal, é um dos objetos do Mandado de Segurança Coletivo nº 2009.34.00.017899-8, impetrado pelo SINDITELEBRASIL (Sindicato Nacional das Empresas de Telefonia e de Serviço Móvel Celular e Pessoal).
+ Em face disso, ocorreu, para esse argumento, o instituto da renúncia tácita que significa, se a matéria estiver sendo totalmente discutida em âmbito judicial, a consequência seria a extinção dos mesmos argumentos em sede de processo administrativo fiscal. Nesse sentido, a Súmula Vinculante nº 1 do Conselho Administrativo de Recursos Fiscais (CARF):
+"Importa renúncia às instâncias administrativas a propositura pelo sujeito passivo de ação judicial por qualquer modalidade processual, antes ou depois do lançamento de ofício, com o mesmo objeto do processo administrativo, sendo cabível apenas a apreciação, pelo órgão de julgamento administrativo, de matéria distinta da constante do processo judicial”. (Vinculante, conforme Portaria MF nº 277, de 07/06/2018, DOU de 08/06/2018).
+Ainda sobre o tema, mencionam-se o seguinte julgado do Superior Tribunal de Justiça (STJ):
+TRIBUTÁRIO E PROCESSUAL CIVIL. IMPETRAÇÃO ANTERIOR À AUTUAÇÃO FISCAL. RENÚNCIA AO DIREITO DE RECORRER ADMINISTRATIVAMENTE. RECURSO ESPECIAL PROVIDO.
+(...)
+2. O ajuizamento de ação judicial anteriormente à autuação implica renúncia à interposição de recurso na esfera administrativa. Não é possível a utilização concomitante da via judicial e da administrativa, em face da prevalência da decisão judicial, devendo-se evitar destarte, julgamentos divergentes. Inteligência do§ 2º do art. 1º do Decreto-Lei 1.737/59 e parágrafo nico o art.38 da Lei n. 6.830/80.
+(STJ, REsp nº 1001348, Rel. Min. José Delgado, 8/04/2008).
+A Recorrente alega que a cobrança da Contribuição à EBC sobre a suposta estação não licenciada mostra-se equivocada, uma vez que é exigido sobre o equipamento denominado “DSLAM”, o qual não realiza tráfego de dados de forma direta e, por isso, não pode ser considerada como uma estação de telecomunicação.
+A fundamentação para cobrança de referidas estações encontra-se no Relatório de Fiscalização nº 0211/2011/ER03FS de 22 de dezembro de 2011 (fls. 1/30 do documento "Apartado Sigiloso 1 (SEI nº 2034340):
+5.2.1.2 Do exposto, e considerando que os equipamentos DSLAM, BRAS e Roteadores são equipamentos (dispositivos) necessários e até mesmo indispensáveis na realização de telecomunicações, quando a forma utilizada é a de dados, conclui-se que tais equipamentos constituem por si só estações de telecomunicações do Serviço de Comunicação Multimídia, nos termos de sua definição constante do Art. 3º do Regulamento do Serviço de Comunicação Multimídia-SCM, aprovado pela Resolução nº 272, de 09/08/2001, "in verbis": "Art. 3º O Serviço de Comunicação Multimídia é um serviço fixo de telecomunicações de interesse coletivo, prestado em âmbito nacional e internacional, no regime privado, que possibilita a oferta de capacidade de transmissão, emissão e recepção de informações multimídia, utilizando quaisquer meios, a assinantes dentro de uma área de prestação de serviço. 
+(...)
+5.2.1.4 Nos casos em que existiam, em uma mesma estação, mais de um dos tipos de equipamentos elencados nos itens acima, considerou—se como sendo uma única estação de telecomunicações, visto que uma estação de telecomunicações envolve todos os equipamentos correspondentes, de uma mesma edificação, por modalidade de serviço de telecomunicações.
+5.2.1.5 Sendo assim, consideraram—se como estações de telecomunicações passíveis de licenciamento, estações que continham pelo menos um equipamento DSLAM, BRAS ou ROTEADOR e estações que pela conexão de seus equipamentos teriam função de multiplexação (nodal) dentro das redes da prestadora.
+Ademais quando novamente consultada sobre o tema, a Fiscalização manifestou-se nos termos do Ofício nº 238/2023/GR03FI1/GR03/SFI-ANATEL (SEI nº 10849468).
+ Entendo, pois, pela regularidade da cobrança no presente caso.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15097551 e o código CRC CFF71949.
+ | 
+Referência: Processo nº 53516.008400/2011-81 | 
+SEI nº 15097551 |

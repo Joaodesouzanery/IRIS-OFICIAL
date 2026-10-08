@@ -1,0 +1,54 @@
+SEI/ANATEL - 16212830 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 103/2026/PR
+Processo nº 53500.128582/2026-61
+Interessado: Conselho Diretor
+PRESIDENTE
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Proposta de redistribuição, por conexão, do processo SEI nº 53500.110830/2026-17 ao mesmo relator do processo SEI nº 53500.110813/2026-80, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+EMENTA
+AUTORIZAÇÃO DE USO DE RADIOFREQUÊNCIAS. SERVIÇO MÓVEL PESSOAL. DISTRIBUIÇÃO POR CONEXÃO. Portaria nº 495/2012. APROVAÇÃO.
+Análise sobre a possibilidade de redistribuição do processo nº 53500.110830/2026-17 ao mesmo relator do processo SEI nº 53500.110813/2026-80.
+O processo nº 53500.110830/2026-17 cuida de análise de pedido apresentado pela empresa TIM S.A. para uso de radiofrequências, em caráter secundário, para prestação de Serviço Móvel Pessoal (SMP) nas subfaixas de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, em municípios dos estados do Paraná, Santa Catarina e Rio Grande do Sul, abrangidos por autorizações em caráter primário conferidas à UNIFIQUE TELECOMUNICAÇÕES S.A. ("UNIFIQUE") e à AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. ("AMAZÔNIA").
+O processo nº 53500.110813/2026-80 trata de análise de pedido igualmente apresentado pela empresa TIM S.A. (SEI nº 16130939) para uso de radiofrequências, em caráter secundário, para prestação de SMP nas mesmas subfaixas de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, em municípios do estado de São Paulo também abrangidos por autorizações em caráter primário conferidas à UNIFIQUE e à AMAZÔNIA.
+Competência do Conselho Diretor para decidir sobre a distribuição de processos por conexão, nos termos da Portaria nº 495, de 24 de maio de 2012.
+Aprovação da conexão.
+REFERÊNCIAs
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria nº 495, de 24 de maio de 2012;
+Informe nº 876/2025/CODI/SCO (SEI nº 14602604);
+Processo nº 53500.110830/2026-17;
+Processo nº 53500.110813/2026-80.
+RELATÓRIO
+Trata-se de análise quanto à distribuição, por conexão, do processo SEI nº 53500.110830/2026-17 ao mesmo relator do processo SEI nº 53500.110813/2026-80, Conselheiro Octavio Pieranti, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+No processo nº 53500.110830/2026-17, avalia-se pedido apresentado pela empresa TIM S.A. (SEI nº 16130960) para uso de radiofrequências, em caráter secundário, para prestação de Serviço Móvel Pessoal (SMP) nas subfaixas de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, em municípios dos estados do Paraná, Santa Catarina e Rio Grande do Sul, abrangidos por autorizações em caráter primário conferidas à UNIFIQUE TELECOMUNICAÇÕES S.A. ("UNIFIQUE") e à AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. ("AMAZÔNIA"). No processo nº 53500.110813/2026-80, por sua vez, avalia-se pedido similar apresentado pela empresa TIM S.A. (SEI nº 16130939) para uso de radiofrequências, em caráter secundário, para prestação de SMP nas mesmas subfaixas de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, em municípios do estado de São Paulo também abrangidos por autorizações em caráter primário conferidas à UNIFIQUE e à AMAZÔNIA.
+Em 24 de agosto de 2026, por meio da Certidão de Distribuição SEI nº 16167359, o processo nº 53500.110813/2026-80 foi encaminhado ao Conselheiro Octavio Pieranti para relatoria.
+Por sua vez, em 27 de agosto de 2026, por meio da Certidão de Distribuição SEI nº 16188723, o processo nº 53500.110830/2026-17 foi submetido à relatoria do então Conselheiro Substituto Nilo Pasquali.
+Em 31 de agosto de 2026, nos termos do Ofício nº 117/2026/OP-ANATEL (SEI nº 16207669), o Conselheiro Octavio Pieranti apontou à Secretaria do Conselho Diretor (SCD) a conexão entre os processos citados, em razão de que possuem idêntica natureza, mesmo interessado e mesmo objeto, distinguindo-se apenas quanto aos municípios abrangidos. Ressaltou se tratarem, portanto, de matérias dependentes, cujas deliberações cindidas pelo Conselho Diretor não se justificam, e solicitou a distribuição do processo SEI nº 53500.110830/2026-17 a seu Gabinete, em razão da configuração de prevenção.
+É o breve relatório.
+Análise
+Conforme apontado no relato dos fatos, cuida-se de análise quanto à existência de conexão entre o processo SEI nº 53500.110830/2026-17 e o processo SEI nº 53500.110813/2026-80, de modo que se promova a distribuição do primeiro ao relator do segundo, por prevenção.
+O Regimento Interno da Agência (RIA), aprovado pela Resolução nº 612/2013, traz como regra geral a distribuição de matérias por meio de sistema informatizado (art. 9º), de forma randômica e proporcional, conforme o tipo de procedimento administrativo objeto da matéria levada à decisão do Conselho Diretor (art. 9º, § 1º).
+Contudo, há casos excepcionais que são analisados com base na Portaria nº 495, de 24 de maio de 2012, que estabelece procedimentos relativos à distribuição por sorteio das matérias levadas à deliberação do Conselho Diretor.
+Nos termos do art. 12 do referido normativo, é competência do Conselho Diretor decidir sobre a conexão de matérias e a distribuição de processos por conexão:
+Art. 12. Em casos de conexão ou continência, mediante requerimento devidamente motivado por Conselheiro, após aprovação do Conselho Diretor, o Presidente redistribuirá o processo ao Conselheiro que primeiro foi sorteado para relatar a matéria. [grifou-se]
+A conexão é um mecanismo processual que permite a reunião de processos em curso, para que tenham julgamento conjunto. Trata-se de um instituto que pressupõe a existência de demandas distintas, mas que possuem certo vínculo entre si. Segundo definição legal prevista no art. 55 do Código de Processo Civil, "reputam-se conexas 2 (duas) ou mais ações quando lhes for comum o pedido ou a causa de pedir".
+A esse respeito, por meio do Ofício nº 117/2026/OP-ANATEL (SEI nº 16207669), o Conselheiro Octavio Pieranti assim expôs:
+1. Reporto-me ao processo nº 53500.110813/2026-80, distribuído a este gabinete em 24 de agosto de 2026, conforme Certidão de Distribuição SEI nº 16167359. 
+2. Ao proceder à análise preliminar da matéria, constatei a existência do processo nº 53500.110830/2026-17, de idêntica natureza, que possui o mesmo interessado e o mesmo objeto do processo sob minha relatoria, distinguindo-se apenas quanto aos municípios abrangidos. Trata-se, portanto, de matérias dependentes, cujas deliberações cindidas pelo Conselho Diretor não se justificam.
+3. Diante disso, e considerando que o processo nº 53500.110830/2026-17 foi distribuído posteriormente, em 27 de agosto de 2026, à Relatoria do Conselheiro Nilo Pasquali (16188723), solicito as providências cabíveis para que o referido feito seja distribuído a este Gabinete por conexão, em face da prevenção configurada.
+De fato, como apontado no citado documento, ambos os processos estão diretamente relacionados, pois dizem respeito a pleitos que possuem mesma natureza, contexto regulatório, partes envolvidas e causas de pedir por parte da prestadora interessada. Ademais, em face da similitude dos objetos, que se distinguem tão somente pelo rol de municípios abrangidos, trazem os mesmos fundamentos e razões de decidir pela área técnica.
+Nesse contexto, diante da excepcionalidade do caso que ora se apresenta, parece adequada e salutar a redistribuição, por conexão, do processo nº 53500.110830/2026-17 ao mesmo relator do processo nº 53500.110813/2026-80, especialmente:
+em razão da prevalência ao princípio da eficiência disposto no art. 37 da CF/88, vez que a análise conjunta dos processos resultará em economia e celeridade para as partes e para a Administração Pública; 
+em atenção à mitigação do risco em prolação de decisões conflitantes, primando, portanto, pela segurança jurídica nos processos administrativos;
+considerando a aplicação subsidiária do Código de Processo Civil (CPC), Lei nº 13.105, de 16/03/2015, nos termos dos arts. 55, §3º que prevê que sejam "reunidos para julgamento conjunto os processos que possam gerar risco de prolação de decisões conflitantes ou contraditórias caso decididos separadamente, mesmo sem conexão entre eles".
+À vista do exposto, propõe-se a aprovação da redistribuição, por conexão, do processo SEI nº 53500.110830/2026-17 ao mesmo relator do processo SEI nº 53500.110813/2026-80, Conselheiro Octavio Pieranti, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+CONCLUSÃO
+Aprovar a redistribuição, por conexão, do processo SEI nº 53500.110830/2026-17 ao mesmo relator do processo SEI nº 53500.110813/2026-80, Conselheiro Octavio Pieranti, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 03/09/2026, às 11:14, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16212830 e o código CRC 0696EAD0.
+ | 
+Referência: Processo nº 53500.128582/2026-61 | 
+SEI nº 16212830 |

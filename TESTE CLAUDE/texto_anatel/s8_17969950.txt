@@ -1,0 +1,51 @@
+SEI/ANATEL - 16045724 - Acórdão
+Boletim de Serviço Eletrônico em 31/07/2026
+DOU de 31/07/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 192, de 30 de julho de 2026
+Processo nº 53500.040622/2023-09
+Recorrente/Interessado: SURF TELECOM S.A., PLINTRON DO BRASIL PARTICIPAÇÕES E INVESTIMENTOS LTDA.
+CNPJ nº 10.455.746/0001-43 e 27.797.354/0001-65
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 185, de 30 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE ANULAÇÃO DE ATO ADMINISTRATIVO. ANUÊNCIA PRÉVIA PARA ALTERAÇÃO DE CONTROLE SOCIETÁRIO. PEDIDO INDEFERIDO. REVOGAÇÃO, DE OFÍCIO, DO ATO Nº 18.217/2025 E DO ACÓRDÃO Nº 323/2025.
+I. CASO EM EXAME
+O pedido. Pedido de Anulação apresentado por SURF TELECOM S.A. contra o Ato nº 18.217, de 26 de novembro de 2025, e o Acórdão nº 323, de 26 de novembro de 2025, que concederam anuência prévia para operação societária relacionada ao ingresso da PLINTRON DO BRASIL PARTICIPAÇÕES E INVESTIMENTOS LTDA. no rol de controladores da Empresa.
+Fundamentos do pedido. A Requerente sustentou que os atos seriam nulos porque se basearam em decisão judicial sem trânsito em julgado e porque teriam sido praticados em processo já encerrado por decurso do prazo regulamentar.
+Instrução processual. A PLINTRON DO BRASIL PARTICIPAÇÕES E INVESTIMENTOS LTDA. foi intimada como Interessada, apresentou manifestação e razões finais, e defendeu a improcedência do pedido. A Procuradoria Federal Especializada junto à Anatel - PFE/Anatel emitiu parecer opinativo. O processo foi submetido ao Conselho Diretor para decisão.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Ato nº 18.217/2025 e o Acórdão nº 323/2025 padecem de vício de legalidade por terem sido editados em cumprimento a decisão judicial sem trânsito em julgado; e saber se (ii) a alegação de encerramento do processo originário por decurso de prazo invalida a concessão da anuência prévia.
+III. RAZÕES DE DECIDIR
+1. O procedimento de anulação foi regularmente instaurado e instruído, com observância do art. 77 do Regimento Interno da Anatel - RIA, do contraditório, da ampla defesa e da motivação.
+2. A anulação de ato administrativo exige vício de legalidade, nos termos do art. 53 da Lei nº 9.784/1999.
+3. O Ato nº 18.217/2025 e o Acórdão nº 323/2025 foram editados em cumprimento a decisões judiciais então válidas e eficazes.
+4. A ausência de trânsito em julgado da decisão judicial não impede, por si só, a produção de seus efeitos.
+5. O erro quanto à referência ao trânsito em julgado foi posteriormente corrigido pelo Acórdão nº 324, de 27 de novembro de 2025, com substituição da expressão por “decisão de cumprimento imediato”.
+6. A alegação de vício da sentença arbitral não demonstra ilegalidade dos atos impugnados, porque eles decorreram de decisões do Poder Judiciário nacional.
+7. A alegação de encerramento do processo originário por decurso de prazo não configura nulidade dos atos impugnados.
+8. O prazo de 180 (cento e oitenta dias) dias fixado para a implementação da anuência foi afetado por sucessivas decisões judiciais supervenientes que alteraram o curso da operação e afastaram a conclusão de invalidade dos atos por esse fundamento.
+9. A Agência Nacional de Telecomunicações - Anatel atuou em estrito cumprimento das decisões judiciais proferidas sobre a matéria e não praticou ilegalidade ao editar ou suspender atos conforme a orientação judicial vigente em cada momento.
+10. A decisão superveniente proferida na Suspensão de Liminar e de Sentença - SLS nº 3.701/SP suspendeu os efeitos das decisões judiciais que impunham à Anatel a concessão da anuência prévia.
+11. A suspensão dessas decisões judiciais retirou a eficácia do suporte jurídico que havia determinado a edição do Ato nº 18.217/2025 e do Acórdão nº 323/2025.
+12. A superveniência desse novo quadro jurídico não autoriza a declaração de nulidade dos atos impugnados, mas justifica providência administrativa autônoma de revogação de ofício, em razão da perda de seu fundamento jurídico e do restabelecimento do espaço decisório da Agência.
+13. O Conselho Diretor pode exercer sua discricionariedade administrativa no processo originário e fazer prevalecer o entendimento anteriormente firmado no Acórdão nº 327, de 13 de novembro de 2023.
+14. O apensamento dos processos correlatos ao processo originário atende aos princípios da eficiência, da economicidade, da coerência administrativa e da duração razoável do processo.
+IV. DISPOSITIVO E TESE
+Pedido de Anulação indeferido. Revogação, de ofício, do Ato nº 18.217/2025 e do Acórdão nº 323/2025.
+Tese de julgamento: "1. Não há nulidade no Ato nº 18.217/2025 e no Acórdão nº 323/2025 quando editados em cumprimento a decisões judiciais válidas e eficazes, ainda que sem trânsito em julgado. 2. A alegação de decurso de prazo no processo originário não demonstra vício de legalidade apto a invalidar a concessão da anuência prévia. 3. A superveniência de decisão judicial que suspende os comandos anteriormente impostos à Agência não gera nulidade retroativa dos atos praticados, mas autoriza sua revogação de ofício no exercício da autotutela administrativa e da competência decisória do Conselho Diretor. 4. É cabível a revogação, de ofício, do Ato nº 18.217/2025 e do Acórdão nº 323/2025, em observância à decisão proferida na SLS nº 3.701/SP e ao entendimento administrativo firmado no Acórdão nº 327/2023. 5. A pendência de recurso contra a decisão proferida em suspensão de liminar não impõe o sobrestamento do processo administrativo, cabendo à Administração decidir conforme o quadro jurídico vigente ao tempo da deliberação, assegurada a revisão do ato na hipótese de decisão judicial definitiva em sentido diverso."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999, arts. 2º, 50 e 53; Lei nº 9.307/1996, art. 31; CPC, arts. 300, 329, 485, IV, 963 e 1.029, § 5º, III; Resolução nº 612/2013, arts. 53, 77, 78, 108, 115, § 5º, e 122, § 2º; Regimento Interno do STJ, arts. 216-C, 216-D e 216-F.
+Jurisprudência relevante citada: STJ, RE nos EDcl no AgInt na Homologação de Decisão Estrangeira nº 7.591/EX, Rel. Min. Luis Felipe Salomão; STJ, SLS nº 3.701/SP, Rel. Min. Luis Felipe Salomão, Vice-Presidente no exercício da Presidência, decisão de 28.01.2026; TRF-3, MS nº 5001170-55.2024.4.03.6144, Rel. Des. Fed. Carlos Delgado; TRF-3, Petição Cível nº 5034667-28.2025.4.03.0000, decisão do Des. Fed. Rubens Calixto; STJ, AgInt no RMS 61.272/GO, Rel. Min. Mauro Campbell Marques, Segunda Turma, DJe 04.10.2019; STF, Súmula nº 473.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 67/2026/EH (SEI nº 16004692), integrante deste acórdão:
+a) indeferir o Pedido de Anulação, nos termos do artigo 77, inciso V do Regimento Interno da Anatel;
+b) indeferir o Pedido subsidiário de sobrestamento formulado pela PLINTRON DO BRASIL PARTICIPAÇÕES E INVESTIMENTOS LTDA. em suas razões finais; e,
+c) revogar, de ofício, o Ato nº 18.217, de 26 de novembro de 2025 (SEI nº 14817387) e do Acórdão nº 323, de 26 de novembro de 2025 (SEI nº 14824632), em obediência à decisão proferida na SLS nº 3.701/SP do STJ e para que seja mantido o entendimento já fixado pelo Conselho Diretor em decisão administrativa exarada no exercício pleno de sua competência e sua discricionariedade decisória, qual seja, o Acórdão nº 327, de 13 de novembro de 2023 (SEI nº 11128607).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/07/2026, às 14:27, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16045724 e o código CRC 83C5D145.
+ | 
+Referência: Processo nº 53500.040622/2023-09 | 
+SEI nº 16045724 |

@@ -1,0 +1,35 @@
+SEI/ANATEL - 15201389 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 6, de 19 de fevereiro de 2026
+Processo nº 53500.039139/2025-35
+Recorrente/Interessado: CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL
+CNPJ nº 06.102.961/0001-93
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO REGULATÓRIO. AUTENTICAÇÃO DE CHAMADAS TELEFÔNICAS. RECURSO ADMINISTRATIVO CONTRA O DESPACHO DECISÓRIO Nº 787/2025/COGE/SCO. PEDIDO DE EXCLUSÃO DE CHAMADAS INTRARREDES. REGULAMENTO GERAL DE SERVIÇOS DE TELECOMUNICAÇÕES - RGST - RESOLUÇÃO Nº 777/2025. INDEFERIMENTO. EXCLUSÃO DE PESSOAS FÍSICAS. CRITÉRIO QUANTITATIVO. INDEFERIMENTO. PEDIDO DE AMPLIAÇÃO DE PRAZO. IMPOSSIBILIDADE. ACÓRDÃO Nº 201/2025. ADERÊNCIA AO Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, À Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor, AO Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG, ÀS RECOMENDAÇÕES DA Organização para Cooperação e Desenvolvimento Econômico - OCDE E À AGENDA 2030. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+Recurso Administrativo contra o Despacho Decisório nº 787/2025/COGE/SCO, que instituiu procedimento específico para as prestadoras em relação aos usuários classificados como "grandes chamadores", incluindo exigências de autenticação e bloqueio por volume.
+Fato relevante. A Recorrente pleiteia: (i) exclusão de chamadas intrarredes da obrigação de autenticação; (ii) exclusão de pessoas físicas do alcance da norma; e (iii) ampliação do prazo de entrada em vigor.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões principais: se as chamadas intrarredes podem ser excluídas da obrigação de autenticação, à luz do Regulamento Geral de Serviços de Telecomunicações - RGST e dos riscos de fraude; se pessoas físicas podem ser excepcionalizadas com base na natureza subjetiva do usuário; e se há fundamento para prorrogar o prazo de entrada em vigor, previamente fixado pelo Conselho Diretor.
+III. RAZÕES DE DECIDIR
+1. O art. 60 do RGST - Resolução nº 777/2025 estabelece a autenticação como regra geral, sem fazer distinção entre chamadas intrarredes e inter-redes. 
+2. O procedimento aprovado pelo Ato nº 12.712/2024 adota critérios objetivos para identificar "grandes chamadores", baseados exclusivamente no volume de chamadas, sem distinção pela natureza jurídica do usuário. A norma não prevê exceção para pessoas físicas, tampouco configura delegação indevida de poder de polícia: as medidas estabelecidas são ferramentas de gestão de rede e prevenção de fraudes, plenamente compatíveis com o art. 137 do RGST.
+3. A ampliação do prazo é incompatível com o definido no Acórdão nº 201/2025, que fixou o prazo de 90 (noventa) dias de vacatio, inexistindo fato superveniente que justifique alteração.
+4. A decisão está alinhada: ao Decreto nº 11.738/2023 - Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG; à Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor - Decreto nº 12.150/2024; ao Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG, especialmente no ponto relativo à autonomia decisória das agências, destacada em estudos do Programa das Nações Unidas para o Desenvolvimento - PNUD, do Escritório das Nações Unidas de Serviços para Projetos - UNOPS e da Controladoria-Geral da União - CGU; às recomendações da Organização para Cooperação e Desenvolvimento Econômico - OCDE sobre eficiência regulatória e enforcement; aos Objetivos de Desenvolvimento Sustentável - ODS nº 9 - infraestrutura resiliente, e nº 16 - instituições eficazes, da Agenda 2030 - metas 9.1, 16.3 e 16.6.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. Chamadas intrarredes não são excluídas da obrigação de autenticação, salvo demonstração de inviabilidade técnica, inexistente no processo; 2. O critério para enquadramento como grande chamador é objetivo e quantitativo, não comportando exceção por natureza jurídica do usuário; 3. Não há fundamento para ampliação do prazo de entrada em vigor fixado pelo Acórdão nº 201/2025; 4. A decisão está alinhada ao PRO‑REG, à Estratégia Regula Melhor, ao QualiREG, às recomendações da OCDE e aos ODS da Agenda 2030, reforçando a segurança das redes e o combate a fraudes."
+Normas relevantes citadas: Resolução nº 777/2025 - RGST; Ato nº 12.712/2024; Acórdão nº 201/2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 1/2026/AF - SEI nº 14988563, integrante deste acórdão, conhecer do Recurso Administrativo interposto pela CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL em face do Despacho Decisório nº 787/2025/COGE/SCO para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15201389 e o código CRC 31DCDDFE.
+ | 
+Referência: Processo nº 53500.039139/2025-35 | 
+SEI nº 15201389 |

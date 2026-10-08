@@ -1,0 +1,41 @@
+SEI/ANATEL - 15617622 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 126, de 11 de maio de 2026
+Processo nº 53504.002419/2016-67
+Recorrente/Interessado: TRADEAL SERVIÇOS EM TECNOLOGIA DA INFORMAÇÃO LTDA.
+CNPJ nº 07.053.147/0001-99
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. PRESTAÇÃO DE SERVIÇO DE TELECOMUNICAÇÕES. AUSÊNCIA DE SEGREGAÇÃO CONTÁBIL DE RECEITAS. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por TRADEAL SERVIÇOS EM TECNOLOGIA DA INFORMAÇÃO LTDA. contra Despacho Decisório que reconheceu a procedência do lançamento de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust e da multa de ofício, relativos ao exercício de 2012.
+2. Fato relevante. A fiscalização apurou valores devidos ao Fust. A Recorrente impugnou o lançamento. Alegou que não prestou serviço de telecomunicações. Sustentou que prestou apenas serviço de valor adicionado. Afirmou que contratava serviço de telecomunicações de terceiros como tomadora.
+3. As decisões anteriores. A área técnica reanalisou os documentos contábeis e manteve os valores apurados. A Superintendência de Controle de Obrigações - SCO conheceu do Recurso e manteve a decisão recorrida, com encaminhamento dos autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Recurso preenche os requisitos de admissibilidade e dispensa manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel e novas diligências; e (ii) saber se deve ser mantido o lançamento da contribuição ao Fust, diante da alegação de que a Recorrente prestou apenas serviço de valor adicionado e utilizou infraestrutura de terceiros.
+III. RAZÕES DE DECIDIR
+1. A manifestação da PFE/Anatel é dispensável. O caso envolve Recurso voluntário e valor nominal inferior a R$ 1.000.000,00 (um milhão de reais).
+2. O Recurso é tempestivo, cabível, a Recorrente é legítima e possui interesse recursal. Não há contrariedade à Súmula editada pela Agência.
+3. Não há necessidade de diligências adicionais. O extrato do Sistema Integrado de Gestão de Créditos da Anatel - SIGEC indica que o débito não foi quitado. Não se aplica prescrição intercorrente no processo administrativo fiscal contencioso, conforme a Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11.
+4. A fiscalização concluiu que a Recorrente possuía outorga de Serviço de Comunicação Multimídia - SCM, utilizava infraestrutura de terceiros para viabilizar sua solução e não apresentou documentação contábil ou fiscal apta a segregar receitas de serviço de valor adicionado e de telecomunicações.
+5. Os documentos fornecidos pela própria Recorrente, inclusive a Declaração de Informações Econômico-Fiscais da Pessoa Jurídica - DIPJ 2013, indicam que toda a receita auferida em 2012 foi declarada como decorrente de atividade econômica de serviços de telecomunicações.
+6. As notas fiscais juntadas ao Recurso não afastam o lançamento. Os documentos não separam os valores do serviço prestado diretamente e do SCM contratado de terceiros.
+7. Cabe ao Interessado provar os fatos alegados no processo administrativo. A ausência de prova suficiente mantém a presunção de legalidade e veracidade dos relatórios de fiscalização.
+8. A utilização de infraestrutura de terceiros pode ensejar apuração regulatória própria, mas não afasta a incidência do Fust quando há receita decorrente de prestação de serviço de telecomunicações.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido.
+Tese de julgamento: "1. É dispensável a manifestação da PFE/Anatel no Processo Administrativo Fiscal que envolva Recurso voluntário e valor nominal inferior a R$ 1.000.000,00 (um milhão de reais). 2. Incide a contribuição ao Fust sobre a receita operacional bruta decorrente de prestação de serviços de telecomunicações, ainda que o serviço seja viabilizado por infraestrutura de terceiros. 3. A ausência de segregação contábil ou fiscal entre receitas de serviço de valor adicionado e de telecomunicações impede o afastamento do lançamento tributário. 4. Cabe ao Interessado provar os fatos que alegar no processo administrativo. 5. Mantém-se o lançamento quando os documentos dos autos não infirmam as conclusões da fiscalização."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, art. 151, III; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.472/1997, art. 61; Decreto nº 70.235/1972, art. 33; Lei nº 9.784/1999, art. 36; Portaria nº 642/2013, art. 5º, IV, com redação dada pela Portaria nº 1.395/2017; Resolução nº 612/2013, arts. 85 e 115; Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: CARF, Súmula nº 11.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 36/2026/EH (SEI nº 15480291), integrante deste acórdão, conhecer do Recurso interposto, por estarem preenchidos os requisitos de admissibilidade, para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15617622 e o código CRC B7EC96E7.
+ | 
+Referência: Processo nº 53504.002419/2016-67 | 
+SEI nº 15617622 |

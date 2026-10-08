@@ -288,3 +288,14 @@ SETOR['ANTAQ'] = {'modal': 'Portos, hidrovias e navegação', 'temas': [
     ('Navegação e hidrovias', 'Navegação interior, cabotagem e longo curso', [r'navegacao', r'cabotagem', r'hidrovia', r'longo curso', r'balsa', r'travessia', r'embarcacao'], 5),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'deliberacao do diretor-geral', r'ad referendum', r'acordo de cooperacao', r'plano de gestao'], 4),
 ]}
+
+SETOR['ANATEL'] = {'modal': 'Telecomunicações', 'temas': [
+    ('Fiscalização e sanções', 'PADO / multa / sanção', [r'pado', r'multa', r'sancao', r'infracao', r'descumprimento', r'obrigacao', r'pacer', r'fiscaliza'], 7),
+    ('Espectro e radiofrequências', 'Radiofrequência / satélite / espectro', [r'radiofrequencia', r'espectro', r'satelite', r'faixa de', r'\bmhz\b', r'\bghz\b', r'\b5g\b'], 7),
+    ('Outorgas e autorizações', 'Autorização / outorga / anuência prévia', [r'outorga', r'autorizacao', r'anuencia', r'transferencia de controle', r'\bscm\b', r'\bstfc\b', r'cessao', r'prestadora'], 6),
+    ('Regulação e normas', 'Regulamento / consulta pública / agenda', [r'regulamento', r'consulta publica', r'agenda regulatoria', r'resolucao', r'norma', r'tomada de subsidios'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'reexame', r'embargos'], 6),
+    ('Qualidade e consumidor', 'Qualidade, universalização e consumidor', [r'qualidade', r'consumidor', r'universaliza', r'cobertura', r'compromisso'], 5),
+    ('Numeração e infraestrutura', 'Numeração / interconexão / compartilhamento', [r'numeracao', r'interconexao', r'compartilhamento', r'infraestrutura', r'homologacao'], 5),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio'], 4),
+]}

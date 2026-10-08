@@ -1,0 +1,46 @@
+SEI/ANATEL - 16205224 - Acórdão
+Boletim de Serviço Eletrônico em 01/09/2026
+DOU de 01/09/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 229, de 31 de agosto de 2026
+Processo nº 53500.014067/2016-22
+Recorrente/Interessado: RBC REDE BRASILEIRA DE COMUNICAÇÃO S.A.
+CNPJ nº 01.766.744/0001-84
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 221, de 28 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST. REVISÃO DA BASE DE CÁLCULO. RETIFICAÇÃO DOS LANÇAMENTOS. RECURSO ADMINISTRATIVO DESPROVIDO. RECURSO DE OFÍCIO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por RBC REDE BRASILEIRA DE COMUNICAÇÃO S.A. contra decisão que reconheceu parcialmente a procedência dos lançamentos da CIDE-Fust e da multa de ofício referentes ao exercício de 2011.
+2. Fato relevante. A revisão fiscal identificou a inclusão, na base de cálculo atribuída à Recorrente, de receitas auferidas pela VIP COMUNICAÇÕES LTDA.
+3. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO reconheceu parcialmente a procedência dos lançamentos e interpôs Recurso de Ofício. A Recorrente impugnou a inclusão de receitas de locação de equipamentos na base de cálculo e a multa de ofício.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se as receitas qualificadas pela Recorrente como locação de equipamentos integram a base de cálculo da CIDE-Fust; (ii) saber se incide multa de ofício pela declaração inexata da contribuição; (iii) saber se o Recurso de Ofício deve ser conhecido; e (iv) saber se a revisão fiscal exige retificação dos lançamentos e se há direito à restituição ou à compensação de eventual valor pago a maior.
+III. RAZÕES DE DECIDIR
+1. A exclusão de receitas da base de cálculo da CIDE-Fust exige prova contábil e documental de que elas são autônomas em relação à prestação de serviços de telecomunicações.
+2. A Recorrente não apresentou documentação capaz de demonstrar que as receitas impugnadas eram desvinculadas da infraestrutura necessária à prestação do serviço de telecomunicações.
+3. A denominação contábil da receita não afasta a incidência da CIDE-Fust quando a fiscalização identifica que a atividade integra a prestação do serviço de telecomunicações.
+4. A multa de ofício de 75% (setenta e cinco) incide nos casos de falta de pagamento, falta de declaração ou declaração inexata que resulte em recolhimento a menor de contribuição.
+5. A Recorrente omitiu valores devidos na declaração da contribuição ao Fust.
+6. A VIP COMUNICAÇÕES LTDA. possui personalidade jurídica, patrimônio e escrituração próprios. Suas receitas não podem compor a base de cálculo atribuída à Recorrente apenas em razão da integração de ambas no mesmo grupo econômico.
+7. As receitas auferidas pela VIP COMUNICAÇÕES LTDA. devem ser apuradas e cobradas em procedimento próprio.
+8. A revisão da base de cálculo reduziu os valores exigíveis em determinados períodos do exercício de 2011. Os lançamentos devem refletir os resultados da revisão fiscal.
+9. A simples declaração não comprova o pagamento do crédito tributário. O direito de pleitear restituição ou compensação extingue-se após cinco anos contados do pagamento. A Agência não identificou requerimento da Recorrente no prazo aplicável.
+10. O valor dos créditos tributários exonerados é inferior ao limite de alçada previsto para o Recurso de Ofício.
+11. A alteração da base de cálculo da CIDE-Fust exige comunicação ao Ministério das Comunicações - MCom, pois o Fundo de Universalização dos Serviços de Telecomunicações - Fust e o Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel compartilham a mesma base de cálculo.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido. Recurso de Ofício não conhecido. Retificados os lançamentos relativos à CIDE-Fust e à multa de ofício. Determinada a comunicação da decisão ao Ministério das Comunicações - MCom.
+Tese de julgamento: "1. A exclusão de receitas da base de cálculo da CIDE-Fust exige prova contábil e documental de sua autonomia em relação à prestação de serviços de telecomunicações. 2. As receitas vinculadas à infraestrutura necessária à oferta do serviço de telecomunicações podem integrar a base de cálculo da CIDE-Fust. 3. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 incide quando a falta de declaração ou a declaração inexata resulta em recolhimento a menor da contribuição ao Fust. 4. As receitas auferidas por pessoa jurídica distinta, com patrimônio e escrituração próprios, não podem ser incluídas na base de cálculo de outra empresa do mesmo grupo econômico sem fundamento jurídico específico. 5. A revisão da base de cálculo da Cide-Fust exige a retificação do lançamento para refletir os resultados da apuração fiscal. 6. O direito à restituição ou à compensação de indébito tributário prescreve em cinco anos contados do pagamento, salvo requerimento tempestivo. 7. Não se conhece do Recurso de Ofício quando o valor dos créditos tributários exonerados é inferior ao limite de alçada aplicável. 8. A alteração da base de cálculo da CIDE-Fust exige comunicação ao Ministério das Comunicações em razão da repercussão sobre o Funttel."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, arts. 151, II e III, 165, I, e 168, I; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 60 e § 1º; Lei nº 9.784/1999, art. 36; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, arts. 33 e 34, I; Resolução nº 612/2013, arts. 85, 115 e 116; Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: Anatel, Acórdão nº 80, Processo nº 53500.016302/2015-10, Rel. Conselheiro Moisés Queiroz Moreira, Conselho Diretor, Reunião nº 921, j. 13.04.2023; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Conselho Diretor, Reunião nº 941, j. 13.03.2025; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Conselheiro Carlos Manuel Baigorri, Conselho Diretor, Reunião nº 885, j. 28.05.2020; Anatel, Acórdão nº 158, Processo nº 53500.028410/2008-14, Rel. Conselheiro Artur Coimbra de Oliveira, Conselho Diretor, Reunião nº 934, j. 04.07.2024; Supremo Tribunal Federal - STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014, publ. 05.02.2015; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014, publ. 13.05.2014.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 81/2026/NP (SEI nº 16149182), integrante deste acórdão:
+a) não conhecer do Recurso de Ofício, tendo em vista que o valor dos créditos tributários ora exonerados é inferior ao limite de alçada estabelecido na Resolução Interna Anatel nº 338/2024; e,
+b) conhecer do Recurso Administrativo interposto por RBC REDE BRASILEIRA DE COMUNICAÇÃO S.A. para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 31/08/2026, às 18:11, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16205224 e o código CRC EF5E80B7.
+ | 
+Referência: Processo nº 53500.014067/2016-22 | 
+SEI nº 16205224 |

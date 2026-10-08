@@ -1,0 +1,41 @@
+SEI/ANATEL - 15913407 - Acórdão
+Boletim de Serviço Eletrônico em 07/07/2026
+DOU de 06/07/2026, seção 1, página 24
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 165, de 03 de julho de 2026
+Processo nº 53500.008014/2025-63
+Recorrente/Interessado: EMBRATEL TVSAT TELECOMUNICAÇÕES S.A., CLARO S.A.
+CNPJ nº 09.132.659/0001-76 nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 161, de 3 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCEDIMENTO DE ACOMPANHAMENTO E CONTROLE - PAC. OBRIGAÇÃO DE FAZER. PRORROGAÇÃO DO PRAZO DE EXECUÇÃO. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Requerimento de prorrogação, por 10 (dez) meses, do prazo de cumprimento de Obrigação de Fazer imposta à CLARO S.A. no Acórdão nº 337, de 11 de novembro de 2024, no âmbito do Procedimento para Apuração de Descumprimento de Obrigações - Pado nº 53500.045133/2017-97.
+2. A sanção consiste na seleção e capacitação de mulheres em condição de vulnerabilidade e risco social, com foco em letramento digital e direitos humanos, com doação de aparelho celular com linha CLARO às concluintes com frequência mínima de 75% (setenta e cinco por cento).
+3. O Procedimento de Acompanhamento e Controle - PAC nº 53500.008014/2025-63 foi instaurado para acompanhar a execução da obrigação. A Prestadora apresentou relatórios de progresso e informou dificuldades administrativas, técnicas e operacionais, inclusive na formalização da parceria com a Organização das Nações Unidas - ONU Mulheres e na seleção das organizações da sociedade civil.
+4. O Informe nº 169/2026/COQL/SCO concluiu que as justificativas apresentadas autorizam a reprogramação das etapas do projeto e que a prorrogação pretendida não compromete a adoção de medidas administrativas e judiciais em caso de inadimplemento.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se o prazo de execução da Obrigação de Fazer poderá ser alterado de 16 (dezesseis) para 26 (vinte e seis) meses, tendo em vista as justificativas apresentadas, na medida em que não há risco imediato de prescrição da pretensão executória.
+III. RAZÕES DE DECIDIR
+1. A Obrigação de Fazer foi construída de forma consensual entre a Agência, a área técnica e a Prestadora, com definição prévia de requisitos, cronograma e mecanismos de acompanhamento.
+2. Os autos do PAC demonstram que a Prestadora adotou providências para executar o projeto e apresentou elementos concretos sobre entraves administrativos e técnicos que impactaram o cronograma originalmente fixado.
+3. As dificuldades relativas à formalização institucional da parceria e à seleção das organizações da sociedade civil mostram-se aptas a justificar a reprogramação das etapas do projeto.
+4. Os documentos em língua estrangeira devem ser traduzidos para o português antes da juntada aos autos, nos termos do art. 224 do Código Civil - CC. Essa irregularidade, porém, não afasta a coerência geral dos argumentos e das provas documentais apresentadas.
+5. A prorrogação pretendida não gera risco imediato de prescrição da pretensão executória. O trânsito em julgado administrativo ocorreu em 4 de novembro de 2024. O prazo prescricional recai, portanto, em 4 de novembro de 2029. A conclusão projetada para 5 de maio de 2027 preserva lapso temporal superior a 2 (dois) anos para verificação do adimplemento e adoção de providências administrativas e judiciais que porventura se fizerem necessárias.
+6. É cabível, portanto, a revisão do item c.8 do Acórdão nº 337, de 11 de novembro de 2024, para ampliar o prazo de execução da obrigação de 16 (dezesseis) para 26 (vinte e seis) meses, com implementação conforme o cronograma descrito no item 5.10 da Análise, proposto pela Prestadora e aprovado pela Área Técnica no Informe nº 169/2026/COQL/SCO.
+IV. DISPOSITIVO E TESE
+Pedido deferido. Prorrogação do prazo para execução da Obrigação de Fazer, com revisão do item c.8 do Acórdão nº 337, de 11 de novembro de 2024, para ampliar o prazo de execução de 16 (dezesseis) para 26 (vinte e seis) meses, com implementação conforme o cronograma descrito no item 5.10 da Análise nº 64/2026/NP (SEI nº 15894189).
+Tese de julgamento: "1. A reprogramação do cronograma de Obrigação de Fazer é admissível quando os autos do PAC demonstram, por prova documental, dificuldades administrativas, técnicas e operacionais supervenientes. 2. Entraves na formalização de parceria institucional e na seleção das organizações executoras justificam a prorrogação do prazo de execução do projeto. 3. A ampliação do prazo de 16 (dezesseis) para 26 (vinte e seis) meses é compatível com a preservação da pretensão executória quando remanesce lapso temporal suficiente, antes do termo prescricional, para a verificação do cumprimento da obrigação e a adoção das medidas cabíveis."
+Dispositivos relevantes citados: CC, art. 224; Lei nº 9.873/1999, arts. 1º e 2º; Resolução nº 589/2012, art. 16.
+Jurisprudência relevante citada: Anatel, Acórdão nº 337, Processo nº 53500.045133/2017-97, Rel. Conselheiro Alexandre Reis Siqueira Freire, Conselho Diretor, Reunião nº 938, j. 04.11.2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 64/2026/NP (SEI nº 15894189), integrante deste acórdão, prorrogar o prazo para execução da Obrigação de Fazer consubstanciada no Acórdão nº 337, de 11 de novembro de 2024 (SEI nº 12872416), promovendo a revisão do item c.8 quanto ao prazo de execução da obrigação, passando-o de 16 (dezesseis) para 26 (vinte e seis) meses, com implementação conforme o cronograma descrito no item 5.10 da referida análise.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Edson Victor Eugênio de Holanda, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 03/07/2026, às 18:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15913407 e o código CRC 98E199E1.
+ | 
+Referência: Processo nº 53500.008014/2025-63 | 
+SEI nº 15913407 |

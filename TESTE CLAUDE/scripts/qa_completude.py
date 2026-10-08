@@ -99,12 +99,26 @@ lin('ANTAQ', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', 
 # ---------------- planilha
 import openpyxl
 wb = openpyxl.load_workbook('votos_2026.xlsx', read_only=True)
+# ---------------- ANATEL
+at = json.load(open('anatel.json'))
+pres_at = {r['reuniao']: set(r['presentes']) | set(r.get('ausentes', [])) for r in at['reunioes']}
+nva = collections.defaultdict(set)
+for v in at['votos']: nva[(v['reuniao'], v['processo'], v['deliberacao'])].add(v['diretor'])
+lin('ANATEL', 'Itens com ao menos 1 voto registrado', len(at['deliberacoes']), sum(1 for d in at['deliberacoes'] if nva[(d['reuniao'], d['processo'], d['deliberacao'])]))
+lin('ANATEL', 'Votos duplicados (item, diretor)', 0, len(at['votos']) - len({(v['reuniao'], v['processo'], v['deliberacao'], v['diretor']) for v in at['votos']}))
+ev_a = collections.Counter(v['proveniencia'] for v in at['votos'])
+lin('ANATEL', 'Votos: nominal + inferido + REVISAR = total', len(at['votos']), sum(ev_a.values()), nota=str(dict(ev_a)))
+lin('ANATEL', 'Verificações da aba qualidade do parser sem DIVERGE', 0, sum(1 for q in at['qualidade'] if q[4] == 'DIVERGE'))
+cha = {str(r[2]).split(' — ')[0].strip() for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True) if r[0] == 'ANATEL'}
+pa = [str(p_[1]).split(' — ')[0].strip() for p_ in at['pendencias']]
+lin('ANATEL', 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(pa), sum(1 for x in pa if any(x == c or c.startswith(x) or x in c for c in cha)))
 vts = [r for r in wb['Votos'].iter_rows(min_row=2, values_only=True)]
 cx = collections.Counter(r[0] for r in vts)
 lin('ANVISA', 'Votos no JSON final × linhas na aba Votos', len(fin['votos']), cx['ANVISA'])
 lin('ANPD', 'Votos no JSON × linhas na aba Votos', len(b['votos']), cx['ANPD'])
 lin('ANP', 'Votos no JSON × linhas na aba Votos', len(anp['votos']), cx['ANP'])
 lin('ANTAQ', 'Votos no JSON × linhas na aba Votos', len(aq['votos']), cx['ANTAQ'])
+lin('ANATEL', 'Votos no JSON × linhas na aba Votos (inclui ex-conselheiro fora dos totais)', len(at['votos']), cx['ANATEL'])
 # ---------------- regra: tudo que falta (esperado − coletado) está na aba 'Faltam na fonte', com URL
 fx = [r for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True)]
 chaves = collections.defaultdict(set)

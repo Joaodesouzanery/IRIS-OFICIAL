@@ -1,0 +1,65 @@
+SEI/ANATEL - 15147963 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 20/2026/AF
+Processo nº 53500.111043/2023-40
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Reavaliação do Regulamento Geral de Acessibilidade (RGA), aprovado pela Resolução nº 667, de 31 de maio de 2016, previsto no item 2 da Agenda Regulatória para o biênio 2025-2026.
+EMENTA
+DIREITO REGULATÓRIO. PROCESSO ADMINISTRATIVO. REAVALIAÇÃO DO REGULAMENTO GERAL DE ACESSIBILIDADE (RGA). PRORROGAÇÃO DE PRAZO DE RELATORIA. PEDIDO PROCEDENTE.
+I. CASO EM EXAME
+Proposta de reavaliação do Regulamento Geral de Acessibilidade (RGA) submetida ao procedimento de Consulta Pública.
+Processo instaurado para definição e detalhamento de projetos voltados à conectividade universal e significativa e à sustentabilidade socioambiental.
+Relevância e complexidade do tema justificam a necessidade de prorrogação do prazo para submissão da matéria ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível prorrogar o prazo de relatoria para submissão da matéria ao Conselho Diretor, nos termos do Regimento Interno da Anatel, diante da relevância e complexidade da matéria.
+III. RAZÕES DE DECIDIR
+ O art. 127, § 3º, do Regimento Interno da Anatel prevê a possibilidade de prorrogação do prazo de relatoria, mediante justificativa.
+ A relevância e complexidade da matéria justificam a necessidade de prorrogação do prazo para análise e apresentação de voto.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Prorrogação do prazo de relatoria por 120 dias para submissão da matéria ao Conselho Diretor.
+Tese de julgamento: "1. É possível prorrogar o prazo de relatoria para submissão da matéria ao Conselho Diretor, nos termos do art. 127, § 3º, do Regimento Interno da Anatel. 2. A relevância e complexidade da matéria justificam a prorrogação do prazo por 120 dias."
+Dispositivos relevantes citados: Resolução nº 612/2013, art. 127, § 3º.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+ANATEL. Agência Nacional de Telecomunicações (Brasil). Resolução nº 612, de 19 de abril de 2013. Brasília, DF, 2013. Aprova o Regimento Interno da Anatel (RIA).
+___. Resolução nº 667, de 31 de maio de 2016. Brasília, DF, 2016. Aprova o Regulamento Geral de Acessibilidade (RGA).
+___. Resolução Interna nº 399, de 30 de dezembro de 2024. Brasília, DF, 2024. Aprova a Agenda Regulatória para o biênio 2025-2026 (SEI nº 13095990).
+RELATÓRIO
+Trata-se da submissão da proposta de da reavaliação do Regulamento Geral de Acessibilidade (RGA), aprovado pela Resolução nº 667, de 31 de maio de 2016, ao procedimento de Consulta Pública.
+O tema foi instaurado no âmbito do item 2 da Agenda Regulatória para o biênio 2025-2026, aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024 (SEI nº 13095990), que tem a seguinte descrição: Reavaliação do Regulamento Geral de Acessibilidade - RGA no sentido de verificar a conveniência de atualizar a norma para (i) incluir outros grupos sociais sob vulnerabilidade (além das Pessoas com Deficiência - PcD) e (ii) propor melhorias na Central de Intermediação de Comunicação - CIC.
+Em 20 de dezembro de 2024, foi concluída a Análise de Impacto Regulatório (AIR), conforme Relatório de AIR SEI nº 11265610.
+Em 27 de janeiro de 2025, a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) se manifestou por meio do Parecer nº 14/2025/PFE-ANATEL/PGF/AGU (SEI nº 13214547)
+Em 20 de março de 2025, o processo foi distribuído para o Gabinete do Conselheiro Substituto Vinícius Oliveira Caram Guimarães, conforme Certidão SEI nº 13438809.
+Em 6 de maio de 2025, o processo foi redistribuído para o Gabinete do Conselheiro Substituto Daniel Martins D'Albuquerque, conforme Certidão SEI nº 13651691.
+Em 4 de setembro de 2025, o processo foi redistribuído à minha relatoria, conforme Certidão SEI nº 14320006.
+Em 5 de setembro de 2025, o processo foi enviado ao Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi), por meio do Ofício nº 150/2025/AF-ANATEL (SEI nº 14325540), para fins de realização de diligência relacionada à aplicação de Behavioral Insights para a proposta do RGA, a saber:
+Ofício nº 150/2025/AF-ANATEL:
+[Omissis]
+7. Nesse contexto, solicita-se que o Nudge.lab, no prazo de 60 (sessenta) dias, conduza estudo aprofundado sobre a aplicação de ciências comportamentais para o aprimoramento da proposta do RGAID, com foco nos seguintes aspectos:
+7.1. Identificação dos principais vieses comportamentais que afetam a adoção e o uso efetivo dos recursos de acessibilidade e inclusão digital nos serviços de telecomunicações, considerando os diferentes grupos em situação de vulnerabilidade social;
+7.2. Proposição de intervenções comportamentais (nudges) para superar as barreiras identificadas, visando maximizar a adesão, o engajamento e a efetividade das ações previstas no RGAID, tanto do lado dos usuários quanto das prestadoras de serviços; e
+7.3. Sugestão de instrumentos de monitoramento e avaliação contínua, que permitam o ajuste dinâmico das estratégias comportamentais ao longo do tempo, conforme o contexto regulatório e as necessidades dos usuários.
+8. Recomenda-se especial atenção aos seguintes temas, destacados na análise regulatória: 
+8.1. Superação de barreiras de comunicação e linguagem; 
+8.2. Engajamento de grupos vulneráveis em programas de capacitação digital; 
+8.3. Superação de barreiras atitudinais, cognitivas e sociais à inclusão digital; 
+8.4. Estratégias para ampliar a adesão e o impacto das ações voluntárias e dos incentivos previstos no Ranking de Acessibilidade e Inclusão Digital.
+É o relatório. 
+DA ANÁLISE 
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo foi automaticamente incluído na pauta desta 950ª Reunião deste Colegiado, de 12 de fevereiro de 2025.
+Diante da relevância e complexidade da matéria, entende-se não ser possível a deliberação da matéria na data prevista regimentalmente, devendo-se prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Submete-se, assim, proposta de nova prorrogação do prazo de relatoria por mais 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto por prorrogar o prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/02/2026, às 16:33, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15147963 e o código CRC 5CC3A32B.
+ | 
+Referência: Processo nº 53500.111043/2023-40 | 
+SEI nº 15147963 |

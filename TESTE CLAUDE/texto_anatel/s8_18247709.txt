@@ -1,0 +1,49 @@
+SEI/ANATEL - 16270802 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 48
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 248, de 11 de setembro de 2026
+Processo nº 53500.063274/2020-97
+Recorrente/Interessado: ALGAR TELECOM S.A.
+CNPJ nº 71.208.516/0001-74
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO DE ACOMPANHAMENTO DE TERMO DE COMPROMISSO DE AJUSTAMENTO DE CONDUTA - TAC. CERTIFICADO DE CUMPRIMENTO. EMISSÃO APROVADA.
+I. CASO EM EXAME
+1. O processo. Processo de acompanhamento do Termo de Compromisso de Ajustamento de Conduta - TAC nº 2/2020, firmado entre a Anatel e a ALGAR TELECOM S.A., com proposta de emissão de Certificado de Cumprimento nos termos da Cláusula 8.2 do ajuste.
+2. Fato relevante. A análise abrangeu os compromissos relativos a licenciamento de estações, implementação de funcionalidades em sistemas e aplicativo, validação de dados cadastrais, ressarcimento de usuários, governança e auditoria e compromissos adicionais de implantação de Serviço Móvel Pessoal - SMP com tecnologia 4G.
+3. Manifestação técnica e jurídica. A área técnica consolidou o acompanhamento dos 30 (trinta) meses de vigência do TAC e propôs a emissão do certificado. A Procuradoria Federal Especializada junto à Anatel - PFE/Anatel apresentou recomendações e apontamentos, posteriormente examinados e esclarecidos pelas áreas competentes.
+4. Procedimentos de Apuração de Descumprimento de Item de Cronograma - PADICs instaurados. No curso do acompanhamento, foram instaurados três PADICs. Um deles resultou em multa quitada. Os outros dois foram extintos por perda de objeto no contexto do Termo de Autocomposição para Adaptação dos Contratos de Concessão do Serviço Telefônico Fixo Comutado - STFC da ALGAR TELECOM S.A.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se os compromissos assumidos no TAC nº 2/2020 foram cumpridos de modo suficiente para autorizar a emissão do Certificado de Cumprimento; e (ii) saber se os apontamentos da PFE/Anatel e os PADICs instaurados impedem o reconhecimento do adimplemento do ajuste.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor deliberar sobre a emissão do Certificado de Cumprimento, nos termos da Cláusula 8.2 do TAC nº 2/2020.
+2. As Cláusulas 10.2, alíneas “a”, “b” e “c”, 10.3 e 10.4 foram cumpridas. As metas intermediárias de regularização do licenciamento foram atingidas antes do prazo previsto.
+3. A Cláusula 10.6 foi cumprida. A funcionalidade no sistema Algar CRM foi implementada e atestada pela área técnica.
+4. As obrigações das Cláusulas 10.7 e 10.8, alínea “a”, relativas à validação de dados cadastrais por canais digitais para clientes varejo e corporativo, foram implementadas no prazo e validadas pela fiscalização.
+5. Quanto às Cláusulas 10.7 e 10.8, alínea “b”, relativas ao atendimento via call center, houve identificação de indícios de falhas na utilização da funcionalidade QUIZ e instauração de PADIC. O processo foi posteriormente extinto por perda de objeto, no contexto do Termo de Autocomposição, sem pendência remanescente para a emissão do certificado.
+6. A Cláusula 10.5, relativa às funcionalidades do aplicativo, foi implementada no prazo. As falhas posteriormente identificadas motivaram PADIC, que também foi extinto por perda de objeto, o que afasta óbice ao reconhecimento do adimplemento.
+7. As Cláusulas 10.9 a 10.13, relativas ao ressarcimento de usuários, foram cumpridas. Os esclarecimentos posteriores afastaram as dúvidas suscitadas pela PFE/Anatel sobre quantitativos, forma de ressarcimento, tempestividade e alcance das medidas adotadas.
+8. O ressarcimento intempestivo de 19 (dezenove) registros foi objeto de PADIC próprio, com aplicação de multa e posterior quitação, em conformidade com a Cláusula 8.3 do TAC.
+9. Quanto aos registros residuais de ressarcimento por abatimento em fatura, a fiscalização demonstrou a regularidade do procedimento adotado. O atesto de cumprimento pode ser emitido, sem prejuízo da continuidade do acompanhamento dos casos remanescentes pela área técnica.
+10. As Cláusulas 10.14 e 10.15, relativas a governança e auditoria, foram cumpridas mediante envio tempestivo de relatórios semestrais de conformidade.
+11. As Cláusulas 11.1 a 11.8, relativas aos compromissos adicionais de implantação de SMP com tecnologia 4G ou superior, foram cumpridas. Os esclarecimentos técnicos afastaram as dúvidas sobre cobertura e licenciamento apontadas pela PFE/Anatel.
+12. Todos os PADICs relacionados ao TAC encontram-se encerrados. Não subsistem pendências impeditivas à emissão do Certificado de Cumprimento.
+13. Em razão da inexistência de previsão normativa de ato formal denominado "Certificado" entre os instrumentos de deliberação do Conselho, o Acórdão da deliberação servirá de instrumento hábil a certificar o cumprimento do TAC, em atendimento à cláusula 8.2.
+IV. DISPOSITIVO E TESE
+Certificar o cumprimento do TAC pela ALGAR TELECOM S.A.
+Tese de julgamento: "1. O cumprimento dos compromissos previstos no TAC nº 2/2020 autoriza a emissão do Certificado de Cumprimento previsto na Cláusula 8.2. 2. O Acórdão de deliberação certificará o cumprimento, em atendimento à cláusula 8.2 do TAC. 3. A existência de PADIC com multa já quitada e a extinção superveniente dos demais processos por perda de objeto não impedem o reconhecimento do adimplemento do TAC. 4. O atesto de cumprimento das Cláusulas 10.9 a 10.13 não afasta o dever de continuidade do acompanhamento, pela área técnica, dos ressarcimentos ainda realizados por abatimento em documento de cobrança."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999, arts. 50, § 1º, e 52; Resolução nº 612/2013, art. 53; Resolução nº 629/2013, arts. 17, § 1º, I, e 23; e Resolução nº 632/2014, arts. 26 e 87.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 58/2026/OP (SEI nº 15987552), integrante deste acórdão:
+a) certificar o cumprimento do Termo de Ajustamento de Conduta nº 2/2020 pela ALGAR TELECOM S.A., nos termos da cláusula 8.2; e,
+b) determinar à Superintendência de Controle de Obrigações - SCO que, quanto às cláusulas 10.9 a 10.13, dê continuidade ao processo de ressarcimento dos usuários com abatimento em documento de cobrança, conforme apontado no item "E", alínea "c", do Parecer da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 15/09/2026, às 16:40, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16270802 e o código CRC E8986DA9.
+ | 
+Referência: Processo nº 53500.063274/2020-97 | 
+SEI nº 16270802 |

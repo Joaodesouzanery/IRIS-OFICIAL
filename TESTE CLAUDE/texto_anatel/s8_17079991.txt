@@ -1,0 +1,54 @@
+SEI/ANATEL - 15265586 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 53, de 03 de março de 2026
+Processo nº 53500.083092/2017-37
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. SERVIÇO MÓVEL PESSOAL. DESCUMPRIMENTO DE DIREITOS DO USUÁRIO. PARCIAL PROVIMENTO DE OFÍCIO. MANUTENÇÃO DE SANÇÃO DE ADVERTÊNCIA E MULTA. DESCARACTERIZAÇÃO DE INFRAÇÃO AO ATO Nº 2.013/2013. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A. contra decisão que aplicou sanção de advertência pelo descumprimento ao art. 15, § 3º, do Regulamento do Serviço Móvel Pessoal - RSMP, aprovado pela Resolução nº 477/2007, e multa pelo descumprimento ao art. 6º, XX, do RSMP.
+2. Decisão também imputou infração ao art. 2º do Ato nº 2.013/2013.
+3. Petição extemporânea apresentada pela Recorrente antes da publicação da pauta da reunião do Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se houve nulidade na instauração do processo administrativo sancionador por cerceamento de defesa; (ii) saber se restou comprovada a materialidade das infrações ao RSMP e ao Ato nº 2.013/2013; (iii) saber se as sanções aplicadas observam os critérios de legalidade, razoabilidade e proporcionalidade; e (iv) aplicação de sanção de obrigação de fazer, consistente no provimento de conectividade para instituições públicas de ensino superior.
+III. RAZÕES DE DECIDIR
+1. Processo observou os princípios do devido processo legal, contraditório e ampla defesa, sendo o Recurso tempestivo, legítimo e cabível.
+2. Petição extemporânea foi conhecida, pois protocolizada antes da publicação da pauta, conforme Súmula nº 21/2017 da Anatel.
+3. Não se verificou cerceamento de defesa, pois a Recorrente teve oportunidade de apresentar provas e manifestações, que foram analisadas pela área técnica e pela Procuradoria Federal Especializada junto à Anatel.
+4. Infrações ao art. 6º, XX, do RSMP restaram caracterizadas para os serviços Vivo Foto/Vídeo Torpedo e Vivo Me Liga, pois não foi comprovada a efetivação do bloqueio solicitado dentro do prazo regulamentar.
+5. Não ficou comprovada a materialidade da infração ao art. 2º do Ato nº 2.013/2013, pois a fiscalização não averiguou a adequação da sistemática de bloqueio exigida pelo ato.
+6. Sanção de advertência pela infração ao art. 15, § 3º, do RSMP foi mantida, pois classificada como leve.
+7. Sanção de multa pela infração ao art. 6º, XX, do RSMP foi mantida, calculada conforme metodologia prevista na Portaria nº 791/2014, observando critérios objetivos e proporcionais.
+8. Não foram acolhidas alegações de desproporcionalidade, baixa ofensividade ou necessidade de atenuantes, pois não houve comprovação de cessação da infração ou reparação ao usuário.
+9. A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+10. Remessa de cópia dos autos à Corregedoria da Anatel determinada para apuração de eventual falta funcional em razão da prescrição da infração relacionada ao serviço Vivo Torpedo Web.
+IV. DISPOSITIVO E TESE
+1. Recurso Administrativo conhecido e desprovido.
+2. Petição extemporânea conhecida e indeferida.
+3. Decisão recorrida reformada de ofício para descaracterizar, por ausência de materialidade, a infração ao art. 2º do Ato nº 2.013/2013.
+4. Mantidas as sanções de advertência e multa pela infração ao RSMP.
+5. Aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, conforme requisitos e parâmetros definidos.
+6. Determinada a remessa de cópia dos autos à Corregedoria da Anatel.
+Tese de julgamento: "1. Não há nulidade na instauração do processo administrativo sancionador por cerceamento de defesa. 2. Restou caracterizada a infração ao art. 6º, XX, do RSMP para os serviços Vivo Foto/Vídeo Torpedo e Vivo Me Liga. 3. Não restou comprovada a materialidade da infração ao art. 2º do Ato nº 2.013/2013. 4. Mantidas as sanções de advertência e multa, observados os critérios legais e regulamentares. 5. Aplicação da sanção de obrigação de fazer consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção. 6. Determinada a remessa de cópia dos autos à Corregedoria da Anatel para apuração de eventual falta funcional."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 6º, XX; Resolução nº 477/2007, arts. 6º, XX, 15, § 3º; Ato nº 2.013/2013, art. 2º; Resolução nº 589/2012; Portaria nº 791/2014; Súmula nº 21/2017 da Anatel.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 1/2025/OP (SEI nº 14330202), integrante deste acórdão:
+a) conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento;
+b) conhecer da Petição extemporânea SEI nº 14277092, nos termos da Súmula nº 21, de 10 de outubro de 2017, e indeferir os pedidos nela contidos;
+c) reformar, de ofício, a decisão recorrida para descaracterizar, por ausência de materialidade, a infração ao art. 2º do Ato nº 2.013, de 2013;
+d) manter a sanção de advertência pela infração ao art. 15, § 3º, do RSMP e a sanção de multa no valor de R$ 8.709.954,94 (oito milhões, setecentos e nove mil, novecentos e cinquenta e quatro reais e noventa e quatro centavos) pela infração ao art. 6º, XX, do RSMP, conforme planilha SEI nº 8849042;
+e) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, tendo como base o valor de R$ 8.709.954,94 (oito milhões, setecentos e nove mil, novecentos e cinquenta e quatro reais e noventa e quatro centavos), com as correções monetárias e dedução, nos termos do RASA, a ser implementado nos termos expostos no item 4.109 da referida análise; e,
+f) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comunique à Agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15265586 e o código CRC CA673B88.
+ | 
+Referência: Processo nº 53500.083092/2017-37 | 
+SEI nº 15265586 |

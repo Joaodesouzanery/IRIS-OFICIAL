@@ -1,0 +1,371 @@
+SEI/ANATEL - 15271756 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 8/2026/NP
+Processo nº 53516.000134/2021-10
+Interessado: Ligga Telecomunicacoes S.a.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência do lançamento de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), para o exercício de 2019.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. BASE DE CÁLCULO. RECEITAS DE INTERCONEXÃO E DE CESSÃO DE MEIOS (EILD). MULTA DE OFÍCIO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por Ligga Telecomunicações S.A. contra decisão que reconheceu a procedência de lançamento da CIDE-FUST e de multa de ofício, referentes ao exercício de 2019.
+ Fato relevante. Fiscalização apurou diferença entre os valores devidos e os declarados, com lavratura de Notificação de Lançamento.
+ As alegações. Recorrente alegou nulidade do lançamento por ausência de fundamentação legal e de demonstrativo de cálculo. Recorrente sustentou não incidência da CIDE-FUST sobre receitas de interconexão e de cessão de meios (EILD). Recorrente alegou bis in idem.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se o lançamento é nulo por ausência de motivação e de demonstrativo de cálculo; (ii) saber se incide CIDE-FUST sobre receitas de interconexão e de cessão de meios (EILD); e (iii) saber se é cabível a manutenção da multa de ofício aplicada por ausência ou inexatidão de declaração.
+III. RAZÕES DE DECIDIR
+ O recurso é tempestivo e atende aos pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no Regimento Interno da Anatel.
+ A impugnação e o recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal.
+ A Notificação de Lançamento indicou o fundamento legal do crédito tributário e remeteu ao Relatório de Fiscalização e à planilha de apuração disponibilizados ao sujeito passivo.
+ A motivação por referência é admitida nos termos do art. 50, § 1º, da Lei nº 9.784/1999.
+ A recorrente não demonstrou prejuízo concreto ao exercício da ampla defesa.
+ A interconexão configura serviço de telecomunicações entre prestadoras, com receita decorrente de contraprestação.
+ O parágrafo único do art. 6º da Lei nº 9.998/2000 não se aplica quando há contraprestação por serviço de interconexão e por uso de recursos integrantes de rede.
+ Incide a CIDE-FUST sobre receitas de interconexão e de cessão de meios (EILD), conforme a Súmula Anatel nº 7.
+ Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações entre prestadora e usuário.
+ A multa de ofício é devida nos casos de ausência ou inexatidão de declaração, no percentual previsto em lei.
+ Deve haver comunicação ao Ministério das Comunicações quando a decisão administrativa implicar alteração na base de cálculo da CIDE-FUST, em razão da base compartilhada com o Funttel.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido. Determinação de comunicação ao Ministério das Comunicações.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e atendidos os pressupostos de admissibilidade do Decreto nº 70.235/1972 e do Regimento Interno da Anatel. 2. A impugnação e o recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal. 3. O lançamento não é nulo quando a Notificação de Lançamento indica os fundamentos legais e incorpora, por referência, Relatório de Fiscalização e planilha de cálculo disponibilizados ao sujeito passivo. 4. Incide a CIDE-FUST sobre receitas de interconexão e de cessão de meios (EILD), por configurarem contraprestação vinculada a serviço de telecomunicações entre prestadoras. 5. Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações com usuários. 6. É cabível a multa de ofício, no percentual legal, nos casos de ausência ou inexatidão de declaração. 7. A Anatel deve comunicar ao Ministério das Comunicações decisão que implique alteração na base de cálculo da CIDE-FUST, em razão da base compartilhada com o Funttel."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (CTN), arts. 142, 149, 150 e 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 146, parágrafo único; Lei nº 9.784/1999, art. 50, § 1º; Lei nº 9.998/2000, arts. 4º, VI, e 6º, IV e parágrafo único; Decreto nº 70.235/1972, arts. 10, 11, II, 33; Resolução nº 612/2013 (RIA), art. 116; Portaria Anatel nº 642/2013, art. 5º, IV, “a”; Portaria Anatel nº 1.355/2019, item 7.1.1; Resolução nº 693/2018, arts. 3º, II e X, e 30.
+Jurisprudência relevante citada: Súmula Anatel nº 7; Súmula Anatel nº 26; Súmula CARF nº 11; STJ, AgInt no AREsp nº 934.319, Rel. Min. Francisco Falcão, 2ª Turma, DJe 22.11.2017; Anatel, Acórdão nº 114, de 12.04.2017; Anatel, Acórdão nº 312, de 02.06.2020; Anatel, Acórdão nº 312, de 14.09.2021; Anatel, Acórdão nº 38, de 13.02.2023; Anatel, Acórdão nº 19, de 16.02.2024; Anatel, Acórdão nº 89, de 08.04.2025; Anatel, Acórdão nº 97, de 08.04.2025.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN).
+Lei nº 9.430, de 27 de dezembro de 1996 - dispõe sobre a legislação tributária federal.
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+Lei nº 9.998, de 17 de agosto de 2000 - Lei do Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+Lei nº 10.522, de 19 de julho de 2002 - Cadastro Informativo dos créditos não quitados de órgãos federais (Cadin).
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+Decreto nº 3.624, de 5 de outubro de 2000 - Regulamento do Fust.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Súmula nº 7, de 15 de dezembro de 2005, referente a receitas que compõem a base de cálculo das contribuições ao Fust.
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria Anatel nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por LIGGA Telecomunicações S.A., inscrita no CNPJ sob o nº 04.368.865/0001-66, em face do Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953), que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, relativos ao exercício do ano de 2019, bem como a incidência de multa de ofício pela ausência de declaração da respectiva contribuição, conforme consignado na Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454).
+Em 30 de abril de 2021, concluiu-se o Relatório de Fiscalização nº 53/2021/GR03FI1/GR03/SFI (SEI nº 6825482), que apurou valores devidos a título de contribuição ao Fust no valor de [item 1 do Apartado Sigiloso – SEI nº 15463009], referentes ao exercício financeiro de 2019, dos quais [item 2 do Apartado Sigiloso – SEI nº 15463009] haviam sido declarados, restando devida a diferença de [item 3 do Apartado Sigiloso – SEI nº 15463009].
+Aos 10 de abril de 2023 (SEI nº 10149168) a Prestadora foi intimada acerca da existência de crédito tributário relativo à CIDE-FUST, conforme Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454) e aos 25 de maio de 2023 (SEI nº 10292847), protocolizou a respectiva impugnação, por meio da qual alegou:
+a) prelimarmente: nulidade do lançamento por vícios de legalidade, tendo em vista ter se baseado em interpretação de Súmula da Anatel sobre a obrigatoriedade de inclusão das receitas de cessões de meios de rede na base de cálculo do Fust, sem indicação do fundamento legal e da demonstração do respectivo cálculo dos valores objeto da cobrança.
+b) quanto ao mérito, sustentou a não incidência da CIDE-FUST sobre receitas decorrentes de interconexão e EILD.
+Com esses argumentos, requereu, para além da nulidade do lançamento, o cancelamento da multa de ofício e a suspensão da exigibilidade do crédito. 
+Aos 23 de julho de 2025, a Gerência de Controle de Obrigações Gerais - COGE analisou os achados da fiscalização e a impugnação da Prestadora, nos termos do Informe nº 235/2025/COGE/SCO (SEI nº 13471948). Na oportunidade consignou que: (i) a apresentação da impugnação suspende a exigibilidade do crédito tributário; (ii) não se aplica a prescrição intercorrente ao Processo Administrativo Fiscal Contencioso, nos termos da Súmula nº 26 da Anatel e da Súmula nº 11 do Conselho Administrativo de Recursos Fiscais - CARF; (iii) os valores devidos a título de CIDE-FUST e a respectiva memória de cálculo encontram-se devidamente discriminados no Relatório de Fiscalização nº 53/2021/GR03FI1/GR03/SFI (SEI nº 6825482) e na Planilha SEI nº 6828801, disponibilizados à Prestadora, inexistindo vício de motivação ou legalidade; e (iv) nos termos da Súmula da Anatel nº 7/2005, não se excluem da base de cálculo das contribuições ao Fust as receitas de interconexão e aquelas decorrentes do uso de recursos integrantes de suas redes.
+Considerando que a Prestadora não apresentou nova documentação contábil que justificasse a realização de diligências adicionais, foram mantidos os valores apurados originalmente pela fiscalização.
+Diante da ausência de enquadramento nas hipóteses previstas no art. 5º da Portaria nº 642, de 26 de julho de 2013, e no art. 1º da Resolução Interna da Anatel nº 338, de 15 de julho de 2024, a Área Técnica deixou de encaminhar os autos à Procuradoria Federal Especializada junto à Anatel - PFE-Anatel.
+Ao final, opinou-se pela procedência do lançamento dos créditos tributários referentes à contribuição para o Fust, traduzidos na Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454), para o exercício de 2019, nos termos do art. 6º, IV, da Lei nº 9.998/2000 e da multa de ofício correspondente, nos termos do art. 44, I, da Lei nº 9.430/1996.
+A proposta da Área Técnica foi acolhida pela Superintendente de Controle de Obrigações - SCO, nos termos do Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953), de 23 de julho de 2025, que decidiu por:
+"RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), traduzidos na Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454), para o exercício de 2019, nos termos do art. 6º, IV, da Lei nº 9.998/2000;
+RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos referentes à incidência de multa de ofício, traduzidos na Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454), para o exercício de 2019, nos termos do art. 6º, IV, da Lei nº 9.998/2000;"
+Notificou-se a Prestadora sobre os termos da decisão em 11 de agosto de 2025 (SEI nº 13471967 e nº 14167476), a qual apresentou Recurso Administrativo (SEI nº 14338948) aos 8 de setembro. Em suas razões recursais, a Empresa reiterou, em seus precisos termos, os argumentos já defendidos na impugnação protocolizada na fase instrutória.
+Os argumentos apresentados na esfera recursal foram apreciados pela COGE no Informe nº 1106/2025/COGE/SCO (SEI nº 14720857), de 04 de fevereiro de 2026, propondo-se o conhecimento do Recurso e, quanto ao mérito, seu não provimento, diante da ausência de inovação fática ou probatória apta a fundamentar a revisão da decisão recorrida.
+Na mesma data, a Superintendente de Controle de Obrigações - SCO, proferiu o Despacho Decisório nº 905/2025/COGE/SCO (SEI nº 14600855), conhecendo do Recurso Administrativo e encaminhando os autos para apreciação deste Colegiado, conforme Matéria nº 774/2025 (SEI nº 14574584).
+Por meio da Matéria nº 847/2025 (SEI nº 14728265), remeteram-se os autos à Superintendência Executiva - SUE, os quais seguiram para a Secretaria do Conselho Diretor - SCD, em 6 de fevereiro de 2026, por meio do Despacho Ordinatório SEI nº 15151774.
+Aos 12 de fevereiro, a matéria foi distribuída à relatoria da Conselheira Cristiana Camarate (SEI nº 15178160), tendo sido redistribuído à minha relatoria aos 4 de março de 2026, conforme Certidão SEI nº 15269730.
+É o relatório.
+fundamentação
+A instauração e instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 3 (três) partes. Na primeira, avalia-se a admissibilidade do Recurso Administrativo interposto pela Prestadora. Na segunda, procede-se à análise das preliminares arguidas e do mérito recursal. Na terceira parte, aborda-se o envio de comunicação ao Ministério das Comunicações, órgão responsável pela cobrança do Fust, e na quarta e última parte, verifica-se a conformidade desta Análise aos objetivos regulatórios da Anatel e à Agenda 2030 da Organização das Nações Unidas - ONU.
+I - DA ADMISSIBILIDADE RECURSAL E SUSPENSÃO DO CRÉDITO TRIBUTÁRIO
+Nos termos do art. 33 do Decreto nº 70.235, de 6 de março de 1972, e da Portaria Anatel nº 1.355, de 26 de julho de 2019, o prazo para interposição de Recurso Administrativo no âmbito do PAF é de 30 (trinta) dias. Confira-se:
+Decreto nº 70.235/72 - Processo Administrativo Fiscal - PAF.
+"Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão."
+...
+Portaria Anatel nº 1355/2019 - Fase Contenciosa de Processos Administrativos Fiscais - PAF-C 
+"7.1.1. O prazo para apresentação de recurso administrativo é de 30 (trinta) dias. (Redação dada pela Portaria nº 1751, de 3 de dezembro de 2020)"
+Destaco que, em 13 de janeiro de 2026, foi editada a Lei Complementar nº 227, que, entre outros assuntos, alterou o prazo de interposição de recurso previsto no art. 33 do Decreto nº 70.235/1972, o qual passou a ser de 20 (vinte) dias úteis, contados a partir da notificação.
+No entanto, considerando o princípio de que "o tempo rege o ato" (tempus regit actum), a nova norma não se aplica ao caso em apreço, uma vez que o Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953) foi proferido aos 23 de julho de 2025, tendo a Prestadora sido intimada de seu inteiro teor em 11 de agosto de 2025 (Ofício nº 311/2025/COGE/SCO-Anatel – SEI nº 14167476 e 14167476). Iniciou-se o prazo recursal aos 12 de agosto de 2025, terça-feira, primeiro dia útil subsequente à notificação, encerrando-se em 10 de setembro do mesmo ano, quarta-feira.
+O Recurso Administrativo foi protocolizado aos 08 de setembro de 2025, segunda-feira (SEI nº 14338948), sendo, portanto, tempestivo.
+Ademais, o recurso é cabível, a recorrente possui interesse na reforma da decisão proferida e está regularmente representada.
+Assim, estão presentes os pressupostos de admissibilidade recursal previstos no art. 116 do RIA.
+Por se tratar de recurso voluntário com valor nominal dos lançamentos inferior ao limite de alçada, dispensa-se o envio dos autos à PFE-Anatel, nos termos do art. 5º, IV, "a", da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017.
+Importa ainda destacar que não se aplica a prescrição intercorrente no âmbito do PAF, conforme Súmula da Anatel nº 26 e da Súmula nº 11 do Conselho Administrativo de Recursos Fiscais (CARF).
+Súmula Anatel nº 26
+"É inaplicável a prescrição intercorrente no processo administrativo fiscal."
+...
+Súmula CARF nº 11
+"Não se aplica a prescrição intercorrente no processo administrativo fiscal."
+(Precedentes: Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003).
+Ante o exposto, ratifico a decisão que admitiu o conhecimento do Recurso Administrativo, consubstanciada no Despacho Decisório nº 905/2025/COGE/SCO, de 04 de fevereiro de 2026 (SEI nº 14728245).
+Ademais, diante da Impugnação à Notificação de Lançamento nº 001-002770/2023/AFFO-ANATEL (SEI nº 10075454), apresentada aos 10 de abril de 2023 (SEI nº 10149168), a exigibilidade do crédito tributário foi suspensa, em observância ao disposto no art. 151, inciso II, do Código Tributário Nacional - CTN:
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN)
+"Art. 151. Suspendem a exigibilidade do crédito tributário:
+(...)
+III - as reclamações e os recursos, nos têrmos das leis reguladoras do processo tributário administrativo;"
+II - DAS RAZÕES RECURSAIS
+Em suas razões recursais a Prestadora reiterou, ipse literis, os argumentos já sustentados em sua impugnação, a saber: (i) nulidade do lançamento por vícios de legalidade, tendo em vista que o lançamento tributário se baseou em interpretação de Súmula da Anatel sobre a obrigatoriedade de inclusão das receitas de cessões de meios de rede na base de cálculo do Fust, sem indicação do fundamento legal e da demonstração do respectivo cálculo dos valores objeto da cobrança e (ii) não incidência da CIDE-FUST sobre receitas decorrentes de interconexão.
+Passo a avaliá-los.
+II.1. Das preliminares de mérito
+II.1.1. Alegação de nulidade do lançamento tributário por ofensa ao princípio da legalidade - vício de motivação
+Pretende a Recorrente a nulidade do lançamento de ofício por vícios materiais insanáveis, supostamente caracterizados pela ausência de fundamentação legal e do demonstrativo de cálculo dos valores objeto da cobrança. Segundo seu entendimento, tais omissões teriam ofendido aos princípios constitucionais da legalidade e da ampla defesa.
+Argumenta, ademais, que a inclusão das receitas de cessão de meios (EILD) na base de cálculo da CIDE-FUST teria se fundamentado exclusivamente na Súmula nº 7, de 15 de dezembro de 2005, da Anatel, o qual não constitui fundamento legal apto a amparar lançamento tributário, sob pena de violação ao princípio da legalidade estrita (art. 150, I, da Constituição Federal). Para corroborar sua tese, cita precedentes das Turmas Ordinárias do CARF acerca de nulidade por ausência de motivação. Transcrevo excertos dos argumentos recursais:
+Recurso Administrativo
+"Nessa linha, verifica-se que o lançamento de ofício ora combatido deve ser declarado nulo por vícios materiais insanáveis, caracterizados pela ausência de fundamentação legal e do demonstrativo de cálculo dos valores objeto da cobrança, em nítida ofensa aos princípios constitucionais da legalidade e da ampla defesa.
+(...)
+Além disso, segundo o relatório da fiscalização e da decisão ora recorrida, haveria a obrigatoriedade de inclusão das receitas de cessões de meios na base de cálculo do FUST com base na Súmula da ANATEL n. 07 de 2005. 
+No entanto, não consta qualquer justificativa ou fundamento no relatório da diligência fiscal, sendo que a interpretação constante em súmula não pode servir de base legal para o lançamento tributário, sob pena de ofensa ao princípio da legalidade estrita insculpido no artigo 150, inciso I, da Constituição Federal4 .
+(...)
+No presente caso, conforme acima exposto, verifica-se que a Autoridade Administrativa formalizou a exigência do montante de mais de seiscentos mil reais, sem qualquer demonstrativo de cálculo dos valores objeto da notificação, o que acarretou o cerceamento do direito de defesa da contribuinte.
+(...)
+No mesmo sentido, importante citar o entendimento do Conselho Administrativo de Recursos Fiscais (CARF), no sentido de que a ausência de motivação (tal como ocorre no presente caso) acarreta a nulidade do lançamento fiscal: 
+Assunto: Contribuição para o Financiamento da Seguridade Social – Cofins Período de apuração: 01/01/2003 a 31/12/2004 AUTO DE INFRAÇÃO. AUSÊNCIA DE MOTIVAÇÃO. NULIDADE. VÍCIO MATERIAL.
+A ausência da descrição completa dos motivos que levaram a autoridade fiscal a lavrar o lançamento constitui causa de nulidade, caracterizando-se como vício material. Recurso voluntário provido
+Diante do todo exposto, considerando que não houve, no presente caso, fundamentação legal para lançamento, tampouco a juntada do demonstrativo do cálculo do crédito tributário, deve ser anulado o lançamento fiscal por vício material insanável e reformada a decisão recorrida, na medida em que a falta de conteúdo ao ato invalida todo o lançamento, em ofensa ao artigo 142, do CTN e artigo 10 do Decreto n. 70.235/1972."
+Ao examinar a matéria em segunda instância, por meio do Informe nº 1106/2025/COGE/SCO (SEI nº 14720857), a Área Técnica ratificou os termos do Informe nº 235/2025/COGE/SCO (SEI nº 13471948), no sentido de que a notificação consigna expressamente que o crédito tributário decorre do descumprimento do art. 6º, IV, da Lei nº 9.998/2000, que institui a contribuição de 1% (um por cento) sobre a receita operacional bruta das prestadoras de serviços de telecomunicações, bem como indica que o lançamento de ofício se deu em razão de inexatidão da declaração, nos termos dos arts. 149 e 150 do CTN.
+O Informe nº 235/2025/COGE/SCO (SEI nº 13471948) ainda esclarece que o Relatório de Fiscalização e a respectiva planilha, que detalham a composição da base de cálculo, as contas consideradas e o montante apurado, foram regularmente disponibilizados à empresa. Considerando que tais documentos integram o ato administrativo por força do art. 50, § 1º, da Lei nº 9.784/1999, concluiu se encontrarem atendidos os requisitos formais e materiais do lançamento previstos no art. 142 do CTN e no art. 11, II, do Decreto nº 70.235/1972.
+Seguem minhas considerações sobre a matéria.
+Inicialmente, cumpre registrar que diversamente do que sustenta a Recorrente, a Notificação de Lançamento nº nº 001-002770/2023/ AFFO - ANATEL (SEI nº 10075454) consignou de forma clara os fundamentos fáticos e jurídicos da exigência, indicando expressamente que o crédito tributário decorreu da falta e/ou inexatidão da declaração, com aplicação da multa prevista no art. 44, I, da Lei nº 9.430/1996, em razão de recolhimento a menor:
+Notificação de Lançamento nº 001-002770/2023/ AFFO - ANATEL
+"Em decorrência da falta e/ou inexatidão da declaração, aplicou-se a multa de ofício a que alude o artigo 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, no percentual de 75% (setenta e cinco por cento) do valor principal, a qual é atualizada pela Taxa Selic desde o vencimento da contribuição, conforme dispositivos legais acima mencionados."
+O detalhamento das inconsistências identificadas consta do Relatório de Fiscalização nº nº 53/2021/GR03FI1 (SEI nº 6825482), ao qual a Notificação faz referência expressa, inclusive com indicação de acesso à integralidade dos autos. No referido Relatório encontram-se descritos: (i) as receitas de cessão de meios (EILD) consideradas na base de cálculo da CIDE-Fust; (ii) a relação das contas contábeis examinadas e os critérios adotados para composição da base tributável; (iii) as deduções relativas a PIS e Cofins;os documentos contábeis analisados; e (iv) a memória de cálculo do crédito tributário (SEI nº 6828801).
+Foram ainda anexados aos autos os balancetes mensais, plano de contas, balanço patrimonial, DRE e demais documentos fornecidos pela própria Recorrente em resposta ao Requerimento de Informações SEI nº 6440076, que serviram de substrato à ação fiscal.
+Desse modo, não há falar em ausência de motivação. O lançamento observou o disposto no art. 142 do CTN, contendo a identificação do sujeito passivo, a descrição da matéria tributável, o montante do crédito e o fundamento legal da exigência.
+Ademais, à luz do art. 50, § 1º, da Lei nº 9.784/1999, admite-se a motivação por referência, sendo plenamente válida a incorporação, ao ato decisório, dos fundamentos constantes de manifestações técnicas anteriores, que passam a integrar o próprio ato administrativo.
+Importa destacar que a Recorrente apresentou impugnação detalhada, enfrentando especificamente os critérios adotados pela fiscalização, o que evidencia ter compreendido integralmente a imputação que lhe foi dirigida. Não se verifica, portanto, qualquer prejuízo ao exercício da ampla defesa.
+Nesse contexto, incide o princípio pas de nullité sans grief, amplamente acolhido no Direito Administrativo pátrio, segundo o qual não se declara nulidade sem demonstração de prejuízo concreto. A jurisprudência do Superior Tribunal de Justiça - STJ é pacífica no sentido de que a anulação de ato administrativo exige comprovação de efetivo cerceamento de defesa ou dano material ao administrado, não bastando alegações genéricas de vício formal.
+Nesse mesmo sentido já se posicionou a Procuradoria Federal Especializada junto à Anatel, ao emitir o Parecer nº 00136/2018/PFE-ANATEL/PGF/AGU, elaborado nos autos do Processo nº 53566.000165/2014-56:
+Parecer nº 00136/2018/PFE-ANATEL/PGF/AGU
+"20. (...) Com efeito, não mais se admite, no direito administrativo brasileiro, abordagens excessivamente formalistas, que sustentem a primazia da formalística processual como um fim em si mesmo, isto é, independentemente do conteúdo ou de suas consequências práticas no âmbito do processo. Veja-se, por todos, o seguinte acórdão do Superior Tribunal de Justiça (STJ), de novembro de 2017:
+ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. ALEGAÇÃO DE CERCEAMENTO DO DIREITO DE DEFESA. NÃO COMPROVAÇÃO DE PREJUÍZO. CONSONÂNCIA COM A JURISPRUDÊNCIA DO STJ. PAS DENULLITÉ SANS GRIEF. I - O recorrente teve seu direito ao devido processo legal assegurado e, apesar das alegações quanto à suposta violação da legislação federal, em momento algum a parte conseguiu demonstrar concretamente qual foi o seu prejuízo. II - A jurisprudência desta Corte é remansosa no sentido da necessidade de efetiva demonstração dos prejuízos à defesa como pressuposto para a nulidade do processo administrativo, em homenagem ao princípio pas de nullité sans grief. Precedentes: RMS 30.856⁄SP, Rel. Ministro ROGERIO SCHIETTI CRUZ, SEXTA TURMA, julgado em 17/03/2016, DJe 31/03/2016; RMS 28.132⁄ES, Rel. Ministro NAPOLEÃO NUNES MAIA FILHO, PRIMEIRA TURMA, julgado em 15/12/2015, DJe 03/02/2016; AgRg no RMS 48.427⁄GO, Rel. Ministro HERMAN BENJAMIN, SEGUNDA TURMA, julgado em 03/12/2015, DJe 05/02/2016. [...] IV- Agravo interno improvido. (STJ, 2ª Turma, AgInt no Agravo em REsp nº 934.319, Rel. Min. Francisco Falcão, DJe 22/11/2017)
+(...)
+22. Como se pode observar, a jurisprudência do STJ é amplamente favorável às razões expostas neste parecer, ratificando em diversos precedentes o entendimento de que o comparecimento da parte dispensa a necessidade de notificação, sendo descabida a anulação do ato processual quando não há prejuízo ou, ainda, quando este é debitado ao proceder da própria parte.
+23. Daí decorre que, como reiterado em diversas oportunidades por esta Procuradoria, para a declaração de nulidade de um ato processual, é necessária a comprovação de que o vício gerou efetivo prejuízo ao exercício do direito de defesa. Isso porque não há violação ao devido processo legal ou às garantias do administrado se, apesar do vício de forma, a finalidade do ato foi alcançada e não se constatou a ocorrência de qualquer dano concreto.
+(grifei)
+Assim, ainda que se cogitasse eventual imperfeição formal, o que não se verifica, sua invalidação dependeria da demonstração de prejuízo concreto, inexistente no caso.
+Esclarece-se ademais, que o lançamento não se fundamentou em “interpretação sumular” dissociada de base normativa, mas diretamente na Lei nº 9.998/2000, que instituiu a CIDE-Fust, bem como na disciplina da Lei Geral de Telecomunicações (Lei nº 9.472/1997), as quais definem a materialidade do tributo e a respectiva base de cálculo.
+A Súmula nº 7/2005 não inovou na ordem jurídica, tampouco instituiu hipótese de incidência tributária, limitando-se a consolidar interpretação administrativa acerca da inclusão, na base de cálculo do Fust, das receitas decorrentes de interconexão e uso de recursos integrantes de rede, por configurarem contraprestação por serviços de telecomunicações. Trata-se, portanto, de ato interpretativo, que explicita o alcance da norma legal, sem substituí-la.
+Conclui-se, portanto, que:
+foram observados os requisitos do art. 142 do CTN e do Decreto nº 70.235/1972; 
+não houve qualquer comprometimento ao contraditório ou à ampla defesa;
+o lançamento possui fundamento direto na Lei nº 9.998/2000 e na legislação de regência; e
+a Súmula nº 7/2005 tem natureza meramente interpretativa, não configurando fonte autônoma de obrigação tributária.
+Diante do exposto, rejeito a preliminar de nulidade do lançamento por alegada ausência de fundamentação legal.
+II.2. Do mérito recursal
+II.2.1. Impugnação à Súmula nº 7/2005 - da alegação de que receitas provenientes de Interconexão e EILD não devem ser inseridas na base de cálculo da CIDE-FUST
+A Recorrente sustenta que a edição da Súmula nº 7/2005 teria consolidado, no âmbito da Agência, entendimento que ampliaria indevidamente a base de cálculo do Fust, ao incluir receitas provenientes de serviços alheios aos de telecomunicações, bem como teria ensejado dupla exigência do tributo sobre as mesmas receitas, em afronta à Lei nº 9.998/2000.
+Alega, ainda, que as receitas de interconexão não configurariam prestação de serviço de telecomunicações, mas meras transferências financeiras entre prestadoras, o que afastaria a incidência da CIDE-Fust, à luz do art. 6º, IV, e de seu parágrafo único. Argumenta, ademais, que a tributação dessas receitas implicaria bis in idem, uma vez que a prestadora originária já recolheria a contribuição sobre os valores faturados aos usuários. Para amparar sua tese, invoca precedentes dos Tribunais Regionais Federais da 1ª e da 4ª Regiões.
+A controvérsia já fora enfrentada na instância de origem, quando da elaboração do Informe nº 235/2025/COGE/SCO (SEI nº 13471948). No referido documento a Área Técnica, com fundamento na Súmula nº 7/2005 e em pareceres da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, concluiu que as receitas de interconexão não se enquadram na hipótese de exclusão prevista no parágrafo único do art. 6º da Lei nº 9.998/2000, por não se tratarem de simples transferências de valores já tributados, mas de contraprestação decorrente de serviço de telecomunicações prestado entre operadoras. Confira-se:
+Informe nº 235/2025/COGE/SCO
+"5.35. Temos a destacar que, quanto aos valores relativos à interconexão, consoante entendimento disposto na Súmula da Anatel nº 7/2005, não podem ser excluídas da base de cálculo das contribuições ao Fust as receitas devidas ou recebidas de prestadoras de serviços de telecomunicações a título de remuneração de interconexão e pelo uso de recursos integrantes de suas redes, porque tais valores não estão amparados pelo parágrafo único do artigo 6º da Lei nº 9.998/2000. 
+(...)
+5.37. Esclarece-se, ainda, que a Procuradoria da Anatel por ocasião do Parecer nº 1.053/2009/ACD/PGF/PFE-Anatel, entendeu que o parágrafo único do artigo 6º da Lei nº 9.998/2000 refere-se ao sistema de co-faturamento, no qual serviços fornecidos por diversas prestadoras são faturados uma única vez, por uma só empresa, que se compromete a transferir os valores respectivos para cada uma das fornecedoras de telefonia. Veja-se que, nesse caso, há apenas um fato gerador do Fust, pois não há prestação de serviço de telefonia entre as prestadoras.
+5.38. A interconexão, por sua vez, consiste na utilização onerosa por uma prestadora de serviço de telefonia da rede de suporte pertencente a outra empresa. Há, nessa operação, evidente prestação de serviço de telefonia entre as fornecedoras, donde exsurge a obrigação de recolher a contribuição para o Fust.
+5.39. Destaca-se que até o presente momento a impugnante não possui decisão judicial determinando a segregação das receitas de interconexão. 
+5.40. Assim sendo, a alegação da prestadora não poderá ser acatada."
+(negritei)
+Passo às minhas considerações.
+Nos termos do parágrafo único do art. 146 da Lei nº 9.472/1997 (Lei Geral de Telecomunicações – LGT), interconexão consiste na ligação entre redes funcionalmente compatíveis, permitindo que usuários de uma rede se comuniquem com usuários de outra ou acessem serviços nela disponíveis.
+O Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693/2018, define rede de telecomunicações como o conjunto operacional contínuo de enlaces e equipamentos indispensáveis à prestação do serviço, bem como elemento de rede como a facilidade ou equipamento utilizado no seu provimento. O art. 30 do referido Regulamento autoriza o compartilhamento oneroso desses recursos entre prestadoras para viabilizar a interconexão. Leia-se:
+Resolução nº 693, de 17 de julho de 2018
+Art. 3º Para efeito deste regulamento, além das definições constantes da regulamentação aplicável aos serviços de telecomunicações, são adotadas as seguintes definições:
+(...)
+II - Elemento de Rede: facilidade ou equipamento utilizado no provimento de Serviços de Telecomunicações; (...)
+X - Rede de Telecomunicações: conjunto operacional contínuo de enlaces e equipamentos, incluindo funções de transmissão, comutação ou quaisquer outras indispensáveis à operação de Serviço de Telecomunicações;
+....
+Art. 30 Nos termos do contrato de Interconexão, as prestadoras de Serviços de Telecomunicações de interesse coletivo podem compartilhar equipamentos, infraestrutura, facilidades e outros meios visando à operacionalização da Interconexão de redes.
+(destaquei)
+Da disciplina normativa extrai-se que a interconexão não consubstancia mero repasse financeiro, mas utilização onerosa de infraestrutura de telecomunicações, configurando efetiva prestação de serviço entre operadoras.
+Nessa perspectiva, não se aplica a exceção prevista no parágrafo único do art. 6º da Lei nº 9.998/2000, que assim estabelece:
+"Art. 6º Constituem receitas do Fundo:
+(...)
+IV - contribuição de 1% (um por cento) sobre a receita operacional bruta, decorrente de prestação de serviços de telecomunicações nos regimes público e privado, a que se refere o inciso XI do art. 21 da Constituição Federal, excluindo-se o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins); (Redação dada pela Lei nº 13.879, de 2019)
+(...)
+Parágrafo único. Não haverá a incidência do Fust sobre as transferências feitas de uma prestadora de serviços de telecomunicações para outra e sobre as quais já tenha havido o recolhimento por parte da prestadora que emitiu a conta ao usuário, na forma do disposto no art. 10 desta Lei." 
+(destaquei)
+As transferências realizadas entre as prestadoras, mencionadas no dispositivo em destaque, referem-se exclusivamente às hipóteses de co-faturamento (co-billing), em que uma prestadora arrecada valores devidos, desde a origem, a outra, limitando-se a proceder ao repasse. Nessas situações, há apenas um fato gerador.
+Diversamente, na interconexão, há relação jurídica autônoma entre prestadoras, caracterizada por obrigação contraprestacional decorrente da utilização de rede alheia. Trata-se, portanto, de receita própria, oriunda de serviço de telecomunicações, subsumindo-se à hipótese de incidência da CIDE-FUST.
+Esse entendimento encontra-se consolidado na Agência desde a edição da Súmula nº 7/2005, cujo teor expressamente afasta a exclusão das receitas de interconexão da base de cálculo da contribuição:
+Súmula nº 7 - Anatel
+(...)
+CONSIDERANDO que a interconexão entre redes de telecomunicações, obrigatória às prestadoras de serviços de telecomunicações, nos termos do art. 146 da Lei nº 9.472, de 1997, é vinculada a oferta de serviços de telecomunicações;
+CONSIDERANDO que o uso de recursos integrantes da rede de uma prestadora por outra para a prestação de serviços de telecomunicações, denominado exploração industrial, nos termos do art. 61[1] do Regulamento dos Serviços de Telecomunicações, aprovado pela Resolução nº 73, de 25 de novembro de 1998, é vinculado a oferta de serviços de telecomunicações;
+(...)
+RESOLVE editar a presente Súmula:
+“Não podem ser excluídas da base de cálculo das contribuições ao FUST, dentre outras, as receitas a serem repassadas a prestadoras de serviços de telecomunicações a título de remuneração de interconexão e pelo uso de recursos integrantes de suas redes.
+(negritei)
+A orientação foi reiteradamente confirmada por este Conselho Diretor, conforme demonstram, exemplificativamente, os Acórdãos nº 97/2025 e nº 89/2025, ambos proferidos na Reunião nº 942:
+Acórdão nº 97, de 08 de abril de 2025
+Processo nº 53500.002870/2008-12
+Recorrente/Interessado: SERCOMTEL CELULAR S.A.
+CNPJ nº 02.494.988/0001-18
+Conselheiro Relator: Daniel Martins D Albuquerque
+Fórum Deliberativo: Reunião nº 942, de 3 de abril de 2025
+EMENTA
+PROCESSO ADMINISTRATIVO FISCAL - PAF. recurso ADMINISTRATIVO voluntário. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST. EXERCÍCIO de 2003. BASE DE CÁLCULO DEFINIDA CONFORME DOCUMENTOS APRESENTADOS PELA PRESTADORA. MERAS ALEGAÇÕES NÃO SÃO CAPAZES DE INFIRMAR A DECISÃO RECORRIDA. PRESTADORA DE SERVIÇOS DE TELECOMUNICAÇÕES SÃO SUJEITO PASSIVO DA CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECEITAS DE INTERCONEXÃO. CÁLCULO REALIZADO DE FORMA APARTADA. JUDICIALIZAÇÃO. ABATIMENTO DA BASE DE CÁLCULO DA CIDE-FUST DOS VALORES RELATIVOS AO IMPOSTO SOBRE CIRCULAÇÃO DE MERCADORIAS E SERVIÇOS - ICMS, AO PROGRAMA DE INTEGRAÇÃO SOCIAL - PIS E À CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL - COFINS. REGULARIDADE. recurso voluntário CONHECIDO E NÃO PROVIDO. COMUNICAÇÃO AO ministério das comunicações - MCOM.
+1. Recurso Administrativo em razão de Despacho da Superintendência de Administração e Finanças que reconheceu a procedência parcial de lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações – Fust relativamente aos exercícios financeiros de 2003.
+2. A base de cálculo utilizada para a definição do tributo devido considerou a documentação apresentada pela Recorrente, conforme descrição detalhada nos Relatórios de Fiscalização. Meras alegações não são capazes de infirmar a decisão recorrida.
+3. As receitas de interconexão são uma contraprestação a um serviço de telecomunicações prestado. Valores calculados pela fiscalização de forma apartada, em razão de judicialização da matéria.
+4. A base de cálculo da contribuição ao Fundo de Universalização dos Serviços de Telecomunicações é de 1% (um por cento) sobre a receita operacional bruta da empresa derivada da prestação de serviços de telecomunicações tanto em regime público quanto privado, excluindo-se o valor dispendido com o Imposto sobre Circulação de Mercadorias e Serviços - ICMS, o Programa de Integração Social - PIS e a Contribuição para Financiamento da Seguridade Social - COFINS. Abatimentos realizados sobre as receitas advindas dos serviços de telecomunicações.
+5. Recurso Administrativo Voluntário conhecido e não provido.
+6. Comunicação ao Ministério das Comunicações - MCom, órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel, para que se tomem as providências cabíveis na esfera de suas atribuições.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 40/2025/DD (SEI nº 13473637), integrante deste acórdão, conhecer do Recurso para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto e os Conselheiros Substitutos Daniel Martins D Albuquerque e Vinícius Oliveira Caram Guimarães.
+(negritei)
+....
+Acórdão nº 89, de 08 de abril de 2025
+Processo nº 53508.006903/2017-14
+Recorrente/Interessado: DATORA TELECOMUNICAÇÕES LTDA.
+CNPJ nº 39.495.486/0001-11
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 942, de 3 de abril de 2025
+EMENTA
+PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. EXERCÍCIO FINANCEIRO DE 2014. RECURSO ADMINISTRATIVO VOLUNTÁRIO. INCIDÊNCIA DA CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST SOBRE RECEITAS DE INTERCONEXÃO. POSSIBILIDADE. RECEITAS DE INTERCONEXÃO RECEBIDAS A TÍTULO DE CONTRAPRESTAÇÃO E NÃO DE MERA TRANSFERÊNCIA DE RECURSOS. SÚMULA DA ANATEL Nº 7/2005. APLICABILIDADE. INEXISTÊNCIA DE BIS IN IDEM TRIBUTÁRIO. MULTA DE OFÍCIO. CABIMENTO EM CASO DE OMISSÕES NA DECLARAÇÃO DO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. PERCENTUAL FIXADO POR DISPOSITIVO LEGAL. IMPOSSIBILIDADE DE DISCUSSÃO NO ÂMBITO DO PROCESSO ADMINISTRATIVO FISCAL - PAF SOBRE ILEGALIDADE DA NORMA. ADERÊNCIA AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO VOLUNTÁRIO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo interposto em desfavor do Despacho Decisório nº 165/2024/AFFO6/AFFO/SAF (SEI nº 11576740), por meio do qual o Superintendente de Administração e Finanças julgou procedentes os lançamentos referentes à Contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - CIDE-FUST e à multa de ofício, para o exercício financeiro de 2014.
+2. As receitas de interconexão são uma contraprestação a um serviço de telecomunicações prestado, não se enquadrando no conceito de "transferências de recursos" previsto no parágrafo único do art. 6º da Lei nº 9.998/2000. Aplicabilidade da Súmula nº 7, de 15 de dezembro de 2005, da Anatel, no qual se prevê que as receitas de interconexão não podem ser excluídas da base de cálculo das contribuições ao Fundo de Universalização dos Serviços de Telecomunicações - Fust.
+3. Inexiste bis in idem com a incidência da CIDE-FUST sobre as receitas de interconexão e o tributo recolhido pela outra Prestadora sobre os valores recebidos de seus usuários.
+4. Devido à omissão da Prestadora na declaração dos valores referentes à CIDE-FUST, mostra-se inquestionável a materialização do suporte fático que determina a aplicação da multa de ofício. Diante desse cenário, não há qualquer subjetividade por parte da Anatel na dosimetria dessa multa, que é estabelecida em percentual fixo pelo inciso I do art. 44 da Lei nº 9.430/1996. A seara administrativa não é o foro adequado para a discussão de leis em vigor.
+5. A presente matéria está alinhada com a Agenda 2030 da Organização das Nações Unidas - ONU, em especial com o Objetivo de Desenvolvimento Sustentável - ODS 10, pois assegurar uma administração tributária eficiente e justa promove uma distribuição de renda mais equitativa e reduz as desigualdades econômicas e sociais, com ênfase na Meta 10.4, que trata da implementação de políticas fiscais, salariais e de proteção social para alcançar uma maior igualdade. Também há conexão com o ODS 16, visto que a tramitação deste feito seguiu rigorosamente o devido processo legal, respeitando os princípios da ampla defesa e do contraditório. Essa conformidade garante a pacificação social e legitima as ações da Anatel com a necessária transparência social.
+6. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 45/2025/VA (SEI nº 13370557), integrante deste acórdão, conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto e os Conselheiros Substitutos Daniel Martins D Albuquerque e Vinícius Oliveira Caram Guimarães.
+(negritei)
+A PFE-Anatel se manifestou no mesmo sentido, destacando que “não se trata de repasse de recursos de terceiros, mas de contraprestação devida em face de serviços de telecomunicações entre prestadoras”, inexistindo enquadramento na hipótese legal de exclusão. É o que se afere da leitura do Parecer nº 332/2024/PFE-ANATEL/PGF/AGU (SEI nº 12229819) anexado ao processo 53508.006903/2017-14, ao destacar que a distinção entre os fatos geradores se mostra ainda mais evidente quando se verifica que o serviço de interconexão não se confunde com os serviços prestados aos usuários pela outra prestadora:
+Parecer nº 332/2024/PFE-ANATEL/PGF/AGU (SEI nº 12229819)
+"9. Primeiramente, está claro que as receitas de interconexão não são recebidas pelas prestadoras a título de transferência de recursos dos usuários detidas pela outra prestadora, mas de pagamento que esta lhe deve em nome próprio como contraprestação pelo serviço de interconexão. A situação é marcadamente diversa daquela disciplinada pela Lei nº 9.998, de 2000, para os casos de cofaturamento:
+10. A norma, como se vê, cuida especificamente de transferências de recursos, o que não é o caso da interconexão, que é, ao contrário, uma contraprestação e não um repasse. Nas situações tratadas pelo dispositivo o valor recolhido do usuário é devido desde a origem à prestadora que proveu o serviço de telecomunicações, de modo que é meramente transferido pela outra prestadora que o faturou em conjunto com os valores que também lhe eram devidos pelo mesmo cliente em comum. Isso ocorre frequentemente no funcionamento do setor, sobretudo quando os valores devidos pelo usuário a uma prestadora são por demais diminutos para serem objeto de faturamento e cobrança independente. Assim, a prestadora que possuí valores relevantes a receber inclui a cobrança da outra prestadora na conta do usuário, sendo remunerada por esta pelo serviço de cofaturamento. 
+11. Esse não é o caso da interconexão. Não existe faturamento desse serviço na conta do usuário. Nada há, portanto, nada a ser transferido. A ligação entre as redes é um serviço de telecomunicação prestado de uma operadora para outra, pela qual é devido o pagamento para satisfazer obrigação gerada numa relação jurídica exclusiva entre as empresas. O art. 6º, parágrafo único, Lei nº 9.998, de 2000, portanto, é completamente alheio ao caso em exame, posto que não se trata de repasse de recursos de terceiros, mas de contraprestação devida em face de serviços de telecomunicação entre prestadoras."
+(negritei)
+Portanto, é de se rejeitar o argumento ventilado pela Recorrente referente à não incidência da CIDE-FUST sobre as receitas de Interconexão e EILD e a consequente ilegalidade da Súmula nº 7/2005 da Anatel.
+No que concerne à alegação de bis in idem, também não assiste razão à Recorrente.
+O bis in idem pressupõe a incidência de dois tributos sobre o mesmo fato gerador. No caso vertente, contudo, os fatos geradores são distintos e juridicamente autônomos.
+De um lado, há a prestação de serviço de interconexão entre operadoras, cuja receita integra a base de cálculo do Fust. De outro, há a prestação de serviços de telecomunicações ao usuário final, relação jurídica diversa, com materialidade própria. 
+A contribuição recolhida pela prestadora sobre os valores faturados aos usuários não se confunde com aquela incidente sobre a receita auferida pela operadora que disponibiliza sua rede para interconexão. Não há identidade de sujeito passivo, de base econômica ou de materialidade tributária.
+A distinção foi adequadamente explicitada no Parecer nº 332/2024/PFE-ANATEL/PGF/AGU, no qual se consignou que a realização da atividade de interconexão, por si só, concretiza integralmente a hipótese de incidência do tributo, sem qualquer dependência da relação mantida entre a outra prestadora e seus usuários:
+Parecer nº 332/2024/PFE-ANATEL/PGF/AGU (SEI nº 12229819)
+"14. O bis in idem tributário ocorre sempre que a cobrança da exação recai duas vezes sobre o mesmo fato gerador, o que, todavia, não ocorre na situação em exame. Ao contrário, a distinção entre os fatos geradores de ambos os serviços é clara e marcante. Com a realização da atividade de interconexão está concretizada na íntegra a hipótese de incidência do tributo, sem depender ou se confundir sequer remotamente com a materialidade dos serviços prestados pela outra operadora a seus clientes.
+15. Desse modo, é evidente a inexistência de bitributação, posto que é objetiva e inarredável a perfeita configuração de fatos geradores distintos na prestação de serviços de interconexão e dos serviços prestados aos usuários pela outra operadora."
+Quanto aos precedentes judiciais colacionados, cumpre observar que não possuem efeito vinculante erga omnes. Eventual afastamento da exigência tributária, para fins do art. 63 da Lei nº 9.430/1996, demandaria a comprovação de decisão judicial favorável específica e anterior ao início da ação fiscal, circunstância não demonstrada nos autos.
+Ademais, registre-se que a empresa não comprovou nos autos a existência de medida liminar apta a suspender a aplicação da Súmula nº 7 da Anatel, como se afere da leitura do item "5.39" do Informe nº 235//2025/COGE/SCO (SEI nº 13471948.
+"5.39. Destaca-se que até o presente momento a impugnante não possui decisão judicial determinando a segregação das receitas de interconexão."
+Desse modo, impõe-se ao caso concreto a prevalência do entendimento consolidado desta Agência, com a consequente inclusão das receitas de interconexão na base de cálculo do Fust.
+Rejeito as alegações da Recorrente no tocante à não incidência da CIDE-FUST sobre receitas de interconexão e EILD, reconhecendo a plena aplicabilidade da Súmula nº 7/2005.
+O lançamento observou os pressupostos legais de competência, motivação e formalização, inexistindo vício apto a ensejar sua nulidade.
+III. CONSIDERAÇÕES FINAIS
+III.1. Da multa de Ofício
+Embora não tenha sido objeto do Recurso Administrativo interposto, avalio a seguir a adequação do cálculo dos lançamentos dos créditos referentes à incidência de multa de ofício, aplicada em razão da não declaração da contribuição.
+O Fust tem por finalidade proporcionar recursos para cobrir parcela do custo atribuível ao cumprimento das obrigações de universalização dos serviços de telecomunicações, que não possa ser recuperada com a exploração eficiente do serviço. Para composição do Fundo, criou-se a CIDE-FUST, modalidade de tributo, de 1% sobre a receita operacional bruta decorrente de prestação de serviços de telecomunicações nos regimes público e privado, excluindo-se o ICMS, o PIS e a Cofins:
+Lei 9.9998, de 17 de agosto de 2000
+"Art.6º Constituem receitas do Fundo:
+(...)
+IV – contribuição de um por cento sobre a receita operacional bruta, decorrente de prestação de serviços de telecomunicações nos regimes público e privado, excluindo-se o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transportes Interestadual e Intermunicipal e de Comunicações – ICMS, o Programa de Integração Social – PIS e a Contribuição para o Financiamento da Seguridade Social – Cofins;"
+A contribuição para o Fust constitui um tributo sujeito ao lançamento por homologação, espécie de lançamento tributário em que o contribuinte tem a atribuição de apurar, declarar e recolher a exação tributária, sem qualquer análise prévia por parte da autoridade administrativa, aguardando o procedimento homologatório tácito ou expresso.
+O sujeito passivo da Contribuição para o Fust é a prestadora de serviços de telecomunicações, outorgada ou não, explorados nos regimes público ou privado. O fato gerador do tributo ocorre no último dia de cada mês e consiste na obtenção de receita decorrente da prestação de serviços de telecomunicações, nos termos da Lei nº 9.998/2000.
+A Anatel, na condição de sujeito ativo da exação (art. 4º, VI, da Lei nº 9.998/2000), realiza os procedimentos de homologação mediante ações de fiscalização, com o objetivo de verificar a regularidade da declaração e do recolhimento da contribuição. Constatada a ausência ou insuficiência de recolhimento, incumbe à Agência proceder ao lançamento de ofício das diferenças apuradas.
+No lançamento de ofício, além dos juros de mora, incide a multa prevista no art. 44, I, da Lei nº 9.430/1996, no percentual de 75% (setenta e cinco por cento) sobre a totalidade ou a diferença do tributo, aplicável nos casos de falta de pagamento ou recolhimento, ausência de declaração ou declaração inexata, o que foi observado no presente caso.
+A omissão da empresa na declaração de parte dos valores devidos a título da CIDE-FUST configura, de forma inequívoca, a hipótese legal para aplicação da multa de ofício. Esse entendimento é reiterado pela jurisprudência deste Colegiado, conforme se observa nos seguintes precedentes:
+Acórdão nº 312, de 02 de junho de 2020
+"Processo nº 53500.009838/2008-50
+Recorrente/Interessado: CLARO S.A.
+CNPJ/MF nº 40.432.544/0001-47
+Conselheiro Relator: Carlos Manuel Baigorri
+Fórum Deliberativo: Reunião nº 885, de 28 de maio de 2020
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. EXERCÍCIOS FINANCEIROS DE 2003 E 2004. DECLARAÇÃO E RECOLHIMENTO INFERIORES AO DEVIDO. LANÇAMENTO DE OFÍCIO. MULTA DE OFÍCIO. ARGUMENTAÇÃO APRESENTADA INCAPAZ DE ALTERAR OS VALORES JÁ CALCULADOS. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO. RECURSO DE OFÍCIO NÃO CONHECIDO.
+(...)
+3. De acordo com o art. 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, nos casos de lançamento de ofício, aplicar-se-á multa de ofício quando o sujeito passivo não pagar ou recolher o tributo, ou quando deixar de declará-lo ou não fazê-lo adequadamente.
+(...)
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 61/2020/CB (SEI nº 5507687), integrante deste acórdão:
+a) conhecer do Recurso Administrativo SEI nº 0282863 para, no mérito, negar-lhe provimento; e,
+b) não conhecer o Recurso de Ofício interposto, pelos fatos e fundamentos da citada análise.
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto e o Conselheiro Substituto Carlos Manuel Baigorri."
+...................................................................
+Acórdão nº 114, de 12 de abril de 2017
+"Processo nº 53524.008586/2009-54
+Recorrente/Interessado: IMAGE TELECOM TV VÍDEO CABO LTDA.
+CNPJ/MF nº 22.231.831/0001-07
+Conselheiro Relator: Otavio Luiz Rodrigues Junior
+Fórum Deliberativo: Reunião nº 823, de 6 de abril de 2017
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. DECLARAÇÃO E RECOLHIMENTO INFERIORES AO DEVIDO. LANÇAMENTO DE OFÍCIO. APLICAÇÃO DA MULTA DE OFÍCIO. ART. 44, INCISO I, DA LEI Nº 9.430, DE 27 DE DEZEMBRO DE 1996. POSSIBILIDADE. NÃO APLICAÇÃO DA MULTA DE MORA PREVISTA NO ART. 8º, § 1º, DO DECRETO Nº 3.624, DE 5 DE OUTUBRO DE 2000. AUSÊNCIA DE BIS IN IDEM. ENCAMINHAMENTO DOS AUTOS À CORREGEDORIA DA ANATEL. COMUNICAÇÃO AO MINISTÉRIO DA CIÊNCIA, TECNOLOGIA, INOVAÇÕES E COMUNICAÇÕES (MCTIC). RECURSO CONHECIDO E NÃO PROVIDO.
+(...)
+3. Aplicabilidade da multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, conforme entendimento da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e de jurisprudência deste Conselho Diretor.
+(...)
+8. Recurso conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 66/2017/SEI/OR (SEI nº 1305518), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Juarez Quadros do Nascimento e os Conselheiros Igor Vilas Boas de Freitas, Anibal Diniz, Otavio Luiz Rodrigues Junior e Leonardo Euler de Morais."
+(Destaquei)
+Considerando que, em sede recursal, não foram apresentadas novas evidências capazes de infirmar os valores dos créditos tributários definidos no Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953), mantenho integralmente a decisão recorrida quanto à aplicação da multa de ofício.
+À vista do conjunto probatório e das razões expostas, constata-se que todas as teses meritórias deduzidas no recurso foram devidamente analisadas e integralmente afastadas, não se verificando qualquer ilegalidade, omissão ou vício de motivação apto a macular o lançamento fiscal ou a decisão recorrida.
+Inexistem, portanto, elementos jurídicos ou fáticos que justifiquem a revisão do entendimento adotado, razão pela qual o recurso não merece provimento, devendo ser mantida, em seus exatos termos, a decisão administrativa impugnada.
+III.2 - Ciência ao Ministério das Comunicações
+Observo que a CIDE-FUST e o Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel) compartilham da mesma base de cálculo para aferição dos valores devidos. A contribuição para o FUST corresponde a uma alíquota de 1% (um por cento) sobre a receita bruta decorrente da prestação de serviços de telecomunicações, excluindo-se deste cômputo o ICMS, o PIS e a Cofins. Já a alíquota do Funttel correspondente é de 0,5% (zero vírgula cinco por cento) sobre essa mesma base de cálculo.
+Assim, o Ministério das Comunicações deve ser cientificado quanto à alteração do valor dos créditos tributários relativos à CIDE-FUST ocorrida nestes autos. O Conselho Diretor tem entendido que, em havendo qualquer alteração na base de cálculo do tributo, faz-se mister a comunicação àquele órgão, consoante se vê do julgado abaixo reproduzido:
+Acórdão nº 19, de 16 de fevereiro de 2024
+"Processo nº 53500.026222/2014-91
+Recorrente/Interessado: NEOSKY E TELECOM EIRELI
+CNPJ/MF nº 65.460.560/0001-74
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 929, de 8 de fevereiro de 2024
+EMENTA
+RECURSO DE OFÍCIO. PROCESSO ADMINISTRATIVO FISCAL (PAF). FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). ARBITRAMENTO. LANÇAMENTO DE OFÍCIO. DOCUMENTAÇÃO FISCAL APRESENTADA. IMPROCEDÊNCIA DOS VALORES LANÇADOS. INOCORRÊNCIA DO FATO GERADOR. EXTINÇÃO DOS LANÇAMENTOS. EXONERAÇÃO DO SUJEITO PASSIVO DO PAGAMENTO DE TRIBUTO EM VALOR ACIMA DE R$ 500.000,00 (QUINHENTOS MIL REAIS). REEXAME NECESSÁRIO. ALTERAÇÃO NA BASE DE CÁLCULO DA CONTRIBUIÇÃO. NOTIFICAÇÃO DA DECISÃO AO MINISTÉRIO DAS COMUNICAÇÕES. RECURSO DE OFÍCIO CONHECIDO E NÃO PROVIDO.
+1. Recurso de Ofício interposto em face do Despacho Decisório nº 275/2022/AFFO6/AFFO/SAF (SEI nº 8271379), por meio do qual se decidiu pela extinção dos lançamentos de créditos tributários referentes à Contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (CIDE-FUST) relativos ao exercício de 2010.
+(...)
+4. Sempre que houver alteração na base de cálculo da CIDE-FUST, a Anatel deve comunicar a decisão ao Ministério das Comunicações, que é o órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), que compartilha da mesma base de cálculo.
+5. Recurso de Ofício conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 13/2024/VA (SEI nº 11353301), integrante deste acórdão, conhecer do Recurso de Ofício para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto e o Conselheiro Substituto Raphael Garcia de Souza."
+(Grifei)
+Nesse mesmo sentido, os Acórdãos nº 38, de 13 de fevereiro de 2023, e nº 312, de 14 de setembro de 2021:
+Acórdão nº 38, de 13 de fevereiro de 2023
+"Processo nº 53508.003293/2020-94
+Recorrente/Interessado: DS8 COMUNICAÇÃO E INTERNET LTDA.
+CNPJ/MF nº 03.280.828/0001-39
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 919, de 2 de fevereiro de 2023
+EMENTA
+RECURSO DE OFÍCIO. PROCESSO ADMINISTRATIVO FISCAL (PAF). FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). ARBITRAMENTO. LANÇAMENTO DE OFÍCIO. DÍVIDA ATIVA. EXECUÇÃO. DOCUMENTAÇÃO FISCAL APRESENTADA. IMPROCEDÊNCIA DOS VALORES LANÇADOS. EXTINÇÃO DOS LANÇAMENTOS. RECURSO DE OFÍCIO. NOTIFICAÇÃO DA DECISÃO AO MINISTÉRIO DAS COMUNICAÇÕES (MC) E À PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL (PFE-ANATEL). RECURSO DE OFÍCIO CONHECIDO E NÃO PROVIDO.
+1. Recurso de Ofício interposto em face do Despacho Decisório nº 590/2022/AFFO6/AFFO/SAF, de 7 de novembro de 2022, por meio do qual se revisou de ofício: (i) o lançamento dos créditos tributários referentes à Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-FUST) para o ano de 2007; e (ii) os créditos tributários referentes à incidência de multa de ofício, em virtude da não declaração do tributo.
+(...)
+5. Sempre que alterar a base de cálculo da CIDE-FUST, a Anatel deve comunicar a decisão ao Ministério das Comunicações (MC), pois é o órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), que compartilha da mesma base de cálculo.
+6. Notificação à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), em razão do prazo judicial em curso no Processo de Execução Fiscal nº 0006186-77.2014.4.01.3300.
+7. Recurso de Ofício conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 2/2023/VA (SEI nº 9687160), integrante deste acórdão, conhecer do Recurso de Ofício para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto."
+.........................................................................
+Acórdão nº 312, de 14 de setembro de 2021
+"Processo nº 53500.206006/2015-17
+Recorrente/Interessado: MICRO TRAINING SERVIÇOS DE INFORMÁTICA LTDA.
+CNPJ/MF nº 38.010.591/0001-50
+Conselheiro Relator: Carlos Manuel Baigorri
+Fórum Deliberativo: Reunião nº 904, de 9 de setembro de 2021
+EMENTA
+PROCESSO ADMINISTRATIVO FISCAL (PAF). FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). ARBITRAMENTO. LANÇAMENTO DE OFÍCIO. EMPRESA DE PEQUENO PORTE (EPP). RECURSO DE OFÍCIO. NOTIFICAÇÃO DA DECISÃO AO MINISTÉRIO DAS COMUNICAÇÕES (MC).
+1. Recurso de Ofício interposto em face de Despacho Decisório que decidiu pela exoneração de valores referentes à Contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (CIDE-FUST).
+(...)
+6. Sempre que alterar a base de cálculo da CIDE-FUST, a Anatel deve comunicar a decisão ao Ministério das Comunicações (MC), que é o órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), que compartilha da mesma base de cálculo.
+7. Recurso de Ofício conhecido e não provido.[]
+ACÓRDÃO
+Vistos, relatados discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 76/2021/CB (SEI nº 7327097), integrante deste acórdão, conhecer do Recurso de Ofício para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Carlos Manuel Baigorri, Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto."
+(Destaquei)
+É de se comunicar a presente decisão ao Ministério das Comunicações, órgão com capacidade tributária ativa para a cobrança do Funttel, para que se tomem as providências cabíveis na esfera de suas atribuições.
+IV - Dos objetivos regulatórios
+IV.1 - Do Planejamento Estratégico da Anatel
+O Plano Estratégico da Anatel 2023-2027 orienta as ações da Agência para promover a conectividade, a qualidade dos serviços de comunicação e o desenvolvimento do setor de telecomunicações no Brasil. 
+A cobrança da Fust, fundo previsto no inciso II do art. 81 da LGT, atende ao primeiro objetivo de resultado da Agência, "1. Promover a conectividade universal e significativa com qualidade e segurança". Está em sintonia com os objetivos estratégicos de processos "1A - Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos" e "1B - Viabilizar a expansão e a implantação da infraestrutura da rede de base".
+IV.2 - Dos Objetivos do Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A atuação da Anatel deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-Anatel (SEI nº 11203364).
+Observa-se que a proposta de encaminhamento contida na presente Análise se relaciona com o ODS nº 10 - Redução de Desigualdades, uma vez que taxas setoriais, tal como o Fust, estabelecidas de forma eficiente e justa, garantem uma distribuição mais igualitária de custos entre as prestadoras, promovendo a redução das desigualdades no setor das telecomunicações.
+Além disso, o ODS nº 16, Paz, Justiça e Instituições Eficazes é igualmente atendido, pois, conforme demonstrado, observaram-se durante todo o trâmite processual os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel. Destaca-se, em especial, a Meta 16.6 do referido objetivo, na qual se propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+Reforça-se assim o comprometimento da Agência e do país com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+CONCLUSÃO
+Voto por:
+conhecer do Recurso Administrativo (SEI nº 13118699) interposto em face do Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953) para, no mérito, negar-lhe provimento; e,
+determinar à Superintendência de Controle de Obrigações (SCO) que comunique a prolação da presente decisão ao Ministério das Comunicações (MCom), para que se tomem as providências cabíveis em relação à cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel).
+Notas
+1] BRASIL. Agência Nacional de Telecomunicações – ANATEL. Resolução nº 73, de 25 de novembro de 1998 (Regulamento dos Serviços de Telecomunicações – RST). Art. 61: “Art. 61. Na exploração de serviço de telecomunicações é assegurado à prestadora: I – empregar equipamentos e infraestrutura que não lhe pertençam, sem prejuízo da reversibilidade dos bens, conforme previsto no instrumento de concessão ou permissão; (...).”
+[2] https://scon.stj.jus.br/SCON/servlet/ThesMain?action=consultar&pesquisa=BIS+IN+IDEM#:~:text=BIS%20IN%20IDEM%20EM%20DIREITO,OBJETO%20OU%20ATO%20J%C3%81%20TRIBUTADO, acessado em 19 de março de 2025.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15271756 e o código CRC 3BF060B2.
+ | 
+Referência: Processo nº 53516.000134/2021-10 | 
+SEI nº 15271756 |

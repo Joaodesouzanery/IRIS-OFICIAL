@@ -1,0 +1,72 @@
+SEI/ANATEL - 15865240 - Análise
+Boletim de Serviço Eletrônico em 03/07/2026
+Análise nº 62/2026/EH
+Processo nº 53500.003209/2025-17
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Item nº 10 da Agenda Regulatória para o biênio 2025-2026, sobre proposta relativa à reavaliação da regulamentação afeta ao setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços.
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO REGULATÓRIO. USO DE INTELIGÊNCIA ARTIFICIAL NA CADEIA DE VALOR DOS SERVIÇOS DE TELECOMUNICAÇÕES. PRORROGAÇÃO DE PRAZO DE RELATORIA.
+I. CASO EM EXAME
+Análise submetida no âmbito do Item nº 10 da Agenda Regulatória para o biênio 2025-2026, sobre proposta de reavaliação da regulamentação do setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços.
+O processo foi instaurado por Termo de Abertura de Projeto em fevereiro de 2025. A Área Técnica realizou consulta interna, elaborou Relatório de Análise de Impacto Regulatório, submeteu minuta à Procuradoria Federal Especializada junto à Anatel e encaminhou a matéria ao Conselho Diretor para deliberação sobre consulta pública.
+O Conselho Diretor aprovou a submissão da proposta à Consulta Pública nº 31, de 12 de agosto de 2025. Após a análise das contribuições e novo exame jurídico, a Área Técnica sugeriu o encaminhamento do processo ao Conselho Diretor.
+Os autos foram distribuídos à relatoria em 05/02/2026. Em razão da relevância e da complexidade da matéria, foi apresentada proposta de prorrogação do prazo para submissão ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os pressupostos para prorrogação do prazo de relatoria, com fundamento no art. 127, § 3º, do Regimento Interno da Anatel, diante da inclusão automática do processo em pauta e da impossibilidade justificada de submissão da matéria na data regimentalmente prevista.
+III. RAZÕES DE DECIDIR
+O processo foi automaticamente incluído na pauta da 952ª Reunião do Conselho Diretor, nos termos do art. 127, § 3º, do Regimento Interno da Anatel.
+A matéria apresenta relevância e complexidade.
+A relatoria entendeu não ser possível submeter o processo à deliberação na data prevista regimentalmente.
+O art. 127, § 3º, do Regimento Interno da Anatel autoriza o Conselheiro Relator, em caso de impossibilidade de apresentação de voto, a requerer de forma justificada a prorrogação de prazo para submissão da matéria ao Conselho Diretor.
+A justificativa apresentada ampara a prorrogação do prazo de relatoria por mais 120 dias.
+IV. DISPOSITIVO E TESE
+Proposta de prorrogação de prazo acolhida.
+Tese de julgamento: "1. É cabível a prorrogação do prazo de relatoria quando a matéria, embora automaticamente incluída em pauta, não puder ser submetida à deliberação na data regimentalmente prevista por motivo justificado. 2. A relevância e a complexidade da matéria constituem fundamento idôneo para a prorrogação do prazo de submissão ao Conselho Diretor. 3. O prazo de relatoria deve ser prorrogado por 120 dias, com fundamento no art. 127, § 3º, do Regimento Interno da Anatel."
+Dispositivos relevantes citados: Resolução nº 612/2013, art. 127, § 3º.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações – LGT);
+Decreto nº 12.002, de 22 de abril de 2024, que estabelece normas para elaboração, redação, alteração e consolidação de atos normativos;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Agenda Regulatória para o biênio 2025-2026, aprovada pela Resolução Interna Anatel nº 399, de 30 de dezembro de 2024 (SEI nº 13095990), alterada pela Resolução Interna Anatel nº 409, de 19 de fevereiro de 2025 (SEI nº 13310758) e pela Resolução Interna nº 429, de 28 de abril de 2025 (SEI nº 13624521);
+Regulamento Geral dos Serviços de Telecomunicações - RGST, aprovado pela Resolução nº 777, de 28 de abril de 2025 (13620990);
+Regulamento de Fiscalização Regulatória, aprovado pela Resolução Anatel nº 746, de 22 de junho de 2021;
+Consulta Interna nº 5/2025 (SEI nº 13684341);
+Parecer nº 00181/2025/PFE-ANATEL/PGF/AGU, da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) - (SEI nº 13873568);
+Processo nº 53500.030176/2024-05, referente à Tomada de Subsídios nº 5/2024;
+Análise nº 40/2025/CL (SEI nº 14006354)
+Consulta Pública nº 31, de 12 de agosto de 2025 (SEI nº 14180605);
+Informe nº 147/2025/PRRE/SPR (SEI nº 14641925);
+Parecer nº 00438/2025/PFE-ANATEL/PGF/AGU, da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel (SEI nº 15003800);
+Informe nº 7/2026/PRRE/SPR (SEI nº 15051148).
+RELATÓRIO
+DOS FATOS
+O processo foi inaugurado pelo Termo de Abertura de Projeto (TAP) (SEI nº 13151103), em fevereiro de 2025, que apresentou o objetivo de reavaliação da regulamentação afeta ao setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços.
+Por meio do Ofício nº 13/2025/PRRE/SPR-ANATEL (SEI nº 13152241), a Superintendência de Planejamento e Regulamentação (SPR) solicitou às demais superintendências a indicação de servidores para formação de Equipe de Projetos.
+Através do Sistema Participa Anatel, entre 19 a 23 de maio de 2025, foi realizada a Consulta Interna nº 5/2025 (SEI nº 13684341), que não registrou qualquer contribuição (SEI nº 13746910). 
+O Relatório de Análise de Impacto Regulatório (RAIR) (SEI nº 13270721), concluído no final de maio de 2025, foi apresentado no Informe nº 41/2025/PRRE/SPR (SEI nº 13630455). Esse Informe consolidou as alternativas sugeridas pela Área Técnica no RAIR, que propôs o encaminhamento do processo à Procuradoria Federal Especializada junto à Anatel, e dele também resultou a Minuta de Resolução SEI nº 13634231.
+ A Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) restituiu os autos à área técnica, em 18/06/2025, acompanhado do Parecer nº 181/2025/PFE-ANATEL/PGF/AGU (SEI nº 13873568), indicando ausência de óbices jurídicos à integralidade proposta e apontando opiniões sobre aspectos formais e de mérito. O parecer foi analisado nos termos do Informe nº 73/2025/PRRE/SPR (SEI nº 13881116). 
+Em 03/07/2025, o processo foi encaminhado ao Conselho Diretor, por meio da Matéria para Apreciação do Conselho Diretor nº 523/2025 (SEI nº 13881156), para deliberação sobre a proposta de realização de Consulta Pública sobre o tema. 
+Com base na Análise nº 40/2025/CL (SEI nº 14006354), o Conselho Diretor deliberou, por meio do Acórdão nº 188, de 12 de agosto de 2025 (SEI nº 14180527), pela aprovação da submissão à Consulta Pública (SEI nº 14180605), nos termos da Minuta de Consulta Pública SEI nº 13634259, a proposta de reavaliação da regulamentação afeta ao setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços.
+Por meio do Informe nº 147/2025/PRRE/SPR (SEI nº 14641925), a Área Técnica analisou as contribuições (SEI nº 14739254) e encaminhou o processo à PFE-Anatel, que restitui o processo com o Parecer nº 438/2025/PFE-ANATEL/PGF/AGU (SEI nº 15003800).
+A Área Técnica apreciou os apontamentos da PFE-Anatel e por meio do Informe nº 7/2026/PRRE/SPR (SEI nº 15051148), que incorporou contribuições para aprimoramento do texto da minuta, sem alteração de mérito e sugeriu o encaminhamento do processo ao Conselho Diretor.
+O processo foi encaminhado à Superintendência Executiva (SUE) que, por meio do Despacho Ordinatório SEI nº 15131811, encaminhou a Matéria para Apreciação do Conselho Diretor nº 46/2026 (SEI nº 15088578) à Secretaria do Conselho Diretor (SCD).
+Em 05/02/2026, os autos foram distribuídos para minha relatoria (SEI nº 15142465).
+É o relato dos fatos.
+DA ANÁLISE 
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo foi automaticamente incluído na pauta desta 955ª Reunião deste Colegiado, de 02 de julho de 2026.
+Diante da relevância e complexidade da matéria, entende-se não ser possível a submissão da matéria para deliberação na data prevista regimentalmente, razão pela qual proponho prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho a prorrogação do prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro Relator, em 02/07/2026, às 14:21, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15865240 e o código CRC B8A5BDCC.
+ | 
+Referência: Processo nº 53500.003209/2025-17 | 
+SEI nº 15865240 |

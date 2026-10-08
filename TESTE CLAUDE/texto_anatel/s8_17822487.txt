@@ -1,0 +1,51 @@
+SEI/ANATEL - 15928907 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 175, de 07 de julho de 2026
+Processo nº 53500.046715/2025-09
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE RECONSIDERAÇÃO. PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. TERMO DE COMPROMISSO DE AJUSTAMENTO DE CONDUTA - TAC. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. PROVIMENTO PARCIAL.
+I. CASO EM EXAME
+1. O Recurso. Pedido de Reconsideração interposto por TELEFÔNICA BRASIL S.A. contra o Acórdão nº 119/2026, que aplicou multa por descumprimento das Cláusulas 10.4, parágrafo único, e 10.5, alínea “b”, do Termo de Compromisso de Ajustamento de Conduta - TAC nº 1/2022, no compromisso “Índice de Qualidade Percebida - IQP”, Ano 3.
+2. Fato relevante. O Procedimento de Apuração de Descumprimento de Item de Cronograma - PADIC apurou degradação do IQP por dois anos consecutivos no Serviço de Comunicação Multimídia - SCM, no Serviço Telefônico Fixo Comutado - STFC, no Serviço de Acesso Condicionado - SeAC e no Serviço Móvel Pessoal - SMP. O PADIC também apurou o não atingimento da meta de 70% (setenta por cento) das Unidades da Federação - UFs com melhora ou estabilidade do IQP no SCM e no STFC.
+3. Pedidos da Recorrente. A Recorrente requereu o afastamento da multa ou sua conversão em advertência. Subsidiariamente, requereu o recálculo do IQP-SMP do ano 3 com metodologia refinada posterior, a exclusão de 2022 da base comparativa da degradação, a consideração de margem de erro, a análise de indicadores complementares de qualidade, o recálculo da multa da Cláusula 10.4 e a correção da atualização monetária.
+4. Petição Extemporânea. A Recorrente apresentou memorial e infográfico antes da divulgação da pauta. Os documentos reiteraram os argumentos do Pedido de Reconsideração.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o Pedido de Reconsideração e a Petição Extemporânea devem ser conhecidos; (ii) saber se cabe, no PADIC, recalcular o IQP com metodologia posterior ou excluir 2022 da apuração da degradação por dois anos consecutivos; (iii) saber se deve ser considerada margem de erro ou indicadores complementares de qualidade para afastar o descumprimento do TAC; (iv) saber se a multa pode ser substituída por advertência ou recalculada quanto à Cláusula 10.4; e (v) saber se houve erro material na atualização monetária da penalidade.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Reconsideração é cabível e tempestivo. A Recorrente tem legitimidade e interesse recursal.
+2. A Petição Extemporânea deve ser conhecida. Ela foi protocolizada antes da divulgação da pauta e não caracteriza abuso do direito de petição, nos termos da Súmula nº 21 da Anatel.
+3. O IQP deve ser apurado segundo a metodologia vigente quando definido o estado inicial do TAC. Alterações metodológicas posteriores não se aplicam sem Termo Aditivo.
+4. O PADIC não é meio adequado para rediscutir a metodologia de mensuração do IQP pactuada no TAC.
+5. A apuração da degradação por dois anos consecutivos, no ano 3 do TAC, deve considerar o comparativo 2022-2023-2024. O estado inicial de 2021 não altera esse critério de verificação.
+6. A margem de erro e o intervalo de confiança de 95% (noventa e cinco por cento) referem-se ao Índice de Satisfação Geral - ISG. Esses parâmetros não se aplicam ao IQP no contexto do TAC.
+7. A possibilidade de incluir margem de erro na aferição do IQP já foi afastada pela Agência. O Pedido de Reconsideração não trouxe elemento novo para revisão desse entendimento.
+8. Indicadores complementares de qualidade, premiações, rankings e redução de reclamações não substituem os critérios objetivos previstos no TAC. Esses elementos não afastam o descumprimento das metas pactuadas.
+9. O TAC possui natureza vinculante entre as partes. O cumprimento das obrigações deve ser aferido pelos parâmetros expressamente previstos no ajuste.
+10. A substituição da multa por advertência é incabível. O TAC e o Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC preveem multa para o descumprimento do Item de Cronograma.
+11. Não procede o pedido de recálculo da multa da Cláusula 10.4 com valor unitário por UF afetada. A cláusula considera as Unidades da Federação em que o IQP do serviço é efetivamente medido.
+12. Procede a alegação de erro material na atualização monetária da multa. A Cláusula 12.3 do TAC determina a aplicação do Índice Geral de Preços - Disponibilidade Interna - IGP-DI.
+13. A decisão recorrida consignou o uso do IGP-DI, mas a memória de cálculo utilizou o Índice Geral de Preços - Mercado - IGP-M. O erro material deve ser corrigido.
+14. Com a substituição do IGP-M pelo IGP-DI e a manutenção dos demais parâmetros, a multa final corresponde a R$ 3.934.700,99 (três milhões, novecentos e trinta e quatro mil, setecentos reais e noventa e nove centavos).
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração conhecido e parcialmente provido. Petição Extemporânea conhecida e parcialmente deferida. Multa aplicada.
+Tese de julgamento: "1. Conhece-se do Pedido de Reconsideração quando presentes os pressupostos de admissibilidade. 2. Conhece-se da Petição Extemporânea protocolizada antes da divulgação da pauta, sem abuso do direito de petição, nos termos da Súmula nº 21 da Anatel. 3. O acompanhamento das obrigações do TAC nº 1/2022 deve observar a metodologia de apuração do IQP vigente quando definido o estado inicial do compromisso, sendo incabível sua alteração no PADIC sem Termo Aditivo. 4. A verificação de degradação do IQP por dois anos consecutivos, no ano 3 do TAC, deve considerar o comparativo 2022-2023-2024. 5. A margem de erro e o intervalo de confiança de 95% (noventa e cinco por cento) não se aplicam ao IQP no contexto do TAC nº 1/2022. 6. Indicadores complementares de qualidade não afastam a verificação objetiva do cumprimento das Cláusulas 10.4, parágrafo único, e 10.5, alínea “b”, do TAC nº 1/2022. 7. É incabível a substituição da multa por advertência quando o TAC prevê sanção pecuniária para o descumprimento do Item de Cronograma. 8. A multa da Cláusula 10.4 deve considerar as Unidades da Federação - UFs em que o indicador é efetivamente medido para cada serviço. 9. Corrige-se erro material na atualização monetária da penalidade para adoção do IGP-DI, nos termos da Cláusula 12.3 do TAC nº 1/2022. 10. Aplica-se à TELEFÔNICA BRASIL S.A. multa de R$ 3.934.700,99 (três milhões, novecentos e trinta e quatro mil, setecentos reais e noventa e nove centavos)."
+Dispositivos relevantes citados: Constituição Federal de 1988 - CF/1988, art. 5º, XXXVI; Decreto-Lei nº 4.657/1942, arts. 6º e 22, § 1º; Lei nº 13.874/2019, art. 4º-A; Resolução nº 629/2013, arts. 3º, 17, § 1º, III, 25 e 26; TAC nº 1/2022, Cláusulas 6.2, 6.3, 10.2, parágrafo único, 10.4, parágrafo único, 10.5, alínea “b”, § 2º, e 12.3; e Resolução nº 612/2013.
+Jurisprudência relevante citada: Anatel, Súmula nº 21, de 10.10.2017; Anatel, Acórdão nº 240, de 22.09.2023, nos termos da Análise nº 62/2023/MM; Anatel, Acórdão nº 133, Processo nº 53500.079355/2024-32, Rel. Daniel Martins D'Albuquerque, Reunião nº 943, de 15.05.2025, j. 23.05.2025; Anatel, Acórdão nº 252, de 17.09.2025; Anatel, Acórdão nº 270, de 20.10.2025; Anatel, Acórdão nº 195, de 13.08.2025; Anatel, Acórdão nº 336, de 08.11.2024, nos termos da Análise nº 88/2024/AC; e Supremo Tribunal Federal - STF, ARE 843.989, Tema 1199.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 50/2026/OP (SEI nº 15718935), integrante deste acórdão:
+a) conhecer do Pedido de Reconsideração para, no mérito, dar-lhe provimento parcial, exclusivamente para retificar erro material relativo à adoção do Índice Geral de Preços - Disponibilidade Interna - IGP-DI como índice de atualização monetária, conforme tratado no item "III.4.c" da referida análise;
+b) receber da Petição Extemporânea (SEI nº 15745225 e anexo) para, no mérito, deferir parcialmente os pedidos nela contidos, exclusivamente para retificar erro material relativo à adoção do IGP-DI como índice de atualização monetária, conforme tratado no item "III.4.c" da referida análise; e,
+c) em decorrência do disposto nas alíneas "a" e "b", revisar a multa aplicada à TELEFÔNICA BRASIL S.A. para o valor de R$ 3.934.700,99 (três milhões, novecentos e trinta e quatro mil, setecentos reais e noventa e nove centavos), em razão do descumprimento do disposto nas Cláusulas 10.4, parágrafo único, e 10.5, alínea “b”, do Termo de Ajustamento de Conduta - TAC nº 1/2022 (SEI nº 7874286), firmado em 28 de fevereiro de 2022, nos termos das Cláusulas 6.2 e 6.3 do referido TAC, bem como dos arts. 17, § 1º, inciso III, 25 e 26 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15928907 e o código CRC B0B05AB3.
+ | 
+Referência: Processo nº 53500.046715/2025-09 | 
+SEI nº 15928907 |

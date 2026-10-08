@@ -1,0 +1,54 @@
+SEI/ANATEL - 15958375 - Acórdão
+Boletim de Serviço Eletrônico em 14/07/2026
+DOU de 14/07/2026, seção 1, página 50
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 189, de 13 de julho de 2026
+Processo nº 53500.032176/2025-12
+Recorrente/Interessado: VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA.
+CNPJ nº 27.001.440/0002-09
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Circuito Deliberativo nº 168, de 13 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE BRASILEIRO. SATÉLITE GEOESTACIONÁRIO GX8. FATOS NOVOS. ANTES DA EXPEDIÇÃO DO ATO. AJUSTE DO PRAZO DE ENTRADA EM OPERAÇÃO. AJUSTE NO PRAZO DE ENTRADA EM OPERAÇÃO. AJUSTE NA LISTA DE PRIORIDADE DE COORDENAÇÃO. REVISÃO DO ACÓRDÃO Nº 63/2026.
+I. CASO EM EXAME
+1. Análise complementar sobre a conferência de Direito de Exploração, no Brasil, do satélite brasileiro geoestacionário GX8, associado à posição orbital 72,5ºO.
+2. O pedido originário. VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA. requereu a conferência de Direito de Exploração do satélite brasileiro GX8, pelo prazo de 15 (quinze) anos, para provimento de capacidade satelital no Brasil em parte das subfaixas da banda Ka.
+3. A decisão anterior. O Acórdão nº 63/2026 aprovou a conferência do direito de exploração, condicionada ao recolhimento do preço público e à apresentação de garantia de execução do compromisso de colocar o segmento espacial em operação.
+4. O fato superveniente. Após o pagamento do preço público, a VIASAT BRASIL requereu a complementação do Acórdão nº 63/2026 para alterar de 2 (dois) para 3 (três) anos o prazo de entrada em operação do satélite, em razão de atraso na fabricação do GX8.
+5. A questão acessória de coordenação. No curso do processo, a VIASAT BRASIL informou a celebração de acordo de coordenação com a CLARO S.A., o que repercute na atualização da Lista de Prioridade de Coordenação de Sistemas Satelitais.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se é juridicamente possível ajustar, antes da expedição do ato autorizativo, o prazo de entrada em operação do satélite brasileiro geoestacionário GX8 de 2 (dois) para 3 (três) anos, contados da publicação do extrato do ato no Diário Oficial da União - DOU; e (ii) saber se a atualização do Ato nº 4.141/2025 deve refletir o fato superveniente relativo ao acordo de coordenação celebrado com a CLARO S.A.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor decidir sobre a conferência de direito de exploração de satélite.
+2. O Regulamento Geral de Exploração de Satélites - RGSat prevê prazo máximo de 5 (cinco) anos para entrada em operação de satélite geoestacionário brasileiro, contado da publicação do extrato do ato no DOU.
+3. O prazo de 2 (dois) anos adotado na decisão originária decorreu do cronograma inicialmente informado pela própria Interessada.
+4. Fatos supervenientes demonstraram alteração relevante das premissas fáticas que embasaram a fixação do prazo inicial.
+5. O ato de conferência do Direito de Exploração ainda não foi expedido.
+6. O ajuste pretendido recai sobre condição acessória da decisão e permanece dentro dos parâmetros regulatórios.
+7. O ajuste do prazo não altera o mérito principal da conferência do Direito de Exploração.
+8. A adequação do prazo às condições efetivas do empreendimento preserva a racionalidade da decisão administrativa.
+9. A garantia de execução do compromisso deve guardar correspondência com o prazo efetivamente fixado para a entrada em operação do segmento espacial.
+10. O pagamento do preço público foi comprovado nos autos.
+11. Permanece a exigência de apresentação da garantia de execução do compromisso de colocar o segmento espacial em operação.
+12. Permanecem inalterados os demais fundamentos da decisão anterior, inclusive quanto ao atendimento dos requisitos legais e regulamentares, à ausência de necessidade de consulta pública, à possibilidade de operação sem direito à proteção e sem causar interferência prejudicial em relação aos sistemas sem acordo de coordenação e à necessidade de atualização da Lista de Prioridade de Coordenação.
+13. O acordo de coordenação celebrado com a CLARO S.A. afasta a pendência antes existente em relação ao sistema StarOne D2 (70ºO), razão pela qual é necessário ajuste da Minuta de Ato que altera o Ato nº 4.141/2025, aprovado pelo Acórdão nº 63/2026.
+IV. DISPOSITIVO E TESE
+Revisar o Acórdão nº 63, de 16 de março de 2026, para estabelecer que o satélite brasileiro geoestacionário GX8 deverá entrar em operação no prazo de 3 (três) anos, contado da publicação do extrato do ato de conferência do Direito de Exploração no DOU, nos termos da Minuta de Ato ajustada nº 15866026; e atualizar a Minuta de Ato SEI nº 14837114, que altera o Ato nº 4.141, de 11 de abril de 2025, para os termos da Minuta de Ato SEI nº 15895625, a ser expedido após a publicação no DOU do extrato do ato de autorização do direito de exploração do satélite brasileiro GX8.
+Tese de julgamento: "1. É juridicamente possível ajustar, antes da expedição do ato autorizativo, o prazo de entrada em operação de satélite brasileiro geoestacionário, desde que observados os limites do RGSat e os fatos supervenientes constantes dos autos. 2. O satélite brasileiro geoestacionário GX8 deverá entrar em operação no prazo de 3 (três) anos, contado da publicação do extrato do ato de conferência do Direito de Exploração no DOU. 3. O cumprimento da condição relativa ao pagamento do preço público não afasta a exigência de apresentação da garantia de execução do compromisso de colocar o segmento espacial em operação. 4. A atualização da Lista de Prioridade de Coordenação deve refletir os fatos supervenientes de coordenação constantes dos autos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 170; Resolução nº 612/2013, art. 133, IX; Resolução nº 748/2021, arts. 3º, III, 7º, 8º, 10, 17, 18, §§ 1º, 2º, 3º e 4º, 23, 24, §§ 1º e 3º, 28 e 29; Ato nº 4.430/2023; Decreto nº 11.738/2023, art. 3º; Decreto nº 12.150/2024, arts. 4º e 5º; Decreto nº 11.704/2023, arts. 1º e 2º.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 64/2026/AF (SEI nº 15855143), integrante deste acórdão:
+a) rever o Acórdão nº 63, de 16 de março de 2026, para:
+a.1) estabelecer que o satélite brasileiro geoestacionário GX8 deverá entrar em operação no prazo de 3 (três) anos, contado da publicação do extrato do Ato de conferência do Direito de Exploração no Diário Oficial da União, nos termos da Minuta de Ato nº 15866026; e,
+a.1) atualizar a Minuta de Ato que altera o Ato nº 4.141, de 11 de abril de 2025, nos termos da Minuta de Ato SEI nº 15895625, que deverá ser expedido e publicado após a publicação do extrato do ato de autorização do direito de exploração do satélite GX8, na posição orbital 72,5º O;
+b) consignar que a condição relativa ao pagamento do preço público foi cumprida, conforme documentos SEI nº 15627382 e 15627383;
+c) manter a exigência de apresentação de garantia de execução do compromisso de colocar o Segmento Espacial em operação; e,
+d) manter os demais termos da conferência do direito de exploração à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 18:27, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15958375 e o código CRC E1146432.
+ | 
+Referência: Processo nº 53500.032176/2025-12 | 
+SEI nº 15958375 |

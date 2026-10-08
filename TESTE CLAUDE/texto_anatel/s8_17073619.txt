@@ -1,0 +1,92 @@
+SEI/ANATEL - 15259715 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 11
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 47, de 02 de março de 2026
+Processo nº 53500.012371/2018-05
+Recorrente/Interessado: TIM S.A.
+CNPJ nº 02.421.421/0001-11
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. INFRAÇÕES AO REGULAMENTO DO SERVIÇO MÓVEL PESSOAL - RSMP E À LEI Nº 10.703/2003. DOSIMETRIA DA MULTA. CONVERSÃO DA SANÇÃO PECUNIÁRIA EM OBRIGAÇÃO DE FAZER. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TIM S.A. contra decisão que aplicou multa por descumprimento do art. 1º, I e § 1º, da Lei nº 10.703/2003 e do art. 58, I, II, IV e § 1º, "d", do RSMP, em razão de irregularidades no cadastro de usuários pré-pagos.
+2. A decisão recorrida considerou a conduta grave e sistêmica, fixando o valor da multa com base na metodologia da Portaria nº 791/2014.
+3. A Recorrente requereu o sobrestamento do processo, a descaracterização das infrações, a revisão da dosimetria da multa, a aplicação de atenuantes e a conversão da multa em obrigação de fazer.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) possibilidade de conhecimento de petições extemporâneas e sobrestamento do processo; (ii) materialidade e classificação das infrações, critérios de dosimetria e aplicação de agravantes e atenuantes; e (iii) conversão da multa em obrigação de fazer consistente na antecipação de metas do Edital 5G.
+III. RAZÕES DE DECIDIR
+1. O conhecimento de petições extemporâneas é possível, nos termos do Enunciado nº 21 da Anatel, quando protocoladas antes da publicação da pauta e não caracterizado abuso.
+2. O sobrestamento do processo sancionador é decisão discricionária da Anatel, não sendo obrigatório quando há processo de acompanhamento em curso.
+3. É possível o agravamento da sanção em sede recursal, desde que assegurado o contraditório e a ampla defesa, conforme Enunciado nº 22 da Anatel e art. 64 da Lei nº 9.784/1999.
+4. A ausência de conferência documental dos usuários pré-pagos caracteriza infração ao art. 58, § 1º, "d", do RSMP, de natureza grave e com potencial para afetar toda a base de usuários.
+5. As infrações ao art. 58, caput, do RSMP, são autônomas em relação ao § 1º, não sendo possível a aglutinação para fins de dosimetria.
+6. A dosimetria da multa deve observar a proporcionalidade, considerando a quantidade de usuários afetados, a gravidade da conduta, a receita operacional líquida da empresa sucedida e a aplicação de agravantes e atenuantes, quando cabível.
+7. Não se aplica a atenuante de 70% (setenta por cento) prevista no art. 20, II, do Regulamento de Aplicação de Sanções Administrativas - RASA, pois não houve cessação integral da conduta antes da instauração do processo.
+8. É possível a conversão da multa em obrigação de fazer, consistente na antecipação de metas do Edital 5G na faixa de 3,5 GHz, em municípios do Norte e Nordeste com mais de 30 mil habitantes, observados os critérios de escolha, custos, prazos e comprovação definidos pela Anatel.
+9. A antecipação dos investimentos nas redes móveis contribui para a transformação digital do país. O acesso à Internet de alta velocidade e baixa latência é um vetor de crescimento econômico que incrementa o Produto Interno Bruto - PIB per capita e a produtividade local. Focar essa antecipação em municípios das regiões Norte e Nordeste com mais de 30 mil habitantes é um instrumento crucial para fomentar o desenvolvimento regional e mitigar assimetrias estruturais.
+10. O acesso à conectividade digital amplia oportunidades de educação, saúde e inclusão social para populações historicamente desassistidas. E, ao antecipar infraestruturas resilientes e promover instituições eficazes e transparentes, a Anatel reafirma seu compromisso com um futuro digital inclusivo e sustentável para todos os brasileiros.
+11. A obrigação de fazer é de inegável interesse público e está alinhada às políticas públicas de telecomunicações, ao Plano Estratégico da Anatel, ao Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, ao Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG, às boas práticas regulatórias da Organização para Cooperação e Desenvolvimento Econômico - OCDE e aos Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e parcialmente provido. Indeferimento do pedido de sobrestamento. Redução da base de cálculo da multa, reclassificação das infrações ao art. 58, caput, do RSMP como médias, aplicação de fator de proporcionalização e conversão da multa em obrigação de fazer, consistente na antecipação de metas do Edital 5G, nos termos definidos pela Anatel.
+Tese de julgamento: "1. É possível o conhecimento de petições extemporâneas e o indeferimento do sobrestamento do processo sancionador. 2. A ausência de conferência documental dos usuários pré-pagos caracteriza infração grave ao RSMP, sendo autônoma em relação às demais condutas previstas no art. 58. 3. A dosimetria da multa deve observar a proporcionalidade, com a aplicação de agravantes e atenuantes conforme o caso. 4. Admite-se a conversão da multa em obrigação de fazer, consistente com a antecipação de metas do Edital 5G, em conformidade com as políticas públicas e critérios definidos pela Anatel."
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 24/2026/AF (SEI nº 15166985), integrante deste acórdão:
+a) indeferir o pedido de sobrestamento deste Pado;
+b) conhecer das seguintes petições extemporâneas:
+b.1) Petição RQ DAR 009 2025 AC_Manifestação TIM (SEI nº 13198221), de 27 de janeiro de 2025;
+b.2) Alegações RQ DAR 058 2025 AC (SEI nº 13630375), de 29 de abril de 2025;
+b.3) Alegações RQ DAR 125 2025 AC (SEI nº 14472420), de 30 de setembro de 2025; e,
+b.4) Petição RQ/DAR/200/2025 – GR (SEI nº 14950985), de 19 de dezembro de 2025;
+c) conhecer do Recurso Administrativo para, no mérito, dar-lhe parcial provimento para, nos termos da fundamentação:
+c.1) reduzir a Receita Operacional Líquida - ROL para R$ 14.232.140.909,49 (quatorze bilhões, duzentos e trinta e dois milhões, cento e quarenta mil, novecentos e nove reais e quarenta e nove centavos), em relação a todas as infrações;
+c.2) reduzir a quantidade de usuários atingidos, para os valores abaixo:
+c.2.1) em relação à infração ao art. 58, caput, inciso I, do RSMP: 312.941 (trezentos e doze mil, novecentos e quarenta e um);
+c.2.2) em relação à infração ao art. 58, caput, inciso II, do RSMP: 398.272 (trezentos e noventa e oito mil, duzentos e setenta e dois);
+c.2.3) em relação à infração ao art. 58, caput, inciso IV, do RSMP: 291.687 (duzentos e noventa e um mil, seiscentos e oitenta e sete); e,
+c.2.4) em relação à infração ao art. 58, § 1º, alínea "d", do RSMP: 41.935.901 (quarenta e um milhões, novecentos e trinta e cinco mil, novecentos e um);
+c.3) elevar a quantidade de usuários afetados para 58.972.931 (cinquenta e oito milhões, novecentos e setenta e dois mil, novecentos e trinta e um) em todas as infrações;
+c.4) diminuir o valor da variável Dano (D) para "2"em todas as infrações;
+c.5) reclassificar as infrações ao art. 58, caput, incisos I, II e IV do RSMP como "médias"; e,
+c.6) aplicar fator de proporcionalização em um terço nas infrações ao art. 58, caput, incisos I, II e IV do RSMP e em um quarto, no caso do art. 58, § 1º, alínea "d", do RSMP;
+d) rever, de ofício, o Despacho Decisório nº 6/2023/COQL/SCO (SEI nº 10200678) para aplicar agravante de reincidência (art. 19, inciso I, do RASA), no percentual de 30% (trinta por cento) para as infrações ao art. 58, caput, incisos I, II e IV do RSMP;
+e) fixar, o valor das multas para cada uma das infrações, nos seguintes valores:
+e.1) art. 58, caput, inciso I, do RSMP: R$ 129.594,07 (cento e vinte e nove mil, quinhentos e noventa e quatro reais e sete centavos);
+e.2) art. 58, caput, inciso II, do RSMP: R$ 146.198,79 (cento e quarenta e seis mil, cento e noventa e oito reais e setenta e nove centavos);
+e.3) art. 58, caput, inciso IV, do RSMP: R$ 125.115,88 (cento e vinte e cinco mil, cento e quinze reais e oitenta e oito centavos); e,
+e.4) art. 58, § 1º, alínea "d", do RSMP: R$ 1.950.249,76 (um milhão, novecentos e cinquenta mil, duzentos e quarenta e nove reais e setenta e seis centavos);
+f) consolidar o valor total das multas fixadas neste processo em R$ 2.351.158,50 (dois milhões, trezentos e cinquenta e um mil, cento e cinquenta e oito reais e cinquenta centavos);
+g) aplicar sanção de obrigação de fazer, consistente na antecipação de metas dos compromissos de abrangência do Edital 5G na faixa de radiofrequências de 3,5 GHz com vencimento até 31 de julho de 2029, em municípios com mais de 30 mil habitantes das Regiões Norte e Nordeste, nos seguintes termos:
+g.1) os custos associados ao projeto foram calculados de acordo com a Planilha Valores de Antecipação (SEI nº 14684737), conforme estudo da Superintendência da Competição constante do Informe nº 106/2024/CPAE/SCP (SEI nº 12724332);
+g.2) considerando que (i) a antecipação das metas requer um aporte adicional, por localidade e por ano de antecipação, a depender do município escolhido e do período antecipado, e que (ii) o valor da multa aplicada é de R$ 2.351.158,50 (dois milhões, trezentos e cinquenta e um mil, cento e cinquenta e oito reais e cinquenta centavos), com as devidas correções monetárias e a aplicação do respectivo fator de redução, nos termos do art. 36-A do RASA, a Prestadora deverá escolher os municípios que serão antecipados conforme o painel de acompanhamento dos compromissos do Edital do 5G (https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g), dentre aqueles constantes da mencionada Planilha Valores de Antecipação, com mais de 30 mil habitantes das Regiões Norte e Nordeste;
+g.3) quando da apresentação do rol de localidades selecionadas, a Prestadora deverá apresentar o cálculo dos custos da operação por município, nos termos da alínea "g.2" e da mencionada Planilha Valores de Antecipação;
+g.4) o somatório dos custos associados à sua implementação deve ser igual ou superior ao valor total da multa aplicada, com as devidas correções monetárias e a aplicação do respectivo fator de redução, nos termos do art. 36-A do RASA;
+g.5) caso os custos associados ao projeto, calculados de acordo com a mencionada Planilha Valores de Antecipação, perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, § 3º, do RASA, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção, conforme o disposto no art. 36 desse Regulamento;
+g.6) considerando-se que a obrigação de fazer tem foco na antecipação de metas dos compromissos de abrangência do Edital 5G na faixa de radiofrequências de 3,5 GHz com vencimento até 31 de julho de 2029, a Prestadora tem liberdade para escolher os municípios com mais de 30 mil habitantes das Regiões Norte e Nordeste a serem beneficiados na antecipação, dentre aqueles constantes da mencionada Planilha Valores de Antecipação, devendo informar à Anatel a totalidade dos municípios a serem atendidos até 31 de julho de 2029;
+g.7) a lista dos municípios atendidos pelo Edital 5G, e que deverá ser utilizada pela Prestadora para o cumprimento da Obrigação de Fazer em tela, está disponível no painel de dados no site da Agência, no seguinte caminho: Página Inicial > Painéis de Dados > Acompanhamento e Controle > 5G (https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g), devendo-se considerar apenas aqueles constantes da mencionada Planilha de Valores de Antecipação;
+g.8) a Prestadora deverá cumprir todas as metas previstas no Edital 5G, além daquelas que serão antecipadas por meio do cumprimento da presente obrigação de fazer;
+g.9) nos termos do art. 36-A, § 6º, inciso II, do RASA, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção de multa, incidindo até a data da publicação do Acórdão de aplicação da sanção de fazer, utilizando a Taxa Referencial do Sistema Especial de Liquidação e Custódia - Selic ou outro índice que vier a substituí-lo. Após a correção monetária, será aplicado o fator de redução de 5% (cinco por cento), observado o previsto no art. 36-A, § 3º, do RASA;
+g.10) no prazo de 60 (sessenta) dias, a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do fator de redução previsto no RASA, ou deverá, no mesmo prazo, apresentar o rol dos municípios selecionados dentre os elegíveis, juntamente com os respectivos projetos técnicos e cálculos de custos;
+g.11) nos termos do art. 16-A, § 2º, do RASA, no caso da apresentação do rol de municípios, até a validação da manifestação do Infrator no prazo estabelecido na alínea acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento;
+g.12) uma vez formalizada junto à Anatel a seleção de municípios realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal à Superintendência de Controle de Obrigações - SCO, obedecidas as regras do Edital 5G, cabendo à autoridade competente decidir sobre a questão;
+g.13) a análise do cumprimento dos requisitos de seleção de Prestadora, a concessão de atesto e as demais providências serão realizadas pela SCO;
+g.14) a adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão, e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos;
+g.15) a concessão do atesto ao cumprimento integral da sanção de obrigação de fazer acarretará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos - SIGEC, originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer;
+g.16) a Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as localidades selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas localidades, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das localidades em que tais requisitos não tenham sido observados;
+g.17) a instalação da infraestrutura deverá obedecer aos critérios estabelecidos no Edital 5G;
+g.18) a comprovação da instalação da infraestrutura deverá ser realizada nos termos previstos no Edital 5G, sendo que, conjuntamente à comprovação da instalação da infraestrutura, a Operadora deverá apresentar documentos que comprovem a realização de comunicação:
+g.18.1) às demais prestadoras autorizadas de SMP sobre a disponibilidade para habilitação de roaming, a ser concretizada mediante interesse das demais empresas; e,
+g.18.2) à comunidade das localidades contempladas sobre a disponibilização do serviço, nos termos que vierem a ser definidos pela SCO, fazendo-se, inclusive, referência explícita ao mapa de cobertura disponível no sítio eletrônico da Operadora, que deverá estar atualizado para as novas localidades atendidas;
+g.19) o prazo de manutenção da infraestrutura observará as disposições contidas no Edital 5G;
+g.20) se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a SCO decidirá sobre a caracterização do descumprimento da sanção;
+g.21) caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do RASA, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§ 1º a 3º do art. 36-A do Regulamento;
+g.22) no caso da alínea acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia - Selic ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o § 6º do art. 36-A do RASA; e,
+g.23) caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15259715 e o código CRC 3531DB7A.
+ | 
+Referência: Processo nº 53500.012371/2018-05 | 
+SEI nº 15259715 |

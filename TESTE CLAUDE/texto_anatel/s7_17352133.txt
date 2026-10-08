@@ -1,0 +1,103 @@
+SEI/ANATEL - 15514731 - Análise
+Boletim de Serviço Eletrônico em 07/05/2026
+Análise nº 40/2026/OP
+Processo nº 53524.001165/2019-74
+Interessado: TELBRAX LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14394029) interposto pela VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A., CNPJ nº 05.872.814/0001-30, incorporadora da TELBRAX LTDA, CNPJ nº 04.513.030/0001-52, contra o Despacho Decisório nº 664/2025/COGE/SCO (SEI nº 14141222), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST) e à multa de ofício, no exercício de 2017.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. FUST. BASE DE CÁLCULO E MULTA DE OFÍCIO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A., incorporadora da TELBRAX LTDA, contra despacho da Superintendência de Controle de Obrigações que julgou procedentes os lançamentos dos créditos tributários referentes ao FUST e à multa de ofício, no exercício de 2017.
+ A pretensão recursal. A recorrente impugna a base de cálculo do tributo. Alega a inclusão de receitas que não corresponderiam a serviços de telecomunicações, referentes aos serviços Connect Flex, Ip Flex e Porta Ip. Alega também a não exclusão do ICMS. Sustenta, ainda, a invalidade da multa de ofício por violação ao princípio do não confisco.
+ A admissibilidade. O recurso foi considerado tempestivo. A recorrente tem legitimidade e interesse recursal. Não há contrariedade a Súmula editada pela Agência.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se as receitas dos serviços Connect Flex, Ip Flex e Porta Ip devem compor a base de cálculo da contribuição ao FUST e se houve exclusão do ICMS; e (ii) saber se é legítima a aplicação da multa de ofício em razão de declaração inexata que importou recolhimento a menor da contribuição.
+III. RAZÕES DE DECIDIR
+ A instrução do Processo Administrativo Fiscal observou o Decreto nº 70.235/1972. Foram resguardados o devido processo legal e a ampla defesa.
+ A contribuição ao FUST incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações nos regimes público e privado, com exclusão de ICMS, PIS e Cofins.
+ O Relatório de Fiscalização qualificou os serviços Connect Flex, Ip Flex e Porta Ip como soluções de internet dedicada. O relatório registrou que a prestadora garante velocidade de acesso à internet e banda larga. Essa característica foi enquadrada como própria do Serviço de Comunicação Multimídia.
+ A recorrente não apresentou documentação apta a afastar os achados da fiscalização. Não juntou prova contábil ou comercial idônea para demonstrar que tais receitas não decorrem de serviços de telecomunicações.
+ Prevalece a presunção de legalidade e veracidade do Relatório de Fiscalização. Cabia à interessada provar os fatos alegados.
+ A planilha de cálculo constante dos autos registra a exclusão dos valores recolhidos a título de ICMS da receita tributada. Não procede a alegação de que o imposto teria sido mantido na base de cálculo.
+ A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 tem natureza punitiva. Incide quando há necessidade de lançamento de ofício em razão de falta de declaração ou de declaração inexata que implique recolhimento a menor.
+ A aplicação da multa de ofício às contribuições administradas pela Anatel foi reputada compatível com a legislação tributária federal no parecer da PFE-Anatel referido nos autos.
+ A Súmula nº 27, de 26 de julho de 2024, da Anatel, reconhece a legitimidade da multa de ofício nos processos administrativos fiscais pela ausência de declaração ou por declaração inexata que resulte em recolhimento a menor da CIDE-Fust.
+ Verificada a declaração inexata e ausente prova apta a infirmar o lançamento, são regulares a exigência do crédito tributário e a multa de ofício.
+IV. DISPOSITIVO E TESE
+ Recurso administrativo desprovido.
+Tese de julgamento: "1. As receitas dos serviços Connect Flex, Ip Flex e Porta Ip integram a base de cálculo do FUST quando caracterizadas, nos autos, como prestação de Serviço de Comunicação Multimídia. 2. A alegação de indevida inclusão de receitas na base de cálculo do FUST exige prova documental idônea pelo interessado. 3. É legítima a aplicação da multa de ofício quando a declaração inexata do contribuinte importar recolhimento a menor da contribuição ao FUST. 4. Comprovada nos autos a exclusão do ICMS da receita tributada, afasta-se a impugnação quanto a esse ponto."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 36; Resolução Anatel nº 612/2013, art. 85; Portaria Anatel nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: Anatel, Súmula nº 27, de 26.07.2024.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14394029) interposto pela VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A., CNPJ nº 05.872.814/0001-30, incorporadora da TELBRAX LTDA, CNPJ nº 04.513.030/0001-52, contra o Despacho Decisório nº 664/2025/COGE/SCO (SEI nº 14141222), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST) e à multa de ofício, no exercício de 2017.
+Em 28/08/2025, conforme Certidão de Intimação Cumprida (SEI nº 14276518), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 1013/2025/COGE/SCO (SEI nº 14535235), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 878/2025/COGE/SCO (SEI nº 14691275), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 824/2025 (SEI nº 14691660).
+Fui designado relator da matéria por meio do sorteio realizado em 16/04/2026, nos termos da Certidão de Distribuição SEI nº 15498542.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese, que: (i) que não concorda com base de cálculo do tributo, pela inclusão de receitas que não devem ser consideradas como serviços de telecomunicações, tais como os serviços Connect Flex, Ip Flex E Porta Ip, bem como pela não exclusão do ICMS; (ii) que a aplicação da multa de ofício não deve prevalecer, em face da violação ao princípio do não confisco. 
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou nos autos acerca da regularidade dos valores identificados como declarados a menor do que aqueles efetivamente devidos.
+No tocante à inclusão dos serviços: Connect Flex, Ip Flex e Porta Ip na base de cálculo, o Relatório de Fiscalização nº 132/2019/GR04FI1/GR04/SFI (SEI nº 4915186) assim dispõe:
+8.6.1. Assim, os serviços de telecomunicações ofertados pela prestadora, em seu site, são 04 (quatro) principais, a saber:
+1) Prestação de SCM: soluções IP FLEX, PORTA IP e CONNECT FLEX, se referem a soluções de Internet dedicada.
+2) Prestação de soluções de Data Center, como: BACKUP FLEX, HOSTING FLEX, DRIVE FLEX, COLOCATION FLEX e CLOUD FLEX.
+3) Exploração Industrial: Exploração Industrial de Linha Dedicada (EILD) e STORAGE CONNECT, Fibra Apagada e Compartilhamento de Infraestrutura.
+4) Voz: VOZ FLEX.
+8.6.2. O serviço chamado de CONNECT FLEX, conforme informações retiradas do sítio eletrônico da operadora, é um canal de comunicação direto entre dois pontos, com velocidades que vão de 1 Mbps a 10 Gbps, com total privacidade e banda 100% garantida.
+8.6.3. Enquanto o serviço denominado IP FLEX, segundo informações do próprio sítio eletrônico da prestadora, é uma conexão dedicada, simétrica e permanente à internet, com tráfego garantido e sem restrições de protocolo ou aplicação. Possuem velocidades de acordo com a necessidade do cliente, não correm o risco de queda e de flutuação de velocidade.
+8.6.4. Já o serviço PORTA IP é uma solução de conexão dedicada à internet desenvolvida pela TELBRAX, uma solução competitiva para uma internet estável e de qualidade, segundo informado em seu sítio eletrônico (Anexo 03/FUST-FUNTTEL_2017 - SEI nº 4916440).
+8.6.5. Como se nota na análise dos serviços CONNECT FLEX, IP FLEX e PORTA IP, a operadora garante a velocidade do acesso à internet (banda larga) por ela fornecida, sendo uma característica da prestação do Serviço de Comunicação Multimídia (SCM).
+ A Interessada não trouxe aos autos qualquer documentação que contrariasse os achados na fiscalização. 
+Ademais, conforme consta do documento Planilha de Cálculo do Fust-Funttel (Anexo 10/FUST-FUNTTEL_2017 - SEI nº 4918399) foram excluídas da receita ora tributada os recolhimentos de ICMS, a despeito do alegado pela Recorrente.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Ressalte-se que para o Fisco não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações, é necessário haver: notas fiscais, contratos de locação, contratos de prestação de serviços, recibos, etc, ou qualquer outro comprovante idôneo de tal transação comercial. É necessário haver a verdade material. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+A multa instituída pelo art. 44, inciso I, da Lei nº 9.430/1996 possui natureza de penalidade ante o não cumprimento adequado da obrigação acessória de realizar a declaração e o recolhimento ao fundo.
+A prática adotada pela Anatel está de acordo com o entendimento da PFE-Anatel, a qual se posicionou favoravelmente à incidência da multa de ofício, esclarecendo-se que o preâmbulo da Lei nº 9.430/1996 incorpora, expressamente, a legislação tributária federal, hipótese que, por sua vez, abrange as contribuições administradas pela Anatel, autarquia pública federal.
+PARECER Nº 1060/2010/BSA/PGF/PFE-Anatel (fl. 41/68 SEI nº 4341421)
+...
+4. Antes de responder ao questionamento, cumpre-nos analisar se há ou não incidência da multa de oficio nos tributos administrados pela Anatel.
+5. Em resposta, entendemos pela incidência da penalidade. De primeiro, porque o preâmbulo diz expressamente que a Lei n.º 9.430/96, dentre outros assuntos, também se refere à legislação tributária federal, hipótese em que se abrangem as contribuições administradas pela Anatel, autarquia pública federal.
+6. De segundo, porque o art. 44, I, da Lei n.º 9.430/96, trata da imposição de multa de ofício em relação aos impostos e contribuições federais, nas situações específicas em que haja necessidade de lançamento de ofício pela falta de declaração ou declaração inexata do contribuinte que importe no recolhimento a menor do tributo.
+7. Tal situação se amolda perfeitamente às contribuições administradas pela Anatel, que além de serem contribuições federais, no caso da CIDE-FUST, o contribuinte não só tem a obrigação de pagar o tributo, mas também de apurá-lo, declará-lo e recolhê-lo na forma prevista na legislação. Desta feita, como a multa de ofício contempla penalidade específica pela não atividade ou atividade incompleta do contribuinte, diferentemente da multa de mora que visa punir o pagamento a destempo, não há dúvida acerca da sua aplicação às contribuições administradas pela Agência Reguladora.
+8. E nem poderia ser diferente, haja vista não haver motivo para tratar de forma desigual, quanto às obrigações tributárias de apurar, declarar e recolher o montante devido, os contribuintes da Administração Direta e Indireta1, até porque, a competência para a instituição dos tributos federais pertence à União2, que apenas delega a capacidade tributária ativa —administração e cobrança - a outras pessoas de direito pfiblico3, a exemplo da Anatel.
+9. O tratamento desigual entre contribuintes somente pode ser adotado se houver justificativa plausível, não havendo razão para tal discriminação na ausência de critérios justificadores4. Ao contrário, no que se refere à obrigação de declarar, apurar e recolher o tributo, o Código Tributário Nacional, quanto a essa obrigação acessória, não fez nenhuma distinção em relação aos sujeitos passivos, sendo descabida qualquer medida nesse sentido.
+Como se pode ver, a multa punitiva em discussão se trata de imposição legal sobre a qual não há margem de discricionariedade para a atuação da Anatel. Havendo a declaração inexata, deve incidir a multa sobre a diferença apurada.
+Ademais, convém acrescentar que foi editada a Súmula nº 27, de 26 de julho de 2024, por esta Agência, que assim dispõe:
+Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust).
+Não há dúvida sobre regularidade da aplicação da multa de ofício no presente caso.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 07/05/2026, às 16:57, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15514731 e o código CRC 6AFE78AA.
+ | 
+Referência: Processo nº 53524.001165/2019-74 | 
+SEI nº 15514731 |

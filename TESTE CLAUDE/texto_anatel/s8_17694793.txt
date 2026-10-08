@@ -1,0 +1,44 @@
+SEI/ANATEL - 15823788 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 55
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 147, de 17 de junho de 2026
+Processo nº 53500.206685/2015-16
+Recorrente/Interessado: ELETRONET S.A.
+CNPJ nº 03.052.673/0001-83
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DE TELECOMUNICAÇÕES - CIDE-FUST. BASE DE CÁLCULO, RECEITAS DE INTERCONEXÃO, MULTA DE OFÍCIO E JUROS DE MORA. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por ELETRONET S.A. contra decisão da Superintendência de Controle de Obrigações - SCO que julgou procedentes os lançamentos de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, relativo ao exercício de 2013, e à multa de ofício aplicada pela não declaração da contribuição.
+2. Fato relevante. A Recorrente sustenta erro na apuração da base de cálculo. Alega que receitas de interconexão e receitas classificadas como serviços preparatórios ou complementares não configuram serviços de telecomunicações. Sustenta também a inaplicabilidade da multa de ofício do art. 44, I, da Lei nº 9.430/1996 e da incidência de juros de mora sobre essa penalidade.
+3. As decisões anteriores. A área técnica manteve o lançamento. Após diligência complementar para reavaliar os documentos juntados em Recurso, a conclusão técnica permaneceu pela manutenção integral da cobrança.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se as receitas de interconexão e as receitas questionadas pela Recorrente configuram receitas decorrentes da prestação de serviços de telecomunicações, com incidência da Contribuição ao Fundo de Universalização de Telecomunicações - Cide-Fust; (ii) saber se houve erro na apuração da base de cálculo do exercício de 2013; (iii) saber se a omissão na declaração da contribuição autoriza a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996; e (iv) saber se incidem juros de mora sobre a multa de ofício desde o vencimento da obrigação.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo e preenche os requisitos de admissibilidade previstos no Regimento Interno da Anatel - RIA.
+2. Não se impõe oitiva da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, pois não se configuram as hipóteses do art. 5º da Portaria Anatel nº 642/2013.
+3. A Recorrente detinha autorização para prestação de Serviço Limitado Especializado - SLE, posteriormente adaptado ao Serviço Limitado Privado - SLP. Esses serviços se enquadram como serviços de telecomunicações.
+4. Os contratos e as notas fiscais juntados pela própria Recorrente qualificam os serviços prestados como serviços de telecomunicações. A escrituração fiscal e a incidência de Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS sobre parte relevante das receitas corroboram essa natureza.
+5. A interconexão consiste em ligação entre redes de telecomunicações funcionalmente compatíveis. A remuneração recebida por esse serviço decorre de prestação de serviço de telecomunicações entre prestadoras.
+6. As receitas de interconexão não se confundem com as transferências previstas no parágrafo único do art. 6º da Lei nº 9.998/2000. Não há bitributação, pois o fato gerador da relação entre prestadoras é distinto da relação entre prestadora e usuário.
+7. A apuração da base de cálculo de 2013 não se baseou nos saldos das contas contábeis indicadas pela Recorrente. A fiscalização adotou as receitas brutas identificadas na Escrituração Fiscal Digital das Contribuições incidentes sobre a Receita - EFD-Contribuições sob o regime cumulativo, diante das inconsistências verificadas nos balancetes e na Escrituração Contábil Digital - ECD.
+8. Os documentos apresentados em Recurso não foram conciliados com os valores efetivamente tributados. A Recorrente não comprovou, de forma individualizada, que as receitas lançadas não integravam a hipótese de incidência da contribuição.
+9. A omissão na declaração da contribuição configura hipótese legal de aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996. O art. 8º, § 1º, do Decreto nº 3.624/2000 não afasta essa penalidade.
+10. Os juros de mora incidem sobre o crédito tributário, inclusive sobre a multa de ofício, desde o vencimento da obrigação, com atualização pela Taxa do Sistema Especial de Liquidação e de Custódia - Selic.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Manutenção do Despacho Decisório nº 279/2025/COUN/SCO e dos lançamentos tributários.
+Tese de julgamento: "1. As receitas de interconexão remuneram serviço de telecomunicações e integram a base de cálculo da Cide-Fust. 2. A base de cálculo do exercício de 2013 foi apurada a partir das receitas identificadas na EFD-Contribuições sob o regime cumulativo, e a Recorrente não comprovou erro na apuração nem a exclusão das receitas tributadas da hipótese de incidência. 3. A omissão na declaração da contribuição autoriza a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996. 4. Incidem juros de mora sobre a multa de ofício desde o vencimento da obrigação."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, arts. 113, § 1º e § 3º, e 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, arts. 60, § 1º, e 146, parágrafo único; Lei nº 9.784/1999, art. 36; Lei nº 9.998/2000, art. 6º, IV e parágrafo único; Lei nº 10.522/2002, art. 37-A; Lei nº 9.065/1995, art. 13; Decreto nº 70.235/1972, art. 33; Decreto nº 3.624/2000, art. 8º e § 1º; Resolução nº 612/2013, arts. 85 e 116; Resolução nº 617/2013, arts. 3º e 54; Resolução nº 693/2018, arts. 3º, II e X, e 30.
+Jurisprudência relevante citada: Anatel, Súmula nº 7, de 15.12.2005; Anatel, Súmula nº 27, de 27.07.2024; Anatel, Conselho Diretor, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Conselheiro Carlos Manuel Baigorri, Reunião nº 885, 28.05.2020; Anatel, Conselho Diretor, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Conselheiro Otavio Luiz Rodrigues Junior, Reunião nº 823, 06.04.2017.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 4/2026/NP (SEI nº 15271055), integrante deste acórdão, conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 279/2025/COUN/SCO (SEI nº 13506804), de 16 de abril de 2025.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15823788 e o código CRC 26BBDB9D.
+ | 
+Referência: Processo nº 53500.206685/2015-16 | 
+SEI nº 15823788 |

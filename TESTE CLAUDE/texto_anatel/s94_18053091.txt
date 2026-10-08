@@ -1,0 +1,148 @@
+SEI/ANATEL - 16111831 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 94/2026/PR
+Processo nº 53500.084209/2025-18
+Interessado: Agência Nacional de Telecomunicações
+PRESIDENTE
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Proposta de alteração do Plano Anual de Auditoria Interna da Agência Nacional de Telecomunicações para o exercício de 2026 – PAINT 2026, com vistas à adequação dos trabalhos programados à capacidade operacional atualmente disponível na Auditoria Interna, ao adiamento de dois serviços de avaliação para o PAINT 2027 e à correção formal da nomenclatura de objeto de auditoria.
+EMENTA
+DIREITO ADMINISTRATIVO. GOVERNANÇA PÚBLICA. AUDITORIA INTERNA GOVERNAMENTAL. PLANO ANUAL DE AUDITORIA INTERNA DA ANATEL – PAINT 2026. ALTERAÇÃO SUPERVENIENTE. REDUÇÃO DA CAPACIDADE OPERACIONAL. REMANEJAMENTO DE AUDITOR INTERNO. REPRIORIZAÇÃO DOS SERVIÇOS DE AVALIAÇÃO. MATRIZ DE RISCOS. ADIAMENTO DE AUDITORIAS PARA O PAINT 2027. CORREÇÃO DE NOMENCLATURA DE OBJETO DE AUDITORIA. APROVAÇÃO.
+I. CASO EM EXAME
+Proposta de alteração do Plano Anual de Auditoria Interna da Anatel para o exercício de 2026 – PAINT 2026, aprovado pela Resolução Interna Anatel nº 511, de 22 de dezembro de 2025, com o objetivo de adequar os trabalhos programados à capacidade operacional efetivamente disponível na Auditoria Interna.
+Redução superveniente da força de trabalho decorrente do remanejamento de um auditor interno para outra unidade organizacional, com diminuição de 1.167 horas da capacidade destinada aos serviços de avaliação, equivalente a aproximadamente 20,8% do total originalmente previsto para essa atividade.
+Proposta de adiamento, para inclusão no PAINT 2027, dos serviços de avaliação relativos aos objetos Gerir a Operação de Serviços de TI e Gerir Certificação e Homologação de Produtos de Telecomunicações, bem como de correção da nomenclatura do objeto Gerir Inteligência Institucional para Gerir Inteligência Institucional e Inovação, sem alteração de seu escopo.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a redução superveniente da capacidade operacional e o consequente adiamento de dois serviços de avaliação configuram alteração significativa do PAINT 2026, a exigir apreciação do Conselho Diretor; (ii) saber se os critérios adotados pela Auditoria Interna para a reprogramação dos trabalhos, com fundamento na Matriz de Riscos e no estágio de execução das auditorias, preservam adequadamente a priorização baseada em riscos; e (iii) saber se é cabível a correção da nomenclatura do objeto Gerir Inteligência Institucional para Gerir Inteligência Institucional e Inovação, sem modificação material do trabalho programado.
+III. RAZÕES DE DECIDIR
+Compete ao Conselho Diretor aprovar o Plano Anual de Auditoria Interna, nos termos do Regimento Interno da Anatel, cabendo à Auditoria Interna elaborar e submeter o Plano à apreciação do Colegiado.
+Nos termos do art. 7º, § 1º, da Instrução Normativa CGU nº 5/2021, as mudanças no PAINT aprovado que o impactem significativamente devem ser apreciadas pelo conselho de administração ou instância equivalente, devendo a alteração aprovada ser comunicada à unidade de supervisão técnica no prazo de até 30 dias, conforme o § 2º do mesmo dispositivo.
+O PAINT 2026 foi originalmente estruturado a partir de metodologia de priorização baseada em riscos, com avaliação dos objetos auditáveis segundo os fatores impacto e probabilidade, considerando, entre outros elementos, materialidade, relevância, criticidade e ciclo de auditoria.
+A capacidade operacional originalmente considerada para o PAINT 2026 correspondia a 11.956 horas disponíveis, das quais 5.604 horas destinadas aos serviços de avaliação, distribuídas entre quatro auditores. O remanejamento de um auditor interno para outra unidade organizacional reduziu em 1.167 horas a capacidade destinada às avaliações, passando-a de 5.604 para aproximadamente 4.437 horas, sem recomposição da força de trabalho até a elaboração da proposta de alteração.
+A redução representa aproximadamente 20,8% da capacidade originalmente destinada aos serviços de avaliação e compromete a execução integral da programação aprovada, justificando a revisão do planejamento para compatibilizá-lo com os recursos efetivamente disponíveis.
+A ocorrência de licenças, afastamentos não previstos ou perda de membros da equipe já havia sido identificada pela Auditoria Interna como causa do risco de não realização das auditorias programadas, tendo sido registrada a possibilidade de repactuação das atividades diante de fatos supervenientes dessa natureza.
+Entre os serviços de avaliação ainda não iniciados em julho de 2026, o objeto Gerir Comunicação Institucional apresentava nota de risco de 85,26; Gerir a Operação de Serviços de TI, nota de 80,69; e Gerir Certificação e Homologação de Produtos de Telecomunicações, nota de 76,39. A seleção dos trabalhos a serem adiados considerou conjuntamente a nota de risco atribuída aos objetos e o estágio de execução das auditorias.
+O objeto Gerir Comunicação Institucional, por apresentar a maior nota de risco entre os trabalhos ainda não iniciados, permanece no PAINT 2026, com previsão de início ainda no exercício. Os trabalhos Gerir Obrigações de Fazer, Gerir Orçamento e Finanças e Gerir Inteligência Institucional e Inovação, já em execução, são igualmente mantidos, de modo a preservar o esforço técnico já realizado.
+Os objetos Gerir a Operação de Serviços de TI e Gerir Certificação e Homologação de Produtos de Telecomunicações, que apresentam as menores notas de risco entre os trabalhos ainda não iniciados, são adiados para o PAINT 2027.
+O adiamento não importa exclusão definitiva das avaliações, uma vez que os dois objetos serão incluídos no PAINT 2027, ocasião em que seus objetivos gerais deverão ser reavaliados para refletir eventuais alterações nos respectivos processos organizacionais.
+A medida reduz o risco decorrente da limitação de capacidade ao preservar o trabalho de maior risco entre aqueles ainda não iniciados, manter as auditorias já em execução e postergar os objetos de menor risco relativo passíveis de adiamento.
+Permanecem aplicáveis os controles previstos no PAINT para o risco de não realização das auditorias programadas, entre eles a supervisão dos cronogramas, o monitoramento dos prazos de atendimento às solicitações das equipes de auditoria, a avaliação dos pedidos de prorrogação e o tratamento específico das demandas extraordinárias.
+A redução da capacidade operacional também repercute na distribuição de horas do Plano, com adequação das horas destinadas aos serviços de auditoria, à reserva para demandas extraordinárias, à gestão interna, ao monitoramento de recomendações, ao Programa de Gestão e Melhoria da Qualidade e às capacitações.
+A alteração da denominação do objeto Gerir Inteligência Institucional para Gerir Inteligência Institucional e Inovação possui caráter exclusivamente formal, destinando-se a adequar o PAINT à denominação do respectivo processo organizacional, sem alteração de escopo, objetivos, metodologia, cronograma, recursos alocados ou classificação de risco.
+Aprovada a alteração, compete à Auditoria Interna promover a correspondente revisão de seu Plano de Trabalho no contexto do Programa de Gestão por Desempenho e comunicar a mudança à Controladoria-Geral da União no prazo regulamentar.
+IV. DISPOSITIVO E TESE
+Proposta aprovada.
+Tese de julgamento: “1. As alterações supervenientes do Plano Anual de Auditoria Interna que impactem significativamente sua execução devem ser submetidas à apreciação do Conselho Diretor, nos termos do art. 7º, § 1º, da Instrução Normativa CGU nº 5/2021. 2. A redução relevante da capacidade operacional da Auditoria Interna justifica a reprogramação dos serviços previstos no PAINT, desde que a seleção dos trabalhos a serem mantidos ou adiados observe critérios objetivos de risco e o estágio de execução das auditorias. 3. É cabível o adiamento para o exercício subsequente de serviços de avaliação ainda não iniciados e de menor risco relativo, preservados os trabalhos de maior risco e aqueles já em execução, com reavaliação dos objetivos dos trabalhos diferidos na elaboração do novo PAINT. 4. A correção da nomenclatura de objeto de auditoria, quando destinada exclusivamente à sua adequação ao processo organizacional correspondente e sem repercussão sobre escopo, objetivos, metodologia, cronograma, recursos ou classificação de risco, possui caráter formal.”
+Dispositivos relevantes citados: Decreto nº 3.591/2000; Instrução Normativa CGU nº 3/2017; Instrução Normativa CGU nº 5/2021, arts. 3º, 4º e 7º, §§ 1º e 2º; Instrução Normativa CGU nº 8/2017; Resolução nº 612/2013, arts. 133, inciso LXII, e 163, inciso I.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Decreto nº 3.591, de 6 de setembro de 2000, e alterações;
+Instrução Normativa CGU nº 5, de 27 de agosto de 2021, art. 7º, §§ 1º e 2º;
+Instrução Normativa CGU nº 8, de 6 de dezembro de 2017;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, art. 163, inciso I;
+Plano Anual de Auditoria Interna da Anatel para 2026, PAINT 2026 (SEI nº 14848847), aprovado pela Resolução Interna Anatel nº 511, de 22 de dezembro de 2025 (SEI nº 14960029);
+Informe nº 10/2025/AUD (SEI nº 14752300);
+Despacho Decisório nº 6/2026/AFPE4/AFPE/SAF, publicado no Boletim de Serviço Eletrônico de 10 de março de 2026 (SEI nº 15295988);
+Matéria para Apreciação do Conselho Diretor nº 536/2026 (SEI nº 15991343); e
+Proposta de PAINT 2026 - versão 2.0 (SEI nº 16121105).
+RELATÓRIO
+DOS FATOS
+Trata-se de proposta de alteração do Plano Anual de Auditoria Interna da Anatel para o exercício de 2026 – PAINT 2026, versão 2.0 (SEI nº 16121105), submetida pela Auditoria Interna a este Colegiado por meio da Matéria para Apreciação do Conselho Diretor nº 536/2026 (SEI nº 15991343), com o objetivo de compatibilizar a programação dos serviços de avaliação com a capacidade operacional atualmente disponível na Unidade e promover ajuste formal na nomenclatura de um dos objetos de auditoria.
+O PAINT 2026 foi originalmente aprovado pelo Conselho Diretor mediante a Resolução Interna Anatel nº 511, de 22 de dezembro de 2025, após a apreciação consubstanciada no Voto nº 122/2025/PR (SEI nº 14910175).
+Na elaboração do Plano original, a Auditoria partiu de universo composto por 87 processos auditáveis, posteriormente consolidados em 53 objetos de auditoria. Esses objetos foram submetidos à metodologia de priorização que combina os fatores Impacto e Probabilidade, de modo a orientar a seleção dos trabalhos segundo os riscos associados à consecução dos objetivos institucionais e à integridade das operações da Agência.
+Considerando a capacidade operacional então disponível, o PAINT 2026 contemplou sete serviços: Prestação de Contas da Anatel; Gerir Obrigações de Fazer; Gerir Comunicação Institucional; Gerir Orçamento e Finanças; Gerir a Operação de Serviços de TI; Gerir Certificação e Homologação de Produtos de Telecomunicações; e Gerir Inteligência Institucional.
+Quanto à Prestação de Contas da Anatel, trata-se de serviço oriundo de obrigação normativa, conforme se transcreve do PAINT 2026:
+Plano Anual da Auditoria Interna - 2026 (14848847):
+3.2. Trabalho oriundo de obrigação normativa 
+Nos termos do art. 15, §6º, do Decreto n.º 3.591, de 6 de setembro de 2000, compete à Auditoria emitir, anualmente, o parecer sobre a prestação de contas anual da entidade e, quando necessário, sobre as tomadas de contas especiais. Este trabalho é realizado com fundamento nos trabalhos de auditoria realizados no exercício anterior. A elaboração do referido parecer será realizada no primeiro trimestre de 2026, em conformidade com o conteúdo estabelecido pela Instrução Normativa CGU n.º 5, de 2021. 
+O serviço Gerir Obrigações de Fazer já constituía, desde a aprovação original, continuidade de trabalho iniciado no PAINT 2025. A extensão para 2026 decorreu da duração dos trabalhos de 2025 além do inicialmente previsto e da necessidade de aprofundar pontos identificados na fase de planejamento da auditoria, de modo a permitir análise mais abrangente e resultados mais relevantes para as áreas envolvidas. Essa situação, portanto, não constitui objeto da alteração ora apreciada.
+O cálculo original da capacidade operacional considerava equipe de sete servidores, com 11.956 horas disponíveis, das quais 5.604 horas destinadas aos serviços de avaliação, distribuídas entre quatro auditores. Após a aprovação do Plano, um dos auditores, que se encontrava em licença regulamentar desde 24 de dezembro de 2025, foi remanejado para outra unidade organizacional, nos termos do Despacho Decisório nº 6/2026/AFPE4/AFPE/SAF (SEI nº 15295988). A alteração reduziu em 1.167 horas a capacidade alocada aos serviços de avaliação, correspondendo a aproximadamente 20,8% do montante inicialmente previsto.
+Atualmente, a Auditoria conta com cinco auditores internos governamentais, além da Auditora-Chefe, tendo sido a capacidade destinada aos serviços de avaliação reduzida de 5.604 para aproximadamente 4.437 horas, sem que, até a elaboração da proposta, tivesse ocorrido recomposição da força de trabalho.
+A redução da capacidade reflete-se na distribuição das horas do Plano. As horas destinadas aos serviços de auditoria e à reserva técnica passaram de 6.194 para 4.872 horas; as destinadas a demandas extraordinárias, de 590 para 435 horas; e foram igualmente ajustadas as horas previstas para gestão interna, monitoramento de recomendações, Programa de Gestão e Melhoria da Qualidade e capacitações. Manteve-se em 1.374 horas a previsão relativa ao levantamento de informações para órgãos de controle interno ou externo.
+Diante dessa restrição superveniente, a Auditoria verificou que, em julho de 2026, três dos trabalhos selecionados com base em riscos ainda não haviam sido iniciados: Gerir Comunicação Institucional, Gerir a Operação de Serviços de TI e Gerir Certificação e Homologação de Produtos de Telecomunicações. Para a definição dos trabalhos passíveis de adiamento, foram consideradas conjuntamente a nota de risco atribuída aos objetos na Matriz de Riscos do PAINT 2026 e a situação de execução dos trabalhos.
+A situação dos serviços de avaliação e a proposta apresentada pela Auditoria podem ser sintetizadas da seguinte forma:
+Objeto de auditoria
+ | Situação em julho de 2026
+ | Nota de risco
+ | Proposta
+ | 
+Prestação de Contas da Anatel
+ | Concluído
+ | —
+ | Manutenção no Plano
+ | 
+Gerir Obrigações de Fazer
+ | Em andamento
+ | —
+ | Manutenção no Plano
+ | 
+Gerir Comunicação Institucional
+ | Não iniciado
+ | 85,26
+ | Manutenção no Plano, com início ainda em 2026
+ | 
+Gerir Orçamento e Finanças
+ | Em andamento
+ | 83,83
+ | Manutenção no Plano
+ | 
+Gerir a Operação de Serviços de TI
+ | Não iniciado
+ | 80,69
+ | Adiamento, com inclusão no PAINT 2027
+ | 
+Gerir Certificação e Homologação de Produtos de Telecomunicações
+ | Não iniciado
+ | 76,39
+ | Adiamento, com inclusão no PAINT 2027
+ | 
+Gerir Inteligência Institucional e Inovação
+ | Em andamento
+ | 71,54
+ | Manutenção no Plano, com correção da nomenclatura
+ | 
+No PAINT originalmente aprovado, os dois trabalhos ora diferidos – Gerir a Operação de Serviços de TI e Gerir Certificação e Homologação de Produtos de Telecomunicações – estavam programados para o período de 20 de julho a 11 de dezembro de 2026, com 880 horas previstas para cada auditoria. Não se trata, portanto, de mera prorrogação de prazo dentro do mesmo exercício, mas do adiamento das avaliações para o PAINT 2027.
+Além da reprogramação, propõe-se corrigir a denominação do objeto Gerir Inteligência Institucional para Gerir Inteligência Institucional e Inovação, em correspondência com a nomenclatura do processo organizacional. Segundo a Auditoria, trata-se de alteração de caráter exclusivamente formal, sem repercussão sobre o escopo, os objetivos, a metodologia, o cronograma, os recursos alocados ou a classificação de risco do trabalho.
+É o relatório.
+DAS CONSIDERAÇÕES POR PARTE DESTE PRESIDENTE
+DA COMPETÊNCIA DO CONSELHO DIRETOR
+Inicialmente, cumpre registrar que o art. 133, inciso LXII, do Regimento Interno da Anatel atribui ao Conselho Diretor a competência para aprovar o Plano Anual de Atividades de Auditoria Interna, ao passo que o art. 163, inciso I, confere à Auditoria Interna a atribuição de elaborar e submeter o Plano à aprovação do Colegiado.
+A Instrução Normativa CGU nº 5/2021 estabelece que as mudanças no PAINT aprovado que o impactem significativamente devem ser apreciadas pelo conselho de administração ou instância equivalente ou, na ausência deste, pelo dirigente máximo do órgão ou entidade. O mesmo dispositivo determina, ainda, que a mudança aprovada seja comunicada à unidade de supervisão técnica no prazo de até 30 dias.
+Considerando que a proposta implica o deslocamento de dois serviços de avaliação para o exercício subsequente, acompanho a Auditoria quanto à caracterização da mudança como significativa e, por conseguinte, quanto à necessidade de deliberação deste Conselho Diretor.
+DA REDUÇÃO SUPERVENIENTE DA CAPACIDADE OPERACIONAL
+O ponto central da proposta não consiste em reavaliação da pertinência ou da relevância dos objetos originalmente selecionados para o PAINT 2026, mas na necessidade de compatibilizar a programação aprovada com circunstância superveniente e objetiva: a redução da força de trabalho disponível para a execução dos serviços de avaliação.
+Conforme exposto, a saída de um dos auditores reduziu em 1.167 horas a capacidade inicialmente prevista para avaliações, que passou de 5.604 para aproximadamente 4.437 horas. A diminuição representa cerca de um quinto da capacidade originalmente destinada a essa atividade, afetando diretamente a possibilidade de execução integral do conjunto de trabalhos programados.
+A revisão do planejamento, nessas circunstâncias, mostra-se adequada para preservar a exequibilidade do PAINT e compatibilizar as atividades previstas com a capacidade operacional efetivamente disponível.
+DO MAPEAMENTO DOS RISCOS E DA REPRIORIZAÇÃO DOS TRABALHOS
+A situação ora verificada já havia sido identificada pela própria Auditoria como risco à execução do PAINT. No Plano originalmente aprovado, dentre as causas associadas ao risco de não realização de auditorias programadas, figuravam expressamente a ocorrência de licenças, afastamentos não previstos ou a perda de membros da equipe.
+A Matéria para Apreciação do Conselho Diretor nº 536/2026 registra, a esse respeito, que o Informe nº 10/2025/AUD já previa que fatos supervenientes dessa natureza poderiam ensejar a repactuação das atividades com o Conselho Diretor. Cuida-se, portanto, da materialização de risco previamente mapeado, diante do qual se mostra necessária a reavaliação das prioridades originalmente estabelecidas.
+O PAINT identifica, como possíveis consequências da não realização das auditorias programadas, a ausência de avaliação da governança, da gestão de riscos e dos controles internos de processos selecionados justamente em razão de sua maior exposição a riscos, com possível reflexo negativo sobre o cumprimento dos objetivos da Agência, além de eventual avaliação negativa pela Controladoria-Geral da União.
+Como controles para o tratamento desse risco, foram previstos o estabelecimento de critérios para as demandas extraordinárias, a atividade de supervisão destinada a minimizar o descumprimento dos cronogramas das ações de auditoria, o monitoramento dos prazos para envio das informações solicitadas e a avaliação dos pedidos de prorrogação, além da utilização de ferramentas de comunicação remota.
+Diante da redução da capacidade, a Auditoria adotou como critério para a reprogramação a conjugação da nota de risco dos objetos com o estágio de execução dos trabalhos.
+Entre os três trabalhos ainda não iniciados, Gerir Comunicação Institucional, com nota de risco de 85,26, apresenta a maior pontuação e, por essa razão, permanece programado para início ainda em 2026. Os objetos Gerir a Operação de Serviços de TI, com nota 80,69, e Gerir Certificação e Homologação de Produtos de Telecomunicações, com nota 76,39, correspondem às duas menores notas entre os trabalhos nessa condição e foram selecionados para adiamento.
+Os trabalhos Gerir Obrigações de Fazer, Gerir Orçamento e Finanças e Gerir Inteligência Institucional e Inovação, já em execução, são mantidos, preservando-se o esforço técnico já empregado.
+A escolha, embora não elimine os riscos inerentes ao adiamento, mostra-se coerente com a metodologia do próprio PAINT, ao preservar o trabalho de maior risco dentre aqueles ainda não iniciados e os serviços já em execução, postergando os dois objetos de menor risco relativo passíveis de adiamento.
+Ademais, os serviços não serão excluídos do planejamento da Auditoria, mas incluídos no PAINT 2027. Na elaboração daquele Plano, seus objetivos gerais deverão ser reavaliados para refletir eventuais mudanças verificadas nos respectivos processos organizacionais.
+Permanecem os controles gerais previstos no PAINT para os demais riscos associados à sua execução. Quanto ao risco de descumprimento dos prazos de encaminhamento de respostas aos órgãos de controle, são previstos controle de prazos via SEI, alertas conforme a criticidade da demanda, reuniões para orientação das áreas responsáveis e utilização dos sistemas Auditar e e-CGU. Para o risco de não realização das ações de capacitação estimadas, são previstas solicitação antecipada das capacitações, preferência por eventos gratuitos ou a distância, tratativas para remanejamento orçamentário e elaboração de planos individuais de capacitação.
+Cabe observar que esses controles se destinam essencialmente aos riscos relacionados à execução do PAINT. No que se refere especificamente aos dois trabalhos adiados, a resposta ao risco consiste na priorização a partir da Matriz de Riscos e do estágio de execução, no adiamento — e não cancelamento — das avaliações e em sua inclusão no PAINT 2027, com reavaliação de seus objetivos quando da elaboração do novo Plano.
+DA CORREÇÃO DA NOMENCLATURA DO OBJETO DE AUDITORIA
+Quanto ao objeto denominado no PAINT 2026 como Gerir Inteligência Institucional, verifica-se que a proposta apenas adequa sua nomenclatura à denominação do correspondente processo organizacional, Gerir Inteligência Institucional e Inovação.
+Conforme esclarecido pela Auditoria Interna, a alteração possui caráter exclusivamente formal e não implica modificação do escopo, dos objetivos, da metodologia, do cronograma, dos recursos alocados ou da classificação de risco do trabalho previsto.
+Não se identifica, portanto, repercussão material decorrente desse ajuste.
+DAS CONSIDERAÇÕES FINAIS
+Ante o exposto, considero que a proposta preserva a lógica de planejamento baseado em riscos que orientou o PAINT 2026 originalmente aprovado e apresenta resposta proporcional à redução superveniente da capacidade operacional da Auditoria Interna.
+Em face da redução da força de trabalho disponível, a Auditoria reavaliou os serviços ainda não iniciados segundo critérios objetivos, preservou aquele de maior risco, manteve os trabalhos já em execução e deslocou para o exercício subsequente os dois objetos de menor risco relativo entre os passíveis de adiamento.
+A opção adotada não descaracteriza a relevância dos dois trabalhos diferidos, mas procura direcionar a capacidade disponível às avaliações prioritárias em 2026, mantendo a previsão de realização dos demais trabalhos no exercício subsequente.
+Uma vez aprovada a alteração, a Auditoria deverá comunicar a modificação à Controladoria-Geral da União, na condição de órgão de supervisão técnica, no prazo de até 30 dias, nos termos do art. 7º, § 2º, da Instrução Normativa CGU nº 5/2021.
+Nessas condições, entendo cabível a aprovação da alteração do Plano Anual de Auditoria Interna para o exercício de 2026 – PAINT 2026 – versão 2.0 (SEI nº 16121105).
+CONCLUSÃO
+Diante do exposto, proponho:
+aprovar a alteração do Plano Anual de Auditoria Interna para o exercício de 2026 – PAINT 2026 – versão 2.0 (SEI nº 16121105), em atendimento ao art. 7º, § 1º, da Instrução Normativa CGU nº 5, de 27 de agosto de 2021; e 
+determinar à Auditoria que comunique as alterações à Controladoria-Geral da União (CGU), na condição de órgão de supervisão técnica, no prazo de até 30 dias a contar de sua aprovação, em atendimento ao art. 7º, § 2º, da Instrução Normativa CGU nº 5, de 2021.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 19/08/2026, às 15:15, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16111831 e o código CRC F6D1331B.
+ | 
+Referência: Processo nº 53500.084209/2025-18 | 
+SEI nº 16111831 |

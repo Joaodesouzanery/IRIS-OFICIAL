@@ -1,0 +1,94 @@
+SEI/ANATEL - 15260049 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 49, de 03 de março de 2026
+Processo nº 53500.027094/2018-27
+Recorrente/Interessado: SKY BRASIL SERVIÇOS LTDA.
+CNPJ nº 72.820.822/0001-20
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO ADMINISTRATIVO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC DE 2014. AGRAVAMENTO DE SANÇÃO EM SEDE RECURSAL. POSSIBILIDADE. ENUNCIADO Nº 22 DA SÚMULA DA ANATEL. FISCALIZAÇÃO PRESENCIAL. EXTRAPOLAÇÃO DE CONCLUSÕES PARA CONDUTAS PADRONIZADAS DE CARÁTER GERAL. POSSIBILIDADE. PRECEDENTES. PRODUÇÃO DE INFORME APÓS APRESENTAÇÃO DE ALEGAÇÕES FINAIS. NULIDADE NÃO CARACTERIZADA. PRECEDENTES. ALEGAÇÃO DE COMPLEXIDADE FÁTICA. CERCEAMENTO DE DEFESA. AUSÊNCIA. APLICAÇÃO DA NORMA EM VIGOR À ÉPOCA DO FATO. IRRETROATIVIDADE DA NORMA MAIS BENÉFICA COMO REGRA. PRECEDENTES. PRESCRIÇÃO DA AÇÃO PUNITIVA. INFRAÇÕES DESCARACTERIZADAS EM PRIMEIRA INSTÂNCIA. RECONHECIMENTO. ART. 21 DO RGC 2014. NECESSIDADE DE DEMONSTRAÇÃO CUMULATIVA DE OMISSÃO DE FORNECIMENTO DA SENHA E LOGIN NO MOMENTO DA CONTRATAÇÃO E QUANDO HOUVER SOLICITAÇÃO DO CONSUMIDOR. IMPOSSIBILIDADE DE CANCELAMENTO SEM ATENDENTE. INFRAÇÃO MANTIDA. ART. 38, CAPUT, DO RGC 2014. DESCUMPRIMENTO DOS SEUS INCISOS I E II. INFRAÇÃO CARACTERIZADA. PRECEDENTE. ACHADOS DE FISCALIZAÇÃO. PRESUNÇÃO DE VERACIDADE. ÔNUS DA PRESTADORA DE DESCONSTITUÍ-LA. PRECEDENTES. DOSIMETRIA. PROPORCIONALIDADE À QUANTIDADE DE ELEMENTOS INOBSERVADOS. PFR. DECLARAÇÃO DE REGULARIDADE. EFEITOS RETROATIVOS À DATA DA APRESENTAÇÃO DO ÚLTIMO DOCUMENTO PELO INTERESSADO. ESPAÇO RESERVADO. PEDIDOS DE RESCISÃO. SENTIDO E ALCANCE DO ART. 22, INCISO X E § 3º, QUE DEVEM SER COMPLEMENTADOS PELO ART. 13 DO RGC 2014. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO ADMINISTRATIVO CONHECIDO E PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+No caso, apuram-se infrações relacionadas à cobrança e ao cancelamento de contratos com usuários, no Serviço de Acesso Condicionado - SeAC e no Serviço de Comunicação Multimídia - SCM. Na decisão recorrida, a Recorrente foi condenada ao pagamento multa por infração aos arts. 3º, IV e XV; 7º, caput; 10, caput e § 2º; 13, caput; 14, caput e parágrafo único; 15, caput; 21, caput; 22, II e VIII; 38, I; 50, caput, V, VI e VII; e 51, caput, todos do RGC 2014.
+II. QUESTÕES EM DISCUSSÃO:
+Há doze questões em discussão: (i) possibilidade de reformatio in pejus; (ii) possibilidade e condições para extrapolação de conclusões de relatórios de fiscalização; (iii) nulidade do processo por cerceamento de defesa, validade do ato de instauração e complexidade fática; (iv) retroatividade da norma mais benéfica; (v) descaracterização de infração e efeitos na contagem da prescrição; (v) ocorrência de bis in idem quando há identidade de imputações, mas relacionadas a períodos de apuração diversos; (vi) ocorrência de bis in idem quando aplicação da sanção é segmentada por infração; (vii) caracterização de infrações; (viii) ônus probatório e achados de fiscalização; (ix) quantidade de descumprimentos e repercussões no cálculo da multa para as infrações aos arts. 22, caput e §§ 2º e 3º, e 51, caput, do RGC 2014; (x) efeitos do ato que reconhece a regularidade de conduta para fins de aplicação de atenuante; (xi) aplicação de antecedentes em função do serviço fiscalizado; e (xii) aplicação de Obrigação de Fazer - OdF consistente em antecipação de metas do Edital do 5G.
+III. RAZÕES DE DECIDIR
+1. Nos termos do Enunciado nº 22 da Súmula da Anatel, “é possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel”.
+2. Em ações de fiscalização da Anatel, é admissível a extrapolação de constatações quando as circunstâncias permitirem inferir que a conduta é adotada em caráter geral pela prestadora. Isso ocorre, por exemplo, no descumprimento de informações que devem ser disponibilizadas em sistemas automatizados para o atendimento presencial. Nesses casos, não se aplicam os atos normativos de fiscalização baseados em amostragem e metodologia estatística. Precedentes do Conselho Diretor.
+3. A produção de informe para subsidiar o Despacho Decisório recorrido após a apresentação de alegações finais não tem o condão de macular as garantias do contraditório, da ampla defesa e do devido processo legal e nem de caracterizar cerceamento de defesa. Precedentes do Conselho Diretor.
+4. Não se configura cerceamento de defesa quando é assegurado ao interessado o exercício das garantias processuais do contraditório, da ampla defesa e do devido processo legal, e desde que reste evidenciada a sua compreensão adequada dos fatos imputados e do teor do acervo probatório que os lastreia. A mera alegação de "complexidade fática" do processo não constitui condição suficiente para afastar esse entendimento. Precedentes do Conselho Diretor.
+5. No Direito Brasileiro, uma norma jurídica entra em vigor e produz seus efeitos a partir de sua publicação, mantendo-se vigente até que seja alterada ou revogada por outra norma. No âmbito do direito administrativo sancionador, prevalece o princípio do tempus regit actum, o qual estabelece que o infrator deve ser apenado segundo as normas vigentes no momento da prática da conduta, com a consequente inaplicabilidade do princípio da retroatividade da lei penal mais benéfica. Precedentes do Conselho Diretor e do Superior Tribunal de Justiça - STJ.
+6. No procedimento administrativo sancionador, o ato ou informe que descaracteriza a infração não tem o condão de interromper o fluxo do prazo da prescrição da ação punitiva. Precedente do Conselho Diretor.
+7. A aplicação de sanções a condutas que, embora idênticas ou análogas em suas circunstâncias fáticas, referem-se a períodos de apuração distintos, não configura bis in idem. Precedentes do Conselho Diretor.
+8. Não se caracteriza bis in idem a penalização de uma mesma conduta que impacta serviços distintos, quando tal aplicação é realizada com base em ROL segmentada por serviço fiscalizado e mediante cálculo individualizado para cada um dos serviços afetados. Precedentes do Conselho Diretor.
+9. Para que haja o descumprimento do art. 21 do RGC/2014, é necessária a omissão no fornecimento de login e senha na contratação e, cumulativamente, a omissão em fornecê-los após solicitação do consumidor, sendo que, no caso, não se comprovou esta última.
+10. O cumprimento do art. 15 do RGC pressupõe que o consumidor possa efetivamente cancelar o seu contrato, sem que ele necessite, contra a sua vontade, passar por qualquer forma de interação com atendente.
+11. A consumação da infração ao art. 38 do RGC 2014 requer que, no atendimento presencial, a prestadora descumpra, cumulativamente, os dois comandos contidos em seus incisos. Entendimento do Conselho Diretor.
+12. O art. 38, inciso I, do RGC 2014 não exige forma específica para o seu cumprimento, podendo ser demonstrado com a disponibilização de telefone, totem, tablet, smartphone, computador (desktop, laptop, notebook), bem como por qualquer outro meio que assegure o acesso, pelo consumidor, ao atendimento remoto da prestadora, por voz, vídeo, chat ou autoatendimento.
+13. A fé pública dos agentes de fiscalização é relativa e somente afastada quando presentes evidências em sentido contrário. Cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo - LPA. Precedentes do Conselho Diretor.
+14. Os tipos descritos no art. 22, caput, incisos e §§ 2º e 3º (regras e informações para o espaço reservado), caracterizam uma única conduta ilícita, e, nesse caso, a dosimetria da multa deve levar em consideração a proporcionalidade de comandos descumpridos. Precedentes do Conselho Diretor.
+15. O ato que reconhece a regularidade de conduta em procedimento de fiscalização regulatória tem caráter declaratório, e não constitutivo, e seus efeitos retroagem, em regra, à data da apresentação da última documentação da interessada.
+16. No espaço reservado, o art. 13 do RGC 2014 complementa o alcance e sentido do seu art. 22, inciso X e § 3º, estabelecendo condições que devem informar o adequado cumprimento destas últimas disposições no que diz respeito ao processamento de rescisão sem intervenção de atendente no espaço reservado em estudo.
+17. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+18. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a efetividade da regulação na proteção do consumidor dos serviços de telecomunicações.
+19. A abordagem proposta alinha-se às melhores práticas regulatórias da Organização para Cooperação e Desenvolvimento Econômico - OCDE, na medida em que busca reafirmar a governança regulatória para assegurar o cumprimento dos padrões mínimos de qualidade de atendimento ao usuário.
+20. A decisão contribui para a promoção do item 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas, na medida em que busca promover maior transparência nas relações entre consumidores e fornecedores nos serviços de telecomunicações.
+IV. DISPOSITIVO
+Recurso parcialmente provido. Revisão de ofício.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 23/2026/AF (SEI nº 15158009), integrante deste acórdão:
+a) declarar, de ofício, a prescrição da ação punitiva para as seguintes infrações, devendo-se providenciar o encaminhamento do processo à Corregedoria da Anatel, para avaliação de eventual necessidade de apuração de falta funcional, sem prejuízo do desenvolvimento das medidas de governança cabíveis:
+a.1) Sequencial 1 - ausência de entrega de sumário ao consumidor antes da contratação nos pontos de venda (art. 50, parágrafo único, do RGC 2014); e,
+a.2) Sequencial 18 - ausência de acesso, ao consumidor, a canais de atendimento da Anatel (art. 31 do RGC 2014);
+b) conhecer do Recurso Administrativo para, no mérito, dar-lhe parcial provimento, bem como rever, de ofício, o que se segue:
+c) conhecer do Recurso Administrativo para, no mérito, dar-lhe parcial provimento, bem como rever, de ofício, o Despacho Decisório nº 120/2021/CODI/SCO (SEI nº 7160339) para:
+c.1) descaracterizar as seguintes infrações:
+c.1.1) Sequencial 3 - ausência de fornecimento de login e senha no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor (arts. 21, caput, c/c art. 3º, IV, do RGC 2014), reclassificada, em parte, para o Sequencial 19; e,
+c.1.2) Sequencial 16, 2ª parte (destacando-se que a 1ª parte, relacionada ao art. 22, inciso I, do RGC 2014 já foi descaracterizada em primeira instância), segundo o qual o "único documento entregue era a Proposta de Assinatura, na qual não consta restrições a utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders" (art. 50, caput, incisos V, VI e VII, do RGC 2014);
+c.2) reclassificar a infração ao art. 14, parágrafo único (Sequencial 11), para os arts. 3º, inciso IV, e 5º, incisos I, III e IV, do RGC 2014, no SeAC, em caráter pontual e grave, com 1 (um) usuário atingido;
+c.3) aplicar fator de proporcionalização às seguintes infrações:
+c.3.1) art. 22 do RGC, ressalvado que a infração ao art. 22, § 3º, foi considerada absorvida pela infração ao art. 15, sendo, na proporcção de 1/12 por descumprimento; e,
+c.3.2) art. 51, caput, do RGC, na proporção de 50% (cinquenta por cento), tanto no SeAC como no SCM, por cada um dos comandos descumpridos;
+c.4) desaglutinar a infração ao art. 51 do RGC (Sequencial 19, 1ª parte), relacionada à omissão na entrega do contrato no ato da contratação, classificada como pontual, em 116 (cento e dezesseis) ocorrências, sem prejuízo da proporcionalização acima;
+c.5) reduzir, no cálculo da multa, a variável "Ua" para as seguintes infrações:
+c.5.1) arts. 3º, inciso XV, e 13, caput, do RGC 2014 (sequencial 10), para 13 (treze) ocorrências;
+c.5.2) art. 14, caput, do RGC 2014 (Sequencial 25), para 1 (uma) ocorrência; e,
+c.5.3) art. 38, caput, do RGC 2014 (Sequencial 2), para 39 (trinta e nove) ocorrências;
+c.6) elevar a variável Ut para 1.600 (mil e seiscentos) estabelecimentos, em relação às seguintes infrações:
+c.6.1) art. 38, caput, do RGC 2014 (Sequencial 2); e,
+c.6.2) art. 51, caput, do RGC (Sequencial 19, 1ª parte) - omissão na entrega do contrato no ato da contratação;
+c.7) fixar o fator Dano no mínimo regulamentar para todas as infrações;
+c.8) elevar o "fator tempo" para "até um ano" para as infrações constatadas em fiscalização, mantendo-se o entendimento da decisão recorrida apenas em relação às infrações decorrentes de reclamações de usuários;
+c.9) majorar a agravante de antecedentes para 20% (vinte por cento); e,
+c.10) retirar a atenuante de 70% (setenta por cento) nas infrações relacionadas ao espaço reservado (art. 22 do RGC, em ambos os serviços), aplicando-se, em substituição, a atenuante de 50% (cinquenta por cento), nos termos do art. 20, inciso III, do RASA;
+d) fixar, o valor das multas para cada uma das infrações, nos seguintes valores:
+d.1) Sequencial 2 - art. 38 do Anexo à Resolução nº 632/2014:
+d.1.1) No SeAC: R$ 575.241,52 (quinhentos e setenta e cinco mil, duzentos e quarenta e um reais e cinquenta e dois centavos); e,
+d.1.2) No SCM: R$ 9.726,20 (nove mil, setecentos e vinte e seis reais e vinte centavos);
+d.2) Sequencial 5 - art. 22, inciso II, do RGC 2014 (em conjunto com o art. 22, incisos III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção):
+d.2.1) No SeAC: R$ 1.004.862,14 (um milhão, quatro mil, oitocentos e sessenta e dois reais e quatorze centavos); e,
+d.2.2) No SCM: R$ 16.990,25 (dezesseis mil, novecentos e noventa reais e vinte e cinco centavos);
+d.3) Sequencial 6 - art. 22, VIII, do RGC 2014: R$ 251.215,54 (duzentos e cinquenta e um mil, duzentos e quinze reais e cinquenta e quatro centavos), para o SeAC;
+d.4) Sequencial 7 - art. 14, caput, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+d.5) Sequencial 8 - art. 15, caput, do RGC 2014, com absorção da infração ao art. 22, § 3º (Sequencial 9):
+d.5.1) No SeAC: R$ 9.434.539,01 (nove milhões, quatrocentos e trinta e quatro mil, quinhentos e trinta e nove reais e um centavo); e,
+d.5.2) No SCM: R$ 161.973,67 (cento e sessenta e um mil, novecentos e setenta e três reais e sessenta e sete centavos);
+d.6) Sequencial 10 - art. 13, caput, do RGC 2014: R$ 11.515,33 (onze mil, quinhentos e quinze reais e trinta e três centavos), para o SeAC;
+d.7) Sequencial - arts. 3º, inciso IV, e 5º, incisos I, III e IV, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+d.8) Sequencial 12 - art. 7º, caput, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+d.9) Sequencial 19, 1ª parte - art. 51, caput, do RGC 2014 (omissão na entrega do contrato no momento da contratação):
+d.9.1) No SeAC: R$ 405.851,12 (quatrocentos e cinco mil, oitocentos e cinquenta e um reais e doze centavos); e,
+d.9.2) No SCM: R$ 6.862,15 (seis mil, oitocentos e sessenta e dois reais e quinze centavos); e,
+d.10) Sequencial 19, 2ª parte - art. 51, caput, do RGC 2014 (ausência no fornecimento de login e senha no momento da contratação):
+d.10.1) No SeAC: R$ 3.014.586,43 (três milhões, quatorze mil, quinhentos e oitenta e seis reais e quarenta e três centavos); e,
+d.10.2) No SCM: R$ 50.970,74 (cinquenta mil, novecentos e setenta reais e setenta e quatro centavos); e,
+e) consolidar o valor total das multas fixadas neste processo em R$ 14.954.334,09 (quatorze milhões, novecentos e cinquenta e quatro mil, trezentos e trinta e quatro reais e nove centavos) .
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15260049 e o código CRC 720628D2.
+ | 
+Referência: Processo nº 53500.027094/2018-27 | 
+SEI nº 15260049 |

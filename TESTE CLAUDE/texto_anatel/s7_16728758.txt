@@ -1,0 +1,125 @@
+SEI/ANATEL - 14945098 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 32/2025/EH
+Processo nº 53500.050974/2023-64
+Interessado: Marcelo Barbosa de Barros
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso Administrativo em razão de decisão proferida por meio do Despacho Decisório nº 200/2025/COUN/SCO (SEI nº 13379672), em que o interessado questiona créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), dos exercícios de 2022 e 2023.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO (TFF) E CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA (CFRP). RECURSO CONHECIDO E, NO MÉRITO, NÃO PROVIDO.
+I. CASO EM EXAME
+1. Processo administrativo fiscal instaurado em desfavor de MARCELO BARBOSA DE BARROS, em razão do não recolhimento de valores relativos à TFF e à CFRP referentes aos exercícios de 2022 e 2023.
+2. Contribuinte apresentou impugnação, alegando que a estação é do tipo cadastrada e não licenciada, sustentando a inexistência de fato gerador para cobrança das taxas.
+3. Superintendência de Controle de Obrigações reconheceu a procedência dos lançamentos e determinou a notificação da empresa.
+4. Contribuinte interpôs recurso administrativo reiterando os argumentos sobre a natureza da estação.
+5. Petição extemporânea foi juntada aos autos, sem trazer fatos novos ou argumentos inéditos.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o funcionamento de estação do tipo cadastrada enseja a incidência da TFF e da CFRP; e (ii) saber se a ausência de licenciamento afasta a ocorrência do fato gerador das referidas taxas.
+III. RAZÕES DE DECIDIR
+1. O fato gerador da TFF e da CFRP é o funcionamento e a prestação dos serviços de telecomunicações, independentemente do licenciamento da estação.
+2. A base de cálculo das taxas inclui estações cadastradas ou não, conforme regulamentação vigente.
+3. O contribuinte efetuou o pagamento das taxas em exercícios anteriores, sem pedido de cancelamento da estação.
+4. Não há necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel, pois não se enquadra nas hipóteses previstas na Portaria nº 642/2013.
+5. O recurso é tempestivo, cabível, e a parte é legítima e possui interesse recursal.
+6. Não há necessidade de diligências adicionais, estando o processo apto à decisão de mérito.
+7. Petição extemporânea não trouxe fato novo ou relevante.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e, no mérito, não provido.
+Tese de julgamento: "1. O funcionamento e a prestação dos serviços de telecomunicações ensejam a incidência da TFF e da CFRP, independentemente do licenciamento da estação. 2. A ausência de licenciamento não afasta a ocorrência do fato gerador das referidas taxas."
+Dispositivos relevantes citados: Lei nº 5.172/1966, art. 151, III; Lei nº 9.472/1997; Resolução nº 729/2020; Portaria nº 642/2013.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN).
+Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária Federal e dá outras providências.
+Lei nº 9.065, de 20 de junho de 1995, que dá nova redação a dispositivos da Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária federal, e dá outras providências.
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal, as contribuições para a seguridade social, o processo administrativo de consulta e dá outras providências.
+Lei nº 9.472, de 16 de julho de 1997, que dispõe sobre a organização dos serviços de telecomunicações, a criação e funcionamento de um órgão regulador e outros aspectos institucionais, nos termos da Emenda Constitucional nº 8, de 1995 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal.
+Lei nº 10.522, de 19 de julho de 2002, que dispõe sobre o Cadastro Informativo dos créditos não quitados de órgãos e entidades federais e dá outras providências.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Resolução nº 690, de 29 de janeiro de 2018, que aprova o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+ Resolução nº 338, de 15 de julho de 2024, que Estabelece as regras para a interposição de Recurso de Ofício no âmbito dos Processos Administrativos Fiscais (PAF).
+Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de análise do Processo Administrativo Fiscal (PAF) instaurado em desfavor de MARCELO BARBOSA DE BARROS, CNPJ já referenciado, FISTEL nº 50410125636, em virtude do não recolhimento de valores relativos à Contribuição Para o Fomento da Radiodifusão Pública - CFRP e à Taxa de Fiscalização de Funcionamento - TFF, dos exercícios de 2022 e 2023. 
+Conforme foi apurado e relatado, a Anatel procedeu ao lançamento dos créditos tributários descritos na tabela abaixo por meio da Notificação de Lançamento 001-012595/2023/AFFO (SEI nº 10398688) e nº 001-012594/2023/AFFO (SEI nº 10398695), vide tabela posta no Informe nº 199 (SEI nº 13379432).
+Em 26/07/2023, o contribuinte foi intimado "por decurso do prazo tácito", conforme a Certidão de Intimação Cumprida (SEI nº 10613818 e nº 10613819).
+Em 27/12/2023, apresentou impugnação (SEI nº 11320014), argumentando simplesmente, que a "estação nº 1012675502 foi cadastrada (Resolução nº 680, de 27 de junho de 2017 e Regulamento Geral de Licenciamento – RGL, aprovado pela Resolução nº 719/2020), para prestação do serviço de comunicação multimídia". 
+Por efeito, em razão da impugnação, a exigibilidade do crédito fora suspensa conforme disposto no art. 151, III, do Código Tributário Nacional.
+Em análise, a Superintendência de Controle de Obrigações, em 19/03/2025, exarou o Despacho Decisório de nº 200/2025/COUN/SCO (SEI nº 13379672) com o seguinte teor:
+O SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES SUBSTITUTO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a delegação de competência conferida pela Portaria Anatel nº 2946, de 30 de janeiro de 2025 (SEI nº 13215863) e o Anexo I, item 5.8.2, da Portaria Anatel nº 1.355, de 26 de julho de 2019, examinando os autos do Processo Administrativo Fiscal (PAF) em epígrafe, instaurado contra a empresa MARCELO BARBOSA DE BARROS, CNPJ nº 08.295.857/0001-98;
+CONSIDERANDO as razões e justificativas constantes do Informe nº 199/2025/COUN/SCO (SEI nº 13379432),
+DECIDE:
+RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), dos exercícios de 2022 e 2023, traduzidos nas Notificações de Lançamento nº 001-012595/2023/AFFO (SEI nº 10398688) e nº 001-012594/2023/AFFO (SEI nº 10398695).
+DETERMINAR a notificação da empresa, encaminhando cópia desta decisão.
+Em 04/04/2025, conforme Certidão de Intimação Cumprida (SEI nº 13521234), o contribuinte foi notificado do referido Despacho.
+Sequencialmente o contribuinte interpôs Recurso, em 30/04/2025, alegando em síntese que; ''a estação nº 1012675502 é do tipo cadastrada (Resolução nº 680, de 27 de junho de 2017 e Regulamento Geral de Licenciamento – RGL, aprovado pela Resolução nº 719/2020) e não licenciada, sendo necessário esclarecer que para a prestação do serviço de comunicação multimídia as estações do tipo cadastrada não ensejam fato gerador para a cobrança de TFF e CFRP".
+Seguindo o rito processual, o recurso foi apreciado pelo Informe nº 722 (SEI nº 14421619), de 03/12/2025, por meio do qual, a Superintendência de Controle de Obrigações entendeu pela legalidade da notificação de lançamento, rememorando, ainda, que o Informe nº 199, constante nos autos, analisou, devidamente, o tema, consginando a existência do fato gerador da TFF e CRFP, esclarecendo, que: ''Portanto, a condição para a ocorrência dos respectivos fatos geradores não é o licenciamento, mas o funcionamento e a prestação dos serviços contratados.'', recomendando, ao fim, o conhecimento do Recurso interposto, enquanto que no mérito, negar provimento.
+O Despacho Decisório nº 756 (SEI nº 14423651) encaminhou este procedimento ao Conselho Diretor paga julgamento de mérito.
+Vieram os presentes autos, por sorteio, conforme Certidão de Distribuição (SEI nº 14938936), datada em 18/12/2025.
+Foi juntado aos autos petição extemporânea, em 07/01/2026, SEI nº 15009772.
+É o relatório.
+FUNDAMENTAÇÃO
+DA DESNECESSIDADE DE MANIFESTAÇÃO DA PFE-ANATEL
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013 , com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017 , determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642, de 26 de julho de 2013
+Art. 5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020) [...]
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+Logo, no caso concreto, não há necessidade de submissão do feito à manifestação da PFE-Anatel visto que não satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+DOS REQUISITOS DE ADMISSIBILIDADE
+Tempestividade: O presente recurso é tempestivo, uma vez que a prestadora foi notificada da decisão recorrida em 04/04/2025 (SEI nº 13521234), tendo o recurso sido interposto em 30/04/2025, e, portanto, dentro do prazo legal de 30 (trinta) dias.
+Cabimento: O Recurso Administrativo é cabível, eis que se enquadra nas hipóteses do art. 115 e seguintes do Regimento Interno da Anatel
+Legitimidade: A parte é legitimada para recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo. 
+Interesse: Há interesse em recorrer, uma vez que a pretensão da recorrente não foi acolhida no julgamento de primeira instância.
+DA DESNECESSIDADE DE DILIGÊNCIAS ADICIONAIS
+Em 22/09/2025, foi emitido o Extrato Sigec (SEI nº 14426191), contendo informação de que o crédito sob análise ainda não foi quitado.
+Portanto, uma vez satisfeitos os requisitos de admissibilidade da peça recursal, entende-se que não há necessidade de diligências adicionais, estando o processo apto à prolação de sua decisão de mérito.
+DA MANIFESTAÇÃO SUPERVENIENTE DO RECORRENTE
+Como dito, foi juntado aos autos petição extemporânea, de 07/01/2026, SEI nº 15009772.
+Como o protocolo foi realizado antes da publicação da pauta, no qual o processo seja pautado, comportaria análise para melhor intelecção deste Conselheiro, nos exatos termos da Súmula 21 da Anatel:
+''As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado".
+Ocorre que, longe de trazer fato novo ou argumento inédito, o recorrente replicou os termos do recurso anteriormente protocolado e juntou, aos autos, o Guia de Obrigações das Prestadoras de Telecomunicações de Pequeno Porte (PPPs) do ano de 2020 e do ano de 2025.
+DO MÉRITO
+Em suas razões o recorrente requer a impugnação de todos osdébitos em aberto (TFF e CFRP), utilizando como argumento, em síntese, que:
+''[...] a estação nº 1012675502 é do tipo cadastrada (Resolução nº 680, de 27 de junho de 2017 e Regulamento Geral de Licenciamento – RGL, aprovado pela Resolução nº 719/2020) e não licenciada, sendo necessário esclarecer que para a prestação do serviço de comunicação multimídia as estações do tipo cadastrada não ensejam fato gerador para a cobrança de TFF e CFRP.''
+Ao que parece o recorrente confunde o conceito e fato gerador de licenciamento e funcionamento entre as taxas em questão. Explica-se.
+Como bem explicitado, no Informe nº 199/2025/COUN/SCO, referente ao processo nº 53500.050974/2023-64: 
+''A TFF foi instituída pela Lei nº 5.070/1966 e conforme dispõe tal norma, deve ser paga, anualmente, até o dia 31 de março, e seus valores serão os correspondentes a 33% (trinta e três por cento) dos fixados para a Taxa de Fiscalização de Instalação. A Resolução nº 729/2020, editada pela Agência, esclarece características importantes sobre esse tributo:
+seu fato gerador é o exercício do poder de polícia no que tange ao funcionamento de estações utilizadas para prestação de serviços de telecomunicações, previamente licenciadas ou não, e uso de radiofrequências;
+considera-se ocorrido o fato gerador da TFF no dia 1º de janeiro de cada ano;
+a base de cálculo da TFF corresponde ao número de estações licenciadas ou não, incluindo os terminais móveis habilitados, quando aplicável, em 31 de dezembro do ano anterior;
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a TFF terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até essa data; e
+A TFF somente deixará de incidir sobre a estação licenciada a partir do exercício subsequente àquele em que: (i) o sujeito passivo venha a protocolizar, perante a Anatel, pedido de cancelamento da licença; e (ii) for publicado o ato que determinar o cancelamento da licença em função da extinção da outorga de serviço de telecomunicações, do direito de uso de radiofrequências ou do direito de exploração de satélite.
+A CFRP, por sua vez, tem como fato gerador a prestação dos serviços de telecomunicações de que trata o Anexo da Lei nº 11.652/2008. A Resolução nº 729/2020 também regulamentou aspectos importantes inerentes a essa contribuição:
+o sujeito passivo da CFRP é a prestadora de serviços de telecomunicações, outorgada ou não;
+sua base de cálculo corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, que acontece no dia 1º de janeiro de cada ano; e
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.''
+Dessa forma, como bem salientou a Superintendência de Controle de Obrigações, ''a condição para a ocorrência dos respectivos fatos geradores não é o licenciamento, mas o funcionamento e a prestação dos serviços contratados.''
+Soma-se a este fato, o histórico do particular, que como bem aventado pela supracitada Superintendência, ''efetuava o pagamento dos mesmos tributos ora impugnados (TFF e CFRP), desde o ano de 2014 até o ano de 2021 (anterior aos exercícios objeto do presente PAF), sem constar nenhum pedido de cancelamento da referida estação, condição que poderia descaracterizar os fatos geradores.''
+Nesse sentido, não merece prosperar o argumento de que a desnecessidade de licenciamento ocasiona na inexistência de fato gerador para as taxas de fiscalização.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer do presente recurso, por estarem preenchidos os requisitos de admissibilidade, enquanto que no mérito, negar-lhe provimento.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:26, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14945098 e o código CRC 4E2BD21D.
+ | 
+Referência: Processo nº 53500.050974/2023-64 | 
+SEI nº 14945098 |

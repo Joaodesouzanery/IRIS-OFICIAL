@@ -1,0 +1,466 @@
+SEI/ANATEL - 15049647 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 4/2026/OP
+Processo nº 53500.003893/2023-75
+Interessado: Conselho Diretor
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI 
+ASSUNTO
+Proposta de reavaliação das regras aplicáveis às redes comunitárias, objeto do item 8 da Agenda Regulatória para o biênio 2025-2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO REGULATÓRIO. REDES COMUNITÁRIAS. PROPOSTA DE ENCAMINHAMENTOS AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+1. A matéria. Proposta de reavaliação das regras aplicáveis às redes comunitárias, prevista na Agenda Regulatória 2023-2024 e na Agenda Regulatória 2025-2026, com instrução por AIR, consulta interna e Consulta Pública nº 58/2024.
+2. Fato relevante. Consulta Pública nº 58/2024 sobre minuta de Resolução para instituir o Comitê de Redes Comunitárias junto à Anatel, com recebimento e análise de contribuições e manifestação da PFE-Anatel.
+3. Circunstância superveniente. Criação do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e avaliação de sinergias institucionais com a temática de redes comunitárias.
+II. QUESTÃO EM DISCUSSÃO
+4. Há três questões em discussão: (i) saber se é adequada a instituição de Comitê de Redes Comunitárias ou se a matéria deve ser absorvida por estrutura transversal de acompanhamento de políticas públicas; (ii) saber quais determinações anteriores do Conselho Diretor, relacionadas ao tema, devem ser consideradas concluídas, pendentes ou demandantes de providências adicionais; e (iii) saber quais providências administrativas adicionais são necessárias para preservação do diálogo social e registro documental.
+III. RAZÕES DE DECIDIR
+5. A Anatel detém competência normativa e regulatória para reavaliar regras aplicáveis às redes comunitárias e para instituir ou suprimir comitês, nos termos da CF/1988, da Lei nº 9.472/1997 e do Regimento Interno.
+6. As redes comunitárias se relacionam a objetivos de ampliação de acesso e inclusão digital, com ênfase em áreas urbanas desatendidas, rurais ou remotas, alinhados às políticas públicas de telecomunicações.
+7. A proposta de Comitê de Redes Comunitárias foi submetida à consulta pública e recebeu ajustes de caráter estrutural e de funcionamento, inclusive com previsão de consulta pública prévia do regimento interno.
+8. A criação do GT-IPP permite incorporar a temática de redes comunitárias em leitura integrada de políticas públicas, com potencial de racionalização de estruturas, redução de sobreposição e ampliação do diálogo social.
+9. A incorporação demanda salvaguardas para evitar diluição temática e para assegurar mecanismos de participação social e rastreabilidade de contribuições.
+10. Determinações anteriores do Conselho Diretor foram endereçadas pelas áreas técnicas, com exceção de providências que dependem de efetiva inserção do tema “Redes Comunitárias” nos cadernos técnicos do CGFUST e do mapeamento de redes comunitárias para inserção no Painel de Dados, ainda pendente.
+IV. DISPOSITIVO E TESE
+11. Proposta de encaminhamentos ao Conselho Diretor.
+Tese de julgamento: “1. Propõe-se inserir a temática escopo do atual Grupo de Trabalho GT-Redes Comunitárias (GT-RCOM) no do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e posteriormente no do Comitê de Implementação de Políticas Públicas (CIPP), com eventual constituição de um subgrupo. 2. Propõe-se considerar concluídas as determinações ‘a3)’, ‘b1)’, ‘b.1.1)’, ‘b1.1.1)’, ‘b.1.2)’, ‘b2)’, ‘b.3)’ e ‘b.4)’ do Despacho Ordinatório de 13 de dezembro de 2024. 3. Propõe-se determinar interlocução junto ao CGFUST para efetiva inserção do tema ‘Redes Comunitárias’ nos cadernos técnicos. 4. Propõe-se determinar ao GT-IPP a concretização do mapeamento das redes comunitárias no prazo de 120 dias. 5. Propõe-se determinar ao GT-IPP a avaliação das contribuições encaminhadas pelo Comitê de Redes Comunitárias. 6. Propõe-se determinar conexão processual com o processo nº 53500.095164/2025-07. 7. Propõe-se considerar concluído o item nº 8 da Agenda Regulatória para o biênio 2025-2026, aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024, e suas alterações.”
+Dispositivos relevantes citados: CF/1988, art. 21, XI; Lei nº 9.472/1997, arts. 19 e 22; Lei nº 9.612/1998; Lei nº 12.965/2014; Decreto nº 9.612/2018, art. 2º; Resolução nº 612/2013, art. 133; Decreto nº 2.338/1997, art. 35; Decreto nº 2.615/1998.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT).
+Lei nº 9.612, de 19 de fevereiro de 1998, que institui o Serviço de Radiodifusão Comunitária.
+Lei nº 12.965, de 23 de abril de 2014, Marco Civil da Internet.
+Decreto nº 2.615/1998, que aprova o Regulamento do Serviço de Radiodifusão Comunitária
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Decreto nº 9.612, de 17 de dezembro de 2018, que dispõe sobre as Políticas Públicas de Telecomunicações.
+Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprova as Diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+Resolução Interna Anatel nº 182, de 30 de dezembro de 2022, que aprova a Agenda Regulatória da Anatel para o biênio 2023-2024 (SEI nº 9635929).
+Manual de Redes Comunitárias. Disponível em https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f79e2547d28b73a19010ebf5ebf27fdf. 
+Plano Estrutural de Redes de Telecomunicações 2025-2029. Disponível em https://www.gov.br/anatel/pt-br/dados/infraestrutura/pert.
+Processo nº 53500.008719/2023-19.
+Relatório final do grupo de trabalho sobre redes comunitárias (SEI nrs. 11200639, 11200647, 11200663 e 11200666);
+Processo nº 53500.003893/2023-75.
+Informe nº 121/2023/PRRE/SPR (SEI nº 11229601);
+Relatório de Análise de Impacto Regulatório (AIR) SEI nº 11229605 e minuta de Resolução SEI nº 1122960;
+Consulta Interna nº 37/2023 (SEI nº 11229585);
+Extrato (SEI nº 11255050);
+Parecer nº 659/2023/PFE-ANATEL/PGF/AGU, de 29 de dezembro de 2023 (SEI nº 11329120);
+Informe nº 8/2024/PRRE/SPR (SEI nº 11488022 e anexos);
+Matéria para Apreciação do Conselho Diretor nº 115/2024 (SEI nº 11488059);
+Certidão de Distribuição (SEI nº 11637653);
+Análise nº 116/2024/VA (SEI nº 12437960);
+Acórdão nº 354, de 12 de dezembro de 2024 (SEI nº 13018339);
+Minuta de Resolução VA (SEI nº 12965223) e Minuta de Consulta Pública (SEI nº 11229619);
+Consulta Pública nº 58, de 12 de dezembro de 2024 (SEI nº 13018962);
+Informe nº 20/2025/PRRE/SPR (SEI nº 13268420 e anexos);
+Parecer n. 00237/2025/PFE-ANATEL/PGF/AGU, de 22 de julho de 2025 (SEI nº 14070218);
+Informe nº 109/2025/PRRE/SPR (SEI nº 14154150 e anexos); e
+Matéria para Apreciação do Conselho Diretor nº 627/2025 (SEI nº 14216831).
+Processo nº 53500.095164/2025-07.
+RELATÓRIO
+DOS FATOS
+Trata-se de proposta de reavaliação das regras aplicáveis às redes comunitárias, objeto do item 5 da Agenda Regulatória da Agência Nacional de Telecomunicações (Anatel) para o biênio 2023-2024, aprovada pela Resolução Interna Anatel nº 182, de 30 de dezembro de 2022 (SEI nº 9635929).
+A área técnica formalizou sua análise inicial nos termos do Informe nº 121/2023/PRRE/SPR (SEI nº 11229601), sendo a ele anexados Relatório de Análise de Impacto Regulatório (AIR) SEI nº 11229605 e minuta de Resolução SEI nº 1122960.
+A proposta elaborada foi submetida à Consulta Interna nº 37/2023 (SEI nº 11229585), que ficou aberta para contribuições de 6 a 13 de dezembro de 2023, não tendo sido recebidas contribuições, conforme extrato (SEI nº 11255050).
+A Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) analisou a proposta no Parecer nº 659/2023/PFE-ANATEL/PGF/AGU, de 29 de dezembro de 2023 (SEI nº 11329120). A área técnica analisou as manifestações do opinativo jurídico no Informe nº 8/2024/PRRE/SPR (SEI nº 11488022 e anexos) e enviou o processo para deliberação do Conselho Diretor por meio da Matéria para Apreciação do Conselho Diretor nº 115/2024 (SEI nº 11488059).
+O Conselheiro Vicente Bandeira de Aquino Neto foi sorteado como relator da matéria em 11 de março de 2024, conforme Certidão de Distribuição (SEI nº 11637653).
+Seguindo os termos da Análise nº 116/2024/VA (SEI nº 12437960), o Conselho Diretor decidiu por meio do Acórdão nº 354, de 12 de dezembro de 2024 (SEI nº 13018339), Reunião nº 939, realizada em 5 de dezembro de 2024, por unanimidade, submeter à consulta pública a proposta de Resolução que institui o Comitê de Redes Comunitárias, na forma da Minuta de Resolução VA (SEI nº 12965223) e da Minuta de Consulta Pública (SEI nº 11229619).
+A Anatel submeteu a proposta à Consulta Pública nº 58, de 12 de dezembro de 2024 (SEI nº 13018962), aberta à sociedade para comentários por 45 (quarenta e cinco) dias.
+A área técnica analisou as contribuições no Informe nº 20/2025/PRRE/SPR (SEI nº 13268420 e anexos) e a PFE-Anatel se manifestou novamente no Parecer n. 00237/2025/PFE-ANATEL/PGF/AGU, de 22 de julho de 2025 (SEI nº 14070218). Esse último parecer foi analisado pelo Informe nº 109/2025/PRRE/SPR (SEI nº 14154150 e anexos).
+Os autos foram encaminhados ao Conselho Diretor da Anatel por meio da Matéria para Apreciação do Conselho Diretor 627 (SEI nº 14216831) e do Despacho Ordinatório SEI nº 14312891, distribuídos à minha relatoria em 4 de setembro de 2025, conforme Certidão de Distribuição SEI nº 14319998.
+É o relato dos fatos.
+DA ANÁLISE
+I - Da Competência do Conselho Diretor
+A aprovação, alteração e mesmo revogação de normas pela Anatel constitui exercício de sua função normativa, que, por sua vez, decorre de sua natureza de órgão regulador, conforme previsto no art. 21, XI, da Constituição Federal e nos termos da Lei nº 9.472/1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.472/1997
+Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente:
+I - implementar, em sua esfera de atribuições, a política nacional de telecomunicações;
+(...)
+VIII - administrar o espectro de radiofrequências e o uso de órbitas, expedindo as respectivas normas;
+(...)
+X - expedir normas sobre prestação de serviços de telecomunicações no regime privado;
+XI - expedir e extinguir autorização para prestação de serviço no regime privado, fiscalizando e aplicando sanções;
+XII - expedir normas e padrões a serem cumpridos pelas prestadoras de serviços de telecomunicações quanto aos equipamentos que utilizarem;
+XIII - expedir ou reconhecer a certificação de produtos, observados os padrões e normas por ela estabelecidos;
+(...)
+XXXII - reavaliar, periodicamente, a regulamentação com vistas à promoção da competição e à adequação à evolução tecnológica e de mercado.
+Dentre os objetivos gerais das políticas públicas de telecomunicações previstas no Decreto nº 9.612, de 17 de dezembro de 2018, que dispõe sobre as Políticas Públicas de Telecomunicações, destaca-se (art. 2º) a necessidade de promoção do acesso às telecomunicações em condições econômicas que viabilizem o uso e a fruição dos serviços, garantindo-se a expansão do acesso à internet em banda larga fixa e móvel, com qualidade e velocidade adequadas, especialmente em áreas onde a oferta seja inadequada, tais como áreas urbanas desatendidas, rurais ou remotas.
+Decreto nº 9.612/2018
+Art. 2º São objetivos gerais das políticas públicas de telecomunicações:
+I - promover:
+a) o acesso às telecomunicações em condições econômicas que viabilizem o uso e a fruição dos serviços, especialmente para:
+1. a expansão do acesso à internet em banda larga fixa e móvel, com qualidade e velocidade adequadas; e
+2. a ampliação do acesso à internet em banda larga em áreas onde a oferta seja inadequada, tais como áreas urbanas desatendidas, rurais ou remotas;
+b) a inclusão digital, para garantir à população o acesso às redes de telecomunicações, sistemas e serviços baseados em tecnologias da informação e comunicação - TIC, observadas as desigualdades sociais e regionais; e
+c) um mercado de competição ampla, livre e justa;
+II - proporcionar um ambiente favorável à expansão das redes de telecomunicações e à continuidade e à melhoria dos serviços prestados;
+Entre as competências do Conselho Diretor previstas no Regimento Interno da Anatel, estão aquelas de coordenar a implementação da política nacional de telecomunicações; exercer o poder normativo da Agência relativamente às telecomunicações conforme Regulamento da Agência; instituir e suprimir comitês; e deliberar sobre as matérias que lhe forem encaminhadas:
+Resolução nº 612/2013
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+IV - coordenar a implementação, em sua esfera de competência, da política nacional de telecomunicações;
+V - exercer o poder normativo da Agência relativamente às telecomunicações, nos termos do art. 17 do Regulamento da Agência;
+(...)
+XL - instituir e suprimir comitês, bem como unidades regionais, observadas as disposições deste Regimento Interno;
+(...)
+LVI - deliberar sobre as matérias que lhe forem encaminhadas pelos órgãos da Agência;
+Competências complementares e pertinentes à temática tratada nesta Análise estão detalhadas no capítulo "2.1 Aspectos formais" (parágrafos 9 a 39) do Parecer nº 237/2025/PFE-ANATEL/PGF/AGU (14070218), em que a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) avaliou juridicamente a matéria ora apreciada.
+Entendo não restarem dúvidas acerca da competência da Anatel para a reavaliação das regras aplicáveis às redes comunitárias.
+II - Das Redes Comunitárias
+A expansão das redes às áreas urbanas desatendidas, rurais ou remotas tem sido um princípio norteador da ampliação de acesso no país. Tanto o mercado como o governo apresentaram nos últimos anos iniciativas nesse sentido, como o aumento da presença das Prestadoras de Pequeno Porte (PPP) em pequenos municípios, a criação do Comitê das PPP (Resolução da Anatel nº 698/2018), o Regulamento sobre prestação do Serviço Telefônico Fixo Comutado (STFC) fora da Área de Tarifa Básica (Resolução da Anatel nº 622/2013), os Planos Gerais de Metas de Universalização (PGMU), o Plano Estrutural de Redes de Telecomunicações (PERT) e os Editais de Licitação nº 002/2007/SPV (“Edital 3G”), nº 004/2012/PVCP/SPV (“Edital 4G”) e nº 1/2021-SOR/SPR/CD-ANATEL (“Edital 5G”), dentre outras.
+O Decreto de Políticas Públicas de telecomunicações nº 9.612/2018 também se norteou nesse princípio ao estabelecer como um dos objetivos gerais do governo a ampliação do acesso à internet em banda larga em áreas onde a oferta seja inadequada, tais como áreas urbanas desatendidas, rurais ou remotas, além de direcionar os compromissos de expansão de banda larga fixados pela Anatel, para a expansão das redes de transporte de telecomunicações de alta capacidade (fixa e móvel) priorizado o atendimento de cidades, vilas, áreas urbanas isoladas, aglomerados rurais e rodovias federais que não disponham desse tipo de infraestrutura.
+Segundo o "Manual de Redes Comunitárias", as redes comunitárias correspondem a infraestruturas de telecomunicações implementadas e mantidas por comunidades locais, sem fins lucrativos, para o fornecimento de acesso à internet em regiões onde os serviços comerciais são inexistentes, inacessíveis ou inadequados. No contexto dos serviços de telecomunicações regulamentados pela Anatel, as redes comunitárias podem se enquadrar no Serviço Limitado Privado (SLP), serviço de interesse restrito que possibilita a comunicação entre estações fixas ou móveis para o desenvolvimento de múltiplas aplicações, dentre elas a transmissão de dados, para o uso do próprio executante ou prestado a determinados grupos de usuários.
+De acordo com o estudo “The Community Network Manual: How to Build the Internet Yourself”, as redes comunitárias são colaborativas, desenvolvidas em um modelo bottom-up por grupos ou indivíduos que concebem, desenvolvem e gerenciam a nova infraestrutura de rede de bem comum. O estudo aponta que as redes comunitárias têm importantes características favoráveis ao desenvolvimento sustentável: organização social com objetivos compartilhados, equilíbrio cultural e educacional e definições de governança – com medidas regulatórias focadas em apoiar a interconexão ao backhaul e backbone de companhias já consolidadas no mercado – e custo e benefícios compartilhados entre as comunidades relacionadas. Como uma alternativa às opções de investimento tradicionais, estas iniciativas trazem a possibilidade de construir redes de acesso em regiões com baixos retornos financeiros, sejam ela wireless ou fibra ótica, particularmente em áreas rurais e isoladas.
+As orientações para implantação de rede comunitária estão contidas no referido Manual de Redes Comunitárias, elaborado pela Anatel e disponível publicamente, em versão datada de abril de 2025, no portal da Agência na internet, no endereço eletrônico https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f79e2547d28b73a19010ebf5ebf27fdf.
+III - Das Ações realizadas pela Anatel sobre Redes Comunitárias
+Conforme autos do processo nº 53500.018191/2020-43, em setembro de 2020 foi firmado o Memorando de Entendimento (Memorandum of Understanding - MoU) entre a Anatel e a Embaixada Britânica com o objetivo de ampliar o acesso digital no Brasil no âmbito do Programa de Acesso Digital (Digital Access Programme) britânico, cujo foco é o seguinte:
+[C]atalisar o acesso digital acessível, inclusivo, seguro e protegido para populações vulneráveis e utilizar a inclusão digital aprimorada para apoiar ecossistemas digitais em expansão, criar empregos qualificados e gerar soluções digitais para desafios locais. Programa concebido para atuar na África do Sul, Brasil, Indonésia, Nigéria e Quênia. Previsão de aporte de cerca de 14 milhões de libras esterlinas a serem distribuídos entre os 3 pilares, em ações no Brasil até 2022. O Programa de Acesso Digital também estava em conversas com o Ministério da Economia para a celebração de um MoU, especificamente com a Secretaria de Governo Digital, ainda em definição sobre o escopo específico de atuação, possivelmente em boas práticas de proteção de dados no âmbito da administração pública/serviços digitais, etc. Também vislumbrava-se a parceria com outras instituições da Administração pública federal.
+No processo nº 53500.067823/2020-01 foi realizado o "Projeto 1: Redes Comunitárias" em que foram produzidos os primeiros resultados do acordo, com a produção de estudos relacionados ao incentivo às redes comunitárias no Brasil.
+A operacionalização dos trabalhos do estudo sobre redes comunitárias foi realizada pela Association for Progressive Communication (APC) que, após pesquisas, entrevistas e diversas reuniões com o setor e com a equipe técnica da Anatel, realizou a entrega, em dezembro de 2021, dos seguintes produtos:
+Policy Brief - análise aprofundada do cenário das redes comunitárias no Brasil, incluindo o mapeamento das redes existentes, a visão dos principais atores envolvidos por meio de pesquisa documental e consultas às partes interessadas, de forma a identificar os principais desafios para o desenvolvimento dessas redes, resultando em recomendações para a melhoria e expansão do desenvolvimento do acesso digital no país: 
+- Policy Brief - versão em português (SEI nº 7928556)
+- Policy Brief - versão em inglês (SEI nº 7928576)
+Sumário Executivo do Policy Brief - Resumo dos principais temas abordados no Policy Brief:
+- Sumário Executivo do Policy Brief - versão em português (SEI nº 7928639)
+- Sumário Executivo do Policy Brief - versão em inglês (SEI nº 7928653)
+Vídeos de divulgação sobre Redes Comunitárias
+- Vídeo de divulgação sobre Redes Comunitárias - versão curta, áudio em português com tradução em libras (SEI nº 7928665)
+- Vídeo de divulgação sobre Redes Comunitárias - versão curta, áudio em português com tradução em libras e legendas em português (SEI nº 7928722)
+- Vídeo de divulgação sobre Redes Comunitárias - versão curta, áudio em português com audiodescrição (SEI nº 7928777)
+- Vídeo de divulgação sobre Redes Comunitárias - versão curta, áudio em português com legendas em inglês (SEI nº 7928808)
+- Vídeo de divulgação sobre Redes Comunitárias - versão longa, áudio em português com tradução em libras (SEI nº 7928835)
+- Vídeo de divulgação sobre Redes Comunitárias - versão longa, áudio em português com tradução em libras e legendas em português (SEI nº 7928860)
+- Vídeo de divulgação sobre Redes Comunitárias - versão longa, áudio em português com audiodescrição (SEI nº 7928885)
+- Vídeo de divulgação sobre Redes Comunitárias - versão longa, áudio em português com legendas em inglês (SEI nº 7928918)
+Manual de Redes Comunitárias com principais recomendações para os interessados em implantar Redes Comunitárias no país
+- Manual de Redes Comunitárias (SEI nº 7928585)
+A partir dos produtos entregues, principalmente o Policy Brief, a Anatel passou a mapear possíveis necessidades de melhoria na regulação da Agência, a fim de promover as redes comunitárias no País, o que foi realizado em diversas iniciativas, a seguir indicadas.
+No processo nº 53500.028211/2021-75, realizou-se o Projeto Conectividade Agro 4.0, com a implantação de torres rurais/infraestrutura em determinados municípios, conforme PROJETO ESPELHO – MAPA/ANATEL (SEI nº 6873094).
+No processo nº 53500.017684/2021-47 foi realizado o Laboratório Experimental de Inovação em Coruripe/AL.
+No processo nº 53500.037842/2021-85 foram realizados o Projeto de Conectividade em Toledo/PR (SEI nº 10104301) e o Laboratório Include/Campus Party, na cidade de Salvador/BA (SEI nº 10619642).
+No processo nº 53500.004068/2022-15 foi iniciada avaliação da necessidade de instrumentalização de regulamentação relacionada às principais recomendações da Association for Progressive Communication (APC). Nesses autos, a área técnica indica no Informe nº 21/2022/PRUV/SPR (SEI nº 7929337) que, a partir dos produtos entregues, principalmente o Policy Brief, que seria possível à Anatel mapear possíveis necessidades de melhoria na regulação pela Anatel, a fim de promover as Redes Comunitárias no país, sugerindo o encaminhamento do processo à Gerência de Regulamentação (PRRE) para avaliação da necessidade de se iniciar processos com a finalidade de regulamentar as questões recomendadas. Por meio do Informe nº 11/2022/PRRE/SPR (SEI nº 7955269) avaliou-se possibilidades de medidas regulatórias face às recomendações da APC para o fomento a Redes Comunitárias e não se vislumbrou a necessidade de iniciativas de revisão regulamentar adicionais, além daquelas então dispostas na Agenda Regulatória para o biênio de 2021-2022. Assim, no Informe nº 38/2022/PRUV/SPR (SEI nº 8203177), sugeriu-se aprofundar as discussões acerca das recomendações apresentadas, notadamente quanto à necessidade de dimensionar o universo que engloba as Redes Comunitárias (quantas são, quem são), bem como o encaminhamento das recomendações atinentes às atribuições da Superintendência de Outorga e Recursos à Prestação da Anatel (SOR), MCom, RNP, Telebrás e Funai, pelo que foram encaminhados ofícios com os resultados do estudo sobre Redes Comunitárias, proveniente do Memorando de Entendimento firmado entre Anatel e Embaixada Britânica para esses órgãos (SEI nrs. 8439584; 8439842; 8439742; 8434108; e 9091430).
+Relativamente a atendimento a comunidades indígenas, foram ainda instaurados e instruídos os processos nrs. 53500.083518/2021-39; 53500.029342/2019-55 (solicitação de informações sobre aldeias indígenas); e 53500.029761/2020-21 (estruturação de compromissos de abrangência para atendimento a comunidades indígenas).
+No mesmo sentido, foi instaurado o processo nº 53500.034276/2022-31 relativamente ao atendimento a comunidades quilombolas.
+Adicionalmente, no âmbito da Consulta Pública nº 20/2018 sobre o Plano Estrutural de Redes de Telecomunicações (PERT), pessoas físicas, entidades civis e associações apresentaram contribuições em prol do fortalecimento do acesso comunitário e assimetrias para provedores comunitários. Assim, o PERT 2025-2029, disponível para a sociedade no endereço eletrônico https://www.gov.br/anatel/pt-br/dados/infraestrutura/pert, apresenta (pg. 89 e ss.) as redes comunitárias como iniciativas da Anatel para a ampliação da conectividade de grupos específicos:
+Plano Estrutural de Redes de Telecomunicações 2025-2029
+Redes Comunitárias 
+Como uma alternativa às opções de investimento tradicionais, as redes comunitárias trazem a possibilidade de construir redes de acesso em regiões com baixos retornos financeiros, sejam ela wireless ou fibra ótica, particularmente em áreas rurais e isoladas. São administradas de forma colaborativa, desenvolvidas em um modelo bottom-up por grupos ou indivíduos que concebem, desenvolvem e gerenciam a nova infraestrutura de rede de bem comum. De acordo com o estudo The Community Network Manual: How to Build the Internet Yourself, essas redes têm importantes características a favor de um desenvolvimento sustentável: organização social com objetivos compartilhados, equilíbrio cultural e educacional e definições de governança – com medidas regulatórias focadas em apoiar a interconexão ao backhaul e backbone de companhias já consolidadas no mercado – e custo e benefícios compartilhados entre as comunidades relacionadas.
+No Brasil, as redes comunitárias podem atuar seguindo as diretrizes da regulamentação expedida pela Anatel quanto aos serviços de telecomunicações de interesse restrito, em especial o Serviço Limitado Privado (SLP), cujo normativo principal é aprovado pela Resolução nº 617, de 19 de junho de 2013.
+Em setembro/20, foi firmado o Memorando de Entendimento (Memorandum of Understanding - MoU) entre a Anatel e a Embaixada Britânica com o objetivo de ampliar o acesso digital no Brasil. Nesse sentido, o primeiro resultado desse acordo foi a produção de estudos relacionados ao incentivo às Redes Comunitárias no Brasil. A partir dos produtos entregues, principalmente o Policy Brief, é possível à Anatel mapear possíveis necessidades de melhoria na regulação pela Anatel, a fim de promover as Redes Comunitárias no País. Além disso, os demais produtos entregues, nomeadamente o Manual de Redes Comunitárias e os vídeos de divulgação, constituem-se como ferramenta de grande utilidade para que possíveis interessados tenham acesso à informação objetiva e de qualidade para a expansão das redes comunitárias, contribuindo, diretamente, para o incremento do acesso digital entre as populações mais vulneráveis.
+Em seguida, em março de 2023, foi criado o Grupo de trabalho para estudos sobre redes comunitárias – GT-RCom, pela Portaria Anatel nº 2597, de 29 de março de 2023, com o objetivo de promover o diálogo entre a Agência e os representantes de redes comunitárias, fornecendo insumos para o debate sobre a reavaliação das regras aplicáveis a essas redes, conforme previsto no item 5 da Agenda Regulatória 2023-2024. As reuniões começaram em junho de 2023 e seguem acontecendo periodicamente.
+Dos estudos e debates ocorridos no âmbito do GT-RCom, observa-se essencialmente quatro eixos temáticos sobre o tema: a) sustentabilidade do modelo e governança; b) apropriação tecnológica e capacitação técnica; c) ambiente regulatório e acesso a insumos; e) políticas públicas relacionadas ao uso do fundo de Universalização dos Serviços de Telecomunicações - FUST. 
+Dentre as iniciativas mais recomendadas pelos representantes das redes comunitárias no âmbito do GT-RCom, está a necessidade de avaliação da possibilidade de uso FUST para estimular a expansão das redes comunitárias, interagindo com o Conselho Gestor do Fundo no sentido de atualizar o caderno de projetos no que couber. Além disso, destaca-se a necessidade de reavaliação pela Anatel dos normativos da Agência no sentido de facilitar o acesso às redes comunitárias em vários sentidos, como outorga, acessos a insumos de atacado, aprimoramento da fiscalização regulatória, dentre outras ações (realizada no processo nº 53500.025962/2023-00). 
+Finalmente, no processo nº 53500.008719/2023-19 foi constituído pela Portaria Anatel nº 2597, de 29 de março de 2023 (SEI nº 10025504) o Grupo de Trabalho “GT-Redes Comunitárias” com o objetivo de promover o diálogo entre a Agência e os representantes de Redes Comunitárias por meio do fomento do debate sobre as possíveis formas de colaboração da Anatel, dentro do limite de suas atribuições, no sentido de fortalecer as Redes Comunitárias e seu importante papel nas políticas de expansão das redes de transporte de telecomunicações de alta capacidade (fixa e móvel) às áreas urbanas desatendidas, rurais ou remotas, onde a oferta de acesso à Internet em banda larga se mostra inadequada; esclarecimento sobre a abrangência da atuação da Anatel em relação às Redes Comunitárias (diferenciando a camada de infraestrutura de conectividade daquelas de aplicativos, conteúdos, entre outros aspectos); e incorporação de insumos à Agência para o debate no âmbito do item 5 da Agenda Regulatória 2023-2024 (reavaliação das regras aplicáveis às Redes Comunitárias).
+A relação de membros do GT-RCOM consta do endereço eletrônico https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho/gt-rcom. 
+As atas das reuniões do GT-RCOM, que detalham as atividades realizadas pelo grupo de trabalho, constam do endereço eletrônico https://www.gov.br/anatel/pt-br/composicao/grupos-de-trabalho/gt-rcom/composicao-e-reunioes. 
+A Portaria de constituição desse fórum prevê também a produção e entrega de um relatório final pelo GT-RCOM.
+Art. 1º (...)
+§1º O Grupo de Trabalho previsto no caput deverá elaborar e apresentar, ao Conselho Diretor, até 30 de junho de 2023, relatório final contendo, dentre outros:
+I - mapeamento das redes comunitárias existentes (quem são; onde estão localizadas e o perfil da comunidade atendida);
+II - consolidação da informação sobre a existência de oferta de acesso à Internet em banda larga nas regiões onde se encontram as Redes Comunitárias, bem como a média da renda familiar da comunidade e dos preços praticados pelas Prestadoras de Telecomunicações nessas localidades, quando houver; 
+III - identificação das demandas dos representantes das redes comunitárias e competências para o respectivo atendimento;
+IV - recomendações de adequações regulatórias, caso se mostrem úteis ou necessárias;
+V - ações de outras naturezas como elaboração de cartilhas informativas ou outros documentos que possam contribuir para o esclarecimento quanto ao licenciamento das Redes Comunitárias e outras informações pertinentes.
+As iniciativas, eventos e reuniões realizadas pelo GT serviram como insumos para os debates que culminaram em seu relatório conclusivo, publicado em 1º de dezembro de 2023 e acessível nos documentos SEI nº 11200639, nº 11200647, nº 11200663 e nº 11200666.
+Neste contexto e conforme previsto institucionalmente nos item 5 da Agenda Regulatória da Agência Nacional de Telecomunicações (Anatel) para o biênio 2023-2024 e item 8 da Agenda Regulatória para o biênio 2025-2026 ("reavaliação das regras aplicáveis às redes comunitárias"), nos presentes autos foi realizada a apreciação das recomendações realizadas pelo GT-RCOM que versam sobre aspectos normativos da temática, conforme descrito no Informe nº 121/2023/PRRE/SPR (SEI nº 11229601), culminando, após a instrução descrita nos itens 4.2. a 4.9. desta Análise, na matéria ora analisada.
+IV - Dos resultados da Consulta Pública
+Uma das principais etapas previstas no processo de reavaliação das regras aplicáveis às redes comunitárias foi a realização de Consulta Pública da proposta de instituição de um Comitê de Redes Comunitárias junto à Anatel com a finalidade de sugerir aprimoramentos à regulamentação a elas aplicável, consolidar suas demandas e propor medidas de estímulo à sua expansão. Sua concretização ocorreu pela Consulta Pública nº 58/2024 (SEI nº 13018962) que submeteu à sociedade minuta aprovada pelo Acórdão nº 354/2024 (SEI nº 13018339) com o seguinte teor:
+ AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+ MINUTA DE RESOLUÇÃO
+ Institui o Comitê de Redes Comunitárias junto à Anatel.
+ O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997, e pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+ CONSIDERANDO os comentários recebidos decorrentes da Consulta Pública nº XXX, de XX de XXXXXX de 202X, publicada no Diário Oficial da União do dia XX de XXXXXX de 202X;
+ CONSIDERANDO deliberação tomada em sua Reunião nº XXX, de XX de XXXXXX de 202X;
+ CONSIDERANDO o constante dos autos do processo nº 53500.003893/2023-75,
+ RESOLVE:
+ Art. 1º Instituir o Comitê de Redes Comunitárias junto à Anatel, com a finalidade de sugerir aprimoramentos à regulamentação a elas aplicável, consolidar suas demandas e propor medidas de estímulo à sua expansão.
+ § 1º O Comitê previsto no caput será composto por um Conselheiro, que o presidirá, pelos Superintendentes da Agência e pelos seguintes membros efetivos externos:
+ I – Representantes do Ministério das Comunicações;
+ II – Representantes de Redes Comunitárias;
+ III – Representantes de Entidades de Classe de Prestadoras de Serviços de Telecomunicações; e
+ IV – Representantes de Entidades de Classe das Prestadoras de Pequeno Porte (PPP).
+ § 2º Poderão ser realizadas reuniões com a participação de outros representantes externos a critério do Presidente do Comitê.
+ § 3º O Regimento Interno do Comitê previsto no caput será aprovado por meio de Portaria de seu Presidente.
+ Art. 2º Esta Resolução entra em vigor em XX de XXXXXX de 202X.
+ Observação (apagar): Conforme estabelecido no art. 4º do Decreto nº 10.139/2019, com exceção "às hipóteses de urgência justificada no expediente administrativo", os "atos normativos estabelecerão data certa para a sua entrada em vigor e para a sua produção de efeitos":
+ I - de, no mínimo, uma semana após a data de sua publicação; e
+ II - sempre no primeiro dia do mês ou em seu primeiro dia útil.
+ Dessa forma, se este for um ato normativo, o último dispositivo deve prever vacatio legis, em uma das duas formas acima.
+ Atenção:
+ a) O dispositivo de vacatio legis deve ser escrito de forma direta, p. ex.: "Esta Resolução entra em vigor em 3 de fevereiro de 2023".
+ b) Nunca fundamentar no dispositivo o porquê de ter o vacatio legis.
+ c) A fundamentação de ter vacatio legis ou mesmo a fundamentação da urgência para não ter vacatio legis deve constar nos autos do processo e não diretamente no texto normativo.
+ | 
+Conforme detalhado no Informe nº 20/2025/PRRE/SPR (SEI nº 13268420), durante a Consulta Pública nº 58/2024, foram recebidas por meio do Sistema Participa Anatel nove contribuições. Além delas, a área técnica ressalta ter sido considerada contribuição (SEI nº 13221223) recebida fora do Sistema Participa Anatel, meio definido na aprovação da Consulta Pública como obrigatório para contribuições/sugestões. A excepcionalidade deve-se, segundo a área técnica, à autoria da contribuição, recebida de entidade Comitê de Redes Comunitárias e ao fato "de a contribuição se sobrepor àquelas enviadas pelo Sistema Participa Anatel":
+ Entidade
+ | 
+ Qde.
+ | 
+ CONEXIS BRASIL DIGITAL
+ | 
+ 3
+ | 
+ INSTITUTO BEM ESTAR BRASIL
+ | 
+ 1
+ | 
+ OUTROS
+ | 
+ 5
+ | 
+ COMITÊ DE REDES COMUNITÁRIAS
+ | 
+ 1
+ | 
+A Planilha de análise das contribuições à CP 58/2024 (SEI nº 13626230) detalha cada uma das manifestações recebidas, assim como a avaliação correspondente feita pela área técnica. Quanto à sua recepção pela área técnica, essas contribuições se distribuem da seguinte forma:
+ Resposta
+ | 
+ Qde.
+ | 
+ Aceita parcialmente
+ | 
+ 2
+ | 
+ Fora do escopo
+ | 
+ 1
+ | 
+ Não aceita
+ | 
+ 7*
+ | 
+ *incluindo contribuição feita fora do sistema Participa Anatel pela organização "Comitê de Redes Comunitárias".
+ | 
+Quanto à sua temática, distribuem-se do seguinte modo:
+ Temática
+ | 
+ Qde.
+ | 
+ Finalidade do Comitê de Redes Comunitárias
+ | 
+ 3
+ | 
+ Composição do Comitê de Redes Comunitárias
+ | 
+ 3
+ | 
+ Regimento Interno do Comitê de Redes Comunitárias
+ | 
+ 2
+ | 
+ Participação no Comitê de Redes Comunitárias
+ | 
+ 2*
+ | 
+ *incluindo contribuição feita fora do sistema Participa Anatel pela organização "Comitê de Redes Comunitárias".
+ | 
+Nota-se, assim, que foram trazidas manifestações atinentes à finalidade e funcionamento de um Comitê de Redes Comunitárias, à representatividade por entes externos nesse fórum e ainda quanto à sua estrutura (composição e regimento interno).
+A partir das contribuições e da análise delas decorrentes, foi produzida pela área técnica uma nova minuta de resolução (13626218), nos termos a seguir (destacadas as revisões desde a versão anterior):
+ AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+ MINUTA DE RESOLUÇÃO
+ Institui o Comitê de Redes Comunitárias junto à Anatel.
+ O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997, e pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+ CONSIDERANDO os comentários recebidos decorrentes da Consulta Pública nº XXX 58, de XX12 de XXXXXXdezembro de 202X2024, publicada no Diário Oficial da União do dia XX 17 de XXXXXXdezembro de 202X2024;
+ CONSIDERANDO deliberação tomada em sua Reunião nº XXX, de XX de XXXXXX de 202X;
+ CONSIDERANDO o constante dos autos do processo nº 53500.003893/2023-75,
+ RESOLVE:
+ Art. 1º Instituir o Comitê de Redes Comunitárias junto à Anatel, com a finalidade de sugerir aprimoramentos à regulamentação a elas aplicável, consolidar suas demandas e propor medidas de estímulo à sua expansão.
+ § 1º O Comitê previsto no caput será composto por um Conselheiro, que o presidirá, pelos Superintendentes da Agência e pelos seguintes membros efetivos externos:
+ I – Representantes do Ministério das Comunicações;
+ II – Representantes de Redes Comunitárias;
+ III – Representantes de Entidades de Classe de Prestadoras de Serviços de Telecomunicações; e
+ IV – Representantes de Entidades de Classe das Prestadoras de Pequeno Porte (PPP).
+ § 2º Poderão ser realizadas reuniões com a participação de outros representantes externos a critério do Presidente do Comitê.
+ § 3º O Regimento Interno do Comitê previsto no caput será aprovado por meio de Portaria de seu Presidente, que deve ser submetida ao procedimento de Consulta Pública antes de sua expedição.
+ Art. 2º Esta Resolução entra em vigor em XX de XXXXXX de 202X.
+ | 
+V - Das Reuniões do GT após a consulta pública
+Conforme relatado pelo Informe nº 20/2025/PRRE/SPR (SEI nº 13268420), foram ainda realizadas atividades pelo GT-RCOM posteriormente à Consulta Pública, informando a área técnica não terem surgido novas temáticas de debate em relação àquelas que eram consideradas quando da aprovação da Consulta Pública, em dezembro de 2024, ou mesmo da finalização do Relatório de Análise de Impacto Regulatório, em dezembro de 2023, tendo os debates tratado da continuidade de temas então já em discussão. Reporta-se, igualmente, não se ter notícias até aquele momento do surgimento de novos temas além daqueles debatidos na derradeira reunião de março de 2025.
+A área técnica destaca, na oportunidade, entender que o Conselho Diretor deva avaliar as pautas em debate, bem como as expectativas para o futuro, assinalando que a criação de uma estrutura perene como o Comitê somente se justifica na perspectiva de contínua discussão em seu escopo, o que fora considerado por esta área técnica no momento da proposição da criação do Comitê, no final de 2023. Adicionalmente, afirma que, unicamente para pautas esporádicas e específicas, já existem estruturas institucionais que podem ser consideradas, como o próprio grupo de trabalho com um objetivo bem delimitado.
+VI - Manifestação da Procuradoria Federal Especializada junto à Anatel e revisita da área técnica
+Por meio do Parecer nº 237/2025/PFE-ANATEL/PGF/AGU, aprovado pelos Despachos nº 00831/2025/PFE-ANATEL/PGF/AGU e nº 00840/2025/PFE-ANATEL/PGF/AGU, todos constantes do mesmo SEI nº 14070218, a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) avaliou juridicamente a proposta da área técnica e fez considerações, posteriormente apreciadas e consideradas pelo Informe nº 109/2025/PRRE/SPR (SEI nº 14154150).
+Desta dinâmica resultou a derradeira minuta de resolução (SEI nº 14175967), encaminhada ao Conselho Diretor por meio da matéria em apreço na presente Análise. Note-se que todos os ajustes de mérito referem-se a aspectos burocráticos de estrutura e funcionamento do Comitê proposto:
+ AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+ MINUTA DE RESOLUÇÃO
+ Institui o Comitê de Redes Comunitárias junto à Anatel.
+ O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997, e pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997, tendo em vista a deliberação tomada em sua Reunião nº XXX, de XX de XXXXXX de 202X, e o constante dos autos do processo nº 53500.003893/2023-75,
+ CONSIDERANDO os comentários recebidos decorrentes da Consulta Pública nº XXX 58, de XX12 de XXXXXXdezembro de 202X2024, publicada no Diário Oficial da União do dia XX 17 de XXXXXXdezembro de 202X2024;
+ CONSIDERANDO deliberação tomada em sua Reunião nº XXX, de XX de XXXXXX de 202X;
+ CONSIDERANDO o constante dos autos do processo nº 53500.003893/2023-75,
+ RESOLVE:
+ Art. 1º Instituir o Comitê de Redes Comunitárias junto à Anatel, com a finalidade de sugerir aprimoramentos à regulamentação a elas aplicável, consolidar suas demandas e propor medidas de estímulo à sua expansão.
+ § 1º O Comitê previsto no caput será composto por um Conselheiro, que o presidirá, pelos Superintendentes da Agência e pelos seguintes membros efetivos externos:
+ I – Representantes do Ministério das Comunicações;
+ II – Representantes de Redes Comunitárias;
+ III – Representantes de Entidades de Classe de Prestadoras de Serviços de Telecomunicações; e
+ IV – Representantes de Entidades de Classe das Prestadoras de Pequeno Porte (PPP).
+ § 2º Poderão ser realizadas reuniões com a participação de outros representantes externos a critério do Presidente do Comitê.
+ § 3º O Secretário do Comitê de Redes Comunitárias será escolhido pelo Presidente dentre seus membros representantes da Anatel.
+ § 4º O Comitê de Redes Comunitárias reunir-se-á trimestralmente e, em caráter extraordinário, quando necessário, por convocação de seu Presidente.
+ § 5º As reuniões ordinárias e extraordinárias serão realizadas presencialmente em Brasília/DF ou integralmente por meio de videoconferência, a critério do Presidente do Comitê.
+ § 6º Nas reuniões presenciais será assegurada a participação por meio de videoconferência dos membros que assim desejarem.
+ § 7º As reuniões serão instaladas com a presença da maioria absoluta dos membros efetivos convocados.
+ § 8º As deliberações serão tomadas por maioria dos membros efetivos presentes.
+ § 9º O Regimento Interno do Comitê previsto no caput será aprovado por meio de Portaria de seu Presidente, que deve ser submetida ao procedimento de Consulta Pública antes de sua expedição.
+ Art. 2º Esta Resolução entra em vigor em XX de XXXXXX de 202X.
+ Observação (apagar): Conforme estabelecido no art. 4º do Decreto nº 10.139/2019, com exceção "às hipóteses de urgência justificada no expediente administrativo", os "atos normativos estabelecerão data certa para a sua entrada em vigor e para a sua produção de efeitos":
+ I - de, no mínimo, uma semana após a data de sua publicação; e
+ II - sempre no primeiro dia do mês ou em seu primeiro dia útil.
+ Dessa forma, se este for um ato normativo, o último dispositivo deve prever vacatio legis, em uma das duas formas acima.
+ Atenção:
+ a) O dispositivo de vacatio legis deve ser escrito de forma direta, p. ex.: "Esta Resolução entra em vigor em 3 de fevereiro de 2023".
+ b) Nunca fundamentar no dispositivo o porquê de ter o vacatio legis.
+ c) A fundamentação de ter vacatio legis ou mesmo a fundamentação da urgência para não ter vacatio legis deve constar nos autos do processo e não diretamente no texto normativo.
+ | 
+VII - Manifestação Tardia do Instituto Bem-Estar Brasil (IBEBrasil)
+Nos autos do processo nº 53500.095164/2025-07, foi recebida correspondência do Instituto Bem-Estar Brasil (IBEBrasil), protocolada em 6 de novembro de 2025 sob o SEI nº 14705002 e destinada ao meu gabinete, contendo proposta de ajustes regulatórios dirigidos a redes comunitárias e projetos públicos locais, mais especificamente sobre: "(i) PPDUR simbólico para Redes Comunitárias; (ii) numeração pública E.164; e (iii) direito de interconexão (incl. transporte de dados (ITD) e trânsito IP para redes por polígono com finalidade de políticas públicas e sociais no âmbito do SLP".
+A manifestação foi encaminhada à área técnica para tratamento e esta, em resposta ao demandante, relembrou que os temas foram amplamente debatidos no GT-RCOM, por meio de diálogo entre a Agência e os representantes de Redes Comunitárias, apresentando a visão da Agência sobre o tema, conforme havido naquele foro. Concluiu-se o relato reconhecendo a relevância da sugestão, mas divergindo da proposta apresentada, entendendo (conforme o constante do processo SEI nº 53500.059638/2017-39), não haver fatos novos que justifiquem à Anatel alterar o normativo recentemente expedido em abril de 2025 e, consequentemente, diante da impossibilidade de interconexão de redes, indicar que resta também prejudicado debate quanto à possibilidade de uso de numeração pública UIT E.164 pelas redes de telecomunicações de interesse restrito, conforme pleiteado pelo demandante.
+Entendo que a manifestação da área técnica bem endereça as questões demandadas, entendendo não haver necessidade de tratamento ulterior. Recomendo, unicamente, seja realizada conexão processual no SEI entre aqueles e os presentes autos para fins de registro documental.
+VIII - Possibilidade de sinergia com outras ações em curso na Anatel
+Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP)
+Paralelamente à instrução dos presentes autos e da realização das diversas iniciativas voltadas ao incentivo e fortalecimento das redes comunitárias e à reavaliação das regras aplicáveis a essas iniciativas, nos autos do processo nº 53500.078474/2025-59, partindo de minha proposta (SEI nº 14750651) de criação de grupo de trabalho de acompanhamento da implementação de políticas públicas e avaliação de ulterior criação de um comitê de implementação de políticas públicas, foi aprovada em novembro de 2025, nos termos do Voto nº 112/2025/PR (SEI nº 14754843), a criação do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e a expedição de determinação à área técnica para avaliar proposta de ulterior criação de Comitê de Implementação de Políticas Públicas (CIPP), conforme Ata de Circuito Deliberativo do Conselho Diretor nº 295/2025 (SEI nº 14830636).
+Em continuidade, por meio da Portaria nº 3086, de 28 de novembro de 2025 (SEI nº 14830998) foi formalmente constituído o GT-IPP, com a finalidade de avaliar o acompanhamento e a implementação de políticas públicas pela Anatel e realizar propostas para seu aprimoramento, inclusive para estimular o diálogo com a sociedade acerca das políticas públicas de telecomunicações. De modo complementar, pela Portaria de Pessoal nº 1267, de 28 de novembro de 2025 (SEI nº 14831029) fui designado como coordenador do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP). Finalmente, o Despacho Ordinatório SEI nº 14831116 formalizou determinação à Superintendência de Planejamento e Regulamentação - SPR para que, nos termos regimentais, instrua de forma célere processo de regulamentação voltado à análise quanto à criação do Comitê de Implementação de Políticas Públicas - CIPP, propondo ainda a inclusão de novo item na Agenda Regulatória da Anatel para o biênio 2025-2026, aprovada pela Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, para suportar a iniciativa. As atividades do GT-IPP foram iniciadas pelo encaminhamento do Ofício nº 36/2025/OP-ANATEL, de 2 de dezembro de 2025 e estão em curso desde então.
+Conforme detalhei na Matéria para apreciação do Conselho Diretor (MACD) nº 855/2025 (SEI nº 14750651), identifiquei lacuna concretizada na inexistência, na Agência, de uma camada de reflexão institucional consolidada sobre a implementação das diversas políticas públicas sob nossa competência. A Anatel, além de realizar a execução descentralizada das diversas políticas públicas afetas às nossas competências, consolida desde 2019 informações sobre a implementação e o atendimento de políticas públicas nos Relatórios de Gestão (RAG). No entanto, a despeito dessas iniciativas, inexiste uma leitura uniforme e sistematizada sobre as políticas públicas, que permita seu acompanhamento sistemático e que identifique institucionalmente, de modo consolidado, a efetividade de seus resultados.
+Além disso, outro ponto de atenção (especialmente considerando a natureza das políticas públicas e seu forte viés de impacto positivo na vida do cidadão), entendo que existe espaço para criação de mecanismos de estímulo que aprimorem o diálogo com a sociedade civil no processo de concretização das políticas públicas e, de modo cíclico, resultem na geração de subsídios para a revisão de políticas existentes ou formulação de novas políticas públicas.
+Assim, a pertinência da criação dessa estrutura está, em minha leitura, na possibilidade de geração de avaliação, interpretação dos diversos insumos correlacionados e a devolução à instituição por meio de produtos gerados a partir dessa leitura global e uniforme, elaborando insumos inclusive para as estruturas de governança da Anatel, tais como o Comitê Interno de Governança - CIG e Comissão de Gestão Executiva - CGE. Entre outros, a constituição imediata de um grupo de trabalho e a ulterior criação de um comitê de acompanhamento da implementação de políticas públicas permitem realizar avaliações que não são feitas hoje pela Anatel, tal como o mapeamento de interdependências causais entre as políticas públicas acompanhadas/implementadas e avaliação do impacto de uma política sobre outras e da atuação regulatória da agência sobre elas (e vice-versa). Ao contrário da visão institucional possível atualmente sobre as políticas públicas, a partir das diversas análises realizadas pontualmente, que permite somente uma otimização local/pontual, a estruturação institucional do acompanhamento do conjunto de políticas públicas de que participa a Anatel viabiliza uma leitura sistêmica e uma avaliação crítica mais aprofundada sobre possíveis impactos e melhorias, contribuindo para a sinergia e acúmulo de conhecimento institucionalmente.
+Entendo, conforme expus na ocasião, que múltiplas políticas operando simultaneamente sem esse tipo de coordenação tendem a criar ruído de dados (noisy data), situação em que a análise de dados incompletos, imprecisos ou inconsistentes (embora possam ter sentido completo numa leitura individual), potencialmente prejudicam a qualidade de análises e tomadas de decisão deles derivadas ou correlatas. Em outras palavras, uma visão parcial possibilita (entre outros) leituras distorcidas sem identificação de impactos sistêmicos relevantes. Da mesma forma, a inexistência de metas/objetivos internos claros (não quanto às políticas públicas em si, mas quanto ao seu conjunto enxergado como uma totalidade) dificulta a análise do pleno atingimento de seus resultados (“qual política causou que efeito nas demais”, por exemplo).
+Outro ponto que exemplifica a pertinência do aprimoramento da leitura consolidada institucional sobre as políticas públicas implementadas e seus impactos umas nas outras é o fato de que políticas que funcionam isoladamente podem se anular ou se reduzir quando combinadas. Aqui também, a falta de uma leitura institucional consolidada não permite que a Agência enxergue esse cenário se ou quando ele ocorrer. Percebo que sem análise cruzada, não há base objetiva para eventual sugestão de alocação de recursos escassos entre políticas concorrentes, reduzindo a possibilidade de consideração de aspectos técnicos e a prevalência de aspectos puramente políticos.
+Reitero que o aperfeiçoamento do acompanhamento continuado e integrado da implementação de políticas públicas no campo das comunicações é necessário para a garantia de direitos sociais e o fomento do pluralismo, contribuindo para uma real e efetiva participação da sociedade civil no processo de concretização de políticas públicas, de modo que o cidadão seja não apenas o alvo da política pública, mas seu ator central: de modo cíclico, a partir de um trabalho bem realizado, a implementação eficiente de políticas públicas, acompanhada da análise contínua e de reflexão acerca de seus desafios e resultados, constituem subsídios para a revisão de políticas existentes ou formulação de novas políticas públicas.
+A produção de conhecimento sistematizado pode, inclusive, contribuir não apenas no âmbito das ações realizadas pelo Poder Público em suas diversas esferas, mas também para o aprimoramento do conhecimento acadêmico de pesquisas em políticas públicas.
+Neste mesmo sentido, o Voto nº 112/2025/PR (SEI nº 14754843), que apreciou minha proposta e oportunamente submeteu-a ao colegiado, assinala o seguinte:
+Voto nº 112/2025/PR
+II - DA PROPOSTA DE ESTABELECIMENTO DO GT-IPP
+5.4. Com relação à proposta de estabelecimento do GT-IPP, entendo que seus objetivos estão bem delineados, sendo aderentes às atribuições e às responsabilidades da Anatel..
+5.5. De fato, consolidar os estudos sobre a efetividade das políticas públicas de telecomunicações em um mesmo grupo é medida de eficiência administrativa que favorece que a Anatel possa desempenhar de forma efetiva seu papel no ecossistema digital.
+5.6. Sobre a sistemática proposta para a constituição do GT, observo que há pleno alinhamento com casos pregressos deliberados pelo Conselho Diretor, a exemplo da criação do GT-Redes Comunitárias (processo nº 53500.008719/2023-19).
+5.7. No tocante aos aspectos de oportunidade e conveniência, considero que o GT tem o condão de contribuir para o aperfeiçoamento do acompanhamento da implementação de políticas públicas de telecomunicações no país e estimular o diálogo social acerca dessas políticas públicas.
+5.8. Ademais, tendo em vista a relevância da matéria, que exige atuação próxima do Conselho Diretor, bem como a natureza horizontal dos trabalhos, os quais envolvem todas as áreas da Agência e a interação com interlocutores externos, é salutar que a iniciativa seja coordenada por Conselheiro.
+(...)
+5.10. Assim, considero que a proposta de estabelecimento do GT-IPP pode contribuir muito para o aprimoramento das ações da Anatel no desenvolvimento de políticas públicas, razão pela qual proponho à deliberação do Colegiado a criação do Grupo conforme a Minuta de Portaria SEI nº 14757076, a qual reproduz a minuta apresentada pelo ilustre Conselheiro Octavio Pieranti, com pequenos ajustes de cunho meramente editorial.
+Como já afirmado anteriormente, a proposta concretizou-se na criação do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e na expedição de determinação à área técnica para avaliar proposta de ulterior criação de Comitê de Implementação de Políticas Públicas (CIPP) - o que, destaque-se, encontra-se em curso nos autos do processo nº 53500.103468/2025-47, em fase de submissão à Consulta Pública de proposta de criação do Comitê de Implementação de Políticas Públicas - CIPP, recentemente (29 de janeiro de 2026) distribuído à minha relatoria, conforme Certidão de Distribuição nº 15109398. 
+Interlocução entre iniciativas institucionais
+Avaliando a matéria trazida nos presentes autos sob uma visão sistêmica das finalidades de minha proposta que resultou no GT-IPP, entendo ser possível considerar a aglutinação desta matéria naquele fórum, conforme passarei a expor nos itens a seguir.
+A temática das redes comunitárias corresponde efetivamente a uma política pública trazida pela Lei nº 9.612/1998 e regulamentada pelo Decreto nº 2.615/1998. O arcabouço legal expressamente define como finalidade das redes comunitárias o atendimento a comunidades com vistas a dar oportunidade à difusão de ideias, elementos de cultura, tradições e hábitos sociais da comunidade; oferecer mecanismos à formação e integração da comunidade, estimulando o lazer, a cultura e o convívio social; prestar serviços de utilidade pública, integrando-se aos serviços de defesa civil, sempre que necessário; contribuir para o aperfeiçoamento profissional nas áreas de atuação dos jornalistas e radialistas, de conformidade com a legislação profissional vigente; e permitir a capacitação dos cidadãos no exercício do direito de expressão da forma mais acessível possível. Trata-se, portanto, de um importante instrumento de exercício de cidadania e democracia que deve ser estimulado e incentivado com os instrumentos regulatórios que melhor resultem nos objetivos pretendidos pelo Estado brasileiro.
+É, assim, imediata a percepção de sinergia temática: a análise integrada entre regulamentação específica das redes comunitárias e as políticas públicas como um todo contribui para uma maior coerência entre as propostas e ações regulatórias e a aproximação às diretrizes governamentais.
+A conjugação de ambas as iniciativas incrementa a visão sistêmica da Anatel sobre as matérias, permitindo ao órgão visualizar a interdependência entre políticas públicas em geral e também uma melhor avaliação de impactos recíprocos entre iniciativas de fomento às redes regulatórias e outras políticas públicas acompanhadas pela Anatel.
+Demais disso, a redução de potenciais estruturas paralelas e sobrepostas (com uma eventual criação, neste momento, de um comitê exclusivamente voltado para redes comunitárias e um futuro comitê de acompanhamento de políticas públicas) mitiga o risco de incremento de custos operacionais e permite tanto a racionalização do uso do recurso administrativo quanto do recurso humano disponível para a Anatel. Mitiga, ainda, por meio da consolidação de debates sobre as redes comunitárias no contexto das políticas públicas acompanhadas institucionalmente e da consequente eficiência deliberativa, uma potencial duplicidade de esforços e debates.
+Ao mesmo tempo, ao incorporar o tema das redes comunitárias nos debates sobre políticas públicas acompanhadas pela Anatel, permite-se uma ampliação do alcance nas discussões e debates pertinentes, por meio de uma representatividade social ampliada, viabilizando a participação externa ampla e cruzada nas discussões sobre políticas públicas e redes comunitárias, criando um Diálogo sociedade-Agência com espectro mais abrangente do que aquele permitido por iniciativas separadas (mesmo que complementares em diversos aspectos).
+Nessa linha, a imediata incorporação da matéria no Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP), com sua futura inclusão nos escopos do Comitê de Implementação de Políticas Públicas (CIPP) contribui, em minha leitura, de diversas formas para o contínuo aprimoramento da governança e atuação efetiva da Anatel tanto no acompanhamento das políticas públicas como um todo e do aprimoramento das ações (não apenas regulatórias) pertinentes às redes comunitárias.
+Pontos de Atenção
+Embora perceba significativas vantagens com a proposta ora apresentada, de incorporação da temática das redes comunitárias no contexto das ações em curso pelo Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP), noto que existem pontos de atenção nesse encaminhamento que devem ser observados tanto pelo GT-IPP quanto futuramente pelo Comitê que venha a substituílo.
+Neste sentido, é extremamente importante lembrar que o tema das redes comunitárias possui importância e relevância decorrentes de sua própria natureza, representando um segmento específico tanto setorial quanto socialmente. Assim, deve-se ativamente agir para evitar uma possível diluição temática do assunto e o risco de perda de foco em agenda ampla de políticas públicas, em que, potencialmente, demandas particulares podem ser preteridas.
+Além disso, deve-se prever e resguardar a ampla participação social, dotando os debates sobre a matéria de uma heterogeneidade que somente é possível alcançar com uma representatividade externa e socialmente ampla e com mecanismos de que mitiguem riscos de conciliação dessa mesma representatividade com as dinâmicas e tempos da máquina administrativa interna da Agência.
+Manifestação do Comitê de Redes Comunitárias
+De modo alinhado com minha proposta aqui apresentada, em 15 de janeiro de 2026, o Comitê de Redes Comunitárias enviou por correspondência eletrônica (SEI nº 15119943) manifestação contendo as seguintes sugestões (SEI nº 15119951), voltadas ao fortalecimento da participação social e garantia da continuidade do debate sobre temas correlatos às redes comunitárias no âmbito do GT de Acompanhamento da Implementação de Políticas Públicas (GT-IPP):
+Minuta de ajuste da Portaria do GT-IPP, incorporando mecanismos formais de participação social (participantes externos permanentes com direito a voz), recepção de propostas de pauta e garantia de apreciação e devolutiva;
+Minuta de Ato Administrativo do GT-IPP, como alternativa operacional imediata para institucionalizar o fluxo de participação social (propostas de pauta, inclusão em calendário/extraordinárias, sessões temáticas e rastreabilidade das contribuições), em conformidade com a finalidade do GT-IPP de “estimular o diálogo com a sociedade”.
+Motiva suas sugestões assinalando que a opção de abrir mão da continuidade do GT-Redes Comunitárias (GT-RCom), buscando a aderência do tema ao GT-IPP como espaço estruturante de debate e incidência regulatória e de políticas públicas, deve partir da premissa de não se poder retroceder no que foi conquistado em termos de participação social junto à Agência. Ao contrário, entende o referido Comitê que o GT-IPP, por sua natureza transversal, pode se tornar um ambiente mais perene e com maior capacidade de integração institucional, desde que se estabeleçam garantias procedimentais mínimas para que as contribuições da sociedade civil sejam efetivamente recebidas, processadas, debatidas e respondidas.
+Destaca, ainda, que o GT-RCom gerou avanços relevantes ao longo dos ultimos três anos, não apenas por ter aberto um canal direto de diálogo com a sociedade civil e com as redes comunitárias, mas por ter produzido acúmulo, evidências e encaminhamentos que fortaleceram a compreensão do tema dentro da Agência. Por isso, entende que a transição para o GT-IPP precisa ser feita preservando (e aprimorando) a efetividade desse canal de participação – com previsibilidade, rastreabilidade e possibilidade real de inclusão de pautas no calendário. Assinala, ainda, que suas propostas oferecem um caminho equilibrado: fortalecem a participação social sem alterar competências da Agência e sem interferir na dinâmica interna do GT-IPP, mas garantindo que as organizações e iniciativas de conectividade significativa (incluindo redes comunitárias) tenham um canal institucional estável para propor pautas, sustentar debates e acompanhar encaminhamentos — evitando qualquer descontinuidade do espaço de incidência construído.
+Finalmente, a contribuição tardia do Comitê de Redes Comunitárias indica haver temas correlatos de extrema relevância que carecem de finalização, inclusive por estarem distribuídos em processos administrativos distintos. Em especial:
+PGMC: assimetrias regulatórias para acesso a produtos de atacado, como TDACs ou Trânsito IP;
+Simplificação na homologação de equipamentos;
+Custo fixo simbólico ao espectro e maiores garantias de coordenação no uso secundário;
+Ajustes no RASA para aprimorar a conversão de ODFs em políticas públicas sociais e comunitárias.
+Acerca das propostas e considerações trazidas, entendo que seu mérito deve ser apreciado e incorporado nas ações e proposições do GT-IPP, de modo a alinha-las com outras iniciativas correlatas planejadas para aquela instância.
+De todo modo, vejo que a iniciativa do Comitê de Redes Comunitárias ilustra de modo claro as oportunidades trazidas com a feliz coincidência de momentos, entre a conclusão dos trabalhos originalmente previsto pelo GT-RCOM e o início dos trabalhos do GT-IPP, no aprimoramento da atuação da Anatel quanto às políticas públicas, da constituição de uma visão verdadeiramente holística sobre o universo de ações realizadas pela Agência em consonância com os nortes do Estado e governo brasileiros e da possibilidade extremamente relevante de aprimoramento real na participação social e inclusiva nos temas que têm, afinal, como destinatário último o cidadão brasileiro, independente de condição, classe, renda e localização (entre outros).
+Síntese conclusiva
+A partir do que foi exposto acima, entendo que a incorporação das conclusões constantes dos presentes autos nos trabalhos em curso pelo GT-IPP apresenta ganho administrativo expressivo, notadamente dada a evidente compatibilidade material entre seus objetos. Vejo, outrossim, que potenciais riscos, concentrados em aspectos operacionais e burocráticos, podem ser mitigados por meio de um processo interno que assegure espaço tanto para o tema das redes comunitárias quanto para a imprescindível participação externa, podendo, por exemplo, estruturar-se subgrupos de trabalho temáticos voltados ao assunto.
+Neste sentido e conforme todo o exposto acima, estou propondo a inserção da temática escopo do atual Grupo de Trabalho GT-Redes Comunitárias (GT-RCOM) no do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e posteriormente no do Comitê de Implementação de Políticas Públicas (CIPP), sem prejuízo de eventual constituição de subgrupo para tratar de redes comunitárias, a critério do próprio GT-IPP e posteriormente do CIPP.
+IX - Determinações do Conselho Diretor correlatas à matéria
+O Informe nº 20/2025/PRRE/SPR (SEI nº 13268420) apresenta, em seu capítulo "VI - DAS DETERMINAÇÕES DO CONSELHO DIRETOR COM IMPACTO NESTE PROJETO", parágrafos 3.27. a 3.36., descrição de determinações expedidas pelo Conselho Diretor da Anatel no Despacho Ordinatório de 13 de dezembro de 2024 (SEI nº 13018438), que, na leitura da área técnica possuem impactos no projeto objeto da presente matéria.
+O quadro a seguir sintetiza as determinações e as informações pertinentes trazidas pelas áreas técnicas, assim como apresenta análise de sua situação presente:
+ Determinação
+ | 
+ Informe nº 20/2025/PRRE/SPR (grifos nossos)
+ | 
+ Situação
+ | 
+ a) à Superintendência de Outorga e Recursos à Prestação (SOR) que (...) a3) em conjunto com a Superintendência de Planejamento e Regulamentação (SPR), disponibilize, na página da Anatel dedicada às Redes Comunitárias (https://www.gov.br/anatel/pt-br/regulado/universalizacao/redes-comunitarias), em linguagem simples e no prazo de 120 (cento e vinte dias), o manual ou link referente ao passo a passo para a implantação de redes de telecomunicações adequada às Redes Comunitárias, incluindo informações sobre como obter a outorga de prestação de serviço e a autorização de uso de radiofrequência por polígono;
+ | 
+ A página da Anatel sobre Redes Comunitárias foi recentemente atualizada e agora oferece diretrizes detalhadas sobre a obtenção de autorizações para a implementação dessas redes, incluindo o Serviço Limitado Privado (SLP) e o uso de radiofrequências. Além disso, destaca a criação do Grupo de Trabalho de Redes Comunitárias (GT-RCOM), que visa fomentar o diálogo entre a Anatel e representantes dessas redes, fortalecendo seu papel nas políticas de expansão das telecomunicações. Como fruto do Memorando de Entendimento (Memorandum of Understanding – MoU) firmado entre a Anatel e a Embaixada Britânica, a página também disponibiliza materiais de apoio, como o "Manual de Redes Comunitárias" e vídeos explicativos, para auxiliar interessados na implementação dessas iniciativas. (§3.29.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: b.1) no âmbito dos processos de revisão do Regulamento de Uso de Espectro - RUE (Processo nº 53500.012178/2019-47) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF (Processo nº 53500.045607/2022-68), avalie, sem prejuízo de outras medidas que entenda pertinentes:
+ | 
+ A análise dos pontos listados foi incluída no projeto de revisão do Regulamento de Uso do Espectro - RUE, objeto do item 20 da Agenda Regulatória 2025-2026 (processo nº 53500.012178/2019-47, Informe nº 27/2025/PRRE/SPR - SEI nº 13366650, item 3.26 e subitens). (§3.30.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: b.1) no âmbito dos processos de revisão do Regulamento de Uso de Espectro - RUE (Processo nº 53500.012178/2019-47) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF (Processo nº 53500.045607/2022-68), avalie, sem prejuízo de outras medidas que entenda pertinentes: b.1.1.) a necessidade de ajustes nas faixas de frequências, a fim de dar tratamento a eventuais incompatibilidades entre as aplicações que as Redes Comunitárias desejam implementar no Brasil e a atribuição e destinação das faixas de frequências de interesse; (...) caso as soluções envolvam Atos de Requisitos Técnicos, solicite à SOR a avaliação da viabilidade de sua edição frente às diretrizes que norteiam a gestão do espectro;
+ | 
+ Em consonância com o exposto no Relatório de Análise de Impacto Regulatório 11229605 e nos itens 3.33 a 3.39 do Informe nº 53/2024/PRRE/SPR (SEI nº 12026917), conforme estabelecido no Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências (PDFF), não há incompatibilidade entre as aplicações desejadas pelas redes comunitárias e as faixas de frequências disponíveis. As redes comunitárias podem operar associadas ao: Serviço de Comunicação Multimídia (SCM), para acesso coletivo à internet e comunicação de dados; Serviço Limitado Privado (SLP), para soluções locais e de interesse restrito, também com possibilidade de acesso à internet, na condição de usuárias. (...) O atual Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil, aprovado pela Resolução nº 772, de 16 de janeiro de 2025, já prevê faixas multidestinadas a esses serviços, garantindo flexibilidade para implementação de redes comunitárias sem necessidade de realocação de espectro. Portanto, não se identificam obstáculos regulatórios que exijam modificações no plano vigente. (§3.30.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: b.1) no âmbito dos processos de revisão do Regulamento de Uso de Espectro - RUE (Processo nº 53500.012178/2019-47) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF (Processo nº 53500.045607/2022-68), avalie, sem prejuízo de outras medidas que entenda pertinentes: b.1.1) a necessidade de ajustes nas faixas de frequências, a fim de dar tratamento a eventuais incompatibilidades entre as aplicações que as Redes Comunitárias desejam implementar no Brasil e a atribuição e destinação das faixas de frequências de interesse; b.1.1.1) caso as soluções envolvam Atos de Requisitos Técnicos, solicite à SOR a avaliação da viabilidade de sua edição frente às diretrizes que norteiam a gestão do espectro
+ | 
+ a Superintendência de Outorgas e Recursos à Prestação (SOR) já estabeleceu requisitos operacionais, aprovados por meio de Ato, para facilitar a implementação de tais redes sob condições de uso especiais, exigíveis em cada caso particular. A previsão do estabelecimento deste tipo de requisitos operacionais já está regulamentada pela Agência e foi mantida na minuta do Regulamento em análise conforme consta do art. 25 do documento SEI nº 13608200. Neste sentido, não há que se falar em ajustes adicionais à proposta do RUE.(§3.30.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: b.1) no âmbito dos processos de revisão do Regulamento de Uso de Espectro - RUE (Processo nº 53500.012178/2019-47) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF (Processo nº 53500.045607/2022-68), avalie, sem prejuízo de outras medidas que entenda pertinentes: b.1.2) formas de facilitar o compartilhamento de espectro, atentando-se especialmente aos temas 5 "Acesso ao espectro e mercado secundário" e 6 "Autorização em caráter secundário", ambos da Análise de Impacto Regulatório - AIR (SEI nº 6109814) do Regulamento de Uso do Espectro de Radiofrequências (RUE), nos quais foram elencadas alternativas para ampliar o uso da exploração industrial de radiofrequências
+ | 
+ há mecanismos regulatórios, já estabelecidos ou propostos neste projeto, que permitem que as redes comunitárias acessem o espectro de radiofrequências, a saber: I - uso de equipamentos de radiação restrita, que independe de autorização para uso de radiofrequências; II - possibilidade de conferência de autorizações para uso de radiofrequências em caráter secundário, que pode ser dar tanto em porção do espectro livre quanto em faixas já autorizadas em primário; III - possibilidade de autorização para uso temporário do espectro, para o desenvolvimento de experimentações e testes, por exemplo. Dessa forma, as redes comunitárias já dispõem de mecanismos adequados para acesso ao espectro no Brasil, alinhados ao PDFF e ao RUE. Recomenda-se, portanto, manter o atual PDFF, sem necessidade de redestinação de faixas, e fomentar acordos setoriais entre redes comunitárias e operadoras para uso de espectro ocioso. Também não se vislumbra necessidades adicionais de ajustes ao RUE além das já debatidas e apresentadas no presente processo. (§3.30.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: (...) b.2) avalie a necessidade de inserir assimetrias regulatórias em favor das Redes Comunitárias no Regulamento do Serviço Limitado Privado (SLP), aprovado pela Resolução nº 617, de 19 de junho de 2013, ou em outro regulamento que venha a substituí-lo;
+ | 
+ A análise da necessidade de inserir assimetrias regulatórias em favor das Redes Comunitárias no Regulamento do Serviço Limitado Privado (SLP), conforme aprovado pela Resolução nº 617, de 19 de junho de 2013, recentemente substituída pela Resolução nº 777, de 28 de abril de 2025 (SEI nº 13620990), revela que tal medida não é necessária, como já apontado no Relatório de Análise de Impacto Regulatório (SEI nº 11229605). O SLP é caracterizado por sua natureza de interesse restrito, resultando em uma carga regulatória já naturalmente mínima, a qual não impõe muitas das obrigações comumente associadas a serviços de telecomunicações mais amplos. As obrigações regulatórias do SLP são predominantemente de natureza técnica e burocrática. Isso inclui, por exemplo, a exigência de uso de equipamentos certificados, mas exclui responsabilidades relacionadas à qualidade do serviço e regulamentações sobre direitos dos consumidores, que são fundamentais em serviços com maior abrangência. Essa estrutura regulatória já proporciona um ambiente favorável para a operação de Redes Comunitárias, permitindo que essas iniciativas locais se desenvolvam sem o ônus de obrigações excessivas. É fato que as Redes Comunitárias têm um papel importante na promoção da inclusão digital e no fortalecimento da conectividade em áreas frequentemente negligenciadas por prestadoras de serviços tradicionais. Essas redes, por sua natureza, já operam em um contexto que favorece a flexibilidade e a inovação, características que se alinham com os princípios do SLP. A própria definição do SLP enfatiza sua função de atender a demandas específicas de comunidades, sem a complexidade imposta a serviços mais abrangentes. Portanto, ao considerar a intersecção entre o SLP e as Redes Comunitárias, é evidente que a manutenção da atual estrutura regulatória é suficiente para garantir a viabilidade e o crescimento dessas iniciativas. O arcabouço normativo aplicável ao SLP já traz as exigências para este tipo de operação, que são mínimas e restritas a questões burocráticas e a exigências legais (uso de equipamentos certificados, por exemplo). Assim, não parece factível e necessário estabelecer exigências ainda menores para as Redes Comunitárias, uma vez que aquelas aplicáveis ao SLP já são mínimas. (§3.32. e subitens)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: (...) b.3) no âmbito do Processo nº 53500.003897/2023-53, referente à revisão do Regulamento de Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589, de 7 de maio de 2012, considere eventuais aspectos que possam ser favoráveis ao desenvolvimento das redes comunitárias, a exemplo de medidas que visam o fomento da substituição de penas pecuniárias por sanções de obrigações de fazer
+ | 
+ A análise dos pontos listados foi incluída no projeto de revisão do Regulamento de Aplicação de Sanções Administrativas (RASA), objeto do item 13 da Agenda Regulatória 2025-2026 (processo nº 53500.003897/2023-53, Informe nº 23/2025/PRRE/SPR - SEI nº 13309187, item 3.53 e subitens): (...) 3.53.2. Sobre o assunto, esclarece-se que o Regulamento de Fiscalização Regulatória introduziu no ordenamento da Agência mecanismos de responsividade aptos e suficientes a endereçar a atuação da Agência em casos concretos em que sejam verificadas irregularidades relacionadas às redes comunitárias. Assim, a Agência passou a contar com instrumentos para melhor balizar as suas ações nesses casos. Menciona-se, inclusive, que o Regulamento que aprovou o RFR promoveu adaptações ao RASA para viabilizar a atuação responsiva da Agência sob o aspecto sancionatório. Não bastasse isso, o projeto de revisão do RASA em curso está sugerindo aprimoramentos ao regime das obrigações de fazer ali previsto, de modo a fomentar a sua aplicabilidade no âmbito do processo sancionatório da Agência. 3.53.3. Desse modo, entende-se que os aspectos indicados em referida determinação já estão devidamente endereçadas no ordenamento da Agência e no processo de revisão regulamentar em análise. (§3.33.)
+ | 
+ Concluído
+ | 
+ b) à Superintendência de Planejamento e Regulamentação (SPR) que, independentemente da existência de contribuições às Consultas Públicas: (...) b.4) no âmbito do Processo nº 53500.003904/2023-17, referente à revisão do Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019, avalie, com o apoio da SOR, a conveniência ou necessidade de adequações regulatórias com foco nas demandas das Redes Comunitárias, a fim de incentivar a implementação, a expansão e a sustentabilidade econômica dessas entidades
+ | 
+ A análise dos pontos listados foi levada ao Conselheiro relator do projeto de revisão da regulamentação de certificação e homologação de produtos de telecomunicações, objeto do item 18 da Agenda Regulatória 2025-2026 (processo nº 53500.003904/2023-17, Ofício nº 31/2025/PRRE/SPR-ANATEL - SEI nº 13267004), concluindo não haver adendos a serem feitos na minuta de Resolução enviada pela área técnica (SEI nº 12915947). (§3.34.)
+ | 
+ Concluído
+ | 
+ c) aos representantes da Anatel no Conselho Gestor do Fundo de Universalização dos Serviços de Telecomunicações (CGFUST), que submetam ao Conselho Gestor do Fust, no prazo de 90 (noventa) dias, proposta de inserção do tema "Redes Comunitárias" em seus cadernos técnicos, caso tal medida ainda não tenha sido providenciada
+ | 
+ Foram encaminhadas ao Conselho Gestor do Fundo de Universalização dos Serviços de Telecomunicações (CGFUST), em 19 de dezembro de 2024, propostas de alteração ao Caderno de Projetos Reembolsáveis para inclusão de projeto sobre apoio à Redes Comunitárias, e de Diretrizes para Edital de apoio à Redes Comunitárias dentro da rubrica não reembolsável a ser executado pelos agentes financeiros do Fundo. Anteriormente, na 7ª Reunião Ordinária do Conselho Gestor, realizada em 15 de abril de 2024, foi destacada a necessidade de mecanismos de financiamento para viabilizar a construção e a manutenção dessas redes. Este tema foi apontado como um dos mais relevantes na discussão. (§3.35.)
+ | 
+ Parcialmente concluído
+ | 
+ f) ao Grupo de Trabalho de Redes Comunitárias que apresente o mapeamento das redes comunitárias contemplando, no mínimo, a informação quanto às localidades onde se encontram, no prazo de 120 (cento e vinte) dias. A informação deverá ser encaminhada à SPR para a devida inserção nas planilhas disponíveis no Painel de Dados da Anatel, o que permitirá o direcionamento de ações específicas para o desenvolvimento dessas entidades, a exemplo da elaboração de projetos de obrigação de fazer.
+ | 
+ Durante a 6ª Reunião Ordinária do Grupo de Trabalho Redes Comunitárias, realizada nos dias 4 e 11 de outubro de 2024, solicitou-se aos representantes das redes comunitárias que se empenhassem no mapeamento dos locais dessas redes. Essa iniciativa inclui a possibilidade de preenchimento de um formulário de autodeclaração, que deve conter as informações necessárias. Como o assunto ainda não foi concluído pelo Grupo, não foi possível disponibilizar informações sobre as redes comunitárias no Painel de Dados da Anatel. (§3.36.)
+ | 
+ Pendente
+ | 
+Nota-se as determinações "a3)", "b1)", "b.1.1)", "b1.1.1)", "b.1.2)", "b2.)", "b.3)", "b.4)", foram endereçadas pelas áreas técnicas e podem ser, salvo melhor juízo, declaradas como concluídas quanto ao atendimento ao solicitado pelo Conselho Diretor no referido Despacho Ordinatório.
+Quanto à determinação "c)" entendo que a informação apresentada sinaliza para o atendimento do comando dado pelo Colegiado da Anatel, de submeter ao CGFUST a proposta de inserção do tema "Redes Comunitárias" em seus cadernos técnicos. No entanto, o comando de encaminhamento, em minha leitura não se encerra em si, sendo necessária a consecução de sua consequência lógica e esperada: a efetiva inclusão do tema em tela nos cadernos técnicos do CGFUST. Neste sentido, analisando o mais recente "Cadernos de Projetos Reembolsáveis (versão 8)", aprovado pelo Acórdão CG-Fust nº 60, de 8 de dezembro de 2025 (publicado em 30 de dezembro de 2025), que contem o escopo dos projetos, as possíveis entidades beneficiadas, os possíveis beneficiários, referências para métricas de custo e indicadores, verifiquei que, à despeito do encaminhamento realizado, verifico que o tema ainda não consta dos cadernos técnicos daquele Conselho Gestor. Entendo, portanto, pertinente determinar às áreas técnicas que acompanhem e realizem interlocução por meio dos representantes da Anatel junto ao CGFUST para a efetiva inserção do tema "Redes Comunitárias" nos cadernos técnicos.
+Finalmente, quanto à determinação "f)", as áreas técnicas indicam que o tema ainda não foi concluído no âmbito do GT-RCOM, pelo que entendo que deva restar registrado como pendente, sugerindo-se que, em consonância com as demais sugestões realizadas neste sentido na presente Análise, sua realização seja concretizada pelo GT-IPP em prazo a ser estipulado no âmbito dos trabalhos do referido grupo, restando prejudicado o prazo originalmente dado ao GT-RCOM, de 120 (cento e vinte dias).
+Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+As iniciativas regulatórias apresentadas neste documento têm como objetivo de realizar a reavaliação das regras aplicáveis às redes comunitária e contribuem, ainda, para o atingimento dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), que constituem compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, que contempla os 193 (cento e noventa e três) Estados-membro da ONU, incluindo o Brasil.
+Conforme disposto no portal da Organização das Nações Unidas no Brasil, “os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil”.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável que compõem a Agenda 2030, conforme figura abaixo:
+Figura 1 – Objetivos de Desenvolvimento Sustentável da Agenda 2030
+Dada a relevância das redes comunitárias como importante instrumento de fomento ao desenvolvimento econômico e social do país, a reavaliação das regras correlatas tende a colaborar para o alcance de diversos Objetivos de Desenvolvimento Sustentável.
+Em relação ao ODS 16. Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis, destaco especificamente a de nº 16.6, que visa desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis; e a de nº 16.7, que pretende garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis.
+Em relação ao ODS 10. Reduzir a desigualdade dentro dos países e entre eles, alinha-se a proposta aqui apresentada especialmente à de nº 10.2 Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra; e à de nº 10.4 Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade.
+CONCLUSÃO
+Face todo o acima exposto, voto por:
+ Inserir a temática escopo do atual Grupo de Trabalho GT-Redes Comunitárias (GT-RCOM) no escopo do Grupo de Trabalho de Implementação de Políticas Públicas (GT-IPP) e posteriormente no Comitê de Implementação de Políticas Públicas (CIPP), sem prejuízo de eventual constituição de subgrupo para tratar de redes comunitárias, a critério do próprio GT-IPP e posteriormente do CIPP..
+Quanto às Determinações constantes do Despacho Ordinatório de 13 de dezembro de 2024 (SEI nº 13018438:
+I - considerar concluídas as Determinações "a3)", "b1)", "b.1.1)", "b1.1.1)", "b.1.2)", "b2.)", "b.3)", "b.4)";
+II - quanto à Determinação "c)", determinar que as áreas técnicas acompanhem e realizem interlocução por meio dos representantes da Anatel junto ao CGFUST para a efetiva inserção do tema "Redes Comunitárias" em seus nos cadernos técnicos;
+III - quanto à Determinação "f)", determinar que sua realização seja concretizada pelo GT-IPP no prazo de 120 (cento e vinte dias);
+Determinar que o GT-IPP avalie as considerações e contribuições constantes da correspondência eletrônica (SEI nº 15119943) e anexo (SEI nº 15119951);
+Determinar a realização de conexão processual entre os presentes autos e o processo nº 53500.095164/2025-07; e
+Solicitar das áreas pertinentes a revisão do grau de restrição documental, caso necessário; e
+Considerar concluído o item nº 8 da Agenda Regulatória para o biênio 2025-2026, aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024, e suas alterações.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15049647 e o código CRC E1837408.
+ | 
+Referência: Processo nº 53500.003893/2023-75 | 
+SEI nº 15049647 |

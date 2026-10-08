@@ -1,0 +1,142 @@
+SEI/ANATEL - 14883151 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 29/2025/EH
+Processo nº 53500.029749/2023-69
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso Administrativo em razão de decisão proferida por meio do Despacho Decisório nº 320/2024/GR04AF/GR04/SFI (SEI nº 12602617) em que a recorrente questiona a legalidade de lançamento referentes a créditos tributários relacionados à Taxa de Fiscalização de Funcionamento (TFF).
+EMENTA
+DIREITO TRIBUTÁRIO. PROCESSO ADMINISTRATIVO FISCAL. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO (TFF). LANÇAMENTO REALIZADO AO TEMPO EM QUE SE TEM TUTELA JUDICIAL SUSPENDENDO EXIGIBILIDADE. RECURSO ADMINISTRATIVO DESPROVIDO.
+I. CASO EM EXAME
+Processo Administrativo Fiscal instaurado em desfavor de TELEFÔNICA BRASIL S.A. por não recolhimento da Taxa de Fiscalização de Funcionamento (TFF) nos exercícios de 2022 e 2023.
+Notificação de Lançamento recebida pela contribuinte, que apresentou impugnação alegando: inexistência de concomitância entre ação judicial e processo administrativo; pedido de cancelamento ou suspensão do lançamento; e ilegitimidade das multas. 
+Decisão de primeira instância reconheceu a procedência dos lançamentos, interrompeu a incidência de multa de mora e determinou a notificação da empresa. 
+Recurso administrativo interposto pela contribuinte, sustentando a nulidade do lançamento em razão de decisão judicial que suspendeu a exigibilidade do crédito. 
+Área técnica e Procuradoria Federal Especializada manifestaram-se pela regularidade do lançamento e pela impossibilidade de cancelamento da multa de mora, pois não aplicada.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a existência de decisão judicial suspendendo a exigibilidade do crédito tributário impede o lançamento da TFF e a imposição de multa de mora.
+III. RAZÕES DE DECIDIR 
+A suspensão da exigibilidade do crédito tributário por decisão judicial não impede a constituição do crédito por meio de lançamento, que deve ser realizado para prevenir a decadência.
+O lançamento deve ser regularmente notificado ao sujeito passivo, com esclarecimento de que a exigibilidade permanece suspensa.
+Não cabe aplicação de multa de mora enquanto perdurar a suspensão da exigibilidade, devendo ser imposta somente após decisão judicial definitiva que reconheça a exigibilidade do tributo.
+Não há nulidade no lançamento realizado, nem afronta à decisão judicial, pois não foram praticados atos executórios.
+O cancelamento da multa de mora é incabível, pois não houve sua aplicação. 
+IV. DISPOSITIVO E TESE 
+Recurso administrativo conhecido e desprovido. Mantida a decisão que reconheceu a procedência do lançamento da TFF, com suspensão da exigibilidade e interrupção da incidência da multa de mora.
+Tese de julgamento: "1. A existência de decisão judicial suspendendo a exigibilidade do crédito tributário não impede o lançamento da Taxa de Fiscalização de Funcionamento, que deve ser realizado para prevenir a decadência. 2. A incidência de multa de mora permanece interrompida enquanto perdurar a suspensão da exigibilidade, devendo ser imposta somente após decisão judicial definitiva que reconheça a exigibilidade do tributo. 3. Não há nulidade no lançamento realizado, nem afronta à decisão judicial, quando não praticados atos executórios."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (CTN), arts. 142, 145, 151, V; Lei nº 9.430/1996, art. 63; Decreto nº 70.235/1972, arts. 7º, 33; Decreto nº 7.574/2011, art. 86; Resolução nº 612/2013, arts. 115, 116; Portaria nº 642/2013, art. 5º, IV, a; Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: STJ, AgInt no REsp 1.948.748/SP, Rel. Min. Og Fernandes, Segunda Turma, j. 19/4/2022, DJe 6/5/2022; STJ, REsp 1.717.133/PR, Rel. Min. Herman Benjamin, Segunda Turma, j. 27/2/2018, DJe 26/11/2018; STJ, REsp 1.140.956/SP.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN).
+Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária Federal e dá outras providências.
+Lei nº 9.065, de 20 de junho de 1995, que dá nova redação a dispositivos da Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária federal, e dá outras providências.
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal, as contribuições para a seguridade social, o processo administrativo de consulta e dá outras providências.
+Lei nº 9.472, de 16 de julho de 1997, que dispõe sobre a organização dos serviços de telecomunicações, a criação e funcionamento de um órgão regulador e outros aspectos institucionais, nos termos da Emenda Constitucional nº 8, de 1995 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal.
+Lei nº 10.522, de 19 de julho de 2002, que dispõe sobre o Cadastro Informativo dos créditos não quitados de órgãos e entidades federais e dá outras providências.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Resolução nº 255, de 29 de março de 2001, que republica, com alterações, o Regulamento para Arrecadação de Receitas do Fundo de Fiscalização das Telecomunicações – Fistel.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Resolução nº 690, de 29 de janeiro de 2018, que aprova o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+Resolução Interna Anatel nº 338, de 15 de julho de 2024, que estabelece o limite para interposição de recurso de ofício no âmbito dos Processos Administrativos Fiscais.
+Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de análise do Processo Administrativo Fiscal (PAF) nº 53500.029749/2023-69 instaurado em desfavor de TELEFÔNICA BRASIL S.A., CNPJ nº 02.558.157/0001-62, em virtude do não recolhimento de valores relativos à Taxa de Fiscalização de Funcionamento (TFF), nos exercícios de 2022 e 2023.
+A Anatel procedeu ao lançamento dos créditos tributários por meio da Notificação de Lançamento nº 001-004887/2023/AFFO - ANATEL (SEI nº 10113463).
+A notificação foi recebida pelo contribuinte em 02/05/2023, conforme Certidão de Intimação Cumprida (SEI nº 10179165).
+Em Impuganção tempestiva, de 30/05/2023, (SEI nº 10316060), a Recorrente alegou, em síntese, que:
+a) Inexistência de concomitância entre a ação judicial e o presente processo administrativo; 
+b) Cancelamento da Notificação de Lançamento ou, ao menos, suspensão do processo enquanto durarem os efeitos da decisão que suspendeu a exigibilidade do crédito; e 
+c) Ilegitimidade das multas cominadas pela Notificação de Lançamento.
+Em face a referida Impugnação, em 24/10/2024, a Gerente Regional no Estado de Minas Gerais da Agência Nacional de Telecomunicações, Substituta, exarou o Despacho Decisório nº 320/2024/GR04AF/GR04/SFI (SEI nº 12602617), que acatou o Informe nº 327/2024/GR04AF/GR04/SFI (SEI nº 12509979). In verbis:
+Despacho Decisório nº 320/2024/GR04AF/GR04/SFI
+Processo nº 53500.029749/2023-69
+Interessado: TELEFÔNICA BRASIL S.A.
+A GERENTE REGIONAL NO ESTADO DE MINAS GERAIS DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, SUBSTITUTA, no uso de suas atribuições legais, regulamentares e regimentais, em especial a conferida pelo art. 1º da Portaria Anatel nº 2.798, de 27 de março de 2024 (SEI nº 11728682), que lhe delegou a competência prevista no art. 162, VI, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, para instaurar, instruir e decidir Processos Administrativos Fiscais (PAF-C), nos termos da Portaria Anatel nº 1.355, de 26 de julho de 2019, examinando os autos do Processo Administrativo Fiscal (PAF) nº 53500.029749/2023-69, instaurado em desfavor de TELEFÔNICA BRASIL S.A., CNPJ nº 02.558.157/0001-62;
+CONSIDERANDO as razões e justificativas constantes do Parecer Jurídico nº 13/2021/PFE-ANATEL/PGF/AGU (SEI nº 6426361);
+CONSIDERANDO as razões e justificativas constantes do Informe nº 327/2024/GR04AF/GR04/SFI (SEI nº 12509979),
+DECIDE:
+RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) dos exercícios de 2022 e 2023 constantes da Notificação de Lançamento nº 001-004887/2023/AFFO - ANATEL (SEI nº 10113463).
+INTERROMPER a incidência de Multa de Mora em relação aos créditos tributários contidos na Notificação de Lançamento nº 001-004887/2023/AFFO - ANATEL (SEI nº 10113463), devendo esta ser novamente imposta ao contribuinte 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo, nos termos do artigo 63, § 2º, da Lei Federal nº 9.430/1996.
+DETERMINAR a notificação da empresa, encaminhando cópia desta decisão.
+A Recorrente foi notificada do referido Despacho em 08/11/2024, conforme Certidão de Intimação Cumprida (SEI nº 12860534).
+Em 09/12/2024 (SEI nº 12900867), protocolou Recurso Administrativo (SEI nº 13001506), onde sustentou a improcedência dos Lançamentos Tributários materializados na Notificação de Lançamento nº 001-004887/2023/AFFO - ANATEL (SEI nº 10113463), em razão da prévia existência de decisão judicial que suspendeu a sua exigibilidade.
+Sequencialmente, analisando os argumentos postos no supracitado Recurso Administrativo, a área técnica, por meio do Informe nº 234 (SEI nº 14263384) entendeu que a alegação da Recorrente não merecia ser acatada, eis que a notificação de lançamento se deu de forma regular, em consonância com a norma e jurisprudência explicitadas, tendo se prestado a prevenir, na realidade, a decadência. Justamente por isso sobreveio o Despacho Decisório nº 207/2025 (SEI nº 14264268) com o seguinte teor:
+A SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, exercendo o juízo de admissibilidade recursal previsto no art. 115, § 1º, "b", do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+CONSIDERANDO o atendimento dos pressupostos de admissibilidade recursal, insculpidos no art. 116 do Regimento Interno da Anatel;
+CONSIDERANDO que a instrução obedeceu às disposições contidas no Regimento Interno da Agência, atendendo à sua finalidade, observando, especialmente, os princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõe o art. 2º da Lei 9.784, de 29/01/1999;
+CONSIDERANDO que a Superintendência de Administração e Finanças delegou à Superintendência de Controle de Obrigações a competência para instaurar, instruir e decidir Processos Administrativos Fiscais (PAF), nos termos da Portaria Anatel nº 2946/2025 (13215863);
+CONSIDERANDO as razões e justificativas constantes do Informe nº 234/2025/SCO (SEI nº 14263384),
+DECIDE:
+Conhecer do Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A., CNPJ nº 02.558.157/0001-62, contra o Despacho Decisório nº 320/2024/GR04AF/GR04/SFI (SEI nº 12602617);
+Encaminhar este processo previamente à Procuradoria Federal Especializada e, em seguida, ao Conselho Diretor para julgamento de mérito.
+Após, a Superintendência de Controle de Obrigações remeteu os autos para apreciação da Procuradoria Federal Especializada junto à Anatel, em razão do Recurso voluntário interposto, nos termos do art. 5º, IV, a, da Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017. Sobre o tema o referido dispositivo e a Resolução Interna da Anatel nº 338 assim estabelecem, respectivamente:
+Portaria nº 642, de 26 de julho de 2013
+Art.5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+[...]
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+Resolução Interna Anatel nº 338, de 15 de julho de 2024
+Art. 1º O Recurso de Ofício somente será cabível no Processo Administrativo Fiscal - PAF que, cumulativamente, esteja na fase litigiosa e cuja exoneração tenha sido superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais.
+§ 1º O valor total a que se refere o caput será verificado por processo.
+Dessa forma, tem-se o cabimento da PFE-Anatel em se manifestar no feito, já que além de ter havido recurso voluntário, o valor nominal dos lançamentos se enquadra na previsão da alínea ''a'', inciso IV do artigo 5º da Portaria nº 642. E assim o fez por meio do Parecer nº 337/2025 (SEI nº 14479239).
+Em sua análise, a Procuradoria Especializada junto à Anatel, entendeu, em síntese, que:
+a) [...] o lançamento realizado no caso em exame não encontra qualquer óbice na tutela antecipada que suspendeu a exigibilidade do respectivo crédito tributário. Inexiste causa de nulidade no expediente, nem afronta a decisão judicial. [...]
+b) [...] Ora, se incidência da multa de mora se encontra interrompida, por consequência não veio a ser aplicada, de modo que seu cancelamento é impossível. Com efeito, um crédito inexistente não pode ser objeto de cancelamento. [...]
+Derradeiramente, vieram os presentes autos, por sorteio, conforme Certidão de Distribuição (SEI nº 14796280).
+É o relatório.
+FUNDAMENTAÇÃO
+DOS REQUISITOS DE ADMISSIBILIDADE
+Tempestividade: nos termos do art. 33 do Decreto nº 70.235/1972, o presente recurso é tempestivo, uma vez que a prestadora foi notificada da decisão recorrida em 08/11/2024 (SEI nº 12860534), tendo o recurso sido interposto em 09/12/2024 (SEI nº 13001509), e, portanto, dentro do prazo legal de 30 (trinta) dias.
+Cabimento: o Recurso Administrativo se enquadra nas hipóteses dos arts. 115 e seguintes do Regimento Interno da Anatel.
+Legitimidade: a parte é legitimada para recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo, além de estar devidamente representada.
+Interesse: há interesse em recorrer, uma vez que a pretensão da recorrente não foi totalmente acolhida no julgamento de primeira instância.
+DA DESNECESSIDADE DE DILIGÊNCIAS ADICIONAIS
+Em 30/05/2025, foi emitida Notificação de Lançamentos (SEI nº 10113463), contendo informação de que os valores do caso em tela ainda não foram quitados.
+Portanto, uma vez satisfeitos os requisitos de admissibilidade da peça recursal, entende-se que não há necessidade de diligências adicionais, estando o processo apto à prolação de sua decisão de mérito, precedendo, contudo, o devido relatório.
+MÉRITO
+Como visto, cinge-se os autos a alegação de que o lançamento é nulo, uma vez que sua realização estaria vedada por tutela antecipada obtido no curso de ação judicial em curso no Tribunal Regional Federal da 1ª Região (nº 0014603- 44.2013.4.01.3400) para suspender a exigibilidade do crédito tributário.
+Sobre o ponto, parece existir uma confusão da Recorrente quanto ao fato de que, realmente não há dúvidas que a obtenção de tutela de urgência em ação judicial suspende a exigibilidade do crédito, como determina o art. 151, V, do CTN. 
+No entanto, relacionar a referida suspensão com o impedimento do lançamento do tributo é incorreto, tendo em vista o exposto no art. 86 do Decreto nº 7.574, de 29 de setembro de 2011 e o artigo 63 da Lei nº 9.430, de 1996, vejamos respectivamente:
+Decreto nº 7.574
+Art. 86. O lançamento para prevenir a decadência deverá ser efetuado nos casos em que existir a concessão de medida liminar em mandado de segurança ou de concessão de medida liminar ou de tutela antecipada, em outras espécies de ação judicial (Lei nº 5.172, de 1966 - Código Tributário Nacional, arts. 142, parágrafo único, e 151, incisos IV e V; Lei nº 9.430, de 1996, art. 63, com a redação dada pela Medida Provisória nº 2.158-35, de 2001, art. 70).
+§ 1º O lançamento de que trata o caput deve ser regularmente notificado ao sujeito passivo com o esclarecimento de que a exigibilidade do crédito tributário permanece suspensa, em face da medida liminar concedida (Lei nº 5.172, de 1966 - Código Tributário Nacional, arts. 145 e 151; Decreto nº 70.235, de 1972, art. 7º).
+§ 2º O lançamento para prevenir a decadência deve seguir seu curso normal, com a prática dos atos administrativos que lhe são próprios, exceto quanto aos atos executórios, que aguardarão a sentença judicial, ou, se for o caso, a perda da eficácia da medida liminar concedida.
+Lei nº 9.430, de 1996
+Art. 63. Na constituição de crédito tributário destinada a prevenir a decadência, relativo a tributo de competência da União, cuja exigibilidade houver sido suspensa na forma dos incisos IV e V do art. 151 da Lei nº 5.172, de 25 de outubro de 1966, não caberá lançamento de multa de ofício. (Redação dada pela Medida Provisória nº 2.158-35, de 2001)
+A medida liminar, portanto, não pode impedir a apuração e constituição do crédito, porquanto, nesse caso, acarretaria potencialmente sua extinção pelo decurso do quinquênio legal, produzindo prejuízo irreversível à Fazenda Pública, fulminando o próprio objeto do processo judicial. O lançamento, por isso, deve ser necessariamente realizado com vistas a prevenir sua caducidade.
+Portanto, não há qualquer irregularidade na realização do lançamento no presente caso, visto que necessário para resguardar o direito creditório da Anatel, inexistindo causa de nulidade no expediente, nem afronta a decisão judicial. Nesse sentido, expôs o Superior Tribunal de Justiça:
+TRIBUTÁRIO. AGRAVO INTERNO NO RECURSO ESPECIAL. DISCUSSÃO JUDICIAL DO CRÉDITO TRIBUTÁRIO. SUSPENSÃO DO PRAZO DECADENCIAL. IMPOSSIBILIDADE.
+1. A jurisprudência do STJ se firmou no sentido de que "a suspensão da exigibilidade do crédito tributário na via judicial impede a prática de qualquer ato contra o contribuinte visando à cobrança de seu crédito, tais como inscrição em dívida, execução e penhora, mas não impossibilita o Fisco de proceder ao lançamento com o desiderato de evitar a decadência, cuja contagem não se sujeita às causas suspensivas ou interruptivas" (AREsp n. 1.596.915/RS, relator Ministro Herman Benjamin, Segunda Turma, DJe de 25/6/2020). 
+2. Agravo interno a que se nega provimento.
+(AgInt no REsp n. 1.948.748/SP, relator Ministro Og Fernandes, Segunda Turma, julgado em 19/4/2022, DJe de 6/5/2022.)
+PROCESSUAL CIVIL E TRIBUTÁRIO. IPTU. LANÇAMENTO POR HOMOLOGAÇÃO. MANDADO DE SEGURANÇA. ERRO MATERIAL. SUSPENSÃO DO PRAZO. DECADÊNCIA. PRAZO QUINQUENAL. IMPOSSIBILIDADE. FUNDAMENTO AUTÔNOMO NÃO ATACADO. DEFICIÊNCIA DE MOTIVAÇÃO. APLICAÇÃO DAS SÚMULAS 283 E 284 DO STF. ALÍNEA "C". NÃO DEMONSTRAÇÃO DA DIVERGÊNCIA.
+(…) 3. Ademais, a jurisprudência do STJ orienta-se no sentido de que a suspensão da exigibilidade do crédito tributário na via judicial impede a prática de qualquer ato contra o contribuinte visando à cobrança de seu crédito, tais como inscrição em dívida, execução e penhora, mas não impossibilita o Fisco de proceder ao lançamento com o desiderato de evitar a decadência, cuja contagem não se sujeita às causas suspensivas ou interruptivas. Precedentes: EREsp 572.603/PR, Rel. Ministro Castro Meira, Primeira Seção, DJ 5/9/2005; AgRg no REsp 1.183.538/RJ, Rel. Ministro Benedito Gonçalves, Primeira Turma, DJe 24/8/2010; AgRg no REsp 1.058.581/RS, Rel. Ministro Mauro Campbell Marques, Segunda Turma, DJe 27/5/2009; REsp 977.386/RS, Rel. Ministro José Delgado, Primeira Turma, DJe 7/8/2008. (…)
+(REsp n. 1.717.133/PR, relator Ministro Herman Benjamin, Segunda Turma, julgado em 27/2/2018, DJe de 26/11/2018.)
+Desse modo, a Notificação de Lançamento nº001-004887/2023/AFFO - ANATEL (SEI nº 10113463), emitida em consonância com a norma e jurisprudência explicitadas, se prestou a prevenir a decadência.
+Ademais, a contribuinte não efetuou o depósito judicial integral, e, caso o tivesse feito e trazido aos autos, impediria inclusive o ajuizamento da execução fiscal. Sobre o tema, o Superior Tribunal de Justiça (STJ), no âmbito do REsp nº 1.140.956 - SP, decidiu que os efeitos da suspensão da exigibilidade pela realização do depósito judicial integral do crédito tributário possuem o condão de impedir a lavratura do auto de infração sobre a mesma matéria. Assim, a Anatel pode, por precaução, notificar o contribuinte do lançamento de ofício quando não há o depósito judicial integral do tributo em discussão.
+Assim sendo, o lançamento de crédito com exigibilidade suspensa pode, e deve ser feito, a fim de prevenir sua decadência.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs). 
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por:
+a) conhecer do presente recurso, por estarem preenchidos os requisitos de admissibilidade e, no mérito, negar-lhe provimento, mantendo-se a decisão recorrida que, corretamente, manteve o lançamento de crédito, com a exigibilidade suspensa, a fim de previnir a decadência, além de reproduzir os termos exatos do art. 63, §2º, da Lei nº 9.430, de 1996, que determina a interrupção da incidência da multa de mora, e não seu cancelamento, devendo esta ser novamente imposta ao contribuinte em até 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo, nos termos do artigo 63, § 2º, da Lei Federal nº 9.430/1996.
+b) determinar, conforme consideração realizada pela Procuradoria Federal Especializada, o saneamento dos registros indevidos no sistema de multa sem existência jurídica, incluídas em razão de limitações técnicas já superadas, caso ainda persistam.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14883151 e o código CRC 2FDAAB56.
+ | 
+Referência: Processo nº 53500.029749/2023-69 | 
+SEI nº 14883151 |

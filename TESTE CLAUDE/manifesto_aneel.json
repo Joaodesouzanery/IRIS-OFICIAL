@@ -1,0 +1,334 @@
+{
+ "ckan:pautas-e-atas-das-reunioes-publicas-da-diretoria": {
+  "fonte": "dadosabertos.aneel.gov.br",
+  "url": "https://dadosabertos.aneel.gov.br/api/3/action/package_show?id=pautas-e-atas-das-reunioes-publicas-da-diretoria",
+  "arquivo": "fonte/aneel/pkg_pautas-e-atas-das-reunioes-publicas-da-diretoria.json",
+  "http": 200,
+  "ok": true,
+  "sha256": "2ae4fff5ea6c596ef208f3d25c637f2f8963e8efd6bdd14fa08b98f9e2f9335d",
+  "bytes": 6962,
+  "erro": "",
+  "obs": ""
+ },
+ "ckan:reunioes-publicas-da-diretoria": {
+  "fonte": "dadosabertos.aneel.gov.br",
+  "url": "https://dadosabertos.aneel.gov.br/api/3/action/package_show?id=reunioes-publicas-da-diretoria",
+  "arquivo": "fonte/aneel/pkg_reunioes-publicas-da-diretoria.json",
+  "http": 200,
+  "ok": true,
+  "sha256": "b265bef6a24c7c691edbbfc6e327d334f67d0a708c45e59b69186b82530e6ec8",
+  "bytes": 7803,
+  "erro": "",
+  "obs": ""
+ },
+ "csv:pautas_atas": {
+  "fonte": "dadosabertos.aneel.gov.br",
+  "url": "https://dadosabertos.aneel.gov.br/dataset/a9fb5b4b-59ca-4be8-9690-876d9547271d/resource/43386a8b-4781-44ec-a082-fa7fdfe33186/download/pautas-atas-reunioes-publicas-diretoria.csv",
+  "arquivo": "fonte/aneel/pautas_atas.csv",
+  "http": 200,
+  "ok": true,
+  "sha256": "5ee85938a04d5d5a7739e8153fc5a5658ecd5e954167ac1ac11203fd0377c425",
+  "bytes": 19015119,
+  "erro": "",
+  "obs": "modificado 2026-10-02T03:04:43.673170; resource_id 43386a8b-4781-44ec-a082-fa7fdfe33186"
+ },
+ "csv:reunioes": {
+  "fonte": "dadosabertos.aneel.gov.br",
+  "url": "https://dadosabertos.aneel.gov.br/dataset/43dd358f-0ee2-4eb5-80f6-73461bd7d2d1/resource/0ed659f8-eb6c-4fe9-8784-36df0e07c74a/download/reunioes-publicas-diretoria.csv",
+  "arquivo": "fonte/aneel/reunioes.csv",
+  "http": 200,
+  "ok": true,
+  "sha256": "a69f00a4e827419e8aeb32e32e73909da3d603a6e601502441a97e2849154eee",
+  "bytes": 31887,
+  "erro": "",
+  "obs": "modificado 2026-10-01T05:01:21.351084; resource_id 0ed659f8-eb6c-4fe9-8784-36df0e07c74a"
+ },
+ "dicionario:Dicionário de dados": {
+  "fonte": "dadosabertos.aneel.gov.br",
+  "url": "https://dadosabertos.aneel.gov.br/dataset/43dd358f-0ee2-4eb5-80f6-73461bd7d2d1/resource/de493bde-44a7-4de3-85bb-3d62453baea5/download/dd-reunioes-publicas-da-diretoria-da-aneel.pdf",
+  "arquivo": "fonte/aneel/dic_de493bde.pdf",
+  "http": 200,
+  "ok": true,
+  "sha256": "2c5254c6a6e0487098912c79f5d1b243d511edba6c83be96c1e71787e25c5435",
+  "bytes": 149618,
+  "erro": "",
+  "obs": "dicionario de dados"
+ },
+ "govbr:reunioes-publicas": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas",
+  "arquivo": "fonte/aneel/reunioes-publicas.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "3607dce87161e0999a250dfc27893273a6a37332c6eb35eb21b5abcc5a91d59f",
+  "bytes": 216647,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:pautas-e-atas": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/pautas-e-atas",
+  "arquivo": "fonte/aneel/rp_pautas-e-atas.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "f862f2dab24faad1085bf52ee58c1d6954af664d1232de9ee807d92552a85bea",
+  "bytes": 220198,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:calendario": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/calendario",
+  "arquivo": "fonte/aneel/rp_calendario.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "84b575497d3ec9dc74f87d088aa27c98d778acd16c7b11aa75177fbd937bba62",
+  "bytes": 234339,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:distribuicao-de-processos": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/distribuicao-de-processos",
+  "arquivo": "fonte/aneel/rp_distribuicao-de-processos.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "2b650d4fdcdd7954d8b1374690dbb28d21aab98a3e154b75dfbd2de9037e6aa7",
+  "bytes": 222219,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:informativo-aneel-de-deliberacoes-da-diretoria": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/informativo-aneel-de-deliberacoes-da-diretoria",
+  "arquivo": "fonte/aneel/rp_informativo-aneel-de-deliberacoes-da-diretoria.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "271a36ea3d33347e7e98f94d420768ffd3f107371b5f9315f9f9ca1bb119c53c",
+  "bytes": 218342,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:videos-das-reunioes": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/videos-das-reunioes",
+  "arquivo": null,
+  "http": 0,
+  "ok": false,
+  "sha256": null,
+  "bytes": 0,
+  "erro": "curl: (56) CONNECT tunnel failed, response 403",
+  "obs": ""
+ },
+ "govbr:decisoes-monocraticas": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/decisoes-monocraticas",
+  "arquivo": "fonte/aneel/rp_decisoes-monocraticas.html",
+  "http": 200,
+  "ok": true,
+  "sha256": "64a5dea1d4df28ee3688a30db2c77bdb1627af614b3ea1cf46167862751f9aae",
+  "bytes": 221358,
+  "erro": "",
+  "obs": ""
+ },
+ "govbr:sustentacao-oral": {
+  "fonte": "www.gov.br",
+  "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/sustentacao-oral",
+  "arquivo": null,
+  "http": 0,
+  "ok": false,
+  "sha256": null,
+  "bytes": 0,
+  "erro": "curl: (35) Recv failure: Connection reset by peer",
+  "obs": ""
+ },
+ "chromium:headless:https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://www2.aneel.gov.br/cedoc/prt20257014.pdf": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/cedoc/prt20257014.pdf",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://reuniaodiretoria.aneel.gov.br/": {
+  "fonte": "reuniaodiretoria.aneel.gov.br",
+  "url": "https://reuniaodiretoria.aneel.gov.br/",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_CONNECTION_RESET at https://reuniaodiretoria.aneel.gov.br/",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://biblioteca.aneel.gov.br/acervo/detalhe/257019": {
+  "fonte": "biblioteca.aneel.gov.br",
+  "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "obs": "Chromium headless"
+ },
+ "chromium:headless:https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
+  "fonte": "sei.aneel.gov.br",
+  "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+  "obs": "Chromium headless"
+ },
+ "chromium:headed(xvfb):https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://www2.aneel.gov.br/cedoc/prt20257014.pdf": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/cedoc/prt20257014.pdf",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "status 403 / titulo 'Um momento…'",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://reuniaodiretoria.aneel.gov.br/": {
+  "fonte": "reuniaodiretoria.aneel.gov.br",
+  "url": "https://reuniaodiretoria.aneel.gov.br/",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_CONNECTION_RESET at https://reuniaodiretoria.aneel.gov.br/",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://biblioteca.aneel.gov.br/acervo/detalhe/257019": {
+  "fonte": "biblioteca.aneel.gov.br",
+  "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "chromium:headed(xvfb):https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
+  "fonte": "sei.aneel.gov.br",
+  "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
+  "arquivo": null,
+  "ok": false,
+  "http": null,
+  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+  "obs": "Chromium headed(xvfb)"
+ },
+ "curl:https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "HTTP 403",
+  "obs": "curl"
+ },
+ "curl:https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "HTTP 403",
+  "obs": "curl"
+ },
+ "curl:https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/aplicacoes/noticias_area/dsp_listarProcessosCancelados.cfm?idarea=424&idPerfil=3&idAreaNoticia=424&c=1",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "HTTP 403",
+  "obs": "curl"
+ },
+ "curl:https://www2.aneel.gov.br/cedoc/prt20257014.pdf": {
+  "fonte": "www2.aneel.gov.br",
+  "url": "https://www2.aneel.gov.br/cedoc/prt20257014.pdf",
+  "arquivo": null,
+  "ok": false,
+  "http": 403,
+  "erro": "HTTP 403",
+  "obs": "curl"
+ },
+ "curl:https://reuniaodiretoria.aneel.gov.br/": {
+  "fonte": "reuniaodiretoria.aneel.gov.br",
+  "url": "https://reuniaodiretoria.aneel.gov.br/",
+  "arquivo": null,
+  "ok": false,
+  "http": 0,
+  "erro": "curl: (35) Recv failure: Connection reset by peer",
+  "obs": "curl"
+ },
+ "curl:https://biblioteca.aneel.gov.br/acervo/detalhe/257019": {
+  "fonte": "biblioteca.aneel.gov.br",
+  "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "arquivo": null,
+  "ok": false,
+  "http": 0,
+  "erro": "curl: (56) CONNECT tunnel failed, response 403",
+  "obs": "curl"
+ },
+ "curl:https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
+  "fonte": "sei.aneel.gov.br",
+  "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
+  "arquivo": null,
+  "ok": false,
+  "http": 0,
+  "erro": "curl: (56) CONNECT tunnel failed, response 403",
+  "obs": "curl"
+ }
+}

@@ -1,0 +1,101 @@
+SEI/ANATEL - 15051701 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 13/2026/CL
+Processo nº 01217.010978/2025-73
+Interessado: Cidadão
+CONSELHEIRO
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALI
+ASSUNTO
+Recurso de 2ª Instância apresentado no Fala.BR - Plataforma Integrada de Ouvidoria e Acesso à Informação
+EMENTA
+DIREITO ADMINISTRATIVO. ACESSO À INFORMAÇÃO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. FALA.BR. FORNECIMENTO DE INFORMAÇÕES. NÃO CONHECIMENTO DO RECURSO.
+I. CASO EM EXAME
+1. Recurso administrativo de segunda instância apresentado por cidadão no âmbito do Fala.BR, visando obter o número do processo, cópia do processo, ordem de serviço ou referência sobre atividade de fiscalização em curso relacionada às interrupções de serviço de prestadora de serviços de telecomunicações de interesse coletivo.
+II. QUESTÃO EM DISCUSSÃO
+2. Há duas questões em discussão: (i) saber se a informação solicitada pelo cidadão foi efetivamente prestada pelas instâncias inferiores; e (ii) saber se estão presentes os requisitos legais para conhecimento do recurso administrativo de segunda instância.
+III. RAZÕES DE DECIDIR
+3. A informação solicitada, consistente no número do processo de fiscalização, foi apresentada ao cidadão em resposta ao recurso de primeira instância.
+4. O recurso de segunda instância não trouxe elementos que demonstrassem insuficiência da resposta, limitando-se a alegar ausência de atendimento.
+5. O art. 15 da Lei nº 12.527/2011 prevê a possibilidade de recurso apenas em caso de indeferimento de acesso à informação ou às razões da negativa.
+6. Não houve indeferimento de acesso à informação, pois o número do processo foi fornecido, pelo que não estão presentes os requisitos legais para conhecimento do recurso administrativo.
+IV. DISPOSITIVO E TESE
+7. Recurso administrativo não conhecido.
+Tese de julgamento: "1. Nos termos do art. 15 da Lei nº 12.527, de 18 de novembro de 2011, para conhecimento do recurso administrativo em pedido de acesso à informação, é necessário que a informação ou as razões para a negativa do acesso a esta tenham sido negadas."
+REFERÊNCIAS
+Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação).
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Matéria para Apreciação do Conselho Diretor nº 23/2026 (SEI nº 15034409).
+Base de Conhecimento da CGU sobre o Fala.BR.
+Pedido de Acesso à Informação Fala.BR - Plataforma Integrada de Ouvidoria e Acesso à Informação nº 01217.010978/2025-73.
+RELATÓRIO
+Trata-se de recurso de segunda instância em pedido de acesso à informação apresentado por cidadão em que postula a identificação da atividade de fiscalização em curso relacionada às interrupções de serviço incorridas pela Claro.
+Em 4 de dezembro de 2025, o cidadão interessado apresentou pedido de acesso à informação nos seguintes termos:
+Fala.BR - Pedido Original
+"Resumo:
+Número ou acesso ao processo de atividade de fiscalização sobre a prestadora Claro sobre interrupção de serviço
+Extrato:
+Em 28/10/2025 encaminhei solicitação à Anatel, protocolo nº 202510286915622 e dentro da solicitação, pela Gerência de Controle de Obrigações de Qualidade foi respondido: "Por fim, informa-se que já se encontra em andamento atividade de fiscalização sobre a prestadora Claro, abrangendo a apuração da regularidade das notificações de interrupção de serviço, que subsidiam o indicador de disponibilidade (IND8), referente ao ano de 2025. Caso, ao final dessa fiscalização, se constate que a prestadora deixou de reportar ou reportou de forma indevida os dados para o cálculo do IND8, ela estará passível de sancionamento nos termos do art. 33 do RQUAL.".
+Na mesma solicitação eu respondi: "Gostaria ainda de receber o número do processo, ordem de serviço ou alguma referência sobre essa atividade de fiscalização, para que mais para frente eu possa acompanhar e ter acesso ao resultado.".
+No entanto, o prazo de resposta venceu em 23/11/2025 e nenhuma resposta foi incluída.
+Por meio deste pedido de acesso à informação, solicito o número do processo, copia do processo, ordem de serviço ou alguma referência sobre a referida "... atividade de fiscalização sobre a prestadora Claro, abrangendo a apuração da regularidade das notificações de interrupção de serviço..."
+Registre-se que nesta data foi publicado os Selos de Qualidade 2025 https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-lanca-selos-de-qualidade-2025-em-novo-ap licativo-paginas-focadas-no-consumidor"
+A Gerência de Controle de Obrigações de Qualidade (COQL) apresentou resposta nos seguintes termos:
+Fala.BR - Resposta
+"Prezado(a) Senhor(a),
+Sobre o assunto, informa-se que o cidadão registrou manifestação no Sistema Fala.BR, sob o protocolo nº 01217.010758/2025-40 (https://www.anatel.gov.br/seipesquisa), com o mesmo teor da presente demanda, na qual informou ter encaminhado solicitação à Anatel em 28/10/2025, via sistema Anatel Consumidor (https://apps.anatel.gov.br/AnatelConsumidor) registrada sob o protocolo nº 202510286915622, sem ter obtido resposta no prazo, e requerendo o acionamento da COQL para manifestação e esclarecimento do descumprimento do prazo. Registra-se que tal demanda foi devidamente respondida por meio do Ofício nº 679/2025/COQL/SCO-Anatel (SEI nº 14820421), encaminhado em 09 de dezembro de 2025 (cópia em anexo).
+Assim, conforme a resposta expedida por meio do Ofício nº 679/2025/COQL/SCO-Anatel (SEI nº 14820421), reafirma-se que a ausência de resposta tempestiva foi reconhecida pela Agência em razão do elevado volume de demandas recebidas no período. Quanto ao mérito do pedido de acesso à informação, informa-se que a atividade de fiscalização mencionada ainda se encontra em curso, não tendo sido concluídas as etapas internas de apuração, consolidação e validação dos achados. Nesse contexto, não há, no momento, processo administrativo conclusivo, ordem de serviço finalizada ou outro documento formal com conteúdo definitivo sobre os resultados da fiscalização passível de divulgação ao público.
+Destaca-se que, nos termos da Lei nº 12.527/2011 (Lei de Acesso à Informação), o dever de transparência limita-se às informações existentes e formalmente produzidas no âmbito da Administração. Atividades fiscalizatórias em andamento possuem natureza preparatória, e seus elementos somente se tornam públicos após a conclusão dos trabalhos e a análise dos resultados pela área técnica competente.
+Ressalta-se, ainda, que esta Agência já prestou ao requerente, inclusive por outros canais de atendimento, como o Anatel Consumidor, todas as informações existentes e sob sua guarda relacionadas ao tema, em respostas anteriores, não havendo, até o momento, novos elementos documentais passíveis de divulgação.
+Por fim, como a plataforma Fala.BR não permite interações sucessivas entre o cidadão e o órgão no âmbito de um mesmo pedido e, tendo em vista que o recurso previsto na LAI é cabível exclusivamente nos casos de negativa de acesso à informação ou de não fornecimento das razões da negativa do acesso, caso ainda permaneçam dúvidas, poderá registrar um novo pedido de acesso à informação."
+Frente a essa resposta, o cidadão apresentou o seguinte Recurso de Primeira instância, dirigido à Superintendência de Controle de Obrigações:
+Fala.BR - Recurso de Primeira Instância
+"Mais uma vez se reafirma que "... atividade de fiscalização mencionada ainda se encontra em curso...", de todo modo não é informado nenhuma referencia, número, mesmo que inicial, assim como foi solicitado no pedido inicial.
+Se existe alguma ação, existe pelo menos algum número, mesmo que não haja conclusão. Nesses termos, reitero o pedido de acesso à informação para o seu atendimento mínimo."
+A Superintendência de Controle de Obrigações, a seu turno, apresentou a seguinte resposta:
+Fala.BR - Resposta ao Recurso de Primeira Instância
+"Preliminarmente, informa-se que registrou manifestação no Sistema Fala.BR, sob o protocolo nº 01217.010758/2025-40 (acesse os documentos públicos em https://www.anatel.gov.br/seipesquisa), com o mesmo teor da presente demanda, na qual informou ter encaminhado solicitação à Anatel em 28/10/2025, via sistema Anatel Consumidor registrada sob o protocolo nº 202510286915622, sem ter obtido resposta no prazo, e requerendo o acionamento da Gerência de Controle de Obrigações de Qualidade (COQL) para manifestação e esclarecimento do descumprimento do prazo. Registra-se que tal demanda foi devidamente respondida por meio do Ofício nº 679/2025/COQL/SCO-Anatel (em anexo), encaminhado em 09 de dezembro de 2025.
+No tocante ao mérito, reitera-se os termos já manifestados por meio dos Ofícios nº 679/2025/COQL/SCO-Anatel (SEI nº 14820421) e nº 731/2025/COQL/SCO-ANATEL (14916233 - em anexo), quando reafirmou que a atividade de fiscalização mencionada se encontrava em curso, não tendo sido concluídas as etapas internas de apuração, consolidação e validação dos achados.
+Nesse contexto, embora as atividades de fiscalização de campo tenham sido executadas, a consolidação e a análise interna dos achados ainda não foram concluídas, incidindo grau de sigilo sobre as informações, a exemplo dos processos 53524.001189/2025-71 (Claro S.A.), 53524.000932/2025-76 (Telefônica S.A.), 53524.000933/2025-11 (TIM S.A.) e 53524.004319/2025-28 (Algar S.A.). Acesse os documentos públicos em https://www.anatel.gov.br/seipesquisa
+Destaca-se que, nos termos da Lei nº 12.527/2011 (Lei de Acesso à Informação), o dever de transparência limita-se às informações existentes e formalmente produzidas no âmbito da Administração. Atividades fiscalizatórias em andamento possuem natureza preparatória, e seus elementos somente se tornam públicos após a conclusão dos trabalhos e a análise dos resultados pela área técnica competente.
+Ressalta-se, ainda, que esta Agência já prestou ao requerente, inclusive por outros canais de atendimento, como o Anatel Consumidor, todas as informações existentes e sob sua guarda relacionadas ao tema, em respostas anteriores, não havendo, até o momento, novos elementos documentais passíveis de divulgação.
+Por fim, cabe esclarecer que a interposição de recurso é cabível exclusivamente nos casos de negativa de acesso à informação já produzida e disponível no órgão demandado ou caso não sejam fornecidas as razões da negativa de acesso à informação solicitada. Dessa forma, eventual recurso não deve ter o objetivo de reiterar a solicitação já analisada e respondida (justificada) nem de abordar um novo assunto, mas?deve se ater exclusivamente à negativa de acesso às informações ou às razões da negativa de acesso. E, caso queira fazer uma pergunta diferente, não entre com recurso. Nesse caso, faça um novo pedido de acesso à informação"
+Frente ao exposto acima, o cidadão apresentou novo recurso administrativo, desta vez direcionado ao Conselho Diretor, em que pondera:
+Fala.BR - Recurso de Segunda Instância
+"Considerando que a manifestação inicial se restringe a informações sobre ?... atividade de fiscalização mencionada ainda se encontra em curso...?.
+Considerando que ainda não foi fornecida nenhuma informação relativa ao pleito, havendo a apresentação reiterada e informações diversas e aleatórias.
+Nada mais há de se fazer a não ser o caminho recursal em busca do pleno atendimento."
+Destaco ainda que o prazo para resposta da Agência finaliza em 19 de janeiro de 2026.
+A área técnica instruiu os autos com o Informe nº 9/2026/COQL/SCO (SEI nº 15030937), do qual destaco o seguinte excerto, que resume o posicionamento da área técnica:
+Informe nº 9/2026/COQL/SCO (SEI nº 15030937)
+"3.10. Sobre as razões recursais, reiteram-se as informações já apresentadas nas respostas encaminhada nas instâncias anteriores, tidas como válidas e suficientes ao endereçamento da solicitação. Destaca-se, ainda, o fornecimento dos números dos processos de fiscalização não apenas em relação à prestadora demandada, mas também às demais sujeitas à obrigação, de modo a prover ao cidadão a informação mais ampla disponível. 
+3.11. Ressalta-se que, nos termos do art. 11, §1º, II, da Lei nº 12.527/2011 (LAI), o cidadão já foi informado de que a Anatel está regularmente atuando na apuração e na consolidação das atividades realizadas em campo, consubstanciadas nos relatórios de fiscalização dispostos nos indicados processos.
+3.12. Dessa forma, propõe-se que seja negado provimento ao recurso, mantendo-se aplicáveis as informações disponibilizadas na resposta original."
+Elaborada Matéria para Apreciação do Conselho Diretor nº 23/2026 (SEI nº 15034409), os autos foram distribuídos à minha relatoria em 16 de janeiro de 2026 em sorteio extraordinário, conforme Certidão de Distribuição SEI nº 15051339.
+É o Relatório.
+ANÁLISE
+O pedido de acesso à informação nº 01217.010978/2025-73 surge em função de questionamento anterior, apresentado no Anatel Consumidor sob o de protocolo nº 202510286915622, em que o Cidadão indicou que existiria uma divergência entre o número de interrupções constante do Portal de Interrupções de Serviço mantido pela Entidade de Suporte à Aferição de Qualidade (ESAQ) e a sua própria experiência como cliente da operadora Claro no município de Peruíbe/SP. Essencialmente, alega que, em que pese experimente interrupções na prestação do serviço, estas não estariam sendo indicadas no Portal em questão.
+Naquela ocasião, a área técnica apresentou informações e respostas a questionamentos formulados sobre o funcionamento do Portal de Interrupções de Serviço mantido pela ESAQ e solicitados pelo Cidadão.
+Em resposta, o Cidadão reforçou a argumentação no sentido da existência de falhas na prestação do serviço que não estavam sendo indicadas no Portal e solicitou o número do processo de fiscalização contra a prestadora Claro sobre o tema para que pudesse efetuar o acompanhamento do seu andamento.
+Destaco que a narrativa acima quanto ao protocolo nº 202510286915622 do Anatel Consumidor foi extraída da Cópia do Ofício nº 679/2025/COQL/SCO-ANATEL juntado a esses autos sob o SEI nº 14997336.
+Realizada essa contextualização, verifico que o pedido de acesso à informação nº 01217.010978/2025-73, essencialmente, diz respeito a atividade de fiscalização em curso no âmbito desta Agência em desfavor da prestadora Claro, solicitando "o número do processo, copia do processo, ordem de serviço ou alguma referência".
+Verifico que na resposta original ao pedido de informação, a COQL apontou que "a atividade de fiscalização mencionada ainda se encontra em curso, não tendo sido concluídas as etapas internas de apuração, consolidação e validação dos achados". Dessa forma, não teria documentos a apresentar ao cidadão de pronto.
+Contudo, frente ao recurso de primeira instância, a Superintendência de Controle de Obrigações destacou que o número do processo solicitado pelo Cidadão seria o 53524.001189/2025-71, dentre outros indicados para as demais prestadoras sobre o mesmo tema. Eis a transcrição do trecho relevante:
+Fala.BR - Resposta ao Recurso de Primeira Instância
+"Nesse contexto, embora as atividades de fiscalização de campo tenham sido executadas, a consolidação e a análise interna dos achados ainda não foram concluídas, incidindo grau de sigilo sobre as informações, a exemplo dos processos 53524.001189/2025-71 (Claro S.A.), 53524.000932/2025-76 (Telefônica S.A.), 53524.000933/2025-11 (TIM S.A.) e 53524.004319/2025-28 (Algar S.A.). Acesse os documentos públicos em https://www.anatel.gov.br/seipesquisa"
+Dessa forma, entendo que a informação solicitada pelo Cidadão - qual seja, "o número do processo, copia do processo, ordem de serviço ou alguma referência" - foi apresentada, especialmente por ter sido solicitada de forma alternativa, como demonstrada pelo vocábulo "ou" constante do excerto transcrito.
+Destaco ainda que o recurso de segunda instância não traz informações pelas quais o fornecimento do número do processo indicado seria insuficiente frente ao solicitado, limitando-se a afirmar que nenhuma informação foi fornecida, o que não está correto conforme depreende-se do excerto acima transcrito:
+Fala.BR - Pedido Original
+"Por meio deste pedido de acesso à informação, solicito o número do processo, copia do processo, ordem de serviço ou alguma referência sobre a referida "... atividade de fiscalização sobre a prestadora Claro, abrangendo a apuração da regularidade das notificações de interrupção de serviço..."
+Em situações como essa, a Base de Conhecimento da CGU sobre o Fala.BR apresenta interpretação no sentido de que o recurso não deve ser conhecido com fundamento no art. 15 da Lei de Acesso à Informação:
+"4) Não conhecimento: o recurso sequer é conhecido por não tratar de pedido de acesso à informação (denúncia, reclamação ou consulta, por exemplo) ou por não atender a alguma exigência básica que possibilite a análise pela autoridade competente, como ter sido apresentado fora do prazo ou por não se enquadrar no fundamento legal do art. 15 da LAI, a saber: não houve indeferimento de acesso à informação ou não houve indeferimento de acesso às razões da negativa do acesso." (grifos diversos no original)
+Para maior clareza, eis a redação do art. 15 da Lei de Acesso à Informação:
+Art. 15. No caso de indeferimento de acesso a informações ou às razões da negativa do acesso, poderá o interessado interpor recurso contra a decisão no prazo de 10 (dez) dias a contar da sua ciência.
+Proponho, portanto, o não conhecimento do recurso.
+CONCLUSÃO
+Por todo exposto, proponho não conhecer do Recurso Administrativo por não cumpridos os requisitos constantes do art. 15 da Lei nº 12.527, de 18 de novembro de 2011, considerando que a informação solicitada foi apresentada ao Cidadão pela Anatel.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 19/01/2026, às 11:14, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15051701 e o código CRC 22312AFE.
+ | 
+Referência: Processo nº 01217.010978/2025-73 | 
+SEI nº 15051701 |

@@ -1,0 +1,45 @@
+SEI/ANATEL - 15510885 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 109, de 17 de abril de 2026
+Processo nº 53524.004135/2017-58
+Recorrente/Interessado: ALGAR TELECOM S.A.
+CNPJ nº 71.208.516/0001-74
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL - PAF. REVISÃO, DE OFÍCIO, DE CRÉDITOS CONSTITUÍDOS A TÍTULO DE FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. REVISÃO, DE OFÍCIO, DETERMINADA.
+I. CASO EM EXAME
+1. Revisão, de ofício, do Acórdão nº 226, de 18 de agosto de 2025, que apreciou Recurso Administrativo, em Processo Administrativo Fiscal - PAF, relativo à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2014, em face de ALGAR TELECOM S.A.
+2. A fiscalização apurou originalmente valores devidos referentes ao exercício de 2014. Após impugnação, Recurso Administrativo e nova fiscalização, o Conselho Diretor manteve o Despacho Decisório nº 87/2025/SCO, nos termos do Acórdão nº 226/2025.
+3. Na fase posterior de cobrança, a Procuradoria-Geral Federal - PGF apontou divergência nos valores registrados no Informe nº 95/2025/SCO, especialmente quanto aos montantes do lançamento, de ofício, com receitas de interconexão e à multa de ofício.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Conselho Diretor é competente para promover a revisão, de ofício, do Acórdão nº 226/2025; e (ii) saber se os valores dos créditos tributários e da multa de ofício devem ser retificados em razão de erro material identificado na apuração anterior.
+III. RAZÕES DE DECIDIR
+1. A revisão, de ofício, compete ao Conselho Diretor, por simetria, porque a decisão final que constituiu definitivamente a obrigação tributária foi proferida por esse órgão colegiado.
+2. A Equipe de Cobrança Extrajudicial da Procuradoria-Geral Federal - PGF identificou inconsistência entre os valores constantes do Informe nº 95/2025/SCO e os dados extraídos do Relatório de Fiscalização nº 24/2024/GR04FI1/GR04/SFI.
+3. O valor correto do lançamento referente às receitas de interconexão corresponde àquele constante na Tabela 2 - Apuração somente Interconexão (ITX) e Exploração Industrial de Linha Dedicada - EILD do Relatório de Fiscalização nº 24/2024/GR04FI1/GR04/SFI (SEI nº 11732922).
+4. O valor correto do lançamento referente às receitas sem interconexão corresponde ao descrito na coluna "A-B-C" da tabela apresentada no item 5.5 do Informe nº 95/2025/SCO (SEI nº 13324008).
+5. O valor correto da multa de ofício corresponde àquele proposto na tabela apresentada no item 3.20 do Informe nº 7/2026/SCO (SEI nº 15379908), porque deve incidir o percentual de 75% (setenta e cinco por cento) apenas sobre o valor devido sem receitas de interconexão.
+6. Deve ser interrompida a incidência da multa de mora sobre as receitas de interconexão, desde 10 de abril de 2006 até 30 (trinta) dias após a publicação da decisão judicial que considerar devido o tributo.
+7. Deve ser determinada à Superintendência de Controle de Obrigações - SCO a comunicação da decisão ao Ministério das Comunicações - MCom para as providências cabíveis em relação à cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+IV. DISPOSITIVO E TESE
+Revisão, de ofício, determinada.
+Tese de julgamento: "1. Compete ao Conselho Diretor promover a revisão, de ofício, de acórdão por ele proferido que constituiu definitivamente obrigação tributária em Processo Administrativo Fiscal. 2. Constatado erro material na apuração anterior, devem ser retificados os valores dos créditos tributários do Fust referentes ao exercício de 2014, quanto às receitas sem interconexão e quanto às receitas de interconexão. 3. A multa de ofício deve ser recalculada sobre as receitas sem interconexão, nos termos da Análise nº 30/2026/EH (SEI nº 15431035). 4. A incidência da multa de mora sobre as receitas de interconexão deve ser interrompida, desde 10 de abril de 2006 até 30 (trinta) dias após a publicação da decisão judicial que considerar devido o tributo. 5. Deve ser comunicada a decisão ao Ministério das Comunicações - MCom para as providências cabíveis quanto à cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel."
+Dispositivos relevantes citados: Lei nº 5.172/1966, arts. 198 e 161, § 1º; Lei nº 9.998/2000, art. 6º, IV e parágrafo único; Lei nº 9.430/1996, art. 44, I, e art. 63, caput e § 2º; Lei nº 10.522/2002, art. 37-A; Lei nº 9.065/1995, art. 13; Decreto nº 3.624/2000, art. 8º, §§ 1º e 2º; Resolução nº 247/2000, art. 7º.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 30/2026/EH (SEI nº 15431035), integrante deste acórdão, decidir pela necessária revisão, de ofício, do Acórdão nº 226, de 18 de agosto de 2025 (SEI nº 14213311), para:
+a) reconhecer a procedência parcial do lançamento dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, para o exercício de 2014, referente às receitas sem interconexão, equivalendo ao valor total descrito na coluna "A-B-C" da tabela apresentada no item 5.5 do Informe nº 95/2025/SCO (SEI nº 13324008), nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000;
+b) reconhecer a procedência parcial do lançamento dos créditos tributários referentes ao Fust, para o exercício de 2014, referente às receitas de interconexão, equivalendo ao valor apontado na Tabela 2 - Apuração somente Interconexão (ITX) e EILD do Relatório de Fiscalização nº 24/2024/GR04FI1/GR04/SFI (SEI nº 11732922), nos termos do art. 6º, IV, parágrafo único, da Lei nº 9.998, de 17 de agosto de 2000;
+c) reconhecer a procedência parcial do lançamento da multa de ofício, referentes às receitas sem interconexão, para o exercício de 2014, equivalendo àquele proposto na tabela apresentada no item 3.20 do Informe nº 7/2026/SCO (SEI nº 15379908), em conformidade com o art. 44, I, da Lei nº 9.430, de 27 dezembro de 1996; e,
+d) interromper a incidência da multa de mora, sobre as receitas de interconexão, desde a concessão da medida judicial de 10 de abril de 2006 (SEI nº 8297834), até 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo, nos termos do art. 63, caput e § 2º, da Lei nº 9.430/96.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15510885 e o código CRC 40804C6F.
+ | 
+Referência: Processo nº 53524.004135/2017-58 | 
+SEI nº 15510885 |

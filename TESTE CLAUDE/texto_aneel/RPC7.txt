@@ -1,0 +1,59 @@
+# RPC7 - 12/05/2026 - 7/2026 - RPC
+# Fonte: Dados Abertos ANEEL (pautas-atas-reunioes-publicas-diretoria.csv); ata prévia, sujeita a ajustes até a assinatura
+
+### RPC7-1 | processo 48500.023612/2025-22 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu homologar o resultado do Leilão de Transmissão nº 1/2026-ANEEL, referente aos Lotes 1, 2, 4 e 5 e Sublotes 3A, 3B, 3C e 3D, e adjudicar os respectivos objetos às vencedoras indicadas no quadro abaixo: LOTE / SUBLOTE PROPONENTE VENCEDORA CNPJ 1 e 5 CYMI CONSTRUÇÕES E PARTICIPAÇÕES S.A. 07.003.107/0001-32 2, 3A, 3B, 3C e 3D ENGIE TRANSMISSÃO DE ENERGIA PARTICIPAÇÕES S.A 36.207.020/0001-85 4 CONSÓRCIO BR2ET TRANSMISSORA • Brasiluz Eletrificação E Eletrônica Ltda. (25%) • Brenergia Participações Ltda. (25%) • Enind Energia e Participações Ltda. (25%) • Raff Geração e Comercio de Energia Elétrica Ltda. (25%) 18.680.121/0001-97 53.869.325/0001-71 30.715.044/0001-69 17.161.890/0001-16
+
+### RPC7-2 | processo 48500.031061/2025-71 | relator Willamy Moreira Frota | resultado(ata): Retirado da Pauta
+O processo foi retirado de pauta.
+
+### RPC7-3 | processo 48500.005054/2021-90 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar a perda de objeto do referido processo, tendo em vista a superveniência da Lei nº 15.097/2025 e do Decreto nº 12.834/2026, que esvaziaram sua utilidade prática.
+
+### RPC7-4 | processo 48500.001755/2021-50 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu reconhecer a perda de objeto da proposta para a regularização em definitivo da situação da Usina Termelétrica – UTE Manicoré, de que trata o item iii do voto do Diretor Efrain Pereira da Cruz, que instruiu o Despacho nº 1.182/2021, tendo em vista a superveniência de fatos e providências administrativas e regulatórias que absorveram a finalidade da determinação e esvaziaram sua utilidade prática.
+
+### RPC7-5 | processo 48500.000135/2026-16 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu não conhecer do Recurso Administrativo interposto pela Enel Distribuidora Ceará – Enel CE, por ser intempestivo.
+
+### RPC7-6 | processo 48500.018209/2025-81 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pelas empresas Humaita Solar I Empreendimentos S.A., Humaita Solar II Empreendimentos S.A., Humaita Solar III Empreendimentos S.A., Humaita Solar IV Empreendimentos S.A., Humaita Solar V Empreendimentos S.A., Humaita Solar VI Empreendimentos S.A., Humaita Solar VII Empreendimentos S.A., Humaita Solar VIII Empreendimentos S.A., Humaita Solar IX Empreendimentos S.A., Humaita Solar X Empreendimentos S.A., Humaita Solar XI Empreendimentos S.A., Humaita Solar XII Empreendimentos S.A. e Humaita Solar XIII Empreendimentos S.A., para, no mérito, negar-lhe provimento, a fim de manter integralmente os termos do Despacho nº 2.973/2025, emitido pela Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE e pela Superintendência de Fiscalização Técnica dos Serviços de Energia Elétrica – SFT.
+
+### RPC7-7 | processo 48500.003997/2025-10 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer, para, no mérito, dar provimento ao Pedido de Reconsideração interposto pela Energisa Amapá Transmissora de Energia S.A. – EAP, para estabelecer o valor adicional de encargos de conexão à requerente no valor de R$ 1.199.411,45 (um milhão, cento e noventa e nove mil, quatrocentos e onze reais e quarenta e cinco centavos), referência 06/2025, a ser atualizado pelo IPCA até a data de referência do próximo processo tarifário da distribuidora, em virtude dos valores relacionados aos custos do ciclo 2024-2025 da transmissão não considerados no valor originalmente homologado.
+
+### RPC7-8 | processo 48500.000417/2019-86 | relator Sandoval de Araújo Feitosa Neto | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar extinto, por perda de objeto, o Agravo interposto pela Amazonas Energia S.A., pela Futura Venture Capital Participações Ltda. e pelo Fundo de Investimento em Participações Infraestrutura Milão de Responsabilidade Ilimitada contra o Despacho nº 3.092/2024. O Diretor Fernando Luiz Mosna Ferreira da Silva declarou sua suspeição em deliberar neste processo, nos termos do art. 9º da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC7-9 | processo 48500.002095/2024-77 | relator Sandoval de Araújo Feitosa Neto | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar extinto, por perda de objeto, o Agravo interposto pela J&F Investimentos S.A. contra o Despacho nº 3.091/2024. O Diretor Fernando Luiz Mosna Ferreira da Silva declarou sua suspeição em deliberar neste processo, nos termos do art. 9º da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC7-10 | processo 48500.010697/2026-60 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) conhecer e, no mérito, dar provimento ao Pedido de Medida Cautelar protocolado pela Associação Brasileira de Energia Eólica – Abeeólica e pela Associação Brasileira de Energia Solar Fotovoltaica – Absolar- e (ii) prorrogar, por 60 (sessenta) dias, o prazo determinado no Despacho nº 148/2026 com vistas à suspensão dos ressarcimentos estabelecidos na contratação de energia elétrica no ambiente regulado, na modalidade disponibilidade, e na contratação de energia de reserva, relativos a usinas eolioelétricas e solares fotovoltaicas.
+
+### RPC7-11 | processo 48500.034649/2025-86 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) indeferir o Pedido de Medida Cautelar protocolado pela Associação Movimento Solar Livre, com vistas a que a Equatorial Goiás Distribuidora de Energia S.A. retome as análises e emissões de orçamentos ou pareceres de acesso para micro e minigeração distribuída no estado de Goiás- e (ii) encaminhar os autos à Superintendência de Mediação Administrativa e das Relações de Consumo – SMA para decisão do mérito e encaminhamentos que julgar necessários.
+
+### RPC7-12 | processo 48500.007854/2026-50 | relator Willamy Moreira Frota | resultado(ata): Destacado no Circuito Deliberativo
+O Diretor-Geral, Sandoval de Araújo Feitosa Neto, solicitou destaque deste processo, o qual será incluído na pauta da próxima reunião pública ordinária, nos termos do art. 63, § 9º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC7-13 | processo 48500.011273/2026-12 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) conhecer e, no mérito, indeferir o Pedido de Medida Cautelar protocolado pelo Consórcio Pataxó, com vistas a afastar os efeitos regulatórios decorrentes do procedimento de vistoria realizado pela Cemig Distribuição S.A. – Cemig-D e a preservar, em caráter cautelar, o enquadramento do empreendimento como Geração Distribuída – GD I- e (ii) encaminhar o processo à Superintendência de Mediação Administrativa e das Relações de Consumo – SMA para decisão do mérito.
+
+### RPC7-14 | processo 48500.010462/2026-78; 48500.008980/2026-21 | relator Agnes Maria de Aragão da Costa | resultado(ata): Destacado no Circuito Deliberativo
+O Diretor Fernando Luiz Mosna Ferreira da Silva solicitou destaque deste processo, o qual será incluído na pauta da próxima reunião pública ordinária, nos termos do art. 63, § 9º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025). Houve sustentação oral por parte da Sra. Ana Carolina Calil, representante da Scala Data Centers S.A. A manifestação foi realizada por vídeo, nos termos do art. 45, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC7-15 | processo 48500.035644/2025-71 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar extinto o Pedido de Medida Cautelar protocolado pela Usina Xavantes S.A. com vistas a que a Roraima Energia S.A. proceda ao imediato pagamento do montante em falta no âmbito do Contrato de Comercialização de Energia Elétrica e Potência nos Sistemas Isolados – CCESI nº 1/2021, referente à competência do mês de outubro de 2025. O Diretor Fernando Luiz Mosna Ferreira da Silva declarou sua suspeição em deliberar neste processo, nos termos do art. 9º da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC7-16 | processo 48500.006408/2026-28 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) conhecer e, no mérito, negar provimento ao Pedido de Medida Cautelar apresentado pelo Sr. Fábio Felix Fernandes- e (ii) encaminhar os autos para a Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, para a devida instrução.
+
+### RPC7-17 | processo 48500.026355/2025-81 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Requerimento Administrativo protocolado pela Afluente Transmissão de Energia S.A., para, no mérito, negar-lhe provimento.
+
+### RPC7-18 | processo 48500.009677/2026-46 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Ventos de Santa Rosa Energias Renováveis S.A., as áreas de terra necessárias à implantação das Subestações 500 kV Dom Inocêncio IV e Dom Inocêncio Sul, localizadas no município de Dom Inocêncio, estado do Piauí.
+
+### RPC7-19 | processo 48500.006391/2022-85 | relator Fernando Luiz Mosna Ferreira da Silva | resultado(ata): Pedido de Vista + Prorrogação
+A Diretoria, por unanimidade, decidiu conceder prazo adicional de 60 dias para apresentação do voto-vista.

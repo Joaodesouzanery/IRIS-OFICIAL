@@ -1,0 +1,77 @@
+# RPC16 - 15/09/2026 - 16/2026 - RPC
+# Fonte: Dados Abertos ANEEL (pautas-atas-reunioes-publicas-diretoria.csv); ata prévia, sujeita a ajustes até a assinatura
+
+### RPC16-1 | processo 48500.030939/2025-51 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, acompanhando o voto da Diretora-Relatora, Agnes Maria de Aragão da Costa, proferido na 16ª Reunião Pública Ordinária da Diretoria, realizada em 11 de agosto de 2026, decidiu: (i) homologar o índice de Reajuste Tarifário Anual da Equatorial Pará Distribuidora de Energia S.A. – Equatorial PA, a vigorar a partir da publicação da Resolução Homologatória decorrente desta decisão, que conduz ao efeito médio a ser percebido pelos consumidores de 6,94%, sendo 8,09%, em média, para os consumidores em alta tensão e 6,66%, em média, para os consumidores em baixa tensão- (ii) fixar as Tarifas de Uso dos Sistemas de Distribuição – TUSD e as Tarifas de Energia Elétrica – TE aplicáveis aos consumidores e usuários da Equatorial PA- (iii) estabelecer os valores da receita anual referente às instalações de conexão classificadas como Demais Instalações de Transmissão – DIT de uso exclusivo- e (iv) homologar o valor mensal de recursos da Conta de Desenvolvimento Energético – CDE a ser repassado pela Câmara de Comercialização de Energia Elétrica – CCEE à Equatorial PA, de modo a custear os descontos retirados da estrutura tarifária.
+
+### RPC16-2 | processo 48500.036730/2025-09 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu estabelecer as diretrizes e as condições para o desenvolvimento do Sandbox Regulatório Energias da Floresta, na forma da minuta de Resolução Normativa anexa ao voto do Diretor-Relator.
+
+### RPC16-3 | processo 48500.033896/2025-65 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Parcialmente Deliberado
+A Diretoria, por unanimidade, decidiu: (i) acolher o pedido de excepcionalização da realização, pelo Operador Nacional do Sistema Elétrico – ONS, de consulta externa específica relativa à segunda etapa da proposta de revisão da classificação das modalidades de operação de usinas, considerando o caráter predominantemente consequencial das respectivas alterações e a preservação da participação social no âmbito da Consulta Pública a ser promovida pela ANEEL- e (ii) instaurar Consulta Pública, pelo prazo de 47 dias, no período de 17 de setembro de 2026 a 2 de novembro de 2026, com vistas a colher subsídios e informações adicionais para o aprimoramento da proposta de alteração dos Procedimentos de Rede associada à revisão da classificação das modalidades de operação de usinas conectadas ao sistema, contemplando os Submódulos 1.2, 2.1, 2.4, 2.12, 2.14, 2.15, 3.1, 3.4, 3.5, 3.9, 3.10, 4.1, 4.2, 4.4, 4.5, 6.1, 6.9, 7.1, 7.2, 7.4, 7.11 e 7.13, nos termos das minutas encaminhadas pelo ONS.
+
+### RPC16-4 | processo 48500.014308/2026-75 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu dar provimento ao Requerimento Administrativo protocolado pela Neoenergia Guanabara Transmissora de Energia S.A. para que o Operador Nacional do Sistema Elétrico – ONS: (i) considere atendido o critério de perdas dos reatores para fins de emissão dos Termos de Liberação Definitivos – TLDs das Funções Transmissão LT 500 kV Terminal Rio – Lagos C1 e LT 500 kV Terminal Rio – Lagos C2- e (ii) emita os TLDs para as Funções Transmissão LT 500 kV Terminal Rio – Lagos C1 e LT 500 kV Terminal Rio – Lagos C2, com início de vigência em 15 de maio de 2026, desde que atendidos todos os demais requisitos.
+
+### RPC16-5 | processo 48500.004722/2025-95 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pela BC Geração e Comercialização de Energia S.A. contra a decisão proferida pela Superintendência de Mediação Administrativa e das Relações de Consumo – SMA, por meio do Despacho nº 2.570/2025, para, no mérito, negar-lhe provimento.
+
+### RPC16-6 | processo 48500.017693/2025-21 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer e, no mérito, negar provimento ao Recurso Administrativo interposto pela empresa Vereda Alimentos Ltda. contra o Despacho nº 1.109/2026, emitido pela Superintendência de Mediação Administrativa e das Relações de Consumo – SMA, mantendo-se integralmente a decisão recorrida que negou provimento ao pedido de devolução em dobro dos valores faturados a maior por erro de classificação da unidade consumidora nº 3002752318, na área de concessão da Cemig Distribuição S.A. – Cemig-D.
+
+### RPC16-7 | processo 48500.004395/2026-52 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pela CGH da Ilha Geração de Energia Renovável Ltda. contra o Despacho nº 1.484/2026, emitido pela Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, para, no mérito, negar-lhe provimento.
+
+### RPC16-8 | processo 48500.021808/2026-63 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pela ISA Energia Brasil S.A. contra o Despacho nº 2.902/2026, emitido pela Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE, e, no mérito: (i) declarar a perda do objeto do pedido de dilação do prazo para implantação do reforço na Subestação Salto- e (ii) negar provimento ao pleito de dilação do prazo de implantação do reforço na Subestação Santa Bárbara D'Oeste naquilo que não foi acolhido pelo Despacho nº 3.463/2026.
+
+### RPC16-9 | processo 48500.006500/2026-98 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer do Recurso Administrativo interposto pela Mato Grosso Empreendimento Energético Ltda. contra o Despacho nº 2.075/2026, emitido pela Superintendência de Regulação dos Serviços de Transmissão e Distribuição de Energia Elétrica – STD, e, no mérito, negar-lhe provimento, mantendo-se integralmente a decisão recorrida.
+
+### RPC16-10 | processo 48500.030641/2025-41 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) reconhecer a perda superveniente do objeto do Pedido de Reconsideração interposto pela Rio Água Clara Energia S.A. e pela Areado Energia S.A., em razão da publicação da retificação da Resolução Homologatória nº 3.582/2026, que corrigiu os valores de Tarifas de Uso do Sistema de Distribuição – TUSDg objeto da insurgência- e (ii) determinar o arquivamento dos autos, após as providências administrativas cabíveis.
+
+### RPC16-11 | processo 48500.022313/2025-71 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer e, no mérito, negar provimento ao Pedido de Impugnação apresentado pela GV Energia Comercializadora Ltda. – GV Energia Com contra a deliberação do Conselho de Administração da Câmara de Comercialização de Energia Elétrica – CCEE, adotada na 1466ª Reunião.
+
+### RPC16-12 | processo 48500.003422/2026-70 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer e, no mérito, negar provimento ao Pedido de Impugnação apresentado pela Barra Bonita Óleo e Gás S.A. – Barra Bonita I contra a decisão do Conselho de Administração da Câmara de Comercialização de Energia Elétrica – CCEE, em sua 1.500ª reunião, referente à penalidade por insuficiência de lastro de energia de reserva.
+
+### RPC16-13 | processo 48500.025898/2026-61 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) conhecer do Pedido de Medida Cautelar protocolado por Edivana Morona e, no mérito, negar-lhe provimento- e (ii) encaminhar o processo para a análise de mérito pela Superintendência de Mediação Administrativa e das Relações de Consumo – SMA.
+
+### RPC16-14 | processo 48500.025393/2026-05 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu conhecer e, no mérito, negar provimento ao Pedido de Medida Cautelar protocolado pela Portocém Geração de Energia S.A. com vistas à suspensão da aplicabilidade da multa contratual prevista no Contrato de Reserva de Capacidade – CRCAP, decorrente do atraso no cronograma de implantação da Usina Termelétrica – UTE Portocém I, até a análise de mérito do requerimento de reconhecimento de excludente de responsabilidade formulado pela Requerente.
+
+### RPC16-15 | processo 48500.008579/2026-91; 48500.002865/2025-62 | relator Willamy Moreira Frota | resultado(ata): Destacado no Circuito Deliberativo
+O Diretor-Relator, Willamy Moreira Frota, solicitou destaque deste processo, o qual será incluído na pauta da próxima reunião pública ordinária, nos termos do art. 63, § 9º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025).
+
+### RPC16-16 | processo 48500.000303/2005-41 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Parcialmente Deliberado
+A Diretoria, por unanimidade, decidiu: (i) não conhecer do Pedido de Reconsideração interposto pelas interessadas contra o Despacho nº 3.532/2025- e (ii) definir os montantes decorrentes da revisão dos valores de Uso do Bem Público – UBP das Usinas Hidrelétricas – UHEs Itaúba e Passo Real, referentes ao período de novembro de 2024 a outubro de 2025, conforme demonstrado no Quadro 2, atualizados pela taxa Selic até agosto de 2026- e (iii) comunicar a presente decisão à Superintendência de Gestão Administrativa, Financeira e de Contratações – SGA, para a adoção das providências cabíveis destinadas à restituição dos valores apurados, conforme demonstrado no Quadro 3. Quadro 2 – Comparativo entre os valores de UBP pagos e revisados Quadro 3 – Montante final apurado a restituir Houve sustentação oral por parte do Sr. David Antonio Monteiro Waltenberg, representante da Companhia Siderúrgica - CSN. A manifestação foi realizada por vídeo, nos termos do art. 45, § 4º, da Norma de Organização ANEEL nº 1 (Resolução Normativa nº 1.133/2025). O processo será incluído na pauta da reunião pública ordinária subsequente para ratificação de decisão, tendo em vista o recebimento de solicitação de sustentação oral, nos termos do § 10 do art. 63 da Norma de Organização ANEEL nº 1.
+
+### RPC16-17 | processo 48500.036654/2025-23 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu: (i) extinguir as outorgas de concessão referentes às Pequenas Centrais Hidrelétricas – PCHs São Jorge, Jucu e Tombos- (ii) aprovar a minuta do Quinto Termo Aditivo ao Contrato de Concessão nº 1/2013-ANEEL- (iii) dispensar a reversão dos bens vinculados a essas concessões- e (iv) autorizar a Superintendência de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica – SCE a prosseguir de forma coordenada e concomitante à formalização da extinção das concessões, com a instrução e a conclusão dos processos de registro das PCHs São Jorge, Jucu e Tombos como Centrais Geradoras Hidrelétricas de Capacidade Reduzida – CGHs, de modo a evitar descontinuidade na exploração dos empreendimentos.
+
+### RPC16-18 | processo 48500.024263/2026-47 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Companhia Piratininga de Força e Luz – CPFL Piratininga, as áreas de terras que perfazem uma superfície de aproximadamente 17.450 m², necessárias à implantação da Subestação 138 kV Vinhedo 3, localizada no município de Vinhedo, estado de São Paulo.
+
+### RPC16-19 | processo 48500.024941/2026-71 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Companhia de Eletricidade do Estado da Bahia – Coelba, as áreas de terras que perfazem uma superfície de 17.550 m², necessárias à implantação da Subestação 138/34,5 kV Rio de Janeiro, localizada no município de Barreiras, estado da Bahia.
+
+### RPC16-20 | processo 48500.024939/2026-01 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Companhia de Eletricidade do Estado da Bahia – Coelba, as áreas de terra necessárias à implantação da Subestação 138/13,8 kV Caraíva, localizada no município de Porto Seguro, estado da Bahia.
+
+### RPC16-21 | processo 48500.024940/2026-27 | relator Ludimila Lima da Silva | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Companhia de Eletricidade do Estado da Bahia – Coelba, as áreas necessárias à implantação da subestação 138/13,8 kV Monte Pascoal II, localizada no município de Itabela, estado da Bahia.
+
+### RPC16-22 | processo 48500.023833/2026-81 | relator Agnes Maria de Aragão da Costa | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Energisa Tocantins – Distribuidora de Energia S.A. – ETO, as áreas de terra que perfazem superfície de 2.500 m², necessárias à implantação da Estação Repetidora Mateiros, localizada no município de Mateiros, estado do Tocantins.
+
+### RPC16-23 | processo 48500.037648/2025-93 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Simões Transmissora de Energia Elétrica S.A., as áreas de terra que perfazem uma superfície aproximada de 20.230 m², necessárias à regularização da Subestação 230 kV Chapada III, localizada no município de Caldeirão Grande do Piauí, estado do Piauí- e para fins de servidão administrativa, as áreas que perfazem uma superfície aproximada de 4.840 m², necessárias à regularização de estrada de acesso à referida subestação, localizada no município de Caldeirão Grande do Piauí, estado do Piauí.
+
+### RPC16-24 | processo 48500.037636/2025-69 | relator Gentil Nogueira de Sá Júnior | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Simões Transmissora de Energia Elétrica S.A., as áreas de terra que perfazem uma superfície aproximada de 19.400 m², necessárias à regularização da Subestação 230 kV Chapada II, localizada no município de Marcolândia, estado do Piauí- e para fins de servidão administrativa, as áreas de terra que perfazem uma superfície aproximada de 1.700 m², necessárias à regularização da estrada de acesso à referida subestação, localizada no município de Marcolândia, estado do Piauí.
+
+### RPC16-25 | processo 48500.024942/2026-16 | relator Willamy Moreira Frota | resultado(ata): Deliberado
+A Diretoria, por unanimidade, decidiu declarar de utilidade pública, para fins de desapropriação, em favor da Companhia de Eletricidade do Estado da Bahia – Coelba, as áreas de terra que perfazem uma superfície de 16.250 m², necessárias à implantação da Subestação 138/34,5 kV Rio de Ondas, localizada no município de São Desidério, estado da Bahia.

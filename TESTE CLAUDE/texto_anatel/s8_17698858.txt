@@ -1,0 +1,54 @@
+SEI/ANATEL - 15827462 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 55
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 149, de 18 de junho de 2026
+Processo nº 53500.052671/2021-14
+Recorrente/Interessado: SURF TELECOM S.A., OI S.A.
+CNPJ nº 10.455.746/0001-43 e nº 76.535.764/0332-38
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. RECURSO ADMINISTRATIVO. RECLAMAÇÃO ADMINISTRATIVA. CO-BILLING E REPASSE DE VALORES. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por SURF TELECOM S.A. contra o Despacho Decisório nº 165/2025/CPRP/SCP, que determinou o repasse dos valores do serviço de co-billing pré-pago das chamadas de longa distância nacional e internacional associadas aos Códigos de Seleção de Prestadora - CSPs 14 e 31, relativos ao período de julho de 2024 a maio de 2025, bem como o envio de ofício à Superintendência de Controle de Obrigações - SCO para análise quanto à instauração de Procedimento para Apuração de Descumprimento de Obrigações - Pado.
+2. Fato relevante. A Reclamação Administrativa foi instaurada por provocação da OI S.A. em razão de controvérsia sobre a implementação do co-billing entre as partes e sobre os repasses financeiros decorrentes da relação contratual e operacional mantida entre elas.
+3. As manifestações das partes. A Recorrente alegou ausência de comprovação técnica da cursagem das chamadas em sua rede, insuficiência dos Call Detail Record - CDRs apresentados, irrelevância da obrigação de repasse sem prova do tráfego, relevância da rota de entrega das chamadas e inadequação da recomendação de instauração de Pado. A Recorrida defendeu a manutenção integral da decisão, ao argumento de que a Recorrente permaneceu inadimplente, não apresentou prova técnica idônea e reiterou alegações já enfrentadas no processo.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se os elementos técnicos constantes dos autos são suficientes para amparar a cobrança dos valores de co-billing; (ii) saber se foi correta a qualificação de determinados valores como incontroversos; (iii) saber se houve confusão entre a obrigação regulatória de co-billing e a obrigação contratual de repasse de valores; (iv) saber se a alegada utilização de rota de terceiros afasta o nexo causal e a obrigação de repasse; e (v) saber se foi adequada a recomendação de encaminhamento dos autos à Superintendência de Controle de Obrigações para análise quanto à instauração de Pado.
+III. RAZÕES DE DECIDIR
+1. O Recurso preenche os requisitos de admissibilidade quanto à tempestividade, cabimento, legitimidade e interesse recursal.
+2. A controvérsia originária não se limitou à formalização do contrato de co-billing. A controvérsia também abrangeu a regularidade dos repasses financeiros e a quitação dos valores devidos entre as partes.
+3. Os relatórios independentes de conciliação de CDRs juntados pela Recorrente não bastam, por si sós, para infirmar os elementos probatórios já constantes dos autos. Os documentos foram apresentados sem parecer técnico, análise conclusiva ou demonstração objetiva de seu conteúdo.
+4. A Recorrente não produziu prova robusta para demonstrar a improcedência da cobrança. Também em sede recursal, não apresentou elementos técnicos consistentes para afastar as conclusões da área técnica.
+5. A qualificação de determinados valores como incontroversos foi mantida. A Recorrente não individualizou as chamadas ou os dados efetivamente controvertidos e não apresentou evidências técnicas ou materiais aptas a sustentar suas impugnações.
+6. Os demonstrativos financeiros e os CDRs relativos ao período controvertido seguiram o mesmo formato, padrão e layout anteriormente encaminhados e aceitos pela própria Recorrente.
+7. A obrigação de co-billing decorre do art. 122, II, do Regulamento Geral de Serviços de Telecomunicações - RGST. A obrigação de pagamento, no caso concreto, decorre do dever contratual de repassar à OI S.A. os valores arrecadados dos usuários da SURF TELECOM que utilizaram os CSPs 14 e 31.
+8. A Cláusula 4.1.5 do Contrato nº CO/OI/DA-077-2024 prevê expressamente a obrigação de repasse dos valores de titularidade da contratante referentes às chamadas e previamente arrecadados dos usuários dos CSPs 14 e 31.
+9. Não se confirmou a tese de cobrança indevida por ausência de comprovação do tráfego na rede da Recorrente. Restou evidenciado o descumprimento da obrigação contratual de repasse dos valores arrecadados dos usuários dos CSPs 14 e 31.
+10. O Regulamento Geral de Interconexão não impõe modelo único ou rota específica para a implementação da interconexão. A regulamentação admite interconexão por meios próprios, por contratação de meios de terceiros ou de forma indireta.
+11. A alegação de ausência de nexo causal fundada na utilização de rota de terceiros não afasta, por si só, a obrigação de repasse. A Recorrente não comprovou a adoção diligente dos mecanismos contratuais de contestação, prevenção e controle de fraude, nem produziu prova técnica idônea para sustentar sua tese.
+12. Não houve conclusão da área técnica pela ocorrência de enriquecimento ilícito ou apropriação indevida por qualquer das partes. A alegação da Recorrente decorre de premissa equivocada.
+13. A recomendação de encaminhamento dos autos à Superintendência de Controle de Obrigações - SCO para análise quanto à instauração de Pado foi adequada. Os autos evidenciam protelação prolongada na implementação do serviço de cofaturamento, apesar da manifestação da OI S.A. pelo exercício do direito ao faturamento conjunto.
+14. O encaminhamento à Superintendência de Controle de Obrigações não implica instauração automática de processo sancionador. O encaminhamento viabiliza análise própria e autônoma sobre a existência de elementos suficientes para eventual abertura de Pado.
+15. As petições extemporâneas protocolizadas antes da publicação da pauta da reunião foram conhecidas, com fundamento no direito de petição e no Enunciado nº 21 da Súmula da Anatel. No mérito, duas petições foram indeferidas e uma deferida em parte.
+16. A petição extemporânea protocolizada após a publicação da pauta da reunião não foi conhecida, com fundamento no Enunciado nº 21 da Súmula da Anatel.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido. Petições extemporâneas conhecidas e indeferidas. Petição extemporânea conhecida e deferida em parte. Petição extemporânea não conhecida.
+Tese de julgamento: "1. A mera juntada de relatórios independentes de conciliação de CDRs, sem parecer técnico ou análise conclusiva, não afasta os elementos probatórios constantes dos autos nem descaracteriza a exigibilidade dos valores de co-billing. 2. A obrigação de repasse dos valores arrecadados dos usuários que utilizaram os CSPs 14 e 31 decorre do contrato firmado entre as partes e não foi afastada pelas alegações da Recorrente. 3. A utilização de rota de terceiros, sem prova técnica idônea e sem demonstração da adoção dos mecanismos contratuais de contestação e controle, não exclui a obrigação de repasse. 4. É cabível o encaminhamento dos autos à Superintendência de Controle de Obrigações para análise quanto à instauração de Pado quando houver indícios de descumprimento da obrigação de co-billing. 5. As petições extemporâneas protocolizadas antes da publicação da pauta podem ser conhecidas pelo Conselho Diretor, sem prejuízo de seu indeferimento no mérito."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 5º, XXXIV, a; Lei nº 9.472/1997; Lei nº 9.784/1999; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, arts. 53, 115 e 158, IV; Resolução nº 693/2018, arts. 7º e 44; Resolução nº 777/2025, art. 122.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 50/2026/EH (SEI nº 15739319), integrante deste acórdão:
+a) conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento; 
+b) conhecer das petições extemporâneas (Petições SEI nº 14965686 e nº 15079982) e indeferir os pedidos nelas constantes;
+c) conhecer da petição extemporânea SEI nº 15205439 e deferir em parte o pedido nela constante, especificamente sobre o tratamento do Recurso Administrativo objeto da referida análise; e,
+d) não conhecer da petição extemporânea intitulada Memorial SURF (SEI nº 15751488).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15827462 e o código CRC 4B3C2CD5.
+ | 
+Referência: Processo nº 53500.052671/2021-14 | 
+SEI nº 15827462 |

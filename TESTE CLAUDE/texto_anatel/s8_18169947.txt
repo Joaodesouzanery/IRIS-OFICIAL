@@ -1,0 +1,42 @@
+SEI/ANATEL - 16205112 - Acórdão
+Boletim de Serviço Eletrônico em 01/09/2026
+DOU de 01/09/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 228, de 31 de agosto de 2026
+Processo nº 53508.003520/2023-24
+Recorrente/Interessado: OI S.A.
+CNPJ nº 76.535.764/0001-43
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 220, de 28 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO - TFF. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto contra decisão que extinguiu parcialmente o Processo Administrativo Fiscal - PAF quanto às matérias submetidas ao Poder Judiciário, reconheceu a procedência do lançamento de crédito tributário referente à Taxa de Fiscalização de Funcionamento - TFF do exercício de 2022 e determinou a interrupção da incidência da multa de mora enquanto perdurar a suspensão judicial da exigibilidade do crédito.
+2. Fatos relevantes. A Recorrente alegou nulidade da notificação de lançamento por ausência de segregação entre principal, juros e multa. Alegou deficiência de fundamentação da decisão recorrida. Sustentou que a multa de mora deveria ser cancelada integralmente. Defendeu, no mérito, a ilegitimidade da cobrança da TFF por ausência de equivalência entre a arrecadação e os custos da atividade fiscalizatória.
+3. A decisão anterior. A Área Técnica reconheceu a admissibilidade do Recurso, reafirmou a renúncia parcial à instância administrativa quanto às matérias já submetidas ao Poder Judiciário e concluiu pela manutenção da decisão recorrida.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a ausência de detalhamento dos componentes do crédito tributário torna nulos o lançamento e a decisão recorrida; (ii) saber se a suspensão judicial da exigibilidade do crédito impõe o cancelamento definitivo da multa de mora ou apenas a interrupção de sua incidência; e (iii) saber se a Administração pode reapreciar, na esfera administrativa, a controvérsia sobre a legitimidade da cobrança da TFF já submetida ao Poder Judiciário.
+III. RAZÕES DE DECIDIR
+1. O Recurso Administrativo é tempestivo. A Recorrente tem legitimidade e interesse recursal. A peça não contraria entendimento sumulado da Agência.
+2. Não é obrigatória a manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel. O Recurso é voluntário, mas o valor nominal do lançamento é inferior ao estabelecido na legislação.
+3. Não há nulidade do lançamento nem da decisão recorrida. A Recorrente compreendeu a exigência tributária, identificou o tributo, o exercício de referência, os fundamentos normativos e apresentou impugnação ampla. Não houve demonstração concreta de prejuízo ao contraditório e à ampla defesa.
+4. Eventual imperfeição formal na apresentação do crédito tributário não invalida o lançamento quando o ato atinge sua finalidade e não compromete a compreensão da cobrança nem o exercício do direito de defesa.
+5. A suspensão judicial da exigibilidade do crédito não impede sua constituição por lançamento quando este se destina a prevenir a decadência.
+6. O art. 63, § 2º, da Lei nº 9.430/1996 determina a interrupção da incidência da multa de mora desde o deferimento da medida judicial até 30 (trinta) dias após a publicação da decisão que reconheça como devido o tributo. O dispositivo não prevê cancelamento definitivo da penalidade.
+7. A decisão recorrida observou o Regulamento de Arrecadação de Receitas Tributárias da Anatel, que também prevê a interrupção da incidência da multa de mora, e não sua exclusão definitiva.
+8. A TFF foi instituída por lei federal vigente. A Administração está vinculada ao princípio da legalidade e deve aplicar a norma enquanto não houver pronunciamento jurisdicional definitivo em sentido contrário.
+9. Os fundamentos apresentados contra a legitimidade da cobrança da TFF coincidem com matéria já submetida ao Poder Judiciário em ação declaratória mencionada pela própria Recorrente. A judicialização do mesmo objeto implica renúncia à instância administrativa quanto a essas matérias.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido, quanto às matérias passíveis de apreciação na esfera administrativa.
+Tese de julgamento: "1. A ausência de demonstração concreta de prejuízo afasta a nulidade do lançamento e da decisão recorrida quando o contribuinte compreende a exigência tributária e exerce plenamente o direito de defesa. 2. O art. 63, § 2º, da Lei nº 9.430/1996 determina a interrupção, e não o cancelamento definitivo, da incidência da multa de mora enquanto perdurar a suspensão judicial da exigibilidade do crédito tributário. 3. A submissão ao Poder Judiciário de controvérsia sobre a legitimidade da cobrança da TFF implica renúncia à instância administrativa quanto ao mesmo objeto. 4. A Administração deve aplicar a lei instituidora da TFF enquanto vigente e presumidamente constitucional."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 145, II; Lei nº 9.430/1996, art. 63, § 2º; Lei nº 9.784/1999, art. 52; Lei nº 6.830/1980, art. 38, parágrafo único; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, arts. 116 e 162, VI; Resolução nº 729/2020, art. 32, §§ 5º e 6º; Portaria nº 642/2013, art. 5º, IV, a; Portaria Normativa nº 1.355/2019, item 7.1.1; e Lei Complementar - LC nº 227/2026.
+Jurisprudência relevante citada: Superior Tribunal de Justiça - STJ, REsp nº 891137/RS, Rel. Min. Eliana Calmon, Segunda Turma, j. 15.04.2008, DJe 29.04.2008; e Conselho Administrativo de Recursos Fiscais - CARF, Processo nº 10283907159200928, Acórdão nº 3002-002.449, Rel. Mateus Soares de Oliveira, j. 17.11.2022, pub. 05.01.2023.1
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 70/2026/NP (SEI nº 16026143), integrante deste acórdão, conhecer do presente Recurso Administrativo, por estarem preenchidos os requisitos de admissibilidade, e, no mérito, negar-lhe provimento, quanto às matérias passíveis de apreciação nesta esfera administrativa, ressalvada a competência do Poder Judiciário.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 31/08/2026, às 18:11, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16205112 e o código CRC D2FD81FA.
+ | 
+Referência: Processo nº 53508.003520/2023-24 | 
+SEI nº 16205112 |

@@ -1,0 +1,176 @@
+SEI/ANATEL - 15028346 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 9/2026/CL
+Processo nº 53560.002667/2024-43
+Interessado: RADIO E TELEVISAO RECORD S.A
+CONSELHEIRO
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINÁLIA
+ASSUNTO
+Recurso Administrativo interposto contra o Despacho Decisório nº 433/2025/CODI/SCO, que manteve a sanção de advertência aplicada por irregularidade técnica constatada na execução do Serviço de Retransmissão de Radiodifusão de Sons e Imagens - Digital. 
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. SERVIÇO DE RETRANSMISSÃO DE RADIODIFUSÃO DE SONS E IMAGENS DIGITAL. IRREGULARIDADE TÉCNICA. ADVERTÊNCIA. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso Administrativo interposto por Rádio e Televisão Record S.A. contra o Despacho Decisório nº 433/2025/CODI/SCO, que manteve a sanção de advertência por irregularidade técnica na execução do Serviço de Retransmissão de Radiodifusão de Sons e Imagens - Digital.
+Fato relevante. Fiscalização constatou operação da estação com potência acima do autorizado e em local diverso do licenciado, ampliando a área de abrangência do sinal e prejudicando a análise de novos licenciamentos.
+As decisões anteriores. A SCO manteve a sanção de advertência, afastou alegações de vício formal, cerceamento de defesa e desproporcionalidade da sanção.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se houve vício formal ou ausência de motivação nas decisões administrativas; (ii) saber se houve cerceamento de defesa por falta de oportunidade de produção de prova pericial; e (iii) saber se a sanção de advertência foi proporcional e adequada diante das irregularidades constatadas.
+III. RAZÕES DE DECIDIR
+Não se verifica vício formal ou ausência de motivação, pois as decisões administrativas fundamentaram-se em relatórios e laudos técnicos, com expressa concordância da autoridade competente.
+A prestadora teve garantida a ampla defesa, com possibilidade de apresentar argumentos e provas, inclusive perícia técnica, não havendo cerceamento de defesa.
+A fiscalização utilizou procedimentos e equipamentos adequados, registrando medições e localização da estação, sendo desnecessária perícia externa para comprovação das infrações.
+A operação da estação em local diverso do licenciado e com potência acima do autorizado ampliou a área de cobertura, prejudicando o planejamento do espectro e a análise de novos licenciamentos.
+A sanção de advertência é proporcional e adequada, pois constitui a medida menos gravosa e visa prevenir novas irregularidades, em conformidade com os regulamentos aplicáveis.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. Não há vício formal ou ausência de motivação quando a decisão administrativa se fundamenta em relatórios e laudos técnicos e a autoridade manifesta concordância expressa. 2. Não há cerceamento de defesa quando a parte tem oportunidade de apresentar argumentos e provas, inclusive perícia técnica. 3. A operação de estação em local diverso do licenciado e com potência acima do autorizado caracteriza irregularidade técnica. 4. A sanção de advertência é proporcional e adequada diante das irregularidades constatadas."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999; Resolução nº 612/2013 - RI-Anatel, arts. 115 e 116; Resolução nº 671/2016, art. 58, II; Ato nº 9.751/2022, itens 8.26 e 8.26.1.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT.
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei do Processo Administrativo no âmbito da Administração Pública Federal - LPA.
+Resolução nº 671, de 3 de novembro de 2016, que aprova o Regulamento de Uso do Espectro de Radiofrequências - RUE.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel - RI-Anatel.
+Ato nº 9751, de 06 de julho de 2022, que aprova os Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto em Procedimento para Apuração de Descumprimento de Obrigações - Pado por RÁDIO E TELEVISÃO RECORD S.A. - Record, inscrita no CNPJ sob o nº 60.628.369/0001-75, contra o Despacho Decisório nº 433/2025/CODI/SCO (SEI nº 13986063). A referida decisão foi proferida pela Superintendência de Controle de Obrigações - SCO e negou provimento ao Recurso Administrativo anteriormente apresentado, mantendo a decisão contida no Despacho Decisório nº 44/2025/GR09CO/GR09/SFI (SEI nº 13705824), que aplicou sanção de advertência à prestadora.
+Em 11 de dezembro de 2024, lavrou-se o Auto de Infração nº CE202412101000 (SEI nº 13012275) autuando a Record, por infrações descrita no Laudo de Vistoria de mesma numeração (SEI nº 13012311). A irregularidades identificadas foram a Potência de Operação e a Localização da estação, conforme segue:
+ Infração caracterizada
+ | 
+ Dispositivo normativo infringido
+ | 
+ Potência de Operação: Verificado valor acima da tolerância.
+ | 
+ Art. 58, II, do RUE c/c 8.26.1 do Ato nº 9.751.
+ | 
+ Coordenadas Geográficas da Estação: Verificado localização distinta da licenciada.
+ | 
+ Art. 58, II, do RUE c/c 8.26 do Ato nº 9.751.
+ | 
+Em 18 de dezembro de 2024, emitiu-se o Relatório de Fiscalização nº 102/2024/GR09FI2/GR09/SFI (SEI nº 13021011) com o detalhamento dos fatos. O relatório foi aprovado pelo Gerente Regional nos Estados do Ceará, Rio Grande do Norte e Piauí na mesma data, conforme Despacho Ordinatório SEI nº 13021403.
+A Record foi intimada para a apresentação de alegações finais, conforme consta no Ofício nº 26/2025/GR09CO/GR09/SFI-ANATEL (SEI nº 13152449).
+Em 16 de maio de 2025 proferiu-se o Despacho Decisório nº 44/2025/GR09CO/GR09/SFI (SEI nº 13705824) - Despacho nº 44/25. A Decisão acompanhou integralmente a sugestão contida no Informe nº 55/2025/GR09CO/GR09/SFI (SEI nº 13705266) que opinou, com fundamento no artigo 173, inciso I, da Lei nº 9.742/1997, pela aplicação de sanção de advertência, pelo cometimento de infração ao artigo 58, inciso II, do anexo à Resolução nº 671/2016 c/c o item 8.26.4 do Ato nº 9751/2022 (coordenadas geográficas); e infração ao artigo 58, inciso II, do anexo à Resolução nº 671/2016, c/c o item 8.26.1 do Ato nº 9751/2022 (Potência de operação diversa da autorizada). 
+A prestadora foi informada da decisão por meio do Ofício nº 225/2025/GR09CO/GR09/SFI-ANATEL (SEI nº13776631) recebida em 30 de maio de 2025, conforme consta na Certidão de Intimação Cumprida SEI nº 13779318.
+Em 05 de junho de 2025 a Record apresentou Recurso Administrativo por meio da petição SEI nº 13807743. A prestadora alegou tempestividade de seu requerimento e argumentou que haveria vícios formais e insuficiência da motivação no Auto de Infração e no Despacho nº 44/2025/GR09CO/GR09/SFI (SEI nº 13705824). A Recorrente sustenta que as infrações técnicas apontadas não se caracterizaram de forma inequívoca ou, se existentes, teriam decorrido de circunstâncias que afastam a ilicitude ou a aplicação da sanção. Alegando que a penalidade de advertência teria sido aplicada sem que houvesse comprovação de qualquer prejuízo ou dano efetivo a terceiros ou ao sistema de radiodifusão, a Recorrente arguiu que haveria desproporcionalidade na sanção de advertência. Por fim, a prestadora argumentou a necessidade de produção de prova técnica.
+ Os argumentos recursais foram analisados pela Comissão Permanente de Distribuição e Instrução de Procedimentos para Apuração de Descumprimento de Obrigações - CPDI-PADOS que emitiu o Informe nº 45/2025/GR10CO/GR10/SFI (SEI nº 13863830). Ao concluir a comissão sugeriu ao Gerente Regional da Anatel nos Estados do Pará, Maranhão e Amapá, que conhecesse do Recurso e, à Superintendente de Controle de Obrigações, que negasse a ele provimento.
+Em 10 de julho de 2025, foi exarado o Despacho Decisório nº 29/2025/GR10CO/GR10/SFI (SEI nº 13909154) onde o Gerente Regional da Anatel nos Estados do Pará, Maranhão e Amapá decidiu conhecer do Recurso Administrativo interposto pela Record e encaminhar os autos à Superintendente de Controle de Obrigações, para prosseguimento do feito.
+Em 15 de agosto de 2025, o Superintendente de Controle de Obrigações Substituto decidiu negar provimento ao Recurso Administrativo e manter a Decisão recorrida, conforme consta no Despacho Decisório nº 433/2025/CODI/SCO (SEI nº 13986063).
+ A prestadora foi notificada das decisões em 10 de setembro de 2025 (SEI nº 14365575) por meio do Ofício nº 68/2025/GR10CO/GR10/SFI-ANATEL (SEI nº 14220079).
+Em 17 de setembro de 2025, a Recorrente apresentou o seu segundo Recurso Administrativo (SEI nº 14397464), onde repisou o argumento de existência de vícios formais e insuficiência da motivação no Auto de Infração e no Despacho nº 44/2025/GR09CO/GR09/SFI (SEI nº 13705824). A Recorrente alegou que teve sua defesa cerceada, pois não teria sido oportunizada a produção de prova pericial ou acesso a laudo técnico detalhado. A Recorrente alegou que diferenças em coordenadas geográficas podem decorrer da margem de erro natural dos equipamentos de medição, que a fiscalização não comprovou a infração pois apresentou laudo técnico completo e que se limitou a registros fotográficos.
+Em 12 de novembro do mesmo ano, emitiu-se o Informe nº 82/2025/GR10CO/GR10/SFI (SEI nº 14681381) contendo a análise das razões recursais da recorrente. A Área Técnica salientou a inexistência de qualquer vício formal ou material que inquine o presente processo de nulidade. Acrescentou que o formato de leitura da data constante no Registro Espectral de RTV não tem qualquer relação com as análises procedidas. A Área Técnica sugeriu conhecer do Recurso Administrativo e negar provimento.
+A SCO exarou o Despacho Decisório nº 694/2025/CODI/SCO (SEI nº 14740884) em 22 de dezembro de 2025, conhecendo do Recurso Administrativo e encaminhando os autos deste procedimento a este Colegiado para a análise de mérito.
+Emitiu-se a Matéria para Apreciação do Conselho Diretor nº 852/2025 (SEI nº 14740880), encaminhou o processo, via Superintendência Executiva, para distribuição ao Colegiado.
+No dia 29 de dezembro de 2025, o processo foi distribuído para a minha relatoria, conforme Certidão de Distribuição SEI nº 14976327.
+É o breve relato.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise encontra-se dividida em 3 (três) partes. Na primeira, examinarei a admissibilidade do Recurso de Ofício. Na segunda parte, avaliarei o mérito recursal. No terceiro e último capítulo, procederei à avaliação quanto à conformação do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+Da Admissibilidade
+A instauração e a instrução do presente Pado atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal - LPA, e o Regimento Interno da Anatel - RI-Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O recurso administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão. No caso, o recurso foi dirigido para a SCO, que dele conheceu e negou provimento. Portanto, correto é o encaminhamento para a apreciação do Conselho Diretor, conforme previsto no art. 115, § 1º, alínea “b” do RI-Anatel, assim transcrito:
+Regimento Interno da Anatel:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+Não se vislumbra, ainda, a incidência das hipóteses de não conhecimento do recurso, previstas no art. 116 do RI-Anatel, a saber:
+Regimento Interno da Anatel:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+O recurso administrativo é tempestivo. Em 11 de setembro de 2025, a Recorrente foi notificada do teor do Despacho Decisório nº 433/2025/CODI/SCO (SEI nº 13986063), conforme se extrai da Certidão de Intimação Cumprida SEI nº 14365575. O segundo recurso administrativo foi protocolizado no dia 17 de setembro de 2025, estando, assim, atendido o prazo regimental de 10 (dez) dias. Atendido, portanto, o prazo inscrito no § 6º, do art. art. 115 do RI-Anatel.
+De igual forma, a Recorrente é parte legítima deste processo, está regularmente representada e há interesse e utilidade na reforma da decisão.
+Estão presentes os requisitos de admissibilidade recursal, devendo o Conselho Diretor conhecer do pedido de reforma da decisão.
+Assim, é correto o conhecimento da espécie levado a efeito via Despacho Decisório nº 694/2025/CODI/SCO (SEI nº 14740884). 
+Do Mérito Recursal
+A Recorrente alegou a existência de vício formal, consistente na ausência de análise crítica própria do Gerente Regional nos Estados do Ceará, Rio Grande do Norte e Piauí ao expedir o Despacho nº 44/25, em afronta ao art. 50 à LPA.
+Discordo integralmente do argumento da Record, tal como a Área Técnica que o refutou amparando-se no art. 50 da LPA.
+Informe nº 82/2025/GR10CO/GR10/SFI (SEI nº 14681381)
+"3.19. No que tange às razões apresentadas pela Recorrente, sejam as preambulares, sejam as de mérito, nota-se serem elas a repetição dos exatos fundamentos anteriormente esposados.
+3.20. Dada tal constatação, reitera-se fidedignamente os termos dos Informes nº 55/2025/GR09CO/GR09/SFI (SEI nº 13705266) e nº 45/2025/GR10CO/GR10/SFI (SEI nº 13863830), como se aqui estivessem transcritos."
+Informe nº 45/2025/GR10CO/GR10/SFI (SEI nº 13863830)
+"3.19. Com relação à alegação de nulidade do Despacho Decisório nº 44/2025/GR09CO/GR09/SFI, por suposto vício de motivação, cumpre registrar que a decisão foi fundamentada nos argumentos constantes no Informe nº 55/2025/GR09CO/GR09/SFI (SEI nº 13705266), tudo conforme dispõe a Lei nº 9.784/1999, que regula o Processo Administrativo no âmbito da Administração Pública Federal:
+Art. 50. Os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando:
+[...]
+§ 1o A motivação deve ser explícita, clara e congruente, podendo consistir em declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas, que, neste caso, serão parte integrante do ato.
+3.20. No referido Informe, consta toda a motivação e fundamentação que lastrearam a decisão ora vergastada. Portanto, os questionamentos apresentados não gozam de sustentáculo fático ou legal, o que afasta qualquer alegação de nulidade ou existência de qualquer violação ao contraditório e à ampla defesa da entidade.
+Entendo que a contra‑argumentação da Área Técnica se mostra adequada e suficiente, razão pela qual registro minha integral concordância para efeitos do art. 50, § 1º, da Lei nº 9.784/99.
+Cumpre salientar que o Gerente Regional nos Estados do Ceará, Rio Grande do Norte e Piauí manifestou formalmente sua anuência às razões e fundamentos constantes do Informe nº 55/2025/GR09CO/GR09/SFI (SEI nº 13705266). Ao proferir o Despacho nº 44/2025, a autoridade reafirmou, de maneira explícita, a totalidade da motivação ali consignada, observando, portanto, o que dispõe o § 1º do art. 50 da LPA, quanto à necessidade de adequada fundamentação dos atos administrativos.
+A Record argumentou que teve sua defesa cerceada, pois não teria sido oportunizada a produção de prova pericial ou acesso a laudo técnico detalhado. A Recorrente alegou que diferenças em coordenadas geográficas podem decorrer da margem de erro natural dos equipamentos de medição; que a fiscalização não comprovou a infração pois não apresentou laudo técnico completo e que se limitou a registros fotográficos. Veja-se os exatos termos utilizados no recurso.
+Recurso Administrativo (SEI nº 14397464)
+"4. PRELIMINARMENTE: DOS VÍCIOS FORMAIS E DA NULIDADE DO AUTO DE INFRAÇÃO
+(...)
+Violação ao Contraditório e Ampla Defesa:
+Não foi oportunizada à Recorrente a produção de prova pericial ou acesso a laudo técnico detalhado (metodologia, equipamentos, data e hora das medições), o que caracteriza cerceamento de defesa.
+(...)
+5. QUANTO AO MÉRITO:
+(...)
+Primeiramente, importa esclarecer que diferenças em coordenadas geográficas podem decorrer da margem de erro natural dos equipamentos de medição, não sendo suficientes, por si só, para configurar infração grave.
+Nem pode ser admitido que a aferição foi realizada em formato de sistema americano, pois não afasta a incerteza e a necessidade de prova inequívoca.
+As próprias tentativas de justificativas da decisão administrativa, comprovam que a fiscalização não apresentou laudo técnico completo e que se limitou a registros fotográficos. Restando devidamente evidenciada a inexistência da comprovação da infração."
+Novamente cuida-se de argumento improcedente.
+A Área Técnica novamente contesta afirmando que os agentes de fiscalização seguem procedimentos estabelecidos, utilizam equipamentos calibrados, os quais são relacionados no Laudo de Vistoria, não carecendo de perícias externas para a comprovação de infrações.
+Informe nº 45/2025/GR10CO/GR10/SFI (SEI nº 13863830)
+"3.22. Não procede a alegação da entidade de que não há provas técnicas robustas suficientes para caracterizar as infrações técnicas apontadas pela fiscalização. Cabe ressaltar que os agentes de fiscalização seguem os procedimentos estabelecidos pela Anatel para realização das ações fiscalizatórias e suas respectivas medições técnicas para avaliar o serviço de radiodifusão, bem como utilizam equipamentos devidamente calibrados para tal operação, demonstrando grande confiabilidade e precisão.
+3.23. Note-se que, ao revés do afirmado pela Recorrente, no Laudo de Vistoria nº CE202412101000 (SEI nº 13012311) consta, além das medições realizadas pela fiscalização, a relação dos instrumentos utilizados na vistoria. Para que não reste qualquer dúvida quanto aos fatos, basta uma vista nas imagens juntadas aos autos pela fiscalização, inclusive do display digital do transmissor que indicava claramente a potência de operação, disponíveis no Registro Fotográfico RTV (SEI nº 13020881).
+3.24. Nesse contexto, verifica-se que as questões alegadas pela interessada não estão dentre aquelas cujo conhecimento técnico do perito seja essencial à sua constatação. No caso concreto, as análises feitas durante a fiscalização já foram suficientes para a constatação das irregularidades técnicas e a desejada perícia não traria elementos indispensáveis para o presente processo.
+3.25. Ademais, cumpre acrescentar que esta Agência possui corpo técnico competente e especializado para fiscalizar e apontar as irregularidades atinentes à execução dos serviços de radiodifusão, não carecendo de perícias externas para a comprovação de infrações técnicas relativas ao uso irregular do espectro de radiofrequências.
+3.26. Assim, diante da existência de documentação capaz e suficiente, por si só, de comprovar a irregularidade cometida, não há que se falar em cerceamento da defesa."
+Quanto a oportunidade de produção de prova pericial destaca-se que a prestadora foi intimada, em diversas oportunidades a apresentar os argumento e provas que julgasse necessárias à sua defesa. Registre-se:
+Auto de Infração nº CE202412101000 (sei Nº 13012275)
+"1.1. INTIMA-SE: da descrição do fato ou do ato constitutivo da infração, do dispositivo legal, regulamentar ou contratual infringido, bem como das sanções aplicáveis, detalhadamente descritos nos documentos mencionados no Item 5, que são partes integrantes deste Auto de Infração; assim como à cessação imediata da conduta infracional, nos termos do Art.l 1, § 2°, da Resolução n.° 589/2012, sem prejuízo das sanções previstas;
+1.2. INTlMA-SE: do prazo de 15 (quinze) dias para oferecer defesa administrativa, apresentando as provas que julgar cabíveis no endereço abaixo ou em qualquer outra representação da Anatel constante no endereço: http://wvvw.gov.br/anatel/pt-br/consumidor
+Av. Senador Virgílio Távora, 2500, Dioniso Torres, Fortaleza/CE , Telefone: (85) 3304 3200"
+Ofício nº 26/2025/GR09CO/GR09/SFI-ANATEL (SEI nº 13152449)
+"1. Na estrita observância do devido processo legal, em cumprimento ao disposto no §3º do artigo 82 do Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013, com o encerramento da instrução processual, fica consignado o prazo de 10 (dez) dias, o qual será contado a partir do recebimento da presente intimação, para apresentação de alegações finais nos autos do Processo em epígrafe (sobre as irregularidades apontadas no Laudo de Vistoria - SEI nº 13012311, anexo ao Auto de Infração nº CE202412101000 - SEI nº 13012275)."
+Ofício nº 225/2025/GR09CO/GR09/SFI-ANATEL (SEI nº13776631)
+"3. Dito isso, considerando os termos do disposto no artigo 115, § 6º, do Regimento Interno da Anatel, fica consignado à entidade o prazo de 10 (dez) dias para apresentação de Recurso Administrativo, que pode ser encaminhado à Unidade da Anatel mais próxima ou apresentado por meio de peticionamento eletrônico."
+Ofício nº 68/2025/GR10CO/GR10/SFI-ANATEL (SEI nº 14220079)
+"2. Dito isso, considerando os termos do disposto no art. 115, §§ 2º e 6º, do Regimento Interno da Anatel, fica consignado o prazo de 10 (dez) dias para apresentação de Recurso Administrativo, o qual poderá ser encaminhado à Unidade da Anatel mais próxima, presencialmente ou por Correios, ou enviado por meio de peticionamento eletrônico."
+(Grifei)
+A prestadora, em todas as fases processuais em que lhe foi franqueada a possibilidade de manifestação, dispôs de plena oportunidade para apresentar os argumentos e os elementos probatórios que reputasse pertinentes — inclusive a realização de perícia técnica, conforme sustentado. Todavia, limitou-se a formular alegações que não foram aptas para desqualificar os procedimentos regularmente conduzidos pela fiscalização desta Agência, sem aportar fundamentos técnicos ou fatos novos que pudessem infirmar as conclusões até então alcançadas.
+Nesse contexto, a arguição de cerceamento de defesa carece de qualquer lastro probatório, uma vez que não se verifica a existência de prova ou requerimento que tenha sido indevidamente obstado, desconsiderado ou deixado de ser analisado pela Anatel. Assim, a alegação mostra-se desprovida de respaldo fático e jurídico.
+No que se refere à medição de potência, cumpre destacar que a indicação visual do nível de operação do transmissor da emissora corresponde à leitura fornecida pelo próprio equipamento, não se tratando, portanto, de mera medição eventual ou sujeita à utilização de instrumentos sem qualificação. Trata-se, em verdade, do parâmetro efetivamente programado pela própria prestadora para a operação do transmissor.
+Quanto à divergência relativa à localização da estação, verifica-se que os dados constantes do licenciamento — conforme consulta ao Sistema Mosaico (SEI nº 13020804) — indicam que o transmissor deveria estar instalado na Rua São Pedro, nº 1930, Bairro Salesianos, no município de Juazeiro do Norte/CE. Todavia, conforme registrado no Laudo de Vistoria (SEI nº 13012311), o equipamento foi encontrado no endereço Rua Francisco José Pinheiro, s/n, Bairro Horto, na mesma municipalidade.
+As coordenadas geográficas da estação principal, constantes do licenciamento, são: Latitude 7° 12' 56,99’’ S e Longitude 39° 19' 5,99’’ W. Já as coordenadas do local em que o transmissor foi efetivamente encontrado são: Latitude 7° 10' 46’’ S e Longitude 39° 19' 33’’ W. De acordo com o cálculo realizado mediante a Calculadora Geográfica do INPE - disponível em: Calculadora Geográfica, a distância geodésica entre os dois pontos é de 4.115 (quatro mil cento e quinze) metros. Da mesma forma, a verificação visual efetuada por meio da plataforma Google Maps confirma a distância aproximada de 4,11 km entre os endereços. Ilustra-se a seguir:
+ | 
+ | 
+ | 
+ Fonte: Calculadora Geográfica INPE
+ | 
+ | 
+ Fonte: Google Maps
+ | 
+À vista do exposto, reputo que os argumentos ora examinados não merecem guarida.
+A prestadora argumenta, por fim, que a sanção de advertência seria desproporcional diante da ausência de prova técnica e da inexistência de dano ou risco à coletividade.
+A Área Técnica ponderou que a sanção se mostra adequada, necessária para a preservação do interesse da sociedade e em conformidade o objetivo de punir a ação delituosa.
+Informe nº 45/2025/GR10CO/GR10/SFI (SEI nº 13863830)
+"3.30. Ainda, a aplicação de sanção à Recorrente não constitui ofensa aos princípios da razoabilidade e proporcionalidade, pois, no que se refere ao preceito de adequação (que preconiza que a medida administrativa deve ser apta para o atingimento dos fins que a inspiraram), a aplicação da sanção está prevista nos regulamentos aplicados, ou seja, a punição está conexa à realidade dos fatos. Quanto ao preceito da necessidade (que impõe que o Poder Público adote sempre a medida menos gravosa possível para atingir determinado objetivo), o que a norma busca é evitar a prestação de serviços inadequados, fora dos parâmetros técnicos, protegendo o interesse público dos usuários, em detrimento do interesse privado da entidade infratora. Dessa forma, a aplicação de sanção à emissora que pratica a ação ilícita é necessária para a preservação do interesse da sociedade. Pela proporcionalidade em sentido estrito, institui-se que se pondere o custo-benefício entre a vantagem do fim a ser promovido e o dano causado em razão do direito restringido. Sob esse aspecto, a aplicação da sanção guarda absoluta conformidade com o objetivo de punir a ação delituosa praticada pela autuada, de maneira a prevenir novas ocorrências em prejuízo da sociedade."
+Alinho-me novamente à Área Técnica.
+Com efeito, a sanção de advertência constitui a medida menos gravosa dentre aquelas previstas no rol sancionador aplicável por esta Agência. Importa ressaltar, ademais, que a emissão de radiofrequência em desacordo com os parâmetros originalmente planejados para a operação do sistema implica a geração de campo eletromagnético distinto daquele previsto no projeto técnico, ocasionando cobertura em áreas nas quais o serviço não deveria prover, possibilitando a ocorrência de interferências prejudiciais.
+No caso concreto, verifica-se que a potência irradiada ultrapassava em 32,5% (trinta e dois vírgula cinco por cento) o limite autorizado para a estação. Soma-se a isso o fato de que a instalação foi deslocada para um ponto de maior altitude, o que ampliou significativamente a área de abrangência do sinal, extrapolando os contornos previstos no licenciamento.
+Tal cenário pode comprometer a regular concessão de novas autorizações pela Agência na região, na medida em que a operação irregular da prestadora pode gerar sobreposição indevida de cobertura e potencial interferência sobre serviços futuros. Isso decorre do fato de que a análise de novos licenciamentos baseia-se nos parâmetros das estações devidamente licenciadas e em operação regular, circunstância que não se verifica no presente caso, em que a emissão eletromagnética irradiada pela emissora ultrapassa os limites esperados.
+Reputa-se com reprovável a atitude da prestadora e defectivos ou insuficientes os argumentos recursais, portanto incapazes de sustentar o procedimento dos pedidos.
+VIII - A RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+Por fim, tem-se que a Agenda 2030 da Organização das Nações Unidas - ONU é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015. A Agenda 2030 contempla os 193 (cento e noventa e três) Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta por 17 (dezessete) Objetivos de Desenvolvimento Sustentável - ODS e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+Além disso, a Agenda 2030 foi objeto de alinhamento interno, para o caso brasileiro, sendo o Instituto de Pesquisa Econômica Aplicada - IPEA o responsável por desenvolver metas brasileiras, conforme seu estudo "ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação". Quanto à matéria em análise, destaco aderência aos seguintes objetivos:
+a) Objetivo 9 - Indústria, Inovação e Infraestrutura: a qualidade na prestação dos serviços de radiodifusão garante a satisfação dos usuários e o acesso a um serviço fidedigno aos seus fins, envolvendo a manutenção e os investimentos em infraestrutura e inovação, assim pode auxiliar na concretização da meta 9.1: "Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos.";
+b) Objetivo 16 - Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis: educar as empresas para que respeitem integralmente direitos básicos consumeristas e a prestação do serviço adequado, guarda pertinência temática com a Meta 16.3, uma vez que promove o Estado de Direito em nível nacional, garantindo igualdade de tratamento para todas as partes que tenham interesse no presente tema. Do mesmo modo, há relação com a Meta 16.7, pois a tomada de decisão por parte do ente regulador é garantia, a partir do sancionamento, de atuação responsiva, inclusiva e participativa da sociedade como um todo.
+No presente caso, destaca-se que a emissora, ao operar de forma irregular, causou prejuízos à administração do espectro de radiofrequências.
+Os Objetivos de Desenvolvimento Sustentável são, como visto, interconectados e desafiadores, tendo como foco principal o desenvolvimento humano no Brasil e no Mundo.
+O Brasil está comprometido com o cumprimento das metas da Agenda 2030 para o Desenvolvimento Sustentável. O estudo realizado pelo renomado Instituto de Pesquisa Econômica Aplicada (IPEA) é um avanço significativo nesse esforço, pois adapta as metas globais à realidade brasileira. Esse estudo serve como um importante instrumento de suporte técnico e institucional às ações governamentais, auxiliando na formulação e revisão de políticas públicas e programas nacionais de desenvolvimento.
+CONCLUSÃO
+Voto por conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 13/02/2026, às 11:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15028346 e o código CRC CBEF292F.
+ | 
+Referência: Processo nº 53560.002667/2024-43 | 
+SEI nº 15028346 |

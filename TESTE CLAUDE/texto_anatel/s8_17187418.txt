@@ -1,0 +1,42 @@
+SEI/ANATEL - 15364180 - Acórdão
+Boletim de Serviço Eletrônico em 30/03/2026
+DOU de 30/03/2026, seção 1, página 33
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 77, de 20 de março de 2026
+Processo nº 53500.063260/2021-54
+Recorrente/Interessado: TRANSIT DO BRASIL S.A.
+CNPJ nº 02.868.267/0001-20
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESCUMPRIMENTO DE OBRIGAÇÕES REGULATÓRIAS E DETERMINAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL. MULTA. RECURSO CONHECIDO E NÃO PROVIDO. REFORMA, DE OFÍCIO, DO VALOR DA MULTA.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TRANSIT DO BRASIL S.A., prestadora do Serviço Telefônico Fixo Comutado - STFC, contra decisão que aplicou sanção de multa por descumprimento de dispositivos da Lei nº 9.472/1997 - Lei Geral de Telecomunicações - LGT, do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC - Resolução nº 588/2012, e das determinações contidas nos itens II, III, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP, de 5 de setembro de 2018 (SEI nº 7346749), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP, de 11 de outubro de 2018 (SEI nº 7346758).
+2. A decisão de primeira instância fundamentou-se em infrações ao art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC, bem como descumprimento de determinações contidas nos itens II, III, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP, retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP, caracterizando infração ao § 2º do art. 16 do Regulamento de Aplicação de Sanções Administrativas - RASA.
+3. A multa inicialmente aplicada foi de R$ 115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos), posteriormente ajustada para R$ 114.615,61 (cento e quatorze mil, seiscentos e quinze reais e sessenta e um centavos) em razão de recomendações da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel e revisão dos critérios de dosimetria.
+II. QUESTÃO EM DISCUSSÃO
+Há seis questões em discussão: (i) saber se a Anatel possui competência para atuar em casos de inadimplência regulatória e determinar ressarcimentos entre prestadoras; (ii) saber se o acordo extrajudicial firmado entre as partes extinguiu as obrigações administrativas e regulatórias; (iii) saber se houve caracterização de má-fé por parte da TRANSIT; (iv) saber se houve má-fé do GRUPO OI; (v) saber se é adequada a aplicação da taxa do Sistema Especial de Liquidação e de Custódia - SELIC para atualização da multa; e (vi) saber se o valor da multa é proporcional às infrações apuradas.
+III. RAZÕES DE DECIDIR
+1. A Anatel possui competência para arbitrar condições de interconexão e determinar ressarcimentos entre prestadoras, conforme previsto na LGT e precedentes do Conselho Diretor.
+2. O acordo extrajudicial firmado entre as partes não extinguiu as obrigações administrativas, pois a OI S.A. informou o não recebimento dos valores determinados e a TRANSIT reconheceu a dívida, evidenciando inadimplemento.
+3. A má-fé da TRANSIT foi caracterizada pelo descumprimento deliberado e reiterado de obrigações regulatórias e determinações da Agência, bem como pela obtenção de vantagem econômica indevida.
+4. Não se verificou má-fé do GRUPO OI, que buscou a Agência para resolução do impasse e recebimento legítimo dos valores de interconexão.
+5. A aplicação da taxa SELIC para atualização da multa encontra respaldo na legislação vigente, no RASA e na Emenda Constitucional nº 113/2021.
+6. O valor da multa foi fixado observando critérios objetivos, limites regulatórios para microempresas e agravantes previstos no RASA, sendo proporcional às infrações apuradas.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Reforma, de ofício, do valor da multa para R$ 114.615,61 (cento e quatorze mil, seiscentos e quinze reais e sessenta e um centavos).
+Tese de julgamento: "1. A Anatel possui competência para determinar ressarcimentos entre prestadoras e instaurar processo sancionatório por descumprimento de obrigações regulatórias. 2. O acordo extrajudicial não extinguiu as obrigações administrativas, diante do inadimplemento reconhecido. 3. A má-fé da TRANSIT foi caracterizada pelo descumprimento deliberado de determinações da Agência e retenção indevida de receitas de interconexão. 4. A aplicação da taxa SELIC para atualização da multa é adequada e encontra respaldo legal. 5. O valor da multa é proporcional às infrações apuradas e respeita os limites regulatórios para microempresas."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 19, 145 a 150, 152, 153 e 173, II; Lei nº 10.522/2002, art. 37-A; Emenda Constitucional - EC nº 113/2021, art. 3º; Decreto-Lei nº 4.657/1942, art. 20; Resolução nº 588/2012, art. 3º; Resolução nº 589/2012, arts. 7º, 9º, 16, 18, 19 e 34.
+Jurisprudência relevante citada: Anatel, Acórdão nº 634/2019, Rel. Moisés Queiroz Moreira, Reunião nº 880, 12.12.2019; Anatel, Acórdão nº 40/2018, Rel. Otavio Luiz Rodrigues Junior, Reunião nº 842, 18.01.2018; Parecer nº 289/2024/PFE-ANATEL/PGF/AGU; Parecer nº 328/2025/PFE-ANATEL/PGF/AGU; Parecer nº 86/2023/PFE-ANATEL/PGF/AGU.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 18/2026/OP (SEI nº 15216069), integrante deste acórdão,
+a) conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento; e,
+b) reformar, de ofício, o valor da multa aplicada de R$ 115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos) para R$ 114.615,61 (cento e quatorze mil, seiscentos e quinze reais e sessenta e um centavos).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/03/2026, às 19:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15364180 e o código CRC F54BBE8E.
+ | 
+Referência: Processo nº 53500.063260/2021-54 | 
+SEI nº 15364180 |

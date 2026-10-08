@@ -1,0 +1,456 @@
+SEI/ANATEL - 15085787 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 10/2026/OP
+Processo nº 53500.076795/2024-38
+Interessado: UNIFIQUE TELECOMUNICACOES SA, Ligga Telecomunicacoes S.a.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo cumulado com Pedido de Efeito Suspensivo interposto por LIGGA TELECOMUNICAÇÕES S.A. e por SERCOMTEL S.A. – TELECOMUNICAÇÕES, em face do Despacho Decisório nº 130/2024/CPRP/SCP (SEI nº 12785544), de 8 de novembro de 2024, proferido pelo Superintendente de Competição da Agência Nacional de Telecomunicações.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. HOMOLOGAÇÃO DE CONTRATO DE CREDENCIAMENTO. SERVIÇO MÓVEL PESSOAL. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso administrativo cumulado com pedido de efeito suspensivo interposto por Ligga Telecomunicações S.A. e Sercomtel S.A. – Telecomunicações contra o Despacho Decisório nº 130/2024/CPRP/SCP, que não homologou contrato de credenciamento para prestação do Serviço Móvel Pessoal (SMP) por meio de rede virtual entre UNIFIQUE TELECOMUNICAÇÕES S.A. (prestadora origem) e LIGGA (credenciada) em áreas onde LIGGA já possui autorização própria do SMP.
+2. Pedido de homologação do contrato de credenciamento para atuação da LIGGA como operadora virtual (MVNO) em todo o território nacional, exceto Rio Grande do Sul e Santa Catarina, com alegação de caráter provisório da operação até implantação de infraestrutura própria.
+3. Petição extemporânea apresentada pela LIGGA visando complementar argumentos e informações do recurso.
+II. QUESTÃO EM DISCUSSÃO
+1. A questão em discussão consiste em saber se é possível a homologação de contrato de credenciamento para prestação do SMP por operadora virtual em área geográfica onde a credenciada já possui autorização própria do serviço, considerando a vedação regulatória à sobreposição de outorgas e os impactos sobre a competição, cumprimento de obrigações editalícias e matriz de responsabilidades.
+III. RAZÕES DE DECIDIR
+1. O recurso administrativo é cabível e tempestivo, estando presentes os pressupostos de admissibilidade.
+2. A petição extemporânea foi conhecida, conforme Súmula nº 21/2017, por ter sido protocolizada antes da inclusão do processo em pauta.
+3. A regulamentação vigente veda a sobreposição das áreas geográficas de autorização do SMP e de operação virtual na modalidade de credenciamento, nos termos do art. 260 do Regulamento Geral dos Serviços de Telecomunicações (RGST).
+4. O modelo de MVNO serve como etapa inicial para entrada de novos agentes no mercado, mas não pode ser utilizado por autorizada do SMP em sua própria área de prestação, mesmo que alegada transitoriedade.
+5. O contrato de credenciamento firmado prevê vigência mínima de 12 meses e renovação automática, não caracterizando solução provisória.
+6. O Edital do 5G permite o uso de infraestrutura de terceiros para cumprimento de obrigações, mas essa possibilidade deve ser harmonizada com a regulamentação setorial e não autoriza o uso de credenciamento em sobreposição de áreas.
+7. O contrato atribui à UNIFIQUE responsabilidades pela prestação do SMP na área de atuação da LIGGA, o que desestimula investimentos em infraestrutura própria e cria incentivos regulatórios distorcidos.
+8. O mecanismo regulatório adequado para complementaridade de rede é o roaming de exploração industrial de rede (EIR), previsto para entrantes do SMP.
+9. A homologação do contrato nas áreas de sobreposição violaria a política pública de expansão de redes e comprometeria a isonomia entre prestadoras regionais.
+IV. DISPOSITIVO E TESE
+1. Pedido de petição extemporânea indeferido. Recurso administrativo conhecido e não provido.
+Tese de julgamento: "1. É vedada a homologação de contrato de credenciamento para prestação do Serviço Móvel Pessoal por operadora virtual em área geográfica onde a credenciada já possui autorização própria do serviço. 2. O uso de recursos de terceiros para cumprimento de obrigações editalícias deve observar a regulamentação setorial e não autoriza sobreposição de outorgas. 3. O roaming de exploração industrial de rede é o mecanismo adequado para complementaridade de rede das prestadoras entrantes."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 128 e 3º; Resolução Anatel nº 777/2025, art. 260; Resolução nº 783/2025, arts. 65 a 68; Edital nº 1/2021-SOR/SPR/CD-ANATEL, itens 7.5 e 7.7.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA).
+Plano Geral de Autorizações do Serviço Móvel Pessoal (PGA-SMP), aprovado pela Resolução nº 321, de 27 de setembro de 2002.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento sobre Exploração de Serviço Móvel Pessoal por meio de Rede Virtual (RRV-SMP), aprovado pela Resolução nº 550, de 22 de novembro de 2010, revogada pela Resolução Anatel nº 777, de 28 de abril de 2025.
+Regulamento Geral dos Serviços de Telecomunicações - RGST, aprovado pela Resolução Anatel nº 777, de 28 de abril de 2025.
+Plano Geral de Metas da Competição (PGMC), aprovado pela Resolução nº 783, de 3 de setembro de 2025.
+Processo nº 53500.076804/2024-91 - Contrato de Credenciamento (MVNO) entre UNIFIQUE e LIGGA nos Estados do Rio Grande do Sul e de Santa Catarina para homologação.
+Processo nº 53500.004083/2018-79 - Edital nº 1/2021-SOR/SPR/CD-ANATEL (Edital 5G).
+RELATÓRIO
+Cuida-se de Recurso Administrativo cumulado com Pedido de Efeito Suspensivo (SEI nº 12893859) interposto por LIGGA TELECOMUNICAÇÕES S.A. e por SERCOMTEL S.A. – TELECOMUNICAÇÕES em face do Despacho Decisório nº 130/2024/CPRP/SCP (SEI nº 12785544), de 8 de novembro de 2024, proferido pelo Superintendente de Competição, que entre outros, não homologou contrato de credenciamento para prestação do Serviço Móvel Pessoal (SMP) por meio de rede virtual credenciada firmado entre UNIFIQUE TELECOMUNICAÇÕES S.A. (CNPJ nº 02.255.187/0001-08), como prestadora origem, e LIGGA TELECOMUNICAÇÕES S.A. (CNPJ nº 04.368.865/0001-66), como credenciada, na área geográfica constituída pela Região Norte, os setores 19 e 20 do Plano Geral de Outorgas (PGO) e o Estado de São Paulo, à exceção dos municípios integrantes do Setor 33 do PGO.
+I – DO PEDIDO DE HOMOLOGAÇÃO DE CONTRATO DE CREDENCIAMENTO PARA EXPLORAÇÃO DO SMP POR MEIO DE REDE MÓVEL VIRTUAL
+Em 16 de setembro de 2024, a UNIFIQUE TELECOMUNICAÇÕES S.A. protocolizou correspondência (SEI nº 12588256), por meio da qual encaminhou o Contrato de credenciamento para prestação de SMP por meio de rede virtual (MVNO) de SEI nº 12588259 , firmado com a LIGGA TELECOMUNICAÇÕES S.A. para homologação, conforme disposto no art. 24 do Regulamento sobre Exploração de SMP por meio de Rede Virtual (RRV-SMP), aprovado pela Resolução nº 550, de 22 de novembro de 2010.
+Na mesma data, a LIGGA encaminhou correspondência de SEI nº 12589432 com Parecer Jurídico (SEI nº 12589433) que visava subsidiar a análise da Agência. Segundo esse estudo, os modelos de negócios propostos pelo Grupo LIGGA estariam amparados pela regulamentação então vigente e pelo Edital nº 1/2021-SOR/SPR/CD-ANATEL (SEI nº 7452039), o Edital 5G, permitindo flexibilidade para parcerias e cumprimento de obrigações regulatórias.
+Em 15 de outubro de 2024, por meio dos Ofícios nº 505/2024/CPRP/SCP-ANATEL (SEI nº 12737666) e nº 506/2024/CPRP/SCP-ANATEL (SEI nº 12737679), a Gerência de Monitoramento das Relações entre Prestadoras (CPRP) ofereceu oportunidade às Partes para apresentar informações adicionais sobre o arranjo pretendido. 
+Em 28 de outubro de 2024, a LIGGA manifestou-se nos termos da Carta CE 236/2024-Regulatório (SEI nº 12798353). Argumentou que seu credenciamento como operadora virtual do SMP (MVNO, da sigla em inglês Mobile Virtual Network Operator) em sua área de prestação como autorizada seria procedimento legal e que representaria uma etapa transitória até a implantação de operação própria do SMP. Por fim, solicitou a homologação do contrato à ANATEL.
+Em 6 de novembro de 2024, a UNIFIQUE trouxe aos autos manifestação nos termos da Petição Resposta (SEI nº 12845390), na qual ratifica os termos da CE nº 236/2024-Regulatório (SEI nº 12798353), protocolada pela LIGGA.
+II – DO DESPACHO DECISÓRIO Nº 130/2024/CPRP/SCP
+Em 8 de novembro de 2024, por meio do Informe nº 132/2024/CPRP/SCP (SEI nº 12639473), a CPRP analisou o pedido de homologação do contrato de credenciamento protocolizado por UNIFIQUE (Prestadora Origem) e LIGGA (Credenciada), abrangendo todo o território nacional, exceto Rio Grande do Sul e Santa Catarina. Na avaliação dessa área técnica:
+o contrato propõe operação inédita e heterodoxa, no qual a LIGGA passaria a representar UNIFIQUE como MVNO em áreas onde a Credenciada já possui autorização para prestar o SMP;
+o RRV-SMP e o Plano Geral de Autorizações do Serviço Móvel Pessoal (PGA-SMP), aprovado pela Resolução nº 321, de 27 de setembro de 2002, vedavam a sobreposição de atuação de uma mesma prestadora (ou grupo econômico) como autorizada e como credenciada/MVNO na mesma área geográfica de prestação;
+precedentes de pedidos de homologação de contratos de credenciamento envolvendo Algar, Unifique e Brisanet mostram que a atuação como MVNO por autorizada do SMP ocorreu apenas fora das áreas de prestação dessas empresas, não se observando sobreposição de outorgas;
+o arranjo proposto permitiria que LIGGA, já autorizada e detentora de espectro, atuasse em sua própria área de prestação como credenciada da UNIFIQUE, contrariando o objetivo regulatório de incentivar a construção de infraestrutura própria e o uso eficiente do espectro;
+a proposta poderia distorcer incentivos à competição e à expansão de infraestrutura, além de criar insegurança sobre o cumprimento de obrigações editalícias (como as do leilão do 5G) e responsabilidades consumeristas; e
+não há benchmarks de outros países semelhantes ao modelo proposto, tendo sido observado o padrão internacional da conversão de MVNOs em Mobile Network Operators (MNOs), e não o contrário.
+Por fim, a área técnica recomenda a homologação do contrato apenas para áreas onde LIGGA não possui autorização própria do SMP (Regiões Nordeste e Centro-Oeste, Minas Gerais, Espírito Santo, Rio de Janeiro e setor 33 do PGO) e, consequentemente, a não homologação do contrato nas áreas onde a credenciada já é autorizada do SMP (Região Norte, setores 19 e 20 do PGO e Estado de São Paulo, exceto setor 33).
+Ademais, ao analisar o contrato enviado para homologação, a área técnica avaliou as questões formais, nos termos da Análise de Aderência Regulatória SEI nº 12638081, estando presentes todas as cláusulas obrigatórias.
+Em 8 de novembro de 2024, por meio do Despacho Decisório nº 130/2024/CPRP/SCP (SEI nº 12785544), o Superintendente de Competição (SCP) acolheu a recomendação da área técnica ao decidir:
+Despacho Decisório nº 130/2024/CPRP/SCP
+"O SUPERINTENDENTE DE COMPETIÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 159, inciso I, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, e
+[...]
+RESOLVE:
+I - HOMOLOGAR o Contrato para Representação na prestação do SMP por Credenciado – MVNO firmado entre UNIFIQUE TELECOMUNICAÇÕES S.A. (CNPJ nº 02.255.187/0001-08), como Prestadora Origem, e LIGGA TELECOMUNICAÇÕES S.A. (CNPJ nº 04.368.865/0001-66), como Credenciada, na área geográfica constituída pelas Regiões Nordeste e Centro-Oeste, os Estados de Minas Gerais, Espírito Santo, Rio de Janeiro e o Setor 33 do Plano Geral de Outorgas (PGO).
+II - NÃO HOMOLOGAR o Contrato para Representação na prestação do SMP por Credenciado – MVNO firmado entre UNIFIQUE TELECOMUNICAÇÕES S.A. (CNPJ nº 02.255.187/0001-08), como Prestadora Origem, e LIGGA TELECOMUNICAÇÕES S.A. (CNPJ nº 04.368.865/0001-66), como Credenciada, na área geográfica constituída pela Região Norte, os setores 19 e 20 do Plano Geral de Outorgas (PGO) e o Estado de São Paulo, à exceção dos municípios integrantes do Setor 33 do PGO.
+III - ATRIBUIR ACESSO RESTRITO ao documento "Contrato Anexo II - Versão Restrita" (SEI nº 12588259), com concessão de vista/cópia apenas à UNIFIQUE TELECOMUNICAÇÕES S.A. e à LIGGA TELECOMUNICAÇÕES S.A.
+IV - NÃO ATRIBUIR ACESSO RESTRITO aos documentos SEI números: 12589432, 12589433, 12798353 e 12845390.
+V - NOTIFICAR as partes do presente Despacho.
+VI - ESTABELECER que este Despacho Decisório entra em vigor na data de sua publicação no Boletim de Serviço Eletrônico da Anatel."
+LIGGA e UNIFIQUE foram notificadas da decisão por meio dos Ofícios nº 529/2024/CPRP/SCP-ANATEL (SEI nº 12789984 e 12868370) e nº 530/2024/CPRP/SCP-ANATEL (SEI nº 12789993 e 12864226), em 8 e 11 de novembro de 2024, respectivamente. 
+III - DO RECURSO ADMINISTRATIVO
+Em 14 de novembro de 2024, a LIGGA interpôs Recurso Administrativo cumulado com Pedido de Efeito Suspensivo (SEI nº 12893859), no qual argumentou que:
+a regulamentação da ANATEL permite que uma autorizada do SMP atue como operadora virtual credenciada dentro de sua área de outorga, desde que não seja simultaneamente prestadora origem na mesma área;
+o modelo proposto favorece a competição no mercado móvel, especialmente entre prestadoras de pequeno porte (PPP), e está alinhado com os objetivos originais do modelo de MVNO no Brasil;
+o Edital 5G permite o uso de infraestrutura e recursos de terceiros para cumprimento das obrigações;
+a UNIFIQUE será responsável pela prestação do SMP apenas enquanto a LIGGA atuar como MVNO credenciada;
+o modelo de MVNO é uma solução temporária para viabilizar a entrada da LIGGA no mercado móvel até a implantação de sua infraestrutura própria;
+não há vedação legal para a adoção do modelo proposto, portanto, a ANATEL deve respeitar o princípio da mínima intervenção, permitindo liberdade às empresas para escolherem suas estratégias de negócio.
+Por fim, a LIGGA requer o conhecimento do recurso, com atribuição de efeito suspensivo, e retratação do Despacho nº 130/2024/CPRP/SCP (SEI nº 12785544), para que o contrato de prestação de SMP por credenciada seja homologado integralmente. Caso não haja o juízo de retratação, requer-se o provimento do Recurso.
+IV – DO DESPACHO DECISÓRIO Nº 145/2024/CPRP/SCP
+Em 18 de novembro de 2024, por meio do Despacho Decisório nº 145/2024/CPRP/SCP (SEI nº 12899101), o SCP decidiu:
+conhecer do Recurso Administrativo;
+não atribuir acesso restrito ao documento de SEI nº 12893859;
+notificar as partes dessa decisão.
+As Partes foram devidamente comunicadas da decisão (SEI nº 12899595, 12901610, 12899637, 12904838) para ciência.
+V – DO DESPACHO DECISÓRIO Nº 62/2024/PR 
+Em 19 de novembro de 2024, o Presidente do Conselho Diretor prolatou o Despacho Decisório nº 64/2024/PR (SEI nº 12901542), por meio do qual concedeu o efeito suspensivo formulado no Recurso (SEI nº 12893859) adiando, portanto, a produção de efeitos especificamente ao item II do Despacho Decisório nº 130/2024/CPRP/SCP (SEI nº 12785544), até o julgamento de mérito do Recurso Administrativo. As Empresas foram comunicadas da decisão (SEI nº 12905485, 12913262, 12905509, 12931898).
+VI – DO INFORME Nº 161/2024/CPRP/SCP
+Ato contínuo, em 29 de novembro de 2024, elaborou-se o Informe nº 161/2024/CPRP/SCP (SEI nº 12903103). Afirmou-se que:
+a regulamentação não permite que uma autorizada do SMP atue como MVNO credenciada em sua própria área de prestação, mesmo que não seja prestadora origem de outra operação virtual;
+a equivalência regulatória entre autorizadas tradicionais e de rede virtual não autoriza a sobreposição de papéis na mesma área de prestação;
+a promoção da competição não justifica a flexibilização das regras por meio da validação de movimentos unilaterais desalinhados com as medidas competitivas implementadas pelo Regulador;
+o modelo de roaming em exploração industrial de rede (EIR) é o mecanismo regulatório adequado para complementariedade de rede em áreas onde a operadora ainda não possui infraestrutura própria, sendo uma solução transitória prevista e incentivada pela ANATEL;
+o Edital 5G permite o uso de infraestrutura de terceiros, mas não de forma irrestrita ou em modelos que contrariem a política pública de expansão de redes;
+o contrato não delimita claramente a transitoriedade do arranjo, prevendo vigência mínima de 12 meses e renovação automática, o que indica intenção de continuidade e não de solução provisória.
+Por fim, sugeriu-se o conhecimento e não provimento do Recurso.
+VII - DO ENCAMINHAMENTO AO CONSELHO DIRETOR
+Ainda em 29 de novembro de 2024, os autos foram remetidos a este Conselho por meio da Matéria nº 967/2024 (SEI nº 12946317).
+Realizado sorteio em 5 de dezembro de 2024, o então Conselheiro Substituto Daniel D'Albuquerque foi designado Relator, cujo acervo foi posteriormente assumido pela Conselheira Substituta Cristiana Camarate.
+Em 17 de janeiro de 2025, a LIGGA juntou aos autos petição visando complementar as informações e argumentos trazidos em sua peça recursal (SEI nº 13162295). Alegou que:
+não há vedação expressa no PGA-SMP ou no RRV-SMP para que uma autorizada do SMP atue como credenciada (MVNO), desde que não haja vínculo societário entre as partes e que a operadora credenciada não seja também prestadora origem de outra MVNO na mesma área;
+embora detenha outorgas e radiofrequências, a Recorrente ainda não possui infraestrutura própria operante, pois os compromissos de construção só serão exigidos a partir de 2026. Não haveria, portanto, sobreposição de outorgas no momento, justificando a atuação provisória como MVNO para iniciar operações no mercado móvel;
+o SMP é altamente concentrado e sua atuação aumentaria a competição, beneficiando os consumidores;
+não pretende cumprir obrigações do Edital 5G por meio do contrato de MVNO, mas sim utilizar o modelo de forma transitória até a implantação de sua própria infraestrutura, sem prejuízo ao cumprimento das obrigações regulatórias e à lógica da “Escada do Investimento”;
+a regulamentação visa flexibilizar a entrada de novos prestadores e estimular a competição, e que impedir sua atuação como MVNO seria contrário aos objetivos regulatórios da ANATEL.
+Solicitou, ao fim, a reforma da decisão da SCP, com a homologação integral do contrato de credenciamento.
+Na Reunião nº 943 deste Conselho, realizada em 15 de maio de 2025, foi solicitada a prorrogação de prazo de relatoria da matéria por 120 (cento e vinte) dias (SEI nº 13734998).
+Em razão da minha nomeação para compor o Conselho Diretor, o acervo do gabinete da então Conselheira Substituta Cristiana Camarate foi redistribuído, momento em que fui designado o novo relator da presente matéria (SEI nº 14320008).
+É o relatório.
+FUNDAMENTAÇÃO
+A tramitação do processo ocorreu de acordo com os dispositivos legais e regulamentares, sendo observados os princípios do processo legal, do contraditório e da ampla defesa, previstos na Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e no Regimento Interno da Agência Nacional de Telecomunicações (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013. 
+i - Da admissibilidade
+Quanto à admissibilidade do Recurso, verifica-se que, nos termos do Regimento Interno da Agência, ele é cabível em face da decisão proferida por autoridade competente, e atende aos pressupostos de tempestividade, legitimidade e interesse em recorrer.
+A Recorrente foi notificada em 8 de novembro de 2024 (SEI nº 12864226) e o recurso foi interposto tempestivamente em 14 de novembro de 2024 (SEI nº 12893860 ). Ademais, a Recorrente está regularmente representada (SEI nº 7275320) e possui interesse na reforma da decisão combatida. O presente recurso não contraria entendimento fixado em Súmula da Agência.
+Estão, portanto, presentes os pressupostos de admissibilidade previstos no art. 116 do RIA, de modo que foi acertada a decisão de conhecimento da peça nos termos do Despacho Decisório nº 145/2024/CPRP/SCP (SEI nº 12899101).
+II - DA PETIÇÃO EXTEMPORÂNEA
+Em 17 de janeiro de 2025, após a distribuição do processo ao Conselho e antes de sua inclusão em pauta, a Recorrente apresentou a petição de SEI nº 13162295.
+A Súmula nº 21, de 10 de outubro de 2017, disciplina o tratamento a ser conferido às petições extemporâneas, nos seguintes termos:
+"As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado". [Grifou-se]
+A petição é extemporânea e seu protocolo se deu antes da publicação da deliberação do Conselho Diretor, na qual se incluiu este processo. É de se conhecer a petição e seu conteúdo será analisado em conjunto com o mérito recursal.
+III - DAS CONSIDERAÇÕES INICIAIS
+Antes de adentrar nas alegações da Recorrente, trago à colação considerações feitas pela área técnica no Informe nº 132/2024/CPRP/SCP (SEI nº 12639473) sobre a qualificação das partes e sobre o contrato pretendido, bastante elucidativas para a análise do caso.
+Sobre a UNIFIQUE, prestadora origem do contrato em análise, foram trazidas as seguintes informações:
+Informe nº 132/2024/CPRP/SCP (SEI nº 12639473)
+"Sobre a UNIFIQUE TELECOMUNICAÇÕES S.A.
+3.7. A Unifique Telecomunicações S.A. (CNPJ 02.255.187/0001-08), deste ponto em diante referida apenas como UNIFIQUE, foi fundada em novembro de 1997, utilizando a marca TPA (Timbó Provedor de Acesso), atendendo inicialmente a cidade de Timbó, Estado de Santa Catarina (SC).
+3.8. Atualmente, a UNIFIQUE possui outorgas para prestação de serviços de interesse restrito: Serviço Limitado Privado (SLP); e coletivo: Serviço de Comunicação Multimídia (SCM), Serviço Telefônico Fixo Comutado (STFC), Serviço Móvel Pessoal (SMP) e Serviço de Acesso Condicionado (SeAC), elencados abaixo:
+Tabela 1 - Outorgas UNIFIQUE
+ Serviços
+ | 
+ Outorgas
+ | 
+ SCM
+ | 
+ Autorização: Ato nº 59573, de 12/07/2006, Diário Oficial da União (DOU) de 18/07/2006; Ato nº 2220, de 28/04/2009, DOU de 15/05/2009; Ato nº 305, de 16/01/2012, DOU 25/01/2012; Ato nº 6234, de 27/09/2010, DOU de 06/10/2010; Ato nº 8001, de 01/10/2014, DOU de 10/10/2014; Ato nº 9989, de 09/12/2014, DOU de 15/12/2014; Ato nº 7273, de 04/12/2012, DOU de 13/12/2012; Ato nº 735, de 12/02/2009, DOU de 20/02/2009; Ato nº 6450, de 06/11/2009, DOU de 30/11/2009; Ato nº 8121, de 09/10/2014, DOU de 21/10/2014; Ato nº 4978, de 04/08/2010, DOU de 10/08/2010.
+ | 
+ SLP
+ | 
+ Notificação de Serviço
+ | 
+ SMP
+ | 
+ Ato nº 2497, de 21/07/2016, DOU de 26/07/2016 (SEI nº 0675413)
+ | 
+ SeAC
+ | 
+ Ato nº 5779, de 24/09/2013, DOU de 01/10/2013
+ | 
+ STFC
+ | 
+ Ato nº 4514, de 15/07/2010, DOU de 22/07/2010
+ | 
+ Serviço Limitado Privado Por Satélite
+ | 
+ Ato nº 2358, de 08/04/2021, DOU de 13/04/2021
+ | 
+3.9. De maneira vinculada ao SMP, de especial interesse aos propósitos desta análise, cabe destacar a obtenção de Autorização de Uso de Radiofrequências, por meio do Ato nº 10.582, de 26 de novembro de 2021 (SEI nº 7725221), para a faixa de 3,5 GHz nas Áreas de Prestação dos setores 18 e 29 do Plano Geral de Outorgas (PGO), correspondentes aos Estados de Santa Catarina e do Rio Grande do Sul. A UNIFIQUE também obteve para municípios desses Estados diversas Autorizações de Uso de Radiofrequências na faixa de 700 MHz, em caráter secundário, conforme tabela abaixo:
+Tabela 2 - Atos de RF UNIFIQUE
+ Faixa
+ | 
+ Área de Prestação
+ | 
+ Atos
+ | 
+ Caráter
+ | 
+ 3,5 GHz
+ | 
+ Setores 18 e 29 do PGO, na Região Sul.
+ | 
+ Ato nº 10582, de 26 de novembro de 2021 (SEI nº 7725221)
+ | 
+ Primário
+ | 
+ 700 MHz
+ | 
+ Municípios de SC e RS.
+ | 
+ Ato nº 4627, de 25 de abril de 2023 (SEI nº 10144961)
+ Ato nº 14106, de 28 de setembro de 2023 (SEI nº 10929451)
+ Ato nº 15851, de 10 de novembro de 2023 (SEI nº 11122561)
+ Ato nº 3040, de 20 de março de 2024 (SEI nº 11691180)
+ Ato nº 8955, de 10 de junho de 2024 (SEI nº 12104110)
+ Ato nº 10460, de 12 de julho de 2024 (SEI nº 12272492)
+ Ato nº 12549, de 02 de setembro de 2024 (SEI nº 12514973)
+ | 
+ Secundário
+ | 
+3.10. Além da autorização para uso de radiofrequências nos Estados do Rio Grande do Sul e de Santa Catarina, a UNIFIQUE obteve também da Anatel a Autorização de SMP por meio de Rede Virtual nas demais Unidades da Federação, nos termos do Ato nº 11.904, de 23 de agosto de 2024 (SEI nº 12449693), tendo firmado para tanto um contrato de utilização de redes com a TIM S.A., consoante os autos do processo nº 53520.002422/2024-92.
+3.11. A seguir, uma ilustração das diferentes modalidades de habilitação da UNIFIQUE à prestação do SMP em todo o território nacional:
+Figura 1 - Área de Prestação Consolidada UNIFIQUE
+Sobre a LIGGA, credenciada do contrato em análise, o seguinte diagnóstico foi apresentado:
+Informe nº 132/2024/CPRP/SCP (SEI nº 12639473)
+"Sobre a LIGGA TELECOMUNICAÇÕES S.A.
+3.12. A Ligga Telecomunicações S.A. (LIGGA, CNPJ nº 04.368.865/0001-66), surgiu da consolidação de diferentes empresas com atuação focalizada no Estado do Paraná, dentre elas, COPEL TELECOM, SERCOMTEL, HORIZONS e NOVA FIBRA.
+3.13. O processo de consolidação teve início em agosto 2020, quando a Sercomtel Participações S.A. (SERCOMTEL, CNPJ nº 01.371.416/0001-89) foi adquirida pelo Bordeaux Fundo de Investimento em Participações Multiestratégia (BORDEAUX, CNPJ nº 35.788.095/0001-34), conforme processo administrativo nº 53500.004710/2021-77.
+3.14. Logo após, a LIGGA, então denominada Copel Telecomunicações S.A., foi adquirida pela holding Bordeaux Participações S.A. (CNPJ nº 21.279.023/0001/57), controlada integralmente pelo fundo BORDEAUX, como registrado no processo administrativo nº 53500.015893/2022-37.
+3.15. Em etapa posterior, a Horizons Telecomunicações e Tecnologia S.A. (HORIZONS, CNPJ nº 11.960.585/0001-08) também foi adquirida pelo mesmo fundo de investimentos, de acordo com o processo nº 53500.064459/2021-08.
+3.16. Em 2022, a LIGGA adquiriu a Nova Fibra Telecom S.A. (NOVA FIBRA, CNPJ nº 03.868.136/0001-06), conforme o processo nº 53500.015893/2022-37, e procedeu à incorporação tanto da NOVA FIBRA quanto da HORIZONS. Como resultado desse processo de consolidação e reorganização societária, as operações do grupo em telecomunicações passaram a ser concentradas nas empresas LIGGA e SERCOMTEL, sendo a primeira controlada pela holding Bordeaux Participações S.A. e a segunda diretamente pelo Bordeaux Fundo de Investimento em Participações Multiestratégia.
+3.17. A LIGGA possui outorgas para prestação de serviços de interesse restrito (SLP) e coletivo (SCM, STFC e SMP), elencados abaixo:
+Tabela 3 - Outorgas LIGGA
+ Serviços
+ | 
+ Outorgas
+ | 
+ Serviço de Comunicação Multimídia (SCM)
+ | 
+ Ato nº 31337, de 21/11/2002, DOU de 26/11/2002
+ | 
+ Serviço Limitado Privado (SLP)
+ | 
+ Ato nº 7705, de 14/12/2020 (SEI nº 6327239)
+ | 
+ Serviço Telefônico Fixo Comutado (STFC)
+ | 
+ Ato nº 3109, de 19/05/2015, DOU de 22/05/2015
+ | 
+ Serviço Móvel Pessoal (SMP)
+ | 
+ Ato nº 10577, de 29/11/2021 (SEI nº 7725171)
+ | 
+3.18. Com relação ao Serviço Móvel Pessoal, em 2021, a LIGGA participou do Leilão do 5G, obtendo Autorização de Uso de Radiofrequências (faixas 3,5 GHz, em caráter primário) para prestação do SMP nos setores 19 e 20 do PGO (Estado do Paraná), por meio do Ato nº 10577, de 26 de novembro de 2021 (SEI nº 7725171).
+3.19. Por parte da SERCOMTEL, o grupo também obteve Autorizações de Uso de Radiofrequências na faixa de 3,5 GHz, em caráter primário, mediante o Ato nº 10579, de 26 de novembro de 2021 (SEI nº 7725193), para prestação na Região Norte e Estado de São Paulo, exceto Setor 33 do PGO.
+3.20. Recentemente, a LIGGA obteve Autorização de Uso de Radiofrequências na faixa de 700 MHz, em caráter secundário, consoante o Ato nº 10461, de 12 de julho de 2024 (SEI nº 12273594).
+3.21. Da mesma forma, a SERCOMTEL obteve autorizações para uso da faixa de 700 MHz, em caráter secundário, por meio dos Atos nº 10674, de 17 de julho de 2024 (SEI nº 12295743); nº 10648, de 17 de julho de 2024 (SEI nº 12293056); e nº 10644, de 17 de julho de 2024 (SEI nº 12292849).
+3.22. Além disso, a SERCOMTEL ainda detém outras Autorizações de Uso de Radiofrequências, em caráter primário, no Estado do Paraná, nas faixas de 850 MHz, 900 MHz e 1,8 GHz. A tabela a seguir sintetiza as faixas autorizadas da LIGGA e da SERCOMTEL para prestação do SMP:
+Tabela 4 - Atos de RF LIGGA e SERCOMTEL
+ Faixa
+ | 
+ Área de Prestação
+ | 
+ Atos
+ | 
+ Caráter RF
+ | 
+ Empresa
+ | 
+ 3,5 GHz
+ | 
+ Setores 19 e 20 do PGO
+ | 
+ Ato nº 10577, de 26 de novembro de 2021 (SEI nº 7725171)
+ | 
+ Primário
+ | 
+ LIGGA
+ | 
+ 700 MHz
+ | 
+ Municípios do Estado do PR
+ | 
+ Ato nº 10461, de 12 de julho de 2024 (SEI nº 12273594)
+ | 
+ Secundário
+ | 
+ LIGGA
+ | 
+ 1,8 GHz
+ | 
+ AR 43 (exceto Setor 20 do PGO)
+ | 
+ Ato nº 2535, de 22 de julho de 2016 (SEI nº 0678733)
+ | 
+ Primário
+ | 
+ SERCOMTEL
+ | 
+ 3,5 GHz
+ | 
+ Região Norte e Estado de São Paulo, exceto setor 33 do PGO
+ | 
+ Ato nº 10579, de 26 de novembro de 2021 (SEI nº 7725193)
+ | 
+ Primário
+ | 
+ SERCOMTEL
+ | 
+ 850 MHz, 900 MHz e 1,8 GHz
+ | 
+ Setor 20 do PGO
+ | 
+ Ato nº 3681, de 03 de abril de 2023 (SEI nº 10046429)
+ | 
+ Primário
+ | 
+ SERCOMTEL
+ | 
+ 700 MHz
+ | 
+ Municípios de SP e da Região Norte
+ | 
+ Ato nº 10644, de 17 de julho de 2024 (SEI nº 12292849)
+ Ato nº 10648, de 17 de julho de 2024 (SEI nº 12293056)
+ Ato nº 10674, de 17 de julho de 2024 (SEI nº 12295743)
+ | 
+ Secundário
+ | 
+ SERCOMTEL
+ | 
+3.23. Deste ponto em diante, para fins da análise regulatória e concorrencial que se pretende, por integrarem o mesmo grupo de controle, as operações de SERCOMTEL S.A. - TELECOMUNICAÇÕES e LIGGA TELECOMUNICAÇÕES S.A. serão referenciadas em conjunto apenas como LIGGA:
+Figura 2 - Área de Prestação Consolidada LIGGA
+Ademais, a Área Técnica apresentou considerações iniciais sobre o contrato de credenciamento entre UNIFIQUE e LIGGA, em especial sobre a extensão geográfica a qual a operação abrange: 
+Informe nº 132/2024/CPRP/SCP (SEI nº 12639473)
+"Sobre o contrato para representação na prestação do SMP por Credenciamento entre UNIFIQUE e LIGGA
+3.25. O contrato sob análise nos presentes autos tem por objeto o Credenciamento da LIGGA para a representação da UNIFIQUE na prestação do SMP no território nacional, à exceção dos Estados do Rio Grande do Sul e de Santa Catarina.
+3.26. Contudo, para atuação nesses dois Estados, foi submetido um outro instrumento contratual no autos do processo nº 53500.076804/2024-91, cujo objeto compreende o Credenciamento da LIGGA para representação da UNIFIQUE na Prestação do SMP exclusivamente nos Estados do Rio Grande do Sul e de Santa Catarina.
+3.27. Portanto, de forma combinada com os autos do processo 53500.076804/2024-91, tem-se que as partes almejam o Credenciamento de LIGGA como representante da UNIFIQUE em todo o território nacional, inclusive, em sobreposição à geografia correspondente à Área de Prestação do SMP de LIGGA, vide ilustração a seguir:
+Figura 3 - Área de Prestação e geografia de Credenciamento pretendida por LIGGA
+3.28. Em manifestação adicional de instrução, Carta CE 236/2024-Regulatório (SEI nº 12798353), a LIGGA argumentou que o credenciamento nos termos almejados é crucial para o início de suas operações no SMP antes da implantação completa das infraestruturas de rede 5G. A empresa ainda alegou que a operação como Credenciada será temporária e visa à aquisição de maturidade e eficiência no mercado."
+Portanto, o contrato em análise abrange o território nacional, exceto os Estados do Rio Grande do Sul e Santa Catarina. De forma complementar, no Processo nº 53500.076804/2024-91, as Partes requereram homologação de contrato de credenciamento da LIGGA (MVNO) e UNIFIQUE (prestadora origem) exclusivamente nesses Estados.
+É relevante registrar que, por meio do Despacho Decisório nº 132/2024/CPRP/SCP (SEI nº 12789977), de 8 de novembro de 2024, a SCP homologou o Contrato para Representação na prestação do SMP por Credenciado – MVNO firmado entre as Partes, na área geográfica constituída pelos Estados do Rio Grande do Sul e de Santa Catarina.
+Passo à avaliação dos argumentos recursais.
+IV - do mérito 
+IV.1 - Da suposta possibilidade de uma autorizada de SMP ser credenciada de MVNO dentro de sua Área de Prestação
+A Recorrente se irresigna contra avaliação da área técnica, na qual foi apontada impossibilidade de sobreposição de outorgas na mesma área geográfica. A LIGGA argumenta que a regulamentação então vigente permitia que uma operadora tradicional do SMP atuasse como credenciada de Rede Virtual nas áreas em que detém outorga para prestação do SMP, desde que não fosse prestadora origem nessas mesmas áreas. A seu ver, a vedação estabelecida pelo art. 8º do PGA-SMP se aplicaria a outorgas de SMP no "formato tradicional", mas não à sobreposição de autorizações tradicionais com outras virtuais. Considerando o art. 32 do RRV-SMP, alega que apenas autorizadas de redes virtuais estariam vedadas, na sua área de prestação, de atuarem como prestadora origem. Complementa ainda que, nos termos do art. 52 do RRV-SMP, há vedação de que uma credenciada seja, numa mesma área, prestadora origem. Conclui que se a autorizada de SMP ou de MVNO não se caracterizar como prestadora origem, nas mesmas Áreas de Registro, poderá ser credenciada de outras prestadoras origem. Portanto, para o caso concreto, como a LIGGA não é prestadora origem nas áreas onde detém outorga de SMP, não haveria impedimento de ser credenciada de outra autorizada.
+Em sua petição extemporânea, prossegue na mesma linha de argumentação, afirmando que o art. 8º do PGA-SMP não veda o modelo proposto, desde que respeitados os limites de concentração de autorizações e a inexistência de vínculo societário entre as partes envolvidas. Ainda, que a despeito de a Recorrente ser detentora de outorgas do serviço e de radiofrequências, os compromissos assumidos somente serão exigidos no ano de 2026, com prazo das primeiras entregas (30%) até o dia 31 de dezembro de 2026. Até lá, não haveria que se falar em sobreposição de outorgas.
+Primeiramente, para avaliar a alegação de suposto conflito entre o art. 8º do PGA-SMP e o art. 32 do RRV-SMP, transcrevo os dispositivos a seguir.
+Segundo o art. 8º do PGA-SMP, é vedada a detenção de mais de uma outorga em uma mesma área geográfica por empresas de um mesmo grupo econômico na prestação do SMP ou SMC:
+PGA-SMP
+"Art. 8º É vedada a uma mesma prestadora, sua controladora, controlada ou coligada, a prestação de SMP, SMC ou ambos por meio de mais de uma autorização ou concessão, em uma mesma área geográfica de prestação de serviço, ou parte dela."
+Por sua vez, o art. 32 do RRV-SMP veda relações de controle entre uma Autorizada MVNO e uma MNO em sua Área de Prestação:
+RRV-SMP
+"Art. 32. Não é admitido que a Autorizada de Rede Virtual seja controladora, controlada ou coligada, nos termos do Regulamento para Apuração de Controle e Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações, aprovado pela Resolução nº 101, de 4 de fevereiro de 1999, de Prestadora Origem na Área de Prestação desta última."
+Quanto ao ponto, é relevante transcrever o art. 54 do RRV-SMP que também trata de vedação direcionada à autorizada MVNO:
+RRV-SMP
+"Art. 54 Não é admitido que a Autorizada de Rede Virtual seja controladora, controlada ou coligada, nos termos do Regulamento para Apuração de Controle e Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações, aprovado pela Resolução nº 101, de 4 de fevereiro de 1999, de outras Autorizadas de Rede Virtual na mesma área geográfica de sua atuação." 
+No Informe nº 132/2024/CPRP/SCP (SEI nº 12639473), a CPRP esclarece que sua análise sobre eventual conflito entre o PGA-SMP e o RRV-SMP se deu em razão dos argumentos trazidos pela Recorrente no Parecer Jurídico-Regulatório (SEI nº 12589433). Deixa claro que esses dispositivos, harmônicos entre si, se referem à atuação ex ante do Regulador para vedar situações que favoreçam o exercício abusivo de poder econômico advindo da concentração do mercado relativo a um determinado serviço nas mãos de um único grupo econômico, seja por relação de controle ou de coligação:
+Informe nº 132/2024/CPRP/SCP
+"3.125. É importante notar que os citados artigos, tanto do PGA-SMP (art. 8º) quanto do RRV-SMP (arts. 32 e 54), se referem à atuação ex ante do Regulador para vedar situações que favoreçam o exercício abusivo de poder econômico advindo da concentração do mercado relativo a um determinado serviço nas mãos de um único grupo econômico, seja por relação de controle ou de coligação. O caso em apreço claramente não se subsome a essa hipótese, eis que LIGGA e UNIFIQUE não possuem qualquer relação societária que se enquadre nas vedações de controle ou de coligação. 
+3.126. Não se vislumbra, portanto, qualquer conflito desse comando com os conceitos regulatórios subjacentes ao Serviço Móvel Pessoal."
+Dessa forma, o caso em análise não se enquadra em tais previsões, vez que a LIGGA e UNIFIQUE não possuem qualquer relação societária que se enquadre nas vedações de controle ou de coligação.
+Não obstante, ainda que a questão nuclear dos dispositivos não se aplique à hipótese, a linha argumentativa do Parecer evoca um suposto conflito entre os termos "em uma mesma área geográfica de prestação de serviço" trazida no art. 8º do PGA-SMP e "Área de Prestação" contida no art. 32 do RRV-SMP, de forma que, para a Recorrente, prevaleceria o RRV-SMP sobre a regra geral, por se tratar de norma específica.
+Sobre esse suposto conflito, a SCP esclarece, e com acerto, que o RRV-SMP não cria um novo serviço, mas virtualiza as formas de provimento de um serviço já existente e com toda uma base regulatória que deve ser observada em sua completude pelos agentes que prestam o SMP, independentemente se como prestadora virtual ou não.
+Informe nº 132/2024/CPRP/SCP
+"3.131. Conceitualmente, o Regulamento RRV-SMP introduziu um novel de agentes e de distribuição de responsabilidades intrínsecas à virtualização do provimento do Serviço Móvel Pessoal. Importa frisar: não se trata de um novo serviço, mas da virtualização das formas de provimento de um serviço já devidamente disciplinado com toda a sua estrutura regulatória de regência.
+3.132. Nesse sentido, não se trata de uma regulamentação específica com efeitos substitutivos, mas, sim, de um aprimoramento regulamentar incremental e devidamente acoplada à estrutura quadro já estabelecida. O texto da norma é cristalino em prever o seu encaixe na normatização do SMP em diversos trechos, vejamos:
+Art. 1º Este Regulamento tem por objetivo estabelecer critérios e procedimentos para a exploração de Serviço Móvel Pessoal – SMP por meio de Rede Virtual, normatizando as relações entre os envolvidos nesse processo.
+[...]
+Art. 5º A exploração de SMP por meio de Rede Virtual tem base na Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT), no Regulamento dos Serviços de Telecomunicações, aprovado por meio da Resolução nº 73, de 25 de novembro de 1998, no Regulamento do Serviço Móvel Pessoal – SMP, aprovado por meio da Resolução nº 477, de 7 de agosto de 2007, e em outros regulamentos, normas e planos aplicáveis ao serviço, nos Termos de Autorização expedidos pela Anatel às Autorizadas do SMP, bem como no disposto neste Regulamento.
+[...]
+Art. 31. A Prestação do SMP por Autorizada de Rede Virtual constitui Serviço de Telecomunicações, classificando-se a Autorizada de Rede Virtual como Prestador Autorizado do SMP e sujeitando-se a todas as regras contidas neste Regulamento bem como às demais aplicáveis. [sem destaques no original]"
+Vale notar que o Informe nº 505/2009-PVCPR/PVCP/SPV, que subsidiou a aprovação da Resolução nº 550, de 2010, menciona expressamente que o RRV-SMP trouxe alternativas para novos modelos de negócios existirem e prosperarem sem, contudo, se descuidar da manutenção do arcabouço regulatório do SMP como uma característica do regulamento em questão. Transcrevo:
+Informe nº 505/2009-PVCPR/PVCP/SPV
+"5.5.4.32. Assim, como todas as obrigações e direitos relacionados à Rede de Telecomunicações, que vão desde as obrigações relativas ao uso de radiofrequências até obrigações de interconexão e o recebimento de remuneração pelo uso de redes, estão vinculadas à autorizada do SMP, o conceito de Rede Virtual se resumiria, então, na oferta do SMP através do uso de parte, ou do todo de uma rede de uma Prestadora tradicional, sendo que essa prestação não goza de todas as prerrogativas existentes para as Prestadoras de Serviço de Telecomunicações tradicionais.
+[...]
+5.5.6.2.2 A elaboração do Regulamento apresentado foi feita de maneira cautelosa, evitando uma alteração brusca no modelo de prestação do SMP, sem deixar de fornecer alternativas para que novos modelos de negócio possam existir e prosperar.
+[...]
+6.2. A proposta de regulamentar duas possibilidades para a participação de novos atores no cenário de prestação de SMP foi a maneira encontrada para flexibilizar e enquadrar, dentro dos limites da razoabilidade e da regulamentação, os possíveis modelos de negócio para interessados em dar uma maior dinâmica ao mercado do SMP.
+[...]
+6.6. A manutenção do arcabouço regulatório do SMP também é uma das características marcantes do Regulamento em questão e foi uma das premissas utilizadas neste projeto a fim de que o Usuário seguisse com todos os seus direitos assegurados, garantindo que as condições de prestação apenas se aprimorassem."
+Como se depreende do excerto acima, o Regulamento sobre Exploração de SMP por meio de Rede Virtual foi elaborado em harmonia e em complementariedade com a regulamentação do SMP. A regulamentação até então vigente não apresentava dispositivo literal prevendo a impossibilidade de sobreposição geográfica de outorgas. Contudo, a avaliação da área técnica foi adequada. A introdução da operação virtual do SMP via regulamentação da Anatel ocorreu de modo a se inserir instrumento como parte complementar do serviço móvel. Ademais, depreende-se que a sobreposição de outorgas não se alinha ao RRV-SMP considerando o §1º do art. 24 do RRV-SMP, no qual se prevê a não homologação de contratos de credenciamento prejudiciais à competição livre, ampla e justa. O tema será melhor analisado na próxima seção. Nesse contexto, a sobreposição de outorgas de uma autorizada do SMP e operadora virtual credenciada em mesma área geográfica contraria a regulação setorial.
+Nessa esteira e mantendo o racional regulatório, na revisão regulamentar dos serviços de telecomunicações empreendida via Resolução nº 777, de 28 de abril de 2025, o dispositivo passou a ter uma redação expressa. Registro que a nova norma revogou uma série de Resoluções expedidas pela Anatel, inclusive o RRV-SMP e PGA-SMP, além de aprovar o Regulamento Geral dos Serviços de Telecomunicações (RGST).
+Sobre o tema em debate, importa citar o art. 260 da nova norma:
+RGST
+"Art. 260. O Credenciado pode, a qualquer momento, pleitear a obtenção de autorização do SMP.
+Parágrafo único. A obtenção de autorização de SMP por parte de um Credenciado implica:
+I - na rescisão contratual com a Prestadora Origem, quando houver plena sobreposição das áreas geográficas das autorizações; ou,
+II – na exclusão das áreas geográficas previstas no Contrato de Credenciamento em que ambas detiverem autorização de SMP, quando houver sobreposição parcial das áreas geográficas das autorizações."
+O novo Regulamento, portanto, veda a sobreposição das áreas geográficas de autorização de SMP e de operação virtual na modalidade de credenciamento, o que colide com o objeto do contrato de SEI nº 12588259.
+Afasto, portanto, o argumento da Recorrente sobre suposta aderência do contrato citado com a regulamentação da Anatel no que se refere à sobreposição de outorga de credenciada.
+IV.2 - Da promoção da competição por meio do acordo pretendido
+A Recorrente se opõe ao entendimento da área técnica segundo o qual a detenção de autorizações de uso de radiofrequências concomitante com a prestação do SMP por meio de operação virtual por credenciada, seria conflitante ao ideal pretendido pela introdução do modelo de MVNO. 
+Menciona a Recorrente que tal entendimento seria supostamente equivocado. Nesse sentido, afirma que o modelo que se pretende atende ao objetivo da promoção da competição, na medida em que tem por finalidade viabilizar o lançamento da operação do SMP da Recorrente antes da implantação de sua infraestrutura de rede para o 5G, por motivos técnicos e comerciais.
+Ressalta que a operação requerida tem caráter provisório, apenas com o objetivo de viabilizar o lançamento de sua operação própria, estimada ainda para o ano de 2025, caso cumpridas todas as etapas de seu projeto, o qual inclui o Credenciamento pretendido.
+Em sua petição extemporânea afirma que não há subversão à lógica, pois os investimentos em infraestrutura própria serão feitos posteriormente, e dentro dos prazos estabelecidos no Edital 5G.
+Primeiramente, noto que, segundo §1º do art. 24 do RRV-SMP, no procedimento de homologação, os contratos de credenciamento não devem apresentar prejuízos à competição. No RGST, essa previsão foi mantida em sua integralidade: 
+RGST
+"Art. 233. A Prestadora Origem deve submeter à Anatel o contrato firmado com o Credenciado, em até 30 (trinta) dias após sua celebração, para homologação.
+§ 1º A homologação será negada caso o contrato não contenha as especificações do ato mencionado no § 2º do art. 232, não cumpra integralmente a regulamentação da Anatel ou seja prejudicial à competição livre, ampla e justa."
+Há de se reconhecer que os operadores virtuais do SMP desempenham papel relevante na dinâmica competitiva do serviço móvel. Devido ao seu modelo de negócios se amparar no uso de infraestrutura de terceiros, suas barreiras de entrada são consideravelmente reduzidas, em termos regulatórios e financeiros, comparativamente a uma prestadora tradicional (MNO). Essa característica facilita a entrada de novos agentes no setor, podendo trazer maior contestabilidade frente aos competidores já estabelecidos. Ademais, ao operar nas radiofrequências de uso de terceiros, há uma tendência a otimizar o uso do espectro, o que conta favoravelmente na maximização de uso desse ativo escasso. 
+Contudo, por fazer uso de ativos da prestadora origem, esse modelo possui diferenças e limitações comparativamente às MNO, que são os detentores de direito de uso de radiofrequência (RF) e responsáveis pela construção e expansão das redes do SMP. Essa expansão proporciona a sustentabilidade do sistema móvel como um todo. Nesse sistema, as operadoras virtuais possuem papel complementar na dinâmica competitiva do SMP.
+Alinho-me, portanto, à avaliação da área técnica ao enquadrar a evolução entre as operadoras MVNOs e MNOs no conceito da "escada do investimento", por meio do qual o modelo de operação virtual serviria como etapa inicial de entrada, ao passo que com o fortalecimento do negócio, seria possível atingir a condição de detentor de ativos próprios: 
+Informe nº 132/2024/CPRP/SCP
+"3.62. Desenvolvido pelo professor Martin Cave[1], o conceito acadêmico da "Escada do Investimento" tornou-se muito popular entre diversas autoridades regulatórias de telecomunicações no mundo, especialmente, na Europa. Se conferimos à efetiva competividade e rivalidade entre os agentes o rótulo de "o melhor regulador de mercados", as autoridades de regulação são orientadas a eliminar barreiras de entrada e incentivar o livre ingresso de novos agentes e, com esse objetivo, lançar mão de estratégias de abertura de redes das operações incumbentes, impor e regular condições de acesso a infraestruturas consideradas essenciais.
+3.63. No entanto, Cave argumenta que reguladores devem criar incentivos claros e estáveis de equilíbrio entre a competição no curto prazo (viabilizada pelo acesso às redes estabelecidas) e o estímulo ao investimento em infraestrutura própria (competição por infraestrutura), entendida como a forma definitiva de diferenciação estratégica e posicionamento competitivo sustentável em longo prazo.
+3.64. Ainda segundo o autor, deve-se induzir um acúmulo de experiência e "musculatura" dos regulados para o engajamento crescente em patamares cada vez sustentados em infraestrutura própria. Nos primeiros degraus dessa escalada, estariam aqueles compromissos mínimos de infraestrutura própria e, no topo da cadeia de valor, estariam os ativos menos disponíveis e de menor replicabilidade.
+3.65. Aplicado esse modelo à cadeia de valor do serviço móvel, na base dessa escada estariam os blocos de distribuição e atendimento do serviço, ao passo que o topo ficaria por conta da infraestrutura de rede de acesso e as autorizações de uso de espectro.
+3.66. Já no desenho regulatório da virtualização do serviço móvel, os regimes iniciais de entrada abrangidos pelo Credenciamento permitiriam formas de ingresso no mercado com um aporte mínimo em elementos próprios, com possibilidades tão singelas quanto a veiculação de marca e o uso de canais de distribuição. Na medida do sucesso comercial de algum empreendimento experimental ou a partir de uma estratégia empresarial mais rebuscada, é possível seguir nessa escalada, incorporando mais elementos, migrando de uma condição "leve em ativos" e dependente de contratos para uma condição "pesada em ativos" próprios, assumindo quase que a integralidade da cadeia de valor."
+No caso concreto, a LIGGA inova ao pretender se tornar operadora virtual da UNIFIQUE na mesma região geográfica em que já é uma MNO.
+Com relação à alegação de que o modelo de negócio pretendido teria por finalidade viabilizar o lançamento da operação do SMP da Recorrente, observo que para essa finalidade, a Agência disponibilizou o roaming EIR para complementar a rede das entrantes do SMP até 31 de dezembro de 2030, nos termos do §3º do art. 66 do Plano Geral de Metas de Competição (PGMC), aprovado pela Resolução nº 783, de 3 de setembro de 2025. Essa modalidade de roaming contempla a conectividade em caráter contínuo, sejam eles pessoas naturais ou dispositivos destinados à comunicação máquina a máquina - M2M ou de Internet das Coisas - IoT, das operadoras regionais do SMP que detenham autorização para uso de radiofrequência em caráter primário dentro de sua área de prestação. Nota-se que a duração do roaming EIR coincide com o período para cumprimento dos compromissos assumidos pelas prestadoras entrantes no Edital 5G. Esse instrumento, portanto, mostra-se plenamente adequado e suficiente para complementar a rede das regionais durante a fase de cumprimento de suas obrigações editalícias. 
+Os incentivos competitivos garantidos às entrantes regionais do 5G estão presentes na Resolução nº 783/2025, em especial, salvo melhor juízo, nos arts. 65 a 68 do PGMC, que estabelecem as assimetrias para o mercado de roaming nacional, dentre elas o roaming EIR, bem como na adoção do modelo de custos bottom-up (art. 3º). Nessa esteira, destaco que os valores do roaming EIR são regulados pela Agência com base nos modelos de custos bottom up, enquanto os valores de operação virtual eram regulados pelo retail-minus. Atualmente, os valores praticados no mercado de MVNO são livremente negociados. 
+Esclareço que os valores obtidos via retail-minus se baseiam em metodologia que parte dos preços praticados no atacado com um percentual de desconto mínimo. O modelo de custos bottom up, por sua vez, apresenta valores comparativamente menores por se basearem em custos incrementais de longo prazo de prestadora hipotética eficiente. De partida, observa-se que os valores calculados pela primeira metodologia tendem a ser maiores que os do modelo de custos bottom up. O roaming EIR disponibilizado pelo regulador às prestadoras regionais do SMP, portanto, possui vantagens relevantes frente ao modelo de operação virtual. 
+O Regulador disponibilizou o roaming EIR para superar restrições observadas historicamente por entrantes no que tange à infraestrutura nascente frente aos agentes estabelecidos (incumbentes) com suas redes construídas paulatinamente ao longo de anos.
+Essa modalidade de roaming contínuo se mostra como decisão vantajosa e acertada da Agência face às demandas competitivas das entrantes regionais. Ao homologar o contrato sob análise, além de colidir com os regramentos da Agência, o Colegiado estaria estabelecendo um incentivo para esvaziamento do instrumento de roaming EIR e ferindo o princípio da isonomia frente às demais prestadoras regionais, ganhadoras do leilão do 5G.
+Ato contínuo, a LIGGA afirma que a prestação via MVNO seria temporária e visaria apenas iniciar as operações comerciais no SMP. 
+Quanto ao ponto, destaco o item 5.1 do contrato de credenciamento firmado entre LIGGA e UNIFIQUE (SEI nº 12588259). Nesse item, as partes estabeleceram que o negócio firmado possui vigência de 12 (doze) meses sendo automaticamente renovado por períodos iguais e sucessivos, salvo manifestação em contrário. Portanto, observo contradição entre as alegações da Recorrente e o negócio efetivamente firmado referente ao quesito temporalidade.
+Contrato de credenciamento entre LIGGA e UNIFIQUE (SEI nº 12588259)
+"5.1. O presente Contrato entra em vigor na data de sua assinatura e terá vigência pelo período de 12 (doze) meses, sendo automaticamente renovado por períodos iguais e sucessivos, salvo manifestação contrária por escrito de uma Parte, com antecedência mínima de 30 (trinta) dias da data prevista para o término do Contrato."
+A Agência deve estar atenta ao equilíbrio entre medidas que estimulem a competição por meio de novos entrantes e medidas de estímulo à construção de redes. Não obstante os esforços envidados pelo Regulador para assegurar condições adequadas à entrada e consolidação de novos agentes no SMP, tal circunstância não lhes confere o direito de agir de forma arbitrária, amparando-se em pretensos argumentos de “competição”.
+A alegação de que o contrato de homologação ora em análise seria instrumento aderente às políticas de promoção à competição não deve prevalecer.
+IV.3 - Da possibilidade de cumprimento de compromissos decorrentes do Edital 5G com recursos de terceiros
+A área técnica, ao não homologar o contrato da Recorrente, sustentou que o arranjo pretendido pode trazer inquietações sobre a suficiência da infraestrutura voltada ao cumprimento das obrigações de conectividade contratadas, já que o Edital 5G serviu como veículo para a consecução da política pública setorial de ampliação de cobertura do serviço móvel e de construção de infraestrutura.
+Nesse ponto, a área técnica destacou os compromissos assumidos pela Recorrente, concluindo que o regime do credenciamento, por limitações intrínsecas ao modelo, não se presta a acomodar o adimplemento de obrigações editalícias de cobertura:
+Informe 132/2024/CPRP/SCP (SEI nº 12639473)
+"3.175. Por força do Termo nº 89/2021 (SEI nº 7762915), seguindo um cronograma que vai de 31 de dezembro de 2026 a 31 de dezembro de 2029, a Autorizada deverá instalar Estações Rádio Base (ERB) em todos os Municípios com menos de 30 (trinta) mil habitantes no Pará, Amapá, Amazonas e Roraima, em quantitativos que variam de uma a cinco estações, a depender da população do Município (Cláusula 10.3). Além disso, deverá cumprir Compromissos de Construção de Redes de Transmissão (backbone ou backhaul) com a implantação de infraestrutura de transporte de fibra óptica com capacidade especificada entre 31 de dezembro de 2023 e 31 de dezembro de 2025 em 6 (seis) Municípios do Estado do Pará (Cláusula 10.1). 
+3.176. Já pelo Termo nº 90/2021 (SEI nº 7762919) em parâmetros idênticos àqueles do Termo acima mencionado, devem ser instaladas ERBs em Municípios do Acre, Rondônia e Tocantins (Cláusula 10.3). Os compromissos de backbone ou backhaul por seu turno contemplam 4 (quatro) Municípios de Rondônia e 9 (nove) de Tocantins (Cláusula 10.1). 
+3.177 Por fim, no Termo nº 91/2021 (SEI nº 7762935) relativo ao Estado de São Paulo, excluído o Setor 33 do Plano Geral de Outorgas (PGO), há compromisso de instalação das ERBs 5g stand alone entre 2025 e 2029 nos Municípios com até 30 (trinta) mil habitantes, e até 2030 em 67 (sessenta e sete) localidades não-sede municipal (Cláusula 10.1), essas últimas incluídas no rol de obrigações por força do mecanismo de conversão do ágio do leilão do lote. (...)"
+No entendimento da Recorrente, a visão da área técnica não encontra guarida no Edital 5G, que prevê expressamente a possibilidade de cumprimento dos compromissos assumidos com infraestrutura e recursos de terceiros, de tal sorte que esse entendimento dissonante viola o princípio da vinculação ao instrumento convocatório.
+E, por fim, invoca o art. 128 da LGT, relativo à mínima intervenção da Anatel na esfera privada, para consignar que, embora a área técnica tenha destacado haver um caminho regulatório para as necessidades de complementariedade de rede, pautado na solução de roaming EIR, a Recorrente deve ter a liberdade necessária para escolher o modelo de negócios que melhor se adeque à sua realidade e estratégia de negócios.
+Por outro lado, em sua petição extemporânea, a empresa menciona que "em momento algum a Ligga afirmou que pretende utilizar-se do seu contrato de MVNO para cumprir com seus compromissos editalícios", pois tal proposição seria irregular e contrária aos propósitos da Empresa de se tornar a quarta operadora de telefonia móvel do Brasil.
+Inicialmente, transcrevo as obrigações do Edital 5G a serem cumpridas pela LIGGA. Observo que sua primeira meta vencerá em 31 de dezembro de 2026:
+Edital 5G (SEI nº 7452039)
+"7.5. A Proponente vencedora dos Lotes C1 a C8 e D1 a D32 deverá, ainda, atender ao compromisso de instalar Estações Rádio Base – ERB que permitam a oferta do SMP por meio de padrão tecnológico igual ou superior ao 5G NR release 16 do 3GPP, mediante ativação de portadora com largura de banda contínua igual ou superior a 50 MHz, garantindo os requisitos necessários para viabilização dos conceitos URLLC (Ultra Reliable Low Latency), mMTC (massive Machine Type Comunication) além do eMBB (enhanced mobile broadband), conforme o seguinte cronograma:
+7.5.1. Para os Lotes C1 a C8, até o dia 31 de dezembro de 2026, em pelo menos 30% (trinta por cento) dos municípios dispostos no ANEXO XIV-B;
+7.5.2. Para os Lotes C1 a C8, até o dia 31 de dezembro de 2027, em pelo menos 60% (sessenta por cento) dos municípios dispostos no ANEXO XIV-B;
+7.5.3. Para os Lotes C1 a C8, até o dia 31 de dezembro de 2028, em pelo menos 90% (noventa por cento) dos municípios dispostos no ANEXO XIV-B; e
+7.5.4. Para os Lotes C1 a C8, até o dia 31 de dezembro de 2029, em 100% (cem por cento) dos municípios dispostos no ANEXO XIV-B.
+7.5.5. Para os Lotes C1 a C8, até o dia 31 de dezembro de 2030, em 100% (cem por cento) das localidades dispostas no ANEXO XVIII-A que tenham sido associadas à autorização de uso de radiofrequências em decorrência do procedimento de conversão de que trata o item 8.8 deste Edital."
+Nos termos do item 7.7 desse certame, é prevista a possibilidade de utilização de ativos de terceiros:
+Edital 5G (SEI nº 7452039)
+"7.7. Para o atendimento dos Compromissos listados nos itens 7.4 e subitens e 7.6 e subitens deste Anexo, a Proponente vencedora poderá utilizar outras Subfaixas para as quais detenham Autorização de Uso de Radiofrequências, bem como infraestruturas ou recursos de terceiros, ainda que de forma compartilhada.
+7.7.1. Admite-se que os Compromissos listados nos itens 7.4 e subitens e 7.6 e subitens deste Anexo sejam implementados por terceiro(s), mediante acordo com a Proponente vencedora, a qual permanece como única responsável pelo compromisso perante a Agência."
+ Esclareço que posteriormente à publicação do Edital de Licitação, a Comissão Especial de Licitação retificou erro material no qual se corrigiu o item 7.7 e subitem 7.7.1, "onde se lê a referência ao item "7.6", leia-se "7.5".
+A respeito dos compromissos de abrangência estabelecidos nos itens 7.5.1 a 7.5.4 (5G em municípios acima de 30 mil habitantes) e 7.5.5 (5G em localidades - ágio), do Anexo IV, do Edital, conforme relatado pela área técnica (SEI nº 14622261), em 4 de novembro de 2025, não tinham sido reportados pela prestadora à Anatel eventuais antecipações dos citados compromissos. Registro que, conforme transcrevi acima, as primeiras obrigações vencem em 31 de dezembro de 2026.
+Em seu recurso, a LIGGA cita o princípio da vinculação ao instrumento convocatório para justificar a possibilidade de cumprimento das obrigações editalícias via uso de recursos de terceiros. Todavia, considerando suas alegações nas Petições inicial e em fase recursal, há fortes indícios de que essa Prestadora, mesmo que supostamente de forma temporária, pretendia cumprir as obrigações do Edital por meio do contrato de credenciamento SEI nº 12588258.
+O princípio da vinculação ao instrumento convocatório estabelece que a Administração Pública e os licitantes devem obedecer rigorosamente às regras estabelecidas no edital da licitação. Esse fundamento basilar do direito administrativo assegura a observância dos princípios da isonomia, da impessoalidade, da transparência e da segurança jurídica, garantindo que o procedimento licitatório seja estável e previsível. Como observa Hely Lopes Meirelles[1], o edital é a “lei interna da licitação, e, como tal, vincula aos seus termos tanto os licitantes como a Administração que o expediu ”. Por sua vez, e Celso Antônio Bandeira de Mello[2] reforça que a vinculação ao edital serve como barreira contra atuações arbitrárias.
+Observo que o Edital 5G inovou em aspectos bastante relevantes, como sua natureza não arrecadatória e destinação dos valores obtidos voltados para a expansão de redes, implantação de infraestrutura e atendimento de localidades específicas. Outra característica marcante foram os mecanismos adotados para a ampliação da competição por meio dos blocos regionais, que permitiu a entrada de novos competidores para a prestação do serviço móvel pessoal em tecnologia de 5ª geração. Notem que por terem uma área reduzida, os lotes regionais demandaram lances de valores inferiores comparativamente aos lotes nacionais, requerendo um investimento (CAPEX) reduzido para a implantação de rede própria.
+Nesse contexto, a possibilidade de uso de recursos de terceiros atua como ferramenta competitiva complementar, pois garante maior flexibilidade no modelo de expansão de infraestrutura de redes a ser adotada. Potencialmente, possibilita alternativa contratual, redução de prazos e custos no cumprimento dos compromissos editalícios. Essa medida foi relevante para a entrada e sustentabilidade das prestadoras regionais que, notadamente, possuem uma capacidade financeira limitada. Contudo, essa previsão não pode ocorrer como as ganhadoras do leilão bem entenderem. 
+Adicionalmente, esclareço que o Edital 5G, assim como demais certames editalícios, não deve ser interpretado isoladamente, ele se integra ao conjunto de normas vigentes. Portanto, a interpretação do certame deve ocorrer de forma sistêmica, considerando os normativos da Anatel, evitando assim contradições, ilegalidades e assegurando a coerência da política pública setorial.
+Ademais, o Edital nº 1/2021-SOR/SPR/CD-ANATEL deve observar os regramentos aplicáveis ao setor, como o Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016, o Regulamento Geral dos Serviços de Telecomunicações (RGST) e demais resoluções. 
+De pronto, ratifico que a regulamentação da Anatel não permite que uma autorizada do SMP atue concomitantemente como operadora virtual em caso de sobreposição de áreas geográficas, nos termos do art. 260 do RGST. Logo, o uso de recursos de terceiros por meio da prestação de credenciamento de MVNO não constitui solução que encontre respaldo legal para cumprimento dos compromissos assumidos pela LIGGA.
+Por sua vez, noto que o RUE que tem como princípios basilares: (i) a utilização eficiente do espectro; (ii) o emprego racional e econômico do espectro; (iii) a ampliação do uso de redes e serviços de telecomunicações, entre outras.
+A Agência, portanto, ao prever o uso de ativos de terceiros no Edital 5G, deve harmonizar sua adoção com o uso do espectro de forma racional e eficiente, além de garantir a expansão das redes de telecom. Sobre o ponto, transcrevo avaliação da Área Técnica, ao qual me filio:
+Informe nº 132/2024/CPRP/SCP (SEI nº 12639473)
+"3.203. No entanto, conforme já explorado, é de se questionar um arranjo contratual que traga aparente completa dependência de infraestruturas contratadas e limitadas responsabilidades autônomas, como é próprio do Credenciamento, sob pena de questionamentos da conformidade regulatória, consumerista, editalícia, a utilidade e eficiência da prerrogativa de utilização do recurso espectral."
+Nesse contexto, observa-se clara colisão com o objeto do contrato de credenciamento entre LIGGA e UNIFIQUE para adimplemento das obrigações editalícias. O suposto atendimento dos compromissos de abrangência do certame via credenciamento não se alinha à política pública de expansão das redes de 5G no país. 
+Nessa medida, rechaço as alegações apresentadas pela Recorrente.
+IV.4 - Da matriz de responsabilidades do Contrato de MVNO Credenciada
+Na visão da área técnica, o contrato celebrado entre LIGGA e UNIFIQUE não estaria em conformidade com a regulamentação setorial, já que imputa à UNIFIQUE as responsabilidades formais pela Prestação do SMP, mesmo na Área de Prestação conferida à LIGGA.
+A Recorrente, nesse ponto, esclarece que a UNIFIQUE é responsável apenas pela prestação do SMP no âmbito da relação de credenciamento com a LIGGA, em caráter temporário, enquanto durar o credenciamento, e que, conforme a LIGGA for realizando a implementação de seu core de rede e sua infraestrutura, os clientes serão incorporados à sua base.
+Conforme já tratei em item anterior da presente Análise, a alegação da LIGGA de que o credenciamento teria caráter temporário deve ser afastada, pois o próprio contrato firmado entre as Partes, de forma inequívoca, estabelece que sua vigência é de 12 (doze) meses, sendo automaticamente renovado por períodos iguais e sucessivos. 
+Ademais, conforme demonstrado no Informe nº 132/2024/CPRP/SCP (SEI nº 12639473), a matriz de responsabilidade apresentada no Anexo I do Contrato de credenciamento de SEI nº 12588259, estabelece que a UNIFIQUE seria a única responsável na prestação de diversas atividades relacionadas ao provimento do SMP na área de prestação da LIGGA. 
+Informe nº 132/2024/CPRP/SCP (SEI nº 12639473)
+"3.149. Na customização das atividades operacionais voltadas ao exercício dessas responsabilidades, as partes podem definir seus respectivos papéis, nos termos da regulamentação. Na Matriz de Responsabilidades presente no Anexo I do contrato (SEI nº 12588259), a relação com os consumidores foi assim definida:
+I - A UNIFIQUE é responsável pela Prestação do SMP e cumprimento legal das regulamentações do serviço, incluindo a qualidade, contratos de suporte ao SMP, homologação de planos de serviços, ofertas e promoções junto à ANATEL; prover acesso à LIGGA aos sistemas de informação de suporte ao atendimento ao cliente; suporte de segundo e terceiro nível de atendimento ao cliente (call center especializado); e, gerir bilhetagem, encontro de contas e recolhimento de tributos.
+II - A LIGGA é responsável por faturar o cliente; monitorar a inadimplência e disparar as ações compatíveis (corte, suspensão, religamento, etc); definir e gerir ações e canais de atendimento direto ao usuário; armazenar informações cadastrais e de uso dos clientes para atender solicitações judiciais; atender solicitações judiciais de interceptações de chamadas/dados; efetuar atendimento ao cliente (vendas e SAC); encaminhar a outra parte reclamações/requerimentos de seus consumidores ou de empresas.
+3.150. Ainda na Matriz de Responsabilidades, a UNIFIQUE é inteiramente responsável por: todas as atividades regulatórias, fiscais, contábeis e de faturamento (exceto faturamento do cliente do serviço móvel); gerenciamento dos recursos de numeração; efetuar interceptações judiciais, pesquisas jurídicas e quebras de sigilo e todas as atividades de relacionamento com outras prestadoras."
+A meu ver, a hipótese de homologar o contrato de credenciamento firmado entre LIGGA e UNIFIQUE além de inobservar a regulamentação correspondente, seria consentir que essa prestadora (LIGGA) oferte SMP em sua área de prestação sem que haja respeito aos compromissos assumidos no Edital 5G. A prestação do SMP ocorreria sem que, para isso, houvesse uma contrapartida. Essa homologação criaria um incentivo à dependência da rede da UNIFIQUE e desestimularia os investimentos da LIGGA em infraestrutura própria. Além disso, a Agência estaria permitindo a adoção de condições desiguais frente a demais prestadoras regionais, que atualmente buscam pelo cumprimento dos compromissos editalícios assumidos por meio da construção de suas redes 5G. 
+Acolho a avaliação da área técnica sobre o caso que afirma que esse modelo de negócio pretendido geraria incentivos regulatórios distorcidos e não conformidade. 
+CONCLUSÃO
+Voto pelo:
+recebimento da Petição Extemporânea SEI nº 12162295 e indeferimento do pedido nela constante; e
+conhecimento e não provimento do recurso administrativo.
+referência
+[1] MEIRELLES, Hely Lopes. Direito administrativo brasileiro. 36. ed. São Paulo: Malheiros, 2010
+[2] MELLO, Celso Antônio Bandeira de. Curso de direito administrativo. 31. ed. rev. e atualizada. São Paulo: Malheiros, 2014.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15085787 e o código CRC 7005B36D.
+ | 
+Referência: Processo nº 53500.076795/2024-38 | 
+SEI nº 15085787 |

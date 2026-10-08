@@ -1,0 +1,245 @@
+SEI/ANATEL - 15183508 - Voto
+Boletim de Serviço Eletrônico em 19/02/2026
+Voto nº 7/2026/AF
+Processo nº 53500.011386/2024-96
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Proposta de atualização da Agenda Regulatória 2025-2026, conforme §§ 6º a 9º do artigo 4º da Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprova diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+EMENTA
+DIREITO ADMINISTRATIVO. ANÁLISE DE PROPOSTA DE ATUALIZAÇÃO DA AGENDA REGULATÓRIA. INCLUSÃO DE NOVAS INICIATIVAS E AJUSTES DE METAS. PROPOSTA APROVADA.
+I. CASO EM EXAME
+1. Proposta de atualização da Agenda Regulatória da Anatel para o biênio 2025-2026, apresentada pela Superintendência de Planejamento e Regulamentação (SPR), com base nos §§ 6º a 9º do art. 4º da Resolução Interna Anatel nº 8/2021.
+2. Ajustes de metas de iniciativas regulamentares para 2026, considerando a execução real dos projetos em 2025.
+3. Inclusão de oito novas iniciativas regulamentares: (i) simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições para o Serviço de Comunicação Multimídia (SCM); (ii) criação do Comitê de Implementação de Políticas Públicas (CIPP); (iii) criação do Centro de Mediação e Soluções Consensuais (CEMESC); (iv) elaboração de edital de licitação para autorização de uso de radiofrequências na faixa de 450 MHz; (v) reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento à Súmula nº 28/2025; (vi) reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL); (vii) revisão do Regimento Interno do Conselho Consultivo; e (viii) revisão do regimento interno do Comitê de Defesa dos Usuários de Serviços de Telecomunicações.
+4. Ajuste do cronograma da iniciativa nº 23, referente à reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, em atendimento à determinação do Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos formais e materiais para aprovação da atualização da Agenda Regulatória 2025-2026, com os ajustes de metas e inclusão das novas iniciativas regulamentares propostas.
+III. RAZÕES DE DECIDIR
+1. A tramitação do processo observou as competências regimentais do Conselho Diretor e da SPR, estando dispensada manifestação jurídica sobre o mérito estratégico pela Procuradoria Federal Especializada junto à Anatel.
+2. Os ajustes de metas para 2026 foram fundamentados na execução real dos projetos em 2025, visando maior precisão e transparência no planejamento normativo.
+3. A inclusão das novas iniciativas regulamentares atende a determinações do Conselho Diretor e necessidades identificadas pelas áreas da Agência, contemplando temas relevantes para o setor de telecomunicações.
+4. O ajuste do cronograma da iniciativa nº 23 garante a continuidade do ambiente regulatório experimental (sandbox) e evita impactos na operação dos equipamentos em teste.
+5. A proposta está alinhada ao Plano Estratégico da Anatel, às diretrizes do PRO-REG, à Estratégia Nacional de Melhoria Regulatória, às boas práticas recomendadas pelo QualiREG e OCDE, e aos Objetivos de Desenvolvimento Sustentável da ONU.
+6. A revisão do Regimento Interno do Conselho Consultivo demanda inclusão na Agenda Regulatória, por ter natureza de norma "de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados" estando, portanto, atrelado ao procedimento normativo previsto no art. 62 e seguintes do Regimento Interno da Anatel.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Aprovação da atualização da Agenda Regulatória para o biênio 2025-2026, com os ajustes de metas e inclusão das novas iniciativas regulamentares, conforme Minuta de Resolução Interna SEI nº 15023503.
+Tese de julgamento: "1. A atualização da Agenda Regulatória 2025-2026 da Anatel, com ajustes de metas e inclusão de novas iniciativas regulamentares, observa os requisitos formais e materiais exigidos."
+REFERÊNCIAS
+LEGISLAÇÃO CITADA:
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Decreto nº 2.338, de 7 de outubro de 1997, que aprova o Regulamento da Anatel.
+Decreto nº 9.573, de 22 de novembro de 2018, que dispõe sobre a Política Nacional de Segurança de Infraestruturas Críticas. 
+Decreto nº 11.200, de 15 de setembro de 2022, que dispõe sobre o Plano Nacional de Segurança de Infraestruturas Críticas. 
+Decreto nº 11.676, de 30 de agosto de 2023, que a prova a Estrutura Regimental do GSI/PR. 
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 12.002, de 22 de abril de 2024, que Estabelece normas para elaboração, redação, alteração e consolidação de atos normativos.
+Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Resolução nº 438, de 10 de julho de 2006 - aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do SMP. 
+Resolução nº 588, de 7 de maio de 2012 - aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC.
+Resolução nº 612, de 29 de abril de 2013 - aprova o Regimento Interno da Anatel (RIA). Publicado no DOU em 3 maio 2013.
+Resolução nº 667, de 31 de maio de 2016 - aprova o Regulamento Geral de Acessibilidade em Serviços de Telecomunicações. 
+Resolução nº 690, de 29 de janeiro de 2018 - aprova o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel. 
+Resolução nº 717, de 23 de dezembro de 2019 - aprova o Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL). 
+Resolução Interna nº 38, de 9 de fevereiro de 2021 - aprova a Política de Governança (PGGR).
+Resolução Interna nº 8, de 26 de fevereiro de 2021 - aprova diretrizes para a elaboração da Agenda .
+Resolução nº 765, de 6 de novembro de 2023 - aprova o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações. Publicado no DOU em 8 nov. 2023.
+Resolução Interna nº 399, de 30 de dezembro de 2024 - aprova a Agenda Regulatória 2025–2026. 
+Resolução nº 777, de 28 de abril de 2025 - aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST). 
+Resolução nº 783, de 3 de setembro de 2025 - aprova o Plano Geral de Metas de Competição (PGMC).
+Resolução nº 785, de 10 de dezembro de 2025 - aprova o planejamento da Anatel de realização de licitações para SMP. 
+DEMAIS REFERÊNCIAS:
+CONTROLADORIA-GERAL DA UNIÃO - CGU (Brasil). QualiREG: Aprimorando a Regulação Brasileira. Disponível em: CGU. Acesso em: 5 fev. 2026.
+GABINETE DE SEGURANÇA INSTITUCIONAL DA PRESIDÊNCIA DA REPÚBLICA - GSI (Brasil). Portal GSI. Brasília, 2026. Disponível em: GSI. Acesso em: 7 fev. 2026.
+INTERNATIONAL TELECOMMUNICATION UNION - ITU. IAB Working Group Recommendations: Submarine Cable Resilience. Genève: ITU, 2026. Disponível em: ITU. Acesso em: 7 fev. 2026.
+MINISTÉRIO DO DESENVOLVIMENTO, INDÚSTRIA, COMÉRCIO E SERVIÇOS - MDIC (Brasil). Regula Melhor: Estratégia Nacional de Melhoria Regulatória. Brasília, 2024. Disponível em: MDIC. Acesso em: 05 fev. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT - OECD. Avaliação da OCDE sobre Telecomunicações e Radiodifusão no Brasil 2020. Paris: OECD Publishing, 2020. Disponível em: DOI. Acesso em: 5 fev. 2026.
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: brasil.org. Acesso em: 24 abr. 2024
+VALENTE, Patrícia Rodrigues Pessoa (org.) Boas Práticas Regulatórias do QualiREG. Org. Patrícia Rodrigues Pessoa Valente. Brasília: Controladoria-Geral da União, 2024. Disponível em: CGU. Acesso em: 5 fev. 2026.
+RELATÓRIO
+Cuida-se de proposta de alteração da Agenda Regulatória 2025-2026, consoante prescreve o art. 4º, §§ 6º a 9º, da Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprovou as diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+O relatório detalhado deste feito encontra-se na Análise nº 22/2026/CL (SEI nº 15175775), elaborada pela Conselheira Cristiana Camarate Silveira Martins Leão Quinalia, à qual se remete a leitura.
+É o relatório.
+ANÁLISE
+Inicialmente, registro minha deferência à Conselheira Relatora Cristiana Camarate Silveira Martins Leão Quinalia pelo trabalho desenvolvido no presente processo. Sua condução criteriosa, aliada à clareza na sistematização das premissas técnicas e jurídicas, conferiu ao exame da proposta de atualização da Agenda Regulatória transparência, embasamento em evidências e plena aderência ao Planejamento Estratégico da Anatel.
+Portanto, desde logo confirmo que acompanho a Relatora quanto à aprovação da atualização da Agenda Regulatória, mas apresento proposição adicional, qual seja a inclusão de iniciativa destinada à atualização das regras regulatórias aplicáveis aos cabos submarinos.
+Os cabos submarinos representam infraestrutura estratégica de rede, pois concentram comunicações associadas ao tráfego internacional e ao intercâmbio de dados entre regiões geográficas do Brasil, em razão de sua extensa costa.
+Por se tratar de infraestrutura essencial para a prestação de diversos serviços de telecomunicações, a Anatel vem ampliando o monitoramento sobre os cabos submarinos.
+Em 2015, a Anatel aprovou, por meio da Resolução nº 656, o Regulamento sobre Gestão de Risco das Redes de Telecomunicações e Uso de Serviços de Telecomunicações em Desastres, Situações de Emergência e Estado de Calamidade Pública. O regulamento estabeleceu a elaboração e a manutenção de Planos de Gestão de Riscos (PGRiscos), Planos de Contingência e Planos de Restabelecimento de Serviço, envolvendo infraestrutura crítica e abrangendo vulnerabilidades a ela associadas.
+Posteriormente, esse regime de gestão de risco foi revogado pelo Regulamento de Segurança Cibernética Aplicada ao Setor de Telecomunicações, aprovado pela Resolução nº 740, de 2020, que trata de segurança de redes e proteção de infraestruturas críticas de forma mais abrangente e atualizada.
+Em 2024, houve a alteração do Regulamento de Segurança Cibernética Aplicada ao Setor de Telecomunicações, pela Resolução nº 767, em que as operadoras de cabos submarinos com destino internacional expressamente passaram a observar os comandos regulamentares.
+A contínua expansão e diversificação de sistemas e rotas intensifica a necessidade de um arcabouço regulatório que assegure segurança jurídica aos investimentos e reduza assimetrias de informação, de coordenação e de governança entre os diferentes agentes envolvidos, tais como operadores de cabos, proprietários de infraestrutura, provedores de capacidade, prestadoras de serviços e demais atores do ecossistema digital.
+Assim, embora existam instrumentos normativos aplicáveis, persiste espaço para consolidação e aperfeiçoamento regulatório.
+A recente incorporação de data centers ao regime de avaliação de conformidade e homologação evidencia a tendência de consolidar requisitos mínimos de segurança e resiliência para ativos críticos, com procedimentos operacionais e prazos de adequação.
+Tal abordagem mostra-se coerente com a natureza crítica desses ativos. Assim como os data centers, os cabos submarinos são essenciais para a continuidade da conectividade, dependem de elevado padrão de resiliência, exigem proteção contra riscos físicos e cibernéticos e possuem papel estruturante no ecossistema digital. Esse cenário indica a conveniência de se estudarem parâmetros mínimos uniformes, critérios transparentes de conformidade e instrumentos de supervisão semelhantes aos já aplicados a outras infraestruturas estratégicas da Agência.
+Soma-se a isso a preocupação quanto à alta concentração geográfica de aterrissagens dos cabos submarinos em determinados pontos da costa brasileira, com destaque para Fortaleza, reforçando seu papel como hub e, simultaneamente, evidenciando riscos de concentração.
+Assim, é oportuno alinhar cabos submarinos à mesma lógica de infraestrutura digital crítica, avaliando a imposição de requisitos mínimos, obrigações de informação e mecanismos de supervisão proporcionais ao risco, de forma coordenada com o que já se pratica para outros ativos.
+Adicionalmente, é importante que a iniciativa proposta avalie se a regulamentação vigente observa as recomendações de instituições internacionais e nacionais, bem como as diretrizes e recomendações aprovadas pelo International Advisory Body for Submarine Cable Resilience (IAB) (Corpo Consultivo Internacional para Resiliência de Cabos Submarinos) pela União Internacional de Telecomunicações (ITU) em parceria com o International Cable Protection Committee (ICPC).
+Entre as recomendações aprovadas pelo Corpo Consultivo, encontra-se a Recomendação 11 do Grupo de Trabalho 1, que incentiva o estabelecimento de mecanismos nacionais de cooperação público-privada entre autoridades competentes e proprietários/operadores de cabos, incluindo a manutenção de uma "porta de entrada única" designada para coordenação operacional, alinhada aos arranjos nacionais, como o ponto de contato único (SPOC). Nesse contexto, seria estratégico e oportuno estudar a designação formal da Anatel como esse hub nacional, atuando como interface centralizada perante os investidores e coordenando com outras autoridades competentes, conforme previsto nas melhores práticas internacionais e nas recomendações da UIT/IAB. Essa estruturação facilitaria a atração de novos investimentos, além de fortalecer os instrumentos de coordenação para implantação, proteção e reparo de cabos submarinos no Brasil.
+Há potencial concreto de redução tanto de custos quanto de prazos. A fragmentação regulatória pode acrescentar anos de tramitação e milhões de dólares aos projetos de infraestrutura. A centralização na Anatel, com processos padronizados e prazos definidos, pode reduzir custos e prazos desses investimentos, tornando o país mais competitivo.
+Quanto às recomendações nacionais relativas a esta infraestrutura, mencionam-se as defendidas em relatórios da Anatel em conjunto com o Gabinete de Segurança Institucional da Presidência da República (GSI/PR). Algumas dessas recomendações constam do Informe nº 192/2023/COQL/SCO (SEI nº 10791528), no âmbito do processo nº 53500.032526/2018-11, no qual se recomenda fixar regras básicas sobre resiliência, incentivar investimentos em tecnologias e práticas que aumentem a segurança e a resiliência dos cabos submarinos, e defende-se a criação de uma estrutura de colaboração entre órgãos e entre estes e a iniciativa privada, de modo a dirimir conflitos de competência (positivos e negativos) e mitigar riscos como furto, vandalismo e degradação decorrente de obras civis.
+Por tais razões, a atualização das regras afetas aos cabos submarinos é pertinente para garantir maior coerência, integridade e efetividade ao tratamento regulatório dessa infraestrutura, fortalecendo a segurança e a resiliência da infraestrutura digital brasileira.
+Propõe-se a inclusão de projeto específico na Agenda Regulatória, com priorização prioritário e meta de conclusão da Análise de Impacto Regulatório (AIR) no segundo semestre de 2026, nos seguintes termos:
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 40
+ | 
+ Consolidação e Atualização das regras aplicáveis a Cabos Submarinos
+ | 
+ Projeto voltado à consolidação e atualização das regras aplicáveis aos cabos submarinos. Deve-se avaliar alternativas regulatórias requisitos mínimos de segurança física e cibernética, observância das recomendações nacionais e internacionais, obrigações de informação, governança interinstitucional e medidas de mitigação dos riscos decorrentes da concentração geográfica.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Prioritário
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Diante do conjunto de fundamentos apresentados, conclui-se que a inclusão da iniciativa regulamentar referente à Reavaliação da Regulamentação afeta a Cabos Submarinos na Agenda Regulatória 2025–2026 é não apenas adequada, mas necessária para assegurar a coerência, a atualidade e a efetividade da política regulatória de qualidade conduzida pela Anatel.
+Acrescento, ainda, a necessidade de realização de tomada de subsídio sobre o tema, no primeiro semestre de 2026, no intuito de colher contribuições da sociedade, aprimorando a elaboração da Análise de Impacto regulatório.
+Por fim, a inclusão da reavaliação na Agenda Regulatória se justifica por seu alinhamento direto aos objetivos estratégicos da Anatel para 2023–2027, em especial aqueles relativos à conectividade, ao estímulo a mercados dinâmicos e ao fortalecimento institucional.
+A iniciativa de revisão regulatória dos cabos submarinos está em consonância com os objetivos estratégicos da Anatel, atuando como alicerce da conectividade universal e significativa, garantindo a infraestrutura de transporte de dados essencial para a expansão da banda larga e a integração global do país. Quanto ao estímulo a mercados dinâmicos e sustentáveis, a atualização cria condições regulatórias que favorecem a atração de investimentos, reduzem incertezas jurídicas e promovem ambiente competitivo equilibrado. Quanto ao objetivo de fomento à transformação digital e à inovação tecnológica, a revisão regulatória incorpora e viabiliza evoluções tecnológicas contemporâneas e soluções de ponta que ampliam a capacidade de transmissão, elemento fundamental para suportar aplicações avançadas em nuvem, inteligência artificial e demais tecnologias emergentes essenciais à economia digital. Por fim, alinha-se ao objetivo de garantir atuação de excelência, sustentável e focada em resultados ao demonstrar capacidade de atualização contínua e dinâmica do arcabouço regulatório, considerando melhores práticas internacionais e contribuições dos agentes setoriais, fortalecendo, assim, a legitimidade e a efetividade da atuação regulatória da Agência na consecução de resultados concretos de expansão da conectividade, atração de investimentos e disponibilização de serviços de qualidade à sociedade brasileira.
+III- Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+Ressalta-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+O Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação está alinhada com os objetivos descritos no art. 3º, incisos I, II e III, do Decreto nº 11.738/2023, e nos itens 1.5 - i, ii, v, x, xi e xii do memorando mencionado, pois as alterações propostas na Agenda Regulatória da Anatel 2025-2026 visam ao aprimoramento do arcabouço regulatório, com iniciativas voltadas ao aperfeiçoamento da segurança do ecossistema digital, alinhada às boas práticas estabelecidas tanto nacional quanto internacionalmente.
+VII - As boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil vem envidando esforços na sua candidatura para tornar-se membro da Organização para Cooperação e Desenvolvimento Econômico (OCDE). Tal organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com entidades da sociedade civil, regulação (incluindo a transição para a economia digital), dentre outros. Isso faz com que esses temas ganhem um tom estratégico que vai além do ordenamento constitucional pátrio. Busca-se não apenas fornecer soluções que melhorem o bem-estar das pessoas, mas igualmente outras que auxiliem as instituições a chegarem a essas soluções de forma eficiente.
+Alinhado a tais recomendações, especificamente em relação ao ambiente regulatório, a OCDE, no âmbito do estudo "Avaliação da OCDE sobre Telecomunicações e Radiodifusão no Brasil 2020" (OCDE, 2020), recomendou, para o futuro, que o Brasil busque iniciativas de conectividade que sejam sustentáveis e envolva as partes interessadas locais, privilegiando o compartilhamento de infraestruturas e implementando valores razoáveis levados a custo, conforme se infere do texto reproduzido abaixo:
+Reduzir barreiras à entrada e facilitar a implantação de infraestrutura
+Reduzir ao mínimo possível as barreiras à entrada, ao garantir acesso ainda mais justo e não discriminatório a dutos, postes e direitos de passagem para promover a implantação de redes de próxima geração e ao reduzir os custos de implantação de infraestrutura por meio de políticas de “dig-once” (“escavar uma vez”) e de agilização de direitos de passagem. Ademais, é preciso promover o compartilhamento de infraestrutura entre provedores de serviços de comunicação com foco na infraestrutura passiva, ao mesmo tempo em que se monitora a competição no mercado.
+A implantação de infraestrutura de comunicações no Brasil, especialmente em relação a direitos de passagem e à instalação de redes celulares, continua a ser trabalhosa. Operadoras devem cumprir tanto regras federais quanto locais, que podem variar entre municípios e estados.
+(...)
+Fortalecer políticas nacionais e formulação de políticas baseadas em evidências
+Estabelecer metas para o Programa Conecta Brasil e outros programas voltados à expansão de redes, e monitorar sua implementação. Melhorar a cooperação entre os diferentes níveis de governo (federal, estadual e municipal) para iniciativas de conectividade em banda larga.
+Expandir redes de banda larga de alta qualidade para regiões com pouca cobertura por meio da promoção de investimento em infraestrutura para diminuir a exclusão digital.
+No Brasil, a desigualdade de renda é alta (e, em áreas com pouca cobertura e remotas, a renda é baixa). Além disso, nas áreas rurais, os níveis de escolaridade tendem a ser baixos e a implementação de infraestrutura é escassa devido aos altos custos da implantação. Para promover a adoção de banda larga nessas áreas, o Brasil precisa de abordagens inovadoras para incentivar investimentos e reduzir o déficit de infraestrutura.
+O país tem tomado medidas na direção certa com a inclusão de obrigações de cobertura rural em leilões de espectro como pré-requisito para participar do processo de licitação. Essa medida é implementada há mais de dez anos no Brasil; ela também tem sido efetiva em muitos países da OCDE. (...)
+As propostas de inclusão de iniciativa para atualizar a regulamentação de cabos submarinos, em consonância com as recomendações nacionais e internacionais e com a criticidade da infraestrutura, na Agenda Regulatória 2025-2026, buscam atender às recomendações acima expostas.
+VIII - A relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+As ações aqui elencadas se revelam, ainda, aderentes à Agenda 2030, que se constitui em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A iniciativa proposta na Agenda Regulatória 2025-2026, contribuem para a consecução do Objetivo nº 8 ("Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todas e todos"): Ao proporcionar novas oportunidades socioeconômicas por meio do acesso aos serviços de telecomunicações, podem contribuir para o desenvolvimento econômico sustentável da região, destacando-se a incidência da Meta 8.4 ("Melhorar progressivamente, até 2030, a eficiência dos recursos globais no consumo e na produção, e empenhar-se para dissociar o crescimento econômico da degradação ambiental, de acordo com o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com os países desenvolvidos assumindo a liderança”).
+O Objetivo nº 9 ("Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação"): constata-se aderência à Meta 9.c ("Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020"), uma vez que a Agenda regulatória visa atualizar e aprimorar o arcabouço regulatório .
+O Objetivo nº 10 ("Reduzir a desigualdade dentro dos países"): o aprimoramento do arcabouço regulatório visa fornecer à sociedade o acesso a serviços com maior qualidade e, assim, pode continuar a contribuir para o crescimento da renda da população e sua inclusão social. Mais especificamente, a contribui para a meta 10.2 ("Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra"), já que possibilita a ampliar o acesso de diversas pessoas aos meios de conectividade.
+O Objetivo nº 16 da Agenda 2030 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"): mais especificamente, pontua-se a adesão às Metas 16.3 ("Fortalecer o Estado de Direito e garantir o acesso à justiça às pessoas envolvidas em conflitos, especialmente àquelas que se encontram em situação de vulnerabilidade"), 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis"), uma vez que a fundamentação visa propiciar uma resposta a contento às exigências da sociedade brasileira sobre a Anatel no cumprimento de seu mandato regulatório e assegura transparência e participação salutares do cidadão e do setor produtivo no aprimoramento das políticas a cargo da Anatel.
+Evidenciada, portanto, a aderência da presente fundamentação aos ODS da Agenda 2030 da ONU.
+CONCLUSÃO
+Voto por:
+aprovar a Agenda Regulatória para o biênio 2025-2026, na forma da Minuta de Resolução Interna (SEI nº 15173119), com a inclusão de iniciativa para a atualização das regras afetas a cabos submarinos; e,
+determinar à Superintendência de Planejamento e Regulamentação que:
+preste o apoio técnico necessário ao Conselho Consultivo para a construção da proposta de Regimento Interno daquele Colegiado (Iniciativa Regulamentar nº 38) antes de sua submissão ao Conselho Diretor da Anatel;
+realize tomada de subsídios sobre a consolidação e atualização das regras afetas a cabos submarinos ainda no primeiro semestre de 2026.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 19/02/2026, às 15:06, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15183508 e o código CRC 6428F96E.
+ | 
+Referência: Processo nº 53500.011386/2024-96 | 
+SEI nº 15183508 |

@@ -1,0 +1,226 @@
+SEI/ANATEL - 15327131 - Ata de Reunião
+Boletim de Serviço Eletrônico em 13/04/2026
+Ata de Reunião
+951ª REUNIÃO DO CONSELHO DIRETOR DA ANATEL
+Aos doze dias do mês de março do ano de dois mil e vinte e seis, às quinze horas, em sua sede no Setor de Autarquias Sul, Quadra 06, Bloco E, 2º Andar, Sala de Reuniões do Conselho Diretor - Brasília/DF, realizou-se a noningentésima quinquagésima primeira Reunião do Conselho Diretor da Agência Nacional de Telecomunicações - Anatel, sob a Presidência de Carlos Manuel Baigorri e com o comparecimento dos Conselheiros Alexandre Reis Siqueira Freire, Edson Holanda e Octavio Penna Pieranti. Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias. Registradas as presenças da Procuradora-Geral Adjunta Carolina Scherer, do Ouvidor Substituto Felipe Augusto Esmeraldo de Oliveira e da Chefe da Secretaria do Conselho Diretor Letícia Seabra Melo Fernandes.
+A reunião foi gravada e está disponibilizada no canal da Anatel no Youtube (https://www.youtube.com/watch?v=Fh_-jKvscgY).
+O Presidente iniciou os trabalhos dispensando a leitura da Ata da noningentésima quinquagésima Reunião do Conselho Diretor da Agência Nacional de Telecomunicações, realizada em doze de fevereiro de dois mil e vinte e seis, cujo acesso foi disponibilizado previamente para análise dos Conselheiros. Em discussão e votação, a Ata foi aprovada sem restrições.
+EXTRAPAUTA
+00001 - O Presidente Carlos Manuel Baigorri agradeceu à Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia pelo período de interinidade no Conselho Diretor, destacando sua contribuição em processos significativos. Registrou a convocação do Superintendente Nilo Pasquali como Conselheiro Substituto. Homenageou o Corregedor Silvio Andrade pelo encerramento de seu terceiro mandato, elogiando sua atuação preventiva e educativa que promoveu um ambiente ético e respeitoso na Agência.
+00002 - O Conselheiro Octavio Penna Pieranti mencionou que, na 950ª Reunião do Conselho Diretor, foram aprovadas obrigações de fazer, e ressaltou que a lista de universidades públicas e institutos federais elegíveis para obrigações de fazer (conectividade à Rede Nacional de Ensino e Pesquisa - RNP), aprovadas na ocasião, teve um aumento de 65% (sessenta e cinco por cento) em apenas um mês. Apresentou os resultados do Grupo de Implantação do Processo de Redistribuição e Digitalização de Canais de TV e RTV - GIRED, destacando o desligamento da TV Analógica no Brasil, concluída em dezembro de 2025, com a distribuição de mais de 14 (quatorze) milhões de kits para famílias de baixa renda. Ressaltou os dados e projetos adicionais em andamento no Gired e o avanço da TV 3.0. Informou que o Conselho Diretor da Anatel aprovou a prorrogação do prazo dos Projetos Adicionais até 2027, para uso do saldo remanescente em implantação de Estações Rádio-Base - ERBs 4G em localidades não atendidas, desenvolvimento de aplicativos de TV 3.0 e manutenção de estações do Programa Digitaliza Brasil.
+00003 - O Conselheiro Edson Holanda enalteceu o trabalho de servidoras da Anatel em alusão ao Dia das Mulheres. Anunciou que o Programa Brasil Antenado, coordenado pelo Grupo de Acompanhamento da Implantação das Soluções para os Problemas de Interferência na faixa de 3.625 MHz – 3.700 MHz - GAISPI está entrando em uma nova fase, com a expansão para oito novos estados, reforçando o papel da TV aberta na inclusão social. Destacou também o Projeto 1000 Talentos, que tem como iniciativa a capacitação de jovens na Região Norte do País, para que possam ter, posteriormente, a inserção no mercado de trabalho. Informou o envio de ofício para a Superintendência de Planejamento e Regulamentação solicitando a realização de uma nova tomada de subsídios sobre o Regulamento de Deveres de Grandes Usuários.
+PROCESSOS PAUTADOS EM SEDE DE RELATORIA
+CONSELHEIRO ALEXANDRE REIS SIQUEIRA FREIRE
+00001 - Processo: 53500.032176/2025-12 - Direito de Exploração de Satélite: Satélite Brasileiro
+Tipo da Matéria: Direito de Exploração de Satélite
+Parte(s): VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA.
+Descrição: Solicitação de conferência de Direito de Exploração, no Brasil, do satélite brasileiro geoestacionário GX8, associado à posição orbital 72,5°O.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 25/2026/AF (SEI nº 15189520).
+00002 - Processo: 53500.055641/2020-89 - PADO: Compromisso de Abrangência
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CLARO S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 68/2023/COUN/SCO, de 11 de abril de 2023, que aplicou sanção por descumprimento de obrigações contidas nos compromissos de abrangência associados ao Anexo II-B do Edital de Licitação nº 004/2012/PVCP/SPV-ANATEL.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de relatoria por 120 (cento e vinte) dias, nos termos da Análise nº 35/2026/AF (SEI nº 15278867).
+00003 - Processo: 53500.012178/2019-47 - Regulamentação: Uso de Radiofrequências
+Tipo da Matéria: Procedimento Normativo
+Descrição: Proposta de revisão do Regulamento de Uso do Espectro de Radiofrequências - RUE, objeto do item 20 da Agenda Regulatória para o biênio 2025-2026.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de relatoria por 120 (cento e vinte) dias, nos termos da Análise nº 38/2026/AF (SEI nº 15288744).
+00004 - Processo: 53500.023998/2016-11 - PAF Contencioso: TFF
+Tipo da Matéria: Recurso Administrativo
+Parte(s): OMNILINK TECNOLOGIA S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 403/2025/CODI/SCO, de 3 de julho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF, no exercício de 2016.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 37/2026/AF (SEI nº 15280344).
+00005 - Processo: 53500.051076/2017-85 - PAF Contencioso: CFRP
+Tipo da Matéria: Recurso Administrativo
+Parte(s): OMNILINK TECNOLOGIA S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 484/2025/CODI/SCO, de 6 de agosto de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública - CFRP, no exercício de 2018.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 36/2026/AF (SEI nº 15278994).
+00006 - Processo: 53500.343010/2022-86 - PADO: Obrigações Legais e Contratuais
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TIP NACIONAL TELECOM LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 640/2025/COGE/SCO, de 11 de setembro de 2025, que aplicou sanção por descumprimento de dispositivos do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e do Regulamento Geral de Numeração - RGN, aprovado pela Resolução nº 709, de 27 de março de 2019.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 12/2026/AF (SEI nº 15125116).
+00007 - Processo: 53500.341348/2022-01 - PADO: Obrigações Legais e Contratuais
+Tipo da Matéria: Recurso Administrativo
+Parte(s): VONEX TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 510/2025/COGE/SCO, de 13 de agosto de 2025, que aplicou sanção por descumprimento de dispositivos do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e do Regulamento Geral de Numeração - RGN, aprovado pela Resolução nº 709, de 27 de março de 2019.
+Matéria retirada de pauta a pedido do Conselheiro Relator.
+CONSELHEIRO OCTAVIO PENNA PIERANTI
+00008 - Processo: 53500.012349/2024-03 - PAF Contencioso: TFF
+Tipo da Matéria: Recurso Administrativo
+Parte(s): OI S.A.
+Descrição: Recurso interposto contra a decisão da Gerência Regional no Estado de Minas Gerais consubstanciada no Despacho Decisório nº 52/2025/GR04AF/GR04/SFI, de 6 de março de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF, no exercício de 2023.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 16/2026/OP (SEI nº 15205082).
+00009 - Processo: 53500.049105/2025-59 - PAF Contencioso: TFF
+Tipo da Matéria: Recurso Administrativo
+Parte(s): MARCELO BARBOSA DE BARROS
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 921/2025/COGE/SCO, de 21 de novembro de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF e à Contribuição para o Fomento da Radiodifusão Pública - CFRP, nos exercícios de 2024 e 2025.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 17/2026/OP (SEI nº 15212911).
+00010 - Processo: 53524.000504/2021-10 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TELEMIDIA SISTEMAS DE TELECOMUNICAÇÃO LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 541/2025/COGE/SCO, de 5 de agosto de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 19/2026/OP (SEI nº 15217691).
+00011 - Processo: 53554.001759/2020-61 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): MAX TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 333/2025/COGE/SCO, de 16 de junho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+Apresentada pelo Conselheiro Octavio Penna Pieranti, Relator, a Análise nº 20/2026/OP (SEI nº 15226009). Na sequência, o Conselheiro Alexandre Reis Siqueira Freire solicitou vista da matéria.
+00012 - Processo: 53504.002303/2023-57 - PADO: Não Outorgado - Radiofrequência
+Tipo da Matéria: Recurso Administrativo
+Parte(s): RÁDIO TOP FM LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 448/2025/CODI/SCO, de 15 de agosto de 2023, que reviu, de ofício, sanção por uso não autorizado de radiofrequência.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 21/2026/OP (SEI nº 15242510).
+00013 - Processo: 53500.103468/2025-47 - Regulamentação: Proposição de Ato Normativo
+Tipo da Matéria: Deliberações Diversas
+Descrição: Proposta de criação do Comitê de Implementação de Políticas Públicas - CIPP em atendimento à determinação do Conselho Diretor.
+Apresentada pelo Conselheiro Octavio Penna Pieranti, Relator, a Análise nº 22/2026/OP (SEI nº 15268872). Na sequência, o Conselheiro Alexandre Reis Siqueira Freire e o Presidente Carlos Manuel Baigorri registraram voto acompanhando integralmente a Análise do Relator. Após, pediu vista o Conselheiro Edson Holanda.
+00014 - Processo: 53500.063260/2021-54 - PADO: Descumprimento de Determinação
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TRANSIT DO BRASIL S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 40/2024/COGE/SCO, de 4 de dezembro de 2024, que aplicou sanção por descumprimento de dispositivos do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - STFC, e pelo descumprimento de determinações contidas no Despacho Decisório nº 175/2018/SEI/CPRP/SCP, retificado pelo Despacho Decisório n º 234/2018/SEI/CPRP/SCP.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 18/2026/OP (SEI nº 15216069).
+CONSELHEIRO EDSON HOLANDA
+00015 - Processo: 53500.206834/2015-47 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TELEFÔNICA BRASIL S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 280/2025/COUN/SCO, de 6 de maio de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, nos exercícios de 2013 e 2014.
+Matéria retirada de pauta a pedido do Conselheiro Relator.
+00016 - Processo: 53504.001959/2016-23 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): WIRELESS NETWORKS DO BRASIL LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 175/2025/COGE/SCO, de 6 de maio de 2025, que reconheceu a procedência parcial dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 20/2026/EH (SEI nº 15267494).
+00017 - Processo: 53504.001786/2016-43 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): ABRIL COMUNICAÇÕES S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 343/2025/COGE/SCO, de 20 de maio de 2025, que reconheceu a procedência parcial dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 19/2026/EH (SEI nº 15264106).
+00018 - Processo: 53500.001575/2015-60 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): WANCO TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 499/2025/COUN/SCO, de 24 de junho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2010.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 15/2026/EH (SEI nº 15215458).
+00019 - Processo: 53560.005574/2020-47 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): VIDEOMAR REDE NORDESTE S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 314/2025/COUN/SCO, de 10 de junho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+Apresentada pelo Conselheiro Edson Holanda, Relator, a Análise nº 17/2026/EH (SEI nº 15254066). Na sequência, o Conselheiro Alexandre Reis Siqueira Freire solicitou vista da matéria.
+00020 - Processo: 53520.000067/2023-36 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CENTRO DE INFORMÁTICA E AUTOMAÇÃO DO ESTADO DE SC S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 122/2025/COUN/SCO, de 19 de março de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 13/2026/EH (SEI nº 15178434).
+00021 - Processo: 53500.001988/2016-25 - PAF Contencioso: Fust
+Tipo da Matéria: Recurso Administrativo
+Parte(s): IBITURUNA TV POR ASSINATURA LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 317/2025/COGE/SCO, de 6 de maio de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+Matéria aprovada, por unanimidade, nos termos propostos pelo Conselheiro Relator, contidos na Análise nº 21/2026/EH (SEI nº 15269156).
+PROCESSOS PAUTADOS EM SEDE DE VISTA
+PRESIDENTE CARLOS MANUEL BAIGORRI
+00001 - Processo: 53500.076795/2024-38 - Homologação de Contratos: MVNO (Credenciada)
+Relator: Octavio Penna Pieranti
+Trazido por: Carlos Manuel Baigorri
+Tipo da Matéria: Recurso Administrativo
+Parte(s): UNIFIQUE TELECOMUNICAÇÕES S.A., LIGGA TELECOMUNICAÇÕES S.A. e SERCOMTEL S.A. TELECOMUNICAÇÕES
+Descrição: Recurso interposto contra a decisão da Superintendência de Competição consubstanciada no Despacho Decisório nº 130/2024/CPRP/SCP, de 8 de novembro de 2024, referente à homologação de Contrato para Representação na prestação do SMP por Credenciado - MVNO.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+CONSELHEIRO ALEXANDRE REIS SIQUEIRA FREIRE
+00002 - Processo: 53500.014877/2015-06 - PAF Contencioso: Fust
+Relator: Octavio Penna Pieranti
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CABO SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 176/2025/CODI/SCO, de 16 de maio de 2025, que reconheceu a procedência parcial dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2011.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00003 - Processo: 53500.027820/2016-40 - PAF Contencioso: Fust
+Relator: Edson Holanda
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CABO SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 177/2025/CODI/SCO, de 16 de maio de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, nos exercícios de 2014 e 2015.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00004 - Processo: 53500.079965/2017-15 - PAF Contencioso: Fust
+Relator: Edson Holanda
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CABO SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 178/2025/CODI/SCO, de 5 de junho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2016.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00005 - Processo: 53504.001676/2016-81 - PAF Contencioso: Fust
+Relator: Octavio Penna Pieranti
+Trazido por: Carlos Manuel Baigorri
+Tipo da Matéria: Recurso Administrativo
+Parte(s): UBIK DO BRASIL - SOLUÇÕES EM TECNOLOGIA LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 227/2025/COGE/SCO, de 6 de maio de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00006 - Processo: 53563.000209/2016-30 - PAF Contencioso: Fust
+Relatora: Cristiana Camarate Silveira Martins Leão Quinalia
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): CABO SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 194/2025/CODI/SCO, de 7 de maio de 2025, que reconheceu a procedência parcial dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00007 - Processo: 53500.209313/2015-41 - PAF Contencioso: Fust
+Relatora: Cristiana Camarate Silveira Martins Leão Quinalia
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): LUIS GUSTAVO ZUCCOLOTTO DE ASSIS
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 466/2025/CODI/SCO, de 7 de agosto de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2013.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00008 - Processo: 53500.080178/2017-16 - PAF Contencioso: Fust
+Relatora: Cristiana Camarate Silveira Martins Leão Quinalia
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): MTNSAT BRAZIL LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 449/2025/COUN/SCO, de 16 de junho de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2016.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00009 - Processo: 53560.005581/2020-49 - PAF Contencioso: Fust
+Relatora: Cristiana Camarate Silveira Martins Leão Quinalia
+Trazido por: Alexandre Reis Siqueira Freire
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TECNET PROVEDOR DE ACESSO ÀS REDES DE COMUNICAÇÃO LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 542/2025/COGE/SCO, de 4 de agosto de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+CONSELHEIRO EDSON HOLANDA
+00010 - Processo: 53500.075536/2021-47 - PADO: Direitos do Consumidor - SMP
+Relator: Alexandre Reis Siqueira Freire
+Trazido por: Edson Holanda
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TIM S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 291/2025/CODI/SCO, de 29 de abril de 2025, que aplicou sanção por descumprimento de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+Apresentado pelo Conselheiro Edson Holanda, em sede de vista, o Voto nº 12/2025/EH (SEI nº 14930686). Matéria aprovada, por maioria de três votos, nos termos propostos pelo Conselheiro Alexandre Reis Siqueira Freire, Relator, por meio da Análise nº 114/2025/AF (SEI nº 14199589). Acompanharam o Relator o ex-Conselheiro Vicente Bandeira de Aquino Neto, que havia registrado seu posicionamento na Reunião do Conselho Diretor nº 947, de 13 de outubro de 2025, e o Presidente Carlos Manuel Baigorri. O Relator apresentou esclarecimentos por meio da Análise Complementar nº 28/2026/AF (SEI nº 15234556), sem qualquer alteração de sua fundamentação. Votaram vencidos o Conselheiro Octavio Penna Pieranti, que manteve seu posicionamento registrado na Reunião do Conselho Diretor nº 948, de 4 de novembro de 2025, por meio do Voto nº 1/2025/OP (SEI nº 14626284), e o Conselheiro Edson Holanda, nos termos do Voto nº 12/2025/EH (SEI nº 14930686). Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Holanda e Octavio Penna Pieranti e o ex-Conselheiro Vicente Bandeira de Aquino Neto.
+00011 - Processo: 53500.055783/2018-21 - PADO: Direitos do Consumidor - SMP
+Relator: Alexandre Reis Siqueira Freire
+Trazido por: Edson Holanda
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TIM S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 428/2022/CODI/SCO, de 13 de outubro de 2022, que aplicou sanção por descumprimento de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+Apresentado pelo Conselheiro Edson Holanda, em sede de vista, o Voto nº 11/2025/EH (SEI nº 14894810). Matéria aprovada, por maioria de três votos, nos termos propostos pelo Conselheiro Alexandre Reis Siqueira Freire, Relator, por meio da Análise nº 92/2025/AF (SEI nº 13823637). Acompanharam o Relator o ex-Conselheiro Vicente Bandeira de Aquino Neto, que havia registrado seu posicionamento na Reunião do Conselho Diretor nº 947, de 13 de outubro de 2025, e o Presidente Carlos Manuel Baigorri. O Relator apresentou esclarecimentos por meio da Análise Complementar nº 29/2026/AF (SEI nº 15234708), sem qualquer alteração de sua fundamentação. Votaram vencidos o Conselheiro Octavio Penna Pieranti, que manteve seu posicionamento registrado na Reunião do Conselho Diretor nº 948, de 4 de novembro de 2025, por meio do Voto nº 2/2025/OP (SEI nº 14628089), e o Conselheiro Edson Holanda, nos termos do Voto nº 11/2025/EH (SEI nº 14894810). Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Holanda e Octavio Penna Pieranti e o ex-Conselheiro Vicente Bandeira de Aquino Neto.
+00012 - Processo: 53500.002822/2019-79 - PADO: Direitos do Consumidor - SMP
+Relator: Vicente Bandeira de Aquino Neto
+Trazido por: Edson Holanda
+Tipo da Matéria: Recurso Administrativo
+Parte(s): TELEFÔNICA BRASIL S.A.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 55/2024/CODI/SCO, de 19 de março de 2024, que aplicou sanção por descumprimento de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, e do Código de Defesa do Consumidor - CDC, instituído pela Lei nº 8.078, de 11 de setembro de 1990.
+O Conselho aprovou, por unanimidade, a prorrogação do prazo de vista por 120 (cento e vinte) dias.
+00013 - Processo: 53500.047732/2024-74 - PADO: Compromisso de Abrangência
+Relator: Vicente Bandeira de Aquino Neto
+Trazido por: Edson Holanda
+Tipo da Matéria: Recurso Administrativo
+Parte(s): WINITY II TELECOM LTDA.
+Descrição: Recurso interposto contra a decisão da Superintendência de Controle de Obrigações consubstanciada no Despacho Decisório nº 23/2025/COUN/SCO, de 17 de fevereiro de 2025, que aplicou sanção por descumprimento do item 10.1 do Anexo IV do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL.
+Matéria retirada de pauta a pedido do Conselheiro Edson Holanda.
+Nada mais havendo a tratar, o Senhor Presidente deu por encerrada a reunião, da qual, para constar, eu, Letícia Seabra Melo Fernandes, lavrei a presente Ata, que, lida e aprovada, vai por todos assinada eletronicamente.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:57, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 09/04/2026, às 17:58, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 09/04/2026, às 18:27, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/04/2026, às 14:57, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15327131 e o código CRC 5AC8DB8A.
+ | 
+Referência: Processo nº 53500.017687/2026-95 | 
+SEI nº 15327131 |

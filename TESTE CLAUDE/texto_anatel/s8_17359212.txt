@@ -1,0 +1,53 @@
+SEI/ANATEL - 15521096 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 113, de 22 de abril de 2026
+Processo nº 53500.061122/2021-31
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. SANÇÃO POR INFRAÇÕES AO REGULAMENTO DO SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA - RSCM E AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC 2014. RECURSO CONHECIDO E NÃO PROVIDO. REFORMA DE OFÍCIO DA DECISÃO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A. contra Despacho Decisório da Superintendência de Controle de Obrigações - SCO que aplicou multa de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil, duzentos e dez reais e cinquenta centavos) por infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia - RSCM e aos arts. 3º, I e XIII, 14, 15, 58, § 2º, 66, 85 e 95 do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+2. Fatos relevantes. O Procedimento para Apuração de Descumprimento de Obrigações - Pado foi instaurado com base em achados de fiscalização sobre cobrança indevida, descumprimento de oferta, cobrança após cancelamento, cobrança durante suspensão, cobrança de multa de permanência e ausência de devolução em dobro.
+3. As decisões anteriores. A decisão de primeira instância descaracterizou parte das condutas e sancionou as demais com multa. Em sede recursal, a área técnica propôs a descaracterização da infração ao art. 3º, XIII, do RGC, a conversão da multa em advertência quanto ao art. 66 do RGC e o recálculo das multas. Após diligência complementar, a área técnica revisou a apuração da infração ao art. 14 do RGC e reduziu o valor total da sanção.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o Recurso e a Petição extemporânea devem ser conhecidos; (ii) saber se é possível o agravamento da sanção em sede recursal; (iii) saber se é cabível novo despacho decisório com aplicação do fator de redução do art. 33, § 5º, do Regulamento de Aplicação de Sanções Administrativas - RASA; (iv) saber qual disciplina do RASA rege a dosimetria no caso; e (v) saber quais infrações restaram materialmente caracterizadas e quais sanções devem ser aplicadas.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. A Petição extemporânea pode ser conhecida.
+2. É possível a reformatio in pejus em Recurso Administrativo. Exige-se prévia ciência do Interessado e manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+3. Não cabe expedição de novo despacho decisório para permitir a incidência do fator de redução do art. 33, § 5º, do RASA após juízo de retratação. Incide o Enunciado nº 23 da Súmula da Anatel.
+4. Aplica-se ao caso o RASA com as alterações promovidas pela Resolução nº 746/2021. O processo ainda pendia de decisão de primeira instância quando da entrada em vigor da norma.
+5. A infração ao art. 3º, XIII, do RGC foi descaracterizada por ausência de materialidade. A Prestadora havia comprovado a regularidade do ponto ainda na fase de fiscalização.
+6. Mantém-se a infração ao art. 3º, I, do RGC nas vertentes relativas a valores em desacordo com a oferta e descumprimento das condições ofertadas. A vertente referente ao reajuste superior ao previsto em contrato foi descaracterizada.
+7. Devidamente caracterizada a infração ao art. 14 do RGC, pois ocorreu cobrança posterior ao pedido de cancelamento. A diligência complementar apurou casos de cobrança indevida e promoveu o recálculo da multa.
+8. Devidamente caracterizadas e sancionadas as demais infrações: (i) ao art. 67, § 1º, do RSCM; (ii) ao art. 15 do RGC; (iii) ao art. 58, § 2º, do RGC; (iv) ao art. 85 do RGC; e (v) ao art. 95 do RGC.
+9. Quanto ao art. 66 do RGC, a sanção de multa deve ser convertida em advertência, diante das circunstâncias concretas do caso.
+10. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+11. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a promoção da segurança jurídica no setor de telecomunicações.
+12. A abordagem proposta alinha-se às melhores práticas regulatórias da Organização para Cooperação e Desenvolvimento Econômico - OCDE, na medida em que reafirma uma governança eficiente das relações entre usuários e prestadoras, com foco na resolução consensual de eventuais contendas.
+13. A decisão contribui para a promoção do Objetivo 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas - ONU, na medida em que busca incentivar a harmonização das relações entre fornecedores e consumidores por meio da consensualidade.
+14. O Recurso não comporta provimento. A decisão deve ser reformada, de ofício, para excluir infrações descaracterizadas, converter em advertência a sanção do art. 66 do RGC e recalcular a multa total.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e, no mérito, não provido. Petição conhecida e indeferida. Reforma, de ofício, parcial da decisão.
+Tese de julgamento: "1. É possível o agravamento da sanção em sede recursal administrativa, desde que assegurados o contraditório e a ampla defesa e ouvida a PFE/Anatel. 2. É inaplicável o fator de redução do art. 33, § 5º, do RASA na hipótese de novo despacho decisório decorrente de juízo de retratação. 3. Aplica-se aos processos pendentes de decisão de primeira instância o RASA com as alterações promovidas pela Resolução nº 746/2021. 4. Mantidas as infrações aos arts. 67, § 1º, do RSCM e 3º, I, 14, 15, 58, § 2º, 85 e 95 do RGC, com conversão em advertência da sanção relativa ao art. 66 do RGC. Recálculo da multa aplicada."
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 64; Lei nº 9.472/1997; Resolução nº 589/2012, art. 12, II, art. 20, V, e art. 33, § 5º; Resolução nº 612/2013, arts. 115, § 1º, b, 116 e 125, §§ 3º e 4º; Resolução nº 614/2013, art. 67, § 1º; Resolução nº 632/2014, arts. 3º, I e XIII, 14, 15, 58, § 2º, 66, 85 e 95; Resolução nº 746/2021, art. 5º; Enunciados nº 21, nº 22 e nº 23 da Súmula da Anatel.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, ARE 641.054 AgR, Rel. Min. Luiz Fux, Primeira Turma, j. 22.05.2012, DJe 26.06.2012; Anatel, Acórdão nº 14, Processo nº 53500.002607/2014-63, Rel. Conselheiro Moisés Queiroz Moreira, Conselho Diretor, j. 06.02.2023; Anatel, Acórdão nº 274, Processo nº 53500.033378/2019-33, Rel. Conselheiro Alexandre Freire, Conselho Diretor, j. 04.10.2024; Anatel, Acórdão nº 131, Processo nº 53500.002921/2020-94, Rel. Conselheiro Alexandre Freire, Conselho Diretor, j. 23.05.2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 42/2026/AF (SEI nº 15415313), integrante deste acórdão,
+a) conhecer da Petição (SEI nº 13804917) para, no mérito, indeferi-la;
+b) conhecer do Recurso Administrativo (SEI nº 8260681) para, no mérito, negar-lhe provimento; e,
+c) reformar, de ofício, a decisão consubstanciada no Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), a fim de aplicar:
+c.1) a sanção de advertência, pela infração ao art. 66, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC 2014, aprovado pela Resolução nº 632, de 7 de março de 2014; e,
+c.2) a sanção de multa, no valor total nominal de R$ 385.553,00 (trezentos e oitenta e cinco mil, quinhentos e cinquenta e três reais), por descumprimento ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia - RSCM, aprovado pela Resolução nº 614, de 28 de maio de 2013, e aos arts. 3º, I; 14; 15; 58, § 2º; 85 e 95 do RGC 2014.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15521096 e o código CRC 87866E2A.
+ | 
+Referência: Processo nº 53500.061122/2021-31 | 
+SEI nº 15521096 |

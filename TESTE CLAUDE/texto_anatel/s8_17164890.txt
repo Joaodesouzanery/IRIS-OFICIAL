@@ -1,0 +1,38 @@
+SEI/ANATEL - 15343579 - Acórdão
+Boletim de Serviço Eletrônico em 18/03/2026
+DOU de 18/03/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 69, de 17 de março de 2026
+Processo nº 01217.001149/2026-81
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 58, de 17 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM 2ª INSTÂNCIA. ACESSO À INFORMAÇÃO. termo de ajustamento de conduta - TAC TIM. INFORMAÇÕES PRESTADAS. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo em 2ª Instância apresentado por usuário na Plataforma Fala.BR, questionando resposta da Agência Nacional de Telecomunicações - Anatel sobre o cumprimento da cláusula 11.2 do Termo de Ajustamento de Conduta - TAC celebrado com a TIM S.A.
+2. Pedido inicial solicitou esclarecimentos e documentos sobre eventual autorização para que a TIM utilizasse contratos de swap de fibra óptica ou IRU - Indefeasible Right of Use como infraestrutura própria para cumprimento do TAC.
+3. Área técnica informou os documentos de atesto do cumprimento da obrigação, indicou os processos administrativos públicos e esclareceu que parte dos documentos possui restrição de acesso.
+4. Interessado alegou resposta incompleta e reiterou pedido de informação objetiva sobre existência de ato administrativo que reconhecesse ou autorizasse o uso de swap ou IRU como infraestrutura própria.
+5. Área técnica reiterou informações, esclareceu que o Despacho Decisório nº 6/2021/SUE definiu o conceito de infraestrutura própria e indicou os documentos públicos disponíveis para consulta acerca do cumprimento das obrigações do TAC celebrado com a TIM.
+6. Recurso de 2ª Instância fundamentou-se na suposta ausência de resposta objetiva e na relevância do esclarecimento para a transparência do cumprimento do TAC.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se houve negativa de acesso à informação ou às razões da negativa, apta a ensejar o conhecimento do Recurso de 2ª Instância, nos termos da Lei nº 12.527/2011.
+III. RAZÕES DE DECIDIR
+1. Pedido inicial foi respondido com indicação dos documentos de atesto do cumprimento da obrigação e dos processos administrativos públicos afeitos.
+2. Não houve negativa de acesso à informação ou às razões da negativa, pois todas as informações disponíveis foram prestadas e os documentos públicos foram indicados.
+3. Parte dos documentos possui restrição de acesso, conforme legislação aplicável.
+4. Recurso de 2ª Instância não se enquadra nas hipóteses do art. 15 da Lei nº 12.527/2011, pois não houve indeferimento de acesso à informação.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo não conhecido.
+Tese de julgamento: "1. Não há negativa de acesso à informação ou às razões da negativa quando o órgão indica os documentos públicos disponíveis e esclarece os fundamentos da resposta. 2. O Recurso de 2ª Instância não deve ser conhecido quando ausente indeferimento de acesso à informação, nos termos do art. 15 da Lei nº 12.527/2011."
+Dispositivos relevantes citados: Lei nº 12.527/2011, art. 15; Decreto nº 7.724/2012, art. 21; Lei nº 9.472/1997, art. 39, parágrafo único.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 23/2026/EH (SEI nº 15334313), integrante deste acórdão, não conhecer do Recurso de 2ª Instância interposto na Plataforma Integrada de Ouvidoria - Fala.BR nº 01217.001149/2026-81 (SEI nº 15192159).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 17/03/2026, às 17:52, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15343579 e o código CRC 270E79D2.
+ | 
+Referência: Processo nº 01217.001149/2026-81 | 
+SEI nº 15343579 |

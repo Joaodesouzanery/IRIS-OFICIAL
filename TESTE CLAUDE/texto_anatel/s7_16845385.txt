@@ -1,0 +1,87 @@
+SEI/ANATEL - 15051775 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 5/2026/OP
+Processo nº 53500.000870/2015-07
+Interessado: SBA Torres Brasil, REDE SUL DE TELECOMUNICACOES LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14053525) interposto por SBA TORRES BRASIL LTDA, CNPJ nº 16.587.135/0001-35, sucessora por incorporação de REDE SUL DE TELECOMUNICAÇÕES LTDA, CNPJ nº 00.179.268/0001-32, contra o Despacho Decisório nº 49/2025/COUN/SCO (SEI nº 13317318), da Superintendência de Controle de Obrigações, que reconheceu a PROCEDÊNCIA PARCIAL dos lançamentos dos créditos tributários, referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e da multa de ofício, referente ao exercício de 2010.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUST E MULTA DE OFÍCIO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por SBA Torres Brasil Ltda., sucessora por incorporação de Rede Sul de Telecomunicações Ltda., contra o Despacho Decisório nº 49/2025/COUN/SCO, que reconheceu a procedência parcial de lançamentos de créditos tributários de contribuição ao Fust e de multa de ofício, relativos ao exercício de 2010.
+ Pedido. Declaração de nulidade parcial do despacho, com retorno dos autos para novo julgamento, para detalhamento da composição da base de cálculo e das receitas utilizadas. Pedido alternativo de reforma parcial, para afastar a exigência remanescente de Fust por incidência sobre receitas não caracterizadas como serviços de telecomunicações.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se o despacho recorrido é nulo por falta de motivação e de indicação suficiente das bases e receitas consideradas; e (ii) saber se a exigência remanescente de contribuição ao Fust deve ser afastada por ausência de comprovação de que as receitas apuradas decorrem de serviços de telecomunicações.
+III. RAZÕES DE DECIDIR
+ A motivação do ato administrativo pode consistir em concordância com fundamentos constantes de anteriores relatórios e informações, que passam a integrar o ato.
+ Os Relatórios de Fiscalização e seus anexos indicam os valores apurados, as contas consideradas e os critérios de composição da receita operacional e da base de cálculo, o que atende ao requisito de indicação do valor do crédito tributário.
+ A nulidade de ato processual depende de prejuízo e de frustração de sua finalidade, o que não se verifica quando o sujeito passivo tem acesso aos elementos necessários ao exercício da ampla defesa e interpõe recurso.
+ A base de cálculo do Fust decorre de receitas de prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins.
+ Os Relatórios de Fiscalização gozam de presunção de legalidade e veracidade, que não foi afastada por prova idônea produzida pela recorrente.
+ Cabe ao interessado o ônus da prova dos fatos alegados, o que impede o acolhimento de alegações desacompanhadas de documentação contábil comprobatória.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: “1. Não há nulidade do despacho decisório quando a motivação se apoia em Relatórios de Fiscalização que integram o ato e permitem o exercício do contraditório e da ampla defesa. 2. Mantém-se a exigência remanescente de contribuição ao Fust quando prevalece a presunção de legalidade dos Relatórios de Fiscalização e o recorrente não produz prova idônea para afastar o enquadramento das receitas como decorrentes de serviços de telecomunicações. 3. Cabe ao interessado o ônus de provar os fatos alegados no processo administrativo.”
+Dispositivos relevantes citados: Decreto nº 70.235/1972, art. 11, II; Lei nº 9.784/1999, arts. 36 e 50, § 1º; Resolução nº 612/2013, art. 85; Portaria Normativa nº 1355/2019, item 7.1.1.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se e Recurso Administrativo (SEI nº 14053525) interposto por SBA TORRES BRASIL LTDA, CNPJ nº 16.587.135/0001-35, sucessora por incorporação de REDE SUL DE TELECOMUNICAÇÕES LTDA, CNPJ nº 00.179.268/0001-32, contra o Despacho Decisório nº 49/2025/COUN/SCO (SEI nº 13317318), da Superintendência de Controle de Obrigações, que reconheceu a PROCEDÊNCIA PARCIAL dos lançamentos dos créditos tributários, referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e da multa de ofício, traduzidos na Notificação de Lançamento nº 001-021724/2014/AFFO-ANATEL (fls. 231 e 232 do SEI nº 0256193), referente ao exercício de 2010.
+Em 18 de julho de 2025, conforme AR referente ao Ofício nº 104/2025/COUN/SCO-ANATEL (SEI nº 14118328), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 707/2025/COUN/SCO (SEI nº 14399544), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 739/2025/COUN/SCO (SEI nº 14396328), a Superintendente de Controle de Obrigações conheceu do Recurso interposto.
+A matéria foi encaminhada para deliberação deste Colegiado por meio da MACD nº 701/2025 (SEI nº 14401919).
+Fui designado relator da matéria por meio do sorteio realizado em 08 de janeiro de 2026, nos termos da Certidão de Distribuição SEI nº 15011922.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, pressupõe-se que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente requer, em síntese, que seja decretada a nulidade parcial da decisão recorrida, com a determinação de retorno dos autos para novo julgamento, para fins de que: (a) seja devidamente evidenciada a composição das bases de cálculo que sustentam a parcela remanescente da exigência; e (b) sejam devidamente indicadas as receitas, extraídas dos balancetes mensais da Rede Sul, que sustentam a parcela remanescente da cobrança a título da contribuição ao FUST.
+Alternativamente, foi solicitado que seja reformada parcialmente a decisão recorrida em razão do próprio mérito, decretando-se a improcedência da exigência remanescente a título da Contribuição ao FUST, eis que calculada sobre receitas que não se amoldam ao conceito jurídico de serviços de telecomunicação.
+É importante ressaltar, que a Lei nº 9.784, de 29 de janeiro de 1999, reguladora do processo administrativo no âmbito da Administração Pública Federal e aplicável subsidiariamente ao PAF, dispõe, em seu artigo 50, § 1º, que “a motivação deve ser explícita, clara e congruente, podendo consistir em declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas, que, neste caso, serão parte integrante do ato”.
+Neste sentido, embora apartados do despacho ora recorrido, os Relatórios de Fiscalização, que contêm as informações pertinentes, fazem parte do referido ato administrativo, consoante norma acima mencionada.
+De fato, os referidos relatórios e seus anexos demonstram claramente o quanto que seria devido ao Fust no exercício fiscal em tela e que esse montante ainda não foi integralmente quitado pela empresa. Além disso, os Relatórios, em conjunto com a planilha básica de composição da receita operacional e da base de cálculo do tributo, indica quais contas foram utilizadas e o porquê da utilização de determinadas contas. Essa situação legitima plenamente a cobrança realizada. Desta forma, resta plenamente atendido o requisito do art. 11, inciso II, do Decreto nº 70.235/72.
+Art. 11. A notificação de lançamento será expedida pelo órgão que administra o tributo e conterá obrigatoriamente:
+(...)
+II - o valor do crédito tributário e o prazo para recolhimento ou impugnação;
+Cumpre lembrar que, somente deve ser declarada a nulidade de atos processuais, sejam eles administrativos ou judiciais, quando eles não atingem sua finalidade. No caso, a finalidade maior do despacho era comunicar o reconhecimento da procedência parcial de créditos relativos à contribuição ao Fust, facultando ao sujeito passivo acesso às informações mínimas para o exercício do seu direito de defesa, o que foi plenamente alcançado – prova maior disso é que o contribuinte apresentou seu recurso, ora sob análise. Essa circunstância impede a anulação dos atos praticados.
+Desta forma, concluo não haver qualquer nulidade no contexto deste processo.
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou por duas vezes nos autos acerca da regularidade dos valores identificados como declarados a menor do que aqueles efetivamente devidos.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações, é necessário haver comprovante idôneo de tal transação comercial. É necessário haver a verdade material. 
+Desta forma, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações. Razão pela qual, entendo improcedente o argumento da Interessada.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+Observo que a CIDE-FUST e o Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel) compartilham da mesma base de cálculo para aferição dos valores devidos. 
+O Conselho Diretor tem entendido que, em havendo qualquer alteração na base de cálculo do tributo, faz-se mister a comunicação quanto a tal modificação ao Ministério das Comunicações, órgão com capacidade tributária ativa para a cobrança do Funttel.
+Sendo assim, julgo prudente determinar à Superintendência de Controle de Obrigações - SCO a comunicação da presente decisão ao Ministério das Comunicações (MCom), para que tome as providências que julgar cabíveis. 
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por:
+conhecer e negar provimento ao Recurso;
+determinar à Superintendência de Controle de Obrigações que comunique a presente decisão ao Ministério das Comunicações, órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), para que tome as providências cabíveis na esfera de suas atribuições.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15051775 e o código CRC C00F2227.
+ | 
+Referência: Processo nº 53500.000870/2015-07 | 
+SEI nº 15051775 |

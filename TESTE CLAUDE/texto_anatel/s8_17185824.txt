@@ -1,0 +1,45 @@
+SEI/ANATEL - 15362754 - Acórdão
+Boletim de Serviço Eletrônico em 30/03/2026
+DOU de 30/03/2026, seção 1, página 33
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 75, de 20 de março de 2026
+Processo nº 53500.343010/2022-86
+Recorrente/Interessado: TVN NACIONAL TELECOM LTDA
+CNPJ nº 07.335.723/0001-90
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. USO DE RECURSOS DE NUMERAÇÃO SEM PRÉVIA ATRIBUIÇÃO E COMPROMETIMENTO DA RASTREABILIDADE DE CHAMADAS. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO PROVIDO PARCIALMENTE.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TIP NACIONAL TELECOM LTDA. contra decisão da Superintendência de Controle de Obrigações da Anatel que aplicou multa por infração ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC e ao art. 19 do Regulamento Geral de Numeração - RGN.
+2. Interessada alegou ocorrência de bis in idem, regularidade de suas condutas, adoção de medidas técnicas e administrativas para prevenção de fraudes, e questionou a metodologia de cálculo da multa, requerendo alternativamente a conversão da penalidade em advertência ou a redução do valor aplicado.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os pressupostos para afastar a sanção de multa aplicada à Recorrente, seja por alegação de bis in idem, ausência de infração, inadequação da metodologia de cálculo da multa, ou possibilidade de conversão da penalidade em advertência ou redução do valor.
+III. RAZÕES DE DECIDIR
+1. Recurso Administrativo admitido, presentes os requisitos de admissibilidade.
+2. Não configurada a ocorrência de bis in idem, pois os fatos apurados nos dois procedimentos sancionadores são distintos.
+3. Comprovada a materialidade das infrações ao art. 8º do RSTFC e ao art. 19 do RGN, diante da permissão de geração de tráfego com números originadores não atribuídos à Prestadora, comprometendo a identificação e rastreabilidade das chamadas.
+4. Medidas alegadas pela Recorrente para prevenção de fraudes e regularização das condutas não afastam as evidências técnicas de descumprimento das obrigações regulatórias.
+5. Não se apurou infração ao art. 65-M da Resolução nº 738/2020.
+6. Metodologia de cálculo da multa observou os critérios legais e regulamentares, sendo possível o afastamento de metodologia padrão quando justificado pela proporcionalidade e razoabilidade, conforme precedentes do Conselho Diretor e manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+7. Não cabível a conversão da multa em advertência, pois a infração foi classificada como grave e não se trata de caso de atendimento de medidas impostas em sede de fiscalização regulatória.
+8. Observou-se a incidência de circunstâncias atenuantes, cabendo a redução do valor da multa aplicada.
+9. A decisão fundamenta-se no Decreto Presidencial nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor, e no Memorando de Entendimento firmado entre Brasil e Estados Unidos, com o objetivo de prestigiar boas práticas regulatórias. Esse programa adota princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo e simplificação do processo regulatório.
+10. A decisão está em conformidade com os estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD.
+11. A decisão alinha-se às recomendações da Organização para Cooperação e Desenvolvimento Econômico - OCDE na medida em que busca prevenir e reprimir condutas que possam comprometer o funcionamento adequado das redes de telecomunicações.
+12. A fundamentação está em conformidade com os Objetivos 9 (meta 9.1) e 16 (meta 16.6) da Agenda 2030 da Organização das Nações Unidas, que visam ao desenvolvimento de infraestrutura de qualidade, confiável, sustentável e resiliente, bem como à criação de instituições eficazes, responsáveis e transparentes. Além disso, está alinhada com as metas nacionais 16.3 e 16.6, revisadas pelo Instituto de Pesquisa Econômica Aplicada - IPEA.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e provido parcialmente.
+Tese de julgamento: "1. Não configurado bis in idem quando os fatos apurados em procedimentos sancionadores distintos não são idênticos. 2. Comprovada a infração ao art. 8º do RSTFC e ao art. 19 do RGN pela permissão de tráfego com números originadores não atribuídos à Prestadora. 3. Metodologia de cálculo da multa pode ser afastada quando justificado pela proporcionalidade e razoabilidade, desde que observados os critérios legais. 4. Não cabível conversão da multa em advertência quando presentes circunstâncias agravantes e classificação da infração como grave, exceto quando houver atendimento de medidas impostas em processo de fiscalização regulatória."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 173, II, 176 e 179, § 1º; Resolução nº 426/2005, art. 8º; Resolução nº 709/2019, art. 19; Resolução nº 589/2012, arts. 18, 12, 33 e 39.
+Jurisprudência relevante citada: Acórdão nº 217/2024-CD; Acórdão nº 121/2025-CD; Pareceres PFE-Anatel nº 01267/2015 e nº 00749/2020.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 12/2026/AF (SEI nº 15125116), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, dar-lhe parcial provimento, reduzindo o valor da multa aplicada de R$ 166.306,40 (cento e sessenta e seis mil, trezentos e seis reais e quarenta centavos) para R$ 133.045,12 (cento e trinta e três mil, quarenta e cinco reais e doze centavos).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/03/2026, às 19:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15362754 e o código CRC 9688245F.
+ | 
+Referência: Processo nº 53500.343010/2022-86 | 
+SEI nº 15362754 |

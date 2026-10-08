@@ -1,0 +1,1314 @@
+SEI/ANATEL - 14904908 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 66/2025/CL
+Processo nº 53500.047817/2025-33
+Interessado: Gla Brasil Ltda.
+CONSELHEIRO
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Conferência de Direito de Exploração, no Brasil, do satélite estrangeiro Intelsat 31 (IS-31), associado à posição orbital 95,05°O.
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO. NOVA OUTORGA PARA O SATÉLITE IS-31. PEDIDO DEFERIDO CONDICIONADO AO PAGAMENTO DO PREÇO PÚBLICO.
+I. CASO EM EXAME
+ Pedido formulado pela GLA Brasil Ltda., representante legal da Intelsat License LLC, para conferência de novo direito de exploração no Brasil do satélite geoestacionário estrangeiro Intelsat 31 (IS-31), posicionado em 95,05°O, com vigência até 26 de julho de 2031.
+ O referido artefato está colocalizado com o satélite Intelsat 30 (IS-30), sendo que ambos têm características técnicas idênticas e poderão operar de forma redundante, total ou parcialmente.
+ Foram cumpridos os procedimentos e atendidas as exigências do Regulamento Geral de Exploração de Satélites (RGSat), tendo a Superintendência de Outorga e Recursos à Prestação (SOR) se manifestado favoravelmente à outorga.
+ A matéria foi encaminhada ao Conselho Diretor para decisão, acompanhada de minuta de Ato de conferência de novo direito de exploração.
+II. QUESTÃO EM DISCUSSÃO
+ Saber se foram atendidos os requisitos procedimentais e técnico-regulatórios para a conferência de novo direito de exploração do satélite estrangeiro IS-31 sobre o território brasileiro até 26 de julho de 2031.
+III. RAZÕES DE DECIDIR
+ Compete ao Conselho Diretor conferir direito de exploração de satélites, nos termos do art. 133, IX, do Regimento Interno da Anatel - RIA (aprovado pela Res. nº 612/2013).
+ A requerente atendeu aos requisitos procedimentais do Regulamento Geral de Satélites - RGSat (aprovado pela Res. nº 748/2021), tendo apresentado todos os documentos e declarações exigidos, conforme listas de verificação juntadas aos autos pela área técnica.
+ Conforme atestou o corpo técnico, o presente pedido não se enquadra nas hipóteses de consulta pública obrigatória previstas nos arts. 17 e 19 do RGSat e nos itens 2 e 3 do Anexo ao Ato nº 4430/2023 da Superintendência de Outorga e Recursos à Prestação (SOR).
+ As faixas de radiofrequência utilizadas têm atribuição e destinação compatíveis com o Serviço Fixo por Satélite, nos termos do Regulamento de Uso do Espectro - RUE (aprovado pela Res. 671/2013) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências (PDFF, aprovado pela Res. nº 772/2025).
+ O satélite IS-31 está vinculado às redes BLUE1, USASAT-23F, USASAT-24L, USASAT-35L, USASAT-60F e USASAT-60U, notificadas à União Internacional de Telecomunicações (UIT), cumprindo os requisitos do § 2º do art. 4º do RGSat.
+ A apresentação de acordos de coordenação dos arts. 10 e 15 do RGSat foi dispensada, uma vez que não há redes brasileiras notificadas nem direitos de exploração conferidos ou em análise nas frequências no arco orbital considerado.
+ Como se trata de um satélite estrangeiro, o art. 30 do RGSat exige a indicação formal de representante legal no Brasil e o pagamento do preço público de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+ É pertinente fazer constar do ato de outorga a exigência de instalação de filtros de recepção, a menção à Recomendação 51 (XXVII-16) da CITEL e a observação de que as faixas pleiteadas e adjacentes podem estar sendo utilizadas ou vir a ser utilizadas por outros sistemas de telecomunicações regularmente autorizados.
+ O pedido de direito de exploração do IS-31 está alinhado ao Plano Estratégico da Anatel 2023-2027 e aos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU, pois amplia a capacidade satelital disponível para o atendimento de áreas remotas e de políticas públicas.
+IV. DISPOSITIVO E TESE
+ Pedido deferido para conferir à GLA Brasil Ltda., como representante legal da Intelsat License LLC, novo direito de exploração no Brasil do satélite geoestacionário estrangeiro Intelsat 31 (IS-31) até 26 de julho de 2031, condicionado à comprovação do pagamento do preço público de R$ 102.677,00 (cento e dois mil seiscentos e setenta e sete reais), observado o cumprimento das condições técnicas e regulatórias aplicáveis.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel conferir direito de exploração de satélite, inclusive estrangeiro, nos termos da Lei nº 9.472/1997 e do Regimento Interno da Agência. 2. Atendidas as condições gerais, procedimentais e técnico-regulatórias previstas no RGSat e nos Atos nº 9523/2021, nº 9526/2021 e nº 4430/2023, é possível conferir novo direito de exploração ao satélite estrangeiro IS-31, ainda que já exista direito vigente, desde que observados os prazos e limites de vida útil do artefato. 3. O pedido em análise não se enquadra nas hipóteses de consulta pública obrigatória para conferência de direito de exploração de satélites previstas no RGSat e no Ato nº 4430/2023. 4. Não identificada prioridade de coordenação em âmbito nacional nas faixas de frequências e no arco orbital em questão, sendo desnecessária a apresentação de acordos de coordenação. 5. A expedição do ato de outorga do novo direito de exploração do satélite IS-31 fica condicionada à comprovação do pagamento do preço público de R$ 102.677,00."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º; Resolução nº 612/2013 (Regimento Interno da Anatel), arts. 39 e 133, IX; Resolução nº 671/2016 (RUE), art. 1º, § 3º, III; Resolução nº 748/2021 (RGSat), arts. 4º, 10, 15, 16, 17, 18, 20, 22, 30, 38 e 39; Resolução nº 772/2025, Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências; Resolução nº 779/2025, art. 1º, CXXV; Ato nº 9523/2021; Ato nº 9526/2021; Ato nº 4430/2023; Portaria nº 642/2013; Decretos nº 11.704/2023, nº 11.738/2023 e nº 12.150/2024.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT).
+Lei nº 13.879, de 3 de outubro de 2019 - Altera a LGT.
+Decreto nº 10.402, de 17 de junho de 2020 - Dispõe sobre a prorrogação e a transferência de autorização de radiofrequências, de outorgas de serviços de telecomunicações e de direitos de exploração de satélites.
+Decreto nº 11.704, de 14 de setembro de 2023 - institui a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável.
+Decreto nº 11.738, de 18 de outubro de 2023 - Dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Decreto nº 12.150, de 20 de agosto de 2024. Instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), aprovado pela Resolução nº 772, de 16 de janeiro de 2025.
+Ato nº 9523, de 27 de outubro de 2021 - Requisitos técnicos e operacionais para sistemas de comunicação via satélite.
+Ato nº 9526, de 27 de outubro de 2021 - Documentação para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite.
+Ato nº 4430, de 19 de abril de 2023 - Aprova os compromissos para exploração de satélites e critérios para realização de consulta pública para conferência de direito de exploração de satélite.
+Portaria nº 642, de 26 de julho de 2013 - disciplina os casos de manifestação obrigatória da PFE-Anatel.
+RELATÓRIO
+Cuida-se do pedido de direito de exploração no Brasil para o satélite estrangeiro Intelsat 31 (IS-31), da operadora Intelsat License LLC, com prazo de validade até 26 de julho de 2031.
+O referido artefato ocupa a posição orbital 95,05°O, colocalizado com o satélite Intelsat 30 (IS-30), que também é objeto de pedido de direito de exploração nos autos do Processo nº 53500.047764/2025-51. De acordo com a interessada, os satélites IS-30 e IS-31 têm características técnicas idênticas e poderão operar de forma redundante, total ou parcialmente.
+Como representante legal da operadora estrangeira no país foi indicada a empresa GLA Brasil Ltda., CNPJ nº 03.185.731/0001-47, a qual é uma empresa constituída sob as leis brasileiras, com sede e administração no país.
+ Em 26 de junho de 2025, por meio da sua representante legal, GLA Brasil Ltda., a Intelsat solicitou a conferência de direito de exploração para o satélite IS-31, na posição orbital 95,05°O, até 26 de julho de 2031 (SEI nº 13908707). O fim da vida útil do artefato, conforme informou a interessada, está estimada para 31 de maio de 2034.
+Juntamente com o pedido, foram apresentados: i) carta indicando a motivação para o pleito do novo Direito de Exploração e os documentos anexos, além de informação sobre a coordenação do satélite (SEI nº 13908708); ii) comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica - CNPJ (SEI nº 13908709); iii) 42ª alteração do Contrato Social e sua consolidação (SEI nº 13908710); iv) indicação do representante legal e declarações regulatórias (SEI nº 13908711); v) procuração da Intelsat License LLC nomeando representantes legais com a indicação de seus respectivos poderes de representação, em inglês e português (SEI nº 13908712); vi) documentação, expedida pelo órgão competente, que demonstra as condições da autorização do satélite no país de origem (SEI nº 13908713) com sua vii) tradução juramentada (SEI nº 13908714) e; viii) certidões de regularidades fiscais perante a Anatel, a Fazenda Federal e o Fundo de Garantia por Tempo de Serviço - FGTS (SEI nº 13908715).
+A Gerência de Outorgas e Recursos à Prestação (ORLE) efetuou as análises técnica (SEI nº 13921691) e jurídica (SEI nº13921924 ) preliminares, de forma a certificar-se de que a documentação apresentada atendia ao disposto na legislação regulamentar em vigor.
+Considerando que o prazo de vigência solicitado está vinculado à data de início da licença concedida no país de origem, a ORLE solicitou à interessada (SEI nº 13921971) complementar a documentação exigida com a certificação de início de operação apresentada pela Intelsat à Federal Communications Commission (FCC) dos Estados Unidos da América. 
+A interessada logo apresentou o documento solicitado (SEI nº 14036831) e sua tradução juramentada (SEI nº 14036832).
+Após verificar a conformidade preliminar (SEI nº 14066724), a ORLE encaminhou os autos à Gerência de Espectro, Órbita e Radiodifusão (ORER), que se manifestou favoravelmente à outorga de novo direito, fazendo observações sobre a exigência de filtros e sobre o possível uso da faixa para TV satelital (SEI nº 14382234).
+Por meio do Informe nº 9978/2025/ORLE/SOR (SEI nº 14626303), a Superintendência de Outorga e Recursos à Prestação (SOR) manifestou-se favoravelmente ao atendimento da solicitação da Intelsat, propondo sua minuta de ato (SEI nº 14654375).
+A Matéria para Apreciação do Conselho Diretor nº 811/2025 (SEI nº 14654383) foi encaminhada a este Colegiado (SEI nº 14877820) e distribuída para minha relatoria em 11 de dezembro de 2025 (SEI nº 14899584).
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise está dividida em 4 (quatro) partes. Na primeira, confirma-se a competência deste Colegiado para decidir sobre o Direito de Exploração de satélites. Na segunda e na terceira, abordam-se os requisitos procedurais e técnico-regulatórios para a obtenção do referido direito. Por fim, verifica-se a consistência da presente análise em face do plano estratégico da Agência, dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU e das melhores práticas do setor.
+I - Da competência do Conselho Diretor
+De acordo com art. 1º da Lei nº 9.472, de 1997, Lei Geral de Telecomunicações (LGT), é competência da União, por meio da Anatel, disciplinar o uso do espectro de radiofrequências e de órbitas no país:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências." (Grifou-se)
+Nesse sentido, o Glossário aplicável ao Setor de Telecomunicações traz a seguinte definição relativa ao Direito de Exploração de Satélite:
+Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução nº 779, de 28 de abril de 2025
+"Art 1º (...) 
+(...)
+CXXV - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;" (Grifou-se)
+Ressalta-se que a autorização de uso de radiofrequência incluída nessa definição é regida pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021. Assim, não segue o Regulamento de Uso do Espectro de Radiofrequências (RUE):
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016
+"Art. 1º ...
+(...)
+§3º, A utilização de radiofrequências, faixa ou canal de radiofrequências poderá ser permitida de forma diversa da prevista neste Regulamento nos seguintes casos, tratados em regulamentos específicos:
+(...)
+III - autorização de radiofrequência associada ao direito de exploração de satélite." (Grifou-se)
+Conforme o disposto no Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 2013, compete a este Colegiado conferir o referido direito de exploração:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite;" (Grifou-se)
+Observa-se que, a menos de casos de dúvida jurídica, o RIA não exige manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) na conferência de direito de exploração de satélite:
+RIA-Anatel/2013
+"Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares."
+Além disso, a conferência de direito de exploração de satélite estrangeiro no Brasil não figura dentre as hipóteses de manifestação obrigatória do órgão jurídico previstas na Portaria nº 642, de 26 de julho de 2013.
+Assim, compete ao Conselho Diretor da Agência decidir sobre a conferência do referido direito para o satélite estrangeiro IS-31, objeto dos presentes autos.
+II - Dos requisitos procedimentais
+II.1 - Das condições gerais
+O art. 16 do RGSat estabelece as seguintes condições gerais para a obtenção de direito de exploração de satélites perante a Anatel:
+RGSat
+"Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público."
+O seguinte Ato, exarado pelo Superintendente de Outorga e Recursos à Prestação - SOR, detalha a documentação requerida para obtenção, alteração ou prorrogação de direito de exploração de satélite, de forma atender aos incisos do caput do art. 16 do RGSat:
+Ato nº 9526, de 27 de outubro de 2021 
+"Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º Concomitantemente à análise da documentação citada nos incisos anteriores, a área técnica responsável verificará a regularidade fiscal da pretendente perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel.
+§ 2º Não sendo possível realizar a consulta aos bancos de dados referidos no § 1º deste artigo, ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões."
+Observa-se que a documentação apresentada atendeu ao disposto no RGSat quanto a aspectos técnicos e jurídicos, conforme certificam as listas de verificação aqui juntadas pela ORLE (SEI nº 13921691, nº 13921924 e nº 14066724).
+Assim, foram atendidas as condições gerais para a obtenção do Direito de Exploração de Satélite Estrangeiro estabelecidas no RGSat e detalhadas no Ato nº 9526/2021.
+II.2 - Dos compromissos e consulta pública
+O art. 17 do RGSat especifica outras informações requeridas para a conferência de direito de exploração, prevendo ainda possibilidades de estabelecer compromissos ou de realizar consulta pública:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021
+"Art. 17. A Agência poderá estabelecer, em Ato do Conselho Diretor, que deverá ser precedido de Consulta Pública, compromissos para a conferência de Direito de Exploração de Satélite, tais como requisitos mínimos de capacidade e cobertura sobre o território brasileiro, levando em consideração o interesse público quanto ao uso dos recursos de espectro e órbita, em especial nas faixas de frequências sujeitas aos planos dos Apêndices 30-30A e 30B do RR da UIT.
+Parágrafo único. O Ato mencionado no caput poderá prever hipóteses em que deverá ser realizada consulta pública para avaliar a existência de interesse público em requerimentos de direito de exploração de satélite estrangeiro."
+(...)
+Art. 19. (...)
+§ 1º A conferência de Direito de Exploração de Satélite estará sujeita à análise técnico-regulatória da solicitação e da documentação apresentada.
+§ 2º A Agência poderá realizar consulta pública sobre sua intenção de conferir Direito de Exploração, solicitando comentários sobre possíveis incompatibilidades técnicas, ou qualquer outro ponto considerado pertinente."
+O seguinte Ato do Conselho Diretor estabeleceu os compromissos para exploração de satélites e os critérios para realização de consulta pública para conferência de direito de exploração de satélite nos seguintes termos:
+Anexo ao Ato nº 4430, de 19 de abril de 2023
+"1. Durante a vigência do direito de exploração de satélite, as exploradoras de satélites brasileiros ou estrangeiros devem atender os seguintes compromissos:
+1.1. A exploradora de satélite brasileiro deve manter recursos humanos em quantidade suficiente para a completa operação, durante 24 horas por dia e 7 dias por semana, da Estação de Controle, localizada em território brasileiro, de seu satélite.
+1.2. A exploradora de satélite brasileiro deve assegurar a efetiva existência, em território nacional, dos centros de deliberação e implementação das decisões estratégicas, gerenciais e técnicas envolvidas, inclusive fazendo refletir tal obrigação na composição e nos procedimentos decisórios de seus órgãos de administração.
+1.3. A interação entre os representantes das exploradoras de satélites e a Anatel deve ser realizada em português, língua oficial do país, e todos os documentos oficiais submetidos à Anatel devem ser redigidos em língua portuguesa ou, quando redigidos em língua estrangeira, devem ser traduzidos para o português para ter efeitos legais no País.
+1.3.1. Acordos de coordenação e correspondências a serem enviadas à União Internacional de Telecomunicações e a outras Administrações podem ser redigidas e submetidas à Agência em inglês ou espanhol.
+1.4. As exploradoras de satélite devem envidar todos os esforços para realizar a coordenação dos segmentos espacial e terrestre, imbuídas de boa-fé e cooperação mútua, a fim de permitir o compartilhamento dos recursos de órbita e espectro com o maior número possível de interessados, independente da ordem de prioridade de coordenação no âmbito nacional ou internacional.
+1.5. As exploradoras de satélites devem priorizar o provimento de capacidade satelital para o atendimento a políticas públicas.
+2. Para conferência ou adição de faixas de frequências a direito de exploração de satélite estrangeiro associados às faixas de frequências dos Planos do Apêndice 30-30A e do Apêndice 30B do Regulamento de Rádio da União Internacional de Telecomunicações, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública.
+3. Para conferência ou adição de faixas de frequências a direito de exploração de satélite correspondente a sistemas de grande porte de satélites não-geoestacionários, ou a sistemas de satélites geoestacionários ou não-geoestacionários associados ao serviço móvel por satélite, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública, em especial para subsidiar as decisões da Agência quanto ao estabelecimento de restrições, limites ou condições, visando propiciar ampla e justa competição e o acesso por diferentes agentes econômicos ao mercado.
+3.1. Entende-se por sistemas de grande porte de satélites não-geoestacionários aqueles compostos por mais de mil satélites.
+3.2. Os sistemas de satélites associados ao serviço móvel por satélite, a que se refere o item 3, são aqueles cujas estações terrenas não façam uso de antenas direcionais e que não tenham capacidade para manter o apontamento para o satélite correspondente à sua rede."
+Conforme já visto, a solicitante declarou (SEI nº 13908707) ter ciência das condições da outorga, comprometendo-se a observar a regulamentação nacional, o que inclui o atendimento aos compromissos para a conferência de direito de exploração de satélite estabelecidos no art. 17 do RGSat e nos itens 1.3, 1.4 e 1.5 do Ato nº 4430, de 19 de abril de 2023.
+Tal como registrou o corpo técnico, o pedido em pauta não se enquadra nas hipóteses de consulta pública dos arts. 17 e 19 do RGSat, nem nos aspectos específicos detalhados no Ato nº 4430, de 19 de abril de 2023:
+Informe nº 996/2025/ORER/SOR (SEI nº 14382234)
+"3.8 Ao avaliar o presente pleito à luz das hipóteses regulatórias referentes à realização de Consulta Pública, esta Gerência identificou a aplicabilidade do encaminhamento assinalado na Lista de Verificação disposta abaixo.
+Lista de Verificação I - Hipóteses para realização de Consulta Pública
+ O pedido se enquadra em hipótese para realização de Consulta Pública obrigatória?
+ | 
+ Não
+ | 
+ Necessidade de Consulta Pública sob a hipótese do item 2 do Ato nº 4.430/2023
+ | 
+ Não se aplica
+ | 
+ Necessidade de Consulta Pública sob a hipótese do item 3 do Ato nº 4.430/2023
+ | 
+ Não se aplica"
+ | 
+Foram assim atendidos os requisitos regulamentares relativos a compromissos, destacando-se que o pedido em pauta não se enquadra em hipóteses de consulta pública obrigatória.
+III.3 - Do satélite IS-31
+Os arts.18 e 22 do RGSat exigem ainda a apresentação das informações técnicas e o atendimento dos requisitos a seguir especificados para a obtenção de direito de exploração de satélites perante a Anatel:
+RGSAT
+Art. 18. A solicitação de Direito de Exploração de Satélite deverá conter a indicação dos Filings das Redes de Satélite e o nome do satélite ou a indicação do sistema a ser associado ao direito, bem como a posição orbital, as faixas de frequências, a área geográfica de cobertura, o prazo solicitado para vigência do direito de exploração, os acordos de coordenação necessários e, se for o caso, os acordos de colocalização de satélites.
+(...)
+Art. 22. O Direito de Exploração de Satélite será conferido mediante Ato expedido pela Agência, do qual devem constar o nome ou a denominação social da autorizada, o número de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ) da autorizada ou de seu representante legal, quando aplicável, o objeto e o prazo de vigência do direito, as redes de satélite e o nome do satélite, no caso de satélite geoestacionário, a serem associados ao direito, a posição orbital, as faixas de frequências, a área geográfica de cobertura, a data para entrada em operação, bem como outras informações julgadas convenientes pela Agência."
+As informações gerais exigidas no caput dos arts. 18 e 22 do RGSat foram devidamente apresentadas, tendo sido assim sintetizadas pela área técnica:
+Informe nº 996/2025/ORER/SOR (SEI nº 14382234)
+"3.3. A solicitação de novo Direito de Exploração de Satélite foi protocolada junto à Anatel por meio do Requerimento SEI nº 13908707, complementado pelo documento SEI nº 13908708 e seus anexos. As informações relativas ao pedido estão sintetizadas na Tabela I, a seguir.
+Tabela I - Informações do Pedido
+ Satélite ou Sistema Objeto da Solicitação
+ | 
+ Intelsat 31 (IS-31)
+ | 
+ Nacionalidade do Satélite ou Sistema Objeto da solicitação
+ | 
+ Satélite Estrangeiro – Redes de Satélites submetida à UIT pelos EUA
+ | 
+ Representante Legal indicado
+ | 
+ GLA BRASIL LTDA
+ | 
+ Tipo de Solicitação
+ | 
+ X
+ | 
+ Novo Direito
+ | 
+ | 
+ Adição de Faixas
+ | 
+ | 
+ Prorrogação
+ | 
+ Operadora de Satélites
+ | 
+ INTELSAT LICENSE LLC
+ | 
+ Tipo de Órbita / Posição Orbital ou Quantidade de Satélites
+ | 
+ Satélite geoestacionário / Posição orbital 95,05° Oeste
+ | 
+ Faixas de Frequências Objeto da Solicitação
+ | 
+ Subfaixas compreendidas nas porções de 10,95 a 11,20, de 11,45 a 12,20 GHz (enlace de descida) e de 13,75 a 14,5 GHz (enlace de subida)
+ | 
+ Data de Lançamento
+ | 
+ 16.10.2014
+ | 
+ Vida Útil do Satélite
+ | 
+ 31.05.2034 (item 5 do documento SEI nº 13908707)
+ | 
+ Prazo da Autorização / Prorrogação Solicitada
+ | 
+ Até 26.07.2031
+ | 
+ Data de Entrada em Operação Comercial
+ | 
+ Já em operação
+ | 
+ Área de Cobertura
+ | 
+ Todo o território nacional 
+ | 
+ Rede de Satélites Informada
+ | 
+ BLUE1 / USASAT-23F / USASAT-24L / USASAT-35L / USASAT-60F / USASAT-60U 
+ | 
+ Serviço de Radiocomunicação Associado
+ | 
+ Serviço Fixo por Satélite
+ | 
+Observa-se, em particular, que o satélite IS-31 já se encontra em operação e que a vida útil do prevista para o artefato é compatível com o prazo de validade do direito de exploração de satélite ora solicitado.
+Assim, a requerente cumpriu todos os requisitos procedimentais estabelecidos no RGSat.
+III - Dos requisitos técnico-regulatórios
+III.1 Da exploração de satélite estrangeiro
+Como o presente caso trata da exploração de satélite estrangeiro, aplicam-se aqui as disposições do art. 30 do RGSat:
+RGSat
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+I - formalizar ante a Agência a indicação de seu(s) representante(s) legal(is) no Brasil e seu comprometimento de manter essa informação atualizada e de prover a capacidade do Segmento Espacial somente por meio do(s) representante(s) indicado(s);
+II - efetuar o pagamento, por um de seus representantes legais no País, pelo direito de exploração de satélite estrangeiro, de valor fixado pela Agência, conforme estabelecido neste Regulamento;
+III - apresentar documentação, expedida pelo órgão competente, que demonstre as condições da autorização do satélite no país de origem.
+§ 1º Os representantes legais referidos neste artigo deverão ser empresas constituídas segundo as leis brasileiras, com sede e administração no País, devendo fazer comprovação desta condição.
+§ 2º Os representantes legais da entidade detentora de Direito de Exploração de Satélite Estrangeiro podem ser prestadores de serviço de telecomunicações e, nesta condição, somente podem fazer uso da Capacidade Satelital que elas próprias representam se a contratação for formalizada por intermédio de outro representante legal.
+§ 3º O contrato de comercialização de capacidade espacial referente a direito de exploração de satélite estrangeiro deve ser firmado no Brasil entre o representante legal da exploradora e a prestadora de serviço de telecomunicações, partes contratuais distintas.
+§ 4º Para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro, a Agência aplicará adicionalmente as condições da autorização do país de origem, exceto em casos excepcionais, a critério da Agência.
+§ 5º Alterações nas condições da autorização do país de origem posteriores à conferência do Direito de Exploração de Satélite Estrangeiro ensejarão nova análise técnica e possíveis alterações nas condições estabelecidas no Brasil.
+O caput e os incisos I e III do art. 30 do RGSat foram devidamente atendidos, conforme já visto na Seção II - Requisitos Procedimentais da presente Análise.
+Já o inciso II do referido artigo trata do pagamento pela obtenção do direito de exploração de satélite, o que remete aos arts. 38 e 39 do RGSat, abaixo reproduzidos:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021
+"Art. 38. O valor a ser pago como preço público pelo Direito de Exploração de Satélite, Brasileiro ou Estrangeiro, bem como por sua prorrogação, será de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+Art. 39. O preço público devido pelo Direito de Exploração de Satélite ou por sua prorrogação poderá ser pago em parcela única, à vista, ou em parcelas anuais iguais."
+Dessa forma, o preço público a ser aqui cobrado será de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+III.2 - Das faixas utilizadas 
+Conforme consta do Requerimento de Direito de Exploração de Satélite (SEI nº 13908707) apresentado, a identificação dos transponders, as frequências de operação do satélite (de subida e de descida), os tipos de polarização utilizados (horizontal, vertical, circular à direta, circular à esquerda) e as respectivas larguras de faixa utilizadas no satélite IS-31 são os seguintes:
+Tabela II - Faixas Utilizadas
+ Frequências de Subida
+ | 
+ Frequências de Descida
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ 17K
+ | 
+ 14248
+ | 
+ 14272
+ | 
+ V
+ | 
+ 24
+ | 
+ 17K
+ | 
+ 11948
+ | 
+ 11972
+ | 
+ RH
+ | 
+ 24
+ | 
+ 18K
+ | 
+ 14263
+ | 
+ 14287
+ | 
+ H
+ | 
+ 24
+ | 
+ 18K
+ | 
+ 11963
+ | 
+ 11987
+ | 
+ LH
+ | 
+ 24
+ | 
+ 19K
+ | 
+ 14278
+ | 
+ 14302
+ | 
+ V
+ | 
+ 24
+ | 
+ 19K
+ | 
+ 11978
+ | 
+ 12002
+ | 
+ RH
+ | 
+ 24
+ | 
+ 20K
+ | 
+ 14293
+ | 
+ 14317
+ | 
+ H
+ | 
+ 24
+ | 
+ 20K
+ | 
+ 11993
+ | 
+ 12017
+ | 
+ LH
+ | 
+ 24
+ | 
+ 21K
+ | 
+ 14308
+ | 
+ 14332
+ | 
+ V
+ | 
+ 24
+ | 
+ 21K
+ | 
+ 12008
+ | 
+ 12032
+ | 
+ RH
+ | 
+ 24
+ | 
+ 22K
+ | 
+ 14323
+ | 
+ 14347
+ | 
+ H
+ | 
+ 24
+ | 
+ 22K
+ | 
+ 12023
+ | 
+ 12047
+ | 
+ LH
+ | 
+ 24
+ | 
+ 23K
+ | 
+ 14338
+ | 
+ 14362
+ | 
+ V
+ | 
+ 24
+ | 
+ 23K
+ | 
+ 12038
+ | 
+ 12062
+ | 
+ RH
+ | 
+ 24
+ | 
+ 24K
+ | 
+ 14353
+ | 
+ 14377
+ | 
+ H
+ | 
+ 24
+ | 
+ 24K
+ | 
+ 12053
+ | 
+ 12077
+ | 
+ LH
+ | 
+ 24
+ | 
+ 25K
+ | 
+ 14368
+ | 
+ 14392
+ | 
+ V
+ | 
+ 24
+ | 
+ 25K
+ | 
+ 12068
+ | 
+ 12092
+ | 
+ RH
+ | 
+ 24
+ | 
+ 26K
+ | 
+ 14383
+ | 
+ 14407
+ | 
+ H
+ | 
+ 24
+ | 
+ 26K
+ | 
+ 12083
+ | 
+ 12107
+ | 
+ LH
+ | 
+ 24
+ | 
+ 27K
+ | 
+ 14398
+ | 
+ 14422
+ | 
+ V
+ | 
+ 24
+ | 
+ 27K
+ | 
+ 12098
+ | 
+ 12122
+ | 
+ RH
+ | 
+ 24
+ | 
+ 28K
+ | 
+ 14413
+ | 
+ 14437
+ | 
+ H
+ | 
+ 24
+ | 
+ 28K
+ | 
+ 12113
+ | 
+ 12137
+ | 
+ LH
+ | 
+ 24
+ | 
+ 29K
+ | 
+ 14428
+ | 
+ 14452
+ | 
+ V
+ | 
+ 24
+ | 
+ 29K
+ | 
+ 12128
+ | 
+ 12152
+ | 
+ RH
+ | 
+ 24
+ | 
+ 30K
+ | 
+ 14443
+ | 
+ 14467
+ | 
+ H
+ | 
+ 24
+ | 
+ 30K
+ | 
+ 12143
+ | 
+ 12167
+ | 
+ LH
+ | 
+ 24
+ | 
+ 31K
+ | 
+ 14458
+ | 
+ 14482
+ | 
+ V
+ | 
+ 24
+ | 
+ 31K
+ | 
+ 12158
+ | 
+ 12182
+ | 
+ RH
+ | 
+ 24
+ | 
+ 32K
+ | 
+ 14473
+ | 
+ 14497
+ | 
+ H
+ | 
+ 24
+ | 
+ 32K
+ | 
+ 12173
+ | 
+ 12197
+ | 
+ LH
+ | 
+ 24
+ | 
+ 33K
+ | 
+ 13758
+ | 
+ 13794
+ | 
+ V
+ | 
+ 36
+ | 
+ 33K
+ | 
+ 10952
+ | 
+ 10988
+ | 
+ RH
+ | 
+ 36
+ | 
+ 34K
+ | 
+ 13758
+ | 
+ 13794
+ | 
+ H
+ | 
+ 36
+ | 
+ 34K
+ | 
+ 10952
+ | 
+ 10988
+ | 
+ LH
+ | 
+ 36
+ | 
+ 35K
+ | 
+ 13798
+ | 
+ 13834
+ | 
+ V
+ | 
+ 36
+ | 
+ 35K
+ | 
+ 10992
+ | 
+ 11028
+ | 
+ RH
+ | 
+ 36
+ | 
+ 36K
+ | 
+ 13798
+ | 
+ 13834
+ | 
+ H
+ | 
+ 36
+ | 
+ 36K
+ | 
+ 10992
+ | 
+ 11028
+ | 
+ LH
+ | 
+ 36
+ | 
+ 37K
+ | 
+ 13838
+ | 
+ 13874
+ | 
+ V
+ | 
+ 36
+ | 
+ 37K
+ | 
+ 11032
+ | 
+ 11068
+ | 
+ RH
+ | 
+ 36
+ | 
+ 38K
+ | 
+ 13838
+ | 
+ 13874
+ | 
+ H
+ | 
+ 36
+ | 
+ 38K
+ | 
+ 11032
+ | 
+ 11068
+ | 
+ LH
+ | 
+ 36
+ | 
+ 39K
+ | 
+ 13878
+ | 
+ 13914
+ | 
+ V
+ | 
+ 36
+ | 
+ 39K
+ | 
+ 11072
+ | 
+ 11108
+ | 
+ RH
+ | 
+ 36
+ | 
+ 40K
+ | 
+ 13878
+ | 
+ 13914
+ | 
+ H
+ | 
+ 36
+ | 
+ 40K
+ | 
+ 11072
+ | 
+ 11108
+ | 
+ LH
+ | 
+ 36
+ | 
+ 41K
+ | 
+ 13918
+ | 
+ 13954
+ | 
+ V
+ | 
+ 36
+ | 
+ 41K
+ | 
+ 11112
+ | 
+ 11148
+ | 
+ RH
+ | 
+ 36
+ | 
+ 42K
+ | 
+ 13918
+ | 
+ 13954
+ | 
+ H
+ | 
+ 36
+ | 
+ 42K
+ | 
+ 11112
+ | 
+ 11148
+ | 
+ LH
+ | 
+ 36
+ | 
+ 43K
+ | 
+ 13958
+ | 
+ 13994
+ | 
+ V
+ | 
+ 36
+ | 
+ 43K
+ | 
+ 11152
+ | 
+ 11188
+ | 
+ RH
+ | 
+ 36
+ | 
+ 44K
+ | 
+ 13958
+ | 
+ 13994
+ | 
+ H
+ | 
+ 36
+ | 
+ 44K
+ | 
+ 11152
+ | 
+ 11188
+ | 
+ LH
+ | 
+ 36
+ | 
+ 45K
+ | 
+ 14008
+ | 
+ 14044
+ | 
+ V
+ | 
+ 36
+ | 
+ 45K
+ | 
+ 11708
+ | 
+ 11744
+ | 
+ RH
+ | 
+ 36
+ | 
+ 46K
+ | 
+ 14012
+ | 
+ 14048
+ | 
+ H
+ | 
+ 36
+ | 
+ 46K
+ | 
+ 11712
+ | 
+ 11748
+ | 
+ LH
+ | 
+ 36
+ | 
+ 47K
+ | 
+ 14048
+ | 
+ 14084
+ | 
+ V
+ | 
+ 36
+ | 
+ 47K
+ | 
+ 11748
+ | 
+ 11784
+ | 
+ RH
+ | 
+ 36
+ | 
+ 48K
+ | 
+ 14052
+ | 
+ 14088
+ | 
+ H
+ | 
+ 36
+ | 
+ 48K
+ | 
+ 11752
+ | 
+ 11788
+ | 
+ LH
+ | 
+ 36
+ | 
+ 49K
+ | 
+ 14088
+ | 
+ 14124
+ | 
+ V
+ | 
+ 36
+ | 
+ 49K
+ | 
+ 11788
+ | 
+ 11824
+ | 
+ RH
+ | 
+ 36
+ | 
+ 50K
+ | 
+ 14092
+ | 
+ 14128
+ | 
+ H
+ | 
+ 36
+ | 
+ 50K
+ | 
+ 11792
+ | 
+ 11828
+ | 
+ LH
+ | 
+ 36
+ | 
+ 51K
+ | 
+ 14128
+ | 
+ 14164
+ | 
+ V
+ | 
+ 36
+ | 
+ 51K
+ | 
+ 11828
+ | 
+ 11864
+ | 
+ RH
+ | 
+ 36
+ | 
+ 52K
+ | 
+ 14132
+ | 
+ 14168
+ | 
+ H
+ | 
+ 36
+ | 
+ 52K
+ | 
+ 11832
+ | 
+ 11868
+ | 
+ LH
+ | 
+ 36
+ | 
+ 53K
+ | 
+ 14168
+ | 
+ 14204
+ | 
+ V
+ | 
+ 36
+ | 
+ 53K
+ | 
+ 11868
+ | 
+ 11904
+ | 
+ RH
+ | 
+ 36
+ | 
+ 54K
+ | 
+ 14172
+ | 
+ 14208
+ | 
+ H
+ | 
+ 36
+ | 
+ 54K
+ | 
+ 11872
+ | 
+ 11908
+ | 
+ LH
+ | 
+ 36
+ | 
+ 55K
+ | 
+ 14208
+ | 
+ 14244
+ | 
+ V
+ | 
+ 36
+ | 
+ 55K
+ | 
+ 11908
+ | 
+ 11944
+ | 
+ RH
+ | 
+ 36
+ | 
+ 56K
+ | 
+ 14212
+ | 
+ 14248
+ | 
+ H
+ | 
+ 36
+ | 
+ 56K
+ | 
+ 11912
+ | 
+ 11948
+ | 
+ LH
+ | 
+ 36
+ | 
+ TCN
+ | 
+ 14491
+ | 
+ 14499
+ | 
+ V
+ | 
+ 8
+ | 
+ TCN
+ | 
+ 11456
+ | 
+ 11464
+ | 
+ LH
+ | 
+ 8
+ | 
+Os detalhes relativos às radiofrequências utilizadas, atribuídas e destinadas ao Serviço Fixo por Satélite, foram devidamente apresentados. 
+III.3 - Das redes de satélites
+O §2º do art. 4º do RGSat determina que os sistemas de comunicação via satélite operando sobre território brasileiro devem estar associados a redes de satélites no âmbito da União Internacional de Telecomunicações (UIT):
+RGSat
+Art. 4º A Exploração de Satélite sobre o território brasileiro, quando houver comunicação com estação terrena no território brasileiro, depende de:
+(...)
+§ 2º Sistemas de comunicação via satélite operando sobre território brasileiro, ainda que dispensados de Direito de Exploração de Satélite ou de autorização para uso de radiofrequências associada à autorização para exploração do serviço de telecomunicações, devem estar associados a redes de satélites no âmbito da UIT."
+Observa-se que o corpo técnico avaliou minuciosamente as informações correspondentes às redes de satélites relacionadas ao IS-31 submetidas à UIT, reconfirmando ainda que as faixas utilizadas estão atribuídas e destinadas ao Serviço Fixo por Satélite, conforme exigência do RUE:
+Informe nº 996/2025/ORER/SOR (SEI nº 14382234)
+"3.11. Conforme prevê o Regulamento de Uso do Espectro, aprovado pela Resolução nº 671, de 3 de novembro de 2016, o uso das radiofrequências está condicionado à existência de prévia atribuição e destinação aos serviços a serem prestados na faixa de interesse.
+3.12. Adicionalmente, conforme prevê o art. 4º do RGSat, os sistemas de comunicação via satélites devem estar associados a redes de satélites submetidas à UIT.
+3.13. Portanto, verificou-se se as faixas objeto do pleito estão atribuídas e destinadas a serviços compatíveis com as aplicações pretendidas e se a interessada apresentou informações sobre redes de satélites compatíveis com as características técnicas do satélite objeto do pleito, conforme se descreve na Lista de Verificação II.
+Lista de Verificação II – Avaliação sobre Faixas de Radiofrequências e Rede de Satélites
+ Faixas de Frequências atribuídas e destinadas aos serviços de interesse?
+ | 
+ Sim
+ | 
+ | 
+ Nome da Rede de Satélites
+ | 
+ BLUE1
+ | 
+ USASAT-23F
+ | 
+ USASAT-24L
+ | 
+ USASAT-35L
+ | 
+ USASAT-60F
+ | 
+ USASAT-60U
+ | 
+ Faixas de Frequências da Rede de Satélites
+ | 
+ 10.950 a 11.200 MHz ↓
+ | 
+ 11.450 a 11.452,5 MHz ↓
+ 11.457,5 a 11.462,5 MHz ↓
+ 11.469 a 11.493 MHz ↓
+ 11.498 a 11.522 MHz ↓
+ 11.527 a 11.551 MHz ↓
+ 11.556 a 11.580 MHz ↓
+ 11.586 a 11.610 MHz ↓
+ 11.615 a 11.639 MHz ↓
+ 11.644 a 11.668 MHz ↓
+ 11.673 a 11.697 MHz ↓
+ 13.750,5 a 13.753,5 MHz ↑
+ 13.758 a 13.782 MHz ↑
+ 13.788 a 13.812 MHz ↑
+ 13.817 a 13.841 MHz ↑
+ 13.846 a 13.870 MHz ↑
+ 13.875 a 13.899 MHz ↑
+ 13.904 a 13.928 MHz ↑
+ 13.933 a 13.957 MHz ↑
+ 13.963 a 13.987 MHz ↑
+ 13.996,5 a 13.999,5 MHz ↑
+ | 
+ 3.702 a 4.200 MHz ↓
+ 11.700,9 a 11.701,1 MHz ↓
+ 11.706,5 a 12.197 MHz ↓
+ 5.926,75 a 6.423,25 MHz ↑
+ 14.006,5 a 14.497 MHz ↑
+ | 
+ 3.702 a 4.198 MHz ↓
+ 11.453 a 11.463 MHz ↓
+ 11.468,88 a 11.492,88 MHz ↓
+ 11.498,04 a 11.522,04 MHz ↓
+ 11.527,2 a 11.551,2 MHz ↓
+ 11.556,36 a 11.580,36 MHz ↓
+ 11.585,52 a 11.609,52 MHz ↓
+ 11.614,68 a 11.638,68 MHz ↓
+ 11.643,84 a 11.667,84 MHz ↓
+ 11.673 a 11.697 MHz ↓
+ 11.701,5 a 11.704,5 MHz ↓
+ 11.706,5 a 12.197 MHz ↓
+ 12.198,5 a 12.199,5 MHz ↓
+ 5.927 a 6.423 MHz ↑
+ 6.428 a 6.666,5 MHz ↑
+ 13.752,25 a 13.753,75 MHz ↑
+ 13.758,38 a 13.782,38 MHz ↑
+ 13.787,54 a 13.811,54 MHz ↑
+ 13.816,7 a 13.840,7 MHz ↑
+ 13.845,86 a 13.869,86 MHz ↑
+ 13.875,02 a 13.899,02 MHz ↑
+ 13.904,18 a 13.928,18 MHz ↑
+ 13.933,34 a 13.957,34 MHz ↑
+ 13.962,5 a 13.986,5 MHz ↑
+ 14.000,25 a 14.001,75 MHz ↑
+ 14.006,5 a 14.498 MHz ↑
+ | 
+ 3.700 a 4.200 MHz ↓
+ 11.450 a 12.200 MHz ↓
+ 5.925 a 6.675 MHz ↑
+ 13.750 a 14.500 MHz ↑
+ | 
+ 3.400 a 4.200 MHz ↓
+ 10.950 a 11.200 MHz ↓
+ 11.450 a 12.200 MHz ↓
+ 5.925 a 6.725 MHz ↑
+ 13.750 a 14.500 MHz ↑
+ | 
+ Status na UIT
+ | 
+ Notificada
+ | 
+ Notificada
+ | 
+ Notificada
+ | 
+ Notificada
+ | 
+ Notificada
+ | 
+ Notificada
+ | 
+ Há parecer desfavorável ?
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ Administração Notificante
+ | 
+ PNG e EUA
+ | 
+ Faixas de Frequências da Rede Compatíveis com o pleito?
+ | 
+ Sim
+ | 
+3.14. Assim, conforme verificado, as faixas de frequências objeto do pleito encontram-se devidamente atribuídas e destinadas a serviços compatíveis com aplicações por satélite." (Grifos no original)
+Conclui-se que a atribuição e a destinação das faixas utilizadas são compatíveis com a prestação do Serviço Fixo por Satélite, que tais faixas estão contidas nas redes de satélites indicadas e que, não há parecer desfavorável sobre nenhuma dessas redes no âmbito da UIT.
+III.4 - Dos critérios técnicos e operacionais
+Os arts. 10 e 15 do RGSat exigem a coordenação prévia com sistemas de comunicação via satélite que tenham prioridade de coordenação no âmbito nacional, observados critérios definidos em Ato específico:
+RGSat
+"Art. 10. A exploração de satélites sobre o território brasileiro requer coordenação prévia com sistemas de comunicação via satélite que tenham prioridade de coordenação no âmbito nacional para os quais haja sobreposição de frequências, observados os critérios técnicos e operacionais definidos em Ato da Superintendência responsável pela administração do uso do espectro de radiofrequências.
+(...)
+Art. 15. Os parâmetros, critérios e requisitos técnicos e operacionais para uso de sistemas de comunicação via satélite serão estabelecidos por meio de Ato da Superintendência responsável pela administração do uso do espectro de radiofrequências, que será submetido ao procedimento de Consulta Pública antes de sua expedição."
+Observa-se que os parâmetros, critérios e requisitos técnicos e operacionais exigidos pelos arts. 10 e 15 do RGSat estão detalhados no Ato nº 9.523, de 27 de outubro de 2021, da SOR. O corpo técnico avaliou o atendimento a tais requisitos, destacando apenas os requisitos de coordenação para Sistemas de Satélites Geoestacionários especificados no item 5.1 do referido Ato:
+Informe nº 996/2025/ORER/SOR (SEI nº 14382234)
+"3.20. Os requisitos técnicos e operacionais para sistemas de comunicação via satélite, brasileiros e estrangeiros, comunicando-se com estações no território brasileiro nas faixas de frequências associadas aos serviços de radiocomunicação por satélite foram estabelecidos pelo Ato nº 9.523, de 27 de outubro de 2021 (...) 
+(...)
+3.21. Assim, à luz das referidas hipóteses regulatórias relativas à coordenação, esta Gerência identificou a aplicabilidade do enquadramento assinalado na Lista de Verificação III, disposta abaixo.
+Lista de Verificação III – Avaliação sobre as hipóteses de coordenação
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 10 do RGSat
+ | 
+ Aplicável
+ | 
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 18 do RGSat
+ | 
+ Aplicável
+ | 
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 20 do RGSat
+ | 
+ Não se aplica
+ | 
+ Pedido de Prorrogação de Direito – Sem necessidade de apresentação de novos acordos
+ | 
+ Não se aplica
+ | 
+3.22. A respeito do Art. 10 do RGSat, menciona-se que com relação às prioridades em âmbito nacional, não há redes de satélites brasileiras notificadas sob a responsabilidade da Anatel para as faixas de frequências solicitadas dentro do arco de coordenação estabelecido no Ato de Requisitos Técnicos e Operacionais.
+3.23. No que se refere às solicitações em análise pela Agência e aos Direitos de Exploração de Satélite já conferidos, observa-se que a empresa GLA Brasil Ltda., na qualidade de representante legal da Intelsat License LLC., também submeteu pedido de novo Direito de Exploração do Satélite IS-30 (Processo SEI nº 53500.047764/2025-51), o qual ocupa a mesma posição orbital do satélite IS-31. Destaca-se, ainda, que o satélite IS-30 já se encontra associado a Direito de Exploração vigente até outubro de 2026.
+3.24. Conforme informado pela interessada, os satélites IS-30 e IS-31 poderão operar de forma redundante, atuando como backup um do outro.
+3.25. Dessa forma, considerando que o satélite potencialmente interferido também é operado pela Intelsat License LLC., não se verificou a necessidade de apresentação de acordo de coordenação.
+3.26. Adicionalmente, cumpre observar que há sistemas de satélites não geoestacionários autorizados a operar nas faixas de frequências da banda Ku. Nesse contexto, destaca-se que as faixas objeto da solicitação de Direito de Exploração de Satélite estão sujeitas ao disposto no nº 22.2 do Regulamento de Radiocomunicações (RR) e no § 8º do art. 10 do Regulamento Geral de Exploração de Satélites (RGSat). Adicionalmente, menciona-se que as faixas não estão sujeitas à disposição 9.13 do RR. Portanto, não há necessidade de que os operadores de satélites geoestacionários que utilizam a faixa firmem acordos de coordenação em relação a satélites não geoestacionários."
+Dessa forma, observados os critérios técnicos e operacionais no presente caso, conclui-se que está dispensada a apresentação de acordos de coordenação com outros sistemas de comunicação via satélite, uma vez que, com a exceção do satélite IS-30 da mesma exploradora, não se identificaram sistemas geoestacionários com prioridade de coordenação em âmbito nacional nas faixas de frequências e no arco orbital em questão.
+III.5 - Das recomendações adicionais
+São pertinentes as recomendações do corpo técnico relativas à inclusão no Ato de outorga de exigências particulares ao presente caso, tais como a instalação de filtros de recepção, menção à Recomendação 51 (XXVII-16) da CITEL e uso das faixas por outros sistemas de telecomunicações:
+Informe nº 892/2025/ORER/SOR (SEI nº 14226488)
+"3.26. Adicionalmente, ressalte-se a importância de constar do Ato que conferirá o presente Direito de Exploração de Satélite que o referido satélite e suas estações terrenas associadas deverão operar em conformidade com o Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748 de 22 de outubro de 2021 e com o Ato de Requisitos Técnicos para sistemas de comunicação via satélite operando sobre o território brasileiro, aprovado pelo Ato nº 9.523, de 27 de outubro de 2021, ou outro instrumento que vier a substituir, bem como deverão possuir filtros de recepção apropriados, a fim de se protegerem contra interferências prejudiciais provenientes de emissões em faixas próximas dos enlaces de descida, que estejam operando conforme regulamentação.
+3.27. Considerando a faixas compartilhadas com serviço fixo, e caso venham a ser utilizadas futuramente para DTH, propõe-se ainda que seja incluída nos Considerandos do Ato que prorrogará o Direito de Exploração a menção à Recomendação 51 (XXVII-16) da CITEL, que trata do uso dessa faixa de frequências para aplicações de DTH.
+3.28. Por fim, recomenda-se constar nos Considerandos do Ato que as faixas pleiteadas e as faixas adjacentes a estas podem estar sendo utilizadas ou virem a ser utilizadas por outros sistemas de telecomunicações regularmente autorizados.
+IV - Dos objetivos regulatórios
+IV.1 - Do Plano Estratégico da Agência
+O Plano Estratégico da Anatel 2023-2027 orienta as ações da Agência para promover a conectividade, a qualidade dos serviços de comunicação e o desenvolvimento do setor de telecomunicações no Brasil. 
+Seus principais objetivos estão contidos no Mapa Estratégico representado na Figura 1 abaixo:
+Figura 1: Objetivos Estratégicos 2023-2027. 
+Ressalto que o objeto presente processo está em sintonia com a integralidade dos objetivos de resultado da Agência, bem como com seus principais objetivos estratégicos de processo.
+Destaca-se aqui, em particular, os objetivos de Infraestrutura e Qualidade "1A - Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos" e "1-B - Viabilizar a expansão e a implantação da infraestrutura de rede base", na medida em que os satélites são uma tecnologia de conectividade hoje disponível e que permite o acesso universal em qualquer lugar do país.
+Pode-se também enfatizar o impacto positivo da presente outorga de Direito de Exploração de satélite para o objetivo de Dinamismo do Mercado "2D - Promover o uso eficiente dos recursos escassos e a atratividade e sustentabilidade do setor pela modernidade da regulação".
+III.2 - Da Agenda 2030 da ONU
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura 2 abaixo ilustra esses objetivos:
+Figura 2: Objetivos do Desenvolvimento Sustentável (ODS) Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como bem salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-ANATEL (SEI nº 11203364).
+Os satélites são uma tecnologia que permite levar o acesso a serviços de telecomunicações a qualquer parte do país, em particular naquelas que ainda têm cobertura terrestre limitada.
+A proposta de encaminhamento contida na presente Análise está em boa sintonia com os objetivos da Agenda 2030, em particular com os ODS nº 1, 2, 4, 8, 9 e 16, conforme explicado a seguir.
+O ODS nº 1, que se refere à Erradicação da Pobreza é atendido, pois a conectividade permite que homens e mulheres, particularmente os mais pobres e vulneráveis, tenham direitos igualitários aos recursos econômicos com o acesso a diversos serviços disponíveis no mundo digital.
+Também o ODS nº 2, referente à Fome Zero e Agricultura Sustentável, é atingido pela ampliação dos direitos de exploração satelital em pauta, pois possibilita incrementar a eficiência na agricultura, contribuindo para o aumento sustentável na produtividade agrícola.
+A infraestrutura satelital tem papel fundamental na promoção da educação por meios digitais, facilitando a disseminação de informações e conhecimentos, o que contribui para a concretização do ODS nº 4, que busca alcançar uma Educação de Qualidade.
+O ODS nº 8, que trata de Trabalho Decente e Crescimento Econômico é igualmente servido, pois a ampliação da infraestrutura satelital, aqui tratada, traz crescimento econômico e cria melhores oportunidades de trabalho, especialmente em áreas isoladas e em desenvolvimento. 
+A ampliação da conectividade também contribui ao ODS nº 9, Indústria, Inovação e Infraestrutura, uma vez que os satélites são elementos de suporte à industrialização, fomentando o desenvolvimento e a inovação.
+A exploração de satélites contribui ademais para a concretização do ODS nº 11 – Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis, promovendo diversidade e flexibilidade na conexão as pessoas, levando a ambientes urbanos e rurais mais seguros e sustentáveis.
+Finalmente, o ODS nº 16, Paz, Justiça e Instituições Eficazes é atendido pois a conectividade universal e significativa conduz a sociedades mais inclusivas, proporcionando serviços públicos e acesso à justiça para todos, permitindo construir instituições responsáveis em todos os níveis. 
+Reforça-se assim o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+III.2 - Das melhores práticas
+Nesse contexto, vale destacar o compromisso da Anatel com a adoção de boas práticas regulatórias preconizadas pelo "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG", editado no Decreto Presidencial nº 11.738, de 19 de outubro de 2023.
+Cumpre destacar ainda o interesse da Agência pelo "Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG", desenvolvido pela Controladoria Geral da União (CGU), com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), que busca disseminar uma cultura de mensuração da qualidade regulatória no Brasil.
+CONCLUSÃO
+Voto por:
+deferir o pedido da empresa GLA Brasil Ltda., representante legal da Intelsat License LLC., no sentido de outorgar o Direito de Exploração no Brasil do satélite geoestacionário estrangeiro IS-31 até 26 de julho de 2031, nos termos da Minuta de Ato SEI nº 14654375.
+condicionar a expedição do referido Ato à comprovação do pagamento pela GLA Brasil Ltda. do preço público, estipulado em R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 13/02/2026, às 11:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14904908 e o código CRC 7D0E030E.
+ | 
+Referência: Processo nº 53500.047817/2025-33 | 
+SEI nº 14904908 |

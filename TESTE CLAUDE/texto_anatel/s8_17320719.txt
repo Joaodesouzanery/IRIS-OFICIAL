@@ -1,0 +1,53 @@
+SEI/ANATEL - 15486023 - Acórdão
+Boletim de Serviço Eletrônico em 15/04/2026
+DOU de 15/04/2026, seção 1, página 22
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 94, de 14 de abril de 2026
+Processo nº 53500.027474/2026-71
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 93, de 14 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. LICITAÇÃO. IMPUGNAÇÃO A ESCLARECIMENTO DE EDITAL. NÃO CONHECIMENTO E INDEFERIMENTO DO PEDIDO.
+I. CASO EM EXAME
+1. A petição. Petição apresentada por TELEFÔNICA BRASIL S.A. contra o Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, com pedido de recebimento como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da Constituição Federal - CF/1988.
+2. Fato relevante. A Peticionária requereu que fosse afastada a parte final do Esclarecimento nº 019, para fixar o entendimento de que a obrigação editalícia seria cumprida com a instalação de uma única Estação Rádio-Base - ERB por trecho de rodovia.
+3. As manifestações anteriores. A Área Técnica sugeriu o não provimento da impugnação e seu recebimento como exercício do direito de petição. A Procuradoria Federal Especializada junto à Anatel - PFE-Anatel opinou no mesmo sentido.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a impugnação ao Esclarecimento nº 019 é admissível, diante da intempestividade e do não cabimento da via eleita; e saber se (ii) o Esclarecimento nº 019 deve ser alterado para considerar suficiente a instalação de uma única ERB por trecho de rodovia.
+III. RAZÕES DE DECIDIR
+1. O item 3.1 do Edital admite impugnação ao Edital e seus anexos no prazo de 10 (dez) dias contados da divulgação. O Aviso de Licitação foi publicado em 13 de fevereiro de 2026. A impugnação foi protocolada em 6 de abril de 2026. O prazo para impugnação expirou em 27 de fevereiro de 2026. O requisito da tempestividade não foi atendido.
+2. A legitimidade da Peticionária foi reconhecida com base nos documentos societários analisados pela Área Técnica.
+3. A impugnação não é cabível contra esclarecimento que não altera o texto do Edital.
+4. O art. 16, § 2º, do Regulamento aprovado pela Resolução nº 65/1998 estabelece que os esclarecimentos servem apenas para afastar obscuridades do instrumento convocatório.
+5. Os esclarecimentos não podem alterar disposições editalícias nem incluir normas novas que modifiquem as condições inicialmente previstas.
+6. O item 3.6 do Edital aplica-se apenas às hipóteses de alteração substancial ou relevante do Edital.
+7. O Esclarecimento nº 019 não configurou alteração do Edital.
+8. A impugnação não deve ser conhecida por ser incabível.
+9. A Petição pode ser recebida como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da CF/1988.
+10. O item 3.5.1 do Anexo IV-A do Edital prevê o atendimento do compromisso mediante a implantação de pelo menos 1 ERB no trecho de rodovia.
+11. A expressão “pelo menos” indica exigência mínima.
+12. A redação não limita o cumprimento da obrigação à instalação de apenas uma ERB por trecho.
+13. A vencedora deve cobrir os quilômetros de rodovia que constam sem cobertura.
+14. A metodologia de precificação considerou os quilômetros desatendidos e raios médios de cobertura com base em parâmetros técnicos.
+15. Essa metodologia foi aplicada de forma uniforme a todos os lotes.
+16. Não há desequilíbrio entre as obrigações das proponentes.
+17. O pedido de alteração do entendimento externado no Esclarecimento nº 019 deve ser indeferido.
+IV. DISPOSITIVO E TESE
+Impugnação não conhecida. Petição recebida como exercício do direito de petição. Pedidos indeferidos.
+Tese de julgamento: "1. É incabível impugnação contra esclarecimento que não altera o texto do Edital, nos termos do art. 16, § 2º, do Regulamento aprovado pela Resolução nº 65/1998. 2. A petição intempestiva e incabível pode ser recebida como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da CF/1988. 3. A previsão editalícia de implantação de pelo menos 1 ERB por trecho estabelece exigência mínima e não limita o cumprimento da obrigação à instalação de uma única ERB. 4. A obrigação da vencedora consiste em cobrir os quilômetros de rodovia que constam sem cobertura."
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXIV, “a”; Lei nº 9.784/1999, art. 42; Resolução nº 65/1998, art. 16, § 2º, e art. 17, § 1º.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 34/2026/EH (SEI nº 15472653), integrante deste acórdão:
+a) não conhecer da Impugnação ao Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHz, apresentado por TELEFÔNICA BRASIL S.A., CNPJ nº 02.558.157/0001-62, por ser incabível; e,
+b) que a Impugnação apresentada seja recebida como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal e que os pedidos nela contidos sejam indeferidos.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 14/04/2026, às 15:08, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15486023 e o código CRC C2EFB97E.
+ | 
+Referência: Processo nº 53500.027474/2026-71 | 
+SEI nº 15486023 |

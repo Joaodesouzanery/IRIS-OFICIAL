@@ -1,0 +1,46 @@
+SEI/ANATEL - 15425298 - Acórdão
+Boletim de Serviço Eletrônico em 02/04/2026
+DOU de 02/04/2026, seção 1, página 20
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 88, de 01 de abril de 2026
+Processo nº 53500.004551/2026-15
+Recorrente/Interessado: UTC AMÉRICA LATINA - UTCAL, COPEL DISTRIBUIÇÃO S.A - 04.368.898/0001-06
+CNPJ nº 18.921.977/0001-07 e nº 04.368.898/0001-06
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 81, de 31 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCEDIMENTO DE ANULAÇÃO DE ATO NORMATIVO. PLANEJAMENTO DE LICITAÇÕES DE RADIOFREQUÊNCIAS PARA O SERVIÇO MÓVEL PESSOAL - SMP. PEDIDOS DE ANULAÇÃO INDEFERIDOS. EXCLUSÃO DA FAIXA DE 450 MHZ DO PLANEJAMENTO E DA AGENDA REGULATÓRIA.
+I. CASO EM EXAME
+1. UTC AMÉRICA LATINA - UTCAL E COPEL DISTRIBUIÇÃO S.A. - COPEL DIS requereram a anulação parcial da Resolução Anatel nº 785/2025, para excluir a faixa de 450 MHz do planejamento de licitações de radiofrequências associadas ao Serviço Móvel Pessoal - SMP.
+2. As Requerentes alegaram vício de forma no processo normativo, insuficiência de motivação e incompatibilidade com o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF, aprovado pela Resolução Anatel nº 772/2025.
+3. A Superintendência de Planejamento e Regulamentação - SPR concluiu estudo sobre o ecossistema de equipamentos na faixa de 450 MHz, com indicação de baixa disponibilidade de terminais móveis celulares para viabilizar o SMP em larga escala.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se houve vício formal no rito regulamentar, quanto à análise de impacto regulatório e à consulta pública; (ii) saber se houve insuficiência de motivação para a inclusão da faixa de 450 MHz no planejamento de licitações; e (iii) saber se há incompatibilidade entre o PDFF e a previsão de licitação da faixa de 450 MHz para o SMP.
+III. RAZÕES DE DECIDIR
+1. O Procedimento de Anulação de Ato Normativo observou o rito do art. 78 do Regimento Interno da Anatel - RIA, com requerimento dirigido ao Presidente, manifestação da Procuradoria e distribuição ao Conselho Diretor.
+2. A Anatel analisou a faixa de 450 MHz desde a Tomada de Subsídios nº 2/2024 e a incluiu no Relatório de Análise de Impacto Regulatório - AIR, com item específico sobre autorizações vigentes e elementos técnicos.
+3. O Regimento Interno da Anatel admite a modificação do texto submetido à Consulta Pública, quando houver pertinência temática e motivação, após exame das contribuições recebidas pelo Conselho Diretor.
+4. A inclusão da faixa de 450 MHz no planejamento de licitações foi motivada na Análise nº 28/2025/EH por elementos técnicos e político-regulatórios, com referência à ampliação de cobertura em áreas de baixa densidade populacional e à avaliação da maturidade do ecossistema de equipamentos.
+5. O PDFF prevê autorização “preferencial” para redes privativas na faixa de 450 MHz, sem estabelecer exclusividade, e não impede a avaliação de outros usos pela Agência, no exercício de sua competência.
+6. A deliberação do Conselho Diretor condicionou eventual licitação da faixa de 450 MHz à apresentação de estudo sobre o ecossistema de dispositivos pela SPR.
+7. O estudo da SPR indicou ecossistema voltado principalmente a redes privativas e aplicações de NB-IoT (NarrowBand-Internet of Things), com ausência de terminais móveis celulares certificados no Brasil e baixa oferta internacional de aparelhos celulares na Banda 31.
+8. A insuficiência de terminais móveis celulares compatíveis com a faixa de 450 MHz impede, no momento, a prestação do SMP em larga escala e justifica a exclusão da faixa do planejamento de licitações até 2026, bem como da Agenda Regulatória.
+9. Os pedidos alternativos e subsidiários de reconsideração, revisão e suspensão ficaram prejudicados, em razão da proposta de exclusão da faixa de 450 MHz do planejamento de licitações.
+IV. DISPOSITIVO E TESE
+Pedidos de Anulação indeferidos. Determinação de arquivamento dos autos. Alteração da Agenda Regulatória 2025-2026 para excluir o item 35. Alteração do planejamento de licitações aprovado pela Resolução Anatel nº 785/2025 para excluir a faixa de 450 MHz até 2026.
+Tese de julgamento: "1. O procedimento de edição da Resolução Anatel nº 785/2025 observou o rito previsto no Regimento Interno da Anatel, com análise de impacto regulatório e consulta pública. 2. A inclusão da faixa de 450 MHz no planejamento foi motivada por elementos técnicos e político-regulatórios constantes dos autos. 3. O PDFF estabelece preferência, sem exclusividade, para redes privativas na faixa de 450 MHz, o que não impede avaliação de planejamento para o SMP. 4. O estudo da SPR aponta ausência de ecossistema de terminais móveis celulares apto a viabilizar o SMP em larga escala na faixa de 450 MHz. 5. Exclui-se a faixa de 450 MHz do planejamento de licitações do SMP até 2026, com ajustes correlatos na Agenda Regulatória 2025-2026."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 19; Lei nº 9.784/1999, arts. 2º, 50, 53, 56 e 58; Regimento Interno da Anatel - Resolução nº 612/2013, arts. 47, 64, 65, 78 e 126.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 29/2026/OP (SEI nº 15398791), integrante deste acórdão,
+a) indeferir os Pedidos de Anulação SEI nº 14969695 e SEI nº 15040982, apresentados, respectivamente, por ASSOCIAÇÃO UTILITIES TELECOM COUNCIL AMÉRICA LATINA - UTCAL e COPEL DISTRIBUIÇÃO S.A. - COPEL DIS, em face da Resolução Anatel nº 785, de 10 de dezembro de 2025;
+b) determinar o arquivamento dos presentes autos, nos termos art. 78, inciso II, alínea "a)" do Regimento Interno da Anatel;
+c) alterar a Agenda Regulatória da Anatel para o biênio 2025-2026, no sentido de excluir, de ofício, o item 35, referente à elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz, nos termos da Minuta de Resolução Interna SEI nº 15401479; e, 
+d) alterar o planejamento da Anatel de realização de licitações para autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP, aprovado pela Resolução nº 785, de 10 de dezembro de 2025, no sentido de excluir, de ofício, a previsão de realização de licitação da faixa de 450 MHz no período até 2026, nos termos da Minuta de Resolução SEI nº 15401274.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 01/04/2026, às 11:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15425298 e o código CRC 1C9122DF.
+ | 
+Referência: Processo nº 53500.004551/2026-15 | 
+SEI nº 15425298 |

@@ -1,0 +1,41 @@
+SEI/ANATEL - 16364630 - Acórdão
+Boletim de Serviço Eletrônico em 01/10/2026
+DOU de 01/10/2026, seção 1, página 12
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 262, de 29 de setembro de 2026
+Processo nº 01217.006271/2026-43
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 242, de 29 de setembro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. ACESSO À INFORMAÇÃO. DOCUMENTOS TÉCNICOS COM RESTRIÇÃO DE ACESSO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo de Segunda Instância contra decisão que manteve a indicação de documentos públicos disponíveis na Consulta Pública do Sistema Eletrônico de Informações - SEI .
+2. O Pedido. CIDADÃO requer acesso integral a relatórios, estudos, bases de resultados, registros de testes, simulações e outros documentos técnicos sobre a convivência entre sistemas IMT e equipamentos Wi-Fi na faixa de 6 GHz.
+3. O fundamento recursal. O Recorrente alega que o Informe nº 71/2025/ORCN/SOR não contém dados primários e parâmetros técnicos suficientes para a reprodução independente dos ensaios.
+4. As informações prestadas. A área técnica informou que os documentos públicos relativos às avaliações técnicas foram disponibilizados. Informou que dois relatórios técnicos elaborados pelo Instituto Eldorado em parceria com a Associação Brasileira da Indústria Elétrica e Eletrônica - ABINEE permanecem com restrição de acesso.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se deve ser concedido acesso integral aos relatórios técnicos primários e aos dados detalhados dos ensaios sobre a convivência entre sistemas IMT e equipamentos Wi-Fi na faixa de 6 GHz.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo. O Recorrente possui legitimidade e interesse em recorrer.
+2. A Agência disponibilizou o Informe nº 71/2025/ORCN/SOR, os relatórios do Processo nº 53500.081323/2023-16 e os estudos adicionais do Processo nº 53500.024724/2025-31.
+3. Os documentos técnicos que instruíram a análise da área técnica integraram os autos do processo regulatório. Os fundamentos técnicos divulgáveis permanecem acessíveis ao público.
+4. Os relatórios técnicos com restrição de acesso contêm registros de medições, identificação de equipamentos e instrumentos, números de série, parâmetros operacionais e configurações de ensaio.
+5. Parte dos equipamentos utilizados nos ensaios consistia em protótipos não disponíveis comercialmente. Suas especificações estão sujeitas à proteção por segredo industrial.
+6. A Lei de Acesso à Informação - LAI não exclui as hipóteses legais de proteção ao segredo industrial e comercial.
+7. A Lei nº 9.472/1997 ressalva da consulta pública os documentos cuja divulgação possa violar segredo protegido. A norma também impõe tratamento confidencial às informações técnicas solicitadas às empresas.
+8. A restrição não decorre de alegação genérica de confidencialidade. A medida preserva informações técnicas protegidas sem impedir o acesso aos fundamentos divulgáveis da decisão regulatória.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo de Segunda Instância conhecido e desprovido.
+Tese de julgamento: "1. A Agência deve disponibilizar os fundamentos técnicos divulgáveis que embasaram a decisão regulatória. 2. O acesso integral a relatórios técnicos primários pode ser restringido quando seus dados contiverem especificações de protótipos, parâmetros operacionais, configurações de ensaio ou outras informações sujeitas à proteção por segredo industrial. 3. A manutenção da restrição de acesso não compromete a publicidade, a motivação ou o controle da decisão quando os fundamentos técnicos divulgáveis permanecem acessíveis."
+Dispositivos relevantes citados: Lei nº 12.527/2011, arts. 3º, I, 7º, caput e III, 11, § 6º, 15, caput e parágrafo único, e 22; Lei nº 9.472/1997, art. 39, caput e parágrafo único; Lei nº 9.784/1999, art. 2º, caput e parágrafo único, V e VII, e art. 50, caput, V, e § 1º; e Decreto nº 7.724/2012, art. 21.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 96/2026/OP (SEI nº 16353551), integrante deste acórdão, conhecer do Recurso Administrativo de Segunda Instância para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 29/09/2026, às 20:14, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16364630 e o código CRC 18BE4E26.
+ | 
+Referência: Processo nº 01217.006271/2026-43 | 
+SEI nº 16364630 |

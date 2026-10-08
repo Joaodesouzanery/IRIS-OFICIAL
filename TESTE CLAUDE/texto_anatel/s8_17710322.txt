@@ -1,0 +1,47 @@
+SEI/ANATEL - 15837853 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 56
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 158, de 19 de junho de 2026
+Processo nº 53500.206843/2015-38
+Recorrente/Interessado: AGERA TELECOMUNICAÇÕES S.A.
+CNPJ nº 01.009.876/0001-61
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - FAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DE TELECOMUNICAÇÕES - CIDE-FUST. BASE DE CÁLCULO. IMPOSTO SOBRE OPERAÇÕES RELATIVAS À CIRCULAÇÃO DE MERCADORIAS E PRESTAÇÃO DE SERVIÇOS DE TRANSPORTE INTERESTADUAL E INTERMUNICIPAL E DE COMUNICAÇÃO - ICMS. RESTITUIÇÃO OU COMPENSAÇÃO EM PROCEDIMENTO PRÓPRIO. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto contra decisão que reconheceu a procedência parcial do lançamento de créditos tributários da CIDE-Fust relativos aos exercícios de 2013 e 2014. A decisão manteve os valores lançados para 2013, revisou para baixo parte dos valores de 2014 e manteve a multa de ofício.
+2. Fatos relevantes. A Recorrente alegou cerceamento de defesa por suposta perícia contábil sem prévia cientificação, ausência de enfrentamento das teses da impugnação, desconsideração de pagamentos a maior em 2014 e erro na exclusão do ICMS recolhido em outros estados.
+3. As decisões anteriores. Novos relatórios de fiscalização reexaminaram os dados contábeis e fiscais apresentados na impugnação. A área técnica manteve os valores originais de 2013 e de parte de 2014 quando a reanálise indicou montante superior, em razão da decadência, e reduziu outros valores de 2014.
+II. QUESTÃO EM DISCUSSÃO
+1. Há quatro questões em discussão: (i) saber se as diligências fiscais que resultaram nos Relatórios de Fiscalização nº 34/2023/GR05FI1/GR05/SFI e nº 37/2023/GR05FI1/GR05/SFI configuraram perícia contábil e violaram o contraditório; (ii) saber se a decisão recorrida deixou de enfrentar as teses da impugnação; (iii) saber se os valores pagos a maior em alguns meses de 2014 podem ser abatidos ou compensados neste Processo Administrativo Fiscal; e (iv) saber se a fiscalização deixou de excluir da base de cálculo da CIDE-Fust os valores de ICMS recolhidos nas 27 (vinte e sete) filiais da Prestadora.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo e preenche os requisitos de admissibilidade previstos no Regimento Interno da Anatel - RIA.
+2. Não se impõe oitiva da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, pois não se configuram as hipóteses do art. 5º da Portaria Anatel nº 642/2013.
+3. As diligências realizadas pela fiscalização foram atos instrutórios administrativos. A Anatel não nomeou perito nem produziu laudo pericial. Não houve perícia contábil.
+4. Os relatórios de fiscalização e o Informe nº 291/2025/COUN/SCO expuseram a metodologia de cálculo e enfrentaram as alegações da Recorrente. Não há vício de motivação.
+5. A fiscalização reavaliou os documentos contábeis e fiscais da própria Empresa. Considerou os valores de ICMS declarados na Escrituração Fiscal Digital das Contribuições - SPED EFD Contribuições, Registro D600, referentes às 27 (vinte e sete) filiais, bem como as deduções legais do Programa de Integração Social - PIS e da Contribuição para o Financiamento da Seguridade Social - COFINS.
+6. Compete ao contribuinte comprovar os fatos que alega e demonstrar a segregação das receitas e das deduções pretendidas. A Recorrente não apresentou elemento novo apto a afastar os valores mantidos na decisão recorrida.
+7. Nos meses em que os novos relatórios apuraram valores superiores aos originalmente lançados, a majoração do crédito tributário não foi possível em razão da decadência prevista nos arts. 149, parágrafo único, e 150, § 4º, do Código Tributário Nacional - CTN.
+8. Os pagamentos a maior apurados nos meses de fevereiro, março, maio, junho e dezembro de 2014 geram direito à restituição ou compensação em procedimento próprio. Não cabe glosa ou compensação no processo administrativo fiscal enquanto o crédito tributário ainda não estiver definitivamente constituído.
+9. A base de cálculo do ICMS-Comunicação não se identifica automaticamente com a base de cálculo da CIDE-Fust. A contribuição incide sobre receita de serviços de telecomunicações.
+10. A alteração da base de cálculo da CIDE-Fust impõe a comunicação da decisão ao Ministério das Comunicações - MCom, em razão da base compartilhada com o Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Mantidos o tributo e a multa de ofício, para os exercícios de 2013 e de 2014. Reconhecido o direito da Recorrente à restituição ou compensação de [item 1 do Apartado Sigiloso – SEI nº 15795368], referente ao exercício de 2014, em procedimento próprio. Determinada a comunicação da decisão ao Ministério das Comunicações - MCom.
+Tese de julgamento: "1. As diligências fiscais destinadas à revisão de lançamentos da CIDE-Fust não configuram perícia contábil quando inexistem nomeação de perito e laudo pericial. 2. Há motivação suficiente quando os relatórios de fiscalização e o informe técnico explicitam a metodologia empregada e enfrentam as teses defensivas. 3. A dedução do ICMS da base de cálculo da CIDE-Fust deve observar os valores efetivamente declarados nas escriturações fiscais oficiais relativas à prestação de serviços de telecomunicações, cabendo ao contribuinte provar fato diverso. 4. Valores pagos a maior somente podem ser restituídos ou compensados em procedimento próprio, após a constituição definitiva do crédito tributário, sendo incabível o abatimento no Processo Administrativo Fiscal ainda pendente. 5. A revisão fiscal não pode majorar o lançamento após o prazo decadencial dos arts. 149, parágrafo único, e 150, § 4º, do CTN. 6. Havendo alteração na base de cálculo da CIDE-Fust, a Anatel deve comunicar a decisão ao Ministério das Comunicações."
+Dispositivos relevantes citados: Decreto nº 70.235/1972, art. 33; CTN, arts. 149, parágrafo único, 150, § 4º, e 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, arts. 85 e 116; Resolução nº 690/2018, art. 8º, III.
+Jurisprudência relevante citada: Súmula Anatel nº 26; Súmula Conselho Administrativo de Recursos Fiscais - CARF nº 11; Anatel, Acórdão nº 182, Processo nº 53500.026826/2009-71, Rel. Conselheiro Alexandre Reis Siqueira Freire, Reunião nº 934, de 04.07.2024, Acórdão de 22.07.2024; Anatel, Acórdão nº 19, Processo nº 53500.026222/2014-91, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 929, de 08.02.2024, Acórdão de 16.02.2024; Anatel, Acórdão nº 38, Processo nº 53508.003293/2020-94, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 919, de 02.02.2023, Acórdão de 13.02.2023; Anatel, Acórdão nº 312, Processo nº 53500.206006/2015-17, Rel. Conselheiro Carlos Manuel Baigorri, Reunião nº 904, de 09.09.2021, Acórdão de 14.09.2021.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 6/2026/NP (SEI nº 15271092), integrante deste acórdão:
+a) conhecer do Recurso Administrativo (SEI nº 13945460) interposto em face do Despacho Decisório nº 281/2025/COUN/SCO (SEI nº 13507084) para, no mérito, negar-lhe provimento, a fim de manter: (i) o montante do tributo devido no exercício de 2013, no valor de [item 18 do Apartado Sigiloso – SEI nº 15795368], bem como a respectiva multa de ofício; e (ii) o montante do tributo devido no exercício de 2014, no valor de [item 19 do Apartado Sigiloso – SEI nº 15795368], igualmente acrescido da correspondente multa de ofício;
+b) exclusivamente ao pedido de compensação, reconhecer o direito da Recorrente à restituição ou compensação do valor de [item 20 do Apartado Sigiloso – SEI nº 15795368], referente aos valores pagos a maior nos meses de fevereiro, março, maio, junho e dezembro do exercício de 2014, condicionando o seu exercício à apresentação de requerimento formal específico, por meio do formulário eletrônico previsto na Resolução nº 690/2018; e,
+c) determinar à Superintendência de Controle de Obrigações - SCO que notifique a Recorrente acerca do direito reconhecido, para fins de eventual formalização do pedido de compensação ou restituição.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15837853 e o código CRC D3E27B33.
+ | 
+Referência: Processo nº 53500.206843/2015-38 | 
+SEI nº 15837853 |

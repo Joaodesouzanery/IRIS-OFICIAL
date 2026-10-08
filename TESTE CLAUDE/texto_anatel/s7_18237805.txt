@@ -1,0 +1,118 @@
+SEI/ANATEL - 16261752 - Análise
+Boletim de Serviço Eletrônico em 16/09/2026
+Análise nº 86/2026/OP
+Processo nº 53500.042080/2021-39
+Interessado: Telesat Brasil Capacidade de Satelites Ltda
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Prorrogação do prazo de entrada em operação do sistema de satélites não geoestacionários Telesat Lightspeed.
+EMENTA
+DIREITO REGULATÓRIO DAS TELECOMUNICAÇÕES. DIREITO DE EXPLORAÇÃO DE SATÉLITE. PRORROGAÇÃO DO PRAZO PARA ENTRADA EM OPERAÇÃO DE SISTEMA NÃO GEOESTACIONÁRIO ESTRANGEIRO. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+Pedido de prorrogação do prazo de entrada em operação do sistema de satélites não geoestacionários Telesat Lightspeed.
+A interessada requereu a prorrogação do prazo para 31 de dezembro de 2027.
+A interessada fundamentou o pedido em fatos excepcionais e alheios ao seu controle, relacionados ao desenvolvimento de componentes essenciais ao sistema.
+A área técnica concluiu pelo atendimento das exigências legais e regulamentares para alteração do Direito de Exploração de Satélite.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos para prorrogar o prazo de entrada em operação do sistema Telesat Lightspeed.
+III. RAZÕES DE DECIDIR
+O Conselho Diretor é competente para decidir sobre a alteração do Direito de Exploração de Satélite.
+A prorrogação do prazo de entrada em operação implica alteração do Direito de Exploração anteriormente conferido.
+O Regulamento Geral de Exploração de Satélites permite a prorrogação do prazo mediante solicitação justificada, a critério da Anatel, especialmente em situações de força maior e observado o interesse público.
+A interessada apresentou a documentação exigida para a alteração do Direito de Exploração.
+Os fatos relativos ao desenvolvimento dos componentes essenciais ao sistema justificam a alteração do cronograma de implantação da constelação.
+A interessada apresentou cronograma atualizado e informações sobre a continuidade e a viabilidade do empreendimento.
+A prorrogação não conflita com as condições da autorização no país de origem.
+A medida não tem caráter meramente protelatório.
+A prorrogação atende ao interesse público ao preservar o Direito de Exploração e possibilitar a entrada em operação de novo sistema de comunicação via satélite no mercado brasileiro.
+A alteração exclusiva do prazo de entrada em operação não exige pagamento de preço público pelo Direito de Exploração de Satélites.
+IV. DISPOSITIVO E TESE
+Pedido deferido. Prorrogação do prazo para entrada em operação do sistema não geoestacionário estrangeiro Telesat Lightspeed até 31 de dezembro de 2027.
+Tese de julgamento: "1. A prorrogação do prazo para entrada em operação de satélite implica alteração do Direito de Exploração de Satélite. 2. A Anatel pode prorrogar esse prazo mediante solicitação justificada, especialmente em situação de força maior, desde que observado o interesse público. 3. A prorrogação até 31 de dezembro de 2027 é cabível diante do atendimento das exigências regulamentares, da continuidade do empreendimento e do interesse público."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 170; Resolução Anatel nº 748/2021, arts. 3º, III e IV, 16, 22 e 24, § 3º; Resolução Anatel nº 791/2026, art. 135, IX; Lei nº 10.406/2002, art. 393, caput e parágrafo único; Ato nº 9.526/2021, art. 1º.
+Jurisprudência relevante citada: Acórdão nº 128, de 15 de junho de 2023; Acórdão nº 150, de 16 de junho de 2025.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Lei nº 10.406, de 10 de janeiro de 2002 - Institui o Código Civil;
+Resolução nº 791, de 2 de setembro de 2026, que aprova o Regimento Interno da Anatel (RIA);
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites (RGSat);
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da PFE-Anatel;
+Processo nº 53500.042080/2021-39.
+RELATÓRIO
+DOS FATOS
+Trata-se de pedido de prorrogação do prazo para entrada em operação do sistema de satélites não geoestacionários Telesat Lightspeed, cujo Direito de Exploração foi originalmente conferido à TELESAT LEO INC, empresa constituída sob as leis do Canadá, por meio do Ato nº 6847, de 17 de maio de 2022 (SEI nº 8481188), publicado no Diário Oficial da União em 19 de maio de 2022, posteriormente revogado pelo Ato nº 9374, de 17 de junho de 2024 (SEI nº 12137657), publicado no Diário Oficial da União em 18 de junho de 2024. Consta dos autos a posterior alteração do nome da operadora de TELESAT LEO INC para TELESAT LEO ULC.
+Consta do referido Ato que a TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA. (CNPJ nº 02.884.281/0001-18), doravante Telesat ou Interessada, empresa constituída sob as leis brasileiras, com sede e administração no país, é a representante legal da exploradora de satélites estrangeira. Consta, ainda, que o sistema Telesat Lightspeed será composto por 198 (cento e noventa e oito) satélites e que o Direito de Exploração foi conferido até 31 de março de 2036. Adicionalmente, o art. 11 estabeleceu que o prazo máximo para entrada em operação será até 30 de setembro de 2026.
+Em 27 de julho de 2026, a Telesat solicitou (SEI nº 16026481) prorrogação do prazo de entrada em operação do sistema Telesat Lightspeed para 31 de dezembro de 2027, com base no art. 24, §3º, Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021, e em elementos caracterizadores de caso fortuito ou força maior.
+Em 21 de agosto de 2026, a Telesat apresentou toda a documentação exigida pela área técnica por meio do Ofício nº 5196/2026/ORLE/SOR-ANATEL (SEI nº 16029039) e do Ofício nº 5747/2026/ORLE/SOR-ANATEL (SEI nº 16129517).
+Em 26 de agosto de 2026, a área técnica emitiu o Informe nº 7207/2026/ORLE/SOR (SEI nº 16070439), indicando o atendimento das exigências legais pela interessada e manifestando-se favorável ao deferimento do pleito.
+Na mesma data a Superintendência de Outorga e Recursos à Prestação (SOR) emitiu a Matéria para Apreciação do Conselho Diretor nº 589/2026 (SEI nº 16070452) e remeteu o processo para deliberação do Conselho Diretor.
+Em 27 de agosto de 2026, fui sorteado Relator, conforme Certidão de Distribuição SEI nº 16193775.
+DA ANÁLISE
+I - Da competência do Colegiado
+O art. 170 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT), prevê a competência da Anatel de dispor sobre os requisitos para conferência de Direito de Exploração de satélites:
+Art. 170. A Agência disporá sobre os requisitos e critérios específicos para execução de serviço de telecomunicações que utilize satélite, geoestacionário ou não, independentemente de o acesso a ele ocorrer a partir do território nacional ou do exterior.
+De acordo com o Regimento Interno da Anatel (RIA), aprovado pela Resolução Anatel nº 791, de 02 de setembro de 2026, compete ao Conselho Diretor decidir sobre direito de exploração de satélites:
+Art. 135. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+...
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite;
+As condições para a Exploração de Satélites sobre o território brasileiro e para conferência de Direito de Exploração de Satélite foram regulamentadas pela Anatel por meio do RGSat.
+A presente Análise objetiva avaliar pedido de prorrogação do prazo de entrada em operação do sistema estrangeiro de satélites não geoestacionários Telesat Lightspeed, o que configura possibilidade de alteração do Direito de Exploração anteriormente conferido.
+Portanto, é competência do Conselho Diretor avaliar o pedido em tela.
+II - Do Pedido de Prorrogação do Prazo de Entrada em Operação
+Inicialmente, vale rever o que dispõe o RGSat quanto aos aspectos regulatórios referentes à conferência de Direito de Exploração de Satélites e aos prazos associados às autorizações para exploração dos sistemas de comunicação via satélite no Brasil:
+Art. 3º Para os fins deste Regulamento, além das definições constantes na legislação e regulamentação, aplicam-se as seguintes definições:
+...
+III - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;
+IV - Entrada em Operação de Satélite: posicionamento de satélite na posição orbital ou planos orbitais associados à outorga, com capacidade de transmissão e recepção nas faixas de frequências outorgadas;
+...
+Art. 22. O Direito de Exploração de Satélite será conferido mediante Ato expedido pela Agência, do qual devem constar o nome ou a denominação social da autorizada, o número de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ) da autorizada ou de seu representante legal, quando aplicável, o objeto e o prazo de vigência do direito, as redes de satélite e o nome do satélite, no caso de satélite geoestacionário, a serem associados ao direito, a posição orbital, as faixas de frequências, a área geográfica de cobertura, a data para entrada em operação, bem como outras informações julgadas convenientes pela Agência.
+(grifei)
+Especificamente quanto a prorrogação do prazo para entrada em operação, o RGSat, no §3º do art. 24, dispõe o seguinte:
+Art. 24. O Direito de Exploração de Satélite será conferido pelo prazo de até 15 (quinze) anos, a contar da data de publicação do extrato do Ato que conferirá o referido Direito no DOU.
+...
+§ 3º O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da UIT, observado o interesse público.
+(grifei)
+Desta forma, fica a critério da Anatel prorrogar o prazo para entrada em operação de satélites observado o interesse público, sobretudo em situações de força maior, considerando, neste caso, o entendimento da União Internacional de Telecomunicações (UIT) a respeito.
+Além disso, pela inteligência do art. 22 do RGSat, acima transcrito, a prorrogação do prazo para entrada em operação de sistemas de satélites implica na necessidade de alteração do Direito de Exploração conferido. Por sua vez, para a alteração do Direito de Exploração devem ser observadas as condições dispostas no art. 16 do RGSat e bem como o § 1º do Ato nº 9.526, de 27 de outubro de 2021:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+Ato nº 9.526, de 27 de outubro de 2021:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+Conforme indicado pela área técnica no Informe nº 7207/2026/ORLE/SOR (SEI nº 16070439), a Interessada atendeu as exigências legais e regulamentares, acima expostas, que condicionam a possibilidade de alteração do Direito de Exploração conferido por meio do Ato nº 9.374, de 17 de junho de 2024 (SEI nº 12137657).
+A Interessada justifica seu pleito em função de fatos excepcionais e alheios ao seu controle, relacionados ao desenvolvimento de componentes (chips) essenciais ao sistema, que foram detalhadamente descrito pela área técnica no Informe nº 7207/2026/ORLE/SOR (SEI nº 16070439). Em decorrência de tais fatos, a Interessada postergou a previsão do primeiro lançamento de 15 satélites de março para setembro de 2027 e solicitou a prorrogação, até 31 de dezembro de 2027, para o lançamento de ao menos 10% da constelação e para entrada em operação do sistema Telesat Lightspeed.
+ Para demonstrar a continuidade e a viabilidade do empreendimento, a Interessada apresentou cronograma atualizado para qualificação dos chips, produção dos satélites e implantação progressiva da constelação, além de informações sobre a conclusão da Revisão Crítica de Projeto, o avanço da infraestrutura terrestre e industrial e a contratação de serviços operacionais.
+A área técnica recomenda o deferimento do pleito uma vez que: (i) não conflita com as condições da autorização no país de origem; (ii) não se trata de medida meramente protelatória; e (iii) que, atende ao interesse público, pois permite a manutenção do Direito de Exploração anteriormente conferido e, em consequência, a entrada em operação de novo sistema de comunicação via satélite no mercado brasileiro, ampliando a oferta de capacidade satelital no país.
+Em seu Informe, a área técnica esclareceu que há previsão regulatória para prorrogar o prazo de entrada em operação de satélites brasileiros ou estrangeiros com Direito de Exploração conferido pela Anatel, especialmente em casos de força maior e desde que preservado o interesse público. Segundo o entendimento da União Internacional de Telecomunicações (UIT), a força maior é evento externo, alheio ao controle do obrigado, imprevisível ou inevitável e irresistível, que torna impossível, e não apenas mais difícil, o cumprimento da obrigação, devendo haver nexo causal direto com o inadimplemento, sem que o evento decorra de comportamento imputável ao interessado. A ocorrência não pode ser presumida e deve ser comprovada formalmente por quem a alega. No direito brasileiro, o Código Civil (Lei nº 10.406/2002, art. 393, caput e parágrafo único) caracteriza caso fortuito ou força maior como fato necessário cujos efeitos não poderiam ser evitados ou impedidos. O Parecer nº 365/2017/PFE-ANATEL/PGF/AGU (SEI nº 1526567), da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel), destaca que ambos constituem situações excepcionalíssimas: o caso fortuito costuma decorrer de eventos naturais, enquanto a força maior pode resultar de fatos humanos, sendo a inevitabilidade o elemento central para sua caracterização.
+A área técnica demonstrou a existência de precedentes deste Colegiado em casos análogos, conforme Acórdão nº 128, de 15 de junho de 2023 (SEI nº 10390652) e Acórdão nº 150, de 16 de junho de 2025, SEI nº 13859333. Demonstrou, também, não se tratar de caso de manifestação obrigatória da PFE-Anatel previsto na Portaria nº 642, de 26 de julho de 2013, e concluiu não haver dúvida jurídica quanto à matéria que enseje a remessa dos autos ao referido órgão.
+Destacou, por fim, que a prorrogação do prazo para entrada em operação do sistema em questão não está dentro das hipóteses previstas na regulamentação para as quais seria necessário pagamento de preço público pelo Direito de Exploração de Satélites. Portanto, a expedição de Ato com único objetivo de alterar o prazo supracitado não está condicionada ao pagamento do preço público. 
+Filio-me integralmente ao posicionamento da área técnica.
+Pelo exposto, proponho prorrogar, até 31 de dezembro de 2027, o prazo para entrada em operação do sistema não geoestacionário estrangeiro Telesat Lightspeed, nos termos da Minuta de Ato SEI nº 16070447.
+III - Da urgência da matéria
+Conforme apontado pela área técnica na Matéria para Apreciação do Conselho Diretor nº 589/2026 (SEI nº 16070452), a urgência da deliberação decorre do término do prazo para entrada em operação do sistema Telesat Lightspeed, previsto para 30 de setembro de 2026. Tendo em vista que a próxima Reunião Ordinária do Conselho Diretor ocorrerá apenas em 8 de outubro de 2026, segundo o Calendário aprovado pela Resolução Interna nº 579, de 2 de setembro de 2026 (SEI nº 16226549), justifica-se a deliberação via Circuito Deliberativo, nos termos do art. 20, § 1º, do Regimento Interno da Anatel (Resolução nº 791/2026), de modo a evitar prejuízos irreversíveis.
+Art. 20. O Circuito Deliberativo destina-se a coletar os votos dos membros do Conselho Diretor sem a realização de Reunião ou Sessão.
+§ 1º Poderão ser levados a Circuito Deliberativo matérias previamente definidas pelo Conselho Diretor, que envolvam entendimento já consolidado na Anatel, quando desnecessário o debate oral ou se tratar de matéria relevante e urgente cuja omissão possa causar prejuízos irreversíveis.
+(grifei)
+IV - Da relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+O desenvolvimento das telecomunicações, especialmente das comunicações via satélite, contribui para os Objetivos de Desenvolvimento Sustentável da Agenda 2030 ao ampliar conectividade, acesso à educação e saúde, inclusão digital, inovação, monitoramento ambiental e cooperação para o desenvolvimento. A relação é mais direta com o ODS 9, pois os sistemas satelitais fortalecem infraestrutura resiliente, inovação tecnológica e acesso à internet em regiões remotas e rurais, apoiando as metas de infraestrutura confiável, sustentável e acessível e de ampliação das tecnologias de informação e comunicação. A Agenda Space 2030, fundamentada na Agenda 2030, reconhece as atividades espaciais como estratégicas para o desenvolvimento econômico, social e ambiental, o que exige a preservação do ambiente orbital por meio de operações responsáveis, mitigação de detritos, prevenção de colisões e coordenação internacional. Dessa forma, a sustentabilidade orbital é condição para que os benefícios dos sistemas espaciais continuem a apoiar os ODS, em consonância com o uso equitativo e eficiente das radiofrequências e órbitas de satélite.
+CONCLUSÃO
+Voto por prorrogar até 31 de dezembro de 2027, nos termos da Minuta de Ato SEI nº 16070447, o prazo para entrada em operação do sistema não geoestacionário estrangeiro Telesat Lightspeed, cujo Direito de Exploração vigente foi conferido por meio do Ato nº 9.374, de 17 de junho de 2024 (SEI nº 12137657), publicado no Diário Oficial da União em 18 de junho de 2024.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 15/09/2026, às 09:27, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16261752 e o código CRC E78DC151.
+ | 
+Referência: Processo nº 53500.042080/2021-39 | 
+SEI nº 16261752 |

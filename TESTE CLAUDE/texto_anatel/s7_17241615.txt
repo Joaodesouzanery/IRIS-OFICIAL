@@ -1,0 +1,615 @@
+SEI/ANATEL - 15413715 - Análise
+Boletim de Serviço Eletrônico em 15/04/2026
+Análise nº 32/2026/OP
+Processo nº 53500.012875/2026-27
+Interessado: UNIFIQUE TELECOMUNICAÇÕES S.A., Ligga Telecomunicacoes S.a.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Pedido de anuência prévia formulado por LIGGA TELECOMUNICAÇÕES S.A. e UNIFIQUE TELECOMUNICAÇÕES S.A. com o objetivo de transferir autorizações de direito de uso de radiofrequências associadas à autorização para explorar o Serviço Móvel Pessoal - SMP detidas pela primeira para a segunda empresa.
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. ANUÊNCIA PRÉVIA. TRANSFERÊNCIA DE AUTORIZAÇÃO DE DIREITO DE USO DE RADIOFREQUÊNCIAS ASSOCIADA AO SMP. PEDIDO ANUÍDO COM CONDICIONANTES.
+I. CASO EM EXAME
+ Requerimento de anuência prévia formulado por LIGGA TELECOMUNICAÇÕES S.A. e UNIFIQUE TELECOMUNICAÇÕES S.A. para transferência da autorização de direito de uso de radiofrequências, em caráter primário, associada ao SMP, detida pela primeira e formalizada no Termo de Autorização nº 92/2021, para a segunda.
+ Fato relevante. As empresas integraram o CONSÓRCIO 5G SUL no Edital nº 1/2021-SOR/SPR/CD-ANATEL. A UNIFIQUE ficou com os Setores 18 e 29 do PGO, formalizados no Termo de Autorização nº 66/2021. A LIGGA ficou com os Setores 19 e 20 do PGO, formalizados no Termo de Autorização nº 92/2021.
+ Pedidos formulados. As requerentes pediram: (i) a anuência prévia para a transferência da autorização de uso de radiofrequências do Termo nº 92/2021; (ii) a sub-rogação integral da UNIFIQUE nas obrigações correspondentes; (iii) a readequação dos instrumentos de outorga, com extinção do Termo nº 92/2021 e incorporação de seu conteúdo ao Termo nº 66/2021, ou expedição de instrumento único; e (iv) a transferência, extensão ou nova autorização à UNIFIQUE para uso de radiofrequências na subfaixa de 700 MHz em caráter secundário.
+ Instrução do feito. A área técnica realizou diligências, exigiu complementação documental, obteve manifestações da SCP, da ORER e da SCO, e concluiu pelo atendimento da documentação exigida. A PFE-Anatel opinou pela viabilidade jurídica da transferência, com condicionamentos.
+II. QUESTÃO EM DISCUSSÃO
+ Há quatro questões em discussão: (i) saber se estão presentes os requisitos jurídicos, técnicos, econômico-financeiros e fiscais para a transferência da autorização de uso de radiofrequências do Termo nº 92/2021 da LIGGA para a UNIFIQUE; (ii) saber se a operação atende às exigências de manutenção das obrigações associadas às radiofrequências e de observância do interesse público; (iii) saber se existem óbices concorrenciais, técnicos ou relacionados à quantidade de espectro que impeçam a transferência; e (iv) saber se é cabível, como consequência da operação, a extinção do Termo nº 92/2021, sua incorporação ao Termo nº 66/2021, a expedição de instrumento único, ou a deliberação imediata sobre radiofrequências de 700 MHz em caráter secundário.
+III. RAZÕES DE DECIDIR
+ O art. 163, § 4º, da Lei nº 9.472/1997 admite a transferência da autorização de uso de radiofrequências entre prestadores de serviços de telecomunicações, mediante anuência da Agência.
+ O art. 11 do Decreto nº 10.402/2020 exige, para a transferência, anuência prévia da Anatel, manutenção do atendimento das obrigações associadas às radiofrequências, observância de aspectos concorrenciais e análise da regularidade fiscal da sucessora.
+ A documentação apresentada, após complementação, atende aos requisitos de habilitação jurídica, qualificação técnica, qualificação econômico-financeira e regularidade documental exigidos para a instrução do pedido.
+ A regularidade fiscal da sucessora pode ser exigida até a expedição do ato de transferência, nos termos da Súmula nº 19.
+ A declaração apresentada pela UNIFIQUE quanto ao art. 5º da Lei nº 12.485/2011 é suficiente para a instrução do processo, conforme precedentes da Agência.
+ A operação não apresenta óbices concorrenciais. A SCP concluiu que não há alteração relevante de participação de mercado, risco de exercício abusivo de poder de mercado ou necessidade de limitação da dotação de espectro.
+ A ORER concluiu que não há restrições regulatórias quanto à quantidade de espectro na faixa objeto da transferência e que não existem óbices técnicos, pois o pedido abrange integralmente a faixa atualmente autorizada à LIGGA.
+ A SCO concluiu que não há sobreposição entre as metas assumidas por LIGGA e UNIFIQUE no Lote C6 e que não há impedimento para a transferência, desde que a sucessora assuma os compromissos vincendos e apresente novas garantias de execução.
+ A cláusula 7.1 do Termo de Autorização nº 92/2021 deve ser interpretada em consonância com a LGT e com a natureza sucessiva das obrigações, de modo que a transferência depende do cumprimento das obrigações vencidas e da sub-rogação da sucessora nas obrigações ainda pendentes.
+ O pedido de extinção do Termo nº 92/2021 com incorporação de seu conteúdo ao Termo nº 66/2021 não merece acolhimento. Não é possível extinguir o instrumento cuja transferência se pretende realizar.
+ Também não cabe expedir novo instrumento único em nome da UNIFIQUE. A sistemática operacional da Agência para a espécie é a formalização da transferência por termo aditivo ao instrumento original.
+ O pleito referente à subfaixa de 700 MHz em caráter secundário não deve ser apreciado neste processo. A obtenção ou transferência dessa autorização deve ser requerida em procedimento próprio, por meio do sistema MOSAICO, após a efetiva transferência da outorga objeto destes autos.
+ O preço público devido pela transferência pode ser fixado em R$ 400,00, por analogia ao art. 26 do Regulamento Geral de Outorgas, com recolhimento em parcela única, na forma do art. 28 do mesmo regulamento.
+ Não foram identificados acessos declarados ou estações terminais móveis licenciadas em bloco da LIGGA, para o SMP, nas áreas abrangidas pelo Termo nº 92/2021. Não há restrições sob a ótica dos direitos dos consumidores nem necessidade de condicionamentos específicos sobre recursos de numeração no caso concreto.
+ É cabível atribuir tratamento sigiloso aos documentos que contenham informações técnicas, operacionais, econômico-financeiras, fiscais e estratégicas, nos termos do art. 39, parágrafo único, da Lei nº 9.472/1997.
+IV. DISPOSITIVO E TESE
+ Pedido anuído com estabelecimento de condicionantes.
+ Anuência prévia deferida para a transferência da autorização de direito de uso de radiofrequências, em caráter primário, associada ao SMP, detida por LIGGA TELECOMUNICAÇÕES S.A., nos termos do Termo de Autorização nº 92/2021, para UNIFIQUE TELECOMUNICAÇÕES S.A., condicionada: (i) à comprovação da regularidade fiscal da sucessora; (ii) ao recolhimento do preço público devido; e (iii) à apresentação de declaração de sub-rogação e de novas garantias de execução dos compromissos pendentes.
+ Determinada a formalização da transferência por meio de termo aditivo.
+ Indeferidos os pedidos de extinção do Termo nº 92/2021, de incorporação de seu conteúdo ao Termo nº 66/2021, e de expedição de instrumento único em nome da UNIFIQUE.
+ Não conhecido, neste processo, o pleito relativo à subfaixa de 700 MHz em caráter secundário, sem prejuízo de formulação em procedimento próprio.
+Tese de julgamento: "1. A transferência de autorização de direito de uso de radiofrequências entre prestadoras de serviços de telecomunicações é juridicamente admissível, nos termos do art. 163, § 4º, da Lei nº 9.472/1997 e do art. 11 do Decreto nº 10.402/2020. 2. A anuência prévia para a transferência do Termo de Autorização nº 92/2021 pode ser deferida quando atendidos os requisitos de habilitação, ausentes óbices técnicos e concorrenciais, e assegurada a sub-rogação da sucessora nas obrigações e garantias pendentes. 3. A formalização da transferência deve ocorrer por termo aditivo ao instrumento original, não sendo cabível a extinção do termo transferido, sua incorporação a outro termo de autorização ou a expedição de instrumento único. 4. O pleito referente à autorização de uso de radiofrequências em caráter secundário na subfaixa de 700 MHz deve ser formulado em procedimento próprio."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 2º, 22, 39, parágrafo único, 98, 127, 151 e 163, §§ 3º, 4º e 5º; Lei nº 12.485/2011, art. 5º; Lei nº 13.879/2019; Lei nº 13.874/2019; Decreto nº 10.402/2020, art. 11; Resolução nº 65/1998; Resolução nº 101/1999; Resolução nº 612/2013, art. 133, IX, XXXII e XLII; Resolução nº 720/2020, arts. 21, 26 e 28; Resolução nº 765/2023, arts. 4º, V, e 31; Edital nº 1/2021-SOR/SPR/CD-ANATEL, item 9.3, 9.3.1, 9.3.2 e 9.7; Termo de Autorização nº 92/2021, cláusula 7.1.
+Jurisprudência relevante citada: Anatel, Acórdão nº 432, de 11.08.2020, Processo nº 53500.051211/2020-98; Anatel, Acórdão nº 15, de 07.02.2023, Processo nº 53500.043365/2022-78; Anatel, Acórdão nº 39, de 13.02.2023; Anatel, Acórdão nº 274, de 20.10.2025, Processo nº 53500.043774/2023-55; Anatel, Acórdão nº 9, de 31.01.2022, Processo nº 53500.020134/2021-13; Anatel, Acórdão nº 17/2026; PFE-Anatel, Parecer nº 00441/2025/PFE-ANATEL/PGF/AGU, de 06.01.2026; PFE-Anatel, Parecer nº 00120/2026/PFE-ANATEL/PGF/AGU, de 27.03.2026.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 12.485, de 12 de setembro de 2011, a Lei do Serviço de Acesso Condicionado (Lei do SeAC).
+Lei nº 13.879, de 3 de outubro de 2019.
+Lei nº 13.874, de 20 de setembro de 2019, Declaração de Direitos de Liberdade Econômica.
+Decreto nº 10.402, de 17 de junho de 2020.
+Resolução nº 65, de 29 de outubro de 1998, que aprovou o Regulamento de Licitação para Concessão, Permissão e Autorização de Serviços de Telecomunicações e de Uso de Radiofrequência
+Regulamento Geral de Outorgas (RGO), aprovado pela Resolução nº 720, de 10 de fevereiro de 2020.
+Regulamento Geral de Direitos do Consumidor (RGC), aprovado pela Resolução nº 765, de 6 de novembro de 2023
+Súmula nº 19, aprovada em 1º de dezembro de 2016
+Edital nº 1/2021-SOR/SPR/CD-ANATEL (Edital 5G), de 27 de setembro de 2021.
+Termo de Autorização nº 92/2021 (SEI nº 7763026), de 3 de dezembro de 2021.
+Processo nº 53500.012178/2019-47.
+Processo nº 53500.051211/2020-98.
+Processo nº 53500.043774/2023-55.
+RELATÓRIO
+Cuida-se de pedido de anuência prévia formulado por LIGGA TELECOMUNICAÇÕES S.A. e UNIFIQUE TELECOMUNICAÇÕES S.A., com o objetivo de transferir autorizações de direito de uso de radiofrequências associadas à autorização para explorar o Serviço Móvel Pessoal - SMP detidas pela primeira para a segunda empresa.
+I - Do pedido de anuência prévia
+No dia 13 de fevereiro de 2026, as empresas LIGGA TELECOMUNICAÇÕES S.A. e UNIFIQUE TELECOMUNICAÇÕES S.A. protocolizaram pedido de anuência prévia perante esta Agência para transferência de autorizações de direito de uso de radiofrequências associadas ao SMP da primeira para a segunda (SEI nº 15193144) encaminhando o requerimento com os documentos que reputou necessários ao exame da matéria (SEI nº 15193145, 15193146, 15193147, 15193148, 15193149, 15193150, 15193151, 15193152, 15193153, 15193154, 15193155, 15193156, 15193157, 15193159, 15193160, 15193161, 15193162, 15193163).
+II - Das diligências para instrução dos autos
+Em 24 de fevereiro de 2026, a Superintendência de Outorgas e Recursos à Prestação - SOR realizou o primeiro Check List de Análise (SEI nº 15203781) e constatou a ausência de documentos obrigatórios face ao disposto na legislação regulamentar vigente. Expediu o Ofício nº 18/2026/SOR-ANATEL (SEI nº 15218320) com exigências complementares. As interessadas foram devidamente comunicadas da requisição (SEI nº 15244228 e 15260375).
+Na mesma data, a SOR encaminhou diligências à Superintendência de Controle de Obrigações - SCO (SEI nº 15204143), Gerência de Espectro, Órbita e Radiodifusão - ORER (SEI nº 15204157) e Superintendência de Competição - SCP (SEI nº 15204173), por meio das quais requer manifestação dessas áreas técnicas, respeitadas as atribuições regimentais, referentes às obrigações associadas às radiofrequências, aspectos concorrenciais e limitações técnicas relacionadas ao pedido de anuência prévia.
+Por meio do Ofício nº 154/2026/CPOE/SCP-ANATEL (SEI nº 15224688), a SCP respondeu a diligência citada acima e informou que a operação: (i) não afeta negativamente a concorrência; (ii) não altera participações de mercado; (iii) não cria condições para exercício abusivo de poder de mercado; e (iv) não viola limites de espectro. Por isso, essa área técnica concluiu não haver óbice ao deferimento do pedido quanto aos aspectos competitivos.
+Em 2 de março de 2026, documentos adicionais foram enviados pela UNIFIQUE (SEI nº 15259236, 15259237, 15259238, 15259239, 15259240 e 15259241) com o intuito de atender o Ofício nº 18/2026/SOR-ANATEL (SEI nº 15218320).
+A manifestação da ORER, de 3 de março de 2026, em resposta à diligência citada acima esclareceu que (SEI nº 15260734) não foram identificados: (i) restrições regulatórias de natureza concorrencial relacionadas à quantidade de espectro objeto da transferência; (ii) óbices técnicos à operação; e (iii) no âmbito de sua competência, não identificou outros critérios específicos a analisar, diante da ausência de regulamentação específica do §4º do art. 163 da LGT.
+Na mesma data, a LIGGA enviou correspondência (SEI nº 15263206) na qual ratificou o teor do requerimento formal de transferência (SEI nº 15193144) referente à transferência do Termo de Autorização nº 92/2021 à UNIFIQUE TELECOMUNICAÇÕES S.A. 
+Em 9 de março de 2026, após análise da documentação citada, bem como de informações adicionais apresentadas pela LIGGA (SEI nº 15290472, 15290473 e 15290474), o novo Check List (SEI nº 15260562) indicou o atendimento da legislação regulamentar vigente.
+No dia 19 de março de 2026, a SCO respondeu a referida diligência da SOR. Argumentou que não há sobreposição de obrigações entre as empresas ou impedimentos para a transferência da outorga. Caso a operação seja concretizada, aduziu que a UNIFIQUE deverá assumir integralmente os compromissos futuros atualmente atribuídos à LIGGA, além de apresentar as garantias necessárias para assegurar seu cumprimento. Ademais, não se verifica qualquer descumprimento referente ao ônus contratual.
+III - Do Informe nº 4/2026/SOR
+Em 20 de março de 2026, o Informe nº 4/2026/SOR (SEI nº 15260777) consolidou a análise técnica conjunta de SOR e SCP e concluiu pela viabilidade da transferência das autorizações de uso de radiofrequências da LIGGA para a UNIFIQUE, sujeito a condicionamentos e desde que cumpridas as condições legais, regulatórias e administrativas. Por fim, encaminhou o processo à Procuradoria Federal Especializada junto à Anatel - PFE/Anatel para manifestação formal.
+IV - Do Parecer Jurídico da PFE/ANATEL 
+Os autos foram remetidos à PFE/Anatel que, por meio do Parecer nº 126/2026/PFE-ANATEL/PGF/AGU (SEI nº 15404557), de 26 de março de 2026, aprovado pelo Despacho nº 415/2026/PFE-ANATEL/PGF/AGU, opinou pela viabilidade jurídica da transferência, desde que observadas as seguintes condições e condicionantes: (i) comprovação de regularidade fiscal; (ii) recolhimento de preço público; (iii) sub-rogação de obrigações; e (v) apresentação de garantias referentes aos compromissos ainda pendentes, cabendo ao Conselho Diretor da Anatel a decisão final sobre o pedido. Ademais, considerou pertinente que o Colegiado delibere quanto ao preço público e recursos de numeração. 
+V – Do Informe nº 9/2026/SOR
+Por meio do Informe nº 9/2026/SOR (SEI nº 15024299), de 30 de março de 2026, SOR e SCP, consignaram que no âmbito de suas competências, o opinativo constante no Parecer nº 126/2026/PFE-ANATEL/PGF/AGU (SEI nº 15404557) concordava com a proposta feita pelas áreas técnicas, com recomendações que já se encontram devidamente contempladas por meio do mencionado Informe nº 4/2026/SOR (SEI nº 15260777) e outras que se encontram endereçadas ao Conselho Diretor no âmbito de sua competência exclusiva.
+Nos termos da Minuta de Ato nº 15407858, as áreas técnicas sugeriram a transferência de autorizações de direito de uso de radiofrequências, em caráter primário, associadas à autorização para explorar o SMP de LIGGA para UNIFIQUE, válida por 180 (cento e oitenta) dias condicionada: 
+à comprovação de regularidade fiscal da UNIFIQUE; 
+ao recolhimento do preço público devido;
+à apresentação de declaração de sub-rogação e garantias de execução de compromissos.
+VI - Do encaminhamento dos autos ao Conselho Diretor
+Subsequentemente, por meio da Matéria para Apreciação do Conselho Diretor nº 254/2026 (SEI nº 15407968), a proposta foi submetida à deliberação desse Colegiado com caráter de urgência.
+O Processo foi objeto de sorteio extraordinário no dia 30 de março de 2026, ocasião em que fui designado relator da matéria, conforme Certidão de Distribuição SEI nº 15413109.
+Na mesma data, a UNIFIQUE protocolizou correspondência (SEI nº 15414039), por meio da qual encaminhou documentos atualizados (SEI nº 15414040, 15414041, 15414042, 15414043, 15414044, 15414045 e 15414046) visando a comprovação de regularidade fiscal.
+É o relatório.
+fundamentação
+Cuida-se de pedido de anuência prévia formulado por LIGGA TELECOMUNICAÇÕES S.A. e UNIFIQUE TELECOMUNICAÇÕES S.A., com o objetivo de transferir autorizações de direito de uso de radiofrequências associadas à autorização para explorar o Serviço Móvel Pessoal - SMP detidas pela primeira para a segunda empresa.
+I - Da operação requerida
+De início, esclareço que LIGGA e UNIFIQUE compuseram o CONSÓRCIO 5G SUL, vencedor do Lote C do Edital nº 1/2021-SOR/SPR/CD-ANATEL - Edital 5G, de 27 de setembro de 2021, diante da possibilidade prevista no item 9.3.1 do certame:
+Edital 5G
+“9.3.1. Será admitido, no caso de consórcio, alternativamente à constituição de nova empresa, a indicação de uma ou mais consorciadas para assinatura do(s) Termo(s) de Autorização, desde que a(s) indicada(s) atenda(m) individualmente a todos os requisitos de habilitação dispostos neste Edital”.
+Conforme relatado no pedido de anuência prévia (SEI nº 15193144), uma vez que as consorciadas comprovaram atender aos requisitos de habilitação do Leilão, a ANATEL expediu os Termos de Autorização do Lote C6 para ambas empresas que constituíram o CONSÓRCIO 5G SUL: (i) o Termo de Autorização nº 66/2021 (SEI nº 7758203), que autoriza à UNIFIQUE o uso da Subfaixa de Radiofrequências de 3.300 MHz a 3.700 MHz nos Setores 18 (Estado de Santa Catarina) e 29 (Estado do Rio Grande do Sul) do PGO; e (ii) o Termo de Autorização nº 92/2021 (SEI nº 7763026), que autoriza à LIGGA o Uso da Subfaixa de Radiofrequências de 3.300 MHz a 3.700 MHz nos Setores 19 e 20 (ambos no Estado do Paraná) do PGO.
+O objeto da anuência prévia consiste nos blocos de radiofrequências na faixa de 3.600 a 3.680 MHz associadas ao SMP, conferidas em caráter primário e concedidas por meio do Termo de Autorização nº 92/2021, cuja área de prestação corresponde ao Estado do Paraná (setores 19 e 20 do Plano Geral de Outorgas – Região II do Plano Geral de Autorizações), conforme Petição Inicial (SEI nº 15193144).
+A operação pleiteada visa transferir autorização de direito de uso de radiofrequências LIGGA para a UNIFIQUE, então empresas integrantes do CONSÓRCIO 5G SUL que participou do Leilão do 5G, conforme identificado a seguir:
+ Lote do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL
+ | 
+ Área de Prestação
+ | 
+ Termo nº
+ | 
+ Data do Termo
+ | 
+ Data DOU Termo
+ | 
+ Termo SEI nº
+ | 
+ Ato nº
+ | 
+ Data Ato
+ | 
+ Data DOU Ato
+ | 
+ Ato SEI nº
+ | 
+ Faixa de RF
+ | 
+ C6
+ | 
+ Setores 19 e 20 do PGO, na Região Sul
+ | 
+ 92/2021
+ | 
+ 037/12/2021
+ | 
+ 08/12/2021
+ | 
+ 7763026
+ | 
+ 10577/2021
+ | 
+ 26/11/2021
+ | 
+ 29/11/2021
+ | 
+ 7725171
+ | 
+ 3600 MHz a 3680 MHz
+ | 
+Fonte: Informe Conjunto nº 4/2026/SOR (SEI nº 15260777)
+As empresas esclareceram que a operação se restringe à transferência das autorizações de uso de radiofrequências, vez que tanto LIGGA como UNIFIQUE possuem autorização pela Anatel para a prestação do serviço associado à subfaixa, inexistindo, portanto, qualquer pretensão de transferência de outorga de serviço.
+Em seu pedido, as Requerentes entendem que a operação demandaria a readequação formal dos instrumentos de outorga associados ao Lote C6, nos seguintes termos:
+Petição inicial (SEI nº 15193144)
+"Com a transferência ora requerida, a manutenção de instrumentos autônomos, dissociados da nova realidade operacional e jurídica, produziria artificialidade regulatória, por manter obrigações formalmente vinculadas a ente que não mais deterá a respectiva autorização de uso de radiofrequências.
+Nessa medida, impõe-se a readequação formal dos instrumentos de outorga, de modo a refletir:
+a) a nova titularidade do direito de uso;
+b) a centralização da execução dos compromissos do Lote C6; e
+c) a unicidade da responsabilização perante a ANATEL.
+Para além disso, tem-se que a readequação pretendida não compromete, em qualquer medida, os poderes da ANATEL, já que permanecem íntegros: (a) mecanismos de acompanhamento, (b) poder sancionatório, (c) exigências de garantias de execução e (d) instrumentos de intervenção e correção.
+Ao contrário, a centralização da responsabilidade tende a facilitar a supervisão e reduzir riscos de dispersão institucional, assegurando um ponto focal único para fiscalização, cobrança de cronograma e eventual responsabilização.
+Por essas razões, requer-se que, deferida a transferência do direito de uso de radiofrequências outorgado à Ligga, a Agência determine a sub-rogação integral da Unifique em todas as obrigações, encargos e garantias vinculados ao Termo de Autorização nº 92/2021 e promova, como providência consequencial, a readequação formal dos instrumentos de outorga associados ao Lote C6, mediante a extinção do referido Termo nº 92/2021 e a incorporação integral de seu conteúdo obrigacional ao Termo de Autorização nº 66/2021, ou, alternativamente, a expedição de novo instrumento único em nome da Unifique, que concentre a totalidade das autorizações e compromissos relativos ao Lote C6, preservadas integralmente as condições originalmente licitadas."
+Adicionalmente, na Petição Inicial, as partes argumentam que a faixa de 700 MHz é essencial para a cobertura e qualidade do SMP, especialmente em áreas amplas e de baixa densidade. Embora o acordo entre LIGGA e UNIFIQUE trate apenas da transferência da faixa de 3,5 GHz, argumentaram que a UNIFIQUE também deveria utilizar a faixa de 700 MHz, ainda que em caráter secundário, pois sua ausência comprometeria a eficiência da rede e o interesse público. Assim, pugnaram que a transferência (ou extensão) do uso dessa faixa seja considerada medida acessória necessária à operação. Alternativamente, caso isso não seja aceito, solicitaram que a UNIFIQUE receba nova autorização na faixa de 700 MHz, nas mesmas condições da LIGGA, para garantir a continuidade e eficiência do serviço.
+Por fim, em conjunto, as empresas apresentaram os seguintes pleitos:
+Petição inicial (SEI nº 15193144)
+"a) reconheça a plena conformidade jurídica e regulatória da operação proposta, nos exatos termos da legislação vigente e dos princípios que regem o Mercado Secundário de Radiofrequências;
+b) conceda a Anuência Prévia para a transferência do direito de uso das radiofrequências outorgadas à Ligga por meio do Termo de Autorização nº 92/2021 em favor da Unifique, com a consequente subrogação integral desta última nas obrigações, encargos e garantias correspondentes, determinando, como providência consequencial, a readequação formal dos instrumentos de outorga, mediante a incorporação das obrigações transferidas ao Termo de Autorização nº 66/2021, ou, alternativamente, a expedição de novo instrumento único em nome da Unifique, que concentre a totalidade das autorizações e compromissos relativos ao Lote C – Região Sul, preservadas integralmente as condições originalmente licitadas;
+c) autorize, como medida necessária, acessória e funcional à consolidação ora pleiteada, a transferência e/ou extensão à Unifique do direito de uso das radiofrequências na subfaixa de 700 MHz atualmente atribuídas à Ligga em caráter secundário, nos mesmos termos, condições técnicas e limitações originalmente estabelecidas, asseguradas a manutenção do regime jurídico original, a natureza precária da autorização e a plena observância das condições e limites regulatórios fixados por esta Agência;
+d) Subsidiariamente, na hipótese de não acolhimento integral do pleito formulado na alínea “c”, requer-se que seja outorgada à Unifique autorização para o uso de radiofrequências na subfaixa de 700 MHz, em caráter secundário, nos mesmos termos, condições técnicas e limitações atualmente aplicáveis à autorização expedida em favor da Ligga, como medida essencial à preservação da eficiência operacional da rede, à continuidade da prestação do SMP e ao atendimento do interesse público, sem que disso decorra qualquer direito adquirido, expectativa
+de renovação ou modificação do regime jurídico originalmente estabelecido.
+e) dê tratamento confidencial a este Pedido de Anuência Prévia, bem como a todos os documentos anexos, por apresentarem informações econômicas e estratégicas das Requerentes, conforme dispõe o art. 39, parágrafo único, da LGT."
+ II - Da previsão regulatória
+Nos termos do art. 163 da Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT, o uso de radiofrequência depende de prévia outorga da Agência, mediante autorização, observada a regulamentação aplicável. A redação original da LGT vedava expressamente a transferência da autorização de uso de radiofrequências sem a correspondente transferência da autorização de prestação do serviço a ela vinculada. 
+Com a inclusão do § 4º ao referido dispositivo, promovida pela Lei nº 13.879, de 3 de outubro de 2019, passou-se a admitir a transferência da autorização de uso de radiofrequências entre prestadores de serviços de telecomunicações, desde que precedida de anuência da Anatel:
+LGT
+Art. 163. O uso de radiofrequência, tendo ou não caráter de exclusividade, dependerá de prévia outorga da Agência, mediante autorização, nos termos da regulamentação. [...]
+§ 4º A transferência da autorização de uso de radiofrequências entre prestadores de serviços de telecomunicações dependerá de anuência da Agência, nos termos da regulamentação. (Incluído pela Lei nº 13.879, de 2019) [...]
+Art. 168. É intransferível a autorização de uso de radiofrequências sem a correspondente transferência da concessão, permissão ou autorização de prestação do serviço a elas vinculada. (Revogado pela Lei nº 13.879, de 2019)
+A regulamentação da referida alteração legal foi promovida pelo Decreto nº 10.402, de 17 de junho de 2020, em que seu art. 11 estabelece as diretrizes a serem observadas nos casos de transferência parcial ou integral da autorização de uso de radiofrequências, a seguir transcrito:
+Decreto nº 10.402/2020
+"Art. 11. A transferência parcial ou integral da autorização de uso de radiofrequências entre prestadores de serviços de telecomunicações será realizada a título oneroso pela Anatel e deverá atender, entre outras, às seguintes diretrizes:
+I - anuência prévia da Anatel, nos termos da regulamentação;
+II - manutenção do atendimento de obrigações associadas às radiofrequências, atendido o interesse público;
+III - restrições de caráter concorrencial, tais como a limitações na quantidade de radiofrequências transferidas, quando a Anatel entender necessário ou conveniente; e
+IV - análise de regularidade fiscal da empresa para a qual a autorização esteja sendo transferida, relativamente a órgãos e entidades integrantes da administração pública federal e, se necessário, da administração pública estadual, distrital ou municipal."
+III - Da competência do Conselho Diretor para análise da operação
+O pedido de anuência prévia sob análise tem por objeto a transferência de autorizações de direito de uso de radiofrequências em caráter primário associadas ao SMP oriundas de licitação, deve, portanto ser avaliado pelo Colegiado como prevê o inciso XLII do art. 133 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013:
+RIA:
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+[...]
+XLII - aprovar transferência de concessão, permissão e autorização para exploração de serviços de telecomunicações e de autorização de uso de radiofrequências, decorrentes de procedimentos licitatórios ou detidas por empresas que não se enquadrem no conceito de Prestadoras de Pequeno Porte;"
+Dito isso, passo a avaliar os pleitos da requerentes.
+IV - Da tempestividade do pedido
+Pelas informações presentes nos autos, verifico que a operação em exame ainda não foi implementada, razão pela qual considero o requerimento de anuência prévia tempestivo. Destaco que a efetiva concretização da operação de transferência de autorizações de direito de uso de radiofrequências associadas à autorização para explorar o SMP somente poderá ocorrer após a expedição do respectivo Ato de anuência por esta Agência.
+V - Da reorganização instrumental da outorga e da centralização das obrigações
+Conforme relatei acima, as requerentes entendem que a operação pleiteada demandaria a readequação formal dos instrumentos de outorga associados ao Lote C6. 
+A área técnica ao avaliar o pedido de extinção do termo da LIGGA, o considerou incoerente. Argumentou que não seria possível transferir obrigações de um instrumento que se pretende extinguir. Quanto à alternativa proposta de criação de um instrumento único, foi esclarecido que a transferência deve ocorrer por meio de termo aditivo, com a sucessora assumindo integralmente os direitos e obrigações, mantendo-se as condições originais:
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"3.87. Em relação ao pleito ora tratado, as requerentes solicitam, como uma decorrência da transferência pretendida, inicialmente, a extinção do Termo de Autorização de Uso de Radiofrequências nº 92/2021, com a incorporação integral de seu conteúdo obrigacional ao Termo de Autorização de Uso de Radiofrequências nº 66/2021.
+3.88. Esse pleito, contudo, não merece acolhimento por manifesta carência de lógica analítica. Observa-se uma contradição insuperável entre o meio pretendido e a finalidade almejada. As interessadas buscam a transferência de direitos ou obrigações — ato que pressupõe a existência e a continuidade de um vínculo jurídico para que este seja transmitido a outrem — e, no mesmo ato, pugnam pela extinção do referido vínculo e, após, a incorporação das obrigações no Termo de Autorização de Uso de Radiofrequências nº 66/2021.
+3.89. Ora, é juridicamente impossível transferir o que se pretende extinguir. A extinção opera o encerramento das obrigações, enquanto a transferência opera a sucessão delas. Tal pedido carece de nexo lógico, uma vez que a conclusão (extinção) nega a premissa necessária para a execução do pedido (transferência). Da narração dos fatos não decorre logicamente uma conclusão viável.
+3.90. De maneira alternativa, as requerentes propuseram a expedição de novo instrumento único em nome da UNIFIQUE, que concentre a totalidade das autorizações e compromissos relativos ao Lote C6, preservadas integralmente as condições originalmente licitadas.
+3.91. Sobre esse ponto, destaca-se que a operacionalização das transferências de autorizações de uso de radiofrequências na Agência ocorre por meio de Termos Aditivos, nos quais o Termo de Autorização de uso radiofrequência original é transferido para a sucessora, que se sub-roga, perante a Anatel, dos direitos e obrigações assumidas pela sucedida, mantendo-se inalteradas as demais condições do Termo Original aditivado.
+3.92. Assim, seguindo os precedentes operacionais adotados na Agência, entende-se que a efetivação da transferência do Termo de Autorização de Uso de Radiofrequências nº 92/2021 para a UNIFIQUE deve se dar por meio da formalização de Termo Aditivo."
+A PFE/Anatel igualmente refutou a viabilidade de aprovação do requerimento das empresas:
+Parecer nº 120/2026/PFE-ANATEL/PGF/AGU (SEI nº 15404557)
+"72. De fato, consoante esclareceu o corpo técnico da Agência, a participação no certame mediante a formação de consórcio permitiu a expedição de Termos de Autorização distintos para cada uma das consorciadas, mediante a definição de áreas geográficas diversas, nos termos dos itens 9.3.1 e 9.3.2 do Edital.
+73. Não obstante, a transferência dos direitos aos quais se refere o Termo de Autorização de Uso de Radiofrequências nº 92/2021 deve seguir a lógica usualmente adotada para operações que implicam na transferência do direito de uso de radiofrequências, as quais, consoante esclareceu o corpo técnico, são efetivadas por meio de aditivo.
+74. Não há qualquer excepcionalidade em razão do fato de tratar-se, na época do certame, de um consórcio: as outorgas são independentes e assim devem ser consideradas, inclusive para fins de eventual transferência."
+Acompanho integralmente as conclusões do corpo técnico, consubstanciadas no Informe nº 4/2026/SOR (SEI nº 15260777). O pedido de extinção do Termo de Autorização nº 92/2021 não se sustenta sob o ponto de vista lógico-jurídico. Com efeito, a transferência de direitos e obrigações pressupõe a subsistência do vínculo jurídico a ser transferido, ao passo que a extinção implica seu encerramento. A meu ver, trata-se de pretensão contraditória, na medida em que busca simultaneamente preservar e extinguir o mesmo instrumento, o que inviabiliza seu acolhimento.
+Alinho-me com a avaliação da área técnica, devendo a transferência ora em análise observar o procedimento ordinariamente adotado pela Agência, no qual a formalização da operação ocorre por meio de termo aditivo, instrumento pelo qual a sucessora se sub-roga integralmente nos direitos e obrigações da sucedida, preservando-se, integralmente, as condições originalmente estabelecidas no Edital e no respectivo Termo de Autorização.
+VI - Da autorização de direito de uso de radiofrequências na subfaixa de 700 MHz em caráter secundário
+Sobre o pedido referente à faixa de 700 MHz, a área técnica esclarece que autorizações secundárias podem ser solicitadas diretamente via sistema MOSAICO, sendo analisadas pela SOR, seguindo procedimento próprio:
+Informe Conjunto nº 4/2026/SOR (SEI nº 15260777)
+"3.95. Relativamente ao tema, válido registrar que, dada a natureza de dispensa e inexigibilidade de procedimento licitatório, a obtenção e/ou transferência de autorizações de uso de radiofrequências, em caráter secundário, podem ser solicitadas pelas interessadas diretamente por meio do sistema MOSAICO, sendo a Superintendência de Outorga e Recursos à Prestação (SOR) o órgão técnico com competência regimental para a instrução e decisão de tais requerimentos, com observância de rito próprio.
+3.96. Nesse sentido, considerando que o pedido de obtenção/transferência de autorização para uso da subfaixa de 700 MHz em caráter secundário encontra-se diretamente atrelado à transferência da autorização de direito de uso das faixas de 3600 MHz a 3680 MHz no setores 19 e 20 do Plano Geral de Outorgas (PGO) detida por LIGGA, orienta-se a UNIFIQUE que formalize, apenas após a eventual concessão da presente anuência prévia pelo Conselho Diretor, o seu requerimento formal seguindo as recomendações contidas no link: Manual Solicitacao Ato RF Mosaico_vmaio2025.pdf."
+Diante desse cenário, considero adequado que eventual pleito de transferência ou outorga de radiofrequências em caráter secundário na subfaixa de 700 MHz seja formulado pela UNIFIQUE após a conclusão da presente operação, seguindo o rito próprio estabelecido pela Agência, não cabendo, neste momento, deliberação específica por parte deste Colegiado sobre o tema.
+Passo a avaliar os requisitos necessários para aprovação da anuência prévia em análise.
+VII - Das condições de habilitação para a transferência de outorgas
+Nos casos de pedidos que envolvam a transferência de outorgas decorrentes de procedimento licitatório, impõe-se a verificação das condições de habilitação da prestadora que assumirá a autorização de uso de radiofrequências, à luz dos requisitos previstos na Resolução nº 65, de 29 de outubro de 1998, que aprovou o Regulamento de Licitação para Concessão, Permissão e Autorização de Serviços de Telecomunicações e de Uso de Radiofrequência, o qual estabelece as exigências de habilitação e demais normas aplicáveis à obtenção de autorizações de serviços oriundas de processo licitatório. As operações de transferência de autorizações devem observar a necessidade de comprovação de habilitação jurídica, qualificação técnica e qualificação econômico-financeira, conforme estabelecido.
+A área técnica atestou a conformidade regulatória do pedido em análise, nos seguintes termos:
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"Ante o exposto e feitos esses registros, considerando o Check List de Análise SEI nº 15260562, de 9 de março de 2026, conclui-se que o pedido de transferência de autorização de uso de radiofrequência associada à notificação para prestar o SMP detida por LIGGA para a UNIFIQUE, sob exame, atende as condições de habilitação e de regularidade fiscal, na forma do requisito contido no inciso IV do art. 11 do Decreto nº 10.402, de 2020, sugerindo-se que a expedição do Ato que formaliza a transferência seja condicionada à comprovação da regularidade fiscal da sucessora, nos termos da Súmula nº 19, de 1º de dezembro de 2016."
+................................
+Check list SEI nº 14834735
+"TRANSFERÊNCIA DE AUTORIZAÇÃO DE direito de USO DE RADIOFREQUÊNCIA - VERIFICAÇÃO DA DOCUMENTAÇÃO
+(...)
+RESULTADO DA ANÁLISE:
+A documentação apresentada ATENDE ao disposto na legislação regulamentar vigente."
+Portanto, conforme atestado pela área técnica, restam atendidas as condições de habilitação.
+Sobre os requisitos de regularidade fiscal e da Lei nº 12.485, de 12 de setembro de 2011, a Lei do Serviço de Acesso Condicionado - Lei do SeAC, reservo seções específicas para discorrer sobre esses temas.
+VIII - Da vedação à propriedade cruzada
+O art. 5º da Lei do SeAC dispõe sobre restrições ao controle cruzado e à propriedade cruzada entre prestadoras de serviços de telecomunicações de interesse coletivo e empresas de radiodifusão de sons e imagens, bem como de produção e programação de conteúdo audiovisual, estabelecendo o seguinte:
+Lei do SeAC
+"Art. 5º O controle ou a titularidade de participação superior a 50% (cinquenta por cento) do capital total e votante de empresas prestadoras de serviços de telecomunicações de interesse coletivo não poderá ser detido, direta, indiretamente ou por meio de empresa sob controle comum, por concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e por produtoras e programadoras com sede no Brasil, ficando vedado a estas explorar diretamente aqueles serviços.
+§ 1º O controle ou a titularidade de participação superior a 30% (trinta por cento) do capital total e votante de concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e de produtoras e programadoras com sede no Brasil não poderá ser detido, direta, indiretamente ou por meio de empresa sob controle comum, por prestadoras de serviços de telecomunicações de interesse coletivo, ficando vedado a estas explorar diretamente aqueles serviços.
+§ 2º É facultado às concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e a produtoras e programadoras com sede no Brasil, diretamente ou por meio de empresa sobre a qual detenham controle direto, indireto ou sob controle comum, prestar serviços de telecomunicações exclusivamente para concessionárias e permissionárias dos serviços de radiodifusão sonora e de sons e imagens ou transportar conteúdo audiovisual das produtoras ou programadoras com sede no Brasil para entrega às distribuidoras, desde que no âmbito da própria rede.
+§ 3º É facultado às empresas prestadoras de serviços de telecomunicações de interesse coletivo, diretamente ou por meio de empresa sobre a qual detenham controle direto, indireto ou sob controle comum, controlar produtoras e programadoras com sede no Brasil que exerçam atividades exclusivamente destinadas à comercialização de produtos e serviços para o mercado internacional".
+Com intuito de atender à obrigação, a requerente apresentou declaração expressa de inexistência de enquadramento nas hipóteses vedadas pelo referido dispositivo legal (SEI nº 15193163), considerada suficiente pela área técnica (item 3.44, SEI nº 15260777).
+Quanto ao ponto, embora a PFE/Anatel (item 31, SEI nº 15404557) tenha recomendado a consulta ao Sistema de Acompanhamento de Controle Societário - SIACCO, a área técnica, no Informe nº 4/2026/SOR (SEI nº 15260777), alegou que tal providência seria dispensável, uma vez que as informações constantes daquele sistema possuem natureza autodeclaratória, revelando-se redundantes em relação à declaração já acostada aos autos. A PFE/Anatel entendeu que "considerando os precedentes expostos pelo corpo técnico, ressalvado o entendimento desta Procuradoria, entende-se que a questão deve ser submetida ao Conselho Diretor da Agência" (item 33, SEI nº 15404557). 
+Observo que a interpretação da área técnica se ampara em uma série de precedentes da Agência, nos quais a consulta ao SIACCO foi dispensada. Trata-se de entendimento pacificado deste Colegiado que a declaração formal apresentada pela Requerente, no sentido de que não se encontra, direta ou indiretamente, nem por intermédio de empresa sob controle comum, enquadrada em quaisquer das hipóteses de restrição previstas no art. 5º da Lei do SeAC, constitui condição suficiente para afastar o risco de configuração de controle cruzado, inexistindo, na ausência de indícios concretos em sentido contrário, óbice à continuidade da análise do pedido. Cito como exemplos de precedentes os Acórdãos nº 15 (SEI nº 9794457), de 7 de fevereiro de 2023, nº 39 (SEI nº 9824291), de 13 de fevereiro de 2023, nº 432 (SEI nº 5855308), de 11 de agosto de 2020 e nº 274 (SEI nº 14594727), de 20 de outubro de 2025.
+Inexistem elementos concretos que indiquem risco de violação ao art. 5º da Lei nº 12.485/2011, não se mostrando razoável impor diligência adicional. Registro inexistir normativo que estabeleça a obrigatoriedade de consulta a sistemas de informações societárias para fins de apuração do cumprimento do art. 5º da Lei do SeAC, razão pela qual alinho-me com o entendimento das áreas técnicas. A boa-fé do particular perante o Poder Público constitui princípio basilar consagrado na Declaração de Direitos de Liberdade Econômica, Lei nº 13.874, de 20 de setembro de 2019, o que ampara a decisão de acolher a declaração apresentada pela requerente como suficiente para o atendimento da obrigação em análise.
+IX - Dos aspectos concorrenciais
+A operação de transferência, objeto destes autos, deve ser avaliada sob a óptica concorrencial, à luz do inciso III do art. 11 do Decreto nº 10.402/2020, que estabelece a possibilidade de imposições de restrições de caráter concorrencial quando for necessário ou conveniente:
+Decreto nº 10.402/2020
+"Art. 11. A transferência parcial ou integral da autorização de uso de radiofrequências entre prestadores de serviços de telecomunicações será realizada a título oneroso pela Anatel e deverá atender, entre outras, às seguintes diretrizes:
+[...]
+III - restrições de caráter concorrencial, tais como a limitações na quantidade de radiofrequências transferidas, quando a Anatel entender necessário ou conveniente; e"
+Sobre eventual necessidade de limitações na quantidade de radiofrequências transferidas, a avaliação do tema foi realizado pela ORER no Ofício nº 966/2026/ORER/SOR-ANATEL (SEI nº 15260734). A Gerência aduziu que não existem restrições regulatórias ou técnicas para a transferência em análise:
+Ofício nº 966/2026/ORER/SOR-ANATEL
+"3. Trata-se, portanto, de pedido de transferência de autorização do direito de uso de radiofrequência, conferida em caráter primário, para uso da subfaixa de 3.600 MHz a 3.680 MHz.
+4. No que se refere a eventuais limitações quanto à quantidade de espectro objeto da solicitação, observa-se que a Resolução nº 703, de 1º de novembro de 2018, que estabelece os Limites Máximos de Quantidade de Espectro de Radiofrequências, não previu restrições para autorizações de direito de uso de radiofrequências conferidas em caráter primário para faixas acima de 3 GHz. Assim, à luz da regulamentação vigente, não há limites máximos aplicáveis à quantidade de espectro outorgado em caráter primário a uma mesma prestadora de serviço de telecomunicações de interesse coletivo, sua(s) coligada(s), controlada(s) ou controladora(s), em um mesmo município, para uso da subfaixa objeto de transferência. Dessa forma, não se identificam condicionantes regulatórias de natureza concorrencial relacionadas à quantidade de espectro para a análise da solicitação em apreço.
+5. Quanto às condições de uso da faixa, cumpre observar que o Regulamento de Condições de Uso de Radiofrequências, aprovado pela Resolução nº 773, de 16 de janeiro de 2025, dispõe, em seu art. 23, sobre o arranjo e a canalização das subfaixas de radiofrequências de 3.300 MHz a 3.800 MHz. 
+6. Ao examinar o pedido de transferência, verifica-se que ele abrange integralmente a faixa atualmente autorizada à LIGGA TELECOMUNICAÇÕES S.A., não havendo previsão de segmentação que possa resultar em descumprimento da canalização estabelecida na regulamentação vigente. Assim, também não se identificam óbices de natureza técnica para o atendimento do referido pedido de transferência.
+7. Por fim, considerando que o arcabouço normativo vigente ainda não regulamenta a previsão legal constante do § 4º do art. 163 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações – LGT), não se identificam critérios específicos, além dos já mencionados, a serem analisados no presente caso, no âmbito das competências desta ORER." (grifado)
+A Gerência de Acompanhamento Societário e da Ordem Econômica - CPOE, por sua vez, manifestou sua avaliação do caso por meio Ofício nº 154/2026/CPOE/SCP-ANATEL (SEI nº 15224688), no qual concluiu que a operação não apresenta óbices concorrenciais além de não prejudicar a dinâmica competitiva dos mercados envolvidos:
+Ofício nº 154/2026/CPOE/SCP-ANATEL
+"2. Quanto às limitações da quantidade de radiofrequências a transferir, a Transferência do Direito de Uso de Blocos de Radiofrequências, em caráter primário na Subfaixa de 3.300 MHz a 3.700 MHz, associadas ao Serviço Móvel Pessoal – SMP, correspondentes ao Lote C – Região Sul, mais especificamente estado do Paraná, do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, não impacta os limites máximos de quantidade de espectro de radiofrequências à luz da Resolução nº 703, de 01 de novembro de 2018, não sendo, portanto, óbice à aprovação da transferência pretendida.
+(...)
+5. No que tange ao SMP, o Grupo LIGGA reportou à Anatel 24.015 acessos em serviço no estado do Paraná e o Grupo UNIFIQUE reportou 716 acessos. Não foram identificados municípios em que os dois grupos reportaram acessos simultaneamente. Logo, não se mostra presente a preocupação regulatória de natureza concorrencial, uma vez que transferência pleiteada, não tem o condão de alterar as atuais participações neste mercado varejista, considerando ainda que a operação não tenha víes de transferência de base de usuários ou de rede de acesso, tratando-se tão somente da Transferência do Direito de Uso de Blocos de Radiofrequências.
+6. Ainda que a operação esteja relacionada exclusivamente à Transferência do Direito de Uso de Blocos de Radiofrequências, é interessante analisarmos também outros mercados varejistas de telecomunicações que os grupos atuam, de modo a dar maior robustez a análise e eventualmente evidenciar algum impacto em mercado correlatos.
+7. Nesse sentido, no que diz respeito ao SCM, o Grupo LIGGA reportou à Anatel 342.090 acessos em serviço no estado do Paraná (sendo o 4º maior player, com 9,1% de market share) e o Grupo UNIFIQUE reportou 8.952 acessos (sendo o 48º maior player, com 0,2% de market share). Como se observa, a atuação, principalmente do Grupo UNIFIQUE, não justifica preocupações de que a Transferência do Direito de Uso de Blocos de Radiofrequências seja capaz de afetar concorrencialmente o mercado varejista do SCM, já que não implica concentração de mercado, não altera o market share das empresas envolvidas, não se vislumbrando, portanto, eventual alteração no ambiente competitivo deste mercado varejista. Dessa forma, não há potencial de modificação das atuais condições mercadológicas deste serviço, o que dispensa maiores preocupações sob a ótica competitiva.
+8. Outro aspecto que pode ser avaliado são eventuais variações na categorização dos municípios conforme elaborado no Plano Geral de Metas de Competição (PGMC), aprovado pela Resolução nº 783, de 3 de setembro de 2025, e aprovado no Ato nº 12.231, de 8 de setembro de 2025. Para tal avaliação são considerados os municípios na área do Direito de Uso de Blocos de Radiofrequências objeto da transferência, ou seja, no estado Paraná.
+9. Conforme mencionado anteriormente, a operação sob análise não tem o víes de transferência de base de usuários ou de rede de acesso, tratando-se tão somente da Transferência do Direito de Uso de Blocos de Radiofrequências. A partir dessa constatação e tendo como fundamento os critérios estabelecidos na metodologia que suporta o PGMC, é possível perceber que neste caso concreto a Transferência do Direito de Uso de Blocos de Radiofrequências, conforme descrito no item 2, não é capaz de alterar a categorização dos municípios proposta no PGMC.
+10. Logo, não se mostra presente a preocupação regulatória de natureza concorrencial, uma vez que transferência pleiteada, não tem o condão de alterar as atuais participações nos mercados varejistas em que atuam os grupos envolvidos e não gerar, a priori, condições para o exercício abusivo de poder de mercado, não se verificando, portanto, óbice ao seu deferimento, quanto aos aspectos competitivos, inclusive quanto às limitações de dotação de espectro." (grifado)
+A PFE/Anatel, amparada na avaliação das áreas técnicas, não vislumbrou óbice à anuência prévia da operação sob a óptica concorrencial (item 49, SEI nº 15404557).
+Seguindo avaliação tanto da área técnica como da PFE/Anatel, não identifico riscos competitivos advindos da operação que exijam a imposição de condicionamentos ou limitações na quantidade de radiofrequências transferidas.
+X - Da regularidade fiscal
+A regularidade fiscal deve ser observada nos termos do inciso IV do art. 11 do Decreto nº 10.402, de 2020, que estabelece como uma das diretrizes a serem observadas a "análise de regularidade fiscal da empresa para a qual a autorização esteja sendo transferida, relativamente a órgãos e entidades integrantes da administração pública federal e, se necessário, da administração pública estadual, distrital ou municipal".
+Registro que o tema é regulamentado pela Agência, por meio da Súmula nº 19, aprovada em 1º de dezembro de 2016, por meio da qual o Colegiado consolidou o entendimento institucional acerca da exigência de comprovação da regularidade fiscal no âmbito da análise de pedidos de anuência prévia. Posteriormente, conforme consignado no Acórdão nº 382, de 29 de novembro de 2021 (SEI nº 7736653), nos autos do Processo nº 53500.051211/2020-98, a referida Súmula passou por atualização, com o objetivo de adequá-la às alterações legislativas e regulamentares supervenientes, notadamente aquelas introduzidas pela Lei nº 13.879, de 3 de outubro de 2019, bem como ao RGO:
+Súmula nº 19
+"Requerimentos de anuência prévia para transferência de controle, de outorga ou de direito de exploração de satélite podem ser recebidos e instruídos sem a comprovação da regularidade fiscal, que deve ser demonstrada até o momento da assinatura dos atos de anuência prévia ou de transferência de outorga, conforme o caso.
+Nos casos de transferência de controle, a regularidade fiscal deve ser exigida apenas da empresa detentora de outorga para exploração do serviço de telecomunicações que estiver envolvida na operação. Nos casos de transferência de outorga ou de direito de exploração de satélite, a regularidade fiscal deve ser exigida apenas do sucessor.
+Requerimentos de anuência prévia para transferência de controle ou de outorga que envolvam empresa detentora de autorização não decorrente de procedimento licitatório, a comprovação deve incluir a regularidade fiscal perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço – FGTS; e a regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - Cadin.
+Requerimentos de anuência prévia para transferência de controle ou de outorga que envolvam empresa detentora de concessão ou autorização decorrente de procedimento licitatório, ou para transferência de direito de exploração de satélite decorrente de procedimento licitatório, a comprovação deve incluir, adicionalmente, a regularidade fiscal perante a Fazenda Estadual ou do Distrito Federal, e a Fazenda Municipal, expedida por órgão do lugar da sede da empresa envolvida na operação ou do sucessor, conforme o caso, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívidas ativas.
+Caso os documentos apresentados não atestem, de forma expressa, a inexistência de débitos inscritos em dívida ativa, devem ser apresentados, também, documentos expedidos pela Procuradoria da Fazenda Nacional, pela Procuradoria Geral do Estado e do Munícipio da sede da empresa envolvida na operação ou do sucessor, conforme o caso, ou órgão equivalente, nos quais seja atestada a inexistência de débitos inscritos em dívida ativa.
+A prova de regularidade fiscal perante a Fazenda Municipal deve abranger a apresentação das regularidades relativas a todos os débitos de natureza mobiliária.
+Requerimentos de anuência prévia que não tenham como objeto a transferência de controle, de outorga ou de direito de exploração de satélite dispensam a comprovação de regularidade fiscal pelo interessado, exceto quanto ao Fundo de Fiscalização das Telecomunicações - Fistel, por falta de previsão legal ou regulamentar.
+Excepcionalmente e de forma fundamentada, a Anatel pode demandar, quando se mostrar relevante, condicionantes adicionais em casos concretos.”
+Conforme estabelecido na referida Súmula, os pedidos de anuência prévia podem ser protocolizados, recebidos e regularmente instruídos mesmo sem a apresentação imediata da comprovação de regularidade fiscal. Todavia, essa exigência não é afastada, devendo a regularidade fiscal ser necessariamente demonstrada até o momento da assinatura dos atos administrativos que formalizem a anuência prévia, conforme a natureza da operação analisada.
+Noto que tanto as áreas técnicas (itens 3.46, SEI nº 15260777), como a PFE/Anatel (item 2.5, h, SEI nº 15404557) apresentaram avaliação convergente. Concluíram que a anuência prévia deve ser condicionada à comprovação de regularidade fiscal observando-se a Súmula nº 19 no que se refere a empresas detentoras de autorização decorrente de procedimento licitatório. 
+Assim, filio-me ao encaminhamento relatado acima, no sentido de que a anuência prévia seja condicionada à comprovação de regularidade fiscal:
+perante a Fazenda Federal, Fazenda Estadual ou do Distrito Federal, e a Fazenda Municipal, expedida por órgão do lugar da sede das empresas envolvidas na operação, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívidas ativas;
+relativamente ao Fundo de Garantia por Tempo de Serviço - FGTS; e
+perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - CADIN.
+Conforme registrei no Relatório desta Análise, após o sorteio da matéria, a UNIFIQUE apresentou documentação atualizada (SEI nº 15414040, 15414041, 15414042, 15414043, 15414044, 15414045, 15414046, 15425047 e 15425049) com vistas à comprovação da regularidade fiscal. Considero adequado que as áreas técnicas responsáveis procedam à análise desses documentos à luz das condições ora estabelecidas.
+XI - Da transferência da base de clientes e dos planos de serviços e ofertas do SMP
+O Regulamento Geral de Direitos do Consumidor - RGC, aprovado pela Resolução nº 765, de 6 de novembro de 2023, estabelece que o consumidor deve ser previamente informado acerca de quaisquer mudanças ocorridas a qualquer tempo, que impliquem alteração das condições de acesso e fruição dos serviços, conforme o inciso V do art. 4º e art. 31 da Norma:
+RGC
+"Art. 4º O Consumidor dos serviços cuja prestação está sujeita a este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável:
+V - ao prévio conhecimento e à informação adequada sobre as condições de contratação, prestação, canais de atendimento e suporte, formas de pagamento, Prazo de Permanência, Prazo de Vigência e extinção da Oferta, eventuais Serviços de Valor Adicionado, especialmente os preços cobrados, bem como a data e o índice aplicável, em caso de reajuste;
+[...]
+Art. 31. As Prestadoras deverão comunicar ao Consumidor, com antecedência mínima de 30 (trinta) dias, preferencialmente por meio eletrônico, entre outros:
+I - a extinção de Oferta com Prazo de Vigência indeterminado;
+II - o término do Prazo de Vigência determinado da Oferta;
+III - o término do Prazo de Permanência;
+IV - os reajustes que passarão a vigorar; e,
+V - a alteração da lista de canais disponibilizados na Oferta contratada de SeAC, nos casos previstos no art. 23.
+§ 1º As comunicações relacionadas aos incisos I e II deverão alertar o Consumidor sobre a necessidade de adesão a uma nova Oferta e as consequências de não a fazer no prazo estabelecido."
+Conforme apurado pela área técnica o pedido não apresenta restrições sob a óptica dos direitos do consumidor. Essa conclusão se baseou no diagnóstico de que (item 3.72, SEI nº 15260777), "em fevereiro de 2026 (último dado disponível), não foram identificados acessos declarados e nem estações terminais móveis licenciadas em bloco, da LIGGA (CNPJ nº 04.368.865/0001-66), para o SMP nas áreas que abrangem o Termo de Autorização de Uso de Radiofrequência que se pretende transferir, ainda que hajam acessos declarados associados a outra prestadora do mesmo grupo econômico". A PFE/Anatel (item 60, SEI nº 15404557) não vislumbrou óbice quanto ao ponto.
+Considerando que as outorgas em apreço não possuem acessos vinculados, descarto a necessidade de aplicação de medidas voltadas aos direitos dos consumidores devido a não aplicabilidade ao caso.
+XII - Da manutenção do atendimento de obrigações associadas às radiofrequências
+O inciso II do art. 11 do Decreto nº 10.402/2020, estabelece que as transferências de autorizações devem garantir a manutenção do atendimento de obrigações associadas às radiofrequências, atendido o interesse público.
+Em resposta à diligência da SOR (SEI nº 15204143), a SCO se pronunciou por meio do Ofício nº 47/2026/SCO-ANATEL (SEI nº 15241921), no qual detalhou as obrigações assumidas por LIGGA e UNIFIQUE ao arrematar o lote C6 na Licitação nº 1/2021-SOR/SPR/CD-ANATEL (Edital 5G) via formação do CONSÓRCIO 5G SUL. O ofício apresenta um quadro-resumo das metas, prazos e percentuais exigidos para cada obrigação.
+Sobre as obrigações da UNIFIQUE, a SCO consignou que a empresa cumpriu integral e tempestivamente as metas de backhaul com vencimento em 2023 e 2024. Quanto às metas de implantação de Estações Rádio-Base - ERBs 5G, observa-se que os prazos de cumprimento terão início em 31 de dezembro de 2026, razão pela qual ainda não houve comunicação de cumprimento, tampouco fiscalização ou atesto.
+Ofício nº 47/2026/ACO-ANATEL (SEI nº 15241921)
+"4. As obrigações assumidas pela Unifique foram:
+ Faixa
+ | 
+ Obrigação
+ | 
+ Item
+ (Anexo IV)
+ | 
+ % exigido
+ | 
+ Prazo
+ | 
+ Qtde. de metas
+ | 
+ Incr.
+ | 
+ Acumulado
+ | 
+ 3,5 GHz
+ | 
+ Construção de backhaul em fibra ótica em
+ sedes municipais1
+ | 
+ 7.1.1
+ | 
+ 40%
+ | 
+ 31/12/2023
+ | 
+ 1
+ | 
+ 1
+ | 
+ 7.1.2
+ | 
+ 70%
+ | 
+ 31/12/2024
+ | 
+ 1
+ | 
+ 2
+ | 
+ 7.1.3
+ | 
+ 100%
+ | 
+ 31/12/2025
+ | 
+ -
+ | 
+ -
+ | 
+ 7.1.4
+ | 
+ Ágio
+ | 
+ 31/12/2026
+ | 
+ -
+ | 
+ -
+ | 
+ Implantação de ERBs 5G em municípios abaixo
+ de 30.000 habitantes1
+ | 
+ 7.5.1
+ | 
+ 30%
+ | 
+ 31/12/2026
+ | 
+ 201
+ | 
+ 201
+ | 
+ 7.5.2
+ | 
+ 60%
+ | 
+ 31/12/2027
+ | 
+ 201
+ | 
+ 402
+ | 
+ 7.5.3
+ | 
+ 90%
+ | 
+ 31/12/2028
+ | 
+ 201
+ | 
+ 603
+ | 
+ 7.5.4
+ | 
+ 100%
+ | 
+ 31/12/2029
+ | 
+ 67
+ | 
+ 670
+ | 
+ Implantação de ERBs 5G em localidades2
+ | 
+ 7.5.5
+ | 
+ 100%
+ | 
+ 31/12/2030
+ | 
+ 41
+ | 
+ 41
+ | 
+1Obrigações previamente estabelecidas no Edital
+2 Obrigações adicionais decorrentes da conversão de ágio em novas metas
+4.1. Como se vê, a Unifique, ao arrematar parcela do lote C6 (SC e RS), assumiu obrigações de duas naturezas: i) implantação de backhaul em fibra óptica e ii) instalação de ERBs 5G. No primeiro caso, as metas venceram, de modo que foi realizado o trabalho de acompanhamento, fiscalização e atesto dessas obrigações. Para as metas relacionadas ao 5G, vê-se que os vencimentos se darão a partir de 31/12/2026.
+4.2. Assim, pela razão acima posta, cumpre esclarecer, de início, que as metas relacionadas à implantação de ERBs 5G não tiveram comunicação de cumprimento, e tampouco foram fiscalizadas ou atestadas, permanecendo pendentes em sua integralidade.
+4.3. Em relação às obrigações de backhaul, tem-se duas metas vencidas: a referente ao item 7.1.1, vencida em 31/12/2023, e referente ao item 7.1.2, vencida em 31/12/2024.
+4.3.1. Ambas as metas (itens 7.1.1 e 7.1.2), foram avaliadas no Informe nº 565/2025/COUN/SCO (SEI nº 14004617), que apontou para o seu atendimento integral e tempestivo. Tal atesto, bem como a devolução das respectivas garantias, foi formalizado no Despacho Decisório nº 841/2025/COUN/SCO (SEI nº 14886299).
+4.3.2. Vale lembrar que, para as obrigações assumidas, o Edital 5G não trouxe definição de quais municípios ou localidades deveriam ser atendidos em cada etapa, mas apenas quantidades de metas a se atender a cada ano, cabendo à prestadora essa escolha.
+No caso da LIGGA, verifico situação semelhante, os compromissos de implantação de ERBs 5G no Estado do Paraná também possuem prazos de cumprimento a partir de 31 de dezembro de 2026. Igualmente, não houve comunicação de cumprimento, fiscalização ou atesto, permanecendo todas as metas pendentes.
+Ofício nº 47/2026/ACO-ANATEL (SEI nº 15241921)
+5. As obrigações assumidas pela COPEL (LIGGA) foram:
+ Faixa
+ | 
+ Obrigação
+ | 
+ Item
+ (Anexo IV)
+ | 
+ % exigido
+ | 
+ Prazo
+ | 
+ Qtde. de metas
+ | 
+ Incr.
+ | 
+ Acumulado
+ | 
+ 3,5 GHz
+ | 
+ Implantação de ERBs 5G em municípios abaixo
+ de 30.000 habitantes1
+ | 
+ 7.5.1
+ | 
+ 30%
+ | 
+ 31/12/2026
+ | 
+ 101
+ | 
+ 101
+ | 
+ 7.5.2
+ | 
+ 60%
+ | 
+ 31/12/2027
+ | 
+ 101
+ | 
+ 202
+ | 
+ 7.5.3
+ | 
+ 90%
+ | 
+ 31/12/2028
+ | 
+ 101
+ | 
+ 303
+ | 
+ 7.5.4
+ | 
+ 100%
+ | 
+ 31/12/2029
+ | 
+ 33
+ | 
+ 336
+ | 
+ Implantação de ERBs 5G em localidades2
+ | 
+ 7.5.5
+ | 
+ 100%
+ | 
+ 31/12/2030
+ | 
+ 23
+ | 
+ 23
+ | 
+1Obrigações previamente estabelecidas no Edital
+2Obrigações adicionais decorrentes da conversão de ágio em novas metas" (grifado)
+5.1. A prestadora, ao arrematar parcela do lote C6 (PR), assumiu obrigações de instalação de ERBs 5G. Vê-se que os vencimentos se darão a partir de 31/12/2026. As metas relacionadas à implantação de ERBs 5G não tiveram comunicação de cumprimento, e tampouco foram fiscalizadas ou atestadas, permanecendo pendentes em sua integralidade."
+Face a esse cenário, a SCO argumentou que não vê impedimento para a transferência da outorga da LIGGA para a UNIFIQUE. Sugere que, em caso de anuência da operação, a UNIFIQUE deve assumir as obrigações futuras de cobertura atualmente atribuídas à LIGGA, além de apresentar previamente as garantias correspondentes:
+Ofício nº 47/2026/SCO-ANATEL (SEI nº 15241921)
+"6. Do acima exposto tem-se que não há sobreposições entre as metas de ambas as prestadoras. Ademais, não há, por parte da Copel (LIGGA), metas vencidas e tampouco metas atestadas, às quais, caso houvesse, caberia à Unifique a manutenção de atendimento. Assim, não se vislumbra nenhum impedimento quanto à transferência de outorga da Ligga (Copel) para a Unifique, cabendo apenas a esta última, na hipótese de concretização da transferência, assumir os compromissos de abrangência a vencer até então atribuídos à Copel, bem como, previamente à operação, apresentar as respectivas garantias de manutenção desses compromissos.
+7. Vale ainda dizer que as prestadoras são responsáveis não apenas pelo cumprimento das metas nos prazos devidos, mas pelas suas manutenções durante o prazo de outorga. Ademais, os Despachos de atesto expedidos possuem dispositivo informando que em caso de constatação posterior de irregularidades ou de alteração das condições, a Agência poderá exigir a reapresentação de garantias, deixando de considerar metas atendidas.
+8. Em relação à obrigação de recolhimento do ônus contratual, não se observa, até este momento, qualquer descumprimento, visto que a primeira parcela só vai vencer após a prorrogação do direito de uso da RF, em 2041, já que esta primeira outorga, feita em 2021, vale por 20 anos." (grifado)
+Pois bem. Nos documentos peticionados pelas partes, há manifestação expresa da UNIFIQUE na qual assume integralmente os compromissos originalmente assumidos pela LIGGA relativos ao Lote C6: 
+Petição Inicial (SEI nº 15193144)
+"O presente Pedido de Anuência Prévia tem por objeto a transferência do direito de uso de radiofrequências 5G atualmente outorgado Ligga para a Unifique, bem como — como consequência necessária e funcional da operação — a sub-rogação integral da Unifique em todas as obrigações e encargos vinculados ao Termo de Autorização nº 92/2021, com a readequação formal do instrumento de outorga para refletir a nova realidade jurídico-operacional."
+.............................
+Declaração de sub-rogação das obrigações da primitiva autorizada (SEI nº 15193155)
+"Unifique Telecomunicações S/A, estabelecida na Rua Duque de Caxias, nº 831, Bairro Centro, Timbó, SC, CEP 89.090-003, inscrita no CNPJ sob nº 02.255.187/0001-08, vem, através da presente, nos termos de seu Estatuto Social, declarar que tem ciência, conhece e sub-roga-se integralmente pelas obrigações, encargos e garantias decorrentes do Termo de Autorização nº 92/2021 (SEI n.º 7763026) outorgado originalmente à primitiva autorizada, Ligga Telecomunicações S/A, autorizatária do SMP inscrita no CNPJ sob o nº 04.368.865/0001-66, com sede localizada Avenida Vicente Machado, 1001, Batel, Curitiba/PR, CEP 80.420-011, assumidos na Licitação nº 1/2021-SOR/SPR/CD-ANATEL, promovida pela Agência Nacional de Telecomunicações." (grifado)
+Quanto aos compromissos assumidos pelas vencedoras do Edital 5G, transcrevo a Cláusula 7.1 do Termo de Autorização nº 92/2021 (SEI nº 7763026), mencionada acima, na qual se estabelece que a transferência de autorizações de radiofrequências é condicionada ao cumprimento integral de compromissos associados: "Cláusula 7.1. A transferência da autorização para uso de blocos de radiofrequências está sujeita às disposições estabelecidas na Lei nº 9.472, de 1997, e condicionada ao cumprimento integral dos compromissos relacionados no Capítulo X deste Termo."
+As áreas técnicas argumentam que o dispositivo do Termo de Autorização se refere a obrigações já vencidas:
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"3.51. Quanto à restrição imposta pela Cláusula em apreço (7.1), entende-se que é aplicável aos compromissos vencidos no momento da transferência do Termo. Tal entendimento decorre de uma interpretação sistemática exigida pela própria Cláusula, que submete a transferência às disposições da Lei Geral de Telecomunicações (LGT), Lei nº 9.472, de 16 de julho de 1997. Sob essa perspectiva hermenêutica, a qual exige que os dispositivos contratuais e normativos sejam compreendidos em consonância com o sistema jurídico mais amplo, a Cláusula em comento deve alinhar-se aos seguintes preceitos e dispositivos da referida Lei:
+a) a LGT não condiciona a transferência de autorizações ao cumprimento de obrigações futuras, estando a transferência da autorização sob as mesmas condições estabelecidas no art. 98; e
+b) A LGT estabelece como objetivo regulatório a ampliação do acesso e a massificação dos serviços (arts. 2º e 127).
+3.52. Ainda no contexto normativo da Cláusula 7.1., constata-se que o "cumprimento integral” amolda-se à estrutura normativa estabelecida no Capítulo X dos Termos de Autorização que contém obrigações de trato sucessivo, cujo cumprimento ocorre ao longo de diferentes marcos temporais. Essa dinâmica obrigacional fundamenta-se na lógica do direito administrativo contratual, de modo que o “cumprimento integral” não se refere à eliminação de todas as obrigações futuras ou de inviabilização de qualquer transferência enquanto existirem obrigações pendentes, mas sim ao adimplemento das obrigações já exigíveis.
+3.53. É importante vislumbrar, também, o efeito prático de uma decisão que, ao se basear em uma interpretação isolada da Cláusula como exigindo o cumprimento de obrigações que ainda não venceram, criaria um requisito não previsto na legislação, contrariando a diretriz da LGT de promover investimentos e expansão do serviço. Nesse sentido, a consequência dessa decisão hipotética de exigir o cumprimento de todos os compromissos, inclusive os futuros e antes da transferência, tornaria a Cláusula materialmente inexequível, pois compromissos de longo prazo impediriam quaisquer operações societárias, reduziriam a eficiência regulatória e, mais grave, ampliariam o risco de que parcela da população não seja beneficiada pelos compromissos de investimentos estabelecidos, comprometendo a massificação de serviços à sociedade e frustrando a politica pública estabelecida.
+3.54. Vê-se, portanto, que a interpretação que impõe o cumprimento apenas das obrigações vencidas favorece a continuidade das políticas públicas, pois permite que novos operadores assumam os compromissos futuros com maior capacidade técnica ou financeira, ampliando a probabilidade de seu cumprimento.
+3.55. Nesse sentido, à luz da LGT, dos princípios regulatórios, da finalidade do Edital e da natureza das obrigações, o termo “cumprimento integral” deve ser sistematicamente interpretado como cumprimento integral das obrigações vencidas, e não das obrigações futuras. Essa leitura harmoniza a Cláusula 7.1. com o ordenamento jurídico e com a política pública de massificação dos serviços, evitando interpretação que gere entraves desnecessários ou resultados contrários ao interesse público." (grifado)
+Quanto ao ponto, considerando a declaração de sub-rogação da UNIFIQUE (SEI nº 15193155), a área técnica não apresentou óbice quanto à diretriz do inciso II do art. 11 do Decreto nº 10.402/2020: 
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"3.60. Ante o exposto, conclui-se que o pedido de transferência de autorização de uso de radiofrequência detidas por LIGGA para a UNIFIQUE, sob exame, não apresenta restrições quanto ao requisito contido no inciso II do art. 11 do Decreto nº 10.402, de 2020, segundo a avaliação formalizada pela área técnica competente para manifestar-se sobre o tema, devendo ser condicionada a expedição do Ato de Transferência: a) à declaração de sub-rogação da sucessora nos direitos e obrigações assumidos pela antiga autorizada perante a Anatel, entre os quais se incluirão os compromissos ainda pendentes de atendimento, e, portanto, b) à necessidade de apresentação de novas garantias referentes aos compromissos ainda pendentes."
+A interpretação conferida pela área técnica à Cláusula 7.1 do Termo de Autorização mostra-se adequada e alinhada aos normativos do setor. Ao compreender que o requisito de “cumprimento integral” refere-se às obrigações vencidas e não à totalidade das obrigações futuras, preserva-se a coerência com as diretrizes da LGT e com os objetivos de promoção de investimentos e expansão dos serviços:
+"LGT
+Art. 2° O Poder Público tem o dever de:
+I - garantir, a toda a população, o acesso às telecomunicações, a tarifas e preços razoáveis, em condições adequadas;
+II - estimular a expansão do uso de redes e serviços de telecomunicações pelos serviços de interesse público em benefício da população brasileira;
+III - adotar medidas que promovam a competição e a diversidade dos serviços, incrementem sua oferta e propiciem padrões de qualidade compatíveis com a exigência dos usuários;
+IV - fortalecer o papel regulador do Estado;
+V - criar oportunidades de investimento e estimular o desenvolvimento tecnológico e industrial, em ambiente competitivo;
+VI - criar condições para que o desenvolvimento do setor seja harmônico com as metas de desenvolvimento social do País.
+VII - criar condições para ampliação da conectividade e da inclusão digital, priorizando a cobertura de estabelecimentos públicos de ensino. (Incluído pela Lei nº 14.173, de 2021)"
+Portanto, interpretação diversa implicaria, na prática, inviabilizar operações de reorganização no setor, criando restrição não prevista em lei e potencialmente prejudicial ao interesse público.
+Nesse sentido, a PFE/Anatel alinhou-se com o entendimento da área técnica. Adicionalmente, recomendou que a anuência prévia seja condicionada à sub-rogação de todos os direitos e obrigações assumidos pela autorizada perante a Anatel, incluindo-se, nesse conjunto, a integralidade dos compromissos ainda pendentes de atendimento, bem como à exigência de apresentação de novas garantias relativas a tais compromissos:
+Parecer nº 120/2026/PFE-ANATEL/PGF/AGU (SEI nº 15404557)
+42. A transferência das radiofrequências depende, assim, do cumprimento das metas vencidas até o momento da transferência. Havendo compromissos pendentes de atendimento, as compradoras devem se sub-rogar em relação a tais compromissos, assim como em todos os direitos e obrigações assumidos pela antiga autorizada perante a Anatel, devendo, ainda, apresentar garantias referentes aos referidos compromissos de abrangência.
+43. Tratam-se, esses compromissos de interesse da coletividade, do núcleo das autorizações de uso de radiofrequência a serem transferidas. São elementos intrínsecos à outorga que se pretende transferir, representando a própria prestação material pactuada pelo uso do bem público que é o espectro, e que realmente não poderiam deixar de ser assumidos pela prestadora que irá receber tais outorgas, sob pena de receber os bônus sem os ônus inerentes. No ponto, também não custa lembrar que tais compromissos compõem a própria precificação da outorga, de modo que sua não transferência também esbarraria em princípios como o da isonomia e concorrência.
+44. Nesse cenário, além de condicionar-se a transferência ao cumprimento dos compromissos já vencidos (muito embora, quanto à Ligga, o corpo técnico tenha consignado que não há metas vencidas – item 3.49 do Informe nº 4/2026/SOR), é importante que a operação seja condicionada: a) à sub-rogação da compradora nos direitos e obrigações assumidos pela antiga autorizada perante a Anatel, entre os quais se incluirão os compromissos ainda pendentes de atendimento, e, portanto, b) à necessidade de apresentação de novas garantias referentes aos compromissos ainda pendentes. (destacado)
+Pois bem. A transferência de autorizações de uso de radiofrequência envolve bem público escasso, no qual o direito de uso é condicionado ao atendimento de obrigações assumidas perante à Anatel em benefício do interesse coletivo. Assim, a análise do pleito deve necessariamente assegurar o cumprimento dos compromissos vinculados às outorgas que se pretende transferir. 
+Os documentos acostados aos autos, notadamente Declaração de sub-rogação (SEI nº 15193155) reconhece expressamente a assunção das obrigações associadas às radiofrequências relacionadas à transferência em análise, conforme examinados na presente seção. Ademais, as obrigações associadas ao direito de uso das radiofrequências envolvidas na operação concedidas por meio do Termo de Autorização nº 92/2021 atribuídas à LIGGA, referente aos compromissos de implantação de ERBs 5G possuem prazos de exigibilidade apenas a partir de 31 de dezembro de 2026.
+Noto que a motivação dessas condicionantes, visa garantir o cumprimento das obrigações estabelecidas em edital, sem causar qualquer prejuízo ao planejamento da expansão da rede 5G no país, em respeito ao interesse público, estímulo à expansão de redes e serviços de telecomunicações em benefício da população brasileira, entre outros. Ademais, ao se garantir a entrega dos compromissos, não haverá prejuízo à precificação dos lotes do certame, tendo em vista que os compromissos não cumpridos serão sub-rogados à UNIFIQUE. 
+De modo a enfatizar e a afastar quaisquer dúvidas face aos compromissos a serem assumidos pela UNIFIQUE, acolho a recomendação do Órgão Jurídico para assim inserir condicionante de que a transferência pretendida somente pode ocorrer mediante a sub-rogação da compradora em todos os direitos e obrigações assumidos pela antiga autorizada perante a Agência, inclusive aqueles pendentes de adimplemento, e a apresentação de novas garantias referentes aos compromissos a vencer.
+Com essas salvaguardas, resta preservado o núcleo essencial das outorgas: a realização dos compromissos de cobertura e investimento, garantindo-se a continuidade da política pública associada à implantação do 5G, sem prejuízo à criação de oportunidades de investimento e estímulo ao desenvolvimento tecnológico e industrial, em ambiente competitivo.
+XIII – Do preço público devido
+O art. 11 do Decreto nº 10.402/2020 estabelece que a transferência de autorização de uso de radiofrequência deve ser realizada a título oneroso. Contudo, no âmbito da Anatel, o tema não foi regulamentado. Tal situação decorre de os normativos da Agência relacionados terem sido editados anteriormente a esse Decreto. 
+Diante desse cenário, a área técnica sugere que o preço público praticado observe os arts. 26 e 28 do RGO, fixando o valor de R$ 400,00 (quatrocentos) reais:
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"3.67. Nesse sentido, recomenda-se que o Conselho Diretor defina o preço público a ser estabelecido, sugerindo-se, desde já, a fixação do valor R$ 400,00 (quatrocentos reais) por autorização a ser transferida, em consonância com a previsão do art. 26 do RGO, que estabelece o montante a ser exigido para transferência de autorização de serviços de telecomunicações:
+Art. 26. A autorização, a adaptação e a transferência de autorização, permissão e concessão de serviços de telecomunicações de interesse coletivo dará ensejo à cobrança de R$ 400,00 (quatrocentos reais), a ser pago, uma única vez, como condição para a expedição do instrumento de outorga.
+Parágrafo único. Aos órgãos da administração pública direta, autárquica e fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, a cobrança de que trata o caput será de R$ 40,00 (quarenta reais).
+3.68. Logo, caso o Conselho Diretor delibere pelo acolhimento da proposta formulada por esta área técnica, sugere-se, adicionalmente, a aplicação do art. 28 do RGO que estabelece a forma de recolhimento do referido preço público:
+Art. 28. O preço público de que tratam os arts. 26 e 27 deverá ser pago em parcela única.
+§ 1º O prazo para quitação da parcela única será de 30 (trinta) dias.
+§ 2º O inadimplemento após 30 (trinta) dias do vencimento do prazo a que se refere o § 1º implica a desistência do pedido.
+3.69. Convém destacar que o arcabouço regulatório vigente estabelece que o pagamento do preço público devido pela transferência passou a ser condição para a expedição do instrumento de outorga, in casu, do Ato de transferência correspondente, e não mais para a sua publicação no Diário Oficial da União. Mesmo nesse novo cenário, reitera-se a aplicação da condição de eficácia do Ato estabelecida pelo art. 163, § 3º, da LGT, a saber:
+Art. 163. O uso de radiofrequência, tendo ou não caráter de exclusividade, dependerá de prévia outorga da Agência, mediante autorização, nos termos da regulamentação.
+[...]
+§ 3° A eficácia da autorização de uso de radiofrequência dependerá de publicação de extrato no Diário Oficial da União."
+A PFE/Anatel não apresentou óbice à proposta e recomendou "que a Agência regulamente a matéria tão logo possível" (SEI nº 15404557, item 2.5.m).
+É relevante registrar que se encontra no Conselho Diretor para deliberação o Processo nº 53500.012178/2019-47 que cuida da revisão do Regulamento de Uso do Espectro de Radiofrequências - RUE, sob relatoria do Conselheiro Alexandre Freire. O preço público a ser pago pela transferência de autorização de uso de radiofrequências naqueles autos tem proposta da área técnica no mesmo sentido, ou seja, pela cobrança do valor de R$ 400,00 (quatrocentos reais) (SEI nº 13608200). Noto, todavia, que essa proposta não vincula a decisão final do Colegiado, podendo haver alteração na decisão final.
+Quanto ao ponto, observo que o RUE é um regulamento que congrega em um único instrumento normativo, aspectos técnicos especializados, como limites de interferência, parâmetros de operação e planejamento de faixas, com diretrizes jurídicas e econômicas aplicáveis ao setor de telecomunicações. Esse regulamento deve se harmonizar com normas internacionais e adaptá-las ao contexto brasileiro. Incorporar inovações tecnológicas e competitivas de modo a entregar uma norma atual e relevante para a sociedade são questões relacionadas a essa revisão regulamentar. A norma também disciplina diferentes formas de outorga, direitos e deveres dos agentes, hipóteses de transferência e mecanismos de fiscalização. Essa breve caracterização do RUE busca tão somente demonstrar a complexidade da revisão normativa pela qual o Colegiado se debruçará. 
+Dito isso e face a recomendação do Órgão Jurídico, recordo que o inciso XXXII do art. 133 RIA, atribui competência ao Colegiado para “deliberar na esfera administrativa quanto à interpretação da legislação de telecomunicações e sobre os casos omissos”.
+Portanto, entendo que o Conselho Diretor deve decidir sobre o preço público a ser aplicado em caso de transferência de autorização de uso de radiofrequência na deliberação da presente matéria.
+Registro que há precedentes na Anatel de anuências prévias de transferência de autorizações de direito de uso de radiofrequências, nos quais foram aplicados o preço público de R$ 400,00 (quatrocentos reais) em analogia ao art. 26 do RGO, a saber: 
+Análise nº 149/2021/EC (SEI nº 7729185), de 28 de janeiro de 2022, aprovada pelo Acórdão nº 9 (SEI nº 7979598), de 31 de janeiro de 2022.
+"4.123. Neste ponto, manifesto minha concordância com a proposta trazida pela área técnica e corroborada pela PFE, no sentido de fixar o valor de R$ 400,00 (quatrocentos reais) por Termo de Autorização a ser transferido, em consonância com a previsão do artigo 26 do RGO, bem como adotar a forma de recolhimento do referido preço público estabelecida no art. 28 do RGO, destacando a aplicação da condição de eficácia do Ato estabelecida pelo art. 163, § 3º, da LGT."
+.........................
+Análise nº 9/2026/OP (SEI nº 15085757), de 13 de fevereiro de 2026, aprovada pelo Acórdão nº 54 (SEI nº 15266362), de 3 de março de 2026
+"5.52. Pelo exposto, proponho a expedição de Ato formalizando a transferência das outorgas para explorar o SMP e de uso de radiofrequência pretendidos seja condicionada ao recolhimento do preço público de R$ 400,00 (quatrocentos reais), nos termos do regulamento."
+A proposta da área técnica é razoável e juridicamente adequada ao adotar, por analogia, o critério previsto no art. 26 do RGO, que fixa o valor de R$ 400,00 (quatrocentos reais) para a transferência de autorizações de serviços de telecomunicações. Considerando a existência de precedentes do Colegiado que se alinham com a proposta da área técnica, entendo que essa recomendação é adequada e supre de forma satisfatória para o presente caso a lacuna normativa existente ao assegurar a formalização dos atos de transferência. 
+Ademais, acompanho igualmente a sugestão de aplicação do art. 28 do RGO quanto à forma de recolhimento, estabelecendo-se o pagamento em parcela única, no prazo de 30 (trinta) dias, como condição para a expedição do respectivo ato de transferência, sem prejuízo da observância da condição de eficácia prevista no § 3º do art. 163 da LGT.
+No que tange ao caso concreto, em linha com a proposta acima, proponho a expedição de Ato formalizando a transferência de uso de radiofrequência pretendida de LIGGA para UNIFIQUE seja condicionada ao recolhimento do preço público de R$ 400,00 (quatrocentos reais), em parcela única no prazo de 30 (trinta) dias, como condição para a expedição do respectivo ato de transferência, sem prejuízo da observância da condição de eficácia prevista no § 3º do art. 163 da LGT.
+Gostaria de ressaltar que essa determinação não impede que, futuramente, o preço público aplicado face ao Decreto nº 10.402/2020 seja revisto por Regulamento da Agência, como o Regulamento de Uso de Espectro, que atualmente se encontra em revisão no Colegiado.
+XIV – Dos recursos de numeração.
+O tema encontra-se disciplinado pelo art. 151 da LGT:
+LGT
+"A Agência disporá sobre os planos de numeração dos serviços, assegurando sua administração de forma não discriminatória e em estímulo à competição, garantindo o atendimento aos compromissos internacionais"
+Os recursos públicos de numeração são aqueles estabelecidos pela Anatel em Planos de Numeração, sendo que sua utilização é obrigatória na forma regulada nesses planos.
+Referente aos recursos, a área técnica constatou que a operação em análise não apresenta restrições devido à ausência de acessos da LIGGA vinculados ao Termo nº 92/2021. 
+Informe nº 4/2026/SOR (SEI nº 15260777)
+"3.77. A operação deve ser comunicada pelas Requerentes à Associação Brasileira de Recursos em Telecomunicações - ABR Telecom, entidade administradora do sistema informatizado de planos de numeração (EASI), com o competente Ato de Anuência deste Órgão Regulador. A ABR Telecom já possui os procedimentos operacionais necessários à mudança de titularidade dos recursos de numeração com base em transferência de outorga.
+3.78. Ante o exposto, e considerando ainda que em pesquisa aos dados de acessos informados à Anatel, referentes a fevereiro de 2026 (último dado disponível), não foram identificados acessos declarados e nem estações terminais móveis licenciadas em bloco, da LIGGA (CNPJ nº 04.368.865/0001-66), para o SMP nas áreas que abrangem o Termo de Autorização de Uso de Radiofrequência que se pretende transferir, conclui-se que o pedido de sob exame não apresenta restrições sob a ótica dos recursos de numeração."
+A PFE/Anatel convergiu com esse entendimento ao consignar que o caso em análise não requer a apresentação de plano de numeração.
+Parecer nº 120/2026/PFE-ANATEL/PGF/AGU (SEI nº 154045515404557)
+"69. Considerando que, no presente caso, o corpo técnico da Agência informou que não foram identificados acessos declarados e nem estações terminais móveis licenciadas em bloco nas áreas que abrangem o Termo de Autorização de Uso de Radiofrequência que se pretende transferir, a princípio, não haveria necessidade de apresentação de Plano de Numeração. Não obstante, o caso concreto deve ser avaliado pelo Conselho Diretor da Agência."
+Face à inexistência de acessos vinculados ao Termo de Autorização nº 92/2021, concluo que o caso concreto não demanda a imposição de condicionantes relacionados a recursos de numeração.
+Ademais, registro que o Órgão Jurídico destacou que diante das alterações introduzidas pela Lei nº 13.879/2019, posteriormente regulamentada pelo Decreto nº 10.402/2020, e à regulamentação atualmente vigente na Agência acerca dos planos de numeração ser anterior a essas normas, seria pertinente a deliberação do Colegiado sobre a matéria considerando os recursos de numeração.
+Em razão de o caso concreto não abarcar recursos de numeração, entendo não ser adequada a deliberação específica sobre o tema no presente processo. Embora a transferência das autorizações de uso de radiofrequência entre prestadoras, sem a correspondente transferência da outorga de serviço de telecomunicações esteja endereçada na revisão do RUE, os recursos de numeração não são objeto da proposta apresentada pela área técnica. 
+XV. Do pedido de restrição de acesso
+A petição inicial protocolada pelas Requerentes (SEI nº 15193144), entre outros, solicitou a atribuição de tratamento confidencial ao pedido de anuência prévia, bem como aos documentos apresentados com base no parágrafo único do art. 39 da LGT. Registro que há petições protocolizadas pelas interessadas que não possuem solicitação de sigilo.
+Sobre o tema, observo que a publicidade constitui a regra geral que deve orientar a atuação da Administração Pública, ao passo que o sigilo configura exceção, admitida apenas nas hipóteses expressamente previstas em lei. Nesse sentido, o art. 39 da LGT estabelece que as informações de natureza técnica, operacional, econômico-financeira e contábil das prestadoras de serviços de telecomunicações devem receber tratamento confidencial no âmbito da Anatel, quando caracterizadas tais condições.
+Diante das informações protocolizadas pelas partes, com base no parágrafo único do art. 39 da LGT, realizei avaliação individualizada quanto ao grau de acesso aplicável a cada documento. Concluo pela atribuição de tratamento sigiloso aos documentos de SEI nº 15193144, 15193146, 15193147, 15193148, 15193149, 15193150, 15193153, 15193154, 15193155, 15193156, 15193157, 15193159, 15193160, 15193161, 15193162, 15193163, 15259236, 15259237, 15259238, 15259239, 15259240, 15259241, 15290473, 15290474, 15414040, 15414041, 15414042, 15414043, 15414044, 15414045, 15414046, 15425047 e 15425049 com concessão de vistas restritas às empresas LIGGA e UNIFIQUE. Por outro lado, os documentos de SEI nº 15193145, 15193151, 15193152, 15263206, 15290472, 15414039 e 15425045 não se enquadram nas hipóteses legais de restrição à publicidade, razão pela qual devem permanecer com acesso irrestrito.
+XVI. Das considerações finais
+Em observância ao art. 21 do RGO, proponho que a presente anuência prévia tenha validade de 180 (cento e oitenta) dias, contados a partir da publicação do Ato de Anuência no Diário Oficial da União - DOU, prorrogável, a pedido das interessadas, uma única vez por igual período, desde que mantidas as condições aqui verificadas.
+Por fim, sugiro que a anuência prévia seja concedida nos termos da Minuta de Ato SEI nº 15407858.
+CONCLUSÃO
+Voto por:
+Transferir a autorização de direito de uso de radiofrequências, em caráter primário, associada à notificação para prestar o Serviço Móvel Pessoal (SMP) detida por LIGGA TELECOMUNICAÇÕES S.A., CNPJ nº 04.368.865/0001-66, consoante Termo de Autorização nº 92/2021 (SEI nº 7763026), para a empresa UNIFIQUE TELECOMUNICAÇÕES S.A., CNPJ nº 02.255.187/0001-08, condicionada a expedição do Ato de Transferência, nos moldes da minuta de Ato SEI nº 15407858:
+a.1. à comprovação de regularidade fiscal por parte da empresa UNIFIQUE TELECOMUNICAÇÕES S.A., CNPJ nº 02.255.187/0001-08, na qualidade de sucessora, mediante o envio de (i) Certidão comprobatória de regularidade perante as Fazendas Federal, Estadual, Municipal ou do Distrito Federal, da sede do licitante; (ii) Certificado de Regularidade do Fundo de Garantia por Tempo de Serviço - CRF-FGTS; e (iii) Certidão comprobatória de regularidade perante a Anatel, em consonância com a Súmula nº 19, de 1º de dezembro de 2016, cujo atesto do seu cumprimento deve ser realizado pela Superintendência de Competição - SCP;
+a.2. ao recolhimento do preço público devido pela transferência das autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal (SMP), em conformidade com o disposto no art. 26 do Regulamento Geral de Outorga, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, cuja comprovação deve ser realizada pela Superintendência de Outorga e Recursos à Prestação - SOR;
+a.3. à apresentação de declaração de sub-rogação da UNIFIQUE TELECOMUNICAÇÕES S.A., CNPJ nº 02.255.187/0001-08, nos direitos e obrigações assumidos por LIGGA TELECOMUNICAÇÕES S.A., CNPJ nº 04.368.865/0001-66, perante a Superintendência de Outorgas e Recursos à Prestação (SOR), entre os quais se incluirão todos os compromissos ainda pendentes de atendimento, referentes ao Termo de Autorização nº 92/2021 (SEI nº 7763026), assim como à apresentação de novas Garantia(s) de Execução de Compromissos perante a Superintendência de Controle de Obrigações (SCO), na forma do item 9.7 e nos valores previstos no ANEXO II do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, que comprove estar dentro do prazo de validade estabelecido no certame.
+Determinar a celebração de Termo Aditivo com a UNIFIQUE TELECOMUNICAÇÕES S.A., CNPJ nº 02.255.187/0001-08, para fins de formalização da transferência a que se refere o item 6.1 desta Conclusão, após a expedição e publicação do respectivo Ato.
+A decisão do Conselho Diretor a que se refere o item 6.1 desta Conclusão valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Acórdão no Diário Oficial da União, prorrogável, a pedido, uma única vez por igual período, se mantidas as mesmas condições de aprovação.
+Fixar o valor de R$ 400,00 (quatrocentos reais) a ser pago para a transferência de autorizações de direito de uso de radiofrequencia, em parcela única, no prazo de 30 (trinta) dias, como condição para a expedição do respectivo ato de transferência, sem prejuízo da observância da condição de eficácia prevista no § 3º do art. 163 da LGT.
+Determinar à Superintendência de Competição - SCP que avalie os documentos de SEI nº 15414040, 15414041, 15414042, 15414043, 15414044, 15414045, 15414046, 15425047 e 15425049) para fins de comprovação da regularidade fiscal.
+Atribuir tratamento sigiloso aos documentos de SEI nº 15193144, 15193146, 15193147, 15193148, 15193149, 15193150, 15193153, 15193154, 15193155, 15193156, 15193157, 15193159, 15193160, 15193161, 15193162, 15193163, 15259236, 15259237, 15259238, 15259239, 15259240, 15259241, 15290473, 15290474, 15414040, 15414041, 15414042, 15414043, 15414044, 15414045, 15414046, 15425047 e 15425049 
+Não atribuir tratamento sigiloso aos documentos de SEI nº 15193145, 15193151, 15193152, 15263206, 15290472, 15414039 e 15425045.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 06/04/2026, às 19:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15413715 e o código CRC D8298C16.
+ | 
+Referência: Processo nº 53500.012875/2026-27 | 
+SEI nº 15413715 |

@@ -1,0 +1,43 @@
+SEI/ANATEL - 15488670 - Acórdão
+Boletim de Serviço Eletrônico em 15/04/2026
+DOU de 15/04/2026, seção 1, página 22
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 95, de 14 de abril de 2026
+Processo nº 53500.016193/2026-93
+Recorrente/Interessado: TIM S.A.
+CNPJ nº 02.421.421/0001-11
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 95, de 14 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. PEDIDO DE RECONSIDERAÇÃO EM LICITAÇÃO. EDITAL Nº 1/2026-SOR/SPR/CD-ANATEL. PEDIDO NÃO CONHECIDO E RECEBIDO COMO DIREITO DE PETIÇÃO, COM PARCIAL DEFERIMENTO.
+I. CASO EM EXAME
+1. O Pedido. Pedido de Reconsideração apresentado por TIM S.A. contra o Acórdão nº 86, de 30 de março de 2026, que deliberou sobre impugnações ao Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, relativo a radiofrequências na faixa de 700 MHz.
+2. Os Pedidos formulados. A Peticionária requereu o julgamento urgente do pleito antes da entrega dos documentos da licitação. Requereu a declaração de nulidade parcial do Acórdão nº 86/2026 por suposta inobservância de rito procedimental. Requereu a revisão do mérito para retificação do Edital quanto à lista de trechos de rodovias, às restrições de participação e à obrigação de remanejamento.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se cabe Pedido de Reconsideração contra decisão do Conselho Diretor proferida em matéria de impugnação de edital de licitação; (ii) saber se há nulidade parcial do Acórdão nº 86/2026 por suposta inobservância do art. 17, § 1º, da Resolução Anatel nº 65/1998 e do item 3.1.1 do Edital; (iii) saber se devem ser alterados o Anexo XII-A, os itens 1.1 e 1.2 do Anexo III e a obrigação de remanejamento prevista no Edital; e (iv) saber se o caso comporta deliberação por Circuito Deliberativo.
+III. RAZÕES DE DECIDIR
+1. O Edital de Licitação tem caráter geral e abstrato. O Procedimento Licitatório observa rito específico de impugnação previsto na Resolução Anatel nº 65/1998 e no próprio Edital.
+2. O art. 115, § 9º, do Regimento Interno da Anatel - RIA estabelece que os recursos referentes a licitações observam a legislação específica da matéria. Por isso, o Pedido de Reconsideração não é cabível no caso.
+3. A peça pode ser recebida como exercício do direito de petição. A Peticionária é parte legítima. A manifestação foi apresentada tempestivamente.
+4. Não há nulidade procedimental no Acórdão nº 86/2026. A alegação de sobreposição de compromissos em trechos de rodovias foi apreciada pela área técnica, pela Procuradoria Federal Especializada junto à Anatel - PFE/Anatel e pelo Conselho Diretor.
+5. O risco de sobreposição foi tratado no processo de conformação do Edital. O Edital prevê mecanismo de substituição de localidade ou trecho de rodovia quando já houver infraestrutura que atenda aos requisitos previstos.
+6. Não se justifica a exclusão prévia dos trechos questionados no Anexo XII-A. A modelagem adotada, somada ao mecanismo de substituição posterior, é suficiente para tratar a situação apontada.
+7. As restrições de participação dos itens 1.1 e 1.2 do Anexo III têm fundamento na Portaria MCom nº 18.902/2025, nas análises técnicas do processo e no modelo licitatório já examinado pelo Tribunal de Contas da União - TCU. Essas regras buscam fomentar a competição e o uso eficiente do espectro.
+8. A retificação anterior do item 1.1 do Anexo III já esclareceu o alcance da prioridade conferida às prestadoras regionais detentoras de autorização na faixa de 3,5 GHz na área do respectivo lote.
+9. A obrigação de remanejamento prevista no Edital foi mantida. A medida foi associada à eficiência espectral, à isonomia entre os participantes, à atratividade do certame e à ampliação do atendimento.
+10. O Processo está suficientemente instruído. A proximidade das etapas da licitação autoriza o pronto julgamento por Circuito Deliberativo, nos termos do art. 27 do Regimento Interno da Anatel - RIA.
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração não conhecido. Petição recebida como exercício do direito de petição. Parcial deferimento apenas para acolher o pedido de pronto julgamento e submeter a matéria a Circuito Deliberativo. Demais alegações rejeitadas.
+Tese de julgamento: "1. Não cabe pedido de reconsideração contra decisão do Conselho Diretor proferida em sede de impugnação de edital de licitação, porque a matéria se submete a rito específico. 2. A peça pode ser recebida como exercício do direito de petição. 3. Não há nulidade no Acórdão nº 86/2026, pois a controvérsia sobre eventual sobreposição de compromissos foi apreciada pela área técnica, pela PFE-Anatel e pelo Conselho Diretor. 4. Mantêm-se a lista de trechos de rodovias, as restrições de participação e a obrigação de remanejamento previstas no Edital nº 1/2026-SOR/SPR/CD-ANATEL. 5. É cabível o pronto julgamento por Circuito Deliberativo diante da urgência e da instrução suficiente do processo."
+Dispositivos relevantes citados: CF/1988, art. 37, caput, e art. 87, parágrafo único, I e II; Lei nº 9.472/1997, arts. 19, I, 22 e 38; Lei nº 9.784/1999, art. 2º; Lei nº 14.133/2021, art. 164; Lei nº 14.600/2023, art. 23, I; Decreto nº 2.338/1997, art. 63; Decreto nº 9.612/2018, art. 9º; Portaria MCom nº 18.902/2025, art. 2º, II, e art. 3º, II; Resolução Anatel nº 65/1998, art. 17, § 1º; Resolução Anatel nº 612/2013, arts. 27, 115, § 9º, e 126.
+Jurisprudência relevante citada: TRF1, Processo nº 0009854-13.2015.4.01.3400, Rel. para Acórdão Des. Fed. Kassio Nunes Marques, 6ª Turma, publ. DJe 26.04.2019; TCU, Acórdão nº 276/2026, Processo TC 015.833/2025-9, Rel. Min. Jhonatan de Jesus, Plenário.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 36/2026/OP (SEI nº 15464740), integrante deste acórdão, não conhecer do Pedido de Reconsideração, recebendo a peça apresentada como exercício do direito de petição, dando-lhe parcial deferimento unicamente para acolher o Pedido de pronto julgamento, submetendo a matéria a Circuito Deliberativo e indeferindo as demais alegações.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 14/04/2026, às 18:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15488670 e o código CRC D0043906.
+ | 
+Referência: Processo nº 53500.016193/2026-93 | 
+SEI nº 15488670 |

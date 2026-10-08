@@ -1,0 +1,46 @@
+SEI/ANATEL - 15835710 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 56
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 157, de 19 de junho de 2026
+Processo nº 53500.003073/2016-54
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - cide-fust. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A., sucessora, por incorporação, de A. TELECOM S.A., contra decisão que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Contribuição ao Fundo de Universalização de Telecomunicações - Cide-Fust, relativos ao exercício de 2012, bem como da multa de ofício correspondente.
+2. Fato relevante. A fiscalização da Anatel apurou recolhimento incompleto da Cide-Fust no exercício de 2012 e lavrou notificação de lançamento de ofício para cobrança da diferença constatada.
+3. As decisões anteriores. A impugnação administrativa foi rejeitada. A Superintendência de Controle de Obrigações - SCO reconheceu a procedência dos lançamentos do crédito tributário e da multa de ofício. A Empresa interpôs Recurso Administrativo.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a notificação de lançamento é nula por ausência de fundamentação e por alegado cerceamento de defesa; (ii) saber se houve erro na mensuração da base de cálculo da Cide-Fust, com inclusão indevida de receitas e sem exclusão de descontos concedidos; e (iii) saber se são devidas a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 e a incidência de juros de mora sobre os valores cobrados a esse título.
+III. RAZÕES DE DECIDIR
+1. O Recurso preenche os pressupostos de admissibilidade quanto à tempestividade, ao interesse recursal, à legitimidade e à regular representação.
+2. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, pois o caso não se enquadra nas hipóteses do art. 5º, IV, da Portaria nº 642/2013, conforme interpretação fixada no Parecer nº 00161/2026/PFE-ANATEL/PGF/AGU.
+3. A notificação de lançamento observou os requisitos formais do art. 11 do Decreto nº 70.235/1972. O ato identificou a devedora, indicou o valor do crédito, apontou o prazo para recolhimento ou impugnação e consignou o fundamento legal da cobrança.
+4. Os relatórios de fiscalização indicaram os procedimentos adotados e as receitas consideradas na apuração da base de cálculo. A Recorrente teve acesso aos autos e exerceu plenamente o contraditório e a ampla defesa.
+5. Não se verifica nulidade sem demonstração de prejuízo. A alegação de ausência de motivação não prospera.
+6. A Cide-Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, nos termos do art. 6º, IV, da Lei nº 9.998/2000.
+7. A fiscalização apurou a base de cálculo com fundamento em documentos contábeis apresentados pela própria Prestadora. O reexame realizado após a impugnação confirmou os valores inicialmente apurados.
+8. A Recorrente não apresentou prova técnica suficiente para demonstrar que as receitas autuadas eram dissociadas da atividade de telecomunicações ou que houve erro material na apuração dos descontos concedidos.
+9. Os precedentes invocados pela Recorrente sobre o Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS não afastam a incidência da Cide-Fust, pois se referem a tributo com hipótese de incidência distinta.
+10. A multa de ofício de 75% (setenta e cinco por cento) é cabível nos casos de falta de declaração e nos de declaração inexata dos valores devidos, nos termos do art. 44, I, da Lei nº 9.430/1996.
+11. A multa de 2% (dois por cento), prevista no art. 8º, § 1º, do Decreto nº 3.624/2000 não afasta a aplicação da penalidade legal do art. 44, I, da Lei nº 9.430/1996. Decreto regulamentar não pode afastar penalidade prevista em lei formal.
+12. Os juros de mora sobre a multa de ofício são devidos. O crédito não integralmente pago no vencimento é acrescido de juros de mora, nos termos do art. 161 do Código Tributário Nacional - CTN. A multa integra a obrigação principal para fins de exigibilidade do crédito tributário.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido.
+Tese de julgamento: "1. É válida a notificação de lançamento que observa os requisitos do art. 11 do Decreto nº 70.235/1972 e permite o exercício do contraditório e da ampla defesa. 2. A base de cálculo da Cide-Fust pode ser apurada com fundamento na documentação contábil apresentada pela Prestadora, cabendo ao Recorrente comprovar eventual erro material ou exclusão indevida de receitas. 3. É cabível a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 nos casos de recolhimento a menor da Cide-Fust. 4. São devidos juros de mora sobre o crédito tributário não integralmente pago no vencimento, inclusive sobre a multa de ofício."
+Dispositivos relevantes citados: Lei nº 5.172/1966, arts. 113, § 3º, 142, 146, 149 e 161; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 60; Lei nº 9.784/1999, art. 50; Lei nº 9.998/2000, arts. 1º e 6º, IV; Lei nº 10.522/2002, art. 37-A; Decreto nº 70.235/1972, arts. 10, 11 e 14; Decreto nº 3.624/2000, arts. 7º, IV, e 8º, § 1º; Resolução nº 247/2000, art. 3º, V; Portaria nº 642/2013, art. 5º, IV; Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: Superior Tribunal de Justiça - STJ, AgRg no AREsp 314.483/PR, Rel. Min. Mauro Campbell Marques, Segunda Turma, j. 06.08.2013, DJe 13.08.2013; Anatel, Acórdão nº 91, Processo nº 53504.000858/2012-10, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 921, j. 13.04.2023; Anatel, Acórdão nº 276, Processo nº 53504.018680/2010-93, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 936, j. 25.09.2024; Anatel, Acórdão nº 353, Processo nº 53504.026793/2009-29, Rel. Conselheiro Alexandre Reis Siqueira Freire, Reunião nº 939, j. 05.12.2024; Anatel, Acórdão nº 92, Processo nº 53500.014211/2010-35, Rel. Conselheiro Daniel Martins D'Albuquerque, Reunião nº 942, j. 03.04.2025; Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 5.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 47/2026/EH (SEI nº 15713673), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15835710 e o código CRC 2A87DA97.
+ | 
+Referência: Processo nº 53500.003073/2016-54 | 
+SEI nº 15835710 |

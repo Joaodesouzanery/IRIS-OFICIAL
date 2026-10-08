@@ -1,0 +1,178 @@
+SEI/ANATEL - 15269800 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 1/2026/NP
+Processo nº 53500.024016/2016-17
+Interessado: Omnilink Tecnologia S.a.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência do lançamento de créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública - CFRP, relativamente ao exercício financeiro de 2016.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por Omnilink Tecnologia S.A. contra decisão da Superintendência de Controle de Obrigações que reconheceu a procedência de lançamento de crédito tributário de CFRP referente ao exercício de 2016, indicado na Notificação de Lançamento nº 001-010499/2016/AFFO-ANATEL.
+ Fatos relevantes. A recorrente alegou inexistência de fato gerador em razão de solicitação de exclusão de radiofrequências em 17 de novembro 2015 e sustentou falha da Anatel no processamento do requerimento, dever de orientação e suposta falha do sistema STEL.
+ Decisões anteriores. A Superintendência de Controle de Obrigações - SCO reconheceu a procedência do lançamento. A mesma unidade conheceu do recurso e encaminhou os autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se é devida a cobrança de CFRP do exercício de 2016 quando a prestadora excluiu radiofrequências, mas manteve as estações ativas no STEL até 03 de dezembro de 2018, sem pedido formal de cancelamento da licença.
+III. RAZÕES DE DECIDIR
+ O fato gerador da CFRP ocorre em 1º de janeiro de cada ano e a base de cálculo considera o número de estações ativas no sistema na data de ocorrência do fato gerador.
+ A exclusão de radiofrequências não se confunde com o cancelamento das estações no STEL e não afasta a incidência da cobrança.
+ A recorrente possuía acesso ao autocadastramento desde 2014 e era responsável pela gestão de exclusões no STEL, inclusive quanto aos encargos financeiros decorrentes.
+ As informações técnicas demonstraram que as estações permaneceram ativas em 31 de dezembro de 2015 e que sua exclusão ocorreu apenas em 03 de dezembro de 2018.
+ Não se constatou falha de orientação da Anatel, pois a Agência respondeu às solicitações de esclarecimento com informação objetiva sobre a necessidade de as estações constarem como excluídas.
+IV. DISPOSITIVO E TESE
+ Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. A cobrança de CFRP do exercício de 2016 é devida pois as estações permaneceram ativas em 31 de dezembro de 2015, com fato gerador em 1º de janeiro de 2016. 2. A exclusão de radiofrequências não equivale ao cancelamento das estações e não afasta a incidência da CFRP. 3. Compete à prestadora, com acesso ao autocadastramento, promover a exclusão das estações no STEL e suportar os encargos decorrentes."
+Dispositivos relevantes citados: Lei nº 11.652/2008; Resolução nº 729/2020, arts. 7º a 10; Resolução nº 612/2013, art. 116; Portaria Normativa nº 1355/2019, item 7.1.1.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 11.652, de 7 de abril de 2008, que institui os princípios e objetivos dos serviços de radiodifusão pública explorados pelo Poder Executivo ou outorgados a entidades de sua administração indireta.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel - RIA.
+Regulamento de Arrecadação de Receitas Tributárias, aprovado pela Resolução nº 729, de 19 de junho de 2020.
+Portaria Normativa nº 1355, de 26 de julho de 2019.
+RELATÓRIO
+Cuida-se de Recurso Administrativo interposto por OMNILINK TECNOLOGIA S.A., em face do Despacho nº 400/2025/COGE/SCO (SEI nº 13905586), 3 de julho de 2025, por meio do qual o Superintendente de Controle de Obrigações Substituto - SCO reconheceu a procedência do lançamento do crédito tributário referente à Contribuição para o Fomento da Radiodifusão Pública - CFRP, relativas ao exercício financeiro de 2016.
+Em 28 de julho de 2016 foi emitida a Notificação de Lançamento nº 001-010499/2016/AFFO-ANATEL (SEI nº 0886693), informando a existência de débitos da empresa Zatix Tecnologia S.A., atualmente Omnilink Tecnologia S.A. - Omnilink, referente a CFRP, do Fistel nº 50411271903.
+Em 29 de setembro de 2016 a empresa apresentou Impugnação Administrativa (SEI nº 0853226) requerendo o acolhimento de suas razões para julgar insubsistente o crédito tributário e o efeito suspensivo da sua exigibilidade. A Omnilink apresentou em 7 de outubro de 2026 outra petição (SEI nº 0873057) com idêntico teor.
+Em 25 de abril de 2021 foi encaminhada consulta à Gerência de Outorga e Licenciamento de Estações - ORLE, por meio do Memorando nº 93/2021/AFFO6/AFFO/SAF (SEI nº 7301972) requerendo subsídios quanto a situação da autorização da Recorrente.
+Em 10 de janeiro de 2023 a ORLE atendeu a consulta por meio do Memorando nº 17/2023/ORLE/SOR (SEI nº 9669309) informando que a Omnilink teria excluido apenas as radiofrequências associadas sem excluir as estações, sendo devidas as taxas e contribuições incidentes.
+Por meio do Informe nº 527/2025/CODI/SCO (SEI nº 13903694), de 3 de julho de 2025, a Área Técnica analisou a impugnação protocolizada pela Recorrente e aduziu que não era a Anatel a responsável por efetivar a exclusão das estações no sistema STEL, sendo esta uma responsabilidade da própria empresa. Concluiu ser devida a CFRP do ano de 2016, pois as estações estavam ativas em 31 de dezembro de 2015. Opinou-se pela procedência dos lançamentos dos créditos referente à CFRP, no exercício de 2016, indicado na Notificação de Lançamento nº 001-010499/2016/ AFFO - ANATEL (0886693).
+Por meio do Despacho Decisório nº 400/2025/CODI/SCO (SEI nº 13905586), de 3 de julho de 2025, a Superintendente de Controle de Obrigações - SCO decidiu:
+Despacho Decisório nº 400/2025/CODI/SCO (SEI nº 13905586)
+"1. RECONHECER A PROCEDÊNCIA do lançamento do crédito tributário referente à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), no exercício de 2016, indicado na Notificação de Lançamento nº 001-010499/2016/AFFO - ANATEL (0886693).
+2. DETERMINAR à Gerência de Controle de Obrigações de Direitos dos Consumidores (CODI) que proceda à notificação da empresa, encaminhando cópia desta decisão." 
+(grifos no original)
+Notificou-se a Recorrente do teor da decisão proferida, nos termos do Ofício nº 518/2025/CODI/SCO-ANATEL (SEI nº 13905623), de 3 de julho de 2025, recebido em 14 de julho de 2025 (SEI nº 14001494) por meio de consulta direta pela procuradora Fernanda Zampieri Dantola.
+Aos 29 de julho de 2025, a Recorrente interpôs Recurso Administrativo (SEI nº 14090991), sustentando:
+a) Inexistência de fato gerador: As estações estavam desativadas, pois a empresa solicitou a exclusão das frequências em 17/11/2015, o que implica a inoperância das estações, afastando a cobrança da CFRP de 2016. A Anatel não processou corretamente o pedido e criou exigência formal não prevista, violando legalidade e segurança jurídica. 
+b) Boa-fé e dever de orientação: A Administração deveria ter orientado a empresa caso faltasse algum procedimento, conforme a Lei 9.784/1999 e a Lei da Liberdade Econômica.
+c) Falha no sistema STEL: Orientações incorretas da própria Anatel contribuíram para o suposto erro no procedimento, tornando o lançamento inválido.
+Requereu-se, ao final, o recebimento e conhecimento do Recurso Administrativo, a reforma da decisão administrativa com o cancelamento integral da CFRP e a manutenção da suspensão da exigibilidade até julgamento definitivo.
+Em 4 de fevereiro de 2026 foi emitido o Informe nº 57/2026/CODI/SCO (SEI nº 15080264) analisando as alegações da Recorrente e concluindo pela ausência de fundamentos jurídicos e legais para afastar a cobrança da CFRP. Sugeriu-se conhecer do Recurso e manter os termos do Despacho Decisório nº 400/2025/CODI/SCO (SEI nº 13905586), encaminhando os autos a este colegiado para julgamento do mérito recursal.
+Na mesma data, a SCO proferiu o Despacho Decisório nº 40/2026/CODI/SCO (SEI nº 15080311), por meio do qual resolveu:
+Despacho Decisório nº 40/2026/CODI/SCO (SEI nº 15080311)
+"a) CONHECER do Recurso Administrativo interposto pela OMNILINK TECNOLOGIA S.A., CNPJ nº 03.585.974/0001-72, contra o Despacho Decisório nº 400/2025/CODI/SCO (SEI nº 13905586), mantendo os termos da decisão recorrida;
+b) ENCAMINHAR este processo ao Conselho Diretor para julgamento de mérito."
+ (grifos no original)
+Encaminharam-se os autos à apreciação deste Órgão Colegiado, conforme Matéria para Apreciação do Conselho Diretor nº 42/2026 (SEI nº 15080313) e, em sorteio realizado no dia 9 de fevereiro de 2026, designou-se a Conselheira Cristiana Camarate para relatar a matéria (SEI nº 15156759).
+Aos 4 de março de 2026, a matéria foi redistribuição para minha relatoria (SEI nº 15269720).
+É o relatório.
+FUNDAMENTAÇÃO
+A instauração e instrução do presente processo atenderam a sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 4 (quatro) partes. Na primeira, examinarei a admissibilidade do Recurso Administrativo. Na segunda parte, tratarei da dispensa de manifestação da PFE-Anatel. Na quarta parte, avaliarei o mérito recursal. No último capítulo, procederei à avaliação quanto à conformação do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+I - ADMISSIBILIDADE DO RECURSO ADMINISTRATIVO
+O prazo para interposição de Recurso Administrativo era de 30 (trinta) dias, nos termos do art. 33 do Decreto nº 70.235, de 1972, e da Portaria Anatel nº 1355, de 2019:
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão.
+--------------------
+Portaria Anatel nº 1355, de 26 de julho de 2019 - Fase Contenciosa de Processos Administrativos Fiscais (PAF-C)
+7.1.1. O prazo para apresentação de recurso administrativo é de 30 (trinta) dias. (Redação dada pela Portaria nº 1751, de 3 de dezembro de 2020)
+Destaca-se que, em 13 de janeiro de 2026, foi editada a Lei Complementar nº 227, que alterou o prazo em exame para 20 (vinte) dias úteis, contados a partir da notificação. No entanto, considerando o princípio de que "o tempo rege o ato" (tempus regit actum), os atos jurídicos são regidos pela lei vigente na época em que ocorreram, de modo que a nova regra não se aplica ao caso em exame, conforme passo a demonstrar.
+Em 14 de julho de 2025, cientificou-se a Recorrente (SEI nº 14001494) do inteiro teor do Despacho Decisório nº 400/2025/CODI/SCO (SEI nº 13905586), iniciando-se o prazo recursal aos 15 de julho de 2025. O Recurso Administrativo foi protocolizado em 29 de julho do mesmo ano, sendo, portanto, tempestivo, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019.
+Além disso, a Recorrente possui interesse na reforma da decisão, está regularmente representada e não há contrariedade a entendimento fixado em súmula pela Agência.
+Estão presentes os pressupostos de admissibilidade previstos no art. 116 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013 - RIA, de modo ter sido correto o conhecimento da espécie, levado a efeito por meio do Despacho Decisório nº 40/2026/CODI/SCO (SEI nº 15080311).
+II - Dispensa de manifestação da PFE-Anatel
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 9 de outubro de 2017, determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642, de 26 de julho de 2013
+Art.5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+[...]
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+No caso concreto, não há necessidade de submissão do feito à manifestação da PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+III - DO MÉRITO
+A CFRP foi criada com o objetivo de propiciar meios para a melhoria dos serviços de radiodifusão pública e para a ampliação de sua penetração mediante a utilização de serviços de telecomunicações, pela vigência da Lei nº 11.652, de 7 de abril de 2008. Tal contribuição, cujo fato gerador é a prestação dos serviços de telecomunicações, deve ser paga, anualmente, até o dia 31 de março, em valores constantes do anexo da referida legislação. O Regulamento de Arrecadação de Receitas Tributárias, aprovado pela Resolução nº 729, de 19 de junho de 2020 - Resolução nº 729/2020, ainda esclarece:
+o sujeito passivo da CFRP é a prestadora de serviços de telecomunicações, outorgada ou não, sendo solidariamente responsáveis pelo seu recolhimento todas as prestadoras que realizarem o compartilhamento de infraestrutura ativa de estações de telecomunicações;
+sua base de cálculo corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, que acontece no dia 1º de janeiro de cada ano; e
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.
+À Anatel, na condição de sujeito ativo dos referidos tributos, compete planejar, executar, acompanhar e avaliar as atividades relativas à tributação, fiscalização, arrecadação, cobrança e recolhimento da contribuição.
+No caso concreto, por meio da Notificação de Lançamento nº 001-010499/2016/AFFO-ANATEL (SEI nº 0886693), informou-se a existência de débitos da empresa Omnilink referente a CFRP que totalizaram, durante o exercício financeiro de 2016, [item 1 do Apartado sigiloso SEI nº 15463127].
+Passo à análise das alegações recursais da Prestadora.
+III.a - Das razões recursais
+Em seu Recurso Administrativo (SEI nº 13671576) a Prestadora alega, em síntese, a inexistência de fato gerador e solicita o encerramento do presente Procedimento Administrativo Fiscal - PAF. Argumenta que:
+a) solicitou a exclusão das radiofrequências vinculadas às estações de telecomunicações operadas, o que importa, a seu ver, em "renúncia à continuidade da operação técnica das estações associadas", na medida em que essas não poderiam operar sem frequência correspondente, no entanto, foi surpreendida com a informação a solicitação estaria incompleta, pois se limitou às frequências, deixando de abranger, formalmente, as estações;
+b) caberia à Agência informar a empresa caso faltasse algum procedimento, defendendo que, ainda que a Anatel entendesse que houve "incorreção formal do pedido", deveria ter oportunizado a correção do requerimento, conforme art. 50 da Lei nº 9.784/1999, não presumindo a existência de má-fé ou erro intransponível; e
+c) que as orientações incorretas da própria Anatel contribuíram para o suposto erro no procedimento, tornando o lançamento inválido.
+No que se refere à exigibilidade da CFRP, a incidência da exação decorre da existência de estação devidamente licenciada e ativa nos sistemas da Agência, não sendo necessária a comprovação de seu efetivo funcionamento para a caracterização do fato gerador.
+Nos termos da Resolução nº 729/2020, a TFF tem como fato gerador o exercício do poder de polícia sobre estações utilizadas na prestação de serviços de telecomunicações, considerando-se ocorrido em 1º de janeiro de cada exercício, e somente deixa de incidir a partir do exercício subsequente àquele em que houver solicitação de cancelamento da licença ou publicação de ato administrativo que determine tal cancelamento. Leia-se:
+Resolução nº 729, de 19 de junho de 2020
+Da Taxa de Fiscalização de Funcionamento
+Art. 7º O fato gerador da Taxa de Fiscalização de Funcionamento (TFF) é o exercício do poder de polícia no que tange ao funcionamento de estações utilizadas para prestação de serviços de telecomunicações, previamente licenciadas ou não, e uso de radiofrequências.
+§ 1º Considera-se ocorrido o fato gerador da TFF no dia 1º de janeiro de cada ano.
+§ 2º A expedição de nova licença para funcionamento de estação, em substituição à licença anterior, após a ocorrência do fato gerador da TFF não desonerará a responsável de seu pagamento, mesmo que a substituição gere nova incidência da TFI.
+§ 3º A TFF somente deixará de incidir sobre a estação licenciada a partir do exercício subsequente àquele em que:
+I - o sujeito passivo venha a protocolizar, perante a Anatel, pedido de cancelamento da licença;
+II - for publicado o ato que determinar o cancelamento da licença em função da extinção da outorga de serviço de telecomunicações, do direito de uso de radiofrequências ou do direito de exploração de satélite.
+(...)
+Art. 9º A base de cálculo da TFF corresponde ao número de estações licenciadas ou não, incluindo os terminais móveis habilitados, quando aplicável, em 31 de dezembro do ano anterior, à qual será aplicada alíquota específica expressa por meio de percentual do valor fixado para a TFI, nos termos da Lei nº 5.070, de 1966.
+Parágrafo único. No caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a TFF terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até essa data.
+Art. 10. O pagamento da TFF deverá ser realizado pelo sujeito passivo até o dia 31 de março, independentemente de notificação.
+No caso em exame, os elementos constantes dos autos evidenciam que, em 2015, a recorrente promoveu exclusivamente a exclusão das radiofrequências associadas às estações, permanecendo estas registradas como ativas no sistema até sua efetiva exclusão apenas em 2018. Quanto a essa questão, esclareceu a Área Técnica:
+Informe nº 57/2026/CODI/SCO (SEI nº 15080264)
+"3.19. Inicialmente, cumpre esclarecer que assiste razão à recorrente ao alegar que é possível a extinção do uso da radiofrequência por renúncia. Tanto é assim, que foi feita corretamente a exclusão das radiofrequências no sistema da Anatel, operacionalizada pelo próprio representante da entidade.
+...
+3.22. Aqui, vale ressaltar que todo o procedimento de cancelamento das radiofrequências e posterior cancelamento das estações realizado no sistema da Anatel foram efetivados por representante da própria entidade, ou seja, ao contrário do mencionado pela recorrente não houve solicitação à Anatel para execução dos cancelamentos. Em verdade, como esclarecido no Informe nº 527/2025/CODI/SCO (13903694), em 2014 a recorrente foi informada que este porcedimento passaria a ser feito pela própria empresa por autocadastramento no sistema STEL da Anatel, ou seja, a operacionalização do "pedido" feito em 2015 já foi feita diretamente pela recorrente e não pela Anatel. 
+3.23. Como bem informado pela ORLE, a empresa não excluiu as estações do sistema STEL em 17/11/2015, como alegado, o que fez foi excluir as radiofrequências associadas a estas estações. A exclusão das estações ocorreu apenas em 03/12/2018, conforme demonstrou no documento "Consulta STEL - estações OMNILINK" (9669574).
+3.24. Ressalta-se que em 2015, não era Anatel a responsável por efetivar a exclusão das estações no sistema STEL, sendo esta uma responsabilidade da própria empresa.
+3.25. O Memorando nº 497/2021/ORLE/SOR (7111646), emitido nos autos do processo 53504.003027/2017-04 (desta mesma empresa), especifica mais detalhadamente que o usuário responsável pelo cadastramento/exclusão procedeu a exclusão apenas das radiofrequências e não das estações, tendo concluído a exclusão das estações somente em 2018."
+(destaquei)
+Dessa forma, estando as estações licenciadas em 31 de dezembro de 2015, resta configurado o fato gerador das exações com vencimento no exercício de 2016, circunstância que evidencia a regularidade e a legitimidade da manutenção da cobrança da CFRP.
+É correto afirmar que, embora a Recorrente tenha efetivado a exclusão das radiofrequências, tal ato não equivale ao cancelamento das estações, que permaneceram devidamente ativas no sistema até sua exclusão formal em 03 de dezembro de 2018. A legislação aplicável, notadamente a Resolução nº 729/2020 é expressa ao condicionar a cessação da incidência da TFF — e, por consequência, da CFRP — à existência de pedido formal de cancelamento da licença ou ato administrativo que o declare, o que não ocorreu no exercício de 2015.
+Ademais, é plenamente justificável a conclusão de que não houve solicitação dirigida à Anatel para promover tais cancelamentos, uma vez que, desde 2014, a própria empresa detinha acesso ao autocadastramento, sendo responsável integral pela gestão de suas estações. Os registros demonstram que foi o representante da própria Recorrente quem realizou operações parciais no sistema, limitando-se à exclusão das frequências, sem proceder à exclusão das estações — requisito indispensável para afastar a incidência da TFF e CFRP no exercício de 2016.
+Quanto a alegação de que a Agência deveria ter orientado a empresa caso faltasse algum procedimento, a Área Técnica se manifestou informando que houve tal esclarecimento. Confira-se:
+Informe nº 527/2025/CODI/SCO (13903694)
+"3.26. Quanto ao dever de orientação e à suposta "incorreção formal do pedido", cumpre ressaltar novamente que não houve pedido por parte da recorrente, consequentemente, não houve erro em sua interpretação. A exclusão foi feita diretamente pela entidade nos sistemas da Anatel. O que houve foi uma solicitação de exclarecimentos, feita por e-mail, em que a entidade informava que as estações ainda apareciam no sistema, e-mail este que foi respondido no mesmo dia pela Anatel, com a informação objetiva e sem margem à interpretação no sentido de que "na consulta das estações elas devem estar marcadas como excluídas."
+3.27. Assim, a falha ao não excluir do sistema as estações licenciadas foi realizada pela própria recorrente, tendo a Anatel esclarecido de forma imediata a dúvida encaminhada por e-mail."
+Entendo que se mostra acertada a conclusão no sentido de que não houve falha de orientação por parte da Agência, que inclusive respondeu imediatamente aos questionamentos enviados por e-mail, esclarecendo de maneira objetiva o procedimento necessário. A ausência de exclusão das estações, portanto, decorreu de equívoco operacional da própria recorrente.
+A Recorrente encerra seus argumentos alegando que as orientações incorretas da própria Anatel contribuíram para o suposto erro no procedimento, tornando o lançamento inválido.
+Recurso Administrativo (SEI nº 14090991)
+"A falha no esclarecimento das etapas ou na ratificação do procedimento técnico de exclusão no STEL compromete o exercício pleno do direito do contribuinte e macula a exigência tributária com vício formal de legalidade e publicidade, nos termos do art. 5º, II e XXXV da CF/88 e dos arts. 9º e 10 da Lei nº 9.784/99."
+Cumpre assinalar que não se mostra suficiente alegar, de forma genérica, a existência de falha no esclarecimento das etapas ou na ratificação do procedimento técnico de exclusão no STEL, tampouco sustentar impugnações apenas mediante construções retóricas. É imprescindível que tais afirmações sejam devidamente comprovadas por meio da documentação apresentada nos autos.
+Assim, para que se reconheça, de forma documentalmente idônea, que uma informação equivocada foi encaminhada à prestadora, impõe-se a juntada da correspondente comunicação incorreta. A atuação administrativa desta Agência demanda a observância da verdade material, razão pela qual alegações desacompanhadas de suporte documental não podem ser consideradas válidas ou capazes de alterar a conclusão técnica do processo.
+Diante do exposto, acompanho o entendimento da Área Técnica no sentido de que as alegações apresentadas no Recurso Administrativo não se mostram suficientes para afastar a cobrança da CFRP.
+Convém registrar, por fim, que este Conselho Diretor já se pronunciou em situação análoga, na recente 950ª Reunião Ordinária, realizada em 12 de dezembro de 2025, conforme deliberação consubstanciada no Acórdão nº 8, de 19 de fevereiro de 2026 (SEI nº 15203535), publicado no dia 02 de março de 2026 no Boletim de Serviço Eletrônico da Agência e no DOU na mesma data, de relatoria do Conselheiro Edson Victor Eugênio de Holanda. No caso mencionado, o Relator confirma que desativação de uma estação não se confunde com o cancelamento da licença de funcionamento, nem a extinção das obrigações tributárias. Transcreve-se o seguinte excerto do Acórdão em comento:
+Acórdão nº 8, de 19 de fevereiro de 2026
+"Processo nº 53516.013438/2018-41
+Recorrente/Interessado: JUVENTINO CARRARA
+CPF nº 191.***.***-87
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E REGULATÓRIO. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO - TFF E CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. EXIGIBILIDADE DE CRÉDITOS. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por JUVENTINO CARRARA contra o Despacho Decisório nº 103/2025/CODI/SCO, que reconheceu a procedência dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF e à Contribuição para o Fomento da Radiodifusão Pública - CFRP para o exercício de 2017, indicados nas Notificações de Lançamento nº 030-003025/2018GR03-Anatel e nº 030-003026/2018GR03-Anatel.
+2. O Recorrente alegou que os débitos não seriam devidos em razão da desativação do serviço em 2017, afirmou não ter sido informado sobre a existência dos débitos e, subsidiariamente, requereu o envio de boleto para pagamento.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a desativação da estação de telecomunicações afasta a exigibilidade dos créditos tributários relativos à TFF e à CFRP; e (ii) saber se houve regular notificação do Contribuinte quanto aos débitos apurados.
+III. RAZÕES DE DECIDIR
+1. A desativação da estação não implica o cancelamento automático da licença, nem a extinção das obrigações tributárias, que subsistem até solicitação formal de cancelamento ou ato expresso da Anatel.
+(...)
+IV. DISPOSITIVO E TESE
+1. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 3/2026/EH (SEI nº 15035360), integrante deste acórdão, conhecer do Recurso Administrativo, por estarem preenchidos os requisitos de admissibilidade, para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia."
+(Grifou-se)
+Dessa forma, concorda-se plenamente que, estando as estações ativas em 31 de dezembro de 2015, restou configurado o fato gerador em 1º de janeiro de 2016, sendo devida a cobrança da CFRP no exercício correspondente.
+IV - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+Por fim, a Agenda 2030 da Organização das Nações Unidas - ONU é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que participaram da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015. A Agenda 2030 contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta por 17 (dezessete) Objetivos de Desenvolvimento Sustentável - ODS e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 9 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento desta Análise se alinha com o ODS 10, pois assegurar uma administração tributária eficiente e justa promove uma distribuição de renda mais equitativa e reduz as desigualdades econômicas e sociais, com ênfase na Meta 10.4, que trata da implementação de políticas fiscais, salariais e de proteção social para alcançar uma maior igualdade. Além disso, há conexão com o ODS 16, visto que o presente procedimento seguiu rigorosamente o devido processo legal, respeitando os princípios da ampla defesa e do contraditório. Essa conformidade garante a pacificação social e legitima as ações da Anatel com a necessária transparência social.
+Ressalto também que, ao não cumprir com seus deveres tributários, a Recorrente compromete significativamente a realização das metas de políticas públicas de conectividade, especialmente aquelas voltadas para a inclusão de pessoas em situação de vulnerabilidade, que devem ser beneficiadas com a aplicação dos recursos do Fust.
+Além disso, a Agenda 2030 foi objeto de alinhamento interno, para o caso brasileiro, sendo o Instituto de Pesquisa Econômica Aplicada - IPEA o responsável por desenvolver metas brasileiras, conforme seu estudo "ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação". Quanto à matéria em análise, destaco aderência às seguintes metas nacionais:
+Meta 10.4: Reduzir desigualdades por meio da adoção de políticas fiscais, tributárias, salariais e de proteção social. A política fiscal deve ser cuidadosamente elaborada e rigorosamente aplicada para garantir que toda a população usufrua dos benefícios sociais resultantes do uso adequado dos recursos públicos;
+Meta 16.5: Reduzir substancialmente a evasão fiscal, a corrupção e o suborno em todas as suas formas. É dever do Estado assegurar a arrecadação eficiente e eficaz de recursos destinados a atender ao interesse público; e
+Meta 16.6: Ampliar a transparência, a accountability e a efetividade das instituições em todos os níveis. Transparência e efetividade são pilares de uma administração voltada para o interesse público. Portanto, penalizar e cobrar de uma entidade que não cumpre suas obrigações tributárias é um dever legal das instituições.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo como foco principal o desenvolvimento humano no Brasil e no mundo. Nesse contexto, o estudo do IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e revisão de políticas públicas e programas nacionais de desenvolvimento, e evidencia como nosso país está empenhado no cumprimento dessas metas.
+Com essa iniciativa, o Brasil se destaca ao dispor de um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por conhecer e negar provimento ao Recurso Administrativo.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15269800 e o código CRC 02BD0302.
+ | 
+Referência: Processo nº 53500.024016/2016-17 | 
+SEI nº 15269800 |

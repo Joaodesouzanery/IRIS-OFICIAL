@@ -1,0 +1,48 @@
+SEI/ANATEL - 16099041 - Acórdão
+Boletim de Serviço Eletrônico em 14/08/2026
+DOU de 14/08/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 196, de 10 de agosto de 2026
+Processo nº 53500.076795/2024-38
+Recorrente/Interessado: UNIFIQUE TELECOMUNICAÇÕES S.A., LIGGA TELECOMUNICAÇÕES S.A., SERCOMTEL S.A. TELECOMUNICAÇÕES
+CNPJ nº 02.255.187/0001-08, nº 04.368.865/0001-66 e nº 01.371.416/0001-89
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 956, de 6 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. HOMOLOGAÇÃO DE CONTRATO DE CREDENCIAMENTO PARA PRESTAÇÃO DO SERVIÇO MÓVEL PESSOAL - SMP POR MOBILE VIRTUAL NETWORK OPERATOR - MVNO. RECURSO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo com pedido de efeito suspensivo interposto por LIGGA TELECOMUNICAÇÕES S.A. ("LIGGA") e SERCOMTEL S.A. TELECOMUNICAÇÕES contra despacho da Superintendência de Competição que não homologou, de forma integral, contrato de credenciamento para prestação do Serviço Móvel Pessoal - SMP por meio de rede virtual credenciada, firmado entre UNIFIQUE TELECOMUNICAÇÕES S.A. ("UNIFIQUE"), como Prestadora origem, e LIGGA, como Credenciada.
+2. A decisão homologou o contrato apenas nas áreas em que a LIGGA não possuía autorização própria do SMP e deixou de homologá-lo na Região Norte, nos Setores 19 e 20 do Plano Geral de Outorgas - PGO e no Estado de São Paulo, exceto nos municípios integrantes do Setor 33 do PGO.
+3. No curso da tramitação, foram formalizadas transferências das autorizações de uso de radiofrequências associadas à autorização para exploração do SMP antes detidas pela LIGGA nas áreas controvertidas, com perda da titularidade das outorgas pela Recorrente nessas localidades.
+4. Petição extemporânea apresentada pela LIGGA visando complementar argumentos e informações do Recurso.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se, diante da transferência superveniente das outorgas detidas pela LIGGA nas áreas antes abrangidas pela vedação regulatória, subsiste óbice para a homologação integral do contrato de credenciamento firmado com a UNIFIQUE.
+III. RAZÕES DE DECIDIR
+1. A área técnica e o Conselheiro Relator entenderam que a regulamentação vedava a sobreposição entre a área geográfica de autorização do SMP e a área de operação virtual na modalidade de credenciamento.
+2. A fundamentação técnica também apontou incompatibilidade do arranjo com a lógica regulatória do Edital 5G e destacou a existência de instrumento regulatório próprio para complementariedade de rede, por meio de roaming em exploração industrial de rede.
+3. Há que se reconhecer a correção desses fundamentos no cenário originalmente examinado.
+4. Sobreveio fato novo com a transferência das autorizações de uso de radiofrequências associadas ao SMP antes detidas pela LIGGA na Região Norte, no Estado de São Paulo, exceto Setor 33 do PGO, e nos Setores 19 e 20 do PGO.
+5. Com a formalização dessas transferências, a LIGGA deixou de possuir outorgas nas áreas geográficas objeto da controvérsia.
+6. A eliminação da titularidade das outorgas afastou a situação de sobreposição entre a condição de autorizada do SMP e a de MVNO credenciada na mesma área de prestação, deixando de subsistir, ainda, compromissos editalícios da LIGGA nessas áreas que exigissem implementação de rede própria.
+7. Em razão do fato superveniente, deixou de existir óbice para a homologação plena do contrato de credenciamento entre UNIFIQUE e LIGGA nas áreas antes excluídas.
+8. A petição extemporânea foi conhecida, conforme Súmula nº 21/2017, por ter sido protocolizada antes da inclusão do processo em pauta.
+IV. DISPOSITIVO E TESE
+Pedido de petição extemporânea indeferido. Recurso provido.
+Tese de julgamento: "1. A vedação regulatória à atuação de autorizada do SMP como MVNO credenciada na mesma área de prestação impede a homologação do contrato enquanto houver sobreposição de outorgas. 2. A transferência superveniente das autorizações de uso de radiofrequências associadas ao SMP, com perda da titularidade das outorgas pela Recorrente nas áreas controvertidas, afasta o óbice regulatório. 3. Eliminada a sobreposição de outorgas, é cabível a homologação integral do contrato de credenciamento firmado entre a Prestadora origem e a Credenciada."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Resolução Anatel nº 777/2025, art. 260; Resolução nº 783/2025, art. 66, § 3º; Resolução nº 612/2013.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade:
+a) receber a Petição Extemporânea SEI nº 12162295 para, no mérito, indeferir o pedido nela constante;
+b) conhecer do Recurso Administrativo interposto por LIGGA TELECOMUNICAÇÕES S.A. e por SERCOMTEL S.A. TELECOMUNICAÇÕES em face do Despacho Decisório nº 130/2024/CPRP/SCP (SEI nº 12785544), de 8 de novembro de 2024, para, no mérito, dar-lhe provimento, em razão da existência de fato superveniente que alterou o cenário inicialmente analisado pela área técnica e pelo Conselheiro Relator da Matéria, acarretando a eliminação da sobreposição de outorgas, preservando-se integralmente os fundamentos jurídicos desenvolvidos pelo Relator quanto à interpretação do regime regulatório aplicável ao Serviço Móvel Pessoal e à sua exploração por meio de rede virtual; e,
+c) homologar integralmente o contrato de credenciamento para prestação do Serviço Móvel Pessoal - SMP por meio de rede virtual credenciada firmado entre UNIFIQUE TELECOMUNICAÇÕES S.A. ("UNIFIQUE"), como Prestadora origem, e LIGGA TELECOMUNICAÇÕES S.A. ("LIGGA"), como Credenciada.
+Quanto à alínea "a", a decisão foi nos termos propostos pelo Conselheiro Octavio Penna Pieranti, Relator, por meio da Análise nº 10/2026/OP (SEI nº 15085787), integrante deste acórdão.
+Em relação às alíneas "b" e "c", a decisão foi nos termos propostos pelo Presidente Carlos Manuel Baigorri por meio do Voto nº 88/2026/PR (SEI nº 16023754), também integrante deste acórdão.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 12/08/2026, às 19:49, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16099041 e o código CRC 4D9ADF16.
+ | 
+Referência: Processo nº 53500.076795/2024-38 | 
+SEI nº 16099041 |

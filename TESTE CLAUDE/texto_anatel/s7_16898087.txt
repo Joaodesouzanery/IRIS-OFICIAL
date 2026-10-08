@@ -1,0 +1,94 @@
+SEI/ANATEL - 15100101 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 10/2026/EH
+Processo nº 53500.001826/2019-30
+Interessado: CLARO S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso Administrativo interposto por CLARO S.A., em face do Despacho Decisório nº 26/2023/CODI/SCO (SEI nº 9746234), de 27/02/2023, que aplicou sanção de advertência e multa por infração ao art. 50, VII e art. 62, VII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 632, de 7 de março de 2014, e pelo descumprimento da determinação contida no Despacho Decisório nº 1/2016/SEI/SRC.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PRORROGAÇÃO DE PRAZO PARA SUBMISSÃO DE MATÉRIA AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+Recurso Administrativo interposto por Claro S.A. contra decisão que aplicou sanção de advertência e multa por infração ao art. 50, VII, e art. 62, VII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 632/2014, e pelo descumprimento de determinação contida em despacho anterior.
+Processo incluído automaticamente na pauta da Reunião nº 950 do Conselho Diretor, de 12 de fevereiro de 2026.
+Conselheiro relator solicita prorrogação do prazo para submissão da matéria ao Conselho Diretor, em razão da complexidade da matéria e da necessidade de esclarecimentos técnicos.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível prorrogar o prazo para submissão da matéria ao Conselho Diretor, nos termos do § 3º do art. 127 do Regimento Interno da Anatel.
+III. RAZÕES DE DECIDIR
+O Regimento Interno da Anatel prevê a possibilidade de prorrogação do prazo para submissão de matéria ao Conselho Diretor, mediante justificativa do Conselheiro Relator.
+A complexidade da matéria e a necessidade de esclarecimentos técnicos justificam a prorrogação do prazo.
+IV. DISPOSITIVO E TESE
+Prorrogação do prazo para submissão da matéria ao Conselho Diretor por 120 dias.
+Tese de julgamento: "1. É possível prorrogar o prazo para submissão de matéria ao Conselho Diretor, nos termos do § 3º do art. 127 do Regimento Interno da Anatel, mediante justificativa do Conselheiro Relator. 2. A complexidade da matéria e a necessidade de esclarecimentos técnicos justificam a prorrogação do prazo."
+Dispositivos relevantes citados: Resolução nº 612/2013, art. 127, § 3º.
+REFERÊNCIAS
+Lei nº 9.873, de 23 de novembro de 1999 (Lei da Prescrição).
+Lei nº 9.784, de 29 de janeiro 1999 (Lei do Processo Administrativo - LPA).
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC).
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Anatel - RIA).
+Resolução nº 589, de 7 de maio de 2012 (Regulamento de Aplicação de Sanções Administrativas - Rasa, na redação conferida pelo Regulamento de Fiscalização Regulatória - RFR, aprovado pela Resolução nº 746, de 22 de junho de 2021).
+Resolução nº 614, de 28 de maio de 2013 (Regulamento do Serviço de Comunicação Multimídia - RSCM).
+Despacho Decisório nº 1/2016/SEI/SRC (0414329), de 15 de abril de 2016.
+RELATÓRIO
+I - DO OBJETO
+Cuida-se de Recurso Administrativo interposto pela Claro S.A. (Claro), CNPJ nº 40.432.544/0001-47, prestadora do Serviço de Comunicação Multimídia (SCM), contra o Despacho Decisório nº 26/2023/CODI/SCO (9746234), de 27/02/2023, que aplicou à prestadora sanção de advertência pelos descumprimentos aos arts. 50, VII; e 62, VII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632/2014, e sanção de multa, no valor total de R$10.300.000,00 (dez milhões e trezentos mil reais), pelo descumprimento da determinação contida no Despacho Decisório nº 1/2016/SEI/SRC (SEI nº 0414329), de 15/04/2016.
+II - DOS FATOS
+O presente Procedimento para Apuração de Descumprimento de Obrigações (PADO) foi instaurado no dia 26/02/2019, por meio do Despacho Ordinatório de Instauração nº 6/2019/SEI/CODI/SCO (SEI nº 3718095), no qual foram apontados os seguintes indícios de infração:
+I) FATOS e NORMA:
+A fim de apurar descumprimento pela CLARO S.A., de obrigações relativas à prestação do Serviço de Comunicação Multimídia (SCM) em atendimento ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, foi solicitada atividade fiscalizatória – Pasta nº RADARCODI42017000242, a qual apontou os seguintes indícios de irregularidades detalhados no Relatório de Fiscalização nº 0423/2017/GR03, de 04/12/2017, constante do Processo de Fiscalização nº 53516.001575/2017-52, que identificou as seguintes condutas:
+ Seq.
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ 1.
+ | 
+ A prestadora informava via atendimento telefônico de que haveria redução de velocidade ao fim da franquia contratada
+ | 
+ Art. 92, III, c/c Art. 50, VII, ambos do Anexo à Resolução nº 632/2014 c/c Art. 47, II, do Anexo à Resolução nº 614/2013
+ | 
+ 2.
+ | 
+ A prestadora não forneceu o relatório detalhado
+ | 
+ Art. 62, VII, do Anexo à Resolução nº 632/2014
+ | 
+ 3.
+ | 
+ A prestadora não estava cumprindo com a determinação da Anatel contida no Despacho Decisório nº 1/2016/SEI/SRC
+ | 
+ Art. 44 c/c Art. 47, III, ambos do Anexo à Resolução nº 614/2013
+ | 
+Notificada da instauração em 11/03/2019 (SEI nº 3906301), bem como do prazo para oferecer suas razões de defesa, por meio do Ofício nº 24/2019/SEI/CODI/SCO (SEI nº 3718097), a interessada apresentou Defesa Administrativa (SEI nº 3965583) em 26/03/2019 (SEI nº 3965603).
+Por não haver dúvida processual ou necessidade de realização de diligências, declarou-se encerrada a instrução processual, conforme Certidão sob SEI nº 4495550, de 13/08/2019.
+No termos do Ofício nº 432/2019/CODI/SCO-ANATEL (SEI nº 4495566), a prestadora foi intimada em 19/08/2019 (SEI nº 4513113) sobre o prazo para protocolizar suas alegações finais, as quais (SEI nº 4551826) foram juntadas aos autos em 18/08/2019 (SEI nº 4551827).
+As razões de defesa e de alegações finais foram analisadas pela área técnica por meio do Informe nº 557/2019/CODI/SCO (SEI nº 4628478), de 04/10/2019, no qual se opinou pela aplicação das sanções de advertência e de multa, no valor total de R$ 10.005.606,66 (dez milhões, cinco mil, seiscentos e seis reais e sessenta e seis centavos), pelos descumprimentos apurados. Em atenção ao disposto no art. 7º, incisos IV e VI, "e", da Portaria nº 642, de 26 de julho de 2013, os autos foram encaminhados para apreciação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), que apresentou sua análise e recomendações por meio do Parecer 777/2019/PFE-ANATEL/PGF/AGU (SEI nº 5048299), de 11/12/2019.
+No dia 27/12/2019 (SEI nº 5074380), a Recorrente protocolizou a Petição manifestação Claro (SEI nº 5074378). 
+As recomendações da PFE-Anatel foram apreciadas por meio do Informe nº 67/2021/CODI/SCO (SEI nº 6632234), de 30/04/2021, nos termos do qual a Superintendência de Controle de Obrigações (SCO) entendeu pela necessidade de realização de diligência junto à Superintendência de de Planejamento e Regulamentação (SPR), para fornecer os subsídios necessários à análise do processo, particularmente quanto à natureza do serviço em questão. Os questionamentos da SCO foram então encaminhados à SPR por meio do Memorando nº 26/2021/CODI/SCO (SEI nº 6634381), em face dos quais foi elaborado o Memorando nº 58/2021/PRRE/SPR (SEI nº 6879773).
+Os subsídios fornecidos pela SPR foram avaliados por meio do Informe 6/2023/CODI/SCO (SEI nº 9683508), de 27/02/2023, no qual se concluiu pela proposta de aplicação sanção de multa no valor de R$ 10.300.000,00 (dez milhões e trezentos mil reais), pelo descumprimento da determinação contida no Despacho Decisório nº 1/2016/SEI/SRC, e a sanção de ADVERTÊNCIA pelas infrações ao art. 50, VII e art. 62, VII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 632, de 7 de março de 2014.
+Na mesma data, por meio do Despacho Decisório nº 26/2023/CODI/SCO (SEI nº 9746234), o Superintendente de Controle de Obrigações aplicou as penalidades de advertência e de multa à prestadora, nos termos sugeridos no Informe citado.
+Notificada (SEI nº 9746275) da decisão em 16/03/2023 (SEI nº 9963620), a empresa interpôs Recurso Administrativo com pedido de efeito suspensivo (SEI nº 10017209) em 27/03/2023 (SEI nº 10017211).
+Em 28/03/2023, atribuiu-se efeito suspensivo ao recurso, nos termos da Certidão de SEI nº 10018300.
+No dia 21/08/2023 (SEI nº 10740611), juntou-se a Petição Juntada de Provas (SEI nº 10740608). 
+A área técnica avaliou as razões recursais da Prestadora por meio do Informe nº 453/2025/CODI/SCO (SEI nº 13773339), ao final do qual propôs o conhecimento do recurso administrativo e o envio do Pado ao Conselho Diretor da Anatel para decisão final do processo, com manutenção da decisão recorrida, consistente em sanções de advertência e multa, esta no valor total de R$10.300.000,00 (dez milhões e trezentos mil reais).
+O Superintendente de Controle de Obrigações conheceu do Recurso e encaminhou os autos a este Conselho para análise de mérito, conforme Despacho Decisório nº 497/2025/CODI/SCO (SEI nº 14130305) e Matéria para Apreciação do Conselho Diretor (MACD) nº 599/2025 (SEI nº 14130405).
+Realizado sorteio em 14/08/2025, conforme Certidão de Distribuição de SEI nº 14192163, o então Conselheiro Substituto Daniel Martins D Albuquerque foi designado relator da matéria. 
+No mesmo dia, cancelou-se (SEI nº 14289040) a referida distribuição tendo em a nomeação de Conselheiro sucessor para o cargo que estava ocupado pelo Conselheiro Substituto, de acordo com a Portaria nº 495/2012, art. 8°, parágrafo único.
+Em 04/09/2025, de acordo com a nova Certidão de Distribuição nº 14319976, fui sorteado relator da presente matéria.
+É o breve relato.
+III - DA ANÁLISE 
+Considerando o prazo previsto e as disposições constantes no art. 127, § 2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, os autos foram automaticamente incluídos na pauta da Reunião nº 950, de 12/02/2026.
+Considerando a complexidade da matéria, em especial, a necessidade de se obter maiores esclarecimentos da área técnica acerca dos fatos alegados pela Recorrente quanto ao serviço de telecomunicações sancionado, a análise não pode ser concluída dentro do prazo regimental, de modo que requeiro a prorrogação, por 120 (cento e vinte) dias, do prazo para submissão da matéria ao Conselho Diretor, com fulcro no § 3º do art. 127 do Regimento Interno da Agência, in verbis:
+Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+................................................................................................................................................
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho
+CONCLUSÃO
+Diante do exposto, proponho a prorrogação do prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29/04/2013.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:27, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15100101 e o código CRC 3CDFCF8B.
+ | 
+Referência: Processo nº 53500.001826/2019-30 | 
+SEI nº 15100101 |

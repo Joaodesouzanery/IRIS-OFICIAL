@@ -1,0 +1,45 @@
+SEI/ANATEL - 15510032 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 104, de 17 de abril de 2026
+Processo nº 53516.000134/2021-10
+Recorrente/Interessado: LIGGA TELECOMUNICAÇÕES S.A.
+CNPJ nº 04.368.865/0001-66
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. BASE DE CÁLCULO. RECEITAS DE INTERCONEXÃO E DE CESSÃO DE MEIOS - EXPLORAÇÃO INDUSTRIAL DE LINHA DEDICADA - EILD. MULTA DE OFÍCIO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por LIGGA TELECOMUNICAÇÕES S.A. contra decisão que reconheceu a procedência de lançamento da Contribuição ao Fundo de Universalização de Telecomunicações - CIDE-Fust e de multa de ofício, referentes ao exercício de 2019.
+2. Fato relevante. Fiscalização apurou diferença entre os valores devidos e os declarados, com lavratura de Notificação de Lançamento.
+3. As alegações. Recorrente alegou nulidade do lançamento por ausência de fundamentação legal e de demonstrativo de cálculo. Recorrente sustentou não incidência da CIDE-Fust sobre receitas de interconexão e de cessão de meios de Exploração Industrial de Linha Dedicada - EILD. Recorrente alegou bis in idem.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o lançamento é nulo por ausência de motivação e de demonstrativo de cálculo; (ii) saber se incide CIDE-Fust sobre receitas de interconexão e de cessão de meios EILD; e (iii) saber se é cabível a manutenção da multa de ofício aplicada por ausência ou inexatidão de declaração.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo e atende aos pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no Regimento Interno da Anatel - RIA.
+2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal.
+3. A Notificação de Lançamento indicou o fundamento legal do crédito tributário e remeteu ao Relatório de Fiscalização e à planilha de apuração disponibilizados ao sujeito passivo.
+4. A motivação por referência é admitida nos termos do art. 50, § 1º, da Lei nº 9.784/1999.
+5. A Recorrente não demonstrou prejuízo concreto ao exercício da ampla defesa.
+6. A interconexão configura serviço de telecomunicações entre prestadoras, com receita decorrente de contraprestação.
+7. O parágrafo único do art. 6º da Lei nº 9.998/2000 não se aplica quando há contraprestação por serviço de interconexão e por uso de recursos integrantes de rede.
+8. Incide a CIDE-Fust sobre receitas de interconexão e de cessão de meios EILD, conforme a Súmula Anatel nº 7.
+9. Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações entre prestadora e usuário.
+10. A multa de ofício é devida nos casos de ausência ou inexatidão de declaração, no percentual previsto em lei.
+11. Deve haver comunicação ao Ministério das Comunicações - MCom quando a decisão administrativa implicar alteração na base de cálculo da CIDE-Fust, em razão da base compartilhada com o Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido. Determinação de comunicação ao Ministério das Comunicações - MCom.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e atendidos os pressupostos de admissibilidade do Decreto nº 70.235/1972 e do Regimento Interno da Anatel - RIA. 2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal. 3. O lançamento não é nulo quando a Notificação de Lançamento indica os fundamentos legais e incorpora, por referência, Relatório de Fiscalização e planilha de cálculo disponibilizados ao sujeito passivo. 4. Incide a CIDE-Fust sobre receitas de interconexão e de cessão de meios EILD, por configurarem contraprestação vinculada a serviço de telecomunicações entre prestadoras. 5. Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações com usuários. 6. É cabível a multa de ofício, no percentual legal, nos casos de ausência ou inexatidão de declaração. 7. A Anatel deve comunicar ao Ministério das Comunicações - MCom decisão que implique alteração na base de cálculo da CIDE-Fust, em razão da base compartilhada com o Funttel."
+Dispositivos relevantes citados: Lei nº 5.172/1966 - Código Tributário Nacional - CTN, arts. 142, 149, 150 e 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 146, parágrafo único; Lei nº 9.784/1999, art. 50, § 1º; Lei nº 9.998/2000, arts. 4º, VI, e 6º, IV e parágrafo único; Decreto nº 70.235/1972, arts. 10, 11, II, e 33; Resolução nº 612/2013 - RIA, art. 116; Portaria Anatel nº 642/2013, art. 5º, IV, “a”; Portaria Anatel nº 1.355/2019, item 7.1.1; Resolução nº 693/2018, arts. 3º, II e X, e 30.
+Jurisprudência relevante citada: Súmula Anatel nº 7; Súmula Anatel nº 26; Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11; Superior Tribunal de Justiça - STJ, AgInt no AREsp nº 934.319, Rel. Min. Francisco Falcão, 2ª Turma, DJe 22 de novembro de 2017; Anatel, Acórdão nº 114, de 12 de abril de 2017; Anatel, Acórdão nº 312, de 2 de junho de 2020; Anatel, Acórdão nº 312, de 14 de setembro de 2021; Anatel, Acórdão nº 38, de 13 de fevereiro de 2023; Anatel, Acórdão nº 19, de 16 de fevereiro de 2024; Anatel, Acórdão nº 89, de 8 de abril de 2025; Anatel, Acórdão nº 97, de 8 de abril de 2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 8/2026/NP (SEI nº 15271756), integrante deste acórdão, conhecer do Recurso Administrativo (SEI nº 13118699) interposto em face do Despacho Decisório nº 191/2025/COGE/SCO (SEI nº 13471953) para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15510032 e o código CRC 5005CE02.
+ | 
+Referência: Processo nº 53516.000134/2021-10 | 
+SEI nº 15510032 |

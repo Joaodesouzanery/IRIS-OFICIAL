@@ -1,0 +1,42 @@
+SEI/ANATEL - 15510562 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 106, de 17 de abril de 2026
+Processo nº 53500.001216/2020-70
+Recorrente/Interessado: PORTO SEGURO TELECOMUNICAÇÕES LTDA.
+CNPJ nº 11.281.004/0001-01
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. LANÇAMENTO COMPLEMENTAR POR ERRO DE CÁLCULO EM ESTAÇÕES MÁQUINA A MÁQUINA - M2M. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por PORTO SEGURO TELECOMUNICAÇÕES LTDA. contra o Despacho Decisório nº 774/2025/COGE/SCO, que julgou procedente lançamento complementar de Contribuição para o Fomento da Radiodifusão Pública - CFRP, dos exercícios de 2015 e 2016.
+2. A cobrança decorre de correção de equívoco no cálculo da CFRP em estações integrantes de Sistemas de Comunicação Máquina a Máquina - M2M, com apuração de diferença em relação aos valores recolhidos.
+3. A Recorrente alegou nulidade da notificação de lançamento e do informe técnico; impossibilidade de cobrança relativa a exercícios anteriores; boa-fé; vedação à retroação de entendimento administrativo; e afastamento de multa e juros de mora.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se há nulidade na Notificação de Lançamento nº 001-000109/2020/AFFO-ANATEL e no Informe nº 948/2025/COGE/SCO; e (ii) saber se é legítima a cobrança complementar da CFRP nos anos de 2015 e 2016, com incidência de multa e juros, em razão de erro de cálculo.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo e preenche os requisitos de admissibilidade previstos no Regimento Interno da Anatel - RIA.
+2. Não se impõe oitiva da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, pois não se configuram as hipóteses do art. 5º da Portaria Anatel nº 642/2013.
+3. A Notificação de Lançamento preenche os requisitos formais do art. 11 do Decreto nº 70.235/1972.
+4. A cobrança não decorre de mudança de critério jurídico, mas de correção de erro material no cálculo da CFRP, por aplicação indevida da redução do art. 38 da Lei nº 12.715/2012, restrita à Taxa de Fiscalização de Instalação - TFI e à Taxa de Fiscalização de Funcionamento - TFF.
+5. A revisão do lançamento encontra amparo no art. 149 do Código Tributário Nacional - CTN e no princípio da autotutela administrativa, sem prejuízo ao contraditório e à ampla defesa.
+6. O lançamento complementar é admissível dentro do prazo decadencial e não configura retroatividade vedada, por se tratar de recomposição de tributo devido em face de erro de fato.
+7. O Informe nº 948/2025/COGE/SCO analisou as alegações da impugnação e consignou o abatimento dos valores recolhidos, sem vício apto a invalidá-lo.
+8. São devidos multa e juros de mora sobre a diferença apurada, nos termos do art. 37-A da Lei nº 10.522/2002.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: “1. A Notificação de Lançamento emitida em conformidade com o art. 11 do Decreto nº 70.235/1972 é válida. 2. A correção de erro material no cálculo da CFRP autoriza lançamento complementar, nos termos do art. 149 do CTN, sem caracterizar mudança de critério jurídico. 3. A diferença de CFRP apurada em revisão de lançamento sujeita-se a multa e juros de mora, na forma do art. 37-A da Lei nº 10.522/2002.”
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 150, § 6º; Decreto-Lei nº 4.657/1942 - Lei de Introdução às Normas do Direito Brasileiro - LINDB, arts. 23 e 24; Lei nº 5.172/1966 - CTN, arts. 146, 149 e 150, § 4º; Lei nº 9.784/1999, art. 53; Lei nº 9.998/2000, art. 6º, IV; Lei nº 10.522/2002, art. 37-A; Lei nº 11.652/2008, art. 32, §§ 1º e 2º e Anexo, item 48; Lei nº 12.715/2012, art. 38; Decreto nº 70.235/1972, arts. 11 e 33; Resolução nº 612/2013 - RIA, arts. 115 e 116; Portaria Anatel nº 642/2013, art. 5º, IV.
+Jurisprudência relevante citada: STF, Súmula 346; Supremo Tribunal Federal - STF, Súmula 473; Superior Tribunal de Justiça - STJ, AgRg no AREsp 30.272/MG, Rel. Min. Mauro Campbell Marques, Segunda Turma, j. 20 de outubro de 2011; STJ, REsp 1.130.545/RJ, Rel. Min. Luiz Fux, Primeira Seção, j. 9 de agosto de 2010, DJe 22 de fevereiro de 2011.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 3/2026/NP (SEI nº 15270884), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15510562 e o código CRC D9E03F79.
+ | 
+Referência: Processo nº 53500.001216/2020-70 | 
+SEI nº 15510562 |

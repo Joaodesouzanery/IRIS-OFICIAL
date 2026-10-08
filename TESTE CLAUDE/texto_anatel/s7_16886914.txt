@@ -1,0 +1,653 @@
+SEI/ANATEL - 15089791 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 11/2026/OP
+Processo nº 53500.101314/2025-11
+Interessado: Spacesail Brazil Ltda
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Análise do pedido de Direito de Exploração Estrangeiro no Brasil do sistema de satélites não geoestacionários SPACESAIL.
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO NO BRASIL. DEFERIMENTO PARCIAL.
+I. CASO EM EXAME
+1. Spacesail Brazil Ltda, representante legal da SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD, solicita direito de exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 648 satélites, nas bandas Ku e Q/V, pelo prazo de 15 anos.
+2. Documentação apresentada indica autorização no país de origem para até 324 satélites, com vigência até 31 de julho de 2031.
+3. Áreas técnicas da Anatel analisam documentação, aspectos técnicos, coordenação, necessidade de consulta pública, sustentabilidade espacial e preço público.
+4. Proposta de deferimento parcial do pedido, autorizando operação de até 324 satélites, nas faixas de frequências requeridas, até 31 de julho de 2031, com prazo máximo de 2 anos para entrada em operação e atualização da Lista de Prioridade de Coordenação de sistemas satelitais.
+II. QUESTÃO EM DISCUSSÃO
+1. Saber se estão atendidos os requisitos legais e regulamentares para conferência do direito de exploração de satélite estrangeiro, considerando documentação apresentada, número de satélites, prazo de vigência e requisitos de coordenação com outros sistemas satelitais.
+III. RAZÕES DE DECIDIR
+1. Competência da Anatel e do Conselho Diretor para decidir sobre direito de exploração de satélites estrangeiros está prevista na Lei nº 9.472/1997 e no Regimento Interno.
+2. Documentação apresentada atende aos requisitos do Regulamento Geral de Exploração de Satélites (RGSat) e do Ato nº 9.526/2021.
+3. Autorização no país de origem limita o número de satélites a 324 e vigência até 31 de julho de 2031, devendo o direito de exploração no Brasil observar essas condições.
+4. Não há necessidade de consulta pública, pois o sistema não se enquadra como constelação de grande porte nem opera em faixas de frequências que exigem consulta, conforme RGSat e Ato nº 4.430/2023.
+5. Requisitos de coordenação técnica foram atendidos, com apresentação de esforços de coordenação e manifestação expressa para operação sem direito à proteção contra interferência prejudicial.
+6. Estabelecimento de prazo máximo de 2 anos para entrada em operação, a ser caracterizado pelo lançamento de ao menos 10% dos satélites autorizados, conforme precedentes e regulamentação.
+7. Estabelecimento de obrigações de apresentação de relatórios anuais, com possibilidade de imposição de requisitos de sustentabilidade espacial no futuro.
+8. Atualização da Lista de Prioridade de Coordenação de sistemas satelitais, conforme proposta da área técnica.
+9. Valor do preço público fixado em R$ 102.677,00, conforme artigo 38 do RGSat.
+10. Não há obrigatoriedade de manifestação da Procuradoria Federal Especializada junto à Anatel.
+IV. DISPOSITIVO E TESE
+Pedido parcialmente deferido. Conferência de direito de exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 324 satélites, nas faixas de 10.700 MHz - 12.700 MHz e 37.500 MHz - 38.000 MHz (descida), e 14.000 MHz - 14.500 MHz e 47.200 MHz - 49.200 MHz (subida), até 31 de julho de 2031, com prazo máximo de 2 anos para entrada em operação, atualização da Lista de Prioridade de Coordenação e observância das obrigações técnicas e regulatórias.
+Tese de julgamento: "1. O direito de exploração de satélite estrangeiro deve observar as condições da autorização no país de origem quanto ao número de satélites e prazo de vigência. 2. O pedido de direito de exploração pode ser deferido parcialmente, limitando o número de satélites e o prazo conforme documentação apresentada. 3. Não há necessidade de consulta pública para sistemas não classificados como de grande porte e que não operam em faixas específicas. 4. Estabelecimento de obrigações de apresentação de relatórios anuais, com possibilidade de imposição de requisitos de sustentabilidade espacial no futuro."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 19, IX, 170; Resolução nº 612/2013, arts. 39, 133; Resolução nº 748/2021 (RGSat), arts. 10, 16, 18, 21, 23, 24, 30, 38; Ato nº 9.526/2021; Ato nº 4.430/2023; Resolução nº 772/2023.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Decreto nº 10.402, de 17 de junho de 2020, que dispõe sobre a adaptação do instrumento de concessão para autorização de serviço de telecomunicações e sobre a prorrogação e a transferência de autorização de radiofrequências, de outorgas de serviços de telecomunicações e de direitos de exploração de satélites.
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites (RGSat).
+Resolução nº 772, de 16 de janeiro de 2023, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF).
+Ato nº 9.523, de 27 de outubro de 2021, que aprova os requisitos técnicos e operacionais para sistemas de comunicação via satélite operando sobre o território brasileiro.
+Ato nº 9.526, de 27 de outubro de 2021, que trata da documentação para solicitação de direito de exploração de satélite.
+Ato nº 4430, de 19 de abril de 2023, aprova os compromissos para exploração de satélites e critérios para realização de consulta pública para conferência de direito de exploração de satélite.
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da PFE-Anatel.
+Análise nº 61/2025/AF (SEI nº 13486282).
+Processo nº 53500.101314/2025-11.
+RELATÓRIO
+Trata-se de solicitação de Direito de Exploração de satélite estrangeiro, a ser conferido à SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD, entidade constituída sob as leis da República Popular da China, para provimento da capacidade do sistema de satélites não geoestacionários SPACESAIL, no Brasil, em parte das subfaixas de radiofrequências contidas nas denominadas bandas Ku e Q/V. 
+Em 26 de novembro de 2025, a SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD., por meio da sua representante legal SPACESAIL BRAZIL LTDA. (CNPJ nº 63.617.987/0001-08), apresentou o Requerimento de Direito de Exploração de Satélite SEI nº 14813711, constante no Processo SEI nº 53500.101314/2025-11, solicitando conferência de autorização, pelo prazo de 15 (quinze) anos, para exploração do sistema de satélites não geoestacionários SPACESAIL, composto por até 648 (seiscentos e quarenta e oito) satélites, utilizando as seguintes subfaixas de radiofrequências:
+ Frequências de Subida
+ | 
+ Frequências de Descida
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ UPLINK1 USER
+ | 
+ 14000
+ | 
+ 14125
+ | 
+ LHCP
+ | 
+ 125
+ | 
+ DOWNLINK1 USER
+ | 
+ 10700
+ | 
+ 10950
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ UPLINK2 USER
+ | 
+ 14125
+ | 
+ 14250
+ | 
+ LHCP
+ | 
+ 125
+ | 
+ DOWNLINK2 USER
+ | 
+ 10950
+ | 
+ 11200
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ UPLINK3 USER
+ | 
+ 14250
+ | 
+ 14375
+ | 
+ LHCP
+ | 
+ 125
+ | 
+ DOWNLINK3 USER
+ | 
+ 11200
+ | 
+ 11450
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ UPLINK4 USER
+ | 
+ 14375
+ | 
+ 14500
+ | 
+ LHCP
+ | 
+ 125
+ | 
+ DOWNLINK4 USER
+ | 
+ 11450
+ | 
+ 11700
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ DOWNLINK5 USER
+ | 
+ 11700
+ | 
+ 11950
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ DOWNLINK6 USER
+ | 
+ 11950
+ | 
+ 12200
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ DOWNLINK7 USER
+ | 
+ 12200
+ | 
+ 12450
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ DOWNLINK8 USER
+ | 
+ 12450
+ | 
+ 12700
+ | 
+ RHCP
+ | 
+ 250
+ | 
+ UPLINK1 FEEDER
+ | 
+ 47200
+ | 
+ 47450
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ DOWNLINK1 FEEDER
+ | 
+ 37500
+ | 
+ 37625
+ | 
+ RHCP
+ | 
+ 125
+ | 
+ UPLINK2 FEEDER
+ | 
+ 47450
+ | 
+ 47700
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ DOWNLINK2 FEEDER
+ | 
+ 37625
+ | 
+ 37750
+ | 
+ RHCP
+ | 
+ 125
+ | 
+ UPLINK3 FEEDER
+ | 
+ 47700
+ | 
+ 47950
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ DOWLINK3 FEEDER
+ | 
+ 37750
+ | 
+ 37875
+ | 
+ RHCP
+ | 
+ 125
+ | 
+ UPLINK4 FEEDER
+ | 
+ 47950
+ | 
+ 48200
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ DOWNLINK4 FEEDER
+ | 
+ 37875
+ | 
+ 38000
+ | 
+ RHCP
+ | 
+ 125
+ | 
+ UPLINK5 FEEDER
+ | 
+ 48200
+ | 
+ 48450
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ UPLINK6 FEEDER
+ | 
+ 48450
+ | 
+ 48700
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ UPLINK7 FEEDER
+ | 
+ 48700
+ | 
+ 48950
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ UPLINK8 FEEDER
+ | 
+ 48950
+ | 
+ 49200
+ | 
+ LHCP
+ | 
+ 250
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+No requerimento apresentado, a SPACESAIL BRAZIL LTDA informa que o sistema SPACESAIL poderá suportar diversas aplicações de telecomunicações, em especial provimento de acesso banda larga à internet para usuários finais, aplicações de Internet das Coisas (IoT, do inglês Internet of Things) para os setores agrícola, industrial e ambiental, além de backhaul para redes móveis.
+Em 27 de novembro de 2025, a Gerência de Outorga e Licenciamento de Estações (ORLE) elaborou os checklists de análise SEI nº 14813822 e nº 14813825, que identificaram a necessidade da submissão de documentos adicionais àqueles submetidos na petição inicial. Assim, na mesma data, a ORLE expediu o Ofício nº 9088/2025/ORLE/SOR-ANATEL (SEI nº 14816335), mediante o qual solicitou a apresentação da certidão de regularidade perante o Fundo de Garantia do Tempo de Serviço (FGTS) da SPACESAIL BRAZIL LTDA., bem como de documento emitido pela autoridade competente da República Popular da China, com as condições da autorização referente ao sistema satelital objeto do pleito. No mencionado Ofício, a ORLE destacou que o documento anteriormente apresentado, sob o SEI nº 14813713, doc. 06 ,"318-74521-210-Licenca de Estacao de Radio da Republica Popular da China-Manifesto", não especificava o sistema satelital e o filing associado, bem como não trazia informações referentes ao prazo da autorização no país de origem.
+Em 5 de dezembro de 2025, a interessada apresentou os documentos SEI nº 14867814, nº 14867815, nº 14868061, nº 14868062, nº 14868063, nº 14868298, nº 14868299, nº 14868496 e nº 14868720, respondendo parcialmente a diligência da ORLE. Posteriormente, a interessada submeteu os documentos SEI nº 14891221 e nº 14915279, de forma a cumprir a exigência documental.
+Em 10 de dezembro de 2025, a ORLE encaminhou o processo à Gerência de Espectro, Órbita e Radiodifusão (ORER), por meio do Ofício nº 9607/2025/ORLE/SOR-ANATEL (SEI nº 14890830), para que fosse realizada a análise do pleito quanto aos aspectos técnicos e de coordenação, em consonância com suas competências regimentais.
+Ao avaliar as informações providas pela interessada, a ORER identificou inconsistências entre a autorização no país de origem e a solicitação submetida à Anatel, especificamente quanto ao número de satélites da constelação e quanto ao prazo de vigência da autorização. Em sua petição, a interessada solicitou a autorização para uma constelação de até 648 satélites, pelo prazo de 15 (quinze) anos. Contudo, a documentação encaminhada por meio dos protocolos SEI nº 14868061 e nº 14868063, expedida pelo país de origem, contempla autorização para uma constelação de 324 satélites, com vigência entre 1º de julho de 2025 e 31 de julho de 2031.
+Assim, em 12 de dezembro de 2025, a ORER solicitou à interessada, por meio do Ofício nº 6607/2025/ORER/SOR-ANATEL (SEI nº 14895078), informações adicionais relacionadas ao número de satélites e ao prazo de vigência da autorização.
+Em resposta, a interessada informou que a autorização no país de origem corresponde a metade do número de satélites atualmente planejado para a constelação e que tal autorização será futuramente modificada, para cobrir o total de 648 satélites. A interessada informou que tão logo a autorização no país de origem seja alterada, solicitará a correspondente alteração do Direito de Exploração de Satélite no Brasil. Quanto ao prazo de vigência da autorização no Brasil, a interessada não apresentou objeção quanto ao estabelecimento do prazo do Direito de Exploração de forma alinhada àquele da autorização no país de origem, ou seja, até 31 de julho de 2031.
+Em 15 de dezembro de 2025, a ORER concluiu sua análise, contida no Informe nº 1264/2025/ORER/SOR (SEI nº 14833736), restituindo os autos do processo à ORLE, por meio do Ofício nº 6316/2025/ORER/SOR-ANATEL (SEI nº 14853902).
+Em 24 de dezembro de 2025, por meio do Informe nº 12605/2025/ORLE/SOR (SEI nº 14922143), a Superintendência de Outorga e Recursos à Prestação (SOR) manifestou-se pelo deferimento parcial da solicitação submetida pela operadora SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD., por intermédio de sua representante legal, a SPACESAIL BRAZIL LTDA, para conferência de Direito de Exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 324 satélites, nas faixas de frequências objeto do pleito, sem caráter de exclusividade, com vigência até 31 de julho de 2031, nos termos da minuta de Ato SEI nº 14923162. Adicionalmente, a SOR propôs atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato SEI nº 14853212.
+Na mesma data, a SOR encaminhou os autos à Superintendência Executiva da Anatel (SUE), por meio da Matéria para Apreciação do Conselho Diretor (MACD) nº 922/2025 (SEI nº 14923320).
+Em 5 de janeiro de 2025, os autos foram distribuídos para minha relatoria, conforme Certidão de Distribuição SEI nº 14995057.
+É o relatório. 
+ANÁLISE
+I - Da competência do Colegiado
+A competência da Anatel para editar atos de outorga referentes aos recursos de órbita e espectro está prevista no inciso IX do art. 19 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT):
+Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente:
+(...)
+IX - editar atos de outorga e extinção do direito de uso de radiofreqüência e de órbita, fiscalizando e aplicando sanções;
+(...)
+Compete, ainda, à Anatel dispor sobre os requisitos para conferência de Direito de Exploração de Satélites, conforme previsto no art. 170 da LGT:
+Art. 170. A Agência disporá sobre os requisitos e critérios específicos para execução de serviço de telecomunicações que utilize satélite, geoestacionário ou não, independentemente de o acesso a ele ocorrer a partir do território nacional ou do exterior.
+De acordo com o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir sobre a conferência ou transferência de direito de exploração de satélites:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite;
+O presente processo analisa pedido de direito de exploração de satélite e, portanto, firma-se a competência do Conselho Diretor para decidir sobre o pleito.
+II - Do Pedido de Direito de Exploração de Sistema de Satélites Não Geoestacionários (NGEO)
+II.a) - Da documentação apresentada
+A apreciação dos pedidos de direitos de exploração é regida pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021.
+Conforme a regulamentação em vigor, a exploração de satélite sobre o território brasileiro, quando associada ao Serviço Fixo por Satélite, Serviço Móvel por Satélite ou Serviço de Radiodifusão por Satélite depende da conferência de direito de exploração de satélites e estará sujeita à análise técnico-regulatória da solicitação e da documentação apresentada. O presente processo trata de solicitação de direito de exploração de sistemas de satélites que operará em faixas de frequências atribuídas ao Serviço Fixo por Satélite e, sendo assim, o Direito de Exploração de Satélite é instrumento adequado para a outorga.
+Os artigos 16, 18, 23 e 24 do RGSat estabelecem requisitos que devem ser atendidos para a obtenção, alteração ou prorrogação do direito de exploração de satélite:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+(...)
+Art. 18. A solicitação de Direito de Exploração de Satélite deverá conter a indicação dos Filings das Redes de Satélite e o nome do satélite ou a indicação do sistema a ser associado ao direito, bem como a posição orbital, as faixas de frequências, a área geográfica de cobertura, o prazo solicitado para vigência do direito de exploração, os acordos de coordenação necessários e, se for o caso, os acordos de colocalização de satélites.
+§ 1º Na hipótese de coordenação entre sistemas de satélites não geoestacionários ou entre satélites não geoestacionários e geoestacionários ou entre satélites geoestacionários com separação orbital de 2° (dois graus) ou mais, caso um ou mais acordos de coordenação não sejam apresentados, a Operadora de Satélite poderá solicitar a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e desde que sua operação não cause interferências prejudiciais em relação àqueles sistemas cujo acordo não foi obtido, sem prejuízo à obtenção dos acordos de coordenação após a conferência do Direito de Exploração de Satélite.
+§ 2º Na hipótese prevista no § 1º deste artigo, a solicitação deverá estar acompanhada de documentos que comprovem os esforços de coordenação, os quais serão analisados pela Agência que poderá solicitar informações adicionais das partes interessadas.
+§ 3º Em nenhuma hipótese serão consideradas solicitações sem os acordos de coordenação necessários ou, se for o caso, sem os documentos com a indicação da operação sem direito à proteção e sem causar interferência prejudicial em relação àqueles sistemas cujo acordo não foi obtido, prevista no § 1º, e sem os documentos que comprovam os esforços de coordenação, previstos no § 2º.
+§ 4º Não serão admitidas alterações na posição orbital nominal e no satélite associado ao Direito de Exploração de Satélite conferido, podendo a operadora realizar pequenos ajustes orbitais em decorrência de soluções de coordenação.
+§ 5º Poderá ser solicitada a adição de novas faixas de frequências ao Direito de Exploração de Satélite conferido, sendo devido o pagamento do Preço Público, conforme disposto no Título III deste Regulamento, e devendo ser observadas as regras de coordenação estabelecidas, bem como aquelas definidas no artigo 19.
+§ 6º A inclusão de novas faixas de frequências não implica alteração no prazo de vigência do Direito de Exploração conferido, ou no prazo máximo para entrada em operação.
+§ 7º Não será permitida a retirada de qualquer faixa de frequências previamente autorizada, salvo em casos de força maior, devidamente justificados, a critério da Agência.
+§ 8º O Direito de Exploração de Satélites deve estar associado a um único satélite ou a sistema de satélites não geoestacionários.
+§ 9º Poderão ser conferidos Direitos de Exploração de Satélite associados ao mesmo satélite ou ao mesmo sistema de satélites não geoestacionários a diferentes exploradoras de satélites, inclusive nas mesmas faixas de frequências, uma vez que haja acordo entre as partes interessadas.
+§ 10º Para as solicitações de Direito de Exploração de Satélite associados a sistemas de satélites não geoestacionários, poderão ser solicitadas comprovações e compromissos adicionais que assegurem a coexistência com outros sistemas em operação ou com sistemas a serem autorizados posteriormente, de forma a garantir que não haja restrição à competição.
+(...)
+Art. 23. O Direito de Exploração de Satélite será conferido à Operadora de Satélite a título oneroso, conforme estabelecido neste Regulamento.
+Art. 24. O Direito de Exploração de Satélite será conferido pelo prazo de até 15 (quinze) anos, a contar da data de publicação do extrato do Ato que conferirá o referido Direito no DOU.
+§ 1º O prazo máximo para entrada em operação de satélites geoestacionários será de 5 (cinco) anos para satélite brasileiro e de 2 (dois) anos para satélite estrangeiro, contado a partir da data de publicação do extrato do Ato que conferirá o referido Direito no DOU, observada a necessidade de continuidade no Provimento de Capacidade Satelital no caso de aplicação do disposto no artigo 20.
+§ 2º O prazo e as condições para entrada em operação de sistemas de satélites não geoestacionários serão estabelecidos pelo Conselho Diretor em cada caso, observadas as particularidades dos sistemas, o estabelecido no RR da UIT e o interesse público.
+§ 3º O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da UIT, observado o interesse público.
+O Ato nº 9.526 (SEI nº 7596501), de 27 de outubro de 2021, previsto no § 1º do art. 16 do RGSat, estabeleceu a documentação a ser apresentada quando do requerimento do direito de exploração:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º Concomitantemente à análise da documentação citada nos incisos anteriores, a área técnica responsável verificará a regularidade fiscal da pretendente perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel.
+§ 2º Não sendo possível realizar a consulta aos bancos de dados referidos no § 1º deste artigo, ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões.
+Art. 2º Sem prejuízo da documentação a ser encaminhada, relacionada no Art. 1º, deverão ser cumpridas as demais condições estabelecidas no Regulamento Geral de Exploração de Satélites.
+Adicionalmente, os pedidos de direito de exploração de satélite estrangeiro estão sujeitos ao atendimento de requisitos específicos, além daqueles de caráter geral, nos termos do art. 30 do RGSat:
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+I - formalizar ante a Agência a indicação de seu(s) representante(s) legal(is) no Brasil e seu comprometimento de manter essa informação atualizada e de prover a capacidade do Segmento Espacial somente por meio do(s) representante(s) indicado(s);
+II - efetuar o pagamento, por um de seus representantes legais no País, pelo direito de exploração de satélite estrangeiro, de valor fixado pela Agência, conforme estabelecido neste Regulamento;
+III - apresentar documentação, expedida pelo órgão competente, que demonstre as condições da autorização do satélite no país de origem.
+§ 1º Os representantes legais referidos neste artigo deverão ser empresas constituídas segundo as leis brasileiras, com sede e administração no País, devendo fazer comprovação desta condição.
+§ 2º Os representantes legais da entidade detentora de Direito de Exploração de Satélite Estrangeiro podem ser prestadores de serviço de telecomunicações e, nesta condição, somente podem fazer uso da Capacidade Satelital que elas próprias representam se a contratação for formalizada por intermédio de outro representante legal.
+§ 3º O contrato de comercialização de capacidade espacial referente a direito de exploração de satélite estrangeiro deve ser firmado no Brasil entre o representante legal da exploradora e a prestadora de serviço de telecomunicações, partes contratuais distintas.
+§ 4º Para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro, a Agência aplicará adicionalmente as condições da autorização do país de origem, exceto em casos excepcionais, a critério da Agência.
+§ 5º Alterações nas condições da autorização do país de origem posteriores à conferência do Direito de Exploração de Satélite Estrangeiro ensejarão nova análise técnica e possíveis alterações nas condições estabelecidas no Brasil.
+Quanto às exigências documentais previstas no RGSat, em especial aquelas constantes do art. 30, inciso I, e do art. 16, bem como do art. 1º do Ato nº 9.526/2021, a ORLE verificou que tanto a documentação apresentada originalmente (documentos SEI nº 14813711, nº 14813712, nº 14813713 e nº 14813714) quanto aquela apresentada em resposta à diligência (documentos SEI nº 14867814, nº 14867815, nº 14868061, nº 14868062, nº 14868063, nº 14868298, nº 14868299, nº 14868496, nº 14868720, nº 14891221 e nº 14915279) atendem ao disposto na regulamentação aplicável.
+A conclusão da ORLE encontra-se registrada nos Check Lists de Análise Jurídica (SEI nº 14922322) e de Análise Técnica (SEI nº 14879639).
+Concordo com a conclusão da área técnica e julgo que a interessada apresentou toda a documentação requerida na regulamentação da Agência para solicitação de Direito de Exploração de Satélite estrangeiro. 
+II.b) - Da desnecessidade de realização de consulta pública
+A Gerência de Espectro, Órbita e Radiodifusão (ORER) realizou avaliação quanto à necessidade de realização de consulta pública na presente solicitação de Direito de Exploração de Satélite, conforme excertos do Informe nº 1264/2025/ORER/SOR (SEI nº 14833736) apontados abaixo:
+III.a. Da Consulta Pública
+3.9. O Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021, dispõe sobre a realização de Consulta Pública no âmbito dos processos de Direito de Exploração de Satélites, conforme se lê abaixo:
+Art. 17. A Agência poderá estabelecer, em Ato do Conselho Diretor, que deverá ser precedido de Consulta Pública, compromissos para a conferência de Direito de Exploração de Satélites, tais como requisitos mínimos de capacidade e cobertura sobre o território brasileiro, levando em consideração o interesse público quanto ao uso dos recursos de espectro e órbita, em especial nas faixas de frequências sujeitas aos planos do Apêndices30-30A e 30B do RR da UIT.
+Parágrafo único. O Ato mencionado no caput poderá prever hipóteses em que deverá ser realizada consulta pública para avaliar a existência de interesse público em requerimentos de direito de exploração de satélites estrangeiro.
+(...)
+Art. 19. (...)
+§ 2º A Agência poderá realizar consulta pública sobre sua intenção de conferir Direito de Exploração, solicitando comentários sobre possíveis incompatibilidades técnicas, ou qualquer outro ponto considerado pertinente.
+(...)
+3.12. Em complemento ao referido Regulamento, a Agência editou o Ato nº 4.430, de 19 de abril de 2023, que estabelece os compromissos para exploração de satélites e os critérios para realização de Consulta Pública para conferência ou alteração de Direito de Exploração de Satélites, conforme se lê:
+2. Para conferência ou adição de faixas de frequências a direito de exploração de satélite estrangeiro associados às faixas de frequências dos Planos do Apêndice 30-30A e do Apêndice 30B do Regulamento de Rádio da União Internacional de Telecomunicações, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública.
+3. Para conferência ou adição de faixas de frequências a direito de exploração de satélite correspondente a sistemas de grande porte de satélites não-geoestacionários, ou a sistemas de satélites geoestacionários ou não-geoestacionários associados ao serviço móvel por satélite, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública, em especial para subsidiar as decisões da Agência quanto ao estabelecimento de restrições, limites ou condições, visando propiciar ampla e justa competição e o acesso por diferentes agentes econômicos ao mercado.
+3.1. Entende-se por sistemas de grande porte de satélites não-geoestacionários aqueles compostos por mais de mil satélites.
+3.2. Os sistemas de satélites associados ao serviço móvel por satélite, a que se refere o item 3, são aqueles cujas estações terrenas não façam uso de antenas direcionais e que não tenham capacidade para manter o apontamento para o satélite correspondente à sua rede.
+3.14. Quanto à necessidade de realização de Consulta Pública em função de operação em faixas de radiofrequências sujeitas aos Apêndices 30-30A e 30B, destaca-se que, apesar de as faixas de frequências de 12,75 GHz a 13,25 GHz (enlace de subida), 10,70 GHz a 10,95 GHz e 11,20 GHz a 11,45 GHz (enlace de descida) estarem sujeitas às regras do Plano do Apêndice 30B, esse Plano abrange apenas operação de satélites geoestacionários, conforme se lê abaixo do trecho extraído do Regulamento de Rádio da União Internacional de Telecomunicações:
+Appendix 30B
+(...)
+1.1 The objective of the procedures prescribed in this Appendix is to guarantee in practice, for all countries, equitable access to the geostationary-satellite orbit in the frequency bands of the fixed-satellite service covered by this Appendix.
+_________________
+Apêndice 30B
+(...)
+1.1 O objetivo dos procedimentos previstos neste Apêndice é garantir, na prática, para todos os países, o acesso equitativo à órbita de satélites geoestacionários nas faixas de frequências do serviço fixo por satélite abrangidas por este Apêndice.
+(em tradução livre)
+3.15. Adicionalmente, observa-se que a interessada solicitou autorização para a exploração de até 648 satélites no Brasil. Dessa forma, o sistema proposto não se caracteriza como uma constelação de grande porte, nos termos definidos no item 3.1 do Ato nº 4.430/2023.
+(grifos originais)
+A conclusão da área técnica é de que não há necessidade de realização de consulta pública no presente caso. Alinho-me à conclusão da área técnica, uma vez que a solicitação em tela não se enquadra nas hipóteses em que deve ser realizada Consulta Pública, nos termos do RGSat e no Ato nº 4.430/2023.
+II.c) - Dos aspetos técnicos e de coordenação
+Entendo adequado iniciar a avaliação dos aspectos técnicos referentes ao sistema de satélites não geoestacionários SPACESAIL fazendo uma descrição resumida de suas características.
+ De acordo com as informações submetidas à Anatel, o sistema SPACESAIL será composto por 648 satélites, distribuídos em 18 planos orbitais, com 36 satélites em cada plano. A inclinação dos planos orbitais é de 89 graus e a altitude orbital é de 1.160 km. No segmento terrestre, estão planejadas 6 estações de acesso (gateways) no território brasileiro, sendo uma em São Paulo/SP, outra em Brasília/DF, e mais quatro estações cujo local de instalação ainda será definido. Também está prevista a implantação de um Centro de Operações de Rede (NOC, do inglês Network Operation Center) no Brasil.
+As faixas de frequências de operação propostas são 10.700 MHz – 12.700 MHz / 14.000 MHz – 14.500 MHz, que correspondem a parte da banda Ku, e 37.500 MHz – 38.000 MHz / 47.200 MHz – 49.200 MHz, que correspondem a parte das Bandas Q/V. A comunicação dos satélites com as estações gateway se dá nas faixas das bandas Q/V, enquanto a comunicação entre as estações de usuário e os satélites se dá nas faixas da banda Ku.
+No que diz respeito ao número de satélites, destaco os comentários trazidos pela área técnica no Informe nº 12605/2025/ORLE/SOR (SEI nº 14922143):
+3.25. Para a conferência do Direito de Exploração de Satélite estrangeiro, a Agência avalia os critérios em que estes sistemas foram autorizados no país de origem.
+3.26. Destaca-se que a interessada apresentou, conforme consta do Requerimento de Direito de Exploração de Satélite SEI nº 14813711, pedido inicial para uso de até 648 satélites, com capacidade de operação nas faixas de frequências de 14.000 - 14.500 MHz / 10.700 - 12.700 MHz e de 47.200 - 49.200 / 37.500 - 38.000 MHz, por até 15 (quinze) anos.
+3.27. A respeito das condições de autorização no país de origem, observa-se que a interessada apresentou os documentos SEI nº 14868298 e nº 14868299, bem como suas traduções juramentadas sob o SEI nº 14868063 e nº 14868061, emitidos pela autoridade competente da República Popular da China.
+3.28. O primeiro documento corresponde à autorização para operação de 108 satélites, à altitude de 1.160 km e com ângulo de inclinação de 89°, com validade até 31 de julho de 2031. O segundo documento se refere à autorização para a operação de 216 estações espaciais, para os mesmos recursos orbitais, com prazo de validade até 30 de setembro de 2033. Dessa forma, de acordo com as licenças do país de origem há 324 satélites autorizados, com períodos de vigência da autorização compreendidos entre 1º de julho de 2025 e 31 de julho de 2031.
+3.29. Diante das divergências quanto ao prazo e ao número de satélites abrangidos pela autorização solicitada, identificadas entre o Requerimento (SEI nº 14813711) e a documentação apresentada posteriormente pela SPACESAIL, a ORER encaminhou o Ofício nº 6607/2025/ORER/SOR-ANATEL (SEI nº 14895078) e o e-mail SEI nº 14916713, solicitando à interessada os devidos esclarecimentos.
+3.30. Em resposta, a operadora encaminhou o e-mail SEI nº 14916713, informando que a autorização referente à outra metade dos satélites do sistema, correspondente a 324 satélites, deverá ocorrer no futuro. A interessada informou, ainda, que, tão logo tal autorização venha a ser concedida no país de origem, solicitará a correspondente alteração do Direito de Exploração no Brasil. Adicionalmente, a operadora não apresentou manifestação contrária ao estabelecimento do prazo do Direito de Exploração de forma alinhada ao vencimento da autorização concedida na China, isto é, 31 de julho de 2031.
+3.31. Neste ponto, cabe destacar o disposto no § 4º do art. 30 do RGSat, segundo o qual, para fins de definição das condições regulatórias aplicáveis à conferência do Direito de Exploração de Satélite estrangeiro, a Agência deverá considerar, adicionalmente, as condições estabelecidas na autorização concedida pelo país de origem. Ademais, o art. 21 do RGSat prevê que a Agência poderá indeferir parcialmente a solicitação de Direito de Exploração, mediante fundamentação adequada, inclusive por meio da limitação do número de satélites e/ou do prazo da autorização, conforme a análise técnica e regulatória do caso concreto.
+3.32. Desta forma, no presente caso, considerando as informações apresentadas pela interessada, a ORER realizou análise, conforme consta do Informe nº 1264/2025/ORER/SOR, de 15 de dezembro de 2025 (SEI nº 14833736), sugerindo o deferimento parcial do pleito, de forma a autorizar a operação, no Brasil, de um sistema com até 324 satélites, até 31 de julho de 2031.
+(grifos originais)
+Com relação à proposta da área técnica, destaco que a interessada declarou que há expectativa de que o início da prestação de serviços por meio do sistema SPACESAIL se dê utilizando uma constelação de 324 satélites, a partir do quarto trimestre de 2026, conforme se lê no documento "05 - Cobertura de Serviço no Brasil da Constelação SPACESAIL Portugues (6.3.3).pdf", que é um dos documentos contidos no arquivo compactado SEI nº 14813713. 
+Assim, tendo em vista a necessidade de observar as condições das autorizações concedidas no país de origem, conforme preveem os parágrafos 4º e 5º do art. 30 do RGSat, e a declaração da interessada de que pretende iniciar a prestação de serviços a partir de uma constelação com 324 satélites, alinho-me à proposta da área técnica, no sentido de que a autorização para exploração do sistema SPACESAIL no Brasil por hora preveja a operação de, no máximo, 324 satélites, sem prejuízo de que esse número seja alterado no futuro, sob solicitação da interessada, com base em nova autorização conferida no país de origem.
+No que diz respeito às faixas de frequências, a análise da área técnica indicou que, após consulta ao Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), aprovado pela Resolução nº 772, de 16 de janeiro de 2025, verificou-se que há atribuição ao Serviço Fixo por Satélite nas faixas de interesse, bem como destinação compatível, atendendo o requisito previsto no Regulamento de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 671, de 3 de novembro de 2016. 
+No âmbito da União Internacional de Telecomunicações – UIT, a interessada informou que o sistema SPACESAIL corresponde à rede de satélite (filing) SAILSPACE-1, submetida à UIT em nome da administração da República Popular da China. A rede de satélite SPACESAIL-1 encontra-se em processo de notificação junto à UIT, para entrada no Registro Mestre Internacional de Frequências.
+Quanto a este ponto, a área técnica destacou que as faixas de frequências objeto da solicitação de Direito de Exploração de Satélite estão sujeitas à aplicação da disposição 22.2 do Regulamento de Rádio da UIT, conforme se vê abaixo:
+3.31. Conforme se observa das notas de rodapé, o uso das faixas de interesse por sistemas de satélites não geoestacionários está sujeito a procedimentos de coordenação e à aplicação da disposição 22.2 do Regulamento de Rádio da UIT. Tal disposição trata da proteção de satélites geoestacionários, sendo requerido o atendimento dos níveis de densidade de fluxo de potência equivalente (EPFD, do inglês equivalent power flux density) para a operação dos sistemas de satélites não geoestacionários.
+3.32. Quanto aos limites de EPFD, destaca-se que os sistemas de satélites a serem autorizados no Brasil devem observar os limites operacionais estabelecidos no arcabouço regulatório nacional, bem como aqueles previstos no Regulamento de Rádio da União Internacional de Telecomunicações, o que inclui os limites previstos no artigo 22 do RR, conforme previsto no Art. 2º do RGSat e no item 6.1.5 do anexo ao Ato nº 9.523/2021 – Requisitos técnicos e operacionais para sistemas de comunicação via satélite. As operadoras de satélite, ao submeterem o Requerimento de Solicitação de Direito de Exploração no Brasil, se comprometem a observar as condições de operação contidas na regulamentação nacional e internacional, além das condições legais, regulamentares e normativas para Exploração de Satélite, durante o prazo de exploração do satélite.
+3.33. A este respeito, menciona-se que o Art. 22 do RR determina os limites de EPFD para operação das constelações de satélites não geoestacionários, a fim de evitar interferências prejudiciais à operação dos satélites geoestacionários. Destaca-se ainda que, conforme o Art. 22.2 do RR e § 8º do Art. 10 do RGSat, as constelações não geoestacionárias não poderão provocar interferência nem solicitar proteção de satélites geoestacionários associados ao Serviço Fixo por Satélite e Serviço de Radiodifusão por Satélite. Adiciona-se a isto a Resolução UIT-R 76, que determina os limites de EPFD agregados que devem ser observados na operação simultânea dos sistemas de satélites não geoestacionários, a fim de evitar interferências prejudiciais sobre satélites geoestacionários, quando há sobreposição de frequências.
+3.34. Quanto ao atendimento aos limites previstos no RR, a União Internacional de Telecomunicações realiza os cálculos de conformidade a estes limites com base nas disposições da Recomendação UIT-R S.1503 – "Functional description to be used in developing software tools for determining conformity of non-geostationary-satellite orbit fixed-satellite service systems or networks with limits contained in Article 22 of the Radio Regulations" e disponibiliza sua análise no site da entidade para consulta das Administrações.
+3.35. De acordo com os procedimentos definidos no Regulamento de Rádio, cabe à UIT realizar a análise quanto ao atendimento aos limites de EPFD definidos no Art. 22 do RR, com base em metodologia que segue os procedimentos internacionais e conta com a participação de diversas administrações para sua elaboração e aprovação.
+3.36. A esse respeito, cabe destacar que a rede de satélites SAILSPACE-1 obteve parecer favorável da UIT (favourable finding) com relação ao atendimento aos limites de EPFD do Art. 22 do RR1, para a publicação CR/C/5991. Conforme consta das informações disponíveis pela UIT, ainda não foi realizada avaliação para a publicação referente à notificação da rede SAILSPACE-1.
+_________________
+1 https://www.itu.int/net/ITU-R/space/epfd/index.html e https://www.itu.int/net/ITU-R/space/documents/EPFD/3049/323520044_SAILSPACE-1_Results_Summary.pdf.
+3.37. Neste sentido, sugere-se exigir da operadora que apresente o parecer relativo à notificação da rede SAILSPACE-1 a ser disponibilizado pela UIT a respeito do atendimento dos limites de EPFD tão logo o parecer seja publicado por aquela entidade.
+3.38. Caso o parecer definitivo seja desfavorável, a empresa deve proceder com ajustes em sua operação, caso necessário12, para operar de acordo com as características técnicas de redes de satélites submetidas à UIT que tenham recebido parecer favorável, definitivo ou preliminar. Não havendo redes de satélites que possam ser associadas ao sistema, a operadora deverá interromper a operação dos satélites correspondentes à referida rede.
+(grifos originais)
+Concordo com a sugestão da área técnica de incluir no ato que conferirá o Direito de Exploração de Satélite determinação para que a operadora SHANGHAI SPACESAIL TECHNOLOGIES LTD apresente à Anatel parecer quanto ao atendimento aos limites de EPFD, relativo ao estágio de notificação da rede SAILSPACE-1, tão logo este parecer seja disponibilizado pela UIT. Em caso de parecer desfavorável da UIT, a operadora deve proceder com os devidos ajustes para que o sistema opere de acordo com as características técnicas de redes de satélites submetidas à UIT que tenham recebido parecer favorável ou interromper a operação dos satélites, caso não haja redes de satélites que possam ser associadas ao sistema.
+Também considero adequadas as sugestões da área técnica, no sentido de estabelecer obrigações para que a SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD. apresente à Anatel relatórios anuais sobre a implementação de seu sistema e sobre a coordenação com os satélites incumbentes, na seguinte forma:
+O status das discussões de coordenação com sistemas potencialmente afetados autorizados a operar no Brasil;
+As medidas adotadas para evitar interferências prejudiciais sobre os sistemas de satélites autorizados no Brasil para os quais não foi concluída a coordenação;
+A ocorrência de casos de interferências prejudiciais reportados por outras operadoras de satélites autorizadas no Brasil, em função da operação do sistema SPACESAIL;
+A quantidade média de satélites que cobre o Brasil simultaneamente, em determinado momento; e
+Informações sobre os planos orbitais, como número de planos, altitude e inclinação, a partir dos quais é possível cobrir o território brasileiro.
+Destaco que tais medidas para submissão de informações à Anatel foram adotadas pelo Conselho Diretor quando da apreciação da solicitação de alteração do Direito de Exploração referente ao sistema Starlink, com fundamento na Análise nº 61/2025/AF (SEI nº 13486282), no âmbito do Processo nº 53500.114602/2023-73. Apesar de o sistema de satélites objeto da presente solicitação não corresponder a uma sistema de grande porte, de acordo com o critério1 estabelecido no Anexo ao Ato nº 4.430/2023, entendo que a adoção da obrigação em discussão, associada à conferência do Direito de Exploração, permite à Agência monitorar e avaliar o impacto do processo de implantação dos satélites que venham a compor o sistema SPACESAIL, exercendo seu papel de administrar o espectro de radiofrequências de forma eficiente e segura, com vistas à promoção da competição e à adequação à evolução tecnológica e de mercado. O acesso a essas informações permitirá à Agência aprimorar seus mecanismos de controle sobre o uso do espectro e das órbitas.
+______________________
+1 O item 3.1 dos Compromissos para Exploração de Satélites e Critérios para Realização de Consulta Pública pra Conferência de Direito de Exploração de Satélite, aprovados pelo Ato 4.430/2023, estabelecem que sistemas de grande porte de satélites não geoestacionários são aqueles compostos por mais de mil satélites. 
+Quanto aos aspectos de coordenação a serem observados na exploração de satélites sobre o território brasileiro, importa destacar o disposto no art. 10 do RGSat:
+Art. 10. A exploração de satélites sobre o território brasileiro requer coordenação prévia com sistemas de comunicação via satélite que tenham prioridade de coordenação no âmbito nacional para os quais haja sobreposição de frequências, observados os critérios técnicos e operacionais definidos em Ato da Superintendência responsável pela administração do uso do espectro de radiofrequências.
+§ 1º Terão prioridade de coordenação no âmbito nacional sobre satélites entrantes as redes de satélite notificadas em nome do Brasil, os direitos de exploração devidamente conferidos e aqueles cuja solicitação de autorização para exploração de satélite tenha sido protocolizada anteriormente.
+(...)
+§ 6º O requisito de coordenação prévia deve ser atendido mediante assinatura de acordo de coordenação com as operadoras de satélites autorizadas envolvidas, o qual não dispensa o atendimento aos parâmetros e critérios técnicos mencionados no artigo 15, observando que:
+I - Nos casos de exploração de satélite associada aos serviços de radiocomunicação listados no inciso I do artigo 4º, uma cópia do acordo de coordenação firmado deve ser enviada à Anatel quando da solicitação de direito de exploração de satélite;
+II - Nos casos de exploração de satélite associada aos serviços de radiocomunicação listados no inciso II do artigo 4º, uma cópia do acordo de coordenação firmado deve ser enviada à Anatel antes da entrada em operação do satélite.
+(...)
+§ 8º Sistemas de satélites não geoestacionários não devem causar interferência inaceitável, conforme definições constantes do Ato previsto no artigo 15, ou solicitar proteção de satélites geoestacionários operando nas faixas de frequências do Serviço Fixo por Satélite ou do Serviço de Radiodifusão por Satélite, independente dos critérios de prioridade de coordenação no âmbito nacional, estando dispensados da necessidade de apresentação de acordo de coordenação em relação a satélites geoestacionários, nas faixas de frequências especificadas por meio do referido Ato.
+Ressalta-se que os §§ 1º, 2º e 3º do art. 18 do RGSat preveem, ainda, a possibilidade de autorização sem que sejam apresentados os acordos de coordenação previstos no art. 10, desde que sejam comprovados esforços de coordenação e que o sistema não cause interferência ou solicite proteção, em relação aos sistemas para os quais a coordenação não foi concluída.
+§ 1º Na hipótese de coordenação entre sistemas de satélites não geoestacionários ou entre satélites não geoestacionários e geoestacionários ou entre satélites geoestacionários com separação orbital de 2° (dois graus) ou mais, caso um ou mais acordos de coordenação não sejam apresentados, a Operadora de Satélite poderá solicitar a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e desde que sua operação não cause interferências prejudiciais em relação àqueles sistemas cujo acordo não foi obtido, sem prejuízo à obtenção dos acordos de coordenação após a conferência do Direito de Exploração de Satélite.
+§ 2º Na hipótese prevista no § 1º deste artigo, a solicitação deverá estar acompanhada de documentos que comprovem os esforços de coordenação, os quais serão analisados pela Agência que poderá solicitar informações adicionais das partes interessadas.
+§ 3º Em nenhuma hipótese serão consideradas solicitações sem os acordos de coordenação necessários ou, se for o caso, sem os documentos com a indicação da operação sem direito à proteção e sem causar interferência prejudicial em relação àqueles sistemas cujo acordo não foi obtido, prevista no § 1º, e sem os documentos que comprovam os esforços de coordenação, previstos no § 2º.
+O item 5.2 do Anexo ao Ato nº 9.523, de 27 de outubro de 2021, transcrito abaixo, estabelece os requisitos técnicos e operacionais referentes à coordenação de sistemas de satélites não geoestacionários (NGEO) com outros sistemas satelitais:
+5.2 Sistemas de Satélites Não-geoestacionários
+5.2.1 As regras estabelecidas pelo § 8º do artigo 10 do Regulamento Geral de Exploração de Satélites se aplicam às faixas de frequências sujeitas à disposição 22.2 do Regulamento de Rádio da União Internacional de Telecomunicações.
+5.2.2 Para fins de coordenação de sistemas de satélites não-geoestacionários com sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.12A do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.
+5.2.3 Para fins de coordenação de sistemas de satélites não-geoestacionários com outros sistemas de satélites não-geoestacionários é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites que tenham prioridade de coordenação no âmbito nacional.
+5.2.4 Na hipótese de ser detectada a existência de interferência agregada em satélites geoestacionários, proveniente de sinais de interferência oriundos de diferentes sistemas de satélites não-geoestacionários, as operadoras dos sistemas de satélites não-geoestacionários devem cooperar mutuamente, adotando as medidas técnicas necessárias para eliminar a interferência.
+Com fundamento nessas disposições regulamentares, a área técnica fez os seguintes apontamentos:
+3.67. Para fins de aplicação do art. 10 do RGSAT, é necessário verificar a existência de sistemas de satélites com prioridade de coordenação em âmbito nacional em relação ao sistema objeto do pedido de Direito de Exploração de Satélites, conforme os critérios estabelecidos no § 1º do referido artigo. Nesse sentido, menciona-se que, para as faixas de frequências abrangidas pelo pleito:
+a) há redes de satélites brasileiras notificadas, com frequency assignments nas faixas de frequências da Banda Ku, associadas a satélites geoestacionários. Dessa forma, considerando a aplicabilidade dos limites previstos na disposição 22.2 do RR e das regras constantes do § 8º do Art. 10 do RGSat e do item 5.2.1 dos Requisitos Técnicos e Operacionais aprovados pelo Ato nº 9523/2021, não há necessidade de apresentar acordos de coordenação, mas de operar de forma a não causar interferência sobre os satélites geoestacionários.
+b) há direitos de exploração de satélites conferidos pela Agência, associados aos satélites geoestacionários, operando em faixas da Banda Ku. Porém, conforme indicado na alínea a), não há necessidade de apresentar acordos de coordenação com relação a satélites geoestacionários. Entretanto, deve-se obter os acordo de coordenação de operadoras de outros sistemas não geoestacionários com prioridade de coordenação em nível nacional; e
+c) há pedidos de Direito de Exploração de Sistema de Satélites não geoestacionários em análise cuja data de protocolo é anterior à solicitação apresentada2 pela SHANGAI SPACESAIL TECHNOLOGIES CO. LTD., para frequências das Bandas Q/V.
+______________________
+2 Informação disponível em: https://informacoes.anatel.gov.br/paineis/espectro-e-orbita/solicitacoes-de-direito-de-exploracao.
+3.68. Conforme consta do documento SEI nº 14813714, a interessada apresentou esforços de coordenação com relação aos sistemas de satélites não geoestacionários já autorizados a operar no Brasil nas faixas de frequências da Banda Ku. Assim, foram indicados os esforços de coordenação com as operadoras do sistemas Kepler, OneWeb e Starlink.
+3.69. Entretanto, com relação às frequências das Banda Q/V, a interessada não apresentou esforços de coordenação com relação a sistemas de satélites não geoestacionários cujo pedido de autorização é anterior à solicitação da SHANGAI SPACESAIL TECHNOLOGIES CO. LTD. Dessa forma, a área técnica encaminhou o Ofício nº 9088/2025/ORLE/SOR-ANATEL (SEI nº 14816335) à interessada, solicitando a apresentação dos acordos de coordenação correspondentes ou, alternativamente, manifestação expressa quanto ao interesse na conferência da autorização sem direito à proteção e sem causar interferências prejudiciais aos sistemas para os quais não tenha sido obtido acordo de coordenação.
+3.70. Em resposta, a interessada encaminhou o documento SEI nº 14867814, no qual apresenta esforços de coordenação com a operadora AST SpaceMobile.
+3.71. Nesse contexto, a interessada solicita expressamente a conferência do Direito de Exploração de Satélites sem direito à proteção contra interferência prejudicial e sem causar interferências prejudiciais aos sistemas com os quais não foi possível firmar acordo de coordenação, em conformidade com os §§ 1º e 3º do art. 18 do RGSAT.
+3.72. Desta forma, observada a hipótese regulatória aplicável ao presente caso, verificou-se que a solicitante cumpriu com os requisitos de coordenação determinados na regulamentação.
+(grifos originais)
+Concordo com o posicionamento da área técnica.
+II.d) - Do prazo de vigência do direito de exploração e para entrada de operação
+Conforme o art. 24 do RGSat, o prazo máximo para de validade para o Direito de Exploração de satélite é de até 15 (quinze) anos, a contar da data de publicação no DOU do extrato do Ato que confere a autorização:
+Art. 24. O Direito de Exploração de Satélite será conferido pelo prazo de até 15 (quinze) anos, a contar da data de publicação do extrato do Ato que conferirá o referido Direito no DOU.
+§ 1º O prazo máximo para entrada em operação de satélites geoestacionários será de 5 (cinco) anos para satélite brasileiro e de 2 (dois) anos para satélite estrangeiro, contado a partir da data de publicação do extrato do Ato que conferirá o referido Direito no DOU, observada a necessidade de continuidade no Provimento de Capacidade Satelital no caso de aplicação do disposto no artigo 20.
+§ 2º O prazo e as condições para entrada em operação de sistemas de satélites não geoestacionários serão estabelecidos pelo Conselho Diretor em cada caso, observadas as particularidades dos sistemas, o estabelecido no RR da UIT e o interesse público.
+§ 3º O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da UIT, observado o interesse público.
+Conforme mencionado anteriormente nesta Análise, a avaliação de Direitos de Exploração de satélites estrangeiros deve levar em consideração as condições da outorga no país de origem, conforme prevê o § 4º do art. 30 do RGSat.
+As duas autorizações conferidas pela República Popular da China e apresentadas pela SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD nos autos do processo possuem vigência até 31 de julho de 2031, de acordo com o Documento SEI nº 14868298, e 30 de setembro de 2033, conforme observado no Documento SEI nº 14868299. Neste sentido, a área técnica propôs que o Direito de Exploração seja conferido até 31 de julho de 2031, de modo que o prazo de vigência do Direito de Exploração no Brasil não exceda o prazo de vigência de nenhuma das autorizações conferidas no país de origem.
+No que diz respeito ao prazo para entrada em operação de sistemas de satélites não geoestacionários, o art. 24 do RGSat define que seria estabelecido pelo Conselho Diretor em cada caso, observando as especificidades de cada sistema. No caso em tela, a área técnica propõe que o prazo máximo para entrada em operação seja de dois anos, contados a partir da publicação no Diário Oficial da União do extrato do Ato de Direito de Exploração.
+Adicionalmente, a área técnica propõe que a caracterização da entrada em operação se dê por meio da comprovação do lançamento de, no mínimo, 10% (dez por cento) do total de satélites autorizados no Brasil, como forma de demonstração do interesse concreto e da capacidade operacional de utilização dos recursos de orbita e espectro associados à autorização.
+Destaco que, em decisões anteriores deste Colegiado, a exemplo daquelas relacionadas à conferência de Direitos de Exploração para os sistemas de satélites não geoestacionários Semaphore, Kuiper e Starlink, o Conselho Diretor fixou o prazo de vigência dos respectivos Direitos em 5 (cinco) anos. Nos casos mencionados, tal decisão decorreu de preocupações quanto à adequada utilização dos recursos orbitais e para que a Agência pudesse dispor de mais elementos para avaliar eventuais impactos ainda não previstos à concorrência ou barreiras à entrada de outros sistemas no mercado de satélites brasileiros, uma vez que as constelações envolvidas são compostas por mais de mil satélites, caracterizando-se como sistemas não geoestacionários de grande porte, conforme critério estabelecido no Anexo ao Ato nº 4.430/2023.
+No presente caso, o Direito de Exploração abrangerá a operação de, no máximo, 324 satélites, o que não configura sistema de grande porte. Assim, embora não se devam afastar as preocupações relacionadas à sustentabilidade de longo prazo no uso dos recursos orbitais, conforme abordarei mais adiante nesta análise, entendo não ser necessária a limitação do prazo do Direito de Exploração por esse fundamento, alinhando-me à proposta da área técnica.
+No que diz respeito ao prazo e condições para entrada em operação do sistema SPACESAIL, julgo que a adoção do critério proposto pela área técnica contribui para assegurar o uso eficiente, responsável e tempestivo de recursos escassos, reduzindo o risco de que pedidos de autorização sejam apresentados com finalidade meramente especulativa ou sem perspectiva realista de implementação. Ademais, ao vincular a caracterização da entrada em operação a um marco verificável, confere-se maior objetividade ao acompanhamento regulatório, favorecendo a previsibilidade, a isonomia entre agentes e a transparência decisória, em consonância com os princípios de boa governança regulatória.
+A adoção de prazo para entrada em operação, acompanhado de critérios objetivos e verificáveis para sua comprovação, revela-se especialmente relevante em cenários nos quais se adota o mecanismo de first come, first served, como é o caso do Brasil, onde esse mecanismo é adotado para definição da prioridade nacional de coordenação. Nesse arranjo, a ordem de apresentação das solicitações é importante, o que exige salvaguardas regulatórias para assegurar que a prioridade decorrente da anterioridade esteja associada a projetos com efetiva perspectiva de implementação.
+Salienta-se que a proposição técnica para o prazo de 2 (dois) anos baseou-se em precedentes do Conselho Diretor, destacando o Ato nº 2.174/2022 (SEI nº 8010048), que conferiu o Direito de Exploração do sistema Starlink; Ato nº 2.263/2022 (SEI nº 8024712), do sistema Swarm; Ato nº 10.495/2022 (SEI nº 8814770), do Sistema Oneweb e Ato nº 16983/2022( SEI nº 9575277), referente ao sistema Kuiper; entre outros. 
+Assim, concordo com a área técnica nas propostas relacionadas ao prazo de vigência do Direito de Exploração de Satélite e ao prazo para entrada em operação do sistema.
+II.e) - Da atualização da Lista de Prioridade de Coordenação de Sistemas Satelitais
+Por fim, considerando que a interessada requereu expressamente a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e sem causar interferência prejudicial com relação aos sistemas com os quais não foi possível celebrar acordo de coordenação, nos termos dos §§ 1º e 3º do art. 18 do RGSat, a área técnica propõe a atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, para incluir o sistema SPACESAIL, caso o Conselho Diretor da Anatel decida pela conferência do Direito de Exploração da referida constelação. 
+A Lista de Prioridade de Coordenação de Sistemas Satelitais foi aprovada pelo Conselho Diretor por meio do Acórdão nº 91 (SEI nº 13531779), de 8 de abril de 2025, conforme fundamentação contida na Análise nº 61/2025/AF (SEI nº 13486282). Por meio deste instrumento, a Agência confere maior transparência em relação às informações das prioridades nacionais de coordenação definidas para os sistemas satelitais autorizados no Brasil, facilitando sua consulta por empresas exploradoras e demais interessados
+Por meio do referido Acórdão, o Conselho Diretor decidiu que a Lista de Prioridade de Coordenação deve ser atualizada sempre que houver a aprovação de novo pedido de conferência ou de alteração do Direito de Exploração que impacte sua composição.
+Neste sentido, concordo com a proposta da área técnica para atualização da Lista de Prioridades de Coordenação, aprovada pelo Ato nº 4.141, de 11 de abril de 2025, conforme minuta SEI nº 14853212.
+III - Da sustentabilidade no uso dos recursos orbitais
+As discussões relacionadas à sustentabilidade no uso dos recursos orbitais têm se tornado tema relevante nos cenários estratégicos nacional e internacional. Participam dessas discussões múltiplos atores, como agências espaciais nacionais, órgãos reguladores, operadoras de satélites, prestadoras de serviços de lançamento de satélites e organismos internacionais que tratam de temas como a governança do espaço exterior e a administração eficiente e responsável dos recursos de órbita e do espectro de radiofrequências associados.
+Os debates têm se intensificado nos últimos anos, dada a rápida expansão das atividades espaciais nas últimas décadas, com destaque para a implantação de grandes constelações de satélites NGEO destinadas à prestação de serviços de radiocomunicação. Essa expansão tem promovido um rápido e expressivo aumento do quantitativo de objetos em órbita e, consequentemente, intensificado desafios técnicos, operacionais e regulatórios relacionados à gestão do tráfego espacial (space traffic management), à mitigação e à remediação de detritos orbitais, à prevenção de colisões e de eventos de fragmentação, bem como à coordenação e à convivência entre sistemas espaciais no uso compartilhado de recursos escassos, em especial o espectro de radiofrequências e os planos orbitais. Nesse contexto, reforça-se a necessidade de mecanismos de governança capazes de assegurar previsibilidade, transparência e efetividade na implementação de medidas de longo prazo que preservem a segurança das operações, a continuidade dos serviços e o acesso equitativo e sustentável ao ambiente espacial.
+No Informe nº 12605/2025/ORLE/SOR (SEI nº 14922143), a área técnica fez comentários relativos ao tema da sustentabilidade espacial, destacando as ações em desenvolvimento no âmbito internacional e as medidas adotadas pela operadora SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD para operação do sistema SPACESAIL:
+3.47. Considerando a relevância do tema para a análise do pleito, a ORER apresenta, em seu Informe nº 1264/2025/ORER/SOR, de 15 de dezembro de 2025 (SEI nº 14833736), considerações e informações técnicas relativas à sustentabilidade espacial, conforme se lê abaixo:
+3.77. Quanto as questões sobre uso sustentável dos recursos de espectro e órbita, destaca-se que, no âmbito da União Internacional das Telecomunicações, foram editadas resoluções associadas ao tema relativo ao uso sustentável dos recursos de órbita, observadas as competências desta entidade:
+I. Resolução 218 – aprovada na Conferência dos Plenipotenciários da UIT em 2022 (PP-22): ITU's role in the implementation of the "Space2030" Agenda: space as a driver of sustainable development, and its follow-up and review process;
+II. Resolução 219 – aprovada na Conferência dos Plenipotenciários da UIT em 2022 (PP-22): Sustainability of the radio-frequency spectrum and associated satellite-orbit resources used by space services; e
+III. Resolução ITU-R 74 – aprovada durante a Assembleia de Radiocomunicações de 2023 (RA-23): Activities related to the sustainable use of radio-frequency spectrum and associated satellite-orbit resources used by space services.
+3.78. Por meio das Resoluções 218 e 219, a UIT convida os Estados Membros: i) a participar ativamente na implementação da Agenda "Space2030", apoiando a realização dos Objetivos de Desenvolvimento Sustentável (ODS), ii) a participar dos estudos da UIT-R; e iii) tomar as medidas necessárias para evitar interferências inaceitáveis aos sistemas GEO e a outros sistemas NGEO, garantindo o uso eficiente do espectro de radiofrequências e recursos orbitais de satélites, ao autorizar sistemas NGEO.
+3.79. Já por meio da Resolução ITU-R 74 (RA-23), foram definidas diferentes medidas, em âmbito internacional, para promoção de ações relacionadas ao uso sustentável dos recursos de espectro de radiofrequências e de órbitas, que incluíram:
+- Estudos sobre mitigação de interferências envolvendo sistemas NGEO;
+- Elaboração de nova recomendação da ITU-R sobre desorbitação de satélites NGEO;
+- Elaboração de manual de melhores práticas sobre sustentabilidade espacial; e
+- Estabelecimento de um portal eletrônico no site da UIT sobre Sustentabilidade Espacial.
+3.80. Tais ações tem sido acompanhadas pela área técnica da Agência. Considerando as ações em andamento, sugere-se que o Ato de Direito de Exploração de Satélites que venha a autorizar a operação do sistema SpaceSail no Brasil estabeleça que requisitos adicionais de sustentabilidade espacial poderão ser impostos futuramente à operação do sistema no Brasil.
+3.81. Adicionalmente, as Diretrizes para a Sustentabilidade de Longo Prazo das Atividades Espaciais (do inglês, Guidelines for the Long‑Term Sustainability of Outer Space Activities), adotadas no âmbito do Comitê das Nações Unidas para o Uso Pacífico do Espaço Exterior (COPUOS), estabelecem um conjunto de recomendações destinadas a assegurar que o espaço exterior permaneça acessível, seguro e utilizável por longo prazo. Essas diretrizes orientam os Estados e operadores a desenvolverem marcos regulatórios nacionais adequados, registrarem e divulgarem informações sobre objetos espaciais, assegurarem o uso racional e eficiente dos recursos orbitais e espectrais, e promoverem transparência e responsabilidade no planejamento e condução de atividades espaciais.
+3.82. As diretrizes estabelecem, ainda, que os Estados devem adotar medidas técnicas e operacionais para fortalecer a segurança das operações espaciais, incluindo o compartilhamento de dados orbitais, a avaliação de risco de colisão, a mitigação de detritos e a gestão segura de reentradas.
+3.83. Ainda nesse contexto, menciona-se que, durante a Conferência Mundial de Radiocomunicações de 2023 (CMR-23) foram aprovadas Resoluções que estabelecem novas regras relevantes para a promoção do uso sustentável do espaço, com destaque para:
+- Resolução 8 UIT-R (CMR-23), que estabeleceu limites de tolerâncias orbitais (referentes, por exemplo, aos parâmetros de inclinação, apogeu, perigeu e excentricidade) dentro das quais os satélites não-geoestacionários devem operar para se manterem em conformidade com o Regulamento de Radiocomunicações. A operação efetiva dos satélites não-geoestacionários dentro de tais tolerâncias visa, prioritariamente, fomentar a convivência harmoniosa no uso dos recursos de espectro e órbita associados às grandes constelações. Sendo assim, o estabelecimento de limites de tolerância orbital gera maior transparência e incentivos diretos a um padrão mais ordenado de ocupação dos recursos orbitais por sistemas de satélites NGEO, especialmente em órbita baixa; e
+- Resolução 35 UIT-R (CMR-23), que define marcos temporais (milestones) para que se proceda com a efetiva implementação e que se reconheça a entrada em operação de sistemas de satélites NGEO, com vistas à promoção do uso eficiente dos recursos de espectro e órbita.
+3.84. A fim de avaliar o cumprimento das regras internacionais relevantes para a promoção do uso sustentável do espaço, esta área técnica acompanhará o atendimento, pela interessada, das exigências previstas nas Resoluções da UIT3, monitorando o cumprimento das etapas e prazos estabelecidos no âmbito internacional.
+_____________________
+3 Informações disponíveis em: https://www.itu.int/en/ITU-R/seminars/wrs/Documents/2024/Space-Workshops/Resolution%208%20and%2035.pdf e https://www.itu.int/net/ITU-R/space/res35/index.html.
+3.85. Ainda quanto aos aspectos sobre uso sustentável dos recursos orbitais, vale frisar que, por meio do documento SEI nº 14867815, a interessada forneceu informações sobre os mecanismos de controle de seu sistema que podem contribuir para o uso coordenado das órbitas a serem ocupadas. Na referida correspondência, a empresa afirma adotar procedimentos específicos de monitoramento, prevenção de colisões e desativação de satélites ao final de sua vida útil.
+3.86. Segundo informado, o sistema SPACESAIL foi projetado em conformidade com regulamentações internacionais e domésticas aplicáveis à segurança espacial, incorporando estratégias voltadas à mitigação de riscos de colisão. O centro de telemetria, rastreamento e comando (TT&C) realiza a aquisição contínua de dados orbitais de veículos espaciais e detritos, permitindo o cálculo das probabilidades de colisão entre os satélites da constelação e outros objetos em órbita. A empresa destaca, ainda, que recebe notificações de risco emitidas por órgãos reguladores nacionais e por operadoras de outras constelações, adotando, quando necessário, manobras de alteração orbital capazes de afastar os satélites de eventuais trajetórias de colisão.
+3.87. Além disso, a interessada informa que os satélites da constelação dispõem de capacidade de manobra para fins de descarte ao término da vida útil ou quando tecnicamente requerido. Nesses casos, o satélite poderá ser deslocado de sua órbita operacional para uma órbita elíptica com perigeu inferior a 400 km no prazo de até 12 meses, a partir da qual deverá reentrar na atmosfera e se desintegrar em até 15 anos. A empresa afirma ainda que, em observância às diretrizes internacionais aplicáveis, foram estabelecidos requisitos de passivação para o último estágio dos veículos lançadores utilizados, incluindo o esgotamento de propelentes residuais, a despressurização de tanques e gases e a neutralização de baterias e demais elementos capazes de provocar fragmentação em órbita.
+(grifos no original)
+3.48. Dessa forma, observa-se que a interessada apresentou informações que evidenciam a adoção de procedimentos compatíveis com as boas práticas internacionais de sustentabilidade espacial.
+3.49. Ainda nesse contexto, como dito, o tema da sustentabilidade espacial tem sido amplamente debatido em diferentes fóruns internacionais, envolvendo agências reguladoras, organismos multilaterais e a indústria, com reflexos diretos sobre a regulação e a operação de sistemas de satélites não geoestacionários.
+3.50. No âmbito da UIT e de outros fóruns multilaterais, bem como das medidas aprovadas na Conferência Mundial de Radiocomunicações de 2023 (CMR-23), observa-se que a promoção do uso sustentável dos recursos de espectro de radiofrequências e de órbita constitui diretriz central para a viabilidade de longo prazo das atividades espaciais, em especial no contexto da crescente implantação de sistemas de satélites não geoestacionários. As resoluções adotadas nesses foros reforçam a necessidade de transparência, previsibilidade e observância de marcos técnicos e operacionais que assegurem a convivência harmoniosa entre sistemas, mitigando riscos de interferência e de colisão.
+Como exposto pela área técnica, a operadora SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD informou que incorpora, em sua operação, estratégias de prevenção de colisões com outros objetos espaciais e medidas para desorbitamento dos satélites e para passivação dos foguetes utilizados nos lançamentos.
+Ainda no âmbito do tema da sustentabilidade espacial, importa destacar o alerta regulatório emitido pelo Conselho Diretor da Anatel no Acórdão nº 91, de 8 de abril de 2025, com o objetivo de destacar a revisão do marco normativo vigente, à luz dos riscos identificados, notadamente aqueles relacionados à concorrência, à sustentabilidade espacial e à soberania digital.
+A fundamentação para a emissão do alerta regulatório encontra-se na Análise nº 61/2025/AF (SEI nº 13486282), do Conselheiro Alexandre Reis Siqueira Freire, e julgo relevante reproduzi-la abaixo:
+IV - Da Necessidade de emissão de Alerta Regulatório e Exortação ao C-INT
+(...)
+5.153. No que tange à regulação da exploração de satélites, conforme já destacado, vivencia-se atualmente um cenário de acentuada disrupção tecnológica e mercadológica, notadamente em razão da rápida expansão das megaconstelações de satélites em órbita baixa (LEO). Esse movimento, embora represente avanços significativos para as telecomunicações globais, impõe ao órgão regulador o desafio de conciliar inovação e expansão com a preservação de um ambiente competitivo, seguro e sustentável.
+5.154. Nesse contexto, torna-se evidente que a crescente concentração de satélites por grandes conglomerados empresariais pode comprometer a dinâmica concorrencial do setor espacial, restringindo o acesso de novos entrantes e de operadores de menor porte. Tal cenário enseja preocupações legítimas quanto à possibilidade de consolidação de posições dominantes, com impactos estruturais sobre o equilíbrio do mercado global de comunicações.
+5.155. Adicionalmente, a natureza transnacional da atividade espacial traz à tona complexas dimensões de governança internacional. O espaço exterior, enquanto bem comum da humanidade, demanda soluções regulatórias que ultrapassem as fronteiras estatais, sobretudo diante das implicações geopolíticas advindas da ocupação intensiva e estratégica das órbitas. A atuação coordenada de organismos multilaterais, como a União Internacional de Telecomunicações (UIT), revela-se cada vez mais essencial para assegurar o uso equitativo das posições orbitais e das frequências de rádio, em um ambiente marcado por escassez e competição crescente.
+5.156. É inegável que posições orbitais podem acirrar tensões entre países e entre agentes privados, ampliando o risco de assimetrias regulatórias e de conflitos de interesses com implicações sensíveis para a segurança internacional. A potencial utilização militar de satélites, a possibilidade de monitoramento transfronteiriço e o aumento exponencial da poluição orbital reforçam a urgência de soluções regulatórias sustentáveis e colaborativas, voltadas à preservação do espaço como recurso estratégico de interesse global.
+5.157. No plano concorrencial, a escassez de posições orbitais — tanto em sistemas geoestacionários (GEO) quanto em constelações de sistemas não-geoestacionários (NGEO) — impõe à Anatel uma reflexão crítica e profunda sobre a eficácia do atual arcabouço normativo para lidar com os desafios emergentes. A intensificação da competição por esses recursos exige que a Agência antecipe cenários e reavalie, com maturidade institucional, os instrumentos regulatórios disponíveis.
+5.158. Diante desse panorama, e considerando os indícios claros de que a evolução tecnológica e a nova ordem geopolítica global pressionam os limites do modelo regulatório vigente, entendo cabível, neste momento, a emissão formal de “alerta regulatório”. Tal medida visa a comunicar, de maneira transparente, que os entendimentos até aqui adotados sobre a exploração de satélites encontram-se em processo de reexame, abrindo espaço para a decorrente atualização normativa e para a construção de uma regulação mais responsiva, preventiva e alinhada aos princípios da segurança jurídica, da confiança legítima e da tutela do interesse público.
+5.159. Ademais, considerando que a revisão pontual da regulamentação aplicável à exploração de satélites já se encontra contemplada na Agenda Regulatória 2025–2026, revela-se fundamental que o Comitê de Infraestrutura de Telecomunicações (C-INT), em articulação com o Comitê de Espectro e Órbita (CEO), se debruce com especial atenção sobre as transformações em curso nesse mercado. A compreensão aprofundada do novo contexto — marcado por elevada complexidade tecnológica, riscos sistêmicos e crescente competitividade — é condição essencial para o adequado redesenho das políticas públicas setoriais.
+5.160. Nesse sentido, exorta-se ambos os Comitês a darem continuidade à avaliação dos desafios emergentes relacionados à outorga de direitos de exploração de satélites, com especial foco na adequação do atual marco regulatório frente a questões cruciais como a eficiência no uso do espectro, a sustentabilidade espacial, a segurança das redes, a preservação da soberania nacional e a promoção da concorrência. Espera-se que essas reflexões subsidiem, de forma qualificada, a atuação da Superintendência de Planejamento e Regulamentação na condução da Análise de Impacto Regulatório (AIR) da Iniciativa nº 24 da Agenda Regulatória, voltada à avaliação da necessidade de incorporação de normas relativas à sustentabilidade no uso de recursos orbitais, conforme diretrizes de organismos internacionais e em consonância com os múltiplos aspectos envolvidos — notadamente os de natureza ambiental, concorrencial e geopolítica.
+O alerta regulatório emitido vai ao encontro das ações decorrentes do item 24 da Agenda Regulatória da Anatel para o Biênio 2025-2026, cujo objetivo é avaliar a necessidade de inclusão de regras relativas à sustentabilidade no uso de recursos orbitais, conforme orientações de órgãos internacionais e os diversos aspectos envolvidos, tais como o ambiental e o concorrencial, sem alteração de regras relacionadas a outros temas tratados pelo Regulamento Geral de Exploração de Satélites.
+Vê-se, portanto, que há ações em andamento sobre o tema da sustentabilidade espacial, nos cenários nacional e internacional, que podem levar a alterações da regulamentação da Agência. Sendo assim, entendo adequada a proposta da área técnica, de incluir no Ato que conferirá o Direito de Exploração de Satélite disposição estabelecendo que requisitos adicionais de sustentabilidade podem ser definidos no futuro.
+IV - Do cenário brasileiro de acesso fixo banda larga à internet por satélite
+Atualmente, há no Brasil 46 satélites geoestacionários autorizados, dos quais 16 são satélites brasileiros e 30 são satélites estrangeiros. Desse total, 42 encontram-se em operação. No que se refere aos satélites não geoestacionários, existem atualmente 14 sistemas autorizados no País, todos estrangeiros; dentre eles, 8 já estão em operação, utilizando diferentes configurações orbitais e faixas de frequências. Conforme definição prevista na legislação e na regulamentação aplicáveis, considera-se satélite brasileiro aquele que utiliza recursos de órbita e espectro submetidos à UIT em nome do Brasil, ao passo que satélite estrangeiro é aquele que utiliza recursos submetidos à UIT em nome de outras administrações.
+Em razão de suas dimensões continentais e de suas particularidades geográficas e demográficas, as comunicações satelitais são importantes para as necessidades de conectividade do Brasil, fazendo com que o País seja um mercado relevante para esse setor. Os principais players globais de provimento de capacidade satelital têm presença no mercado brasileiro.
+Os sistemas satelitais oferecem infraestrutura para uma ampla gama de aplicações e serviços de telecomunicações. Destaca-se, em particular, o provimento de acesso à internet em banda larga fixa, que tem apresentado crescimento expressivo nos últimos anos e se mostra especialmente relevante em regiões nas quais a infraestrutura terrestre é deficiente ou inexistente. No arcabouço regulatório nacional, o provimento de acesso fixo banda larga à internet enquadra-se no Serviço de Comunicação Multimídia (SCM).
+Esse crescimento pode ser observado no gráfico a seguir, que apresenta a evolução do número de acessos de banda larga fixa por satélite, de 2011 a dezembro de 2025.
+Fonte: Painel de Dados de Acessos, Anatel (https://informacoes.anatel.gov.br/paineis/acessos/banda-larga-fixa). Dados de dezembro de 2025.
+De acordo com o painel de dados de acessos disponibilizado pela Anatel em sua página na internet, registram-se 806.897 acessos de banda larga fixa por satélite no Brasil (dezembro de 2025). A título comparativo, em 2018 havia aproximadamente 190 mil acessos nessa modalidade, de modo que o quantitativo atual supera em mais de quatro vezes o patamar observado naquele ano. Parcela relevante desse crescimento está associada à entrada em operação, no País, de sistemas de satélites não geoestacionários capazes de viabilizar a oferta desse tipo de conectividade em escala.
+No contexto mais amplo da prestação do Serviço de Comunicação Multimídia (SCM) para acesso à internet em banda larga fixa, os acessos suportados por infraestrutura satelital ainda representam uma fração reduzida do total. Conforme o mesmo painel, o Brasil contabiliza 53,88 milhões de acessos de banda larga fixa, o que implica participação aproximada de 1,5% para os acessos via satélite.
+Não obstante, a distribuição territorial desses acessos evidencia sua relevância, sobretudo sob a perspectiva de cobertura e inclusão digital. Os gráficos a seguir apresentam a distribuição, por macrorregião, dos acessos de banda larga fixa por satélite e, em paralelo, dos acessos de banda larga fixa por todos os meios, permitindo visualizar diferenças de participação regional entre os dois recortes.
+Fonte: Painel de Dados de Acessos, Anatel (https://informacoes.anatel.gov.br/paineis/acessos/banda-larga-fixa). Dados de dezembro de 2025.
+Observa-se que, no recorte específico dos acessos de banda larga fixa por satélite, as regiões Norte e Centro-Oeste apresentam participação proporcionalmente mais elevada do que aquela verificada no quadro geral de acessos de banda larga fixa no Brasil (todos os meios). Tal diferença sugere que, nessas macrorregiões, a infraestrutura satelital desempenha papel relativamente mais relevante na composição das soluções de conectividade, em comparação com áreas em que predominam redes terrestres mais capilarizadas.
+A entrada de um novo provedor de capacidade satelital no Brasil, viabilizando, entre outras aplicações, a oferta de acesso à internet por satélite, tende a ampliar a oferta e a disponibilidade desse serviço ao usuário final, bem como a reforçar a dinâmica concorrencial do setor, com potenciais impactos positivos sobre preços, qualidade, ampliação de cobertura e estímulo à inovação.
+IV - Do Preço Público
+ O Direito de Exploração de satélite será conferido à operadora a título oneroso, conforme estabelecido no artigo 23 do RGSat:
+Art. 23. O Direito de Exploração de Satélite será conferido à Operadora de Satélite a título oneroso, conforme estabelecido neste Regulamento.
+O inciso II do artigo 30 do RGSat estabelece como requisito para a obtenção do direito de exploração de satélite estrangeiro o pagamento de valor estabelecido no regulamento:
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+(...)
+II - efetuar o pagamento, por um de seus representantes legais no País, pelo direito de exploração de satélite estrangeiro, de valor fixado pela Agência, conforme estabelecido neste Regulamento;
+(...)
+Dessa forma, em relação ao valor a ser pago como preço público pelo direito de exploração de satélite, o artigo 38 do RGSat estabelece o seguinte:
+Art. 38 O valor a ser pago como preço público pelo Direito de Exploração de Satélite, Brasileiro ou Estrangeiro, bem como por sua prorrogação, será de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+§ 1º O valor de que trata o caput independe das faixas de radiofrequências envolvidas e do prazo de validade da outorga.
+§ 2º Às transferências de Direito de Exploração de Satélite Brasileiro ou Estrangeiro se aplica o valor de R$ 400,00 (quatrocentos reais). (Retificação publicada no Boletim de Serviço Eletrônico em 26/10/2021)
+§ 3º Aos órgãos da Administração Pública direta, autárquica e fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, será concedido desconto de 90% (noventa por cento) no pagamento do preço público pelo Direito de Exploração de Satélite Brasileiro.
+§ 4º O Direito de Exploração de um mesmo satélite geoestacionário ou constelação de satélites não geoestacionários conferido a mais de uma entidade dará ensejo ao pagamento integral do valor de que trata o caput por cada uma delas.
+§ 5º No caso de uma constelação de satélites não geoestacionários, com Direito de Exploração conferido a uma única entidade, o valor de que trata o caput aplica-se para a totalidade dessa constelação.
+Sendo assim, o valor do preço público pelo direito de exploração de sistema de satélites não geoestacionários a ser pago pela Operadora corresponde a R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+V - Da desnecessidade de manifestação da Procuradoria Federal Especializada junto à Anatel.
+Em relação à necessidade de remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), as hipóteses de manifestação obrigatória da PFE estão estabelecidas no § 2º do artigo 39 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013. Além disso, o §1º do mesmo dispositivo atribui ao Procurador-Geral a responsabilidade de apontar os casos sobre os quais se manifestará de ofício:
+Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares.
+Portanto, observa-se que as solicitações associadas a direito de exploração de satélite não se encontram entre as hipóteses de remessa obrigatória à PFE/Anatel, previstas no § 2º do artigo 39 do RIA.
+Adicionalmente, a Portaria nº 642, de 26 de julho de 2013, em conformidade com o disposto no § 1º do artigo 39 do RIA, disciplina os casos de manifestação obrigatória da PFE-Anatel, a qual não prevê, dentre as hipóteses de manifestação obrigatória, solicitações relacionadas ao direito de exploração de satélite.
+VI - A relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento apresentada na Análise guarda relação com a Agenda 2030, especialmente com o Objetivo 9 (infraestruturas resilientes, industrialização sustentável e inovação) e o Objetivo 11 (cidades inclusivas, seguras, resilientes e sustentáveis). Nesse contexto, ressalta-se que a utilização racional e responsável de recursos escassos, como órbita e espectro para exploração satelital, contribui para ampliar o acesso a tecnologias de informação e comunicação e para favorecer a conectividade entre pessoas e territórios, com impactos positivos inclusive em situações que demandem maior segurança e previsibilidade, como desastres naturais.
+No alinhamento nacional conduzido pelo IPEA, destacam-se metas brasileiras associadas a esses objetivos, em especial a meta nacional 9.4, voltada à modernização da infraestrutura e à sustentabilidade das atividades econômicas, com maior adoção de tecnologias e processos adequados. Os ODS são interconectados e abrangem dimensões sociais, ambientais, econômicas e institucionais, partindo do entendimento de que o desenvolvimento demanda medidas transformadoras e coordenadas para o alcance das metas globais até 2030.
+Pela relevância transversal do tema, destaca-se também o Objetivo 1 (erradicação da pobreza), cujas metas incluem proteção social, acesso a recursos econômicos, serviços básicos e novas tecnologias, além de marcos políticos e mobilização de recursos. A inclusão digital constitui elemento estruturante da inclusão social, de modo que o acesso universal à internet e a conectividade significativa são condições para políticas efetivas e duradouras de redução da pobreza; por isso, medidas regulatórias devem considerar, em diferentes graus, sua contribuição para esse propósito. Nesse sentido, o estudo do IPEA é apontado como suporte técnico e institucional para orientar a adaptação das metas à realidade brasileira e subsidiar a formulação e a reformulação de políticas públicas.
+CONCLUSÃO
+Diante do acima exposto, voto por deferir parcialmente o pedido apresentado pela SPACESAIL BRAZIL LTDA., CNPJ nº 63.617.987/0001-08, para conferir à SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD., entidade constituída sob as leis da República Popular da China, Direito de Exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 324 satélites, para provimento de capacidade satelital nas faixas de 10.700 MHz - 12.700 MHz e de 37.500 MHz - 38.000 MHz (enlaces de descida), e de 14.000 MHz - 14.500 MHz e de 47.200 MHz - 49.200 MHz (enlaces de subida), até 31 de julho de 2031, estabelecendo o prazo máximo de 2 (dois) anos para entrada em operação do sistema, conforme Minuta de Ato (SEI nº 15120354) e atualizando o Ato nº 4.141, de 11 de abril de 2025, que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato SEI nº 14853212.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15089791 e o código CRC 0FBF4684.
+ | 
+Referência: Processo nº 53500.101314/2025-11 | 
+SEI nº 15089791 |

@@ -1,0 +1,130 @@
+SEI/ANATEL - 16172647 - Análise
+Boletim de Serviço Eletrônico em 04/09/2026
+Análise nº 81/2026/OP
+Processo nº 53500.071587/2026-12
+Interessado: Telesat Brasil Capacidade de Satelites Ltda
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Extinção do Direito de Exploração do satélite brasileiro Estrela do Sul 2.
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE. ENCERRAMENTO DA VIDA ÚTIL DO SATÉLITE BRASILEIRO ESTRELA DO SUL 2. EXTINÇÃO DECLARADA.
+I. CASO EM EXAME
+Pedido de extinção do Direito de Exploração do satélite brasileiro Estrela do Sul 2, apresentado pela Telesat Brasil Capacidade de Satélites Ltda. em razão do encerramento da vida útil do satélite.
+A exploradora comunicou a descontinuidade definitiva do provimento de capacidade satelital em 29 de dezembro de 2025.
+A exploradora informou o encerramento da vida útil do satélite em 15 de julho de 2026.
+A exploradora informou que os clientes foram migrados para o satélite Telstar 19 Vantage.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos para declarar a extinção do Direito de Exploração do satélite brasileiro Estrela do Sul 2, em razão do encerramento de sua vida útil.
+III. RAZÕES DE DECIDIR
+Compete ao Conselho Diretor deliberar sobre a extinção do Direito de Exploração de Satélite.
+O encerramento da vida útil do satélite constitui hipótese de extinção do Direito de Exploração de Satélite.
+A exploradora comunicou a descontinuidade definitiva do provimento de capacidade satelital com antecedência superior a seis meses.
+A área técnica não identificou débitos da exploradora perante a Anatel.
+A existência de estações terrenas vinculadas ao satélite não impede a extinção do direito. As entidades responsáveis pelas estações serão notificadas para regularizar o cadastro, se necessário.
+A extinção não desonera a exploradora de obrigações perante a Anatel e terceiros. A medida não prejudica a apuração de infrações ou a cobrança de valores devidos.
+IV. DISPOSITIVO E TESE
+Declarada a extinção, a partir de 15 de julho de 2026, do Direito de Exploração do satélite brasileiro Estrela do Sul 2, associado à posição orbital 63° Oeste e às subfaixas de radiofrequências da banda Ku.
+Tese de julgamento: "1. Compete ao Conselho Diretor declarar a extinção do Direito de Exploração de Satélite. 2. O encerramento da vida útil do satélite constitui hipótese de extinção do Direito de Exploração de Satélite. 3. A comunicação prévia da descontinuidade definitiva do provimento de capacidade satelital, com antecedência superior a seis meses, atende ao requisito regulamentar. 4. A extinção do direito não desonera a exploradora de obrigações perante a Anatel e terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º; Resolução nº 612/2013, art. 133, VII e IX; Resolução nº 748/2021, art. 33, caput, §§ 6º e 7º.
+Jurisprudência relevante citada: Anatel, Acórdão nº 134, de 14.05.2026, Processo nº 53500.005555/2011-34, Conselheiro Relator Nilo Pasquali, Reunião nº 953, de 07.05.2026.
+FUNDAMENTAÇÃO
+I - INTRODUÇÃO
+Trata-se de solicitação para extinção do direito de exploração do satélite brasileiro Estrela do Sul 2, detido pela operadora TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA. (doravante Telesat Brasil), CNPJ nº 02.884.281/0001-18.
+A extinção do mencionado direito de exploração foi solicitada pela Telesat Brasil por meio da correspondência SEI nº 15968889, protocolizada em 15 de julho de 2026, tendo em vista o encerramento da vida útil do satélite.
+II - HISTÓRICO
+O direito de exploração do satélite brasileiro Estrela do Sul 2 foi conferido por meio do Ato nº 7.446, de 1º de dezembro de 2008, cujo extrato foi publicado no Diário Oficial da União (DOU) de 9 de dezembro de 2008, e ratificado pelo Termo de Direito de Exploração de satélite brasileiro PVSS/SPV nº 006/2008-ANATEL, de 19 de dezembro de 2008, cujo extrato foi publicado no DOU de 23 de dezembro de 2008.
+A autorização previa a ocupação da posição orbital 63°O e o uso das subfaixas de radiofrequências contidas na denominada banda Ku (11,45 a 12,20 GHz - enlace de descida - e 13,75 a 14,50 GHz - enlace de subida), pelo prazo de 15 (quinze) anos contado a partir da publicação do extrato do Termo no DOU, ou seja, até 23 de dezembro de 2023. 
+Por meio do Ato nº 4.420, de 19 de abril de 2023 (SEI nº 10125528), cujo extrato foi publicado no Diário Oficial da União de 25 de abril de 2023, o Direito de Exploração de Satélite Brasileiro detido pela TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA. foi adaptado ao regime regulatório estabelecido pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021.
+A adaptação implicou a extinção do Direito de Exploração anteriormente vigente e a conferência de novo Direito de Exploração de Satélite, integralmente submetido às disposições do RGSat. Nos termos do art. 2º do Ato nº 4.420/2023, o satélite brasileiro Estrela do Sul 2 foi vinculado ao Direito de Exploração adaptado, com prazo de vigência até 23 de dezembro de 2023.
+O mesmo dispositivo preservou os compromissos estabelecidos no Termo de Direito de Exploração de Satélite Brasileiro PVSS/SPV nº 006/2008-Anatel, de 19 de dezembro de 2008, e no Edital de Licitação nº 005/2006/SPV/Anatel, de 4 de outubro de 2006, bem como os termos dos acordos de coordenação celebrados entre as exploradoras.
+A pedido da exploradora de satélite, o direito de exploração do satélite Estrela do Sul 2 foi prorrogado até 31 de dezembro de 2026, por meio do Ato nº 16129, de 17 de novembro de 2023 (SEI nº 11149159), cujo extrato foi publicado no DOU de 20 de novembro de 2023.
+Em 29 de dezembro de 2025, por meio do documento Carta EDS2 (SEI nº 14978966), a interessada informou que o satélite Estrela do Sul 2 se aproximava do término de sua vida útil, estimado para o segundo trimestre de 2026. Nesse contexto, requereu, com fundamento no art. 33 do RGSat, a extinção dos direitos de exploração a ele associados a partir de 1º de julho de 2026, esclarecendo, ainda, que adotava 30 de abril de 2026 como data-limite para o encerramento das transmissões.
+A interessada informou também que a continuidade da prestação dos serviços aos clientes estaria assegurada pelo satélite Telstar 19 Vantage, em operação desde 2018, colocalizado com o satélite Estrela do Sul 2.
+Em 21 de janeiro de 2026, por meio do Ofício nº 351/2026/ORLE/SOR-ANATEL (SEI nº 15070031), a Gerência de Outorga e Licenciamento de Estações (ORLE) esclareceu que, para o regular prosseguimento da instrução do pedido de extinção do Direito de Exploração de Satélite Brasileiro associado ao satélite Estrela do Sul 2, seria necessária a formalização da renúncia, mediante peticionamento eletrônico em novo processo no SEI, nos termos do art. 34 do RGSat.
+Na mesma oportunidade, a ORLE orientou que o pedido fosse instruído com a documentação pertinente, incluindo petição contendo manifestação expressa de renúncia, informações acerca da comunicação aos usuários da capacidade espacial, procuração com poderes específicos para renunciar, quando aplicável, e cópias atualizadas dos atos constitutivos da empresa.
+Em 15 de julho de 2026, por meio do documento Carta Notificação de fim de vida útil (SEI nº 15968889), a interessada requereu a extinção do Direito de Exploração associado ao satélite Estrela do Sul 2, em razão do encerramento de sua vida útil, com efeitos a partir da mesma data. Na fundamentação de seu pedido, a Telesat Brasil fez referência à comunicação previamente apresentada (SEI nº 14978966), na qual havia informado a descontinuidade definitiva do provimento de capacidade satelital pelo Estrela do Sul 2, em observância ao disposto no § 7º do art. 33 do RGSat.
+III - ANÁLISE
+III.a - Da competência do Conselho Diretor
+De acordo com art. 1º da Lei nº 9.472, de 1997, Lei Geral de Telecomunicações (LGT), compete à União, por meio da Anatel, disciplinar e fiscalizar o uso do espectro de radiofrequências e de órbitas no país:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências." 
+Conforme disposto no Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 2013, compete a este Colegiado decidir sobre a conferência e a transferência de direitos de exploração de satélites:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite; (Redação dada pela Resolução nº 748, de 22 de outubro de 2021);" (Grifou-se)
+Tendo em vista que compete ao Conselho Diretor aprovar a conferência de direito de exploração de satélite, conclui-se que a competência para deliberar sobre a extinção do referido direito caberá ao próprio Conselho Diretor.
+Esse é o entendimento da Agência, já consignado em várias matérias relacionadas ao mesmo tema, como, por exemplo, a matéria objeto do Acórdão nº 134, de 14 de maio de 2026, transcrito a seguir:
+Acórdão nº 134, de 14 de maio de 2026
+Processo nº 53500.005555/2011-34
+Recorrente/Interessado: TELESAT Brasil CAPACIDADE DE SATÉLITES Ltda.
+CNPJ nº 02.884.281/0001-18
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de Extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1, pertencente à TELESAT CANADA, com efeitos a partir de 1º de agosto de 2026.
+(...)
+IV. DISPOSITIVO E TESE
+Pedido deferido. Declarada a extinção, por renúncia, a partir de 1º de agosto de 2026, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. O Pedido de Renúncia apresentado com antecedência mínima de seis meses e por representante legítimo atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a Exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, arts. 113 e 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; Resolução nº 748/2021, arts. 27, 33, 34 e 35.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 22/2026/NP (SEI nº 15279069), integrante deste acórdão, declarar extinto, por renúncia, a partir de 1º de agosto de 2026, o direito de exploração no Brasil do satélite estrangeiro Anik G1 e as subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15153926, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela Empresa.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+III.b - Dos aspectos técnico-regulatórios
+A extinção do Direito de Exploração de Satélite é matéria do Capítulo V do Regulamento Geral de Exploração de Satélite (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+O caput do art. 33 do RGSat lista as hipóteses de extinção do Direito de Exploração de Satélite, entre elas, o encerramento da vida útil do satélite:
+CAPÍTULO V
+DA EXTINÇÃO DO DIREITO DE EXPLORAÇÃO DE SATÉLITE
+Art. 33. O Direito de Exploração de Satélite extinguir-se-á pelo advento de seu termo final, encerramento da vida útil do satélite ou mediante anulação, caducidade, cassação, renúncia ou rescisão bilateral.
+(Grifou-se)
+O § 6º do art. 33 estabelece que a extinção do Direito de Exploração de Satélites não desonera a Exploradora de suas obrigações com a Anatel:
+§ 6º A extinção do Direito de Exploração de Satélite não desonera a Exploradora de Satélites de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela Exploradora de Satélites ou a cobrança de valores devidos que serão apurados em processos próprios.
+Nesse contexto, cabe registrar que a existência de eventuais débitos da exploradora perante a Anatel não constitui, por si só, óbice à extinção do Direito de Exploração, uma vez que, nos termos do § 6º do art. 33 do RGSat, a extinção não prejudica a cobrança de valores devidos, os quais poderão ser apurados em processos próprios. Sem prejuízo dessa previsão, a área técnica procedeu à consulta quanto à existência de débitos em aberto de responsabilidade da Telesat Brasil perante a Agência, tendo constatado a inexistência de pendências, conforme consignado no trecho abaixo, extraído do Informe nº 6725/2026/ORLE/SOR (SEI nº 15982768):
+3.12. Importante consignar que, em consulta ao Sistema Integrado de Gestão de Créditos da Anatel (SIGEC), consoante documento SEI nº 16039166, constata-se que inexistem débitos em nome da TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA.
+Outro ponto importante a ser destacado é que o RGSat estabelece que a cessação do provimento de capacidade satelital por definitivo deve ser comunicada à Anatel com antecedência de 6 (seis) meses, conforme prevê o §7º do art. 33, transcrito abaixo:
+§ 7º A descontinuidade, em caráter definitivo, do Provimento da Capacidade Satelital antes do fim do prazo estabelecido para o Direito de Exploração de Satélite deve ser comunicada à Agência com pelo menos 6 (seis) meses de antecedência, ressalvada hipótese decorrente do § 1º do artigo 27.
+Quanto a este ponto, a área técnica manifestou entendimento de que o dispostivo previsto no mencionado §7º do art. 33 do RGSat foi integralmente atendido pela Telesat Brasil, destacando que, no banco de dados da Anatel, ainda há estações terrenas associadas ao satélite:
+3.14. A extinção do Direito de Exploração do satélite Estrela do Sul 2 ocorre em virtude do encerramento da vida útil do satélite que, como já mencionado, foi comunicado pela interessada em 29 de dezembro de 2025, considerando os termos do documento "Carta EDS2" (SEI nº 14978966), no qual houve a comunicação prévia de descontinuidade definitiva do provimento de capacidade satelital, à vista do § 7º do art. 33 do RGSat, que, naquela data, era prevista para 1° de julho de 2026. 
+3.15. Posteriormente, em 15 de julho de 2026 por meio do documento "Carta Notificação de fim de vida útil" (SEI nº 15968889), a interessada comunicou que "a vida útil desse satélite se estendeu um pouco mais que o previsto, tendo sido encerrada em 15 de julho de 2026", e solicitou a extinção do direito de exploração associado ao satélite Estrela do Sul 2, em razão do encerramento de sua vida útil, com efeitos a partir de 15 de julho de 2026.
+...
+3.17. Ainda nesse contexto, esta área técnica identificou, no Banco de Dados Técnicos e Administrativos da Anatel (BDTA), a existência de 134 (cento e trinta e quatro) estações terrenas vinculadas ao satélite Estrela do Sul 2, conforme Consulta SEI nº 16039259. Segundo registrado, verificou-se que tais estações pertencem a entidades autorizadas a prestar o Serviço de Comunicação Multimídia (SCM), o Serviço Limitado Privado (SLP) e as estações de acesso da própria TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA..
+3.18. Cumpre esclarecer que o cadastramento e o licenciamento de estações terrenas é de responsabilidade da detentora de autorização para explorar o serviço de telecomunicações associado, sendo esta também a responsável pelo recolhimento das taxas e contribuições incidentes e pela prestação do serviço de telecomunicações suportado pelo meio satelital, e não a Exploradora de Satélite detentora do direito de exploração, em consonância com o disposto no Regulamento Geral de Licenciamento (RGL), aprovado pela Resolução nº 719, de 10 de fevereiro de 2020.
+3.19. Assim, caso ainda haja estações terrenas vinculadas ao satélite na data a partir da qual surtirão os efeitos da extinção do Direito de Exploração, as empresas serão notificadas a regularizar o cadastro, conforme procedimento efetuado em casos análogos.
+...
+3.21. Desta forma, conclui-se inexistirem óbices à continuidade das tratativas para a extinção do Direito de Exploração do satélite Estrela do Sul 2, em virtude do encerramento de sua vida útil.
+(Grifo original)
+Em sua correspondência SEI nº 15968889, a Telesat Brasil destacou que a interrupção do provimento de capacidade do satélite Estrela do Sul 2 não afetará seus clientes, uma vez que os usuários do satélite já foram migrados para o Telstar 19 Vantage, também operado pelo grupo Telesat, na mesma posição orbital e faixas de frequências:
+Conforme informado naquela carta, a Telesat Brasil trabalhou junto aos seus clientes para encerramento das transmissões com a devida antecedência, até 30 de abril de 2026. Por oportuno, ressaltamos também que nesta mesma posição orbital, desde 2018, a Telesat Brasil vem operando o Satélite Telstar 19 Vantage, que por estar co-localizado com o EDS2 e possuir carga útil em banda Ku, permitiu a continuidade das operações nesta posição orbital aos clientes interessados.
+À vista das informações apresentadas pela exploradora de satélites e das conclusões alcançadas pela área técnica, alinho-me ao entendimento de que estão presentes os requisitos para a declaração de extinção do Direito de Exploração associado ao satélite brasileiro Estrela do Sul 2, em razão do encerramento de sua vida útil, com efeitos a partir de 15 de julho de 2026.
+Adicionalmente, acompanho a área técnica quanto à desnecessidade de submissão dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), uma vez que a matéria não se enquadra nas hipóteses de manifestação jurídica obrigatória previstas no § 2º do art. 39 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, nem naquelas estabelecidas pela Portaria nº 642, de 26 de julho de 2013.
+IV - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ONU
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura abaixo ilustra esses objetivos:
+Figura: Objetivos de Desenvolvimento Sustentável (ODS). Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, sendo importante que referida aderência esteja explícita nas decisões deste Conselho Diretor.
+A proposta de encaminhamento contida na presente Análise está em boa sintonia com os objetivos da Agenda 2030, em particular com o ODS nº 9, relacionado à Indústria, Inovação e Infraestrutura. Ressalta-se que a extinção do direito de exploração de satélites em exame otimiza e libera recursos de espectro e órbita. Isso permite seu reuso de forma mais eficiente e adequada ao mercado. Os referidos recursos são importantes para a construção de novas infraestruturas resilientes, a promoção da industrialização inclusiva e sustentável e o fomento à inovação, em sintonia com as metas 9.1, 9.4 e 9.c:
+Objetivos de Desenvolvimento Sustentável ODS da ONU
+"ODS 9. Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação
+9.1 Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos.
+(...)
+9.4 Até 2030, modernizar a infraestrutura e reabilitar as indústrias para torná-las sustentáveis, com eficiência aumentada no uso de recursos e maior adoção de tecnologias e processos industriais limpos e ambientalmente corretos; com todos os países atuando de acordo com suas respectivas capacidades.
+[...]
+9.c Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2030."
+Reforça-se, assim, o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+CONCLUSÃO
+Diante do acima exposto, voto por declarar extinto, a partir de 15 de julho de 2026, o Direito de Exploração do satélite brasileiro Estrela do Sul 2, associado à posição orbital 63° Oeste nas subfaixas de radiofrequências da denominada banda Ku.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 04/09/2026, às 11:23, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16172647 e o código CRC 7CBC14DE.
+ | 
+Referência: Processo nº 53500.071587/2026-12 | 
+SEI nº 16172647 |

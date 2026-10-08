@@ -1,0 +1,105 @@
+SEI/ANATEL - 14848684 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 24/2025/EH
+Processo nº 53500.079965/2017-15
+Interessado: Cabo Servicos de Telecomunicacoes Ltda
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso Administrativo (SEI nº 14011200) interposto pela CABO SERVICOS DE TELECOMUNICACOES LTDA, CNPJ nº 02.952.192/0001-61, contra o Despacho Decisório nº 178/2025/CODI/SCO (SEI nº 13506037), da Superintendência de Controle de Obrigações da Anatel, que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2016.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto pela Cabo Serviços de Telecomunicações Ltda contra o Despacho Decisório nº 178/2025/CODI/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o FUST, no exercício de 2016.
+ Empresa alega indevida inclusão de valores relativos a serviços de valor adicionado e interconexão na base de cálculo da contribuição ao FUST.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se os valores relativos à prestação de serviços de link para internet e interconexão devem compor a base de cálculo da contribuição ao FUST; e (ii) saber se a empresa comprovou documentalmente que tais receitas não se enquadram como serviços de telecomunicações sujeitos à contribuição.
+III. RAZÕES DE DECIDIR
+ A instrução do processo observou o devido processo legal e a ampla defesa.
+ O recurso atende aos requisitos de admissibilidade.
+ A legislação determina que a contribuição ao FUST incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, excluídos ICMS, PIS e Cofins.
+ Para afastar a inclusão de receitas na base de cálculo, é necessário comprovação documental idônea, como notas fiscais ou contratos, o que não foi apresentado pela empresa.
+ Prevalece a presunção de legalidade e veracidade do relatório de fiscalização, pois a empresa não se desincumbe do ônus de provar suas alegações.
+ Os serviços fornecidos pela prestadora enquadram-se como serviço de telecomunicações, conforme regulamentação vigente.
+ Recomenda-se comunicação da decisão ao Ministério das Comunicações para providências relativas ao Funttel.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: "1. Os valores relativos à prestação de serviços de link para internet e interconexão compõem a base de cálculo da contribuição ao FUST, por se enquadrarem como serviços de telecomunicações. 2. A empresa não apresentou comprovação documental suficiente para afastar a inclusão das receitas na base de cálculo da contribuição."
+Dispositivos relevantes citados: Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, art. 85.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14011200) interposto pela CABO SERVICOS DE TELECOMUNICACOES LTDA, CNPJ nº 02.952.192/0001-61, contra o Despacho Decisório nº 178/2025/CODI/SCO (SEI nº 13506037), da Superintendência de Controle de Obrigações da Anatel, que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2016.
+Em 23/06/2025, conforme Certidão de Intimação Cumprida (SEI nº 13883905), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo (SEI nº 14011200) ora sob análise.
+Foi elaborado o Informe nº 823/2025/CODI/SCO (SEI nº 14491024), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 634/2025/CODI/SCO (SEI nº 14511176), o Superintendente de Controle de Obrigações conheceu do Recurso interposto.
+A matéria foi encaminhada para deliberação deste Colegiado por meio da MACD nº 748/2025 (SEI nº 14511239).
+Fui designado relator da matéria por meio do sorteio realizado em 01/12/2025, nos termos da Certidão de Distribuição SEI nº 14835297.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, pressupõe-se que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese: (i) que a fiscalização concluiu indevidamente os valores constantes do Fust da conta serviços de valor adicionado ("SVA"), qual seja, "6.2.1.02.010 SERVIÇOS DE LINK PARA INTERNET"; (ii) contestou o fundamento para o lançamento de ofício, segundo o qual, com o advento do atual Regulamento do Serviço de Comunicação Multimídia (aprovado pela Resolução nº. 614/2013), a Recorrente não se enquadraria no conceito de Prestadora de Pequeno Porte, não podendo cobrar pela prestação do serviço de valor adicionado de provimento de conexão à internet prestado aos seus clientes e, portanto, as receitas relativas à conta contábil SERVIÇOS DE LINK P/ INTERNET (6.2.1.02.010), deveriam compor a base de cálculo de contribuição ao FUST ; e (iii) que a fiscalização concluiu indevidamente os valores constantes do Fust da conta contábil "6.2.1.03.004 SERVIÇO DE INTERCONEXÃO STFC"
+Cabe, inicialmente, relembrar que as notificações de lançamento dos créditos tributários em discussão derivam do descumprimento da obrigação disposta no art. 6º, inciso IV, da Lei n.º 9.998/2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações:
+Art. 6º Constituem receitas do Fundo:
+IV - contribuição de 1% (um por cento) sobre a receita operacional bruta, decorrente de prestação de serviços de telecomunicações nos regimes público e privado, a que se refere o inciso XI do art. 21 da Constituição Federal, excluindo-se o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins); (Redação dada pela Lei nº 13.879, de 2019).
+De acordo com o referido artigo, as receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+Para que se alcance o valor a ser declarado a título de CIDE-FUST, deve-se, por conseguinte, identificar-se se a prestação dos serviços de telecomunicações ocorre a título oneroso. Ato contínuo, é preciso verificar o total de valores obtidos mediante a prestação de serviços de telecomunicações, deduzindo-se, em seguida, as despesas decorrentes de ICMS, PIS e Cofins, bem como as transferências feitas de uma prestadora para outra, como regem as normas que estabelecem as regras para recolhimento do tributo.
+O que se vê no presente caso é que a Prestadora reitera os argumentos trazidos em sede de Impugnação, e que foram devidamente rechaçados pelo Informe nº 269/2025/CODI/SCO (SEI nº 13506035) acerca da base de cálculo do tributo.
+Ressalte-se que não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações, é necessário haver: notas fiscais, contratos de locação, contratos de prestação de serviços, recibos etc., ou qualquer outro comprovante idôneo de tal transação comercial. É necessário haver a verdade material. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+Tendo em vista que, em sua manifestação recursal, a empresa não juntou aos autos qualquer nova comprovação de que tenha havido equívoco quanto à base de cálculo do FUST, entendo que prevalece a presunção de legalidade e veracidade do Relatório de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9.784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Apenas para fins de corroborar os argumentos já trazidos pela área técnica, transcrevo parte da Análise nº 5/2019/VA (SEI nº 3707856) que corrobora a tese de que as receitas incluídas na base de cálculo do FUST, e não declaradas pela empresa, referem-se à prestação de serviço de telecomunicações a despeito do que ora argumenta a Recorrente: 
+5.24. O conceito de "conexão à internet" do Marco Civil da Internet, considerado para fins presente Análise, não se confunde com noção de "serviço de conexão à internet" contida na Norma nº 004/95. De acordo com essa Norma, o referido serviço abrangeria, entre outros, equipamentos informáticos, rotinas operacionais, conteúdos e aplicações (correio eletrônico, transferência de arquivos, acesso a banco de dados, etc.).
+5.25. No jargão de telecomunicações, uma rede é chamada de "banda larga" (broadband) quando oferece uma taxa de transmissão de informações acima de certo limiar (por exemplo, 30 canais de voz analógicos). De maneira similar, define-se o acesso à Internet em "banda larga" em oposição ao acesso discado, que utiliza uma rede de "banda estreita".
+5.26. Ilustra-se, na figura abaixo, o funcionamento típico do acesso à Internet sobre redes de banda larga[30]:
+5.27. O usuário parte de sua conexão à Internet, a qual consiste simplesmente em obter ou autenticar seu endereço IP. É solicitada, pelo sistema operacional de seu terminal a sua rede de acesso. Esta, por sua vez, tem acesso (ou pertence) a um sistema autônomo, o qual permite aceder aos demais sistemas autônomos da Internet (interconexões). Quando o usuário abre seu navegador (browser) e pede uma página da Internet (www...), o Servidor de Nomes de Domínio (DNS) fornece o endereço IP correspondente. De posse dos endereços IP de origem e de destino, pode-se intercambiar informações entre quaisquer pontos da rede mundial. Situação similar ocorre ao se utilizar um motor de busca ou um aplicativo. Pode-se assim usufruir de aplicações (ou de conteúdos) disponíveis na Internet.
+5.28. Observa-se da figura e das explicações acima que as funcionalidades oferecidas pela rede do provedor de "acesso à Internet" consistem na conexão à Internet, seguida da transmissão (no sentido do Marco Civil da Internet), da comutação e do roteamento de informações. Conforme já visto, tais funcionalidades se enquadram nas "camadas baixas" do modelo OSI. Já as funções executadas pelo dispositivo do usuário, pelo Servidor de Nomes de Domínio e pelo Servidor de Aplicações (ou de Conteúdos) se enquadram nas "camadas altas" do referido modelo.
+5.29. Também como já explicado, as funcionalidades oferecidas pela rede do provedor de "acesso à Internet" se enquadram no conceito de "transmissão, emissão e ou recepção" do art. 60 da LGT, caracterizando, assim, um serviço de telecomunicações.
+5.30. O enquadramento do "acesso à Internet" como um serviço de telecomunicações é corriqueiro e está explícito na legislação de múltiplos países. Nesse particular, as definições do art. 2º do Código Europeu das Comunicações Eletrônicas, estabelecido pela Diretiva (EU) 2018/1972 do Parlamento Europeu e do Conselho, de 11 de dezembro de 2018[30] são muito ilustrativas, levando-se em conta que a expressão "comunicação eletrônica" corresponde ao conceito de "telecomunicação" de nossa LGT:
+"Artigo 2 - Definições. Para fins desta Diretiva, aplicam-se as seguintes definições:
+(1) ‘rede de comunicações eletrônicas’ se refere a sistemas de transmissão, baseados ou não em infraestruturas permanentes ou com gerenciamento centralizado e, onde aplicáveis, equipamentos de comutação e roteamento, além de outros recursos, abrangendo elementos passivos de rede, os quais permitem o encaminhamento de sinais por fio, rádio, fibra ótica ou outro meio eletromagnético ...
+...
+(4) ‘serviço de comunicações eletrônicas’ significa um serviço, em geral remunerado, provido sobre redes de comunicações eletrônicas, o qual compreende, à exceção de serviços de oferta ou de controle editorial de conteúdos transmitidos sobre meios eletrônicos, os seguintes tipos de serviços:
+(a) ‘serviço de acesso à internet’ como definido no ponto (2) do segundo parágrafo do art. 2º do Regulamento (UE) 2015/2120;
+(b) serviço de comunicações interpessoais; e
+(c) serviços consistindo total ou parcialmente no encaminhamento de sinais, tais como serviços de transmissão utilizados para provimento de serviços máquina-a-máquina ou de radiodifusão;" [Grifou-se]
+5.31. O ponto (2) do segundo parágrafo do art. 2º do Regulamento (UE) 2015/2120[31], acima referido, deixa ainda mais claro o enquadramento do "acesso à Internet"como um serviço de telecomunicações:
+"...
+2) «Serviço de acesso à Internet», um serviço de comunicações eletrônicas acessíveis ao público que oferece acesso à Internet e, portanto, conectividade a praticamente todos os pontos terminais da Internet, independentemente das tecnologias de rede e dos equipamentos terminais utilizados." [Grifou-se]
+5.32. Nos termos da regulamentação da Anatel, o serviço de acesso à Internet aberto ao público (interesse coletivo), prestado sobre uma rede fixa, se enquadra no art. 3º, parágrafo único, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 272, de 9 de agosto de 2001, em vigor à época dos fatos:
+“Art. 3º O Serviço de Comunicação Multimídia é um serviço fixo de telecomunicações de interesse coletivo, prestado em âmbito nacional e internacional, no regime privado, que possibilita a oferta de capacidade de transmissão, emissão e recepção de informações multimídia, utilizando quaisquer meios, a assinantes dentro de uma área de prestação de serviço.
+Parágrafo único. Distinguem-se do Serviço de Comunicação Multimídia, o Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC) e os serviços de comunicação eletrônica de massa, tais como o Serviço de Radiodifusão, o Serviço de TV a Cabo, o Serviço de Distribuição de Sinais Multiponto Multicanal (MMDS) e o Serviço de Distribuição de Sinais de Televisão e de Áudio por Assinatura via Satélite (DTH).” [Grifou-se]
+5.33. Estando caracterizado como um único serviço de telecomunicações no sentido do art. 60 da LGT, não há como enquadrar o acesso à Internet no art. 61 dessa mesma lei, pois tal serviço se confundiria consigo mesmo e não agregaria novas funcionalidades a si próprio:
+"Art. 61. Serviço de valor adicionado é a atividade que acrescenta, a um serviço de telecomunicações que lhe dá suporte e com o qual não se confunde, novas utilidades relacionadas ao acesso, armazenamento, apresentação, movimentação ou recuperação de informações." [Grifou-se]
+5.34. O serviço de acesso à Internet enquadra-se no Serviço de Comunicação Multimídia (SCM).
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer do presente recurso, por estarem preenchidos os requisitos de admissibilidade, e, no mérito, negar-lhe provimento.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:32, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14848684 e o código CRC 3692D10F.
+ | 
+Referência: Processo nº 53500.079965/2017-15 | 
+SEI nº 14848684 |

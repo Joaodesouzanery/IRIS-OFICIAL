@@ -1,0 +1,46 @@
+SEI/ANATEL - 16136926 - Acórdão
+Boletim de Serviço Eletrônico em 19/08/2026
+DOU de 19/08/2026, seção 1, página 8
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 212, de 17 de agosto de 2026
+Processo nº 53524.009131/2009-56
+Recorrente/Interessado: ALGAR TELECOM S.A.
+CNPJ nº 71.208.516/0001-74
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 956, de 6 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO ADMINISTRATIVO DESPROVIDO. RECURSO DE OFÍCIO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por ALGAR TELECOM S.A., incorporadora de CTBC CELULAR S.A., contra decisão que julgou parcialmente procedentes os lançamentos dos créditos tributários referentes ao Fust nos exercícios de 2005 e 2006 e reconheceu parcialmente a procedência da multa de ofício.
+2. Fato relevante. A fiscalização da Agência Nacional de Telecomunicações - Anatel apurou declaração a menor da contribuição ao Fust nos exercícios de 2005 e 2006. Foram expedidas notificações de lançamento e comunicados de lançamento complementar. Houve impugnação da Prestadora. Novas diligências fiscais foram realizadas em 2015 e 2017.
+3. A decisão recorrida. A decisão de primeira instância reconheceu a procedência parcial dos créditos tributários do Fust nos valores descritos no item 3.3 da Ementa da Análise nº 63/2026/EH (SEI nº 15910014), para 2005 e 2006. Determinou a incidência de juros de mora. Reconheceu a procedência parcial da multa de ofício nos valores descritos no item 3.3 da Ementa da Análise nº 63/2026/EH (SEI nº 15910014) para 2005 e para 2006. Afastou a multa de mora nos meses em que houve aplicação de multa de ofício. Interpôs Recurso de Ofício.
+4. As alegações recursais. A Recorrente alegou nulidade da decisão por ausência de memória de cálculo e cerceamento de defesa. Alegou inexigibilidade do Fust sobre receitas de interconexão e Exploração Industrial de Linha Dedicada - EILD. Alegou inexigibilidade do Fust sobre receitas de aluguel de infraestrutura, facilidades e comodidades adicionais e serviços de valor adicionado. Alegou inaplicabilidade da multa de ofício do art. 44, inciso I, da Lei nº 9.430/1996.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se houve cerceamento de defesa por ausência de acesso à memória de cálculo do tributo; (ii) saber se as receitas de interconexão e de EILD integram a base de cálculo da contribuição ao Fust; (iii) saber se as receitas de aluguel de infraestrutura, facilidades e comodidades adicionais e serviços de valor adicionado foram indevidamente consideradas na base de cálculo; (iv) saber se é cabível a multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430/1996; e (v) saber se o Recurso de Ofício deve ser conhecido.
+III. RAZÕES DE DECIDIR
+1. O Recurso Administrativo é tempestivo e preenche os pressupostos de admissibilidade. A exigibilidade do crédito tributário permanece suspensa em razão da interposição do Recurso, nos termos do art. 151, inciso III, do Código Tributário Nacional - CTN.
+2. Não houve cerceamento de defesa. As notificações de lançamento, os comunicados complementares, os relatórios de fiscalização e as planilhas de apuração indicaram os fatos geradores, a base de cálculo, os critérios de cálculo e os fundamentos legais da exigência. A Recorrente teve acesso aos documentos e exerceu contraditório e ampla defesa.
+3. As receitas de interconexão e de EILD integram a base de cálculo do Fust. Tais receitas decorrem de prestação de serviços de telecomunicações. Não se confundem com transferências de co-billing previstas no parágrafo único do art. 6º da Lei nº 9.998/2000.
+4. A manutenção das receitas de interconexão na base de cálculo observa a Súmula Anatel nº 7. Os servidores da Agência não podem contrariar súmula do Conselho Diretor.
+5. Não procede a alegação de inexigibilidade do Fust sobre as contas indicadas pela Recorrente. Os relatórios fiscais registraram que as receitas de serviços de valor adicionado não compuseram a base de cálculo do Fundo. As facilidades e comodidades adicionais foram qualificadas como atividades intrínsecas ao Serviço Móvel Pessoal - SMP e mantidas na base de cálculo. A Recorrente não apresentou prova apta a infirmar as conclusões da fiscalização.
+6. A exclusão de receitas da base de cálculo depende de comprovação contábil, fiscal e regulatória idônea. A mera reiteração de alegações não afasta a presunção de legitimidade dos relatórios de fiscalização.
+7. É cabível a multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430/1996 nos casos de falta de declaração ou de declaração inexata que importe recolhimento a menor da contribuição ao Fust. A penalidade tem natureza sancionatória e aplicação vinculada.
+8. A decisão recorrida afastou corretamente a multa de mora nos meses em que houve aplicação de multa de ofício.
+9. O Recurso de Ofício não deve ser conhecido. Embora tenha havido exoneração parcial, o valor exonerado foi inferior ao limite de R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido. Recurso de Ofício não conhecido.
+Tese de julgamento: "1. Não há cerceamento de defesa quando o sujeito passivo tem acesso às notificações de lançamento, aos relatórios de fiscalização e às planilhas de apuração que demonstram os fatos geradores, a base de cálculo e os fundamentos legais da exigência. 2. As receitas de interconexão e de Exploração Industrial de Linha Dedicada - EILD integram a base de cálculo da contribuição ao Fust por decorrerem da prestação de serviços de telecomunicações. 3. As transferências referidas no parágrafo único do art. 6º da Lei nº 9.998/2000 não se confundem com receitas de interconexão e de EILD. 4. A exclusão de receitas da base de cálculo do Fust exige comprovação contábil, fiscal e regulatória idônea. 5. É cabível a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 nos casos de falta de declaração ou de declaração inexata da contribuição ao Fust. 6. Não se conhece do Recurso de Ofício quando a exoneração do sujeito passivo ocorre em valor inferior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas e demais acréscimos legais."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, arts. 97, 142, 151, III, 161, § 1º, e 198; Lei nº 9.472/1997, arts. 19, IV, VI, IX e XI, 60, 68 e 127; Lei nº 9.998/2000, art. 6º, IV, e parágrafo único; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 36; Lei nº 10.522/2002, art. 37-A; Lei nº 10.871/2004, art. 23; Decreto nº 70.235/1972, art. 34, I; Decreto nº 3.624/2000, art. 8º, §§ 1º e 2º; Resolução Anatel nº 247/2000, art. 7º; Resolução Anatel nº 612/2013, art. 116 e art. 162, VI; Portaria Anatel nº 614/2018, art. 1º; Portaria Anatel nº 642/2013, art. 5º, IV, b; Portaria Anatel nº 1.395/2017; e Resolução Interna Anatel nº 338/2024.
+Jurisprudência relevante citada: Súmula Anatel nº 7; Súmula Anatel nº 27; Parecer nº 1.053/2009/ACD/PGF/PFE-Anatel; Parecer nº 1060/2010/BSA/PGF/PFE-Anatel; Parecer nº 440/2023/PFE-ANATEL/PGF/AGU; Parecer nº 571/2017/PFE-ANATEL/PGF/AGU; Parecer nº 595/2017/PFE-Anatel/PGF/AGU; Anatel, Acórdão nº 353, de 12.12.2024; Anatel, Acórdão nº 146, de 17.06.2026; CARF, Acórdão nº 1402-001.756, publicado em 12.09.2014; Conselho Administrativo de Recursos Fiscais - CARF, Processo nº 10640.000988/2006-29, Primeira Turma Ordinária da Segunda Câmara da Segunda Seção, sessão de 10.07.2019, publicação em 21.08.2019, Decisão nº 2201-005.239.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 63/2026/EH (SEI nº 15910014), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento; e,
+b) não conhecer do Recurso de Ofício interposto, pelos fatos e fundamentos da referida análise.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 18/08/2026, às 14:30, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16136926 e o código CRC 0E30C5DB.
+ | 
+Referência: Processo nº 53524.009131/2009-56 | 
+SEI nº 16136926 |

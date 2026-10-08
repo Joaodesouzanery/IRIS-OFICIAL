@@ -1,0 +1,79 @@
+SEI/ANATEL - 15714516 - Análise
+Boletim de Serviço Eletrônico em 15/06/2026
+Análise nº 49/2026/OP
+Processo nº 53500.002922/2013-18
+Interessado: VIVO S.A. [02449992000164], TELEFONICA BRASIL S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14486494) interposto pela TELEFÔNICA BRASIL S.A., inscrita no CNPJ sob o nº 02.558.157/0001-62, sucessora por incorporação da VIVO S.A., inscrita no CNPJ sob o n° 02.449.992/0001-64, doravante denominada Recorrente, em face do Despacho Decisório nº 385/2025/CODI/SCO (SEI nº 13850777), que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF, relativos ao exercício de 2009.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso administrativo interposto por TELEFÔNICA BRASIL S.A., sucessora por incorporação da VIVO S.A., contra despacho decisório que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF), relativos ao exercício de 2009.
+ Fato relevante. A recorrente sustenta a inexigibilidade da TFF sobre 3.292 estações móveis de teste. Afirma que tais estações eram destinadas a testes internos e não ao uso por assinantes habilitados.
+ As manifestações anteriores. A área técnica opinou pelo conhecimento e não provimento do recurso. A Superintendência de Controle de Obrigações conheceu do recurso e encaminhou os autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se a TFF relativa ao exercício de 2009 incide sobre estações móveis de teste destinadas a uso interno, ainda que não habilitadas para assinantes.
+III. RAZÕES DE DECIDIR
+ A instrução do processo observou o Decreto nº 70.235/1972. Foram resguardados o devido processo legal e a ampla defesa.
+ O recurso preenche os requisitos de admissibilidade. É tempestivo, foi interposto por parte legítima, revela interesse recursal e não contraria súmula da Agência.
+ A TFF é devida pelas prestadoras de serviços de telecomunicações e decorre da fiscalização do funcionamento das estações.
+ O fato gerador da TFF corresponde ao exercício do poder de polícia sobre o funcionamento de estações utilizadas na prestação de serviços de telecomunicações, licenciadas ou não, e sobre o uso de radiofrequências.
+ A base de cálculo da TFF considera o número de estações em funcionamento no período de referência, nos termos do Regulamento de Arrecadação de Receitas Tributárias.
+ A expressão “quando aplicável”, constante do art. 12 da Resolução nº 255/2001, não condiciona a incidência da TFF à habilitação de assinantes. Essa expressão apenas contempla hipóteses específicas em que o serviço exige código de acesso ativado.
+ O poder de polícia que fundamenta a TFF não se limita à exploração comercial do serviço. Ele abrange o controle técnico do funcionamento das estações, inclusive experimentais, para assegurar o uso adequado do espectro, prevenir interferências e garantir a regularidade do serviço.
+ A existência de licença válida no período de referência basta para caracterizar o fato gerador da TFF. A destinação das estações a testes internos não afasta a incidência tributária.
+ Não há ausência de fato gerador. Também não há violação aos dispositivos constitucionais e legais invocados pela recorrente.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: "1. A TFF incide sobre estações em funcionamento sujeitas ao poder de polícia da Anatel, ainda que destinadas a testes internos. 2. A habilitação de assinantes não constitui requisito geral para a incidência da TFF. 3. A existência de licença válida no período de referência é suficiente para caracterizar o fato gerador da TFF."
+Dispositivos relevantes citados: Lei nº 5.070/1966; Decreto nº 70.235/1972; CTN, arts. 77 e 78; Resolução nº 729/2020; Resolução nº 255/2001, art. 12; Portaria nº 1.355/2019, item 7.1.1.
+REFERÊNCIAS
+Lei nº 5.070, de 7 de julho de 1966, que cria o Fundo de Fiscalização das Telecomunicações (Fistel), e dá outras providências.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14486494) interposto pela TELEFÔNICA BRASIL S.A., inscrita no CNPJ sob o nº 02.558.157/0001-62, sucessora por incorporação da VIVO S.A., inscrita no CNPJ sob o n° 02.449.992/0001-64, doravante denominada Recorrente, em face do Despacho Decisório nº 385/2025/CODI/SCO (SEI nº 13850777), que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF, relativos ao exercício de 2009.
+Em 02/09/2025, conforme Certidão de Intimação Cumprida (SEI nº 14302546), o contribuinte foi notificado do referido Despacho, e interpôs o presente Recurso Administrativo . 
+Foi elaborado o Informe nº 155/2026/CODI/SCO (SEI nº 15258926), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 139/2026/CODI/SCO (SEI nº 15335043), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 201/2026 (SEI nº 15335075).
+Fui designado relator da matéria por meio do sorteio realizado em 28/05/2026 (SEI nº 15713336).
+É o relatório.,
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende os requisitos de: (i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; (ii) legitimidade, uma vez que o recorrente é o destinatário da decisão contra a qual se insurge; (iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, (iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+Em seu recurso, a Interessada alega, em síntese, que a cobrança da Taxa de Fiscalização de Funcionamento (TFF), relativa ao exercício de 2009, seria indevida por incidir sobre 3.292 estações móveis de teste que não estariam licenciadas para uso por assinantes habilitados, mas destinadas exclusivamente a testes internos.
+A TFF é devida pelas concessionárias, permissionárias e autorizadas de serviços de telecomunicações e de uso de radiofrequência pela fiscalização do funcionamento das estações. Instituída pela Lei nº 5.070/1966, deve ser paga, anualmente, até o dia 31 de março, e seus valores serão os correspondentes a 33% (trinta e três por cento) dos fixados para a TFI.
+O Regulamento de Arrecadação de Receitas Tributárias (RART), esclarece características importantes sobre esse tributo:
+o sujeito passivo da TFF é a prestadora de serviços de telecomunicações sujeita à atividade fiscalizadora da Anatel, sendo solidariamente responsáveis pelo seu recolhimento todas as prestadoras que realizarem o compartilhamento de infraestrutura ativa de estações de telecomunicações;
+seu fato gerador é o exercício do poder de polícia no que tange ao funcionamento de estações utilizadas para prestação de serviços de telecomunicações, previamente licenciadas ou não, e uso de radiofrequências;
+considera-se ocorrido o fato gerador da TFF no dia 1º de janeiro de cada ano;
+a base de cálculo da TFF corresponde ao número de estações licenciadas ou não, incluindo os terminais móveis habilitados, quando aplicável, em 31 de dezembro do ano anterior;
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a TFF terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até essa data;
+a TFF somente deixará de incidir sobre a estação licenciada a partir do exercício subsequente àquele em que: (i) o sujeito passivo venha a protocolizar, perante a Anatel, pedido de cancelamento da licença; e (ii) for publicado o ato que determinar o cancelamento da licença em função da extinção da outorga de serviço de telecomunicações, do direito de uso de radiofrequências ou do direito de exploração de satélite; e
+a expedição de nova licença para funcionamento de estação, em substituição à licença anterior, após a ocorrência do fato gerador da TFF não desonerará a responsável de seu pagamento, mesmo que a substituição gere nova incidência da TFI.
+À Anatel, na condição de sujeito ativo do referido tributo, compete planejar, executar, acompanhar e avaliar as atividades relativas à tributação, à fiscalização, à arrecadação, à cobrança e ao recolhimento da contribuição.
+Reproduzo abaixo, os argumentos trazidos pela área técnica em seu Informe nº 155/2026/CODI/SCO (SEI nº 15258926), que afastam a pretensão da ora Recorrente de sustentar que a incidência da TFF estaria condicionada a que as estações estivessem habilitadas aos usuários do serviço, e que adoto como razão de decidir:
+8.10. A interpretação conferida pela Recorrente ao art. 12 da Resolução nº 255/2001 não se sustenta. A expressão “quando aplicável” não institui requisito geral de habilitação de assinante como condição de incidência da TFF, mas apenas contempla situações específicas em que o serviço exige código de acesso ativado. A norma regulamentar não pode restringir o alcance da lei que instituiu a taxa nem criar hipótese de não incidência não prevista em lei.
+8.11. O exercício do poder de polícia, que fundamenta a cobrança da TFF nos termos dos arts. 77 e 78 do CTN, não se limita à fiscalização da exploração comercial do serviço. Abrange o controle técnico do funcionamento das estações, inclusive experimentais, com o objetivo de assegurar a adequada utilização do espectro, prevenir interferências e garantir a regularidade do serviço.
+8.12. A jurisprudência consolidada reconhece que, para a validade da taxa de polícia, não se exige atuação fiscalizatória individualizada, bastando a existência de estrutura administrativa apta ao exercício dessa atividade.
+8.13. Desse modo, a existência de licença válida no período de referência é suficiente para caracterizar o fato gerador da TFF, independentemente da destinação das estações ou da existência de assinantes habilitados. Não há ausência de fato gerador nem violação aos dispositivos constitucionais e legais invocados.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 15/06/2026, às 14:50, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15714516 e o código CRC DFF252F2.
+ | 
+Referência: Processo nº 53500.002922/2013-18 | 
+SEI nº 15714516 |

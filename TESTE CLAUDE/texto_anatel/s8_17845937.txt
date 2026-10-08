@@ -1,0 +1,52 @@
+SEI/ANATEL - 15949834 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 181, de 10 de julho de 2026
+Processo nº 53500.055641/2020-89
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. DESCUMPRIMENTO DE COMPROMISSOS DE ABRANGÊNCIA DO EDITAL Nº 004/2012/PVCP/SPV-ANATEL (EDITAL DO 4G). RECURSO CONHECIDO E NÃO PROVIDO. CONVERSÃO EM OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por CLARO S.A. contra o Despacho Decisório nº 68/2023/COUN/SCO, parcialmente retratado pelo Despacho Decisório nº 172/2024/COUN/SCO, que aplicou multa por descumprimento de compromissos de abrangência previstos no Anexo II-B do Edital de Licitação nº 004/2012/PVCP/SPV-Anatel (Edital do 4G).
+2. O Procedimento para Apuração de Descumprimento de Obrigações - Pado foi instaurado para apurar o descumprimento de compromissos de abrangência em nove municípios. A decisão originária aplicou multa de R$ 8.694.831,85 (oito milhões, seiscentos e noventa e quatro mil, oitocentos e trinta e um reais e oitenta e cinco centavos). Em juízo de retratação parcial, a Superintendência de Controle de Obrigações - SCO reduziu a multa para R$ 5.710.749,59 (cinco milhões, setecentos e dez mil, setecentos e quarenta e nove reais e cinquenta e nove centavos), em razão de erro constatado na aplicação da metodologia de cálculo referente ao município de Magé/RJ.
+3. A Recorrente alegou: (i) nulidade do Despacho de instauração por ausência de indicação da sanção exata; (ii) nulidade por falta de nova intimação para alegações finais após os informes técnicos; (iii) necessidade de devolução do prazo para cumprimento da obrigação em Magé/RJ; e, (iv) incorreção na data considerada para comprovação do atendimento da meta em São José/SC.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) verificar se o Despacho de instauração é nulo por indicar apenas os tipos de sanções possíveis; (ii) analisar se houve nulidade pela ausência de nova intimação para alegações finais entre o informe de instrução e a decisão; (iii) examinar se é cabível a devolução do prazo para cumprimento da obrigação de abrangência em Magé/RJ; (iv) definir se a data de licenciamento ou ativação das estações pode ser considerada como a data de comprovação do atendimento da meta em São José/SC; e (v) a possibilidade da subsituição da multa por sanção de Obrigação de Fazer - OdF.
+III. RAZÕES DE DECIDIR
+1. O Recurso Administrativo é admissível. Foi interposto tempestivamente, por parte legítima, contra decisão recorrível, havendo interesse recursal.
+2. O juízo de retratação parcial foi regular. A autoridade recorrida expediu novo despacho decisório (com efeito substitutivo) e reduziu a multa em razão do erro de enquadramento da infração em Magé/RJ.
+3. Não há nulidade no despacho de instauração. O art. 82, I, do Regimento Interno da Anatel - RIA exige apenas a indicação das sanções aplicáveis, não sendo necessária a indicação prévia da sanção exata nem do valor da multa.
+4. A definição da sanção concreta depende da apuração dos fatos e da instrução processual. Por essa razão, a indicação apenas dos tipos sancionatórios no ato inaugural mostra-se suficiente.
+5. Não há nulidade pela ausência de nova intimação para apresentação de alegações finais após os informes técnicos. A Recorrente apresentou Defesa, Alegações Finais e Recurso, exercendo plenamente o contraditório e a ampla defesa.
+6. O informe técnico constitui documento preparatório à decisão. Seu conteúdo deve ser publicizado após a edição do ato decisório. A ausência de manifestação prévia sobre esse documento não configura cerceamento de defesa.
+7. A devolução do prazo para cumprimento da obrigação em Magé/RJ não é cabível. O precedente invocado pela Recorrente refere‑se a situação fática distinta, relacionada ao Edital do 3G e a contexto fiscalizatório diverso, não havendo identidade de fundamentos que autorize sua aplicação ao caso presente.
+8. No caso do Edital do 4G, os polígonos foram apresentados pela própria Prestadora e validados pela Anatel antes da atividade fiscalizatória. Não houve fundamento para deslocar o termo inicial do prazo editalício.
+9. O Edital nº 004/2012/PVCP/SPV-Anatel fixou prazo certo para cumprimento dos compromissos de abrangência até 31 de dezembro de 2015. Não há previsão de tolerância ou devolução automática de prazo.
+10. A data de licenciamento da estação não comprova, por si só, o atendimento da meta de cobertura. O atendimento exige demonstração de efetiva operação e início de tráfego.
+11. Em São José/SC, a fiscalização utilizou dados fornecidos pela própria Prestadora para concluir que o percentual de cobertura foi atingido em 26 de novembro de 2018. Sem prova nova de operação anterior, não há motivo para alterar a data considerada.
+12. Mantêm-se a materialidade das infrações e a quantificação da sanção, ressalvada a correção já promovida em juízo de retratação parcial.
+13. É cabível aplicar sanção de obrigação de fazer em substituição à sanção pecuniária, com fundamento na conveniência e oportunidade administrativas e no interesse público.
+14. A OdF consistente em prover conectividade ponto a ponto para conexão de instituições públicas de ensino superior e institutos federais à Rede Nacional de Ensino e Pesquisa - RNP atende aos requisitos do art. 16 do Regulamento de Aplicação de Sanções Administrativas - RASA. A medida promove política pública de conectividade e é compatível com os objetivos estratégicos da Agência.
+15. A OdF deve observar os parâmetros técnicos e econômicos definidos pela área técnica, inclusive quanto à instalação e manutenção do circuito de transporte, à eventual implantação de backhaul de fibra óptica, aos requisitos de Service Level Agreement - SLA da RNP, aos prazos de execução, à comprovação do cumprimento e à possibilidade de conversão em multa em caso de descumprimento.
+16. Deve ser concedido prazo de 60 (sessenta) dias para que a Prestadora apresente projeto técnico e indique as instituições a serem atendidas, ou opte pela conversão da obrigação de fazer em multa, com renúncia ao desconto previsto no RASA.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e, no mérito, não provido.
+Tese de julgamento: "1. É válida a instauração de Pado com indicação dos tipos de sanções aplicáveis, sem necessidade de indicação prévia da sanção exata ou do valor da multa. 2. Não há nulidade pela ausência de intimação para alegações finais entre o informe de instrução e o espacho decisório, pois o informe constitui documento preparatório à decisão. 3. Não cabe devolver o prazo para adimplemento de compromisso de abrangência quando a situação fática do precedente invocado for distinta e os polígonos de cobertura já eram de conhecimento da Prestadora. 4. A data de licenciamento da estação não se confunde com a data de comprovação do atendimento da meta, que depende de efetiva operação e início de tráfego. 5. Mantém-se a multa aplicada, com a redução já promovida em juízo de retratação parcial. 6. É cabível a aplicação da sanção de obrigação de fazer, em substituição à multa, consistente no provimento de conectividade de instituições públicas de ensino superior e institutos federais à Rede Nacional de Ensino e Pesquisa - RNP, observados os parâmetros e prazos fixados na decisão."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 183; Lei nº 9.784/1999, art. 50, § 1º; Decreto nº 11.738/2023, art. 3º; Decreto nº 12.150/2024, arts. 4º e 5º; Resolução Anatel nº 612/2013, arts. 82, 115, § 1º, § 7º e § 8º, e 116; Resolução Anatel nº 589/2012, arts. 3º, 15 e 16; Edital de Licitação nº 004/2012/PVCP/SPV-Anatel, Anexo II-B, itens 7.1.4 e 7.4; e, Portaria Anatel nº 642/2013, art. 7º, XI, b.
+Jurisprudência relevante citada: Anatel, Acórdão nº 29, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Conselho Diretor, j. 10.02.2020; Anatel, Acórdão nº 335, Rel. Conselheiro Emmanoel Campelo de Souza Pereira, Conselho Diretor, j. 05.10.2021; e, Anatel, Acórdão nº 53, Rel. Conselheiro Emmanoel Campelo de Souza Pereira, Conselho Diretor, j. 25.02.2022.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 52/2026/AF (SEI nº 15663755), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento;
+b) aplicar a Sanção de Obrigação de Fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, tendo como base o valor de R$ 5.710.749,59 (cinco milhões, setecentos e dez mil, setecentos e quarenta e nove reais e cinquenta e nove centavos), com as correções monetárias e dedução, nos termos do Regulamento de Aplicação de Sanções Administrativas - RASA, a ser implementado nos termos expostos em especial no item 5.73 da referida análise; e,
+c) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a CLARO S.A comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comunique à Agência sua opção pela conversão da Sanção de Obrigação de Fazer em multa, abrindo mão do desconto previsto no RASA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15949834 e o código CRC 3A7F6CAA.
+ | 
+Referência: Processo nº 53500.055641/2020-89 | 
+SEI nº 15949834 |

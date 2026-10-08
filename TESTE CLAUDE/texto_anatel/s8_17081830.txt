@@ -1,0 +1,45 @@
+SEI/ANATEL - 15267241 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 60, de 03 de março de 2026
+Processo nº 53500.047764/2025-51
+Recorrente/Interessado: GLA BRASIL LTDA.
+CNPJ nº 03.185.731/0001-47
+Conselheiro(a) Relator(a): Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO. NOVA OUTORGA PARA O SATÉLITE IS-30. PEDIDO DEFERIDO CONDICIONADO AO PAGAMENTO DO PREÇO PÚBLICO.
+I. CASO EM EXAME
+1. Pedido formulado pela GLA BRASIL LTDA., representante legal da INTELSAT LICENSE LLC, para conferência de novo direito de exploração no Brasil do satélite geoestacionário estrangeiro Intelsat 30 (IS-30), posicionado em 95,05°O, com vigência até 24 de novembro de 2029.
+2. O satélite IS-30 já possui direito de exploração no Brasil, conferido pelo Ato nº 7.723/2018 e ratificado pelo Termo de Autorização nº 256/2018, com validade até 18 de outubro de 2026, tendo sido posteriormente acrescidas subfaixas de radiofrequências pelo Ato nº 7.017/2020.
+3. A Interessada não observou o prazo mínimo de 2 (dois) anos para requerer prorrogação do direito de exploração, motivo pelo qual optou por pleitear novo direito para o mesmo satélite e posição orbital, com vigência pretendida de 19 de outubro de 2026 a 24 de novembro de 2029.
+4. Foram apresentados os documentos exigidos pelo Regulamento Geral de Exploração de Satélites - RGSat, tendo a Superintendência de Outorga e Recursos à Prestação - SOR se manifestado favoravelmente à outorga, nos termos do Informe nº 9025/2025/ORLE/SOR.
+5. Com Minuta de Ato de conferência de novo direito de exploração, a matéria foi encaminhada ao Conselho Diretor para deliberação.
+II. QUESTÃO EM DISCUSSÃO
+Saber se foram atendidos os requisitos procedimentais e técnico-regulatórios para a conferência de novo direito de exploração do satélite estrangeiro IS-30 sobre o território brasileiro, no período de 19 de outubro de 2026 a 24 de novembro de 2029.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor conferir direito de exploração de satélites, nos termos do art. 133, IX, do Regimento Interno da Anatel - RIA (aprovado pela Resolução nº 612/2013).
+2. A requerente atendeu aos requisitos procedimentais do Regulamento Geral de Satélites - RGSat (aprovado pela Resolução nº 748/2021), tendo apresentado todos os documentos e declarações exigidos, conforme listas de verificação juntadas aos autos pela área técnica.
+3. Conforme atestou o corpo técnico, o presente pedido não se enquadra nas hipóteses de Consulta Pública obrigatória previstas nos arts. 17 e 19 do RGSat e nos itens 2 e 3 do Anexo ao Ato nº 4.430/2023 da Superintendência de Outorga e Recursos à Prestação - SOR.
+4. As faixas de radiofrequência utilizadas têm atribuição e destinação compatíveis com o Serviço Fixo por Satélite, nos termos do Regulamento de Uso do Espectro - RUE (aprovado pela Resolução 671/2013) e do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF (aprovado pela Resolução nº 772/2025).
+5. O satélite IS-30 está vinculado às redes BLUE1, USASAT-23F, USASAT-24L, USASAT-35L, USASAT-60F e USASAT-60U, notificadas à União Internacional de Telecomunicações - UIT, cumprindo os requisitos do § 2º do art. 4º do RGSat.
+6. A apresentação de acordos de coordenação dos arts. 10 e 15 do RGSat foi dispensada, uma vez que não há redes brasileiras notificadas nem direitos de exploração conferidos ou em análise nas frequências no arco orbital considerado.
+7. Como se trata de um satélite estrangeiro, o art. 30 do RGSat exige a indicação formal de representante legal no Brasil e o pagamento do preço público de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+8. É pertinente fazer constar do ato de outorga a exigência de instalação de filtros de recepção, a menção à Recomendação 51 (XXVII-16) da Comissão Interamericana de Comunicações - CITEL e a observação de que as faixas pleiteadas e adjacentes podem estar sendo utilizadas ou vir a ser utilizadas por outros sistemas de telecomunicações regularmente autorizados.
+9. O pedido de direito de exploração do IS-30 está alinhado ao Plano Estratégico da Anatel 2023-2027 e aos Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU, pois amplia a capacidade satelital disponível para o atendimento de áreas remotas e de políticas públicas.
+IV. DISPOSITIVO E TESE
+Pedido deferido para conferir à GLA BRASIL LTDA., como representante legal da INTELSAT LICENSE LLC, novo direito de exploração no Brasil do satélite geoestacionário estrangeiro Intelsat 30 (IS-30), no período de 19 de outubro de 2026 a 24 de novembro de 2029, condicionado à comprovação do pagamento do preço público de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), observado o cumprimento das condições técnicas e regulatórias aplicáveis.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel conferir direito de exploração de satélite, inclusive estrangeiro, nos termos da Lei nº 9.472/1997 e do Regimento Interno da Agência. 2. Atendidas as condições gerais, procedimentais e técnico-regulatórias previstas no RGSat e nos Atos nº 9.523/2021, nº 9.526/2021 e nº 4.430/2023, é possível conferir novo direito de exploração ao satélite estrangeiro IS-30, ainda que já exista direito vigente, desde que observados os prazos e limites de vida útil do artefato. 3. O pedido em análise não se enquadra nas hipóteses de Consulta Pública obrigatória para conferência de direito de exploração de satélites previstas no RGSat e no Ato nº 4.430/2023. 4. Não identificada prioridade de coordenação em âmbito nacional nas faixas de frequências e no arco orbital em questão, dispensa-se a apresentação de acordos de coordenação. 5. A expedição do ato de outorga do novo direito de exploração do satélite IS-30 fica condicionada à comprovação do pagamento do preço público de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais)."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º; Resolução nº 612/2013 (Regimento Interno da Anatel), arts. 39 e 133, IX; Resolução nº 671/2016 (RUE), art. 1º, § 3º, III; Resolução nº 748/2021 (RGSat), arts. 4º, 10, 15, 16, 17, 18, 20, 22, 30, 38 e 39; Resolução nº 772/2025, Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências; Resolução nº 779/2025, art. 1º, CXXV; Ato nº 9.523/2021; Ato nº 9.526/2021; Ato nº 4.430/2023; Portaria nº 642/2013; Decretos nº 11.704/2023, nº 11.738/2023 e nº 12.150/2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 65/2025/CL (SEI nº 14904907), integrante deste acórdão:
+a) deferir o pedido da empresa GLA BRASIL LTDA., representante legal da INTELSAT LICENSE LLC., no sentido de outorgar o Direito de Exploração no Brasil do satélite geoestacionário estrangeiro IS-30 pelo período de 19 de outubro de 2026 a 24 de novembro de 2029, nos termos da Minuta de Ato SEI nº 14651007; e,
+b) condicionar a expedição do referido Ato à comprovação do pagamento, pela GLA BRASIL LTDA., do preço público, estipulado em R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15267241 e o código CRC F41FB43C.
+ | 
+Referência: Processo nº 53500.047764/2025-51 | 
+SEI nº 15267241 |

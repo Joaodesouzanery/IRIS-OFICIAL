@@ -1,0 +1,405 @@
+SEI/ANATEL - 12663888 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 54/2024/CL
+Processo nº 53500.061574/2024-65
+Interessado: Vale do Ribeira Internet Ltda
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Renúncia de Autorização de Uso de Radiofrequências na subfaixa de 2.570 MHz à 2.620 MHz, relativa a Lotes que foram objeto da Licitação nº 002/2015-SOR/SPR/CD-ANATEL.
+EMENTA
+sUPERINTENDÊNCIA DE OUTORGA E RECURSOS À PRESTAÇÃO (sor). pedido de renúncia de autorização de uso de radiofrequências. EXTINÇÃO DE OUTORGA DECORRENTE DE PROCEDIMENTO LICITATÓRIO. COMPETÊNCIA DO CONSELHO DIRETOR. declaração de extinção. manutenção das obrigações.
+Compete ao Conselho Diretor aprovar a extinção de outorga decorrente de procedimento licitatório, nos termos do art. 133, inciso VII, do Regimento Interno da Anatel (RI), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A renúncia é ato unilateral, irrevogável e irretratável, que opera seus efeitos a partir do momento de seu protocolo nesta Agência e não desonera a prestadora de suas obrigações com terceiros e perante a Anatel.
+Extinção da autorização de uso de faixas de radiofrequências na subfaixa de 2.570 MHz a 2.620 MHz.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT;
+Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela Resolução nº 65, de 29 de outubro de 1998;
+Regimento Interno da Agência Nacional de Telecomunicações - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Regulamento de Uso do Espectro de Radiofrequências - RUE, aprovado pela Resolução nº 671, de 3 de novembro de 2016;
+Regulamento de Cobrança de Preço Público pelo Direito de Uso de Radiofrequências, aprovado pela Resolução nº 695, de 20 de julho de 2018;
+Edital de Licitação nº 2/2015-SOR/SPR/CD-ANATEL (SEI nº 4510431);
+Informe nº 7947/2024/ORLE/SOR (SEI nº 12416953), de 6 de setembro de 2024; e,
+Matéria para Apreciação do Conselho Diretor nº 696/2024 (SEI nº 12416954), de de 6 de setembro de 2024.
+RELATÓRIO
+DOS FATOS
+Trata-se de Pedido de renúncia apresentado por VALE DO RIBEIRA INTERNET LTDA, CNPJ nº 07.017.934/0001-85, da Autorização de Uso de Radiofrequências associada à Autorização para exploração do Serviço de Comunicação Multimídia - SCM, outorgada por meio do Ato nº 2493, de 21 de julho de 2016 (SEI nº 0675406), publicado no Diário Oficial da União (DOU) em 26 de julho de 2016, e Termo de Autorização nº 16/2016 (SEI nº 0631044), publicado no DOU em 27 de julho de 2016, em decorrência da Licitação nº 002/2015-SOR/SPR/CD-ANATEL.
+O pedido foi protocolado pela prestadora em 22 de julho de 2024 (SEI nº 12316678).
+Por meio do Informe nº 7947/2024/ORLE/SOR (SEI nº 12416953), de 6 de setembro de 2024, a área técnica analisou o pleito, concluindo por encaminhar o processo ao Conselho Diretor, com sugestão de que seja declarada a extinção, por renúncia, da referida autorização.
+Na mesma data, o processo foi encaminhado ao Conselho Diretor pela Matéria para Apreciação do Conselho Diretor nº 696/2024 (SEI nº 12416954).
+Em 12 de setembro último, conforme Certidão de Distribuição SEI nº 12571280, os autos foram remetidos a este Gabinete para fins de relatoria da matéria para apreciação do Órgão Colegiado.
+São os fatos.
+DA ANÁLISE
+Cuida a presente Análise do pedido de renúncia da Autorização de Uso de Radiofrequência formulado por VALE DO RIBEIRA INTERNET LTDA, referente aos Lotes abaixo relacionados, da Licitação nº 002/2015-SOR/SPR/CD-ANATEL, autorizados por meio do Ato nº 2493, de 21/07/2016 (SEI nº 0675406), e Termo de Autorização nº 16/2016 (SEI nº 0631044).
+ Tabela 1
+ Lotes
+ | 
+ Frequências 
+ | 
+ Valor
+ | 
+ Área de Prestação
+ (Municípios)
+ | 
+ H-3502705
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Apiaí/SP
+ | 
+ H-3505351
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Barra do Chapéu/SP
+ | 
+ H-3505401
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Barra do Turvo/SP
+ | 
+ H-3509254
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Cajati/SP
+ | 
+ H-3509908
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Cananéia/SP
+ | 
+ H-3514809
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Eldorado/SP
+ | 
+ H-3520301
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Iguape/SP
+ | 
+ H-3520426
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Ilha Comprida/SP
+ | 
+ H-3521200
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Iporanga/SP
+ | 
+ H-3522158
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Itaóca/SP
+ | 
+ H-3522653
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Itapirapuã Paulista/SP
+ | 
+ H-3523305
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Itariri/SP
+ | 
+ H-3524600
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Jacupiranga/SP
+ | 
+ H-3526100
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Juquiá/SP
+ | 
+ H-3526209
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 10.100,00
+ | 
+ Juquitiba/SP
+ | 
+ H-3529906
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Miracatu/SP
+ | 
+ H-3536208
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Pariquera-Açu/SP
+ | 
+ H-3537206
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Pedro de Toledo/SP
+ | 
+ H-3542602
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 21.100,00
+ | 
+ Registro/SP
+ | 
+ H-3542800
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Ribeira/SP
+ | 
+ H-3549953
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 10.100,00
+ | 
+ São Lourenço da Serra/SP
+ | 
+ H-3551801
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 11.100,00
+ | 
+ Sete Barras/SP
+ | 
+ H-3553500
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Tapiraí/SP
+ | 
+ H-4100202
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Adrianópolis/PR
+ | 
+ H-4104006
+ | 
+ 2.570 MHz à 2.585 MHz
+ | 
+ R$ 3.600,00
+ | 
+ Campina Grande do Sul/PR
+ | 
+ I-3509254
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 51.100,00
+ | 
+ Cajati/SP
+ | 
+ I-3509908
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Cananéia/SP
+ | 
+ I-3514809
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Eldorado/SP
+ | 
+ I-3520301
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 51.100,00
+ | 
+ Iguape/SP
+ | 
+ I-3520426
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Ilha Comprida/SP
+ | 
+ I-3523305
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 26.100,00
+ | 
+ Itariri/SP
+ | 
+ I-3524600
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Jacupiranga/SP
+ | 
+ I-3526100
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Juquiá/SP
+ | 
+ I-3529906
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Miracatu/SP
+ | 
+ I-3536208
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Pariquera-Açu/SP
+ | 
+ I-3537206
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 26.100,00
+ | 
+ Pedro de Toledo/SP
+ | 
+ I-3542602
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 61.100,00
+ | 
+ Registro/SP
+ | 
+ I-3551801
+ | 
+ 2.585 MHz à 2.620 MHz
+ | 
+ R$ 41.100,00
+ | 
+ Sete Barras/SP
+ | 
+ Valor total
+ | 
+ | 
+ R$ 754.800,00
+ | 
+ | 
+Quanto à instauração e instrução do presente processo, cabe observar que obedeceram rigorosamente às disposições contidas no Regimento Interno da Anatel (RIA), aprovado na forma do Anexo à Resolução n.º 612, de 29/4/2013, atendendo à sua finalidade, com observância dos princípios do devido processo legal, do contraditório e da ampla defesa, e especialmente da motivação, conforme dispõe o artigo 50 da Lei n.º 9.784, de 29/1/1999, Lei de Processo Administrativo. 
+Adicionalmente, conforme atestado pela área técnica no Informe nº 7947/2024/ORLE/SOR (SEI nº 12416953), "a solicitação de renúncia da VALE DO RIBEIRA INTERNET LTDA foi subscrita e protocolizada no ambiente SEI por procurador legalmente constituído pela empresa, conforme se verifica nas Procurações Eletrônicas SEI nº 9365634, nº 9123659e nº 9365634, concluindo-se que se trata de parte legítima, portanto, para a apresentação do presente pleito". 
+Da Competência do Conselho Diretor
+A definição da competência para deliberar a presente matéria foi estabelecida no Regimento Interno da Agência - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013. Conforme disposto no art. 133, cabe ao Conselho Diretor decidir pela extinção de outorga de autorização de serviços de telecomunicações ou de uso de radiofrequência provenientes de licitação: 
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+...
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção; 
+Como as autorizações de Uso de Radiofrequência às quais a Requerente renunciou foram objeto da Licitação nº 002/2015-SOR/SPR/CD-ANATEL, cujo resultado foi homologado por intermédio do Acórdão nº 552/2018-CD, de 1º de outubro de 2018, mostra-se acertado o encaminhamento da matéria ao Conselho Diretor.
+Do Mérito
+A solicitação foi apresentada pela entidade na carta SEI nº 12316678, protocolada em 22 de julho de 2024, incluindo a renúncia de todos os Lotes autorizados por meio do Ato supramencionado.
+Cabe esclarecer que a renúncia é forma de extinção de autorização de serviço e de uso de radiofrequência prevista na legislação vigente, bem como no Edital de Licitação e Termo de autorização mencionado. A Lei Geral de Telecomunicações - LGT, assim estabelece:
+Art. 142. Renúncia é o ato formal unilateral, irrevogável e irretratável, pelo qual a prestadora manifesta seu desinteresse pela autorização.
+Parágrafo único. A renúncia não será causa para punição do autorizado, nem o desonerará de suas obrigações com terceiros.
+...
+Art. 169. A autorização de uso de radiofreqüências extinguir-se-á pelo advento de seu termo final ou no caso de sua transferência irregular, bem como por caducidade, decaimento, renúncia ou anulação da autorização para prestação do serviço de telecomunicações que dela se utiliza. (grifo nosso)
+No mesmo sentido, prevê o Regimento Interno da Anatel:
+Art. 113. O requerimento de renúncia de outorga para exploração de serviço de telecomunicações, de uso de radiofrequência ou de direito de exploração de satélite é ato unilateral, irrevogável e irretratável, devendo ser dirigido à autoridade competente, que instruirá o feito e o encaminhará para deliberação.
+Parágrafo único. A renúncia não desonera o interessado de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela prestadora ou a cobrança de valores devidos que serão apurados em processos próprios.
+Já o Termo de Autorização nº 16/2016 (SEI nº 0631044) dispôs sobre o instituto jurídico da renúncia, relativamente ao direito de uso de radiofrequências, da forma a seguir exposta: 
+Termo de Autorização nº 16/2016 (SEI nº 0631044):
+Cláusula 3.1 - O valor da outorga de autorização para uso das radiofrequências nas Subfaixas de Radiofrequências, objeto deste termo, é de R$ 754.800,00 (setecentos e cinquenta e quatro mil e oitocentos reais), a ser pago da seguinte forma:
+a) O valor total proposto ou 10% desse valor deverá ser pago na data da assinatura deste termo, sendo a importância a ser paga atualizada pela variação do IGP-DI (Índice Geral de Preço – Disponibilidade Interna da Fundação Getúlio Vargas), desde a data da entrega dos Documentos de Identificação e de Regularidade Fiscal, das Propostas de Preço e da Documentação de Habilitação até a data do efetivo pagamento, caso o pagamento ocorra após 12 (doze) meses da data de entrega dos Documentos de Identificação e de Regularidade Fiscal, das Propostas de Preço e da Documentação de Habilitação;
+b) Os restantes 90% em dez parcelas iguais e anuais, com vencimento, respectivamente, em até 36 (trinta e seis), 48 (quarenta e oito), 60 (sessenta), 72 (setenta e dois), 84 (oitenta e quatro), 96 (noventa e seis), 108 (cento e oito), 120 (cento e vinte), 132 (cento e trinta e dois) e 144 (cento e quarenta e quatro) meses contados da data da publicação do extrato do Termo de Autorização, sendo a importância a ser paga atualizada, pela variação do IGP-DI, desde a data da entrega dos Documentos de Identificação e de Regularidade Fiscal, das Propostas de Preço e da Documentação de Habilitação até a data do efetivo pagamento. Caso o pagamento ocorra após 12 (doze) meses da data de entrega dos Documentos de Identificação e de Regularidade Fiscal, das Propostas de Preço e da Documentação de Habilitação, serão acrescidos a esses valores, além da atualização pelo IGP-DI, juros simples de 0,25% (vinte e cinco centésimos percentuais) ao mês, incidentes sobre o valor corrigido, desde a data de publicação, no Diário Oficial da União – DOU, do extrato do Termo de Autorização.
+c) Em quaisquer das situações que levem à extinção da Autorização, o valor referente ao Preço Público pela Direito de Uso de Radiofrequência é devido na sua integralidade e nas condições previstas nesta Cláusula. (grifo nosso)
+...
+Cláusula 8.1. O presente Termo não impõe à AUTORIZADA o dever de continuidade do uso dos respectivos blocos, assistindo-lhe o direito de renúncia nos termos do art. 142, da Lei nº 9.472, de 1997, observadas as disposições deste Termo.
+Parágrafo único. O direito de renúncia não elide o dever da AUTORIZADA de garantir aos usuários, na forma prevista neste Termo e na regulamentação, o prévio conhecimento da interrupção do uso dos blocos de radiofrequências autorizados.
+...
+Cláusula 11.1 - O presente Termo extinguir-se-á pelo advento de seu termo final ou no caso de sua transferência irregular, bem como por caducidade, decaimento, renúncia ou anulação da autorização para prestação do serviço de telecomunicações que dela se utiliza.
+Parágrafo único. É intransferível a autorização de uso de radiofrequências sem a correspondente transferência da concessão, permissão ou autorização de prestação do serviço a elas vinculada.
+Adicionalmente, o próprio Edital de Licitação nº 002/2015-SOR/SPR/CD-ANATEL estabeleceu, em item 5.7, "d", a obrigação de quitação integral do Preço Público, mesmo na hipótese de extinção antecipada:
+5.7. Condição de pagamento do valor ofertado nas Propostas de Preço:
+...
+d) Em quaisquer das situações que levem à extinção da Autorização, o valor referente ao Preço Público pela Direito de Uso de Radiofrequência para os Lotes Tipo C é devido na sua integralidade e nas condições previstas nesta Cláusula.
+Assim, verifica-se que a renúncia, ato formal unilateral, irrevogável e irretratável, é direito assegurado às prestadoras de serviços de telecomunicações, nos termos da legislação vigente, e ratificado pelos instrumentos de outorga expedidos no contexto da Licitação em questão.
+É importante ressaltar que a renúncia não isenta a autorizada do cumprimento de suas obrigações perante a Anatel nem terceiros, não representando qualquer prejuízo à administração. É válido esclarecer, ainda, que, conforme disposto no Termo descrito acima, o valor referente ao Preço Público pelo Direito de Uso de Radiofrequência é devido na sua integralidade, ou seja, a prestadora não possui qualquer direito a ressarcimento sobre as parcelas já pagas, relativas aos lotes renunciados, e deve quitar toda e qualquer parcela ainda a vencer.
+Em seu informe a área técnica chama a atenção para os débitos da empresa, devidamente consignados no sistema SIGEC:
+Informe nº 7947/2024/ORLE/SOR (SEI nº 12416953):
+3.10. No tocante aos débitos da empresa, em consulta ao Sistema SIGEC verifica-se que constam lançamentos referentes ao Preço Público pelo Direito de Uso de Radiofrequências (PPDUR) já quitados, bem como valores vencidos e em aberto relativos aos anos de 2025 a 2028, lançados no Fistel nº 50412266016, sequenciais de 0011 a 0015, cuja tela daquele sistema acostada aos autos sob o SEI nº 12367659.
+(grifo nosso)
+Adicionalmente, a área técnica consignou que "a VALE DO RIBEIRA INTERNET LTDA informou que não existem clientes ativos para esta atividade, afastando-se a necessidade de comunicação aos usuários, conforme Parágrafo único da Cláusula 8.1 citada acima (SEI nº 12316678)".
+Diante do exposto, entendo que os requisitos legais exigíveis para o reconhecimento da renúncia estão atendidos, devendo ser formalizada a extinção da Autorização de Uso de radiofrequência para os Lotes da tabela 1, acima.
+Cabe enfatizar que a renúncia não prejudica a apuração de eventuais infrações cometidas pela prestadora.
+Com relação aos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), no presente processo, identifico alinhamento com o ODS 16, de "promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis". 
+CONCLUSÃO
+À vista do exposto, com fundamento nas razões e justificativas da presente Análise, proponho declarar extinta, por renúncia, a partir de 22 de julho de 2024, nos termos da Minuta de Ato SEI nº 12416956, a Autorização de Uso de Radiofrequências na subfaixa de 2.570 MHz a 2.620 MHz, objetos da Licitação nº 002/2015-SOR/SPR/CD-ANATEL, outorgada por meio do Ato nº 2493, de 21 de julho de 2016 (SEI nº 0675406), publicado no DOU em 26 de julho de 2016, e Termo de Autorização nº 16/2016 (SEI nº 0631044), publicado no DOU em 27 de julho de 2016, conferida à VALE DO RIBEIRA INTERNET LTDA, CNPJ nº 07.017.934/0001-85, sem prejuízo da apuração de eventuais infrações cometidas pela empresa ou a cobrança de valores devidos.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 18/10/2024, às 08:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 12663888 e o código CRC A3B22763.
+ | 
+Referência: Processo nº 53500.061574/2024-65 | 
+SEI nº 12663888 |

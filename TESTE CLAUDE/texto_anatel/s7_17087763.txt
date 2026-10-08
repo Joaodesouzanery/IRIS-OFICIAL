@@ -1,0 +1,909 @@
+SEI/ANATEL - 15272780 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 20/2026/NP
+Processo nº 53500.013672/2019-29
+Interessado: SKY BRASIL SERVICOS LTDA
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que aplicou multa por descumprimentos de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES (PADO). REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES (RGC/2014). PRORROGAÇÃO DE RELATORIA.
+1. Processo incluído automaticamente na pauta da Reunião do Conselho Diretor.
+2. Pela prorrogação do prazo para submissão da matéria ao Conselho Diretor por 120 (cento e vinte) dias.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT.
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo - LPA.
+Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil.
+Lei nº 12.527, de 18 de novembro de 2011 - Lei de Acesso à Informação - LAI.
+Decreto nº 9.612, de 17 de dezembro de 2018, que dispõe sobre políticas públicas de telecomunicações.
+Regulamento do Serviço Telefônico Fixo Comutado - RSTFC, aprovado pela Resolução nº 426, de 5 de dezembro de 2005.
+Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+Portaria nº 791, de 26 de agosto de 2014, que dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos a direito dos Usuários previstas na regulamentação.
+RELATÓRIO
+Versa a presente Análise sobre Recurso Administrativo interposto por Sky Serviços de Banda Larga Ltda., CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Acesso Condicionado (SeAC) e Serviço de Comunicação Multimídia (SCM), em desfavor do Despacho Decisório nº 70/2023/CODI/SCO (SEI nº 9986701), de 14 de abril de 2023, por meio do qual o Superintendente de Controle de Obrigações (SCO) aplicou sanção de multa no valor total de R$ 34.009.925,63 (trinta e quatro milhões, nove mil, novecentos e vinte e cinco reais e sessenta e três centavos), pelos descumprimentos aos artigos 3º, III; 7º, §§ 1º e 3º; 10; 22, X, § 2º; 32; 35, caput e § 2º, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+Aos 25 de abril de 2019, instaurou-se este Procedimento para Apuração de Descumprimento de Obrigações - Pado em virtude dos descumprimentos indicados no Despacho Ordinatório de Instauração nº 88/2019/CODI/SCO (SEI nº 4016488), detalhados nos Relatórios de Fiscalização nº 0236/2015/GR05 (SEI nº 0546125) e nº 0237/2015/GR05 (SEI nº 0546149), constantes no Processo de Fiscalização nº 53528.000282/2016-38, nos termos da tabela abaixo:
+ Seq.
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ 1.
+ | 
+ Prestadora não garante que todo atendimento recebe um número de protocolo a ser informado ao Consumidor.
+ | 
+ Art. 7º, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 2.
+ | 
+ Prestadora não utiliza sequência numérica única como número de protocolo.
+ | 
+ Art. 7º, § 1º, do Anexo à Resolução nº 632/2014
+ | 
+ 3.
+ | 
+ Protocolo não é informado no início do atendimento, nas interações originadas pelo Consumidor.
+ | 
+ Art. 7º, § 2º, do Anexo à Resolução nº 632/2014
+ | 
+ 4.
+ | 
+ Prestadora não garante que o protocolo seja enviado ao cliente em até 24 (vinte e quatro) horas da postulação, contendo data e hora do registro, para todos os serviços.
+ | 
+ Art. 7º, § 3º, do Anexo à Resolução nº 632/2014
+ | 
+ 5.
+ | 
+ Prestadora não garante ao Consumidor acesso, sem ônus, ao histórico de suas demandas.
+ | 
+ Art. 10, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 6.
+ | 
+ Prestadora não garante que a sua comunicação com Consumidores com deficiência visual, auditiva ou de fala seja realizada por meio adequado.
+ | 
+ Art. 18 do Anexo à Resolução nº 632/2014
+ | 
+ 7.
+ | 
+ Atendimento por Internet não está sendo disponibilizado na página da Prestadora na internet, por meio do espaço reservado ao Consumidor.
+ | 
+ Art. 21, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 8.
+ | 
+ Há restrição ao acesso livre do Consumidor ao espaço reservado na página da Prestadora.
+ | 
+ Art. 22, I, do Anexo à Resolução nº 632/2014
+ | 
+ 9.
+ | 
+ Prestadora não disponibiliza opção de cópia e encaminhamento das informações consultadas no espaço reservado.
+ | 
+ Art. 22, X, § 2º, do Anexo à Resolução nº 632/2014
+ | 
+ 10.
+ | 
+ Prestadora não garante que a rescisão do contrato por meio do espaço reservado seja processada de forma automática, sem intervenção de atendente.
+ | 
+ Art. 22, X, § 3º, do Anexo à Resolução nº 632/2014
+ | 
+ 11.
+ | 
+ Prestadora não retorna imediatamente a ligação ao consumidor em caso de descontinuidade.
+ | 
+ Art. 28, parágrafo único, do Anexo à Resolução nº 632/2014
+ | 
+ 12.
+ | 
+ O atendimento da Prestadora não funciona pelo menos em horário comercial.
+ | 
+ Art. 30, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 13.
+ | 
+ Prestadora não disponibiliza opção de cópia e encaminhamento das informações consultadas no espaço reservado.
+ | 
+ Art. 31 do Anexo à Resolução nº 632/2014
+ | 
+ 14.
+ | 
+ Clientes não são atendidos em Estabelecimento de Atendimento Presencial.
+ | 
+ Art. 32 do Anexo à Resolução nº 632/2014
+ | 
+ 15.
+ | 
+ As Concessionárias do STFC e as Prestadoras do SMP devem manter ao menos um Setor de Atendimento Presencial por Microrregião com população igual ou superior a 100.000 (cem mil) habitantes atendida em sua Área de Prestação.
+ | 
+ Art. 33, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 16.
+ | 
+ Prestadora não adota medidas para que o Setor de Atendimento Presencial seja claramente identificável pelo Consumidor e observar as regras de acessibilidade dispostas em legislação específica.
+ | 
+ Art. 35, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 17.
+ | 
+ Não terem, os atendentes do Setor de Atendimento Presencial, acesso aos sistemas da Prestadora, sendo vedado encaminhar o Consumidor para qualquer modalidade de Atendimento Remoto.
+ | 
+ Art. 35, § 1º, do Anexo à Resolução nº 632/2014
+ | 
+ 18.
+ | 
+ Prestadora não adota alternativas para protocolizar e dar encaminhamento às demandas do Consumidor, em caso de indisponibilidade do sistema.
+ | 
+ Art. 35, § 2º, do Anexo à Resolução nº 632/2014
+ | 
+ 19.
+ | 
+ Prestadora não dimensiona o SAP de forma a atender o Consumidor em até 30 (trinta) minutos.
+ | 
+ Art. 36 do Anexo à Resolução nº 632/2014
+ | 
+ 20.
+ | 
+ Prestadora não adota alternativas para protocolizar e dar encaminhamento às demandas do Consumidor, caso o sistema esteja indisponível.
+ | 
+ Art. 39, § 3º, do Anexo à Resolução nº 632/2014
+ | 
+ 21.
+ | 
+ Prestadora não garante direito do Consumidor de tomar conhecimento prévio do conteúdo de contratos.
+ | 
+ Art. 46, c/c Art. 3º, III, do Anexo à Resolução nº 632/2014
+ | 
+ 22.
+ | 
+ As informações não foram consolidadas em sumário, de forma clara, e ser entregues antes da contratação.
+ | 
+ Art. 50, parágrafo único, do Anexo à Resolução nº 632/2014
+ | 
+ 23.
+ | 
+ Contratos de prestação do SCM e os planos de serviços não estão sendo entregues no momento da contratação.
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 24.
+ | 
+ Prestadora descumpre vedação de cobrança antecipada de qualquer item da estrutura tarifária ou de preço na forma de pagamento pós-paga.
+ | 
+ Art. 61, § 1º, do Anexo à Resolução nº 632/2014
+ | 
+ 25.
+ | 
+ Prestadora não garante aos créditos a validade mínima de 30 (trinta) dias.
+ | 
+ Art. 68, I, do Anexo à Resolução nº 632/2014
+ | 
+ 26.
+ | 
+ Prestadora não garante direito ao Consumidor de solicitar a emissão permanente do documento de cobrança em separado para cada serviço prestado.
+ | 
+ Art. 75, § 1º, do Anexo à Resolução nº 632/2014
+ | 
+ 27.
+ | 
+ Prestadora não devolve em dobro o valor cobrado indevidamente.
+ | 
+ Art. 85, caput, do Anexo à Resolução nº 632/2014
+ | 
+Notificada aos 22 de maio de 2019 (SEI nº 4016860 e 4174919), a Prestadora apresentou sua defesa administrativa (SEI nº 4234381) com os anexos "Documento DOC 01 " (SEI nº 4234382) e "Documento Docs. 02 a 08 (SEI nº 4234383).
+Após notificação para apresentação de Alegações Finais (SEI nº 5780183), em 22 de julho de 2020 a Operadora protocolizou a manifestação SEI nº 5784469 solicitando acesso aos processos nº 53504.202692/2015-17, nº 53508.001819/2016-15, nº 53524.203288/2015-14, nº 53542.000527/2016-49, nº 53500.007168/2018-17 e nº 53504.001461/2017-41.
+Em 03 de agosto de 2020, a empresa apresentou suas Alegações Finais (SEI nº 5824226), acompanhadas do "Documento DOC. 1" (SEI nº 5824227) e do "Documento DOCS. 02 a 04" (SEI nº 5824228).
+Na data de 14 de agosto de 2020, a Operadora encaminhou a petição SEI nº 5868755, requerendo a prorrogação do feito por 60 (sessenta) dias para levantamento e apresentação de novas provas.
+Elaborou-se,em 10 de setembro de 2020, o Informe nº 332/2020/CODI/SCO (SEI nº 5846650), o qual, examinando os pedidos da Sky, recomendou a juntada de cópia dos processos de fiscalização solicitados e o indeferimento do pedido de dilação de prazo.
+Devido à juntada de novos documentos (SEI nº 5946889, nº 5946896, nº 5946902, nº 5953424, nº 5953973 e nº 5954137), a Prestadora foi notificada para apresentação de nova defesa, tendo-a apresentado em 13 de outubro de 2020 (SEI nº 6073064 e nº 6073067), acompanhada do "Documento Anexo 1" (SEI nº 6073065) e do "Documento Anexos 2 a 5" (SEI nº 6073066).
+Novo prazo para apresentação de Alegações Finais também foi oferecido (SEI nº 6074776 e nº 6149412), tendo a empresa juntado tal peça em 11 de novembro de 2020 (SEI nº 6181596 e nº 6181597).
+Na data de 29 de julho de 2022, foi expedido o Informe nº 609/2022/CODI/SCO (SEI nº 8652068) por meio do qual a Área Técnica analisou os autos e concluiu pela imposição de multa no valor de R$ 34.009.925,63 (trinta e quatro milhões, nove mil, novecentos e vinte e cinco reais e sessenta e três centavos) e pelo envio do processo para manifestação da Procuradoria Federal Especializada da Anatel (PFE-Anatel), nos termos abaixo:
+ Serviço
+ | 
+ Infração
+ | 
+ Conclusão da Análise 
+ | 
+ Tipo de Infração
+ | 
+ Sanção 
+ | 
+ Usuários Totais (Ut)
+ | 
+ Usuários Atingidos (Ua)
+ | 
+ Dano (D)
+ | 
+ Tempo (T)
+ | 
+ Fator de Gravidade 
+ | 
+ Valor Final Individual da Multa (R$) SCM/SeAC
+ | 
+ SCM/SeAC
+ | 
+ Art. 7º do RGC (conduta 1)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 7º, §1º, do RGC (conduta 2)
+ | 
+ Configurada
+ | 
+ Sistêmica
+ | 
+ multa
+ | 
+ N/A
+ | 
+ N/A
+ | 
+ 3
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 106.486,29/6.516.074,56
+ | 
+ SCM/SeAC
+ | 
+ Art. 7º, §2º, do RGC (conduta 3)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 7º, §3º, do RGC (conduta 4)
+ | 
+ Considerada anteriormente
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 10 do RGC (conduta 5)
+ | 
+ Configurada
+ | 
+ Sistêmica
+ | 
+ multa
+ | 
+ N/A
+ | 
+ N/A
+ | 
+ 2
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 88.738,58/5.430.062,13
+ | 
+ SCM/SeAC
+ | 
+ Art. 18 do RGC (conduta 6)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 21 do RGC (conduta 7)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 22, I, do RGC (conduta 8)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 22, X, §2º, do RGC (conduta 9)
+ | 
+ Configurada
+ | 
+ Sistêmica
+ | 
+ multa
+ | 
+ N/A
+ | 
+ N/A
+ | 
+ 2
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 26.621,57/1.629.018,64
+ | 
+ SCM/SeAC
+ | 
+ Art. 22, §3º, do RGC (conduta 10)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 28, parágrafo único, RGC (conduta 11)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 30 do RGC (conduta 12)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 31 do RGC (conduta 13)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 32 do RGC (conduta 14)
+ | 
+ Configurada
+ | 
+ Pontual
+ | 
+ multa
+ | 
+ 3.800
+ | 
+ 3.799
+ | 
+ 3
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 106.472,28/6.515.217,13
+ | 
+ SCM/SeAC
+ | 
+ Art. 33 do RGC (conduta 15)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 35 do RGC (conduta 16)
+ | 
+ Configurada
+ | 
+ Sistêmica
+ | 
+ multa
+ | 
+ N/A
+ | 
+ N/A
+ | 
+ 3
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 106.486,29/6.516.074,56
+ | 
+ SCM/SeAC
+ | 
+ Art. 35, §1º, do RGC (conduta 17)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 35, §2º, do RGC (conduta 18)
+ | 
+ Configurada
+ | 
+ Pontual
+ | 
+ multa
+ | 
+ 1.774
+ | 
+ 40
+ | 
+ 3
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 5.003,87/341.108,88
+ | 
+ SCM/SeAC
+ | 
+ Art. 36 do RGC (conduta 19)
+ | 
+ Analisada no Pado nº 53500.046286/2017-51
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 39, § 3º, do RGC (conduta 20)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 46, c/c art. 3º, III, RGC (conduta 21)
+ | 
+ Configurada (foi afastado o descumprimento ao art. 46. Tópico III.2.a.13 do Informe)
+ | 
+ Sistêmica
+ | 
+ multa
+ | 
+ N/A
+ | 
+ N/A
+ | 
+ 3
+ | 
+ Mais de 1 ano
+ | 
+ Grave
+ | 
+ 106.486,29/6.516.074,56
+ | 
+ SCM/SeAC
+ | 
+ Art. 50, parágrafo único, RGC (conduta 22)
+ | 
+ Analisada no Pado nº 53500.055799/2017-53
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 51 do RGC (conduta 23)
+ | 
+ Analisada no Pado nº 53500.055799/2017-53
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 61, §1º, do RGC (conduta 24)
+ | 
+ Analisada no Pado nº 53500.055910/2017-10
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 68, I, do RGC (conduta 25)
+ | 
+ Analisada no Pado nº 53500.055910/2017-10
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 75, §1º, do RGC (conduta 26)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SCM/SeAC
+ | 
+ Art. 85 do RGC (conduta 27)
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Total SCM/SeAC (R$):
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 546.295,17/33.463.630,46
+ | 
+ Total (R$):
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ 34.009.925,63
+ | 
+Em 09 de agosto de 2022 (SEI nº 8935115), a Prestadora apresentou manifestação SEI nº 8935112 requerendo o sobrestamento do feito até o julgamento do Pedido de Anulação protocolizado.
+A Procuradoria Federal Especializada - PFE-Anatel manifestou-se em 30 de agosto de 2022 via Parecer nº 00443/2022/PFE-ANATEL/PGF/AGU (SEI nº 9050497), no sentido de que o cálculo das multas considere a Receita Operacional Líquida - ROL mais próxima possível do ano da aplicação da sanção (ano de 2021) e que os antecedentes a serem considerados no cálculo da multa devem ser referir à pessoa jurídica como um todo, sem a distinção por serviço.
+Emitiu-se, então, o Informe nº 143/2023/CODI/SCO, de 14 de abril de 2023, no qual o Setor Técnico ratificou, na íntegra, o teor do Informe nº 609/2022/CODI/SCO (SEI nº 8652068) e do cálculo da multa nele efetuado, propondo a aplicação de sanção de multa à SKY Brasil Serviços Ltda. no valor total de R$ 34.009.925,63 (trinta e quatro milhões, nove mil, novecentos e vinte e cinco reais e sessenta e três centavos).
+O Superintendente de Controle de Obrigações – SCO acatou os termos do Informe supra e proferiu o Despacho Decisório nº 70/2023/SCO, de 14 de abril de 2023 (SEI nº 9986701), aplicando a penalidade de multa sugerida.
+Regularmente notificada (SEI nº 10179960), a Operadora interpôs Recurso Administrativo (SEI nº 10238116) e documentos anexos (SEI nº 10238118) em 15 de maio de 2023 (SEI nº 10476190), aduzindo:
+a) preliminarmente, a nulidade processual em função da (i) nulidade dos Relatórios de Fiscalização, (ii) da violação ao princípios da ampla defesa e do contraditório, (iii) da existência de bis in idem e (iv) da violação ao art. 5º, inciso XL da Constituição Federal pelo risco de aplicação retroativa de norma menos favorável:
+a.1) quanto aos Relatórios de Fiscalização nº 236/2016/GR05 e nº 237/2016/GR05, que motivaram o Pado, alegou serem nulos devido a vícios metodológicos, pois a Agência calculou uma quantidade de amostras inferior à necessária e não constituiu capítulos específicos nos relatórios, falhando no acompanhamento e fundamentação. Citou, para tanto, pareceres dos Professores Marcos Lima e Floriano de Azevedo Marques corroborando a nulidade dos relatórios e a impossibilidade de justificar o apenamento da empresa com base neles;
+a.2) argumentou que o Pado foi instaurado sem a devida descrição das condutas tidas por infringidas e que não teve o direito de apresentar Alegações Finais após o encerramento da instrução processual, o que configura cerceamento de defesa;
+a.3) no que tange ao bis in idem, asseverou ter sido penalizada duas vezes pela mesma conduta (não utilização de sequência numérica única como número de protocolo em infração ao art. 7º, § 1º; art. 10 e art. 35 do RGC/2014) em Pados distintos (o atual e o Pado nº 53500.046286/2017-51);
+a.4) sustentou a vedação da Constituição Federal contida no art. 5º, inciso XL quanto à aplicação retroativa de norma menos favorável.
+b) no mérito, defendeu a ausência de conduta passível de penalização quanto aos seguintes pontos:
+b.1) art. 7º, §§ 1º e 3º do RGC/2014: contestou a alegação de não utilização de sequência numérica única para protocolos;
+b.2) art. 22, inciso X, § 2º, do RGC/2014: refutou a imputação de falha em salvar e enviar informações da área reservada ao consumidor;
+b.3) art. 10 do RGC/2014: impugnou a acusação de não garantir ao consumidor acesso ao histórico de suas demandas;
+b.4) art. 32 do RGC/2014: afirmou a disponibilidade do atendimento presencial e sua forma;
+b.5) art. 35, caput, do RGC/2014: questionou a suposta falta de clareza na identificação do atendimento presencial;
+b.6) art. 35, § 2º, do RGC/2014: rebateu a alegação de falha em oferecer alternativas para protocolizar demandas durante a indisponibilidade do sistema; e
+b.7) art. 3º, inciso III, do RGC/2014: rejeitou a acusação de tratamento discriminatório e/ou falta de conhecimento prévio dos contratos.
+c) referentemente ao sancionamento, ponderou a necessidade de revisão da multa:
+c.1) pela violação aos princípios da razoabilidade e proporcionalidade, argumentando que o valor da multa é excessivo e desproporcional em relação às supostas infrações e destacando a boa-fé da empresa, as correções já realizadas e o impacto potencial em investimentos e nos usuários;
+c.2) devido ao uso de uma ROL desatualizada;
+c.3) pela impropriedade na consideração das infrações como de natureza sistêmica, assentando que os pressupostos para tal classificação não foram atendidos;
+c.4) em função da gravidade das infrações ter sido classificada incorretamente como graves;
+c.5) devido ao erro na aplicação do Fator Tempo no cálculo da multa; e
+c.6) pela necessária consideração de atenuantes, como a correção de condutas antes do início do processo, reconhecimentos anteriores da Anatel sobre conformidade e o caráter isolado de alguns incidentes.
+Ao final, requereu:
+o conhecimento do Recurso Administrativo interposto e a concessão do efeito suspensivo;
+a extinção do Pado sem aplicação de sanção, em razão do reconhecimento das nulidades suscitadas;
+em caráter subsidiário, o reconhecimento da inocorrência de condutas passíveis de apenamento ou, ainda, que o valor da multa seja reduzido pela correção dos erros de cálculo apontados quanto pela adequação aos princípios da razoabilidade e da proporcionalidade.
+Atribuiu-se efeito suspensivo à sanção de multa aplicada (SEI nº 10238209), nos termos do art. 123 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, c/c o art. 33, § 2º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Na data de 21 de outubro de 2025, expediu-se o Informe nº 761/2025/CODI/SCO (SEI nº 14361303) mediante o qual a Área Técnica recomendou a manutenção dos termos do Informe nº 609/2022/CODI/SCO (SEI nº 8652068), salvo quanto à infração ao art. 10 do RGC/2014, para a qual propôs a descaracterização, e às infrações aos §§ 1º e 3º do art. 7º, ao art. 35 e ao inciso III do art. 3º, todos dos RGC/2014, para os quais sugeriu a incidência da atenuante de adoção de medidas. Com o recálculo da multa, tal sanção passaria a ser de R$ 24.448.365,86 (vinte e quatro milhões, quatrocentos e quarenta e oito mil trezentos e sessenta e cinco reais e oitenta e seis centavos).
+Nessa mesma data, exarou-se o Despacho Decisório nº 614/2025/SCO (SEI nº 14439570) conhecendo do Recurso interposto e encaminhando os autos ao Conselho Diretor da Agência para julgamento. Emitiu-se, então, a Matéria para Apreciação do Conselho Diretor nº 723/2025 (SEI nº 14439573).
+Em 30 de outubro de 2025, os autos foram distribuídos ao então Conselheiro Vicente Aquino, consoante se afere da Certidão de Distribuição SEI nº 14655232.
+Aos 03 de novembro de 2025, emitiu-se o Ofício Interno 66/2025/VA (SEI nº 14674013), no qual aludido Conselheiro solicitou à SCO que, no prazo de 60 (sessenta) dias, fosse analisada a conveniência e oportunidade da conversão da sanção de multa em obrigação de fazer neste caso concreto e, em caso afirmativo, informasse os eventuais projetos que se relacionem com as políticas públicas estabelecidas para o setor, fixando prazo para comprovação de seu cumprimento.
+Devido ao encerramento do mandato do Conselheiro Vicente Aquino, aos 6 de novembro de 2025 a matéria foi redistribuída à relatoria da Conselheira Cristiana Camarate (SEI nº 14705263).
+Na data de 26 de dezembro de 2025, expediu-se o Ofício nº 764/2025/COQL/ACO-ANATEL (SEI nº 14951207) no qual o Corpo Técnico informou que entende não ser cabível a proposição de obrigação de fazer baseada nos projetos padrão da Agência pelas seguintes razões:
+não se identifica compatibilidade técnica entre o atual contexto fático de operação da Prestadora e os projetos padronizados que envolvem a instalação de infraestruturas de conectividade (a exemplo de torres de transmissão para o Serviço Móvel Pessoal) e de enlaces físicos para ligação de localidades no âmbito do SCM, seguida da manutenção do serviço por período determinado; e
+restaria, portanto, a proposição de obrigação de fazer para a conectividade de escolas, como já proposto à empresa no processo SEI nº 53500.046286/2017-51, porém o quantitativo de escolas desprovidas de cobertura não se mostra suficiente para acomodar uma Obrigação de Fazer nos valores propostos, uma vez que o valor da multa em tela ultrapassaria a quantidade de escolas que podem ser beneficiadas por só restarem 70 (setenta) escolas desprovidas do acesso pleno à internet.
+Aos 4 de março de 2026, os autos foram redistribuídos à minha relatoria (SEI nº 15269725).
+É o relatório.
+FUNDAMENTAÇÃO
+Observa-se que, por força do previsto no art. 127, § 2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, este Recurso Administrativo foi incluído automaticamente na pauta da Reunião do Conselho Diretor nº 952, que ocorrerá em 09 de abril de 2026.
+Todavia, em razão da necessidade de um exame mais aprofundado sobre o caso concreto, entendo não ser possível sua deliberação na data prevista regimentalmente, devendo-se prorrogar o prazo para a submissão da matéria ao Conselho Diretor, consoante previsto no art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Nessa medida, submeto proposta de prorrogação do prazo de relatoria por 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto pela prorrogação do prazo para submissão da matéria ao Conselho Diretor por 120 (cento e vinte) dias, nos termos do § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15272780 e o código CRC 64DD15D1.
+ | 
+Referência: Processo nº 53500.013672/2019-29 | 
+SEI nº 15272780 |

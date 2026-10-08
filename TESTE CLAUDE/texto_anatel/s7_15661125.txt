@@ -1,0 +1,124 @@
+SEI/ANATEL - 13966647 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 38/2025/CL
+Processo nº 53500.015302/2018-45
+Interessado: CLARO S.A.
+CONSELHEIRO
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Recurso administrativo interposto em face do Despacho Decisório nº 101/2022/COQL/SCO (8440133), de 13/05/2022, que aplicou as sanções de advertência e multa, com alternativa de conversão em obrigação de fazer, em razão de descumprimentos ao RGQ-STFC, RGQ-SCM, RGQ-SMP, e PGMQ - Televisão por Assinatura e determinações do Despacho nº 7.009/2012-PBQID/PBQI/SPB e do Despacho nº 1.063/2014-COQL/SCO.
+EMENTA
+RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO de descumprimento de obrigação. gestão da qualidade. AVALIAÇÃO DE CONVENIÊNCIA E OPORTUNIDADE. SOBRESTAMENTO. NECESSIDADE DE CONCLUSÃO DO PROCESSO DE SOLUÇÃO CONSENSUAL.
+1. Recurso Administrativo em face de decisão em Procedimento de apuração de Descumprimento de Obrigação referente à Gestão da Qualidade.
+2. Conveniência e oportunidade de sobrestamento dos presentes autos em prol das negociações objeto do processo de solução consensual com a concessionária.
+REFERÊNCIAS
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Gestão de Qualidade da Prestação do Serviço Telefônico Fixo Comutado (RGQ-STFC), aprovado pela Resolução nº 605, de 26 de dezembro de 2012.
+Regulamento de Gestão de Qualidade da Prestação do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+Regulamento de Gestão de Qualidade da Prestação do Serviço Móvel Pessoal (RGQ-SMP), aprovado pela Resolução nº 575, de 28 de outubro de 2011.
+Plano Geral de Metas de Qualidade para os serviços de televisão por assinatura (PGMQ – Televisão por Assinatura), aprovado pela Resolução nº 411, de 14 de julho de 2005.
+Despacho nº 1.063/2014-COQL/SCO.
+RELATÓRIO
+DOS FATOS
+Trata-se de análise de Recurso Administrativo protocolizado por Claro S.A, CNPJ 40.432.544/0001-47, e Embratel TVSAT Telecomunicações S.A., 09.132.659/0001-76, em face do Despacho Decisório nº 101/2022/COQL/SCO (8440133), de 13/05/2022, que aplicou as sanções de ADVERTÊNCIA e MULTA no valor de R$ 15.617.033,46 (quinze milhões, seiscentos e dezessete mil, e trinta e três reais e quarenta e seis centavos), em razão de descumprimentos ao Regulamento de Gestão de Qualidade da Prestação do Serviço Telefônico Fixo Comutado (RGQ-STFC), aprovado pela Resolução nº 605, de 26 de dezembro de 2012, Regulamento de Gestão de Qualidade da Prestação do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011, Regulamento de Gestão de Qualidade da Prestação do Serviço Móvel Pessoal (RGQ-SMP), aprovado pela Resolução nº 575, de 28 de outubro de 2011, e Plano Geral de Metas de Qualidade para os serviços de televisão por assinatura (PGMQ – Televisão por Assinatura), aprovado pela Resolução nº 411, de 14 de julho de 2005 e determinações do Despacho nº 7.009/2012-PBQID/PBQI/SPB e do Despacho nº 1.063/2014-COQL/SCO.
+O presente processo foi instaurado no dia 02/05/2019, por meio do Despacho Ordinatório de Instauração nº 56/2019/COQL/SCO (SEI nº 4091630), no qual se anexou o Informe nº 217/2018/SEI/COQL/SCO (2647978), de 02/05/2019, que relatou o processo de acompanhamento em que os seguintes indícios de descumprimentos foram identificados:
+Despacho Ordinatório de Instauração nº 56/2019/COQL/SCO (SEI nº 4091630)
+1. Despacho n° 7009/2012- PBQID/PBQI/SPB:
+Descumprimento do item iii do Despacho n° 7009/2012- PBQID/PBQI/SPB, pela não regularização de seu processo de ressarcimento aos usuários afetados por interrupção em sua rede, no prazo de 4 (quatro) meses.
+2. Despacho nº 1063/2014-COQL/SCO:
+2.1. SCM:
+I - Embratel:
+a) Não envio à Anatel dos nomes dos diretores responsáveis pelo cumprimento das determinações exaradas, em descumprimento ao item V do Despacho nº 1063/2014-COQL/SCO.
+II - Net:
+a) Não regularização do processo de ressarcimento, em descumprimento ao item I do Despacho nº 1063/2014-COQL/SCO;
+b) Não regularização do processo de comunicação de interrupções do SCM à Anatel, em descumprimento ao item II do Despacho nº 1063/2014-COQL/SCO;
+c) Não envio à Anatel de relatórios mensais contendo as ações realizadas no mês e resultados alcançados, em descumprimento ao item IV do Despacho nº 1063/2014-COQL/SCO;
+d) Não envio à Anatel dos nomes dos diretores responsáveis pelo cumprimento das determinações exaradas, em descumprimento ao item V do Despacho nº 1063/2014-COQL/SCO.
+2.2. TV por Assinatura:
+I - Embratel TVSAT:
+a) Não regularização do processo de ressarcimento no prazo assinalado, em descumprimento ao item I do Despacho nº 1063/2014-COQL/SCO;
+b) Não envio à Anatel dos nomes dos diretores responsáveis pelo cumprimento das determinações exaradas, em descumprimento ao item V do Despacho nº 1063/2014-COQL/SCO.
+II - Net:
+a) Não regularização do processo de ressarcimento, em descumprimento ao item I do Despacho nº 1063/2014-COQL/SCO;
+b) Não envio à Anatel de relatórios mensais contendo as ações realizadas no mês e resultados alcançados, em descumprimento ao item IV do Despacho nº 1063/2014-COQL/SCO;
+c) Não envio à Anatel dos nomes dos diretores responsáveis pelo cumprimento das determinações exaradas, em descumprimento ao item V do Despacho nº 1063/2014-COQL/SCO.
+3. Durante o ano de 2015:
+3.1 SCM:
+I - Net:
+a) Descumprimento da meta prevista para o indicador SCM12, em infração ao art. 24 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+b) Descumprimento do método de cálculo do indicador SCM12, em infração ao §3º do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+c) Descumprimento da meta prevista para o indicador SCM13, em infração ao art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+d) Descumprimento do prazo máximo previsto no §1º do inciso do II do art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+e) Descumprimento do método de cálculo do indicador SCM13, em infração ao §4º do art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011.
+II - Embratel:
+a) Descumprimento da meta prevista para o indicador SCM12, em infração ao art. 24 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+b) Descumprimento do método de cálculo do indicador SCM12, em infração ao §3º do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+c) Descumprimento da meta prevista para o indicador SCM13, em infração ao art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+d) Descumprimento do prazo máximo previsto no §1º do inciso do II do art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011;
+e) Descumprimento do método de cálculo do indicador SCM13, em infração ao §4º do art. 25 do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia-RGQ-SCM, aprovado pela Resolução n° 574, de 28/10/2011.
+3.2. TV por Assinatura e SeaC:
+I - Net- TV por Assinatura:
+a) Descumprimento do prazo máximo previsto no §1º do inciso do II do art. 17 do Plano Geral de Metas de Qualidade para o Serviço de TV por Assinatura – PGMQ-TV por assinatura, aprovado pela resolução nº 411/2005.
+II - Embratel - SeAC:
+a) Descumprimento da meta prevista para o indicador ISRA, em infração ao §1º do inciso II do art. 17 do Plano Geral de Metas de Qualidade para o Serviço de TV por Assinatura – PGMQ-TV por assinatura, aprovado pela resolução nº 411/2005;
+b) Descumprimento do método de cálculo do indicador ISRA, em infração ao art. 22 c/c o item 10 do Anexo 1, ambos do Plano Geral de Metas de Qualidade para o Serviço de TV por Assinatura – PGMQ-TV por assinatura, aprovado pela resolução nº 411/2005.
+3.3. STFC:
+I - Embratel:
+a) Descumprimento da meta prevista para o indicador ARI, em infração ao art. 22 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012;
+b) Descumprimento do método de cálculo do indicador ARI, em infração ao §7º do art. 22 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012;
+c) Descumprimento dos prazos máximos relativos ao ARI, previstos no §2º do art. 22 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012;
+d) Descumprimento da meta prevista para o indicador RAI, em infração ao art.17 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012;
+e) Descumprimento da meta prevista para o indicador ARD, em infração ao art. 24 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012;
+f) Descumprimento do prazo máximo relativo ao ARD, previsto no §2º do art. 24 do Regulamento de Gestão da Qualidade da Prestação do Serviço Telefônico Fixo Comutado - RGQ-STFC, aprovado pela Resolução n° 605, de 26/12/2012.
+4. Durante o ano de 2013:
+4.1 SMP:
+a) Descumprimento das alíneas b e c do inciso II, §2º, do art. 13; inciso II, §2º do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011;
+b) Descumprimento do inciso II, §2º do art. 17 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011;
+c) Descumprimento da alínea a, inciso II, §2º do art. 18 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011;
+d) Descumprimento da alínea a, inciso II, §2º do art. 19 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011;
+e) Descumprimento da alínea d, inciso II, §2º do art. 20 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011;
+f) Descumprimento da alíneas a e d, inciso II, §2º do art. 21 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal – RGQ-SMP, aprovado pela Resolução nº 575, de 28/10/2011.
+Em 16/05/2019 (SEI nºs 4102414, 4104766 e 4152511) e 20/05/2019 (SEI nºs 4167375 e 4167376), o Grupo Claro/Embratel foi notificado sobre a instauração deste Pado e do prazo para apresentação de defesa, nos termos do Ofício nº 255/2019/COQL/SCO-ANATEL (SEI nº 4066142).
+A Defesa Administrativa da Claro (SEI nº 4167280) foi protocolizada no dia 20/05/2019, como atesta o Recibo Eletrônico de Protocolo de SEI nº 4167290.
+No dia 24/05/2019 (SEI nº 4184745), a Requerente apresentou a Petição Juntada Evidências (SEI nº 4184736), com informações adicionais à sua defesa.
+Por meio do Ofício nº 449/2019/COQL/SCO-ANATEL (SEI nº 4356330), informou-se à Prestadora sobre a anexação aos autos de todos os documentos que deram ensejo à sua instauração e que, por tal motivo, o prazo de defesa foi reaberto.
+De acordo com as Certidões de Intimação Cumpridas de SEI nºs 4377938, 4379503, 4415670, 4424736 e 4424737, a Recorrente foi notificada entre os dias 12 e 24/07/2019 do novo prazo, tendo reapresentado sua defesa (SEI nº 4437695) em 29/07/2019 (SEI nº 4437697).
+Por meio da Certidão de SEI nº 4920099, em 21/11/2019, por não haver dúvida processual ou necessidade de realização de diligências para averiguar o descumprimento de obrigações relatado nos autos, declarou-se encerrada a instrução processual.
+A Prestadora foi notificada acerca do fim da instrução e para apresentação de alegações finais nos dias 22/11/2019 (SEI nº 4932921), 27/11/2019 (SEI nº 4954114), 06/12/2019 (SEI nºs 4998931, 4998932 e 4998933), , nos termos do Ofício nº 951/2019/COQL/SCO-ANATEL (SEI nº 4920101).
+No dia 29/11/2019 (SEI nº 4964448), protocolizou-se a petição Alegações Finais (SEI nº 4964446).
+A área técnica analisou as razões de defesa e de alegações finais e, de acordo com o constante no Informe nº 82/2020/COQL/SCO (5244154), sugeriu a aplicação de multa no valor de R$15.598.112,13 (quinze milhões, quinhentos e noventa e oito mil, cento e doze reais e treze centavos) em razão das infrações verificadas, bem como o envio dos autos à d. Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), em observância ao disposto no artigo 7º, VI, e, da Portaria nº 642, de 26 de julho de 2013.
+A PFE-Anatel apresentou sua análise e recomendações por meio do Parecer nº 170/2021/PFE-ANATEL/PGF/AGU (SEI nº 6700557), as quais foram examinadas pela área técnica nos termos do Informe nº 177/2020/COQL/SCO (SEI nº 8411271), de 13/05/2022, onde se entendeu por cumpridos os itens "ii", "iv" e "v" do Despacho nº 1.063/2014-COQL/SCO e se sugeriu a aplicação de advertência e multa no valor de R$ 15.617.033,46 (quinze milhões, seiscentos e dezessete mil, e trinta e três reais e quarenta e seis centavos), e, por fim, a análise de viabilidade de aplicação alternativa de sanção de obrigação de fazer, em documento apartado.
+Por meio do Informe nº 180/2022/COQL/SCO (8440127), de 13/05/2022, fez-se a análise sobre a viabilidade de aplicação alternativa de sanção de obrigação de fazer, propondo-se, ao final, a aplicação das penas de advertência e multa ou, caso adotada a obrigação de fazer, a ampliação da cobertura móvel 4G em localidades ainda desprovidas dessa tecnologia e que não sejam objeto de outros instrumentos regulatórios no intuito de provê-la.
+A PFE-Anatel se manifestou por meio do Parecer nº 204/2022/PFE-ANATEL/PGF/AGU - Cópia (8440743), e fez recomendações à área técnica.
+Em 13/05/2022, o SCO exarou sua decisão de acordo com o constante no Despacho Decisório nº 101/2022/COQL/SCO (8440133), aplicando sanção de advertência e multa no valor de R$ 15.617.033,46 (quinze milhões, seiscentos e dezessete mil, e trinta e três reais e quarenta e seis centavos), ou, alternativamente, a pena de obrigação de fazer, nos termos constantes da referida decisão.
+A prestadora foi comunicada da decisão em 20/05/2022 (SEI nº 8499358), por meio do Ofício nº 282/2022/COQL/SCO - ANATEL (8440137), bem como acerca do prazo para recorrer.
+No dia 23/05/2022 foi protocolizado pedido de vistas, cujo atendimento se deu em 02/06/2022, conforme documento de SEI nº 8518305.
+Em 30/06/2022, por meio de Certidão de SEI nº 8542253, a Gerência de Controle de Obrigações de Direitos dos Consumidores (CODI) instaurou o Procedimento de Acompanhamento e Controle - PAC nº 53500.025685/2022-46, para acompanhamento dos ressarcimentos devidos pela Prestadora identificados neste Pado.
+A prestadora protocolizou no dia 03/06/2022 (SEI nº 8574712), seu Recurso Administrativo (SEI nº 8574711).
+No dia 15/07/2022 (SEI nº 8819058), a Claro apresentou petição complementar (SEI nº 8819057), alegando que, em análise mais apurada, identificou supostos equívocos no cálculo da multa.
+De acordo com a Certidão de SEI nº 9383108), de 01/11/2022, informou-se sobre a atribuição de efeito suspensivo ao Recurso Administrativo (SEI nº 8574711), quanto à sanção de multa aplicada.
+Em 08/11/2023, o recurso foi analisado por meio do Informe nº 464/2023/CODI/SCO (11109565), e, por se entender pela possibilidade de agravamento da pena de multa aplicada para o valor total de R$ 23.151.049,79 (vinte e três milhões, cento e cinquenta e um mil, quarenta e nove reais e setenta e nove centavos), propôs-se negar provimento ao recurso, revisar de ofício a decisão e intimar a Recorrente para apresentar suas alegações.
+No dia 24/11/2023, a recorrente foi notificada (SEI nº 11030800) da possibilidade de agravamento e do prazo para se manifestar, o que ocorreu em 11/12/2023 (SEI nº 11256111), por meio do protocolo de sua Petição Resposta a Ofício de SEI nº 11256106.
+A área técnica fez a análise das alegações da Prestadora sobre a possibilidade de agravamento da sanção aplicada por meio do Informe nº 202/2023/CODI/SCO (12179721), de 27/06/2023, e encaminhou os autos para manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel).
+A PFE-Anatel emitiu suas considerações nos termos do Parecer nº 333/2024/PFE-ANATEL/PGF/AGU (SEI nº 12276376), de 12/07/2024, onde concluiu pela possibilidade do reformatio in pejus proposto.
+Por meio do Informe nº 239/2024/CODI/SCO (12325849), de 29/08/2024, a área técnica enviou os autos para análise do Conselho Diretor, sugerindo conhecer e negar provimento ao recurso, bem como a aplicação das sanções de advertência e multa no valor total de R$ 23.151.049,79 (vinte e três milhões, cento e cinquenta e um mil, quarenta e nove reais e setenta e nove centavos).
+O SCO decidiu conhecer e encaminhar os autos para análise e deliberação do Conselho Diretor, em 29/08/2024, conforme o Despacho Decisório nº 136/2024/CODI/SCO (SEI nº 12326723).
+Em 29/08/2024 os autos foram encaminhados ao Superintendente Executivo (SUE), para posterior envio ao Conselho Diretor, nos termos da Matéria para Apreciação do Conselho Diretor (MACD) nº 649/2024 (SEI nº 12326761).
+Na RCD 940, de 13/02/2025, foi concedida prorrogação de relatoria por 120 (cento e vinte) dias, nos termos da Análise nº 9/2025/DD (SEI nº 13216659).
+ O processo foi distribuído para minha relatoria em 06/05/2025.
+Em 23/06/2025, a Interessada protocolou pedido de sobrestamento do processo (SEI nº 13883350), em vista da instauração de procedimento de busca de solução consensual junto à Câmara de Mediação e Conciliação da Administração Federal (CCAF).
+É o relatório.
+DA ANÁLISE
+Preliminarmente, sem adentrar ao mérito do presente PADO, cabe analisar o pedido de sobrestamento apresentado pela Interessada. 
+A Claro informa que foi instaurado junto à Câmara de Mediação e Conciliação da Administração Federal (CCAF) o Processo nº 00688.011254/2023-76, para resolução de determinadas contendas entre Anatel e a Claro acerca da concessão.
+A solução consensual tem o potencial de reduzir os litígios já iniciados, formalizados e em curso na esfera judicial e administrativa. A incerteza quanto ao desfecho desses litígios pode tornar a busca por uma solução compromissória mais vantajosa para a União, pois reduz os riscos judiciais e passivos desfavoráveis.
+O Conselho Diretor, em várias e recentes decisões tem priorizado a solução consensual como ferramenta para resolução dos impasses envolvendo a concessão, e de modo a não correr o risco de impedir ou impactar uma solução negociada com as concessionárias. 
+Nesse sentido, de modo a não correr o risco de impedir ou impactar uma solução negociada entre os atores envolvidos, considero conveniente e oportuno sobrestar a tramitação dos presentes autos até que finde o processo de negociação com a concessionária Claro, ou antes disso, caso a Anatel entenda por conveniente e oportuno.
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por sobrestar a tramitação dos presentes autos até a conclusão do processo de solução consensual com a concessionária Claro S.A. ou, antes disso, caso a Anatel entenda conveniente e oportuno.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 29/07/2025, às 09:07, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 13966647 e o código CRC 1A0D82A7.
+ | 
+Referência: Processo nº 53500.015302/2018-45 | 
+SEI nº 13966647 |

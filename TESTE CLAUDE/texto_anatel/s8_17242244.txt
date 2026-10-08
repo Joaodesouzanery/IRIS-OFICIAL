@@ -1,0 +1,51 @@
+SEI/ANATEL - 15414291 - Acórdão
+Boletim de Serviço Eletrônico em 01/04/2026
+DOU de 01/04/2026, seção 1, página 61
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 86, de 30 de março de 2026
+Processo nº 53500.016193/2026-93
+Recorrente/Interessado: TIM S.A., TELEFÔNICA BRASIL S.A., PINHEIRO NETO ADVOGADOS, TELCOMP - ASSOCIAÇÃO BRASILEIRA DAS PRESTADORAS DE SERVIÇOS DE TELECOMUNICAÇÕES COMPETITIVAS
+CNPJ nº 02.421.421/0001-11, nº 02.558.157/0001-62, nº 60.613.478/0001-19 e nº 03.611.622/0001-44 
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 78, de 30 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. IMPUGNAÇÕES AO EDITAL DE LICITAÇÃO. RADIOFREQUÊNCIAS NA FAIXA DE 700 MHZ. ACOLHIMENTO PARCIAL. RETIFICAÇÃO DE DISPOSITIVOS. DEMAIS IMPUGNAÇÕES REJEITADAS.
+I. CASO EM EXAME
+1. Impugnações ao Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL e seus anexos, apresentadas por TELCOMP, PINHEIRO NETO ADVOGADOS, TELEFÔNICA BRASIL S.A. e TIM S.A., relativas à autorização de uso de radiofrequências na faixa de 700 MHz, tratando de:
+a) exigência de unificação de autorizações do Serviço Móvel Pessoal - SMP (item 1.6 do Edital);
+b) pedido de efeito suspensivo (item 3.2 do Edital);
+c) obrigatoriedade de remanejamento de radiofrequências (item 4.7 do Edital);
+d) condições de participação (itens 1.1 e 1.2 do Anexo III);
+e) prazos para cumprimento dos compromissos de abrangência (item 3.1 do Anexo IV-A);
+f) vedação ao compartilhamento e à exigência de rede própria (itens 2.2 e 3.5.2 do Anexo IV-A);
+g) condições e preços para prorrogação do direito de uso de radiofrequências (Cláusula 3.2 do Anexo IX);
+h) hipóteses de indeferimento de prorrogação (Cláusula 3.4 do Anexo IX);
+i) prazo adicional para impugnação do Manual de Garantias (Anexo XI); e,
+j) substituição prévia de localidades e rodovias já atendidas (Anexos XII, XII-A e XIII).
+II. QUESTÃO EM DISCUSSÃO
+1. Saber se as Impugnações apresentadas devem ser acolhidas, com consequente alteração dos dispositivos do Edital e seus anexos, ou rejeitadas, mantendo-se a redação original.
+2. Saber se há justificativa para conferência de prazo adicional para a realização das sessões públicas da licitação ou para a aplicação do disposto no item 3.6 do Edital em caso de impacto na preparação dos Documentos de Identificação, de Regularidade Fiscal ou Propostas de Preço.
+III. RAZÕES DE DECIDIR
+1. As Impugnações foram tempestivas e os representantes das impugnantes demonstraram legitimidade.
+2. A supressão da exigência de unificação de autorizações do SMP (item 1.6 do Edital) decorre da revogação do Plano Geral de Autorizações do SMP - PGA-SMP, não havendo mais vedação à sobreposição de autorizações no âmbito de um mesmo grupo econômico. Tal circunstância, contudo, não justifica a concessão de prazo adicional.
+3. É adequado o ajuste no item 1.1 do Anexo III, ao limitar a prioridade das prestadoras regionais detentoras de espectro de 3,5 GHz à mesma área geográfica. A medida preserva a complementaridade técnica entre as faixas e atende à política pública estabelecida. Contudo, não se justifica a concessão de prazo adicional.
+4. As demais Impugnações não merecem acolhimento, uma vez que a ausência de efeito suspensivo (item 3.2 do Edital), a obrigatoriedade de remanejamento de radiofrequências (item 4.7 do Edital), os prazos para cumprimento dos compromissos (item 3.1 do Anexo IV-A), a vedação ao compartilhamento e exigência de rede própria (itens 2.2 e 3.5.2 do Anexo IV-A), as condições e preços para prorrogação do direito de uso (Cláusula 3.2 do Anexo IX), as hipóteses de indeferimento de prorrogação (Cláusula 3.4 do Anexo IX), a desnecessidade de prazo adicional com relação ao Manual de Garantias (Anexo XI) e a regra editalícia para substituição prévia de localidades e rodovias já atendidas (Anexos XII, XII-A e XIII) estão em conformidade com a legislação, a política pública setorial e os princípios licitatórios.
+IV. DISPOSITIVO E TESE
+Pedido parcialmente procedente. Retificação do Edital para supressão do item 1.6 e ajuste do item 1.1 do Anexo III, conforme proposto por PINHEIRO NETO ADVOGADOS. Não haverá concessão de prazo adicional ao Edital. Demais Impugnações rejeitadas.
+Tese de julgamento: "1. Acolhe-se parcialmente as Impugnações para suprimir o item 1.6 do Edital e ajustar o item 1.1 do Anexo III, limitando a prioridade para prestadoras regionais com espectro de 3,5 GHz à mesma área geográfica. 2. Não se concede prazo adicional para a realização das sessões públicas da licitação nem para aplicação do disposto no item 3.6 do Edital. 3. Mantém-se a redação dos demais dispositivos do Edital e seus anexos, rejeitando as demais Impugnações."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 13.879/2019; Lei nº 9.784/1999; Lei nº 14.600/2023; Decreto-lei nº 4.657/1942; Decreto nº 9.612/2018; Portaria MCom nº 18.902/2025; Resolução nº 65/1998; Resolução nº 703/2018; Resolução nº 720/2020.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 28/2026/NP (SEI nº 15377107), integrante deste acórdão:
+a) conhecer das Impugnações apresentadas por ASSOCIAÇÃO BRASILEIRA DAS PRESTADORAS DE SERVIÇOS DE TELECOMUNICAÇÕES COMPETITIVAS - TELCOMP ("TelComp"), SEI nº 15221831, PINHEIRO NETO ADVOGADOS ("Pinheiro Neto"), SEI nº 15221828, TELEFÔNICA BRASIL S.A. ("Telefônica"), SEI nº 15221769, e TIM S.A. ("Tim"), SEI nº 15250760, uma vez cumpridos os requisitos relativos à tempestividade e à legitimidade;
+b) acolher parcialmente a Impugnação apresentada por PINHEIRO NETO ADVOGADOS em face do item 1.6 do Edital, para promover a retificação do Edital mediante supressão do referido item, sem necessidade da concessão de prazo adicional para a realização das sessões públicas da licitação nem de aplicação do disposto no item 3.6 do Edital, uma vez que a retificação não impacta a preparação dos Documentos de Identificação e de Regularidade Fiscal nem das Propostas de Preço, limitando-se a refletir o próprio conteúdo do Edital;
+c) acolher parcialmente a Impugnação apresentada por PINHEIRO NETO ADVOGADOS em face do item 1.1 do Anexo III do Edital, para promover a retificação do Edital mediante o estabelecimento de nova redação para o referido item, abaixo elencada, sem necessidade da conferência de prazo adicional para a realização das sessões públicas da licitação nem de aplicação do disposto no item 3.6 do Edital, uma vez que a retificação não impacta a preparação dos Documentos de Identificação e de Regularidade Fiscal nem das Propostas de Preço, limitando-se a refletir as premissas estabelecidas na Portaria MCOM nº 18.902, de 10 de julho de 2025:
+"1.1. Para os Lotes A1 a A5, somente se admite a participação de Proponente, suas controladas, controladoras ou coligadas que detenham, na área do respectivo lote, autorização de uso de radiofrequências em caráter primário em nível regional na faixa de 3.300 MHz a 3.700 MHz, vedando-se a constituição de consórcio que não envolva exclusivamente autorizadas em nível regional na faixa e a participação de autorizadas em caráter primário em nível nacional nessa faixa."
+d) não acolher as demais Impugnações apresentadas por ASSOCIAÇÃO BRASILEIRA DAS PRESTADORAS DE SERVIÇOS DE TELECOMUNICAÇÕES COMPETITIVAS - TELCOMP, PINHEIRO NETO ADVOGADOS, TELEFÔNICA BRASIL S.A. e TIM S.A. em face dos itens 3.2, 4.7, 8.3.1, 8.3.2 e 8.4.1 do corpo do Edital e itens 1.2 do Anexo III, itens 2.2, 2.3, 3.1 e 3.5.2 do Anexo IV-A, Cláusulas 3.2 e 3.4 do Anexo IX, dos Anexos XI, XII e XIII do Edital, mantendo-se a redação dos dispositivos.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/03/2026, às 21:25, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15414291 e o código CRC 8A8D1568.
+ | 
+Referência: Processo nº 53500.016193/2026-93 | 
+SEI nº 15414291 |

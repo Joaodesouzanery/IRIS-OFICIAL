@@ -1,0 +1,205 @@
+SEI/ANATEL - 16110686 - Análise
+Boletim de Serviço Eletrônico em 25/08/2026
+Análise nº 76/2026/NP
+Processo nº 53500.002728/2017-58
+Interessado: Centrais Eletricas do Norte do Brasil S.A.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência do lançamento de créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) no exercício de 2015.
+EMENTA.
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES. FUST. EXERCÍCIO DE 2015. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso Administrativo interposto contra decisão que reconheceu a procedência de lançamento de ofício de créditos tributários referentes à contribuição ao Fust no exercício de 2015 e da multa de ofício correspondente.
+Fato relevante. A recorrente sustentou que a Anatel não deduziu o ICMS relativo ao mês de dezembro de 2015 da base de cálculo do Fust. Alegou que a receita foi contabilizada em dezembro de 2015 e que o ICMS foi recolhido na mesma competência, embora as notas fiscais tenham sido emitidas apenas em março de 2016 por questões operacionais.
+As decisões anteriores. A fiscalização apurou diferença no recolhimento do Fust referente a dezembro de 2015 e aplicou multa de ofício de 75%. Após diligência complementar, a área técnica manteve a apuração original. A SCO reconheceu a procedência dos lançamentos e, em juízo de admissibilidade, conheceu do recurso e o encaminhou ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se as notas fiscais emitidas em março de 2016 e os demais documentos apresentados pela recorrente comprovam o recolhimento do ICMS em dezembro de 2015 para fins de exclusão desse valor da base de cálculo do Fust; e (ii) saber se devem ser mantidos o lançamento de ofício da contribuição ao Fust e a multa de ofício aplicada por declaração inexata.
+III. RAZÕES DE DECIDIR
+O recurso é admissível. Foi interposto tempestivamente. A recorrente tem interesse recursal e está regularmente representada.
+A competência para julgamento do mérito recursal é do Conselho Diretor, porque a autoridade recorrida conheceu do recurso e não se retratou.
+A oitiva da PFE-Anatel é dispensável porque se trata de recurso voluntário com valor nominal inferior ao limite de alçada e não há recurso de ofício.
+A exclusão do ICMS da base de cálculo do Fust exige comprovação idônea e contemporânea nos registros contábeis do exercício analisado.
+As notas fiscais apresentadas pela recorrente foram emitidas em março de 2016. Esses documentos não coincidem com a escrituração contábil regular de 2015 validada pela fiscalização.
+Os balancetes contábeis mensais de 2015 e a DRE de 2015 não registram valor algum de ICMS recolhido.
+A própria recorrente informou, em resposta ao requerimento de informações da fiscalização, que não houve tributação de ICMS nos períodos de 2014 e 2015. Por isso, não apresentou os arquivos de Escrituração Fiscal Digital correspondentes.
+A declaração no sistema SFUST, com abatimento de ICMS apenas em dezembro de 2015, sem lastro na contabilidade do exercício, não é suficiente para alterar a base de cálculo apurada.
+A análise técnica constatou inconsistências nas notas fiscais apresentadas, inclusive quanto ao período de prestação do serviço, pois parte delas indica prestação em março de 2016.
+Não houve erro material na apuração. A diferença lançada decorre da divergência entre o valor declarado pela recorrente e o valor comprovado nos registros contábeis validados pela fiscalização.
+A diligência complementar confirmou a apuração original. 
+A multa de ofício de 75% é cabível porque houve declaração inexata quanto à contribuição devida.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo não provido.
+Tese de julgamento: "1. A exclusão do ICMS da base de cálculo da contribuição ao Fust depende de comprovação contábil e fiscal idônea no exercício de referência. 2. Notas fiscais emitidas em exercício posterior, sem correspondência com os balancetes e a DRE do período fiscalizado, não bastam para retificar a apuração do tributo. 3. É legítima a manutenção do lançamento de ofício da contribuição ao Fust e da multa de ofício quando a diferença apurada decorre de declaração inexata não confirmada pela escrituração contábil regular."
+Dispositivos relevantes citados: CF/1988; Lei nº 9.784/1999; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.430/1996, art. 44, I; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, arts. 115 e 116; Portaria nº 642/2013, art. 5º, IV, "a" e "b"; Portaria nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal.
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, Lei de Processo Administrativo (LPA).
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+Decreto nº 70.235, de 6 de março de 1972, Processo Administrativo Fiscal (PAF).
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA)
+Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Cuida-se de Recurso Administrativo interposto por AXIA Energia Norte S.A., CNPJ nº 00.357.038/0001-16, nova razão social de Centrais Elétricas do Norte do Brasil S.A. (Eletronorte), em face do Despacho Decisório nº 648/2025/CODI/SCO, que reconheceu a procedência dos lançamentos referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (Fust) no exercício de 2015.
+Em 7 de março de 2017, a empresa apresentou seus dados contábeis (SEI nº 1546750 e 1546774) dos exercícios de 2014 e 2015, em resposta ao Requerimento de Informações (SEI nº 1164870) enviado pela Agência.
+Analisaram-se os dados de 2014 no Relatório de Fiscalização 0128/2017/GR07 (1692785), que calculou os valores devidos ao Fust sem apontar irregularidades no referido exercício.
+De maneira similar, os dados de 2015 foram analisados no Relatório de Fiscalização 0135/2017/GR07 (1736551). Observou-se que, no exercício em questão, foi apurado valor devido, o que justificou a emissão da Notificação de Lançamento nº 001-009595/2017/ AFF0-Anatel (SEI nº 1952252), com o referido montante, acrescido de multa de ofício por declaração inexata. 
+A interessada apresentou Impugnação (SEI nª 1940846) contra a referida notificação, alegando que o valor do ICMS relativo ao mês de dezembro de 2015 não foi deduzido ao efetuar o cálculo da contribuição devida ao Fust.
+Após diligência efetuada por meio do Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (SEI nº 8562142), reconfirmou-se pelo Informe nº 852/2025/CODI/SCO (SEI nº 14560549) que o valor da contribuição devida ao Fust em 2015 permaneceu inalterado.
+Assim, a Superintendência de Controle de Obrigações (SCO) concluiu pela procedência dos lançamentos efetuados, compostos do montante ainda devido ao Fust no exercício de 2015 e da multa de ofício aplicada:
+Despacho Decisório nº 648/2025/CODI/SCO (SEI nº 14560451)
+"RECONHECER A PROCEDÊNCIA dos lançamentos de ofício dos créditos tributários referentes à contribuição para o Fust, para o exercício de 2015, indicados na Notificação nº 001-009595/2017/AFFO-ANATEL (1952252), nos termos do art. 6º, IV, da Lei nº 9.998/2000;
+RECONHECER A PROCEDÊNCIA dos lançamentos referentes à incidência de multa de ofício, para o exercício de 2015, indicados na Notificação nº 001-009595/2017/AFFO-ANATEL (1952252), em conformidade com o art. 44, I, da Lei nº 9.430/1996;"
+Em 15 de janeiro de 2026, a empresa interpôs Recurso Administrativo (SEI nº 15046806) em face do Despacho em questão, reiterando o mesmo argumento de ausência de desconto do valor do ICMS relativo ao mês de dezembro de 2015 no cálculo da contribuição devida ao Fust.
+Em 31 de julho de 2026, a SCO conheceu do Recurso Administrativo (SEI nº 15414158), interposto pela prestadora, e encaminhou os autos a este Colegiado para julgamento de mérito.
+Com a Matéria para Apreciação do Conselho Diretor 259 (SEI nº 15414162), os autos foram encaminhados a este Colegiado para apreciação (SEI nº 16088624).
+Em 10 de agosto de 2026, sorteou-se o feito à minha relatoria, conforme certidão de distribuição (SEI nº 16097545).
+É o relatório.
+fundamentação
+A fundamentação da presente Análise encontra-se dividida em 4 (quatro) partes. Na primeira, avalia-se a regularidade processual, a competência do Conselho Diretor, a admissibilidade do Recurso Administrativo e a necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel). Na segunda, procede-se à análise das alegações apresentadas pela recorrente. Na terceira, reconfirmam-se os valores e a procedência dos lançamentos efetuados. Finalmente, verifica-se a conformidade desta Análise com os objetivos regulatórios da Anatel.
+I - Da regularidade processual
+A instauração e a instrução deste processo atenderam à finalidade a que se destinam, em observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+I.1 - Da competência do Conselho Diretor
+O art. 115 do Regimento Interno da Anatel (RIA) dispõe que o juízo de conhecimento recursal compete à própria autoridade que proferiu a decisão:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+"Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116.
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+§ 2º Caberá recurso contra decisão que não conhecer do recurso administrativo, na hipótese prevista na alínea “a” do parágrafo anterior, que deverá ser encaminhado à autoridade hierarquicamente superior à que proferiu a decisão.
+§ 3º A reforma da decisão sobre admissibilidade do recurso administrativo ensejará, na mesma decisão, a deliberação sobre o mérito do recurso originalmente interposto.
+§ 4º Salvo disposição em contrário, a autoridade imediatamente superior àquela que proferiu a decisão será competente para analisar o pedido de concessão de efeito suspensivo, quando houver.
+§ 5º Cabe ao Presidente do Conselho Diretor decidir sobre pedido de efeito suspensivo, nos recursos administrativos cuja decisão compete ao Conselho Diretor, observados os termos do art. 123.
+§ 6º Será de 10 (dez) dias o prazo para interposição de recurso administrativo, contado a partir da intimação do interessado.
+§ 7º O exercício do juízo de retratação a que se refere o § 1º ensejará a expedição de um novo Despacho Decisório, o qual opera efeito substitutivo em relação ao Despacho Decisório recorrido, devendo o interessado ser intimado da nova decisão.
+§ 8º Em caso de retratação parcial, a decisão a que se refere o § 7º deve explicitar a parte retratada, bem como a ratificação dos demais termos da decisão recorrida.
+§ 9º Os recursos referentes a licitações e contratos administrativos observam a legislação específica da matéria." (Grifou-se)
+Nos presentes autos, o Despacho Decisório nº 170/2026/SCO, de 31 de julho de 2026 (SEI nº 15414158), emitido pela Superintendente de Controle de Obrigações, conheceu do Recurso Administrativo interposto. Considerando que não houve retratação da decisão recorrida, a competência para a avaliação do mérito recursal cabe ao Conselho Diretor.
+I.2 - Da admissibilidade
+Cientificou-se a recorrente do teor do Despacho Decisório nº 648/2025/CODI/SCO (SEI nº 14560451) por meio do Ofício nº 927/2025/CODI/SCO-ANATEL (SEI nº 14560441). A intimação foi efetivada em 16 de dezembro de 2025, conforme certidão de cumprimento (SEI nº 14929312).
+O prazo para interposição de Recurso Administrativo no presente caso era de 30 (trinta) dias, nos termos do art. 33 do Decreto nº 70.235, de 1972, e da Portaria Anatel nº 1355, de 2019:
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+"Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão."
+......................
+Portaria Anatel nº 1355, de 26 de julho de 2019 - Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) 
+"7.1.1. O prazo para apresentação de recurso administrativo é de 30 (trinta) dias. (Redação dada pela Portaria nº 1751, de 3 de dezembro de 2020)"
+A contagem do prazo recursal iniciou-se no primeiro dia útil subsequente à notificação, dia 17 de dezembro (quinta-feira), encerrando-se em 15 de janeiro de 2026 (quinta-feira). O Recurso Administrativo (SEI nº 15046806) foi protocolizado tempestivamente, no dia 15 de janeiro de 2026.
+Além disso, a Recorrente possui interesse na reforma da decisão proferida pela Anatel, está regularmente representada e não há contrariedade a entendimentos fixados em Súmula pela Agência.
+Assim, estão presentes os pressupostos de admissibilidade recursal previstos no art. 116 do RIA.
+I.3 - Da dispensa de oitiva da PFE-Anatel
+Por se tratar de recurso voluntário com valor nominal dos lançamentos inferior ao limite de alçada e não se tratar de recurso de ofício, é dispensável o envio dos autos para apreciação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), nos termos do art. 5º, IV, "a" e "b", da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017.
+Portaria nº 642, de 26 de julho de 2013
+"Art. 5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+[...]
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)"
+II - Das alegações da recorrente
+Conforme relatado, a recorrente argumentou em sua impugnação que teria ocorrido omissão do abatimento do valor do ICMS no mês de dezembro de 2015. Observou-se que a diferença cobrada pela Anatel corresponderia exatamente a 1% do referido valor.
+Impugnação (SEI nº 1940846)
+"Quanto ao mês de dezembro/2015, verifica-se que a Anatel utilizou por base de cálculo toda a receita declarada no mês de dezembro de 2015, com aplicação da dedução da PIS e do COFINS, mas não observou que sobre os serviços prestados à TELEBRAS, há incidência de ICMS. A própria tabela, elaborada pela AFFO da ANATEL, demonstra que a incidência de ICMS não foi considerada para cálculo da contribuição para o FUST, informa, também, que o valor total devido para o FUST, no mês de dezembro de 2015, seria [Item 1 do Apartado Sigiloso SEI nº 16167575]. Diversamente, o quadro abaixo demonstra o valor correto devido para a contribuição do FUST, cuja contabilização ocorreu no mês de dezembro de 2015:
+[Item 2 do Apartado Sigiloso SEI nº 16167575].
+Observa-se que o valor autuado corresponde exatamente a 1% sobre o valor do ICMS, o qual, por força da legislação vigente, deve
+ser excluído da base de cálculo do FUST."
+Em suporte de sua alegação, a interessada apresentou as notas fiscais nas quais figuram os valores de ICMS recolhidos. Explicou que, em razão de problemas técnicos e operacionais, os referidos documentos só foram emitidos em março de 2016. A receita decorrente, porém, foi contabilizada em dezembro de 2015 e o ICMS teria sido recolhido nessa mesma competência.
+Impugnação (SEI nº 1940846)
+"Inclusive, o valor do ICMS devido pela prestação de serviços de comunicação da Eletronorte, está destacado nas notas fiscais em anexo, cuja emissão ocorreu apenas em março/2016, tendo em vista a ocorrência de problemas técnicos operacionais enfrentados pela Eletronorte. Frise-se, contudo, que a receita decorrente dessas notas fiscais foi contabilizada no mês de dezembro de 2015 e o respectivo tributo recolhido nesta competência (dezembro/2015)"
+Assim, a empresa pediu o cancelamento da Notificação de Lançamento e o arquivamento do processo, entendendo que, descontado o ICMS, o valor total por ela recolhido ao Fust no exercício de 2015 estaria correto.
+A fiscalização da Agência constatou que as notas fiscais em questão, emitidas em março de 2016, destacam o valor do ICMS e indicam sua competência, isto é, quando a prestação do Serviço de Comunicação Multimídia (SCM) ocorreu. Observa-se que algumas das notas fiscais indicam que a prestação do SCM ocorreu no período compreendido entre janeiro a dezembro de 2015, enquanto outras indicam que a prestação do referido serviço ocorreu em março de 2016.
+Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142) 
+"8.7. Com intuito de subsidiar suas alegações a prestadora disponibilizou notas fiscais emitidas no ano de 2016, relacionadas ao serviços prestados durante o exercício de 2015, conforme SEI nº 1940846 (págs 14 à 35). 
+8.8. Da análise das notas fiscais de 2016, SEI nº 1940846 (págs 14 à 35): 
+8.8.1. Conforme planilha de análise de notas fiscais SEI nº 8585242, verifica-se que todas as notas fiscais apresentadas foram emitidas no mês de março de 2016. Para as notas fiscais emitidas em Rio Branco-AC, Bélem-PA e Cuiabá-MT, observou-se que a descrição do período de prestação do SCM é de janeiro à dezembro de 2015. Entretanto, para as notas fiscais imitidas em Porto Velho-RO e São Luis-MA, observou que a descrição do período de prestação do SCM é de março de 2016. 
+8.8.2. O valores de ICMS descritos em todas as notas apresentadas totalizam [Item 3 do Apartado Sigiloso SEI nº 16167575]."
+Assim, embora a recorrente tenha declarado o ICMS relativo a dezembro de 2015 no sistema de acolhimento da declaração do Fust (SFUST) da Agência (SEI nº 8600684), observa-se que esse valor não consta da DRE de 2015 nem dos balancetes de 2015, documentos validados pela fiscalização e utilizados na apuração do tributo.
+Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142) 
+8.10. Verificou-se, também, que a declaração da prestadora no sistema de acolhimento da declaração do FUST - SFUST, SEI nº 8600684, não apresentou valores de ICMS no período de janeiro à novembro de 2015. Já no mês de dezembro a prestadora declarou o abatimento de ICMS da base de cálculo no valor de [Item 4 do Apartado Sigiloso SEI nº 16167575]. 
+8.11. Observa-se que a documentação contábil de 2015, validada pela fiscalização e utilizada na apuração, não tem registro de ICMS no valor de [Item 5 do Apartado Sigiloso SEI nº 16167575] no mês de dezembro. Ou seja, as notas fiscais apresentadas em 2016 não podem substituir a realidade contábil registrada nos demonstrativos de 2015.
+8.12. Nesse diapasão, a fiscalização entende que as documentações apresentadas não se prestam a esclarecer a realidade dos fatos do exercício fiscalizado, por terem sido emitidos em exercício posterior, não sendo suficientes para justificar tal discrepância e comprovar a respectiva retificação das demonstrações contábil e fiscal do exercício em análise.
+Nessas circunstâncias, a diligência contábil efetuada recomendou manter o lançamento dos valores devidos ao Fust em 2015, considerando que a documentação contábil adicional apresentada pela prestadora (notas fiscais) não foi suficiente para justificar a alteração pretendida.
+Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142) 
+9.1.1. A documentação apresentada em sede de impugnação não foi suficiente para esclarecer a realidade dos fatos do exercício fiscalizado, por ter sido emitida em exercício posterior. Por consequência, não são suficientes para fomentar retificação da apuração inicialmente realizada pela fiscalização. 
+9.1.2. Assim sendo, a apuração dos valores devidos ao fundo, realizada por esta fiscalização, coincide com os mesmos valores já apurados pelo Relatório de Fiscalização nº 0135/2017/GR07, SEI nº 1736551, conforme planilha de Apuração/Impugnação SEI nº 8647042.
+Em sua peça recursal, a prestadora reiterou que a prestação dos serviços e o respectivo reconhecimento da receita ocorreram no mês de dezembro de 2015. Sustentou que todos os lançamentos contábeis relativos aos serviços prestados, inclusive a apuração e recolhimento do ICMS, foram devidamente realizados na competência correta. As notas fiscais teriam sido emitidas em 2016 por questões operacionais, justificadas e plenamente documentadas. 
+Recurso Administrativo (SEI nº 15046806)
+"a) Da obrigatoriedade de exclusão do ICMS da base do FUST
+A ora Recorrente demonstrou, com notas fiscais, comprovantes e demonstrativos contábeis:
+a) Que há ICMS devido e destacado nas notas fiscais relativas aos serviços prestados à Telebras;
+b) Que os valores de ICMS perfazem [Item 6 do Apartado Sigiloso SEI nº 16167575], que deveriam ter sido integralmente excluídos da base de cálculo do FUST de dezembro/2015; e
+c) Que a fiscalização simplesmente não considerou a exclusão do ICMS da base do FUST
+b) Da validade das notas fiscais emitidas em março de 2016
+A decisão recorrida fundamenta-se, de maneira equivocada, na premissa de que as notas fiscais emitidas em março de 2016 não poderiam ser utilizadas para demonstrar a efetiva prestação de serviços e a consequente incidência do ICMS referente às operações ocorridas em dezembro de 2015, sob o argumento de que tais documentos “não substituiriam a contabilidade de 2015”. Essa conclusão, entretanto, não se sustenta, nem em termos jurídicos nem sob o ponto de vista contábil.
+É fundamental destacar que as notas fiscais emitidas posteriormente não têm caráter substitutivo da escrituração contábil, mas desempenham função meramente instrumental, refletindo operações que já haviam sido registradas e reconhecidas na competência correta. A emissão tardia não altera a ocorrência do fato gerador nem sua temporalidade, sobretudo quando há comprovação robusta de que a prestação dos serviços e o respectivo reconhecimento da receita ocorreram no mês de dezembro de 2015. No caso concreto, como amplamente demonstrado, todos os lançamentos contábeis relativos aos serviços prestados, inclusive a apuração e recolhimento do ICMS, foram devidamente realizados na competência correta, sendo a emissão das notas em 2016 fruto de questões operacionais justificadas e plenamente documentadas. 
+A legislação tributária aplicável ao FUST não vincula a exclusão do ICMS da base de cálculo à data da emissão da nota, mas à efetiva ocorrência da prestação do serviço e à incidência do imposto. O ICMS compõe o preço do serviço e integra a operação no momento em que a comunicação é prestada, ainda que a materialização documental, a nota fiscal, seja emitida posteriormente.
+Ademais, a emissão tardia de notas é situação amplamente reconhecida pela Receita Federal, que possui inúmeros precedentes administrativos afirmando que a postergação da emissão do documento fiscal não invalida, por si só, a apuração na competência original, desde que haja elementos contábeis."
+Não há dúvida de que a emissão da nota fiscal, por si só, não é o fato que determina a competência da receita. As notas fiscais apresentadas, no entanto, não demonstram que houve lançamento do ICMS no exercício de 2015, uma vez que não são compatíveis com a escrituração regular do período apresentada. Assim, concorda-se com a área técnica em que não houve comprovação contábil e fiscal idônea apta a retificar os registros do exercício.
+Informe nº 228/2026/CODI/SCO (SEI nº 15414097)
+"8.7. As alegações, contudo, não merecem acolhimento.
+8.8. Inicialmente, quanto à alegação de obrigatoriedade de exclusão do ICMS da base de cálculo do Fust, cumpre esclarecer que tal exclusão foi devidamente observada pela fiscalização sempre que comprovada nos registros contábeis do exercício analisado.
+8.9. Nos termos do art. 6º, IV, da Lei nº 9.998/2000 e do Decreto nº 3.624/2000, de fato, o ICMS deve ser excluído da base de cálculo. Contudo, essa exclusão não se opera por mera alegação do contribuinte, exigindo comprovação idônea e contemporânea nos demonstrativos contábeis.
+8.10. No caso concreto, conforme evidenciado no Relatório de Fiscalização nº 0135/2017/GR07 (1736551) e confirmado pelo Relatório nº 25/2022/GR07FI1/GR07/SFI (8562142), os registros contábeis analisados pela fiscalização não evidenciaram, de forma consistente e suficiente, o lançamento do ICMS alegado pela Recorrente no exercício de 2015. Ao contrário, os balancetes e a Demonstração do Resultado do Exercício — validados como consistentes — não refletiram os valores cuja exclusão ora se pretende. Assim, a pretensão da Recorrente implica reconhecer dedução baseada em documentos produzidos posteriormente e dissociados da escrituração regular do período, o que não se mostra juridicamente admissível sem comprovação contábil e fiscal idônea apta a retificar os registros do exercício.
+8.11. No que se refere à alegação de validade das notas fiscais emitidas em março de 2016, também não assiste razão à Recorrente. Ainda que se admita que a emissão tardia de notas fiscais possa decorrer de questões operacionais, tal circunstância não é suficiente, por si só, para alterar a realidade contábil consolidada do exercício anterior."
+Destaca-se que, em sua resposta ao item 2.1 - VIII do Requerimento de Informações (SEI nº 1164870), a própria prestadora afirmou que "não houve tributação do ICMS no período de 2014 e 2015", de forma que os arquivos eletrônicos de Escrituração Fiscal Digital (EFD - ICMS IPI) não foram apresentados.
+Carta FPT-0007/2017, de 7 de junho de 2017 (SEI nº 1546750)
+"Item 2.1 - VIII 
+''Arquivos eletrônicos com a Escrituração Fiscal Digitai (EFD - ICMS IPI), encaminhados ao Sistema Público de Escrituração Digitai (Sped), juntamente com os arquivos contendo o respectivo Recibo de Entrega de todas as UFs em que houve tributação (preferencialmente, os arquivos de cópia de segurança .sped mensais, gerados pelo programa validador da Escrituração Fiscal Digitai - EFD ICMS IPI - Validador EFD ICMS-IPI, acompanhados dos arquivos de Recibo de Entrega .REC gerados após a respectiva transmissão da escrituração)".
+Resposta: Considerando que não houve tributação do ICMS no período de 2014 e 2015, em conversa com o Senhor Firmo José de Andrade ficou acordado que não haverá necessidade de envio dos arquivos eletrônicos de Escrituração Fiscal Digital (EFD - ICMS IPI)"
+Tal como ressaltou o corpo técnico, a fiscalização não desconsiderou, de forma arbitrária, os documentos apresentados. Tais documentos foram analisados e revisados em várias instâncias, nas quais se apontaram inconsistências em relação à realidade contábil. Não se constatou erro material. Não houve violação alguma aos princípios da verdade material, da razoabilidade e da proporcionalidade.
+Informe nº 228/2026/CODI/SCO (SEI nº 15414097)
+"8.12. A apuração do Fust está vinculada ao regime de competência, mas exige coerência entre os registros contábeis, fiscais e declaratórios. No presente caso, a própria Recorrente declarou no sistema SFUST ausência de ICMS ao longo de quase todo o exercício de 2015, promovendo abatimento apenas no mês de dezembro, sem lastro correspondente na contabilidade.
+8.13. Ademais, a análise das notas fiscais demonstrou inconsistências quanto ao período de prestação dos serviços, havendo registros que sequer se referem ao exercício de 2015. Nesse contexto, os documentos apresentados não possuem força probatória suficiente para desconstituir os dados contábeis previamente validados, tampouco para justificar, sem correspondente retificação contábil validada, a alteração da base de cálculo do tributo.
+8.14. Quanto à alegação de violação aos princípios da verdade material, da razoabilidade e da proporcionalidade, verifica-se que ocorre exatamente o oposto do que sustenta a Recorrente. A Administração adotou postura diligente ao reavaliar os elementos apresentados, inclusive determinando nova análise técnica por meio de relatório complementar.
+O princípio da verdade material não autoriza a substituição da escrituração contábil regular por documentos extemporâneos e inconsistentes, tampouco permite afastar a lógica do sistema tributário baseado no lançamento por homologação. Ao contrário, exige que a realidade dos fatos seja demonstrada por meio de documentação idônea e coerente, o que não ocorreu no caso concreto.
+No tocante à alegação de erro material na apuração, também não procede. A diferença identificada decorre da inconsistência entre o valor declarado pela Recorrente e aquele efetivamente comprovado nos registros contábeis do período."
+Em vista do acima exposto, não há como acolher as alegações da recorrente sobre o suposto recolhimento de ICMS em dezembro de 2015.
+III - Dos lançamentos efetuados
+O cálculo do valor devido ao Fust tomou como base os Balancetes Contábeis Mensais de 2015 (SEI nº 1716271) apresentados, nos quais não consta registro de recolhimento de ICMS sobre a prestação do SCM naquele exercício fiscal. A equipe de fiscalização certificou-se de que os referidos balancetes estão consistentes com as receitas de SCM lançadas na Demonstração do Resultado do Exercício - DRE 2015 (SEI nº 1716355), publicadas na Seção 1, item 34.8, página 203, do Diário Oficial da União (DOU) de 15 de abril de 2016.
+Relatório de Fiscalização nº 0135/2017/GR07 (Apuração Fust, exercício 2015), SEI nº 1736551:
+"Constatou-se que os valores registrados nos Balancetes Contábeis Mensais - 2015 (SEI n° 1716271) são os mesmos valores lançados na Demonstração do Resultado do Exercício - DRE2015 (SEI n° 1716355). Consideram-se válidos, então, os dados apresentados pela prestadora.
+Para apuração e cálculo do quantitativo devido ao fundo, os valores de receitas mensais considerados foram obtidos a partir dos lançamentos das receitas de comunicação multimídia na conta “6110611062” demonstrados nos Balancetes Contábeis Mensais de 2015 (SEI n° 1716271)."
+Reproduz-se a seguir o item 34.8 da referida DRE 2015 que apresenta a receita líquida obtida com a prestação do SCM, na qual não figura recolhimento de ICMS:
+Assim, embora a recorrente tenha declarado o ICMS de dezembro de 2015 no sistema de acolhimento da declaração do Fust (SFUST) da Agência (SEI nº 8600684), observa-se que esse valor não consta da DRE de 2015, nem dos balancetes de 2015, documentos validados pela fiscalização e utilizados na apuração do tributo.
+Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142) 
+8.10. Verificou-se, também, que a declaração da prestadora no sistema de acolhimento da declaração do FUST - SFUST, SEI nº 8600684, não apresentou valores de ICMS no período de janeiro à novembro de 2015. Já no mês de dezembro a prestadora declarou o abatimento de ICMS da base de cálculo no valor de [Item 7 do Apartado Sigiloso SEI nº 16167575]. 
+8.11. Observa-se que a documentação contábil de 2015, validada pela fiscalização e utilizada na apuração, não tem registro de ICMS no valor de [Item 7 do Apartado Sigiloso SEI nº 16167575] no mês de dezembro. Ou seja, as notas fiscais apresentadas em 2016 não podem substituir a realidade contábil registrada nos demonstrativos de 2015.
+8.12. Nesse diapasão, a fiscalização entende que os documentos apresentados não se prestam a esclarecer a realidade dos fatos do exercício fiscalizado, por terem sido emitidos em exercício posterior, não sendo suficientes para justificar tal discrepância e comprovar a respectiva retificação das demonstrações contábil e fiscal do exercício em análise.
+Nessas circunstâncias, a diligência contábil efetuada manteve os valores devidos ao Fust no exercício de 2015, considerando que a documentação contabil adicional apresentada pela prestadora (notas fiscais) não foi suficiente para justificar a alteração pretendida.
+Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142) 
+9.1.1. A documentação apresentada em sede de impugnação não foi suficiente para esclarecer a realidade dos fatos do exercício fiscalizado, por terem sido emitidos em exercício posterior. Por consequência, não são suficientes para fomentar retificação da apuração inicialmente realizada pela fiscalização. 
+9.1.2. Assim sendo, a apuração dos valores devidos ao fundo, realizada por esta fiscalização, coincide com os mesmos valores já apurados pelo Relatório de Fiscalização nº 0135/2017/GR07, SEI nº 1736551, conforme planilha de Apuração/Impugnação SEI nº 8647042
+Após a referida diligência, os valores já lançados foram reconfirmados pela área técnica, conforme se detalha a seguir:
+Informe nº 852/2025/CODI/SCO (SEI nº 14560549)
+9.6. Como as alegações tecidas pela Impugnante faziam despontar a necessidade de nova diligência contábil tributária, os autos foram encaminhados à Gerência de Fiscalização (FIGF) que reanalisou os documentos contábeis, lavrando o Relatório de Fiscalização nº 25/2022/GR07FI1/GR07/SFI (8562142), em que a fiscalização concluiu pela manutenção dos valores constantes no Relatório de Fiscalização nº 0135/2017/GR07 (1736551), nos seguintes termos:
+[Item 8 do Apartado Sigiloso SEI nº 16167575]
+Fonte: Sistema Integrado de Gestão de Créditos da Anatel (Sigec)
+9.7. Dessa forma, de acordo com a tabela acima, os valores do(s) lançamento(s) de ofício realizado(s), ante a ausência ou insuficiência de recolhimento da contribuição para o Fust, em razão da falta e/ou incorreção da declaração de suas receitas perante esta Agência, totalizam [Item 9 do Apartado Sigiloso SEI nº 16167575], para o mês de dezembro de 2015.
+Em razão da declaração inexata feita pela recorrente, aplicou-se multa de ofício de 75% ao valor devido, obedecendo à disposição legal a seguir.
+Lei nº 9.430, de 27 de dezembro de 1996
+"Art. 44. Nos casos de lançamento de ofício, serão aplicadas as seguintes multas:
+I - de 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição nos casos de falta de pagamento ou recolhimento, de falta de declaração e nos de declaração inexata;"
+Dessa forma, reconfirma-se a procedência dos lançamentos dos créditos tributários referentes à contribuição para o Fust e à multa de ofício efetuados para o exercício de 2015.
+IV - Dos objetivos regulatórios
+Os Objetivos de Desenvolvimento Sustentável são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU). Esse plano busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+A referida Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015. Esse evento congregou os 193 Estados-membros da ONU, incluindo o Brasil. Nele se adotaram medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura 1 abaixo ilustra esses objetivos:
+Figura 1: Objetivos do Desenvolvimento Sustentável (ODS). Fonte: https://brasil.un.org/pt-br/sdgs.
+A atuação da Anatel deve estar aderente a esses ODS e às metas que lhes são correlatas.
+A proposta de encaminhamento contida na presente Análise harmoniza-se com o ODS nº 10 - Redução de Desigualdades, uma vez que a garantia de uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais.
+Essa proposta relaciona-se, ainda, com o ODS nº 16 - Paz, Justiça e Instituições Eficazes. Isso porque observaram-se, durante todo o trâmite processual, os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela CF, pela LPA e pelo RIA.
+Ao não cumprir com seus deveres tributários, a recorrente compromete a realização das metas de políticas públicas de conectividade, especialmente aquelas voltadas para a inclusão de pessoas em situação de vulnerabilidade, que costumam ser beneficiadas com a aplicação dos recursos do Fust.
+Ressalta-se ainda que, em seu estudo "ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação", o Instituto de Pesquisa Econômica Aplicada (IPEA) desenvolveu metas brasileiras alinhadas com a Agenda 2030. A presente proposta de encaminhamento está aderente às seguintes metas nacionais:
+Meta 10.4: Reduzir desigualdades por meio da adoção de políticas fiscais, tributárias, salariais e de proteção social. A política fiscal deve ser cuidadosamente elaborada e rigorosamente aplicada para garantir que toda a população usufrua dos benefícios sociais resultantes do uso adequado dos recursos públicos;
+Meta 16.5: Reduzir substancialmente a evasão fiscal, a corrupção e o suborno em todas as suas formas. É dever do Estado assegurar a arrecadação eficiente e eficaz de recursos destinados a atender ao interesse público; e
+Meta 16.6: Ampliar a transparência, a accountability e a efetividade das instituições em todos os níveis. Transparência e efetividade são pilares de uma administração voltada para o interesse público. Portanto, penalizar e cobrar de uma entidade que não cumpre suas obrigações tributárias é um dever legal das instituições.
+Reforça-se assim o comprometimento do Brasil com os objetivos e metas da Agenda 2030.
+CONCLUSÃO
+Voto por conhecer do Recurso Administrativo interposto por AXIA Energia Norte S.A., CNPJ nº 00.357.038/0001-16, nova razão social de Centrais Elétricas do Norte do Brasil S.A. (Eletronorte), em face do Despacho Decisório nº 648/2025/CODI/SCO, para, no mérito, negar-lhe provimento.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 24/08/2026, às 10:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16110686 e o código CRC D1185398.
+ | 
+Referência: Processo nº 53500.002728/2017-58 | 
+SEI nº 16110686 |

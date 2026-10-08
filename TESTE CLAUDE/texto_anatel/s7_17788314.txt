@@ -1,0 +1,1016 @@
+SEI/ANATEL - 15899261 - Análise
+Boletim de Serviço Eletrônico em 10/07/2026
+Análise nº 74/2026/AF
+Processo nº 53500.056639/2023-70
+Interessado: Sky Servicos de Banda Larga Ltda. 
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso interposto por Sky Serviços de Banda Larga Ltda. em face do Despacho Decisório nº 47/2024/CODI/SCO (SEI nº 11602320).
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DIREITOS DO CONSUMIDOR EM SERVIÇOS DE TELECOMUNICAÇÕES. COBRANÇA PELO RESTABELECIMENTO DO SERVIÇO E AUSÊNCIA DE DEVOLUÇÃO EM DOBRO. RECURSO DESPROVIDO. REFORMA DE OFÍCIO. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. 
+I. CASO EM EXAME
+Recurso administrativo interposto por Sky Serviços de Banda Larga Ltda. contra decisão da Superintendência de Controle de Obrigações (SCO) que aplicou multa por descumprimento dos arts. 85, caput, e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações.
+Fatos relevantes. O PADO originou-se de fiscalização regulatória que constatou a cobrança irregular de Taxa de Manutenção de Assinatura para o restabelecimento dos serviços de SCM e SeAC. Adicionalmente, verificou-se o descumprimento do dever de restituição em dobro dos valores indevidamente auferidos.
+As decisões anteriores. A autoridade de primeira instância rejeitou as preliminares, reconheceu a materialidade das infrações, afastou atenuantes, aplicou agravantes e fixou multa no valor de R$ 59.367.657,73, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+II. QUESTÃO EM DISCUSSÃO
+Há seis questões em discussão: (i) nulidades processuais (vício formal, instrução e litispendência/continência); (ii) admissibilidade do agravamento da sanção em recurso; (iii) materialidade das infrações ao RGC (arts. 85 e 102); (iv) impacto da ausência de dolo na responsabilidade e na conversão da multa em advertência; (v) revisão da dosimetria (ROL, fatores de cálculo e circunstâncias agravantes/atenuantes).
+III. RAZÕES DE DECIDIR
+O recurso é admissível. Foi interposto tempestivamente por parte legítima e regularmente representada.
+O despacho de instauração é válido. O ato indicou os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa.
+Não houve cerceamento de defesa. A intimação para alegações finais após o encerramento da instrução observou o art. 82, § 3º, do Regimento Interno da Anatel, e o informe técnico possui natureza de documento preparatório à decisão.
+Não se configuraram litispendência, continência ou bis in idem. Os processos apontados pela Recorrente tratam de períodos distintos e de recortes fáticos autônomos.
+É possível a reformatio in pejus em sede recursal administrativa, desde que haja prévia intimação da interessada para manifestação e oitiva da PFE-Anatel. Essas exigências foram observadas no caso.
+Restou comprovada a infração ao art. 102, caput, do RGC. A Taxa de Manutenção de Assinatura possuía natureza de cobrança pelo restabelecimento do serviço após suspensão por inadimplência, ainda que lançada sob outra denominação e em momento posterior ao pagamento.
+A liberdade de preços no regime privado não afasta a incidência das normas de proteção ao consumidor. A prestadora deve observar os limites fixados pela regulamentação setorial.
+Restou comprovada a infração ao art. 85, caput, do RGC. A Prestadora não demonstrou a devolução em dobro dos valores cobrados indevidamente aos usuários atingidos.
+A caracterização das infrações independe de dolo. O descumprimento dos deveres regulamentares é suficiente para a responsabilização administrativa.
+Não cabe advertência. As infrações foram consideradas graves, houve vantagem direta à prestadora e a cessação da conduta ocorreu fora do prazo fixado pela Anatel.
+A utilização da ROL de 2021 foi correta. Tratava-se da receita operacional líquida anual mais próxima e disponível na Agência no momento da aplicação da sanção de primeira instância.
+Não são cabíveis as atenuantes pleiteadas. A cessação da conduta ocorreu fora do prazo estipulado pela Anatel e não houve comprovação de reparação integral aos usuários.
+Mantêm-se as agravantes aplicadas. Houve incidência de mais de uma hipótese de gravidade e descumprimento de medida reparatória no processo de acompanhamento que precedeu o PADO.
+A dosimetria exige ajuste de ofício. O fator tempo das infrações ao art. 102 do RGC deve ser alterado de “mais de um ano” para “até 1 ano”, e o fator dano deve ser fixado em 5, por se tratar de danos materiais decorrentes de cobrança indevida.
+A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a segurança jurídica no setor de telecomunicações.
+A fundamentação alinha-se às melhores práticas regulatórias da OCDE, na medida em que reafirma uma governança eficiente dos limites da responsabilidade das prestadoras.
+A decisão corrobora com o Objetivo 16 (meta 16.7) da Agenda 2030 da Organização das Nações Unidas, ao promover a segurança jurídica e contribuir para a redução da litigiosidade administrativa
+.
+IV. DISPOSITIVO E TESE
+Recurso administrativo conhecido e desprovido. Reforma de ofício.
+Tese de julgamento: "1. O despacho de instauração é válido quando indica os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa. 2. Não há nulidade por ausência de nova intimação entre as alegações finais e a elaboração de informe técnico preparatório. 3. Não há litispendência, continência ou bis in idem entre PADOs que apuram fatos e períodos distintos. 4. É possível o agravamento da sanção em sede recursal administrativa, desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel. 5. Configura infração ao art. 102, caput, do RGC a cobrança de Taxa de Manutenção de Assinatura vinculada ao restabelecimento do serviço após suspensão por inadimplência. 6. Configura infração ao art. 85, caput, do RGC a ausência de devolução em dobro dos valores cobrados indevidamente. 7. A caracterização das infrações aos arts. 85 e 102 do RGC independe de dolo. 8. Não cabe advertência nem aplicação de atenuantes quando a cessação da conduta ocorre fora do prazo fixado pela Anatel e não há comprovação de reparação integral aos usuários. 9. A ROL a ser utilizada no cálculo da multa é a anual disponível na Agência mais próxima ao momento da aplicação da sanção. 10. Impõe-se a reforma de ofício da dosimetria para ajustar os fatores tempo e dano das infrações ao art. 102 do RGC. 
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 126, 127, 128 e 173; Lei nº 9.784/1999, art. 64, parágrafo único; CPC, art. 56; Resolução nº 589/2012, arts. 9º, § 3º, 12, 19 e 20; Resolução nº 612/2013, arts. 82, 115, § 1º, 116 e 125, §§ 3º e 4º; Resolução nº 632/2014, arts. 85 e 102; e Resolução Interna Anatel nº 219/2023, itens 4.1, 5.1.4 e 5.1.7.
+REFERÊNCIAS
+LEGISLAÇÃO CITADA:
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicação (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA).
+Lei nº 10.703, de 18 de julho de 2003, que, dispõe sobre o cadastramento de usuários de telefones celulares pré-pagos e dá outras providências.
+Lei nº 13.105, de 16 de março de 2015 - Código de Processo Civil.
+Resolução nº 477, de 7 de agosto de 2007, que aprovou o Regulamento do Serviço Móvel Pessoal (RSMP).
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel (RIA).
+Resolução nº 632, de 7 de março de 2014, que aprovou o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+Resolução nº 589, de 7 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas (Rasa).
+Resolução Interna nº 219, de 15 de junho de 2023, que aprova a Metodologia de cálculo do valor-base das sanções de multa relativa a descumprimentos a direitos dos Usuários.
+PRECEDENTES CITADOS:
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 296, de 6 de novembro de 2023, no Processo nº 53500.018097/2020-94. Recorrente/Interessado: Claro S.A. Conselheiro Relator: Alexandre Reis Siqueira Freire. Fórum Deliberativo: Reunião nº 926, de 26 de outubro de 2023. Brasília, DF: Anatel, 2023.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 50, de 3 de março de 2026, no Processo nº 53500.012754/2019-56. Recorrente/Interessado: Claro S.A. Conselheiro Relator: Alexandre Reis Siqueira Freire. Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026. Brasília, DF: Anatel, 2026.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 33, de 20 de fevereiro de 2024, no Processo nº 53500.334309/2022-40. Recorrente/Interessado: Sky Serviços de Banda Larga Ltda. Conselheiro Relator: Artur Coimbra de Oliveira. Fórum Deliberativo: Reunião nº 929, de 8 de fevereiro de 2024. Brasília, DF: Anatel, 2024.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 312, de 11 de novembro de 2025, no Processo nº 53500.101575/2023-79. Recorrente/Interessado: Claro S.A. CNPJ nº 40.432.544/0001-47. Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire. Fórum Deliberativo: Reunião nº 948, de 4 de novembro de 2025. Brasília, DF: Anatel, 2025.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 136, de 14 de maio de 2025, no Processo nº 53500.016622/2024-61. Recorrente/Interessado: Sky Serviços de Banda Larga Ltda. CNPJ nº 00.497.373/0001-10. Conselheiro(a) Relator(a): Nilo Pasquali. Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026. Brasília, DF: Anatel, 2026.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 110, de 5 de abril de 2017, no Processo nº 53500.205427/2015-12. Conselheiro Relator Igor Vilas Boas. Brasília, DF: Anatel, 2017.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Análise nº 73/2016/SEI/IF (SEI nº 0730341), no Processo nº 53500.205427/2015-12. Conselheiro Relator Igor Vilas Boas. Brasília, DF: Anatel, 2017.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL). Acórdão nº 136, de 14 de maio de 2026, no Processo nº 53500.016622/2024-61. Relator: Nilo Pasquali. Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026.
+SUPREMO TRIBUNAL FEDERAL (STF) (Brasil). Acórdão no Agravo Regimental no Recurso Extraordinário nº 641.054/RJ. Relator: Ministro Luiz Fux. Brasília, DJe 25 jun. 2012. Disponível em: STF. Acesso em: 18 jun. 2024.
+DEMAIS REFERÊNCIAS:
+MOREIRA, Egon Bockmann. Processo administrativo: princípios constitucionais e a Lei nº 9.784/1999 - com especial atenção à LINDB. 6. ed. Belo Horizonte: Fórum, 2022.
+ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE. Recommendation of the Council on Principles of Corporate Governance, OECD/LEGAL/0413, 2023. Disponível em: Oecd. Acesso em: 26 fev. 2026.
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS ONU. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: brasil.org. Acesso em: 26 fev. 2026..
+VALENTE, Patrícia Rodrigues Pessôa. Autonomia Decisória. In: VALENTE, Patrícia Rodrigues Pessôa (org.). Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024, p. 49-55. Disponível em: CGU. Acesso em: 26 fev. 2026.
+RELATÓRIO
+Cuida-se de Recurso Administrativo, com pedido de efeito suspensivo, interposto por Sky Serviços de Banda Larga Ltda. (Sky ou Recorrente), em face do Despacho Decisório nº 47/2024/CODI/SCO (SEI nº 11602320), de 11 de abril de 2024, por meio do qual a Superintendência de Controle de Obrigações (SCO) aplicou sanção de multa nos seguintes termos:
+O SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a disposta no art. 158, inciso IV, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do Processo em epígrafe, instaurado em face da Sky Serviços de Banda Larga Ltda., CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Comunicação Multimídia (SCM) e do Serviço de Acesso Condicionado (SeAC), em razão da constatação de indícios de infração a direitos dos usuários;
+CONSIDERANDO o teor dos Informes nº 500/2023/CODI/SCO (11218523) e nº 79/2024/CODI/SCO (11600517);
+DECIDE:
+Aplicar a sanção de MULTA no valor total de R$ 59.367.657,73 (cinquenta e nove milhões, trezentos e sessenta e sete mil seiscentos e cinquenta e sete reais e setenta e três centavos), pelo descumprimento aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, conforme Planilha de cálculo de multa (11292618), sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+Instaurou-se este Procedimento Administrativo de Descumprimento de Obrigações (PADO) em 27 de junho de 2023, por meio do Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI nº 10454537), subsidiado na fiscalização regulatória registrada no Processo nº 53500.054974/2018-76, realizada pela Gerência de Tratamento de Solicitações de Consumidores (RCTS), bem como no Relatório de Fiscalização nº 69/2021/GR05FI1/GR05/SFI (SEI nº 8318817 e nº 7453269), constante do Processo de Fiscalização nº 53500.054104/2019-88 e nº 53528.001239/2020-76. Verificaram-se indícios de descumprimento dos arts. 85 e 102 do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, e cujas conclusões devem ser consideradas para fins da concessão de atenuantes na eventual imposição de sanção:
+Serviço
+ | Indício de irregularidade
+ | Dispositivos relacionados
+ | Origem
+ | Usuários afetados
+ | Data/Período
+ | 
+SCM
+ | Cobrança pelo restabelecimento da prestação do serviço
+ | Art. 102 do RGC
+ | Item "a" do título III deste Informe
+ | 1
+ | 26/06/2018
+ | 
+Item "b" do título III deste Informe
+ | 198.849
+ | 12/2019 a 07/2020
+ | 
+Não devolução em dobro, acrescido de correção e juros, de valores cobrados indevidamente
+ | Art. 85 do RGC
+ | Item "c" do título III deste Informe
+ | 198.850
+ | 06/2018 a 07/2020
+ | 
+SeAC
+ | Cobrança pelo restabelecimento da prestação do serviço
+ | 
+Art. 102 do RGC
+ | Item "a" do título III deste Informe
+ | 25
+ | 19/03 a 08/11/2018
+ | 
+Item "b" do título III deste Informe
+ | 3.575.208
+ | 10/2019 a 07/2020
+ | 
+Não devolução em dobro, acrescido de correção e juros, de valores cobrados indevidamente
+ | Art. 85 do RGC
+ | Item "c" do título III deste Informe
+ | 3.575.233
+ | 03/2018 a 07/2020
+ | 
+A Sky foi notificada da instauração em 13 de julho de 2023 (SEI nº 10545952), por meio do Ofício nº 258/2023/CODI/SCO (SEI nº 10455972).
+Em 28 de julho de 2023, a Sky apresentou defesa administrativa (SEI nº 10622893), aduzindo o seguinte:
+preliminares processuais: 01) nulidade do despacho de instauração, por ausência de descrição pormenorizada das condutas e das sanções correspondentes, resultando em cerceamento do direito de defesa; 02) litispendência e continência com outros procedimentos em curso; e 03) extrapolação do objeto da fiscalização, caracterizada por "fishing expedition";
+no mérito: 01) licitude da TMA, com informação clara ao consumidor; 02) necessidade de demonstração de pagamento efetivo para autorizar a devolução em dobro; 03) em caso de sanção, que esta seja convertida em advertência; e 04) caso se decida pela aplicação de multa, que sejam aplicadas atenuantes.
+Certificou-se o encerramento da instrução processual em 22 de setembro de 2023 (SEI nº 10900366). A Sky foi notificada em 9 de outubro de 2023, por meio do Ofício nº 372/2023/CODI/SCO (SEI nº 10900416), e apresentou alegações finais em 19 de outubro de 2023 (SEI nº 11022754).
+Em 22 de dezembro de 2023, a SCO analisou as manifestações da Recorrente, por meio do Informe nº 500/2023/CODI/SCO (SEI nº 11218523), opinando o que segue:
+rejeição das preliminares processuais deduzidas pela Recorrente ao longo do processo;
+reconhecimento da ilicitude da taxa de manutenção, com a caracterização da infração respectiva — sendo irrelevante o elemento volitivo para tanto — bem como da infração relacionada à omissão na devolução dos valores cobrados em dobro;
+ausência de atenuantes e pela presença das agravantes de antecedentes e de cumulação de hipóteses de caracterização das infrações como graves;
+aplicação de sanção no valor de R$ 59.367.657,73; e
+encaminhamento do processo à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), para manifestação.
+A PFE/Anatel manifestou-se por meio do Parecer nº 00029/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912), de 25 de janeiro de 2024, concluindo:
+a) pela regularidade formal do Pado;
+b) pelo entendimento de que os informes caracterizam-se como documentos preparatórios, elaborados pela área técnica da Agência quando já encerrada a fase de instrução processual, que podem ser utilizados como fundamento para a edição do próprio ato administrativo decisório, nos termos do art. 50, § 1º, da Lei nº 9.784/1999;
+c) pela ausência de nulidade do Despacho Ordinatório De Instauração;
+d) pela inexistência de desordem processual ou litispendência ou, ainda, continência processual;
+e) pela não configuração de fishing expedition no presente caso;
+f) pela adequada caracterização das infrações aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC;
+g) pelo entendimento de que, não tendo a Prestadora cumprido a determinação dentro do prazo estipulado, entende-se que não faz jus ao benefício disposto no art. 12, inciso II, do RASA;
+h) pela inaplicabilidade da atenuante prevista no art. 20, II, do RASA, uma vez que o prazo estipulado por meio do Despacho Decisório nº 71/2022/RCTS/SRC foi descumprido, além de não ter havido comprovação de reparação total ao usuário;
+i) pelo entendimento de que a ROL a ser considerada, referente ao serviço fiscalizado, é a da pessoa jurídica infratora como um todo, com a inclusão de todos os seus estabelecimentos (matriz e filiais), e a do ano imediatamente anterior ao da aplicação da sanção;
+j) pela recomendação de realização de nova pesquisa quanto à existência de antecedentes da prestadora, considerando todos os serviços de telecomunicações outorgados a ela. Na hipótese de constatação de antecedentes em número superior a 20 (vinte), o agravamento deve ser de 20% (vinte por cento) para cada uma das sanções a serem imputadas à prestadora, nos termos do art. 2º, II, c/c o art. 19, II, do RASA
+A SCO analisou as considerações do parecer da PFE-Anatel por meio do Informe nº 79/2024/CODI/SCO (SEI nº 11600517), de 11 de abril de 2024, mantendo o entendimento do Conselho Diretor quanto ao uso da ROL mais recente disponível, segmentada por serviço. No que se refere aos antecedentes, manteve-se igualmente a segmentação por serviço, tendo sido proferido Despacho Decisório nº 47/2024/CODI/SCO (SEI nº 11602320), de 11 de abril de 2024.
+A Sky foi notificada do teor do Despacho Decisório e da possibilidade de apresentação de recurso administrativo em 26 de abril de 2024 (SEI nº 11890810), por meio do Ofício nº 77/2024/CODI/SCO ( SEI nº 11603287).
+A Sky apresentou Recurso Administrativo (SEI nº 11944979) em 08 de maio de 2024 (SEI nº 11944980), reiterando os argumentos trazidos em sua defesa administrativa, e requereu:
+o arquivamento do processo;
+subsidiariamente, a aplicação de pena de advertência; e
+caso seja rejeitada a aplicação de advertência, o recálculo da multa, com emprego da ROL referente o ano de 2023, com o reconhecimento de atenuantes e com a retirada de agravantes.
+Em 08 de maio de 2024, certificou-se a suspensão da exigibilidade da multa aplicada (SEI nº 11945347).
+Em 10 de janeiro de 2025, consignou-se a instauração de Procedimento de Acompanhamento e Controle (PAC) (SEI nº 13132888), destinado ao monitoramento dos ressarcimentos devidos pela Sky, identificados no âmbito do presente PADO.
+A Sky, em 12 de junho de 2025 (SEI nº 13844055), juntou ao processo instrumento de procuração (SEI nº 13844054).
+A SCO, em 15 de agosto de 2025, por meio do Informe nº 676/2025/CODI/SCO (SEI nº 14175118), analisou as razões recursais, admitiu o recurso, determinou o envio do processo ao Conselho Diretor e opinou, no mérito, pela negativa de provimento, mantendo a decisão recorrida.
+Na mesma data, por meio do Despacho Decisório nº 518/2025/CODI/SCO (SEI nº 14175652), a SCO decidiu pelo conhecimento do recurso e pela sua remessa ao Conselho Diretor.
+Em 15 de agosto de 2025, a SCO encaminhou o processo à Superintendência Executiva da Anatel (SUE) por meio da Matéria para Apreciação do Conselho Diretor nº 613/2025 (SEI nº 14175656).
+Por meio do Despacho Ordinatório (SEI nº 14240152), de 22 de agosto de 2025, a SUE encaminhou o processo à Secretaria do Conselho Diretor.
+Em 25 de agosto de 2025, conforme Certidão de Distribuição (SEI nº 14249882), o Conselheiro Substituto Daniel Martins D'Albuquerque foi designado como relator da matéria.
+Em 29 de agosto de 2025, conforme Certidão (SEI nº 14289050), cancelou-se a distribuição em virtude de nomeação de Conselheiro sucessor para o cargo que estava ocupado pelo Conselheiro Substituto.
+O processo foi distribuído para minha relatoria em 04 de setembro de 2025, conforme Certidão de Distribuição (SEI nº 14320004).
+Na 950a Reunião do Conselho Diretor foi prorrogada a relatoria do presente processo, conforme certidão (SEI nº 15213357).
+Por meio do Ofício nº 46/2026/AF (SEI nº 15255956), de 16 de março de 2026, o relator solicitou diligência à área técnica quanto ao cálculo da metodologia de sanção de multa.
+A CODI verificou a necessidade de ajuste no cálculo da sanção de multa, conforme Informe nº 223/2026/CODI/SCO (SEI nº 15411088), notificou a recorrente para que apresentasse as suas alegações, nos termos do §4º do art. 125 do Regimento Interno da Anatel, e do art. 64, parágrafo único, da Lei do Processo Administrativo (LPA), conforme Ofício nº 361/2026/CODI/SCO (SEI nº 15411105), de 30 de março e 2026.
+Em 24 de abril de 2026, a recorrente apresentou novas alegações (SEI nº 15535514), por meio das quais pleiteia o afastamento do agravamento da sanção aplicada, notadamente em relação à infração ao art. 102 do RGC. Subsidiariamente, requer: (a) o reconhecimento da aplicação inadequada da ROL, determinando-se a utilização dos dados referentes ao exercício de 2023 para o cálculo de eventual multa (cujos valores correspondem a R$ 4.120.804.489,94 para o SeAC e R$ 29.071.510,06 para o SCM); (b) a aplicação da atenuante de 70%, prevista no art. 20, inciso II, do RASA; e (c) o afastamento da agravante de 10%, prevista no art. 19, inciso III, do RASA.
+Após analisar a manifestação apresentada em 30 de abril de 2026 (SEI nº 15411100), a SCO opinou pelo recálculo da sanção de multa, o qual foi materializado no Informe nº 223/2026/CODI/SCO (SEI nº 15411088). Em virtude da possibilidade de agravamento do valor da sanção, a área técnica encaminhou o processo à PFE-Anatel, em estrita observância ao art. 125, § 1º, do Regimento Interno da Agência, e ao art. 7º, inciso V, da Portaria nº 642/2013 (alterada pela Portaria nº 739/2013).
+Em 29 de maio de 2025, a PFE-Anatel emitiu o Parecer nº 195/2026/PFE-ANATEL/PGF/AGU (SEI nº 15721315) concluindo:
+a. pela possibilidade de agravamento da sanção de multa pela autoridade competente, tendo em vista que foram observados os requisitos do art. 64, parágrafo único, da Lei 9.784/1999, e do art. 125, parágrafos 1º, 3º e 4º, do Regimento Interno;
+b. pela recomendação de se adotar a ROL de 2023 caso, neste momento, já seja de conhecimento da Agência, considerando que o Despacho Decisório data de 11/04/2024 (SEI nº 11602320), em consonância com as reiteradas manifestações desta Procuradoria no sentido de se adotar a ROL do ano imediatamente anterior ao da aplicação da sanção, bem como a consideração da ROL da pessoa jurídica infratora como um todo, sem limitação geográfica ou distinção entre matriz e filiais;
+c. no que concerne aos antecedentes a serem considerados no cálculo da multa, eles devem ser referentes à pessoa jurídica como um todo, sem a distinção por serviço; e
+d. havendo acolhimento das sugestões feitas por esta Procuradoria neste opinativo, caso ocorra agravamento da situação da recorrente, esta deverá ser novamente notificada para apresentar alegações. Nessa hipótese, e caso inexistam novas controvérsias jurídicas ou novos fundamentos para o agravamento da situação da recorrente diversos daqueles que já foram apreciados neste Parecer, não haverá necessidade de retorno dos autos a esta Procuradoria após eventual nova manifestação da autuada e consequente análise da área técnica, já que, nesta situação, os fins buscados pela Portaria nº 642/2013 terão sido plenamente observados
+Em 18 de junho de 2026, a relatoria enviou ofício (SEI nº 15827120) para que a Recorrente apresentasse manifestação sobre o interesse em aderir a eventual obrigação de fazer consistente no provimento de conectividade das instituições de ensino à rede da RNP.
+A Recorrente foi notificada em 29 de junho de 2026, conforme Certidão de Intimação Cumprida nº 15881202, apresentando manifestação (SEI nº 15939910), em 09 de julho de 2026 (SEI nº 15939911), informando que não tem interesse em aderir à ODF nos termos propostos, pois a eventual adesão não afasta a obrigação de ressarcimento, cuja apuração segue em procedimento administrativo próprio.
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise encontra-se dividida em sete partes. Na primeira, examina-se a admissibilidade do recurso interposto. Na segunda, avaliam-se as razões recursais. Na terceira, analisa-se a dosimetria da multa, à luz dos argumentos apresentados pela recorrente e pela área técnica. Por fim, faz-se a conformação do objeto da presente análise com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com as recomendações de boas práticas regulatórias do Programa de Aprimoramento da Qualidade da Regulação Brasileira (QUALI-REG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE) e com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Admissibilidade
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O recurso administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão.
+No presente caso, verifica-se que o recurso administrativo foi dirigido à SCO, que dele conheceu e manteve a decisão recorrida. Portanto, o encaminhamento para decisão do Conselho Diretor é cabível, conforme previsto no art. 115, § 1º, alín. “b”, do RIA, assim transcrito:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+Não se vislumbra, ainda, a incidência das hipóteses de não conhecimento do presente recurso, previstas no art. 116 do RIA, a saber:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Quanto à tempestividade, conforme certidão (SEI nº 11890810), a Sky foi notificada da decisão recorrida em 26 de abril de 2024. Por sua vez, o recurso administrativo foi interposto em 08 de maio de 2024 (SEI nº 11944980), atendendo ao prazo de 10 (dez) dias definido pelo RIA.
+O recurso administrativo foi apresentado por procurador devidamente constituído, conforme Procuração juntada ao processo (SEI nº 10622894 e nº 13844054). 
+De igual forma, a Sky é parte legítima deste procedimento, possuindo interesse na reforma da decisão, estando regularmente representada.
+Estão presentes os requisitos de admissibilidade recursal, devendo a SCO conhecer do recurso, nos termos do art. 115, § 1º, "a", do Regimento Interno da Anatel. 
+Assim, é acertada a decisão da SCO, contida no Despacho Decisório nº 518/2025/CODI/SCO (SEI nº 14175652).
+II - Das Razões Recursais
+II. a. Questões Preliminares e Prejudicial de Mérito
+Neste tópico, analisam-se as questões processuais e prejudiciais de mérito na seguinte ordem: nulidade do despacho de instauração, encerramento prematuro da instrução processual, litispendência e continência processual; e impossibilidade de agravamento da sanção.
+II.a.1 - Nulidade no Despacho de Instauração nº 30/2023
+Alegou a recorrente que a omissão de descrição da sanção aplicável no Despacho Ordinatório de Instauração nº 30/2023 viola as garantias constitucionais da ampla defesa e do contraditório, por não especificar de forma clara e detalhada a sanção potencialmente aplicável, não se satisfazendo com menção genérica.
+O Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29/04/2013, estabelece o conteúdo do Despacho Ordinatório de Instauração, em seu art. 82 inc. I:
+Art. 82. O Pado observará as seguintes regras e prazos:
+I - a expedição de documento específico, denominado Despacho Ordinatório de Instauração, pela autoridade competente, apontando os fatos em que se baseia, as normas definidoras da infração e as sanções aplicáveis;
+(grifou-se)
+No Informe nº 676/2025/CODI/SCO, no item 3.10, a SCO manifestou-se pela improcedência da preliminar, pois o Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI nº 10454537) atendeu aos requisitos do art. 82 do RIA, indicando os fatos, os dispositivos infringidos e as sanções aplicáveis. Ressaltou que não há exigência legal que imponha o detalhamento do valor da sanção na fase de instauração, pois os parâmetros a serem utilizados para o cálculo de eventual sanção de multa dependem da instrução e da análise do caso concreto.
+No mesmo sentido, o Parecer nº 29/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912), no item c da conclusão, entendeu pela inexistência de nulidade do Despacho Ordinatório de Instauração, com os seguintes fundamentos:
+2.2 Preliminar de Nulidade do Despacho Ordinatório de Instauração pela insuficiente e equivocada especificação das condutas tidas por infratoras e da sanção supostamente aplicável
+(...)
+19. Da simples leitura do Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI 10454537), verifica-se estarem presentes a descrição do fato ou do ato constitutivo da infração, o dispositivo da legislação alegadamente infringido e a sanção aplicável.
+20. Ademais, como bem ressaltado no Informe nº 500/2023/CODI/SCO (SEI nº 11218523), por óbvio, não é possível especificar, já no Despacho de Instauração, o valor da sanção aplicável, uma vez que esse depende da sanção e das circunstâncias do caso concreto, conforme definem o Rasa e a MDGU. In casu, restou expressamente consignado no item II, quanto à sanção aplicável: "Sanções previstas no artigo 3º do Regulamento de Aplicação de Sanções Administrativas, aprovado pela Resolução nº 589, de 7 de maio de 2012" cuja especificação e gradação dependerão das circunstâncias fáticas que serão apuradas no decorrer do processo.
+21. Assim, não merecem prosperar as alegações da prestadora.
+Não se verifica qualquer prejuízo à defesa, uma vez que a Prestadora se defendeu dos fatos imputados e não se limitou ao que consta do dispositivo supostamente infringido, da sanção aplicada ou mesmo de seu valor. Os indícios de irregularidades atribuídas à Prestadora constam do Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI nº 10454537), com indicação dos supostos serviços afetados, dos dispositivos violados, dos usuários atingidos e da data/período correspondente. Portanto, fica evidente que não houve menção genérica do dispositivo infringido. A cópia do Informe nº 261/2023/CODI/SCO (SEI nº 10457987) contém análise detalhada das conclusões do Processo de Fiscalização Regulatória nº 53500.054974/2018-76, as quais fundamentaram a elaboração do Despacho Ordinatório de Instauração.
+Especificamente quanto ao tipo de sanção, há uma sequência de atos até a definição fundamentada das penalidades pela Agência. Por essa razão, as informações presentes no Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI nº 10454537) indicam as sanções eventualmente aplicáveis. 
+Na condição de autorizada à prestação de serviços de telecomunicações, não é cabível à Recorrente alegar desconhecimento do Regulamento de Aplicação de Sanções Administrativas (RASA), instrumento que estabelece os critérios a serem observados na aplicação de penalidades às eventuais infratoras, bem como das metodologias devidamente aprovadas e publicadas, relativas às fórmulas utilizadas para o cálculo das multas incidentes em caso de descumprimento de obrigações regulamentares ou contratuais.
+Esse entendimento já observa precedentes deste Conselho Diretor:
+Acórdão nº 50, de 03 de março de 2026
+Processo nº 53500.012754/2019-56
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544.0001-47
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. INFRAÇÕES AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. AGRAVAMENTO DE SANÇÃO EM SEDE RECURSAL. POSSIBILIDADE. ENUNCIADO Nº 22 DA SÚMULA DA ANATEL. ATO DE INSTAURAÇÃO. INDICAÇÃO, EM TESE, DAS SANÇÕES APLICÁVEIS. CERCEAMENTO DE DEFESA NÃO CONFIGURADO. PRECEDENTES. PRODUÇÃO DE INFORME APÓS APRESENTAÇÃO DE ALEGAÇÕES FINAIS. NULIDADE NÃO CARACTERIZADA. PRECEDENTES. PEDIDO DE APLICAÇÃO DE FATOR DE REDUÇÃO EM JUÍZO DE RETRATAÇÃO. ENUNCIADO Nº 23 DA SÚMULA DA ANATEL. INDEFERIMENTO. BIS IN IDEM. INEXISTÊNCIA. FISCALIZAÇÕES RELATIVAS A PERÍODOS DISTINTOS ENTRE SI. ACHADOS DE FISCALIZAÇÃO. PRESUNÇÃO DE VERACIDADE. ÔNUS DA PRESTADORA DE DESCONSTITUÍ-LA. PRECEDENTES. ART. 62, INCISO VIII, DO RGC 2014. VIGÊNCIA DE DECISÕES CAUTELARES PROIBINDO REDUÇÃO DE VELOCIDADE E COBRANÇA DE DADOS TRAFEGADOS NO SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA - SCM. INFRAÇÃO DESCARACTERIZADA. APLICAÇÃO DA PORTARIA Nº 791/2014. MANUTENÇÃO. AFASTAMENTO QUE DEVE SE DAR EM CIRCUNSTÂNCIAS EXCEPCIONAIS. INFRAÇÕES AO ART. 22, CAPUT E §§ 2º E 3º, E AO ART. 62 DO RGC 2014. PROPORCIONALIDADE À FRAÇÃO DE ITENS DESCUMPRIDOS. PRECEDENTES. FATOR TEMPO. COINCIDÊNCIA COM O PERÍODO DE FISCALIZAÇÃO. MANUTENÇÃO. PRECEDENTES. RESOLUÇÃO INTERNA ANATEL Nº 219, DE 15 DE JUNHO DE 2023. PROCESSO DECIDIDO EM PRIMEIRA INSTÂNCIA ANTERIORMENTE À SUA PUBLICAÇÃO. INAPLICABILIDADE. RECEITA OPERACIONAL LÍQUIDA - ROL E USUÁRIOS. SEGMENTAÇÃO POR ÁREA E POR SERVIÇOS FISCALIZADOS. PRECEDENTES. ANTECEDENTES. apuração POR INFRATOR E POR SERVIÇO. PRECEDENTES. APLICAÇÃO DE OBRIGAÇÃO DE FAZER. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. REFORMA DE OFÍCIO.
+I. CASO EM EXAME
+No caso, apuram-se infrações na prestação do atendimento, em sua maioria relacionadas: (i) ao atendimento do usuário no espaço reservado e (ii) ao fornecimento de informações sobre o uso dos produtos e facilidades por ele contratados, no âmbito do SCM. Na decisão recorrida, a Recorrente foi condenada ao pagamento de multa por infração aos arts. 7º, caput, c/c art. 10, § 5º; 22, incisos II e IX, §§ 1º, 2º e 3º; e 62, incisos VII e VIII, todos do RGC 2014.
+II. QUESTÕES EM DISCUSSÃO:
+Há dezesseis questões em discussão: (i) possibilidade de reformatio in pejus; (ii) requisitos de validade do Despacho de Instauração; (iii) encerramento da instrução processual e intimação para apresentação de alegações finais antes da avaliação das alegações de defesa; (iv) aplicação de desconto pela ausência de recurso após despacho decisório de retratação em sede recursal; (v) ocorrência de bis in idem quando há identidade de imputações, mas relacionadas a períodos de apuração diversos; (vi) potencialidade lesiva e caráter sistêmico da infração; (vii) presunção de veracidade dos achados de fiscalização e ônus probatório; (viii) repercussão da decisão que impede a cobrança de dados e a redução de velocidade após esgotamento de franquia para fins sancionadores; (ix) proporcionalidade da metodologia da Portaria nº 791/2014; (x) quantidade de descumprimentos e repercussões no cálculo da multa para as infrações aos arts. 22, caput e §§ 2º e 3º, e 62, caput, do RGC 2014; (xi) identificação do fator tempo nas infrações constatadas em fiscalização; (xii) cômputo simultâneo dos usuários afetados por infrações ao art. 22, § 1º, do RGC 2014, em conjunto com as demais infrações ao espaço reservado; (xiii) efeitos temporais da Resolução Interna Anatel nº 219; (xiv) identificação da ROL em função do serviço fiscalizado, do momento de sua disponibilização e da base geográfica da fiscalização; (xv) aplicação de antecedentes em função do serviço fiscalizado; e (xvi) aplicação de Obrigação de Fazer - OdF consistente em antecipação de metas do Edital do 5G.
+III. RAZÕES DE DECIDIR
+1. Nos termos do Enunciado nº 22 da Súmula da Anatel, “é possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel”.
+2. Para a sua validade, é suficiente que o Despacho de Instauração explicite, em tese, as sanções aplicáveis, não estando a autoridade competente para a imposição da sanção vinculada à classificação jurídica dos fatos adotada pela autoridade instauradora. Não há cerceamento de defesa quando tal ato não capitula, de forma exaustiva e pormenorizada, as sanções aplicáveis para cada infração imputada. Precedentes do Conselho Diretor.
+3. A produção de informe para subsidiar o Despacho Decisório recorrido após a apresentação de alegações finais não tem o condão de macular as garantias do contraditório, da ampla defesa e do devido processo legal e nem de caracterizar cerceamento de defesa. Precedentes do Conselho Diretor.
+4. Nos termos do Enunciado nº 23, da Súmula da Anatel "é inaplicável o desconto previsto no § 5º do art. 33 do Regulamento para Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589, de 7 de maio de 2012, sobre o valor da sanção de multa, quando da expedição de novo Despacho Decisório de primeira instância, substitutivo do despacho recorrido, por força do exercício do juízo de retratação da autoridade competente, seja total ou parcial".
+5. A aplicação de sanções a condutas que, embora idênticas ou análogas em suas circunstâncias fáticas, referem-se a períodos de apuração distintos, não configura bis in idem. Precedentes do Conselho Diretor.
+6. Uma infração é considerada sistêmica quando comprovado seu potencial de lesar, de forma indistinta, um segmento significativo ou a totalidade da base de consumidores da prestadora, podendo projetar seus efeitos além dos usuários que tenham efetivamente utilizado o serviço ou o recurso sobre o qual recai a infração. Precedentes.
+7. A fé pública dos agentes de fiscalização é relativa e somente afastada quando presentes evidências em sentido contrário. Cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo - LPA. Precedentes do Conselho Diretor.
+8. Na vigência do RGC 2014, após o início da produção de efeitos do Despacho Decisório nº 1/2016/SEI/SRC e do Acórdão nº 151, de 22 de abril de 2016, com a determinação da suspensão de práticas de cobrança de tráfego excedente e de redução de velocidade contratada após o esgotamento da franquia de dados, não é o caso de aplicação do art. 62, inciso VIII, para fins sancionadores no SCM.
+9. A Portaria nº 791/2014, que dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativas ao descumprimento de direitos dos usuários previstos na regulamentação, já incorpora critérios de proporcionalidade e razoabilidade. Assim, seu afastamento, com fundamento no art. 18, § 4º, do RASA, deve ocorrer apenas em circunstâncias excepcionalíssimas, não identificadas no presente caso. Precedente.
+10. Os dispositivos descritos no art. 22, caput, incisos e §§ 2º e 3º (regras e informações para o espaço reservado), e no art. 62, caput (conteúdo mínimo do relatório detalhado dos serviços e facilidades prestados), do RGC 2014 caracterizam, cada um deles, uma única conduta ilícita. Nesses casos, a dosimetria da multa deve levar em conta a proporcionalidade dos comandos descumpridos, na fração de um doze avos por descumprimento para o art. 22 e de um treze avos por descumprimento para o art. 62.
+11. Na ausência de conclusão específica em sentido diverso, o fator tempo, no cálculo da multa, deve coincidir com o período de fiscalização, independentemente do momento da ação que levou à constatação da materialidade da infração. Precedentes do Conselho Diretor.
+12. Os usuários afetados pelo descumprimento das normas de acessibilidade no espaço reservado (art. 22, § 1º, do RGC 2014) podem ser novamente considerados entre os usuários afetados nas demais infrações relativas ao espaço reservado, sem que isso configure bis in idem.
+13. A Resolução Interna Anatel nº 219, de 15 de junho de 2023, que aprova a metodologia de cálculo do valor-base das sanções de multa relativa a descumprimentos a direitos dos usuários, não se aplica a processos que já tenham sido decididos em primeira instância anteriormente à data de sua publicação.
+14. No cálculo da sanção, devem ser considerados a Receita Operacional Líquida - ROL e os usuários relativos à área em que foi realizada a fiscalização, devidamente segmentados conforme o serviço objeto da apuração. Precedentes do Conselho Diretor.
+15. A avaliação dos antecedentes, conforme o art. 19 do RASA, deve ser individualizada por serviço fiscalizado. Isso significa que condenações por infrações em uma modalidade não podem agravar a penalidade de infrações cometidas em outra modalidade de serviço da mesma prestadora. Precedentes.
+16. É possível a aplicação de obrigação de fazer, consistente na antecipação de metas do Edital do 5G na faixa de 3,5 GHz, em municípios do Norte e Nordeste com mais de 30 mil habitantes, observados os critérios de escolha, custos, prazos e comprovação definidos pela Anatel.
+17. A antecipação dos investimentos nas redes móveis contribui para a transformação digital do país. O acesso à internet de alta velocidade e baixa latência é um vetor de crescimento econômico associado ao aumento do Produto Interno Bruto - PIB per capita e da produtividade local. Focar essa antecipação em municípios das regiões Norte e Nordeste com mais de 30 mil habitantes constitui instrumento crucial para fomentar o desenvolvimento regional e mitigar assimetrias estruturais.
+18. O acesso à conectividade digital amplia oportunidades de educação, saúde e inclusão social para populações historicamente desassistidas. Além disso, ao antecipar a implantação de infraestruturas resilientes e promover instituições eficazes e transparentes, a Anatel reafirma seu compromisso com um futuro digital inclusivo e sustentável para todos os brasileiros.
+19. A obrigação de fazer é de inegável interesse público e está alinhada às políticas públicas de telecomunicações, ao Plano Estratégico da Anatel, ao Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, ao Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG, às boas práticas regulatórias da Organização para Cooperação e Desenvolvimento Econômico - OCDE e aos Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+20. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+21. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a efetividade da regulação na proteção do consumidor com deficiência dos serviços de telecomunicações.
+22. A abordagem proposta alinha-se às melhores práticas regulatórias da OCDE, na medida em que busca reafirmar a governança regulatória para assegurar o cumprimento dos padrões mínimos de qualidade de atendimento presencial ao usuário.
+23. A decisão contribui para a promoção dos Objetivos 9 (meta 9.1) e 10 (metas 10.2 e 10.3), e 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas, na medida em que busca promover maior acessibilidade e inclusão das pessoas com deficiência no uso das Tecnologias da Informação e Comunicações - TICs.
+IV. DISPOSITIVO
+Recurso parcialmente provido. Reforma de ofício.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 11/2026/AF (SEI nº 15121152), integrante deste acórdão:
+a) conhecer do Recurso interposto para, no mérito, dar-lhe parcial provimento;
+b) rever, de ofício, o Despacho Decisório nº 423/2022/CODI/SCO (SEI nº 9157439); e,
+c) aplicar sanção de obrigação de fazer, tendo por base o valor de R$ 4.240.480,40 (quatro milhões, duzentos e quarenta mil, quatrocentos e oitenta reais e quarenta centavos), consistente na antecipação de metas dos compromissos de abrangência do Edital 5G na faixa de radiofrequências de 3,5 GHz, com vencimento até 31 de julho de 2027, ou na faixa de radiofrequências de 2,3 GHz, com vencimento até 31 de dezembro de 2027, considerados os parâmetros trazidos no Informe nº 270/2025/COQL/SCO (SEI nº 14749168 - Processo nº 53500.003915/2019-11) e as retificações, condicionantes adicionais e propostas constantes do Ofício nº 23/2026/COQL/SCO-ANATEL (SEI nº 15027045 - Processo nº 53500.003915/2019-11), abaixo transcritos, bem como a adição que ora se faz para esclarecer que, no caso de recolhimento do valor em decorrência de ele ser superior ao custo estimado da OdF, a Prestadora não terá direito ao abatimento de 5% (cinco por cento), nos termos do art. 36-A, § 3º, do RASA:
+(...)
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+Portanto, não há nulidade nem insuficiência informacional, uma vez que o Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI nº 10454537) atendeu aos requisitos essenciais de validade, sem qualquer prejuízo ao direito de defesa da Prestadora. 
+II.a.2 - Nulidade do PADO por Encerramento Prematuro da Instrução
+A Recorrente alegou que foi intimada a apresentar alegações finais antes do encerramento da instrução, ao fundamento de que não teria sido elaborado informe ou outro documento que enfrentasse os argumentos da defesa, o que teria acarretado cerceamento do direito de manifestação final.
+No Informe nº 676/2025/CODI/SCO, a SCO entendeu pela inexistência de nulidade decorrente dessa circunstância, pois não há obrigatoriedade de manifestação técnica anterior às alegações finais, em consonância com o entendimento do Conselho Diretor e da PFE-Anatel.
+A manifestação da PFE-Anatel, consubstanciada no Parecer nº 29/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912), atestou a regularidade formal do procedimento, com destaque para os itens 10 a 16. O órgão consultivo assentou que, nos termos do art. 82, § 3º, do Regimento Interno da Anatel, a intimação para a apresentação de alegações finais ocorre após o encerramento da instrução processual, assegurando-se à parte interessada o conhecimento integral dos fatos e das provas constantes do processo.
+Destacou-se, ainda, que os informes técnicos possuem natureza de documentos preparatórios, elaborados ao término da instrução e aptos a fundamentar a decisão administrativa, conforme preceitua o art. 50, § 1º, da Lei nº 9.784/1999. Por conseguinte, sua prévia disponibilização ao interessado configuraria antecipação indevida dos fundamentos decisórios, em descompasso com a lógica do processo administrativo. Tal entendimento encontra amparo no Decreto nº 7.724/2012, que classifica pareceres e notas técnicas como documentos preparatórios, restringindo seu acesso ao momento posterior à edição do ato ou da decisão. Ademais, ressaltou-se que a eventual prática de elaboração prévia de informes em determinados processos não gera direito subjetivo ao administrado, dada a inexistência de previsão legal ou regimental nesse sentido.
+Portanto, a tramitação processual observou rigorosamente as formalidades estabelecidas na Lei nº 9.784/99 e no RIA. A recorrente exerceu seu direito à produção de provas sem qualquer indeferimento de pleito probatório. Ademais, apresentou alegações finais e interpôs o recurso cabível.
+Não houve cerceamento da ampla defesa e do contraditório, uma vez que a recorrente exerceu seu direito de manifestação e produção de provas no processo, em estrita conformidade com os arts. 82, inciso II, e 86 do RIA, que refletem o disposto na LPA.
+Ressalta-se que a área técnica não identificou necessidade de novas informações ou retificações quanto ao Despacho Ordinatório de Instauração que demandassem a reabertura de prazo para manifestação da Prestadora.
+Verifica-se que a área técnica cumpriu integralmente o disposto no art. 82, § 3º, do RIA, ao franquear à recorrente a oportunidade de apresentar alegações finais após o encerramento da instrução processual, nos seguintes termos:
+Art. 82. O PADO observará as seguintes regras e prazos:
+(...)
+§ 3º Após o encerramento da instrução processual o interessado será intimado para, em 10 (dez) dias, apresentar alegações finais.
+A rejeição de nulidade em razão da ausência de informe técnico entre a apresentação da defesa e a notificação para apresentação de alegações finais encontra amparo em entendimento já consolidado no âmbito do Conselho Diretor. Nesse sentido, reiteram-se, a seguir, alguns julgados recentes:
+Acórdão nº 33, de 20 de fevereiro de 2024
+Processo nº 53500.334309/2022-40
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro Relator: Artur Coimbra de Oliveira
+Fórum Deliberativo: Reunião nº 929, de 8 de fevereiro de 2024
+EMENTA
+PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES (PADO). ENTRADA EM OPERAÇÃO DO SISTEMA DE TELECOMUNICAÇÕES FORA DO PRAZO PREVISTO NO EDITAL DE LICITAÇÃO. EXTINÇÃO DE OUTORGA DECORRENTE DE PROCEDIMENTO LICITATÓRIO. COMPETÊNCIA DO CONSELHO DIRETOR. INFRAÇÃO CARACTERIZADA. LICENCIAMENTO FORA DO PRAZO ESTABELECIDO NO EDITAL. SUBSTITUIÇÃO DA SANÇÃO DE CADUCIDADE POR ADVERTÊNCIA.
+1. Ausência de nulidade em face da não intimação para apresentação de alegações finais antes da elaboração de Informe de instrução. Informe constitui documento preparatório à decisão.
+2. O Edital de Licitação nº 2/2015-SOR/SPR/CD-ANATEL estabeleceu prazo de até dezoito meses, contado a partir da data de publicação do extrato do ato de autorização de uso das radiofrequências associadas ao serviço no Diário Oficial da União, para a entrada em operação do sistema de telecomunicações, sob pena de extinção da autorização de uso da radiofrequência, prorrogável uma única vez, por no máximo doze meses, se as razões apresentadas para tanto forem julgadas relevantes pela Anatel.
+3. O descumprimento do prazo para entrada em operação do sistema de telecomunicações sujeita a interessada à extinção da autorização de uso da radiofrequência correspondente.
+4. A sanção de caducidade será aplicada nas hipóteses expressamente previstas em Lei ou em Regulamento, bem como diante do cometimento de infração grave, quando os antecedentes do infrator demonstrarem a ineficácia de outra sanção menos gravosa.
+5. O licenciamento de estação fora do prazo estabelecido no Edital, mas antes da deliberação dos autos pelo Conselho Diretor, possibilita a substituição da sanção de caducidade por outra menos gravosa.
+6. Aplicar a sanção de advertência.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 4/2024/AC (SEI nº 11385090), integrante deste acórdão, aplicar a sanção de advertência à SKY SERVIÇOS DE BANDA LARGA LTDA., CNPJ nº 00.497.373/0001-10, pelo não atendimento do prazo previsto no item 4.5 do Anexo II-B (Faixa de radiofrequências de 2.500 MHz - Lote C) do Edital de Licitação nº 2/2015-SOR/SPR/CD-ANATEL - Radiofrequências nas faixas de 1.800 MHz, 1.900 MHz e 2.500 MHz, conforme Termo de Autorização e Lotes relacionados na tabela abaixo:
+Termo de Autorização
+ | Lotes
+ | Frequências
+ | Áreas de prestação
+ | 
+208/2018 (3458681)
+ | H-3547304
+ | 2.570 - 2.585 MHz
+ | Santana de Parnaíba/SP
+ | 
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto e o Conselheiro Substituto Raphael Garcia de Souza. (grifou-se)
+Acórdão nº 312, de 11 de novembro de 2025
+Processo nº 53500.101575/2023-79
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 948, de 4 de novembro de 2025
+EMENTA
+DIREITO REGULATÓRIO. DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES. REGULAMENTO DE GESTÃO DA QUALIDADE DA PRESTAÇÃO DO SERVIÇO MÓVEL PESSOAL - RGQ-SMP. AUSÊNCIA DE NOTIFICAÇÃO APÓS ELABORAÇÃO DE DOCUMENTO TÉCNICO QUE SUBSIDIOU A DECISÃO. INEXISTÊNCIA DE NULIDADE. PRINCÍPIO DA RETROATIVIDADE DA NORMA MAIS BENÉFICA. INADEQUAÇÃO AO DIREITO ADMINISTRATIVO SANCIONADOR NA ATIVIDADE FINALÍSTICA. TEMPUS REGIT ACTUM. ART. 11 DO RGQ-SMP. MÉTODO DA INTERPRETAÇÃO SISTEMÁTICA DA NORMA. PARA SER EFETIVA, A INFORMAÇÃO SOBRE O MAPA DE COBERTURA DEVE SER FORNECIDA PREVIAMENTE À CONTRATAÇÃO DO SERVIÇO. MATERIALIDADE DA INFRAÇÃO. CORRETA A APLICAÇÃO DA METODOLOGIA DE MULTA APROVADA PELA RESOLUÇÃO INTERNA Nº 219/2023. PARÂMETRO "UA" DA FÓRMULA DE CÁLCULO DE MULTA. DELIMITAÇÃO. IMPOSSIBILIDADE DEVIDA À AUSÊNCIA DE INFORMAÇÃO ADEQUADA. ÔNUS DA PROVA. INCUMBÊNCIA DA RECORRENTE. UTILIZAÇÃO DA RECEITA OPERACIONAL LÍQUIDA - ROL DA INFRATORA MAIS PRÓXIMA AO ANO DO SANCIONAMENTO. AJUSTAMENTO. REFORMATIO IN PEJUS. POSSIBILIDADE. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO DECRETO Nº 12.150, DE 20 DE AGOSTO DE 2024, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA Organização para a Cooperação e Desenvolvimento Econômico - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA Organização das Nações Unidas - ONU. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. REFORMA DE OFÍCIO.
+1. O dever de a Agência garantir a oportunidade de exercício do direito de defesa pelo Interessado não exige que a Prestadora seja notificada para apresentar alegações finais entre o Informe que subsidia a decisão administrativa e o Despacho que, eventualmente, lhe imporá determinada sanção. Insubsistência da alegação de nulidade do Despacho recorrido, por ausência de prejuízo à Parte.
+2. Ao direito administrativo sancionador, no exercício de atividade finalística, aplica-se o princípio do tempus regit actum, segundo o qual deve o infrator ser sancionado nos termos das normas vigentes quando da prática da conduta apurada. A volatilidade do setor de telecomunicações impõe o acompanhamento pelas normas incidentes, com imposição de obrigações que buscam o desenvolvimento do setor e o bom atendimento dos usuários. Afastado o princípio da retroatividade da lei penal mais benéfica.
+3. As informações sobre o Mapa de Cobertura devem estar à disposição dos usuários, para consulta, em todos os Setores de Relacionamento, Setores de Atendimento e/ou Vendas, Centros de Atendimento e no seu sítio na Internet, incluindo-se o momento da contratação do serviço. A regra estabelecida no art. 11 do RGQ-SMP, a qual revela uma obrigação relacionada ao dever de informação ao consumidor, deve ser interpretada em conjunto com os arts. 3º, inciso IV, e 50, inciso V, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, e com o art. 6º, inciso III, do Código de Defesa do Consumidor - Lei nº 8.078, de 11 de setembro de 1990, de modo que o momento oportuno para se informar ao usuário sobre a área de cobertura do serviço é previamente à contratação, garantindo-lhe a possibilidade de verificar se o serviço alcança todas as localidades onde pretenda utilizá-lo.
+4. A aplicação da metodologia de cálculo de multa relativa a descumprimentos de direitos dos Usuários - MDGU, aprovada pela Resolução Interna nº 219, de 15 de junho de 2023, para as infrações referentes ao art. 11 do RGQ-SMP se mostra justificada. Precedentes do Conselho Diretor.
+5. A metodologia de cálculo da multa, aprovada pela Resolução Interna nº 219/2023, exige a utilização da Receita Operacional Líquida - ROL da prestadora relativa ao exercício imediatamente anterior ao da aplicação da sanção de primeira instância, quando disponível. Necessidade de retificação do exercício da ROL utilizada na dosimetria da penalidade.
+6. Nos termos do Enunciado nº 22 da Súmula da Anatel, “é possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel”.
+7. A decisão fundamenta-se no arcabouço normativo composto pelo Decreto Presidencial nº 11.738, de 18 de outubro de 2023, que estabelece o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, pelo Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor, e pelo Memorando de Entendimento celebrado entre Brasil e Estados Unidos, instrumento internacional que visa à incorporação de boas práticas regulatórias. Tal programa constitui uma iniciativa estruturada que adota princípios, estratégias, ações e procedimentos específicos, concebidos para promover o aprimoramento qualitativo da regulação estatal mediante o contínuo aperfeiçoamento e a racionalização do processo regulatório, em consonância com os padrões internacionais de excelência em matéria regulatória.
+8. A imposição de medidas sancionatórias tem por objetivo a elevação dos padrões qualitativos na prestação dos serviços de telecomunicações, em estrita observância às diretrizes de excelência regulatória preconizadas pela Controladoria-Geral da União - CGU, notadamente aquelas estabelecidas no contexto do Programa de Aprimoramento da Qualidade da Regulação Brasileira, o qual constitui referencial metodológico para a atividade fiscalizatória e sancionadora no setor.
+9. No que concerne às recomendações emanadas da Organização para a Cooperação e Desenvolvimento Econômico - OCDE, a decisão proferida confere efetiva segurança jurídica e previsibilidade normativa às consequências aplicáveis às condutas que contrariem obrigações de interesse público, especificamente quanto à imperatividade de observância dos direitos dos consumidores à qualidade da prestação de serviço estabelecidos pela Agência Reguladora, constituindo, assim, instrumento de efetivação do princípio da eficiência administrativa no âmbito da regulação setorial.
+10. A decisão contribui para a promoção dos Objetivos 1 (metas 1.4 ), 8 (meta 8.1), 9 (metas 9.1 e 9.c), 10 (metas 10.2 e 10.3), e 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas - ONU, relacionados à preocupação com o desenvolvimento de infraestrutura de qualidade, confiável, sustentável e resiliente, buscando apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis às tecnologias de informação e comunicação para todos.
+11. Pelo conhecimento e parcial provimento. Reforma, de ofício, do valor da sanção de multa.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 124/2025/AF (SEI nº 14365183), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, a fim de rever o total de infrações caracterizadas nas gravações relativas ao art. 11 e a ponderação segundo o canal de atendimento e o percentual de descumprimento da obrigação no cálculo da sanção de multa; e,
+b) revisar, de ofício: (a) para considerar as simulações de contratação, tanto na habilitação do SIMCARD quanto no site da operadora, uma única infração; e, (b) aplicar o valor da Receita Operacional Líquida mais recente disponível à data da aplicação da sanção, reformando o valor da multa imposta no Despacho Decisório nº 98/2024/CODI/SCO (SEI nº 12005322), de 5 de junho de 2024, para R$ 1.441.349,32 (um milhão, quatrocentos e quarenta e um mil, trezentos e quarenta e nove reais e trinta e dois centavos), em razão dos descumprimentos ao art. 11 do Regulamento de Gestão da Qualidade do Serviço Móvel Pessoal - RGQ-SMP, aprovado pela Resolução nº 575, de 28 de outubro de 2011.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda, Octavio Penna Pieranti e Vicente Bandeira de Aquino Neto. (grifou-se)
+Assim, refuta-se a tese de nulidade do feito decorrente do encerramento prematuro da instrução processual.
+II.a.3 - Da Alegação de Litispendência e Continência processual
+A recorrente sustentou que há litispendência entre o presente processo e os PADOs nº 53500.324872/2022-18 e nº 53500.016622/2024-61, ambos investigando a regularidade da cobrança de TMA, ou, no mínimo, continência entre distintos processos e/ou ações fiscalizatórias iniciados pela Anatel, entre o presente PADO e os referidos PADOs, podendo ocorrer bis in idem. A pluralidade de processos conferiria desordem processual e traria insegurança jurídica à Prestadora, uma vez que a pulverização de múltiplos feitos (ações fiscalizatórias, fiscalizações e PADOs) sobre o mesmo tema pode resultar em decisões contraditórias ou em bis in idem, com aplicação e cumulação de diversas sanções pela mesma conduta.
+A recorrente afirmou que o fato de os três PADOs se referirem a períodos distintos (conforme aduzido no Informe nº 500/2023) não constitui justificativa apta a afastar a incidência do instituto da continência, pois a discussão de mérito recai sobre a legalidade de uma conduta única (qual seja, a legalidade da TMA cobrada pela Sky). Por isso, reitera seu posicionamento anterior de que deve ser aplicado o instituto da continência in casu, nos termos do art. 56 do CPC e do art. 12 da Portaria nº 495/2012 da Anatel, para que sejam reunidos todos os processos e/ou ações fiscalizatórias que versem sobre a cobrança de taxa de manutenção pela Sky.
+A propósito das alegações recursais, a SCO consignou, no Informe nº 500/2023/CODI/SCO, o seguinte:
+3.14 Para melhor ilustrar o desencadeamento dos processos de acompanhamento e controle na Anatel, elaborou-se a tabela abaixo, contendo todos os processos mencionados por ela, adicionando-se alguns não citados:
+Processos
+ | Data/Período
+ | 
+Fiscalização
+ | Acompanhamento
+ | Controle
+ | 
+53528.000984/2018-83
+ | 53500.324435/2022-96 (Tarifação)
+ | 2017 e 2018
+ | 
+53500.324872/2022-18
+(Taxa de manutenção)
+ | 2017 e 2018
+ | 
+53528.001239/2020-76
+ | 53500.054104/2019-88
+ | 53500.325138/2022-68
+(Tarifação)
+ | 31/05/2020
+ | 
+53500.054974/2018-76
+ | 53500.056639/2023-70
+(Taxa de manutenção)
+ | 03/2018 a 07/2020
+ | 
+53528.003459/2021-15
+ | 53500.087376/2021-89
+ | Por enquanto, não há
+ | -
+ | 
+53528.003460/2021-40
+ | 53500.087405/2021-11
+ | Por enquanto, não há
+ | -
+ | 
+3.15 Logo, verifica-se que não há litispendência, uma vez que os processos em trâmite nesta Agência são derivados uns dos outros, formando uma cadeia de eventos e, quando muito, apenas foram subdivididos para que tratassem de um tema específico, mas em datas ou períodos diferentes. Quanto à aplicação do instituto da continência, há apenas 2 (dois) Pados relativos à cobrança de taxa de manutenção. Assim, não é possível agrupa-los, pois há prazos regimentais e prescricionais diversos sendo observados. De todo modo, havendo qualquer suspeita de que o Pado nº 53500.324872/2022-18 vá se ocupar da taxa de manutenção em datas idênticas às discutidas neste Pado, esta área técnica estará tão interessada em evitar a ocorrência de bis in idem, quanto a própria Prestadora.
+Atualizando o quadro, tem-se o seguinte status dos PADOs instaurados:
+Processos
+ | Data/Período
+ | 
+Fiscalização
+ | Acompanhamento
+ | Controle
+ | 
+53528.000984/2018-83
+ | 53500.324435/2022-96 (Tarifação)
+ | 2017 e 2018
+ | 
+53500.324872/2022-18
+(Taxa de manutenção)
+ | 2017 e 2018
+ | 
+53528.001239/2020-76
+ | 53500.054104/2019-88
+ | 53500.325138/2022-68
+(Tarifação)
+ | 31/05/2020
+ | 
+53500.054974/2018-76
+ | 53500.056639/2023-70
+(Taxa de manutenção)-presente processo
+ | 03/2018 a 07/2020
+ | 
+53528.003459/2021-15
+ | 53500.087376/2021-89
+ | 53500.016622/2024-61
+(Tarifação e taxa de manutenção/reconexão)
+ | 01/06 a 31/12/2021
+-
+ | 
+53528.003460/2021-40
+ | 53500.087405/2021-11
+ | 
+A área técnica, no Informe nº 500 /2023/CODI/SCO (SEI nº 11218523), esclareceu que, embora guardem pertinência temática, os índícios de infrações referem-se a períodos averiguatórios distintos e não sobrepostos:
+3.15 Logo, verifica-se que não há litispendência, uma vez que os processos em trâmite nesta Agência são derivados uns dos outros, formando uma cadeia de eventos e, quando muito, apenas foram subdivididos para que tratassem de um tema específico, mas em datas ou períodos diferentes. Quanto à aplicação do instituto da continência, há apenas 2 (dois) Pados relativos à cobrança de taxa de manutenção. Assim, não é possível agrupá-los, pois há prazos regimentais e prescricionais diversos sendo observados. De todo modo, havendo qualquer suspeita de que o Pado nº 53500.324872/2022-18 vá se ocupar da taxa de manutenção em datas idênticas às discutidas neste Pado, esta área técnica estará tão interessada em evitar a ocorrência de bis in idem, quanto a própria Prestadora.
+Portanto, trata-se de continuidade do exercício da atividade fiscalizatória da Agência. A continência exige identidade de partes e causa de pedir, sendo o pedido de uma ação mais abrangente que o das demais. Tal circunstância não se verifica no caso concreto.
+Essa conclusão está em consonância com o entendimento apresentado pela PFE-Anatel, no Parecer nº 29/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912), em especial no item “d” (“d) pela inexistência de desordem processual ou litispendência ou, ainda, continência processual”).
+O presente processo decorre da persistência da conduta após a instauração de processos anteriores, caracterizando nova materialização infracional em contexto temporal diverso e atingindo universos distintos de usuários.
+Esse foi o entendimento do Conselho Diretor no processo nº 53500.016622/2024-61, cujo acórdão se reproduz abaixo:
+Acórdão nº 136, de 14 de maio de 2026
+Processo nº 53500.016622/2024-61
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. MULTA POR DESCUMPRIMENTO DO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA. contra decisão que aplicou multa de R$ 23.313.078,25 (vinte e três milhões, trezentos e treze mil, setenta e oito reais e vinte e cinco centavos) por descumprimento aos arts. 41, § 2º, 85, caput, e 102, caput, do RGC, aprovado pela Resolução nº 632/2014.
+2. Fatos relevantes. A fiscalização apurou cobrança de visita técnica em valor superior ao informado aos usuários, cobrança de Taxa de Manutenção de Assinatura vinculada ao restabelecimento do serviço após suspensão por inadimplência e ausência de devolução em dobro dos valores cobrados indevidamente.
+3. A decisão anterior. A autoridade de primeira instância reconheceu a materialidade das infrações e aplicou a sanção de multa.
+4. As razões recursais. A Recorrente alegou nulidade do despacho de instauração, bis in idem, continência com outros Pados, ilegalidade do método fiscalizatório, cerceamento de defesa, inexistência das infrações e inadequação da dosimetria da multa.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o despacho de instauração é nulo; (ii) saber se há bis in idem ou continência com outros Pados; (iii) saber se o método fiscalizatório é ilegal ou se houve cerceamento de defesa; (iv) saber se restou comprovada a materialidade das infrações aos arts. 41, § 2º, 85, caput, e 102, caput, do RGC; e (v) saber se a dosimetria da multa deve ser revista.
+III. RAZÕES DE DECIDIR
+1. O despacho de instauração observou o art. 82 do Regimento Interno da Anatel - RIA. O ato indicou os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis.
+2. Não se configurou bis in idem. Os processos apontados pela Recorrente tratam de períodos distintos e de recortes fáticos autônomos.
+3. Não se configurou continência. Inexistem identidade plena de causa de pedir e sobreposição temporal entre os processos comparados.
+4. O método fiscalizatório foi regular. A análise censitária era tecnicamente viável e foi realizada com base em dados fornecidos pela própria Prestadora.
+5. O uso de ferramentas automatizadas de processamento de dados não comprometeu a validade da fiscalização. Os procedimentos adotados foram documentados e auditáveis.
+6. Não houve cerceamento de defesa. A Recorrente apresentou defesa administrativa e alegações finais. Não havia obrigação de nova intimação entre a manifestação final e a elaboração do informe técnico preparatório.
+7. Restou comprovada a infração ao art. 41, § 2º, do RGC. A fiscalização identificou 71 (setenta e um) usuários cobrados por visita técnica no valor de R$ 99,90 (noventa e nove reais e noventa centavos) sem previsão clara e suficiente da cobrança acima de R$ 55,00 (cinquenta e cinco reais).
+8. Restou comprovada a infração ao art. 102 do RGC. A Taxa de Manutenção de Assinatura foi cobrada em razão do restabelecimento do serviço após suspensão por inadimplência, ainda que lançada em fatura posterior e sob outra denominação.
+9. Restou comprovada a infração ao art. 85 do RGC. A Prestadora não demonstrou a devolução em dobro dos valores cobrados indevidamente aos usuários atingidos.
+10. A dosimetria da multa observou o Regulamento de Aplicação de Sanções Administrativas - RASA e a metodologia aplicável. Mantiveram-se a classificação das infrações como graves, a Receita Operacional Líquida - ROL utilizada no cálculo e a inexistência de atenuantes, por falta de comprovação de reparação integral aos usuários e por cessação não tempestiva da conduta.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Mantida a sanção de multa no valor de R$ 23.313.078,25 (vinte e três milhões, trezentos e treze mil, setenta e oito reais e vinte e cinco centavos).
+Tese de julgamento: "1. O despacho de instauração é válido quando indica os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa. 2. Não há bis in idem nem continência entre Pados que apuram fatos e períodos distintos. 3. É válida a fiscalização por análise censitária quando tecnicamente viável e baseada em procedimentos documentados e auditáveis. 4. Não há cerceamento de defesa quando a autuada apresenta defesa e alegações finais, sem exigência de nova intimação para manifestação sobre informe técnico preparatório. 5. Configura infração ao art. 41, § 2º, do RGC a cobrança de visita técnica em valor superior ao informado ao consumidor. 6. Configura infração ao art. 102 do RGC a cobrança de valor vinculado ao restabelecimento do serviço, ainda que sob outra denominação e em fatura subsequente. 7. Configura infração ao art. 85 do RGC a ausência de devolução em dobro dos valores cobrados indevidamente. 8. Mantém-se a multa quando a dosimetria observa o RASA e a metodologia aplicável, sem comprovação dos requisitos para incidência de atenuantes."
+Dispositivos relevantes citados: Lei nº 8.078/1990, art. 6º, III; Lei nº 9.472/1997, art. 173; Lei nº 9.784/1999, arts. 2º, X, 44 e 50, § 1º; Código de Processo Civil - CPC, art. 56; Decreto nº 7.724/2012, arts. 3º, XII, e 20; Resolução nº 589/2012, arts. 9º, 10, 19, 20 e 33, § 2º; Resolução nº 612/2013, arts. 82, 82, § 3º, 86, 116 e 123; Resolução nº 632/2014, arts. 3º, IV, 41, § 2º, 85 e 102; Resolução nº 746/2021, art. 5º, § 2º; Resolução Interna Anatel nº 219/2023, item 5.1.6; Portaria nº 959/2012; Portaria nº 2.106/2021; Portaria nº 2.123/2018; Portaria nº 2.154/2021.
+Jurisprudência relevante citada: Anatel, Acórdão nº 404, Processo nº 53532.002500/2010-14, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 873, j. 01.08.2019, publ. 05.08.2019.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 16/2026/NP (SEI nº 15272017), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Assim, não prosperam as alegações de nulidade por continência, litispendência ou prejuízo ao direito de defesa ou vícios no procedimento e fiscalização, uma vez que se tratam de condutas afetas a períodos temporais distintos, devidamente individualizadas nos respectivos processos.
+Esgotadas as preliminares, passa-se à análise das alegações recursais quanto ao mérito.
+II.a.4 - Da Possibilidade de Agravamento da Sanção (reformatio in pejus)
+Na Manifestação (SEI nº 15535514), a Recorrente alegou a impossibilidade da agravamento da sanção ao art. 102. 
+A PFE-Anatel, no Parecer nº 195/2026/PFE-ANATEL/PGF/AGU (SEI nº 15721315), manifestou-se no sentido de que é possível o agravamento da sanção (reformatio in pejus) na esfera recursal administrativa, desde que haja a regular intimação para a apresentação de alegações, nos termos do art. 64, parágrafo único da LPA, e desde que sejam respeitados os princípios da razoabilidade, proporcionalidade e motivação. Acrescentou que tal entendimento está respaldado na jurisprudência de diversos tribunais do país e no entendimento da Anatel.
+A possibilidade de agravamento da pena (reformatio in pejus), em sede recursal, é matéria pacificada no Conselho Diretor, conforme Enunciado nº 22 da Súmula da Anatel, assim redigido:
+Enunciado nº 22 da Súmula da Anatel:
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel.
+Veja-se o que diz o art. 64 da LPA:
+Lei nº 9.784, de 29 de janeiro de 1999:
+Art. 64. O órgão competente para decidir o recurso poderá confirmar, modificar, anular ou revogar, total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+Parágrafo único. Se da aplicação do disposto neste artigo puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão. (grifou-se)
+No mesmo sentido, o art. 125, §§ 3º e 4º, do RIA dispõe:
+Regimento Interno da Anatel:
+Art. 125. A tramitação do recurso administrativo observará as seguintes regras:
+(...)
+§3º A autoridade competente para decidir o recurso administrativo poderá confirmar, modificar, anular ou revogar total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+§4º Se da aplicação do disposto no §3º puder decorrer gravame à situação do recorrente, este deverá ser intimado para que, no prazo de 15 (quinze) dias, formule suas alegações antes da decisão. (grifou-se)
+A revisão de uma decisão administrativa é fundamentada no princípio da autotutela da Administração Pública, nos termos do Enunciado nº 346 da Súmula do STF, que afirma que a Administração Pública pode anular seus próprios atos. Ou seja, o Estado possui o dever-poder de corrigir atos ilegais, incluindo os atos de efeitos concretos.
+Nesse sentido, confira-se o seguinte julgado do eg. Supremo Tribunal Federal:
+Ementa: AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. ADMINISTRATIVO. ATENDIMENTO BANCÁRIO. REGULAMENTAÇÃO POR NORMAS INFRACONSTITUCIONAIS LOCAIS. POSSIBILIDADE. REPERCUSSÃO GERAL RECONHECIDA PARA RATIFICAR A JURISPRUDÊNCIA DA CORTE. PROCESSO ADMINISTRATIVO. RECRUDESCIMENTO DA SANÇÃO ADMINISTRATIVA EM RECURSO DO ADMINISTRADO. PRINCÍPIO DA AUTOTUTELA. POSSIBILIDADE.
+1. Os municípios têm competência para regulamentar o atendimento ao público em instituições bancárias, uma vez que se trata de matéria de interesse local.
+2. A jurisprudência da Corte sobre a matéria foi ratificada pelo Plenário desta Corte quando do julgamento do RE 610.221, da Relatoria da E. Min. Ellen Gracie, cuja Repercussão Geral restou reconhecida.
+3. A possibilidade da administração pública, em fase de recurso administrativo, anular, modificar ou extinguir os atos administrativos em razão de legalidade, conveniência e oportunidade, é corolário dos princípios da hierarquia e da finalidade, não havendo se falar em reformatio in pejus no âmbito administrativo, desde que seja dada a oportunidade de ampla defesa e o contraditório ao administrado e sejam observados os prazos prescricionais. 4. In casu, o acórdão recorrido assentou: “ADMINISTRATIVO - FUNCIONAMENTO DOS BANCOS – EXIGÊNCIAS CONTIDAS EM LEI ESTADUAL E MUNICIPAL – LEGALIDADE. 1. A jurisprudência do STF e do STJ reconheceu como possível lei estadual e municipal fazerem exigências quanto ao funcionamento das agências bancárias, em tudo que não houver interferência com a atividade financeira do estabelecimento (precedentes). 2. Leis estadual e municipal cuja argüição de inconstitucionalidade não logrou êxito perante o Tribunal de Justiça do Estado do RJ. 3. Em processo administrativo não se observa o princípio da "non reformatio in pejus" como corolário do poder de auto tutela da administração, traduzido no princípio de que a administração pode anular os seus próprios atos. As exceções devem vir expressas em lei. 4. Recurso ordinário desprovido.” 5. Agravo Regimental no Recurso Extraordinário com Agravo a que se nega provimento.
+(ARE 641054 AgR, Relator(a): LUIZ FUX, Primeira Turma, julgado em 22/05/2012, ACÓRDÃO ELETRÔNICO DJe-124 DIVULG 25-06-2012 PUBLIC 26-06-2012, grifos acrescidos)
+Da mesma forma, sobre o rito a ser seguido para a reformatio in pejus, consignam-se as lições de Egon Bockmann Moreira (2022, p. 317-318):
+A Lei nº 9.784/1999 fixa que, se da confirmação, modificação, anulação ou revogação da decisão recorrida “puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão” (art. 64, parágrafo único).
+Em primeiro lugar, a norma impede a reforma para pior sem prévio conhecimento e defesa do recorrido. Caso o órgão julgador cogite, mesmo em tese, de qualquer agravamento da decisão recorrida (“puder decorrer gravame”), deverá previamente notificar o recorrente de maneira fundamentada, indicando qual o agravamento imaginado e suas consequências. Em decorrência, abre‑se prazo para a manifestação do recorrente.
+Ou seja: nenhum gravame inédito aos autos poderá ocorrer sem o conhecimento prévio e o exercício da ampla defesa e do contraditório por parte do recorrente. Inclusive, poderão ser realizadas diligências probatórias, e o órgão julgador deverá levar em conta a manifestação do recorrente na motivação da decisão.
+Ou seja, é possível o agravamento da pena, em sede de recurso administrativo, desde que seja assegurado ao interessado o exercício das garantias da ampla defesa e do contraditório.
+Nesse sentido, a Recorrente foi devidamente intimada para apresentar suas alegações quanto à possibilidade da reformatio in pejus.
+Assim, restam atendidas as formalidades processuais para eventual agravamento da pena pelo Conselho Diretor.
+II.b. - Das Razões Recursais quanto à Materialidade das Infrações
+Neste item, examina-se a alegação relativa à materialidade das infrações em apuração: (i) licitude da cobrança e (ii) ausência de dolo.
+II.b.1 - Da Alegação de Licitude da Cobrança (art. 102) e Desnecessidade de Devolução em Dobro dos Valores (art. 85)
+Em suas razões recursais, a recorrente argumentou que a cobrança da TMA possui natureza própria e seria lícita à luz da regulamentação vigente à época. Sustentou que a referida taxa não era exigida como condição para o religamento do serviço após a suspensão por inadimplência. Segundo a prestadora, o valor destinava-se a custear a manutenção de equipamentos e da infraestrutura durante o período de bloqueio, sendo faturado apenas após o restabelecimento do sinal. Acrescentou, ainda, que a exação possuía expressa previsão contratual e era devidamente informada ao consumidor.
+Argumentou que a manutenção de infraestrutura com conectividade — essencial para assegurar atividades de rede, bem como serviços de atendimento, cobrança, proteção contra pirataria e prevenção a fraudes — implica custos mesmo durante a suspensão por inadimplemento. Por essa razão, defendeu que a taxa tinha valor fixo, sem correlação com o valor do plano de serviço contratado pelo usuário, e que a definição de preço fixo, no exercício da liberdade de estipulação de preços, conferiria maior facilidade operacional e atenderia ao custeio de atividades mínimas. A Recorrente igualmente afirmou que, por atuar em regime privado, teria liberdade para estipular preços, conforme a Lei Geral de Telecomunicações e regulamentos setoriais, apontando que práticas semelhantes ocorreriam em setores como energia elétrica e saneamento, com cobrança de taxa mínima de manutenção de equipamentos e infraestrutura.
+Nesse contexto, sustentou que, em razão da licitude da cobrança, não haveria violação ao art. 85 do Regulamento Geral de Direitos do Consumidor (RGC), pois a devolução em dobro somente seria devida mediante comprovação de pagamento indevido por parte do consumidor, o que, segundo a Recorrente, não teria sido apurado pela Anatel. Adicionalmente, a peça recursal apresentou três cenários: (i) quando o débito era regularizado antes da suspensão, a TMA não era cobrada, pois a mensalidade já remuneraria a prestação do serviço; (ii) nas hipóteses de rescisão por inadimplemento, a TMA não era cobrada por liberalidade da Recorrente; e (iii) quando a regularização do débito ocorria após a suspensão do serviço, a TMA era cobrada apenas posteriormente ao restabelecimento.
+A Recorrente afirmou, ainda, que teria atuado de boa-fé, com informação adequada aos consumidores acerca da TMA, em respeito ao princípio da transparência. Por fim, criticou a metodologia adotada pela Anatel, ao argumento de que teria havido presunção de que todos os consumidores cobrados efetivamente pagaram a TMA, sem comprovação dos pagamentos. Sustentou que a obrigação de ressarcimento somente existiria se comprovado o pagamento indevido e que o ônus de comprovar a infração ao art. 85 do RGC seria da Anatel, e não da empresa. Alegou que, ao utilizar faturas para identificar consumidores supostamente cobrados indevidamente, a Anatel não teria excluído da obrigação de devolução em dobro aqueles que não efetuaram o pagamento da TMA, conforme se extrairia do item 6.71 do Relatório de Fiscalização nº 69/2021, havendo presunção indevida de quitação por todos os usuários listados em faturas constantes de spool files.
+Ao examinar as razões recursais, a SCO, no Informe nº 676/2025/CODI/SCO, opinou pela improcedência do recurso, pelos seguintes fundamentos:
+(...)
+3.16 Análise: A cobrança da TMA, conforme apurado e demonstrado nestes autos e no Processo de Fiscalização Regulatória vinculado a este Pado, caracteriza-se como cobrança pelo restabelecimento do serviço, vedada pelo art. 102 do RGC. Os contratos da Recorrente previam expressamente a cobrança da TMA como condição para o restabelecimento dos serviços, o que configura infração à regulamentação. Ressalta-se que a liberdade tarifária das prestadoras em regime privado não afasta a obrigação de observar as normas de proteção ao consumidor.
+(...)
+3.18 Análise: É necessário esclarecer que a analogia com setores como energia elétrica e saneamento não se aplica necessariamente ao de telecomunicações, pois cada setor possui regulamentação própria relativas às especificidades e necessidades de cada um. Em matéria consumerista, se aplica ao setor de telecomunicações o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), que veda, expressamente, a cobrança pelo restabelecimento do serviço, tornando a conduta da empresa irregular.
+(...)
+3.20 Análise: A obrigação de devolução em dobro dos valores indevidamente cobrados decorre do art. 85 do RGC, sendo suficiente a comprovação da cobrança indevida. Cumpre ressaltar que foi constatada na análise de primeira instância que a empresa de fato cobrava a taxa de manutenção, contrariando o disposto na regulamentação, ou seja, a cobrança era usualmente feita aos usuários. Dessa forma, cabe à Recorrente comprovar que os pagamentos não foram feitos pelos consumidores, ou apontar os casos em que a devolução foi feita nos termos do art. 85, o que não foi feito no presente caso.
+No Parecer nº 29/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912), a PFE-Anatel apresentou a seguinte conclusão: "(f) pela adequada caracterização das infrações aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC".
+O art. 85 e 102 do RGC trazem a seguinte redação:
+Art. 85. O Consumidor que efetuar pagamento de quantia cobrada indevidamente tem direito à devolução do valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die.
+Parágrafo único. A critério do Consumidor, os valores cobrados indevidamente devem ser devolvidos por meio de:
+I - compensação por meio de abatimento no documento de cobrança seguinte à data da identificação da cobrança indevida ou do decurso do prazo do art. 83, respeitado o ciclo de faturamento;
+II - pagamento por meio de créditos com validade mínima de 90 (noventa) dias ou com a validade do crédito contestado, o que for maior, considerando o prazo máximo de 10 (dez) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83; ou,
+III - pagamento via sistema bancário, considerando o prazo máximo de 30 (trinta) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83.
+(...)
+Art. 102. É vedada a cobrança pelo restabelecimento da prestação do serviço.
+Conforme consta do Informe nº 110/2020/RCTS/SRC, de 4 de novembro de 2020 (SEI nº 5971920), a Gerência de Tratamento de Solicitações de Consumidores (RCTS) constatou que a TMA tem valor único de R$ 19,90 e é cobrada na hipótese de inadimplência, com suspensão parcial ou total do serviço, na ocasião da quitação dos débitos e do restabelecimento do serviço. Ressaltou-se que a TMA não é cobrada pela Sky nos casos em que a falta de pagamento ocasiona a rescisão contratual, nem quando o adimplemento ocorre com atraso, porém antes da suspensão parcial.
+No Informe nº 40/2022/RCTS/SRC, de 2 de agosto de 2022 (SEI nº 8348286), a RCTS destacou que a Prestadora cobrava a TMA tanto na prestação do Serviço de Acesso Condicionado (SeAC) quanto do Serviço de Comunicação Multimídia (SCM). Nos casos de suspensão parcial do serviço, a RCTS identificou que a Recorrente cobrava, durante o período de suspensão, o valor mensal do plano, além da TMA, o que fundamentou a conclusão dos fiscais de que a taxa de manutenção equivale a cobrança pelo restabelecimento do serviço. Assim, quanto aos cenários descritos pela Recorrente, registra-se que foram devidamente apurados pela Anatel no curso da instrução do processo que subsidiou o presente feito.
+Com base na avaliação apresentada no Informe nº 40/2022/RCTS/SRC, de 2 de agosto de 2022 (SEI nº 8348286), a Superintendência de Relações com os Consumidores (SRC) proferiu o Despacho Decisório nº 71/2022/RCTS/SRC (SEI nº 8860622), notificando a Recorrente para que cessasse imediatamente a cobrança da taxa de manutenção.
+No Relatório de Fiscalização nº 69/2021/GR05FI1/GR05/SFI (SEI nº 7453269), do Processo nº 53528.001239/2020-76, há item específico que analisa a Taxa de Manutenção de Assinatura, constando indícios de irregularidade quanto à taxa, conforme a seguir:
+ITEM 6 - TAXA DE MANUTENÇÃO DE ASSINATURA
+8.65 Este item de verificação, que tem por objetivo avaliar as condições de cobrança de valores referentes à "Taxa de Manutenção de Assinatura", tem seu detalhamento apresentado no Anexo VI - Item 6 - Taxa de Manutenção de Assinatura (SEI 7465027).
+(...)
+9. CONCLUSÃO
+9.1 Os resultados apurados neste trabalho são trazidos, de forma consolidada, na tabela abaixo.
+Na Análise Anexo VI - Item 6 - Taxa Manutenção Assinatura (SEI nº 7465027), consta o seguinte:
+6.9 Importante destacar que a SKY admite na CT-REG-195/2018 que efetua a cobrança de mensalidade relativa ao período de suspensão parcial, conforme resposta da prestadora já mencionada e reproduzida na Figura 6.1. O que será demonstrado no decorrer desse relatório é que há uma cobrança em duplicidade para os consumidores que atrasaram o pagamento da fatura em mais de 15 dias corridos (a suspensão parcial do serviço ocorre no 16º dia de inadimplência) independentemente se o pagamento do débito é efetuado dentro do período de suspensão parcial ou mesmo no período de suspensão total do serviço. Nesses dois casos há a cobrança da mensalidade pro-rata (em tese apenas do período de suspensão parcial), além da cobrança de taxa fixa de R$ 19,90 a título de Taxa de Manutenção de Assinatura, concomitante com a cobrança de mensalidade pro-rata dos serviços contratados/reduzidos.
+(...)
+6.18 Percebe-se pela leitura do laudo que há uma diferença muito grande de custos a depender o tempo (em dias) de inadimplência. Não menciona que muitos clientes fazem o pagamento da fatura em atraso sem entrar em contato com a SKY. Nesses casos a prestadora não teria, conforme o Laudo, nenhum custo adicional na sua estrutura de atendimento ou, então, um custo mínimo pelo envio de mailing automático ou agentes virtuais. Esse mesmo custo poderia ser atribuído para aqueles inadimplentes em até 15 dias e que não entraram em suspensão parcial . Nesses casos a SKY informa que não é cobrada a Taxa de Manutenção de Assinatura.
+6.19 Mais um motivo para tornar insustentável a tese do custo de manutenção de assinatura de valor único para todo e qualquer consumidor inadimplente entre 16 e 46 dias. Ou ainda, colocando de outra forma, qual o motivo de cobrar os mesmos R$ 19,90 de Taxa de Manutenção de Assinatura de um cliente do SCM que não possui programação de TV, criptografia, mecanismos antipirataria (cartão decodificador) e satélite geoestacionário?
+(...)
+6.20 Por último, não cita que os clientes em situação de inadimplência não estão isentos da mensalidade pois a SKY afirma que cobra pelos serviços de maneira pro-rata. Se considerarmos que o legislador impôs ônus de multa e juros como forma de suportar os custos gerados pelos pagamentos em atraso, seria uma dupla penalidade impor, de forma unilateral, uma Taxa de Manutenção de Assinatura que, ao que parece, tem o mesmo propósito. A Figura a seguir ilustra a régua de cobrança e evidencia o período em que incide a Taxa em comento de R$ 19,90 e admitida pela SKY, nos casos que atingirem o período de suspensão parcial, independente de evoluírem para a suspensão total ou mesmo a rescisão contratual:
+(...)
+6.21 Quanto ao prazo em que o cliente permanece inadimplente (a Taxa de Manutenção de Assinatura é cobrada após iniciar o bloqueio parcial. Para atrasos de pagamento até 15 dias são cobrados apenas os custos de mora (multa e juros), não incidindo a Taxa. Mas caso o consumidor pague a fatura no 16º dia (nesse caso é efetuada automaticamente a suspensão parcial do serviço) é efetuada a cobrança do valor integral da Taxa de Manutenção de Assinatura. Essa cobrança será de valor igual mesmo que o pagamento seja efetuado no fim do prazo legal incluindo o período de suspensão total de até 30 dias. Ou seja, não importa quantos dias permaneça em suspensão parcial ou total, o valor da Taxa de Manutenção de Assinatura é a mesma. Isso contradiz o principal argumento da prestadora em relação aos custos para manter a assinatura ativa pois não é razoável supor que o custo seja o mesmo para um, dois, três, até 30 dias. O que seria razoável nesse caso é imaginar uma taxa proporcional aos dias de manutenção da assinatura ativa por conta dos custos apontados no laudo apresentado pela empresa que estão diretamente atrelados ao tempo de permanência da assinatura ativa. Parece desprovido de qualquer fundamento justificar uma suposta taxa para suportar custos temporais variáveis aplicadas de forma única, sem relação considerar o tempo efetivo nessa condição.
+6.22 De outro lado a cobrança pro-rata dos serviços mantidos (canais obrigatórios para o SeAC e redução de velocidade para o SCM) é efetuada pela SKY em todos os casos. Ao contrário do que se possa supor e já mencionado anteriormente, a SKY não isenta a cobrança de mensalidade o período usufruído durante a suspensão parcial. Exceção é feita ao período de suspensão total pois não se pode perder de vista o comando do artigo 102 do RGC (Resolução nº 632, de 7 de março de 2014):
+(...)
+6.33 Para ilustrar esse processo utilizamos o caso do consumidor inadimplente que efetuou a quitação dentro do período de suspensão parcial e que consta no processo originário da RCTS. A análise foi realizada com base nas faturas fornecidas pela prestadora anexas à petição CT-019 2010 – (SEI nº 3811101) sendo os anexos DOC 7 (SEI nº 3811110). DOC 8 (SEI nº 3811111) e DOC 9 (SEI nº 3811112).
+6.35 Apesar da cobrança pro-rata do plano de serviço também é lançada a cobrança da Taxa de Manutenção de Assinatura com a mesma data do pagamento da fatura em atraso, ou seja, dia 07/01/2019, além de juros e correção monetária, como pode ser visualizado a seguir da fatura Anexo CT-019/2019 - Doc.09 (SEI nº 3811112):
+(...)
+6.36 Com a cobrança da Taxa de Manutenção de Assinatura o custo para o consumidor subiu de R$ 86,60 para R$ 103,61 (valor da fatura de R$ 106,09 menos R$ 2,48 referente a juros e multa). É importante observar essa variação para maior no valor mensal pois caso o consumidor tivesse efetuado o pagamento no prazo o valor seria de R$ 86,60 conforme mencionado. Então não há que se alegar que essa forma de cobrança adotada pela SKY beneficia o consumidor. Ao contrário, majora a fatura no mês em que é cobrada a Taxa de Manutenção de Assinatura. Esse tema será abordado mais à frente com mais casos que ilustram a desvantagem para o consumidor.
+6.37 Utilizamos também aqui as informações da fiscalização assistida com dados disponibilizados na CT 111/2021 (SEI nº 7398562), Anexo 1 (SEI nº 7398564), Anexo 2 (SEI nº 7398565) e Anexo 3 (SEI nº 7398566). A fatura com vencimento em 13/06/2020 (Anexo 2 SEI nº 7398565) foi paga no dia 03/07/2020, ou seja, 20 dias após o vencimento e durante a suspensão parcial. 6.38 As cobranças de mora e ajustes pelo atraso no pagamento estão na fatura com vencimento em 13/07/2020 - Anexo 3 (SEI nº 7398566) – e inicialmente traz a informação de que “você pagou a SKY e o sinal retornou. Esta fatura traz os valores de multas, juros e a cobrança referente aos dias em que o serviço foi disponibilizado’. Não informa de maneira clara a cobrança da Taxa de Manutenção de Assinatura.
+(...)
+6.40 Nesse ponto já podemos nos questionar que uma vez que é realizada a cobrança dos serviços prestados, qual é realmente o propósito da Taxa de Manutenção de Assinatura? Afinal o principal argumento no Laudo anexo à CT-REG-067/2019 (SEI nº 4148001) é que o custo de clientes adimplentes e inadimplentes existe sendo maior no caso dos inadimplentes, enquanto na CT-REG-195/2018 (SEI nº 3622660) a SKY afirma cobrar taxa de manutenção de assinatura voltada para fazer frente aos custos fixos de sistemas, rede, proteção de dados e antipirataria. Também é destinada a garantir disponibilidade e segurança ao cliente. Ora, se a cobrança do serviço é mantida mesmo durante o período de suspensão parcial, apenas sendo feito o ajuste de forma posterior na fatura subsequente ao pagamento do(s) valor(es) em atraso, a cobrança de Taxa de Manutenção de Assinatura não parece ter amparo algum. Além do mais a forma e a data em que é lançada a cobrança dessa taxa possui característica de taxa de religação do sinal.
+(...)
+6.59 A resposta mais pertinente é que somente quando há a aparece a cobrança da Taxa de Manutenção de Assinatura. Inclusive como foi demonstrado anteriormente a data dessa Taxa é sempre igual à data da reconexão/religação dos sinais.
+6.60 Todos os indícios até aqui apontam, de maneira farta, que a Taxa de Manutenção de Assinatura é, na realidade, uma cobrança pela religação dos sinais.
+(...)
+Situação semelhante foi constatada no âmbito do SCM, conforme registrado no Anexo VI, item 6 – Taxa de Manutenção de Assinatura (SEI nº 7465027);
+Consumidores do SCM
+6.61 Já foi mencionado anteriormente nesse relatório que a principal fundamentação que a SKY apresentou à Anatel para justificar a cobrança da Taxa de Manutenção de Assinatura foi o Laudo anexo à CT 067-2019 (SEI nº 4148001). O referido Laudo discorre apenas sobre o serviço de DTH, ou seja, de TV por assinatura. Em nenhum momento cita o SCM, seus custos, estrutura de atendimento ou razões para incidir a cobrança da Taxa também sobre os consumidores do SCM.
+6.62 Não se esperaria a manifestação da prestadora caso não fosse verificada a incidência dessa Taxa nos casos de inadimplência dos consumidores do SCM. Contudo a taxa é cobrada nas mesmas situações e no mesmo valor dos seus consumidores do SeAC. No item a seguir serão demonstradas faturas do SCM com incidência da Taxa de Manutenção de Assinatura.
+(...)
+Em relação ao quantitativo encontrado pela fiscalização, conforme Anexo VI - Item 6 - Taxa Manutenção Assinatura (SEI nº 7465027), apurou-se o seguinte:
+6.72 O resultado obtido é bem expressivo. Foram consolidados separadamente os serviços SeAC e SCM para se ter a dimensão de cada extrato. 
+Diferentemente do alegado pela Prestadora, no anexo do Relatório de Fiscalização, há verificação do número de assinantes, com a adequada consolidação dos resultados na tabela acima, agrupada por mês.
+Quanto aos instrumentos contratuais, o Anexo VI – Item 6 – Taxa de Manutenção de Assinatura (SEI nº 7465027), teceu as seguintes constatações:
+Informações disponibilizadas pela SKY (contratos e valores dos planos)
+6.75 Passemos, então, à análise do que a SKY informa ou apresenta aos consumidores sobre as possíveis cobranças dos planos de serviços, bem como, da Taxa de Manutenção de Assinatura:
+(...)
+6.77 O documento da figura acima foi anexado ao SEI em 23/01/2019 O texto do item 9.5 está grafado em negrito e chama a atenção especialmente o trecho que define que o restabelecimento do serviço se dará mediante o pagamento dos débitos pendentes e do “valor da manutenção/reconexão dos sinais”.
+6.78 Necessário destacar que a SKY se manifestou por meio da CT-REG-019/2019 em 11/02/2019 (SEI nº 3784425), posterior, portanto à anexação do Contrato Padrão do SeAC que a fragilidade do script era apenas “ação de treinamento da área de atendimento, não tem alteração de texto de script – este sem qualquer fragilidade.“
+6.79 Posteriormente observou-se alteração no documento disponível no site www.sky.com.br registrado no 5º Registro de Títulos e Documentos de SP que, segundo consta, foi apresentado em 05/06/2020. Esse novo Contrato Padrão traz alteração no item 9.5 em comento, suprimindo a palavra reconexão, passando o novo texto a ser:
+(...)
+6.80 Já o Contrato Padrão para o serviço de banda larga (SCM) disponível no endereço https://www.sky.com.br/documents/1407842/1833636/PDF_JUR_Contrato+SKY+Banda+Larga .pdf/865051da-33b2-1ecd-7924-f6725a6ab3dc?t=1522233776745 (consulta em 15/09/2021) não sofreu alteração e o texto permanece citando o “valor de reconexão dos sinais”:
+(...)
+6.83 Como demonstrado a SKY efetuou alterações nos modelos de contrato padrão para se adequar à narrativa de que a Taxa de Manutenção de Assinatura não é uma taxa de reconexão. Apesar disso os documentos não tão antigos assim, além do contrato do SCM atual ainda disponível no sitio da SKY na internet (www.sky.com.br), menciona valor da reconexão dos sinais.
+Ao final do Anexo VI - Item 6 - Taxa Manutenção Assinatura (SEI nº 7465027), a fiscalização apresentou as seguintes conclusões:
+Conclusão sobra a Taxa de Manutenção Assinatura
+6.94 A partir das informações analisadas e detalhadas ao longo deste item do relatório, passamos a responder as questões elencadas na presente demanda:
+1) O que é essa cobrança?
+As informações relacionadas ao longo desse relatório demonstram que a cobrança que carrega o nome de Taxa de Manutenção de Assinatura possui característica de Taxa de Religação (restabelecimento do serviço), o que é vedado expressamente pelo Art. 102 do RGC.
+Isso porque a mensalidade correspondente ao período de suspensão parcial é cobrada proporcionalmente. Não há isenção da cobrança dos serviços. Além disso a prestadora cobra juros e multa, o que é previsto na regulamentação, o que se entende ser o ressarcimento aos custos da prestadora por inadimplência do assinante.
+Em relação ao período de suspensão total o Art 95 do RGC veda a cobrança de assinatura ou qualquer outro valor referente ao serviço. Também aqui não encontra amparo a cobrança da Taxa de Manutenção de Assinatura.
+De qualquer ângulo que se analise a Taxa de Manutenção de Assinatura é, na melhor das hipóteses, cobrança em duplicidade. Se for para manter os custos da operação, isso já está embutido no valor do plano de serviço cobrado proporcionalmente e, caso admita-se que a Taxa seja uma forma de penalidade, são lançados os valores de multa e juros. Não há qualquer isenção, por parte da SKY, no período de suspensão parcial.
+Conforme demonstrado nesse relatório no mês de cobrança da Taxa em comento, o valor mensal dos serviços ficou, geralmente, acima do valor da assinatura mensal acrescida de juros e multa. Por essa razão até sob esse ponto não há como se afirmar que possa ser benéfica ao consumidor, onerando este consumidor acima do que prevê a regulamentação.
+2) Em quais momentos a empresa faz essa cobrança?
+Apenas na data de pagamento do débito em atraso dos consumidores em suspensão parcial ou suspensão total que ainda possuem o contrato ativo, ou seja, no momento do restabelecimento pleno do serviço ao consumidor que estava inadimplente a ponto de ter seu serviço suspenso temporariamente ou totalmente, porém antes da rescisão do contrato. A cobrança ocorre imediatamente após o pagamento da fatura, coincidindo com a data da “religação” ou restabelecimento do serviço pleno (que pode ser no mesmo dia do pagamento ou no dia subsequente) conforme o plano originalmente contratado.
+Conforme demonstrado não há cobrança da Taxa de Manutenção de Assinatura nos seguintes casos:
+a) Para o consumidor com débito pendente e que efetua o pagamento até o 15º (décimo quinto) dia de atraso, ou seja, que não entra em suspensão parcial, não é cobrada a Taxa de Manutenção de Assinatura. A SKY cobra juros e multa por conta do atraso na primeira fatura subsequente.
+b) Para os consumidores que não pagam os débitos pendentes e o tempo decorrido de atraso dá motivo ao cancelamento do contrato. Nesses casos os consumidores também não sofrem a cobrança da Taxa de Manutenção de Assinatura.
+A última fatura emitida é ajustada para a cobrança proporcional (pro-rata) de 15 dias antes de entrar em suspensão parcial e estorno dos valores dos períodos subsequentes. Portanto, para os consumidores que não entram em suspensão parcial e aqueles que tiveram o contrato cancelado por motivo de inadimplência não é cobrada a Taxa de Manutenção de Assinatura.
+3) Nos regulamentos das ofertas fiscalizadas ela é prevista?
+O contrato padrão do SeAC disponibilizado pela SKY possui em sua cláusula 9.5 a previsão da cobrança dessa taxa. No documento “Contrato_De_adesão_SKY” retirado de www.sky.com.br e anexado ao SEI em 23/01/2019 (SEI nº 3745028), a cláusula 9.5 define como “valor da manutenção/reconexão dos sinais”.
+Atualmente o documento disponível no site www.sky.com.br que foi atualizado em 05/06/2020, conforme data de registro no Ofício de Documentos. Esse novo Contrato Padrão traz alteração no item 9.5 em comento, suprimindo a palavra reconexão.
+Já o Contrato Padrão para o serviço de banda larga (SCM) disponível no endereço https://www.sky.com.br/documents/1407842/1833636/PDF_JUR_Contrato+SKY+Band a+Larga.pdf/865051da-33b2-1ecd-7924-f6725a6ab3dc?t=1522233776745 (consulta em 15/09/2021) não sofreu alteração e o texto permanece citando o “valor de reconexão dos sinais”.
+Quanto ao valor a SKY não apresentou nenhum sumário ou plano em que conste o valor da Taxa de Manutenção de Assinatura, tampouco a fiscalização localizou qualquer documento disponível que informe sobre essa taxa. Por exemplo, o documento SEI nº 6061159 anexado ao processo 53500.054974/2018-76, que tem data de publicação em 07/07/2020 é o Sumário de Contratação dos planos de TV por assinatura pós-pagos da SKY. Possui 5 páginas, apresenta os valores dos diversos planos comercializados e taxas que podem incidir, porém em nenhum momento faz referência à Taxa de Manutenção de Assinatura, seu valor ou condições em que é aplicável.
+Portanto, apesar de citar no contrato padrão, não se vislumbra previsão regulamentar para que a referida taxa possa ser aplicada aos consumidores inadimplentes. 6.95 Considerando as informações aqui apresentadas submete-se à apreciação da área competente para, em julgando improcedente a cobrança da Taxa de Manutenção de Assinatura, faça cessar imediatamente essa prática e determine a devolução de valores, em tese, cobrados indevidamente, de todo período legal passível de ressarcimento conforme as normas legais (devolução em dobro e corrigido).
+Verifica-se a cobrança da Taxa de Manutenção de Assinatura (TMA) nos serviços de SeAC e SCM, conduta vedada pelo art. 102 do RGC (aprovado pela Resolução nº 632/2014), sendo que a cobrança do valor indevido impõe a incidência do art. 85, caput, do mesmo regulamento.
+Em sede recursal, a Recorrente não apresentou fato novo nem demonstrou ter empreendido esforços para apurar os casos em que não houve pagamento, nem quais consumidores foram parcial ou totalmente reparados, o que descaracterizaria a infração ou justificaria a aplicação de eventuais atenuantes.
+Adicionalmente, os serviços de telecomunicações prestados em regime privado estão sujeitos a regras mais flexíveis, com menor interferência da União na regulação tarifária, não havendo controle direto de preços.
+A LGT, em especial os artigos 126, 127, 128, esclarece que a exploração de serviço de telecomunicações no regime privado será baseada nos princípios constitucionais da atividade econômica, de modo que a Agência, ao regular, observará a exigência de mínima intervenção na atividade econômica, firmando que a liberdade será a regra, ao mesmo tempo em que impõe limites a essa liberdade, como o respeito aos direitos dos usuários.
+Assim, a atuação da Agência deve pautar-se pela busca do equilíbrio entre a garantia dos direitos dos consumidores, a livre iniciativa e o estímulo à competição no mercado. Portanto, o regime privado não confere liberdade absoluta ao autorizado à prestação do serviço.
+Desse modo, com os dados apresentados tanto no Relatório de Fiscalização nº 69/2021/GR05FI1/GR05/SFI (SEI nº 7453269), do Processo nº 53528.001239/2020-76, anexado ao Processo nº 53500.054104/2019-88, quanto no processo de Fiscalização Regulatória nº 53500.054974/2018-76, a SCO consolidou, por meio do Informe nº 261/2023/CODI/SCO (cópia) (SEI nº 10457987), os seguintes quantitativos de infrações e usuários atingidos no SeAC e no SCM, conforme conclusão:
+Serviço
+ | Indício de irregularidade
+ | Dispositivos relacionados
+ | Origem
+ | Usuários afetados
+ | Data/Período
+ | 
+SCM
+ | Cobrança pelo restabelecimento da prestação do serviço
+ | Art. 102 do RGC
+ | Item "a" do título III deste Informe
+ | 1
+ | 26/06/2018
+ | 
+Item "b" do título III deste Informe
+ | 198.849
+ | 12/2019 a 07/2020
+ | 
+Não devolução em dobro, acrescido de correção e juros, de valores cobrados indevidamente
+ | Art. 85 do RGC
+ | Item "c" do título III deste Informe
+ | 198.850
+ | 06/2018 a 07/2020
+ | 
+SeAC
+ | Cobrança pelo restabelecimento da prestação do serviço
+ | 
+Art. 102 do RGC
+ | Item "a" do título III deste Informe
+ | 25
+ | 19/03 a 08/11/2018
+ | 
+Item "b" do título III deste Informe
+ | 3.575.208
+ | 10/2019 a 07/2020
+ | 
+Não devolução em dobro, acrescido de correção e juros, de valores cobrados indevidamente
+ | Art. 85 do RGC
+ | Item "c" do título III deste Informe
+ | 3.575.233
+ | 03/2018 a 07/2020
+ | 
+Assim, não prosperam as razões recursais e entende-se caracterizada as infrações ao art. 102 e 85 do RGC para os serviços SeAC e SCM. 
+II.b.2 - Da Ausência de Dolo
+A Recorrente sustentou que não cometeu infração à regulamentação ao cobrar a TMA, afirmando ter atuado de boa-fé e em conformidade com as normas aplicáveis. Alegou que, tão logo a Anatel considerou a cobrança irregular, cessou a prática após o trânsito em julgado administrativo da decisão, inclusive exercendo seu direito de defesa nas esferas administrativa e judicial. Argumentou que a interrupção da cobrança ocorreu no momento em que a decisão se tornou definitiva, inexistindo descumprimento de prazo.
+Sustentou, ainda, que a medida adotada pela Agência teria sido suficiente para recompor a situação, dispensando penalidades adicionais, à luz dos princípios da regulação responsiva. Por fim, afirmou que não houve intenção de descumprir normas ou obter vantagem indevida, razão pela qual sua postura colaborativa deveria ser considerada, reputando desproporcional a aplicação de sanção diante da alegada ausência de dolo ou má-fé.
+Conforme exposto, a regulamentação da Anatel não admite a cobrança de quaisquer custos pela prestadora durante o período de suspensão, excetuando-se a mensalidade proporcional ao período de suspensão parcial, multa e juros moratórios. Nesse sentido, a caracterização da infração aos arts. 85 e 102 do RGC (Resolução nº 632/2014) independe da verificação de dolo na conduta, configurando-se pelo simples descumprimento do dever regulamentar.
+Ademais, contrariamente ao alegado pela Recorrente, a cessação da conduta não foi imediata à notificação da Agência. O Despacho Decisório nº 71/2022/RCTS/SRC, de 2 de agosto de 2022, estabeleceu o prazo de 2 meses para a interrupção da cobrança da TMA, contado da notificação ocorrida em 5 de agosto de 2022 (SEI nº 8917768). Portanto, a conduta deveria ter sido integralmente cessada até 10 de outubro de 2022 — já considerado no cômputo o prazo decorrente do pedido de vista —, e não apenas em 24 de novembro de 2022, como verificado no processo.
+Rememora-se, ainda, que, quando da promulgação da Resolução nº 632/2014, a Recorrente interpôs pedido de interpretação de determinados dispositivos do normativo, dentre eles o art. 102, no âmbito do Processo nº 53500.205427/2015-12. Na ocasião, as considerações do Conselheiro Relator Igor Vilas Boas, consubstanciadas na Análise nº 73/2016/SEI/IF (SEI nº 0730341) — que subsidiou o item “a” do Acórdão nº 110, de 5 de abril de 2017 (SEI nº 1345268 e nº 1785547) — indeferiram o pedido interpretativo, assentando que o dispositivo é claro ao vedar a cobrança de taxa de restabelecimento de serviço, inclusive em hipóteses de inadimplência, nos seguintes termos:
+4.1 Cuida-se de Pedido Administrativo apresentado pela SKY BRASIL SERVIÇOS LTDA. acerca de interpretação dos arts. 46, 61, 92, 102 e 106 do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações – RGC, aprovado pela Resolução nº 632, de 7/3/2014. Tais dispositivos asseveram o seguinte:
+(...)
+4.29 Por fim, também não se pode acolher o que se alega em relação ao art. 102. A prestadora demanda que seja formalizada orientação para aplicação do dispositivo, impondo-o somente em casos em que a interrupção do serviço não for causada por inadimplemento por parte do consumidor. Alega a SKY não ser razoável que a empresa tenha que arcar com os custos do restabelecimento do serviço ao cliente que não manteve o pagamento em dia, utilizando-se do argumento do subsídio cruzado entre clientes adimplentes e inadimplentes, no sentido que os custos operacionais teriam que ser repassados à base de assinantes. Além disso, a isenção desse custo para o cliente inadimplente poderia, segundo ela, incentivar esse comportamento e fomentar o risco moral no mercado.
+4.30 Aqui, a Interessada expõe que o referido dispositivo não poderia afastar a possibilidade de a empresa cobrar valores em razão do restabelecimento do serviço, quando tiver ocorrido interrupção decorrente de conduta do consumidor. Ocorre que o art. 102 insere-se exatamente no capítulo que regulamenta a suspensão do serviço por falta de pagamento, não cabendo outra interpretação. O consumidor não fica impune pelo inadimplemento ou pela não aquisição de créditos, pois tem acesso restrito aos canais de distribuição obrigatória, e pode arcar com os montantes correlatos ao período de inadimplência e também juros e multa de mora sobre o valor devido (art. 100, parágrafo único do RGC).
+4.31 Conforme precedentes do Conselho Diretor, a solicitação de interpretação para o cumprimento de obrigações do RGC deve trazer subsídios suficientes para caracterizar a complexidade de sua implementação ou comprovar a sua excepcionalidade. Embora a Requerente alegue suposta necessidade de interpretação diversa para aplicação e cumprimento de obrigações previstas em alguns dispositivos do RGC, o pleito carece de elementos suficientes para subsidiar a interpretação pretendida pela empresa.(grifou-se)
+Desse modo, não prospera a alegação de descaracterização da infração por ausência de dolo. 
+III- Da Sanção Aplicada e Dosimetria
+Quanto à sanção, a Recorrente requereu que, caso a Anatel entenda pela manutenção de penalidade, sejam observados os princípios da proporcionalidade e da razoabilidade, com a aplicação de advertência, e não de multa, diante da alegada postura colaborativa da SKY e da cessação da conduta após a decisão definitiva da Agência. Sustentou, ainda, que a infração deveria ser classificada como de natureza leve ou média.
+Aduziu que a penalidade de multa seria desproporcional, porquanto a empresa teria atendido às determinações da Anatel, não havendo reincidência nem gravidade que justifique sanção mais severa.
+Alegou, ainda, que a ROL adotada como base para o cálculo da multa estaria incorreta, pois deveria ser considerada a do exercício mais próximo à aplicação da sanção (2023), conforme orientações da própria Anatel e precedentes internos, e não a de 2021, como teria ocorrido.
+Defendeu, ademais, a aplicação das atenuantes previstas no art. 20 do RASA, em especial a redução de 70% do valor da multa, sob o argumento de que a SKY teria cessado a conduta antes da instauração do PADO; alternativamente, solicitou a redução de 50%, por ter cessado a conduta antes do prazo final para apresentação de alegações.
+Por fim, a Recorrente contestou a aplicação do agravante de 10%, ao argumento de que a medida reparatória teria sido cumprida após decisão judicial, não havendo descumprimento injustificado do prazo estabelecido pela Anatel.
+Passa-se à análise das razões recursais e da dosimetria aplicada.
+III.a - Do Pleito para Aplicação da Sanção de Advertência
+Sobre a alegação de que deveria ser aplicada a penalidade de advertência, em razão de cessação da conduta assim que foi notificada pela Anatel, devendo a conduta ser caracterizada como leve ou média, a SCO, quando da aplicação da sanção, no Informe nº 500/2023/CODI/SCO (11218523), devidamente, ponderou que a " Prestadora não cumpriu a determinação da Anatel no prazo concedido. Se tivesse regularizado a situação em tempo hábil, em prol da ágil solução do problema, poderia receber a sanção de advertência. Mas o prazo concedido para a cessação da cobrança da taxa de manutenção foi de 2 (dois) meses, ao passo que a Prestadora supostamente regularizou a situação em prazo superior a 3 (três) meses. Portanto, entende-se que não pode ser beneficiada com a aplicação de sanção inferior à multa, recomendando-se também a aplicação do art. 19, IV, do RASA."
+Tem-se ainda que as infrações conferiram vantagem direta à prestadora, o que as caracteriza como graves, conforme o Regulamento de Aplicação de Sanções da Anatel, aprovado pela Resolução 589, de 2012, impedindo a aplicação de advertência:
+Art. 12. A Agência aplicará a sanção de advertência quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - não justifique a imposição de pena mais grave ao infrator; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - atendimento das medidas impostas em processo de Acompanhamento do qual derivou o Pado. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Parágrafo único. Não será aplicada a sanção de advertência a: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - descumprimento das obrigações relacionadas à universalização e à continuidade; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - infrações graves, na forma do § 3º do art. 9º deste Regulamento, ressalvada a situação prevista no inciso II do caput deste artigo. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Desse modo, não se verificam razões para a aplicação da penalidade de advertência no presente processo.
+III.b - Da Metodologia de Multa Aplicada
+Para apuração do valor da sanção de multa, a SCO aplicou a metodologia de cálculo do valor-base das sanções de multa relativa a descumprimentos a direitos dos Usuários previstos na regulamentação (MDGU), aprovada pela Resolução Interna Anatel nº 219, de 15 de junho de 2023 (SEI nº 10393366), em função da afinidade temática com as infrações aqui analisadas:
+4.1. O valor-base das sanções de multa relativa a infrações a direito e garantias dos usuários é determinado pela seguinte fórmula:
+4.2. Onde:
+4.2.1. Vbase: Valor-base da sanção de multa;
+4.2.2. Ua: Quantidade de Usuários atingidos pela infração;
+4.2.3. UT: Total de Usuários da prestadora na área de abrangência da infração;
+4.2.4. D: Dano causado pela infração;
+4.2.5. T: Tempo de duração da infração;
+4.2.6. FG: Fator de Gravidade;
+4.2.7. VRef: Valor de referência.
+A referida Resolução Interna aplica-se aos processos pendentes de decisão de primeira instância em 03 de julho de 2023. No presente caso, a decisão de primeira instância foi proferida apenas em 11 de abril de 2024.
+A SCO, no Informe nº 500/2023/CODI/SCO, aplicou os seguintes parâmetros:
+3.66 As infrações aqui tratadas são do tipo "pontual", uma vez que atingiram uma parcela identificável de clientes da prestadora.
+3.67 A variável usuários totais (Ut) corresponde à quantidade de acessos em cada serviço, conforme consulta de acessos - Anexo I (SEI 11248705). Por sua vez, a variável usuários afetados (Ua) corresponde às quantidades de cobranças apuradas nos processos de fiscalização e de fiscalização regulatória.
+3.68 O mês e ano das infrações correspondem ao do último dia em que ocorreram as ações de fiscalização, 31 de julho de 2020.
+3.69 A variável dano (D) foi estabelecida de acordo com os valores da tabela constante no item 5.1.4 da MDGU.
+3.70 A variável tempo (T) considerou os períodos indicados no Despacho Ordinatório de Instauração nº 30/2023/CODI/SCO (SEI 10454537), portanto, mais de um ano.
+3.71 Foi considerada a Receita Operacional Líquida (ROL) da prestadora com o SeAC e com o SCM, na qualidade de autorizada, relativa ao ano de 2021, último dado disponível nos sistemas da Anatel, conforme planilha de cálculo de multa - Anexo IV (SEI 11249609).
+A Recorrente questionou a aplicação da ROL de 2021, solicitando que fosse aplicada a ROL de 2023 por ser a mais próxima da aplicação da sanção pela SCO. A aplicação da ROL 2023, segundo a Recorrente, observaria a Resolução Interna nº 219/2023, as orientações da PFE-ANATEL e os precedentes deste órgão regulador. 
+A SCO justificou a adoção da ROL de 2021 por ser esta a receita operacional líquida mais recente disponível à época da aplicação da sanção de primeira instância, conforme fundamentação constante do item 3.12 do Informe nº 79/2024/CODI/SCO (SEI nº 11600517) e no Informe nº 291/2026/CODI/SCO (SEI nº 15543662). Esclareceu a SCO que o Despacho Decisório nº 47/2024/CODI/SCO (SEI nº 11602320), foi proferido em 11 de abril de 2024, de forma que a ROL do ano de 2021, conhecida pela SCO em 10 de janeiro de 2024, conforme Ofício nº 319/2023/CPAE/SCP-ANATEL (SEI nº 11171582) do Processo nº 53500.034710/2021-00, era, portanto a mais recente disponível no momento da aplicação da sanção. Destaca-se que a ROL do ano de 2022 só foi conhecida em 25 de abril de 2024, conforme Ofício nº 46/2024/CPAE/SCP-ANATEL (SEI nº 11530916), e as dos anos de 2023 e 2024 só foram conhecidas em 04 de setembro de 2025, conforme Ofício nº 604/2025/CPAE/SCP-ANATEL (SEI nº 14313398).
+Ressalta-se ainda que a metodologia aplicada estabelece, quanto à ROL, o seguinte:
+5.1.7. Valor de Referência (Vref): Valor correspondente a 1% da Receita Operacional Líquida – ROL da prestadora, da época da aplicação da sanção, devendo-se utilizar o seguinte:
+5.1.7.1. a ROL anual disponível na Agência mais próxima ao momento da aplicação da sanção.
+5.1.7.2. a ROL correspondente ao serviço e telecomunicações e à área de prestação [unidade(s) da federação] em que foi constatada a infração.
+5.1.7.3. o valor da ROL anual dividida por 12 (doze). (grifou-se)
+Portanto, o valor de referência previsto na metodologia de multa é o disponível mais próximo ao momento da aplicação da sanção. Desse modo, não há contrariedade à Resolução Interna, nem aos precedentes do Conselho Diretor, conforme se reproduz abaixo:
+Acórdão nº 136, de 14 de maio de 2026
+Processo nº 53500.016622/2024-61
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. MULTA POR DESCUMPRIMENTO DO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA. contra decisão que aplicou multa de R$ 23.313.078,25 (vinte e três milhões, trezentos e treze mil, setenta e oito reais e vinte e cinco centavos) por descumprimento aos arts. 41, § 2º, 85, caput, e 102, caput, do RGC, aprovado pela Resolução nº 632/2014.
+2. Fatos relevantes. A fiscalização apurou cobrança de visita técnica em valor superior ao informado aos usuários, cobrança de Taxa de Manutenção de Assinatura vinculada ao restabelecimento do serviço após suspensão por inadimplência e ausência de devolução em dobro dos valores cobrados indevidamente.
+3. A decisão anterior. A autoridade de primeira instância reconheceu a materialidade das infrações e aplicou a sanção de multa.
+4. As razões recursais. A Recorrente alegou nulidade do despacho de instauração, bis in idem, continência com outros Pados, ilegalidade do método fiscalizatório, cerceamento de defesa, inexistência das infrações e inadequação da dosimetria da multa.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o despacho de instauração é nulo; (ii) saber se há bis in idem ou continência com outros Pados; (iii) saber se o método fiscalizatório é ilegal ou se houve cerceamento de defesa; (iv) saber se restou comprovada a materialidade das infrações aos arts. 41, § 2º, 85, caput, e 102, caput, do RGC; e (v) saber se a dosimetria da multa deve ser revista.
+III. RAZÕES DE DECIDIR
+1. O despacho de instauração observou o art. 82 do Regimento Interno da Anatel - RIA. O ato indicou os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis.
+2. Não se configurou bis in idem. Os processos apontados pela Recorrente tratam de períodos distintos e de recortes fáticos autônomos.
+3. Não se configurou continência. Inexistem identidade plena de causa de pedir e sobreposição temporal entre os processos comparados.
+4. O método fiscalizatório foi regular. A análise censitária era tecnicamente viável e foi realizada com base em dados fornecidos pela própria Prestadora.
+5. O uso de ferramentas automatizadas de processamento de dados não comprometeu a validade da fiscalização. Os procedimentos adotados foram documentados e auditáveis.
+6. Não houve cerceamento de defesa. A Recorrente apresentou defesa administrativa e alegações finais. Não havia obrigação de nova intimação entre a manifestação final e a elaboração do informe técnico preparatório.
+7. Restou comprovada a infração ao art. 41, § 2º, do RGC. A fiscalização identificou 71 (setenta e um) usuários cobrados por visita técnica no valor de R$ 99,90 (noventa e nove reais e noventa centavos) sem previsão clara e suficiente da cobrança acima de R$ 55,00 (cinquenta e cinco reais).
+8. Restou comprovada a infração ao art. 102 do RGC. A Taxa de Manutenção de Assinatura foi cobrada em razão do restabelecimento do serviço após suspensão por inadimplência, ainda que lançada em fatura posterior e sob outra denominação.
+9. Restou comprovada a infração ao art. 85 do RGC. A Prestadora não demonstrou a devolução em dobro dos valores cobrados indevidamente aos usuários atingidos.
+10. A dosimetria da multa observou o Regulamento de Aplicação de Sanções Administrativas - RASA e a metodologia aplicável. Mantiveram-se a classificação das infrações como graves, a Receita Operacional Líquida - ROL utilizada no cálculo e a inexistência de atenuantes, por falta de comprovação de reparação integral aos usuários e por cessação não tempestiva da conduta.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Mantida a sanção de multa no valor de R$ 23.313.078,25 (vinte e três milhões, trezentos e treze mil, setenta e oito reais e vinte e cinco centavos).
+Tese de julgamento: "1. O despacho de instauração é válido quando indica os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa. 2. Não há bis in idem nem continência entre Pados que apuram fatos e períodos distintos. 3. É válida a fiscalização por análise censitária quando tecnicamente viável e baseada em procedimentos documentados e auditáveis. 4. Não há cerceamento de defesa quando a autuada apresenta defesa e alegações finais, sem exigência de nova intimação para manifestação sobre informe técnico preparatório. 5. Configura infração ao art. 41, § 2º, do RGC a cobrança de visita técnica em valor superior ao informado ao consumidor. 6. Configura infração ao art. 102 do RGC a cobrança de valor vinculado ao restabelecimento do serviço, ainda que sob outra denominação e em fatura subsequente. 7. Configura infração ao art. 85 do RGC a ausência de devolução em dobro dos valores cobrados indevidamente. 8. Mantém-se a multa quando a dosimetria observa o RASA e a metodologia aplicável, sem comprovação dos requisitos para incidência de atenuantes."
+Dispositivos relevantes citados: Lei nº 8.078/1990, art. 6º, III; Lei nº 9.472/1997, art. 173; Lei nº 9.784/1999, arts. 2º, X, 44 e 50, § 1º; Código de Processo Civil - CPC, art. 56; Decreto nº 7.724/2012, arts. 3º, XII, e 20; Resolução nº 589/2012, arts. 9º, 10, 19, 20 e 33, § 2º; Resolução nº 612/2013, arts. 82, 82, § 3º, 86, 116 e 123; Resolução nº 632/2014, arts. 3º, IV, 41, § 2º, 85 e 102; Resolução nº 746/2021, art. 5º, § 2º; Resolução Interna Anatel nº 219/2023, item 5.1.6; Portaria nº 959/2012; Portaria nº 2.106/2021; Portaria nº 2.123/2018; Portaria nº 2.154/2021.
+Jurisprudência relevante citada: Anatel, Acórdão nº 404, Processo nº 53532.002500/2010-14, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 873, j. 01.08.2019, publ. 05.08.2019.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 16/2026/NP (SEI nº 15272017), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Portanto, não procede a alegação recursal de que deveria ter sido adotada a ROL de 2023.
+Verificou-se a necessidade de ajuste no fator "Tempo (T)" da infração ao art. 102 do RGC, conforme registrado na Planilha de Cálculo de Multa – Anexo IV (SEI nº 11292618). Diferentemente do que consta no referido documento, que assinala o fator como "mais de um ano", a análise cronológica dos fatos demonstra que o período infracional foi inferior a 12 meses. Para o SCM, a conduta ocorreu entre dezembro de 2019 e julho de 2020 (8 meses); para o SeAC, o intervalo foi de outubro de 2019 a julho de 2020 (10 meses). Dessa forma, o enquadramento correto para ambos os serviços deve ser "até 1 ano", o que exige a retificação da dosimetria para refletir o tempo efetivo da infração e assegurar a proporcionalidade da sanção. Com vistas a sanar a impropriedade, determinou-se a remessa dos autos à SCO para a readequação do cálculo. A área técnica, no Informe nº 291/2026/CODI/SCO (SEI nº15543662), ao analisar as razões da recorrente — que rechaçava a caracterização da infração e, subsidiariamente, pleiteava a redução do Fator Tempo (T) para "até 1 ano"—, consignou a ausência de óbice à realização do ajuste.
+A respeito do fator (D) da infração ao art. 102, no Informe nº 500/2023/CODI/SCO (SEI nº 11218523), especificamente no item 5.69, afirma-se que foi aplicado o referido fator conforme o item 5.1.4 da Metodologia de cálculo de multa de DGU. Isso porque a conduta pode igualmente se enquadrar como danos materiais, inclusive cobrança indevida, devendo ser-lhe atribuída a valoração de "5" e não "4".
+Na petição de manifestação, a Recorrente requereu a redução do fator dano (D), de 5 (danos materiais, inclusive cobrança indevida ou venda casada) para 1 (infração sem prejuízo perceptível ao usuário), "tendo em vista que os consumidores não tinham o religamento do serviço condicionado ao pagamento da TMA, mas, pelo contrário, tinham os serviços restabelecidos imediatamente após compromisso de pagamento de valores em atraso". A respeito do ajuste, a SCO, no Informe nº 291/2026/CODI/SCO (SEI nº15543662), reiterou que a cobrança de TMA, conforme apurado "neste Pado e no Processo de Fiscalização Regulatória a ele vinculado, caracteriza-se como cobrança pelo restabelecimento do serviço, vedada pelo art. 102 do RGC. Logo, trata-se de cobrança indevida, conduta ilícita cujo valor do dano é 5 (cinco), como se observa na tabela do item 5.1.4 da metodologia aprovada pela Resolução Interna Anatel nº 219/2023 e de acordo com o mencionado no item 3 do Ofício de diligência". Tem-se ainda que o ajuste no fator Dano igualmente segue o precedente do Conselho Diretor no Acórdão nº 135/2026, no âmbito do processo nº 53500.016622/2024-61.
+Os demais fatores não necessitam de reparos, mantando-se o valor base da multa.
+III.c - Agravantes e Atenuantes
+Conforme o Informe nº 500/2023/CODI/SCO (SEI nº 11218523), em consulta aos sistemas de controle de PADOs da Anatel e considerando o período precedente a cinco anos da data de finalização da ação fiscal (31 de julho de 2020), verificou-se a existência de 1 antecedente relativo ao SCM e 2 antecedentes relativos ao SeAC, conforme consta da Consulta de Antecedentes – Anexo II (SEI nº 11248709).
+Adicionalmente, a SCO aplicou a todas as infrações agravante de 10%, com fundamento no art. 19, III, do RASA. Tal majoração justifica-se pela concorrência de duas circunstâncias agravantes previstas no art. 9º, §3º, do RASA.
+O art. 9º, § 3º do RASA apresenta a seguinte redação:
+art. 9º ....
+(...)
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - vantagem direta ao infrator em decorrência da infração cometida; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - má-fé; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+III - risco à vida; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+IV - atingir número significativo de usuários; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+V - não atendimento a metas de ampliação ou universalização do acesso a serviço de telecomunicações; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+VI - óbice à atividade de fiscalização regulatória; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+VII - uso não autorizado de radiofrequências ou exploração de serviço de telecomunicações sem autorização da Anatel. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+VIII - descumprimento injustificado de ordens emanadas de autoridades com poder requisitório. (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+Ainda, quanto às infrações ao art. 102, caput, do RGC, a SCO acresceu o percentual de 10%, em observância ao art. 19, IV, do RASA, em virtude de medida descumprida no processo de acompanhamento que precedeu o PADO.
+Art. 19. O valor da multa será acrescido, nos percentuais abaixo, caso incidam as seguintes circunstâncias agravantes:
+I - 10% (dez por cento) para cada caso de reincidência específica, até o limite de 40% (quarenta por cento);
+II - 1% (um por cento) para cada caso de antecedente, até o limite de 20%; e
+III - 10% (dez por cento) pela incidência de cada uma das hipóteses previstas no § 3º do art. 9º deste Regulamento, a partir da segunda ocorrência, até o limite de 40% (quarenta por cento).
+IV - 10% (dez por cento) para cada medida preventiva ou reparatória descumprida no processo de Acompanhamento que precedeu o Pado, até o limite de 40% (quarenta por cento). (Incluído pela Resolução nº 746, de 22 de junho de 2021)
+(...)
+A SCO afirmou que não foram encontradas reincidências específicas em relação aos dispositivos infringidos.
+A Recorrente contestou a aplicação da agravante de 10%, sob o argumento de que a medida reparatória teria sido cumprida após decisão judicial, inexistindo descumprimento injustificado do prazo estabelecido pela Anatel. Todavia, conforme já exposto, a determinação foi atendida em prazo superior ao fixado na decisão proferida no âmbito da fiscalização regulatória que antecedeu o PADO. Nessa linha, a manutenção da agravante mostra-se pertinente, inclusive como forma de desestimular o cumprimento intempestivo das determinações da Agência e preservar a efetividade da atuação regulatória.
+A respeito das atenuantes, a SCO no cálculo da multa não aplicou nenhuma circunstância atenuante.
+A recorrente defendeu a aplicação das atenuantes previstas no art. 20 do RASA, especialmente a redução de 70% do valor da multa, sob o argumento de que teria cessado a conduta antes da instauração do PADO, ou, alternativamente, a redução de 50%, por ter interrompido a infração antes do decurso do prazo para alegações.
+Sobre a cessação da conduta, conforme consta dos itens 3.36, 3.41 e 3.45 do Informe nº 500/2023/CODI/SCO (SEI nº 11218523), a SCO ressaltou que:
+3.36. A instauração deste processo com a indicação da quantidade de afetados e do valor possivelmente pago por esses consumidores, serve justamente para que a Prestadora possa conhecer do que está sendo acusada e apresentar documentação que comprove sua regularidade, e que os consumidores não pagaram ou, se pagaram, que foram devidamente ressarcidos. Cabe à Prestadora a adequada comprovação de que agia corretamente, ao invés de repisar argumentos já debatido em sede de fiscalização regulatória, sem apresentar qualquer fato novo ou que demonstre ter empreendido esforços para apurar os casos em que não houve pagamento e quais consumidores foram parcial ou totalmente reparados, fazendo jus a descaracterização da infração ou o recebimento de eventuais atenuantes.
+(...)
+3.41. A Prestadora não cumpriu a determinação da Anatel no prazo concedido. Se tivesse regularizado a situação em tempo hábil, em prol da ágil solução do problema, poderia receber a sanção de advertência. Mas o prazo concedido para a cessação da cobrança da taxa de manutenção foi de 2 (dois) meses, ao passo que a Prestadora supostamente regularizou a situação em prazo superior a 3 (três) meses. Portanto, entende-se que não pode ser beneficiada com a aplicação de sanção inferior à multa, recomendando-se também a aplicação do art. 19, IV, do Rasa.
+(...)
+3.45 Este Pado foi instaurado em 27 de junho de 2023, isto é, após o dia 24 de novembro de 2022, data em que a Prestadora afirma ter cessado a cobrança da taxa de manutenção, mediante a parametrização dos sistemas de faturamento, a fim de que para a taxa de manutenção fosse estipulado o valor R$0,00 (zero reais). Apesar da maneira como foi feita a correção da conduta, que denota a obstinação da Prestadora em manter o sistema apto à volta da cobrança a qualquer momento e com muita facilidade, esse não é um empecilho para a aplicação da atenuante. Os impeditivos residem no fato da Prestadora ter extrapolado o prazo da medida cautelar e, também, por não ter comprovado a reparação total ao usuário.
+A SCO reiterou a inexistência da hipótese para incidência de atenuante no Informe nº 676/2025/CODI/SCO, conforme trecho a seguir:
+a) Ausência de Dolo e Regulação Responsiva
+(...)
+3.22. Em que pese a narrativa da Sky, a conduta da Recorrente não foi considerada colaborativa, pois a cessação da cobrança da TMA ocorreu após o prazo concedido pela Anatel e após tentativas frustradas de regularização, de modo que não faz jus ao benefício da regulação responsiva ou à exclusão da sanção. Cumpre reforçar que os impeditivos à aplicação de atenuantes neste caso residem no fato da Prestadora ter extrapolado o prazo da medida cautelar e por não ter comprovado a reparação total aos usuários prejudicados.
+b) Dosimetria da Pena
+(...)
+3.24. (...). Com relação às atenuantes previstas no art. 20 do Rasa, não é possível a aplicação pois não houve cessação da conduta dentro de prazo estipulado, nem comprovação de reparação total ao usuário. A circunstância agravante foi corretamente aplicada em razão do descumprimento de medida reparatória.
+As hipóteses de atenuantes estão previstas no art. 20 do RASA:
+Art. 20. O valor da multa será reduzido, nos percentuais abaixo, caso incidam as seguintes circunstâncias atenuantes:
+/CODI/SCOI - 90% (noventa por cento), nos casos de cessação espontânea da infração e reparação total do dano ao serviço e ao usuário, previamente à ação da Agência;
+II - 70% (setenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, antes da intimação da instauração do Pado ou dentro do prazo estipulado pela Anatel, quando assim ocorrer; (Redação dada pela Resolução nº 746, de 22 de junho de 2021);
+III - 50% (cinquenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, até o término do prazo para a apresentação de alegações finais em âmbito de Pado; (Redação dada pela Resolução nº 746, de 22 de junho de 2021);
+IV - 20% (vinte por cento), nos casos de adoção de medidas, pelo infrator, para minimizar os efeitos decorrentes da infração cometida e reparação total ao usuário, quando cabível, até o término do prazo para apresentação de alegações finais nos autos do Pado; (Redação dada pela Resolução nº 746, de 22 de junho de 2021);
+V - 15% (quinze por cento), nos casos de confissão clara e expressa do infrator acerca da autoria e materialidade do fato apurado, apresentada até o término do prazo para apresentação de defesa. (Incluído pela Resolução nº 746, de 22 de junho de 2021).(grifou-se)
+Verifica-se que, para a incidência da atenuante prevista tanto no inciso II quanto no inciso III, não basta a cessação da conduta; é necessária a reparação integral ao usuário antes do prazo estabelecido pela Anatel, o que não ocorreu.
+No caso, o prazo estipulado por meio do Despacho Decisório nº 71/2022/RCTS/SRC foi descumprido e não houve comprovação de reparação integral ao usuário, razão pela qual resta inviabilizada a concessão da atenuante pleiteada (incisos II e III).
+O entendimento pela inaplicabilidade da atenuante do art. 20, inciso II, e de que a Recorrente não faz jus ao benefício do art. 12, inciso II, ambos do RASA, foi corroborado pelo Parecer da PFE-Anatel exarado no processo:
+Parecer 29/2024/PFE-ANATEL/PGF/AGU (SEI nº 11427912)
+63. Por todo o exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal (PGF), vinculada à Advocacia Geral da União (AGU), opina:
+(...)
+g) pelo entendimento de que, não tendo a Prestadora cumprido a determinação dentro do prazo estipulado, entende-se que não faz jus ao benefício disposto no art. 12, inciso II, do RASA;
+h) pela inaplicabilidade da atenuante prevista no art. 20, II, do RASA, uma vez que o prazo estipulado por meio do Despacho Decisório nº 71/2022/RCTS/SRC foi descumprido, além de não ter havido comprovação de reparação total ao usuário;
+Portanto, não prosperam as razões recursais.
+Verifica-se que já se encontra instaurado o Procedimento de Acompanhamento e Controle (PAC) destinado ao acompanhamento do cumprimento obrigacional de reparação aos consumidores identificados no PADO nº 53500.056639/2023-70, instaurado em face da Sky Serviços de Banda Larga Ltda., CNPJ n.º 00.497.373/0001-10. Assim, o acompanhamento da devolução aos consumidores segue em processo próprio. 
+Diante do exposto, verifica‑se que as razões recursais apresentadas pela Recorrente não se mostram aptas a afastar os fundamentos que embasaram a decisão constante do Despacho Decisório nº 47/2024/CODI/SCO (SEI nº 11602320), de 11 de abril de 2024. Os argumentos trazidos no recurso não afastam as irregularidades identificadas nem apresentam elementos novos que autorizem a revisão do entendimento já consolidado. Contudo, conforme abordado anteriormente, há necessidade de ajuste nos fatores Dano ("D") e tempo ("T").
+III.d - Do ajuste de ofício no cálculo da multa
+Considerando o exposto, impõe-se o recálculo do valor da multa, com a retificação dos parâmetros empregados na planilha de dosimetria:
+Infração
+ | Serviço
+ | UF
+ | Ano da ROL
+ | ROL Anual
+ | Vref (1% da ROL mensal)
+ | Porte
+ | Sanção
+ | Tipo de Infração
+ | Mês
+ | Ano
+ | Unidade de Medida
+ | Ut
+ | Ua
+ | Total de Ua por infração
+ | % de descumprimento (Item 5.1.1.1)
+ | Grupo de Usuários Atingidos
+ | Dano (D)
+ | Conduta Ilícita
+ | Tempo
+ | T
+ | Gravidade
+ | FG
+ | Vbase
+ | Dobro da Vantagem Auferida
+ | Agravantes
+ | Valor da Multa
+ | 
+Reincid. Específica
+ | Antecedentes
+ | Mais de uma hipót. do art. 9.º, § 3.º
+ | Medida Preventiva ou Reparatória Descumprida
+ | 
+102, caput - Realizar cobrança pelo restabelecimento do serviço
+ | SCM
+ | BR
+ | 2021
+ | 90.994.745
+ | 75.829
+ | Média-Grande
+ | Multa
+ | Pontual
+ | 7
+ | 2020
+ | Usuários / Chamadas
+ | 225.489
+ | 198.850
+ | 198.850
+ | 100%
+ | Grupo Significativo
+ | 5
+ | Danos materiais, inclusive cobrança indevida ou venda casada
+ | Até 1 ano
+ | 0,25
+ | Grave
+ | 1
+ | R$ 89.011,31
+ | R$ 0,00
+ | 0%
+ | 1
+ | 1%
+ | 10%
+ | 10%
+ | R$ 107.703,69
+ | 
+85, caput - Não devolver em dobro valores pagos cobrados indevidamente
+ | SCM
+ | BR
+ | 2021
+ | 90.994.745
+ | 75.829
+ | Média-Grande
+ | Multa
+ | Pontual
+ | 7
+ | 2020
+ | Usuários / Chamadas
+ | 225.489
+ | 198.850
+ | 198.850
+ | 100%
+ | Grupo Significativo
+ | 5
+ | Danos materiais, inclusive cobrança indevida ou venda casada
+ | Mais de 1 ano
+ | 0,3
+ | Grave
+ | 1
+ | R$ 106.813,57
+ | R$ 2.599.201,80
+ | 0%
+ | 1
+ | 1%
+ | 10%
+ | 0%
+ | R$ 2.885.114,00
+ | 
+102, caput - Realizar cobrança pelo restabelecimento do serviço
+ | SEAC
+ | BR
+ | 2021
+ | 5.961.999.940
+ | 4.968.333
+ | Grande
+ | Multa
+ | Pontual
+ | 7
+ | 2020
+ | Usuários / Chamadas
+ | 4.648.176
+ | 3.575.233
+ | 3.575.233
+ | 100%
+ | Grupo Significativo
+ | 5
+ | Danos materiais, inclusive cobrança indevida ou venda casada
+ | Até 1 ano
+ | 0,25
+ | Grave
+ | 1
+ | R$ 5.446.677,08
+ | R$ 0,00
+ | 0%
+ | 2
+ | 2%
+ | 10%
+ | 10%
+ | R$ 6.644.946,03
+ | 
+85, caput - Não devolver em dobro valores pagos cobrados indevidamente
+ | SEAC
+ | BR
+ | 2021
+ | 5.961.999.940
+ | 4.968.333
+ | Grande
+ | Multa
+ | Pontual
+ | 7
+ | 2020
+ | Usuários / Chamadas
+ | 4.648.176
+ | 3.575.233
+ | 3.575.233
+ | 100%
+ | Grupo Significativo
+ | 5
+ | Danos materiais, inclusive cobrança indevida ou venda casada
+ | Mais de 1 ano
+ | 0,3
+ | Grave
+ | 1
+ | R$ 6.536.012,49
+ | R$ 46.732.471,94
+ | 0%
+ | 2
+ | 2%
+ | 10%
+ | 0%
+ | R$ 50.000.000,00
+ | 
+Portanto, há necessidade de revisão de ofício do valor da multa de R$ 59.367.657,73 para R$ 59.637.763,72.
+IV - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+A fundamentação apresentada está em consonância com esses objetivos, especialmente o descrito no inciso II mencionado acima. A aplicação de reprimenda à recorrente reforça os objetivos das políticas públicas da Anatel, promovendo a qualidade dos serviços de telecomunicações. Além disso, contribui para a confiabilidade esperada na correção de condutas indesejadas pelas prestadoras.
+Expõe-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada encontra-se alinhada aos objetivos estabelecidos, em especial àqueles dispostos no art. 5º, inciso VII, do Decreto nº 12.150/2024, bem como nos itens 1.5, i, ii e xii, do memorando supracitado. O processo pauta-se em evidências de descumprimento, respeitando o devido processo legal e, ao analisar a adequação da sanção de multa, busca assegurar que a decisão seja eficaz para alcançar os objetivos de aprimoramento da qualidade dos serviços prestados.
+Esse alinhamento reforça e legitima a capacidade regulatória da Anatel para promover intervenções no mercado e, concomitantemente, fortalece a confiança na efetividade das medidas adotadas para a correção de condutas indesejadas praticadas pelas prestadoras.
+V - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento(PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades.
+A referida obra explora debates sobre os desafios e oportunidades dentro dessa temática. No capítulo 2, que trata da Autonomia Decisória, a autora Patrícia Pessoa Valente (2024, p. 49) destaca, já na introdução, que:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para atos que contrariem obrigações de interesse público devidamente salvaguardadas pela Anatel.
+VI - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE oferece orientação para auxiliar os formuladores de políticas na avaliação e melhoria da estrutura legal, regulatória e institucional voltada para a governança corporativa. O objetivo é apoiar a confiança e a integridade do mercado, promover a eficiência econômica, fomentar o crescimento sustentável e assegurar a estabilidade financeira. Os princípios de governança estabelecidos são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar, ademais, que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para ações que contrariem obrigações de interesse público, devidamente protegidas pela Anatel. A imposição da sanção tem como objetivo assegurar o cumprimento dos padrões mínimos de qualidade de atendimento ao usuário exigidos pela Agência.
+VII - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+O Brasil é um dos países signatários da referida Agenda, tendo, dessa forma, caráter cogente para o Poder Executivo brasileiro. Isso porque, em 2023, editou-se o Decreto nº 11.704, que instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inc. I), competindo-lhe, dentre outros pontos, acompanhar e monitorar o alcance dos ODS (art. 2º, inc. II) e identificar, sistematizar e divulgar boas práticas e iniciativas que colaborem para o alcance dos ODS (art. 2º, inc. IV). Tem-se, portanto, que a República firmou seu compromisso em buscar a implementação dos objetivos e indicadores da referida Agenda.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Pontua-se que a Agenda 2030 não faz incursões sobre as políticas públicas concretas de implementação desses objetivos e indicadores, cabendo essa atribuição às instituições governamentais dos países signatários. Assim, destaca-se que a edição do mencionado Decreto nº 11.704/2023 constitui um ato de reafirmação do compromisso brasileiro com a implementação dos ODS, sendo, novamente, de observância obrigatória pelos órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+Esta Agência, enquanto responsável pela concepção, implementação e monitoramento de políticas públicas relacionadas à ampliação da conectividade no setor de telecomunicações, dispõe de margem de discricionariedade para avaliar quais são as opções concretas de políticas públicas que estão mais alinhadas com a consecução dos ODS.
+Compreende-se que a decisão contribui para o cumprimento do Objetivo 16 da Agenda 2030, que busca promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis. A educação das empresas para que respeitem integralmente os direitos básicos dos consumidores e prestem serviços adequados está em consonância com a meta 16.3, pois promove o Estado de Direito em nível nacional, garantindo igualdade de tratamento para todas as partes interessadas no tema.
+Ademais, há uma relação direta com a meta 16.7, já que a tomada de decisão pelo ente regulador, por meio do sancionamento, assegura uma atuação responsiva, inclusiva e participativa da sociedade como um todo.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo, como foco principal, o desenvolvimento humano no Brasil e no Mundo. As principais dimensões desse projeto têm natureza social, ambiental, econômica e institucional. O desenvolvimento global somente é concebível por um caminho sustentável, com medidas verdadeiramente transformadoras. Justamente por isso, foram definidos 17 objetivos e 169 metas globais interconectadas, a serem atingidos até 2030.
+Com essa iniciativa, o Brasil consolida sua posição ao dispor de um instrumento orientador para a territorialização dos ODS, mantendo-se fiel aos fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+conhecer o Recurso Administrativo, e no mérito negar-lhe provimento;
+reformar de ofício o valor da multa para R$ 59.637.763,72, em razão da necessidade de ajuste nos fatores "tempo" (T) e "dano (D)", de "mais de um ano" para "até um ano", e de "4"para "5", respectivamente, aplicado às infrações ao art. 102 do Regulamento Geral de Direitos do Consumidor, diante da cobrança indevida ao usuário.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 09/07/2026, às 17:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15899261 e o código CRC FB64EDF1.
+ | 
+Referência: Processo nº 53500.056639/2023-70 | 
+SEI nº 15899261 |

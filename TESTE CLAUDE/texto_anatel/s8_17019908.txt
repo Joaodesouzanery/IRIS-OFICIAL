@@ -1,0 +1,36 @@
+SEI/ANATEL - 15211301 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 18, de 20 de fevereiro de 2026
+Processo nº 53516.008400/2011-81
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. EXERCÍCIO DE 2009. CRÉDITO TRIBUTÁRIO. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A., incorporadora de GLOBAL VILLAGE TELECOM S.A., contra o Despacho Decisório nº 103/2025/COUN/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública - CFRP do exercício de 2009.
+2. A Recorrente alega: (i) extinção do crédito tributário em razão de depósitos judiciais; (ii) decadência do crédito tributário; (iii) ausência de fato gerador, em respeito ao princípio da anterioridade tributária; e (iv) não incidência da CFRP sobre o equipamento denominado DSLAM - Digital Subscriber Line Access Multiplexer.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se houve extinção do crédito tributário por depósitos judiciais; (ii) saber se ocorreu decadência do crédito tributário; (iii) saber se há ausência de fato gerador em razão do princípio da anterioridade tributária; e (iv) saber se incide CFRP sobre o equipamento DSLAM.
+III. RAZÕES DE DECIDIR
+1. A Recorrente não comprovou a realização dos depósitos judiciais, não se desincumbindo do ônus processual de provar os fatos alegados.
+2. O crédito tributário refere-se a estações não licenciadas, submetendo-se ao prazo decadencial do art. 173, I, do Código Tributário Nacional - CTN, não estando configurada a decadência.
+3. A discussão sobre violação ao princípio da anterioridade tributária está judicializada, configurando renúncia tácita à apreciação administrativa do tema.
+4. Equipamentos DSLAM, BRAS - Broadband Remote Access Server e roteadores são considerados estações de telecomunicações do Serviço de Comunicação Multimídia - SCM, sendo regular a cobrança da CFRP sobre tais equipamentos.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e não provido.
+Tese de julgamento: "1. Não comprovada a extinção do crédito tributário por depósitos judiciais. 2. Não configurada a decadência do crédito tributário referente a estações não licenciadas. 3. A judicialização da discussão sobre anterioridade tributária impede a apreciação administrativa do tema. 4. É regular a incidência da CFRP sobre equipamentos DSLAM, BRAS e roteadores, considerados estações de telecomunicações."
+Dispositivos relevantes citados: Lei nº 5.172/1966, art. 173, I; Lei nº 9.998/2000; Lei nº 9.784/1999, art. 36; Resolução Anatel nº 612/2013, art. 85.
+Jurisprudência relevante citada: STJ, REsp nº 1001348, Rel. Min. José Delgado, 08/04/2008; Súmula Vinculante nº 1 do do Conselho Administrativo de Recursos Fiscais - CARF.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 12/2026/OP (SEI nº 15097551), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15211301 e o código CRC 637657D6.
+ | 
+Referência: Processo nº 53516.008400/2011-81 | 
+SEI nº 15211301 |

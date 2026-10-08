@@ -1,0 +1,53 @@
+SEI/ANATEL - 15532236 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 121, de 23 de abril de 2026
+Processo nº 53500.010731/2026-36
+Recorrente/Interessado: VIASAT BRASIL PARTICIPACOES LTDA., MARLINK PARTICIPAÇÕES E SERVIÇOS LTDA., TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA, GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA., SATCOM DIRECT CAPACIDADE SATELITAL LTDA., INMARSAT BRASIL SATÉLITES LTDA., INTERSATELLITE DO BRASIL LTDA., ORBCOMM COMUNICACOES VIA SATELITE LTDA, SITA INC DO BRASIL HOLDINGS LTDA, TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA, ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA., ARYCOM TECNOLOGIA E COMUNICACOES LTDA, HONEYWELL AEROESPACIAL DO BRASIL LTDA, HONEYWELL DO BRASIL LTDA.
+CNPJ nº 24.626.589/0001-04, 15.539.169/0001-91, 14.314.117/0001-54, 04.403.421/0001-14, 14.990.727/0001-78, 03.398.946/0001-46, 22.725.492/0001-15, 11.520.057/0001-38, 02.272.289/0001-23, 27.651.180/0001-28, 23.393.151/0001-52, 27.422.548/0001-86, 63.166.369/0001-99 e 61.338.844/0001-31.
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 108, de 23 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. CONFERÊNCIA DE DIREITO DE EXPLORAÇÃO DE SATÉLITE. SATÉLITE ESTRANGEIRO INMARSAT-3 AOR WEST. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Solicitação de conferência de Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West, na posição orbital 54°O, até 31 de dezembro de 2028, para a MARLINK SAS e a INMARSAT SOLUTIONS (CANADA) INC.
+2. O pedido abrange a operação em todo o território nacional, nas faixas de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz, no enlace de subida, e de 1525 a 1544 MHz e de 1545 a 1559 MHz, no enlace de descida, correspondentes à banda L.
+3. No curso da instrução, a área técnica analisou a documentação, examinou os aspectos técnicos, regulatórios e de coordenação, reconheceu representantes legais no Brasil e submeteu o pleito à Consulta Pública nº 12/2026, sem recebimento de contribuições.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se estão presentes os requisitos legais e regulamentares para a conferência do Direito de Exploração do satélite estrangeiro Inmarsat-3 AOR West; e (ii) saber se a expedição dos atos pode ser condicionada ao recolhimento do preço público devido.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor decidir sobre a conferência de direito de exploração de satélite, nos termos da Lei Geral de Telecomunicações - LGT e do Regimento Interno da Anatel - RIA.
+2. A solicitação foi formalizada pelas operadoras interessadas e instruída com projeto técnico simplificado e demais documentos exigidos pelo art. 16 do Regulamento Geral de Exploração de Satélites - RGSat e pelo Ato nº 9.526/2021.
+3. A Gerência de Outorga e Licenciamento de Estações - ORLE atestou a conformidade documental do pedido e a regularidade fiscal das representantes legais perante a Fazenda Federal, o Fundo de Garantia do Tempo de Serviço -FGTS e a Anatel.
+4. As representantes legais indicadas são pessoas jurídicas constituídas sob as leis brasileiras, com sede e administração no País.
+5. As representantes legais apresentaram as declarações exigidas pela regulamentação quanto à aptidão para o desempenho da atividade, à observância da regulamentação aplicável e à inexistência de impedimentos para contratar com o Poder Público.
+6. A documentação expedida pela administração de origem demonstrou as condições autorizadas do sistema satelital no país de origem.
+7. A Proprietária do satélite reconheceu formalmente a MARLINK SAS e a INMARSAT SOLUTIONS (CANADA) INC. como operadoras legítimas do satélite.
+8. O prazo solicitado e as subfaixas de radiofrequências são compatíveis com as condições autorizadas no país de origem.
+9. A Consulta Pública nº 12/2026 foi realizada, na forma do Ato nº 4.430/2023, e não recebeu contribuições. A ausência de contribuições afastou a necessidade de imposição de restrições, limites ou condições técnicas adicionais.
+10. A Gerência de Espectro, Órbita e Radiodifusão - ORER concluiu que as faixas, objeto do pleito, estão atribuídas e destinadas a serviços compatíveis com aplicações por satélite.
+11. A ORER concluiu que não há redes de satélites brasileiras notificadas, nem pedidos em análise na Agência, para as mesmas frequências.
+12. A análise técnica concluiu pelo atendimento dos requisitos dos arts. 10, 18 e 30 do RGSat e do Ato nº 9.523/2021.
+13. Não houve parecer desfavorável da União Internacional de Telecomunicações - UIT e a vida útil estimada do satélite é compatível com o prazo pretendido.
+14. O caso não se enquadra nas hipóteses de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, previstas no art. 39, § 2º, do RIA e na Portaria nº 642/2013.
+15. O pleito configura nova conferência de Direito de Exploração, e não prorrogação, porque não houve manifestação de interesse em prorrogação no prazo regulamentar.
+16. O satélite deverá entrar em operação no prazo máximo de 2 (dois) anos, a contar da publicação do extrato do ato no Diário Oficial da União, nos termos do art. 24, § 1º, do RGSat.
+17. A expedição dos atos deve ficar condicionada ao recolhimento do valor integral do preço público ou, se houver parcelamento, ao pagamento da primeira parcela.
+IV. DISPOSITIVO E TESE
+Pedido deferido.
+Tese de julgamento: "1. É cabível a conferência do Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West à MARLINK SAS e à INMARSAT SOLUTIONS (CANADA) INC., na posição orbital 54°O, até 31 de dezembro de 2028, para operação em todo o território nacional nas faixas de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz, no enlace de subida, e de 1525 a 1544 MHz e de 1545 a 1559 MHz, no enlace de descida. 2. A conferência do direito depende do atendimento dos requisitos documentais, técnicos, regulatórios e de coordenação previstos na regulamentação setorial. 3. A expedição dos atos de conferência fica condicionada ao recolhimento integral do preço público ou, em caso de parcelamento, ao pagamento da primeira parcela. 4. O satélite deverá entrar em operação no prazo máximo de 2 (dois) anos contado da publicação do extrato do ato no Diário Oficial da União. 5. A representante legal da MARLINK SAS no Brasil é a MARLINK PARTICIPAÇÕES E SERVIÇOS LTDA. 6. As representantes legais da INMARSAT SOLUTIONS (CANADA) INC. no Brasil são VIASAT BRASIL PARTICIPAÇÕES LTDA., TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA., GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA., SATCOM DIRECT CAPACIDADE SATELITAL LTDA., INMARSAT BRASIL SATÉLITES LTDA., INTERSATELLITE DO BRASIL LTDA., ORBCOMM COMUNICACOES VIA SATELITE LTDA., SITA INC DO BRASIL HOLDINGS LTDA., TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA., ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA., ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA., HONEYWELL AEROESPACIAL DO BRASIL LTDA. e HONEYWELL DO BRASIL LTDA."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º, parágrafo único, art. 19, VIII, IX e XXXII, e art. 172; Resolução nº 612/2013, art. 39, § 1º e § 2º, e art. 133, VII e IX; Resolução nº 748/2021, art. 3º, III, art. 10, art. 16, art. 18, art. 22, art. 23, art. 24, § 1º, art. 30, II, III, § 4º e § 5º, art. 38 e art. 39, § 7º; Resolução nº 772/2025; Ato nº 9.523/2021; Ato nº 9.526/2021; Portaria nº 642/2013; Ato nº 4.430/2023.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 39/2026/EH (SEI nº 15510595), integrante deste acórdão:
+a) conferir o Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West, à MARLINK SAS, empresa constituída sob as leis da França, e à INMARSAT SOLUTIONS (CANADA) INC., empresa constituída sob as leis do Canadá, na posição 54°O e faixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida), correspondentes à banda L, até 31 de dezembro de 2028, nos moldes das minutas de Ato SEI nº 15459664 e nº 15459957, respectivamente, cujas expedições encontram-se condicionadas à efetivação do recolhimento do valor integral do preço público, ou, quando parcelado, do valor da primeira parcela; 
+b) declarar que a representante legal da MARLINK SAS no Brasil é a MARLINK PARTICIPAÇÕES E SERVIÇOS LTDA., CNPJ nº 15.539.169/0001-91, empresa constituídas sob as leis brasileiras, com sede e administração no País e que as representantes legais da INMARSAT SOLUTIONS (CANADA) INC. no Brasil são as empresas: VIASAT BRASIL PARTICIPACOES LTDA., CNPJ nº 24.626.589/0001-04; TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA., CNPJ nº 14.314.117/0001-54; GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA., CNPJ nº 04.403.421/0001-14; SATCOM DIRECT CAPACIDADE SATELITAL LTDA., CNPJ nº 14.990.727/0001-78; INMARSAT BRASIL SATELITES LTDA., CNPJ nº 03.398.946/0001-46; INTERSATELLITE DO BRASIL LTDA., CNPJ nº 22.725.492/0001-15; ORBCOMM COMUNICACOES VIA SATELITE LTDA., CNPJ nº 11.520.057/0001-38; SITA INC DO BRASIL HOLDINGS LTDA., CNPJ nº 02.272.289/0001-23; TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA., CNPJ nº 27.651.180/0001-28; ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA., CNPJ nº 23.393.151/0001-52; ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA., CNPJ nº 27.422.548/0001-86; HONEYWELL AEROESPACIAL DO BRASIL LTDA., CNPJ nº 63.166.369/0001-99; e HONEYWELL DO BRASIL LTDA., CNPJ nº 61.338.844/0001-31; todas constituídas sob as leis brasileiras, com sede e administração no País.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em período de férias.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 23/04/2026, às 19:59, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15532236 e o código CRC 911F7644.
+ | 
+Referência: Processo nº 53500.010731/2026-36 | 
+SEI nº 15532236 |

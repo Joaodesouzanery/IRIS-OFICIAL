@@ -1,0 +1,115 @@
+SEI/ANATEL - 15263445 - Análise
+Boletim de Serviço Eletrônico em 02/07/2026
+Análise nº 32/2026/AF
+Processo nº 53500.027376/2020-49
+Interessado: Superintendência de Outorga e Recursos à Prestação
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Proposta de revisão do Acórdão nº 61, de 26 de fevereiro de 2021, com vistas à alteração dos Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita que operam na faixa de 5.925 MHz a 7.125 MHz, aprovados pelo Ato nº 14.448, de 4 de dezembro de 2017, especificamente no que se refere aos equipamentos classificados como Sistema de Acesso sem Fio em Banda Larga para Redes Locais, na faixa de 6 GHz.
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO REGULATÓRIO. REVISÃO DE REQUISITOS TÉCNICOS PARA EQUIPAMENTOS DE RADIACOMUNICAÇÃO DE RADIAÇÃO RESTRITA NA FAIXA DE 6 GHZ. PRORROGAÇÃO DE PRAZO PARA SUBMISSÃO AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+1. Proposta de revisão do Acórdão nº 61, de 26 de fevereiro de 2021, para alteração dos Requisitos Técnicos para Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, aprovados pelo Ato nº 14.448, de 4 de dezembro de 2017, quanto às condições de operação de sistemas de acesso sem fio em banda larga na faixa de 6 GHz.
+2. Processo incluído automaticamente na pauta da Reunião do Conselho Diretor, com objetivo de restringir o uso de equipamentos do Sistema de Acesso sem Fio em Banda Larga para Redes Locais à faixa de 5.925 MHz a 6.425 MHz.
+3. Relevância e complexidade do tema justificam a necessidade de prorrogação do prazo para submissão da matéria ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível prorrogar o prazo para submissão da proposta de alteração dos requisitos técnicos ao Conselho Diretor, diante da relevância e complexidade da matéria.
+III. RAZÕES DE DECIDIR
+1. O processo foi incluído automaticamente na pauta da Reunião do Conselho Diretor, conforme previsto no Regimento Interno da Anatel.
+2. A matéria apresenta relevância e complexidade, exigindo análise aprofundada.
+3. O Regimento Interno da Anatel permite a prorrogação do prazo para submissão da matéria ao Conselho Diretor, mediante justificativa.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Prorrogação do prazo para submissão da matéria ao Conselho Diretor por mais 60 dias.
+Tese de julgamento: "1. É possível prorrogar o prazo para submissão ao Conselho Diretor de proposta de alteração dos requisitos técnicos para avaliação da conformidade de equipamentos de radiocomunicação de radiação restrita na faixa de 6 GHz, diante da relevância e complexidade da matéria, nos termos do Regimento Interno da Anatel."
+Dispositivos relevantes citados: Resolução nº 612/2013 (Regimento Interno da Anatel), art. 127, § 3º.
+REFERÊNCIAS
+BRASIL. Lei nº 9.472, de 16 de julho de 1997. Dispõe sobre a organização dos serviços de telecomunicações, a criação e funcionamento da Anatel, e outros aspectos institucionais. Diário Oficial da União: seção 1, Brasília, DF, 17 jul. 1997.
+BRASIL. Agência Nacional de Telecomunicações. Regimento Interno da Anatel. Aprovado pela Resolução nº 612, de 29 de abril de 2013. Diário Oficial da União: seção 1, Brasília, DF, 2 mai. 2013.
+RELATÓRIO
+Trata-se de proposta de revisão do Acórdão nº 61, de 26 de fevereiro de 2021, com vistas à alteração dos Requisitos Técnicos para Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, aprovados pelo Ato nº 14.448, de 4 de dezembro de 2017, especificamente no que se refere às condições de operação de sistemas de acesso sem fio em banda larga na faixa de 6 GHz.
+Conforme a Consulta Pública nº 46, de 31 de agosto de 2021 (SEI nº 7324879), a Anatel realizou tomada de subsídios entre os dias 1º de setembro de 2021 e 30 de novembro de 2021, objetivando coletar informações da sociedade quanto à reavaliação dos limites de emissões indesejáveis de equipamentos de radiação restrita de potência muito baixa que operam na faixa de 5.925 MHz a 7.125 MHz. Tais limites estão previstos nos Requisitos Técnicos aprovados pelo Ato nº 14.448, de 4 de dezembro de 2017, cuja redação foi atualizada pelo Ato nº 1306, de 26 de fevereiro de 2021.
+Em 6 de junho de 2022, a área técnica, por meio do Informe nº 190/2022/ORER/SOR (SEI nº 7998496), analisou as contribuições apresentadas à referida consulta pública, concluindo que: "Diante das contribuições recebidas em decorrência da realização da Tomada de Subsídios, observou-se que não há consenso entre as entidades que submeteram contribuições e devido ao fato de haver testes e estudos em andamento, cujas conclusões devem ser submetidas à Agência no futuro, a Superintendência de Outorga e Recursos à Prestação não identificou elementos que fundamentem, neste momento, alterações ao limite estabelecido para emissões espúrias e emissões fora de faixa de equipamentos com potência muito baixa." 
+O Conselho Diretor da Agência, por meio do Acórdão nº 396, de 31 de dezembro de 2024 (SEI nº 13097978), aprovou a atualização do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), nos termos da Análise nº 11/2024/VC (SEI nº 13053924) e da Minuta de Resolução VC (SEI nº 13073206).
+Essa decisão levou à edição da Resolução Anatel nº 772, de 16 de janeiro de 2025, que aprovou o PDFF vigente e definiu as atribuições, destinações e condições de uso das faixas de frequências. Entre as atualizações, salienta-se, para o presente processo, a alteração na faixa de 5.925 MHz a 7.125 MHz, que, diferentemente do PDFF anterior (onde era destinada a todos os serviços de telecomunicações), no PDFF atual está estruturada da seguinte forma:
+ Faixa de frequência
+ | 
+ 5.925 MHz a 6.425 MHz
+ | 
+ 6.425 MHz a 
+ 6.430 MHz
+ | 
+ 6.430 MHz a 6.700 MHz
+ | 
+ 6.700 MHz a 7075 MHZ
+ | 
+ 7075 MHZ a 7110 MHz
+ | 
+ 7110 MHz a 7125 MHz
+ | 
+ Destinação PDFF vigente
+ | 
+ TODOS os SERVIÇOS de TELECOMUNICAÇÕES
+ - Fixo e Fixo por Satélite, exceto serviços de interesse coletivo terrestres
+ (Observada a atribuição da faixa)
+ | 
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ REPETIÇÃO DE TELEVISÃO
+ TODOS os SERVIÇOS de TELECOMUNICAÇÕES
+ Fixo e Fixo por Satélite, exceto serviços de interesse coletivo terrestres
+ (Observada a atribuição da faixa)
+ | 
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ REPETIÇÃO DE TELEVISÃO
+ TODOS os SERVIÇOS de TELECOMUNICAÇÕES
+ Fixo e Fixo por Satélite, exceto serviços de interesse coletivo terrestres
+ (Observada a atribuição da faixa)
+ | 
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ AUXILIAR DE RADIODIFUSÃO E CORRELATOS
+ REPETIÇÃO DE TELEVISÃO
+ | 
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ AUXILIAR DE RADIODIFUSÃO E CORRELATOS
+ REPETIÇÃO DE TELEVISÃO
+ | 
+Para alinhar o uso da faixa do espectro de radiofrequências às diretrizes de planejamento da Anatel para a subfaixa de 6.425 MHz a 7.125 MHz, dedicada à prestação de serviços de interesse coletivo, em especial do Serviço Móvel Pessoal (SMP), o Comitê de Uso de Espectro e Órbita da Anatel (CEO), em reunião de 16 de maio de 2025, decidiu submeter uma proposta ao Conselho Diretor. A proposta busca restringir o uso de equipamentos do tipo Sistema de Acesso sem Fio em Banda Larga para Redes Locais à faixa de 5.925 MHz a 6.425 MHz.
+Assim, em 28 de julho de 2025, a SOR, por meio do Informe nº 71/2025/ORCN/SOR (SEI nº 13827199), propôs a revisão do Acórdão nº 61, de 26 de fevereiro de 2021. O objetivo dessa proposta é alterar os Requisitos Técnicos para Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, aprovados pelo Ato nº 14.448, de 4 de dezembro de 2017, restringindo o uso de equipamentos do Sistema de Acesso sem Fio em Banda Larga para Redes Locais à faixa de 5.925 MHz a 6.425 MHz, conforme Minuta de Ato (SEI nº 13920776).
+Em 28 de julho de 2025, por meio da Matéria para Apreciação do Conselho Diretor (MACD) nº 541/2025 (SEI nº 13924730), a SOR encaminhou o processo à Superintendência Executiva (SUE) para posterior envio à deliberação do Conselho Diretor da Agência.
+Em 1º de agosto de 2025, a SUE encaminhou o processo à Secretaria do Conselho Diretor (SCD) por meio do Despacho Ordinatório (SEI nº 14118247).
+Em 4 de agosto de 2025, o processo foi distribuído ao Conselheiro Substituto Daniel D'Albuquerque, conforme Certidão de Distribuição (SEI nº 14126290).
+Em função do término do mandato do Conselheiro Substituto Daniel D'Albuquerque, distribuiu-se o processo para minha relatoria em 4 de setembro de 2025, conforme Certidão de Distribuição (SEI nº 14319991).
+Na 950a Reunião do Conselho Diretor, realizada em 12 de fevereiro de 2026, foi aprovada por unanimidade a prorrogação de relatoria, conforme Certidão de Julgamento nº 15213359.
+É o relatório.
+FUNDAMENTAÇÃO 
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo será automaticamente incluído na pauta da 955ª Reunião deste Colegiado, de 2 de julho de 2026.
+Diante da relevância e complexidade da matéria, bem como do papel essencial da Anatel de estabelecer as devidas alterações nos Requisitos Técnicos para a Avaliação da Conformidade de Equipamentos de Radiocomunicação de Radiação Restrita, objetivando restringir o uso de Equipamentos de Radiocomunicação de Radiação Restrita para Sistema de Acesso sem Fio em Banda Larga para Redes Locais à subfaixa de 5.925 MHz a 6.425 MHz., entende-se não ser possível a deliberação da matéria na data prevista regimentalmente, devendo-se prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Submete-se, assim, proposta de prorrogação do prazo de relatoria por mais 60 (sessenta) dias.
+CONCLUSÃO
+Voto por prorrogar o prazo, por 60 (sessenta) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 02/07/2026, às 17:49, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15263445 e o código CRC E595815D.
+ | 
+Referência: Processo nº 53500.027376/2020-49 | 
+SEI nº 15263445 |

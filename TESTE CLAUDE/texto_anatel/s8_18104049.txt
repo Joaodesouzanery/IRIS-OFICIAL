@@ -1,0 +1,41 @@
+SEI/ANATEL - 16152820 - Acórdão
+Boletim de Serviço Eletrônico em 21/08/2026
+DOU de 21/08/2026, seção 1, página 11
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 213, de 19 de agosto de 2026
+Processo nº 53500.005421/2024-38
+Recorrente/Interessado: HISPAMAR SATÉLITES S.A., HISPASAT BRASIL LTDA.
+CNPJ nº 04.568.354/0001-98 e nº 03.542.946/0001-78
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 196, de 19 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Amazonas 2, detido por HISPASAT S.A.
+2. O direito de exploração foi conferido por meio do Ato nº 5.678, de 2 de outubro de 2009, e prorrogado por intermédio do Ato nº 14.051, de 1º de outubro de 2024 (SEI nº 12661792), com vigência até 4 de outubro de 2027.
+3. A HISPASAT S.A., por meio de representante legal no Brasil, a HISPAMAR SATÉLITES S.A., formulou, em 6 de maio de 2026, pedido de extinção, por renúncia, ao direito de exploração do satélite estrangeiro Amazonas 2, sob o fundamento de que o direito expira em outubro de 2027 e que o satélite Amazonas 2 encontra-se em órbita inclinada e próximo do final de sua vida útil. A HISPASAT BRASIL LTDA., segunda representante legal, formalizou anuência com o pedido de renúncia apresentado.
+4. A área técnica propôs o deferimento do pedido, uma vez que a renúncia em questão não terá impacto sobre os usuários finais, tendo em vista que a Empresa informou que não há mais clientes, serviço ativo ou contrato no Brasil.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Conselho Diretor é competente para declarar a extinção, por renúncia, do Direito de Exploração de Satélite; e (ii) saber se estão atendidos os requisitos procedimentais e regulatórios para a extinção do direito de exploração do satélite Amazonas 2, sem prejuízo das obrigações da Exploradora perante a Anatel e terceiros.
+III. RAZÕES DE DECIDIR
+1. Compete à Anatel disciplinar o uso de recursos de órbita e espectro, cabendo ao Conselho Diretor decidir sobre a extinção de direito de exploração de satélite.
+2. A manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel é dispensável no caso, diante da ausência de dúvida jurídica e da inexistência de hipótese de manifestação obrigatória.
+3. A renúncia tem natureza unilateral, irrevogável e irretratável, opera seus efeitos a partir do momento de seu protocolo, não desonera a exploradora de suas obrigações com a Anatel, com terceiros, nem afasta a apuração de infrações ou a cobrança de valores devidos.
+4. Não se verificou impacto aos clientes finais, uma vez que a empresa informou que não há mais cliente, serviço ativo ou contrato no Brasil.
+5. A existência de estações terrenas vinculadas ao satélite Amazonas 2 não impede a extinção pretendida, cabendo às prestadoras responsáveis regularizá-las perante a Agência.
+6. A existência de débitos vencidos de uma das representantes legais perante a Anatel não impede a extinção, considerando que tais valores permanecem exigíveis.
+7. Assim, não há óbice à extinção, por renúncia, do direito de exploração no Brasil do satélite estrangeiro Amazonas 2 e das subfaixas de radiofrequências associadas, a partir de 6 de maio de 2026.
+IV. DISPOSITIVO E TESE
+Pedido deferido. Declarada a extinção, por renúncia, a partir de 6 de maio de 2026, do Direito de Exploração, no Brasil, do satélite estrangeiro Amazonas 2 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. A renúncia opera seus efeitos a partir do momento de seu protocolo e, desde que formalizado por representante legítimo, com a devida ciência dos demais representantes legais, se for o caso, atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, arts. 113 e 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; e Resolução nº 748/2021, arts. 33, 34 e 35.
+Jurisprudência relevante citada: Anatel, Acórdão nº 167, Processo nº 53500.045091/2024-13, Rel. Daniel Martins D Albuquerque, Conselho Diretor, j. 12.06.2025; Anatel, Acórdão nº 134, Processo nº 53500.005555/2011-34, Rel. Nilo Pasquali, Conselho Diretor, j. 07.05.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 58/2026/NP (SEI nº 15853159), integrante deste acórdão, declarar extinto, por renúncia, a partir de 6 de maio de 2026, o direito de exploração no Brasil do satélite estrangeiro Amazonas 2 e subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15608464, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela Empresa.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/08/2026, às 09:18, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16152820 e o código CRC 7C9E1F84.
+ | 
+Referência: Processo nº 53500.005421/2024-38 | 
+SEI nº 16152820 |

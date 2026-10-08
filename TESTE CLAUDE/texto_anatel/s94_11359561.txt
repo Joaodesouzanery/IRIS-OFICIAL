@@ -1,0 +1,434 @@
+SEI/ANATEL - 10069603 - Voto
+Boletim de Serviço Eletrônico em 19/03/2026
+Voto nº 2/2023/VA
+Processo nº 53500.025122/2014-48
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+VICENTE BANDEIRA DE AQUINO NETO
+ASSUNTO
+Petição de autoria da prestadora Telefônica Brasil S.A. (SEI nº 8664399), apresentada como exercício de direito de petição previsto no art. 5º, XXXIV, "a", da Constituição Federal de 05 de outubro de 1988, por meio da qual solicita revisão e atualização dos cálculos que fundamentaram a decisão contida no Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659).
+EMENTA
+COMPROMISSOS DE ABRANGÊNCIA PREVISTOS NO EDITAL DE LICITAÇÃO Nº 004/2012/PVCP/SPV-ANATEL (2,5 GHz e 450 MHZ). PETIÇÃO. CONHECIMENTO. art. 5º, XXXIV, "a", da CF. PERMISSÃO PARA uso de solução satelital. necessidade de informar os munípios CONTEMPLADOS COM referida solução. POSSIBILIDADE DE RECÁLCULO JÁ PREVISTA NA ANÁLISE QUE FUNDAMENTOU O Acórdão nº 292/2019. PLEITO DE RECÁLCULO DISPENSÁVEL. OBSERVÂNCIA DOS CRITÉRIOS AFETOS A PROCESSOS ADMINISTRATIVOS. INEXISTÊNCIA DE VÍCIOS A SEREM CONVALIDADOS. INDEFERIMENTO DOs PLEITOs. NECESSIDADE ACOMPANHAMENTO DAS DETERMINAÇÕES NOS TERMOS APROVADOS PELO COLEGIADO.
+1. Petição SEI nº 8664399 protocolizada por Telefônica Brasil S.A. solicitando revisão e atualização dos cálculos de Valor Presente Líquido que fundamentaram a decisão contida no Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659), que disciplinou a possibilidade de uso de solução satelital para cumprimento dos compromissos de abrangência previstos no Edital de Licitação nº 004/2012/PVCP/SPV-ANATEL (2,5 GHz e 450 MHZ).
+2. Conhecimento da missiva como exercício de direito de petição previsto no art. 5º, XXXIV, "a", da Constituição da República Federativa do Brasil, de 5 de outubro de 1988, tal como proposto pelo ilustre Conselheiro Relator Emmanoel Campelo em sua Análise nº 99/2022/EC (SEI nº 8936539), de 6 de outubro de 2022.
+3. Por meio do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742), retificado pelo Acórdão nº 392, de 18 de junho de 2019 (SEI nº 4283088), este Conselho Diretor permitiu que o adimplemento dos compromissos editalícios se desse com solução satelital de forma complementar, ao invés de construção de rede terrestre, desde que houvesse reequilíbrio do VPL, instrumentalizado por meio do estabelecimento de novas velocidades e franquias mínimas de conexões de dados, em prol do interesse público.
+4. Conforme item “c.1” do Acórdão nº 292/2019 (SEI nº 4220742), as prestadoras Telefônica Brasil S.A. Claro S.A., Tim CELULAR S.A. e Oi Móvel S.A deveriam informar, no prazo de 15 (quinze dias), os municípios da planilha SEI nº 4032259 que seriam atendidos com referida solução satelital.
+5. As determinações do Acórdão nº 292/2019 (SEI nº 4220742) só passaram a ter eficácia com o julgamento do Pedidos de Reconsideração contra ele interposto, o que ocorreu via Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659). Conforme explicado no item 5.215 da Análise nº 43/2021/VA (SEI nº 6832861), que conduziu referido Acórdão, a depender do que viesse a ser informado pelas Prestadoras em cumprimento ao item "c.1" do Acórdão nº 292/2019 (SEI nº 4220742), a Superintendência de Competição (SCP) deveria promover os necessários ajustes nos cálculos.
+6. O Acórdão nº 194/2022 (SEI nº 8589659) já contempla a possibilidade do recálculo requerido pela Interessada, o que torna seu pleito dispensável. Além disso, citada decisão observou os critérios aplicáveis aos processos administrativos e não está maculada de quaisquer vícios sanáveis que devam ser convalidados.
+7. Diante do trânsito em julgado do Acórdão nº 194/2022, suas determinações devem ser implementadas pelas empresas envolvidas e seu cumprimento devidamente acompanhado pela Superintendência de Controle de Obrigações (SCO), nos termos aprovados por este Colegiado.
+REFERÊNCIAS
+Constituição da República Federativa do Brasil, de 05 de outubro de 1988.
+Lei nº 9.784, de 29 de janeiro de 1999 (Lei de Processo Administrativo - LPA).
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+RELATÓRIO
+Cuida-se de análise de petição protocolizada por Telefônica Brasil S.A. (SEI nº 8664399) em 20 de junho de 2022, por meio da qual solicitou as seguintes providências quanto ao Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659):
+"(i) A presente manifestação seja recebida e conhecida com fundamento no art. 5º, XXXIV, “a”, da Constituição Federal;
+(ii) O r. Acórdão Nº 194, de 07 de junho de 2022 (SEI 8589659) seja revisitado e integrado por este Eg. Conselho Diretor, com fundamento nos arts. 37 e 109 do Regimento Interno da Agência Nacional de Telecomunicações – ANATEL, aprovado pela Resolução nº 612, de 29 de abril de 2018, para:
+a. A realização de nova diligência por parte desta Agência para verificação da evolução da cobertura terrestre da Prestadora;
+b. O recálculo do VPL, considerando a evolução dos percentuais de cobertura, conforme item acima, com reflexo nas novas velocidade e franquia a serem utilizadas no atendimento às escolas e aos usuários que necessitarem atendimento satelital;
+c. Com base no poder geral de cautela administrativa, nos termos previstos no art. 52 do Regimento Interno da Agência Nacional de Telecomunicações – ANATEL, aprovado pela Resolução nº 612, de 29 de abril de 2018, a suspensão dos prazos relativos ao item “c” do Acórdão nº 292/2019 e do Acórdão nº 194/2022 até que a Agência realize as atividades descritas nos itens (a) e (b) e disponibilize referidas informações, como condição para execução das determinações do Acórdão nº 194/2022; 
+d. A fixação de novo prazo compatível para cumprimento da readequação da velocidade das escolas atendidas atualmente, por se tratar de uma inovação que requer o dispêndio de tempo e recursos técnicos para sua operação; 
+e. A confirmação de entendimento de que os ganhos de antena sejam considerados para o cálculo de área coberta pela Telefônica, de acordo com a correspondência CT.1094/2019/LLLADB e respectivos anexos, sem prejuízo quanto à possibilidade de substituição desta documentação conforme antenas de maior ganho se tornarem disponíveis."
+Como citado Acórdão foi proferido pelo Conselho Diretor da Anatel, encaminhou-se a petição para análise deste Colegiado por analogia ao Pedido de Reconsideração, previsto no art. 126 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Em 4 de agosto de 2022, o Conselheiro Emmanoel Campelo foi sorteado Relator na matéria (SEI nº 8911332) e, em 6 de outubro daquele ano, ele apresentou ao Conselho Diretor sua Análise nº 99/2022/EC (SEI nº 8936539), na qual, sem suma, consignou que:
+os estudos econômicos têm relevância apenas para a tomada de decisão à época de sua elaboração e que não se deve promover o recálculo de obrigações uma vez exaurida a janela temporal de determinação dessas obrigações;
+a evolução da cobertura terrestre é um processo dinâmico, de tal forma que uma perfeita fotografia da cobertura terrestre de cada operadora em cada município em um determinado momento do tempo é inviável; e
+o cálculo efetuado para a solução satelital teria sido realizado “nos mesmos moldes do cálculo original do plano de negócios que deu origem à precificação do Edital”.
+Ao final, o ilustre Relator propôs receber a petição CT LLLAC nº 663/2022 (SEI nº 8664399) com base no direito assegurado no art. 5º, XXXIV, "a", da Constituição Federal de 1988 e indeferir os pedidos dela constantes.
+Naquela mesma data, solicitei vista desta matéria, com fundamento no art. 15 do RIA.
+É o relatório.
+FUNDAMENTAÇÃO
+O presente Voto possui como objeto o pedido da Telefônica (SEI nº 8664399) para que o Valor presente Líquido (VPL) definido na Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659), seja recalculado considerando a evolução dos percentuais de cobertura terrestre realizada pela Prestadora.
+De início, concordo com o Conselheiro Relator Emmanoel Campelo quanto ao recebimento da petição da Requerente com base no direito de petição assegurado pelo art. 5º, XXXIV, "a", da Constituição Federal. Como corretamente apontado pelo ilustre Relator, não há na petição sob análise a demonstração de que haja ilegalidade ou mesmo abuso de poder na decisão recorrida, e se verifica a hipótese de defesa de direitos endossada pelo texto constitucional. 
+Quanto ao mérito, apenas para facilitar o entendimento da matéria, farei uma breve contextualização os fatos que culminaram no proferimento do Acórdão nº 194/2022 (SEI nº 8589659), do qual fui Relator e que já se encontra transitado em julgado, como bem salientado pelo Conselheiro Relator. E, apesar de aquela deliberação ter envolvido discussão mais ampla, versando sobre as possibilidades de cumprimento de obrigação editalícia, de ingresso de terceiros interessados, de renúncia a direito de uso de radiofrequências etc., rememorei especialmente o que foi dito quanto ao recálculo do VPL em cada uma das manifestações dos membros deste Colegiado.
+Minha intenção é demonstrar que o citado Acórdão já prevê o recálculo solicitado pela Telefônica e que não há motivos para se proceder à sua revisão, pois não há ofensa aos critérios que devem serem observados nos processos administrativos (art. 37 do RIA) nem quaisquer defeitos sanáveis a serem convalidados (art. 109 do RIA).
+I - Do Edital de Licitação nº 004/2012/PVCP/SPV-Anatel
+Primeiramente, por meio do Edital nº 004/2012/PVCP/SPV-Anatel, esta Agência licitou autorizações de uso de radiofrequências na subfaixa de 451 MHz a 458 MHz e de 461 MHz a 468 MHz (450 MHz) e na subfaixa de 2500 MHz a 2690 MHz, com o objetivo de garantir a disponibilidade de serviços de telecomunicações de voz e de dados em todos os municípios brasileiros, inclusive em áreas rurais.
+O Edital previu, nos itens 4, 5, 6 e 8 de seu Anexo II-B, os seguintes compromissos de abrangência relativos às faixas de radiofrequências de 450 MHz:
+compromissos de varejo (voz e dados): atender, conforme cronograma, às áreas geográficas dispostas no Edital, possibilitando Conexões de Dados com taxas de transmissão (download e upload) e franquia mensal predefinidas, observando-se os valores máximos previstos no instrumento licitatório;
+compromisso referente às escolas rurais (dados): atender gratuitamente a todas as escolas públicas rurais situadas nas áreas geográficas dispostas no Edital, com Conexões de Dados com taxas de transmissão (download e upload) predefinidas e sem franquia de tráfego máximo;
+compromisso de cessão de capacidade de rede às Concessionárias: colocar ao dispor capacidade de sua rede na área compreendida fora dos limites da Área de Tarifação Básica (ATB) até a distância geodésica igual a 30 (trinta) quilômetros dos limites da localidade sede municipal, para que as Concessionárias do Serviço Telefônico Fixo Comutado (STFC) cumprissem as obrigações de universalização dispostas no art. 9º, §§1º e 2º, e no art. 16, § 1º, do Plano Geral de Metas de Universalização do STFC Prestado no Regime Público (PGMU), aprovado pelo Decreto nº 7.512, de 30 de junho de 2011. 
+O Edital previu, no item 9 de seu Anexo II-B, para as vencedoras dos Lotes B ou C, compromisso de construção de infraestrutura civil e disponibilização à autorizada de 450 MHz, no total de 6.050 estações:
+i) Subitem 9.1: 942 estações até 31/03/2014;
+ii) Subitem 9.2: 942 estações até 30/09/2014;
+iii) Subitem 9.3: 1258 estações até 30/09/2015;
+iv) Subitem 9.4: 2908 estações até 30/09/2017.
+No que diz respeito aos compromissos de abrangência relativos às áreas rurais, o Edital também estabeleceu o seguinte: 
+para o atendimento dos compromissos de varejo (voz e dados), a possibilidade de a Proponente Vencedora utilizar qualquer um dos serviços de telecomunicações vinculados ao Edital (STFC, Serviço de Comunicação Multimídia - SCM e/ou Serviço Móvel Pessoal - SMP), respeitadas as disposições regulamentares existentes para cada um desses serviços (item 4.6. do Anexo II - B);
+a possibilidade de utilização de outras subfaixas para as quais as prestadoras já detivessem autorização de uso de radiofrequência para adimplemento daqueles compromissos (itens 4.7. e 8.2. do Anexo II - B);
+transcorridos 36 (trinta e seis) meses a partir do marco inicial para contagem do prazo de atendimento aos compromissos de abrangência sem que houvesse ativação de serviços nas subfaixas de radiofrequência de 450 MHz, o comprometimento, pelas Proponentes, de renunciarem à autorização de uso das referidas radiofrequências, sem prejuízo das obrigações de atendimento rural (item 8.2.1. do Anexo II - B). 
+Esses compromissos foram assumidos pelas Proponentes Vencedoras Telefonica, Claro S.A., Oi Móvel S.A. e Tim Celular S.A.
+II - Do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742)
+Ao observar que as prestadoras haviam utilizado satélites para atender às escolas públicas rurais, a Área Técnica informou[1] que os compromissos de abrangência relacionados à faixa de 450MHz deveriam ser cumpridos exclusivamente por meio de redes de radiocomunicação terrestres, utilizando-se de radiofrequências para as quais as prestadoras já detinham autorização de uso.
+A Telefônica manifestou-se[2] em sentido contrário, defendendo seu direito ao uso de satélite como solução complementar para adimplir compromissos de varejo e de atendimento a escolas rurais, em virtude da inexistência de tecnologia disponível para uso da faixa de 450MHz no padrão LTE (Long Term Evolution).
+A Área Técnica indeferiu aquele pleito via Despacho Decisório nº 5.961/2014-COUN/SCO/Anatel, de 3 de novembro de 2014. Isso motivou a interposição, pela Telefonica, de Recurso Administrativo[4] com pedido de efeito suspensivo, solicitando a declaração de nulidade daquela decisão e o reconhecimento do direito ao uso de satélite como solução complementar para cumprir metas de varejo e de atendimento a escolas rurais, observados os padrões de qualidade previstos na regulamentação.
+Inaugurou-se extensa fase de argumentação e instrução envolvendo todas as prestadoras vencedoras do Edital. 
+A matéria foi relatada pelo ilustre Conselheiro Otavio Luiz Rodrigues Junior, e deliberada via Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742). O voto condutor foi apresentado em sede de vistas pelo então Conselheiro Emmanoel Campelo (Voto nº 15/2019/EC - SEI nº 4185492), que foi acompanhado pelos então Conselheiros Leonardo Euler e Anibal Diniz. Em suma, por maioria, deu-se provimento parcial ao Recurso, aceitando-se o uso da solução satelital, de forma complementar, desde que sob condições que permitiriam o restabelecimento do Valor Presente Líquido (VPL) calculado pelo Plano de Negócios, e, especialmente, considerando-se a possibilidade de incremento das velocidades e franquias:
+Acórdão nº 292, de 4 de junho de 2019
+"Processo nº 53500.025122/2014-48
+Recorrente/Interessado: Telefonica BRASIL S.A.
+CNPJ/MF nº 02.558.157/0001‐62
+Conselheiro Relator: Otavio Luiz Rodrigues Junior
+Fórum Deliberativo: Reunião nº 870, de 23 de maio de 2019
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO DE ACOMPANHAMENTO E CONTROLE DE OBRIGAÇÕES. SCO. EDITAL DE LICITAÇÃO Nº 004/2012/PVCP/SPV-ANATEL. SUBFAIXA DE 450 MHZ. COMPROMISSOS DE ABRANGÊNCIA. METAS DE COBERTURA RURAL. EMPREGO DE SOLUÇÃO SATELITAL PARA ADIMPLEMENTO DOS COMPROMISSOS. POSSIBILIDADE. CÁLCULO DO VALOR ATUALIZADO DOS COMPROMISSOS DE ABRANGÊNCIA CONSTANTES DO EDITAL. PRECIFICAÇÃO DOS COMPROMISSOS DE ABRANGÊNCIA BASEADA NO CÁLCULO DO VPL DA EXPLORAÇÃO DA REDE DE BANDA LARGA SATELITAL. METODOLOGIA HISTORICAMENTE UTILIZADA PELA ANATEL. INTERESSE PÚBLICO. RECURSO CONHECIDO E PARCIALMENTE PROVIDO.
+1. Recurso Administrativo interposto por Telefonica BRASIL S.A. em face de decisão do Superintendente de Controle de Obrigações, mediante a qual foi denegado o pedido de utilização de solução satelital para o adimplemento dos compromissos de abrangência rural estabelecidos no Edital de Licitação nº 004/2012/PVCP/SPV-Anatel.
+2. A análise dos cenários permite concluir que (i) o uso do 450 MHz encontra barreiras devido ao não desenvolvimento desse ecossistema, (ii) o uso de outras radiofrequências é permitido mas não se monstra razoável para adimplemento integral das obrigações e, (iii) o uso do satélite evoluiu como solução viável superveniente para o objetivo proposto pelo Edital, e, além de promover ganhos de cobertura nas áreas rurais, também agrega benefícios adicionais aos consumidores.
+3. A solução que melhor se amolda ao presente caso, seja sob os prismas técnico, econômico ou do interesse público, é a aceitação do uso da solução satelital, de forma complementar, desde que sob condições que permitam o restabelecimento do VPL calculado pelo Plano de Negócios, e, especialmente, considerando-se a possibilidade de incremento das velocidades e franquias. Interesse público alcançado.
+4. Ajuste no tocante ao Valor Presente Líquido considerado quando da Licitação. O custo de implantação de redes terrestres é divergente do custo de utilização da tecnologia satelital, fato que impacta diretamente nos valores financeiros considerados no estudo de precificação tanto dos lotes de radiofrequências licitados quanto dos compromissos de abrangência impostos.
+5. A metodologia é a mesma utilizada historicamente pela Agência para o atendimento das exigências do Tribunal de Contas da União (TCU), contidas na Instrução Normativa nº 27/98, sobre a definição de Preços Mínimos para Licitações de Radiofrequências, de modo que o cálculo apresentado está de acordo com as diretrizes daquele Tribunal.
+6. O item 8.2.1 do Anexo II-B ao Edital 04/2012 associou a renúncia à “não ativação de serviços nas subfaixas”, no prazo de 36 (trinta e seis) meses. Nota-se, portanto, que não se trata de “ativação de ERB”, “‘utilização da faixa” ou “provimento de cobertura”, mas de “ativação do serviço”. Em outras palavras, importa dizer que a expressão pressupõe que exista algum serviço efetivamente prestado, ou seja, a comercialização e/ou conexão de escolas rurais, o que restou demonstrado não ter acontecido.
+7. Estabelece o Edital que as “proponentes se comprometem com a renúncia”. Ora, faz-se necessário observar que o compromisso se trata de condição para participação do certame, o qual foi aceito pelas proponentes que optaram por participar da licitação. Sentido diverso se daria caso, por exemplo, fosse disposto que “as proponentes se comprometem a renunciar” ou “se comprometem a apresentar renúncia”, redações que levariam a crer que a renúncia somente se concretizaria mediante uma ação da prestadora.
+8. Conhecimento e provimento parcial do Recurso Administrativo.
+9. Determinações Adicionais.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel:
+a) conhecer do Recurso Administrativo interposto por Telefonica BRASIL S.A. para, no mérito, dar-lhe provimento parcial, para permitir alternativamente o uso de solução satelital para cumprimento dos compromissos de abrangência previstos no Edital de Licitação nº 004/2012/PVCP/SPV-Anatel, desde que nas condições explicitadas na Tabela 7 e nos subitens do parágrafo 5.170 do Voto nº 15/2019/EC (SEI nº 4185492);
+b) dar ciência às prestadoras Claro S.A., Oi MÓVEL S.A. e Tim CELULAR S.A. sobre a possibilidade de adoção da solução satelital, nos termos estabelecidos na alínea "a";
+c) determinar às prestadoras Claro S.A., Oi MÓVEL S.A., Telefonica BRASIL S.A. e Tim CELULAR S.A. que:
+c.1) informem, no prazo de 15 (quinze) dias contados da notificação da presente deliberação pelo Conselho Diretor, os municípios da planilha SEI nº 4032259 que serão atendidos com solução satelital, na forma citada na alínea "a";
+c.2) adotem as medidas necessárias, no prazo de 45 (quarenta e cinco) dias contados da notificação da presente deliberação pelo Conselho Diretor, para a efetiva disponibilização das ofertas de varejo, bem como a adaptação dos contratos de prestação já existentes, nos termos da alínea "a"; e,
+c.3) encaminhem, no prazo de 45 (quarenta e cinco) dias contados da notificação da presente deliberação pelo Conselho Diretor, comprovações das medidas adotadas a fim de garantir ampla publicidade da oferta de varejo, devendo constar, no mínimo, na página inicial e na relação de planos disponíveis do seu sítio eletrônico na internet, bem como nos demais canais de venda da prestadora, devendo constar os preços praticados e as respectivas velocidades de conexão e franquias;
+d) determinar à Superintendência de Controle de Obrigações (SCO) que, a partir das informações apresentadas na alínea "c", apure o cumprimento das obrigações do Edital considerando os pressupostos do referido voto e adote as providências cabíveis quanto aos eventuais indícios de infração e garantias associadas;
+e) determinar à Superintendência de Relações com Consumidores (SRC) que, a partir das informações apresentadas na alínea "c", adote as providências cabíveis no sentido de verificar a publicidade e acesso às ofertas dos serviços de voz e dados, nos termos do Edital e do referido voto;
+f) determinar à Superintendência de Outorga e Recursos à Prestação (SOR) que, em autos apartados:
+f.1) notifique as prestadoras para que, caso queiram, comprovem, no prazo de 10 (dez) dias contados da notificação, a ativação do serviço nos termos do item 5.182 do referido voto, no prazo consignado pelo item 8.2.1 do Anexo II-B ao Edital;
+f.2) submeta ao Conselho Diretor, após análise das manifestações acima citadas, matéria contendo proposta de extinção, por renúncia, das autorizações das subfaixas de 451 MHz a 458 MHz / 461 MHz a 468 MHz, nos casos em que não tenha havido ativação do serviço no prazo consignado no item 8.2.1 do Anexo II-B ao Edital;
+g) dar ciência às prestadoras Claro, Oi, Telefonica e Tim da possibilidade de uso da subfaixa de 450 MHz por outros meios, tais como autorizações em caráter secundário e o Serviço Especial para Fins Científicos e Experimentais, observadas as suas condições de uso e exploração;
+h) declarar a perda de objeto dos pedidos apresentados pela Tim sobre a interpretação dos critérios para atendimento de compromissos de abrangência pertinentes à área de interseção de municípios e à oferta de planos de serviços na área urbana dos municípios, já indeferidos por este Conselho Diretor nos autos do Processo nº 53500.002844/2015-13; e,
+i) indeferir o pedido da Tim de se reconhecer o "conceito de fruição do serviço", segundo o qual se consideraria um município atendido com a instalação de infraestrutura "mínima", que permitisse o atendimento de eventual pedido de instalação de acesso fixo dentro do prazo regulamentar.
+(...)
+Com relação às alíneas "a" a "g", a decisão foi por maioria de três votos, nos termos propostos pelo Conselheiro Emmanoel Campelo de Souza Pereira por meio do Voto nº 15/2019/EC (SEI nº 4185492), integrante deste acórdão. Nestes pontos, votaram vencidos os ex-Conselheiros Otavio Luiz Rodrigues Junior, nos termos da Análise nº 140/2017/SEI/OR (SEI nº 1644397), também integrante deste acórdão, e Juarez Martinho Quadros do Nascimento, que o havia acompanhado.
+Quanto às alíneas "h" e "i", a decisão foi por unanimidade, nos termos da Análise nº 140/2017/SEI/OR (SEI nº 1644397).
+(...)"
+Assim, caso optassem por adotar a solução satelital, as prestadoras deveriam observar as seguintes velocidades e franquias mensais, descritas na Tabela 7 do Voto nº 15/2019/EC (SEI nº 4117850):
+ Prestadora
+ | 
+ Velocidade (Mbps)
+ | 
+ Franquia mensal (GB)
+ | 
+ Tim
+ | 
+ 9,76
+ | 
+ 45
+ | 
+ Claro
+ | 
+ 3,62
+ | 
+ 31
+ | 
+ Vivo
+ | 
+ 6,40
+ | 
+ 38
+ | 
+ Oi
+ | 
+ 12,61
+ | 
+ 51
+ | 
+Tabela 7 – Velocidades e franquias mínimas, para o caso da adoção de satélite
+Além disso, a alínea "c.1" da parte dispositiva do Acórdão nº 292/2019 (SEI nº 4220742) determinou que as Prestadoras informassem, no prazo de 15 (quinze) dias, quais municípios seriam atendidos com a solução satelital permitida.
+III - Do Acórdão nº 329, de 18 de junho de 2019 (SEI nº 4283088)
+Ao obter acesso às planilhas que compuseram o modelo econômico que fundamentou o Acórdão nº 292/2019 (SEI nº 4220742), a Telefonica (SEI nº 4278169 e SEI nº 4278183) informou ter identificado inconsistências e erros materiais na modelagem e premissas consideradas no Voto nº 15/2019/EC (SEI nº 4185492).
+Como resultado, este Conselho manteve as premissas previamente aprovadas, mas procedeu à retificação de erro material nos cálculos do VPL remanescente, o que culminou no estabelecimento de novas velocidades e franquias que deveriam ser observadas em caso de uso de satélites, nos termos do Acórdão nº 329, de 18 de junho de 2019 (SEI nº 4283088), que teve como fundamento o Voto nº 19/2019/EC, de 18 de junho de 2019 (SEI nº 4278630). Assim, passou a ser obrigatória a observância à seguinte tabela:
+ Tabela 1 do item 4.18 do Voto nº 19/2019/EC
+ | 
+ Prestadora
+ | 
+ Velocidade (Mbps)
+ | 
+ Franquia Mensal (GB)
+ | 
+ Tim
+ | 
+ 7,34
+ | 
+ 40
+ | 
+ Claro
+ | 
+ 3,39
+ | 
+ 31
+ | 
+ Vivo
+ | 
+ 5,27
+ | 
+ 35
+ | 
+ Oi
+ | 
+ 8,88
+ | 
+ 43
+ | 
+IV - Do Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659)
+As prestadoras então interpuseram Pedidos de Reconsideração em face dos Acórdãos nº 292/2019 (SEI nº 4220742) e nº 329/2019 (SEI nº 4283088). Apresentarei breve resumo de cada uma das propostas apresentadas pelos membros deste Colegiado, como foco no recálculo do VPL.
+IV.a - Da Análise nº 43/2021/VA (SEI nº 6832861)
+Fui relator dos mencionados Pedidos de Reconsideração e, durante o exame dos autos, procedi a algumas diligências junto à Área Técnica, interagi com a Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) em virtude das ações judiciais ajuizadas pelas prestadoras e enfrentei cada um dos inúmeros argumentos recursais, como detalhadamente consignado em minha Análise nº 43/2021/VA (SEI nº 6832861).
+Vale alertar que, durante todo aquele tempo, as determinações constantes do Acórdão nº 292/2019, retificadas pelo Acórdão nº 392/2019, encontravam-se suspensas por ordem judicial (Ação Ordinária nº 0021002-79.2019.4.01.3400, Mandado de Segurança nº 1019996-20.2019.4.01.3400 e Processo Judicial nº 1021497-09.2019.4.01.3400), até que se concluísse o julgamento daqueles Pedidos de Reconsideração. Ou seja, não havia ainda se iniciado a contagem do prazo para que as prestadoras informassem quais municípios da planilha SEI nº 4032259 seriam atendidos com solução satelital (item c.1 do Acórdão nº 292/2019 - SEI nº 4220742).
+Para além de examinar os argumentos recursais e propor a acolhimento de um deles, em minha Análise nº 43/2021/VA (SEI nº 6832861) sugeri ao Colegiado dois ajustes de ofício, que resultariam no recálculo do VPL da solução satelital. O primeiro deles foi considerar o valor do serviço de voz de R$ 30,60 (trinta reais e sessenta centavos), e não de R$ 31,60 (trinta e um reais e sessenta centavos), em atenção ao Aviso de Licitação nº 003/2012, de 25 de maio de 2012. O segundo teve relação com um tema que me é muito caro: a conectividade de escolas rurais, que estava prevista no item 5 do Anexo II-B do Edital.
+Em apertada síntese, naquele momento, das 37.412 (trinta e sete mil, quatrocentos e doze) escolas rurais que seriam contempladas com o compromisso editalício, 29.347 (vinte e nove mil, trezentos e quarenta e sete) já teriam sido atendidas com conexões de dados, sendo 16.053 (dezesseis mil, cinquenta e três reais) por satélite.
+Como a compensação do VPL determinada pelos Acórdãos recorridos traria aumento de velocidade e franquia apenas para as instituições escolares ainda não atendidas, que totalizavam 2.249 (dois mil, duzentos e quarenta e nove), sugeri a meus pares que o benefício fosse estendido a todas as instituições escolares. Justifiquei minha proposta da seguinte forma:
+Análise nº 43/2021/VA (SEI nº 6832861)
+"5.208. Não é necessário, principalmente diante da realidade evidenciada pela pandemia da COVID-19, discorrer longamente sobre o indispensável uso da internet na educação. Basta dizer que tal ferramenta adiciona uma nova dimensão qualitativa ao ensino, confere mais atratividade ao ambiente pedagógico e capacita o aluno, por meio de autoaprendizagem e de seus professores, para aproveitar essa tecnologia em diversos aspectos de sua vida.
+5.209. Segundo dados da pesquisa TIC Educação 2019[17], 28% (vinte e oito porcento) das escolas públicas urbanas possuíam conectividade de 11 Mbps ou mais, enquanto 37% (trinta e sete por cento) das escolas rurais com acesso à Internet contavam com conexão até 2 Mbps. Para 40% (quarenta por cento) dos gestores escolares em área rural, a falta de infraestrutura de acesso na região foi um dos principais motivos citados para a escola não possuir acesso à rede.
+5.210. Relembro que o compromisso editalício estabelece a velocidade mínima de apenas 1 Mbps.
+5.211. Com essas informações em mente, proponho que, de ofício, este Colegiado revise a decisão dos Acórdãos nº 292/2019 e nº 329/2019 para, também, melhorar a velocidade e a franquia de dados dos acessos das escolas públicas rurais que já atendidas. Tal ajuste, a meu ver, melhor satisfaria o interesse público e traria benefícios mais isonômicos."
+[17] Disponível em https://www.cetic.br/pt/publicacao/pesquisa-sobre-o-uso-das-tecnologias-de-informacao-e-comunicacao-nas-escolas-brasileiras-tic-educacao-2019/
+Considerando os dois ajustes de ofício que sugeri a meus pares, propus substituir a tabela 1 do item 4.18 do Voto nº 19/2019/EC (SEI nº 4278630), acolhida pelo Acórdão nº 329/2019 (SEI nº 4283088), pela tabela constante no item 5.213 da Análise nº 43/2021/VA (SEI nº 6832861), abaixo reproduzida:
+Análise nº 43/2021/VA (SEI nº 6832861)
+"2.213. Por meio da Planilha (SEI nº 6849544), anexa ao Informe nº 51/2021/CPAE/SCP (SEI nº 6849145), a SCP apresentou novos valores de velocidade e franquia, resumidos na tabela abaixo:
+ Prestadora
+ | 
+ Velocidade (Mbps)
+ | 
+ Franquia mensal (GB)
+ | 
+ Tim
+ | 
+ 3,59
+ | 
+ 31
+ | 
+ Claro
+ | 
+ 1,55
+ | 
+ 27
+ | 
+ Vivo
+ | 
+ 2,31
+ | 
+ 29
+ | 
+ Oi
+ | 
+ 7,39
+ | 
+ 40
+ | 
+Naquela oportunidade, deixei claro que os cálculos que propus estavam contemplando o cenário de atendimento considerado pelo Acórdão nº 292/2019, mas que isso poderia ser alterado, a depender do que as prestadoras apresentassem em resposta ao item "c.1" daquela decisão, que, repiso, determinou que elas informassem, no prazo de 15 (quinze) dias, os municípios da planilha SEI nº 4032259 que seriam atendidos com solução satelital:
+Análise nº 43/2021/VA (SEI nº 6832861)
+"5.215. Os cálculos que aqui apresento consideram o mesmo cenário de atendimento utilizado na decisão recorrida. A depender do que for informado pelas Prestadoras em cumprimento ao item "c.1" do Acórdão nº 292/2019, a SCP deverá promover os necessários ajustes nos cálculos."
+Logo, caso houvesse mudança na lista de municípios que ainda seriam indicados pelas Recorrentes, a Superintendência de Competição deveria efetuar novos cálculos, para refletir o adequado reequilíbrio da parcela do VPL correspondente aos compromissos remanescentes e definir novas velocidades e franquias. A respeito do recálculo do VPL em razão da quantidade de municípios atendidos com solução satelital, transcrevo elucidativo excerto de minha Análise nº 43/2021/VA (SEI nº 6832861), que explica o porquê da sua necessidade:
+"5.51. Como relatado, as prestadoras aduziram que não seria cabível realizar-se o reequilíbrio do VPL determinado pelos Acórdãos nº 292/2019 e nº 329/2012.
+5.52. Primeiramente, argumentou-se que o montante do VPL editalício é utilizado como valor mínimo a ser cobrado pelo direito de uso das radiofrequências. Nesse uso, as prestadoras não têm direito a reembolso ou ressarcimento caso a demanda real fique abaixo da prevista no Plano de Negócios, sendo vedado à Anatel exigir quaisquer valores adicionais das proponentes vencedoras na hipótese de a demanda real superar a que foi por ela estimada.
+5.53.Pois bem. De fato, caso houvesse maior ou menor resultado no Plano de Negócios da Prestadora, nas condições editalícias de uso de radiofrequência terrestres, não haveria de se falar em qualquer reequilíbrio - pois se trataria de resultado por maior ou menor eficiência empresarial das Recorrentes. Nada obstante, a possibilidade de uso de solução satelital para cumprimento de compromissos diverge daquelas consideradas na precificação do Edital e, portanto, deve ser apreciada quanto a seus impactos econômico-financeiros. Quando analisou a formação do VPL editalício, o Conselheiro Emmanoel Campelo assim bem explicou em seu Voto nº 15/2019/EC (SEI nº 4117850):
+"5.60. Para o caso em questão, foi elaborado Plano de Negócios que, em primeiro momento, apresentou estudo para duas situações distintas:
+i. A construção integral de rede utilizando a faixa de 450 MHz, por empresa entrante fictícia, para cobertura das áreas rurais (distância de até 30 km das sedes municipais) de todos os municípios do país, com ofertas de varejo, atendimento de escolas e fornecimento de capacidade às concessionárias do STFC, resultando em VPL negativo da ordem de 4,1 bilhões de reais; e
+ii. A ampliação das redes pelas empresas já presentes no mercado brasileiro, para provimento de 4G nas áreas urbanas dos municípios com mais de 30.000 habitantes usando a faixa de 2,5 GHz, bem como provimento de 3G com quaisquer faixas nos demais municípios, resultando em VPL positivo da ordem de 5,7 bilhões de reais."
+5.54. Como pode ser visto na transcrição acima, o Edital estimou que a rede utilizando a faixa de 450 MHz seria deficitária, portanto não haveria interessados em oferecer o serviço, enquanto a ampliação do serviço 4G em áreas urbanas na faixa de 2,5 GHz poderia vir a compensar tal déficit. Nesse sentido, prossegue o Voto nº 15/2019/EC (SEI nº 4117850):
+"5.61. Como resultado, o que se notou foi que a previsão de construção de infraestrutura para atendimento das áreas rurais, na forma pretendida e sem contrapartidas ou subsídios, se mostraria bastante deficitária, indicando a inviabilidade econômica de seu cumprimento, ao passo que a prestação do serviço nas áreas urbanas para oferta do 3G e 4G se mostraria bastante superavitária, indicando não apenas a sua viabilidade, mas a possibilidade de estabelecimento de obrigações adicionais.
+5.62. Assim, a solução encontrada foi transferir parte do ônus relacionado aos investimentos para construção de infraestrutura às futuras detentoras da faixa de 2,5 GHz, que passariam a ter que compartilhá-la com uma futura detentora da faixa de 450 MHz, tornando a prestação desta economicamente viável.
+(...)
+5.64. Não obstante, ainda que esse acerto resultasse em VPL igual a zero para o lote Tipo A, tornando-o economicamente viável, considerou-se a possibilidade de não haver interessado no certame, já que seria necessário o surgimento de nova entrante, diferente dos principais grupos econômicos já estabelecidos no mercado brasileiro. Nesse caso, a alternativa seria licitar conjuntamente as faixas de 450 MHz e 2,5 GHz, com a assunção integral dos compromissos urbanos e rurais. Tal cenário foi definido como lote Tipo B.
+(...)
+5.66. Essas premissas resultaram nos seguintes valores, que foram levados ao Edital como preços mínimos dos lotes:
+ Lote
+ | 
+ Tipo de obrigação
+ | 
+ VPL
+ | 
+ Tipo A
+ | 
+ Compromissos rurais (com cessão de infraestrutura)
+ | 
+ R$ 0,00 *
+ | 
+ Tipo C
+ | 
+ Compromissos urbanos
+ | 
+ R$ 5.712.926.359,59
+ | 
+ Infraestrutura p/ compartilhamento
+ | 
+ -R$ 4.161.681.754,17
+ | 
+ Saldo (preço mínimo)
+ | 
+ R$ 1.551.244.605,42
+ | 
+ Tipo B
+ | 
+ Compromissos urbanos
+ | 
+ R$ 5.712.926.359,59
+ | 
+ Compromissos rurais
+ | 
+ -R$ 4.122.707.213,28
+ | 
+ Saldo (preço mínimo)
+ | 
+ R$ 1.590.219.146,31
+ | 
+* Já que a autorização deve se dar a título oneroso, cobra-se o valor referente ao Preço Público pelo Direito de Uso de Radiofrequências (PPDUR).
+Tabela 3 – VPL calculado para os cenários que compõem o Edital
+(...)
+5.68. Em outras palavras, é imperioso concluir que, de fato, a licitação da faixa do 450 MHz só se mostrou possível porque a inviabilidade econômica de sua prestação foi compensada pelo expressivo superávit da faixa de 2,5 GHz, o que afetou os valores finais dos lotes Tipos B e C em virtude da expectativa de construção de infraestrutura terrestre. Naturalmente, os valores pagos à União seriam diferentes se fossem previstos investimentos em outro tipo de solução, ou, ainda, não fossem exigidos.
+5.69. À luz do que foi colocado no tópico anterior, não resta dúvida de que a adoção de solução satelital, embora tecnicamente viável e mais vantajosa, como já demonstrado, resulta em alteração – a maior ou a menor – das condições do Plano de Negócios realizado para o certame, já que este foi elaborado considerando-se a construção de rede terrestre operando na faixa de 450 MHz." (grifos nossos)
+5.55.Resta claro que o VPL dos compromissos rurais, nos quais havia a expectativa cobertura de serviço com radiofrequências terrestres, foi abatido na precificação do lote "Tipo B", nos quais as Recorrentes se sagraram vencedoras. Uma vez que este Colegiado decidiu permitir o uso da solução satelital para a prestação do serviço em parte da área rural objeto do compromisso editalício, é o caso de se manter a decisão de reequilibrar a parcela do VPL correspondente aos compromissos remanescentes.
+[...]
+5.60. Concluo, portanto, pelo acerto da decisão de reequilibrar o VPL da parcela dos compromissos editalícios que venham a ser atendidos mediante solução satelital."
+Chamo atenção para o fato de que a necessidade de eventual recálculo não foi afastada pelos Votos Vistas que sucederam minha Análise de Relator, como demonstrarei a seguir. 
+IV.b - Do Voto nº 2/2021/CB (SEI nº 6928256)
+Após eu ter apresentado ao Colegiado a Análise nº 43/2021/VA (SEI nº 6832861), o então Conselheiro Carlos Manuel Baigorri, atual Presidente da Anatel, solicitou vista da matéria. 
+Em seu Voto nº 2/2021/CB (SEI nº 6928256), o Vistor abordou três pontos (a metodologia de valoração dos compromissos, a renúncia das subfaixas do 450 MHz e as premissas para avaliação do descumprimento das obrigações), confirmando sua concordância com minha proposta quanto à ampliação do benefício a todas as escolas rurais e aos novos valores de velocidades e franquias: 
+Voto nº 2/2021/CB (SEI nº 6928256)
+"4.24. Embora possa chamar a atenção a redução das velocidades e das franquias comparativamente aos valores consignados no Acórdão nº 329/2019 (SEI nº 4283088), isso ocorre porque optou-se por incluir uma quantidade maior de escolas para se beneficiar todo o universo de escolas com a elevação das velocidades em relação aos valores originais do edital (o compromisso editalício estabelece a velocidade mínima de apenas 1 Mbps). Portanto, trata-se de opção que também preserva as condições econômicas originais do edital.
+4.25. Diante desses fatos, acompanho a proposta do Relator para estender o benefício para todas as escolas e reforço que as condições exaradas de opção da capacidade satelital representam uma alternativa, sendo que o edital já previa a possibilidade de adimplemento por meio de uso de faixas do espectro para as quais as empresas detêm autorização.
+Na parte dispositiva de seu Voto, para além de acompanhar integralmente minha proposta, o atual Presidente Carlos Baigorri sugeriu um acréscimo de ofício, para definir um prazo para a Superintendência de Outorga e Recursos à Prestação (SOR) submeter proposta de extinção, por renúncia, das autorizações das subfaixas de 451 MHz a 458 MHz / 461 MHz a 468 MHz detidas pelas Recorrentes:
+"5.1. Voto por acompanhar integralmente a Análise nº 43/2021/VA (SEI nº 6832861), com o acréscimo de ofício, para que do item f.2 do Acórdão nº 292/2019 (SEI nº 4220742) passe a constar:
+f.2) submeta ao Conselho Diretor, em 60 (sessenta) dias após o prazo acima consignado, análise das manifestações apresentadas, matéria contendo proposta de extinção, por renúncia, das autorizações das subfaixas de 451 MHz a 458 MHz / 461 MHz a 468 MHz, nos casos em que não tenha havido ativação do serviço no prazo consignado no item 8.2.1 do Anexo II-B ao Edital;"
+Assim, o Voto nº 2/2021/CB (SEI nº 6928256) não afastou o entendimento quanto ao possível recálculo decorrente das manifestações que seriam apresentadas pela Recorrentes em cumprimento ao item "c.1" do Acórdão nº 292/2019.
+IV.c - Da Análise nº 56/2021/VA (SEI nº 7029813)
+Ato contínuo, elaborei a Análise nº 56/2021/VA (SEI nº 7029813), mantendo os termos de minha Análise nº 43/2021/VA (SEI nº 6832861) e acolhendo a proposta do Voto nº 2/2021/CB (SEI nº 6928256).
+IV.d - Dos Votos nº 27/2021/EC (SEI nº 7811146) e 2/2022/EC (SEI nº 7942758)
+O então Conselheiro Emmanoel Campelo solicitou vista da matéria, e propôs a conversão da deliberação em diligência, nos termos do Voto nº 27/2021/EC (SEI nº 7811146), o que foi aprovado em 16 de dezembro de 2021, durante a 908a Reunião do Conselho Diretor (SEI nº 7828337). Em suma, o ilustre Vistor solicitou que a Superintendência de Controle de Obrigações (SCO) esclarecesse como se daria assunção dos compromissos editalícios nas áreas rurais caso a Anatel concedesse anuência prévia à venda de ativos Oi Móvel para as demais Recorrentes, matéria essa que era objeto do Processo nº 53500.020134/2021-13, do qual era Relator. 
+Após receber os esclarecimentos solicitados via Informe nº 488/2021/COUN/SCO (SEI nº 7840529), o Conselheiro Emmanoel Campelo apresentou o Voto nº 2/2022/EC (SEI nº 7942758), no qual, resumidamente:
+confirmou que o Acórdão nº 292/2019 ainda não havia produzido efeitos em razão das decisões judiciais;
+aduziu que seria necessário que a Superintendência de Competição (SCP) promovesse a revisão dos cálculos para: (i) apresentar dois cenários, contemplando e não os valores da Yahsat, que não estava mais em operação no mercado; e (ii) avaliar a necessidade de atualização temporal dos cálculos, dado o lapso desde a última revisão, com vistas a considerar o tempo remanescente de outorga.
+Essa diligência foi aprovada pelo Conselho Diretor em sua Reunião nº 909, de 10 de fevereiro de 2022 (SEI nº 8048759).
+Ao receber a resposta da SCP (SEI nº 8305388), o eminente Conselheiro Emmanoel Campelo apresentou ao Colegiado seu Voto de mérito nº 7/2022/EC (SEI nº 8483440), no qual, em seu item 5.22, concordou integralmente com minha Análise nº 43/2021/VA (SEI nº 6832861) e com o acréscimo proposto pelo Voto nº 2/2021/CB (SEI 6928256). Ele explicou, ainda, que, em sua proposta de novos valores, a SCP revisou apenas os seguintes parâmetros dos planos de negócio:
+o período de 5 (cinco) anos (2022 a 2026) para o Método do Fluxo de Caixa Descontado, considerando a data atual até o prazo remanescente da outorga das radiofrequências;
+o somatório dos fluxos de caixa trazidos a valores presentes de 2022, descontados pelo Custo Médio Ponderado de Capital (CMPC) de 2021, disposto no Informe nº 1/2022/CPAE/SCP (SEI nº 8305388);
+os Preços do Edital (Voz e Dados) corrigidos pelo Índice Nacional de Preços ao Consumidor (IPCA) de Março/2022;
+o VPL do Compromisso Rural do Edital corrigido pela taxa Sistema Especial de Liquidação e de Custódia (SELIC) de Março/2022.
+Ou seja, não houve qualquer consideração quanto à lista aos municípios que seriam atendidos com a solução satelital e à eventual necessidade de recálculo do VPL. 
+Ao final, o Vistor Emmanoel Campelo propôs acolher a nova proposta de cálculo atualizado pela SCP, excluindo os valores relativos à Yahsat:
+Tabela 2 - Cenário 2, não contempla Yahsat.
+O deslinde da deliberação resultou no Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659), cujo teor replico na íntegra, com os devidos destaques:
+ACÓRDÃO Nº 194, DE 07 DE JUNHO DE 2022
+Processo nº 53500.025122/2014-48
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A., OI S.A., TIM S.A., CLARO S.A.
+CNPJ nº 02.558.157/0001-62, nº 76.535.764/0001-43, nº 02.421.421/0098-44 e nº 40.432.544/0001-47
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 913, de 2 de junho de 2022
+EMENTA
+PEDIDOS DE RECONSIDERAÇÃO. PROCESSO DE ACOMPANHAMENTO E CONTROLE DE OBRIGAÇÕES. COMPROMISSOS DE ABRANGÊNCIA PREVISTOS NO EDITAL DE LICITAÇÃO Nº 004/2012/PVCP/SPV-ANATEL (2,5 GHZ E 450 MHZ). METAS DE COBERTURA RURAL. ARGUIÇÃO DE NULIDADE. IMPROCEDÊNCIA. REEQUILÍBRIO DA PARCELA DO VALOR PRESENTE LÍQUIDO (VPL). NECESSIDADE. PERCENTUAIS PARA OS EQUIPAMENTOS HUB E VSAT. MOTIVAÇÃO ADEQUADA. METODOLOGIA NEUTRA. PEDIDOS PARA INTERPRETAÇÃO DOS CRITÉRIOS PARA ATENDIMENTO E PARA OFERTA DE PLANOS DE SERVIÇOS NA ÁREA URBANA DOS MUNICÍPIOS. PERDA DE OBJETO. ATUALIZAÇÃO DO VPL. TAXA DO SISTEMA ESPECIAL DE LIQUIDAÇÃO DE CUSTÓDIA (SELIC). ATUALIZAÇÃO DE PREÇOS DE SERVIÇOS. ÍNDICE DE PREÇOS AO CONSUMIDOR AMPLO (IPCA). ESTUDOS DE VPL. FINALIDADE. FRANQUIA NA OFERTA DE VAREJO. POSSIBILIDADE PREVISTA NO EDITAL, MAS CONDICIONADA AO ACÓRDÃO Nº 151/2016. FRANQUIA NAS ESCOLAS RURAIS. VEDAÇÃO EDITALÍCIA. MIGRAÇÃO DE SOLUÇÃO TECNOLÓGICA. CLÁUSULA DE RENÚNCIA AO DIREITO DE USO DA FAIXA DE RADIOFREQUÊNCIA DE 450 MHZ. CONDIÇÃO RESOLUTIVA. AJUSTES DE OFÍCIO. NECESSIDADE. AÇÕES JUDICIAIS. NECESSIDADE DE COMUNCAÇÃO À PFE/ANATEL. PEDIDOS DE RECONSIDERAÇÃO CONHECIDOS E PARCIALMENTE PROVIDOS. CLÁUSULA DE RENÚNCIA AO DIREITO DE USO DA FAIXA DE RADIOFREQUÊNCIA DE 450 MHZ. ATUALIZAÇÃO DE VALORES.
+1. Pedidos de Reconsideração interpostos por TELEFÔNICA BRASIL S.A., OI S.A., TIM S.A. e CLARO S.A. em face dos Acórdãos nº 292, de 4 de junho de 2019 (SEI nº 4220742), e nº 329, de 18 de junho de 2019 (SEI nº 4283088), por meio dos quais o Conselho Diretor concedeu provimento parcial ao Recurso Administrativo interposto em face de decisão do Superintendente de Controle de Obrigações, mediante a qual foi denegado o pedido de utilização de solução satelital para o adimplemento dos compromissos de abrangência rural estabelecidos no Edital de Licitação nº 004/2012/PVCP/SPV-Anatel.
+2. Não há nulidade por cerceamento ao direito de defesa e do contraditório quando a parte interessada somente tem acesso a Informe preparatório após o proferimento do Despacho que o adota como razão de decidir. Inteligência do art. 20 do Decreto nº 7.724, de 16 de maio de 2012, que regulamenta a Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação – LAI).
+3. O Valor Presente Líquido (VPL) dos compromissos rurais, nos quais havia a expectativa de cobertura de serviço com radiofrequências terrestres, foi abatido na precificação do lote "Tipo B" do Edital. Uma vez que este Colegiado decidiu permitir o uso da solução satelital para a prestação do serviço em parte da área rural objeto do compromisso editalício, é o caso de se manter a decisão de reequilibrar a parcela do VPL correspondente aos compromissos remanescentes.
+4. O percentual de -5% a.a. (cinco por cento ao ano negativos) e de -7% a.a. (sete por cento ao ano negativos) para os equipamentos HUB e VSAT, aplicado nas correções materiais levadas a cabo pelo Acórdão nº 329/2019, encontram-se devidamente motivados, não sendo necessário nem possível explicitar, em maior grau, as informações utilizadas na metodologia desenvolvida por entidade especializada contratada junto a uma instituição internacional reconhecida no setor, em razão de serem constituídas por dados confidenciais de diversas entidades.
+5. A capacidade de provimento satelital em banda Ka foi devidamente analisada antes do proferimento do Acórdão nº 292/2019, posteriormente ratificado pelo Acórdão nº 329/2019.
+6. A metodologia empregada pela Anatel não se destina a acolher as especificidades de cada Recorrente, mas sim a ser neutra, sendo reconhecida como adequada, inclusive pelo Tribunal de Contas da União (TCU). Não se poderia, nem se deveria, acolher custos e parâmetros utilizados nos cálculos realizados segundo o interesse de cada Proponente Vencedora, mas sim aqueles obtidos e devidamente sopesados pela Agência.
+7. Não cabe à Agência garantir que as condições reais sejam e se mantenham perfeitamente alinhadas com os achados do modelo teórico, mas apenas elaborar, com metodologia reconhecidamente utilizada e com os melhores dados disponíveis à época, as condições para o uso da tecnologia satelital. Se a capacidade de atendimento satelital não se comprovar permanentemente disponível, cabe às prestadoras, nos casos específicos, realizar o atendimento aos compromissos editalícios com quaisquer outros meios permitidos.
+8. Os pedidos da TIM e da TELEFÔNICA, quanto à interpretação dos critérios para atendimento de compromissos de abrangência pertinentes à área de interseção de municípios e quanto à oferta de planos de serviços na área urbana dos municípios, já foram indeferidos nos autos do Processo nº 53500.002844/2015-13.
+9. A atualização do VPL remanescente deve ocorrer com base na Taxa do Sistema Especial de Liquidação e Custódia (SELIC), a qual representa, neste caso concreto, o custo de oportunidade do dinheiro que deveria ser pago para a União no momento da licitação da radiofrequência, mas que foi trocado por compromissos de abrangência. Outrossim, os preços de serviços devem ser atualizados com base no Índice de Preços ao Consumidor Amplo (IPCA), pois as ofertas poderiam ocorrer por distintos serviços, com diferentes índices de atualização, assim como a variação no período.
+10. Apesar de não mais subsistirem no mercado, os dados obtidos pela consulta à empresa YAHSAT não devem ser excluídos dos cálculos do VPL. Os estudos de avaliação econômico-financeira servem para subsidiar tomadas de decisões na época de sua elaboração, e não para acompanhamento a posteriori de concretização de resultados.
+11. Sob o prisma do Edital, apenas nas ofertas de varejo é possível o estabelecimento de franquias. Contudo, tal possibilidade deve ser exercida conforme as determinações do Acórdão nº 151, de 22 de abril de 2016 (SEI nº 0434444), proferido nos autos do Processo nº 53500.008501/2016-35, o qual se aplica às operadoras de Serviço de Comunicação Multimídia - SCM nele listadas, independentemente da tecnologia empregada para a prestação do serviço. Quanto às escolas públicas rurais descritas no item 5 do Anexo II-B do Edital, o uso de franquia é vedado, ainda que referida decisão cautelar venha a ser revista.
+12. A eventual migração da solução satelital para a terrestre deve ocorrer sem custos para usuários finais e para as escolas rurais, e em velocidade e franquia iguais ou superiores àquelas até então providas.
+13. A operação da renúncia ao direito de uso da faixa de radiofrequência de 450 MHz, expressa no item 8.2.1 do Anexo II–B do Edital, não afasta as obrigações dispostas no item 8 do referido Instrumento. A autorização do uso dessa radiofrequência possuía uma condição resolutiva condicionada apenas à não ativação do serviço no prazo de 36 (trinta e seis meses) contados a partir do item 3 do Anexo II-B do instrumento editalício.
+14. Necessidade de proceder aos seguintes ajustes, de ofício, em prol do interesse público: (i) utilizar, nos cálculos, o valor do serviço de voz considerado nos cálculos dos planos de negócios, de acordo com a retificação promovida pelo Aviso de Licitação nº 003/2012, de 25 de maio de 2012; e (ii) revisar as condições para permitir alternativamente o uso de solução satelital para cumprimento dos compromissos de abrangência previstos no Edital, desde que na velocidade e na franquia de dados constantes no item 5.213 da Análise nº 43/2021/VA (SEI nº 6832861), inclusive para escolas públicas rurais já atendidas.
+15. Pedidos de Reconsideração conhecidos e parcialmente providos.
+16. Condição de participação no certame fixou compromisso das Proponentes de renúncia da faixa se, transcorridos 36 (trinta e seis) meses do marco inicial (fixado no item 3 do edital), não houvesse ativação de serviços nas Subfaixas de Radiofrequência de 451 MHz a 458 MHz / 461 MHz a 468 MHz outorgadas pelo edital.
+17. Critérios a serem levados em consideração no cálculo de sanção em caso de eventual descumprimento que venha a ser apurado.
+18. Atualização dos cálculos dos valores.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel:
+a) conhecer dos Pedidos de Reconsideração protocolados sob o SEI nº 4289178, nº 4278182, nº 4278418, nº 4278426, nº 4344039, nº 4344078, nº 4400020 e nº 4389320;
+b) conhecer das Petições Extemporâneas listadas no item 5.14 da Análise nº 43/2021/VA (SEI nº 6832861), nos termos da Súmula nº 21, de 10 de outubro de 2017, da Anatel;
+c) denegar o Pedido de Ingresso como Interessada apresentado pela HUGHES TELECOMUNICAÇÕES DO BRASIL LTDA.;
+d) dar provimento parcial aos Pedidos de Reconsideração, unicamente para reformar os prazos constantes dos subitens "c.2" e "c.3" da alínea "c" do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742), de 45 (quarenta e cinco) para 90 (noventa) dias, contados a partir da notificação da presente deliberação;
+e) esclarecer que:
+e.1) sob o prisma do Edital, apenas nas ofertas de varejo é possível o estabelecimento de franquias. Contudo, tal possibilidade deve ser exercida conforme as determinações do Acórdão nº 151, de 22 de abril de 2016 (SEI nº 0434444), proferido nos autos do Processo nº 53500.008501/2016-35, o qual se aplica às operadoras de Serviço de Comunicação Multimídia - SCM nele listadas, independentemente da tecnologia empregada para a prestação do serviço. Quanto às escolas públicas rurais descritas no item 5 do Anexo II-B do Edital, o uso de franquia é vedado, ainda que referida decisão cautelar venha a ser revista; e,
+e.2) a eventual migração da solução satelital para a terrestre deve ocorrer sem custos para usuários finais e para as escolas rurais, e em velocidade e franquia iguais ou superiores àquelas até então providas;
+f) substituir, de ofício, a tabela acolhida pelo item "a" do Acórdão nº 329, de 18 de junho de 2019 (SEI nº 4283088), pela tabela constante no item 5.213 da Análise nº 43/2021/VA (SEI nº 6832861), de forma que as escolas públicas rurais já atendidas também sejam beneficiadas com o aumento de velocidade e franquia de dados;
+g) retificar o texto constante do item "h" do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742), para que passe a conter a seguinte redação:
+"h) declarar a perda de objeto dos pedidos apresentados pela TIM e pela TELEFÔNICA sobre a interpretação dos critérios para atendimento de compromissos de abrangência pertinentes à área de interseção de municípios e à oferta de planos de serviços na área urbana dos municípios, já indeferidos por este Conselho Diretor nos autos do Processo nº 53500.002844/2015-13";
+h) informar à Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) sobre a presente deliberação, em atenção às decisões judiciais proferidas nos autos da Ação Ordinária nº 0021002-79.2019.4.01.3400, do Mandado de Segurança nº 1019996-20.2019.4.01.3400 e do Processo Judicial nº 1021497-09.2019.4.01.3400;
+i) retificar, de ofício, o item "f.2" do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742), para que passe a constar:
+"f.2) submeta ao Conselho Diretor, em 60 (sessenta) dias após o prazo acima consignado, análise das manifestações apresentadas, matéria contendo proposta de extinção, por renúncia, das autorizações das subfaixas de 451 MHz a 458 MHz / 461 MHz a 468 MHz, nos casos em que não tenha havido ativação do serviço no prazo consignado no item 8.2.1 do Anexo II-B ao Edital;" e,
+j) adotar os valores de throughput e franquia mensal atualizados.
+Quanto às alíneas "a" a "h", a decisão foi por unanimidade, nos termos propostos pelo Conselheiro Relator, Vicente Bandeira de Aquino Neto, por meio da Análise nº 43/2021/VA (SEI nº 6832861), apresentada na Reunião nº 899, de 6 de maio de 2021. Nestes pontos, participaram da deliberação o ex-Presidente Leonardo Euler de Morais e os Conselheiros Carlos Manuel Baigorri, Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto.
+Com relação à alínea "i", a decisão foi por unanimidade, nos termos propostos pelo Conselheiro Carlos Manuel Baigorri por meio do Voto nº 2/2021/CB (SEI nº 6928256), que foi acompanhado pelo Conselheiro Vicente Bandeira de Aquino Neto, Relator, por meio da Análise Complementar nº 56/2021/VA (SEI nº 7029813), apresentados na Reunião nº 901, de 17 de junho de 2021. Neste ponto, participaram da deliberação os Conselheiros Carlos Manuel Baigorri, Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto.
+No tocante à alínea "j", a decisão foi por unanimidade dos presentes da Reunião nº 913, de 2 de junho de 2022, nos termos propostos pelo Conselheiro Emmanoel Campelo de Souza Pereira por meio do Voto nº 7/2022/EC (SEI nº 8483440). Neste item, o Conselho Diretor entendeu ser possível a manifestação do Presidente Carlos Manuel Baigorri por se tratar de fato superveniente. Portanto, neste ponto, participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Emmanoel Campelo de Souza Pereira e Moisés Queiroz Moreira.
+O Conselheiro Emmanoel Campelo de Souza Pereira propôs, na Reunião nº 913, de 2 de junho de 2022, em seu Voto nº 7/2022/EC (SEI nº 8483440), que fosse desconsiderada a operação da YAH TELECOMUNICAÇÕES LTDA. (YAHSAT), tendo sido acompanhado pelo Conselheiro Moisés Queiroz Moreira. Porém, ambos votaram vencidos em relação a essa proposta.
+Presentes na Reunião nº 913, de 2 de junho de 2022, o Presidente Carlos Manuel Baigorri e os Conselheiros Emmanoel Campelo de Souza Pereira e Moisés Queiroz Moreira.
+Ausentes os Conselheiros Artur Coimbra de Oliveira, em missão oficial internacional, e Vicente Bandeira de Aquino Neto, justificadamente.
+(Destacou-se)
+Veja-se que o Colegiado aprovou, por unanimidade, na alínea "f", a tabela que propus no item 5.213 de minha Análise nº 43/2021/VA (SEI nº 6832861), de forma que as escolas públicas rurais já atendidas também possam ser beneficiadas com o aumento de velocidade e franquia de dados. 
+Ora, se o Colegiado aprovou referida tabela, ele aprovou o racional que a motivou. Dessa forma, também houve unanimidade quanto ao entendimento que expus ao explicá-la, no sentido de que seus cálculos consideraram o mesmo cenário de atendimento utilizado na decisão recorrida, e que "a depender do que for informado pelas Prestadoras em cumprimento ao item "c.1" do Acórdão nº 292/2019, a SCP deverá promover os necessários ajustes nos cálculos" (item 5.215 da Análise nº 43/2021/VA -SEI nº 6832861).
+Reitero que a possibilidade de eventual recálculo não foi afastada por quaisquer dos meus pares. Ao contrário, como demonstrei, todos acompanharam na íntegra minha proposta. E não poderia ser diferente, já que a informação sobre quais municípios serão atendidos por satélite é crucial para se reequilibrar adequadamente o VPL, de modo que as diferenças de valores entre o emprego de rede terrestre e da rede satelital sejam utilizadas em prol das obrigações já constantes do Edital. 
+Veja-se nesse mesmo sentido o seguinte excerto do Voto nº 2/2022/EC (SEI nº 7942758), no qual o Conselheiro Emmanoel Campelo explicou o raciocínio que o levou a apresentar a proposta reequilíbrio de VPL que foi aprovada pelo Acórdão nº 292/2019 (SEI nº 4220742):
+Voto nº 2/2022/EC (SEI nº 7942758)
+"5.4. Todavia, identifiquei, com apoio das áreas técnicas da Agência, que o simples reconhecimento da possibilidade de uso de satélites poderia gerar desequilíbrio financeiro ao certame, com desbalanço negativo para o poder público. Isso porque o emprego da solução satelital se mostraria menos onerosa do que a inicialmente considerada, o que gera efeitos diretos à precificação dos lotes do Edital: houvesse o vislumbre da possibilidade de emprego de solução menos onerosa, o Valor Presente Líquido (VPL) resultante seria maior, elevando também os preços mínimos dos lotes do certame.
+5.5 Como solução para o reequilíbrio, minha proposta consistiu em precificar, com auxílio da Superintendência de Competição (SCP), as diferenças de valores entre o emprego de rede terrestre e da rede satelital, a fim de o valor resultante fosse utilizado em prol das obrigações já constantes do Edital. O resultado, portanto, consistiu em ampliar a velocidade e franquia aplicáveis à obrigação de conexão de escolas rurais, a fim de repactuar os valores estabelecidos em Edital, sendo essa a principal condição posta pelo colegiado para o emprego da solução satelital no adimplemento das obrigações."
+Por fim, como corretamente registrado pelo ilustre Conselheiro Relator Emmanoel Campelo no item 4.6 da Análise nº 99/2022/EC (SEI nº 8936539), a decisão proferida pelo Acórdão nº 194/2022 (SEI nº 8589659) "transitou em julgado no âmbito administrativo e não é mais passível de recurso, devendo os seus termos serem implementados pelas empresas envolvidas e seu cumprimento devidamente acompanhado pela Superintendência de Controle de Obrigações".
+Em outras palavras, caso já não tenha feito, a SCO deve analisar as informações apresentadas pelas prestadoras, nos termos do "item c.1" daquele Acórdão (SEI nº 8589659) e, se necessário, encaminhar os autos à SCP para realização dos devidos recálculos, à luz do consignado no item 5.215 da Análise nº 43/2021/VA (SEI nº 6832861), aprovada por unanimidade pelo Colegiado quando daquela deliberação.
+Assim, concluo pelo indeferimento dos pedidos "a" e "b" descritos no item II da petição de SEI nº 8664399 da Telefônica, mas por fundamento diverso daquele apresentado pelo ilustre Relator: a meu ver, não há necessidade de revisão do Acórdão porque ele já contempla a possibilidade do recálculo requerido pela Prestadora, e não há qualquer ofensa ao art. 37[5] nem subsunção ao art. 109[6] da nossa norma regimental.
+V - DOS PEDIDOS NÃO CONSIDERADOS NA ANÁLISE Nº 99/2022/EC (SEI Nº 8936539) 
+Ao avaliar a Análise nº 99/2022/EC (SEI Nº 8936539), observei que o Relator não teceu considerações a respeito dos pedidos "c", "d" e "e" do item II da petição de SEI nº 8664399, cujo teor eu já transcrevi no item 4.1 deste Voto, mas que reproduzo mais uma vez abaixo, para fins de melhor elucidar seu conteúdo:
+"c. Com base no poder geral de cautela administrativa, nos termos previstos no art. 52 do Regimento Interno da Agência Nacional de Telecomunicações – ANATEL, aprovado pela Resolução nº 612, de 29 de abril de 2018, a suspensão dos prazos relativos ao item “c” do Acórdão nº 292/2019 e do Acórdão nº 194/2022 até que a Agência realize as atividades descritas nos itens (a) e (b) e disponibilize referidas informações, como condição para execução das determinações do Acórdão nº 194/2022; 
+d. A fixação de novo prazo compatível para cumprimento da readequação da velocidade das escolas atendidas atualmente, por se tratar de uma inovação que requer o dispêndio de tempo e recursos técnicos para sua operação; e
+e. A confirmação de entendimento de que os ganhos de antena sejam considerados para o cálculo de área coberta pela Telefônica, de acordo com a correspondência CT.1094/2019/LLLADB e respectivos anexos, sem prejuízo quanto à possibilidade de substituição desta documentação conforme antenas de maior ganho se tornarem disponíveis."
+Tratarei de cada item separadamente. 
+V.a - Da suspensão dos prazos consignados nos na alínea "c" do Acórdão nº 292/2019 (SEI nº 4220742) e no Acórdão nº 194/2022 (SEI nº 8589659)
+Primeiramente, o poder de cautela previsto no art. 52 do RIA possibilita que a Anatel adote, motivadamente, "medidas cautelares indispensáveis para evitar dano grave e irreparável ou de difícil reparação, sem a prévia manifestação do interessado". E, de acordo com a Telefônica, haveria risco de dano caso houvesse o transcurso dos prazos consignados na alínea "c" do Acórdão nº 292/2019 (SEI nº 4220742) e no Acórdão nº 194/2022 (SEI nº 8589659) antes que a Agência efetuasse nova verificação da cobertura terrestre da Prestadora e promovesse o correspondente recálculo do VPL.
+Correndo o risco de ser repetitivo, entendo pertinente transcrever os prazos previstos nos referidos Acórdãos, especialmente porque o segundo Acórdão alterou 2 (dois) prazos que estavam no primeiro:
+Acórdão nº 292/2019 (SEI nº 4220742)
+(...)
+c) determinar às prestadoras CLARO S.A., OI MÓVEL S.A., TELEFÔNICA BRASIL S.A. e TIM CELULAR S.A. que:
+c.1) informem, no prazo de 15 (quinze) dias contados da notificação da presente deliberação pelo Conselho Diretor, os municípios da planilha SEI nº 4032259 que serão atendidos com solução satelital, na forma citada na alínea "a";
+c.2) adotem as medidas necessárias, no prazo de 45 (quarenta e cinco) dias contados da notificação da presente deliberação pelo Conselho Diretor, para a efetiva disponibilização das ofertas de varejo, bem como a adaptação dos contratos de prestação já existentes, nos termos da alínea "a"; e,
+c.3) encaminhem, no prazo de 45 (quarenta e cinco) dias contados da notificação da presente deliberação pelo Conselho Diretor, comprovações das medidas adotadas a fim de garantir ampla publicidade da oferta de varejo, devendo constar, no mínimo, na página inicial e na relação de planos disponíveis do seu sítio eletrônico na internet, bem como nos demais canais de venda da prestadora, devendo constar os preços praticados e as respectivas velocidades de conexão e franquias;
+.........................................................
+Acórdão nº 194/2022 (SEI nº 8589659)
+(...) 
+d) dar provimento parcial aos Pedidos de Reconsideração, unicamente para reformar os prazos constantes dos subitens "c.2" e "c.3" da alínea "c" do Acórdão nº 292, de 4 de junho de 2019 (SEI nº 4220742), de 45 (quarenta e cinco) para 90 (noventa) dias, contados a partir da notificação da presente deliberação;
+Dessa maneira, conforme a decisão que transitou em julgado (Acórdão nº 194/2022 - SEI nº 8589659), este Colegiado determinou que as operadoras Claro S.A., OI Móvel S.A., Telefônica Brasil S.A. e Tim Celular S.A. adotassem as seguintes providências, nos seguintes prazos, contados a partir daquela deliberação, ocorrida em 7 de junho de 2022 e publicada no dia 9 subsequente:
+c.1) 15 (quinze) dias: informar quais municípios serão atendidos com solução satelital;
+c.2) 90 (noventa) dias: disponibilizar as ofertas de varejo e adaptar os contratos de prestação já existentes conforme deliberado naquela oportunidade;
+c.3) 90 (noventa) dias: encaminhar comprovações das medidas adotadas a fim de garantir ampla publicidade da oferta de varejo, devendo constar, no mínimo, na página inicial e na relação de planos disponíveis do seu sítio eletrônico na internet, bem como nos demais canais de venda da prestadora, devendo constar os preços praticados e as respectivas velocidades de conexão e franquias.
+Vê-se que o prazo das alíneas "c.2" e "c.3" são mais longos do que o da alínea "c.1" por uma questão óbvia: a informação sobre quais municípios serão atendidos com solução satelital poderia acarretar alteração nos valores das velocidades e franquias que deveriam ser disponibilizadas nas ofertas/contratos e na publicidade. Além disso, as prestadoras precisam de um lapso temporal razoável para cumprir as determinações afetas a essas novas ofertas de varejo.
+O que me parece lógico, mas que não constou do Acórdão nº 194/2022 (SEI nº 8589659), é que os prazos das alíneas "c.2" e "c.3" só podem ter sua contagem iniciada após a Anatel analisar as informações prestadas em atenção à alínea "c.1" e confirmar ou adequar os valores da tabela aprovada naquela deliberação. Caso contrário, poderemos nos deparar com situações de recomposição de VPL totalmente descoladas da realidade. Imagine o seguinte cenário hipotético: uma empresa informou que nenhum dos municípios serão atendidos com solução satelital. Ainda assim, ela teria de obedecer a uma planilha que levou em consideração cenário de atendimento anterior e distinto, a despeito de este próprio Conselho ter determinado a atualização da lista desses municípios exatamente para proceder à adequada compensação de custos! Isso não me parece razoável.
+Repiso: se este Conselho Diretor não tivesse vislumbrado a possibilidade de recálculo não planilha, não teria mandado as operadoras encaminharem nova lista de municípios atendidos com solução satelital. Não vislumbro outra finalidade à determinação constante na alínea "c.1".
+Dessa maneira, a Requerente tem razão ao apontar a necessidade de suspensão de prazos, mas se equivoca ao solicitar tal providência para a alínea "c.1". Os únicos prazos que devem ter o início de seu transcurso suspenso são os descritos nas alíneas "c.2" e "c.3", exatamente porque eles dependem do juízo que a Área Técnica fará sobre os dados informados pelas operadoras em cumprimento à determinação contida na alínea "c.1". Por essa razão, sugiro indeferir o pedido constante da alínea "c" do item II da petição de SEI nº 8664399.
+De qualquer sorte, como dito, não há, nestes autos, informações sobre o envio dessas listas pelas prestadoras à Anatel, nem tampouco o registro do que a Área Técnica fez qual tais dados. Acredito que, provavelmente, tenham sido instaurados processos específicos para esse fim, para cada uma das prestadoras.
+ Ressalto que a ausência dessas informações, no entanto, não prejudica a presente análise, pois a única providência que sugiro é deixar consignado o seguinte esclarecimento: os prazos de 90 (noventa) dias consignados nas alíneas "c.2" e "c.3" do Acórdão nº 194/2022 (SEI nº 8589659) somente terão sua contagem iniciada após a análise, pela Anatel, das informações apresentadas pelas prestadoras em cumprimento à determinação constante de sua alínea "c.1".
+V.b - Da fixação de novo prazo para readequar a velocidade das escolas já atendidas 
+A Telefônica solicitou a "fixação de novo prazo compatível para cumprimento da readequação da velocidade das escolas atendidas atualmente, por se tratar de uma inovação que requer o dispêndio de tempo e recursos técnicos para sua operação".
+O prazo para essas adequações já foi estabelecido em 90 (noventa) dias, conforme alínea "c.2" do Acórdão nº 194/2022 (SEI nº 8589659). Relembro ainda que referido prazo já foi prolongado, pois inicialmente ele era de 45 (quarenta e cinco) dias, como se vê na alínea "c.2" do Acórdão nº 292/2019 (SEI nº 4220742). E essa dilação foi sugerida por mim na Análise nº 43/2021/VA (SEI nº 6832861), que conduziu o Acórdão nº 194/2022 (SEI nº 8589659). Veja-se:
+"5.169. As Recorrentes sustentam que os prazos concedidos nos subitens da alínea "c" do Acórdão nº 292/2019 seriam insuficientes para a tomada de todas as medidas nele dispostas, a saber, a negociação com fornecedores de mercado para aquisição da capacidade satelital, o processo de contratação de tal negociação e a elaboração de novos contratos nos moldes fixados pela Agência para criação, produção e vinculação da correspondente publicidade nas áreas rurais de todo o país.
+(...)
+É de se destacar que os efeitos de tais determinações encontram-se suspensos por decisões judiciais obtidas por todas as Recorrentes, como já relatado.
+Entendo que o argumento é razoável. Reconheço que as determinações proferidas por este Colegiado são extensas, e que se deve evitar que elas possam vir a não surgir efeito ou dar azo a contestações relacionadas à insuficiência de prazo. 
+Sugiro, assim, reformar os prazos constantes dos subitens "c.2" e "c.3" da alínea "c" do Acórdão nº 292/2019 de 45 (quarenta e cinco) para 90 (noventa) dias, contados a partir da notificação da presente deliberação."
+Tal como explicado nos capítulos anteriores deste Voto, trata-se de matéria cuja apreciação exauriu a esfera administrativa. Em outras, palavras, houve o trânsito em julgado administrativo da questão. Além disso, a Prestadora não apresentou dados sobre a suposta "magnitude das atividades a serem executadas" para cumprimento do determinado por este Colegiado.
+Sugiro, assim, o indeferimento do pedido "d" do item II da petição de SEI nº 8664399.
+V.c - Da consideração dos ganhos de antena nos cálculos de área de cobertura
+Por fim, a Telefônica solicitou a confirmação de que os ganhos de antena serão considerados para o cálculo de sua área coberta, de acordo com a correspondência CT.1094/2019/LLLADB e respectivos anexos, sem prejuízo quanto à possibilidade de substituição da referida documentação conforme antenas de maior ganho se tornarem disponíveis.
+Pois bem. A petição CT.1094/2019/LLLADB foi juntada sob o SEI nº 4544373 aos autos do Processo nº 53500.002031/2014-34, no qual a Agência apura o cumprimento dos itens 4 e 5 do Anexo II-B do Edital nº 004/2012/PVCP/SPV—ANATEL da Telefônica. Em tal documento, a prestadora pleiteia "...a atualização de parâmetros utilizados para a fiscalização dos compromissos de abrangência definidos no item 4 do Anexo II-B do Edital (os “Compromissos de Abrangência Rural”) em caso de utilização de radiofrequência terrestre, em função das evoluções tecnológicas verificadas no período..." (grifou-se). Afirma que apresenta "...a atualização dos projetos técnicos de referência para cálculo do ganho diretivo, em cada tecnologia e faixa de frequência, e solicita que os novos valores de referência sejam considerados nos procedimentos de fiscalização a serem realizados de hoje em diante" (grifou-se). 
+O presente feito não se prestou a debater sobre os procedimentos de fiscalização para averiguação do adimplemento de compromissos editalícios, de modo que não vislumbro, neste caso concreto e nessa fase processual, a possibilidade de "confirmar" qualquer entendimento quanto ao tema. De fato, o pleito da Telefônica será devidamente examinado pela Área Técnica no bojo do Processo nº 53500.002031/2014-34, que ainda se encontra pendente de decisão de primeira instância, a qual, uma vez proferida, poderá ser contestada em sede recursal, caso haja interesse da prestadora em assim proceder. 
+Concluo, assim, pelo indeferimento do pedido "e" descrito no item II da petição de SEI nº 8664399.
+Por fim, ressalto que, diante do trânsito em julgado do Acórdão nº 194/2022 (SEI nº 8589659), que suas determinações devem ser implementadas pelas empresas envolvidas e seu cumprimento devidamente acompanhado pela Superintendência de Controle de Obrigações (SCO), nos termos aprovados por este Colegiado.
+CONCLUSÃO
+Voto por:
+receber a petição CT LLLAC nº 663/2022 (SEI nº 8664399) com base no direito assegurado no art. 5º, XXXIV, "a", da Constituição da República Federativa do Brasil, de 5 de outubro de 1988, tal como proposto pelo Conselheiro Relator Emmanoel Campelo em sua Análise nº 99/2022/EC (SEI nº 8936539), de 6 de outubro de 2022;
+indeferir os pedidos descritos no item II da petição CT LLLAC nº 663/2022 (SEI nº 8664399) pelas razões expostas neste Voto, em especial por entender que o Acórdão nº 194, de 07 de junho de 2022 (SEI nº 8589659): (i) já contempla a possibilidade do recálculo requerido pela Prestadora, o que torna seu pleito dispensável; (ii) não ofende o art. 37 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, que prevê os critérios a serem observados em processos administrativos; e (iii) não está eivado de defeitos sanáveis que devem ser convalidados conforme art. 109 da norma regimental; 
+determinar que, caso já não tenha feito, a Superintendência de Controle de Obrigações (SCO) analise as informações apresentadas pelas prestadoras em atenção ao item "c.1." do Acórdão nº 194/2022 (SEI nº 8589659) e, se necessário, encaminhe os autos à Superintendência de Competição (SCP) para realização dos devidos recálculos, à luz do consignado no item 5.215 da Análise nº 43/2021/VA (SEI nº 6832861), aprovada por unanimidade pelo Colegiado quando daquela deliberação;
+esclarecer que os prazos consignados nas alíneas "c.2" e "c.3" do Acórdão nº 194/2022 (SEI nº 8589659) somente terão sua contagem iniciada após a análise, pela Anatel, das informações apresentadas pelas prestadoras em cumprimento à determinação constante de sua alínea "c.1".
+NOTAS
+[1] Cópia constante da fl. 62 do Volume de Processo 1 (SEI nº 0438875). 
+[2] Correspondência protocolada sob o nº 53500.023767/2014. Fls. 1 a 16 do Volume de Processo 1 (SEI nº 0438875).
+[3] Despacho Decisório nº 5.961/2014-COUN/SCO/Anatel, de 3 de novembro de 2014. Fl. 63 do Volume de Processo 1 (SEI nº 0438875).
+[4] Correspondência protocolada sob o nº 53504.022042/2014-09. Fls. 66 a 84 do Volume de Processo 1 (SEI nº 0438875).
+[5] Art. 37. Os processos administrativos observarão, dentre outros, os seguintes critérios de: I - atuação conforme a Lei e o Direito; II - atendimento a fins de interesse geral, vedada a renúncia total ou parcial de poderes ou competências, salvo as legalmente autorizadas; III - objetividade no atendimento do interesse público, vedada a promoção pessoal de servidores ou autoridades; IV - atuação segundo padrões éticos de probidade, decoro e boa-fé; V - observância da publicidade das informações como preceito geral e do sigilo como exceção, ressalvadas as hipóteses de sigilo previstas na Constituição Federal ou em lei; VI - adequação entre meios e fins, vedada a imposição de obrigações, restrições e sanções em medida superior àquelas estritamente necessárias ao atendimento do interesse público ou estabelecidas pela legislação; VII - indicação dos pressupostos de fato e de direito que fundamentarem a decisão; VIII - observância das formalidades essenciais à garantia dos direitos dos interessados; IX - adoção das formas simples, suficientes para propiciar adequado grau de certeza, segurança e respeito aos direitos dos interessados; X - impulsão de ofício do processo administrativo, sem prejuízo da atuação dos interessados; XI - interpretação das normas da forma que melhor garanta o atendimento do fim público a que se destinam, vedada a aplicação retroativa de nova interpretação; XII - garantia dos direitos à comunicação, à apresentação de alegações finais, à produção de provas e à interposição de recursos, nos processos que possam resultar em sanções e nas situações de litígio; XIII - proibição de cobrança de despesas processuais, ressalvadas as previstas na legislação aplicável. (...)
+[6] Art. 109. Os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Agência, desde que não acarretem lesão ao interesse público, nem prejuízos a terceiros.
+ | Documento assinado eletronicamente por Vicente Bandeira de Aquino Neto, Conselheiro, em 07/06/2023, às 19:46, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 10069603 e o código CRC 8C3585F8.
+ | 
+Referência: Processo nº 53500.025122/2014-48 | 
+SEI nº 10069603 |

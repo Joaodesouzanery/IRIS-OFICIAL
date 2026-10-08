@@ -1,0 +1,55 @@
+SEI/ANATEL - 16235591 - Acórdão
+Boletim de Serviço Eletrônico em 08/09/2026
+DOU de 08/09/2026, seção 1, página 30
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 238, de 04 de setembro de 2026
+Processo nº 53500.095414/2026-81
+Recorrente/Interessado: OI S.A., MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA., OI SERVIÇOS TELEFÔNICOS S.A.
+CNPJ nº 76.535.764/0001-43, nº 65.295.172/0001-85 e nº 63.701.799/0001-63
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião Extraordinária nº 32, de 3 de setembro de 2026
+EMENTA
+DIREITO REGULATÓRIO. ANUÊNCIA PRÉVIA. TRANSFERÊNCIA DE CONTROLE SOCIETÁRIO. OI SERVIÇOS TELEFÔNICOS S.A. (OI SERVIÇOS). MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA. (MÉTODO). ANUÊNCIA PRÉVIA CONDICIONADA.
+I. CASO EM EXAME
+1. Pedido de anuência prévia para transferência do controle da OI SERVIÇOS TELEFÔNICOS S.A. para a MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA.
+2. A operação prevê a transferência prévia para a OI SERVIÇOS dos ativos, direitos, contratos, obrigações e meios necessários à prestação do serviço de voz fixa da OI S.A. (OI).
+3. A operação abrange compromissos de continuidade decorrentes da adaptação das concessões do Serviço Telefônico Fixo Comutado - STFC para o regime de autorização.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a operação configura transferência de controle ou transferência de outorga; (ii) saber se a operação preserva a continuidade da prestação e os compromissos regulatórios remanescentes; (iii) saber se há risco concorrencial ou necessidade de condicionante consumerista; e (iv) saber quais condições devem preceder a implementação da operação diante da falência da OI.
+III. RAZÕES DE DECIDIR
+1. A operação altera o controle societário da OI SERVIÇOS. A pessoa jurídica autorizada permanece titular da autorização para prestar o STFC.
+2. A realocação dos ativos e meios operacionais para a OI SERVIÇOS não transfere a titularidade de autorização à MÉTODO.
+3. A transferência de outorga não é necessária. A OI SERVIÇOS já possui autorização para prestar o STFC.
+4. A operação exige a preservação dos compromissos de manutenção da funcionalidade de voz nas localidades submetidas ao regime de Carrier of Last Resort - CoLR, dos serviços tridígitos e da interconexão para tráfego de voz.
+5. A MÉTODO deve assumir formalmente os compromissos de continuidade a partir da efetivação da operação. A assunção não exclui a responsabilidade da Oi por descumprimentos anteriores.
+6. A celebração de termo aditivo ao Termo de Autocomposição e a constituição de garantia suficiente devem ocorrer antes do fechamento da operação.
+7. A garantia deve considerar as obrigações remanescentes e o custo de restabelecimento da funcionalidade de voz em acessos e terminais inoperantes nas localidades CoLR ainda vinculadas à obrigação de manutenção.
+8. A transferência dos recursos de numeração exige plano detalhado e cronograma adequado a ser encaminhado à ABR TELECOM.
+9. A operação não altera a estrutura concorrencial do mercado de varejo do STFC. Não há variação relevante do índice HHI em nível municipal.
+10. Não foram identificados riscos adicionais ou específicos aos direitos dos consumidores. A conclusão considera a manutenção dos planos, das condições de fruição, dos canais de atendimento e da continuidade dos serviços.
+11. A falência da OI não impede a anuência prévia. Os atos pendentes devem observar o regime falimentar, a representação da massa falida e as determinações do juízo falimentar.
+IV. DISPOSITIVO E TESE
+1. Anuência prévia condicionada à comprovação de regularidade fiscal, à assunção formal dos compromissos do Termo de Autocomposição, à apresentação de garantia aprovada pela Anatel e à apresentação de plano de transferência dos recursos de numeração.
+2. Determinada a celebração de termo aditivo ao Termo de Autocomposição, a elaboração de minuta de Termo Único de Autorização e a preservação dos mecanismos de continuidade e garantia.
+3. Determinada a comprovação de autorização do juízo falimentar e da participação do administrador judicial nos atos pendentes, quando exigidas pela Lei nº 11.101/2005.
+Tese de julgamento: “1. A aquisição do controle da OI SERVIÇOS TELEFÔNICOS S.A. pela MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA. configura transferência de controle societário, sem transferência de outorga. 2. A anuência prévia depende da preservação dos compromissos de continuidade do serviço de voz, dos serviços tridígitos e da interconexão, mediante termo aditivo, assunção expressa de obrigações e garantia suficiente. 3. A falência da OI não inviabiliza a operação, desde que os atos pendentes observem o regime falimentar e as autorizações exigíveis do juízo competente.”
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 133; Lei nº 11.101/2005, arts. 74, 76, 103 e 117; Resolução nº 101/1999, art. 7º; e Resolução nº 720/2020, arts. 17, 19 e 21.
+Jurisprudência relevante citada: Acórdão nº 394, de 27.12.2024; Acórdão nº 177, de 07.07.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 84/2026/EH (SEI nº 16232517), integrante deste acórdão:
+a) conceder anuência prévia à operação societária que resultará na alteração de controle da OI SERVIÇOS TELEFÔNICOS S.A., CNPJ nº 63.701.799/0001-63, para a MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA., CNPJ nº 65.295.172/0001-85, nos termos da Petição SEI nº 16055515, condicionada:
+a.1) à comprovação da regularidade fiscal da OI SERVIÇOS TELEFÔNICOS S.A. e MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA., perante a Superintendência de Competição - SCP, junto à Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço - FGTS; e a regularidade fiscal junto à Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - Cadin, devendo comprovar, adicionalmente, a regularidade fiscal perante a Fazenda Estadual ou do Distrito Federal, e perante a Fazenda Municipal, expedida por órgão do lugar da sede da Empresa envolvida na operação ou do Sucessor, conforme o caso, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívidas ativas;
+a.2) à apresentação, perante a Superintendência Executiva - SUE, de declaração de assunção, pela OI SERVIÇOS TELEFÔNICOS S.A. e MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA., das obrigações e dos compromissos previstos no Termo de Autocomposição, a serem posteriormente refletidos no Termo único de Autorização;
+a.3) à apresentação e à comprovação de garantia, perante a Superintendência Executiva - SUE, em benefício da Anatel, destinada a assegurar o fiel cumprimento das obrigações de manutenção da prestação dos serviços, constantes das cláusulas 6 e 10.3 do Termo de Autocomposição para Adaptação dos Contratos de Concessão do Serviço Telefônico Fixo Comutado - STFC da OI para o Regime de Autorização (SEI nº 12905932) e replicadas no Termo Único de Autorização nº 13/2024, assumidas pela MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA., em valor, prazo, forma e condições aprovados pela Agência, devendo o dimensionamento do valor considerar o estoque efetivo de obrigações remanescentes na data do fechamento, incluído o custo de restabelecimento da funcionalidade de voz nos acessos e terminais inoperantes das localidades submetidas ao regime de Carrier of Last Resort ainda vinculadas à obrigação de manutenção; e,
+a.4) à apresentação, perante a Superintendência de Outorga e Recursos à Prestação - SOR, pela OI SERVIÇOS TELEFÔNICOS S.A. e MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA. de Plano de Transferência de Recursos de Numeração detalhado e com cronograma adequado a ser encaminhado posteriormente à ABR TELECOM;
+b) determinar à MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA. e OI SERVIÇOS TELEFÔNICOS S.A. que preservem os mecanismos de garantia apresentados à Anatel e continuidade previstos na cláusula 10.3 do Termo de Autocomposição, ressalvadas as alterações expressamente aprovadas pela Anatel;
+c) determinar à MÉTODO TELECOMUNICAÇÕES E COMÉRCIO LTDA. e OI SERVIÇOS TELEFÔNICOS S.A., como condição decorrente da falência da OI, decretada antes do fechamento da operação, que comprovem que a operação, o termo aditivo e os atos de transferência de bens, direitos, contratos e obrigações foram autorizados pelo juízo falimentar e praticados com a participação do administrador judicial, na extensão exigida pela Lei nº 11.101/2005;
+d) estabelecer que a presente concessão de anuência prévia valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Ato que formaliza a Anuência Prévia no Diário Oficial da União, prorrogável, a pedido, uma única vez, por igual período, se mantidas as mesmas condições da aprovação; e,
+e) determinar à OI SERVIÇOS TELEFÔNICOS S.A. que encaminhe à Anatel as cópias dos atos societários que formalizarem a transferência de seu controle, no prazo de até 60 (sessenta) dias, contado do registro no órgão competente.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/09/2026, às 15:06, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16235591 e o código CRC 0E8C3A93.
+ | 
+Referência: Processo nº 53500.095414/2026-81 | 
+SEI nº 16235591 |

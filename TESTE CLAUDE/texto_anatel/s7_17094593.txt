@@ -1,0 +1,158 @@
+SEI/ANATEL - 15279069 - Análise
+Boletim de Serviço Eletrônico em 07/05/2026
+Análise nº 22/2026/NP
+Processo nº 53500.005555/2011-34
+Interessado: TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Extinção, por renúncia, do Direito de Exploração, no Brasil, do satélite estrangeiro Anik G1.
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1, pertencente à Telesat Canada, com efeitos a partir de 1º de agosto de 2026.
+2. O direito de exploração foi conferido pelo Ato nº 3.480, de 1º de julho de 2020, ratificado pelo Termo de Autorização nº 2/2021, e tem vigência até 31 de março de 2032.
+3. A representante legal no Brasil, Telesat Brasil Capacidade de Satélites Ltda., formulou o pedido em 26 de janeiro de 2026, justificado pela redução da demanda por capacidade geoestacionária e baixa utilização do satélite no mercado brasileiro.
+4. A área técnica propôs o deferimento do pedido, uma vez que capacidade continuará a ser ofertada aos clientes pelos satélites Telstar 19 Vantage e Telstar 12 Vantage, autorizados pela Anatel.
+II. QUESTÃO EM DISCUSSÃO
+5. Há duas questões em discussão: (i) saber se o Conselho Diretor é competente para declarar a extinção, por renúncia, do Direito de Exploração de Satélite; e (ii) saber se estão atendidos os requisitos procedimentais e regulatórios para a extinção do direito de exploração do satélite Anik G1, sem prejuízo das obrigações da exploradora perante a Anatel e terceiros.
+III. RAZÕES DE DECIDIR
+6. Compete à Anatel disciplinar o uso de recursos de órbita e espectro, cabendo ao Conselho Diretor decidir sobre a extinção de direito de exploração de satélite.
+7. A manifestação da PFE-Anatel é dispensável no caso, diante da ausência de dúvida jurídica e da inexistência de hipótese de manifestação obrigatória.
+8. O pedido foi tempestivo, pois foi apresentado com antecedência superior a 6 (seis) meses em relação à data indicada para a produção de efeitos da renúncia.
+9. A renúncia tem natureza unilateral, irrevogável e irretratável, não desonera a exploradora de suas obrigações com a Anatel, com terceiros, nem afasta a apuração de infrações ou a cobrança de valores devidos.
+10. Não se verificou impacto aos clientes da exploradora, uma vez que a oferta de capacidade será mantida por outros satélites de sua propriedade já autorizados pela Anatel.
+11. A existência de estações terrenas vinculadas ao satélite Anik G1 não impede a extinção pretendida, cabendo às prestadoras responsáveis regularizá-las perante a Agência.
+12. A existência de débitos a vencer da representante legal perante a Anatel não impede a extinção, considerando que tais valores permanecem exigíveis.
+13. Assim, não há óbice à extinção, por renúncia, do direito de exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, a partir de 1º de agosto de 2026.
+IV. DISPOSITIVO E TESE
+14. Pedido deferido. Declarada a extinção, por renúncia, a partir de 1º de agosto de 2026, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. O pedido de renúncia apresentado com antecedência mínima de seis meses e por representante legítimo atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, art. 113 e art. 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; Resolução nº 748/2021, arts. 27, 33, 34 e 35.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT).
+Decreto nº 11.738, de 18 de outubro de 2023 - Dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+Portaria nº 642, de 26 de julho de 2013 - disciplina os casos de manifestação obrigatória da PFE-Anatel.
+RELATÓRIO
+Cuida-se do pedido de extinção, por renúncia, do Direito de Exploração no Brasil do satélite Anik G1, pertencente à exploradora Telesat Canada, a contar de 1º de agosto de 2026.
+O Direito de Exploração no Brasil do satélite geoestacionário estrangeiro Anik G1, situado na posição orbital 107,3° Oeste, foi concedido à Telesat Canada, empresa constituída sob as leis do Canadá, por meio do Ato nº 3.480, de 1º de julho de 2020, cujo extrato foi publicado no Diário Oficial da União (DOU) de 2 de julho de 2020 (SEI nº 5709306). 
+Por meio do referido Ato, foi indicada como representante legal da operadora estrangeira a empresa Telesat Brasil Capacidade de Satélites Ltda., CNPJ/MF nº 02.884.281/0001-18, empresa constituída sob as leis brasileiras, com sede e administração no País, tendo sido autorizado o uso de subfaixas de radiofrequências contidas nas denominadas bandas C, Ku e X, associadas ao direito de exploração em questão.
+O Ato em questão foi ratificado pelo Termo de Autorização nº 2/2021 - Termo de Direito de Exploração de Satélite Estrangeiro que entre si celebram a Agência Nacional de Telecomunicações - Anatel e Telesat Canada -, de 2 de março de 2021, cujo extrato foi publicado no DOU de 4 de março de 2021 (SEI nº 6537139).
+O direito de exploração no Brasil do satélite Anik G1 está em vigor desde 5 de julho de 2020 e tem validade até o dia 31 de março de 2032.
+No entanto, em 26 de janeiro de 2026, a Telesat Brasil apresentou formalmente seu pedido de renúncia ao referido direito de exploração, com efeitos a partir de 1º de agosto de 2026. Como motivação, alegou forte redução da demanda por capacidade geoestacionária e baixa utilização do referido artefato no mercado brasileiro, justificando seu deslocamento com vistas a atender a outros mercados.
+Por meio do Informe nº 1.557/2026/ORLE/SOR (SEI nº 15144467), a Superintendência de Outorga e Recursos à Prestação (SOR) propôs o deferimento do pedido, nos termos da minuta de Ato SEI nº 15153926. Destacou-se que a renúncia em questão não terá impacto nos clientes finais, uma vez que a empresa informou que a oferta da capacidade geoestacionária será transferida aos satélites Telstar 19 Vantage e Telstar 12 Vantage, que são de sua propriedade e devidamente autorizados pela Anatel.
+A Matéria para Apreciação do Conselho Diretor nº 101/2026 (SEI nº 15153929) foi encaminhada a este Colegiado (SEI nº 15262133) e distribuída para minha relatoria em 5 de março de 2026 (SEI nº 15276358).
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise está dividida em 4 (quatro) partes. Na primeira, confirma-se a competência deste Colegiado para decidir sobre a extinção do Direito de Exploração de satélites. Na segunda e na terceira, abordam-se os requisitos processuais e técnico-regulatórios para a extinção do referido direito. Por fim, verifica-se a consistência da presente análise em face do plano estratégico da Agência, dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU e das melhores práticas do setor.
+I - Da competência do Conselho Diretor
+De acordo com art. 1º da Lei nº 9.472, de 1997, Lei Geral de Telecomunicações (LGT), compete à União, por meio da Anatel, disciplinar e fiscalizar o uso do espectro de radiofrequências e de órbitas no país:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências." 
+Nesse contexto, o Glossário da Anatel defini o Direito de Exploração de Satélite, em ato administrativo que autoriza o uso desses recursos para o controle, monitoramento e prestação de capacidade satelital sobre o território brasileiro, conforme definição constante do Glossário aplicável ao setor:
+Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução nº 779, de 28 de abril de 2025
+"Art. 1º (...) 
+(...)
+CXXV - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;" (Grifou-se)
+Ressalta-se que a autorização de uso de radiofrequência incluída nessa definição é regida pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021, não se submetendo ao Regulamento de Uso do Espectro de Radiofrequências (RUE):
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671/2016
+"Art. 1º ...
+(...)
+§ 3º, A utilização de radiofrequências, faixa ou canal de radiofrequências poderá ser permitida de forma diversa da prevista neste Regulamento nos seguintes casos, tratados em regulamentos específicos:
+(...)
+III - autorização de radiofrequência associada ao direito de exploração de satélite." (Grifou-se)
+Conforme disposto no Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 2013, compete a este Colegiado decidir sobre a conferência, transferência e também a extinção de direitos de exploração de satélites:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite; (Redação dada pela Resolução nº 748, de 22 de outubro de 2021);" (Grifou-se)
+Assim, é inequívoca a competência do Conselho Diretor para deliberar sobre a extinção do referido direito para o satélite estrangeiro Anik G1, objeto dos presentes autos.
+Registre-se ainda que, nos termos do RIA e da Portaria nº 642, de 26 de julho de 2013, a manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) não é obrigatória nos processos de extinção de direitos de exploração de satélite, inexistindo, no caso concreto, dúvida jurídia que jsutifique sua oitiva.
+Finalmente, o § 7º do art. 33 do RGSat exige que a exploradora informe a Anatel do fim definitivo do provimento de capacidade satelital com pelo menos 6 (seis) meses de antecedência, salvo em caso de falha catastrófica (art. 27, § 1º). Tal exigência é aplicável no presente caso, que trata da extinção do direito de exploração por renúncia:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021
+Art. 33. O Direito de Exploração de Satélite extinguir-se-á pelo advento de seu termo final, encerramento da vida útil do satélite ou mediante anulação, caducidade, cassação, renúncia ou rescisão bilateral.
+(...)
+§ 7º A descontinuidade, em caráter definitivo, do Provimento da Capacidade Satelital antes do fim do prazo estabelecido para o Direito de Exploração de Satélite deve ser comunicada à Agência com pelo menos 6 (seis) meses de antecedência, ressalvada hipótese decorrente do § 1º do artigo 27. (Grifou-se)
+Assim, o pedido de renúncia ao Direito de Exploração do satélite Anik G1, a partir de 1º de agosto de 2026 é tempestivo, uma vez ter sido protocolizado em 26 de janeiro de 2026, portanto com antecedência superior ao prazo regulamentar.
+Por fim, observa-se ainda que o requerimento foi apresentado por parte legítima, devidamente representada, conforme instrumento de Vinculação de Responsável Legal a Pessoa Jurídica (SEI nº 8534389), estando atendidos os requisitos formais para seu conhecimento.
+II - Dos requisitos técnico-regulatórios
+A renúncia é um ato unilateral, irrevogável e irretratável por parte da exploradora de satélite. Ainda que não implique punição, não desonera a empresa de suas obrigações perante terceiros, tal como consta do art. 142 da LGT:
+LGT
+"Art. 142. Renúncia é o ato formal unilateral, irrevogável e irretratável, pelo qual a prestadora manifesta seu desinteresse pela autorização.
+Parágrafo único. A renúncia não será causa para punição do autorizado, nem o desonerará de suas obrigações com terceiros."
+O art. 113 do RIA disciplina o requerimento de renúncia de direito de exploração de satélite nos seguintes termos:
+RIA
+"Art. 113. O requerimento de renúncia de outorga para exploração de serviço de telecomunicações, de uso de radiofrequência ou de direito de exploração de satélite é ato unilateral, irrevogável e irretratável, devendo ser dirigido à autoridade competente, que instruirá o feito e o encaminhará para deliberação. 
+Parágrafo único. A renúncia não desonera o interessado de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela prestadora ou a cobrança de valores devidos que serão apurados em processos próprios." 
+O art. 34 do RGSat especifica que a extinção do direito de exploração deve ser objeto de procedimento administrativo próprio, garantindo o contraditório e a ampla defesa da exploradora:
+RGSat
+"Art. 34. A extinção do direito de exploração deverá ser declarada em procedimento administrativo próprio, garantidos o contraditório e a ampla defesa da Exploradora de Satélites."
+No mesmo sentido, as cláusulas 7.6 a 7.7 do já mencionado Termo de Autorização nº 2/2021 dispõem sobre o tratamento da extinção do direito de exploração em procedimento administrativo próprio, ressaltando que a renúncia não causa punição, nem desonera a exploradora de suas obrigações com terceiros:
+Termo de Autorização nº 2/2021 
+"7.6. A renúncia é o ato formal, unilateral, irrevogável e irretratável, pelo qual a EXPLORADORA DE SATÉLITE manifesta seu desinteresse pelo Direito de Exploração.
+7.6.1. A renúncia não será causa para punição da EXPLORADORA DE SATÉLITE, nem a desonerará de suas obrigações com terceiros.
+7.7. A extinção do direito de exploração deverá ser declarada em procedimento administrativo próprio, garantidos o contraditório e a ampla defesa da EXPLORADORA DE SATÉLITE."
+O corpo técnico ressaltou que o presente pedido de extinção não implica prejuízo à ampla defesa e ao contraditório, uma vez que se atende a um pedido da própria exploradora. Assim, propôs-se dispensar a exigência de instauração de autos apartados prevista no RGSat e no Termo de Autorização, em benefício da celeridade e economia processual:
+Informe nº 1.557/2026/ORLE/SOR (SEI nº 15144467)
+"3.12. Em que pese o comando contido no art. 34 do RGSat, bem como na cláusula 7.7 do Termo de Autorização nº 2/2021, para que a instrução da extinção se dê em autos apartados, tal necessidade não se aplica ao caso concreto. Como dito, a renúncia é ato unilateral, irretratável, irrevogável e, desta maneira, não enseja a notificação da interessada para apresentação de contrarrazões. Ademais, também como já mencionado, a interessada manifestou de maneira inequívoca sua vontade pela extinção do direito em apreço, não havendo ofensa aos princípios da ampla defesa e do contraditório. Assim, observando os princípios da economia e celeridade processual, concluiu-se como mais adequada a instrução da manifestação de renúncia no presente processo referente à conferência do Direito de Exploração objeto de extinção."
+Dessa forma, consideram-se atendidos os requisitos técnicos e regulatórios para o deferimento do presente pedido de renúncia.
+III - Da descontinuidade do provimento de capacidade
+O art. 27 do RGSat estabelece que, durante a vigência do Direito de Exploração de Satélite, o provimento de capacidade não pode ser interrompido por mais de 30 (trinta) dias seguidos, salvo em caso de falha catastrófica:
+RGSat
+"Art. 27. Após a entrada em operação, o Provimento da Capacidade Satelital não pode ser interrompido por mais de 30 (trinta) dias consecutivos, durante todo o período de validade do Direito de Exploração.
+§ 1º A interrupção do Provimento da Capacidade Satelital decorrente de falha catastrófica não configura inobservância ao disposto no caput."
+Assim, qualquer interrupção definitiva do provimento de capacidade requer a extinção do direito de exploração de satélite. Isso pode ocorrer, entre outras possibilidades, mediante renúncia. É o que diz o art. 33 do RGSat, que lista todas as hipóteses de extinção do direito de exploração de satélite, entre as quais está a renúncia, definida em seu §4º:
+RGSat
+"Art. 33. O Direito de Exploração de Satélite extinguir-se-á pelo advento de seu termo final, encerramento da vida útil do satélite ou mediante anulação, caducidade, cassação, renúncia ou rescisão bilateral.
+(...)
+§ 4º A renúncia é o ato formal unilateral, irrevogável e irretratável, pelo qual a Exploradora de Satélites manifesta seu desinteresse pelo Direito de Exploração do Satélite." (Grifou-se)
+Por sua vez, o § 6º do referido artigo reitera as disposições do art. 142 da LGT e do art. 113 do RIA de que a extinção do direito de exploração de satélite não desonera a Exploradora de Satélites de suas obrigações. Tal como no parágrafo único do art. 113 do RIA, destaca-se que a extinção não prejudica a apuração de infrações ou a cobrança de valores devidos:
+RGSat
+"Art. 33. (...)
+§ 6º A extinção do Direito de Exploração de Satélite não desonera a Exploradora de Satélites de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela Exploradora de Satélites ou a cobrança de valores devidos que serão apurados em processos próprios."
+Além disso, o comando contido no art. 35 do RGSat deixa claro que a exploradora de satélite não tem direito a qualquer indenização pela extinção de seu direito de exploração e que responde por eventuais danos a prestadoras decorrentes de sua interrupção:
+RGSat
+"Art. 35. A extinção do Direito de Exploração de Satélite não elide a obrigatoriedade da Exploradora de Satélite de responder pelos danos proporcionados às prestadoras decorrentes da interrupção do Provimento de Capacidade Satelital anteriormente contratada, nem enseja, em qualquer hipótese, direito à indenização à Exploradora de Satélite."
+Com relação a terceiros, entende-se que a renúncia em tela não terá impacto, uma vez que a empresa informou que a oferta da capacidade geoestacionária aos clientes atuais será transferida para os satélites Telstar 19 Vantage e Telstar 12 Vantage, que são de sua propriedade e estão devidamente autorizados pela Anatel:
+Carta R002M26 (SEI nº 15093751)
+"A Telesat Canada revisou recentemente o planejamento de sua frota global na busca por uma otimização dos seus recursos. Devido à forte redução da demanda por capacidade geoestacionária, que está se refletindo na baixa utilização deste satélite no mercado brasileiro, decidiu-se focar a oferta a este através dos satélites Telstar 19 Vantage e Telstar 12 Vantage, mais modernos, equipados com tecnologia HTS (High Throughput Satellites) e já licenciados pela Anatel, deslocando a oferta de capacidade do Anik G1 para atendimento a outros mercados."
+Nesse ponto, a área técnica observou que há estações terrenas vinculadas ao satélite Anik G1 com licença vigente perante a Anatel. Considerando que o cadastramento e o licenciamento de estações terrenas é de responsabilidade da prestadora de serviços de telecomunicações, tais empresas serão notificadas a regularizar o cadastro, caso ainda existam estações vinculadas ao satélite Anik G1 após a presente renúncia:
+Informe nº 1.557/2026/ORLE/SOR (SEI nº 15144467)
+"3.17. Ainda nesse contexto, esta área técnica identificou, no Banco de Dados Técnicos e Administrativos da Anatel (BDTA), a existência de estações terrenas vinculadas ao satélite Anik G1 com validade da licença vigente, conforme Consulta SEI nº 15153873. Segundo relatado, verificou-se que tais licenças pertencem a entidades autorizadas a explorar o Serviço de Comunicação Multimídia (SCM) e o Serviço Limitado Privado (SLP).
+3.18. Cumpre esclarecer que o cadastramento e o licenciamento de estações terrenas é de responsabilidade da detentora de autorização para explorar o serviço de telecomunicações associado, sendo esta também a responsável pelo recolhimento das taxas e contribuições incidentes e pela prestação do serviço de telecomunicações suportado pelo meio satelital, e não a Exploradora de Satélite detentora do direito de exploração, em consonância com o disposto no Regulamento Geral de Licenciamento (RGL), aprovado pela Resolução nº 719, de 10 de fevereiro de 2020.
+Assim, caso ainda haja estações terrenas vinculadas ao satélite na data a partir da qual surtirão os efeitos da renúncia, as empresas serão notificadas a regularizar o cadastro."
+Com relação às obrigações perante a Anatel, o corpo técnico observou que a empresa Telesat Brasil Capacidade de Satélites Ltda. tem débitos a vencer, como consta de extrato (SEI nº 15145137) do Sistema Integrado de Gestão de Créditos da Anatel (SIGEC) juntado aos presentes autos.
+Nos termos da minuta de Ato (SEI nº 15153926), proposta pela área técnica, a renúncia ao direito de exploração do satélite estrangeiro geoestacionário Anik G1 não prejudica a apuração de eventuais infrações cometidas pela empresa e a cobrança de valores devidos nem desonera a empresa de suas obrigações com terceiros e com a Agência.
+Desta forma, conclui-se que não há óbices à extinção, por renúncia, do Direito de Exploração do satélite Anik G1, a contar de 1º de agosto de 2026.
+IV - Dos objetivos regulatórios
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura abaixo ilustra esses objetivos:
+Figura: Objetivos de Desenvolvimento Sustentável (ODS). Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como bem salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-ANATEL (SEI nº 11203364).
+A proposta de encaminhamento contida na presente Análise está em boa sintonia com os objetivos da Agenda 2030, em particular com o ODS nº 9, relacionado à Indústria, Inovação e Infraestrutura. Ressalta-se que a extinção do direito de exploração de satélites em exame, em razão da baixa demanda, otimiza e libera recursos de espectro e órbita. Isso permite seu reuso de forma mais eficiente e adequada ao mercado. Os referidos recursos são importantes para a construção de novas infraestruturas resilientes, a promoção da industrialização inclusiva e sustentável e o fomento à inovação, em sintonia com as metas 9.1, 9.4 e 9.c:
+Objetivos de Desenvolvimento Sustentável ODS da ONU
+"ODS 9. Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação
+9.1 Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos.
+(...)
+9.4 Até 2030, modernizar a infraestrutura e reabilitar as indústrias para torná-las sustentáveis, com eficiência aumentada no uso de recursos e maior adoção de tecnologias e processos industriais limpos e ambientalmente corretos; com todos os países atuando de acordo com suas respectivas capacidades.
+[...]
+9.c Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2030."
+Reforça-se assim o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+Nesse contexto, vale destacar o compromisso da Anatel com a adoção de boas práticas regulatórias preconizadas pelo Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), instituído pelo Decreto Presidencial nº 11.738, de 18 de outubro de 2023.
+Cumpre enfatizar ainda o interesse da Agência pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira - (QualiREG), desenvolvido pela Controladoria Geral da União (CGU), com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), que busca disseminar uma cultura de mensuração da qualidade regulatória no Brasil.
+CONCLUSÃO
+Voto por declarar extinto, por renúncia, a partir de 1º de agosto de 2026, o direito de exploração no Brasil do satélite estrangeiro Anik G1 e as subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15153926, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela empresa.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 07/05/2026, às 16:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15279069 e o código CRC 9BA7E467.
+ | 
+Referência: Processo nº 53500.005555/2011-34 | 
+SEI nº 15279069 |

@@ -1,0 +1,106 @@
+SEI/ANATEL - 15509881 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 102, de 17 de abril de 2026
+Processo nº 53504.005072/2023-33
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PRORROGAÇÃO DE DIREITOS DE USO DE RADIOFREQUÊNCIAS. SERVIÇO MÓVEL PESSOAL - SMP. PEDIDO DEFERIDO COM CONDICIONANTES.
+I. CASO EM EXAME
+1. O Pedido. CLARO S.A. solicita a primeira prorrogação de autorizações de uso de radiofrequências associadas à autorização para explorar o Serviço Móvel Pessoal - SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário, sem exclusividade, decorrentes de licitação, com vencimento em 1º de junho de 2026.
+2. Instrução. A Superintendência de Outorga e Recursos à Prestação - SOR conclui pela possibilidade de deferimento do Pedido. A área técnica propõe a prorrogação das autorizações, a definição do valor devido conforme os Termos de Autorização, o condicionamento à comprovação de regularidade fiscal e a celebração de Termos de Autorização distintos.
+3. Manifestação jurídica. Parecer nº 59/2026/PFE-ANATEL/PGF/AGU conclui pela viabilidade jurídica do deferimento, com observância das cláusulas dos Termos e dos requisitos legais e regulamentares aplicáveis à primeira prorrogação.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se o Conselho Diretor é competente para decidir a prorrogação; (ii) saber se o Pedido é tempestivo; (iii) saber se estão afastadas as hipóteses legais e regulamentares de indeferimento na primeira prorrogação; e (iv) saber se o valor e as condições para formalização da prorrogação devem observar as cláusulas contratuais e condicionantes de regularidade fiscal.
+III. RAZÕES DE DECIDIR
+1. O Conselho Diretor é competente para decidir sobre a prorrogação de direito de uso de radiofrequências decorrentes de licitação.
+2. O Pedido é tempestivo, pois foi apresentado em 3 de maio de 2023, antes de 3 (três) anos do vencimento, em 1º de junho de 2026, nos termos da Lei Geral de Telecomunicações - LGT e da Cláusula 3.4 dos Termos de Autorização.
+3. Na primeira prorrogação, a análise deve observar o regime previsto nos próprios Termos de Autorização. O indeferimento somente cabe nas hipóteses restritas de uso não racional e inadequado da radiofrequência, infrações reiteradas ou necessidade de modificação de destinação ou de condições de uso.
+4. A avaliação técnica indica uso racional, adequado e eficiente do espectro nas faixas e áreas de prestação analisadas, segundo os critérios do Regulamento para Avaliação da Eficiência de Uso do Espectro.
+5. A análise de infrações e do cumprimento de obrigações editalícias foi detalhada e não configura óbice à prorrogação, com avaliação orientada por critérios de razoabilidade e proporcionalidade.
+6. Não se identifica necessidade de modificação de destinação ou das condições de uso das faixas de 1.800 MHz e 1.900/2.100 MHz que impeça a prorrogação, consideradas as destinações e condições vigentes no Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF e no Regulamento de Condições de Uso de Radiofrequências.
+7. A manutenção da outorga exige o atendimento às condições subjetivas previstas na LGT, com verificação atualizada de regularidade antes da efetivação da prorrogação.
+8. A prorrogação é onerosa e, por se tratar de primeira prorrogação, o valor devido deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL.
+9. Para a subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, o prazo de vigência da prorrogação deve observar o art. 33, XV, da Resolução nº 773/2025. O vencimento deve ocorrer em 22 de dezembro de 2032.
+10. Para as demais autorizações objeto do Pedido, a prorrogação deve vigorar por 15 (quinze) anos a contar do vencimento original, com vencimento em 30 de maio de 2041.
+11. A manutenção de Termos de Autorização distintos é compatível com a revogação do Plano Geral de Autorizações do Serviço Móvel Pessoal - PGA-SMP e preserva a individualização dos compromissos originais.
+12. A formalização do ato de prorrogação deve ser condicionada à apresentação de documentação comprobatória de regularidade fiscal, no âmbito federal, e perante a Anatel.
+IV. DISPOSITIVO E TESE
+Pedido deferido, com condicionantes.
+Tese de julgamento: "1. Compete ao Conselho Diretor decidir sobre a primeira prorrogação de direitos de uso de radiofrequências decorrentes de licitação. 2. Na primeira prorrogação, aplicam-se as hipóteses restritas de indeferimento previstas na Lei nº 9.472/1997, no Regulamento de Uso do Espectro de Radiofrequências e nos Termos de Autorização. 3. O pedido tempestivo, a demonstração de uso racional, adequado e eficiente do espectro, a ausência de óbice por infrações reiteradas e a inexistência de necessidade de modificação de destinação ou de condições de uso autorizam a prorrogação. 4. O valor devido pela prorrogação deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL. 5. A expedição do ato de prorrogação fica condicionada à comprovação de regularidade fiscal federal e perante a Anatel. 6. A subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, deve observar os limites de vigência previstos no art. 33, XV, da Resolução nº 773/2025. 7. Devem ser firmados Termos de Autorização distintos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 133 e 167; Decreto nº 10.402/2020, art. 12; Resolução nº 612/2013, art. 133, VII; Resolução nº 671/2016, arts. 47, § 2º, e 48; Resolução nº 548/2010, art. 3º, II; Resolução nº 773/2025, art. 33, XV, e art. 316; Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, Cláusulas 3.3 e 3.4.
+Jurisprudência relevante citada: Tribunal de Contas da União - TCU, Acórdão nº 2001/2022, Plenário; Anatel, Acórdão nº 102, Processo nº 53504.000320/2020-15, Conselheiro Relator Alexandre Reis Siqueira Freire, Circuito Deliberativo nº 96, 27 de abril de 2023; Anatel, Acórdãos nº 99, nº 105 e nº 106, Conselho Diretor, 28 de abril de 2023; Anatel, Acórdãos nº 274, de 31 de agosto de 2022, nº 375, de 06 de dezembro de 2022, nº 383, de 14 de dezembro de 2022, nº 105, de 28 de abril de 2023, nº 194, de 14 de agosto de 2023, e nº 215, de 25 de agosto de 2023.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 27/2026/OP (SEI nº 15348988), integrante deste acórdão:
+a) prorrogar o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, sem exclusividade, em caráter primário, nas faixas de frequência e com prazo de vencimento abaixo indicados, nos termos da Minuta de Ato SEI nº 15443520:
+ Termo de Autorização Vigente
+ | 
+ Data D.O.U.
+ | 
+ Área de Prestação
+ | 
+ Subfaixas
+ | 
+ Vencimento Proposto
+ | 
+ 31/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ Estados do RJ, ES, BA e SE
+ Estados do AM, AP, PA, MA e RR
+ Estados do CE, PB, PE, PI, RN e AL
+ Municípios do Setor 3 do PGO
+ Estado de MG exceto os municípios do Código Nacional – CN 34, 35, 37
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ Estados do RJ, ES, MG, AM, RR, AP, PA, MA, BA, SE, PI, CE, RN, PB, PE e AL.
+ | 
+ 1.755 a 1.765MHz / 1.850 a 1.860MHz
+ | 
+ 22/12/2032
+ | 
+ 32/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ DF e Estados do AC, TO, MS (exceto CN 67), MT, RS, SC, RO, GO (exceto CN 64) e PR (exceto CN 43)
+ Municípios do CN 64 (exceto setor 25 do PGO) e CN 67 (exceto setor 22 do PGO)
+ Municípios do CN 43 (exceto Londrina/PR e Tamarana/PR)
+ Municípios de Londrina/PR e Tamarana/PR
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ 33/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ CN 11 que envolve os municípios de Alumínio, Araçariguama, Arujá, Atibaia, Barueri, Biritiba-Mirim, Bom Jesus dos Perdões, Bragança Paulista, Cabreúva, Caieiras, Cajamar, Campo Limpo Paulista, Carapicuíba, Cotia, Diadema, Embu, Embu-Guaçú, Ferraz de Vasconcelos, Francisco Morato, Franco da Rocha, Guararema, Guarulhos, Igaratá, Itapecerica da Serra, Itapeví, Itaquaquecetuba, Itatiba, Itú, Itupeva, Jandira, Jarinu, Joanópolis, Jundiaí, Juquitiba, Mairinque, Mairiporã, Mauá, Mogi das Cruzes, Morungaba, Nazaré Paulista, Osasco, Pedra Bela, Pinhalzinho, Piracaia, Pirapora do Bom Jesus, Poá, Ribeirão Pires, Rio Grande da Serra, Salesópolis, Salto, Santa Izabel, Santana de Parnaíba, Santo André, São Bernardo do Campo, São Caetano do Sul, São Lourenço da Serra, São Paulo, São Roque, Suzano, Taboão da Serra, Tuiuti, Vargem, Vargem Grande Paulista e Várzea Paulista, todos no Estado de São Paulo.
+ Estado de SP (exceto municípios da CN 11, CN 16, CN 17 e setor 33 do PGO)
+ Municípios com o CN 16 e 17 (exceto o Setor 33 do PGO)
+ Municípios do Setor 33 do PGO
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+b) estabelecer que o valor devido pela prorrogação do prazo de vigência das autorizações de uso de radiofrequências deve obedecer às regras estabelecidas na Cláusula 3.3 dos Termos de Outorga de Autorização para Uso de Radiofrequências nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, celebrados com a CLARO S.A., CNPJ nº 40.432.544/0001-47;
+c) condicionar a expedição do Ato que formaliza a prorrogação do prazo de vigência das autorizações de uso de radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, à apresentação da documentação comprobatória da regularidade fiscal, no âmbito federal, e perante a Anatel, pela Interessada; e,
+d) determinar que sejam firmados Termos de Autorização distintos.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15509881 e o código CRC E0D503B4.
+ | 
+Referência: Processo nº 53504.005072/2023-33 | 
+SEI nº 15509881 |

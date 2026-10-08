@@ -45,11 +45,14 @@ for d in D:
     if pr_ and pr_.get('diretor'): d['relator'] = pr_['diretor'] + ' (proponente: ' + pr_['procedencia'][:40] + ')'
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
-EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json')) if os.path.exists(f)}
+EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json'), ('ANATEL', 'anatel.json')) if os.path.exists(f)}
 for sg, x in EXTRAS.items():
     for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
     for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
-    for v in x['votos']: V.append(dict(v, agencia=sg))
+    _pres = {r['reuniao']: set(r.get('presentes', [])) | set(r.get('ausentes', [])) for r in x['reunioes']}
+    for v in x['votos']:
+        if sg == 'ANATEL' and v['diretor'] not in _pres.get(v['reuniao'], {v['diretor']}): VX.append(dict(v, agencia=sg, fora_total=True))   # ex-conselheiro (relator/votante de reunião anterior): na aba Votos, fora dos totais
+        else: V.append(dict(v, agencia=sg))
 AGS = ['ANM', 'ANTT', 'ARTESP'] + list(EXTRAS)
 
 def tipo_de(d):
@@ -454,7 +457,8 @@ URL_FONTE = {
  'ANVISA|CD': 'https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/extratos-dos-circuitos-deliberativos-1/2026',
  'ANPD': 'https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo',
  'ANP': 'https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026',
- 'ANTAQ': 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes'}
+ 'ANTAQ': 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes',
+ 'ANATEL': 'https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&id_orgao_publicacao=0&id_unidade_responsavel=110000842&id_serie=8'}
 def _tipo_pend(sit):
     t = sit.lower()
     if t.startswith('futura'): return 'Reunião futura (ainda não ocorreu)'

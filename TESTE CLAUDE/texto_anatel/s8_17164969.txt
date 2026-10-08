@@ -1,0 +1,36 @@
+SEI/ANATEL - 15343653 - Acórdão
+Boletim de Serviço Eletrônico em 18/03/2026
+DOU de 18/03/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 70, de 17 de março de 2026
+Processo nº 01217.001151/2026-50
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 59, de 17 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. LEI DE ACESSO À INFORMAÇÃO. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo de Segunda Instância interposto na Plataforma Integrada de Ouvidoria - Fala.BR contra resposta a pedido de acesso à informação sobre o cumprimento da Cláusula 11.2 do Termo de Ajustamento de Conduta - TAC celebrado entre a Anatel e a TIM S.A.
+2. Fato relevante. Pedido para indicar, em relação a 238 (duzentos e trinta e oito) municípios, a forma de atendimento do backhaul de fibra óptica até o site concentrador, com distinção entre rede própria, swap, IRU - Indefeasible Right of Use ou outro arranjo.
+3. As decisões anteriores. Resposta indicou processos administrativos e registrou existência de documentos com restrição de acesso por conterem informações técnicas e operacionais. Recurso de Primeira Instância foi não conhecido.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se o Recurso de Segunda Instância atende aos pressupostos legais para conhecimento, diante do enquadramento do pedido no art. 15 da Lei nº 12.527/2011 e no art. 21 do Decreto nº 7.724/2012.
+III. RAZÕES DE DECIDIR
+1. O recurso foi interposto no prazo legal e por parte legítima.
+2. O Conselho Diretor é competente para deliberar sobre o Recurso de Segunda Instância.
+3. Os documentos apresentados pela Prestadora, com informações técnicas e operacionais, têm restrição de acesso com fundamento no art. 39, parágrafo único, da Lei nº 9.472/1997.
+4. A área técnica elaborou planilha com os municípios e a forma de atendimento da Cláusula 11.2 do TAC, preservadas as informações restritas.
+5. O Recurso não atende aos pressupostos legais para conhecimento previstos no art. 15 da Lei nº 12.527/2011.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo de Segunda Instância não conhecido.
+Tese de julgamento: "1. O Recurso de Segunda Instância não deve ser conhecido quando não atendidos os pressupostos do art. 15 da Lei nº 12.527/2011. 2. É legítima a restrição de acesso a informações técnicas e operacionais de prestadora de serviços de telecomunicações, nos termos do art. 39, parágrafo único, da Lei nº 9.472/1997."
+Dispositivos relevantes citados: Lei nº 12.527/2011, art. 15; Decreto nº 7.724/2012, art. 21; Lei nº 9.472/1997, art. 39, parágrafo único.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 25/2026/OP (SEI nº 15333402), integrante deste acórdão, não conhecer do Recurso Administrativo de Segunda Instância, tendo em vista seu não enquadramento na fundamentação do art. 15 da Lei de Acesso à Informação - LAI e do art. 21 do Decreto nº 7.724/2012.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 17/03/2026, às 17:52, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15343653 e o código CRC 1EE236EF.
+ | 
+Referência: Processo nº 01217.001151/2026-50 | 
+SEI nº 15343653 |

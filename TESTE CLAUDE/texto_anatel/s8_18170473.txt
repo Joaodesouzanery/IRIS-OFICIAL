@@ -1,0 +1,49 @@
+SEI/ANATEL - 16205560 - Acórdão
+Boletim de Serviço Eletrônico em 01/09/2026
+DOU de 01/09/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 230, de 31 de agosto de 2026
+Processo nº 53500.005408/2019-11
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 222, de 28 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCEDIMENTO SANCIONADOR. SUBSTITUIÇÃO DE MULTA POR OBRIGAÇÃO DE FAZER - ODF. CONECTIVIDADE DE INSTITUIÇÕES PÚBLICAS DE ENSINO À REDE NACIONAL DE ENSINO E PESQUISA - RNP. RECOMPOSIÇÃO DE PARÂMETROS TÉCNICOS E ATUALIZAÇÃO DO VALOR DE REFERÊNCIA. PEDIDOS PARCIALMENTE DEFERIDOS.
+I. CASO EM EXAME
+1. Os Pedidos. A CLARO S.A. aderiu à Obrigação de Fazer - OdF estabelecida em substituição à multa e apresentou projeto para conectar instituições públicas de ensino à Rede Nacional de Ensino e Pesquisa - RNP.
+2. A Proposta. A Prestadora requereu a adoção de solução técnica alternativa para a rede de acesso, com rotas redundantes para cumprir o nível de disponibilidade exigido pela RNP.
+3. A manifestação técnica. A Superintendência de Competição - SCP revisou o projeto técnico e propôs nova modelagem de custos adequada a redes de acesso de última milha, com a inclusão dos custos de redundância de rotas de fibra óptica.
+4. A controvérsia complementar. A área técnica submeteu a definição do termo final da atualização do valor da sanção, diante da divergência entre a publicação do Acórdão e a intimação da decisão que substituiu a multa.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a OdF deve ser mantida em substituição à multa; (ii) saber se os parâmetros técnicos da obrigação devem incorporar a modelagem de rede de acesso de última milha e os custos de redundância de rotas propostos; (iii) saber se a atualização do valor da sanção deve incidir até a intimação da decisão recursal que substituiu a multa pela OdF; e (iv) saber se a modelagem de custos ora aprovada deve orientar a implementação de obrigações de fazer de objeto equivalente decorrentes de decisões já proferidas pelo Conselho Diretor.
+III. RAZÕES DE DECIDIR
+1. A substituição da multa por OdF preserva o interesse público, pois direciona recursos para a conectividade de universidades públicas à RNP.
+2. A OdF deve observar os requisitos de nível de serviço exigidos pela RNP, justificando-se a inclusão de rotas redundantes.
+3. A conectividade das instituições situadas em municípios que já dispõem de rede de transporte de fibra óptica deve ser precificada como rede de acesso de última milha.
+4. A modelagem de custos de backhaul de fibra óptica deve ficar restrita às situações em que a expansão da rede de transporte de alta capacidade seja tecnicamente necessária.
+5. A incorporação dos custos de dupla abordagem física de fibra óptica é compatível com a necessidade de mitigar pontos únicos de falha e assegurar a disponibilidade nos parâmetros exigidos pela RNP. 
+6. A uniformização da metodologia de precificação contribui para a isonomia, a coerência regulatória e a adequada execução de obrigações de fazer de objeto equivalente, razão pela qual se mostra recomendável a observância da modelagem ora proposta pela área técnica e aprovada nesta deliberação na implementação e no acompanhamento de obrigações decorrentes de decisões já proferidas, observadas as especificidades de cada caso concreto.
+7. A atualização do valor da sanção deve incidir desde a intimação da primeira decisão sancionadora até a intimação da decisão recursal que substituiu a multa pela OdF.
+8. Após a atualização do valor, deve ser aplicado o desconto de 5% (cinco por cento) previsto no Regulamento de Aplicação de Sanções Administrativas - RASA.
+9. Permanecem aplicáveis os demais termos e diretrizes anteriormente fixados que não conflitem com a nova modelagem de custos e com a redefinição do termo final da atualização.
+IV. DISPOSITIVO E TESE
+Pedidos parcialmente deferidos. Manutenção da substituição da multa por Obrigação de Fazer - OdF. Atualização do valor de referência da sanção. Inclusão da modelagem de custos de rede de acesso de última milha e dos custos de redundância de rotas de fibra óptica. Determinação para que a área técnica observe a modelagem de custos ora aprovada na implementação e no acompanhamento de OdFs de objeto equivalente decorrentes de decisões já proferidas pelo Conselho Diretor, observadas as especificidades de cada caso concreto. Restituição dos autos à Superintendência de Controle de Obrigações - SCO para validação do projeto técnico e acompanhamento da execução.
+Tese de julgamento: "1. A substituição de multa por Obrigação de Fazer - OdF destinada ao provimento de conectividade de instituições públicas de ensino à RNP preserva o interesse público. 2. A OdF pode incorporar modelagem de custos de rede de acesso de última milha e os custos de redundância de rotas de fibra óptica, quando necessários ao atendimento dos requisitos de nível de serviço. 3. A modelagem de backhaul de fibra óptica aplica-se somente quando for tecnicamente necessária a expansão da rede de transporte de alta capacidade. 4. A modelagem de custos aprovada para a implementação de obrigação de fazer destinada à conectividade de instituições públicas de ensino à RNP poderá orientar a execução e o acompanhamento de obrigações de objeto equivalente decorrentes de decisões anteriormente proferidas pelo Conselho Diretor, observadas as circunstâncias de cada caso concreto. Na substituição recursal de multa por OdF, o valor da sanção deve ser atualizado pela Taxa do Sistema Especial de Liquidação e de Custódia - SELIC até a intimação da decisão que realizou a substituição, com posterior aplicação do desconto previsto no RASA. 
+Dispositivos relevantes citados: Resolução nº 589/2012, arts. 15, 16-A, § 2º, 36-A, § 3º e § 6º, II, e 36-B; e Resolução nº 784/2025, art. 3º, parágrafo único.
+Jurisprudência relevante citada: Anatel, Acórdão nº 50, Processo nº 53500.012754/2019-56, Rel. Conselheiro Alexandre Reis Siqueira Freire, Conselho Diretor, Reunião nº 950, j. 12.02.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 85/2026/NP (SEI nº 16169562), integrante deste acórdão:
+a) recompor a Obrigação de Fazer - OdF estabelecida no Acórdão nº 130/2026 (SEI nº 15629737), de 13 de maio de 2026, para:
+a.1) atualizar o valor de referência da sanção pela Taxa do Sistema Especial de Liquidação e de Custódia - SELIC desde a intimação da decisão de primeira instância até a intimação da decisão recursal que promoveu a substituição da multa por obrigação de fazer, resultando em R$ 10.530.910,11 (dez milhões, quinhentos e trinta mil, novecentos e dez reais e onze centavos), já considerando a aplicação do desconto de 5% (cinco por cento) previsto no art. 36-A, § 3º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012;
+a.2) incluir, na Obrigação de Fazer - OdF, a nova modelagem de custos aplicável ao provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, aplicável à construção de rede de acesso de última milha, bem como os custos associados à redundância de rotas de fibra óptica;
+a.3) estabelecer que a modelagem de custos de backhaul de fibra óptica seja utilizada exclusivamente nas situações em que se demonstre tecnicamente necessária a expansão da rede de transporte de alta capacidade, não se aplicando à precificação da rede de acesso de última milha; e
+a.4) determinar à Superintendência de Controle de Obrigações - SCO que observe os parâmetros e a modelagem de custos ora aprovados na implementação, acompanhamento e eventual adequação de obrigações de fazer de objeto equivalente, decorrentes de decisões já proferidas por este Conselho Diretor, observadas as especificidades de cada caso concreto; e,
+b) ratificar os demais termos, condições e diretrizes do Acórdão nº 130/2026 (SEI nº 15629737) e do item 4.92 da Análise nº 15/2026/OP (SEI nº 15196033) que não conflitarem com a presente deliberação.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 31/08/2026, às 18:11, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16205560 e o código CRC 30FB622B.
+ | 
+Referência: Processo nº 53500.005408/2019-11 | 
+SEI nº 16205560 |

@@ -1,0 +1,45 @@
+SEI/ANATEL - 16289247 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 48
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 257, de 15 de setembro de 2026
+Processo nº 53504.005072/2023-33
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE RECONSIDERAÇÃO. PRORROGAÇÃO DE DIREITO DE USO DE RADIOFREQUÊNCIA. FAIXA DE 1.800 MHZ. PEDIDO DESPROVIDO.
+I. CASO EM EXAME
+1. O pedido. CLARO S.A. interpõe Pedido de Reconsideração contra o Acórdão nº 102, de 17 de abril de 2026, que prorrogou autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz.
+2. Ponto controvertido. A insurgência recai sobre a subfaixa de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, cuja prorrogação foi limitada a 22 de dezembro de 2032.
+3. Pretensão recursal. A Interessada requer a reforma parcial do acórdão para que a prorrogação da faixa de 1.800 MHz seja deferida por 15 anos, até 30 de maio de 2041.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o Pedido de Reconsideração preenche os requisitos de admissibilidade; (ii) saber se a compatibilidade técnica da subfaixa de 1.800 MHz com a canalização prevista na regulamentação vigente afasta o limite temporal de 22 de dezembro de 2032; e (iii) saber se precedentes do Tribunal de Contas da União - TCU e o alegado interesse público na continuidade do uso eficiente da faixa autorizam a prorrogação até 30 de maio de 2041.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Reconsideração é cabível, tempestivo, foi apresentado por parte legitimada e não colide com Súmula da Agência.
+2. O Pedido deve ser conhecido, porque estão presentes os requisitos legais e regimentais de admissibilidade previstos no Regimento Interno da Anatel - RIA.
+3. A limitação temporal da faixa de 1.800 MHz decorre da regulamentação vigente e da política regulatória de reorganização da faixa para uso mais eficiente do espectro e de futura licitação.
+4. A Resolução nº 757/2022 já havia estabelecido prazo para continuidade de operação dos sistemas autorizados sob as condições da Resolução nº 454/2006 até 22 de dezembro de 2032, ressalvada a situação específica de Minas Gerais.
+5. A Resolução nº 773/2025 manteve tratamento regulatório distinto para a faixa de 1.800 MHz em relação às faixas de 1.900 MHz e 2.100 MHz.
+6. A compatibilidade técnica da subfaixa atualmente utilizada pela Recorrente não afasta o limite temporal previsto na regulamentação.
+7. A manifestação técnica sobre aderência da subfaixa ao novo arranjo regulatório foi produzida para exame dos requisitos legais da prorrogação e não para autorizar uso além do prazo regulatório fixado.
+8. A Agência vem preparando, desde 2019, a reorganização da faixa de 1.800 MHz para permitir uso mais eficiente do espectro e futura licitação após 2032.
+9. A desocupação integral da faixa é considerada necessária para viabilizar o refarming e a nova ocupação em condições mais eficientes.
+10. Os precedentes do TCU invocados pela Recorrente tratam das faixas de 1.900 MHz e 2.100 MHz e não se aplicam à faixa de 1.800 MHz, que possui disciplina regulatória diversa.
+11. A existência de uso real, contínuo e eficiente da faixa pela Prestadora atende aos requisitos para análise do pedido de prorrogação, mas não autoriza afastar o limite temporal estabelecido na regulamentação.
+12. Não há fundamento para reformar o Acórdão nº 102/2026 no ponto impugnado.
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração conhecido e desprovido.
+Tese de julgamento: "1. O Pedido de Reconsideração interposto contra decisão do Conselho Diretor deve ser conhecido quando presentes os requisitos regimentais de admissibilidade. 2. A compatibilidade técnica da subfaixa de 1.800 MHz com o novo arranjo de canalização não afasta o limite temporal de uso fixado na regulamentação vigente. 3. Os precedentes relativos às faixas de 1.900 MHz e 2.100 MHz não se aplicam à faixa de 1.800 MHz, que possui disciplina regulatória própria. 4. O uso eficiente da radiofrequência pela Autorizada não autoriza prorrogação além do prazo máximo previsto para a reorganização da faixa. 5. Deve ser mantida a limitação da prorrogação da subfaixa de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz até 22 de dezembro de 2032."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 167, §§ 1º e 2º; Lei nº 9.784/1999; Decreto nº 10.402/2020, art. 12, IV; Resolução nº 612/2013, arts. 115 e 126, § 2º; Resolução nº 671/2016, arts. 1º e 2º; Resolução nº 757/2022, art. 25; e Resolução nº 773/2025, art. 33, XV.
+Jurisprudência relevante citada: TCU, Acórdão nº 2.471/2024; TCU, Acórdão nº 2.487/2024; Anatel, Acórdão nº 274, de 31/08/2022; Anatel, Acórdão nº 194, de 14/08/2023.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 52/2026/EH (SEI nº 15804330), integrante deste acórdão, conhecer do Pedido de Reconsideração interposto pela CLARO S.A. para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 16/09/2026, às 13:30, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16289247 e o código CRC 814562B8.
+ | 
+Referência: Processo nº 53504.005072/2023-33 | 
+SEI nº 16289247 |

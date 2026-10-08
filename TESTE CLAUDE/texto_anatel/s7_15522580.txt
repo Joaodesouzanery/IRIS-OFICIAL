@@ -1,0 +1,153 @@
+SEI/ANATEL - 13842502 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 29/2025/CL
+Processo nº 53500.076413/2021-23
+Interessado: AMAZON KUIPER BRASIL LTDA.
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALI
+ASSUNTO
+Pedido de prorrogação do prazo de entrada em operação do sistema de satélites não geoestacionários Kuiper.
+EMENTA
+DIREITO DE EXPLORAÇÃO DE SATÉLITES NÃO GEOESTACIONÁRIOS ESTRANGEIRO. PEDIDO DE PRORROGAÇÃO DO PRAZO DE ENTRADA EM OPERAÇÃO. atendimento das condições legais e regulamentares. atendimento do interesse público. PELO DEFERIMENTO DO PEDIDO.
+1. Pedido de prorrogação do prazo de entrada em operação do sistema de satélites não geoestacionários Kuiper.
+2. O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da União Internacional de Telecomunicações (UIT), observado o interesse público (art. 24, § 3º, do Regulamento Geral de Exploração de Satélites - RGSat, aprovado pela Resolução nº 748, de 22 de outubro de 2021).
+3. O pedido apresentado está devidamente justificado por razões de ordem técnica. Além de não possuir caráter meramente protelatório, permite a manutenção do Direito de Exploração anteriormente conferido e, em consequência, a entrada em operação de novo sistema de comunicação via satélite no mercado brasileiro, ampliando a oferta de capacidade satelital no país, o que está em linha com o atendimento do interesse público.
+4. Pelo deferimento do pedido.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites (RGSat);
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA);
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da PFE-Anatel;
+Carta Petição SEI 13817474;
+Carta Petição SEI 13833455;
+Processo nº 53500.076413/2021-23.
+RELATÓRIO
+DOS FATOS
+Trata-se de pedido de prorrogação do prazo para entrada em operação do sistema não geoestacionário estrangeiro Kuiper, cujo Direito de Exploração foi conferido à KUIPER SYSTEMS LLC, sociedade constituída sob as leis dos Estados Unidos da América, por meio do Ato nº 16.983, de 16 de dezembro de 2022 (SEI nº 9575277), publicado no Diário Oficial da União (DOU) em 20 de dezembro de 2022.
+Consta do referido Ato que a AMAZON KUIPER BRASIL LTDA. (CNPJ nº 44.223.070/0001-84), doravante Amazon, empresa constituída sob as leis brasileiras, com sede e administração no país, é a representante legal da exploradora de satélites estrangeira. Consta, ainda, que o sistema Kuiper será composto por 3.236 (três mil, duzentos e trinta e seis) satélites e que o Direito de Exploração foi conferido pelo prazo de 5 (cinco) anos, ou seja, com vigência até 20 de dezembro de 2027. Adicionalmente, o art. 10 do Ato nº 16.983/2022 (SEI nº 9575277) estabeleceu o prazo máximo de 2 (dois) anos para a entrada em operação. Desta forma, a entrada em operação do sistema, tal como estabelecido no referido Ato, deveria ocorrer até 20 de dezembro de 2024.
+Em 18 de outubro de 2024, a Interessada solicitou (SEI nº 12762034) prorrogação do prazo de entrada em operação do sistema Kuiper pelo prazo adicional de 6 (seis) meses, com base em elementos caracterizadores de caso fortuito ou força maior. 
+Em 13 de dezembro de 2024, conforme Acórdão nº 372 (SEI nº 13029103), o Conselho Diretor da Anatel deferiu o pedido. Consequentemente, consignou-se, nos termos do Ato nº 17.442, de 13 de dezembro de 2024 (SEI nº 13029126), que a entrada em operação do sistema Kuiper deveria ocorrer até 20 de junho de 2025.
+Em 6 de junho de 2025, a Amazon protocolou novo requerimento para prorrogação do prazo para entrada em operação do sistema Kuiper, desta vez por mais 70 dias, isto é, até a data de 29 de agosto de 2025 (SEI nº 13817474). A interessada apresentou conforme SEI nº 13817475 informações adicionais sobre o lançamento dos satélites do sistema e que a prorrogação se dá em função da necessária movimentação dos satélites até a órbita designada.
+Em 11 de junho de 2025, a área técnica emitiu o Informe nº 3286/2025/ORLE/SOR (SEI nº 13835526), acompanhado dos Check Lists de Análise Técnica (SEI nº 13834229) e Jurídica (SEI nº 13834232), indicando o atendimento das exigências legais pela interessada e a possibilidade de deferimento do pleito.
+Na mesma data a Superintendência de Outorga e Recursos à Prestação (SOR) emitiu a Matéria para Apreciação do Conselho Diretor nº 506/2025 (SEI nº 13837598) e remeteu o processo para deliberação do Conselho Diretor.
+Em 12 de junho de 2025, fui sorteada Relatora, conforme Certidão de Distribuição SEI nº 13842188.
+DA ANÁLISE
+I - Da competência do Colegiado
+O art. 170 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT), prevê a competência da Anatel de dispor sobre os requisitos para conferência de Direito de Exploração de satélites:
+Art. 170. A Agência disporá sobre os requisitos e critérios específicos para execução de serviço de telecomunicações que utilize satélite, geoestacionário ou não, independentemente de o acesso a ele ocorrer a partir do território nacional ou do exterior.
+De acordo com o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir sobre direito de exploração de satélites:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite; (Redação dada pela Resolução nº 748, de 22 de outubro de 2021)
+As condições para a Exploração de Satélites sobre o território brasileiro e para conferência de Direito de Exploração de Satélite foram regulamentadas pela Anatel por meio do Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021.
+A presente Análise objetiva avaliar pedido de prorrogação do prazo de entrada em operação do sistema estrangeiro de satélites não geoestacionários Kuiper, o que configura possibilidade de alteração do Direito de Exploração anteriormente conferido.
+Portanto, é competência do Conselho Diretor para avaliar o pedido de direito de exploração de satélite não geoestacionário estrangeiro.
+II - Do Pedido de Prorrogação do Prazo de Entrada em Operação
+II.1 - Do atendimento dos requisitos regulatórios e do mérito
+Inicialmente, vale rever o que dispõe o Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021, quanto aos aspectos regulatórios referentes à conferência de Direito de Exploração de Satélites e aos prazos associados às autorizações para exploração dos sistemas de comunicação via satélite no Brasil:
+Art. 3º Para os fins deste Regulamento, além das definições constantes na legislação e regulamentação, aplicam-se as seguintes definições:
+(...) 
+III - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;
+IV - Entrada em Operação de Satélite: posicionamento de satélite na posição orbital ou planos orbitais associados à outorga, com capacidade de transmissão e recepção nas faixas de frequências outorgadas;
+(...)
+Art. 22. O Direito de Exploração de Satélite será conferido mediante Ato expedido pela Agência, do qual devem constar o nome ou a denominação social da autorizada, o número de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ) da autorizada ou de seu representante legal, quando aplicável, o objeto e o prazo de vigência do direito, as redes de satélite e o nome do satélite, no caso de satélite geoestacionário, a serem associados ao direito, a posição orbital, as faixas de frequências, a área geográfica de cobertura, a data para entrada em operação, bem como outras informações julgadas convenientes pela Agência.
+(grifei)
+Especificamente quanto a prorrogação do prazo para entrada em operação, o RGSat, no §3º do art. 24, dispõe o seguinte:
+Art. 24. O Direito de Exploração de Satélite será conferido pelo prazo de até 15 (quinze) anos, a contar da data de publicação do extrato do Ato que conferirá o referido Direito no DOU.
+...
+§ 3º O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da UIT, observado o interesse público.
+(grifei)
+Desta forma, fica a critério da Anatel prorrogar o prazo para entrada em operação de satélites observado o interesse público, sobretudo em situações de força maior, considerando, neste caso, o entendimento da União Internacional de Telecomunicações (UIT) a respeito.
+Além disso, pela inteligência do art. 22 do RGSat, acima transcrito, a prorrogação do prazo para entrada em operação de sistemas de satélites implica na necessidade de alteração do Direito de Exploração conferido. Por sua vez, para a alteração do Direito de Exploração devem ser observadas as condições dispostas no art. 16 do RGSat e bem como o § 1º do Ato nº 9.526, de 27 de outubro de 2021:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+Ato nº 9.526, de 27 de outubro de 2021:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+Conforme indicado pela área técnica no Informe nº 3286/2025/ORLE/SOR (SEI nº 13835526) e nos Check Lists de Análise Técnica (SEI nº 13834229) e Jurídica (SEI nº 13834232), a Interessada atendeu as exigências legais e regulamentares, acima expostas, que condicionam a possibilidade de alteração do Direito de Exploração conferido, nos termos do Ato nº 16.983/2022 (SEI nº 9575277).
+A Interessada justifica seu pleito em função da necessária movimentação dos satélites até a órbita designada. De acordo com a documentação encaminhada (SEI nº 13817475), o processo de elevação à altitude da órbita atribuída leva de 1 a 4 meses após as atividades críticas de comissionamento. A Interessada consignou que estima a conclusão deste processo entre meados de julho e meados de agosto. Por esse motivo, pleiteou a prorrogação do prazo para entrada em operação do sistema Kuiper, por mais 70 dias, isto é, até a data de 29 de agosto de 2025. 
+A área técnica recomenda o deferimento do pleito uma vez que: (i) não conflita com as condições da autorização no país de origem; (ii) não se trata de medida meramente protelatória; e (iii) que, atende ao interesse público, pois permite a manutenção do Direito de Exploração anteriormente conferido e, em consequência, a entrada em operação de novo sistema de comunicação via satélite no mercado brasileiro, ampliando a oferta de capacidade satelital no país. Transcrevo, a seguir, alguns trechos do Informe da área técnica que tratam desses pontos:
+Informe nº 3286/2025/ORLE/SOR (SEI nº 13835526):
+3.17. No que diz respeito à autorização no país de origem, é oportuno mencionar que a autorização da Comissão Federal de Comunicações (do inglês, Federal Communications Comission – FCC), órgão regulador americano, para o sistema Kuiper nos termos do documento Order and Authorization FCC 20-102, de 30 de junho de 2020 (SEI nº 7567671, págs. 34 a 57, tradução juramentada págs. 58 a 130), em sua seção 67, item "b", define os prazos máximos para o lançamento e operação dos satélites do sistema, de forma parcial (50%) e total:
+ORDER AND AUTHORIZATION - FCC 20-102
+(...)
+67. IT IS FURTHER ORDERED that this authorization is also subject to the following requirements:
+(...)
+b. Kuiper must launch the space stations, place them in the assigned orbits, and operate them in accordance with this authorization and 47 CFR § 25.164(b). Section 25.164(b) requires Kuiper to launch and operate 50 percent of its satellites no later than July 30, 2026, and Kuiper must launch the remaining space stations necessary to complete its authorized service constellation, place them in their assigned orbits, and operate each of them in accordance with the authorization no later than July 30, 2029. 47 CFR § 25.164(b)
+__________________
+67. FICA AINDA DETERMINADO que esta autorização também está sujeita aos seguintes requisitos:
+(...)
+b. A Kuiper deve lançar as estações espaciais, posicioná-las nas órbitas designadas e operá-las de acordo com esta autorização e com o 47 CFR § 25.164(b). A Seção 25.164(b) exige que a Kuiper lance e opere 50 por cento de seus satélites até, no máximo, 30 de julho de 2026, e que lance as estações espaciais restantes necessárias para completar sua constelação autorizada de serviços, posicionando-as nas órbitas designadas e operando cada uma delas de acordo com a autorização até, no máximo, 30 de julho de 2029. 47 CFR § 25.164(b).
+(Em tradução livre, grifo nosso)
+3.18. Assim, tendo em vista que o regulador americano determinou que 50% do número total de satélites do sistema Kuiper esteja implementado até 30 de julho de 2026, entende-se que a nova solicitação para prorrogação do prazo de entrada em operação até 29 de agosto de 2025 não está em conflito com a determinação emitida pela FCC.
+3.19. Conforme informado pela interessada, o lançamento dos primeiros 27 satélites que compõem o sistema Kuiper se deu em 28 de abril de 2025, e os satélites lançados possuem capacidade para transmissão e recepção nas faixas de frequências associadas ao Direito de Exploração de Satélite conferido. Desta forma, na opinião desta área técnica, a interessada demonstra que tem intenção objetiva de colocar o sistema em operação.
+3.20. Ademais, a julgar pelo prazo de prorrogação solicitado, de 70 (setenta) dias, verifica-se que a interessada não pretende prorrogar em demasiado a entrada em operação de seu sistema, tendo solicitado a extensão do prazo apenas pelo período necessário para que os satélites alcancem seu posicionamento orbital final.
+3.21. Assim, vê-se que a presente solicitação feita pela Amazon não se trata de medida meramente protelatória, mas representa uma manifestação da transparência da exploradora de satélites na disponibilização de informações à Agência e de seu interesse em promover a entrada em operação do sistema no Brasil.
+3.22. Dessa forma, com base nas informações apresentadas, esta área técnica julga que a presente solicitação da Amazon encontra-se devidamente justificada e que o novo prazo solicitado é razoável, devido às características técnicas dos satélites até então lançados, que alcançarão seu posicionamento orbital final entre meados de julho e agosto de 2025, justificando a prorrogação do prazo de entrada em operação do sistema Kuiper até 29 de agosto de 2025.
+3.23. Em relação ao atendimento ao interesse público, conforme prevê o §3º do art. 24 do RGSat, observa-se que a prorrogação da entrada em operação do sistema de satélites não geoestacionários Kuiper permitirá a manutenção do Direito de Exploração conferido e, em consequência, a entrada em operação de novo sistema de comunicação via satélite no mercado brasileiro, ampliando a oferta de capacidade satelital em banda Ka sobre o território nacional e a infraestrutura para prestação de serviços de telecomunicações, especialmente para aplicações de conectividade em banda larga via satélite, inclusive em regiões onde, eventualmente, pode não haver infraestrutura terrestre disponível.
+3.24. Deste modo, esta área técnica manifesta-se pela prorrogação da entrada em operação do sistema de satélites não geoestacionários Kuiper, nos termos do parágrafo 3º do artigo 24 do Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021, mantendo-se inalteradas as demais condições previstas na autorização conferida pela Anatel.
+Filio-me ao posicionamento da área técnica pelo deferimento do pleito.
+Pelo exposto, proponho prorrogar, até 29 de agosto de 2025, o prazo para entrada em operação do sistema não geoestacionário estrangeiro Kuiper, cujo Direito de Exploração foi conferido à KUIPER SYSTEMS LLC, por meio do Ato nº 16.983, de 16 de dezembro de 2022 (SEI nº 9575277), nos termos da minuta de Ato nº 13837477.
+II.2 - Da desnecessidade de manifestação da Procuradoria Federal Especializada junto à Anatel.
+Em relação à necessidade de remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE/Anatel), as hipóteses de manifestação obrigatória da PFE estão estabelecidas no § 2º do artigo 39 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013. Adicionalmente, o §1º do mesmo dispositivo atribui ao Procurador-Geral a responsabilidade de apontar os casos nos quais a PFE/Anatel se manifestará de ofício:
+Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares.
+Verifica-se que as solicitações associadas ao direito de exploração de satélite não se encontram entre as hipóteses de remessa obrigatória à PFE/Anatel, previstas no § 2º do artigo 39 do RIA.
+Outrossim, a Portaria nº 642, de 26 de julho de 2013, em conformidade com o disposto no § 1º do artigo 39 do RIA, disciplina os casos de manifestação obrigatória da PFE/Anatel, a qual não prevê, dentre as hipóteses de manifestação obrigatória, solicitações relacionadas ao direito de exploração de satélite.
+A área técnica consignou que não há dúvidas quanto à matéria jurídica, o que não daria ensejo à remessa dos autos à Procuradoria. Desta forma, o processo foi enviado diretamente ao Conselho Diretor.
+II.3 - Do Pedido de Sigilo
+Por fim, nas diversas petições apresentadas no processo a AMAZON KUIPER BRASIL LTDA requer tratamento confidencial às informações repassadas à Agência para análise do seu pleito de prorrogação e que os documentos elaborados pela Anatel sobre o tema também sejam considerados restritos.
+O art. 39, parágrafo único, da LGT, estabelece que, ressalvados os documentos e os autos cuja divulgação possa violar a segurança do País, segredo protegido ou a intimidade de alguém, todos os demais permanecerão abertos à consulta do público.
+Art. 39. Ressalvados os documentos e os autos cuja divulgação possa violar a segurança do País, segredo protegido ou a intimidade de alguém, todos os demais permanecerão abertos à consulta do público, sem formalidades, na Biblioteca.
+Parágrafo único. A Agência deverá garantir o tratamento confidencial das informações técnicas, operacionais, econômico-financeiras e contábeis que solicitar às empresas prestadoras dos serviços de telecomunicações, nos termos do regulamento.
+A área técnica sugere, conforme itens 3.36 e 3.37 do Informe nº 3286/2025/ORLE/SOR (SEI nº 13835526), que se mantenham os documentos que contém informações técnicas e operacionais da empresa com acesso restrito:
+Informe nº 3286/2025/ORLE/SOR (SEI nº 13835526):
+3.36. Ainda, cabe observar que a interessada solicitou que fosse conferida restrição de acesso aos documentos submetidos à Agência no âmbito do pedido de prorrogação em tela. Neste ponto, a Amazon solicita, inclusive, que os documentos elaborados pela Agência para instrução do processo também sejam classificados com restrição de acesso, uma vez que, eventualmente, podem conter informações que a empresa entende estratégicas, operacionais e técnicas, que mereceriam o referido tratamento.
+3.37. A este respeito, esta área técnica entende que a solicitação observa o disposto no parágrafo único do art. 39 da Lei nº 9.472, de 16 de julho de 1997, motivo pelo qual sugere que se mantenham os documentos que contém informações técnicas e operacionais da empresa com acesso restrito.
+(grifei)
+Contudo, a questão já havia sido considerada pelo Conselho Diretor como disposto no Acórdão nº 372 (SEI nº 13029103) e na Análise nº 148/2024/AF (SEI nº 12940382), de autoria do ilustre Conselheiro Alexandre Freire, cujo trecho transcrevo abaixo:
+Análise nº 148/2024/AF (SEI nº 12940382):
+5.32. Apesar dos motivos expostos pela Requerente, não foram apresentados fundamentos sólidos e legítimos para justificar a restrição de acesso à presente Análise. Verifica-se que as informações constantes nas petições constam de notícias em sites especializados, em especial quanto as causas do atraso da entrada em operação.
+5.33. Assim não há razões para restrição de acesso da presente Análise, que é de interesse público e fundamental para a transparência.
+Acórdão nº 372, de 13 de dezembro de 2024 (SEI nº 13029103):
+...
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 148/2024/AF (SEI nº 12940382), integrante deste acórdão:
+...
+b) indeferir o pedido de restrição de acesso à presente Análise.
+(grifei)
+Nesse sentido, acato a sugestão da área técnica para que os documentos submetidos à Agência (SEI nº 13817474, 13817475, 13833455 e 13833456) sejam mantidos com acesso restrito, tal como foi classificado pela própria área técnica. Contudo, pelos mesmos fundamentos do posicionamento anterior do Conselho Diretor sobre o assunto, indefiro o pedido de restrição de acesso à presente Análise por não estarem sendo apresentadas informações técnicas, operacionais, econômico-financeiras e contábeis. Registre-se, inclusive, que as informações mencionadas na presente Análise são divulgadas pela própria Amazon em sites publicitários por ela mantidos.
+Os demais documentos devem ser analisados pela Superintendência de Outorga e Recursos à Prestação em conformidade com o disposto no parágrafo único do art. 39 da Lei nº 9.472, de 16 de julho de 1997.
+III - A relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento contida na presente Análise relaciona-se com os seguintes Objetivos da Agenda 2030:
+Objetivo 9 - Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação: a utilização racional e consciente de um recurso escasso como o da exploração satelital é de grande importância para o desenvolvimento de vários setores do país, especialmente para a sociedade, estando diretamente ligada às metas 9.1 ("Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional, transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos") e 9.c ("Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020").
+Objetivo 11 - Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis: há pertinência temática com a meta 11.b, uma vez que quanto maior a diversidade e flexibilidade para a conexão entre países e pessoas, haverá, de igual forma, aumento de cidades conectadas, com mais segurança e previsibilidade e adoção de políticas públicas em casos, por exemplo, de desastres naturais.
+A Agenda 2030 foi objeto de alinhamento interno, para o caso brasileiro, sendo o Instituto de Pesquisa Econômica Aplicada (IPEA), responsável por desenvolver metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto. Destacam-se as seguintes metas nacionais:
+Objetivo nacional 9.4 - Até 2023, modernizar a infraestrutura e reabilitar as atividades econômicas para torná-las sustentáveis, com foco no uso de recursos renováveis e maior adoção de tecnologias e processos industriais limpos e ambientalmente adequados: o uso racional da exploração de satélites é de curial importância para o desenvolvimento de atividades, quer governamentais, quer industriais, mais modernas, seguras e com menos limitações físicas para o desenvolvimento dos mais variados trabalhos, de uma forma mais moderna, prática, célere e segura.
+O Brasil está empenhado no cumprimento dessas metas, sendo relevante o estudo desenvolvido pelo IPEA, quanto à adequação das metas globais da Agenda 2030 para o Desenvolvimento Sustentável à realidade brasileira. Trata-se de um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com essa iniciativa, o Brasil ganha destaque no sentido de ter à sua disposição um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+prorrogar, até 29 de agosto de 2025, o prazo para entrada em operação do sistema não geoestacionário estrangeiro Kuiper, cujo Direito de Exploração foi conferido à KUIPER SYSTEMS LLC, por meio do Ato nº 16.983, de 16 de dezembro de 2022 (SEI nº 9575277), nos termos da minuta de Ato nº 13837477;
+indeferir o pedido de restrição de acesso à presente Análise.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 16/06/2025, às 15:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 13842502 e o código CRC 092F56A3.
+ | 
+Referência: Processo nº 53500.076413/2021-23 | 
+SEI nº 13842502 |

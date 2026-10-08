@@ -1,0 +1,42 @@
+SEI/ANATEL - 15716693 - Acórdão
+Boletim de Serviço Eletrônico em 29/05/2026
+DOU de 29/05/2026, seção 1, página 29
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 140, de 28 de maio de 2026
+Processo nº 53500.083769/2025-47
+Recorrente/Interessado: CLARO S.A., TELEFÔNICA BRASIL S.A., CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL
+CNPJ nº 40.432.544/0001-47, 02.558.157/0001-62 e 06.102.961/0001-93
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 141, de 28 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. CONSULTA PÚBLICA. PRORROGAÇÃO DE PRAZO. PEDIDOS PARCIALMENTE DEFERIDOS.
+I. CASO EM EXAME
+1. Análise de pedidos de dilação de prazo da Consulta Pública nº 17, de 14 de abril de 2026, que trata de proposta de simplificação e consolidação da regulamentação de remuneração pelo uso de redes, com inclusão de disposições afetas ao Serviço de Comunicação Multimídia - SCM.
+2. Os pedidos. TELEFÔNICA BRASIL S.A. requereu prorrogação de 20 (vinte) dias. CLARO S.A requereu prorrogação de 30 (trinta) dias. CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL também requereu prorrogação de 30 (trinta) dias.
+3. A manifestação técnica. A área técnica opinou favoravelmente à prorrogação por 20 (vinte) dias, com encerramento da consulta em 22 de junho de 2026, às 23h59, e alertou que prazo superior poderia comprometer a aprovação da norma em tempo compatível com o início do uso de numeração pública UIT E.164 pelo SCM.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se os pedidos de prorrogação são cabíveis e tempestivos; (ii) saber se a complexidade da matéria justifica a prorrogação do prazo da Consulta Pública nº 17/2026 e em que extensão; e (iii) saber se a urgência do caso autoriza a submissão da matéria a Circuito Deliberativo com redução do prazo mínimo de deliberação.
+III. RAZÕES DE DECIDIR
+1. Os pedidos são tempestivos, pois foram apresentados entre 22 e 27 de maio de 2026, antes do encerramento do prazo da consulta pública, previsto para 1º de junho de 2026.
+2. O art. 59, § 5º, do Regimento Interno da Anatel - RIA prevê o cabimento de pedido de prorrogação de prazo de consulta pública e atribui ao Conselheiro Relator a competência para decidir nas matérias submetidas ao Conselho Diretor.
+3. A proposta submetida à consulta pública possui relevância e complexidade. A minuta consolida regras dos serviços Serviço Telefônico Fixo Comutado - STFC e Serviço Móvel Pessoal - SMP e inclui disciplina nova para o SCM, diante da futura utilização de numeração pública e dos efeitos sobre a interconexão de redes.
+4. O prazo da consulta deve ser compatível com a complexidade e com os impactos da proposta normativa, para viabilizar contribuições técnicas, jurídicas e operacionais adequadamente fundamentadas.
+5. Os fundamentos apresentados por TELEFÔNICA, CLARO e CONEXIS convergem quanto à necessidade de exame mais aprofundado da matéria.
+6. A manifestação da área técnica corrobora a necessidade de ampliação do prazo. O prazo adicional de 20 (vinte) dias aprofunda o debate sem prejudicar as metas da Agenda Regulatória 2025-2026.
+7. Prazo superior a 20 (vinte) dias pode comprometer a aprovação da norma em tempo hábil para a implementação do uso de numeração pública pelo SCM a partir de 1º de março de 2027.
+8. A proximidade do encerramento da consulta pública caracteriza urgência suficiente para a abertura de Circuito Deliberativo, nos termos do Regimento Interno da Anatel.
+9. A urgência também justifica a redução do prazo mínimo de deliberação no Circuito Deliberativo, a fim de viabilizar decisão e publicação antes do termo final originalmente fixado para a consulta pública.
+IV. DISPOSITIVO E TESE
+14. Pedidos conhecidos. Pedido da TELEFÔNICA integralmente deferido. Pedidos da CLARO e da CONEXIS parcialmente deferidos. Consulta Pública nº 17, de 14 de abril de 2026, prorrogada por 20 (vinte) dias. Matéria submetida a Circuito Deliberativo, com redução do prazo mínimo para deliberação.
+Tese de julgamento: "1. São cabíveis e tempestivos os pedidos de prorrogação de prazo de consulta pública formulados antes do encerramento do período de contribuições, nos termos do art. 59, § 5º, do Regimento Interno da Anatel. 2. A relevância e a complexidade de proposta normativa que consolida regras de remuneração pelo uso de redes e inclui disciplina para o SCM justificam a prorrogação da Consulta Pública nº 17/2026. 3. A prorrogação por 20 dias atende à necessidade de qualificação da participação social sem comprometer o cronograma regulatório e a implementação do uso de numeração pública pelo SCM. 4. A proximidade do encerramento do prazo da consulta pública autoriza a submissão da matéria a Circuito Deliberativo com redução do prazo mínimo de deliberação."
+Dispositivos relevantes citados: Lei nº 13.848/2019, art. 9º, § 2º; Lei nº 9.472/1997, art. 146; Resolução nº 612/2013, arts. 27 a 30 e 59, § 5º; Resolução nº 777/2025, art. 10.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 48/2026/OP (SEI nº 15711466), integrante deste acórdão, deferir integralmente o pedido da TELEFÔNICA (SEI nº 15686813) e deferir parcialmente os pedidos de CLARO (SEI nº 15695123) e CONEXIS (SEI nº 15708327), para prorrogar o prazo da Consulta Pública nº 17, de 14 de abril de 2026, por 20 (vinte) dias.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 28/05/2026, às 18:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15716693 e o código CRC ACB90D50.
+ | 
+Referência: Processo nº 53500.083769/2025-47 | 
+SEI nº 15716693 |

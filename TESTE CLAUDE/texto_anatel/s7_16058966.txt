@@ -1,0 +1,826 @@
+SEI/ANATEL - 14330268 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 2/2025/OP
+Processo nº 53500.026914/2021-69
+Interessado: Sky Servicos de Banda Larga Ltda.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo interposto por SKY Serviços Banda Larga Ltda. (SKY), CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Acesso Condicionado (SeAC), em face do Despacho Decisório nº 30/2023/CODI/SCO, que aplicou sanção de multa em razão de descumprimentos a dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos clientes indevidamente cobrados, nos termos do art. 85 do mesmo Regulamento.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESCUMPRIMENTO AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES. MULTA REFORMADA. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+ Recurso administrativo interposto por SKY Serviços de Banda Larga Ltda. contra decisão que aplicou multa de R$ 18.955.003,30 por descumprimento ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC).
+ Fatos relevantes incluem alegações de nulidades processuais, questionamento sobre métodos amostrais, contestação do arbitramento de valores a ressarcir e discussão sobre a legitimidade de cobrança antecipada.
+II. QUESTÃO EM DISCUSSÃO
+ Há cinco questões em discussão: (i) saber se houve nulidade no processo administrativo por vícios na fiscalização, arbitramento de valores ou encerramento da instrução; (ii) saber se houve infração aos arts. 3º, XIII; 14 e 15; 61, § 1º c/c 106; e 85 do RGC; (iii) saber se as infrações devem ser classificadas como sistêmicas ou pontuais; (iv) saber se o valor da multa foi corretamente apurado e se observou os critérios de proporcionalidade, gravidade e vantagem auferida; e (v) aplicação de sanção de obrigação de fazer, consistente no provimento de conectividade para universidades públicas e institutos federais.
+III. RAZÕES DE DECIDIR
+ Não se verificou nulidade no processo administrativo, pois as infrações apuradas independem de métodos amostrais e não houve prejuízo ao contraditório ou ampla defesa.
+ A infração ao art. 3º, XV, do RGC foi descaracterizada por ausência de materialidade suficiente.
+ As infrações aos arts. 14 e 15 do RGC foram caracterizadas como pontuais, limitadas aos 23.974 casos de agendamento de cancelamento em janeiro de 2020.
+ A infração ao art. 61, § 1º c/c 106 do RGC foi caracterizada como pontual, limitada aos 1.766.260 usuários de planos pós-pagos com pagamento antecipado.
+ A infração ao art. 85 do RGC foi caracterizada como pontual, limitada aos 22.481 casos de cancelamento com cobrança indevida após o pedido de rescisão.
+ O enquadramento da infração ao art. 64, parágrafo único, do RGC foi alterado para o art. 3º, XIII, do RGC, sem prejuízo à defesa.
+ O valor da multa foi recalculado para R$ 5.456.822,21, observando-se a limitação ao dobro da vantagem auferida, a gravidade das infrações e a ausência de antecedentes.
+ A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para universidades públicas e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+IV. DISPOSITIVO E TESE
+ Recurso parcialmente provido. Multa reformada para R$ 5.456.822,21. Aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, conforme requisitos e parâmetros definidos.
+ Tese de julgamento: "1. Não há nulidade no processo administrativo por vícios na fiscalização, arbitramento de valores ou encerramento da instrução. 2. A infração ao art. 3º, XV, do RGC é descaracterizada. 3. As infrações aos arts. 14 e 15; 61, § 1º c/c 106; e 85 do RGC são caracterizadas como pontuais, com delimitação dos usuários atingidos. 4. O valor da multa é reformado para R$ 5.456.822,21, observando-se o dobro da vantagem auferida, gravidade e ausência de antecedentes. 5. Aplicação da sanção de obrigação de fazer consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999; Resolução nº 632/2014, arts. 3º, XIII, 14, 15, 61, § 1º, 85, 106; Resolução nº 589/2012; Resolução nº 612/2013; Resolução nº 784/2025.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicação (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA);
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel (RIA);
+Resolução nº 589, de 7 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas (Rasa);
+Resolução nº 632, de 7 de março de 2014, que aprovou o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+RELATÓRIO
+DOS FATOS
+Cuida-se de Recurso Administrativo com pedido de efeito suspensivo interposto por SKY Serviços Banda Larga Ltda. (SKY), CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Acesso Condicionado (SeAC), em face do Despacho Decisório nº 30/2023/CODI/SCO (SEI nº 9765346), que aplicou sanção de multa no valor total de R$ 18.955.003,30 (dezoito milhões, novecentos e cinquenta e cinco mil, três reais e trinta centavos), em razão dos descumprimentos aos arts. 3º, XV; 14, caput, c/c 15, caput; 61, § 1º; 64, parágrafo único; 85, caput; e 106, caput, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos clientes indevidamente cobrados, nos termos do art. 85 do mesmo Regulamento.
+O processo foi instaurado pelo Despacho Ordinatório de Instauração nº 20/2021/CODI/SCO (SEI nº 6813479), em 21 de maio de 2021, com fulcro nos achados detalhados nos Relatórios de Fiscalização nº 45/2020/GR05FI1/GR05/SFI (SEI nº 6027008), de 6 de outubro de 2020, e 69/2020/GR05FI1/GR05/SFI (SEI nº 6372250), constantes do Processo de Fiscalização nº 53528.000719/2020-10, originado do Processo nº 53500.036241/2018-50.
+Notificada, a Recorrente apresentou defesa ( SEI nº 7062533) em 25 de junho de 2021 e alegações finais (SEI nº 7171216) em 22 de julho de 2021.
+Nos termos do Informe nº 302/2021/CODI/SCO (SEI nº 7422450), de 7 de dezembro de 2021, as alegações da Recorrente foram analisadas e, em razão do valor de multa proposto, os autos foram remetidos à Procuradoria Federal Especializada junto à Anatel (PFE).
+Em 5 de janeiro de 2022, a PFE se manifestou no Parecer 787/2021/PFE-ANATEL/PGF (SEI nº 7888338).
+Em 28 de fevereiro de 2023, por meio do Informe 29/2023/CODI/SCO (SEI nº 9757327), a área técnica analisou o Parecer e recalculou a sanção proposta.
+O Superintendente de Controle de Obrigações, na mesma data, aplicou sanção de multa à Recorrente, nos termos do Despacho Decisório 30/2023/CODI/SCO (SEI nº 9765346), ora recorrido.
+Em 31 de março de 2023, a Recorrente apresentou Recurso (SEI nº 10041562).
+Pelo Informe nº 362/2024/CODI/SCO (SEI nº 12767918), as alegações recursais foram analisadas, havendo sugestão de agravamento parcial da sanção.
+Devidamente notificada, a Recorrente apresentou alegações (SEI nº 13184833) em 23 de janeiro de 2025.
+As alegações foram analisadas nos termos do Informe nº 25/2025/CODI/SCO (SEI nº 13186645), de 4 de fevereiro de 2025, com remessa dos autos à Procuradoria Federal Especializada junto à Anatel/PFE, que emitiu o Parecer 129/2025/PFE-ANATEL/PGF/AGU (SEI nº 13675920).
+Pelo Informe nº 489/2025/CODI/SCO (SEI nº 13840153), de 4 de agosto de 2025, sugeriu-se o conhecimento do recurso e o encaminhamento dos autos a este Conselho para análise de mérito.
+Os autos foram encaminhados para manifestação deste colegiado, nos termos do Despacho Decisório nº 379/2025/CODI/SCO (SEI nº 13841399), por meio da MACD nº 512/2025 (SEI nº 13841484).
+O processo foi distribuído para a relatoria da Conselheira Substituta Cristiana Camarate em 7 de agosto de 2025 (SEI nº 14151998).
+Em razão da minha nomeação para compor o Conselho Diretor, o acervo do gabinete da Conselheira Substituta Cristiana Camarate foi redistribuído, momento em que fui designado o novo relator da matéria (SEI nº 14319993).
+É o relatório.
+DA ANÁLISE
+Da Admissibilidade do Recurso
+Primeiramente, cumpre destacar que a tramitação do processo ocorreu em consonância com os dispositivos legais e regulamentares, sendo observados os princípios do processo legal, do contraditório e da ampla defesa, conforme estabelecem a Lei de Processo Administrativo (LPA), Lei nº 9.784, de 29 de janeiro de 1999, e o Regimento Interno da Anatel.
+Quanto à admissibilidade do Recurso, verifica-se que, nos termos do Regimento Interno da Agência, ele é cabível em face da decisão proferida por autoridade competente, e atende aos pressupostos de tempestividade, legitimidade e interesse em recorrer.
+A Recorrente foi notificada em 21 de março de 2023 (SEI nº 9985570), uma terça-feira, e interpôs Recurso (SEI nº 10041562) em 31 de março de 2023 (SEI nº 10041565), sexta-feira.
+A peça recursal foi subscrita por pessoa legitimada (SEI nº 10041563); a Recorrente possui interesse recursal, na medida em que foi sucumbente; a decisão atacada é passível de Recurso; e o presente recurso não contraria entendimento fixado em Súmula da Agência.
+Das infrações
+As infrações apuradas no presente Pado referem-se a violações aos direitos dos usuários do SeAC, conforme tabela abaixo extraída do Despacho Ordinatório de Instauração nº 20/2021/CODI/SCO (SEI nº 6813479):
+ Conduta
+ | 
+ Infração
+ | 
+ Situação final
+ | 
+ A Prestadora só realiza cancelamentos mediante o pagamento, pelo usuário, de todos os débitos | 
+ art. 3º, XV do anexo à Resolução nº 632/2014 | 
+ Caracterizada sistêmica
+ | 
+ A Prestadora realizou agendamentos de pedidos de rescisão, impedindo que o cancelamento seja efetivado nos prazos regulamentares | 
+ arts. 14 e 15 do anexo à Resolução nº 632/2014 | 
+ Considerada anteriormente (art. 3º, XV) | 
+ A Prestadora realiza cobrança antecipada por serviços | 
+ art. 61, § 1º do anexo à Resolução nº 632/2014 | 
+ Caracterizada sistêmica
+ | 
+ Foram encontrados casos em que a Prestadora não obteve a anuência expressa dos clientes para que esses permanecessem nos planos até o final dos períodos pelos quais pagaram
+ | 
+ art. 64, parágrafo único do anexo à Resolução nº 632/2014
+ | 
+ Caracterizada pontual
+ | 
+ A Prestadora não devolveu, em dobro, valores cobrados indevidamente | 
+ art. 85 do anexo à Resolução nº 632/2014 | 
+ Caracterizada sistêmica
+ | 
+ Durante o período de transição para as normas do RGC, a Prestadora realizou cobrança antecipada por serviços e não adotou medidas para a cessação dessa prática | 
+ art. 106 do anexo à Resolução nº 632/2014 | 
+ Considerada anteriormente (art. 61, § 1º) | 
+As práticas da Recorrente foram objeto de acompanhamento no âmbito do Processo de Fiscalização nº 53528.000719/2020-10, realizado antes da vigência do Regulamento de Fiscalização Regulatória, aprovado pela Resolução nº 746, de 2021.
+Do Recurso
+Passo à análise das razões do recurso.
+I. Das preliminares
+I.1. Da inobservância de requisitos essenciais relacionados à adoção de métodos amostrais no Relatório de Fiscalização nº 69/2020
+A Recorrente argumenta que, à época da fiscalização, estava vigente o Regulamento de Fiscalização aprovado pela Resolução n.º 596/2012, que determinava a forma como as fiscalizações deveriam ser realizadas, bem como a Portaria n.º 959/2012, que aprovou a Instrução de Fiscalização sobre a utilização de Métodos Amostrais nas Ações de Fiscalização e a Portaria n.º 2123, de 10 de dezembro de 2018 (“Portaria n.º 2123/2018”), que aprova o Procedimento de Fiscalização dos Direitos e Garantias dos Consumidores de Serviços de Telecomunicações. No entanto, nas verificações amostrais realizadas, não teriam sido observadas as seguintes regras previstas nas mencionadas normas:
+“(i) tanto porque as amostras utilizadas pela Agência não foram selecionadas na forma estipulada nas normas aplicáveis – ou seja, mediante sorteio utilizando arquivo que contenha todo o Universo de amostras consoante item 17 da Portaria n.º 2123/2018, c/c itens 2.2 e 5.1.2.1 da Portaria n.º 959/2012;
+(ii) como porque não se demonstrou, na forma estipulada na legislação de regência, (a) o nível de confiança estabelecido, a proporção máxima tolerável de obrigações regulamentares não cumpridas e as estimativas da proporção esperada de itens não-conformes; nem se consignou no relatório de fiscalização a indicação da proporção estimada de itens não- conformes e seus limites inferior e superior, o que seria de rigor, em linha com item 500, incisos I e II, da Portaria n.º 2123/2018; (b) tampouco se consignou no relatório de fiscalização (b.1) as razões justificadoras pelas quais 90 ligações representam uma amostra válida considerando mais de 22 mil cancelamentos havidos no período de janeiro de 2020, (b.2) a distribuição geográfica dos clientes que participaram das ligações e (b.3) a margem de erro da assertiva extraída a partir da oitiva das ligações, em linha com o exigido no artigo 16 da Portaria n.º 2123/2018.”
+Adicionalmente, questiona a motivação apresentada pela área técnica no Informe nº 302/2021/CODI/SCO (SEI nº 7422450), para afastar as alegações e amostras por ela apresentadas em sede de defesa, a fim de demonstrar que atendia a regulamentação e apresenta precedente deste Conselho Diretor, contido no Acórdão nº 612/2019, no sentido de que "uma amostra estatística de grandeza inválida não é capaz de representar todo o universo a ser fiscalizado".
+Desse modo, alega que a atividade fiscalizatória não teria atendido aos princípios da legalidade e da motivação, razão pela qual solicita que seja reconhecida sua nulidade com o consequente arquivamento do presente Pado.
+No Informe nº 362/2024/CODI/SCO (SEI nº 12767918), além de reiterar a análise contida no Informe nº 302/2021/CODI/SCO (SEI nº 7422450), quanto à ausência de qualquer nulidade quanto ao procedimento fiscalizatório, a área técnica ressaltou a ausência de extrapolação da amostra ao universo fiscalizado, conforme abaixo:
+3.20. Inicialmente, cumpre reforçar a análise feita pelo Informe nº 302/2021/CODI/SCO (7422450), em seu Tópico III.1.a, que ressalta o não prejuízo considerando que as irregularidades caracterizadas foram analisadas caso a caso, com base nas informações prestadas pela fiscalização.
+3.21. Quanto ao argumento de ausência de descrição dos métodos utilizados pela fiscalização para as amostras obtidas, cumpre reafirmar que não está sendo feita uma extrapolação da amostra para identificar o percentual da irregularidade em relação ao todo. A finalidade do método exposto na Resolução nº 596/2012 era que a aferição por amostragem, seguindo os critérios definidos, demonstrasse a realidade de todo o universo fiscalizado, ou seja, havia uma ampliação do resultado para o universo fiscalizado. Assim, os percentuais considerados na amostragem serviam como base para se entender que aquele mesmo percentual de descumprimento existia em toda a base da prestadora.
+3.22. Ressalta-se que este foi o cerne da argumentação trazida pela prestadora, para fundamentar a nulidade do processo de fiscalização que embasou a instauração do Pado ora em análise, haja vista que a fiscalização não seguiu os critérios definidos na Resolução.
+3.23. A questão é que a amostra aqui não visou uma análise procedimental de cada irregularidade, mas sim a verificação da regularidade ou não da conduta adotada pela prestadora, sendo que as irregularidades constatadas foram tratadas de forma pontual ou sistêmica a depender do caso e das provas apresentadas no processo.
+3.24. Assim, não há uma ampliação de interpretação para percentuais da amostra em relação ao todo, motivo pelo qual a argumentação de nulidade do método amostral não se aplica para este processo.
+Do mesmo modo, demonstrou que as infrações eventualmente caracterizadas como sistêmicas no presente caso, não dependeram das amostras em questão:
+3.26. No que tange à caracterização de algumas infrações como sistêmicas, cumpre repetir a análise feita no Informe nº 302/2021/CODI/SCO (7422450):
+3.23. Ressalte-se porém que, não haver a extrapolação da amostra para os casos pontuais encontrados, não significa dizer que não há possibilidade de identificar uma infração procedimental neste processo. Isso porque, caso da análise dos documentos da prestadora como fluxo de atendimento, regras de seus sistemas ou modelo utilizado na fatura sejam encontrados erros que afetem todos os usuários submetidos à determinada situação fática, a infração tem cunho sistêmico.
+3.24. Em relação a infração sistêmica, deve-se levar em consideração a natureza da conduta e a possibilidade de, em uma relação de consumo de massa, o fornecedor adotar medidas de caráter procedimental que, potencialmente, podem afetar os consumidores indiscriminadamente. Neste sentido manifestou-se a Procuradoria Federal Especializada da Anatel (PFE-Anatel) em seu Parecer nº 00565/2017/PFE-ANATEL/PGF/AGU, (SEI 1726276), de 21/06/2017:
+14. Embora não se tenha firmado um conceito normativo, a conduta sistêmica leva em conta antes de tudo a natureza da infração e a possibilidade de, em uma relação de consumo de massa, o fornecedor adotar medidas de caráter procedimental que, potencialmente, afetariam os consumidores indiscriminadamente. Daí que não se faz necessária que a fiscalização faça a constatação concreta, em cada relação prestadora versus usuário, da infração, uma vez que a conduta em si repercute em todos os consumidores protegidos por determinado comando normativo.
+[...]
+23. A infração sistêmica pode não gerar qualquer prejuízo financeiro direto ao usuário, como no caso apontado de não gravação das chamadas entre usuário e prestadora.
+24. Ademais, como já salientamos, não há relação necessária entre infração sistêmica e repercussão da infração em toda a base de clientes da prestadora. É possível que uma infração sistêmica fique confinada e restrita a um segmento de consumidores que se utilizam de determinado serviço da prestadora [...]
+3.25. Logo, o dano a todos os usuários não precisa ser demonstrado neste tipo de caso, uma vez que as condutas da prestadora em desconformidade com a regulamentação vigente demonstram ser de caráter procedimental, e potencialmente nocivas aos usuários em geral, restando refutado o argumento de que se trata de falhas pontuais.
+3.27. Pelo exposto, não assiste razão à prestadora quanto aos argumento apresentados, não sendo constatada nulidade no processo de fiscalização.
+Corroboro com o entendimento apresentado pela área técnica, uma vez que as infrações apuradas nos presentes autos independem da utilização de técnicas amostrais ou estatísticas para sua configuração e não houve extrapolação da amostra ao universo fiscalizado. 
+Desse modo, não se verifica a ocorrência de nulidade.
+I.2. Da ilegalidade do arbitramento de valores supostamente devidos à título de ressarcimento
+A Recorrente argumenta que o montante de R$ 2.175.688,18 (dois milhões, cento e setenta e cinco mil, seiscentos e oitenta e oito reais e dezoito centavos) aferido pela fiscalização a título de valores a serem ressarcidos pela Prestadora, foi arbitrado a partir de premissas inválidas e que não se sustentam, uma vez que, nos termos do item 8.42 do Relatório de Fiscalização nº 69/2020, tais valores seriam resultantes de “deliberação” conjunta com a área demandante, ocasião em que se definiu que “para efeitos de cálculo de valores a serem restituídos, todos os pedidos de cancelamento com agendamento serão considerados como irregulares, portanto sendo considerada a data de solicitação de cancelamento como data final para término das cobranças pelos serviços”.
+Contesta, ainda, o posicionamento da área técnica de que o valor final da fatura considerado pela fiscalização “corresponderia a um valor médio, muito próximo do valor que supostamente deveria ser ressarcido”, e de que deveria ser reconhecida a fé pública. Argumenta que, com a adoção de referidas premissas, teria havido vício de motivação e violação aos princípios da legalidade e razoabilidade, razão pela qual requer seja reconhecida a nulidade do presente Pado.
+Ao contrário do que alega a Recorrente, verifica-se que no Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI (SEI nº 6372250) não houve arbitramento de valores a partir de premissas inválidas, mas houve a efetiva análise de valores a partir do valor final da fatura dos usuários, devidamente motivada e justificada de forma transparente nos autos, ante a dificuldade técnica de se fazer tal análise diretamente no sistema de cobrança da SKY:
+(...)
+Além disso, nota-se no Anexo 04 do Relatório de Fiscalização, que não foi considerado simplesmente o valor da última fatura para se estimar os valores a serem ressarcidos, mas foram devidamente apurados os valores proporcionais aplicáveis a cada usuário, considerando-se a data em que estes solicitaram o cancelamento, a data de vencimento da fatura e a data em que o cancelamento foi efetivado, chegando-se dessa forma, efetivamente, a valor próximo do que deveria ser ressarcido.
+Em todos esses casos, o usuário pediu a rescisão do seu contrato e o desligamento foi agendado para o final do ciclo de pagamento. Embora a Recorrente questione que todos os pedidos de cancelamento com agendamento solicitados no período foram considerados irregulares, imperioso mencionar que em nenhum caso ela fez provas de que o usuário concordou em manter o seu sinal ligado ao invés de ter ressarcido o valor pago de forma antecipada. 
+Ressalta-se, que o ressarcimento do valor em questão é objeto de apuração do PAC nº 53500.036690/2021-01, no âmbito do qual, configurando-se a infração ao art. 85 do RGC, a Prestadora terá a oportunidade de esclarecer os valores ainda devidos a cada usuário. Registra-se que o procedimento em questão encontra-se sobrestado, nos termos do Despacho Ordinatório SEI nº 10096660, de 26/04/2023, expedido pelo Gerente de Controle de Obrigações de Direitos dos Consumidores, no qual resolveu “suspender o andamento processual deste PAC nº 53500.036690/2021-01, até o trânsito em julgado do Pado nº 53500.026914/2021-69, que se encontra em fase recursal.”
+Ante o exposto, não se verifica a existência de qualquer nulidade durante a atividade fiscalizatória, ante a apuração dos valores estimados que teriam sido indevidamente cobrado dos usuários
+I.3. Nulidade do processo a partir da decisão que prematuramente declarou encerrada a instrução processual e determinou a intimação da SKY para apresentar alegações finais
+No presente tópico de sua peça recursal, a Prestadora alega em síntese que, por meio da Certidão SEI nº 7062794, de 25/06/2021, a Gerência de Controle de Obrigações de Direito dos Consumidores declarou, de forma prematura e equivocada o encerramento da instrução processual, o que seria causa de nulidade do presente Pado. Nesse sentido, afirma que protocolizou sua Defesa na mesma data, a partir das 14h42min e, antes que terminasse de anexar aos autos a documentação complementar à Defesa, em razão da limitação para upload no sistema (às 15h15min) referida certidão foi assinada às 15h08min.
+Desse modo, entende que a instrução foi encerrada antes que houvesse transcorrido tempo suficiente para que sua defesa fosse lida e analisada e se chegasse a conclusão de que a instrução do processo pudesse ser encerrada, ou se pudesse constatar a inexistência de dúvida processual ou a necessidade de diligências.
+Acrescenta que a fase de instrução somente poderia ser tida por encerrada após a emissão pelo órgão responsável pela instrução de documento do qual conste o relato do ocorrido no processo, a análise das alegações apresentadas pelo Administrado e provas produzidas. Refuta, ainda, o entendimento da PFE-Anatel no sentido de que o Informe seria um ato preparatório da decisão, por entender que, ao subtrair do Administrado a possibilidade de se manifestar, haveria violação ao devido processo legal, à ampla defesa e ao contraditório.
+Assim, requer que seja reconhecida a nulidade do presente Pado desde a Certidão SEI nº 7062794.
+Sobre este ponto, a área técnica da Anatel já se manifestou, com propriedade, de forma reiterada em diversos Pados. Trata-se de questionamento que não encontra amparo na legislação afeita a processo administrativo, qual seja, a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, Lei de Processo Administrativo (LPA) e o próprio Regimento Interno da Anatel. Isto porque a referida legislação não estabelece que se deva efetuar análise dos termos da defesa previamente à abertura de prazo para apresentação de Alegações Finais.
+Conforme também esclarecido nos presentes autos, por meio do Informe nº 362/2024/CODI/SCO (SEI nº12767918), neste caso concreto, não se verificou qualquer prejuízo ao contraditório ou ampla defesa com a assinatura da Certidão de encerramento da instrução poucos minutos após a apresentação da peça de defesa, bem como não se verificou a necessidade de diligência adicional, a qual poderia ser realizada a qualquer momento, independentemente da referida certidão, nos seguintes termos:
+3.50. Superado este tema inicial, cumpre observar que, em que pese a Certidão que informa o fim da instrução processual ter sido assinada minutos antes do protocolo do último documento anexado pela defesa, tal condição não gera nenhum tipo de prejuízo ou cerceamento, como indicado pela prestadora em seu recurso. Isto porque dita Certidão tem o condão de atestar a não existência de dúvidas processuais a serem sanadas ou diligências a serem feitas quando do encerramento da instrução processual, assim, existindo qualquer necessidade posterior de diligências, não consideradas no momento da elaboração da Certidão, seria oportunizada a autuada nova manifestação para apresentação de alegações finais.
+3.51. Ressalta-se que, no caso em análise, não foram necessárias diligências para averiguar o descumprimento de obrigações objeto deste Pado, nem antes e nem após a elaboração da Certidão que atestou o fim da instrução processual, o que justifica a ausência de dúvidas, ou seja, os documentos que compõem os autos podem ser compreendidos e o processo estava apto ao julgamento, sendo desnecessária qualquer motivação ou explicação adicional para justificar o encerramento da fase instrutória.
+3.52. Outrossim, discorda-se da argumentação apresentada sobre a necessidade de acesso a todas as documentações acostadas aos autos, incluindo o Informe que subsidia a decisão - antes de ser proferida - sob pena de gerar cerceamento ao direito de defesa e de subverter o sentido do devido processo legal.
+Em relação à alegada ausência de informe técnico entre a apresentação da Defesa e a notificação para Alegações Finais, entende-se não se tratar de documento obrigatório, posto que sua ausência não causou prejuízos à ampla defesa, já que, como dito acima, a Prestadora teve ampla oportunidade de manifestação nos autos e produção de provas, em estrita observância ao disposto nos artigos 82, inciso II, e 86, ambos do Regimento Interno da Anatel, os quais refletem dispositivos normativos previstos na Lei do Processo Administrativo.
+Sobre o assunto, a Procuradoria Federal Especializada da Anatel (PFE-Anatel) já se manifestou no Parecer nº 00266/2018/PFE-ANATEL/PGF/AGU (SEI nº 2593128), de 6 de outubro de 2018, emitido nos autos do Pado nº 53532.002095/2011-55, no qual apresenta os seguintes esclarecimentos:
+8. Preliminarmente, saliente-se que não caberia, conforme suscitado pela interessada em suas alegações finais, conferir-lhe a oportunidade de apresentar a referida manifestação de defesa depois da juntada aos autos dos informes a serem elaborados pela área técnica e antes da prolação da decisão administrativa de primeira instância.
+9. Com efeito, os informes caracterizam-se como documentos preparatórios, elaborados pela área técnica da Agência quando já encerrada a fase de instrução processual, que podem ser utilizados como fundamento para a edição do próprio ato administrativo decisório, nos termos do art. 50, § 1º, da Lei 9.784/1999. Ou seja, disponibilizar a referida peça técnica ao interessado para que se manifeste sobre ela, seria como antecipar ao ente regulado os fundamentos que poderão subsidiar, em conjunto com a manifestação de cunho opinativo desta Procuradoria, a própria decisão da autoridade administrativa competente, hipótese que subverteria toda a lógica processual.
+10. Ademais, o dever inafastável de a Agência oportunizar o exercício do direito de defesa pelo interessado não exige que a prestadora seja notificada entre o informe que subsidia a decisão administrativa e o despacho que, eventualmente lhe imporá determinada sanção. Como já afirmado, a decisão administrativa que sanciona o particular, nos termos do art. 50, §1º, da Lei 9.784/1999, escora- se na motivação constante do informe que a antecede.
+11. Não é por outra razão que o art. 3º, XII, do Decreto 7.724, de 16/05/2012, que regulamenta a Lei de Acesso à Informação (Lei 12.527, de 18/11/2011), define o parecer e a nota técnica (informe) como autênticos documentos preparatórios, ou seja, o "documento formal utilizado como fundamento da tomada de decisão ou de ato administrativo".
+12. O art. 20 desse Diploma dispõe, nesse sentido, que o acesso ao documento preparatório ou à informação nele contida, utilizados como fundamento de tomada de decisão ou de ato administrativo, "será assegurado a partir da edição do ato ou decisão" .
+13. Portanto, as garantias de ampla defesa e contraditório não se traduzem na possibilidade de a interessada, já apresentada defesa e encerrada a instrução processual, obter da Agência, no intuito de apresentar alegações finais, o conhecimento prévio do teor do informe cujos fundamentos poderão ser integralmente incorporados à decisão a ser proferida. (grifou-se)
+Dessa forma, conforme entendimento já consolidado deste Conselho Diretor, não configura vício processual a ausência de notificação para apresentação de Alegações Finais entre o Informe que subsidia a decisão administrativa e o Despacho Decisório. 
+II. Do Mérito
+II.1. Da legitimidade do pagamento antecipado
+A Recorrente argumenta que consta no Despacho Ordinatório de Instauração que a SKY realiza cobrança antecipada e, ainda, durante o período de transição para as normas do RGC, teria realizado cobrança antecipada por serviços sem adotar medidas para a cessação dessa prática, em violação ao artigo 61, § 1º, e ao artigo 106 do RGC.
+No entanto, declara que a partir da entrada em vigor do dispositivos adotou medidas concretas visando diversificar seu portfólio de planos de serviços, com ofertas pré-pagas, pós-pagas e híbridas, em que há combinação de elementos de pós e pré-pagamento e acrescenta que:
+Com relação às ofertas híbridas estas apenas contemplam a possibilidade e não imposição de pagamento antecipado pelo consumidor, tratando-se de mais uma escolha, colocada em seu benefício;
+O modelo híbrido estaria em sintonia com o o artigo 61, caput, do RGC, não configurando infração;
+A “oferta envolve uma relação contratual de trato sucessivo e a prestação continuada de serviços, com pagamentos periódicos mediante contrato, observados ciclos de faturamento. Isto, por certo, não configura prática de cobrança antecipada, vedada na forma do artigo 106 do RGC.”;
+Referidos dispositivos foram recentemente reconhecidos por este Conselho Diretor como desalinhados com a realidade fática e com as diretrizes econômicas em vigor, visto ter colocado em Consulta Pública minuta de regulamento destinado a substituir o RGC, que propõe a retirada das restrições atualmente existentes. Além de ter determinado “a suspensão imediata da eficácia do § 1º do art. 61 e do art. 106, ambos da Resolução nº 632/2014, até a decisão final do Conselho Diretor em relação ao novo RGC”;
+A observância aos referidos dispositivos é que se mostrava nociva ao mercado, prejudicando os usuários pela restrição de modalidades de negócios impostas às prestadoras.
+Questiona, ainda, os argumentos apresentados pela área técnica no Informe nº 302/2021/CODI/SCO (SEI nº 7422450), relativos à não aplicabilidade ao caso concreto da Lei nº 13.455/2017 e no sentido de que a suspensão dos artigos do RGC teve seus efeitos depois da fiscalização que deu origem a este processo.
+Argumenta, por fim, que no âmbito do Processo nº 53500.298919/2022-72, que procedeu ao monitoramento do quanto determinado no item "b" do Acórdão nº 186/2021 - referente a eventuais práticas espúrias, pela Prestadora, associadas à suspensão cautelar do § 1º do art. 61 e do art. 106, apurou-se que não houve prática espúria por parte da SKY e que volume de reclamações apresentou redução, o que também foi observado no documento “Panorama - Reclamações 2022 - Superintendência de Relações com Consumidores (SRC), requerendo que tais medidas sejam consideradas no estabelecimento do valor da multa.
+Quanto aos primeiros argumentos apresentados pela Recorrente, importante salientar que as previsões contidas nos artigos 61, § 1º e 106 do RGC que vedavam expressamente a cobrança antecipada pela Prestadora de qualquer item da estrutura tarifária ou de preço, estavam plenamente vigentes desde o ano de 2014, com a publicação pela Agência da Resolução nº 632:
+Art. 61. As formas de pagamento podem ser classificadas em pós-paga, pré-paga ou uma combinação de ambas.
+§ 1º A forma de pagamento pós-paga se refere à quitação de débitos decorrentes da prestação de serviços por um determinado intervalo de tempo, sendo vedada a cobrança antecipada pela Prestadora de qualquer item da estrutura tarifária ou de preço.
+(...)
+Art. 106. As Prestadoras cujos serviços são pagos antecipadamente à sua prestação devem adaptar a forma de cobrança até a entrada em vigor do presente Regulamento, quando então será vedada a cobrança antecipada pela Prestadora de qualquer item da estrutura tarifária ou de preço. (Destacou-se)
+No entanto, nas fiscalizações que resultaram na instauração do presente Pado, ambas realizadas mais de cinco anos após, no ano de 2020, não se observou o atendimento da regulamentação com a adaptação na forma de cobrança prevista no art. 106 do RGC, nem mesmo sua redução. Pelo contrário, observou-se no Relatório de Fiscalização nº 45/2020/GR05FI1/GR05/SFI que houve o aumento deste tipo de cobrança no período analisado, conforme abaixo reproduzido:
+Veja-se que a própria Recorrente admite em suas alegações que permanecia comercializando "oferta híbrida" que continha a opção de pagamento antecipado, em que pese a expressa vedação normativa a este tipo de cobrança então vigente, o que confirma o inequívoco descumprimento aos dispositivos em questão e afasta, de pronto, seus argumentos no sentido de que tal oferta estaria aderente à regulamentação.
+Ressalta-se que, nos termos da Análise nº 33/2021/CB (6717687), os artigos 61, § 1º e 106 do RGC foram cautelarmente suspensos, a partir de 17 de maio de 2021, com a publicação do Acórdão nº 186 (6885213), com fundamento, especificamente, na alteração do cenário competitivo que se observava à época, o que não torna legítimo o descumprimento observado no período em que a norma estava plenamente vigente.
+Quanto ao argumento relacionado à aplicação da Lei nº 13.455/2017, o tema também foi objeto de amplo debate nos autos do Processo nº 53500.005321/2021-69, no qual se decidiu quanto à mencionada suspensão dos artigos 61, § 1º e 106 do RGC, tendo-se concluído que referida Lei não teve os impactos alegados pela Recorrente, conforme excerto abaixo, extraído da Análise nº 33/2021/CB (SEI nº 6717687):
+4.17. Em relação à presente petição, a SKY inaugura outro questionamento ao argumentar que a Lei nº 13.455, de 26 de junho de 2017 – a denominada “Lei Meirelles”, teria colocado "fim a dúvidas quanto à legalidade de planos que possibilitem ao consumidor pré-pagar, isto é, pagar antecipadamente os serviços contratados", tendo em vista que em seu art. 1º, a Lei Meirelles fixa que "Fica autorizada a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado". Contudo, filio-me às linhas traçadas pela área técnica no que, nos termos do Informe 22 (SEI nº 6629772), elucida que os dispositivos do RGC e da Lei têm por objeto situações distintas, que não se sobrepõem, ipsis literis:
+3.23 Como observa a requerente, esta interpretação foi suscitada também no processo nº 53500.036241/2018-50, no qual o Ministério Público Federal do Rio de Janeiro (MPF/ RJ) questiona a Anatel sobre a licitude da oferta de serviços na forma "pós-paga" na qual a cobrança é realizada anteriormente à prestação do serviço, bem como sobre sua conformidade com o disposto no RGC.
+3.24 Naquele processo, a Sky apresentou um Parecer Jurídico para fundamentar suas alegações, e o MPF/ RJ pediu que a Anatel se manifestasse sobre a procedência ou não do entendimento da prestadora.
+3.25 A Superintendência de Relações com os Consumidores (SRC) então formulou consulta à PFE/ Anatel, que se posicionou contrariamente à interpretação dada pela Sky, nos seguintes termos (Parecer nº 00097/2021/PFE-ANATEL/PGF/AGU, de 3 de março de 2021, SEI nº 6619777):
+14. Não obstante os argumentos apresentados pela prestadora, tem-se que a Lei nº 13.455/2017 não tem o condão de afastar a interpretação dos arts. 61, §1º e 106 do RGC. A leitura atenta do dispositivo legal suscitado pela prestadora permite concluir que se permitiu a diferenciação de preços de bens e serviços em função do prazo ou do instrumento de pagamento utilizado. Esta possibilidade não se confunde com a autorização para a cobrança antecipada de valores oferecidos em planos na modalidade pós paga, ainda que mediante desconto.
+15. A autorização legal refere-se, na realidade, ao instrumento de pagamento (dinheiro ou cartão de crédito, por exemplo) e ao prazo de pagamento (valores diferenciados para pagamentos à vista ou à prazo). Em outras palavras, é possível que o valor a ser pago de forma parcelada seja superior ao montante cobrado no caso de pagamento à vista. Em nenhum momento a lei afastou a vedação de cobrança antecipada de itens da estrutura tarifária nos planos pós-pagos prevista na regulamentação específica.
+16. Na realidade, a norma regulamentar questionada pela prestadora não veda a diferenciação de preço em função do momento do pagamento ou do instrumento utilizado, mas, sim, a cobrança antecipada de itens da estrutura tarifária no caso da modalidade de pagamento pós paga. O que o RGC visa impedir é a vulneração do consumidor, que pode ter dificuldades na devolução de montantes pagos de forma antecipada, inclusive quando do estorno de valores já adimplidos antecipadamente em caso de cancelamento das assinaturas.
+17. Nesse ponto, convém destacar que o pagamento à vista não se confunde com o pagamento antecipado. A forma de pagamento à vista refere-se ao adimplemento do valor total do produto ou serviço em uma única parcela. Assim, a conduta da SKY não se configura pagamento à vista, mas, sim, cobrança antecipada, como pode se extrair do próprio Parecer Jurídico apresentado ao analisar as Ofertas da prestadora:
+(...)
+19. Na visão desta Procuradoria, a Lei nº 13.455/2017 não produziu o impacto hermenêutico alegado pela prestadora, não sendo possível concluir-se que a norma legal teria o condão de autorizar pagamentos antecipados em ofertas de planos de serviço pós pagos, expressamente vedada pela regulamentação da Agência. Aqui, aliás, importante destacar que a hipótese dos autos não trata de desconto por pontualidade, como abordado em um dos julgados citados no Parecer Jurídico apresentado pela prestadora, mas, sim, de cobrança antecipada de itens de estrutura tarifária, ou seja, antes mesmo da fruição dos serviços.
+20. Nesse cenário, tem-se que o advento da Lei nº 13.455/2017 não teve qualquer impacto nas previsões contidas nos arts. 61, §1º e 106 do RGC, as quais se mantêm hígidas, permanecendo vedada, portanto, a cobrança antecipada de qualquer item da estrutura tarifária ou de preço nas ofertas de planos na modalidade de pagamento pós paga. Tratam-se de aspectos diferentes: o dispositivo regulamentar veda a cobrança antecipada de itens da estrutura tarifária, não se referindo a eventual diferenciação de preços em razão do instrumento ou prazo de pagamento, autorizada pela norma legal. (grifos no original)
+3.26 A Lei nº 13.455/2017 autorizou a diferenciação de preços de bens e serviços dependendo do prazo para pagamento, isto é, pagamento à vista ou à prazo, e do instrumento de pagamento escolhido pelo consumidor, dinheiro ou cartão de débito ou crédito, por exemplo. O RGC, por sua vez, vedou a cobrança antecipada, isto é, antes da prestação do serviço, quando este for ofertado na forma de pagamento pós-paga. Conforme esclarecido pela PFE/ Anatel, a cobrança antecipada não se confunde com o pagamento à vista, o qual implica o pagamento em parcela única.
+3.27 Portanto, não deve prosperar o entendimento da Sky de que o § 1º do art. 61 e do art. 106 do RGC foram derrogados pela Lei nº 13.455/2017, considerando que os dispositivos do RGC e a Lei têm por objeto situações distintas, que não se sobrepõem. (Destaques no original)
+Sendo assim, não há que se falar em legitimidade na realização das cobranças realizadas de forma antecipada em planos pós-pagos, durante a vigência dos artigos 61, § 1º e 106 do RGC, restando devidamente caracterizada a infração por referidas infrações nos presentes autos, a qual atingiu os usuários que contrataram o serviço em referida modalidade de pagamento no período fiscalizado.
+Nos termos do Relatório de Fiscalização nº 45/2020/GR05FI1/GR05/SFI, em janeiro de 2020, havia um total de 1.766.260 usuários na modalidade pós-paga com pagamento antecipado:
+Destaca-se, ainda que o  Acórdão nº 186 (SEI nº 6885213) suspendeu referidos dispositivos, no entanto, estabeleceu condicionantes para que a suspensão fosse mantida, bem como determinou à Superintendência de Relações com Consumidores (SRC) que monitorasse "o surgimento de números significativos de interações de usuários que evidenciem prática espúria associada à suspensão":
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, nos termos da Análise nº 33/2021/CB (SEI nº 6717687), complementada pela Análise nº 45/2021/CB (SEI nº 6821946), integrantes deste acórdão:
+a) determinar cautelarmente a suspensão imediata da eficácia do § 1º do art. 61 e do art. 106, ambos da Resolução nº 632/2014, até a decisão final do Conselho Diretor em relação ao novo RGC, sob as seguintes condições:
+a.1) que eventual alteração em contratos vigentes tenha prévio consentimento do consumidor e seja explícita quanto às novas condições;
+a.2) que, no caso de rescisão do contrato na forma de pagamento pós-paga, a cobrança seja proporcional ao período usufruído até o momento da rescisão, mesmo no caso de cobrança antecipada;
+a.3) para os novos contratos, que a Prestadora comunique ao usuário, antecipadamente, quanto à regra que passará a ser adotada, com total transparência; e,
+a.4) que, em caso de identificação de números significativos de interações de usuários que evidenciem prática espúria por parte de Prestadora no período da suspensão cautelar, seja revogada a medida cautelar;
+b) determinar à Superintendência de Relações com Consumidores (SRC) que monitore, dentro do processo de Fiscalização Regulatória, o surgimento de números significativos de interações de usuários que evidenciem prática espúria associada à suspensão do § 1º do art. 61 e do art. 106, ambos da Resolução nº 632/2014, por parte de Prestadora no período da suspensão cautelar;
+c) não conhecer das petições da TELEFÔNICA BRASIL S.A. (SEI nº 6820437), da SKY SERVIÇOS DE BANDA LARGA LTDA. (SEI nº 6826925), da CONEXIS (SEI nº 6832315) e da CLARO S.A. (SEI nº 6853464).
+Com relação às alíneas "a", bem como seus subitens, e "b", a decisão foi por maioria de três votos, nos termos da Análise nº 33/2021/CB (SEI nº 6717687). Acompanham o Relator, o Presidente Leonardo Euler de Morais, nos termos do Voto nº 52/2021/PR (SEI nº 6863041), também integrante deste acórdão, e o Conselheiro Vicente Bandeira de Aquino Neto. Votaram vencidos os Conselheiros Moisés Queiroz Moreira, nos termos do Voto nº 5/2021/MM (SEI nº 6778668), e o Conselheiro Emmanoel Campelo de Souza Pereira, nos termos do Voto nº 9/2021/EC (SEI nº 6867585), ambos igualmente integrantes deste acórdão.
+Quanto à alínea "c", a decisão foi por unanimidade, nos termos da Análise Complementar nº 45/2021/CB (SEI nº 6821946).
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Carlos Manuel Baigorri, Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto.
+Conforme alegado pela Prestadora, de fato, os resultados da fiscalização realizada no Processo nº 53500.298919/2022-72, em atendimento à determinação contida no referido Acórdão, mostraram a redução do número de reclamações, no entanto, referida fiscalização também evidenciou que apesar do número reduzido, ainda haviam reclamações referentes à realização de cobranças após a data de rescisão:
+Informe nº 150/2022/RCTS/SRC, de 03/11/2022 (SEI nº 9173414)
+3.22. Em 2019, com a disponibilização do novo sistema de atendimento Anatel Consumidor, viu-se a oportunidade de se remodelar a AQR de forma a imprimir maior objetividade na análise e verificar a conformidade regulatória do tratamento das reclamações.
+3.23. Nesse sentido, o novo modelo foi construído de forma a conduzir as prestadoras na consignação das principais informações concernentes às providências adotadas para a resolução da reclamação do consumidor, com base nos princípios da transparência e da eficiência, e a possibilitar a identificação de falhas informacionais e, por conseguinte, oportunidades de melhorias, sob duas perspectivas:
+Disponibilização ao consumidor de informação completa e clara referente ao tratamento dado na resolução da demanda;
+Aderência ao arcabouço legal regulamentar.
+3.24. Especificamente acerca da análise na AQR para a SKY sobre a cautelar emitida pelo Acórdão nº 186 (SEI nº 6885213), o escopo desta análise baseou-se em 2 questões:
+Consumidor faz reclamação relacionada à cobrança antecipada; e
+Há indícios de que houve cobrança após a data da rescisão (cancelamento/portabilidade).
+3.25. Foi analisada uma amostra de 1.536 (um mil quinhentas e trinta e seis) reclamações contra a prestadora SKY no período com o seguinte resultado:
+3.26. Com base nos resultados acima, percebe-se que o percentual das reclamações que abordaram a cobrança antecipada ou a cobrança proporcional em caso de cancelamento é bem reduzido, confirmando os dados levantados de reclamações nos itens 3.8 e 3.13.
+Do exposto, não é possível atestar a partir das conclusões apresentadas na referida fiscalização que houve o atendimento das hipóteses previstas no art. 20 do RASA, tais como a cessação da conduta, reparação de usuários, ou adoção de medidas pela Prestadora até o término do prazo para apresentação de alegações finais neste Pado. Por essa razão, inexistem circunstâncias atenuantes aplicáveis ao presente caso.
+II.2. Da suposta violação do artigo 3º, inciso XV, do RGC
+Argumenta a Recorrente que a caracterização da infração ao art. 3º XV do RGC se baseou nas conclusões alcançadas no Relatório de Fiscalização n.º 69/2020 a partir da análise de tela por ela fornecida durante a ação fiscalizatória, contendo regramentos sobre o processo de cancelamento e devolução de valores adotado pela SKY, tendo os agentes de fiscalização registrado que “pelo menos em alguma situação, quando há valores em aberto, ‘a assinatura somente será cancelada quando constar o pagamento’” no entanto:
+Na mesma tela consta a informação de que “o cliente pode cancelar mesmo que a assinatura estiver inadimplente”;
+Dentre os cenários identificados a partir das gravações analisadas, não há nenhum caso em que o cancelamento foi impedido em razão de eventuais valores em aberto dos assinantes;
+Uma simples análise do Anexo 02 do Relatório de Fiscalização n.º 69/2020, contendo a relação de todos os pedidos de cancelamento considerados (i.e., relativos a janeiro de 2020, que é exatamente o período considerado pela fiscalização), aponta que dos 72.599 assinantes que integram o universo avaliado, 19.547 tiveram seu pedido de cancelamento devidamente processado mesmo sendo inadimplentes e possuindo saldo devedor junto à SKY;
+No Doc. 03 anexado à Defesa, que constitui a própria tabela elaborada pela ANATEL (SEI n.º 6374743, constante do Processo n.º 53528.000719/2020-10, tido como Anexo 2 do Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI), a SKY adicionou os valores que cada um dos clientes listados deixou em aberto, não pago, junto à SKY;
+A própria fiscalização detinha informações para poder realizar esta averiguação, no entanto, optou por não fazê-la; e
+A não aceitação das provas no Informe 302 tem o efeito prático de anular referido direito e, por consequência, obstrui o exercício da ampla defesa por meio de recurso e que deveria ser presumida sua boa fé.
+Desse modo, entende que não há que se falar em violação do artigo 3º, inciso XV, do RGC, pois estaria devidamente demonstrado que a SKY procede à rescisão dos contratos de prestação de serviço a qualquer tempo e sem ônus, em plena consonância com a regulamentação.
+Dispõe o art. 3º do RGC, aprovado pela Resolução nº 632/2014 que:
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+XV - à rescisão do contrato de prestação do serviço, a qualquer tempo e sem ônus, sem prejuízo das condições aplicáveis às contratações com prazo de permanência;
+Conforme se verifica no Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI (SEI nº 6372250), de fato, a infração foi caracterizada a partir da seguinte tela que apresentava o fluxo de cancelamento e devolução de valores:
+No Informe nº 302/2021/CODI/SCO, que consubstanciou a decisão ora recorrida, a área técnica avaliou de forma detida e pormenorizada todos os argumentos, bem como as provas adicionais trazidas pela prestadora em sede de defesa (DOC. 3) e reiteradas em sua peça recursal, a fim de comprovar que efetuava o cancelamento mesmo que o usuário estivesse inadimplente, tendo apresentado a seguinte conclusão:
+3.73. Com relação à afirmação da Sky de que efetuou análise do "Anexo 02" do Relatório de Fiscalização nº 69/2020, contendo a relação de todos os pedidos de cancelamento considerados (i.e., relativos a janeiro de 2020), concluindo que dos 72.599 assinantes que integram o universo avaliado, 19.547 tiveram seu pedido de cancelamento devidamente processado mesmo sendo inadimplentes e possuindo saldo devedor junto à Sky. E, ainda, que o referido saldo devedor totalizaria R$ 5.644.983,00, é preciso enfatizar que a análise feita pela prestadora foi produzida unilateralmente, um ano após os acontecimentos, não estando claro quais os critérios que a Sky adotou para entender se os valores eram devidos ou não, e se a origem da cobrança estava relacionada às tais cobranças híbridas ou vencimentos antecipados irregulares.
+(...)
+3.74. Ao invés de buscar criar uma tabela com os seus critérios de auto avaliação, deveria a prestadora buscar desconstituir a irregularidades apuradas.
+3.75. O "Anexo 02" do Relatório de Fiscalização (SEI 6374743) traz informações completas e suficientes para caracterizar as infrações de cobrança indevida, senão vejamos:
+(...)
+3.76. Os fiscais consideraram para os valores a serem ressarcidos critérios objetivos tais como datas de solicitação do cancelamento, data de efetivação, tipo de cancelamento do contrato, se foi agendado, ou de imediato, e se houve pagamento antecipado ou não.
+3.77. Quanto ao caso do assinante identificado sob o nº 108956518, a tela extraída do ICare contendo “Dados de Negociação”, em que consta a informação de que os valores ainda estão em processo de cobrança, apenas informa que houve o cancelamento voluntário concluído em 2019 e que há faturas do cliente em 2021 em negociação. Tais dados são insuficientes para afastar a hipótese de cobrança indevida ou de cancelamento sem a necessidade de pagamento antecipado, já que nem sequer há dados que comprovem tratar-se da mesma origem e justificativa de cobrança.
+Neste ponto, corroboro com a área técnica no sentido de que as informações trazidas pela Prestadora não seriam capazes de afastar a infração, notadamente em razão da ausência de documentação adicional capaz de comprovar os fatos registrados na mencionada planilha, conforme reiterado no Informe nº 362/2025/CODI/SCO:
+3.77. Importante observar que o Doc. 03 (7062535) anexado à defesa, em que a SKY argumenta conter a informação sobre a possibilidade de cancelamento do cliente ainda que inadimplente, trata-se da planilha agregada pela fiscalização, "Anexo_02__Cancelamento_Efetuados_jan 20" (6813640), na qual a prestadora acrescentou uma coluna contendo a informação dos valores de cada um dos clientes. Não há nos autos informação de onde foram retirados esses valores, telas do sistema que comprovem os dados ali contidos, cópia de faturas não pagas antes da solicitação e efetivação do cancelamento do serviço, sendo, em verdade, uma mera listagem de valores sem lastro documental ou comprovação fática.
+3.78. Quanto às telas do sistema apresentadas pela prestadora em sede de defesa, que supostamente comprovariam a possibilidade de cancelamento do serviço ainda que existissem faturas em aberto, vale ressaltar, como se verá nas telas copiadas abaixo, extraídas do Informe nº 302, que a tela referente à "Negociação" traz um valor de fatura com vencimento em maio e junho de 2021, sem nenhuma informação da origem da dívida. Não existe comprovação nas telas apresentadas de que o valor negociado se refere às faturas em aberto anteriores ao pedido de cancelamento do cliente, que foi em dezembro de 2019, não sendo capaz de justificar o alegado. (...)
+Por outro lado, vale notar que a infração foi caracterizada como de caráter sistêmico, com base exclusivamente no procedimento apresentado pela prestadora em suas regras de cancelamento, não tendo a fiscalização realizado verificações adicionais que comprovassem os indícios de irregularidade apresentados na tela acima reproduzida.
+Deve-se considerar, ainda, que conforme alegado pela Recorrente, referida tela também apresenta a afirmação de que “o cliente poderá cancelar mesmo que a assinatura estiver inadimplente. Porém o valor deverá ser quitado após a solicitação”, o que demonstra uma ambiguidade dentro do próprio procedimento previsto pela prestadora.
+Adicionalmente, verifiquei que há no Anexo 03 do Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI (SEI nº 6372250), relatos registrados pela fiscalização de cancelamento realizados, apesar da existência de pagamentos pendentes pelos usuários, a exemplo dos citados abaixo:
+ Código usuário
+ | 
+ Observações registradas pela fiscalização
+ | 
+ 117622340
+ | 
+ Consumidor com faturas em atraso realizou parcelamento e havia parcelas pendentes. Apesar disso foi realizado o cancelamento agendado 
+ | 
+ 97975933
+ | 
+ Consumidor havia feito parcelamento porém com parcelas em atraso. Fatura final com vencimento em 21/03 com saldo remanescente de R$ 202,57 (proporcional de 20/01 a 05/02 no valor de R$ 68,95 e o restante de valores em atraso). Atendente informou que não seriam geradas novas faturas.
+ | 
+ 1518969991
+ | 
+ Cliente solicita cancelamento no dia 14/01/2020. Na data do cancelamento é gerada uma fatura no valor proporcional de R$ 32,84, pois o cliente não havia pago a fatura do período anterior(relativa ao período de 28/12/2019 até 13/01/2020,).
+ | 
+Desse modo, entendo que não há nos autos materialidade suficiente para configuração de infração sistêmica, tampouco foram apurados casos pontuais de referida irregularidade. No universo de 72.599 pedidos de cancelamento analisados pela fiscalização, verificou-se apenas se o cancelamento se dava de forma imediata ou se o consumidor deveria aguardar o fim do período já pago, não versando sobre o condicionamento do cancelamento ao pagamento de débitos.
+Dessa forma, dou parcial provimento ao recurso, para descaracterizar a infração ao art. 3º, XV do RGC.
+II.3. Das supostas infrações aos artigos 14 e 15 do RGC
+A Recorrente foi sancionada pela realização de agendamentos de pedidos de rescisão, impedindo que o cancelamento fosse efetivado nos prazos regulamentares, em violação aos artigos 14 e 15 do RGC, todavia argumenta que:
+As constatações da equipe de fiscalização da ANATEL se basearam na amostra de 90 gravações de contatos telefônicos realizados por assinantes da SKY em janeiro de 2020 buscando o cancelamento do seu contrato de prestação de serviço, sendo demonstrado que “em apenas 3,5% dos casos analisados foi ofertada a possibilidade de cancelamento imediato, porém o cliente escolheu permanecer até o final do período pago”;
+As 90 ligações avaliadas pela Agência parecem indicar falhas humanas imputáveis aos atendentes do call center, e não retratos de um proceder internalizado pela Prestadora;
+A seleção de amostras em desacordo com a legislação de regência permite chegar a um universo de 90 ligações, realizadas no mesmo período (janeiro de 2020), no qual 100% dos cancelamentos ocorreram de maneira imediata, seja por solicitação direta do cliente, seja por meio das informações prestadas pelo atendente;
+O número de agendamentos representa a minoria dos cancelamentos, o que evidenciaria o não interesse dos consumidores neste tipo de alternativa;
+Lançando mão da base de 22.481 clientes da SKY que constam da lista contida no Anexo 04 do Relatório de Fiscalização n.º 69/2020, 18.835 deles (i.e., cerca de 84%) teriam usufruído do serviço até o fim do prazo contratado e pago – conforme Doc. 05 anexado à Defesa - inexistindo, inclusive, qualquer obrigação de ressarcimento por parte da SKY;
+Seria inegável que os assinantes tiveram acesso ao serviço até o final do período pelo qual pagaram, não há que se falar em ressarcimento, sob pena de, de um lado, criar situação indevida de enriquecimento sem causa dos consumidores, e, de outro, penalizar a SKY por ter agido de boa-fé e com a observância fiel das regras da contratação do serviço;
+Foram apenas 484 reclamações, com relação às quais, dentre os submotivos envolvidos para o registro dessas reclamações, nenhum deles se refere a eventual discordância com a fruição dos serviços até o final do período pago nos casos de cancelamento, sendo certo que estão todos relacionados a falhas humanas ou sistêmicas pontuais.
+Desse modo, requer que seja reconhecida a inexistência de infração aos artigos 14 e 15 do RGC.
+Os dispositivos em questão apresentam as seguintes previsões:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+Art. 15. Os pedidos de rescisão processados sem intervenção de atendente, na forma deste Regulamento, devem ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito.
+§ 1º É devido, pelo Consumidor, o pagamento referente aos serviços usufruídos durante o prazo de processamento do pedido de rescisão automático.
+§ 2º Deve ser garantida ao Consumidor a possibilidade de cancelar seu pedido de rescisão no prazo previsto no caput.
+No Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI, foram apresentadas as seguintes constatações:
+8.23. Verifica-se na Figura 3 no item Cobrança do Item "Valor em Aberto" que em pelo menos em alguma situação, quando há valores em aberto, "a assinatura somente será cancelada quando constar o pagamento". E que após o cliente realizar o pagamento este deve retornar o contato no telefone 10611.
+8.24. Também verifica-se a possibilidade de o cancelamento não ser imediato, ficando o sinal ativo até o final do período pago na última fatura.
+8.25. E por exclusão também verifica-se a possibilidade de o cancelamento ser efetuado de maneira imediata, pois, caso contrário não haveria necessidade de tratar o caso especifico de cancelamento não imediato;
+8.26. De posse do relatório de pedidos de cancelamento, foi realizada a contagem e a classificação, de acordo com as possibilidades relatadas até aqui: imediato ou não, considerando também a modalidade de pagamento.
+8.27. Assim, as solicitações de cancelamentos distribuíram-se da seguinte forma:
+8.28. Ainda como forma de verificar na prática como se dá o processo de cancelamento foram solicitadas amostras de gravações para avaliar se há ou não a oferta do cancelamento imediato ou do agendamento do cancelamento. Assim procedeu-se a escuta dessas gravações.
+8.29. As gravações analisadas encontram-se no anexo da Petição CT-REG-063-2020 - Gravações SEI 6372487.
+8.30. A análise das gravações permitiu constatar que ocorriam de maneira frequente 6 cenários:
+8.31. Ainda se consideramos somente os cancelamento efetuados de maneira agendada, verificamos a seguinte distribuição:
+8.32. Assim considerando apenas aqueles cancelamentos que ocorrem de forma agendada para o final do ciclo, constatou-se em apenas 3,5% dos casos analisados foi ofertada a possibilidade de cancelamento imediato, porém o cliente escolheu permanecer até o final do período pago. Ou seja, em 96,5% dos cancelamentos agendados analisados, não houve a concordância expressa do cliente para permanecer no plano até o final do período pago.
+8.33. Destaca-se ainda a presença do Tipo A2, onde o cliente expressa claramente o desejo de cancelar o contrato imediatamente, o que é veementemente recusado pelo atendente da prestadora em afronta ao disposto no RGC, demonstrando uma prática ativa de forçar o cliente a ficar até o final do período pago, consequentemente não realizando a devolução de pagamentos já realizados, em uma evidente tentativa de manter a receita já auferida.
+Conforme demonstrado pela fiscalização, a partir dos cenários acima demonstrados, ao agendar o cancelamento do serviço, a Prestadora não dava os "efeitos imediatos" ao pedido de rescisão, como previsto no art. 14 do RGC, bem como verificou-se a ocorrência de cancelamento automático realizado pela URA, programado para o final do ciclo da fatura (Tipo C1), contrariando também a disposição contida no art. 15 do RGC de que os pedidos de rescisão devem ser "processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito'. Isso posto, verifica-se devidamente materializada a infração aos artigos 14 e 15 do RGC nos presentes autos.
+Desse modo, em que pesem as alegações recursais da prestadora no sentido de que o agendamento representava a minoria dos cancelamentos e de que os usuários escolheram permanecer até o final do período já pago, estas não são suficientes para afastar o cometimento da infração. Ressalta-se que tais práticas eram expressamente vedadas pela regulamentação, que determinava que o pedido de rescisão tivesse efeito imediato, ou em dois dias úteis, se solicitado sem a intervenção do atendente. Além disso, os respectivos parágrafos dos artigos 14 e 15 do RGC vedavam a realização de cobranças posteriores, bem como previam a garantia de atendimento aos prazos de cancelamento estabelecidos na norma, o que claramente não era observado pela prestadora.
+ Quanto às alegações relativas ao eventual ressarcimento de valores, o tema será tratado no tópico referente à infração ao art. 85 do RGC.
+Verifica-se que no Informe nº 302/2021/CODI/SCO, que subsidiou a sanção aplicada, a área técnica considerou referidas infrações como sistêmicas e realizou o cálculo da sanção em conjunto com as infrações ao art. 3º XV do RGC:
+3.37. Com isso, restaram caracterizadas as infrações aos arts. 14 e 15 do RGC, de forma procedimental, uma vez que restou evidenciado que a prestadora não efetuava o cancelamento de imediato conforme pedidos voluntários, mas sim agendamentos de pedidos de rescisão. Tais condutas se assemelham à infração ao art. 3º, XV, do RGC, e por esta razão, serão consideradas em conjunto para fins de cálculo de multa. 
+Após a análise recursal, nos termos do Informe nº 362/2025, a área técnica propôs, acertadamente, a separação do cálculo das infrações aos artigos 14 e 15 do RGC, das infrações ao art. 3º XV, do RGC, e delimitou o número de usuários atingidos aos 23.974 casos em que se verificou o agendamento do pedido de cancelamento:
+3.94. Quanto à análise supracitada, ratifica-se a caracterização das infrações aos arts. 14 e 15 do RGC, contudo, retifica-se o entendimento de que se trataria de uma infração sistêmica a ser considerada em conjunto com a infração ao art. 3º, XV, do RGC.
+3.95. Como mencionado no Tópico VI.2.2.a deste Informe, a infração ao art. 3º, XV, do RGC, teve sua caracterização baseada na impossibilidade de cancelamento do serviço pelo usuário, tendo em vista a existência de valores não pagos, condição que se enquadra melhor na descrição do art. 13 do RGC, motivo pelo qual se sugeriu naquele Tópico a combinação do art. 3º, XV, com o art. 13.
+3.96. No que diz respeito ao agendamento do pedido de cancelamento do serviço, como já exposto anteriormente, dita conduta fere os arts. 14, caput; e 15, caput, do RGC, que impossibilitam essa modalidade quando se trata de pedido de rescisão.
+3.97. Vê-se que a conduta descrita no art. 3º, XV, c/c art. 13, do RGC, é distinta das que regulam os arts. 14 e 15 do mesmo Regulamento. A primeira trata da impossibilidade de cancelamento frente à existência de valores em aberto, já a segunda trata da forma com que se deve operacionalizar ditos pedidos, considerando o processamento e a cobrança dos valores.
+3.98. Assim, por serem condutas distintas, entende-se não ser possível apená-las conjuntamente.
+3.99. Superada a análise de que se trata de infração independente, outro ponto que merece reparo é a caracterização como sistêmica. Da leitura do Relatório de Fiscalização nº 69//2020/GR05FI1/GR05/SFI (6813640), vê-se que a caracterização da infração referente ao não cancelamento imediato se deu com a análise dos pedidos de cancelamento efetivados em janeiro de 2020, análise esta feita pela planilha "Anexo 02 - Cancelamento Efetuados jan/20" (6813640). Nesta planilha, foi possível identificar 23.974 (vinte e três mil, novecentos e setenta e quatro) casos de agendamento, ou seja, 23.974 pedidos de cancelamento que foram processados em desconformidade com o que preconiza a regulamentação, tendo em vista não ser possível o agendamento do pedido de rescisão/cancelamento do serviço.
+3.100. Em que pese a existência de pedidos de cancelamento agendados, o que fere a legislação vigente, verifica-se também a existência de pedidos de cancelamento processados de forma imediata. Tal realidade impede a caracterização da infração como sistêmica, devendo ser classificada como pontual. 
+3.10.1 Outro dado a se destacar é que a fiscalização, com o intuito de comprovar o modus operandi do call center quanto ao pedido de cancelamento, realizou a análise de 90 (noventa) gravações, constatando irregularidade em algumas delas. Com base nas informações fornecidas pelos fiscais, seria possível o enquadramento destas infrações como infração ao art. 14 ou 15 do RGC. Contudo, considerando que a planilha "Anexo 02 - Cancelamento Efetuados jan/20" (6813640), contendo os pedidos de cancelamento efetivados em janeiro de 2020, não especifica a forma com que foi feito o pedido, ou seja, se com ou sem a intervenção de um atendente, o que impossibilita um melhor enquadramento ao art. 14 ou 15 do RGC; e que dita planilha abarca um quantitativo muito maior de solicitações analisadas, serão consideradas como irregularidades apenas as identificadas na planilha "Anexo 02 - Cancelamento Efetuados jan/20" (6813640), entendendo-se que nelas estão incluídas as irregularidades encontradas nas gravações analisadas pelos fiscais.
+3.102. Ainda, tendo em vista a não identificação feita quanto à forma do pedido de cancelamento (se com ou sem intervenção de um atendente), as infrações aos arts. 14 e 15 do RGC, para o caso destes autos, serão sancionadas conjuntamente, sendo consideradas de natureza pontual, para 23.974 (vinte e três mil, novecentos e setenta e quatro) usuários.
+3.103. Quanto ao tempo da infração, a fiscalização analisou os pedidos de cancelamento processados em janeiro de 2020, contudo, referem-se a solicitações anteriores, em sua maioria, do ano de 2019. Tendo em vista este contexto, será utilizado o tempo de "até um ano" para o cálculo da sanção.
+3.104. Pelo exposto, cumpre ressaltar que a caracterização dos arts. 14 e 15 do RGC, de forma independente à infração ao art. 3º, XV, do RGC, como feito pelo Informe nº 302/2021/CODI/SCO (7422450), gera agravamento no valor da multa.
+Do exposto, restou claro nos autos que, apesar da conduta irregular de agendamento dos pedidos de rescisão para o final do período antecipadamente pago pelo usuário, foram também apurados casos de cancelamentos realizados de forma imediata, conforme previsto na regulamentação, o que afasta o caráter sistêmico da infração.
+Assim, corroboro com a proposta apresentada pela área técnica de que as infrações aos artigos 14 e 15 do RGC, possuem caráter pontual, devendo-se considerar os 23.974 (vinte e três mil novecentos e setenta e quatro) cancelamentos agendados efetivados em janeiro de 2020. Registro que mantenho aglutinadas as infrações aos artigos 14 e 15, uma vez que a fiscalização não separou o quantitativo de infrações com e sem intervenção de atendente, apenas mencionou que, entre os cenários analisados, havia o agendamento para o final do período pago nas duas modalidades de cancelamento.
+II.4. Da impossibilidade de caracterização de infração ao artigo 85 do RGC
+A Recorrente alega que é premissa para a devolução em dobro prevista no art. 85 do RGC, que tenha havido valor cobrado indevidamente, isto é, de maneira imprópria ou injustificada, o que não teria ocorrido no presente caso, visto que:
+Os valores cobrados dos assinantes decorreram de regular exercício de direito da SKY de cobrar pelos serviços ofertados, na forma contratada, de acordo com as regras de cobrança ostensivamente informadas aos assinantes previamente à contratação;
+Não há qualquer fundamento para que se exija que a devolução dos valores se dê em dobro, atualizado monetariamente e/ou com a aplicação de juros, na forma do caput do artigo 85 do RGC, eis que inexistente a premissa necessária de que existem valores cobrados indevidamente, em excesso;
+No momento do pagamento, o valor pago restringiu-se ao valor efetivamente devido, não tendo a Prestadora inserido na fatura do usuário nenhum valor indevido;
+A decisão do usuário de cancelar o plano durante período de fruição de serviço pago antecipadamente não tem o condão de transformar o pagamento que, na origem, foi realizado pelos valores devidos, em cobrança de valor indevido.
+No presente Pado não ocorreu a cobrança de valor indevido – estando ausente, portanto, pressuposto indispensável à incidência da regra que determina a restituição em dobro. O tempo coberto pelo valor pago antecipadamente enseja a restituição simples e proporcional ao período que o serviço não foi fruído, o que estaria alinhado com a determinação de suspensão cautelar da regra de vedação à cobrança antecipada, consubstanciada no Acórdão n.º 186/2021, em que restou consignado que no caso de rescisão do contrato na forma de pagamento pós-paga, a cobrança deve ser “proporcional ao período usufruído até o momento da rescisão, mesmo no caso de cobrança antecipada”;
+A própria Agência reconhece, no contexto da ação fiscalizatória em questão, que logrou êxito em verificar que a SKY procede à “devolução simples dos valores em quantidade proporcional ao período não utilizado” (cf. item 8.56 da Relatório de Fiscalização n.º 69/2020);
+Os poucos casos em que se observou eventual não efetivação da devolução de valores decorrem de fatores não imputáveis à SKY, dentre os quais, devolução do DOC pela instituição financeira; incompatibilidade entre o nome do assinante e o titular da conta bancária informada; não prestação dos dados bancários pelo assinante no momento do atendimento etc;
+É inadmissível que na eventualidade de se concluir pela existência de obrigação de ressarcimento por parte da SKY, considere-se que o valor devido corresponderia à somatória dos valores proporcionais ao período entre a data do pedido de cancelamento dos serviços e a data final do ciclo cobrado antecipadamente de 22.482 consumidores da SKY que solicitaram o cancelamento do contrato de prestação de serviço de janeiro de 2021, conforme apontado no Relatório de Fiscalização n.º 69/2020 integrante do Pado. Assim, entende que, deve-se analisar, caso a caso, qual o valor proporcional ao período em que o consumidor permaneceu ativo sem ter optado por isso - sendo inviável arbitrar valor de forma genérica e aplicá-lo para todos os casos em que houve cancelamento.
+O art. 85 do RGC apresenta a seguinte previsão:
+Art. 85. O Consumidor que efetuar pagamento de quantia cobrada indevidamente tem direito à devolução do valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die.
+No Informe nº 302/2021/CODI/SCO, que subsidiou a sanção aplicada, a área técnica configurou referida infração como de caráter sistêmico, considerando-se a realização de cancelamento com agendamento, bem como a cobrança antecipada do serviço:
+3.101. Quanto à irregularidade das práticas de cancelamento com agendamento com intervenção de atendente e da cobrança antecipada dos serviço no pós pago, restou evidente por toda a análise feita neste Informe a conduta da prestadora em caráter procedimental no período analisado pelos fiscais ou seja em janeiro de 2020, assim houve cobrança indevida e há necessidade de ressarcimento em dobro.
+No Informe nº 352/2024/CODI/SCO, que analisou as alegações recursais acima mencionadas, a área técnica diferenciou as situações observadas em relação à realização de cobrança antecipada e o cancelamento do serviço, em que pese tenha mantido o caráter sistêmico da infração, conforme abaixo:
+3.110. Inicialmente, cumpre ressaltar que este tema já foi alvo de exaustiva análise pelo Informe nº 302/2021/CODI/SCO (7422450), como também pelo Tópico VI.1.2 deste Informe.
+3.111. Ainda assim, vale observar que o simples fato de a cobrança ser antecipada já geraria uma cobrança indevida, já que esse tipo de cobrança não era permitido naquele momento, como ficou demonstrado com o sancionamento aos arts. 61, §1º, c/c 106, do RGC. Contudo, quando do usufruto total do serviço, a infração ao art. 85 do RGC, não estava sendo analisada pela fiscalização, uma vez que, ainda que houvesse uma cobrança indevida (pois antecipada), ela se tornou devida com o usufruto total do serviço.
+3.112. A questão muda quando existe um pedido de cancelamento. Conforme já exposto, a legislação também não permite o agendamento do cancelamento, assim, considera-se que no momento da solicitação o serviço deveria ser cancelado, não podendo existir cobrança de valor posterior a esta data. Nesse sentido, tendo em vista que o pagamento foi feito antecipada e indevidamente, todo o valor já pago e não usufruído deveria ser devolvido em dobro, acrescido de correção monetária e juros, nos termos do art. 85 do RGC.
+3.113. Pelo exposto, considerando as provas colhidas pela fiscalização e a própria argumentação apresentada pela prestadora quanto ao procedimento adotado para as devoluções de valores pagos antecipadamente, após pedido de cancelamento do usuário antes da fruição total do serviço, mantém-se caracterizada como sistêmica a infração ao art. 85, caput, do RGC.
+Considerando-se o acima exposto, entendo que, apesar da cobrança antecipada pelo serviço representar nítida infração aos artigos 61, § 1º e 106 do RGC, não se pode afirmar que tal cobrança seria indevida, uma vez que, posteriormente, o usuário viria a efetivamente usufruir do serviço.
+Por outro lado, quando se observa a situação do agendamento da solicitação de cancelamento, não se pode afirmar o mesmo. De fato, como alegado pela Prestadora, quando o usuário pagou de forma antecipada pelo serviço, apesar de haver contrariedade às disposições regulamentares relativas ao momento do pagamento, não haveria ilegalidade em referida cobrança, tendo em vista a fruição do serviço no mês subsequente. Assim, considera-se que, na situação específica ora observada, se houvesse o efetivo atendimento às previsões contidas nos artigos 14 e 15 do RGC, após a solicitação de cancelamento a prestadora deveria abater do valor já pago, o valor proporcional pelo período usufruído e restituir, de imediato, os valores remanescentes aos usuários.
+No entanto, a partir do momento que o usuário solicitou o cancelamento e a prestadora agendou referido cancelamento para data futura, os valores correspondentes ao período posterior ao prazo regulamentar em que se deveria dar efeito à rescisão (imediato ou dois dias úteis) passaram a ser considerados indevidos, não só pelo descumprimento do prazo, mas ante a vedação expressa contida no RGC de que haja qualquer cobrança após o pedido de rescisão, bem como pela retenção indevida de referidos valores pela prestadora. 
+Verifico que a Procuradoria Federal Especializada da Anatel - PFE, já se manifestou nesse sentido em caso similar observado nos autos do Pado nº 53500.071713/2021-16, por meio do Parecer nº 506/2024/PFE-ANATEL/PGF/AGU (12818494), conforme trecho abaixo reproduzido:
+72. Inicialmente ressalte-se que, diferentemente do alegado pela prestadora, o RGC veda expressamente que haja qualquer cobrança por serviços prestados após o pedido de rescisão, no caso de atendimento com intervenção de atendente, ou após o prazo de processamento, no caso de rescisão sem intervenção de atendente:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+Art. 15. Os pedidos de rescisão processados sem intervenção de atendente, na forma deste Regulamento, devem ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito.
+§ 1º É devido, pelo Consumidor, o pagamento referente aos serviços usufruídos durante o prazo de processamento do pedido de rescisão automático.
+73. Assim, o argumento da prestadora de que os usuários concordaram em manter a fruição do serviço até o fim do ciclo de faturamento, não justifica a manutenção da cobrança ou a ausência de restituição de valores que foram pagos antecipadamente. Ressalte-se que, ainda que não haja decisão definitiva da Agência quanto à irregularidade ou não da cobrança antecipada pelo serviço, no caso de solicitação de cancelamento, a prestadora deve necessariamente ressarcir os usuários que efetivaram tal pagamento, tenham eles usufruído ou não do serviço após o pedido de rescisão. (Destaques no original)
+Sendo assim, não resta dúvidas de que, ao não atender os prazos regulamentares de cancelamento do serviço previstos nos artigos 14 e 15 do RGC e não efetuar o imediata restituição dos valores remanescentes já pagos antecipadamente pelos usuários, os valores retidos pela Prestadora passam a ser considerados indevidos, momento a partir do qual os usuários passam a fazer jus "à devolução do valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die", conforme previsto no art. 85 do RGC.
+Ressalto ainda que, nessa situação específica, evidenciou-se a configuração dos dois requisitos previstos no dispositivo em questão para configuração de seu descumprimento, sendo certo que os valores retidos pela prestadora eram indevidos, bem como já haviam sido pagos pelos usuários.
+Do exposto, mantenho caracterizada a infração ao art. 85 do RGC, todavia, concedo parcial provimento ao recurso para afastar seu caráter sistêmico, devendo-se considerar a infração como de caráter pontual, tendo em vista a constatação registrada no Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI, de que foram encontradas 22.481 solicitações de cancelamento que se efetivaram em janeiro de 2020, em planos pós-pagos, com modalidade de pagamento antecipada e com agendamento de desligamento do sinal para o final do ciclo.
+II.5. Da infração ao art. 64, parágrafo único do RGC
+A Prestadora não apresentou em sua peça recursal qualquer argumento específico quanto à infração em tela. Verifica-se, que a infração foi configurada no Informe nº 302/2021/CODI/SCO (7422450) em razão da seguinte constatação efetuada pela fiscalização:
+Nota-se, entretanto, que o dispositivo regulamentar em questão trata especificamente de valores não decorrentes do serviço de telecomunicações:
+Art. 64. A cobrança de qualquer valor devido que não decorra da prestação de serviços de telecomunicações depende de prévia e expressa autorização do Consumidor.
+Parágrafo único. Cabe à Prestadora responsável pela emissão do documento de cobrança ou pelo abatimento dos créditos o ônus da prova da autorização emitida pelo Consumidor.
+Ante a conduta apresentada pela Prestadora, nesta situação específica, entendo que a infração se adequa melhor a previsão contida no art. 3º, XIII do RGC, uma vez que os usuários foram compelidos à permanecerem até o final do período já pago pelo serviço.
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+XIII - a não ser obrigado ou induzido a adquirir serviços, bens ou equipamentos que não sejam de seu interesse, bem como a não ser compelido a se submeter a qualquer condição, salvo diante de questão de ordem técnica, para recebimento do serviço, nos termos da regulamentação; 
+Desse modo, proponho a alteração, de ofício, do enquadramento regulamentar da infração ao art. 64, parágrafo único do RGC, para o art. 3º XIII do RGC, mantendo-se todos os parâmetros já considerados pela área técnica para o recálculo a presente infração.
+Neste ponto, vale lembrar que a prestadora se defende dos fatos e não da capitulação jurídica da infração, de forma que a alteração do enquadramento regulamentar em momento posterior não representa qualquer prejuízo ao direito de defesa neste caso, visto que os fatos estavam devidamente descritos nos autos. Nesse sentido, o Acórdão nº 39/2021 (SEI nº 6535703):
+Acórdão nº 39, de 10 de fevereiro de 2021
+Processo nº 53504.007983/2013-23
+Recorrente/Interessado: RADIO CHARQUEADENSE FM LTDA
+CNPJ nº 03.731.324/0001-98
+Conselheiro Relator: Moisés Queiroz Moreira
+Fórum Deliberativo: Reunião nº 895, de 4 de fevereiro de 2021
+EMENTA
+PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES. RECURSO ADMINISTRATIVO. SUPERINTENDÊNCIA DE CONTROLE DE OBRIGAÇÕES. SERVIÇO DE RADIODIFUSÃO SONORA EM FREQUÊNCIA MODULADA. PARÂMETROS TÉCNICOS. NECESSIDADE DE AUTORIZAÇÃO PARA MUDANÇAS. INFRAÇÕES RECLASSIFICADAS. AUSÊNCIA DE PREJUÍZO. AGRAVAMENTO DA SANÇÃO. POSSIBILIDADE. RECURSO CONHECIDO E NÃO PROVIDO. REFORMA DE OFÍCIO.
+1. As executantes de serviços de radiodifusão devem operar em conformidade com os parâmetros técnicos que lhe foram outorgados pelo Ministério das Comunicações e pela Anatel. Qualquer alteração pretendida somente pode vir a ser implementada após a respectiva autorização. Eventual mora do poder público não permite a mudança à revelia.
+2. As outorgas de serviços de radiodifusão são conferidas para municípios e canais específicos. Eventual instalação e operação de forma diversa configura uso não autorizado de radiofrequência e deve ser sancionada como ofensa ao art. 163 da Lei Geral de Telecomunicações - LGT. Aplicação da metodologia de cálculo de multa aprovada pela Portaria nº 788, de 26 de agosto de 2014.
+3. A Infratora defende-se dos fatos e das condutas descritas na instauração; portanto a recapitulação em momento posterior dos autos não causa prejuízo.
+4. Recurso conhecido e não provido. Reforma de ofício.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 7/2021/MM (SEI nº 6409793), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento; e,
+b) reformar, de ofício, a decisão recorrida para alterar o enquadramento legal da infração para o art. 163 da LGT e, por consequência, agravar a sanção de multa de R$ 14.280,00 (quatorze mil, duzentos e oitenta reais) para R$ 23.920,75 (vinte e três mil, novecentos e vinte reais e setenta e cinco centavos).
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Carlos Manuel Baigorri, Emmanoel Campelo de Souza Pereira e Moisés Queiroz Moreira.
+Ausente o Conselheiro Vicente Bandeira de Aquino Neto, em licença prevista no art. 26, § 1º, do Decreto nº 2.338/1997. (destacou-se)
+DA SANÇÃO
+Os demais argumentos da Recorrente se referem ao cálculo da sanção de multa, desse modo serão abordados no decorrer do presente tópico.
+As infrações constatadas no presente Pado foram apenadas com multa, calculada com fulcro na metodologia de infrações a direitos dos usuários, aprovada pela Portaria nº 791, de 2014, que tem a seguinte fórmula de cálculo:
+VBase = (Ua / Ut)0,5 x (FatorDT) x (1/FG) x Vref
+Onde:
+a) VBase: Valor-base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;
+b) Ua: Quantidade de Usuários que foram afetados pela infração;
+c) Ut: Total de Usuários da base da Prestadora;
+d) FatorDT: Fator de proporcionalidade da Infração obtida da seguinte forma:
+FatorDT = (D + T)/6
+Onde "D" (Dano) refere-se ao Dano da infração e "T" (Tempo) refere-se à duração da infração.
+A classificação do parâmetro D observará as seguintes condutas:
+Relativamente ao Dano, as circunstâncias mais leves somente serão consideradas caso a conduta não se enquadre também em uma mais gravosa. Caso a situação fática não se amolde a nenhuma das condutas elencadas na tabela acima, a área responsável a enquadrará com base nos princípios legais e diretrizes regulatórias. Por fim, caso sejam evidenciadas situações de calamidade pública, segurança nacional, ou que haja expressivo impedimento ou dificuldade à fruição do Serviço de Utilidade Pública ou a Serviço Público de Emergência, o Dano poderá alcançar o valor igual a 10(dez).
+Ressalte-se que a existência de valores diferenciados para um determinado tipo de Dano tem o objetivo de possibilitar ao aplicador da sanção a valoração, no caso concreto, da conduta decorrente da infração, considerando que, dentro dos tipos listados na tabela, é possível diferenciar a reprovabilidade da infração de acordo com a intensidade do dano provocado.
+Para classificação do T, deve ser verificada a duração da infração conforme o quadro abaixo:
+ Tempo
+ | 
+ 1
+ | 
+ Até 1 dia
+ | 
+ 1,5
+ | 
+ De 1 dia a 30 dias
+ | 
+ 2
+ | 
+ Entre 30 dias e 6 meses
+ | 
+ 2,5
+ | 
+ Entre 6 meses e 1 ano
+ | 
+ 3
+ | 
+ Mais de um ano
+ | 
+e) FG: Fator de Gravidade. Fator referente à Gradação da Infração, assumindo os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave).
+f) Vref: Valor correspondente a um percentual k = 1% da Receita Operacional Líquida – ROL da prestadora, da época da aplicação da sanção. Não sendo esse levantamento possível, deve-se utilizar a receita operacional anual mais próxima à aplicação da sanção. O valor da ROL deve ser obtido pela relação da ROL anual dividida por 12."
+Os parâmetros adotados foram os que seguem (SEI nº 10200807):
+ Infração
+ | 
+ Ua
+ | 
+ Ut
+ | 
+ Tempo
+ | 
+ Dano
+ | 
+ FG
+ | 
+ Agrav.
+ | 
+ Aten.
+ | 
+ Arts. 3º, XV; 14 e 15
+ | 
+ Sistêmica
+ | 
+ Sistêmica
+ | 
+ 1
+ | 
+ 5
+ | 
+ 1
+ | 
+ 16%
+ | 
+ 0%
+ | 
+ Art. 61, § 1º c/c 106
+ | 
+ Sistêmica
+ | 
+ Sistêmica
+ | 
+ 1
+ | 
+ 5
+ | 
+ 1
+ | 
+ 16%
+ | 
+ 0%
+ | 
+ Art. 64, parágrafo único
+ | 
+ 4.636.333
+ | 
+ 5
+ | 
+ 1
+ | 
+ 4
+ | 
+ 2
+ | 
+ 6%
+ | 
+ 0%
+ | 
+ Art. 85
+ | 
+ Sistêmica
+ | 
+ Sistêmica
+ | 
+ 1
+ | 
+ 4
+ | 
+ 1
+ | 
+ 16%
+ | 
+ 0%
+ | 
+Em sua peça recursal a Prestadora apresentou os seguintes argumentos, os quais passo a analisar:
+Da alegação de impossibilidade de classificar qualquer das infrações como sistêmica
+A Recorrente alega que as infrações artigos 3º, XV, 14, caput, 61, § 1º, 85, caput e 106, caput, do RGC, não poderiam ser classificadas como sistêmicas, posto que atingiriam toda a base de clientes, inclusive assinantes pré-pagos que representam 35% de sua base e não possuem relação com as infrações identificadas, além de parcela de assinantes pós-pagos, conforme documentação que teria apresentado em sua peça de defesa. Reitera, ainda as alegações preliminares e de mérito já analisadas acima e requer que, caso seja mantida a aplicação de multa, referidas infrações sejam classificadas como pontuais e tenham seu valor recalculado.
+Verifica-se que a alegação em tela já foi analisada anteriormente na presente análise, tendo-se afastado o caráter sistêmico das infrações aos artigos 14 e 15; 61, § 1º c/c 106 e 85 do RGC para considerar os usuários efetivamente atingidos pelas condutas irregulares, concedendo-se, portanto, parcial provimento ao recurso
+Equívoco nos fatores Ua e Ut
+A Recorrente reitera as alegações preliminares no sentido de que houve nulidade na atividade fiscalizatória e requer: a exclusão dos clientes pré-pagos da base de cálculo das multas; que se considere como Ut o número de assinantes de planos pós-pagos híbridos; e como Ua o pequeno percentual daquele universo que teria sido afetado pelas infrações supostamente praticadas. 
+Conforme já mencionado no tópico anterior, serão considerados como Usuários atingidos Ua, os usuários efetivamente prejudicados pelas infrações, conforme dados apurados em janeiro de 2020 no Relatório de Fiscalização nº aos artigos 14 e 15 do RGC, 61, § 1º c/c art. 106 e art. 85 do RGC.
+ Infração
+ | 
+ Usuários atingidos
+ | 
+ Arts. 14 e 15
+ | 
+ 23974
+ | 
+ Art. 61, § 1º c/c 106
+ | 
+ 1.766.260
+ | 
+ Art. 85
+ | 
+ 22.481
+ | 
+No fator Ut, será mantido o valor de 4.636.333 (quatro milhões, seiscentos e trinta e seis mil trezentos e trinta e três), correspondente ao total de acessos da Sky em janeiro de 2020, mês do período fiscalizado, conforme proposto no Informe nº 302/2021/CODI/SCO e previsto na metodologia de cálculo. 
+Impossibilidade de classificar qualquer das infrações como grave e descabimento da aplicação de agravante prevista no art. 19, III do RASA
+A Recorrente alega que não se verifica no presente caso nenhuma das hipóteses que autorizaria a classificação da infração como de natureza grave, na forma do artigo 9º, §3º do RASA, que não haveria como afirmar que atingiram número significativo de usuários, tampouco teria havido vantagem direta em decorrência das infrações, pois em relação ao pagamento de forma antecipada não lhe traria vantagem direta, pois concederia desconto ao usuário, e em relação aos cancelamentos teria comprovado que quando o período pago não é fruído procede a restituição dos valores, a qual somente teria deixado de ocorrer em situações pontuais decorrentes de fatores não imputáveis à SKY. Desse modo requer que as infrações sejam caracterizadas como de natureza média ou leve e seja afastada a agravante prevista no art. 19, III, do RASA.
+Quanto à alegação em tela, considero que deve ser mantido o fator de gravidade "grave" para as infrações aos artigos 14 e 15 do RGC, 61, § 1º c/c art. 106 e art. 85 do RGC, posto que atingiram número significativo de usuários, devendo-se, ainda manter a agravante de 10% prevista no art. 19, III, do RASA, para as infrações aos artigos 14, 15 e 85 do RGC, uma vez que a prestadora auferiu vantagem direta em decorrência das infrações.
+Afasto, no entanto, referida agravante no que se refere à infração ao art. 61, § 1º c/c art. 106 do RGC, visto que conforme concluído no tópico II.4 da presente Análise, não se pode afirmar que a prestadora tenha auferido vantagem direta com referida infração, concedendo-se, neste ponto, parcial provimento ao recurso administrativo.
+Violação aos princípios da razoabilidade e proporcionalidade
+A Recorrente argumenta, em síntese, que a aplicação da sanção de multa de aproximadamente dezenove milhões de reais é medida que ignora os princípios da razoabilidade e da proporcionalidade e que não se coaduna com a regulação responsiva, posto que não lhe foi facultada oportunidade de correção por meio de planos de ação, razão pela qual requer que seja afastada a metodologia prevista na Portaria nº 791/2014, com a adoção de critérios que atendam aos princípios da razoabilidade e proporcionalidade.
+No presente caso, não vislumbro a ocorrência de qualquer violação aos princípios da proporcionalidade e razoabilidade, uma vez que o cálculo da sanção ora proposto está aderente às disposições contidas na metodologia de cálculo da sanção, aos critérios previstos no RASA, e no artigo 176 da LGT, referentes à natureza e gravidade das infrações, danos resultantes ao serviço, vantagem auferida, circunstâncias agravantes e atenuantes, além da capacidade econômica da empresa infratora.
+Da possibilidade de agravamento parcial da sanção de multa.
+Registra-se que, em razão dos ajustes efetuados no Informe nº362/2024/CODI/SCO, que analisou as alegações recursais da Prestadora, apesar de ter havido uma redução no valor global da multa, verificou-se o agravamento parcial das sanções propostas para as infrações aos artigos 64, parágrafo único do RGC, em razão da alteração do fator de gravidade para "grave", e para todas as infrações, em razão de alteração no fator tempo (T).
+Por meio do Ofício nº 318/2024/CODI/SCO-ANATEL, a Recorrente foi notificada sobre a possibilidade de agravamento da sanção, conforme estabelece o parágrafo único do artigo 64 da Lei nº 9.784, de 1999, e do §4º do art. 125 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 2013.
+Em sua manifestação SEI nº 13184833, a Recorrente reiterou integralmente as razões de defesa e recursais já apresentadas nos autos, tendo inovado tão somente quanto à alegação de que o fator tempo das infrações aos artigos 64, parágrafo único e 85 do RGC deveriam ser revistos, bem como solicitou a utilização no cálculo da sanção da ROL correspondente ao ano de 2024.
+Tais argumentos foram analisados pela área técnica, em seu Informe nº 25/2025/CODI/SCO (SEI nº 13186645), sendo acatadas tão somente as alegações relativas ao fator tempo da infração ao art. 64, parágrafo único do RGC, conforme abaixo, com as quais corroboro:
+3.20. No que tange ao fator tempo (T) da infração ao art. 64 do RGC, verificando o documento "Anexo 03-Análise das Gravações", constante do Processo nº 53528.000719/2020-10, em que consta a análise dos cinco usuários atingidos por esta irregularidade, constatou-se que, de fato, o período entre a solicitação de cancelamento e sua efetivação foi de "até 1 mês".
+3.21. Assim, assiste razão à prestadora neste ponto, devendo ser alterado o fator (T) da infração ao art. 64 do RGC, de "até 1 ano" para "até 30 dias", ressaltando-se que esta alteração não implica em agravamento à situação da recorrente.
+Em seguida, foi exarado o Parecer nº 129/2025/PFE-ANATEL/PGF/AGU (SEI nº 13675920), de 09/05/2025, no qual foram apresentadas as seguintes conclusões:
+28. Diante do exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal PGF, vinculada à Advocacia-Geral da União - AGU, opina:
+a) pela possibilidade de agravamento da sanção de multa pela autoridade competente, tendo em vista que foram observados os requisitos do art. 64, parágrafo único, da Lei 9.784/1999 e do art. 125, parágrafos 1º, 3º e 4º, do Regimento Interno;
+b) não se vislumbram óbices jurídicos ao entendimento exarado no Informe n. 25/2025/CODI/SCO (13186645), com exceção dos pontos relativos à ROL e à recomendação de realização de nova pesquisa quanto à existência de antecedentes da prestadora, considerando todos os serviços de telecomunicações outorgados a ela;
+c) havendo acolhimento das sugestões feitas por esta Procuradoria neste opinativo, caso ocorra agravamento da situação da recorrente, esta deverá ser novamente notificada para apresentar alegações. Nessa hipótese, e caso inexistam novas controvérsias jurídicas ou novos fundamentos para o agravamento da situação da recorrente diversos daqueles que já foram apreciados neste Parecer, não haverá necessidade de retorno dos autos a esta Procuradoria após eventual nova manifestação da autuada e consequente análise da área técnica, já que, nesta situação, os fins buscados pela Portaria nº 642/2013 terão sido plenamente observados
+Do acima exposto, destaca-se que a PFE-Anatel opinou pela possibilidade de agravamento da sanção administrativa por este Conselho Diretor, visto que foram observados todos os requisitos legais.
+Quanto às recomendações relativas à utilização da ROL e demais informações da pessoa jurídica como um todo, este Conselho Diretor já possui diversos precedentes nos quais apresenta o entendimento de que a ROL e os usuários totais considerados no cálculo da sanção devem corresponder à área onde foi constatada a infração, como medida de razoabilidade e proporcionalidade. Nesse sentido é o disposto no Acórdão nº 553/2019 (SEI nº 4739362), abaixo reproduzido:
+"Acórdão nº 553, de 10 de outubro de 2019
+Processo nº 53500.008936/2011-75
+Recorrente/Interessado: OI S.A.
+CNPJ nº 76.535.764/0001-43
+Conselheiro Relator: Emmanoel Campelo de Souza Pereira
+Fórum Deliberativo: Reunião nº 877, de 3 de outubro de 2019
+EMENTA
+RECURSO ADMINISTRATIVO. PRESENÇA DOS REQUISITOS DE ADMISSIBILIDADE. DESCUMPRIMENTO DO ART. 70, II, "A", DA RESOLUÇÃO Nº 426/05 E DO ART. 1º DO ATO Nº 66.028/2007. POSSIBILIDADE DE REFORMATIO IN PEJUS. PARECER PFE/ANATEL. NECESSIDADE DE RECÁLCULO DA MULTA. REFORMA DE OFÍCIO DA ROL A SER UTILIZADA NO CÁLCULO DE MULTA. PONDERAÇÕES SOBRE O CAMPO "UT" (USUÁRIOS TOTAIS) NA METODOLOGIA DE CÁLCULO. DILIGÊNCIAS. RECURSO CONHECIDO E NÃO PROVIDO.
+1. Trata-se de análise de Recurso Administrativo interposto pela OI S.A., na condição de sucessora da BRASIL TELECOM S.A., CNPJ nº 76.535.764/0001-43, concessionária do Serviço Telefônico Fixo Comutado, contra o Despacho Decisório nº 404/2017/SEI/CODI/SCO, de 18 de dezembro de 2017 (SEI nº 2212054), que aplicou à Prestadora a sanção de multa no valor de R$ 552.100,59 (quinhentos e cinquenta e dois mil, cem reais e cinquenta e nove centavos), em razão de descumprimentos ao art. 70, II, "a", da Resolução nº 426/05 e ao art. 1º do Ato nº 66.028/2007.
+2. Reformatio in pejus. Necessidade de adequação da ROL utilizada para o cálculo da multa, em face do posicionamento do Conselho Diretor, no sentido de que deve ser utilizada a ROL mais recente ao ano de aplicação da sanção.
+3. Considerando os princípios da proporcionalidade e da razoabilidade, considera-se adequado que as multas sejam calculadas com base na ROL e nos usuários totais (UT) referentes a cada Setor, Região, ou nacionalmente, de acordo com a abrangência da fiscalização e das infrações apuradas em cada processo. Assim, pondera-se que não cabe no caso destes autos o recálculo da sanção de multa adotando como referência a ROL total do serviço e todos os usuários da Prestadora para o STFC no campo "UT", conforme indicado no item "d" do Parecer nº 00425/2019/PFE-ANATEL/PGF/AGU.
+4. Preenchimento dos requisitos de admissibilidade. Conhecimento.
+5. Inexistência de razões que resultem na alteração da decisão recorrida, a partir da argumentação recursal. Recurso não provido.
+6. Reforma, de ofício, do valor da multa. Correção da ROL a ser utilizada no cálculo da multa. Reformatio in pejus.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 215/2019/SEI/EC (SEI nº 4590556), integrante deste acórdão:
+a) conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento; e,
+b) reformar, de ofício, o Despacho Decisório nº 404/2017/SEI/CODI/SCO, de 18 de dezembro de 2017 (SEI nº 2212054), no sentido de rever o valor da multa aplicada de R$ 552.100,59 (quinhentos e cinquenta e dois mil, cem reais e cinquenta e nove centavos) para R$ 569.079,71 (quinhentos e sessenta e nove mil, setenta e nove reais e setenta e um centavos), tendo em vista a necessidade da correção da ROL da Prestadora referente ao ano de 2016 e relativa ao Setor 18 do PGO.
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Anibal Diniz, Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto." (destacou-se)
+Desse modo, mantém-se a utilização da ROL relativa ao ano de 2020, por ser a mais recente disponível à época da sanção, datada de 28/02/2023 (9765346).
+Quanto aos antecedentes, conforme registrado no Informe nº 362, não foram identificados antecedentes ou reincidências específicas no período considerado:
+3.165. No que tange aos antecedentes, de acordo com consulta efetuada nos sistemas de controle de Pados da Anatel – Spado e SEI Litigioso –, e utilizando como marco final 31/01/2020, data de término da análise das irregularidades apuradas nestes autos, retifica-se o informado no item 3.11 do Informe nº 29/2023/CODI/SCO (9757327), para desconsiderar os 6% (seis por cento) de antecedentes, tendo em vista que em nova consulta não foram identificados, no período analisado, registros em desfavor da SKY Serviços de Banda Larga Ltda., CNPJ nº 00.497.373/0001-10, na prestação do SeAC.
+3.166. Não há outras circunstâncias agravantes, nem atenuantes, a serem consideradas.
+No que se refere ao fator dano (D), mantenho o valor "4", proposto para todas as infrações, nos termos do Informe nº 362/2024/CODI/SCO:
+3.168. A variável dano (D) foi preenchida automaticamente, no menor valor escalonado para cada conduta, mesmo nas infrações aglutinadas, acompanhando o atual entendimento contido no item 1 do Acórdão nº 366/2023 (11287307): "1. A metodologia aprovada pela Portaria nº 791, de 2014, aplicada no presente caso, não autoriza o agravamento automático do fator dano em razão do agrupamento de dispositivos para fins de cálculo da multa. (...)".
+De todo o exposto, foi recalculada sanção de multa, conforme planilha anexada à presente Análise.
+No que se refere à infração ao art. 85 do RGC, cumpre ressaltar que foram apurados nos autos os valores de vantagem auferida com a infração. Tratam-se de valores apurados no Relatório de Fiscalização, conforme Anexo 04 - Relação de Valores a Restituir (SEI nº 6374743), cuja cópia foi anexada ao PAC instaurado para apuração dos valores a ressarcir. Nele, a Recorrente não impugnou os valores, tampouco, até a presente data, apresentou comprovantes de ressarcimento de usuários identificados.
+Dessa forma, considero plenamente válidos os valores apurados de forma estimada pela fiscalização, os quais devem ser considerados no cálculo da sanção, conforme previsão contida no art. 18, § 2º do RASA:
+Art. 18. No cálculo do valor base da multa devem ser considerados os seguintes aspectos:
+(...)
+§ 2º O valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável.
+No Informe nº 362/2024/CODI/SCO foi apresentada a seguinte análise quanto ao valor de vantagem auferida:
+3.176. Considerando a análise contida neste Informe, cumpre atualizar o cálculo da vantagem direta. Assim, em observância ao art. 18, §2º, do Rasa, segundo o qual o valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável, depreende-se, do trecho do Relatório de Fiscalização nº 69/2020/GR05FI1/GR05/SFI (6372250), item 8.60 abaixo transcrito, que a cobrança indevida decorrente da prática da irregularidade corresponde a R$2.175.688,18 (dois milhões, cento e setenta e cinco mil, seiscentos e oitenta e oito reais e dezoito centavos):
+8.60. Dessa forma, analisando-se 22.481 solicitações de cancelamento que se efetivaram em janeiro de 2020, com modalidade de pagamento antecipada em planos pós-pagos, com agendamento de desligamento do sinal para o final do ciclo, chegou-se a quantia de R$ 2.175.688,18 (dois milhões cento e setenta e cinco mil reais, seiscentos e oitenta e oito reais e dezoito centavos) a título de valores a serem ressarcidos pela prestadora.
+3.177. Tendo em vista o exposto, a fim de verificar se o valor base da multa no cálculo do Anexo I atende ao disposto no art. 18, §2º, do Rasa, realizou-se o cálculo da sanção com base no entendimento do custo de oportunidade da retenção dos valores devidos, corrigidos pela taxa Selic, consoante precedentes das Análises nº 200/2017/SEI/IF (1823042) e nº 13/2018/SEI/EC (2310525). Registra-se que o espelho da correção pela taxa Selic, efetuada na Calculadora do Cidadão do Banco Central do Brasil, consta do Anexo II (12887775) deste Informe, tendo sido utilizada como inicial no cálculo de correção 01/01/2020 (data de início do cometimento das infrações, consoante transcrição do subitem 8.60 acima, considerando-se que foram analisadas as cobranças efetivadas em de janeiro de 2020), e, como final, a data do Despacho Decisório nº 30/2023/CODI/SCO (9765346). No citado cálculo, foram obtidos os seguintes valores:
+3.178. Observa-se, assim, que o valor base da multa pelo descumprimento ao art. 85 do RGC, calculada conforme a metodologia aprovada pela Portaria nº 791/2014, atende ao art. 18, §2º, do Rasa, devendo ser adotado, para este caso, o cálculo de sanção presente no Anexo I deste Informe.
+Na medida em que propus a alteração da infração para pontual, a sanção de multa obtida para referida infração por meio da metodologia aprovada pela Portaria 791, de 2014, foi inferior ao dobro da vantagem auferida estimada, razão pela qual procedo ao recálculo da sanção considerando-se referido o dobro da vantagem nesse caso, conforme abaixo:
+ Valor base (dobro da vantagem auferida)
+ | 
+ Agravantes 10%
+ | 
+ Valor Total
+ | 
+ 1.001.309,74
+ | 
+ 100.130.97
+ | 
+ 1.101.440,71
+ | 
+Considerando-se o valor acima bem como os valores recalculados pelas demais infrações, obtém-se os valores abaixo demonstrados para as infrações caracterizadas nos presentes autos:
+ Infração
+ | 
+ Ut
+ | 
+ Ua
+ | 
+ D
+ | 
+ T
+ | 
+ FG
+ | 
+ Agravantes
+ | 
+ Atenuantes
+ | 
+ Valor total calculado R$
+ | 
+ Arts. 14 e15
+ | 
+ 4.636.333
+ | 
+ 23.974
+ | 
+ 4
+ | 
+ 2,5
+ | 
+ Grave
+ | 
+ 10%
+ | 
+ 0
+ | 
+ 494.134,68
+ | 
+ Art. 61, § 1º c/c art. 106
+ | 
+ 4.636.333
+ | 
+ 1.766.260
+ | 
+ 4
+ | 
+ 2,5
+ | 
+ Grave
+ | 
+ 0
+ | 
+ 0
+ | 
+ 3.855.757,52
+ | 
+ Art. 3º, XIII
+ | 
+ 4.636.333
+ | 
+ 5
+ | 
+ 4
+ | 
+ 1,5
+ | 
+ Grave
+ | 
+ 0
+ | 
+ 0
+ | 
+ 5.489,30
+ | 
+ Art. 85
+ | 
+ 4.636.333
+ | 
+ 22.481
+ | 
+ 4
+ | 
+ 3
+ | 
+ Grave
+ | 
+ 10%
+ | 
+ 0
+ | 
+ 1.101.440,71
+ | 
+ | 
+ TOTAL R$
+ | 
+ 5.486.822,21
+ | 
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho:
+o conhecimento do Recurso Administrativo para, no mérito, dar-lhe parcial provimento para :
+a.1) descaracterizar a infração ao art. 3º, XV do RGC;
+a.2) afastar o caráter sistêmico das infrações aos artigos 14 e 15; 61, § 1º c/c 106 e 85, todos do RGC; e
+a.3) afastar a agravante prevista no art. 19, III do RASA, no que se refere à infração ao art. 61, § 1º c/c art. 106 do RGC.
+a reforma de ofício da decisão recorrida para:
+b.1) alterar o enquadramento regulamentar da infração ao art. 64, parágrafo único do RGC, para o art. 3º, XIII do RGC;
+b.2) alterar de "1" para "2,5" o fator tempo (T) das infrações aos artigos 14 e 15; e 61, § 1º c/c art. 106 do RGC. Para "1,5" o valor referente ao art. 3º, XIII; e para "3", em relação ao art. 85 do RGC;
+b.3) alterar de "5" para "4" o valor considerado no fator Dano (D) no cálculo das sanções referentes aos artigos 14 e 15 e 61, § 1º c/c art. 106 do RGC; 
+b.4) alterar o fator de gravidade (FG) da infração ao art. 3º XIII, do RGC de média, para grave; e
+b.5.) excluir os percentuais de agravantes em razão de antecedentes.
+alterar o valor da sanção de multa de R$ 18.955.003,30 (dezoito milhões, novecentos e cinquenta e cinco mil três reais e trinta centavos), para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil oitocentos e vinte e dois reais e vinte e um centavos), conforme planilha anexada à presente Análise.
+DA OBRIGAÇÃO DE FAZER
+Da análise de conveniência e oportunidade quanto à aplicação da sanção de Obrigação de Fazer 
+A aplicação da sanção de obrigação de fazer está prevista no RASA, nos seguintes termos: 
+Art. 15. As sanções de obrigação de fazer e de não fazer poderão ser aplicadas nas infrações classificadas como leves, médias e graves, cumulativamente ou não com a sanção de multa, quando a autoridade competente, valendo-se da oportunidade e conveniência, verificar que a imposição de prática ou abstenção de conduta à sancionada será mais razoável e adequada para o atingimento do interesse público, devendo a escolha ser devidamente motivada, observados os princípios da legalidade, razoabilidade, proporcionalidade e economicidade. 
+Como se vê, o balizador dessa decisão é o interesse público, tal como exposto no seguinte trecho extraído do Parecer nº 882/2019/PFEANATEL/PGF/AGU, de 12 de dezembro de 2019 (SEI nº 5028661), elaborado pela PFE-Anatel: 
+Parecer nº 882/2019/PFEANATEL/PGF/AGU (SEI nº 5028661) 
+"20. Como se observa, é o interesse público que irá ensejar a aplicação da sanção de obrigação de fazer. Caso a autoridade administrativa competente, no seu juízo discricionário, entenda conveniente, oportuno e mais adequado ao atendimento do interesse público a fixação de sanção de obrigação de fazer, ao invés de obrigação de pagar (multa), ou concomitantemente com esta, não haverá óbice para implementação desta medida, desde que apresente a devida fundamentação. 
+(...)
+25. De início, é muito importante registrar que a opção/escolha pela obrigação de fazer, ao invés da obrigação de pagar (multa), recai exclusivamente no âmbito de discricionariedade da autoridade administrativa, não caracterizando, assim, qualquer espécie de direito, opção ou escolha por parte do administrado. 
+26. Assim, é irrelevante para a aplicação da obrigação de fazer a existência de eventual pedido formulado por uma entidade que responde a um processo punitivo, pois não se trata de acolher ou rejeitar a pretensão da autuada, mas, sim, de definir a espécie de sanção à luz do interesse público, conforme acima demonstrado. 
+27. Acrescente-se que esta circunstância decorre diretamente da compreensão de que a sanção de obrigação de fazer não é melhor ou pior do que a sanção de obrigação de pagar (multa). As duas espécies de sanção possuem - e devem possuir - a mesma envergadura, sendo certo que ambas, observadas as suas respectivas naturezas e características, devem ser aptas a atingir as funções clássicas da pena relativas à repressão e prevenção quanto ao cometimento de infrações."
+Do projeto de conectividade de universidades (federais, estaduais e municipais) e institutos federais 
+Da diligência 
+Em 3 de outubro de 2025, pelo Ofício nº 9/2025/OP-ANATEL, nos autos do Processo nº 53500.081616/2025-65, demandei às Superintendências de Regulamentação (SPR), Competição (SCP) e Controle de Obrigações (SCO), o levantamento e mapeamento de carências e lacunas de serviços de telecomunicações, bem como das respectivas infraestruturas de transporte e de acesso, das instituições públicas de ensino superior, pesquisa e extensão (portanto, universidades federais, estaduais e municipais e institutos federais).
+A partir de tal levantamento, solicitei o encaminhamento de proposta de valores de referência para a adoção de obrigações de fazer e outros projetos de implementação de políticas públicas para o atendimento dos tipos de lacunas encontradas.
+Em resposta à diligência por mim formulada, nos termos do Informe Técnico nº 187/2025/PRUV/SPR (SEI nº 14883767), de 31 de dezembro de 2025, as áreas técnicas apresentaram o resultado obtido com a Tomada de Subsídios nº 9/2025 (SEI nº 14513242), realizada para a coleta de informações, posteriormente refinadas em conjunto com a Rede Nacional de Ensino e Pesquisa – RNP.
+Importante mencionar que a conexão dessas instituições à internet se dá normalmente por intermédio da RNP, associação de direito privado, sem fins lucrativos, qualificada como organização social (OS) nos termos da Lei nº 9.637, de 15 de maio de 1998, já que a RNP oferece às instituições acesso a plataformas e aplicações específicas, que podem ser consultados por meio do link https://www.rnp.br/servicos/servicos-do-sistema-rnp/. Por esse motivo, a área técnica, acompanhada por este gabinete, tem dialogado com a RNP sobre o levantamento em tela.
+Também é importante mencionar os entendimentos com os ministérios das Comunicações e da Educação ao longo deste processo, notadamente por meio de diálogos bilaterais, reuniões e a formalização, junto ao MCOM, por meio do Ofício nº20/2025/OP-Anatel (SEI nº 14559937).
+A Tomada de Subsídios realizada pela Área Técnica recebeu 1310 (mil trezentas e dez) contribuições de 85 (oitenta e cinco) universidades federais, estaduais e municiais e de institutos federais, conforme detalhado no referido Informe.
+A RNP, por sua vez, enviou à Anatel, em 22 de dezembro de 2025, uma listagem (SEI nº 14963393) com a análise do status de conexão de cada unidade mencionada na tomada de subsídios, informando o seguinte panorama (SEI nº 14963339):
+ 226 unidades estaduais ou municipais não conectadas, atualmente com status em discussão;
+ 110 unidades federais não conectadas;
+ 40 unidades já conectadas;
+ 4 unidades com previsão de conexão.
+Quanto às 226 (duzentas e vinte e seis) unidades estaduais e municipais citadas, ressaltou que a conexão não pode ser tratada de forma automática. Assim, no momento da resposta, haveria 110 (cento e dez) unidades de universidades federais aptas a serem conectadas e, portanto, objeto de políticas públicas.
+Ato contínuo, as áreas técnicas da Anatel e da RNP, acompanhadas por este gabinete, estão mantendo diálogo com as instituições responsáveis pelas 226 (duzentas e vinte e seis) unidades estaduais e municipais mencionadas, no sentido de esclarecer eventuais pendências. Feito isso, a lista de unidades aptas a serem contempladas com as obrigações de fazer aqui tratadas será atualizada, com a inclusão de novas unidades.
+Diante disso, a Área Técnica da Anatel não vislumbrou óbices regulatórios à substituição da sanção pecuniária pela de obrigação de conectividade às universidades públicas e institutos federais sem conexão, considerando que um dos objetivos estratégicos da Agência é o de "Promover a conectividade universal e significativa com qualidade e segurança".
+Feita essa introdução, avaliou a aderência da sanção de obrigação de fazer, consistente na conectividade em instituições públicas de ensino superior, às condições estabelecidas no art. 16 do RASA vigente, conforme detalharei adiante.
+Do alinhamento da obrigação de fazer aos requisitos estabelecidos no RASA 
+Os parâmetros a serem observados pela sanção de obrigação de fazer estão previstos no art. 16 do RASA, com redação dada pela Resolução nº 784, de 7 de novembro de 2025:
+"Art. 16. As sanções de obrigação de fazer e de não fazer devem observar os seguintes parâmetros:
+I - não podem se restringir ao mero cumprimento das obrigações já impostas ao infrator pelo arcabouço regulatório e pelos contratos ou termos celebrados;
+II - promover o atendimento de políticas públicas do setor de telecomunicações, em especial aquelas que visem a conectividade; (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+III - ser compatíveis com os objetivos estratégicos da Agência, constantes seu Plano Estratégico; e, (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+IV - preferencialmente, privilegiar projetos que atendam às necessidades estruturantes previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), no Plano Estrutural de Redes de Telecomunicações (PERT). (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 1º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 2º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 3º As sanções de obrigação de fazer e não fazer não se confundem com a determinação para reparação dos usuários prejudicados, nem com as medidas cautelares.
+§ 4º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)"
+O Corpo Técnico da Agência avaliou a aderência do projeto à norma no item 3.22 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), conforme transcrevo:
+3.22.1. O inciso I do mencionado dispositivo impede que as obrigações já estejam previstas no arcabouço regulatório e nos contratos e termos celebrados. De fato, não há instrumento dessa natureza que obrigue as prestadoras a proverem conectividade às instituições de ensino superior, pesquisa e extensão. Tampouco existe, no PGMU V ou em outras sanções de obrigação de fazer, compromissos de implementação de rede de transporte para essas instituições. Assim, verifica-se que a obrigação ora cotejada não viola o primeiro condicionante do art. 16.
+3.22.2. O art. 16, II, estabelece que a obrigação de fazer visa promover o atendimento de políticas públicas, com destaque para projetos que fomentem a conectividade. Nesse sentido, o provimento de conectividade às instituições de ensino superior, pesquisa e extensão alinha-se a tal propósito, materializando a instrução de implementar e complementar as políticas setoriais constante do Decreto nº 9.612, de 17/12/2018, em especial de seu art. 2º, IV, "a", art. 3º e art. 4º, I, III, IV e V, uma vez que tais infraestruturas incentivam e fomentam a pesquisa brasileira.
+3.22.3. No art. 16, III, tem-se o comando de que as obrigações de fazer devem ser compatíveis com os objetivos estratégicos da Anatel (conforme Plano Estratégico). Como o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão fornece acesso a serviços de alta capacidade para instituições estratégicas, a presente obrigação de fazer materializa o objetivo estratégico de resultado nº 1 e nº 3 do Plano Estratégico da Anatel 2023-2027, quais sejam "Promover a conectividade universal e significativa com qualidade e segurança" e "Fomentar a transformação digital e a inovação tecnológica junto à sociedade". Mais especificamente, o instrumento teria o condão de atender aos objetivos estratégicos dos processos 1A "Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos", 1B "Viabilizar a expansão e a implantação da infraestrutura da rede de base", 1D "Proteger as infraestruturas críticas da conectividade" e 3B "Fomentar aplicações e modelos de negócio inovadores".
+3.22.4. O art. 16, IV, dispõe que, preferencialmente, a obrigação de fazer deverá atender as necessidades previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental - PCS e no Plano Estrutural de Redes de Telecomunicações - PERT. Nessa seara, o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão está de acordo com os projetos do PERT ATUAL de "Projetos de conectividade para locais de relevante interesse público", mais especificamente o projeto 1 "Conectividade Educacional". De qualquer forma, a presente Tomada de Subsídio poderá resultar na inclusão no PERT de um projeto específico nesse sentido.
+Assim, não há dúvidas quanto à aderência da obrigação submetida a este Colegiado ao art. 16 do RASA.
+Do alinhamento da obrigação de fazer com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU) 
+Como bem consignou a Área Técnica nos itens 3.30 a 3.33 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), na Reunião nº 929, de 08/02/2024, nos termos do Acórdão nº 65, de 28/02/2024 (SEI nº 11578112) e com fulcro na Análise nº 4/2024/AF (SEI nº 11360149), este Conselho Diretor decidiu aprovar a alteração da Agenda Regulatória para o biênio 2023-2024, na forma da Resolução Interna nº 290, de 28/02/2024 (SEI nº 11578151), modificando, dentre outros aspectos, o item 10 da Agenda Regulatória 2023-2024. Dentre a alteração promovida, determinou-se que a conversão de multas pecuniárias em obrigações de fazer devem estar voltadas ao cumprimento de metas ESG, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), o que, igualmente, restou demonstrado no referido Informe.
+Do modelo de custos da obrigação de fazer 
+Para a delimitação da presente obrigação de fazer, foram solicitados subsídios à RNP, os quais foram encaminhados por meio dos e-mails (SEI nº 14963487 e nº 14890826).
+Entre os documentos encaminhados, consta o arquivo "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), anexo ao Contrato Master (SEI nº 14963517), com as especificações técnicas da conectividade que precisa ser fornecida por uma prestadora de serviços de telecomunicações para as instituições usuárias do sistema RNP. 
+Apresentou, ainda, (a) a relação das instituições de ensino superior que ainda não são atendidas pela RNP; (b) a relação completa dos Pontos de Presença (PoPs) da RNP; (c) um estudo detalhado dos custos médios do megabit (Mb/s) por região e média nacional, apurados a partir de contratos vigentes firmados pela própria RNP.
+Para se delimitar os custos da obrigação, foram estabelecidos três pilares principais:
+I - Circuito de Transporte: Contratação de capacidade de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto);
+II - Rede Móvel: Cobertura do campus das instituições de ensino;
+III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto).
+Com isso, o presente projeto de ODF consiste, precipuamente, na instalação e na manutenção de enlace ponto a ponto de conectividade entre os campi de instituições de ensino superior federal, estadual ou municipal e a rede da RNP (item I – Circuito de Transporte). Para as instituições situadas em regiões carentes de infraestrutura básica de conectividade, prevê-se, ainda, a possibilidade de instalação e de manutenção de backhaul de fibra óptica que permita o fechamento do circuito de transporte item III – Backhaul de fibra óptica).
+No que se refere à Rede Móvel (item II), o presente projeto visa subsidiar a Anatel com informações sobre áreas de sombra dos campi das instituições beneficiadas, para que, em momento futuro, se avalie a pertinência de implementação de rede móvel local. Logo, esta presente análise não versará sobre o item II, sem prejuízo de seu tratamento posteriormente.
+Assim, observado que (i) instituições de ensino localizadas em área urbana, em regra, prescindem da instalação de infraestrutura de backhaul; enquanto (ii) instituições de ensino em zona rural são mais propensas a depender desse tipo de instalação prévia, a Prestadora deverá apresentar, quanto a estas últimas, declaração formal de que inexiste, nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio. 
+Adicionalmente, deve ser observado que o somatório dos custos totais da execução dos projetos deve ser igual ou superior ao valor da sanção de multa aplicada neste caso concreto, com as correções monetárias e dedução, nos termos do Rasa.
+Conforme salientado no Informe da Área Técnica (SEI nº 14883767), quanto ao Item I - Circuito de Transporte, a precificação apresentada em relação aos custos envolvidos para o circuito de transporte ponto a ponto (entre a instituição de ensino e o PoP da RNP), disponibilizados na Planilha Valores ODF Conectividade IPES (SEI nº 14890893), considerou que a solução técnica deve estar orientada "à contratação de serviço de transporte de dados com capacidade de 1 Gbps”.
+Esta solução deve estar aderente às cláusulas contratuais de conectividade da RNP, conforme melhor detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767) e no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+Além disso, a ODF deve prever que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP nos modelos de contrato.
+A estratégia de dimensionamento da rede fundamenta-se na entrega padrão inicial de 1 Gbps por instituição, conforme diretriz técnica reportada pela RNP em reunião, o que assegura o atendimento imediato às demandas institucionais. Segundo o modelo operacional da RNP, a expansão dessa capacidade ocorre de forma otimizada mediante upgrades sob demanda, condicionados à prévia constatação técnica de saturação do circuito original.
+Os valores para contratação do circuito também derivam dos contratos vigentes da RNP, conforme apresentado no Anexo I (SEI nº 14890826) do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), cujos custos médios anuais por megabit (Mb/s), avaliados nacionalmente e segmentados por região (Centro-Oeste, Nordeste, Norte, Sudeste, Sul), servem de base para o presente planejamento.
+É importante destacar que a Anatel adotou, de forma integral, exatamente os mesmos valores de referência e requisitos técnicos de conectividade praticados pela RNP em seus certames. Tal adoção fundamenta-se na premissa de convergência metodológica desta ODF com a operação da rede da RNP. Justifica-se que os modelos de contratação da RNP representam o estado da arte em termos de definições técnicas e aderência às especificidades geográficas e operacionais do território brasileiro, servindo como o espelho ideal para a política pública de conectividade das instituições de ensino.
+Dessa forma, a utilização dos valores de referência da RNP assegura a eficiência econômica, pois os contratos da RNP incorporam ganhos de escala e condições de mercado diferenciadas, validados por uma ampla base de contratos capilarizada em todas as regiões do país. Portanto, a solução técnica alinhada aos referenciais praticados pela RNP garante a compatibilidade com o mercado de telecomunicações e o cumprimento dos princípios de eficiência na aplicação dos recursos públicos.
+Adicionalmente, considerou-se um custo para a implantação do serviço de conectividade (taxa de instalação), também estimado com base no histórico de contratos da RNP desde 2010, que observa que as taxas de instalação cobradas pelas operadoras de telecomunicações representam, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Com base nesse prazo e nos custos apurados, foi desenvolvida a planilha de cálculo anexa ao Informe 187/2025/PRUV/SPR (Anexo II - Valores de referência ODF para Conectividade em instituições públicas de ensino superior - SEI nº 14890893). Esta planilha sistematiza o cálculo dos custos totais do projeto e requer a seguinte customização para obter o cálculo final:
+ Acessar a aba "1B ENT TOTAL INSTITUIÇÕES";
+ Informar a quantidade exata de instituições a serem contempladas pela política pública de conectividade, por região;
+ O resultado final pode ser verificado na aba "CAPA".
+Já em relação ao "Item III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto)", "aplicam-se os custos de implantação de rede de transporte com tecnologia Dense Wavelength Division Multiplexing (DWDM), já previstos no instrumento da OdF, visando o atendimento a instituições de ensino localizadas em regiões remotas. A escolha por backhaul em fibra óptica com tecnologia DWDM, em detrimento de alternativas com limitações de desempenho, como micro-ondas e satélites, é fundamental pois garante a alta disponibilidade, a baixa latência e a elevada capacidade da rede, elementos cruciais para o cumprimento do SLA do circuito nos padrões RNP. A precificação considerou premissas relativas tanto à implantação completa da rede DWDM (abrangendo todos os equipamentos da solução DWDM, a rede externa de fibra óptica e a infraestrutura civil das estações) quanto à operação e manutenção dos ativos por um horizonte temporal de 3 (três) anos. Os valores e detalhamentos associados a estes custos estão dispostos no Informe nº 8/2023/CPAE/SCP (SEI nº 9663283), em seu anexo Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261)".
+Ainda quanto aos custos, destacou-se questão relevante acerca do período de manutenção da infraestrutura (Opex), contido no modelo de custo apresentado pela CPAE. A esse respeito, este Conselho Diretor tem entendido que a operadora sancionada não deve somente proceder à instalação da infraestrutura, mas mantê-la operacional e atendendo aos consumidores por um período mínimo de 3 (três) anos, de forma que a inclusão de custos operacionais para o cálculo de estimativa de obrigações de fazer já é questão pacificada no âmbito deste Colegiado.
+Assim, o presente projeto de ODF consiste na instalação e na manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), de modo que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519). A depender da infraestrutura de conectividade disponível para a instituição contemplada, o projeto prevê a instalação de backhaul de fibra óptica, com especial enfoque para instituições de ensino localizadas em regiões remotas.
+Dessa forma, além da comprovação de instalação e manutenção das infraestruturas, a Prestadora também deverá comprovar ter atendido aos parâmetros definidos no referido modelo de contrato (SEI nº 14963517 e 14963519).
+Por fim, quanto à seleção das instituições de ensino superior, pesquisa e extensão, a Prestadora deverá utilizar a versão atualizada da lista disponibilizada no documento SEI nº 14963393, a qual, conforme anteriormente explicitado, ainda sofrerá alteração, vez que estão em debate com a RNP a inclusão de novas unidades.
+Das considerações adicionais a serem observadas na aplicação da sanção de obrigação de fazer 
+Como bem colocado pela Área Técnica (itens 3.56 a 3.60 do Informe nº 187/2025/PRUV/SPR - SEI nº 14883767), o monitoramento da implementação de compromissos estabelecidos pela Anatel em troca de valores a serem arrecadados pelo Estado já suscitou preocupações expressas por órgãos de controle, por essa razão, as decisões de sanção de obrigação de fazer devem prever regras para o seu acompanhamento e verificação de seu cumprimento, de modo que o procedimento seja realizado com maior segurança jurídica para as partes envolvidas.
+Dos contornos da obrigação de fazer 
+Os itens 3.61 a 3.76 do Informe da Área Técnica (SEI nº 14883767) detalham a obrigação, seu acompanhamento, requisitos a serem observados, forma de comprovação e, ainda, a possibilidade de recomposição da sanção de obrigação de fazer e a aplicação de multa em caso de descumprimento.
+Destaca referido Informe que o art. 36-A do Rasa determina que as sanções de obrigações de fazer devem ser cumpridas nos prazos previstos na decisão que as aplica, rememorando que, no caso da obrigação de fazer aplicada em segunda instância, o §3º prevê que o infrator fará jus a um fator de redução de 5% (cinco por cento) sobre o valor correspondente à sanção aplicada em segunda instância, caso não se manifeste pela preferência pela sanção de multa.
+Tal fator de redução, contudo, será aplicado após a correção do valor da sanção de multa adotado como referência para a OdF, nos termos do art. 36-A, §6º, II, do Rasa. Nesse sentido, o valor será corrigido a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, até a data da publicação do Acórdão.
+Nos termos do art. 16-A, II, do RASA, acompanho sugestão da Área Técnica para conceder o prazo de 60 (sessenta) dias para que a Prestadora se manifeste. Nesse período, a prestadora deverá (a) apresentar o projeto técnico referente à obrigação de fazer ora aplicada, levando em conta o apontamento das unidades a serem contempladas, a partir da lista consolidada pela Anatel e considerando apenas as unidades ainda não contempladas em ODFs objeto de outros processos, a análise das diversas circunstâncias relacionadas à execução de projetos de infraestrutura, tais como a verificação da viabilidade de obtenção de licenças urbanísticas e ambientais, o levantamento de custos e o dimensionamento técnico dos projetos, ou (b) optar formalmente pela conversão da OdF em multa, abrindo mão do percentual de desconto previsto no Rasa.
+No caso da apresentação do projeto técnico da sanção imposta, nos termos do art. 16-A, §2º, do Rasa, até a validação da manifestação do infrator no prazo estabelecido no item acima, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento. A Anatel deverá validar o cumprimento dos requisitos e prazos estabelecidos para a seleção de localidades.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.109.1 a 4.109.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Ainda que não tenha sido objeto das considerações encaminhadas pela área técnica, entendo necessário se garantir a diversidade regional.
+Dessa forma, no caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas, podendo , da quarta em diante, a Prestadora adotar o critério que preferir.
+Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas. Da quarta em diante, a Prestadora poderá adotar o critério que preferir.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos nesta decisão não foram adequadamente obedecidos para todas as instituições selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor equivalente às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+Essa previsão está alinhada com a recomendação da Controladoria-Geral da União - CGU contida no "Relatório de Auditoria SAAI - Manifestação da CGU" (SEI nº 8945272), de 10 de agosto de 2022, para os casos de compromissos de backhaul. Confira-se:
+"Recomendação nº 2: Resolver os casos de sobreposição indicados no Anexo I deste Relatório de Auditoria, notadamente sobre as sobreposições dos compromissos de backhaul do Edital do 5G com as demais ações regulatórias e políticas públicas."
+Embora sejam tomadas todas as precauções necessárias para evitar a sobreposição de investimentos de origem pública, em infraestrutura de telecomunicações instalada com uma mesma finalidade, essa última medida se coloca como uma possibilidade de contornar eventuais sobreposições que venham a se verificar durante o acompanhamento do provimento da conectividade, priorizando-se a seleção de nova(s) instituição(ções) substitutiva(s) para o cumprimento da sanção de obrigação de fazer, ou, nessa impossibilidade por questões relacionadas ao prazo para cumprimento - resolvendo-se a questão mediante aplicação de sanção pecuniária.
+A multa aplicada deve ter sua exigibilidade suspensa quando a Anatel realizar a validação da manifestação da prestadora com o deferimento das localidades e, somente após o integral cumprimento da sanção de obrigação de fazer e o respectivo atesto pela autoridade competente, a multa deverá ser cancelada nos sistemas de crédito da Agência, conforme prevê o art. 36-A, §7º, do Rasa.
+Outra questão que perpassa pelo acompanhamento da sanção de obrigação de fazer diz respeito ao seu descumprimento. Nesta hipótese, uma vez atestado o não cumprimento da sanção de obrigação de fazer e não fazer, haverá o trâmite para a cobrança da multa, seja proporcional ou integral a depender se o descumprimento foi parcial ou total.
+No caso de descumprimento, a multa será calculada com base no valor descrito na decisão que estabeleceu a sanção de obrigação de fazer, atualizado por meio da Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-la, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer.
+A Agência poderá solicitar a apresentação de documentos complementares ou determinar a realização de inspeção durante o prazo de cumprimento e manutenção da obrigação assumida pela Prestadora.
+Da conclusão quanto à obrigação de fazer 
+Em conclusão, voto por:
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP, tendo como base o valor de R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil oitocentos e vinte e dois reais e vinte e um centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado (i) no prazo de 6 (seis) meses a partir validação da manifestação da Prestadora pela Anatel, e mantido pelo período de 3 (três) anos; ou (ii) no prazo de 1 (um) ano, nos casos em que o enlace tenha que ser complementado com a instalação de backhaul de fibra ótica, e mantido pelo período de 2,5 (dois e meio) anos.
+O somatório do custo relativo à instalação da infraestrutura e o período de sua manutenção deve ser igual ou superior ao valor da multa aplicada, considerando as correções monetárias nos termos do RASA e a precificação apresentada no item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão" do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767).
+O cumprimento da sanção de obrigação de fazer deverá ter por objeto levar conectividade às universidades públicas (federais, estaduais e municipais) e institutos federais.
+No caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas. Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas.
+Para fins de atendimento do disposto no item anterior, atendidas três macrorregiões ou unidades da federação distintas, conforme o caso, a Prestadora, em ainda havendo saldo, poderá escolher livremente as demais instituições que irá atender, entre aquelas constantes da lista.
+Para a instalação de backhaul de fibra óptica, a infraestrutura a ser instalada em cada instituição de ensino deverá possuir capacidade mínima de 10 Gbps (dez gigabits por segundo), do início ao ﬁm do trecho utilizado para atendimento da respectiva instituição de ensino. Além disso, nos projetos que envolverem Capex, a prestadora fica obrigada a disponibilizar o acesso à infraestrutura a partir da data de sua entrada em operação, nos termos da regulamentação específica, às demais prestadoras autorizadas de serviços de telecomunicações de interesse coletivo.
+O provimento da conectividade deve englobar a instalação e a manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), observando-se os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+A Prestadora deve selecionar as unidades das universidades públicas e institutos federais entre aquelas indicadas na lista constante da versão atualizada do documento SEI nº 14963393 , observadas as condições anteriormente expostas.
+Após a seleção das instituições de ensino, os custos associados aos projetos devem ser calculados de acordo com o item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão", detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), devendo-se observar quanto à aplicação de desconto o disposto no art. 36-A, §3º, do Rasa, bem como:
+Para o Circuito de Transporte, a Planilha Valores ODF Conectividade IPES (SEI nº 14890893); e
+Para o Backhaul de fibra óptica, a Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261).
+Nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, será aplicado o desconto de 5% (cinco por cento) previsto no Rasa.
+No prazo de 60 (sessenta dias), a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no Rasa, ou deverá, no mesmo prazo (i) apresentar projeto técnico da obrigação de fazer nos termos delimitados na presente Análise e no Informe 187/2025/PRUV/SPR (SEI nº 14883767); (ii) informar as instituições selecionadas para o cumprimento da sanção, nos termos estabelecidos nos itens 4.86.1 a 4.86.7.; e iii) no caso de instalação de backhaul de fibra óptica, apresentar declaração formal de que inexiste nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio.
+Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento.
+A Prestadora não adquire direito à lista de instituições públicas de ensino superior disponíveis para instalação de infraestrutura, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da Prestadora deve recair sobre as instituições públicas de ensino superior disponíveis na data em que ela comunicar à Anatel que cumprirá a sanção de obrigação de fazer.
+Eventuais conflitos decorrentes da seleção de instituições públicas de ensino superior pela operadora para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações.
+Uma vez formalizada junto à Anatel a seleção de instituições públicas de ensino superior realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal justificada à Superintendência de Controle de Obrigações, cabendo à autoridade competente decidir sobre a questão.
+A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão para seleção de instituições de ensino e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos.
+A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer ensejará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as instituições de ensino selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições de ensino, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+A instalação da infraestrutura, observados os requisitos previstos no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), deverá ser comprovada à Anatel em até 30 (trinta) dias após o exaurimento dos prazos previstos no item 4.86.1., e não poderá decorrer de acordos de RAN sharing, swap, aluguel de redes, contratos de exploração industrial ou outros meios contratuais. Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Quanto ao circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto):
+a comprovação da sua instalação deverá ser realizada, minimamente, mediante a apresentação: i) das configurações utilizadas nos equipamentos; ii) de relatórios de tráfego gerado nos equipamentos das instituições, relativos a um período mínimo de 15 (quinze) dias posteriormente à data de sua ativação; iii) de formulário e declaração do diretor ou responsável administrativo da instituição de ensino certificando que todos os requisitos foram cumpridos; iv) de formulário e declaração do responsável administrativo da Rede Nacional de Ensino e Pesquisa - RNP certificando que todos os requisitos foram cumpridos. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel, minimamente, relatórios de tráfego gerados dos equipamentos de todas as instituições de ensino atendidas em decorrência da presente decisão, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção das instituições, ou correspondentes a período posterior à data de término da obrigação, sob pena de sua conversão em multa. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+No caso da infraestrutura ser provida por meio de backhaul de fibra óptica:
+a comprovação da instalação da infraestrutura deverá ser realizada, minimamente, mediante a apresentação: de: i) as-built do projeto técnico implementado; ii) tela do sistema de gerência da prestadora, destacando o circuito físico entre os municípios de origem e destino da fibra, bem como sua capacidade; iii) tela do sistema de gerência da prestadora, destacando link lógico entre os municípios de origem e destino da fibra, bem como sua capacidade. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel e em avaliação com a prestadora; e
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel relatórios de tráfego indubitavelmente cursado nas redes instaladas, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção, ou correspondentes a período posterior à data de término da obrigação. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel.
+Os prazos de manutenção da conectividade em cada instituição de ensino são contados das datas de suas respectivas ativações. Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, aplica-se sanção de multa, em valor proporcional às estimativas de custos dos projetos das instituições de ensino em que não houver comprovação suficiente e tempestiva.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.86.1 a 4.86.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, novamente acrescidos o desconto previsto no art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção.
+Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A.
+No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa.
+Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho:
+o conhecimento do Recurso Administrativo para, no mérito, dar-lhe parcial provimento;
+a reforma de ofício da decisão recorrida, alterando o valor da sanção de multa de de R$ 18.955.003,30 (dezoito milhões, novecentos e cinquenta e cinco mil três reais e trinta centavos), para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil oitocentos e vinte e dois reais e vinte e um centavos), em razão das infrações aos artigos, 3º, XIII; 14 e 15; 61, § 1º c/c art. 106 e 85, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014;
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da RNP, nos termos aqui descritos, tendo como base o valor de R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil oitocentos e vinte e dois reais e vinte e um centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado nos termos expostos no item 4.86 da presente Análise.
+Conceder o prazo de 60 (sessenta dias), a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14330268 e o código CRC 7D6C6017.
+ | 
+Referência: Processo nº 53500.026914/2021-69 | 
+SEI nº 14330268 |

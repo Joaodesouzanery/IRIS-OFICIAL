@@ -1,0 +1,380 @@
+SEI/ANATEL - 14910175 - Voto
+Boletim de Serviço Eletrônico em 28/01/2026
+Voto nº 122/2025/PR
+Processo nº 53500.084209/2025-18
+Interessado: Conselho Diretor
+PRESIDENTE SUBSTITUTO
+Alexandre Reis Siqueira Freire
+ASSUNTO
+Proposta de aprovação do Plano Anual de Auditoria Interna da Agência Nacional de Telecomunicações (Anatel) para o exercício de 2026 (PAINT/2026).
+EMENTA
+matéria administrativa. AUDITORIA INTERNA (AUD). PLANO ANUAL DE AUDITORIA INTERNA para o exercício de 2026. (PAINT/2026). APROVAÇÃO.
+Proposta de aprovação do Plano Anual de Auditoria Interna para o ano de 2026 (PAINT/2026).
+Definição da lista de processos e temas a serem auditados considerando a Matriz de Riscos e a capacidade operacional da Auditoria Interna.
+Submissão da Proposta à Controladoria-Geral da União (CGU). Considerações. Endereçamento por parte da Auditoria Interna. Inexistência de óbices técnicos ou jurídicos.
+Aprovação por Resolução Interna.
+REFERÊNCIA
+Regimento Interno da Anatel, aprovado na forma do Anexo à Resolução nº 612, de 29 de abril de 2013;
+Decreto nº 3.591, de 6 de setembro de 2000, e alterações;
+Instrução Normativa CGU nº 3, de 9 de junho de 2017;
+Instrução Normativa CGU nº 5, de 27 de agosto de 2021;
+Informe nº 9/2025/AUD (SEI nº 14736112);
+Lista - universo de auditoria PAINT/2026 (SEI nº 14752291);
+Informe nº 10/2025/AUD (SEI nº 14752300);
+Metodologia de priorização e seleção de objetos (SEI nº 14759048);
+Plano Anual da Auditoria Interna - 2026 (SEI nº 14848847);
+Matéria para Apreciação do Conselho Diretor nº 880/2025 (SEI nº (14823813).
+RELATÓRIO
+DOS FATOS
+Trata-se de aprovação da proposta de Plano de Auditoria Interna da Anatel (AUD) para o exercício de 2026 - PAINT/2026 (SEI nº 14848847), que tem por finalidade apresentar os trabalhos prioritários a serem realizados pela Unidade de Auditoria Interna no período de abrangência do plano (ano de 2026), contendo a relação dos serviços de auditoria previstos e a estimativa de alocação da força de trabalho, a forma de atendimento das demandas extraordinárias, projetos de gestão e melhoria da qualidade da atividade de auditoria interna governamental, considerando os riscos associados aos processos de negócio da Anatel, o alinhamento com os objetivos e metas institucionais e a observância das diretrizes estabelecidas no Referencial Técnico da Atividade de Auditoria Interna Governamental, aprovado pela Instrução Normativa n.º 3, de 9 de junho de 2017, do Ministério da Transparência e Controladoria-Geral da União.
+tem como principal finalidade definir os trabalhos prioritários a serem realizados no período de abrangência do plano, contendo a relação dos serviços de auditoria previstos e a estimativa de alocação da força de trabalho
+A elaboração do PAINT/2026 levou em conta: a identificação do universo de auditoria, como etapa inicial do processo de priorização, as premissas, restrições e riscos associados à execução do Plano Anual da Auditoria Interna da Anatel de 2026, a estrutura da unidade e a alocação de horas por atividade, adoção de procedimento sistemático para a priorização dos objetos de auditoria, cujo principal produto é a Matriz de Riscos, recursos necessários para a execução de suas funções, tais como infraestrutura física apropriada e acesso ao sistema informatizado Auditar e possíveis restrições de atividades, como inspeções e eventos presenciais, inclusive de capacitação, em função de eventuais medidas de restrição orçamentária e financeira ou quaisquer outras que impeçam a locomoção dos servidores.
+A proposta em avaliação foi elaborada em conformidade com a Instrução Normativa nº 5/2021 da Secretaria Federal de Controle Interno da Controladoria-Geral da União (CGU), com o Manual de Orientações Técnicas da Atividade de Auditoria Interna Governamental do Poder Executivo Federal, aprovado pela Instrução Normativa nº 8/2017, e com as orientações disponibilizadas na página "Perguntas e respostas sobre o Plano Anual de Auditoria Interna" do portal eletrônico da Controladoria-Geral da União (CGU).
+A proposta do PAINT/2026 foi submetida ao Conselho Diretor por meio da Matéria para Apreciação do Conselho Diretor nº 880/2025 (SEI nº (14823813).
+É o relatório.
+DAS CONSIDERAÇÕES POR PARTE DO PRESIDENTE
+DA COMPETÊNCIA DO CONSELHO DIRETOR
+Inicialmente, cumpre anotar que, nos termos do art. 133, LXII, do Regimento Interno da Anatel (RIA), aprovado na forma do Anexo à Resolução nº 612/2013, é competência do Conselho Diretor a aprovação do Plano Anual de Atividades de Auditoria Interna:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável: [...]
+LXII - aprovar o Plano Anual de Atividades de Auditoria Interna;
+A AUD tem as seguintes competências definidas no art. 163 do Regimento Interno:
+I - elaborar e submeter à aprovação o Plano Anual de Atividades de Auditoria Interna;
+II - avaliar a eficiência e eficácia dos controles internos, visando garantir a salvaguarda dos ativos, a fidedignidade dos dados operacionais, a gestão orçamentária, financeira, administrativa, contábil e patrimonial, o cumprimento das leis, dos regulamentos e demais instrumentos normativos estabelecidos, a melhoria da eficiência operacional e a eficiência e economia na aplicação dos recursos;
+III - elaborar relatórios contendo análises, apreciações, comentários e recomendações e acompanhar a implementação das soluções;
+V - examinar e emitir pareceres sobre a prestação de contas anual da Agência e tomadas de contas especiais;
+V - assistir aos órgãos de controle do Governo Federal no que se refere ao acompanhamento, adequação e padronização das informações solicitadas;
+VI - acompanhar os resultados dos exames dos órgãos de controle do Governo Federal.
+A Instrução Normativa CGU nº 5/2021 também estabelece a competência para aprovação do PAINT:
+Art. 7º O PAINT deve ser aprovado pelo conselho de administração ou instância equivalente do órgão ou entidade, ou, na ausência desse, por seu dirigente máximo, antes do início do exercício a que se refere.
+Estabelecida a competência desse Conselho para deliberação do PAINT/2026, passo a tecer algumas considerações quanto à proposta formulada.
+Da proposta de Plano Anual de Atividades da Auditoria Interna para o exercício de 2026
+O processo de elaboração do PAINT é regido pela Instrução Normativa nº 5/2021 da Secretaria Federal de Controle Interno da Controladoria-Geral da União, que estabelece que a Auditoria Interna, na elaboração da proposta, deverá considerar o planejamento estratégico, as expectativas da alta administração e das demais partes interessadas, os riscos significativos a que a Agência esteja exposta e os processos de governança, de gerenciamento de riscos e de controles internos da Unidade Auditada (art. 3º). Referido ato normativo traz os requisitos mínimos para o Plano em seu art. 4º.
+A proposta do PAINT para o exercício de 2026, de acordo com a referida Instrução Normativa, tem como principal finalidade definir os trabalhos prioritários a serem realizados no período de abrangência do plano, devendo conter a relação dos serviços de auditoria previstos e a estimativa de alocação da força de trabalho nas seguintes categorias:
+ Os serviços a serem realizados pela Unidade de Auditoria Interna em 2026 e a forma de atendimento das demandas extraordinárias;
+ As diretrizes de capacitação da equipe de auditores internos governamentais;
+ A forma monitoramento das recomendações emitidas em trabalhos anteriores e ainda não implementadas;
+ Os projetos de gestão e melhoria da qualidade da atividade de auditoria interna governamental;
+ A forma de apoio aos órgãos de controle interno ou externo.
+A elaboração do Plano considerou os riscos associados aos processos de negócio da Anatel, o alinhamento com os objetivos e metas institucionais e a observância das diretrizes estabelecidas no Referencial Técnico da Atividade de Auditoria Interna Governamental, aprovado pela Instrução Normativa n.º 3, de 9 de junho de 2017, do Ministério da Transparência e Controladoria-Geral da União.
+A Auditoria Interna (AUD) aponta, no subitem 3.1.1 da proposta do PAINT/2026 (SEI nº 14848847), que os objetivos gerais dos trabalhos estão relacionados no Anexo III - Serviços de Auditoria 2026, e informa que os objetivos específicos e o escopo de cada trabalho serão definidos no início de sua execução, na etapa do planejamento operacional.
+Para a construção do Plano, a AUD vale-se da aplicação de Metodologia de priorização e seleção de objetos (SEI nº 14759048), haja vista a capacidade operacional da unidade não ser suficiente para atuar em todo o universo de auditoria em um período anual.
+Metodologia de priorização de objetos de auditoria (SEI nº 14759048):
+O procedimento de priorização de objetos de auditoria tem como principal produto a Matriz de Riscos, ferramenta central para o planejamento da Auditoria Interna da Anatel. Essa matriz classifica, de forma sistemática e fundamentada, os itens do universo de auditoria em ordem decrescente de risco, calculado a
+parƟr da combinação dos fatores Impacto e Probabilidade.
+A Matriz de Riscos é um instrumento essencial de governança e de apoio à decisão no processo de elaboração do Plano Anual de Auditoria Interna – PAINT, pois permite que os trabalhos sejam priorizados de acordo com o potencial de risco à consecução dos objetivos institucionais e à integridade das operações da Agência.
+Esta metodologia é estruturada de modo a permitir que, anualmente, os pesos atribuídos aos critérios de avaliação de risco sejam reavaliados e ajustados conforme as orientações do órgão de supervisão técnica da aƟvidade de auditoria interna governamental do Poder Executivo (OST) e as prioridades estratégicas e operacionais vigentes na Anatel.
+No ciclo de planejamento referente ao PAINT 2026, foram adotadas atualizações pontuais na metodologia,sem alteração dos fundamentos conceituais da modelagem de risco. As revisões consistiram na adequação dos pesos aplicáveis aos critérios e subcritérios, bem como na revalidação do universo de auditoria, em consonância com a nova Cadeia de Valor da Anatel (Resolução Interna nº 360/2024).
+O resultado dessas análises compõe a Matriz de Riscos – PAINT 2026, documento que reflete a exposição da Agência a riscos de natureza financeira, operacional, estratégica e reputacional, traduzidos em valores comparáveis e objetivamente mensuráveis. A matriz orienta a seleção dos objetos que integrarão o planejamento anual, assegurando que o conjunto de auditorias propostas reflita os principais riscos institucionais e a eficiência na alocação de recursos da aƟvidade de auditoria interna.
+Segundo dispõe referida Metodologia, a elaboração da Matriz de Riscos é um processo sistemático que envolve, no mínimo, as etapas a seguir listadas:
+1) Revisão da metodologia de elaboração da Matriz de Riscos;
+2) Revisão do universo de auditoria;
+3) Levantamento de dados e informações;
+4) Pontuação dos Objetos;
+5) Cálculo da nota de risco;
+6) Aplicação de critérios de peso e
+7) Avaliação da Elegibilidade dos Objetos Priorizados.
+Cumpridas tais etapas, a Matriz de Riscos subsidiou o processo de seleção de trabalhos de auditoria para o próximo exercício, partindo da identificação do universo de auditoria, como etapa inicial do processo de priorização, levando em conta a revisão da Cadeia de Valor da Anatel em 2024, com a inclusão de objetos decorrentes do mapeamento de novos processos resultantes do levantamento dos macroprocessos da Cadeia - Tabela - universo de auditoria PAINT/2026 (SEI nº 14752291).
+No Informe nº 10/2025/AUD (SEI nº 14752300) a AUD apresenta as premissas e metodologia utilizada para definição do universo de auditoria e definição dos temas a serem objeto do PAINT/2026:
+Universo de Auditoria
+3.18. O universo de auditoria é submetido a revisões anuais pela AUD, com o objetivo de garantir a abrangência de todos os objetos auditáveis pertinentes às funções de negócio, gestão e governança. No contexto do PAINT-2026, tal revisão foi fundamentada na nova Cadeia de Valor, aprovada pela Resolução Interna nº 360/2024, bem como no estágio de mapeamento dos macroprocessos em outubro de 2025, ocasião em que foram identificados 87 processos auditáveis.
+3.19. Mediante análise das finalidades, resultados e inter-relações entre os processos, procedeu-se à consolidação de processos com objetivos convergentes e ao ajuste de nomenclaturas. Em menor escala, subprocessos com entregas distintas foram desmembrados. Este procedimento resultou em 53 objetos de auditoria que, sob os critérios adotados, refletem a lógica de geração de valor público. A fundamentação detalhada desse processo de racionalização, assim como a lista definitiva dos objetos, encontra-se exposta no Anexo II - Informe nº 9/2025/AUD (SEI nº 14736112).
+Assim, foi elaborada lista de 53 temas que passaram pela análise de priorização Lista - universo de auditoria PAINT/2026 (SEI nº 14752291).
+Nos termos do Manual de Orientações Técnicas da Atividade de Auditoria Interna Governamental do Poder Executivo Federal (MOT), o PAINT deve explicitar, sempre que possível, as premissas, restrições e riscos que condicionam sua elaboração e execução. Assim, foram consideradas as seguintes premissas:
+ relativas ao arcabouço normativo e institucional
+ relativas à priorização e à seleção de objetos de auditoria
+ sobre capacidade operacional e recursos
+ sobre informações, sistemas e acesso
+ relativas a riscos, restrições e flexibilidade do Plano
+ sobre interação com partes interessadas e governança
+ sobre demandas extraordinárias e revisões do Plano
+Foram considerados ainda:
+Trabalhos priorizados com base em riscos
+Trabalho oriundo de obrigação normativa
+Continuidade de trabalho iniciado em 2025
+Tratamento de demandas extraordinárias
+Como resultado da aplicação da Metodologia, obteve-se a Matriz de Riscos (Anexo 2 do PAINT/2026), que contém a avaliação de todos os itens do universo auditável da Anatel, nas perspectivas de impacto e probabilidade. Dessa forma, com base na Metodologia, foram selecionadas as ações que serão priorizadas como objetos de auditoria da Agência para avaliação em 2026.
+No Anexo III - Serviços de Auditoria 2026 da proposta de PAINT/2026 (SEI nº 14848847), consta resumo dos trabalhos previstos para o próximo exercício, considerando a capacidade operacional (homens/hora - HH). Foram definidas seis ações de auditoria prioritárias, sendo uma por determinação legal - parecer sobre a prestação de contas anual da Anatel (Instrução Normativa CGU nº 5/2021) - e cinco selecionadas por meio da Matriz de Riscos (de acordo com a Metodologia de priorização de objetos de auditoria (SEI nº 12875299): 
+Anexo III - Serviços de Auditoria
+ ID
+ | 
+ Tipo de Serviço
+ | 
+ Objeto Auditado
+ | 
+ Objetivo da Auditoria
+ | 
+ Origem da 
+ Demanda
+ | 
+ Início
+ | 
+ Conclusão
+ | 
+ HH
+ | 
+ Situação
+ | 
+ Observações/
+ Justificativas
+ | 
+ 1
+ | 
+ Outros
+ | 
+ Prestação de Contas da Anatel
+ | 
+ Examinar e emitir parecer sobre a prestação de contas anual da Anatel.
+ | 
+ Obrigação
+ Legal
+ | 
+ 02/02/26
+ | 
+ 31/03/26
+ | 
+ 280,00
+ | 
+ Previsto
+ | 
+ | 
+ 2
+ | 
+ Avaliação
+ | 
+ Gerir Obrigações de Fazer
+ | 
+ Avaliar a adequação dos processos de governança, gestão de riscos e controles internos adotados para assegurar que a conversão de sanções pecuniárias em investimentos no setor de telecomunicações cumpra os objetivos de viabilidade técnica, legal e econômica.
+ Avaliar, entre outros, o processo decisório e critérios de escolha e definição das obrigações. Os objetivos específicos serão delineados durante o planejamento da auditoria, com base na análise preliminar do objeto.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 05/01/26
+ | 
+ 26/06/26
+ | 
+ 920,00
+ | 
+ Em execução
+ | 
+ | 
+ 3
+ | 
+ Avaliação
+ | 
+ Gerir Comunicação
+ Institucional (Processos:
+ Gerir Ações de
+ Comunicação Interna e Externa/Responder
+ Demandas da Imprensa/Coordenar Eventos / Gerir
+ Publicidade Legal)
+ | 
+ Avaliar a eficácia dos mecanismos de governança, gestão de riscos e controles internos relacionados às atividades de Comunicação Institucional da Anatel, levando em consideração o planejamento, a coordenação, a execução e o monitoramento das ações de comunicação interna e externa, nas áreas de imprensa, publicidade, relações públicas, eventos e gestão de conteúdo em mídias digitais e demais canais oficiais.
+ A auditoria irá verificar se essas estruturas e práticas estão organizadas de modo a assegurar a conformidade com as normas internas e a legislação pertinente à comunicação pública, assim como a adesão aos princípios da transparência, impessoalidade e eficiência administrativa. Também será analisado se os mecanismos de gestão e controle dos contratos que sustentam essas atividades são adequados para garantir o manejo apropriado dos riscos envolvidos e a obtenção dos resultados esperados, de forma alinhada às diretrizes institucionais da Anatel e às boas práticas de governança pública.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 05/01/26
+ | 
+ 26/06/26
+ | 
+ 920,00
+ | 
+ Previsto
+ | 
+ | 
+ 4
+ | 
+ Avaliação
+ | 
+ Gerir Orçamento e
+ Finanças
+ | 
+ Avaliar a conformidade, a eficiência e a efetividade dos mecanismos de governança, gestão de riscos e controles que estruturam a gestão orçamentária e financeira da Anatel, abrangendo a elaboração, execução, acompanhamento e controle do orçamento, a programação financeira e o cumprimento
+ dos limites e autorizações legais de despesa.
+ A auditoria buscará verificar se esses mecanismos asseguram o planejamento, a alocação e a utilização dos recursos públicos em conformidade com a legislação e as normas de administração financeira federal, bem como com os princípios da legalidade, economicidade, transparência e responsabilidade fiscal, incluindo os procedimentos de monitoramento para compatibilizar dotações e compromissos assumidos e suportar a execução das atividades finalísticas e administrativas da Agência.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 21/06/26
+ | 
+ 26/06/26
+ | 
+ 844,00
+ | 
+ Previsto
+ | 
+ | 
+ 5
+ | 
+ Avaliação
+ | 
+ Gerir a Operação de
+ Serviços de TI (Processo:
+ Executar Serviços de TI)
+ | 
+ Avaliar a eficácia, eficiência e conformidade dos mecanismos de governança, gestão de riscos e
+ controles que sustentam a operação dos serviços de tecnologia da informação da Anatel, abrangendo a monitorização contínua, a gestão de incidentes e problemas, o controle de mudanças e a manutenção operacional de sistemas, infraestrutura e serviços tecnológicos.
+ A auditoria buscará verificar se a operação de tecnologia da informação está organizada de modo a assegurar a disponibilidade, estabilidade, desempenho e segurança dos serviços prestados à Agência e ao público externo, em conformidade com as normas internas e com as práticas reconhecidas de governança e gestão de TI no setor público, bem como se os mecanismos de controle, resposta a incidentes e comunicação entre as equipes operacionais e as áreas demandantes preservam a continuidade das operações e o alinhamento dos serviços tecnológicos às necessidades institucionais e estratégicas da Anatel.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 20/07/26 
+ | 
+ 11/12/26
+ | 
+ 880,00
+ | 
+ Previsto
+ | 
+ | 
+ 6
+ | 
+ Avaliação
+ | 
+ Gerir Certificação e
+ Homologação de
+ Produtos de
+ Telecomunicações
+ (Processo: Certificar e
+ Homologar, exceto
+ subprocessos
+ relacionados à
+ Numeração)
+ | 
+ Avaliar a conformidade, efetividade e eficiência dos mecanismos de governança, gestão de riscos e controles que estruturam os processos de certificação e homologação de produtos de telecomunicações da Anatel, abrangendo as atividades de verificação técnica de equipamentos, designação e supervisão dos organismos de certificação designados (OCDs), análise documental e emissão de certificados e homologações.
+ A auditoria buscará verificar se esses mecanismos asseguram que os produtos aprovados atendam aos requisitos técnicos e regulatórios aplicáveis, conforme normas da Agência, regulamentos internacionais e acordos de reconhecimento mútuo, bem como a promoção de eficiência administrativa, padronização de critérios, rastreabilidade das decisões e transparência nas relações com fabricantes, importadores e organismos certificadores, em conformidade com as diretrizes institucionais e as boas práticas de regulação setorial.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 20/07/26 
+ | 
+ 11/12/26 
+ | 
+ 880,00
+ | 
+ Previsto
+ | 
+ | 
+ 7
+ | 
+ Avaliação
+ | 
+ Gerir Inteligência
+ Institucional (Processos:
+ Planejar Inteligência e Inovação / Realizar Escuta do Ambiente Externo / Gerir Insumos e Evidências de Inteligência / Elaborar e Disseminar
+ Produtos de Inteligência)
+ | 
+ Avaliar a efetividade, eficiência e conformidade dos mecanismos de governança, gestão de riscos e
+ controles que estruturam as atividades de gestão de inteligência institucional da Anatel, abrangendo
+ o planejamento e governança da atividade, a coleta e análise de informações sobre ambientes interno e externo, a elaboração de produtos de inteligência e sua disseminação para subsidiar processos decisórios estratégicos.
+ A auditoria buscará verificar se esses mecanismos asseguram a integração adequada da estrutura de
+ inteligência à gestão institucional, o uso de fontes confiáveis e metodologias consistentes, e a
+ coordenação com áreas finalísticas e de inovação, bem como se os produtos e processos de inteligência apoiam o aprimoramento regulatório, a identificação tempestiva de riscos e oportunidades e o alinhamento das respostas institucionais a mudanças setoriais e tecnológicas, em
+ conformidade com os objetivos estratégicos da Agência.
+ | 
+ Avaliação
+ de Riscos
+ | 
+ 20/07/26
+ | 
+ 11/12/26
+ | 
+ 880,00
+ | 
+ Previsto
+ | 
+ | 
+Destaca-se que os gestores da Agência, os órgãos de controle e a sociedade podem encaminhar requerimentos, denúncias ou representações, solicitando a realização de auditorias em processos de negócio ou temas específicos nos quais tenham sido identificados indícios de não conformidades, irregularidades ou infrações ao Plano de Integridade da Agência, que serão tratados como demandas extraordinárias. 
+Na proposta de PAINT/2026 (SEI nº 14848847), a AUD registra que foram reservadas 591 horas do exercício de 2026 para tais demandas.
+Com base na quantidade de servidores e na estrutura de distribuição de funções, previu-se a seguinte alocação de horas para o PAINT-2026:
+ Horas disponíveis
+ da
+ equipe
+ | 
+ Serviços de Auditoria
+ | 
+ Monitoramento de Recomendações
+ | 
+ Levantamento de informações para órgãos de controle interno ou externo
+ | 
+ Gestão Interna
+ | 
+ PGMQ
+ | 
+ Avaliação
+ | 
+ Consultoria
+ | 
+ Apuração
+ | 
+ Reserva para demandas extraordinárias
+ | 
+ 11.956
+ | 
+ 5.604
+ | 
+ 0
+ | 
+ 0
+ | 
+ 591
+ | 
+ 1.539
+ | 
+ 1.374
+ | 
+ 1.816
+ | 
+ 1.033
+ | 
+A AUD esclarece que as horas disponíveis correspondem ao total bruto de horas de trabalho dos servidores, deduzidas as ausências programadas, tais como férias, licenças e períodos de capacitação (com previsão de 40 horas por servidor). A alocação de horas por atividade, conforme evidenciado na tabela, foi estruturada de modo a assegurar que aproximadamente 65% das horas disponíveis sejam destinadas às atividades de auditoria e monitoramento de recomendações, em consonância com a orientação emanada pela Controladoria-Geral da União, conforme exposto na página "Perguntas e respostas sobre o Plano Anual de Auditoria Interna". 
+Caso ultrapassem as horas disponíveis, o Auditor-Chefe poderá propor ao Conselho Diretor o adiamento de ações programadas de menor risco não iniciadas ou a possibilidade de inclusão da demanda extraordinária no exercício seguinte. Ressalta-se que tal posicionamento está em conformidade com o §1º do art. 7º da Instrução Normativa CGU nº 5/2021:
+Instrução Normativa CGU nº 5/2021:
+Art. 7º
+(...)
+§ 1º Mudanças no PAINT aprovado que o impactem significativamente devem ser apreciadas pelo conselho de administração ou instância equivalente ou, na ausência desse, pelo dirigente máximo do respectivo órgão ou entidade.
+Relativamente às ações de capacitação e aos eventos para promoção do fortalecimento das atividades da AUD, conforme exige o art. 4º, II, alínea "b", da Instrução Normativa CGU nº 5/2021, a proposta do PAINT/2026 (SEI nº 14848847) informa:
+PAINT/2026 (SEI nº 14848847):
+(...)
+O PDP da Anatel para 2026 foi aprovado pela Portaria n.º 3043, de 17 de setembro de 2025. As necessidades de capacitação da Auditoria Interna aprovadas no Plano são:
+- Inovação: aprimorar o entendimento de abordagens, ferramentas e metodologias de inovação, para identificar oportunidades de melhoria nos processos de auditoria e propor soluções criativas baseadas em evidências.
+- Governança, sustentabilidade e responsabilidade socioambiental: desenvolver a capacidade de avaliar se os processos internos incorporam critérios e indicadores socioambientais, alinhados à estratégia institucional e à Agenda 2030, bem como identificar lacunas em obrigações regulatórias voltadas à sustentabilidade e à responsabilidade social.
+- Gestão de projetos e processos: compreender conceitos e técnicas de mapeamento e modelagem de processos (incluindo BPMN), gestão por processos e sua relação com riscos e controles internos, aplicando essas abordagens na auditoria para aumentar eficiência, eficácia e efetividade.
+- Auditoria: desenvolver habilidades para selecionar e aplicar procedimentos de auditoria adequados (testes substantivos, analíticos e de observação, entre outros), elaborar relatórios claros e bem estruturados e formular conclusões coerentes com as evidências levantadas.
+- Fiscalização – Geral: aprimorar o conhecimento sobre marcos legais e normativos, métodos de priorização, planejamento, execução, registro e reporte das ações fiscalizatórias, fortalecendo a capacidade de avaliar sua eficácia, efetividade e riscos associados.
+- Transformação Digital: desenvolver capacidade analítica e crítica orientada por dados, voltada à identificação de oportunidades de melhoria e solução de problemas complexos, bem como fortalecer atitudes de inovação e atuação como agente de mudança dentro da Auditoria.
+- TIC – Ciência de Dados: aprimorar o domínio de conceitos, ferramentas e técnicas de análise e interpretação de dados aplicados à auditoria, consolidando uma mentalidade orientada por dados para identificar padrões, interpretar evidências e propor soluções fundamentadas.
+- Métodos ágeis: aprimorar o conhecimento sobre princípios, frameworks e práticas ágeis, adaptando-os ao contexto da auditoria interna para promover entregas de maior valor agregado, flexibilidade, colaboração e rápida adaptação a mudanças.
+- Telecom – Fundamentos: aprimorar o conhecimento técnico sobre serviços e infraestruturas de telecomunicações e desenvolver a capacidade de avaliar a gestão de recursos de conectividade com visão crítica e sistêmica, considerando impactos para o usuário.
+- Regulação por incentivos: aprimorar o entendimento conceitual e prático sobre mecanismos regulatórios baseados em incentivos econômicos e contratuais e desenvolver habilidades analíticas para avaliar sua coerência, efetividade, riscos e impactos na promoção da conectividade universal e significativa..
+Apesar do conjunto de necessidades aprovado no PDP, terão prioridade as ações de desenvolvimento com relação direta à execução dos serviços de auditoria programados no PAINT-2026 e à implementação dos projetos vinculados ao plano de negócio da Auditoria Interna. Esta estratégia visa alinhar o aperfeiçoamento técnico às entregas previstas para o exercício e à carga horária de 40 horas estimada para cada servidor. Adicionalmente, ressalva-se que a participação em cursos e eventos estará condicionada à disponibilidade orçamentária e financeira da Agência no momento da oferta.
+Quanto a eventos de fortalecimento, estima-se a participação no Fórum AUDITE Agências, que tem como objetivo promover a troca de experiências e aprimorar conhecimentos e técnicas dos auditores internos das Agências Reguladoras.
+Outros eventos que ocorrerem ao longo do ano serão oportunamente informados no Relatório Anual de Auditoria Interna (RAINT).
+No que toca ao monitoramento das recomendações emitidas em trabalhos anteriores e ainda não implementadas (art. 4º, II, alínea "b", da Instrução Normativa CGU nº 5/2021), está previsto no PAINT/2026 que ocorrerá no âmbito da execução do subprocesso "Monitorar Recomendações". A AUD assinala que essa atividade visa a acompanhar a implementação das recomendações e determinações expedidas no âmbito das ações de auditoria interna e externa governamentais, de modo a garantir a sua efetividade. A forma de monitoramento, de acordo com a origem da recomendação, encontra-se detalhada nos subitens 5.1 a 5.3 da proposta de PAINT/2026 (SEI nº 14848847).
+No item 6 (6. Riscos e restrições) a AUD apresenta os riscos e restrições que possam afetar a execução do PAINT, detalhados nos itens 6.1 a 6.3 da proposta de PAINT/2026 (SEI nº 14848847).
+Por fim, com relação à gestão e à melhoria da qualidade da atividade de auditoria interna governamental (art. 4º, II, alínea "c", da Instrução Normativa CGU nº 5/2021), o item 7 da proposta de PAINT/2026 (SEI nº 14848847) assinala que o Programa de Gestão e Melhoria da Qualidade (PGMQ) objetiva o aprimoramento contínuo dos processos, dos produtos e da maturidade da unidade, garantindo alinhamento às melhores práticas internacionais e às diretrizes normativas aplicáveis, em observância ao previsto no Estatuto da Auditoria Interna, aprovado pela Resolução Interna Anatel nº 4/2020 (SEI nº 6365428).
+A execução do PGMQ consiste na realização de avaliações internas e externas, sob responsabilidade de todos os auditores internos governamentais e supervisão e orientação do Auditor-Chefe. O detalhamento das ações internas e externas consta nos subitens 7.1 a 7.3 da proposta de Metodologia de priorização e seleção de objetos (SEI nº 14759048); PAINT/2026 (SEI nº 14848847). 
+A AUD ressalta que, até o momento, não passou por avaliações externas, mas, conforme previsto no Plano de Negócio da Auditoria Interna 2023-2027 (SEI nº 10371876), a unidade tem se preparado para a certificação no nível 2 do IA-CM (Internal Audit Capability Model), com a realização de uma avaliação externa estimada para 2027. Esse processo de preparação inclui, entre outras ações, os seguintes projetos estratégicos: a) Alinhar-se às normas internacionais e b) Certificar os auditores internos.
+Ante o exposto, entendo que a proposta de PAINT, para o exercício de 2026, atende aos requisitos previstos nos arts. 3º e 4º da Instrução Normativa CGU nº 5/2021. 
+DOS COMENTÁRIOS DA CGU 
+Consoante disposto na Matéria para Apreciação do Conselho Diretor nº 880/2025 (SEI nº 14823813), de 3/12/2025, a proposta do PAINT/2026 foi submetida à apreciação da Coordenação-Geral de Auditoria das Áreas de Ciência, Tecnologia, Inovações e Comunicações (CGTIC/CGU), responsável pela supervisão técnica da Auditoria Interna, em conformidade com o art. 5º da Instrução Normativa CGU nº 5/2021:
+Em 17 de novembro de 2025, a proposta do PAINT‑2026 foi encaminhada à Coordenação-Geral de Auditoria das Áreas de Ciência, Tecnologia, Inovações e Comunicações (CGTIC/CGU), unidade de supervisão técnica da Auditoria Interna, para apreciação. Nos termos do art. 5º da Instrução Normativa CGU nº 5/2021, esse encaminhamento tem por objetivo harmonizar o planejamento, racionalizar a utilização de recursos e evitar a sobreposição de trabalhos entre a unidade de auditoria interna e a unidade de supervisão técnica com competência concorrente.
+Em 2 de dezembro de 2025, a CGTIC emitiu a Ficha de Avaliação (SEI nº 14848915) contendo a análise preliminar do PAINT, tendo considerado todos os itens avaliados como adequados, não tendo havido sugestões para inclusão ou exclusão de serviços nem se identificado oportunidade de coordenação ou execução compartilhada de trabalhos.
+Por fim, a AUD destacou que a proposta de PAINT/2026 (SEI nº 14848847) atende plenamente às normas aplicáveis, estando apta a ser submetida à apreciação e aprovação do Conselho Diretor.
+DAS CONSIDERAÇÕES FINAIS
+Com base nas informações deste Voto e nos documentos contidos nos autos, entendo pela possibilidade de aprovação da proposta PAINT/2026 (SEI nº 14848847), uma vez que as ações programadas pela AUD para o exercício de 2026 fundamentaram-se em uma metodologia para avaliação de objetos auditáveis, realizada com observância das normas que disciplinam a elaboração e a execução do Plano Anual de Atividades das Auditorias dos órgãos da Administração Pública Federal, corroborando, inclusive, com o primado da transparência, ponto defendido por esta Autarquia no exercício de sua missão institucional.
+Destaco, ainda, que a proposta PAINT/2026 (SEI nº 14848847) está alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU, especialmente o Objetivo 16, voltado para a construção de instituições eficazes, responsáveis e inclusivas em todos os âmbitos. Ao elaborar seu Plano de Auditoria Interna, a Agência não apenas se adequa, mas se destaca ao se aproximar das metas 16.5 (redução significativa da corrupção e do suborno em todas as suas formas) e 16.6 (desenvolvimento de instituições eficazes, responsáveis e transparentes em todos os níveis).
+Ante o exposto, considerando que a proposta em avaliação foi elaborada em conformidade com a Instrução Normativa nº 5/2021 da Secretaria Federal de Controle Interno da Controladoria-Geral da União (CGU), com o Manual de Orientações Técnicas da Atividade de Auditoria Interna Governamental do Poder Executivo Federal, aprovado pela Instrução Normativa nº 8/2017, e com as orientações disponibilizadas na página "Perguntas e respostas sobre o Plano Anual de Auditoria Interna" do portal eletrônico da CGU, e contou com a apreciação da Coordenação-Geral de Auditoria das Áreas de Ciência, Tecnologia, Inovações e Comunicações (CGTIC/CGU), que considerou todos os itens avaliados como adequados, não tendo apresentado sugestões para inclusão ou exclusão de serviços nem se identificado oportunidade de coordenação ou execução compartilhada de trabalhos, proponho a aprovação do Plano Anual de Auditoria Interna para o exercício de 2026 PAINT/2026 (SEI nº 14848847), nos termos da Minuta de Resolução Interna PAINT/2026 (SEI nº 13069557).
+CONCLUSÃO
+Propõe-se aprovar o Plano Anual de Auditoria Interna para o exercício de 2026 - PAINT/2026 (SEI nº 14848847), nos termos da Minuta de Resolução Interna PAINT/2026 (SEI nº 13069557).
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 22/12/2025, às 15:44, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14910175 e o código CRC 54D51990.
+ | 
+Referência: Processo nº 53500.084209/2025-18 | 
+SEI nº 14910175 |

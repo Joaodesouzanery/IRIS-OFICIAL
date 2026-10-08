@@ -1,0 +1,51 @@
+SEI/ANATEL - 16188131 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 97/2026/PR
+Processo nº 53500.020054/2026-64
+Interessado: Starlink Brazil Holding Ltda.
+PRESIDENTE
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Proposta de distribuição, por conexão, do processo nº 53500.020054/2026-64 ao mesmo relator do processo nº 53500.003778/2026-43, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+EMENTA
+DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO. SISTEMA DE SATÉLITES NÃO GEOESTACIONÁRIOS. EXISTÊNCIA DE PROCESSO JÁ DISTRIBUÍDO ENVOLVENDO O MESMO SISTEMA. DISTRIBUIÇÃO POR CONEXÃO. Portaria nº 495/2012. APROVAÇÃO.
+Análise sobre a possibilidade de distribuição do processo nº 53500.020054/2026-64 ao mesmo relator do processo nº 53500.003778/2026-43.
+O processo nº 53500.020054/2026-64 cuida de solicitação de alteração do Direito de Exploração de Satélites conferido à SPACE EXPLORATION HOLDINGS, LLC ("SPACEX"), correspondente ao sistema de satélites não geoestacionários Starlink, para provimento de capacidade satelital no Brasil em parte das subfaixas de radiofrequências contidas na Banda S.
+O processo nº 53500.003778/2026-43 trata de solicitação de alteração do Direito de Exploração de Satélites conferido à SPACEX, correspondente ao mesmo sistema de satélites não geoestacionários Starlink, com vistas à adição das subfaixas de radiofrequências de 12,75 a 13,25 GHz, 13,75 a 14 GHz, 29,10 a 29,50 GHz, 47,20 a 50,20 GHz e 50,40 a 51,40 GHz (enlaces de subida) e de 17,70 a 17,80 GHz, 19,30 a 20,20 GHz, 37,50 a 39,50 GHz e de 40 a 42,50 GHz (enlaces de descida), associadas às bandas Ku, Ka e Q/V.
+Competência do Conselho Diretor para decidir sobre a distribuição de processos por conexão, nos termos da Portaria nº 495, de 24 de maio de 2012.
+Aprovação da conexão.
+REFERÊNCIAs
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria nº 495, de 24 de maio de 2012;
+Processo nº 53500.020054/2026-64;
+Processo nº 53500.003778/2026-43.
+RELATÓRIO
+Trata-se de análise quanto à distribuição, por conexão, do processo nº 53500.020054/2026-64 ao mesmo relator do processo nº 53500.003778/2026-43, Conselheiro Alexandre Freire, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+No processo nº 53500.020054/2026-64, avalia-se solicitação de alteração ao Direito de Exploração de Satélites conferido à SPACE EXPLORATION HOLDINGS, LLC, correspondente ao sistema de satélites não geoestacionários Starlink, com vistas à adição de subfaixas de radiofrequências associadas à Banda S. O pedido foi tratado pela área técnica sob a perspectiva de conferência de novo Direito de Exploração, considerando as características particulares da faixa, que está associada ao Serviço Móvel por Satélite. No processo nº 53500.003778/2026-43, por sua vez, avalia-se solicitação de alteração do mesmo Direito de Exploração de Satélites correspondente ao sistema Starlink, com vistas à adição das subfaixas de radiofrequências de 12,75 a 13,25 GHz, 13,75 a 14 GHz, 29,10 a 29,50 GHz, 47,20 a 50,20 GHz e 50,40 a 51,40 GHz (enlaces de subida) e de 17,70 a 17,80 GHz, 19,30 a 20,20 GHz, 37,50 a 39,50 GHz e de 40 a 42,50 GHz (enlaces de descida), associadas às bandas Ku, Ka e Q/V.
+Em 17 de agosto de 2026, por meio da Certidão de Distribuição SEI nº 16134330, o processo nº 53500.003778/2026-43 foi encaminhado ao Conselheiro Alexandre Freire para relatoria.
+Por meio da Matéria para Apreciação do Conselho Diretor nº 642/2026 (SEI nº 16171326), a área técnica aponta a conexão temática entre os processos citados, sugerindo a distribuição dos presentes autos ao Conselheiro Alexandre Freire, por já estar sob sua relatoria o processo nº 53500.003778/2026-43, de modo a preservar a coerência das decisões administrativas, evitar julgamentos conflitantes e assegurar a observância dos princípios da segurança jurídica, da economia processual e da prevenção.
+É o breve relatório.
+Análise
+Conforme apontado no relato dos fatos, cuida-se de análise quanto à existência de conexão entre o processo SEI nº 53500.020054/2026-64 e o processo nº 53500.003778/2026-43, de modo que se promova a distribuição do primeiro ao relator do segundo, por prevenção.
+O Regimento Interno da Agência (RIA), aprovado pela Resolução nº 612/2013, traz como regra geral a distribuição de matérias por meio de sistema informatizado (art. 9º), de forma randômica e proporcional, conforme o tipo de procedimento administrativo objeto da matéria levada à decisão do Conselho Diretor (art. 9º, § 1º).
+Contudo, há casos excepcionais que são analisados com base na Portaria nº 495, de 24 de maio de 2012, que estabelece procedimentos relativos à distribuição por sorteio das matérias levadas à deliberação do Conselho Diretor.
+Nos termos do art. 12 do referido normativo, é competência do Conselho Diretor decidir sobre a conexão de matérias e a distribuição de processos por conexão:
+Art. 12. Em casos de conexão ou continência, mediante requerimento devidamente motivado por Conselheiro, após aprovação do Conselho Diretor, o Presidente redistribuirá o processo ao Conselheiro que primeiro foi sorteado para relatar a matéria. [grifou-se]
+A conexão é um mecanismo processual que permite a reunião de processos em curso, para que tenham julgamento conjunto. Trata-se de um instituto que pressupõe a existência de demandas distintas, mas que possuem certo vínculo entre si. Segundo definição legal prevista no art. 55 do Código de Processo Civil, "reputam-se conexas 2 (duas) ou mais ações quando lhes for comum o pedido ou a causa de pedir".
+A esse respeito, por meio da Matéria para Apreciação do Conselho Diretor nº 642/2026 (SEI nº 16171326), a área técnica assim expôs:
+3.6. Adicionalmente, considerando a conexão temática entre a presente matéria e o Processo nº 53500.003778/2026-43, esta Superintendência propõe a distribuição, por conexão, da presente matéria ao Gabinete do Conselheiro Alexandre Freire, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012. O referido processo, distribuído àquele Gabinete, trata de solicitação da STARLINK BRAZIL HOLDING LTDA. para alteração do Direito de Exploração de Satélites conferido à SPACE EXPLORATION HOLDINGS, LLC, correspondente ao sistema de satélites não geoestacionários Starlink, com vistas à adição de subfaixas de radiofrequências associadas às bandas Ku, Ka e Q/V. A medida proposta visa preservar a coerência das decisões administrativas, evitar julgamentos conflitantes e assegurar a observância dos princípios da segurança jurídica, da economia processual e da prevenção.
+Essas considerações guardam coerência com o relato sobre o histórico dos processos nº 53500.020054/2026-64 e o nº 53500.003778/2026-43 apresentado nos itens 3.2 a 3.21 do Informe nº 28/2026/SOR (SEI nº 16164441), em que se descreveu a sequência de eventos para o processamento de ambos os pedidos de alteração do Direito de Exploração correspondente ao sistema Starlink, dos quais se depreende que se os pleitos tivessem sido apresentados ao mesmo tempo, teriam originado apenas um processo administrativo.
+De fato, como apontado nos citados documentos, ambos os processos estão diretamente relacionados, pois dizem respeito ao mesmo sistema de satélites, afetam o mesmo Direito de Exploração - ainda que em um deles a área técnica tenha proposto conferir Direito de Exploração apartado -, ensejam análise da mesma documentação e o resultado da deliberação de um deles pode afetar a do outro, em face de possíveis condições que envolvam cada faixa individualmente e o conjunto resultante.
+Nesse contexto, diante da excepcionalidade do caso que ora se apresenta, parece adequada e salutar a distribuição, por conexão, do processo nº 53500.020054/2026-64 ao mesmo relator do processo nº 53500.003778/2026-43, especialmente:
+em razão da prevalência ao princípio da eficiência disposto no art. 37 da CF/88, vez que a análise conjunta dos processos resultará em economia e celeridade para as partes e para a Administração Pública; 
+em atenção à mitigação do risco em prolação de decisões conflitantes, primando, portanto, pela segurança jurídica nos processos administrativos;
+considerando a aplicação subsidiária do Código de Processo Civil (CPC), Lei nº 13.105, de 16/03/2015, nos termos dos arts. 55, §3º que prevê que sejam "reunidos para julgamento conjunto os processos que possam gerar risco de prolação de decisões conflitantes ou contraditórias caso decididos separadamente, mesmo sem conexão entre eles".
+À vista do exposto, propõe-se a aprovação da distribuição, por conexão, do processo nº 53500.020054/2026-64 ao mesmo relator do processo nº 53500.003778/2026-43, Conselheiro Alexandre Freire, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+CONCLUSÃO
+Aprovar a distribuição, por conexão, do processo nº 53500.020054/2026-64 ao mesmo relator do processo SEI nº 53500.003778/2026-43, Conselheiro Alexandre Freire, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 28/08/2026, às 17:34, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16188131 e o código CRC 0FBD7E6F.
+ | 
+Referência: Processo nº 53500.020054/2026-64 | 
+SEI nº 16188131 |

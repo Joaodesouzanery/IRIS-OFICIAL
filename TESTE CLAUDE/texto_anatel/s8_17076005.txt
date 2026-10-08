@@ -1,0 +1,47 @@
+SEI/ANATEL - 15261920 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 14
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 51, de 03 de março de 2026
+Processo nº 53500.002785/2020-32
+Recorrente/Interessado: TIM S.A., TIM CELULAR S.A.
+CNPJ nº 02.421.421/0001-11 e nº 04.206.050/0001-80
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. QUALIDADE DO SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA - SCM E NÃO ENVIO DE DADOS DO REGULAMENTO DE GESTÃO DE QUALIDADE DO SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA - RGQ-SCM. RECURSO NÃO PROVIDO. REFORMA DE OFÍCIO. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. O Recurso. Recurso administrativo, com pedido de efeito suspensivo, interposto por TIM S.A. e TIM CELULAR S.A. contra o Despacho Decisório nº 170/2022/COQL/SCO, que aplicou advertências e multa total de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos) por descumprimentos ao RGQ-SCM (Resolução nº 574/2011).
+2. Fato relevante. Apuração de não atingimento de metas de indicadores de qualidade e de não envio de dados necessários à consolidação de indicadores do RGQ-SCM.
+3. Manifestações posteriores. Petição extemporânea requer o reconhecimento de prescrição quinquenal e aponta suposto erro material no montante da Receita Operacional Líquida - ROL de 2020.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se há erro no cálculo da multa e na ROL adotada para a metodologia sancionatória; (ii) saber se é possível agravar a sanção em sede recursal, com preservação do contraditório e da ampla defesa; e (iii) saber se cabe reconhecer prescrição quinquenal e acolher alegação de erro material apresentada em petição extemporânea.
+III. RAZÕES DE DECIDIR
+1. O processo observou o contraditório, a ampla defesa e o dever de motivação.
+2. O Recurso atende aos requisitos de admissibilidade e deve ser conhecido.
+3. A conversão de multa em obrigação de fazer depende de juízo de conveniência e oportunidade orientado pelo interesse público.
+4. A revisão de ofício é devida para corrigir a ROL utilizada no cálculo da multa relativa à TIM CELULAR S.A., adequar valores mínimos e individualização por Código Nacional - CN, e refazer a pesquisa de antecedentes das duas empresas, com incidência dos acréscimos do art. 19 do Regulamento de Aplicação de Sanções Administrativas - RASA.
+5. O agravamento da sanção em sede recursal é possível quando há manifestação prévia do interessado e oitiva da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+6. O entendimento técnico sobre advertência em irregularidades de não envio de informações deve observar o precedente que recomenda advertência apenas até 3 (três) meses de descumprimento, com multa a partir do quarto mês.
+7. A petição extemporânea deve ser recebida por direito de petição, mas o reconhecimento de prescrição não se aplica ao caso, diante da conclusão colegiada de que precedentes invocados se referem a processos de tomada de contas especial no Tribunal de Contas da União - TCU e não vinculam a Agência.
+8. A alegação de erro material sobre a ROL reitera fundamentos já enfrentados no Recurso.
+9. A obrigação de fazer de conectividade a instituições públicas de ensino superior e institutos federais atende aos parâmetros do RASA e pode ser aplicada com requisitos de execução, comprovação, manutenção e eventual recomposição.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido. Petição extemporânea conhecida e pedidos indeferidos. Reforma, de ofício, para majorar a multa para R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil, oitocentos e cinco reais e noventa e seis centavos). Aplicação da sanção de obrigação de fazer de conectividade ponto a ponto para conexão de instituições públicas de ensino superior e institutos federais à Rede Nacional de Ensino e Pesquisa - RNP, com prazo para manifestação da Prestadora quanto à adesão ou conversão em multa.
+Tese de julgamento: “1. O Conselho Diretor pode reformar, de ofício, o valor da multa em Pado para corrigir parâmetros de cálculo, inclusive ROL, mínimos regulamentares e antecedentes. 2. É admissível o agravamento da sanção em sede recursal, desde que assegurada manifestação prévia do Interessado e ouvida a PFE/Anatel. 3. Não se reconhece prescrição quinquenal com base em precedentes relacionados à tomada de contas especial no TCU, quando não vinculantes para a Anatel. 4. A obrigação de fazer pode substituir a sanção pecuniária quando motivada pelo interesse público e alinhada aos parâmetros do RASA, com definição de prazos, critérios de seleção, manutenção e comprovação.”
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 50 e art. 64, parágrafo único; Lei nº 10.480/2002, art. 10, § 1º; LC nº 73/1993, art. 11, V; Decreto nº 9.612/2018, art. 2º, IV, “a”, art. 3º e art. 4º, I, III, IV e V; Lei nº 9.637/1998; Resolução nº 574/2011, arts. 7º, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 e 26; Resolução nº 589/2012 (RASA), arts. 9º, § 2º, I, 12, I, 15, 16, 16-A, II e § 2º, 19, 20, 34, § 1º, 36, 36-A, §§ 3º, 6º, II, e 7º, e 36-B; Resolução nº 612/2013 (RIA), art. 125, §§ 1º e 4º; Resolução nº 784/2025 (alterações no RASA), art. 16; Portaria nº 642/2013 (PFE/Anatel), art. 7º, V; Portaria nº 784/2014.
+Jurisprudência relevante citada: Anatel, Súmula nº 21/2017; Anatel, Súmula nº 22/2019; Anatel, Acórdão nº 682/2018; Anatel, Acórdão nº 86/2024 (Processo nº 53500.018706/2020-13, RCD nº 930, Rel. Cons. Raphael Garcia de Souza); Anatel, Acórdão nº 65/2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 12/2025/OP (SEI nº 14399818), integrante deste acórdão:
+a) conhecer do Recurso para, no mérito, negar-lhe provimento;
+b) conhecer da petição SEI nº 14941569, em observância ao direito de petição, nos termos da Súmula nº 21/2017 da Anatel, e indeferir os pedidos nela contidos;
+c) reformar, de ofício, o valor da multa ora aplicada de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos) para R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil, oitocentos e cinco reais e noventa e seis centavos), em razão da: (i) correção no valor da ROL utilizada para o cálculo da multa relativa aos descumprimentos praticados pela TIM CELULAR S.A.; (ii) necessidade de corrigir os valores das multas aplicadas para respeitar os valores mínimos do RASA, quanto à individualização da infração por CN; e (iii) necessidade de refazer as pesquisas de antecedentes para as duas empresas envolvidas neste Pado;
+d) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos na referida análise, tendo como base o valor de R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil, oitocentos e cinco reais e noventa e seis centavos), com as correções monetárias e dedução, nos termos do RASA, a ser implementado nos termos expostos no item 4.143 da referida análise; e,
+e) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comunique à Agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15261920 e o código CRC 44BC1028.
+ | 
+Referência: Processo nº 53500.002785/2020-32 | 
+SEI nº 15261920 |

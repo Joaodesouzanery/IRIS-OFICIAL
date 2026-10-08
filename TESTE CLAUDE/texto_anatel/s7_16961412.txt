@@ -1,0 +1,3171 @@
+SEI/ANATEL - 15158009 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 23/2026/AF
+Processo nº 53500.027094/2018-27
+Interessado: SKY BRASIL SERVICOS LTDA
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso administrativo cumulado com pedido de efeito suspensivo, interposto em face do Despacho Decisório nº 120/2021/CODI/SCO (SEI nº 7160339). 
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO ADMINISTRATIVO DE DESCUMPRIMENTO DE OBRIGAÇÕES (PADO). REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇO DE TELECOMUNICAÇÕES DE 2014. AGRAVAMENTO DE SANÇÃO EM SEDE RECURSAL. POSSIBILIDADE. ENUNCIADO Nº 22 DA SÚMULA DA ANATEL. FISCALIZAÇÃO PRESENCIAL. EXTRAPOLAÇÃO DE CONCLUSÕES PARA CONDUTAS PADRONIZADAS DE CARÁTER GERAL. POSSIBILIDADE. PRECEDENTES. PRODUÇÃO DE INFORME APÓS APRESENTAÇÃO DE ALEGAÇÕES FINAIS. NULIDADE NÃO CARACTERIZADA. PRECEDENTES. ALEGAÇÃO DE COMPLEXIDADE FÁTICA. CERCEAMENTO DE DEFESA. AUSÊNCIA. APLICAÇÃO DA NORMA EM VIGOR À ÉPOCA DO FATO. IRRETROATIVIDADE DA NORMA MAIS BENÉFICA COMO REGRA. PRECEDENTES. PRESCRIÇÃO DA AÇÃO PUNITIVA. INFRAÇÕES DESCARACTERIZADAS EM PRIMEIRA INSTÂNCIA. RECONHECIMENTO. ART. 21 DO RGC 2014. NECESSIDADE DE DEMONSTRAÇÃO CUMULATIVA DE OMISSÃO DE FORNECIMENTO DA SENHA E LOGIN NO MOMENTO DA CONTRATAÇÃO E QUANDO HOUVER SOLICITAÇÃO DO CONSUMIDOR. IMPOSSIBILIDADE DE CANCELAMENTO SEM ATENDENTE. INFRAÇÃO MANTIDA. ART. 38, CAPUT, DO RGC 2014. DESCUMPRIMENTO DOS SEUS INCISOS I E II. INFRAÇÃO CARACTERIZADA. PRECEDENTE. ACHADOS DE FISCALIZAÇÃO. PRESUNÇÃO DE VERACIDADE. ÔNUS DA PRESTADORA DE DESCONSTITUÍ-LA. PRECEDENTES. DOSIMETRIA. PROPORCIONALIDADE À QUANTIDADE DE ELEMENTOS INOBSERVADOS. PFR. DECLARAÇÃO DE REGULARIDADE. EFEITOS RETROATIVOS À DATA DA APRESENTAÇÃO DO ÚLTIMO DOCUMENTO PELO INTERESSADO. ESPAÇO RESERVADO. PEDIDOS DE RESCISÃO. SENTIDO E ALCANCE DO ART. 22, INC. X, E § 3º, QUE DEVEM SER COMPLEMENTADOS PELO ART. 13 DO RGC 2014. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA (QUALIREG), ÀS DIRETRIZES DA OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ONU. RECURSO ADMINISTRATIVO CONHECIDO E PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+No caso, apuram-se infrações relacionadas à cobrança e ao cancelamento de contratos com usuários, no SeAC e no SCM. Na decisão recorrida, a Recorrente foi condenada ao pagamento multa por infração aos arts. 3º, IV, XV; 7º, caput; 10, caput e §2º; 13, caput; 14, caput e parágrafo único; 15, caput; 21, caput; 22, II e VIII; 38, I; 50, caput, V, VI e VII; 51, caput, todos do RGC 2014.
+II. QUESTÕES EM DISCUSSÃO:
+Há doze questões em discussão: (i) possibilidade de reformatio in pejus; (ii) possibilidade e condições para extrapolação de conclusões de relatórios de fiscalização; (iii) nulidade do processo por cerceamento de defesa, validade do ato de instauração e complexidade fática; (iv) retroatividade da norma mais benéfica; (v) descaracterização de infração e efeitos na contagem da prescrição; (v) ocorrência de bis in idem quando há identidade de imputações, mas relacionadas a períodos de apuração diversos; (vi) ocorrência de bis in idem quando aplicação da sanção é segmentada por infração; (vii) caracterização de infrações; (viii) ônus probatório e achados de fiscalização; (ix) quantidade de descumprimentos e repercussões no cálculo da multa para as infrações aos arts. 22, caput e §§ 2º e 3º, e 51, caput, do RGC 2014; (x) efeitos do ato que reconhece a regularidade de conduta para fins de aplicação de atenuante; (xi) aplicação de antecedentes em função do serviço fiscalizado; e (xii) aplicação de OdF consistente em antecipação de metas do Edital do 5G.
+III. RAZÕES DE DECIDIR
+1. Nos termos do Enunciado nº 22 da Súmula da Anatel, “é possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel”.
+2. Em ações de fiscalização da Anatel, é admissível a extrapolação de constatações quando as circunstâncias permitirem inferir que a conduta é adotada em caráter geral pela prestadora. Isso ocorre, por exemplo, no descumprimento de informações que devem ser disponibilizadas em sistemas automatizados para o atendimento presencial. Nesses casos, não se aplicam os atos normativos de fiscalização baseados em amostragem e metodologia estatística. Precedentes do Conselho Diretor.
+3. A produção de informe para subsidiar o Despacho Decisório recorrido após a apresentação de alegações finais não tem o condão de macular as garantias do contraditório, da ampla defesa e do devido processo legal e nem de caracterizar cerceamento de defesa. Precedentes do Conselho Diretor.
+4. Não se configura cerceamento de defesa quando é assegurado ao interessado o exercício das garantias processuais do contraditório, da ampla defesa e do devido processo legal, e desde que reste evidenciada a sua compreensão adequada dos fatos imputados e do teor do acervo probatório que os lastreia. A mera alegação de "complexidade fática" do processo não constitui condição suficiente para afastar esse entendimento. Precedentes do Conselho Diretor.
+5. No Direito Brasileiro, uma norma jurídica entra em vigor e produz seus efeitos a partir de sua publicação, mantendo-se vigente até que seja alterada ou revogada por outra norma. No âmbito do direito administrativo sancionador, prevalece o princípio do tempus regit actum, o qual estabelece que o infrator deve ser apenado segundo as normas vigentes no momento da prática da conduta, com a consequente inaplicabilidade do princípio da retroatividade da lei penal mais benéfica. Precedentes do Conselho Diretor e do STJ.
+6. No procedimento administrativo sancionador, o ato ou informe que descaracteriza a infração não tem o condão de interromper o fluxo do prazo da prescrição da ação punitiva. Precedente do Conselho Diretor.
+7. A aplicação de sanções a condutas que, embora idênticas ou análogas em suas circunstâncias fáticas, referem-se a períodos de apuração distintos, não configura bis in idem. Precedentes do Conselho Diretor.
+8. Não se caracteriza bis in idem a penalização de uma mesma conduta que impacta serviços distintos, quando tal aplicação é realizada com base em ROL segmentada por serviço fiscalizado e mediante cálculo individualizado para cada um dos serviços afetados. Precedentes do Conselho Diretor.
+9. Para que haja o descumprimento do art. 21 do RGC/2014, é necessária a omissão no fornecimento de login e senha na contratação e, cumulativamente, a omissão em fornecê-los após solicitação do consumidor, sendo que, no caso, não se comprovou esta última.
+10. O cumprimento do art. 15 do RGC pressupõe que o consumidor possa efetivamente cancelar o seu contrato, sem que ele necessite, contra a sua vontade, passar por qualquer forma de interação com atendente. 
+11. A consumação da infração ao art. 38 do RGC 2014 requer que, no atendimento presencial, a prestadora descumpra, cumulativamente, os dois comandos contidos em seus incisos. Entendimento do Conselho Diretor.
+12. O art. 38, inc. I, do RGC 2014, não exige forma específica para o seu cumprimento, podendo ser demonstrado com a disponibilização de telefone, totem, tablet, smartphone, computador (desktop, laptop, notebook) bem como por qualquer outro meio que assegure o acesso, pelo consumidor, ao atendimento remoto da prestadora, por voz, vídeo, chat, ou autoatendimento.
+13. A fé pública dos agentes de fiscalização é relativa e somente afastada quando presentes evidências em sentido contrário. Cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo - LPA. Precedentes do Conselho Diretor.
+14. Os tipos descritos no art. 22, caput, incisos e §§ 2º e 3º (regras e informações para o espaço reservado), caracterizam uma única conduta ilícita, e, nesse caso, a dosimetria da multa deve levar em consideração a proporcionalidade de comandos descumpridos. Precedentes do Conselho Diretor.
+15. O ato que reconhece a regularidade de conduta em procedimento de fiscalização regulatória tem caráter declaratório, e não constitutivo, e seus efeitos retroagem, em regra, à data da apresentação da última documentação da interessada.
+16. No espaço reservado, o art. 13 do RGC 2014 complementa o alcance e sentido do seu art. 22, inc. X, e § 3º, estabelecendo condições que devem informar o adequado cumprimento destas últimas disposições no que diz respeito ao processamento de rescisão sem intervenção de atendente no espaço reservado em estudo.
+17. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+18. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União (CGU) em parceria com o Escritório das Nações Unidas de Serviços para Projetos (UNOPS) e com o Programa das Nações Unidas para o Desenvolvimento (PNUD), por reafirmar, no caso concreto, a efetividade da regulação na proteção do consumidor dos serviços de telecomunicações.
+19. A abordagem proposta alinha-se às melhores práticas regulatórias da OCDE, na medida em que busca reafirmar a governança regulatória para assegurar o cumprimento dos padrões mínimos de qualidade de atendimento ao usuário.
+20. A decisão contribui para a promoção do item 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas, na medida em que busca promover maior transparência nas relações entre consumidores e fornecedores nos serviços de telecomunicações.
+IV. DISPOSITIVO
+Recurso parcialmente provido. Revisão de ofício.
+REFERÊNCIAS
+LEGISLAÇÃO CITADA:
+Constituição da República Federativa do Brasil.
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, Lei do Processo Administrativo - LPA.
+Resolução nº 589, de 7 de maio de 2012 (Regulamento de Aplicação de Sanções Administrativas - Rasa, na redação promovida pela Resolução nº 746, de 22 de junho de 2021).
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Anatel).
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC).
+Enunciado nº 22, da Súmula da Anatel.
+PRECEDENTES CITADOS:
+ADVOCACIA-GERAL DA UNIÃO (AGU) (Brasil). Procuradoria-Geral Federal. Procuradoria Federal Especializada junto à Agência Nacional de Telecomunicações. Parecer n. 00158/2025/PFE-ANATEL/PGF/AGU. Brasilia, DF: Advocacia-Geral da União, 06 jun. 2026. Disponível em: SEI - ANATEL. Acesso em: 16 out. 2025.
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL) (Brasil) (Conselho Diretor). Acórdão nº 100/2014-CD, no Processo nº 53500.011324/2010-89. Relator: Relator: Conselheiro Rodrigo Zerbone Loureiro. Brasília, julgado em 20 fev. 2014. Brasília, DF: Agência Nacional de Telecomunicações, [2014]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 155, de 21 de março de 2018, no Processo nº 53504.009437/2007-89. Relator: Conselheiro Otavio Luiz Rodrigues Junior. Brasília, julgado em 08 mar. 2018. Brasília, DF: Agência Nacional de Telecomunicações, [2018]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 467, de 02 de setembro de 2019, no Processo nº 53528.002400/2009-13. Relator: Conselheiro Moisés Queiroz Moreira, julgado em 22 ago 2019. Brasília, DF: Agência Nacional de Telecomunicações, [2019]. Disponível em SEI - ANATEL. Acesso em: 27 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 335, de 22 de junho de 2020, no Processo nº 53569.004161/2011-74. Relator: Conselheiro Vicente Bandeira de Aquino Neto, julgado em 18 jun. 2020. Brasília, DF: Agência Nacional de Telecomunicações, [2020]. Disponível em SEI - ANATEL. Acesso em: 27 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 181, de 12 de maio de 2021, no Processo nº 53572.001234/2009-01. Relator: Conselheiro Conselheiro Vicente Bandeira de Aquino Neto. Brasília, julgado em 06 maio 2021. Brasília, DF: Agência Nacional de Telecomunicações, [2021]. Disponível em SEI - ANATEL. Acesso em: 16 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 103, de 07 de abril de 2022, no Processo nº 53539.000321/2009-49. Relator: Conselheiro Carlos Manuel Baigorri, julgado em 06 abr. 2022. Brasília, DF: Agência Nacional de Telecomunicações, [2022]. Disponível em SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 371, de 09 de novembro de 2022, no Processo nº 53504.022200/2012-51. Relator: Conselheiro Artur Coimbra de Oliveira, julgado em 03 nov. 2022. Brasília, DF: Agência Nacional de Telecomunicações, [2022]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 111, de 10 de maio de 2023, no Processo nº 53500.003781/2020-71. Relator: Conselheiro Artur Coimbra de Oliveira, julgado em 04 maio 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 27 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 203, de 16 de agosto de 2023, no Processo nº 53500.005997/2019-38. Relator: Conselheiro Alexandre Freire, julgado em 03 ago. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 213, de 21 de agosto de 2023, no Processo nº 53500.092443/2021-87. Relator: Conselheiro Alexandre Freire, julgado em 03 ago. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 272, de 29 de setembro de 2023, no Processo nº 53500.064888/2017-91. Relator: Conselheiro Vicente Bandeira de Aquino Neto, julgado em 15 set. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 27 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 284, de 31 de outubro de 2023, no Processo nº 53500.037895/2018-09. Relator: Conselheiro Moisés Queiroz Moreira, julgado em 26 out. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 286, de 31 de outubro de 2023, no Processo nº 53500.006173/2020-19. Relator: Conselheiro Moisés Queiroz Moreira. Brasília, julgado em 26 out. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 366, de 18 de dezembro de 2023, no Processo nº 53500.037638/2018-69. Relator: Conselheiro Nilo Pasquali, julgado em 12 dez. 2023. Brasília, DF: Agência Nacional de Telecomunicações, [2023]. Disponível em SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 27, de 19 de fevereiro de 2024. no Processo nº 53500.019754/2022-82. Relator: Conselheiro Artur Coimbra de Oliveira, julgado em 08 fev. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em SEI - ANATEL. Acesso em 16 jun. 2025.
+_____ (Conselho Diretor). Acórdão nº 105, de 02 de maio de 2024, no Processo nº 53500.316504/2022-98. Relator: Conselheiro Artur Coimbra de Oliveira. Brasília, julgado em 25 abr. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 106, de 02 de maio de 2024, no Processo nº 53500.015738/2018-34. Relator: Conselheiro Artur Coimbra de Oliveira, julgado em 02 abr. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em SEI - ANATEL. Acesso em: 27 out. 2025.
+_____ (Conselho Diretor). Acórdão nº 227, de 26 de agosto de 2024, no Processo nº 53500.004479/2019-05. Relator: Conselheiro Alexandre Freire, julgado em 26 ago. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 312, de 22 de outubro de 2024, no Processo nº 53500.013670/2019-30. Relator: Conselheiro Vicente Bandeira de Aquino Neto, julgado em 17 out. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em: SEI - ANATEL. Acesso em: 24 set. 2025.
+_____ (Conselho Diretor). Acórdão nº 337, de 11 de novembro de 2024, no processo nº 53500.045133/2017-97. Relator: Conselheiro Alexandre Freire. Brasília, julgado em 04 nov. 2024. Brasília, DF: Agência Nacional de Telecomunicações, [2024]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 48, de 26 de fevereiro de 2025, no Processo nº 53500.003717/2020-91. Relator: Conselheiro Daniel Martins D'Albuquerque, julgado em 13 fev. 2025. Brasília, DF: Agência Nacional de Telecomunicações, [2025]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 60, de 19 de março de 2025, no Processo nº 53500.047707/2022-29. Relator: Conselheiro Alexandre Freire. Brasília, julgado em 13 mar. 2025. Brasília, DF: Agência Nacional de Telecomunicações, [2025]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 130, de 23 de maio de 2025, no Processo nº 53500.051877/2019-11. Relator: Conselheiro Alexandre Freire. Brasília, julgado em 15 maio 2025. Brasília, DF: Agência Nacional de Telecomunicações, [2025]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 146, de 27 de maio de 2025, no Processo nº 53500.017194/2020-60. Relator: Conselheiro Vicente Bandeira de Aquino Neto. Brasília, julgado em 15 maio 2025. Brasília, DF: Agência Nacional de Telecomunicações, [2025]. Disponível em SEI - ANATEL. Acesso em: 15 jul. 2025.
+_____ (Conselho Diretor). Acórdão nº 183, de 30 de julho de 2025, no Processo nº 53500.046286/2017-51. Relator: Conselheiro Alexandre Freire, julgado em 30 jul. 2025. Brasília, DF: Agência Nacional de Telecomunicações, [2025]. Disponível em SEI - ANATEL. Acesso em: 16 out. 2025.
+SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) (Brasil) (1. Turma). Recurso Especial nº 2.103.140/ES. Relator: Ministro Gurgel de Faria, julgado em 04 jun. 2024. Brasília, DF: Superior Tribunal de Justiça [2024]. Disponivel em: STJ.Jus. Acesso em: 19 jun. 2024.
+SUPREMO TRIBUNAL FEDERAL (STF) (Brasil) (1. Turma). Agravo Regimental no Recurso Extraordinário nº 641.054/RJ. Relator: Ministro Luiz Fux, julgado em 22 maio 2012. Brasília, DF: Supremo Tribunal Federal [2012]. Disponível em: STF. Acesso em: 18 jun. 2024
+DEMAIS REFERÊNCIAS:
+MOREIRA, Egon Bockmann. Processo administrativo: princípios constitucionais e a Lei nº 9.784/1999 - com especial atenção à LINDB. 6. ed. Belo Horizonte: Fórum, 2022.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT - OECD. Recommendation of the Council on Principles of Corporate Governance, OECD/LEGAL/0413, 2023. Disponível em: Oecd. Acesso em: 10 julho 2024.
+ONU. Organização das Nações Unidas. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: Brasil.un. Acesso em: 14 abr. 2023.
+VALENTE, Patrícia Rodrigues Pessôa. Autonomia Decisória. In: VALENTE, Patrícia Rodrigues Pessôa (org.). Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024, p. 49-55. Disponível em: CGU. Acesso em: 30 de abr. de 2024.
+RELATÓRIO
+Cuida-se de Recurso Administrativo (SEI nº 9514552) interposto por Serviços de Banda Larga Ltda. (Sky), prestadora do Serviço de Acesso Condicionado (SeAC) e do Serviço de Comunicação Multimídia (SCM), contra o Despacho Decisório nº 433/2022/CODI/SCO (SEI nº 9297928), de 03 de novembro de 2022, que lhe aplicou sanção de multa no valor total de R$14.535.014,17 (quatorze milhões, quinhentos e trinta e cinco mil, quatorze reais e dezessete centavos), por infrações ao RGC 2014 nos seguintes termos:
+O SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a disposta no art. 158, inciso IV, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do processo em epígrafe, instaurado em desfavor da Sky Brasil Serviços Ltda., CNPJ nº 72.820.822/0001-20, prestadora do Serviço de Acesso Condicionado (SeAC) e do Serviço de Comunicação Multimídia (SCM), em razão de indícios de descumprimentos ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014;
+CONSIDERANDO o teor dos Informes nº 131/2021/CODI/SCO (SEI nº 6822530) e nº 717/2022/CODI/SCO (SEI nº 9249556);
+DECIDE:
+1. Aplicar à Prestadora a sanção de MULTA no valor de R$ 14.535.014,17 (quatorze milhões, quinhentos e trinta e cinco mil quatorze reais e dezessete centavos), pelos descumprimentos aos arts. 3º, IV, XV; 7º, caput; 10, caput e §2º; 13, caput; 14, caput e parágrafo único; 15, caput; 21, caput; 22, II e VIII; 38, I; 50, caput, V, VI e VII; 51, caput, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014;
+I - Caso a Prestadora resolva, de acordo com o disposto no § 5º do art. 33 da Resolução nº 589/2012, renunciar expressamente ao direito de recorrer da decisão de primeira instância, fará jus a um fator de redução de 25% (vinte e cinco por cento) no valor da multa aplicada, desde que faça o recolhimento no prazo regulamentar, totalizando para esse caso o montante de R$ 10.901.260,62 (dez milhões, novecentos e um mil duzentos e sessenta reais e sessenta e dois centavos).
+O presente processo foi deflagrado por meio do Despacho Ordinatório de Instauração nº 229/2018/SEI/CODI/SCO (SEI nº 3394609), de 1º de novembro de 2018, a partir das conclusões do Informe nº 755/2018/SEI/CODI/SCO, constantes do Processo de Fiscalização nº 53528.003823/2016, e dos relatórios de fiscalização ali mencionados.
+Imputou-se à recorrente a prática das seguintes condutas:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ 1.
+ | 
+ Não foi verificado um sumário a ser entregue ao consumidor antes da contratação nos pontos de venda
+ | 
+ Art. 50, P.U, do Anexo à Resolução nº 632/2014
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, I, do Anexo à Resolução nº 632/2014
+ | 
+ 3.
+ | 
+ Login e senha não são fornecidos no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor
+ | 
+ Art. 21, caput, c/c Art. 3º, IV, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 4.
+ | 
+ Não é informado ao consumidor o prazo de permanência mínima e multa por rescisão antecipada
+ | 
+ Art. 50, IX c/c art. 3º, IV, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ | 
+ Art. 22, II, do Anexo à Resolução nº 632/2014
+ | 
+ 6.
+ | 
+ Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses, nem recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 7.
+ | 
+ Não é feito o cancelamento de forma presencial (salvo um único setor em SP) e imediata
+ | 
+ Art. 14, caput, c/c Art. 22, X, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 21, caput, c/c Art. 13, caput, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 10.
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do Anexo à Resolução nº 632/2014
+ | 
+ 11.
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ Art. 14, P.U., c/c rt. 85, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 12.
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ Art. 3º, X, c/c Art. 27, caput c/c Art. 7º, caput, todos do Anexo à Resolução nº 632/2014
+ | 
+ 13.
+ | 
+ Cobrança pelos custos de manutenção dos equipamentos sempre a cargo do consumidor indistintamente
+ | 
+ Art. 96 do Anexo à Resolução nº 632/2014
+ | 
+ 14.
+ | 
+ Existência de contestação do prazo de reajuste
+ | 
+ Art. 50, III, do Anexo à Resolução nº 632/2014
+ | 
+ 15.
+ | 
+ Não há disponibilização de contratação de SCM ao consumidor (SEI nº 3340144)
+ | 
+ Art. 46 do Anexo à Resolução nº 632/2014
+ | 
+ 16.
+ | 
+ Único documento entregue era a Proposta de Assinatura, na qual não consta restrições à utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders (SEI nº 3340177, 3340378 e 0341004)
+ | 
+ Art. 22, I, c/c Art. 50, caput, V, VI e VII, do Anexo à Resolução nº 632/2014
+ | 
+ 17.
+ | 
+ Os estabelecimentos visitados não registram protocolo ou encaminham pedidos de informação, reclamações e solicitações de serviços, rescisão ou qualquer outra demanda do Grupo (SEI nº 3340360) e estabelecimentos em local de difícil acesso, com endereço difícil de encontrar (SEI nº 3340957)
+ | 
+ Art. 32 do Anexo à Resolução nº 632/2014
+ | 
+ 18.
+ | 
+ Não assegura ao consumidor acesso aos canais de atendimento da Anatel (SEI nº 3340366)
+ | 
+ Art. 31 do Anexo à Resolução nº 632/2014
+ | 
+ 19.
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 20.
+ | 
+ Não há sistema disponível para as lojas terceirizadas para cadastramento de reclamações, tudo é feito pelo acesso nº 10611 (SEI nº 3340804)
+ | 
+ Art. 19, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 21.
+ | 
+ Informação sobre fidelização em letras mínimas de difícil leitura (SEI nº 3340804)
+ | 
+ Art. 50, IX, do Anexo à Resolução nº 632/2014
+ | 
+ 22.
+ | 
+ A contratação de novos pacotes de serviço permanece inviabilizada na cidade devido às áreas cobertas pelo SCM estarem saturadas (SEI nº 3340899)
+ | 
+ Art. 46 c/c Art. 3º, III, do Anexo à Resolução nº 632/2014 c/c Art. 48 do Anexo à Resolução nº 581/2012
+ | 
+ 23.
+ | 
+ Protocolo fornecido apenas no fim do atendimento pelo call center e de acordo com a solicitação do usuário (SEI nº 3340945)
+ | 
+ Art. 7º, §2º, do Anexo à Resolução nº 632/2014
+ | 
+ 24.
+ | 
+ Preços individuais dos serviços SCM são superiores quando contratados de forma isolada (SEI nº 3340945 e 3341025)
+ | 
+ Art. 54, caput e P.U., c/c Art. 41, §2º, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 25.
+ | 
+ O processamento técnico do cancelamento necessita de prazo para efetivação (SEI nº 3341004)
+ | 
+ Art. 14, caput, do Anexo à Resolução nº 632/2014
+ | 
+Em sua defesa (SEI nº 3573596), a recorrente pugnou pelo arquivamento do processo, alegando os seguintes pontos:
+vício da fiscalização por emprego incorreto de métodos amostrais;
+nulidade do despacho de instauração por não permitir uma compreensão adequada da imputação;
+necessidade de desmembramento do Pado;
+caracterização de bis in idem em decorrência de haver condutas idênticas em apuração em outros Pados;
+quanto à materialidade e autoria das infrações, pleiteia a sua descaracterização, a partir do seguinte:
+condutas nºs 1, 16 e 19 (relacionadas aos documentos entregues na contratação) - já teriam sido consideradas regulares pela Anatel e, portanto, deveriam ser descaracterizadas;
+condutas nºs 4 e 21 (informação sobre fidelização) - o consumidor disporia de informação adequada a seu respeito;
+a conduta nº 3 (login e senha) - consumidor não teria sido privado do acesso ao espaço reservado;
+as condutas nºs 5, 6, 9 e 12 (espaço reservado) - fornecem acesso ao sumário do contrato e ao histórico de demandas, além de informações sobre perfil, multa e contrato de permanência, acrescentando que, mesmo sem o CPF, o usuário disporia de outros canais de comunicação;
+condutas nºs 2, 17, 18, 20 e 23 (atendimento) - manteriam estrutura adequada de atendimento, em consonância com o exigido pela regulamentação;
+condutas nºs 7, 8, 10, 11 e 25 (cancelamento) - vem cumprindo as determinações relacionadas ao processamento do cancelamento, sobre as informações relacionadas à permanência e multa, além de restituir os valores indevidamente pagos após o cancelamento
+condutas nºs 14 (informação sobre data-base e reajuste), 15 e 22 (possibilidade de adesão ao SCM) - além de regulares, seriam meramente isoladas, sem qualquer relevância jurídica;
+conduta nº 24 (cobrança avulsa de SCM) - não haveria qualquer prática discriminatória nesse particular; e
+conduta nº 13 (cobrança por assistência técnica) - não há qualquer cobrança que não seja desconhecida do consumidor.
+Em suas alegações finais (SEI nº 3848115), a Recorrente sustentou a necessidade do encerramento formal da instrução processual, com o devido exame das alegações de defesa.
+Em 02 de abril de 2019, a Recorrente solicitou que fossem consideradas, na decisão a ser proferida, as conclusões da Anatel no Procedimento de Fiscalização Regulatória n.º 53500.007168/2018-17, nas quais teria sido atestada a observância do atendimento das normas relativas ao espaço reservado.
+No Informe nº 131/2021/CODI/SCO (SEI nº 6822530), de caráter decisório, a área técnica opinou pela rejeição das preliminares processuais arguidas pela Recorrente e, no mérito, pela caracterização das infrações abaixo (descaracterizando as demais):
+ Seq.
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Serviço
+ | 
+ Conclusão do Informe
+ | 
+ Repercussão
+ | 
+ Dano
+ | 
+ Tempo
+ | 
+ Gravidade
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, I, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Pontual
+ | 
+ 3
+ | 
+ 1 dia
+ | 
+ Média
+ | 
+ 3.
+ | 
+ Login e senha não são fornecidos no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor
+ | 
+ Art. 21, caput, c/c Art. 3º, IV, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Considerada Anteriormente (art. 51, caput - item 19)
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ | 
+ Art. 22, II, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Sistêmica
+ | 
+ 4
+ | 
+ 1 dia
+ | 
+ Grave
+ | 
+ 6.
+ | 
+ Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses, nem recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Considerada Anteriormente (art. 22, II - item 5)
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Sistêmica
+ | 
+ 4
+ | 
+ 1 dia
+ | 
+ Grave
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 21, caput, c/c Art. 13, caput, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Considerada Anteriormente (art. 22 do RGC - item 5)
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 10.
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Pontual
+ | 
+ 4
+ | 
+ Até 30 dias
+ | 
+ Grave
+ | 
+ 11.
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ Art. 14, P.U., c/c Art. 85, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada (art. 14, §único) Descaracterizada (art. 85)
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 12.
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ Art. 3º, X, c/c Art. 27, caput c/c Art. 7º, caput, todos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada (art. 7º, caput) Descaracterizada (arts. 3º, X; e 27, caput)
+ | 
+ Pontual
+ | 
+ 2
+ | 
+ Até 30 dias
+ | 
+ Média
+ | 
+ 16.
+ | 
+ Único documento entregue era a Proposta de Assinatura, na qual não consta restrições à utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders (SEI nº 3340177, 3340378 e 0341004)
+ | 
+ Art. 22, I, c/c Art. 50, caput, V, VI e VII, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada (art. 50) Descaracterizada (art. 22, I)
+ | 
+ Pontual
+ | 
+ 4
+ | 
+ 1 dia
+ | 
+ Média
+ | 
+ 19.
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Pontual
+ | 
+ 2
+ | 
+ 1 dia
+ | 
+ Média
+ | 
+ 25.
+ | 
+ O processamento técnico do cancelamento necessita de prazo para efetivação (SEI nº 3341004)
+ | 
+ Art. 14, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Pontual
+ | 
+ 5
+ | 
+ Até 30 dias
+ | 
+ Grave
+ | 
+Em 19 de dezembro de 2021, a PFE/Anatel, por meio do Parecer nº 683/2021/PFE-ANATEL/PGF/AGU (SEI nº 7688798) opinou pela caracterização das infrações aos arts. 31, 32 e 19, caput, do RGC; pela necessidade de utilização da ROL mais próxima do ano da aplicação da sanção; e pela reavaliação do cálculo de antecedentes, nos termos ali trazidos.
+Em 03 de novembro de 2022, a SCO, por meio do Informe nº 717/2022/CODI/SCO (SEI nº9249556), concluiu o seguinte:
+a descaracterização das condutas relativas aos artigos 19, 31 e 32 do RGC 2014 deve ser mantida;
+a avaliação dos antecedentes está correta; e
+a ROL utilizada não apresenta necessidade de reparos.
+Em seguida, proferiu-se o Despacho Decisório recorrido, intimando-se a Recorrente sobre seu teor em 23 de novembro de 2022 (SEI nº 9470621).
+Em 05 de dezembro de 2025, o recurso em estudo foi formalizado, tendo a Recorrente aduzido os seguintes pontos:
+desatendimento da Portaria nº 959/2012, no que diz respeito ao emprego de fiscalização por métodos amostrais;
+ocorrência de bis idem;
+violação aos princípios constitucionais da ampla defesa e do contraditório em razão da complexidade da fiscalização levada a termo e o número de condutas questionadas, aliado à forma pela qual o processo se desenvolveu e ao encerramento prematuro da instrução processual;
+ausência de infração aos arts. 15, caput, 22, inc. II, 38, inc. I, 50, caput e incs. V, VI e VII, 51, caput, todos do RGC 2014;
+em relação à multa:
+desproporcionalidade do seu valor;
+afastamento de sua aplicação para infrações insignificantes; e
+necessidade de reavaliação da ROL e de reclassificação de infrações sistêmicas para pontuais, emprego equivocado em relação da variável "Ut" e afastamento de agravante de 10% para a infração ao art. 15 do RGC.
+Por fim, solicitou o provimento do recurso, com o consequente arquivamento do Pado.
+Em 06 de dezembro de 2022, certificou-se a atribuição de efeito suspensivo ao recurso (SEI nº 9520781).
+Em 05 de novembro de 2024, por meio do Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a área técnica posicionou-se pela:
+rejeição das preliminares processuais arguidas pela recorrente;
+retificação do fator do enquadramento e do fator "Ua" para infração ao art. 38, caput, do RGC;
+descaracterização das infrações aos arts. 15, 21 e 50, caput, incs. V, VI, VII e X do RGC 2014;
+caracterização das infrações aos arts. 31 - em 73 lojas - e art. 50, parágrafo único - em 65 lojas - do RGC 2014;
+manutenção da infração ao art. 51 do RGC 2014, em caráter sistêmico;
+retirada da atenuante de 70% para a infração ao art. 22, inc. II, do RGC 2014;
+perda de objeto do pedido relativo à majoração da multa para o art. 15 do RGC 2014, ante a descaracterização da infração;
+rejeição das alegações de desproporcionalidade, de necessidade de desconsideração de infrações insignificantes, de alteração da ROL empregada, de caráter pontual das infrações pontuadas como sistêmicas,
+procedência dos pleitos relativos à consideração do total de lojas da recorrente, reenquadramento da infração ao art. 38, inc. I, para o art. 38, caput, do RGC 2014, com fator Ua = 86;
+aplicação da proporção de 5/12 (cinco doze avos) no cálculo da multa da infração ao art. 22 do RGC, ante a quantidade de incisos descumpridos;
+classificação das infrações da seguinte forma:
+grave:
+arts. 22, II, III, VII, VIII e IX; e 51, caput, do RGC, por terem atingido número significativo de usuários, dado o seu caráter sistêmico;
+arts. 13, caput, c/c 3º, XV; e 14, caput e parágrafo único, por terem ensejado vantagem direta à prestadora;
+média: arts. 7º, caput; 31; 38, caput; e 50, parágrafo único, por ter a prestadora dificultado o acesso a informações e, assim, não observado o direito dos usuários;
+impossibilidade da aplicação da pena de advertência;
+retificação da quantidade de atenuantes para o SeAC, para 38, com agravamento da pena em 20% (vinte por cento);
+aplicação da variável "T" em "até um ano" para as infrações constatadas em fiscalização e em "até 30 dias" para as infrações constatadas no relatório Focus;
+aplicação da variável "D" nos valores mínimos para cada conduta;
+na variável "Ut", para as infrações pontuais, empregou-se o número total de usuários da recorrente e, nas infrações no atendimento processual, o total de lojas da prestadora;
+Ao final, propôs a alteração do valor da multa para R$10.992.470,71 (dez milhões, novecentos e noventa e dois mil, quatrocentos e setenta reais e setenta e um centavos), sem prejuízo da notificação da Recorrente para manifestação em agravamento de pena em sede recursal.
+Em 06 de dezembro de 2024, a Recorrente se manifestou (SEI nº 12991175), trazendo os seguintes pontos:
+retroatividade da decisão que a qualificou como Prestadora de Pequeno Porte (PPP), inclusive para fins sancionatórios;
+impossibilidade de agravamento de pena em sede recursal;
+ausência de caracterização das infrações ao art. 13 e 31;
+manutenção da atenuante de 70% para as infrações ao art. 22;
+manutenção do caráter pontual da infração ao art. 51; e
+improcedência da inserção de agravantes em sede recursal.
+Em 04 de fevereiro de 2025, a área técnica, por meio do Informe nº 17/2025/CODI/SCO (SEI nº 13144025) opinou pela rejeição dos pleitos apresentados nas alegações em agravamento. Na mesma ocasião, encaminhou o processo à PFE/Anatel para manifestação.
+Em 04 de dezembro de 2024, a PFE/Anatel, por meio do Parecer nº 128/2025/PFE-ANATEL/PGF/AGU (SEI nº 13675826), opinou pela ausência de óbices quanto ao entendimento da área técnica, ressalvada a necessidade de: (i) aplicação da ROL da incorporadora do ano imediatamente anterior ao da aplicação da sanção, bem como a consideração da ROL da pessoa jurídica como um todo, sem limitação geográfica ou distinção entre matriz e filiais; e (ii) nova pesquisa quanto à existência de antecedentes da prestadora, considerando todos os serviços de telecomunicações outorgados à empresa sucessora.
+Em 07 de agosto de 2025, por meio do Informe nº 496/2025/CODI/SCO (SEI nº 13846437), a área técnica, em resposta ao parecer acima, destacou o emprego da ROL mais recente disponível à época da sanção e reafirmou seu entendimento de que o cálculo das multas deve ser realizado de forma segregada, considerando apenas os antecedentes relacionados aos serviços onde as irregularidades foram identificadas
+Ao final, ratificou o entendimento trazido no Informe nº 17/2025/CODI/SCO (SEI nº 13144025), quanto às infrações e sanções ali referidas e propôs o encaminhamento do processo ao Conselho Diretor.
+Na mesma data, a SCO, por meio do Despacho Decisório nº 384/2025/CODI/SCO (SEI nº 13847705), decidiu conhecer o recurso interposto e encaminhar o processo ao Conselho Diretor e, consoante Matéria para Apreciação do Conselho Diretor 517/2025 (SEI nº 13847737), encaminhou o processo à Superintendência Executiva (SUE).
+Em 13 de agosto de 2025, a SUE encaminhou o processo à Secretaria do Conselho Diretor por meio de Despacho Ordinatório (SEI nº 14168256).
+O processo foi distribuído para a minha relatoria em 14 de agosto de 2025, conforme Certidão de Distribuição (SEI nº 14192162).
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise encontra-se dividida em oito partes. Na primeira, examina-se a admissibilidade do recurso interposto. Na segunda, avaliam-se as questões processuais e prejudiciais de mérito. Na terceira, analisam-se os aspectos relacionados à materialidade da infração. Na quarta, ponderam-se os elementos capazes de influenciar na dosimetria da multa, trazidos pela recorrente e pela área técnica, com o consequente recálculo do valor da multa. Por fim, faz-se a conformação do objeto da presente análise com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com as recomendações de boas práticas regulatórias do Programa de Aprimoramento da Qualidade da Regulação Brasileira (QUALI-REG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE) e com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Admissibilidade
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O recurso administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão.
+No presente caso, tem-se que o recurso administrativo foi dirigido à SCO, que dele conheceu e manteve a decisão recorrida. Portanto, o encaminhamento para decisão do Conselho Diretor é cabível, conforme previsto no art. 115, § 1º, alín. “b”, do RIA, assim transcrito:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+Não se vislumbra, ainda, a incidência das hipóteses de não conhecimento do presente recurso, previstas no art. 116 do RIA, a saber:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Quanto à tempestividade, conforme certidão (SEI nº 9470621), o prazo para a interposição do recurso teve início em 23 de novembro de 2022. Por sua vez, o recurso administrativo foi interposto em 05 de dezembro de 2022 (SEI nº 9514554), atendendo ao prazo de 10 (dez) dias definido pelo RIA.
+De igual forma, a recorrente é parte legítima deste procedimento, possuindo interesse na reforma da decisão, estando regularmente representada.
+Estão presentes os requisitos de admissibilidade recursal, devendo o Conselho Diretor conhecer do pedido de reforma da decisão.
+Assim, admite-se o recurso interposto.
+II - Questões Preliminares e Prejudicial de Mérito
+Neste tópico, estudam-se as questões processuais e prejudiciais de mérito na seguinte ordem: possibilidade de agravamento de sanção em sede recursal, nulidade dos relatórios de fiscalização, nulidade do PADO por encerramento prematuro da instrução, nulidade do PADO por cerceamento de defesa, prescrição da ação punitiva, irretroatividade da norma penal mais benéfica, prescrição da ação punitiva de infrações descaracterizações em primeira instância e ocorrência de bis in idem.
+II.a - Possibilidade de Agravamento da Sanção (Reformatio in Pejus)
+A PFE/Anatel, no Parecer nº 128/2025/PFE-ANATEL/PGF/AGU (SEI nº 13675826), manifestou-se no sentido de que é possível o agravamento da sanção (reformatio in pejus) na esfera recursal administrativa, desde que haja a regular intimação para a apresentação de alegações, nos termos do art. 64, parágrafo único da LPA, e desde que sejam respeitados os princípios da razoabilidade, proporcionalidade e motivação. Acrescenta que tal entendimento está respaldado na jurisprudência de diversos tribunais do país e no entendimento da Anatel.
+A possibilidade de agravamento da pena (reformatio in pejus), em sede recursal, é matéria pacificada no Conselho Diretor, conforme Enunciado nº 22 da Súmula da Anatel, assim redigido:
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel.
+Veja-se o que diz o art. 64 da LPA:
+Art. 64. O órgão competente para decidir o recurso poderá confirmar, modificar, anular ou revogar, total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+Parágrafo único. Se da aplicação do disposto neste artigo puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão. (grifou-se)
+No mesmo sentido, o art. 125, §§ 3º e 4º, do RIA dispõe:
+Art. 125. A tramitação do recurso administrativo observará as seguintes regras:
+(...)
+§3º A autoridade competente para decidir o recurso administrativo poderá confirmar, modificar, anular ou revogar total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+§4º Se da aplicação do disposto no §3º puder decorrer gravame à situação do recorrente, este deverá ser intimado para que, no prazo de 15 (quinze) dias, formule suas alegações antes da decisão. (grifou-se)
+A revisão de uma decisão administrativa é fundamentada no princípio da autotutela da Administração Pública, nos termos do Enunciado nº 346 da Súmula do STF, que afirma que a Administração Pública pode anular seus próprios atos. Ou seja, o Estado possui o dever-poder de corrigir atos ilegais, incluindo os atos de efeitos concretos.
+Nesse sentido, confira-se o seguinte julgado do eg. Supremo Tribunal Federal:
+Ementa: AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. ADMINISTRATIVO. ATENDIMENTO BANCÁRIO. REGULAMENTAÇÃO POR NORMAS INFRACONSTITUCIONAIS LOCAIS. POSSIBILIDADE. REPERCUSSÃO GERAL RECONHECIDA PARA RATIFICAR A JURISPRUDÊNCIA DA CORTE. PROCESSO ADMINISTRATIVO. RECRUDESCIMENTO DA SANÇÃO ADMINISTRATIVA EM RECURSO DO ADMINISTRADO. PRINCÍPIO DA AUTOTUTELA. POSSIBILIDADE.
+1. Os municípios têm competência para regulamentar o atendimento ao público em instituições bancárias, uma vez que se trata de matéria de interesse local.
+2. A jurisprudência da Corte sobre a matéria foi ratificada pelo Plenário desta Corte quando do julgamento do RE 610.221, da Relatoria da E. Min. Ellen Gracie, cuja Repercussão Geral restou reconhecida.
+3. A possibilidade da administração pública, em fase de recurso administrativo, anular, modificar ou extinguir os atos administrativos em razão de legalidade, conveniência e oportunidade, é corolário dos princípios da hierarquia e da finalidade, não havendo se falar em reformatio in pejus no âmbito administrativo, desde que seja dada a oportunidade de ampla defesa e o contraditório ao administrado e sejam observados os prazos prescricionais. 4. In casu, o acórdão recorrido assentou: “ADMINISTRATIVO - FUNCIONAMENTO DOS BANCOS – EXIGÊNCIAS CONTIDAS EM LEI ESTADUAL E MUNICIPAL – LEGALIDADE. 1. A jurisprudência do STF e do STJ reconheceu como possível lei estadual e municipal fazerem exigências quanto ao funcionamento das agências bancárias, em tudo que não houver interferência com a atividade financeira do estabelecimento (precedentes). 2. Leis estadual e municipal cuja argüição de inconstitucionalidade não logrou êxito perante o Tribunal de Justiça do Estado do RJ. 3. Em processo administrativo não se observa o princípio da "non reformatio in pejus" como corolário do poder de auto tutela da administração, traduzido no princípio de que a administração pode anular os seus próprios atos. As exceções devem vir expressas em lei. 4. Recurso ordinário desprovido.” 5. Agravo Regimental no Recurso Extraordinário com Agravo a que se nega provimento.
+(ARE 641054 AgR, Relator(a): LUIZ FUX, Primeira Turma, julgado em 22/05/2012, ACÓRDÃO ELETRÔNICO DJe-124 DIVULG 25-06-2012 PUBLIC 26-06-2012, grifos acrescidos)
+Da mesma forma, sobre o rito a ser seguido para a reformatio in pejus, consignam-se as lições de Egon Bockmann Moreira (2022, p. 317-318):
+A Lei nº 9.784/1999 fixa que, se da confirmação, modificação, anulação ou revogação da decisão recorrida “puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão” (art. 64, parágrafo único).
+Em primeiro lugar, a norma impede a reforma para pior sem prévio conhecimento e defesa do recorrido. Caso o órgão julgador cogite, mesmo em tese, de qualquer agravamento da decisão recorrida (“puder decorrer gravame”), deverá previamente notificar o recorrente de maneira fundamentada, indicando qual o agravamento imaginado e suas consequências. Em decorrência, abre‑se prazo para a manifestação do recorrente.
+Ou seja: nenhum gravame inédito aos autos poderá ocorrer sem o conhecimento prévio e o exercício da ampla defesa e do contraditório por parte do recorrente. Inclusive, poderão ser realizadas diligências probatórias, e o órgão julgador deverá levar em conta a manifestação do recorrente na motivação da decisão.
+Ou seja, é possível o agravamento da pena, em sede de recurso administrativo, desde que seja assegurado ao interessado o exercício das garantias da ampla defesa e do contraditório.
+Nesse sentido, a recorrente foi devidamente intimada para apresentar suas alegações quanto à possibilidade da reformatio in pejus.
+Assim, restam atendidas as formalidades processuais para eventual agravamento da pena pelo Conselho Diretor, incluindo a retirada de atenuantes.
+II.b - Nulidade dos Relatórios de Fiscalização por Inobservância das Regulamentações Aplicáveis para a Coleta de Dados Amostrais
+A recorrente sustentou que:
+os métodos amostrais previstos na Portaria nº 959/2012 não foram aplicados, razão pela qual os resultados não bastam para caracterizar a infração nem para qualificá-la como sistêmica;
+não se esclareceu: (i) como foram escolhidos os estabelecimentos fiscalizados em cada localidade (limitando-se a preferir os já visitados); (ii) qual critério a Agência adotou para definir o universo e a quantidade a fiscalizar; e (iii) qual a proporção esperada de itens “não conformes”, entre outros pontos;
+embora a área técnica tenha reconhecido a falta de amostragem e dito que isso não traria prejuízo por se considerar apenas as irregularidades encontradas, essa conclusão deve ser revista por três motivos: (i) a ausência de descrição dos procedimentos impede verificar os pressupostos estatísticos e a validade das inferências; (ii) algumas infrações foram tratadas como sistêmicas, apesar de se afirmar que só valeriam os casos analisados; e (iii) ao lançar em (Ut) o número de lojas fiscalizadas, e não o total da rede, projetou-se indevidamente um percentual — justamente o que a área técnica dissera que não ocorreria;
+as vendas por credenciados (outubro/2015, em Santa Catarina) foram ínfimas frente às por telefone ou internet, reforçando a inviabilidade de inferência estatística válida; e
+aplicam-se ao caso as mesmas premissas trazidas no processo 53500.019754/2022-82, em que se busca a anulação de relatórios de fiscalização por violação à portaria em estudo.
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a área técnica manifestou-se nos seguintes termos:
+mantém-se o entendimento apresentado no Tópico III.1.a do Informe nº 131/2021/CODI/SCO, pois as irregularidades foram examinadas individualmente com base nas informações da fiscalização, sem qualquer prejuízo à recorrente;
+quanto à alegada falta de detalhamento dos métodos de coleta, não se aplicaram percentuais nem extrapolações: apenas as irregularidades efetivamente verificadas foram sancionadas, em que o número de lojas fiscalizadas foi definido conforme a realidade do momento e a quantidade reduzida de lojas e a ausência de amostragem não prejudicaram a prestadora, já que um universo menor tende a revelar menos falhas;
+a qualificação de infrações sistêmicas (uma decorre da análise do espaço reservado da prestadora e outra, de pedidos de rescisão concluídos sem atendente) independem de amostragem e de inspeções presenciais;
+ainda que oriundas de lojas, a distinção entre infração pontual e sistêmica depende da natureza: se reflete o modus operandi da empresa, é sistêmica; se restrita a algumas lojas ou usuários, é pontual;
+quanto ao campo "Ut", assiste razão à prestadora e devem ser consideradas todas as lojas nas UFs alcançadas, não apenas as vistoriadas. Contudo, neste caso não é possível identificar o número de lojas por localidade e, para assegurar proporcionalidade, foram utilizados os dados nacionais, eis que a ação fiscal foi de abrangência nacional; e
+somente as irregularidades de fato constatadas são computadas, sendo irrelevante alegações no sentido de que as vendas por telefone e internet superem as presenciais.
+Conforme bem pontuado pela Recorrente, aplicam-se ao caso as mesmas premissas de decisão adotadas no Processo nº 53500.019754/2022-82.
+No Acórdão nº 27, de 19 de fevereiro de 2024 (SEI nº 11524911), que examinou o pedido da Recorrente naquele caso, o Conselho Diretor da Anatel, por decisão unânime, acolheu a Análise nº 106/2023/AC (SEI nº 11323986), reputou válidos os relatórios de fiscalização ali impugnados e concluiu que:
+as infrações foram identificadas por meio da análise de documentos e declarações oficiais fornecidas pela própria empresa, sem o uso de amostragens ou inferências estatísticas;
+as visitas presenciais aos pontos de atendimento serviram para confirmar e complementar as evidências, não havendo exigência normativa para uso de técnicas estatísticas, conforme Portaria nº 697/2015 e art. 26 da Resolução nº 596/2012;
+muitas das falhas constatadas não se referem ao atendimento físico, afastando, por si só, a alegação de nulidade por supostos erros de amostragem; e
+e os procedimentos seguidos respeitaram os princípios da legalidade, razoabilidade e valoração adequada das provas.
+Dessa forma, rejeita-se a nulidade alegada.
+II.c - Nulidade do Pado por Encerramento Prematuro da Instrução
+A Recorrente sustentou ter sido intimada a apresentar razões finais antes do encerramento da fase instrutória, pois a Anatel não teria elaborado qualquer Informe ou outro documento que examinasse os argumentos da defesa.
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a SCO opinou pela ausência de qualquer nulidade decorrente dessa circunstância.
+A tramitação processual observou rigorosamente as formalidades estabelecidas na Lei nº 9.784/99 e no RIA. A recorrente exerceu seu direito à produção de provas sem qualquer indeferimento de pleito probatório. Ademais, apresentou alegações finais e interpôs o recurso cabível.
+A conclusão da recorrente sobre o encerramento prematuro da instrução reside na omissão da análise dos argumentos defensivos.
+O Conselho Diretor da Anatel já consolidou o entendimento de que os informes processuais são documentos preparatórios, de divulgação facultativa, e disponibilizados publicamente para fins de transparência de sua atividade decisória. Nesse sentido, citam-se: Acórdão nº 103, de 07 de abril de 2022 (SEI nº 8286973), Processo nº 53539.000321/2009-49, Relator: Conselheiro Carlos Manuel Baigorri; Acórdão nº 213, de 21 de agosto de 2023 (SEI nº 10739004), Processo nº 53500.092443/2021-87, de minha relatoria; e Acórdão nº 227, de 26 de agosto de 2024 (SEI nº 12484984), Processo nº 53500.004479/2019-05, de minha relatoria.
+Não se configura cerceamento da ampla defesa e do contraditório, uma vez que a recorrente exerceu seu direito de manifestação e produção de provas no processo, em estrita conformidade com os arts. 82, inc. II, e 86, do RIA, que espelham o teor da LPA.
+Vê-se que a área técnica, ainda, cumpriu com rigor o disposto no art. 82, § 3º, do RIA, ao franquear à recorrente a oportunidade para apresentação de alegações finais após o encerramento da instrução processual, verbis:
+Art. 82. O PADO observará as seguintes regras e prazos:
+(...)
+§ 3º Após o encerramento da instrução processual o interessado será intimado para, em 10 (dez) dias, apresentar alegações finais.
+Mesmo que se admita a existência de alguma nulidade, não se verificou o prejuízo imprescindível para a sua caracterização.
+Assim, refuta-se a tese de nulidade do feito decorrente do encerramento prematuro da instrução processual.
+II.d - Nulidade do PADO por Cerceamento de Defesa Decorrente de sua Complexidade Fática
+A recorrente alegou a nulidade do PADO com base nos seguintes argumentos: 
+a fiscalização se estendeu por mais de um ano, abrangeu 26 condutas e envolveu grande volume documental e informacional;
+essa complexidade teria dificultado o exercício do direito de defesa, diante das dificuldades encontradas na análise do conjunto probatório e jurídico dos autos; e
+a instrução processual, segundo sustenta, deve ser clara, de modo a viabilizar o pleno exercício da defesa.
+A área técnica, por meio do Informe nº 283/2024/CODI/SCO (SEI nº 12491685), afastou a alegação de nulidade com base nos seguintes fundamentos:
+a recorrente tinha ciência das condutas apuradas desde o início da fiscalização e colaborou com requerimentos de informação e verificações in loco;
+embora o prazo de defesa seja de 15 dias e exista fase de alegações finais, o art. 86 do RIA permite apresentar provas mesmo após o prazo de defesa
+até a decisão, a recorrente pode juntar documentos, e no caso houve quase quatro anos entre a notificação e a decisão de 1ª instância, sendo-lhe assegurada ampla oportunidade de se manifestar sobre as imputações;
+apesar do grande volume de informações, houve tempo suficiente, não havendo cerceamento de defesa ou contraditório, razão pela qual a preliminar não deve prosperar.
+Diante disso, não assiste razão à recorrente.
+Conforme entendimento consolidado do Conselho Diretor (cf. Acórdão nº 183, de 30 de julho de 2025, no Processo nº 53500.046286/2017-51, de minha relatoria; Acórdão nº 48, de 26 de fevereiro de 2025, no Processo nº 53500.003717/2020-91, Relator: Conselheiro Daniel Martins D'Albuquerque; Acórdão nº 203, de 16 de agosto de 2023, no Processo nº 53500.005997/2019-38, de minha relatoria; e Acórdão nº 371, de 09 de novembro de 2022, no Processo nº 53504.022200/2012-51, Relator: Conselheiro Artur Coimbra de Oliveira), não se reconhece a nulidade por cerceamento de defesa quando o processo observa as formalidades legais (Lei nº 9.784/99) e regimentais e revela que o interessado compreendeu os fatos imputados e o respectivo acervo probatório.
+No presente caso, não se verifica cerceamento de defesa nem afronta aos princípios do contraditório e da ampla defesa, uma vez que o procedimento permitiu à recorrente a plena compreensão dos fatos e o exercício das garantias processuais.
+A recorrente teve, em diversas fases (defesa inicial, alegações finais e recurso), a oportunidade de apresentar argumentos, requerer provas, recorrer individualmente em relação a cada infração apontada e manifestar-se em sede recursal, num processo que tramita há quase sete anos.
+Assim, rejeita-se a nulidade arguida.
+II.e - Retroatividade da Norma mais Benéfica em Virtude de Decisão Cautelar que Reclassificou a Recorrente como PPP
+Nas suas alegações em agravamento recursal (SEI nº 12991175), a Recorrente solicitou a aplicação retroativa da norma regulatória mais benéfica para afastar infrações baseadas em obrigações que não se aplicam a Prestadoras de Pequeno Porte (PPP), com base nos seguintes fundamentos:
+passou a ser considerada PPP pela Anatel.
+houve concessão de medida cautelar reconhecendo a SKY como PPP no Processo nº 53500.109871/2023-18 (Análise nº 20/2024/AC, aprovada pelo Acórdão nº 108/2024); e
+em alinhamento a isso, a Anatel vem arquivando procedimentos sobre obrigações não aplicáveis às PPPs, como o Processo de Fiscalização Regulatória nº 53500.003566/2022-32 (acessibilidade 2022–2024).
+No Informe nº 17/2025/CODI/SCO (SEI nº 13144025), a SCO opinou pela rejeição de tal tese, seguindo a orientação da PFE/Anatel.
+Consoante o entendimento pacífico do Conselho Diretor da Anatel, o princípio da retroatividade da lei penal mais benéfica não se aplica ao direito administrativo sancionador. Ilustram tal posicionamento, exemplificativamente, os seguintes precedentes: Acórdão nº 183, de 30 de julho de 2025 (Processo nº 53500.046286/2017-51, de minha relatoria, que aborda especificamente os efeitos da decisão cautelar em estudo na punibilidade das infrações da Recorrente); Acórdão nº 146, de 27 de maio de 2025 (Processo nº 53500.017194/2020-60; Relator: Conselheiro Vicente Bandeira de Aquino Neto); Acórdão nº 60, de 19 de março de 2025 (Processo nº 53500.047707/2022-29, de minha relatoria); Acórdão nº 105, de 02 de maio de 2024 (Processo nº 53500.316504/2022-98; Relator: Conselheiro Artur Coimbra de Oliveira); e Acórdão nº 286, de 31 de outubro de 2023 (Processo nº 53500.006173/2020-19; Relator: Conselheiro Moisés Queiroz Moreira).
+Confira-se, a propósito, a ementa do seguinte julgado, relatado pelo Exmo. Ministro Gurgel de Faria (com grifos acrescidos):
+PROCESSUAL CIVIL E ADMINISTRATIVO. INFRAÇÃO ADMINISTRATIVA. LEI POSTERIOR MAIS BENÉFICA. RETROATIVIDADE. PREVISÃO EXPRESSA. NECESSIDADE.
+1. A jurisprudência da Primeira Turma vem entendendo pela de possibilidade de retroação de lei mais benéfica nos casos que envolve penalidades administrativas, por compreender que o art. 5º, LV da Constituição da República traria princípio geral de Direito Sancionatório.
+2. Acontece que no julgamento do Tema 1.199, o STF apontou a necessidade de interpretação conjunta dos incisos XL e XXXVI, do art. 5º da Constituição da República, devendo existir disposição expressa na legislação para se afastar o princípio do tempus regit actum, porque a norma constitucional que estabelece a retroatividade da lei penal mais benéfica está diretamente vinculada ao princípio do favor libertatis, peculiaridade inexistente no Direito Administrativo Sancionador, a exigir nova reflexão deste Tribunal sobre a matéria.
+3. Não se mostra coerente (com o entendimento do STF) que se aplique o postulado da retroatividade de lei mais benéfica aos casos em que se discute a mera redução do valor de multa administrativa (portanto, muito mais brandos) e, por outro lado, deixe-se de aplicar o referido princípio às demandas de improbidade administrativa, cuja sanção é seguramente muito mais grave, com consequência que chegam a se equiparar às do Direito Penal.
+4. Considerando os critérios delineados pelo STF, a rigor, a penalidade administrativa deve se basear pelo princípio do tempus regit actum, salvo se houver previsão autorizativa de aplicação do normativo mais benéfico posterior às condutas pretéritas.
+5. No caso, é incontroverso que: a) após a prática da infração, houve a modificação do ato normativo que fixava a penalidade administrativa, pois, embora tenha sido preservada a sanção em si, o valor da multa foi reduzido; b) a aplicação retroativa da nova norma mais benéfica não se operou em razão da aplicação da própria norma, mas sim em decorrência de determinação judicial (acórdão recorrido), pelo que esta última decisão deve ser reformada.
+6. Recurso especial provido.
+(REsp n. 2.103.140/ES, relator Ministro Gurgel de Faria, Primeira Turma, julgado em 4/6/2024, DJe de 18/6/2024.)
+Dessa forma, o princípio tempus regit actum, que determina a apuração das infrações conforme a norma vigente à época de seu cometimento, aplica-se aos fatos em apuração. Nesse caso, a norma aplicável é o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+Assim, não deve prosperar a irresignação apresentada.
+II.f - Prescrição da Ação Punitiva quanto à Recaracterização de Infrações
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a área técnica propôs a recaracterização das infrações aos arts. 31 e 50, parágrafo único do RGC 2014, relacionadas, respectivamente, à ausência de disponibilização de acesso, ao consumidor, aos canais de atendimento da Anatel no atendimento nos estabelecimentos e à ausência de disponibilização de sumário a ser entregue ao consumidor antes da contratação nos pontos de venda.
+Por meio do Parecer nº 158/2025/PFE-ANATEL/PGF/AGU (SEI nº 13815948), exarado no Processo nº 53500.046286/2017-51, a PFE/Anatel se manifestou pela prescrição da recaracterização das infrações descaracterizadas em primeira instância, com base nos seguintes fundamentos:
+segundo a Lei nº 9.873/99, o prazo prescricional da ação punitiva é de cinco anos, contados da prática do ato ou de sua cessação, sendo passível de interrupção por hipóteses legais específicas; e
+a notificação para apresentação de defesa interrompeu a contagem da prescrição, e a produção de informe posterior descaracterizando a infração não configura ato capaz de reiniciar o prazo prescricional.
+Nos termos dos itens 5.60 a 5.65, da Análise nº 27/2021/VA (SEI nº 6643010), acolhida unanimemente pelo Conselho Diretor por meio do Acórdão nº 181, de 12 de maio de 2021 (Processo nº 53572.001234/2009-01), a descaracterização da infração, no ato de primeira instância que procede ao julgamento final do PADO, não tem o condão de interromper a prescrição da ação punitiva. Tal entendimento foi reiterado no Acórdão nº 183, de 30 de julho de 2025, referente ao Processo nº 53500.046286/2017-51, de minha relatoria.
+No que concerne às infrações descaracterizadas, constata-se o transcurso de mais de cinco anos entre o último ato capaz de interromper o prazo prescricional da ação punitiva – no caso, a notificação da recorrente para apresentação de defesa, ocorrida em 19 de novembro de 2018 (conforme SEI nº 3491441 e nº 3491534) – e o momento presente, bem como entre tal data e a anexação do Informe nº 283/2024/CODI/SCO (SEI nº 12491685), acima referido, ao processo.
+Assim, reconhece-se a prescrição da ação punitiva para as infrações aos arts. 31 e 50, parágrafo único, do RGC 2014, restando prejudicada a análise de sua materialidade e autoria.
+II.g - Alegação de Bis in Idem
+A recorrente alegou sofrer apenamento duplo e indevido, decorrente de duas situações:
+punição de condutas com a mesma tipificação em processos distintos, mesmo que ocorridas em lapsos temporais não coincidentes.
+cálculo individualizado da multa por serviço (SeAC e SCM), o que configura uma sanção em duplicidade.
+A área técnica, por meio do Informe nº 283/2024/CODI/SCO (SEI nº 12491685) determinou que o bis in idem se configura apenas com a identidade cumulativa de: partes, obrigações violadas, período fiscalizado, abrangência e serviço. Concluiu, portanto, que sancionar a mesma irregularidade em momentos ou serviços distintos não o caracteriza.
+Inicialmente, conforme precedentes do Conselho Diretor, não há bis in idem se não houver sobreposição dos períodos em que as infrações foram investigadas. Nesse sentido, destacam-se os seguintes Acórdãos: Acórdão nº 106, de 02 de maio de 2024 (SEI nº 11919104, Processo nº 53500.015738/2018-34, Relator: Conselheiro Artur Coimbra de Oliveira, destacando-se os itens 4.41 e ss. da Análise nº 29/2024/AC - SEI nº 11829817), Acórdão nº 272, de 29 de setembro de 2023 (SEI nº 10938001, Processo nº 53500.064888/2017-91, Relator: Conselheiro Vicente Bandeira de Aquino Neto), e Acórdão nº 335, de 22 de junho de 2020 (SEI nº 5677683, Processo nº 53569.004161/2011-74, Relator: Conselheiro Vicente Bandeira de Aquino Neto).
+Por fim, consoante entendimento pacífico do Conselho Diretor, a ROL empregada no cálculo da multa deve ser segmentada por serviço fiscalizado, com cálculo individualizado para cada um dos serviços atingidos. Naturalmente, essa metodologia não caracteriza bis in idem. Nesse sentido, destacam-se os seguintes precedentes: Acórdão nº 183, de 30 de julho de 2025 (SEI nº 14105212, Processo nº 53500.046286/2017-51, de minha relatoria), Acórdão nº 146, de 27 de maio de 2025 (SEI nº 13762110, Processo nº 53500.017194/2020-60, Relator: Conselheiro Vicente Bandeira de Aquino Neto), Acórdão nº 130, de 23 de maio de 2025 (SEI nº 13744962, Processo nº 53500.051877/2019-11, de minha relatoria), Acórdão nº 111, de 10 de maio de 2023 (SEI nº 10216308, Processo nº 53500.003781/2020-71, Relator: Conselheiro Artur Coimbra de Oliveira) e Acórdão nº 467, de 02 de setembro de 2019 (SEI nº 4570941, Processo nº 53528.002400/2009-13, Relator: Conselheiro Moisés Queiroz Moreira).
+Assim, rejeitam-se as alegações de bis in idem da recorrente.
+III - Materialidade das Infrações
+Neste item, examina-se a materialidade das infrações em apuração, na sequência a seguir: condutas cuja descaracterização foi proposta pela área técnica após o recurso interposto, em seguida, infrações mantidas pela área técnica e, ao fim, consolidação da situação das infrações discutidas no processo.
+III.a - Avaliação das Condutas Descaracterizadas pela Área Técnica após a Interposição do Recurso
+Neste subitem, avaliam-se as condutas para as quais a área técnica propôs a descaracterização em sede recursal, na seguinte ordem:
+ Sequencial
+ | 
+ Dispositivo
+ | 
+ Conduta irregular
+ | 
+ 3
+ | 
+ Art. 21, caput, c/c Art. 3º, IV, do RGC 2014
+ | 
+ Login e senha não são fornecidos no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor
+ | 
+ 8
+ | 
+ Art. 15, caput, do RGC 2014
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ 16 (2ª parte)
+ | 
+ Art. 50, caput, incs. V, VI e VII, do RGC 2014
+ * Observa-se que a 1ª parte (art. 22, inc. I) foi descaracterizada em primeira instância
+ | 
+ Único documento entregue era a Proposta de Assinatura, na qual não consta restrições a utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders (SEI nº 3340177, 3340378 e 0341004)
+ | 
+III.a.1 - Sequencial 3 - art. 21, caput, c/c art. 3º, inc. IV, do RGC 2014 - Ausência de Fornecimento de Login e Senha no Ato da Contratação
+Em primeira instância, o sequencial 03, que envolve a ausência de fornecimento de login e senha no ato da contratação (art. 21, caput, c/c art. 3º, inc. IV, do RGC 2014), foi considerado absorvido na infração ao art. 51, caput, do RGC 2014 (sequencial 19).
+As disposições em comento encontram-se assim redigidas:
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+IV - ao prévio conhecimento e à informação adequada sobre as condições de contratação, prestação, meios de contato e suporte, formas de pagamento, permanência mínima, suspensão e alteração das condições de prestação dos serviços, especialmente os preços cobrados, bem como a periodicidade e o índice aplicável, em caso de reajuste;
+(...)
+Art. 21. O Atendimento por Internet deve ser disponibilizado na página da Prestadora na internet, por meio de espaço reservado ao Consumidor, acessível mediante inserção de login e senha fornecidos no momento da contratação do serviço ou a qualquer momento, a pedido do Consumidor.
+(...)
+Art. 51. Na contratação, a Prestadora deve entregar ao Consumidor o contrato de prestação do serviço e o Plano de Serviço contratado, bem como demais instrumentos relativos à oferta, juntamente com login e senha necessários a acesso ao espaço reservado ao Consumidor na página da Prestadora na internet, quando for o caso.
+A área técnica, no Informe nº 283/2024/CODI/SCO (SEI nº 12491685), opinou por descaracterizar a infração em comento por entender que as obrigações referidas no art. 21, caput, e no art. 51, caput, ambos do RGC 2014, são diversas entre si e não se confundem. Destacou que o art. 21 do RGC, inserido na Subseção I (“Do Atendimento por Internet”), permite a disponibilização de login e senha na contratação ou a qualquer momento, mediante solicitação, diferindo do art. 51, caput. Ponderou, ainda, que a fiscalização informou a existência de auto cadastramento com geração de senha no primeiro acesso (Anexo 4_Descrição da Ação de Fiscalização – 1400369), e, portanto, que não se verifica infração ao art. 21, uma vez que a obrigação de disponibilização “a qualquer momento” está atendida.
+Entende-se que a proposta da área técnica deve ser acolhida, pois o descumprimento do art. 21 do RGC 2014 exige a demonstração de duas condutas, cumulativamente: além da omissão do fornecimento de login e senha no momento da contratação, é necessário que a prestadora se omita em fornecê-lo quando formalmente provocada pelo consumidor. No caso, a negativa de cumprimento dessa última parte não restou demonstrada.
+Assim, provê-se o recurso para descaracterizar a conduta em estudo, sem prejuízo da avaliação dessa conduta à luz do art. 51, caput, do RGC 2014, o que será feito posteriormente.
+I
+III.a.2 - Sequencial 8 - art. 15, caput, do RGC 2014 - Descumprimento do Regramento do Distrato sem Intervenção de Atendente
+O art. 15, caput, do RGC 2014, determina que "[o]s pedidos de rescisão processados sem intervenção de atendente, na forma deste Regulamento, devem ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito".
+Na decisão objeto de recurso, apurou-se que a recorrente compeliria o consumidor a interagir com um atendente, dado que não esclarece o valor da multa pertinente ao contrato específico e obsta a devolução dos equipamentos sem a prévia consulta a um "especialista".
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), em avaliação do recurso interposto, opinou-se pela descaracterização da infração, pelos seguintes fundamentos:
+a recorrente efetivamente já disponibilizava a opção de cancelamento sem atendente via URA e internet;
+a dificuldade de acesso e o desenho que induzia contato com atendente não caracterizam, por si só, descumprimento do art. 15, caput, do RGC 2014;
+o art. 15, caput, do RGC 2014 exige a possibilidade e a operacionalização do cancelamento sem atendente, sem impor forma específica de disponibilização; e
+essa condição específica foi cumprida e, assim, a infração deve ser afastada no caso analisado, destacando-se que as demais obrigações associadas ao art. 15 (processamento automático e prazo de 2 dias úteis) não foram avaliadas pela fiscalização.
+Feita essa contextualização, discorda-se do posicionamento da área técnica quanto à caracterização da infração no central de atendimento telefônico, acolhendo-se, neste particular, parcialmente os fundamentos trazidos no Informe nº 131/2021/CODI/SCO (SEI nº 6822530), que fundamentou a decisão recorrida, a seguir transcritos:
+3.101. A fiscalização afirma no "Anexo 4_DESCRICAO DA ACAO DE FISCALIZACAO" (págs. 27 a 29, e 33 do SEI 1400369) o que segue:
+(...)
+3.102. De fato, há uma indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista", o que claramente fere o art. 15 do RGC, in verbis:
+(..)
+A seu turno, confiram-se os seguintes excertos do Relatório de Fiscalização:
+4.8.5 Cancelamento sem intervenção de atendente – Central de Atendimento
+A figura 4.8.1.a acima demonstra o fluxo na URA da Central de Atendimento. Foi realizado o teste para cancelar totalmente a assinatura e verificou-se que as mensagens audíveis descritas de forma suscinta a seguir:
+- Que o consumidor está em período de fidelidade com a SKY e sugere apertar 1 para falar com o especialista;
+- Se você prefere pagar a multa por rescisão antecipada do contrato aperte 2.
+- Segundo o contrato vai ser emitido um boleto que pode chegar a R$ 1.440,00 dependendo dos meses restantes e o não pagamento desse boleto incluirá o seu nome no SPC ou SERASA.
+- Para entender melhor esses valores COM o especialista apertar 1. Ou para confirmar a emissão IMEDIATA do boleto apertar 2.
+- Informa que o consumidor possui equipamentos de propriedade da SKY e será emitido OUTRO BOLETO no nome do consumidor com o valor dos equipamentos que poderá chegar até a R$ 1.299,00 por equipamento dependendo do tipo.
+- Apertar 1 para falar com o especialista e agendar a retirada dos equipamentos ou apertar 2 se preferir emitir o outro boleto e não devolver os equipamentos.
+- Lembra de novo que o não pagamento dos boletos enviados ao endereço do consumidor incluirá seu nome no SPC ou SERASA. Se quiser ajuda do especialista aperta 1 senão, se quiser prosseguir com o cancelamento, aperta 2.
+- No final da gravação pede a confirmação dos dados do consumidor, iniciando pelo CPF. Se quiser falar com um especialista aperta zero. Informa que a solicitação será processada em até 2 dias úteis e por último fornece o número de protocolo.
+Apesar de dispor de cancelamento automático sem a intervenção de atendente, da forma como as informações são vocalizadas, induz o consumidor a falar com o atendente pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o “especialista”.
+4.8.6 Cancelamento sem intervenção de atendente – Espaço reservado ao consumidor na Internet
+A SKY mantém a opção de cancelamento no rodapé do seu site na internet. Não há um link específico no espaço reservado ao consumidor. (Item 4.3 – cancelamento automático)
+O mesmo link de cancelamento está disponível quando o consumidor está logado no espaço reservado, sendo de difícil localização.
+Os relatos de consumidores a seguir corroboram com o que foi constatado pela fiscalização (desques nossos):
+ID-FOCUS 2783562.2016
+“Preciso efetuar o cancelamento da minha TV por assinatura, porém ao tentar no telefone 0800 701 1200 o mesmo esta indisponível, bem como no site não localizei a opção de cancelamento. Adicionalmente solicitei contato telefone através da anatel e foi apresentado o erro em anexo. Sendo assim entendo que não exista nenhum meio de comunicação para cancelamento com o fornecedor em questão. “
+ID-FOCUS 2458467.2016
+“(...) Resolvi cancelar e conversando com a atendente, esta está dificultando o cancelamento, dizendo que para tanto deveria informar uma conta corrente para devolução da importância referente a taxa de adesão que está cobrando no meu cartão de crédito (não aceitando conta poupança) e uma carta de próprio punho. A mesma também não me forneceu o número do protocolo, finalizando a ligação. Tentei cancelar pelo site e o mesmo não existe o serviço de cancelamento pelo site e não consta meu CPF como cliente deles devido a não instalação dos equipamentos.(...)”
+ID-FOCUS 2427394.2016
+“Entrei em contato com a sky pelo telefone para cancelar a assinatura da TV e sempre acontece alguma coisa que a ligação cai. Fui na internet e no site não tem um link para cancelamento direto. Entrei em contato pelo chat e a atendente não cancelou, ficou fazendo mil perguntas para tentar me convencer a não cancelar e no final me passou um link (que pelo site voce nao chega nele) para efetuar o cancelamento direto pela internet. Cliquei no link e fui direcionado para atualizar dados de cadastros e etc, sendo que ao final tem uma espantosa mensagem dando a entender que teria que pagar R$ 1.299,00 de multa pela não devolução do equipamento. Como sou advogado não me espantei. Tinha 3 opções, "voltar" "solicitar que atendente ligue" "gerar boleto e pagar multa". Não tinha a opção "cancelar assinatura", sendo que claramente não iriam cancelar e essa opção realmente não existe pela internet, era só enganação. Então cliquei no atendente me ligar (que era a unica opção logica para prosseguir com o cancelamento). Atendente me ligou dizendo que a ligação tava muito ruim e pedindo outro telefone para ligar porque o meu tava muito (sendo que meu telefone é excelente e o sinal melhor ainda) daí quando fui passar outro telefone para ela ligar a ligação caiu. Quero cancelar a minha assinatura e simplesmente não existe esta opção na SKY, nem por telefone, nem por internet nem por lugar nenhum. Ficam sempre enganando os clientes. Minha assinatura é número 149425584. Nunca deram nenhum numero de protocolo. A única saída para cancelar é ter que reclamar aqui na anatel. marcello_bruno@yahoo.com “
+Porém foi verificado que alguns consumidores que conseguem registrar a solicitação de cancelamento pelo site, não é efetuado pela prestadora:
+ID-FOCUS 1921806.2016
+“A SKY descumpriu o Regulamento da ANATEL que permite ao usuário o cancelamento pelo site. Fiz meu registro em 16/05/2015 (Conforme registro feito por mim através de pint screen da tela), e imaginei que o serviço tivesse sido cancelado. Ontem, dia 14/06/2016, recebi a fatura referente ao mês de junho e liguei para reclamar. Foi realizado um novo (e mau) atendimento de cancelamento, do qual obtive o protocolo nº 201620166525553. É devida esta cobrança? Entendo que o meu registro de 16/05/2016 deva prevalecer, independente de ter que ligar para uma atendente; ora, se preciso ligar para uma atendente após um registro no site, então para que a opção de cancelamento através do site. Ao meu ver, a SKY está descumprindo o regulamento da ANATEL.“
+Porém foi verificado que alguns consumidores que conseguem registrar a solicitação de cancelamento pelo site, não é efetuado pela prestadora:
+ID-FOCUS 1921806.2016
+“A SKY descumpriu o Regulamento da ANATEL que permite ao usuário o cancelamento pelo site. Fiz meu registro em 16/05/2015 (Conforme registro feito por mim através de pint screen da tela), e imaginei que o serviço tivesse sido cancelado. Ontem, dia 14/06/2016, recebi a fatura referente ao mês de junho e liguei para reclamar. Foi realizado um novo (e mau) atendimento de cancelamento, do qual obtive o protocolo nº 201620166525553. É devida esta cobrança? Entendo que o meu registro de 16/05/2016 deva prevalecer, independente de ter que ligar para uma atendente; ora, se preciso ligar para uma atendente após um registro no site, então para que a opção de cancelamento através do site. Ao meu ver, a SKY está descumprindo o regulamento da ANATEL.“
+Como se pode ver a partir das transcrições acima, no atendimento por telefone, o percurso imposto e o tom indevido das mensagens encaminhadas são nitidamente reprováveis, por inevitavelmente induzir o consumidor a buscar o cancelamento via atendente, quando essa claramente não é intenção. No atendimento pela internet, há clara frustração da finalidade da norma em estudo, pois obstáculos e barreiras impostas, na verdade, desestimulam o consumidor de ter o seu desiderato de rescindir, pura e simplesmente, o seu contrato com a recorrente. Embora não haja um impedimento formal, são aplicados estímulos comportamentais bastante diretos para inviabilizar o cancelamento automático, funcionando basicamente como uma ameaça ao consumidor caso ele adote esta medida.
+Portanto, ante o emprego de diversos meios que reduzem a possibilidade de o consumidor ter o seu direito ao cancelamento exercido nos termos do art. 15 do RGC, mantém-se a infração, de forma sistêmica.
+Conforme decisão recorrida, classifica-se a conduta como grave tanto por ensejar vantagem direta à recorrente com a manutenção do vínculo contratual - e da consequente remuneração pelo uso do serviço - por mais tempo que o desejado pelo usuário, como pela quantidade de usuários atingidos (art. 9º, § 3º, incs. I e IV, do RASA).
+III.a.3 - Sequencial 16 - 2ª parte - art. 50, incs. V, VI e VII, do RGC 2014 - Ausência de Informações sobre Restrição à Utilização de Serviço, Limites de Franquia e Velocidade de Conexão
+Em primeira instância, a recorrente foi condenada por não disponibilizar, antes da contratação, as informações referidas no art. 50, incs. V, VI e VII, do RGC 2014, abaixo transcrito:
+Art. 50. Antes da contratação, devem ser claramente informadas ao Consumidor todas as condições relativas ao serviço, especialmente, quando for o caso:
+(...)
+V - restrições à utilização do serviço;
+VI - limites de franquia e condições aplicáveis após a sua utilização;
+VII - velocidades mínima e média de conexão;
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a área técnica entendeu que as informações em estudo encontram-se disponibilizadas na figura 4.5 do Documento "Anexo 4_Descrição da Ação de Fiscalização" (SEI nº 1400369) e que, portanto, a infração deve ser descaracterizada.
+Avaliando a documentação em comento, entende-se que procede a avaliação realizada pela área técnica e, assim, provê-se o recurso para descaracterizar a infração em estudo.
+III.b - Avaliação das Infrações Mantidas pela Área Técnica
+Neste tópico, avaliam-se as condutas para as quais a área técnica propôs a manutenção da condenação em primeira instância, na seguinte ordem:
+ Sequencial
+ | 
+ Dispositivo
+ | 
+ Conduta
+ | 
+ Serviço
+ | 
+ 2.
+ | 
+ Art. 38, caput, do RGC 2014 (reenquadramento do inc. I)
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ SeAC e SCM
+ | 
+ 5.
+ | 
+ Art. 22, inc. II, do RGC 2014
+ *Em primeira instância, houve aglutinação com os incs. III, VII e IX
+ | 
+ Não estava disponível o sumário do contrato
+ Em aglutinação: Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses
+ | 
+ SeAC e SCM
+ | 
+ 6.
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do RGC 2014
+ | 
+ Não havia recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ SeAC
+ | 
+ 9.
+ | 
+ Art. 21, caput, c/c Art. 13, caput, ambos do RGC 2014
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ SeAC e SCM
+ | 
+ 10.
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do RGC 2014
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ SeAC
+ | 
+ 11 (1ª Parte)
+ | 
+ Art. 14, parágrafo único, do RGC 2014
+ * Observa-se que a 2ª parte (art. 85, caput) foi descaracterizada em primeira instância
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ SeAC
+ | 
+ 12 (2ª Parte)
+ | 
+ Art. 7º, caput, do RGC 2014
+ * Observa-se que a 1ª parte (art. 3º, X, c/c art. 27, caput c/c Art. 7º) foi descaracterizada em primeira instância
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ SeAC
+ | 
+ 19.
+ | 
+ Art. 51, caput, do RGC 2014
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ SeAC e SCM
+ | 
+ 25.
+ | 
+ Art. 14, caput, do RGC 2014
+ | 
+ O processamento técnico do cancelamento necessita de prazo para efetivação (SEI nº 3341004)
+ | 
+ SeAC
+ | 
+III.b.1 - Sequencial 2 - art. 38, caput, do 2014 (Registros de Demandas de Consumidores nos Estabelecimentos Associados à Marca, Exceto Pontos de Venda)
+Quanto ao registro de demandas de usuários nos EAMs, o art. 38, caput, do RGC 2014, assim dispõe (grifos acrescidos):
+Art. 38. Todo Estabelecimento associado à marca da Prestadora que não se enquadre como Setor de Atendimento Presencial, deve atender demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo, mediante:
+I - disponibilização, ao Consumidor, de terminal de acesso ao Atendimento Remoto; ou,
+II - protocolo e encaminhamento de pedidos de informação, reclamações e solicitações de serviços, rescisão ou qualquer outra demanda do Consumidor.
+Em suas razões, a recorrente aduziu que:
+mantém uma estrutura de atendimento ao consumidor conforme as normas;
+nem todos os estabelecimentos com a marca SKY são destinados ao atendimento direto ao consumidor. Muitos servem apenas como pontos de logística (estoque de equipamentos ou base para equipes de instalação), não se enquadrando nas obrigações de atendimento presencial;
+o art. 38 do RGC oferece duas opções alternativas para estabelecimentos associados à marca: disponibilizar terminal de acesso ao Atendimento Remoto (inciso I); ou protocolar e encaminhar demandas dos consumidores (inciso II);
+a regulamentação permite a escolha de uma das opções, não exigindo ambas cumulativamente;
+o Manual Explicativo do RGC corrobora essa interpretação, indicando que a simples disponibilização de um terminal (como totem, tablet ou telefone) é suficiente;
+em fiscalização anterior, atestou-se a conformidade da SKY, indicando que terminais de acesso remoto (telefones móveis ou fixos) estavam disponíveis em algumas lojas, não encontrando irregularidade;
+a multa imposta foi excessivamente alta e foi desconsiderada a sua argumentação em defesa. Acrescenta que houve uma extrapolação estatística inválida na base do cálculo da multa, projetando um percentual de irregularidade (60% das lojas) a partir de uma amostra fiscalizada que não permite tal inferência; e
+a infração deve ser desconsiderada ou, subsidiariamente, que o valor da multa seja revisto para evitar um apenamento indevido.
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), a área técnica apresentou as seguintes ponderações a respeito das alegações da recorrente:
+não merece acolhimento a tese no sentido de que o art. 38 do RGC 2014 não se aplica a lojas que não são "Setores de Atendimento Presencial". Pelo contrário, a obrigação contida no art. 38 se destina justamente a todo estabelecimento associado à marca da prestadora que não se enquadre como Setor de Atendimento Presencial. Assim, as lojas fiscalizadas, por serem associadas à marca, deveriam cumprir o artigo;
+procede o entendimento no sentido de que as obrigações constantes do art. 38, incs. I (disponibilização de terminal de acesso remoto) e II (protocolo e encaminhamento de pedidos), são alternativas e não cumulativas e, assim, o cumprimento de apenas um dos incisos seria suficiente para a conformidade;
+a infração deve ser reclassificada para o art. 38, caput, do RGC, em vez de um inciso específico. Isso porque os incisos são apenas as formas de instrumentalizar o que o caput exige. Essa mudança é considerada uma correção técnica que não prejudica a defesa da prestadora, pois ela se defende dos fatos articulados, e não da sua classificação jurídica;
+apesar do caráter alternativo dessa obrigação, em fiscalização, identificaram-se 86 (oitenta e seis) estabelecimentos que não cumpriam nenhum dos incisos acima mencionados;
+houve um erro na projeção estatística de 60% de lojas irregulares para o cálculo da multa, devendo ser acolhido o pleito associado a esse ponto;
+no cálculo da multa, deve-se considerar, como "usuários atingidos" (Ua), o número exato de lojas irregulares (86), em caráter pontual; e
+a variável "usuários totais" (Ut) deve ser o número total de lojas da SKY em território nacional, já que a fiscalização teve abrangência nacional e não é possível identificar lojas por estado ou localidade no caso concreto.
+Inicialmente, conforme Acórdão nº 183, de 30 de julho de 2025 (Processo nº 53500.046286/2017-51, de minha relatoria), o Conselho Diretor entendeu que "a consumação da infração ao art. 38 do RGC 2014 requer que, no atendimento presencial, a prestadora descumpra, cumulativamente, os dois comandos contidos em seus incisos".
+Por sua vez, anota-se que o art. 38 do RGC 2014 aplica-se a todos os estabelecimentos associados à marca que prestem atendimento ao consumidor, excetuados, nos termos do mencionado Acórdão nº 183, de 30 de julho de 2025, os seguintes:
+os estabelecimentos de distribuição, por não realizarem atendimento ao usuário;
+o SAP, por estar fora do alcance do art. 38 do RGC 2014; e 
+os pontos de venda, por apresentarem características distintas dos EAMs, encontrando-se igualmente fora do alcance do art. 38 do RGC 2014.
+Sobre os pontos de venda, o MORGC esclarece que “não se pode confundir EAM com quiosques localizados no interior de lojas e mercados, bancos e estabelecimentos afins”.
+Adicionalmente, conforme Análise nº 040/2014, do Conselheiro Rodrigo Zerbone (SEI nº 3544680, fl. 1.169-verso), acolhida pelo Conselho Diretor no Acórdão nº 100/2014-CD (Processo nº 53500.011324/2010-89), os pontos de venda não são considerados para fins de avaliação da conformidade do atendimento da prestadora, verbis:
+Neste ponto, necessário se faz o ajuste redacional da definição de “estabelecimentos associados à marca”, com o fito de ressaltar que somente enquadram-se em tal categoria os estabelecimentos próprios ou disponibilizados por meio de contrato com terceiros que explorem exclusivamente a marca da prestadora, com identificação visual a ela atrelada, de sorte a ressaltar que não se sujeitam a tais condicionamentos e regras os meros pontos de venda em grandes lojas varejistas, de departamento, ou aqueles situados em pequenos empreendimentos, como bancas de jornais e revistas, farmácias etc., sob pena de inviabilizar a existência de tais pontos com a imposição de obrigações regulamentares onerosas. (grifos acrescidos)
+Com isso, mantém-se a caracterização da infração, mas diminui-se a quantidade de ocorrências (Ua) para 39 (trinta e nove), excluindo-se, da contagem realizada pela área técnica, conforme "Anexo Fiscalização Presencial - Resultado Consolidado" (SEI nº 1406412), os estabelecimentos que se caracterizam como pontos de venda e os estabelecimentos de distribuição e suporte técnico, bem como aqueles que disponibilizam terminal de acesso ao atendimento remoto via telefone.
+Com efeito, o art. 38 não realiza tal distinção e o Manual Técnico - Operacional dos Procedimentos de Implantação do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações – MORGC estabelece expressamente que, para fins do art. 39 do RGC 2014, "é possível oferecer como terminal: Totem, Tablet, Smartphone, Computador (desktop, laptop, notebook)", racional este também aplicável ao seu art. 38, inc. I.
+Na tabela abaixo, seguem as ocorrências encontradas:
+ Ocorrência
+ | 
+ Nome credenciado
+ | 
+ Endereço
+ | 
+ Cidade
+ | 
+ 1
+ | 
+ Wagner Antenas LTDA - ME
+ | 
+ Av. Nossa Senhora de Sabará, 4295
+ | 
+ SÃO PAULO - SP
+ | 
+ 2
+ | 
+ L.D. e Melo – ME
+ | 
+ Av. Mendes da Rocha, 226
+ | 
+ SÃO PAULO - SP
+ | 
+ 3
+ | 
+ A.T.I. Service Telecomunicações LTDA
+ | 
+ R Santa Veridiana, 340
+ | 
+ SÃO PAULO - SP
+ | 
+ 4
+ | 
+ Mari SAT Telecom Ltda ME
+ | 
+ Av. Yerront Kyssejikian, 3504, V. Constancia
+ | 
+ SÃO PAULO - SP
+ | 
+ 5
+ | 
+ E S DE ASSIS E L H S DE ASSIS LTDA. ME
+ | 
+ Av. Frei Orestes Girardi, 1365 - SLJ - Vila Abernéssia
+ | 
+ CAMPOS DO JORDÃO - SP
+ | 
+ 6
+ | 
+ ANBL TELECOMUNIC E SERVICOS LTDA
+ | 
+ RUA DO SENADO, 184 – CENTRO
+ | 
+ RIO DE JANEIRO -RJ
+ | 
+ 7
+ | 
+ EVOLUSOM ELETRONICA 85 LTDA-ME
+ | 
+ RUA MARQUES DE CAXIAS, 77
+ | 
+ NITERÓI - RJ
+ | 
+ 8
+ | 
+ MP Ramos Comercio e Serviços de Telecom Ltda - ME
+ | 
+ RUA APIACAS, 365 - TAQUARA
+ | 
+ RIO DE JANEIRO -RJ
+ | 
+ 9
+ | 
+ CLEONALDO DO NASCIMENTO MENDES - ME
+ | 
+ RUA GRASIELA, 70
+ | 
+ RECIPE-PE
+ | 
+ 10
+ | 
+ EXYTTO SOLUCOES EM TELECOM. LTDA - ME
+ | 
+ AV PROFESSOR ESTEVÃO FRANCISCO, 379 - TORRE
+ | 
+ RECIPE-PE
+ | 
+ 11
+ | 
+ RECEL TELECOMUNICACOES LTDA
+ | 
+ RUA MENEZES DRUMOND, 137 - MADALENA
+ | 
+ RECIPE-PE
+ | 
+ 12
+ | 
+ SUCESSO TELECON LTDA - ME
+ | 
+ RUA MARANHAO SOBRINHO, 90 - PINA
+ | 
+ RECIPE-PE
+ | 
+ 13
+ | 
+ ANHANGUERA ANTENAS
+ | 
+ RUA DA TRAMELGA, Nº 175, JARDIM ATLÂNTICO
+ | 
+ GOIÂNIA-GO
+ | 
+ 14
+ | 
+ INTERACTIVE.COM
+ | 
+ RUA CRUZEIRO DO SUL, Nº 890, JARDIM ALVORADA
+ | 
+ ANÁPOLIS-GO
+ | 
+ 15
+ | 
+ CASA DAS ANTENAS
+ | 
+ RUA C-182, nº 469, SETOR NOVA SUIÇA
+ | 
+ GOIÂNIA-GO
+ | 
+ 16
+ | 
+ TECNOVIDEO ELETROSHOP
+ | 
+ AV. DOM EMANUEL, QD.37 LT.13, VILA SANTA ROSA III
+ | 
+ GOIÂNIA-GO
+ | 
+ 17
+ | 
+ TARGET TELECOM
+ | 
+ AV. CARIRI, nº 213, JARDIM DIAMANTINA
+ | 
+ GOIÂNIA-GO
+ | 
+ 18
+ | 
+ LM COMERCIO DE EQUIP. TELEFONIA E COMUNICACAO LTDA - SKY NILL
+ | 
+ AVENIDA SILVES, 1041 - RAIZ
+ | 
+ MANAUS-AM
+ | 
+ 19
+ | 
+ ERIC FERNANDES DOS SANTOS ME
+ | 
+ QNN 1 CONJUNTO D LOTE 1 LOJA 3 CEILÂNDIA
+ | 
+ BRASILIA-DF
+ | 
+ 20
+ | 
+ IMAGEM ELETRO ELETRÔNICA
+ | 
+ QND 47 LOTE 19 TAGUATINGA NORTE
+ | 
+ BRASILIA-DF
+ | 
+ 21
+ | 
+ A Era Digital Comércio e Serviços Ltda
+ | 
+ Av. Brasil, 52 – Jardim América
+ | 
+ CARIACICA-ES
+ | 
+ 22
+ | 
+ MICROSAT
+ | 
+ Rua Prof. Otilia Cruz, 70 - Estreito
+ | 
+ FLORIANÓPOLIS-SC
+ | 
+ 23
+ | 
+ NEW VISION
+ | 
+ Rua Antônio Duarte, 5146 - Forquilha
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 24
+ | 
+ EXTREME
+ | 
+ Rua Princesa Isabel, 100
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 25
+ | 
+ MICROSAT
+ | 
+ Av. Irineu Bornhausen, 425 - Giasi
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 26
+ | 
+ SATURSAT
+ | 
+ Av. Elza Luchi, 368
+ | 
+ PALHOÇA-SC
+ | 
+ 27
+ | 
+ PEREIRA E CIA SERVIÇOS E TECNOLOGIA DE INFORMAÇÃO LTDA – EPP (SKY TOTAL)
+ | 
+ AVENIDA FERNANDES LIMA, Nº 1550, FAROL
+ | 
+ MACEIÓ-AL
+ | 
+ 28
+ | 
+ SER SKY
+ | 
+ AV Paulista, 89 - Joquei Clube
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 29
+ | 
+ J R CRISTOFOLI
+ | 
+ Rua Fernando Augusto Correia da Costa, 295
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 30
+ | 
+ TER LTDA ME
+ | 
+ Rua General Nepomuceno Costa, 637 - Vila Alba
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 31
+ | 
+ EMY LUCI ROCHA GAZOZO
+ | 
+ Av. Bandeirantes, 104 - Amambai
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 32
+ | 
+ 7 COMPONENTES ELETRÔNICOS LTDA
+ | 
+ Rua sete de Setembro, 301 - Centro
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 33
+ | 
+ Via Premium
+ | 
+ Avenida Ceará 1716
+ | 
+ RIO BRANCO-AC
+ | 
+ 34
+ | 
+ M. ALEXANDRE DEARAÚJO- ME (CASA DA ANTENA)
+ | 
+ Avenida Ceará, ns 2907 - Jardim Nazie.
+ | 
+ RIO BRANCO-AC
+ | 
+ 35
+ | 
+ RORAISAT COMERCIO E SERVICOS LTDA ME.
+ | 
+ AV GENERAL ATAIDE TEIVE 581
+ | 
+ BOA VISTA-RR
+ | 
+ 36
+ | 
+ ADRIANO MORAES DA SILVA CARDOZO 79602681268 - ME
+ | 
+ AV VIA DAS FLORES 1263
+ | 
+ BOA VISTA-RR
+ | 
+ 37
+ | 
+ C.F. VIEIRA LIMA JUNIOR ME (TELESAT)
+ | 
+ AV MARIO HOMEM DE MELO 2668
+ | 
+ BOA VISTA-RR
+ | 
+ 38
+ | 
+ Cícera da Silva Costa - ME (RR Century)
+ | 
+ Av. Gal. Ataíde Teive, 5705 Cambará
+ | 
+ BOA VISTA-RR
+ | 
+ 39
+ | 
+ L.D.S. Santos Silva Costa - ME (Haffic)
+ | 
+ Av. Mario Homem de Melo, 3510 Cambará
+ | 
+ BOA VISTA-RR
+ | 
+Assim, mantida a caracterização da infração ao art. 38 do RGC 2014 em caráter pontual, reduz-se a quantidade de ocorrências (variável 'Ua') seja reduzida para 39 (trinta e nove).
+III.b.2 - Sequencial 5 - Art. 22 do RGC 2014 (Espaço Reservado)
+Neste subitem, examina-se, em sequência, a caracterização das infrações previstas no art. 22, incs. II, III, VII e IX, do RGC 2014, e, ao fim, trazem-se considerações aplicáveis à dosimetria da multa.
+III.b.2.1 - Art. 22, inc. II, do RGC 2014 (Ausência de Disponibilização do Sumário do Contrato)
+O art. 22, inc. II, do RGC 2014, tem a seguinte redação:
+Art. 22. No espaço reservado, o Consumidor deve ter acesso, no mínimo:
+(...)
+II - ao sumário do contrato, contendo as principais informações sobre o Plano de Serviço ou oferta promocional contratados, incluindo reajustes de preços e tarifas, alterações nas condições de provimento do serviço e promoções a expirar, e o término do prazo de permanência, se aplicável;
+A Recorrente sustentou que havia disponibilizado, na área do consumidor, todas as informações exigidas, incluindo o cálculo da multa por rescisão, aspecto já reconhecido em processo de fiscalização regulatória. Afirmou, também, que oferecia ferramentas de histórico, perfil de consumo e acompanhamento de linhas pré-pagas. Considerando que as condutas foram cessadas e tal regularização foi atestada pela Anatel, requereu o reconhecimento da inexistência de infração e o afastamento de penalidade, com fundamento nos princípios da proporcionalidade e da boa-fé.
+Ao examinar o recurso, a área técnica concluiu que:
+a documentação apresentada pela Recorrente comprova, quando muito, a disponibilização do sumário do contrato, nos termos do art. 22, inc. II, do RGC, apenas a partir de meados de 2018, ou seja, aproximadamente dois anos após a fiscalização. Ausente prova contemporânea à época dos fatos, mantém‑se a caracterização da infração; e
+a Recorrente não faz jus às atenuantes previstas no art. 20 do RASA, pois o atesto de regularização no processo de fiscalização regulatória data de 22 de março de 2019 - posterior a todos os marcos temporais ali previstos - e não houve confissão.
+Reitera-se que o Conselho Diretor, a exemplo do que se extrai do Acórdão nº 130, de 23 de maio de 2025 (SEI nº 13744962 - Processo nº 53500.051877/2019-11, de minha relatoria), já tem entendimento consolidado no sentido de que "a fé pública dos agentes de fiscalização é relativa e somente afastada quando presentes evidências em sentido contrário" e de que "cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA)". No mesmo sentido, vejam-se os Acórdãos nºs 155, de 21 de março de 2018 (SEI nº 2534082 - Processo nº 53504.009437/2007-89; Relator: Conselheiro Otavio Luiz Rodrigues Junior) e 337, de 11 de novembro de 2024 (SEI nº 12872416 - Processo nº 53500.045133/2017-97, de minha relatoria).
+Com isso, adota-se o entendimento da área técnica e mantém-se, em caráter sistêmico, a infração em ambos os serviços (SeAC e SCM), pois a Recorrente não se desincumbiu do ônus probatório de demonstrar que, à época da fiscalização, disponibilizava o sumário do contrato no espaço reservado.
+Quanto à atenuante, afasta-se o marco temporal indicado pela área técnica — 22 de março de 2019 (data do Despacho Decisório nº 2/2019/RCTS/SRC - SEI nº 3882150) —, uma vez que o PFR nº 53500.007168/2018-17 evidencia que a última documentação apresentada pela Recorrente para comprovar a regularidade do espaço reservado ocorreu em 20 de dezembro de 2018 (SEI nºs 3640053 e 3640056). Destaca-se, neste particular, que o Despacho Decisório em menção tem caráter declaratório e apenas reconheceu a consolidação de situação fática constituída anteriormente.
+Assim, cessada a conduta antes do término do prazo para apresentação de alegações finais, incide a atenuante de 50%, nos termos do art. 20, inc. III, do RASA.
+III.b.2.2 - Art. 22, incs. III, VII e IX, do RGC 2014 (Ausência de Acesso à Referência a Novos Serviços Contratados, ao Histórico de Demandas e ao Perfil de Consumo dos Últimos Três Meses)
+O art. 22, incs. III, VI e IX, do RGC 2014, assim dispõe:
+Art. 22. No espaço reservado, o Consumidor deve ter acesso, no mínimo:
+(...)
+III - à referência a novos serviços contratados;
+(...)
+VII - ao histórico de suas demandas registradas nos últimos 6 (seis) meses;
+(...)
+IX - ao perfil de consumo dos últimos 3 (três) meses; e,
+(...)
+Em primeira instância, reconheceu-se a violação às normas em comento tanto no SCM quanto no SeAC.
+A multa foi dosada mediante aglutinação das condutas, tomando-se como base a infração ao art. 22, inc. II, do RGC 2014, com aplicação de atenuante de 70%.
+Em sede recursal, propôs-se a desaglutinação das infrações, com aplicação de fator de proporcionalidade conforme a quantidade de comandos descumpridos, além da exclusão da atenuante.
+Consoante já consignado no subitem anterior, a recorrente não comprovou, por documentação idônea, a insubsistência dos achados de fiscalização.
+Mantém-se, portanto, a caracterização das infrações no SeAC e no SCM.
+Todavia, comprovada a cessação da conduta antes do término do prazo para apresentação de alegações finais - a exemplo do verificado quanto à infração ao art. 22, inc. II - incide a atenuante de 50%, nos termos do art. 20, inc. III, do RASA.
+III.b.2.3 - Considerações sobre o Cálculo da Multa para o Espaço Reservado
+Quanto à dosimetria, consoante precedentes do Conselho Diretor, a sanção deve ser calculada na proporção de um doze avos para cada regra descumprida para o espaço reservado (neste sentido: Acórdão nº 284, de 31 de outubro de 2023, SEI nº 11076572, Processo nº 53500.037895/2018-09, Relator: Conselheiro Moisés Queiroz Moreira - vide itens 4.70 a 4.74 da Análise nº 39/2023/MM - SEI nº 10282845; Acórdão nº 366, de 18 de dezembro de 2023, SEI nº 11287307, Processo nº 53500.037638/2018-69, Relator: Conselheiro Nilo Pasquali - vide itens 4.71 a 4.73 da Análise nº 2/2023/NP - SEI nº 11119640; Acórdão nº 312, de 22 de outubro de 2024, SEI nº 12777384, Processo nº 53500.013670/2019-30, Relator: Conselheiro Vicente Bandeira de Aquino Neto; Acórdão nº 183, de 30 de julho de 2025, SEI nº 14105212, Processo nº 53500.046286/2017-51, de minha relatoria).
+Ressalva-se apenas a infração ao art. 22, § 3º, a qual, conforme abaixo, é absorvida pela infração ao art. 15 do RGC 2014.
+Ao final, deve incidir a atenuante do art. 20, inc. III, do RASA, em 50%.
+III.b.3 - Sequencial 6 - Art. 22, inc. VIII, do RGC (Ausência de Disponibilização de Recurso de Acompanhamento de Uso do Serviço Contratado no Espaço Reservado)
+Nos termos do art. 22, inc. VIII, do RGC 2014, no espaço reservado, o consumidor deve ter acesso a recurso que lhe possibilite o acompanhamento adequado do uso do serviço contratado, durante sua fruição.
+À semelhança das demais infrações caracterizadas no art. 22, acolhe-se o entendimento da área técnica, no sentido de que a recorrente não logrou êxito em infirmar, mediante prova idônea, os achados de fiscalização.
+Portanto, mantém-se a caracterização da infração art. 22, inc. VIII, do RGC 2014, no SeAC, em caráter sistêmico.
+No entanto, diverge-se parcialmente da área técnica para se reconhecer a aplicação de atenuante no percentual de 50% nos termos do art. 20, inc. III, do RASA, pois constatou-se a cessação da conduta antes do fim do prazo para a apresentação de alegações finais.
+III.b.4 - Sequencial 9 - Arts. 13 e 21, caput, do RGC 2014 (Obstrução ao Cancelamento no Espaço Reservado por Ausência de Informação sobre a Multa Rescisória)
+Os arts. 13 e 21, caput, do RGC assim determinam:
+Art. 13. Os pedidos de rescisão independem do adimplemento contratual, devendo ser assegurada ao Consumidor a informação sobre eventuais condições aplicáveis à rescisão e multas incidentes por descumprimento de prazos contratuais de permanência mínima.
+(...)
+Art. 21. O Atendimento por Internet deve ser disponibilizado na página da Prestadora na internet, por meio de espaço reservado ao Consumidor, acessível mediante inserção de login e senha fornecidos no momento da contratação do serviço ou a qualquer momento, a pedido do Consumidor.
+Na Decisão recorrida, caracterizou-se o descumprimento das disposições em estudo, com dosimetria aglutinada ao art. 22, inc. II, do RGC 2014.
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), de forma equivocada, inferiu-se que tal infração havia sido descaracterizada (vide tabelas imediatamente posteriores ao parágrafo 3.236, linhas iniciadas com células constando "Art. 21, caput, c/c art. 13, caput").
+Assim, anota-se que a descaracterização da infração ao art. 21 do RGC 2014 já foi avaliada em tópico específico.
+Imputou-se à recorrente a conduta de não informar o consumidor, no espaço reservado, sobre a multa rescisória, induzindo-o a falar com atendente para cancelamento.
+É importante avaliar se o espaço reservado exige, e de que forma, a operacionalização do pedido de rescisão, sem o processamento de atendente.
+O art. 22, caput, inc. X, e § 3º, do RGC 2014, traz o seguinte sobre a rescisão no espaço reservado (grifos acrescidos):
+Art. 22. No espaço reservado, o Consumidor deve ter acesso, no mínimo:
+(...)
+X - ao registro de reclamação, solicitação de serviços, pedidos de informação e rescisão de seu contrato, ou qualquer outra demanda relacionada ao serviço da Prestadora.
+(...)
+§ 3º A rescisão do contrato por meio do espaço reservado deve ser processada de forma automática, sem intervenção de atendente.
+Inicialmente, afasta-se o entendimento da área técnica no sentido de que a conduta em comento configuraria violação ao art. 13, caput, do RGC 2014.
+O art. 13, em referência, no cenário em comento (atendimento no espaço reservado) apenas complementa o art. 22, § 3º, do RGC 2014, estabelecendo formalidades que a prestadora deve observar em relação ao regramento relativo ao espaço reservado em estudo.
+Nos termos Informe nº 131/2021/CODI/SCO (SEI nº 6822530), que fundamentou a decisão recorrida, entendeu-se que a recorrente não disponibilizava efetivamente o valor da multa rescisória, conforme "Anexo 4_DESCRICAO DA ACAO DE FISCALIZACAO" (págs. 27 a 29 do SEI nº 1400369), verbis:
+4.7.2 Cancelamento automático via site:
+A opção de cancelamento não está disponível no menu principal do “Minha SKY”. O link para acessar essa opção está na parte inferior (rodapé), devendo o consumidor rolar a página para visualizar o link que está colocado de maneira discreta e pouco perceptível, (...).
+O valor de multa apresentada por equipamento em comodato é informada no seu valor máximo de R$ 1.299,00. Não considera o tempo transcorrido nem mesmo se o consumidor estará sujeito à multa. E oferece três opções para prosseguir sendo duas via atendente (chat e me ligue) e uma sem intervenção de atendente em que o consumidor deve concordar em “emitir o boleto de multa e prosseguir” (...).
+Ora, não parece razoável ameaçar o consumidor com uma imposição de multa sem explicitar o valor e sem que o consumidor tenha acesso antecipado na área reservada às condições específicas da SUA assinatura. Nesse espaço, como já foi demonstrado, existem apenas contratos genéricos (ou padrão), não há sumário e, portanto, o consumidor não tem como avaliar se realmente estará sujeito à cobrança de multa na rescisão sem a intervenção de atendente.
+Por sua vez, a Recorrente alegou que as informações relativas à multa rescisória constariam do verso do contrato e que essa informação já se encontrava disponível no espaço reservado.
+Em relação a esses pontos, anota-se que:
+a informação relativa à multa rescisória deve constar do próprio espaço reservado, com indicação clara da quantia devida em relação ao contrato a ser cancelado. A veiculação dessa informação no verso do contrato celebrado não é condição, nem necessária nem suficiente, para o atendimento dessa obrigação; e
+a captura de tela apresentada pela Recorrente - produzida muito posteriormente ao encerramento da fiscalização - não infirma a conclusão do relatório, acima transcrita.
+A recorrente, na verdade, descumpriu o art. 22, § 3º, do RGC, ao não assegurar, no espaço reservado, a informação adequada sobre a multa em relação ao cancelamento do contrato, cuja exigência está prevista no art. 13.
+Com efeito, a ausência de informação precisa sobre a multa rescisória, a qual foi padronizada de forma incorreta conforme apurado na fiscalização, impediu a devida observância do art. 22, § 3º, do RGC 2014.
+Assim, mantém-se a infração referida no sequencial 9, tanto no SeAC como no SCM, reclassificando-a para o art. 22, § 3º, do RGC 2014, em caráter sistêmico, devendo ser aplicado o fator de proporcionalidade pelo descumprimento, conforme já exposto anteriormente.
+Por sua vez, ante a sua instrumentalidade para a infração ao art. 15, relacionada ao processamento imediato do pedido de cancelamento sem atendente, cuja caracterização ora é mantida, conclui-se pela absorção da presente conduta pelo descumprimento ao art. 15 em menção.
+III.b.5 - Sequencial 10 - Arts. 3º, inc. XV, e 13, caput, do RGC 2014 (Cancelamento Condicionado à Quitação de Débitos)
+Em primeira instância, a Recorrente foi condenada por não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso. Essa conduta desatendeu à imposição trazida por dois artigos do RGC 2014: (i) o art. 13, que determina que os pedidos de rescisão independem do adimplemento contratual; e (ii) o art. 3º, inc. XV, que assegura ao consumidor o direito à rescisão do contrato de prestação do serviço a qualquer tempo e sem ônus, sem prejuízo das condições aplicáveis às contratações com prazo de permanência.
+Nos termos do Informe nº 131/2021/CODI/SCO (SEI nº 6822530), que fundamentou a decisão recorrida, a infração em comento foi caracterizada pontualmente com 13 (treze) ocorrências em reclamações FOCUS e outras duas em gravações colhidas pelos fiscais.
+Em suas razões, a Recorrente alegou que a infração em comento deveria ser afastada por sua insignificância e baixa ofensividade.
+Ao analisar o recurso, a área técnica opinou pela manutenção da infração, apontando que "o cálculo das sanções considera o número de usuários atingidos, sendo o valor da multa proporcional e muitas vezes "insignificante", considerando o porte e a ROL da empresa."
+Assim, passa-se à análise da infração propriamente dita.
+No Processo Fiscalizatório nº 53528.003823/2016-80, a recorrente informou, de forma um tanto evasiva, que foram identificadas oportunidades de melhoria nos processos de atendimento e que já está implementando novas funcionalidades e aprimoramentos na comunicação da URA.
+Compulsando o acervo processual, entende-se pelo acolhimento do entendimento da área técnica quanto à caracterização da infração no sistema Focus, num total de 13 (treze) ocorrências.
+Por sua vez, tecem-se as seguintes considerações quanto às gravações que serviram de fundamento para a caracterização da infração (SEI nº 0838899):
+Na gravação "20160829182630-1155-070-17292925-5195201954-00-79052", a infração deve ser descaracterizada, pois, ali, não há notícia de solicitação prévia do consumidor e a atendente não se negou, em nenhum momento, a efetivar o cancelamento requerido. Embora haja contestação dos valores que seriam cobrados em decorrência de suspensão do contrato efetivada anteriormente por inadimplência, esse ponto não é objeto da fiscalização. Destacam-se os seguintes eventos da interação:
+a partir de 13m00s: o consumidor faz referência a uma solicitação anterior;
+a partir de 15m45s: o consumidor, após solicitado, fornece endereço e número de telefone - que se encontravam desatualizados - para retirada do equipamento;
+a partir de 21m30s: a atendente informa que dará seguimento ao cancelamento e que não há pendências na assinatura do consumidor;
+a partir de 23m30s: a atendente informa que será gerado um faturamento proporcional para o último ciclo, o que é contestado pelo consumidor, pois o serviço se encontrava suspenso;
+a partir dos 25m40s: a atendente informa que o consumidor não formalizou pedido de cancelamento anterior, continuando a conversa com debate sobre quais seriam os valores devidos até a data do cancelamento;
+a partir de 28m00s: o consumidor foi solicitado a fornecer o protocolo de atendimento anterior, o que não ocorreu; e
+a partir de 29m00s: a atendente informou o cancelamento imediato do serviço, juntamente com o protocolo respectivo.
+Por sua vez, na gravação "20160829183709-1176-047-12849199-85987031216-00-79051", depreende-se que o cancelamento não foi condicionado ao pagamento de débitos. No caso, a consumidora, no serviço pré-pago - após ser informada pelo atendente que ela poderia cancelar imediatamente o contrato - optou por prorrogá-lo por mais um mês, com seu encerramento no final do ciclo seguinte. Destacam-se os seguintes trechos do atendimento:
+a partir de 11m00s: a consumidora informa estar insatisfeita, contextualizando o que a incomoda, e o atendente busca persuadi-la a manter a contratação;
+a partir de 14m20s: a consumidora informa querer cancelar o serviço;
+a partir de 16m30s: o atendente informa as condições de cancelamento, perguntando se a consumidora gostaria de manter o serviço por mais um mês ou cancelá-lo de imediato. A consumidora foi informada de que é cliente em serviço pré-pago e respondeu que prefere fazer o pagamento naquela data, com cartão de crédito, fornecendo os dados em seguida;
+a partir de 25m50s: o atendente informa à cliente que o pagamento foi realizado e que o consumo se dará por mais um mês, em que a consumidora reitera a intenção de cancelar o serviço;
+a partir de 30m30s: o atendente informa o protocolo para o cancelamento;
+a partir de 33m30s: o atendente confirma o cancelamento e informa à consumidora sobre a data em que os serviços serão encerrados e sobre o procedimento para a devolução do comodato.
+Assim, reduz-se para 13 (treze), no SeAC, a quantidade de de usuários atingidos na infração em estudo.
+III.b.6 - Sequencial 11 - 1ª parte - Art. 14, parágrafo único, do RGC 2014 (Ausência de Restituição do Período Pago, mas não Usufruído)
+Inicialmente, informa-se que a 2ª parte da infração, concernente à ausência de restituição em dobro (art. 85 do RGC 2014), foi descaracterizada em primeira instância.
+Prosseguindo, o art. 14 do RGC 2014 tinha a seguinte redação:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+Em primeira instância - vide Informe nº 131/2021/CODI/SCO (SEI nº 6822530) - a infração em estudo foi caracterizada na gravação "20160829183736-1186-045-11292755-6133432464-00-79039", envolvendo pedido de cancelamento de consumidor no sistema pré-pago. Entendeu-se que a recorrente deveria oferecer ao consumidor a devolução do valor pago antecipadamente em caráter proporcional ao período não consumido e que, ao omitir-se em tal conduta, a infração em estudo restaria consumada. 
+Esse entendimento foi mantido durante o exame de admissibilidade do recurso - vide Informe nº 283/2024/CODI/SCO (SEI nº 12491685) - em que apenas se apontou que a infração em comento foi erroneamente tida por descaracterizada.
+Nas razões recursais, a recorrente limita-se a tecer considerações sobre a insignificância da infração.
+Depreende-se o seguinte da gravação "20160829183736-1186-045-11292755-6133432464-00-79039" (SEI nº 1396637):
+a partir de 04m00s: a consumidora informa a intenção de cancelar a sua assinatura. A atendente pede o fornecimento dos dados cadastrais, o que é feito, e, em seguida, tenta persuadi-la do cancelamento com outras ofertas;
+a partir de 09m15s: a atendente informa que o cancelamento será efetivado, que o serviço será mantido até o dia 19 de setembro, com o que a consumidora concordou, e que, após encerramento do serviço, o técnico entrará em contato para a retirada dos equipamentos;
+a partir de 19m00s: é informado o cancelamento do serviço, com a sua manutenção até o dia 19 de setembro de 2016, e é fornecido o número de protocolo.
+Nesse sentido, discorda-se do entendimento da área técnica quanto à caracterização da infração ao art. 14, parágrafo único, do RGC 2014, ainda que fosse recomendável que a prestadora tivesse uma prática mais engajada em informar à consumidora que poderia ter o valor pago antecipadamente restituído.
+Por outro lado, tem-se que a maneira de proceder da atendente faz com que a conduta, consistente em omitir informação relacionada à possibilidade de receber o valor pago ao período não usufruído, constitui infração aos arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014, com uma ocorrência, no SeAC.
+Assim, reclassifica-se a conduta como infração aos arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014.
+III.b.7 - Sequencial 12 - 2ª parte - Art. 7º, caput, do RGC 2014 (Ausência de Fornecimento de Protocolo)
+Primeiramente, transcrevem-se os arts. 3º, inc. X, 7º, caput, e 27, caput, do RGC 2014, que lastrearam a imputação contida no sequencial 12 ("Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo"):
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+X - ao encaminhamento de reclamações ou representações contra a Prestadora, junto à Anatel ou aos organismos de defesa do consumidor;
+(...)
+Art. 7º Todo atendimento deve receber um número de protocolo a ser informado ao Consumidor.
+(...)
+Art. 27. O Centro de Atendimento Telefônico deve garantir ao Consumidor, no primeiro nível do sistema de autoatendimento, a opção de acesso ao atendente, de reclamação e de rescisão do contrato.
+(...)
+Em primeira instância - vide Informe nº 131/2021/CODI/SCO (SEI nº 6822530) - a infração restou caracterizada - de forma pontual, com duas ocorrências - apenas em relação ao art. 7º, caput, por ausência de fornecimento de número de protocolo ao consumidor, com fundamento em reclamações Focus referidas nas fls. 38 e 39 do "Anexo 4_DESCRICAO DA ACAO DE FISCALIZACAO" (SEI nº 1400369). Ainda, a SCO opinou pela manutenção dessa caracterização em sede recursal.
+Compulsando o acervo processual, entende-se pelo acolhimento do entendimento da área técnica quanto à caracterização da infração, em 02 (duas) ocorrências), no SeAC.
+III.b.8 - Sequencial 19 - Art. 51, caput, do RGC 2014 (Ausência de Entrega do Contrato no Momento da Assinatura - Acrescentando-se a Ausência de Fornecimento de Login e Senha - Sequencial 3)
+Conforme assentado anteriormente no exame do sequencial 3, avalia-se, neste momento, a caracterização da infração ao art. 51, tanto pela ausência de fornecimento de login e senha, como pela omissão no fornecimento dos documentos de contratação de prestação de serviço no momento da assinatura do instrumento contratual.
+O art. 51, caput, do RGC 2014, determina que "[n]a contratação, a Prestadora deve entregar ao Consumidor o contrato de prestação do serviço e o Plano de Serviço contratado, bem como demais instrumentos relativos à oferta, juntamente com login e senha necessários a acesso ao espaço reservado ao Consumidor na página da Prestadora na internet, quando for o caso".
+Em primeira instância - vide Informe nº 131/2021/CODI/SCO (SEI nº 6822530) - caracterizou-se a referida infração na fiscalização presencial, no SeAC e no SCM, em 116 (cento e dezesseis) estabelecimentos. Entendeu-se que, nos termos do "Anexo 4_DESCRICAO DA ACAO DE FISCALIZACAO" (págs. 16 a 21 do SEI nº 1400369), a recorrente não entregava o contrato e nem fornecia login e senha ao consumidor, limitando-se apenas a fornecer “Proposta de Assinatura”.
+Em suas razões, a recorrente aduziu que:
+orienta seus colaboradores para que procedam ao devido cumprimento do art. 51, caput, do RGC 2014;
+a omissão desse descumprimento nas lojas fiscalizadas deve, quando muito, ser tratada como conduta pontual, sem qualquer extrapolação, e sem demonstração estatística de que as 116 (cento e dezesseis) lojas estariam descumprindo a disposição em comento;
+eventual omissão não traz qualquer prejuízo ao usuário, pois o contrato se encontraria disponível eletronicamente em seu site; e
+logo após a contratação, e com a finalidade de preservar a segurança online do consumidor, envia-lhe um SMS e e-mail ao usuário contendo mensagem de boas-vindas, com informações sobre cadastro e criação de senha e login no seu site. Destaca, ainda, que isso seria uma boa prática a ser adotada no futuro RGC, ainda em discussão na ocasião.
+Em sede recursal (Informe nº 283/2024/CODI/SCO - SEI nº 12491685), opinou-se pela manutenção da infração, reclassificada para sistêmica, e não pontual, com fundamento no seguinte:
+embora a prestadora alegue envio de e-mail/SMS para autocadastramento, o art. 51, caput, do RGC 2014 exige que, na contratação, sejam entregues ao consumidor: contrato, plano e demais instrumentos da oferta, junto com login e senha para acesso à área do cliente, quando cabível;
+segundo o “Anexo Fiscalização Presencial – Resultado Consolidado” (SEI nº 1406412), em regra, o contrato não é entregue no momento da contratação, mas apenas na instalação. Também é prática da recorrente não fornecer login e senha no ato, e sim encaminhar e-mail/SMS para autocadastramento; e
+o argumento de “segurança da informação” não afasta a obrigação legal nem exime a recorrente, acrescentado que cabe a ela adotar medidas de segurança sem descumprir o RGC;
+não se demonstrou que o autocadastramento seja mais seguro do que a entrega de credenciais no ato, revelando opção unilateral da própria recorrente contrária à norma.
+Transcreve-se o teor do art. 51, caput, do RGC 2014:
+Art. 51. Na contratação, a Prestadora deve entregar ao Consumidor o contrato de prestação do serviço e o Plano de Serviço contratado, bem como demais instrumentos relativos à oferta, juntamente com login e senha necessários a acesso ao espaço reservado ao Consumidor na página da Prestadora na internet, quando for o caso.
+A partir dessa redação, e considerando que a caracterização da infração ao art. 51 em comento decorreu, em parte, de constatação pontual - a saber: omissão em entregar ao Consumidor o contrato de prestação do serviço e o Plano de Serviço contratado, bem como demais instrumentos relativos à oferta - e, em outra, de constatação procedimental que evidencia uma rotina generalizada da prestadora - omissão em entregar ao consumidor login e senha necessários a acesso ao espaço reservado ao Consumidor na página da Prestadora na internet - depreende-se que o art. 51, no presente caso, comporta uma dosimetria proporcionalizada para cada um desses descumprimentos, no percentual de 50% para cada comando descumprido.
+Assim, analisam-se as condutas de forma independente.
+Quanto à primeira parte, ausência de entrega da documentação no momento da contratação, tem-se que a recorrente não logrou êxito em descaracterizar a referida conduta.
+Com efeito, nos termos do "Anexo 4_DESCRICAO DA ACAO DE FISCALIZACAO" (SEI nº 1400369) e do "Anexo Fiscalização presencial - Resultado Consolidado" (SEI nº 1406412), constatou-se a ocorrência da conduta em comento em cento e dezesseis estabelecimentos fiscalizados, a saber:
+ Ocorrência
+ | 
+ Nome credenciado
+ | 
+ Endereço
+ | 
+ Cidade
+ | 
+ 1
+ | 
+ Wagner Antenas LTDA - ME
+ | 
+ Av. Nossa Senhora de Sabará, 4295
+ | 
+ SÃO PAULO - SP
+ | 
+ 2
+ | 
+ Brilho do Sol Telecom LTDA
+ | 
+ R. Dr. Gabriel Piza, 575
+ | 
+ SÃO PAULO - SP
+ | 
+ 3
+ | 
+ L.D. e Melo – ME
+ | 
+ Av. Mendes da Rocha, 226
+ | 
+ SÃO PAULO - SP
+ | 
+ 4
+ | 
+ A.T.I. Service Telecomunicações LTDA
+ | 
+ R Santa Veridiana, 340
+ | 
+ SÃO PAULO - SP
+ | 
+ 5
+ | 
+ Mari SAT Telecom Ltda ME
+ | 
+ Av. Yerront Kyssejikian, 3504, V. Constancia
+ | 
+ SÃO PAULO - SP
+ | 
+ 6
+ | 
+ E S DE ASSIS E L H S DE ASSIS LTDA. ME
+ | 
+ Av. Frei Orestes Girardi, 1365 - SLJ - Vila Abernéssia
+ | 
+ CAMPOS DO JORDÃO - SP
+ | 
+ 7
+ | 
+ ANBL TELECOMUNIC E SERVICOS LTDA
+ | 
+ RUA DO SENADO, 184 – CENTRO
+ | 
+ RIO DE JANEIRO -RJ
+ | 
+ 8
+ | 
+ EVOLUSOM ELETRONICA 85 LTDA-ME
+ | 
+ RUA MARQUES DE CAXIAS, 77
+ | 
+ NITERÓI - RJ
+ | 
+ 9
+ | 
+ FAGNET INFORMATICA LTDA
+ | 
+ AV DOM HELDER CAMARA, 8516 - PIEDADE
+ | 
+ RIO DE JANEIRO -RJ
+ | 
+ 10
+ | 
+ MP Ramos Comercio e Serviços de Telecom Ltda - ME
+ | 
+ RUA APIACAS, 365 - TAQUARA
+ | 
+ RIO DE JANEIRO -RJ
+ | 
+ 11
+ | 
+ JP& S Eletrônica ME
+ | 
+ AV NILO PECANHA 1041 - VILA FLÁVIA
+ | 
+ DUQUE DE CAXIAS - RJ
+ | 
+ 12
+ | 
+ LOCALTEC TELEINFORMÁTICA LTDA ME
+ | 
+ R. Albano Reis, 733
+ | 
+ CURITIBA - PR
+ | 
+ 13
+ | 
+ ANTENAS SÃO JOSÉ
+ | 
+ R. Rui Barbosa, 9594
+ | 
+ SÃO JOSÉ DOS PINHAIS-PR
+ | 
+ 14
+ | 
+ ALTERNATIVA COMÉRCIO E SERVIÇOS LTDA
+ | 
+ R. Acre, 1029
+ | 
+ CURITIBA - PR
+ | 
+ 15
+ | 
+ LEFEX COMERCIO E INSTALAÇÕES
+ | 
+ R. José de Lima, 332
+ | 
+ CURITIBA - PR
+ | 
+ 16
+ | 
+ Janer Deggerone
+ | 
+ R. Albino Kaminski, 6945
+ | 
+ CURITIBA - PR
+ | 
+ 17
+ | 
+ A.L.D.S LOPES INSTALACOES
+ | 
+ Rua ANIBAL MACHADO, nº 11, bairro Tupi
+ | 
+ BELO HORI\ONTE-MG
+ | 
+ 18
+ | 
+ ALFA TELE INFORMÁTICA LTDA
+ | 
+ Rua Timóteo, Nº 1196 - Bairro Santa Inês
+ | 
+ BELO HORI\ONTE-MG
+ | 
+ 19
+ | 
+ GVM SOLUÇÕES EM TECNOLOGIA - MULTIMEIOS
+ | 
+ Rua Jacuí, nº 3856 - Lj 06 - Bairro Ipiranga
+ | 
+ BELO HORI\ONTE-MG
+ | 
+ 20
+ | 
+ NWM SAT INSTALACOES LTDA
+ | 
+ Avenida DOM Pedro I, nº 1300, bairro Itapoâ
+ | 
+ BELO HORI\ONTE-MG
+ | 
+ 21
+ | 
+ SEGSAT ME
+ | 
+ Rua Tenente Anastacio de Moura, nº 536, Santa Efigênia
+ | 
+ BELO HORI\ONTE-MG
+ | 
+ 22
+ | 
+ TEVEI Serviços de Instalações
+ | 
+ Rua Camaquã, 535
+ | 
+ PORTO ALEGRE-RS
+ | 
+ 23
+ | 
+ RC Cancaro Comunicações
+ | 
+ Av Cel Lucas de Oliveira, 34
+ | 
+ PORTO ALEGRE-RS
+ | 
+ 24
+ | 
+ Conectiva Soluções em Tecnologia LTDA
+ | 
+ Praça Conego Cleto Bevegnu, 81
+ | 
+ PORTO ALEGRE-RS
+ | 
+ 25
+ | 
+ Tonistal
+ | 
+ Av. Farrapos, 940
+ | 
+ PORTO ALEGRE-RS
+ | 
+ 26
+ | 
+ Grambell
+ | 
+ | 
+ PORTO ALEGRE-RS
+ | 
+ 27
+ | 
+ CLEONALDO DO NASCIMENTO MENDES - ME
+ | 
+ RUA GRASIELA, 70
+ | 
+ RECIPE-PE
+ | 
+ 28
+ | 
+ EXYTTO SOLUCOES EM TELECOM. LTDA - ME
+ | 
+ AV PROFESSOR ESTEVÃO FRANCISCO, 379 - TORRE
+ | 
+ RECIPE-PE
+ | 
+ 29
+ | 
+ RECEL TELECOMUNICACOES LTDA
+ | 
+ RUA MENEZES DRUMOND, 137 - MADALENA
+ | 
+ RECIPE-PE
+ | 
+ 30
+ | 
+ SUCESSO TELECON LTDA - ME
+ | 
+ RUA MARANHAO SOBRINHO, 90 - PINA
+ | 
+ RECIPE-PE
+ | 
+ 31
+ | 
+ VALDOMIRO TEODOZIO DA SILVA JUNIOR
+ | 
+ | 
+ RECIPE-PE
+ | 
+ 32
+ | 
+ ANHANGUERA ANTENAS
+ | 
+ RUA DA TRAMELGA, Nº 175, JARDIM ATLÂNTICO
+ | 
+ GOIÂNIA-GO
+ | 
+ 33
+ | 
+ INTERACTIVE.COM
+ | 
+ RUA CRUZEIRO DO SUL, Nº 890, JARDIM ALVORADA
+ | 
+ ANÁPOLIS-GO
+ | 
+ 34
+ | 
+ CASA DAS ANTENAS
+ | 
+ RUA C-182, nº 469, SETOR NOVA SUIÇA
+ | 
+ GOIÂNIA-GO
+ | 
+ 35
+ | 
+ TECNOVIDEO ELETROSHOP
+ | 
+ AV. DOM EMANUEL, QD.37 LT.13, VILA SANTA ROSA III
+ | 
+ GOIÂNIA-GO
+ | 
+ 36
+ | 
+ TARGET TELECOM
+ | 
+ AV. CARIRI, nº 213, JARDIM DIAMANTINA
+ | 
+ GOIÂNIA-GO
+ | 
+ 37
+ | 
+ ELETRÔNICA PIKLEY
+ | 
+ Rua Odilon Santos, 103, Rio Vermelho
+ | 
+ SALVADOR-BA
+ | 
+ 38
+ | 
+ Golden Telecom (PDV SKY - Salvador Shopping)
+ | 
+ Av. Tancredo Neves, 3133, Quiosque 102, L1, Salvador Shopping
+ | 
+ SALVADOR-BA
+ | 
+ 39
+ | 
+ JF TELESERVIÇOS LTDA. ME - PDV
+ | 
+ R THOMAZ GONZAGA, 261, Pernambués
+ | 
+ SALVADOR-BA
+ | 
+ 40
+ | 
+ OMEGA COMÉRCIO E SERVIÇOS - OMEGA SAT
+ | 
+ RUA SOTERO MONTEIRO 181, PITUBA
+ | 
+ SALVADOR-BA
+ | 
+ 41
+ | 
+ SALLES ANTENAS
+ | 
+ Rua das Pitangueiras, 89, Matatu de Brotas
+ | 
+ SALVADOR-BA
+ | 
+ 42
+ | 
+ FELIPE DA SILVA GOMES FA INTERNET
+ | 
+ RUA MANOEL JESUINO, 575 - VARJOTA
+ | 
+ FORTALEZA-CE
+ | 
+ 43
+ | 
+ R10 SERVIÇOS DE TELECOM LT ME
+ | 
+ RUA PADRE PEDRO DE ALENCAR, 540 – LJ 122
+ | 
+ FORTALEZA-CE
+ | 
+ 44
+ | 
+ MARIA ACELENE DA SILVA CORREIA ME
+ | 
+ RUA CORONEL CORREIA, 1659 - CENTRO
+ | 
+ CAUCAIA-CE
+ | 
+ 45
+ | 
+ FBT DA SILVA ME (TOP SAT)
+ | 
+ RUA CONEGO EDUARDO ARARIPE, 978 E
+ | 
+ PACAJUS-CE
+ | 
+ 46
+ | 
+ VIZATEL
+ | 
+ Rua dos Tamoios, Nº 1184 - Jurunas.
+ | 
+ BELÉM-PA
+ | 
+ 47
+ | 
+ TOP SKY BELÉM
+ | 
+ Rua Dr. Assis, Nº 683 - Cidade Velha.
+ | 
+ BELÉM-PA
+ | 
+ 48
+ | 
+ HYTEL BELÉM
+ | 
+ Avenida Conselheiro Furtado, Nº 1974 - Cremação
+ | 
+ BELÉM-PA
+ | 
+ 49
+ | 
+ BELÉM DIGITAL
+ | 
+ Travessa Timbó, Nº 2706 - Marco
+ | 
+ BELÉM-PA
+ | 
+ 50
+ | 
+ DIGITAL CENTER
+ | 
+ Avenida Tavares Bastos, Nº 1558 - Marambaia
+ | 
+ BELÉM-PA
+ | 
+ 51
+ | 
+ LM COMERCIO DE EQUIP. TELEFONIA E COMUNICACAO LTDA - SKY NILL
+ | 
+ AVENIDA SILVES, 1041 - RAIZ
+ | 
+ MANAUS-AM
+ | 
+ 52
+ | 
+ TERRA TELECOM
+ | 
+ QSA 9 LOTE 3 TAGUATINGA SUL
+ | 
+ BRASILIA-DF
+ | 
+ 53
+ | 
+ ERIC FERNANDES DOS SANTOS ME
+ | 
+ QNN 1 CONJUNTO D LOTE 1 LOJA 3 CEILÂNDIA
+ | 
+ BRASILIA-DF
+ | 
+ 54
+ | 
+ IMAGEM ELETRO ELETRÔNICA
+ | 
+ QND 47 LOTE 19 TAGUATINGA NORTE
+ | 
+ BRASILIA-DF
+ | 
+ 55
+ | 
+ PLANETA SERVIÇO DE INSTALAÇÃO E TELECOM
+ | 
+ QND 55 LOTE 03 TAGUATINGA NORTE
+ | 
+ BRASILIA-DF
+ | 
+ 56
+ | 
+ TECSAT
+ | 
+ Av. Brasil, 301 – Novo Horizonte
+ | 
+ SERRA-ES
+ | 
+ 57
+ | 
+ A Era Digital Comércio e Serviços Ltda
+ | 
+ Av. Brasil, 52 – Jardim América
+ | 
+ CARIACICA-ES
+ | 
+ 58
+ | 
+ Casa das Antenas (Di Pablo Comércio)
+ | 
+ R. Thiers Velloso, 101 – Centro
+ | 
+ VITÓRIA-ES
+ | 
+ 59
+ | 
+ Luiz TV (Luiz Carlos Sepulcri ME)
+ | 
+ Av. Paulino Muller, 60 – Lj 03 – Ilha de Santa Maria
+ | 
+ VITÓRIA-ES
+ | 
+ 60
+ | 
+ SKYTEC
+ | 
+ Av. Henrique Moscoso, 1880 – Jaburuna
+ | 
+ VILA VELHA-ES
+ | 
+ 61
+ | 
+ MICROSAT
+ | 
+ Rua Prof. Otilia Cruz, 70 - Estreito
+ | 
+ FLORIANÓPOLIS-SC
+ | 
+ 62
+ | 
+ NEW VISION
+ | 
+ Rua Antônio Duarte, 5146 - Forquilha
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 63
+ | 
+ EXTREME
+ | 
+ Rua Princesa Isabel, 100
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 64
+ | 
+ MICROSAT
+ | 
+ Av. Irineu Bornhausen, 425 - Giasi
+ | 
+ SÃO JOSÉ-SC
+ | 
+ 65
+ | 
+ SATURSAT
+ | 
+ Av. Elza Luchi, 368
+ | 
+ PALHOÇA-SC
+ | 
+ 66
+ | 
+ PEREIRA E CIA SERVIÇOS E TECNOLOGIA DE INFORMAÇÃO LTDA – EPP (SKY TOTAL)
+ | 
+ AVENIDA FERNANDES LIMA, Nº 1550, FAROL
+ | 
+ MACEIÓ-AL
+ | 
+ 67
+ | 
+ GVA TECNOLOGIA COMÉRCIO DE ELETROELETRÔNICOS LTDA (SKY CENTER)
+ | 
+ AVENIDA JUCA SAMPAIO, Nº 4091, BARRO DURO
+ | 
+ MACEIÓ-AL
+ | 
+ 68
+ | 
+ NOBRE E VASCO LTDA (NOVA SKY)
+ | 
+ RUA ABELARDO PONTES LIMA, Nº 687, GRUTA DE LOURDES
+ | 
+ MACEIÓ-AL
+ | 
+ 69
+ | 
+ CRISTOVAM PEREIRA COMERCIO E SERVIÇO ME (CONNECT SKY)
+ | 
+ AVENIDA MENINO MARCELO, Nº 1-A, SERRARIA
+ | 
+ MACEIÓ-AL
+ | 
+ 70
+ | 
+ FERNANDA LAIS DOS SANTOS
+ | 
+ RUA SÃO JOSÉ, Nº 68, LOJA 9, JACINTINHO
+ | 
+ MACEIÓ-AL
+ | 
+ 71
+ | 
+ FENIX TELECOMUNICAÇÕES LTDA ME
+ | 
+ Av. Vasco da Gama, Bairro Jaguaribe
+ | 
+ JOÃO PESSOA-PB
+ | 
+ 72
+ | 
+ SERVICE TECH COMERCIO DE SERVIÇOS LTDA
+ | 
+ Rua Bom Jesus, 874 - Rangel
+ | 
+ JOÃO PESSOA-PB
+ | 
+ 73
+ | 
+ LUCENA TECNOLOGIA E SERVIÇOS DE COMUNICAÇÃO LTDA
+ | 
+ Rua Prof. Artur Batista, 38 - Bairro Jaguaribe
+ | 
+ JOÃO PESSOA-PB
+ | 
+ 74
+ | 
+ RECEL TELECOMUNICAÇÕES LTDA (RECEL PARAÍBA)
+ | 
+ Av. Rio Grande do Sul, 684 - Bairro dos Estados
+ | 
+ JOÃO PESSOA-PB
+ | 
+ 75
+ | 
+ Central Telecom
+ | 
+ Rua 24 de Outubro, 258, Centro
+ | 
+ CUIABÁ-MT
+ | 
+ 76
+ | 
+ ELETRÔNICA ALFA
+ | 
+ AV COUTO MAGALHAES, 1389, Centro
+ | 
+ VÁRZEA GRANDE-MT
+ | 
+ 77
+ | 
+ IMAGEM DIGITAL
+ | 
+ Av Miguel Sutil, nº 13090
+ | 
+ CUIABÁ-MT
+ | 
+ 78
+ | 
+ Sky Zarzenon
+ | 
+ Rua Livramento, 408
+ | 
+ VÁRZEA GRANDE-MT
+ | 
+ 79
+ | 
+ Sky Zarzenon
+ | 
+ Av Couto Magalhães, 1377, Centro
+ | 
+ VÁRZEA GRANDE-MT
+ | 
+ 80
+ | 
+ SER SKY
+ | 
+ AV Paulista, 89 - Joquei Clube
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 81
+ | 
+ J R CRISTOFOLI
+ | 
+ Rua Fernando Augusto Correia da Costa, 295
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 82
+ | 
+ TER LTDA ME
+ | 
+ Rua General Nepomuceno Costa, 637 - Vila Alba
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 83
+ | 
+ EMY LUCI ROCHA GAZOZO
+ | 
+ Av. Bandeirantes, 104 - Amambai
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 84
+ | 
+ 7 COMPONENTES ELETRÔNICOS LTDA
+ | 
+ Rua sete de Setembro, 301 - Centro
+ | 
+ CAMPO GRANDE-MS
+ | 
+ 85
+ | 
+ Shopping das Antenas
+ | 
+ Qd. 1206 Sul, Al. 24, Lt. 01, Sl. 05.
+ | 
+ PALMAS-TO
+ | 
+ 86
+ | 
+ SKY PALMAS
+ | 
+ Av. I, Qd. 129, Lt. 24 – Aureny III
+ | 
+ PALMAS-TO
+ | 
+ 87
+ | 
+ ENJOY SKY PALMAS
+ | 
+ 104 Sul, Rua SE 03, Lt. 35, SL. 04.
+ | 
+ PALMAS-TO
+ | 
+ 88
+ | 
+ BRASIL SAT
+ | 
+ Av. Joaquim Aires, 2175
+ | 
+ PORTO NACIONAL-TO
+ | 
+ 89
+ | 
+ TOTAL SKY
+ | 
+ Av. Hermes Fontes 982 – Bairro Suíça
+ | 
+ ARACAJU-SE
+ | 
+ 90
+ | 
+ ELETROCEL
+ | 
+ Av Eng Gentil Tavares 504– Bairro Getúlio Vargas
+ | 
+ ARACAJU-SE
+ | 
+ 91
+ | 
+ PROPRIASAT LTDA
+ | 
+ Av Eng Gentil Tavares 906 – Bairro Cirurgia
+ | 
+ ARACAJU-SE
+ | 
+ 92
+ | 
+ TJ TEC SERVICOS LTDA – ME (PONTO DAS ANTENAS)
+ | 
+ Av Santa Gleide 749 – Bairro Jardim Centenário
+ | 
+ ARACAJU-SE
+ | 
+ 93
+ | 
+ DUNKEL SILVA COMERCIO E SERVICOS LTDA – ME (PONTO SKY)
+ | 
+ Rua Porto da Folha 850 – Sala 09 – Bairro Cirurgia
+ | 
+ ARACAJU-SE
+ | 
+ 94
+ | 
+ F E NEPOMUCENO COMERCIO SERVICOS E REPRESENTACOES
+ | 
+ RUA ALMINO AFONSO, Nº 86, RIBEIRA
+ | 
+ NATAL-RN
+ | 
+ 95
+ | 
+ MARCELO DE M. SILVA - ME (NOVA ELETRÔNICA)
+ | 
+ RUA DOURTOR HERNANI HUGO GOMES, Nº 316, CAPIM MACIO
+ | 
+ NATAL-RN
+ | 
+ 96
+ | 
+ JONAS MEDEIROS TOMAZ ME (POTIGUAR SAT)
+ | 
+ AV. PRUDENTE DE MORAIS 6339, Nº 6339, CANDELÁRIA
+ | 
+ NATAL-RN
+ | 
+ 97
+ | 
+ AQUINO E CUNHA LTDA LIDER SAT
+ | 
+ RUA JAGUARARI, Nº 1850, LAGOA NOVA
+ | 
+ NATAL-RN
+ | 
+ 98
+ | 
+ RN TELECOM COMERCIO E SERVICOS LTDA EPP
+ | 
+ AV. TENENTE MEDEIROS, Nº 69, CENTRO
+ | 
+ PARNAMIRIM-RN
+ | 
+ 99
+ | 
+ RONALDO DE OLIVEIRA SOUSA MANUTENÇÃO ELÉTRICA
+ | 
+ AVENIDA MIGUEL ROSA, 6148 – PIO IX
+ | 
+ TERESINA-PI
+ | 
+ 100
+ | 
+ F ROBERT FORTES VELOSO (TV SKY)
+ | 
+ AVENIDA JOÃO XXIII, 2937 – SÃO CRISTÓVÃO
+ | 
+ TERESINA-PI
+ | 
+ 101
+ | 
+ ALENCAR & ARAGÃO LTDA (SKY VIDEO)
+ | 
+ RUA COELHO DE RESENDE, 364 – CENTRO/NORTE
+ | 
+ TERESINA-PI
+ | 
+ 102
+ | 
+ CARLOS A DE L SANTOS FILHO – ME (PORTAL DIRCEU)
+ | 
+ RUA JUIZ EMILIANO PAES LANDIM, 20 A
+ | 
+ TERESINA-PI
+ | 
+ 103
+ | 
+ ANTONIA LEIDIANA FERNANDES MELO (TOP SKY)
+ | 
+ QUADRA 35, CASA 22/2 – MOCAMBINHO 1 – SETOR A
+ | 
+ TERESINA-PI
+ | 
+ 104
+ | 
+ LM PROVEDOR DE INTERNET
+ | 
+ Av. 13, nº 02 - Bairro do Maiobão
+ | 
+ PAÇO DO SUMIAR-MA
+ | 
+ 105
+ | 
+ C.A. CARVALHO ME
+ | 
+ Av. São Luis Rei de França. 79 - Turú
+ | 
+ SÃO LUIS-MA
+ | 
+ 106
+ | 
+ M.C. GONÇALVES
+ | 
+ Rua 03/Inácio Xavier, 673 Bairro São Francisco
+ | 
+ SÃO LUIS-MA
+ | 
+ 107
+ | 
+ TELEBRAC
+ | 
+ Rua D, quadra A, casa 06 Coaserma 02
+ | 
+ SÃO LUIS-MA
+ | 
+ 108
+ | 
+ E. RIBEIRO ELETRÔNICA ME
+ | 
+ Avenida A, 40 Jardim Araçagy
+ | 
+ SÃO LUIS-MA
+ | 
+ 109
+ | 
+ CLARK TELECOMUNICAÇÃO DIGITAL
+ | 
+ Av. Coletora 4000/7000, nº 01 Parque Vitória
+ | 
+ SÃO LUIS-MA
+ | 
+ 110
+ | 
+ Via Premium
+ | 
+ Avenida Ceará 1716
+ | 
+ RIO BRANCO-AC
+ | 
+ 111
+ | 
+ H. G. FAÇANHA - ME
+ | 
+ Rua Rio de Janeiro, ns 1186 -Bairro Florestai
+ | 
+ RIO BRANCO-AC
+ | 
+ 112
+ | 
+ RORAISAT COMERCIO E SERVICOS LTDA ME.
+ | 
+ AV GENERAL ATAIDE TEIVE 581
+ | 
+ BOA VISTA-RR
+ | 
+ 113
+ | 
+ ADRIANO MORAES DA SILVA CARDOZO 79602681268 - ME
+ | 
+ AV VIA DAS FLORES 1263
+ | 
+ BOA VISTA-RR
+ | 
+ 114
+ | 
+ C.F. VIEIRA LIMA JUNIOR ME (TELESAT)
+ | 
+ AV MARIO HOMEM DE MELO 2668
+ | 
+ BOA VISTA-RR
+ | 
+ 115
+ | 
+ Cícera da Silva Costa - ME (RR Century)
+ | 
+ Av. Gal. Ataíde Teive, 5705 Cambará
+ | 
+ BOA VISTA-RR
+ | 
+ 116
+ | 
+ L.D.S. Santos Silva Costa - ME (Haffic)
+ | 
+ Av. Mario Homem de Melo, 3510 Cambará
+ | 
+ BOA VISTA-RR
+ | 
+Contudo, rejeita-se a proposta da área técnica de classificar a infração, nesse ponto, como sistêmica. Isso porque sua identificação depende de avaliação in loco, e a extrapolação das práticas dos estabelecimentos requer elementos adicionais que não se encontram presentes no caso em análise.
+Assim, mantém-se a caracterização da infração em comento, em caráter pontual, em 116 (cento e dezesseis) estabelecimentos, no SeAC e no SCM.
+Por sua vez, quanto ao fornecimento de login e senha, no momento da contratação, mantém-se a caracterização da infração, uma vez que a própria recorrente admite que essa prática é rotina por ela mesma adotada, em caráter procedimental. Igualmente, ratifica-se o entendimento da área técnica no sentido de que o argumento de “segurança da informação” não afasta a obrigação regulamentar nem exime a recorrente, acrescentado que cabe a ela adotar medidas de segurança sem descumprir o RGC.
+Nesse sentido, quanto a esse ponto, mantém-se a infração ao art. 51, em caráter sistêmico, na forma proposta pela área técnica, no SeAC e no SCM.
+Por fim, faz-se nova dosimetria, com aplicação de fator de proporcionalidade de 50% para cada um desses núcleos, conforme antecipado.
+III.b.9 - Sequencial 25 - Art. 14, caput, do RGC 2014 (Processamento Técnico Necessita de Prazo)
+O art. 14 do RGC 2014 assim dispõe:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+Em primeira instância (Informe nº 131/2021/CODI/SCO - SEI nº 6822530), caracterizou-se essa infração, de forma pontual, para uma ocorrência.
+Transcreve-se o teor da reclamação que subsidiou a infração em comento:
+ID-FOCUS 1921806.2016
+A SKY descumpriu o Regulamento da ANATEL que permite ao usuário o cancelamento pelo site. Fiz meu registro em 16/05/2015 (Conforme registro feito por mim através de print screen da tela), e imaginei que o serviço tivesse sido cancelado. Ontem, dia 14/06/2016, recebi a fatura referente ao mês de junho e liguei para reclamar. Foi realizado um novo (e mau) atendimento de cancelamento, do qual obtive o protocolo nº 201620166525553. É devida esta cobrança? Entendo que o meu registro de 16/05/2016 deva prevalecer, independente de ter que ligar para uma atendente; ora, se preciso ligar para uma atendente após um registro no site, então para que a opção de cancelamento através do site. Ao meu ver, a SKY está descumprindo o regulamento da ANATEL. 
+Compulsando o acervo processual, entende-se pelo acolhimento do entendimento da área técnica, com caracterização em uma ocorrência.
+III.c - Situação das Infrações Apuradas e Avaliação da Substituição da Pena de Multa por Advertência
+A partir da fundamentação acima, conclui-se o seguinte para as infrações investigadas:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Serviço
+ | 
+ Conclusão da Análise
+ | 
+ Repercussão
+ | 
+ 1.
+ | 
+ Não foi verificado um sumário a ser entregue ao consumidor antes da contratação nos pontos de venda
+ | 
+ Art. 50, P.U, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Prescrita
+ | 
+ -
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Pontual (39 lojas)
+ | 
+ 3.
+ | 
+ Login e senha não são fornecidos no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor
+ | 
+ Art. 21, caput, c/c Art. 3º, IV, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 4.
+ | 
+ Não é informado ao consumidor o prazo de permanência mínima e multa por rescisão antecipada
+ | 
+ Art. 50, IX c/c art. 3º, IV, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ Em aglutinação: Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses
+ | 
+ Art. 22, inc. II, do RGC 2014
+ *Em primeira instância, houve aglutinação com os incs. III, VII e IX
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada -juntamente com os incs. III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção. 
+ | 
+ Sistêmica
+ | 
+ 6.
+ | 
+ Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses, nem recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Sistêmica
+ | 
+ 7.
+ | 
+ Não é feito o cancelamento de forma presencial (salvo um único setor em SP) e imediata
+ | 
+ Art. 14, caput, c/c Art. 22, X, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Pontual (01 usuário)
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Sistêmica
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 22, § 3º, do Anexo à Resolução nº 632/2014
+ Reclassificada de Art. 21, caput, c/c Art. 13, caput e absorvida pela infração ao art. 15
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada -absorvida pela infração ao art. 15
+ | 
+ Sistêmica
+ | 
+ 10.
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Pontual (13 usuários)
+ | 
+ 11.
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ Art. 14, P.U., c/c art. 85, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Reclassificada para arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014
+ | 
+ Pontual (01 usuário)
+ | 
+ 12.
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ Art. 3º, X, c/c Art. 27, caput c/c Art. 7º, caput, todos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Caracterizada
+ | 
+ Pontual (02 usuários)
+ | 
+ 13.
+ | 
+ Cobrança pelos custos de manutenção dos equipamentos sempre a cargo do consumidor indistintamente
+ | 
+ Art. 96 do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 14.
+ | 
+ Existência de contestação do prazo de reajuste
+ | 
+ Art. 50, III, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 15.
+ | 
+ Não há disponibilização de contratação de SCM ao consumidor (SEI nº 3340144)
+ | 
+ Art. 46 do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 16.
+ | 
+ Único documento entregue era a Proposta de Assinatura, na qual não consta restrições a utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders (SEI nº 3340177, 3340378 e 0341004)
+ | 
+ Art. 22, I, c/c Art. 50, caput, V, VI e VII, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 17.
+ | 
+ Os estabelecimentos visitados não registram protocolo ou encaminham pedidos de informação, reclamações e solicitações de serviços, rescisão ou qualquer outra demanda do Grupo (SEI nº 3340360) e estabelecimentos em local de difícil acesso, com endereço difícil de encontrar (SEI nº 3340957)
+ | 
+ Art. 32 do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 18.
+ | 
+ Não assegura ao consumidor acesso aos canais de atendimento da Anatel (SEI nº 3340366)
+ | 
+ Art. 31 do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Prescrita
+ | 
+ -
+ | 
+ 19. 1ª parte
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Pontual (116 lojas)
+ | 
+ 19. 2ª parte
+ | 
+ Não é fornecido login e senha no momento da contratação
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ Caracterizada
+ | 
+ Sistêmica
+ | 
+ 20.
+ | 
+ Não há sistema disponível para as lojas terceirizadas para cadastramento de reclamações, tudo é feito pelo acesso nº 10611 (SEI nº 3340804)
+ | 
+ Art. 19, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 21.
+ | 
+ Informação sobre fidelização em letras mínimas de difícil leitura (SEI nº 3340804)
+ | 
+ Art. 50, IX, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 22.
+ | 
+ A contratação de novos pacotes de serviço permanecem inviabilizados na cidade devido às áreas cobertas pelo SCM estarem saturadas (SEI nº 3340899)
+ | 
+ Art. 46 c/c Art. 3º, III, do Anexo à Resolução nº 632/2014 c/c Art. 48 do Anexo à Resolução nº 581/2012
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 23.
+ | 
+ Protocolo fornecido apenas no fim do atendimento pelo call center e de acordo com a solicitação do usuário (SEI nº 3340945)
+ | 
+ Art. 7º, §2º, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 24.
+ | 
+ Preços individuais dos serviços SCM são superiores quando contratados de forma isolada (SEI nº 3340945 e 3341025)
+ | 
+ Art. 54, caput e P.U., c/c Art. 41, §2º, ambos do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ 25.
+ | 
+ O processamento técnico do cancelamento necessita de prazo para efetivação (SEI nº 3341004)
+ | 
+ Art. 14, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+Não é o caso de aplicação de pena de advertência, pois as infrações sistêmicas são graves, seja por atingirem número significativo de usuários, seja por ensejarem vantagem direta à Recorrente (arts. 9º, § 3º, incs. I e IV, c/c 12, parágrafo único, inc. II, do RASA). Nas infrações pontuais, apurou-se quantidade relevante de estabelecimentos, pelo que se entende que a substituição pela pena de advertência não se revela adequada para o caso.
+A seguir, passa-se à dosimetria da sanção.
+IV - Dosimetria da Sanção
+Neste tópico, reavalia-se a dosimetria das multas fixadas. 
+Inicialmente, inventariam-se os elementos de cálculo da multa e procede-se à identificação de agravantes e atenuantes. Ao fim, passa-se ao cálculo das multas propriamente ditas.
+IV.a - Elementos de Cálculo do Valor Base das Multas
+O cálculo do valor da multa, para cada infração identificada, deve seguir a metodologia constante do item 5 do Anexo da Portaria nº 791, de 26 de agosto de 2014, c/c arts. 9º a 11 e 17 a 21 do RASA, abaixo transcrita:
+,
+onde:
+VBase: Valor base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;
+Ua: Quantidade de Usuários que foram afetados pela infração;
+UT: Total de Usuários da base da Prestadora;
+FatorDT: Fator de proporcionalidade da Infração obtida da seguinte forma:
+;
+FG: Fator de Gravidade. Fator referente à Gradação da Infração, podendo assumir os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave);
+VRef: Valor correspondente a um percentual k = 1% da Receita Operacional Líquida – ROL da prestadora, da época da aplicação da sanção.
+No presente caso, os elementos de cálculo da multa são os seguintes:
+Elencam-se os seguintes elementos de cálculo da multa, com considerações em relação à decisão recorrida:
+Receita Operacional Líquida: a ROL mais atual disponível à época da decisão recorrida era a referente ao exercício de 2019, motivo pelo qual não há necessidade de ajuste quanto a esse ponto. Rejeita-se a alegação da recorrente no sentido de se empregar ROL posterior, pois, a partir do teor do Informe nº 283/2024/CODI/SCO (SEI nº 12491685), "como as infrações apuradas neste Pado foram praticadas antes da incorporação, com fundamento no Acórdão nº 90 (SEI nº 5330395), unânime, de 12/03/2020, emitido no bojo do Processo nº 53504.025364/2012-30, deve ser utilizada a ROL da empresa sucedida mais próxima disponível ao ano do sancionamento, sendo esta a de 2019". Assim, mantém-se o entendimento adotado na decisão recorrida, com os seguintes valores:
+Para o SeAC: R$ 8.038.897.147,00 (oito bilhões, trinta e oito milhões, oitocentos e noventa e sete mil cento e quarenta e sete reais);
+Para o SCM: R$ 163.106.358,00 (cento e sessenta e três milhões, cento e seis mil trezentos e cinquenta e oito reais);
+Usuários atingidos (Ua):
+conforme já adiantado as seguintes infrações foram caracterizadas como sistêmicas, por serem de caráter procedimental, decorrentes de rotinas padronizadas replicáveis em todos os seus serviços, com potencial de prejudicar todos os usuários dos serviços da recorrente:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Serviço
+ | 
+ Situação em relação à decisão recorrida
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ Em aglutinação: Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses
+ | 
+ Art. 22, inc. II, do RGC 2014
+ Caracterizada juntamente com os incs. III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção.
+ | 
+ SeAC e SCM
+ | 
+ mantida
+ | 
+ 6.
+ | 
+ Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses, nem recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do Anexo à Resolução nº 632/2014, com aplicação de fator de proporção.
+ | 
+ SeAC
+ | 
+ mantida
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ mantida
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 22, § 3º, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporção.
+ Recaracterizada do Art. 21, caput, c/c Art. 13, caput
+ | 
+ SeAC e SCM
+ | 
+ mantida - sem prejuízo da reclassificação - com absorção pelo art 15
+ | 
+ 19. 2ª parte
+ | 
+ Não é fornecido login e senha no momento da contratação
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ SeAC e SCM
+ | 
+ mantida
+ | 
+por sua vez, as seguintes infrações foram classificadas como pontuais, conforme visto ao longo da presente fundamentação:
+ Variável "Ua" para infrações constatadas em reclamações no sistema Focus
+ | 
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Serviço
+ | 
+ Ua
+ | 
+ Situação em relação à decisão recorrida
+ | 
+ 11.
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ Art. 14, P.U., c/c art. 85, caput, do Anexo à Resolução nº 632/2014
+ Reclassificada para arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014 
+ | 
+ SeAC
+ | 
+ 01
+ | 
+ Reclassificada Art. 14, P.U.
+ | 
+ 10.
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do RGC 2014
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ SeAC
+ | 
+ 13
+ | 
+ Diminuída - valor anterior - Ua = 15
+ | 
+ 12 (2ª Parte)
+ | 
+ Art. 7º, caput, do RGC 2014
+ * Observa-se que a 1ª parte (art. 3º, X, c/c art. 27, caput c/c Art. 7º) foi descaracterizada em primeira instância
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ SeAC
+ | 
+ 02
+ | 
+ Mantida
+ | 
+ 25.
+ | 
+ Art. 14, caput, do RGC 2014
+ | 
+ O processamento técnico do cancelamento necessita de prazo para efetivação (SEI nº 3341004)
+ | 
+ SeAC
+ | 
+ 01
+ | 
+ Diminuída - valor anterior - Ua = 02
+ | 
+ Variável "Ua" para infrações em estabelecimentos
+ | 
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Serviço
+ | 
+ Ua
+ | 
+ Situação em relação à decisão recorrida
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, do Anexo à Resolução nº 632/2014
+ | 
+ SeAC e SCM
+ | 
+ 39 lojas
+ | 
+ Diminuída - valor anterior - Ua = 86
+ | 
+ 19. 1ª parte
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ SeAC e SCM
+ | 
+ 116 lojas
+ | 
+ Mantida.
+ Obs.: no entanto, a infração foi absorvida pelo item 19. 2ª parte (omissão no fornecimento de login e senha). Com a proporcionalização, houve reforma a favor da recorrente.
+ | 
+total de usuários (Ut):
+para as infrações em reclamações no sistema Focus, mantém-se a decisão recorrida e emprega-se o valor de 5.323.610 (cinco milhões, trezentos e vinte e três mil seiscentos e dez);
+para as infrações identificadas em estabelecimentos (arts. 38 e 51, caput - ausência de entrega do contrato no ato da contratação), emprega-se o valor de 1.600 (mil e seiscentos) estabelecimentos, reformando-se a decisão recorrida, que considerou 133 (cento e trinta e três) estabelecimentos no cálculo da pena;
+Dano (D): provê-se o recurso para aplicar o fator "dano" no mínimo regulamentar para as diversas infrações. Afasta-se a majoração desse fator, em virtude da aglutinação de condutas, feita na decisão recorrida, a exemplo do que ocorreu nas infrações ao art. 22 do RGC 2014; 
+Tempo (T): mantêm-se os valores empregados na decisão recorrida, a saber:
+"até 30 dias" para as infrações aos arts. 7º, caput, 13, caput, e 14, caput, do RGC, já adotado na decisão recorrida, pois tratam-se de irregularidades constatadas em reclamações, as quais devem levar em conta o prazo da prestadora para solucionar/responder;
+para as demais infrações, identificadas em estabelecimentos e no espaço reservado e no atendimento online, acolhe-se a proposta de majoração da área técnica, nos termos do Informe nº 283/2024/CODI/SCO, empregando-se o valor "até 1 ano", correspondente ao tempo de duração da atividade fiscalizatória, elevado de "até 1 dia", conforme decisão recorrida; ressalta-se que já houve manifestação da prestadora quanto á possibilidade de agravamento.
+Gravidade (FG): rejeitam-se as alegações da recorrente para alterar a gravidade da infração e mantém-se o entendimento adotado na decisão recorrida, assim sintetizado:
+as infrações sistêmicas devem ser classificadas como graves por atingirem número significativo de usuários, incidindo, nessas hipóteses, o art. 9º, § 3º, inc. IV, do RASA, traduzindo-se em prática ampla e generalizada da recorrente, não sendo necessário qualquer prejuízo efetivo nesse particular, bastando a mera potencialidade de frustração desses direitos ao usuário;
+as infrações em reclamações, por sua vez, ensejaram vantagem direta à Recorrente, e conforme art. 9º, §3º, inc. I, do RASA, devem igualmente ser classificadas como Graves;
+as demais seguem classificadas como médias, por atingirem número limitado de usuários (art. 9º, § 2º, inc. II, do RASA).
+IV.b - Agravantes e Atenuantes
+No Informe nº 283/2024/CODI/SCO (SEI nº 12491685), identificaram-se 38 (trinta e oito) antecedentes para o serviço SeAC, listados na Planilha I (SEI nº 12743268), nenhum deles caracterizando reincidência específica.
+Diante da ausência de qualquer elemento probatório que contrarie esse entendimento, a agravante de antecedentes será aplicada no patamar de 20% para esse serviço, acolhendo-se a proposta de majoração proposta pela área técnica, tendo a decisão recorrida fixado essa agravante em 12%.
+A seu turno, mantém-se a agravante de 10% (art. 19, inc. III, do RASA) para a infração ao art. 15 - reconhecida na decisão recorrida - eis foi classificada como "grave" por duas das hipóteses estabelecidas no art. 9º, § 3º, do RASA, consoante se depreende da fundamentação acima.
+Quanto às atenuantes, conforme já exposto anteriormente, agrava-se a situação da recorrente para retirar a atenuante de 70% aplicada em primeira em instância e aplicar o percentual de 50% para as infrações no espaço reservado, nos termos do art. 20, inc. III, do RASA, em ambos os serviços.
+Não há outras agravantes nem atenuantes.
+IV.c - Valores Finais das Multas
+Dos elementos anteriormente expostos, depreendem-se os seguintes valores finais das multas, conforme planilhas (SEI nº 15187727):
+ SeAC
+ | 
+ #
+ | 
+ Conduta irregular
+ | 
+ Disposição do RGC 2014 infringida
+ | 
+ Multa final (em R$)
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, do Anexo à Resolução nº 632/2014
+ | 
+ 575.241,52
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ Em aglutinação: Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses
+ | 
+ Art. 22, inc. II, do RGC 2014
+ Caracterizada juntamente com os incs. III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção.
+ | 
+ 3.014.586,43, antes da proporcionalização, sendo R$ 251.215,53, por ocorrência, totalizando R$ 1.004.862,14 (quatro ocorrências)2
+ | 
+ 6.
+ | 
+ Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses, nem recurso que possibilitasse acompanhamento durante a fruição
+ | 
+ Art. 22, VIII, c/c Art. 10, caput e §2º, ambos do Anexo à Resolução nº 632/2014, com aplicação de fator de proporção.
+ | 
+ 251.215,54
+ | 
+ 7.
+ | 
+ Não é feito o cancelamento de forma presencial (salvo um único setor em SP) e imediata
+ | 
+ Art. 14, caput, c/c Art. 22, X, ambos do Anexo à Resolução nº 632/2014
+ | 
+ 5.000,00
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 9.434.539,01
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 22, § 3º, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporção.
+ Reclassificada do Art. 21, caput, c/c Art. 13, caput e absorvida pelo art. 15
+ | 
+ Vide sequencial 8
+ | 
+ 10.
+ | 
+ Havia a prática de não cancelar o serviço de consumidores que estivessem com pagamento de contas em atraso
+ | 
+ Art. 13, caput c/c Art. 3º, XV, do Anexo à Resolução nº 632/2014
+ | 
+ 11.515,33
+ | 
+ 11.
+ | 
+ Aos consumidores que possuíssem o sistema de pagamento antecipado, quando do cancelamento, não era oferecida restituição do período pago e ainda não usufruído, não cessando a cobrança no dia da solicitação de cancelamento e não devolvendo o cobrado indevidamente
+ | 
+ Reclassificada para art. 3º, IV, 5º, I, III e IV, 
+ | 
+ 5.000,00
+ | 
+ 12.
+ | 
+ Havia dificuldade para o cliente acessar o espaço reservado, vez que o CPF não era reconhecido, impedindo-o de interagir e mesmo de registrar reclamação por não receber número de protocolo
+ | 
+ Art. 3º, X, c/c Art. 27, caput c/c Art. 7º, caput, todos do Anexo à Resolução nº 632/2014
+ | 
+ 5.000,00
+ | 
+ 19. 1ª parte
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ 811.702,24, antes da proporcionalização, totalizando R$ 405.851,12 após a aplicação do fator
+ | 
+ 19. 2ª parte
+ | 
+ Não é fornecido login e senha no momento da contratação
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ 6.029.172,86, antes da proporcionalização, totalizando R$ 3.014.586,43 após a aplicação do fator
+ | 
+ Obs.:
+ 1. No Informe nº 283/2024/CODI/SCO e na Planilha II - Recálculo de Multa DGU - SeAC (SEI nº 12747613), em que se analisa o recurso interposto, destacam-se os seguintes registros:
+ - o valor-base da multa para a infração ao art. 22, antes da aplicação do fator de proporcionalidade, corresponde a R$ 5.024.310,72, o qual é igual ao valor-base apurado nesta Análise para a mesma capitulação, antes da aplicação do fator de proporcionalidade;
+ - o fator tempo foi elevado de "um dia" para "até um ano", de modo a refletir o período fiscalizado, o que impactou no aumento do valor-base para todas as infrações reconhecidas nesta Análise;
+ - o percentual de agravamento por antecedentes no SeAC foi ampliado de 12% para 20%;
+ - reconheceu-se o caráter sistêmico da infração relacionada à ausência de fornecimento de login e senha;
+ - a recorrente foi intimada para se manifestar sobre a possibilidade de agravamento de pena em sede recursal, restando atendido o contraditório.
+ 2. Retirou-se atenuante de 70%, reconhecida na decisão recorrida, e aplicou-se atenuante de 50%, tendo a recorrente se manifestado sobre o ponto em alegações em agravamento.
+ | 
+ TOTAL PARA O SeAC: R$ 14.707.811,09 (quatorze milhões, setecentos e sete mil oitocentos e onze reais e nove centavos)
+ | 
+ SCM
+ | 
+ #
+ | 
+ Conduta irregular
+ | 
+ Disposição do RGC 2014 infringida
+ | 
+ Multa final(em R$)
+ | 
+ 2.
+ | 
+ Não há terminal para acesso ao Atendimento Remoto para demandas relacionadas a todos os serviços e modalidades prestados pelo Grupo
+ | 
+ Art. 38, do Anexo à Resolução nº 632/2014
+ | 
+ 9.726,20
+ | 
+ 5.
+ | 
+ Não estava disponível o sumário do contrato
+ Em aglutinação: Não havia referência a novos serviços contratados, ao histórico das demandas (registradas nos últimos 6 meses), do perfil de consumo dos últimos 3 meses
+ | 
+ Art. 22, inc. II, do RGC 2014
+ Caracterizada juntamente com os incs. III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção.
+ | 
+ 50.970,74, antes da proporcionalização, sendo R$ 4.247,56, por ocorrência, totalizando R$ 16.990,25 (quatro ocorrências)2
+ | 
+ 8.
+ | 
+ Indução ao consumidor a falar com atendente, pois não informa o valor da multa para o contrato específico do consumidor e não permite a devolução dos equipamentos sem falar com o "especialista"
+ | 
+ Art. 15, caput, do Anexo à Resolução nº 632/2014
+ | 
+ 161.973,67
+ | 
+ 9.
+ | 
+ Não havia informação no espaço reservado sobre multa induzindo a falar com atendente para cancelamento
+ | 
+ Art. 22, § 3º, do Anexo à Resolução nº 632/2014, absorvida pelo art. 15.
+ Reclassificada do Art. 21, caput, c/c Art. 13, caput e absorvida pelo art. 15
+ | 
+ Vide sequencial 8
+ | 
+ 19. 1ª parte
+ | 
+ Não é entregue o contrato no ato da contratação, mas proposta de assinatura (SEI nº 3340366)
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ 13.724,29, antes da proporcionalização, totalizando R$ 6.862,15 após a aplicação do fator
+ | 
+ 19. 2ª parte
+ | 
+ Não é fornecido login e senha no momento da contratação
+ | 
+ Art. 51, caput, do Anexo à Resolução nº 632/2014, com aplicação de fator de proporcionalidade
+ | 
+ 101.941,47, antes da proporcionalização, totalizando R$ 50.970,74 após a aplicação do fator
+ | 
+ Obs.:
+ 1. No Informe nº 283/2024/CODI/SCO e na Planilha III - Recálculo de Multa DGU - SCM (SEI nº 12747640), em que se analisa o recurso interposto, destacam-se os seguintes registros:
+ - o valor-base da multa para a infração ao art. 22, antes da aplicação do fator de proporcionalidade, corresponde a R$ 101.941,47, o qual é igual ao valor-base apurado nesta Análise para a mesma capitulação, antes da aplicação do fator de proporcionalidade;
+ - o fator tempo foi elevado de "um dia" para "até um ano", de modo a refletir o período fiscalizado, o que impactou no aumento do valor-base para todas as infrações reconhecidas nesta Análise;
+ - reconheceu-se o caráter sistêmico da infração relacionada à ausência de fornecimento de login e senha;
+ - a recorrente foi intimada para se manifestar sobre a possibilidade de agravamento de pena em sede recursal, restando atendido o contraditório.
+ 2. Retirou-se atenuante de 70%, reconhecida na decisão recorrida, e aplicou-se atenuante de 50%, tendo a recorrente se manifestado sobre o ponto em alegações em agravamento.
+ | 
+ TOTAL PARA O SCM: R$ 246.523,00 (duzentos e quarenta e seis mil quinhentos e vinte e três reais)
+ | 
+Por consequência, o valor definitivo das multas para as infrações em apuração fica consolidado em R$ 14.954.334,09 (quatorze milhões, novecentos e cinquenta e quatro mil trezentos e trinta e quatro reais e nove centavos), destacando-se que os cálculos das multas encontram-se na Planilha (SEI nº 15187727).
+V - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+A fundamentação apresentada está em consonância com esses objetivos, especialmente o descrito no inciso II mencionado acima. A aplicação de reprimenda à recorrente reforça os objetivos das políticas públicas da Anatel, promovendo a qualidade dos serviços de telecomunicações. Além disso, contribui para a confiabilidade esperada na correção de condutas indesejadas pelas prestadoras.
+Expõe-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada encontra-se alinhada aos objetivos estabelecidos, em especial àqueles dispostos no art. 5º, inciso VII, do Decreto nº 12.150/2024, bem como nos itens 1.5, i, ii e xii, do memorando supracitado. O processo pauta-se em evidências de descumprimento, respeitando o devido processo legal e, ao analisar a adequação da sanção de multa, busca assegurar que a decisão seja eficaz para alcançar os objetivos de aprimoramento da qualidade dos serviços prestados.
+Esse alinhamento reforça e legitima a capacidade regulatória da Anatel para promover intervenções no mercado e, concomitantemente, fortalece a confiança na efetividade das medidas adotadas para a correção de condutas indesejadas praticadas pelas prestadoras.
+VI - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento(PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades.
+A referida obra explora debates sobre os desafios e oportunidades dentro dessa temática. No capítulo 2, que trata da Autonomia Decisória, a autora Patrícia Pessoa Valente (2024, p. 49) destaca, já na introdução, que:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para atos que contrariem obrigações de interesse público devidamente salvaguardadas pela Anatel.
+VII - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE oferece orientação para auxiliar os formuladores de políticas na avaliação e melhoria da estrutura legal, regulatória e institucional voltada para a governança corporativa. O objetivo é apoiar a confiança e a integridade do mercado, promover a eficiência econômica, fomentar o crescimento sustentável e assegurar a estabilidade financeira. Os princípios de governança estabelecidos são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar, ademais, que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para ações que contrariem obrigações de interesse público, devidamente protegidas pela Anatel. A imposição da sanção tem como objetivo assegurar o cumprimento dos padrões mínimos de qualidade de atendimento ao usuário exigidos pela Agência.
+A avaliação criteriosa da multa aplicada alinha-se com essa prática, reafirmando o compromisso da Anatel com a accountability de sua atuação.
+VIII - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+O Brasil é um dos países signatários da referida Agenda, tendo, dessa forma, caráter cogente para o Poder Executivo brasileiro. Isso porque, em 2023, editou-se o Decreto nº 11.704, que instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inc. I), competindo-lhe, dentre outros pontos, acompanhar e monitorar o alcance dos ODS (art. 2º, inc. II) e identificar, sistematizar e divulgar boas práticas e iniciativas que colaborem para o alcance dos ODS (art. 2º, inc. IV). Tem-se, portanto, que a República firmou seu compromisso em buscar a implementação dos objetivos e indicadores da referida Agenda.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Pontua-se que a Agenda 2030 não faz incursões sobre as políticas públicas concretas de implementação desses objetivos e indicadores, cabendo essa atribuição às instituições governamentais dos países signatários. Assim, destaca-se que a edição do mencionado Decreto nº 11.704/2023 constitui um ato de reafirmação do compromisso brasileiro com a implementação dos ODS, sendo, novamente, de observância obrigatória pelos órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+Esta Agência, enquanto responsável pela concepção, implementação e monitoramento de políticas públicas relacionadas à ampliação da conectividade no setor de telecomunicações, dispõe de margem de discricionariedade para avaliar quais são as opções concretas de políticas públicas que estão mais alinhadas com a consecução dos ODS.
+Compreende-se que a decisão contribui para o cumprimento do Objetivo 16 da Agenda 2030, que busca promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis. A educação das empresas para que respeitem integralmente os direitos básicos dos consumidores e prestem serviços adequados está em consonância com a meta 16.3, pois promove o Estado de Direito em nível nacional, garantindo igualdade de tratamento para todas as partes interessadas no tema.
+Ademais, há uma relação direta com a meta 16.7, já que a tomada de decisão pelo ente regulador, por meio do sancionamento, assegura uma atuação responsiva, inclusiva e participativa da sociedade como um todo.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo, como foco principal, o desenvolvimento humano no Brasil e no Mundo. As principais dimensões desse projeto têm natureza social, ambiental, econômica e institucional. O desenvolvimento global somente é concebível por um caminho sustentável, com medidas verdadeiramente transformadoras. Justamente por isso, foram definidos 17 objetivos e 169 metas globais interconectadas, a serem atingidos até 2030.
+Nesse ponto, pela relevância do tema, destaca-se o Objetivo 1 da Agenda 2030, que é o de acabar com a pobreza em todas as suas formas, em todos os lugares. Para o caso analisado, destacam-se as seguintes metas:
+Meta 1.3 - Implementar, em nível nacional, medidas e sistemas de proteção social adequados, para todos, incluindo pisos, e até 2030 atingir a cobertura substancial dos pobres e vulneráveis;
+Meta 1.4 - Até 2030, garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como o acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias apropriadas e serviços financeiros, incluindo microfinanças;
+Meta 1.a - Garantir uma mobilização significativa de recursos a partir de uma variedade de fontes, inclusive por meio do reforço da cooperação para o desenvolvimento, para proporcionar meios adequados e previsíveis para que os países em desenvolvimento, em particular os países menos desenvolvidos, implementem programas e políticas para acabar com a pobreza em todas as suas dimensões; e
+Meta 1.b - Criar marcos políticos sólidos em níveis nacional, regional e internacional, com base em estratégias de desenvolvimento a favor dos pobres e sensíveis a gênero, para apoiar investimentos acelerados nas ações de erradicação da pobreza.
+O Objetivo 1 se fundamenta na premissa mais sensível e elementar dentre todos os demais: a erradicação da pobreza extrema, condição que mais profundamente compromete o desenvolvimento dos países e a dignidade humana. Não à toa, figura como o primeiro objetivo da Agenda 2030. Todas as medidas regulatórias adotadas pela Anatel devem, em maior ou menor grau, considerar o enfrentamento sistemático e contínuo da pobreza.
+O Brasil demonstra comprometimento com o cumprimento dessas metas, destacando-se o estudo realizado pelo IPEA sobre a adequação dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 à realidade nacional. Tal estudo constitui relevante instrumento de apoio técnico e institucional às ações governamentais, subsidiando a formulação e a reformulação de políticas públicas e programas voltados ao desenvolvimento sustentável.
+Com essa iniciativa, o Brasil consolida sua posição ao dispor de um instrumento orientador para a territorialização dos ODS, mantendo-se fiel aos fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+declarar, de ofício, a prescrição da ação punitiva para as seguintes infrações, devendo-se providenciar o encaminhamento do processo à Corregedoria da Anatel, para avaliação de eventual necessidade de apuração de falta funcional, sem prejuízo do desenvolvimento das medidas de governança cabíveis:
+Sequencial 1 - ausência de entrega de sumário ao consumidor antes da contratação nos pontos de venda (art. 50, parágrafo único do RGC 2014);
+Sequencial 18 - ausência de acesso, ao consumidor, a canais de atendimento da Anatel (art. 31 do RGC 2014);
+conhecer do Recurso Administrativo para dar-lhe parcial provimento, bem como rever de ofício o que se segue:
+conhecer do Recurso Administrativo para dar-lhe parcial provimento, bem como rever de ofício o Despacho Decisório nº 120/2021/CODI/SCO (SEI nº 7160339) para:
+descaracterizar as seguintes infrações:
+Sequencial 3 - ausência de fornecimento de login e senha no ato da contratação, havendo um sistema de autocadastro, mas essa informação não é repassada ao consumidor (arts. 21, caput, c/c Art. 3º, IV, do RGC 2014), reclassificada, em parte, para o Sequencial 19;
+Sequencial 16, 2ª parte (destacando-se que a 1ª parte, relacionada ao art. 22, inc. I, do RGC 2014 já foi descaracterizada em primeira instância), segundo o qual o "único documento entregue era a Proposta de Assinatura, na qual não consta restrições a utilização do serviço, limites de franquia e condições aplicáveis à velocidade de conexão, ou documento com ausência de informações importantes ou entrega somente de folders" (art. 50, caput, incs. V, VI e VII, do RGC 2014);
+reclassificar a infração ao art. 14, parágrafo único (Sequencial 11), para os arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014, no SeAC, em caráter pontual e grave, com 01 (um) usuários atingidos;
+aplicar fator de proporcionalização às seguintes infrações:
+art. 22 do RGC, ressalvado que a infração ao art. 22, § 3º, foi considerada absorvida pela infração ao art. 15, sendo, na proporcção de 1/12 por descumprimento;
+art. 51, caput, do RGC, na proporção de 50%, tanto no SeAC como no SCM, por cada um dos comandos descumpridos;
+desaglutinar a infração ao art. 51 do RGC (Sequencial 19, 1ª parte), relacionada à omissão na entrega do contrato no ato da contratação, classificada como pontual, em 116 (cento e dezesseis) ocorrências, sem prejuízo da proporcionalização acima;
+reduzir, no cálculo da multa, a variável "Ua" para as seguintes infrações:
+arts. 3º, inc. XV, e 13, caput, do RGC 2014 (sequencial 10), para 13 (treze) ocorrências;
+art. 14, caput, do RGC 2014 (sequencial 25), para 01 (uma) ocorrência;
+art. 38, caput, do RGC 2014 (sequencial 2), para 39 (trinta e nove) ocorrências;
+elevar a variável Ut para 1.600 (mil e seiscentos) estabelecimentos, em relação às seguintes infrações:
+art. 38, caput, do RGC 2014 (sequencial 2);
+art. 51, caput, do RGC (Sequencial 19, 1ª parte) - omissão na entrega do contrato no ato da contratação;
+fixar o fator Dano no mínimo regulamentar para todas as infrações;
+elevar o "fator tempo" para "até um ano" para as infrações constatadas em fiscalização, mantendo-se o entendimento da decisão recorrida apenas em relação às infrações decorrentes de reclamações de usuários;
+majorar a agravante de antecedentes para 20% (vinte) por cento;
+retirar a atenuante de 70% nas infrações relacionadas ao espaço reservado (art. 22 do RGC, em ambos os serviços), aplicando-se, em substituição, a atenuante de 50%, nos termos do art. 20, inc. III, do RASA;
+fixar, o valor das multas para cada uma das infrações, nos seguintes valores:
+Sequencial 2 - art. 38, do Anexo à Resolução nº 632/2014:
+No SeAC: R$ 575.241,52 (quinhentos e setenta e cinco mil duzentos e quarenta e um reais e cinquenta e dois centavos);
+No SCM: R$ 9.726,20 (nove mil setecentos e vinte e seis reais e vinte centavos);
+Sequencial 5 - art. 22, inc. II, do RGC 2014 (em conjunto com o art. 22, incs. III, VII e IX, de forma desaglutinada, mas com aplicação de fator de proporção):
+No SeAC: R$ 1.004.862,14 (um milhão, quatro mil oitocentos e sessenta e dois reais e quatorze centavos);
+No SCM: R$ 16.990,25 (dezesseis mil novecentos e noventa reais e vinte e cinco centavos);
+Sequencial 6 - art. 22, VIII, do RGC 2014: R$ 251.215,54 (duzentos e cinquenta e um mil duzentos e quinze reais e cinquenta e quatro centavos), para o SeAC;
+Sequencial 7 - art. 14, caput, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+Sequencial 8 - art. 15, caput, do RGC 2014, com absorção da infração ao art. 22, § 3º (Sequencial 9):
+No SeAC: R$ 9.434.539,01 (nove milhões, quatrocentos e trinta e quatro mil quinhentos e trinta e nove reais e um centavo);
+No SCM: R$ 161.973,67 (cento e sessenta e um mil novecentos e setenta e três reais e sessenta e sete centavos);
+Sequencial 10 - art. 13, caput, do RGC 2014: R$ 11.515,33 (onze mil quinhentos e quinze reais e trinta e três centavos), para o SeAC;
+Sequencial - arts. 3º, incs. IV e 5º, inc. I, III e IV, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+Sequencial 12 - art. 7º, caput, do RGC 2014: R$ 5.000,00 (cinco mil reais), para o SeAC;
+Sequencial 19, 1ª parte - art. 51, caput, RGC 2014 (omissão na entrega do contrato no momento da contratação):
+No SeAC: R$ 405.851,12 (quatrocentos e cinco mil oitocentos e cinquenta e um reais e doze centavos);
+No SCM: R$ 6.862,15 (seis mil oitocentos e sessenta e dois reais e quinze centavos);
+Sequencial 19, 2ª parte - art. 51, caput, RGC 2014 (ausência no fornecimento de login e senha no momento da contratação):
+No SeAC: R$ 3.014.586,43 (três milhões, quatorze mil quinhentos e oitenta e seis reais e quarenta e três centavos);
+No SCM: R$ 50.970,74 (cinquenta mil novecentos e setenta reais e setenta e quatro centavos);
+consolidar o valor total das multas fixadas neste processo em R$ 14.954.334,09 (quatorze milhões, novecentos e cinquenta e quatro mil trezentos e trinta e quatro reais e nove centavos) .
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/02/2026, às 16:16, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15158009 e o código CRC 3AE4876F.
+ | 
+Referência: Processo nº 53500.027094/2018-27 | 
+SEI nº 15158009 |

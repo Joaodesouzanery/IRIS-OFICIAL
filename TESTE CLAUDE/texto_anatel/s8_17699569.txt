@@ -1,0 +1,53 @@
+SEI/ANATEL - 15828110 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 55
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 150, de 18 de junho de 2026
+Processo nº 53524.019858/2017-51
+Recorrente/Interessado: BYSAT AUTOMAÇÃO E CONTROLE EIRELI
+CNPJ nº 03.399.403/0001-43
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por BYSAT AUTOMAÇÃO E CONTROLE EIRELI - BYSAT contra o Despacho Decisório nº 239/2025/COUN/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes ao Fust no exercício de 2014.
+2. Fato relevante. A fiscalização concluiu que a Empresa não declarou valores devidos ao Fust no exercício de 2014. A Agência Nacional de Telecomunicações - Anatel emitiu a Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL, com cobrança do principal, da multa de ofício e dos juros de mora.
+3. As alegações da Recorrente. A Recorrente alegou prescrição intercorrente, inexistência de fato gerador da contribuição ao Fust e inaplicabilidade da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996. Sustentou que presta serviços de monitoramento e rastreamento veicular e que utiliza serviços de telecomunicações de terceiros como insumo operacional.
+4. Petição extemporânea. A Recorrente apresentou petição extemporânea antes da divulgação da pauta de julgamento. Requereu a juntada de decisões administrativas da própria Anatel em processos da mesma Empresa e defendeu a identidade fática e jurídica com o caso em exame.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se incide prescrição intercorrente no Processo Administrativo Fiscal; (ii) saber se houve fato gerador da contribuição ao Fust no exercício de 2014; e (iii) saber se é aplicável a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. A autoridade recorrida conheceu do Recurso. Não houve retratação. Compete ao Conselho Diretor apreciar o mérito recursal.
+2. Não há necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel. O caso não preenche os requisitos do art. 5º, IV, da Portaria nº 642/2013.
+3. A petição extemporânea deve ser conhecida. Ela foi protocolizada antes da divulgação da pauta de reunião. Incide a Súmula nº 21 da Anatel.
+4. Não se aplica prescrição intercorrente ao Processo Administrativo Fiscal - PAF. Incidem a Súmula nº 26 da Anatel e a Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11.
+5. Os contratos celebrados pela BYSAT com seus clientes têm por objeto licenciamento de software, gerenciamento, rastreamento e monitoramento de bens, com cessão de equipamentos em comodato, instalação e manutenção.
+6. Os elementos dos autos não demonstram oferta autônoma de serviço de telecomunicações ao usuário final. A conectividade aparece como meio técnico necessário à execução do serviço de monitoramento e rastreamento.
+7. O serviço de telecomunicações, no arranjo operacional examinado, configura insumo para a prestação de Serviço de Valor Adicionado - SVA. Não há comprovação de faturamento específico por prestação de serviço de telecomunicações ao cliente final.
+8. A Análise nº 199/2020/MM, o Acórdão nº 516/2020 e decisões proferidas em outros processos da mesma Empresa adotaram entendimento no mesmo sentido.
+9. Não se configurou o fato gerador da contribuição ao Fust no exercício de 2014. O lançamento deve ser cancelado.
+10. A multa de ofício do art. 44, I, da Lei nº 9.430/1996 é, em tese, aplicável aos Processos Administrativos Fiscais relativos ao Fust. Esse entendimento decorre de pareceres da PFE-Anatel e da Procuradoria-Geral Federal - PGF, de precedentes do Conselho Diretor e da Súmula nº 27 da Anatel.
+11. A multa de ofício não subsiste no caso concreto. A sua exigência depende da existência de crédito principal válido. Reconhecida a inocorrência do fato gerador, deve ser afastada a penalidade.
+12. Os autos revelam indícios de possível operação de estações sem licenciamento pela BYSAT a partir de 2014, especialmente no contexto dos contratos firmados com ONIXSAT e ONIXTEL. A matéria deve ser avaliada pela Superintendência de Controle de Obrigações - SCO.
+13. A Superintendência de Controle de Obrigações - SCO deve comunicar ao Ministério das Comunicações o resultado do processo, para as providências cabíveis quanto à atualização dos valores do Fust e do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo provido.
+Tese de julgamento: "1. Não se aplica prescrição intercorrente ao Processo Administrativo Fiscal. 2. Não há fato gerador da contribuição ao Fust quando a receita da empresa decorre de serviços de monitoramento e rastreamento e os serviços de telecomunicações são utilizados apenas como insumo operacional, sem faturamento específico ao usuário final. 3. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 é, em tese, aplicável aos Processos Administrativos Fiscais relativos ao Fust, mas não subsiste quando afastado o crédito principal. 4. Devem ser avaliados os indícios de operação de estações sem licenciamento. 5. Deve a Superintendência de Controle de Obrigações comunicar ao Ministério das Comunicações o resultado do processo para as providências cabíveis quanto ao Fust e ao Funttel."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, arts. 37 e 150, II; Código Tributário Nacional - CTN, arts. 149, 150, 151, III, e 156, V; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 2º; Lei nº 9.873/1999, art. 1º, § 1º; Lei nº 9.998/2000, art. 6º, IV; Lei nº 10.522/2002, art. 37-A; Decreto nº 70.235/1972, arts. 10, 11, 33 e 59; Resolução nº 612/2013, arts. 115 e 116; Portaria nº 642/2013, art. 5º, IV; Portaria Anatel nº 1.395/2017; Portaria Anatel nº 2.946/2021; LC nº 183/2021, art. 2º.
+Jurisprudência relevante citada: Anatel, Súmula nº 21, de 10.10.2017; Anatel, Súmula nº 26, de 26.07.2024; Anatel, Súmula nº 27, de 26.07.2024; Conselho Administrativo de Recursos Fiscais - CARF, Súmula nº 11; Anatel, Acórdão nº 516/2020, j. 2020; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Carlos Manuel Baigorri, Reunião nº 885, de 28.05.2020; Anatel, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Otavio Luiz Rodrigues Junior, Reunião nº 823, de 06.04.2017; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 941, de 13.03.2025; Supremo Tribunal Federal - STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 18/2026/NP (SEI nº 15272169), integrante deste acórdão:
+a) ratificar o conhecimento do Recurso Administrativo interposto pela BYSAT AUTOMAÇÃO E CONTROLE EIRELI, CNPJ nº 03.399.403/0001-43, para, no mérito, dar-lhe provimento, para reformar o Despacho Decisório nº 239/2025/COUN/SCO, reconhecendo a improcedência da Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL, relativa ao exercício de 2014, com o consequente cancelamento dos créditos tributários lançados a título de Fust, da multa de ofício e dos juros correlatos;
+b) determinar à Superintendência de Controle de Obrigações - SCO que:
+b.1) avalie os indícios de operação de estações sem licenciamento pela BYSAT AUTOMAÇÃO E CONTROLE EIRELI a partir de 2014, especialmente no contexto dos contratos firmados com ONIXSAT RASTREAMENTO DE VEÍCULOS LTDA. e ONIXTEL COMUNICAÇÕES LTDA; e,
+b.2) comunique ao Ministério das Comunicações o resultado deste processo, para as providências cabíveis quanto à atualização dos valores do Fust e do Funttel; e,
+c) determinar a notificação da Recorrente e o posterior arquivamento dos autos.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15828110 e o código CRC 10CCC20E.
+ | 
+Referência: Processo nº 53524.019858/2017-51 | 
+SEI nº 15828110 |

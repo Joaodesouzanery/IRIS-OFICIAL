@@ -1,0 +1,49 @@
+SEI/ANATEL - 15359071 - Acórdão
+Boletim de Serviço Eletrônico em 20/03/2026
+DOU de 20/03/2026, seção 1, página 8
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 74, de 19 de março de 2026
+Processo nº 53500.012126/2026-08
+Recorrente/Interessado: I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA SA
+CNPJ nº 40.166.794/0001-82
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 61, de 19 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ANUÊNCIA PRÉVIA. ALTERAÇÃO DE CONTROLE SOCIETÁRIO DE PRESTADORA DE SERVIÇOS DE TELECOMUNICAÇÕES. ANUÊNCIA PRÉVIA CONCEDIDA, CONDICIONADA À COMPROVAÇÃO DE REGULARIDADE FISCAL.
+I. CASO EM EXAME
+1. Pedido de anuência prévia formulado por I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A. - I-SYSTEMS, inscrita no CNPJ nº 40.166.794/0001-82, para realização de operação societária que resultará na alteração de seu controle.
+2. A operação consiste na aquisição, pela TIM S.A., das ações detidas pela IHS FIBER BRASIL – CESSÃO DE INFRAESTRUTURA LTDA., resultando na TIM S.A como única acionista da I-SYSTEMS.
+3. Documentação apresentada atende aos requisitos legais e regulamentares para transferência de controle, incluindo habilitação jurídica, qualificação técnica e econômico-financeira, e declaração de inexistência de impedimentos legais.
+4. Regularidade fiscal da Requerente deverá ser comprovada até a assinatura dos atos de anuência, abrangendo Fazenda Federal, Fundo de Garantia por Tempo de Serviço - FGTS e Anatel, conforme Súmula nº 19.
+5. Operação não enseja riscos à competição no setor de telecomunicações, por não resultar em concentração de mercado.
+6. Requerente apresentou declaração expressa de inexistência de enquadramento nas vedações do art. 5º da Lei nº 12.485/2011.
+7. Competência do Conselho Diretor da Anatel para deliberar sobre o pedido está caracterizada, nos termos do Regimento Interno da Anatel.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a operação societária de alteração de controle da I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A. atende aos requisitos legais e regulamentares para concessão de anuência prévia pela Anatel, especialmente quanto à documentação, regularidade fiscal, vedação à propriedade cruzada e impactos concorrenciais.
+III. RAZÕES DE DECIDIR
+1. Documentação apresentada pela Requerente atende aos requisitos previstos no art. 17 do Regulamento Geral de Outorgas - RGO e no Anexo ao RGO.
+2. Requisitos subjetivos previstos no art. 5º do RGO e art. 133 da Lei nº 9.472/1997 foram considerados atendidos, conforme análise técnica.
+3. Declaração de inexistência de impedimentos legais e de enquadramento nas vedações do art. 5º da Lei nº 12.485/2011 foi considerada suficiente, não havendo indícios de violação.
+4. Operação não apresenta riscos à competição, conforme análise técnica e aprovação do Conselho Administrativo de Defesa Econômica - CADE.
+5. Anuência prévia deve ser condicionada à comprovação de regularidade fiscal perante Fazenda Federal, FGTS e Anatel, nos termos da Súmula nº 19.
+6. Prazo de validade da anuência prévia é de 180 dias, prorrogável uma única vez por igual período, desde que mantidas as condições societárias.
+7. Requerente deve encaminhar à Anatel as cópias dos atos praticados para realização da operação, no prazo de 60 (sessenta) dias após registro no órgão competente.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Concessão de anuência prévia à operação societária que resultará na alteração de controle da I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A., condicionada à comprovação de regularidade fiscal.
+Tese de julgamento: "1. A operação societária de alteração de controle da I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A. atende aos requisitos legais e regulamentares para concessão de anuência prévia pela Anatel. 2. A anuência prévia é concedida, condicionada à comprovação de regularidade fiscal perante Fazenda Federal, FGTS e Anatel. 3. A decisão tem validade de 180 (cento e oitenta) dias, prorrogável uma única vez por igual período, desde que mantidas as condições societárias. 4. A Requerente deve encaminhar à Anatel as cópias dos atos praticados para realização da operação, no prazo de 60 (sessenta) dias após registro no órgão competente."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 5º, 6º, 133; Lei nº 12.485/2011, art. 5º; Lei nº 13.874/2019; Lei nº 12.529/2011, art. 88; Regulamento Geral de Outorgas - RGO, arts. 17, 19, 21; Resolução nº 101/1999, arts. 6º, 7º; Súmula nº 19/2016; Regimento Interno da Anatel, art. 133, XLI.
+Jurisprudência relevante citada: Acórdãos Anatel nº 15 (SEI nº 9794457), nº 39 (SEI nº 9824291), nº 432 (SEI nº 5855308), nº 274 (SEI nº 14594727); Despacho SG/CADE nº 318/2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 24/2026/EH (SEI nº 15343768), integrante deste acórdão:
+a) conceder anuência prévia à operação societária que resultará na alteração de controle da I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A., inscrita no CNPJ nº 40.166.794/0001-82, nos termos da Petição SEI nº 15191486, condicionada:
+a.1) à comprovação da regularidade fiscal da I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A., perante a Superintendência de Competição, nos termos da Súmula nº 19, de 1º de dezembro de 2016, ou seja, mediante o envio da documentação que comprove a regularidade fiscal junto à Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço - FGTS; e a regularidade fiscal junto à Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - Cadin;
+b) estabelecer que a decisão do Conselho Diretor a respeito da alínea "a" deste acórdão valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Ato que formaliza a Anuência Prévia no Diário Oficial da União, prorrogável a pedido, uma única vez, por igual período, se mantidas as mesmas condições societárias; e,
+c) determinar à I-SYSTEMS SOLUÇÕES DE INFRAESTRUTURA S.A. que encaminhe à Anatel as cópias dos atos praticados que resultarem na transferência de seu controle, no prazo de até 60 (sessenta) dias, contado do registro no órgão competente.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 19/03/2026, às 18:41, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15359071 e o código CRC E59D7CF1.
+ | 
+Referência: Processo nº 53500.012126/2026-08 | 
+SEI nº 15359071 |

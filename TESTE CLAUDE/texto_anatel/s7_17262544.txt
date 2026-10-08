@@ -1,0 +1,103 @@
+SEI/ANATEL - 15432744 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 35/2026/OP
+Processo nº 53500.079957/2017-61
+Interessado: COMPUGRAF TELECOM LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 13609512) interposto pela COMPUGRAF TELECOM LTDA., CNPJ nº 02.808.705/0001-65, contra o Despacho Decisório nº 90/2025/CODI/SCO (SEI nº 13393948), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2016.
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. FUST. PRESCRIÇÃO INTERCORRENTE E BASE DE CÁLCULO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto por Compugraf Telecom Ltda. contra o Despacho Decisório nº 90/2025/CODI/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes ao FUST no exercício de 2016.
+ A recorrente sustenta: (i) prescrição intercorrente do processo administrativo fiscal; (ii) inclusão, na base de cálculo, de receitas que não decorreriam de serviços de telecomunicações; e (iii) erro no cálculo do ICMS, com aplicação de alíquota única de 25%.
+ O Informe nº 109/2026/CODI/SCO opinou pelo conhecimento e pelo não provimento do recurso. A Superintendência de Controle de Obrigações conheceu do recurso e encaminhou os autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se se aplica a prescrição intercorrente ao processo administrativo fiscal; (ii) saber se as receitas consideradas pela fiscalização integram a base de cálculo do FUST; e (iii) saber se houve erro no cálculo da exclusão do ICMS da base de cálculo.
+III. RAZÕES DE DECIDIR
+ O processo administrativo fiscal observou o Decreto nº 70.235/1972. Houve preservação do devido processo legal e da ampla defesa.
+ O recurso preenche os requisitos de admissibilidade. Houve tempestividade, legitimidade, interesse recursal e ausência de contrariedade a súmula da Agência.
+ A prescrição intercorrente não se aplica ao processo administrativo fiscal, nos termos da Súmula Anatel nº 26 e da Súmula CARF nº 11.
+ A base de cálculo do FUST decorre da receita operacional bruta da prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins.
+ A fiscalização verificou a existência de outras receitas. Considerou tributáveis apenas aquelas declaradas pela recorrente como serviços de telecomunicações na conta 41102003.
+ A recorrente não apresentou fato novo nem documentação contábil apta a afastar os achados da fiscalização sobre a natureza das receitas.
+ Cabia à interessada provar os fatos alegados no recurso. Não cumprido esse ônus, prevalecem as conclusões da fiscalização, nos termos do art. 36 da Lei nº 9.784/1999 e do art. 85 da Resolução nº 612/2013.
+ Quanto ao ICMS, a fiscalização considerou as alíquotas incidentes nos diferentes estados em que a contribuinte presta serviços.
+ A fiscalização identificou divergências nos dados apresentados pela recorrente e solicitou esclarecimentos. A recorrente não esclareceu as inconsistências nem juntou documentos contábeis para demonstrá-las.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: "1. É inaplicável a prescrição intercorrente no processo administrativo fiscal. 2. Integram a base de cálculo do FUST as receitas declaradas pelo contribuinte como serviços de telecomunicações quando não houver prova contábil apta a afastar a conclusão da fiscalização. 3. Não há erro no cálculo da exclusão do ICMS da base de cálculo do FUST quando a fiscalização considera as alíquotas incidentes nos diferentes estados e o contribuinte não comprova as divergências apontadas. 4. Cabe ao interessado provar os fatos alegados no recurso administrativo, sob pena de prevalecerem as conclusões da fiscalização."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, art. 85; Portaria Normativa nº 1.355/2019, item 7.1.1; Portaria Anatel nº 642/2013, art. 5º.
+Jurisprudência relevante citada: Anatel, Súmula nº 26, de 26.07.2024; CARF, Súmula nº 11.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 13609512) interposto pela COMPUGRAF TELECOM LTDA., CNPJ nº 02.808.705/0001-65, contra o Despacho Decisório nº 90/2025/CODI/SCO (SEI nº 13393948), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2016.
+Em 10/04/2025, conforme Certidão de Intimação Cumprida - SEI nº 13551195, o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 109/2026/CODI/SCO (SEI nº 15160635), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 120/2026/CODI/SCO (SEI nº 15179924), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 109/2026 (SEI nº 15168002).
+Fui designado relator da matéria por meio do sorteio realizado em 26/03/2026, nos termos da Certidão de Distribuição SEI nº 15392089.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese, que: (i) houve prescrição intercorrente do processo, tendo em vista que entre a apresentação da impugnação administrativa, em 24/06/2019, e a análise e julgamento da impugnação, em 19/03/2025, não houve qualquer movimentação útil do processo por parte da Administração; (ii) que as receitas consideradas na base de cálculo não decorrem exclusivamente da prestação de serviços de telecomunicações, mas, em grande parte, de atividades como comercialização de softwares, locação de equipamentos e infraestrutura tecnológica, suporte técnico especializado, instalação e comercialização de soluções tecnológicas, dentre outras, que não estão sujeitos à incidência do FUST; (iii) que presta serviços em diferentes estados da Federação, nos quais vigoram diferentes alíquotas do ICMS, e a Anatel, ao calcular o valor do Fust, aplicou uma alíquota única de 25%, transferindo à Recorrente ônus fiscal superior ao que determina a legislação de regência.
+Preliminarmente, quanto à alegada prescrição intercorrente, é importante destacar que esta não se aplica ao Processo Administrativo Fiscal Contencioso, conforme a Súmula da Anatel nº 26, de 26 de julho de 2024, e a Súmula do Conselho Administrativo de Recursos Fiscais (CARF) nº 11.
+Súmula Anatel nº 26
+É inaplicável a prescrição intercorrente no processo administrativo fiscal.
+Súmula CARF nº 11
+Não se aplica a prescrição intercorrente no processo administrativo fiscal.
+(Precedentes: Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003).
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou nos autos acerca da regularidade dos valores identificados como efetivamente devidos.
+Relatório de Fiscalização 0864/2018/GR01 (SEI nº 2953713)
+(...)
+(...)
+Vê-se, portanto, que se verificou a existência de outras receitas, porém foram consideradas como tributáveis pelo Fust apenas aquelas declaradas pela Recorrente como Serviços de Telecomunicações, na conta 41102003.
+Em seu recurso, a Interessada não trouxe qualquer fato novo ou circunstância relevante capaz de refutar os achados da Fiscalização.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Ressalte-se que para o Fisco não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+A Recorrente também afirmou que presta serviços em diferentes estados da Federação, nos quais vigoram diferentes alíquotas do ICMS, e a Anatel, ao calcular o valor do Fust, aplicou uma alíquota única de 25%, transferindo à Recorrente ônus fiscal superior ao que determina a legislação de regência.
+Do Relatório de Fiscalização nº 0864/2018/GR01 (SEI nº 2953713) consta:
+4. DESCRIÇÃO DA AÇÃO DE FISCALIZAÇÃO
+(...)
+4.1.11. Na verificação da contribuição do PIS e Cofins, conforme informado no arquivo "Alíquotas 2016" (SEI 2303455), foram utilizadas as alíquotas de 0,65% para o PIS e 3% para a Cofins, sendo que os valores das receitas cumulativas, informadas no SPED EFD Contribuições, conferem com os valores indicados na conta "41102003 Serviços de Telecomunicações" do Balancete e os valores do PIS e Cofins, apesar de apresentar pequenas variações de arredondamento, são os mesmos.
+4.1.12. Na verificação do ICMS, conforme informado no arquivo "Alíquotas 2016" (SEI 2303455), a alíquota utilizada varia em cada Estado, sendo informado que em Salvador - BA é de 28%, Bele Horizonte - MG é de 27%, Curitiva - PR é de 29%, Rio de Janeiro - RJ é de 30%, Porto Alegre - RS é de 30% e em São Paulo - SP é de 25%, além de outros,, sendo estes os Estados constantes nos arquivos enviados na pasta "Item VIII - EFD Fiscal - ICMS e IPI" (SEI 2303455).
+4.1.12.1. Apesar de constar no arquivo "Memória Cálculo FUST 2016" (SEI 2303455), não foram enviados arquivos referentes aos Estados de Brasília e Recife pois, conforme Carta de 28 de maio de 2018 (SEI 2781969), não há obrigatoriedade de entrega do SPED EFD ICMS.
+4.1.12.2. Apesar de informado alíquota de 30% para o Rio de Janeiro, no EFD ICMS de janeiro a RELATÓRIO DE FISCALIZAÇÃO Número: 0864/2018/GR01 Versão: 1 Data: 28/06/2018 nº de processo (SEI): 53500.079957/2017- 61 Data da Impressão 13/07/2018 19:35:19 março, a alíquota utilizada é de 29% e em abril, utilizada as alíquotas de 29% e 30%, sendo que consta indicação de alíquota de 29,09% porém o valor do ICMS lançado foi calculado como 30%.
+4.1.12.3. Na comparação com o informado no arquivo "Memória Cálculo FUST 2016" (SEI 2303455), verifica-se que as informações conferem, com exceção de São Paulo, onde o total da receita não confere, não constam lançamentos no CFOP referente a serviços de comunicação como nos outros Estados e são utilizadas alíquotas de 0 a 18%, diferente da alíquota de 25% informada pela Prestadora. Foi solicitado esclarecimentos, referentes às diferenças, através do Requerimento de Informações GR01FI1 (SEI 2675162), sendo que a Prestadora informou apenas sobre a não obrigatoriedade de entrega do EFD ICMS, informado no item 4.1.1.2.1.. (grifou-se)
+(...)
+4.1.13. Diante do exposto acima, para cálculo do FUST, foi considerado o seguinte:
+4.1.13.1. A Receita constante na conta "41102003 Serviços de Telecomunicações", devido ao informado nos itens 4.1.10.1. a 4.1.10.3..
+4.1.13.2. Os valores de PIS e Cofins, informados no EFD Contribuições, calculados pelas alíquotas de 0,65% para o PIS e 3% para a Cofins, por ser considerado este o valor recolhido conforme informado nos itens 4.1.11. e 4.1.11.1..
+4.1.13.3. Os valores de ICMS informados nos arquivos EFD ICMS, excluídos os valores referentes a São Paulo, devido a não constar no mesmo lançamento no CFOP de serviço de comunicação, além dos valores de receita, alíquota e ICMS serem diferentes dos informados pela Prestadora, conforme informado nos itens 4.1.12. a 4.1.12.4..
+Assim sendo, verifica-se que, quanto ao ICMS, este foi calculado considerando-se as alíquotas incidentes nos diferentes estados em que a contribuinte presta serviços, porém foram encontradas algumas divergências, que ensejaram a solicitação de esclarecimentos por parte da fiscalização. Como a contribuinte, em sua resposta, não prestou os esclarecimentos solicitados, os cálculos foram efetuados na forma descrita no relatório, conforme trecho acima citado. 
+Ressalta-se que a contribuinte não anexou à Impugnação ou ao Recurso qualquer documento contábil que esclareça as divergências encontradas.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15432744 e o código CRC 921E0DC6.
+ | 
+Referência: Processo nº 53500.079957/2017-61 | 
+SEI nº 15432744 |

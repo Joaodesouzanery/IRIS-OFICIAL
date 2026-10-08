@@ -1,0 +1,256 @@
+SEI/ANATEL - 16147581 - Análise
+Boletim de Serviço Eletrônico em 31/08/2026
+Análise nº 79/2026/NP
+Processo nº 53516.000120/2021-04
+Interessado: Processo de Arrecadação e Cobrança, Processo de Processo Administrativo Fiscal, Horizons Telecomunicacoes e Tecnologia S.a.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência do lançamento de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), para o exercício de 2019.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. MULTA DE OFÍCIO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1) O recurso. Recurso Administrativo interposto por LIGGA Telecomunicações S.A. contra decisão que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e à multa de ofício, relativos ao exercício de 2019.
+2) Fato relevante. A fiscalização apurou contribuição devida de [Item 1 - Apartado Sigiloso SEI nº 16194260)]. A empresa declarou [Item 2 - Apartado Sigiloso SEI nº 16194260)]. Restou diferença de [Item 3 - Apartado Sigiloso SEI nº 16194260)].
+3) As alegações. A recorrente sustentou improcedência da cobrança, por alegada divergência na memória de cálculo diante da exclusão do ICMS da base de cálculo do PIS e da Cofins, e ilegalidade da multa de ofício de 75%.
+II. QUESTÃO EM DISCUSSÃO
+4) Há duas questões em discussão: (i) saber se o lançamento do Fust deve ser revisto por alegada divergência na apuração decorrente da exclusão do ICMS da base de cálculo do PIS e da Cofins; e (ii) saber se a multa de ofício de 75% é aplicável e compatível com a vedação ao confisco.
+III. RAZÕES DE DECIDIR
+5) O recurso é tempestivo, cabível e atende aos pressupostos de admissibilidade.
+6) A impugnação e o recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal.
+7) Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel, porque o caso não se enquadrou nas hipóteses do art. 5º, IV, da Portaria Anatel nº 642/2013.
+8) A fiscalização excluiu o ICMS da base de cálculo do PIS e da Cofins na apuração do Fust, em conformidade com o entendimento adotado pelo STF no RE nº 574.706/PR.
+9) A recorrente não apresentou argumento novo nem prova apta a afastar os valores apurados pela fiscalização.
+10) A multa de ofício incide nos casos de falta de declaração ou de declaração inexata que resulte em recolhimento a menor da contribuição.
+11) O percentual de 75% decorre do art. 44, I, da Lei nº 9.430/1996.
+12) A jurisprudência do STF e do Conselho Diretor da Anatel admite a multa de ofício nesse patamar, sem caráter confiscatório.
+13) A Súmula Anatel nº 27 consolidou a legitimidade da multa de ofício nos processos administrativos fiscais relativos ao Fust.
+IV. DISPOSITIVO E TESE
+14) Recurso conhecido e desprovido. Mantida a decisão recorrida.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e presentes os pressupostos de admissibilidade. 2. O lançamento da contribuição ao Fust deve ser mantido quando a fiscalização observa a exclusão do ICMS da base de cálculo do PIS e da Cofins e a recorrente não apresenta prova capaz de infirmar a memória de cálculo. 3. É legítima a aplicação da multa de ofício de 75%, nos termos do art. 44, I, da Lei nº 9.430/1996, nos casos de ausência de declaração ou de declaração inexata que importe recolhimento a menor da contribuição ao Fust."
+Dispositivos relevantes citados: CF/1988, art. 150, IV; CTN, art. 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, art. 116; Portaria Anatel nº 642/2013, art. 5º, IV; Portaria Anatel nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: Súmula Anatel nº 27; Súmula Anatel nº 26; Súmula CARF nº 11; STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 941, de 13.03.2025; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Conselheiro Carlos Manuel Baigorri, Reunião nº 885, de 28.05.2020; Anatel, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Conselheiro Otavio Luiz Rodrigues Junior, Reunião nº 823, de 06.04.2017.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN).
+Lei nº 9.430, de 27 de dezembro de 1996 - dispõe sobre a legislação tributária federal.
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+Lei nº 9.873, de 23 de novembro de 1999, que estabelece prazo de prescrição para o exercício de ação punitiva pela Administração Pública Federal, direta e indireta, e dá outras providências.
+Lei nº 9.998, de 17 de agosto de 2000 - Lei do Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Resolução Anatel nº 777, de 28 de abril de 2025, que revoga e altera Resoluções expedidas pela Anatel e aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST).
+Resolução Interna Anatel nº 338, de 15 de julho de 2024, que estabelece as regras para a interposição de Recurso de Ofício no âmbito dos Processos Administrativos Fiscais (PAf).
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria Anatel nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por LIGGA Telecomunicações S.A., inscrita no CNPJ sob o nº 04.368.865/0001-66, sucessora por incorporação da empresa Horizons Telecomunicações e Tecnologia S.A., em face do Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414), que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, relativos ao exercício do ano de 2019, bem como a incidência de multa de ofício pela ausência de declaração da respectiva contribuição, conforme consignado na Notificação de Lançamento nº 001-002540/2023/AFFO-ANATEL (SEI nº 10073317).
+Em 29 de outubro de 2021, concluiu-se o Relatório de Fiscalização nº 176/2021/GR03FI1/GR03/SFI (SEI nº 7594217), que apurou valores devidos a título de contribuição ao Fust no importe de [Item 4 - Apartado Sigiloso SEI nº 16194260)], referentes ao exercício financeiro de 2019, dos quais [Item 5 - Apartado Sigiloso SEI nº 16194260)] haviam sido declarados, restando devida a diferença de [Item 6 - Apartado Sigiloso SEI nº 16194260)].
+Aos 25 de abril de 2023 (SEI nº 10149155) a empresa foi intimada acerca da existência de crédito tributário relativo à CIDE-FUST, conforme Notificação de Lançamento nº 001-002540/2023 (SEI nº 10073317) e aos 24 de maio de 2023 (SEI nº 10289402), protocolizou a respectiva Impugnação (SEI nº 10289400), por meio da qual alegou:
+a) sustentou que a memória de cálculo apresentada pela prestadora diverge daquela adotada para o recolhimento do Fust, em razão da exclusão do ICMS da base de cálculo do PIS e da COFINS;
+b) discorda da aplicação da multa de ofício.
+Com esses argumentos, requereu o cancelamento do lançamento e subsidiariamente solicitou a respectiva redução para valores razoáveis, em observância ao art. 150, IV da Constituição Federal (vedação ao confisco). 
+Aos 23 de julho de 2025, a Gerência de Controle de Obrigações Gerais - COGE analisou os achados da fiscalização e a impugnação da Prestadora, nos termos do Informe nº 254/2025/COGE/SCO (SEI nº 13484322). Na oportunidade consignou que: (i) ao calcular a base do Fust, a fiscalização também excluiu o ICMS da base do PIS e da Cofins, conforme a decisão do STF; (ii) os valores devidos a título de CIDE-FUST e a respectiva memória de cálculo encontram-se devidamente discriminados no Relatório de Fiscalização nº 176/2021/GR03FI1/GR03/SFI (SEI nº 7594217), nos Balancetes mensais de verificação 2019 (SEI nº 7595032) e discriminados no item 5.17 do Informe; e (iii) manteve a multa de ofício de 75%, prevista no art. 44, I, da Lei nº 9.430/96, em razão da declaração inexata que resultou em recolhimento a menor da contribuição ao Fust.
+Considerando que a Prestadora, em sua Impugnação (SEI nº 10289400) e nos documentos anexados à peça impugnatória (SEI nº 10289401) não apresentou documentação contábil adicional que justificasse a realização de diligências complementares, foram mantidos os valores apurados originalmente pela fiscalização.
+Diante da ausência de enquadramento nas hipóteses previstas no art. 5º da Portaria nº 642, de 26 de julho de 2013, e no art. 1º da Resolução Interna da Anatel nº 338, de 15 de julho de 2024, a Área Técnica deixou de encaminhar os autos à Procuradoria Federal Especializada junto à Anatel - PFE-Anatel.
+Ao final, opinou-se pela procedência do lançamento dos créditos tributários referentes à contribuição para o Fust, traduzidos na Notificação de Lançamento nº 001-002540/2023/AFFO-ANATEL (SEI nº 10073317), para o exercício de 2019, nos termos do art. 6º, IV, da Lei nº 9.998/2000 e da multa de ofício correspondente, nos termos do art. 44, I, da Lei nº 9.430/1996.
+A proposta da Área Técnica foi acolhida pela Superintendente de Controle de Obrigações - SCO, nos termos do Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414), de 23 de julho de 2025, que decidiu por:
+"RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), traduzidos na Notificação de Lançamento nº 001-002540/2023/AFFO-ANATEL (SEI nº 10073317), para o exercício de 2019, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, a serem atualizados conforme previsão legal;
+RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos referentes à incidência de multa de ofício, traduzidos na Notificação de Lançamento nº 001-002540/2023/AFFO-ANATEL (SEI nº 10073317), para o exercício de 2019, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, a serem atualizados conforme previsão legal;"
+Notificou-se a Prestadora sobre os termos da decisão em 11 de agosto de 2025 (SEI nº 13484454 e nº 14167251), a qual apresentou Recurso Administrativo (SEI nº 14360635) aos 10 de setembro (SEI nº 14360636). Em suas razões recursais, a Empresa alegou: (i) improcedência da cobrança, por entender suficientes os valores por ela recolhidos; (ii) ilegalidade e desproporcionalidade da multa de ofício.
+Os argumentos apresentados na esfera recursal foram apreciados pela COGE no Informe nº 1014/2025/COGE/SCO (SEI nº 14535245), de 10 de abril de 2026, propondo-se o conhecimento do Recurso e, quanto ao mérito, seu não provimento, diante da ausência de inovação fática ou probatória apta a fundamentar a revisão da decisão recorrida.
+Na mesma data, a Superintendente de Controle de Obrigações - SCO proferiu o Despacho Decisório nº 877/2025/COGE/SCO (SEI nº 14687445), conhecendo do Recurso Administrativo e encaminhando os autos para apreciação deste Colegiado, conforme Matéria nº 774/2025 (SEI nº 14574584).
+Por meio da Matéria nº 823/2025 (SEI nº 14687486), remeteram-se os autos à Superintendência Executiva - SUE, os quais seguiram para a Secretaria do Conselho Diretor - SCD, em 15 de abril de 2026, por meio do Despacho Ordinatório SEI nº 15484771.
+Aos 16 de abril de 2026, a matéria foi distribuída à minha relatoria, conforme Certidão SEI nº 15498543.
+É o relatório.
+fundamentação
+A instauração e instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 4 (quatro) partes. Na primeira, avalia-se a admissibilidade do Recurso Administrativo interposto pela Prestadora. Na segunda, verifica-se a necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel). As preliminares e o mérito recursal serão analisados na terceira parte, com a apreciação da argumentação apresentada pela recorrente. Na quarta e última parte, procede-se à conformação do objeto da presente análise com os Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - DA ADMISSIBILIDADE RECURSAL E SUSPENSÃO DO CRÉDITO TRIBUTÁRIO
+Nos termos do art. 33 do Decreto nº 70.235, de 6 de março de 1972, e da Portaria Anatel nº 1.355, de 26 de julho de 2019, o prazo para interposição de Recurso Administrativo no âmbito do PAF é de 30 (trinta) dias. Confira-se:
+Decreto nº 70.235/72 - Processo Administrativo Fiscal - PAF.
+"Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão."
+...
+Portaria Anatel nº 1355/2019 - Fase Contenciosa de Processos Administrativos Fiscais - PAF-C 
+"7.1.1. O prazo para apresentação de recurso administrativo é de 30 (trinta) dias. (Redação dada pela Portaria nº 1751, de 3 de dezembro de 2020)"
+Destaco que, em 13 de janeiro de 2026, foi editada a Lei Complementar nº 227, que, entre outros assuntos, alterou o prazo de interposição de recurso previsto no art. 33 do Decreto nº 70.235/1972, o qual passou a ser de 20 (vinte) dias úteis, contados a partir da notificação.
+No entanto, considerando o princípio de que "o tempo rege o ato" (tempus regit actum), a nova norma não se aplica ao caso em apreço, uma vez que o Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414) foi proferido aos 23 de julho de 2025, tendo a Prestadora sido intimada de seu inteiro teor em 11 de agosto de 2025 (Ofício nº 341/2025/COGE/SCO-ANATEL – SEI nº 13484454e 14167251). Iniciou-se o prazo recursal aos 12 de agosto de 2025, terça-feira, primeiro dia útil subsequente à notificação, encerrando-se em 10 de setembro do mesmo ano, quarta-feira.
+O Recurso Administrativo foi protocolizado aos 10 de setembro de 2025, quarta-feira (SEI nº 14360635 e 14360636), sendo, portanto, tempestivo.
+Ademais, o recurso é cabível, a recorrente possui interesse na reforma da decisão proferida e está regularmente representada.
+Assim, estão presentes os pressupostos de admissibilidade recursal previstos no art. 116 do RIA.
+Importa ainda destacar que não se aplica a prescrição intercorrente no âmbito do PAF, conforme Súmula da Anatel nº 26 e da Súmula nº 11 do Conselho Administrativo de Recursos Fiscais (CARF).
+Súmula Anatel nº 26
+"É inaplicável a prescrição intercorrente no processo administrativo fiscal."
+...
+Súmula CARF nº 11
+"Não se aplica a prescrição intercorrente no processo administrativo fiscal."
+(Precedentes: Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003).
+Ante o exposto, ratifico a decisão que admitiu o conhecimento do Recurso Administrativo, consubstanciada no Despacho Decisório nº 877/2025/COGE/SCO, de 10 de abril de 2026 (SEI nº 14687445).
+Ademais, diante da Impugnação à Notificação de Lançamento nº 001-002540/2023/AFFO-ANATEL (SEI nº 10073317), apresentada aos 24 de maio de 2023 (SEI nº 10289400 e 10289402), a exigibilidade do crédito tributário foi suspensa, em observância ao disposto no art. 151, inciso II, do Código Tributário Nacional - CTN:
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN)
+"Art. 151. Suspendem a exigibilidade do crédito tributário:
+(...)
+III - as reclamações e os recursos, nos têrmos das leis reguladoras do processo tributário administrativo;"
+II - DA MANIFESTAÇÃO DA PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642/2013
+Art. 5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+(...)
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente, tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+No caso concreto, considerando os valores apurados pela fiscalização e notificados pela Anatel, conclui-se não haver necessidade de submissão do feito à manifestação da PFE-Anatel, já que não estão satisfeitos os critérios do art. 5º, IV, da Portaria nº 642/2013, com as alterações trazidas pela Portaria Anatel nº 1.395/2017.
+III - DAS RAZÕES RECURSAIS
+Em suas razões recursais a Prestadora reiterou, ipse literis, os argumentos já sustentados em sua impugnação, a saber: (i) improcedência da cobrança, por entender suficientes os valores por ela recolhidos; (ii) ilegalidade e desproporcionalidade da multa de ofício.
+Passo a avaliá-los.
+III.1. Alegação de improcedência da cobrança
+A Recorrente sustenta a improcedência da cobrança com fundamento em suposta divergência entre as planilhas de cálculo, limitando-se, contudo, a afirmar que a questão já teria sido demonstrada anteriormente, sem apresentar novos argumentos ou documentação aptos a infirmar as conclusões da decisão recorrida:
+Recurso Administrativo (SEI nº 14360635)
+"Inicialmente, cumpre enfatizar que nos termos da Impugnação, a Contribuinte, ora Recorrente, demonstrou que os valores que serviram de base de cálculo para o recolhimento do FUST no ano de 2019, totalizaram o valor de [Item 7 - Apartado Sigiloso SEI nº 16194260)], tendo em vista a divergência das planilhas apresentadas em relação ao entendimento da exclusão do ICMS da base de cálculo do PIS e da COFINS".
+Ao examinar a matéria na fase de impugnação, por meio do Informe nº 254/2025/COGE/SCO (SEI nº 13484322), a Área Técnica consignou expressamente que a exclusão do ICMS da base de cálculo do PIS e da Cofins foi devidamente observada pela fiscalização, em conformidade com a tese fixada pelo STF no RE nº 574.706/PR e com a modulação de efeitos estabelecida pela Corte.
+O Informe nº 254/2025/COGE/SCO (SEI nº 13484322) ainda esclareceu que o Relatório de Fiscalização já excluiu o ICMS da base de cálculo do PIS e da Cofins ao apurar a base de cálculo do Fust:
+Informe nº 254/2025/COGE/SCO
+"5.13 Nesse aspecto, contudo, repisa-se que o regime da não cumulatividade do PIS e da Cofins com o ICMS, disposto originalmente pela Lei nº 9.718/1998, foi restabelecido com a decisão do Recurso Extraordinário nº 574.706/PR que passou a ter seus efeitos após a data de 15.03.2017, ressalvadas as ações judiciais e administrativas protocoladas até (inclusive) 15.03.2017.
+5.14 Vale dizer, portanto, que em face do reconhecimento da inconstitucionalidade da inclusão do ICMS da base de cálculo do PIS e da Cofins no julgamento do mérito do referido Recurso Extraordinário, a fiscalização, acertadamente, vem adotando a sistemática de apuração da base de cálculo do Fust, excluindo o ICMS da Receita Operacional Bruta do cálculo do PIS e da Cofins, sob o regime não cumulativo do PIS e da Cofins.
+5.15 Assim, destaca-se o trecho do Relatório de Fiscalização nº 176/2021/GR03FI1/GR03/SFI (SEI nº 7594217):
+Relatório de Fiscalização nº 154/2021/GR03FI1/GR03/SFI
+(...)
+8.7. Referente às receitas incluídas na apuração, de serviços de telecomunicações, as quais estão legalmente sujeitas ao regime cumulativo de PIS e Cofins, foram estimados os respectivos abatimentos às alíquotas legais vigentes, a saber, 0,65% de PIS e 3% de Cofins. Ressalta-se que abateu-se o saldo de ICMS da base de cálculo de PIS e Cofins, em sintonia com a decisão do STF na votação do Recurso Extraordinário 574.706, que fixou a tese de repercussão geral de que “O ICMS não compõe a base de cálculo para fins de incidência do PIS e da Cofins”;
+8.5. Para a dedução legal do ICMS, foram utilizados os valores contábeis constantes nos balancetes mensais de verificação do exercício de 2019, na conta 3.2.1.06.002 - ICMS TELECOM;
+5.16 Dessa forma, diante dos elementos fáticos e jurídicos apresentados acima, a alegação da Impugnante não poderá ser acatada."
+Seguem minhas considerações sobre a matéria.
+A alegação da Recorrente não merece prosperar. Embora a controvérsia envolva a exclusão do ICMS da base de cálculo do PIS e da Cofins, o crédito em discussão refere-se ao Fust, cuja base de cálculo corresponde à receita operacional bruta decorrente da prestação de serviços de telecomunicações, deduzidos, entre outros valores, o ICMS, o PIS e a Cofins. Assim, a forma de apuração do PIS e da Cofins influencia diretamente o cálculo do Fust.
+Nesse sentido, a decisão do STF no RE nº 574.706/PR, que afastou o ICMS da base de cálculo do PIS e da Cofins, alterou o valor dessas contribuições e, consequentemente, o montante passível de dedução da receita utilizada para apuração do Fust. Todavia, diferentemente do que sustenta a Recorrente, a fiscalização observou esse entendimento em sua memória de cálculo, excluindo o ICMS da base de cálculo do PIS e da Cofins na apuração do Fust. Portanto, não há divergência metodológica entre o critério adotado pela fiscalização e aquele decorrente da decisão do STF.
+Assim, não merece guarida a argumentação da operadora quanto ao ponto.
+III.2 - Da suposta impossibilidade de cobrança de multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996
+No Recurso Administrativo (SEI nº 14360635), a Recorrente argumentou que a multa de ofício, caso aplicada, não pode ser fixada em percentual de 75% (setenta e cinco por cento) do valor do tributo devido, o que violaria o princípio constitucional da vedação ao confisco (art. 150, IV, da Constituição Federal), por ser excessiva e desproporcional. Alegou que as multas tributárias também estão sujeitas a esse limite e não podem comprometer o patrimônio do contribuinte ou superar padrões de razoabilidade. Argumentou que os tribunais têm admitido como legítimas multas de mora de 20% (vinte por cento) sobre o valor do tributo não pago, como se vê: 
+Recurso (SEI nº 14360635)
+"Ocorre que os valores objeto da Notificação estão acrescidos de multa de ofício no percentual de 75%, aplicada de forma automática, sem análise das circunstâncias do caso concreto, mostra-se manifestamente desproporcional.
+(...)
+Dessa feita, considerando o efeito quase duplicador do tributo causado pela multa de setenta e cinco por cento, bem como a desproporcionalidade entre a infração cometida e a multa imposta por lei, deve-se aplicar o entendimento de sua redução proporcional, passando de setenta e cinco para vinte por cento, a afastar o seu caráter confiscatório e observar o princípio da proporcionalidade."
+(Grifou-se)
+Defendeu ainda, que o valor da multa deve ser reduzido a um patamar razoável, invocando o entendimento firmado pelo Tribunal Regional Federal da 1ª Região (TRF-1) no julgamento dos Embargos de Declaração nº 00223522320064013800 (Relator: Juiz Federal Marcel Peres de Oliveira, Data de Julgamento: 09/04/2019, Sétima Turma, Data de Publicação: 31/05/2019), segundo o qual tanto as multas moratórias quanto as multas de ofício não podem exceder o percentual de 20% (vinte por cento) do valor do débito tributário, sob pena de violação aos princípios constitucionais supracitados.
+Em seu Informe nº 1014/2025/COGE/SCO (SEI nº 14535245), a Área Técnica ratificou a motivação apresentada anteriormente por meio do Informe nº 254/2025/COGE/SCO (SEI nº 13484322). Afirma que: 
+Informe nº 1014/2025/COGE/SCO
+"A 1ª Turma do Supremo Tribunal Federal no julgamento do Agravo Regimental no Recurso Extraordinário nº 833.106/GO, DJ-e 12/12/14, e no Recurso Extraordinário nº 754.554/GO, ratificou o mesmo limite ao percentual da multa punitiva, de modo que as penalidades que ultrapassem 100% acabariam por violar o princípio do não confisco.
+Já no julgamento do RE 736.090 (Tema 863), o STF estabeleceu os limites aplicáveis às multas de ofício. A Corte fixou a tese de que tais penalidades devem se limitar a 100% do valor do débito tributário, podendo alcançar 150% apenas em casos de reincidência de fraude, sonegação ou conluio."
+(Grifou-se)
+A sanção prevista no art. 44, inciso I, da Lei nº 9.430/1996 visa penalizar o contribuinte que não cumpre adequadamente a obrigação acessória de declarar o fato gerador de determinado tributo sujeito a lançamento por homologação, obrigando o Fisco a constituir de ofício o crédito.
+O Corpo Técnico acrescentouque a PFE-Anatel já se debruçou sobre o tema e concluiu pela aplicabilidade da multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430/1996 para a situação em análise, conforme Parecer Jurídico nº 1.060/2010/BSA/PGF/PFE-Anatel (fls. 41-68 do SEI nº 4341421). Em seguida, esse entendimento foi confirmado pela Coordenação-Geral de Cobrança e Recuperação de Créditos da Procuradoria-Geral Federal por meio do Parecer CGCOB/DIGEVAT nº 26/2010 (fls. 79-86 do SEI nº 4341421), aprovado pelo Despacho CGCOB nº 26/2011 (fls. 89-90 do SEI nº 4341421). Por fim, o entendimento foi referendado pelo Procurador-Geral Federal, conforme Despacho s/nº (fl. 99 do SEI nº 4341421):
+Parecer nº 1.060/2010/BSA/PGF/PFE-Anatel (fls. 41-68 do SEI nº 4341421)
+"(...)
+4. Antes de responder ao questionamento, cumpre-nos analisar se há ou não incidência da multa de ofício nos tributos administrados pela Anatel.
+5. Em resposta, entendemos pela incidência da penalidade. De primeiro, porque o preâmbulo diz expressamente que a Lei n.º 9.430/96, dentre outros assuntos, também se refere à legislação tributária federal, hipótese em que se abrangem as contribuições administradas pela Anatel, autarquia pública federal.
+6. De segundo, porque o art. 44, I, da Lei n.º 9.430/96, trata da imposição de multa de ofício em relação aos impostos e contribuições federais, nas situações específicas em que haja necessidade de lançamento de ofício pela falta de declaração ou declaração inexata do contribuinte que importe no recolhimento a menor do tributo.
+7. Tal situação se amolda perfeitamente às contribuições administradas pela Anatel, que além de serem contribuições federais, no caso da CIDE-FUST, o contribuinte não só tem a obrigação de pagar o tributo, mas também de apurá-lo, declará-lo e recolhê-lo na forma prevista na legislação. Desta feita, como a multa de ofício contempla penalidade específica pela não atividade ou atividade incompleta do contribuinte, diferentemente da multa de mora que visa punir o pagamento a destempo, não há dúvida acerca da sua aplicação às contribuições administradas pela Agência Reguladora.
+8. E nem poderia ser diferente, haja vista não haver motivo para tratar de forma desigual, quanto às obrigações tributárias de apurar, declarar e recolher o montante devido, os contribuintes da Administração Direta e Indireta1, até porque, a competência para a instituição dos tributos federais pertence à União2, que apenas delega a capacidade tributária ativa —administração e cobrança - a outras pessoas de direito público3, a exemplo da Anatel.
+9. O tratamento desigual entre contribuintes somente pode ser adotado se houver justificativa plausível, não havendo razão para tal discriminação na ausência de critérios justificadores4. Ao contrário, no que se refere à obrigação de declarar, apurar e recolher o tributo, o Código Tributário Nacional, quanto a essa obrigação acessória, não fez nenhuma distinção em relação aos sujeitos passivos, sendo descabida qualquer medida nesse sentido."
+--------------------
+Parecer CGCOB/DIGEVAT nº 26/2010 (fls. 79-86 do SEI nº 4341421)
+"(...)
+30. Em suma, acredita-se que a tese defendida pela Procuradoria Federal Especializada junto à ANATEL - PFE/ANATEL, no Parecer nº 1060/2010/BSA/PGF/PFE-ANATEL (fls. 10/37), deve ser acolhida no âmbito da Procuradoria-Geral Federal, por não constituir-se uma forma de inovação no campo da obrigação tributária acessória, pois não se vale de uma sistemática lógico-interpretativa, baseada simplesmente em critérios de integração das normas, para assim suprir a lacuna da Lei nº 9.998/2000, que não previu a multa de ofício, ao instituir a contribuição ao Fust.
+31. A argumentação revela-se, pois, juridicamente plausível, porque admite a incidência do inciso I do artigo 44 da lei nº 9.430/96, em face da contribuição ao Fust, a partir do pressuposto de que a exigência da multa de ofício decorre do exercício da competência tributária da União que instituiu essa sanção para inibir o descumprimento da obrigação tributária federal.
+32. Ante o exposto, conclui-se que a multa de ofício prevista no inciso I do artigo 44 da Lei n° 9.430/96 incide sobre as contribuições federais, sujeitas a lançamento por homologação, instituídas pela União em decorrência do exercício da sua competência constitucional, independentemente da verificação da capacidade tributária ativa do ente federal responsável para cobrar, arrecadar e fiscalizar esse tributo.
+33. Diante da relevância e da repercussão do tema, recomenda-se que a matéria seja apreciada pelo Senhor Procurador-Geral Federal."
+--------------------
+Despacho CGCOB nº 26/2011 (fls. 89-90 do SEI nº 4341421)
+"(...)
+5. Pelas razões expostas neste procedimento, concordo que a multa de ofício prevista no artigo 44, I da Lei nº 9.430/96 aplica-se aos tributos federais indistintamente e, por consequência, ao FUST, contribuição especial cuja titularidade é da União, mas que é arrecadada pela ANATEL.
+6. Encaminhe-se ao Procuradoria-Geral Federal para apreciação.
+--------------------
+Despacho do Procurador-Geral Federal s/nº (fl. 99 do SEI nº 4341421)
+Processo n.º 00407010205/2010-19
+Interessado: ANATEL e PGF
+Assunto: Aplicação da multa de ofício prevista no artigo 44, I da Lei nº 9.430/96 às contribuições federais arrecadadas pela ANATEL e demais Autarquias.
+1. Ciente e de acordo com o Despacho CGCOB nº 26/2011, de autoria do Coordenador-Geral de Cobrança e Recuperação de Créditos da PGF.
+2. Devolva-se o presente à PFE ANATEL."
+Examinando os autos, verifica-se que a aplicação da multa de ofício obedeceu ao critério estabelecido no inciso I do art. 44 da Lei nº 9.430/1996, que fixou o percentual de 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição nos casos de falta de pagamento ou recolhimento, de falta de declaração e de declaração inexata:
+Lei nº 9.430/1996
+"Art. 44. Nos casos de lançamento de ofício, serão aplicadas as seguintes multas:
+I - de 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição nos casos de falta de pagamento ou recolhimento, de falta de declaração e nos de declaração inexata;"
+Constatou-se que houve omissão da empresa na declaração de parte dos valores devidos a título do Fust, mostrando-se, dessa forma, inquestionável a materialização do suporte fático que determina a aplicação da multa de ofício.
+Além disso, de acordo com a jurisprudência sedimentada há mais de uma década, aplica-se a multa de ofício em casos de omissão no recolhimento do Fust, inexistindo nova interpretação relevante sobre a matéria. O Supremo Tribunal Federal (STF), por sua vez, possui posicionamento consolidado no sentido de que a multa é adequada, não se configurando efeito confiscatório quando o seu valor não excede a totalidade da diferença apurada pela ação fiscal. Nesse sentido, destacam-se os seguintes precedentes das 1ª e 2ª Turmas do Supremo Tribunal Federal (STF):
+"EMENTA: SEGUNDO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. MULTA PUNITIVA. 75% DO VALOR DO TRIBUTO. CARÁTER PEDAGÓGICO. EFEITO CONFISCATÓRIO NÃO CONFIGURADO. PRECEDENTES. A multa punitiva é aplicada em situações nas quais se verifica o descumprimento voluntário da obrigação tributária prevista na legislação pertinente. Trata-se da sanção prevista para coibir a prática de ilícitos tributários. Nessas circunstâncias, conferindo especial relevo ao caráter pedagógico da sanção, que visa desestimular a burla à atuação da Administração tributária, deve ser reconhecida a possibilidade de aplicação da multa em percentuais mais rigorosos. Nesses casos, a Corte vem adotando como limite o valor devido pela obrigação principal. Agravo regimental a que se nega provimento.
+(RE 602686 AgR-segundo, Relator(a): ROBERTO BARROSO, Primeira Turma, julgado em 09/12/2014, ACÓRDÃO ELETRÔNICO DJe-024 DIVULG 04-02-2015 PUBLIC 05-02-2015)
+---------------------------------------------
+EMENTA: PROCESSUAL CIVIL. AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. VIOLAÇÃO DOS PRINCÍPIOS DO DIREITO ADQUIRIDO, DO CONTRADITÓRIO E DA AMPLA DEFESA. OFENSA CONSTITUCIONAL REFLEXA. AUSÊNCIA DE REPERCUSSÃO GERAL. ARE 748.371 (REL. MIN. GILMAR MENDES - TEMA 660). TRIBUTÁRIO. MULTA DE 75% DO CRÉDITO. EFEITO CONFISCATÓRIO. INOCORRÊNCIA. PRECEDENTE DO PLENÁRIO SOB A SISTEMÁTICA DA REPERCUSSÃO GERAL: RE 582.461-RG (REL. MIN. GILMAR MENDES, DJE DE 05/02/10, TEMA 214), BEM COMO JULGADOS RECENTES DAS TURMAS. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO.
+(RE 678347 AgR, Relator(a): TEORI ZAVASCKI, Segunda Turma, julgado em 29/04/2014, ACÓRDÃO ELETRÔNICO DJe-090 DIVULG 12-05-2014 PUBLIC 13-05-2014)"
+(Grifou-se)
+E neste Conselho a situação não é diferente, consoante se afere dos arestos a seguir:
+Acórdão nº 68, de 24 de março de 2025
+"Processo nº 53500.206476/2015-72
+Recorrente/Interessado: CAPROCK COMUNICAÇÕES DO BRASIL LTDA..
+CNPJ/MF nº 04.422.276/0001-19
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 941, de 13 de março de 2025
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL - PAF. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. PETIÇÃO EXTEMPORÂNEA. CONHECIMENTO. SÚMULA Nº 21/2017. EXERCÍCIO FINANCEIRO DE 2011. FALTA DE MOTIVAÇÃO E CERCEAMENTO À DEFESA. INOCORRÊNCIA. NÃO SEGREGAÇÃO DE RECEITAS. INSERÇÃO DE RECEITAS ADVINDAS DE OUTROS SERVIÇOS PRESTADOS QUE NÃO CONSTITUEM SERVIÇOS DE TELECOMUNICAÇÕES. ERRO NA BASE DE CÁLCULO. AUSÊNCIA DE COMPROVAÇÃO. ARGUMENTAÇÃO INCAPAZ DE ALTERAR OS VALORES JÁ CALCULADOS. MULTA DE OFÍCIO. CABIMENTO EM CASO DE OMISSÕES NA DECLARAÇÃO DO FUST. SÚMULA Nº 27/2024 DA ANATEL. REALIZAÇÃO DE NOVAS DILIGÊNCIAS. DESNECESSIDADE. ADERÊNCIA AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS 10 E 16 DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo interposto em face do Despacho Decisório nº 574/2023/AFFO6/AFFO/SAF (SEI nº 10574384), por meio do qual o Superintendente de Administração e Finanças - SAF reconheceu a procedência do lançamento dos créditos referentes à Contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - CIDE-FUST, para o exercício de 2011.
+(...)
+6. De acordo com o art. 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, e com a Súmula nº 27 da Anatel, de 26 de julho de 2024, nos casos de lançamento de ofício, aplicar-se-á multa de ofício quando o sujeito passivo não pagar ou recolher o tributo, ou quando deixar de declará-lo ou não o fizer adequadamente.
+(...)
+9. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 41/2025/VA (SEI nº 13329498), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento; e,
+b) não conhecer da petição extemporânea de SEI nº 13394889.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto e os Conselheiros Substitutos Daniel Martins D Albuquerque e Vinícius Oliveira Caram Guimarães."
+--------------------
+Acórdão nº 312, de 2 de junho de 2020
+"Processo nº 53500.009838/2008-50
+Recorrente/Interessado: CLARO S.A.
+CNPJ/MF nº 40.432.544/0001-47
+Conselheiro Relator: Carlos Manuel Baigorri
+Fórum Deliberativo: Reunião nº 885, de 28 de maio de 2020
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. EXERCÍCIOS FINANCEIROS DE 2003 E 2004. DECLARAÇÃO E RECOLHIMENTO INFERIORES AO DEVIDO. LANÇAMENTO DE OFÍCIO. MULTA DE OFÍCIO. ARGUMENTAÇÃO APRESENTADA INCAPAZ DE ALTERAR OS VALORES JÁ CALCULADOS. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO. RECURSO DE OFÍCIO NÃO CONHECIDO.
+1. Recurso Administrativo interposto em face do Despacho nº 5.162/2012/ADPFA2/SAD (fls. 137/138 - SEI nº 0739539), por meio do qual a Superintendente de Administração e Finanças (SAF) reconheceu a procedência dos lançamentos dos créditos tributários referentes à Contribuição de Intervenção no Domínio Econômico ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-FUST), relativa aos exercícios financeiros de 2003 e 2004.
+2. O não cumprimento das obrigações tributárias relativas ao Fust, sujeito a lançamento por homologação, resulta em lançamento, de ofício, dos valores não recolhidos.
+3. De acordo com o art. 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, nos casos de lançamento de ofício, aplicar-se-á multa de ofício quando o sujeito passivo não pagar ou recolher o tributo, ou quando deixar de declará-lo ou não fazê-lo adequadamente.
+4. As provas apresentadas pela Recorrente não são capazes de afastar ou modificar o cálculo dos tributos efetuados pela Área Técnica.
+5. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 61/2020/CB (SEI nº 5507687), integrante deste acórdão:
+a) conhecer do Recurso Administrativo SEI nº 0282863 para, no mérito, negar-lhe provimento; e,
+b) não conhecer o Recurso de Ofício interposto, pelos fatos e fundamentos da citada análise.
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto e o Conselheiro Substituto Carlos Manuel Baigorri."
+--------------------
+Acórdão nº 114, de 12 de abril de 2017
+"Processo nº 53524.008586/2009-54
+Recorrente/Interessado: IMAGE TELECOM TV VÍDEO CABO LTDA.
+CNPJ/MF nº 22.231.831/0001-07
+Conselheiro Relator: Otavio Luiz Rodrigues Junior
+Fórum Deliberativo: Reunião nº 823, de 6 de abril de 2017
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. DECLARAÇÃO E RECOLHIMENTO INFERIORES AO DEVIDO. LANÇAMENTO DE OFÍCIO. APLICAÇÃO DA MULTA DE OFÍCIO. ART. 44, INCISO I, DA LEI Nº 9.430, DE 27 DE DEZEMBRO DE 1996. POSSIBILIDADE. NÃO APLICAÇÃO DA MULTA DE MORA PREVISTA NO ART. 8º, § 1º, DO DECRETO Nº 3.624, DE 5 DE OUTUBRO DE 2000. AUSÊNCIA DE BIS IN IDEM. ENCAMINHAMENTO DOS AUTOS À CORREGEDORIA DA ANATEL. COMUNICAÇÃO AO MINISTÉRIO DA CIÊNCIA, TECNOLOGIA, INOVAÇÕES E COMUNICAÇÕES (MCTIC). RECURSO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo em face de decisão proferida pela Superintendência de Administração e Finanças (SAF), na qual se reconheceu a procedência dos créditos tributários referentes à incidência de multa de ofício relativa a contribuições não recolhidas para o Fundo de Universalização dos Serviços de Telecomunicações - Fust referentes aos exercícios de 2005 e 2006.
+(...)
+3. Aplicabilidade da multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430, de 27 de dezembro de 1996, conforme entendimento da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e de jurisprudência deste Conselho Diretor.
+(...)
+8. Recurso conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 66/2017/SEI/OR (SEI nº 1305518), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Juarez Quadros do Nascimento e os Conselheiros Igor Vilas Boas de Freitas, Anibal Diniz, Otavio Luiz Rodrigues Junior e Leonardo Euler de Morais."
+(Destacou-se)
+A consistência desse entendimento no âmbito deste Colegiado levou-o a ser sumulado. Assim, em 26 de julho de 2024, foi editada a Súmula nº 27 da Anatel, nos seguintes termos:
+Súmula nº 27
+"Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust)".
+Assim, não merece guarida a argumentação da operadora quanto ao ponto.
+Considerando que, em sede recursal, não foram apresentadas novas evidências capazes de infirmar os valores dos créditos tributários definidos no Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414), mantenho integralmente a decisão recorrida quanto à aplicação da multa de ofício.
+À vista do conjunto probatório e das razões expostas, constata-se que todas as teses meritórias deduzidas no recurso foram devidamente analisadas e integralmente afastadas.
+Inexistem, portanto, elementos jurídicos ou fáticos que justifiquem a revisão do entendimento adotado, razão pela qual o recurso não merece provimento, devendo ser mantida, em seus exatos termos, a decisão administrativa impugnada.
+IV - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+Por fim, observa-se que a Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela representa um compromisso assumido por todos os países participantes da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável de 2015, que reuniu os 193 (cento e noventa e três) Estados‑membros da ONU, incluindo o Brasil, e prevê a adoção de medidas ousadas, abrangentes e essenciais para fortalecer o Estado de Direito, promover os direitos humanos e ampliar a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar alinhada a esses ODS e às metas que lhes são correlatas, sendo importante que essa aderência esteja explícita nas decisões deste Conselho Diretor.
+A proposta de encaminhamento contida na presente Análise se relaciona com o Objetivo 10 da Agenda 2030, uma vez que a garantia de uma administração tributária eficiente e justa promove uma distribuição de renda mais igualitária e a redução das desigualdades econômicas e sociais.
+Relaciona-se, ainda, com o Objetivo 16, pois, conforme demonstrado, observaram-se, durante todo o trâmite processual, os princípios do devido processo legal, da ampla defesa e do contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel, identificando-se, em especial, com a Meta 16.6, que propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+CONCLUSÃO
+Ante o exposto, voto por ratificar o conhecimento do Recurso Administrativo (SEI nº 14360635) interposto pela empresa LIGGA Telecomunicações S.A., inscrita no CNPJ sob o nº 04.368.865/0001-66, sucessora, por incorporação, da empresa Horizons Telecomunicações e Tecnologia S.A., para, no mérito, negar-lhe provimento, mantendo-se os termos do Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414), de 23 de julho de 2025.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 28/08/2026, às 10:42, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16147581 e o código CRC 3B9BC1F1.
+ | 
+Referência: Processo nº 53516.000120/2021-04 | 
+SEI nº 16147581 |

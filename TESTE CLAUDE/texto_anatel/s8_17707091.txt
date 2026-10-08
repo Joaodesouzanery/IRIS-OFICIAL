@@ -1,0 +1,49 @@
+SEI/ANATEL - 15834918 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 56
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 156, de 19 de junho de 2026
+Processo nº 53500.029701/2023-51
+Recorrente/Interessado: OI S.A.
+CNPJ nº 76.535.764/0322-66
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO - tff. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por OI S.A. contra o Despacho Decisório nº 36/2025/GR04AF/GR04/SFI, que extinguiu parcialmente o Processo Administrativo Fiscal - PAF sem análise de mérito quanto aos pontos discutidos judicialmente, reconheceu a procedência do lançamento dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF dos exercícios de 2022 e 2023 e interrompeu a incidência da multa de mora.
+2. A controvérsia decorre da Notificação de Lançamento nº 001-004852/2023/AFFO - ANATEL, relativa ao não recolhimento de valores de TFF.
+3. A decisão de primeira instância afastou a análise administrativa das matérias submetidas à ação judicial, manteve o lançamento dos créditos tributários e determinou a interrupção da incidência da multa de mora.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a decisão recorrida e o lançamento são nulos por alegada ausência de fundamentação e por falta de clareza quanto aos juros; (ii) saber se a existência de decisão judicial que suspende a exigibilidade do crédito impede o lançamento para prevenir a decadência; (iii) saber se a multa de mora deve ser interrompida ou cancelada definitivamente; e (iv) saber se a alegação de ilegitimidade da cobrança da TFF pode ser apreciada na esfera administrativa, apesar da existência de ação judicial com o mesmo objeto.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo, cabível, foi interposto por parte legítima e atende aos requisitos de admissibilidade.
+2. Não houve necessidade de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, porque se trata de Recurso voluntário com valor nominal inferior a R$ 1.000.000,00 (um milhão de reais).
+3. A preliminar de nulidade não procede, porque o Informe nº 42/2025/GR04AF/GR04/SFI apreciou a impugnação e analisou os argumentos da interessada.
+4. A declaração de nulidade exige demonstração de prejuízo efetivo ao direito de defesa.
+5. A Recorrente não comprovou prejuízo concreto decorrente do vício alegado.
+6. A existência de decisão judicial em vigor não impede a constituição do crédito tributário.
+7. A Administração pode efetuar o lançamento para prevenir a decadência, ainda que a exigibilidade do crédito esteja suspensa.
+8. O lançamento deve ser regularmente notificado ao sujeito passivo, com indicação de que a exigibilidade permanece suspensa em razão da tutela judicial.
+9. A suspensão da exigibilidade impede atos de cobrança e de execução, mas não impede a constituição do crédito tributário.
+10. A multa de mora não deve ser cancelada definitivamente.
+11. A incidência da multa de mora permanece interrompida enquanto perdurar a suspensão da exigibilidade do crédito tributário, nos termos da legislação aplicável.
+12. A decisão recorrida adotou a providência correta ao interromper a incidência da multa de mora.
+13. A alegação de ilegitimidade da cobrança da TFF não pode ser apreciada administrativamente, porque há identidade de objeto com ação judicial em curso.
+14. A propositura de ação judicial com o mesmo objeto importa renúncia às instâncias administrativas quanto à matéria judicializada.
+15. Os precedentes do Conselho Diretor e a jurisprudência citada corroboram a manutenção da decisão recorrida.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido quanto às matérias apreciáveis na esfera administrativa, ressalvada a competência do Poder Judiciário.
+Tese de julgamento: "1. A ausência de demonstração de prejuízo efetivo afasta a preliminar de nulidade da decisão recorrida e do lançamento. 2. A suspensão da exigibilidade do crédito tributário por decisão judicial não impede o lançamento destinado a prevenir a decadência. 3. A suspensão da exigibilidade interrompe a incidência da multa de mora, mas não autoriza seu cancelamento definitivo. 4. A existência de ação judicial com o mesmo objeto impede a apreciação administrativa da matéria judicializada."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, art. 151, V; Lei nº 9.430/1996, art. 63, § 2º; Lei nº 9.784/1999, art. 52; Lei nº 6.830/1980, art. 38, parágrafo único; Decreto nº 70.235/1972, art. 33; Decreto nº 7.574/2011, art. 86; Resolução nº 729/2020, art. 32, §§ 5º e 6º; Portaria nº 642/2013, art. 5º, IV; Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: Conselho Administrativo de Recursos Fiscais - CARF, Súmula nº 11; CARF, Súmula nº 1/2006; CARF, Acórdão nº 9101-002.423; CARF, Acórdão nº 3301-003.029; CARF, Acórdão nº 1401-003.896; Superior Tribunal de Justiça - STJ, REsp 1847190/RJ, Rel. Min. Herman Benjamin, Segunda Turma, DJe 09.09.2020; STJ, AgRg na MC 20749/RS, Rel. Min. Regina Helena Costa, Primeira Seção, DJe 06.12.2019; STJ, REsp 1259346/SE, Rel. Min. Mauro Campbell Marques, Segunda Turma, DJe 13.12.2011; STJ, REsp 1.168.226/AL, Rel. Min. Eliana Calmon, Segunda Turma, DJe 25.05.2010; STJ, REsp 736.040/RS, Rel. Min. Denise Arruda, Primeira Turma, DJ 11.06.2007; STJ, REsp 702806/RS, Rel. Min. Eliana Calmon, Segunda Turma, DJ 13.03.2006; STJ, EREsp 572603/PR, Rel. Min. Castro Meira, Primeira Seção, DJ 05.09.2005.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 41/2026/EH (SEI nº 15518751), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15834918 e o código CRC 445B900E.
+ | 
+Referência: Processo nº 53500.029701/2023-51 | 
+SEI nº 15834918 |

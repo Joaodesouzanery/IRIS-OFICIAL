@@ -1,0 +1,40 @@
+SEI/ANATEL - 16288733 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 48
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 255, de 15 de setembro de 2026
+Processo nº 53500.071587/2026-12
+Recorrente/Interessado: TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA.
+CNPJ nº 02.884.281/0001-18
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE. ENCERRAMENTO DA VIDA ÚTIL DO SATÉLITE BRASILEIRO ESTRELA DO SUL 2. EXTINÇÃO DECLARADA.
+I. CASO EM EXAME
+1. Pedido de extinção do Direito de Exploração do satélite brasileiro Estrela do Sul 2, apresentado pela TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA. em razão do encerramento da vida útil do satélite.
+2. A Exploradora comunicou a descontinuidade definitiva do provimento de capacidade satelital em 29 de dezembro de 2025.
+3. A Exploradora informou o encerramento da vida útil do satélite em 15 de julho de 2026.
+4. A Exploradora informou que os clientes foram migrados para o satélite Telstar 19 Vantage.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos para declarar a extinção do Direito de Exploração do satélite brasileiro Estrela do Sul 2, em razão do encerramento de sua vida útil.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor deliberar sobre a extinção do Direito de Exploração de Satélite.
+2. O encerramento da vida útil do satélite constitui hipótese de extinção do Direito de Exploração de Satélite.
+3. A Exploradora comunicou a descontinuidade definitiva do provimento de capacidade satelital com antecedência superior a seis meses.
+4. A área técnica não identificou débitos da Exploradora perante a Anatel.
+5. A existência de estações terrenas vinculadas ao satélite não impede a extinção do direito. As entidades responsáveis pelas estações serão notificadas para regularizar o cadastro, se necessário.
+6. A extinção não desonera a Exploradora de obrigações perante a Anatel e terceiros. A medida não prejudica a apuração de infrações ou a cobrança de valores devidos.
+IV. DISPOSITIVO E TESE
+Declarada a extinção, a partir de 15 de julho de 2026, do Direito de Exploração do satélite brasileiro Estrela do Sul 2, associado à posição orbital 63° Oeste, e às subfaixas de radiofrequências da banda Ku.
+Tese de julgamento: "1. Compete ao Conselho Diretor declarar a extinção do Direito de Exploração de Satélite. 2. O encerramento da vida útil do satélite constitui hipótese de extinção do Direito de Exploração de Satélite. 3. A comunicação prévia da descontinuidade definitiva do provimento de capacidade satelital, com antecedência superior a seis meses, atende ao requisito regulamentar. 4. A extinção do direito não desonera a Exploradora de obrigações perante a Anatel e terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º; Resolução nº 612/2013, art. 133, VII e IX; e Resolução nº 748/2021, art. 33, caput, §§ 6º e 7º.
+Jurisprudência relevante citada: Anatel, Acórdão nº 134, de 14.05.2026, Processo nº 53500.005555/2011-34, Conselheiro Relator Nilo Pasquali, Reunião nº 953, de 07.05.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 81/2026/OP (SEI nº 16172647), integrante deste acórdão, declarar extinto, a partir de 15 de julho de 2026, o Direito de Exploração do satélite brasileiro Estrela do Sul 2, associado à posição orbital 63° Oeste, nas subfaixas de radiofrequências da denominada banda Ku.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 16/09/2026, às 13:30, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16288733 e o código CRC F5BC342C.
+ | 
+Referência: Processo nº 53500.071587/2026-12 | 
+SEI nº 16288733 |

@@ -1,0 +1,754 @@
+SEI/ANATEL - 14399818 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 12/2025/OP
+Processo nº 53500.002785/2020-32
+Interessado: Tim S A
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo com pedido de efeito suspensivo, interposto contra o Despacho Decisório nº170/2022/COQL/SCO (SEI nº 9446047), de 06/02/2023, que aplicou às empresas do Grupo Tim, quais sejam, Tim S.A., CNPJ nº 02.421.421/0001-11 e Tim Celular S.A., CNPJ nº 04.206.050/0001-80, prestadoras do Serviço de Comunicação Multimídia (SCM), as sanções de ADVERTÊNCIA, em razão dos descumprimentos aos artigos 7º c/c os artigos 16, § 3º, II; 17, § 3º, II; 17, III; 18, caput; 18, § 3º, II; 19, § 3º, II; 20, § 3º, II; 21, § 3º, II; e 26, caput, todos do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011 e MULTA, no valor total de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos), em razão dos descumprimentos aos artigos 11; 12; 13; 16; 17, III; 19; 20; 22, caput e §1º; 23, caput e §1º; 24; 25, caput e §1º; 26, caput e §1º; e ao art. 7º c/c os artigos 18, § 3º, II; 19, § 3º, II; 20, § 3º, II; e 21, § 3º, II, todos do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM PADO. QUALIDADE DO SCM E NÃO ENVIO DE DADOS DO RGQ-SCM. RECURSO NÃO PROVIDO. REFORMA DE OFÍCIO. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+ O recurso. Recurso administrativo, com pedido de efeito suspensivo, interposto por Tim S.A. e Tim Celular S.A. contra o Despacho Decisório nº 170/2022/COQL/SCO, que aplicou advertências e multa total de R$ 6.351.341,44 por descumprimentos ao RGQ-SCM (Resolução nº 574/2011).
+ Fato relevante. Apuração de não atingimento de metas de indicadores de qualidade e de não envio de dados necessários à consolidação de indicadores do RGQ-SCM.
+ Manifestações posteriores. Petição extemporânea requer o reconhecimento de prescrição quinquenal e aponta suposto erro material no montante da ROL de 2020.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se há erro no cálculo da multa e na ROL adotada para a metodologia sancionatória; (ii) saber se é possível agravar a sanção em sede recursal, com preservação do contraditório e da ampla defesa; e (iii) saber se cabe reconhecer prescrição quinquenal e acolher alegação de erro material apresentada em petição extemporânea.
+III. RAZÕES DE DECIDIR
+ O processo observou o contraditório, a ampla defesa e o dever de motivação.
+ O recurso atende aos requisitos de admissibilidade e deve ser conhecido.
+ A conversão de multa em obrigação de fazer depende de juízo de conveniência e oportunidade orientado pelo interesse público.
+ A revisão de ofício é devida para corrigir a ROL utilizada no cálculo da multa relativa à Tim Celular S.A., adequar valores mínimos e individualização por CN, e refazer a pesquisa de antecedentes das duas empresas, com incidência dos acréscimos do art. 19 do RASA.
+ O agravamento da sanção em sede recursal é possível quando há manifestação prévia do interessado e oitiva da PFE/Anatel.
+ O entendimento técnico sobre advertência em irregularidades de não envio de informações deve observar o precedente que recomenda advertência apenas até 3 meses de descumprimento, com multa a partir do quarto mês.
+ A petição extemporânea deve ser recebida por direito de petição, mas o reconhecimento de prescrição não se aplica ao caso, diante da conclusão colegiada de que precedentes invocados se referem a processos de tomada de contas especial no TCU e não vinculam a Agência.
+ A alegação de erro material sobre a ROL reitera fundamentos já enfrentados no recurso.
+ A obrigação de fazer de conectividade a instituições públicas de ensino superior e institutos federais atende aos parâmetros do RASA e pode ser aplicada com requisitos de execução, comprovação, manutenção e eventual recomposição.
+IV. DISPOSITIVO E TESE
+ Recurso administrativo conhecido e não provido. Petição extemporânea conhecida e pedidos indeferidos. Reforma de ofício para majorar a multa para R$ 6.383.805,96. Aplicação de sanção de obrigação de fazer de conectividade ponto a ponto para conexão de instituições públicas de ensino superior e institutos federais à rede da RNP, com prazo para manifestação da prestadora quanto à adesão ou conversão em multa.
+Tese de julgamento: “1. O Conselho Diretor pode reformar de ofício o valor da multa em PADO para corrigir parâmetros de cálculo, inclusive ROL, mínimos regulamentares e antecedentes. 2. É admissível o agravamento da sanção em sede recursal, desde que assegurada manifestação prévia do interessado e ouvida a PFE/Anatel. 3. Não se reconhece prescrição quinquenal com base em precedentes relacionados a tomada de contas especial no TCU, quando não vinculantes para a Anatel. 4. A obrigação de fazer pode substituir a sanção pecuniária quando motivada pelo interesse público e alinhada aos parâmetros do RASA, com definição de prazos, critérios de seleção, manutenção e comprovação.”
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 50 e art. 64, parágrafo único; Lei nº 10.480/2002, art. 10, § 1º; LC nº 73/1993, art. 11, V; Decreto nº 9.612/2018, art. 2º, IV, “a”, art. 3º e art. 4º, I, III, IV e V; Lei nº 9.637/1998; Resolução nº 574/2011, arts. 7º, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 e 26; Resolução nº 589/2012 (RASA), arts. 9º, § 2º, I, 12, I, 15, 16, 16-A, II e § 2º, 19, 20, 34, § 1º, 36, 36-A, §§ 3º, 6º, II, e 7º, e 36-B; Resolução nº 612/2013 (RIA), art. 125, §§ 1º e 4º; Resolução nº 784/2025 (alterações no RASA), art. 16; Portaria nº 642/2013 (PFE/Anatel), art. 7º, V; Portaria nº 784/2014.
+Jurisprudência relevante citada: Anatel, Súmula nº 21/2017; Anatel, Súmula nº 22/2019; Anatel, Acórdão nº 682/2018; Anatel, Acórdão nº 86/2024 (Processo nº 53500.018706/2020-13, RCD nº 930, Rel. Cons. Raphael Garcia de Souza); Anatel, Acórdão nº 65/2024.
+REFERÊNCIAS
+Lei nº 9.472 (Lei Geral de Telecomunicações - LGT), de 16 de julho de 1997;
+Lei nº 9.784 (Lei de Processo Administrativo - LPA), de 29 de janeiro de 1999;
+Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477, de 7 de agosto de 2007;
+Regulamento de Gestão de Qualidade da Prestação do Serviço Móvel Pessoal (RGQ-SMP), aprovado pela Resolução nº 575, de 28 de outubro de 2011;
+Regulamento de Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589, de 7 de maio de 2012;
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL), aprovado pela Resolução nº 717, de 23 de dezembro de 2019;
+Portaria nº 642, de 26 de julho de 2013, da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo com pedido de efeito suspensivo, interposto contra o Despacho Decisório nº170/2022/COQL/SCO (SEI nº 9446047), de 06/02/2023, que aplicou às empresas do Grupo Tim, quais sejam, Tim S.A., CNPJ nº 02.421.421/0001-11 e Tim Celular S.A., CNPJ nº 04.206.050/0001-80, prestadoras do Serviço de Comunicação Multimídia (SCM), as sanções de ADVERTÊNCIA, em razão dos descumprimentos aos artigos 7º c/c os artigos 16, § 3º, II; 17, § 3º, II; 17, III; 18, caput; 18, § 3º, II; 19, § 3º, II; 20, § 3º, II; 21, § 3º, II; e 26, caput, todos do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011 e MULTA, no valor total de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos), em razão dos descumprimentos aos artigos 11; 12; 13; 16; 17, III; 19; 20; 22, caput e §1º; 23, caput e §1º; 24; 25, caput e §1º; 26, caput e §1º; e ao art. 7º c/c os artigos 18, § 3º, II; 19, § 3º, II; 20, § 3º, II; e 21, § 3º, II, todos do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+O presente processo foi instaurado com vistas a apurar indícios de infrações de não atingimento de metas de indicadores de qualidade e não envio de dados necessários à consolidação dos indicadores de qualidade definidos no RGQ-SCM, aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+O Despacho Decisório nº 170/2022/COQL/SCO foi fundamentado nos Informes nº 258/2022/COQL/SCO (SEI nº 8820681), e nº 338/2022/COQL/SCO (SEI nº 9446040), bem como no Parecer nº 00204/2022/PFE-ANATEL/PGF/AGU (SEI nº 9446416), decidiu pela aplicação das sanções de Advertência e Multa no valor de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos), ou, alternativamente, a sanção de Obrigação de Fazer (ODF).
+A Prestadora foi notificada da decisão por meio do Ofício nº 601/2022/COQL/SCO-ANATEL (SEI nº 9446048) em 21/2/2023.
+A Tim interpôs Recurso Administrativo (Petição Recurso RQ/DAR/092/2023/GR -SEI nº 10232738), protocolado nesta Agência em 12/5/2023 (Recibo Eletrônico de Protocolo SEI nº 10232740).
+Adicionalmente, protocolou nova manifestação (Petição RQ/DAR/124/2023-GR - SEI nº 10491403), em 03/07/2023, conforme Recibo Eletrônico de Protocolo SEI nº 10491404.
+Foi concedido efeito suspensivo ao recurso, por meio da Certidão SEI nº 10599505.
+Em face das alegações apresentadas foi elaborado o Informe nº 109/2024/CODI/SCO (SEI nº 11702069), que propôs a revisão de ofício da decisão com a possibilidade de reformatio in pejus.
+Em 9/9/2024, a Tim S.A . juntou aos autos suas Alegações (SEI nº 12555591), conforme Recibo Eletrônico de Protocolo SEI nº 12555593, que foi objeto de análise do Informe nº 378/2024/CODI/SCO (SEI nº12874911), o qual, após analisar a Petição RQ/DAR/208/2024 – GR (SEI nº12555591), manteve a sugestão de agravamento da sanção aplicada.
+A Procuradoria Federal Especializada junto à Anatel - PFE/Anatel manifestou-se por meio do Parecer nº 651/2024/PFE-ANATEL/PGF/AGU, (SEI nº 13136646), de 27/12/2024.
+Nos termos do Despacho Decisório nº 31/2025/CODI/SCO (SEI nº 13187716), o Superintendente de Controle de Obrigações conheceu do recurso interposto.
+Os autos foram encaminhados para este colegiado para análise, nos termos da MACD nº 53/2025 (SEI nº13187742).
+Em 06/05/2025, o Conselheiro Daniel Martins D Albuquerque foi designado relator da matéria, e realizou diligências a área técnica, nos termos do Ofício nº 43/2025/DD-ANATEL (SEI nº 13776303).
+A Superintendência de Competição elaborou o Informe nº 38/2025/CPAE/SCP (SEI nº 13872596), em resposta a referida diligência.
+Em face de minha nomeação para este colegiado, fui designado relator da matéria por meio do sorteio realizado em 04/09/2025 (Certidão de Distribuição - SEI nº 14319983).
+Em 18/12/2025, a Interessada protocolou petição extemporânea SEI nº 14941569.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre destacar que a instauração e instrução do presente processo obedeceram rigorosamente às disposições contidas no Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, atendendo à sua finalidade, com observância dos princípios do devido processo legal, do contraditório e da ampla defesa, e especialmente o da motivação, conforme dispõe o art. 50 da da Lei nº 9.784, de 29 de janeiro de 1999, Lei de Processo Administrativo (LPA).
+Quanto à admissibilidade do Recurso Administrativo em tela, pressupõe-se que atende aos requisitos de tempestividade, visto que interposto no prazo recursal de 10 (dez) dias; legitimidade, posto que a peça recursal foi assinada por representante legal devidamente habilitado; e, por fim, de interesse em recorrer, uma vez que a entidade é a destinatária direta da decisão contra a qual se insurge, razão pela qual considero acertada a decisão proferida pelo Superintendente de Controle de Obrigações contida no Despacho Decisório nº 31/2025/CODI/SCO (SEI nº 13187716).
+Da conversão da sanção em obrigação de fazer
+A prestadora, preliminarmente aponta que estaria avaliando internamente a aceitação da substituição de multa por obrigação de fazer, dentro do prazo de 60 (sessenta) dias consignado na decisão recorrida.
+Este tópico será analisado ao final desta Análise.
+do mérito do recurso
+Em sua peça recursal, a Prestadora aponta, em síntese, supostos erros quanto ao cálculo da sanção de multa aplicada, tais como: (i) valor da ROL utilizada para o cálculo da sanção não deveria ser aquele constante do DSAC, mas a do mercado; (ii) que a ROL a ser utilizada deveria ser a do ano de 2021 e não a de 2020; (iii) erro de cálculo referente a “Diferença (%)” nas multas associadas aos Indicadores SCM1, SCM2, SCM3 e SCM12; (iv) equívoco exclusivamente no arquivo “2 - Multa_535000027852020-32_Grupo_TIM_SA_RGQ_SCM_2019”, nas abas “Indicadores> UF”, “Indicadores <UF” e “Indicadores = 0”, diz respeito ao Número de Possibilidades (coluna “N.Poss”) preenchido com o valor “11” (onze), ao invés do correto, que é “12” (doze), correspondente ao período da análise. 
+Ademais, afirma que: (i) houve violação ao devido processo legal, tendo em vista que foi instada a apresentar Alegações Finais antes da Anatel se manifestar sobre sua peça de Defesa; (ii) em face da aplicabilidade do princípio da retroatividade da lei mais benéfica, deveriam ser anuladas as penalidades referente aos descumprimentos dos indicadores do RGQ-SCM que deixaram de existir com a publicação do RQUAL; (iii) questiona o método de cálculo dos indicadores SCM 1, SCM 2 e SCM 10, e requer a aplicação de advertência; (iv) descaracterização das infrações aos indicadores que apresentaram desvios infímos; (v) os indicadores SCM6, SCM7, SCM8 e SCM9 eram aferidos por uma entidade independente das Prestadoras (EAQ) e encaminhados à Anatel, destaca a dificuldade em promover melhorias devido ao sigilo das informações dos voluntários, e requer o afastamento da conduta infrativa ou aplicação de atenuante; (vi) revisão da gradação das infrações.
+Da ROL utilizada no cálculo da sanção
+Conforme noticiado no Informe nº 109/2024/CODI/SCO (SEI nº 11702069), foi feita pela área técnica uma correção na ROL utilizada na metodologia de cálculo, a fim de contemplar entendimento já consolidado neste Conselho Diretor, que nos casos de sucessão empresarial, deve-se considerar no cálculo da multa a ROL da sucedida mais recente disponível ao ano do sancionamento.
+No caso em tela, com relação aos descumprimentos praticados pela Tim Celular S.A., no período avaliado, considerando a sua incorporação pela Tim S.A., conforme atesta o documento CNPJ Tim Celular S. A. (SEI nº 11719278), para o cálculo do valor da multa deveria ter sido utilizada a última ROL disponível da empresa incorporada, à época da decisão de 1ª instância, que corresponde à do ano de 2017.
+Quanto ao valor da ROL do ano de 2021, a despeito envio da mencionada CT-DAR/407/2022-JC, de 06 de julho de 2022, cabe observar que a Superintendência de Competição - SCP faz um tratamento dos dados e valores recebidos antes de disponibilizá-los à Superintendência de Controle de Obrigações -SCO, para que possam ser aplicados nos cálculos das multas.
+No caso específico dos autos, verifica-se que a SCO foi informada sobre o valor da ROL de 2021 apenas no dia 14/07/2023, por meio do Ofício nº 192/2023/CPAE/SCP-ANATEL (10549382), ou seja, após ter sido proferida a decisão no processo.
+Já para os descumprimentos praticados pela Tim S.A., foi aplicada a ROL do ano de 2020, que era a mais recente disponível no momento em que o Despacho Decisório nº 170/2022/COQL/SCO (9446047) foi exarado.
+Outrossim, no tocante à alegação de que não deveria ser utilizada a ROL constante do Documento de Separação e Alocação de Contas - DSAC, mas a do mercado, convém destacar o disposto no Informe nº 38/2025/CPAE/SCP (SEI nº 13872596)da Superintendência de Competição - SCP:
+3.7. A coleta de dados para o DSAC é regulamentada pelo Regulamento de Separação e Alocação de Contas (RSAC), aprovado pela Resolução nº 396, de 31 de março de 2005 e alterações, que trata da base de dados para o Modelo de Custos, sendo que o artigo 4º aborda especificamente o aspecto de confiabilidade da base de dados declarada pela empresa à Agência.
+Art. 4º Todas as informações prestadas em decorrência deste Regulamento devem ser auditadas por auditores independentes registrados na Comissão de Valores Mobiliários (CVM), contratados pelo Grupo (Grifos nossos)
+Parágrafo Único: O Grupo deve apresentar documento emitido por auditores independentes que ateste a fidedignidade das informações econômico-financeiras apresentadas em decorrência deste Regulamento, em relação aos registros contábeis e metodologias de alocação de custos e ativos das empresas que o compõem." (NR) (Redação dada pela Resolução nº 714, de 17 de julho de 2018);
+3.8. Os dados informados pela empresa à Agência também atendem:
+3.8.1. A necessidade de disponibilização em formato societário dos demonstrativos financeiros apresentados para o DSAC, visando à aplicação no Relatório de Acompanhamento Econômico-financeiro da prestadora, tanto para concessionárias (RAEC) quanto para autorizadas (RAE), conforme procedimento estabelecido por meio do Despacho Decisório nº 22/2020/SUE (SEI nº 5705359);
+3.8.2. A necessidade de disponibilização de dados econômico-financeiros e operacionais para acompanhamento da prestadora, tendo por base os dados informados nos relatórios de relacionamento com investidores e Comissão de Valores Imobiliários (CVM), considerando a vinculação de contas do DSAC, segundo o nível de detalhamento solicitado pela Agência, conforme procedimento estabelecido pelo Despacho Decisório nº 32/2020/SUE (SEI nº 6313808) e Informe nº 71/2020/CPAE/SCP (SEI nº 6077478).
+3.9. A ROL para o SCM, portanto, é uma informação que pode ser obtida a partir de qualquer uma das fontes, em conformidade com o DSAC, e com o compromisso de inspeção por auditores independentes, contratados pela empresa, que atestem a fidedignidade das informações econômico-financeiras apresentadas à Agência.
+(...)
+3.11. As bases de dados econômico-ﬁnanceiros e técnico-operacionais das empresas Concessionárias e das Autorizadas que não se enquadrem na definição de Prestadora de Pequeno Porte (PPP), conforme Despacho Decisório nº 32/2020/SUE (SEI nº 6113808) e Informe nº 71/2020/CPAE/SCP (SEI nº 6077478), contêm o valor da ROL-SCM nacional e os valores de receita relacionados com cada Unidade da Federação (UF).
+3.12. A figura a seguir reproduz os requisitos da entrega de dados de ROL para todos os serviços de telecomunicações, vinculando-os tanto aos demonstrativos financeiros auditados (apresentação a investidores e CVM) quanto aos dados do DSAC.
+Fonte: Informe nº 71/2020/CPAE/SCP SEI nº 6077478
+3.13. O Informe nº 71/2020/CPAE/SCP especifica a granularidade desejada para as receitas: por serviço de telecomunicações (STFC, SMP, SCM, SeAC e outros), nacional e por unidade da federação e, de maneira mais detalhada, por regime de outorga e modalidade do STFC (Local, LDN e LDI).
+3.14. O Informe nº 71/2020/CPAE/SCP orienta que “o dado deve ser informado em seu valor total, não sendo necessário apresentar os valores individuais das contas de sua composição".
+3.15. Ou seja, o dispositivo regulamentar demanda a receita decorrente da exploração do serviço outorgado, não havendo no dispositivo requisitos para a individualização de receitas de serviço por planos de serviço.
+3.16. A descrição da tabela I do Informe nº 71/2020/CPAE/SCP segue a proposta apresentada na Consulta Pública (CP) nº 41, de 25 de maio de 2020, no processo nº 53500.040635/2019-93, quanto a proposta de instituição de coleta periódica de conjunto de Indicadores Econômico-Financeiros, Operacionais ou Estratégicos das empresas Concessionárias e das Autorizadas que não se enquadrem na definição de PPP.
+(...)
+3.23. Os dados do DSAC apresentados pela empresa informam apenas valores totais do serviço SCM quanto à Receita Operacional Bruta, Descontos comerciais e taxas e impostos incidentes sobre a receita visando ao cálculo da Receita Operacional Líquida, ou seja, não há detalhamento necessário para valoração dos segmentos de rede de transporte e de rede de acesso (varejo).
+3.24. Portanto, não há na base de dados da Anatel a granularidade de informação de ROL SCM especificamente para os diversos segmentos de mercado varejistas e/ou atacadistas que cada prestadora possui.
+(...)
+6.3. No caso da TIM S.A., a receita no segmento de varejo está relacionada com a prestação do serviço de telecomunicações e a oferta de aplicativos e vídeo streaming. O detalhamento divulgado ao mercado é insuficiente para caracterização das receitas específicas da operação de banda larga no varejo.
+Como se depreende da leitura do citado Informe, não há base na regulamentação em vigor para se calcular a ROL da maneira apontada pela Recorrente em seu recurso, devendo a Anatel valer-se, no cálculo das sanções aplicadas para todas as empresas, daquelas informações disponíveis no DSAC. 
+Desta forma, entendo que a ROL utilizada pela área técnica para o cálculo da sanção para ambas as empresas objeto do presente PADO observaram as disposições regulamentares e as recentes decisões adotadas por este Conselho Diretor.
+Cálculo da “Diferença (%)” nas multas associadas aos Indicadores SCM1, SCM2, SCM3 e SCM12
+A Recorrente alega que nas planilhas 1 – Multa_535000027852020-32_Grupo_TIM_SA_RGQ_SCM_2018” e no arquivo “2 - Multa_535000027852020-32_Grupo_TIM_SA_RGQ_SCM_2019”, nas respectivas abas “Indicadores < UF” há erro na fórmula empregada em “Diferença (%)” – coluna “V”, pois a metodologia determina em seu item 7.3 que para o cálculo do Fator Desvio seja subtraído do valor da meta estabelecida para aquele indicador o valor do desvio médio desta meta no período em análise e a fórmula da planilha fez a inversão desta operação, tendo sido o valor da meta subtraído do valor da média. 
+Quanto a este tópico, o Informe nº 109/2024/CODI/SCO (SEI nº 11702069) apresentou a necessidade de revisão de alguns parâmetros da metodologia de cálculo, conforme abaixo transcrito:
+3.31. Análise: Em reavaliação das Planilhas de Cálculo mencionadas na peça recursal, verificou-se que, de fato, para os indicadores cujas metas são <=2 (menor ou igual a dois), <=5 (menor ou igual a cinco), e <=10 (menor ou igual a dez) houve a inversão desta operação na fórmula de cálculo do valor da multa. Esta inversão ocorreu porque a Metodologia de cálculo do valor base da sanção de multa relativa a descumprimentos à regulamentação de qualidade, aprovada pela Portaria nº 784, de 26 de agosto de 2014, ao aprovar a fórmula de cálculo do Fator Desvio, não considerou que, no caso dos indicadores <= (menores ou igual), o resultado do cálculo poderia ser negativo, o que, numa primeira análise, poderia gerar o entendimento equivocado de que a meta foi cumprida.
+3.32. Tal fato promoveu a atenuação artificial do valor da sanção, o que implica em afastar-se do objetivo da Metodologia de Cálculo, pois, na aplicação da sanção, o intuito da administração é punir de acordo com a intensidade da conduta perpetrada, ou seja, de acordo com o desvio percebido em relação à meta estabelecida.
+3.33. Observa-se que a opção que conduz à adequação da proporcionalidade entre a infração praticada e a sanção resultante é considerar o valor absoluto do desvio no cálculo da sanção. Esta possibilidade encontra amparo no princípio da discricionariedade, que se traduz na capacidade da autoridade administrativa de adotar decisões balizada em seu próprio julgamento e critérios, desde que atue dentro dos limites da lei e do interesse público, hipótese que se enquadra no caso concreto, haja vista que resulta da aplicação de fórmula descrita na Metodologia aprovada pela Agência, e reflete medida que imporá sanção proporcional à conduta infrativa.
+Desta forma, como apontado pela área técnica, é improcedente o equívoco apontado pela Interessada em sua peça recursal.
+“NPoss” nas multas associadas a descumprimento de indicadores no Ano 2019
+Com relação a alegação de que houve equívoco exclusivamente no arquivo “2 - Multa_535000027852020-32_Grupo_TIM_SA_RGQ_SCM_2019”, nas abas “Indicadores> UF”, “Indicadores <UF” e “Indicadores = 0”, diz respeito ao Número de Possibilidades (coluna “N.Poss”) preenchido com o valor “11” (onze), ao invés do correto, que é “12” (doze), correspondente ao período da análise, remeto ao disposto no Informe nº 109/2024/CODI/SCO (SEI nº 11702069) para os esclarecimentos devidos, os quais adoto como razão de decidir:
+3.36. Análise: Observando-se a planilha mencionada, verifica-se que não assiste razão à Recorrente com relação ao preenchimento da coluna "N.Poss", pois, a despeito do despacho instaurador fazer menção ao período de apuração janeiro de 2018 a dezembro de 2019, em consulta à planilha de indicadores da Tim (5493519), anexa ao despacho de instauração, referente ao ano de 2019, observa-se que há informação até novembro de 2019, desse modo, o "NPoss" igual a 11 está correto, não merecendo reparos.
+3.37. De toda sorte, diante do necessário ajuste dos pontos elencados neste Informe, ao transferir as informações constantes dos autos para as novas planilhas elaboradas pela Gerência de Controle de Obrigações de Direitos dos Consumidores (CODI), a informação acerca do "N.Poss" é omitida, sendo considerados, para fins de cálculo da sanção de multa, os valores e meses dos indicadores constantes da planilha de indicadores anexa ao despacho de instauração, bem como o "Nº desc." (coluna X) e "Meses" (coluna Z), correspondente ao número de meses em que foi constatada a infração.
+Assim, como quanto aos argumentos anteriores, entendo improcedente a alegação da Interessada quanto a este tópico.
+Da notificação para apresentação de alegações finais
+Quanto à suposta nulidade em razão da ausência de informe técnico entre a apresentação da defesa e a notificação para alegações finais, já é de reiterado entendimento deste Colegiado não se tratar de documento obrigatório, tendo em vista que sua ausência não causou prejuízos à ampla defesa, já que, como dito acima, a Prestadora teve ampla oportunidade de manifestação nos autos e produção de provas, em estrita observância, ainda, ao disposto nos artigos 82, inciso II, e 86, ambos do Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013, os quais refletem os dispositivos normativos previstos na Lei do Processo Administrativo.
+ A PFE-Anatel, por meio do Parecer nº 00114/2020/PFE-ANATEL/PGF/AGU (SEI nº 5273417), reafirmou tal tese nos seguintes termos:
+2.1 Da alegação de nulidade pela ausência de intimação para a apresentação de alegações finais após a emissão do informe que fundamentou a decisão recorrida
+5. A Concessionária alega, em seu Recurso Administrativo (SEI 2293258), que " O fato da Oi ter sido intimada para Alegações Finais não lhe garantiu a devida ampla defesa e o contraditório, uma vez que, no momento da apresentação daquela Manifestação, não havia qualquer análise técnica da Agência nos autos" (SEI 2293258, pág eletrônica 5).
+6. Assevera, ainda, que "a ausência de notificação para apresentação de Alegações Finais, após a elaboração do Informe nos autos contendo a análise acerca dos pontos trazidos pela Oi, diminui o grau de transparência para com a empresa, reduzindo, assim, as possibilidades de defesa da empresa." (SEI 2293258, pág eletrônica 8).
+7. Sob o ponto de vista formal, saliente-se que, no decorrer da instrução processual, foram devidamente observados os postulados do devido processo legal, da ampla defesa e do contraditório. Nota-se, desse modo, que o procedimento se pautou pela legalidade, inexistindo vícios ou nulidades a inquinar o processo.
+8. Destaque-se, quanto à observância dessas garantias constitucionais, que não caberia, conforme suscitado pela Interessada em sua manifestação recursal, conferir-lhe a oportunidade de apresentar alegações ﬁnais somente após a juntada aos autos do informe que veio a ser tornar parte integrante da decisão administrativa de primeira instância ora recorrida.
+9. Com efeito, os informes caracterizam-se como documentos preparatórios, elaborados pela área técnica da Agência quando já encerrada a fase de instrução processual, que podem ser utilizados como fundamento para a edição do próprio ato administrativo decisório, nos termos do art. 50, § 1º, da Lei nº 9.784/1999. Ou seja, disponibilizar a referida peça técnica ao interessado para que se manifeste sobre ela, seria como antecipar ao ente regulado os fundamentos que poderão subsidiar, em conjunto com a manifestação de cunho opinativo desta Procuradoria, a própria decisão da autoridade administrativa competente, hipótese que subverteria toda a lógica processual.
+10. Ademais, o dever inafastável de a Agência assegurar o exercício do direito de defesa materializado, precipuamente, mediante a oportunidade conferida ao interessado de se manifestar e produzir prova a respeito de todos os fatos que lhe foram imputados - não exige que a Prestadora seja notiﬁcada entre o informe que subsidia a decisão administrativa e o despacho que, eventualmente lhe imporá determinada sanção. Como já aﬁrmado, a decisão administrativa que sanciona o particular, nos termos do art. 50, § 1º, da Lei nº 9.784/1999, escora-se na motivação constante do informe que a antecede.
+11. Não é por outra razão que o art. 3º, XII, do Decreto nº 7.724, de 16/05/2012, que regulamenta a Lei de Acesso à Informação (Lei nº 12.527, de 18/11/2011), deﬁne o parecer e a nota técnica (informe) como autênticos documentos preparatórios, ou seja, o "documento formal utilizado como fundamento da tomada de decisão ou d e ato administrativo" . Nesse sentido, o art. 20 do referido Diploma dispõe que o acesso ao documento preparatório ou à informação nele contida, utilizados como fundamento de tomada de decisão ou de ato administrativo, "será assegurado a partir da edição do ato ou decisão".
+12. Portanto, as garantias de ampla defesa e contraditório não se traduzem na possibilidade de a Interessada, já apresentada a defesa e encerrada a instrução processual, obter da Anatel, no intuito de apresentar alegações ﬁnais, o conhecimento prévio do teor do informe cujos fundamentos poderão ser integralmente incorporados à decisão a ser proferida pela Agência.
+(grifo nosso)
+Afasta-se a presente razão recursal, tendo-se em vista que não é obrigatória a intimação para apresentação de alegações finais entre o Informe Técnico e o Despacho Decisório, uma vez que o Informe é documento preparatório à decisão, elaborado após a formação de convicção pela administração, e cujo teor somente deverá ser tornado público após a emissão do Despacho, não havendo de se falar em nulidade processual.
+Da aplicação do princípio da retroação da norma mais benéfica
+Em sua peça recursal, a prestadora sustenta a descaracterização das infrações objeto deste Pado, tendo em vista que os indicadores do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011, relacionados na tipificação da conduta atrelada à Recorrente, foram revogados pelo Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL), aprovado pela Resolução nº 717, de 23 de dezembro de 2019. 
+A retroatividade da lei mais benéfica vem sendo enfrentada pela Agência de forma reiterada. A Procuradoria Federal Especializada junto à Anatel (PFE/Anatel), em processo que tratou de descumprimentos de qualidade, manifestou-se sobre a alegação de que os indicadores revogados pelo novo regulamento de qualidade não poderiam mais ser objeto de apuração de descumprimento em diversas ocasiões, como por exemplo, se observa no Parecer nº 388/2021/PFE-ANATEL/PGF/AGU (SEI nº 7096462), no Processo nº 53500.022088/2014-50, cujo trecho se encontra replicado a seguir:
+2.1 Da irretroatividade da lei penal mais benéfica no âmbito do processo regulatório sancionador. Incidência do princípio do tempus regit actum
+9. Preliminarmente, tendo em vista a alegação apresentada pela prestadora interessada, em sua manifestação mais recente, no sentido de que as normas regulatórias mais benéficas que adviriam do processo de revisão do modelo de aferição da qualidade dos serviços de telecomunicações deveriam, quando entrassem em vigor, retroagir para alcançar os fatos anteriores ora sob apuração, cabe salientar que esta Procuradoria há muito firmou entendimento no sentido de que essa teoria não se aplica para a caracterização de infrações regulatórias no âmbito do direito administrativo sancionador, a qual deve sofrer a incidência do princípio do tempus regit actum. Neste sentido, confira-se o seguinte trecho do Parecer nº 1.214/2010/LFF/PGF/PFE-ANATEL, in verbis:
+59. Entretanto, cumpre observar que a teoria do direito penal de retroatividade da norma mais benéfica não se aplica ao direito administrativo sancionador (nesse sentido, esta Procuradoria já se manifestou por meio do Parecer nº 876/2009/PGF/PFE-ANATEL).
+60. Isso porque, a aplicação de tal teoria ao direito administrativo sancionador poderia acarretar na desobediência do administrado ao determinado pelo órgão regulador. Nesse sentido, vale transcrever trecho do referido parecer:
+111. Ocorre que a aplicação da teoria penal citada ao direito administrativo sancionador poderia acarretar na desobediência do administrado ao determinado pelo órgão regulador. De fato, as normas regulamentares da Agência possuem caráter temporário. A aplicação da retroatividade benéfica, pois, prejudica a força cogente dos regulamentos da Agência.
+112. Assim, qualquer entendimento no sentido de aplicação retroativa benéfica do regulamento de Sanções esbarraria no disposto no artigo 2º, inc. IV da LGT, in verbis:
+Art. 2º O poder Público tem o dever de:
+(...) IV - fortalecer o papel regulador do Estado; (...) (grifos nossos)
+113. Já a aplicação do regulamento em análise de forma retroativa para os casos de agravamento da sanção traz o inconveniente da insegurança jurídica para o administrado. Assim, desde logo, rechaça-se a idéia de retroatividade maléfica.
+114. Entende-se, pois, que seja mais consentâneo com o direito administrativo sancionador a aplicação do princípio geral do direito do tempus regit actum, ou seja, a norma vigente à época da infração incidirá sobre essa e determinará a correspondente sanção. De fato, a Lei de Introdução ao Código Civil assim dispõe acerca do aludido princípios nos artigos 2º e 6º, caput, assim:
+Art. 2º Não se destinando à vigência temporária, a lei terá vigor até que outra a modifique ou revogue.
+§ 1º A lei posterior revoga a anterior quando expressamente o declare, quando seja com ela incompatível ou quando regule inteiramente a matéria de que tratava a lei anterior.
+§ 2º A lei nova, que estabeleça disposições gerais ou especiais a par das já existentes, não revoga nem modifica a lei anterior.
+§ 3º Salvo disposição em contrário, a lei revogada não se restaura por ter a lei revogadora perdido a vigência.
+Art. 6º A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada.
+115. Apesar de a LICC tratar de leis, os princípios ali constantes aplicam-se a todo o ordenamento. Assim, não havendo disposição superior ou específica a respeito, em outras normas, aplica-se o preceito do tempus regit actum previsto na Lei de Introdução. O mencionado preceito ainda consta da própria Constituição, é o que dispõe o art. 5º XXXVI:
+XXXVI - a lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa julgada;
+116. Daí depreende-se que a disposição do art. 5º, inc. XL da Constituição, apesar de ser superior à LGT e, obviamente, aos Regulamentos da Agência, é específica para a lei penal.
+10. Como se vê, o princípio do tempus regit actum está diretamente relacionado ao entendimento acerca da não-aplicação do princípio da retroatividade da lei penal mais benéfica no âmbito do Direito Administrativo, já consagrado no âmbito da Advocacia-Geral da União. Neste sentido, citamos o seguinte trecho do Parecer nº 28/2015/DEPCONSU/PGF/AGU, da Procuradoria-Geral Federal, que foi aprovado pelo Advogado-Geral da União em 29/09/2015, o qual envolvia a Agência Nacional de Saúde Suplementar, in verbis:
+[...]
+13. Portanto, entende-se que as sucessivas alterações naturalmente ocorridas no arcabouço regulatório ao longo do tempo não possui repercussão no caso dos autos, haja vista a incidência do princípio do tempus regit actum para a devida caracterização das infrações regulatórias.
+Insta relembrar que a regra geral de aplicação da lei no tempo é a da não retroatividade, prevalecendo a incidência do princípio geral do tempus regit actum, o qual preza pela aplicação das regras e a interpretação vigentes à época do cometimento da infração.
+O posicionamento atual do Conselho Diretor da Anatel também se mantém pela impossibilidade de retroatividade da norma mais benéfica no âmbito do processo administrativo sancionador, conforme se depreende do seguinte trecho da Análise nº 68/2024/AC (SEI nº 12508952), copiado abaixo, que fundamentou a decisão exarada por meio do Acórdão nº 243, de 01 de outubro de 2024 (12660851), a qual negou provimento ao recurso interposto pela Claro S.A. em face de decisão que lhe aplicou sanções de advertência e multa por infrações ao RGQ-SCM:
+Análise nº 68/2024/AC (12508952):
+Por fim, também não merece acatamento a preliminar referente à retroação da norma mais benéfica.
+É sabido que a regra geral de aplicação da lei no tempo é a da não retroatividade, devendo-se considerar a aplicação do princípio geral do tempus regit actum, por meio do qual se aplicam as regras e a interpretação vigentes à época da infração.
+A PFE já se manifestou a respeito, caminhando no sentido de que o poder de sancionar da Anatel deve observar o princípio geral do direito do tempus regit actum.
+Veja-se o que afirmou a PFE no bojo do Parecer nº 876/2009/PGF/PFE-Anatel, de 19 de junho de 2009 (Processo nº 53500.020772/2005-14):
+110. Nessa esteira, ao se adotar o posicionamento de que ao direito sancionador aplicam-se todos os preceitos do direito penal, enteder-se-ia que a edição de novo regulamento de sanções poderia ser aplicado retroativamente, na parte mais benéfica ao administrado, e não se aplicaria, na parte que agravaria a situação do infrator.
+111. Ocorre que na aplicação da teoria penal citada ao direito administrativo sancionador poderia acarretar na desobediência do administrado ao determinado pelo órgão regulador. De fato, as normas regulamentares da Agência possuem um caráter temporário. A aplicação da retroatividade benéfica, pois, prejudicaria a força cogente dos regulamentos da Agência.
+112. Assim, qualquer entendimento no sentido de aplicação retroativa benéfica do Regulamento de Sanções esbarraria no disposto do art. 2º, inc. IV da LGT, in verbis:
+Art. 2º O Poder Público tem o dever de:
+(...)
+IV - fortalecer o papel regulador do Estado;(...) (grifos nossos)
+114. Entende-se, pois, que seja mais consentâneo com o direito administrativo sancionador a aplicação do princípio geral do direito do tempus regit actum, ou seja, a norma vigente à época da infração incidirá sobre essa e determinará a correspondente sanção. De fato, a Lei de Introdução ao Código Civil assim dispõe acerca do aludido princípio nos artigos 2º e 6º, caput, assim:
+Art. 2º Não se destinando à vigência temporária, a lei terá vigor até que outra a modifique ou revogue.
+§ 1º A lei posterior revoga a anterior quando expressamente o declare, quando seja com ela incompatível ou quando regule inteiramente a matéria de que tratava a lei anterior.
+§ 2º A lei nova, que estabeleça disposições gerais ou especiais a par das já existentes, não revoga nem modifica a lei anterior.
+§ 3º Salvo disposição em contrário, a lei revogada não se restaura por ter a lei revogadora perdido a vigência.
+Art. 6º A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada.;
+(...)
+116. Daí depreende-se que a disposição do art.5º, inc. XL da Constituição, apesar de ser superior à LGT e, obviamente, aos Regulamentos da Agência, é específica para a lei penal. (...)
+(grifos constantes no original)
+De igual modo, o Conselho Diretor não reconhece a possibilidade de retroatividade da norma mais benéfica no âmbito do processo administrativo sancionador, conforme se depreende do seguinte trecho da Análise nº 11/2018/SEI/LM (SEI 2274899):
+4.50. A despeito da posterior supressão do indicador não merece acolhida o argumento de que, por tal razão, deveriam ser afastadas as sanções por seu descumprimento. Não há espaço, na seara administrativa, para aplicação do princípio invocado. Nesse sentido, reproduz-se a seguinte lição doutrinária2:
+A regra é irretroatividade das normas jurídicas, sendo certo que as leis são editadas para regular situações futuras. O dispositivo constitucional que estabelece a retroatividade da lei penal mais benéfica funda-se em peculiaridades únicas do direito penal, inexistente no direito administrativo sancionador.
+Com efeito, a retroatividade da lei penal mais benéfica tem por fundamento razões humanitárias, relacionadas diretamente a liberdade do criminoso, bem jurídico diretamente atingido pela pena criminal. Como ensinam Carlos Enrico Paliero e Aldo Travi, é o princípio do favor libertis que justifica a retroatividade da lei penal mais benigna, considerando-se a gravidade da pena de prisão e os efeitos que tal medida produz sobre o condenado, só superados pelos efeitos da pena de morte. No direito administrativo sancionador não há espaço para o argumento, sendo certo que a sanção administrativa não pode consistir em pena de prisão.
+4.51. Tal entendimento encontra precedentes em decisões deste Colegiado, dentre as quais faz-se referência à deliberação do processo nº 53516.001045/2006 e apensos, ocorrida na Reunião nº 643, realizada em 29/3/2012, com fundamento na Análise nº 209/2012-GCER, que resultou no Despacho nº 2.473/2012-CD, de 30/3/2012. Ali igualmente se discutiu, e se afastou, a incidência do princípio na aplicação das sanções administrativas. Também o precedente tratava da sucessão de PGMQ com diferentes indicadores:
+De igual forma não merecem prosperar os argumentos da Recorrente sobre a retroatividade da lei mais benéfica. Mister ressaltar que o PGMQ é um instrumento editado com vistas a estabelecer parâmetros de qualidade que devem ser observados pelas Prestadoras durante todo o período da outorga. Tendo em vista a possível necessidade de mudanças destes parâmetros, dado o dinamismo do setor e as exigências por parte dos usuários do serviço, o regulador, sabiamente, previu que tais metas seriam revistas a cada cinco anos. Contudo, não há como sustentar a ideia de que ao retirar um indicador em um momento de revisão, os descumprimentos anteriormente apurados estariam descaracterizados. (destaque nosso)
+(...)
+2 DE MELLO, Rafael Munhoz, In Temas de Direito Administrativo, vol. 17, “Princípios Constitucionais do Direito Sancionador”. Editora Malheiros, 2007. p. 153/156.
+(grifos diversos do original)
+Dessa forma, não há de se olvidar que a infração praticada tem sua capitulação, para fins sancionatórios, de acordo com o diploma legal vigente no momento da ocorrência. Dito de outro modo, entende esta Agência, conforme decisões reiteradas que tratam do tema, não se aplicar a norma mais benéfica em favor da entidade que perpetrou ato ilegal no âmbito do direito administrativo. Referida regra somente se aplica no âmbito do direito penal.
+Da suposta responsabilidade da Entidade Aferidora da Qualidade (EAQ)
+O RGQ/SCM não transfere à EAQ a responsabilidade pelo cumprimento das obrigações de qualidade das Prestadoras, inclusive quanto à aferição dos indicadores de rede. Ao contrário, ele dispõe que a responsabilidade quanto ao cumprimento das obrigações regulamentares é da Operadoras de serviços de telecomunicações.
+Referido Regulamento estabelece em seu art. 7º que cabe às Prestadoras a coleta, a consolidação e o envio dos dados relativos aos indicadores com disposições de metas, até o dia quinze do mês subsequente ao da coleta, os quais devem ser enviados por meio de sistema interativo da Agência. Seu art. 38 dispõe que o descumprimento das metas e demais obrigações estabelecidas no RGQ/SCM, bem como o envio de informações que possam levar a uma interpretação equivocada dos dados sujeitam a Prestadora às sanções cabíveis, nos termos da regulamentação:
+RGQ/SCM
+"Art. 7º Cabe às Prestadoras a coleta, a consolidação e o envio dos dados previstos neste Regulamento, relativos aos indicadores com disposições de metas, até o dia quinze do mês subsequente ao da coleta, os quais devem ser enviados por meio de sistema interativo da Agência.
+--------------------
+Art. 38. O descumprimento das metas e demais obrigações estabelecidas neste Regulamento, bem como o envio de informações que possam levar a uma interpretação equivocada dos dados sujeitam a Prestadora às sanções cabíveis, nos termos da regulamentação, observado o disposto no § 1º do art. 46."
+Por meio do Informe nº 109/2024/CODI/SCO (SEI nº 11702069), a Área Técnica expressou idêntico entendimento:
+3.69. Sobre a alegação relativa à responsabilização pela infração por falha de terceiros, o artigo 38 do RGQ-SCM, é explicito em afastar a possibilidade de transferência da responsabilidade pelo inadimplemento das obrigações das operadoras a terceiros, como se depreende de sua literalidade, transcrita a seguir:
+Título VI
+Das sanções
+Art. 38. O descumprimento das metas e demais obrigações estabelecidas neste Regulamento, bem como o envio de informações que possam levar a uma interpretação equivocada dos dados sujeitam a Prestadora às sanções cabíveis, nos termos da regulamentação.
+3.70. Conforme previsão do regulamento, as metas estabelecidas nas suscitadas normas devem ser cumpridas pelas prestadoras, não havendo de se falar na transferência da responsabilidade de cumprimento para a EAQ. Vale mencionar que, perante a Anatel, só existe uma entidade outorgada responsável pela prestação do serviço e apenas esta entidade será acionada pela Agência.
+3.71. A Prestadora desempenha a atividade por sua conta e risco, cabendo-lhe a responsabilidade no que tange ao cumprimento dos deveres decorrentes das contratações por ela firmadas. Assim, não pode olvidar-se jamais de qualquer obrigação regulamentar, a qual é imposta tão somente à prestadora, esta sim autorizada a prestar o serviço de telecomunicações, responsável pelo cumprimento das normas regulamentares que buscam garantir a eficiência do serviço, sendo absolutamente dispensável tecer maiores comentários acerca do tema.
+3.72. Quanto ao mencionado Informe nº 237/2019/COQL/SCO, elaborado no Pado nº 53500.031736/2018, a Prestadora está equivocada em sua argumentação. Embora tenha sido a empresa, parte do referido processo, sancionada com advertência, tal Informe não concluiu pela ausência de responsabilidade pelo envio de dados, caso assim fosse, não teria havido sequer sancionamento. Pelo contrário, a conclusão sobre o assunto foi pela caracterização da infração, como se verifica das transcrições a seguir:
+3.48. As opções tecnológicas e metodológicas adotadas pelo GIPAQ podem ser justificadas em seu contexto temporal, porque entendidas como as mais apropriadas, no início do processo de medição em 2011, ao alcance do objetivo de aferição da qualidade da banda larga móvel em um cenário caracterizado por grandes desafios de ordem técnica, operacional e logística.
+3.49. As limitações do sistema de aferição são plenamente conhecidas e reconhecidas por todos os integrantes do GIPAQ, que buscam, após mais de 70 reuniões técnicas realizadas ao longo de quase oito anos, atenuá-las de modo a garantir maior robustez aos indicadores comunicados à sociedade.
+3.50. A solução final passa pela reformulação dos procedimentos técnico-operacionais em vigor, fundada na expertise adquirida, e já iniciada no âmbito do GIPAQ; na evolução tecnológica ocorrida nos últimos anos, que possibilitará o uso de medidores alternativos, como aplicativos instalados em smartphones, ou aplicativos embarcados em modens instalados no domicílio dos usuários de banda larga; e pela revisão da regulamentação específica de qualidade (prevista na agenda regulatória 2015- 2016).
+3.51. Cumpre ressaltar que, nada do que fora aqui exposto retira o mérito das medidas validadas no período. Isto é, houve medições com validade estatística, e todos os dados publicados pela Agência, portanto, foram validados de acordo com os métodos acordados. Ademais, os dados coletados foram todos dotados de validação técnica. Nesse sentido, o vício do modelo anterior reside somente nas dificuldades operacionais de alcance dos números de medidores e medidas mínimos estabelecidos, em determinadas regiões e períodos.
+3.52. Os dados que no período foram gerados dentro dos requisitos estatísticos são válidos e adequados para avaliação sobre o cumprimento de metas, para a comparação de desempenho entre as operadoras e para comunicação dos resultados aos usuários e sociedade em geral.
+(grifos no original)
+(...)
+3.76. Da análise do artigo 9º, verifica-se que a infração deve ter classificação “Leve”, quando não se encontram elementos para classifica-la como “Grave” ou “Média”. Isto posto, passa-se a considerar os elementos necessários à classificação Grave.
+3.77. Conforme visto, não há como afastar a responsabilização da prestadora pelas infrações ora tratadas. No caso concreto não há como enquadrar a conduta ou omissão da prestadora nas hipóteses para caracterização como infração grave. Em relação às infrações de natureza média, inicialmente, entende-se que as infrações de qualidade não configuram afronta aos dispositivos expressos nos incisos I, II e III, do § 2º, Art. 9º do Rasa.
+3.78. Todavia, o não atendimento das metas de qualidade decorre de falhas operacionais não previstas ou da realização dos investimentos e esforços em patamares inferiores ao necessário.
+3.79. Como, novamente, o julgador de mérito usará dos dados dos autos para decisão, entende-se necessário distinguir pequenos desvios operacionais dos casos em que há uma degradação maior.
+3.80. Antes de concluir a análise sobre as hipóteses de gravidade “média”, ressalta-se que relativamente à classificação das infrações em natureza Leve, o comando do Rasa é claro em seu Art. 9º, § 1º, quando dispõe que o enquadramento em Leve dá-se quando não é possível identificar hipóteses que enquadrariam uma infração em Média ou Grave.
+3.81. Nesse sentido, julga-se razoável entender que desvios pontuais e de pouca intensidade, embora ainda sejam caracterizados como descumprimento por forma normativa, fogem ao conceito de “vantagem indireta”, conforme inciso IV do §2º, razão pela qual sugere-se o julgamento como Leve, que é o adequado para o caso em testilha, uma vez que se trata de uma prestadora entrante, que apresenta apenas dois casos de antecedentes simples no Serviço de Comunicação Multimídia e não possui registro de reincidência específica.
+3.82. Assim, ante o exposto e com respaldo no art. 12 do Regulamento de Aplicação de Sanções Administrativas, abaixo transcrito, a irregularidade em questão é passível de aplicação de advertência.
+(grifou-se)
+3.73. Quanto ao trecho do Informe nº 105/2022/COQL/SCO, transcrito em seu recurso no intuito de demonstrar a alegada excludente de responsabilidade, note-se que este está fora de contexto. Tal Informe trata de análise complementar após manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, nos autos do Pado nº 53500.002798/2020-10, sendo que no item trazido pela Tim, a área técnica apenas deixou de acatar uma das sugestões da PFE, que seria justamente o afastamento da atenuante prevista no artigo 20, II do Rasa, referente ao não envio dos dados necessários ao cálculo e consolidação do SMP10 e SMP11. De acordo com o referido Informe nº 105, a atenuante foi mantida para aquele caso específico, pois considerou-se que a Prestadora tomou medida em prol da cessação espontânea da infração, que consistia na proposição de um novo modelo de medições baseado em aplicações embutidas em smartphones, e que teria resolvido o problema da geração de medidas e validade estatística. Saliente-se, ainda, que no citado processo foi aplicada a sanção de advertência para o descumprimento relativo ao não envio de informações do indicador SMP11, não tendo sido desconsiderada a infração.
+3.74. No tocante ao Informe nº 87/2019/COQL/SCO, elaborado no Pado nº 53500.031242/2018-16, no qual foram descaracterizadas as infrações de NI para os indicadores SMP10 e SMP11, é importante observar que tal Informe foi elaborado em 16/05/2019, e que naquele processo estava sendo avaliado o cumprimento das metas do período de janeiro a dezembro de 2017 para o serviço SMP. Toda a fundamentação do Informe que culminou na descaracterização se baseou na mudança do modelo de aferição que era usado à época, que apresentou problemas operacionais relevantes e sistêmicos, diante da instabilidade das probes que haviam sido instaladas em escolas públicas, cuja finalidade era coletar as informações necessárias para aferição de qualidade das conexões contratadas pelos usuários. O Informe também menciona que restando evidentes as dificuldades operacionais do modelo de medição por probes, em virtude, principalmente, da escassez de medidores aptos, a partir do ano de 2017, o GIPAQ pôs em prática nova metodologia de medição. O novo método para o SMP consistiu em embarcar software de medição de dados de forma passiva nos smartphones do usuário, por meio dos aplicativos das próprias prestadoras. Na medida em que as prestadoras foram atualizando os aplicativos e embarcando nos terminais móveis que vendiam o seu aplicativo, estes já entraram no novo modelo, com o software de medição embarcado.
+3.75. Importante mencionar que em ambos os Informes citados acima, o objeto era a apuração de infrações ao RGQ-SMP (indicadores SMP10 e SMP11) e não ao RGQ-SCM (indicadores SCM4 a SMC9), que são tratados no processo ora em análise.  Além disso, ainda que tratassem dos mesmos indicadores e serviço, considerando  que o período avaliado no presente processo é o de janeiro/2018 a dezembro/2019, não haveria como utilizar os mesmos fundamentos para descaracterizar a infração referente ao não envio de dados, uma vez que neste período o método de aferição do indicador já havia sido alterado, e não apresentava os mesmos problemas relatados para o método anterior.
+A PFE/Anatel também se manifestou favoravelmente à responsabilização da Prestadora pelo descumprimento das obrigações estabelecidas no RGQ/SCM, nos termos do Parecer nº 00452/2019/PFE-ANATEL/PGF/AGU, de 14 de junho de 2019 (SEI nº 4282048):
+"20. No caso específico do SCM, o regulamento de qualidade aprovado pela Resolução nº 574/2011 é firme ao consignar que cabe à Prestadora a coleta, consolidação e envio dos dados previstos no Regulamento, e o artigo 38 do mesmo ato normativo é igualmente claro ao dispor que a prestadora estará sujeita às sanções cabíveis, nos termos da regulamentação, caso descumpra as obrigações estabelecidas no Regulamento, inclusive quanto ao "envio de informações". (...)
+22. Ora, tais obrigações da EAQ quanto ao envio de dados asseguram a obrigatoriedade de seus encaminhamentos tanto às Prestadoras quanto à Anatel, conforme solicitados. A interpretação sistemática de todo o Regulamento deixa evidente que esta regra não substitui ou se sobrepõe às expressas disposições contidas nos artigos 7º e 38 supra-transcritos, mas sim que ambas se complementam. Assim, a responsabilidade pelo envio dos indicadores é - e continua sendo - da Prestadora do serviço de telecomunicações, que será o sujeito passivo de eventual sancionamento pelo descumprimento da regra regulamentar. À EAQ cabe a execução dos procedimentos relativos à aferição dos indicadores, fruto de um contrato privado celebrado com a prestadora de telecomunicações, o qual deve prever, obrigatoriamente, obrigações da EAQ para o envio dos dados tanto às Prestadoras quanto à Anatel, quando solicitados por qualquer uma delas.
+23. Nestas circunstâncias, eventual prejuízo que a EAQ possa ter causado à prestadora de telecomunicações que a contratou, por evidente, deve ser resolvido e reparado no âmbito da própria relação privada existente entre elas, sem interferir ou prejudicar a atuação da Agência Reguladora."
+Nos termos do Acórdão nº 108, de 26 de março de 2020 (SEI nº 5385882), este Colegiado decidiu, por unanimidade, pela responsabilidade da Prestadora quanto ao cumprimento das obrigações de qualidade estabelecidas no RGQ/SCM:
+"ACÓRDÃO Nº 108, DE 26 DE MARÇO DE 2020
+Processo nº 53500.049025/2017-93
+Recorrente/Interessado: CABO SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+CNPJ nº 02.952.192/0001-61
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Circuito Deliberativo nº 48, de 26 de março de 2020
+EMENTA
+RECURSO ADMINISTRATIVO. PADO. SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA (SCM). REGULAMENTO DE GESTÃO DE QUALIDADE (RGQ). NÃO ENVIO DE INDICADORES. AUTORIA E MATERIALIDADE DAS INFRAÇÕES. CARACTERIZAÇÃO. DISPENSA DE OBRIGAÇÃO REGULAMENTAR. INEXISTÊNCIA. ÔNUS DA PROVA. INCUMBÊNCIA DA RECORRENTE. INFRAÇÕES DE NATUREZA MÉDIA. METODOLOGIA DE CÁLCULO ADEQUADA AO RASA/2012. IMPOSSIBILIDADE DE CONVERSÃO DA MULTA EM ADVERTÊNCIA. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo interposto em face de decisão que aplicou multa no valor nominal de R$ 256.351,76 (duzentos e cinquenta e seis mil, trezentos e cinquenta e um reais e setenta e seis centavos), em razão do descumprimento do art. 7º c/c os arts. 16, 17, 18, 19, 20 e 21, todos do Regulamento de Gestão de Qualidade do Serviço de Comunicação Multimídia (RGQ/SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+2. A prestadora do Serviço de Comunicação Multimídia (SCM) é responsável pela coleta, consolidação e envio dos dados previstos no RGQ/SCM, relativos aos indicadores das metas de qualidade. Inteligência do art. 7º c/c art. 38, ambos do Regulamento de Gestão de Qualidade do Serviço de Comunicação Multimídia (RGQ/SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011.
+ 3. A alínea "e" do parágrafo 8º da Ata da 14ª Reunião do Grupo de Implantação de Processos de Aferição da Qualidade (GIPAQ) não dispensa a Recorrente do envio dos dados necessários ao cálculo e consolidação dos indicadores de qualidade. Tal item estabelece, apenas, a margem de erro amostral mínima para a validação dos dados estatísticos.
+4. Cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+5. As infrações devem ser consideradas médias quando o infrator auferir, indiretamente, vantagem em decorrência de seu cometimento. Inteligência do art. 9º, § 2º, inciso IV, do Regulamento de Aplicação de Sanções Administrativas (RASA/2012), aprovado pela Resolução nº 589, de 7 de maio de 2012.
+6. A sanção de multa obedeceu aos critérios de razoabilidade e proporcionalidade e contempla os parâmetros e critérios para definição das sanções descritos no RASA/2012.
+7. Impossibilidade de conversão da multa em advertência em virtude da natureza média das infrações. Tal faculdade somente é permitida quando o ilícito for classificado como leve e não houver reincidência específica por parte do Infrator, ao estilo do previsto no art. 12 do RASA/2012.
+8. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 43/2020/VA (SEI nº 5213783), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Emmanoel Campelo de Souza Pereira, os Conselheiros Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto e o Conselheiro Substituto Carlos Manuel Baigorri.
+Ausente o Presidente Leonardo Euler de Morais, no gozo de licença prevista no art. 26, § 1º, do Decreto nº 2.338/97." (Grifou-se)
+Confirma-se, assim, a responsabilidade da Recorrente pelas infrações apuradas neste Pado.
+Dos desvios ínfimos e aplicação de sanção de advertência para os indicadores SCM 1, SCM 2 e SCM 10
+A PFE/Anatel já se manifestou quanto a não se poder considerar insignificantes os prejuízos causados por infrações às normas que tutelam o interesse público, o qual é, por natureza, indisponível:
+Parecer nº 325/2010/RLV/PGF/PFE-Anatel, anexado aos autos do Pado nº 53563.000437/2005
+"25. A infração à qual se pretende impor a penalidade no presente momento diz respeito ao fato de a prestadora não estar incluindo todas as solicitações de reparo recebidas no mês ao efetuar o cálculo dos indicadores “Número de Solicitações de Reparo, por 100 (cem) Acessos Fixos em Serviço” e “Taxa de Atendimento às Solicitações de Reparo de Usuários Não Residenciais”. De acordo com a análise da área técnica, realizada por meio do Informe nº 436/2009-PBQID/PQI, de 20/08/2009, depreende-se que a infração restou plenamente configurada, sendo, pois, cabível a aplicação da sanção, nos termos propostos, não cabendo, na espécie, a aplicação do princípio da insignificância, consoante sugerido pela prestadora, uma vez se tratar de interesse público que, por natureza, é indisponível." (destacou-se)
+Parecer nº 452/2013/LFF/PFE-Anatel/PGF/AGU (pág. 111/126 do Volume de Processo 1 - SEI 0757399) 
+"51. Nessa esteira, vale chamar atenção também para o princípio da indisponibilidade do interesse público, segundo o qual à Administração Pública, diante de uma infração constatada, só resta a aplicação da sanção. Nesses casos de sanção, a atividade administrativa é vinculada, não cabendo ao Administrador escolher, ao seu livre arbítrio, se aplica ou não sanção neste ou naquele caso. Dessa forma, impossível fazer distinções não previstas na norma. É a lição de Celso Antônio Bandeira de Mello:
+A indisponibilidade dos interesses públicos significa que, sendo interesses qualificados como próprios da coletividade - internos ao setor público -, não se encontram à livre disposição de quem quer que seja, por inapropriáveis. O próprio órgão administrativo que os representa não tem disponibilidade sobre eles, no sentido de que lhe incumbe apenas curá-los - o que é também um dever - na estreita conformidade do que predispuser a intentio legis. (...) Em suma, o necessário - parece-nos - é encarecer que na administração os bens e os interesses não se acham entregues à livre disposição da vontade do administrador. Antes para este, coloca-se a obrigação, o dever de curá-los nos termos da finalidade a que estão adstritos. É a ordem legal que dispõe sobre ela.
+52. E o administrativista conclui estabelecendo a relação entre os princípios da legalidade e da indisponibilidade do interesse público, citando, ainda, Hely Lopes Meirelles:
+O princípio da legalidade explica a subordinação da atividade administrativa à lei e surge como decorrência natural da indisponibilidade do interesse público, noção esta, conforme foi visto, informa o caráter da relação de administração. (...) Hely Lopes Meirelles ensina que: "A legalidade, como princípio de administração (CF, art. 37, caput), significa que o administrador público está, em toda a sua atividade funcional, sujeito aos mandamentos da lei e às exigências do bem comum, e deles não se pode afastar ou desviar, sob pena de praticar ato inválido e expor-se a responsabilidade disciplinar, civil e criminal, conforme o caso”. (...) Na Administração Pública não há liberdade nem vontade pessoal. Enquanto na administração particular é lícito fazer tudo que a lei não proíbe, na Administração Pública só é permitido fazer o que a lei autoriza." (grifou-se)
+Ademais, há diversos precedentes deste Colegiado, segundo os quais não podem ser considerados insignificantes os prejuízos causados por infrações às normas que tutelam o interesse público.
+Conforme apontado no Informe nº 109/2024/CODI/SCO (SEI nº 11702069) as irregularidades objetos do presente PADO foram analisadas por CN (código Nacional), caso a caso, dentro da planilha de cálculo de multas, sendo que a sanção de advertência foi aplicada para aquelas infrações em que estejam presentes as condições descritas no art. 12, do Rasa, abaixo transcrito:
+Art. 12. A Agência aplicará a sanção de advertência quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - não justifique a imposição de pena mais grave ao infrator; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - atendimento das medidas impostas em processo de Acompanhamento do qual derivou o Pado. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Parágrafo único. Não será aplicada a sanção de advertência a: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - descumprimento das obrigações relacionadas à universalização e à continuidade; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - infrações graves, na forma do § 3º do art. 9º deste Regulamento, ressalvada a situação prevista no inciso II do caput deste artigo. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Note-se que, para algumas infrações de descumprimento de metas de indicadores estão preenchidos os requisitos para possibilitar a aplicação da sanção de Advertência uma vez que foram descumpridos até três indicadores do período avaliado e a infração foi classificada como leve. Já para as infrações de Coleta de Dados (NI), entende-se que para alguns indicadores estão preenchidos os requisitos para possibilitar a aplicação da sanção de Advertência uma vez que foram descumpridos até três indicadores do período avaliado apesar da infração ter sido classificada como Média, conforme tabela abaixo:
+ Indicador do SCM cuja a meta não foi atendida
+ | 
+ Dispositivo da Resolução nº 574, de 28/10/2011
+ | 
+ Sanção Aplicada
+ | 
+ Sanção Proposta neste informe.
+ | 
+ SCM1
+ | 
+ Art. 11
+ | 
+ R$ 458.293,42 
+ | 
+ R$ 477.568,64*
+ | 
+ SCM2
+ | 
+ Art. 12
+ | 
+ R$ 1.284.390,23 
+ | 
+ R$ 1.079.144,74
+ | 
+ SCM3
+ | 
+ Art. 13
+ | 
+ R$ 789.871,81 
+ | 
+ R$ 1.082.016,35*
+ | 
+ SCM4
+ | 
+ Art. 16
+ | 
+ R$ 21.128,62 
+ | 
+ R$ 35.916,36*
+ | 
+ SCM5D
+ | 
+ Art. 17, III
+ | 
+ R$ 132.209,00 
+ | 
+ R$ 112.580,17
+ | 
+ SCM5U
+ | 
+ Art. 17, III
+ | 
+ Advertência
+ | 
+ Advertência
+ | 
+ SCM6
+ | 
+ Art. 18
+ | 
+ Advertência
+ | 
+ Advertência
+ | 
+ SCM7
+ | 
+ Art. 19
+ | 
+ R$ 2.125,83 
+ | 
+ Advertência e R$ 14.618,65*
+ | 
+ SCM8
+ | 
+ Art. 20
+ | 
+ R$ 187.010,35 
+ | 
+ Advertência e R$ 123.518,64
+ | 
+ SCM10
+ | 
+ Art. 22
+ | 
+ R$ 204.900,83 
+ | 
+ Advertência e R$ 227.038,18*
+ | 
+ SCM10 (100%)
+ | 
+ Art. 22, § 1º
+ | 
+ R$ 547.032,38 
+ | 
+ R$ 479.093,89
+ | 
+ SCM11
+ | 
+ Art. 23
+ | 
+ R$ 36.236,14 
+ | 
+ Advertência e R$ 97.299,14*
+ | 
+ SCM11 (100%)
+ | 
+ Art. 23, § 1º
+ | 
+ R$ 261.816,24 
+ | 
+ R$ 140.161,92
+ | 
+ SCM12
+ | 
+ Art. 24
+ | 
+ R$ 182.568,30 
+ | 
+ Advertência e R$ 223.329,99*
+ | 
+ SCM13
+ | 
+ Art. 25
+ | 
+ R$ 926.490,02 
+ | 
+ Advertência e R$ 705.141,34
+ | 
+ SCM13 (100%)
+ | 
+ Art. 25, § 1º
+ | 
+ R$ 895.410,43 
+ | 
+ R$ 507.937,34
+ | 
+ SCM14
+ | 
+ Art. 26
+ | 
+ Advertência
+ | 
+ Advertência e R$ 18.000,00*
+ | 
+ SCM14 (100%)
+ | 
+ Art. 26, § 1º
+ | 
+ R$ 57.378,63 
+ | 
+ Advertência e R$ 83.210,80*
+ | 
+ TOTAL INDICADORES
+ | 
+ Advertência e Multa de R$ 5.986.862,22 
+ | 
+ Advertência e Multa de R$ 5.406.576,15
+ | 
+ | 
+ Descumprimentos na COLETA
+ | 
+ Dispositivo
+ | 
+ Sanção Aplicada
+ | 
+ Sanção Proposta neste informe.
+ | 
+ SCM4
+ | 
+ Art. 7º c/c o art. 16, § 3º, II
+ | 
+ Advertência
+ | 
+ Advertência e R$ 18.160,70*
+ | 
+ SCM5D
+ | 
+ Art. 7º c/c o art. 17, § 3º, II
+ | 
+ Advertência
+ | 
+ Advertência e R$ 18.160,70*
+ | 
+ SCM5U
+ | 
+ Art. 7º c/c o art. 17, § 3º, II
+ | 
+ Advertência
+ | 
+ Advertência e R$ 18.160,70*
+ | 
+ SCM6
+ | 
+ Art. 7º c/c o art. 18, § 3º, II
+ | 
+ Advertência e R$ 159.895,69
+ | 
+ Advertência e R$ 417.231,13*
+ | 
+ SCM7
+ | 
+ Art. 7º c/c o art. 19, § 3º, II
+ | 
+ Advertência e R$ 159.895,69
+ | 
+ Advertência e R$ 417.231,13*
+ | 
+ SCM8
+ | 
+ Art. 7º c/c o art. 20, § 3º, II
+ | 
+ Advertência e R$ 32.871,74
+ | 
+ Advertência e R$ 88.285,45*
+ | 
+ SCM9
+ | 
+ Art. 7º c/c o art. 21, § 3º, II
+ | 
+ Advertência e R$ 11.816,10
+ | 
+ Advertência
+ | 
+ TOTAL COLETA
+ | 
+ Advertência e Multa de R$ 364.479,23
+ | 
+ Advertência e R$ 977.229,81*
+ | 
+ | 
+ TOTAL (PADO)
+ | 
+ Advertência e Multa de R$ 6.351.341,44
+ | 
+ Advertência e Multa de R$ 6.383.805,96*
+ | 
+Da revisão do valor da multa
+Diante na necessidade de corrigir o valor da ROL utilizada para o cálculo da multa relativa aos descumprimentos praticados pela Tim Celular S.A, bem como da necessidade de corrigir os valores das multas aplicadas para respeitar os valores mínimos do Rasa, quanto à individualização da infração por CN; e da necessidade de refazer as pesquisas de antecedentes para as duas empresas envolvidas neste Pado, quais sejam, a Tim Celular S. A., CNPJ nº 04.206.050/0001-80 e a Tim S.A., CNPJ nº 02.421.421/0001-11, fez-se o recálculo da sanção de multa ora aplicada, acarretando no seu agravamento.
+No tocante à pesquisa de antecedentes e de reincidência específica, considerou-se precedente do Conselho Diretor, constante no Acórdão nº 682/2018 (SEI nº 3572257), que orienta que a mesma deve levar em consideração os distintos lapsos temporais nos quais se cometeram as irregularidades, identificando-se os antecedentes e a reincidência específica relativos ao quinquênio que antecede o início de cada um dos períodos.
+Neste sentido, foi realizada a consulta na base de dados do dashboard da Anatel, utilizando-se como parâmetros de pesquisa os dados das empresas Tim Celular S. A., CNPJ nº 04.206.050/0001-80 e a Tim S.A. , CNPJ nº 02.421.421/0001-11 e foram encontrados os seguintes resultados para o Serviço de Comunicação Multimídia e para os períodos abaixo referenciados e conforme se vê no Relatório de Antecedentes e Reincidências Específicas (SEI nº 11717358):
+Tim Celular S. A., CNPJ nº 04.206.050/0001-80
+ Período das infrações
+ | 
+ Período para consulta de antecedentes e reincidência específica
+ | 
+ Antecedentes
+ | 
+ Reincidências Específicas
+ | 
+ janeiro a novembro de 2018
+ | 
+ janeiro de 2013 a dezembro de 2017
+ | 
+ 1
+ | 
+ 0
+ | 
+Tim S.A., CNPJ nº 02.421.421/0001-11
+ Período das infrações
+ | 
+ Período para consulta de antecedentes e reincidência específica
+ | 
+ Antecedentes
+ | 
+ Reincidências Específicas
+ | 
+ dezembro de 2018
+ | 
+ novembro de 2013 a novembro de 2018
+ | 
+ 4
+ | 
+ 0
+ | 
+ janeiro a dezembro de 2019
+ | 
+ janeiro de 2014 a dezembro de 2018
+ | 
+ 4
+ | 
+ 0
+ | 
+Desta forma, devem incidir sobre o valor base da multa os acréscimos previstos no artigo 19 do RASA, conforme resultado acima indicado.
+Sendo assim, a partir da Metodologia de Cálculo aprovada pela Portaria nº 784, de 26 de agosto de 2014, foi efetuado o cálculo das sanções aplicáveis à prestadora em razão do descumprimento aos artigos 11, III; 12, III; 13, III; 16, III; 17, III; 18, III; 19, III; 20, III; 22, II; 23; 24, III; 25, II; 26, II e 7º c/c artigos 16, III; 17, III; 18, III; 19, III; 20, III; 21, III, todos do Regulamento de Gestão da Qualidade do Serviço de Comunicação Multimídia (RGQ-SCM), aprovado pela Resolução nº 574, de 28 de outubro de 2011, conforme consta da Planilha de recálculo das multas - Qualidade (SEI nº11719298), que resultou nas sanções de Advertência e Multa no valor de R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil oitocentos e cinco reais e noventa e seis centavos).
+Da aplicação de atenuantes
+Com relação à aplicação de atenuantes, a Recorrente não demonstrou as hipóteses descritas nos incisos I e II, art. 20, do Rasa, que prevê a situações que permitem a sua incidência.
+Da revisão da gradação das infrações
+Com relação à gradação das infrações, vale a informar que os critérios utilizados para a classificação da gravidade foram descritos no Tópico VIII – Proposição de Sanção, do Informe nº 258/2022/COQL/SCO (8820681), deduzindo-se daquela informação que não há possibilidade de alteração da classificação das infrações na forma requerida. Salienta-se que, tais critérios já foram submetidos ao Conselho Diretor da Agência em diversos Pados, não tendo havido ressalvas quanto à sua aplicação.
+Do agravamento da sanção 
+Em face do agravamento proposto, a Interessada foi instada a se manifestar, tendo apresentado a Petição RQ/DAR/208/2024 – GR (SEI nº12555591), por meio da qual aponta: (i) impossibilidade do agravamento da sanção; (ii) que seja observado o novo entendimento da Gerência de Controle de Obrigações de Direito dos Usuários - CODI quanto à aplicação de Advertência para infrações com gradação Média e até 7 (sete) dias de descumprimento; (iii) reitera o argumento recursal para que seja revista a ROL empregada na metodologia de cálculo, a fim de se considerar aquela proveniente de seus Relatórios financeiros, e não a do Documento de Separação e Alocação de Contas (DSAC). Além disso reitera que se mantenha a possibilidade da conversão da sanção em obrigação de fazer.
+A tentativa da Recorrente de afastar a possibilidade de reforma para pior se mostra infundada, vez que o arcabouço regulatório prevê explicitamente o dever da Administração de rever os seus atos quando observar questão superveniente não considerada em momento anterior e, desta revisão, não há qualquer impedimento ao agravamento da situação da Recorrente, desde que preservado o seu direito à ampla defesa e ao contraditório, o que ocorreu no caso concreto.
+Neste sentido, foi aprovada, por este Colegiado, a Súmula nº 22, de 18 de outubro de 2019:
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel.
+A desistência do recurso administrativo ou do pedido de reconsideração, não obsta a continuidade do processo, acaso assim demande o interesse público, podendo resultar no agravamento ou na atenuação da decisão recorrida.
+Vale mencionar que a Procuradoria Federal Especializada da Anatel, órgão que tem dentre as suas competências a de assistir a autoridade assessorada no controle interno da legalidade administrativa dos atos a serem por ela praticados ou já efetivados (art. 10, § 1º, da Lei nº 10.480, de 02/07/2002 c/c o art. 11, inciso V, da Lei Complementar nº 73, de 10/02/1993), já se manifestou, por meio do Parecer Normativo nº 420/2008/PGF/PFE – Anatel, quanto à possibilidade de haver reforma ampla da decisão em sede de recurso, inclusive para piorar a situação do administrado.
+Além disto, quanto à matéria concreta que está provocando o agravamento no presente processo, a Procuradoria Federal Especializada da Agência apresentou posicionamento específico, nos termos do Parecer nº 651/2024/PFE-ANATEL/PGF/AGU, (SEI nº 13136646), estando afastada, portanto, a hipótese de o ato estar em descompasso com as normas legais vigentes.
+A Tim destaca o entendimento recente da CODI, que prevê a aplicação de Advertência para infrações com gradação "Média" e até 7 (sete) descumprimentos, conforme o Rasa, entendimento esse que não foi adotado no caso concreto, sem justificativa aparente.
+De fato, aquela área técnica já adotou o entendimento no sentido de que, nos casos em que se aferiu a perpetração de tal irregularidade (NI) por prazo de até 7 (sete) meses, optou-se pela aplicação da sanção de advertência, uma vez que se entendia ser o caso de não se justificar imposição de pena mais grave ao infrator, conforme artigo 12, inciso I do Rasa, ainda que a classificação da infração seja de natureza MÉDIA, pois se enquadra no artigo 9º, § 2º, inciso I do Rasa, configurando vantagem indireta ao infrator.
+Entretanto, em recente decisão do Conselho Diretor da Agência, por meio do Acórdão nº 86, de 15 de março de 2024 (SEI nº 11670725), proferida no Pado nº 53500.018706/2020-13, o Colegiado adotou apenas parcialmente o entendimento da SCO, tendo decidido da seguinte forma:
+Acórdão nº 86, de 15 de março de 2024
+Processo nº 53500.018706/2020-13
+Recorrente/Interessado: HUGHES TELECOMUNICAÇÕES DO BRASIL LTDA.
+CNPJ nº 05.206.385/0001-61
+Conselheiro Relator: Raphael Garcia de Souza
+Fórum Deliberativo: Reunião nº 930, de 7 de março de 2024
+EMENTA
+PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTOS DE OBRIGAÇÕES (PADO). RECURSO ADMINISTRATIVO. SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA (SCM). REGULAMENTO DE GESTÃO DA QUALIDADE DA PRESTAÇÃO DO SCM (RGQ-SCM). NÃO ENVIO DE INFORMAÇÕES. INFRAÇÕES PARCIALMENTE MATERIALIZADAS. PRESTADORAS DE PEQUENO PORTE (PPP). ALTERAÇÃO DA DEFINIÇÃO NO PERÍODO APURADO. REDUÇÃO DO PERÍODO DE INFRAÇÃO. REGULAÇÃO RESPONSIVA. SANÇÕES DE ADVERTÊNCIA E MULTA. RECURSO ADMINISTRATIVO CONHECIDO E PARCIALMENTE PROVIDO. REFORMA DE OFÍCIO.
+(...)
+6. A infração de não envio de dados para cálculo dos indicadores de qualidade é apurada mensalmente, em cada período anual. Se a prestadora deixar de apresentar os dados necessários por período de até 3 (três) meses, convém aplicar a sanção de advertência, incidindo a pena de multa a partir do quarto mês de descumprimento.
+Sendo assim, de acordo com o precedente acima, somente poderia ser aplicada a sanção de Advertência nos casos de infrações referentes à não apresentação de dados (NI), pelo período de até 3 (três) meses, incidindo a sanção de multa a partir do quarto mês de descumprimento, o que já se observa nas as planilhas de cálculo das infrações de não apresentação de dados (NI).
+No que toca a ROL aplicada na metodologia de cálculo, bem como a conversão da sanção de obrigação de fazer, já fizemos as considerações devidas sobre os temas acima. 
+Das considerações feitas pela PFE-Anatel
+Nos termos do artigo 7º, inciso V, da Portaria nº 642, de 26 de julho de 2013, da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel apresentou sua manifestação em razão do agravamento proposto.
+O Parecer nº 651/2024/PFE-ANATEL/PGF/AGU, (SEI nº 13136646), juntado aos autos apresentou as seguintes considerações em sua conclusão:
+ a) pela possibilidade de agravamento da sanção administrativa pelo Conselho Diretor da Anatel, tal como sugerida no Informe nº 109/2024/CODI/SCO (11702069), visto que foram observados os requisitos do art. 64, parágrafo único, da Lei nº 9.784/1999 e do art. 125, parágrafos 1º e 4º, do Regimento Interno;
+b) pela sugestão de aplicação da ROL da incorporadora, mais próxima do ano de aplicação da sanção - ROL de 2022 caso, neste momento, já seja de conhecimento da Agência;
+c) recomenda-se a realização de nova pesquisa quanto à existência de antecedentes da incorporadora, considerando todos os serviços de telecomunicações outorgados a ela, se houver;
+d) tendo em vista que há nos autos deste processo punitivo proposição pela imposição de obrigação de fazer, embora precluído o prazo concedido no Despacho Decisório nº 170/2022/COQL/SCO (SEI 9446047), estando sujeita a nova avaliação sobre a pertinência pelo Conselho Diretor em sede recursal, mostrou-se oportuno evidenciar as considerações mais recentemente tecidas por esta Procuradoria a respeito dessa espécie sancionatória, expostas, dentre outros, nos Pareceres nº 46/2020/PFE-ANATEL/PGF/AGU, 882/2019/PFE-ANATEL/PGF/AGU, 467/2019/PFEANATEL/PGF/AGU, 459/2019/PFE-ANATEL/PGF/AGU, 415/2019/PFE-ANATEL/PGF/AGU e 89/2019/PFEANATEL/PGF/AGU.
+Em relação as recomendações contidas nas alíneas "b" e "c", convém destacar que o entendimento adotado pela área técnica no presente caso está em estrita consonância que os precedentes deste colegiado, no sentido de que deve ser empregada no cálculo da multa a Receita Operacional Líquida da prestadora fiscalizada e não da empresa incorporadora, para o cálculo de multa relativa à infrações cometidas antes da incorporação; assim como que a consulta de antecedentes deve se limitar ao serviço no qual se cometeu o ilícito em apuração, não podendo açambarcar os demais serviços para os quais o Infrator eventualmente detenha outorga.
+Neste sentido, proponho o conhecimento e não provimento do Recurso, e a reforma de ofício do valor da multa aplicada de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos) para R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil oitocentos e cinco reais e noventa e seis centavos).
+Da petição extemporânea SEI nº 14941569 
+A Interessada protocolou, em 18/12/2025, petição por meio da qual requer seja reconhecida a prescrição quinquenal nos presentes autos, em face de decisão recente do STF; bem como alega a existência de erro material no tocante ao montante da ROL da empresa no ano de 2020.
+Nos termos da Súmula nº 21, de 10 de outubro de 2017, recebo a presente em observância ao direito de petição e passo a analisar os argumentos nela contidos. 
+A interessada trouxe aos autos entendimento do Supremo Tribunal Federal - STF, no sentido de que o prazo prescricional para punição administrativa admite apenas uma única causa interruptiva, afastando a possibilidade de sucessivas interrupções por novos atos administrativos ou processuais.
+Os precedentes trazidos aos autos pela Recorrente referem-se a casos concretos envolvendo processos administrativos que versam sobre tomada de contas especial instaurados pelo Tribunal de Contas da União - TCU. Com efeito, o entendimento tem sido aplicado em outros processos sancionadores e de ressarcimento no bojo de tomada de contas especial oriundos daquela Corte de Contas.
+A Análise nº 78/2025/VA (SEI nº 13937596), aprovada por este colegiado, por unanimidade, na RCD nº 945, de 07/08/2025, concluiu que o precedente apontado pela TIM refere-se especificamente aos procedimentos administrativos do Tribunal de Contas da União - TCU, não vinculando esta Agência à sua observância. 
+Cumpre ainda salientar que, em sentido diverso do sustentando pela Recorrente, o STF já proferiu decisões reconhendo a possibilidade de incidência das causas interruptivas da prescrição mais de uma vez no mesmo processo. Transcrevo:
+“AGRAVO REGIMENTAL EM MANDADO DE SEGURANÇA. TRIBUNAL DE CONTAS DA UNIÃO. TOMADA DE CONTAS ESPECIAL. CONDENAÇÃO A PAGAMENTO DE MULTA. PRESCRITIBILIDADE DA PRETENSÃO SANCIONATÓRIA. SANCIONATÓRIA. MARCOS INTERRUPTIVOS. ART. 2°, II, DA LEI 9.873/1999. DISCUSSÃO. DIREITO INTERRUPTIVOS. ART. 2°, II, DA LEI 9.873/1999. DISCUSSÃO. DIREITO LÍQUIDO E CERTO. AUSÊNCIA DE LÍQUIDO E CERTO. AUSÊNCIA DE DEMONSTRAÇÃO. SUBSISTÊNCIA DA DECISÃO AGRAVADA. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO.
+I – As razões do agravo regimental são inaptas para desconstituir os fundamentos da decisão agravada, que, por isso, se mantêm hígidos.
+II – Excetuados os ressarcimentos de valores perseguidos na esfera judicial decorrentes da ilegalidade de despesa ou da irregularidade de contas, a aplicabilidade de sanções administrativas pelo Tribunal de Contas da União - TCU sofrem os efeitos fulminantes da passagem de tempo, de acordo com os prazos previstos em lei.
+III – Aplicando a regulamentação da Lei 9.873/1999 ao caso concreto, o TCU constatou que a pretensão punitiva não teria sido fulminada pelo decurso do tempo, diante da ocorrência de 11 causas interruptivas da prescrição.
+IV - A pretensão do recorrente, fundada na discussão sobre os fatos apontados como marcos interruptivos da prescrição da pretensão punitiva da Administração Pública, refoge aos estreitos limites do mandamus, ante a ausência de liquidez e certeza do direito pleiteado.
+V – Agravo regimental a que se nega provimento.” (MS 37.008 AgR, Rel. Min. Ricardo Lewandowski, Segunda Turma, DJe 10.5.2022) (grifou-se). 
+"DIREITO ADMINISTRATIVO. MANDADO DE SEGURANÇA. PRESCRIÇÃO DA PRETENSÃO DE RESSARCIMENTO AO ERÁRIO FUNDADA EM DECISÃO DO TRIBUNAL DE CONTAS DA UNIÃO (TCU). APLICAÇÃO DA LEI Nº 9.873/1999. OCORRÊNCIA DE FATOS INTERRUPTIVOS DA PRESCRIÇÃO.
+1. Mandado de Segurança impetrado contra ato do TCU que julgou irregulares as contas referentes a convênio firmado pelo recorrente com repasse de recursos do Fundo de Amparo ao Trabalhador – FAT.
+2. Nos termos da jurisprudência recente desta Casa, a pretensão de ressarcimento ao erário do TCU é prescritível, sendo aplicável a Lei nº 9.873/1999, seja quanto ao prazo de prescrição, seja quanto às causas de interrupção do respectivo prazo.
+3. O art. 2º, II, da Lei nº 9.873/1999 prevê que a prescrição se interrompe por qualquer ato inequívoco que importe apuração do fato, mesma ante de cientificada a parte interessada. No caso concreto, houve várias causas interruptivas do lapso prescricional, de modo que não se pode reconhecer a inércia da Administração Pública.
+4. Impossibilidade de averiguação da prescrição intercorrente, na forma do art. 1º, § 1º, da Lei nº 9.873/1999, em razão da ausência de cópia integral do processo de tomada de contas especial nos autos. Ausência de prova pré-constituída do alegado direito líquido e certo.
+5. Agravo a que se nega provimento." (MS 36905 AgR, Relator: ROBERTO BARROSO, Primeira Turma, julgado em 22 de agosto de 2022, publicado no DJe em 29 de agosto de 2022) (grifou-se)
+Trata-se, portanto, de matéria que não se encontra pacificada no âmbito daquela Corte, além de referir-se especificamente aos procedimentos administrativos do Tribunal de Contas da União - TCU, não vinculando esta Agência à sua observância. Nesse sentido, o Código de Processo Civil estabelece que, em regra, as decisões judiciais produzem efeitos apenas entre as partes litigantes:
+"Art. 506. A sentença faz coisa julgada às partes entre as quais é dada, não prejudicando terceiros."
+Vale ressaltar que o precedente citado não obriga a Administração Pública como um todo, e não foram firmados sob a sistemática da repercussão geral. Os casos concretos trazidos naquele julgamento têm particularidades distintas do que normalmente ocorrem nos PADOs em trâmite na Agência.
+Neste sentido, entendo não ter ocorrido a prescrição no caso dos autos.
+Acerca da ROL utilizada na metodologia de cálculo, entendo que a TIM reitera argumentos já trazidos em sua peça recursal, e que foram devidamente tratados nesta análise, não havendo o que acrescentar.
+Em face do exposto, indefiro os pedidos contidos na petição ora apresentada.
+da obrigação de fazer
+Da análise de conveniência e oportunidade quanto à aplicação da sanção de Obrigação de Fazer 
+A aplicação da sanção de obrigação de fazer está prevista no RASA, nos seguintes termos: 
+Art. 15. As sanções de obrigação de fazer e de não fazer poderão ser aplicadas nas infrações classificadas como leves, médias e graves, cumulativamente ou não com a sanção de multa, quando a autoridade competente, valendo-se da oportunidade e conveniência, verificar que a imposição de prática ou abstenção de conduta à sancionada será mais razoável e adequada para o atingimento do interesse público, devendo a escolha ser devidamente motivada, observados os princípios da legalidade, razoabilidade, proporcionalidade e economicidade. 
+Como se vê, o balizador dessa decisão é o interesse público, tal como exposto no seguinte trecho extraído do Parecer nº 882/2019/PFEANATEL/PGF/AGU, de 12 de dezembro de 2019 (SEI nº 5028661), elaborado pela PFE-Anatel: 
+Parecer nº 882/2019/PFEANATEL/PGF/AGU (SEI nº 5028661) 
+"20. Como se observa, é o interesse público que irá ensejar a aplicação da sanção de obrigação de fazer. Caso a autoridade administrativa competente, no seu juízo discricionário, entenda conveniente, oportuno e mais adequado ao atendimento do interesse público a fixação de sanção de obrigação de fazer, ao invés de obrigação de pagar (multa), ou concomitantemente com esta, não haverá óbice para implementação desta medida, desde que apresente a devida fundamentação. 
+(...)
+25. De início, é muito importante registrar que a opção/escolha pela obrigação de fazer, ao invés da obrigação de pagar (multa), recai exclusivamente no âmbito de discricionariedade da autoridade administrativa, não caracterizando, assim, qualquer espécie de direito, opção ou escolha por parte do administrado. 
+26. Assim, é irrelevante para a aplicação da obrigação de fazer a existência de eventual pedido formulado por uma entidade que responde a um processo punitivo, pois não se trata de acolher ou rejeitar a pretensão da autuada, mas, sim, de definir a espécie de sanção à luz do interesse público, conforme acima demonstrado. 
+27. Acrescente-se que esta circunstância decorre diretamente da compreensão de que a sanção de obrigação de fazer não é melhor ou pior do que a sanção de obrigação de pagar (multa). As duas espécies de sanção possuem - e devem possuir - a mesma envergadura, sendo certo que ambas, observadas as suas respectivas naturezas e características, devem ser aptas a atingir as funções clássicas da pena relativas à repressão e prevenção quanto ao cometimento de infrações."
+Do projeto de conectividade de universidades (federais, estaduais e municipais) e institutos federais 
+Da diligência 
+Em 3 de outubro de 2025, pelo Ofício nº 9/2025/OP-ANATEL, nos autos do Processo nº 53500.081616/2025-65, demandei às Superintendências de Regulamentação (SPR), Competição (SCP) e Controle de Obrigações (SCO), o levantamento e mapeamento de carências e lacunas de serviços de telecomunicações, bem como das respectivas infraestruturas de transporte e de acesso, das instituições públicas de ensino superior, pesquisa e extensão (portanto, universidades federais, estaduais e municipais e institutos federais).
+A partir de tal levantamento, solicitei o encaminhamento de proposta de valores de referência para a adoção de obrigações de fazer e outros projetos de implementação de políticas públicas para o atendimento dos tipos de lacunas encontradas.
+Em resposta à diligência por mim formulada, nos termos do Informe Técnico nº 187/2025/PRUV/SPR (SEI nº 14883767), de 31 de dezembro de 2025, as áreas técnicas apresentaram o resultado obtido com a Tomada de Subsídios nº 9/2025 (SEI nº 14513242), realizada para a coleta de informações, posteriormente refinadas em conjunto com a Rede Nacional de Ensino e Pesquisa – RNP.
+Importante mencionar que a conexão dessas instituições à internet se dá normalmente por intermédio da RNP, associação de direito privado, sem fins lucrativos, qualificada como organização social (OS) nos termos da Lei nº 9.637, de 15 de maio de 1998, já que a RNP oferece às instituições acesso a plataformas e aplicações específicas, que podem ser consultados por meio do link https://www.rnp.br/servicos/servicos-do-sistema-rnp/ Por esse motivo, a área técnica, acompanhada por este gabinete, tem dialogado com a RNP sobre o levantamento em tela.
+Também é importante mencionar os entendimentos com os ministérios das Comunicações e da Educação ao longo deste processo, notadamente por meio de diálogos bilaterais, reuniões e a formalização, junto ao MCOM, por meio do Ofício nº20/2025/OP-Anatel (SEI nº 14559937).
+A Tomada de Subsídios realizada pela Área Técnica recebeu 1310 (mil trezentas e dez) contribuições de 85 (oitenta e cinco) universidades federais, estaduais e municiais e de institutos federais, conforme detalhado no referido Informe.
+A RNP, por sua vez, enviou à Anatel, em 22 de dezembro de 2025, uma listagem (SEI nº 14963393) com a análise do status de conexão de cada unidade mencionada na tomada de subsídios, informando o seguinte panorama (SEI nº 14963339):
+ 226 unidades estaduais ou municipais não conectadas, atualmente com status em discussão;
+ 110 unidades federais não conectadas;
+ 40 unidades já conectadas;
+ 4 unidades com previsão de conexão.
+Quanto às 226 (duzentas e vinte e seis) unidades estaduais e municipais citadas, ressaltou que a conexão não pode ser tratada de forma automática. Assim, no momento da resposta, haveria 110 (cento e dez) unidades de universidades federais aptas a serem conectadas e, portanto, objeto de políticas públicas.
+Ato contínuo, as áreas técnicas da Anatel e da RNP, acompanhadas por este gabinete, estão mantendo diálogo com as instituições responsáveis pelas 226 (duzentas e vinte e seis) unidades estaduais e municipais mencionadas, no sentido de esclarecer eventuais pendências. Feito isso, a lista de unidades aptas a serem contempladas com as obrigações de fazer aqui tratadas será atualizada, com a inclusão de novas unidades.
+Diante disso, a Área Técnica da Anatel não vislumbrou óbices regulatórios à substituição da sanção pecuniária pela de obrigação de conectividade às universidades públicas e institutos federais sem conexão, considerando que um dos objetivos estratégicos da Agência é o de "Promover a conectividade universal e significativa com qualidade e segurança".
+Feita essa introdução, avaliou a aderência da sanção de obrigação de fazer, consistente na conectividade em instituições públicas de ensino superior, às condições estabelecidas no art. 16 do RASA vigente, conforme detalharei adiante.
+Do alinhamento da obrigação de fazer aos requisitos estabelecidos no RASA 
+Os parâmetros a serem observados pela sanção de obrigação de fazer estão previstos no art. 16 do RASA, com redação dada pela Resolução nº 784, de 7 de novembro de 2025:
+"Art. 16. As sanções de obrigação de fazer e de não fazer devem observar os seguintes parâmetros:
+I - não podem se restringir ao mero cumprimento das obrigações já impostas ao infrator pelo arcabouço regulatório e pelos contratos ou termos celebrados;
+II - promover o atendimento de políticas públicas do setor de telecomunicações, em especial aquelas que visem a conectividade; (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+III - ser compatíveis com os objetivos estratégicos da Agência, constantes seu Plano Estratégico; e, (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+IV - preferencialmente, privilegiar projetos que atendam às necessidades estruturantes previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), no Plano Estrutural de Redes de Telecomunicações (PERT). (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 1º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 2º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 3º As sanções de obrigação de fazer e não fazer não se confundem com a determinação para reparação dos usuários prejudicados, nem com as medidas cautelares.
+§ 4º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)"
+O Corpo Técnico da Agência avaliou a aderência do projeto à norma no item 3.22 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), conforme transcrevo:
+3.22.1. O inciso I do mencionado dispositivo impede que as obrigações já estejam previstas no arcabouço regulatório e nos contratos e termos celebrados. De fato, não há instrumento dessa natureza que obrigue as prestadoras a proverem conectividade às instituições de ensino superior, pesquisa e extensão. Tampouco existe, no PGMU V ou em outras sanções de obrigação de fazer, compromissos de implementação de rede de transporte para essas instituições. Assim, verifica-se que a obrigação ora cotejada não viola o primeiro condicionante do art. 16.
+3.22.2. O art. 16, II, estabelece que a obrigação de fazer visa promover o atendimento de políticas públicas, com destaque para projetos que fomentem a conectividade. Nesse sentido, o provimento de conectividade às instituições de ensino superior, pesquisa e extensão alinha-se a tal propósito, materializando a instrução de implementar e complementar as políticas setoriais constante do Decreto nº 9.612, de 17/12/2018, em especial de seu art. 2º, IV, "a", art. 3º e art. 4º, I, III, IV e V, uma vez que tais infraestruturas incentivam e fomentam a pesquisa brasileira.
+3.22.3. No art. 16, III, tem-se o comando de que as obrigações de fazer devem ser compatíveis com os objetivos estratégicos da Anatel (conforme Plano Estratégico). Como o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão fornece acesso a serviços de alta capacidade para instituições estratégicas, a presente obrigação de fazer materializa o objetivo estratégico de resultado nº 1 e nº 3 do Plano Estratégico da Anatel 2023-2027, quais sejam "Promover a conectividade universal e significativa com qualidade e segurança" e "Fomentar a transformação digital e a inovação tecnológica junto à sociedade". Mais especificamente, o instrumento teria o condão de atender aos objetivos estratégicos dos processos 1A "Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos", 1B "Viabilizar a expansão e a implantação da infraestrutura da rede de base", 1D "Proteger as infraestruturas críticas da conectividade" e 3B "Fomentar aplicações e modelos de negócio inovadores".
+3.22.4. O art. 16, IV, dispõe que, preferencialmente, a obrigação de fazer deverá atender as necessidades previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental - PCS e no Plano Estrutural de Redes de Telecomunicações - PERT. Nessa seara, o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão está de acordo com os projetos do PERT ATUAL de "Projetos de conectividade para locais de relevante interesse público", mais especificamente o projeto 1 "Conectividade Educacional". De qualquer forma, a presente Tomada de Subsídio poderá resultar na inclusão no PERT de um projeto específico nesse sentido.
+Assim, não há dúvidas quanto à aderência da obrigação submetida a este Colegiado ao art. 16 do RASA.
+Do alinhamento da obrigação de fazer com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU) 
+Como bem consignou a Área Técnica nos itens 3.30 a 3.33 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), na Reunião nº 929, de 08/02/2024, nos termos do Acórdão nº 65, de 28/02/2024 (SEI nº 11578112) e com fulcro na Análise nº 4/2024/AF (SEI nº 11360149), este Conselho Diretor decidiu aprovar a alteração da Agenda Regulatória para o biênio 2023-2024, na forma da Resolução Interna nº 290, de 28/02/2024 (SEI nº 11578151), modificando, dentre outros aspectos, o item 10 da Agenda Regulatória 2023-2024. Dentre a alteração promovida, determinou-se que a conversão de multas pecuniárias em obrigações de fazer devem estar voltadas ao cumprimento de metas ESG, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), o que, igualmente, restou demonstrado no referido Informe.
+Do modelo de custos da obrigação de fazer 
+Para a delimitação da presente obrigação de fazer, foram solicitados subsídios à RNP, os quais foram encaminhados por meio dos e-mails (SEI nº 14963487 e nº 14890826).
+Entre os documentos encaminhados, consta o arquivo "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), anexo ao Contrato Master (SEI nº 14963517), com as especificações técnicas da conectividade que precisa ser fornecida por uma prestadora de serviços de telecomunicações para as instituições usuárias do sistema RNP. 
+Apresentou, ainda, (a) a relação das instituições de ensino superior que ainda não são atendidas pela RNP; (b) a relação completa dos Pontos de Presença (PoPs) da RNP; (c) um estudo detalhado dos custos médios do megabit (Mb/s) por região e média nacional, apurados a partir de contratos vigentes firmados pela própria RNP.
+Para se delimitar os custos da obrigação, foram estabelecidos três pilares principais:
+I - Circuito de Transporte: Contratação de capacidade de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto);
+II - Rede Móvel: Cobertura do campus das instituições de ensino;
+III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto).
+Com isso, o presente projeto de ODF consiste, precipuamente, na instalação e na manutenção de enlace ponto a ponto de conectividade entre os campi de instituições de ensino superior federal, estadual ou municipal e a rede da RNP (item I – Circuito de Transporte). Para as instituições situadas em regiões carentes de infraestrutura básica de conectividade, prevê-se, ainda, a possibilidade de instalação e de manutenção de backhaul de fibra óptica que permita o fechamento do circuito de transporte item III – Backhaul de fibra óptica).
+No que se refere à Rede Móvel (item II), o presente projeto visa subsidiar a Anatel com informações sobre áreas de sombra dos campi das instituições beneficiadas, para que, em momento futuro, se avalie a pertinência de implementação de rede móvel local. Logo, esta presente análise não versará sobre o item II, sem prejuízo de seu tratamento posteriormente.
+Assim, observado que (i) instituições de ensino localizadas em área urbana, em regra, prescindem da instalação de infraestrutura de backhaul; enquanto (ii) instituições de ensino em zona rural são mais propensas a depender desse tipo de instalação prévia, a Prestadora deverá apresentar, quanto a estas últimas, declaração formal de que inexiste, nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio. 
+Adicionalmente, deve ser observado que o somatório dos custos totais da execução dos projetos deve ser igual ou superior ao valor da sanção de multa aplicada neste caso concreto, com as correções monetárias e dedução, nos termos do Rasa.
+Conforme salientado no Informe da Área Técnica (SEI nº 14883767), quanto ao Item I - Circuito de Transporte, a precificação apresentada em relação aos custos envolvidos para o circuito de transporte ponto a ponto (entre a instituição de ensino e o PoP da RNP), disponibilizados na Planilha Valores ODF Conectividade IPES (SEI nº 14890893), considerou que a solução técnica deve estar orientada "à contratação de serviço de transporte de dados com capacidade de 1 Gbps”.
+Esta solução deve estar aderente às cláusulas contratuais de conectividade da RNP, conforme melhor detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767) e no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+Além disso, a ODF deve prever que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP nos modelos de contrato.
+A estratégia de dimensionamento da rede fundamenta-se na entrega padrão inicial de 1 Gbps por instituição, conforme diretriz técnica reportada pela RNP em reunião, o que assegura o atendimento imediato às demandas institucionais. Segundo o modelo operacional da RNP, a expansão dessa capacidade ocorre de forma otimizada mediante upgrades sob demanda, condicionados à prévia constatação técnica de saturação do circuito original.
+Os valores para contratação do circuito também derivam dos contratos vigentes da RNP, conforme apresentado no Anexo I (SEI nº 14890826) do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), cujos custos médios anuais por megabit (Mb/s), avaliados nacionalmente e segmentados por região (Centro-Oeste, Nordeste, Norte, Sudeste, Sul), servem de base para o presente planejamento.
+É importante destacar que a Anatel adotou, de forma integral, exatamente os mesmos valores de referência e requisitos técnicos de conectividade praticados pela RNP em seus certames. Tal adoção fundamenta-se na premissa de convergência metodológica desta ODF com a operação da rede da RNP. Justifica-se que os modelos de contratação da RNP representam o estado da arte em termos de definições técnicas e aderência às especificidades geográficas e operacionais do território brasileiro, servindo como o espelho ideal para a política pública de conectividade das instituições de ensino.
+Dessa forma, a utilização dos valores de referência da RNP assegura a eficiência econômica, pois os contratos da RNP incorporam ganhos de escala e condições de mercado diferenciadas, validados por uma ampla base de contratos capilarizada em todas as regiões do país. Portanto, a solução técnica alinhada aos referenciais praticados pela RNP garante a compatibilidade com o mercado de telecomunicações e o cumprimento dos princípios de eficiência na aplicação dos recursos públicos.
+Adicionalmente, considerou-se um custo para a implantação do serviço de conectividade (taxa de instalação), também estimado com base no histórico de contratos da RNP desde 2010, que observa que as taxas de instalação cobradas pelas operadoras de telecomunicações representam, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Com base nesse prazo e nos custos apurados, foi desenvolvida a planilha de cálculo anexa ao Informe 187/2025/PRUV/SPR (Anexo II - Valores de referência ODF para Conectividade em instituições públicas de ensino superior - SEI nº 14890893). Esta planilha sistematiza o cálculo dos custos totais do projeto e requer a seguinte customização para obter o cálculo final:
+ Acessar a aba "1B ENT TOTAL INSTITUIÇÕES";
+ Informar a quantidade exata de instituições a serem contempladas pela política pública de conectividade, por região;
+ O resultado final pode ser verificado na aba "CAPA".
+Já em relação ao "Item III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto)", "aplicam-se os custos de implantação de rede de transporte com tecnologia Dense Wavelength Division Multiplexing (DWDM), já previstos no instrumento da OdF, visando o atendimento a instituições de ensino localizadas em regiões remotas. A escolha por backhaul em fibra óptica com tecnologia DWDM, em detrimento de alternativas com limitações de desempenho, como micro-ondas e satélites, é fundamental pois garante a alta disponibilidade, a baixa latência e a elevada capacidade da rede, elementos cruciais para o cumprimento do SLA do circuito nos padrões RNP. A precificação considerou premissas relativas tanto à implantação completa da rede DWDM (abrangendo todos os equipamentos da solução DWDM, a rede externa de fibra óptica e a infraestrutura civil das estações) quanto à operação e manutenção dos ativos por um horizonte temporal de 3 (três) anos. Os valores e detalhamentos associados a estes custos estão dispostos no Informe nº 8/2023/CPAE/SCP (SEI nº 9663283), em seu anexo Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261)".
+Ainda quanto aos custos, destacou-se questão relevante acerca do período de manutenção da infraestrutura (Opex), contido no modelo de custo apresentado pela CPAE. A esse respeito, este Conselho Diretor tem entendido que a operadora sancionada não deve somente proceder à instalação da infraestrutura, mas mantê-la operacional e atendendo aos consumidores por um período mínimo de 3 (três) anos, de forma que a inclusão de custos operacionais para o cálculo de estimativa de obrigações de fazer já é questão pacificada no âmbito deste Colegiado.
+Assim, o presente projeto de ODF consiste na instalação e na manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), de modo que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519). A depender da infraestrutura de conectividade disponível para a instituição contemplada, o projeto prevê a instalação de backhaul de fibra óptica, com especial enfoque para instituições de ensino localizadas em regiões remotas.
+Dessa forma, além da comprovação de instalação e manutenção das infraestruturas, a Prestadora também deverá comprovar ter atendido aos parâmetros definidos no referido modelo de contrato (SEI nº 14963517 e 14963519).
+Por fim, quanto à seleção das instituições de ensino superior, pesquisa e extensão, a Prestadora deverá utilizar a versão atualizada da lista disponibilizada no documento SEI nº 14963393, a qual, conforme anteriormente explicitado, ainda sofrerá alteração, vez que estão em debate com a RNP a inclusão de novas unidades.
+Das considerações adicionais a serem observadas na aplicação da sanção de obrigação de fazer 
+Como bem colocado pela Área Técnica (itens 3.56 a 3.60 do Informe nº 187/2025/PRUV/SPR - SEI nº 14883767), o monitoramento da implementação de compromissos estabelecidos pela Anatel em troca de valores a serem arrecadados pelo Estado já suscitou preocupações expressas por órgãos de controle, por essa razão, as decisões de sanção de obrigação de fazer devem prever regras para o seu acompanhamento e verificação de seu cumprimento, de modo que o procedimento seja realizado com maior segurança jurídica para as partes envolvidas.
+Dos contornos da obrigação de fazer 
+Os itens 3.61 a 3.76 do Informe da Área Técnica (SEI nº 14883767) detalham a obrigação, seu acompanhamento, requisitos a serem observados, forma de comprovação e, ainda, a possibilidade de recomposição da sanção de obrigação de fazer e a aplicação de multa em caso de descumprimento.
+Destaca referido Informe que o art. 36-A do Rasa determina que as sanções de obrigações de fazer devem ser cumpridas nos prazos previstos na decisão que as aplica, rememorando que, no caso da obrigação de fazer aplicada em segunda instância, o §3º prevê que o infrator fará jus a um fator de redução de 5% (cinco por cento) sobre o valor correspondente à sanção aplicada em segunda instância, caso não se manifeste pela preferência pela sanção de multa.
+Tal fator de redução, contudo, será aplicado após a correção do valor da sanção de multa adotado como referência para a OdF, nos termos do art. 36-A, §6º, II, do Rasa. Nesse sentido, o valor será corrigido a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, até a data da publicação do Acórdão.
+Nos termos do art. 16-A, II, do RASA, acompanho sugestão da Área Técnica para conceder o prazo de 60 (sessenta) dias para que a Prestadora se manifeste. Nesse período, a prestadora deverá (a) apresentar o projeto técnico referente à obrigação de fazer ora aplicada, levando em conta o apontamento das unidades a serem contempladas, a partir da lista consolidada pela Anatel e considerando apenas as unidades ainda não contempladas em ODFs objeto de outros processos, a análise das diversas circunstâncias relacionadas à execução de projetos de infraestrutura, tais como a verificação da viabilidade de obtenção de licenças urbanísticas e ambientais, o levantamento de custos e o dimensionamento técnico dos projetos, ou (b) optar formalmente pela conversão da OdF em multa, abrindo mão do percentual de desconto previsto no Rasa.
+No caso da apresentação do projeto técnico da sanção imposta, nos termos do art. 16-A, §2º, do Rasa, até a validação da manifestação do infrator no prazo estabelecido no item acima, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento. A Anatel deverá validar o cumprimento dos requisitos e prazos estabelecidos para a seleção de localidades.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.109.1 a 4.109.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Ainda que não tenha sido objeto das considerações encaminhadas pela área técnica, entendo necessário se garantir a diversidade regional.
+Dessa forma, no caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas, podendo , da quarta em diante, a Prestadora adotar o critério que preferir.
+Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas. Da quarta em diante, a Prestadora poderá adotar o critério que preferir.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos nesta decisão não foram adequadamente obedecidos para todas as instituições selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor equivalente às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+Essa previsão está alinhada com a recomendação da Controladoria-Geral da União - CGU contida no "Relatório de Auditoria SAAI - Manifestação da CGU" (SEI nº 8945272), de 10 de agosto de 2022, para os casos de compromissos de backhaul. Confira-se:
+"Recomendação nº 2: Resolver os casos de sobreposição indicados no Anexo I deste Relatório de Auditoria, notadamente sobre as sobreposições dos compromissos de backhaul do Edital do 5G com as demais ações regulatórias e políticas públicas."
+Embora sejam tomadas todas as precauções necessárias para evitar a sobreposição de investimentos de origem pública, em infraestrutura de telecomunicações instalada com uma mesma finalidade, essa última medida se coloca como uma possibilidade de contornar eventuais sobreposições que venham a se verificar durante o acompanhamento do provimento da conectividade, priorizando-se a seleção de nova(s) instituição(ções) substitutiva(s) para o cumprimento da sanção de obrigação de fazer, ou, nessa impossibilidade por questões relacionadas ao prazo para cumprimento - resolvendo-se a questão mediante aplicação de sanção pecuniária.
+A multa aplicada deve ter sua exigibilidade suspensa quando a Anatel realizar a validação da manifestação da prestadora com o deferimento das localidades e, somente após o integral cumprimento da sanção de obrigação de fazer e o respectivo atesto pela autoridade competente, a multa deverá ser cancelada nos sistemas de crédito da Agência, conforme prevê o art. 36-A, §7º, do Rasa.
+Outra questão que perpassa pelo acompanhamento da sanção de obrigação de fazer diz respeito ao seu descumprimento. Nesta hipótese, uma vez atestado o não cumprimento da sanção de obrigação de fazer e não fazer, haverá o trâmite para a cobrança da multa, seja proporcional ou integral a depender se o descumprimento foi parcial ou total.
+No caso de descumprimento, a multa será calculada com base no valor descrito na decisão que estabeleceu a sanção de obrigação de fazer, atualizado por meio da Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-la, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer.
+A Agência poderá solicitar a apresentação de documentos complementares ou determinar a realização de inspeção durante o prazo de cumprimento e manutenção da obrigação assumida pela Prestadora.
+Da conclusão quanto à obrigação de fazer 
+Em conclusão, voto por:
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP, tendo como base o valor de R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil oitocentos e cinco reais e noventa e seis centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado (i) no prazo de 6 (seis) meses a partir validação da manifestação da Prestadora pela Anatel, e mantido pelo período de 3 (três) anos; ou (ii) no prazo de 1 (um) ano, nos casos em que o enlace tenha que ser complementado com a instalação de backhaul de fibra ótica, e mantido pelo período de 2,5 (dois e meio) anos.
+O somatório do custo relativo à instalação da infraestrutura e o período de sua manutenção deve ser igual ou superior ao valor da multa aplicada, considerando as correções monetárias nos termos do RASA e a precificação apresentada no item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão" do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767).
+O cumprimento da sanção de obrigação de fazer deverá ter por objeto levar conectividade às universidades públicas (federais, estaduais e municipais) e institutos federais.
+No caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas. Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas.
+Para fins de atendimento do disposto no item anterior, atendidas três macrorregiões ou unidades da federação distintas, conforme o caso, a Prestadora, em ainda havendo saldo, poderá escolher livremente as demais instituições que irá atender, entre aquelas constantes da lista.
+Para a instalação de backhaul de fibra óptica, a infraestrutura a ser instalada em cada instituição de ensino deverá possuir capacidade mínima de 10 Gbps (dez gigabits por segundo), do início ao ﬁm do trecho utilizado para atendimento da respectiva instituição de ensino. Além disso, nos projetos que envolverem Capex, a prestadora fica obrigada a disponibilizar o acesso à infraestrutura a partir da data de sua entrada em operação, nos termos da regulamentação específica, às demais prestadoras autorizadas de serviços de telecomunicações de interesse coletivo.
+O provimento da conectividade deve englobar a instalação e a manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), observando-se os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+A Prestadora deve selecionar as unidades das universidades públicas e institutos federais entre aquelas indicadas na lista constante da versão atualizada do documento SEI nº 14963393 , observadas as condições anteriormente expostas.
+Após a seleção das instituições de ensino, os custos associados aos projetos devem ser calculados de acordo com o item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão", detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), devendo-se observar quanto à aplicação de desconto o disposto no art. 36-A, §3º, do Rasa, bem como:
+Para o Circuito de Transporte, a Planilha Valores ODF Conectividade IPES (SEI nº 14890893); e
+Para o Backhaul de fibra óptica, a Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261).
+Nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, será aplicado o desconto de 5% (cinco por cento) previsto no Rasa.
+No prazo de 60 (sessenta dias), a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no Rasa, ou deverá, no mesmo prazo (i) apresentar projeto técnico da obrigação de fazer nos termos delimitados na presente Análise e no Informe 187/2025/PRUV/SPR (SEI nº 14883767); (ii) informar as instituições selecionadas para o cumprimento da sanção, nos termos estabelecidos nos itens 4.144.1 a 4.144.7.; e iii) no caso de instalação de backhaul de fibra óptica, apresentar declaração formal de que inexiste nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio.
+Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento.
+A Prestadora não adquire direito à lista de instituições públicas de ensino superior disponíveis para instalação de infraestrutura, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da Prestadora deve recair sobre as instituições públicas de ensino superior disponíveis na data em que ela comunicar à Anatel que cumprirá a sanção de obrigação de fazer.
+Eventuais conflitos decorrentes da seleção de instituições públicas de ensino superior pela operadora para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações.
+Uma vez formalizada junto à Anatel a seleção de instituições públicas de ensino superior realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal justificada à Superintendência de Controle de Obrigações, cabendo à autoridade competente decidir sobre a questão.
+A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão para seleção de instituições de ensino e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos.
+A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer ensejará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as instituições de ensino selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições de ensino, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+A instalação da infraestrutura, observados os requisitos previstos no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), deverá ser comprovada à Anatel em até 30 (trinta) dias após o exaurimento dos prazos previstos no item 4.144.1., e não poderá decorrer de acordos de RAN sharing, swap, aluguel de redes, contratos de exploração industrial ou outros meios contratuais. Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Quanto ao circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto):
+a comprovação da sua instalação deverá ser realizada, minimamente, mediante a apresentação: i) das configurações utilizadas nos equipamentos; ii) de relatórios de tráfego gerado nos equipamentos das instituições, relativos a um período mínimo de 15 (quinze) dias posteriormente à data de sua ativação; iii) de formulário e declaração do diretor ou responsável administrativo da instituição de ensino certificando que todos os requisitos foram cumpridos; iv) de formulário e declaração do responsável administrativo da Rede Nacional de Ensino e Pesquisa - RNP certificando que todos os requisitos foram cumpridos. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel, minimamente, relatórios de tráfego gerados dos equipamentos de todas as instituições de ensino atendidas em decorrência da presente decisão, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção das instituições, ou correspondentes a período posterior à data de término da obrigação, sob pena de sua conversão em multa. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+No caso da infraestrutura ser provida por meio de backhaul de fibra óptica:
+a comprovação da instalação da infraestrutura deverá ser realizada, minimamente, mediante a apresentação: de: i) as-built do projeto técnico implementado; ii) tela do sistema de gerência da prestadora, destacando o circuito físico entre os municípios de origem e destino da fibra, bem como sua capacidade; iii) tela do sistema de gerência da prestadora, destacando link lógico entre os municípios de origem e destino da fibra, bem como sua capacidade. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel e em avaliação com a prestadora; e
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel relatórios de tráfego indubitavelmente cursado nas redes instaladas, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção, ou correspondentes a período posterior à data de término da obrigação. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel.
+Os prazos de manutenção da conectividade em cada instituição de ensino são contados das datas de suas respectivas ativações. Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, aplica-se sanção de multa, em valor proporcional às estimativas de custos dos projetos das instituições de ensino em que não houver comprovação suficiente e tempestiva.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.144.1 a 4.144.8, detalhados no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, novamente acrescidos o desconto previsto no art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção.
+Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A.
+No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa.
+Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+A Agenda 2030 da Organização das Nações Unidas - ONU constitui um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 (cento e noventa e três) Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+Tal Agenda é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável - ODS e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por:
+conhecer e negar provimento ao Recurso;
+conhecer da petição SEI nº 14941569, em observância ao direito de petição, nos termos da Súmula nº 21/2017 da Anatel, e indeferir os pedidos nela contidos; 
+reformar, de ofício, o valor da multa ora aplicada de R$ 6.351.341,44 (seis milhões, trezentos e cinquenta e um mil, trezentos e quarenta e um reais e quarenta e quatro centavos) para R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil oitocentos e cinco reais e noventa e seis centavos), em razão da: (i) correção no valor da ROL utilizada para o cálculo da multa relativa aos descumprimentos praticados pela Tim Celular S.A, (ii) necessidade de corrigir os valores das multas aplicadas para respeitar os valores mínimos do Rasa, quanto à individualização da infração por CN; e (iii) necessidade de refazer as pesquisas de antecedentes para as duas empresas envolvidas neste Pado;
+aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da RNP, nos termos aqui descritos, tendo como base o valor de R$ 6.383.805,96 (seis milhões, trezentos e oitenta e três mil oitocentos e cinco reais e noventa e seis centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado nos termos expostos no item 4.143 da presente Análise;
+conceder o prazo de 60 (sessenta dias), a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14399818 e o código CRC 6689D29F.
+ | 
+Referência: Processo nº 53500.002785/2020-32 | 
+SEI nº 14399818 |

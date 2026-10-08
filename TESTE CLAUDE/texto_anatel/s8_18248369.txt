@@ -1,0 +1,44 @@
+SEI/ANATEL - 16271406 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 48
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 249, de 11 de setembro de 2026
+Processo nº 53500.080007/2017-89
+Recorrente/Interessado: DIRECTNET PRESTAÇÃO DE SERVIÇOS LTDA.
+CNPJ nº 04.091.513/0001-06
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por DIRECTNET PRESTAÇÃO DE SERVIÇOS LTDA. contra decisão da Superintendência de Controle de Obrigações - SCO que reconheceu a procedência dos lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2016, e da multa de ofício incidente sobre a diferença não declarada.
+2. Fatos relevantes. A fiscalização apurou recolhimento a menor do Fust no exercício de 2016. A Notificação de Lançamento foi emitida em 26 de junho de 2019. A Recorrente alegou decadência, prescrição intercorrente, duração excessiva do processo, desproporcionalidade da multa de ofício, arbitramento indevido da base de cálculo, inclusão indevida de receitas de interconexão e de Exploração Industrial de Linha Dedicada - EILD, ausência de clareza na dedução do Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS, indeferimento de perícia e nulidade da notificação de lançamento.
+3. A decisão recorrida. A Superintendência de Controle de Obrigações - SCO reconheceu a procedência do lançamento principal e da multa de ofício. O Conselho Diretor apreciou o Recurso voluntário.
+II. QUESTÃO EM DISCUSSÃO
+Há sete questões em discussão: (i) saber se houve decadência do direito de constituir o crédito tributário; (ii) saber se houve prescrição intercorrente no Processo Administrativo Fiscal - PAF; (iii) saber se a duração do processo administrativo gerou nulidade; (iv) saber se é cabível a multa de ofício aplicada; (v) saber se houve arbitramento indevido da base de cálculo, com inclusão indevida de receitas de interconexão e de EILD; (vi) saber se a metodologia de dedução do ICMS e a ausência de perícia comprometem a validade do lançamento; e (vii) saber se a notificação de lançamento é nula por ausência de fundamentação legal. 
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Houve tempestividade, interesse recursal, legitimidade e ausência de contrariedade a súmula da Agência.
+2. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel. O caso não se enquadrou nas hipóteses da Portaria nº 642/2013 e não atingiu o valor de alçada indicado no Parecer nº 00161/2026/PFE-ANATEL/PGF/AGU.
+3. Não houve decadência. O crédito tributário referente ao exercício de 2016 foi constituído em 2019, antes do transcurso do prazo quinquenal.
+4. Não houve prescrição intercorrente. A Lei nº 9.873/1999 não se aplica a processos e procedimentos de natureza tributária. A Súmula Anatel nº 26 e a Súmula Conselho Administrativo de Recursos Fiscais - CARF nº 11 afastam a prescrição intercorrente no processo administrativo fiscal.
+5. A alegação de duração excessiva do processo não conduz à nulidade. A Recorrente não demonstrou prejuízo concreto ao contraditório ou à ampla defesa.
+6. A multa de ofício é cabível. O art. 44, I, da Lei nº 9.430/1996 prevê multa de 75% (setenta e cinco por cento) nos casos de falta de pagamento, falta de declaração ou declaração inexata. Houve recolhimento inferior ao valor efetivamente devido ao Fust em 2016.
+7. Não houve arbitramento indevido da base de cálculo. As receitas de interconexão integram a base de cálculo do Fust. A exclusão dessas receitas contraria a Súmula Anatel nº 7/2005.
+8. A alegação sobre EILD não foi acolhida. A análise técnica e o Relatório de Fiscalização foram considerados suficientes para manter os valores lançados.
+9. Não houve aplicação de média de alíquotas de ICMS. A fiscalização deduziu o ICMS com base nos valores debitados nos balancetes mensais, na conta contábil “31102004 - ICMS S SERVIÇO”.
+10. Não houve indeferimento de perícia em termos absolutos. A Recorrente requereu perícia apenas se o órgão julgador entendesse necessária sua realização. A instrução foi considerada suficiente sem diligências adicionais.
+11. A notificação de lançamento não é nula. O ato atendeu aos requisitos do art. 11 do Decreto nº 70.235/1972, com qualificação da devedora, indicação do valor do crédito, prazo para recolhimento ou impugnação, fundamento legal da cobrança e identificação do servidor responsável.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido.
+Tese de julgamento: "1. É tempestiva a constituição do crédito tributário do Fust referente ao exercício de 2016 quando a notificação de lançamento é emitida em 2019, dentro do prazo decadencial. 2. Não se aplica a prescrição intercorrente ao processo administrativo fiscal. 3. A mera duração do processo administrativo não gera nulidade sem demonstração de prejuízo concreto. 4. É cabível a multa de ofício do art. 44, I, da Lei nº 9.430/1996 quando há recolhimento a menor ou declaração inexata da contribuição ao Fust. 5. As receitas de interconexão integram a base de cálculo do Fust. 6. A dedução do ICMS é regular quando realizada com base nos valores constantes dos balancetes apresentados pela própria Prestadora. 7. Não é nula a notificação de lançamento que observa os requisitos formais do art. 11 do Decreto nº 70.235/1972."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, arts. 150, § 4º, 151, III, 173, I, e 149; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.430/1996, art. 44, I; Lei nº 9.873/1999, art. 5º; Lei nº 10.871/2004, art. 23; Decreto nº 70.235/1972, arts. 11, 15 e 34, I; Resolução nº 612/2013, art. 72; Resolução Interna Anatel nº 338/2024, art. 1º; e Portaria nº 642/2013, art. 5º, IV.
+Jurisprudência relevante citada: Anatel, Súmula nº 7, de 15.12.2005; Anatel, Súmula nº 26, de 26.07.2024; CARF, Súmula nº 11; Anatel, Conselho Diretor, Acórdão nº 62, de 19.03.2025, Rel. Daniel Martins D Albuquerque, Reunião nº 941, de 13.03.2025; Anatel, Conselho Diretor, Acórdão nº 353, de 12.12.2024, Rel. Alexandre Reis Siqueira Freire, Reunião nº 939, de 05.12.2024; Anatel, Conselho Diretor, Acórdão nº 91, de 26.04.2023, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 921, de 13.04.2023; Anatel, Conselho Diretor, Acórdão nº 301, de 10.11.2025, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 948, de 04.11.2025; Anatel, Conselho Diretor, Acórdão nº 63, de 15.03.2022, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 910, de 10.03.2022.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 72/2026/EH (SEI nº 16136686), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 15/09/2026, às 16:40, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16271406 e o código CRC 5BF87A6E.
+ | 
+Referência: Processo nº 53500.080007/2017-89 | 
+SEI nº 16271406 |

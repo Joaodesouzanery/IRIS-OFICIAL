@@ -1,0 +1,41 @@
+SEI/ANATEL - 15504264 - Acórdão
+Boletim de Serviço Eletrônico em 22/04/2026
+DOU de 22/04/2026, seção 1, página 12
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 99, de 16 de abril de 2026
+Processo nº 53500.012875/2026-27
+Recorrente/Interessado: ASSOCIAÇÃO NACIONAL DAS OPERADORAS CELULARES - ACEL
+CNPJ nº 03.059.449/0001-13
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 102, de 16 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. PEDIDO DE RECONSIDERAÇÃO. TRANSFERÊNCIA DE AUTORIZAÇÃO DE DIREITO DE USO DE RADIOFREQUÊNCIAS ASSOCIADAS AO SERVIÇO MÓVEL PESSOAL - SMP. PEDIDO NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Pedido. Pedido de Reconsideração apresentado pela ASSOCIAÇÃO NACIONAL DAS OPERADORAS CELULARES - ACEL contra o Acórdão nº 89, de 7 de abril de 2026, que anuiu à transferência, com condicionantes, do direito de uso de radiofrequências outorgado por meio do Termo de Autorização nº 92/2021, de LIGGA TELECOMUNICAÇÕES S.A. para UNIFIQUE TELECOMUNICAÇÕES S.A..
+2. Fato relevante. Após o Acórdão nº 89/2026, a UNIFIQUE apresentou garantia de execução dos compromissos de abrangência, nova declaração de sub-rogação nos direitos e obrigações assumidos pela LIGGA e comprovantes de pagamento do Preço Público devido pela transferência.
+3. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO e a Superintendência de Competição - SCP atestaram o cumprimento das condicionantes sob sua competência. Em seguida, foi editado o Ato nº 5.122/2026, que formalizou a transferência. O Pedido de Efeito Suspensivo formulado pela Requerente foi indeferido pelo Despacho Decisório nº 22/2026/PR.
+4. Os Pedidos da Requerente. A ACEL requereu a disponibilização de versões públicas de documentos que embasaram a decisão recorrida, a reabertura de prazo para complementação das razões recursais e, no mérito, a reforma do Acórdão nº 89/2026 ou, subsidiariamente, que a anuência somente produzisse efeitos após o cumprimento integral dos compromissos previstos no Capítulo X do Termo de Autorização nº 92/2021.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o Pedido de Reconsideração é admissível; (ii) saber se a transferência autorizada violou a cláusula 7.1 do Termo de Autorização nº 92/2021 e se está em conflito com o Esclarecimento nº 179 do Edital nº 1/2021-SOR/SPR/CD-ANATEL; e (iii) saber se a disponibilização de versões públicas dos documentos justifica a concessão de prazo para a complementação do presente Pedido de Reconsideração.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Reconsideração é admissível. O Recurso foi interposto tempestivamente. A decisão impugnada foi proferida em instância única pelo Conselho Diretor. A Peça foi subscrita por parte legitimada. Há interesse recursal. O Pedido não contraria Súmula da Agência.
+2. A cláusula 7.1 do Termo de Autorização nº 92/2021 deve ser interpretada em consonância com a Lei Geral de Telecomunicações - LGT e com a natureza sucessiva das obrigações assumidas no Capítulo X do instrumento. O requisito de cumprimento integral previsto na cláusula 7.1 refere-se às obrigações vencidas no momento da transferência. Ele não impede a transferência enquanto existirem obrigações futuras ainda não exigíveis.
+3. A declaração de sub-rogação apresentada pela UNIFIQUE e a garantia de execução juntada aos autos afastam o alegado óbice à transferência.
+4. Não houve conflito entre a decisão recorrida e o Esclarecimento nº 179 do Edital nº 1/2021-SOR/SPR/CD-ANATEL. A resposta da Comissão Especial de Licitação - CEL é coerente com a interpretação de que o cumprimento integral se refere às obrigações já exigíveis. Não está correto o entendimento de que "é permitida a transferência antes do cumprimento integral dos compromissos", já que tal operação não é admitida quando há obrigações já vencidas. Por essa razão, não há menção à possibilidade de transferência condicionada à assunção de tais obrigações.
+5. Foram liberados no Sistema Eletrônico de Informações - SEI os documentos indicados pela Requerente. O acesso a esses documentos não altera os fundamentos da decisão recorrida. Não houve qualquer prejuízo à defesa, de forma que não se justifica a concessão do prazo adicional requerido.
+6. A decisão recorrida também guarda pertinência com o Objetivo de Desenvolvimento Sustentável - ODS 16 da Agenda 2030, ao reforçar processos decisórios regulatórios responsáveis, transparentes e inclusivos.
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração conhecido e não provido.
+Tese de julgamento: "1. É admissível o pedido de reconsideração interposto tempestivamente contra decisão proferida em instância única pelo Conselho Diretor, quando presentes legitimidade, interesse recursal e ausência de afronta à Súmula da Agência. 2. A cláusula 7.1 do Termo de Autorização nº 92/2021 deve ser interpretada no sentido de que o cumprimento integral exigido para a transferência da autorização de uso de radiofrequências alcança as obrigações vencidas, sem impedir a sub-rogação da sucessora nas obrigações vincendas. 3. A transferência autorizada não viola o Esclarecimento nº 179 do Edital nº 1/2021-SOR/SPR/CD-ANATEL, desde que assegurados o cumprimento das obrigações exigíveis, a sub-rogação da sucessora e a apresentação das garantias cabíveis. 4. A disponibilização de versões públicas dos documentos que subsidiaram a decisão recorrida não altera a conclusão pelo não provimento do pedido de reconsideração."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 2º, 127 e 163; Decreto nº 10.402/2020, art. 11; Resolução nº 612/2013, arts. 115 e 126, § 2º; Termo de Autorização nº 92/2021, cláusula 7.1; Decreto nº 11.704/2023.
+Jurisprudência relevante citada: Anatel, Acórdão nº 89, de 07.04.2026; Anatel, Ato nº 5.122, de 09.04.2026; Anatel, Despacho Decisório nº 22/2026/PR; Anatel, Ato nº 5.024, de 08.04.2026; Anatel, Ato nº 5.019, de 08.04.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 37/2026/NP (SEI nº 15490335), integrante deste acórdão, conhecer do Pedido de Reconsideração para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 16/04/2026, às 21:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15504264 e o código CRC D283CEF5.
+ | 
+Referência: Processo nº 53500.012875/2026-27 | 
+SEI nº 15504264 |

@@ -1,0 +1,75 @@
+SEI/ANATEL - 15252459 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 43, de 01 de março de 2026
+Processo nº 53500.052227/2019-84
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESAGLUTINAÇÃO DE INFRAÇÕES DO ART. 64 DO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. PROVIMENTO PARCIAL. APLICAÇÃO DA SANÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por CLARO S.A. contra o Despacho Decisório nº 131/2023/CODI/SCO, que aplicou advertência e multa por infrações ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632/2014.
+2. Fato relevante. O Despacho imputou multa de R$ 27.902.524,74 (vinte e sete mil, novecentos e dois reais e setenta e quatro centavos) e advertência por descumprimentos ao RGC.
+3. As decisões anteriores. Relator propôs provimento parcial para revisar classificação de infrações, desaglutinar condutas e retificar valor da sanção. Conselheiro Vistor suscitou divergência sobre tipificação das condutas no caput e no parágrafo único do art. 64 do RGC.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se o caput e o parágrafo único do art. 64 do RGC configuram infrações distintas.
+III. RAZÕES DE DECIDIR
+1. O caput do art. 64 veda a cobrança de valores não decorrentes de prestação de serviços de telecomunicações sem autorização prévia do consumidor.
+2. O parágrafo único do art. 64 impõe à Prestadora o ônus de provar a autorização emitida pelo consumidor.
+3. As condutas previstas no caput e no parágrafo único são distintas e sujeitas a penalidades independentes.
+4. A desaglutinação atende aos critérios de personalização da penalidade e de clareza na responsabilização.
+5. A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para universidades públicas e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e parcialmente provido.
+Tese de julgamento: "1. O caput e o parágrafo único do art. 64 do RGC configuram infrações distintas. 2. Deve-se desaglutinar as condutas para individualizar a penalidade e a responsabilização. 3. É possível a aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para universidades públicas e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção."
+Dispositivos relevantes citados: Resolução nº 632/2014, art. 64, caput e parágrafo único.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel:
+a) conhecer e do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, unicamente para:
+a.1) rever a classificação da infração ao art. 62 do RGC, de procedimental para pontual, em relação a 2 (dois) usuários do Serviço Móvel Pessoal - SMP, sendo uma irregularidade identificada em Pernambuco e outra no Estado do Rio de Janeiro;
+a.2) descaracterizar a infração ao art. 68, inciso I, do RGC, em relação ao atendimento de usuários do SMP, no call center da Prestadora, mantendo-a para o atendimento presencial, tal como levado a efeito pela Área Técnica; e,
+a.3) ponderar as multas calculadas para o art. 68, inciso II, tanto no âmbito do SMP como do Serviço Telefônico Fico Comutado - STFC, em 50% (cinquenta por cento);
+b) conhecer da petição extemporânea SEI nº 14108682, protocolizada em 30 de julho de 2025, para, no mérito, indeferi-la;
+c) efetuar, de ofício, os seguintes ajustes:
+c.1) desaglutinar os descumprimentos ao caput e parágrafo único do art. 64, por serem condutas independentes entre si, e:
+c.1.1) em relação à infração ao art. 64, caput c/c art. 3º, inciso XX, do RGC:
+c.1.1.1) considerar a infração para o SMP pontual, afetando a 34 (trinta e quatro) usuários no Estado de Sergipe; e,
+c.1.1.2) manter a infração como grave, no entanto, com fundamento apenas no inciso I do § 3º do art. 9º do Regulamento de Aplicação de Sanções Administrativas - RASA; e,
+c.1.2) em relação ao parágrafo único do art. 64 do RGC:
+c.1.2.1) considerar a infração sistêmica para o SMP no Estado de Sergipe;
+c.1.2.2) classificar como grave, com fundamento no inciso IV do § 3º do art. 9º do RASA; e,
+c.1.2.3) atenuar a pena em 70% (setenta por cento), com fundamento no inciso II do art. 20 do RASA;
+c.2) alterar a classificação da infração ao art. 68, inciso I, do RGC, referente ao SMP, de sistêmica para pontual, em relação às 15 (quinze) lojas irregulares;
+c.3) reenquadrar a infração tipificada no art. 81, caput, do RGC para o art. 70 do Regulamento do Serviço Móvel Pessoal - RSMP, mantendo os demais parâmetros aplicados para o cálculo da multa;
+c.4) rever a classificação quanto à gravidade das seguintes infrações:
+c.4.1) SMP:
+c.4.1.1) art. 62 do RGC: de grave para leve;
+c.4.1.2) art. 64, caput c/c art. 3º, inciso XX, do RGC: grave, no entanto, apenas com fundamento no art. 9º, § 3º, inciso I, do RASA;
+c.4.1.3) art. 64, parágrafo único: desaglutinada da infração ao caput e classificada como grave, com fundamento no art. 9º, § 3º, inciso IV, do RASA;
+c.4.1.4) art. 68, inciso I, do RGC: grave, com fundamento no art. 9º, § 3º, inciso IV, do RASA;
+c.4.1.5) art. 68, inciso II, do RGC: média, com fundamento no art. 9º, § 2º, inciso II; e,
+c.4.1.6) art. 69 do RGC: advertência em relação ao SMP; e,
+c.4.2) STFC:
+c.4.2.1) art. 68, inciso II, do RGC: grave, com fundamento apenas no art. 9º, § 3º, inciso IV, do RGC; e,
+c.5) afastar o agravamento da pena em 10% (dez por cento), fundamentado no art. 19, inciso III, do RASA, em relação aos seguintes descumprimentos:
+c.5.1) art. 68, inciso I, do RGC, por ser a infração grave com fundamento apenas no inciso IV do § 3º do art. 9º do RASA;
+c.5.2) art. 64, caput c/c art. 3º, inciso XX, do RGC, por ser grave com fundamento apenas no inciso IV do § 3º do art. 9º do RASA; e,
+c.5.3) art. 64, parágrafo único, do RGC, por ser grave com fundamento apenas no inciso I do § 3º do art. 9º do RASA;
+d) como resultado das medidas descritas nas alíneas "a" e "c", rever a decisão consubstanciada no Despacho Decisório nº 11/2020/CODI/SCO (SEI nº 5164735), de 17 de setembro de 2020, a fim de retificar a sanção pecuniária de R$ 27.902.524,74 (vinte e sete milhões, novecentos e dois mil, quinhentos e vinte e quatro reais e setenta e quatro centavos) para R$ 8.671.320,49 (oito milhões, seiscentos e setenta e um mil, trezentos e vinte reais e quarenta e nove centavos);
+e) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos no Voto nº 6/2025/OP (SEI nº 14733733), tendo como base o valor de R$ 8.671.320,49 (oito milhões, seiscentos e setenta e um mil, trezentos e vinte reais e quarenta e nove centavos), com as correções monetárias e dedução, nos termos do RASA, a ser implementado nos termos expostos no item 4.73 do referido voto; e,
+f) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comunique à Agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Em relação às alíneas "a", "b" e "c.2" a "c.5", a decisão foi por unanimidade, nos termos propostos pelo Conselheiro Vicente Bandeira de Aquino Neto, Relator, por meio da Análise nº 64/2025/VA (SEI nº 13672845), integrante deste acórdão.
+Quanto às alíneas "c.1" e "d", a decisão foi por maioria de três votos, nos termos propostos pelo Conselheiro Vicente Bandeira de Aquino Neto, Relator, por meio da Análise nº 64/2025/VA (SEI nº 13672845), com a alteração proposta por meio da Análise nº 113/2025/VA (SEI nº 14674205), também integrante deste acórdão. Votaram vencidos nestes pontos o Conselheiro Edson Victor Eugênio de Holanda, que manteve seu posicionamento contido no Voto nº 4/2025/EH (SEI nº 14612983), de igual modo integrante deste acórdão, e o Presidente Carlos Manuel Baigorri, que o acompanhou.
+Com relação às propostas de aplicar a sanção de obrigação de fazer e de concessão do prazo de 60 (sessenta) dias para que a Prestadora comunique as unidades a serem conectadas, contidas no Voto nº 6/2025/OP (SEI nº 14733733), igualmente integrante deste acórdão, a decisão foi por unanimidade dos votantes, considerando que o ex-Conselheiro Vicente Bandeira de Aquino Neto não pôde se manifestar, em decorrência do término do seu mandato.
+A Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia não proferiu voto manifestando seu entendimento, nos termos do § 2º do art. 5º do Regimento Interno da Anatel, por suceder o ex-Conselheiro Vicente Bandeira de Aquino Neto, Relator.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, o ex-Conselheiro Vicente Bandeira de Aquino Neto, Relator, e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Presentes o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15252459 e o código CRC 7CD95B85.
+ | 
+Referência: Processo nº 53500.052227/2019-84 | 
+SEI nº 15252459 |

@@ -1,0 +1,539 @@
+SEI/ANATEL - 15196033 - Análise
+Boletim de Serviço Eletrônico em 07/05/2026
+Análise nº 15/2026/OP
+Processo nº 53500.005408/2019-11
+Interessado: CLARO S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo com pedido de efeito suspensivo interposto por Claro S.A. (Claro), CNPJ nº 40.432.544/0001-47, prestadora do Serviço de Comunicação Multimídia (SCM), em face do Despacho Decisório nº 79/2023/CODI/SCO (SEI nº 10004423), de 9 de maio de 2023, que lhe aplicou sanção de multa em razão do descumprimento a dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 2014.
+EMENTA
+DIREITO ADMINISTRATIVO SANCIONADOR. RECURSO ADMINISTRATIVO. SCM. DESCUMPRIMENTO DO RGC. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso administrativo com pedido de efeito suspensivo interposto por Claro S.A. contra despacho decisório que aplicou multa de R$ 30.868.788,47 por descumprimento dos arts. 26, § 2º, 50, I, c/c 57, § 3º, II, 57, § 3º, IV, 57, §§ 1º, 2º e 4º, e 58, caput e parágrafo único, do RGC.
+2. Fato relevante. A fiscalização apurou irregularidades relacionadas a contrato de permanência, prazo de fidelização, ausência de contrato de permanência firmado, impossibilidade de contratação sem fidelização, cobrança de multa desproporcional, cobrança de multa por descumprimento imputável à prestadora e não armazenamento de gravações.
+3. As decisões anteriores. A decisão de primeira instância aplicou multa. Em análise recursal, a área técnica sugeriu revisão parcial do valor. O feito foi encaminhado ao Conselho Diretor para julgamento de mérito.
+II. QUESTÃO EM DISCUSSÃO
+4. Há duas questões em discussão: (i) saber se houve nulidade processual por ausência de nova notificação para alegações finais após a elaboração do informe técnico que subsidiou a decisão de primeira instância; e saber se (ii) devem ser mantidas ou revistas a tipificação, a classificação e o cálculo das infrações apuradas, bem como se é cabível a substituição da multa por sanção de obrigação de fazer.
+III. RAZÕES DE DECIDIR
+5. Não há nulidade processual. O informe técnico que subsidia a decisão constitui documento preparatório. A legislação não exige nova manifestação da prestadora entre o encerramento da instrução e a prolação da decisão.
+6. O recurso é admissível. Estão presentes os requisitos de cabimento, tempestividade, legitimidade e interesse recursal.
+7. A infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC deve ser mantida. No caso concreto, as condutas podem ser tratadas de forma combinada, pois a fiscalização examinou gravações e contratos de permanência e constatou ausência das informações exigidas.
+8. A classificação sistêmica da infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC deve ser afastada. Os achados em lojas presenciais indicaram regularidade em parte dos casos. Isso afasta a conclusão de descumprimento integral e generalizado.
+9. É cabível aplicar o percentual de descumprimento da obrigação na infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC.
+10. A infração ao art. 57, § 1º, do RGC não é sistêmica. O contrato padrão e os planos juntados aos autos indicam prazo de permanência de 12 meses para pessoas físicas.
+11. A infração ao art. 57, § 1º, do RGC subsiste em caráter pontual. A prestadora não apresentou os contratos solicitados em 20 atendimentos. Além disso, a fiscalização identificou 3 casos no Focus em que a fidelização superou 12 meses.
+12. A infração ao art. 57, § 2º, do RGC deve ser mantida. A prestadora não apresentou contratos de permanência assinados e datados nos casos analisados.
+13. A classificação sistêmica da infração ao art. 57, § 2º, do RGC deve ser afastada. As diligências em lojas presenciais registraram entrega de contrato de permanência em parte relevante dos casos. Isso impede concluir pela generalização da conduta.
+14. A infração ao art. 57, § 4º, do RGC permanece sistêmica. A contratação pela internet não permitia adesão sem fidelização. Nas gravações, a possibilidade de contratação sem fidelização não era informada espontaneamente. Nas lojas, a cobrança de taxa tornava economicamente inviável a escolha sem permanência mínima.
+15. As demais infrações devem ser mantidas. Não houve impugnação específica apta a afastar os fundamentos adotados na decisão recorrida.
+16. O valor total da multa deve ser reduzido para R$ 7.681.089,56, em razão da reclassificação das infrações dos arts. 50, I, c/c 57, § 3º, II e IV, 57, § 1º e 57, § 2º, do RGC, e da aplicação do percentual de descumprimento na primeira delas.
+17. É cabível aplicar sanção de obrigação de fazer em substituição à sanção pecuniária, com fundamento na conveniência e oportunidade administrativas e no interesse público.
+18. A obrigação de fazer consistente em prover conectividade ponto a ponto para conexão de instituições públicas de ensino superior e institutos federais à rede da RNP atende aos requisitos do art. 16 do Rasa. A medida promove política pública de conectividade e é compatível com os objetivos estratégicos da Agência.
+19. A obrigação de fazer deve observar os parâmetros técnicos e econômicos definidos pela área técnica, inclusive quanto à instalação e manutenção do circuito de transporte, à eventual implantação de backhaul de fibra óptica, aos requisitos de SLA da RNP, aos prazos de execução, à comprovação do cumprimento e à possibilidade de conversão em multa em caso de descumprimento.
+20. Deve ser concedido prazo de 60 dias para que a prestadora apresente projeto técnico e indique as instituições a serem atendidas, ou opte pela conversão da obrigação de fazer em multa, com renúncia ao desconto previsto no Rasa.
+IV. DISPOSITIVO E TESE
+21. Recurso parcialmente provido.
+Tese de julgamento: "1. Não há nulidade processual pela ausência de nova notificação para alegações finais entre o informe técnico preparatório e a decisão administrativa de primeira instância. 2. As infrações aos arts. 50, I, c/c 57, § 3º, II e IV, 57, § 1º e 57, § 2º, do RGC devem ser reclassificadas de sistêmicas para pontuais, com aplicação do percentual de descumprimento na infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC. 3. A infração ao art. 57, § 4º, do RGC permanece classificada como sistêmica. 4. O valor da multa deve ser reduzido de R$ 30.868.788,47 para R$ 7.681.089,56. 5. É cabível a aplicação de sanção de obrigação de fazer, em substituição à multa, consistente no provimento de conectividade de instituições públicas de ensino superior e institutos federais à rede da RNP, observados os parâmetros e prazos fixados na decisão. 6. Deve ser concedido prazo de 60 dias para que a prestadora apresente projeto técnico e indique as unidades a serem conectadas, ou opte pela conversão da sanção de obrigação de fazer em multa."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999, art. 44 e art. 50, § 1º; Decreto nº 6.523/2008, art. 15, § 3º; Decreto nº 7.724/2012, art. 3º, XII, e art. 20; Decreto nº 9.612/2018, art. 2º, IV, a, art. 3º e art. 4º, I, III, IV e V; Lei nº 9.637/1998; Resolução Anatel nº 589/2012, arts. 15, 16, 16-A, 33, § 5º, 36, 36-A e 36-B; Resolução Anatel nº 632/2014, arts. 26, § 2º, 50, I, 57, §§ 1º, 2º, 3º, II e IV, 4º, e 58, caput e parágrafo único; Resolução Anatel nº 612/2013; Resolução Anatel nº 784/2025.
+Jurisprudência relevante citada: PFE-Anatel, Parecer nº 00266/2018/PFE-ANATEL/PGF/AGU, 06.10.2018; PFE-Anatel, Parecer nº 588/2021/PFE-ANATEL/PGF/AGU, 13.10.2021; PFE-Anatel, Parecer nº 882/2019/PFE-ANATEL/PGF/AGU, 12.12.2019; PFE-Anatel, Parecer nº 00565/2017/PFE-ANATEL/PGF/AGU; Anatel, Acórdão nº 65, de 28.02.2024; Anatel, Análise nº 24/2019/VA, PADO nº 53528.006931/2012-81; Anatel, Análise nº 4/2024/AF; PADO nº 53500.000556/2021-64; Anatel, Análise 107/2025/VA.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicação (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA);
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel (RIA);
+Resolução nº 589, de 7 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas (Rasa);
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC).
+RELATÓRIO
+DOS FATOS
+Cuida-se de Recurso Administrativo com pedido de efeito suspensivo interposto por Claro S.A. (Claro), CNPJ nº 40.432.544/0001-47, prestadora do Serviço de Comunicação Multimídia (SCM), contra o Despacho Decisório nº 79/2023/CODI/SCO (SEI nº 10004423), de 9 de maio de 2023, que aplicou à prestadora sanção de multa no valor total de R$30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos), em razão dos descumprimentos aos arts. 26, §2º; 50, I, c/c 57, §3º, II; 57, §3º, IV; 57, §§1º, 2º e 4º; e 58, caput e parágrafo único, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 2014.
+Instaurou-se este Pado em 7 de março de 2023, por meio do Despacho Ordinatório de Instauração nº 27/2019/SEI/CODI/SCO (SEI nº 3810948), em razão de apontamentos constantes do Relatório de Fiscalização nº 0410/2017/GR01, 28 de junho de 2017 (SEI nº 3810949).
+Em 4 de abril de 2019, a Recorrente apresentou sua defesa administrativa (SEI nº 4002689) e em 4 de setembro de 2019, suas alegações finais (SEI nº 4583248).
+Por meio do Informe nº 440/2020/CODI/SCO (SEI nº 6017715), de 19 de novembro de 2020, as alegações da Recorrente foram analisadas e, em razão do valor de multa proposto, os autos foram remetidos à Procuradoria Federal Especializada junto à Anatel (PFE).
+Em 13 de outubro de 2021, a PFE se manifestou no Parecer 588/2021/PFE-ANATEL/PGF/AGU (SEI nº 7537231).
+Em 9 de maio de 2023, por meio do Informe 116/2023/CODI/SCO (SEI nº 10004418), a área técnica analisou o Parecer e propôs a aplicação de multa pelos descumprimentos apurados.
+Sobreveio o Despacho Decisório ora recorrido (SEI nº 10004423), com o seguinte teor:
+"(...)
+1.Aplicar à prestadora a sanção de MULTA no valor total de R$30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos), em razão dos descumprimentos aos arts. 26, §2º; 50, I, c/c 57, §3º, II; 57, §3º, IV; 57, §§1º, 2º e 4º; e 58, caput e parágrafo único, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632/2014.
+1.1. Caso a prestadora resolva, de acordo com o disposto no §5º do art. 33 do Regulamento de Aplicação de Sanções Administrativas (Rasa), aprovado pela Resolução nº 589/2012, renunciar expressamente ao direito de recorrer da decisão de primeira instância, fará jus a um fator de redução de 25% (vinte e cinco por cento) no valor total da multa aplicada, perfazendo, neste caso, o montante de R$23.151.591,35 (vinte três milhões, cento e cinquenta e um mil, quinhentos e noventa e um reais e trinta e cinco centavos), desde que faça o recolhimento no prazo regulamentar."
+Notificada em 26 de maio de 2023 (SEI nº 10298276), a Recorrente interpôs Recurso Administrativo (SEI nº 10361156) no dia 7 de junho do mesmo ano (SEI nº 10361156).
+Atribuiu-se efeito suspensivo quanto à sanção de multa, nos termos da Certidão SEI nº 10362003.
+Pelo Informe nº 82/2026/CODI/SCO (SEI nº 15125169), de 4 de fevereiro de 2026, foram analisadas as alegações da Recorrente, com sugestão de revisão da decisão recorrida, com redução do valor da multa para R$24.928.087,26 (vinte e quatro milhões, novecentos e vinte e oito mil, oitenta e sete reais e vinte e seis centavos).
+Pelo Despacho Decisório nº 59/2026/CODI/SCO (SEI nº 15125304), o Superintendente de Controle de Obrigações decidiu conhecer do Recurso, encaminhando os autos a este Conselho para análise de mérito pela Matéria nº 79/2026 (SEI nº 15125317).
+Realizado sorteio em 9 de fevereiro de 2026 (SEI nº 15156762), fui designado o novo relator da matéria.
+Analisando os autos, verifiquei a necessidade de esclarecimentos adicionais, solicitados à Superintendência de Controle de Obrigações nos termos do Ofício 15 interno de diligência ( SEI nº 15255036), em 4 de março de 2026.
+A resposta foi encaminhada pelo Informe 170 (SEI nº 15277563), em 22 de abril de 2026.
+É o relatório.
+DA ANÁLISE
+Da Admissibilidade do Recurso
+Primeiramente, cumpre destacar que a tramitação do processo ocorreu em consonância com os dispositivos legais e regulamentares, sendo observados os princípios do devido processo legal, do contraditório e da ampla defesa, conforme estabelecem a Lei de Processo Administrativo (LPA), Lei nº 9.784, de 29 de janeiro de 1999, e o Regimento Interno da Anatel.
+Quanto à admissibilidade do Recurso, verifica-se que, nos termos do Regimento Interno da Agência, ele é cabível em face da decisão proferida por autoridade competente, e atende aos pressupostos de tempestividade, legitimidade e interesse em recorrer.
+A Recorrente foi notificada em 26 de maio de 2023 (SEI nº 10298276), uma sexta-feira, e interpôs Recurso (SEI nº 10361156) no dia 7 de junho do mesmo ano (SEI nº 10361156).
+A peça recursal foi subscrita por pessoa legitimada (SEI nº 4002691); a Recorrente possui interesse recursal, na medida em que foi sucumbente; a decisão atacada é passível de recurso; e o presente recurso não contraria entendimento fixado em Súmula da Agência.
+Das infrações
+As infrações apuradas no presente PADO, conforme tabela abaixo, foram extraídas do Despacho Ordinatório de Instauração (SEI nº 3810948), e da planilha de cálculo de multa (SEI nº 10067460) que subsidiou o Despacho recorrido:
+ Conduta
+ | 
+ Dispositivo
+ | 
+ Situação final
+ | 
+ Não consta claramente no contrato de permanência fornecido pela Prestadora o prazo de permanência aplicável.
+ | 
+ Art. 50, IX c/c Art. 57, § 3º, I, do RGC
+ | 
+ Descaracterizada
+ | 
+ Não consta claramente no contrato de permanência fornecido pela Prestadora a descrição do benefício concedido.
+ | 
+ Art. 50, I, c/c Art. 57, §3º, II (primeira parte), do RGC
+ | 
+ Caracterizada sistêmica
+ | 
+ Não consta claramente no contrato de permanência fornecido pela Prestadora o valor do benefício concedido.
+ | 
+ Art. 50, I, c/c Art. 57, §3º, II (segunda parte), do RGC
+ | 
+ Considerada anteriormente
+ | 
+ Não consta claramente no contrato de permanência fornecido pela Prestadora o valor da multa em caso de rescisão antecipada do contrato
+ | 
+ Art. 50, IX c/c Art. 57, § 3º, III, do RGC
+ | 
+ Descaracterizada
+ | 
+ A operadora não apresentou os contratos de permanência preenchidos com os dados do cliente e as respectivas assinaturas e datas das contratações, não comprovando assim que o prazo máximo contratado pelo cliente seja de 12 meses
+ | 
+ Art. 57, § 1º, do RGC
+ | 
+ Caracterizada sistêmica
+ | 
+ A operadora não apresentou os contratos de permanência assinados e datados, indicando que estes não foram firmados
+ | 
+ Art. 57, § 2º, do RGC
+ | 
+ Caracterizada sistêmica
+ | 
+ Não consta claramente no contrato de permanência fornecido pela Prestadora o contrato de prestação de serviço a que se vincula
+ | 
+ Art. 57, § 3º, IV, do RGC
+ | 
+ Considerada anteriormente
+ | 
+ O tempo máximo para o prazo de permanência de 12 meses não é cumprido
+ | 
+ Art. 57, §1º, do RGC
+ | 
+ Considerada anteriormente
+ | 
+ A prestadora não permite a contratação de nenhum serviço sem fidelização
+ | 
+ Art. 57, § 4º, do RGC
+ | 
+ Caracterizada sistêmica
+ | 
+ O valor da multa pela rescisão contratual antecipada não é proporcional ao tempo restante para o término do prazo de permanência e/ou não é proporcional ao valor do benefício concedido para ficar fidelizado
+ | 
+ Art. 58, caput, do RGC
+ | 
+ Caracterizada pontual
+ | 
+ Cobrança de multa do usuário por descumprimento de obrigação contratual por parte da prestadora
+ | 
+ Art. 58, P.U., do RGC
+ | 
+ Caracterizada pontual
+ | 
+ Não armazenou gravações das interações com os consumidores
+ | 
+ Art. 15, §3º, do Decreto nº 6.523/2008 c/c Art. 26, caput e §2º, do RGC
+ | 
+ Caracterizada pontual
+ | 
+Para o cálculo das sanções foi utilizada a metodologia aprovada pela Portaria nº 792, de 2014, considerando a ROL nacional da empresa.
+A fiscalização ocorreu no período de 6 de fevereiro a 28 de junho de 2017.
+Para se chegar aos achados, a fiscalização apurou que, no período de novembro de 2016 a janeiro de 2017 houve 1.050.696 (um milhão, cinquenta mil, seiscentas e noventa e seis) contratações ou migrações de planos. 
+Dentro desse universo, solicitou cópia de 37 (trinta e sete) gravações, sendo 3 (três) delas não enviadas pela Recorrente. 
+Também foram solicitadas as cópias de 20 (vinte) documentos entregues aos usuários. Em todos os casos, a Recorrente não forneceu cópia do contrato de permanência preenchido com dados dos clientes e respectivas assinaturas, não constando deles, igualmente, o benefício concedido e seu valor.
+Do sistema Focus foram extraídas 404 (quatrocentas e quatro) reclamações registradas no mesmo período, qual seja, de novembro de 2016 a janeiro de 2017, das quais foi selecionada uma amostra válida de 26 (vinte e seis).
+Foram realizadas diligências em 56 (cinquenta e seis) dos 2.180 (dois mil, cento e oitenta) Setores de Atendimento Presencial. Além do percentual de infração de cada dispositivo apurado nas lojas, registrou-se que em todas elas:
+ Há taxas de instalação de R$ 180,00 e multa de R$ 300,00 para contratações sem fidelização. Caso o consumidor opte por contratar sem fidelização, há uma taxa de adesão de R$ 540,00, entendendo a fiscalização ser inviável a escolha do plano sem fidelidade; e
+ Para os planos NET, o usuário recebe apenas uma via de formulário para cadastro de vendas, que não deixa claro os benefícios concedidos e o valor da multa em caso de fidelização.
+Por fim, houve simulação na página da prestadora na internet, onde se verificou que para todos os planos só há opção de contratação com taxa de instalação gratuita, condicionada à permanência mínima de 12 (doze) meses.
+Do Recurso
+Passo à análise das razões do recurso.
+(i) Da preliminar de mérito
+Inicialmente, a CLARO alega a nulidade do Despacho Decisório, argumentando que não houve o devido saneamento dos autos antes da intimação para apresentação de Alegações Finais. Segundo ela, a notificação para alegações finais foi realizada antes do encerramento da instrução processual, contrariando o Regimento Interno da ANATEL e o artigo 44 da Lei nº 9.784, de 1999, que garantem ao administrado o direito de se manifestar após a análise de todos os elementos do processo. Assim teria havido o comprometimento do contraditório e da ampla defesa.
+A Procuradoria Federal Especializada da Anatel (PFE-Anatel) já se manifestou sobre o tema no Parecer nº 00266/2018/PFE-ANATEL/PGF/AGU (SEI nº 2593128), de 6 de outubro de 2018, emitido nos autos do Pado nº 53532.002095/2011-55, no qual apresentou os seguintes esclarecimentos:
+8. Preliminarmente, saliente-se que não caberia, conforme suscitado pela interessada em suas alegações finais, conferir-lhe a oportunidade de apresentar a referida manifestação de defesa depois da juntada aos autos dos informes a serem elaborados pela área técnica e antes da prolação da decisão administrativa de primeira instância.
+9. Com efeito, os informes caracterizam-se como documentos preparatórios, elaborados pela área técnica da Agência quando já encerrada a fase de instrução processual, que podem ser utilizados como fundamento para a edição do próprio ato administrativo decisório, nos termos do art. 50, § 1º, da Lei 9.784/1999. Ou seja, disponibilizar a referida peça técnica ao interessado para que se manifeste sobre ela, seria como antecipar ao ente regulado os fundamentos que poderão subsidiar, em conjunto com a manifestação de cunho opinativo desta Procuradoria, a própria decisão da autoridade administrativa competente, hipótese que subverteria toda a lógica processual.
+10. Ademais, o dever inafastável de a Agência oportunizar o exercício do direito de defesa pelo interessado não exige que a prestadora seja notificada entre o informe que subsidia a decisão administrativa e o despacho que, eventualmente lhe imporá determinada sanção. Como já afirmado, a decisão administrativa que sanciona o particular, nos termos do art. 50, §1º, da Lei 9.784/1999, escora- se na motivação constante do informe que a antecede.
+11. Não é por outra razão que o art. 3º, XII, do Decreto 7.724, de 16/05/2012, que regulamenta a Lei de Acesso à Informação (Lei 12.527, de 18/11/2011), define o parecer e a nota técnica (informe) como autênticos documentos preparatórios, ou seja, o "documento formal utilizado como fundamento da tomada de decisão ou de ato administrativo".
+12. O art. 20 desse Diploma dispõe, nesse sentido, que o acesso ao documento preparatório ou à informação nele contida, utilizados como fundamento de tomada de decisão ou de ato administrativo, "será assegurado a partir da edição do ato ou decisão" .
+13. Portanto, as garantias de ampla defesa e contraditório não se traduzem na possibilidade de a interessada, já apresentada defesa e encerrada a instrução processual, obter da Agência, no intuito de apresentar alegações finais, o conhecimento prévio do teor do informe cujos fundamentos poderão ser integralmente incorporados à decisão a ser proferida. (grifou-se)
+Dessa forma, não configura vício processual a ausência de nova notificação para apresentação de Alegações Finais entre o Informe que subsidia a decisão administrativa e o Despacho Decisório, não existindo qualquer comando legal para que a Agência se manifeste sobre o mérito antes do fim da instrução.
+(ii) Do mérito
+(ii.1) Da infração ao art. 50, I c/c 57, §3º, II; e art. 57, §3º, IV, todos do RGC
+Os dispositivos em comento estabelecem o que segue:
+Art. 50. Antes da contratação, devem ser claramente informadas ao Consumidor todas as condições relativas ao serviço, especialmente, quando for o caso:
+I - valores de preços e tarifas aplicáveis, com e sem promoção;
+(...)
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo. (...)
+§ 3º O Contrato de Permanência não se confunde com o Contrato de Prestação do Serviço, mas a ele se vincula, sendo um documento distinto, de caráter comercial e regido pelas regras previstas no Código de Defesa do Consumidor, devendo conter claramente:
+(...)
+II - a descrição do benefício concedido e seu valor;
+(...)
+IV - o Contrato de Prestação de Serviço a que se vincula.”
+A infração foi considerada sistêmica, por não constar do modelo de contrato fornecido pela Recorrente, de forma clara, as condutas descritas nos incisos II e IV do §3º do art. 57, do RGC.
+Em seu recurso, a Recorrente não trata especificamente da infração ao inciso IV, do §3º do art. 57, tratada em conjunto com a presente infração, e sim quanto ao art. 50 c/c 57, inciso II do §3º. Nesse contexto, se insurge quanto ao caráter sistêmico atribuído à infração. Segundo ela, a SCO teria desconsiderado que a fiscalização também realizou diligências nas lojas (Setores de Atendimento Presencial), não verificando a infração na totalidade dos casos:
+Portanto, se o contrato fosse padrão, atingindo a todos os clientes indistintamente, tal qual afirmado pela SCO, todas as lojas fiscalizadas deveriam apresentar irregularidade e não parcela delas.
+Outro argumento trazido pela Recorrente se refere à falha metodológica, de forma que a amostra de gravações analisadas foi inferior àquela necessária para compor uma amostra mínima para se assegurar um nível de confiança adequado de 95% (noventa e cinco por cento). Ainda assim, a infração não foi verificada em todas as gravações analisadas.
+Prossegue alegando que, se a infração tivesse sido verificada em razão de alguma desconformidade no "Cadastro de Vendas" dos Planos oferecidos pela NET, documento igualmente analisado pela fiscalização, esta só poderia ter atingido usuários desses planos.
+Por fim, alega que problemas relacionados à fidelização atingem ou novos acessos ou aqueles que mudam os planos, de forma que jamais atingiriam toda a base. Nesse sentido, traz como precedente a Análise nº 24/2019/VA, no PADO 53528.006931/2012-81, no sentido de que, mesmo diante de uma conduta sistêmica, deve-se perquirir o universo de usuários por ela afetados.
+Dessa forma, requer a reforma do Despacho Decisório para que a infração seja considerada pontual ou, caso esse não seja o entendimento, o universo seja limitado aos usuários efetivamente fidelizados no período, multiplicado pela proporção estimada de itens não-conformes, ou apenas aqueles efetivamente fidelizados no período.
+Requer, ainda, que seja aplicado o percentual de descumprimento da infração, vez que atingido apenas o inciso II do §3º do art. 57, do RGC (novamente não mencionou o inciso IV).
+Sobre o assunto, o Informe (SEI nº 15125169), que analisou o recurso, remete ao Informe (SEI nº 6017715) que antecedeu o Despacho Decisório, onde se conclui que o Contrato de Permanência padrão enviado pela Prestadora não descreve o benefício concedido, nem o seu valor, remetendo à oferta contratada.
+Transcrevo a cláusula do Contrato:
+Como o Regulamento determina que a informação esteja no contrato de permanência, se considerou a infração sistêmica.
+Analisando os autos, diante dos argumentos trazidos pela Recorrente em relação às contradições entre o entendimento da área técnica e o que consta no Relatório de Fiscalização em relação ao apurado nos Setores de Atendimento, em que se afirma constar claramente tais cláusulas em parcela dos contratos avaliados, diligenciei à área técnica para que melhor justificasse os motivos que a levaram à classificação da infração como sistêmica.
+Adicionalmente a isso, questionei sobre o tratamento conjunto da infração ao art. 50, I, com a infração ao art. 57, §3º, II e IV, do RGC. 
+Com relação ao art. 50, a obrigação regulamentar se refere a informações que devem ser repassadas previamente à contratação. Diferentemente é o caso do art. 57, que se refere a informações que devem constar do contrato.
+Em resposta, a área técnica informou, em resumo, o que segue.
+Com relação ao art. 50, I, do RGC, de um universo de 1.050.696 (um milhão, cinquenta mil, seiscentas e noventa e seis) contratações no período de novembro de 2016 a janeiro de 2017 a fiscalização extraiu uma amostra de contratações para as quais foram solicitadas cópias das gravações associadas aos respectivos atendimentos.
+Para a área técnica, a análise dessas gravações contemplou o atendimento de uma nova contratação como um todo, vale dizer, abrangeu desde o momento da chamada telefônica, que envolve o fornecimento de informações prévias, até a celebração do contrato em si. Assim, a infração ao art. 50, I, do RGC, foi verificada nas contratações decorrentes de atendimento telefônico, tendo os fiscais concluído que em 20 (vinte) contratações remotas não foram informados os benefícios concedidos e seus valores.
+Observou que a fiscalização considerou o descumprimento ao art. 50, I (não fornecimento prévio de informações sobre valores de preços e tarifas) pela ausência, nos atendimentos para contratação, de informações acerca dos benefícios concedidos e seus valores, informações estas que devem constar, também, do contrato de permanência, consoante art. 57, §3º, II, do RGC. Por isso, e no contexto de análise da fiscalização, foi efetuado o enquadramento combinado dos descumprimentos aos arts. 50, I; e 57, §3º, II de forma que, no entender da área técnica, não seria possível separar as informações do art. 50, I das condutas tipificadas no art. 57, a menos que se considere que o não fornecimento prévio das informações sobre os benefícios a serem concedidos e seus valores não se enquadra na conduta de "não fornecer previamente à contratação informações sobre valores de preços e tarifas", o que levaria à descaracterização da infração ao art. 50, I, do RGC, que não parece ser o caso.
+De toda a forma, encaminhou o recálculo da infração ao art. 50, I, do RGC, individualizada da infração ao art. 57, caso assim seja o entendimento do Conselho.
+Sobre as considerações da área técnica quanto à referida infração, embora o art. 50 e o art. 57 tratem de procedimentos a serem adotados em fase distinta da contratação, neste caso concreto as infrações devem, de fato, ser tratadas de forma combinada, como propôs a própria fiscalização. Isso porque, adicionalmente à oitiva das gravações, a fiscalização solicitou o envio de contratos de permanência devidamente preenchidos, não sendo apresentado um único contrato, limitando-se ao envio do contrato padrão, sem referidas cláusulas.
+Com relação ao art. 57, §3º, II, do RGC, que determina que, no contrato de permanência conste o benefício concedido e seu valor, diante da contradição entre a análise da área técnica, que considerou a infração sistêmica com base no contrato padrão, e o que consta no Relatório de Fiscalização, que verificou constar claramente a cláusula em parcela dos contratos analisados no atendimento presencial, a área técnica apresentou esclarecimentos adicionais.
+Informou que compreendeu ser sistêmica a infração em virtude da capacidade de uniformização da conduta, ou seja, do caráter potencialmente ofensivo a todos indistintamente na irregularidade presente no contrato padrão de permanência (forma procedimental de agir em uma das vertentes de análise da fiscalização), com absorção dos casos pontuais identificados nas cópias das gravações e nas lojas da Claro, ressaltando que para nenhuma das 26 (vinte e seis) reclamações do Focus selecionadas pela fiscalização, ou mesmo para algum caso fora dessa amostra, a Claro enviou o respectivo contrato de permanência assinado e datado de forma a demonstrar que incluía as informações relativas ao art. 57, §3º, II, do RGC, nos instrumentos já firmados.
+Todavia, ao se reavaliar o caráter sistêmico da infração ao art. 57, §3º, II, do RGC, verificou que a fiscalização atestou a regularidade dessa conduta em lojas de atendimento presencial, conforme registrado no Relatório de Fiscalização nº 0410/2017/GR01 (3810949). Nesse contexto, opinou por não se poder concluir que a prestadora tenha descumprido integralmente o referido dispositivo. Ao contrário, os elementos constantes dos autos — especialmente os achados da fiscalização nas lojas — indicam que eventuais desconformidades ocorreram de forma restrita e não generalizada, o que afasta a caracterização de prática sistêmica. 
+O mesmo entendimento foi reavaliado e aplicado para a infração ao art. 57, §3º, IV, do RGC, ressaltando que esta, inicialmente, não havia sido considerada sistêmica, mas por ter sido aglutinada à infração ao inciso II, foi assim calculada.
+Dessa forma, a área técnica apresentou recálculo reclassificando a infração ao art. 57, §3º, II e IV, do RGC para pontual, calculada no âmbito dos usuários e das lojas, esclarecendo que:
+Informe 170 (15277563)
+3.16.1. Na Planilha II (15419678), referente a usuários, foram considerados 46 (quarenta e seis) casos no fator (Ua), compreendendo as 20 (vinte) gravações irregulares mais as 26 (vinte e seis) reclamações do sistema Focus. Ante a impossibilidade de delimitar o alcance da infração nos arquivos do Conteúdo de Mídia 1382178, no "Anexo 4.1a Análise das Gravações SCM" e no "Anexo 4.2a - Análise dos Focus" (1590092), foi mantida a abrangência nacional da fiscalização como referência. A gravidade da infração foi alterada para média. À exceção dessas alterações, foram mantidos os demais parâmetros de multa adotados na Planilha (10067460) do Informe nº 116/2023/CODI/SCO, porém com a ponderação do percentual de descumprimento da obrigação em 50% (cinquenta por cento).
+3.16.2. Na Planilha III (15419726), relativa a lojas, o fator (Ua) corresponde a 47 (quarenta e sete), compreendendo as 23 (vinte e três) lojas irregulares em relação ao art. 57, §3º, II, mais as 24 (vinte e quatro) lojas irregulares em relação ao art. 57, §3º, IV. No "Anexo 4.3b - Consolidação lojas" (1590092) foi identificado que a irregularidade em questão ocorreu nas seguintes unidades federadas: AC, AL, BA, CE, ES, GO, MG, PE, PR, RJ, RS, SE e SP, as quais possuem 1.706 (mil, setecentas e seis) lojas, conforme "Anexo 4.3a Lojas" (1590092). À exceção da delimitação da abrangência da infração e da ROL, dos fatores (Ut) e (Ua) e da gravidade da infração para média, foram mantidos os demais parâmetros de multa adotados na Planilha (10067460) do Informe nº 116/2023/CODI/SCO, mas com a ponderação do percentual de descumprimento da obrigação em 50% (cinquenta por cento).
+No cálculo constante da Planilha II (SEI nº 15419678) estão abarcados os 20 usuários da infração ao art. 50, I que foi combinada com as infrações ao art. 57, §3º, do RGC.
+Assim, foram apurados os seguintes resultados:
+Cálculo para usuários
+Cálculo para lojas
+Ressalto que, no PADO nº 53500.000556/2021-64, a Agência se deparou com situação semelhante. Naquele caso, a infração aos arts. 57, §§2º e 3º haviam sido consideradas sistêmicas em razão de uma totalidade de casos de uma amostra apresentar irregularidade. No entanto, os fiscais também verificaram, em fiscalizações presenciais em lojas, situações de regularidade, o que levou a própria área técnica, no Informe 153/2025/CODI/SCO (SEI nº 13392008) a propor a revisão de seu posicionamento, afastando a natureza sistêmica da infração para pontual. O posicionamento da área técnica foi acompanhado pelo Conselheiro Relator, nos termos da Análise 107/2025/VA (SEI nº 14423357), conforme se extrai do seguinte trecho:
+Análise 107/2025/VA (SEI nº 14423357)
+5.59. (...) É exatamente o que se observa no presente caso em que tal transgressão é pontual porque, nos termos do Relatório de Fiscalização nº 385/2017/GR01 (SEI 6399714), a amostra dos 20 (vinte) casos irregulares foi extraída de uma listagem em que se consideraram apenas as contratações realizadas em lojas (próprias ou de parceiros) e não nos demais canais de atendimento. Por outro lado, quando os agentes fiscalizaram as lojas da Prestadora, encontraram situações regulares. Essa mesma situação ocorreu quanto ao § 3º do art. 57, donde infere-se que as infrações não podem ser sistêmicas, já que foram identificados casos regulares e irregulares para o mesmo canal de atendimento (lojas). (grifei)
+Do exposto, proponho dar parcial provimento ao recurso para alterar o caráter sistêmico da infração para pontual, aplicando o percentual de descumprimento da obrigação.
+(ii.2) Da infração ao art. 57, §1º, do RGC
+O dispositivo em questão possui a seguinte redação:
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo.
+§ 1º O tempo máximo para o prazo de permanência é de 12 (doze) meses.
+(...)
+Relata a Recorrente, que após analisar a defesa, a área técnica entendeu, corretamente, por descaracterizar a infração para 20 casos em que a fiscalização solicitou cópia do contrato, pois diante do não envio do contrato, não haveria materialidade para se afirmar se atendia ou não ao prazo máximo de permanência.
+A área técnica considerou a infração pontual apenas para as infrações verificadas em gravações de chamadas e em reclamações no Focus, totalizando 20 usuários atingidos.
+No entanto, ao analisar os autos, a PFE se manifestou contrária ao posicionamento, uma vez que o não envio do contrato serviu de base para se concluir pela infração ao art. 57, §2º do RGC. Assim, a SCO mudou sua conclusão, opinando pela caracterização da presente infração como sistêmica, por não ter apresentado elementos sólidos capazes de demonstrar a regularidade da conduta.
+No entanto, a Recorrente afirma que a infração jamais poderia ter sido considerada como sistêmica, pois (i) viola o bom senso afirmar que todos os clientes da Claro teriam um direito violado, sendo que eventuais reclamações no FOCUS ou na SENACON não condizem com essa conclusão, sendo registradas apenas 404 (quatrocentas e quatro) reclamações no FOCUS no período sobre o assunto; (ii) que o fato de a Claro não ter apresentado os contratos deveria ter implicado na descaracterização da infração ao art. 57, §1º e ao §2º e não na retratação do posicionamento anterior, caracterizando novamente a infração ao §1º sem qualquer evidência fática; (iii) a amostra de gravações padece de vício metodológico, conforme já apontado; (iv) a análise de 26 (vinte e seis) reclamações de FOCUS, igualmente, revela a mesma fala metodológica; (v) na análise de reclamações do FOCUS apenas 3 (três) apresentavam inconformidades; e (iv) problemas relacionados a fidelização não atingem toda a base, mas apenas novos acessos ou os que mudaram de plano.
+Requereu, portanto, seja a infração considerada pontual ou que o universo de usuários seja limitado a pessoas físicas fidelizadas no período fiscalizado.
+A área técnica, por sua vez, opinou por manter a infração como sistêmica. No seu entender, o fato de a Prestadora não ter apresentado os contratos assinados para 100% (cem por cento) da amostra selecionada pela fiscalização, ensejou a impossibilidade de se comprovar a vinculação do consumidor ao contrato pelo período máximo previsto na norma.
+Vale notar que, inicialmente, a área técnica havia opinado pela descaracterização da conduta para 20 usuários, por ausência de materialidade, uma vez que, não apresentado o contrato, não teria sido aferido o prazo máximo contratado pelo cliente. A PFE, no Parecer 588/2021/PFE-ANATEL/PGF/AGU (SEI nº 7537231), não viu óbices à descaracterização da conduta para eles. Apontou, contudo, contradição entre a conclusão quanto à presente infração e a conclusão da infração ao art. 57, §2º, considerada sistêmica, sugerindo, no caso de alguma das duas infrações ser caracterizada como sistêmica, aprofundar a respectiva fundamentação. Transcrevo:
+33. Ocorre que, na análise da infração ao artigo 57, §1º, do RGC, no tópico anterior, a área técnica entendeu que, não tendo a operadora apresentado os contratos de permanência, não haveria como comprovar qual teria sido o prazo máximo contratado pelo cliente, ausente, portanto, a materialidade da conduta.
+34. Já na análise da infração ao artigo 57, §2º, do RGC, mesmo diante da não entrega do contrato de permanência, pela operadora, para os casos de fidelização na contratação de serviços e planos, a área técnica entendeu pela caracterização da infração, em razão da desconformidade em 100% na análise das informações obtidas da própria prestadora e das reclamações registradas no sistema Focus e no percentual de 46,43% constatado nos setores de atendimento presencial.
+35. Nesse ínterim, vislumbra-se aparente contradição entre os entendimentos que foram adotados na análise de cada uma das infrações - ao artigo 57, §1º e ao artigo 57, §2º, do RGC diante do fato de não terem sido entregues, em ambos os casos, os respectivos contratos solicitados: ora se entendeu pela ausência de materialidade e consequente descaracterização da infração, ora se entendeu pela caracterização "considerando-se a distribuição dinâmica do ônus da prova, não compete à Anatel provar algo que não ocorreu (prova negativa)."
+36. Desse modo, caso persista o entendimento pela caracterização de alguma dessas duas infrações como sistêmica, sugere-se aprofundar a respectiva fundamentação.
+E nesse sentido, com o intuito de afastar invocada contradição, a área técnica propôs considerar ambas as infrações como sistêmica, em razão da não apresentação dos contratos solicitados pela fiscalização.
+Para melhor esclarecer o assunto, volto às conclusões do Relatório de Fiscalização (SEI nº 3810949) sobre a presente infração:
+Inicialmente, não posso me alinhar à conclusão da área técnica de considerar a infração como sistêmica. Isso porque no contrato padrão juntado aos autos, assim como na cópia dos planos e ofertas, consta claramente o prazo de permanência como sendo de 12 (doze) meses para pessoas físicas.
+Em visita aos Setores de Atendimento Presencial, demonstrou-se haver irregularidades quanto a constar claramente o prazo de permanência aplicável nos atendimentos acompanhados, mas em nenhum momento houve relato de que o prazo não estaria aderente à regulamentação.
+Portanto, o que consta do Relatório, a meu ver, são casos pontuais os quais, contudo, merecem uma revisão, mais especificamente naquelas infrações verificadas na gravação de chamadas.
+Considerando os achados descritos pela fiscalização, inicialmente verifiquei a planilha do Anexo 4.1a, "Análise das Gravações SCM", notando nela uma divergência de informações. Vale notar que tal divergência também foi verificada pela área técnica, nos termos do Informe 440 (SEI nº 6017715).
+Na coluna "C" consta o seguinte questionamento: Foi informado o prazo de permanência aplicável? Em 14 deles consta o seguinte: "SIM- 12 MESES". Já na coluna "G" consta o seguinte questionamento: O tempo máximo para o prazo de permanência é de 12 meses? Para 31 deles, total esse que incluindo os 14 antes mencionados, consta "NÃO". 
+Diante de tal divergência, a área técnica optou por desconsiderar os 14 casos da coluna "C", totalizando 17 casos ao final (subtraindo 14 dos 31).
+Ocorre que, dos casos marcados como "NÃO" na coluna "C" e na coluna "G", ouvi a gravação nº 47456012, cuja contratação, no meu entender, foi sem fidelização, razão pela qual não faz sentido se falar em prazo de permanência e razão pela qual, a meu ver, todas as demais colunas dessa linha estão sinalizadas como "NÃO".
+Ouvi também a gravação nº 219113643, sinalizada com "SIM - 12 MESES" na coluna "C" (desconsiderada pela área técnica) e com "NÃO" na coluna "G". De fato, nessa contratação, a Prestadora informou que a permanência é de 12 meses, mas curiosamente foi marcado "NÃO" na coluna "G".
+Trago cópia das informações a que me refiro:
+Diante dessa divergência, solicitei esclarecimentos à área técnica, que opinou, nesse caso, por excluir os achados apurados nas gravações. Isso, em resumo, porque o fato de não informar, no atendimento de uma nova contratação remota, o prazo de permanência aplicável (coluna C) não necessariamente leva à conclusão de que tal prazo era superior a 12 (doze) meses (coluna G). Além disso, da oitiva das gravações que possuem a resposta "não" nas colunas C e G não foi possível inferir o número de contratações com fidelizações com prazo superior a 12 (doze) meses nos contratos de permanência.
+Dessa forma, a área técnica encaminhou, na Planilha I (SEI nº 15293338) o recálculo com fator (Ua) correspondente a 23 (vinte e três), compreendendo os 3 (três) casos identificados no Sistema Focus e os 20 (vinte) atendimentos de contratação nos pontos de venda para os quais os contratos não foram enviados à fiscalização.
+De fato, quanto aos 20 atendimentos de contratação analisados, a Prestadora poderia, por outras formas, comprovar que o prazo máximo de fidelização de 12 meses foi atendido, mas não o fez. Entendo, portanto, caracterizada a infração para os 20 atendimentos para os quais foram solicitados, e não enviados, os respectivos contratos. Quanto às reclamações selecionadas, a fiscalização verificou que em 3 casos a fidelização superou os 12 meses, tendo verificado a data da contratação do serviço e a data do pedido de cancelamento.
+Nesse caso, o valor da multa apresentou o seguinte resultado:
+Do exposto, proponho dar parcial provimento ao recurso, alterando o caráter da infração de sistêmico para pontual.
+(ii.3) Da infração ao art. 57, §2º, do RGC
+A norma em comento estabelece:
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo.
+(...)
+§2º Os benefícios referidos no caput devem ser objeto de instrumento próprio, denominado Contrato de Permanência, firmado entre as partes.
+Segundo a Recorrente, após a análise de 20 (vinte) atendimentos de contratação e 26 (vinte e seis) reclamações registradas no sistema Focus, a fiscalização teria concluído pela infração a referido dispositivo, pois a Recorrente não apresentou os contratos de permanência assinados e datados, indicando que esses não foram firmados.
+Uma vez que a infração foi apurada na totalidade da amostra, a SCO a considerou como sistêmica. Contudo, a Recorrente se opõe quanto à classificação, pois (i) a conclusão violaria o bom senso, pois afirma que a Claro estaria concedendo benefícios por liberalidade, já que não haveria contrato e, portanto, qualquer contrapartida do usuário; (ii) o fato de a Recorrente não ter entregado aos fiscais cópias dos contratos de permanência relativos a 20 (vinte) habilitações, não significa que tais contratos não tenham sido assinados e que os contratos de todos os usuários não o foram, sendo vedado à Anatel presumir um ilícito; (iii) durante as diligências em Setores de Atendimento Presencial, se verificou a infração de não entrega de contratos em apenas 46,43% das lojas fiscalizadas; (iv) houve falha metodológica na análise amostral das reclamações do Focus e seu resultado não pode ser extrapolado para toda a base; e (v) problemas de fidelização só ocorrem em novos acessos ou mudança de planos e não em toda a base.
+Dessa forma, requereu seja a infração considerada pontual ou que o universo atingido seja limitado aos usuários fidelizados no período da fiscalização.
+A área técnica, no Informe (SEI nº 15125169) que analisou o Recurso, apenas ratificou os termos do Informe anterior, de nº 440 (SEI nº 6017715), em razão da semelhança dos argumentos. Transcrevo:
+Informe nº 440/2020/CODI/SCO
+III.1.c. Da infração descrita no sequencial 6: Artigo 57, §2º, do RGC, anexo à Resolução nº 632/2014
+3.31. A prestadora afirma que a fiscalização requereu os contratos de permanência correspondentes aos clientes analisados, para os quais não foi possível localizar alguns, e que foi inferido que tais contratos não teriam sido firmados com os respectivos clientes. Alega que a não localização de tais contratos não pode ensejar eventual sancionamento, significando apenas que não foram localizados. Acrescenta que ao realizar as fiscalizações presenciais nas lojas da Claro, a Anatel pôde atestar que os contratos de permanência são entregues aos clientes e firmados, conforme procedimento interno da prestadora, também constante dos autos. Afirma que possui como procedimento padrão a entrega do Contrato de Permanência, treinando seus funcionários para tanto, e que o anexo (Doc.02 - SEI 4002690) demonstra que seus atendentes estão instruídos a informar as condições de permanência (valor de multa e carência).
+3.32. O Relatório de Fiscalização nº 0410/2017/GR01 traz as seguintes informações sobre o assunto:
+Relatório de Fiscalização nº 0410/2017/GR01 (págs. 2 a 6 do SEI 3810949)
+4. DESCRIÇÃO DA AÇÃO DE FISCALIZAÇÃO
+4.1 Das Informações obtidas da Prestadora
+(...)
+c) Conforme relatórios fornecidos pela Prestadora, por meio das Cartas SEI 1259021, houve 1050696 contratações do serviço e/ou migrações de planos. Para a definição do tamanho da amostra a ser analisada foi utilizando o método estatístico de Amostragem Aleatória Simples, considerando os recursos disponíveis pela fiscalização, foi ajustada proporção máxima tolerável de obrigações não cumpridas em 12%, com 95% de nível de confiança. Sendo assim, obteve-se uma amostra de 20 de contratações/migrações, para as quais foram solicitadas cópias dos documentos efetivamente entregues aos usuários.
+(...)
+- Dos 20 atendimentos de contratação analisados, verificou-se que em 20 casos a operadora não apresentou os contratos de permanência assinados e datados, indicando que estes não foram firmados, em descumprimento ao §2º, Art. 57 do RGC. De acordo com os métodos amostrais, a proporção estimada de itens não-conformes é 100%. Ou seja, com 95% de confiança, a proporção de itens não-conformes na população é um número entre 86,089% e 100%. (grifo nosso)
+(...)
+A análise detalhada desta amostra consta no Anexo 4.1b do SEI 1590092.
+4.2 Das Análises das Reclamações registradas na Anatel
+Foi extraído do Sistema Focus da Anatel, relatório contendo 404 reclamações registradas nos meses de novembro/2016, dezembro/2016 e janeiro/2017, relacionadas à Prestadora, que indiquem eventual descumprimento das obrigações relacionadas aos Artigos 57 e 58 do RGC.
+(...)
+- Das 26 reclamações da amostra selecionada, verificou-se que em 26 casos a operadora não apresentou os contratos de permanência assinados e datados, indicando que estes não foram firmados, em descumprimento ao §2º, Art. 57 do RGC. De acordo com os métodos amostrais, a proporção estimada de itens não-conformes é 52%. Ou seja, com 95% de confiança, a proporção de itens não-conformes na população é um número entre 39,541% e 64,274%. (grifo nosso)
+(...)
+A análise detalhada desta amostra consta no Anexo 4.2a do SEI 1590092
+4.3 Das Diligências realizadas nos Setores de Atendimento Presencial (lojas)
+Considerando uma relação de 2180 (Anexo 4.3a, SEI nº 1590092) setores de atendimento presencial, obtida em fiscalização do RGC na prestadora no ano de 2016, foram fiscalizadas 56 setores de atendimento (lojas) para o SCM. A relação dos setores de atendimento fiscalizados constam na planilha Anexo 4.3b, SEI nº 1590092.
+Foram realizadas fiscalizações em campo que resultaram na planilha consolidada Anexo 4.3b, SEI nº 1590092.
+A tabela a seguir demonstra o quantitativo/porcentagem das lojas fiscalizadas, onde a equipe de fiscalização constatou irregularidades nos itens verificados:
+3.33. Assim, para nenhum dos 20 (vinte) casos analisados no item 4.1 do Relatório de Fiscalização, consolidados no Anexo 4.1b do SEI 1590092, e dos 26 (vinte e seis) casos analisados no item 4.2, descritos no Anexo 4.2a do SEI 1590092, a prestadora apresentou os contratos de permanência assinados e datados, ou seja, a desconformidade foi de 100% (cem por cento), não cabendo, assim, a afirmação de que "não foi possível localizar alguns" contratos. Além disso, nos setores de atendimento presencial foi constatado que em 46,43% das lojas fiscalizadas a prestadora não entregou o contrato de permanência, para os casos de fidelização, na contratação de serviços e planos.
+3.34. Considerando-se a distribuição dinâmica do ônus da prova, não compete à Anatel provar algo que não ocorreu (prova negativa). A carga probatória, nesse caso, desloca-se para a prestadora, que deve demonstrar o envio do contrato ao cliente, o que a Claro, ressalta-se, não logrou êxito em fazer.
+3.35. Nesse sentido, é evidente que a prestadora falhou ao não trazer nenhum dado objetivo de forma a comprovar que efetivamente firmou o contrato com os seus clientes. Assim, ante a inexistência de elemento ou dado substancioso sobre o assunto, não merece prosperar seu entendimento frente ao que foi descrito pela fiscalização.
+3.36. Desse modo, deve a conduta do sequencial 6 do Despacho Ordinatório de Instauração ser caracterizada, em caráter sistêmico, uma vez que a desconformidade em 100% na análise das informações obtidas da própria prestadora e das reclamações registradas no sistema Focus denota forma procedimental de agir, em descumprimento ao art. 57, §2º, do RGC. Destaca-se que a infração sistêmica identificada nos itens 4.1 e 4.2 do Relatório de Fiscalização nº 0410/2017/GR01 absorve as irregularidades pontuais relativas ao mesmo dispositivo, constatada no âmbito das lojas de atendimento e narrada no item 4.3 do Relatório.
+[grifou-se]
+Mais uma vez, solicitei esclarecimentos à área técnica, dada a contradição entre a sua conclusão e os achados nos Setores de Atendimento Presencial, onde, em mais de 53% deles a fiscalização apurou que a prestadora entrega um Contrato de Permanência.
+Considerando o já exposto anteriormente para a infração ao art. 57, §3º, do RGC, a área técnica apresentou recálculo relativo ao descumprimento.
+Para usuários, o fator (Ua) correspondente a 46 (quarenta e seis), consta da Planilha I (15293338), não tendo sido possível delimitar o alcance da infração nos arquivos "Anexo 4.2a - Análise dos Focus" e "Anexo 4.1.b - Análise dos Pontos de Venda SCM" (1590092), mantendo-se a abrangência nacional da fiscalização como referência. A gravidade da infração foi alterada para média. À exceção dessas modificações, foram mantidos os demais parâmetros de multa adotados na Planilha (10067460) do Informe nº 116/2023/CODI/SCO. 
+O recálculo relativo ao descumprimento no âmbito das lojas, com fator (Ua) correspondente a 26 (vinte e seis) - "Anexo 4.3b - Consolidação lojas" (1590092) - consta da Planilha IV (15297483), tendo sido identificado, no Anexo 4.3b (1590092), que a irregularidade em questão ocorreu nas seguintes unidades federadas: AC, AL, BA, ES, GO, MA, MG, PE, RJ, RS, SE, SP e TO, as quais possuem 1.590 (mil, quinhentas e noventa) lojas, conforme "Anexo 4.3a Lojas" (1590092). À exceção da delimitação da abrangência da infração e da ROL, dos fatores (Ut) e (Ua) e da gravidade da infração para média, foram mantidos os demais parâmetros de multa adotados na Planilha (10067460) do Informe nº 116/2023/CODI/SCO. 
+Os recálculos apresentaram os seguintes resultados:
+Para usuários:
+Para lojas:
+Assim, voto por dar parcial provimento ao recurso, alterando o caráter da infração de sistêmico para pontual.
+(ii.4) Da infração ao art. 57, §4º, do RGC
+O dispositivo possui o seguinte comando:
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo.
+(...)
+§ 4º Caso o Consumidor não se interesse pelo benefício oferecido, poderá optar pela adesão a qualquer serviço, não sendo a ele imputada a necessidade de permanência mínima.
+A Recorrente alega que a área técnica chegou à conclusão de que a prestadora não permite a contratação de nenhum serviço sem fidelização após examinar 34 (trinta e quatro) gravações de chamadas, atendimentos em 56 (cinquenta e seis) lojas e a página da Recorrente na internet.
+A infração foi considerada sistêmica pela impossibilidade de contratação sem fidelização na internet, o que absorveu as irregularidades verificadas nos demais canais. Contudo, a Recorrente alega que, em 2019, quando foi notificada da instauração do PADO, já não havia mais como resgatar as telas de sua página na internet entre novembro de 2016 e janeiro de 2017.
+Menciona, contudo, que o fato de mais de 80% (oitenta por cento) das lojas estarem regulares é prova de que a empresa permitia a contratação sem fidelização. Instruiu seu recurso com páginas de seu site datada de 5 de junho de 2023 para demonstrar a possibilidade de contratação sem fidelização.
+Concluiu que, ainda que a infração tivesse ocorrido, não poderia ser classificada como sistêmica, pois: (i) a amostra de gravações padece de vício metodológico, conforme já exposto; (ii) em diligência aos Setores de Atendimento Presencial se verificou ser possível contratar sem fidelização, com irregularidades em apenas 19,64% das lojas fiscalizadas; (iii) problemas relacionados a fidelização só ocorrem em novos acessos ou alteração de plano, não sendo possível atingir toda a base.
+Requereu, por fim, seja a infração considerada pontual ou seja limitado o universo atingido para usuários fidelizados no período fiscalizado. Caso se mantenha o caráter sistêmico da infração, considerando que a fiscalização ocorreu em 3 (três) canais de atendimento, o caráter sistêmico apenas poderia persistir para clientes que contrataram na página da prestadora na internet.
+Ao examinar o Recurso, nos termos do Informe nº 82 (SEI nº 15125169) a área técnica opinou pelo seu não provimento quanto à infração em comento, uma vez que não foi possível contratar o serviço sem fidelização pela internet.
+Negou, adicionalmente, o pedido da Recorrente para que fosse considerado o percentual de descumprimento da obrigação, uma vez que a infração só foi verificada de forma sistêmica em um dos três canais de atendimento fiscalizados. Conforme considerou a área técnica, nos precedentes deste Conselho, a proporção da infração só se aplica para situações em que um determinado dispositivo regulamentar expressamente contém em si mais de uma forma de cumprimento da obrigação nele estabelecida.
+No presente caso, embora a verificação em lojas tenha demonstrado um grande percentual de regularidade, na página na internet, como repisado pela PFE, se mostrou que a prestadora tem por orientação geral e abstrata não seguir a determinação legal. Nesse contexto, a PFE, no Parecer n° 00565/2017/PFE-ANATEL/PGF/AGU, assim consignou:
+"19. Não há, consequentemente, relação necessária e lógica entre o número de usuários atingidos e a qualificação da infração como sistêmica. É possível uma infração não sistêmica atingir um número expressivo de usuários, como no exemplo acima. O contrário, no entanto, via de regra, é verdadeiro. As infrações sistêmicas, até pela natureza do serviço de massa, impactam um número elevado de consumidores.
+(...)
+24. Ademais, como já salientamos, não há relação necessária entre infração sistêmica e repercussão da infração em toda a base de clientes da prestadora. É possível que uma infração sistêmica fique confinada e restrita a um segmento de consumidores que se utilizam de determinado serviço da prestadora, como o TIM Connect Fast. Essa vinculação, portanto, entre toda a base de clientes da prestadora e a qualificação da infração como sistêmica se mostra equivocada."
+Dessa forma, diante da impossibilidade de se contratar o serviço sem fidelização na internet, fica demonstrado o caráter sistêmico da infração, pela possibilidade de atingir toda a base. Some-se a isso o registro de que, em todas nas gravações analisadas, a prestadora não informa espontaneamente a possibilidade de se contratar sem fidelização. E não só. Conforme registrado no Relatório de Fiscalização, nas lojas a Recorrente induz à contratação com fidelização, pois em todos os planos NET Vírtua sem fidelização é cobrada uma taxa de adesão superior ao valor de multa cobrado no plano com fidelização, tornando inviável a escolha sem permanência mínima. Transcrevo:
+Portanto, ainda que se tenha verificado que nas lojas é permitida a contratação sem fidelização, esta não se mostrava viável economicamente. Ou seja, de forma velada a Prestadora induzia o consumidor a contratar com fidelização.
+Nesse contexto, nego provimento ao recurso e mantenho o caráter sistêmico da infração. Seu cálculo consta da Planilha I - Cálculo DGU de Sanção de Multa (SEI nº 10067460), como segue:
+Das demais infrações
+A Recorrente não apresentou alegações quanto às demais infrações, sobre as quais não tenho reparos a promover, devendo ser mantido o cálculo constante da Planilha I - Cálculo DGU de Sanção de Multa (SEI nº 10067460), como segue:
+Do valor final da multa
+A tabela abaixo apresenta o somatório dos valores de multa das infrações caracterizadas no presente PADO, conforme exposto nesta Análise:
+ Dispositivo
+ | 
+ Valor da multa em R$
+ | 
+ Planilha SEI nº
+ | 
+ art. 50, I, c/c/ 57, §3º, II e IV (usuários)
+ | 
+ 3.746,91
+ | 
+ 15419678
+ | 
+ art. 50, I, c/c/ 57, §3º, II e IV (lojas)
+ | 
+ 223.810,18
+ | 
+ 15419726
+ | 
+ art. 57, §1º
+ | 
+ 15.308,03
+ | 
+ 15293338
+ | 
+ art. 57, §2º (usuários)
+ | 
+ 7.493,82
+ | 
+ 15293338
+ | 
+ art. 57, §2º (lojas)
+ | 
+ 324.746,97
+ | 
+ 15297483
+ | 
+ art. 57, §4º (sistêmica)
+ | 
+ 7.075.330,54
+ | 
+ 10067460
+ | 
+ Art. 58, caput
+ | 
+ 15.310,00
+ | 
+ 10067460
+ | 
+ Art. 58, par. único
+ | 
+ 12.843,11
+ | 
+ 10067460
+ | 
+ Art. 26, §2º
+ | 
+ 2.500,00
+ | 
+ 10067460
+ | 
+ Total
+ | 
+ 7.681.089,56
+ | 
+ | 
+Assim, voto por:
+ dar parcial provimento ao Recurso para alterar o caráter sistêmico das infrações aos arts. 50, I c/c/ 57, §3º, II e IV; 57, §1º e 57, §2º, todos do RGC;
+dar parcial provimento ao Recurso para aplicar o percentual de descumprimento da obrigação na infração ao art. 50, I c/c/ 57, §3º, II e IV, todos do RGC;
+alterar o valor da multa de R$30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos) para R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos).
+DA OBRIGAÇÃO DE FAZER
+Da análise de conveniência e oportunidade quanto à aplicação da sanção de Obrigação de Fazer 
+A aplicação da sanção de obrigação de fazer está prevista no RASA, nos seguintes termos: 
+Art. 15. As sanções de obrigação de fazer e de não fazer poderão ser aplicadas nas infrações classificadas como leves, médias e graves, cumulativamente ou não com a sanção de multa, quando a autoridade competente, valendo-se da oportunidade e conveniência, verificar que a imposição de prática ou abstenção de conduta à sancionada será mais razoável e adequada para o atingimento do interesse público, devendo a escolha ser devidamente motivada, observados os princípios da legalidade, razoabilidade, proporcionalidade e economicidade. 
+Como se vê, o balizador dessa decisão é o interesse público, tal como exposto no seguinte trecho extraído do Parecer nº 882/2019/PFEANATEL/PGF/AGU, de 12 de dezembro de 2019 (SEI nº 5028661), elaborado pela PFE-Anatel: 
+Parecer nº 882/2019/PFEANATEL/PGF/AGU (SEI nº 5028661) 
+"20. Como se observa, é o interesse público que irá ensejar a aplicação da sanção de obrigação de fazer. Caso a autoridade administrativa competente, no seu juízo discricionário, entenda conveniente, oportuno e mais adequado ao atendimento do interesse público a fixação de sanção de obrigação de fazer, ao invés de obrigação de pagar (multa), ou concomitantemente com esta, não haverá óbice para implementação desta medida, desde que apresente a devida fundamentação. 
+(...)
+25. De início, é muito importante registrar que a opção/escolha pela obrigação de fazer, ao invés da obrigação de pagar (multa), recai exclusivamente no âmbito de discricionariedade da autoridade administrativa, não caracterizando, assim, qualquer espécie de direito, opção ou escolha por parte do administrado. 
+26. Assim, é irrelevante para a aplicação da obrigação de fazer a existência de eventual pedido formulado por uma entidade que responde a um processo punitivo, pois não se trata de acolher ou rejeitar a pretensão da autuada, mas, sim, de definir a espécie de sanção à luz do interesse público, conforme acima demonstrado. 
+27. Acrescente-se que esta circunstância decorre diretamente da compreensão de que a sanção de obrigação de fazer não é melhor ou pior do que a sanção de obrigação de pagar (multa). As duas espécies de sanção possuem - e devem possuir - a mesma envergadura, sendo certo que ambas, observadas as suas respectivas naturezas e características, devem ser aptas a atingir as funções clássicas da pena relativas à repressão e prevenção quanto ao cometimento de infrações."
+Do projeto de conectividade de universidades públicas (federais, estaduais e municipais) e institutos federais 
+Da diligência 
+Em 3 de outubro de 2025, pelo Ofício nº 9/2025/OP-ANATEL, nos autos do Processo nº 53500.081616/2025-65, demandei às Superintendências de Regulamentação (SPR), Competição (SCP) e Controle de Obrigações (SCO), o levantamento e mapeamento de carências e lacunas de serviços de telecomunicações, bem como das respectivas infraestruturas de transporte e de acesso, das instituições públicas de ensino superior, pesquisa e extensão (portanto, universidades federais, estaduais e municipais e institutos federais).
+A partir de tal levantamento, solicitei o encaminhamento de proposta de valores de referência para a adoção de obrigações de fazer e outros projetos de implementação de políticas públicas para o atendimento dos tipos de lacunas encontradas.
+Em resposta à diligência por mim formulada, nos termos do Informe Técnico nº 187/2025/PRUV/SPR (SEI nº 14883767), de 31 de dezembro de 2025, as áreas técnicas apresentaram o resultado obtido com a Tomada de Subsídios nº 9/2025 (SEI nº 14513242), realizada para a coleta de informações, posteriormente refinadas em conjunto com a Rede Nacional de Ensino e Pesquisa – RNP.
+Importante mencionar que a conexão dessas instituições à internet se dá normalmente por intermédio da RNP, associação de direito privado, sem fins lucrativos, qualificada como organização social (OS) nos termos da Lei nº 9.637, de 15 de maio de 1998, já que a RNP oferece às instituições acesso a plataformas e aplicações específicas, que podem ser consultados por meio do link https://www.rnp.br/servicos/servicos-do-sistema-rnp/ Por esse motivo, a área técnica, acompanhada por este gabinete, tem dialogado com a RNP sobre o levantamento em tela.
+Também é importante mencionar os entendimentos com os ministérios das Comunicações e da Educação ao longo deste processo, notadamente por meio de diálogos bilaterais, reuniões e a formalização, junto ao MCOM, por meio do Ofício nº 20/2025/OP-Anatel (SEI nº 14559937).
+A Tomada de Subsídios realizada pela Área Técnica recebeu 1310 (mil trezentas e dez) contribuições de 85 (oitenta e cinco) universidades federais, estaduais e municiais e de institutos federais, conforme detalhado no referido Informe.
+A RNP, por sua vez, enviou à Anatel, em 22 de dezembro de 2025, uma listagem (SEI nº 14963393) com a análise do status de conexão de cada unidade mencionada na tomada de subsídios, informando à época o seguinte panorama (SEI nº 14963339):
+ 226 unidades estaduais ou municipais não conectadas, atualmente com status em discussão;
+ 110 unidades federais não conectadas;
+ 40 unidades já conectadas;
+ 4 unidades com previsão de conexão.
+Quanto às 226 (duzentas e vinte e seis) unidades estaduais e municipais citadas, ressaltou que a conexão não pode ser tratada de forma automática. Assim, no momento da resposta, haveria 110 (cento e dez) unidades de universidades federais aptas a serem conectadas e, portanto, objeto de políticas públicas.
+Ato contínuo, as áreas técnicas da Anatel e da RNP, acompanhadas por este gabinete, estão mantendo diálogo com as instituições responsáveis pelas demais unidades estaduais e municipais mencionadas, no sentido de esclarecer eventuais pendências. Feito isso, a lista de unidades aptas a serem contempladas com as obrigações de fazer aqui tratadas já foi e continuará sendo atualizada, com a inclusão de novas unidades, contando atualmente com 213 unidades, entre instituições de ensino federais, estaduais e municipais.
+Diante disso, a Área Técnica da Anatel não vislumbrou óbices regulatórios à substituição da sanção pecuniária pela de obrigação de conectividade às universidades públicas e institutos federais sem conexão, considerando que um dos objetivos estratégicos da Agência é o de "Promover a conectividade universal e significativa com qualidade e segurança".
+Feita essa introdução, avaliou a aderência da sanção de obrigação de fazer, consistente na conectividade em instituições públicas de ensino superior, às condições estabelecidas no art. 16 do RASA vigente, conforme detalharei adiante.
+Do alinhamento da obrigação de fazer aos requisitos estabelecidos no RASA 
+Os parâmetros a serem observados pela sanção de obrigação de fazer estão previstos no art. 16 do RASA, com redação dada pela Resolução nº 784, de 7 de novembro de 2025:
+"Art. 16. As sanções de obrigação de fazer e de não fazer devem observar os seguintes parâmetros:
+I - não podem se restringir ao mero cumprimento das obrigações já impostas ao infrator pelo arcabouço regulatório e pelos contratos ou termos celebrados;
+II - promover o atendimento de políticas públicas do setor de telecomunicações, em especial aquelas que visem a conectividade; (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+III - ser compatíveis com os objetivos estratégicos da Agência, constantes seu Plano Estratégico; e, (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+IV - preferencialmente, privilegiar projetos que atendam às necessidades estruturantes previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), no Plano Estrutural de Redes de Telecomunicações (PERT). (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 1º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 2º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 3º As sanções de obrigação de fazer e não fazer não se confundem com a determinação para reparação dos usuários prejudicados, nem com as medidas cautelares.
+§ 4º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)"
+O Corpo Técnico da Agência avaliou a aderência do projeto à norma no item 3.22 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), conforme transcrevo:
+3.22.1. O inciso I do mencionado dispositivo impede que as obrigações já estejam previstas no arcabouço regulatório e nos contratos e termos celebrados. De fato, não há instrumento dessa natureza que obrigue as prestadoras a proverem conectividade às instituições de ensino superior, pesquisa e extensão. Tampouco existe, no PGMU V ou em outras sanções de obrigação de fazer, compromissos de implementação de rede de transporte para essas instituições. Assim, verifica-se que a obrigação ora cotejada não viola o primeiro condicionante do art. 16.
+3.22.2. O art. 16, II, estabelece que a obrigação de fazer visa promover o atendimento de políticas públicas, com destaque para projetos que fomentem a conectividade. Nesse sentido, o provimento de conectividade às instituições de ensino superior, pesquisa e extensão alinha-se a tal propósito, materializando a instrução de implementar e complementar as políticas setoriais constante do Decreto nº 9.612, de 17/12/2018, em especial de seu art. 2º, IV, "a", art. 3º e art. 4º, I, III, IV e V, uma vez que tais infraestruturas incentivam e fomentam a pesquisa brasileira.
+3.22.3. No art. 16, III, tem-se o comando de que as obrigações de fazer devem ser compatíveis com os objetivos estratégicos da Anatel (conforme Plano Estratégico). Como o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão fornece acesso a serviços de alta capacidade para instituições estratégicas, a presente obrigação de fazer materializa o objetivo estratégico de resultado nº 1 e nº 3 do Plano Estratégico da Anatel 2023-2027, quais sejam "Promover a conectividade universal e significativa com qualidade e segurança" e "Fomentar a transformação digital e a inovação tecnológica junto à sociedade". Mais especificamente, o instrumento teria o condão de atender aos objetivos estratégicos dos processos 1A "Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos", 1B "Viabilizar a expansão e a implantação da infraestrutura da rede de base", 1D "Proteger as infraestruturas críticas da conectividade" e 3B "Fomentar aplicações e modelos de negócio inovadores".
+3.22.4. O art. 16, IV, dispõe que, preferencialmente, a obrigação de fazer deverá atender as necessidades previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental - PCS e no Plano Estrutural de Redes de Telecomunicações - PERT. Nessa seara, o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão está de acordo com os projetos do PERT ATUAL de "Projetos de conectividade para locais de relevante interesse público", mais especificamente o projeto 1 "Conectividade Educacional". De qualquer forma, a presente Tomada de Subsídio poderá resultar na inclusão no PERT de um projeto específico nesse sentido.
+Assim, não há dúvidas quanto à aderência da obrigação submetida a este Colegiado ao art. 16 do RASA.
+Do alinhamento da obrigação de fazer com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU) 
+Como bem consignou a Área Técnica nos itens 3.30 a 3.33 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), na Reunião nº 929, de 08/02/2024, nos termos do Acórdão nº 65, de 28/02/2024 (SEI nº 11578112) e com fulcro na Análise nº 4/2024/AF (SEI nº 11360149), este Conselho Diretor decidiu aprovar a alteração da Agenda Regulatória para o biênio 2023-2024, na forma da Resolução Interna nº 290, de 28/02/2024 (SEI nº 11578151), modificando, dentre outros aspectos, o item 10 da Agenda Regulatória 2023-2024. Dentre a alteração promovida, determinou-se que a conversão de multas pecuniárias em obrigações de fazer devem estar voltadas ao cumprimento de metas ESG, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), o que, igualmente, restou demonstrado no referido Informe.
+Do modelo de custos da obrigação de fazer 
+Para a delimitação da presente obrigação de fazer, foram solicitados subsídios à RNP, os quais foram encaminhados por meio dos e-mails (SEI nº 14963487 e nº 14890826).
+Entre os documentos encaminhados, consta o arquivo "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), anexo ao Contrato Master (SEI nº 14963517), com as especificações técnicas da conectividade que precisa ser fornecida por uma prestadora de serviços de telecomunicações para as instituições usuárias do sistema RNP. 
+Apresentou, ainda, (a) a relação das instituições de ensino superior que ainda não são atendidas pela RNP; (b) a relação completa dos Pontos de Presença (PoPs) da RNP; (c) um estudo detalhado dos custos médios do megabit (Mb/s) por região e média nacional, apurados a partir de contratos vigentes firmados pela própria RNP.
+Para se delimitar os custos da obrigação, foram estabelecidos três pilares principais:
+I - Circuito de Transporte: Contratação de capacidade de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto);
+II - Rede Móvel: Cobertura do campus das instituições de ensino;
+III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto).
+Com isso, o presente projeto de ODF consiste, precipuamente, na instalação e na manutenção de enlace ponto a ponto de conectividade entre os campi de instituições de ensino superior federal, estadual ou municipal e a rede da RNP (item I – Circuito de Transporte). Para as instituições situadas em regiões carentes de infraestrutura básica de conectividade, prevê-se, ainda, a possibilidade de instalação e de manutenção de backhaul de fibra óptica que permita o fechamento do circuito de transporte item III – Backhaul de fibra óptica).
+No que se refere à Rede Móvel (item II), o presente projeto visa subsidiar a Anatel com informações sobre áreas de sombra dos campi das instituições beneficiadas, para que, em momento futuro, se avalie a pertinência de implementação de rede móvel local. Logo, esta presente análise não versará sobre o item II, sem prejuízo de seu tratamento posteriormente.
+Assim, observado que (i) instituições de ensino localizadas em área urbana, em regra, prescindem da instalação de infraestrutura de backhaul; enquanto (ii) instituições de ensino em zona rural são mais propensas a depender desse tipo de instalação prévia, a Prestadora deverá apresentar, quanto a estas últimas, declaração formal de que inexiste, nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio. 
+Adicionalmente, deve ser observado que o somatório dos custos totais da execução dos projetos deve ser igual ou superior ao valor da sanção de multa aplicada neste caso concreto, com as correções monetárias e dedução, nos termos do Rasa.
+Conforme salientado no Informe da Área Técnica (SEI nº 14883767), quanto ao Item I - Circuito de Transporte, a precificação apresentada em relação aos custos envolvidos para o circuito de transporte ponto a ponto (entre a instituição de ensino e o PoP da RNP), disponibilizados na Planilha Valores ODF Conectividade IPES (SEI nº 14890893), considerou que a solução técnica deve estar orientada "à contratação de serviço de transporte de dados com capacidade de 1 Gbps”.
+Esta solução deve estar aderente às cláusulas contratuais de conectividade da RNP, conforme melhor detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767) e no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+Além disso, a ODF deve prever que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP nos modelos de contrato.
+A estratégia de dimensionamento da rede fundamenta-se na entrega padrão inicial de 1 Gbps por instituição, conforme diretriz técnica reportada pela RNP em reunião, o que assegura o atendimento imediato às demandas institucionais. Segundo o modelo operacional da RNP, a expansão dessa capacidade ocorre de forma otimizada mediante upgrades sob demanda, condicionados à prévia constatação técnica de saturação do circuito original.
+Os valores para contratação do circuito também derivam dos contratos vigentes da RNP, conforme apresentado no Anexo I (SEI nº 14890826) do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), revisado nos termos do Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e anexos, ou por eventuais outros informes que, futuramente, vierem a ajustar os valores de referência considerados, cujos custos médios anuais por megabit (Mb/s), avaliados nacionalmente e segmentados por região (Centro-Oeste, Nordeste, Norte, Sudeste, Sul), servem de base para o presente planejamento.
+É importante destacar que a Anatel adotou, de forma integral, exatamente os mesmos valores de referência e requisitos técnicos de conectividade praticados pela RNP em seus certames. Tal adoção fundamenta-se na premissa de convergência metodológica desta ODF com a operação da rede da RNP. Justifica-se que os modelos de contratação da RNP representam o estado da arte em termos de definições técnicas e aderência às especificidades geográficas e operacionais do território brasileiro, servindo como o espelho ideal para a política pública de conectividade das instituições de ensino.
+Dessa forma, a utilização dos valores de referência da RNP assegura a eficiência econômica, pois os contratos da RNP incorporam ganhos de escala e condições de mercado diferenciadas, validados por uma ampla base de contratos capilarizada em todas as regiões do país. Portanto, a solução técnica alinhada aos referenciais praticados pela RNP garante a compatibilidade com o mercado de telecomunicações e o cumprimento dos princípios de eficiência na aplicação dos recursos públicos.
+Adicionalmente, considerou-se um custo para a implantação do serviço de conectividade (taxa de instalação), também estimado com base no histórico de contratos da RNP desde 2010, que observa que as taxas de instalação cobradas pelas operadoras de telecomunicações representam, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Com base nesse prazo e nos custos apurados, foi desenvolvida a planilha de cálculo anexa ao Informe 187/2025/PRUV/SPR (Anexo II - Valores de referência ODF para Conectividade em instituições públicas de ensino superior - SEI nº 14890893). Esta planilha sistematiza o cálculo dos custos totais do projeto e requer a seguinte customização para obter o cálculo final:
+ Acessar a aba "1B ENT TOTAL INSTITUIÇÕES";
+ Informar a quantidade exata de instituições a serem contempladas pela política pública de conectividade, por região;
+ O resultado final pode ser verificado na aba "CAPA".
+Posteriormente, foi identificada a necessidade de revisão dos valores de custo da Obrigação de Fazer (ODF) do "Circuito de Transporte Ponto a Ponto (item I): Contratação de circuito de transporte para a conexão das instituições de ensino à rede da RNP" tendo em vista a revisão pela própria RNP das premissas originalmente consideradas para o cálculo dos custos médios do megabit (Mb/s). 
+O detalhamento da metodologia e valores resultantes, bem como as novas referências de custos encaminhadas pela RNP, que refletem a revisão das premissas metodológicas, encontram-se consolidadas no Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e em seus Anexos.
+Seguindo a mesma abordagem da valoração anterior, adotou-se como referência de custo o valor médio regional mais recente relativo ao ano de 2025, o qual foi projetado de forma constante ao longo do horizonte do modelo. O prazo para a manutenção do circuito de transporte ponto a ponto (Opex) foi fixado em 3 (três) anos. Adicionalmente, computou-se o custo adicional da taxa de instalação, estimado a partir do histórico de contratos da RNP, que representa, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Já em relação ao "Item III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto)", "aplicam-se os custos de implantação de rede de transporte com tecnologia Dense Wavelength Division Multiplexing (DWDM), já previstos no instrumento da OdF, visando o atendimento a instituições de ensino localizadas em regiões remotas. A escolha por backhaul em fibra óptica com tecnologia DWDM, em detrimento de alternativas com limitações de desempenho, como micro-ondas e satélites, é fundamental pois garante a alta disponibilidade, a baixa latência e a elevada capacidade da rede, elementos cruciais para o cumprimento do SLA do circuito nos padrões RNP. A precificação considerou premissas relativas tanto à implantação completa da rede DWDM (abrangendo todos os equipamentos da solução DWDM, a rede externa de fibra óptica e a infraestrutura civil das estações) quanto à operação e manutenção dos ativos por um horizonte temporal de 3 (três) anos. Os valores e detalhamentos associados a estes custos estão dispostos no Informe nº 8/2023/CPAE/SCP (SEI nº 9663283), em seu anexo Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261)".
+Ainda quanto aos custos, destacou-se questão relevante acerca do período de manutenção da infraestrutura (Opex), contido no modelo de custo apresentado pela CPAE. A esse respeito, este Conselho Diretor tem entendido que a operadora sancionada não deve somente proceder à instalação da infraestrutura, mas mantê-la operacional e atendendo aos consumidores por um período mínimo de 3 (três) anos, de forma que a inclusão de custos operacionais para o cálculo de estimativa de obrigações de fazer já é questão pacificada no âmbito deste Colegiado.
+Assim, o presente projeto de ODF consiste na instalação e na manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), de modo que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519). A depender da infraestrutura de conectividade disponível para a instituição contemplada, o projeto prevê a instalação de backhaul de fibra óptica, com especial enfoque para instituições de ensino localizadas em regiões remotas.
+Dessa forma, além da comprovação de instalação e manutenção das infraestruturas, a Prestadora também deverá comprovar ter atendido aos parâmetros definidos no referido modelo de contrato (SEI nº 14963517 e 14963519).
+Por fim, quanto à seleção das instituições de ensino superior, pesquisa e extensão, a Prestadora deverá utilizar a versão atualizada da lista disponibilizada no documento SEI nº 14963393, a qual, conforme anteriormente explicitado, ainda sofrerá alteração, vez que estão em debate com a RNP a inclusão de novas unidades.
+Das considerações adicionais a serem observadas na aplicação da sanção de obrigação de fazer 
+Como bem colocado pela Área Técnica (itens 3.56 a 3.60 do Informe nº 187/2025/PRUV/SPR - SEI nº 14883767), o monitoramento da implementação de compromissos estabelecidos pela Anatel em troca de valores a serem arrecadados pelo Estado já suscitou preocupações expressas por órgãos de controle, por essa razão, as decisões de sanção de obrigação de fazer devem prever regras para o seu acompanhamento e verificação de seu cumprimento, de modo que o procedimento seja realizado com maior segurança jurídica para as partes envolvidas.
+Dos contornos da obrigação de fazer 
+Os itens 3.61 a 3.76 do Informe da Área Técnica (SEI nº 14883767) detalham a obrigação, seu acompanhamento, requisitos a serem observados, forma de comprovação e, ainda, a possibilidade de recomposição da sanção de obrigação de fazer e a aplicação de multa em caso de descumprimento.
+Destaca referido Informe que o art. 36-A do Rasa determina que as sanções de obrigações de fazer devem ser cumpridas nos prazos previstos na decisão que as aplica, rememorando que, no caso da obrigação de fazer aplicada em segunda instância, o §3º prevê que o infrator fará jus a um fator de redução de 5% (cinco por cento) sobre o valor correspondente à sanção aplicada em segunda instância, caso não se manifeste pela preferência pela sanção de multa.
+Tal fator de redução, contudo, será aplicado após a correção do valor da sanção de multa adotado como referência para a OdF, nos termos do art. 36-A, §6º, II, do Rasa. Nesse sentido, o valor será corrigido a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, até a data da publicação do Acórdão.
+Nos termos do art. 16-A, II, do RASA, acompanho sugestão da Área Técnica para conceder o prazo de 60 (sessenta) dias para que a Prestadora se manifeste. Nesse período, a prestadora deverá (a) apresentar o projeto técnico referente à obrigação de fazer ora aplicada, levando em conta o apontamento das unidades a serem contempladas, a partir da lista consolidada pela Anatel e considerando apenas as unidades ainda não contempladas em ODFs objeto de outros processos, a análise das diversas circunstâncias relacionadas à execução de projetos de infraestrutura, tais como a verificação da viabilidade de obtenção de licenças urbanísticas e ambientais, o levantamento de custos e o dimensionamento técnico dos projetos, ou (b) optar formalmente pela conversão da OdF em multa, abrindo mão do percentual de desconto previsto no Rasa.
+No caso da apresentação do projeto técnico da sanção imposta, nos termos do art. 16-A, §2º, do Rasa, até a validação da manifestação do infrator no prazo estabelecido no item acima, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento. A Anatel deverá validar o cumprimento dos requisitos e prazos estabelecidos para a seleção de localidades.
+Caso os custos associados ao projeto, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767) e revisados pelo Informe nº 23/2026/CPAE/SCP e anexos (SEI nº 15526325), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Ainda que não tenha sido objeto das considerações encaminhadas pela área técnica, entendo necessário se garantir a diversidade regional.
+Dessa forma, no caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas, podendo , da quarta em diante, a Prestadora adotar o critério que preferir.
+Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas. Da quarta em diante, a Prestadora poderá adotar o critério que preferir.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos nesta decisão não foram adequadamente obedecidos para todas as instituições selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor equivalente às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+Essa previsão está alinhada com a recomendação da Controladoria-Geral da União - CGU contida no "Relatório de Auditoria SAAI - Manifestação da CGU" (SEI nº 8945272), de 10 de agosto de 2022, para os casos de compromissos de backhaul. Confira-se:
+"Recomendação nº 2: Resolver os casos de sobreposição indicados no Anexo I deste Relatório de Auditoria, notadamente sobre as sobreposições dos compromissos de backhaul do Edital do 5G com as demais ações regulatórias e políticas públicas."
+Embora sejam tomadas todas as precauções necessárias para evitar a sobreposição de investimentos de origem pública, em infraestrutura de telecomunicações instalada com uma mesma finalidade, essa última medida se coloca como uma possibilidade de contornar eventuais sobreposições que venham a se verificar durante o acompanhamento do provimento da conectividade, priorizando-se a seleção de nova(s) instituição(ções) substitutiva(s) para o cumprimento da sanção de obrigação de fazer, ou, nessa impossibilidade por questões relacionadas ao prazo para cumprimento - resolvendo-se a questão mediante aplicação de sanção pecuniária.
+A multa aplicada deve ter sua exigibilidade suspensa quando a Anatel realizar a validação da manifestação da prestadora com o deferimento das localidades e, somente após o integral cumprimento da sanção de obrigação de fazer e o respectivo atesto pela autoridade competente, a multa deverá ser cancelada nos sistemas de crédito da Agência, conforme prevê o art. 36-A, §7º, do Rasa.
+Outra questão que perpassa pelo acompanhamento da sanção de obrigação de fazer diz respeito ao seu descumprimento. Nesta hipótese, uma vez atestado o não cumprimento da sanção de obrigação de fazer e não fazer, haverá o trâmite para a cobrança da multa, seja proporcional ou integral a depender se o descumprimento foi parcial ou total.
+No caso de descumprimento, a multa será calculada com base no valor descrito na decisão que estabeleceu a sanção de obrigação de fazer, atualizado por meio da Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-la, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer.
+A Agência poderá solicitar a apresentação de documentos complementares ou determinar a realização de inspeção durante o prazo de cumprimento e manutenção da obrigação assumida pela Prestadora.
+Da conclusão quanto à obrigação de fazer 
+Em conclusão, voto por:
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP, tendo como base o valor de R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado (i) no prazo de 6 (seis) meses a partir validação da manifestação da Prestadora pela Anatel, e mantido pelo período de 3 (três) anos; ou (ii) no prazo de 1 (um) ano, nos casos em que o enlace tenha que ser complementado com a instalação de backhaul de fibra ótica, e mantido pelo período de 2,5 (dois e meio) anos.
+O somatório do custo relativo à instalação da infraestrutura e o período de sua manutenção deve ser igual ou superior ao valor da multa aplicada, considerando as correções monetárias nos termos do RASA e a precificação apresentada no item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão" do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), revisado nos termos do Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e anexos ou por eventuais outros informes que, futuramente, vierem a ajustar os valores de referência considerados.
+O cumprimento da sanção de obrigação de fazer deverá ter por objeto levar conectividade às universidades públicas (federais, estaduais e municipais) e institutos federais.
+No caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas. Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas.
+Para fins de atendimento do disposto no item anterior, atendidas três macrorregiões ou unidades da federação distintas, conforme o caso, a Prestadora, em ainda havendo saldo, poderá escolher livremente as demais instituições que irá atender, entre aquelas constantes da lista.
+Para a instalação de backhaul de fibra óptica, a infraestrutura a ser instalada em cada instituição de ensino deverá possuir capacidade mínima de 10 Gbps (dez gigabits por segundo), do início ao ﬁm do trecho utilizado para atendimento da respectiva instituição de ensino. Além disso, nos projetos que envolverem Capex, a prestadora fica obrigada a disponibilizar o acesso à infraestrutura a partir da data de sua entrada em operação, nos termos da regulamentação específica, às demais prestadoras autorizadas de serviços de telecomunicações de interesse coletivo.
+O provimento da conectividade deve englobar a instalação e a manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), observando-se os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+A Prestadora deve selecionar as unidades das universidades públicas e institutos federais, estaduais e municipais entre aqueles indicados na lista constante da versão atualizada do documento SEI nº 14963393 , observadas as condições anteriormente expostas.
+Após a seleção das instituições de ensino, os custos associados aos projetos devem ser calculados de acordo com o item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão", detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), revisado nos termos do Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e anexos ou por eventuais outros informes que, futuramente, vierem a ajustar os valores de referência considerados, devendo-se observar quanto à aplicação de desconto o disposto no art. 36-A, §3º, do Rasa, bem como:
+Para o Circuito de Transporte, a Planilha Valores ODF Conectividade IPES (SEI nº 15538869); e
+Para o Backhaul de fibra óptica, a Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261).
+Nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, será aplicado o desconto de 5% (cinco por cento) previsto no Rasa.
+No prazo de 60 (sessenta dias), a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no Rasa, ou deverá, no mesmo prazo (i) apresentar projeto técnico da obrigação de fazer nos termos delimitados na presente Análise e no Informe 187/2025/PRUV/SPR (SEI nº 14883767),revisado nos termos do Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e anexos; (ii) informar as instituições selecionadas para o cumprimento da sanção, nos termos estabelecidos nos itens 4.92.1 a 4.92.6; e iii) no caso de instalação de backhaul de fibra óptica, apresentar declaração formal de que inexiste nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio.
+Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento.
+A Prestadora não adquire direito à lista de instituições públicas de ensino superior disponíveis para instalação de infraestrutura, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da Prestadora deve recair sobre as instituições públicas de ensino superior disponíveis na data em que ela comunicar à Anatel que cumprirá a sanção de obrigação de fazer.
+Eventuais conflitos decorrentes da seleção de instituições públicas de ensino superior pela operadora para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações.
+Uma vez formalizada junto à Anatel a seleção de instituições públicas de ensino superior realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal justificada à Superintendência de Controle de Obrigações, cabendo à autoridade competente decidir sobre a questão.
+A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão para seleção de instituições de ensino e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos.
+A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer ensejará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as instituições de ensino selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições de ensino, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+A instalação da infraestrutura, observados os requisitos previstos no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), deverá ser comprovada à Anatel em até 30 (trinta) dias após o exaurimento dos prazos previstos no item 4.92.1., e não poderá decorrer de acordos de RAN sharing, swap, aluguel de redes, contratos de exploração industrial ou outros meios contratuais. Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Quanto ao circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto):
+a comprovação da sua instalação deverá ser realizada, minimamente, mediante a apresentação: i) das configurações utilizadas nos equipamentos; ii) de relatórios de tráfego gerado nos equipamentos das instituições, relativos a um período mínimo de 15 (quinze) dias posteriormente à data de sua ativação; iii) de formulário e declaração do diretor ou responsável administrativo da instituição de ensino certificando que todos os requisitos foram cumpridos; iv) de formulário e declaração do responsável administrativo da Rede Nacional de Ensino e Pesquisa - RNP certificando que todos os requisitos foram cumpridos. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel, minimamente, relatórios de tráfego gerados dos equipamentos de todas as instituições de ensino atendidas em decorrência da presente decisão, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção das instituições, ou correspondentes a período posterior à data de término da obrigação, sob pena de sua conversão em multa. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+No caso da infraestrutura ser provida por meio de backhaul de fibra óptica:
+a comprovação da instalação da infraestrutura deverá ser realizada, minimamente, mediante a apresentação: de: i) as-built do projeto técnico implementado; ii) tela do sistema de gerência da prestadora, destacando o circuito físico entre os municípios de origem e destino da fibra, bem como sua capacidade; iii) tela do sistema de gerência da prestadora, destacando link lógico entre os municípios de origem e destino da fibra, bem como sua capacidade. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel e em avaliação com a prestadora; e
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel relatórios de tráfego indubitavelmente cursado nas redes instaladas, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção, ou correspondentes a período posterior à data de término da obrigação. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel.
+Os prazos de manutenção da conectividade em cada instituição de ensino são contados das datas de suas respectivas ativações. Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, aplica-se sanção de multa, em valor proporcional às estimativas de custos dos projetos das instituições de ensino em que não houver comprovação suficiente e tempestiva.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.92.1 a 4.92.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), revisado nos termos do Informe nº 23/2026/CPAE/SCP (SEI nº 15526325) e anexos, perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, novamente acrescidos o desconto previsto no art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção.
+Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A.
+No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa.
+Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho:
+dar parcial provimento ao Recurso para alterar o caráter sistêmico das infrações aos arts. 50, I c/c/ 57, §3º, II e IV; 57, §1º e 57, §2º, todos do RGC;
+dar parcial provimento ao Recurso para aplicar o percentual de descumprimento da obrigação na infração ao art. 50, I c/c/ 57, §3º, II e IV, todos do RGC;
+alterar o valor da multa de R$30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos) para R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos);
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da RNP, tendo como base o valor de R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos) com as correções monetárias e dedução, nos termos do Rasa, a ser implementado nos termos expostos em especial no item 4.92 da presente Análise;
+Conceder o prazo de 60 (sessenta dias), a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 07/05/2026, às 16:57, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15196033 e o código CRC 1FBDF6D0.
+ | 
+Referência: Processo nº 53500.005408/2019-11 | 
+SEI nº 15196033 |

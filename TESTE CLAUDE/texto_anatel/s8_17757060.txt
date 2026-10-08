@@ -1,0 +1,43 @@
+SEI/ANATEL - 15874957 - Acórdão
+Boletim de Serviço Eletrônico em 29/06/2026
+DOU de 29/06/2026, seção 1, página 8
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 162, de 26 de junho de 2026
+Processo nº 01217.004027/2026-46
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 156, de 26 de junho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ACESSO À INFORMAÇÃO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. DADOS DO CADASTRO NACIONAL DE ESTAÇÕES MÓVEIS IMPEDIDAS - CEMI E DO PAINEL DE SEGURANÇA PÚBLICA. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo de segunda instância interposto contra decisão que proveu parcialmente Recurso anterior em pedido de acesso à informação sobre dados estatísticos e documentação associada ao Cadastro Nacional de Estações Móveis Impedidas - CEMI.
+2. Fato relevante. O Requerente solicitou, em formato aberto, série histórica de 2016 a 2026 com dados de bloqueios de IMEIs, discriminação por motivo e por Unidade da Federação, dados de desbloqueio com respectivos resultados e dicionário de dados ou documentação metodológica.
+3. As decisões anteriores. A resposta inicial afirmou que a Anatel não tinha competência para responder sobre o assunto. O Recurso de primeira instância foi conhecido e parcialmente provido, com indicação de disponibilidade parcial de informações em painel público da Agência e esclarecimento de que parte dos dados não existia, na Anatel, nos exatos termos requeridos.
+4. Objeto recursal remanescente. No Recurso de segunda instância, o Interessado sustentou contradição entre a negativa de acesso a dados de desbloqueio e a existência de painel público que faz referência a bloqueios e desbloqueios, além de apontar omissão quanto à documentação metodológica e ao dicionário de dados.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a base de dados utilizada para alimentar o Painel de Segurança Pública contém variáveis individualizadas de bloqueios e desbloqueios; (ii) saber se existe documentação metodológica, dicionário de dados ou metadados associados ao painel; e (iii) saber quais informações remanescentes estão sob custódia da Anatel e quais são geridas por outra entidade.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo. Também estão presentes o interesse recursal e a legitimidade do recorrente.
+2. Compete ao Conselho Diretor deliberar sobre o Recurso de segunda instância.
+3. A controvérsia não envolve produção de informação nova. A controvérsia envolve a verificação da existência, da custódia e da disponibilidade de dados e documentos eventualmente já existentes nas bases utilizadas pela Agência.
+4. A decisão recorrida esclareceu a existência de dados de bloqueios em painel público. Contudo, os argumentos do Recorrente sobre os desbloqueios exigiram exame adicional, porque se basearam em elementos objetivos extraídos do próprio painel institucional.
+5. A área técnica informou que a Anatel recebe, por meio do Sistema Coleta, dados das prestadoras que alimentam o painel público. Informou também que esses dados incluem registros de bloqueios e desbloqueios e que há planilha com os números de bloqueios, desbloqueios e saldo.
+6. A área técnica esclareceu que não há, na base da Anatel, segmentação mais detalhada por subtipo de motivo, como distinção entre roubo e furto, na granularidade pretendida pelo Recorrente.
+7. Quanto ao dicionário de dados, a área técnica informou que não existe documento autônomo formal com essa finalidade. Informou, porém, que o painel contém descrição das origens dos bloqueios e desbloqueios e identifica as categorias utilizadas.
+8. As categorias descritas no painel abrangem Secretarias de Segurança Pública, Ministério da Justiça e Segurança Pública, prestadoras do Serviço Móvel Pessoal -SMP, GSMA, empresas de varejo e telefones irregulares.
+9. Quanto aos dados brutos referentes às solicitações de bloqueio, a área técnica informou que sua gestão é feita pela Associação Brasileira de Recursos em Telecomunicações - ABR Telecom.
+10. A simples indicação de portal eletrônico não exaure o dever de resposta quando subsistem dúvidas objetivas sobre a existência, a custódia e a disponibilidade das informações. Nesses casos, a Administração deve esclarecer de forma expressa o que existe, o que não existe e o que não está sob sua guarda.
+11. A solução adequada é o provimento parcial do Recurso para contemplar os esclarecimentos remanescentes sobre a existência de dados de desbloqueio na base que alimenta o painel, sobre a inexistência de dicionário formal autônomo e sobre a custódia, por entidade diversa, dos dados brutos de solicitações de bloqueio.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e parcialmente provido.
+Tese de julgamento: "1. É cabível o provimento parcial do recurso de segunda instância em matéria de acesso à informação quando persistem dúvidas objetivas sobre a existência, a custódia e a disponibilidade de dados utilizados em painel público da Administração. 2. Não há dever de produzir informação nova, mas há dever de esclarecer de forma expressa se existem bases, variáveis, metadados ou documentos técnicos aptos a atender, total ou parcialmente, ao pedido. 3. Existindo, na base que alimenta o painel público, registros de bloqueios e desbloqueios, a informação deve ser disponibilizada nos limites da custódia da Agência. 4. Inexistindo dicionário formal autônomo de dados, a Administração deve declarar essa circunstância e indicar a documentação explicativa efetivamente disponível. 5. Quanto aos dados brutos geridos por outra entidade, a Administração deve esclarecer a ausência de custódia própria."
+Dispositivos relevantes citados: Lei nº 12.527/2011, arts. 11 e 15; Decreto nº 7.724/2012, art. 21; Lei nº 9.784/1999; Resolução nº 612/2013.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 53/2026/OP (SEI nº 15856998), integrante deste acórdão, conhecer do Recurso Administrativo de Segunda Instância para, no mérito, dar-lhe provimento parcial. 
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 26/06/2026, às 16:40, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15874957 e o código CRC 3669510B.
+ | 
+Referência: Processo nº 01217.004027/2026-46 | 
+SEI nº 15874957 |

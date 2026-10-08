@@ -1,0 +1,75 @@
+{
+ "metodo": "Auditoria manual: scripts/aneel_auditoria.py sorteia 40 itens estratificados (composta>=2 partes 10, maioria 8, vista 6, retirada/destaque 3, não deliberado 2, impedimento 2, ausente 3, unanimidade simples 6) com semente fixa; o auditor (eu) leu o texto da ata (decisao_texto) item a item e conferiu relator, resultado (todas as ações), partes (nº, modo, ações), vencidos e a linha de voto de cada diretor. 'votos' = todas as linhas do item corretas ou marcadas REVISAR de propósito (REVISAR não conta como erro, mas também não como acerto resolvido).",
+ "rodadas": [
+  {
+   "semente": 2026,
+   "momento": "1ª versão do rotulador de resultado",
+   "n": 40,
+   "relator": "40/40",
+   "resultado": "27/40 (67%)",
+   "partes": "32/32",
+   "vencidos": "13/13",
+   "votos": "39/40 (1 REVISAR)",
+   "erros": "resultado: verbos achados em nomes/descrições (Autorizações, Resolução Homologatória, Revisão Tarifária, 'com vistas a determinar'), rótulos de fallback truncados (fixar, definir, anular, indicar), parte III de RPO13-4 rotulada MANTIDO",
+   "correcao": "rótulos só por verbo no infinitivo, corte em conectivos de finalidade (com vistas a, para + infinitivo, destinada a), remoção de trechos entre aspas, ~90 verbos, prefixo do cabeçalho"
+  },
+  {
+   "semente": 7,
+   "momento": "após 1ª correção",
+   "n": 40,
+   "relator": "40/40",
+   "resultado": "27/40 (67%)",
+   "partes": "31/32",
+   "vencidos": "13/14",
+   "votos": "40/40 (1 REVISAR)",
+   "erros": "'NEGADO' duplicado em 'negar provimento' (12 itens); 'prorrogação' (substantivo) virando PRAZO PRORROGADO; RPO2-9: o líder do voto-vista (Ludimila) entrou em 'vencidos' porque a oração 'vencido o relator, e acompanhando o voto-vista da Diretora L' não foi cortada em 'acompanhando'",
+   "correcao": "dedupe de NEGADO; remoção de formas nominais (prorrogação/aprovação/homologação); seg_vencidos corta em 'acompanhando'; novo QA (d) 'líder do voto vencedor nunca está entre os vencidos'"
+  },
+  {
+   "semente": 99,
+   "momento": "após 2ª correção",
+   "n": 40,
+   "relator": "40/40",
+   "resultado": "38/40 (95%)",
+   "partes": "100%",
+   "vencidos": "100%",
+   "votos": "38/40 resolvidos + 2 REVISAR (não deliberados com posições de 3 diretores ausentes do texto)",
+   "erros": "RPO5-28: 'PROVIMENTO' espúrio dentro de 'não dar provimento'; RPC17-35: 'FORMALIZADO' vindo de 'destinada a formalizar'",
+   "correcao": "negação 'nao dar provimento' e conectivo 'destinad[ao] a'"
+  },
+  {
+   "semente": 2027,
+   "momento": "após 3ª correção",
+   "n": 40,
+   "relator": "40/40",
+   "resultado": "37/40 (92.5%)",
+   "partes": "100%",
+   "vencidos": "100%",
+   "votos": "38/40 + 2 REVISAR",
+   "erros": "RPO14-3: dataset diz 'Retirado da Pauta' mas o texto é 'deliberação permanece suspensa por ausência de 3 votos' (votos válidos de RPO13) -> tratado como retirada; RPO13-24 e RPO7-19: a ação do cabeçalho ('conhecer e dar parcial provimento, no sentido de: (i)...') não aparecia no resultado",
+   "correcao": "texto 'ausência de 3 (três) votos' reclassifica para Não Deliberado e herda as posições do item do mesmo processo na reunião citada (cross-ref RPO/RPC); resultado prefixado com a ação do cabeçalho"
+  },
+  {
+   "semente": 31415,
+   "momento": "após 4ª correção (amostra final, não usada para ajustar regras antes da leitura)",
+   "n": 40,
+   "relator": "40/40 (100%)",
+   "resultado": "38/40 (95%)",
+   "partes": "32/32 (100%)",
+   "vencidos": "100%",
+   "votos": "38/40 resolvidos (95%) + 2 REVISAR; 0 erros",
+   "erros": "RPO13-4: 'SANÇÃO/APLICAÇÃO' espúrio ('ao aplicar os dispositivos') e redundante; RPO4-9: prorrogação de vista por maioria mostrava '60 dias' (voto vencido) em vez de 'até a RPO de 24/03/2026'",
+   "correcao": "'aplicar' ignorado após 'ao/para'; prazo da prorrogação lido só da sentença de decisão; prefixo só quando acrescenta rótulo -- os 2 itens foram reconferidos depois da correção"
+  }
+ ],
+ "final": {
+  "amostra_final": "semente 31415, 40 itens",
+  "relator": 1.0,
+  "resultado": 0.95,
+  "partes": 1.0,
+  "vencidos": 1.0,
+  "votos_resolvidos": 0.95,
+  "votos_errados": 0,
+  "observacao": "taxas acima são as da leitura ANTES da última correção (sem viés de ajuste); depois dela os 2 erros de resultado foram corrigidos e reconferidos. Todos os campos >= 95%. 5 rodadas x 40 = 200 itens lidos (~20% dos 1001)."
+ }
+}

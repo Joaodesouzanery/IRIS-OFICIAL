@@ -1,0 +1,90 @@
+SEI/ANATEL - 14878205 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 34/2025/OP
+Processo nº 53504.001158/2019-19
+Interessado: TEL TELECOMUNICACOES LTDA.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso de Ofício em razão de decisão proferida por meio do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909) em que houve exoneração de créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO DE OFÍCIO. EXONERAÇÃO DE CRÉDITOS TRIBUTÁRIOS DO FUST. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso de ofício interposto contra decisão que extinguiu créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) para o exercício de 2017.
+ Fato relevante. Fiscalização apurou débito de [Item 1 do Apartado Sigiloso]. Empresa apresentou impugnação alegando ausência de prestação de serviços de telecomunicações. Nova diligência concluiu pela improcedência dos valores e extinção dos lançamentos.
+ Decisões anteriores. Despacho Decisório extinguiu os créditos. Procuradoria Federal Especializada junto à Anatel e área técnica opinaram pelo conhecimento e não provimento do recurso.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o recurso de ofício é cabível nos termos da Resolução Interna Anatel nº 338/2024; e (ii) saber se o recurso deve ser provido para restabelecer os créditos tributários ou mantida a exoneração por ausência de fato gerador.
+III. RAZÕES DE DECIDIR
+ A Resolução Interna Anatel nº 338/2024 condiciona o cabimento do recurso de ofício à fase litigiosa e à exoneração superior a R$ 500.000,00.
+ A exoneração decorre de conclusão técnica de ausência de fato gerador, nos termos dos arts. 145 e 149 do CTN.
+ Procuradoria Federal Especializada junto à Anatel opinou pelo conhecimento e não provimento do recurso, confirmando a improcedência do débito.
+IV. DISPOSITIVO E TESE
+Recurso de ofício conhecido e não provido.
+Tese de julgamento: "1. É cabível o recurso de ofício contra decisão de exoneração de créditos tributários do Fust quando presentes fase litigiosa e valor superior a R$ 500.000,00. 2. Mantém-se a exoneração dos créditos tributários referentes ao Fust relativos ao exercício de 2017 por ausência de fato gerador."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (CTN), arts. 145 e 149; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, art. 34; Resolução Interna Anatel nº 338, de 15 de julho de 2024, art. 1º.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerias de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso de Ofício em razão de decisão proferida por meio do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909) em que houve exoneração de créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+A Anatel, com o objetivo de verificar a higidez do recolhimento da contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (Fust), prevista no art. 6º, IV, da Lei nº 9.998/2000, elaborou o Relatório de Fiscalização nº 19/2020/GR01FI1/GR01/SFI (SEI nº 5432690), o qual apurou os valores devidos no montante de [Item 2 do Apartado Sigiloso].
+A partir do cotejo dos valores apurados pela fiscalização com aqueles declarados pelo contribuinte, a Anatel, ao identificar valores ainda devidos ao Fundo, procedeu ao lançamento de ofício da diferença constatada e emitiu a Notificação de Lançamento nº 001-003545/2021/AFFO-ANATEL (SEI nº 7276319), a qual foi recebida em 23/08/2021, conforme AR (SEI nº 7360849).
+Em 21/09/2021 (SEI nº 7433027), o contribuinte apresentou, tempestivamente, a impugnação (SEI nº 7433011).
+Foi então elaborado o Informe nº 46/2025/COGE/SCO (SEI nº 13317902), que opinou pela extinção dos lançamentos dos créditos tributários referentes à contribuição ao Fust e à multa de ofício, para o exercício de 2017, nos termos do art. 145, c/c art. 149 do Código Tributário Nacional.
+Nos termos do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909), foram extintos os créditos tributários e apresentado Recurso de Ofício ao Conselho Diretor.
+A Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) manifestou-se por meio da Nota nº 00049/2025/PFE-ANATEL/PGF/AGU (SEI nº 14320200), opinando pelo conhecimento e não provimento do Recurso de Ofício.
+A área técnica, no Informe nº 940/2025/COGE/SCO (SEI nº 14352803) confirmou sua posição de exoneração fiscal e encaminhou o recurso de ofício para análise do Conselho Diretor.
+A matéria foi encaminhada para julgamento deste colegiado nos termos da MACD nº 671/2025 (SEI nº 14353409).
+Fui designado relator da matéria por meio do sorteio realizado em 27/11/2025.
+É o relatório.
+DA ANÁLISE
+O Decreto nº 70.235/1972, que dispõe sobre o processo administrativo fiscal, determina o recurso de ofício das decisões que exonerem valores tributários, nos seguintes termos:
+Art. 34. A autoridade de primeira instância recorrerá de ofício sempre que a decisão:
+I - exonerar o sujeito passivo do pagamento de tributo e encargos de multa de valor total (lançamento principal e decorrentes) a ser fixado em ato do Ministro de Estado da Fazenda.
+Por meio do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909), extinguiu-se os lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e à multa de ofício, para o exercício de 2017, nos termos do art. 145, c/c art. 149 do Código Tributário Nacional, o que implicou em exoneração tributária e provocou o recurso de ofício, nos termos do Decreto supracitado.
+Como consequência do Recurso de Ofício, a eficácia da decisão em primeira instância, que exonera o sujeito passivo de tributo, fica condicionada a sua ratificação pela autoridade de segunda instância, qual seja, o Conselho Diretor. Assim, enquanto o Recurso de Ofício não for apreciado pelo Conselho Diretor, a decisão de primeira instância não transita em julgado e não ocorre a constituição definitiva do crédito tributário, o que impede o início da contagem do prazo prescricional, conforme art. 174 do Código Tributário Nacional (CTN).
+No âmbito da Anatel, o limite de alçada para a interposição de Recurso de Ofício foi definido pela Portaria nº 1.125/2014, nos seguintes termos:
+Art. 4º Nos casos de decisão que exonera o sujeito passivo do pagamento de créditos tributários de valor nominal igual ou superior a R$ 200.000,00 (duzentos mil reais), a Superintendência competente recorrerá de oficio ao Conselho Diretor.
+Em 13 de abril de 2018, a Portaria nº 614 alterou o limite de alçada para interposição de Recurso de Ofício para R$ 500.000,00 (quinhentos mil reais), além de revogar o citado art. 4º da Portaria nº 1.125/2014:
+Art. 1º A autoridade julgadora de primeira instância do processo administrativo fiscal - PAF recorrerá de ofício sempre que a decisão exonerar o sujeito passivo do pagamento de tributo, cujo valor total do lançamento ultrapasse R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais.
+[...]
+Art. 3º Fica revogado o art. 4º da Portaria nº 1.125, de 24 de outubro de 2014.
+Posteriormente, a Resolução Interna Anatel nº 338, de 15 de julho de 2024, revogou a Portaria nº 614/2018. A recente resolução aprovou as novas regras para a interposição do Recurso de Ofício para que constasse a desvinculação da Revisão de Ofício do Recurso de Ofício, mantendo-se o entendimento de que o limite de alçada ao se estabelecer o Recurso de Ofício somente será cabível quando, cumulativamente, esteja na fase litigiosa e a exoneração tenha sido superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais. Senão vejamos:
+"Art. 1º O Recurso de Ofício somente será cabível no Processo Administrativo Fiscal - PAF que, cumulativamente, esteja na fase litigiosa e cuja exoneração tenha sido superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais.
+§ 1º O valor total a que se refere o caput será verificado por processo.
+§ 2º A fase litigiosa do PAF inicia-se por ato praticado pelo contribuinte, consubstanciado na apresentação da impugnação à notificação de lançamento, conforme art. 14 do Decreto nº 70.235, de 6 de março de 1972, e se estende até o exaurimento da instância administrativa, que se dá com o trânsito em julgado da decisão que venha a constituir definitivamente o crédito tributário."
+No caso dos autos, inicialmente, a equipe de fiscalização concluiu que os valores para contribuição ao FUST totalizavam [Item 3 do Apartado Sigiloso] para o exercício 2017.
+Em sede de Impugnação, a empresa alegou que não presta serviços de telecomunicações e que as mencionadas contas contábeis se referem a serviços de obras e manutenção que são prestados pela impugnante às operadoras de telecomunicação (essas sim prestadoras de serviços de telecomunicação), serviços estes que não constituem fato gerador da contribuição combatida.
+Tendo em vista tal alegação, foi feita nova diligência contábil tributária, e os autos foram encaminhados à Gerência de Fiscalização, que elaborou o Relatório de Fiscalização nº 165/2024/GR01FI1/GR01/SFI (SEI nº 12968328), em que a fiscalização concluiu pela improcedência dos valores constantes no Relatório de Fiscalização nº 19/2020/GR01FI1/GR01/SFI (SEI nº 5432690), conforme tabela abaixo: 
+[Item 4 do Apartado Sigiloso]
+Em face da conclusão do referido relatório, foi elaborado o Informe nº 940/2025/COGE/SCO (SEI nº 14352803), que opinou pela extinção dos lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e à multa de ofício, para o exercício de 2017, nos termos do art. 145, c/c art. 149 do Código Tributário Nacional.
+A conclusão da área técnica foi referendada pela SCO por meio do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909).
+A empresa foi notificada da decisão por meio do Ofício nº 91/2025/COGE/SCO-ANATEL (SEI nº 13317912).
+Assim, diante da referida exoneração de tributos acima do limite de alçada previsto na Portaria nº 614, a Superintendente de Controle de Obrigações interpôs Recurso de Ofício a este Conselho Diretor.
+Os autos foram encaminhados à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), que emitiu Nota nº 00049/2025/PFE-ANATEL/PGF/AGU (SEI nº 14320200), que apresentou a seguinte conclusão favorável à extinção dos créditos tributários, em face da não ocorrência de fato gerador:
+8. ISTO POSTO, opino pelo conhecimento do Recurso de Ofício, uma vez que alcança o valor de alçada estabelecido pelo art. 1º do Anexo da Resolução Interna Anatel nº 338, de 15 de julho de 2024, devendo, no entanto, ser rejeitado no mérito, mantendo-se, desse modo, o Despacho nº 38/2025/COGE/SCO (SEI nº 13317909), extinguindo-se os créditos tributários impugnados, ante a ausência de fato gerador de cide-Fust
+(grifos no original)
+Considerando, o posicionamento favorável da PFE-Anatel, considero correta a exoneração realizada, devendo o recurso de ofício ser conhecido e não provido.
+Tendo em vista que o Fust e o Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel) compartilham da mesma base de cálculo para aferição de seus valores devidos, julgo prudente determinar à Superintendência de Controle de Obrigações (SCO) a comunicação da presente decisão ao Ministério das Comunicações (MCom), órgão com capacidade tributária ativa para cobrança do Funttel, para que tome as providências que julgar cabíveis.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por:
+conhecer e negar provimento ao recurso de ofício, reconhecendo a extinção dos créditos tributários decididos nos termos do Despacho Decisório nº 38/2025/COGE/SCO (SEI nº 13317909);
+determinar à Superintendência de Controle de Obrigações que comunique a presente decisão ao Ministério das Comunicações, órgão com capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), para que tome as providências cabíveis na esfera de suas atribuições.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14878205 e o código CRC 0A20EBA9.
+ | 
+Referência: Processo nº 53504.001158/2019-19 | 
+SEI nº 14878205 |

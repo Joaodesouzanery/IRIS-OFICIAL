@@ -1,0 +1,76 @@
+SEI/ANATEL - 15218548 - Voto
+Boletim de Serviço Eletrônico em 31/03/2026
+Voto nº 16/2026/PR
+Processo nº 53500.003030/2026-41
+Interessado: Agência Nacional de Telecomunicações
+presidente
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Celebração de Memorando de Entendimento (MdE) com o Comissário de Comunicações da República de Chipre, representando a Autoridade de Segurança Digital (DSA) e o Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (OCECPR).
+EMENTA
+Memorando de Entendimento. AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES. Comissário de Comunicações da República de Chipre. Autoridade de Segurança Digital (DSA). Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (OCECPR). cooperação técnica. comunicações eletrônicas e segurança cibernética. aprovação.
+Proposta de celebração de Memorando de Entendimento com o Comissário de Comunicações da República de Chipre, representando a Autoridade de Segurança Digital (DSA) e o Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (OCECPR).
+Formalização de cooperação técnica em temas de interesse comum relacionados a comunicações eletrônicas e segurança cibernética. 
+Pela aprovação da proposta, nos termos das minutas SEI nº 15119239 (versão em língua portuguesa) e SEI nº 15119253 (versão em língua inglesa).
+REFERÊNCIA
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Processo nº 53500.000161/2020-81 - Memorandos de Entendimento.
+Informe nº 2/2026/AIN (SEI nº 15040488).
+Proposta de Memorando de Entendimento em língua portuguesa (SEI nº 15119239).
+Proposta de Memorando de Entendimento em língua inglesa (SEI nº 15119253).
+Minuta de Resolução Interna (SEI nº 15126114).
+Matéria para Apreciação do Conselho Diretor nº 80/2026 (SEI nº 15126277).
+RELATÓRIO
+i - DOS FATOS
+Trata-se de Memorando de Entendimento (MdE) a ser celebrado entre a Anatel e o Comissário de Comunicações da República de Chipre, representando a Autoridade de Segurança Digital (DSA) e o Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (OCECPR), visando ampliar a cooperação entre os países em temas de interesse comum relacionados a comunicações eletrônicas e segurança cibernética. 
+O Chipre é um Estado-membro da União Europeia, localizado no Mediterrâneo Oriental, estrategicamente posicionado entre a Europa, Ásia e África. A ilha possui aproximadamente 1,3 milhão de habitantes e uma economia diversificada, com particular destaque para os setores de serviços financeiros, turismo e tecnologia. De 1º de janeiro a 30 de junho de 2026, o Chipre, juntamente com Polônia e Dinamarca, exercem a presidência do Conselho da União Europeia. 
+No campo diplomático, segundo dados do Ministério das Relações Exteriores, Brasil e Chipre mantêm relações desde 1966, sustentadas por diálogo político construtivo e crescente aproximação econômica ao longo das últimas décadas. A abertura das embaixadas em Nicósia (2010) e em Brasília (2009) marcou novo patamar de engajamento, refletido em visitas de alto nível, cooperação energética e incremento substancial do intercâmbio comercial, que alcançou cerca de US$ 240 milhões em 2023, majoritariamente composto por exportações brasileiras. No plano político, o Brasil adota posição de equilíbrio, apoiando iniciativas multilaterais como a Força das Nações Unidas de Manutenção da Paz em Chipre (UNFICYP) (https://www.gov.br/mre/pt-br/assuntos/relacoes-bilaterais/todos-os-paises/republica-de-chipre). 
+Em matéria de comunicações, de acordo com avaliação feita pela União Internacional de Telecomunicações (UIT), o Chipre apresenta um bom nível de conectividade digital, com alta proporção de indivíduos utilizando a Internet e ampla cobertura de redes móveis de banda larga. Observa-se também um número significativo de assinaturas de banda larga fixa e móvel por 100 habitantes, refletindo um ecossistema de TIC relativamente maduro e uma forte inserção digital da população. Destaque-se ainda os dados de penetração de serviços de telefonia móvel, uso de redes de alta velocidade e acesso a serviços digitais avançados. Os resultados evidenciam um ambiente favorável ao desenvolvimento de serviços digitais e à implementação de políticas de transformação digital. (https://datahub.itu.int/).
+A autoridade cipriota baseia-se na estrutura conjunta da Autoridade de Segurança Digital (Digital Security Authority - DSA) e do Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (Office of the Commissioner for Electronic Communications and Postal Regulation - OCECPR), responsáveis por temas críticos como segurança de redes e sistemas de informação, resiliência de infraestruturas essenciais e regulação do setor de comunicações eletrônicas.
+O OCECPR é a autoridade reguladora independente de Chipre, competente para a promoção dos interesses dos consumidores em termos de preços, disponibilidade de escolha, promoção da inovação e desenvolvimento da economia por meio do desenvolvimento da concorrência eficiente, controle da qualidade dos serviços oferecidos e garantia da prestação de um conjunto mínimo de serviços de Serviço Universal, tanto no mercado de comunicações eletrônicas quanto no mercado de serviços postais.
+No plano internacional, a OCECPR representa Chipre em fóruns como a UIT. Vale citar, ainda, que a OCECPR é membro do Organismo de Reguladores Europeus das Comunicações Eletrônicas (Body of European Regulators for Electronic Communications - BEREC), que tem como objetivo promover uma regulação independente, coerente e de alta qualidade dos mercados digitais, em benefício da Europa e de seus cidadãos. O trabalho do BEREC contribui para o bom funcionamento do mercado interno de redes e serviços de comunicações eletrônicas, assegurando a aplicação consistente do quadro regulatório da União Europeia e favorecendo um mercado interno eficaz no setor de telecomunicações, com ganhos para consumidores e empresas. 
+A DSA, por sua vez, é a autoridade nacional competente para a segurança de redes e dos sistemas de informação no Chipre, sendo responsável por atualizar e manter elevados níveis de Cibersegurança para operadores de serviços essenciais e infraestruturas críticas de informação. Fazem parte da sua estrutura organizacional:
+O Departamento Regulatório, de Estratégia e Supervisão (RSS);
+A Equipe Nacional de Resposta a Incidentes de Segurança Informática (CSIRT-CY);
+O Centro Nacional de Coordenação (NCC-CY); e
+A Autoridade Nacional de Certificação de Cibersegurança (NCCA).
+O Comissário de Comunicações representa legalmente a DSA e o OCECPR. 
+A intenção de aprofundar a aproximação entre ambos os reguladores, formalizando-a por meio de Memorando de Entendimento (MdE) surgiu no âmbito de reunião bilateral das delegações nacionais em 17 de outubro de 2025, em paralelo à Conferência Mundial de Desenvolvimento das Telecomunicações (WTDC25, na sigla em inglês), em Baku, Azerbaijão. Na ocasião constatou-se que uma maior sinergia de trabalhos poderia resultar em ganhos conjuntos, iniciando-se então a identificação de prioridades temáticas e a negociação do texto de Memorando apresentado neste Informe.
+A partir dessas discussões, foi elaborada a proposta de Memorando, nos termos das minutas SEI nº 15119239 (versão em língua portuguesa) e SEI nº 15119253 (versão em língua inglesa), conforme exposto no Informe nº 2/2026/AIN (SEI nº 15040488).
+Os autos foram então encaminhados para deliberação deste Colegiado por meio da Matéria para Apreciação do Conselho Diretor nº 80/2026 (SEI nº 15126277).
+É o relatório.
+II - DA PROPOSIÇÃO DA AIN
+Com base no cenário exposto, estruturou-se a proposta de MdE entre Anatel e o Comissário de Comunicações de Chipre com foco em fortalecer os laços entre as duas instituições e fomentar a colaboração técnica em temas de interesse comum de ambas as partes, relacionados a comunicações eletrônicas e segurança cibernética.
+Nesse sentido, os seguintes temas de trabalho foram propostos:
+Regulação e políticas em telecomunicações e tecnologias de convergência; 
+Tecnologias emergentes e novas, incluindo Inteligência Artificial (IA), em relação às comunicações eletrônicas; 
+Proteção ao consumidor em relação às comunicações eletrônicas; 
+Acesso universal aos serviços de comunicações eletrônicas; 
+Compartilhamento de conhecimento sobre tecnologias inovadoras e padrões técnicos em comunicações eletrônicas; 
+Certificação de equipamentos de comunicações eletrônicas; 
+Cibersegurança, incluindo considerações relacionadas a sistemas e riscos habilitados por IA; 
+Resiliência de cabos submarinos; 
+Transição digital e verde; 
+Coordenação em temas e fóruns internacionais, incluindo a União Internacional de Telecomunicações (UIT); e 
+Outras questões acordadas mutuamente por ambos os Participantes. 
+Sobre os métodos de trabalho, o MdE especifica algumas formas da cooperação como troca de informações e boas práticas, reuniões bilaterais e outras formas de cooperação mutuamente acordadas.
+Frisou-se que o Memorando não contempla obrigações financeiras ou repasse de recursos entre as partes. Os ônus previstos contemplam exclusivamente aqueles relacionados às despesas de organização de reuniões pela participante anfitriã. Por disposição expressa, cada parte arca com os custos de viagem e estadia de suas eventuais delegações.
+Dessa feita, a Assessoria propôs a aprovação do Conselho Diretor para assinatura do instrumento, informando que essa assinatura, caso aprovada pelo Colegiado, poderia ocorrer durante o Mobile World Congress (MWC), a ser realizado em Barcelona, no período de 2 a 5 de Março deste ano.
+III - DAS CONSIDERAÇÕES DESTE PRESIDENTE
+Inicialmente, mister destacar que é competência do Conselho Diretor da Anatel promover a articulação e coordenação do relacionamento com outras agências, organismos e entidades internacionais especializados em telecomunicações, conforme inciso LII do art. 133 do Regimento Interno da Agência:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+LII - promover a articulação e coordenação do relacionamento com outras agências, organismos e entidades nacionais e internacionais especializados em telecomunicações e com os órgãos dos Poderes Executivo, Legislativo e Judiciário;
+Assim, tratando-se de proposta de Memorando de Entendimento com o Comissário de Comunicações da República de Chipre, resta confirmada a competência deste colegiado para aprovação da matéria.
+Sobre questões financeiras, observo que o Memorando não contempla obrigações ou repasse de recursos entre as partes. Os ônus previstos abarcam exclusivamente aqueles relacionados ao planejamento e execução de atividades durante a recepção de missão da outra parte em visita; o fornecimento de instalações, materiais e instrutores para realização das atividades e apoio logístico. Por disposição expressa, cada parte arca com os vencimentos, transporte aéreo, passagens, diárias e assistência médica de suas eventuais delegações. Fica, portanto, afastada a aprovação pelo Congresso Nacional definida no art. 2º do Decreto nº 4.445, de 28 de outubro de 2002.
+Acerca do mérito do instrumento, entendo que a celebração do Memorando contribuirá para concretizar mais vertentes do quadro de cooperação técnica entre Brasil e Chipre. A previsão de articulação para atuação conjunta em foros internacionais, por si só, pode reforçar a parceria para fazer avançar posicionamentos brasileiros nos âmbitos da UIT, por exemplo.
+Nesse contexto, a celebração do MdE ampliará o portfólio de articulações internacionais da Anatel com a Europa, reforçando os laços com o Chipre, país membro da União Europeia e com atuação em foros de regulação e governança digital. A aproximação contribuirá para o intercâmbio de experiências regulatórias e o fortalecimento da cooperação em temas de interesse comum no âmbito das comunicações eletrônicas. 
+Assim, vislumbro que a parceria proposta pode ampliar a atuação internacional da Agência com um país que tem tido atuação cada vez mais destacada no setor, trazendo uma parceria de ganhos tanto técnicos quanto estratégicos. Dessa forma, opino pela aprovação de celebração do Memorando de Entendimento, com vistas dar condições permanentes e estáveis às atividades de cooperação com o Chipre.
+CONCLUSÃO
+Diante de todo o exposto, nos termos da Minuta de Resolução Interna SEI nº 15126114, proponho ao Conselho Diretor aprovar a assinatura de Memorando de Entendimento (MdE) entre a Agência Nacional de Telecomunicações (Anatel) e o Comissário de Comunicações da República de Chipre, representando a Autoridade de Segurança Digital (Digital Security Authority - DSA) e o Escritório do Comissário para Comunicações Eletrônicas e Regulação Postal (Office of the Commissioner for Electronic Communications and Postal Regulation - OCECPR).
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 09:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15218548 e o código CRC 686A3C11.
+ | 
+Referência: Processo nº 53500.003030/2026-41 | 
+SEI nº 15218548 |

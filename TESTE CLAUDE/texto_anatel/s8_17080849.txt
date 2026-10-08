@@ -1,0 +1,50 @@
+SEI/ANATEL - 15266362 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 54, de 03 de março de 2026
+Processo nº 53500.043774/2023-55
+Recorrente/Interessado: LIGGA TELECOMUNICAÇÕES S.A., SERCOMTEL S.A. TELECOMUNICAÇÕES
+CNPJ nº 04.368.865/0001-66 e nº 01.371.416/0001-89
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE RECONSIDERAÇÃO. TRANSFERÊNCIA DE OUTORGA DO SERVIÇO MÓVEL PESSOAL - SMP E AUTORIZAÇÕES DE RADIOFREQUÊNCIAS. NÃO CONHECIMENTO POR AUSÊNCIA DE INTERESSE RECURSAL. RECEBIMENTO COMO DIREITO DE PETIÇÃO. NOVO PEDIDO DE ANUÊNCIA PRÉVIA. PEDIDO PARCIALMENTE CONCEDIDO.
+I. CASO EM EXAME
+1. Pedido de Reconsideração apresentado por SERCOMTEL S.A. TELECOMUNICAÇÕES e LIGGA TELECOMUNICAÇÕES S.A. contra o Ato nº 6.591/2025, que transferiu a outorga para explorar o Serviço Móvel Pessoal - SMP e autorizações de radiofrequências associadas da SERCOMTEL para a LIGGA, consolidando, sem ônus, as outorgas do SMP originalmente autorizadas às empresas.
+2. As requerentes alegam fato superveniente relacionado a contrato de transferência de radiofrequências para a AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. (AMAZÔNIA 5G) e solicitam a suspensão dos efeitos do Ato nº 6.591/2025, sua revogação ou, alternativamente, o tratamento do pedido como novo requerimento de anuência prévia para transferência das outorgas da LIGGA para a SERCOMTEL.
+3. O Presidente do Conselho Diretor concedeu efeito suspensivo ao Ato nº 6.591/2025 até julgamento do mérito do pedido.
+4. Áreas técnicas e Procuradoria Federal Especializada junto à Anatel manifestaram-se pela ausência de interesse recursal, sugerindo o recebimento do pedido como direito de petição e novo pedido de anuência prévia.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Pedido de Reconsideração deve ser conhecido ou recebido como direito de petição; e (ii) saber se estão presentes os requisitos para aprovação do novo pedido de anuência prévia para transferência das outorgas do SMP e radiofrequências da LIGGA para a SERCOMTEL.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Reconsideração não deve ser conhecido por ausência de interesse recursal, pois o ato impugnado atendeu integralmente à pretensão das requerentes.
+2. O pedido pode ser recebido como direito de petição, nos termos do art. 5º, XXXIV, “a”, da Constituição Federal - CF/1988.
+3. A transferência de outorgas do SMP e radiofrequências da LIGGA para a SERCOMTEL não acarreta riscos concorrenciais, pois ocorre entre empresas do mesmo grupo econômico e não altera a participação de mercado.
+4. As requerentes apresentaram as declarações exigidas quanto à vedação à propriedade cruzada prevista no art. 5º da Lei nº 12.485/2011.
+5. A SERCOMTEL atendeu aos requisitos de habilitação jurídica, técnica, econômico-financeira e regularidade fiscal, conforme exigido pela legislação e regulamentação aplicáveis.
+6. A expedição do novo Ato de Transferência deve ser condicionada ao recolhimento do preço público devido, à comprovação de regularidade fiscal da sucessora e à apresentação de garantias de execução de compromissos, nos termos do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL.
+7. Não há necessidade de condicionantes relativas à transferência de base de clientes, pois não foram identificados acessos vinculados às outorgas objeto da operação.
+8. A transferência dos recursos de numeração ocorre automaticamente com a transferência da outorga, devendo as interessadas comunicar a operação à entidade administradora do sistema de numeração.
+9. A suspensão do Ato nº 6.591/2025 impediu a operacionalização da transferência anterior, sendo adequada a expedição de novo Ato formalizando o retorno das outorgas à SERCOMTEL e a celebração de Termo Aditivo para atualização dos Termos de Autorização.
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração não conhecido por ausência de interesse recursal, recebido como direito de petição e novo pedido de anuência prévia parcialmente acolhido.
+Tese de julgamento: "1. O Pedido de Reconsideração não deve ser conhecido por ausência de interesse recursal, sendo recebido como direito de petição. 2. Admite-se o novo pedido de anuência prévia para transferência das outorgas do SMP e radiofrequências da LIGGA para a SERCOMTEL, condicionado ao recolhimento do preço público devido, à comprovação de regularidade fiscal da sucessora e à apresentação de garantias de execução de compromissos, nos termos do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL. 3. Determina-se a expedição de novo Ato de Transferência e a celebração de Termo Aditivo para atualização dos Termos de Autorização."
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXIV, “a”; Lei nº 9.472/1997, arts. 71 e 133; Lei nº 12.485/2011, art. 5º; Lei nº 13.879/2019; Resolução nº 65/1998; Resolução nº 321/2002; Resolução nº 612/2013; Resolução nº 720/2020, arts. 14, 15, 16, 26 e 28; Súmula nº 19/2016 da Anatel; Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 9/2026/OP (SEI nº 15085757), integrante deste acórdão:
+a) não conhecer do Pedido de Reconsideração SEI nº 13892841, por ausência de interesse recursal, admitindo-o como direito de petição, como garantia fundamental assegurada pela Constituição Federal de 1988, previsto no art. 5º, inciso XXXIV, alínea “a”, recepcionando-a como um novo Requerimento de Anuência Prévia para transferência de autorização de direito de uso de radiofrequência da LIGGA TELECOMUNICAÇÕES S.A., CNPJ nº 04.368.865/0001-66, para a SERCOMTEL S.A. TELECOMUNICAÇÕES, CNPJ nº 01.371.416/0001-89;
+b) transferir a outorga para explorar o Serviço Móvel Pessoal - SMP, bem como as autorizações de radiofrequências associadas na faixa de 3.600 MHz a 3.680 MHz para a Região Norte e o Estado de São Paulo, exceto setor 33 do Plano Geral de Outorgas, referentes ao Lote C2 do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, detidas por LIGGA TELECOMUNICAÇÕES S.A., CNPJ nº 04.368.865/0001-66, para SERCOMTEL S.A. TELECOMUNICAÇÕES, CNPJ nº 01.371.416/0001-89, condicionada a expedição do Ato de Transferência:
+b.1) ao recolhimento do preço público devido pela transferência da outorga, em conformidade com o disposto no art. 26 do Regulamento Geral de Outorgas - RGO, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, cuja comprovação deverá ser atestada perante a Superintendência de Outorga e Recursos à Prestação - SOR;
+b.2) à regularidade fiscal da sucessora perante a Superintendência de Competição, nos termos da Súmula nº 19, de 1º de dezembro de 2016, mediante o envio da documentação comprobatória da regularidade fiscal perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço - FGTS; e a regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - Cadin, e, adicionalmente, a regularidade fiscal perante a Fazenda Estadual ou do Distrito Federal, e a Fazenda Municipal, expedida por órgão do lugar da sua sede, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívidas ativas; e,
+b.3) à apresentação de Garantia(s) de Execução de Compromissos perante a Superintendência de Controle de Obrigações - SCO, na forma do item 9.7 e nos valores previstos no ANEXO II do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, que comprove estar dentro do prazo de validade estabelecido no certame;
+c) celebrar Termo Aditivo aos Termos de Autorização de Uso de Radiofrequências celebrados com SERCOMTEL S.A. TELECOMUNICAÇÕES, CNPJ nº 01.371.416/0001-89, com a finalidade de atualizar as informações quanto ao Ato de outorga, dentre outras informações pertinentes; e,
+d) estabelecer que a decisão do Conselho Diretor valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Acórdão no Diário Oficial da União, prorrogável, a pedido, uma única vez por igual período, se mantidas as mesmas condições de aprovação.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15266362 e o código CRC 7F7730BA.
+ | 
+Referência: Processo nº 53500.043774/2023-55 | 
+SEI nº 15266362 |

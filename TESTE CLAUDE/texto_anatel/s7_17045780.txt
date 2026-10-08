@@ -1,0 +1,73 @@
+SEI/ANATEL - 15234708 - Análise
+Boletim de Serviço Eletrônico em 13/03/2026
+Análise nº 29/2026/AF
+Processo nº 53500.055783/2018-21
+Interessado: Tim S A, TIM CELULAR S.A.
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso administrativo interposto por TIM Celular S.A. contra o Despacho Decisório nº 428/2022/CODI/SCO (SEI nº 9215162), que a sancionou com multa no valor de R$ 27.939.328,41 (vinte e sete milhões, novecentos e trinta e nove mil trezentos e vinte e oito reais e quarenta e um centavos), em razão da infração aos arts. 3º, incs. IV e XX, e 85, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos usuários atingidos por cobranças indevida.
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. INFRAÇÕES AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES (RGC). ANÁLISE COMPLEMENTAR ESTRITAMENTE PARA MANIFESTAÇÃO SOBRE ARGUMENTOS APRESENTADOS PELOS ILUSTRES CONSELHEIROS VISTORES. MANUTENÇÃO DAS CONCLUSÕES DA RELATORIA.
+1. Complementa-se a Análise nº 92/2025/AF (SEI nº 13823637) para manifestação sobre argumentos apresentados pelos Conselheiros vistores, mantendo-se hígidos os fundamentos trazidos pela relatoria do caso.
+2. Reafirma-se o entendimento da Análise nº 92/2025/AF (SEI nº 13823637), no sentido de que, no caso sob análise, as irregularidades indicadas não apresentam comprovação de materialidade nos moldes exigidos pela regulamentação aplicável, dada a inexistência de nexo técnico entre a conduta da prestadora e o fenômeno verificado, a ausência de inércia diante do estado da arte vigente - tendo adotado, dentro de sua esfera de atuação, medidas de adaptação ao funcionamento dos terminais -, bem como a impossibilidade de lhe imputar dever de informação ou responsabilidade por não integrar a cadeia de fornecimento do aparelho.
+3. Conforme fundamentação já delineada, a inexistência de infração no PADO afasta, por consequência lógica, qualquer dever administrativo de devolução de valores, por se tratar de pretensão acessória e indissociável da condenação, inexistindo suporte jurídico para imposição de ressarcimento no âmbito regulatório.
+4. Reitera-se o teor da Análise nº 92/2025/AF (SEI nº 13823637).
+REFERÊNCIAS
+Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor).
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 (Lei do Processo Administrativo - LPA).
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Anatel - RIA).
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC).
+RELATÓRIO
+Adota-se, como relatório, o constante da Análise nº 92/2025/AF (SEI nº 13823637).
+fundamentação
+Inicialmente, registra-se o devido respeito aos votos divergentes proferidos pelos Conselheiros Diretores Octavio Pieranti e Edson Holanda, cujo voto apresentou divergência parcial em relação à Análise nº 92/2025/AF (SEI nº 13823637), restrita à exclusão do dever de devolução, por se entender que extrapola o espaço de cognição do presente feito.
+Contudo, com a devida vênia, verifica-se que os pressupostos fáticos e jurídicos empregados para sustentar a materialidade e a autoria das infrações não se amparam no conjunto probatório constante do processo, à luz do contexto técnico vigente à época dos fatos e dos limites regulatórios aplicáveis.
+Registre-se, ainda, que a presente manifestação é apresentada com a estrita finalidade de prestar esclarecimentos aos argumentos suscitados pelos ilustres Conselheiros vistores, após a inclusão do processo em pauta de reunião do Conselho Diretor, sem implicar qualquer alteração, revisão ou acréscimo ao que já foi exposto na Análise nº 92/2025/AF (SEI nº 13823637), a qual permanece íntegra em todos os seus termos.
+Passa-se, assim, ao exame de cinco pontos centrais.
+I - A Materialidade das Condutas e a Ausência de Nexo Técnico
+O fenômeno de conexões involuntárias em tecnologia LTE não decorre de falha da rede, tampouco de conduta atribuível à prestadora. Trata-se de comportamento inerente ao design dos terminais móveis, resultante de processos de sinalização definidos nos padrões internacionais da 3GPP.
+À época dos fatos, não havia consenso técnico, regulatório ou setorial sobre a natureza do fenômeno. A ausência de diagnóstico por parte da indústria, de agentes do ecossistema digital ou de organismos internacionais afastava a necessidade de tratamento específico ou de advertência dirigida ao consumidor.
+A imputação de materialidade exige demonstração inequívoca de que a operadora tenha dado causa ao evento ou deixado de adotar providência técnica ao seu alcance. Tal demonstração não se verifica. Pelo contrário, as iniciativas implementadas foram orientadas pelo princípio da cooperação regulatória e, em grande medida, conduzidas a partir das próprias fiscalizações promovidas pela Agência.
+II - A Alegação de Inércia e a Evolução Técnica Gradual
+A preocupação manifestada quanto ao lapso temporal do fenômeno merece consideração. Entretanto, a análise do período deve observar o conhecimento técnico disponível à época, evitando-se juízos retrospectivos que projetem ao passado soluções consolidadas apenas posteriormente.
+Desde as primeiras manifestações no setor, as medidas adotadas pela prestadora mostraram-se compatíveis com o estado da arte vigente: ampliação de franquias, ajustes nos critérios de tarifação, revisões internas de atendimento, colaboração nas fiscalizações e participação ativa nos Procedimentos de Fiscalização Regulatória.
+Somente após a consolidação da análise técnica conduzida pela própria Agência foi possível formular diagnóstico que viabilizasse intervenções definitivas. Assim, considerando as evidências constantes do processo, resta afastada qualquer alegação de inércia por parte da prestadora.
+III - O Dever de Informação e a Inexistência de Obrigação Específica
+Sustenta-se, na divergência, que a operadora deveria ter informado os consumidores acerca de características técnicas intrínsecas ao funcionamento do 4G-LTE.
+Não havia – nem há – norma regulatória que imponha alertas específicos sobre protocolos de sinalização dos terminais, matéria que pertence à esfera técnica dos fabricantes. A redação do art. 3º, IV, do RGC jamais foi interpretada, pela Agência ou pelo setor, como abrangente de fenômenos técnicos residuais que não tenham sido objeto de aviso prévio por parte de fabricantes ou operadores em qualquer jurisdição.
+A interpretação sugerida importa inovação hermenêutica com efeitos retroativos, violando os princípios da legalidade, segurança jurídica e proteção da confiança legítima do regulado.
+IV - A Imputação de Autoria e os Limites da Cadeia de Fornecimento
+A infraestrutura da prestadora constitui condição necessária para o funcionamento do terminal, mas não a torna responsável pelo comportamento técnico do aparelho. A responsabilidade solidária prevista no Código de Defesa do Consumidor pressupõe participação do fornecedor no processo de fabricação, concepção ou disponibilização do produto defeituoso, circunstância ausente no caso concreto.
+A prestação de serviço de conectividade não confere à operadora capacidade para alterar firmware, sistemas operacionais ou parâmetros internos de sinalização dos terminais. O princípio do cheapest cost avoider reforça tal compreensão, ao atribuir o dever de reparar àquele que dispõe dos meios mais eficazes para prevenir o dano – no caso, o fabricante, que detém domínio sobre design, firmware e funcionalidades do aparelho.
+Exigir da operadora intervenção nesses parâmetros implicaria impor obrigação impossível ou incompatível com sua esfera de atuação. Há precedentes da Agência que distinguem claramente falhas do terminal de falhas da prestadora, inclusive em situações de tarifação involuntária associadas a práticas de uso.
+Quanto ao Processo nº 53500.041700/2018-17, mencionado na divergência, verifica-se que não constitui paradigma adequado. Naquele caso, discutiu-se a forma de cobrança de pacote diário de internet, sem relação com efeitos decorrentes de configuração-padrão de aparelhos fabricados por terceiros.
+Tratava-se, ademais, de contexto anterior à Fiscalização Regulatória do denominado "4G Off", quando ainda não haviam sido analisados os impactos de decisões técnicas do fabricante sobre o serviço correlato. A similitude é, portanto, apenas aparente, pois fundamentos, natureza do vício e origem da conduta são substancialmente distintos.
+A opção pela implantação da tecnologia 4G insere-se em estratégia empresarial legítima, alinhada à evolução tecnológica do setor. Tal escolha não transfere à prestadora o dever de responder por problemas técnicos de aparelhos produzidos por terceiros. A responsabilidade objetiva associada ao risco da atividade não pode ser ampliada a ponto de deslocar obrigações típicas do fabricante para agente que não detém capacidade técnica ou informacional para prevenir ou corrigir o defeito.
+Imputar autoria à prestadora por sinalização originada exclusivamente no terminal implicaria ampliação indevida do conceito de cadeia de fornecimento, com geração de insegurança jurídica e potenciais impactos sistêmicos relevantes para o setor.
+V - As Relações entre a Descaracterização dos Fatos e o Dever de Devolução
+Quanto à ponderação do ilustre Conselheiro Edson Holanda, no sentido de que eventual dever de ressarcimento não poderia ser tratado no presente feito, devendo ser analisado em processo próprio, impõe-se esclarecer a natureza acessória dessa pretensão em relação ao objeto principal do processo.
+O dever de devolução de valores, na esfera administrativa regulatória, não constitui objeto autônomo e desvinculado da infração. Trata-se de consequência jurídica acessória da conduta infrativa. Em outras palavras, a restituição pressupõe, logicamente, o reconhecimento prévio de ilicitude administrativa e a correspondente imputação de responsabilidade à prestadora.
+Se a conduta investigada não se subsume ao tipo infracional – por ausência de materialidade, por inexistência de autoria ou por inexistência de violação a dever regulatório claro – não se consolida o suporte jurídico necessário à imposição de sanção. E, ausente a sanção, inexiste fundamento para a determinação administrativa de ressarcimento.
+A devolução de valores, nesse contexto, não se configura como meio autônomo de tutela consumerista desvinculado da infração regulatória. Ao contrário, decorre da própria lógica sancionatória-administrativa: somente se cogita de recomposição patrimonial quando demonstrado que a cobrança decorreu de conduta ilícita imputável à prestadora no âmbito do regime regulatório.
+Assim, descaracterizada a infração administrativa no PADO, resta igualmente afastada qualquer consequência acessória de natureza indenizatória a ser apurada pela Agência. Eventuais pretensões individuais de ressarcimento permanecem resguardadas nas vias próprias, mas não se sustentam, na esfera administrativa regulatória.
+Desse modo, a conclusão pela ausência de infração impede, como consequência lógica e jurídica, a imposição de dever de devolução de valores no âmbito deste processo.
+VI - Considerações Finais
+A proteção ao consumidor, eixo estruturante da atuação regulatória, deve harmonizar-se com os princípios da legalidade, da razoabilidade sancionadora, da segurança jurídica e do ônus probatório necessário à imputação de responsabilidade.
+No caso em exame, as infrações apontadas carecem de:
+materialidade comprovada, nos termos exigidos pela regulamentação;
+autoria atribuível à prestadora; e
+aderência ao dever regulatório claro e previamente estabelecido.
+As medidas mitigadoras adotadas – como comunicação aos consumidores, ajustes comerciais e iniciativas de colaboração institucional – não se convertem, por si, em reconhecimento de obrigação jurídica originária, seja de natureza administrativa, seja quanto à constituição do dever de indenizar. A possibilidade de auxiliar não equivale à responsabilidade direta pela gênese do defeito.
+O reconhecimento de solidariedade, nas circunstâncias descritas, criaria precedente disfuncional, fragilizando a coerência do sistema de defesa do consumidor ao equiparar indevidamente prestadores de conectividade a fabricantes de bens tecnológicos. Além disso, haveria distorção de incentivos econômicos, com redução da pressão técnica e competitiva sobre os agentes que efetivamente detêm capacidade de correção do problema.
+Compete à prestadora manter elevados padrões de transparência, informação e cooperação institucional, deveres plenamente exigíveis. Todavia, atribuir-lhe responsabilidade por vícios de fabricação configuraria sobreposição indevida de obrigações e introduziria insegurança jurídica para agentes que não controlam o processo de concepção e produção dos terminais.
+Conclui-se, portanto, que a prestadora não integra a cadeia de fornecimento do produto defeituoso e não responde solidariamente pelos danos decorrentes de falhas dos terminais móveis, permanecendo sua responsabilidade circunscrita à adequada prestação do serviço de conectividade e aos deveres de informação e cooperação que lhe são próprios.
+CONCLUSÃO
+Com essas considerações, apresento os presentes esclarecimentos à Análise nº 92/2025/AF (SEI nº 13823637), sem qualquer alteração de sua fundamentação.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/03/2026, às 16:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15234708 e o código CRC 086361F8.
+ | 
+Referência: Processo nº 53500.055783/2018-21 | 
+SEI nº 15234708 |

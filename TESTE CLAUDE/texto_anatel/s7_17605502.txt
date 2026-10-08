@@ -1,0 +1,3123 @@
+SEI/ANATEL - 15743898 - Análise
+Boletim de Serviço Eletrônico em 03/07/2026
+Análise nº 53/2026/NP
+Processo nº 53500.003291/2025-80
+Interessado: Conselho Diretor
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Aprovação final da atualização periódica do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências (PDFF), prevista na iniciativa nº 22 da Agenda Regulatória para o biênio 2025-2026, bem como da revisão do Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA) para viabilizar a implantação da nova geração do Sistema Brasileiro de Televisão Digital Terrestre (TV 3.0).
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. APROVAÇÃO FINAL DE ATO NORMATIVO. ATUALIZAÇÃO DO PDFF 2025-2026 E REVISÃO DO RCC-SRA PARA VIABILIZAR A TV 3.0. APROVAÇÃO.
+I. CASO EM EXAME
+1. A matéria. Aprovação final da atualização periódica do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF) para o biênio 2025-2026 e revisão do Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA).
+2. Fato relevante. A proposta integra a iniciativa nº 22 da Agenda Regulatória 2025-2026 e busca atualizar atribuições, destinações e condições de uso de faixas de frequências, além de viabilizar a implantação da TV 3.0.
+3. Instrução do processo. Houve Termo de Abertura de Projeto, Relatório de Análise de Impacto Regulatório, minuta de resolução, consulta interna sem contribuições, Consulta Pública 03/2026, análise das contribuições recebidas e manifestações da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) pela regularidade formal do procedimento.
+4. Deliberação anterior. O Conselho Diretor aprovou a submissão da proposta à Consulta Pública 03/2026 por meio do Acórdão nº 3, de 28 de janeiro de 2026.
+II. QUESTÃO EM DISCUSSÃO
+5. Há três questões em discussão: (i) saber se estão atendidos os requisitos formais e materiais para a aprovação final da atualização do PDFF 2025-2026 e da revisão do RCC-SRA; (ii) saber se as alterações propostas após a Consulta Pública nº 3/2026 devem ser acolhidas para aperfeiçoar a gestão do espectro e viabilizar a implantação da TV 3.0; e (iii) saber se o Conselho Diretor deve avocar a definição das características técnicas de uso das subfaixas atribuídas ao Serviço Móvel por Satélite para conectividade direta entre satélite e dispositivo. 
+III. RAZÕES DE DECIDIR
+6. A CF/1988 e a Lei nº 9.472/1997 atribuem à Anatel competência para organizar a exploração dos serviços de telecomunicações e administrar o espectro de radiofrequências. Compete ao Conselho Diretor aprovar alterações no PDFF e expedir atos normativos por meio de resoluções.
+7. O PDFF é instrumento central da gestão do espectro e deve ser revisado periodicamente para refletir decisões da Agência e manter harmonização com tratados, acordos e atos internacionais incorporados ao ordenamento jurídico.
+8. O processo regulatório observou as etapas previstas na regulamentação interna da Agência, com inclusão do projeto na Agenda Regulatória, elaboração de AIR, proposta normativa, consulta interna, consulta pública e submissão à deliberação do Conselho Diretor.
+9. A Consulta Pública 03/2026 recebeu contribuições por meio do Sistema Participa Anatel. As manifestações foram analisadas, classificadas e respondidas pelo corpo técnico. A PFE-Anatel considerou atendidos os requisitos formais e reconheceu a fundamentação do acolhimento ou não das contribuições. As manifestações de apoio revelaram aceitação setorial de parte relevante das propostas submetidas à consulta.
+10. Foram acolhidas sugestões para aperfeiçoar a proposta normativa. Entre elas estão ajustes na distribuição de canais de radiodifusão, inclusão de referências normativas, correção de omissões materiais em notas de rodapé, inclusão de destinações associadas ao SCM em faixas da Banda W e inclusão de novas localidades autorizadas para operação do SLMA em faixas específicas.
+11. Não foram acolhidas sugestões incompatíveis com as diretrizes já fixadas para a implantação da TV 3.0, com o planejamento espectral proposto, com entendimentos institucionais já firmados ou com a ausência de elementos técnicos suficientes.
+12. A revisão do RCC-SRA é necessária para viabilizar a implantação da TV 3.0. A revisão compreende ajustes na canalização, na identificação de subfaixas, na disciplina de inclusão de canais e na consolidação dos planos básicos.
+13. A ocupação da faixa de 250 MHz a 322 MHz deve observar transição regulatória compatível com a primariedade da radiodifusão. A transição também deve considerar, sempre que possível, a preservação operacional de sistemas incumbentes regularmente licenciados.
+14. A inclusão de canais no PBDTV+ na faixa de 250 MHz a 322 MHz deve observar prioridades por unidade da federação. A análise de viabilidade técnica deve considerar parâmetros geográficos, espectrais, técnicos e operacionais das estações do Serviço Limitado Privado (SLP) regularmente licenciadas na faixa de 250 MHz a 274 MHz.
+15. Na impossibilidade de acomodação dos canais requeridos segundo as regras prioritárias, a inclusão poderá ocorrer de forma diversa, desde que demonstrada a inviabilidade técnica e observada, sempre que possível, a preservação da operação das estações do SLP regularmente licenciadas.
+16. É justificada a manutenção, em caráter transitório e sem proteção contra interferência prejudicial, de sistemas previamente autorizados nas faixas afetadas, nos prazos definidos na proposta. Também é adequado o licenciamento excepcional de novas estações ou consignação de novas radiofrequências associadas a sistemas do SLP de 250 MHz a 268,75 MHz, mediante justificativa técnica.
+17. É pertinente a vedação de novos Direitos de Exploração de Satélites ou de sua prorrogação na faixa de 250 MHz a 322 MHz. Também é adequada a preservação transitória dos sistemas previamente autorizados nos termos propostos.
+18. Os ajustes estruturais e redacionais no PDFF, inclusive na organização de anexos, na Tabela de Atribuição e Destinação de Faixas, nas Tabelas de Distribuição de Faixas de Frequências e na ordem dos serviços, aprimoram a coerência normativa e a clareza do instrumento.
+19. É pertinente atribuir, em caráter secundário, subfaixas utilizadas em FDD nas faixas de 700 MHz, 850 MHz, 900 MHz, 1.800 MHz, 1.900/2.100 MHz e 2.500 MHz ao Serviço Móvel por Satélite para viabilizar conectividade direta entre satélite e dispositivo, de forma complementar à cobertura terrestre.
+20. O caráter inovador da conectividade direta entre satélite e dispositivo e sua relevância para a promoção da conectividade justificam a avocação, pelo Conselho Diretor, da definição das características técnicas de uso dessas subfaixas.
+21. A proposta está alinhada aos objetivos estratégicos da Anatel, em especial quanto à expansão da infraestrutura, ao uso eficiente de recursos escassos e à modernização regulatória.
+IV. DISPOSITIVO E TESE
+21. Aprovação da Minuta de Resolução NP, que contém o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil para o biênio 2025-2026 e altera o Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares. Avocação, nos termos do art. 15 da Lei nº 9.784/1999, ao Conselho Diretor da definição das características técnicas de uso das subfaixas atribuídas ao Serviço Móvel por Satélite nas faixas de 700 MHz, 850 MHz, 900 MHz, 1.800 MHz, 1.900/2.100 MHz e 2.500 MHz para conectividade direta entre satélite e dispositivo. Determinação à Superintendência de Outorga e Recursos à Prestação para submeter ao Conselho, em até 90 dias, proposta de especificações técnicas.
+Tese de julgamento: "1. A Anatel detém competência para revisar o PDFF e o RCC-SRA no exercício da administração do espectro de radiofrequências. 2. A atualização do PDFF 2025-2026 e a revisão do RCC-SRA observaram os requisitos formais do processo regulatório e as exigências de consulta pública. 3. As alterações aprovadas aperfeiçoam a atribuição, a destinação, a distribuição e as condições de uso de faixas de frequências e viabilizam a implantação da TV 3.0. 4. A transição regulatória na faixa de 250 MHz a 322 MHz deve preservar a primariedade da radiodifusão e considerar, sempre que possível, a continuidade operacional de sistemas incumbentes regularmente licenciados. 5. A definição das características técnicas de uso das subfaixas atribuídas ao Serviço Móvel por Satélite para conectividade direta entre satélite e dispositivo deve ser submetida ao Conselho Diretor."
+Dispositivos relevantes citados: CF/1988, art. 21, XI; Lei nº 9.472/1997, arts. 1º, 19, VIII, 157, 158, 159, 160 e 161; Lei nº 13.848/2019, art. 9º, § 5º; Lei nº 9.784/1999, art. 15; Decreto nº 12.595/2025, arts. 12 e 14; Resolução nº 612/2013, arts. 59, §§ 3º e 4º, 60, § 1º, 62 e 133, V e XVII; Resolução nº 671/2016, arts. 4º e 12; Resolução nº 721/2020; Resolução nº 772/2025; Resolução nº 773/2025; Resolução nº 777/2025, arts. 10 e 22; Resolução nº 779/2025; Resolução Interna Anatel nº 8/2021, art. 6º; Resolução Interna Anatel nº 399/2024; Resolução Interna Anatel nº 523/2026; Resolução Interna Anatel nº 537/2026; Portaria nº 10.693/2023; Ato nº 9751/2022; Ato SOR nº 17.207/2023.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Lei nº 9.472, de 29 de janeiro de 1999 - Lei do Processo Administrativo (LPA);
+Lei nº 13.848, de 25 de junho de 2019 - Lei Geral das Agências Reguladoras;
+Decreto nº 12.595, de 27 de agosto de 2025, que dispõe sobre a escolha do padrão tecnológico da segunda geração do Sistema Brasileiro de Televisão Digital Terrestre, denominada TV 3.0, e sobre a sua implantação no território nacional;
+Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações, que consolida as normas ministeriais de radiodifusão.
+Portaria nº 10.693, de 5 de outubro de 2023, do Ministério das Comunicações, que dispõe sobre as diretrizes complementares para a canalização, cobertura do serviço e harmonização de faixas de frequência para implantação da TV 3.0.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel;
+Resolução nº 671, de 3 de novembro de 2016, que aprova o Regulamento de Uso do Espectro (RUE);
+Resolução nº 719, de 10 de fevereiro de 2020, que aprova o Regulamento Geral de Licenciamento (RGL);
+Resolução nº 721, de 11 de fevereiro de 2020, que aprova o Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA);
+Resolução nº 772, de 16 de janeiro de 2025, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF 2023-2024);
+Resolução nº 773, de 16 de janeiro de 2025, que aprova o Regulamento de Condições de Uso de Radiofrequências (ReCon);
+Resolução Anatel nº 777, de 28 de abril de 2025, que aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST);
+Resolução nº 779, de 28 de abril de 2025, que aprova o Glossário aplicável ao Setor de Telecomunicações;
+Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprova diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência;
+Resolução Interna Anatel nº 38, de 9 de agosto de 2021, que aprova a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Agência Nacional de Telecomunicações (PGGR) e dá outras providências. Alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024;
+Resolução Interna Anatel nº 160, de 3 de novembro de 2022, que aprova o Plano Estratégico da Anatel para o período 2023-2027 (Plano Estratégico da Anatel 2023-2027, SEI nº 9391036);
+Resolução Interna Anatel nº 369 (SEI nº 12687325), de 4 de outubro de 2024, que aprova a 1ª atualização do Plano Estratégico da Agência Nacional de Telecomunicações para o período 2023-2027 (Plano Estratégico da Anatel 2023-2027, SEI nº 12705707);
+Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, que aprova a Agenda Regulatória 2025-2026, republicada pela Resolução Interna nº 523, de 27 de fevereiro de 2026, e alterada pela Resolução Interna Anatel nº 537, de 1º de abril de 2026;
+Regulamento de Rádio (RR) da União Internacional Telecomunicações (UIT); 
+Ato nº 17.207, de 12 de dezembro de 2023, Requisitos técnicos e operacionais para estações do serviço limitado móvel aeronáutico (SLMA);
+Processo nº 53500.045607/2022-68, que aprovou o PDFF 2023-2024; e
+Processo nº 53500.071018/2024-05, que trata do Ato de Requisitos Técnicos para a TV 3.0.
+RELATÓRIO
+Cuida-se da aprovação final da atualização periódica do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências (PDFF), prevista na iniciativa nº 22 da Agenda Regulatória para o biênio 2025-2026, bem como da revisão do Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA), aprovado pela Resolução nº 721/2020, de forma a viabilizar a implantação da nova geração do Sistema Brasileiro de Televisão Digital Terrestre (TV 3.0). 
+Inaugurou-se o presente processo por meio do Termo de Abertura de Projeto (TAP), de 4 de fevereiro de 2025 (SEI nº 13152630).
+Realizou-se a Consulta Interna nº 19/2025 (SEI nº 14375483), no período de 19 a 25 de setembro de 2025, a qual não recebeu contribuições, consoante demonstrado no Extrato de contribuições à Consulta Interna SEI nº 14453469.
+Em 1º de outubro de 2025, juntamente com o Informe nº 124/2025/PRRE/SPR (SEI nº 14334703), apresentaram-se os seguintes documentos:
+Relatório de Análise de Impacto Regulatório (SEI nº 14028763);
+Minuta de Resolução (SEI nº 14335581);
+Planilha PDFF 2025-2026 (SEI nº 14335646); e
+Minuta de Consulta Pública (SEI nº 14372174).
+Os referidos documentos passaram pelo crivo da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), que opinou (SEI nº 14583120) pela regularidade do procedimento, recomendando seu encaminhamento ao Conselho Diretor.
+Por meio do Acórdão nº 3 (SEI nº 15106560), de 28 de janeiro de 2026, o Conselho Diretor da Anatel aprovou, por unanimidade, a submissão à Consulta Pública da proposta de atualização do PDFF e revisão do RCC-SRA, nos termos da Análise nº 160/2025/AF (SEI nº 14934771).
+Assim, publicou-se a Consulta Pública nº 3 (CP 03/2026), de 28 de janeiro de 2026 (SEI nº 15106742), aberta pelo prazo de 45 (quarenta e cinco) dias, a contar de 29 de janeiro de 2026. Tal como previsto, a Consulta foi encerrada no dia 15 de março de 2026, tendo sido indeferido o pedido de dilação de prazo recebido (SEI nº 15327139).
+As contribuições recebidas na referida Consulta foram analisadas (SEI nº 15389126), tendo sido preparados os seguintes documentos:
+Minuta de Resolução pós CP 03/2026 (SEI nº 15404168);
+Planilha PDFF 2025-2026 pós CP 03/2026 (SEI nº 15535289); e
+Planilha de Contribuições CP 03/2026 - Respostas (SEI nº 15535308).
+Encaminharam-se estes autos à PFE-Anatel, que considerou atendidos todos os requisitos formais e que o acolhimento ou não das contribuições foi devidamente fundamentado. Recomendou-se a pronta publicação das respostas às contribuições e, após a deliberação final, o posicionamento da Agência, como exigido no art. 9º, § 5º, da Lei nº 13.848/2019 (Lei das Agências).
+Com a Matéria para Apreciação do Conselho Diretor nº 418/2026 (SEI nº 15728699), os autos foram enviados a este Colegiado. Solicitou-se o tratamento do presente processo com a devida urgência, considerando os temas nele tratados, em especial aqueles afetos à segunda geração do Sistema Brasileiro de Televisão Digital Terrestre, denominada TV 3.0, que impactam sua implantação no território nacional nos termos do Decreto nº 12.595, de 27 de agosto de 2025.
+Em 2 de junho de 2026, por meio de Despacho Ordinatório (SEI nº 15729755), a matéria foi encaminhada à Secretaria do Conselho Diretor (SCD), tendo sido distribuída à minha relatoria, conforme Certidão de Distribuição (SEI nº 15740524).
+É o relatório.
+Fundamentação
+A fundamentação da presente Análise encontra-se dividida em 4 (quatro) partes. Na primeira, avaliam-se os aspectos formais. Na segunda, analisam-se as contribuições recebidas na CP 03/2026. Na terceira, examinam-se as alterações propostas no âmbito da referida consulta para o PDFF do biênio de 2025-2026 e para o RCC-SRA. Finalmente, verifica-se a conformidade desta Análise com os objetivos regulatórios da Anatel.
+As modificações aqui propostas estarão consolidadas na Minuta de Resolução NP (SEI nº 15838005) e na Planilha PDFF 2025-2026 NP (SEI nº 15838023), na forma dos Anexos I e II a esta Análise, respectivamente.
+Uma versão da Minuta de Resolução com marcas de revisão (SEI nº 15838089), destacando apenas as modificações aportadas após a CP 03/2026, é apresentada no Anexo III à presente Análise.
+I - Dos aspectos Formais
+I.1 - Das competências da Anatel e do Conselho Diretor
+A Constituição Federal (CF) e a Lei Geral de Telecomunicações (LGT) conferiram à Anatel a função de órgão regulador do setor de telecomunicações, atribuindo-lhe competência para organizar a exploração dos serviços de telecomunicações, incluindo, em particular, a utilização do espectro de radiofrequências.
+Constituição da República Federativa do Brasil de 1988 (CF)
+"Art. 21. Compete à União:
+(...)
+XI - explorar, diretamente ou mediante autorização, concessão ou permissão, os serviços de telecomunicações, nos termos da lei, que disporá sobre a organização dos serviços, a criação de um órgão regulador e outros aspectos institucionais;" [Grifou-se]
+.....................................
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofrequências." [Grifou-se]
+O art. 19 da LGT enumera as competências da Anatel, dentre as quais se destaca a administração do espectro de radiofrequências:
+Lei Geral de Telecomunicações (LGT)
+"Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente:
+I - implementar, em sua esfera de atribuições, a política nacional de telecomunicações;
+(...)
+VIII - administrar o espectro de radiofrequências e o uso de órbitas, expedindo as respectivas normas;" [Grifou-se]
+A LGT traz ainda outros regramentos aplicáveis à administração do espectro de radiofrequências. Dentre eles, cabe destacar o planejamento da atribuição, distribuição e destinação de faixas, bem como o detalhamento requerido para o uso das radiofrequências associadas aos serviços de telecomunicações e de radiodifusão, dentre outros.
+Lei Geral de Telecomunicações (LGT)
+"Art. 157. O espectro de radiofrequências é um recurso limitado, constituindo-se em bem público, administrado pela Agência.
+Art. 158. Observadas as atribuições de faixas segundo tratados e acordos internacionais, a Agência manterá plano com a atribuição, distribuição e destinação de radiofrequências, e detalhamento necessário ao uso das radiofrequências associadas aos diversos serviços e atividades de telecomunicações, atendidas suas necessidades específicas e as de suas expansões.
+§ 1° O plano destinará faixas de radiofrequência para:
+I - fins exclusivamente militares;
+II - serviços de telecomunicações a serem prestados em regime público e em regime privado;
+III - serviços de radiodifusão;
+IV - serviços de emergência e de segurança pública;
+V - outras atividades de telecomunicações.
+§ 2° A destinação de faixas de radiofrequência para fins exclusivamente militares será feita em articulação com as Forças Armadas.
+Art. 159. Na destinação de faixas de radiofrequência serão considerados o emprego racional e econômico do espectro, bem como as atribuições, distribuições e consignações existentes, objetivando evitar interferências prejudiciais.
+Parágrafo único. Considera-se interferência prejudicial qualquer emissão, irradiação ou indução que obstrua, degrade seriamente ou interrompa repetidamente a telecomunicação.
+Art. 160. A Agência regulará a utilização eficiente e adequada do espectro, podendo restringir o emprego de determinadas radiofrequências ou faixas, considerado o interesse público.
+Parágrafo único. O uso da radiofrequência será condicionado à sua compatibilidade com a atividade ou o serviço a ser prestado, particularmente no tocante à potência, à faixa de transmissão e à técnica empregada.
+Art. 161. A qualquer tempo, poderá ser modificada a destinação de radiofrequências ou faixas, bem como ordenada a alteração de potências ou de outras características técnicas, desde que o interesse público ou o cumprimento de convenções ou tratados internacionais assim o determine.
+Parágrafo único. Será fixado prazo adequado e razoável para a efetivação da mudança." [Grifou-se]
+Observa-se que compete ao Conselho Diretor da Anatel aprovar quaisquer alterações no PDFF:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+V - exercer o poder normativo da Agência relativamente às telecomunicações, nos termos do art. 17 do Regulamento da Agência;
+(...)
+XVII - aprovar o plano de atribuição, destinação e distribuição de faixas de radiofrequência;"
+Assim, não há dúvidas sobre a competência da Anatel e, em particular, deste Colegiado, para revisar o PDFF e o RCC-SRA, uma vez que tratam da atribuição, distribuição e destinação das radiofrequências, bem como do detalhamento requerido para seu uso em serviços de radiodifusão.
+I.2 - Da gestão do espectro
+A gestão do espectro radioelétrico pela Anatel segue fundamentalmente o Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016. Trata-se de um instrumento vertical, que parte do recurso físico e chega até os usuários finais. O RUE disciplina a organização geral da utilização do espectro e dá suporte a instrumentos horizontais, formando a estrutura orgânica de gestão de espectro ilustrada na Figura 1:
+Figura 1 - Gestão do espectro de radiofrequências no Brasil
+Como se vê na Figura 1, o instrumento que está no topo é o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), que trata do planejamento no domínio das frequências previsto no RUE.
+Todos os países possuem, em regra, um instrumento similar ao PDFF, que permite planificar e disciplinar o uso de cada faixa de frequências do espectro radioelétrico de forma coerente com regramentos de alcance internacional e, em particular, aqueles contidos no RR da UIT.
+Para facilitar a elaboração e a manutenção dos referidos instrumentos, a UIT preparou diretrizes[1] para a preparação de um plano harmonizado e seus elementos de suporte. Essas diretrizes sugerem estruturar os instrumentos regulatórios de forma hierárquica. O primeiro nível deve estar bem alinhado ao RR da UIT, de forma a facilitar sua evolução e manutenção. O nível seguinte deverá definir como as faixas de radiofrequência são divididas ou compartilhadas entre utilizações principais. As mencionadas diretrizes da UIT fornecem sugestões de como organizar o plano em questão. Sugere-se incluir diferentes capítulos, com textos explicativos inspirados no RR da UIT, seguidos das tabelas principais. As diretrizes apresentam modelos genéricos e trazem vários exemplos concretos de planos utilizados por diversos países.
+Outros subníveis poderão definir usos específicos ou condições técnicas de uso, por exemplo, arranjos de canais. É esse o caso do RCC-SRA, que também é objeto de revisão na presente Análise.
+O PDFF costuma ser revisado a cada biênio, de forma a refletir as decisões da Agência e se manter harmonizado com tratados, acordos e atos internacionais subscritos pela República Federativa do Brasil e incorporados no ordenamento jurídico.
+I.3 - Da elaboração de atos normativos
+A edição de atos de caráter normativo pela Agência rege-se pelo art. 9º da Lei nº 13.848/2019, que dispõe sobre a gestão, a organização, o processo decisório e o controle social das Agências Reguladoras, e pelo art. 62 do Regimento Interno da Anatel (RIA).
+Lei nº 13.848, de 25 de junho de 2019 (Lei das Agências)
+"Art. 9º Serão objeto de consulta pública, previamente à tomada de decisão pelo conselho diretor ou pela diretoria colegiada, as minutas e as propostas de alteração de atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados.
+.....................................
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 62. Os atos de caráter normativo da Agência serão expedidos por meio de Resoluções, de competência exclusiva do Conselho Diretor, observado o disposto nos arts. 59 e 60, relativos aos procedimentos de Consultas Pública e Interna, respectivamente." [grifou-se]
+O processo de regulamentação no âmbito da Agência se inicia após a identificação e inclusão do Projeto de Regulamentação na Agenda Regulatória, devendo seguir as 7 (sete) etapas previstas no art. 6º da Resolução Interna Anatel nº 8/2021, enumeradas a seguir.
+Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021
+"Art. 6º O processo de regulamentação se inicia após a identificação e inclusão do Projeto de Regulamentação na Agenda Regulatória, nos termos do Capítulo anterior, e contempla as seguintes etapas, obrigatórias ou opcionais, em consonância com o disposto no Regimento Interno da Agência, seguindo o fluxo do macroprocesso Gerir regulamentação, aprovado pelo Superintendente Executivo (SUE), nos termos do inciso I do art. 3º da Portaria nº 1.117, de 14 de junho de 2019:
+I - constituição de Equipe de Projeto;
+II - realização de Tomada de Subsídios;
+III - elaboração de Relatório de AIR;
+IV - elaboração de proposta de regulamentação, caso necessário;
+V - consultas internas e públicas sobre a Análise de Impacto Regulatório e a proposta de regulamentação, se houver;
+VI - deliberação pelas autoridades competentes; e
+VII - monitoramento, por meio da Avaliação de Resultado Regulatório, da alternativa escolhida na respectiva Análise de Impacto Regulatório." [Grifou-se]
+A etapa atual corresponde ao inciso VI acima, referente à deliberação pelas autoridades competentes, cuja fundamentação constitui o objeto da presente Análise.
+As etapas indicadas nos incisos I a V já foram cumpridas no presente projeto de regulamentação, tal como se reconfirma a seguir.
+Como já relatado, o presente processo foi incluído na iniciativa 22 da Agenda Regulatória para o biênio 2025-2026, aprovada pela Resolução Interna Anatel nº 399 (SEI nº 13095990), de 30 de dezembro de 2024, e republicada pela Resolução Interna nº 523 (SEI nº 15247243), de 27 de fevereiro de 2026 e alterada pela Resolução Interna Anatel nº 537 (SEI nº 15424725), de 1º de abril de 2026:
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 22
+ | 
+ Atualização das atribuições e destinações do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF 2025-2026.
+ | 
+ Atualização periódica do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF.
+ | 
+ 53500.003291/2025-80
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+ Consulta Pública
+ | 
+ Aprovação final
+ | 
+Inaugurou-se o presente processo por meio do Termo de Abertura de Projeto (TAP), de 4 de fevereiro de 2025 (SEI nº 13152630), no qual se detalha a constituição da equipe de projeto.
+Não foi efetuada tomada de subsídios, considerando que as necessidades de alterações de atribuições, destinações e condições de uso são continuamente anotadas e analisadas pela área técnica ao longo do biênio. Recorda-se que a atualização do PDFF é uma atividade recorrente da Agência, efetuada com periodicidade bienal.
+Conforme relatado, foi elaborado o Relatório de Análise de Impacto Regulatório (SEI nº 14028763), abordando os seguintes temas e subtemas:
+Tema 1 - Demandas da Sociedade
+- Subtema 1.1 - Destinação e canalização de partes da faixa de 216 a 470 MHz aos serviços de radiodifusão de sons e imagens e de retransmissão de televisão
+- Subtema 1.2 - Destinação da faixa de 468 MHz a 470 MHz ao Serviço Limitado Móvel Aeronáutico
+- Subtema 1.3 – Atribuição e Destinação de subfaixas da Banda W ao Serviço Fixo por Satélite
+Tema 2 - Detalhamento da Destinação a Todos os Serviços de Telecomunicações
+Elaborou-se a proposta de regulamentação, na forma da Minuta de Resolução (SEI nº 14335581) e da Planilha PDFF 2025-2026 (SEI nº 14335646). A referida Minuta, além da proposta de atualização periódica do PDFF para o biênio 2025-2026, inclui também a proposta de revisão do RCC-SRA, que trata da canalização e condições de uso de radiofrequências requeridas para viabilizar a implantação da TV 3.0.
+Realizou-se a Consulta Interna nº 19/2025 (SEI nº 14375483), no período de 19 a 25 de setembro de 2025, tal como estabelecido no art. 60, § 1º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013. Essa Consulta não recebeu contribuições, conforme se vê no extrato anexo (SEI nº 14453469).
+De 29 de janeiro a 15 de março de 2026, efetuou-se a Consulta Pública nº 3 (SEI nº 15106742), que recebeu 35 (trinta e cinco) contribuições por meio do Sistema Participa Anatel e 2 (duas) juntadas diretamente ao presente processo.
+Observaram-se, portanto, todos os aspectos formais no processo, desde seu início até a presente etapa.
+II - DAS CONTRIBUIÇÕES À CONSULTA PÚBLICA Nº 3/2026
+II.1 - Da apreciação das manifestações
+Como relatado, no âmbito da Consulta Pública nº 3/2026 (SEI nº 15106742), foram recebidas 35 (trinta e cinco) contribuições por meio do Sistema Participa Anatel. Essas contribuições foram compiladas, analisadas, classificadas, julgadas e respondidas pelo corpo técnico na Planilha de Contribuições - CP 03/2026 - Respostas (SEI nº 15535308).
+Além disso, houve uma contribuição da TIM (SEI nº 15334534) e outra da Claro (SEI nº 15336139) juntadas exclusivamente ao presente processo. Essas contribuições não foram consideradas na análise acima, uma vez que, conforme as regras estabelecidas, deveriam ter sido encaminhadas, obrigatoriamente, por meio do formulário eletrônico do Sistema Participa. O corpo técnico, no entanto, teve o cuidado de verificar que o conteúdo das referidas contribuições não acarretaria alterações nas propostas aqui em discussão.
+As contribuições foram analisadas no Informe nº 34/2026/PRRE/SPR (SEI nº 15389126). Em anexo a esse Informe, apresentaram-se uma nova Minuta de Resolução (SEI nº 15404168) e a versão revisada da Planilha PDFF 2025-2026 (SEI nº 15535289).
+A PFE-Anatel analisou o referido Informe, opinando pela regularidade formal da proposta apresentada e fazendo recomendações sobre a publicidade das respostas às contribuições e da futura decisão final deste Colegiado. Observou-se que a proposta encontra-se devidamente fundamentada, com justificativas para o acolhimento ou não das contribuições apresentadas, sem óbices jurídicos a seu prosseguimento. Recomendou-se apenas detalhar os ajustes feitos no item 3.21.1 do Informe nº 34/2026/PRRE/SPR (SEI nº 15389126). O referido item trata da substituição da destinação “TODOS OS SERVIÇOS DE TELECOMUNICAÇÕES (Observada a atribuição da faixa)” pela lista explícita dos serviços compatíveis. Observa-se que o detalhamento solicitado já está feito na Planilha PDFF 2025-2026 (SEI nº 15535289).
+Parecer nº 205/2026/PFE-ANATEL/PGF/AGU (SEI nº 15703234)
+"3. CONCLUSÃO
+84. Diante do exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal, vinculada à Advocacia Geral da União, assim opina:
+a) Consideram-se atendidos todos os requisitos formais necessários ao prosseguimento dos autos em epígrafe, nos termos da fundamentação deste opinativo, que deve ser submetido à apreciação do Conselho Diretor;
+a.1) Quanto à Consulta Pública nº 3/2026, recomenda-se apenas que as respostas da Anatel às contribuições recebidas sejam incluídas no sistema Participa Anatel, em atendimento ao disposto no art. 59, §§ 3º e 4º, do Regimento Interno da Anatel;
+a.2) Outrossim, cumpre destacar a aplicabilidade do § 5º do art. 9º da Lei nº 13.848/2019 no que se refere aos atos normativos, devendo tal disposição ser cumprida após deliberação final da proposta pelo Conselho Diretor;
+b) Considerando a análise dos principais temas apresentados nas contribuições à Consulta Pública nº 3/2026, realizada por meio do Informe nº 34/2025/PRRE/SPR, a proposta encontra-se devidamente fundamentada pelo corpo técnico da Agência, que apresentou as justificativas para o acolhimento ou não das contribuições apresentadas, não sendo vislumbrados óbices jurídicos ao prosseguimento da proposta, com a ponderação a seguir;
+b.1) Sugere-se que sejam apontados quais foram os ajustes promovidos na lista de serviços relacionados e em quais faixas, mencionados no item 3.21.2 do Informe nº 34/2026/PRRE/SPR, para fins de instrução dos autos;"
+Observa-se que na Planilha de Contribuições - CP 03/2026 - Respostas (SEI nº 15535308), cada manifestação recebida, ordenada por número e por autor, foi classificada como: (i) "ACEITA TOTALMENTE"; (ii) "ACEITA PARCIALMENTE"; (iii) "FORA DE ESCOPO"; ou (iv) "NÃO ACEITA". 
+Para fins da presente Análise, optou-se por reclassificá-las por temas abordados. Assim, desmembraram-se algumas que tratam de múltiplos assuntos e agruparam-se aquelas que têm o mesmo teor. Dessa forma, reenquadram-se as contribuições ou grupos de contribuições, de forma unívoca, em 3 categorias: (i) manifestações de apoio; (ii) sugestões acolhidas; e (iii) sugestões não acolhidas.
+II.2 - Das manifestações de apoio
+Entre as contribuições recebidas, identificaram-se os seguintes temas que trazem tão somente manifestações de apoio a propostas submetidas à Consulta Pública nº 3/2026:
+nas contribuições de nº 1 e 2, de mesmo teor, a Associação Brasileira de Emissoras de Rádio e Televisão (ABERT) e a Sociedade Brasileira de Engenharia de Televisão (SET) manifestaram apoio à proposta de destinação da subfaixa de 250 MHz a 322 MHz aos serviços de radiodifusão de sons e imagens e de retransmissão de televisão;
+a Telefônica, em sua contribuição nº 3, afirmou que concorda com a substituição do termo "Todos os Serviços de Telecomunicações" por lista explícita dos serviços, que apoia a manutenção da destinação da faixa de 5.925 MHz a 6.425 MHz para o SMP e que reconhece avanços em outras faixas, como 450 MHz a 470 MHz e a Banda W;
+a Brisanet, na contribuição nº 4, externalizou sua concordância com a destinação da faixa de 5.925 MHz a 6.425 MHz para o SMP;
+na contribuição nº 5, a SpaceX manifestou seu apoio à atribuição e destinação da Banda W ao FSS para serviços de interesse coletivo;
+a Copel Distribuição, na contribuição nº 10, apoiou as regras de transição para uso da faixa de 250 MHz a 322 MHz por canais dos serviços de radiodifusão propostas no art. 5º da Minuta de Resolução submetida à Consulta Pública nº 3/2026;
+na contribuição nº 22, a Liga de Amadores Brasileiros de Rádio Emissão (LABRE) expressou seu apoio à supressão dos serviços: (i) LIMITADO PRIVADO na faixa de 135,7 kHz a 137,8 kHz; (ii) LIMITADO MÓVEL MARÍTIMO nas faixas de 135,7 kHz a 137,8 kHz e 5.351,5 kHz a 5.366,5 kHz; e (iii) TELEFÔNICO FIXO COMUTADO, nas faixas de 3.800 kHz a 4.063 kHz, 5.060 kHz a 5.900 kHz e 10.100 kHz a 11.175 kHz;
+nessa mesma contribuição nº 22, a LABRE apoiou destinação a serviço de Radioamador em caráter secundário nas faixas de 1.240 MHz a 1.260 MHz, 10,45 GHz a 10,50 GHz e 81GHz a 81,5 GHz; e
+a Copel Distribuição, na contribuição nº 35, apoiou a proposta dos itens 2 e 3 do Anexo VIII da Minuta de Resolução submetida à Consulta Pública nº 3/2026, que tratam de autorização preferencialmente para uso por redes privativas e proteção do Serviço Limitado Privado (SLP) nas faixas de 451 MHz a 458 MHz, 461 MHz a 468 MHz, 1.487 MHz a 1.517 MHz, 1.900 MHz a 1.910 MHz, 2.390 MHz a 2.400 MHz, de 3.700 MHz a 3.800 MHz e de 27,5 GHz a 27,9 GHz.
+Destaca-se que, com exceção das manifestações da ABERT e da SET, todas as demais foram incontroversas. Expressaram, assim, a boa aceitação pelo setor e pela sociedade da maioria das propostas levadas à Consulta Pública pela Agência.
+II.3 - Das sugestões acolhidas
+Identificaram-se, nas contribuições recebidas, os seguintes temas que aportam aprimoramentos às propostas da Agência submetidas à Consulta Pública:
+nas contribuições de nº 6, 9, 11 e 12, de similar teor, as empresas MRS Logística, Rio Grande Energia (RGE) e EDP Espírito Santo preconizaram regras para a distribuição de canais de radiodifusão tais que considerem a ocupação atual da faixa, aliadas à manutenção do direito de uso das radiofrequências pelos sistemas incumbentes até o término do prazo de vigência de suas respectivas autorizações. Também sugeriram que a introdução de novos canais de radiodifusão na faixa de 250 MHz a 268 MHz ocorra de forma progressiva e planejada, com priorização, sempre que possível, das porções do espectro que impliquem menor impacto sobre os sistemas incumbentes em operação;
+na contribuição nº 7, a empresa Amazon Leo assinalou a omissão da Nota 5.517B aplicável ao serviço FIXO POR SATÉLITE (espaço para Terra), nas colunas REGIÃO 2 e BRASIL, para as faixas de 18,4 GHz a 18,6 GHz e de 29,9 GHz a 30 GHz;
+a Embraer, em sua contribuição nº 19, propôs adicionar a referência ao Ato SOR nº 17.207/2023 (D.O.U. de 15.12.2023) na coluna instrumentos da faixa de 1.452 MHz a 1.472 MHz (e também as faixas 2.200 MHz a 2.290 MHz e 5.091 MHz a 5.150 MHz que podem ser utilizadas para telemetria aeronáutica).
+na contribuição nº 21, a SpaceX reiterou seu apoio à atribuição de porções do espectro entre 90 GHz e 100 GHz (Banda W) ao Serviço Fixo por Satélite (SFS). Sugeriu também destinar essas mesmas faixas ao Serviço de Comunicação Multimídia (SCM) que costuma estar associado ao SFS;
+em sua contribuição nº 22, a LABRE sugeriu incluir referência ao Ato 926/2024 da coluna Instrumentos das faixas 905 MHz a 907,5 MHz e 81 GHz a 81,5 GHz;
+nessa mesma contribuição, a LABRE sugeriu alterar a destinação ao SLP na faixa de 472 KHz a 479 kHz para "Serviço Limitado Privado - Radionavegação Aeronáutica";
+a ABERT e a SET, nas contribuições de nº 23 e 24, sugeriram ajuste no Anexo V – Distribuição de Faixas de Frequências, de “54–72 MHz; 76–88 MHz; 174–216 MHz; 470–608 MHz; 614–698 MHz” para “174–216 MHz; 250–322 MHz; 470–608 MHz; 614–698 MHz”, de maneira a refletir as subfaixas destinadas aos Serviços de Radiodifusão de Sons e Imagens e Retransmissão de Televisão; e
+a Embraer e o Instituto de Pesquisas e Ensaios em Voo (IPEV), organização pertencente à Força Aérea Brasileira, nas contribuições de nº 29 e 27, respectivamente, sugeriram alterar o item 8 do Anexo VIII, de modo a incluir novas localidades autorizadas para operação nas faixas de frequências 1.452 MHz a 1.472 MHz e 2.200 MHz a 2.290 MHz pelo Serviço Limitado Móvel Aeronáutico (SLMA).
+Maiores detalhes e considerações adicionais sobre cada um desses temas serão apresentados nas seções da presente Análise que tratam das alterações sugeridas por este Relator nos documentos que passaram pela CP 03/2026.
+II.4 - Das sugestões não pertinentes
+Apresentam-se a seguir os temas contidos nas contribuições e que foram considerados como não pertinentes, acompanhados, em cada caso, das justificativas do respectivo não acolhimento:
+as prestadoras Telefônica e Brisanet, nas contribuições de nº 3 e 4, sugeriram prever a destinação ao SMP da faixa de 614 MHz a 698 MHz em revisões futuras; a sugestão não foi acatada em razão da Portaria nº 10.693, de 5 de outubro de 2023, do Ministério das Comunicações (MCom), que dispõe sobre as diretrizes complementares para a canalização, cobertura do serviço e harmonização de faixas de frequência para implantação da TV 3.0;
+a Amazon Leo, na contribuição nº 7, sugeriu a inclusão da referência ao Ato SOR nº 9.523/2021 (D.O.U. de 29.10.2021) na Nota B10.5. A área técnica observou que a nota faz referência aos Requisitos Técnicos e Operacionais para Sistemas de Comunicação via Satélite, sendo o número do ato correspondente indicado na coluna "Instrumentos" para cada faixa, o que torna mais fácil sua atualização;
+no âmbito do art. 5º da Minuta de Resolução submetida à Consulta Pública nº 3/2026, em sua contribuição nº 10, a Copel Distribuição sugeriu explicitar que as limitações relativas à expedição de novas autorizações ou à prorrogação de autorizações existentes associadas ao SLP ou ao STFC não se aplicam às faixas de 451MHz a 458 MHz e 461MHz a 468 MHz. O corpo técnico considerou essa sugestão fora de escopo;
+nas contribuições de nº 13 e 14, a Speedcast sugeriu não destinar a subfaixa de 316 a 322 MHz ao serviço de radiodifusão, de modo a possibilitar seu uso por novos serviços, como sistemas de satélites não geoestacionários para aplicações de Internet das Coisas (IoT). Propôs também manter apenas as atribuições aos serviços FIXO e MÓVEL nessa subfaixa. A área técnica não aceitou, observando que existem outras porções de espectro disponíveis ou passíveis de avaliação futura para suportar novas aplicações, como serviços de IoT via satélite;
+na contribuição nº 15, a EDP Espírito Santo pediu priorização mais específica da faixa de 450 MHz para aplicações críticas de utilities. Observou que o item 2 do Anexo VIII dá prioridade ao uso por redes privativas e o item 3 estabelece que os sistemas terrestres dos serviços de interesse coletivo não podem causar interferência prejudicial ou solicitar proteção em relação a estações do SLP. A contribuição foi inserida no art. 4º da Minuta de Resolução e o corpo técnico a considerou fora de escopo;
+a LABRE, em sua contribuição nº 22, apoiou a supressão do termo em minúsculo “Radioamador” mantendo-se o termo em maiúsculo “RADIOAMADOR” na faixa de 435 MHz a 438 MHz. O corpo técnico esclareceu que a destinação ao serviço de telecomunicações "Radioamador", quando utilizando capacidade espacial, possui categoria secundária. Além disso, para a UIT, os termos "Radioamador" e "Radioamador por satélite" são atribuições distintas e a nota 5.278 não atinge ambas modalidades de serviço;
+em sua contribuição nº 25, a SpaceX pediu a eliminação da Nota de Rodapé 5.555C em razão de restrições para operações de satélites não geoestacionários na faixa de 51,4 GHz a 52,4 GHz. O corpo técnico não concordou, considerando: i) as autorizações já conferidas à interessada; ii) que as discussões internacionais, no âmbito da UIT, para rever a possibilidade de uso da faixa ainda estão em andamento; iii) que já está sendo prevista nova atribuição de faixas na Banda W (90 GHz) para complementar a capacidade do enlace de subida de sistemas do FSS; e iv) a ausência de elementos técnicos detalhados que demonstrem a necessidade de disponibilização imediata de espectro adicional;
+em sua contribuição nº 26, a SpaceX propôs a introdução de um mecanismo de dispensa à nota de rodapé B10.6 para viabilizar o uso compartilhado comercial de faixas atribuídas a fins militares. A área técnica não aceitou a proposta, pois a indicação dessas faixas para sistemas militares decorreu de entendimentos com as Forças Armadas e sua eventual revisão demandaria discussões entre os órgãos competentes;
+a Associação UTC América Latina, a Elektro Redes, a Companhia Energética de Pernambuco, a Neoenergia Distribuição Brasília, a Companhia de Eletricidade do Estado da Bahia (Coelba) e a Companhia Energética do Rio Grande do Norte (Neoenergia Cosern), nas contribuições de nº 28, 30, 31, 32, 33 e 34, respectivamente, sugeriram que as faixas de 410 MHz a 415 MHz, 420 MHz a 425 MHz, 452,5 MHz a 457,5 MHz e 462,5 a 467,5 MHz sejam preferencialmente autorizadas para uso por sistemas de empresas que atuam no provimento de energia elétrica, gás e saneamento. A área técnica observou que, para as faixas de 410 MHz a 415 MHz, 420 MHz a 425 MHz, tal provisão já consta do Ato nº 915, de 1º de fevereiro de 2024; e
+essas mesmas entidades, nas mesmas contribuições referidas no item anterior, pediram a inclusão das faixas de 410 MHz a 415 MHz e 420 MHz a 425 MHz nos itens 2 e 3 do Anexo VIII, buscando estabelecer prioridade de utilização por redes privativas ou proteção contra serviços de interesse coletivo. A área técnica considerou não ser necessário, uma vez que essas faixas estão destinadas somente ao SLP e parcialmente ao STFC para acesso fixo sem fio.
+Pelas razões acima apresentadas, esses temas não serão considerados por este Relator na presente Análise. Sem embargo, ficam aqui registrados de forma a que possam eventualmente ser aproveitados em outras iniciativas regulatórias da Agência.
+III - DAS CONSIDERAÇÕES DESTE RELATOR
+III.1 - Do corpo da Resolução
+Para fins da presente Análise, toma-se como referência a Minuta de Resolução (SEI nº 14335581), considerando que seu teor foi apreciado por este Colegiado e aprovado para submissão à Consulta Pública, por unanimidade, pelo Acórdão nº 3/2026 (SEI nº 15106560).
+Convenciona-se aqui que o texto original que passou pela CP será mantido em letras negras. As modificações aportadas pelo corpo técnico na Minuta de Resolução (SEI nº 15404168) elaborada após a CP serão grafadas em letras azuis. As novas alterações propostas por este Relator serão indicadas com letras vermelhas.
+Partindo-se da ementa da referida Minuta, considera-se pertinente a adição da referência à alteração do RCC-SRA sugerida pela área técnica. Propõe-se apenas uma simplificação e a adição da sigla correspondente, para facilitar as referências ao Regulamento sobre Canalização e Condições_de_Uso_de_Radiofrequências para os Serviços de Radiodifusão e seus Ancilares. Sugere-se assim a seguinte ementa:
+Aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), promovendo as atribuições, destinações e condições específicas de uso de faixas de frequências nele dispostas e altera o Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA).
+O texto introdutório e o art. 1º da Minuta estão adequados. Ressalta-se ainda que, em relação a tais disposições, nada consta entre as sugestões acolhidas oriundas das contribuições na CP 03/2026.
+Já o art. 2º, que trata das alterações relativas à canalização na faixa de 250 MHz a 322 MHz propostas no RCC-SRA, requer especial atenção. Em razão de sua importância e complexidade, as propostas deste Relator em relação a tal artigo serão discutidas em uma seção específica desta Análise.
+Os arts. 3º e 4º da Minuta de Resolução também são pertinentes. Os temas abordados são a revogação da Resolução nº 772/2025 e as condições técnicas e operacionais para o uso de radiofrequências para telecomunicações sobre redes de energia elétrica (BPL). Observa-se que tais temas não foram objeto de contribuições pertinentes no âmbito da CP 03/2026.
+Finalmente, está adequado o prazo de 30 (trinta) dias proposto pelo corpo técnico para entrada em vigor da resolução aqui em pauta.
+A versão integral proposta por este Relator está na Minuta de Resolução NP (SEI nº 15838005).
+III.2 - Das alterações no PDFF
+De início, propõe-se um ajuste nos títulos dos Anexos II, IV e V para maior homogeneidade com os demais, além de dar uma melhor ideia dos respectivos conteúdos:
+ANEXO – PLANO DE ATRIBUIÇÃO, DESTINAÇÃO E DISTRIBUIÇÃO DE FAIXAS DE FREQUÊNCIAS NO BRASIL
+CAPÍTULO I - DO OBJETO E DAS DEFINIÇÕES
+CAPÍTULO II - DAS DIRETRIZES GERAIS
+CAPÍTULO III - DAS DIRETRIZES ESPECÍFICAS
+CAPÍTULO IV - DAS DISPOSIÇÕES SOBRE ATRIBUIÇÃO, DESTINAÇÃO E DISTRIBUIÇÃO DE FAIXAS DE FREQUÊNCIAS
+Anexo I - Divisão regional do globo terrestre, segundo a União Internacional de Telecomunicações (UIT)
+Anexo II - Tabela de relações entre os serviços de telecomunicações ou de radiodifusão e seus ancilares e os de radiocomunicações e radioastronomia.
+Anexo III - Tabela de faixas de nomenclaturas das faixas de frequências em conformidade com o Regulamento de Rádio (RR) da UIT
+Anexo IV -Tabela de Atribuição e Destinação de Faixas de Frequências (TADF) 
+Anexo V - Tabelas de Distribuição de Faixas de Frequências (TDFF)
+Anexo VI - Notas internacionais
+Anexo VII - Notas específicas do Brasil
+Anexo VIII - Condições específicas dos serviços destinados em determinadas faixas de frequências
+No art. 3º do PDFF, sugere-se utilizar apenas as siglas UIT e RR, considerando que os nomes por extenso já foram definidos mais acima nesse mesmo documento. No parágrafo único, acrescenta-se a referência ao Artigo 1 do RR, tal como o Artigo 5 é referenciado no art. 10 deste Plano.
+Art. 3º A Anatel, ao atribuir faixas de frequências, deve observar as atribuições aos serviços de radiocomunicações definidas pela União Internacional de Telecomunicações (UIT) para a Região 2, conformerepresentada na figura do Anexo a este Plano.
+Parágrafo único. A definição de cada serviço de radiocomunicações está contida no Artigo 1 do Regulamento de Rádio RR da UIT.
+No §4º do art. 5º, propõe-se utilizar apenas as siglas UIT e RR, considerando que os nomes por extenso já foram definidos mais acima nesse mesmo documento.
+Art. 5º ....
+[...]
+§ 4º As relações entre os serviços de radiocomunicações, identificados pelos respectivos itens de 1.20 a 1.60 do Artigo 1 do RR, e os serviços de telecomunicações, de radiodifusão e seus ancilares estão estabelecidas na tabela do Anexo II a este Plano.
+O novo Regulamento Geral dos Serviços de Telecomunicações (RGST), aprovado pela Res. nº 777/2025, revisou as listas de serviços de telecomunicações da Anatel:
+Regulamento Geral dos Serviços de Telecomunicações (RGST), aprovado pela Res. nº 777, de 28 de abril de 2025
+"Art. 10. São serviços de telecomunicações de interesse coletivo:
+I - Serviço Telefônico Fixo Comutado - STFC;
+II - Serviço Móvel Pessoal - SMP;
+III - Serviço de Comunicação Multimídia - SCM; e,
+IV - Serviço de Acesso Condicionado - SeAC.
+(...)
+Art. 22. São Serviços de Telecomunicações de interesse restrito:
+I - Serviço Limitado Privado - SLP;
+II - Serviço Limitado Móvel Marítimo - SLMM;
+III - Serviço Limitado Móvel Aeronáutico - SLMA;
+IV - Serviço de Radioamador;
+V - Serviço de Rádio do Cidadão; e,
+VI - Serviço Auxiliar de Radiodifusão e Correlatos - SARC."
+Assim, no "Anexo III - Tabela de faixas de nomenclaturas das faixas de frequências em conformidade com o RR da UIT", propõe-se suprimir os serviços de telefonia rural e televisão em circuito fechado com utilização de radioenlace, que passaram a ser modalidades do Serviço Limitado Privado (SLP).
+ Serviço de Telecomunicações ou de Radiodifusão e Ancilares
+ | 
+ Serviço de Radiocomunicações
+ e Radioastronomia
+ | 
+ telefonia rural
+ | 
+ fixo (1.20)
+ fixo por satélite (1.21)
+ | 
+ televisão em circuito fechado com utilização de radioenlace
+ | 
+ fixo (1.20)
+ | 
+Novamente, em razão de sua complexidade e importância, o "Anexo IV – Tabela de Atribuição e Destinação de Faixas (TADF)" será discutido em uma seção própria da presente Análise, tendo por base a Planilha PDFF 2025-2026 (SEI nº 14335646) que passou pela CP 03/2026. Na referida seção, serão tratadas as sugestões acolhidas oriundas das contribuições das empresas Amazon Leo (nº 7), Embraer (nº 19) e Space X (nº 21) e LABRE (nº 22).
+No "Anexo V - Tabelas de Distribuição de Faixas de Frequências (TDFF)", é pertinente o ajuste no topo da tabela que trata dos Serviços de Radiodifusão de Sons e Imagens e Retransmissão de Televisão sugerido por ABERT e SET nas contribuições de nº 23 e 24, respectivamente. Trata-se de manter a coerência com as faixas utilizadas pelos referidos serviços, as quais estão sendo alteradas na presente revisão do RCC-SRA. No mesmo sentido, para o serviço de Radiodifusão Sonora em Ondas Curtas - OC, sugere-se suprimir a referência à Res. 721/20 na coluna "Instrumentos", uma vez que o referido serviço deixou de figurar no RCC-SRA, embora ainda permaneça na Portaria de Consolidação GM/MCOM Nº 1/2023, do Ministério das Comunicações. 
+ 5950-6200 kHz (49 m); 9500-9775 kHz (31 m); 11700-11975 kHz (25 m); 15100-15450 kHz (19 m); 17700-17900 kHz (16 m); 21450-21750 kHz (13 m); e 25600-26100 kHz (11 m)
+ | 
+ SERVIÇO
+ | 
+ DISTRIBUIÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS – OC
+ | 
+ Plano básico de distribuição de canais de radiodifusão sonora em ondas curtas
+ | 
+ Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ 54-72 MHz; 76-88 MHz; 174-216 MHz; 250–322 MHz; 470-608 MHz; 614-698 MHz
+ | 
+ SERVIÇO
+ | 
+ DISTRIBUIÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ RADIODIFUSÃO DE SONS E IMAGENS – TV
+ | 
+ Plano básico de distribuição de canais de televisão em VHF e em UHF
+ | 
+ Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ Ato SOR nº 9751/22 (D.O.U. de 18.07.2022)
+ | 
+ RETRANSMISSÃO DE TELEVISÃO – RTV
+ | 
+ Plano básico de distribuição de canais de retransmissão de televisão em VHF e UHF
+ | 
+ Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ Ato SOR nº 9751/22 (D.O.U. de 18.07.2022)
+ | 
+Observa-se que o "Anexo VIII – Condições específicas dos serviços destinados em determinadas faixas de frequências" foi criado para deixar as regras relacionadas a critérios de proteção e limitações quanto a autorizações de uso de radiofrequências e licenciamentos consolidadas em um único lugar. Nesse contexto, entende-se que as condições específicas para o STFC, o SLP e os Direitos de Exploração de Satélite na faixa de 250 MHz a 322 MHz propostos para inserção no RCC-SRA ficariam melhor situados no Anexo VIII do PDFF.
+O art. 2º da Minuta de Resolução (SEI nº 14335581) que passou pela CP 03/2026 propôs o acréscimo de um novo art. 14, o qual pode ser aproveitado como item 2 do referido Anexo VIII, com alguns ajustes em seu teor, conforme:
+Art. 14 2. Nas faixas de frequências de 250 a 322 MHz, não podem ser expedidas novas autorizações de uso de radiofrequências, ou prorrogadas as autorizações em vigor, nem licenciadas novas estações ou consignadas novas radiofrequências associadas a sistemas terrestres do Serviço Limitado Privado ou do Serviço Telefônico Fixo Comutado.
+§1º 2.1. Os sistemas previamente autorizados poderão continuar em operação, sem causar interferência prejudicial nem solicitar proteção de estações operando de acordo com este Regulamento:
+I- a) por até 6 (seis) meses contados da destinação da faixa aos Serviços de Radiodifusão e seus Ancilares, ou pelo prazo remanescente da autorização de uso de radiofrequências, o que ocorrer primeiro, nas subfaixas de 268,75 a 322 MHz; e ou
+II-b)até 48 (quarenta e oito) meses contados da destinação aos Serviços de Radiodifusão e seus Ancilares, ou pelo prazo remanescente da autorização de uso de radiofrequências, o que ocorrer primeiro, nas subfaixas de 250 a 268,75 MHz.
+2.2. Excepcionalmente, mediante justificativa técnica a ser avaliada pela Superintendência responsável pela administração do espectro de radiofrequências, poderão ser licenciadas novas estações ou consignadas novas radiofrequências, associadas a sistemas terrestres do Serviço Limitado Privado, nas faixas de 250 MHz a 268,75 MHz.
+No mesmo art. 2º da referida minuta, propôs-se também adicionar ao RCC-SRA um novo art. 15, o qual pode ser aproveitado como novo item 3 do Anexo VIII ao PDFF:
+Art. 15 3. Nas faixas de frequências 250 a 322 MHz, não podem ser conferidos novos Direitos de Exploração de Satélites ou prorrogados aqueles que estiverem em vigor.
+Parágrafo único.3.1. Os sistemas previamente autorizados poderão continuar em operação, sem causar interferência prejudicial nem solicitar proteção de estações operando de acordo com este Regulamento associadas aos Serviços de Radiodifusão de Sons e Imagens e Retransmissão de Televisão, até 1º de outubro de 2029, ou pelo prazo remanescente do Direito de Exploração, o que ocorrer primeiro.
+Finalmente, no item 8 do "Anexo VIII", renumerado como item 10, é adequada a inclusão de novas localidades autorizadas para operação do SLMA nas faixas de 1.452 MHz a 1.472 MHz e 2.200 MHz a 2.290 MHz tal como solicitado pelo IPEV na contribuição nº 27 e pela Embraer (SEI nº 15533483). Observa-se que os municípios de Borborema, Rincão e Rio Claro mudaram de lugar, para deixar a lista em ordem alfabética.
+810.4. do Estado de Minas Gerais: Aiuruoca, Alagoa, Baependi, Brazópolis, Cachoeira de Minas, Cambuquira, Campina Verde, Carmo de Minas, Carrancas, Carvalhos, Caxambu, Conceição das Pedras, Conceição do Rio Verde, Conceição dos Ouros, Cristina, Cruzília, Delfim Moreira, Dom Viçoso, Espírito Santo do Dourado, Heliodora, Ingaí, Itajubá, Itamonte, Itanhandu, Itapagipe, Itumirim, Iturama, Jesuânia, Lambari, Liberdade, Luminárias, Maria da Fé, Marmelópolis, Minduri, Natércia, Olímpio Noronha, Paraisópolis, Passa Quatro, Passa-Vinte, Pedralva, Piranguçu, Piranguinho, Pouso Alegre, Pouso Alto, Santa Rita do Sapucaí, São Bento Abade, São Francisco de Sales, São José do Alegre, São Lourenço, São Sebastião da Bela Vista, São Sebastião do Rio Verde, São Thomé das Letras, Sapucaí-Mirim, Seritinga, Serranos, Silvianópolis, Soledade de Minas, e Virgínia e Wenceslau Braz; 
+(...)
+810.11. do Estado de São Paulo: Adolfo, Aguaí, Águas da Prata, Álvares Florence, Américo Brasiliense, Américo de Campos, Analândia, Aparecida, Arapeí, Araraquara, Araras, Arealva, Areias, Auriflama, Bady Bassitt, Bálsamo, Bananal, Borborema, Barbosa, Bariri, Bertioga, Boa Esperança do Sul, Bocaina, Borborema, Buritama, Caçapava, Cachoeira Paulista, Cafelândia, Campos do Jordão, Canas, Caraguatatuba, Cardoso, Casa Branca, Catiguá, Cedral, Conchal, Cordeirópolis, Corumbataí, Cosmorama, Cravinhos, Cruzeiro, Cubatão, Cunha, Descalvado, Elisiário, Engenheiro Coelho, Espírito Santo do Pinhal, Estiva Gerbi, Estrela d'Oeste, Fernandópolis, Floreal, Gastão Vidigal, Gavião Peixoto, General Salgado, Guaiçara, Guapiaçu, Guaratinguetá, Guarujá, Guatapará, Iacanga, Ibaté, Ibirá, Ibitinga, Ilha Bela, Indiaporã, Ipeúna, Ipiguá, Iracemápolis, Irapuã, Itajobi, Itaju, Itanhaém, Itápolis, Itirapina, Itobi, Jacareí, Jaci, Jales, Jambeiro, José Bonifácio, Lagoinha, Lavrinhas, Leme, Limeira, Lins, Lorena, Lourdes, Luiz Antônio, Macaubal, Macedônia, Magda, Manduri, Marapoama, Matão, Mendonça, Meridiano, Mirassol, Mira Estrela, Mirassolândia, Mococa, Mogi Mirim, Mogi Guaçu, Monções, Mongaguá, Monte Aprazível, Monteiro Lobato, Motuca, Natividade da Serra, Neves Paulista, Nhandeara, Nipoã, Nova Aliança, Nova Castilho, Nova Europa, Nova Granada, Nova Luzitânia, Novo Horizonte, Olímpia, Onda Verde, Palestina, Parisi, Pedranópolis, Penápolis, Peruíbe, Pindamonhangaba, Piquete, Pirajuí, Pirassununga, Planalto, Poloni, Pongaí, Pontalinda, Pontes Gestal, Porto Ferreira, Potim, Potirendaba, Praia Grande, Promissão, Queluz, Redenção da Serra, Reginópolis, Ribeirão Bonito, Rincão, Rio Claro, Riolândia, Rincão, Rio Claro, Roseira, Sabino, Sales, Santa Cruz da Conceição, Santa Cruz da Esperança, Santa Cruz das Palmeiras, Santa Gertrudes, Santa Lúcia, Santa Rita do Passa Quatro, Santa Rosa de Viterbo, Santo Antônio do Aracanguá, Santo Antônio do Pinhal, Santos, São Bento do Sapucaí, São Carlos, São João da Boa Vista, São João das Duas Pontes, São João de Iracema, São José do Barreiro, São José do Rio Pardo, São José do Rio Preto, São José dos Campos, São Luiz do Paraitinga, São Pedro, São Sebastião, São Sebastião da Grama, São Vicente, Sebastianópolis do Sul, Serra Azul, Silveiras, Tabapuã, Tabatinga, Tambaú, Tanabi, Taubaté, Tremembé, Turiúba, Ubarana, Ubatuba, Uchoa, União Paulista, Uru, Urupês, e Valentim Gentil, Vargem Grande do Sul, Votuporanga e Zacarias; e
+ A versão integral proposta por este Relator está na Minuta de Resolução NP (SEI nº 15838005).
+III.3 - Das alterações no RCC-SRA
+III.3.a - Dos artigos existentes
+Conforme já visto, propõe-se discutir nesta seção da presente Análise as alterações propostas para o RCC-SRA, as quais são objeto do art. 2º da Minuta de Resolução (SEI nº 14335581) que passou pela CP 03/2026:
+Art. 2º O Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares, aprovado pela Resolução nº 721, de 11 de fevereiro de 2020, passa a vigorar com as seguintes alterações:
+A primeira alteração proposta diz respeito ao art. 3º do RCC-SRA. O texto está adequado, sugerindo-se apenas não utilizar as siglas TVD 1G e TVD 2G. Isso porque as siglas correspondentes, já consagradas em documentos oficiais, tais como a Portaria nº 276/2010 do MCom e no Decreto nº 12.595/2025, são TVD e TV 3.0, respectivamente. Além disso, propõe-se considerar, na Tabela II, o início da faixa de UHF em 298 MHz. Isso permitirá enquadrar o canal 301 em UHF na Tabela IV do art. 7º do RCC-SRA, na qual os canais são identificados por sua frequência central.
+Art. 3º..............................................................................................
+§ 1º Os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão, com tecnologia digital de primeira geração (TVD 1G), utilizarão somente as subfaixas VHF (até 216 MHz) e UHF (a partir de 470 MHz).
+§ 2º Os Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão, com tecnologia digital de segunda geração (TVD 2G TV 3.0), utilizarão as subfaixas VHF e UHF.
+Tabela II
+Subfaixas de radiofrequências - Serviços de Radiodifusão de Sons e Imagens e de Retransmissão de Televisão
+ Faixa
+ | 
+ Subfaixas de radiofrequências
+ | 
+ VHF
+ | 
+ 174 – 216 MHz
+ | 
+ 250 – 304298 MHz
+ | 
+ UHF
+ | 
+ 304298 – 322 MHz
+ | 
+ 470 – 608 MHz
+ | 
+ 614 – 698 MHz
+ | 
+Em harmonia com os ajustes acima sugeridos para o art. 3º, propõe-se ajustar a Tabela IV do art. 7º do RCC-SRA:
+Tabela IV
+Canalização nas subfaixas de radiofrequências VHF e UHF
+ Subfaixa
+ | 
+ Canal TVD 1G
+ | 
+ Canal TVD 2G 3.0
+ | 
+ Frequência Inferior (MHz)
+ | 
+ Frequência Superior (MHz)
+ | 
+ VHF
+ | 
+ 7
+ | 
+ 177
+ | 
+ 174
+ | 
+ 180
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ ---
+ | 
+ 295
+ | 
+ 292
+ | 
+ 298
+ | 
+ ---
+ | 
+ 301
+ | 
+ 298
+ | 
+ 304
+ | 
+ UHF
+ | 
+ ---
+ | 
+ 301
+ | 
+ 298
+ | 
+ 304
+ | 
+ ---
+ | 
+ 307
+ | 
+ 304
+ | 
+ 310
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+O § 4º do art. 8º do RCC-SRA aplica-se apenas à rádio FM, uma vez que se deixou de utilizar a faixa baixa de VHF para serviços de TV e RTV.
+“Art. 8º ................................................................................................
+§ 4º Nos casos de manifesta impossibilidade técnica quanto ao uso dos canais constantes do § 3º em determinada região, será indicado, em substituição, canal alternativo na faixa de 76 MHz a 87,4 MHz ou 88 MHz a 108 MHz, para utilização exclusiva naquela região, desde que haja algum que atenda aos critérios de proteção dos canais previstos nos Planos Básicos de Distribuição de Canais de Radiodifusão Sonora em Frequência Modulada, de Televisão em VHF e UHF e de Retransmissão de Televisão em VHF e UHF.
+Observa-se que o RCC-RSA trata, de forma indireta, a competência para estabelecer procedimentos (art. 9º, parágrafo único) e para aprovar requisitos técnicos (art. 10), além de consolidar características técnicas (art. 12). A criação, alteração e extinção de planos são procedimentos técnicos, sem caráter de política pública, mas de gestão regular das outorgas. Para conferir segurança jurídica e delimitar claramente as competências da SOR sobre os Planos Básicos, sugere-se a inclusão de um novo art. 9º-A, com o seguinte teor:
+"Art. 9º‑A. Compete à Superintendência responsável pela administração do uso do espectro de radiofrequências promover a criação, alteração ou extinção dos Planos Básicos de Distribuição de Canais de Radiodifusão, observados os critérios técnicos e as normas aplicáveis.
+Parágrafo único. Os atos referidos no caput serão submetidos ao procedimento de Consulta Pública antes de sua expedição, nos termos do regulamento."
+Finalmente, considerando que os canais de TV e RTV analógicos já não constam do RCC-SRA, sugere-se retirá-los do art. 12. Sua consolidação pela Superintendência responsável pela administração do uso do espectro de radiofrequências deixou de ser necessária. Por outro lado, propõe-se acrescentar o Plano de Distribuição de Canais de Televisão Digital de Segunda Geração (PBDTV+), com a sigla já utilizada em outros documentos da Agência.
+"Art. 12. As características técnicas de canais do Plano de Referência para Distribuição de Canais do Serviço de Radiodifusão Comunitária – PRRadCom e dos Planos Básicos de Distribuição de Canais de Radiodifusão Sonora em Onda Média – PBOM, de Distribuição de Canais de Radiodifusão Sonora em Onda Tropical – PBOT, de Distribuição de Canais de Radiodifusão Sonora em Onda Curta – PBOC, de Distribuição de Canais de Radiodifusão Sonora em Frequência Modulada – PBFM, de Distribuição de Canais de Televisão em UHF e VHF – PBTV, de Distribuição de Canais de Retransmissão de Televisão em VHF e UHF – PBRTV, de Atribuição de Canais de Televisão por assinatura em UHF – PBTVA, e de Distribuição de Canais de Televisão Digital – PBTVD e de Distribuição de Canais de Televisão Digital de Segunda Geração - PBDTV+ serão consolidadas pela Superintendência responsável pela administração do uso do espectro de radiofrequências."
+Sugere-se a aprovação por este Colegiado dos ajustes acima propostos, já consolidados na Minuta de Resolução NP (SEI nº 15838005), e passa-se a examinar a proposta de acréscimo de novos artigos ao RCC-SRA.
+III.3.b - Dos novos artigos propostos
+Com relação à implantação da TV 3.0, observa-se que a atribuição da faixa de 250 MHz a 292 MHz ao serviço de RADIODIFUSÃO no Brasil foi feita pela Resolução nº 772/2025. Na Planilha PDFF 2025-2026 (SEI nº 14335646) que passou pela CP 03/2026, estendeu-se tal atribuição à faixa de 292 MHz a 322 MHz. Além disso, destinou-se a faixa 250 MHz a 322 MHz aos serviços de "RADIODIFUSÃO DE SONS E IMAGENS" e "RETRANSMISSÃO DE TELEVISÃO", em caráter primário. As demais destinações existentes na faixa foram suprimidas, menos o "Serviço Limitado Privado - Exceto Móvel por Satélite", que foi mantido, em caráter secundário.
+Nos casos de mudança de atribuição, destinação ou distribuição de radiofrequências, a Anatel deve ﬁxar prazo adequado e razoável para a efetivação, nos termos do art. 4º, parágrafo único, do RUE. Nos casos de alteração de canalização e de condições específicas de uso de radiofrequências, a Anatel deve estabelecer prazo não inferior a 6 (seis) meses e não superior a 8 (oito) anos para a adequação do funcionamento dessas estações.
+RUE
+"Art. 4º A Anatel, no exercício da função de administração do uso de radiofrequências, pode modificar motivadamente a atribuição, destinação e distribuição de radiofrequências ou faixas de radiofrequências, bem como suas autorizações e consignações e as respectivas condições de uso de radiofrequências
+Parágrafo único. A Anatel deve fixar prazo adequado e razoável para a efetivação da mudança prevista no caput, observado o disposto no art. 12 deste Regulamento.
+(...)
+Art. 12. Caso o regulamento ou norma de canalização e condições especíﬁcas de uso de radiofrequências venha a alterar as condições de uso de radiofrequências utilizadas por estações regularmente autorizadas e licenciadas, a Anatel deve estabelecer prazo não inferior a 6 (seis) meses e não superior a 8 (oito) anos para a adequação do funcionamento dessas estações.
+§ 1º Antes do término do prazo de que trata o caput, os interessados na utilização das radiofrequências, faixas ou canais de radiofrequências que já estejam sendo utilizadas por terceiros sem atender às novas condições estabelecidas, poderão negociar a substituição ou remanejamento do sistema de radiocomunicação.
+§ 2º A Anatel pode, por meio de regulamento de canalização e condições especíﬁcas de uso de radiofrequências, ou por meio de regulamento especíﬁco de serviço de radiocomunicação, estabelecer que a substituição ou o remanejamento dos sistemas de radiocomunicação mencionados no § 1º sejam compulsórios.
+§ 3º Decorrido o prazo estabelecido na forma do caput e em função das características dos novos sistemas ou serviços a que a faixa de radiofrequências está destinada, a Anatel pode autorizar ou manter a operação, em caráter secundário, pelo prazo remanescente da autorização, desde que comprovada a possibilidade de convivência sem prejuízo aos autorizados nas novas condições.
+§ 4º Caso a Anatel decida por não autorizar a operação das estações em caráter secundário, nos termos do § 3º, a continuidade da operação configurará uso não autorizado de radiofrequências.
+§ 5º O prazo de que trata o caput pode ser reduzido nos casos em que o uso da radiofrequência, faixa ou canal de radiofrequências não esteja em conformidade com os critérios de eficiência estabelecidos pela Anatel, observado o devido processo para a verificação da ineficiência."
+O art. 2º da Minuta de Resolução (SEI nº 14335581) que passou pela CP 03/2026 propôs o acréscimo de dois novos novo artigos ao RCC-SRA, os arts. 14 e 15, os quais serão deslocados para o Anexo VIII do PDFF, como já visto mais acima.
+O primeiro deles veda novas autorizações ou prorrogações de autorizações de uso de radiofrequências associadas ao SLP ou ao STFC terrestres na faixa de 250 MHz a 322 MHz e estabelece prazos limites para que os serviços hoje autorizados continuem a operar, sem causar interferência prejudicial nem reivindicar proteção.
+O segundo veda a conferência de novos Direitos de Exploração de Satélites ou sua prorrogação na faixa de 250 MHz a 322 MHz e define o prazo limite até o qual os sistemas satelitais já autorizados nessa faixa poderão operar, sem causar interferência prejudicial nem reivindicar proteção.
+Como já visto, no âmbito da CP 03/2026, tais dispositivos foram objeto de contribuições das empresas Telefônica, MRS Logística, RGE, EDP Espírito Santo e Speedcast.
+A área técnica considerou relevantes as preocupações das empresas que utilizam a subfaixa de 250 MHz a 268 MHz para aplicações de missão crítica, notadamente nos setores ferroviário e de energia elétrica. Por outro lado, entendeu que a contribuição da Speedcast, relativa ao art.15, não deve ser acatada por comprometer o planejamento espectral proposto para a TV 3.0.
+Informe nº 34/2026/PRRE/SPR (SEI nº 15389126)
+"3.18.2. Por outro lado, foram encaminhadas contribuições manifestando preocupações quanto ao impacto sobre serviços e estações que atualmente operam na referida faixa. Abaixo segue resumo das contribuições referidas:
+- Telefônica: não apresentou sugestão concreta para a faixa, mas defende a necessidade de preservar a integridade de serviços críticos de comunicação (segurança pública, redes privativas) nas faixas abaixo de 400 MHz, e de assegurar prazos exequíveis e mecanismos de mitigação que não comprometam serviços de telecomunicações já instalados;
+- A MRS Logística, empresa do setor ferroviário:, manifestou posição contrária à destinação da faixa. Destaca especialmente a subfaixa de 256 MHz a 257 MHz, apontando ser crucial para sistemas de comunicação da empresa, que garantem a segurança e controle da operação ferroviária, sendo sensíveis a interferências e com altos custos de migração (R$ 1,8 a R$ 2,0 bilhões, segundo a contribuição). Destacam-se os seguintes pontos da contribuição:
+a) Critica a ausência de plano de refarming das estações atuais;
+b) Sugere destinar somente a subfaixa acima de 260 MHz;
+c) Alternativamente, sugere priorizar os canais mais altos para a TV 3.0, e aumentar o prazo de desocupação de 48 para 84 meses para a faixa de 250 a 268 MHz;
+d) Sugere a adoção de medidas mitigadoras robustas: máscaras rígidas para TV, limite de campo elétrico em corredores ferroviários, outros aspectos de coordenação para proteção das estações SLP.
+- RGE Energia: manifestou posição contrária à destinação da faixa de 250 a 256 MHz no Estado do Rio Grande do Sul, por coincidir com frequências utilizadas por um sistema LTE de missão crítica da empresa, com autorização até setembro de 2036. Assim, sugere que o primeiro canal seja utilizado somente após esse prazo;
+- EDP Espírito Santo: manifestou apoio às regras de transição, mas contesta a supressão de previsibilidade de proteção para sistemas instalados. Assim, sugere ampliação do prazo de transição, a adoção de migração assistida e salvaguardas de convivência;
+- Speedcast: criticou a destinação integral da faixa, e sugeriu que a faixa de 316 a 322 MHz seja preservada para aplicações satelitais. Destacou risco de interferência em redes satelitais. Adicionalmente, alegou ausência de previsão industrial para transmissores de TV na faixa.
+3.18.3. As contribuições submetidas pela MRS Logística, pela RGE Energia e pela EDP Espírito Santo no âmbito da consulta evidenciam preocupações relevantes de agentes incumbentes que atualmente utilizam a faixa de 250 MHz a 268 MHz para aplicações de missão crítica, notadamente nos setores ferroviário e de energia elétrica. De modo geral, tais manifestações apontam para a necessidade de mitigar impactos sobre os sistemas existentes, tendo em vista sua criticidade, sua sensibilidade a interferências e os custos elevados associados à eventual adaptação ou migração.
+(...)
+3.18.15. A eventual exclusão de parte da faixa — ainda que limitada à subfaixa de 316 a 322 MHz — poderia comprometer a coerência do planejamento espectral proposto para a TV 3.0, reduzindo a flexibilidade para alocação de canais e dificultando a implementação uniforme do serviço em âmbito nacional."
+Em vista das manifestações de MRS Logística, RGE e EDP Espírito Santo, o corpo técnico propôs a introdução gradual e planejada de novos canais de radiodifusão na faixa de 250 MHz a 268 MHz, com priorização, sempre que possível, de outras porções do espectro que impliquem menor impacto sobre os sistemas incumbentes em operação, como se verá a seguir.
+III.3.c - Das propostas do corpo técnico
+De início, o corpo técnico destacou que as seguintes autorizações vigentes estão associadas a aplicações de missão crítica na subfaixa de 250 MHz a 268 MHz:
+Informe nº 34/2026/PRRE/SPR (SEI nº 15389126)
+"3.18.8. O encaminhamento proposto considera, em particular, as seguintes autorizações vigentes associadas a aplicações de missão crítica em diferentes setores, na medida em que abrangem canais situados na subfaixa de 250 MHz a 268 MHz:
+I - Atos nº 3.643/2018, 8.586/2018, 90/2020 e 4.808/2020 (SEI nº 2722529, 3477763, 5102544 e 5927310, respectivamente), que conferem à Vale S.A. autorização de uso de radiofrequências em canais constantes da subfaixa de 250 a 268 MHz, em municípios dos Estados do Espírito Santo, Minas Gerais, Maranhão e Pará;
+II - Ato nº 14.314/2022 (SEI nº 9284191), que confere à RGE Sul Distribuidora de Energia S.A. autorização de uso de radiofrequências em canais constantes da subfaixa de 250 a 256 MHz, em todos os municípios do Estado do Rio Grande do Sul;
+III - Ato nº 7.666/2023 (SEI nº 10406461), que confere à Lightera Latam S.A. autorização de uso de radiofrequências em canais constantes da subfaixa de 250 a 256 MHz, no município de Curitiba/PR;
+IV - Ato nº 6.148/2019 (SEI nº 4686144), que confere à Companhia Paulista de Força e Luz (CPFL) autorização de uso de radiofrequências em canais constantes da subfaixa de 250 a 256 MHz, em municípios do Estado de São Paulo;
+V - Atos nº 3.887/2022 e 11.731/2024 (SEI nº 8185331 e 12426706, respectivamente), que conferem à MRS Logística S.A. autorização de uso de radiofrequências em canais constantes da subfaixa de 256 a 262 MHz, em todos os municípios dos Estados de Minas Gerais, Rio de Janeiro e São Paulo; e
+VI - Atos nº 6.464/2019, 4.431/2020, 4.452/2020, 12.670/2023 (SEI nº 4760353, 5879793, 5882532 e 10771385, respectivamente), que conferem a empresas do grupo EDP Distribuição de Energia autorização de uso de radiofrequências em canais constantes da subfaixa de 250 a 268 MHz, em municípios dos Estados do Espírito Santo e São Paulo."
+Assim, buscaram-se alternativas para minimizar os impactos sobre os sistemas autorizados em caráter secundário, mediante possíveis flexibilizações no planejamento da ocupação da faixa e na avaliação técnica de casos específicos. Em qualquer hipótese, o caráter primário da radiodifusão na faixa deverá ser respeitado, de forma que não haverá proteção regulatória para os demais serviços. Ainda assim, em muitos casos, tais serviços poderão ter condições satisfatórias para operar.
+Informe nº 34/2026/PRRE/SPR (SEI nº 15389126)
+"3.18.9. Nesses casos, o encaminhamento proposto constitui medida de melhor esforço voltada a preservar, na maior medida possível, a operação dos sistemas incumbentes regularmente autorizados em secundário, mediante ocupação progressiva da faixa pela radiodifusão e priorização, sempre que houver alternativa técnica, daquela que implique menor impacto sobre os sistemas existentes em caráter secundário em relação à radiodifusão na faixa.
+3.18.10. Essa preservação, contudo, não se verifica de forma uniforme ou automática, pois seu alcance dependerá da demanda pela faixa em cada localidade, bem como da existência de alternativas de canalização que permitam acomodar a radiodifusão com menor afetação aos sistemas já instalados.
+3.18.11. Nesse contexto, é possível que, em determinados casos, os sistemas atualmente autorizados permaneçam em operação, ainda que em caráter secundário, até o término de sua vida útil e dos respectivos prazos de vigência de suas autorizações, especialmente nas localidades em que não houver demanda efetiva pela faixa por parte da radiodifusão ou em que o planejamento de canais permita solução de menor impacto sobre os sistemas existentes.
+3.18.12. De todo modo, tal modelagem não confere proteção regulatória aos sistemas incumbentes que permaneçam operando em caráter secundário. Assim, nas localidades e condições em que houver efetiva implantação de canais de radiodifusão na faixa, prevalecerá o uso primário desse serviço, não cabendo proteção contra interferências prejudiciais aos sistemas secundários. Eventuais flexibilizações poderão ser consideradas apenas no âmbito do planejamento da ocupação da faixa e da avaliação técnica de casos específicos, sem afastar, em qualquer hipótese, a primariedade da radiodifusão."
+Em termos concretos, a proposta do corpo técnico foi acrescentar mais um artigo ao RCC-SRA com as seguintes regras que estabelecem prioridades para a inclusão de canais no PBTVD nas faixas de 250 MHz a 322 MHz:
+I – nos municípios situados nos Estados do Paraná e do Rio Grande do Sul, a inclusão ocorrerá, prioritariamente, na faixa de 256 MHz a 322 MHz;
+II – nos municípios situados nos Estados do Rio de Janeiro e de São Paulo, a inclusão ocorrerá, prioritariamente, na faixa de 262 MHz a 322 MHz; e
+III – nos municípios situados nos Estados do Pará, Maranhão, Minas Gerais e Espírito Santo, a inclusão ocorrerá, prioritariamente, na faixa de 268 MHz a 322 MHz.
+Considerando que, em certas localidades, as faixas prioritárias propostas poderão ser insuficientes para acomodar os canais requeridos para a radiodifusão, propôs-se acrescentar um parágrafo único que estabelece regras para uma ocupação excepcional das referidas faixas:
+Parágrafo único. A inclusão de canais poderá ocorrer de forma diversa da prevista nos incisos I a III, a partir de 250 MHz, desde que demonstrada a inviabilidade técnica de ocupação das faixas prioritárias ou, em caráter excepcional, mediante decisão fundamentada da Superintendência responsável pela administração do espectro de radiofrequências.
+A área técnica sugeriu manter a vedação a novas outorgas na faixa de 250 MHz a 322 MHz que estava no texto que passou pela CP 03/2026, bem como o prazo limite de até 1º de outubro de 2029 ou prazo remanescente para os Direitos de Exploração de Satélite. Por outro lado, para o SLP e o STFC, propôs-se permitir o licenciamento de novas estações ou das consignações associados à prestação e desconsiderar o prazo limite de 48 (quarenta e oito) meses. Assim, na subfaixa de 250 MHz a 268 MHz, o SLP e o STFC poderão operar pelo prazo remanescente das outorgas. Essas disposições serão discutidas mais abaixo na presente Análise.
+A proposta do corpo técnico é meritória, pois privilegia a ocupação das frequências mais altas, minimizando os impactos naquelas aplicações de missão crítica que foram identificadas mais acima na subfaixa de 250 MHz a 268 MHz. 
+Considera-se, no entanto, que pode ser aprimorada mediante regras mais detalhadas que levem em conta as características espectrais, geográficas, técnicas e operacionais de todas as estações licenciadas, em particular durante os estudos de viabilidade dos canais que antecedem sua inclusão no PBTVD+. Destaca-se a importância da faixa em questão para outros setores da economia, tal como o agronegócio.
+III.3.d - Das propostas deste Relator
+Os quantitativos de estações com emissão ou recepção dentro da faixa de 250 MHz a 322 MHz estão representados na tabela abaixo, por Unidade da Federação (UF). Foram desconsideradas as estações cuja outorga está vencida ou vai vencer antes de 1º de julho de 2026. Na tabela, as UFs que não têm estações licenciadas na faixa estão em branco. Aquelas que têm estações apenas nas subfaixas abaixo de 262 MHz estão em cor verde. As que têm estações licenciadas em subfaixas de até 268 MHz estão em azul. Finalmente, as que têm estações que operam acima de 268 MHz estão em cor laranja.
+ UF
+ | 
+ 250 - 256 MHz
+ | 
+ 256 - 262 MHz
+ | 
+ 262 - 268 MHz
+ | 
+ 268 - 274 MHz
+ | 
+ (CPF)
+ | 
+ (CNPJ)
+ | 
+ (CPF)
+ | 
+ (CNPJ)
+ | 
+ (CPF)
+ | 
+ (CNPJ)
+ | 
+ (CPF)
+ | 
+ (CNPJ)
+ | 
+ AC
+ | 
+ -
+ | 
+ -
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ AL
+ | 
+ -
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 30
+ | 
+ -
+ | 
+ 30
+ | 
+ AP
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ AM
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ BA
+ | 
+ -
+ | 
+ -
+ | 
+ 29
+ | 
+ 23
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ CE
+ | 
+ -
+ | 
+ -
+ | 
+ 5
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ DF
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ ES
+ | 
+ -
+ | 
+ 24
+ | 
+ -
+ | 
+ 4
+ | 
+ -
+ | 
+ 28
+ | 
+ -
+ | 
+ 18
+ | 
+ GO
+ | 
+ -
+ | 
+ 401
+ | 
+ 52
+ | 
+ 28
+ | 
+ -
+ | 
+ 484
+ | 
+ -
+ | 
+ -
+ | 
+ MA
+ | 
+ -
+ | 
+ 22
+ | 
+ 6
+ | 
+ -
+ | 
+ -
+ | 
+ 21
+ | 
+ -
+ | 
+ 10
+ | 
+ MT
+ | 
+ 22
+ | 
+ 43
+ | 
+ 297
+ | 
+ 58
+ | 
+ 20
+ | 
+ 10
+ | 
+ -
+ | 
+ -
+ | 
+ MS
+ | 
+ -
+ | 
+ -
+ | 
+ 192
+ | 
+ 98
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ MG
+ | 
+ -
+ | 
+ 140
+ | 
+ 14
+ | 
+ 422
+ | 
+ -
+ | 
+ 82
+ | 
+ -
+ | 
+ 48
+ | 
+ PA
+ | 
+ -
+ | 
+ 39
+ | 
+ 29
+ | 
+ 1
+ | 
+ -
+ | 
+ 47
+ | 
+ -
+ | 
+ 8
+ | 
+ PB
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ PR
+ | 
+ -
+ | 
+ 8
+ | 
+ 519
+ | 
+ 58
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ PE
+ | 
+ -
+ | 
+ -
+ | 
+ 6
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ PI
+ | 
+ -
+ | 
+ -
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ RJ
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 221
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ RN
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ RS
+ | 
+ -
+ | 
+ 8
+ | 
+ 17
+ | 
+ 9
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ RO
+ | 
+ -
+ | 
+ -
+ | 
+ 32
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ RR
+ | 
+ -
+ | 
+ -
+ | 
+ 6
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SC
+ | 
+ -
+ | 
+ -
+ | 
+ 33
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ SP
+ | 
+ -
+ | 
+ 1.252
+ | 
+ 55
+ | 
+ 101
+ | 
+ -
+ | 
+ 1.239
+ | 
+ -
+ | 
+ -
+ | 
+ SE
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ 2
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ TO
+ | 
+ -
+ | 
+ -
+ | 
+ 8
+ | 
+ 4
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Total
+ | 
+ 22
+ | 
+ 1.939
+ | 
+ 1.304
+ | 
+ 1.035
+ | 
+ 20
+ | 
+ 1.941
+ | 
+ -
+ | 
+ 114
+ | 
+A tabela acima considera a maior frequência de transmissão ou de recepção utilizada na faixa em questão. Tal frequência é calculada a partir da frequência central e da largura de banda do canal, obtida a partir do tipo de emissão (por exemplo 12K5F1D). Ressalta-se que há canais que utilizam tecnologia LTE, com largura de banda de 5 MHz na faixa. pela faixa em que se situa a frequência superior do canal. Essa é maior frequência utilizada na faixa em questão. É calculada a partir da frequência central e da largura de banda do canal, obtida a partir do tipo de emissão (por exemplo 12K5F1D). Ressalta-se que há canais que utilizam tecnologia LTE, com largura de banda de 5 MHz na faixa.
+Observa-se que todas as estações são do SLP (serviço 019), não havendo mais enlaces do STFC (serviço 010) na faixa em questão. Sabe-se que os últimos venceram ao final de 2025. Observa-se ainda que a maior frequência utilizada por estações licenciadas na faixa é 268,75 MHz. Isso deixa uma boa banda de guarda para aqueles canais de radiodifusão que operam a partir de 274 MHz.
+Os dados foram obtidos do Sistema Mosaico (https://sistemas.anatel.gov.br/se/public/view/b/licenciamento.php?view=licenciamento).
+Com relação ao Decreto nº 12.595/2025, destaca-se também que a consignação de canais da TV 3.0 será realizada de forma gradual pelo MCom, preferencialmente na faixa indicada pela Anatel, condicionada pelos estudos de viabilidade técnica efetuados pela Agência, com critérios estabelecidos em regulamentação específica.
+Decreto nº 12.595, de 27 de agosto de 2025
+"Art. 12. A Agência Nacional de Telecomunicações – Anatel disponibilizará novas faixas de frequências para a implantação da TV 3.0, observada, preferencialmente, a subfaixa de 216 a 372 MHz, ou partes dela.
+Parágrafo único. A subfaixa de radiofrequências de 216 a 372 MHz será utilizada preferencialmente para implantação da TV 3.0 pelas pessoas jurídicas às quais foram concedidas outorgas para executar serviço de radiodifusão de sons e imagens e seus ancilares.
+(...)
+Art. 14. O Ministério das Comunicações consignará às pessoas jurídicas às quais foram concedidas outorgas para executar serviço de radiodifusão de sons e imagens e seus ancilares e às consignatárias da União, quando tecnicamente viável, um canal de radiofrequência, destinado à transmissão de sinais em padrão TV 3.0.
+Parágrafo único. A consignação referida no caput será realizada de forma gradual e por meio de solicitação da pessoa jurídica interessada, condicionada à análise de viabilidade técnica pela Anatel com fundamento nos critérios estabelecidos em regulamentação específica." [Grifou-se]
+Observa-se que parte de tal regulamentação específica encontra-se em elaboração nos autos do Processo nº 53500.071018/2024-05. Nesse processo, o Ato de Requisitos Técnicos para a TV 3.0 já passou pela Consulta Pública nº 6 (SEI nº 15160575), de 9 de fevereiro de 2026.
+No entanto, tomando-se por base as regras gerais para a planificação de canais de TV e RTV, verifica-se que a planificação de canais envolve um grande número de parâmetros, de natureza geográfica, espectral, técnica e operacional.
+Ato nº 9751, de 6 de julho de 2022
+"2.2. Os Planos Básicos de Distribuição de Canais de Televisão contêm a lista que identifica os canais distribuídos para as localidades brasileiras, fixando as seguintes informações:
+2.2.1. Tipo de serviço;
+2.2.2. UF e Município de outorga;
+2.2.3. Canal de operação;
+2.2.4. Classe de operação;
+2.2.4.1. Coordenadas geográficas da estação;
+2.2.4.2. Potência Efetiva Radiada (ERP) máxima (em kW);
+2.2.4.3. Altura do centro geométrico do sistema radiante em relação à base da torre (em metros);
+2.2.4.4. Diagrama do Contorno Protegido (de 5 em 5°); e
+2.2.4.5. Categoria da estação (Principal, Complementar, Reserva, e outras que venham a ser criadas).
+(...)
+7.5. O processo de análise de viabilidade técnica de inclusão de canais de Radiodifusão de Sons e Imagens Digital (GTVD) e de Retransmissão de Televisão Digital (RTVD) no Plano Básico de Distribuição de Canais de Televisão Digital (PBTVD) somente será avaliado pela Anatel por solicitação."
+Assim, a escolha de combinações desses parâmetros para a inclusão dos canais de TV 3.0 nos Planos Básicos de Distribuição da Agência permite um razoável grau de liberdade. Assim, na maioria dos casos práticos, poder-se-ia evitar interferências prejudiciais mediante escolhas criteriosas na planificação desses canais. Pode-se, por exemplo, evitar incluir determinado canal em regiões próximas a certas ferrovias, subestações elétricas ou plantas industriais que utilizem as frequências em questão. Esse canal de TV 3.0 poderia ser aproveitado em localidades vizinhas.
+Em discussões posteriores, a área técnica observou que a Portaria nº 10.693/2023 indica que VHF e UHF já regulamentadas, também sejam utilizadas por estações de TV 3.0 e que, em alguns casos, como em regiões de fronteira, considerando que a faixa de 300 MHz não é harmonizada, não poderá ser utilizada para TV nesse momento.
+Com relação à tabela com todas estações licenciadas na faixa de 250 MHz a 322 MHz, apresentada mais acima em cores, para fins de definição das faixas prioritárias, a área técnica propôs desconsiderar: (i) as UFs que não têm estações (Amapá, Distrito Federal, Paraiba e Rio Grande do Norte); e (ii) os Estados nas quais as estações licenciadas estão associadas somente pessoas físicas (CPFs) ou com menos de 10 estações associadas a empresas (CNPJs) e que estão fora das capitais (Acre, Amazonas, Ceará, Pernambuco, Piauí, Rondônia, Roraima, Sergipe, Santa Catarina e Tocantins).
+Dessa forma, sugerem-se os seguintes ajustes no art. 14 proposto na Minuta de Resolução pós CP 03/2026 (SEI nº 15404168):
+“Art. 14 A Superintendência responsável pela administração do espectro de radiofrequências observará as seguintes regras para a inclusão de canais no PBTVDPBDTV+ nas faixas de frequências de 250 MHz a 322 MHz:
+I – nos municípios situados nosdo Estados do Paraná e do Rio Grande do Sul, a inclusão ocorrerá, prioritariamente, na faixanos canais operando em faixas acima de 256 MHz a 322 MHz;
+II – nos municípios situados nosdos Estados do Mato Grosso do Sul, Paraná e Rio de Janeiro e de São Paulo, a inclusão ocorrerá, prioritariamente, na faixanos canais operando em faixas acima de 262 MHz a 322 MHz; e
+III – nos municípios situados nosdos Estados do Pará, Maranhão, Minas Gerais e Espírito Santode Goiás, Mato Grosso e São Paulo, a inclusão ocorrerá, prioritariamente, na faixanos canais operando em faixas acima de 268 MHz a 322 MHz; e
+IV - nos municípios dos Estados de Alagoas, Espírito Santo, Maranhão, Minas Gerais e Pará, a inclusão ocorrerá, prioritariamente, nos canais operando em faixas acima de 274 MHz.
+Parágrafo único.§1º A inclusão de canais poderá ocorrer de forma diversa da prevista nos incisos I a III IV, a partir de 250 MHz, desde que quando demonstrada a inviabilidade técnica de ocupação das faixas prioritárias ou, em caráter excepcional, mediante decisão fundamentada da Superintendência responsável pela administração do espectro de radiofrequências, observada a preservação, sempre que possível, da operação das estações do Serviço Limitado Privado regularmente licenciadas na faixa de 250 MHz a 274 MHz.
+§ 2º As regras previstas neste artigo aplicam-se à distribuição de canais do PBTVD+ na faixa de 250 MHz a 322 MHz, quando essa faixa for objeto da solicitação, sem prejuízo da possibilidade de utilização das demais faixas de frequências destinadas ao Serviço de Radiodifusão de Sons e Imagens e à Retransmissão de Televisão, observada a viabilidade técnica, a disponibilidade de canais e a regulamentação aplicável." (NR)
+Com relação aos arts. 14 e 15 propostos para integrar o RCC-SRA, conforme o art. 2º da Minuta de Resolução (SEI nº 14335581) que passou pela CP 03/2026, considerou-se mais adequado deslocá-los para o Anexo VIII do PDFF, conforme já visto.
+A versão integral proposta por este Relator está na Minuta de Resolução NP (SEI nº 15838005).
+III.4 - Das alterações na TADF
+III.4.a - Da planilha PDFF 2025-2026
+Para fins da presente Análise, toma-se como referência a Planilha PDFF 2025-2026 (SEI nº 14335646), considerando que é parte integrante da Minuta de Resolução (SEI nº 14335581) cujo teor foi aprovado por unanimidade, pelo Acórdão nº 3/2026 (SEI nº 15106560).
+Conforme já visto, a referida planilha será a base para a composição do Anexo I.4 – Tabela de Atribuição e Destinação de Faixas (TADF) do PDFF do biênio 2025-2026.
+A Planilha PDFF 2025-2026 (SEI nº 14335646) está composta por três abas:
+PDFF 2025, que contém a TADF propriamente dita;
+Reg. de edições da Tabela, que registra as alterações efetuadas na aba PDFF 2025 em relação à tabela que consta do Anexo IV do ANEXO à Resolução nº 772/2025, com a explicação sucinta do motivo de cada inclusão, modificação ou supressão; e
+Ordem dos Serviços, que indica a ordem em que os Serviços de Radiocomunicações da UIT, definidos na Seção III do Artigo 1 - Termos e Definições do RR, aparecem na primeira coluna (Região 2) da aba PDFF 2025.
+Nessa planilha, estão representadas com letras pretas os textos atuais, que constam da Resolução nº 772/2025 ou da versão precedente PDFF 2023 (SEI nº 13089492). Todas as propostas de alteração em relação aos textos atuais estão grafadas em letras vermelhas.
+Na aba "PDFF 2025" da planilha submetida à CP 03/2026, as alterações nela aportadas em relação à tabela do Anexo IV do ANEXO à Resolução nº 772/2025 figuram em letras vermelhas, seguindo as seguintes convenções:
+"ADD Texto" – para adição de atribuições, destinações ou notas de rodapé;
+"MOD Texto" – para modificação de categoria (primário ou secundário) ou de atributos do serviço; e
+"SUP Texto" – para supressão de atribuições, destinações ou notas de rodapé.
+As demais abas estão grafadas com letras pretas, embora a aba "Reg. de edições da Tabela" seja nova, representando alterações. A aba "Ordem de Serviços", no entanto, é idêntica à da versão precedente PDFF 2023 (SEI nº 13089492), que consta dos autos do Processo nº 53500.045607/2022-68.
+III.4.b - Das alterações da aba PDFF 2025-2026
+Como é usual, na aba PDFF 2025 segue-se a convenção estabelecida no item 5.24 do Artigo 5 do RR, de acordo com a qual se representam em letras maiúsculas os serviços atribuídos ou destinados em caráter primário, enquanto se indicam em letras minúsculas aqueles atribuídos ou destinados em caráter secundário.
+O corpo técnico preparou a Planilha PDFF 2025-2026 pós CP 03/2026 (SEI nº 15535289), da qual constam as novas alterações sugeridas. Essa planilha, no entanto, não distingue as novas alterações daquelas que foram submetidas à CP 03/2023, uma vez que todas estão representadas em letras vermelhas. Assim, para distingui-las, representa-se com letras negras o que está Anexo IV do ANEXO à Resolução nº 772/2025, mantém-se em vermelho o que passou pela consulta pública e em azul as últimas alterações sugeridas.
+Além disso, recorda-se que na última revisão do PDFF foi discutida a possível atribuição de faixas do serviço móvel terrestre ao serviço móvel por satélite. A proposta era atribuir em caráter secundário ao serviço Móvel por Satélite as faixas de Telecomunicações Móveis Internacionais (IMT) utilizadas no Brasil com Duplexação por Divisão de Frequência (FDD). A justificativa era complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+Análise nº 11/2024/VC (SEI nº 13053924)
+5.43. Recentemente, há uma tendência no setor para desenvolver sistemas satelitais que se comunicam diretamente com terminais móveis comuns em redes terrestres, conhecidos como direct-to-device (D2D). Nesta abordagem, os sistemas satelitais teriam capacidade para operar nas mesmas frequências das redes móveis terrestres atualmente implementadas, e poderiam complementar a cobertura em áreas remotas e em situações de desastres naturais. No Brasil, a vasta extensão territorial e áreas remotas beneficiam-se dessa tecnologia para fomentar a inclusão digital. Para que sistemas satelitais pudessem ser autorizados a operar nas faixas de frequências atualmente utilizadas pelas redes móveis terrestres seria necessário proceder com a atribuição e destinação de tais faixas a serviços compatíveis com aplicações móveis por satélite.
+5.44. Assim, a proposta registrou que a melhor alternativa seria atribuir, em caráter secundário, ao serviço móvel por satélite, as faixas de frequências FDD identificadas para uso de sistemas IMT utilizados no Brasil, a saber, as faixas de 450 MHz, 700 MHz, 850 MHz, 900 MHz, 1.800 MHz, 1.900 / 2.100 MHz e 2.500 MHz.
+Naquela ocasião, considerou-se prudente testar previamente a viabilidade técnica das soluções, por meio do projeto-piloto em ambiente regulatório experimental (sandbox regulatório) criado pelo Ato nº 5.322/2024. Assim, decidiu-se esperar por resultados práticos e retomar as discussões em um momento oportuno.
+Análise nº 11/2024/VC (SEI nº 13053924)
+5.121. Entretanto, após a publicação da Consulta Pública nº 10, de 2024, o Conselho Diretor da Agência aprovou o Ato nº 5.322, de 18 de abril de 2024, que autoriza a implementação de um projeto-piloto de ambiente regulatório experimental (sandbox regulatório). O referido Ato permite que entidades interessadas em testar a viabilidade de soluções direct-to-device solicitem autorização para o uso de radiofrequências e realizem experimentações técnicas.
+5.122. A área técnica seguiu esclarecendo que a agenda da CMR-27 inclui um item específico (item 1.13) dedicado ao desenvolvimento de estudos sobre novas atribuições ao Serviço Móvel por Satélite, visando à conectividade direta entre estações espaciais e terminais IMT e considerando que estudos internacionais estão sendo conduzidos para discutir o uso de faixas de frequências para soluções D2D, e a possibilidade de autorizações no âmbito regulatório experimental que podem fornecer informações valiosas para uma eventual alteração regulatória, entendeu-se que as discussões sobre uma possível atribuição ao MSS devem ser retomadas em um momento oportuno.
+5.123. Diante da possibilidade de realização de testes no âmbito do Sandbox Regulatório e considerando os estudos previstos na agenda da CMR-27, concordo com a proposta da área técnica que recomenda a exclusão das atribuições das subfaixas utilizadas por sistemas IMT ao Serviço Móvel por Satélite, considerando que a avaliação do tema pode ser melhor conduzida a partir dos subsídios colhidos após a realização dos testes no âmbito do ambiente regulatório experimental vigente.
+Pois bem. Desde então, houve considerável evolução em âmbito internacional. Diversos países, como Austrália, Canadá, Costa Rica, Chile, Estados Unidos da América, Peru, Reino Unido e Tanzânia já permitem a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas de espectro do IMT terrestre. Uma análise comparativa entre as regulamentações e critérios técnicos utilizados em alguns desses países está disponível no informe Frameworks regulatórios de D2D em faixas IMT (SEI nº 15881356).
+Além disso, o Relatório de Contribuições (SEI nº 15881401) sugere que a Anatel avalie a criação de um regime regulatório específico para a conectividade móvel direta entre estações espaciais e dispositivos móveis convencionais. Propõe-se o estabelecimento de critérios técnicos gerais de coexistência, garantindo a proteção dos serviços incumbentes que operam nas mesmas faixas, bem como dos serviços que operam em faixas adjacentes. Observa-se que a tecnologia em questão é parte do sandbox regulatório da Agência, mas que a criação de um regime em caráter definitivo beneficiará o desenvolvimento da tecnologia em âmbito nacional.
+Dessa forma, propõe-se a este Colegiado atribuirm em caráter secundário, ao serviço Móvel por Satélite (SMS), as subfaixas utilizadas no Brasil em FDD nas faixas de 700 MHz, 850 MHz, 900 MHz, 1.800 MHz, 1.900/2.100 MHz e 2.500 MHz, em conformidade com o Regulamento de Condições de Uso de Radiofrequências (ReCon), aprovado pela Resolução Anatel nº 773/2025, considerando as faixas utilizadas pelos atuais sistemas de satélites não geoestacionários. . Ressalta-se, neste caso, que com a integração do antigo Serviço Móvel Global por Satélite (SMGS) ao SMP, promovida pelo Regulamento Geral dos Serviços de Telecomunicações (RGST), aprovado pela Resolução nº 777/2025, a destinação existente ao SMP já abarca o uso do serviço também por meio de satélite. Ainda que a faixa de 450 MHz tenha sido incluída nos estudos, desconsidera-se aqui sua atribuição ao SMS, uma vez que não é hoje utilizada pelo SMP
+Caberá à Superintendência de Outorga e Recursos à Prestação (SOR) definir os requisitos técnicos e operacionais de forma a viabilizar o uso das faixas acima para prover conectividade direta entre satélite e dispositivo (Direct-to-Device - D2D) utilizando o Serviço Móvel por Satélite, observando-se as premissas de prévio acordo com o titular da autorização de uso de radiofrequências em caráter primário associada ao SMP na mesma faixa e de que a operação não poderá interferir ou reclamar interferência em relação a serviços operando em conformidade com as atribuições vigentes.
+Destaca-se que há outras questões que devem ser enfrentadas pelas áreas técnicas no instrumento que estabelecer as condições de uso, como por exemplo: (i) a possibilidade de obtenção de direito de uso por operadoras satelitais em faixas não licitadas ou sem parceria com prestadoras terrestres; (ii) a eventual necessidade de regras destinadas a evitar acordos de exclusividade entre prestadoras móveis e operadoras satelitais; (iii) a definição de mecanismos controle de feixes, limites técnicos de operação e proteção de áreas de fronteira; e (iv) a forma de aplicação das regras de qualidade do SMP às ofertas baseadas em D2D, inclusive quanto ao tratamento de falhas, indisponibilidade ou degradação do serviço nos indicadores da prestadora móvel.
+Considerando as questões levantadas acima, o caráter inovador da tecnologia e sua relevância para a promoção da conectividade no país, entende-se indispensável que o Conselho Diretor avalie a proposta de requisitos técnicos a ser submetida à Consulta Pública, uma vez que complementa o serviço de interesse coletivo com maior numero de usuarios .
+Apresenta-se, a seguir, os detalhes das alterações na TADF propostas por este Relator.
+Na faixa de 472 kHz a 479 kHz, a proposta submetida à consulta pública era acrescentar como destinação o serviço "Limitado Privado". Como já visto, na contribuição nº 22, a LABRE sugeriu alterar essa destinação para "Serviço Limitado Privado - Radionavegação Aeronáutica". Isso porque há radiofaróis não direcionais (NDB) que utilizam essa faixa. A área técnica observou que há também NDBs de uso marítimo nessa faixa, sugerindo também destinar a faixa ao serviço "Limitado privado - Móvel Marítimo", como se vê na tabela a seguir.
+ kHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 472-479
+ MÓVEL MARÍTIMO 5.79
+ Radioamador 5.80A
+ Radionavegação Aeronáutica 5.80
+ 5.80B 5.82
+ | 
+ 472-479
+ MÓVEL MARÍTIMO 5.79
+ Radioamador 5.80A
+ Radionavegação Aeronáutica 5.80
+ 5.82
+ | 
+ 472-479
+ LIMITADO MÓVEL MARÍTIMO 
+ Limitado Móvel Aeronáutico
+ Radioamador
+ ADD Limitado Privado - Móvel Marítimo
+ ADD Limitado Privado - Radionavegação Aeronáutica
+ | 
+ (...)
+ | 
+Considerando que o serviço de radiodifusão sonora em ondas curtas não figura mais no RCC-RSA, propõe-se suprimir as referências correspondentes na coluna "Instrumentos" nas faixas de 5950 kHz a 6200 kHz, 9500 kHZ a 9775 KHz, 11700 kHz a 11975 kHz, 15100 kHz a 15400 kHz, 17770 kHz a 17900 kHz, 21450 kHz a 21750 kHz e 25670 kHz a 26100 kHz. Por outro lado, o referido serviço será mantido na coluna "Destinação", uma vez que ainda figura na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ kHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 5900-5950
+ RADIODIFUSÃO 5.134
+ 5.136
+ | 
+ 5900-6200
+ RADIODIFUSÃO 5.134
+ 5.136
+ | 
+ 5900-5950
+ | 
+ 5900-5950
+ | 
+ 5950-6200
+ RADIODIFUSÃO
+ | 
+ 5950-6200
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (49 metros)
+ | 
+ 5950-6200
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 9400-9500
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 9400-9900
+ RADIODIFUSÃO 5.134
+ 5.146 5.147
+ | 
+ 9400-9500
+ | 
+ 9400-9500
+ | 
+ 9500-9900
+ RADIODIFUSÃO
+ 5.147
+ | 
+ 9500-9775
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (31 metros)
+ | 
+ 9500-9775
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ 9775-9900
+ | 
+ 9775-9900
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 11600-11650
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 11600-12100
+ RADIODIFUSÃO 5.134
+ 5.146 5.147
+ | 
+ 11600-11700
+ | 
+ 11600-11700 | 
+ 11650-12050
+ RADIODIFUSÃO
+ 5.147
+ | 
+ 11700-11975
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (25 metros)
+ | 
+ 11700-11975
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ 12050-12100
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 11975-12100
+ | 
+ 11975-12100
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 15100-15600
+ RADIODIFUSÃO
+ | 
+ 15100-15800
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 15100-15450
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (19 metros)
+ | 
+ 15100-15450
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ 15600-15800
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 15450-15800
+ | 
+ 15450-15800
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 17480-17550
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 17480-17900
+ RADIODIFUSÃO 5.134
+ 5.146
+ | 
+ 17480-17700
+ | 
+ 17480-17700
+ | 
+ 17550-17900
+ RADIODIFUSÃO
+ | 
+ 17700-17900
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (16 metros)
+ | 
+ 17700-17900
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 21450-21850
+ RADIODIFUSÃO
+ | 
+ 21450-21850
+ RADIODIFUSÃO
+ | 
+ 21450-21750
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (13 metros)
+ | 
+ 21450-21750
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ | 
+ | 
+ 21750-21850
+ | 
+ 21750-21850
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 25600-26100
+ RADIODIFUSÃO
+ | 
+ 25600-26100
+ RADIODIFUSÃO
+ 5.149
+ | 
+ 25600-26100
+ RADIODIFUSÃO SONORA EM ONDAS CURTAS (11 metros)
+ | 
+ 25600-26100
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+Nas faixas de 164,6 MHz a 165,6 MHz, 165,6 MHz a 169,2 MHz e 169,2 MHz a 170,2 MHz propõe-se acrescentar "Limitado Privado - Telefonia Rural", em razão da alteração na lista de serviços de telecomunicações promovida pelo RGST:
+ MHz
+ | 
+ | 
+ REGIÃO 2
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 163,0375-174
+ FIXO
+ MÓVEL 
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 162,05-174
+ FIXO
+ MÓVEL 
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 164,6-165,6
+ LIMITADO PRIVADO
+ TELEFÔNICO FIXO COMUTADO
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ | 
+ 165,6-169,2
+ LIMITADO PRIVADO
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ (...)
+ | 
+ 169,2-170,2
+ LIMITADO PRIVADO
+ TELEFÔNICO FIXO COMUTADO
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ | 
+ 170,2-173,8
+ LIMITADO PRIVADO
+ MOD Limitado Privado - Telefonia Rural
+ | 
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Nas faixas de 460 MHz a 469 MHz e de 469 MHz a 470 MHz, propôs-se acrescentar "para defesa nacional" à destinação ao SLMA presente na CP 03/2026, atendendo à solicitação da FAB para utilização dessa faixa em telecomando redundante para sistemas de aeronaves remotamente pilotadas (SARP). Observa-se que o Relatório de Análise de Impacto Regulatório (SEI nº 14028763) já havia recomendado o uso restrito a aplicações de interesse da defesa nacional (Alternativa C).
+ MHz
+ | 
+ | 
+ REGIÃO 2
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 460-470
+ FIXO
+ MÓVEL 5.286AA
+ Meteorologia por Satélite (espaço para Terra)
+ 5.80B 5.82
+ | 
+ 460-461
+ FIXO
+ MÓVEL 5.286AA
+ Exploração da Terra por Satélite (espaço para Terra) 5.289
+ Meteorologia por Satélite (espaço para Terra)
+ | 
+ 460-461
+ AUXILIAR DE RADIODIFUSÃO E CORRELATOS - para Comunicação de Ordens Internas e Reportagem Externa
+ Auxiliar de Radiodifusão e Correlatos - para Ligação para Transmissão de Programas, Telecomando e Telemedição
+ Limitado Privado - Exploração da Terra por Satélite e Meteorologia por Satélite e para aplicações de Segurança Pública
+ | 
+ (...)
+ | 
+ 461-468
+ FIXO
+ MÓVEL 5.286AA
+ Exploração da Terra por Satélite (espaço para Terra) 5.289
+ Meteorologia por Satélite (espaço para Terra)
+ | 
+ 461-462
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO SUP - exceto Exploração da Terra por Satélite e Meteorologia por Satélite e exceto para aplicações de Segurança Pública
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ Limitado Privado - Exploração da Terra por Satélite e Meteorologia por Satélite e para aplicações de Segurança Pública
+ | 
+ | 
+ 462-464
+ COMUNICAÇÃO MULTIMÍDIA
+ SUP LIMITADO PRIVADO - exceto Meteorologia por Satélite
+ SUP LIMITADO PRIVADO - exceto para Estações Itinerantes
+ LIMITADO PRIVADO SUP - para Aeroportos
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ Limitado Privado - Exploração da Terra por Satélite e Meteorologia por Satélite e para aplicações de Segurança Pública
+ | 
+ | 
+ 464-467
+ COMUNICAÇÃO MULTIMÍDIA
+ SUP LIMITADO MÓVEL MARÍTIMO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ | 
+ 467-468
+ LIMITADO MÓVEL MARÍTIMO
+ LIMITADO PRIVADO SUP - exceto Meteorologia por Satélite
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ | 
+ 468-470
+ FIXO
+ MÓVEL 5.286AA
+ Exploração da Terra por Satélite (espaço para Terra) 5.289
+ Meteorologia por Satélite (espaço para Terra)
+ | 
+ 468-469
+ LIMITADO PRIVADO
+ Limitado Privado - Exploração da Terra por Satélite e Meteorologia por Satélite
+ ADD LIMITADO MÓVEL AERONÁUTICO - para Defesa Nacional
+ | 
+ (...)
+ | 
+ 469-470
+ ADD LIMITADO PRIVADO
+ ADD Limitado Privado - Exploração da Terra por Satélite e Meteorologia por Satélite
+ ADD LIMITADO MÓVEL AERONÁUTICO - para Defesa Nacional
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+Na faixa de 698 MHz a 806 MHz atribuída ao serviço MÓVEL no Brasil, propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) nas subfaixas de 703 MHz a 748 MHz (uplink) e de 758 MHz a 803 MHz (downlink), de forma a complementar a cobertura móvel terrestre, conforme já explicado.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 698-806
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ Fixo
+ 5.293 5.309
+ | 
+ 698-703
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ 5.293-5.309
+ | 
+ 608-703
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ (...)
+ | 
+ 703-748
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ ADD Móvel por Satélite
+ 5.293-5.309
+ | 
+ 703-748
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ (...)
+ | 
+ 748-758
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ 5.293-5.309
+ | 
+ 748-758
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ (...)
+ | 
+ 758-803
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ ADD Móvel por Satélite
+ 5.293-5.309
+ | 
+ 758-803
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ (...)
+ | 
+ 803-806
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ 5.293-5.309
+ | 
+ 758-803
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ | 
+ (...)
+ | 
+Na faixa de 806 MHz a 890 MHz, atribuída ao serviço MÓVEL no Brasil, propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) nas subfaixas de 819 MHz a 849 MHz (uplink) e de 864 MHz a 894 MHz (downlink), de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 806-890
+ FIXO
+ MÓVEL 5.312B 5.317A
+ RADIODIFUSÃO
+ 5.317 5.318
+ | 
+ 806-819
+ FIXO
+ MÓVEL 5.312B 5.317A
+ 5.317
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 819-849
+ FIXO
+ MÓVEL 5.312B 5.317A
+ ADD Móvel por Satélite
+ 5.317
+ | 
+ 819-821
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 821-849
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 849-864
+ FIXO
+ MÓVEL 5.312B 5.317A
+ 5.317 5.318
+ | 
+ 849-851
+ Limitado Móvel Aeronáutico
+ | 
+ (...)
+ | 
+ 851-859
+ LIMITADO PRIVADO - para Segurança Pública, Defesa Civil e Defesa Nacional
+ | 
+ (...)
+ | 
+ 859-864
+ LIMITADO PRIVADO - para Defesa Nacional
+ | 
+ (...)
+ | 
+ 864-894
+ FIXO
+ MÓVEL 5.312B 5.317A
+ ADD Móvel por Satélite
+ 5.317 5.325
+ | 
+ 864-866
+ 821-849
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 866-894
+ 821-849
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Na faixa de 902 MHz a 928 MHz, propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) na subfaixa de 905 MHz a 915 MHz (uplink), de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 902-928
+ FIXO
+ Radioamador
+ Móvel exceto móvel aeronáutico 5.312B 5.325A
+ Radiolocalização
+ 5.150 5.325 5.326
+ | 
+ 902-905
+ FIXO
+ Radioamador
+ Móvel exceto móvel aeronáutico 5.312B 5.325A
+ Radiolocalização
+ 5.150 5.3626
+ | 
+ 902-905
+ (...)
+ | 
+ (...)
+ | 
+ 905-907,5
+ FIXO
+ MÓVEL TERRESTRE 5.312B 5.325A
+ Radioamador
+ Móvel Marítimo
+ Radiolocalização
+ ADD Móvel por Satélite
+ 5.150
+ | 
+ 905-907,5
+ COMUNICAÇÃO MULTIMÍDIA
+ MÓVEL PESSOAL
+ ADD LIMITADO PRIVADO
+ Radioamador
+ Telefônico Fixo Comutado
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+ 907,5-915
+ FIXO
+ MÓVEL TERRESTRE 5.312B 5.325A
+ Radioamador
+ Móvel Marítimo
+ Radiolocalização
+ ADD Móvel por Satélite
+ 5.150
+ | 
+ 907,5-915
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 915-928
+ FIXO
+ Radioamador
+ Móvel exceto móvel aeronáutico 5.312B 5.325A
+ Radiolocalização
+ 5.150 5.3626
+ | 
+ 915-927,5
+ (...)
+ | 
+ | 
+ 927,5-928
+ (,,,)
+ | 
+ | 
+Na faixa de 942 MHz a 960 MHz, propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) na subfaixa de 950 MHz a 960 MHz (downlink), de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 942-960
+ FIXO
+ MÓVEL 5.312B 5.317A
+ | 
+ 942-943,5
+ FIXO
+ MÓVEL 5.312B 5.317A
+ | 
+ 942-943,5
+ (...)
+ | 
+ (...)
+ | 
+ 943,5-946
+ FIXO
+ MÓVEL 5.312B 5.317A
+ | 
+ 943,5-946
+ (...)
+ | 
+ (...)
+ | 
+ 946-950
+ FIXO
+ MÓVEL 5.312B 5.317A
+ | 
+ 946-950
+ (...)
+ | 
+ (...)
+ | 
+ 950-960
+ FIXO
+ MÓVEL 5.312B 5.317A
+ ADD Móvel por Satélite
+ | 
+ 950-952
+ COMUNICAÇÃO MULTIMÍDIA
+ MÓVEL PESSOAL
+ ADD LIMITADO PRIVADO
+ Telefônico Fixo Comutado
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ | 
+ 952-960
+ COMUNICAÇÃO MULTIMÍDIA
+ MÓVEL PESSOAL
+ ADD LIMITADO PRIVADO
+ Auxiliar de Radiodifusão e Correlatos
+ Telefônico Fixo Comutado
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ | 
+Nas faixas de 1.452 MHz a 1.472 MHz, propôs-se adicionar a referência ao Ato SOR nº 17.207/2023 (D.O.U. de 15.12.2023) na coluna instrumentos, como sugeriu a Embraer em sua contribuição nº 19. A área técnica observou que essa inclusão busca manter coerência regulatória, uma vez que o referido ato regulamenta as condições técnicas e a canalização do serviço. Na mesma contribuição, a Embraer sugeriu incluir a referência também as faixas de 2.200 MHz a 2.290 MHz e 5.091 MHz a 5.150 MHz, que figuram no referido Ato e que também são utilizadas para telemetria aeronáutica. Isso, no entanto, depende de destinar essas faixas ao SLMA, o que ainda não ocorreu.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 1452-1492
+ FIXO
+ MÓVEL 5.341B 5.343
+ RADIODIFUSÃO
+ RADIODIFUSÃO POR SATELITE 5.208B
+ 5.341 5.344 5.345
+ | 
+ 1452-1492
+ FIXO
+ MÓVEL 5.341B 5.343
+ RADIODIFUSÃO
+ RADIODIFUSÃO POR SATELITE 5.208B
+ 5.341 5.344 5.345
+ | 
+ 1452-1472
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ Limitado Móvel Aeronáutico
+ | 
+ (...)
+ ADD Ato SOR nº 17.207/2023 (D.O.U. de 15.12.2023)
+ | 
+ 1472-1492
+ (...)
+ | 
+ (...)
+ | 
+Nas faixas de 1710 MHz a 1785 MHz e de 1920 MHz a 1980 MHz, propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) nas subfaixas de 1710 MHz a 1785 MHz e de 1920 a 1980 (uplink) e de 1805 MHz a 1880 MHz (downlink), de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 1710-1930
+ FIXO
+ MÓVEL 5.384A 5.384B
+ 5.149 5.341 5.385 5.386 5.387 5.388
+ | 
+ 1710-1785
+ FIXO
+ MÓVEL 5.384A 5.384B
+ ADD Móvel por Satélite
+ 5.149 5.341 5.385 5.386
+ | 
+ 1710-1785
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 1785-1980
+ FIXO
+ MÓVEL 5.384A 5.384B
+ 5.386 5.388
+ | 
+ 1785-1805
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 1805-1880
+ FIXO
+ MÓVEL 5.384A 5.384B
+ ADD Móvel por Satélite
+ 5.388
+ | 
+ 1805-1880
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 1880-1920
+ FIXO
+ MÓVEL 5.384A 5.388B
+ 5388
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 1920-1980
+ FIXO
+ MÓVEL 5.384A 5.388B
+ ADD Móvel por Satélite
+ 5388
+ | 
+ 1920-1980
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 1930-1970
+ FIXO
+ MÓVEL 5.388A 5.388B
+ Móvel por Satélite
+ 5.388
+ | 
+ 1970-1980
+ FIXO
+ MÓVEL 5.388A 5.388B
+ 5.388
+ | 
+Nas faixas de 2110 MHz a 2120 MHz, 2120 MHz a 2160 MHz e 2160 MHz a 2170 MHz propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) na faixa de 2110 MHz a 2170 MHz, de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 2110-2120
+ FIXO
+ MÓVEL 5.388A
+ PESQUISA ESPACIAL (espaço profundo) (Terra para espaço)
+ 5.388
+ | 
+ 2110-2120
+ FIXO
+ MÓVEL 5.388A
+ PESQUISA ESPACIAL (espaço profundo) (Terra para espaço)
+ ADD Móvel por Satélite
+ 5.388
+ | 
+ 2110-2120
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2120-2160
+ FIXO
+ MÓVEL 5.388A
+ Móvel por Satélite (espaço para Terra)
+ 5.388
+ | 
+ 2120-2160
+ FIXO
+ MÓVEL 5.388A
+ ADD Móvel por Satélite
+ 5.388
+ | 
+ 2120-2160
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2160-2170
+ FIXO
+ MÓVEL
+ MÓVEL POR SATÉLITE (espaço para Terra)
+ 5.388 5.389C 5.389E
+ | 
+ 2160-2170
+ FIXO
+ MÓVEL
+ MÓVEL POR SATÉLITE (espaço para Terra)
+ ADD Móvel por Satélite
+ 5.388 5.389C 5.389E
+ | 
+ 2160-2170
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+Sugere-se suprimir o serviço de Distribuição de Sinais Multiponto Multicanal (MMDS) na faixa de 2.170 MHz a 2.182 MHz, considerando que a faixa já está destinada ao serviço de Acesso Condicionado (SeAC) e que o MMDS define apenas a tecnologia utilizada. A destinação em caráter primário permite outorga também em secundário.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 2170-2200
+ FIXO
+ MÓVEL
+ MÓVEL POR SATÉLITE (Espaço para Terra) 5.351A
+ 5.388 5.389A
+ | 
+ 2170-2200
+ FIXO
+ MÓVEL
+ MÓVEL POR SATÉLITE (Espaço para Terra) 5.351A
+ 5.388 5.389A
+ | 
+ 2170-2182
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ Acesso Condicionado
+ SUP Distribuição de Sinais Multiponto Multicanal
+ | 
+ (...)
+ | 
+ 2182-2200
+ (...)
+ | 
+Nas faixas de 2500 MHz a 2520 MHz, 2520 MHz a 2655 MHz, 2655 MHz a 2670 MHz e 2670 MHz a 2690 MHz propõe-se acrescentar a atribuição em caráter secundário ao serviço Móvel por Satélite para permitir a conectividade direta de satélites a dispositivos (D2D) nas faixas de 2500 MHz a 2570 MHz (uplink) e de 2620 MHz a 2690 MHz (downlink), de forma a complementar a cobertura móvel terrestre.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 2500-2520
+ FIXO 5.410
+ FIXO POR SATÉLITE (espaço para Terra) 5.415
+ MÓVEL exceto móvel aeronáutico 5.348A 5.409A
+ | 
+ 2500-2570
+ FIXO 5.410
+ MÓVEL 5.384A 5.409A
+ ADD Móvel por Satélite
+ 5.413 5.416
+ | 
+ 2500-2510
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Auxiliar de Radiodifusão e Correlatos
+ SUP Distribuição de Sinais Multiponto Multicanal
+ Repetição de Telelvisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2510-2570
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Auxiliar de Radiodifusão e Correlatos
+ Comunicação Multimídia
+ Repetição de Televisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2520-2655
+ FIXO
+ FIXO POR SATÉLITE (espaço para Terra) 5.415
+ MÓVEL exceto móvel areonáutico 5.384A 5.409A
+ MÓVEL exceto móvel aeronáutico 5.384A 5.409A
+ RADIODIFUSÃO POR SATÉLITE 5.413 5.416
+ 5.339 5.418B 5.418C
+ | 
+ 2570-2620
+ FIXO 5.410
+ MÓVEL 5.384A 5.409A
+ 5.339 5.413 5.416 5.418B 5.418C
+ | 
+ 2570-2585
+ (...)
+ | 
+ (...)
+ | 
+ 2585-2620
+ (...)
+ | 
+ (...)
+ | 
+ 2620-2655
+ FIXO 5.410
+ MÓVEL 5.384A 5.409A
+ ADD Móvel por Satélite
+ 5.339 5.413 5.416 5.418B 5.418C
+ | 
+ 2620-2630
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Auxiliar de Radiodifusão e Correlatos
+ SUP Distribuição de Sinais Multiponto Multicanal
+ Repetição de Teelvisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2630-2665
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Auxiliar de Radiodifusão e Correlatos
+ Comunicação Multimídia
+ Repetição de Televisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2655-2670
+ FIXO 5.410
+ FIXO POR SATÉLITE (espaço para Terra) 5.415
+ MÓVEL exceto móvel areonáutico 5.384A 5.409A
+ Exploração da Terra por Satélite (passivo)
+ Radioastronomia
+ Pesquisa Espacial (passivo)
+ 5.149 5.208B
+ | 
+ 2655-2670
+ FIXO 5.410
+ MÓVEL 5.384A 5.409A
+ Exploração da Terra por Satélite (passivo)
+ Radioastronomia
+ Pesquisa Espacial (passivo)
+ ADD Móvel por Satélite
+ 5.149 5.208B 5.413 5.416
+ | 
+ 2655-2670
+ LIMITADO PRIVADO - Fixo e Móvel
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Aplicação de Radioastronomia
+ Auxiliar de Radiodifusão e Correlatos
+ Comunicação Multimídia
+ Limitado Privado - Exploração da Terra por Satélite e Pesquisa Espacial
+ Repetição de Televisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+ 2670-2690
+ FIXO 5.410
+ FIXO POR SATÉLITE (espaço para Terra) 5.415
+ MÓVEL exceto móvel areonáutico 5.384A 5.409A
+ Exploração da Terra por Satélite (passivo)
+ Radioastronomia
+ Pesquisa Espacial (passivo)
+ 5.149 
+ | 
+ 2670-2690
+ FIXO 5.410
+ FIXO POR SATÉLITE (espaço para Terra) 5.415
+ MÓVEL 5.384A 5.409A
+ Exploração da Terra por Satélite (passivo)
+ Radioastronomia
+ Pesquisa Espacial (passivo)
+ ADD Móvel por Satélite
+ 5.149
+ | 
+ 2670-2690
+ LIMITADO PRIVADO - Fixo e Móvel
+ MÓVEL PESSOAL
+ Acesso Condicionado
+ Aplicação de Radioastronomia
+ Auxiliar de Radiodifusão e Correlatos
+ Comunicação Multimídia
+ Limitado Privado - Exploração da Terra por Satélite e Pesquisa Espacial
+ Repetição de Televisão
+ Telefônico Fixo Comutado
+ | 
+ (...)
+ | 
+Na faixa de 3.300 MHz a 3.400 MHz, propõe-se suprimir o serviço de Televisão em circuito fechado com utilização de radioenlace (CFTV). Isso porque, de acordo com o RGST, as aplicações de CFTV são enquadradas como Serviço Limitado Privado e já existe destinação para esse serviço na faixa.
+ MHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 3300-3400
+ MÓVEL exceto móvel aeronáutico 5.429G
+ RADIOLOCALIZAÇÃO
+ Radioamador
+ Fixo
+ 5.149 5.429C 5.429D
+ | 
+ 3300-3400
+ MÓVEL exceto móvel aeronáutico 5.429G
+ RADIOLOCALIZAÇÃO
+ Radioamador
+ Fixo
+ 5.149 5.429C 5.429D
+ | 
+ 3300-3400
+ COMUNICAÇÃO MULTIMÍDIA
+ LIMITADO PRIVADO
+ MÓVEL PESSOAL
+ TELEFÔNICO FIXO COMUTADO
+ Auxiliar de radiodifusão e correlatos
+ Repetição de televisão
+ SUP Televisão em circuito fechado com utilização de radioenlace
+ | 
+ (...)
+ | 
+Nas colunas REGIÃO 2 e BRASIL das faixas de 18,4 GHz a 18,6 GHz e de 29,9 GHz a 30 GHz, propôs-se acrescentar a nota de rodapé 5.517B. Essa nota consta do RR e havia sido omitida, por erro material, na Planilha PDFF 2025-2026 (SEI nº 14335646), tal como observou a Amazon Leo em sua na contribuição nº 7.
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 18,4-18,6
+ FIXO
+ FIXO POR SATÉLITE (espaço para Terra) 5.484A 5.516B 5.517A ADD 5.517B
+ ENTRE SATÉLITES 5.221A
+ MÓVEL
+ | 
+ 18,4-18,6
+ FIXO
+ FIXO POR SATÉLITE (espaço para Terra) 5.484A 5.516B 5.517A ADD 5.517B
+ ENTRE SATÉLITES 5.221A
+ B10.11
+ | 
+ 18,4-18,6
+ Limitado Privado - Fixo
+ ADD LIMITADO PRIVADO - Fixo por Satélite
+ ADD ACESSO CONDICIONADO - Fixo por Satélite
+ ADD COMUNICAÇÃO MULTIMÍDIA - Fixo por Satélite
+ ADD TELEFÔNICO FIXO COMUTADO - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo por Satélite (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+(...)
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 29,9-30
+ FIXO POR SATÉLITE (Terra para espaço) 5.484A 5.484B 5.516B ADD 5.517B 5.527A 5.539
+ MÓVEL POR SATÉLITE (Terra para espaço)
+ Exploração da Terra por Satélite (Terra para espaço) 5.541 5.543
+ 5.525 5.526 5.527 5.529 5.540
+ | 
+ 29,9-30
+ FIXO POR SATÉLITE (Terra para espaço) 5.484A 5.484B 5.516B ADD 5.517B 5.527A 5.539
+ MÓVEL POR SATÉLITE (Terra para espaço)
+ Exploração da Terra por Satélite (Terra para espaço) 5.541 5.543
+ 5.525 5.526 5.527 5.529 5.540 B10.5
+ | 
+ 29,9-30
+ ADD LIMITADO PRIVADO
+ Limitado Privado - Exploração da Terra por Satélite
+ ADD ACESSO CONDICIONADO - Fixo por Satélite
+ ADD COMUNICAÇÃO MULTIMÍDIA - Fixo por Satélite
+ ADD TELEFÔNICO FIXO COMUTADO - Fixo por Satélite
+ ADD LIMITADO MÓVEL AERONÁUTICO - Móvel por Satélite
+ ADD LIMITADO MÓVEL MARÍTIMO - Móvel por Satélite
+ ADD MÓVEL PESSOAL - Móvel por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo por Satélite e Móvel por Satélite (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+Finalmente, nas faixas de 92 GHz a 94 GHz, 94,1 GHz a 95 GHz, 95 GHz a 100 GHz, 102 GHz a 105 GHz, 105 GHz a 109,5 GHz e de 111,8 GHz a 114,25 GHz, propôs-se acrescentar a destinação ao serviço de Comunicação Multimídia - Fixo por Satélite. Essa adição foi sugerida pela operadora SpaceX em sua contribuição nº 21, observando que o SCM costuma ser utilizado junto com o Serviço Fixo por Satélite (SFS) nas faixas de 90 GHz e de 100 GHz (Banda W), já acrescentadas na versão que passou pela CP 03/2026. Observa-se que a expressão "Serviço de" não costuma figurar nas tabelas, motivo pelo qual deve ser suprimida. Destaca-se ainda que, por erro material, não constava a destinação ao serviço "Limitado Privado - Fixo por Satélite" na faixa de 102 GHz a 105 GHz. 
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 92-94
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149
+ | 
+ 92-94
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149 
+ | 
+ 92-94
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+(...)
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 94,1-95
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149
+ | 
+ 94,1-95
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149
+ | 
+ 94,1-95
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+ 95-100
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149 5.554
+ | 
+ 95-100
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149 5.554
+ | 
+ 95-100
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+(...)
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 102-105
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149 5.341
+ | 
+ 102-105
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149 5.341
+ | 
+ 102-105
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+ 105-109,5
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149 5.341
+ | 
+ 105-109,5
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149 5.341
+ | 
+ 105-109,5
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+(...)
+ GHz
+ | 
+ | 
+ REGIÃO 2 
+ | 
+ BRASIL
+ | 
+ DESTINAÇÃO
+ | 
+ INSTRUMENTOS
+ | 
+ 111,8-114,25
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ 5.149 5.341
+ | 
+ 111,8-114,25
+ FIXO 5.338A
+ MÓVEL
+ RADIOASTRONOMIA
+ RADIOLOCALIZAÇÃO
+ ADD Fixo por Satélite (Terra para espaço)
+ 5.149 5.341
+ | 
+ 111,8-114,25
+ APLICAÇÃO DE RADIOASTRONOMIA 
+ ADD LIMITADO PRIVADO - Fixo
+ ADD Limitado Privado - Fixo por Satélite
+ ADD Serviço de Comunicação Multimídia - Fixo por Satélite
+ SUP TODOS os SERVIÇOS de TELECOMUNICAÇÕES - Fixo exceto serviços de interesse coletivo terrestres (Observada a atribuição da faixa)
+ | 
+ (...)
+ | 
+Todas as alterações apresentadas acima são pertinentes. Na aba PDFF 2025-2026 da Planilha PDFF 2025-2026 NP (SEI nº 15838023) está a versão proposta por este Relator, na qual as alterações que passaram pela CP 03/2026 estão em letras vermelhas e os ajustes indicados acima estão em letras azuis.
+III.4.c - Das alterações da aba Reg. de edições da Tabela
+As alterações efetuadas na aba PDFF 2025-2026, discutidas na precedente seção, foram compiladas e motivadas na aba "Reg. de edições da Tabela".
+As alterações que já constavam da versão que passou pela CP 03/2026 estão em letras negras. As que foram adicionadas pela área técnica após a consulta estão em azul, com ajustes feitos por este Relator destacados em vermelho. 
+A tabela a seguir resume apenas as alterações efetuadas após a CP 03/2026.
+ Tema
+ | 
+ Faixa
+ | 
+ Alteração
+ | 
+ Motivo
+ | 
+ Destinação
+ | 
+ 472 - 479 kHz
+ | 
+ ADD LIMITADO PRIVADO - Radionavegação Aeronáutica
+ | 
+ Pós-CP: adicionar SLP, considerando a existência de NDB - Non-Directional Beacons de 135 kHz a 535 kHz.
+ | 
+ Destinação
+ | 
+ 472 - 479 kHz
+ | 
+ ADD LIMITADO PRIVADO - Móvel Marítimo
+ | 
+ Pós-CP: identificou-se a necessidade de incluir destinação ao Serviço Limitado Privado, considerando a existência de NDB, associado também ao Serviço Móvel Marítimo
+ | 
+ Instrumento
+ | 
+ 5950-6200 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 9500-9775 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 11700-11975 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 15100-15400 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 17770-17900 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 21450-21750 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Instrumento
+ | 
+ 25670-26100 kHz
+ | 
+ SUP Resolução Anatel nº 721/20 (D.O.U. de 12.02.2020)
+ | 
+ Pós CP: o serviço de radiodifusão em ondas curtas não figura mais na Res. nº 721/2020, mas continua na coluna Destinação, porque ainda permanece na Portaria de Consolidação GM/MCOM Nº 1, de 2 de junho de 2023, do Ministério das Comunicações.
+ | 
+ Destinação
+ | 
+ 164,6-165,6 MHz
+ | 
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ Atender ao Decreto nº 56/1989. Pós CP: acrescentar "Limitado Privado - Telefonia Rural", em razão da alteração na lista de serviços de telecomunicações promovida pelo RGST:
+ | 
+ Destinação
+ | 
+ 165,6-169,2 MHz
+ | 
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ Atender ao Decreto nº 56/1989. Pós CP: acrescentar "Limitado Privado - Telefonia Rural", em razão da alteração na lista de serviços de telecomunicações promovida pelo RGST:
+ | 
+ Destinação
+ | 
+ 169,2-170,2 MHz
+ | 
+ ADD Limitado Privado - Telefonia Rural
+ | 
+ Atender ao Decreto nº 56/1989. Pós CP: acrescentar "Limitado Privado - Telefonia Rural", em razão da alteração na lista de serviços de telecomunicações promovida pelo RGST:
+ | 
+ Destinação
+ | 
+ 164,6 - 165,6 MHz
+ | 
+ MOD Limitado Privado - Telefonia Rural
+ | 
+ Pós CP: acrescentar "Limitado Privado - Telefonia Rural", em razão da alteração na lista de serviços de telecomunicações promovida pelo RGST:
+ | 
+ Destinação
+ | 
+ 468 - 470469 MHz
+ | 
+ ADD LIMITADO MÓVEL AERONÁUTICO - para defesa nacional
+ | 
+ Pós-CP: inclusão de destinação ao SLMA - para defesa nacional para atender solicitação da FAB, quanto ao telecomando redundante de sistemas de aeronaves remotamente pilotadas (SARP)
+ | 
+ Destinação
+ | 
+ 469 - 470 MHz
+ | 
+ ADD LIMITADO MÓVEL AERONÁUTICO - para defesa nacional
+ | 
+ Pós-CP: inclusão de destinação ao SLMA - para defesa nacional para atender solicitação da FAB, quanto ao telecomando redundante de sistemas de aeronaves remotamente pilotadas (SARP)
+ | 
+ Atribuição
+ | 
+ 703- 748 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 758 - 803 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 819 - 849 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuução
+ | 
+ 864 - 894 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 905 - 915 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 950 - 960 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Instrumento
+ | 
+ 1452 - 1472 MHz
+ | 
+ ADD Ato SOR nº 17.207/2023 (D.O.U. de 15.12.2023)
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Atribuição
+ | 
+ 1710 - 1785 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 1805 -1880MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 1920 - 1980 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 2110- 2170 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Destinação
+ | 
+ 2170-2182 MHz
+ | 
+ SUP Distribuição de Sinais Multiponto Multicanal
+ | 
+ Pós CP: considera-se que a faixa já está destinada ao serviço de Acesso Condicionado (SeAC) e que MMDS define apenas a tecnologia utilizada.
+ | 
+ Atribuição
+ | 
+ 2500- 2570 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Atribuição
+ | 
+ 2620- 2690 MHz
+ | 
+ ADD Móvel por Satélite
+ | 
+ Pós CP: acrescenta atribuição ao serviço Móvel por Satélite para permitir a conectividade direta de satélite a dispositivo (Direct-to-Device - D2D) em faixas do serviço móvel em FDD, de forma a complementar a cobertura terrestre, em particular em áreas remotas ou em situações de desastres naturais.
+ | 
+ Destinação
+ | 
+ 3300-3400 MHz
+ | 
+ SUP Televisão em circuito fechado com utilização de radioenlace
+ | 
+ Pós CP: de acordo com o RGST, as aplicaççoes de Televisão em circuito fechado com utilização de radioenlace (CFTV) são enquadradas como Serviço Limitado Privado e já existe destinação para esse serviço na faixa.
+ | 
+ Atribuição
+ | 
+ 18,4 - 18,6 GHz
+ | 
+ ADD 5.517B
+ | 
+ Pós-CP: em função de contribuição recebida em CP que destaca que a Nota 5.517B não tinha sido indicada na faixa, conforme consta do RR
+ | 
+ Atribuição
+ | 
+ 29,9 - 30 GHz
+ | 
+ ADD 5.517B
+ | 
+ Pós-CP: em função de contribuição recebida em CP que destaca que a Nota 5.517B não tinha sido indicada na faixa, conforme consta do RR
+ | 
+ Destinação
+ | 
+ 92 - 94 GHz
+ | 
+ ADD Serviço de Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Destinação
+ | 
+ 94,1 - 95 GHz
+ | 
+ ADD Serviço de Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Destinação
+ | 
+ 95 - 100 GHz
+ | 
+ ADD Serviço de Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Destinação
+ | 
+ 102 - 105 GHz
+ | 
+ ADD Fixo por Satélite
+ ADD Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Destinação
+ | 
+ 102 105 - 109,5 GHz
+ | 
+ ADD Serviço de Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+ Destinação
+ | 
+ 111,8 - 114,25 GHz
+ | 
+ ADD Serviço de Comunicação Multimídia
+ | 
+ Pós-CP: ajuste em função de contribuição recebida.
+ | 
+Na aba "Registro das Alterações" da Planilha PDFF 2025-2026 NP (SEI nº 15838023) está a versão proposta por este Relator.
+III.4.d - Da aba Ordem dos Serviços
+A aba "Ordem dos Serviços" da Planilha PDFF 2025-2026 pós CP 03/2026 (SEI nº 15535289) é a mesma que passou pela CP 03/2026, que por sua vez é a mesma da versão precedente PDFF 2023 (SEI nº 13089492).
+Essa aba indica explicitamente a ordem em que a atribuição dos "Serviços de Radiocomunicações" reconhecidos pela UIT figuram no RR. Essa mesma sequência deve ser utilizada na TADF, nas colunas REGIÃO 2 e BRASIL.
+Para facilitar seu uso, sugere-se acrescentar um resumo com as principais regras antes da tabela.
+A ordem em que os serviços são listados nas colunas REGIÃO 2 e BRASIL segue as regras estabelecidas no item 5.48 da Seção III do “Artigo 5 - Atribuição de Frequências” do Regulamento de Rádio (RR) da UIT:
+ • os serviços são agrupados por categoria (caráter primário ou secundário);
+ • dentro da mesma categoria, são listados na ordem alfabética de suas denominações em língua francesa; e
+ • a ordem dessa lista não implica prioridade relativa dentro da mesma categoria.
+Esses serviços têm como referência os itens 1.20 a 1.60 da" Seção III – Serviços radioelétricos", do "Artigo 1 - Termos e definições", do RR
+Os referidos serviços constam da Seção III, do Art. 1[2], do RR, da UIT. Utiliza-se como referência sua numeração de 1.20 a 1.60. 
+Propõe-se aqui complementar a tabela com todo os "Serviços de Radiocomunicações" e deixar nas primeiras colunas o que está em português. Mantêm-se a denominação e a descrição do serviço em francês, considerando que a versão em francês prevalece em relação às versões em outras línguas de acordo com o item 73 do art. 29 da Constituição da UIT[3].
+ Ordem | 
+ Item RR | 
+ Denominação do serviço em português | 
+ Referência | 
+ 1 | 
+ 1.56 | 
+ radioamador | 
+ radioamador (1.56) | 
+ 2 | 
+ 1.57 | 
+ radioamador por satélite | 
+ radioamador por satélite (1.57) | 
+ 3 | 
+ 1.50 | 
+ auxílio à meteorologia | 
+ auxílio à meteorologia (1.50) | 
+ 4 | 
+ 1.23 | 
+ operação espacial | 
+ operação espacial (1.23) | 
+ 5 | 
+ 1.51 | 
+ exploração da Terra por satélite | 
+ exploração da Terra por satélite (1.51) | 
+ 6 | 
+ 1.20 | 
+ fixo | 
+ fixo (1.20) | 
+ 7 | 
+ 1.21 | 
+ fixo por satélite | 
+ fixo por satélite (1.21) | 
+ 8 | 
+ 1.53 | 
+ frequência padrão e sinais horários | 
+ frequência padrão e sinais horários (1.53) | 
+ 9 | 
+ 1.54 | 
+ frequência padrão e sinais horários por satélite | 
+ frequência padrão e sinais horários por satélite (1.54) | 
+ 10 | 
+ 1.22 | 
+ entre satélites | 
+ entre satélites (1.22) | 
+ 11 | 
+ 1.52 | 
+ meteorologia por satélite | 
+ meteorologia por satélite (1.52) | 
+ 12 | 
+ 1.24 | 
+ móvel | 
+ móvel (1.24) | 
+ 13 | 
+ 1.32 | 
+ móvel aeronáutico | 
+ móvel aeronáutico (1.32) | 
+ 14 | 
+ 1.34 | 
+ móvel aeronáutico (OR)** | 
+ móvel aeronáutico (OR)** (1.34) | 
+ 15 | 
+ 1.37 | 
+ móvel aeronáutico por satélite (OR)** | 
+ móvel aeronáutico por satélite (OR)** (1.37) | 
+ 16 | 
+ 1.33 | 
+ móvel aeronáutico (R)* | 
+ móvel aeronáutico (R)* (1.33) | 
+ 17 | 
+ 1.36 | 
+ móvel aeronáutico por satélite (R)* | 
+ móvel aeronáutico por satélite (R)* (1.36) | 
+ 18 | 
+ 1.35 | 
+ móvel aeronáutico por satélite | 
+ móvel aeronáutico por satélite (1.35) | 
+ 19 | 
+ 1.28 | 
+ móvel marítimo | 
+ móvel marítimo (1.28) | 
+ 20 | 
+ 1.29 | 
+ móvel marítimo por satélite | 
+ móvel marítimo por satélite (1.29) | 
+ 21 | 
+ 1.25 | 
+ móvel por satélite | 
+ móvel por satélite (1.25) | 
+ 22 | 
+ 1.26 | 
+ móvel terrestre | 
+ móvel terrestre (1.26) | 
+ 23 | 
+ 1.27 | 
+ móvel terrestre por satélite | 
+ móvel terrestre por satélite (1.27) | 
+ 24 | 
+ 1.31 | 
+ movimento de navios | 
+ movimento de navios (1.31) | 
+ 25 | 
+ 1.30 | 
+ operações portuárias | 
+ operações portuárias (1.30) | 
+ 26 | 
+ 1.58 | 
+ radioastronomia | 
+ radioastronomia (1.58) | 
+ 27 | 
+ 1.38 | 
+ radiodifusão | 
+ radiodifusão (1.38) | 
+ 28 | 
+ 1.39 | 
+ radiodifusão por satélite | 
+ radiodifusão por satélite (1.39) | 
+ 29 | 
+ 1.48 | 
+ radiolocalização | 
+ radiolocalização (1.48) | 
+ 30 | 
+ 1.49 | 
+ radiolocalização por satélite | 
+ radiolocalização por satélite (1.49) | 
+ 31 | 
+ 1.42 | 
+ radionavegação | 
+ radionavegação (1.42) | 
+ 32 | 
+ 1.46 | 
+ radionavegação aeronáutica | 
+ radionavegação aeronáutica (1.46) | 
+ 33 | 
+ 1.47 | 
+ radionavegação aeronáutica por satélite | 
+ radionavegação aeronáutica por satélite (1.47) | 
+ 34 | 
+ 1.44 | 
+ radionavegação marítima | 
+ radionavegação marítima (1.44) | 
+ 35 | 
+ 1.45 | 
+ radionavegação marítima por satélite | 
+ radionavegação marítima por satélite (1.45) | 
+ 36 | 
+ 1.43 | 
+ radionavegação por satélite | 
+ radionavegação por satélite (1.43) | 
+ 37 | 
+ 1.40 | 
+ radiodeterminação | 
+ radiodeterminação (1.40) | 
+ 38 | 
+ 1.41 | 
+ radiodeterminação por satélite | 
+ radiodeterminação por satélite (1.41) | 
+ 39 | 
+ 1.55 | 
+ pesquisa espacial | 
+ pesquisa espacial (1.55) | 
+ 40 | 
+ 1.59 | 
+ segurança | 
+ segurança (1.59) | 
+ 41 | 
+ 1.60 | 
+ especial | 
+ especial (1.60) | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ * (R): em rotas de aviação civil nacionais ou internacionais | 
+ | 
+ | 
+ | 
+ ** (OR): fora das rotas de aviação civil nacionais ou internacionais. | 
+A versão proposta por este Relator encontra-se na aba "Ordem dos Serviços" da Planilha PDFF 2025-2026 NP (SEI nº 15838023).
+IV - DOS OBJETIVOS REGULATÓRIOS
+IV.1 - Do Plano Estratégico da Agência
+O Plano Estratégico da Anatel para o período de 2023 a 2027 (SEI nº 12705707), aprovado pela Resolução Interna Anatel nº 160/2022 e atualizado pela Resolução Interna Anatel nº 369/2024, orienta as ações da Agência para promover a conectividade, a qualidade dos serviços de comunicação e o desenvolvimento do setor de telecomunicações no Brasil.
+Seus principais objetivos estão contidos no Mapa Estratégico representado na Figura 2 abaixo:
+Figura 2 - Objetivos Estratégicos 2023-2027
+Ressalto que o objeto do presente processo está em sintonia com a integralidade dos objetivos de resultado da Agência, bem como com seus principais objetivos estratégicos de processo.
+Destaca-se aqui, em particular, o objetivo de Infraestrutura e Qualidade "1-B - Viabilizar a expansão e a implantação da infraestrutura de rede base". Isso porque o espectro radioelétrico é um recurso essencial à expansão das redes, em particular da TV 3.0, cuja canalização e condições de uso são objetos da presente Análise.
+Pode-se também enfatizar o impacto positivo do PDFF sobre o objetivo de Dinamismo do Mercado "2D - Promover o uso eficiente dos recursos escassos e a atratividade e sustentabilidade do setor pela modernidade da regulação".
+IV.2 - Da Agenda 2030 da ONU
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura 3 ilustra esses objetivos:
+Figura 3 - Objetivos do Desenvolvimento Sustentável (ODS) Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 9 de agosto de 2021, e alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+O ODS nº 9, que se refere à Indústria, Inovação e Infraestrutura, é atendido, uma vez que o PDFF, ao disciplinar o uso do espectro radioelétrico, é instrumento essencial ao setor, no desenvolvimento de soluções inovadoras e novos negócios no setor.
+A viabilização da TV 3.0 contribui certamente para a concretização do ODS nº 11 – Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis, promovendo diversidade e flexibilidade na conectividade das pessoas, levando a ambientes urbanos e rurais mais seguros e sustentáveis.
+Finalmente, o ODS nº 16, Paz, Justiça e Instituições Eficazes é igualmente atendido, pois a conectividade conduz a sociedades mais inclusivas, proporcionando serviços públicos e acesso à justiça para todos, permitindo construir instituições responsáveis em todos os níveis.
+Reforça-se, assim, o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+IV.3 - Das melhores práticas
+Nesse contexto, destaca-se que o compromisso da Anatel com a adoção de boas práticas regulatórias preconizadas pelo Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), editado no Decreto Presidencial nº 11.738, de 19 de outubro de 2023.
+Cumpre destacar, ainda, o interesse da Agência pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG), desenvolvido pela Controladoria Geral da União (CGU), com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), que busca disseminar uma cultura de mensuração da qualidade regulatória no Brasil.
+APÊNDICES
+Apêndice I - Minuta de Resolução NP (SEI nº 15838005).
+Apêndice II - Minuta de Resolução NP - Anexo IV (SEI nº 15873845).
+Apêndice III - Planilha PDFF 2025-2026 NP (SEI nº 15838023).
+Apêndice IV - Minuta de Resolução NP - com marcas (SEI nº 15838089).
+CONCLUSÃO
+Voto por:
+aprovar a Minuta de Resolução NP (SEI nº 15838005), que contém o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF) para o biênio 2025-2026 e que altera o Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares (RCC-SRA), aprovado pela Resolução nº 721/2020;
+avocar, nos termos do art. 15 da Lei nº 9.784/1999, ao Conselho Diretor a definição das características técnicas de uso das subfaixas atribuídas ao Serviço Móvel por Satélite (SMS), nas faixas de 700 MHz, 850 MHz, 900 MHz, 1.800 MHz, 1.900/2.100 MHz e 2.500 MHz para prover conectividade direta entre satélite e dispositivo (Direct-to-Device - D2D); e
+determinar à Superintendência de Outorga e Recursos à Prestação (SOR) que submeta a este Conselho, em prazo não superior a 90 (noventa) dias, proposta de especiﬁcações técnicas, observadas as premissas indicadas nesta Análise.
+NOTAS
+[1] União Internacional das Telecomunicações (UIT). Guidelines for the preparation of a National Table of Frequency Allocations (NTFA). Disponível em: https://www.itu.int/en/ITU-D/Spectrum-Broadcasting/Documents/Publications/Guidelines-NTFA-E.pdf
+[2] União Internacional das Telecomunicações (UIT). Article 1, Terms and Definitions. Disponível em: https://life.itu.int/radioclub/rr/art1.pdf 
+[3] União Internacional das Telecomunicações (UIT). Constitution. Disponível em: https://www.itu.int/en/council/Documents/basic-texts/Constitution-E.pdf
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 02/07/2026, às 19:08, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15743898 e o código CRC 10ECAB23.
+ | 
+Referência: Processo nº 53500.003291/2025-80 | 
+SEI nº 15743898 |

@@ -1,0 +1,39 @@
+SEI/ANATEL - 15218657 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 29, de 23 de fevereiro de 2026
+Processo nº 53500.000798/2015-18
+Recorrente/Interessado: TRACKER DO BRASIL LTDA.
+CNPJ nº 02.756.315/0001-99
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto pela TRACKER DO BRASIL LTDA. contra o Despacho Decisório nº 629/2025/COGE/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes à CFRP no exercício de 2012.
+2. Empresa requer nulidade do lançamento por supostos vícios na metodologia de apuração, reconhecimento de incompatibilidade da sistemática administrativa aplicada, apuração da base de cálculo apenas sobre estações efetivamente em operação, reconhecimento de cerceamento do direito de quitação espontânea, admissão de documentos novos, retificação do lançamento para refletir o número real de estações em funcionamento e reconhecimento de boa-fé para afastar imputação de inadimplência voluntária.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se há vícios na metodologia de apuração da CFRP que justifiquem a nulidade do lançamento; e (ii) saber se a sistemática administrativa adotada pela Anatel viola o regime do lançamento por homologação e cerceia o direito de quitação espontânea do tributo.
+III. RAZÕES DE DECIDIR
+1. O Processo Administrativo Fiscal observou o devido processo legal e a ampla defesa.
+2. O Recurso atende aos requisitos de admissibilidade e deve ser conhecido.
+3. A metodologia de apuração da CFRP segue a regulamentação vigente, utilizando o número de estações regularmente licenciadas na data do fato gerador, não admitindo apuração casuística baseada em funcionamento episódico das estações.
+4. A legislação e regulamentação aplicáveis não autorizam a exclusão de estações licenciadas com base em critérios subjetivos ou circunstanciais.
+5. O procedimento de pagamento via Sistema Boleto está dentro dos limites da competência normativa e operacional da Anatel, não havendo violação ao regime do lançamento por homologação ou cerceamento do direito de pagar.
+6. O valor da CFRP é calculado a partir de informações prestadas pelo próprio Contribuinte, inexistindo presunção arbitrária por parte da Agência.
+7. O depósito judicial do valor integral suspendeu a exigibilidade do tributo, afastando multa e juros de mora, inexistindo prejuízo jurídico ou financeiro à Empresa.
+8. A boa-fé da Empresa não afasta a materialidade da conduta praticada.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e não provido.
+Tese de julgamento: "1. A metodologia de apuração da CFRP, baseada no número de estações regularmente licenciadas na data do fato gerador, observa a legislação e regulamentação vigentes. 2. Não há vícios que justifiquem a nulidade do lançamento ou a apuração casuística do tributo. 3. O procedimento administrativo adotado pela Anatel não viola o regime do lançamento por homologação nem cerceia o direito de quitação espontânea do tributo."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (Código Tributário Nacional - CTN); Lei nº 11.652/2008; Decreto nº 70.235/1972; Resolução nº 729/2020; Portaria Anatel nº 642/2013; Portaria nº 1355/2019.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 8/2026/OP (SEI nº 15068248), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15218657 e o código CRC 63057732.
+ | 
+Referência: Processo nº 53500.000798/2015-18 | 
+SEI nº 15218657 |

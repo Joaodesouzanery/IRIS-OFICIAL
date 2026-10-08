@@ -1,0 +1,40 @@
+SEI/ANATEL - 16099893 - Acórdão
+Boletim de Serviço Eletrônico em 17/08/2026
+DOU de 17/08/2026, seção 1, página 14
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 197, de 10 de agosto de 2026
+Processo nº 53500.017411/2014-73
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 956, de 6 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL - PAF. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. BASE DE CÁLCULO. RECEITA DE LOCAÇÃO DE DECODER. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA., incorporadora, por sucessão, de ACOM COMUNICACOES LTDA., contra Despacho Decisório do Superintendente de Administração e Finanças que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust no exercício de 2010.
+2. Fato relevante. A Recorrente sustenta que a Anatel incluiu na base de cálculo do Fust as receitas da conta “Receita de Locação de Decoder – TV”, relativas à locação de decoder, as quais, segundo a Empresa, não corresponderiam à prestação de serviço de telecomunicações.
+3. Manifestação técnica. O Informe nº 15/2026/SCO sugeriu o conhecimento e o não provimento do Recurso. A área técnica e a fiscalização mantiveram os valores apurados no Relatório de Fiscalização nº 0126/2014/GR02.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Recurso Administrativo preenche os requisitos de admissibilidade; e (ii) saber se a receita de locação de decoder integra a base de cálculo da contribuição ao Fust no exercício de 2010.
+III. RAZÕES DE DECIDIR
+1. A instrução do Processo Administrativo Fiscal observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+2. O Recurso é admissível, pois foi interposto tempestivamente, por parte legítima, com interesse recursal e sem contrariedade a súmula da Agência.
+3. A contribuição ao Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS, Programa de Integração Social - PIS e Contribuição para o Financiamento da Seguridade Social - COFINS.
+4. Os relatórios de fiscalização gozam de presunção de legalidade e veracidade. Cabe ao Interessado provar os fatos que alega.
+5. A Recorrente não apresentou documentação contábil idônea apta a demonstrar que a receita de locação de decoder era autônoma em relação ao serviço de telecomunicações.
+6. A fiscalização concluiu que, no modo de prestação adotado pela Empresa em 2010, o decoder era imprescindível para a fruição do serviço de televisão por assinatura. Por isso, a receita de sua locação era indissociável da prestação do serviço de telecomunicações e deveria compor a base de cálculo do Fust.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido.
+Tese de julgamento: "1. O Recurso Administrativo é admissível quando preenchidos os requisitos de tempestividade, legitimidade, interesse recursal e ausência de contrariedade a súmula da Agência. 2. A receita de locação de decoder integra a base de cálculo do FUST quando o equipamento é imprescindível para a fruição do serviço de telecomunicações e não subsiste de forma autônoma. 3. A alegação de exclusão de receita da base de cálculo do Fust exige prova documental idônea, não bastando impugnação desacompanhada de comprovação contábil."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, art. 85; Portaria Normativa nº 1.355/2019, item 7.1.1; e Portaria nº 642/2013, art. 5º.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 60/2026/OP (SEI nº 16010328), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento. 
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/08/2026, às 12:00, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16099893 e o código CRC D814A56B.
+ | 
+Referência: Processo nº 53500.017411/2014-73 | 
+SEI nº 16099893 |

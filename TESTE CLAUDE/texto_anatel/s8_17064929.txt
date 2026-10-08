@@ -1,0 +1,49 @@
+SEI/ANATEL - 15251966 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 42, de 28 de fevereiro de 2026
+Processo nº 53500.080897/2025-39
+Recorrente/Interessado: ASSOCIAÇÃO BRASILEIRA DE DATA CENTER - ABDC, EBAZAR.COM.BR LTDA., CONSELHO DIGITAL DO BRASIL, ASSOCIAÇÃO DAS EMPRESAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO E DE TECNOLOGIAS DIGITAIS
+CNPJ nº 40.074.820/0001-42, nº 03.007.331/0001-41, nº 35.808.843/0001-01 e nº 06.244.855/0001-44
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDOS DE ANULAÇÃO DE ATO NORMATIVO. RESOLUÇÃO ANATEL Nº 780/2025. PEDIDOS INDEFERIDOS. INGRESSO DE TERCEIRA INTERESSADA INDEFERIDO. SUSPENSÃO, DE OFÍCIO, PARCIAL E DETERMINAÇÕES.
+I. CASO EM EXAME
+1. Pedidos de anulação. ASSOCIAÇÃO BRASILEIRA DE DATA CENTER - ABDC, EBAZAR.COM.BR LTDA. (MERCADO LIVRE) e CONSELHO DIGITAL DO BRASIL - CDB requereram anulação e suspensão cautelar da Resolução Anatel nº 780, de 1º de agosto de 2025, aprovada pelo Acórdão nº 184, de 1º de agosto de 2025.
+2. Pedido de ingresso. BRASSCOM – ASSOCIAÇÃO DAS EMPRESAS DE TIC E TECNOLOGIAS DIGITAIS requereu ingresso como terceira interessada no procedimento.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se há vícios de competência ou de forma aptos a anular a Resolução Anatel nº 780/2025; (ii) saber se estão presentes os requisitos para suspensão cautelar de seus efeitos; e (iii) saber se é cabível o ingresso da BRASSCOM como terceira interessada.
+III. RAZÕES DE DECIDIR
+1. A competência da Anatel para regulamentar, fiscalizar e sancionar condutas relacionadas à comercialização de produtos para telecomunicações, inclusive envolvendo plataformas intermediadoras, decorre da Lei nº 9.472/1997 e do Regulamento de Avaliação da Conformidade e de Homologação.
+2. A inclusão de data centers que integram redes de telecomunicações no âmbito da avaliação da conformidade e homologação decorre da integração dessas infraestruturas às redes, com suporte em estudos e debates regulatórios anteriores.
+3. O processo de edição da Resolução Anatel nº 780/2025 observou providências de instrução regulatória, Consulta Pública e manifestação jurídica, sem vício formal ou procedimental apto a justificar anulação.
+4. Não se verificam plausibilidade do pedido nem risco de prejuízo grave e irreparável ou de difícil reparação que justifiquem suspensão cautelar, nos termos do art. 78 do Regimento Interno da Anatel.
+5. O art. 78 do Regimento Interno da Anatel não prevê ingresso de terceiros interessados em procedimento de anulação de ato normativo.
+6. Data centers que integram redes de telecomunicações configuram infraestruturas críticas, nos termos do Decreto nº 9.573/2018 e do Glossário aplicável ao Setor de Telecomunicações aprovado pela Resolução Anatel nº 779/2025.
+7. Fatos supervenientes e a tramitação de procedimento operacional em Consulta Pública justificam a suspensão temporária, de ofício, da exigibilidade do art. 6º da Resolução Anatel nº 780/2025, até que o Conselho Diretor reavalie a matéria.
+IV. DISPOSITIVO E TESE
+Pedidos de anulação indeferidos. Ingresso da BRASSCOM indeferido. Determinado o arquivamento dos autos. Declarado que os data centers que integram as redes de telecomunicações são infraestruturas críticas. Determinadas providências às unidades técnicas competentes. Suspensa, de ofício, a exigibilidade dos efeitos do art. 6º da Resolução Anatel nº 780/2025 até que o Conselho Diretor reavalie a matéria.
+Tese de julgamento: "1. Os pedidos de anulação da Resolução Anatel nº 780/2025 devem ser indeferidos por inexistência de vícios de competência ou de forma. 2. Não se justificam medidas de suspensão cautelar requeridas pelas Peticionantes, por ausência dos requisitos previstos no art. 78 do Regimento Interno da Anatel. 3. Não é cabível o ingresso da BRASSCOM como terceira interessada em procedimento de anulação de ato normativo. 4. Os data centers que integram as redes de telecomunicações constituem infraestruturas críticas. 5. Suspende-se, de ofício, a exigibilidade do art. 6º da Resolução Anatel nº 780/2025, até que o Conselho Diretor reavalie a matéria. 6. Determinações à Superintendência Executiva - SUE e à Superintendência de Outorga e Recursos à Prestação - SOR."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º, parágrafo único, art. 18, XVI, art. 19, art. 156, art. 157 e art. 162, § 2º; Resolução Anatel nº 715/2019, art. 83, I; Regimento Interno da Anatel, arts. 47 e 78; Decreto nº 9.573/2018, art. 1º, parágrafo único, I; Resolução Anatel nº 779/2025, art. 1º, CCXLIII; Lei nº 13.848/2019, art. 6º, § 5º; Decreto nº 10.411/2020, art. 21; Resolução Interna Anatel nº 8/2021, art. 8º; Resolução Anatel nº 740/2020, art. 20.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, RE 1.037.396 (Tema 987); STF, RE 1.057.258 (Tema 533).
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 31/2025/OP (SEI nº 14806117), integrante deste acórdão:
+a) receber a Petição SEI nº 14761495 e indeferir o ingresso da BRASSCOM - ASSOCIAÇÃO DAS EMPRESAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (TIC) E DE TECNOLOGIAS DIGITAIS como terceira interessada nos presentes autos;
+b) indeferir os Pedidos de Anulação com suspensão cautelar dos efeitos (SEI nº 14316484, nº 14377239 e nº 14677796), apresentados, respectivamente, por ASSOCIAÇÃO BRASILEIRA DE DATA CENTER - ABDC, EBAZAR.COM.BR LTDA. (“MERCADO LIVRE”) e CONSELHO DIGITAL DO BRASIL - CDB;
+c) determinar o arquivamento dos autos, nos termos art. 78, inciso II, alínea "a", do Regimento Interno da Anatel;
+d) declarar expressamente que os Data Centers que integram as redes de telecomunicações são infraestruturas críticas, nos termos do art. 1º, parágrafo único, inciso I, do Decreto nº 9.573, de 22 de novembro de 2018, e da definição constante do inciso CCXLIII do art. 1º do Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução Anatel nº 779, de 28 de abril de 2025;
+e) determinar, caso ainda não estejam sendo considerados dessa forma, que:
+e.1) a Superintendência Executiva - SUE coordene as áreas técnicas envolvidas, em princípio as Superintendências de Regulamentação - SPR e de Controle de Obrigações - SCO, para que adotem as providências cabíveis para a definição operacional do tratamento regulatório a ser adotado para os data centes como infraestrutura crítica; e,
+e.2) a Superintendência de Outorga e Recursos à Prestação - SOR, nos trabalhos em desenvolvimento no grupo de elaboração do procedimento operacional de avaliação da conformidade e homologação dos Data Centers que integram as redes de telecomunicações, já os considere como infraestruturas críticas de telecomunicações;
+f) suspender, de ofício, a exigibilidade dos efeitos do art. 6º da Resolução Anatel nº 780, de 1º de agosto de 2025, até que o Conselho Diretor reavalie a matéria após a conclusão do procedimento descrito nas alíneas seguintes;
+g) determinar à Superintendência de Outorga e Recursos à Prestação - SOR que remeta ao Conselho Diretor, após a conclusão da análise das contribuições à Consulta Pública nº 48/2025, eventuais contribuições recebidas que ensejem, possivelmente, a seu critério, ajustes na Resolução Anatel nº 780, de 1º de agosto de 2025; e,
+h) determinar à Superintendência de Outorga e Recursos à Prestação - SOR que não edite o ato de procedimentos operacionais e requisitos técnicos, objeto da Consulta Pública nº 48/2025, enquanto perdurar a suspensão da exigibilidade dos efeitos do art. 6º da Resolução nº 780/2025, disposta na alínea "f". 
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15251966 e o código CRC FF829D31.
+ | 
+Referência: Processo nº 53500.080897/2025-39 | 
+SEI nº 15251966 |

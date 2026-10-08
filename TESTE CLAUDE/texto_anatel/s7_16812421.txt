@@ -1,0 +1,391 @@
+SEI/ANATEL - 15021628 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 1/2026/EH
+Processo nº 53500.341740/2022-42
+Interessado: Tarifar Telecom e Servicos Eireli
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso administrativo interposto em face do Despacho Decisório 497/2025/COGE/SCO, de 21 de agosto de 2025 (SEI nº 13837868), que aplicou sanção de multa por infrações ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019. 
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. INFRAÇÃO AO REGULAMENTO DO SERVIÇO TELEFÔNICO FIXO COMUTADO E AO REGULAMENTO GERAL DE NUMERAÇÃO. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+Recurso administrativo interposto por Tarifar Telecom e Serviços Eireli contra decisão que aplicou sanção de multa por infração ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426/2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709/2019.
+A decisão recorrida impôs multa de R$ 178.843,26, fundamentada no art. 173, II, da Lei nº 9.472/1997 (Lei Geral de Telecomunicações - LGT).
+A recorrente alegou, preliminarmente, ausência de competência da Anatel em razão da extinção de sua autorização para prestação de serviços de telecomunicações, ausência de autoria e materialidade das infrações, limitação de atuação à prestação de SCM e VoIP, e contestou o valor e a metodologia de cálculo da multa.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a extinção da autorização para prestação de serviços de telecomunicações afasta a competência da Anatel para apuração e sanção de infrações cometidas durante a vigência da autorização; (ii) saber se houve autoria e materialidade das infrações ao art. 8º do RSTFC e ao art. 19 do RGN; e (iii) saber se o valor e a metodologia de cálculo da multa aplicada observam os princípios da proporcionalidade e razoabilidade.
+III. RAZÕES DE DECIDIR
+A competência da Anatel para apuração e sanção de infrações decorre do vínculo existente à época dos fatos, sendo irrelevante a extinção posterior da autorização ou alteração do objeto social da empresa.
+A fiscalização constatou, por meio de análise de registros de chamadas, que a recorrente utilizou recursos de numeração sem prévia autorização e apresentou numeração adulterada, impossibilitando a rastreabilidade e identificação dos usuários, caracterizando infração ao art. 8º do RSTFC e ao art. 19 do RGN.
+A metodologia de de cálculo da multa por Descumprimento de Obrigações Contratuais, usualmente adotada, foi afastada, de forma fundamentada, por resultar em valor que não se coadunava à gravidade da infração, sendo utilizada metodologia alternativa, conforme possibilidade prevista no art. 18, §4º, do Regulamento de Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589/2012.
+O valor da multa foi fixado considerando a gravidade da infração, a vantagem auferida, o impacto sobre a segurança pública e a capacidade econômica da empresa, não havendo irregularidade quanto à utilização da Receita Operacional Líquida (ROL) de 2020.
+Não foram identificadas circunstâncias agravantes ou atenuantes, nem reincidência específica, sendo mantida a classificação da infração como grave.
+Determinação à Superintendência de Controle de Obrigações (SCO) para que apure, em autos apartados, eventual prestação clandestina do Serviço Telefônico Fixo Comutado (STFC) pela Recorrente, considerando-se haver indícios de possível desenvolvimento de atividade não outorgada de telecomunicações, a qual, caso confirmada, enseja sancionamento e deve ser apurada pelo Ministério Público Federal (MPF), de acordo com o que dispõe a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), em seus artigos 183, 184 e 185.
+IV. DISPOSITIVO E TESE
+Recurso administrativo conhecido e não provido. Mantida a sanção de multa aplicada no valor de R$ 178.843,26.
+Tese de julgamento: "1. A extinção da autorização para prestação de serviços de telecomunicações não afasta a competência da Anatel para apuração e sanção de infrações cometidas durante a vigência da autorização. 2. A utilização de recursos de numeração sem prévia autorização e a apresentação de numeração adulterada caracterizam infração ao art. 8º do RSTFC e ao art. 19 do RGN. 3. O valor e a metodologia de cálculo da multa aplicada observam os princípios da proporcionalidade e razoabilidade, sendo legítima a adoção de metodologia alternativa prevista no art. 18, §4º, do RASA."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 173, II; Resolução nº 426/2005, art. 8º; Resolução nº 709/2019, art. 19; Resolução nº 589/2012, art. 18, §4º.
+Jurisprudência relevante citada: Acórdão nº 121, de 21 de maio de 2025, Conselho Diretor da Anatel.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT;
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel - RIA;
+Resolução nº 589, de 07 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas - Rasa;
+Resolução nº 73, de 25 de novembro de 1988, que aprova o Regulamento dos Serviços de Telecomunicações - RST;
+Resolução nº 426, de 9 de dezembro de 2005, que aprovou o Regulamento do Serviço Telefônico Fixo Comutado - RSTFC;
+Resolução nº 709, de 27 de março de 2019, que aprovou o Regulamento Geral de Numeração - RGN;
+Resolução nº 720, de 10 de fevereiro de 2020, que aprovou o Regulamento Geral de Outorgas - RGO;
+Processo nº 53524.000170/2022-65; e,
+Despacho Decisório nº 497/2025/COGE/SCO (SEI nº 13837868).
+RELATÓRIO
+I - DO OBJETO
+Trata-se de Recurso Administrativo interposto por TARIFAR TELECOM E SERVIÇOS EIRELI, inscrita no CNPJ/MF sob nº 33.761.868/0001-63, em face de decisão exarada por meio do Despacho Decisório nº 497/2025/COGE/SCO, de 21 de agosto de 2025 (SEI nº 13837868), da Superintendente de Controle de Obrigações (SCO), que aplicou sanção de multa no valor de R$ 178.843,26 (cento e setenta e oito mil, oitocentos e quarenta e três reais e vinte e seis centavos), nos termos do art. 173, II, da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), por infração ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019.
+II - DOS FATOS
+O presente processo foi instaurado no dia 02/06/2023, por meio do Despacho Ordinatório de Instauração nº 396/2022/COGE/SCO (SEI nº 9627827), para apurar indícios de descumprimento do art. 19 do Regulamento Geral de Numeração, aprovado pela Resolução nº 709/2019, do art. 8º do Regulamento do Serviço Telefônico Fixo Comutado, aprovado pela Resolução nº 426/2005 e do art. 65-M da Resolução nº 738/2020, que alterou o Regulamento dos Serviços de Telecomunicações.
+A prestadora foi notificada da instauração deste Procedimento para Apuração de Descumprimento de Obrigações (Pado) e do prazo para apresentação de defesa nos termos do Ofício nº 1171/2022/COGE/SCO (SEI nº 9627837), em 23/06/2023, conforme atesta a Certidão de Intimação Cumprida de SEI nº 10438124.
+Em 07/07/2023 (SEI nº 10521516), a Recorrente protocolizou sua Defesa Administrativa (SEI nº 10521513).
+Por meio do Ofício nº 589/2023/COGE/SCO (SEI nº 10708825), em 15/08/2023 (SEI nº 10731856), a Prestadora foi intimada para apresentação de suas alegações finais, cujo protocolo se deu em 30/08/2023 (SEI nº 10793703), nos termos do documento Alegações Finais (SEI nº 10793702).
+Nos termos do Informe nº 591/2023/COGE/SCO (SEI nº 13837148), de 13/08/2025, a área técnica analisou as razões de defesa e de alegações finais apresentadas, ocasião em que concluiu pela caracterização das infrações ao art. 8º Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005 e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019. Propôs, assim, a aplicação de multa no valor de R$ 178.843,26 (cento e setenta e oito mil, oitocentos e quarenta e três reais e vinte e seis centavos).
+À mesma data, o Superintendente de Controle de Obrigações substituto, por meio do Despacho Decisório nº 497/2023/COGE/SCO (SEI nº 13837868), decidiu aplicar a a sanção de multa no valor de R$ 178.843,26 (cento e setenta e oito mil, oitocentos e quarenta e três reais e vinte e seis centavos), nos termos do art. 173, II, da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), por infração ao art. 8º RSTFC, e ao art. 19 do RGN.
+A prestadora foi comunicada da decisão e do prazo para recorrer no dia 28/08/2025 (Certidão de Intimação Cumprida, SEI nº 14282575), por meio do Ofício nº 801/2025/COGE/SCO-ANATEL (SEI nº 13837891).
+O Recurso Administrativo (SEI nº 14345379) foi interposto, com pedido de efeito suspensivo, tempestivamente, em 08/09/2025, de acordo com o Recibo Eletrônico de Protocolo de SEI nº 14345384, ocasião em que a Prestadora apresentou contestações quanto à: 
+preliminarmente, à competência da Anatel para a instauração deste feito, tendo em vista a extinção de sua autorização para prestação de serviços de telecomunicações;
+autoria e materialidade das infrações relacionadas à prática de spoofing, uma vez que sua atuação se limitava à prestação dos Serviços de Comunicação Multimídia (SCM) e serviços VoIP; e
+valor da multa fixada, metodologia utilizada, a Receita Operacional Líquida adotada e a proporcionalidade e razoabilidade da multa aplicada.
+Ao final, fez os seguintes pedidos:
+I - Que seja apreciado e acolhido o pedido de atribuição de efeito suspensivo, impedindo que a Anatel realize qualquer ato que macule o direito de a Recorrente prestar os serviços previstos em seu contrato social;
+II - Com fulcro no Regimento Interno desta Agência Reguladora, caso não seja reconsiderada a decisão exarada, que seja o presente processo administrativo remetido à autoridade hierarquicamente superior (Conselho Diretor), sendo nesta oportunidade concedido o efeito suspensivo;
+III - Que seja anulado o despacho que aplicou a sanção de multa em desfavor da Recorrente, diante ausência de provas que justifiquem a aplicação da sanção de multa e diante dos inúmeros vícios verificados na metodologia de cálculo de multa;
+IV – Pelo princípio da eventualidade, caso não anulado o despacho proferido, que seja reformado o referido despacho, considerando os inúmeros vícios verificados no cálculo de multa realizado no Informe nº 591/2025;
+V - E, pelo mesmo princípio da eventualidade, caso seja mantida a suposta infração, que seja somente aplicada à sanção de advertência no caso em tela, com a reforma do despacho proferido.
+De acordo com a Certidão de SEI nº 14382377, de 15/09/2025, foi atribuído efeito suspensivo ao Recurso (SEI nº 11946807), quanto à sanção de multa aplicada por meio do Despacho Decisório nº 497/2023/COGE/SCO (SEI nº 13837868).
+As razões recursais foram analisadas pela área técnica, a qual, de acordo com os fundamentos do Informe nº 957/2024/COGE/SCO (SEI nº 14400501), sugeriu negar seu provimento.
+A SCO, no dia 23/12/2025, decidiu conhecer do recurso e encaminhar os presentes autos para deliberação por este Conselho Diretor, como consta na decisão exarada por meio do Despacho Decisório nº 785/2025/COGE/SCO (SEI nº 14416421).
+Ainda em 23/12/2025, os autos foram encaminhados ao Superintendente Executivo (SUE), para posterior envio ao Conselho Diretor, nos termos da Matéria para Apreciação do Conselho Diretor (MACD) nº 713/2025 (SEI nº 14416424).
+De acordo com a Certidão de Distribuição (SEI nº 14995052), de 05/01/2026, fui designado Relator da matéria.
+É o breve relato.
+DA ANÁLISE
+I. DA ADMISSIBILIDADE
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O recurso administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão. No caso, o recurso administrativo foi dirigido para a Superintendência de Controle de Obrigações (SCO), que conheceu do recurso e manteve sua decisão. Portanto, correto é o encaminhamento para decisão do Conselho Diretor, conforme previsto no art. 115, § 1º, “b” do RIA, transcrito a seguir:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho
+Diretor, cabe interposição de recurso administrativo por razões de
+legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a
+decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à
+autoridade hierarquicamente superior.
+Não se observou, ainda, a incidência das hipóteses de não conhecimento do presente recurso, previstas no art. 116 do RIA, a saber:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando
+interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a
+Administração de rever de ofício o ato ilegal, desde que não ocorrida
+preclusão administrativa.
+Quanto à tempestividade, por meio do Ofício nº 801/2025/COGE/SCO-ANATEL (SEI nº 13837891), a Recorrente foi notificada em 28/08/2025, quinta-feira, da decisão contida no Despacho Decisório nº 497/2023/COGE/SCO (SEI nº 13837868), de 13/08/2025, conforme atesta a Certidão de Intimação Cumprida, SEI nº 14282575.
+Desse modo, a contagem do prazo recursal de 10 (dez) dias iniciou-se em 29/08/2025 (sexta-feira), e esgotou-se em 08/09/2025 (segunda-feira), por se tratar do primeiro dia útil subsequente. Tendo em vista que o Recurso Administrativo (SEI nº 11946807) foi apresentado pela Prestadora nesta data, conforme Recibo Eletrônico de Protocolo de SEI nº 11946809, considera-se a espécie, portanto, tempestiva.
+A recorrente é parte legítima deste procedimento, possui interesse na reforma da decisão e encontra-se regularmente representada, como se verifica da Procuração acostada por meio do documento "Procuração Contrato Social e Procuração (SEI nº 10521514)".
+Assim, admite-se o recurso interposto.
+II. DAS RAZÕES RECURSAIS
+II.1 DA PRELIMINAR
+II.1.1 Do cabimento do presente Recurso
+Ao inaugurar suas razões recursais, a Recorrente afirma não caber à Anatel a instauração do presente feito, tendo em vista não ser mais detentora de autorização para a prestação de serviços de telecomunicações. Para corroborar sua alegação, apresenta imagem (página 2 - SEI nº 11946807) de seu Objeto Social, no qual consta se tratar de "Serviços Combinados de Escritório e Apoio Administrativo". Acrescenta, adiante, que teria prestado serviços de telecomunicações apenas até o exercício de 2024 (pagina 11 - SEI nº 11946807).
+Passa-se à análise.
+É consentâneo com o direito administrativo sancionador a aplicação do princípio geral do direito do tempus regit actum, ou seja, a norma vigente à época da infração incidirá sobre essa e determinará a correspondente sanção. Assim, com base em tal princípio, a validade e efeitos são definidos pelo contexto temporal da ação, o que é primordial para a estabilidade das relações jurídicas. 
+Dito isto, cumpre analisar o período fiscalizado.
+Conforme consta no item 3 do Relatório de fiscalização n.° 42/2022/GR04FI3/GR04/SFI (SEI nº 9626511), a inspeção é referente a todo o tráfego telefônico da prestadora indicada no item 2.2, em todo o país, nos dias 09 de abril de 2021 e 05 de janeiro de 2022. A fiscalização foi realizada a partir do mês de janeiro de 2022. Assim, tem-se que, durante a ação desta Agência, na qual se apuraram as infrações objeto deste Pado, a TARIFAR atuava como prestadora de serviços de telecomunicações, conforme a própria reconhece em seu Recurso. 
+Com isso, os atos praticados durante a vigência da autorização concedida pela Anatel se encontravam abrangidos pela regulamentação setorial, sendo dever da Recorrente prestar os serviços de acordo com o que previam tais normas. A extinção posterior da autorização para prestação dos serviços de telecomunicações não ilide a empresa quanto ao cumprimento das obrigações legais cabíveis à época da autorização, período este considerado na ação fiscalizatória sob debate. 
+Note-se que a própria empresa, ao responder aos requerimentos de informações acostados no processo de fiscalização regulatória de nº53524.000170/2022-65, apresenta contratos nos quais se define como "TARIFAR TELECOM E SERVIÇOS EIRELI", a exemplo do que consta na Carta Documentos Solicitados (SEI nº 8263278). Não restando dúvida, portanto, quanto à regularidade da instauração deste Pado, sob este aspecto.
+Em mesma linha se pronunciou a área técnica ao analisar este ponto do Recurso. Veja-se:
+Informe nº 957/2025/COGE/SCO (SEI nº 14400501):
+Da competência da Anatel mesmo após a extinção da autorização
+4.4. Inicialmente, a recorrente sustenta, em síntese, que já extinguiu sua autorização para operar telecomunicações e alterou seu objeto social antes da decisão sancionadora, o que tornaria inaplicável qualquer sanção imposta pela Anatel.
+4.5. Sobre essa questão, cumpre pontuar que a competência para sancionar da Anatel não decorre da condição atual de prestadora de serviço de telecomunicações, mas sim da existência de um vínculo no momento em que a infração foi cometida, uma vez que o ato de fiscalizar se volta para a conduta ilícita praticada enquanto a empresa era regulada, de forma que a extinção da outorga, seja por renúncia ou de outra forma, não tem a capacidade de apagar as infrações cometidas sob a vigência da autorização para prestação de serviço de telecomunicações.
+4.6. A infração foi cometida em um momento em que a empresa atuava no setor de telecomunicações, sendo que a posterior mudança em seu estatuto social é irrelevante para a materialidade e a imputabilidade da conduta. Isso porque a modificação do objeto social da pessoa jurídica não tem poder de retroagir sobre os fatos geradores da infração nem de afastar o regime de responsabilidade administrativa a que estava sujeita quando exerceu atividade de telecomunicações.
+4.7. Corrobora esse entendimento o disposto no art. 29, § 2º do Regulamento Geral de Outorgas (RGO), aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, que dispõe da seguinte maneira:
+Art. 29. A autorização para exploração de serviços de telecomunicações extingue-se por cassação, caducidade, decaimento, renúncia ou anulação, conforme disposto na Lei nº 9.472, de 1997.
+§ 1º A extinção da autorização para exploração de serviços de telecomunicações ou a notificação de desinteresse para exploração de um ou mais serviços de telecomunicações importará a extinção das autorizações de uso das radiofrequências a ela associadas.
+§ 2º A extinção da autorização para exploração de serviços de telecomunicações ou a notificação de desinteresse para exploração de um ou mais serviços de telecomunicações não confere à prestadora direito a qualquer indenização e não a exime da responsabilidade pelos atos praticados.
+4.8. Em suma, por expressa previsão legal e regulamentar, a Anatel conserva a competência para aplicar sanções a atos praticados durante a vigência da autorização, de modo que a simples extinção posterior do vínculo, nem mesmo a modificação do objeto social da pessoa jurídica, não tornam a multa imposta inaplicável. Assim, não merece acolhimento a alegação da recorrente nesse sentido.
+Em consonância com o trecho supratranscrito, reitera-se que o poder-dever sancionatório refere-se à obrigação que a administração pública tem de apurar infrações e aplicar as penalidades devidas a agentes públicos ou particulares que descumpram normas, observando-se o devido processo legal. É por meio dessa prerrogativa repressiva que o Estado provê a manutenção da ordem e da conformidade administrativa. Por isso, admitir que atos praticados de maneira alheia às normas aplicáveis à época de seu cometimento possam não ser mais apurados e propriamente sancionados em razão de extinção posterior da outorga conferida, significaria verdadeiro salvo-conduto para a prática de irregularidades. Dessa forma, pelas razões expostas, afasto, portanto, a presente alegação preliminar.
+II.2 - DO MÉRITO
+II.2.1. Da autoria e materialidade das infrações 
+A TARIFAR alega que, no período fiscalizado, limitava-se à prestação dos Serviços de Comunicação Multimídia (SCM) e serviços VoIP (Voz sobre IP), não sendo prestadora do Serviço Telefônico Fixo Comutado (STFC). Por tal motivo, argui que não haveria como se comprovar a autoria ou materialidade da infração de spoofing, uma vez que não seria a responsável pelo controle e emissão dos números originadores, afastando-se, assim, sua eventual participação na alteração dos identificadores de chamadas.
+Passa-se à análise.
+A TARIFAR foi sancionada em face do descumprimento dos seguintes dispositivos:
+RSTFC - Regulamento do Serviço Telefônico Fixo Comutado – STFC (Resolução nº 426/2005)
+Art. 8º Constituem pressupostos essenciais à prestação do STFC, a identificação do acesso individual ou coletivo de origem ou destino da chamada, a capacidade de rastrear a chamada e a garantia de manutenção ou suspensão do sigilo nos termos do Capítulo III do Título IV deste Regulamento.
+.................................................................................................................
+RGN - Regulamento Geral de Numeração, aprovado pela Resolução nº 709, de 27 de março de 2019:
+Art. 19. A utilização de Recursos de Numeração depende de prévia Atribuição da Agência.
+A fiscalização que deu ensejo a este Pado foi realizada em observância ao determinado no Despacho Decisório nº 402/2020/COGE/SCO (SEI nº 6378939) no âmbito da Iniciativa de Fiscalização Regulatória nº 12, Processo nº 53500.032183/2019-76, instaurado para obter informações relevantes e estimular a melhoria contínua da prestação dos serviços de telecomunicações pertinentes à atuação do Grupo Executivo Antifraude de Telecomunicações (GEAFT).
+Por meio do referido Despacho, fixou-se, em sua alínea b), a ampliação da Iniciativa de Fiscalização Regulatória n.º 12 para realizar atividade de investigação sobre a eventual geração de tráfego adulterado com técnicas de spoofing sob a responsabilidade das prestadoras listadas no item 5.74 do Informe nº 615/2020/COGE/SCO (SEI nº 6310185), com o objetivo de identificar os responsáveis pela geração do tráfego adulterado.
+Assim, após reuniões e tratativas com as prestadoras de Pequeno Porte (PPPs), às quais se referiu o mencionado Despacho, instaurou-se o Processo n.° 53524.000170/2022-65, para apurar possíveis condutas da TARIFAR em desacordo com a regulamentação, no contexto da mencionada prática de spoofing.
+No bojo do Processo n.° 53524.000170/2022-65, procedeu-se à fiscalização necessária para verificação da ocorrência, na rede telefônica, de utilização de Recursos de Numeração para identificar terminais originadores de chamadas que não correspondiam à numeração designada aos usuários, buscando identificar as fontes de geração dessas chamadas.
+As evidências foram extraídas da análise dos registros das chamadas cursadas em determinados dias na rede da prestadora fiscalizada, tendo sido analisados registros da rede da Recorrente e de outras prestadoras envolvidas no encaminhamento das chamadas, de acordo com o que explicam os itens 8.1.1 e 8.1.2 do Relatório de Fiscalização nº 42/2022 (SEI nº 9626511).
+Conforme esclarecido no item 8.1.3.2 pela fiscalização, se o assinante possuísse equipamentos que pudessem gerar números originadores, deveria fazê-lo utilizando números a ele designados. Caso o assinante não encaminhasse à prestadora números originadores ou encaminhasse números não pertencentes à faixa de numeração designada a ele, a prestadora deveria substituir esses números por números designados ao assinante ao encaminhar as chamadas para o destino.
+Explicou-se ainda que, quando os números originadores não são encaminhados para as demais prestadoras de acordo com o que foi descrito nos item 8.1.3.1 e 8.1.3.2, eles não fornecerão, para os recebedores das chamadas, a identificação numérica dos reais usuários que efetuaram as chamadas, sendo falsos os números originadores recebidos pelos usuários de destino das chamadas.
+Ao analisar os CDRs de chamadas originadas por clientes da Tarifar no dia 05 de janeiro de 2022, foram encontrados os seguintes resultados (Anexo I - Planilha A - SEI nº 9296628):
+Foram originadas 585.522 chamadas.
+Quanto ao encaminhamento das chamadas:
+93% das chamadas foram dirigidas a usuários da Telefônica/Vivo, Claro, Tim e Oi/Telemar.
+ Em 90% das chamadas os números chamados eram do SMP.
+As chamadas foram encaminhadas por meio das empresas Brasilfone (60%), Foco Telecom (19%), Viacel Telecom (6%), Smart Telecom (5%) e outras.
+A fiscalização acrescentou no item 8.4.2. de sua análise que "Parte das chamadas originadas no dia 05 de janeiro de 2022 foi analisada quanto aos números originadores que são apresentados aos recebedores das chamadas (...). A amostra observada foi extraída de chamadas com duração superior a 5 segundos, que totalizaram 87.281 chamadas, considerando as chamadas encaminhadas para todas as prestadoras. A amostra de 11.678 dessas chamadas, encaminhadas para as redes fixas e móveis da Claro e da Oi, tiveram seus registros na Tarifar confrontados com os registros correspondentes na Claro e na Oi. Os resultados da confrontação estão indicados no Anexo I - Planilha B - SEI nº 9296628. A distribuição de chamadas quanto à atribuição dos números originadores foi, conforme os registros da Claro e da Oi:
+41% das chamadas com originadores atribuídos à Claro;
+31% das chamadas com originadores atribuídos à Telefônica/Vivo;
+19% das chamadas com números atribuídos à Oi/Telemar;
+4% das chamadas com números atribuídos à Tim;
+5% da chamadas com números de outras 15 prestadoras."
+Tais resultados levaram os fiscais da Anatel a entender pela prática de spoofing, nos seguintes termos:
+9. CONCLUSÃO 
+9.1. Os resultados apresentados no item 8 indicam que os números originadores das chamadas originadas por clientes da prestadora Tarifar, que são apresentados aos usuários recebedores das chamadas, não correspondem à real identidade numérica dos clientes. Os números recebidos no destino são, portanto, números falsos.
+9.2. Conforme se verifica no item 8.4.2, a análise da amostra de 11.678 chamadas originadas por clientes da Tarifar, em 05 de janeiro de 2022, indicou que os números originadores recebidos nos destinos das chamadas são números atribuídos a diversas prestadoras e não correspondem à identificação dos clientes que originaram as chamadas. (grifou-se)
+Afere-se, diante dos resultados apresentados, que a fiscalização assinalou haver tráfego alterado, de origem na Recorrente, o que requereu a apuração dos indícios de infração à regulamentação que disciplina os serviços móvel pessoal (SMP) e o STFC. 
+Como transcrito acima, no item 9.1 do Relatório de Fiscalização nº 42/2022, constatou-se que os números originadores das chamadas originadas por clientes da prestadora Tarifar, que são apresentados aos usuários recebedores das chamadas são números falsos.
+Diante disso, insta verificar o que dispõe o Regulamento do Serviço Telefônico Fixo Comutado – STFC, aprovado pela Resolução nº 426, de 9 de dezembro de 2005 (RSTFC/2005). 
+Em seu art. 8º, são fixadas as condições para a prestação e a fruição do STFC. No que tange à definição de suas características, a norma determinou a existência de terminações de rede que fossem identificadas individualmente pelos Códigos de Acesso de Usuário:
+Art. 8º Constituem pressupostos essenciais à prestação do STFC, a identificação do acesso individual ou coletivo de origem ou destino da chamada, a capacidade de rastrear a chamada e a garantia de manutenção ou suspensão do sigilo nos termos do Capítulo III do Título IV deste Regulamento. (grifou-se)
+Esta definição das características do Código de Acesso, bem como sua aplicação nos serviços, relacionam-se à necessidade de se garantir uma identidade única para a terminação e originação das chamadas e mensagens nas redes de telefonia, impedindo-se, assim, a existência de destinos ambíguos. Esta é ainda uma regra estabelecida inclusive em âmbito internacional pela International Telecommunication Union (ITU-T). A Recommendation E.164 - The International Public Telecommunication Numbering Plan, quando define o International Public Telecommunication Number utiliza os exatos termos: "A string of decimal digits that, for a geographic country code, uniquely identifies a subscriber or a point where a service is provided". (grifou-se).
+Como explica a área técnica por meio do Informe nº 640/2022/COGE/SCO (SEI nº 9626529), é por meio do Código de Acesso individualizado que se permite, no âmbito dos serviços públicos, por exemplo, a integração das redes públicas sem que existam conflitos nos endereçamentos e roteamentos das chamadas e mensagens. 
+Conforme ainda esclarece a área técnica no item 7.23 do Informe nº 640/2022/COGE/SCO (SEI nº 9626529), os Códigos de Acesso de Usuário são recursos de numeração que devem ser únicos mundialmente e são utilizados para o encaminhamento do tráfego de telecomunicações. Esses códigos são únicos por necessidades técnicas de encaminhamento de chamadas para um destino específico e por força legal e regulatória na originação deste tráfego. Os Códigos de Acesso de Usuário também identificam univocamente os terminais e contas de usuário.
+A Prestadora, contudo, refuta ter prestado o STFC, sustentando que sua atuação cingia-se à oferta de SCM e VOIP.
+O corpo técnico, ao analisar os achados da fiscalização e as peças de defesa e de alegações finais da prestadora, concluiu que "o serviço prestado pela empresa aos seus clientes exige, de forma inequívoca, a utilização de recursos de numeração em conformidade com a Recomendação UIT E.164 e com a regulamentação aplicável, em especial o Regulamento Geral de Numeração, aprovado pela Resolução nº 749, de 15 de março de 2022.", de acordo com o item 5.13 do Informe nº 591/2025/COGE/SCO (SEI nº 13837148). 
+A exploração dos serviços de telefonia fixa e móvel foi estabelecida de forma que ambos demandam a autorização prévia da Agência:
+RSTFC - Regulamento do Serviço Telefônico Fixo Comutado – STFC (Resolução nº 426/2005)
+Art. 10-A. A exploração do STFC em regime privado depende de prévia autorização, nos termos e condições estabelecidos no Regulamento Geral de Outorgas, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020. (Redação dada pela Resolução nº 720, de 10 de fevereiro de 2020).
+(...)
+Art. 71. O provimento do STFC pela prestadora em regime privado deve ser feito de acordo com o termo de autorização.
+----------------
+RSMP - Regulamento do Serviço Móvel Pessoal (Resolução nº 477/2007)
+Art. 5º O SMP é prestado em regime privado e sua exploração e o direito ao uso das radiofreqüências necessárias dependem de prévia autorização da Anatel. (Destaques nossos)
+O Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614/2013, por sua vez, proíbe a oferta do serviço de STFC:
+RSCM
+Art. 3º O SCM é um serviço fixo de telecomunicações de interesse coletivo, prestado em âmbito nacional e internacional, no regime privado, que possibilita a oferta de capacidade de transmissão, emissão e recepção de informações multimídia, permitindo inclusive o provimento de conexão à internet, utilizando quaisquer meios, a Assinantes dentro de uma Área de Prestação de Serviço.
+...
+§ 2º Na prestação do SCM não é permitida a oferta de serviço com as características do Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC), em especial o encaminhamento de tráfego telefônico por meio da rede de SCM simultaneamente originado e terminado nas redes do STFC. (grifou-se)
+Além disso, a Agência editou a Portaria nº 214, de 3/03/2015, que Aprova o Procedimento de Fiscalização para verificação do cumprimento das obrigações técnicas pelas prestadoras autorizadas do Serviço de Comunicação Multimídia (SCM) e da exploração clandestina desse serviço, no qual se reitera a vedação à prestação do STFC por meio da rede de SCM:
+Portaria nº 214, de 3/03/2015
+Das restrições quanto à prestação do SCM
+49. Não é permitida a oferta de serviço com as características do Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC), em especial o encaminhamento de tráfego telefônico, por meio da rede de SCM simultaneamente originado e terminado nas redes do STFC, sob pena de configuração de prestação clandestina de STFC.
+Seção I
+Da exploração clandestina de STFC através de PSCM
+50. Caso a rede responsável pela prestação do serviço de voz que chega ao usuário de SCM seja de responsabilidade da prestadora de STFC contratada pela PSCM, o serviço nem mesmo seria VoIP e estaria melhor caracterizada uma revenda de STFC através da prestadora do SCM. Trata-se, portanto, de exploração de STFC sem autorização, atividade clandestina, pois as faturas são emitidas pela PSCM.
+51. Caso a rede responsável pelo serviço de VoIP que chega no usuário de SCM seja de responsabilidade da própria PSCM, poderíamos ter uma situação em que o usuário não teve informação adequada de que o serviço VoIP não permitiria portabilidade. A portabilidade só é garantida como direito de usuário vinculado à prestadora do STFC ou SMP (art. 10, I, do Regulamento Geral de Portabilidade). (grifou-se)
+Por todo o exposto, portanto, é incontroversa a vedação à prestação do STFC por prestadoras de SCM, conduta esta identificada no caso da TARIFAR, por meio dos achados da fiscalização, transcritos anteriormente neste item.
+Repisa-se que do universo amostral relativo aos chamados originados na rede da prestadora, verificou-se que parte considerável apresentou numeração de origem em desacordo com a regulamentação, sendo que na amostra de 11.678 chamadas confrontadas com os registros da Claro e da Oi, observou-se o uso de números conferidos a outras operadoras, caracterizando-se, com isso, encaminhamento de tráfego com numeração adulterada, o que prejudica tanto a rastreabilidade quanto a devida identificação dos usuários que originaram as chamadas.
+Em que pesem às alegações da prestadora, não é demais lembrar que é seu dever adotar medidas preventivas e corretivas que sejam hábeis a evitar fraudes em suas redes, em observância às obrigações estabelecidas na regulamentação e à proteção dos direitos dos consumidores envolvidos.
+Assim, ao utilizar recurso de numeração sem prévia autorização da Anatel, apresentando, além disso, numeração adulterada que impede a rastreabilidade e identificação dos usuários que originaram as chamadas, a Recorrente incorreu em ofensa ao RSTFC (art. 8º) e ao RGN (art. 19), não restando dúvida quanto ao correto enquadramento de tais irregularidades.
+Destaque-se que, inicialmente, de acordo com o Despacho Ordinatório de Instauração nº 396/2022/COGE/SCO (SEI nº 9627827), caracterizou-se a conduta da prestadora nos seguintes dispositivos: 
+O GERENTE DE CONTROLE DE OBRIGAÇÕES GERAIS DA ANATEL, considerando as conclusões do Informe nº 640/2022/COGE/SCO (SEI nº 9626529), com fulcro no art. 40, V, art. 80, caput, art. 82, I, e no art. 208, VI, todos do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, RESOLVE instaurar procedimento para Apuração de Descumprimento de Obrigações (PADO), em face de TARIFAR TELECOM E SERVICOS EIRELI, CNPJ/MF sob nº 33.761.868/0001-63, por indício de descumprimento do art. 19 do Regulamento Geral de Numeração, aprovado pela Resolução nº 709/2019, do art. 8º do Regulamento do STFC, aprovado pela Resolução nº 426/2005 e do art. 65-M da Resolução nº 738/2020.
+Ao analisar a regularidade da caracterização das infrações e sugerir o respectivo sancionamento, a área técnica entendeu pela necessidade de afastamento da infração ao art. 65-M da Resolução nº 738/2020, em vista dos seguintes argumentos:
+Informe 591 (SEI nº 13837148):
+5.31. Apesar de constar da instauração do presente Pado a existência de três infrações: a) art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 749, de 15 de março de 2022; b) art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005; e c) art. 65-M do Regulamento dos Serviços de Telecomunicações (RST), aprovado pela Resolução nº 73, de 25 de novembro de 1988, entende-se que não cabe aplicação de sanção autônoma com base no art. 65-M do RST.
+5.32. O art. 65-M do RST impõe às prestadoras, de forma ampla, o dever de adotar medidas técnicas e administrativas para prevenir, cessar e mitigar fraudes na prestação dos serviços e no uso das redes. Já o art. 8º do RSTFC estabelece obrigação mais específica, relacionada à identificação dos acessos de origem e destino das chamadas, bem como à capacidade de rastreamento e à garantia de manutenção dessas informações.
+5.33. No caso concreto, a conduta da prestadora, consistente na geração de tráfego artificial, resultou em uso indevido de recursos de numeração e impossibilidade de rastreamento das chamadas, já tipificadas nos artigos 19 do RGN e 8º do RSTFC.
+5.34. Não foram identificadas ações adicionais que justifiquem a caracterização autônoma da infração ao art. 65-M do RST.
+Tendo em vista que o dispositivo afastado se refere a conduta mais generalista, e que, por outro lado, foi mantida a caracterização das infrações na especificidade apurada neste Pado e pela fiscalização, as quais se encontram propriamente amparadas pelos artigos 8º do RSTCF e 19 do RGN, não vejo reparos a fazer quanto a este ponto, alinhando-me, portanto, ao enquadramento adotado pela SCO.
+Julgo, por conseguinte, que as presentes razões interpostas não têm o poder de afastar o cometimento das infrações recorridas, devendo-se manter sua caracterização.
+Ainda sobre este tópico, determino que a Superintendência de Controle de Obrigações (SCO) apure, em autos apartados, eventual prestação clandestina do Serviço Telefônico Fixo Comutado (STFC) pela Recorrente, considerando-se haver indícios de possível desenvolvimento de atividade não outorgada de telecomunicações, a qual, caso confirmada, enseja sancionamento e deve ser apurada pelo Ministério Público Federal (MPF), de acordo com o que dispõe a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), em seus artigos 183, 184 e 185. 
+II.2.2 Da multa aplicada
+Neste ponto, a Recorrente contesta que, quando da elaboração do Informe nº 591/2025, esta Agência Reguladora teria optado por simplesmente ignorar a metodologia de cálculo definida pela própria Anatel para situações como a do caso em tela, para, ao seu bel prazer, aplicar multa em montante mais de 40 (quarenta) vezes superior àquele definido pela metodologia usual.
+Reiterou ainda não ser mais prestadora de serviços de telecomunicações, fato este que deveria ser considerado na definição da sanção, bem como se insurgiu contra a utilização da Receita Operacional Líquida (ROL) referente ao ano de 2020, no cômputo da multa, uma vez entender que se deveria adotar a ROL de 2024, por ter sido este o último exercício em que prestou serviços de telecomunicações, cujo montante a removeria do Grupo 4 para o 5, quanto ao porte da prestadora definido pelo Regulamento de Aplicação de Sanções Administrativas da Anatel (RASA), aprovado pela Resolução nº 589/2012. Por fim, afirmou que o valor da sanção aplicada não observaria os princípios da proporcionalidade e razoabilidade da multa. 
+Passa-se à análise. 
+A área técnica, ao propor o sancionamento ora recorrido, apresentou análise pormenorizada dos fatores que levaram ao valor proposto final da multa, como se afere no item 6 do Informe nº 591/2025/COGE/SCO (SEI nº 13837148).
+No que se refere à metodologia adotada, assim se manifestou o corpo técnico: 
+I - Metodologia adotada para aplicação das sanções no presente Pado
+6.4. O art. 39 do Rasa estabelece que a Anatel definirá, por meio de Portaria do Conselho Diretor, as metodologias que orientarão o cálculo do valor base das sanções de multa, em atendimento aos parâmetros estabelecidos no Rasa em especial em seu art. 18, que assim dispõe:
+Art. 18. No cálculo do valor base da multa devem ser considerados os seguintes aspectos:
+I - quantidade de usuários afetados;
+II - período de duração da infração;
+III - a situação econômica e financeira do infrator, em especial sua capacidade de geração de receitas e seu patrimônio;
+IV - a proporcionalidade entre a gravidade da falta e a intensidade da sanção; e
+V - o vulto da vantagem auferida, direta ou indiretamente, pelo infrator.
+6.5. Enquanto não aprovadas pelo Conselho Diretor as metodologias previstas no art. 39 do Rasa, as Superintendências podem adotar metodologias próprias, conforme autorizado pelo § 2º do referido artigo.
+6.6. No entanto, observa-se que as metodologias usualmente aplicadas pela Anatel para casos de descumprimento de obrigações legais e contratuais não se mostram adequadas ao presente caso.
+6.7. Em especial, no presente caso concreto, ao se realizar o cálculo da multa utilizando a metodologia de Descumprimento de Obrigações Contratuais normalmente utilizada, o valor da multa perfez o montante de R$ 4.312,30 (quatro mil trezentos e doze reais e trinta centavos), conforme planilha de cálculo (SEI nº 11310551).
+6.8. O valor inicialmente estimado para a sanção mostra-se insuficiente para cumprir sua função educativa, que é estimular o cumprimento voluntário das normas e a adequada prestação do serviço público. Cabe à Anatel coibir condutas em desacordo com a regulação, preservando as diretrizes legais e incentivando a adesão espontânea às regras.
+6.9. No exercício da discricionariedade conferida para o cálculo das sanções, e com fundamento no poder-dever previsto na LGT, a Agência pode aplicar qualquer das penalidades previstas na legislação setorial. De forma excepcional, conforme o art. 18, §4º, do Rasa, é possível afastar a metodologia padrão quando seu resultado for incompatível com os princípios da razoabilidade e proporcionalidade.
+6.10. Sob a ótica da análise econômica do direito, a aplicação da metodologia usual neste caso não desestimula a conduta infratora, tampouco alcança o interesse público de forma eficaz. O valor calculado é desproporcional frente aos impactos causados e à capacidade financeira da empresa, o que compromete o efeito dissuasório da sanção.
+6.11. Além de evitar excessos, a proporcionalidade impõe à Administração Pública o dever de adotar medidas efetivas para garantir o interesse público. Uma sanção pecuniária de valor muito baixo não inibe a reincidência nem comunica ao mercado a gravidade da conduta.
+6.12. A empresa violou obrigação central ao utilizar de forma indevida os recursos de numeração a ela atribuídos. Essa infração é grave e gera efeitos sociais relevantes, como prejuízos aos usuários, perda de confiança nas comunicações, risco à integridade das redes e impactos sobre a segurança pública, uma vez que o tráfego adulterado é frequentemente usado na prática de crimes contra cidadãos e instituições. A segurança pública é dever do Estado, mas também responsabilidade coletiva, e esses reflexos devem ser considerados na avaliação da infração.
+6.13. Diante disso, é necessário que a sanção aplicada seja proporcional à gravidade dos danos causados e eficaz em desencorajar a repetição da conduta. O interesse público deve prevalecer sobre o interesse privado, e, neste caso, é razoável que a multa seja fixada com base na exceção prevista no art. 18, §4º, do Rasa, conforme transcrição a seguir:
+Art. 18. No cálculo do valor base da multa devem ser considerados os seguintes aspectos:
+(...)
+§ 4º A Anatel poderá afastar, excepcionalmente e de modo fundamentado, a aplicação da metodologia para o cálculo da multa, caso se verifique, no caso concreto, que o valor da sanção não atende aos princípios da razoabilidade e proporcionalidade.
+6.14. O valor da multa deve, portanto, ser proporcional à capacidade econômica da empresa e, ao mesmo tempo, à gravidade da conduta. A Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) já firmou entendimento sobre a possibilidade de afastamento de metodologia para o fim de aplicação da hipótese prevista no art. 18, §4º, do Rasa, quando se verificar, no caso concreto, que o valor da sanção aplicada não atende aos princípios da razoabilidade e da proporcionalidade, conforme constante nos Pareceres nº 00440/2017/PFE-ANATEL/PGF/AGU (Pado nº 53528.000040/2006-72) e nº 00575/2018/PFE-ANATEL/PGF/AGU (Pado nº 53500.003484/2013-05).
+6.15. De maneira similar, o Conselho Diretor entende que as metodologias estabelecidas no âmbito da Agência não retiram do administrador a discricionariedade para avaliar no caso concreto a assertividade da aplicação dos parâmetros estabelecidos nos termos do Voto nº 3/2023/MM (SEI nº 10606198) e do Acórdão nº 197/2023 (SEI nº 10707595):
+Voto nº 3/2023/MM (SEI nº 10606198)
+(...)
+4.34. Ressalto que as metodologias de multa estabelecidas no âmbito da Agência constituem paradigmas para nortear a definição do valor da multa a um segmento de infrações com características comuns ou decorrentes do descumprimento de decisões ou regulamentos específicos, sem, no entanto, retirar do administrador a discricionariedade para avaliar, no caso concreto, o cabimento da aplicação dos parâmetros preestabelecidos.
+4.35. De modo diverso, o administrador estaria de mãos atadas ao verificar situação de nítida injustiça e ausência de persecução do caráter educativo da sanção, ao vislumbrar que o valor imputado é aquém ao necessário para reprimir a conduta contrária à regulamentação e, portanto, incompatível com o interesse público.
+4.36. Diante disso, a fim de que sejam resguardadas a razoabilidade e a proporcionalidade do montante a ser aplicado como sancionamento de determinada infração, tendo em vista a situação econômico-financeira do infrator e a gravidade da falta, nos termos do art. 18, incisos III e IV, do Rasa. O § 4º do mesmo dispositivo estabeleceu que a Agência poderá afastar, no caso concreto, excepcionalmente e de modo fundamentado, a aplicação da metodologia para o cálculo da multa.
+4.37. Ante o aqui exposto, entendo que o administrador, no caso concreto, detinha o poder-dever de afastar a metodologia para obrigações contratuais, ao constatar que a sanção resultaria em valor ínfimo, levando-se em conta a reprovabilidade da conduta e a necessidade de que a sanção surta um efeito pedagógico, bem como a respectiva ROL já citada.
+6.16. O afastamento da metodologia originalmente aplicada, com a adoção da metodologia ora proposta, encontra respaldo em precedente do Conselho Diretor da Anatel, consubstanciado no Acórdão nº 121, de 21 de maio de 2025 (SEI 13732761) proferido em processo de natureza semelhante:
+No caso concreto, o valor da multa resultante da metodologia de cálculo aplicada às obrigações contratuais revelou-se desproporcional à infração cometida, impondo-se o afastamento da metodologia originalmente empregada em razão de sua irrazoabilidade. O Administrador, diante das circunstâncias específicas deste caso, possui o poder-dever de não aplicar determinada metodologia de cálculo da multa quando esta resultar em um montante insuficiente para atender à sua finalidade. Inteligência do art. 18, § 4º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+6.17. Naquela oportunidade, o Colegiado reconheceu que, no caso concreto, o valor da multa resultante da metodologia de cálculo prevista para obrigações contratuais se mostrou desproporcional à infração cometida, justificando a adoção de critério diverso.
+6.18. Tal entendimento aplica-se à hipótese dos autos, nos termos do art. 18, §4º, do Regulamento de Aplicação de Sanções Administrativas – RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+6.19. Em suma, a fórmula de cálculo a ser adotada neste caso pode ser definida pela expressão e elementos a seguir descritos:
+VBase = F%Desc x FGkx √ROL x F x [1 + TDescumprimento]
+VBase: valor-base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;
+F%Desc : percentual de descumprimento da obrigação determinado pelas seguintes escalas:
+1% a 20% de descumprimento: 30%
+21% a 60% de descumprimento: 50%
+61% a 100% de descumprimento: 100%
+FGk: Diferencia a gravidade da infração em “LEVE”, “MÉDIA” ou “GRAVE”, conforme estabelecido no Rasa, considerando-se os pesos 1, 3 e 5 respectivamente
+√ROL: Valor correspondente à Receita Operacional Líquida (ROL) da prestadora sob raiz quadrada;
+FOfensa: peso a ser atribuído a uma infração conforme a ofensa provocada, com variação de 0 a 10;
+TDescumprimento: Fator relativo ao tempo de descumprimento da obrigação calculado em meses determinado pelas seguintes escalas:
+Nenhum: 0%
+0 - 12 meses: 20%
+13 - 24 meses: 40%
+25 -36 meses: 60%
+36 - 48 meses: 80%
+49 - 60 meses: 100%
+De acordo com o que explica a área técnica, a metodologia de multa adotada no presente caso fez-se necessária devido à persecução de um apenamento que fosse condizente com a gravidade dos fatos irregulares verificados. Como dito, o uso de numeração não atribuída, e a sua adulteração, impedindo o rastreamento das chamadas, são infrações que se caracterizam como ação fraudulenta, as quais acarretam prejuízos à devida prestação dos serviços regulados. 
+A sanção administrativa visa punir a conduta ilícita, desestimular a reiteração da prática e educar o infrator, não servindo meramente à reparação de danos. Sua aplicação deve ser proporcional à gravidade da falta e à condição econômica do infrator. A pena administrativa deve funcionar, portanto, como um mecanismo preventivo e inibitório, induzindo o infrator a adequar sua conduta às normas legais.
+Ao utilizar a metodologia antes aplicada a estes casos, qual seja, a de Descumprimento de Obrigações Contratuais, o valor da multa encontrado foi de R$ 4.312,30 (quatro mil, trezentos e doze reais e trinta centavos), como consta na planilha de cálculo (SEI nº 11310551). Por tal motivo, conforme explica a área técnica, e em observância à possibilidade de afastamento da metodologia previsto no art. 18, §4º do RASA, que diz que a Anatel poderá afastar, excepcionalmente e de modo fundamentado, a aplicação da metodologia para o cálculo da multa, caso se verifique, no caso concreto, que o valor da sanção não atende aos princípios da razoabilidade e proporcionalidade, não observo qualquer irregularidade quanto a este ponto questionado. Ressalto ainda que, conforme cita o Informe, o próprio Conselho Diretor, por meio do Acórdão nº 121, de 21 de maio de 2025 (SEI 13732761), já demonstrou sua concordância com tal prática:
+Acórdão nº 121, de 21 de maio de 2025
+Processo nº 53500.037883/2021-71
+Recorrente/Interessado: DATORA TELECOMUNICAÇÕES LTDA.
+CNPJ nº 39.495.486.0001-11
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 943, de 15 de maio de 2025
+EMENTA
+RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. SPOOFING. NÃO IDENTIFICAÇÃO DO ACESSO INDIVIDUAL OU COLETIVO DE ORIGEM OU DESTINO DA CHAMADA. IMPOSSIBILIDADE DE RASTREAMENTO DA CHAMADA. UTILIZAÇÃO DE RECURSOS DE NUMERAÇÃO SEM PRÉVIA ATRIBUIÇÃO DA ANATEL. INFRAÇÕES AO ART. 8º DO REGULAMENTO DO SERVIÇO TELEFÔNICO FIXO COMUTADO - RSTFC E AO ART. 19 DO REGULAMENTO GERAL DE NUMERAÇÃO - RGN. MATERIALIDADE CONFIRMADA. AFASTAMENTO DA METODOLOGIA DE OBRIGAÇÕES CONTRATUAIS PELA DESPROPORCIONALIDADE DA MULTA ALCANÇADA. POSSIBILIDADE. ART. 18, § 4º, DO REGULAMENTO DE APLICAÇÃO DE SANÇÕES ADMINISTRATIVAS - RASA. RETIFICAÇÃO NA FÓRMULA DO FATOR "TEMPO DE DESCUMPRIMENTO" EM BENEFÍCIO À RECORRENTE. REFORMA DE OFÍCIO. AUSÊNCIA DE REQUISITOS PARA APLICAÇÃO DAS HIPÓTESES DE ATENUAMENTO DE PENA PREVISTAS NO ART. 20, INCISOS I, II E V, DO RASA. ATENDIMENTO AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo em desfavor do Despacho Decisório nº 81/2023/COGE/SCO, de 2 de agosto de 2024 (SEI nº 10078462), no qual o Superintendente de Controle de Obrigações - SCO aplicou sanção de multa por violação ao art. 19 do Regulamento Geral de Numeração - RGN, aprovado pela Resolução nº 709, de 27 de março de 2019, e ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC, aprovado pela Resolução nº 426, de 9 dezembro de 2005.
+2. A utilização de recursos de numeração sem prévia atribuição da Anatel constitui infração ao art. 19 do RGN. A falta de identificação do acesso individual ou coletivo de origem ou destino da chamada, bem como a impossibilidade de rastrear a chamada, caracteriza infração ao art. 8º do RSTFC. Configuração da prática de spoofing.
+3. No caso concreto, o valor da multa resultante da metodologia de cálculo aplicada às obrigações contratuais revelou-se desproporcional à infração cometida, impondo-se o afastamento da metodologia originalmente empregada em razão de sua irrazoabilidade. O Administrador, diante das circunstâncias específicas deste caso, possui o poder-dever de não aplicar determinada metodologia de cálculo da multa quando esta resultar em um montante insuficiente para atender à sua finalidade. Inteligência do art. 18, § 4º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+4. Retificação, de ofício, do Fator "Tempo de Descumprimento" na fórmula de cálculo das infrações ao art. 19 do RGN e art. 8º do RSTFC, ajustando-o da faixa de "49 - 60 meses" para a faixa "de 0 - 12 meses", em conformidade com as datas apontadas no Relatório de Fiscalização nº 17/2019/GR04FI3/GR04/SFI.
+5. Ausência dos requisitos para incidência das hipóteses de atenuamento da sanção prevista no art. 20 do RASA.
+6. A proposta de encaminhamento guarda relação com o Objetivo 9 da Agenda 2030, uma vez que os temas de interconexão de redes, numeração e combate e prevenção de fraudes estão alinhados à preocupação com o desenvolvimento de infraestruturas de qualidade, confiáveis, sustentáveis e resilientes, incluindo aquelas de caráter regional e transfronteiriço, com o propósito de apoiar o desenvolvimento econômico e promover o bem-estar humano, com foco no acesso equitativo e a preços acessíveis. Ademais, a proposta também se vincula ao Objetivo 16, que visa fomentar sociedades pacíficas e inclusivas para o desenvolvimento sustentável, assegurar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.
+7. Recurso Administrativo conhecido e não provido. Reforma de Ofício. (grifou-se)
+Ao analisar o Recurso, a área técnica manteve seu posicionamento, nos seguintes termos:
+Informe nº 957/2025/COGE/SCO (SEI nº 14400501)
+4.36. No exercício da discricionariedade conferida para o cálculo das sanções, e com fundamento no poder-dever previsto na LGT, a Agência pode aplicar qualquer das penalidades previstas na legislação setorial. De forma excepcional, conforme o art. 18, §4º, do Rasa, é possível afastar a metodologia padrão quando seu resultado for incompatível com os princípios da razoabilidade e proporcionalidade, que impõe à Administração Pública o dever de adotar medidas efetivas para garantir o interesse público. Uma sanção pecuniária de valor muito baixo não inibe a reincidência nem comunica ao mercado a gravidade da conduta.
+4.37. O afastamento da metodologia originalmente aplicada, com a adoção da metodologia proposta, encontra respaldo em precedente do Conselho Diretor da Anatel, consubstanciado no Acórdão nº 121, de 21 de maio de 2025 (SEI 13732761) proferido em processo de natureza semelhante:
+No caso concreto, o valor da multa resultante da metodologia de cálculo aplicada às obrigações contratuais revelou-se desproporcional à infração cometida, impondo-se o afastamento da metodologia originalmente empregada em razão de sua irrazoabilidade. O Administrador, diante das circunstâncias específicas deste caso, possui o poder-dever de não aplicar determinada metodologia de cálculo da multa quando esta resultar em um montante insuficiente para atender à sua finalidade. Inteligência do art. 18, § 4º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+4.38. Naquela oportunidade, o Colegiado reconheceu que, no caso concreto, o valor da multa resultante da metodologia de cálculo prevista para obrigações contratuais se mostrou desproporcional à infração cometida, justificando a adoção de critério diverso.
+4.39. Diferentemente do que alega a recorrente, no sentido de que sua conduta não causou qualquer dano ou prejuízo para os serviços e para os usuários, a infração cometida pela empresa, consistente na utilização de recursos de numeração de forma indevida, é grave e gera efeitos sociais relevantes, como prejuízos aos usuários, perda de confiança nas comunicações, risco à integridade das redes e impactos sobre a segurança pública, uma vez que o tráfego adulterado é frequentemente usado na prática de crimes contra cidadãos e instituições.
+4.40. Considerando que a segurança pública é “dever do Estado, direito e responsabilidade de todos”, conforme dispõe o art. 144 da Constituição Federal, devem ser considerados, na classificação da infração, os reflexos negativos da conduta sobre esse bem jurídico. (grifos no original)
+Considerando os pontos expostos e as irregularidades objeto deste feito, bem como a necessidade de se perseguir o devido efeito pedagógico da sanção, filio-me à decisão da área técnica, neste quesito, e não acolho a presente alegação. 
+Quanto à Receita Operacional Líquida (ROL) utilizada e, por conseguinte, o enquadramento da empresa no Porte da Prestadora definido no grupo 4, pelo anexo do RASA, a área técnica apresentou os seguintes esclarecimentos, à época do cálculo da sanção:
+Informe nº 591/2025/COGE/SCO (SEI nº 13837148):
+III - Receita Operacional Líquida (ROL) e Porte da empresa
+6.28. As prestadoras de serviços de telecomunicações e as empresas exploradoras de satélite, para fins do Rasa, serão classificadas em Grupos, conforme o porte da empresa. Essa classificação baseia-se na receita operacional líquida anual - ROL por serviço prestado, no âmbito de cada Termo de Autorização, Contrato de Concessão ou Permissão, objetos da apuração da infração.
+6.29. A ROL mais recente disponível da empresa foi a do ano de 2020, cuja fonte foi obtida no SFUST (SEI nº 11310554). Assim, a empresa classifica-se no Grupo 4, ou seja, como prestadora de porte Pequeno.
+Ao revisitar este ponto, o corpo técnico reiterou, no item 4.4 do Informe nº 957/2025/COGE/SCO (SEI nº 14400501) que foi utilizada no cálculo da multa a ROL mais recente disponível no SFUST (SEI nº 11310554), de forma que não há de se falar em qualquer irregularidade nesse sentido. Aduziu que a planilha anexada pela Recorrente (SEI nº 14345382), na qual se aponta para um faturamento anual de R$ 253.268,69 (duzentos e cinquenta e três mil, duzentos e sessenta e oito reais e sessenta e nove centavos) em 2024, não pode ser acatada, uma vez que se trata de documento produzido unilateralmente, não se trata de livro ou documento contábil oficial apto a afastar a informação oficial mais recente da qual dispõe a Agência.
+No que se refere ao porte da empresa para efeitos de seu enquadramento no Grupo 5 do Anexo do RASA que trata deste ponto, a área técnica esclareceu, no item seguinte (4.45) "(..) que o enquadramento da empresa no Grupo 4, isto é, como prestadora de porte Pequeno, não tem o condão de alterar o valor da multa, visto que, a metodologia adotada no caso concreto considerou apenas o valor correspondente à Receita Operacional Líquida (ROL) da prestadora sob raiz quadrada, conforme descrito no item 6.19. Portanto, a alegação de que a Recorrente pertence ao grupo 5, conforme descrito no anexo do Rasa, é irrelevante no presente caso, já que o porte da empresa não foi considerado para fins de cálculo de multa e sim o valor da ROL."
+Assim, não havendo controvérsia acerca da utilização da ROL adotada neste caso, bem como da impossibilidade e desnecessidade de alteração do grupo ao qual pertenceria a Prestadora, afasto a presente razão recursal, adotando inteiramente o presente posicionamento da área técnica. 
+No que tange à razoabilidade e proporcionalidade da multa aplicada, importante ressaltar que estas impõem que a sanção administrativa imposta pela administração pública seja justa, adequada e equilibrada, a fim de se evitar excessos e punições superiores às estritamente necessárias para alcançar o fim público. Por meio de tais pressupostos, faz-se controle do poder discricionário, garantindo-se que a sanção não seja desproporcional à gravidade da infração, considerando aspectos qualitativos e consequências econômicas.
+Dito isto, ao analisar o racional exposto no Informe nº 591/2025/COGE/SCO (SEI nº 13837148), no qual se propôs o valor da multa aplicada, verifico a detida avaliação dos critérios exigidos pelo RASA para a definição da sanção, em especial, no que tange à definição da metodologia de cálculo adotada; Receita Operacional Líquida (ROL) e porte da empresa; circunstâncias agravantes - antecedentes e reincidência específica; circunstâncias atenuantes e, ao cálculo da sanção pecuniária em si. 
+Quanto à natureza e gravidade das infrações, em observância ao que dispõe o art. 9º do RASA, estas foram classificadas como grave, tendo em vista a vantagem diretamente auferida, nos seguintes termos:
+Informe nº 591/2025/COGE/SCO (SEI nº 13837148):
+II- Classificação da gravidade das infrações
+6.20. As infrações por descumprimento do regramento jurídico setorial, são classificadas, segundo sua natureza e gravidade em leve, média e grave, nos termos do art. 9º do Rasa.
+Resolução nº 589, de 7 de maio de 2012
+...
+Art. 9º As infrações são classificadas, segundo sua natureza e gravidade, em:
+I - leve;
+II - média; e
+III - grave.
+(...).
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - vantagem direta ao infrator em decorrência da infração cometida; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+6.21. As infrações sob análise devem ser classificadas como de natureza grave, em razão da vantagem direta auferida pela prestadora, vez que ao utilizar indevidamente números atribuídos a outras operadoras, sem autorização ou vínculo regulatório formal à época dos fatos, a prestadora evita a necessidade de manter infraestrutura ou recursos próprios devidamente atribuídos, além de fraudar o controle da Anatel sobre o uso da numeração pública, que é bem escasso e regulado.
+6.22. O Relatório de Fiscalização em análise identificou chamadas originadas por assinantes da TARIFAR com números originadores não atribuídos a esta prestadora. sendo certo que há indícios consistentes de que a empresa seja uma das operadoras que dão origem ao tráfego irregular. A geração de tráfego adulterado na rede da prestadora ocorre, portanto, no desenvolvimento de atividades econômicas que visam o lucro, sendo que a prestadora obtém receita indevida com o tráfego gerado.
+6.23. A conduta da prestadora deve, portanto, ser considerada grave, pela obtenção direta de vantagem econômica em decorrência da infração, materializada pela receita auferida com as chamadas irregulares.
+6.24. Verifica-se também que a infração compromete a segurança pública, uma vez que o tráfego adulterado é frequentemente utilizado na prática de crimes, como fraudes, podendo gerar prejuízos diversos aos usuários e, inclusive, a instituições públicas.
+6.25. A segurança pública é “dever do Estado, direito e responsabilidade de todos”, conforme dispõe o art. 144 da Constituição Federal, devendo ser considerados, na classificação da infração, os reflexos negativos da conduta sobre esse bem jurídico.
+6.26. O art. 18, §2º, do Rasa estabelece que o valor base da multa não deve ser inferior ao dobro da vantagem obtida, direta ou indiretamente, pelo infrator. No entanto, no presente caso, não é possível mensurar com precisão essa vantagem, uma vez que a fiscalização identificou apenas as chamadas que utilizaram recursos de numeração irregulares, sem conseguir determinar aquelas efetivamente ligadas à prática de fraudes.
+6.27. Adicionalmente, a técnica de adulteração do número do chamador não configura, por si só, uma infração, podendo ser empregada para diferentes finalidades, lícitas ou ilícitas. Considerando que, neste caso, não foi possível identificar quais chamadas foram de fato utilizadas para práticas fraudulentas, conclui-se que, embora haja vantagem direta obtida pela infratora, seu valor é incerto. Dessa forma, não se mostra viável adotar o art. 18, §2º, do Rasa como parâmetro para definição da sanção.
+Tendo em vista os benefícios advindos da prática infrativa pela Recorrente, mencionados pela área técnica, me alinho à classificação adotada.
+No que se refere à avaliação das circunstâncias agravantes e atenuantes eventualmente incidentes, adiro à análise feita no item 6.30 e no 6.31, respectivamente, do Informe técnico, no qual não se verificou a existência de antecedentes em desfavor da infratora, nem casos de reincidência específica nos 5 (cinco) anos que antecede a data de instauração do presente Pado, bem como não foram observados quaisquer elementos nos autos que se coadunassem às hipóteses de atenuação da pena de multa previstas no RASA.
+Quanto ao cálculo da multa em si, apresentou-se ainda no Informe nº 591/2025/COGE/SCO (SEI nº 13837148) as seguintes informações:
+VI - Cálculo da sanção pecuniária
+6.32. Passa-se, neste ponto, a realizar discriminadamente o cálculo da multa a ser aplicada, considerando-se as premissas estabelecidas na metodologia descrita na presente análise.
+6.33. Considerando que, por meio de duas condutas, a prestadora descumpriu suas obrigações gerais, o valor base para a sanção de multa deve ser calculado isoladamente para cada uma delas. Nesse sentido, serão descritos os elementos da metodologia e sua fórmula de aplicação.
+a) Uso dos recursos de numeração não autorizados
+6.34. Percentual de Descumprimento: Conforme item 8.4.2 do Relatório de Fiscalização nº 42/2022/GR04FI3/GR04/SFI (SEI nº 9626511), 99,9% das chamadas originadas por clientes da prestadora no dia 05/01/2022, continham, na identidade do código de acesso chamador (Número do Assinante A), um recurso de numeração pertencente a outra prestadora que não a empresa interessada.
+6.35. Desta forma, como o percentual de descumprimento foi de 99,9%, na escala da metodologia, ela se enquadra na seguinte faixa: 61% a 100% de descumprimento: 100%.
+6.36 Fator de Ofensa: Como esta infração ofende diretamente a segurança pública, visto que a adulteração dos recursos de numeração é usada frequentemente para a prática de crimes em desfavor dos usuários, exige-se a imposição de fator de ofensa correspondente a 10.
+6.37. Tempo de Descumprimento: as infrações foram constatadas em uma data específica, o dia 05/01/2022, de acordo com o item 9.2. do Relatório de Fiscalização. Desta forma, o fator relativo ao tempo de descumprimento da obrigação calculado em meses será entre 0 a 12 meses (20%), em sintonia com a decisão do Conselho Diretor, adotada por meio do Acórdão nº 121, de 21 de maio de 2025 (SEI nº 13732761), no sentido de que a ausência de provas da continuidade das infrações, após o registro pela fiscalização, não justifica a suposição de que a prática irregular perdurou até a data do sancionamento (item 5.43 e ss. da Análise nº 31/2025/VA (SEI nº 13288355).
+b) Impossibilidade de identificar acesso de origem ou destino da chamada e incapacidade de rastreá-la
+6.38. Percentual de Descumprimento: Conforme item 9.2 do Relatório de Fiscalização nº 42/2022/GR04FI3/GR04/SFI (SEI nº 9626511), a análise da amostra indicou que, em 99,9% dos casos, os números originadores recebidos nos destinos das chamadas não correspondem à identificação dos clientes que originaram as chamadas. Portanto, o descumprimento desta obrigação não é parcial. Ou seja, o descumprimento é praticamente integral, o que leva ao Fator de Descumprimento de 100%.
+6.39. Fator de Ofensa: Esta infração ofende a segurança pública, visto que a adulteração dos recursos de numeração é usada frequentemente para a prática de crimes em desfavor dos usuários, exigindo a imposição de fator de ofensa correspondente a 10.
+6.40. Tempo de Descumprimento: as infrações foram constatadas em uma data específica, o dia 05/01/2022, de acordo com o item 9.2. do Relatório de Fiscalização. Desta forma, o fator relativo ao tempo de descumprimento da obrigação calculado em meses será entre 0 a 12 meses (20%), em sintonia com a decisão do Conselho Diretor, adotada por meio do Acórdão nº 121, de 21 de maio de 2025 (SEI nº 13732761), no sentido de que a ausência de provas da continuidade das infrações, após o registro pela fiscalização, não justifica a suposição de que a prática irregular perdurou até a data do sancionamento (item 5.43 e ss. da Análise nº 31/2025/VA (SEI nº 13288355).
+6.41. Nessa linha, com vistas ao estabelecimento do quantum debeatur, deve ainda o administrador trilhar pelos ditames dos artigos 17 a 21 da Resolução nº 589, de 7 de maio de 2012, que aprova o Regulamento de Aplicação de Sanções Administrativas - Rasa, em atendimento ao princípio da proporcionalidade.
+6.42. De acordo com o art. 21 do Rasa, incidirão sobre o valor base da multa as circunstâncias agravantes constantes em seu art. 19 e, sobre este resultado, as atenuantes estabelecidas no art. 20 deste Regulamento.
+6.43. Superada a etapa dos parâmetros e critérios para definição das sanções, passa-se à etapa da aplicação de sanção. Ante o exposto, a multa a ser aplicada à Prestadora é de R$ 178.843,26 (cento e setenta e oito mil oitocentos e quarenta e três reais e vinte e seis centavos), conforme Planilha (SEI nº 12496234):
+ Conduta
+ | 
+ Enquadramento
+ | 
+ Natureza
+ | 
+ Agrav.
+ | 
+ Aten.
+ | 
+ Reinc. Espec.
+ | 
+ Valor da multa
+ | 
+ Uso de recursos de numeração não autorizados
+ | 
+ art. 19 do RGN
+ | 
+ Grave
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ R$ 89.421,63
+ | 
+ Impossibilidade de identificar acesso de origem ou destino da chamada e incapacidade de rastreá-la
+ | 
+ art. 8 da RSTFC
+ | 
+ Grave
+ | 
+ Não
+ | 
+ Não
+ | 
+ Não
+ | 
+ R$ 89.421,63
+ | 
+ Valor da Multa
+ | 
+ R$178.843,26
+ | 
+Por não verificar qualquer necessidade de ajuste nos fatores de cálculo apresentados, e considerando as demais razões expostas nesta Análise, sugiro o conhecimento e não provimento do Recurso Administrativo interposto, devendo-se manter a sanção de multa aplicada, no valor tota de R$178.843,26 (cento e setenta e oito mil, oitocentos e quarenta e três reais e vinte e seis centavos), em face dos descumprimentos ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019. 
+III - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Considerando-se as razões expostas nesta Análise, proponho:
+conhecer e negar provimento ao recurso administrativo interposto por TARIFAR TELECOM E SERVIÇOS EIRELI, inscrita no CNPJ/MF sob nº 33.761.868/0001-63, em face de decisão exarada por meio do Despacho Decisório nº 497/2025/COGE/SCO, de 21 de agosto de 2025 (SEI nº 13837868), devendo-se manter a sanção de multa aplicada, no valor total de R$178.843,26 (cento e setenta e oito mil, oitocentos e quarenta e três reais e vinte e seis centavos), por descumprimentos ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado (RSTFC), aprovado pela Resolução nº 426, de 9 de dezembro de 2005, e ao art. 19 do Regulamento Geral de Numeração (RGN), aprovado pela Resolução nº 709, de 27 de março de 2019;
+determinar à Superintendência de Controle de Obrigações (SCO) que apure, em autos apartados, eventual prestação clandestina do Serviço Telefônico Fixo Comutado (STFC) pela Recorrente, considerando-se haver indícios de possível desenvolvimento de atividade não outorgada de telecomunicações, a qual, caso confirmada, enseja sancioanamento e deve ser apurada pelo Ministério Público Federal (MPF), de acordo com o que dispõe a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), em seus artigos 183, 184 e 185. 
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:31, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15021628 e o código CRC 93D1AB44.
+ | 
+Referência: Processo nº 53500.341740/2022-42 | 
+SEI nº 15021628 |

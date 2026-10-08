@@ -1,0 +1,39 @@
+SEI/ANATEL - 15218897 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 32, de 23 de fevereiro de 2026
+Processo nº 53500.342831/2022-03
+Recorrente/Interessado: AGERA TELECOMUNICAÇÕES S.A.
+CNPJ nº 01.009.876/0001-61
+Conselheiro(a) Relator(a): Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. USO DE RECURSOS DE NUMERAÇÃO SEM PRÉVIA ATRIBUIÇÃO E COMPROMETIMENTO DA RASTREABILIDADE DE CHAMADAS. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por AGERA TELECOMUNICAÇÕES S.A. contra o Despacho Decisório nº 641/2025/COGE/SCO, que aplicou multa de R$ 466.822,80 (quatrocentos e sessenta e seis mil, oitocentos e vinte e dois reais e oitenta centavos) por descumprimento do art. 19 do Regulamento Geral de Numeração - RGN e do art. 8º do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC.
+2. Fato relevante. Fiscalização identificou divergência entre números originadores registrados pela Prestadora e os recebidos nas redes de destino, com utilização de recursos de numeração atribuídos a outra prestadora e alteração de número de origem no encaminhamento do tráfego.
+3. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO concluiu pela caracterização das infrações ao art. 19 do RGN e ao art. 8º do RSTFC e afastou a infração ao art. 65-M do Regulamento dos Serviços de Telecomunicações - RST.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se houve utilização de recursos de numeração sem prévia atribuição pela Anatel; (ii) saber se houve descumprimento do dever de assegurar a rastreabilidade integral das chamadas; e (iii) saber se a multa e a metodologia de cálculo adotada observam a proporcionalidade e a razoabilidade.
+III. RAZÕES DE DECIDIR
+1. A utilização de recursos de numeração depende de prévia atribuição da Agência e a Prestadora não pode empregar recursos atribuídos a outra prestadora.
+2. O art. 8º do RSTFC impõe dever de rastreabilidade integral das chamadas ao longo das redes de suporte e a alteração do número de origem em qualquer ponto da rede compromete a identificação do terminal originador.
+3. A fiscalização confrontou Call Detail Record - CDR da Prestadora com CDR obtidos nas redes de destino e demonstrou divergências relevantes, o que evidenciou a alteração do número originador no processamento da Recorrente.
+4. A alegação de atuação como Prestadora intermediária em contrato de transporte não afasta a responsabilização quando a instrução técnica identifica a alteração na própria rede da Recorrente.
+5. A tipificação referente ao art. 65-M do RST não foi mantida na decisão de primeira instância.
+6. A adoção da Metodologia de Obrigações Gerais e Contratuais mostrou-se adequada para fins de proporcionalidade e razoabilidade, sendo dispensável estimar vantagem auferida quando não for possível quantificá-la com precisão.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: “1. A utilização de recursos de numeração atribuídos a outra prestadora configura infração ao art. 19 do RGN. 2. A alteração do número de origem que inviabiliza a rastreabilidade integral das chamadas configura infração ao art. 8º do RSTFC. 3. A responsabilização exige demonstração técnica do ponto de alteração e o confronto de CDR pode evidenciar a ocorrência na rede da prestadora autuada. 4. A Metodologia de Obrigações Gerais e Contratuais pode ser adotada quando se mostrar proporcional e razoável, sendo desnecessária a estimativa de vantagem quando não for possível quantificá-la.”
+Dispositivos relevantes citados: CF/1988, art. 144; Lei nº 9.784/1999; Lei nº 9.472/1997, arts. 146 e 150; Resolução nº 426/2005 - RSTFC, art. 8º; Resolução nº 589/2012 - RASA, art. 18, § 4º, e art. 17-A, § 2º; Resolução nº 612/2013 - Regimento Interno da Anatel - RIA, arts. 115, § 1º, “b”, e 116; Resolução nº 709/2019 - RGN, art. 19.
+Jurisprudência relevante citada: Anatel, Acórdão nº 121, de 21 de maio de 2025, Processo nº 53500.037883/2021-71, Conselho Diretor, Relator Conselheiro Vicente Bandeira de Aquino Neto, j. 15.05.2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 14/2026/CL (SEI nº 15058233), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15218897 e o código CRC 644454F0.
+ | 
+Referência: Processo nº 53500.342831/2022-03 | 
+SEI nº 15218897 |

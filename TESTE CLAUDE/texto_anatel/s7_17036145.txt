@@ -1,0 +1,124 @@
+SEI/ANATEL - 15226009 - Análise
+Boletim de Serviço Eletrônico em 12/03/2026
+Análise nº 20/2026/OP
+Processo nº 53554.001759/2020-61
+Interessado: MAX TELECOMUNICACOES LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14189697) interposto pela MAX TELECOMUNICAÇÕES LTDA., CNPJ nº 07.793.212/0001-12, contra o Despacho Decisório nº 333/2025/COGE/SCO (SEI nº 13603394), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2019.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. FUST. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por MAX TELECOMUNICAÇÕES LTDA contra o Despacho Decisório nº 333/2025/COGE/SCO, que julgou procedentes lançamentos de créditos tributários de FUST referentes ao exercício de 2019.
+ Alegações. Nulidade do lançamento por apuração por presunção. Cobrança de FUST sobre receitas que não seriam de serviço de telecomunicações. Inconstitucionalidade do FUST por violação ao art. 155, § 3º, da CF/1988.
+ Encaminhamento. Informe técnico sugeriu o conhecimento e o não provimento do recurso.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se há nulidade no lançamento do crédito tributário de FUST; (ii) saber se a base de cálculo considerou receitas não decorrentes de prestação de serviços de telecomunicações; e (iii) saber se é possível afastar a exigência por alegação de inconstitucionalidade no âmbito do processo administrativo fiscal.
+III. RAZÕES DE DECIDIR
+ A instrução do processo administrativo fiscal observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+ O recurso atendeu aos requisitos de admissibilidade previstos na Portaria nº 1355/2019 e deve ser conhecido.
+ O lançamento observou os requisitos do art. 142 do CTN e dos arts. 10, 11 e 59 do Decreto nº 70.235/1972.
+ As notificações de lançamento indicaram a obrigação prevista no art. 6º, IV, da Lei nº 9.998/2000 e registraram a inexatidão ou falha no recolhimento, com referência aos arts. 149 e 150 do CTN.
+ Os relatórios de fiscalização motivaram a exigência e detalharam fato gerador, matéria tributável, montante devido, sujeito passivo e penalidade, sem prejuízo ao contraditório e à ampla defesa.
+ A base de cálculo do FUST abrange receitas de prestação de serviços de telecomunicações nos regimes público e privado, com exclusão de ICMS, PIS e Cofins.
+ As alegações da recorrente não afastaram a presunção de legalidade e veracidade dos relatórios de fiscalização, diante da ausência de prova, nos termos do art. 36 da Lei nº 9.784/1999 e do art. 85 do Regimento Interno da Anatel.
+ O processo administrativo fiscal não admite afastamento de lei ou decreto por fundamento de inconstitucionalidade, nos termos do art. 26-A do Decreto nº 70.235/1972.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: “1. O lançamento de crédito tributário de FUST é válido quando observa os requisitos do art. 142 do CTN e dos arts. 10, 11 e 59 do Decreto nº 70.235/1972. 2. A presunção de legitimidade dos relatórios de fiscalização subsiste quando o interessado não produz prova dos fatos que alega, nos termos do art. 36 da Lei nº 9.784/1999 e do art. 85 do Regimento Interno da Anatel. 3. No âmbito do processo administrativo fiscal, é vedado afastar lei ou decreto sob fundamento de inconstitucionalidade, nos termos do art. 26-A do Decreto nº 70.235/1972.”
+Dispositivos relevantes citados: CF/1988, art. 155, § 3º; CTN (Lei nº 5.172/1966), arts. 142, 149 e 150; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.784/1999, art. 36; Decreto nº 70.235/1972, arts. 10, 11, 26-A e 59; Resolução nº 612/2013 (Regimento Interno da Anatel), art. 85.
+Jurisprudência relevante citada: Anatel, Conselho Diretor, Acórdão nº 157/2024, Reunião nº 934, j. 04.07.2024.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+Acórdão nº 157, de 10 de julho de 2024 (SEI nº 12257417).
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14189697) interposto pela MAX TELECOMUNICAÇÕES LTDA., CNPJ nº 07.793.212/0001-12, contra o Despacho Decisório nº 333/2025/COGE/SCO (SEI nº 13603394), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2019.
+Em 14/07/2025, conforme Certidão de Intimação Cumprida (SEI nº 14005607), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 1096/2025/COGE/SCO (SEI nº 14707494), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 896/2025/COGE/SCO (SEI nº 14707772), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 835/2025 (SEI nº 14707780).
+Fui designado relator da matéria por meio do sorteio realizado em 09/02/2026, nos termos da Certidão de Distribuição SEI nº 15156764.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese: (i) nulidade do lançamento em face da apuração do tributo com base em mera presunção; (ii) ilegal apuração do fato gerador do FUST sobre serviços que não seriam prestação de serviço de telecomunicações; (ii) inconstitucionalidade do FUST por violação ao artigo 155, § 3º, da Constituição Federal.
+Constata-se que foram seguidos e observados os requisitos fixados no art. 142 da Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN), combinado com os arts. 10, 11 e 59 do Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o processo administrativo fiscal, a seguir transcritos:
+Código Tributário Nacional
+Art. 142. Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível.
+Parágrafo único. A atividade administrativa de lançamento é vinculada e obrigatória, sob pena de responsabilidade funcional.
+Decreto nº 70.235/72
+Art. 10. O auto de infração será lavrado por servidor competente, no local da verificação da falta, e conterá obrigatoriamente:
+I - a qualificação do autuado;
+II - o local, a data e a hora da lavratura;
+III - a descrição do fato;
+IV - a disposição legal infringida e a penalidade aplicável;
+V - a determinação da exigência e a intimação para cumpri-la ou impugná-la no prazo de trinta dias;
+VI - a assinatura do autuante e a indicação de seu cargo ou função e o número de matrícula.
+Art. 11. A notificação de lançamento será expedida pelo órgão que administra o tributo e conterá obrigatoriamente:
+I - a qualificação do notificado;
+II - o valor do crédito tributário e o prazo para recolhimento ou impugnação;
+III - a disposição legal infringida, se for o caso;
+IV - a assinatura do chefe do órgão expedidor ou de outro servidor autorizado e a indicação de seu cargo ou função e o número de matrícula.
+Parágrafo único. Prescinde de assinatura a notificação de lançamento emitida por processo eletrônico.
+Art. 59. São nulos:
+I - os atos e termos lavrados por pessoa incompetente;
+II - os despachos e decisões proferidos por autoridade incompetente ou com preterição do direito de defesa. (Grifou-se)
+As Notificações de Lançamento referem-se expressamente ao descumprimento da obrigação estabelecida no art. 6º, inciso IV, da Lei nº 9998/2000. Este dispositivo legal determina a obrigação de recolhimento da contribuição sobre as receitas provenientes da prestação dos serviços de telecomunicações, demonstrando claramente qual tributo é cobrado e qual comando legal foi infringido. Além disso, a Notificação informa que o lançamento ocorreu devido à inexatidão ou falha no recolhimento durante o lançamento espontâneo, conforme os artigos 149 e 150 do CTN.
+De igual sorte, há que ser consignado que os Relatórios de Fiscalização foram devidamente motivados, asseguraram prazo legal para impugnação e descreveram de forma clara o fato gerador, a matéria tributável, o montante devido, o sujeito passivo e a penalidade aplicável. Não houve prejuízo ao contraditório e à ampla defesa.
+Portanto, não há nulidade nos lançamentos, pois foram respeitados todos os requisitos legais e garantido o pleno direito de defesa à Recorrente.
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou nos autos acerca da regularidade dos valores identificados como declarados a menor do que aqueles efetivamente devidos.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Ressalte-se que para o Fisco não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações, é necessário haver: notas fiscais, contratos de locação, contratos de prestação de serviços, recibos, etc, ou qualquer outro comprovante idôneo de tal transação comercial. É necessário haver a verdade material. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+A empresa alegou que a exigência da contribuição ao FUST padeceria de vício de inconstitucionalidade.
+O âmbito administrativo não é o foro adequado para a discussão de questões atinentes à inconstitucionalidade de dispositivos legais, sendo competência exclusiva do Poder Judiciário a análise de tal matéria. Nesse sentido, o art. 26-A do Decreto nº 70.235/1972 estipula que, "no âmbito do processo administrativo fiscal, fica vedado aos órgãos de julgamento afastar a aplicação ou deixar de observar tratado, acordo internacional, lei ou decreto, sob fundamento de inconstitucionalidade".
+Sobre o tema, a PFE/Anatel manifestou-se por meio do Parecer nº 00064/2017/PFE­ANATEL/PGF/AGU, de 8 de fevereiro de 2017 (SEI nº 1180472), nos autos do Processo nº 53500.026551/2009-75, nos seguintes termos:
+"47. No que concerne ao questionamento acerca da constitucionalidade/legalidade da CIDE-FUST e dos dispositivos que preveem a multa de mora, a discussão não é cabível no âmbito deste processo administrativo, uma vez que a Anatel não detém a prerrogativa de afastar o cumprimento de norma em vigor.
+48. Na esfera tributária em particular, tal competência é privativa do Poder Judiciário, conforme se depreende do disposto no art. 26-A do Decreto nº 70.235/1972:
+Art. 26-A. No âmbito do processo administrativo fiscal, fica vedado aos órgãos de julgamento afastar a aplicação ou deixar de observar tratado, acordo internacional, lei ou decreto, sob fundamento de inconstitucionalidade.
+49. Portanto, o âmbito administrativo não é o foro adequado para a discussão de questões atinentes à inconstitucionalidade de dispositivos legais, sendo competência exclusiva do Poder Judiciário a análise de tal matéria.
+50. De qualquer maneira, cabe salientar que, quanto à multa de mora prevista no art. 8º, § 1º, do Decreto nº 3.624/2000, a Advocacia-Geral da União, com base no Parecer AGU/SF/13/2008 e no Despacho nº 444/2008, da Consultoria-Geral da União, aprovado pelo Advogado-Geral da União, firmou entendimento no sentido de que não há ilegalidade na cobrança da referida multa pela Anatel. Desse modo, a multa de mora não deve ser afastada, devendo ser respeitado o disposto no art. 63, § 2º , da Lei nº 9.430/1996, quanto à parte do crédito cuja exigibilidade se encontra suspensa por determinação judicial."
+O Conselho Diretor já deliberou nesse sentido:
+Acórdão nº 157, de 10 de julho de 2024
+Processo nº 53524.002281/2011-53
+Recorrente/Interessado: AXTELECOM LTDA
+CNPJ nº 00.538.593/0001-44
+Conselheiro Relator: Artur Coimbra de Oliveira
+Fórum Deliberativo: Reunião nº 934, de 4 de julho de 2024
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL (PAF). FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). EXERCÍCIOS FINANCEIROS DE 2007 E 2008. PRESUNÇÃO DE VERACIDADE DO ALEGADO PELOS FISCAIS. ALEGAÇÃO DE INCONSTITUCIONALIDADE. FORO INADEQUADO. RECURSO CONHECIDO E NÃO PROVIDO.
+1. O não cumprimento das obrigações tributárias relativas ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), sujeito a lançamento por homologação, resulta em lançamento, de ofício, dos valores não recolhidos.
+2. As afirmações dos agentes públicos de fiscalização da Anatel implicam na presunção de legitimidade e, em consequência, de presunção relativa de veracidade, que, se não é absoluta, é persistente, somente sendo ilididas mediante prova em contrário.
+3. O âmbito administrativo não é foro adequado para discussão de questões atinentes à inconstitucionalidade de normas, nos termos do art. 26-A do Decreto nº 70.235, de 6 de março de 1972.
+4. Pelo conhecimento e não provimento do Recurso.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 48/2024/AC (SEI nº 12152023), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 12/03/2026, às 17:39, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15226009 e o código CRC CE7CFC7B.
+ | 
+Referência: Processo nº 53554.001759/2020-61 | 
+SEI nº 15226009 |

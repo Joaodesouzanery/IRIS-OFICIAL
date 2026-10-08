@@ -1,0 +1,65 @@
+SEI/ANATEL - 15146065 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 16/2026/AF
+Processo nº 53500.077713/2024-72
+Interessado: SISTEMA DE COMUNICACAO PANTANAL S/C LTDA, Grupo Claro
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso administrativo interposto contra o Despacho Decisório nº 286/2024/COGE/SCO, do Superintendente de Controle de Obrigações, que negou provimento a requerimento do Sistema de Comunicação Pantanal S/C Ltda. para obrigar a Claro S.A. ao carregamento de canais no formato High Definition Television (HDTV).
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO REGULATÓRIO. recurso. seac. carregamento de canais. PRORROGAÇÃO DE PRAZO PARA SUBMISSÃO AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+1. Recurso administrativo interposto contra o Despacho Decisório nº 286/2024/COGE/SCO, do Superintendente de Controle de Obrigações, que negou provimento a requerimento do Sistema de Comunicação Pantanal S/C Ltda. para obrigar a Claro S.A. ao carregamento de canais no formato High Definition Television (HDTV).
+2. Processo incluído automaticamente na pauta da Reunião do Conselho Diretor, conforme previsto no Regimento Interno da Anatel.
+3. Relevância e complexidade do tema justificam a necessidade de prorrogação do prazo para submissão da matéria ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a prestadora do Serviço de Acesso Condicionado (SeAC) está obrigada a realizar o carregamento dos canais do Sistema de Comunicação Pantanal S/C Ltda. (Rede Brasil de Televisão) em tecnologia High Definition Television (HDTV), bem como a disponibilizá-los no line up a partir da numeração 500, quando demonstrado que o sinal é entregue pela radiodifusora em tecnologia digital compatível e que outros canais de radiodifusão são ofertados aos assinantes tanto em HDTV quanto em SDTV, à luz do disposto no art. 32 da Lei nº 12.485/2011, do art. 62 do Regulamento do SeAC e do princípio da isonomia.
+III. RAZÕES DE DECIDIR
+1. O processo foi incluído automaticamente na pauta da Reunião do Conselho Diretor, nos termos do art. 127, § 3º, do Regimento Interno da Anatel.
+2. A matéria apresenta relevância e complexidade, exigindo análise aprofundada.
+3. O Regimento Interno da Anatel permite a prorrogação do prazo para submissão da matéria ao Conselho Diretor, mediante justificativa.
+IV. DISPOSITIVO E TESE
+Prorrogação do prazo para submissão da matéria ao Conselho Diretor por mais 120 dias.
+Dispositivos relevantes citados: Resolução nº 612, de 2013, art. 127, § 3º.
+REFERÊNCIAS
+BRASIL. Lei nº 12.485, de 12 de setembro de 2011. Dispõe sobre a comunicação audiovisual de acesso condicionado. Diário Oficial da União: Brasília, DF, 13 set. 2011.
+Agência Nacional de Telecomunicações (Brasil). Resolução nº 581, de 26 de março de 2012. Aprova o Regulamento do Serviço de Acesso Condicionado (Regulamento do SeAC). Diário Oficial da União: Brasília, DF, 28 mar. 2012.
+Agência Nacional de Telecomunicações (Brasil). Resolução nº 612, de 29 de abril de 2013. Aprova o Regimento Interno da Anatel (RIA). Diário Oficial da União: Brasília, DF, 30 abr. 2013.
+Agência Nacional de Telecomunicações (Brasil). Despacho Decisório nº 22/2023/PRRE/SPR, de 15 de fevereiro de 2024. Brasília, DF: Anatel, 2024.
+Agência Nacional de Telecomunicações (Brasil). Despacho Decisório nº 300/2024/COGE/SCO, de 18 de outubro de 2024. Brasília, DF: Anatel, 2024.
+RELATÓRIO
+Em 19 de setembro de 2024, o Sistema de Comunicação Pantanal S/C Ltda. (REDE BRASIL DE TELEVISÃO) protocolizou petição (SEI nº 12165659) solicitando que a Anatel determine à Claro S.A. (CLARO), como prestadora do Serviço de Acesso Condicionado (SeAC), o carregamento de seus canais no formato High Definition Television (HDTV) e a sua disponibilização no line up1 a partir da numeração 500 (quinhentos).
+de acordo com a REDE BRASIL DE TELEVISÃO, a CLARO haveria cumprindo apenas parcialmente o Despacho Decisório nº 22/2023/PRRE/SPR, de 2024 (SEI nº 11269475), que determinou o carregamento obrigatório do rol de conjuntos de estações geradoras ou retransmissoras do serviço de radiodifusão de sons e imagens que atendem o art. 52, §2º, do Regulamento do SeAC, observando o disposto no art. 32, §6º, da Lei do SeAC;
+tal cumprimento parcial estaria caracterizado porque seus canais são carregados pela CLARO apenas em Standart Definition Television (SDTV), enquanto que os de outras radiodifusoras são disponibilizadas aos assinantes em High Definition Television (HDTV) e também e SDTV;
+segundo a peticionária, a ausência de carregamento nos moldes solicitados estaria ferindo o princípio constitucional da isonomia e a legislação de regência.
+A partir da referida petição, a Área Técnica exarou o Informe nº 417/2024/COGE/SCO (SEI nº 12607515), de 20 de setembro de 2024, e entendeu que a demanda da REDE BRASIL DE TELEVISÃO não seria cabível porque o entendimento consolidado na Agência é o de que a prestadora do SeAC cumpre o disposto no art. 32, §6º, da Lei do SeAC, ao carregar o canal em qualquer tecnologia digital e, uma vez escolhido padrão, no caso SDTV, deve respeitar a ordem numérica virtual sequencial respectiva. 
+Fundamentado na instrução técnica, o Superintendente de Controle de Obrigações expediu o Despacho Decisório nº 286/2024/COGE/SCO (SEI nº 12607527) na mesma data e negou provimento ao pedido da REDE BRASIL DE TELEVISÃO.
+Uma vez notificada, a REDE BRASIL DE TELEVISÃO interpôs recurso administrativo contra o Despacho Decisório nº 286/2024/COGE/SCO alegando que:
+os canais de outras radiodifusoras são disponibilizadas aos assinantes da CLARO tanto em HDTV como em SDTV e que a falta de isonomia de oferta seria uma afronta ao art. 32 da Lei do SeAC;
+a isonomia entre as geradoras e retransmissoras está diretamente relacionada com a igualdade de tratamento no tocante a qualidade distribuída e a ordem no line up na mesma plataforma de distribuição;
+o art. 62 do Regulamento do SeAC evidencia que a geradora poderá, a seu critério, exigir que a sua programação transmitida com tecnologia digital seja gratuitamente disponibilizada aos assinantes da operadora do SeAC, com a mesma tecnologia, desde que a transmissão empregada pela operadora na recepção assim permita, o que seria a hipótese do presente caso, uma vez que os sinais da REDE BRASIL DE TELEVISÃO são entregues em tecnologia HD e a CLARO tem condições de receber e ofertar estes sinais na mesma tecnologia aos seus assinantes.
+Em 18 de outubro de 2024, o Superintendente de Controle de Obrigações emitiu o Despacho Decisório nº 300/2024/COGE/SCO (SEI nº 12691580) e, com fundamento no Informe nº 438/2024/COGE/SCO (SEI nº 12691574), decidiu conhecer do recurso administrativo interposto e encaminhar os autos ao Conselho Diretor da Agência para análise de mérito, nos termos do art. 115, §1º, “b” do RIA.
+Na mesma data, por meio da Matéria para Apreciação do Conselho Diretor (MACD) nº 847/2024 (SEI nº 12691584), o Superintendente de Controle de Obrigações encaminhou o processo ao Superintendente Executivo para deliberação do Conselho Diretor da Anatel.
+Em 31 de outubro de 2024, o Superintendente Executivo, por meio de Despacho Ordinatório (SEI nº 12815845), encaminhou o processo para a Secretaria do Conselho Diretor da Anatel.
+Distribuiu-se o processo para minha relatoria em 4 de novembro de 2024 (SEI nº 12830252).
+Em 6 de dezembro de 2024, no âmbito da relatoria, foi encaminhada diligência, por meio do Ofício nº 267/2024/AF-ANATEL (SEI nº 12957632), à Superintendente de Controle de Obrigações, para oferecer a Claro S.A. a oportunidade de contrarrazões e de apresentação de justificativa para o não carregamento dos canais do Sistema de Comunicação Pantanal S/C Ltda. em tecnologia HDTV. 
+Tal providência foi integralmente cumprida com as contrarrazões (SEI nº 13074246) juntadas aos autos e com a complementação instrutória da Superintendência de Controle de Obrigações por meio do Informe nº 494/2024/COGE/SCO (SEI nº 13092205).
+É o relatório.
+FUNDAMENTAÇÃO
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo será automaticamente incluído na pauta da 950ª Reunião deste Colegiado, de 12 de fevereiro de 2025.
+Diante da relevância e complexidade da matéria, bem como do papel essencial da Anatel de promover a correta regulação dos serviços de telecomunicações, dentre outros temas abarcados no presente processo, entende-se não ser possível a deliberação da matéria na data prevista regimentalmente, devendo-se prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Submete-se, assim, proposta de nova prorrogação do prazo de relatoria por mais 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto por prorrogar o prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+notas
+1 é a posição ou numeração dos canais dentro do sistema da prestadora do SeAC, facilitando o acesso pelo controle remoto ou guia eletrônico de programação (EPG).
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/02/2026, às 16:34, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15146065 e o código CRC 94859863.
+ | 
+Referência: Processo nº 53500.077713/2024-72 | 
+SEI nº 15146065 |

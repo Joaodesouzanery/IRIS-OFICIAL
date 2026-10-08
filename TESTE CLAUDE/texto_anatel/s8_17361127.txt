@@ -1,0 +1,39 @@
+SEI/ANATEL - 15522820 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 114, de 22 de abril de 2026
+Processo nº 53500.000026/2023-88
+Recorrente/Interessado: BIG TELCO TELECOMUNICAÇÕES LTDA.
+CNPJ nº 05.597.358/0001-67
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. INTEMPESTIVIDADE. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por BIG TELCO TELECOMUNICAÇÕES LTDA. contra decisão que não conheceu recurso anterior por intempestividade.
+2. O Recurso original foi apresentado fora do prazo legal, após intimação eletrônica realizada por meio do Sistema Eletrônico de Informações - SEI.
+3. Alegação de nulidade da intimação por ausência de comprovação de acesso efetivo ao documento e suposto cerceamento de defesa.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a intimação eletrônica realizada pelo SEI, com presunção de leitura tácita, atende aos requisitos legais e se há nulidade por ausência de comprovação de acesso efetivo ao documento.
+III. RAZÕES DE DECIDIR
+1. O Regulamento do Processo Eletrônico na Anatel prevê a obrigatoriedade de consulta periódica ao SEI por parte do usuário externo, imputando-lhe a responsabilidade de verificar o recebimento de intimações.
+2. A intimação eletrônica é considerada pessoal para todos os efeitos legais, sendo presumida a ciência após decurso de dez dias corridos do envio, nos termos do regulamento.
+3. O sistema registra a possibilidade de acesso dentro do prazo legal, impedindo alegação de desconhecimento indefinidamente.
+4. Não há nulidade da intimação por presunção de leitura tácita, nem violação aos princípios do contraditório e da ampla defesa.
+5. O Recurso original foi intempestivo por desídia da Prestadora ao não cumprir sua obrigação de consulta periódica ao SEI.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e não provido.
+Tese de julgamento: "1. A intimação eletrônica realizada pelo SEI é válida e presume-se realizada após decurso de dez dias corridos do envio, independentemente de acesso efetivo ao documento. 2. Não há nulidade da intimação nem cerceamento de defesa quando o administrado deixa de cumprir sua obrigação de consulta periódica ao sistema. 3. O Recurso apresentado fora do prazo legal é intempestivo e não deve ser conhecido."
+Dispositivos relevantes citados: Resolução nº 682/2017, arts. 9º, 10, 11 e 20; Lei nº 9.784/1999, art. 50; CF/1988, art. 5º, LV; Resolução nº 612/2013, arts. 115 e 116.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 28/2026/OP (SEI nº 15355805), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15522820 e o código CRC C9AA101C.
+ | 
+Referência: Processo nº 53500.000026/2023-88 | 
+SEI nº 15522820 |

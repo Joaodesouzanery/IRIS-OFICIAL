@@ -1,0 +1,261 @@
+SEI/ANATEL - 15395704 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 29/2026/NP
+Processo nº 53500.024795/2014-81
+Interessado: EMPRESA BRASILEIRA DE TELECOMUNICACOES S/A EMBRATEL
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de Despacho Decisório que reconheceu a procedência de créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública (CFRP)
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA (CFRP). RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O recurso: recurso administrativo interposto por Claro S.A., na qualidade de incorporadora da Empresa Brasileira de Telecomunicações S.A. (Embratel), contra decisão da Superintendência de Controle de Obrigações - SCO que julgou procedente lançamento de créditos tributários relativos à Contribuição para o Fomento da Radiodifusão Pública (CFRP), referentes ao exercício de 2009.
+2. Fato relevante: a Anatel constituiu crédito tributário de CFRP no valor original de [Item 1 do Apartado Sigiloso SEI nº 15464675], com vencimento em 31 de março de 2009. A notificação de lançamento foi recebida em 9 de setembro de 2014.
+3. Decisões anteriores: a SCO reconheceu a procedência do lançamento, conheceu do recurso e o encaminhou ao Conselho Diretor para decisão.
+II. QUESTÃO EM DISCUSSÃO
+4. Há três questões em discussão: (i) saber se ocorreu decadência do crédito tributário; (ii) saber se a cobrança da CFRP em 2009 violou o princípio da anterioridade tributária; e (iii) saber se cabe sobrestamento do feito em razão do Tema nº 1.293 do STJ.
+III. RAZÕES DE DECIDIR
+5. O recurso é tempestivo. A recorrente é parte legítima. Estão presentes os pressupostos de admissibilidade do art. 116 da Resolução nº 612/2013.
+6. A CFRP sujeita-se a lançamento por homologação. No caso, não houve pagamento antecipado. Por isso, aplica-se o art. 173, I, do CTN para a contagem do prazo decadencial.
+7. A CFRP tem fato gerador complexivo. A Lei nº 11.652/2008 previu pagamento anual até 31 de março e diferiu a produção de efeitos dos arts. 32 e 33 para o ano seguinte ao de sua publicação.
+8. O lançamento poderia ter sido efetuado em 2009. O prazo decadencial teve início em 01.01.2010 e se encerrou em 31.12.2014. A notificação de lançamento foi recebida em 09.09.2014. O crédito foi constituído dentro do quinquênio legal. Não ocorreu decadência.
+9. A alegação da recorrente confunde anterioridade com irretroatividade. O art. 150, III, 'b', da CF/1988 veda a cobrança de tributo no mesmo exercício financeiro da publicação da lei instituidora. O dispositivo não impede a incidência da norma sobre fatos geradores ocorridos após a publicação da lei.
+10. A própria Lei nº 11.652/2008 vedou a produção de efeitos dos arts. 32 e 33 em 2008. A cobrança da CFRP passou a ser possível a partir de 2009. A cobrança da CFRP em 31.03.2009 observou a anterioridade tributária. Não houve violação ao art. 150, III, da CF/1988.
+11. A recorrente pediu o sobrestamento do feito com fundamento no Tema nº 1.293 do STJ. O precedente trata de prescrição intercorrente em processos administrativos de natureza não tributária. O crédito discutido nestes autos tem natureza tributária. O Tema nº 1.293 do STJ não se aplica ao caso.
+12. O REsp nº 1.115.078/RS, julgado sob o rito dos repetitivos, afastou a incidência da Lei nº 9.873/1999 às ações punitivas tributárias. Não há fundamento para reconhecer prescrição intercorrente nem para sobrestar o processo.
+IV. DISPOSITIVO E TESE
+13. Recurso administrativo conhecido e desprovido.
+Teses de julgamento: "1. Na ausência de pagamento antecipado, aplica-se o art. 173, I, do CTN para contagem da decadência, ainda que o tributo seja sujeito a lançamento por homologação. 2. A cobrança da CFRP em 2009 não viola o princípio da anterioridade tributária, pois ocorreu no exercício seguinte ao da publicação da Lei nº 11.652/2008 e após o início da produção de efeitos dos arts. 32 e 33. 3. O Tema nº 1.293 do STJ não se aplica a crédito tributário e não autoriza o sobrestamento do processo."
+Dispositivos relevantes citados: CF/1988, art. 150, III, 'a', 'b' e 'c'; CTN, arts. 150, § 4º, 173, I, 151, III, e 174; Lei nº 662/1949, art. 1º; Lei nº 9.873/1999, art. 1º, § 1º, e art. 5º; Resolução nº 612/2013, art. 116; Portaria nº 642/2013, art. 5º, IV; Portaria nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: STJ, Súmula 555; STJ, REsp nº 2.147.578/SP, Primeira Seção, recurso repetitivo, Tema nº 1.293; STJ, REsp nº 1.115.078/RS, recurso repetitivo; STJ, AgInt no AREsp nº 1.626.062/SP, Rel. Min. Paulo Sérgio Domingues, 1ª Turma, j. 05.06.2023; TRF3, ApCiv nº 0000094-30.2022.4.03.9999/SP, Rel. Des. Fed. Marcelo Saraiva, 4ª Turma, j. 07.11.2022.
+REFERÊNCIAS
+Lei nº 662, de 6 de abril de 1949, que declara feriados nacionais dias 1º de janeiro, 21 de abril, 1º de maio, 7 de setembro, 2 de novembro, 15 de novembro e 25 de dezembro.
+Lei nº 5.070, de 7 de julho de 1966, que cria o Fundo de Fiscalização das Telecomunicações (Fistel), e dá outras providências.
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN).
+Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária Federal e dá outras providências.
+Lei nº 9.065, de 20 de junho de 1995, que dá nova redação a dispositivos da Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária federal, e dá outras providências.
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal, as contribuições para a seguridade social, o processo administrativo de consulta e dá outras providências.
+Lei nº 9.472, de 16 de julho de 1997, que dispõe sobre a organização dos serviços de telecomunicações, a criação e funcionamento de um órgão regulador e outros aspectos institucionais, nos termos da Emenda Constitucional nº 8, de 1995 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA)
+Lei nº 10.522, de 19 de julho de 2002, que dispõe sobre o Cadastro Informativo dos créditos não quitados de órgãos e entidades federais e dá outras providências (Cadin).
+Lei nº 11.652, de 7 de abril de 2008, que institui os princípios e objetivos dos serviços de radiodifusão pública explorados pelo Poder Executivo
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Resolução nº 255, de 29 de março de 2001, que republica, com alterações, o Regulamento para Arrecadação de Receitas do Fundo de Fiscalização das Telecomunicações – Fistel.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Resolução nº 690, de 29 de janeiro de 2018, que aprova o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Cuida-se de Recurso Administrativo (SEI nº 13595035), interposto por Claro S.A., inscrita no CNPJ sob o nº 40.432.544/0001-47, na qualidade de incorporadora da Empresa Brasileira de Telecomunicações S.A., inscrita no CNPJ sob o nº 33.530.486/0001-29, em face do Despacho Decisório nº 144/2025/COGE/SCO (SEI nº 13402809), proferido pela Superintendência de Controle de Obrigações (SCO), que julgou procedentes o lançamento dos créditos tributários relativos à Contribuição para o Fomento da Radiodifusão Pública (CFRP), referentes ao exercício de 2009.
+No presente caso, a Anatel efetuou o lançamento dos créditos tributários descritos na tabela a seguir, por meio da Notificação de Lançamento nº 001-017977/2014/AFFO-ANATEL (pags. 47 e 49 de 52, SEI nº 0744030):
+ Receita
+ | 
+ Competência
+ | 
+ Fistel
+ | 
+ Sequencial
+ | 
+ Data de Vencimento
+ | 
+ Valor Original
+ | 
+ 4201 - CFRP ENL
+ | 
+ 2009
+ | 
+ 50001357093
+ | 
+ 0777
+ | 
+ 31/03/2009
+ | 
+ 17.181,00
+ | 
+ TOTAL
+ | 
+ 17.181,00 
+ | 
+Fonte: Sistema Integrado de Gestão de Créditos da Anatel (SIGEC)
+As notificações foram recebidas pela recorrente em 9 de setembro de 2014, conforme AR (pag. 51 de 52, SEI nº 0744030).
+Em 11 de outubro de 2014 (pag. 3 a 29 de 52, SEI nº 0744030), a prestadora apresentou impugnação, na qual pediu a anulação do lançamento, alegando: (i) decadência dos débitos exigidos no lançamento por homologação; 
+Analisaram-se as razões recursais por meio do Informe nº 173/2025/COGE/SCO (SEI nº 13402118).
+Em 19 de março de 2025, a Superintendência de Controle de Obrigações (SCO) reconheceu a regularidade do lançamento efetuado.
+Despacho Decisório nº 144/2025/COGE/SCO (SEI nº 13402809)
+"A SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições previstas no Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do Processo Administrativo Fiscal (PAF) em epígrafe, instaurado contra CLARO S.A, CNPJ nº 40.432.544/0001-47, incorporadora de Empresa Brasileira de Telecomunicações S.A., CNPJ nº 33.530.486/0001-29;
+CONSIDERANDO a delegação de competência prevista no art. 1º da Portaria Anatel nº 2.946, de 30 de janeiro de 2025,
+CONSIDERANDO as razões e justificativas constantes do Informe nº 173/2025/COGE/SCO (SEI nº 13402118),
+DECIDE:
+RECONHECER A PROCEDÊNCIA do lançamento dos créditos tributários da Contribuição para o Fomento da Radiodifusão Pública (CFRP), referente ao exercício de 2009, traduzidos na Notificação de Lançamento nº 001-017977/2014/AFFO-ANATEL (fls. 47/49 SEI nº 0744030);
+DETERMINAR a notificação da empresa, encaminhando cópia desta decisão."
+Notificada em 21 de março de 2025 (SEI nº 13449699), a prestadora apresentou recurso administrativo (SEI nº 13595035), argumentando: (i) decadência dos débitos exigidos no lançamento; (ii) ausência de fato gerador, pelo princípio de anterioridade tributária; e (iii) impossibilidade de aplicação da Súmula nº 11 do CARF ao caso.
+Por meio do Informe nº 79/2026/COGE/SCO (SEI nº 15087296), a área técnica analisou as razões recursais.
+Em 20 de março de 2026, a SCO proferiu o Despacho Decisório nº 69/2026/COGE/SCO (SEI nº 15087297), por meio do qual conheceu do Recurso Administrativo interposto e encaminhou para deliberação do Conselho Diretor.
+Com a Matéria para Apreciação do Conselho Diretor nº 46/2026 (SEI nº 15087298), os autos foram encaminhados (SEI nº 15374100) ao Conselho Diretor da Anatel.
+Em 26 de março de 2026, o processo foi distribuído à minha relatoria, conforme Certidão de Distribuição SEI nº 15392088.
+É o relatório.
+fundamentação
+A instauração e instrução deste processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 3 (três) partes. Na primeira, avalia-se a admissibilidade do Recurso Administrativo interposto. Na segunda, será examinado o mérito recursal das alegações e dos pedidos apresentados. Por fim, na terceira parte, examina-se a aderência do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU). 
+I - Admissibilidade
+O art. 116 do RIA prevê as hipóteses nas quais um recurso administrativo não deve ser conhecido:
+RIA:
+"Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa."
+O prazo recursal em Processos Administrativos Fiscais (PAFs) é de 30 (trinta) dias, conforme o art. 33 do Decreto nº 70.235, de 6 de março de 1972 e o item 7.1.1 da Portaria nº 1.355, de 26 de julho de 2019. 
+A recorrente foi notificada da decisão recorrida em 21 de março de 2025, conforme Certidão de Intimação Cumprida (SEI nº 13449699). O recurso foi interposto em 22 de abril de 2025 (SEI nº 13595036), dentro do prazo legal de 30 (trinta) dias, considerando que o dia 21 de abril de 2025 foi feriado nacional, nos termos do art. 1º da Lei nº 662/1949. Logo, o presente recurso foi tempestivo.
+Além disso, verifica-se que a recorrente possui interesse na reforma da decisão proferida pela SCO, está regularmente representada e não há contrariedade a entendimento fixado em Súmula pela Agência.
+Estão assim atendidos os pressupostos de admissibilidade do art. 116 do RIA, sendo correto o conhecimento do Recurso Administrativo, consubstanciado no Despacho Decisório nº 69/2026/COGE/SCO, de 20 de março de 2026 (SEI nº 15087297).
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria nº 1.395, de 9 de outubro de 2017, determina que a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642, de 26 de julho de 2013
+"Art.5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+[...]
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)"
+No caso concreto, não há necessidade de submissão do feito à PFE-Anatel para manifestação, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+II - Do mérito
+II-a. Da alegada decadência dos débitos exigidos
+Em sua peça recursal, a interessada sustenta que a Contribuição para o Fomento da Radiodifusão Pública (CFRP) se submete ao regime de lançamento por homologação, devendo ser aplicado nesse caso o art. 150, §4º, da Lei nº 5.172, de 25 de outubro de 1966, o Código Tributário Nacional (CTN).
+CTN
+"Art. 150 (...)
+§ 4º Se a lei não fixar prazo a homologação, será ele de cinco anos, a contar da ocorrência do fato gerador; expirado esse prazo sem que a Fazenda Pública se tenha pronunciado, considera-se homologado o lançamento e definitivamente extinto o crédito, salvo se comprovada a ocorrência de dolo, fraude ou simulação."
+(destacou-se)
+Assim, um prazo decadencial de cinco anos seria contado da ocorrência do fato gerador. Considerando que tal fato gerador teria ocorrido em 31 de dezembro de 2008, o prazo para constituição do crédito tributário estaria encerrado em 31 de dezembro de 2013. A notificação expedida em 28 de agosto de 2014 estaria alcançada pela decadência.
+O corpo técnico observou, no entanto, que o dispositivo citado pela recorrente somente se aplica quando houver pagamento antecipado a ser homologado. Assim, inexistindo tal antecipação, ainda que se trate de tributo sujeito a lançamento por homologação, como reconhecido no âmbito da Anatel para a TFF e a CFRP, deve prevalecer a regra geral do art. 173, I, do CTN. É a regra geral de decadência, segundo a qual o prazo de cinco anos para constituição do crédito tributário tem início no primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado.
+CTN
+"Art. 173. O direito de a Fazenda Pública constituir o crédito tributário extingue-se após 5 (cinco) anos, contados:
+I - do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado;
+II - da data em que se tornar definitiva a decisão que houver anulado, por vício formal, o lançamento anteriormente efetuado.
+Parágrafo único. O direito a que se refere êste artigo extingue-se definitivamente com o decurso do prazo nêle previsto, contado da data em que tenha sido iniciada a constituição do crédito tributário pela notificação, ao sujeito passivo, de qualquer medida preparatória indispensável ao lançamento."
+Nesse ponto, o Superior Tribunal de Justiça editou a súmula nº 555, a seguir transcrita:
+Súmula 555 STJ
+"Quando não houver declaração do débito, o prazo decadencial quinquenal para o Fisco constituir o crédito tributário conta-se exclusivamente na forma do art. 173, I, do CTN, nos casos em que a legislação atribui ao sujeito passivo o dever de antecipar o pagamento sem prévio exame da autoridade administrativa."
+Como destacou o corpo técnico, a TFF e CFRP são lançamentos por homologação, podendo a empresa efetuar o pagamento antecipado, independentemente de notificação:
+Informe nº 79/2026/COGE/SCO (SEI nº 15087296)
+"5.9. Quanto ao lançamento, cumpre-se esclarecer que o Conselho Diretor da Anatel, no processo nº 53500.009857/2012-62, por meio da Análise nº 104/2016/SEI/OR, decidiu que a TFF e CFRP são lançamentos por homologação, podendo a empresa efetuar o pagamento antecipado. No mesmo sentido, são as disposições do Regulamento de Arrecadação Tributária (RART), aprovado pela Resolução nº 729/2020, que determinam o pagamento antecipado dos tributos, independentemente de notificação.
+5.10. No presente caso, todavia, verifica-se que não houve pagamento antecipado, conforme consta do SIGEC (SEI nº 13402622). Em inexistindo pagamento a ser homologado, a regra de contagem do prazo decadencial aplicável, por consequência, deve ser a regra do art. 173, inciso I, do CTN, conforme visto anteriormente" (grifos no original)
+Com relação à contagem dos prazos, o § 3º do art. 32 da Lei nº 11.652/2008 estabelece que se aplicam subsidiariamente e, no que couber, as disposições da legislação do imposto de renda, especialmente quanto às penalidades e aos demais acréscimos legais:
+Lei nº 11.652, de 7 de abril de 2008
+"Art. 32. Fica instituída a Contribuição para o Fomento da Radiodifusão Pública, com o objetivo de propiciar meios para a melhoria dos serviços de radiodifusão pública e para a ampliação de sua penetração mediante a utilização de serviços de telecomunicações.
+§ 1º (...)
+§ 2º A Contribuição será paga, anualmente, até o dia 31 de março, em valores constantes do Anexo desta Lei.
+§ 3º A Contribuição sujeita-se às normas relativas ao processo administrativo fiscal de determinação e exigência de créditos tributários federais e de consulta, previstas no Decreto nº 70.235, de 6 de março de 1972, bem como, subsidiariamente e no que couber, às disposições da legislação do imposto de renda, especialmente quanto às penalidades e aos demais acréscimos legais.
+(...)
+Art. 34. Esta Lei entra em vigor na data de sua publicação, produzindo efeitos, relativamente aos arts. 32 e 33 desta Lei, a partir do ano seguinte à sua publicação." (grifou-se)
+Observa-se que a CFRP possui um fato gerador complexivo (ou periódico), isto é, que se aperfeiçoa ao longo de um período de tempo e não instantaneamente. A obrigação tributária principal só nasce ao final, com a soma de vários fatos ocorridos durante esse prazo.
+De acordo com o § 2º do art. 32 da Lei nº 11.652/2008, reproduzido mais acima, a CFRP deve ser paga anualmente até o dia 31 de março. De acordo com o art. 34, a Lei passou a produzir efeitos relativamente ao art. 32 a partir do ano seguinte à sua publicação, isto é, a CFRP poderia ser cobrada a partir de 2009, tendo seu primeiro vencimento no dia 31 de março de 2009.
+A ocorrência desse fato gerador e sua cobrança em 2009 serão abordados com mais detalhes na seção seguinte desta Análise.
+Dessa forma, o primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado seria o dia 1º de janeiro de 2010. Assim, de acordo com o inciso I do art. 173 do CTN, o crédito tributário extinguiu-se após 5 (cinco) anos a contar dessa data, ou seja, no dia 31 de dezembro de 2014.
+Verifica-se que a notificação de lançamento foi recebida pela prestadora em 9 de setembro de 2014, conforme AR (pag. 51 de 52, SEI nº 0744030). Assim, não houve decadência, uma vez que foi respeitado o quinquênio legal.
+Há ampla jurisprudência em relação a prazos decadenciais de tributos com fato gerador complexivo:
+TRIBUTÁRIO. AGRAVO INTERNO. IRPF. OMISSÃO DE RENDIMENTOS NA DECLARAÇÃO DE AJUSTE ANUAL. PRAZO DECADENCIAL. ART. 173, I, DO CTN. AGRAVO INTERNO DESPROVIDO.
+1. O entendimento desta Corte Superior de Justiça é o de que, nos casos de omissão de rendimentos, o prazo decadencial para o Fisco efetuar o lançamento suplementar do IRPF conta-se do primeiro dia do exercício seguinte à declaração do contribuinte, nos termos do art. 173, I, do CTN. Precedentes: AgInt no REsp 1.559.449/PR, relator Ministro Napoleão Nunes Maia Filho, Primeira Turma, julgado em 25/11/2019, DJe de 28/11/2019; AgInt nos EDcl no REsp 1.660.121/MG, relator Ministro Mauro Campbell Marques, Segunda Turma, julgado em 16/8/2018, DJe de 21/8/2018; e AgInt no REsp 1.551.707/PR, relator Ministro Og Fernandes, Segunda Turma, julgado em 6/10/2016, DJe de 14/10/2016.
+2. Na hipótese dos autos, o lançamento somente poderia ter sido efetuado após o exaurimento do prazo para a entrega da declaração de rendimentos, ou seja, o crédito tributário relativo aos rendimentos recebidos no ano de 1998 poderia ter sido constituído apenas no ano 1999 (termo final para a entrega da declaração), de modo que o prazo decadencial para o lançamento do crédito teve início em 1º/1/2000 (primeiro dia do exercício seguinte ao que poderia ter sido lançado o tributo), não havendo que se falar em decadência do lançamento realizado em 29/4/2004, dentro do quinquênio legal.
+3. Agravo interno a que se nega provimento.
+(STJ, AgInt no AREsp 1.626.062/SP, Rel. Min. Paulo Sérgio Domingues, 1ª Turma, DJ 05.06.2023)
+........
+TRIBUTÁRIO. PROCESSUAL CIVIL. MODIFICAÇÃO DO PEDIDO EM SEDE DE APELO. NÃO CONHECIMENTO DO PEDIDO. PERITO JUDICIAL. AUXILIAR DO JUÍZO. COMPENSAÇÃO. LEGISLAÇÃO. VIGÊNCIA. MOMENTO DO ENCONTRO DE CONTAS. CRÉDITOS TRIBUTÁRIOS. CONSTITUIÇÃO DEFINITIVA. LANÇAMENTO. IR. FATO GERADOR COMPLEXIVO. SUSPENSÃO DA EXIGIBILIDADE. RECURSOS ADMINISTRATIVOS. ART. 151, III, CTN. PRESCRIÇÃO. INOCORRÊNCIA. ENCARGO DE 20%, DL 1.025/69. LEGALIDADE. HONORÁRIOS ADVOCATÍCIOS. AFASTAMENTO EX OFFICIO DA CONDENAÇÃO.
+(...)
+5. A constituição do crédito tributário também poderá ocorrer de ofício, nos moldes do art. 149 do Código Tributário Nacional, na ausência de declaração do contribuinte ou se elaborada em desacordo com a legislação tributária, com omissões ou inexatidões, sujeitando-se ao prazo decadencial nos termos do art. 173, I, do CTN, ocorrendo a constituição definitiva quando da notificação do sujeito passivo.
+7. O Imposto de Renda possui o chamado fato gerador complexivo, estendendo-se ao longo do ano-calendário, de maneira que apenas na Declaração do exercício seguinte se apura o valor exato do débito. Assim, o lançamento poderia ser efetuado em 1996, de maneira que o prazo decadencial somente teve início em 01.01.1997 e se esgotaria em 31.12.2001.
+(...)
+(TRF3, ApCiv 0000094-30.2022.4.03.9999/SP, Rel. Des. Fed. Marcelo Saraiva, 4ª Turma, DJ 07.11.2022)
+No caso em tela, foi constatada omissão de rendimentos no ano-calendário de 2005, de maneira que o lançamento apenas poderia ocorrer no exercício de 2006. Assim, o prazo previsto pelo art. 173, I, do CTN, teve início em 01.01.2007 e escoaria por completo somente em 31.12.2011; o lançamento suplementar foi realizado por ocasião do Auto de Infração, lavrado em 09.11.2010 (ID 275584751 – 426/858), do que foi notificado o apelante em 12.11.2010, vindo a tempestivamente apresentar sua impugnação em 10.12.2010 (ID 275584751 – 787/858). O contencioso administrativo chegou ao seu término em 04.12.2014, do que foi notificado o apelante, pela via editalícia, em 06.02.2015 (ID 275584763), e proposta a Execução Fiscal em 23.06.2015 (ID 275584751). Desse modo, não configurada a decadência.
+.........
+TRIBUTÁRIO. CRÉDITO TRIBUTÁRIO. DECADÊNCIA. CONSTITUIÇÃO DEFINITIVA. OMISSÃO DE RENDIMENTOS. LANÇAMENTO SUMPLEMENTAR. ART. 173, I, DO CTN. IRPF. FATO GERADOR COMPLEXIVO.
+1. Nos tributos sujeitos a lançamento por homologação, o termo inicial do prazo prescricional para o Fisco exercer a pretensão de cobrança judicial do crédito tributário declarado, mas não pago, é a data da entrega da declaração ou a data do vencimento, o quer for posterior, em conformidade com o princípio da actio nata, tema já pacificado no âmbito do egrégio Superior Tribunal de Justiça.
+2. A constituição do crédito tributário também poderá ocorrer de ofício, nos moldes do art. 149 do Código Tributário Nacional. Na contagem do prazo decadencial dos tributos sujeitos a lançamento por homologação, pacificada a jurisprudência: aplica-se o art. 150, §4º, do CTN quando o contribuinte realiza pagamento parcial antecipado. Nos demais casos, a exemplo de dolo, fraude ou simulação, ausência de declaração, ou constatada omissão de rendimentos, entendendo o Fisco ser devido valor complementar, aplicável o disposto pelo art. 173, I, do CTN.
+3. Cabe destacar que o pagamento parcial antecipado não se confunde com a omissão de rendimentos. O pagamento parcial é relativo a determinado rendimento do contribuinte, não ao conjunto de suas rendas sujeitas à tributação. Desse modo, se um dos rendimentos é pura e simplesmente não informado, configurada a omissão, aplicando-se o disposto pelo art. 173, I, do CTN.
+4. O Imposto de Renda possui o chamado fato gerador complexivo, estendendo-se ao longo do ano-calendário.
+5. Constatada omissão de rendimentos no ano-calendário de 2005, de maneira que o lançamento apenas poderia ocorrer no exercício de 2006. Assim, o prazo previsto pelo art. 173, I, do CTN, teve início em 01.01.2007 e escoaria por completo somente em 31.12.2011; o lançamento suplementar foi realizado por ocasião do Auto de Infração, lavrado em 09.11.2010 (ID 275584751 – 426/858), do que foi notificado o apelante em 12.11.2010, vindo a tempestivamente apresentar sua impugnação em 10.12.2010 (ID 275584751 – 787/858). O contencioso administrativo chegou ao seu término em 04.12.2014, do que foi notificado o apelante, pela via editalícia, em 06.02.2015 (ID 275584763), e proposta a Execução Fiscal em 23.06.2015 (ID 275584751). Desse modo, não configurada a decadência.
+6. Apelo improvido.
+Em vista do acima exposto, não procede a alegação de decadência dos débitos exigidos.
+II-b. Da pretensa violação do princípio da anterioridade tributária 
+A recorrente sustenta que o fato gerador da CFRP somente ocorreria a partir de 1º de janeiro de 2009, considerando que somente poderia ser exigida no exercício seguinte ao da publicação da lei que a instituiu, e sua primeira cobrança só poderia ocorrer em 31 de março de 2010:
+Recurso Administrativo (SEI nº 13595035)
+"Considerando, para efeito de análise do princípio da anterioridade, que a contribuição à EBC possui natureza de contribuição social geral ou de intervenção no domínio econômico, que não se encontra nas exceções consubstanciadas no artigo 150 §1º, aplica-se a anterioridade mista, prevista no art. 150, III, 'b' e 'c' da Constituição Federal, com a possibilidade de sua exigência apenas no exercício seguinte ao da publicação da lei que a instituiu, respeitando-se o limite mínimo de 90 (noventa) dias. 
+Desta forma, considerando, primeiramente, que a Lei n. 11.652/08 foi editada em abril de 2008 e que o princípio da anterioridade mista determina que o momento de sua incidência, ou seu fato gerador, só pode ser considerado no ano posterior, respeitado o limite mínimo de 90 dias, pode-se afirmar que o fato gerador da contribuição à EBC só poderia ocorrer a partir de 01.01.2009.
+[...]
+Portanto, para respeitar o princípio da anterioridade, tem-se que o momento da ocorrência do primeiro fato gerador da contribuição à EBC somente poderia ocorrer em 31 de dezembro de 2009, ou seja, no ano posterior à edição da Lei que a instituiu e, sendo assim, sua primeira cobrança só poderia ocorrer em 31 de março de 2010, diferentemente do que foi realizado no presente caso ." (grifos no original)
+Observa-se que vedação do art. 150, III, 'b', da Constituição Federal refere-se à cobrança do tributo no mesmo exercício financeiro, não à incidência da lei ou à ocorrência do fato gerador. Já o art. 150, III, 'a', impede a retroatividade, vedando a tributação de fatos anteriores à publicação da lei. 
+Constituição Federal de 1988 (CF)
+"Art. 150. Sem prejuízo de outras garantias asseguradas ao contribuinte, é vedado à União, aos Estados, ao Distrito Federal e aos Municípios:
+III - cobrar tributos:
+a) em relação a fatos geradores ocorridos antes do início da vigência da lei que os houver instituído ou aumentado;
+b) no mesmo exercício financeiro em que haja sido publicada a lei que os instituiu ou aumentou; (Vide Emenda Constitucional nº 3, de 1993)
+c) antes de decorridos noventa dias da data em que haja sido publicada a lei que os instituiu ou aumentou, observado o disposto na alínea b; (destacou-se)
+O princípio da anterioridade impõe a observância de um lapso temporal mínimo entre a publicação da lei que institui ou majora tributo e o início de sua exigibilidade. Trata-se de corolário do princípio da segurança jurídica, voltado a assegurar previsibilidade e estabilidade nas relações tributárias, evitando que os contribuintes sejam surpreendidos por alterações abruptas no ordenamento. Nesse contexto, garante-se ao sujeito passivo prazo razoável para se organizar e adequar-se às novas obrigações tributárias que lhe venham a ser impostas.
+Em situação pretérita, em que se discutiu situação similar à sustentada pela Recorrente, a PFE-Anatel, no Parecer nº 299/2023/PFE-Anatel/PFG/AGU (SEI nº 10522450), anexado aos autos do PAF nº 53563.000775/2012-18, alerta para a necessidade de se distinguir o princípio da anterioridade, do princípio da irretroatividade. Tal distinção essa não foi observada pela recorrente no caso em exame:
+Parecer nº 299/2023/PFE-ANATEL/PGF/AGU (SEI nº 10522450)
+"15. A prestadora aduz que a Lei nº 11.652, de 2008, ao instituir a CFRP, não especificou o momento de concreção do fato gerador, tendo previsto somente que essa "será paga, anualmente, até o dia 31 de março" . Tendo em vista que no §3º do art. 32 do referido Diploma Legal se determina a aplicação subsidiária da legislação do imposto de renda, concluí que o fato gerador deveria, portanto, observar a mesma sistemática, de modo que sua concreção ocorreria no final de cada exercício, isto é, no dia 31 de dezembro.
+16. Diante disso, segundo essa tese, o pagamento a ser efetivado até 31 de março contemplaria o fato gerador ocorrido no ano anterior. Assim, argumenta que não haveria qualquer tributo a ser pago em 2009, pois a lei não poderia cobrar tributos referentes a 2008, ano em que a exação foi instituída, em observância ao princípio da anterioridade.
+17. Na hipótese, entretanto, a articulação do princípio da anterioridade, conforme aduzida na impugnação, está incorreta, confundindo-o com o princípio da irretroatividade. A vedação constitucional presente no art. 150, III, 'b', C.F. se refere à cobrança do tributo no mesmo exercício, não à incidência da lei ou à configuração do fato gerador. Conforme disposto no art. 150, III, 'a', C.F., a lei não pode retroagir para alcançar fatos geradores anteriores à publicação lei, sendo possível, a contrario sensu, cobrar exações em relação àqueles ocorridos posteriormente. Assim, desde que a cobrança seja feita apenas no exercício seguinte, em obediência à alínea 'b' do mesmo comando constitucional, não há vedação para que recaia sobre fato gerador ocorrido no ano anterior após a publicação da respectiva lei, em consonância com a alínea 'a'." (grifou-se)
+A prestadora alega, ainda, que o art. 34 da Lei 11.652/2008, já reproduzido mais acima, é expresso no sentido de que os efeitos relativos aos arts. 32 e 33 que instituíram a CFRP somente produziriam efeitos no ano seguinte àquele da publicação da Lei, ou seja, em 2009.
+Ainda de acordo com o Parecer da PFE-Anatel acima mencionado, o referido artigo confirma que a norma só passaria a produzir efeitos e a CFRP só poderia ser cobrada, a partir de 2009:
+Parecer nº 299/2023/PFE-ANATEL/PGF/AGU (SEI nº 10522450)
+18. Entretanto, no caso específico da CFRP, o impedimento para a cobrança do tributo sobre fatos geradores ocorridos em 2008 não decorre do princípio da anterioridade, mas da determinação da própria Lei nº 11.652, de 2008. É que o referido Diploma Legal, em seu art. 34, estabeleceu que a norma de instituição desse tributo somente passaria a ter a efeitos a partir de 2009, de modo que não estava apta a incidir sobre os fatos materializados em 2008. In verbis:
+Art. 32. Fica instituída a Contribuição para o Fomento da Radiodifusão Pública, com o objetivo de propiciar meios para a melhoria dos serviços de radiodifusão pública e para a ampliação de sua penetração mediante a utilização de serviços de telecomunicações.
+(...)
+Art. 34. Esta Lei entra em vigor na data de sua publicação, produzindo efeitos, relativamente aos arts. 32 e 33 desta Lei, a partir do ano seguinte à sua publicação.
+19. Com isso, ainda que o princípio da anterioridade e da irretroatividade não representem óbice para que o tributo recaia sobre fatos geradores ocorridos em 2008, a própria lei de criação impediu sua incidência sobre eventos materializados naquele ano, pois não apenas a cobrança, mas a produção de efeitos da norma in totum foram diferidas para o ano de 2009.
+(...)
+Assim, concluiu a PFE-Anatel que os efeitos da instituição do tributo se iniciariam em 2009 e que, em 31 de março daquele mesmo ano, já deveria ocorrer sua primeira cobrança:
+Parecer nº 299/2023/PFE-ANATEL/PGF/AGU (SEI nº 10522450)
+"35. ISSO POSTO, em resposta às indagações formuladas pelo consulente, proponho que se encaminhe as conclusões a seguir.
+(...)
+b) Quanto à possibilidade de cobrança do tributo no exercício de 2009:
+- o fato gerador da CFRP ocorre com a prestação de serviço de telecomunicação no mesmo ano em que se efetiva a cobrança, conforme se infere claramente do art. 32, §9º, combinado com o art. 34, da Lei nº 9.652, de 2008, que determinaram de forma explícita e especifica que os efeitos da instituição do tributo se iniciariam em 2009 e que naquele mesmo ano haveria sua primeira cobrança;
+- a cobrança do tributo em 2009 é compatível com o princípio da anterioridade, por ter sido efetivada no exercício seguinte ao da publicação da lei que o institui, recaindo sobre fato gerador ocorrido no mesmo ano.". (destacou-se)
+Dessa forma, não houve violação do princípio da anterioridade tributária e o lançamento referente a 2009 foi procedente.
+II-c. Do pedido de sobrestamento
+Como consignado pelo corpo técnico no Informe nº 173/2025/COGE/SCO (13402118), não se aplica a prescrição intercorrente no Processo Administrativo Fiscal Contencioso, conforme a Súmula nº 26 da Anatel e a Súmula nº 11 do Conselho Administrativo de Recursos Fiscais (CARF):
+Súmula Anatel nº 26
+"É inaplicável a prescrição intercorrente no processo administrativo fiscal."
+Súmula CARF nº 11
+"Não se aplica a prescrição intercorrente no processo administrativo fiscal. 
+(Precedentes Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003.)"
+A recorrente defende a inaplicabilidade da Súmula nº 11 do CARF ao caso concreto, em razão da afetação da matéria ao Tema nº 1.293 do STJ (REsp nº 2.147.578/SP). Assim, pede o sobrestamento do feito, com fundamento nos arts. 926 e 927 do Código de Processo Civil e no art. 100 da Portaria MF nº 1.634/2023, argumentando que a controvérsia foi submetida ao rito dos recursos repetitivos:
+Recurso Administrativo (SEI nº 13595035)
+"O Despacho Decisório ora recorrido dispõe que “não se aplica a prescrição intercorrente no Processo Administrativo Fiscal Contencioso, conforme a Súmula do Conselho Administrativo de Recursos Fiscais (CARF) Nº 11”. No entanto, deixou de considerar que a discussão quanto à aplicabilidade da prescrição intercorrente no Processo Administrativo foi submetida ao rito dos recursos repetitivos, pendente de decisão transitada em julgado pelo E. STJ. Nos autos do REsp nº 2147578/SP (2024/0005897-5), consignou o D. Min. Rel. Presidente da Comissão Gestora de Precedentes e de Ações Coletivas que “a submissão desse processo ao rito dos repetitivos, com a proposta de reafirmação do entendimento estabelecido na jurisprudência do STJ, conferirá maior racionalidade aos julgamentos e, em consequência, estabilidade, coerência e integridade à jurisprudência, conforme idealizado pelos arts. 926 e 927 do Código de Processo Civil”. [...]
+[...]
+Pelo exposto, não apenas deve ser reformado o Despacho Decisório recorrido para que afaste a aplicação da Súmula nº 11 do CARF, como também se faz imperioso o sobrestamento do presente feito até o julgamento definitivo do Tema 1.293 pelo E. STJ."
+Como observou o corpo técnico, o referido tema não se aplica aos créditos tributários, tendo em vista que a discussão envolve prescrição intercorrente em créditos não tributários. Não se aplica ao caso concreto, tendo em vista que a CFRP é um tributo:
+Tema 1.293 do STJ (REsp nº 2.147.578/SP)
+ADMINISTRATIVO. ADUANEIRO. RECURSO ESPECIAL REPETITIVO. PROCESSO ADMINISTRATIVO. INFRAÇÃO À LEGISLAÇÃO ADUANEIRA. PRESCRIÇÃO INTERCORRENTE. ART. 1º, § 1º, DA LEI 9.873/99. INCIDÊNCIA DO COMANDO LEGAL NOS PROCESSOS DE APURAÇÃO DE INFRAÇÕES DE NATUREZA ADMINISTRATIVA (NÃO TRIBUTÁRIA). DEFINIÇÃO DA NATUREZA JURÍDICA DO CRÉDITO CORRESPONDENTE À SANÇÃO PELA INFRAÇÃO À LEGISLAÇÃO ADUANEIRA QUE SE FAZ A PARTIR DO EXAME DA FINALIDADE PRECÍPUA DA NORMA INFRINGIDA. FIXAÇÃO DE TESES JURÍDICAS VINCULANTES. SOLUÇÃO DO CASO CONCRETO: PROVIMENTO DO RECURSO ESPECIAL.
+(...)
+6. Teses jurídicas de eficácia vinculante, sintetizadoras da ratio decidendi do julgado paradigmático: 1. Incide a prescrição intercorrente prevista no art. 1º, § 1º, da Lei 9.873/1999 quando paralisado o processo administrativo de apuração de infrações aduaneiras, de natureza não tributária, por mais de 3 anos. 2. A natureza jurídica do crédito correspondente à sanção pela infração à legislação aduaneira é de direito administrativo (não tributário) se a norma infringida visa primordialmente ao controle do trânsito internacional de mercadorias ou à regularidade do serviço aduaneiro, ainda que, reflexamente, possa colaborar para a fiscalização do recolhimento dos tributos incidentes sobre a operação. 3. Não incidirá o art. 1º, § 1º, da Lei 9.873/99 apenas se a obrigação descumprida, conquanto inserida em ambiente aduaneiro, destinava-se direta e imediatamente à arrecadação ou à fiscalização dos tributos incidentes sobre o negócio jurídico realizado." (grifou-se)
+Observa-se que o REsp nº 2.147.578/SP foi definitivamente julgado pelo Superior Tribunal de Justiça, razão pela qual não subsiste a alegada suspensão do feito.
+Conforme divulgado no sítio eletrônico do STJ, a Primeira Seção, sob o rito dos recursos repetitivos (Tema nº 1.293), fixou tese no sentido de que a prescrição intercorrente prevista no art. 1º, §1º, da Lei nº 9.873/1999 incide apenas nos processos administrativos de apuração de infrações aduaneiras de natureza não tributária que permaneçam paralisados por mais de três anos.
+Dessa forma, além de superada qualquer hipótese de sobrestamento, verifica-se que o entendimento firmado não se aplica ao presente caso, por não versar sobre crédito de natureza tributária.
+Ressalta-se que a Lei nº 9.873/1999 não se aplica aos créditos tributários, conforme decidiu o STJ no REsp 1.115.078/RS, julgado sob a sistemática dos recursos repetitivos:
+REsp 1.115.078/RS
+"Sob o prisma negativo, a Lei 9.873/99 não se aplica:
+(a) às ações administrativas punitivas desenvolvidas por estados e municípios, pois o âmbito espacial da lei limita-se ao plano federal;
+(b) às ações administrativas que, apesar de potencialmente desfavoráveis aos interesses dos administrados, não possuem natureza punitiva, como as medidas administrativas revogatórias, as cautelares ou as reparatórias; e
+(c) por expressa disposição do art. 5º, às ações punitivas disciplinares e às ações punitivas tributárias, sujeitas a prazos prescricionais próprios, a primeira com base na Lei 8.112/90 e a segunda com fundamento no Código Tributário Nacional."
+Diante de todo o exposto, não há fundamento para o sobrestamento dos presentes autos, tampouco para a incidência do instituto da prescrição intercorrente.
+III - Da conformidade com a Agenda 2030 da Organização das Nações Unidas (ONU)
+Por fim, a Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas e é importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como sempre defendeu o Conselheiro Alexandre Freire em suas manifestações (vide Ofício nº 90/2023/AF-ANATEL - SEI nº 11203364).
+A proposta de encaminhamento contida na presente Análise se relaciona com o Objetivo 10 da Agenda 2030, uma vez que a garantia de uma administração tributária eficiente e justa favorece uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais.
+Relaciona-se, ainda, com o Objetivo 16, pois, conforme demonstrado, observaram-se durante todo o trâmite processual os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel, identificando-se, em especial, com a Meta 16.6, que propõe: "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+CONCLUSÃO
+Voto por conhecer e negar provimento ao Recurso Administrativo.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15395704 e o código CRC 1A9BE042.
+ | 
+Referência: Processo nº 53500.024795/2014-81 | 
+SEI nº 15395704 |

@@ -1,0 +1,553 @@
+SEI/ANATEL - 14330202 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 1/2025/OP
+Processo nº 53500.083092/2017-37
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo com pedido de efeito suspensivo interposto por Telefônica Brasil S.A. (Telefônica), CNPJ nº 02.558.157/0001-62, prestadora do Serviço Móvel Pessoal (SMP), em face do Despacho Decisório nº 394/2022/CODI/SCO, de 1º de setembro de 2022, que aplicou à prestadora sanção de advertência, em razão do descumprimento ao art. 15, §3º, do Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477, de 2007; e de multa, em razão dos descumprimentos ao art. 6º, XX, do RSMP, e do art. 2º, do Ato nº 2.013, de 22 de março de 2013.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. SERVIÇO MÓVEL PESSOAL. DESCUMPRIMENTO DE DIREITOS DO USUÁRIO. PARCIAL PROVIMENTO DE OFÍCIO. MANUTENÇÃO DE SANÇÃO DE ADVERTÊNCIA E MULTA. DESCARACTERIZAÇÃO DE INFRAÇÃO AO ATO Nº 2.013/2013. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. Recurso administrativo interposto por Telefônica Brasil S.A. contra decisão que aplicou sanção de advertência pelo descumprimento ao art. 15, § 3º, do Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477/2007, e multa pelo descumprimento ao art. 6º, XX, do RSMP.
+2. Decisão também imputou infração ao art. 2º do Ato nº 2.013/2013.
+3. Petição extemporânea apresentada pela recorrente antes da publicação da pauta da reunião do Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+4. Há quatro questões em discussão: (i) saber se houve nulidade na instauração do processo administrativo sancionador por cerceamento de defesa; (ii) saber se restou comprovada a materialidade das infrações ao RSMP e ao Ato nº 2.013/2013; (iii) saber se as sanções aplicadas observam os critérios de legalidade, razoabilidade e proporcionalidade; e ; e (iv) aplicação de sanção de obrigação de fazer, consistente no provimento de conectividade para instituições públicas de ensino superior.
+III. RAZÕES DE DECIDIR
+5. Processo observou os princípios do devido processo legal, contraditório e ampla defesa, sendo o recurso tempestivo, legítimo e cabível.
+6. Petição extemporânea foi conhecida, pois protocolizada antes da publicação da pauta, conforme Súmula nº 21/2017 da Anatel.
+7. Não se verificou cerceamento de defesa, pois a recorrente teve oportunidade de apresentar provas e manifestações, que foram analisadas pela área técnica e pela Procuradoria Federal Especializada.
+8. Infrações ao art. 6º, XX, do RSMP restaram caracterizadas para os serviços Vivo Foto/Vídeo Torpedo e Vivo Me Liga, pois não foi comprovada a efetivação do bloqueio solicitado dentro do prazo regulamentar.
+9. Não ficou comprovada a materialidade da infração ao art. 2º do Ato nº 2.013/2013, pois a fiscalização não averiguou a adequação da sistemática de bloqueio exigida pelo ato.
+10. Sanção de advertência pela infração ao art. 15, § 3º, do RSMP foi mantida, pois classificada como leve.
+11. Sanção de multa pela infração ao art. 6º, XX, do RSMP foi mantida, calculada conforme metodologia prevista na Portaria nº 791/2014, observando critérios objetivos e proporcionais.
+12. Não foram acolhidas alegações de desproporcionalidade, baixa ofensividade ou necessidade de atenuantes, pois não houve comprovação de cessação da infração ou reparação ao usuário.
+13. A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+14. Remessa de cópia dos autos à Corregedoria da Anatel determinada para apuração de eventual falta funcional em razão da prescrição da infração relacionada ao serviço Vivo Torpedo Web.
+IV. DISPOSITIVO E TESE
+15. Recurso administrativo conhecido e desprovido.
+16. Petição extemporânea conhecida e indeferida.
+17. Decisão recorrida reformada de ofício para descaracterizar, por ausência de materialidade, a infração ao art. 2º do Ato nº 2.013/2013.
+18. Mantidas as sanções de advertência e multa pela infração ao RSMP.
+19. Aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, conforme requisitos e parâmetros definidos.
+20. Determinada a remessa de cópia dos autos à Corregedoria da Anatel.
+Tese de julgamento: "1. Não há nulidade na instauração do processo administrativo sancionador por cerceamento de defesa. 2. Restou caracterizada a infração ao art. 6º, XX, do RSMP para os serviços Vivo Foto/Vídeo Torpedo e Vivo Me Liga. 3. Não restou comprovada a materialidade da infração ao art. 2º do Ato nº 2.013/2013. 4. Mantidas as sanções de advertência e multa, observados os critérios legais e regulamentares. 5. Aplicação da sanção de obrigação de fazer consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção. 6. Determinada a remessa de cópia dos autos à Corregedoria da Anatel para apuração de eventual falta funcional."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 6º, XX; Resolução nº 477/2007, arts. 6º, XX, 15, § 3º; Ato nº 2.013/2013, art. 2º; Resolução nº 589/2012; Portaria nº 791/2014; Súmula nº 21/2017 da Anatel.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicação (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA);
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel (RIA);
+Resolução nº 589, de 7 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas (Rasa);
+Resolução nº 477, de 7 de agosto de 2007, que aprovou o Regulamento do Serviço Móvel Pessoal (RSMP).
+RELATÓRIO
+DOS FATOS
+Cuida-se de Recurso Administrativo com pedido de efeito suspensivo interposto por Telefônica Brasil S.A. (Telefônica), CNPJ nº 02.558.157/0001-62, prestadora do Serviço Móvel Pessoal (SMP), em face do Despacho Decisório nº 394/2022/CODI/SCO (8849092), de 1º de setembro de 2022, que aplicou à prestadora sanção de advertência, em razão do descumprimento ao art. 15, §3º, do Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477, de 2007; e de multa, no valor total de R$ 39.194.797,25 (trinta e nove milhões, cento e noventa e quatro mil, setecentos e noventa e sete reais e vinte e cinco centavos), em razão dos descumprimentos ao art. 6º, XX, do RSMP, e do art. 2º, do Ato nº 2.013, de 22 de março de 2013.
+Instaurou-se este Pado em 1º de dezembro de 2017, por meio do Despacho Ordinatório de Instauração nº 90/2017/SEI/CODI/SCO (SEI nº 2174179), em razão de apontamentos constantes do Relatório de Fiscalização nº 0951/2015-GR01, de 26 de maio de 2015 (SEI nº 2174146), reunidos no Informe nº 1264/2017/SEI/CODI/SCO (SEI nº 2174139).
+Em 21 de junho de 2018, a Recorrente apresentou sua defesa administrativa (SEI nº 2869130) e em 30 de maio de 2019, suas alegações finais (SEI nº 4207443).
+Por meio do Informe nº 457/2019/CODI/SCO (SEI nº 4411548), de 6 de dezembro de 2019, as alegações da Recorrente foram analisadas e, em razão do valor de multa proposto, os autos foram remetidos à Procuradoria Federal Especializada junto à Anatel (PFE).
+Em 4 de março de 2020, a PFE se manifestou no Parecer 125/2020/PFE-ANATEL/PGF/AGU (SEI nº 5293051).
+A Recorrente juntou aos autos petição (SEI nº 7375974) em 9 de setembro de 2021, com manifestação sobre as alterações do RASA.
+Em 27 de setembro de 2021, por meio do Informe 173/2021/CODI/SCO (SEI nº 6942396), a área técnica analisou o Parecer e teceu novas considerações sobre a sanção, remetendo, mais uma vez, os autos à PFE, que se manifestou no Parecer 747/2021/PFE-ANATEL/PGF/AGU (7779392), de 7 de dezembro de 2021.
+Por meio do Informe nº 642/2022/CODI/SCO (SEI nº 8844394), de 1º de setembro de 2022, os autos foram analisados, com sugestão de aplicação de sanção de advertência e de multa à Recorrente.
+Sobreveio o Despacho Decisório ora recorrido (SEI nº 8849092), com o seguinte teor:
+"(...)
+1. Aplicar à prestadora as seguintes sanções:
+1.1. ADVERTÊNCIA, em razão do descumprimento ao art. 15, §3º, do Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477/2007; e
+1.2. MULTA, no valor total de R$39.194.797,25 (trinta e nove milhões, cento e noventa e quatro mil, setecentos e noventa e sete reais e vinte e cinco centavos), em razão dos descumprimentos ao art. 6º, XX, do RSMP, aprovado pela Resolução nº 477/2007, e do art. 2º, do Ato nº 2.103, de 22/03/2013.
+2. Caso a prestadora resolva, de acordo com o disposto no §5º do art. 33 do Regulamento de Aplicação de Sanções Administrativas (Rasa), aprovado pela Resolução nº 589/2012, renunciar expressamente ao direito de recorrer da decisão de primeira instância, fará jus a um fator de redução de 25% (vinte e cinco por cento) no valor total da multa aplicada, perfazendo, neste caso, montante de R$29.396.097,94 (vinte e nove milhões, trezentos e noventa e seis mil, noventa e sete reais e noventa e quatro centavos), desde que faça o recolhimento no prazo regulamentar."
+Notificada em 23 de setembro de 2022 (SEI nº 9168460), a Recorrente interpôs Recurso Administrativo (SEI nº 9249254) no dia 5 de outubro do mesmo ano (SEI nº 9249258).
+Atribuiu-se efeito suspensivo quanto à sanção de multa, nos termos da Certidão SEI nº 9249388.
+Pelo Informe nº 272/2024/CODI/SCO (SEI nº 12465574), de 7 de outubro de 2024, foram analisadas as alegações da Recorrente, com sugestão de manutenção da decisão recorrida.
+Pelo Despacho Decisório nº 157/2024/CODI/SCO (SEI nº 12507283), o Superintendente de Controle de Obrigações decidiu conhecer do Recurso, encaminhando os autos a este Conselho para análise de mérito pela Matéria nº 749/2024 (SEI nº 12507329).
+Realizado sorteio em 17 de outubro de 2024 (SEI nº 12751574), os autos foram sorteados para a relatoria da então Conselheira Substituta Cristiana Camarate, cujo acervo foi posteriormente assumido pelo então Conselheiro Substituto Daniel D'Albuquerque (SEI nº 12850586). 
+Em 14 de novembro de 2024, a Recorrente juntou Memoriais (SEI nº 12888464) aos autos.
+Na Reunião nº 941 deste Conselho Diretor, realizada em 13 de março de 2025, nos termos da Análise nº 15/2025/DD (SEI nº13246972), foi solicitada a prorrogação de relatoria da matéria por 120 (cento e vinte) dias.
+Em 06 de maio de 2025, a então Conselheira Substituta Cristiana Camarate reassumiu o acervo do gabinete anterior, conforme consta da Certidão de Distribuição SEI nº 13651480.
+Analisando os autos, se verificou a necessidade de esclarecimentos adicionais, solicitados por meio do Ofício nº 15/2025/CL-ANATEL de diligência (SEI nº 13921817) em 1º de julho de 2025.
+A resposta foi encaminhada pelo Informe nº 556/2025/CODI/SCO (SEI nº13966088), em 14 de julho de 2025.
+Na Reunião nº 945 deste Conselho Diretor, realizada em 7 de agosto de 2025, nos termos da Análise nº 50/2025/CL (SEI nº 14117448), foi solicitada nova prorrogação de relatoria da matéria por 120 (cento e vinte) dias.
+Em 28 de agosto de 2025, a Recorrente apresentou petição extemporânea (SEI nº14277092).
+Em razão da minha nomeação para compor o Conselho Diretor, o acervo do gabinete da Conselheira Substituta Cristiana Camarate foi redistribuído, momento em que fui designado o novo relator da matéria (SEI nº 14319967).
+É o relatório.
+DA ANÁLISE
+Da Admissibilidade do Recurso
+Primeiramente, cumpre destacar que a tramitação do processo ocorreu em consonância com os dispositivos legais e regulamentares, sendo observados os princípios do processo legal, do contraditório e da ampla defesa, conforme estabelecem a Lei de Processo Administrativo (LPA), Lei nº 9.784, de 29 de janeiro de 1999, e o Regimento Interno da Anatel.
+Quanto à admissibilidade do Recurso, verifica-se que, nos termos do Regimento Interno da Agência, ele é cabível em face da decisão proferida por autoridade competente, e atende aos pressupostos de tempestividade, legitimidade e interesse em recorrer.
+A Recorrente foi notificada em 23 de setembro de 2022 (SEI nº 9168460), uma sexta-feira, e interpôs Recurso (SEI nº 9249254) no dia 5 de outubro (SEI nº 9249258), quarta-feira.
+A peça recursal foi subscrita por pessoa legitimada (SEI nº 3208053); a Recorrente possui interesse recursal, na medida em que foi sucumbente; a decisão atacada é passível de recurso; e o presente recurso não contraria entendimento fixado em Súmula da Agência.
+Da petição extemporânea
+Conforme relatado, em 28 de agosto de 2025, a Recorrente apresentou a petição extemporânea SEI nº 14277092. 
+De acordo com a Súmula nº 21, de 10 de outubro de 2017:
+"As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado".
+A mencionada petição é extemporânea e foi protocolizada antes da publicação da pauta da Reunião do Conselho Diretor em que foi incluído este PADO. Desse modo, deve ser conhecida e terá seu conteúdo examinado no curso da presente análise.
+Das infrações
+As infrações apuradas no presente PADO, conforme tabela abaixo, foram extraídas do Despacho Ordinatório de Instauração (SEI nº 2174179), e das planilhas de cálculo de multa (SEI nº 8849042 e 8849046) que subsidiaram o Despacho recorrido:
+ Conduta
+ | 
+ Infração
+ | 
+ Metodologia
+ | 
+ Situação final
+ | 
+ A prestadora não forneceu o protocolo para as solicitações de bloqueio dos serviços adicionais Vivo Foto Torpedo, Vivo Vídeo Torpedo e Vivo Me Liga, efetuadas pela equipe de fiscalização.
+ | 
+ Art. 15, §3º, do RSMP
+ | 
+ n/a
+ | 
+ Caracterizada pontual
+ | 
+ A prestadora não permitiu o bloqueio dos serviços adicionais Vivo Foto Torpedo, Vivo Video Torpedo e Vivo Me Liga.
+ | 
+ Art. 6º, XX, do RSMP
+ | 
+ DGU
+ | 
+ Caracterizada sistêmica
+ | 
+ A prestadora efetuou cobrança de valor pelo envio de mensagens MMS (Vivo Foto Torpedo e Vivo Vídeo Torpedo) e não suspendeu as ofertas Vivo Me Liga e Vivo Torpedo Web, não possibilitando o devido bloqueio dos respectivos serviços.
+ | 
+ Art. 2º do Ato 2103, de 22 de março de 2013
+ | 
+ Descumprimento de determinação
+ | 
+ Caracterizada
+ | 
+A fiscalização ocorreu no período de 9 de março a 25 de maio de 2015.
+Do Recurso
+Passo à análise das razões do recurso.
+(i) Da preliminar de mérito
+(i.1) Da nulidade da instauração do PADO: vício de omissão que se perpetuou durante a instrução do processo e resulta no cerceamento de defesa - ausência de ampla dilação probatória
+Relata a Recorrente que o presente PADO é derivado do PADO de nº 53500.024609/2012-41, cujas conclusões foram reunidas no Informe nº 1264/2017/SEI/CODI/SCO, tendo a fiscalização o objetivo de verificar o cumprimento das determinações contidas nos arts. 2º e 3º do Ato nº 2.013, de 22 de março de 2013 (fls. PDF 111, SEI nº 0667837).
+Nos autos do PADO nº 53500.024609/2012-41, este Conselho Diretor teria proferido o Acórdão nº 249 (SEI nº 1667065), em 18 de julho de 2017, por meio do qual, dentre outras questões, determinou à SCO a continuidade da apuração das irregularidades elencadas no Relatório de Fiscalização nº 0951/2015-GR01 (SEI nº 2174146).
+Porém, quando da instauração do presente PADO, limitou-se a trazer aos autos referido Relatório de Fiscalização sem dar continuidade à apuração e antes mesmo de se debruçar sobre as alegações defensivas da Recorrente, já expostas nos autos desde 2015.
+Nesse sentido, teria apresentado, nos autos do PADO nº 53500.024609/2012-41, 4 (quatro) cartas comunicando o cumprimento das determinações contidas no Ato nº 2.013, de 2013, bem como provas a respeito, tendo requerido o arquivamento do feito. A análise de seu conteúdo teria se dado de forma superficial no Informe nº 173/2021/CODI/SCO (SEI nº 6942396), anos após sua juntada, quando a SCO sumariamente afastou as provas apresentadas, aduzindo:
+que amostras de telas produzidas unilateralmente pela prestadora precisam de maior detalhamento dos seus itens para que possam servir, no caso concreto, como documentos probatórios, o que não foi feito (item 3.13); e,
+quanto ao anexo (SEI 0667868) da CTR*J 1.004/2015 (págs. 335 a 339 do SEI 2174151), vale pontuar que, para buscar desconstituir a constatação dos fiscais, não basta à prestadora fazer uma amostra e apresentar supostas faturas em planilha em excel, uma vez que não possuem comprovação de sua origem e vinculação com os fatos apurados, tampouco demonstram a realidade dos dados de seus sistemas (item 3.14).
+Ao assim proceder, na visão da empresa, a Anatel (i) inverteria indevidamente o ônus da prova; (ii) atuaria de modo a impedir que o agente exerça a atividade probatória ao não apreciar a matéria em tempo adequado; e (iii) desconsideraria informações relativas aos fatos apurados, extraídas dos sistemas da prestadora e que poderiam ser facilmente certificadas pela Anatel.
+A Anatel descumpriria o disposto no art. 29 da LPA e o art. 82 do Regimento Interno, no sentido de que recai sobre ela a comprovação da culpabilidade e a produção de provas que atestem a materialidade da conduta. Ainda, ao afastar genericamente as provas juntadas, viola o direito do administrado de ter suas alegações e documentos minuciosamente analisados, bem como o dever de fundamentação adequada, conforme prevê o art. 3º, III e o art. 50, V, da LPA, o art. 489, IV, do CPC e o art. 90, X, da CF.
+A argumentação recursal prossegue aduzindo que a multa teria sido aplicada mais de 7 (sete) anos após a apresentação de referidas provas, quando a prestadora não teria mais condições de produzir novas provas devido ao lapso temporal decorrido, sendo que sua obrigação vigente à época, nos termos do art. 10, XXII, do RSMP, era a guarda de documentos por 5 (cinco) anos.
+Portanto, a mora da Agência onerou demasiadamente a Recorrente e seu direito ao contraditório e ampla defesa, assim como nítido e claro cerceamento de defesa e violação à garantia de duração razoável do processo.
+Quanto aos documentos por ela trazidos aos autos para comprovar a não ocorrência de infração, alega que uma vez que a Anatel admitiu como válidas as informações para apenar a prestadora, tanto que instaurou o presente PADO, deveria, por força do art. 412 do CPC, igualmente, considerar como verdadeiras as informações relativas ao cumprimento do Ato ou, ao menos, ter produzido provas contrárias.
+Do exposto, requereu a anulação da decisão recorrida. 
+Analisando os autos do PADO nº 53500.024609/2012-41, verifiquei que as alegações da Recorrente não merecem acolhida. Referido PADO foi instaurado em razão de achados no Relatório de Fiscalização n.º 0016/2012/ER01FV, de 26 de junho de 2012, que concluiu que o bloqueio de alguns serviços pela VIVO S.A. inibia o funcionamento de outras facilidades.
+Nesta seara, o Ato n.º 2.013, de 22 de março de 2013, do Superintendente de Serviços Privados da Anatel (SPV), decidiu aplicar multa no valor de R$ 105.094,88 (cento e cinco mil noventa e quatro reais e oitenta e oito centavos), referente à infração ao artigo 6º, inciso XX, do Regulamento do Serviço Móvel Pessoal; determinar à VIVO S.A., até que a mesma adeque sua sistemática de bloqueio: 
+a proibição de cobrança de valor de seus Usuários pelo envio de mensagens MMS por meio do VIVO FOTO TORPEDO e do VIVO VIDEO TORPEDO;
+a suspensão da oferta VIVO ME LIGA e VIVO TORPEDO WEB; e determinar à VIVO S.A. que promova a adequação da informação acerca do bloqueio da Caixa Postal, prevista em sua página na Internet, de forma a esclarecer ao Usuário que não serão armazenadas as chamadas não atendidas em razão da indisponibilidade do aparelho (desligado ou fora da área de cobertura).
+A VIVO recorreu da decisão e, posteriormente, aderiu ao REFIS, renunciando ao direito de recorrer. Dessa forma, este Conselho extinguiu o julgamento quanto à sanção de multa.
+Naquele ínterim, no intuito de averiguar o fiel cumprimento integral do Ato n.º 2.013, de 22 de março de 2013, a Gerência de Controle de Obrigações de Direitos dos Consumidores da Anatel (CODI) solicitou à Superintendência de Fiscalização da Anatel (SFI), por intermédio da Solicitação de Fiscalização n.º SOLCODI2015000007, relatório detalhado contendo material suficiente e adequado, que evidenciasse e comprovasse que a VIVO S.A. atendeu aos comandos do supradito Ato, identificando o momento em que a empresa implementou os ajustes pertinentes ao cumprimento da determinação. Sobreveio então o Relatório de Fiscalização nº 0951/2015/GR01.
+Ciente de tal Relatório, este Conselho, ao decidir sobre a desistência do recurso no PADO 53500.024609/2012-41, também determinou à Superintendência de Controle de Obrigações da Anatel (SCO), órgão competente para adotar as medidas de acompanhamento e controle, que desse continuidade à apuração das irregularidades elencadas no Relatório de Fiscalização n.º 0951/2015/GR01, tendo como objeto o descumprimento do art. 2º do Ato n.º 2.013, de 2013.
+Ou seja, diante dos indícios de descumprimento do Ato nº 2.013, contidos no Relatório de Fiscalização n.º 0951/2015/GR01, a SCO atuou em conformidade com o Regimento Interno da Anatel, instaurando o presente PADO, assegurando a ampla defesa e o contraditório. A partir da instauração do presente PADO, portanto, é que os documentos apontados pela Recorrente seriam, e foram, analisados.
+No que se refere à suposta análise superficial das cartas que teria juntado nos autos do PADO 53500.024609/2012-41 e que comprovariam o cumprimento do Ato, tampouco as alegações merecem prosperar. Consta, no Informe nº 173/2021/CODI/SCO (SEI nº 6942396), a análise das cartas e telas enviadas. A própria PFE, inclusive, teceu considerações sobre a documentação no Parecer nº 00125/2020/PFE-Anatel/PGF/AGU (SEI nº 5293051), as quais, a seu ver, implicavam em um mero inconformismo da Recorrente com a situação, acabando por reconhecer a infração.
+Especificamente quanto às telas apresentadas, que trariam uma amostra para comprovar a ausência de cobrança do serviço, a área técnica citou a ausência de maiores detalhamentos ou de outros documentos, notando que na amostra enviada havia, inclusive, a menção de cobrança pelo serviço que alegava não cobrar.
+Em outra documentação analisada, que buscava desconstituir os achados dos fiscais, a área técnica menciona a apresentação de faturas em planilha excel, quando a Prestadora poderia ter trazido cópia das faturas originais dos clientes e não o fez. Nesse caso, não há que se falar em inversão inadequada do ônus da prova, na medida em que o ônus de desconstituir os achados da fiscalização recaía sobre a Recorrente, que deveria tê-lo feito mediante documentação adequada, a qual possuía em seu poder.
+Quanto ao lapso temporal, em tendo sido fiscalizada em 2015, com um processo em trâmite, caberia à Recorrente, se quisesse, ter mantido os documentos sob sua guarda, mas não o fez. Vale notar que o processo sancionador obedece a rito processual e segue os limites temporais de investigação previstos na legislação.
+Por fim, a Anatel admitiu como válidos, para apenar a Recorrente, os achados dos fiscais e não documentos e telas como os apresentados pela empresa, de forma que não há que se falar em contrariedade ao art. 412 do CPC. 
+Do exposto, as alegações não merecem prosperar.
+(ii) Do mérito
+(ii.1) Da ausência de comprovação da materialidade: falhas no procedimento fiscalizatório 
+No mérito a Recorrente alega que o Despacho de Instauração teria apontado o descumprimento ao art. 6º, XX, do RSMP, uma vez que a Prestadora não permitiria o bloqueio dos serviços adicionais, implicando, igualmente, na constatação de descumprimento do Ato nº 2.013, de 2013.
+Ocorre que, em sua defesa e nas alegações finais, teria demonstrado que a conclusão da fiscalização não merecia prosperar. Isso porque os procedimentos adotados estariam maculados por graves vícios, incapazes de atestar a materialidade das irregularidades.
+Alega que os serviços Vivo Foto Torpedo e Vivo Vídeo Torpedo são o mesmo serviço, qual seja, o Multimedia Messaging Service (MMS) e a realização do bloqueio, conforme reconhecido no Relatório de Fiscalização, se dava mediante ligação gratuita para o número *5050, conforme divulgado em sua página na internet, conforme imagem acostada em seu recurso, como segue:
+Dito isso, conclui que a previsão de bloqueio era de 48 (quarenta e oito) horas úteis - em que pese a referência na imagem acima a "48 horas" -, em aderência ao disposto no art. 15, caput, do RGC, que prevê o prazo de 2 (dois) dias úteis para a rescisão sem intervenção de atendente. No entanto, tal prazo não teria sido respeitado pela fiscalização, conforme consta no item 5.2.2.1 do Relatório e nos termos do quadro resumo trazido no Recurso, abaixo:
+Por entender não haver sido comprovada a materialidade da conduta, requereu a anulação da sanção imposta.
+Registra-se que em sua petição extemporânea (SEI nº 14277092), a recorrente reitera integralmente as alegações ora apresentadas, tendo acrescentado que "em nenhum dos testes realizados pelos fiscais há a efetiva demonstração do transcurso do lapso de 48 horas úteis. Não foi informado pelo fiscal a hora do registro do pedido de bloqueio, tampouco do envio das mensagens", de forma que haveria clara ausência de evidenciação da materialidade da infração e a presunção de legitimidade dos atos administrativos não prevaleceria sobre o princípio da presunção de inocência.
+O dispositivo infringido assim dispõe:
+Art. 6º São direitos do Usuário do SMP, além de outros previstos pela legislação e pela regulamentação:
+(...)
+XX - bloqueio da utilização de quaisquer comodidades ou facilidades não previstas no Plano de Serviço ao qual está vinculado, bem como de serviços de valor adicionado, com a correspondente redução no valor devido pelo Usuário, independentemente de prazo de carência ou multa, ressalvados os débitos já constituídos junto à prestadora;
+A fiscalização analisou, para cada serviço, qual era o procedimento de bloqueio sem intervenção de atendente descrito na página da prestadora na Internet. Para o Vivo Foto Torpedo e Vídeo Torpedo, constava na página da Prestadora que, após solicitado, o cancelamento se daria em até 48 (quarenta e oito) horas, como consta da imagem reproduzida acima no item 4.33.17.
+Ao solicitar o bloqueio, o fiscal foi avisado, porém, que o prazo para bloqueio era de até 48 (quarenta e oito) horas úteis, o que difere do prazo que constava na página da Prestadora na internet.
+Para o Vivo Me liga, consta a mensagem de que, após solicitação, o serviço é bloqueado em até 48 (quarenta e oito) horas úteis. Para o serviço Vivo Torpedo Web, não há opção de bloqueio.
+A fiscalização, então, habilitou duas linhas em um plano pré-pago e realizou os seguintes testes:
+Vivo Foto Torpedo/Vivo Vídeo Torpedo
+ 15/05/2015
+ | 
+ sexta-feira
+ | 
+ envio de uma foto e um vídeo, havendo cobrança às 13h59. Na sequencia, foi solicitado o bloqueio do serviço, sendo informado o prazo de 48 horas úteis, sem envio de protocolo.
+ | 
+ 18/05/2015
+ | 
+ segunda-feira
+ | 
+ envio de foto com cobrança às 13h05. Solicitado o desbloqueio, o qual levaria 48 horas úteis.
+ | 
+ 21/05/2015
+ | 
+ quinta-feira
+ | 
+ solicitação de bloqueio, sendo informado o prazo de 48 horas úteis.
+ | 
+ 25/05/2015
+ | 
+ segunda-feira
+ | 
+ envio de foto e vídeo, com cobrança.
+ | 
+Vivo Me Liga
+ 15/05/2015
+ | 
+ sexta-feira
+ | 
+ realização de chamada, tendo o outro terminal recebido mensagem. Não houve cobrança. Foi solicitado o bloqueio, sendo informado o prazo de 48 horas úteis.
+ | 
+ 18/05/2015
+ | 
+ segunda-feira
+ | 
+ realização de chamada, tendo o outro terminal recebido mensagem. Não houve cobrança.
+ | 
+ 19/05/2015
+ | 
+ terça-feira
+ | 
+ Realização de 11 chamadas, tendo o outro terminal recebido 10 mensagens e o terminal de envio sido informado do atingimento do limite de 10 utilizações diárias. Não houve cobrança
+ | 
+ 21/05/2015
+ | 
+ quinta-feira
+ | 
+ realização de chamada, tendo o outro terminal recebido mensagem. Não houve cobrança
+ | 
+Vivo Torpedo Web: não é permitido o bloqueio.
+O art. 6º, XX, do RSMP, estabelece como direito do usuário o bloqueio da utilização de quaisquer comodidades ou facilidades não previstas no Plano de Serviço ao qual está vinculado.
+Vale notar que me coaduno com o entendimento contido no PADO 53500.024609/2012-41. O Regulamento do SMP prevê o direito do usuário de bloquear quaisquer serviços, sem, portanto, restringir apenas aos serviços pagos.
+Dessa forma, no que se refere ao serviço Vivo Me Liga, verifica-se que, embora gratuito até o 10º envio de mensagem/dia, a Prestadora não efetuou o bloqueio do serviço, solicitado pela fiscalização em 15/05/2015, uma vez que os testes realizados posteriormente evidenciaram a continuidade do serviço entre os dias 18 a 21/05/2015, ou seja, muito além do prazo previsto de 48 horas úteis para efetivação do bloqueio.
+Assim, restou demonstrado no Relatório de Fiscalização que a Recorrente não cumpre o disposto na norma para o serviço Vivo Me Liga, caracterizando-se a infração ao art. 6º, XX, do RSMP.
+Importante notar ainda que os prazos de atendimento fixados no Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações aprovado pela Resolução nº 632, de 7 de março de 2014 (RGC/2014) são prazos máximos de atendimento. Nada impede que a prestadora ofereça prazos mais curtos ou condições mais vantajosas para o atendimento ao consumidor (in casu, 48 horas como foi feito no site da empresa transcrito acima).
+Nesse sentido, o bloqueio foi solicitado em 15/5 e no dia 21/5 continuava em funcionamento.
+Para o serviço Vivo Torpedo Web, a fiscalização apenas registrou a seguinte observação no Relatório de Fiscalização:
+Do acima exposto, entendo que também haveria descumprimento da norma, na medida em que a Recorrente não permite o bloqueio da facilidade. Porém, suposta infração não constou do Despacho de Instauração como conduta com indícios de irregularidade ao art. 6º, XX, do RSMP. Isso porque a fiscalização entendeu que, apesar de não ser permitido o bloqueio, o serviço só estava disponível para usuários que se cadastrassem no portal "Meu Vivo". Constou no Despacho de Instauração o que segue:
+Dessa forma, não é possível punir a Recorrente pela suposta irregularidade de não realização de bloqueio do serviço Vivo Torpedo Web, em razão da ocorrência de prescrição, por não ter constado do Despacho de Instauração e, assim, não ter sido avaliada no PADO.
+Por tal razão, reconhecida a prescrição impõe-se remessa de cópia dos autos à Corregedoria da Agência, a fim de que adote as providências que julgar cabíveis.
+No que se refere ao serviço Vivo Foto Torpedo e Vivo Vídeo Torpedo, como dito, de acordo com a informação contida na página da Recorrente na Internet, o serviço seria bloqueado em até 48 (quarenta e oito) horas após a solicitação. No entanto, ao solicitar o bloqueio, o fiscal recebeu uma mensagem informando que esse prazo era de 48 (quarenta e oito) horas ÚTEIS. Segundo a Recorrente, o prazo em horas úteis encontra respaldo no art. 15, do RGC, verbis: 
+Art. 15. Os pedidos de rescisão processados sem intervenção de atendente, na forma deste Regulamento, devem ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito.
+§ 1º É devido, pelo Consumidor, o pagamento referente aos serviços usufruídos durante o prazo de processamento do pedido de rescisão automático.
+§ 2º Deve ser garantida ao Consumidor a possibilidade de cancelar seu pedido de rescisão no prazo previsto no caput.
+A Recorrente alegou, adicionalmente, que a fiscalização não aguardou o prazo de 48 (quarenta e oito) horas ÚTEIS necessárias ao bloqueio.
+No Relatório de Fiscalização, verifiquei que constam apenas as datas de pedido de bloqueio do serviço, mas não a hora em que o pedido foi efetivado. 
+Como transcrito na tabela de item 4.33.25.1, entre 15/5, uma sexta-feira, e 18/5, uma segunda-feira, se passaram 48 (quarenta e oito) horas, mas não 48 (quarenta e oito) horas úteis. 
+Já entre 21/5, uma quinta-feira, e 25/5, uma segunda-feira, para se afirmar que se passaram 48 (quarenta e oito) horas úteis, seria necessário saber a hora do pedido de bloqueio. 
+Nesse sentido, questionei a área técnica (SEI nº 13921817), em diligência, sobre a existência de algum documento que pudesse esclarecer a questão do prazo suscitado pela Recorrente.
+Em resposta (SEI nº 13966088), a área técnica informou que a fiscalização apresentou apenas as datas e horários dos envios de MMS - 6 (seis) no total, 4 (quatro) fotos "MMSVI" e 2 (dois) vídeos "MMSVV", com o valor da cobrança de cada um deles. Não consta o horário do pedido de bloqueio do serviço.
+A Recorrente, por sua vez, também não fez provas de que o fiscal não aguardou 48 (quarenta e oito) horas úteis. Sobre as provas anexadas pela Recorrente, a área técnica informou que "o arquivo "Dossiê Bloqueio de MMS" (SEI nº 9249255), apresentado pela Telefônica em sua peça recursal, não possui informações acerca do terminal (11) 94391-9218 utilizado pela fiscalização (aba Plan 1), não sendo possível aferir os horários das solicitações de bloqueio e de desbloqueio do serviço relativas a este terminal para averiguação do atendimento ao prazo de 48 (quarenta e oito) horas úteis. Do mesmo modo, as telas do sistema NGIN, presentes nas abas evidências 1 a 11 do arquivo "Dossiê Bloqueio de MMS", somente apontam as solicitações de bloqueio do serviço MMS pelo usuário, sem indicação das respectivas datas e horários em que foram efetuadas. O arquivo "Dossiê DOC 2" (SEI nº 9249257), por sua vez, apenas ilustra o passo a passo que deve ser seguido pelo usuário para a solicitação de bloqueios de serviços".
+A conclusão dos fiscais sobre o bloqueio do Vivo Foto/Vídeo Torpedo é a seguinte:
+No presente caso, embora não tenha sido mencionado o horário de solicitação dos bloqueios demandados dias 15/05 e 21/05/2015, e do desbloqueio solicitado pela fiscalização no dia 18/05/2015, a Prestadora poderia facilmente ter comprovado tais informações em sua própria defesa, inclusive, confirmando que efetuou tais ações e que, de fato, seria possível tanto bloquear, quanto desbloquear o serviço.
+Não procede, do mesmo modo, a alegação apresentada em petição extemporânea de que não foi informado pelo fiscal a hora de envio das mensagens, pois todas as mensagens enviadas, com as respectivas datas e horários, constam no "Histórico de Consumo" anexado ao relatório de fiscalização (SEI nº 2174146, pág. 29 e seguintes), conforme excerto abaixo:
+Quanto aos horários de solicitação de bloqueio, apesar de não terem sido informados no relatório, é possível notar da própria imagem acima que os terminais foram utilizados pela fiscalização no dia 21/05/2015 no período da manhã, enquanto no dia 25/05/2015, as movimentações ocorreram no período da tarde, ou seja, com intervalo superior a 48 horas úteis, embora não seja possível determinar o momento exato da solicitação de bloqueio. Além disso, registra-se que ao realizar referidos testes, não foram devidamente informados para a fiscalização os respectivos protocolos de atendimento que deveriam conter tais informações, infrações estas que também restaram caracterizadas e sancionadas nos presentes autos.
+Vale notar que além das constatações acima, nem mesmo as informações adicionais, relativas à solicitações de bloqueio de outros usuários, apresentadas pela Recorrente nos Dossiês SEI nº 9249255 e 9249257 foram capazes de comprovar que se atendia ao disposto na regulamentação. Note-se que, conforme já mencionado no item 4.27.9 da presente Análise, referida documentação já havia sido efetivamente avaliada nos autos, conforme excerto abaixo, extraído do Informe nº 173/2021/CODI/SCO:
+3.13. Ocorre que as telas juntadas não indicam o arguido pela prestadora, mas, ao contrário, apontam a existência de serviço adicional. Já a segunda tela apresenta uma cobrança de R$0,90 (noventa centavos) pelo serviço MMS. Ressalta-se, ainda, que amostras de telas produzidas unilateralmente pela prestadora precisam de maior detalhamento dos seus itens para que possam servir, no caso concreto, como documentos probatórios, o que não foi feito.
+3.14. Já quanto ao anexo (SEI 0667868) da CTR*J 1.004/2015 (págs. 335 a 339 do SEI 2174151), vale pontuar que, para buscar desconstituir a constatação dos fiscais, não basta à prestadora fazer uma amostra e apresentar supostas faturas em planilha em excel, uma vez que não possuem comprovação de sua origem e vinculação com os fatos apurados, tampouco demonstram a realidade dos dados de seus sistemas .
+Ressalto, neste ponto, a nova análise dos mencionados Dossiês realizada no Informe nº 556/2025/CODI/SCO, já reproduzida acima, no sentido de que nos arquivos apresentados há apenas uma lista de solicitações de bloqueios do serviço MMS, não havendo sequer a "indicação das respectivas datas e horários em que foram efetuadas".
+Analisei, adicionalmente, as demais abas de referida planilha, que conteriam "evidências" quanto à realização dos bloqueios e neste ponto, corroboro com o entendimento da área técnica de que as telas apresentadas isoladamente e as faturas em formato excel não são capazes de demonstrar que a prestadora efetivamente realizou qualquer dos bloqueios solicitados, o que somente confirma a constatação realizada pela fiscalização de que as solicitações de bloqueio não eram efetivadas, configurando a infração sistêmica.
+Do exposto, entendo que a infração ao art. 6º, XX, do RSMP resta caracterizada para o Vivo Me Liga e para o Vivo Foto/Vídeo Torpedo, sendo que o primeiro estava disponível para usuários pré-pago e controle, e o segundo para usuários pós-pagos, pré-pagos e controle, conforme se observa abaixo:
+(ii.2) Da improcedência da imputação de descumprimento do Ato nº 2.013, de 2013: regularidade no procedimento de bloqueio dos serviços adicionais
+A Recorrente prossegue argumentando não ter sido analisada por esta Agência a regularidade no procedimento de bloqueio dos serviços "Vivo foto/vídeo torpedo" e "Vivo me liga", já demonstrada nos autos do PADO 53500.024609/2012-41.
+Naqueles autos, teria demonstrado, por meio de amostragem, a ausência de cobrança dos serviços tidos por irregulares. Também teria juntado ao processo uma lista de usuários que solicitaram o bloqueio do serviço, bem como amostra de contas de usuários com espelho de conta em que é possível identificar a solicitação de bloqueio e o detalhamento de cada conta utilizada como evidência amostral para demonstrar a não cobrança do serviço.
+Tais evidências não teriam sido analisadas pela CODI, que descreveu apenas as conclusões da fiscalização, anterior à juntada de tais documentos aos autos.
+Nesse contexto, reitera o atendimento às determinações contidas no Ato e junta novamente planilha que comprovaria a ausência de cobrança dos serviços tidos como irregulares (SEI nº 9249255), assim como dossiê (SEI nº 9249257) que demonstraria a conformidade dos procedimentos de bloqueio e desbloqueio.
+Afirma ter cumprido o disposto no art. 2º do Ato, pois:
+no que se refere ao item (i) do art. 2º do Ato, conforme ocorre com usuários dos planos pós-pago e controle (em que, desde 2012 o serviço MMS é gratuito e ilimitado), em outubro de 2015 lançou o Plano Tarifação Default (plano diário) pré-pago que já tem incluso o envio de MMS sem cobrança;
+para usuários antigos, a Recorrente teria possibilitado o bloqueio conforme telas abaixo:
+No que se refere ao item (ii) do art. 2º do Ato, que versava sobre a suspensão das ofertas Vivo Me Liga e Vivo Torpedo Web, enquanto não fosse possibilitado o devido bloqueio dos respectivos serviços, também afirma ter esclarecido que o Vivo Me Liga é absolutamente gratuito e o usuário pode solicitar o bloqueio conforme telas que teria apresentado (SEI nº 4207444):
+Quanto ao Vivo Torpedo Web, tratava-se de serviço que nos dias atuais perdeu a sua funcionalidade e foi desabilitado pela Recorrente antes mesmo da instauração do presente PADO.
+Do exposto, requereu a descaracterização das infrações. 
+Para melhor compreender os objetivos da fiscalização que ensejou o presente PADO e a infração ora em análise, necessário transcrever trecho do Informe 397/2013-PVCPR/PVCP/SVP (fls. PDF 81 e seguintes, SEI nº 0667837), nos autos do PADO 53500.024609/2012-41, que culminou na edição do Ato fiscalizado.
+De acordo com referido Informe, havia um problema na sistemática de bloqueio dos serviços VIVO FOTO TORPEDO, VIVO VÍDEO TORPEDO, VIVO ME LIGA E VIVO TORPEDO WEB, como segue:
+Como se vê, ao bloquear tais serviços, a conexão WAP também era bloqueada. Em razão disso, se determinou que até a adequação da sistemática de bloqueio, ou seja, que se bloqueie o MMS sem bloquear o WAP, a Recorrente não cobrasse os usuários pelo envio de mensagem MMS.
+Quanto ao VIVO ME LIGA e VIVO TORPEDO WEB, o bloqueio implicava no bloqueio de qualquer envio de SMS pelo usuário, além do não recebimento de protocolos de atendimento da prestadora. Assim, apesar da gratuidade dos serviços, restou determinada a sua suspensão até que fosse ajustada a sistemática de bloqueio, ou seja, que o bloqueio de uma facilidade não implicasse no bloqueio de um serviço (SMS).
+Portanto, o Ato 2.013, de 2013 (fls. PDF 111, SEI nº 0667837), determinou:
+Art. 2.º Determinar à VIVO S/A, até que a mesma adeque sua sistemática de bloqueio:
+i. a proibição de cobrança de valor de seus usuários pelo envio de mensagens MMS por meio do VIVO FOTO TORPEDO e do VIVO VÍDEO TORPEDO;
+ii. a suspensão da oferta VIVO ME LIGA e VIVO TORPEDO WEB
+(grifei)
+O Relatório de Fiscalização concluiu:
+Na análise dos argumentos recursais, a área técnica se limitou a transcrever a análise realizada no Informe nº 173/2021/CODI/SCO (SEI nº6942396), posto que a Recorrente não inovou em seus argumentos:
+3.42. Cumpre destacar que a Telefônica se limita a repetir os argumentos apresentados anteriormente, os quais, ao contrário do alegado por ela, foram devidamente analisados pelo Informe nº 173/2021/CODI/SCO (6942396), cuja análise se transcreve abaixo:
+3.10. Ora, a mudança de cenário, derivada do transcurso do tempo, não diminui em nada a irregularidade de descumprimento ao art. 2º do Ato nº 2.013/2013. Quanto às telas de sua página na internet, não logram êxito em comprovar que cumpriu a determinação, mas somente demonstram o caminho que o usuário deveria seguir para tentar bloquear um serviço não solicitado por ele.
+3.11. Já os argumentos contra a caracterização do artigo 6º, XX, do RSMP, tem-se que estes já foram devidamente analisados por meio do Informe nº 457/2019/SEI/CODI/SCO (SEI 4411548) e pelo Parecer nº 00125/2020/PFE-ANATEL/PGF/AGU (SEI 5293051), que concordou com a análise proferida no referido Informe. Ambos os documentos concluíram pela caracterização das infrações constantes do Despacho Ordinatório de Instauração nº 90/2017/SEI/CODI/SCO (SEI 2174179), o que afasta a possibilidade de cessação espontânea da infração.
+3.12. Na CTR*J 1.004/2015 (págs. 335 a 339 do SEI 2174151), a prestadora busca trazer telas de seus sistemas de forma "amostral" e comprovar a não cobrança do serviço após a solicitação de bloqueio, como segue:
+3.13. Ocorre que as telas juntadas não indicam o arguido pela prestadora, mas, ao contrário, apontam a existência de serviço adicional. Já a segunda tela apresenta uma cobrança de R$0,90 (noventa centavos) pelo serviço MMS. Ressalta-se, ainda, que amostras de telas produzidas unilateralmente pela prestadora precisam de maior detalhamento dos seus itens para que possam servir, no caso concreto, como documentos probatórios, o que não foi feito.
+3.14. Já quanto ao anexo (SEI 0667868) da CTR*J 1.004/2015 (págs. 335 a 339 do SEI 2174151), vale pontuar que, para buscar desconstituir a constatação dos fiscais, não basta à prestadora fazer uma amostra e apresentar supostas faturas em planilha em excel, uma vez que não possuem comprovação de sua origem e vinculação com os fatos apurados, tampouco demonstram a realidade dos dados de seus sistemas .
+3.42. Assim, reitera-se a análise feita pelo informe supracitado, ressaltando-se que a prestadora não apresentou nenhum argumento novo capaz de alterar o entendimento da área técnica.
+Entendo de forma diversa da área técnica.
+Em relação ao Vivo Foto/Vídeo Torpedo, o Ato determinou a proibição da cobrança até que fossem feitos ajustes na sistemática de bloqueio. O ajuste não se referia a efetuar ou não o bloqueio e a proibição não era simplesmente a de cobrar pela facilidade.
+O que o Ato nº 2.013, de 2013 determinou foi bloquear o Vivo Foto/Vídeo Torpedo sem que o portal de serviços Wap ou qualquer outro site da Internet móvel fosse igualmente bloqueado. Apenas enquanto isso não fosse possível, ou seja, que a sistemática não fosse ajustada, a cobrança pelo uso das facilidades não poderia ser realizada.
+Ocorre que em nenhum momento a adequação da sistemática de bloqueio foi avaliada pelos fiscais. Intentou-se verificar apenas se era permitido ou não o bloqueio das facilidades.
+A conclusão de infração ao Ato se daria apenas mediante a constatação de que, em não tendo havido ajustes na sistemática de bloqueio, houve cobrança pelo serviço, o que não foi o caso.
+Portanto, em relação ao Vivo Foto/Vídeo Torpedo, não há materialidade da infração ao Ato 2.013 nos autos.
+Quanto ao Vivo Me Liga e Vivo Torpedo Web, o Ato determinou a suspensão da oferta até a adequação da sistemática de bloqueio uma vez que restou constatado, nos autos do PADO 53500.024609/2012-41 que o bloqueio de tais facilidades implicaria no bloqueio de qualquer envio de SMS pelo usuário, além do não recebimento de protocolos de atendimento da prestadora.
+Restou verificado pela fiscalização que a prestadora não bloqueia nenhuma das duas facilidades, o que implica em infração ao art. 6º, XX. Porém, a fiscalização não verificou (ou se viu impossibilitada de verificar) se eventual bloqueio também acarretaria no bloqueio de SMS, o que efetivamente demonstraria que a Prestadora não efetivou a adequação em sua sistemática de bloqueio e caracterizaria descumprimento do Ato nº 2.013.
+Nesse contexto, igualmente ausente a materialidade da infração, posto que a fiscalização deixou de averiguar o comando principal da ordem emanada no Ato nº 2.013, que seria a adequação da sistemática de bloqueio.
+Destaca-se, ainda, que o Ato em questão foi expedido em 22/03/2013 e a fiscalização foi realizada quase dois anos após, no período de 09/03/2015 à 25/05/2015, tendo averiguado, tão somente, se era possível ou não o bloqueio dos serviços Vivo Foto/Vídeo Torpedo, Vivo Torpedo Web e Vivo Me Liga, além da adequação da informação acerca do bloqueio da Caixa Postal, determinada no Art. 3º do Ato.
+Conforme se afere do Relatório de Fiscalização, a atividade fiscalizatória logrou êxito em confirmar o atendimento à disposição contida no art. 3º do Ato, no entanto, no que se refere ao art. 2º, não verificou especificamente se os serviços poderiam ser bloqueados sem interferir no bloqueio de outras facilidades e serviços.
+Observa-se que somente a partir da constatação de que não houve tal adequação na sistemática de bloqueio, seria possível determinar se a cobrança pelo envio de MMS por meio do Vivo Foto/Vídeo Torpedo seria regular ou não e se os serviços Vivo Me Liga e Vivo Torpedo Web deveriam estar suspensos. No entanto, a única constatação obtida pela fiscalização quanto aos referidos serviços foi a de que os procedimentos de bloqueio adotados pela Prestadora durante o período fiscalizado não eram efetivos, em descumprimento ao art. 6º XX, do RSMP.
+Neste ponto, cumpre registrar que, analisando-se o histórico do PADO nº 53500.024609/2012-41, consignado no Informe nº 51/2016-CODI (pág. 343 e seguintes, SEI nº 0667837) a atividade de fiscalização, cujo resultado culminou na instauração do presente PADO, foi solicitada a fim de que fosse identificado se a Prestadora atendeu aos comandos determinados no ATO, "identificando-se ainda o momento em que a empresa implementou os ajustes pertinentes ao cumprimento da determinação", para comprovar o integral cumprimento do disposto nos artigos 2º e 3º do Ato n.º 2.013:
+Conforme já reiterado na presente Análise, não houve no referido relatório qualquer averiguação quanto à implementação da adequação necessária na sistemática de bloqueio, tampouco o momento em que esta implementação teria se dado, não sendo possível, portanto, confirmar as alegações da Prestadora, apresentadas no decorrer deste procedimento e em sua peça recursal, de que havia adotado medidas para atender às determinações da Agência
+Do exposto, em que pese o Relatório (i) ter identificado que não teria sido possível bloquear os SVAs analisados no prazo informado pela Recorrente; e (ii) ter verificado haver cobrança pelo uso de tais facilidades; não logrou êxito em demonstrar se sistemática de bloqueio que originou o Ato 2.013 foi ajustada. Tal sistemática de bloqueio, em resumo, consistia em proibir:
+o bloqueio do SVA em conjunto com o bloqueio de internet (Wap);e
+o bloqueio de SVA em conjunto com o bloqueio de SMS.
+Assim, voto por:
+ negar provimento ao Recurso Administrativo; e
+descaracterizar, de ofício, por ausência de materialidade, as infrações ao Ato nº 2.013, de 2013, mantendo-se caracterizada a infração ao art. 6º, XX do RSMP em relação aos serviços Vivo Foto/Vídeo Torpedo e para o Vivo Me Liga.
+Passo a tratar da sanção.
+DA SANÇÃO
+A Recorrente prossegue em suas alegações requerendo a reforma da dosimetria punitiva. Nesse sentido, menciona que:
+o Ato nº 2.013, de 2013, não previa a aplicação de sanção pelo seu descumprimento, devendo a mesma ser anulada diante do princípio da anterioridade da pena, conforme art. 5º, XXXIX, da CF, e que, ademais, a metodologia utilizada sequer passou por Consulta Pública, sendo desconhecida à época da prolação do Ato;
+caso mantido o sancionamento, a multa aplicada é desproporcional e desarrazoada, considerando todas as ações adotadas pela empresa e o fato de que tais serviços caíram em desuso. A única referência adotada no cálculo é a ROL, não sendo ponderada a quantidade ínfima de usuários afetados, eventual vantagem auferida e a baixa ofensividade da conduta. Assim, deve-se adotar metodologia mais justa e razoável;
+houve equívoco na classificação da infração ao art. 6º, XX, como sistêmica, devendo ser alterada para pontual. Suposta falha se refere ao plano Vivo Pré Toda Hora GSM, que foi testado pela fiscalização, de forma que não se pode supor que o procedimento atingia toda a base do SMP. Requer, portanto, a alteração dos usuários atingidos para 6.000 (seis mil) consistente naqueles que pediram bloqueio do serviço MMS ou a totalidade de usuários do referido plano;
+o fator tempo merece correção, já que classificado como até 6 meses, sendo que os fiscais se valeram de apenas 3 ligações ocorridas entre 18 e 25 de maio de 2015;
+deve ser aplicada atenuante de 70% (setenta por cento) para as infrações, pois antes da instauração do PADO não havia qualquer irregularidade em seu procedimento de bloqueio, tampouco havia cobrança pelo serviço de MMS, além de ter descontinuado o Vivo Torpedo Web.
+No que se ao item 4.37.1, descaracterizada a infração ao Ato, o pedido perdeu o objeto.
+Passo a tratar das demais alegações.
+Primeiramente, tem-se que a infração ao art. 15, § 3º, classificada como leve, foi apenada com advertência, o que deve ser mantido.
+Para a infração ao art. 6º, XX, do RSMP, ou seja, aquela mantida após o disposto na presente Análise, apenada com multa, foi utilizada, para seu cálculo, a metodologia de infrações a direitos dos usuários, aprovada pela Portaria nº 791, de 2014, que tem a seguinte fórmula de cálculo:
+VBase = (Ua / Ut)0,5 x (FatorDT) x (1/FG) x Vref
+Onde:
+a) VBase: Valor-base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;
+b) Ua: Quantidade de Usuários que foram afetados pela infração;
+c) Ut: Total de Usuários da base da Prestadora;
+d) FatorDT: Fator de proporcionalidade da Infração obtida da seguinte forma:
+FatorDT = (D + T)/6
+Onde "D" (Dano) refere-se ao Dano da infração e "T" (Tempo) refere-se à duração da infração.
+A classificação do parâmetro D observará as seguintes condutas:
+Relativamente ao Dano, as circunstâncias mais leves somente serão consideradas caso a conduta não se enquadre também em uma mais gravosa. Caso a situação fática não se amolde a nenhuma das condutas elencadas na tabela acima, a área responsável a enquadrará com base nos princípios legais e diretrizes regulatórias. Por fim, caso sejam evidenciadas situações de calamidade pública, segurança nacional, ou que haja expressivo impedimento ou dificuldade à fruição do Serviço de Utilidade Pública ou a Serviço Público de Emergência, o Dano poderá alcançar o valor igual a 10(dez).
+Ressalte-se que a existência de valores diferenciados para um determinado tipo de Dano tem o objetivo de possibilitar ao aplicador da sanção a valoração, no caso concreto, da conduta decorrente da infração, considerando que, dentro dos tipos listados na tabela, é possível diferenciar a reprovabilidade da infração de acordo com a intensidade do dano provocado.
+Para classificação do T, deve ser verificada a duração da infração conforme o quadro abaixo:
+ Tempo
+ | 
+ 1
+ | 
+ Até 1 dia
+ | 
+ 1,5
+ | 
+ De 1 dia a 30 dias
+ | 
+ 2
+ | 
+ Entre 30 dias e 6 meses
+ | 
+ 2,5
+ | 
+ Entre 6 meses e 1 ano
+ | 
+ 3
+ | 
+ Mais de um ano
+ | 
+e) FG: Fator de Gravidade. Fator referente à Gradação da Infração, assumindo os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave).
+f) Vref: Valor correspondente a um percentual k = 1% da Receita Operacional Líquida – ROL da prestadora, da época da aplicação da sanção. Não sendo esse levantamento possível, deve-se utilizar a receita operacional anual mais próxima à aplicação da sanção. O valor da ROL deve ser obtido pela relação da ROL anual dividida por 12."
+Os parâmetros adotados foram o que seguem (SEI nº 8849042):
+ Infração
+ | 
+ Ua
+ | 
+ Ut
+ | 
+ Tempo
+ | 
+ Dano
+ | 
+ FG
+ | 
+ Agrav.
+ | 
+ Aten.
+ | 
+ 6º, XX
+ | 
+ 1
+ | 
+ 1
+ | 
+ 2
+ | 
+ 4
+ | 
+ 1
+ | 
+ 15%
+ | 
+ 0%
+ | 
+Foi utilizada a ROL do Estado de SP, no ano de 2020, da Telefônica no SMP, por ser a área de abrangência da infração.
+Quanto aos agravantes, foram computados 5% (cinco por cento) de antecedentes e 10% (dez por cento) em razão de mais de uma hipótese do art. 9º, §3º do RASA.
+O tempo (T) foi preenchido com a informação "até 6 meses", de acordo com o período de realização da atividade fiscalizatória – 09/03/2015 e 25/05/2015 (pág. 2 do SEI nº 2174146).
+A variável dano (D) foi preenchida automaticamente, no menor valor escalonado para tanto, por não se vislumbrar, na análise do caso concreto, justificativas para a majoração desse fator. 
+Alega a Recorrente que a multa foi desproporcional e desarrazoada. Registra-se que a presente alegação também foi reiterada em sua petição extemporânea, na qual solicitou, adicionalmente, a aplicação da metodologia de "Descumprimento do obrigações Contratuais".
+Porém, neste caso concreto, verificou-se a ocorrência de infrações aos direitos e garantias dos usuários previstas no Regulamento do Serviço Móvel Pessoal, razão pela qual considera-se adequada a aplicação da metodologia prevista na Portaria nº 791/2014, vigente à época da decisão exarada no presente PADO. Ressalta-se a improcedência da alegação relativa à falta de proporcionalidade e razoabilidade da multa, uma vez que a sanção é calculada mediante o uso de critérios objetivos. A ofensividade da conduta foi observada na aplicação do dano no valor mínimo e a capacidade econômica do infrator na área de abrangência da infração foi igualmente considerada.
+Quanto à suposta quantidade ínfima usuários atingidos, a Recorrente não trouxe dados para demonstrar tal ocorrência. O fato de tais serviços terem caído em desuso não abona a conduta ilegal praticada.
+Quanto ao pedido de alteração da infração ao art. 6º, XX, de sistêmica para pontual, a Recorrente alega serem 6.000 (seis mil) os usuários que teriam solicitado o bloqueio do MMS, mas não apresentou dado algum sobre tal quantitativo. De toda forma, a infração aqui mantida não se refere ao MMS, mas sim à facilidade Vivo Foto/Vídeo Torpedo, disponível para todas as modalidades de serviço e Vivo Me Liga, disponível, conforme transcrito acima, para usuários de planos pré-pago e controle.
+Tal infração deve ser mantida como procedimental, por ter o potencial de atingir usuários de todas as modalidades de serviço da prestadora. 
+Quanto ao fator tempo, não há informações de cessação da infração até o fim da atividade de fiscalização, razão pela qual mantenho o tempo aplicado pela área técnica.
+Quanto ao pedido de aplicação de atenuante, o RASA estabelece o que segue:
+Art. 20. O valor da multa será reduzido, nos percentuais abaixo, caso incidam as seguintes circunstâncias atenuantes:
+I - 90% (noventa por cento), nos casos de cessação espontânea da infração e reparação total do dano ao serviço e ao usuário, previamente à ação da Agência;
+II - 70% (setenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, antes da intimação da instauração do Pado ou dentro do prazo estipulado pela Anatel, quando assim ocorrer; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+III - 50% (cinquenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, até o término do prazo para a apresentação de alegações finais em âmbito de Pado; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+IV - 20% (vinte por cento), nos casos de adoção de medidas, pelo infrator, para minimizar os efeitos decorrentes da infração cometida e reparação total ao usuário, quando cabível, até o término do prazo para apresentação de alegações finais nos autos do Pado; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+V - 15% (quinze por cento), nos casos de confissão clara e expressa do infrator acerca da autoria e materialidade do fato apurado, apresentada até o término do prazo para apresentação de defesa. (Incluído pela Resolução nº 746, de 22 de junho de 2021)
+Não há dados nos autos que permitam inferir a cessação da infração, especialmente para usuários antigos, tampouco para minimizar os efeitos da infração cometida, de forma que rejeito o pedido.
+Por fim, registra-se que as demais alegações apresentadas na Petição extemporânea SEI nº 14277092 são referentes à infração ao Ato nº 2.013, já descaracterizada na presente Análise.
+Em resumo, proponho:
+o conhecimento do Recurso Administrativo para, no mérito, negar-lhe provimento;
+o conhecimento da Petição extemporânea SEI nº 14277092, nos termos da Súmula nº 21, de 10 de outubro de 2017, e indeferir os pedidos nela contidos;
+a reforma de Ofício da decisão recorrida para descaracterizar, por ausência de materialidade, a infração ao art. 2º do Ato nº 2.013, de 2013; 
+manter a sanção de Advertência pela infração ao art. 15, § 3º do RSMP e a sanção de multa no valor de R$8.709.954,94 (oito milhões, setecentos e nove mil novecentos e cinquenta e quatro reais e noventa e quatro centavos) pela infração ao art. 6º, XX do RSMP, conforme Planilha I - Cálculo Sanção de Multa - DGU (SEI nº 8849042); e
+a remessa de cópia dos autos à Corregedoria da Anatel para que avalie a eventual apuração de falta funcional em razão da prescrição da infração relacionada ao serviço Vivo Torpedo Web.
+DA OBRIGAÇÃO DE FAZER
+Da análise de conveniência e oportunidade quanto à aplicação da sanção de Obrigação de Fazer 
+A aplicação da sanção de obrigação de fazer está prevista no RASA, nos seguintes termos: 
+Art. 15. As sanções de obrigação de fazer e de não fazer poderão ser aplicadas nas infrações classificadas como leves, médias e graves, cumulativamente ou não com a sanção de multa, quando a autoridade competente, valendo-se da oportunidade e conveniência, verificar que a imposição de prática ou abstenção de conduta à sancionada será mais razoável e adequada para o atingimento do interesse público, devendo a escolha ser devidamente motivada, observados os princípios da legalidade, razoabilidade, proporcionalidade e economicidade. 
+Como se vê, o balizador dessa decisão é o interesse público, tal como exposto no seguinte trecho extraído do Parecer nº 882/2019/PFEANATEL/PGF/AGU, de 12 de dezembro de 2019 (SEI nº 5028661), elaborado pela PFE-Anatel: 
+Parecer nº 882/2019/PFEANATEL/PGF/AGU (SEI nº 5028661) 
+"20. Como se observa, é o interesse público que irá ensejar a aplicação da sanção de obrigação de fazer. Caso a autoridade administrativa competente, no seu juízo discricionário, entenda conveniente, oportuno e mais adequado ao atendimento do interesse público a fixação de sanção de obrigação de fazer, ao invés de obrigação de pagar (multa), ou concomitantemente com esta, não haverá óbice para implementação desta medida, desde que apresente a devida fundamentação. 
+(...)
+25. De início, é muito importante registrar que a opção/escolha pela obrigação de fazer, ao invés da obrigação de pagar (multa), recai exclusivamente no âmbito de discricionariedade da autoridade administrativa, não caracterizando, assim, qualquer espécie de direito, opção ou escolha por parte do administrado. 
+26. Assim, é irrelevante para a aplicação da obrigação de fazer a existência de eventual pedido formulado por uma entidade que responde a um processo punitivo, pois não se trata de acolher ou rejeitar a pretensão da autuada, mas, sim, de definir a espécie de sanção à luz do interesse público, conforme acima demonstrado. 
+27. Acrescente-se que esta circunstância decorre diretamente da compreensão de que a sanção de obrigação de fazer não é melhor ou pior do que a sanção de obrigação de pagar (multa). As duas espécies de sanção possuem - e devem possuir - a mesma envergadura, sendo certo que ambas, observadas as suas respectivas naturezas e características, devem ser aptas a atingir as funções clássicas da pena relativas à repressão e prevenção quanto ao cometimento de infrações."
+Do projeto de conectividade de universidades públicas (federais, estaduais e municipais) e institutos federais 
+Da diligência 
+Em 3 de outubro de 2025, pelo Ofício nº 9/2025/OP-ANATEL, nos autos do Processo nº 53500.081616/2025-65, demandei às Superintendências de Regulamentação (SPR), Competição (SCP) e Controle de Obrigações (SCO), o levantamento e mapeamento de carências e lacunas de serviços de telecomunicações, bem como das respectivas infraestruturas de transporte e de acesso, das instituições públicas de ensino superior, pesquisa e extensão (portanto, universidades federais, estaduais e municipais e institutos federais).
+A partir de tal levantamento, solicitei o encaminhamento de proposta de valores de referência para a adoção de obrigações de fazer e outros projetos de implementação de políticas públicas para o atendimento dos tipos de lacunas encontradas.
+Em resposta à diligência por mim formulada, nos termos do Informe Técnico nº 187/2025/PRUV/SPR (SEI nº 14883767), de 31 de dezembro de 2025, as áreas técnicas apresentaram o resultado obtido com a Tomada de Subsídios nº 9/2025 (SEI nº 14513242), realizada para a coleta de informações, posteriormente refinadas em conjunto com a Rede Nacional de Ensino e Pesquisa – RNP.
+Importante mencionar que a conexão dessas instituições à internet se dá normalmente por intermédio da RNP, associação de direito privado, sem fins lucrativos, qualificada como organização social (OS) nos termos da Lei nº 9.637, de 15 de maio de 1998, já que a RNP oferece às instituições acesso a plataformas e aplicações específicas, que podem ser consultados por meio do link https://www.rnp.br/servicos/servicos-do-sistema-rnp/ Por esse motivo, a área técnica, acompanhada por este gabinete, tem dialogado com a RNP sobre o levantamento em tela.
+Também é importante mencionar os entendimentos com os ministérios das Comunicações e da Educação ao longo deste processo, notadamente por meio de diálogos bilaterais, reuniões e a formalização, junto ao MCOM, por meio do Ofício nº20/2025/OP-Anatel (SEI nº 14559937).
+A Tomada de Subsídios realizada pela Área Técnica recebeu 1310 (mil trezentas e dez) contribuições de 85 (oitenta e cinco) universidades federais, estaduais e municiais e de institutos federais, conforme detalhado no referido Informe.
+A RNP, por sua vez, enviou à Anatel, em 22 de dezembro de 2025, uma listagem (SEI nº 14963393) com a análise do status de conexão de cada unidade mencionada na tomada de subsídios, informando o seguinte panorama (SEI nº 14963339):
+ 226 unidades estaduais ou municipais não conectadas, atualmente com status em discussão;
+ 110 unidades federais não conectadas;
+ 40 unidades já conectadas;
+ 4 unidades com previsão de conexão.
+Quanto às 226 (duzentas e vinte e seis) unidades estaduais e municipais citadas, ressaltou que a conexão não pode ser tratada de forma automática. Assim, no momento da resposta, haveria 110 (cento e dez) unidades de universidades federais aptas a serem conectadas e, portanto, objeto de políticas públicas.
+Ato contínuo, as áreas técnicas da Anatel e da RNP, acompanhadas por este gabinete, estão mantendo diálogo com as instituições responsáveis pelas 226 (duzentas e vinte e seis) unidades estaduais e municipais mencionadas, no sentido de esclarecer eventuais pendências. Feito isso, a lista de unidades aptas a serem contempladas com as obrigações de fazer aqui tratadas será atualizada, com a inclusão de novas unidades.
+Diante disso, a Área Técnica da Anatel não vislumbrou óbices regulatórios à substituição da sanção pecuniária pela de obrigação de conectividade às universidades públicas e institutos federais sem conexão, considerando que um dos objetivos estratégicos da Agência é o de "Promover a conectividade universal e significativa com qualidade e segurança".
+Feita essa introdução, avaliou a aderência da sanção de obrigação de fazer, consistente na conectividade em instituições públicas de ensino superior, às condições estabelecidas no art. 16 do RASA vigente, conforme detalharei adiante.
+Do alinhamento da obrigação de fazer aos requisitos estabelecidos no RASA 
+Os parâmetros a serem observados pela sanção de obrigação de fazer estão previstos no art. 16 do RASA, com redação dada pela Resolução nº 784, de 7 de novembro de 2025:
+"Art. 16. As sanções de obrigação de fazer e de não fazer devem observar os seguintes parâmetros:
+I - não podem se restringir ao mero cumprimento das obrigações já impostas ao infrator pelo arcabouço regulatório e pelos contratos ou termos celebrados;
+II - promover o atendimento de políticas públicas do setor de telecomunicações, em especial aquelas que visem a conectividade; (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+III - ser compatíveis com os objetivos estratégicos da Agência, constantes seu Plano Estratégico; e, (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+IV - preferencialmente, privilegiar projetos que atendam às necessidades estruturantes previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), no Plano Estrutural de Redes de Telecomunicações (PERT). (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 1º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 2º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 3º As sanções de obrigação de fazer e não fazer não se confundem com a determinação para reparação dos usuários prejudicados, nem com as medidas cautelares.
+§ 4º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)"
+O Corpo Técnico da Agência avaliou a aderência do projeto à norma no item 3.22 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), conforme transcrevo:
+3.22.1. O inciso I do mencionado dispositivo impede que as obrigações já estejam previstas no arcabouço regulatório e nos contratos e termos celebrados. De fato, não há instrumento dessa natureza que obrigue as prestadoras a proverem conectividade às instituições de ensino superior, pesquisa e extensão. Tampouco existe, no PGMU V ou em outras sanções de obrigação de fazer, compromissos de implementação de rede de transporte para essas instituições. Assim, verifica-se que a obrigação ora cotejada não viola o primeiro condicionante do art. 16.
+3.22.2. O art. 16, II, estabelece que a obrigação de fazer visa promover o atendimento de políticas públicas, com destaque para projetos que fomentem a conectividade. Nesse sentido, o provimento de conectividade às instituições de ensino superior, pesquisa e extensão alinha-se a tal propósito, materializando a instrução de implementar e complementar as políticas setoriais constante do Decreto nº 9.612, de 17/12/2018, em especial de seu art. 2º, IV, "a", art. 3º e art. 4º, I, III, IV e V, uma vez que tais infraestruturas incentivam e fomentam a pesquisa brasileira.
+3.22.3. No art. 16, III, tem-se o comando de que as obrigações de fazer devem ser compatíveis com os objetivos estratégicos da Anatel (conforme Plano Estratégico). Como o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão fornece acesso a serviços de alta capacidade para instituições estratégicas, a presente obrigação de fazer materializa o objetivo estratégico de resultado nº 1 e nº 3 do Plano Estratégico da Anatel 2023-2027, quais sejam "Promover a conectividade universal e significativa com qualidade e segurança" e "Fomentar a transformação digital e a inovação tecnológica junto à sociedade". Mais especificamente, o instrumento teria o condão de atender aos objetivos estratégicos dos processos 1A "Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos", 1B "Viabilizar a expansão e a implantação da infraestrutura da rede de base", 1D "Proteger as infraestruturas críticas da conectividade" e 3B "Fomentar aplicações e modelos de negócio inovadores".
+3.22.4. O art. 16, IV, dispõe que, preferencialmente, a obrigação de fazer deverá atender as necessidades previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental - PCS e no Plano Estrutural de Redes de Telecomunicações - PERT. Nessa seara, o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão está de acordo com os projetos do PERT ATUAL de "Projetos de conectividade para locais de relevante interesse público", mais especificamente o projeto 1 "Conectividade Educacional". De qualquer forma, a presente Tomada de Subsídio poderá resultar na inclusão no PERT de um projeto específico nesse sentido.
+Assim, não há dúvidas quanto à aderência da obrigação submetida a este Colegiado ao art. 16 do RASA.
+Do alinhamento da obrigação de fazer com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU) 
+Como bem consignou a Área Técnica nos itens 3.30 a 3.33 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), na Reunião nº 929, de 08/02/2024, nos termos do Acórdão nº 65, de 28/02/2024 (SEI nº 11578112) e com fulcro na Análise nº 4/2024/AF (SEI nº 11360149), este Conselho Diretor decidiu aprovar a alteração da Agenda Regulatória para o biênio 2023-2024, na forma da Resolução Interna nº 290, de 28/02/2024 (SEI nº 11578151), modificando, dentre outros aspectos, o item 10 da Agenda Regulatória 2023-2024. Dentre a alteração promovida, determinou-se que a conversão de multas pecuniárias em obrigações de fazer devem estar voltadas ao cumprimento de metas ESG, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), o que, igualmente, restou demonstrado no referido Informe.
+Do modelo de custos da obrigação de fazer 
+Para a delimitação da presente obrigação de fazer, foram solicitados subsídios à RNP, os quais foram encaminhados por meio dos e-mails (SEI nº 14963487 e nº 14890826).
+Entre os documentos encaminhados, consta o arquivo "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), anexo ao Contrato Master (SEI nº 14963517), com as especificações técnicas da conectividade que precisa ser fornecida por uma prestadora de serviços de telecomunicações para as instituições usuárias do sistema RNP. 
+Apresentou, ainda, (a) a relação das instituições de ensino superior que ainda não são atendidas pela RNP; (b) a relação completa dos Pontos de Presença (PoPs) da RNP; (c) um estudo detalhado dos custos médios do megabit (Mb/s) por região e média nacional, apurados a partir de contratos vigentes firmados pela própria RNP.
+Para se delimitar os custos da obrigação, foram estabelecidos três pilares principais:
+I - Circuito de Transporte: Contratação de capacidade de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto);
+II - Rede Móvel: Cobertura do campus das instituições de ensino;
+III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto).
+Com isso, o presente projeto de ODF consiste, precipuamente, na instalação e na manutenção de enlace ponto a ponto de conectividade entre os campi de instituições de ensino superior federal, estadual ou municipal e a rede da RNP (item I – Circuito de Transporte). Para as instituições situadas em regiões carentes de infraestrutura básica de conectividade, prevê-se, ainda, a possibilidade de instalação e de manutenção de backhaul de fibra óptica que permita o fechamento do circuito de transporte item III – Backhaul de fibra óptica).
+No que se refere à Rede Móvel (item II), o presente projeto visa subsidiar a Anatel com informações sobre áreas de sombra dos campi das instituições beneficiadas, para que, em momento futuro, se avalie a pertinência de implementação de rede móvel local. Logo, esta presente análise não versará sobre o item II, sem prejuízo de seu tratamento posteriormente.
+Assim, observado que (i) instituições de ensino localizadas em área urbana, em regra, prescindem da instalação de infraestrutura de backhaul; enquanto (ii) instituições de ensino em zona rural são mais propensas a depender desse tipo de instalação prévia, a Prestadora deverá apresentar, quanto a estas últimas, declaração formal de que inexiste, nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio. 
+Adicionalmente, deve ser observado que o somatório dos custos totais da execução dos projetos deve ser igual ou superior ao valor da sanção de multa aplicada neste caso concreto, com as correções monetárias e dedução, nos termos do Rasa.
+Conforme salientado no Informe da Área Técnica (SEI nº 14883767), quanto ao Item I - Circuito de Transporte, a precificação apresentada em relação aos custos envolvidos para o circuito de transporte ponto a ponto (entre a instituição de ensino e o PoP da RNP), disponibilizados na Planilha Valores ODF Conectividade IPES (SEI nº 14890893), considerou que a solução técnica deve estar orientada "à contratação de serviço de transporte de dados com capacidade de 1 Gbps”.
+Esta solução deve estar aderente às cláusulas contratuais de conectividade da RNP, conforme melhor detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767) e no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+Além disso, a ODF deve prever que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP nos modelos de contrato.
+A estratégia de dimensionamento da rede fundamenta-se na entrega padrão inicial de 1 Gbps por instituição, conforme diretriz técnica reportada pela RNP em reunião, o que assegura o atendimento imediato às demandas institucionais. Segundo o modelo operacional da RNP, a expansão dessa capacidade ocorre de forma otimizada mediante upgrades sob demanda, condicionados à prévia constatação técnica de saturação do circuito original.
+Os valores para contratação do circuito também derivam dos contratos vigentes da RNP, conforme apresentado no Anexo I (SEI nº 14890826) do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), cujos custos médios anuais por megabit (Mb/s), avaliados nacionalmente e segmentados por região (Centro-Oeste, Nordeste, Norte, Sudeste, Sul), servem de base para o presente planejamento.
+É importante destacar que a Anatel adotou, de forma integral, exatamente os mesmos valores de referência e requisitos técnicos de conectividade praticados pela RNP em seus certames. Tal adoção fundamenta-se na premissa de convergência metodológica desta ODF com a operação da rede da RNP. Justifica-se que os modelos de contratação da RNP representam o estado da arte em termos de definições técnicas e aderência às especificidades geográficas e operacionais do território brasileiro, servindo como o espelho ideal para a política pública de conectividade das instituições de ensino.
+Dessa forma, a utilização dos valores de referência da RNP assegura a eficiência econômica, pois os contratos da RNP incorporam ganhos de escala e condições de mercado diferenciadas, validados por uma ampla base de contratos capilarizada em todas as regiões do país. Portanto, a solução técnica alinhada aos referenciais praticados pela RNP garante a compatibilidade com o mercado de telecomunicações e o cumprimento dos princípios de eficiência na aplicação dos recursos públicos.
+Adicionalmente, considerou-se um custo para a implantação do serviço de conectividade (taxa de instalação), também estimado com base no histórico de contratos da RNP desde 2010, que observa que as taxas de instalação cobradas pelas operadoras de telecomunicações representam, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Com base nesse prazo e nos custos apurados, foi desenvolvida a planilha de cálculo anexa ao Informe 187/2025/PRUV/SPR (Anexo II - Valores de referência ODF para Conectividade em instituições públicas de ensino superior - SEI nº 14890893). Esta planilha sistematiza o cálculo dos custos totais do projeto e requer a seguinte customização para obter o cálculo final:
+ Acessar a aba "1B ENT TOTAL INSTITUIÇÕES";
+ Informar a quantidade exata de instituições a serem contempladas pela política pública de conectividade, por região;
+ O resultado final pode ser verificado na aba "CAPA".
+Já em relação ao "Item III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto)", "aplicam-se os custos de implantação de rede de transporte com tecnologia Dense Wavelength Division Multiplexing (DWDM), já previstos no instrumento da OdF, visando o atendimento a instituições de ensino localizadas em regiões remotas. A escolha por backhaul em fibra óptica com tecnologia DWDM, em detrimento de alternativas com limitações de desempenho, como micro-ondas e satélites, é fundamental pois garante a alta disponibilidade, a baixa latência e a elevada capacidade da rede, elementos cruciais para o cumprimento do SLA do circuito nos padrões RNP. A precificação considerou premissas relativas tanto à implantação completa da rede DWDM (abrangendo todos os equipamentos da solução DWDM, a rede externa de fibra óptica e a infraestrutura civil das estações) quanto à operação e manutenção dos ativos por um horizonte temporal de 3 (três) anos. Os valores e detalhamentos associados a estes custos estão dispostos no Informe nº 8/2023/CPAE/SCP (SEI nº 9663283), em seu anexo Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261)".
+Ainda quanto aos custos, destacou-se questão relevante acerca do período de manutenção da infraestrutura (Opex), contido no modelo de custo apresentado pela CPAE. A esse respeito, este Conselho Diretor tem entendido que a operadora sancionada não deve somente proceder à instalação da infraestrutura, mas mantê-la operacional e atendendo aos consumidores por um período mínimo de 3 (três) anos, de forma que a inclusão de custos operacionais para o cálculo de estimativa de obrigações de fazer já é questão pacificada no âmbito deste Colegiado.
+Assim, o presente projeto de ODF consiste na instalação e na manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), de modo que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519). A depender da infraestrutura de conectividade disponível para a instituição contemplada, o projeto prevê a instalação de backhaul de fibra óptica, com especial enfoque para instituições de ensino localizadas em regiões remotas.
+Dessa forma, além da comprovação de instalação e manutenção das infraestruturas, a Prestadora também deverá comprovar ter atendido aos parâmetros definidos no referido modelo de contrato (SEI nº 14963517 e 14963519).
+Por fim, quanto à seleção das instituições de ensino superior, pesquisa e extensão, a Prestadora deverá utilizar a versão atualizada da lista disponibilizada no documento SEI nº 14963393, a qual, conforme anteriormente explicitado, ainda sofrerá alteração, vez que estão em debate com a RNP a inclusão de novas unidades.
+Das considerações adicionais a serem observadas na aplicação da sanção de obrigação de fazer 
+Como bem colocado pela Área Técnica (itens 3.56 a 3.60 do Informe nº 187/2025/PRUV/SPR - SEI nº 14883767), o monitoramento da implementação de compromissos estabelecidos pela Anatel em troca de valores a serem arrecadados pelo Estado já suscitou preocupações expressas por órgãos de controle, por essa razão, as decisões de sanção de obrigação de fazer devem prever regras para o seu acompanhamento e verificação de seu cumprimento, de modo que o procedimento seja realizado com maior segurança jurídica para as partes envolvidas.
+Dos contornos da obrigação de fazer 
+Os itens 3.61 a 3.76 do Informe da Área Técnica (SEI nº 14883767) detalham a obrigação, seu acompanhamento, requisitos a serem observados, forma de comprovação e, ainda, a possibilidade de recomposição da sanção de obrigação de fazer e a aplicação de multa em caso de descumprimento.
+Destaca referido Informe que o art. 36-A do Rasa determina que as sanções de obrigações de fazer devem ser cumpridas nos prazos previstos na decisão que as aplica, rememorando que, no caso da obrigação de fazer aplicada em segunda instância, o §3º prevê que o infrator fará jus a um fator de redução de 5% (cinco por cento) sobre o valor correspondente à sanção aplicada em segunda instância, caso não se manifeste pela preferência pela sanção de multa.
+Tal fator de redução, contudo, será aplicado após a correção do valor da sanção de multa adotado como referência para a OdF, nos termos do art. 36-A, §6º, II, do Rasa. Nesse sentido, o valor será corrigido a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, até a data da publicação do Acórdão.
+Nos termos do art. 16-A, II, do RASA, acompanho sugestão da Área Técnica para conceder o prazo de 60 (sessenta) dias para que a Prestadora se manifeste. Nesse período, a prestadora deverá (a) apresentar o projeto técnico referente à obrigação de fazer ora aplicada, levando em conta o apontamento das unidades a serem contempladas, a partir da lista consolidada pela Anatel e considerando apenas as unidades ainda não contempladas em ODFs objeto de outros processos, a análise das diversas circunstâncias relacionadas à execução de projetos de infraestrutura, tais como a verificação da viabilidade de obtenção de licenças urbanísticas e ambientais, o levantamento de custos e o dimensionamento técnico dos projetos, ou (b) optar formalmente pela conversão da OdF em multa, abrindo mão do percentual de desconto previsto no Rasa.
+No caso da apresentação do projeto técnico da sanção imposta, nos termos do art. 16-A, §2º, do Rasa, até a validação da manifestação do infrator no prazo estabelecido no item acima, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento. A Anatel deverá validar o cumprimento dos requisitos e prazos estabelecidos para a seleção de localidades.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.109.1 a 4.109.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Ainda que não tenha sido objeto das considerações encaminhadas pela área técnica, entendo necessário se garantir a diversidade regional.
+Dessa forma, no caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas, podendo , da quarta em diante, a Prestadora adotar o critério que preferir.
+Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas. Da quarta em diante, a Prestadora poderá adotar o critério que preferir.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos nesta decisão não foram adequadamente obedecidos para todas as instituições selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor equivalente às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+Essa previsão está alinhada com a recomendação da Controladoria-Geral da União - CGU contida no "Relatório de Auditoria SAAI - Manifestação da CGU" (SEI nº 8945272), de 10 de agosto de 2022, para os casos de compromissos de backhaul. Confira-se:
+"Recomendação nº 2: Resolver os casos de sobreposição indicados no Anexo I deste Relatório de Auditoria, notadamente sobre as sobreposições dos compromissos de backhaul do Edital do 5G com as demais ações regulatórias e políticas públicas."
+Embora sejam tomadas todas as precauções necessárias para evitar a sobreposição de investimentos de origem pública, em infraestrutura de telecomunicações instalada com uma mesma finalidade, essa última medida se coloca como uma possibilidade de contornar eventuais sobreposições que venham a se verificar durante o acompanhamento do provimento da conectividade, priorizando-se a seleção de nova(s) instituição(ções) substitutiva(s) para o cumprimento da sanção de obrigação de fazer, ou, nessa impossibilidade por questões relacionadas ao prazo para cumprimento - resolvendo-se a questão mediante aplicação de sanção pecuniária.
+A multa aplicada deve ter sua exigibilidade suspensa quando a Anatel realizar a validação da manifestação da prestadora com o deferimento das localidades e, somente após o integral cumprimento da sanção de obrigação de fazer e o respectivo atesto pela autoridade competente, a multa deverá ser cancelada nos sistemas de crédito da Agência, conforme prevê o art. 36-A, §7º, do Rasa.
+Outra questão que perpassa pelo acompanhamento da sanção de obrigação de fazer diz respeito ao seu descumprimento. Nesta hipótese, uma vez atestado o não cumprimento da sanção de obrigação de fazer e não fazer, haverá o trâmite para a cobrança da multa, seja proporcional ou integral a depender se o descumprimento foi parcial ou total.
+No caso de descumprimento, a multa será calculada com base no valor descrito na decisão que estabeleceu a sanção de obrigação de fazer, atualizado por meio da Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-la, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer.
+A Agência poderá solicitar a apresentação de documentos complementares ou determinar a realização de inspeção durante o prazo de cumprimento e manutenção da obrigação assumida pela Prestadora.
+Da conclusão quanto à obrigação de fazer 
+Em conclusão, voto por:
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP, tendo como base o valor de R$8.709.954,94 (oito milhões, setecentos e nove mil novecentos e cinquenta e quatro reais e noventa e quatro centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado (i) no prazo de 6 (seis) meses a partir validação da manifestação da Prestadora pela Anatel, e mantido pelo período de 3 (três) anos; ou (ii) no prazo de 1 (um) ano, nos casos em que o enlace tenha que ser complementado com a instalação de backhaul de fibra ótica, e mantido pelo período de 2,5 (dois e meio) anos.
+O somatório do custo relativo à instalação da infraestrutura e o período de sua manutenção deve ser igual ou superior ao valor da multa aplicada, considerando as correções monetárias nos termos do RASA e a precificação apresentada no item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão" do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767).
+O cumprimento da sanção de obrigação de fazer deverá ter por objeto levar conectividade às universidades públicas (federais, estaduais e municipais) e institutos federais.
+No caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas. Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas.
+Para fins de atendimento do disposto no item anterior, atendidas três macrorregiões ou unidades da federação distintas, conforme o caso, a Prestadora, em ainda havendo saldo, poderá escolher livremente as demais instituições que irá atender, entre aquelas constantes da lista.
+Para a instalação de backhaul de fibra óptica, a infraestrutura a ser instalada em cada instituição de ensino deverá possuir capacidade mínima de 10 Gbps (dez gigabits por segundo), do início ao ﬁm do trecho utilizado para atendimento da respectiva instituição de ensino. Além disso, nos projetos que envolverem Capex, a prestadora fica obrigada a disponibilizar o acesso à infraestrutura a partir da data de sua entrada em operação, nos termos da regulamentação específica, às demais prestadoras autorizadas de serviços de telecomunicações de interesse coletivo.
+O provimento da conectividade deve englobar a instalação e a manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), observando-se os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+A Prestadora deve selecionar as unidades das universidades públicas e institutos federais entre aquelas indicadas na lista constante da versão atualizada do documento SEI nº 14963393 , observadas as condições anteriormente expostas.
+Após a seleção das instituições de ensino, os custos associados aos projetos devem ser calculados de acordo com o item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão", detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), devendo-se observar quanto à aplicação de desconto o disposto no art. 36-A, §3º, do Rasa, bem como:
+Para o Circuito de Transporte, a Planilha Valores ODF Conectividade IPES (SEI nº 14890893); e
+Para o Backhaul de fibra óptica, a Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261).
+Nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, será aplicado o desconto de 5% (cinco por cento) previsto no Rasa.
+No prazo de 60 (sessenta dias), a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no Rasa, ou deverá, no mesmo prazo (i) apresentar projeto técnico da obrigação de fazer nos termos delimitados na presente Análise e no Informe 187/2025/PRUV/SPR (SEI nº 14883767); (ii) informar as instituições selecionadas para o cumprimento da sanção, nos termos estabelecidos nos itens 4.109.1 a 4.109.7.; e iii) no caso de instalação de backhaul de fibra óptica, apresentar declaração formal de que inexiste nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio.
+Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento.
+A Prestadora não adquire direito à lista de instituições públicas de ensino superior disponíveis para instalação de infraestrutura, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da Prestadora deve recair sobre as instituições públicas de ensino superior disponíveis na data em que ela comunicar à Anatel que cumprirá a sanção de obrigação de fazer.
+Eventuais conflitos decorrentes da seleção de instituições públicas de ensino superior pela operadora para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações.
+Uma vez formalizada junto à Anatel a seleção de instituições públicas de ensino superior realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal justificada à Superintendência de Controle de Obrigações, cabendo à autoridade competente decidir sobre a questão.
+A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão para seleção de instituições de ensino e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos.
+A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer ensejará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as instituições de ensino selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições de ensino, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+A instalação da infraestrutura, observados os requisitos previstos no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), deverá ser comprovada à Anatel em até 30 (trinta) dias após o exaurimento dos prazos previstos no item 4.109.1., e não poderá decorrer de acordos de RAN sharing, swap, aluguel de redes, contratos de exploração industrial ou outros meios contratuais. Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Quanto ao circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto):
+a comprovação da sua instalação deverá ser realizada, minimamente, mediante a apresentação: i) das configurações utilizadas nos equipamentos; ii) de relatórios de tráfego gerado nos equipamentos das instituições, relativos a um período mínimo de 15 (quinze) dias posteriormente à data de sua ativação; iii) de formulário e declaração do diretor ou responsável administrativo da instituição de ensino certificando que todos os requisitos foram cumpridos; iv) de formulário e declaração do responsável administrativo da Rede Nacional de Ensino e Pesquisa - RNP certificando que todos os requisitos foram cumpridos. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel, minimamente, relatórios de tráfego gerados dos equipamentos de todas as instituições de ensino atendidas em decorrência da presente decisão, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção das instituições, ou correspondentes a período posterior à data de término da obrigação, sob pena de sua conversão em multa. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+No caso da infraestrutura ser provida por meio de backhaul de fibra óptica:
+a comprovação da instalação da infraestrutura deverá ser realizada, minimamente, mediante a apresentação: de: i) as-built do projeto técnico implementado; ii) tela do sistema de gerência da prestadora, destacando o circuito físico entre os municípios de origem e destino da fibra, bem como sua capacidade; iii) tela do sistema de gerência da prestadora, destacando link lógico entre os municípios de origem e destino da fibra, bem como sua capacidade. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel e em avaliação com a prestadora; e
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel relatórios de tráfego indubitavelmente cursado nas redes instaladas, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção, ou correspondentes a período posterior à data de término da obrigação. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel.
+Os prazos de manutenção da conectividade em cada instituição de ensino são contados das datas de suas respectivas ativações. Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, aplica-se sanção de multa, em valor proporcional às estimativas de custos dos projetos das instituições de ensino em que não houver comprovação suficiente e tempestiva.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.109.1 a 4.109.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, novamente acrescidos o desconto previsto no art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção.
+Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A.
+No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa.
+Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho:
+conhecer e negar provimento ao Recurso Administrativo interposto;
+conhecer da Petição extemporânea SEI nº 14277092, nos termos da Súmula nº 21, de 10 de outubro de 2017, e indeferir os pedidos nela contidos;
+reformar, de Ofício, a decisão recorrida para descaracterizar, por ausência de materialidade, a infração ao art. 2º do Ato nº 2.013, de 2013; 
+manter a sanção de Advertência pela infração ao art. 15, § 3º do RSMP e a sanção de multa no valor de R$8.709.954,94 (oito milhões, setecentos e nove mil novecentos e cinquenta e quatro reais e noventa e quatro centavos) pela infração ao art. 6º, XX do RSMP, conforme planilha SEI nº 8849042; 
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da RNP, tendo como base o valor de R$8.709.954,94 (oito milhões, setecentos e nove mil novecentos e cinquenta e quatro reais e noventa e quatro centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado nos termos expostos no item 4.109 da presente Análise;
+Conceder o prazo de 60 (sessenta dias), a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA; e
+a remessa de cópia dos autos à Corregedoria da Anatel para que avalie a eventual apuração de falta funcional em razão da prescrição da infração relacionada ao serviço Vivo Torpedo Web.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14330202 e o código CRC 2A58F382.
+ | 
+Referência: Processo nº 53500.083092/2017-37 | 
+SEI nº 14330202 |

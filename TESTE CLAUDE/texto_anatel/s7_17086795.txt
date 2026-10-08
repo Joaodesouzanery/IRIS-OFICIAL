@@ -1,0 +1,519 @@
+SEI/ANATEL - 15271897 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 13/2026/NP
+Processo nº 53500.046715/2025-09
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRo
+NILO PASQUALI
+ASSUNTO
+Procedimento de Apuração de Descumprimento de Item de Cronograma - PADIC instaurado em face da Compromissária Telefônica Brasil S.A., com o objetivo de apurar indícios de não cumprimento integral das disposições estabelecidas nas Cláusulas 10.4, Parágrafo Único; e 10.5, alínea b, do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), de 28 de fevereiro de 2022.
+EMENTA
+DIREITO ADMINISTRATIVO. PADIC. TERMO DE AJUSTAMENTO DE CONDUTA. IQP. MULTA APLICADA.
+I. CASO EM EXAME
+ PADIC instaurado em face da Telefônica Brasil S.A. para apurar indícios de descumprimento das Cláusulas 10.4, parágrafo único, e 10.5, alínea “b”, do TAC nº 1/2022, referentes ao compromisso “Índice de Qualidade Percebida” no ano 3.
+ A Área Técnica identificou degradação do IQP por dois anos consecutivos nos serviços SCM, STFC, SeAC e SMP. A Área Técnica também identificou o não atingimento da meta de 70% de Unidades da Federação com melhora ou estabilidade no SCM e no STFC.
+ A compromissária apresentou defesa administrativa. Requereu a inclusão de margem de erro na apuração do IQP. Requereu a aplicação de metodologia posterior para retificar o estado inicial do TAC. Alegou incremento de qualidade em outros indicadores. Pediu a substituição da multa por advertência ou, subsidiariamente, o recálculo da sanção.
+ Após a distribuição dos autos, a compromissária protocolizou duas petições extemporâneas antes da divulgação da pauta. Na segunda, renovou as impugnações e acrescentou questionamento específico sobre a dosimetria da multa da Cláusula 10.5, alínea “b”.
+II. QUESTÃO EM DISCUSSÃO
+ Há cinco questões em discussão: (i) saber se compete ao Conselho Diretor deliberar sobre a proposta de multa neste PADIC; (ii) saber se devem ser conhecidas as petições extemporâneas protocolizadas antes da divulgação da pauta; (iii) saber se cabe alterar, no PADIC, a metodologia de apuração do IQP, com inclusão de margem de erro e aplicação retroativa de metodologia posterior ao estado inicial do TAC; (iv) saber se alegações de melhora em outros indicadores afastam a verificação objetiva do descumprimento das cláusulas pactuadas; e (v) saber se, configurado o descumprimento, cabe substituir a multa por advertência ou retificar a dosimetria da sanção.
+III. RAZÕES DE DECIDIR
+ Compete ao Conselho Diretor deliberar sobre a proposta de multa por descumprimento de item do cronograma, nos termos das Cláusulas 6.1 e 6.2 do TAC nº 1/2022 e do art. 25 do RTAC vigente à época.
+ A alteração posterior do RTAC pela Resolução nº 782/2025 não incide sobre o TAC firmado em 2022. O termo constitui ato jurídico perfeito.
+ As petições extemporâneas devem ser conhecidas. Elas foram protocolizadas antes da divulgação da pauta e não caracterizam abuso do direito de petição, nos termos da Súmula nº 21/2017 da Anatel.
+ O PADIC não é meio adequado para rediscutir a metodologia de mensuração do IQP pactuada no TAC. A inclusão de margem de erro exigiria alteração do instrumento por termo aditivo.
+ A referência ao intervalo de confiança de 95% e à margem de erro de 5% aplica-se ao ISG. Ela não se aplica ao IQP, conforme o Manual de Aplicação da Pesquisa citado nos autos.
+ O TAC já acomodou a ausência de margem de erro no IQP. O Conselho Diretor reduziu em 10% as metas pactuadas, conforme o Acórdão nº 415, de 17 de dezembro de 2021.
+ Para o acompanhamento das obrigações do TAC, o cálculo do IQP deve observar a metodologia vigente quando apurado o estado inicial do compromisso. Não cabe aplicar retroativamente metodologia posterior.
+ As alegações sobre incremento de qualidade em outros indicadores, desempenho setorial e premiações não afastam a verificação objetiva do cumprimento das metas específicas do IQP previstas no TAC.
+ Restaram caracterizados os descumprimentos da Cláusula 10.4, parágrafo único, em razão da degradação por dois anos consecutivos nos serviços SCM, STFC, SeAC e SMP. Restou caracterizado o descumprimento da Cláusula 10.5, alínea “b”, pelo não atingimento da meta de 70% no SCM e no STFC.
+ A substituição da multa por advertência é inviável. O TAC possui regime sancionatório próprio e vinculante. O ajuste prevê multa em caso de descumprimento.
+ A impugnação ao cálculo da multa da Cláusula 10.4, parágrafo único, não procede. A dosimetria deve considerar as Unidades da Federação em que o indicador foi efetivamente medido para cada serviço.
+ A impugnação ao cálculo da multa da Cláusula 10.5, alínea “b”, procede em parte. O § 2º da Cláusula 10.5 exige que a sanção observe a diferença percentual entre a meta estabelecida e o percentual efetivamente alcançado, sem alteração da base de comparação pactuada.
+ Com a retificação da dosimetria da Cláusula 10.5, alínea “b”, e a atualização pelo IGP-DI, a multa final corresponde a R$ 3.944.597,25
+IV. DISPOSITIVO E TESE
+ Pedidos formulados nas petições extemporâneas conhecidos. Pedidos da petição SEI nº 15146638 indeferidos. Pedidos da petição SEI nº 15436236 parcialmente deferidos, exclusivamente quanto ao ajuste da dosimetria da multa relativa à Cláusula 10.5, alínea “b”. Multa aplicada.
+Tese de julgamento: "1. Compete ao Conselho Diretor deliberar sobre proposta de multa em PADIC instaurado por descumprimento de item de cronograma do TAC nº 1/2022, nos termos do ajuste e do RTAC vigente à época. 2. Conhecem-se as petições extemporâneas protocolizadas antes da divulgação da pauta, sem abuso do direito de petição, nos termos da Súmula nº 21/2017 da Anatel. 3. O PADIC não é meio adequado para alterar a metodologia de apuração do IQP pactuada no TAC, inclusive para incluir margem de erro ou aplicar retroativamente metodologia posterior ao estado inicial do compromisso. 4. A referência ao intervalo de confiança de 95% e à margem de erro de 5% aplica-se ao ISG, e não ao IQP, e a ausência de margem de erro no IQP já foi compensada pela redução de 10% das metas pactuadas. 5. Melhorias apuradas em outros indicadores não afastam a verificação objetiva do cumprimento das Cláusulas 10.4, parágrafo único, e 10.5, alínea 'b', do TAC nº 1/2022. 6. Configurados os descumprimentos das Cláusulas 10.4, parágrafo único, e 10.5, alínea 'b', aplica-se a sanção de multa prevista no TAC, sendo incabível sua substituição por advertência. 7. Mantém-se a dosimetria da multa proposta pela Área Técnica pelo descumprimento da Cláusula 10.4, parágrafo único, com base nas Unidades da Federação em que o indicador foi efetivamente medido para cada serviço. 8. A dosimetria da multa pelo descumprimento da Cláusula 10.5, alínea 'b', deve observar a diferença percentual entre a meta pactuada e o percentual efetivamente alcançado. 9. Aplica-se à Telefônica Brasil S.A. multa de R$ 3.944.597,25, atualizada nos termos da Cláusula 12.3 do TAC nº 1/2022."
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXVI; Decreto-Lei nº 4.657/1942, arts. 6º e 22, § 1º; Lei nº 13.874/2019, art. 4º-A; Resolução nº 629/2013, arts. 3º, 17, § 1º, III, 25 e 26; TAC nº 1/2022, Cláusulas 6.1, 6.2, 10.4, parágrafo único, 10.5, alínea “b”, §§ 1º a 3º, e 12.3.
+Jurisprudência relevante citada: STF, ARE 843.989 (Tema 1199); Anatel, Súmula nº 21/2017; Anatel, Acórdão nº 240, de 22.09.2023, nos termos da Análise nº 62/2023/MM; Anatel, Acórdão nº 415, de 17.12.2021, nos termos da Análise nº 146/2021/EC; Anatel, Acórdão nº 133, de 23.05.2025, Rel. Daniel Martins D Albuquerque, Reunião nº 943, de 15.05.2025; Anatel, Acórdão nº 41, de 21.02.2025, Rel. Alexandre Reis Siqueira Freire, Reunião nº 940, de 13.02.2025; Anatel, Acórdão nº 252, de 17.09.2025, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 946, de 11.09.2025; Anatel, Acórdão nº 195, de 13.08.2025, Rel. Alexandre Reis Siqueira Freire, Reunião nº 945, de 07.08.2025; Anatel, Acórdão nº 161, de 10.07.2024, Rel. Cristiana Camarate Silveira Martins Leão Quinalia, Reunião nº 934, de 04.07.2024; Anatel, Acórdão nº 336, de 08.11.2024, Rel. Artur Coimbra de Oliveira, Reunião nº 938, de 04.11.2024; Anatel, Acórdão nº 36, de 23.02.2026, Rel. Edson Victor Eugênio de Holanda, Reunião nº 950, de 12.02.2026.
+REFERÊNCIA
+Constituição da República Federativa do Brasil de 1988.
+Lei nº 13.874, de 20 de setembro de 2019 - Lei da Liberdade Econômica.
+Decreto-Lei nº 4.657, de 4 de setembro de 1942 - Lei de Introdução às Normas de Direito Brasileiro - LINDB.
+Regimento Interno da Anatel - RIA, aprovado Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC, aprovado pela Resolução nº 629, de 16 de dezembro de 2013.
+Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), de 28 de fevereiro de 2022.
+Matéria para Apreciação do Conselho Diretor nº 33/2026 (SEI nº 15056970), de 20 de janeiro de 2026.
+RELATÓRIO
+Cuida-se de Procedimento de Apuração de Descumprimento de Item de Cronograma - PADIC instaurado em face da Compromissária Telefônica Brasil S.A., com o objetivo de apurar indícios de não cumprimento integral ao disposto nas Cláusulas 10.4, Parágrafo Único, e 10.5, alínea b (ano 3), do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), de 28 de fevereiro de 2022, firmado de acordo com os termos previstos no Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC, aprovado pela Resolução nº 629, de 16 de dezembro de 2013.
+I - DO PROCESSO DE ACOMPANHAMENTO DE TERMO DE AJUSTAMENTO DE CONDUTA Nº 53500.001314/2022-79
+Em 2 de março de 2022, instaurou-se o Processo nº 53500.001314/2022-79 para fins de acompanhamento do compromisso descrito na Cláusula 10.2. do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), denominado "Índice de Qualidade Percebida (IQP)".
+Por meio do Informe nº 111/2025/COQL/SCO, de 24 de abril de 2025 (cópia SEI nº 13915159), a Área Técnica identificou indícios de descumprimentos de itens previstos nas Cláusulas: 10.4, Parágrafo Único, diante da constatação de retrocesso do IQP por 2 (dois) anos consecutivos no SCM, STFC, SeAC e SMP; e 10.5, alínea b, posto a Telefônica não ter atingido a meta de 70% (setenta por cento) definida para o SCM e para o STFC, no ano 3.
+Com isso, propôs-se a instauração de Procedimento de Apuração de Descumprimento de Item de Cronograma - PADIC, nos termos do item 55 do Manual de Acompanhamento e Fiscalização (MAF) (cópia SEI nº 7889464), que assim dispõe:
+Manual de Acompanhamento e Fiscalização - Telefônica
+"55. Concluído o procedimento geral de fiscalização do cumprimento dos compromissos do TAC, havendo indícios de descumprimento, a SCO instaurará o Procedimento de Apuração de Descumprimento de Item de Cronograma (PADIC) e notificará a COMPROMISSÁRIA para alegações no prazo de 15 (quinze) dias, consoante art. 25 do RTAC."
+Em 18 de junho de 2025, proferiu-se o Despacho Decisório nº 449/2025/COGE/SCO (cópia SEI nº 13887720), que decidiu:
+"ATESTAR o cumprimento pela Telefônica Brasil S.A. dos compromissos previstos nas seguintes cláusulas do Termo de Ajustamento de Condutas nº 1/2022: 
+a) Cláusula 10.7, inciso I, alíneas “a”, “b” e “c” e §1º - Tratamento adequado do ressarcimento aos usuários fora da base e depósito de valores remanescentes ao Fundo de Direitos Difusos, os quais continuarão sob acompanhamento periódico até o final do prazo do TAC; 
+b) Cláusula 10.12, § 2º - Processo de Gestão de Relação de Lojas - Ano 2 - 4º Ponto de Controle; 
+c) Cláusula 10.13, §3º, alínea b - Ampliação de 4G na localidade - Footprint 4G - Ano 2; d) Cláusula 10.14, §4º, alíneas b - Ampliação de capacidade SMP - Novas portadoras 4G - Ano 2; e) Cláusula 10.5, parágrafo único, alínea c - Melhoria de Resiliência de rede - Ano 3. 
+ATESTAR a conformidade quanto teor dos Projetos Executivos aos requisitos previstos no MAF (SEI nº 7889464), possibilitando o acompanhamento dos compromissos abaixo relacionados e relativos ao quarto ano de vigência do Termo de Ajustamento de Condutas nº 1/2022, ressalvando-se as observações contidas nos Informes constantes dos processos de acompanhamento de cada compromisso: 
+a) Cláusula 10.2 a 10.5, Índice de Qualidade Percebida (IQP); 
+b) Cláusula 10.7, §1º - Tratamento adequado do ressarcimento aos usuários fora da base e depósito de valores remanescentes ao Fundo de Direitos Difusos; 
+c) Cláusula 10.9 § 2º - Monitoria de Atendimentos; 
+d) Cláusula 10.11 § 6º, alínea c - Aumento do Atendimento em Canais Digitais;
+e) Cláusula 10.12 § 2º - Processo de Gestão de Relação de Lojas; 
+f) Cláusula 10.13, §3º, alínea d - Ampliação de 4G na localidade - Footprint 4G; 
+g) Cláusula 10.14, §4º, alínea d - Ampliação de capacidade SMP - Novas portadoras 4G; Despacho Decisório 449 (13774679) SEI 53500.000003/2022-92 / pg. 1 
+h) Cláusula 10.16, Parágrafo único, alínea b - Melhoria da latência de rede; 
+i) Cláusula 10.17, §2º, alínea d - Municípios Críticos; 
+j) Cláusula 11.1 - Projeto Executivo e os Anteprojetos do Ano 4 do Compromisso Adicional de expansão do backbone de fibra óptica. 
+DETERMINAR:
+a) a instauração de Procedimento de Apuração de Item de Cronograma (PADIC) em função dos indícios de descumprimento às Cláusulas 10.4, parágrafo único, e 10.5, alínea b, relativas ao compromisso denominado "Índice de qualidade percebida (IQP)", ano 3, tais como apontados no Informe nº 111/2025/COQL/SCO (SEI nº 13564884), de 24/04/2025; 
+b) a notificação da Telefônica Brasil S.A.; 
+c) o encaminhamento do Informe nº 34/2025/COGE/SCO (SEI nº 13275031) ao Conselho Diretor para ciência quanto ao acompanhamento do TAC celebrado com a Telefônica Brasil S.A.."
+(destaque acrescido)
+II - DA INSTAURAÇÃO E DA INSTRUÇÃO DO PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC Nº 53500.046715/2025-09
+Instaurou-se este PADIC em 11 de setembro de 2025, por meio do Despacho Ordinatório de Instauração nº 51/2025/COGE/SCO (SEI nº 13887738), com a finalidade de apurar indícios de descumprimentos apontados no Processo nº 53500.001314/2022-79 e para eventual sancionamento. 
+Notificada (SEI nº 13915105 e nº 14431755) em 23 de setembro de 2025, a Compromissária apresentou defesa administrativa (SEI nº 14507473) em 6 de outubro de 2025, à qual anexou o documento denominado "Memorando Técnico" (SEI nº 14507474). Em síntese, alega: 
+que haveria a necessidade de refinamento estatístico e de revisão do resultado da meta do ano 3 do IQP - SCM e STFC, assim como da suposta degradação do IQP por 2 (dois) anos consecutivos, para os serviços SCM, STFC, SeAC e SMP, considerando-se a margem de erro computada após a execução da pesquisa, ao nível de 95% de confiança, posto que a redução percentual da meta em 10 % (dez por cento) seria insuficiente para compensar a ausência de consideração da margem de erro nas análises estatísticas do índice;
+a inexistência de fundamento para eventual imposição de pena, tendo em vista que a Telefônica vem cumprindo as exigências do TAC nº 1/2022;
+a necessidade de retificação dos cálculos de medição do IQP-SMP do Ano 3, com a aplicação da metodologia refinada para o cálculo dos calibradores, de modo a refletir a consolidação do indicador adotada pela SRC no Informe nº 11/2022/RCIC/SRC (SEI nº 9307533). Argumenta que os aprimoramentos promovidos pela Superintendência de Relação com Consumidores nos parâmetros da Pesquisa de Satisfação e Qualidade Percebida, voltados a conferir maior precisão ao Índice de Satisfação Geral (ISG), base de cálculo do IQP, tornam inadequado o uso da metodologia anterior. Afirma, ainda, que o simples processamento dos dados segundo o método antigo perpetua suas imprecisões e compromete a comparabilidade entre os resultados do Ano 3 e do ano‑base, violando os princípios da legalidade, moralidade e segurança jurídica;
+ser aplicável ao caso em exame a sanção de advertência, com fundamento no art. 22, § 1º, da Lei de Introdução às Normas do Direito Brasileiro - LINDB, art. 4º-A da Lei nº 13.874/2019, e da nova redação do art. 12, inciso I, do Regulamento de Aplicação de Sanções Administrativas - RASA; e
+subsidiariamente ao afastamento da sanção de multa, pleiteia:
+e.1) em relação à Cláusula 10.5, "a", do TAC, seja considerado para o cálculo da multa, a diferença entre a meta de cumprimento estabelecida (70%) e o valor alcançado sobre o valor de referência do ponto de controle no TAC (= R$ 3.043.808,65 - Anexo B); e
+e.2) quanto à Cláusula 10.4, parágrafo único: que a multa seja obtida a partir da divisão do valor do compromisso do AC no ponto de controle (= R$ 3.043.808,65 - Anexo B), dividido por 27 (vinte e sete) UFs em que o resultado deve ser alcançado, perfazendo o valor de R$ 112.733,65 (cento e doze mil setecentos e trinta e três reais e sessenta e cinco centavos) por UF, multiplicado pelo número de UFs com degradação.
+Requereu-se, assim:
+o reconhecimento do efetivo incremento de qualidade dos serviços prestados pela Empresa após a assinatura do TAC e que sejam revistos os resultados da meta Ano 3, conforme defendido nas razões recursais;
+a retificação dos resultados do IQP SMP de modo a refletir a consolidação do índice nos termos do Informe nº 11/2022/RCIC/SRC (SEI nº 9307533);
+subsidiariamente, a substituição da pena de multa por advertência ou quando não, seja aquela proporcionalizada ao efetivo descumprimento.
+Em 20 de janeiro de 2026, a Área Técnica emitiu o Informe nº 253/2025/COQL/SCO (SEI nº 14590071), no qual analisou os argumentos suscitados pela prestadora. Concluiu:
+a) pela impossibilidade de adoção de metodologia alternativa para análise dos resultados do IQP no âmbito do TAC firmado, uma vez que o compromisso já considerou uma meta que acomoda o ajuste metodológico e dispensa o uso de margem de erro, ressaltando que os resultados são divulgados pela Anatel com arredondamento para 2 (duas) casas decimais; e
+b) que a nova metodologia para aferição do índice IQP apenas foi aprovada em 17 de fevereiro de 2023, por meio do Despacho Decisório nº 3/2023/RCIC/SRC (SEI nº 9815870), portanto, quase 1 (um) ano após a celebração do TAC, ocorrida em 28 de fevereiro de 2022. Assim, os índices do estado inicial publicados em 2022 seguiram a metodologia vigente à época, aprovada pelo Despacho Decisório nº 2/2021/SEI/RCIC/SRC, de 26 de fevereiro de 2021 (SEI nº 6590911). Destacou, ainda, que caso a "nova" metodologia fosse adotada, afastaria a degradação em 4 (quatro) localidades, mas a configuraria em outras 7 (sete) e ainda, considerando o disposto no parágrafo único da Cláusula 10.4. do TAC, a aplicação da "nova" metodologia afastaria o descumprimento apenas no Estado do Tocantins. No entanto, restariam caracterizados descumprimentos adicionais em 5 (cinco) novos estados (Amapá, Bahia, Maranhão, Piauí e Rio Grande do Norte).
+Com essas considerações concluiu pela improcedência do requerimento quanto à alteração do estado inicial do TAC e a consequente retificação dos resultados do IQP constantes do Informe nº 137/2024/COQL/SCO (SEI nº 12220102), tendo como base o ano de referência de 2021, propondo a imposição de multa à Prestadora no valor de R$ 4.101.489,76 (quatro milhões, cento e um mil, quatrocentos e oitenta e nove reais e setenta e seis centavos), a ser atualizado pelo IGP-DI no momento de seu lançamento, em razão do descumprimento do disposto nas Cláusulas 10.4, Parágrafo Único, e 10.5, alínea "b", do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286).
+III - DO ENCAMINHAMENTO DOS AUTOS AO CONSELHO DIRETOR
+Ainda em 20 de janeiro de 2026, elaborou-se a Matéria nº 33/2026 (SEI nº 15056970), encaminhando-se os autos ao Conselho Diretor em 23 de janeiro de 2026 (SEI nº 15084666).
+Distribuíram-se os autos à minha relatoria em 26 de janeiro de 2026 (SEI nº 15088908).
+Em 5 de fevereiro de 2026, a Compromissária protocolizou a petição SEI nº 15146638, intitulada "Memorial" e aos 2 de abril protocolizou a Petição CT.LLLAC nº 265/2025 (SEI nº 15436236). 
+É o relatório.
+FUNDAMENTAÇÃO
+A presente fundamentação está dividida em 4 (quatro) capítulos. No Capítulo I, tratarei da competência deste Conselho Diretor para deliberação da matéria. No Capítulo II, avaliarei a possibilidade de conhecimento da petição extemporânea SEI nº 15146638. No Capítulo III, analisarei os argumentos suscitados pela Compromissária em sua defesa administrativa (SEI nº 14507473). No Capítulo IV, apresentarei a dosimetria da sanção caso confirmados os indícios de descumprimentos a itens do TAC nº 1/2022 (SEI nº 7874286). Finalmente, no Capítulo V, correlacionarei a presente proposta de encaminhamento com os Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 das Nações Unidas - ONU.
+I - DA COMPETÊNCIA DO CONSELHO DIRETOR
+Instaurou-se o presente Procedimento de Apuração de Descumprimento de Item de Cronograma (PADIC), em atendimento ao Despacho Decisório nº 449/2025/COGE/SCO (cópia SEI nº 13887720), com o objetivo de apurar indícios de descumprimento, pela Telefônica, de itens do cronograma de metas e condições dos compromissos assumidos no âmbito do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), conforme formalizado pelo Despacho Ordinatório de Instauração nº 51/2025/COGE/SCO, de 11 de setembro de 2025 (SEI nº 13887738).
+Da leitura da Cláusula 6.1 do TAC nº 1/2022, depreende-se que, constatado indício de descumprimento, a Superintendência de Controle de Obrigações - SCO deverá instaurar o PADIC, intimando a compromissária para apresentação de alegações no prazo de 15 (quinze) dias, nos termos do art. 25 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC. 
+A Cláusula 6.2 do referido Termo, por sua vez, dispõe que, não sendo consideradas procedentes as alegações apresentadas pela compromissária, o processo administrativo deverá ser encaminhado à deliberação do Conselho Diretor da Anatel, com proposta de aplicação de multa diária, podendo a Procuradoria Federal Especializada junto à Agência - PFE-Anatel ser previamente consultada.
+No mesmo sentido, o art. 25 do RTAC, vigente à época dos fatos, atribuía expressamente a este Colegiado a competência para aplicação da sanção, ao estabelecer que, após a análise das alegações pela SCO, caberia ao Conselho Diretor deliberar sobre a proposta de multa diária em caso de descumprimento de item do cronograma de metas e condições dos compromissos.
+Ressalte-se que a alteração posterior do RTAC, promovida pela Resolução nº 782, de 25 de agosto de 2025, não incide sobre o presente caso, uma vez que o TAC foi firmado anteriormente à entrada em vigor das novas regras. Aplica-se, portanto, o princípio constitucional da irretroatividade da norma, segundo o qual a lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa julgada, conforme dispõe o art. 5º, inciso XXXVI, da Constituição da República.
+Ainda sobre a matéria, no Informe nº 253/2025/COQL/SCO (SEI nº 14590071), ressaltou a Área Técnica ser o TAC um ato jurídico perfeito, o qual não pode ter suas cláusulas, metas e métricas alteradas a partir de uma revisão normativa, situação admissível apenas em caso de assinatura de aditivo contratual.
+Informe nº 253/2025/COQL/SCO
+"4.10. Como reiteradamente afirmado pela Agência em suas manifestações acerca dos TACs, as obrigações dispostas nos termos, bem como seu acompanhamento, são regidos pelas normas ali dispostas, pelo Manual de Acompanhamento e Fiscalização do TAC (MAF), aprovado em anexo, e pelas orientações de fiscalização aplicadas pela Anatel para casos análogos. Assim, eventual alteração normativa posterior à vigência do TAC ou modificação na forma de fiscalização ou acompanhamento dos compromissos somente poderá produzir efeitos mediante a celebração de termo aditivo." 
+Dessa forma, as regras introduzidas pela Resolução nº 782/2025 aplicam-se exclusivamente aos TACs firmados após a sua entrada em vigor, não alcançando aquele em exame.
+Assim, considerando que a Área Técnica rejeitou as alegações apresentadas pela Telefônica e que, à época da celebração do TAC, encontrava-se vigente o art. 25 do RTAC, compete a este Conselho Diretor deliberar acerca da proposta de aplicação de multa apresentada pela SCO, em razão dos descumprimentos a itens do cronograma de metas, nos termos da Cláusula 6.2 do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286) e do referido dispositivo regulamentar.
+II. DAS PETIÇÕES EXTEMPORÂNEAS 
+II.1 - Do conhecimento das petições extemporâneas (SEI nº 15146638 e 15436236)
+Após a distribuição dos autos a este Gabinete, a Prestadora protocolizou novas manifestações em 5 de fevereiro (SEI nº 15146638) e 2 de abril de 2026 (SEI nº 15436236). Faz-se necessário analisar a possibilidade de conhecimento dessas petições.
+Em 10 de outubro de 2017, expediu-se a Súmula nº 21, disciplinando o tratamento a ser conferido às petições extemporâneas, nos seguintes termos:
+"As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado".
+(grifou-se)
+As Petições SEI nº 15146638 e SEI nº 15436236 são extemporâneas e os respectivos protocolos ocorreram antes da publicação da pauta da Reunião do Conselho Diretor nº 952, na qual se incluiu este Processo. Deve-se conhecê-las, desde que seu conteúdo não caracterize abuso do exercício do direito de petição - como é o presente caso.
+Na manifestação SEI nº 15146638, intitulada "Memoriais", a Recorrente reiterou os mesmos argumentos já sustentados em sede de defesa administrativa. Argumentou que (i) redução de 10 (dez) pontos percentuais nas metas, adotada quando da celebração do TAC, não se mostra suficiente para compensar a ausência de consideração da margem de erro nas análises estatísticas do IQP, deixando de apresentar inovação fática ou probatória; (ii) não terem sido considerados pela Agência o incremento de qualidade dos serviços, que entende poder ser mensurado pelos esforços empreendidos pela prestadora para além do IQP; (ii) não terem sido aplicados ao TAC os ajustes aos parâmetros da Pesquisa de Satisfação e Qualidade Percebida promovidos pela área técnica a partir de 2021.
+Na manifestação SEI nº 15436236, intitulada "Petição - CT.LLLAC nº 265/2025", a prestadora reiterou os argumentos já deduzidos na petição extemporânea anterior. Ademais, impugnou as conclusões constantes no Informe nº 253/2025/COQL/SCO (SEI nº 14590071), bem como acrescentou novas impugnações à dosimetria da pena.
+Conheço das Petições SEI nº 15146638 e 15436236 nos termos da Súmula nº 21/2017. O respectivo conteúdo será avaliado no decorrer desta Análise, em conjunto com a apreciação do mérito da defesa administrativa.
+III - DOS ARGUMENTOS APRESENTADOS NA DEFESA ADMINISTRATIVA E NA PETIÇÃO EXTEMPORÂNEA SEI Nº 15146638
+III.1. Da suposta necessidade de refinamento estatístico e revisão do resultado da meta do Índice de Qualidade Percebida - IQP para todos os serviços
+Em sua defesa administrativa (SEI nº 14507473), a Compromissária sustenta a necessidade de refinamento estatístico e de revisão do resultado da meta do ano 3 do Índice de Qualidade Percebida IQP - SCM e STFC, assim como de sua suposta degradação por 2 (dois) anos consecutivos, para os serviços SCM, STFC, SeAC e SMP, considerando-se a margem de erro computada após a execução da pesquisa, ao nível de 95% (noventa e cinco por cento) de confiança. Argumenta que a redução percentual da meta em 10% (dez por cento) seria insuficiente para compensar a ausência de consideração da margem de erro nas análises estatísticas do índice. Confira-se:
+Defesa Administrativa (SEI nº 14507473)
+"(...) à época da aprovação do TAC, o Conselho Diretor optou pela não utilização de margem de erro na composição dos resultados do IQP e com isso efetuou "uma redução de 10% (dez por cento) no percentual das metas dos anos de vigência do TAC", o que, no entendimento da Agência, impediria a adoção de qualquer outra análise dos resultados para fins de acompanhamento do TAC, mesmo ciente de que metodologicamente a redução de 10 pontos percentuais não se mostra suficiente para compensar a ausência de consideração da margem de erro nas análises estatísticas do IQP.
+(...)
+Por esse motivo, visando maior acurácia e segurança para a interpretação dos resultados, dado o aspecto relevante do compromisso, devem "ser utilizadas as margens de erro computadas após execução da pesquisa ao nível de 95% de confiança."
+Com o objetivo de corroborar suas alegações, a Prestadora acostou aos autos o Memorando Técnico SEI nº 14507474, de sua autoria.
+A matéria foi analisada pela Área Técnica, que, no âmbito do Informe nº 253/2025/COQL/SCO (SEI nº 14590071), destacou que argumentos idênticos já haviam sido enfrentados nos processos nº 53500.079355/2024-32 (da própria Telefônica) e nº 53500.020899/2024-98 (da TIM S.A.), ambos referentes a PADICs instaurados em razão de compromissos assumidos em TACs relacionados à manutenção ou melhoria das notas do IQP.
+Esclareceu-se, no documento técnico, que, durante a elaboração da metodologia de aferição do IQP, foram avaliadas as limitações inerentes a indicadores derivados de pesquisas amostrais. Reconheceu-se ainda que, à medida que os níveis de satisfação se tornam mais elevados, torna-se progressivamente mais difícil promover acréscimos no indicador, razão pela qual se analisou a evolução histórica do índice de Satisfação Geral - ISG da Compromissária e do setor como um todo. 
+A partir dessa análise, reputou-se razoável a adoção, como referência inicial, do ISG médio nacional obtido na Pesquisa de 2020, bem como das metas propostas pela própria Compromissária, por se mostrarem compatíveis com a média histórica de evolução do indicador. 
+Posteriormente, ao substituir o ISG pelo IQP, que não incorpora margem de erro em seu cálculo final, o Conselho Diretor deliberou pela redução de 10% (dez por cento) nas metas pactuadas, justamente para acomodar o maior esforço exigido da Prestadora, conforme decidido no Acórdão nº 415, de 17 de dezembro de 2021 (SEI nº 7826598). 
+Concluiu-se, assim, que o compromisso celebrado em fevereiro de 2022, entre a Anatel e a Telefônica, já incorporou ajuste específico para compensar a ausência de margem de erro no IQP, prescindindo da adoção de qualquer metodologia adicional de relativização dos resultados. Ademais, a Área Técnica ressaltou que o acompanhamento das obrigações do TAC deve observar estritamente as normas nele previstas, o Manual de Acompanhamento e Fiscalização do TAC e as orientações de fiscalização vigentes, sendo vedada a aplicação de metodologia alternativa sem a formalização de termo aditivo.
+Com base nesses fundamentos, no Informe nº 253/2025/COQL/SCO (SEI nº 14590071), opinou-se pela improcedência do pedido de revisão do resultado da meta do ano 3 do TAC.
+Passo às minhas ponderações.
+Em síntese, a Compromissária pretende que, a fim de conferir maior segurança aos resultados, seja considerada, após a execução da pesquisa, margem de erro associada a nível de confiança de 95% (noventa e cinco por cento). Verifica-se, assim, que a controvérsia suscitada não se volta propriamente contra a decisão ora recorrida, a qual se limitou a aplicar ao caso concreto a metodologia de aferição do IQP. Na realidade, o que se pretende é a alteração da própria metodologia adotada para a aferição do indicador.
+Inicialmente, como bem salientado pela Área Técnica, a tese em exame não é inédita, tendo sido apresentada na defesa administrativa anexa ao Processo nº 53500.079355/2024-32, referente à apuração de descumprimentos a metas estabelecidas para o ano 2 do TAC da Telefônica. Na ocasião, por meio da Análise nº 49/2025/DD (SEI nº 13653641), da lavra do Conselheiro Substituto Daniel Martins D'Albuquerque, deixou-se de acolher o pedido da Compromissária, conforme a seguir:
+Análise 49/2025/DD (SEI nº 13653641)
+"4.29. O Informe nº 263/2024/COQL/SCO (SEI nº 12824723) aponta que, na fase de estudos do IQP, as áreas técnicas da Anatel debateram pormenorizadamente sobre a metodologia de aferição do indicador, elencando trechos do Informe nº 555/2020/COGE/SCO (SEI nº 6170464).
+4.30. Ao se debruçar sobre o assunto, o Conselho Diretor optou pela não utilização de margem de erro na composição dos resultados do IQP, mas, ao considerar o esforço da Compromissária para atingir as metas acordadas, foi efetuada uma redução de 10% (dez por cento) no percentual das metas dos anos de vigência do TAC.
+4.31. É o que restou decidido no bojo do Acórdão nº 415, de 17 de dezembro de 2021 (SEI nº 7826598), nos termos da Análise nº 146/2021/EC (SEI nº 7688865), da lavra do então Conselheiro Emmanoel Campelo. Cito os seguintes excertos da referida Análise, in verbis:
+4.113. Importa ainda ponderar que ao ajustar o compromisso que previa considerar o ISG, que é um índice derivado de uma pesquisa amostral realizada pela Agência, para considerar o IQP, índice previsto no RQUAL, mostra-se razoável promover adequações à proposta original. Explico.
+4.114. O cálculo do indicador X considerava a ocorrência de erro amostral, dado que o ISG é oriundo de uma pesquisa amostral. No entanto, o IQP embora corresponda ao valor atribuído ao ISG não prevê a utilização desse erro em seu valor final.
+4.115. Assim, pode-se considerar que o esforço da Compromissária para atingir as metas inicialmente acordadas será maior, dado que qualquer mínima redução no índice caracterizará a degradação da qualidade. Portanto, proponho acatar a proposta de redução de 10% no percentual das metas dos anos de vigência do TAC trazida pela Telefônica nos termos da petição SEI n° 7664764.
+4.32. Conforme explicita a área técnica no Informe citado mais acima, o compromisso já considerou uma meta que afasta a margem de erro no cálculo do indicador, o que foi citado no Memorando Técnico juntado pela Compromissária, sendo que os resultados são divulgados pela Anatel sempre com arredondamento para 2 (duas) casas decimais.
+4.33. Portanto, tenho pela impossibilidade de adoção de método alternativo na análise dos resultados para fins de acompanhamento do TAC, no que toca à consideração de casos de estabilidade nos resultados iguais ou inferiores a 80%, bem como na utilização de 1 (uma) casa decimal na comparação entre os resultados de seus respectivos anos e de cada Unidade Federativa.
+4.34. Ademais, calha relembrar que se houver mudança na regulamentação após a vigência do TAC ou alteração na forma de fiscalização ou acompanhamento dos compromissos, para tais normas terem incidência sobre os compromissos estabelecidos seria necessária a edição de um termo aditivo ao TAC. Isso porque as obrigações dispostas nos termos, bem como seu acompanhamento, são regidos pelas normas nele estabelecidas, pelo Manual de Acompanhamento e Fiscalização do TAC (MAF), aprovado em anexo, e, ainda, pelas orientações de fiscalização aplicadas pela Anatel para casos análogos.
+4.35. Em razão do exposto, entende-se que a apuração realizada pela área técnica não necessita reparos, pois observa os fundamentos do IQP, não tendo a Compromissária logrado êxito em apresentar razões para sua alteração."
+(negritei)
+O Voto do Relator foi acompanhado por unanimidade pelos membros deste Colegiado, nos termos do Acórdão nº 133, de 23 de maio de 2025 (SEI nº 13746648):
+Acórdão nº 133, de 23 de maio de 2025
+"Processo nº 53500.079355/2024-32
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A. - CNPJ nº 02.558.157/0001-62
+Conselheiro Relator: Daniel Martins D Albuquerque
+Fórum Deliberativo: Reunião nº 943, de 15 de maio de 2025
+EMENTA: PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. TERMO DE AJUSTAMENTO DE CONDUTA - TAC. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. DESCUMPRIMENTO DA META ESTABELECIDA PARA O ANO 2. CÁLCULO DO ÍNDICE DE QUALIDADE PERCEBIDA - IQP. METODOLOGIA. NÃO UTILIZAÇÃO DE MARGEM DE ERRO NA COMPOSIÇÃO DOS RESULTADOS DO IQP. ENTENDIMENTO CONSOLIDADO DO CONSELHO DIRETOR. APLICAÇÃO DE MULTA DIÁRIA.
+1. O descumprimento do prazo de execução de item do cronograma previsto em Termo de Ajustamento de Condutas - TAC enseja a aplicação de multa diária à Compromissária, nos termos das Cláusulas 6.1 e 6.3 do TAC nº 1/2022, bem como dos arts. 17, § 1º, inciso III, 25 e 26 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC.
+(...)
+3. O Conselho Diretor optou pela não utilização de margem de erro na composição dos resultados do IQP, mas, ao considerar o esforço da Compromissária para atingir as metas acordadas, foi efetuada uma redução de 10% (dez por cento) no percentual das metas dos anos de vigência do TAC (Acórdão nº 415, de 17 de dezembro de 2021, SEI nº 7826598, nos termos da Análise nº 146/2021/EC, SEI nº 7688865).
+(...)
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto, a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia e o Conselheiro Substituto Daniel Martins D Albuquerque."
+(negritei)
+Em consulta ao Manual de Aplicação da Pesquisa (SEI nº 9775445), verifica-se que a referência ao intervalo de confiança de 95% (noventa e cinco por cento) e à margem de erro de 5% (cinco por cento) aplica-se especificamente ao ISG, e não ao IQP, conforme se extrai do item 6.4 do citado documento:
+Manual de Aplicação da Pesquisa para Aferição do Grau de Satisfação e da Qualidade Percebida Junto aos Usuários de Serviços de Telecomunicações (SEI nº 9775445)
+“6.4. Erro Amostral
+O erro amostral mensura o quanto os valores obtidos a partir das informações da amostra podem diferir do valor real da população-alvo.
+Em qualquer estudo com amostras, o erro amostral está presente a certo nível de confiabilidade.
+Destaca-se que não existe erro único para toda a Pesquisa, pois cada variável tem distribuição de probabilidade própria. Para cada indicador obtido na amostra há um erro diferente que só pode ser efetivamente calculado após a execução do estudo.
+As medidas de erro amostral da Pesquisa são planejadas pelo menos para as estimativas do Índice de Satisfação Geral (ISG), utilizando-se um coeficiente de confiança de 95% (noventa e cinco porcento). Os tamanhos das amostras serão dimensionados para se obter estimativas com erros de valor absoluto equivalentes a 5% do ISG, obtidas com os dados da Pesquisa do ano anterior, para cada serviço, considerando o tamanho mínimo de 100 unidades amostrais.”
+(grifou-se)
+Assim, não há previsão de que o grau de confiança de 95% (noventa e cinco por cento) deva, necessariamente, ser adotado como critério de validação para o IQP no contexto do TAC. A vinculação expressa do parâmetro ao ISG, e não ao IQP, afasta a obrigatoriedade de sua aplicação automática à verificação pretendida pela Empresa.
+Ademais, justamente em razão de o valor final do IQP não levar em conta a ocorrência de erro amostral, previu-se uma redução das porcentagens exigidas para as metas dos anos de vigência do TAC, conforme ressaltado na Análise nº 146/2021/EC (SEI nº 7688865), que fundamentou o Acórdão nº 415/2021/EC (SEI nº 7826598), proferido no PADIC nº 53500.020899/2024-98:
+Análise nº 146/2021/EC (SEI nº 7688865)
+"4.113. Importa ainda ponderar que ao ajustar o compromisso que previa considerar o ISG, que é um índice derivado de uma pesquisa amostral realizada pela Agência, para considerar o IQP, índice previsto no RQUAL, mostra-se razoável promover adequações à proposta original. Explico.
+4.114. O cálculo do indicador X considerava a ocorrência de erro amostral, dado que o ISG é oriundo de uma pesquisa amostral. No entanto, o IQP embora corresponda ao valor atribuído ao ISG não prevê a utilização desse erro em seu valor final.
+4.115. Assim, pode-se considerar que o esforço da Compromissária para atingir as metas inicialmente acordadas será maior, dado que qualquer mínima redução no índice caracterizará a degradação da qualidade. Portanto, proponho acatar a proposta de redução de 10% no percentual das metas dos anos de vigência do TAC trazida pela Telefônica nos termos da petição SEI nº 7664764." 
+(negritei)
+Neste processo, o Informe nº 253/2025/COQL/SCO (SEI nº 14590071) confirmou o entendimento acima, ressaltando que os temas relativos à margem de erro e ao grau de confiança também foram objeto de discussão no PADIC do IQP – Ano 3 (Processo nº 53500.020899/2024-98), instaurado em desfavor da TIM S.A., ocasião em que este Colegiado não acolheu as alegações apresentadas, conforme Acórdãos nº 41/2025/AF (SEI nº 13323399), nº 252/2025/VA (SEI nº 14401558) e nº 195/2025/AF (SEI nº 14189382).
+Acórdão nº 41, de 21 de fevereiro de 2025
+Processo nº 53500.020899/2024-98
+Recorrente/Interessado: TIM S.A.
+Conselheiro Relator: Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 940, de 13 de fevereiro de 2025
+EMENTA: DIREITO ADMINISTRATIVO. DIREITO REGULATÓRIO. PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. TERMO DE AJUSTAMENTO DE CONDUTA - TAC. ÍNDICE DE QUALIDADE PERCEBIDA. DESCUMPRIMENTO DA META ESTABELECIDA PARA O 3º ANO. APLICAÇÃO DE SANÇÃO. MULTA. PETIÇÃO EXTEMPORÂNEA. ENUNCIADO Nº 21 DA ANATEL. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO DECRETO Nº 12.150, DE 20 DE AGOSTO DE 2024, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO E AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. APLICAÇÃO DE MULTA.
+3. Quando da aprovação da obrigação de repactuação do Índice de Qualidade Percebida por meio Primeiro Aditivo do Termo de Ajustamento de Conduta foi refutado que seja considerado a margem de erro.
+(...)
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto e os Conselheiros Substitutos Daniel Martins D Albuquerque e Vinícius Oliveira Caram Guimarães.
+...
+Acórdão nº 252, de 17 de setembro de 2025
+Processo nº 53500.020899/2024-98
+Recorrente/Interessado: TIM S.A.
+Conselheiro(a) Relator(a): Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 946, de 11 de setembro de 2025
+EMENTA: PEDIDO DE RECONSIDERAÇÃO. PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. TERMO DE AJUSTAMENTO DE CONDUTA - TAC. PETIÇÃO EXTEMPORÂNEA. SÚMULA Nº 21/2017. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. ACOMPANHAMENTO. METODOLOGIA VIGENTE NO ESTADO INICIAL. USO DE MARGEM DE ERRO. NÃO APROVADO. PADIC NÃO É O FORO ADEQUADO PARA REDISCUTIR A MENSURAÇÃO DO IQP MEDIANTE A INCLUSÃO DO CONCEITO DE MARGEM DE ERRO. A REFERÊNCIA AO INTERVALO DE CONFIANÇA DE 95% (NOVENTA E CINCO POR CENTO) E À MARGEM DE ERRO DE 5% (CINCO POR CENTO) APLICA-SE ESPECIFICAMENTE AO ÍNDICE DE SATISFAÇÃO GERAL - ISG E NÃO AO IQP. APLICAÇÃO NÃO OBRIGATÓRIA. ADOÇÃO DE CRITÉRIOS UNIFORMES NOS TAC FIRMADOS ENTRE A ANATEL E DISTINTAS COMPROMISSÁRIAS EM CASO DE SITUAÇÕES ANÁLOGAS. POSSIBILIDADE. TAC E ADITIVOS. EFICÁCIA DE TÍTULO EXECUTIVO EXTRAJUDICIAL. DESCUMPRIMENTOS. REGIME SANCIONATÓRIO APLICÁVEL NO ÂMBITO DO TAC. ARTS. 25 A 31 DO REGULAMENTO DE CELEBRAÇÃO E ACOMPANHAMENTO DE TERMO DE COMPROMISSO DE AJUSTAMENTO DE CONDUTA - RTAC. INEXISTÊNCIA DE PREVISÃO QUANTO À CONVERSÃO DA SANÇÃO DE MULTA EM OBRIGAÇÃO DE FAZER. OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. ADEQUAÇÃO. PEDIDO DE RECONSIDERAÇÃO CONHECIDO E NÃO PROVIDO. PETIÇÃO EXTEMPORÂNEA CONHECIDA E INDEFERIDA.
+(...)
+3. Para fins de aferição do cumprimento das obrigações previstas no TAC, deve ser adotada a metodologia de cálculo do IQP vigente à época da apuração do estado inicial do compromisso, conforme deliberado pelo Conselho Diretor no Acórdão nº 240, de 22 de setembro de 2023 (SEI nº 10902080), em consonância com os termos da Análise nº 62/2023/MM (SEI nº 10707341).
+4. A margem de erro não deve ser considerada na composição dos resultados do IQP para fins de avaliação do cumprimento das metas pactuadas em TAC. O Procedimento de Apuração de Descumprimento de Item de Cronograma - PADIC não é o foro adequado para rediscutir a mensuração do IQP mediante a inclusão do conceito de margem de erro. Em reconhecimento ao esforço da Compromissária para atingir as metas pactuadas, admite-se uma redução de 10% (dez por cento) sobre o percentual das metas previstas para os anos de vigência do TAC, nos termos do Acórdão nº 415, de 17 de dezembro de 2021 (SEI nº 7826598).
+5. A referência ao intervalo de confiança de 95% (noventa e cinco por cento) e à margem de erro de 5% (cinco por cento) aplica-se especificamente ao Índice de Satisfação Geral - ISG e não ao Índice de Qualidade Percebida - IQP, nos termos do Manual de Aplicação da Pesquisa (SEI nº 9775445). Não há previsão de que o grau de confiança de 95% (noventa e cinco por cento) deva necessariamente ser adotado como critério de validação para o IQP no contexto do TAC. A vinculação expressa do parâmetro ao ISG, e não ao IQP, afasta a obrigatoriedade de sua aplicação automática.
+(...)
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda, Octavio Penna Pieranti e Vicente Bandeira
+...
+Acórdão nº 195, de 13 de agosto de 2025
+Processo nº 53500.079355/2024-32
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A
+Conselheiro Relator: Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 945, de 7 de agosto de 2025
+EMENTA: DIREITO REGULATÓRIO. PEDIDO DE RECONSIDERAÇÃO. PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. COMPETÊNCIA DO CONSELHO DIRETOR DA ANATEL. CLÁUSULA 10.5, ALÍNEA A, DO TERMO DE AJUSTAMENTO DE CONDUTA - TAC Nº 1/2020. CONHECER E NEGAR PROVIMENTO.
+(...)
+4. Reitera-se a decisão do Conselho Diretor de que, para o acompanhamento das obrigações do Termo de Ajustamento de Conduta - TAC, o cálculo do Índice de Qualidade Percebida - IQP deve ser realizado conforme a metodologia vigente à época da apuração do estado inicial do TAC.
+5. Não se justifica a alteração da decisão do Conselho Diretor sobre a não utilização de margem de erro na composição dos resultados do IQP, visto que o ato administrativo não padece de ilegalidade ou irrazoabilidade.
+6. Não há respaldo legal para a substituição da penalidade prevista em regulamento e no Termo de Ajustamento de Conduta, uma vez configurada a prática irregular.
+(...)
+12. Pedido de Reconsideração conhecido e, no mérito, improvido.
+(...)
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto, a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia e o Conselheiro Substituto Daniel Martins D Albuquerque."
+Ainda no PADIC nº 53500.020899/2024-98, acima mencionado, a PFE-Anatel elaborou Parecer opinativo em que não apontou qualquer objeção jurídica à rejeição da proposta de inclusão da margem de erro como critério na mensuração do IQP no âmbito do TAC. Confira-se:
+Parecer nº 00262/2022/PFE-ANATEL/PGF/AGU, de 20 de maio de 2022 (SEI nº 8504881)
+"35. Destaque-se, além disso, que a proposta de consideração de margem de erro na avaliação dos níveis de IQP obtidos em pesquisas já foi, conforme rememorado pela área técnica, rejeitada pelo próprio Conselho Diretor da Anatel na aprovação do TAC do Grupo Telefônica, que decidiu, exatamente em razão de o IQP não levar em conta a ocorrência de erro amostral na obtenção de seu valor final, ser razoável, em contrapartida, reduzir as porcentagens exigidas para as metas dos anos de vigência do TAC."
+Desse modo, deixo de acolher a pretensão da Compromissária, visto que:
+a) consiste, em última análise, na modificação da metodologia de aferição prevista na Cláusula 4.1, c/c Cláusulas 4.3 e 4.4, alínea “a” e § 2º, do Primeiro Termo Aditivo ao TAC (SEI nº 9216990), mediante a inclusão de margem de erro na mensuração do IQP, providência que não se mostra juridicamente adequada;
+b) o PADIC não se presta à rediscussão da metodologia de mensuração do IQP, especialmente no que toca à inclusão de margem de erro, matéria já amplamente debatida e afastada pela Agência; 
+c) a referência ao intervalo de confiança de 95% (noventa e cinco por cento) e à margem de erro de 5% (cinco por cento) aplica-se especificamente ao Índice de Satisfação Geral - ISG e não ao Índice de Qualidade Percebida - IQP, nos termos do Manual de Aplicação da Pesquisa (SEI nº 9775445), não havendo previsão de sua adoção como critério de validação para o IQP no contexto do TAC; e
+d) contraria precedentes deste Colegiado.
+III.2. Alteração do Estado Inicial do TAC e Implicações na Consolidação do Cálculo do IQP
+Neste ponto de sua defesa, alega a Compromissária a necessidade de retificação dos cálculos de medição do IQP-SMP do Ano 3, com a aplicação da metodologia refinada para o cálculo dos calibradores, de modo a refletir a consolidação do indicador adotada pela Superintendência de Relação com Consumidores -SRC no Informe nº 11/2022/RCIC/SRC (SEI nº 9307533).
+Argumenta que os aprimoramentos promovidos pela SRC nos parâmetros da Pesquisa de Satisfação e Qualidade Percebida, voltados a conferir maior precisão ao ISG, base de cálculo do IQP, tornam inadequado o uso da metodologia anterior.
+Afirma, ainda, que o simples processamento dos dados segundo o método antigo perpetua suas imprecisões e compromete a comparabilidade entre os resultados do Ano 3 e do ano‑base, violando os princípios da legalidade, moralidade e segurança jurídica.
+Transcrevo a seguir o excerto da defesa administrativa que sintetiza o pleito da Empresa:
+Defesa Administrativa (SEI nº 14507473)
+"No entendimento da Telefônica, se o TAC foi celebrado adotando como estado inicial os níveis de IQP obtidos na Pesquisa relativa ao ano de 2021 e se esses foram atualizados pela Agência, inclusive visando um melhor refinamento, deve se reconhecer que o estado inicial para fins de acompanhamento das metas também foi alterado, o que configura uma modificação substancial no fundamento conceitual do compromisso, que deixa de ser em qual momento foi calculado e passa a ser como o estado inicial foi calculado.
+Essa mudança - visando refinar os calibradores nos quais a metodologia do cálculo se baseia - conduzida pela SRC, teve como objetivo aplicar um novo calibrador para apuração do índice, aumentando a precisão dos resultados. (...)"
+Ao examinar a defesa apresentada, a Área Técnica esclareceu, no Informe nº 253/2025/COQL/SCO (SEI nº 14590071), que a própria Operadora, no Processo nº 53500.038174/2019-99, declarou que a meta inicial estabelecida para o compromisso relacionado ao IQP dar-se-ia de acordo com os resultados da Pesquisa de Satisfação e Qualidade Percebida, a ser publicada no ano de 2022, com base no ano de referência de 2021. Tal declaração foi considerada aderente às disposições do TAC e idônea para fins de acompanhamento, conforme conclusão expressa registrada no item "5.38" do Informe nº 41/2022/COGE/SCO (SEI nº 7972923), no qual consta a análise quanto ao levantamento do estado inicial de cada compromisso assumido pela Compromissária.
+No mesmo Informe acima citado, ressaltou-se que de acordo com precedentes deste Colegiado (Acórdão nº 240, de 22 de setembro de 2023, SEI nº 10902080), para fins exclusivos de acompanhamento das obrigações de TAC, para o cálculo do IQP, deve-se adotar a metodologia em vigor quando apurado o estado inicial do Termo, afastando-se a aplicação retroativa da nova metodologia aos acordos já celebrados, sob pena de violação às condições pactuadas e de comprometimento da segurança jurídica.
+Assim, informou que os resultados da pesquisa publicada em 2022, com base no ano de referência de 2021, foram calculados nos termos do Manual aprovado pelo Despacho Decisório nº 2/2021/SEI/RCIC/SRC, de 26 de fevereiro de 2021 (SEI nº 6590911), vigente à época, isto é, considerando a metodologia "antiga". Ressaltou-se que a nova metodologia de aferição do índice só foi aprovada em 17 de fevereiro de 2023, por meio do Despacho Decisório nº 3/2023/RCIC/SRC (SEI nº 9815870), portanto, aproximadamente 1 (um) ano após a celebração do TAC em tela, firmado em 28 de fevereiro de 2022.
+Apesar do entendimento acima, a Área Técnica ainda procedeu à análise dos impactos práticos da eventual adoção da nova metodologia ao caso em exame. Ao comparar os resultados obtidos a partir dos critérios da "nova" e da "antiga" metodologia (valores disponíveis no documento SEI nº 13553210), constatou que caso a "nova" metodologia fosse adotada, a caracterização de degradação seria excluída em 4 (quatro) localidades, entretanto, seria introduzida em outras 7 (sete) novas localidades. Adicionalmente, considerando o parágrafo único da Cláusula 10.4. do TAC, destacou que a Compromissária também seria penalizada em caso de degradação da nota do IQP por dois anos consecutivos. Com base nessa obrigação, a aplicação da "nova" metodologia afastaria o descumprimento apenas no Estado do Tocantins, o qual, no entanto restaria configurado em outros 5 (cinco) novos estados: Amapá, Bahia, Maranhão, Piauí e Rio Grande do Norte. 
+Concluiu-se, com esses argumentos, pela improcedência do requerimento para a alteração do estado inicial do TAC e da consequente retificação dos resultados do IQP constantes do Informe nº 137/2024/COQL/SCO (SEI nº 12220102), diante "(i) da clara definição e aceitação do estado inicial do TAC, (ii) da celebração do compromisso sob metodologia específica e vigente à época, (iii) da vedação expressa, pelo Conselho Diretor, à aplicação retroativa de nova metodologia a TACs em acompanhamento e (iv) da inexistência de prejuízo concreto à Compromissária."
+Passo a tecer minhas considerações sobre a pretensão da Prestadora.
+Assim como no item anterior, a alegação em exame revisita pleito idêntico ao sustentado no processo do acompanhamento dos compromissos do ano 2 do TAC (Processo nº 53500.079355/2024-32). Naquela oportunidade, os argumentos apresentados foram apreciados e afastados por este Colegiado, que acompanhou, por unanimidade, o Voto apresentado pelo Conselheiro Relator, Daniel Martins D'Albuquerque, o qual, em sua Análise nº 49/2025/DD (SEI nº 13653641), esclareceu o que segue:
+Análise nº 49/2025/DD
+"4.22. O Conselho Diretor determinou que deve ser adotado, para fins exclusivos de acompanhamento das obrigações de TAC, o cálculo do Índice de Qualidade Percebida (IQP) com base na metodologia em vigor quando apurado o estado inicial do TAC.
+4.23. Vejamos o que diz a Análise nº 62/2023/MM (SEI nº 10707341), da lavra do então Conselheiro Moisés Moreira, que consubstanciou a expedição do Acórdão nº 240, de 22 de setembro de 2023 (SEI nº 10902080), in verbis:
+'4.21. Como reiteradamente afirmado pela Agência em suas manifestações acerca do TAC, as obrigações dispostas nos termos, bem como seu acompanhamento, são regidos pelas normas ali dispostas, pelo Manual de Acompanhamento e Fiscalização do TAC (MAF), aprovado em anexo, e pelas orientações de fiscalização aplicadas pela Anatel para casos análogos. Assim, se, eventualmente, houver mudança na regulamentação após a vigência do TAC, para tais normas terem incidência sobre os compromissos estabelecidos, necessário se fez editar termo aditivo ao TAC.
+(...)
+4.23. Dito isso, concluo que a alteração na forma de coleta do IQP trazida no Manual de Aplicação da Pesquisa para Aferição do Grau de Satisfação e da Qualidade Percebida Junto aos Usuários de Serviços de Telecomunicações, mesmo que pequena, tem algum impacto no resultado do Indicador. Por tal motivo, as alterações efetuadas não podem ser aplicadas aos TACs vigentes e que se encontram em fase de acompanhamento.
+4.24. Ademais, destaco que o TAC da Tim já se encontra no acompanhamento do terceiro ano, sendo a meta relativa ao IQP uma obrigação progressiva, que considera o estado inicial e impõe percentuais a serem cumpridos nos anos seguintes em comparação com a situação existente quando da vigência do termo.
+4.25. Se acaso viéssemos a aplicar a nova forma de cálculo do IQP imediatamente, estaríamos a comparar índices diversos, que, apesar do mesmo nome, utilizaram métricas diferentes para os seus resultados.
+4.26. Pelo exposto, a partir da aplicação da nova metodologia, a Tim passará a ter dois IQPs diferentes, até o fim do TAC, sendo um calculado da forma ora aprovada, para fins ordinários, e outro calculado com a metodologia em vigor quando apurado o estado inicial do TAC, para fins exclusivos de acompanhamento das obrigações de TAC.
+4.27. Aproveito para tecer determinação à SCO nesse sentido e que passe adotar o atual entendimento aos demais TACs que se encontrem na mesma situação da Tim.'
+4.24. Conforme se vê do item 4.27 supra, o entendimento do Conselho Diretor é o de que seja adotado, para fins exclusivos de acompanhamento das obrigações de TAC, o cálculo do IQP com base na metodologia em vigor quando apurado o estado inicial do TAC e que esse entendimento deve ser adotado nos demais TACs que se encontrem na mesma situação.
+4.25. Seguindo esse entendimento, os resultados da pesquisa publicados em 2022, com base no ano de referência de 2021, foram calculados nos termos do Manual aprovado pelo Despacho Decisório nº 2/2021/SEI/RCIC/SRC, de 26 de dezembro de 2021 (SEI nº 6590911), que estava vigente à época. A metodologia nova de aferição do índice IQP foi aprovada somente em 17 de fevereiro de 2023, por meio do Despacho Decisório nº 3/2023/RCIC/SRC (SEI nº 9775445), ou seja, praticamente um ano depois de assinado o TAC.
+4.26. Ora, não se pode esquecer que o TAC estava em acompanhamento desde a sua celebração, que ocorreu em 28 de fevereiro de 2022, e que os índices do estado inicial publicados em 2022 seguiram a metodologia aprovada pelo Despacho Decisório nº 2/2021/SEI/RCIC/SRC, de 26/12/2021 (SEI nº 6590911), ainda que no ano de 2023 tenham sido atualizados todos os valores dos índices de acordo com a nova metodologia a partir do ano de 2021.
+4.27. Dessa maneira, ante a determinação do Conselho Diretor da Anatel acima transcrita, conclui-se pela improcedência do requerimento para a retificação dos resultados do IQP constantes do Informe nº 137/2024/COQL/SCO (SEI nº 12220102), que utilizaram a metodologia vigente quando da apuração do estado inicial do TAC, cujos resultados foram publicados no ano 2022, tendo como base o ano de referência de 2021."
+(negritei)
+O Conselho Diretor desta Agência tem reafirmado que, exclusivamente para fins de acompanhamento das obrigações dos TACs, o cálculo do IQP deve seguir a metodologia vigente à época da apuração do estado inicial do acordo. É o que se afere da leitura do Acórdão nº 133, de 23 de maio de 2025 (SEI nº 13746648):
+Acórdão nº 133, de 23 de maio de 2025 (SEI nº 13746648)
+"Processo nº 53500.079355/2024-32
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro Relator: Daniel Martins D Albuquerque
+Fórum Deliberativo: Reunião nº 943, de 15 de maio de 2025
+EMENTA
+PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA - PADIC. TERMO DE AJUSTAMENTO DE CONDUTA - TAC. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. DESCUMPRIMENTO DA META ESTABELECIDA PARA O ANO 2. CÁLCULO DO ÍNDICE DE QUALIDADE PERCEBIDA - IQP. METODOLOGIA. NÃO UTILIZAÇÃO DE MARGEM DE ERRO NA COMPOSIÇÃO DOS RESULTADOS DO IQP. ENTENDIMENTO CONSOLIDADO DO CONSELHO DIRETOR. APLICAÇÃO DE MULTA DIÁRIA.
+1. O descumprimento do prazo de execução de item do cronograma previsto em Termo de Ajustamento de Condutas - TAC enseja a aplicação de multa diária à Compromissária, nos termos das Cláusulas 6.1 e 6.3 do TAC nº 1/2022, bem como dos arts. 17, § 1º, inciso III, 25 e 26 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC.
+2. O Conselho Diretor determinou que deve ser adotado, para fins exclusivos de acompanhamento das obrigações de TAC, o cálculo do Índice de Qualidade Percebida - IQP com base na metodologia em vigor quando apurado o estado inicial do TAC (Acórdão nº 240, de 22 de setembro de 2023, SEI nº 10902080, nos termos da Análise nº 62/2023/MM, SEI nº 10707341). No âmbito da celebração do TAC restou estabelecido que a meta inicial do IQP seria calculada de acordo com os resultados da Pesquisa de Satisfação e Qualidade Percebida, a ser publicada no ano de 2022, com base no ano de referência de 2021.
+3. O Conselho Diretor optou pela não utilização de margem de erro na composição dos resultados do IQP, mas, ao considerar o esforço da Compromissária para atingir as metas acordadas, foi efetuada uma redução de 10% (dez por cento) no percentual das metas dos anos de vigência do TAC (Acórdão nº 415, de 17 de dezembro de 2021, SEI nº 7826598, nos termos da Análise nº 146/2021/EC, SEI nº 7688865).
+(...)
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 49/2025/DD (SEI nº 13653641), integrante deste acórdão, aplicar multa diária, pelo descumprimento do prazo de execução de item do cronograma previsto na Cláusula 10.5, alínea a, do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), referente à satisfação de seus clientes do Serviço Móvel Pessoal - SMP, mensurada por meio do nível do Índice de Qualidade Percebida - IQP, no valor de R$ 686.509,48 (seiscentos e oitenta e seis mil, quinhentos e nove reais e quarenta e oito centavos), nos termos das Cláusulas 6.1 e 6.3 do TAC nº 1/2022, bem como dos arts. 17, § 1º, inciso III, 25 e 26 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto, a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia e o Conselheiro Substituto Daniel Martins D Albuquerque." (grifou-se)
+Por fim, cumpre registrar que este Colegiado analisou recentemente pedido de repactuação do TAC formulado pela própria Prestadora no âmbito do Processo nº 53500.001314/2022-79. Naquela oportunidade, a Compromissária pleiteou a repactuação, para o quarto ano de vigência, do compromisso referente ao Índice de Qualidade Percebida (IQP), previsto nas Cláusulas 10.3 e 10.5, alínea “c”, do TAC nº 1/2022, com a exclusão do Serviço de Acesso Condicionado (SeAC) e a consequente redistribuição dos valores previstos no último ponto de controle desse serviço para os demais serviços de telecomunicações.
+Ao deliberar sobre a matéria, o Conselho Diretor reafirmou o entendimento de que a execução dos compromissos pactuados em Termo de Ajustamento de Conduta - TAC deve observar, sempre que possível, as regras expressamente estabelecidas no instrumento. Tal orientação foi consubstanciada no Acórdão nº 36/2026 (SEI nº 15219501), proferido na Reunião do Conselho Diretor nº 950, realizada em 12 de fevereiro de 2026, que indeferiu o pedido de repactuação, nos seguintes termos:
+Acórdão nº 36, de 23 de fevereiro de 2026 (SEI nº 15219501)
+Processo nº 53500.001314/2022-79
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ANÁLISE DE PEDIDO DE REPACTUAÇÃO DE TERMO DE AJUSTAMENTO DE CONDUTA - tac. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. EXCLUSÃO DO SERVIÇO DE ACESSO CONDICIONADO SEAC. INDEFERIMENTO.
+I. CASO EM EXAME
+1. Pedido apresentado pela TELEFÔNICA BRASIL S.A. para repactuação do compromisso "Índice de qualidade percebida - IQP" para o ano 4, referente às Cláusulas 10.3 e 10.5, alínea "c", do Termo de Ajustamento de Conduta - TAC nº 1/2022, visando à exclusão do Serviço de Acesso Condicionado - SeAC e à redistribuição dos valores previstos no último ponto de controle do SeAC para os demais serviços.
+2. Fundamentação do pedido na aprovação do novo Plano Geral de Metas de Competição - PGMC, que suspendeu, de forma cautelar, a necessidade de atender obrigações regulatórias quanto à pesquisa de satisfação do cliente para o SeAC.
+3. Área técnica da Anatel opinou pelo indeferimento do pedido, considerando que a pesquisa de satisfação referente ao ano 4 já estava em andamento e que o instrumento pactual atingiu seu objetivo quanto ao SeAC.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível repactuar o compromisso "Índice de qualidade percebida - IQP" para o ano 4 do TAC nº 1/2022, excluindo o SeAC e redistribuindo os valores de referência para os demais serviços, diante da suspensão das obrigações regulatórias relativas à pesquisa de satisfação do SeAC.
+III. RAZÕES DE DECIDIR
+1. O TAC nº 1/2022 não prevê a retirada de metas ou indicadores em caso de alteração da regulamentação, mas apenas a execução da parcela do valor de referência relacionada ao compromisso prejudicado.
+2. A pesquisa de satisfação do SeAC referente ao ano 4 já estava em andamento, com dados coletados e em fase final de análise, sendo possível utilizar seus resultados para avaliação do IQP.
+3. O compromisso pactuado atingiu seu objetivo de melhoria dos níveis de qualidade percebidos pelos usuários do SeAC, não havendo interesse público na repactuação do indicador neste momento.
+4. A proposta de redistribuição dos valores de referência do SeAC para os demais serviços não encontra respaldo nas cláusulas do TAC.
+IV. DISPOSITIVO E TESE
+Pedido indeferido.
+Tese de julgamento: "1. Não é possível a repactuação do compromisso "Índice de qualidade percebida - IQP" para o ano 4 do TAC nº 1/2022, com exclusão do SeAC e redistribuição dos valores de referência para os demais serviços, diante da suspensão das obrigações regulatórias relativas à pesquisa de satisfação do SeAC. 2. Devem ser utilizados os resultados da pesquisa de satisfação do SeAC referente ao ano 4 para fins de avaliação do IQP, conforme previsto nas Cláusulas 10.3 e 10.5, alínea 'c', do TAC nº 1/2022."
+No caso este Colegiado reafirmou a centralidade da segurança jurídica e da estabilidade metodológica nos instrumentos pactuados. As obrigações estabelecidas no TAC nº 1/2022 foram firmadas com base em premissas técnicas e regulatórias vigentes à época de sua celebração, constituindo ato jurídico perfeito. Assim, a superveniência de alterações normativas, ainda que relevantes no âmbito do SeAC ou de outros serviços, não autoriza a revisão unilateral de metas, métodos de cálculo ou indicadores já definidos no acordo.
+É certo que qualquer mudança metodológica somente poderia ser incorporada por termo aditivo específico, inexistente no caso concreto, ressaltando-se que tal possibilidade foi afastada por este Conselho Diretor nos termos da decisão acima reproduzida, razão pela qual subsiste a metodologia originalmente pactuada para fins de avaliação do compromisso de Índice de Qualidade Percebida (IQP).
+Isto posto, entende-se que o compromisso assumido pela Compromissária deve ser avaliado de acordo com a metodologia vigente à época de sua celebração ou repactuação, em observância ao princípio jurídico do tempus regit actum, o qual também assegura a necessária segurança jurídica e a estabilidade processual nas relações entre as partes.
+Ademais, é certo que, como já mencionado, este não é o foro apropriado para revisão de cláusulas do TAC.
+Não é de se acolher o pleito da Compromissária.
+III.3. Da alegação de efetivo incremento da qualidade em todos os serviços
+Em sua defesa administrativa, a Compromissária sustenta a inexistência de fundamento para eventual imposição de pena, tendo em vista que vem cumprindo as exigências do TAC nº 1/2022. Afirma que independentemente dos resultados apurados nas pesquisas do IQP, vem promovendo melhorias contínuas na qualidade de seus serviços, a exemplo do "IR" do SMP, que entre os anos de 2021 e 2025 revelou melhoria na qualidade do serviço. Alega ainda que a Telefônica tem se destacado no atingimento do "ISG" quando comparada com a média nacional das demais Operadoras do mesmo porte. Refere-se ao "Prêmio Anatel de Acessibilidade em Telecomunicações 2025", no qual alcançou a 1º colocação no ranking. Questiona, mais uma vez, a forma de cálculo de medição do IQP e, por fim, defende a tese de que o cumprimento do TAC não deveria ser analisado apenas de maneira literal e estrita, mas sim levando em consideração a finalidade para a qual foi firmado.
+No Informe nº 253/2025/COQL/SCO (SEI nº 14590071), a Área Técnica deixou de adentrar no mérito do questionamento esclarecendo que esse não se confunde com o objeto do presente PADIC:
+Informe nº 253/2025/COQL/SCO (SEI nº 14590071)
+"4.13. Por mais que tais láureas sejam louváveis, não cabe, no presente caso, qualquer análise do mérito dessas alegações. O presente PADIC foi instaurado exclusivamente para verificar o cumprimento do compromisso relacionado ao IQP, o qual se baseia unicamente na análise objetiva dos resultados desse indicador.
+4.14. Assim, entende-se pela dispensabilidade de adentrar nas alegações apresentadas no tópico "efetivo incremento de qualidade dos serviços" no presente PADIC."
+Alinho-me integralmente à Área Técnica. De fato, a finalidade deste processo é apurar e sancionar eventuais descumprimentos aos itens do cronograma de metas e condições dos compromissos assumidos pela Prestadora quando da celebração do TAC, sendo que outras iniciativas, sem relação com as cláusulas estabelecidas no TAC, não devem ser objeto de apreciação nestes autos.
+Assim, não acolho o argumento de que eventuais melhorias do serviço prestado possam compensar descumprimentos aos compromissos assumidos, a fim de afastar a possibilidade de aplicação de sanção à Compromissária.
+IV. DA DOSIMETRIA DA PENA
+No Informe nº 253/2025/COQL/SCO (SEI nº 14590071), esclareceu-se que para o cálculo das multas propostas pelos descumprimentos apurados, a Área Técnica observou as diretrizes estabelecidas nas cláusulas 10.4 e 10.5 do TAC e as conclusões constantes no Informe nº 111/2025/COQL/SCO (SEI nº 13564884), elaborado nos autos do Processo de Acompanhamento do TAC nº 53500.001314/2022-79, que tratou do acompanhamento do compromisso denominado "Índice de qualidade percebida (IQP)" para o Ano 3.
+Assim sugeriu-se aplicação de pena de multa aos descumprimentos às cláusulas 10.4 e 10.5 do TAC, nos valores de R$2.024.132,75 (dois milhões, vinte e quatro mil cento e trinta e dois reais e setenta e cinco centavos) e R$1.877.116,79 (um milhão, oitocentos e setenta e sete mil cento e dezesseis reais e setenta e nove centavos), respectivamente.
+IV.1. Das impugnações suscitadas pela Compromissária
+Na defesa administrativa a Prestadora defendeu ser aplicável ao caso em exame a sanção de advertência, com fundamento no art. 22, § 1º, da Lei de Introdução ao Direito Civil Brasileiro - LINDB, art. 4º-A da Lei nº 13.874/2019, e da nova redação do art. 12, inciso I, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Subsidiariamente ao afastamento da sanção de multa, pleiteiou:
+a) em relação à Cláusula 10.5, "a", do TAC, seja considerado para o cálculo da multa a diferença entre a meta de cumprimento estabelecida (70%) e o valor alcançado sobre o valor de referência do ponto de controle no TAC (= R$ 3.043.808,65 - Anexo B); e
+b) quanto à cláusula 10.4, parágrafo único: que a multa seja obtida a partir da divisão do valor do compromisso do AC no ponto de controle (= R$ 3.043.808,65 - Anexo B), dividido por 27 (vinte e sete) UFs em que o resultado deve ser alcançado, perfazendo o valor de R$ 112.733,65 (cento e doze mil setecentos e trinta e três reais e sessenta e cinco centavos) por UF, multiplicado pelo número de UFs com degradação.
+Na petição extemporânea SEI 15436236, de 2 de abril de 2026, a Compromissionária reiterou os argumentos anteriormente apresentados e pleiteou a revisão da multa. Argumentou que o cálculo da sanção desconsiderou o disposto no § 2º da Cláusula 10.5 do TAC, ao não observar a proporcionalidade entre a meta pactuada e o resultado alcançado. Sustentou que, uma vez fixada a obrigação em percentual, o grau de inadimplemento deveria igualmente ser aferido em termos percentuais, tomando-se como base a própria meta de 70%, e não por meio da conversão dessa meta em número inteiro de UFs. Afirmou, assim, que a metodologia adotada pela Agência teria alterado a base de comparação na dosimetria da multa, sem amparo expresso no instrumento pactuado.
+Ainda nessa manifestação, a Telefonica defendeu que a metodologia adotada pela Anatel para o cálculo da multa prevista no parágrafo único da Cláusula 10.4 do TAC não observou o critério pactuado, na medida em que o § 1º da Cláusula 10.5 estabelece a proporcionalidade com base no número de Unidades da Federação e de serviços efetivamente afetados, e não em percentuais calculados sobre o total de UFs monitoradas. Alegou que a conversão das ocorrências em percentuais introduz critério não previsto no TAC e distorce a dosimetria da sanção. Requereu, assim, o recálculo da multa a partir de valor unitário por UF afetada, obtido pela divisão do valor de referência pelo universo de 27 UFs, multiplicado exclusivamente pelo número de UFs com degradação.
+Passo a avaliar os argumentos acima sintetizados.
+IV.1.1. Da pretensão de substituir a pena de multa por sanção de advertência
+Em relação à substituição da sanção de multa por outra menos gravosa, esclarece-se que, ao firmar o Termo de Ajustamento de Conduta (SEI nº 7874286), a Telefônica comprometeu-se a elevar a média de satisfação dos seus clientes, medida pelo IQP. Segundo as Cláusulas contidas na Subseção I - Compromisso Índice de Qualidade Percebida (IQP), a avaliação do índice deve observar estabilidade ou seu crescimento, por Unidades da Federação, considerando o IQP adotado como estado inicial do compromisso (ano 2021, publicado em 2022). O indicador será considerado cumprido para o ano 3, quando atingir 70% (setenta por cento) das UFs com melhora ou estabilidade, em relação aos níveis adotados como estado inicial, não se admitindo degradação do índice por 2 (dois) anos consecutivos. É o que se extrai das cláusulas a seguir transcritas:
+Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286)
+SUBSEÇÃO I - COMPROMISSO ÍNDICE DE QUALIDADE PERCEBIDA (IQP)
+"Cláusula 10.2. A COMPROMISSÁRIA se obriga, dentro do prazo de 48 (quarenta e oito) meses, a elevar a média de satisfação de seus clientes, o que deverá ser mensurado por meio da avaliação:
+I - Do nível do Índice de Qualidade Percebida (IQP) em abrangência nacional, previsto no Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL, aprovado pela Resolução nº 717, de 23 de dezembro de 2019;
+II - Da estabilidade ou crescimento do nível do IQP por Unidades da Federação, conforme metas e cronograma definidos neste compromisso.
+Parágrafo único. Serão adotados como estado inicial no presente compromisso os níveis de IQP obtidos na Pesquisa de Satisfação e Qualidade Percebida, relativa ao ano de 2021 e publicada em 2022.
+(...)
+Cláusula 10.4. A avaliação do IQP por Unidades da Federação será individualmente calculada para o SCM, STFC, SeAC e SMP, considerando a relação entre o número de Unidades da Federação com melhora ou estabilidade do IQP obtido para cada serviço e o total de Unidades da Federação em que o IQP de um dado serviço é medido.
+Parágrafo único. Não serão admitidas situações de degradação do IQP, em nenhuma UF, por 2 (dois) anos consecutivos para um mesmo serviço.
+Cláusula 10.5. O compromisso de evolução do nível do IQP por Unidades da Federação será considerado cumprido quando:
+alínea (a). Ano 2: atingir 60% das Unidades da Federação com melhora ou estabilidade do IQP apurado no ano, para cada serviço, em relação aos níveis de IQP adotados como estado inicial.
+alínea (b). Ano 3: atingir 70% das Unidades da Federação com melhora ou estabilidade do IQP apurado no ano, para cada serviço em relação ao ano imediatamente anterior.
+alínea (c). Ano 4: atingir 80% das Unidades da Federação com melhora ou estabilidade do IQP apurado no ano, para cada serviço em relação ao ano imediatamente anterior."
+§ 1º. Na hipótese de se verificar a degradação do IQP em alguma UF por 2 (dois) anos consecutivos para um mesmo serviço, será adicionalmente aplicada, a cada item de cronograma descumprido, multa em razão do valor de referência estipulado no Anexo B, proporcionalmente ao número de Unidades da Federação e serviços afetados por referida degradação.
+§ 2º. Não tendo sido atingida a meta definida para cada ponto de controle, incidirá multa pelo descumprimento do item de cronograma, proporcional à diferença entre a meta de cumprimento integral estabelecida e o valor alcançado.
+§ 3º. Na hipótese de inadimplemento do presente compromisso, ao término do quarto ano de vigência do TAC, incidirá a multa integral por descumprimento do compromisso, prevista no Anexo B, descontados os valores decorrentes da multa aplicada por descumprimento de item do cronograma do compromisso." (negritou-se)
+O procedimento a ser adotado para verificação do cumprimento do Item foi estabelecido no Manual de Acompanhamento e Fiscalização - MAF, anexo ao Termo de Ajustamento nº 1/2022 (SEI nº 5719882). Veja-se:
+Manual de Acompanhamento e Fiscalização - MAF
+Compromisso Índice de Qualidade Percebida (IQP)
+"69. A COMPROMISSÁRIA se obriga, dentro do prazo de 48 (quarenta e oito) meses, a elevar a média de satisfação de seus clientes, o que deverá ser mensurado por meio da avaliação do Índice de Qualidade Percebida (IQP), previsto no RQUAL. 
+70. Para a verificação e Apuração de Cumprimento deste item, serão utilizados os resultados da Pesquisa de Satisfação e Qualidade Percebida, prevista no Regulamento das Condições de Aferição do Grau de Satisfação e Qualidade Percebida junto aos Usuários de Serviços de Telecomunicações, segundo disposições contidas no Termo de Ajustamento de Conduta. Serão considerados como Estado Inicial do presente compromisso os valores de Índice de Qualidade Percebida indicados no TAC.” (negritou-se)
+Considerando essas orientações, a Área Técnica procedeu à apuração do IQP referente ao ano 3 do TAC (IQP 2022), conforme registrado no Informe nº 111/2025/COQL/SCO (SEI nº 13915159), constante dos autos do Processo nº 53500.001314/2022-79 (instaurado para acompanhamento do compromisso constante da Cláusula 10.2. do TAC). A esse documento, anexaram-se tabelas demonstrando os resultados do indicador relativos aos itens "II.1 - Da análise do indicador IQP no SCM", "II.2 - Da análise do indicador IQP no STFC", "II.3. Da análise do indicador IQP no SeAC" e "II.4 - Da análise do indicador IQP no SMP".
+Na tabela a seguir, apresento um resumo das conclusões constantes nos itens do Informe nº 111/2025/COQL/SCO (SEI nº 13915159), acima indicados, cujo detalhamento pode ser consultado naquele documento:
+ Serviço
+ | 
+ Total de UF
+ | 
+ UFs com estabilidade ou melhora do IQP
+ | 
+ UF com retrocesso do IQP
+ | 
+ alínea b da Cláusula 10.5 do compromisso IQP
+ | 
+ Cláusula 10.4, Parágrafo Único - degradação do índice por 2 anos consecutivos
+ | 
+ Resumo do Descumprimento
+ | 
+ SCM
+ | 
+ 21
+ | 
+ 12
+ | 
+ 4
+ | 
+ estabilidade ou melhora do índice em 57,1% para o referido indicador na comparação entre os resultados dos anos de 2023 e 2024
+ | 
+ 4 (quatro) casos
+ | 
+ . descumprimento do compromisso do IQP para o SCM.
+ . descumprimento da Cláusula 10.4, Parágrafo Único, para o SCM.
+ | 
+ STFC
+ | 
+ 16
+ | 
+ 7
+ | 
+ 3
+ | 
+ estabilidade ou melhora em 43,8% para o referido indicador na comparação entre os resultados dos anos de 2023 e 2024
+ | 
+ 3 (três) casos
+ | 
+ . descumprimento do compromisso do IQP para o STFC.
+ . descumprimento da Cláusula 10.4, Parágrafo Único, para o STFC.
+ | 
+ SeAC
+ | 
+ 8
+ | 
+ 6
+ | 
+ 2
+ | 
+ estabilidade ou melhora do índice em 75% na comparação entre os resultados dos anos de 2023 e 2024.
+ | 
+ 2 (dois) casos
+ | 
+ Descumprimento da Cláusula 10.4, Parágrafo Único, para o SeAC.
+ | 
+ SMP
+ | 
+ 27
+ | 
+ 19
+ | 
+ 1
+ | 
+ estabilidade ou melhora do índice em 70,4% para o referido indicador na comparação entre os resultados dos anos de 2023 e 2024.
+ | 
+ 1 (um) caso
+ | 
+ Descumprimento da Cláusula 10.4, Parágrafo Único, para o SMP.
+ | 
+Diante das constatações acima, concluiu-se pela existência de indícios dos seguintes descumprimentos:
+Cláusula 10.4, Parágrafo Único: retrocesso do IQP, por dois anos consecutivos, no SCM, STFC, SeAC e SMP; e
+Cláusula 10.5, alínea b: não atingimento da meta de 70% definida para o SCM e para o STFC no ano 3.
+Tais desconformidades justificaram a proposta da Área Técnica de aplicar à Compromissária sanção de multa, na forma definida na Cláusula 6.2 do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), de 28 de fevereiro de 2022:
+Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286)
+"Cláusula 6.2. Caso a SCO, de forma fundamentada, não considere procedentes as alegações apresentadas pela COMPROMISSÁRIA, encaminhará o respectivo processo administrativo à deliberação do Conselho Diretor da ANATEL, com proposta de aplicação de multa diária, podendo a Procuradoria Federal Especializada junto à ANATEL ser previamente consultada a respeito da questão."
+Ressalta-se que o Termo de Ajustamento de Conduta constitui acordo firmado entre as partes, com eficácia de título executivo extrajudicial (art. 3º do RTAC, aprovado pela Resolução nº 629/2013), de modo que suas disposições fazem lei entre as partes e devem ser seguidas.
+Desse modo, tendo sido previstas, no acordo firmado, as consequências dos descumprimentos no que toca ao tipo de sanção (multa diária), não é de se acolher a pretensão da Compromissária para que seja aplicada sanção de advertência.
+Nesse mesmo sentido, transcrevo o Acórdão nº 161 (SEI nº 12259119), de 10 de julho de 2024, proferido nos autos do Processo nº 53500.002435/2024-08, da relatoria da Conselheira Cristiana Camarate, que julgou o PADIC instaurado em face da TIM S.A. Referida decisão foi confirmada pelo Acórdão nº 336 (SEI nº 12863357), de 8 de novembro de 2024, que contou com a relatoria do então Conselheiro Arthur Coimbra, que julgou o Pedido de Reconsideração contra ela interposto:
+Acórdão nº 161 (SEI nº 12259119), de 10 de julho de 2024
+"Processo nº 53500.002435/2024-08
+Recorrente/Interessado: TIM S.A.
+CNPJ nº 02.421.421/0001-11
+Conselheiro Relator: Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Reunião nº 934, de 4 de julho de 2024
+EMENTA
+PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA (PADIC). CLÁUSULA 10.21, § 1º, ALÍNEA C, DO TERMO DE AJUSTAMENTO DE CONDUTA Nº 1, DE 2020. SANCIONAMENTO. COMPETÊNCIA DO CONSELHO DIRETOR. MULTA DIÁRIA. POSSIBILIDADE.
+1. Procedimento de Apuração de Descumprimento de Item de Cronograma (PADIC) em face da Compromissária TIM S.A., instaurado para apurar indícios de não atendimento integral ao disposto na Cláusula 10.21, § 1º, alínea "c", do Termo de Ajustamento de Conduta nº 1, de 2020 (5719446).
+2. Cabe ao Conselho Diretor a aplicação de multa em caso de descumprimento a item do cronograma de metas e condições dos compromissos firmado no Termo de Ajustamento de Conduta (TAC). Inteligência do art. 25 do Regulamento de celebração e acompanhamento de Termo de Compromisso de Ajustamento de Conduta (RTAC), aprovado pela Resolução nº 629, de 16 de dezembro de 2013.
+3. Não há incompatibilidade do compromisso de Redução do Índice de Reclamações com a aplicação de multa diária, porquanto a aplicação da referida sanção, nos termos da Cláusula 6.3 do TAC nº 1, de 2020, se refere à execução de itens de cronograma em relação aos quais a Compromissária concordou e se obrigou a cumprir.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 17/2024/CL (SEI nº 12064852), integrante deste acórdão, aplicar à TIM S.A. sanção de multa de R$ 9.574.469,36 (nove milhões, quinhentos e setenta e quatro mil, quatrocentos e sessenta e nove reais e trinta e seis centavos), por descumprimento da obrigação prevista na Cláusula 10.21, § 1º, alínea c, do TAC nº 1, de 2020 (5719446).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia."
+...
+Acórdão nº 336, de 8 de novembro de 2024
+"Processo nº 53500.002435/2024-08
+Recorrente/Interessado: TIM S.A.
+CNPJ nº 02.421.421/0001-11
+Conselheiro Relator: Artur Coimbra de Oliveira
+Fórum Deliberativo: Reunião nº 938, de 4 de novembro de 2024
+EMENTA
+PEDIDO DE RECONSIDERAÇÃO. PROCEDIMENTO DE APURAÇÃO DE DESCUMPRIMENTO DE ITEM DE CRONOGRAMA (PADIC). CLÁUSULA 10.21, § 1º, ALÍNEA C, DO TERMO DE AJUSTAMENTO DE CONDUTA Nº 1, DE 2020. MULTA DIÁRIA aplicada. procedimento ESCORREITO. Inexistência de argumentos novos. conhecimento e não provimento.
+1. Pedido de Reconsideração interposto em desfavor de Acórdão onde os membros do Conselho Diretor decidiram pela aplicação, à Compromissária, de multa por descumprimento da obrigação de execução de itens de cronograma previstos em Cláusula de Termo de Ajustamento de Conduta (TAC).
+2. Tendo em vista a caracterização do descumprimento, a multa diária foi devidamente aplicada pelo Conselho Diretor. O procedimento adotado encontra-se escorreito. Verifica-se a inexistência de argumentos novos suscetíveis de alterar o contexto em que a decisão recorrida foi adotada.
+3. Pedido de Reconsideração conhecido para, no mérito, ser a ele negado provimento.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 88/2024/AC (SEI nº 12702063), integrante deste acórdão:
+a) conhecer do Pedido de Reconsideração para, no mérito, negar-lhe provimento; e,
+b) indeferir o pedido contido na petição intitulada Manifestação.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto."
+(destaquei)
+É de se manter a aplicação de sanção de multa, em estrita observância ao termo pactuado.
+IV.1.2. Da impugnação quanto ao cálculo pelo descumprimento ao compromisso fixado na cláusula 10.4, parágrafo único - necessidade de se considerar todas as UFs para o cálculo da multa
+A recorrente sustentou em suas manifestações que a Anatel aplicou metodologia incompatível com o TAC para o cálculo da multa prevista no parágrafo único da Cláusula 10.4, referente à degradação do IQP por dois anos consecutivos. Argumentou que o § 1º da Cláusula 10.5 estabelece como critério de proporcionalidade o número de UF e de serviços efetivamente afetados, e não a apuração de percentuais de degradação sobre o total de UFs medidas. Segundo a tese recursal, ao converter o número de ocorrências em percentuais, a Agência criou critério intermediário não previsto no TAC, distorcendo a dosimetria da sanção e fazendo-a variar conforme a base de UFs monitoradas em cada serviço.
+Defendeu, assim, que a multa deve ser recalculada com base em valor unitário por UF afetada, obtido pela divisão do valor de referência do compromisso pelo universo de 27 UFs, multiplicado apenas pelo número de UFs em que houve degradação, por ser o critério mais aderente ao texto pactuado no TAC.
+No que se refere à apuração da multa relacionada ao compromisso em exame, o corpo técnico consignou que o descumprimento da obrigação de não degradação do IQP por 2 (dois) anos consecutivos restou caracterizado para os serviços de SCM, STFC, SeAC e SMP. Para fins de dosimetria, aplicou-se o critério de proporcionalidade previsto no § 1º da Cláusula 10.5, mediante a aferição do número de UFs com degradação em relação ao total de UFs em que o indicador foi medido para cada serviço, convertendo-se tal relação em percentuais de descumprimento. Esses percentuais foram então aplicados ao valor de referência do sétimo ponto de controle do TAC, resultando nos valores individuais de multa por serviço, cuja soma foi posteriormente atualizada nos termos da Cláusula 12.3, com base no IGP-DI. Confira-se:
+Informe 253/2025/COQL/SCO
+"4.39. Adicionalmente, a Compromissária também descumpriu a obrigação de não degradação por dois anos seguidos constante da Cláusula 10.4, parágrafo único, do TAC para os serviços de SCM, STFC, SeAC e SMP. Embora a citada infração se configure com a ocorrência em ao menos uma Unidade da Federação, o TAC estabelece critério de dosimetria proporcional à quantidade de UFs e de serviços afetados, conforme o §1º da Cláusula 10.5.
+4.40. Dessa forma, tendo em vista o total de UFs em que o IQP foi medido para cada serviço, apuraram-se os seguintes percentuais de descumprimento:
+. SCM: 4 UFs em 21 → 19,05%
+. STFC: 3 UFs em 16 → 18,75%
+. SeAC: 2 UFs em 8 → 25%
+. SMP: 1 UF em 27 → 3,7%
+4.41. Aplicando-se tais percentuais ao valor de referência do 7º ponto de controle, chega-se a um valor total de multa de R$2.024.132,75 (dois milhões, vinte e quatro mil cento e trinta e dois reais e setenta e cinco centavos), conforme se verifica no quadro abaixo:
+4.42. A soma das penalidades apuradas resulta no valor nominal de R$3.901.249,54 (três milhões, novecentos e um mil duzentos e quarenta e nove reais e cinquenta e quatro centavos). Todavia, deve-se levar em conta a disposição constante da cláusula 12.3 do TAC, a qual prevê que o Valor de Referência do TAC e todos os demais valores decorrentes devem ser atualizados, para fins de execução, pelo Índice Geral de Preços - Disponibilidade Interna (IGP-DI) ou outro que vier a substituí-lo."
+Passo a tecer minhas considerações.
+A interpretação sustentada pela Telefonica, no sentido de que a proporcionalidade prevista no § 1º da Cláusula 10.5 deveria ser apurada a partir do universo fixo de 27 Unidades da Federação, mostra-se incompatível com a sistemática do próprio instrumento pactuado. Isso porque a avaliação do IQP, conforme expressamente disposto na Cláusula 10.4, é realizada apenas nas Unidades da Federação em que o serviço é efetivamente prestado e onde o indicador é medido, inexistindo fundamento jurídico ou lógico para considerar, no cálculo da penalidade, Unidades da Federação nas quais não há prestação do serviço correspondente. Adotar a metodologia defendida pela recorrente implicaria, na prática, presumir o cumprimento do compromisso em contextos fáticos inexistentes, o que afrontaria a racionalidade do ajuste e comprometeria a aderência da sanção à realidade da obrigação assumida.
+Além disso, acolher a tese recursal conduziria a um resultado manifestamente distorcido da finalidade sancionatória do TAC, na medida em que a multa jamais poderia atingir seu valor integral nos casos em que a prestadora atua apenas em parcela das Unidades da Federação.
+Cumpre destacar, ainda, que o § 1º da Cláusula 10.5 não pode ser interpretado de forma isolada, devendo ser lido em conjugação com o § 2º do mesmo dispositivo, o qual estabelece, de forma expressa, que a multa deve ser proporcional à diferença entre a meta de cumprimento integral estabelecida e o valor efetivamente alcançado. Nesse contexto, a conversão do número de Unidades da Federação com degradação do IQP em percentuais de descumprimento não configura inovação normativa, mas simples técnica de operacionalização da proporcionalidade pactuada, permitindo quantificar, com objetividade, o grau de afastamento da obrigação assumida.
+Dessa forma, ao considerar como base de cálculo exclusivamente o universo de Unidades da Federação em que o indicador foi efetivamente medido para cada serviço, e ao aplicar percentuais correspondentes ao número de ocorrências de degradação, a área técnica observou fielmente os critérios estabelecidos no TAC, sem extrapolação ou distorção de seus comandos. Não se verifica, portanto, qualquer vício na metodologia empregada.
+Ante o exposto, deve-se manter o cálculo da multa proposto pelo Corpo Técnico em relação ao item de descumprimento em exame.
+IV.1.3. Da impugnação quanto ao cálculo da multa pelo descumprimento à cláusula 10.5, alínea "b"- Alteração da base de comparação na dosimetria da multa gerando desproporcionalidade entre a meta pactuada e o resultado alcançado
+Quanto ao questionamento em comento, cabe uma análise mais detalhada.
+Como mencionado linhas acima, em sua manifestação extemporânea SEI nº 15436236, a Prestadora alegou que a Agência teria alterado a base de comparação na dosimetria da multa ao não observar a proporcionalidade entre a meta pactuada e o resultado alcançado. Isso porque tendo a obrigação sido fixada em percentual (70% das UFs), o descumprimento também deveria ser apurado de forma proporcional a esse referencial, em termos percentuais, e não a partir da conversão da meta em número inteiro de UFs. Com base nessa lógica, defendeu que o inadimplemento corresponderia a 18,37% no SCM e a 37,5% no STFC, e não a 20% e 41,67%, respectivamente, como considerado pela Área Técnica. Confira-se a literalidade da tese aventada:
+Petição Extemporânea SEI nº 15436236
+"Todavia, com a devida vênia, a metodologia adotada pela Agência não observa a redação do § 2º da própria Cláusula 10.5, segundo a qual a multa deve ser “proporcional à diferença entre a meta de cumprimento integral estabelecida e o valor alcançado”.
+Isso porque a cláusula não trata a multa como valor fixo decorrente do simples não atingimento da meta, mas como penalidade proporcional ao grau de inadimplemento. Assim, se a meta pactuada corresponde a 70% das UFs, é precisamente em relação a esse referencial que se deve medir a parcela da obrigação que deixou de ser cumprida , pois foi essa a grandeza eleita pelo TAC como parâmetro da obrigação. 
+Assim, no SCM, o cálculo correto corresponde a (70% - 57,14%) ÷ 70% = 18,37% ; e, no STFC, a (70% - 43,75%) ÷ 70% = 37,5% . São esses os percentuais que refletem, de forma fiel, a proporção da meta que deixou de ser cumprida. Esse critério é o único que preserva a coerência entre a obrigação principal e a consequência sancionatória prevista no TAC. 
+Isso porque a meta foi pactuada em percentual, o resultado foi apurado em percentual e, por isso, o descumprimento proporcional também deve ser aferido em percentual da própria meta. Não há, no TAC firmado entre as partes, previsão para que essa lógica seja substituída por outro método, baseado na conversão da meta em número inteiro de UFs e na posterior divisão do número de UFs faltantes pelo quantitativo mínimo exigido. 
+Ao assim proceder, a Anatel altera a base de comparação no momento da dosimetria, pois o atingimento da meta é apurado sobre o total de UFs medidas, em percentual, mas o suposto descumprimento é calculado com base no número de UFs faltantes para atingir uma meta previamente arredondada em número inteiro. Com isso, passam a ser confrontadas grandezas distintas, o que produz agravamento indevido da sanção.(...)"
+Nos itens 4.36 a 4.42 do Informe nº 253/2025/COQL/SCO (SEI nº 14590071), esclareceram-se os parâmetros considerados pela Área Técnica para os cálculos das multas pelos descumprimentos identificados nos autos:
+Informe 253/2025/COQL/SCO
+4.36. Dessa forma, quanto ao SCM, no ano 3, para atingir a meta de 70% (setenta por cento) prevista na Cláusula 10.5, alínea "b", do TAC, era necessário que 15 (quinze) UFs apresentassem melhora ou estabilidade do IQP, considerando o total de 21 (vinte e uma) Unidades da Federação em que este foi medido. No entanto, apenas 12 (doze) UFs atenderam a esse critério, resultando em déficit de 3 UFs, correspondente a 20% (vinte por cento) de descumprimento.
+4.37. Já quanto ao STFC, exigia-se o cumprimento de 12 (doze) UFs, entre as 16 UFs avaliadas, tendo sido observada melhora ou estabilidade em apenas 7 (sete) UFs, o que representa déficit de 5 UFs, correspondente a 41,67% (quarenta e um vírgula sessenta e sete por cento) de descumprimento.
+4.38. Multiplicando-se esses percentuais de descumprimento pelo valor de referência do 7º ponto de controle (final do 3º ano após início da vigência), previsto no Anexo B (SEI nº 7889220) do TAC nº 1/2022, chega-se a um valor total de multa de R$1.877.116,79 (um milhão, oitocentos e setenta e sete mil cento e dezesseis reais e setenta e nove centavos), conforme se verifica no quadro abaixo:
+Nesse ponto, entendo que assiste razão à prestadora quanto à necessidade de retificação do cálculo pelo descumprimento ao item 10.5, alínea "b", do TAC.
+O § 2º da cláusula 10.5 do Compromisso dispõe de forma clara que, não alcançada a meta estabelecida, a multa deve ser proporcional à diferença entre a meta de cumprimento integral e o resultado efetivamente atingido, ambos expressos em termos percentuais. A cláusula não prevê a conversão da meta em número inteiro de Unidades da Federação, tampouco a realização de arredondamentos para fins de cálculo da sanção. Assim, a metodologia adotada pela área técnica, ao alterar a base de comparação originalmente pactuada, não se mostra aderente ao critério previsto no TAC.
+Nessa medida, proponho o acolhimento do pleito em razão do equívoco identificado.
+Segue o recálculo do valor da multa, a fim de que a sanção observe estritamente a diferença percentual entre a meta estabelecida e o percentual efetivamente cumprido, nos termos do § 2º do item 10.5 do Compromisso:
+IV.2. Do cálculo final da multa
+Por fim, nos termos da Cláusula 12.3, parágrafo único, do TAC nº 1/2022 (SEI nº 7874286) o valor da multa originalmente calculado pela Área Técnica, deve ser recalculado considerando-se a retificação proposta no tópico anterior, devendo ainda ser atualizado pelo Índice Geral de Preços – Disponibilidade Interna (IGP-DI):
+Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286)
+Cláusula 12.3. O Valor de Referência do TAC será atualizado para fins de execução no caso de descumprimento, pela aplicação do Índice Geral de Preços – Disponibilidade Interna (IGP-DI) ou outro índice que vier a substituí-lo.
+Parágrafo único. A atualização do Valor de Referência implicará a revisão de todos os demais valores decorrentes, como o Valor de Referência de cada item do cronograma de metas e condições e o valor da multa diária aplicável.
+Dessa forma, após a atualização do valor originário da multa, no montante de R$ 3.724.317,29 (três milhões, setecentos e vinte e quatro mil trezentos e dezessete reais e vinte e nove centavos), até janeiro do corrente exercício, com base no Índice Geral de Preços – Disponibilidade Interna (IGP-DI) mais recente disponível no sítio eletrônico do Banco Central do Brasil à data desta deliberação, apura-se que o valor final da penalidade corresponde a R$ 3.944.597,25 (três milhões, novecentos e quarenta e quatro mil quinhentos e noventa e sete reais e vinte e cinco centavos).
+Fonte:: BACEN - calculadora do cidadão (https://www3.bcb.gov.br/CALCIDADAO/publico/corrigirPorIndice.do?method=corrigirPorIndice)
+V - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+A atuação da Anatel deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-Anatel (SEI nº 11203364).
+Observa-se que a proposta de encaminhamento contida na presente Análise se relaciona com o ODS nº 9, ao fomentar infraestrutura de telecomunicações de qualidade, confiável e resiliente, nos termos da Meta 9.1.
+Além disso, o ODS nº 16, Paz, Justiça e Instituições Eficazes, é igualmente atendido, pois, conforme demonstrado, observaram-se durante todo o trâmite processual os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel. Destaca-se, em especial, a Meta 16.6 do referido objetivo, na qual se propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+Reforça-se assim o comprometimento da Agência e do país com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+CONCLUSÃO
+Voto por:
+conhecer dos pedidos formulados na petição intitulada “Memorial – PADIC Ano 3 – IQP” (SEI nº 15146638) e indeferi-los;
+conhecer dos pedidos formulados na petição SEI nº 15436236, intitulada "Petição - CT.LLLAC nº 265/2025" e deferi-los parcialmente, exclusivamente quanto aos ajustes à proposta de dosimetria da pena, conforme tratado nos itens "IV.1.3" e "IV.2" desta Análise;
+aplicar à Telefônica Brasil S.A. multa no valor de R$ 3.944.597,25 (três milhões, novecentos e quarenta e quatro mil quinhentos e noventa e sete reais e vinte e cinco centavos), em razão do descumprimento do disposto nas Cláusulas 10.4, parágrafo único, e 10.5, alínea “b”, do Termo de Ajustamento de Conduta nº 1/2022 (SEI nº 7874286), firmado em 28 de fevereiro de 2022, nos termos das Cláusulas 6.2 e 6.3 do referido TAC, bem como dos arts. 17, § 1º, inciso III, 25 e 26 do Regulamento de Celebração e Acompanhamento de Termo de Compromisso de Ajustamento de Conduta - RTAC. 
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15271897 e o código CRC 56940159.
+ | 
+Referência: Processo nº 53500.046715/2025-09 | 
+SEI nº 15271897 |

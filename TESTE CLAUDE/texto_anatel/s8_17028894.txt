@@ -1,0 +1,37 @@
+SEI/ANATEL - 15219501 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 36, de 23 de fevereiro de 2026
+Processo nº 53500.001314/2022-79
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ANÁLISE DE PEDIDO DE REPACTUAÇÃO DE TERMO DE AJUSTAMENTO DE CONDUTA - tac. ÍNDICE DE QUALIDADE PERCEBIDA - IQP. EXCLUSÃO DO SERVIÇO DE ACESSO CONDICIONADO SEAC. INDEFERIMENTO.
+I. CASO EM EXAME
+1. Pedido apresentado pela TELEFÔNICA BRASIL S.A. para repactuação do compromisso "Índice de qualidade percebida - IQP" para o ano 4, referente às Cláusulas 10.3 e 10.5, alínea "c", do Termo de Ajustamento de Conduta - TAC nº 1/2022, visando à exclusão do Serviço de Acesso Condicionado - SeAC e à redistribuição dos valores previstos no último ponto de controle do SeAC para os demais serviços.
+2. Fundamentação do pedido na aprovação do novo Plano Geral de Metas de Competição - PGMC, que suspendeu, de forma cautelar, a necessidade de atender obrigações regulatórias quanto à pesquisa de satisfação do cliente para o SeAC.
+3. Área técnica da Anatel opinou pelo indeferimento do pedido, considerando que a pesquisa de satisfação referente ao ano 4 já estava em andamento e que o instrumento pactual atingiu seu objetivo quanto ao SeAC.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível repactuar o compromisso "Índice de qualidade percebida - IQP" para o ano 4 do TAC nº 1/2022, excluindo o SeAC e redistribuindo os valores de referência para os demais serviços, diante da suspensão das obrigações regulatórias relativas à pesquisa de satisfação do SeAC.
+III. RAZÕES DE DECIDIR
+1. O TAC nº 1/2022 não prevê a retirada de metas ou indicadores em caso de alteração da regulamentação, mas apenas a execução da parcela do valor de referência relacionada ao compromisso prejudicado.
+2. A pesquisa de satisfação do SeAC referente ao ano 4 já estava em andamento, com dados coletados e em fase final de análise, sendo possível utilizar seus resultados para avaliação do IQP.
+3. O compromisso pactuado atingiu seu objetivo de melhoria dos níveis de qualidade percebidos pelos usuários do SeAC, não havendo interesse público na repactuação do indicador neste momento.
+4. A proposta de redistribuição dos valores de referência do SeAC para os demais serviços não encontra respaldo nas cláusulas do TAC.
+IV. DISPOSITIVO E TESE
+Pedido indeferido.
+Tese de julgamento: "1. Não é possível a repactuação do compromisso "Índice de qualidade percebida - IQP" para o ano 4 do TAC nº 1/2022, com exclusão do SeAC e redistribuição dos valores de referência para os demais serviços, diante da suspensão das obrigações regulatórias relativas à pesquisa de satisfação do SeAC. 2. Devem ser utilizados os resultados da pesquisa de satisfação do SeAC referente ao ano 4 para fins de avaliação do IQP, conforme previsto nas Cláusulas 10.3 e 10.5, alínea 'c', do TAC nº 1/2022."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Resolução nº 629/2013; Resolução nº 717/2019; Resolução nº 654/2015; TAC nº 1/2022, Cláusulas 10.3, 10.5, 15.3 a 15.7.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 5/2026/EH (SEI nº 15054928), integrante deste acórdão, indeferir o pedido feito pela TELEFÔNICA BRASIL S.A. na "Petição CT LLLAC 1345/2025" (SEI nº 14434867), de 23 de setembro de 2025 (SEI nº 14934935), de repactuação do compromisso "Índice de qualidade percebida - IQP" para o ano 4, no que tange às Cláusulas 10.3 e 10.5, alínea "c", do Termo de Ajustamento de Conduta - TAC nº 1/2022 (SEI nº 7874286), referente à exclusão do Serviço de Acesso Condicionado - SeAC e à redistribuição dos valores previstos no último ponto de controle do SeAC para os demais serviços.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15219501 e o código CRC D99E4FCC.
+ | 
+Referência: Processo nº 53500.001314/2022-79 | 
+SEI nº 15219501 |

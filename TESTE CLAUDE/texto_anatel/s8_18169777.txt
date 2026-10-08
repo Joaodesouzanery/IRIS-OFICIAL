@@ -1,0 +1,42 @@
+SEI/ANATEL - 16204965 - Acórdão
+Boletim de Serviço Eletrônico em 01/09/2026
+DOU de 01/09/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 227, de 31 de agosto de 2026
+Processo nº 53516.000120/2021-04
+Recorrente/Interessado: LIGGA TELECOMUNICAÇÕES S.A.
+CNPJ nº 04.368.865/0001-66
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 219, de 28 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. MULTA DE OFÍCIO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por LIGGA TELECOMUNICAÇÕES S.A. contra decisão que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust e à multa de ofício, relativos ao exercício de 2019.
+2. Fato relevante. A fiscalização apurou contribuição devida de [Item 1 - Apartado Sigiloso SEI nº 16194260)]. A empresa declarou [Item 2 - Apartado Sigiloso SEI nº 16194260)]. Restou diferença de [Item 3 - Apartado Sigiloso SEI nº 16194260)].
+3. As alegações. A Recorrente sustentou improcedência da cobrança, por alegada divergência na memória de cálculo diante da exclusão do Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS da base de cálculo do Programa de Integração Social - PIS e da Contribuição para o Financiamento da Seguridade Social - Cofins, e ilegalidade da multa de ofício de 75% (setenta e cinco por cento).
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o lançamento do Fust deve ser revisto por alegada divergência na apuração decorrente da exclusão do ICMS da base de cálculo do PIS e da Cofins; e (ii) saber se a multa de ofício de 75% (setenta e cinco por cento) é aplicável e compatível com a vedação ao confisco.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo, cabível e atende aos pressupostos de admissibilidade.
+2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário no PAF.
+3. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, porque o caso não se enquadrou nas hipóteses do art. 5º, IV, da Portaria Anatel nº 642/2013.
+4. A fiscalização excluiu o ICMS da base de cálculo do PIS e da Cofins na apuração do Fust, em conformidade com o entendimento adotado pelo Supremo Tribunal Federal - STF no RE nº 574.706/PR.
+5. A Recorrente não apresentou argumento novo nem prova apta a afastar os valores apurados pela fiscalização.
+6. A multa de ofício incide nos casos de falta de declaração ou de declaração inexata que resulte em recolhimento a menor da Contribuição.
+7. O percentual de 75% (setenta e cinco por cento) decorre do art. 44, I, da Lei nº 9.430/1996.
+8. A jurisprudência do STF e do Conselho Diretor da Anatel admite a multa de ofício nesse patamar, sem caráter confiscatório.
+9. A Súmula Anatel nº 27 consolidou a legitimidade da multa de ofício nos PAFs relativos ao Fust.
+IV. DISPOSITIVO E TESE
+14) Recurso conhecido e desprovido. Mantida a decisão recorrida.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e presentes os pressupostos de admissibilidade. 2. O lançamento da Contribuição ao Fust deve ser mantido quando a fiscalização observa a exclusão do ICMS da base de cálculo do PIS e da Cofins e a Recorrente não apresenta prova capaz de infirmar a memória de cálculo. 3. É legítima a aplicação da multa de ofício de 75% (setenta e cinco por cento), nos termos do art. 44, I, da Lei nº 9.430/1996, nos casos de ausência de declaração ou de declaração inexata que importe recolhimento a menor da Contribuição ao Fust."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 150, IV; Código Tributário Nacional - CTN, art. 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, art. 116; Portaria Anatel nº 642/2013, art. 5º, IV; e Portaria Anatel nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: Súmula Anatel nº 27; Súmula Anatel nº 26; Súmula Conselho Administrativo de Recursos Fiscais - CARF nº 11; STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 941, de 13.03.2025; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Conselheiro Carlos Manuel Baigorri, Reunião nº 885, de 28.05.2020; e Anatel, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Conselheiro Otavio Luiz Rodrigues Junior, Reunião nº 823, de 06.04.2017.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº Análise nº 79/2026/NP (SEI nº 16147581), integrante deste acórdão, ratificar o conhecimento do Recurso Administrativo (SEI nº 14360635) interposto pela empresa LIGGA TELECOMUNICAÇÕES S.A., inscrita no CNPJ sob o nº 04.368.865/0001-66, sucessora, por incorporação, da empresa HORIZONS TELECOMUNICAÇÕES E TECNOLOGIA S.A., para, no mérito, negar-lhe provimento, mantendo-se os termos do Despacho Decisório nº 209/2025/COGE/SCO (SEI nº 13484414), de 23 de julho de 2025.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 31/08/2026, às 18:11, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16204965 e o código CRC A9542106.
+ | 
+Referência: Processo nº 53516.000120/2021-04 | 
+SEI nº 16204965 |

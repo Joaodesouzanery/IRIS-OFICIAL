@@ -1,0 +1,53 @@
+SEI/ANATEL - 15676884 - Acórdão
+Boletim de Serviço Eletrônico em 22/05/2026
+DOU de 22/05/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 138, de 21 de maio de 2026
+Processo nº 53500.009201/2026-45
+Recorrente/Interessado: AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Circuito Deliberativo nº 130, de 21 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. LICITAÇÃO DE RADIOFREQUÊNCIAS. RECURSO DESPROVIDO E HOMOLOGAÇÃO DO RESULTADO DA LICITAÇÃO.
+I. CASO EM EXAME
+O Recurso. Recurso Administrativo interposto por TIM S.A. contra decisões da Comissão Especial de Licitação no âmbito do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL.
+Objeto da insurgência. A Recorrente impugna a decisão que reconheceu o atendimento das condições de participação e a prévia habilitação de AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. e a decisão que classificou e adjudicou a essa proponente o Lote A1.
+Fato relevante. O certame foi instaurado para outorga de autorizações de uso de radiofrequências nas subfaixas de 708-718 MHz e 763-773 MHz, com possibilidade de prestação do Serviço Móvel Pessoal - SMP.
+As decisões anteriores. A Comissão Especial de Licitação adjudicou os Lotes A1 a A5 às proponentes classificadas em primeiro lugar e publicou o Aviso de Licitação em 6 de maio de 2026. A Procuradoria Federal Especializada junto à Anatel - PFE/Anatel manifestou-se pelo não provimento do Recurso e pela legalidade do procedimento licitatório.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Recurso Administrativo interposto por TIM S.A. preenche os requisitos de admissibilidade; e saber se (ii) a adjudicação do Lote A1 à AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. deve ser mantida, bem como se é cabível a homologação do resultado da licitação para os Lotes A1 a A5.
+III. RAZÕES DE DECIDIR
+1. Competência do Conselho Diretor para avaliação da matéria encontra-se prevista no art. 133, VII, e nos itens 9.1 c/c 10.1 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL.
+2. O Recurso foi interposto dentro do prazo previsto no item 10.1 do Edital. A Recorrente possui legitimidade e interesse recursal.
+3. As contrarrazões de AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. foram apresentadas tempestivamente e atendem aos requisitos do item 10.4 do Edital.
+4. A controvérsia recursal limita-se ao Lote A1. Não há impugnação dirigida aos demais lotes adjudicados.
+5. A alegação de coligação não procede. O item 4.3 do Edital veda a apresentação de mais de uma proposta para o mesmo lote por proponentes com vínculo de controle ou coligação entre si.
+6. A análise técnica concluiu pela inexistência de relação de controle ou coligação entre as proponentes participantes do certame.
+7. A interpretação defendida pela Recorrente amplia indevidamente as restrições previstas no Edital e contraria os princípios da vinculação ao instrumento convocatório, da segurança jurídica e da competitividade.
+8. A declaração apresentada por AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. foi regularmente assinada e consignou que não há controladora e que a companhia possui controle compartilhado entre seus acionistas.
+9. A Comissão não se limitou ao exame formal da declaração. A Administração analisou a documentação societária, a relação de acionistas e informações extraídas de sistemas internos da Anatel e de outros órgãos governamentais.
+10. Ainda que houvesse imperfeição formal no preenchimento do modelo declaratório, isso não seria suficiente para invalidar a participação da Proponente, pois a finalidade da exigência foi atendida.
+11. O art. 9º da Resolução nº 65/1998 e o item 7.19 do Edital consagram o formalismo moderado. Vícios formais sem prejuízo à qualificação do licitante, à compreensão da proposta ou à isonomia não autorizam inabilitação ou anulação do ato.
+12. A operação societária mencionada pela Recorrente não se consumou e depende de aprovação regulatória da Anatel. Fato futuro e incerto não altera a situação jurídica examinada pela Comissão no momento da análise das condições de participação.
+13. Não houve demonstração de vínculo vedado, de prejuízo à competitividade ou de vício na análise administrativa. Deve ser mantida a adjudicação do Lote A1 à AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A.
+14. O procedimento licitatório observou as fases previstas na Resolução nº 65/1998. A regularidade formal e material do certame até a adjudicação dos Lotes A1 a A5 foi atestada pela área técnica, pela Comissão Especial de Licitação e pela Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+15. As decisões judiciais mencionadas no curso do certame não impediram seu prosseguimento. A Comissão cumpriu as determinações judiciais e preservou a regularidade dos atos subsequentes.
+16. Não subsiste impedimento à homologação do resultado dos Lotes A1 a A5 às Proponentes classificadas em primeiro lugar.
+IV. DISPOSITIVO E TESE
+1. Recurso Administrativo conhecido e desprovido. Contrarrazões conhecidas.
+2. Homologação do resultado dos Lotes A1 a A5 adjudicados às Proponentes classificadas em primeiro lugar, na forma do Aviso de Licitação SEI nº 15583460, publicado no Diário Oficial da União de 6 de maio de 2026, nos termos do que preceitua o item 9.1 do Edital Licitação nº 1/2026-SOR/SPR/CD-ANATEL.
+Tese de julgamento: "1. É admissível o Recurso Administrativo interposto tempestivamente por participante do certame com legitimidade e interesse recursal. 2. Não configura violação ao Edital a inexistência de prova de controle ou coligação entre proponentes para o mesmo lote. 3. A declaração societária regularmente apresentada e complementada pela análise substancial da Administração atende às exigências editalícias. 4. Vício formal sem prejuízo à qualificação do licitante, à compreensão da proposta ou à isonomia não invalida o ato licitatório. 5. Inexistente irregularidade na participação da Adjudicatária do Lote A1, deve ser mantida a decisão da Comissão Especial de Licitação. 6. Verificada a regularidade do procedimento licitatório, é cabível a homologação do resultado dos Lotes A1 a A5."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Resolução nº 65/1998, arts. 9º, 32 e 33; Resolução nº 612/2013, art. 116; Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, itens 4.2.1, 4.3, 4.3.1, 7.19, 8.3, 9.1, 10.1, 10.3 e 10.4.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 44/2026/EH (SEI nº 15652192), integrante deste acórdão:
+a) conhecer do Recurso Administrativo interposto por TIM S.A., CNPJ nº 02.421.421/0001-11, diante do atendimento aos requisitos previstos no item 10.4 do Edital Licitação nº 1/2026-SOR/SPR/CD-ANATEL, para, no mérito, negar-lhe provimento;
+b) conhecer das Contrarrazões oferecidas por AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., CNPJ nº 58.074.301/0001-40, em face do Recurso Administrativo interposto por TIM S.A., diante do atendimento aos requisitos previstos no item 10.4 do Edital Licitação nº 1/2026-SOR/SPR/CD-ANATEL; e,
+c) homologar o resultado dos Lotes A1 a A5 adjudicados às Proponentes classificadas em primeiro lugar, na forma do Aviso de Licitação SEI nº 15583460, publicado no Diário Oficial da União de 6 de maio de 2026, nos termos do que preceitua o item 9.1 do Edital Licitação nº 1/2026-SOR/SPR/CD-ANATEL.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 21/05/2026, às 13:08, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15676884 e o código CRC 4C7B7E26.
+ | 
+Referência: Processo nº 53500.009201/2026-45 | 
+SEI nº 15676884 |

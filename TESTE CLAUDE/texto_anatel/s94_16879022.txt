@@ -1,0 +1,56 @@
+SEI/ANATEL - 15082519 - Voto
+Boletim de Serviço Eletrônico em 28/01/2026
+Voto nº 8/2026/PR
+Processo nº 53500.060071/2025-53
+Interessado: Sercomtel S.a. - Telecomunicacoes, Ligga Telecomunicacoes S.a., Amazonia Servicos Digitais e Telecomunicacoes S.A.
+PRESIDENTE
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Proposta de distribuição, por conexão, do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+EMENTA
+DISTRIBUIÇÃO POR CONEXÃO. TRANSFERÊNCIA DE AUTORIZAÇÕES DE USO DE RADIOFREQUÊNCIAS. FAIXAS DE FREQUÊNCIAS DEBATIDAS EM PROCESSO SOB ANÁLISE DO CONSELHO DIRETOR. Portaria nº 495/2012. APROVAÇÃO.
+Análise sobre a possibilidade de distribuição do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55.
+O processo nº 53500.060071/2025-53 trata de análise de requerimento de Anuência Prévia formulado pelas empresas SERCOMTEL S.A. - TELECOMUNICAÇÕES, LIGGA TELECOMUNICAÇÕES S.A. e AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., com o objetivo de transferir autorizações de uso de radiofrequências, detidas pela primeira para a terceira empresa.
+Por sua vez, no âmbito do processo nº 53500.043774/2023-55 se avalia Pedido de Reconsideração formulado por SERCOMTEL e LIGGA no intuito de desfazer a operação, anuída pela Anatel, de transferência das mesmas autorizações de uso de radiofrequências da SERCOMTEL para a LIGGA.
+Competência do Conselho Diretor para decidir sobre a distribuição de processos por conexão, nos termos da Portaria nº 495, de 24 de maio de 2012.
+Aprovação da conexão.
+REFERÊNCIAs
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria nº 495, de 24 de maio de 2012;
+Matéria para Apreciação do Conselho Diretor nº 17/2026 (SEI nº 15024806);
+Processo nº 53500.060071/2025-53;
+Processo nº 53500.043774/2023-55.
+RELATÓRIO
+Trata-se de análise quanto à distribuição, por conexão, do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55, Conselheiro Octávio Penna Pieranti, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+No âmbito do processo nº 53500.086224/2023-21 se avalia requerimento de Anuência Prévia formulado pelas empresas SERCOMTEL S.A. - TELECOMUNICAÇÕES, LIGGA TELECOMUNICAÇÕES S.A. e AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., com o objetivo de transferir autorizações de uso de radiofrequências em caráter primário na faixa de 3.600 MHz a 3.680 MHz, na Região Norte e Estado de São Paulo, exceto setor 33 do PGO, detidas pela primeira para a terceira empresa.
+Por sua vez, no processo nº 53500.043774/2023-55 o Conselho Diretor aprovou, nos termos do Acórdão nº 139, de 4 de junho de 2024 (SEI nº 12074011), a transferência das mesmas autorizações de uso de radiofrequências da SERCOMTEL para a LIGGA, estando em análise pelo Colegiado, sob a relatoria do Conselheiro Octávio Penna Pieranti, Pedido de Reconsideração formulado pelas partes no intuito de desfazer a operação.
+Por meio da Matéria para Apreciação do Conselho Diretor nº 17/2026 (SEI nº 15024806), de 20 de janeiro de 2026, a Superintendência de Competição (SCP) e a Superintendência de Outorga e Recursos à Prestação (SOR) sugeriram a distribuição por conexão ora em análise, "uma vez que o atendimento ao pleito sob análise está diretamente condicionado ao julgamento daquele feito".
+É o breve relatório.
+Análise
+O Regimento Interno da Agência (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, traz como regra geral a distribuição de matérias por meio de sistema informatizado (art. 9º), de forma randômica e proporcional, conforme o tipo de procedimento administrativo objeto da matéria levada à decisão do Conselho Diretor (art. 9º, §1º).
+Contudo, há casos excepcionais que são analisados com base na Portaria nº 495, de 24 de maio de 2012, que estabelece procedimentos relativos à distribuição por sorteio das matérias levadas à deliberação do Conselho Diretor.
+Nos termos do art. 12 do referido normativo, é competência do Conselho Diretor decidir sobre a conexão de matérias e a distribuição de processos por conexão:
+Art. 12. Em casos de conexão ou continência, mediante requerimento devidamente motivado por Conselheiro, após aprovação do Conselho Diretor, o Presidente redistribuirá o processo ao Conselheiro que primeiro foi sorteado para relatar a matéria.
+A conexão é um mecanismo processual que permite a reunião de processos em curso, para que tenham julgamento conjunto. Trata-se de um instituto que pressupõe a existência de demandas distintas, mas que possuem certo vínculo entre si. Segundo definição legal prevista no art. 55 do Código de Processo Civil, "reputam-se conexas 2 (duas) ou mais ações quando lhes for comum o pedido ou a causa de pedir".
+A esse respeito, por meio da Matéria para Apreciação do Conselho Diretor nº 17/2026 (SEI nº 15024806), a área técnica assim expôs:
+3.6. Por fim, sugere-se a distribuição da presente matéria, por conexão, ao Conselheiro relator do Processo nº 53500.043774/2023-55, Octávio Penna Pieranti, cuja análise versa sobre o julgamento do Pedido de Reconsideração, com Pedido de Efeito Suspensivo, apresentado por SERCOMTEL S.A. - TELECOMUNICAÇÕES e LIGGA TELECOMUNICAÇÕES S.A., em face do Ato nº 6591, de 12 de junho de 2025, publicado no Diário Oficial da União de 13 de junho subsequente (SEI nº 13843174), uma vez que o atendimento ao pleito sob análise está diretamente condicionado ao julgamento daquele feito. Tal medida visa preservar a coerência das decisões administrativas, evitar julgamentos conflitantes e assegurar a observância dos princípios da segurança jurídica, da economia processual e da prevenção.
+De fato, como apontado no citado documento, a discussão quanto ao pleito de transferência de autorização de uso de radiofrequências da SERCOMTEL para a AMAZÔNIA depende diretamente do resultado da avaliação do Pedido de Reconsideração em curso no processo nº 53500.043774/2023-55, pois lá será definida a atual titularidade das outorgas de radiofrequências que a SERCOMTEL pretende transferir.
+Essa questão foi explorada pela Procuradoria Federal Especializada da Anatel (PFE-Anatel) no Parecer nº 00441/2025/PFE-ANATEL/PGF/AGU (SEI nº 15003663), que assim conclui:
+70. É imprescindível a conclusão da deliberação a ser tomada pelo Conselho Diretor no âmbito do Processo nº 53500.043774/2023-55, com relação ao Pedido de Reconsideração apresentado por SERCOMTEL/LIGGA, na medida em que, caso a presente operação seja aprovada, a Sercomtel somente poderá transferir outorga que efetivamente seja de sua titularidade;
+No mesmo sentido, a proposta de mérito da área técnica, disposta no Informe nº 1/2026/SOR (SEI nº 15024299), vincula ambos os processos, na medida que traz o seguinte condicionamento para a operação de transferência de autorizações de uso de radiofrequências:
+5.1.1. Transferir as autorizações de direito de uso de radiofrequências, em caráter primário, associadas à autorização para explorar o Serviço Móvel Pessoal (SMP) detidas por SERCOMTEL S.A. - TELECOMUNICAÇÕES, inscrita no CNPJ sob o nº 01.371.416/0001-89, consoante Termos de Autorização nº 89 (SEI nº 7762915), nº 90 (SEI nº 7762919) e nº 91/2021 (SEI nº 7762935), à empresa AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., inscrita no CNPJ sob o nº 58.074.301-0001-40, condicionada a expedição do Ato de Transferência, nos moldes da minuta SEI nº 15024645:
+a.1. à deliberação do Pedido de Reconsideração, com Pedido de Efeito Suspensivo, apresentado por SERCOMTEL S.A. - TELECOMUNICAÇÕES e LIGGA TELECOMUNICAÇÕES S.A., inscrita no CNPJ sob o nº 04.368.865/0001-66, em face do Ato nº 6591, de 12 de junho de 2025, publicado no Diário Oficial da União de 13 de junho subsequente (SEI nº 13843174), nos autos do Processo nº 53500.043774/2023-55;
+[...]
+Assim, diante da excepcionalidade do caso que ora se apresenta, parece adequada e salutar a distribuição, por conexão, do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55, especialmente:
+em razão da prevalência ao princípio da eficiência disposto no art. 37 da CF/88, vez que a análise conjunta dos processos resultará em economia e celeridade para as partes e para a Administração Pública; 
+em atenção à mitigação do risco em prolação de decisões conflitantes, primando, portanto, pela segurança jurídica nos processos administrativos;
+considerando a aplicação subsidiária do Código de Processo Civil (CPC), Lei nº 13.105, de 16/03/2015, nos termos dos arts. 55, §3º que prevê que sejam "reunidos para julgamento conjunto os processos que possam gerar risco de prolação de decisões conflitantes ou contraditórias caso decididos separadamente, mesmo sem conexão entre eles".
+À vista do exposto, propõe-se a aprovação da distribuição, por conexão, do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55, Conselheiro Octávio Penna Pieranti, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+CONCLUSÃO
+Aprovar a distribuição, por conexão, do processo nº 53500.060071/2025-53 ao mesmo relator do processo nº 53500.043774/2023-55, nos termos do art. 12 da Portaria nº 495, de 24 de maio de 2012.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/01/2026, às 14:22, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15082519 e o código CRC 19714866.
+ | 
+Referência: Processo nº 53500.060071/2025-53 | 
+SEI nº 15082519 |

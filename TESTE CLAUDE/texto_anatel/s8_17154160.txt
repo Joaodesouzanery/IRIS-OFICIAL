@@ -1,0 +1,37 @@
+SEI/ANATEL - 15333713 - Acórdão
+Boletim de Serviço Eletrônico em 18/03/2026
+DOU de 18/03/2026, seção 1, página 7
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 65, de 16 de março de 2026
+Processo nº 53500.075536/2021-47
+Recorrente/Interessado: TIM S.A.
+CNPJ nº 02.421.421/0001-11
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. INFRAÇÕES AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. BIS IN IDEM. PROCESSOS CONEXOS QUE ENVOLVEM A MESMA CONDUTA, MAS EM PERÍODOS DIVERSOS. DESCARACTERIZAÇÃO. TRÁFEGO INVOLUNTÁRIO DE DADOS. RESPONSABILIDADE, EM TESE, DO FABRICANTE DA ESTAÇÃO MÓVEL, PELO DEVER DE INFORMAÇÃO ADEQUADA E PELOS PREJUÍZOS. INFRAÇÕES DESCARACTERIZADAS. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. ANÁLISE COMPLEMENTAR ESTRITAMENTE PARA MANIFESTAÇÃO SOBRE ARGUMENTOS APRESENTADOS PELOS ILUSTRES CONSELHEIROS VISTORES. MANUTENÇÃO DAS CONCLUSÕES DA RELATORIA. RECURSO CONHECIDO E PROVIDO. 
+1. Não se identifica a ocorrência de bis in idem quando a mesma conduta é apurada em processos diversos, mas em períodos diversos entre si.
+2. A prestadora de serviços não se confunde com o fabricante das estações móveis e, à luz do Código de Defesa do Consumidor - CDC, não pode ser responsabilizada por fatos do produto nem por defeitos de comercialização imputáveis a terceiros, inclusive veiculação/informação inadequada sobre o uso do terminal, limitando-se sua responsabilidade, nos termos do art. 14, à adequada prestação e transparência do serviço. Sem prejuízo, pontua-se o emprego de diversas medidas, de iniciativa da Prestadora, que mitigaram os efeitos da tarifação decorrente do tráfego indesejado de dados, denotando sua proatividade em contornar problema causado por terceiro.
+3. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+4. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a segurança jurídica no setor de telecomunicações.
+5. A fundamentação alinha-se às melhores práticas regulatórias da OCDE, na medida em que reafirma uma governança eficiente dos limites da responsabilidade das prestadoras.
+6. A decisão corrobora com o Objetivo 16 (meta 16.7) da Agenda 2030 da Organização das Nações Unidas, ao promover a segurança jurídica e contribuir para a redução da litigiosidade administrativa.
+7. Recurso conhecido e provido.
+8. Complementa-se a Análise nº 114/2025/AF (SEI nº 14199589) para manifestação sobre argumentos apresentados pelos Conselheiros vistores, mantendo-se hígidos os fundamentos trazidos pela relatoria do caso.
+9. Reafirma-se o entendimento da Análise nº 114/2025/AF (SEI nº 14199589), no sentido de que, no caso sob análise, as irregularidades indicadas não apresentam comprovação de materialidade nos moldes exigidos pela regulamentação aplicável, dada a inexistência de nexo técnico entre a conduta da Prestadora e o fenômeno verificado, a ausência de inércia diante do estado da arte vigente - tendo adotado, dentro de sua esfera de atuação, medidas de adaptação ao funcionamento dos terminais -, bem como a impossibilidade de lhe imputar dever de informação ou responsabilidade por não integrar a cadeia de fornecimento do aparelho.
+10. Conforme fundamentação já delineada, a inexistência de infração no Procedimento para Apuração de Descumprimento de Obrigações - Pado afasta, por consequência lógica, qualquer dever administrativo de devolução de valores, por se tratar de pretensão acessória e indissociável da condenação, inexistindo suporte jurídico para imposição de ressarcimento no âmbito regulatório.
+11. Reitera-se o teor da Análise nº 114/2025/AF (SEI nº 14199589).
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por maioria de três votos, nos termos propostos pelo Conselheiro Alexandre Reis Siqueira Freire, Relator, por meio da Análise nº 114/2025/AF (SEI nº 14199589), integrante deste acórdão, conhecer do Recurso interposto para, no mérito, dar-lhe provimento para descaracterizar as infrações que ensejaram a condenação no Despacho Decisório recorrido.
+Acompanharam o Relator o ex-Conselheiro Vicente Bandeira de Aquino Neto, que havia registrado seu posicionamento na Reunião do Conselho Diretor nº 947, de 13 de outubro de 2025, e o Presidente Carlos Manuel Baigorri.
+O Relator apresentou esclarecimentos por meio da Análise Complementar nº 28/2026/AF (SEI nº 15234556), também integrante deste acórdão, sem qualquer alteração de sua fundamentação.
+Votaram vencidos o Conselheiro Octavio Penna Pieranti, que manteve seu posicionamento registrado na Reunião do Conselho Diretor nº 948, de 4 de novembro de 2025, por meio do Voto nº 1/2025/OP (SEI nº 14626284), de igual modo integrante deste acórdão, e o Conselheiro Edson Victor Eugênio de Holanda, nos termos do Voto nº 12/2025/EH (SEI nº 14930686), igualmente integrante deste acórdão.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o ex-Conselheiro Vicente Bandeira de Aquino Neto.
+Presentes na deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 17/03/2026, às 18:02, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15333713 e o código CRC AA51761B.
+ | 
+Referência: Processo nº 53500.075536/2021-47 | 
+SEI nº 15333713 |

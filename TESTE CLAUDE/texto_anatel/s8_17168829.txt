@@ -1,0 +1,41 @@
+SEI/ANATEL - 15347179 - Acórdão
+Boletim de Serviço Eletrônico em 23/03/2026
+DOU de 23/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 71, de 18 de março de 2026
+Processo nº 53504.001959/2016-23
+Recorrente/Interessado: WIRELESS NETWORKS DO BRASIL LTDA.
+CNPJ nº 03.358.131/0001-33
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. MULTA DE OFÍCIO. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. Processo Administrativo Fiscal - PAF instaurado em desfavor de WIRELESS NETWORKS DO BRASIL LTDA., referente ao recolhimento irregular de valores ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2012.
+2. Empresa impugnou a cobrança alegando inclusão indevida de receitas de instalação e locação de equipamentos na base de cálculo do Fust e ausência de prestação de serviços de telecomunicações no período.
+3. Superintendência de Controle de Obrigações - SCO reconheceu parcialmente a procedência do lançamento dos créditos tributários e da multa de ofício, determinando a notificação da Empresa.
+4. Empresa interpôs Recurso Administrativo, alegando prestação de Serviços de Valor Adicionado - SVA e renúncia à outorga de telecomunicações em 2012.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a Empresa está obrigada ao recolhimento do Fust mesmo sem outorga, desde que preste serviços de telecomunicações e obtenha receita; e (ii) saber se a base de cálculo da contribuição ao Fust foi corretamente composta, excluindo receitas não relacionadas a serviços de telecomunicações.
+III. RAZÕES DE DECIDIR
+1. A legislação vigente determina que a contribuição ao Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, independentemente da existência de outorga.
+2. A renúncia à outorga não afasta a obrigação de recolhimento do Fust, caso haja prestação de serviços e obtenção de receita no setor de telecomunicações.
+3. A fiscalização analisou documentos contábeis e excluiu da base de cálculo receitas de instalação, locação, licenciamento, processamento de transações, suporte, adesão, tráfego de transações, assinatura e outras não relacionadas a serviços de telecomunicações.
+4. A base de cálculo foi atualizada, considerando apenas receitas provenientes de atividades de telecomunicações, conforme documentação apresentada.
+5. A multa de ofício é aplicável nos casos de falta ou inexatidão na declaração da contribuição ao Fust, conforme previsto no art. 44, I, da Lei nº 9.430/1996 e na Súmula nº 27 do Conselho Diretor da Anatel.
+6. Não foram identificadas irregularidades ou vícios que comprometam a validade dos atos praticados pela Agência.
+IV. DISPOSITIVO E TESE
+Pedido improcedente. Recurso Administrativo desprovido.
+Tese de julgamento: "1. A Empresa que presta serviços de telecomunicações e obtém receita está obrigada ao recolhimento do Fust, independentemente de possuir outorga. 2. A base de cálculo da contribuição ao Fust deve excluir receitas não relacionadas a serviços de telecomunicações, conforme análise documental. 3. É legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata da contribuição ao Fust."
+Dispositivos relevantes citados: Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.430/1996, art. 44, I; Resolução nº 729/2020, art. 16.
+Jurisprudência relevante citada: Súmula Conselho Administrativo de Recursos Fiscais - CARF nº 11; Súmula Anatel nº 27/2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 20/2026/EH (SEI nº 15267494), integrante deste acórdão, conhecer do Recurso, por estarem preenchidos os requisitos de admissibilidade, para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/03/2026, às 16:16, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15347179 e o código CRC 6CAEBA55.
+ | 
+Referência: Processo nº 53504.001959/2016-23 | 
+SEI nº 15347179 |

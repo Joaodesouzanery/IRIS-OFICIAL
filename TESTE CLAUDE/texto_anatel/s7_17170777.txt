@@ -1,0 +1,680 @@
+SEI/ANATEL - 15348988 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 27/2026/OP
+Processo nº 53504.005072/2023-33
+Interessado: CLARO S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Solicitação de primeira prorrogação de autorizações de uso de radiofrequências nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz associadas à autorização para explorar o Serviço Móvel Pessoal (SMP) detidas por CLARO S.A.
+EMENTA
+DIREITO ADMINISTRATIVO. PRORROGAÇÃO DE DIREITOS DE USO DE RADIOFREQUÊNCIAS. SERVIÇO MÓVEL PESSOAL (SMP). PEDIDO DEFERIDO COM CONDICIONANTES.
+I. CASO EM EXAME
+ O pedido. CLARO S.A. solicita a primeira prorrogação de autorizações de uso de radiofrequências associadas à autorização para explorar o SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário, sem exclusividade, decorrentes de licitação, com vencimento em 01/06/2026.
+ Instrução. A Superintendência de Outorga e Recursos à Prestação conclui pela possibilidade de deferimento do pedido. A área técnica propõe a prorrogação das autorizações, a definição do valor devido conforme os Termos de Autorização, o condicionamento à comprovação de regularidade fiscal e a celebração de Termos de Autorização distintos.
+ Manifestação jurídica. Parecer nº 59/2026/PFE-ANATEL/PGF/AGU conclui pela viabilidade jurídica do deferimento, com observância das cláusulas dos Termos e dos requisitos legais e regulamentares aplicáveis à primeira prorrogação.
+II. QUESTÃO EM DISCUSSÃO
+ Há quatro questões em discussão: (i) saber se o Conselho Diretor é competente para decidir a prorrogação; (ii) saber se o pedido é tempestivo; (iii) saber se estão afastadas as hipóteses legais e regulamentares de indeferimento na primeira prorrogação; e (iv) saber se o valor e as condições para formalização da prorrogação devem observar as cláusulas contratuais e condicionantes de regularidade fiscal.
+III. RAZÕES DE DECIDIR
+ O Conselho Diretor é competente para decidir sobre a prorrogação de direito de uso de radiofrequências decorrentes de licitação.
+ O pedido é tempestivo, pois foi apresentado em 03/05/2023, antes de 3 (três) anos do vencimento em 01/06/2026, nos termos da LGT e da Cláusula 3.4 dos Termos de Autorização.
+ Na primeira prorrogação, a análise deve observar o regime previsto nos próprios Termos de Autorização. O indeferimento somente cabe nas hipóteses restritas de uso não racional e inadequado da radiofrequência, infrações reiteradas ou necessidade de modificação de destinação ou de condições de uso.
+ A avaliação técnica indica uso racional, adequado e eficiente do espectro nas faixas e áreas de prestação analisadas, segundo os critérios do Regulamento para Avaliação da Eficiência de Uso do Espectro.
+ A análise de infrações e do cumprimento de obrigações editalícias foi detalhada e não configura óbice à prorrogação, com avaliação orientada por critérios de razoabilidade e proporcionalidade.
+ Não se identifica necessidade de modificação de destinação ou das condições de uso das faixas de 1.800 MHz e 1.900/2.100 MHz que impeça a prorrogação, consideradas as destinações e condições vigentes no PDFF e no Regulamento de Condições de Uso de Radiofrequências.
+ A manutenção da outorga exige o atendimento às condições subjetivas previstas na LGT, com verificação atualizada de regularidade antes da efetivação da prorrogação.
+ A prorrogação é onerosa e, por se tratar de primeira prorrogação, o valor devido deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL.
+ Para a subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, o prazo de vigência da prorrogação deve observar o art. 33, XV, da Resolução nº 773/2025. O vencimento deve ocorrer em 22/12/2032.
+ Para as demais autorizações objeto do pedido, a prorrogação deve vigorar por 15 anos a contar do vencimento original, com vencimento em 30/05/2041.
+ A manutenção de Termos de Autorização distintos é compatível com a revogação do PGA-SMP e preserva a individualização dos compromissos originais.
+ A formalização do ato de prorrogação deve ser condicionada à apresentação de documentação comprobatória de regularidade fiscal, no âmbito federal, e perante a Anatel.
+IV. DISPOSITIVO E TESE
+ Pedido deferido, com condicionantes.
+Tese de julgamento: "1. Compete ao Conselho Diretor decidir sobre a primeira prorrogação de direitos de uso de radiofrequências decorrentes de licitação. 2. Na primeira prorrogação, aplicam-se as hipóteses restritas de indeferimento previstas na Lei nº 9.472/1997, no Regulamento de Uso do Espectro de Radiofrequências e nos Termos de Autorização. 3. O pedido tempestivo, a demonstração de uso racional, adequado e eficiente do espectro, a ausência de óbice por infrações reiteradas e a inexistência de necessidade de modificação de destinação ou de condições de uso autorizam a prorrogação. 4. O valor devido pela prorrogação deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL. 5. A expedição do ato de prorrogação fica condicionada à comprovação de regularidade fiscal federal e perante a Anatel. 6. A subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, deve observar os limites de vigência previstos no art. 33, XV, da Resolução nº 773/2025. 7. Devem ser firmados Termos de Autorização distintos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 133 e 167; Decreto nº 10.402/2020, art. 12; Resolução nº 612/2013, art. 133, VII; Resolução nº 671/2016, arts. 47, § 2º, e 48; Resolução nº 548/2010, art. 3º, II; Resolução nº 773/2025, art. 33, XV, e art. 316; Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, Cláusulas 3.3 e 3.4.
+Jurisprudência relevante citada: TCU, Acórdão nº 2001/2022, Plenário; Anatel, Acórdão nº 102, Processo nº 53504.000320/2020-15, Conselheiro Relator Alexandre Reis Siqueira Freire, Circuito Deliberativo nº 96, 27/04/2023; Anatel, Acórdãos nº 99, nº 105 e nº 106, Conselho Diretor, 28/04/2023; Anatel, Acórdãos nº 274, de 31/08/2022, nº 375, de 06/12/2022, nº 383, de 14/12/2022, nº 105, de 28/04/2023, nº 194, de 14/08/2023, e nº 215, de 25/08/2023.
+REFERÊNCIAS
+Lei nº 9.472, de 16/07/1997 – Lei Geral de Telecomunicações – LGT;
+Decreto nº 6.654, de 20/11/2008 - Plano Geral de Outorgas - PGO;
+Resolução nº 612, de 29/04/2013 – Regimento Interno da Anatel;
+Resolução nº 671, de 3/11/2016 - Regulamento de Uso do Espectro de Radiofrequências;
+Resolução nº 548, de 8/11/2010 - Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequência;
+Resolução nº 772, de 16 de janeiro de 2025, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil;
+Resolução nº 773, de 16/01/2025 - Regulamento de Condições de Uso de Radiofrequências;
+Resolução nº 703, 1º/11/2018 - Estabelece Limites Máximos de Quantidade de Espectro de Radiofrequências;
+Processo nº 53504.005072/2023-33.
+RELATÓRIO
+DOS FATOS
+Trata-se de análise de pedido, formulado por CLARO S.A., CNPJ 40.432.544/0001-47 (doravante apenas CLARO), de primeira prorrogação do prazo de autorizações de uso de radiofrequências nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, associadas à autorização para explorar o Serviço Móvel Pessoal (SMP), a ela outorgadas sem exclusividade, em caráter primário, prorrogável por um período de 15 (quinze) anos, e consubstanciados nos Termos de Autorização abaixo citados, nas respectivas áreas de prestação, conforme tabela abaixo:
+ Termo de Autorização do SMP
+ | 
+ Termo de Autorização para Uso de Radiofrequência
+ | 
+ Subfaixas
+ | 
+ Área de Prestação
+ | 
+ Data de Vencimento da Outorga
+ | 
+ Termo de Autorização nº 5/2025
+ | 
+ Termo nº 31/2011/PVCP/SPV-ANATEL
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ Estados do RJ, ES, BA e SE
+ Estados do AM, AP, PA, MA e RR
+ Estados do CE, PB, PE, PI, RN e AL
+ Municípios do Setor 3 do PGO
+ Estado de MG exceto os municípios do Código Nacional – CN 34, 35, 37
+ | 
+ 01 de junho de 2026
+ | 
+ 1.755 a 1.765MHz / 1.850 a 1.860MHz
+ | 
+ Região 1 do PGA do SMP
+ | 
+ Termo de Autorização nº 5/2025
+ | 
+ Termo nº 32/2011/PVCP/SPV-ANATEL
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ DF e Estados do AC, TO, MS (exceto CN 67), MT, RS, SC, RO, GO (exceto CN 64) e PR (exceto CN 43)
+ Municípios do CN 64 (exceto setor 25 do PGO) e CN 67 (exceto setor 22 do PGO)
+ Municípios do CN 43 (exceto Londrina/PR e Tamarana/PR)
+ Municípios de Londrina/PR e Tamarana/PR
+ | 
+ 01 de junho de 2026
+ | 
+ Termo de Autorização nº 5/2025
+ | 
+ Termo nº 33/2011/PVCP/SPV-ANATEL
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ CN 11 que envolve os municípios de Alumínio, Araçariguama, Arujá, Atibaia, Barueri, Biritiba-Mirim, Bom Jesus dos Perdões, Bragança Paulista, Cabreúva, Caieiras, Cajamar, Campo Limpo Paulista, Carapicuíba, Cotia, Diadema, Embu, Embu-Guaçú, Ferraz de Vasconcelos, Francisco Morato, Franco da Rocha, Guararema, Guarulhos, Igaratá, Itapecerica da Serra, Itapeví, Itaquaquecetuba, Itatiba, Itú, Itupeva, Jandira, Jarinu, Joanópolis, Jundiaí, Juquitiba, Mairinque, Mairiporã, Mauá, Mogi das Cruzes, Morungaba, Nazaré Paulista, Osasco, Pedra Bela, Pinhalzinho, Piracaia, Pirapora do Bom Jesus, Poá, Ribeirão Pires, Rio Grande da Serra, Salesópolis, Salto, Santa Izabel, Santana de Parnaíba, Santo André, São Bernardo do Campo, São Caetano do Sul, São Lourenço da Serra, São Paulo, São Roque, Suzano, Taboão da Serra, Tuiuti, Vargem, Vargem Grande Paulista e Várzea Paulista, todos no Estado de São Paulo.
+ Estado de SP (exceto municípios da CN 11, CN 16, CN 17 e setor 33 do PGO)
+ Municípios com o CN 16 e 17 (exceto o Setor 33 do PGO)
+ Municípios do Setor 33 do PGO
+ | 
+ 01 de junho de 2026
+ | 
+Em 3 de maio de 2023, por meio do requerimento SEI nº 10184697 e seus anexos, a CLARO solicitou a prorrogação das autorizações de uso de radiofrequências associadas à autorização para explorar o SMP relativas aos seguintes instrumentos: 
+Termo de Outorga de Autorização de Uso de Blocos de Radiofrequências nº 31/2011/PVCP/SPV-ANATEL, SEI nº 11349193, cujo extrato foi publicado no Diário Oficial da União (DOU), de 30 de maio de 2011;
+Termo de Outorga de Autorização de Uso de Blocos de Radiofrequências nº 32/2011/PVCP/SPV-ANATEL, SEI nº 11349195 , cujo extrato foi publicado no DOU, de 30 de maio de 2011; e
+Termo de Outorga de Autorização de Uso de Blocos de Radiofrequências nº 33/2011/PVCP/SPV-ANATEL, SEI nº 11349197, cujo extrato foi publicado no DOU, de 30 de maio de 2011.
+Em 8 de janeiro de 2024, a Gerência de Outorga e Licenciamento de Estações (ORLE) realizou as seguintes diligências:
+Ofício nº 130/2024/ORLE/SOR-ANATEL (SEI nº 11349385), dirigido à Superintendência de Controle de Obrigações (SCO), no qual foi requerida manifestação quanto ao critério de análise de infrações reiteradas nas atividades da Requerente;
+Ofício nº 132/2024/ORLE/SOR-ANATEL (SEI nº 11349639), dirigido à Gerência de Espectro, Órbita e Radiodifusão (ORER), no qual foi requerida manifestação acerca do uso racional e adequado da radiofrequência outorgada àquela prestadora, bem como se haveria necessidade de modificação de sua destinação em cumprimento à exigência constante do § 2º do art. 167 da Lei nº 9.472, de 16 de julho de 1997, c/c o inciso IV do art. 12 do Decreto nº 10.402, de 2020; e
+Ofício nº 133/2024/ORLE/SOR-ANATEL (SEI nº 11349645), dirigido à Gerência de Acompanhamento Societário e da Ordem Econômica (CPOE), no qual foi requerida manifestação acerca dos aspectos concorrenciais, em cumprimento à exigência constante do inciso III do art. 12 do Decreto nº 10.402, de 2020.
+As respostas às diligências acima foram assim registradas:
+pela CPOE: no Ofício nº 80/2024/CPOE/SCP-ANATEL, de 22 de janeiro de 2024 (SEI nº 11400542);
+pela SCO: no Ofício nº 102/2024/COUN/SCO-ANATEL, de 7 de março de 2024 (SEI nº 11445964);
+pela ORER: no Informe nº 154/2024/ORER/SOR (SEI nº 11447890) e Ofício nº 614/2024/ORER/SOR-ANATEL (SEI nº 11557122), ambos datados de 15 de março de 2024; e, complementarmente, no Informe nº 1235/2025/ORER/SOR (SEI nº 14778217), de 31 de dezembro de 2025.
+Ainda em 8 de janeiro de 2024, a ORLE também expediu o Check List de Análise SEI nº 10928556, mediante o qual constatou o não atendimento por parte da CLARO em relação à documentação exigida, o que deu ensejo a expedição subquente de ofícios de exigências, respondidos tempestivamente pela Requerente.
+Em 14 de novembro de 2024, por meio da petição nº 12889884, a Requerente encaminhou a documentação exigida em sua íntegra, conforme registrado no Check List de Análise SEI nº 13216993. Quanto ao referido Check List, cabe destacar o disposto na Certidão SEI nº 15351440, a qual relata a identificação da ausência de assinatura quando da elaboração do trabalho pela equipe responsável, que foi posteriormente realizada, e certifica o devido saneamento sem prejuízo à validade das análises empreendidas ou ao regular andamento dos autos.
+Em 4 de fevereiro de 2026, a Superintendência de Outorga e Recursos à Prestação (SOR) elaborou o Informe nº 333/2026/ORLE/SOR (SEI nº 15030528), em que analisa o pedido apresentado e conclui pela possibilidade de deferimento do pleito.
+Em 13 de fevereiro de 2026, o Procurador-Geral da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) aprovou o Parecer nº 59/2026/PFE-ANATEL/PGF/AGU (SEI nº 15189160), contendo opinativo jurídico que chega à mesma conclusão.
+Em 19 de fevereiro de 2026, a SOR elaborou o Informe nº 1798/2026/ORLE/SOR (SEI nº 15190298), em complemento ao anterior, em que ratifica a ausência de hipóteses previstas na lei e na regulamentação de indeferimento do pedido de prorrogação das autorizações de uso de radiofrequências e propõe ao Conselho Diretor a aprovação da Minuta de Ato SEI nº 15195770. Na mesma data encaminhou-se o presente para a deliberação do Conselho Diretor, nos termos da Matéria para Apreciação do Conselho Diretor nº 122/2026 (SEI nº 15190322).
+Em 26 de fevereiro de 2026 fui sorteado relator da matéria, conforme Certidão de Distribuição SEI nº 15237163.
+São os fatos.
+DA ANÁLISE
+I. DA COMPETÊNCIA DO CONSELHO DIRETOR
+De acordo com art. 133, inciso VII, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir pela prorrogação de direitos de uso de radiofrequências resultantes de licitações:
+RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+...
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+O presente processo trata de pedido de primeira prorrogação de direitos de uso de radiofrequências conferidos à CLARO, sintetizados na tabela do item 4.1, acima. Tais outorgas são decorrentes de licitações. Dessa forma, foi adequado o encaminhamento dos autos ao Conselho Diretor.
+II. DOS REQUISITOS DA PRIMEIRA PRORROGAÇÃO
+Os requisitos legais para a prorrogação estão estabelecidos no art. 167 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), sendo sua redação alterada pela Lei nº 13.879, de 3 de outubro de 2019:
+Art. 167. No caso de serviços autorizados, o prazo de vigência será de até 20 (vinte) anos, prorrogável por iguais períodos, sendo necessário que a autorizada tenha cumprido as obrigações já assumidas e manifeste prévio e expresso interesse. (Redação dada pela Lei nº 13.879, de 2019)
+§ 1º A prorrogação, sempre onerosa, poderá ser requerida até três anos antes do vencimento do prazo original, devendo o requerimento ser decidido em, no máximo, doze meses. 
+§ 2º O indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência. 
+§ 3º Na prorrogação prevista no caput, deverão ser estabelecidos compromissos de investimento, conforme diretrizes do Poder Executivo, alternativamente ao pagamento de todo ou de parte do valor do preço público devido pela prorrogação. (Incluído pela Lei nº 13.879, de 2019)
+O art. 12 do Decreto nº 10.402, de 17 de junho de 2020, que dispõe sobre a prorrogação e a transferência de autorização de radiofrequências, regulamentou os requisitos legais, conforme segue:
+Art. 12. No exame dos pedidos de prorrogação de outorgas regidos pelo disposto nos art. 99, art. 167 e art. 172 da Lei nº 9.472, de 1997, inclusive aquelas vigentes na data de publicação da Lei nº 13.879, de 3 de outubro de 2019, ainda que já tenham sido objeto de prorrogação, a Anatel considerará:
+I - a expressa e prévia manifestação de interesse por parte do detentor da outorga;
+II - o cumprimento de obrigações já assumidas;
+III - aspectos concorrenciais;
+IV - o uso eficiente de recursos escassos; e
+V - o atendimento ao interesse público.
+Finalmente, os requisitos regulamentares aplicáveis estão expressos no art. 48 do Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016, que remete a comprovação do uso racional do recurso ao Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 548, de 8 de novembro de 2010:
+Regulamento de Uso do Espectro de Radiofrequências
+Art. 48. O indeferimento da solicitação de prorrogação da autorização de uso de radiofrequências somente ocorrerá:
+I - se o interessado não estiver fazendo uso racional e adequado das radiofrequências, faixa ou canal de radiofrequências que lhe foi autorizada e consignada, nos termos da regulamentação específica;
+II - se o interessado tiver cometido infrações reiteradas previstas neste Regulamento, no Termo de Autorização do Direito de Uso de Radiofrequência, ou no Regulamento que disciplina as condições de uso da radiofrequência, em suas atividades; ou,
+III - se tiver sido modificada a atribuição, destinação ou distribuição de faixas de radiofrequências, bem como as respectivas condições de uso das radiofrequências.
+Parágrafo único. Para a verificação da hipótese contida no inciso I, deve ser observado o disposto no Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências.
+Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências
+Art. 3º A avaliação da eficiência de uso do espectro de radiofrequências pode ser aplicada, a critério da Anatel, especialmente:
+...
+II - nos processos de prorrogação das autorizações de uso de radiofrequências;
+Ainda, note-se que a Cláusula 3.4 de todos os Termos de Autorização para Uso das Radiofrequências Associadas ao SMP, mencionados no item 4.2 desta Análise, preveem o seguinte:
+Cláusula 3.4 - O requerimento para a prorrogação do direito de uso das radiofreqüências deverá ser encaminhado à ANATEL no interregno de quatro anos, no máximo, até três anos, no mínimo, anteriores à data de vencimento do prazo original.
+Parágrafo único. O indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofreqüência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofreqüência.
+(grifou-se)
+Por se tratar de primeira prorrogação, a análise da solicitação deve se ater ao disposto nos respectivos Termos que tratam do assunto, segundo as quais só serão indeferidas se o interessado não estiver fazendo uso racional e adequado das radiofrequências, se houver cometido infrações reiteradas ou se for necessária a modificação de destinação do uso das radiofrequências.
+Com efeito, tal entendimento consta no Parecer nº 00551/2020/PFE-ANATEL/PGF/AGU (SEI nº 5861038), expedido no processo em que se promoveu a avaliação sobre o uso atual e futuro das subfaixas A e B pelo SMP, conforme citado pela área técnica no Informe nº 333/2026/ORLE/SOR (SEI nº 15030528) e a seguir transcrito:
+2.3.2. Discricionariedade da Anatel quanto à prorrogação ou não pela segunda vez. Necessidade de atendimento ao interesse público.
+60. O art. 12 do Decreto nº 10.402/2020 estabelece que, no exame dos pedidos de prorrogação de outorgas regidos pelo disposto nos art. 99, art. 167 e art. 172 da Lei nº 9.472, de 1997, a Anatel considerará: I - a expressa e prévia manifestação de interesse por parte do detentor da outorga; II - o cumprimento de obrigações já assumidas; III - aspectos concorrenciais; IV - o uso eficiente de recursos escassos; e V - o atendimento ao interesse público.
+61. A LGT preconiza, conforme art. 167, §2º, da LGT, num cenário em que só se admitia uma prorrogação da autorização de uso de radiofrequência, que o indeferimento do pedido de prorrogação somente ocorreria se o interessado não estivesse fazendo uso racional e adequado da radiofrequência, se houvesse cometido infrações reiteradas em suas atividades ou se fosse necessária a modificação de destinação do uso da radiofrequência.
+62. Se por um lado a LGT enumerou hipóteses restritas para o indeferimento do pedido de prorrogação, num contexto em que o direito era prorrogável uma única vez por igual período, é também certo que, na sistemática instituída pelo Decreto nº 10.402, de 2020, que permitiu a prorrogação das outorgas atuais já prorrogadas, haverá amplo juízo de discricionariedade da Anatel quanto a essa análise.
+63. Ou seja, nesse cenário, a primeira prorrogação de cada outorga deverá obedecer ao regramento disposto no respectivo Termo de Autorização, que, atualmente, elenca hipóteses restritas de indeferimento do pedido de prorrogação por parte da Agência, enquanto que o caso concreto em exame - de segunda prorrogação das outorgas atuais (que já foram prorrogadas uma vez) - será regido pelo Decreto nº 10.402, de 2020, que aquiesceu com essa possibilidade, possuindo a Anatel, nesse caso, amplo juízo de discricionariedade para deferir ou não o pedido de prorrogação, nos termos do art. 12 do referido diploma legal.
+(...)
+2.4.3. Condições para o deferimento do pedido de prorrogação da autorização de uso de radiofrequências (Art. 167, §2º, da LGT).
+85. O § 2º do art. 167 da Lei Geral de Telecomunicações (LGT) dispõe que "o indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência".
+86. No ponto, vale, ainda, transcrever o artigo 48 do Regulamento de Uso do Espectro de Radiofrequências (RUER), aprovado pela Resolução nº 671/2016: 
+Resolução nº 671, de 2016
+Art. 48. O indeferimento da solicitação de prorrogação da autorização de uso de radiofrequências somente ocorrerá:
+I - se o interessado não estiver fazendo uso racional e adequado das radiofrequências, faixa ou canal de radiofrequências que lhe foi autorizada e consignada, nos termos da regulamentação específica;
+II - se o interessado tiver cometido infrações reiteradas previstas neste Regulamento, no Termo de Autorização do Direito de Uso de Radiofrequência, ou no Regulamento que disciplina as condições de uso da radiofrequência, em suas atividades; ou,
+III - se tiver sido modificada a atribuição, destinação ou distribuição de faixas de radiofrequências, bem como as respectivas condições de uso das radiofrequências. Parágrafo único. Para a verificação da hipótese contida no inciso I, deve ser observado o disposto no Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências.
+87. Em suma, a LGT e a regulamentação aplicável estabelecem condições para o deferimento do pedido de prorrogação da autorização de uso de radiofrequências. A contrario sensu, nos termos do art. 167, §2º, da LGT, o indeferimento ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência. Tal regra, como já dito, se voltava especificamente ao contexto em que o direito era prorrogável uma única vez por igual período, de modo que, para a primeira prorrogação, é preciso observar o que consta do Termo de Autorização, ao passo que para a segunda prorrogação, já está-se diante do novo regime instituído pela Lei nº 13.879/2019, Decreto nº 10.402/2020 e regulamentação aplicável
+(...)
+2.4.6. Do preço público devido pela prorrogação.
+109. A necessidade de que a Anatel estabeleça preço por ocasião da prorrogação decorre do disposto no art. 167, § 1º, da LGT, que preconiza que a prorrogação será sempre onerosa.
+110. No caso concreto em análise, observa-se que a primeira prorrogação das autorizações de uso de radiofrequências já ocorreu, tratando-se, portanto, da segunda prorrogação, o que passou a ser permitido pela nova redação do art. 167, caput, da LGT, com a interpretação que lhe foi conferida pelo Decreto nº 10.402, de 2020. O regramento das primeiras prorrogações de tais outorgas, como não poderia deixar de ser, obedeceu ao disposto no respectivo Termo, pactuado pelas partes.
+111. Nesse contexto, importante novamente salientar que a presente análise aplica-se apenas aos casos de segunda prorrogação em diante, uma vez que o disciplinamento das primeiras prorrogações deverá obedecer ao disposto nos respectivos Termos que tratam do assunto.
+112. Destarte, incumbe a esta Procuradoria a análise quanto ao preço público devido pela segunda prorrogação na presente hipótese, inclusive no que pertine ao regramento atinente à fórmula de cálculo para definição de seu valor.
+113. Pois bem.
+114. O Termo de Autorização, quanto à fórmula de cálculo do preço público devido pela prorrogação, assim regulamenta:
+Termo de Autorização
+Cláusula 1.7. A AUTORIZADA, para prorrogação do direito de uso de radiofrequências associadas a esta Autorização, deverá pagar, a cada biênio, durante o período de prorrogação, ônus correspondente a 2% (dois por cento) de sua receita do ano anterior ao do pagamento, do SMP, líquida de impostos e contribuições sociais incidentes, sendo que, no 15º ano, a AUTORIZADA deverá pagar 1% de sua receita do ano anterior.
+(...)
+Cláusula 1.8. O requerimento para a prorrogação do direito de uso das radiofrequências deverá ser encaminhado à ANATEL no interregno de quatro anos, no máximo, até três anos, no mínimo, anteriores à data de vencimento do prazo original.
+Parágrafo único. O indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado das radiofrequências, se houver cometido infrações reiteradas ou se for necessária a modificação de destinação do uso da radiofrequência. (grifou-se)
+115. Em primeiro lugar, deve-se atentar que, quando da assinatura de tal Termo de Autorização, não era possível ainda, no ordenamento jurídico, múltiplas prorrogações de autorização de uso de radiofrequências, sendo a LGT expressa no sentido de que tal prorrogação poderia ocorrer apenas uma vez, por igual período. Assim é que a própria redação da Cláusula 1.7 do Termo de Autorização dispõe acerca do cálculo do preço público devido pela prorrogação, sendo que a Cláusula 1.8 trata das hipóteses de indeferimento da prorrogação pleiteada.
+116. O disposto na Cláusula 1.7 do Termo de Autorização apenas se aplicaria à primeira (e então única, nos termos da legislação então vigente) prorrogação. A possibilidade de segunda prorrogação em diante apenas surge com a nova redação do art. 167 da LGT (dada pela Lei nº 13.879, de 2019), com a interpretação que lhe conferiu o Decreto nº 10.402, de 2020.
+117. Com efeito, a Cláusula 1.7 do Termo de Autorização assevera que a autorizada deve pagar, quanto da prorrogação, ônus de 2% (dois por cento) de sua receita do ano anterior ao do pagamento, do SMP, líquida de impostos e contribuições sociais, sendo que, no 15º ano, o percentual em comento é reduzido pela metade.
+118. Por decorrência lógica, ainda quando da primeira prorrogação, deve-se aplicar ainda o preconizado na Cláusula 1.8 do Termo de Autorização, segundo o qual o pedido de prorrogação somente será indeferido se o interessado não estiver fazendo uso racional e adequado das radiofrequências, se houver cometido infrações reiteradas ou se for necessária a modificação de destinação do uso da radiofrequência. Verifica-se, no ponto, que o Termo de Autorização definiu explicitamente as hipóteses em que a Anatel poderia indeferir o pedido de prorrogação da interessada, retirando eventual análise de discricionariedade da Agência nessa decisão.
+119. No sentir desta Procuradoria, o regramento constante do Termo de Autorização, nesses aspectos, somente seria cabível por ocasião da primeira prorrogação.
+120. A uma, porque a possibilidade de prorrogações múltiplas é posterior à assinatura do contrato - apenas se concretizando com o advento da nova redação do art. 167 da LGT, com a interpretação dada pelo Decreto nº 10.402, de 2020 - , o que tornaria impossível que o Termo em tela o tivesse previsto e regulamentado em seu bojo.
+121. A duas porque, admitindo-se a aplicação da fórmula de cálculo prevista na Cláusula 1.7. do Termo para o caso concreto (que trata de segunda prorrogação), a consequência é que também incidiria à hipótese o teor da Cláusula 1.8 do Termo, que não confere discricionariedade à Agência por ocasião da análise do requerimento de prorrogação. Trata-se de ideário contrário à lógica constante do art. 12 do Decreto nº 10.402, de 2020, que, interpretando a nova redação do art. 167 da LGT, entendeu pela possibilidade de prorrogação das outorgas atuais e conferiu discricionariedade à Agência no que atine aos segundos pedidos de prorrogação em diante apresentados pelas interessadas:
+Decreto nº 10.402, de 2020
+Art. 12. No exame dos pedidos de prorrogação de outorgas regidos pelo disposto nos art. 99, art. 167 e art. 172 da Lei nº 9.472, de 1997, inclusive aquelas vigentes na data de publicação da Lei nº 13.879, de 3 de outubro de 2019, ainda que já tenham sido objeto de prorrogação, a Anatel considerará:
+I - a expressa e prévia manifestação de interesse por parte do detentor da outorga;
+II - o cumprimento de obrigações já assumidas;
+III - aspectos concorrenciais;
+IV - o uso eficiente de recursos escassos; e
+V - o atendimento ao interesse público. (grifou-se)
+122. Tem-se, portanto, o estabelecimento de dois regimes jurídicos atinentes à prorrogação.
+123. Quanto à primeira prorrogação, aplica-se integralmente o disposto no Termo de Autorização, em respeito aos contratos e ao acordo de vontades celebrado pelas partes, com o preço da prorrogação sendo calculado por meio do ônus contratual e com reduzido caráter discricionário da Anatel no que toca às hipóteses de indeferimento (Cláusula 1.7 c/c Cláusula 1.8 do Termo de Autorização). Para esta Procuradoria, aliás, tal entendimento aplica-se às outorgas que ainda não foram objeto da primeira prorrogação, o que deve ser regido pelo respectivo Termo de Autorização
+(...)
+3. CONCLUSÃO
+136. Por todo o exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal, vinculada à Advocacia-Geral da União – AGU, assim exara suas considerações:
+(...)
+k) Condições para o deferimento do pedido de prorrogação da autorização de uso de radiofrequências (Art. 167, §2º, da LGT).
+162. A LGT e a regulamentação aplicável estabelecem condições para o deferimento do pedido de prorrogação da autorização de uso de radiofrequências;
+163. Nos termos do art. 167, §2º, da LGT, o indeferimento ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência;
+164. Tal regra voltava-se especificamente ao contexto em que o direito era prorrogável uma única vez por igual período, de modo que, para a primeira prorrogação, é preciso observar o que consta do Termo de Autorização, ao passo que para a segunda prorrogação, já se está diante do novo regime instituído pela Lei nº 13.879/2019, Decreto nº 10.402/2020 e regulamentação aplicável;
+165. Salienta-se que, na presente hipótese, em que se está tratando de segunda prorrogação, nos termos aventados pelo Decreto nº 10.402/2020, haverá amplo juízo discricionário da Anatel quando da análise do pleito de prorrogação;
+166. Não há direito subjetivo, mas apenas expectativa de direito no que toca ao pedido de prorrogação, a qual, no presente caso, depende das condições previstas na LGT, no Decreto nº 10.402/2020 e na regulamentação, o que confere à Anatel amplo juízo discricionário para deferir ou não a prorrogação;
+167. De todo modo, é certo que, nos termos do art. 167, §2º, da LGT, uma das hipóteses legais de indeferimento do pedido de prorrogação é justamente a necessidade de modificação de destinação do uso da radiofrequência. Saliente-se, desde já, que a Lei não exige que a modificação já tenha ocorrido, mas que tal modificação seja necessária;
+(grifou-se)
+Tal entendimento resta consolidado no âmbito da PFE/Anatel, conforme disposto no seguinte trecho do Parecer 59/2026/PFE-ANATEL/PGF/AGU (SEI nº 15189160):
+Parecer 59/2026/PFE-ANATEL/PGF/AGU (SEI nº 15189160):
+5. Inicialmente, cumpre salientar que o presente caso tata de primeira prorrogação de direito de uso de radiofrequência. Sendo esse o caso, é preciso lembrar que esta Procuradoria, por ocasião da elaboração do Parecer nº 551/2020/PFE-Anatel/PGF/AGU, nos autos do Processo nº 53500.017495/2019-50, assim pontuou:
+Parecer nº 551/2020/PFE-Anatel/PGF/AGU
+62. Se por um lado a LGT enumerou hipóteses restritas para o indeferimento do pedido de prorrogação, num contexto em que o direito era prorrogável uma única vez por igual período, é também certo que, na sistemática instituída pelo Decreto nº 10.402, de 2020, que permitiu a prorrogação das outorgas atuais já prorrogadas, haverá amplo juízo de discricionariedade da Anatel quanto a essa análise.
+63. Ou seja, nesse cenário, a primeira prorrogação de cada outorga deverá obedecer ao regramento disposto no respectivo Termo de Autorização, que, atualmente, elenca hipóteses restritas de indeferimento do pedido de prorrogação por parte da Agência, enquanto que o caso concreto em exame - de segunda prorrogação das outorgas atuais (que já foram prorrogadas uma vez) - será regido pelo Decreto nº 10.402, de 2020, que aquiesceu com essa possibilidade, possuindo a Anatel, nesse caso, amplo juízo de discricionariedade para deferir ou não o pedido de prorrogação, nos termos do art. 12 do referido diploma legal.
+6. Tratando-se, pois, de primeira prorrogação, deverá a Agência, no caso concreto, avaliar o teor dos Termos de Autorização cuja prorrogação se pleiteia, a fim de verificar as condições a serem preenchidas para o deferimento do pleito.
+7. Com efeito, os Termos em tela (cf. Cláusula 3.4) asseveram que o pedido de prorrogação deve ser encaminhado à Anatel no prazo de 4 (quatro) anos, no máximo, até 3 (três) anos, no mínimo, anteriores à data de vencimento do prazo original, consignando ainda que "o indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência".
+2.2 Solicitação de prorrogação de autorização de uso de radiofrequências. Condições a serem preenchidas para o deferimento no caso concreto.
+8. Como tivemos oportunidade de salientar, a presente hipótese - de primeira prorrogação - atrai a necessidade de análise do preenchimento das seguintes condições para que o pleito seja deferido: (i) expressa e prévia manifestação de interesse por parte do detentor da outorga, requerida até três anos antes do vencimento do prazo original; (ii) uso racional e adequado das radiofrequências e uso eficiente de recursos escassos; (iii) infrações reiteradas em suas atividades; e (iv) necessidade de modificação de destinação e das condições do uso das radiofrequências.
+...
+3. CONCLUSÃO
+61. Diante do exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal, vinculada à Advocacia - Geral da União, assim opina:
+a) Tratando-se de primeira prorrogação, deverá a Agência, no caso concreto, avaliar o teor dos Termos de Autorização cuja prorrogação se pleiteia, a fim de verificar as condições a serem preenchidas para o deferimento do pleito;
+(grifou-se)
+O mesmo entendimento tem sido confirmado pelo Conselho Diretor. Vide, por exemplo, os Acórdãos nº 99 (SEI nº 10164210), nº 102 (SEI nº 10164540), nº 105 (SEI nº 10164867) e nº 106 (SEI nº 10165159), todos de 28 de abril de 2023:
+Acórdão nº 102, de 28 de abril de 2023 (SEI nº 10164540):
+Processo nº 53504.000320/2020-15
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro Relator: Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Circuito Deliberativo nº 96, de 27 de abril de 2023
+EMENTA
+PRORROGAÇÃO. DIREITOS DE USO DE RADIOFREQUÊNCIAS. SERVIÇO MÓVEL PESSOAL - SMP. RADIOFREQUÊNCIAS PROVENIENTES DE PROCESSO LICITATÓRIO. COMPETÊNCIA DO CONSELHO DIRETOR. REQUERIMENTO TEMPESTIVO. REQUISITOS LEGAIS E REGULAMENTARES ATENDIDOS. MANUTENÇÃO DAS CONDIÇÕES SUBJETIVAS. VALOR DEVIDO CONFORME TERMO DE AUTORIZAÇÃO. PEDIDO DEFERIDO.
+1. Prorrogação de autorizações de uso de radiofrequências nas faixas de 1.900/2.100 MHz, em caráter primário, associadas à autorização para explorar o Serviço Móvel Pessoal (SMP).
+2. Compete ao Conselho Diretor decidir sobre pedido de prorrogação de direitos de uso de radiofrequências resultantes de licitações, nos termos do art. 133, inciso VII, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+3. Tempestividade dos pedidos de prorrogação dos direitos de uso de radiofrequências, uma vez que foram requeridas antes de 3 (três) anos de seu vencimento.
+4. Em se tratando de primeira prorrogação, prevista nos Termos de Autorização de Uso de Radiofrequências, o indeferimento do pedido somente ocorrerá se o interessado não estiver fazendo uso racional e adequado das radiofrequências, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação ou condições do uso das radiofrequências, conforme art. 167, § 2º, da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT), e art. 48, incisos I, II e III, do Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+5. As hipóteses ensejadoras de indeferimento da prorrogação foram afastadas pela área técnica, sendo atendidos os requisitos legais e as condições subjetivas.
+6. A modificação das condições de uso das faixas objeto do pedido, promovida pelo Regulamento de Condições de Uso de Radiofrequências, aprovado pela Resolução nº 757, de 8 de novembro de 2022, permite a prorrogação das autorizações em 1.900/2.100 MHz por quinze anos contados do vencimento da autorização originária.
+7. Na prorrogação das faixas 1.900 e 2.100, a autorizatária deverá utilizar as condições de uso aprovada pelo art. 30 do Regulamento de Condições de Uso de Radiofrequências.
+8. Aplica-se a regra contida nos respectivos Termos de Autorização para o cálculo do valor devido pela prorrogação dos direitos de uso de radiofrequências no presente caso.
+9. Deferimento do pedido de prorrogação das autorizações de uso de radiofrequências, em caráter primário.
+...
+(grifou-se)
+Dessa forma, passo a analisar cada um dos requisitos legais e regulamentares aplicáveis à espécie, quais sejam:
+expressa e prévia manifestação de interesse por parte do detentor da outorga, requerida até três anos antes do vencimento do prazo original;
+uso racional e adequado das radiofrequências e uso eficiente de recursos escassos;
+infrações reiteradas em suas atividades;
+necessidade de modificação de destinação ou condições do uso das radiofrequências.
+II.a. Expressa e prévia manifestação de interesse por parte do detentor da outorga, requerida até três anos antes do vencimento do prazo original
+O art. 12, inciso I, do Decreto nº 10.402, de 2020, exige a expressa e prévia manifestação do interessado. De acordo com o art. 167, § 1º, da LGT, c/c art. 47, § 2º, do RUE, a prorrogação de autorizações de uso de radiofrequência deve ser requerida em até 3 (três) anos antes de seu vencimento. Ademais, tal prazo também está consignado na Cláusula 3.4 dos Termos de Autorização para Uso das Radiofrequências Associadas ao SMP objetos do presente processo, como mencionado anteriormente nesta Análise:
+Cláusula 3.4 - O requerimento para a prorrogação do direito de uso das radiofreqüências deverá ser encaminhado à ANATEL no interregno de quatro anos, no máximo, até três anos, no mínimo, anteriores à data de vencimento do prazo original.
+Conforme já destacado na descrição dos fatos deste processo, o pedido de prorrogação dos direitos de usos de radiofrequências foi originalmente apresentado pela CLARO em 3 de maio de 2023 (SEI nº 10184697) e o vencimento das sobreditas autorizações se dará em 1 de junho de 2026. Dessa forma, conforme atestou a área técnica no Informe nº 333/2026/ORLE/SOR (SEI nº 15030528), o pedido foi realizado de forma tempestiva.
+II.b. Do uso racional e adequado das radiofrequências e uso eficiente de recursos escassos.
+Conforme citado anteriormente, os requisitos regulamentares aplicáveis para essa análise estão expressos no art. 48 do Regulamento de Uso do Espectro de Radiofrequências, que remete a comprovação do uso racional do recurso ao Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 548, de 8 de novembro de 2010.
+Nesse aspecto, observo que a área técnica avaliou de forma adequada a eficiência do uso do espectro, inclusive sob a óptica da racionalidade e do atendimento ao interesse público, tal como disposto no Acórdão nº 2001/2022-TCU- Plenário. Essa avaliação consta do Informe nº 333/2026/ORLE/SOR (SEI nº 15030528), o qual remete aos Informes da ORER nº 154/2024/ORER/SOR (SEI nº 11447890) e nº 1235/2025/ORER/SOR (SEI nº 14778217). Reproduzo, a seguir, breves trechos dos citados Informes:
+Informe nº 333/2026/ORLE/SOR (SEI nº 15030528):
+3.25. No intuito de avaliar a eficiência do uso do espectro pela CLARO, a ORER, Gerência dotada de competência regimental para realizar análises e estudos técnicos de verificar o uso eficiente do espectro de radiofrequência, elaborou o Informe nº 154/2024/ORER/SOR, de 15 de março de 2024 (SEI nº 11447890), no qual foram avaliados os dados de eficiência de uso do espectro.
+3.25.1. As conclusões da área técnica relativa à avaliação da eficiência de uso do espectro deram-se nos seguintes termos:
+3.4.6. Banda H
+[...]
+3.4.6.5. As médias positivas sugerem o uso eficiente das faixas na maioria das áreas de prestação (todas as 27 Unidades Federativas). As medianas não são tão próximas das médias e médias maiores que as medianas indicam que os valores de ITE são assimétricos à direita (mais situados no campo positivo) em 20 UFs, o que pôde ser verificado pelos valores positivos de assimetria. As distribuições dos valores de ITE em ambas as faixas são platicúrticas (possuem uma curva de frequências superior à distribuição normal) em 15 UFs, verificadas pelos valores de curtose superiores a 3 (três).
+3.4.7. Banda M
+3.4.7.5. As médias positivas sugerem o uso eficiente das faixas na maioria das áreas de prestação (16 Unidades Federativas). As medianas não são tão próximas das médias e médias maiores que as medianas indicam que os valores de ITE são assimétricos à direita (mais situados no campo positivo) em 12 UFs, o que pôde ser verificado pelos valores positivos de assimetria. As distribuições dos valores de ITE em ambas as faixas são platicúrticas (possuem uma curva de frequências superior à distribuição normal) em 10 UFs, verificadas pelos valores de curtose superiores a 3 (três).
+[...]
+3.5.7. Na prática, o comando previsto no Regulamento aprovado pela Resolução nº 757/2022 para estas faixas de frequências visa apenas padronizar a configuração de blocos de frequência para dar maior flexibilidade quanto às configurações de uso possíveis, a fim de permitir a implementação de diferentes tecnologias, sem promover alterações nas demais condições de uso da faixa e sem que seja requerida adequação da faixa de frequências autorizada em função da nova canalização. Isso porque, as autorizações já conferidas utilizam blocos de 10 MHz, blocos estes que são múltiplos de 5 MHz, não sendo necessária, portanto, nova configuração ou adequação de seu uso. Diante de tal fato, e considerando, ainda, que se trata da primeira prorrogação da solicitante nesta faixa, não se vislumbra óbice à prorrogação da autorização em questão, com a ressalva de que esteja a solicitante ciente de que a nova canalização prevista será adotada nos termos dispostos na Resolução acima citada.
+3.26. Em complemento ao Informe nº 154/2024/ORER/SOR (SEI nº 11447890), a ORER elaborou o Informe nº 1235/2025/ORER/SOR (SEI nº 14778217), de 31 de dezembro de 2025, com o objetivo de atualizar a avaliação acerca do uso racional e eficiente das radiofrequências correspondentes às Bandas H e M, bem como de examinar, à luz do arcabouço regulatório vigente, tendo em vista a edição das Resoluções Anatel nº 772, de 16 de janeiro de 2025, e nº 773, de 16 de janeiro de 2025, que aprovaram, respectivamente, o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil e o Regulamento de Condições de Uso de Radiofrequências.
+3.14. Dessa forma, não se identificam óbices de ordem regulatória, relacionados à destinação ou às condições de uso das faixas de radiofrequências, para o atendimento do pleito apresentado pela interessada.
+(...)
+3.19. Com base nas análises realizadas à luz do Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 548/2010 da Anatel, observa-se que, para as faixas de 1.900/2.100 MHz, no âmbito do Termo de Autorização nº 31/2011, 62,74% dos municípios analisados apresentaram Índice Temporal de Eficiência (ITE) nulo ou positivo. No caso do Termo de Autorização nº 32/2011, 52,74% dos municípios abrangidos apresentou ITE nulo ou positivo. Já em relação ao Termo de Autorização nº 33/2011, verifica-se que aproximadamente 67,6%% dos municípios analisados apresentaram ITE nulo ou positivo. Esses resultados demonstram que, na grande maioria dos municípios abrangidos pelos referidos Termos, o volume de dados trafegados na rede da prestadora, mediante o uso da faixa de 1.900/2.100 MHz, não tem apresentado tendência de decréscimo ao longo do tempo.
+3.20. Com relação à faixa de 1.800 MHz, objeto do Termo de Autorização nº 31/2011, observa-se que 86,12% dos municípios analisados apresentaram Índice Temporal de Eficiência (ITE) nulo ou positivo.
+(...)
+3.23. Os resultados apurados corroboram a conclusão de que a faixa de radiofrequências autorizada vem sendo objeto de uso real, contínuo e eficiente, em conformidade com os critérios estabelecidos pela Resolução nº 548/2010. À luz das análises realizadas, os indicadores observados não revelam indícios de comprometimento da eficiência do uso do espectro, mantendo-se compatíveis com os parâmetros regulatórios atualmente vigentes.
+3.27. Verifica-se, portanto, que a ORER não vislumbra óbice quanto à prorrogação das autorizações tratadas nesta análise.
+3.28. Diante do exposto, conclui-se que o requisito do uso racional e adequado das radiofrequências e do uso eficiente de recursos escassos encontra-se atendido.
+Nos autos do Processo nº TC 021.350/2020-5 (SEI nº 9074137), o órgão de controle sugeriu à Anatel considerar nas análises de prorrogações de autorizações de uso do espectro, além da eficiência técnica, critérios objetivos que englobem aspectos referentes à eficiência econômica, social e competitiva (ou funcional):
+Acórdão nº 2001/2022-TCU-Plenário, de 31 de agosto de 2022
+"259. Assim, constata-se que a eficiência técnica do uso espectro é muito importante, porém pode não ser o único critério relevante a ser considerado na análise de prorrogações. Nesse contexto e diante das prorrogações sucessivas, em que há uma tendência de se manter o status quo de distribuição de faixas frequências entre as operadoras já atuantes no mercado, a decisão da prorrogação contínua da faixa para a mesma operadora perpassa não apenas a análise de como a autorizada está utilizando a faixa tecnicamente, mas também uma análise sobre outros aspectos de vantajosidade de manutenção da situação de outorga daquela faixa, como eficiência econômica, social e competitiva, como levantado pela própria Anatel e por prestadora do setor.
+(...)
+263. Diante do exposto, resta clara a necessidade de avaliação, pela Anatel, de outros aspectos do uso eficiente do espectro, não se atendo à análise técnica. Assim, considerando que o art. 12, inciso IV, do Decreto 10.402/2020 estabeleceu a necessidade de se avaliar, nos pedidos de prorrogação de outorgas, o uso eficiente do espectro de forma ampla, sem restringir quais aspectos devem ser observados, e considerando as boas práticas trazidas pela OCDE em seu relatório sobre o setor de telecomunicações brasileiro e as manifestações de atores do setor na Consulta Pública Anatel 51/2020, se propõe recomendar à Anatel que avalie a conveniência e oportunidade de incluir critérios objetivos que englobem os aspectos referentes à eficiência econômica, social e competitiva no arcabouço normativo que regulamenta o uso eficiente do espectro, em especial nos dispositivos que tratam das análises a serem feitas sobre pedidos de prorrogação de outorgas." (grifou-se)
+A avaliação do uso eficiente do espectro, englobando as dimensões técnica, econômica, funcional e social foi objeto de consultoria especializada contratada pela Anatel. No âmbito dessa consultoria, apresentaram-se, em forma conceitual, as seguintes definições de eficiência técnica, econômica e funcional no uso do espectro:
+Contrato CTR-S-BDT-2022-039 (SEI nº 9418584), Produto V (SEI nº 9645206)
+“4.1 Definição de eficiência técnica do uso do espectro
+Essa eficiência de uso do espectro trata da proporção de recursos utilizados para atingir os objetivos, no caso a transmissão de informação. É importante distinguir a eficiência técnica da eficiência espectral (medida em bits/Hz). (...) As variáveis básicas que caracterizam o fator de uso ou utilização do espectro são a largura de faixa de frequências do canal, a região geométrica afetada pelo transmissor e, no caso de operação não contínua, a fração do tempo durante a qual o sistema está ativo. A utilização do espectro pode ser definida, de forma genérica, como o produto destas três variáveis.
+4.2 Definição de eficiência econômica do uso do espectro
+Em Engenharia e ciências em geral, costuma-se definir eficiência como a razão entre uma quantidade entregue ou efetiva e uma quantidade potencial ou inicial. (...) Infelizmente, a eficiência econômica tal como usualmente entendida por economistas (a eficiência de Pareto) não pode ser expressa em números simples como os mencionados acima.
+4.3 Definição de eficiência funcional de uso do espectro
+A eficiência funcional estabelece o quanto satisfatoriamente o uso de um recurso de espectro atende às necessidades dos usuários finais ou consumidores, de modo que uma determinada tarefa possa ser executada de forma mais eficiente ou com maior facilidade. (...) A eficiência funcional reflete a operacionalidade de um sistema com critérios subjetivos e difíceis de serem quantificados tais quais, a facilidade de uso, confiabilidade, qualidade. Uma forma de obter indiretamente esta eficiência é por meio de dados como necessidades de espectro e qualidade de serviço.” (grifou-se)
+Finalmente, considerou-se que a eficiência social pode ser conceituada como "valores agregados à sociedade devido às externalidades resultantes do uso de determinada parte do espectro.”
+A regulamentação específica para a avaliação da eficiência técnica, econômica e funcional no uso do espectro, incluindo os referidos conceitos, é parte da proposta de revisão do Regulamento de Uso do Espectro (RUE), nos autos do Processo nº 53500.012178/2019-47. Essa proposta já passou por Consulta Pública e está em fase final de aprovação pelo Conselho Diretor.
+Como visto, apenas a avaliação da eficiência técnica conta com regulamentação específica, contida na Res. 548/2010. Os aspectos econômicos, funcionais e sociais do uso do espectro no presente caso, no entanto, podem ser avaliados com base nas informações setoriais disponíveis nos painéis de dados da Agência (https://informacoes.anatel.gov.br/paineis/)
+Quanto ao aspecto econômico, deve-se avaliar os impactos em relação à alocação ótima dos recursos em contextos de prestação decorrentes do uso das faixas de de 1.800 MHz e 1.900/2100 MHz na prestação do SMP. Na situação atual, a faixa em questão é detida unicamente pelas três maiores prestadoras do SMP. Em fevereiro de 2026, a participação no mercado de SMP da Claro era de 33,3%, não muito distante dos 38% da Vivo e 22,7% da TIM. O ambiente concorrencial existente leva à eficiência econômica, embora seja difícil expressá-la em números, tal como se observou mais acima.
+Com relação ao aspecto funcional, a avaliação pode ser feita indiretamente, por meio dos dados disponíveis sobre satisfação do usuário, disponibilidade e qualidade de serviço, que guardem relação com o uso do espectro. É esse o caso do indicador de qualidade de funcionamento por prestadora, obtido em pesquisas de satisfação do consumidor disponíveis nas páginas da AgênciaEspecificamente para o SMP, no ano de 2025, as notas obtidas pela Claro para o referido indicador foram ligeiramente superiores às notas dos concorrentes e às médias nacionais para os serviços pré-pago e pós-pago:
+Fonte: https://informacoes.anatel.gov.br/paineis/consumidor/pesquisa-de-satisfacao
+No aspecto social, é importante chamar a atenção para a amplitude de seu contexto, pois abarca valores que transcendem o setor de telecomunicações. As redes contribuem para o atingimento de inúmeros fins de interesse social. Entre os diversos fatores abrangidos pelo aspecto social, pode-se destacar aqueles que se refletem na melhoria na qualidade de vida, na criação de empregos, no acesso à saúde e à educação, na obtenção de informações climáticas, de suporte ao meio ambiente e pesquisas científicas, no desenvolvimento tecnológico e na segurança pública ou na defesa nacional.
+Em vista do exposto, entende-se que não há razões para o indeferimento dos pedidos de prorrogação aqui em pauta com relação ao uso eficiente do espectro, considerando tanto aspectos técnicos quanto econômicos (excedentes produtor/consumidor), funcionais (associados à satisfação do usuário) e sociais (externalidades).
+Dessa forma, entendo estar efetivamente demonstrado o uso racional e adequado das radiofrequências e o uso eficiente dos recursos escassos.
+II.c. Infrações reiteradas em suas atividades
+A avaliação de infrações reiteradas em suas atividades, como um requisito para prorrogação pleiteada, foi realizada pela SCO por meio do Ofício nº 102/2024/COUN/SCO-ANATEL (SEI nº 11445964), reproduzido a seguir:
+1. Trata-se de resposta ao Ofício nº 130/2024/ORLE/SOR-ANATEL (SEI nº 11349385), por meio do qual a Superintendência de Outorga e Recursos à Prestação (SOR), no âmbito de processo para apreciação de pedidos de prorrogação de direitos de uso de radiofrequências formulados pela Claro S.A., solicitou a esta Superintendência de Controle de Obrigações (SCO) o que segue:
+6. Para tanto, considerando as recentes decisões do Conselho Diretor desta Agência sobre o tema em questão e as competências regimentalmente atribuídas, solicita-se, à título de instrução processual, manifestação desta Superintendência quanto ao critério de análise de infrações reiteradas nas atividades da Solicitante, contemplando os seguintes pontos:
+(i) a relação de PADOs transitados em julgado apenas para as infrações ocorridas na prestação do SMP para o CNPJ da Solicitante, cujas infrações sejam relativas ao uso do espectro (RUE) ou descumprimento de Editais de Licitação; e
+(ii) a avaliação destes PADOs apurados, segundo os critérios supramencionados, com a identificação precisa de: a) dispositivos legais, regulamentares ou contratuais infringidos na prestação do SMP; b) motivos que levaram a tais infrações; c) sanções aplicadas; e d) eventual adequação da conduta por parte da Solicitante.
+2. Verifica-se que os pedidos de prorrogação uso de radiofrequências decorrem do Edital de Licitação nº 002/2010/PVCP/SPV - ANATEL, originalmente autorizadas à Nextel Serviços de Telecomunicações Ltda., posteriormente incorporada pela Claro S.A..
+3. Nesse sentido, e verificando o dashboard público de informações dos Editais de Licitação (https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/compromissos-de-investimento), constata-se o seguinte, para os lotes originalmente arrematados pela Nextel:
+ Subfaixa
+ | 
+ Qtde. de metas
+ | 
+ Atendidas no prazo
+ | 
+ Atendidas com atraso
+ | 
+ Total
+ | 
+ H (1945-1955 MHz / 2135-2145 MHz)
+ | 
+ 607
+ | 
+ 650
+ | 
+ 1257
+ | 
+ M(S) (1755-1765 MHz / 1850-1860 MHz)
+ | 
+ 71
+ | 
+ 95
+ | 
+ 166
+ | 
+ Total
+ | 
+ 678
+ | 
+ 745
+ | 
+ 1423
+ | 
+4. Como se nota, todas as metas assumidas foram cumpridas, ainda que com significativo volume de atrasos, devido ao fato de, à época, a proponente vencedora ter assumido os compromissos mais desafiadores do Edital, associados às bandas H, e por se tratar da implantação de uma nova rede SMP, face às demais prestadoras já estabelecidas no mercado.
+5. Em função dos atrasos, foram instaurados os Pados nº 53500.003025/2016-66 e 53500.022258/2018-20. O primeiro, encontra-se transitado em julgado, com aplicação de sanção de multa de R$ 72.225,26 (setenta e dois mil, duzentos e vinte e cinco reais e vinte e seis centavos), nos termos do Acórdão nº 349 (SEI nº 9304229), de 17 de outubro de 2022. O segundo Pado está sob análise do Conselho Diretor, cuja relatoria foi designada, via sorteio, para o Conselheiro Vicente Bandeira de Aquino Neto.
+6. Quanto aos aspectos solicitados no item (ii) do ofício da SOR, esclarece-se o seguinte:
+a) Pado nº 53500.003025/2016-66:
+I - Os indícios de cumprimento com atraso, pela Nextel Telecomunicações Ltda, de itens do Edital de Licitação nº 002/2010/SPV-ANATEL, apurados, foram:
+Item 1.3.1: Atender com atraso 13 (treze) municípios do Lote 1; 38 (trinta e oito) municípios do Lote 2; 4 (quatro) municípios do Lote 3; 36 (trinta e seis) municípios do Lote 4; 1 (um) município do Lote 6; 4 (quatro) municípios do Lote 7; 4 (quatro) municípios do Lote 9; 1 (um) município do Lote 10; 15 (quinze) municípios do Lote 11; 4 (quatro) municípios do Lote 12 e 1 (um) município do Lote 13.
+Item 1.3.2: Atender com atraso 4 (quatro) municípios do Lote 2; 1 (um) município do Lote 4; 1 (um) município do Lote 6; 2 (dois) municípios do Lote 7; 5 (cinco) municípios do Lote 9; 1 (um) município do Lote 10; 1 (um) município do Lote 11 e 3 (três) municípios do Lote 12.
+Item 1.2.2: Atender com atraso 7 (sete) municípios do Lote 1, 2 (dois) municípios do Lote 3, 1 (um) município do Lote 4, 1 (um) município do Lote 9, 1 (um) município do Lote 11.
+Item 4-b: Atender com atraso 9 (nove) municípios do Lote 40.
+Item 1.1.4: Atender com atraso 5 (cinco) municípios do Lote 1; 3 (três) municípios do Lote 2; 9 (nove) municípios do Lote 3 e 9 (nove) municípios do Lote 4.
+Item 4-d: Atender com atraso 1 (um) município do Lote 40.
+II - nos autos deste Pado, registrou-se, nos Relatórios de Fiscalização nº 1062/2013/GR01 e nº 0525/2015/GR01, anexados aos Informes nº 508/2014-COUN2/COUN (SEI nº 0256672) e nº 303/2015-COUN2/COUN (SEI nº 0256699), respectivamente, que as fiscalizações ocorreram regularmente em todos os municípios apontados nas datas de vencimento das metas (01/06/2013, 01/06/2014 e 01/06/2015), mediante os procedimentos que são aplicados para a avaliação da quantidade e da qualidade do sinal para a verificação do cumprimento dos compromissos a todas as prestadoras, nos termos descritos nos próprios relatórios. No entanto, conformou relatou-se, algumas localidades não atingiram o percentual mínimo de cobertura de 80% (oitenta por cento), calculado a partir dos dados de tráfego apresentados pela prestadora, e, por esse motivo, foram considerados irregulares.
+III - Após as alegações finais da prestadora, salienta-se que todos os documentos comprobatórios do atendimento (comercialização do serviço) foram analisados, apresentando-se, em síntese, os seguintes resultados:
+Em 10 municípios, as infrações foram descaracterizadas, pois as notas fiscais anexadas às Alegações Finais indicam que a comercialização ocorreu no prazo previsto.
+Em 4 municípios, as infrações foram descaracterizadas, devido a erro material no processo (os municípios se repetem em outros compromisso).
+Em 9 municípios, os períodos de atraso foram alterados, pois a nova comprovação apresentada é anterior àquela que havia sido inicialmente considerada.
+Em 111 municípios, os anúncios em rádio ou jornal não citam a cidade, não sendo possível, portanto, aferir se o município é ou não atendido pela operadora.
+Em 14 municípios, a comprovação apresentada é posterior àquela considerada inicialmente.
+Em 39 municípios, não houve a juntada de novos documentos comprobatórios, permanecendo a situação anterior.
+IV - Por fim, a obrigação foi considerada cumprida somente após o atendimento pleno ocorrido mediante a implementação da cobertura e da comprovação da comercialização. O valor da multa aplicada consta da Análise nº 69/2022/MM (SEI nº 8695565), tendo sido reformada por atraso no cumprimento de compromissos de abrangência previstos nos itens 1.1.2, 1.3.1 e 4-b, do Edital de Licitação nº 002/2010/SPV-ANATEL.
+b) Pado 53500.022258/2018-20:
+I - diante dos dados apurados pela fiscalização da Agência, fora proposta a instauração do Pado para averiguar os seguintes descumprimentos da Nextel, relativos ao Edital 002/2010/PVCP/SPV-Anatel:
+Item 1.1.4: Atender com atraso 47 (quarenta e sete) municípios com população acima de 200 mil habitantes, sendo: 10 (dez) municípios do Lote 1; 14 (catorze) municípios do Lote 2; 4 (quatro) municípios do Lote 3; 12 (doze) municípios do Lote 4; 1 (um) município do Lote 9; 6 (seis) municípios do Lote 11.
+Item 1.1.5: Atender com atraso 50 (cinquenta) municípios, sendo 11 (onze) do lote 1, 7 (sete) do lote 2, 17 (dezessete) do lote 3, 10 (dez) do lote 4, 1 (um) do lote 7, 1 (um) do lote 9 e 3 (três) do lote 11.
+Item 1.2: Atender com atraso 178 (cento e setenta e oito) municípios, sendo 36 (trinta e seis) do Lote 1, 29 (vinte e nove) do Lote 2, 34 (trinta e quatro) do Lote 3, 54 (cinquenta e quatro) do lote 4, 4 (quatro) do lote 7, 5 (cinco) do lote 9, 2 (dois) do Lote 10, 13 (treze) do lote 11 e 1 (um) do lote 12. Não atender 5 (cinco) municípios, sendo: 2 (dois) municípios do Lote 2 (Buritis/RO e Fraiburgo/SC), 2 (dois) do Lote 3 (Brejo/MA e Buriticupu/MA) e 1 (um) do Lote 4 (Mauriti/CE).
+Item 1.3.2: Atender com atraso 146 (cento e quarenta e seis) municípios com população abaixo de 30 mil habitantes, sendo: 19 (dezenove) municípios do Lote 1; 48 (quarenta e oito) municípios do Lote 2; 13 (treze) municípios do Lote 3; 44 (quarenta e quatro) municípios do Lote 4; 1 (um) município do Lote 6; 3 (três) municípios do Lote 7; 18 (dezoito) municípios do Lote 11.
+Item 1.3.3: Atender com atraso 77 (setenta e sete) municípios, sendo: 8 (oito) do Lote 1, 33 (trinta e três) do Lote 2, 8 (oito) do lote 3, 13 (treze) do Lote 4, 3 (três) do Lote 7, 12 (doze) do Lote 11. Não atender 2 (dois) municípios do Lote 2 (Manoel Urbano/AC e Campos de Júlio/MT).
+Item 1.3.4: Atender com atraso 137 (cento e trinta e sete) municípios, sendo: 14 (quatorze) do Lote 1, 50 (cinquenta) do Lote 2, 10 (dez) do Lote 3, 40 (quarenta) do Lote 4, 4 (quatro) do Lote 7, 2 (dois) do Lote 9, 14 (quatorze) do Lote 11 e 3 (três) do Lote 12. Não atender 14 (quatorze) municípios, sendo: 4 (quatro) municípios do Lote 1 (Buritirama/BA, Mucugê/BA, Nordestina/BA e Jussara/BA), 1 (um) do Lote 2 (Itapuã do Oeste/RO), 1 (um) do Lote 3 (Buriti Bravo/MA), 4 (quatro) do Lote 4 (Catarina/CE, Deputado Irapuan Pinheiro/CE, General Sampaio/CE e Pires Ferreira/CE) e 4 (quatro) do Lote 11 (Ladainha/MG, Nacip Raydan/MG, Durandé/MG e Mata Verde/MG).
+Item 4-d: Atender com atraso 36 (trinta e seis) município do Lote 40.
+Item 4-d: Não atender 1 (um) município do Lote 40 (Petrópolis/RJ).
+Item 4-e: Atender com atraso 33 (trinta e três) municípios do Lote 40.
+II - No caso do Pado em questão, além do tempo de atraso para a efetiva cobertura dos municípios, também foi considerado pela Agência o real atendimento ao usuário final, justamente por ser a Nextel uma prestadora entrante à época. Ao ativar uma subfaixa de radiofrequência, a empresa está garantindo apenas cobertura na região. Para saber se o serviço está fruindo, isto é, se há real atendimento com SMP, é necessário que ao menos uma conexão de voz ou dados possa ser estabelecida e uma maneira de se comprovar isso é com a comercialização do serviço.
+III - Nos Relatórios de Fiscalização nº 0180/2017/GR01 (cópia) (SEI nº 1755706), anexado ao Informe nº 10/2017/SEI/COUN2/COUN/SCO (cópia) (SEI nº 1755585) e nºs 1.443/2017/GR01 (cópia) (SEI nº 2781692) e 1.444/2017/GR01 (cópia) (SEI nº 2781713), anexados ao Informe nº 10/2017/SEI/COUN2/COUN/SCO (cópia) (SEI nº 1755585), foi relatado que as fiscalizações ocorreram regularmente em todos os municípios apontados nas datas de vencimento das metas (01/06/2015, 01/06/2016 e 01/06/2017), mediante os procedimentos que são aplicados para a avaliação da quantidade e da qualidade do sinal para a verificação do cumprimento dos compromissos a todas as prestadoras, nos termos descritos nos próprios relatórios.
+IV - Tendo sido caracterizado o não cumprimento do compromisso no prazo do Edital, a obrigação permaneceu vigente, cabendo ainda à empresa seu cumprimento integral. Para demonstrá-lo, a prestadora poderia fornecer à Agência, a qualquer tempo, dados de tráfego atualizados no momento em que estes atingissem o percentual necessário relativamente aos municípios em que se atestou descumprimento, visando comprovar, assim, o cumprimento da obrigação. Foi, também, possibilitada à prestadora a comprovação da consumação das metas de atendimento por meio de envio de documentos que atestassem suficientemente que o serviço estava disponível e/ou que estava sendo utilizado, conforme a própria destinação das faixas.
+V - Após as alegações finais da prestadora, salienta-se que todos os documentos comprobatórios do atendimento (comercialização do serviço) foram analisados, apresentando, em síntese, os seguintes resultados:
+Item 1.1.4: Atender com atraso 47 (quarenta e sete) municípios com população acima de 200 mil habitantes, sendo: 10 (dez) municípios do Lote 1; 14 (catorze) municípios do Lote 2; 4 (quatro) municípios do Lote 3; 12 (doze) municípios do Lote 4; 1 (um) município do Lote 9; 6 (seis) municípios do Lote 11.
+Item 1.1.5: Atender com atraso 50 (cinquenta) municípios, sendo 11 (onze) do lote 1, 7 (sete) do lote 2, 17 (dezessete) do lote 3, 10 (dez) do lote 4, 1 (um) do lote 7, 1 (um) do lote 9 e 3 (três) do lote 11.
+Item 1.2: Atender com atraso 183 (cento e oitenta e três) municípios, sendo 36 (trinta e seis) do Lote 1, 31 (trinta e um) do Lote 2, 36 (trinta e seis) do Lote 3, 55 (cinquenta e cinco) do lote 4, 4 (quatro) do lote 7, 5 (cinco) do lote 9, 2 (dois) do Lote 10, 13 (treze) do lote 11 e 1 (um) do lote 12.
+Item 1.3.2: Atender com atraso 146 (cento e quarenta e seis) municípios com população abaixo de 30 mil habitantes, sendo: 19 (dezenove) municípios do Lote 1; 48 (quarenta e oito) municípios do Lote 2; 13 (treze) municípios do Lote 3; 44 (quarenta e quatro) municípios do Lote 4; 1 (um) município do Lote 6; 3 (três) municípios do Lote 7; 18 (dezoito) municípios do Lote 11.
+Item 1.3.3: Atender com atraso 79 (setenta e nove) municípios, sendo: 8 (oito) do Lote 1, 35 (trinta e cinco) do Lote 2, 8 (oito) do lote 3, 13 (treze) do Lote 4, 3 (três) do Lote 7, 12 (doze) do Lote 11.
+Item 1.3.4: Atender com atraso 145 (cento e trinta e sete) municípios, sendo: 17 (dezessete) do Lote 1, 51 (cinquenta e um) do Lote 2, 10 (dez) do Lote 3, 40 (quarenta) do Lote 4, 4 (quatro) do Lote 7, 2 (dois) do Lote 9, 18 (dezoito) do Lote 11 e 3 (três) do Lote 12.
+Item 4-d: Atender com atraso 37 (trinta e sete) município do Lote 40.
+Item 4-e: Atender com atraso 33 (trinta e três) municípios do Lote 40.
+VI - Por fim, no Informe nº 137/2023/COUN/SCO (SEI nº 10021944), a Área Técnica propôs o conhecimento e o parcial provimento do Recurso Administrativo, alterando-se a multa de R$ 9.560.880,39 (nove milhões, quinhentos e sessenta mil, oitocentos e oitenta reais e trinta e nove centavos) para R$ 3.727.544,41 (três milhões, setecentos e vinte e sete mil, quinhentos e quarenta e quatro reais e quarenta e um centavos), em virtude da adoção de entendimento contido na Análise nº 69/2022/MM (SEI nº 8695565), acolhida pelo Acórdão nº 349, de 17 de outubro de 2022 (SEI nº 9304229). Ressalta-se que, conforme consta da Análise nº 159/2023/MM (SEI nº 11088902), o relator solicitou prorrogação de prazo para seu voto.
+7. Quanto às infrações relacionadas ao uso do espectro, partindo dos precedentes fixados nas Análises nº 35/2023/AF, nº 57/2023/VA e nº 58/2023/VA, encaminha-se abaixo a relação de Pados transitados em julgado, referentes às infrações ocorridas na prestação do SMP, especificamente quanto aos dispositivos do Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671/2016, e constantes no CNPJ nº 40.432.544/0001-47, da Claro S.A., com a indicação também das informações relativas: i) aos dispositivos legais, regulamentares ou contratuais infringidos na prestação do SMP; ii) aos motivos que levaram a tais infrações; iii) às sanções aplicadas; e iv) à eventual adequação da conduta por parte da Solicitante.
+ Pado nº
+ | 
+ Dispositivos legais, regulamentares ou contratuais infringidos na prestação do SMP
+ | 
+ Motivos que levaram a tais infrações
+ | 
+ Sanções aplicadas
+ | 
+ Eventual adequação da conduta por parte da Solicitante
+ | 
+ 53500.017437/2021-41
+ | 
+ Art. 41, §1º, do Anexo à Resolução nº 671/2016 (RUE)
+ | 
+ Celebração de contrato de compartilhamento de rede móvel firmado entre Claro S/A e Nextel Telecomunicações S/A em data anterior à anuência prévia a respeito do respectivo contrato.
+ A prestadora celebrou contrato de compartilhamento de rede móvel com a Nextel em 20/12/2019, tendo apresentado o pedido de anuência prévia à Anatel apenas em 26/12/2019, em violação ao art. 41 do RUE, que estabelece a obrigação de envio da minuta do contrato, e não do contrato assinado, no procedimento de anuência prévia.
+ | 
+ Advertência
+ | 
+ A prestadora celebrou o contrato de compartilhamento com a Nextel em 20/12/2019, tendo apresentado o pedido de anuência prévia à Anatel em 26/12/2019. A anuência prévia foi concedida por meio do Acórdão nº 50, de 05 de março de 2020.
+ | 
+ 53500.017770/2021-50
+ | 
+ Art. 58, inciso I, do Anexo à Resolução nº 671/2016 (RUE)
+ | 
+ Quanto à Estação nº 442305451 (SLP) - Radioenlace SMP:
+ Uso de radiofrequência diversa da autorizada (uso das frequências de 14,767 GHz e 14,851 GHz, sendo que a entidade possuía autorização para as frequências de 14,753 GHz, 14,865 GHz, 6,660 GHz, 6,740 GHz e 14,529 GHz).
+ | 
+ Multa de R$ 5.000,00 (cinco mil reais).
+ | 
+ Nos autos, não constam informações sobre eventual regularização do uso de radiofrequência por parte da solicitante.
+ | 
+8. Continuamos à disposição para esclarecimentos adicionais que se fizerem necessários.
+Destaca-se que essa avaliação levou em consideração o disposto no Acórdão nº 2001/2022-TCU-Plenário, expedido nos autos do Processo nº TC 021.350/2020-5, no âmbito do processo que avaliou a possibilidade de múltiplas prorrogações para aquelas autorizações conferidas anteriormente à Lei nº 13.879/2019, constatando pela existência de fragilidades nas análises já realizadas para fins de avaliação da prorrogação das autorizações de outorga de radiofrequência das Bandas A e B, dentre elas, no critério de análise "infrações reiteradas em suas atividades", in verbis:
+9.4.1.3. o mero levantamento dos registros de sanção e processos disciplinares transitados em julgado contra a operadora, sem a respectiva análise abrangente dos aspectos que levaram a tais infrações e sem avaliação acerca do eventual cometimento de infrações reiteradas, infringe ao art. 167, caput e §§ 2º e 3º, da Lei 9.472/1997 e art. 12, inciso II, do Decreto 10.402/2020.
+Nesse sentido, a Corte de Contas recomendou:
+9.5.3. explicite, em seu arcabouço normativo, critérios objetivos para avaliar, na prorrogação de outorgas, o efetivo cumprimento de obrigações e o não cometimento de infrações reiteradas pela operadora solicitante, em obediência ao art. 167, caput e §§ 2º e 3º, da Lei 9.472/1997 e art. 12, inciso II, do Decreto 10.402/2020 (seção V.3 do Voto);
+9.5.4. obtenha da concessionária, previamente à eventual prorrogação de sua autorização, a necessária quitação das multas e a correspondente reparação dos danos referentes a todos os processos administrativos sancionatórios aplicados pelo regulador na respectiva faixa de frequência (seção V.3 do Voto);
+A área técnica, portanto, detalhou o histórico de cumprimento de obrigações da Requerente associadas ao Edital nº 002/2010 (originalmente da Nextel) e a análise de infrações reiteradas. Conclui que todas as metas foram cumpridas, porém com atrasos significativos, o que resultou na instauração de processos administrativos (PADOs), aplicação de sanções e reavaliações com base em comprovações posteriores de atendimento. Além disso, foram listadas infrações específicas relacionadas ao uso do espectro, com indicação dos dispositivos violados, causas, penalidades e eventual regularização, evidenciando um quadro de descumprimentos pontuais, em geral sanados ou ajustados ao longo do tempo, que subsidia a avaliação regulatória sobre a conduta da prestadora.
+Por fim, a SOR assim consignou em seu informe:
+Informe nº 333/2026/ORLE/SOR (SEI nº 15030528):
+3.31. Quanto às obrigações editalícias, a área técnica atestou o seu cumprimento, embora com significativo atraso, o que deu ensejo à instauração de dois Pados: 1 transitado em julgado: e outro ainda em trâmite, na data de elaboração deste Informe. Já em relação ao uso do espectro, foram elencados apenas dois Pados já transitados em julgado. Assim, esta área técnica ratifica, portanto, o entendimento de que, s.m.j., o quantitativo de infrações acima detalhado não deveria obstar o pedido de prorrogação de direito de uso de radiofrequências apresentado.
+3.32. Por outro lado, o Conselho Diretor, ao apreciar o pedido, deverá se utilizar de critérios de razoabilidade e proporcionalidade para definir se as infrações cometidas pela prestadora em mais de uma oportunidade em face do mesmo dispositivo contratual ou regulamentar deverão ensejar óbice à prorrogação de uso almejada pela prestadora.
+(grifou-se)
+Consignou-se, assim, sob este aspecto, o entendimento no sentido de não existir óbice quanto ao deferimento do pedido de prorrogação.
+Dessa forma, com base na razoabilidade e propocionalidade reputo que esse requisito também está atendido.
+II.d. Necessidade de modificação de destinação e das condições do uso das radiofrequências
+As prorrogações objeto deste processo dizem respeito às faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz. As condições de uso dessas faixas estão definidas no regulamento aprovado por meio da Resolução Anatel nº 773, de 16 de janeiro de 2025, e as destinações no Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF), aprovado por meio da Resolução Anatel nº 772, de 16 de janeiro de 2025.
+Eis a avaliação da técnica técnica:
+Informe nº 333/2026/ORLE/SOR (SEI nº 15030528):
+3.33. Neste quesito, restou consignado, por meio do Informe nº 154/2024/ORER/SOR, de 15 de março de 2024 (SEI nº 11447890), que não houve modificação de destinação da faixa, conforme transcrito a seguir:
+3.5.6. Cumpre mencionar, ainda, que, no âmbito das decisões referentes ao uso futuro das faixas de frequências e das iniciativas regulatórias relativas à alteração de destinações ou condições de uso do espectro, avaliou-se, conforme item nº 18 da Agenda Regulatória da Anatel para o biênio 2021 – 2022, alteração das condições de uso de faixas de frequências destinadas ao Serviço Móvel Pessoal. Neste contexto, ao se considerar os diversos aspectos para avaliação da forma mais eficiente de se permitir a utilização do espectro de radiofrequências, a Resolução nº 757, de 8 de novembro de 2022, aprovou novas condições de uso de determinadas faixas de radiofrequências, estabelecendo que as atuais autorizadas poderiam continuar utilizando a faixa até determinada data, sob as condições de uso vigentes quando da autorização de uso de radiofrequências.
+3.5.6.1. Para os casos da subfaixa M (de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz) e da subfaixa H (de 1.945 MHz a 1.955 MHz e de 2.135 MHz a 2.135 MHz), não houve alteração das condições de uso em relação às aprovadas pelo (revogado) Regulamento sobre Condições de Uso de Radiofrequências nas Faixas de 800 MHz, 900 MHz, 1.800 MHz, 1.900 MHz e 2.100 MHz, aprovado pela Resolução nº 454, de 11 de dezembro de 2006. Os blocos de 10 MHz de subida e descida estabelecidos pela Resolução nº 454/2006 se adequam, portanto, à utilização de blocos de 5 MHz com possibilidade de agregação dos Blocos 10 e 11 da Tabela V e dos Blocos 6 e 7 da Tabela VIII do Regulamento de Condições de Uso de Radiofrequências, respectivamente. O que significa, efetivamente, que a autorização de uso de radiofrequências objeto desta análise está aderente às novas condições de uso (canalização) estabelecidas pelo Regulamento aprovado pela Resolução nº 757/2022.
+3.5.7. Na prática, o comando previsto no Regulamento aprovado pela Resolução nº 757/2022 para estas faixas de frequências visa apenas padronizar a configuração de blocos de frequência para dar maior flexibilidade quanto às configurações de uso possíveis, a fim de permitir a implementação de diferentes tecnologias, sem promover alterações nas demais condições de uso da faixa e sem que seja requerida adequação da faixa de frequências autorizada em função da nova canalização. Isso porque, as autorizações já conferidas utilizam blocos de 10 MHz, blocos estes que são múltiplos de 5 MHz, não sendo necessária, portanto, nova configuração ou adequação de seu uso. Diante de tal fato, e considerando, ainda, que se trata da primeira prorrogação da solicitante nesta faixa, não se vislumbra óbice à prorrogação da autorização em questão, com a ressalva de que esteja a solicitante ciente de que a nova canalização prevista será adotada nos termos dispostos na Resolução acima citada.
+3.34. Ademais, no Informe nº 1235/2025/ORER/SOR (SEI nº 14778217), de 31 de dezembro de 2025, a ORER complementou a análise nos seguintes termos:
+3.4. Após a manifestação da ORER, foram editadas as Resoluções Anatel nº 772, de 16 de janeiro de 2025, e nº 773, de 16 de janeiro de 2025, que aprovaram, respectivamente, o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil e o Regulamento de Condições de Uso de Radiofrequências. Com a edição desses normativos, restaram revogadas as Resoluções nº 757/2022 e nº 759/2022, que aprovavam, respectivamente, as condições de uso do espectro; e as atribuições e destinações de faixas de frequências no Brasil.
+3.5. Com a aprovação das referidas resoluções, foram mantidas a destinação e a canalização das faixas de radiofrequências de 1.800 MHz e de 1.900 MHz / 2.100 MHz, tendo sido promovidos, contudo, ajustes nas regras de transição aplicáveis à faixa de 1.900/2.100 MHz.
+3.6. Entre os ajustes aprovados, destaca-se a revogação do art. 31 do Regulamento anteriormente aprovado pela Resolução Anatel nº 757, de 8 de novembro de 2022, o qual previa que, para as subfaixas de 1.920 – 1.980 MHz e 2.110 – 2.170 MHz, os sistemas autorizados antes da vigência daquela norma poderiam permanecer em operação até 1º de junho de 2026. Contudo, considerando que as condições de uso atualmente estabelecidas — notadamente a canalização em blocos de 5 MHz passíveis de agregação — mostram-se compatíveis com as condições vigentes à época da outorga das autorizações de uso de radiofrequências, optou-se pela supressão da regra de transição, com o objetivo de evitar interpretações equivocadas quanto à continuidade de uso das referidas faixas de radiofrequências.
+Com base nesse cenário, a área técnica assim concluiu:
+Informe nº 333/2026/ORLE/SOR (SEI nº 15030528):
+3.36. Diante do exposto, conclui-se que o requisito da necessidade de destinação e das condições do uso de radiofrequências encontra-se atendido. Logo, propõe-se que o presente pedido de prorrogação, caso deferido, seja autorizado com prazo de vigência fixado em 15 (quinze) anos, contados do vencimento da autorização original, em caráter primário, conforme estabelecido no Edital de Licitação, tendo em vista não ter sido evidenciada a necessidade de realização de replanejamento de canalização dessas faixas.
+(grifou-se)
+Reputo atendido o requisito no presente caso, respeitados os limites definidos na regulamentação.
+III. DAS CONDIÇÕES SUBJETIVAS PARA A MANUTENÇÃO DA OUTORGA 
+Atendidos os requisitos específicos para a prorrogação das autorizações de uso de radiofrequências objeto do presente processo, há ainda que se observar as condições subjetivas dispostas no art. 133 da LGT para a obtenção e manutenção de outorgas de serviços de telecomunicações de interesse coletivo:
+Art. 133. São condições subjetivas para obtenção de autorização de serviço de interesse coletivo pela empresa:
+I - estar constituída segundo as leis brasileiras, com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos dois anos anteriores, com a decretação da caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou da caducidade de direito de uso de radiofrequência;
+III - dispor de qualificação técnica para bem prestar o serviço, capacidade econômico-financeira, regularidade fiscal e estar em situação regular com a Seguridade Social;
+IV - não ser, na mesma região, localidade ou área, encarregada de prestar a mesma modalidade de serviço.
+Parágrafo único. A Agência deverá verificar a situação de regularidade fiscal da empresa relativamente a entidades integrantes da administração pública federal, podendo, ainda, quando se mostrar relevante, requerer comprovação de regularidade perante as esferas municipal e estadual do Poder Público.
+Nesse ponto, a área técnica asseverou, a partir da pesquisa ao Cadastro de Empresas Inidôneas e Suspensas (CEIS), bem como da documentação apresentada pela empresa, avaliada por meio do derradeiro Checklist de Análise acostado aos autos (SEI nº 13216993), que a CLARO atende às condições subjetivas requeridas pelo diploma legal em questão.
+Ressalte-se, porém, que a situação de regularidade da requerente deverá ser novamente verificada antes da efetivação da prorrogação em tela, conforme praxis administrativa adotada pela Agência.
+IV. DO VALOR DEVIDO PELA PRORROGAÇÃO
+Com relação à onerosidade da prorrogação, conforme consta do citado § 1° do art. 167 da LGT, a prorrogação das radiofrequências será, sempre, onerosa:
+Art. 167. No caso de serviços autorizados, o prazo de vigência será de até 20 (vinte) anos, prorrogável por iguais períodos, sendo necessário que a autorizada tenha cumprido as obrigações já assumidas e manifeste prévio e expresso interesse. (Redação dada pela Lei nº 13.879, de 2019)
+§ 1° A prorrogação, sempre onerosa, poderá ser requerida até três anos antes do vencimento do prazo original, devendo o requerimento ser decidido em, no máximo, doze meses.
+Como explicado anteriormente nesta Análise, a presente solicitação de prorrogação de autorizações de uso de radiofrequências refere-se à primeira prorrogação e, neste contexto, é disciplinada pelo disposto nos respectivos Termos de Autorização para o Uso das Radiofrequências associadas ao SMP.
+Assim, no que se refere às radiofrequências associadas aos Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, deve-se observar a regra disposta na Cláusula 3.3, a qual estabelece a cobrança a cada biênio, durante o período de prorrogação, de ônus correspondente a 2% (dois por cento) da receita de SMP da Autorizada do ano anterior ao do pagamento, líquida de impostos e contribuições sociais incidentes, sendo que no 15º ano a empresa deverá pagar 1% (um por cento) de sua receita do ano anterior, in verbis:
+Cláusula 3.3. A AUTORIZADA, para prorrogação do direito para uso de radiofrequências associadas à Autorização para exploração do Serviço Móvel Pessoal, deverá pagar, a cada biênio, durante o período de prorrogação, ônus correspondente a 2% (dois por cento) de sua receita do ano anterior ao do pagamento, do SMP, líquida de impostos e contribuições sociais incidentes, sendo que no 15º ano a AUTORIZADA deverá pagar 1% de sua receita do ano anterior.
+§1º - No cálculo do valor referido no caput desta Cláusula, será considerada a receita líquida decorrente da aplicação dos Planos de Serviço, Básico e Alternativos, bem como as receitas decorrentes dos valores pela remuneração do uso de suas redes, objeto da Autorização para exploração do Serviço Móvel Pessoal.
+§2º - O cálculo do percentual referido no caput desta Cláusula será feito sempre relativamente à receita líquida das deduções de impostos e contribuições incidentes, apurada entre janeiro e dezembro do ano anterior e obtida das demonstrações financeiras elaboradas conforme princípios fundamentais de contabilidade aprovadas pela Administração da AUTORIZADA e auditadas por auditores independentes, e o pagamento terá vencimento em 30 (trinta) de abril do ano subsequente ao da apuração do ônus.
+§3º - A primeira parcela do ônus terá vencimento em 30 (trinta) de abril de 2028, calculada considerando a receita líquida apurada de 1º de janeiro a 31 de dezembro de 2027, e as parcelas subsequentes terão vencimento a cada vinte e quatro meses, tendo como base de cálculo a receita do ano anterior.
+§4º - O atraso no pagamento do ônus previsto nesta Cláusula implicará cobrança de multa moratória de 0,33% (zero vírgula trinta e três por cento) ao dia, até o limite de 10% (dez por cento), acrescido da taxa referencial SELIC para títulos federais, a ser aplicada sobre o valor da dívida considerando todos os dias de atraso no pagamento.
+§5º - O não pagamento do valor estipulado nesta cláusula implicará caducidade da Autorização para Uso de Radiofrequências, independente da aplicação de outras penalidades previstas na Regulamentação da Anatel.
+§6º - O percentual a que se refere o caput será aplicável no intervalo de prorrogação dos direitos para uso de radiofrequências, independentemente das Radiofrequências a que se refere a prorrogação.
+§7º - Em quaisquer das situações que levem à extinção desta Autorização, os valores das parcelas pagas do preço público e o montante de garantia de execução dos Compromissos de Abrangência executado ou a ser executado pela Anatel em decorrência do não cumprimento dos Compromissos de Abrangência, até o momento da referida extinção, não serão restituídos.
+§8º - Somente em casos de renúncia desta Autorização, as parcelas a vencer do preço público e o montante de garantia de execução dos Compromissos de Abrangência ainda não resgatado por meio do cumprimento dos Compromissos de Abrangência serão considerados indevidos, podendo a Anatel iniciar novo procedimento licitatório objeto desta autorização.
+§9º - Além da garantia de execução dos Compromissos de Abrangência, caso ocorra descumprimento dos Compromissos de Abrangência, a AUTORIZADA estará sujeita a Procedimento para Apuração de Descumprimento de Obrigações - PADO que levará a Anatel a decidir pela sanção cabível à situação detectada.
+Desse modo, para o caso ora em análise, entendo que os valores devidos pelas prorrogações dos direitos de uso de radiofrequências devem obedecer às regras estabelecias na Cláusula 3.3 dos Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL.
+V. DA PROPOSTA DE ENCAMINHAMENTO
+Tanto a área técnica, como a PFE/Anatel, concluem pela possibilidade de deferimento do pleito:
+Informe nº 1798/2026/ORLE/SOR (SEI nº 15190298):
+3.4. A Procuradoria Federal Especializada junto à ANATEL (PFE-ANATEL) elaborou o Parecer nº 00059/2026/PFE-ANATEL/PGF/AGU, aprovado em 13/02/2026 (SEI nº 15189160), no intuito de apreciar a análise realizada pela área técnica relativamente aos pedidos de prorrogação de direitos de uso em questão. A conclusão o referido parecer restou assim estabelecida:
+61. Diante do exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal, vinculada à Advocacia - Geral da União, assim opina:
+a) Tratando-se de primeira prorrogação, deverá a Agência, no caso concreto, avaliar o teor dos Termos de Autorização cuja prorrogação se pleiteia, a fim de verificar as condições a serem preenchidas para o deferimento do pleito;
+b) Com efeito, os Termos em tela (cf. Cláusula 3.4) asseveram que o pedido de prorrogação deve ser encaminhado à Anatel no prazo de 4 (quatro) anos, no máximo, até 3 (três) anos, no mínimo, anteriores à data de vencimento do prazo original, consignando ainda que “o indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofrequência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofrequência”;
+c) Pelo atendimento do prazo constante do art. 167, § 1º, da LGT, bem como da Cláusula 3.4 dos Termos de Autorização cuja prorrogação ora pleiteia a prestadora;
+d) A área especializada atestou o atendimento da condição atinente ao uso racional e adequado das radiofrequências e uso eficiente de recursos escassos, prevista no art. 167, § 2º, da LGT;
+d.1) No ponto, quanto à recomendação do TCU constante do Acórdão nº 2001/2022-TCU-Plenário, proferido pelo Tribunal de Contas da União (TCU) nos autos do Processo nº TC 021.350/2020-5, observa-se que, com a apresentação das informações contidas no Informe nº 333/ORER/SOR, os autos encontram-se devidamente instruídos, a fim de serem encaminhados ao Conselho Diretor, para análise e deliberação quanto à matéria;
+e) Quanto à condição disposta no art. 167, § 2º, da LGT, atinente às infrações reiteradas em suas atividades, o corpo especializado ressaltou seu entendimento de que o quantitativo de infrações detalhado no presente caso não deveria obstar o pedido de prorrogação de direito de uso de radiofrequências apresentado;
+f) Consignou-se que, por cautela, esta Procuradoria, em casos semelhantes, tem recomendado ao corpo técnico a juntada aos autos de lista detalhada dos PADOs, contendo o objeto e a fase atual em que se encontram, a fim de subsidiar a futura decisão do Conselho Diretor, bem como a avaliação, para melhor instrução dos autos, a indicação dos tipos de sanção e as fases em que se encontram os processos sancionadores;
+g) Ainda, esta Procuradoria, em casos semelhantes, costuma sugerir que a área técnica esclareça em que medida essas informações afastam o enquadramento da segunda hipótese de indeferimento, devendo os fundamentos da conclusão da área técnica restarem consignados nos autos, de modo a instruí-los de forma completa;
+h) O corpo especializado informa a lista de Pados instaurados em função dos atrasos quanto ao cumprimento de compromissos editalícios, bem como de Pados referentes às infrações ocorridas na prestação do SMP, especificamente quanto aos dispositivos do Regulamento de Uuso do Espectro de Radiofrequências;
+i) O TCU, no Acórdão nº 2001/2022-TCU-Plenário, mencionou que "o mero levantamento dos registros de sanção e processos disciplinares transitados em julgado contra a operadora, sem a respectiva análise abrangente dos aspectos que levaram a tais infrações e sem avaliação acerca do eventual cometimento de infrações reiteradas, infringe ao art. 167, caput e §§ 2º e 3º, da Lei 9.472/1997 e art. 12, inciso II, do Decreto 10.402/2020";
+j) Ao que parece, a área responsável pela presente análise, por meio do por meio do Ofício nº 102/2024/COUN/SCO-ANATEL (SEI nº 11445964), já em atendimento às considerações expostas pelo TCU no Acórdão nº 2001/2022-TCU-Plenário, atestou o cumprimento do presente requisito, entendimento este que também foi acatado pela SOR, o que demonstra, quanto a ele, que os presentes autos encontram-se instruídos, a fim de subirem ao Conselho Diretor, para decisão quanto à presente matéria;
+k) No que se refere à condição atinente à necessidade de modificação e destinação das condições do uso das radiofrequências, o corpo técnico propôs que a prorrogação, caso deferida, seja realizada com prazo de vigência fixado em 15 (quinze) anos, contados do vencimento da autorização original, em caráter primário, conforme estabelecido no Edital de Licitação;
+k.1) Não se vislumbram óbices jurídicos quanto ao ponto, que se ampara em aspectos eminentemente técnicos, destacando-se que a Requerente deve submeter-se às condições de uso previstas no Regulamento de Condições de Uso de Radiofrequências previsto na Resolução nº 773, de 16 de janeiro de 2025;
+l) Pela observação de que o corpo especializado atestou o cumprimento das condições subjetivas dispostas no art. 133 da LGT, não se vislumbrando, aqui, óbices de cunho jurídico à expedição de Ato condicionado à atualização da documentação de regularidade fiscal apresentada pela interessada, conforme proposto pelo corpo técnico;
+l.1) Apenas ressalva-se que esta Procuradoria já se posicionou, no Parecer nº 00045/2024/PFEANATEL/PGF/AGU, no sentido de que “para os certames conduzidos pela Agência, deve haver a comprovação da regularidade fiscal perante as Fazendas Públicas federal, estadual/distrital e municipal”, entendimento, entretanto, superado pelo Conselho Diretor da Agência;
+m) Em se tratando de primeira prorrogação, pela cobrança, a cada biênio, durante o período de prorrogação, de ônus correspondente a 2% (dois por cento) de sua receita do ano anterior ao do pagamento, do SMP, líquida de impostos e contribuições sociais incidentes, sendo que no 15° ano a autorizada deverá pagar 1% de sua receita do ano anterior, conforme estipulado nas Cláusulas 3.3 dos Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL;
+n) Pela competência do Conselho Diretor para análise e decisão quanto à matéria em discussão nos presentes autos, nos termos do art. 133, inciso VII, do Regimento Interno da Anatel;
+o) Considerando que o presente opinativo é preparatório à decisão do Conselho Diretor, há de se conferir acesso restrito a ele até a decisão a ser proferida pela autoridade competente, quando poderá ser tornado público, nos termos do art. 7º, §3º da Lei nº 12.527/2011
+CONSIDERAÇÕES SOBRE O PARECER Nº 00475/2022/PFE-ANATEL/PGF/AGU
+3.5. A ilustre Procuradoria Federal Especializada junto à ANATEL, ao elaborar o Parecer nº 00059/2026/PFE-ANATEL/PGF/AGU, aprovado em 13/02/2026 (SEI nº 15189160), filiou-se, de forma geral, às conclusões da área técnica entabuladas no Informe nº 333/2026/ORLE/SOR (SEI nº 15030528), de maneira que não existem considerações adicionais a serem realizadas pela área técnica, ratificando-se a fundamentação e as conclusões do Informe nº 333/2026/ORLE/SOR (SEI nº 15030528).
+DA CONCLUSÃO
+3.6. Por todo o exposto, não se vislumbra a ocorrência de hipóteses de indeferimento do pedido de prorrogação das autorizações de uso de radiofrequências previstas na lei e na regulamentação.
+3.7. Dessa forma, considerando a apresentação tempestiva do pedido e o contexto fático enfrentado, sugere-se que o Ato a ser expedido em caso de eventual deferimento do pedido estabeleça a prorrogação das autorizações em questão a partir dos prazos de vencimento originais.
+Em seu Informe nº 1798/2026/ORLE/SOR (SEI nº 15190298), a área técnica apresenta a seguinte proposta de encaminhamento:
+Informe nº 1798/2026/ORLE/SOR (SEI nº 15190298):
+5.1. Considerando o teor do Informe nº 333/2026/ORLE/SOR (SEI nº 15030528), e do Parecer nº 00059/2026/PFE-ANATEL/PGF/AGU, aprovado em 13/02/2026 (SEI nº 15189160), bem como a fundamentação exposta na presente peça, propõe-se o encaminhado dos presentes autos ao Conselho Diretor da Anatel, para fins de deliberação, nos termos do art. 133, inciso VII, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, com as seguintes sugestões:
+5.1.1. Prorrogar o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, por 15 (quinze) anos, sem exclusividade, em caráter primário, nas faixas de frequência e com prazo de vencimento abaixo indicados:
+ Termo de Autorização Vigente
+ | 
+ Data D.O.U.
+ | 
+ Área de Prestação
+ | 
+ Subfaixas 
+ | 
+ Vencimento Proposto
+ | 
+ 31/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ Estados do RJ, ES, BA e SE
+ Estados do AM, AP, PA, MA e RR
+ Estados do CE, PB, PE, PI, RN e AL
+ Municípios do Setor 3 do PGO
+ Estado de MG exceto os municípios do Código Nacional – CN 34, 35, 37
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ Região 1 do PGA do SMP
+ | 
+ 1.755 a 1.765MHz / 1.850 a 1.860MHz
+ | 
+ 30/05/2041
+ | 
+ 32/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ DF e Estados do AC, TO, MS (exceto CN 67), MT, RS, SC, RO, GO (exceto CN 64) e PR (exceto CN 43)
+ Municípios do CN 64 (exceto setor 25 do PGO) e CN 67 (exceto setor 22 do PGO)
+ Municípios do CN 43 (exceto Londrina/PR e Tamarana/PR)
+ Municípios de Londrina/PR e Tamarana/PR
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ 33/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ CN 11 que envolve os municípios de Alumínio, Araçariguama, Arujá, Atibaia, Barueri, Biritiba-Mirim, Bom Jesus dos Perdões, Bragança Paulista, Cabreúva, Caieiras, Cajamar, Campo Limpo Paulista, Carapicuíba, Cotia, Diadema, Embu, Embu-Guaçú, Ferraz de Vasconcelos, Francisco Morato, Franco da Rocha, Guararema, Guarulhos, Igaratá, Itapecerica da Serra, Itapeví, Itaquaquecetuba, Itatiba, Itú, Itupeva, Jandira, Jarinu, Joanópolis, Jundiaí, Juquitiba, Mairinque, Mairiporã, Mauá, Mogi das Cruzes, Morungaba, Nazaré Paulista, Osasco, Pedra Bela, Pinhalzinho, Piracaia, Pirapora do Bom Jesus, Poá, Ribeirão Pires, Rio Grande da Serra, Salesópolis, Salto, Santa Izabel, Santana de Parnaíba, Santo André, São Bernardo do Campo, São Caetano do Sul, São Lourenço da Serra, São Paulo, São Roque, Suzano, Taboão da Serra, Tuiuti, Vargem, Vargem Grande Paulista e Várzea Paulista, todos no Estado de São Paulo.
+ Estado de SP (exceto municípios da CN 11, CN 16, CN 17 e setor 33 do PGO)
+ Municípios com o CN 16 e 17 (exceto o Setor 33 do PGO)
+ Municípios do Setor 33 do PGO
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+5.1.2. Estabelecer que o valor devido pela prorrogação do prazo de vigência das autorizações de uso de radiofrequências deve obedecer às regras estabelecidas na Cláusula 3.3 dos Termos de Outorga de Autorização para Uso de Radiofrequências nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, celebrados com a CLARO S.A., CNPJ nº 40.432.544/0001-47.
+5.1.3. Condicionar a expedição do Ato que formaliza a prorrogação do prazo de vigência das autorizações de uso de radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, à apresentação da documentação comprobatória da regularidade fiscal, no âmbito federal, e perante a Anatel, pela interessada.
+5.1.4. Determinar que sejam firmados Termos de Autorização distintos.
+(grifou-se)
+Filio-me parcialmente à proposta apresentada. Meu único ponto de discordância se refere ao prazo de vencimento proposto para as subfaixas de 1.755 a 1.765MHz e 1.850 a 1.860MHz, na área de prestação composta pela Região 1 do PGA do SMP, objeto do Termo de Outorga de Autorização de Uso de Blocos de Radiofrequência nº 31/2011/PVCP/SPV-ANATEL, SEI nº 11349193, destacado na citação acima.
+O prazo de vencimento para a referida subfaixa deve respeitar o disposto no art. 33, inciso XV, do Regulamento de Condições de Uso de Radiofrequências, aprovado por meio da Resolução Anatel nº 773, de 16 de janeiro de 2025:
+Art. 33. O uso de determinadas faixas de radiofrequências está sujeito às seguintes regras:
+...
+XV - Nas faixas de frequências 1.710 – 1.785 MHz e de 1.805 – 1.880 MHz não podem ser expedidas novas autorizações de uso de radiofrequências, associadas ao serviço móvel pessoal ou serviço limitado privado, sob as condições de uso estabelecidas na Resolução nº 454/2006, sem prejuízo da prorrogação da autorização de uso de radiofrequências, do licenciamento ou das consignações associados à prestação do serviço. Os sistemas previamente autorizados podem continuar em operação de acordo com as condições de uso vigentes na data da respectiva autorização de uso de radiofrequências, até 22 de dezembro de 2032. Os sistemas já autorizados a operar no Estado de Minas Gerais até 29 de abril de 2035 podem continuar em operação até a referida data.
+(grifou-se)
+Portanto, de acordo com o mencionado dispositivo, o prazo de vencimento para a subfaixa 1.755 a 1.765MHz e 1.850 a 1.860MHz deve se limitar a 22 de dezembro de 2032 em toda a área de prestação. Note que o dispositivo previu uma exceção para o Estado de Minas Gerais, que, porém, não se aplica ao presente caso, uma vez que os sistemas nele referidos são aqueles que já estão autorizados a operar no Estado de Minas Gerais até 29 de abril de 2035. Na verdade, essa exceção se aplica apenas às autorizações associadas às faixas de 1.740 a 1.755 MHz e 1.835 a 1.850 MHz, antigamente denominada Subfaixa E, como previsto no Acórdão nº 274, de 31 de agosto de 2022 (SEI nº 9050742) e detalhado nos itens 5.48 a 5.55 da Análise nº 101/2022/VA (SEI nº 9036819).
+Destaco, ainda, que esse entendimento foi adotado pelo Conselho Diretor da Anatel conforme Acórdãos nº 215, de 25 de agosto de 2023 (SEI nº 10769907), nº 194, de 14 de agosto de 2023 (SEI nº 10705177), nº 105, de 28 de abril de 2023 (SEI nº 10164867), nº 383, de 14 de dezembro de 2022 (SEI nº 9564691), nº 375, de 06 de dezembro de 2022 (SEI nº 9527041) e nº 274, de 31 de agosto de 2022 (SEI nº 9050742).
+Quanto à área de prestação, vale lembrar que Plano Geral de Autorizações do Serviço Móvel Pessoal (PGA-SMP), aprovado pela Resolução nº 321, de 27 de setembro de 2002, foi revogado pela Resolução Anatel nº 777, de 28 de abril de 2025, que aprovou o Regulamento Geral dos Serviços de Telecomunicações (RGST), que entrou em vigor em 27 de outubro de 2025. Originalmente, quando firmado o Termo de Autorização nº 31/2011/PVCP/SPV-ANATEL, a Região 1 do PGA do SMP era composta pelos seguintes Estados: Rio de Janeiro, Espírito Santo, Minas Gerais, Amazonas, Roraima, Amapá, Pará, Maranhão, Bahia, Sergipe, Piauí, Ceará, Rio Grande do Norte, Paraíba, Pernambuco e Alagoas.
+Resolução nº 321, de 27 de setembro de 2002 (REVOGADA):
+PLANO GERAL DE AUTORIZAÇÕES DO SERVIÇO MÓVEL PESSOAL – PGA-SMP
+...
+ANEXO I
+Regiões
+ Região
+ | 
+ Área(s) geográfica(s) correspondente(s) ao(s) território(s)
+ | 
+ I
+ | 
+ Dos Estados do Rio de Janeiro, Espírito Santo, Minas Gerais, Amazonas, Roraima, Amapá, Pará, Maranhão, Bahia, Sergipe, Piauí, Ceará, Rio Grande do Norte, Paraíba, Pernambuco e Alagoas.
+ | 
+ II
+ | 
+ Dos Estados do Paraná, Santa Catarina, Rio Grande do Sul, Goiás, Tocantins, Mato Grosso do Sul, Mato Grosso, Rondônia, Acre e do Distrito Federal.
+ | 
+ III
+ | 
+ Do Estado de São Paulo.
+ | 
+Dessa forma, ao mencionar a área de prestação do serviço, é necessário substituir a menção à Região 1 do PGA pelos Estados que a constituíam. Promovi os devidos ajustes conforme Minuta de Ato SEI nº 15443520.
+Quanto à determinação para que sejam firmados Termos de Autorização distintos, o RGST dispõe o seguinte:
+Art. 316. A revogação do Plano Geral de Autorizações do Serviço Móvel Pessoal – PGA-SMP, aprovado pela Resolução nº 321, de 27 de setembro de 2002, não implicará na obrigação de consolidação dos Termos de Autorização de SMP expedidos anteriormente à entrada em vigor deste Regulamento.
+Verifica-se que, apesar do PGA-SMP ter sido revogado, a consolidação dos Termos de Autorização de SMP não é obrigatória. Nesse ponto, por se tratar de primeira prorrogação e considerando que os compromissos originais estão individualizados em Termos distintos, entendo que a manutenção de Termos de Autorização distintos proposta pela área técnica tem o condão de evitar eventuais prejuízos na operacionalização do acompanhamento dos compromissos.
+VI - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+“Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil”
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 9 da Agenda 2030, uma vez que o assunto, objeto do presente Procedimento, guarda relação temática no que diz respeito a preocupação com o desenvolvimento de infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos, uma vez que assegura a continuidades da utilização do recurso de espectro para o provimento do Serviço Móvel Pessoal.
+CONCLUSÃO
+Ante o exposto, proponho:
+Prorrogar o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, sem exclusividade, em caráter primário, nas faixas de frequência e com prazo de vencimento abaixo indicados, nos termos da Minuta de Ato SEI nº 15443520:
+ Termo de Autorização Vigente
+ | 
+ Data D.O.U.
+ | 
+ Área de Prestação
+ | 
+ Subfaixas
+ | 
+ Vencimento Proposto
+ | 
+ 31/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ Estados do RJ, ES, BA e SE
+ Estados do AM, AP, PA, MA e RR
+ Estados do CE, PB, PE, PI, RN e AL
+ Municípios do Setor 3 do PGO
+ Estado de MG exceto os municípios do Código Nacional – CN 34, 35, 37
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ Estados do RJ, ES, MG, AM, RR, AP, PA, MA, BA, SE, PI, CE, RN, PB, PE e AL.
+ | 
+ 1.755 a 1.765MHz / 1.850 a 1.860MHz
+ | 
+ 22/12/2032
+ | 
+ 32/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ DF e Estados do AC, TO, MS (exceto CN 67), MT, RS, SC, RO, GO (exceto CN 64) e PR (exceto CN 43)
+ Municípios do CN 64 (exceto setor 25 do PGO) e CN 67 (exceto setor 22 do PGO)
+ Municípios do CN 43 (exceto Londrina/PR e Tamarana/PR)
+ Municípios de Londrina/PR e Tamarana/PR
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ 33/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ CN 11 que envolve os municípios de Alumínio, Araçariguama, Arujá, Atibaia, Barueri, Biritiba-Mirim, Bom Jesus dos Perdões, Bragança Paulista, Cabreúva, Caieiras, Cajamar, Campo Limpo Paulista, Carapicuíba, Cotia, Diadema, Embu, Embu-Guaçú, Ferraz de Vasconcelos, Francisco Morato, Franco da Rocha, Guararema, Guarulhos, Igaratá, Itapecerica da Serra, Itapeví, Itaquaquecetuba, Itatiba, Itú, Itupeva, Jandira, Jarinu, Joanópolis, Jundiaí, Juquitiba, Mairinque, Mairiporã, Mauá, Mogi das Cruzes, Morungaba, Nazaré Paulista, Osasco, Pedra Bela, Pinhalzinho, Piracaia, Pirapora do Bom Jesus, Poá, Ribeirão Pires, Rio Grande da Serra, Salesópolis, Salto, Santa Izabel, Santana de Parnaíba, Santo André, São Bernardo do Campo, São Caetano do Sul, São Lourenço da Serra, São Paulo, São Roque, Suzano, Taboão da Serra, Tuiuti, Vargem, Vargem Grande Paulista e Várzea Paulista, todos no Estado de São Paulo.
+ Estado de SP (exceto municípios da CN 11, CN 16, CN 17 e setor 33 do PGO)
+ Municípios com o CN 16 e 17 (exceto o Setor 33 do PGO)
+ Municípios do Setor 33 do PGO
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+Estabelecer que o valor devido pela prorrogação do prazo de vigência das autorizações de uso de radiofrequências deve obedecer às regras estabelecidas na Cláusula 3.3 dos Termos de Outorga de Autorização para Uso de Radiofrequências nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, celebrados com a CLARO S.A., CNPJ nº 40.432.544/0001-47.
+Condicionar a expedição do Ato que formaliza a prorrogação do prazo de vigência das autorizações de uso de radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, à apresentação da documentação comprobatória da regularidade fiscal, no âmbito federal, e perante a Anatel, pela interessada.
+Determinar que sejam firmados Termos de Autorização distintos.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15348988 e o código CRC CBC4C81E.
+ | 
+Referência: Processo nº 53504.005072/2023-33 | 
+SEI nº 15348988 |

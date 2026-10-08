@@ -1,0 +1,838 @@
+SEI/ANATEL - 15272297 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 19/2026/NP
+Processo nº 53508.015099/2009-46
+Interessado: TELERGIPE CELULAR S/A
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo e Recurso de Ofício em razão do Despacho Decisório nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), cujo teor questiona créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+EMENTA
+DIREITO TRIBUTÁRIO. PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. RECURSO ADMINISTRATIVO. RECURSO DE OFÍCIO. RECURSO DE OFÍCIO NÃO CONHECIDO. RECURSO ADMINISTRATIVO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. Recurso administrativo interposto por TELEFÔNICA BRASIL S/A, sucessora da TELERGIPE CELULAR S/A, contra decisão que reconheceu créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) nos exercícios de 2005 e 2006.
+2. Recurso de ofício interposto em razão de exoneração parcial de créditos tributários.
+3. Revisão dos valores lançados após manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e realização de nova fiscalização, com ajuste da base de cálculo e das penalidades aplicadas.
+II. QUESTÃO EM DISCUSSÃO
+1. Saber se o recurso de ofício atende ao requisito de valor mínimo para sua admissibilidade.
+2. Saber se os lançamentos de créditos tributários e multas de ofício relativos ao Fust, nos exercícios de 2005 e 2006, observaram a legislação aplicável, inclusive quanto à base de cálculo, decadência, motivação dos atos e aplicação de penalidades.
+III. RAZÕES DE DECIDIR
+1. O recurso de ofício não deve ser conhecido, pois o valor exonerado é inferior ao limite estabelecido pela Resolução Interna Anatel nº 338/2024, desconsiderados juros e multas.
+2. O recurso administrativo é tempestivo, interposto por parte legítima e com interesse recursal.
+3. Não há nulidade nas notificações de lançamento, pois os atos administrativos continham os elementos essenciais e eventuais omissões foram supridas pelo acesso aos relatórios de fiscalização, não havendo prejuízo ao direito de defesa.
+4. O prazo decadencial para constituição do crédito tributário foi observado, nos termos do art. 173, I, do CTN.
+5. A base de cálculo da contribuição ao Fust foi revisada, com exclusão de receitas não tributáveis, abatimento de descontos concedidos e segregação de receitas de interconexão e EILD, em conformidade com decisão judicial.
+6. Sobre receitas de interconexão com exigibilidade suspensa, não incide multa de ofício, subsistindo, contudo, a incidência de juros de mora.
+7. A multa de ofício de 75% (setenta e cinco por cento), prevista no art. 44, I, da Lei nº 9.430/1996, é aplicável nos casos de omissão ou inexatidão na declaração, não prevalecendo o percentual de 2% (dois por cento), previsto no Decreto nº 3.624/2000, que se refere à multa de mora.
+IV. DISPOSITIVO E TESE
+1. Recurso de ofício não conhecido.
+2. Recurso administrativo conhecido e parcialmente provido para ajustar a base de cálculo da contribuição ao Fust e das penalidades, reconhecendo:
+a) para 2005: créditos de [Item 1 do Apartado Sigiloso SEI nº 15465041] (receitas de interconexão), [Item 2 do Apartado Sigiloso SEI nº 15465041] (receitas sem interconexão) e multa de ofício de [Item 3 do Apartado Sigiloso SEI nº 15465041] (receitas sem interconexão);
+b) para 2006: créditos de [Item 4 do Apartado Sigiloso SEI nº 15465041] (receitas de interconexão), R$ 0,00 (receitas sem interconexão) e multa de ofício de R$ 0,00.
+3. Interrupção da incidência da multa de mora sobre receitas de interconexão desde a concessão da medida judicial até 30 dias após a publicação da decisão judicial que considerar devido o tributo.
+4. Determinação de comunicação ao Ministério das Comunicações para atualização dos valores do Fust e do Funttel.
+Tese de julgamento: "1. O recurso de ofício não deve ser conhecido quando o valor exonerado é inferior ao limite legal, desconsiderados juros e multas. 2. O recurso administrativo deve ser parcialmente provido para ajustar a base de cálculo da contribuição ao Fust e das penalidades, observando a exclusão de receitas não tributáveis, a segregação de receitas de interconexão e a aplicação da multa de ofício de 75% apenas sobre as parcelas cabíveis."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (CTN), arts. 142, 150, § 4º, 173, I; Lei nº 9.430/1996, art. 44, I; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, arts. 10, 11, 34; Resolução Interna Anatel nº 338/2024; Resolução nº 612/2013; Decreto nº 3.624/2000, art. 8º.
+Jurisprudência relevante citada: Súmula Anatel nº 27, de 26 de julho de 2024; Súmula CARF nº 5; Súmula CARF nº 103.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios.
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal, as contribuições para a seguridade social, o processo administrativo de consulta e dá outras providências.
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal.
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o processo administrativo fiscal, e dá outras providências.
+Decreto nº 3.624, de 5 de outubro de 2000, que dispõe sobre a regulamentação do Fundo de Universalização dos Serviços de Telecomunicações (Fust), e dá outras providências. Revogado pelo Decreto nº 11.004, de 21 de março de 2022.
+Decreto nº 11.004, de 21 de março de 2022, que regulamenta a Lei nº 9.998/2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações.
+Resolução nº 247, de 14 de dezembro de 2000, que aprova o Regulamento de Arrecadação da Contribuição das Prestadoras de Serviços de Telecomunicações para o Fundo de Universalização dos Serviços de Telecomunicações (Fust). Revogada pela Resolução nº 729, de 19 de junho de 2020.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias, e dá outras providências.
+Resolução Interna Anatel nº 338, de 15 de julho de 2024, que estabelece as regras para a interposição de Recurso de Ofício no âmbito dos Processos Administrativos Fiscais (PAF).
+Portaria Anatel nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria nº 1.125, de 24 de outubro de 2014, que estabelece a competência e os limites para regularização de indébitos e para autorização dos procedimentos de restituição e compensação.
+Portaria Anatel nº 1.395, de 9 de outubro de 2017, que altera a Portaria nº 642, de 26 de julho de 2013.
+Portaria nº 614, de 13 de abril de 2018, que estabelece o limite para interposição de recurso de ofício no âmbito dos Processos Administrativos Fiscais. Revogada pela Resolução Interna Anatel nº 338/2024.
+Súmula nº 27, de 26 de julho de 2024, que estabelece que, nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust).
+Súmula CARF nº 103, que estabelece que, para fins de conhecimento de recurso de ofício, aplica-se o limite de alçada vigente na data de sua apreciação em segunda instância.
+Matéria para Apreciação do Conselho Diretor nº 836/2025 (SEI nº 14707851).
+Parecer da Procuradoria nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539).
+RELATÓRIO
+Trata-se de Recurso Administrativo (SEI nº 0669006, fls. 257-319) interposto pela empresa TELEFÔNICA BRASIL S/A, CNPJ nº 02.558.157/0001-62, sucessora por incorporação da VIVO S/A, que, por sua vez, incorporou a TELERGIPE CELULAR S/A, CNPJ nº 02.349.167/0001-98. O recurso é interposto contra o Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252) da Superintendência de Administração e Finanças (SAF), o qual julgou procedentes os lançamentos dos créditos tributários do Fundo de Universalização dos Serviços de Telecomunicações (Fust) nos exercícios de 2005 e 2006.
+Além disso, trata-se também de Recurso de Ofício encaminhado ao Conselho Diretor, em conformidade com o disposto no art. 34, inciso I, do Decreto nº 70.235, de 6 de março de 1972, combinado com a Portaria nº 1.125, de 24 de outubro de 2014.
+Registra-se que todos os elementos e documentos indispensáveis ao adequado deslinde da matéria encontram-se regularmente juntados aos autos do Processo SEI nº 53508.015099/2009-46.
+I - DA INSTRUÇÃO PROCESSUAL
+A Anatel, com o objetivo de verificar a higidez do recolhimento da contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (Fust), prevista no art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, elaborou os Relatórios de Fiscalização nº 0699/2009/ER02FT (SEI nº 0668994, fls. 1-20) e nº 0722/2009/ER02FT (SEI nº 0668994, fls. 21-41), os quais apuraram os valores devidos nos montantes de [Item 5 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2005, e de [Item 6 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2006. Os relatórios concluíram que a Prestadora declarou ao Fust valores inferiores aos devidos.
+A partir dos resultados obtidos, e acrescidos os valores de multa de 2% (dois por cento) e juros, com fundamento no art. 8º, § 1º, do Decreto nº 3.624, de 5 de outubro de 2000, a Anatel emitiu a Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142), de 18 de dezembro de 2009, constituindo o crédito apurado no montante de [Item 7 do Apartado Sigiloso SEI nº 15465041], composto das seguintes parcelas:
+Para o exercício de 2005:
+a.1) Lançamento de ofício: [Item 8 do Apartado Sigiloso SEI nº 15465041];
+a.2) Multa de mora: [Item 9 do Apartado Sigiloso SEI nº 15465041];
+a.3) Juros de mora: [Item 10 do Apartado Sigiloso SEI nº 15465041]; e
+a.4) Total (ano 2005): [Item 11 do Apartado Sigiloso SEI nº 15465041].
+Para o exercício de 2006:
+b.1) Lançamento de ofício: [Item 12 do Apartado Sigiloso SEI nº 15465041];
+b.2) Multa de mora: [Item 13 do Apartado Sigiloso SEI nº 15465041];
+b.3) Juros de mora: [Item 14 do Apartado Sigiloso SEI nº 15465041]; e
+b.4) Total (ano 2006): [Item 15 do Apartado Sigiloso SEI nº 15465041].
+A Notificação foi recebida pela Autuada em 24 de dezembro de 2009, conforme certificado em Aviso de Recebimento - AR (SEI nº 0668994, fl. 133).
+A Prestadora apresentou impugnação ao referido lançamento em 21 de janeiro de 2010 (SEI nº 0668994, fls. 43-132). Em suas alegações, requereu que fosse reconhecida a insubsistência do auto de infração lavrado com base nas seguintes alegações:
+o ato de lançamento seria nulo devido a erro de identificação do sujeito passivo, visto que foi utilizado o CNPJ da TELERGIPE CELULAR S.A., extinta por incorporação em 31 de outubro de 2006;
+o auto de infração seria nulo por ausência de motivação, pois a notificação não teria indicado a descrição do fato, a disposição legal infringida e a penalidade aplicável;
+os juros e multa não poderiam ser exigidos quando a exigibilidade do crédito tributário encontra-se suspensa, por força da Medida Liminar deferida nos autos do Mandado de Segurança nº 2006.34.00.002861-6 e do disposto no art. 20 da Resolução nº 247, de 14 de dezembro de 2000;
+a multa seria improcedente, conforme manifestação da Procuradoria da Anatel, que teria reconhecido a ilegalidade da exigência, conforme "Parecer nº 65-2007"; e
+a multa não seria exigível, visto resultar de suposta infração cometida por empresa incorporada, visto que o sucessor responderia apenas pelos tributos devidos, excetuando-se as multas punitivas, conforme art. 132 do Código Tributário Nacional (CTN), aprovado pela Lei nº 5.172, de 25 de outubro de 1966.
+Em 18 de maio de 2010, a Anatel emitiu o Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146), que impôs multa sancionatória no valor de [Item 16 do Apartado Sigiloso SEI nº 15465041], incluindo o valor total apurado ou a diferença detectada, corrigidos de acréscimos moratórios e penalidade de 75% (setenta e cinco por cento), incidente sobre o valor total deixado de ser recolhido, conforme estabelece o art. 44, I, da Lei nº 9.430, de 27 de dezembro de 1996. O referido valor é composto das seguintes parcelas:
+Para o exercício de 2005: [Item 17 do Apartado Sigiloso SEI nº 15465041]; e
+Para o exercício de 2006: [Item 18 do Apartado Sigiloso SEI nº 15465041].
+De acordo com o AR acostado ao processo (SEI nº 0668994, fl. 155, e SEI nº 0669003, fl. 277), a Prestadora recebeu o mencionado Comunicado em 27 de maio de 2010.
+Em 14 de junho de 2010, foi emitido o Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150), que retificou os valores expressos no Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146) e estabeleceu a multa sancionatória de [Item 19 do Apartado Sigiloso SEI nº 15465041], composta pelas parcelas a seguir:
+Para o exercício de 2005: [Item 20 do Apartado Sigiloso SEI nº 15465041]; e
+Para o exercício de 2006: [Item 21 do Apartado Sigiloso SEI nº 15465041].
+A Prestadora foi notificada da retificação em 30 de junho de 2010, conforme AR acostado aos autos (SEI nº 0668994, fl. 153).
+Em 25 de junho de 2010, a Prestadora apresentou impugnação (SEI nº 0668994, fls. 207-410, e também SEI nº 0669003, fls. 3-270) contra o Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146), com os seguintes argumentos:
+a multa sancionatória expressa no Comunicado combatido seria indevida, nos termos do art. 63 da Lei nº 9.430/1996, uma vez que o crédito tributário de Fust que se pretende ver definitivamente constituído por meio da Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) estaria com sua exigibilidade suspensa nos termos do art. 151 do CTN, em razão da medida liminar deferida e posteriormente confirmada com a concessão da segurança proferida nos autos do Mandado de Segurança nº 2006.34.00.002861-6;
+o crédito tributário referente às competências de janeiro a abril de 2005 se encontraria extinto por força de decadência, tendo em vista o prazo de 5 (cinco) anos previsto no art. 150, § 4º, do CTN e a data de notificação do Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146), que ocorreu em 25 de maio de 2010;
+o Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146) conteria erro no cálculo da multa sancionatória, cujos valores considerados seriam superiores aos 75% (setenta e cinco por cento) previstos no art. 44, I, da Lei nº 9.430/1996;
+o Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146) teria deixado de considerar que os débitos descritos na Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) já haviam considerado a incidência de multa de mora de 2% (dois por cento), nos termos do art. 8º, § 1º, do Decreto nº 3.624/2000. Dito de outra forma, haveria impossibilidade de cobrança cumulativa de multas de mora e sancionatória sobre a mesma base de cálculo;
+o ato de lançamento seria nulo devido a erro de identificação do sujeito passivo, visto que foi utilizado o CNPJ da TELERGIPE CELULAR S.A., extinta por incorporação em 31 de outubro de 2006;
+o auto de infração seria nulo por ausência de motivação, pois a notificação não teria indicado a descrição do fato, a disposição legal infringida e a penalidade aplicável; e
+a multa não seria exigível, visto resultar de suposta infração cometida por empresa incorporada, uma vez que o sucessor responderia apenas pelos tributos devidos, excetuando-se as multas punitivas, conforme art. 132 do Código Tributário Nacional (CTN), aprovado pela Lei nº 5.172/1966.
+Em 26 de julho de 2010, a Prestadora apresentou impugnação (SEI nº 0668994, fls. 157-206) contra o Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150), que retificou o Comunicado de Lançamento Complementar anterior, com base na seguinte fundamentação:
+a multa sancionatória expressa no Comunicado combatido seria indevida, nos termos do art. 63 da Lei nº 9.430/1996, uma vez que o crédito tributário de Fust que se pretende ver definitivamente constituído por meio da Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) estaria com sua exigibilidade suspensa nos termos do art. 151 do CTN, em razão da medida liminar deferida e posteriormente confirmada com a concessão da segurança proferida nos autos do Mandado de Segurança nº 2006.34.00.002861-6;
+o crédito tributário referente às competências de janeiro a maio de 2005 se encontraria extinto por força de decadência, tendo em vista o prazo de 5 (cinco) anos previsto no art. 150, § 4º, do CTN e a data de notificação do Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150), que ocorreu em 30 de junho de 2010;
+o Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150) conteria erro no cálculo da multa sancionatória, pois o percentual adotado foi diverso do previsto no art. 44, I, da Lei nº 9.430/1996;
+o Comunicado impugnado teria deixado de considerar que os débitos descritos na Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) já haviam considerado a incidência de multa de mora de 2% (dois por cento), nos termos do art. 8º, § 1º, do Decreto nº 3.624/2000, caracterizando, assim, situação indevida de cobrança cumulativa de multas de mora e sancionatória sobre a mesma base de cálculo; e
+o auto de infração seria nulo por ausência de motivação, pois a notificação não teria indicado a descrição do fato, a disposição legal infringida e a penalidade aplicável.
+Em razão de decisão judicial, expressa nos autos do Mandado de Segurança nº 2006.34.00.002861-6, que reconheceu a não incidência da contribuição ao Fust sobre valores de interconexão repassados entre prestadoras — desde que a prestadora que faturou o usuário tenha realizado o devido recolhimento — o Memorando nº 305/2013-AFFO6/AFFO (SEI nº 0669003, fls. 293-294), de 16 de outubro de 2013, indagou ao Gerente de Fiscalização (FIGF) se tais receitas haviam sido incluídas na base de cálculo originalmente apurada. Caso positivo, solicitou a elaboração de novos relatórios de fiscalização, contendo a separação dessas receitas e a correspondente apuração do valor devido ao Fundo.
+Em atendimento à solicitação da Área de Arrecadação da Anatel, foram elaborados os Relatórios de Fiscalização nº 0536/2014/GR02 (SEI nº 0669003, fls. 297-306) e nº 0538/2014/GR02 (SEI nº 0669003, fls. 307-316), os quais apuraram os valores devidos, expurgando-se da base de cálculo as receitas de interconexão, nos montantes de [Item 22 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2005, e de [Item 23 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2006.
+Em 15 de maio de 2015, o Informe nº 140-AFFO6/AFFO (SEI nº 0669006, fls. 237-250) analisou os argumentos apresentados pela Prestadora em suas impugnações contra a Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) e o Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150) e destacou que:
+a nulidade do auto de infração não se caracteriza, pois, considerando os princípios da instrumentalidade das formas e da ausência de prejuízo, não houve prejuízo imposto à Empresa, a qual teve acesso a todos os documentos do processo, restando garantido o exercício da ampla defesa. Além disso, os Relatórios de Fiscalização, embora apartados da notificação, contêm todas as informações pertinentes ao cálculo dos valores devidos, restando plenamente atendido o requisito do art. 11, inciso II, do Decreto nº 70.235/1972;
+por meio dos Relatórios de Fiscalização nº 0536/2014/GR02 (SEI nº 0669003, fls. 297-306) e nº 0538/2014/GR02 (SEI nº 0669003, fls. 307-316), foram obtidos os valores dos serviços de telecomunicações sem a inclusão de receitas de interconexão, os valores das receitas de interconexão, os valores declarados, os valores lançados na Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142) e os valores devidos;
+houve comprovação, nos autos, que o Contribuinte não cumpriu o dever de declarar corretamente os valores referentes à contribuição ao Fust, o que impõe a aplicação de multa pelo lançamento de ofício (multa de ofício) prevista no art. 44, I, da Lei nº 9.430/1996, no valor correspondente a 75% (setenta e cinco por cento) do crédito relativo ao tributo não declarado;
+em relação ao argumento sobre a decadência, a Procuradoria Federal Especializada da Anatel - PFE-Anatel, em seu Parecer nº 200/2013/LGP/PFE-ANATEL/PGF/AGU, adotou o entendimento constante do Parecer CGCOB/DIGEVAT nº 48/2012, de que o lançamento da multa de ofício está sujeito ao prazo decadencial previsto no art. 173, I, do CTN, independentemente do prazo decadencial do tributo a que se refere;
+a multa pelo lançamento de ofício não pode ser cumulada com a multa de mora, pois aquela já foi legalmente fixada em um valor apto a absorver esta última. Tal entendimento encontra-se alinhado ao Parecer nº 1.060/2010/BSA/PGF/PFE-Anatel (SEI nº 4341421, fls. 41-68), aprovado pelo Parecer CGCOB/DIGEVAT nº 26/2010 (SEI nº 4341421, fls. 79/86), ambos constantes dos autos do Processo SEI nº 53500.019427/2010-97. Assim, tendo em vista o princípio de autotutela que impõe à Administração o poder-dever de, independentemente de provocação, anular seus atos quando eivados de vício insanável, a incidência da multa de mora, nos exercícios de 2005 e 2006, deve ser afastada;
+em virtude da medida liminar concedida em 10 de março de 2006, nos autos do Mandado de Segurança nº 2006.34.00.002861-6, houve a suspensão da exigibilidade das parcelas de provimento de interconexão e uso de recursos integrantes de suas redes. Dessa forma, a multa de ofício não pode ser cobrada sobre as receitas de interconexão, nos termos do art. 63 da Lei nº 9.430/1996. No entanto, a sentença suspensiva da exigibilidade do crédito tributário não impede a cobrança de juros de mora relativos aos valores recebidos a título de provimento de interconexão e uso de recursos integrantes de redes, pois possuem caráter remuneratório e não punitivo. Além disso, a cobrança poderá ser feita caso haja reforma da sentença da decisão liminar. Assim, o novo valor de multa de ofício foi obtido, retirando-se da base de cálculo os valores relativos ao provimento de interconexão, totalizando [Item 24 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2005, e [Item 25 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2006; e
+de acordo com os arts. 129 e 132 do CTN, tem-se que as regras relativas à responsabilidade dos sucessores são igualmente aplicáveis até mesmo aos créditos tributários constituídos posteriormente ao ato sucessório, mas relativos a obrigações tributárias surgidas até a data desse ato, o que inclui também os valores das multas punitivas.
+Por fim, concluiu-se:
+ser devido o lançamento dos créditos tributários referentes ao Fust nos valores de [Item 26 do Apartado Sigiloso SEI nº 15465041] e de [Item 27 do Apartado Sigiloso SEI nº 15465041], para os exercícios de 2005 e 2006, respectivamente, os quais devem ser acrescidos de juros de mora de 1% (um por cento) ao mês até dezembro de 2008, substituídos, a partir de então, pela taxa Selic apurada no período;
+são devidas as multas de ofício, nos montantes de [Item 28 do Apartado Sigiloso SEI nº 15465041] e de [Item 29 do Apartado Sigiloso SEI nº 15465041], para os exercícios de 2005 e 2006, respectivamente, os quais devem ser atualizados, desde o vencimento, pela taxa Selic; e
+não é devida multa de mora nos meses em que houve aplicação de multa de ofício. Em virtude da exoneração tributária, o recurso de ofício deve ser encaminhado ao Conselho Diretor, nos termos do art. 34 do Decreto nº 70.235/1972.
+Em 26 de junho de 2015, a Superintendência de Administração e Finanças (SAF), por meio do Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), acatou a proposta apresentada pelo Informe nº 140-AFFO6/AFFO (SEI nº 0669006, fls. 237-250). Veja-se:
+Despacho nº 5054/2015/AFFO/SAF
+(...) 
+a) RECONHECER A PROCEDÊNCIA INTEGRAL do lançamento dos créditos tributários referentes a contribuição ao Fundo de Universalização dos Serviços de Telecomunicações — Fust, para os anos de 2005 e 2006, respectivamente, nos montantes de [Item 30 do Apartado Sigiloso SEI nº 15465041] e [Item 31 do Apartado Sigiloso SEI nº 15465041];
+b) DETERMINAR, sobre os valores acima referidos, o recolhimento de juros de mora, nos termos do art. 8º, §§1° e 2º, do Regulamento do Fust (aprovado pelo Decreto nº 3.624/00), art. 7º do Regulamento de Arrecadação do Fust (aprovado pela Resolução nº 247/00) e art. 161, §1°, do Código Tributário Nacional, até dezembro de 2008, e, a partir de então, da Taxa Selic apurada no período;
+c) RECONHECER A PROCEDÊNCIA PARCIAL dos créditos tributários referentes à incidência de multa de ofício, em virtude da declaração inexata da contribuição, para o ano de 2005, no montante de [Item 32 do Apartado Sigiloso SEI nº 15465041] e, para os meses de janeiro a outubro de 2006, no montante de [Item 33 do Apartado Sigiloso SEI nº 15465041], em conformidade com o art. 44, inc. I, da Lei nº 9.430/96, o qual deve ser atualizado, desde o vencimento, pela Taxa Selic;
+d) DETERMINAR a extinção dos valores de multa de mora nos meses nos quais tenha incidido a multa de ofício;
+e) RECORRER DE OFÍCIO ao Conselho Diretor, nos termos do artigo 34, inciso I, do Decreto nº 70.235/1972;
+f) NOTIFICAR a empresa, encaminhando cópia desta decisão.
+Em 8 de outubro de 2015, a Impugnante foi notificada desse despacho, conforme AR (SEI nº 0669006, fl. 321).
+II - DA FASE RECURSAL
+Em 19 de outubro de 2015, a Prestadora protocolou Recurso Administrativo (SEI nº 0669006 , fls. 257-319) tempestivo, alegando: (i) nulidade das notificações de lançamento por falta de motivação; (ii) decadência da multa de ofício dos meses de janeiro a maio de 2005; (iii) incorreta mensuração da base de cálculo da contribuição (inclusão indevida na base de cálculo das seguintes contas: 41111325; 41111619; 41111629; 41121619; 41121629; 41991311; 41991312; 41991314; 41991315; 49111112; 49111114; 49111116; 49111119; e 49121119); (iv) necessidade de afastamento da multa de ofício das receitas com interconexão (interconexão e EILD); (v) incidência de multa de mora, nas parcelas sem multa de ofício, somente após 30 (trinta) dias da decisão judicial que considerar devida a contribuição; e (vi) redução da multa de ofício para o percentual de 2% (dois por cento), nos termos do §1º do art. 8º do Decreto nº 3.624/2000.
+Em razão das alegações da Recorrente, os autos foram enviados à Fiscalização da Anatel, que, em resposta, elaborou os novos Relatórios de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) e nº 0103/2017/GR02 (SEI nº 1330121).
+Em 12 de novembro de 2024, a SAF emitiu o Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385), que analisou todos os argumentos recursais apresentados pela Recorrente. Adicionalmente, o Informe esclareceu as condições para o tratamento do Recurso de Ofício em razão do Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), que exonerou créditos tributários referentes à contribuição ao Fust, nos exercícios de 2005 e 2006.
+Na mesma data, foi emitido o Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), relativo à impugnação apresentada contra o Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), revendo parcialmente os lançamentos realizados referentes às receitas de interconexão, às receitas sem interconexão e às multas de ofício, interrompendo a incidência de juros de mora sobre receitas de interconexão. Adicionalmente, o Despacho encaminhou os autos para a PFE-Anatel e o recurso de ofício para este Conselho Diretor.
+O processo foi encaminhado para a manifestação da Procuradoria sobre o recurso de ofício e o Recurso Administrativo, interposto pela Recorrente, por meio do Ofício nº 816/2024/AFFO6/AFFO/SAF-ANATEL (SEI nº 12861785) em 12 de novembro de 2024.
+Em 26 de novembro de 2024, a PFE-Anatel emitiu o Parecer nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539), em que analisou o recurso de ofício referente à exoneração do pagamento de parte de multa de ofício por omissões na declaração do Fust, concluindo que, diante da aplicação imediata das normas processuais e do valor exonerado ser inferior ao limite de alçada, o recurso de ofício interposto no processo fiscal da TELERGIPE CELULAR S.A. não deve ser conhecido pelo Conselho Diretor da Anatel. O Parecer foi aprovado pelos Despachos nº 05924/2024/PFE-ANATEL/PGF/AGU e nº 05926/2024/PFE-ANATEL/PGF/AGU, ambos de 2 de dezembro de 2024, e pelo Despacho nº 05936/2024/PFE-ANATEL/PGF/AGU, de 6 de dezembro do mesmo ano.
+Parecer nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539)
+7. Os autos foram encaminhados a esta Especializada para exame apenas do Recurso de Ofício interposto no caso vertente, o qual, todavia, não preenche o requisito de admissibilidade definido no art. 1º do Anexo da Resolução Interna Anatel nº 338, de 2024, porquanto o devedor foi exonerado de pagamento em montante inferior à alçada, conforme apontado pelo Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385).
+8. Note-se que o limite acima referido não estava em vigor à época da emissão do Despacho nº 5054/2015/AFFO/SAF. Assim, a autoridade de primeira instância procedeu corretamente ao encaminhar o Recurso de Ofício. Contudo, as novas normas processuais se aplicam imediatamente aos processos em curso (ex vi do art. 1.046 do CPC/2015), de sorte que o valor do pagamento exonerado no caso em análise obsta a admissibilidade do apelo de ofício, que não deve ser conhecido pelo Conselho.
+9. O mesmo entendimento foi firmado anteriormente por esta Procuradoria nos termos do Parecer nº 00595/2017/PFE-ANATEL/PGF/AGU. Concluiu-se naquela oportunidade ser condição para constituição definitiva do crédito o exaurimento do trâmite do recurso de ofício interposto regularmente antes de fixado o valor mínimo pela Portaria nº 1.125, de 24 de outubro de 2014. O exame de admissibilidade pela autoridade ad quem, todavia, deverá aplicar a norma processual em vigor ao tempo do julgamento, inclusive quanto ao valor de alçada. In verbis:
+(a) no caso dos autos, não caberia à Gerente de Finanças, Orçamento e Arrecadação encaminhar correspondência à Prestadora, comunicando a desnecessidade de interposição de recurso de ofício;
+(b) a interposição do recurso de ofício se dá no momento em que proferida a decisão de primeira instância que reconhece a exoneração dos créditos tributários, independentemente do efetivo encaminhamento dos autos ao Conselho Diretor;
+(c) o art. 4º da Portaria nº 1.125/2014 expressa norma de cunho processual, sendo possível a sua aplicação aos processos em curso no momento de sua publicação;
+(d) na espécie, tendo em vista que houve interposição de recurso de ofício mediante decisão da Superintendência de Administração e Finanças anterior à vigência da Portaria nº 1.125, de 24/10/2014, os autos devem ser encaminhados ao Conselho Diretor, que poderá não conhecer do recurso nas situações em que a exoneração de créditos tributários for inferior a R$200.000,00 (duzentos mil reais);
+(e) a apreciação do recurso de ofício pelo Conselho Diretor é uma condição de eficácia da decisão de primeira instância, sem a qual esta não transita em julgado, bem como não é constituído definitivamente o crédito e não se inicia o prazo prescricional para cobrança;
+(f) na hipótese de o Conselho Diretor desta Anatel entender pela reforma da decisão da Superintendência de Administração e Finanças, majorando o valor do lançamento, será necessário o envio de uma prévia notificação à Prestadora, a fim de que esta apresente suas alegações.
+10. O limite mínimo está fixado em R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais, nos termos do art. 1º do Anexo da Resolução Interna Anatel nº 338, de 15 de julho de 2024. Não tendo havido exoneração de pagamento de tributo em montante equivalente ou superior, o recurso de ofício não deve ser conhecido.
+11. ISSO POSTO, opino pelo não conhecimento do Recurso de Ofício pelo Conselho Diretor.
+Por meio da Matéria para Apreciação do Conselho Diretor nº 836/2025 (SEI nº 14707851), a Superintendente de Controle de Obrigações encaminhou os autos para análise e decisão pelo Conselho Diretor, em 10 de novembro de 2025.
+Em 14 de novembro de 2025, o Superintendente Executivo, por meio do Despacho Ordinatório SEI nº 14754378, encaminhou a Matéria para Apreciação do Conselho Diretor nº 836/2025 (SEI nº 14707851) à Secretaria do Conselho Diretor (SCD).
+Em 17 de novembro de 2025, o processo foi distribuído para relatoria da então Conselheira Substituta Cristiana Camarate, de acordo com a Certidão de Distribuição SEI nº 14764524.
+II.1 - Da Solicitação de Diligência Complementar
+No exame dos documentos contidos no processo, foi verificada a necessidade de esclarecimentos referentes a dois pontos: (i) os fundamentos para a emissão de recurso de ofício e o montante da exoneração promovida; e (ii) a necessidade de manifestação da PFE-Anatel sobre o Recurso Administrativo.
+Em relação ao montante da exoneração e ao recurso de ofício, constatou-se a necessidade de identificação do valor exato da exoneração tributária promovida pela SAF. Os documentos e informes do processo indicam que o valor exonerado seria superior a R$ 200.000,00 (duzentos mil reais) e inferior a R$ 500.000,00 (quinhentos mil reais), mas não há clareza sobre o montante exato. Essa informação é relevante, pois a admissibilidade do recurso de ofício ao Conselho Diretor depende do valor exonerado, conforme a Resolução Interna Anatel nº 338/2024. Assim, o esclarecimento é necessário para verificar se o recurso de ofício atende ao requisito de valor de alçada e para fundamentar adequadamente o encaminhamento do processo.
+O segundo ponto está relacionado à manifestação da PFE-Anatel. De acordo com a Portaria Anatel nº 642, de 26 de julho de 2013, o Órgão Consultivo, nos processos administrativos fiscais, deve ser ouvido nas condições especificadas nas alíneas "a" e "b" do inciso IV do art. 5º, que estão relacionadas ao Recurso Administrativo interposto e ao recurso de ofício, respectivamente.
+Conforme descrito no Ofício nº 816/2024/AFFO6/AFFO/SAF-ANATEL (SEI nº 12861785), a SAF encaminhou o PAF à PFE-Anatel "em razão do Recurso Administrativo e do Recurso de Ofício, nos termos do art. 5º, IV, "a" e "b", da Portaria Anatel nº 642/2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017".
+No entanto, em seu Parecer nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539), a PFE-Anatel analisou apenas o tema do Recurso de Ofício, não tratando do que foi suscitado no recurso voluntário, afirmando, inclusive, que o Recurso Administrativo não teria sido submetido ao exame do órgão jurídico.
+Constata-se, todavia, que, além de o Recurso Administrativo ter sido submetido à PFE por meio do Ofício nº 816/2024/AFFO6/AFFO/SAF-ANATEL (SEI nº 12861785), o valor dos lançamentos, no presente caso, superaria o valor de alçada quando combinados os créditos tributários dos exercícios de 2005 e 2006.
+Assim, por meio do Ofício nº 35/2025/CL-ANATEL (SEI nº 14866358), solicitou-se à Superintendência de Controle de Obrigações (SCO) que, no prazo de 45 (quarenta e cinco) dias:
+identificasse o montante exato da exoneração promovida e sua fundamentação, especialmente em relação ao Recurso de Ofício; e
+com base nessas informações, remetesse os autos à PFE-Anatel para manifestação jurídica sobre o caso.
+Em 16 de janeiro de 2026, a SCO emitiu o Informe nº 1/2026/SCO (SEI nº 15035010), com as informações a seguir.
+Em relação ao montante da exoneração, indicou que o recurso de ofício referenciado no Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), de 26 de junho de 2015, teve como fundamento a exoneração no valor de multa de ofício, no montante de [Item 34 do Apartado Sigiloso SEI nº 15465041], ocorrida na decisão de primeira instância em relação à Notificação de Lançamento. Posteriormente, o Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), de 12 de novembro de 2024, reviu os valores apurados e promoveu a exoneração do pagamento do tributo no montante de [Item 35 do Apartado Sigiloso SEI nº 15465041]. Para ambos os casos, a Área Técnica indicou que os valores são inferiores ao limite de R$ 500.000 (quinhentos mil reais) estabelecido pela Resolução Interna Anatel nº 338/2024.
+Acrescentou que, inicialmente, prevalecia o entendimento de que qualquer exoneração deveria ser submetida a Recurso de Ofício, conforme previsto no art. 34, inciso I, do Decreto nº 70.235/1972. Com a publicação da Portaria nº 1.125/2014, essa exigência passou a limitar-se às situações em que o valor da exoneração fosse igual ou superior a R$ 200.000,00 (duzentos mil reais). Posteriormente, a Portaria nº 614/2018 promoveu nova alteração nesse patamar, elevando-o para R$ 500.000,00 (quinhentos mil reais), excluindo-se desse cálculo juros, multas — tanto de ofício quanto de mora — e demais acréscimos legais.
+A SCO esclareceu também que, conforme a Resolução Interna Anatel nº 338/2024, o Recurso de Ofício só é cabível quando a exoneração for superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros e multas. Como o valor apurado ficou abaixo desse limite, a SCO propõe ao Conselho Diretor o não cabimento do Recurso de Ofício neste caso.
+Atendendo ao Ofício nº 35/2025/CL-ANATEL (SEI nº 14866358), a SCO confirmou a necessidade de encaminhamento dos autos à PFE-Anatel para manifestação jurídica, pois houve recurso administrativo e o valor nominal dos lançamentos supera R$ 1.000.000,00 (um milhão de reais), conforme determina a Portaria Anatel nº 642/2013.
+A PFE-Anatel se manifestou por meio do Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243), de 23 de fevereiro de 2026, aprovado pelo Despacho nº 279/2026/PFE-ANATEL/PGF/AGU e pelo Despacho nº 283/2026/PFE-ANATEL/PGF/AGU, ambos de 4 de março de 2026, e, finalmente, pelo Despacho nº 301/2026/PFE-ANATEL/PGF/AGU, de 6 de março de 2026. Em seu Parecer, o Órgão Jurídico abordou as questões referentes ao Recurso de Ofício e ao Recurso Administrativo. O mencionado Parecer opina pelo não conhecimento do recurso de ofício, por ser o valor exonerado inferior ao limite legal e tratar-se de multa de ofício. Quanto ao recurso voluntário, manifesta-se pela procedência parcial, apenas para afastar a multa de ofício sobre a parcela de receitas com interconexão, mantendo-se os demais termos da decisão da autoridade a quo em juízo de retratação.
+Em 18 de março de 2026, a SCO emitiu o Informe nº 5/2026/SCO (SEI nº 15318860), que apresenta análise complementar sobre créditos tributários do Fust referentes aos exercícios de 2005 e 2006, envolvendo a Telefônica Brasil S.A. (sucessora da Telergipe Celular S.A.). O documento revisa valores devidos após manifestação da Procuradoria, ajustando os montantes relativos a receitas de interconexão e multas, visto que não é possível majorar os valores cobrados originalmente, nos termos dos arts. 149, parágrafo único, c/c 150, § 4º, do Código Tributário Nacional.
+Destaco, por fim, que o presente processo foi redistribuído à minha relatoria em 4 de março de 2026, conforme Certidão de Distribuição SEI nº 15269712.
+É o relatório. Passo à análise do mérito.
+fundamentação
+A fundamentação desta Análise está estruturada em 5 (cinco) partes. A primeira cuidará do exame dos aspectos formais, abrangendo a regularidade processual, a confirmação da competência do Conselho Diretor para deliberar sobre a matéria e a verificação da necessidade de manifestação da PFE‑Anatel. A segunda parte tratará da apreciação do Recurso de Ofício. A terceira analisará o Recurso Administrativo interposto, sob os prismas da admissibilidade e do mérito. Na quarta parte, será apresentada a proposta de encaminhamento cabível. Por fim, na quinta parte, proceder-se-á à verificação da aderência do objeto destes autos aos Objetivos de Desenvolvimento Sustentável (ODS) das Nações Unidas.
+I - DOS ASPECTOS FORMAIS
+I.1 - Da Regularidade Processual e da Competência do Conselho Diretor
+A instauração e a instrução deste processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Adicionalmente, o art. 115 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013, dispõe que o juízo de conhecimento recursal compete à própria autoridade que proferiu a decisão:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116.
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+§ 2º Caberá recurso contra decisão que não conhecer do recurso administrativo, na hipótese prevista na alínea “a” do parágrafo anterior, que deverá ser encaminhado à autoridade hierarquicamente superior à que proferiu a decisão.
+§ 3º A reforma da decisão sobre admissibilidade do recurso administrativo ensejará, na mesma decisão, a deliberação sobre o mérito do recurso originalmente interposto.
+§ 4º Salvo disposição em contrário, a autoridade imediatamente superior àquela que proferiu a decisão será competente para analisar o pedido de concessão de efeito suspensivo, quando houver.
+§ 5º Cabe ao Presidente do Conselho Diretor decidir sobre pedido de efeito suspensivo, nos recursos administrativos cuja decisão compete ao Conselho Diretor, observados os termos do art. 123.
+§ 6º Será de 10 (dez) dias o prazo para interposição de recurso administrativo, contado a partir da intimação do interessado.
+§ 7º O exercício do juízo de retratação a que se refere o § 1º ensejará a expedição de um novo Despacho Decisório, o qual opera efeito substitutivo em relação ao Despacho Decisório recorrido, devendo o interessado ser intimado da nova decisão.
+§ 8º Em caso de retratação parcial, a decisão a que se refere o § 7º deve explicitar a parte retratada, bem como a ratificação dos demais termos da decisão recorrida.
+§ 9º Os recursos referentes a licitações e contratos administrativos observam a legislação específica da matéria.
+(grifou-se)
+Nos presentes autos, o Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), relativo à impugnação apresentada contra o Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252), conheceu do Recurso Administrativo interposto e reviu parcialmente os lançamentos realizados referentes às receitas de interconexão, às receitas sem interconexão e às multas de ofício, interrompendo a incidência de juros de mora sobre receitas de interconexão. 
+Considerando que não houve retratação total da decisão recorrida, a competência para a avaliação do mérito recursal recai sobre o Conselho Diretor.
+I.2 - Da Manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel)
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642/2013
+Art.5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+(...)
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+Por meio do Ofício nº 816/2024/AFFO6/AFFO/SAF-ANATEL (SEI nº 12861785), a SAF encaminhou o presente processo à PFE-Anatel em razão do Recurso Administrativo e do Recurso de Ofício, nos termos do art. 5º, IV, "a" e "b", da Portaria Anatel nº 642/2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017.
+O Recurso de Ofício foi avaliado pelo Órgão Jurídico em seu Parecer nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539), o qual não tratou do Recurso Administrativo por entender que ele não teria sido submetido ao exame da Procuradoria:
+Parecer nº 611/2024/PFE-ANATEL/PGF/AGU (SEI nº 12993539)
+(...)
+4. A prestadora interpôs recurso administrativo, o qual, todavia, não foi submetido ao exame desta Procuradoria, em razão do valor de alçada ser menor que o estabelecido pelo art. 5º, IV, 'a', da Portaria Anatel nº 642, de 2013.
+5. Em razão da interposição do referido recurso de ofício os autos foram enviados a esta Procuradoria para análise, nos termos do art. 5º, IV, 'b', da Portaria Anatel nº 642, de 2013.
+6. É o relatório.
+7. Os autos foram encaminhados a esta Especializada para exame apenas do Recurso de Ofício interposto no caso vertente, o qual, todavia, não preenche o requisito de admissibilidade definido no art. 1º do Anexo da Resolução Interna Anatel nº 338, de 2024, porquanto o devedor foi exonerado de pagamento em montante inferior à alçada, conforme apontado pelo Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385).
+(destaques acrescidos)
+Em 5 de dezembro de 2025, a então Conselheira Cristiana Camarate emitiu o Ofício nº 35/2025/CL-ANATEL (SEI nº 14866358), solicitando esclarecimentos à SCO e o envio dos autos à PFE-Anatel para manifestação jurídica sobre o Recurso Administrativo.
+Em 23 de fevereiro de 2026, a PFE-Anatel se manifestou por meio do Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243), aprovado pelo Despacho nº 279/2026/PFE-ANATEL/PGF/AGU e pelo Despacho nº 283/2026/PFE-ANATEL/PGF/AGU, ambos de 4 de março de 2026, e pelo Despacho nº 301/2026/PFE-ANATEL/PGF/AGU, de 6 de março de 2026. Em seu Parecer, o Órgão Jurídico abordou as questões referentes ao Recurso de Ofício e ao Recurso Administrativo.
+Assim sendo, resta atendido o requisito legal que trata da obrigatoriedade de manifestação da Procuradoria Federal Especializada (PFE-Anatel).
+II - DO RECURSO DE OFÍCIO
+O art. 34, inciso I, do Decreto nº 70.235/1972, que dispõe sobre o processo administrativo fiscal, estabelece que o recurso de ofício deverá ser apresentado quando a decisão de primeira instância exonerar valores de tributos e encargos de multa, sendo interposto mediante declaração na própria decisão:
+Decreto nº 70.235/1972
+Art. 34. A autoridade de primeira instância recorrerá de ofício sempre que a decisão:
+I - exonerar o sujeito passivo do pagamento de tributo e encargos de multa de valor total (lançamento principal e decorrentes) a ser fixado em ato do Ministro de Estado da Fazenda. (Redação dada pela Lei nº 9.532, de 1997) (Produção de efeito)
+II - deixar de aplicar pena de perda de mercadorias ou outros bens cominada à infração denunciada na formalização da exigência.
+§ 1º O recurso será interposto mediante declaração na própria decisão.
+§ 2° Não sendo interposto o recurso, o servidor que verificar o fato representará à autoridade julgadora, por intermédio de seu chefe imediato, no sentido de que seja observada aquela formalidade.
+(grifos acrescidos)
+Em 24 de outubro de 2014, foi emitida a Portaria nº 1.125/2014, que estabeleceu que o recurso de ofício seria promovido apenas quando o valor da exoneração de créditos tributários fosse igual ou superior a R$ 200.000,00 (duzentos mil reais):
+Portaria nº 1.125/2014
+Art. 4º Nos casos de decisão que exonera o sujeito passivo do pagamento de créditos tributários de valor nominal igual ou superior a R$ 200.000,00 (duzentos mil reais), a Superintendência competente recorrerá de ofício ao Conselho Diretor. (Revogado pela Portaria nº 614, de 13 de abril de 2018)
+Em 13 de abril de 2018, a Portaria nº 614/2018 promoveu nova alteração naquele patamar, elevando-o para R$ 500.000,00 (quinhentos mil reais), excluindo-se desse cálculo juros, multas de ofício e de mora e demais acréscimos legais:
+Portaria nº 614/2018
+Art. 1º A autoridade julgadora de primeira instância do processo administrativo fiscal – PAF recorrerá de ofício sempre que a decisão exonerar o sujeito passivo do pagamento de tributo em valor total que ultrapasse R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais. (Retificação publicada no DOU, de 30 de novembro de 2021)
+Parágrafo único. O valor total a que se refere o caput será verificado por processo. (Portaria revogada pela Resolução Interna Anatel nº 338, de 15 de julho de 2024)
+Por fim, em 15 de julho de 2024, a Resolução Interna Anatel nº 338/2024 disciplinou as condições para a interposição de recurso de ofício, fixando que tal recurso somente é cabível quando a exoneração ultrapassar a R$ 500.000,00 (quinhentos mil reais), desconsiderados juros, multas e outros acréscimos legais:
+Resolução Interna Anatel nº 338/2024
+Art. 1º O Recurso de Ofício somente será cabível no Processo Administrativo Fiscal - PAF que, cumulativamente, esteja na fase litigiosa e cuja exoneração tenha sido superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais.
+§ 1º O valor total a que se refere o caput será verificado por processo.
+(...)
+Nos presentes autos, a decisão de primeira instância, emitida pelo Despacho nº 5054/2015/AFFO/SAF (SEI nº 0669006, fls. 251-252) em 26 de junho de 2015, concordou com o entendimento de que a exoneração no valor de multa de ofício, no montante de [Item 36 do Apartado Sigiloso SEI nº 15465041] configurava a condição descrita no art. 34, inciso I, do Decreto nº 70.235/1972 e interpôs Recurso de Ofício:
+Despacho nº 5054/2015/AFFO/SAF
+(...)
+c) RECONHECER A PROCEDÊNCIA PARCIAL dos créditos tributários referentes à incidência de multa de ofício, em virtude da declaração inexata da contribuição, para o ano de 2005, no montante de [Item 37 do Apartado Sigiloso SEI nº 15465041] e, para os meses de janeiro a outubro de 2006, no montante de [Item 38 do Apartado Sigiloso SEI nº 15465041], em conformidade com o art. 44, inc. I, da Lei nº 9.430/96, o qual deve ser atualizado, desde o vencimento, pela Taxa Selic;
+(...)
+e) RECORRER DE OFÍCIO ao Conselho Diretor, nos termos do artigo 34, inciso I, do Decreto nº 70.235/1972;
+(...)
+Após análise dos argumentos recursais, em 12 de novembro de 2024, a SAF emitiu o Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), no qual exerceu juízo de retratação, revendo os valores apurados e promovendo a exoneração do pagamento do tributo no montante de [Item 39 do Apartado Sigiloso SEI nº 15465041]. O referido Despacho Decisório também encaminhou Recurso de Ofício ao Conselho Diretor:
+Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570)
+(...)
+DECIDE:
+(...)
+2. Retratar-se em relação ao Despacho nº 5054/2015/AFFO/SAF (fl. 251/252 SEI nº 0669006), nos seguintes termos:
+2.1. Reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao FUST, nos montantes de [Item 40 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, [Item 41 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período;
+2.2. Reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao FUST, nos montantes de [Item 42 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, R$ 0,00 (zero real) , referente às receitas sem interconexão, para o exercício de 2006, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período; e
+2.3. Reconhecer a procedência parcial dos lançamentos dos créditos referentes à multa de ofício, em virtude da não declaração da contribuição, no montante de [Item 43 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período.
+(...)
+(...)
+4. Encaminhar o Recurso de Ofício ao Conselho Diretor, nos termos do artigo 34, inciso I, do Decreto nº 70.235/1972; e
+5. Encaminhar este processo ao Conselho Diretor, após manifestação da PFE-Anatel, para análise do Recurso de Ofício e para julgamento de mérito do Recurso Administrativo.
+A PFE-Anatel, por meio do Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243), indicou que o recurso de ofício é cabível apenas quando a exoneração de créditos tributários ultrapassar R$ 500.000,00 (quinhentos mil reais), desconsiderados juros, multas e outros acréscimos legais, nos termos da Resolução Interna Anatel nº 338/2024. Para o cálculo da alçada desse valor, não são computados valores exonerados relativos à multa de ofício. Por fim, opinou pelo não conhecimento do recurso de ofício, uma vez que o valor exonerado relativo ao pagamento do tributo foi inferior ao limite para sua interposição:
+Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243)
+I - Recurso de Ofício
+10. Após remessa ao Conselho Diretor, o feito retornou à SCO para reavaliar os montantes exonerados a fim de apreciar o cabimento de recurso de ofício. A diligência está consubstanciada no Informe nº 001/2026/SCO (SEI nº 15035010), que apurou em relação à decisão recorrida “que a exoneração ocorreu especificamente em relação ao valor da multa de ofício e totalizou [Item 44 do Apartado Sigiloso SEI nº 15465041]”.
+11. A alçada, nos termos da norma de regência vigente, determina a interposição de recurso de ofício “no Processo Administrativo Fiscal - PAF que, cumulativamente, esteja na fase litigiosa e cuja exoneração tenha sido superior a R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais”. O montante exonerado, além de ser inferior ao limite estabelecido, diz respeito exclusivamente a multas de ofício e, portanto, não é computado para efeitos de alçada do reexame necessário.
+12. Quanto ao valor exonerado em juízo de retratação, além de não ter sido objeto de recurso de ofício, é muito inferior à alçada.
+13. Assim, cumpre manter as conclusões do Parecer nº 00611/2024/PFE-ANATEL/PGF/AGU.
+É escorreito o entendimento exposto pela PFE-Anatel. Além disso, merece destaque o teor da Súmula nº 103 do Conselho Administrativo de Recursos Fiscais (CARF), a qual estabelece que, para fins de admissibilidade do recurso de ofício, deve ser observado o limite de alçada vigente no momento de sua apreciação pela segunda instância.
+Súmula CARF nº 103
+Para fins de conhecimento de recurso de ofício, aplica-se o limite de alçada vigente na data de sua apreciação em segunda instância.
+Acórdãos Precedentes:
+9202-002.930, de 05/11/2013; 9202-003.129, de 27/03/2014; 9202-003.027, de 11/02/2014; 9303-002.165, de 18/10/2012; 1101-000.627, de 24/11/2011; 1301-00.899, de 08/05/2012; 1802-01.087, de 17/01/2012; 2202-002.528, de 19/11/2013; 2401-003.347, de 22/01/2014; e 3101-001.174, de 17/07/2012
+Assim, considerando que: (i) exonerações em valores de multa de ofício não são computadas para efeitos de alçada do reexame necessário, (ii) para fins de conhecimento do recurso, considera-se o limite de alçada vigente no momento do juízo de admissibilidade; e (iii) a exoneração do pagamento do tributo, igual a [Item 45 do Apartado Sigiloso SEI nº 15465041], foi inferior ao limite definido na Resolução Interna Anatel nº 338/2024, proponho o não conhecimento do Recurso de Ofício.
+III - DO RECURSO ADMINISTRATIVO
+Conforme já relatado, o Recurso Administrativo (SEI nº 0669006 , fls. 257-319) apresenta os seguintes fundamentos: 
+nulidade da notificação de lançamento devido à falta de descrição do suposto ilícito cometido;
+decadência do direito de a Anatel efetuar o lançamento da multa de ofício;
+incorreção da mensuração da base de cálculo da contribuição, devido à:
+c.1) impossibilidade de incidência da contribuição ao Fust sobre as receitas oriundas de Serviços de Valor Adicionado (SVA), chamados de serviços eventuais e suplementares;
+c.2) necessidade de dedução da base de cálculo do Fust das receitas de roaming, visto serem receitas de terceiros;
+c.3) necessidade de exclusão dos descontos concedidos da base de cálculo do Fust; e
+c.4) necessidade de exclusão das receitas de Exploração Industrial de Linha Dedicada (EILD).
+impossibilidade de cobrança de multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996.
+Por fim, a Recorrente requer que:
+o Recurso Administrativo seja julgado procedente para anular as Notificações de Lançamento combatidas, tendo em vista o suposto cerceamento de defesa, em
+virtude da não observância ao art. 11, III, do Decreto nº 70.235/1972 e ao artigo 142 do CTN;
+seja reconhecida a decadência do direito ao lançamento da multa de ofício no que concerne ao período de janeiro a maio de 2005 e, consequentemente, seja determinada a extinção do crédito tributário nos termos do art. 156, V, do CTN;
+no mérito, seja julgada totalmente insubsistente a autuação para reconhecer o direito da Recorrente de excluir da base de cálculo da contribuição ao Fust os valores decorrentes de serviços que não façam parte do conceito de serviços de telecomunicação para fins do exposto na LGT e de realizar as exclusões relativas às receitas de roaming e aos descontos concedidos;
+sejam excluídas da base de cálculo da contribuição ao Fust as receitas de EILD não excluídas anteriormente pela Fiscalização, bem como, quanto a todas as receitas dessa natureza (além das relativas a interconexão), seja afastada a incidência de multa de ofício e de mora, nos termos do art. 63, caput e §29 da Lei nº 9.430/1996;
+subsidiariamente, ao menos seja reduzida a multa de ofício imputada à Recorrente para o patamar de 2% (dois por cento) estabelecido pelo Decreto nº 3.624/2000, o qual é norma especial e regulamentadora da Lei nº 9.998/2000.
+Passa-se, neste momento, ao exame da admissibilidade do Recurso Administrativo, assim como à apreciação dos fundamentos recursais apresentados pela Recorrente.
+III.1 - Da Admissibilidade do Recurso Administrativo
+Em seu art. 116, o RIA prevê as hipóteses nas quais um recurso administrativo não deve ser conhecido, a saber:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Ademais, o Decreto nº 70.235, de 6 de março de 1972, dispõe sobre o processo administrativo fiscal e estabelece o prazo de interposição de recurso. Até a entrada em vigência das alterações promovidas pela Lei Complementar nº 227, de 13 de janeiro de 2026, o referido decreto especificava que o recurso poderia ser apresentado dentro do prazo de 30 (trinta) dias a partir da notificação da decisão proferida, conforme a seguir:
+Decreto nº 70.235/1972
+Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão.
+(NT: Redação anterior à vigência da Lei Complementar nº 227/2026)
+Nos presentes autos, a Prestadora foi notificada da decisão recorrida em 8 de outubro de 2015, conforme AR (SEI nº 0669006, fl. 321), tendo o recurso sido interposto em 19 de outubro de 2015, conforme atesta o carimbo de protocolo da Anatel registrado na Peça Recursal (SEI nº 0669006 , fl. 257). Resta comprovado, portanto, que o recurso foi apresentado dentro do prazo legal de 30 (trinta) dias, vigente à época dos fatos. 
+Nos termos do que prevê o RIA, a Recorrente possui interesse na reforma da decisão recorrível e está regularmente representada.
+O atendimento ao disposto no art. 116, V, do RIA demanda uma análise mais detalhada. Conforme já relatado anteriormente, o Recurso Administrativo (SEI nº 0669006 , fls. 257-319) apresenta os seguintes fundamentos: 
+nulidade da notificação de lançamento devido à falta de descrição do suposto ilícito cometido;
+decadência do direito de a Anatel efetuar o lançamento da multa de ofício;
+incorreção da mensuração da base de cálculo da contribuição, devido à exclusão, na base de cálculo do Fust, das receitas oriundas de SVA, roaming, EILD e descontos concedidos; e
+impossibilidade de cobrança de multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996.
+Em 26 de julho de 2024, a Anatel emitiu a Súmula nº 27, de 26 de julho de 2024, que trata da legitimidade da aplicação de multa de ofício em processos administrativos fiscais:
+Súmula nº 27
+RESOLVE:
+Editar a presente Súmula:
+"Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust)".
+Esta Súmula entra em vigor na data de sua publicação.
+Cumpre destacar que, embora o último argumento apresentado na Peça Recursal conflite com o entendimento consolidado na Súmula nº 27 da Anatel, tal circunstância não impede o conhecimento do Recurso interposto. Isso porque o referido recurso foi protocolado em momento anterior à edição da mencionada Súmula, circunstância que impõe a observância do princípio da segurança jurídica e da regra tempus regit actum.
+Com efeito, a Súmula nº 27 somente foi editada em 15 de julho de 2024, ao passo que o Recurso em análise havia sido interposto anteriormente a essa data, em 19 de outubro de 2015. Não se pode, portanto, exigir do Recorrente a observância de interpretação vinculante ainda inexistente ao tempo da prática do ato processual, sob pena de violação à confiança legítima do administrado e de aplicação retroativa de entendimento administrativo mais restritivo.
+A jurisprudência administrativa é pacífica no sentido de que atos normativos, enunciados vinculantes ou súmulas administrativas somente produzem efeitos a partir de sua publicação, salvo disposição expressa em sentido diverso, o que não ocorre no presente caso.
+Assim, considera-se plenamente regular o conhecimento do recurso interposto, tal como reconhecido pelo Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), pois este foi apresentado sob a égide normativa vigente à época, não podendo ser prejudicado pela posterior consolidação de entendimento em sentido contrário. Consequentemente, a análise de seu mérito deve prosseguir, observando-se a legislação e a orientação administrativa existentes no momento de sua interposição.
+III.2 - Dos Argumentos Recursais
+III.2.1 - Da suposta nulidade da notificação de lançamento devido à falta de descrição do ilícito cometido
+A prestadora argumenta que as notificações de lançamento são nulas porque não apresentam fundamentação legal suficiente, conforme exige o art. 10, III e IV, do Decreto nº 70.235/1972 e o art. 82, II, do RIA, o que caracteriza a não observância ao art. 11, III, do Decreto nº 70.235/1972 e ao art. 142 do CTN, conforme destacado no excerto a seguir:
+Recurso Administrativo (SEI nº 0669006 , fls. 257-319)
+III.A - DA NULIDADE DA NOTIFICAÇÃO DE LANÇAMENTO: EVIDENTE FALTA DE DESCRIÇÃO DO SUPOSTO ILÍCITO COMETIDO
+7. A fiscalização da ANATEL, ao efetuar a cobrança relativa à contribuição ao FUST referente aos meses de janeiro de 2005 a outubro de 2006, supostamente não recolhidas, lavrou Notificações de Lançamento sem que nelas constasse a fundamentação legal suficiente para se chegar à conclusão das receitas sobre as quais a autoridade administrativa considerava que deveria incidir o tributo.
+(...)
+12. Nesse sentido, insta destacar que o Decreto nº 70.235/72 prevê expressamente o seguinte:
+”Art. 10. O auto de infração será lavrado por servidor competente, no local da verificação da falta, e conterá obrigatoriamente:
+l - a qualificação do autuado;
+ll - o local, a data e a hora da lavratura;
+III - a descrição do fato;
+IV - a disposição legal infringida e a penalidade aplicável;
+V - a determinação da exigência e a intimação para cumpri-la ou impugná-la no prazo de trinta dias;
+VI -a assinatura do autuante e a indicação de seu cargo ou função e o número de matrícula."
+(grifou-se)
+13. Da leitura da norma transcrita, constata-se que o Regulamento do Processo Administrativo Fiscal Federal impõe à autoridade fiscal que o auto de infração contenha descrição circunstanciada do fato que justifique a exigência do tributo e imposição da multa.
+14. Por sua vez, o artigo 82, II da Resolução nº 612/2013 (Regimento Interno da ANATEL) tem a seguinte dicção:
+”Art. 82. O Pado observará as seguintes regras e prazos: (...)
+Il - (...) devendo a intimação apontar os fatos em que se baseia, as normas definidoras da infração e as sanções aplicáveis;"
+(grifou-se)
+15. Por oportuno, impende notar que tais disposições se encontram em perfeita consonância com o que determina o artigo 142 do Código Tributário Nacional:
+”Art. 142. Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível."
+(grifou-se)
+16. Deflui-se que todos os dispositivos transcritos determinam que a notificação especifique, expressamente, a disposição legal infringida pelo contribuinte, ou seja, determine a matéria tributável.
+17. Em absoluta afronta aos princípios constitucionais da ampla defesa e do contraditório e à legislação tributária, é de fácil percepção que, no presente caso, não houve descrição circunstanciada do fato que impõe à Recorrente o pagamento de vultosa quantia a título de FUST e acréscimos legais.
+18. Ao contrário. A autoridade autuante limitou-se a afirmar que a cobrança seria ”em razão da inexatidão da declaração/recolhimento por ocasião do lançamento espontâneo”.
+(...)
+21. Assim, conforme a jurisprudência e legislação que tratam da matéria, conclui-se que as Notificações de Lançamento em discussão são flagrantemente nulas por falta de fundamentação e descrição dos supostos créditos tributários nelas consubstanciados.
+(...)
+VI - DO PEDIDO
+97. Por todo o exposto, a Recorrente requer:
+(a) seja julgado procedente o presente Recurso Administrativo para anular as Notificações de Lançamento ora combatidas, tendo em vista o flagrante cerceamento de defesa, em virtude da não observância ao artigo 11, inciso lII do Decreto nº 70.235/72 e ao artigo 142 do CTN;
+(...)
+A Área Técnica, em seu Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385), manifestou entendimento que, embora apartados das notificações, os Relatórios de Fiscalização e seus anexos, que contêm as informações pertinentes, fazem parte do referido ato administrativo e demonstram claramente o quanto é devido ao Fust nos exercícios fiscais em tela e que esse montante ainda não foi integralmente quitado pela empresa, contendo a capitulação legal e a descrição dos fatos:
+Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385)
+Da nulidade da notificação de lançamento
+5.2. O Recorrente alega que houve nulidade das notificações de lançamento por falta de motivação.
+5.3. É elemento essencial do auto de infração/relatório de fiscalização a descrição ou narração dos fatos que levaram ao surgimento da obrigação tributária e isso corresponderia a motivação do lançamento tributário. O fato jurídico tributário realizado pelo contribuinte é o motivo do Relatório de Fiscalização, a descrição e as circunstâncias que ocorreu o fato é a motivação do auto. Portanto, a motivação é elemento essencial do lançamento tributário, conforme dispõe o art. 142 do Código Tributário Nacional.
+5.4. Marina Vieira Figueiredo também entende do mesmo modo, que “o motivo é o fato que serve de suporte para a prática do ato. A motivação, em contrapartida, é a exposição desse motivo, o que é feito mediante a indicação: (i) da norma na qual está previsto, abstratamente, o motivo para a prática do ato, autorizando, pois, a sua produção; (ii) do evento concreto que preenche as características descritas na hipótese da regra abstrata, motivando a prática do ato concretamente; e (iii) das provas que demonstram a ocorrência desse evento” “Lançamento Tributário: revisão e seus efeitos”. (1ª ed. São Paulo: Noeses, 2014. p. 212).
+5.5. Nesse sentido, cumpre lembrar que as notificações de lançamento dos créditos tributários referem-se expressamente ao descumprimento da obrigação estabelecida no art. 6º, inciso IV, da Lei n.º 9.998/2000:
+(...)
+5.6. Este dispositivo determina a obrigação de recolhimento da contribuição sobre as receitas provenientes da prestação dos serviços de telecomunicações, demonstrando claramente qual o tributo cobrado e o comando legal infringido. Some-se a isso a informação contida na notificação de que o lançamento ocorreu em razão da inexatidão da declaração por ocasião do lançamento espontâneo, consoante artigos 149 e 150 do CTN.
+5.7. Ademais, tais notificações esclarecem que o interessado pode, a fim de obter maiores informações e esclarecimentos, formular pedido de vistas e cópia dos autos do Processo Administrativo Fiscal, no qual está contido o relatório de fiscalização que ensejou a exação. Não há que se falar, portanto, em prejuízo à defesa ou irregularidade do ato, tendo em vista que as informações pertinentes sempre estiveram à disposição da empresa.
+5.8. Não se pode olvidar tampouco que a Lei n.º 9.784, de 29 de janeiro de 1999, reguladora do processo administrativo no âmbito da Administração Pública Federal e aplicável subsidiariamente ao PAF, dispõe, em seu artigo 50, § 1º, que “a motivação deve ser explícita, clara e congruente, podendo consistir em declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas, que, neste caso, serão parte integrante do ato”.
+5.9. Neste sentido, embora apartados das notificações, os Relatórios de Fiscalização, que contêm as informações pertinentes, fazem parte do referido ato administrativo, consoante norma acima mencionada.
+5.10. De fato, os referidos relatórios e seus anexos demonstram claramente o quanto que seria devido ao Fust no exercício fiscal em tela e que esse montante ainda não foi integralmente quitado pela empresa. Além disso, os Relatórios, em conjunto com a planilha básica de composição da receita operacional e da base de cálculo do tributo, indicam quais contas foram utilizadas e o porquê da utilização de determinadas contas. Essa situação legitima plenamente a cobrança realizada. Desta forma, resta plenamente atendido o requisito do art. 11, inciso II, do Decreto nº 70.235/72:
+(...)
+5.14. O Relatório de Fiscalização foi devidamente motivado e foi concedido ao sujeito passivo o prazo legal para a formulação de impugnação. O Relatório fiscal ainda contém clara descrição do fato gerador da obrigação, da matéria tributável, do montante do tributo devido, da identificação do sujeito passivo e da penalidade aplicável. Não houve nenhum prejuízo para os direitos de defesa e do contraditório do contribuinte, que puderam ser exercidos na forma e no prazo legal. Isto é, a fiscalização transcorreu dentro da mais restrita legalidade e não houve qualquer inobservância ao direito de defesa do contribuinte, devendo ser rejeitado esse argumento.
+5.15. Afasta-se a pretensão, porquanto entende-se terem sido observados os requisitos fixados no artigo 142 do CTN, combinado com os artigos 10 e 59 do Decreto nº 70.235/72.
+Na mesma direção, a PFE-Anatel também afasta a alegação de nulidade das notificações de lançamento, esclarecendo que as notificações continham informações suficientes sobre os créditos e que o acesso posterior aos relatórios técnicos supriu eventuais omissões, não havendo prejuízo ao direito de defesa da empresa:
+Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243)
+II - Nulidade das notificações dos lançamentos
+14. Quanto ao Recurso Voluntário, não precede a alegação de nulidade dos lançamentos.
+15. As notificações continham expressamente a informação de que os créditos decorriam de omissões ou inexatidões na declaração do Fust do respectivo mês, com invocação dos dispositivos legais incidentes. O devedor, portanto, teve ciência das razões de fato e de direito que motivaram a cobrança.
+16. Observe-se que seria inviável reproduzir no corpo de uma simples notificação todo o detalhamento contábil do complexo e longo apuratório que verificou as contas apresentadas pela empresa. Para ciência das minudências técnicas seria necessário que o interessado obtivesse vista dos autos, como lhe foi expressamente franqueado nas notificações.
+17. Ademais, ainda que a notificação tivesse que apresentar não apenas os fatos e fundamentos de direito que justificam a cobrança, mas fosse impositiva a remessa ou reprodução de toda a documentação técnica que tratou da matéria, ainda assim a nulidade estaria sanada pelo acesso que o recorrente obteve a posteriori do inteiro do relatório técnico que fundamentou a decisão.
+18. Ainda que a notificação tivesse que reproduzir as minudências contábeis - o que seria uma exigência absurda - essa deficiência estaria sanada inteiramente pelo acesso do recorrente ao Relatório de Fiscalização. Assim, a suposta omissão estaria suprida com a ciência dos documentos técnicos pertinentes, afastando-se qualquer legitimidade do pleito de nulidade processual, em respeito ao princípio da preservação dos atos processuais e da instrumentabilidade da forma, ou pas de nullité sans grief.
+19. A esse respeito, ensina Marinoni:
+O processo é um instrumento de realização do direito, e não um fim em si mesmo. Por isso, as regras processuais devem ser interpretadas de forma a permitir a concretização dos objetivos do processo, e não para impedir ou dificultar sua efetivação. Nesse sentido, o princípio da instrumentalidade das formas é uma das formas de interpretação das normas processuais. A rigidez formal das regras processuais pode prejudicar a realização da justiça, tornando o processo inútil ou ineficaz. Por isso, as normas processuais devem ser interpretadas de forma a permitir que o processo cumpra sua finalidade, em conformidade com o direito material. A instrumentalidade das formas é uma garantia fundamental do processo, que permite a flexibilização das regras formais em nome da efetividade do direito material." (Curso de Processo Civil - Luiz Guilherme Marinoni, 2017, p. 66.)
+20. Esse princípio, fundado em doutrina sólida e antiga, foi também positivado reiteradamente em diversos Diplomas Legais. Primeiramente, o Código de Processo Civil dispõe:
+Art. 277. Quando a lei prescrever determinada forma, o juiz considerará válido o ato se, realizado de outro modo, lhe alcançar a finalidade.
+21. A Lei 9.784, de 1999, por sua, explicita o princípio da instrumentalidade nos seguintes termos:
+Art. 55. Em decisão na qual se evidencie não acarretarem lesão ao interesse público nem prejuízo a terceiros, os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Administração.
+22. Também o Código de Processo Penal assenta a mesma diretriz, que, como se vê, opera transversalmente em todas as esferas do Direito:
+Art. 563. Nenhum ato será declarado nulo, se da nulidade não resultar prejuízo para a acusação ou para a defesa.
+23. No caso em exame está patente a ausência de prejuízos à defesa do devedor, que teve todas as condições técnicas para articular sua impugnação sem qualquer dificuldade, exercendo de forma plena o contraditório. Assim, não houve absolutamente nenhum prejuízo ao direito de defesa que pudesse dar causa à declaração de nulidade das notificações.
+Concordo integralmente com a fundamentação apresentada pela Área Técnica e ratificada pela PFE-Anatel.
+A Notificação de Lançamento nº 001-7604/2009/ADPF-ANATEL (SEI nº 0668994, fls. 135-142), o Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146) e o Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-ANATEL (SEI nº 0668994, fls. 147-150), que retificou o lançamento complementar anterior, atendem a todos os requisitos expressos no art. 10, III e IV, e no art. 11 do Decreto nº 70.235/1972, especificando adequadamente a descrição do fato, a disposição legal infringida e a penalidade aplicável, além de conter a qualificação do notificado, o valor do crédito tributário e o prazo para recolhimento ou impugnação e a assinatura do chefe do órgão expedidor ou de outro servidor autorizado e a indicação de seu cargo ou função e o número de matrícula.
+Ademais, o presente Processo Administrativo Fiscal está em consonância com o art. 142 do CTN, visto que, por meio das notificações de lançamento e dos Relatórios de Fiscalização, descreve a matéria tributável e o procedimento de fiscalização utilizado, calcula o montante do tributo devido, identifica o sujeito passivo e propõe a aplicação da penalidade cabível.
+Registre-se que todas as informações necessárias ao pleno conhecimento dos fatos e à adequada elaboração do recurso pela Recorrente estavam regularmente disponibilizadas nos autos do processo. É juridicamente desnecessária — e, em muitos casos, inviável — a reprodução, no corpo de uma mera notificação, de todo o detalhamento contábil e técnico de um procedimento apuratório extenso e complexo, sobretudo quando tais elementos constam, de forma organizada e acessível, no processo administrativo. Para a ciência pormenorizada dos elementos técnicos, cabia ao interessado exercer o direito de vista e de obtenção de cópias, o que foi expressamente franqueado nas notificações.
+Ressalte-se, ainda, que a prestadora efetivamente acessou os autos e obteve vista de todos os documentos e informações pertinentes, razão pela qual não se verifica qualquer restrição ao contraditório ou à ampla defesa. Inexistindo impedimento de acesso às peças essenciais — bem como ausência de demonstração de prejuízo concreto —, não há que se falar em nulidade do procedimento ou em cerceamento de defesa, à luz do princípio da instrumentalidade das formas e do devido processo legal administrativo. A instrução observou os parâmetros de publicidade, transparência e integral acesso aos autos, possibilitando à Recorrente a compreensão do acervo probatório e a construção de sua tese recursal.
+Cumpre salientar, ainda, que o art. 82 do RIA não se aplica ao caso em exame, por disciplinar exclusivamente normas relativas ao Procedimento para Apuração de Descumprimento de Obrigações (Pado), matéria distinta daquela tratada nos Processos Administrativos Fiscais, que constituem o objeto destes autos.
+Conclui-se, então, que não merece acolhimento o argumento recursal formulado, assim como o pedido dele decorrente.
+III.2.2 - Da suposta decadência do direito da Anatel de efetuar o lançamento de multa de ofício
+Em seu segundo argumento recursal, a Recorrente afirma que o crédito tributário referente às competências de janeiro a abril de 2005 se encontraria extinto por força de decadência, tendo em vista o prazo de 5 (cinco) anos previsto no art. 150, § 4º, do CTN e a data de notificação do Comunicado de Lançamento Complementar nº 001-2481/2010/ADPF-ANATEL (SEI nº 0668994, fls. 143-146), que ocorreu em 25 de maio de 2010:
+Recurso Administrativo (SEI nº 0669006 , fls. 257-319)
+III.B - DA DECADÊNCIA DO DIREITO DA ANATEL DE EFETUAR O LANÇAMENTO DA MULTA DE OFÍCIO
+(...)
+24. Contudo, a constituição do crédito tributário relativo aos meses de janeiro a maio de 2005, nos termos do artigo 142 do Código Tributário Nacional - CTN, jamais poderia se dar em junho de
+2010, haja vista que, em tal data, a Fiscalização já havia decaído deste direito, em função do decurso de prazo superior a 5 (cinco) anos contados da ocorrência dos respectivos fatos geradores.
+(...)
+26. No caso concreto, à evidência inexiste dolo, fraude ou simulação, tanto que nem mesmo a fiscalização cogita de tais ocorrências.
+27. Nessas condições, tratando-se de exigência de valores referentes aos fatos geradores ocorridos no período de janeiro de 2005 a outubro de 2006, a autoridade administrativa tinha o prazo
+de 5 (cinco) anos para constituir o crédito tributário pelo lançamento, de modo que, tendo somente em junho de 2010 efetuado o lançamento, já decaiu de seu direito, estando caduco o respectivo crédito tributário que se pretende exigir.
+28. Dúvida não remanesce, assim, quanto ao fato de que eventual crédito tributário relativo aos meses de janeiro a maio de 2005 já estaria extinto em razão da decadência que se operou.
+(...)
+VI - DO PEDIDO
+97. Por todo o exposto, a Recorrente requer:
+(...)
+(b) seja reconhecida a decadência do direito ao lançamento da multa de ofício no que concerne ao período de janeiro a maio de 2005 e, consequentemente, seja determinada a extinção do crédito tributário nos termos do artigo 156, inciso V do Código Tributário Nacional;
+(...)
+A Área Técnica analisou a motivação apresentada e esclareceu que o lançamento de multa de ofício sempre está sujeito ao prazo decadencial previsto no art. 173, I, do CTN, independentemente do prazo decadencial do tributo a que ela se refere. O referido dispositivo estabelece que o crédito tributário se extingue após 5 (cinco) anos, contados "do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado". Assim, considerando os meses de janeiro a maio de 2005, a contagem se iniciou em 2006, tendo seu término em 31 de dezembro de 2010. Visto que o Contribuinte recebeu o Comunicado de Lançamento Complementar nº 001-2841/2010/ADPF-Anatel em 27 de maio de 2010, conforme AR (SEI nº 0668994, fl. 155), substituído pelo Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-Anatel, recebido em 30 de junho de 2010, conforme AR (SEI nº 0668994, fl. 153), resta comprovada a notificação dentro do prazo estabelecido no art. 173, I, do CTN:
+Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385)
+Da decadência da multa de ofício
+5.17. O Recorrente alega que houve decadência da multa de ofício dos meses de janeiro a maio de 2005.
+5.18. No tocante ao argumento de decadência da multa de ofício, informamos que a Procuradoria Federal Especializada da Anatel no Parecer nº 200/2013/LGP/PFE-Anatel/PGF/AGU, adotou entendimento constante do Parecer CGCOB/DIGEVAT nº 48/2012 (anexo I), de que o lançamento da multa de ofício sempre está sujeito ao prazo decadencial previsto no art. 173, I, do CTN, independentemente do prazo decadencial do tributo a que ela se refere.
+Art. 173. O direito de a Fazenda Pública constituir o crédito tributário extingue-se após 5 (cinco) anos, contados:
+I - do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado;
+5.19. Mesmo entendimento possui o Conselho Administrativo de Recursos Fiscais (CARF) por meio das Súmulas Vinculantes nº 148 e nº 174:
+Súmula CARF nº 148 (Portaria ME nº 410/2020)
+No caso de multa por descumprimento de obrigação acessória previdenciária, a aferição da decadência tem sempre como base o art. 173, I, do CTN, ainda que se verifique pagamento antecipado da obrigação principal correlata ou esta tenha sido fulminada pela decadência com base no art. 150, § 4º, do CTN.
+Súmula CARF nº 174 (Portaria ME nº 12.975/2021)
+Lançamento de multa por descumprimento de obrigação acessória submete-se ao prazo decadencial previsto no art. 173, inciso I, do CTN.
+5.20. Assim, o contribuinte recebeu, em 27/05/2010, o Comunicado de Lançamento Complementar nº 001-2841/2010/ADPF-Anatel, conforme AR (fls. 155 SEI 0668994), substituído pelo Comunicado de Lançamento Complementar nº 001-3206/2010/ADPF-Anatel, recebido em 30/06/2010, conforme AR (fl. 153 SEI 0668994). Dessa forma, o prazo final seria 31/12/2010, de acordo com o art. 173, I, do CTN.
+Apreciação idêntica foi apresentada pela PFE-Anatel:
+Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243)
+III - Decadência de parte das multas de ofício
+24. A contagem do prazo decadencial para aplicação de multa de ofício está há muito assentada no âmbito da PGF, nos termos do Parecer CGCOB/DIGEVAT nº 48/2012. O termo inicial do prazo quinquenal ocorre no primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado, a teor do disposto no art. 171, I, CTN.
+25. Assim, em relação aos meses de janeiro a maio de 2005, a contagem se iniciou em 2006, terminando, portanto, no final de 2010. Como a notificação se aperfeiçoou em maio de 2010, a multa foi cominada dentro do prazo legal, de modo que é improcedente o pleito recursal nesse tocante.
+O art. 173, I, do Código Tributário Nacional estabelece, de forma inequívoca, que o prazo decadencial para a constituição do crédito tributário é de 5 (cinco) anos, contados a partir do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado. Assim, conforme demonstrado pela Área Técnica, o prazo decadencial referente às competências de janeiro a abril de 2005 iniciou-se em janeiro de 2006 e encerrou-se em dezembro de 2010.
+Dessa maneira, não apenas as notificações atinentes às multas de ofício — materializadas nos Comunicados de Lançamento Complementar nº 001-2841/2010/ADPF-Anatel (SEI nº 0668994, fls. 143-146) e nº 001-3206/2010/ADPF-Anatel (SEI nº 0668994, fls. 147-150), recebidos pela Recorrente em maio e junho de 2010, respectivamente —, mas também a Notificação de Lançamento nº 001-7604/2009/ADPF-Anatel (SEI nº 0668994, fls. 135-142), entregue à Recorrente em dezembro de 2009, foram tempestivamente expedidas.
+Todas essas comunicações observaram, portanto, o marco temporal fixado no art. 173, I, do CTN, afastando qualquer alegação de decadência.
+Rejeitam-se, portanto, o argumento recursal e o pedido a ele associado.
+III.2.3 - Da suposta mensuração incorreta da base de cálculo da contribuição ao Fust
+A Prestadora sustenta que a base de cálculo da contribuição ao Fust, considerada pela Anatel, teria incluído indevidamente diversos valores que, a seu ver, não deveriam compô-la. Em síntese, aponta as seguintes irregularidades:
+impossibilidade de incidência da contribuição ao Fust sobre receitas decorrentes de Serviços de Valor Adicionado (SVA), classificados como serviços eventuais e suplementares;
+necessidade de exclusão das receitas de roaming, por se tratarem de valores pertencentes a terceiros;
+obrigação de deduzir da base de cálculo os descontos concedidos; e
+exclusão das receitas provenientes da Exploração Industrial de Linha Dedicada (EILD), juntamente com a inaplicabilidade de incidência de juros de mora sobre as receitas que são objeto do Mandado de Segurança nº 2006.34.00.002861—6.
+Segundo a Recorrente, a fim de corrigir a base de cálculo do tributo, as seguintes contas devem ser desconsideradas: 41111325; 41111619; 41111629; 41121619; 41121629; 41991311; 41991312; 41991314; 41991315; 49111112; 49111114; 49111116; 49111119; e 49121119:
+Recurso Administrativo (SEI nº 0669006 , fls. 257-319)
+IV.A - DA INCORRETA MENSURAÇÃO DA BASE DE CÁLCULO DA CONTRIBUIÇÃO
+(...)
+35. No caso concreto, pela análise dos documentos anexos ao Relatório de Fiscalização, a Recorrente pôde concluir que as diferenças entre a sua apuração da Contribuição ao FUST e a da ANATEL se devem à inclusão indevida na sua base de cálculo de diversas receitas pela referida Agência, quais sejam:
+ CONTA
+ | 
+ NOMENCLATURA
+ | 
+ 41111325
+ | 
+ Visitante Telebahia
+ | 
+ 41111619
+ | 
+ Sv. Eventuais
+ | 
+ 41111629
+ | 
+ Sv. Suplementares
+ | 
+ 41121619
+ | 
+ Serv. Eventuais
+ | 
+ 41121629
+ | 
+ Serv. Suplementares
+ | 
+ 41991311
+ | 
+ Comp. Infra-estrutura
+ | 
+ 41991312
+ | 
+ EILD
+ | 
+ 41991314
+ | 
+ EILD - Telefônica
+ | 
+ 41991315
+ | 
+ Circuitos - Telefônica
+ | 
+ 49111112
+ | 
+ Desc.Util.Fidelização Pós-Pago
+ | 
+ 49111114
+ | 
+ Desc.Util.Fidelização Pré-Pago
+ | 
+ 49111116
+ | 
+ Desc. Cartão Recarga
+ | 
+ 49111119
+ | 
+ Outros Desc. Serviços Fidelização
+ | 
+ 49121119
+ | 
+ Outros Desc. Serviços Captação
+ | 
+36. Nesse contexto, a Recorrente passa a demonstrar que nenhuma das receitas acima mencionadas poderia compor a base de cálculo da Contribuição ao FUST.
+IV.A.1 -Da Impossibilidade de Incidência da Contribuição ao FUST sobre as Receitas Oriundas de Serviços de Valor Adicionado
+37. Dentre os diversos serviços executados pela Recorrente no período autuado, havia aqueles que complementam a prestação de serviço de telecomunicação, como os serviços de valor agregado, representados pelas seguintes contas contábeis:
+ CONTA
+ | 
+ NOMENCLATURA
+ | 
+ 41111619
+ | 
+ Sv. Eventuais
+ | 
+ 41111629
+ | 
+ Sv. Suplementares
+ | 
+ 41121619
+ | 
+ Serv. Eventuais
+ | 
+ 41121629
+ | 
+ Serv. Suplementares
+ | 
+38. São atividades que possibilitam ao usuário usufruir um serviço, mas não são, elas próprias, equiparadas a um serviço de telecomunicação.
+(...)
+IV.A.2 - Da Necessária Dedução da Base de Cálculo do FUST das Receitas de Roaming — Receita de Terceiros
+51. Os valores ingressados nas contas da Recorrente a título de receitas de roaming a ela não pertencem. A titularidade dos valores recebidos é, na verdade, de terceiros (outras operadoras), motivo pelo qual estas não podem integrar a base de cálculo da contribuição ao FUST. No caso em tela, a conta abaixo deixou de ser deduzida da base de cálculo pela Anatel:
+ CONTA
+ | 
+ NOMENCLATURA
+ | 
+ 41111325
+ | 
+ Visitante Telebahia
+ | 
+(...)
+55. É dizer, a Recorrente repassa esses valores a outrem, de forma que, evidentemente, não correspondem à receita sua. Portanto, não devem ser oferecidos à tributação pela contribuição ao FUST.
+(...)
+68. Por qualquer ângulo, os valores relativos às transferências realizadas em favor de outras prestadoras (e não a usuário final) enquadram-se no permissivo legal que autoriza a respectiva dedução do valor devido a título de contribuição ao FUST, pelo que não poderiam ter sido levadas em consideração pela Fiscalização para o efeito de reclamar qualquer diferença no recolhimento desta exação, demonstrando, mais uma vez, a improcedência das Notificações de Lançamento em discussão.
+IV.A.3 -Da Necessária Exclusão dos Descontos Concedidos da Base de Cálculo do FUST
+69. Conforme mencionado anteriormente, a ANATEL, para lançar os débitos de Contribuição ao FUST dos anos de 2005 e 2006, não excluiu da base de cálculo da Contribuição ao FUST os descontos concedidos pela Recorrente, relativos às seguintes contas contábeis:
+ CONTA
+ | 
+ NOMENCLATURA
+ | 
+ 49111112
+ | 
+ Desc.Util.Fidelização Pós-Pago
+ | 
+ 49111114
+ | 
+ Desc.Util.Fidelização Pré-Pago
+ | 
+ 49111116
+ | 
+ Desc. Cartão Recarga
+ | 
+ 49111119
+ | 
+ Outros Desc. Serviços Fidelização
+ | 
+ 49121119
+ | 
+ Outros Desc. Serviços Captação
+ | 
+70. Quanto aos descontos concedidos, o artigo 3º, inciso V da Resolução nº 247/2000 prevê que:
+”Art. 3º Para os fins deste Regulamento, aplicam-se as seguintes definições:
+(...)
+V - Receita Operacional Bruta é o valor da receita auferida na prestação de serviços de telecomunicações, pelo regime de competência, independentemente da emissão da fatura correspondente e de seu pagamento, excluídas as vendas canceladas e os descontos concedidos,"
+(grifou—se)
+71. Portanto, uma vez confirmada a não exclusão dos descontos concedidos da base de cálculo da ANATEL, tem-se que claramente se desconsiderou expresso mandamento legal, pois os valores computados a esse título não integram a base de cálculo do tributo, vez que sequer fazem parte da concretização da operação, implicando em verdadeira redução do preço do serviço.
+72. Nota-se, portanto, que não há dúvidas sobre a necessidade de exclusão dos referidos descontos concedidos da base da contribuição.
+IV.A.4 - Das Receitas de Interconexão e Exploração Industrial de Linha Dedicada - EILD
+73. Conforme reconhecido nas próprias Notificações de Lançamento, os supostos créditos de Contribuição ao FUST incidente sobre as receitas de interconexão e Exploração industrial de Linha Dedicada - ElLD se encontram com sua exigibilidade suspensa, em virtude da segurança concedida nos autos do Mandado de Segurança nº 2006.34.00.002861-6, decisão esta que permanece inalterada até a presente data (atualmente aguarda-se julgamento do Recurso de Apelação interposto pela ANATEL).
+74. Nesse sentido, para cálculo da Contribuição ao FUST supostamente devida, a Fiscalização excluiu as receitas de interconexão da base, porém, continuou considerando, para fins de incidência da Contribuição ao FUST, as contas contábeis relativas à Exploração Industrial de Linha Dedicada - EILD, mesmo ciente a ANATEL da suspensão da exigibilidade. São elas:
+ CONTA
+ | 
+ NOMENCLATURA
+ | 
+ 41991311
+ | 
+ Comp. Infra-estrutura
+ | 
+ 41991312
+ | 
+ EILD
+ | 
+ 41991314
+ | 
+ EILD - Telefônica
+ | 
+ 41991315
+ | 
+ Circuitos - Telefônica
+ | 
+75. Assim, os valores relativos a tais contas deverão ser imediatamente excluídos da base de cálculo da Contribuição ao FUST.
+76. Ademais, quanto a todas as contas de interconexão e EILD presentes da autuação, deverá ser afastada a incidência de multa de ofício, nos termos do artigo 63 da Lei nº 9.430/9610.
+77. Por fim, não há que se falar também na incidência de multa de mora neste momento, haja vista que, quanto às receitas objeto de discussão no Mandado de Segurança nº 2006.34.00.002861—6, a multa de mora somente poderá incidir 30 (trinta) dias após a publicação de decisão judicial que considerar devida a contribuição, nos termos do §29 do artigo 63 da Lei nº 9.430/9611 e, conforme consignado na decisão recorrida, apenas para os meses nos quais não houver a incidência da multa de ofício.
+(...)
+VI - DO PEDIDO
+97. Por todo o exposto, a Recorrente requer:
+(...)
+(c) no mérito, seja julgada totalmente insubsistente a autuação para reconhecer o direito da Recorrente de excluir da base de cálculo da Contribuição ao FUST os valores decorrentes de
+serviços que não façam parte do conceito de serviços de telecomunicação para fins do exposto na LGT e de realizar as exclusões relativas às receitas de roaming e aos descontos concedidos;
+(d) sejam excluídas da base de cálculo da Contribuição ao FUST as receitas de EILD não excluídas anteriormente pela Fiscalização, bem como, quanto a todas as receitas dessa natureza (além das relativas a interconexão), seja afastada a incidência de multa de ofício e de mora, nos termos do artigo 63, caput e §29 da Lei 9430/96;
+(...)
+O Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385), da Área Técnica, destacou a necessidade de comprovação de tais fatos contabilmente na documentação juntada ao processo, por meio de notas fiscais, contratos de locação, contratos de prestação de serviços, recibos ou qualquer outro comprovante idôneo de tal transação comercial, o que não ocorreu. No entanto, para verificação da alegação, foram elaborados os Relatórios de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) e nº 0103/2017/GR02 (SEI nº 1330121), em que a fiscalização concluiu pela redução dos valores iniciais. 
+A nova avaliação ressaltou que a conta 41111325-VISITANTE TELEBAHIA não havia sido utilizada na base do cálculo. Além disso, as contas contábeis 41111619 SERVIÇOS EVENTUAIS, 41111629 SERVIÇOS SUPLEMENTARES, 41121619 SERVIÇOS EVENTUAIS e 41121629 SERVIÇOS SUPLEMENTARES foram excluídas da base de cálculo. As contas 49111112 DESCONTO UTILIZAÇÃO FIDELIZAÇÃO POS PAGO, 49111114 DESCONTO UTIL. FIDELIZAÇÃO PRE PAGO, 49111116 DESC CARTÃO RECARGA, 49111119 OUTROS DESC SERVIÇOS FIDELIZAÇÃO e 49121119 OUTROS DESC SERVIÇOS CAPTAÇÃO foram consideradas para abatimento na base de cálculo. Por fim, foram apartadas as receitas de interconexão, de Exploração Industrial de Linha Dedicada - EILD (41991312 EILD, 41991314 EILD TELEFONICA, 41991315 CIRCUITOS TELEFONICA) e de compartilhamento de infraestrutura (41991311 COMP. INFRA-ESTRUTURA).
+A Área Técnica, além de descrever os achados identificados, apresentou tabelas contendo a consolidação dos cálculos iniciais e dos novos valores apurados. Como resultado da análise, foram determinados os valores dos lançamentos de ofício devidos em razão da ausência ou incorreção na declaração das receitas perante a Anatel, abrangendo tanto as receitas de interconexão quanto aquelas não relacionadas à interconexão, para cada exercício fiscalizado.
+Por fim, o Corpo Técnico examinou a alegação da Recorrente de que não seria possível exigir multa de ofício e juros enquanto a exigibilidade do crédito tributário estiver suspensa e esclareceu que: (i) são aplicáveis os juros de mora, conforme entendimento do CARF (Súmula CARF nº 5), com exceção apenas quando há depósito integral do débito; (ii) a interposição de ação judicial com a medida liminar apenas interrompe a multa de mora, voltando a ser cobrada após a decisão judicial que considerar devido o tributo; (iii) aplicam-se a multa de mora e os juros de mora às partes dos créditos que não tiveram a sua exigibilidade suspensa; (iv) não se aplica a multa de ofício em relação às receitas de interconexão, devido à decisão liminar obtida; e, por último, (v) a multa de ofício absorve a multa de mora, conforme decisões do CARF.
+Tais análises e conclusões foram consignadas nos seguintes termos:
+Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385)
+Da base de cálculo
+5.22. O Recorrente alega que houve inclusão indevida na base de cálculo do Fust das contas 41111325; 41111619; 41111629; 41121619; 41121629; 41991311; 41991312; 41991314; 41991315; 49111112; 49111114; 49111116; 49111119; e 49121119.
+5.23. Ressalte-se que não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações é necessário haver: notas fiscais, contratos de locação, contratos de prestação de serviços, recibos, etc, ou qualquer outro comprovante idôneo de tal transação comercial. É necessário haver a verdade material. Assim, somente a afirmação não calçada em documentação contábil não é válida.
+5.24. Como as alegações tecidas pela Impugnante faziam despontar a necessidade de nova diligência contábil tributária, os autos foram encaminhados à Gerência de Fiscalização que reanalisou os documentos contábeis, lavrando os novos Relatórios de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) e nº 0103/2017/GR02 (SEI nº 1330121), em que a fiscalização concluiu pela redução dos valores iniciais. Vejamos:
+Relatório de Fiscalização nº 0102/2017/GR02
+(...) 
+-Com estas informações foi refeita a Memória de Cálculo de valores referentes ao Fundo de Universalização dos Serviços de Telecomunicações ¦ FUST, no ano de 2005 (arquivo SEI nº 1240342), tendo as seguintes observações:
+A) Conta nº 41111325-VISITANTE TELEBAHIA NÃO ESTÁ PRESENTE na composição da memória de cálculo da FUST do relatório de fiscalização 0699/2009/ER02FT e nem nos balancetes do período auditado. Manual de Contas da entidade indica que esta receita, assim como as demais do seu subgrupo 41111320 - VISITANTE ¦ EMPRESAS DO GRUPO, faz parte do cálculo do tributo;
+B) Foram excluídas as seguintes contas que não têm relação com a prestação de Serviços de Telecomunicações: 41111619 SERVIÇOS EVENTUAIS e 41111629 SERVIÇOS SUPLEMENTARES, 41121619 SERVIÇOS EVENTUAIS, 41121629 SERVIÇOS SUPLEMENTARES.
+C) Foram consideradas para abatimento na base de cálculo as seguintes contas: 49111112 DESCONTO UTILIZAÇÃO FIDELIZAÇÃO POS PAGO, 49111114 DESCONTO UTIL. FIDELIZAÇÃO PRE PAGO, 49111116 DESC CARTÃO RECARGA, 49111119 OUTROS DESC SERVIÇOS FIDELIZAÇÃO e 49121119 OUTROS DESC SERVIÇOS CAPTAÇÃO;
+D) Foram apartadas as receitas de interconexão, de Exploração Industrial de Linha Dedicada - EILD (41991312 EILD, 41991314 EILD TELEFONICA, 41991315 CIRCUITOS TELEFONICA) e Compartilhamento de Infra-estrutura (41991311 COMP. INFRA-ESTRUTURA) até o julgamento em definitivo da validade da Súmula nº 7, de 15/12/2005. Nesta nova Memória de cálculo, as receitas interconexão e uso de recursos integrantes de suas redes estão destacadas em duas planilhas, receitas com e sem a Súmula nº 7, para melhor entendimento das atividades realizadas;
+E) Foram mantidas as receitas para o abatimento com ICMS da base de cálculo do Fust indicadas no Relatório de Fiscalização nº 0699/2009/ER02FT;
+F) Para os abatimentos com PIS e Cofins, foram utilizadas as alíquotas, de acordo com a legislação em vigor, de 0,65% e 3,00%, respectivamente, sobre as contas consideradas. 
+5. CONCLUSÃO
+Com base nas informações apresentadas pela Prestadora TELERGIPE CELULAR S.A., CNPJ 02.349.167/0001-98, à Anatel, os valores apurados para contribuição ao Fust, totalizam, durante o exercício financeiro de 2005 (processo SEI nº 53508.015099/2009-46), [Item 46 do Apartado Sigiloso SEI nº 15465041].
+Relatório de Fiscalização nº 0103/2017/GR02
+(...) 
+- Com base no Manual de Contas contábeis_VIVO, Versão 1.3.1.1, Arquivo SEI nº 1240297, presente na documentação da operadora no Processo SEI nº 53500.004228/2007, foram corretamente identificadas as funções das contas contestadas pela entidade;
+-Com estas informações foi refeita a Memória de Cálculo de valores referentes ao Fundo de Universalização dos Serviços de Telecomunicações - FUST, no ano de 2006 (arquivo SEI nº 1292863), tendo as seguintes observações:
+A) Conta nº 41111325-VISITANTE TELEBAHIA NÃO ESTÁ PRESENTE na composição da memória de cálculo da FUST do relatório de fiscalização 0722/2009/ER02FT e nem nos balancetes do período auditado. Manual de Contas da entidade indica que esta receita, assim como as demais do seu subgrupo 41111320 - VISITANTE -EMPRESAS DO GRUPO, faz parte do cálculo do tributo;
+B) Foram excluídas as seguintes contas que não têm relação com a prestação de Serviços de Telecomunicações: 41111619 SERVIÇOS EVENTUAIS e 41111629 SERVIÇOS SUPLEMENTARES, 41121619 SERVIÇOS EVENTUAIS, 41121629 SERVIÇOS SUPLEMENTARES.
+C)Foram consideradas para abatimento na base de cálculo as seguintes contas: 49111112 DESCONTO UTILIZAÇÃO FIDELIZAÇÃO POS PAGO, 49111114 DESCONTO UTIL. FIDELIZAÇÃO PRE PAGO, 49111116 DESC CARTÃO RECARGA, 49111119 OUTROS DESC SERVIÇOS FIDELIZAÇÃO e 49121119 OUTROS DESC SERVIÇOS CAPTAÇÃO;
+D) Foram apartadas as receitas de interconexão, de Exploração Industrial de Linha Dedicada ¦ EILD (41991312 EILD, 41991314 EILD TELEFONICA, 41991315 CIRCUITOS TELEFONICA) e Compartilhamento de Infra-estrutura (41991311 COMP. INFRA-ESTRUTURA) até o julgamento em definitivo da validade da Súmula nº 7, de 15/12/2005. Nesta nova Memória de cálculo, as receitas interconexão e uso de recursos integrantes de suas redes estão destacadas em duas planilhas, receitas com e sem a Súmula nº 7, para melhor entendimento das atividades realizadas;
+E) Foram mantidas as receitas para o abatimento com ICMS da base de cálculo do Fust indicadas no Relatório de Fiscalização nº 0722/2009/ER02FT;
+F) Para os abatimentos com PIS e Cofins, foram utilizadas as alíquotas, de acordo com a legislação em vigor, de 0,65% e 3,00%, respectivamente, sobre as contas consideradas.
+5. CONCLUSÃO
+Com base nas informações apresentadas pela Prestadora TELERGIPE CELULAR S.A., CNPJ 02.349.167/0001-98, à Anatel, os valores apurados para contribuição ao Fust, totalizam, durante o exercício financeiro de 2006 (processo SEI nº 53508.015099/2009-46), [Item 47 do Apartado Sigiloso SEI nº 15465041].
+5.25. Diante do exposto acima, e, após separar as receitas de interconexão/EILD, conforme determina a liminar obtida nos autos do mandado de segurança nº 2006.34.00.002861-6, obtivemos os seguintes resultados. Vejamos:
+[Item 48 do Apartado Sigiloso SEI nº 15465041]
+5.26. Portanto, de acordo com as tabelas acima, os valores do(s) lançamento(s) de ofício realizado(s), ante a ausência ou insuficiência de recolhimento da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, em razão da falta e/ou incorreção da declaração de suas receitas perante esta Agência, equivalendo [Item 49 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, [Item 50 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005.
+5.27. Quanto à multa de ofício, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, equivalendo ao montante de [Item 51 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005.
+5.28. Sobre o valor acima referido deve incidir juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período.
+[Item 52 do Apartado Sigiloso SEI nº 15465041]
+5.29. Portanto, de acordo com as tabelas acima, os valores do(s) lançamento(s) de ofício realizado(s), ante a ausência ou insuficiência de recolhimento da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, em razão da falta e/ou incorreção da declaração de suas receitas perante esta Agência, equivalendo [Item 53 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, R$ 0,00 (zero real), referente às receitas sem interconexão, para o exercício de 2006.
+5.30. Quanto à multa de ofício, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, equivalendo ao montante de R$ 0,00 (zero real), referente às receitas sem interconexão, para o exercício de 2006.
+5.31. Sobre o valor acima referido deve incidir juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período.
+Da impossibilidade de exigir multa de ofício quando a exigibilidade está suspensa
+5.32. A Recorrente alega que existe a impossibilidade de exigir juros e multa quando a exigibilidade do crédito tributário está suspensa.
+5.33. Inicialmente, independente se suspenso ou não, é aplicável juros de mora, conforme entendimentos sumulados do CARF. Vejamos:
+Súmula CARF nº 5:
+São devidos juros de mora sobre o crédito tributário não integralmente pago no vencimento, ainda que suspensa sua exigibilidade, salvo quando existir depósito no montante integral. (Vinculante, conforme Portaria MF nº 277, de 07/06/2018, DOU de 08/06/2018).
+Súmula CARF nº 4:
+A partir de 1º de abril de 1995, os juros moratórios incidentes sobre débitos tributários administrados pela Secretaria da Receita Federal são devidos, no período de inadimplência, à taxa referencial do Sistema Especial de Liquidação e Custódia - SELIC para títulos federais. (Vinculante, conforme Portaria MF nº 277, de 07/06/2018, DOU de 08/06/2018).
+Súmula CARF nº 108
+Incidem juros moratórios, calculados à taxa referencial do Sistema Especial de Liquidação e Custódia - SELIC, sobre o valor correspondente à multa de ofício. (Vinculante, conforme Portaria ME nº 129, de 01/04/2019, DOU de 02/04/2019).
+5.34. Em segundo lugar, a interposição de ação judicial com a medida liminar apenas interrompe a multa de mora, voltando a ser cobrada após a decisão judicial considerar devido o tributo. Vejamos a redação do art. 63, caput e § 2º, da Lei nº 9.430/96:
+Na constituição de crédito tributário destinada a prevenir a decadência, relativo a tributo de competência da União, cuja exigibilidade houver sido suspensa na forma dos incisos IV e V do art. 151 da Lei nº 5.172, de 25 de outubro de 1966, não caberá lançamento de multa de ofício.
+§ 1º O disposto neste artigo aplica-se, exclusivamente, aos casos em que a suspensão da exigibilidade do débito tenha ocorrido antes do início de qualquer procedimento de ofício a ele relativo.
+§ 2º A interposição da ação judicial favorecida com a medida liminar interrompe a incidência da multa de mora, desde a concessão da medida judicial, até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo ou contribuição.
+5.35. Em resumo, para as parcelas sem interconexão que não foram suspensas, como são incontroversas, aplica-se a multa de mora e os juros de mora. Esse é o entendimento do Parecer Jurídico nº 328/2017/PFE-ANATEL/PGF/AGU (SEI 2259342). Vejamos:
+No que toca às partes dos créditos que não tiveram a sua exigibilidade suspensa, aplicam-se normalmente a multa de mora (sem aplicação do § 2º do art. 63 da Lei nº 9.430/1996) e os juros de mora.
+5.36. As receitas de interconexão, no entanto, como a decisão concessiva da suspensão da exigibilidade, nos autos do Mandado de Segurança nº 2006.34.00.002861-6, ocorreu em 10/03/2006, com a obtenção da liminar, ou seja, antes do primeiro ato de fiscalização que ocorreu em 09/01/2009, para os exercícios de 2005 e 2006, conforme Requerimento de Informações nº 001/2009 (fl. 31 SEI nº 5725456 ), não se aplica a multa de ofício, para os anos de 2005 e 2006.
+5.37. Como, no caso em concreto, em relação as parcelas de interconexão, não se aplica a multa de ofício, aplica-se, no entanto, a multa de mora (§ 2º do art. 63 da Lei 9.430), que fica interrompida por ora, ou seja, devendo ser paga em 30 (trinta) dias após a publicação da decisão que considerar devida a contribuição. Vejamos:
+(...)
+5.38. Por fim, a multa de ofício, absorve a multa de mora, não sendo admissível a cumulação, conforme acórdãos do CARF nº 101-96.598, nº 40105838 e nº 3202-000.001. É pacífico na Administração Tributária que, embora haja previsão de multa de mora pelo atraso de pagamento, essa penalidade é absorvida pela aplicação da multa de ofício, pois na dosimetria da pena mais gravosa, já está considerado o fato do contribuinte estar em mora no pagamento.
+5.39. Portanto, para as parcelas de interconexão, para o caso em concreto, não se aplica a multa de ofício e, lado outro, aplica-se a multa de mora, que, no entanto, fica interrompida desde a concessão da medida judicial até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo.
+Considerando a atualização dos valores apurados, a Superintendência de Administração e Finanças (SAF) emitiu o Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), em que se retratou, revendo parcialmente os lançamentos realizados referentes às receitas de interconexão e às multas de ofício, interrompendo a incidência de juros de mora sobre receitas de interconexão:
+Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570)
+Processo nº 53508.015099/2009-46
+Interessado: TELERGIPE CELULAR S/A
+O SUPERINTENDENTE DE ADMINISTRAÇÃO E FINANÇAS DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, exercendo o juízo de admissibilidade recursal previsto no art. 115, § 1º, "b", do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+CONSIDERANDO o atendimento dos pressupostos de admissibilidade recursal, insculpidos no art. 116 do Regimento Interno da Anatel;
+CONSIDERANDO que a instrução obedeceu às disposições contidas no Regimento Interno da Agência, atendendo à sua finalidade, observando, especialmente, os princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõe o art. 2º da Lei 9.784, de 29/01/1999;
+CONSIDERANDO as razões e justificativas constantes do Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385),
+DECIDE:
+1. Conhecer do Recurso Administrativo interposto por TELEFÔNICA BRASIL S/A, CNPJ nº 02.558.157/0001-62, sucessora por incorporação da VIVO S/A, incorporadora da TELERGIPE CELULAR S/A, CNPJ nº 02.349.167/0001-98, em razão do Despacho nº 5054/2015/AFFO/SAF (fl. 251/252 SEI nº 0669006);
+2. Retratar-se em relação ao Despacho nº 5054/2015/AFFO/SAF (fl. 251/252 SEI nº 0669006), nos seguintes termos:
+2.1. Reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao FUST, nos montantes de [Item 54 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, [Item 55 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período;
+2.2. Reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao FUST, nos montantes de [Item 56 do Apartado Sigiloso SEI nº 15465041] , referente às receitas de interconexão, e, R$ 0,00 (zero real) , referente às receitas sem interconexão, para o exercício de 2006, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período; e
+2.3. Reconhecer a procedência parcial dos lançamentos dos créditos referentes à multa de ofício, em virtude da não declaração da contribuição, no montante de [Item 57 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, sendo acrescido, desde o vencimento, juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período.
+2.4. Interromper a incidência da multa de mora, sobre as receitas de interconexão, desde a concessão da medida judicial até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo.
+3. Enviar os autos para apreciação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), nos termos do art. 5º, IV, "a" e "b", da Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017;
+4. Encaminhar o Recurso de Ofício ao Conselho Diretor, nos termos do artigo 34, inciso I, do Decreto nº 70.235/1972; e
+5. Encaminhar este processo ao Conselho Diretor, após manifestação da PFE-Anatel, para análise do Recurso de Ofício e para julgamento de mérito do Recurso Administrativo.
+A Procuradoria ressaltou os achados da nova fiscalização, com a exclusão de certas contas da base de cálculo e a utilização de outras para abatimento, além da segregação das contas com interconexão e sem interconexão, propiciando o cumprimento da decisão judicial. Por fim, afirmou que a suspensão da exigibilidade de créditos tributários impede a cobrança de multa de mora, mas não obsta a incidência de juros de mora e de atualização monetária:
+Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243)
+IV - Composição da base de cálculo
+26. A recorrente alegou terem sido incluídas indevidamente na base de cálculo uma série de contas. Em face disso, foram realizadas diligências pela equipe técnica que resultaram na elaboração do Relatório de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) e do Relatório de Fiscalização nº 0103/2017/GR02 (SEI nº 1330121).
+27. Após exame minucioso, verificou-se que, entre as contas apontadas pelo recorrente, algumas foram excluídas porque não se referiam a serviços de telecomunicação e outras foram consideradas para abatimento da base de cálculo. Considerou-se ainda algumas contas indicadas pelo recorrente não haviam sido computadas nos cálculos originais e que as receitas para abatimento do ICMS da base de cálculo estavam corretas e deveriam ser mantidas.
+28. Os ajustes resultaram numa alteração discreta do valor total devido, para mais quanto ao exercício de 2005 e para menos quanto ao exercício de 2006.
+29. O exame cuida de matéria estritamente técnica, de modo que, presumindo-se corretas do ponto de vista contábil, não há objeções de cunho jurídico a serem opostas nesse sentido às conclusões da equipe de fiscalização.
+30. A autoridade a quo, com base nesses relatórios, procedeu ainda à segregação das contas com interconexão e sem interconexão, o que em nada alterada materialmente o lançamento, cuidando-se apenas extremar a parcela dos créditos com exigibilidade suspensa por medida liminar. A medida era pertinente e necessária ao cumprimento da decisão judicial, não havendo reparos a serem feitos nesse sentido.
+V - Multa de ofício sobre parcelas com exigibilidade suspensa
+31. O recorrente tem razão quanto à impossibilidade de cobrança de multa de mora sobre a parcela da receita decorrente dos serviços de interconexão, que se encontra com exigibilidade sobrestada. A liminar não obsta a incidência de juros de mora e atualização monetária [1], porém afasta a multa de mora, nos termos do art. 63, §2º, da Lei nº 9.430, de 1996 [2].
+32. Nesse ponto, no entanto, o apelo está prejudicado, uma vez que a SCO emitiu juízo de retratação, nos termos do Despacho nº 194/2025/SCO, interrompendo a aplicação da multa de mora sobre a referida parcela desde a data de concessão da liminar em vigor.
+Verifica-se, então, que os ajustes indicados pela Prestadora em seu recurso, relativos à forma como as contas contábeis deveriam ser consideradas, foram atendidos por meio da retratação realizada pela Anatel. O argumento da recorrente sobre a inaplicabilidade da imposição de multa de ofício relativo a créditos com exigibilidade suspensa foi ratificado pela Anatel em juízo de retratação. No entanto, contrário à expectativa da Recorrente e em conformidade com a Súmula CARF nº 5, os juros de mora relativos a créditos com exigibilidade suspensa continuam sendo devidos, exceto quando há depósito integral do débito.
+Além dos novos valores apurados, foram realizados os devidos ajustes no valor de juros de mora, conforme a legislação pertinente.
+Assiste parcial razão à Prestadora no ponto, ressalvando-se que os ajustes pertinentes sobre a base de cálculo da contribuição ao Fust haviam sido oportunamente efetuados, nos termos do Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), que procedeu à regular revisão dos valores. Rejeita-se seu argumento sobre a inaplicabilidade de juros de mora sobre parcelas com exigibilidade suspensa.
+III.2.4 - Da suposta impossibilidade de cobrança de multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996
+O Recurso Administrativo (SEI nº 0669006 , fls. 257-319) argumenta que a multa de ofício, caso aplicada, não pode ser no percentual de 75% (setenta e cinco por cento), com fundamento no art. 44, I, da Lei nº 9.430/1996, mas deve ser avaliada no percentual de 2% (dois por cento), conforme definido no art. 8º, § 1º, do Decreto nº 3.624/2000. Justifica que tal definição decorre do fato de o Decreto nº 3.624/2000 ser uma norma específica acerca do Fust, enquanto que a Lei nº 9.430/1996 é uma norma genérica. Por fim, afirma que a adoção de multa de ofício com fundamento na Lei nº 9.430/1996 caracteriza uma mudança de entendimento da Agência, que supostamente teria aplicado em casos similares anteriores a multa prevista no Decreto nº 3.624/2000:
+Recurso Administrativo (SEI nº 0669006 , fls. 257-319)
+78. Ainda que superados todos os argumentos acima, o que se admite apenas em atenção ao princípio da eventualidade, ressalte-se que a multa de ofício não poderia ser cobrada no percentual de 75%.
+(...)
+80. O Decreto nº 3.624/2000 dispõe acerca da regulamentação do Fundo de Universalização dos Serviços de Telecomunicações — FUST, sendo indubitável, por este motivo, tratar-se de norma específica.
+81. Ao revés, o artigo 44, inciso l da Lei nº 9.430/96, norma balizadora da cobrança em discussão, não alcança os pormenores da aludida contribuição, configurando uma norma genérica dentre aquelas que integram a legislação tributária federal.
+(...)
+84. Não obstante ocupe posição hierárquica inferior às leis, os decretos são de grande importância no contexto da legislação tributária, vez que se prestam a viabilizar a fiel execução das leis em função das quais são editados, não podendo conter dispositivos contrários aos do diploma que lhes confere fundamento de validade.
+85. Verifica-se, portanto, que o Decreto nº 3.624/2000 tem caráter de norma especial, que apresenta elementos de outra (geral) e lhe acrescenta pormenores, sendo, sob tal aspecto, preponderante sobre as normas genéricas.
+(...)
+93. Ora, não pode servir como respaldo à cobrança da multa de 75% (setenta e cinco por cento) a repentina mudança de entendimento da ANATEL, que, desde a instituição da contribuição ao FUST, vem aplicando apenas a multa de 2% (dois por centos) estabelecida pelo Decreto nº 3524/2000 quando efetua o lançamento da dita contribuição.
+94. Em outras palavras, a penalidade aplicável ao caso deve seguir o princípio do tempus regit actum, ou seja, aplica-se ao fato a lei vigente à época de sua ocorrência.
+95. Em resumo: não pode a ANATEL ir contra os seus próprios atos, a sua própria conduta, que gerou toda uma sorte de legítimas expectativas ao contribuinte, dentre elas e acima de todas, a
+de não sofrer prejuízos (o que se encarta no princípio geral de direito do neminem Iaedere). Não houve nenhuma mudança na legislação que justificasse a cobrança da multa de 75% (setenta e cinco por cento), ao revés, a ordem jurídica pertinente à contribuição ao FUST permanece inalterada, de modo que a aplicação do artigo 44, inciso I da Lei nº 9.430/96 advém de uma nova interpretação.
+96. Sendo o Decreto nº 3524/2000 uma norma especial e regulamentadora da Lei nº 9398/2000, não há que se cogitar da aplicação da multa prevista no artigo 44, inciso I da Lei nº 9.430/96 que ora se pretende exigir, pelo que a Notificação de Lançamento em referência também não merece prosperar por este argumento.
+VI - DO PEDIDO
+97. Por todo o exposto, a Recorrente requer:
+(...)
+(e) subsidiariamente, ao menos seja reduzida a multa de ofício imputada à Recorrente para o patamar de 2% (dois por cento) estabelecido pelo Decreto nº 3.624/2000, o qual é norma especial e regulamentadora da Lei nº 9998/2000.
+(...)
+A Área Técnica esclareceu que a multa de 2% (dois por cento), definida no art. 8º, I, do Decreto nº 3.624/2000, refere-se à multa de mora. Conforme expresso no Parecer nº 1060/2010/BSA/PGF/PFE-Anatel, aprovado pela CGCOB no Despacho nº 26/2011, a multa de ofício é estabelecida pelo art. 44, I, da Lei nº 9.430/1996, sendo obtida através da aplicação do percentual de 75% (setenta e cinco por cento):
+Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385)
+Do percentual da multa de ofício
+5.40. A empresa alega que não deve ser aplicada a multa de 75 % sobre o valor principal prevista no art. 44, inc. I, da Lei 9.430/96, uma vez que o inciso I, do art. 8º do Decreto nº 3.624/2000, que regulamenta a cobrança do Fust é de 2% sobre o valor principal, é norma especial que prevalece sobre aquela norma geral.
+5.41. Quanto ao argumento do percentual da multa, entende-se que deve-se manter o percentual de 75%, uma vez que a Procuradoria Especializada da Anatel já teve a oportunidade de se manifestar favoravelmente à incidência dessa multa no Parecer nº 1060/2010/BSA/PGF/PFE-Anatel, aprovado pela CGCOB no Despacho nº 26/2011. Ademais, o art. 61 da Lei 9.430 refere-se à multa de mora e não multa de ofício.
+Art. 61. Os débitos para com a União, decorrentes de tributos e contribuições administrados pela Secretaria da Receita Federal, cujos fatos geradores ocorrerem a partir de 1º de janeiro de 1997, não pagos nos prazos previstos na legislação específica, serão acrescidos de multa de mora, calculada à taxa de trinta e três centésimos por cento, por dia de atraso.
+(...)
+5.47. Por conta do exposto acima, devem ser mantidos o lançamento tributário principal e da multa de ofício.
+A PFE-Anatel destacou que a incidência da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 é pacífica e consolidada no âmbito da Procuradoria Federal Especializada e da Procuradoria-Geral Federal. Ressaltou que o Fust mantém natureza de tributo federal, ainda que arrecadado pela Anatel, motivo pelo qual omissões ou declarações inexatas justificam a penalidade punitiva.
+Também esclareceu que a multa prevista no Decreto nº 3.624/2000 tem caráter meramente compensatório e não afasta a multa de ofício, cuja natureza é sancionatória. As duas multas possuem fundamentos e finalidades distintos, de modo que não há sobreposição entre elas. Destacou ainda que, mesmo em hipótese de conflito, a lei prevalece sobre o decreto, em razão da hierarquia normativa.
+Por fim, ressaltou que, em 2024, a Agência aprovou a Súmula nº 27, que reconhece a legitimidade da aplicação da multa de ofício nos casos de ausência ou inexatidão na declaração da CIDE-Fust, reforçando o entendimento já sedimentado. Assim, conclui que a multa de ofício deve ser mantida no caso analisado:
+Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243)
+VI - Percentual da multa de ofício
+33. A referida sanção tributária está prevista na Lei nº 9.430, de 1996, nos seguintes termos:
+Art. 44. Nos casos de lançamento de ofício, serão aplicadas as seguintes multas: (Vide Lei nº 10.892, de 2004) (Redação dada pela Lei nº 11.488, de 2007)
+I - de 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição nos casos de falta de pagamento ou recolhimento, de falta de declaração e nos de declaração inexata; (Vide Lei nº 10.892, de 2004) (Redação dada pela Lei nº 11.488, de 2007)
+34. O entendimento pela aplicabilidade de multa de ofício está firmado há muitos anos no âmbito desta PFE e da Procuradoria-Geral Federal, conforme Parecer nº 1060/2010/BSA/PGF/PFE-Anatel, aprovado pela SUBCOB, então denominada Coordenação-Geral de Cobrança e Recuperação de Créditos da Procuradoria-Geral Federal, conforme no Despacho CGCOB nº26/2011 e pelo Procurador-Geral Federal [3].
+35. Com efeito, a circunstância do Fust ser arrecadado pela Anatel não legitima sob qualquer perspectiva sua descaracterização como tributo federal, a qual nos parece evidente, de modo que omissões na declaração do tributo estão sujeitas à referida sanção.
+36. Por outro lado, a previsão de multa no art. 8º, 1º, do Decreto nº 3.624, de 2000, não afasta a aplicação da multa de ofício [4].
+37. Primeiramente, deve-se observar que a multa do Decreto nº 3.624, de 2000, é fixada em percentual modesto, sem cunho punitivo, visando apenas compensação pelo inadimplemento. A multa da Lei n° 9.998/2000 tem efetivamente natureza sancionatória, não recaindo em caso de simples inadimplemento, mas apenas em situações infracionais, como omissões ou mesmo fraudes perpetradas pelo contribuinte.
+38. A multa moratória, portanto, não se identifica, nem pode se sobrepor à multa punitiva, porquanto os suportes fáticos e o bem tutelado por ambas as normas é diverso.
+39. Ademais, ainda que houvesse conflito entre as normas, a norma legal é que afastaria o regulamento e não o contrário. Nenhum critério de solução de antinomia prevalece sobre o hierárquico, haja vista que norma derivada de poder regulamentar não pode se valer de sua especialidade como subterfúgio para suprimir norma legal, à qual deve submissão [5].
+40. Por fim, tendo em vista entendimento antigo e sedimentado no âmbito da Agência, corroborado por inúmeras manifestações desta Procuradoria, Conselho Diretor editou enunciado com o seguinte teor:
+Súmula nº 27, de 26 de julho de 2024 - Dispõe sobre a legitimidade da aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust), nos processos administrativos fiscais 
+41. Assim, a multa de ofício deve ser preservada na espécie.
+Alinho-me aos argumentos expostos pela Área Técnica e pela PFE-Anatel. Como bem ressaltado pelo Órgão Jurídico, a legislação é clara ao distinguir dois tipos de multa, de naturezas distintas: a moratória e a sancionatória. A multa de mora, definida no art. 8º, I, do Decreto nº 3.624/2000, tem como objetivo a compensação pelo inadimplemento no pagamento do tributo. Por outro lado, a multa sancionatória, estabelecida pelo art. 44, I, da Lei nº 9.430/1996, é aplicável em situações infracionais, tais como em omissões ou fraudes cometidas pelo contribuinte.
+A aplicação de cada tipo de multa depende, então, da situação fática específica. Nos presentes autos, houve a constatação de valores devidos não declarados pela Recorrente, o que exige a aplicação de multa de ofício, conforme definida pelo art. 44, I, da Lei nº 9.430/1996.
+Tem-se, ainda, que o tema restou pacificado pela Anatel em sua Súmula nº 27, de 26 de julho de 2024, que consolida o entendimento de que a omissão ou inexatidão na declaração configura infração apta a justificar a atuação sancionatória do ente fiscalizador, assegurando a correta apuração e recuperação do crédito tributário correspondente:
+Súmula nº 27
+Editar a presente Súmula:
+"Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust)".
+Esta Súmula entra em vigor na data de sua publicação.
+Considerando todo o exposto, rejeita-se o argumento recursal relativo à impossibilidade de aplicação de multa de ofício fundamentada no art. 44, I, da Lei nº 9.430/1996.
+III.3 - Da Revisão dos Valores Apurados e Devidos
+Conforme já relatado, após a interposição do Recurso Administrativo e a partir dos resultados apresentados nos Relatórios de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) e nº 0103/2017/GR02 (SEI nº 1330121), a Área Técnica recalculou os valores devidos em seu Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385):
+Informe nº 546/2023/AFFO6/AFFO/SAF (SEI nº 10539385)
+5.25. Diante do exposto acima, e, após separar as receitas de interconexão/EILD, conforme determina a liminar obtida nos autos do mandado de segurança nº 2006.34.00.002861-6, obtivemos os seguintes resultados. Vejamos:
+[Item 58 do Apartado Sigiloso SEI nº 15465041]
+5.26. Portanto, de acordo com as tabelas acima, os valores do(s) lançamento(s) de ofício realizado(s), ante a ausência ou insuficiência de recolhimento da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, em razão da falta e/ou incorreção da declaração de suas receitas perante esta Agência, equivalendo [Item 59 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, [Item 60 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005.
+5.27. Quanto à multa de ofício, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, equivalendo ao montante de [Item 61 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão, para o exercício de 2005.
+5.28. Sobre o valor acima referido deve incidir juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período.
+[Item 62 do Apartado Sigiloso SEI nº 15465041]
+5.29. Portanto, de acordo com as tabelas acima, os valores do(s) lançamento(s) de ofício realizado(s), ante a ausência ou insuficiência de recolhimento da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, em razão da falta e/ou incorreção da declaração de suas receitas perante esta Agência, equivalendo [Item 63 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, R$ 0,00 (zero real), referente às receitas sem interconexão, para o exercício de 2006.
+5.30. Quanto à multa de ofício, em conformidade com o art. 44, I, da Lei nº 9.430 de 27 dezembro de 1996, equivalendo ao montante de R$ 0,00 (zero real), referente às receitas sem interconexão, para o exercício de 2006.
+5.31. Sobre o valor acima referido deve incidir juros de mora correspondentes a 1% (um por cento) ao mês, desde o vencimento até dezembro de 2008, nos termos do art. 8º, §§ 1º e 2º, do Regulamento do Fust, do art. 7º do Regulamento de Arrecadação do Fust e do art. 161, § 1º, do Código Tributário Nacional e, a partir de então, da Taxa Selic apurada no período. 
+Tais resultados fundamentaram a emissão do Despacho Decisório nº 788/2024/AFFO6/AFFO/SAF (SEI nº 12861570), que reviu parcialmente os lançamentos realizados referentes às receitas de interconexão e às multas de ofício, interrompendo a incidência de juros de mora sobre receitas de interconexão.
+Em 18 de março de 2026, a SCO emitiu o Informe nº 5/2026/SCO (SEI nº 15318860), que apresentou análise complementar sobre créditos tributários do Fust referentes aos exercícios de 2005 e 2006, envolvendo a Telefônica Brasil S.A. (sucessora da Telergipe Celular S.A.). O documento revisou valores devidos após manifestação da Procuradoria, ajustando os montantes relativos a receitas de interconexão e multas, visto não ser possível majorar os valores cobrados originalmente, nos termos dos art. 149, parágrafo único, c/c art. 150, § 4º, do Código Tributário Nacional. Recomendou-se, então, o não conhecimento do recurso de ofício (por valor exonerado inferior ao limite) e a procedência parcial do recurso voluntário:
+Informe nº 5/2026/SCO (SEI nº 15318860)
+3.12. Todavia, não obstante a concordância da PFE-Anatel com as conclusões do Informe nº 1/2026/SCO (SEI 15035010), esta área técnica identificou a necessidade de promover ajustes nas tabelas constantes do item 3.12 do referido Informe, especificamente no que se refere aos valores relacionados à interconexão, tendo em vista que não é possível majorar os valores cobrados originalmente, nos termos dos arts. 149, parágrafo único, c/c 150, § 4º, do Código Tributário Nacional.
+3.13. Nesse contexto, procedeu-se à revisão dos valores apresentados, com a devida atualização das tabelas correspondentes:
+[Item 64 do Apartado Sigiloso SEI nº 15465041]
+[Item 65 do Apartado Sigiloso SEI nº 15465041]
+4.14. Desta forma, os valores dos lançamentos de ofício realizados, ante a ausência ou insuficiência de recolhimento da Contribuição ao Fust, em razão da falta e/ou incorreção da declaração das receitas perante esta Agência, são:
+a) para o exercício de 2005: [Item 66 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, [Item 67 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão; quanto à multa de ofício, o montante de [Item 68 do Apartado Sigiloso SEI nº 15465041], referente às receitas sem interconexão;
+b) para o exercício de 2006: [Item 69 do Apartado Sigiloso SEI nº 15465041], referente às receitas de interconexão, e, R$ 0,00 (zero real), referente às receitas sem interconexão; quanto à multa de ofício, o montante de R$ 0,00 (zero reais), referente às receitas sem interconexão.
+De fato, o art. 150, § 4º, do Código Tributário Nacional, expresso na Lei nº 5.172/1966, trata do prazo máximo para o lançamento de novos créditos e fundamenta a impossibilidade de majoração dos valores cobrados originalmente:
+Lei nº 5.172/1966
+Art. 150. O lançamento por homologação, que ocorre quanto aos tributos cuja legislação atribua ao sujeito passivo o dever de antecipar o pagamento sem prévio exame da autoridade administrativa, opera-se pelo ato em que a referida autoridade, tomando conhecimento da atividade assim exercida pelo obrigado, expressamente a homologa.
+§ 1º O pagamento antecipado pelo obrigado nos têrmos dêste artigo extingue o crédito, sob condição resolutória da ulterior homologação do lançamento.
+§ 2º Não influem sôbre a obrigação tributária quaisquer atos anteriores à homologação, praticados pelo sujeito passivo ou por terceiro, visando à extinção total ou parcial do crédito.
+§ 3º Os atos a que se refere o parágrafo anterior serão, porém, considerados na apuração do saldo porventura devido e, sendo o caso, na imposição de penalidade, ou sua graduação.
+§ 4º Se a lei não fixar prazo a homologação, será êle de cinco anos, a contar da ocorrência do fato gerador; expirado êsse prazo sem que a Fazenda Pública se tenha pronunciado, considera-se homologado o lançamento e definitivamente extinto o crédito, salvo se comprovada a ocorrência de dolo, fraude ou simulação.
+(destaque acrescido)
+No entanto, identifica-se a necessidade de ajuste pontual nos dados apresentados pelo Informe nº 5/2026/SCO (SEI nº 15318860), visto que, para o mês de maio de 2005, o Relatório de Fiscalização nº 0102/2017/GR02 (SEI nº 1323083) apurou valor de receita de interconexão inferior ao identificado no Relatório de Fiscalização nº 0536/2014/GR02 (SEI nº 0669003, fls. 297-306).
+A obrigação tributária, tal como estruturada para a contribuição em exame, é mensalmente constituída, dado que o fato gerador se concretiza em cada período de apuração (mensalidade), vedada a compensação temporal que comprometa a materialidade do tributo. Por consequência, a verificação do fato gerador é realizada de forma individualizada por mês, exigindo que cada competência traduza, com fidelidade, a realidade econômico‑contábil da base de cálculo.
+Nessas condições, a identificação de valor de receita a menor configura hipótese de ajuste do lançamento para recomposição do crédito tributário, em consonância com: (i) o dever‑poder de a Administração constituir corretamente o crédito (art. 142 do CTN); (ii) a tipicidade objetiva da base de cálculo, que demanda correspondência estrita entre fato e norma; e (iii) a verdade material como vetor do processo administrativo fiscal. Ademais, sendo a apuração mensal, o ajuste deve incidir especificamente sobre a competência de maio de 2005, preservando a integridade do período e evitando contaminações intertemporais.
+A tabela a seguir realiza os ajustes necessários, com os valores alterados em destaque:
+[Item 70 do Apartado Sigiloso SEI nº 15465041]
+Considerando os ajustes promovidos pelo Informe nº 5/2026/SCO (SEI nº 15318860), juntamente com o acréscimo indicado acima, tem-se que os valores dos créditos a serem reconhecidos são:
+Para o exercício fiscal de 2005:
+a.1) Lançamento de ofício, referente às receitas de interconexão: [Item 71 do Apartado Sigiloso SEI nº 15465041];
+a.2) Lançamento de ofício, referente às receitas sem interconexão: [Item 72 do Apartado Sigiloso SEI nº 15465041]; e
+a.3) Multa de ofício, referente às receitas sem interconexão: [Item 73 do Apartado Sigiloso SEI nº 15465041].
+Para o exercício fiscal de 2006:
+b.1) Lançamento de ofício, referente às receitas de interconexão: [Item 74 do Apartado Sigiloso SEI nº 15465041];
+b.2) Lançamento de ofício, referente às receitas sem interconexão: R$ 0,00 (zero real); e
+b.3) Multa de ofício, referente às receitas sem interconexão: R$ 0,00 (zero real).
+IV - DA PROPOSTA DE ENCAMINHAMENTO
+A análise dos autos revela que o presente processo observou, de forma rigorosa, todos os requisitos formais e materiais exigidos para sua regular tramitação, em estrita consonância com a legislação aplicável e o Regimento Interno da Agência Nacional de Telecomunicações (Anatel).
+Ressalte-se que a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) foi devidamente instada a se manifestar, tendo apresentado pareceres técnicos e jurídicos que instruíram adequadamente o feito.
+Ademais, a Prestadora foi oportunizada a exercer, em sua plenitude, o direito ao contraditório e à ampla defesa, tendo acesso irrestrito aos autos e possibilidade de manifestação em todas as fases processuais, em atendimento ao disposto no art. 5º, incisos LIV e LV, da Constituição Federal.
+No que tange aos principais aspectos do processo, verifica-se que este versa sobre a apuração dos valores devidos a título de contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), referentes aos exercícios de 2005 e 2006, originalmente atribuídos à TELERGIPE CELULAR S/A, posteriormente incorporada pela VIVO S/A e, na sequência, pela TELEFÔNICA BRASIL S/A.
+O processo foi instruído com relatórios de fiscalização, manifestações técnicas, revisões de valores e manifestações jurídicas, tendo havido, inclusive, juízo de retratação pela autoridade de primeira instância, com a devida adequação dos lançamentos em observância à decisão judicial que determinou a suspensão da exigibilidade de parte dos créditos.
+No que concerne à admissibilidade do Recurso Administrativo interposto pela Prestadora, constata-se que foram atendidos todos os requisitos previstos no art. 116 do Regimento Interno da Anatel, notadamente quanto à tempestividade, legitimidade e interesse recursal, não havendo óbice ao seu conhecimento.
+Passando à análise dos argumentos recursais, destacam-se os seguintes pontos:
+Alegação de nulidade das notificações de lançamento por ausência de motivação: Tanto a Área Técnica quanto a PFE-Anatel manifestaram-se no sentido de que as notificações continham os elementos essenciais exigidos pela legislação, sendo certo que eventuais omissões foram supridas pelo acesso da Recorrente aos relatórios de fiscalização e demais documentos constantes dos autos. Não se vislumbrou, portanto, qualquer prejuízo ao exercício do direito de defesa, razão pela qual rejeito a alegação de nulidade;
+Decadência do direito de lançamento da multa de ofício: Restou demonstrado, tanto pela Área Técnica quanto pela PFE-Anatel, que o prazo decadencial para constituição do crédito tributário é de cinco anos, nos termos do art. 173, I, do Código Tributário Nacional, tendo os lançamentos sido realizados dentro do prazo legal. Assim, afasto a alegação de decadência;
+Suposta incorreção da base de cálculo da contribuição ao Fust: Após nova diligência, a Área Técnica revisou a base de cálculo, excluindo receitas não tributáveis, abatendo descontos concedidos e segregando receitas de interconexão e EILD, em conformidade com decisão judicial. A PFE-Anatel corroborou a adequação dos procedimentos adotados. Dessa forma, entendo que os ajustes necessários foram devidamente realizados, restando prejudicado o argumento recursal;
+Incidência de multa e juros sobre créditos com exigibilidade suspensa: Tanto a Área Técnica quanto a PFE-Anatel reconheceram que, sobre as receitas de interconexão com exigibilidade suspensa por decisão judicial, não incide multa de ofício, subsistindo, contudo, a incidência de juros de mora, conforme entendimento sumulado do Conselho Administrativo de Recursos Fiscais (CARF). Os lançamentos foram ajustados para refletir tal orientação, razão pela qual o argumento recursal foi acolhido parcialmente; e
+Impossibilidade de cobrança de multa de ofício de 75% (setenta e cinco por cento): A Área Técnica e a PFE-Anatel esclareceram que a multa de 2% (dois por cento) prevista no Decreto nº 3.624/2000 possui natureza moratória, ao passo que a multa de 75% (setenta e cinco por cento) prevista no art. 44, I, da Lei nº 9.430/1996 é de natureza punitiva, aplicável nos casos de omissão ou inexatidão na declaração. A aplicação da multa de ofício encontra respaldo na jurisprudência administrativa e em súmula da Anatel. Assim, rejeito o pedido de aplicação do percentual de 2% (dois por cento) e mantenho a multa de ofício de 75% (setenta e cinco por cento) sobre as parcelas cabíveis.
+Em razão dos novos valores apurados, determino que a Superintendência de Controle de Obrigações (SCO) proceda à comunicação formal ao Ministério das Comunicações, para que sejam adotadas as providências cabíveis quanto à atualização dos valores referentes à contribuição ao Fust, bem como à cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), considerando que ambos compartilham a mesma base de cálculo.
+Diante do exposto, proponho:
+o não conhecimento do Recurso de Ofício, visto que seu valor é inferior ao limite para sua interposição;
+o conhecimento do Recurso Administrativo e, no mérito, o seu provimento parcial, revendo os valores devidos, conforme os valores mais recentes apurados pela Área Técnica e ajustes feitos nesta Análise;
+a interrupção da incidência de multa de mora sobre as receitas de interconexão relativas aos exercícios de 2005 e 2006, voltando a ser cobrada após a publicação da decisão judicial que considerar devido o tributo; e
+a determinação à Superintendência de Controle de Obrigações (SCO) para que comunique ao Ministério das Comunicações o resultado deste processo.
+É a proposta de encaminhamento.
+III.5 - Da Relação com a Agenda 2030: Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU)
+Por fim, tem-se que a Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela representa um compromisso assumido por todos os países participantes da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável de 2015, que reuniu os 193 (cento e noventa e três) Estados‑membros da ONU, incluindo o Brasil, e prevê a adoção de medidas ousadas, abrangentes e essenciais para fortalecer o Estado de Direito, promover os direitos humanos e ampliar a responsividade das instituições políticas.
+A Agenda 2030 é composta por 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, sendo importante que referida aderência esteja explícita nas decisões deste Conselho Diretor.
+A proposta de encaminhamento contida na presente Análise se relaciona com o Objetivo 10 da Agenda 2030, uma vez que a garantia de uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais.
+Relaciona-se, ainda, com o Objetivo 16, pois, conforme demonstrado, observaram-se durante todo o trâmite processual os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel, identificando-se, em especial, com a Meta 16.6, que propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+CONCLUSÃO
+Voto por:
+não conhecer do recurso de ofício, uma vez que o valor exonerado é inferior ao limite para sua interposição;
+ratificar o conhecimento do recurso administrativo interposto pela TELEFÔNICA BRASIL S/A, sucessora da TELERGIPE CELULAR S/A, e, no mérito, o seu provimento parcial, apenas em relação à reavaliação da base de cálculo da contribuição ao Fust, revendo os valores devidos para:
+b.1) reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao Fust, nos montantes de [Item 75 do Apartado Sigiloso SEI nº 15465041], referentes às receitas de interconexão, e de [Item 76 do Apartado Sigiloso SEI nº 15465041], referentes às receitas sem interconexão, para o exercício de 2005, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000;
+b.2) reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao Fust, nos montantes de [Item 77 do Apartado Sigiloso SEI nº 15465041], referentes às receitas de interconexão, e, R$ 0,00 (zero real), referentes às receitas sem interconexão, para o exercício de 2006, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000;
+b.3) reconhecer a procedência parcial dos lançamentos dos créditos referentes à multa de ofício, referente às receitas sem interconexão e em virtude da não declaração da contribuição, no montante de [Item 78 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2005, em conformidade com o art. 44, I, da Lei nº 9.430, de 27 de dezembro de 1996; e
+b.4) interromper a incidência da multa de mora, sobre as receitas de interconexão relativas aos exercícios de 2005 e 2006, desde a concessão da medida judicial até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo.
+determinar à Superintendência de Controle de Obrigações (SCO) para que comunique ao Ministério das Comunicações o resultado deste processo, para as providências cabíveis quanto à atualização dos valores do Fust e do Funttel; e
+determinar a notificação da Recorrente e o posterior arquivamento dos autos.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15272297 e o código CRC 52227218.
+ | 
+Referência: Processo nº 53508.015099/2009-46 | 
+SEI nº 15272297 |

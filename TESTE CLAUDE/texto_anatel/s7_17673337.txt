@@ -1,0 +1,472 @@
+SEI/ANATEL - 15804330 - Análise
+Boletim de Serviço Eletrônico em 04/09/2026
+Análise nº 52/2026/EH
+Processo nº 53504.005072/2023-33
+Interessado: CLARO S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Análise do Pedido de Reconsideração interposto pela CLARO S/A (SEI nº 15603644) em face de decisão consubstanciada no Acórdão nº 102, de 17/04/2026, SEI nº 15509881, que prorrogou o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário para a prestadora, sem exclusividade, decorrentes de licitação, com vencimento em 1º de junho de 2026.
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE RECONSIDERAÇÃO. PRORROGAÇÃO DE DIREITO DE USO DE RADIOFREQUÊNCIA. FAIXA DE 1.800 MHZ. PEDIDO DESPROVIDO.
+I. CASO EM EXAME
+O pedido. CLARO S.A. interpõe pedido de reconsideração contra o Acórdão nº 102, de 17/04/2026, que prorrogou autorizações de uso de radiofrequências associadas ao SMP nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz.
+Ponto controvertido. A insurgência recai sobre a subfaixa de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, cuja prorrogação foi limitada a 22/12/2032.
+Pretensão recursal. A interessada requer a reforma parcial do acórdão para que a prorrogação da faixa de 1.800 MHz seja deferida por 15 anos, até 30/05/2041.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o pedido de reconsideração preenche os requisitos de admissibilidade; (ii) saber se a compatibilidade técnica da subfaixa de 1.800 MHz com a canalização prevista na regulamentação vigente afasta o limite temporal de 22/12/2032; e (iii) saber se precedentes do TCU e o alegado interesse público na continuidade do uso eficiente da faixa autorizam a prorrogação até 30/05/2041.
+III. RAZÕES DE DECIDIR
+O pedido de reconsideração é cabível, tempestivo, foi apresentado por parte legitimada e não colide com Súmula da Agência.
+O pedido deve ser conhecido, porque estão presentes os requisitos legais e regimentais de admissibilidade previstos no RIA.
+A limitação temporal da faixa de 1.800 MHz decorre da regulamentação vigente e da política regulatória de reorganização da faixa para uso mais eficiente do espectro e de futura licitação.
+A Resolução nº 757/2022 já havia estabelecido prazo para continuidade de operação dos sistemas autorizados sob as condições da Resolução nº 454/2006 até 22/12/2032, ressalvada a situação específica de Minas Gerais.
+A Resolução nº 773/2025 manteve tratamento regulatório distinto para a faixa de 1.800 MHz em relação às faixas de 1.900 MHz e 2.100 MHz.
+A compatibilidade técnica da subfaixa atualmente utilizada pela recorrente não afasta o limite temporal previsto na regulamentação.
+A manifestação técnica sobre aderência da subfaixa ao novo arranjo regulatório foi produzida para exame dos requisitos legais da prorrogação e não para autorizar uso além do prazo regulatório fixado.
+A Agência vem preparando, desde 2019, a reorganização da faixa de 1.800 MHz para permitir uso mais eficiente do espectro e futura licitação após 2032.
+A desocupação integral da faixa é considerada necessária para viabilizar o refarming e a nova ocupação em condições mais eficientes.
+Os precedentes do TCU invocados pela recorrente tratam das faixas de 1.900 MHz e 2.100 MHz e não se aplicam à faixa de 1.800 MHz, que possui disciplina regulatória diversa.
+A existência de uso real, contínuo e eficiente da faixa pela prestadora atende aos requisitos para análise do pedido de prorrogação, mas não autoriza afastar o limite temporal estabelecido na regulamentação.
+Não há fundamento para reformar o Acórdão nº 102/2026 no ponto impugnado.
+IV. DISPOSITIVO E TESE
+Pedido de reconsideração conhecido e desprovido.
+Tese de julgamento: "1. O pedido de reconsideração interposto contra decisão do Conselho Diretor deve ser conhecido quando presentes os requisitos regimentais de admissibilidade. 2. A compatibilidade técnica da subfaixa de 1.800 MHz com o novo arranjo de canalização não afasta o limite temporal de uso fixado na regulamentação vigente. 3. Os precedentes relativos às faixas de 1.900 MHz e 2.100 MHz não se aplicam à faixa de 1.800 MHz, que possui disciplina regulatória própria. 4. O uso eficiente da radiofrequência pela autorizada não autoriza prorrogação além do prazo máximo previsto para a reorganização da faixa. 5. Deve ser mantida a limitação da prorrogação da subfaixa de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz até 22 de dezembro de 2032."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 167, §§ 1º e 2º; Lei nº 9.784/1999; Decreto nº 10.402/2020, art. 12, IV; Resolução nº 612/2013, arts. 115 e 126, § 2º; Resolução nº 671/2016, arts. 1º e 2º; Resolução nº 757/2022, art. 25; Resolução nº 773/2025, art. 33, XV.
+Jurisprudência relevante citada: TCU, Acórdão nº 2.471/2024; TCU, Acórdão nº 2.487/2024; Anatel, Acórdão nº 274, de 31/08/2022; Anatel, Acórdão nº 194, de 14/08/2023.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicação (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA);
+Resolução nº 548, de 8/11/2010 - Regulamento para Avaliação da Eficiência de Uso do Espectro de Radiofrequência;
+Resolução nº 612, de 29/04/2013, que aprovou o Regimento Interno da Anatel (RIA);
+Resolução nº 671, de 3/11/2016 - Regulamento de Uso do Espectro de Radiofrequências;
+Resolução nº 772, de 16/01/2025, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil;
+Resolução nº 773, de 16/01/2025 - Regulamento de Condições de Uso de Radiofrequências;
+Acórdão nº 102, de 17/04/2026 (SEI nº 15509881).
+RELATÓRIO
+DOS FATOS
+Trata-se da análise do pedido de reconsideração apresentado pela CLARO S/A (SEI nº 15603644) em face da decisão consubstanciada no Acórdão nº 102, de 17/04/2026 (SEI nº 15509881), que prorrogou o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário para a prestadora, sem exclusividade, decorrentes de licitação, com vencimento em 1º de junho de 2026.
+Em breve síntese, instaurou-se este procedimento em 03/05/2023, por meio do Requerimento de Serviços de Telecomunicações (SEI nº 10184697), com o propósito de solicitar a prorrogação do direito de uso de radiofrequências, nas faixas citadas acima, em favor da prestadora Claro. O requerimento de prorrogação de uso de radiofrequências, com antecedência mínima de 3 (três) anos antes do vencimento do prazo original, está estabelecido na Lei Geral de Telecomunicações - Lei nº 9.472/97, no §1º do art. 167, conforme abaixo transcrito:
+Art. 167. No caso de serviços autorizados, o prazo de vigência será de até 20 (vinte) anos, prorrogável por iguais períodos, sendo necessário que a autorizada tenha cumprido as obrigações já assumidas e manifeste prévio e expresso interesse. 
+§ 1º A prorrogação, sempre onerosa, poderá ser requerida até três anos antes do vencimento do prazo original, devendo o requerimento ser decidido em, no máximo, doze meses.
+A mesma previsão também está expressa no Termo de Outorga de Autorização de Uso de Blocos de Radiofrequência nº 31/2011/PVCP/SPV-ANATEL, na Cláusula 3.4:
+Cláusula 3.4 - O requerimento para a prorrogação do direito de uso das radiofrequências deverá ser encaminhado à Anatel no interregno de quatro anos, no máximo, até três anos, no mínimo, anteriores à data de vencimento do prazo original.
+Em decorrência da solicitação realizada pela prestadora, a Superintendência de Outorga e Recursos à Prestação - SOR analisou a documentação e, após algumas interações com a prestadora para atendimento de exigências, no dia 04/02/2026, expediu o Informe nº 333/2026/ORLE/SOR (SEI nº 15030528) para avaliação da Procuradoria Federal Especializada da Anatel - PFE.
+No dia 12/02/2026, a PFE se manifestou favorável ao pedido formulado, conforme consta do Parecer nº 59/2026/PFE-ANATEL/PGF/AGU (SEI nº 15189160).
+No dia 19/02/2026, por meio da Matéria para Apreciação do Conselho Diretor 122/2026 (SEI nº 15190322), a área técnica encaminhou a solicitação de prorrogação das autorizações de uso de radiofrequências para este colegiado.
+Na Reunião do Conselho Diretor nº 952, que ocorreu no dia 09/04/2026, este Colegiado aprovou, por unanimidade, a Análise nº 27/2026/OP (SEI nº 15348988), na qual propunha a aprovação da prorrogação das faixas de frequências objeto da solicitação, nos seguintes termos:
+- Para as faixas de 1.900 MHz e 2.100 MHz, o direito de uso foi prorrogado até o dia 30/05/2041.
+- Para a faixa de 1.800 MHz, o direito de uso foi prorrogado até o dia 22/12/2032.
+No dia 27/04/2026, foi publicado o Acórdão nº 102 (SEI nº 15509881) com a decisão de prorrogação das faixas de frequência, conforme proposto pelo eminente relator.
+No dia 07/05/2026, foi publicado no Diário Oficial da União o Ato nº 6.172 (SEI nº 15594554), com a prorrogação da vigência das autorizações de uso das radiofrequências outorgadas à CLARO S/A, nos termos aprovados por este Colegiado. Neste mesmo dia, a prestadora ingressou com pedido de reconsideração (SEI nº 15603644) no qual se insurgiu especificamente sobre o prazo concedido na prorrogação da faixa de 1.800 MHz.
+No dia 12/05/2026, a área técnica encaminhou o pedido de reconsideração da prestadora, por meio do Ofício nº 3253/2026/ORLE/SOR-ANATEL (SEI nº 15609213), para avaliação deste Colegiado
+No dia 14/05/2026, conforme consta da Certidão de Distribuição SEI nº 15637713, fui designado relator da Matéria.
+É o breve relatório.
+DA ANÁLISE
+Trata-se da análise do pedido de reconsideração interposto pela prestadora CLARO S/A (SEI nº 15603644), de 07/05/2026, em face da decisão consubstanciada no Acórdão nº 102, de 17/04/2026 (SEI nº 15509881), que prorrogou o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário para a prestadora, sem exclusividade, decorrentes de licitação, com vencimento em 1º de junho de 2026.
+Em 09/04/2026, por meio do Acórdão nº 102 (SEI nº 15509881) e com fulcro na Análise nº 27/2026/OP (SEI nº 15348988) o Conselho Diretor decidiu, in verbis:
+Acórdão nº 102, de 17 de Abril de 2026
+Processo nº 53504.005072/2023-33
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PRORROGAÇÃO DE DIREITOS DE USO DE RADIOFREQUÊNCIAS. SERVIÇO MÓVEL PESSOAL - SMP. PEDIDO DEFERIDO COM CONDICIONANTES.
+I. CASO EM EXAME
+1. O Pedido. CLARO S.A. solicita a primeira prorrogação de autorizações de uso de radiofrequências associadas à autorização para explorar o Serviço Móvel Pessoal - SMP, nas faixas de 1.800 MHz, 1.900 MHz e 2.100 MHz, outorgadas em caráter primário, sem exclusividade, decorrentes de licitação, com vencimento em 1º de junho de 2026.
+2. Instrução. A Superintendência de Outorga e Recursos à Prestação - SOR conclui pela possibilidade de deferimento do Pedido. A área técnica propõe a prorrogação das autorizações, a definição do valor devido conforme os Termos de Autorização, o condicionamento à comprovação de regularidade fiscal e a celebração de Termos de Autorização distintos.
+3. Manifestação jurídica. Parecer nº 59/2026/PFE-ANATEL/PGF/AGU conclui pela viabilidade jurídica do deferimento, com observância das cláusulas dos Termos e dos requisitos legais e regulamentares aplicáveis à primeira prorrogação.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se o Conselho Diretor é competente para decidir a prorrogação; (ii) saber se o Pedido é tempestivo; (iii) saber se estão afastadas as hipóteses legais e regulamentares de indeferimento na primeira prorrogação; e (iv) saber se o valor e as condições para formalização da prorrogação devem observar as cláusulas contratuais e condicionantes de regularidade fiscal.
+III. RAZÕES DE DECIDIR
+1. O Conselho Diretor é competente para decidir sobre a prorrogação de direito de uso de radiofrequências decorrentes de licitação.
+2. O Pedido é tempestivo, pois foi apresentado em 3 de maio de 2023, antes de 3 (três) anos do vencimento, em 1º de junho de 2026, nos termos da Lei Geral de Telecomunicações - LGT e da Cláusula 3.4 dos Termos de Autorização.
+3. Na primeira prorrogação, a análise deve observar o regime previsto nos próprios Termos de Autorização. O indeferimento somente cabe nas hipóteses restritas de uso não racional e inadequado da radiofrequência, infrações reiteradas ou necessidade de modificação de destinação ou de condições de uso.
+4. A avaliação técnica indica uso racional, adequado e eficiente do espectro nas faixas e áreas de prestação analisadas, segundo os critérios do Regulamento para Avaliação da Eficiência de Uso do Espectro.
+5. A análise de infrações e do cumprimento de obrigações editalícias foi detalhada e não configura óbice à prorrogação, com avaliação orientada por critérios de razoabilidade e proporcionalidade.
+6. Não se identifica necessidade de modificação de destinação ou das condições de uso das faixas de 1.800 MHz e 1.900/2.100 MHz que impeça a prorrogação, consideradas as destinações e condições vigentes no Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF e no Regulamento de Condições de Uso de Radiofrequências.
+7. A manutenção da outorga exige o atendimento às condições subjetivas previstas na LGT, com verificação atualizada de regularidade antes da efetivação da prorrogação.
+8. A prorrogação é onerosa e, por se tratar de primeira prorrogação, o valor devido deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL.
+9. Para a subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, o prazo de vigência da prorrogação deve observar o art. 33, XV, da Resolução nº 773/2025. O vencimento deve ocorrer em 22 de dezembro de 2032.
+10. Para as demais autorizações objeto do Pedido, a prorrogação deve vigorar por 15 (quinze) anos a contar do vencimento original, com vencimento em 30 de maio de 2041.
+11. A manutenção de Termos de Autorização distintos é compatível com a revogação do Plano Geral de Autorizações do Serviço Móvel Pessoal - PGA-SMP e preserva a individualização dos compromissos originais.
+12. A formalização do ato de prorrogação deve ser condicionada à apresentação de documentação comprobatória de regularidade fiscal, no âmbito federal, e perante a Anatel.
+IV. DISPOSITIVO E TESE
+Pedido deferido, com condicionantes.
+Tese de julgamento: "1. Compete ao Conselho Diretor decidir sobre a primeira prorrogação de direitos de uso de radiofrequências decorrentes de licitação. 2. Na primeira prorrogação, aplicam-se as hipóteses restritas de indeferimento previstas na Lei nº 9.472/1997, no Regulamento de Uso do Espectro de Radiofrequências e nos Termos de Autorização. 3. O pedido tempestivo, a demonstração de uso racional, adequado e eficiente do espectro, a ausência de óbice por infrações reiteradas e a inexistência de necessidade de modificação de destinação ou de condições de uso autorizam a prorrogação. 4. O valor devido pela prorrogação deve observar a Cláusula 3.3 dos Termos nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL. 5. A expedição do ato de prorrogação fica condicionada à comprovação de regularidade fiscal federal e perante a Anatel. 6. A subfaixa de 1.755 a 1.765 MHz e 1.850 a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, deve observar os limites de vigência previstos no art. 33, XV, da Resolução nº 773/2025. 7. Devem ser firmados Termos de Autorização distintos."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 133 e 167; Decreto nº 10.402/2020, art. 12; Resolução nº 612/2013, art. 133, VII; Resolução nº 671/2016, arts. 47, § 2º, e 48; Resolução nº 548/2010, art. 3º, II; Resolução nº 773/2025, art. 33, XV, e art. 316; Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, Cláusulas 3.3 e 3.4.
+Jurisprudência relevante citada: Tribunal de Contas da União - TCU, Acórdão nº 2001/2022, Plenário; Anatel, Acórdão nº 102, Processo nº 53504.000320/2020-15, Conselheiro Relator Alexandre Reis Siqueira Freire, Circuito Deliberativo nº 96, 27 de abril de 2023; Anatel, Acórdãos nº 99, nº 105 e nº 106, Conselho Diretor, 28 de abril de 2023; Anatel, Acórdãos nº 274, de 31 de agosto de 2022, nº 375, de 06 de dezembro de 2022, nº 383, de 14 de dezembro de 2022, nº 105, de 28 de abril de 2023, nº 194, de 14 de agosto de 2023, e nº 215, de 25 de agosto de 2023.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 27/2026/OP (SEI nº 15348988), integrante deste acórdão:
+a) prorrogar o prazo de vigência das autorizações de uso das radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, sem exclusividade, em caráter primário, nas faixas de frequência e com prazo de vencimento abaixo indicados, nos termos da Minuta de Ato SEI nº 15443520:
+ Termo de Autorização Vigente
+ | 
+ Data D.O.U.
+ | 
+ Área de Prestação
+ | 
+ Subfaixas
+ | 
+ Vencimento Proposto
+ | 
+ 31/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ Estados do RJ, ES, BA e SE
+ Estados do AM, AP, PA, MA e RR
+ Estados do CE, PB, PE, PI, RN e AL
+ Municípios do Setor 3 do PGO
+ Estado de MG exceto os municípios do Código Nacional – CN 34, 35, 37
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ Estados do RJ, ES, MG, AM, RR, AP, PA, MA, BA, SE, PI, CE, RN, PB, PE e AL.
+ | 
+ 1.755 a 1.765MHz / 1.850 a 1.860MHz
+ | 
+ 22/12/2032
+ | 
+ 32/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ DF e Estados do AC, TO, MS (exceto CN 67), MT, RS, SC, RO, GO (exceto CN 64) e PR (exceto CN 43)
+ Municípios do CN 64 (exceto setor 25 do PGO) e CN 67 (exceto setor 22 do PGO)
+ Municípios do CN 43 (exceto Londrina/PR e Tamarana/PR)
+ Municípios de Londrina/PR e Tamarana/PR
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+ 33/2011/PVCP/SPV
+ | 
+ 30/05/2011
+ | 
+ CN 11 que envolve os municípios de Alumínio, Araçariguama, Arujá, Atibaia, Barueri, Biritiba-Mirim, Bom Jesus dos Perdões, Bragança Paulista, Cabreúva, Caieiras, Cajamar, Campo Limpo Paulista, Carapicuíba, Cotia, Diadema, Embu, Embu-Guaçú, Ferraz de Vasconcelos, Francisco Morato, Franco da Rocha, Guararema, Guarulhos, Igaratá, Itapecerica da Serra, Itapeví, Itaquaquecetuba, Itatiba, Itú, Itupeva, Jandira, Jarinu, Joanópolis, Jundiaí, Juquitiba, Mairinque, Mairiporã, Mauá, Mogi das Cruzes, Morungaba, Nazaré Paulista, Osasco, Pedra Bela, Pinhalzinho, Piracaia, Pirapora do Bom Jesus, Poá, Ribeirão Pires, Rio Grande da Serra, Salesópolis, Salto, Santa Izabel, Santana de Parnaíba, Santo André, São Bernardo do Campo, São Caetano do Sul, São Lourenço da Serra, São Paulo, São Roque, Suzano, Taboão da Serra, Tuiuti, Vargem, Vargem Grande Paulista e Várzea Paulista, todos no Estado de São Paulo.
+ Estado de SP (exceto municípios da CN 11, CN 16, CN 17 e setor 33 do PGO)
+ Municípios com o CN 16 e 17 (exceto o Setor 33 do PGO)
+ Municípios do Setor 33 do PGO
+ | 
+ 1.945 a 1.955MHz / 2.135 a 2.145MHz
+ | 
+ 30/05/2041
+ | 
+b) estabelecer que o valor devido pela prorrogação do prazo de vigência das autorizações de uso de radiofrequências deve obedecer às regras estabelecidas na Cláusula 3.3 dos Termos de Outorga de Autorização para Uso de Radiofrequências nº 31/2011/PVCP/SPV-ANATEL, nº 32/2011/PVCP/SPV-ANATEL e nº 33/2011/PVCP/SPV-ANATEL, celebrados com a CLARO S.A., CNPJ nº 40.432.544/0001-47;
+c) condicionar a expedição do Ato que formaliza a prorrogação do prazo de vigência das autorizações de uso de radiofrequências associadas às autorizações para exploração do Serviço Móvel Pessoal - SMP, outorgadas à CLARO S.A., CNPJ nº 40.432.544/0001-47, à apresentação da documentação comprobatória da regularidade fiscal, no âmbito federal, e perante a Anatel, pela Interessada; e,
+d) determinar que sejam firmados Termos de Autorização distintos.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+O referido Acórdão foi decorrente da análise da solicitação de prorrogação do direito de uso de radiofrequências realizado pela própria recorrente, por meio do Requerimento de Serviços de Telecomunicações (SEI nº 10184697) acostado a este processo.
+Em resumo, o Acórdão citado descreveu a decisão deste Colegiado de aprovar a prorrogação das faixas de frequências objeto da solicitação, nos seguintes termos:
+- Para as faixas de 1.900 MHz e 2.100 MHz, o direito de uso foi prorrogado até o dia 30/05/2041.
+- Para a faixa de 1.800 MHz, o direito de uso foi prorrogado até o dia 22/12/2032.
+A petição, que está sendo objeto desta análise, versa sobre a irresignação da recorrente quanto à limitação da prorrogação do uso da faixa 1.800 MHz até o dia 22/12/2032, uma vez que a expectativa da Prestadora era de que todas as faixas fossem prorrogadas até o dia 30/05/2041.
+A presente Análise está estruturada em 5 (cinco) capítulos: (i) no Capítulo I abordarei o pedido de reconsideração e a possibilidade de conhecê-lo; (ii) no Capítulo II, farei um breve resumo do pedido apresentado, destacando os seus principais argumentos; (iii) no Capítulo III, farei uma contextualização relativamente aos trabalhos realizados pela Anatel para futura utilização da faixa de 1.800 MHz; (iv) no Capítulo IV, exporei minhas considerações acerca das argumentações contidas no pedido de reconsideração apresentado; e (v) por fim, no Capítulo V, realizarei a conformação do objeto da presente Análise com os Objetivos do Desenvolvimento Sustentável - ODS da Organização das Nações Unidas - ONU.
+I - DA ANÁLISE DE ADMISSIBILIDADE
+Nos termos do art. 126, §2º, do Regimento Interno da Anatel (RIA), aplicam-se ao Pedido de Reconsideração as regras estabelecidas no art. 115 do referido normativo, que dispõe sobre os pressupostos recursais de admissibilidade no âmbito da Agência.
+Resolução nº 612, de 29 de abril de 2013 Regimento Interno da Anatel (RIA)
+"Art. 126. Das decisões da Agência proferidas em única instância pelo Conselho Diretor cabe pedido de reconsideração, devidamente fundamentado.
+§ 1º O pedido de reconsideração será distribuído a Conselheiro distinto daquele que proferiu o voto condutor da decisão recorrida.
+§ 2º Aplicam-se ao pedido de reconsideração as regras sobre recurso administrativo expressas no Capítulo V, exceto a alínea “b” do § 1º e os §§ 7º e 8º, do art. 115."
+O Acórdão nº 102 (SEI nº 15509881), de 17/04/2026, foi publicado no DOU de 27/04/2026. O prazo regimental de 10 (dez) dias para a interposição de pedido de reconsideração iniciou-se no dia seguinte, encerrando-se dia 07/05/2026.
+Uma vez que o Pedido de Reconsideração (SEI nº 15603644) foi protocolizado antes do fim do prazo regimental, conforme recibo eletrônico (SEI nº 15603647), é de se reconhecer a tempestividade da espécie.
+Ademais, verifica-se que: (i) a decisão recorrida é suscetível de Pedido de Reconsideração, por haver sido proferida, em instância única, pelo Conselho Diretor, nos termos do art. 126 do RIA; (ii) a peça recursal foi subscrita por parte legitimada; (iii) a interessada ostenta interesse jurídico na reforma da decisão; e (iv) o pleito não colide com entendimento consolidado em Súmula desta Agência.
+Dessarte, uma vez satisfeitos todos os requisitos legais e regimentais de admissibilidade, impõe-se o conhecimento do Pedido de Reconsideração.
+Superada a análise dos pressupostos de admissibilidade, passa-se ao exame do mérito.
+II - DAS ALEGAÇÕES APRESENTADAS PELA CLARO S/A
+A prestadora Claro S/A, por meio de seu pedido de reconsideração SEI nº 15603644, apresenta sua irresignação especificamente quanto à limitação do prazo de prorrogação das autorizações de uso da faixa de 1.800 MHz até 22/12/2032, e solicita que seja reformado parcialmente o Acórdão nº 102 (SEI nº 15509881), de 17/04/2026, para que a referida faixa de radiofrequência seja prorrogada até 30/05/2041, como foi feito com as outras faixas de radiofrequências objetos de seu Requerimento de Serviços de Telecomunicações (SEI nº 10184697). 
+Para contestar essa limitação, a CLARO argumenta que sua autorização na faixa de 1.800 MHz é tecnicamente compatível com o novo arranjo regulatório estabelecido pela Resolução nº 773, de 16/01/2025, que aprova o Regulamento de Condições de Uso de Radiofrequências. A prestadora sustenta que os blocos atualmente utilizados, de 10+10 MHz, correspondem à agregação de blocos de 5+5 MHz previstos na regulamentação mais recente, sem necessidade de adaptação, migração ou rearranjo técnico. Afirma ainda que essa aderência foi reconhecida pela própria área técnica da Anatel.
+A requerente também defende que o art. 33, XV, da Resolução nº 773/2025 não deveria ser aplicado para limitar a prorrogação da autorização do direito de uso das radiofrequências. Na sua interpretação, essa regra transitória se destinaria a situações em que houvesse a necessidade de adaptação ao novo modelo de canalização o que, sob sua óptica, não ocorreria no caso concreto.
+Outro ponto do pedido é a invocação de precedentes do TCU, especialmente os Acórdãos nº 2.487/2024 e nº 2.471/2024, nos quais teria sido reconhecido que a mera recanalização compatível não justifica limitação temporal da prorrogação. A prestadora também alega que a própria Anatel, em manifestações anteriores perante o TCU, defendeu entendimento favorável à continuidade e à prorrogação de autorizações compatíveis com as novas condições de uso, razão pela qual a manutenção da decisão recorrida configuraria incoerência decisória e afronta à segurança jurídica e à isonomia.
+Além disso, a requerente procura afastar a aplicação de precedentes mais antigos do Conselho Diretor, afirmando que eles seriam anteriores à consolidação do entendimento do TCU e não teriam enfrentado diretamente a questão da recanalização compatível.
+Por fim, a CLARO sustenta que o interesse público favorece a prorrogação integral, destacando que a faixa de 1.800 MHz vem sendo utilizada de forma real, contínua e eficiente, com indicadores técnicos positivos e sem sinais de subutilização. Menciona, inclusive, manifestação técnica e parecer jurídico que, segundo a empresa, não identificaram óbices à prorrogação por 15 (quinze) anos.
+A síntese dos pedidos e argumentações está descrita no item Pedidos, de seu recurso, conforme abaixo transcrito:
+Pedidos
+Diante de todo o exposto, a CLARO requer o conhecimento e provimento do presente Pedido de Reconsideração, para que seja reformado parcialmente o Acórdão nº 102/2026, no ponto em que limitou a prorrogação da autorização de uso da subfaixa de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz, objeto do Termo nº 31/2011/PVCP/SPV-ANATEL, ao marco de 22 de dezembro de 2032, considerando (i) a compatibilidade técnica da outorga com o novo arranjo de canalização; (ii) o reconhecimento, pela própria área técnica da ANATEL, de que a subfaixa já se encontra aderente às novas condições de uso; (iii) os precedentes do TCU relativos às faixas de 1.900 MHz e 2.100 MHz; (iv) a manifestação da própria ANATEL perante o TCU no sentido de que normas dessa natureza não impedem prorrogações, licenciamentos ou consignações; e (v) o interesse público na continuidade da exploração eficiente da faixa.
+Assim, requer-se seja provido o presente Pedido de Reconsideração para que se defira a prorrogação do direito de uso de radiofrequências pelo prazo de 15 anos, o que resulta em prorrogação do Termo nº 31/2011/PVCP/SPV-ANATEL até 30 de maio de 2041.
+III - DOS TRABALHOS DESENVOLVIDOS PELA ANATEL PARA A FUTURA UTILIZAÇÃO DA FAIXA DE 1.800 MHz
+Antes de se analisar as alegações da Prestadora, é importante descrever os trabalhos desenvolvidos pela Agência para a melhor utilização da faixa de 1.800 MHz, considerando-se aspectos de uso eficiente do espectro e sua adequação para serviços futuros.
+Atualmente, a faixa de 1.800 MHz, para os sistemas da telefonia celular, compreende as redes que trabalham entre as frequências de 1.710 - 1.785 MHz e de 1.805 - 1.880 MHz, conforme definido na Resolução nº 773/2025. Desde a Resolução nº 253, de 21/12/2000, esta faixa de frequência está atribuída aos serviços móveis, e vem sendo utilizada amplamente para o suporte a tais serviços.
+Por meio de sua atividade de avaliação quanto ao uso eficiente do espectro, a Agência identificou a necessidade de se atualizar como é realizada a ocupação do espectro na faixa de 1.800 MHz. Em razão disso, foi instaurado o processo que culminou na publicação da Resolução nº 757, de 08/11/2022 (SEI nº 53500.012172/2019-70). No Informe nº 156/2020/PRRE/SPR (SEI nº 6149869), a área técnica da Anatel já demonstrou a necessidade de se realizar o refarming da faixa devido à descontinuidade de ocupação espectral, conforme pode-se ver na transcrição dos itens 3.57 a 3.59:
+3.57. A canalização do Segmento FDD, a divisão em subfaixas de 15 MHz (D, E e M) e Subfaixas de Extensão de 2,5 MHz, bem como o histórico de ocupação desse segmento pelas operadoras de SMP, em decorrência de sucessivos processos de licitação ao longo dos anos, acabou por estabelecer alocação das operadoras em subfaixas com descontinuidade de ocupação espectral.
+3.58. Em termos de eficiência de uso do espectro, essa descontinuidade de ocupação espectral é indesejável, na medida em que restringe a implementação de portadoras com maior largura de faixa, como por exemplo, portadoras IMT de (20+20) MHz.
+3.59. Ainda, considerando que a atual canalização FDD da faixa encontra-se defasada em face do atual cenário tecnológico, identifica-se a necessidade de atuação da Agência, buscando promover o uso adequado e eficiente do espectro. ... (grifou-se)
+O arranjo dos blocos do Serviço Móvel Pessoal - SMP para a faixa de 1.800 MHz, na época em que foi assinado o Termo de Autorização nº 31/2011/PVCP/SPV, era o definido por meio da Tabela 1 da Resolução nº 454, de 11/12/2006, que aprovou o Regulamento Sobre Condições de Uso de Radiofrequências nas Faixas de 800 MHz, 900 MHz, 1.800 MHz, 1.900 MHz e 2.100 MHz. Como a Tabela 1 da Resolução nº 454/2006 descreve todos os arranjos de todas as faixas de frequências abrangidas pelo regulamento, reproduzo, abaixo, tabela contida na Análise nº 117/2021/EC (SEI nº 7397736), do Conselheiro Emmanoel Campelo, que destaca somente os blocos das subfaixas de frequência referentes à faixa de 1.800 MHz:
+ | 
+ Transmissão da Estação Móvel (MHz)
+ | 
+ Transmissão da Estação Rádio Base (MHz)
+ | 
+ Subfaixa D
+ | 
+ 1.710 a 1.725
+ | 
+ 1.805 a 1.820
+ | 
+ Subfaixa E
+ | 
+ 1.740 a 1.755
+ | 
+ 1.835 a 1.850
+ | 
+ Subfaixa M
+ | 
+ 1.755 a 1.765
+ | 
+ 1.850 a 1.860
+ | 
+ Subfaixa de Extensão
+ | 
+ 1.725 a 1.727,5
+ | 
+ 1.820 a 1.822,5
+ | 
+ 1.727,5 a 1.730
+ | 
+ 1.822,5 a 1.825
+ | 
+ 1.730 a 1.732,5
+ | 
+ 1.825 a 1.827,5
+ | 
+ 1.732,5 a 1.735
+ | 
+ 1.827,5 a 1.830
+ | 
+ 1.735 a 1.737,5
+ | 
+ 1.830 a 1.832,5
+ | 
+ 1.737,5 a 1.740
+ | 
+ 1.832,5 a 1.835
+ | 
+ 1.765 a 1.770
+ | 
+ 1.860 a 1.865
+ | 
+ 1.770 a 1.775
+ | 
+ 1.865 a 1.870
+ | 
+ 1.775 a 1.777,5
+ | 
+ 1.870 a 1.872,5
+ | 
+ 1.777,5 a 1.780
+ | 
+ 1.872,5 a 1.875
+ | 
+ 1.780 a 1.782,5
+ | 
+ 1.875 a 1.877,5
+ | 
+ 1.782,5 a 1.785
+ | 
+ 1.877,5 a 1.880
+ | 
+Como se pode ver na tabela, as subfaixas de frequência (D e E) possuem largura de banda de 15 MHz, que é a diferença entre a frequência mais alta e a mais baixa da subfaixa (por exemplo, na Subfaixa D: 1725-1710 = 15 MHz). As subfaixas de extensão foram definidas com largura de banda de 2,5 MHz e elas não são contíguas com todas as subfaixas. Outro fato, como já destacado pela área técnica, foram as sucessivas licitações que ocorreram que já ocuparam praticamente todo o espectro.
+Como já bem previsto pela área técnica, o desenvolvimento das comunicações móveis vem exigindo larguras de faixa maiores para que se possam acomodar novos serviços. Nesse sentido, foi necessário realizar uma reorganização das bandas para permitir portadoras com maior largura de faixa, para se acomodar sistemas IMT que exigem portadoras de (20+20) MHz.
+Nesse sentido, a área técnica propôs, por meio do processo nº 53500.012172/2019-70, a reorganização da faixa de 1.800 MHz, mantendo-se a canalização vigente à época (contida na Res. 454/2006) até o vencimento de todas as outorgas na faixa. Assim, após todo o processo regulamentar, a Resolução nº 757/2022, que aprovou o Regulamento de Condições de Uso de Radiofrequências, por meio da sua Seção VII do Capítulo III, estabeleceu o novo arranjo da faixa de 1.800 MHz. Nesta mesma seção, foram estabelecidas as restrições para os sistemas que operavam de acordo com as condições da Res. 454/2006, conforme se observa no art. 25 da Res. nº 757/2022, abaixo transcrito:
+Art. 25. Nas subfaixas de radiofrequências de 1.710 MHz a 1.785 MHz e de 1.805 MHz a 1.880 MHz, sistemas em operação previamente autorizados na vigência da Resolução nº 454/2006, podem continuar em operação de acordo com as condições de uso vigentes na data da respectiva autorização de uso de radiofrequências, até 22 de dezembro de 2032, ou pelo prazo remanescente da autorização de uso de radiofrequências, o que ocorrer primeiro.
+§ 1º Excetua-se do prazo previsto no caput os sistemas em operação no Estado de Minas Gerais previamente autorizados na vigência da Resolução nº 454/2006, que podem continuar em operação de acordo com as condições de uso vigentes na data da respectiva autorização de uso de radiofrequências até 29 de abril de 2035, ou pelo prazo remanescente da autorização de uso de radiofrequências, o que ocorrer primeiro.
+§ 2º Nas subfaixas de radiofrequências de 1.710 MHz a 1.785 MHz e de 1.805 MHz a 1.880 MHz não serão expedidas novas autorizações de uso de radiofrequências, a partir da vigência deste Regulamento, nas condições de uso de radiofrequências estabelecidas na Resolução citada no caput.
+Ressalto, também, que, antes mesmo da publicação da Resolução nº 757/2022, este Colegiado, por meio processo nº 53500.037791/2019-77, que analisou a solicitação da TIM S.A. para a segunda prorrogação de direitos de uso de radiofrequências nas faixas de 850, 900 e 1.800 MHz, baseado na reorganização do espectro para a faixa de 1.800 MHz, tratado no âmbito do processo nº 53500.012172/2019-70, determinou à Superintendência de Outorga e Recursos à Prestação - SOR que limitasse as prorrogações da faixa de 1.800 MHz nos mesmos termos que estavam sendo propostos para a futura Resolução nº 757/2022, conforme se vê na alínea a) do Acórdão nº 274 (SEI nº 9050742), de 31/08/2022, abaixo transcrita:
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por maioria de três votos, nos termos da Análise nº 101/2022/VA (SEI nº 9036819), integrante deste acórdão:
+a) determinar à Superintendência de Outorga e Recursos à Prestação (SOR) que trate dos pedidos de prorrogação das atuais autorizações de uso de radiofrequências nas faixas de 900 MHz e 1800 MHz, salvo as outorgas no Estado de Minas Gerais com vencimento em 2035, propondo seu deferimento, em caráter primário, até 22 de dezembro de 2032, se atendidos os requisitos legais e regulamentares; (grifou-se)
+Assim, se observa que o Acórdão nº 274/2022 e, depois, o Regulamento de Condições de Uso de Radiofrequências, aprovado pela Res. 757/2022, já haviam restringido o uso da faixa de 1.800 MHz até 22/12/2032 (29/04/2035 para as autorizações no estado de Minas Gerais) ou pelo prazo remanescente da autorização de uso da radiofrequência, o que ocorresse primeiro.
+Após a publicação da Resolução nº 757/2022, a área técnica da Agência observou que, para determinadas condições de uso das faixas de radiofrequências, o texto da Resolução vedava novos licenciamentos de estações e, para outras, não previa expressamente essa possibilidade, o que poderia proibir a manutenção ou expansão da rede durante o prazo de vigência da autorização da prestadora. Assim, a área técnica, por meio do processo nº 53500.045607/2022-68, em conjunto com a alteração do Plano de Distribuição de Faixas de Frequência (PDFF), iniciou um processo de atualização do regulamento aprovado pela Resolução nº 757/2022. Em relação ao tema em tela, a área técnica assim consignou nos itens 3.22 a 3.26 do Informe nº 52/2022/PRRE/SPR (SEI nº 8513348) sobre as mudanças necessárias e a sua intenção para a faixa de 1.800 MHz.
+3.22. Ademais, observou-se que as regras de transição aplicáveis às faixas de 450 MHz, 800 MHz, 900 MHz e 1.800 MHz, estabelecidas quando da edição da Resolução nº 757, de 8 de novembro de 2022, vedaram, imediatamente, a possibilidade de novos licenciamento e consignações de novas radiofrequências a estações já licenciadas, impedindo a manutenção das redes em operação, que segundo as próprias regras estabelecidas, podem continuar em operação por determinado prazo, sob as condições de uso das Resoluções revogadas.
+3.23. A área técnica, ao reavaliar estas disposições, entende oportuno sugerir que sejam permitidos licenciamentos e consignações, até a data de desocupação da faixa, a fim de permitir que as entidades responsáveis pelas redes de telecomunicações a serem descontinuadas possam realizar modificações em suas redes. Tais modificações surgem de necessidades operacionais usuais e inerentes às redes de telecomunicações e podem corresponder a alterações técnicas que ensejem novo licenciamento.
+3.24. Entende-se que a modificação proposta não vai levar a um aumento expressivo do número de estações operando nas faixas a serem desocupadas, uma vez que a alteração sugerida atinge sistemas associados a serviços de interesse restrito, cuja rede é significativamente menos ampla do que aquela associadas a serviços de interesse coletivo. Adicionalmente, cabe reforçar que já há determinação de prazo máximo em que os sistemas sob as condições de uso revogadas podem continuar em operação. Portanto, está estabelecido prazo em que tais sistemas devem cessar sua operação, o que indica a necessidade de descontinuidade dos sistemas.
+3.25. A intenção da área técnica ao propor esta modificação é que haja condições regulatórias tais que se permita que os sistemas que continuem em operação possam ser ajustados e mantidos adequadamente até que sejam descontinuados. Assim, entende-se que tais sistemas poderão fazer uso mais eficiente do espectro e ser descontinuados gradativamente até a data definida para o refarming.
+3.26. Cabe destacar que, para os sistemas associados a serviços de interesse coletivo, mais especificamente, sistemas do serviço móvel pessoal, não foi imposta vedação a novos licenciamentos ou consignações, por se entender a importância da manutenção adequada destas redes até o fim do prazo da autorização de uso de radiofrequências associada. Assim, para este caso, não houve ajuste de mérito sobre os novos licenciamentos e consignações dos sistemas do SMP, apenas foi proposta disposição que deixe clara a possibilidade já existente. (grifou-se)
+Observa-se, do texto acima transcrito, a clara intenção da área técnica em que os sistemas em operação sob as condições de uso do espectro das Resoluções já revogadas tivessem prazo determinado para o seu fim e, com isso, a faixa fosse desocupada. E essa desocupação é baseada no uso eficiente do espectro, conforme já explicada em item anterior da presente Análise, e no planejamento para realização de nova licitação para esta faixa. Esse planejamento de realização de licitação após 2032 também consta do Plano de Uso do Espectro de Radiofrequências no Brasil (PUE) para o período de 2025 a 2032 (SEI nº 14195081).
+O Plano de Uso do Espectro aprovado por este colegiado, na Reunião nº 947, de 13/10/2025, estabelece as iniciativas de curto, médio e logo prazo da Agência, relativamente aos aspectos de gestão do espectro para o período de 2025 a 2032. Neste documento estão as intenções da Agência para as futuras utilizações das faixas de frequência. Para a faixa de 1.800 MHz, a Agência previu considerar a faixa em Editais de Licitação após 2032, considerando-se o refarming já previsto na Resolução nº 773/2025, conforme se vê na tabela abaixo extraída da página 39 do referido plano de uso:
+ Frequências
+ | 
+ | 
+ Serviços atualmente regulamentados
+ | 
+ | 
+ Principais Ações Previstas
+ | 
+ 1.800 MHz
+ | 
+ | 
+ Sistemas do SMP
+ | 
+ | 
+ Médio Prazo: Estudos da CMR-27 para atribuição ao MSS, para aplicações D2D
+ Longo Prazo: Considerar a faixa em Editais de Licitação da Agência, considerando o refarming previsto até 2032
+ | 
+Portanto, conforme demonstrado acima, a Agência se prepara, desde 2019, para realizar a reorganização da faixa de 1.800 MHz para utilização futura de forma mais eficiente. Para que isso ocorra, considerando-se que a ocupação atual do espectro por várias prestadoras não permite que isso ocorra, é necessária a desocupação completa da faixa e, assim, ocupá-la por meio de futura licitação já prevista no Plano de Uso do Espectro de Radiofrequências (SEI nº 14195081), aprovado por este colegiado no final do ano passado.
+VI - DAS CONSIDERAÇÕES DESTE RELATOR EM FACE DA PETIÇÃO APRESENTADA
+Esclarecidas as intenções da Agência para a futura utilização da faixa de 1.800 MHz, passo a analisar as alegações da Recorrentes contidas em seu Pedido de Reconsideração (SEI nº 15603644). No intuito de delimitar o escopo da análise, os argumentos apresentados pela Prestadora serão analisados sob três ópticas principais:
+VI.I - Compatibilidade técnica do arranjo da outorga atual com o novo arranjo de canalização (Alegações i e ii de sua correspondência);
+VI.II - Alegado precedente do Tribunal de Contas da União - TCU (Alegações iii e iv de sua correspondência); e
+VI.III - Interesse público na prorrogação por prazo integral da faixa (Alegação v de sua correspondência).
+VI.I - Compatibilidade técnica do arranjo da outorga atual com o novo arranjo de canalização
+O primeiro argumento trazido pela Prestadora é de que o arranjo da subfaixa, atualmente atribuída a ela, é totalmente aderente à nova regulamentação vigente e, por isso, a prorrogação poderia se dar por período igual à autorização inicial (quinze anos). Para corroborar sua argumentação, a prestadora traz o item 3.5.6.1 do Informe nº 154/2024/ORER/SOR (SEI nº 11447890) onde ela sustenta que a área técnica da Agência reconhece essa compatibilidade:
+3.5.6.1. Para os casos da subfaixa M (de 1.755 MHz a 1.765 MHz e de 1.850 MHz a 1.860 MHz) e da subfaixa H (de 1.945 MHz a 1.955 MHz e de 2.135 MHz a 2.135 MHz), não houve alteração das condições de uso em relação às aprovadas pelo (revogado) Regulamento sobre Condições de Uso de Radiofrequências nas Faixas de 800 MHz, 900 MHz, 1.800 MHz, 1.900 MHz e 2.100 MHz, aprovado pela Resolução nº 454, de 11 de dezembro de 2006. Os blocos de 10 MHz de subida e descida estabelecidos pela Resolução nº 454/2006 se adequam, portanto, à utilização de blocos de 5 MHz com possibilidade de agregação dos Blocos 10 e 11 da Tabela V e dos Blocos 6 e 7 da Tabela VIII do Regulamento de Condições de Uso de Radiofrequências, respectivamente. O que significa, efetivamente, que a autorização de uso de radiofrequências objeto desta análise está aderente às novas condições de uso (canalização) estabelecidas pelo Regulamento aprovado pela Resolução nº 757/2022.
+Além disso, a Recorrente sustenta que a Resolução nº 773/2025 não instituiu um teto temporal automático para prorrogações. Somente aqueles sistemas que demandem adaptações ao novo modelo regulatório é que estariam sujeitos ao limite temporal estabelecido no Inciso XV do art. 33 da Res. 773/2025. Abaixo transcrevo os trechos das argumentações da Prestadora extraídos da página 8 de seu Pedido de Reconsideração (SEI nº 15603644):
+O art. 33, XV, da Resolução nº 773/2025, não institui, em abstrato, um teto temporal automático para prorrogações. Trata-se de regra de transição voltada a disciplinar sistemas que demandem adaptação ao novo modelo de uso do espectro. A lógica subjacente ao dispositivo é funcional: assegurar que outorgas incompatíveis com a nova canalização sejam progressivamente ajustadas ou substituídas, evitando conflitos técnicos e promovendo a reorganização eficiente da faixa.
+Essa hipótese normativa não se verifica no caso concreto.
+Como visto, a subfaixa detida pela CLARO não exige qualquer processo de adaptação, migração ou rearranjo técnico para se conformar à regulamentação superveniente. Ao contrário, já se encontra aderente ao novo modelo de canalização, conforme reconhecido expressamente pela área técnica da própria ANATEL.
+Em outras palavras: a compatibilidade técnica da subfaixa da CLARO afasta a incidência do regime transitório que justificaria a limitação temporal fixada no Acórdão recorrido.
+No entanto, não assiste razão à argumentação trazida pela Prestadora. Primeiramente, a afirmação da área técnica, sobre a compatibilidade das condições de uso entre as revogadas Resoluções nº 454/2006 e a 757/2022 (esta última era a vigente na época da elaboração do informe da área técnica) foi realizada para verificar se o pedido de prorrogação atendia ao comando legal existente no §2º do art. 167 da Lei Geral de Telecomunicações - Lei nº 9.472/97, c/c com o inciso IV do art. 12 do Decreto nº 10.402/2020, e não para indicar a possibilidade de prorrogação do uso da subfaixa para além do estabelecido na regulamentação vigente. Isso pode ser observado pelo item 3.3 do Informe nº 1235/2025/ORER/SOR (SEI nº 14778217), abaixo transcrito:
+3.3 Por meio do Informe nº 154/2024/ORER/SOR (SEI nº 11447890), esta Gerência de Espectro, Órbita e Radiodifusão (ORER) realizou análise acerca do uso racional e adequado da radiofrequência outorgadas à interessada, bem como se havia necessidade de modificação de destinação das faixas objeto do pleito, em cumprimento à exigência constante do §2º do art. 167 da Lei nº 9.472, de 16 de julho de 1997, c/c o inciso IV do art. 12 do Decreto nº 10.402, de 17 de junho de 2020. (grifou-se)
+Melhor sorte não restou à Claro quanto à alegação de que a Resolução nº 773/2025 não instituiu teto temporal para as prorrogações que se adequem a novo modelo regulatório. Conforme descrito no Item III desta análise, os sucessivos processos licitatórios que ocorreram ao longo dos anos para a faixa acabou estabelecendo alocação das operadoras em subfaixas com descontinuidade de ocupação espectral. Assim, para a faixa de 1.800 MHz, a Agência estabeleceu data limite para uso dos arranjos das faixas de frequência nas condições da revogada Resolução nº 454/2006, e essa data limite é necessária para a realização de refarming, com a limpeza da faixa para futura licitação em condições mais eficientes de uso do espectro.
+Aqui é importante citar que a Agência também limitou de uso da faixa de 1.800 MHz para outros pedidos de prorrogação, como se pode ver nos seguintes Atos:
+ Ato nº 12.500, de 02/09/2022 (SEI nº 9063478) - Prestadora TIM.
+ Ato nº 4.842, de 28/04/2023 (SEI nº 10170102) - Prestadora Telefônica.
+ Ato nº 16.921, de 15/12/2022 (SEI nº 9569969) - Prestadora Claro.
+A Claro recorreu da decisão sobre a prorrogação do uso da faixa de 1.800 MHz, referente ao Ato nº 16.921, de 15/12/2022 (SEI nº 9569969), tendo sido mantida a decisão pelo Conselho Diretor, nos termos do Acórdão nº 194, de 14/08/2023 (SEI nº 10705177).
+Nesse sentido, diante do exposto acima, entendo que as alegações supracitadas da Prestadora não merecem acolhimento.
+VI.II - Alegado precedente do Tribunal de Contas da União - TCU
+Neste item, avalio as alegações da prestadora de que precedentes do TCU, especialmente os Acórdãos nº 2.487/2024 e nº 2.471/2024, teriam reconhecido que a mera recanalização compatível não justifica limitação temporal da prorrogação. A prestadora alega, ainda, que a própria Anatel, em manifestações anteriores perante o TCU, defendeu entendimento favorável à continuidade e à prorrogação de autorizações compatíveis com as novas condições de uso, razão pela qual a manutenção da decisão recorrida configuraria incoerência decisória e afronta à segurança jurídica e à isonomia.
+Além disso, a requerente procura afastar a aplicação de precedentes mais antigos do Conselho Diretor, afirmando que eles seriam anteriores à consolidação do entendimento do TCU e não teriam enfrentado diretamente a questão da recanalização compatível.
+No entanto, tais argumentações não merecem prosperar, conforme exposto a seguir.
+As alegações da Prestadora estão baseadas em avaliações realizadas pelo TCU quando da prorrogação do uso da faixa de 1.900 MHz e 2.100 MHz para a própria recorrente e a Prestadora Algar. Aqui já há uma incoerência na linha de raciocínio de suas alegações: utilizar a faixa de 1.900 MHz e 2.100 MHz para fundamentar a prorrogação em tela, uma vez que tais faixas têm tratamento diferente da faixa de 1.800 MHz, conforme está estabelecido na Resolução nº 773/2025.
+Para a faixa de 1.800 MHz, a Resolução nº 773/2025 estabeleceu data limite para o uso das radiofrequências nas condições estabelecidas pela Resolução nº 454/2006 até o dia 22/12/2032; já para as faixas de 1.900 MHz e 2.100 MHz, não há essa limitação, como se pode ver na Seção IX da Resolução em tela, abaixo transcrita:
+Seção IX
+Das faixas de 1.900 MHz e 2.100 MHz
+Art. 18. O uso das subfaixas de radiofrequências de 1.920 MHz a 1.980 MHz e de 2.110 MHz a 2.170 MHz para prestação dos serviços de interesse coletivo terrestres devidamente destinados se dá em conformidade com os blocos listados na Tabela IX, empregando método de duplexação por divisão de frequência, restritas à respectiva área de prestação.
+§ 1º As subfaixas de radiofrequências objeto desta Seção devem ser consignadas aos pares, sendo os sentidos de transmissão da estação base/nodal/repetidora e da estação móvel/terminal vinculados ao mesmo bloco.
+§ 2º As estações repetidoras devem observar as mesmas condições de uso de radiofrequências estabelecidas para as estações base/nodal, sendo que, nesse caso, deve ser utilizado, exclusivamente, o sentido de transmissão da estação base/nodal.
+Tabela IX - Arranjo das faixas de frequências de 1.900 MHz e 2.100 MHz
+ Nº do bloco
+ | 
+ Transmissão da estação móvel/terminal (MHz)
+ | 
+ Transmissão da estação base/nodal/repetidora (MHz)
+ | 
+ 1
+ | 
+ 1.920 a 1.925
+ | 
+ 2.110 a 2.115
+ | 
+ 2
+ | 
+ 1.925 a 1.930
+ | 
+ 2.115 a 2.120
+ | 
+ 3
+ | 
+ 1.930 a 1.935
+ | 
+ 2.120 a 2.125
+ | 
+ 4
+ | 
+ 1.935 a 1.940
+ | 
+ 2.125 a 2.130
+ | 
+ 5
+ | 
+ 1.940 a 1.945
+ | 
+ 2.130 a 2.135
+ | 
+ 6
+ | 
+ 1.945 a 1.950
+ | 
+ 2.135 a 2.140
+ | 
+ 7
+ | 
+ 1.950 a 1.955
+ | 
+ 2.140 a 2.145
+ | 
+ 8
+ | 
+ 1.955 a 1.960
+ | 
+ 2.145 a 2.150
+ | 
+ 9
+ | 
+ 1.960 a 1.965
+ | 
+ 2.150 a 2.155
+ | 
+ 10
+ | 
+ 1.965 a 1.970
+ | 
+ 2.155 a 2.160
+ | 
+ 11
+ | 
+ 1.970 a 1.975
+ | 
+ 2.160 a 2.165
+ | 
+ 12
+ | 
+ 1.975 a 1.980
+ | 
+ 2.165 a 2.170
+ | 
+Esse fato é corroborado quando da avaliação da alteração da Resolução nº 757/2022, ocasião em que o Conselheiro Substituto Vinícius Caram, nos itens 5.145 a 5.147 de sua Análise nº 22/2024/VC (SEI nº 13053924), detalhou as regras de transição para as faixas de 1.900 e 2.100 MHz, além de descrever a situação trazida pela Recorrente em seu Pedido de Reconsideração, relativamente ao Acórdão do TCU em tela:
+5.145. A respeito das regras de transição, cumpre mencionar que a proposta regulatória visa ainda simplificar e trazer maior clareza a respeito dos impactos de novas canalizações sobre os sistemas previamente autorizados. Neste ponto, destaca-se que, para a faixa de 1.900/ 2.100 MHz, o Regulamento de Condições de Uso do Espectro, aprovado pela Res. nº 757/2022, previu uma reorganização da canalização da faixa, apenas para padronização do tamanho dos blocos mínimos com os blocos estabelecidos para outras faixas. Entretanto, a nova canalização não teria impacto sobre as autorizações já conferidas pela Agência, uma vez que, diante da hipótese de agregação dos blocos mínimos estabelecidos, não há qualquer alteração no tamanho dos blocos objetos das atuais outorgas.
+5.146. Assim, de forma a evitar eventuais interpretações que pudessem levar à impossibilidade de prorrogações das autorizações de uso de radiofrequências nas faixas de 1.900/ 2.100 MHz ou que viessem a indicar que o objeto das autorizações previamente conferidas fosse incompatível com as nova canalização, a área técnica sugeriu exclusão da referida regra de transição, indicando que as condições de uso anteriormente estabelecidas são compatíveis com as dispostas no ReCon.
+5.147. Julgo acertada a proposta submetida à Consulta Pública, uma vez que Tribunal de Contas da União já se manifestou, no âmbito de processos de prorrogação de autorizações de uso das faixas de 1.900 / 2.100 MHz, indicando que “a mudança de canalização não afeta as condições de uso das operadoras, de forma que sequer seria necessária a concessão de prazo para atendimento da nova condição” (Voto do Relator que subsidia o Acórdão nº 2.471/2024 – TCU / TC 021.566/2023-2). (grifou-se)
+Assim, a avaliação dada pelo TCU no Acórdão nº 2.471/2024 não se refere à faixa de 1.800 MHz, mas para as faixas de 1.900 MHz e 2.100 MHz que têm tratamento regulamentar diferente da faixa em discussão. Nessa linha, não há que se falar que a decisão de limitação de uso da faixa, adotada por este Colegiado nos Atos de Prorrogação citados anteriormente, tenha sido afetada pelos Acórdãos do TCU citados pela prestadora. 
+Portanto, considerando-se que são diferentes as regras para utilização das faixas de frequências de 1.900 MHz e 2.100 MHz com as regras da faixa de 1.800 MHz, ambas estabelecidas na Resolução nº 773/2025, entendo que as alegações trazidas pela Prestadora neste tópico não merecem prosperar.
+VI.III - Interesse público na prorrogação por prazo integral da faixa
+Neste último tópico, a Recorrente alega que há interesse público na prorrogação por prazo integral e, para corroborar suas alegações, a prestadora traz, em seu pedido, trechos do Informe nº 1235/2025/ORER/SOR (SEI nº 14778217), mais especificadamente os itens 3.20 e 3.23, abaixo transcritos:
+3.20. Com relação à faixa de 1.800 MHz, objeto do Termo de Autorização nº 31/2011, observa-se que 86,12% dos municípios analisados apresentaram Índice Temporal de Eficiência (ITE) nulo ou positivo.
+(...)
+3.23. Os resultados apurados corroboram a conclusão de que a faixa de radiofrequências autorizada vem sendo objeto de uso real, contínuo e eficiente, em conformidade com os critérios estabelecidos pela Resolução nº 548/2010. À luz das análises realizadas, os indicadores observados não revelam indícios de comprometimento da eficiência do uso do espectro, mantendo-se compatíveis com os parâmetros regulatórios atualmente vigentes.
+Mais uma vez, é importante observar que o trecho trazido pela Prestadora é referente a avaliação, pela área técnica, do pedido de prorrogação sob os aspectos legais e regulamentares necessários para o seu atendimento. Isso pode ser observado pelo objetivo do Informe descrito no seu item 3.1, abaixo transcrito:
+I. DO OBJETO
+3.1. Trata-se de análise complementar àquela apresentada no Informe nº 154/2024/ORER/SOR (SEI nº 11447890), com o objetivo de atualizar a avaliação acerca do uso racional e eficiente das radiofrequências correspondentes às Bandas H e M, bem como de examinar, à luz do arcabouço regulatório vigente, os aspectos regulatórios relevantes que incidem sobre o processo de prorrogação das autorizações de uso de radiofrequências objeto dos Termos de Autorização nº 31/2011/PVCP/SPV-ANATEL (SEI nº 11349193), nº 32/2011/PVCP/SPV-ANATEL (SEI nº 11349195) e nº 33/2011/PVCP/SPV-ANATEL (SEI nº 11349197). (grifou-se)
+A área técnica, no Informe supracitado, já destaca os aspectos regulatórios que estão envolvidos, conforme se pode ver nos seus itens 3.8 e 3.9, abaixo transcritos:
+3.8. A Lei Geral de Telecomunicações — Lei nº 9.472, de 16 de julho de 1997 — estabelece, em seu art. 167, as regras aplicáveis à prorrogação das autorizações de uso de radiofrequências. Nos termos do § 2º do referido artigo, o indeferimento do pedido poderá ocorrer, entre outras hipóteses, caso o interessado não esteja fazendo uso racional e adequado da radiofrequência ou quando se mostrar necessária a modificação da destinação do uso da radiofrequência.
+3.9. O Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016, também dispõe sobre a necessidade de observância do uso eficiente do espectro, ao estabelecer princípios e finalidades que orientam a atividade de regulamentação do espectro radioelétrico nacional. Tais disposições de natureza principiológica e finalística moldam a atuação regulatória da Agência e repercutem de forma significativa nas dimensões social, econômica e concorrencial do setor, conforme se observa a seguir:
+Resolução nº 671, de 3 de novembro de 2016
+Art. 1º ............ 
+§ 1º Os princípios que norteiam este Regulamento são:
+I - a constatação de que o espectro de radiofrequências é um recurso limitado, constituindo-se em bem público, administrado pela Agência;
+II - a utilização eficiente e adequada do espectro;
+III - o emprego racional e econômico do espectro;
+IV - a ampliação do uso de redes e serviços de telecomunicações; e,
+V - a autorização para o uso de radiofrequências a título oneroso.
+[...]
+Art. 2º A regulamentação do uso de radiofrequências tem como objetivos principais:
+I - promover o desenvolvimento nacional, especialmente da exploração de serviços de telecomunicações e de radiodifusão;
+II - garantir o acesso de toda a população aos serviços de telecomunicações e de radiodifusão;
+III - democratizar o acesso ao espectro de radiofrequências, em estímulo ao desenvolvimento social e econômico;
+IV - servir à segurança e à defesa nacionais;
+V - viabilizar a exploração de serviços de informação e entretenimento educacional, geral e de interesse público; e,
+VI - permitir o desenvolvimento de pesquisa científica.
+(grifou-se)
+A avaliação da área técnica, diferentemente do que alega a Recorrente, se refere aos critérios necessários para atender ao pedido de prorrogação, não para justificar eventual prorrogação por prazo maior do que aquele estabelecido na Regulamentação vigente.
+Assim, dado todo o exposto, a argumentação apresentada neste item não deve prosperar.
+V - DA RELAÇÃO COM OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09/08/2021, alterada pela Resolução Interna Anatel nº 301, de 25/03/2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por conhecer do Pedido de Reconsideração interposto pela CLARO S/A e, no mérito, negar a ele provimento.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro Relator, em 03/09/2026, às 17:32, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15804330 e o código CRC E833AA60.
+ | 
+Referência: Processo nº 53504.005072/2023-33 | 
+SEI nº 15804330 |

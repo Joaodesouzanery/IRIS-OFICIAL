@@ -1,0 +1,287 @@
+SEI/ANATEL - 15178484 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 23/2026/CL
+Processo nº 53500.006042/2026-27
+Interessado: SERCOMTEL PARTICIPAÇÕES S.A.
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Revisão do Valor de Comunicação VC-1 do Plano Básico de Serviço da concessionária do Serviço Telefônico Fixo Comutado (STFC) SERCOMTEL S.A. TELECOMUNICAÇÕES em suas relações com as operadoras do Serviço Móvel Pessoal (SMP), decorrente da alteração dos Valores de Referência de VU-M com base no Modelo de Custos.
+EMENTA
+DIREITO ADMINISTRATIVO. REVISÃO TARIFÁRIA. SERVIÇO TELEFÔNICO FIXO COMUTADO. VALOR DE COMUNICAÇÃO VC‑1. ALTERAÇÃO DO VU‑M. APROVAÇÃO.
+I. CASO EM EXAME
+ Proposta de revisão do Valor de Comunicação VC‑1 do Plano Básico de Serviço da concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES, em razão da alteração dos valores de referência de VU‑M com base no Modelo de Custos.
+ Área Técnica instruiu o processo conforme o Informe nº 7/2026/CPAE/SCP e submeteu a minuta de ato à Procuradoria Federal Especializada junto à Anatel.
+ A Procuradoria manifestou-se favoravelmente à legalidade e regularidade da instrução e recomendou adequações, incluindo a definição da vigência dos novos valores a partir de 25 de fevereiro de 2026 (Parecer nº 50/2026/PFE‑ANATEL/PGF/AGU).
+ Sercomtel anuiu aos novos valores propostos e aos procedimentos adotados.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a alteração dos valores de referência do VU‑M para 2026 impõe a revisão dos Valores de Comunicação VC‑1 e se a metodologia e o procedimento adotados atendem às exigências regulamentares.
+III. RAZÕES DE DECIDIR
+ A revisão tarifária foi conduzida de acordo com as competências previstas no Regimento Interno da Anatel (Resolução nº 612/2013) e observou a manifestação obrigatória da Procuradoria, nos termos da Portaria nº 642/2013.
+ O art. 8º da Resolução nº 576/2011 determina a revisão das tarifas de VC‑1 quando houver fixação ou revisão do VU‑M. O art. 7º da Resolução nº 438/2006 exige que eventual redução do VU‑M seja integralmente repassada ao preço de público.
+ Os novos valores de referência de VU‑M foram definidos pelo Ato nº 3.246/2023, resultando, para a Região II, na diferença entre 0,01650 (2025) e 0,01686 (2026), utilizada para atualização do VC‑1.
+ O novo VC‑1 foi fixado em R$ 0,24334, com variação de 0,15%, e o valor reduzido em R$ 0,17033, conforme limite previsto no art. 6º da Resolução nº 576/2011.
+ Chamadas de longa distância (VC‑2 e VC‑3) não integram a revisão, pois estão sujeitas à liberdade tarifária desde a edição da Resolução nº 724/2020.
+ Ajustes finais foram incorporados à minuta de ato, incluindo revogação do Ato nº 13.384/2025, referência aos aditivos contratuais e definição da data‑base para futuros reajustes.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Aprovação da revisão dos Valores de Comunicação VC‑1 da concessionária Sercomtel, com vigência a partir de 25 de fevereiro de 2026.
+Tese de julgamento: “1. A alteração dos valores de referência de VU‑M impõe a revisão dos Valores de Comunicação VC‑1, nos termos das Resoluções nº 576/2011 e nº 438/2006. 2. A metodologia adotada e a instrução processual observam a regulamentação aplicável, com manifestação favorável da área técnica, da Procuradoria e anuência da concessionária. 3. Os novos valores de VC‑1 são fixados em 0,24334 (normal) e 0,17033 (reduzido), com vigência em 25 de fevereiro de 2026.”
+Dispositivos relevantes citados: Resolução nº 612/2013 (RIA), art. 133, L; Portaria nº 642/2013, art. 3º, XIII; Resolução nº 576/2011, arts. 6º e 8º; Resolução nº 438/2006, art. 7º; Resolução nº 639/2014, art. 14; Resolução nº 724/2020, art. 5º; Ato nº 3.246/2023.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Resolução nº 438, de 10 de julho de 2006, que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal (SMP).
+Resolução nº 552, de 10 de dezembro de 2010, que aprova a alteração dos Contratos de Concessão para a prestação do Serviço Telefônico Fixo Comutado (STFC), nas modalidades de serviço Local, Longa Distância Nacional (LDN) e Longa Distância Internacional (LDI). Revogada pela Resolução nº 678, de 6 de junho de 2017.
+Resolução nº 576, de 31 de outubro de 2011, que aprova o Regulamento sobre Critérios de Reajuste das Tarifas das Chamadas do Serviço Telefônico Fixo Comutado (STFC) envolvendo acessos do Serviço Móvel Pessoal (SMP) ou do Serviço Móvel Especializado (SME).
+Resolução nº 600, de 8 de novembro de 2012, que aprova o Plano Geral de Metas de Competição (PGMC). Revogada pela Resolução Anatel nº 783, de 3 de setembro de 2025.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Resolução nº 639, de 1º de julho de 2014, que aprova a Norma para fixação dos valores máximos das tarifas de uso de rede fixa do Serviço Telefônico Fixo Comutado (STFC), dos valores de referência de uso de rede móvel do Serviço Móvel Pessoal (SMP) e de Exploração Industrial de Linha Dedicada (EILD), com base em Modelos de Custos.
+Resolução nº 724, de 27 de março de 2020, que aprova a Norma para implantação e acompanhamento de liberdade tarifária no Serviço Telefônico Fixo Comutado destinado ao uso do público em geral, modalidade Longa Distância Nacional. Revogada pela Resolução Anatel nº 768, de 19 de agosto de 2024.
+Resolução Anatel nº 768, de 19 de agosto de 2024, que revoga, altera Resoluções expedidas pela Anatel, aprova o Regulamento de Universalização do Serviço Telefônico Fixo Comutado Prestado no Regime Público, e o Modelo de Contrato de Concessão do Serviço Telefônico Fixo Comutado na modalidade Local e o Regulamento de Tarifação do Serviço Telefônico Fixo Comutado Prestado Destinado ao Uso do Público em Geral - STFC.
+Resolução Anatel nº 783, de 3 de setembro de 2025, que aprova o Plano Geral de Metas de Competição (PGMC).
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Matéria para Apreciação do Conselho Diretor nº 106/2026 (SEI nº 15156880), de 9 de fevereiro de 2026.
+Parecer da Procuradoria nº 50/2026/PFE-ANATEL/PGF/AGU (SEI nº 15153599), de 4 de fevereiro de 2026.
+RELATÓRIO
+I - DOS FATOS
+Trata-se de proposta de revisão do Valor de Comunicação VC-1 do Plano Básico de Serviço da concessionária do Serviço Telefônico Fixo Comutado (STFC) SERCOMTEL S.A. TELECOMUNICAÇÕES (Sercomtel) em suas relações com as operadoras do Serviço Móvel Pessoal (SMP), decorrente da alteração dos Valores de Referência de VU-M com base no Modelo de Custos.
+Em 26 de janeiro de 2026, a Gerente de Acompanhamento Econômico da Prestação, da Superintendência de Competição (SCP), solicitou que a Concessionária Sercomtel (SEI nº 15091678 e 15097336) se manifestasse sobre os novos valores propostos de Valores de Comunicação VC-1, decorrentes da alteração dos valores de referência dos Valores de Remuneração de Uso de Rede do SMP (RVU-M) com base no Modelo de Custos. Esclareceu-se que o presente processo de revisão trataria apenas dos Valores de Comunicação VC-1, pois as chamadas de Longa Distância Nacional passaram a deter liberdade tarifária a partir de 4 de maio de 2020, conforme estabelecido pela Resolução nº 724, de 27 de março de 2020, a qual foi revogada pela Resolução Anatel nº 768, de 19 de agosto de 2024.
+Em 27 de janeiro de 2026, a Sercomtel anuiu aos novos valores de VC‑1 apresentados no âmbito da revisão tarifária, conforme consignado na Petição SEI nº 15097617.
+Na mesma data, a Área Técnica instruiu e fundamentou o processo de revisão tarifária das chamadas telefônicas do Plano Básico de Serviço da concessionária do STFC Sercomtel, na modalidade Local (VC‑1), em decorrência da alteração do RVU‑M com base no Modelo de Custos, nos termos do Informe nº 7/2026/CPAE/SCP (SEI nº 15091874).
+Na oportunidade, esclareceu‑se que o cálculo dos novos valores de VC‑1 decorreu da apuração da diferença do VU‑M entre os anos de 2025 e 2026, a qual foi diretamente deduzida dos valores vigentes de VC‑1.
+Em sequência, a Minuta de Ato SEI nº 15092621, relativa à homologação da revisão dos valores de VC‑1, foi submetida à apreciação da Procuradoria Federal Especializada junto à Anatel (PFE‑Anatel).
+Em 4 de fevereiro de 2026, a PFE‑Anatel manifestou‑se favoravelmente à legalidade e à regular instrução da proposta, conforme Parecer nº 50/2026/PFE‑ANATEL/PGF/AGU (SEI nº 15153599). Na análise, destacou‑se a imposição regulamentar de proceder à revisão tarifária sempre que houver fixação ou revisão do valor de referência do VU‑M, com a consequente definição de novos valores de VC‑1. Ademais, não se identificou óbice à metodologia de cálculo adotada para a determinação dos novos valores de comunicação. Não obstante, recomendou‑se o ajuste do art. 4º da minuta de Ato (SEI nº 15092621), a fim de consignar que a vigência dos novos valores de VC‑1 se iniciará em 25 de fevereiro de 2026.
+Posteriormente, em 9 de fevereiro de 2026, a Área Técnica avaliou as considerações do Órgão Jurídico e, após promover os ajustes pertinentes, propôs o encaminhamento da Minuta de Ato SEI nº 15156774 à apreciação do Conselho Diretor da Anatel, conforme registrado no Informe nº 10/2026/CPAE/SCP (SEI nº 15156631).
+Na mesma data, a Superintendência de Competição (SCP) submeteu os autos ao Superintendente Executivo, mediante a Matéria para Apreciação do Conselho Diretor nº 106/2026 (SEI nº 15156880), corroborando a proposta formulada pela Área Técnica no Informe nº 7/2026/CPAE/SCP (SEI nº 15091874), complementado pelo Informe nº 10/2026/CPAE/SCP (SEI nº 15156631).
+Os autos foram enviados a este Colegiado (SEI nº 15167755) em 10 de fevereiro de 2026, e fui designada Relatora da matéria em 12 de fevereiro de 2026, conforme certidão expedida pela Secretaria do Conselho Diretor (SEI nº 15178163).
+É o relatório.
+II - DA ANÁLISE
+A presente Análise encontra-se dividida em quatro partes. Na primeira, analisa-se a regularidade da tramitação do presente feito e a competência do Conselho Diretor para deliberar sobre a matéria. Na segunda, examinam-se os fundamentos e cálculos da revisão tarifária a ser promovida. Na terceira, faz-se a conformação do objeto da presente Análise com os Objetivos do Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU). A quarta e última parte apresenta a proposta de encaminhamento da matéria.
+II.1 - Da regularidade formal do processo e competência do Conselho Diretor
+A revisão tarifária objeto do presente Processo foi conduzida em conformidade com as competências regimentais aplicáveis. Nos termos do art. 133, inciso L, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor aprovar revisões, homologar reajustes de tarifas e de distribuição de serviços, bem como fixar as tarifas dos serviços prestados em regime público. À Gerência de Acompanhamento Econômico da Prestação (CPAE) cabe a elaboração das propostas de revisão e homologação tarifária, enquanto à Superintendência de Competição (SCP) incumbe o acompanhamento da matéria e da proposta de reajuste perante o Conselho Diretor.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+L - aprovar revisões e homologar reajustes de tarifas e distribuição de serviços, bem como fixar tarifas dos serviços prestados no regime público;
+(...)
+Art. 159. A Superintendência de Competição tem como competência:
+(...)
+IX - acompanhar tarifas e preços praticados pelas prestadoras;
+Art. 211. A Gerência de Acompanhamento Econômico da Prestação tem, em sua área de atuação, as seguintes competências dentre as atribuídas à Superintendência de Competição:
+(...)
+VIII - elaborar proposta de revisão de tarifas e preços;
+IX - elaborar proposta de homologação de reajuste de tarifas e preços;
+(...)
+A proposta de revisão, fundamentada no Informe nº 7/2026/CPAE/SCP (SEI nº 15091874), foi elaborada pela Gerência de Acompanhamento Econômico da Prestação (CPAE) e aprovada pela Superintendência de Competição (SCP).
+Em observância ao art. 3º, XIII, da Portaria nº 642, de 26 de julho de 2013, que estabelece as hipóteses de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel, os autos foram encaminhados àquele Órgão Jurídico para pronunciamento.
+Portaria nº 642/2013
+Art.3º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 11, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos regulatórios: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+(...)
+XIII – aprovação de reajustes tarifários e fixação de preços e tarifas dos serviços;
+(...)
+Após os ajustes promovidos pela CPAE e aprovados pela SCP (SEI nº 15156631), a proposta de revisão contida na Minuta de Ato SEI nº 15156774 foi encaminhada ao Conselho Diretor para deliberação.
+Verificadas a competência decisória do Conselho Diretor e as competências instrutórias da SCP e da CPAE, bem como comprovada a observância da manifestação obrigatória da PFE‑Anatel, conclui‑se pela regularidade formal do trâmite processual.
+II-2 - Da fixação dos valores de referência de VU-M com base no Modelo de Custos
+A Norma para fixação dos valores máximos das tarifas de uso de rede fixa do STFC, dos valores de referência de outros produtos de atacado, com base em Modelos de Custos, foi aprovada pela Resolução nº 639, de 1º de julho de 2014, e alterada pela Resolução Anatel nº 783/2025. Ela prevê que o Valor de Referência de VU-M de prestadora pertencente a Grupo com Poder de Mercado Significativo (PMS) no Mercado de Oferta de Interconexão em Redes Móveis seja determinado com base em modelagem de custos e definido por ato do Colegiado:
+Resolução nº 639/2014
+Art. 1º Aprovar a Norma para Fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado - STFC e dos Valores de Referência de outros produtos de atacado, com base em Modelos de Custos, na forma do Anexo a esta Resolução. (Redação dada pela Resolução Anatel nº 783, de 3 de setembro de 2025)
+--------------------
+Norma aprovada pela Resolução nº 639/2014
+Art. 1º Esta Norma tem por objetivo estabelecer metodologia para fixação dos Valores Máximos das Tarifas de Uso de Rede Fixa do Serviço Telefônico Fixo Comutado - STFC e dos Valores de Referência de outros produtos de atacado, com base em Modelos de Custos. (Redação dada pela Resolução Anatel nº 783, de 3 de setembro de 2025)
+(...)
+Art. 14. O valor de referência de VU-M (RVU-M), único para todas as Prestadoras de SMP pertencentes a Grupo detentor de Poder de Mercado Significativo, apurado com base em modelo de custos, será definido em Ato do Conselho Diretor, para cada uma das Regiões do Plano Geral de Autorizações do SMP (PGA-SMP).
+Em observância ao art. 41 do PGMC e do art. 14 da Norma aprovada pela Resolução nº 639/2014, em 24 de março de 2023 foi editado o Ato nº 3.246 (SEI nº 10009717), que estabeleceu os Valores de Referência de VU-M (RVU-M) das Prestadoras detentoras de Poder de Mercado Significativo (PMS) no Mercado de Oferta de Interconexão em Redes Móveis, para os anos de 2024, 2025, 2026 e 2027, tendo por base os resultados do Modelos de Custos.
+Os valores de remuneração de uso de rede contidos no Ato nº 3.246/2023 (SEI nº 10009717) são apresentados abaixo:
+ Região do PGA
+ | 
+ 2024
+ | 
+ 2025
+ | 
+ 2026
+ | 
+ 2027
+ | 
+ Região I
+ | 
+ 0,01472
+ | 
+ 0,01503
+ | 
+ 0,01499
+ | 
+ 0,01497
+ | 
+ Região II
+ | 
+ 0,01599
+ | 
+ 0,01650
+ | 
+ 0,01686
+ | 
+ 0,01632
+ | 
+ Região III
+ | 
+ 0,01738
+ | 
+ 0,01779
+ | 
+ 0,01779
+ | 
+ 0,01804
+ | 
+* Valores do minuto em Reais, líquidos de impostos e contribuições sociais.
+II.2 - Da necessidade de revisão dos Valores de Comunicação VC-1
+De início, cumpre registrar que, no âmbito do Processo nº 53500.048855/2023-41, o Conselho Diretor deliberou pela prorrogação do contrato de concessão da Sercomtel, conforme decidido no Acórdão nº 345 (SEI nº 14951870), de 19 de dezembro de 2025. Naquela oportunidade, foram igualmente autorizadas as providências administrativas necessárias à formalização dos Termos Aditivos aos Contratos de Concessão nº 110/2011‑ANATEL (SEI nº 14956496) e PBOA/SPB nº 144/2011‑ANATEL (SEI nº 14956505). Nesse contexto, mantida a vigência da concessão, mostra‑se necessária a realização da revisão tarifária ora submetida à apreciação deste Colegiado.
+Com a definição dos novos valores de VU-M com base no Modelo de Custos, deve-se atentar para o disposto no art. 8º da Resolução nº 576, de 31 de outubro de 2011, que aprovou o Regulamento sobre Critérios de Reajuste das Tarifas das Chamadas do STFC envolvendo Acessos do Serviço Móvel Pessoal (SMP) e do Serviço Móvel Especializado (SME), onde tais dispositivos preveem a revisão das tarifas de VC-1, quando da fixação ou revisão do RVU-M:
+Regulamento aprovado pela Resolução nº 576/2011
+Art. 8º A fixação ou revisão do valor de referência do VU-M (RVU-M) ou do VU-T implicará a simultânea revisão das tarifas objeto deste Regulamento.
+De igual modo, o art. 7º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal (SMP), aprovado pela Resolução nº 438, de 10 de julho de 2006, determina que, quando da alteração do VU-M, a redução de seu valor real, se houver, deve ser integralmente deduzida do preço de público nas chamadas em que for aplicável.
+Regulamento aprovado pela Resolução nº 438/2006
+Art. 7º Quando da alteração do VU-M, a redução de seu valor real, se houver, deve ser integralmente deduzida do preço de público nas chamadas em que for aplicável.
+Significa dizer que, como os valores de RVU-M sofrerão alterações a partir de 25 de fevereiro de 2026, surge a necessidade de revisar unicamente os Valores de Comunicação VC-1.
+Destaco que os valores de comunicação VC-2 e VC-3 não são abarcados pela revisão ora em análise visto que, com a edição da Resolução nº 724, de 27 de março de 2020, as chamadas de Longa Distância Nacional passaram ao regime de liberdade tarifária:
+Resolução nº 724/2020
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997, e pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997,
+(...)
+RESOLVE:
+Art. 1º Aprovar, na forma do Anexo, a Norma para implantação e acompanhamento de liberdade tarifária no Serviço Telefônico Fixo Comutado destinado ao uso do público em geral, modalidade Longa Distância Nacional.
+Art. 2º Esta Resolução entra em vigor em 4 de maio de 2020.
+--------------------
+Norma aprovada pela Resolução nº 724/2020
+Art. 5º A partir da publicação da presente Norma, o STFC, modalidade LDN, estará submetido ao regime de liberdade tarifária, no qual a concessionária poderá determinar suas próprias tarifas.
+Parágrafo único. A alteração dos valores tarifários deverá ser comunicada à Agência com antecedência de sete dias de sua vigência.
+(Destaque acrescido)
+Ressalto também que a Resolução nº 724/2020 restou revogada pela Resolução Anatel nº 768, de 19 de agosto de 2024.
+A necessária revisão dos Valores de Comunicação VC-1 diante da fixação do RVU-M existente entre os anos de 2025 e 2026, também foi objeto de análise por parte da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel):
+Parecer nº 50/2026/PFE‑ANATEL/PGF/AGU (SEI nº 15153599)
+Da necessidade de se proceder à revisão tarifária quando houver fixação ou revisão do valor de referência do VU-M:
+a) Como salientado neste opinativo, com a definição dos novos valores de VU-M, com base no modelo de custos, faz-se necessária a realização da Revisão Tarifária dos Valores de Comunicação do STFC na modalidade de serviço Local (VC-1);
+b) É que o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal – SMP, aprovado pela Resolução nº 438/2006, trata, dentre outras coisas, dos critérios aplicáveis à remuneração pelo uso de redes do SMP quando interconectadas a redes de outras Prestadoras de Serviços de Telecomunicações de Interesse Coletivo. O art. 7º do referido Regulamento determina que, quando da alteração do VU-M, a redução de seu valor real, se houver, deve ser integralmente deduzida do preço de público nas chamadas em que for aplicável;
+c) Além disso, a Resolução nº 576/2011, que aprova o Regulamento sobre Critérios de Reajuste das Tarifas das Chamadas do STFC envolvendo Acessos do SMP e do SME, estabelece, em seu artigo 8º, que quando da fixação do VU-M, deve ser realizada a revisão dos Valores de Comunicação. Referido dispositivo determina que a fixação ou revisão do valor de referência do VU-M (RVU-M) ou do VU-T implicará a simultânea revisão das tarifas objeto daquele Regulamento;
+d) Como no presente caso os valores de VU-M sofreram alterações (a bem da verdade, sofrerão alterações a partir de 25 de fevereiro de 2026), de acordo com a regulamentação, é preciso realizar uma revisão tarifária do VC-1;
+e) Considerando que, nos termos da Resolução nº 724, de 27 de março de 2020, as chamadas em Longa Distância Nacional passaram ao regime de liberdade tarifária, os valores de comunicação VC-2 e VC-3 não serão objeto da revisão tarifária de que tratam estes autos;
+(Destaque acrescido)
+Assim, como os novos valores de VU-M referentes ao ano de 2026 deverão viger a partir de 25 de fevereiro de 2026, nesta mesma data também deverão começar a viger os novos valores de VC-1, restando devidamente justificada a revisão objeto do presente processo.
+II.3 – Do cálculo dos Valores de Comunicação VC-1
+A definição do novo valor de VC‑1 decorre da apuração da variação entre o VU‑M vigente na Região II do Plano Geral de Autorizações (PGA), referente ao exercício de 2025, e o VU‑M aplicável, a partir de 25 de fevereiro de 2026, à mesma Região II, conforme disposto no Ato nº 3.246/2023 (SEI nº 10009717). A diferença apurada entre os valores de VU‑M de 2025 e 2026 é aplicada diretamente sobre o VC‑1 vigente do Plano Básico de Serviço da concessionária do STFC Sercomtel. Os respectivos valores constam da tabela a seguir.
+ Região do PGA
+ | 
+ VU-M (Ato nº 3246/2023)
+ Ano 2025
+ | 
+ VU-M (Ato nº 3246/2023)
+ Ano 2026
+ | 
+ Diferença de VU-M
+ | 
+ REGIÃO II
+ | 
+ 0,01650
+ | 
+ 0,01686
+ | 
+ -0,00036
+ | 
+* Valores do minuto em Reais, líquidos de impostos e contribuições sociais.
+Nos termos do art. 7º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do SMP, aprovado pela Resolução nº 438/2006, a apuração dos novos Valores de Comunicação, na modalidade local e para o ano de 2026, baseia‑se na variação do RVU‑M verificada entre os exercícios de 2025 e 2026. Essa variação é deduzida do VC‑1 vigente, conforme fixado no Ato nº 13.384/2025 (SEI nº 14426787).
+Nesses termos, o novo valor do VC‑1 do Plano Básico de Serviço da concessionária Sercomtel é aquele indicado a seguir.
+ | 
+ VALOR VC-1
+ | 
+ Diferença VU-M
+ | 
+ NOVO VALOR VC-1
+ | 
+ % ALTERAÇÃO
+ | 
+ SERCOMTEL (REG II)
+ | 
+ 0,24298
+ | 
+ -0,00036
+ | 
+ 0,24334
+ | 
+ 0,15%
+ | 
+* Valores do minuto em Reais, líquidos de impostos e contribuições sociais.
+Quanto ao valor do VC-1 reduzido, o art.6º da Resolução nº 576/2011 dispõe que este corresponde a, no máximo, 70% (setenta por cento) das tarifas homologadas para o horário normal.
+Regulamento aprovado pela Resolução nº 576/2011
+Art. 6º As tarifas para o horário reduzido correspondem, no máximo, a 70% (setenta por cento) das tarifas homologadas para o horário normal.
+Tem-se, portanto, os seguintes valores para o VC-1, normal e reduzido:
+ | 
+ NOVOS VALORES VC-1
+ | 
+ | 
+ NORMAL
+ | 
+ REDUZIDO
+ | 
+ SERCOMTEL (REG II)
+ | 
+ 0,24334
+ | 
+ 0,17033
+ | 
+* Valores do minuto em Reais, líquidos de impostos e contribuições sociais.
+Após a elaboração dos cálculos preliminares destinados à definição do novo valor de VC‑1, a Área Técnica encaminhou à concessionária Sercomtel o Ofício nº 4/2026/CPAE/SCP‑ANATEL (SEI nº 15091678), acompanhado da planilha de cálculo referente à revisão tarifária com vigência a partir de 25 de fevereiro de 2026. Na oportunidade, foi solicitada a manifestação da prestadora acerca do conteúdo apresentado, no prazo de cinco dias.
+Em resposta, a Sercomtel manifestou concordância com a metodologia adotada e com os novos valores de VC‑1, conforme consignado na Correspondência CE nº 014/2025‑Regulatório (SEI nº 15097617), de 27 de janeiro de 2025.
+II.4 – Da Minuta de Ato de Revisão Tarifária
+Após a apuração dos novos valores de VC‑1, bem como a manifestação favorável da Sercomtel e o pronunciamento da Procuradoria Federal Especializada junto à Anatel, a Área Técnica elaborou a Minuta de Ato SEI nº 15156774, a qual foi submetida à apreciação do Conselho Diretor.
+Sobre essa Minuta, verifico a oportunidade de promover pequenos ajustes, objetivando maior clareza e precisão do texto normativo.
+O Ato nº 13.384, de 2025, tem basicamente duas disposições: (a) estabelecer os valores homologados para a Sercomtel e para a Algar; e (b) a indicação da data do futuro reajuste tarifário para as então concessionárias.
+Da mesma forma, a Minuta de Ato da SCP (SEI nº 15156774) homologa novos valores e ratifica a data base do futuro reajuste tarifário. Poderia ser um ato autônomo do Ato nº 13.384, de 2025, contudo, mantém o ato anterior em vigor apenas para que dele conste a definição da data-base para futuros reajustes tarifários.
+Opto por formulação mais simples e direta, revogando e substituindo por completo o Ato nº 13.384, de 2025, sem perder de vista o espírito da proposta da SCP.
+A revogação integral do Ato nº 13.384, de 2025, ainda é útil para excluir as referências à Algar, prestadora que já deixou de ser concessionária, evitando dúvidas e garantindo um acervo regulatório mais enxuto.
+Para melhor entendimento, coloco os textos em destaque na tabela a seguir:
+ Ato nº 13.384, de 2025 (SEI nº 14426787)
+ | 
+ Minuta SCP (SEI nº 15156774)
+ | 
+ Minuta GCCL (SEI nº 15187154)
+ | 
+ Art. 1º Homologar, na forma do Anexo I a este Ato, os valores tarifários máximos dos Planos Básicos de Serviço das Concessionárias do STFC, na modalidade Local, nas chamadas destinadas aos acessos do SMP - Serviço Móvel Pessoal (VC-1), líquidos de impostos e contribuições sociais.
+ | 
+ Art. 1º Homologar, na forma do Anexo I a este Ato, os valores tarifários máximos dos Planos Básicos da Concessionária do STFC SERCOMTEL S.A. TELECOMUNICAÇÕES, na modalidade Local, para chamadas destinadas aos acessos do Serviço Móvel Pessoal (VC-1), líquidos de impostos e contribuições sociais.
+ | 
+ | 
+ Art. 2º Revogar o Anexo ao Ato nº 13.384/2025, de 22 de setembro de 2025.
+ | 
+ Art. 3º Revogar o Ato nº 13.384/2025, de 22 de setembro de 2025 (SEI nº 14426787).
+ | 
+ Art. 2º Estabelecer que a data-base para futuros reajustes tarifários da concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES será a data de vigência dos valores homologados por este Ato, tomando-se o Índice de Serviços de Telecomunicações (IST) relativo ao mês de janeiro de 2025 como básico para o cálculo do reajuste.
+ Art. 3º Estabelecer que a data-base para futuros reajustes tarifários da concessionária ALGAR TELECOM S.A. será a data de vigência dos valores homologados por este Ato, tomando-se o Índice de Serviços de Telecomunicações (IST) relativo ao mês de janeiro de 2025 como básico para o cálculo do reajuste.
+ | 
+ Art. 3º Ratificar que a data-base para futuros reajustes tarifários e o Índice de Serviços de Telecomunicações (IST) básico para o cálculo do reajuste são as definidas no Ato nº 13.384/2025, de 22 de setembro de 2025. 
+ | 
+ Art. 2º Ratificar que a data-base para futuros reajustes tarifários da concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES é a data de vigência dos valores homologados pelo Ato nº 13.384, de 22 de setembro de 2025 (SEI nº 14426787), tomando-se o Índice de Serviços de Telecomunicações (IST) relativo ao mês de janeiro de 2025 como básico para o cálculo do reajuste.
+ | 
+ Art. 4º Este Ato entra em vigor na data de publicação de seu extrato no Diário Oficial da União.
+ | 
+ Art. 4º Estabelecer que os valores constantes do Anexo I deste Ato vigerão a partir de 25 de fevereiro de 2026. 
+ | 
+ Art. 4º Este Ato entra em vigor em 25 de fevereiro de 2026.
+ | 
+Outras questões menores também estão descritas a seguir:
+exclusão da menção à Resolução nº 552, de 10 de dezembro de 2010, visto que a referência necessária ao Ato é relativa ao contrato de concessão da Sercomtel; e,
+inclusão dos números SEI dos aditivos aos Contratos de Concessão nº 110/2011-ANATEL e PBOA/SPB Nº 144/2011-ANATEL, já assinados.
+Os ajustes indicados foram implementados na minha Minuta de Ato SEI nº 15187154.
+III – Da relação com os Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU
+As ações aqui elencadas revelam-se, ainda, aderentes à Agenda 2030, que se constitui em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+“Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil”
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável - ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 9 de agosto de 2021, e alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+Identifica-se maior aderência da presente fundamentação aos Objetivos de Desenvolvimento Sustentável (ODS) nº 9 (construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação), nº 12 (assegurar padrões de produção e de consumo sustentáveis) e nº 16 (promover e fazer cumprir leis e políticas não discriminatórias para o desenvolvimento sustentável) da Agenda 2030 da Organização das Nações Unidas (ONU), uma vez que a proposta ora endereçada à deliberação do órgão máximo se alinha aos comandos arquitetados na Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT), especialmente em seu art. 19, caput e inciso VII, na medida em que promove um ambiente favorável à competição saudável e incentiva o desenvolvimento das telecomunicações brasileiras por meio da revisão das tarifas dos serviços prestados em regime público.
+IV - Da Proposta de Encaminhamento
+Diante do exposto e tendo em a observância integral dos regulamentos afetos ao tema, a regularidade da atuação técnica da Anatel, reportada nos informes técnicos referidos, e a validação jurídica da instrução processual, conforme o Parecer nº 50/2026/PFE‑ANATEL/PGF/AGU (SEI nº 15153599), proponho a aprovação da revisão tarifária dos Valores de Comunicação VC-1 do Plano Básico de Serviço da concessionária do Serviço Telefônico Fixo Comutado (STFC) Sercomtel em suas relações com as operadoras do Serviço Móvel Pessoal (SMP), decorrente da alteração dos Valores de Referência de VU-M com base no Modelo de Custos, e dar publicidade à Minuta de Ato juntadas ao Processo (SEI nº 15187154), com validade a partir de 25 de fevereiro de 2026.
+CONCLUSÃO
+Voto por aprovar a revisão tarifária do plano básico do STFC, da Concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES, na modalidade local, expresso pelo VC-1, decorrente da alteração dos Valores de Referência de VU-M, com base no Modelo de Custos desenvolvido pela Anatel, nos termos da Minuta de Ato SEI nº 15187154.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 20/02/2026, às 10:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15178484 e o código CRC EF32C06B.
+ | 
+Referência: Processo nº 53500.006042/2026-27 | 
+SEI nº 15178484 |

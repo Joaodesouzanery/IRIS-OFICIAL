@@ -1,0 +1,412 @@
+SEI/ANATEL - 15097400 - Análise
+Boletim de Serviço Eletrônico em 12/02/2026
+Análise nº 9/2026/EH
+Processo nº 53500.080384/2024-47
+Interessado: Atv Servicos em Telecomunicacoes Ltda
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Conferência de Direito de Exploração, no Brasil, do sistema de satélites não geoestacionários Astrocast.
+Atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais.
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO. EXPLORAÇÃO DE SATÉLITES NÃO GEOESTACIONÁRIOS. CONFERÊNCIA DE DIREITO DE EXPLORAÇÃO E ATUALIZAÇÃO DE LISTA DE PRIORIDADE DE COORDENAÇÃO. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Solicitação apresentada pela Astrocast S.A., por meio de sua representante legal ATV Serviços em Telecomunicações Ltda., para conferência do Direito de Exploração do sistema de satélites não geoestacionários Astrocast, composto por até 80 satélites, pelo prazo de 15 anos, nas subfaixas de radiofrequências de 1.530,828125 a 1.531,140625 MHz (descida) e 1.632,328125 a 1.632,640625 MHz (subida), para operação em todo o território nacional.
+2. Pedido instruído com documentação comprobatória de representação legal, regularidade fiscal, autorização no país de origem, projeto técnico e declarações exigidas pela regulamentação.
+3. Consulta Pública realizada para avaliar necessidade de restrições concorrenciais, sem identificação de necessidade de restrições adicionais.
+4. Proposta de atualização do Ato nº 4.141/2025, para inclusão do sistema Astrocast na Lista de Prioridade de Coordenação de sistemas satelitais.
+II. QUESTÃO EM DISCUSSÃO
+5. Há duas questões em discussão: (i) saber se estão atendidos os requisitos técnicos, jurídicos e regulatórios para conferência do Direito de Exploração do sistema Astrocast; e (ii) saber se é cabível a atualização da Lista de Prioridade de Coordenação de sistemas satelitais para inclusão do sistema Astrocast.
+III. RAZÕES DE DECIDIR
+6. A documentação apresentada atende aos requisitos previstos no Regulamento Geral de Exploração de Satélites (RGSat), incluindo comprovação de regularidade fiscal, autorização no país de origem, projeto técnico e declarações exigidas.
+7. A operação do sistema Astrocast será realizada sem direito à proteção contra interferências prejudiciais e sem causar interferências prejudiciais aos sistemas para os quais não foi obtido acordo de coordenação, conforme solicitado pela interessada e previsto na regulamentação.
+8. Consulta Pública realizada não identificou necessidade de restrições adicionais para garantir a competição.
+9. A atualização da Lista de Prioridade de Coordenação é necessária para refletir a inclusão do sistema Astrocast, com definição de prioridades nas subfaixas de radiofrequências objeto do pleito.
+10. O prazo máximo para entrada em operação do sistema Astrocast será de 2 anos, contados da publicação do extrato do Ato no Diário Oficial da União.
+11. O Direito de Exploração será conferido pelo prazo de 15 anos, mediante pagamento do preço público fixado pela Agência.
+IV. DISPOSITIVO E TESE
+12. Pedido deferido para conferência do Direito de Exploração à Astrocast S.A., por meio de sua representante legal ATV Serviços em Telecomunicações Ltda., pelo prazo de 15 anos, para operação do sistema de satélites não geoestacionários Astrocast nas subfaixas de radiofrequências indicadas, sem exclusividade e observadas as condições de coordenação e proteção previstas na regulamentação. Atualização do Ato nº 4.141/2025 para inclusão do sistema Astrocast na Lista de Prioridade de Coordenação.
+Tese de julgamento: "1. Estão atendidos os requisitos técnicos, jurídicos e regulatórios para conferência do Direito de Exploração do sistema de satélites não geoestacionários Astrocast, pelo prazo de 15 anos, nas subfaixas de radiofrequências indicadas. 2. A operação será realizada sem direito à proteção contra interferências prejudiciais e sem causar interferências prejudiciais aos sistemas para os quais não foi obtido acordo de coordenação. 3. É cabível a atualização da Lista de Prioridade de Coordenação de sistemas satelitais para inclusão do sistema Astrocast, conforme minuta de Ato."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º, parágrafo único, 19, VIII, IX, XXXII, 172; Resolução nº 748/2021 (RGSat), arts. 3º, 10, 16, 18, 20, 22, 23, 24, 30, 33, 38; Resolução nº 612/2013, art. 133; Portaria nº 642/2013.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT;
+Lei nº 9.784, de 29 de janeiro de 1999- Lei do Processo Administrativo - LPA
+Decreto nº 10.402, de 17 de junho de 2020;
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites - RGSat;
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel - RIA;
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da PFE-Anatel;
+RELATÓRIO
+Trata-se de solicitação de Direito de Exploração do sistema de satélites não geoestacionários Astrocast, a ser conferido à Astrocast S.A., para provimento de capacidade satelital no Brasil em parte das subfaixas de radiofrequências contidas na denominada banda L, pelo prazo de 15 (quinze) anos
+Histórico
+Em 01/10/2024, conforme registrado no Requerimento de Direito de Exploração de Satélite (SEI nº 12659639), constante do Processo nº 53500.080384/2024-47, a Astrocast SA, representada legalmente pela ATV Serviços em Telecomunicações Ltda. (CNPJ nº 07.942.582/0001-74), apresentou solicitação para conferência do Direito de Exploração do sistema de satélites não geoestacionários Astrocast, composto por até 80 satélites, pelo prazo de 15 anos. Foram indicadas as subfaixas de radiofrequências a serem associadas ao sistema, conforme detalhado em tabela específica.
+Em anexo ao requerimento, a interessada apresentou documentação complementar, incluindo: i) acordo de representação legal; ii) descrição da rede de satélites; iii) comprovantes de inscrição e situação cadastral no CNPJ; iv) consulta ao quadro de sócios e administradores (QSA); e v) autorização do Escritório Federal de Comunicações (OFCOM) da Confederação Suíça.
+Após análise inicial, por meio dos Check Lists de Análise (SEI nº 12671227e nº 12696694), a Gerência de Outorga e Licenciamento de Estações (ORLE) expediu o Ofício nº 15468/2024/ORLE/SOR-ANATEL (SEI nº 12820998), solicitando documentação adicional que comprovasse as condições da autorização do satélite no país de origem, com menção às faixas de frequências e ao prazo de validade, acompanhada de tradução juramentada. Foram também apontadas discrepâncias relativas às larguras das faixas de frequências e solicitados esclarecimentos, bem como a apresentação da tradução juramentada do documento de indicação da empresa brasileira como representante legal.
+A interessada requereu extensão de prazo para atendimento das exigências, por meio dos documentos SEI nº 12952703 (28/11/2024) e SEI nº 13080042 (26/12/2024), deferidos conforme Ofícios nº 16078/2024/ORLE/SOR-ANATEL (SEI nº 12954778) e nº 16842/2024/ORLE/SOR-ANATEL (SEI nº 13086018).
+Em 25/02/2025, foram apresentados os documentos exigidos, ensejando novos Check Lists de Análise (SEI nº 13348297e nº 13348293) e a expedição do Ofício nº 2459/2025/ORLE/SOR-ANATEL (SEI nº 13410002), solicitando informações complementares sobre as condições da autorização do satélite no país de origem, conforme o art. 30, inciso III, do Regulamento Geral de Exploração de Satélites (RGSat).
+Novas solicitações de extensão de prazo foram protocoladas (SEI nº 13585198 e nº 13589461), respondidas pela ORLE por meio do Ofício nº 3452/2025/ORLE/SOR-ANATEL (SEI nº 13629477). Em 12/06/2025, a interessada solicitou novo prazo para cumprimento das exigências (SEI nº 13845391).
+Em 15/06/2025, a documentação exigida foi apresentada (SEI nº 13852399 e SEI nº 13852400), resultando na elaboração dos Check Lists de Análise (SEI nº 13863632 e nº 13907621) e na expedição do Ofício nº 5119/2025/ORLE/SOR-ANATEL (SEI nº 13907710), que encaminhou o processo à Gerência de Espectro, Órbita e Radiodifusão (ORER) para análise dos aspectos técnicos e de coordenação.
+Em 15/09/2025, a ORER, por meio do Ofício nº 4596/2025/ORER/SOR-ANATEL (SEI nº 14344307), solicitou à interessada informações adicionais sobre acordos de coordenação com os sistemas geoestacionários INMARSAT 3 AOR West (54°O) e INMARSAT-4 F3 (98°O), bem como esclarecimentos sobre a data prevista para início de operação comercial no Brasil.
+Em resposta (SEI nº 14467012), a interessada detalhou as tentativas de acordos com INMARSAT e VIASAT, sem sucesso, e formalizou solicitação expressa de conferência da autorização em caráter secundário, sem direito à proteção e sem causar interferências prejudiciais aos sistemas para os quais não foi obtido acordo de coordenação. Informou, ainda, a intenção de iniciar as atividades tão logo recebida a autorização da ANATEL.
+A ORER concluiu sua análise por meio do Informe nº 944/2025/ORER/SOR (SEI nº 14297151), restituindo os autos à ORLE pelo Ofício nº 5962/2025/ORER/SOR-ANATEL (SEI nº 14720500).
+Em 02/12/2025, a ORLE solicitou (SEI nº 14845824) à interessada a apresentação da Certidão de Regularidade Fiscal perante a Receita Federal do Brasil, tendo em vista a expiração da validade da certidão constante no processo. Em 05/12/2025, a interessada apresentou a certidão requerida (SEI nº 14866165), válida até 02/06/2026.
+Diante do atendimento dos requisitos técnicos, jurídicos e regulatórios, foi elaborada a minuta de Ato de conferência do Direito de Exploração (SEI nº 14844495), contemplando as condições e limites para operação do sistema Astrocast no Brasil, bem como a atualização da Lista de Prioridade de Coordenação de sistemas satelitais, por meio da minuta de Ato (SEI nº 14998015).
+Em sequência, a Matéria para Apreciação do Conselho Diretor nº 889/2025 (SEI nº 14844500) foi encaminhada à Superintendência Executiva, que, após avaliação, remeteu o processo à Secretaria do Conselho Diretor (SCD), conforme Despacho Ordinatório (SEI nº 15055252).
+Por fim, em 22/01/2026, o processo foi distribuído aos membros do Conselho Diretor da Agência Nacional de Telecomunicações, conforme registro no sistema (SEI nº 15074783), para deliberação quanto à conferência do Direito de Exploração do sistema de satélites não geoestacionários Astrocast e à atualização da Lista de Prioridade de Coordenação de sistemas satelitais.
+Em 5 de agosto de 2025, a Área Técnica elaborou o Informe nº 12077/2025/ORLE/SOR (SEI nº 14844482), analisando os requisitos regulamentares, técnicos, concorrenciais, jurídicos e fiscais, bem como a compatibilidade com o interesse público. Concluiu favoravelmente ao atendimento da solicitação da Astrocast SA, formulada por sua representante legal, a ATV Servicos em Telecomunicacoes Ltda., CNPJ nº 07.942.582/0001-74, referente à conferência de Direito de Exploração, no Brasil, do sistema de satélites não geoestacionários Astrocast, composto por até 80 (oitenta) satélites, sem caráter de exclusividade e para operação em todo o território nacional, pelo prazo de 15 (quinze) anos, nos termos da minuta de Ato SEI nº 14844495.
+Adicionalmente, sugeriu atualizar o Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato SEI nº 14998015.
+A Matéria para Apreciação do Conselho Diretor nº 889/2026 (SEI nº 14844500) foi encaminhada à Secretaria do Conselho Diretor (SEI nº 15055252) e distribuída para minha relatoria em 22/01/2026 (SEI nº 15074783).
+É o relatório.
+fundamentação
+A evolução das constelações de satélites de órbita baixa (LEO) e o arcabouço regulatório nacional estabelecido pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748/2021, contextualizam a análise do pedido de Direito de Exploração do sistema não geoestacionário Astrocast pela Astrocast SA. Esta análise estrutura-se em cinco capítulos: inicialmente, a Contextualização (I) apresenta o cenário tecnológico e regulatório; em seguida, aborda-se a Competência do Conselho Diretor (II), fundamentando a atribuição legal para deliberação; segue-se a Dispensa de Manifestação da PFE/ANATEL (III), justificando o encaminhamento direto ao Colegiado; no Mérito (IV), examina-se detalhadamente a conformidade do pleito com todos os requisitos legais, técnicos e procedimentais, incluindo a consulta pública; por fim, a Relação com os Objetivos de Desenvolvimento Sustentável (V) destaca a contribuição da autorização para as metas da Agenda 2030 da ONU.
+I - CONTEXTUALIZAÇÃO
+Nesta década, assistiu-se a uma notável evolução das constelações de satélites de órbita baixa (LEO), marcada pelo rápido aumento do número de satélites operando entre 300 e 2.000 km de altitude. Devido à complexidade e à necessidade de escala para oferecer banda larga, tais artefatos são geralmente compactos e fabricados em série. Isso viabiliza arquiteturas com milhares de unidades, capazes de ampliar a capacidade e a cobertura com menor latência comparada aos satélites geoestacionários, localizados acima de 35.000 km. Esse modelo é impulsionado pela demanda por conectividade global, especialmente em regiões remotas e de difícil acesso por infraestrutura terrestre.
+Do ponto de vista da cobertura, a principal vantagem das constelações LEO em áreas remotas decorre da malha formada por múltiplos satélites, que passam continuamente sobre diferentes pontos do globo. Isso amplia a disponibilidade de enlace, reduz as limitações de cobertura típicas de soluções alternativas em locais isolados — como zonas rurais, oceânicas e polares — e melhora a latência percebida pelo usuário.
+No Brasil, o marco regulatório central para a exploração de satélites, inclusive sistemas não geoestacionários e constelações LEO, é o Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748/2021. O RGSat disciplina, entre outros aspectos, em especial os seguintes destaques:
+ Regra
+ | 
+ Dispositivo da Resolução nº 748/2021 (RGSat)
+ | 
+ O Que Deve Ser Observado pelo Interessado
+ | 
+ Observações
+ | 
+ Requisitos Gerais do Pedido 
+ | 
+ Art. 4º
+ | 
+ Definição de quando o Direito de Exploração é necessário e associação a redes de satélites notificadas na UIT .
+ | 
+ O sistema LEO deve ter uma notificação (filing) na UIT em nome de uma administração .
+ | 
+ Art. 38
+ | 
+ Pagamento do preço público único de R$ 102.677,00 para conferência, prorrogação ou alteração.
+ | 
+ Valor fixo, independente das faixas de frequência ou prazo.
+ | 
+ Condições de Operação e Convivência 
+ | 
+ Art. 10, §8º 
+ | 
+ Sistemas não geoestacionários (NGSO) não devem causar interferência prejudicial e nem solicitar proteção a sistemas geoestacionários (GEO) em faixas específicas.
+ | 
+ Operação em regime de "não causar interferência prejudicial" aos sistemas GEO listados .
+ | 
+ Regras de Coordenação (exigência geral)
+ | 
+ Obtenção de acordos de coordenação com outros sistemas satelitais brasileiros pré-existentes que operem nas mesmas faixas .
+ | 
+ Autorizações de outors sistemas de satélite com os quais deve coordenar.
+ | 
+ Prazos e Implementação 
+ | 
+ Art. 22 & 28 (para satélite brasileiro) 
+ | 
+ Satélite Brasileiro: apresentação de garantia de execução no valor de 100x o preço público (cerca de R$ 10,2 milhões) para colocar o segmento espacial em operação.
+ | 
+ Condicionante para emissão do Ato de Conferência .O valor da garantia é restituído após entrada em operação
+ | 
+ Prazo Máximo de Entrada em Operação (definido no Ato)
+ | 
+ O Ato de Conferência estabelece um prazo máximo para entrada em operação do sistema (Brasil - 3 anos, demais - 2 anos.
+ | 
+ Não cumprimento pode levar à caducidade da autorização.
+ | 
+ Documentação Específica 
+ | 
+ Art. 16
+ | 
+ Solicitação formal com apresentação da lista completa da documentação obrigatória para o pedido.
+ | 
+ Inclui projeto técnico simplificado, acordos de coordenação, documentos societários e declarações .
+ | 
+ (Exigência Geral) 
+ | 
+ Satélite Estrangeiro: apresentação de documento do órgão regulador do país de origem e tradução juramentada.
+ | 
+ Comprova a autorização para uso do segmento espacial no país de origem.
+ | 
+ Alterações e Revisões 
+ | 
+ Art. 33, §3º 
+ | 
+ Alterações na autorização no país de origem devem ser comunicadas à Anatel em prazo determinado.
+ | 
+ Pode-se exigir apresentação de decisão de administração estrangeira com prazo definido pela Superintendência.
+ | 
+ Condição Geral nos Atos 
+ | 
+ A Anatel pode revisar a autorização para assegurar coexistência e competição, ou em caso de risco à concorrência.
+ | 
+ É uma cláusula padrão que confere flexibilidade regulatória à Agência.
+ | 
+À luz dessas regras, a Em 1º de outubro de 2024, conforme consta do Requerimento de Direito de Exploração de Satélite SEI nº 12659639, constante no Processo nº 53500.080384/2024-47, a Astrocast SA, por meio da sua representante legal ATV Servicos em Telecomunicações Ltda., CNPJ nº 07.942.582/0001-74, solicitou a conferência de Direito de Exploração do sistema de satélites não geoestacionários Astrocast, composto por até 80 (oitenta) satélites, pelo prazo de 15 (quinze) anos.
+Realizada a contextualização, passo agora à análise da competência do Conselho Diretor.
+II - DA COMPETÊNCIA DO CONSELHO DIRETOR
+O inciso III do art. 3º do RGSat, aprovado pela Resolução nº 748, de 22 de outubro de 2021, assim define o direito de exploração de satélite:
+Regulamento Geral de Exploração de Satélites - RGSat, aprovado pela Resolução nº 748, de 22 de outubro de 2021)
+"Art. 3º Para os fins deste Regulamento, além das definições constantes na legislação e regulamentação, aplicam-se as seguintes definições:
+(...)
+III - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;" (grifou-se)
+A competência da Anatel para regular o tema está expressa no parágrafo único do art. 1º e nos incisos VIII e IX do art. 19 da Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT, abaixo transcritos:
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências.
+(...)
+Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente:
+(...)
+VIII - administrar o espectro de radiofreqüências e o uso de órbitas, expedindo as respectivas normas;
+(...)
+IX - editar atos de outorga e extinção do direito de uso de radiofreqüência e de órbita, fiscalizando e aplicando sanções;
+(...)
+XXXII - reavaliar, periodicamente, a regulamentação com vistas à promoção da competição e à adequação à evolução tecnológica e de mercado." (destacou-se)
+O art. 172 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT, prevê a possibilidade de prorrogação de direitos de exploração de satélites brasileiros:
+ Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações
+"Art. 172. O direito de exploração de satélite brasileiro para transporte de sinais de telecomunicações assegura a ocupação da órbita e o uso das radiofrequências destinadas ao controle e monitoração do satélite e à telecomunicação via satélite, por prazo de até 15 (quinze) anos, podendo esse prazo ser prorrogado, nos termos da regulamentação, desde que cumpridas as obrigações já assumidas."
+De acordo com o Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir sobre direito de exploração de satélites e uso de radiofrequências associadas decorrentes de procedimentos licitatórios:
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite;" 
+Dessa forma, cabe a este Colegiado deliberar sobre a matéria ora apresentada.
+III - DA DISPENSA DE MANIFESTAÇÃO DA PFE/ANATEL
+As hipóteses de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel estão estabelecidas no RIA, o qual também atribui ao Procurador-Geral a responsabilidade de indicar os casos nos quais a Procuradoria se manifestará de ofício:
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares."
+Verifica-se que as solicitações associadas ao direito de exploração de satélite não se enquadram entre as hipóteses de remessa obrigatória à PFE-Anatel previstas no § 2º do art. 39 do RIA.
+Outrossim, a Portaria nº 642, de 26 de julho de 2013, e suas alterações, em conformidade com o disposto no § 1º do art. 39 do RIA, disciplina os casos de manifestação obrigatória da PFE-Anatel. A mencionada Portaria não prevê, dentre as hipóteses de manifestação obrigatória, as solicitações relacionadas ao direito de exploração de satélite.
+Adicionalmente, a Superintendência de Outorga e Recursos à Prestação - SOR consignou que não há dúvidas quanto à matéria jurídica, o que dispensaria a remessa dos autos à Procuradoria. Dessa forma, o Processo foi encaminhado diretamente para análise do Conselho Diretor:
+Informe nº 12077/2025/ORLE/SOR (SEI nº(14844482))
+"3.71. Verifica-se que as solicitações associadas a direito de exploração de satélite não se encontram entre as hipóteses de remessa obrigatória à PFE-Anatel.
+3.72. Além disso, esta Superintendência entende não haver dúvida quanto à matéria jurídica a ensejar a remessa dos autos à Procuradoria e, dessa forma, sugerimos a remessa dos Autos diretamente ao Conselho Diretor."
+Considerando que não há dúvida jurídica e que o Processo em análise não se enquadra nos casos de manifestação obrigatória da PFE-Anatel, conforme estabelecido no art. 39, § 2º, do Regimento Interno da Anatel, e na Portaria nº 642/2013, e suas alterações, entende-se ser desnecessária a oitiva do Órgão Jurídico no presente caso.
+Passo, portanto, à análise da solicitação com base nas avaliações consolidadas pela Área Técnica no Informe nº 12077 (SEI 14844482), o qual procedeu ao exame minucioso dos aspectos inerentes às exigências normativas. Inicialmente, abordou os requisitos regulamentares gerais, em sequência, a análise cadastral, documental e de regularidade fiscal, bem como a conformidade das condições de autorização vigentes no país de origem. Ademais, foram considerados os resultados e subsídios obtidos por meio da Consulta Pública realizada e, por fim, o informe dedicou-se aos aspectos técnicos e de coordenação do sistema, concluindo com a verificação do devido pagamento do preço público pelo Direito de Exploração de Satélite.
+IV - DO MÉRITO
+Em 1º de outubro de 2024, a Astrocast SA, representada legalmente pela ATV Serviços em Telecomunicações Ltda. (CNPJ nº 07.942.582/0001-74), protocolou o Requerimento de Direito de Exploração de Satélite de número SEI nº 12659639, inserido no Processo nº 53500.080384/2024-47. A solicitação consiste na conferência de Direito de Exploração para o sistema de satélites não geoestacionários Astrocast SA, que prevê a operação de até 80 (oitenta) satélites por um prazo de 15 (quinze) anos. A interessada informou que as subfaixas de radiofrequências a serem associadas ao sistema eram as constantes da tabela abaixo:
+ Tabela 1 - Tabela de Subfaixas de Radiofrequências
+ Frequências de Subida
+ | 
+ Frequências de Descida
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Astrocast - Terminal 1
+ | 
+ 1632,330
+ | 
+ 1632,480
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ CubeSat 1
+ | 
+ 1530,830
+ | 
+ 1530,980
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ Astrocast - Terminal 2
+ | 
+ 1632,485
+ | 
+ 1632,635
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ CubeSat 2
+ | 
+ 1530,985
+ | 
+ 1531,135
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+No que concerne aos aspectos regulatórios, reitera-se que o Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021, e que revogou o então Regulamento sobre o Direito de Exploração de Satélite para Transporte de Sinais de Telecomunicações (aprovado pela Resolução nº 220, de 5 de abril de 2000), entrou em vigor em 1º de novembro de 2021, definindo em seu art. 3º, inciso III, que o Direito de Exploração de satélite é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro.
+O art. 16 do RGSat estabeleceu os requisitos que devem ser atendidos para a obtenção, alteração ou prorrogação do Direito de Exploração de satélite estrangeiro, in verbis:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+...
+Em atendimento ao disposto no § 1º do art. 16 do RGSat, foi expedido o Ato nº 9526, de 27 de outubro de 2021 (SEI nº 7596501), que estabeleceu a documentação a ser apresentada para atendimento das condições previstas nos incisos do mencionado dispositivo, nos seguintes termos:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º Concomitantemente à análise da documentação citada nos incisos anteriores, a área técnica responsável verificará a regularidade fiscal da pretendente perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel.
+§ 2º Não sendo possível realizar a consulta aos bancos de dados referidos no § 1º deste artigo, ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões.
+Art. 2º Sem prejuízo da documentação a ser encaminhada, relacionada no Art. 1º, deverão ser cumpridas as demais condições estabelecidas no Regulamento Geral de Exploração de Satélites.
+(grifo nosso)
+Adicionalmente, o art. 30 do RGSat definiu os requisitos que devem ser atendidos para a obtenção do Direito de Exploração de satélite estrangeiro:
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+I - formalizar ante a Agência a indicação de seu(s) representante(s) legal(is) no Brasil e seu comprometimento de manter essa informação atualizada e de prover a capacidade do Segmento Espacial somente por meio do(s) representante(s) indicado(s);
+II - efetuar o pagamento, por um de seus representantes legais no País, pelo direito de exploração de satélite estrangeiro, de valor fixado pela Agência, conforme estabelecido neste Regulamento;
+III - apresentar documentação, expedida pelo órgão competente, que demonstre as condições da autorização do satélite no país de origem.
+Quanto aos aspectos de coordenação a serem observados na exploração de satélites sobre o território brasileiro, cabe destacar os arts. 10, 18 e 20 do RGSat, que apresentam a seguinte redação:
+Art. 10. A exploração de satélites sobre o território brasileiro requer coordenação prévia com sistemas de comunicação via satélite que tenham prioridade de coordenação no âmbito nacional para os quais haja sobreposição de frequências, observados os critérios técnicos e operacionais definidos em Ato da Superintendência responsável pela administração do uso do espectro de radiofrequências.
+§ 1º Terão prioridade de coordenação no âmbito nacional sobre satélites entrantes as redes de satélite notificadas em nome do Brasil, os direitos de exploração devidamente conferidos e aqueles cuja solicitação de autorização para exploração de satélite tenha sido protocolizada anteriormente.
+...
+§ 5º A exploradora de satélite que efetue alterações às características técnicas em seu sistema, que possam causar interferência maior que aquela já coordenada, deverá se submeter a novo processo de coordenação com os sistemas potencialmente afetados.
+§ 6º O requisito de coordenação prévia deve ser atendido mediante assinatura de acordo de coordenação com as operadoras de satélites autorizadas envolvidas, o qual não dispensa o atendimento aos parâmetros e critérios técnicos mencionados no artigo 15, observando que:
+I - Nos casos de exploração de satélite associada aos serviços de radiocomunicação listados no inciso I do artigo 4º, uma cópia do acordo de coordenação firmado deve ser enviada à Anatel quando da solicitação de direito de exploração de satélite;
+...
+Art. 18. A solicitação de Direito de Exploração de Satélite deverá conter a indicação dos Filings das Redes de Satélite e o nome do satélite ou a indicação do sistema a ser associado ao direito, bem como a posição orbital, as faixas de frequências, a área geográfica de cobertura, o prazo solicitado para vigência do direito de exploração, os acordos de coordenação necessários e, se for o caso, os acordos de colocalização de satélites.
+§ 1º Na hipótese de coordenação entre sistemas de satélites não geoestacionários ou entre satélites não geoestacionários e geoestacionários ou entre satélites geoestacionários com separação orbital de 2° (dois graus) ou mais, caso um ou mais acordos de coordenação não sejam apresentados, a Operadora de Satélite poderá solicitar a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e desde que sua operação não cause interferências prejudiciais em relação àqueles sistemas cujo acordo não foi obtido, sem prejuízo à obtenção dos acordos de coordenação após a conferência do Direito de Exploração de Satélite.
+§ 2º Na hipótese prevista no § 1º deste artigo, a solicitação deverá estar acompanhada de documentos que comprovem os esforços de coordenação, os quais serão analisados pela Agência que poderá solicitar informações adicionais das partes interessadas.
+§ 3º Em nenhuma hipótese serão consideradas solicitações sem os acordos de coordenação necessários ou, se for o caso, sem os documentos com a indicação da operação sem direito à proteção e sem causar interferência prejudicial em relação àqueles sistemas cujo acordo não foi obtido, prevista no § 1º, e sem os documentos que comprovam os esforços de coordenação, previstos no § 2º.
+...
+Art. 20. Terá preferência na obtenção de novo Direito de Exploração de Satélite a exploradora que já detenha outorga referente aos mesmos recursos de órbita e espectro pretendidos, desde que indique seu interesse, no mínimo, 2 (dois) anos antes do vencimento do prazo do Direito original e que não haja descontinuidade no Provimento da Capacidade Satelital, salvo em situações devidamente justificadas e aprovadas pela Agência.
+§ 1º Na hipótese de conferência de Direito de Exploração estabelecida no caput, não há necessidade de apresentação de novos acordos de coordenação, desde que mantidas as características operacionais acordadas para uso dos recursos de órbita e espectro pretendidos
+....
+Em atendimento ao disposto no art. 10 do RGSat, foi expedido o Ato nº 9523, de 27 de outubro de 2021 (SEI nº 7595677), que estabeleceu os requisitos técnicos e operacionais para sistemas de comunicação via satélite, brasileiros e estrangeiros, comunicando-se com estações no território brasileiro nas subfaixas de radiofrequências associadas aos serviços de radiocomunicação por satélite, devendo-se destacar ainda, conforme o § 4º do art. 30 do RGSat, que a Agência aplicará adicionalmente as condições de autorização do país de origem para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro, vejamos:
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+...
+§ 4º Para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro, a Agência aplicará adicionalmente as condições da autorização do país de origem, exceto em casos excepcionais, a critério da Agência.
+Quanto à análise cadastral, de documentação e de regularidade fiscal, conforme a regulamentação, foi apresentado o projeto técnico simplificado do sistema de comunicação via satélite, constante do Requerimento de Direito de Exploração de Satélite SEI nº 12659639, cuja documentação, após análise pela ORLE, atestou conformidade, especialmente com o disposto no art. 16 e nos incisos I e III do art. 30 do RGSat e no Ato nº 9526, de 27 de outubro de 2021 (SEI nº 7596501), conforme resumo contido nos Check Lists de Análise Jurídica SEI nº 13907621 e de Análise Técnica SEI nº 13863632, ambos de 26 de junho de 2025. Para o sistema Astrocast, a Astrocast SA indicou como sua representante legal no Brasil a ATV Serviços em Telecomunicações Ltda. (CNPJ nº 07.942.582/0001-74), empresa constituída segundo a legislação brasileira com sede e administração no País, conforme comprovado pelos documentos SEI nº 11656938 e nº 12659642 (cópias dos atos constitutivos e comprovante de inscrição no CNPJ), comprometendo-se a manter essa informação atualizada e a prover capacidade do segmento espacial exclusivamente através desta representante, que apresentou declaração atestando (SEI nº 12659639 - item 8):
+não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+possuir aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+observar a regulamentação aplicável e ter ciência das condições de outorga; e
+observar as condições de operação contidas na Regulamentação Nacional e no Regulamento de Radiocomunicações da União Internacional de Telecomunicações, além das condições legais, regulamentares e normativas para Exploração de Satélite, durante o prazo de exploração do satélite.
+Verificou-se, ainda, que a representante legal indicada encontra-se em situação de regularidade fiscal perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel (SEI nº 14895951).
+Sobre as condições da autorização no país de origem, para a conferência do Direito de Exploração de satélite estrangeiro, a Agência avalia os critérios em que estes sistemas foram autorizados no país de origem, tendo a interessada, para o presente caso, apresentado a documentação SEI nº 13340611 e sua tradução juramentada sob o SEI nº 13340612, complementada pelos documentos SEI nº 13852399 e SEI nº 13852400, emitida pelo órgão regulador dos Emirados Árabes Unidos (UAE), onde constam as condições de autorização no país de origem, de forma que a área técnica identificou que o prazo solicitado para o direito de exploração no Brasil do sistema de satélites não geoestacionários Astrocast e as subfaixas de radiofrequências associadas estão condizentes com o autorizado pela administração de origem.
+Em relação à Consulta Pública, o Regulamento Geral de Exploração de Satélites (RGSat) prevê a realização de Consulta Pública para subsidiar a decisão da Agência quanto ao estabelecimento de restrições para promover a concorrência (arts. 19, §2º e 21). Especificamente, o Ato nº 4430/2023 tornou obrigatória essa consulta para sistemas não geoestacionários associados ao Serviço Móvel por Satélite (MSS) que utilizem antenas não direcionais, como é o caso da constelação Astrocast, objeto deste processo.
+Diante disso, foi instituída a Consulta Pública nº 38/2025 (SEI nº 14459599), com base no Informe nº 946/2025/ORER/SOR (SEI nº 14298295), para colher contribuições sobre a conferência do Direito de Exploração do sistema Astrocast nas faixas da banda L (1.530,828125–1.531,140625 MHz e 1.632,328125–1.632,640625 MHz), visando avaliar a necessidade de limites ou condições para garantir competição justa.
+Após a análise das contribuições, consubstanciada no Informe nº 1149/2025/ORER/SOR (SEI nº 14614859), a ORER concluiu que não há necessidade de estabelecer restrições adicionais para o sistema Astrocast, considerando os mecanismos regulatórios de coordenação existentes. Essa conclusão foi incorporada à análise final do pleito, conforme registrado no Informe nº 944/2025/ORER/SOR (SEI nº 14297151).
+A respeito dos aspectos técnico e de coordenação, a ORLE solicitou manifestação da ORER acerca dos aspectos técnicos e de coordenação relativos à solicitação de Direito de Exploração do Sistema Astrocast, conforme Ofício nº 5119/2025/ORLE/SOR-ANATEL, de 26 de junho de 2025 (SEI nº 13907710). Em resposta, por meio do Ofício nº 5962/2025/ORER/SOR-ANATEL, de 10 de novembro de 2025 (SEI nº 14720500), a ORER restituiu o Processo nº 53500.080384/2024-47 à ORLE, acompanhado do Informe nº 944/2025/ORER/SOR, de mesma data (SEI nº 14297151), contendo a análise correspondente aos aspectos técnicos e de coordenação. A ORER verificou que, para as faixas de frequências do pleito, não existem redes notificadas em nome do Brasil nem pedidos anteriores de Direito de Exploração, mas há direitos de exploração conferidos para os satélites geoestacionários Inmarsat-3 AOR-West (54°W) e Inmarsat-4 F3 (98°W). Diante da ausência de acordos de coordenação com Inmarsat e Viasat, apesar dos esforços comprovados pela interessada desde 2016 (documento SEI nº 14467012), a Astrocast solicitou e a ORER reconheceu o cumprimento dos requisitos regulatórios previstos no art. 18 do RGSat, propondo a autorização sem direito à proteção e sem causar interferências prejudiciais aos sistemas prioritários.
+Quanto aos demais aspectos técnicos, a rede FALAK-1, associada ao Sistema Astrocast, foi submetida à UIT em nome dos Emirados Árabes Unidos, sem parecer desfavorável do Bureau de Radiocomunicações. Assim, a ORER manifestou-se favorável à concessão do Direito de Exploração à Astrocast SA para operar o sistema não geoestacionário Astrocast, composto por até 80 satélites, pelo prazo de 15 anos, com provimento de capacidade satelital nas faixas de 1.530,828125 a 1.531,140625 MHz (enlace de descida) e 1.632,328125 a 1.632,640625 MHz (enlace de subida).
+Adicionalmente, a ORER propôs a atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), para incluir o sistema Astrocast na Lista de Prioridade de Coordenação de sistemas satelitais não geoestacionários nas bandas L e S. Na tabela atualizada, o Astrocast recebe prioridade 1 na subfaixa de 1.632,33 a 1.632,641 MHz e na faixa de 1.530,83 a 1.531,141 MHz, sem prioridade nas demais subfaixas listadas (IRIDIUM, GLOBALSTAR e KEPLER possuem prioridades variáveis conforme as subfaixas, com aplicação da hipótese do §1º do art. 18 do RGSat em alguns casos). Foi definido formalmente que o sistema Astrocast não pode causar interferência prejudicial nem reclamar proteção contra interferências prejudiciais dos satélites geoestacionários Inmarsat-3 AOR-West (54°W) e Inmarsat-4 F3 (98°W) nas faixas de frequências objeto do pleito, até a obtenção de acordos de coordenação. Tal proposta decorre do impacto da autorização na lista nacional de prioridades na banda L. Informa-se ainda que atualização similar do mesmo Ato foi proposta no Processo nº 53500.101314/2025-11, relativo ao sistema SPACESAIL, para as bandas Ku, Ka e Q/V (minuta SEI nº 14853212, Informe nº 1264/2025/ORER/SOR, de 15 de dezembro de 2025, SEI nº 14833736), sob relatoria do Conselheiro Octavio Penna Pieranti.
+A entrada em operação é o objeto artigo 24 do Regulamento Geral de Exploração de Satélites (RGSat), o qual estabelece que o prazo e as condições para entrada em operação de sistemas de satélites não geoestacionários serão definidos pelo Conselho Diretor em cada caso (§ 2º), podendo ser prorrogados mediante justificativa (§ 3º). Para manter a simetria regulatória com prazos recentemente conferidos a sistemas estrangeiros similares, deve-se estabelecer o prazo máximo de 2 (dois) anos para a entrada em operação do sistema Astrocast.
+Desse modo, com o objetivo de destacar essa previsão, foi proposta a inclusão de dispositivo na minuta de Ato SEI nº 14844495, indicando que o Sistema Astrocast deve entrar em operação no prazo máximo de 2 (dois) anos, contados da data de publicação do extrato do Ato de conferência do Direito de Exploração no Diário Oficial da União (DOU).
+O Direito de Exploração de satélite é conferido à operadora a título oneroso, nos termos do art. 23 do RGSat, que estabelece expressamente tal condição. Para satélites estrangeiros, o inciso II do art. 30 do RGSat exige, além do cumprimento dos arts. 16, 17 e 18, o pagamento do valor fixado pela Agência por meio de representante legal no País. Conforme o art. 38 do RGSat, o preço público pelo Direito de Exploração de satélite, brasileiro ou estrangeiro, é de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), valor independente das faixas de radiofrequências e do prazo de validade da outorga. Como o valor integral incide por cada entidade quando o Direito de Exploração de um mesmo satélite geoestacionário ou constelação de satélites não geoestacionários for conferido a mais de uma, no caso de constelação não geoestacionária conferida a uma única entidade, o valor aplica-se à totalidade da constelação. Assim, o Preço Público pelo Direito de Exploração do satélite estrangeiro em questão (PPDSat) é de R$ 102.677,00, a ser pago pela operadora por intermédio de sua representante legal no Brasil, a ATV Serviços em Telecomunicações Ltda., CNPJ nº 07.942.582/0001-74.
+Diante do exposto, considero que a análise e as conclusões da Área Técnica são robustas e suficientes para fundamentar a decisão, não identificando quaisquer óbices técnicos, jurídicos ou regulatórios ao pleito. Desse modo, alinho-me integralmente à proposta de encaminhamento, concluindo que os requisitos para a conferência do Direito de Exploração de satélite estrangeiro foram devidamente atendidos, nos termos da minuta de Ato proposta (SEI nº 14654375) e sob a égide do Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021. A Área Técnica assim o encaminhou:
+3.54. Pelo exposto, conclui-se que os requisitos para a conferência do Direito de Exploração de satélite estrangeiro foram atendidos, não havendo óbice do ponto de vista técnico, jurídico e regulatório, para atendimento do pleito da interessada, nos termos da minuta de Ato proposta (SEI nº 14654375), sob a égide do Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução Anatel nº 748, de 22 de outubro de 2021.
+3.55. A respeito dos aspectos técnico-operacionais, a ORER manifestou-se de maneira favorável à conferência do Direito de Exploração do satélite à Astrocast SA, para operação do sistema de satélites não geoestacionários Astrocast, pelo prazo de 15 anos, para provimento de capacidade satelital em subfaixas de frequências compreendidas entre 1.530,828125 a 1.531,140625 MHz, para o enlace de descida, e de 1.632,328125 a 1.632,640625 MHz, para o enlace de subida, correspondentes à banda L, conforme apontado no item 4.1 da conclusão do Informe nº 944/2025/ORER/SOR, de 10 de novembro de 2025 (SEI nº 14297151).
+3.56. Adicionalmente, entende-se oportuno acrescentar, aos Considerandos do referido Ato, a exemplo do que foi proposto em outras análises referentes a Direito de Exploração de satélites, texto que destaque a possibilidade de uso das faixas de radiofrequências objeto deste pleito ou de faixas adjacentes a estas por outros sistemas de telecomunicações regularmente autorizados, a saber:
+“Considerando que as faixas pleiteadas e as faixas adjacentes a estas podem estar sendo utilizadas ou virem a ser utilizadas por outros sistemas de telecomunicações regularmente autorizados,”
+3.57. O texto proposto correlaciona-se com o caráter de não exclusividade do Direito de Exploração a ser conferido, além de realçar o nexo entre a possibilidade de uso das faixas adjacentes por outros sistemas com a necessidade de uso de filtros apropriados pelo sistema satelital objeto do pleito.
+3.58. Destaca-se que tal sugestão também consta do Informe nº 944/2025/ORER/SOR, de 10 de novembro de 2025 (SEI nº 14297151).
+3.59. Por fim, considerando que a interessada requereu expressamente a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e sem causar interferência prejudicial aos sistemas com os quais não foi possível celebrar acordo de coordenação, em conformidade com os §§ 1º e 3º do art. 18 do RGSat, propõe-se a atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, de forma a incluir o sistema Astrocast. Nesse sentido, sugere-se a alteração do referido Ato, conforme disposto na minuta SEI nº 14998015, considerando que o Direito de Exploração, no Brasil, do satélite geoestacionário Inmarsat 3 AOR West, posição orbital 54°O, teve sua vigência expirada em 31 de dezembro de 2025.
+3.60. Assim, sugere-se, ainda, a inclusão do seguinte dispositivo ao Ato que conferirá o Direito de Exploração:
+"O sistema de satélites Astrocast não pode causar interferência prejudicial nem reclamar proteção contra interferências prejudiciais em relação aos satélites que tenham prioridade de coordenação em âmbito nacional e para os quais o acordo de coordenação não foi obtido, observando-se a Lista de Prioridade de Coordenação aprovada por meio de Ato do Conselho Diretor da Agência."
+Proponho, assim, deferir o pedido conferência do Direito de Exploração à empresa Astrocast SA, solicitado por meio de sua representante legal no país, a ATV Serviços em Telecomunicações Ltda. (CNPJ nº 07.942.582/0001-74), pelo prazo de 15 (quinze) anos, do sistema de satélites não geoestacionários Astrocast, composto por até 80 (oitenta) satélites, nas subfaixas subfaixas de frequências compreendidas entre 1.530,828125 a 1.531,140625 MHz, para o enlace de descida, e de 1.632,328125 a 1.632,640625 MHz, para o enlace de subida, correspondentes à banda L. 
+IV.a - Das Minutas dos Atos
+Sobre as Minutas dos Atos SEI nº 14844495 e nº 14998015, entendo oportuno corrigir erro material propagado do trâmite desse proceso. Os valores apresentados pela empresa na Tabela 1 - Tabela de Subfaixas de Radiofrequências, foram contestados pela Área Técnica (SEI nº 12671227) com identificação de divergência de 6,25 kHz entre a informação constante da coluna "Largura de Faixa (MHz)" e o cálculo efetivo da largura, obtido a partir das colunas "Limite Superior (MHz)" e "Limite Inferior (MHz)". Notificada por meio do Ofício nº 15468/2024/ORLE/SOR-ANATEL (SEI nº 12820998) para os devidos esclarecimentos, a interessada respondeu através do documento "Carta Esclarecimento limites frequencias" (SEI nº 13340674), alegando que a diferença decorreu do arredondamento dos valores dos limites de início e fim de cada faixa, os quais foram truncados em apenas três casas decimais. No mesmo documento, a empresa apresentou os valores corrigidos, reproduzidos na Tabela 2.
+ Tabela 2 - Tabela de Subfaixas de Radiofrequências
+ Frequências de Subida
+ | 
+ Frequências de Descida
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Transponders
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Astrocast - Terminal 1
+ | 
+ 1632,328125
+ | 
+ 1632,484375
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ CubeSat 1
+ | 
+ 1530,828125
+ | 
+ 1530,984375
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ Astrocast - Terminal 2
+ | 
+ 1632,484375
+ | 
+ 1632,640625
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+ CubeSat 2
+ | 
+ 1530,984375
+ | 
+ 1531,140625
+ | 
+ RHCP
+ | 
+ 0,15625
+ | 
+A Área Técnica, por meio do Check List de Análise Técnica (SEI nº 13348293), reconheceu as subfaixas de frequência informadas pela empresa, conforme consta na seção "SUBFAIXAS DE RADIOFREQUÊNCIAS SOLICITADAS". Permaneceu, contudo, como exigência técnica pendente, apenas a apresentação da autorização concedida pelo governo dos Emirados Árabes Unidos (UAE) à operadora Thuraya para a rede (filing) FALAK-1, acompanhada de sua respectiva tradução juramentada. Estes requisitos foram atendidos em 15/06/2025, por meio dos documentos "Carta Autorização Emirados Árabes - Thuraya" (SEI nº 13852399) e "Carta Tradução POR Carta Emirados Árabes" (SEI nº 13852400). Não obstante a superação do erro material, a divergência original foi propagada nos Informes nº 944/2025/ORER/SOR (SEI nº 14297151) e nº 12077/2025/ORLE/SOR (SEI nº 14844482), refletindo-se, consequentemente, nas propostas de Minuta de Ato de SEI nº 14844482 e nº 14998015.
+Diante do exposto, e com o objetivo de retificar o erro material propagado ao longo do trâmite, procede-se à necessária correção das Minutas dos Atos SEI nº 14844495 e nº 14998015, as quais foram formalmente substituídas pelas Minutas dos Atos SEI nº 15154200 e nº 15154208.
+V. DA RELAÇÃO COM OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL
+Importa destacar, ainda, a correlação entre o desenvolvimento do setor de telecomunicações, em especial do mercado de satélites, e os 17 Objetivos de Desenvolvimento Sustentável da Agenda 2030 da Organização das Nações Unidas - ONU.
+Fonte: https://brasil.un.org/pt-br/sdgs
+As telecomunicações desempenham um papel fundamental no avanço dos Objetivos de Desenvolvimento Sustentável (ODS) ao fornecer a infraestrutura essencial para a conectividade e a disseminação de informações. Elas facilitam o acesso à educação (ODS 4) e saúde (ODS 3) através de plataformas de ensino à distância e telemedicina, promovem a inclusão digital e a igualdade de oportunidades (ODS 10), e suportam a inovação e a indústria (ODS 9). Além disso, podem contribuir para a melhoria da eficiência da gestão urbana e rural (ODS 11), permitindo ainda o monitoramento ambiental (ODS 13, 14 e 15), e dando suporte a parcerias para o desenvolvimento sustentável (ODS 17), criando uma base tecnológica que impulsiona o progresso em todos os ODS.
+De forma mais específica, entende-se haver maior correlação do uso e da expansão das comunicações via satélite com o Objetivo 9 - Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação. Os sistemas de comunicação via satélite podem desempenhar um importante papel no avanço do ODS 9 no Brasil, fornecendo ferramentas avançadas para monitoramento, conectividade e inclusão digital, além da inovação e desenvolvimento tecnológico. Estes sistemas possibilitam a implementação de uma infraestrutura mais resiliente e fomentam a inovação, contribuindo para um desenvolvimento equilibrado e sustentável no país. A infraestrutura de comunicação via satélite é essencial para fornecer acesso à internet em áreas remotas e rurais do Brasil, promovendo a inclusão digital e a conectividade necessárias para o desenvolvimento econômico e social.
+A utilização racional e sustentável dos sistemas de comunicação via satélite fomentam o desenvolvimento de vários setores do país, estando diretamente ligada às metas 9.1, que tem por objetivo "Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional, transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos" e 9.c, que visa "Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020".
+CONCLUSÃO
+Pelo exposto, voto pela:
+conferência do Direito de Exploração à empresa Astrocast S.A., entidade constituída sob as leis da Suíça e representada legalmente pela ATV Serviços em Telecomunicações Ltda. (CNPJ nº 07.942.582/0001-74), para operação no Brasil do sistema de satélites não geoestacionários estrangeiro Astrocast, composto por até 80 (oitenta) satélites, associado às subfaixas de radiofrequência de 1.530,828125 a 1.531,140625 MHz (enlace de descida) e 1.632,328125 a 1.632,640625 MHz (enlace de subida), pelo prazo de 15 (quinze) anos contados da publicação do extrato do Ato no Diário Oficial da União, nos termos da minuta de Ato SEI nº 15154200 e mediante o pagamento do Preço Público de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), conforme estabelece o Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+atualização do Ato nº 4.141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato SEI nº 15154208.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 12/02/2026, às 18:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15097400 e o código CRC B9CC63CB.
+ | 
+Referência: Processo nº 53500.080384/2024-47 | 
+SEI nº 15097400 |

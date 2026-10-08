@@ -1,0 +1,422 @@
+SEI/ANATEL - 15031677 - Análise
+Boletim de Serviço Eletrônico em 04/09/2026
+Análise nº 2/2026/EH
+Processo nº 53500.005086/2018-20
+Interessado: CLARO S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Trata-se de análise do Recurso administrativo interposto por Claro S.A., inscrita no CNPJ nº 40.432.544/0001-47, contra decisão exarada pelo Superintendente de Controle de Obrigações Substituto, por meio do Despacho Decisório nº 682/2025/COGE/SCO, de 11 de agosto de 2025 (SEI nº 14163508), que manteve a cobrança de ônus contratual referente à prorrogação do direito de uso de radiofrequências associadas ao Serviço Móvel Pessoal, biênio 2017/2018.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. ÔNUS CONTRATUAL PELA PRORROGAÇÃO DO USO DE RADIOFREQUÊNCIAS ASSOCIADAS AO SERVIÇO MÓVEL PESSOAL. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso administrativo interposto por Claro S.A. contra decisão que manteve a cobrança de ônus contratual complementar referente ao biênio 2017/2018.
+Fato relevante. A Agência atualizou a metodologia de cálculo do ônus contratual. A atualização reduziu o valor complementar apurado para R$ 16.836.825,83.
+A controvérsia. A recorrente alegou prescrição. Impugnou a inclusão de receitas na base de cálculo. Contestou o cálculo dos tributos incidentes. Requereu a inclusão da faixa de 700 MHz no fator de proporcionalidade.
+A petição extemporânea. A recorrente apresentou petição sobre o requisito temporal para inclusão de radiofrequências no denominador da fórmula de cálculo. A petição foi recebida e analisada.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a cobrança do ônus contratual está prescrita; (ii) saber se as receitas impugnadas integram a base de cálculo; (iii) saber se o cálculo dos tributos incidentes deve ser revisto; e (iv) saber se a faixa de 700 MHz deve integrar o denominador do fator de proporcionalidade.
+III. RAZÕES DE DECIDIR
+O ônus contratual possui natureza de preço público. A obrigação decorre dos Termos de Autorização.
+Aplica-se o prazo prescricional de dez anos às obrigações contratuais. Não incide o prazo previsto no Decreto nº 20.910/1932.
+A base de cálculo do ônus inclui receitas decorrentes da exploração do Serviço Móvel Pessoal ou que dependam dessa exploração.
+A Súmula nº 13/2012 da Anatel inclui as receitas de interconexão, de facilidades ou comodidades adicionais e as receitas operacionais inerentes ao Serviço Móvel Pessoal na base de cálculo.
+A recorrente não comprovou que as receitas de venda de equipamentos foram auferidas de forma independente dos planos de serviço.
+As comissões de distribuição de cartão virtual constituem despesas operacionais. Elas não devem ser abatidas da receita total.
+A fiscalização limitou a dedução dos tributos aos valores registrados contabilmente. A recorrente não apresentou dados específicos sobre a incidência dos tributos nem demonstrou erro no cálculo.
+A metodologia considera somente as radiofrequências em efetivo uso no ano-base.
+A mera vigência do Termo de Autorização não demonstra o uso efetivo da radiofrequência.
+A inclusão de faixa sem operação durante todo o ano-base reduz artificialmente o ônus devido pelas faixas que geraram receita.
+A faixa de 700 MHz não estava em uso no período considerado. Ela não deve integrar o denominador da fórmula de cálculo.
+A petição extemporânea deve ser conhecida nos termos da Súmula nº 21/2017 da Anatel. Os argumentos apresentados não afastam o critério de efetivo uso das radiofrequências.
+IV. DISPOSITIVO E TESE
+Recurso administrativo desprovido. Petição extemporânea conhecida e pedido indeferido.
+Tese de julgamento: "1. O prazo prescricional para a cobrança de ônus contratual decorrente da prorrogação do direito de uso de radiofrequências é de dez anos. 2. Integram a base de cálculo do ônus contratual as receitas decorrentes da exploração do Serviço Móvel Pessoal ou que dependam dessa exploração. 3. A faixa de radiofrequência somente integra o denominador do fator de proporcionalidade quando estiver em efetivo uso durante o ano-base. 4. A vigência do Termo de Autorização não se confunde com o efetivo uso da radiofrequência."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 48, 163 e 167, § 1º; Resolução nº 612/2013, arts. 37, XII, 41, I a V, 47, 115, § 2º, e 116, I a V; CC, art. 205.
+Jurisprudência relevante citada: Anatel, Súmula nº 13, de 31 de outubro de 2012; Anatel, Súmula nº 21, de 10 de outubro de 2017; STJ, EREsp nº 1.280.825/SP; Anatel, Acórdão nº 707, de 13 de dezembro de 2018; Anatel, Acórdão nº 428, de 23 de dezembro de 2021.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013 (RIA);
+Regulamento de Separação e Alocação de Contas, aprovado pela Resolução nº 396, de 31 de março de 2005, e alterações (RSAC);
+Termos de Autorização nº 329/2012/PVCPA/PVCP/SPV-Anatel, 411/2012/PVCPA/PVCP/SPV-Anatel e 441/2012/PVCPA/PVCP/SPV-Anatel;
+Parecer nº 1298/2009/ACD/PGF/PFE (SEI nº 14109151);
+Parecer nº 00316/2023/PFE-ANATEL/PGF/AGU (SEI nº 14100733);
+Súmula nº 13, de 31 de outubro de 2012;
+Parecer 345/2025/PFE-ANATEL/PGF/AGU ( SEI nº 14541994).
+RELATÓRIO
+DOS FATOS
+Trata-se de recurso administrativo interposto por Claro S.A., inscrita no CNPJ nº 40.432.544/0001-47, contra decisão exarada pelo Superintendente de Controle de Obrigações Substituto, por meio do Despacho Decisório nº 682/2025/COGE/SCO, de 11 de agosto de 2025 (SEI nº 14163508), nos seguintes termos:
+I - Conhecer a presente impugnação e não reformar a decisão consubstanciada no Despacho Decisório nº 462/2025/COGE/SCO (SEI nº 13788978);
+II - Notificar a empresa para que, caso queira, interponha recurso administrativo, no prazo de 10 (dez) dias, nos termos do art. 115 do Regimento Interno da Anatel.
+Em 16 de fevereiro de 2018, foi exarado o Despacho Ordinatório de Instauração nº 122/2018/SEI/COGE/SCO (2409918), que determinou a instauração deste processo, com a finalidade de averiguar o cumprimento do disposto na Cláusula 3.1.2 dos Termos de Autorização firmados entre a Interessada e a Anatel, quanto ao recolhimento de valores devidos de Ônus Contratual (2%), referente ao Biênio 2017/2018, com vencimento em 30/04/2018.
+Em cumprimento, foi solicitado o Serviço de Fiscalização (SSF) registrado na pasta nº RADARCOGE42018000005, cujos documentos de trabalho constam do Relatório de Fiscalização nº 0341/2018/GR07 (3640965), o qual, ao final, concluiu:
+5. CONCLUSÃO
+Conforme demonstrado na Planilha de Apuração SEI nº 3632899 (aba “Apuração 2017”, para o ônus contratual definido na Cláusula 3.1.2 dos Termos de Autorização listados na seção 1.5, com vencimento em 30/04/2018, referente às receitas do exercício de 2017 apuram-se os seguintes valores:
+Valor total declarado pela Prestadora: R$ 32.678.604,35.
+Valor total apurado pela fiscalização da Anatel: R$ 79.430.805,00.
+Diferença entre valores apurados e declarados: R$ 46.752.200,65.
+A tabela abaixo detalha os resultados por Termo.
+ Termo
+ | 
+ Declarado
+ | 
+ Apurado
+ (Total)
+ | 
+ Diferença
+ Declarado (-) Total
+ | 
+ 329/2012
+ | 
+ R$ 11.336.129,97
+ | 
+ R$ 27.495.999,82
+ | 
+ -R$ 16.159.869,85
+ | 
+ 411/2012
+ | 
+ R$ 13.030.031,22
+ | 
+ R$ 35.536.236,04
+ | 
+ -R$ 22.506.204,82
+ | 
+ 441/2012
+ | 
+ R$ 8.312.443,16
+ | 
+ R$ 16.398.569,14
+ | 
+ -R$ 8.086.125,98
+ | 
+ Total
+ | 
+ R$ 32.678.604,35
+ | 
+ R$ 79.430.805,00
+ | 
+ -R$ 46.752.200,65
+ | 
+A tabela seguinte segrega dos demais os valores apurados exclusivamente pelas receitas auferidas com interconexão em cada Termo.
+ Termo
+ | 
+ Apurado
+ (Total)
+ | 
+ Apurado
+ (sem interconexão)
+ | 
+ Apurado
+ (só interconexão)
+ | 
+ 329/2012
+ | 
+ R$ 27.495.999,82
+ | 
+ R$ 25.223.005,27
+ | 
+ R$ 2.272.994,54
+ | 
+ 411/2012
+ | 
+ R$ 35.536.236,04
+ | 
+ R$ 33.200.951,22
+ | 
+ R$ 2.335.284,83
+ | 
+ 441/2012
+ | 
+ R$ 16.398.569,14
+ | 
+ R$ 15.090.098,61
+ | 
+ R$ 1.308.470,52
+ | 
+ Total
+ | 
+ R$ 79.430.805,00
+ | 
+ R$ 73.514.055,10
+ | 
+ R$ 5.916.749,89
+ | 
+Pela diferença não declarada e recolhida, a Prestadora está sujeita à cobrança de multa moratória de 0,33% (zero vírgula trinta e três por cento) ao dia, até o limite de 10% (dez por cento), acrescida da taxa referencial Selic para títulos federais, a ser aplicada sobre o valor da dívida considerando todos os dias de atraso de pagamento, conforme previsto no §4º da Cláusula 3.1.2. dos referidos termos.
+O presente Relatório de Fiscalização será encaminhado à área competente para providências cabíveis.
+Em resumo, foi constatado o seguinte quadro em relação aos valores declarados, fiscalizados e a respectiva diferença:
+ FISTEL
+ | 
+ Termo de Autorização
+ | 
+ Valor Declarado
+ | 
+ Valor Fiscalizado
+ | 
+ Ônus Complementar
+ | 
+ 50409889580
+ | 
+ 329/2012
+ | 
+ R$ 11.336.129,97
+ | 
+ R$ 27.495.999,82
+ | 
+ R$ 16.159.869,85
+ | 
+ 50409307637
+ | 
+ 411/2012
+ | 
+ R$ 13.030.031,22
+ | 
+ R$ 35.536.236,04
+ | 
+ R$ 22.506.204,82
+ | 
+ 50409105090
+ | 
+ 441/2012
+ | 
+ R$ 8.312.443,16
+ | 
+ R$ 16.398.569,14
+ | 
+ R$ 8.086.125,98
+ | 
+ Total
+ | 
+ R$ 32.678.604,35
+ | 
+ R$ 79.430.805,00
+ | 
+ R$ 46.752.200,65
+ | 
+Posteriormente, o Conselho Diretor promoveu uma modernização do cálculo do ônus do SMP, de modo a permitir que as radiofrequências em uso, ainda que de granularidade diversa dos demais termos, pudesse escorreitamente ser incluído no cômputo, de forma a proporcionalizar o total da receita gerada em cada área geográfica, pelo percentual das radiofrequências ativas nessa mesma área.
+Como resultado, a base de cálculo do ônus contratual do SMP passou a ser a proporção da receita gerada por cada Termo de Autorização prorrogado, e não mais 100% (cem por cento) da receita da área geográfica, como de costume. No caso, dada a ampla granularidade das áreas de cobertura das outorgas, os Termos de Autorização com áreas geográficas inferiores àquelas dos Termos prorrogados não vinham sendo considerados no fator de ponderação.
+Diante disso, o Conselho Diretor da Anatel, ao analisar os PAC nº 53500.002685/2016-20, 53500.002614/2016-27, 53500.015707/2016-11 e 53500.002263/2016-54, decidiu aprimorar a metodologia de cálculo do ônus do SMP, aprovando e disponibilizando dispositivo de tecnologia da informação (aplicativo), que permitisse adicionar ao cálculo do fator de ponderação, de forma padronizada e efetiva, as radiofrequências de todos os Termos de Autorização que as empresas possuem em uma determinada área geográfica (inclusive aqueles com áreas geográficas menores que a do Termo prorrogado).
+Conforme definido no Voto nº 5/2024 (SEI nº 11755795), que foi aprovado, por unanimidade, pelo Acórdão nº 173, de 11 de julho de 2024 (SEI nº 12269171), esse aprimoramento da metodologia deve ser aplicado aos processos administrativos em curso, conforme destacado no trecho abaixo:
+5.107. A respeito dos processos em curso na Agência cujos cursos administrativos ainda não se esgotaram com deliberação definitiva pelo Conselho Diretor, é preciso proceder com a imediata revisão dos cálculos com vistas a refletir o racional aqui apresentado. Frisa-se que o principal objetivo pretendido com o desenvolvimento do aplicativo pelo meu gabinete era o de viabilizar esse recálculo sem onerar demasiadamente a área técnica. Ressalto que isso não significa revisitar o mérito de forma integral e sim trata-se de ajuste pontual na forma de calcular o ônus que, com o auxílio da ferramenta desenvolvida, poderá ser realizado de forma mais célere.
+Assim, diante de tais premissas, a área técnica realizou a atualização do cálculo, cujo detalhamento pode ser verificado na Planilha - Atualização do Cálculo (SEI nº 13787037). Em síntese, o ônus apurado nestes autos é composto dos seguintes valores nominais:
+ TOTAL
+ | 
+ Valor nominal anterior, conforme metodologia aprovada pelo Acórdão nº 707/2018
+ | 
+ Novo valor nominal, conforme metodologia aprovada pelo Acórdão nº 169/2024 
+ | 
+ Apurado
+ | 
+ R$ 55.047.188,14
+ | 
+ R$ 49.515.539,31
+ | 
+ Declarado e pago
+ | 
+ R$ 32.678.713,48
+ | 
+ R$ 32.678.713,48
+ | 
+ Complementar
+ | 
+ R$ 22.368.474,66
+ | 
+ R$ 16.836.825,83
+ | 
+Destarte, pela apuração e cômputo realizado, é devido pela Claro, a título de ônus contratual complementar, o montante de R$16.836.825,83 (dezesseis milhões, oitocentos e trinta e seis mil oitocentos e vinte e cinco reais e oitenta e três centavos). 
+A partir de tal análise, foi realizada a revisão dos valores até então apurados, com base no aprimoramento da metodologia, o que resultou no Informe nº 542/2025/COGE/SCO (SEI nº 13786394), acolhido pelo Despacho nº 462/2025/COGE/SCO (SEI nº 13788978). Notificada da decisão, por meio do Ofício nº 733/2025/COGE/SCO (SEI nº 13789196), recebido em 16 de junho de 2025 (SEI nº 13854405), a empresa apresentou, tempestivamente, a complementação de sua impugnação (SEI nº 14023098), na data de 16 de julho de 2025 (SEI nº 14023100). A SCO analisou o recurso e, com base nos fundamentos jurídicos expostos no Informe nº 779/2025/COGE/SCO (SEI nº 14097446), indeferiu a impugnação da prestadora. 
+Ato contínuo, a prestadora foi notificada pelo Ofício nº 1192/2025/COGE/SCO-ANATEL (SEI nº 14167724), recebido em 21 de agosto de 2025, conforme certidão de intimação cumprida (SEI nº 14233142). Inconformada com a decisão, em 1º de setembro de 2025, a empresa apresentou, tempestivamente, seu recurso administrativo (SEI nº 14299214), alegando, em síntese, que a Anatel considerou receitas que não deveriam compor a base de cálculo, tais como: interconexão, co-billing, download, multa, venda de aparelhos, compartilhamento e aluguel de infraestrutura, cessão de meios, capacidade de rede e roaming internacional.
+Além disso, argumenta que algumas dessas receitas que foram incluídas violam decisões judiciais anteriores. A Claro também contesta o recálculo dos tributos realizado pela área técnica, solicita o abatimento de despesas operacionais como as comissões sobre vendas de recargas e que sejam consideradas no denominador da fórmula todas as faixas de 700 MHz. Por fim, requer que, caso não haja retratação, a remessa do recurso ao Conselho Diretor da Anatel para julgamento.
+A SCO encaminhou o processo para a deliberação do Conselho Diretor, em 29 de outubro de 2025, por meio da Matéria nº 803/2025, de 2025 (SEI nº 14646395).
+O processo foi sorteado para à minha relatoria em 10 de novembro de 2025 (SEI nº 14722731).
+É o relatório.
+DA ANÁLISE
+A presente análise encontra-se dividida em quatro partes. Na primeira, procede-se ao exame de admissibilidade do recurso. Na segunda, realiza-se um apanhado sobre as bases normativas do ônus contratual. Na terceira, avalia-se o mérito do recurso. Por fim, procede-se à conformação da com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE), com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU) da Organização das Nações Unidas.
+I - Da Admissibilidade
+A decisão é recorrível e o recurso utilizado se afigura apto, estando de acordo com o previsto no art. 115, §2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013. A decisão recorrida impôs cumprimento de obrigação contratual não adimplida tempestivamente, portanto, há interesse em recorrer, nos termos do art. 37, XII, do RIA. A legitimidade da parte recorrente está de acordo com o art. 47 do RIA, tendo o signatário do recurso procuração eletrônica (SEI nº 14299215). A recorrente foi notificada em 21 de agosto de 2025, conforme certidão de intimação cumprida (SEI nº 14233142) e apresentou recurso (SEI nº 14299214) em 1º de setembro de 2025, conforme consta no recibo eletrônico de protocolo (SEI nº 14299216) sendo, portanto, tempestivo. 
+O direito da recorrente é perfeitamente exercitável, não havendo, após a decisão, qualquer circunstância que supra o direito recursal. Os requisitos quanto à forma estão preenchidos em conformidade com os art. 41, incisos I a V, e 116, incisos I a V, do RIA.
+Estando, portanto, presentes os requisitos de admissibilidade recursal, deve o Conselho Diretor conhecer do pedido de reforma da decisão.
+II - Das Bases Normativas do Ônus Contratual
+O ônus contratual tem amparo legal nos arts. 48, 163 e 167, da Lei 9.472, de 1997 (LGT), que assim disciplinam:
+Art. 48. A concessão, permissão ou autorização para a exploração de serviços de telecomunicações e de uso de radiofrequência, para qualquer serviço, será sempre feita a título oneroso, ficando autorizada a cobrança do respectivo preço nas condições estabelecidas nesta Lei e na regulamentação, constituindo o produto da arrecadação receita do Fundo de Fiscalização das Telecomunicações - FISTEL
+§ 1º Conforme dispuser a Agência, o pagamento devido pela concessionária, permissionária ou autorizada poderá ser feito na forma de quantia certa, em uma ou várias parcelas, ou de parcelas anuais, sendo seu valor, alternativamente:
+I - determinado pela regulamentação;
+II - determinado no edital de licitação;
+III - fixado em função da proposta vencedora, quando constituir fator de julgamento;
+IV - fixado no contrato de concessão ou no ato de permissão, nos casos de inexigibilidade de licitação.
+§ 2º Após a criação do fundo de universalização dos serviços de telecomunicações mencionado no inciso II do art. 81, parte do produto da arrecadação a que se refere o caput deste artigo será a ele destinada, nos termos da lei correspondente.
+(...)
+Art. 163. O uso de radiofreqüência, tendo ou não caráter de exclusividade, dependerá de prévia outorga da Agência, mediante autorização, nos termos da regulamentação.
+§ 1° Autorização de uso de radiofreqüência é o ato administrativo vinculado, associado à concessão, permissão ou autorização para prestação de serviço de telecomunicações, que atribui a interessado, por prazo determinado, o direito de uso de radiofreqüência, nas condições legais e regulamentares.
+(...)
+Art. 167. No caso de serviços autorizados, o prazo de vigência será de até 20 (vinte) anos, prorrogável por iguais períodos, sendo necessário que a autorizada tenha cumprido as obrigações já assumidas e manifeste prévio e expresso interesse. (Redação dada pela Lei nº 13.879, de 2019)
+§ 1° A prorrogação, sempre onerosa, poderá ser requerida até três anos antes do vencimento do prazo original, devendo o requerimento ser decidido em, no máximo, doze meses.
+§ 2° O indeferimento somente ocorrerá se o interessado não estiver fazendo uso racional e adequado da radiofreqüência, se houver cometido infrações reiteradas em suas atividades ou se for necessária a modificação de destinação do uso da radiofreqüência.
+(...)
+A LGT, embora tenha estabelecido que a exploração dos serviços de telecomunicações e de radiofrequência deva se dar a título oneroso, não trouxe especificidades quanto ao objeto, formalização e exigibilidade desse ônus, reservando esses pormenores à normatização infralegal.
+Com base nessa premissa, os Termos de Autorização trouxeram, na cláusula 3.1.2 (de redação idêntica nesses casos), o regramento aplicável para o pagamento do ônus de prorrogação do direito de uso de radiofrequências associadas à autorização para a prestação do SMP, da seguinte forma:
+Cláusula 3.1.2. A AUTORIZADA, para prorrogação do direito de uso de radiofreqüências associadas à Autorização para prestação do Serviço Móvel Pessoal, deverá pagar, a cada biênio, durante o período de prorrogação, ônus correspondente a 2% (dois por cento) de sua receita do ano anterior ao do pagamento, do SMP, líquida de impostos e contribuições sociais incidentes.
+§1º - No cálculo do valor referido no caput desta Cláusula, será considerada a receita líquida decorrente da aplicação dos Planos de Serviço, Básico e Alternativos, objeto da Autorização para prestação do Serviço Móvel Pessoal.
+§2º - O cálculo do percentual referido no caput desta Cláusula será feito sempre relativamente à receita líquida das deduções de impostos e contribuições incidentes, apurada entre janeiro e dezembro do ano anterior ao do pagamento e obtida das demonstrações financeiras elaboradas conforme princípios fundamentais de contabilidade aprovadas pela Administração da AUTORIZADA e auditadas por auditores independentes, e o pagamento terá vencimento em 30 (trinta) de abril do ano subseqüente ao da apuração do ônus.
+§3º - A primeira parcela do ônus terá vencimento em 30 (trinta) de abril de 2010, calculada considerando a receita líquida apurada de 1º de janeiro a 31 de dezembro de 2009, e as parcelas subseqüentes terão vencimento a cada vinte e quatro meses, tendo como base de cálculo a receita do ano anterior.
+§4º - O atraso no pagamento do ônus previsto nesta Cláusula implicará cobrança de multa moratória de 0,33% (zero vírgula trinta e três por cento) ao dia, até o limite de 10% (dez por cento), acrescido da taxa referencial SELIC para títulos federais, a ser aplicada sobre o valor da dívida considerando todos os dias de atraso no pagamento.
+§5º - O não pagamento do valor estipulado nesta cláusula implicará caducidade da Autorização de Uso de Blocos de Radiofreqüências, independente da aplicação de outras penalidades previstas na Regulamentação da Anatel.
+A cada biênio, para a prorrogação do direito de uso de radiofrequências associadas à autorização para a exploração do SMP, a autorizada deverá pagar o ônus correspondente a 2% (dois por cento) da receita líquida auferida no ano anterior.
+Conforme disposto na cláusula 3.1.2 dos citados termos de autorização, a prestadora deve declarar as receitas e os valores que formarão a base de cálculo do ônus contratual no Sistema de Serviços de Telecomunicações da Anatel (STEL). O valor calculado a partir desses dados é inserido automaticamente no Sistema de Gestão de Créditos da Anatel (SIGEC) para efetivação do pagamento.
+No intuito de elucidar as dúvidas que pairavam sobre quais receitas devem integrar a base de cálculo do ônus contratual do SMP, editou-se, em 31 de outubro de 2012, o Enunciado nº 13 da Anatel, assim redigido:
+Estão incluídas na base de cálculo do valor devido a título de renovação do direito de uso de radiofrequências previsto nos Termos de Autorização para a prestação do Serviço Móvel Pessoal (SMP), dentre outras, as receitas de interconexão, de facilidades ou comodidades adicionais, e as receitas operacionais inerentes à prestação do SMP.
+A obrigação do pagamento do ônus é de cunho contratual e decorre do ajuste entre a Anatel e a recorrente. Por isso, existe uma correlação entre o exercício do direito de exploração do SMP e a contraprestação em suportar o ônus previsto no contrato. Dado o princípio da indisponibilidade do interesse público, a Administração está vinculada à previsão contratual, não podendo aplicar exceções não previstas. Esclarece-se que as únicas exceções admissíveis para abatimento do ônus são as deduções de impostos e contribuições incidentes.
+III - Da Análise do Mérito
+III.1 - Da questão Preliminar 
+A Prestadora alega que o Despacho Decisório nº 682/2025/COGE/SCO, de 11 de agosto de 2025 (SEI nº 14163508) ancorou-se no Parecer nº 1.253/2011/PFE-Anatel, segundo o qual a obrigação assumiria a feição de preço público, dotado de índole contratual, e, portanto, submetido ao prazo prescricional decenal do Código Civil. Em síntese, a decisão construiu-se sobre a premissa de que se trataria de relação contratual regida pelo Código Civil, afastando o regime próprio de direito público. A prestadora, entretanto, entendeu que a conclusão seria frontalmente contrária à jurisprudência consolidada dos Tribunais Superiores e à doutrina majoritária, uma vez que já teria transcorrido mais de cinco anos desde o recolhimento do ônus bienal referente ao biênio 2017/2018, efetuado em abril de 2018, de modo que a pretensão de revisão da Agência se encontraria, irremediavelmente, fulminada pela prescrição.
+Para reforçar sua tese, a empresa transcreve as ementas de alguns julgados que versaram sobre prazos prescricionais. Alega que o entendimento preponderante na jurisprudência é de que a cobrança de dívidas de natureza de direito público não tributárias está sujeita ao prazo prescricional de 5 (cinco) anos, por aplicação simétrica e analógica do Decreto nº 20.910/32, ante a inexistência de norma mais específica.
+A área técnica se manifestou sobre essa questão, por meio do Informe nº 779/2025/COGE/SCO (SEI nº 14097446), conforme segue:
+Inicialmente, destaca-se que esta Agência já se manifestou reiteradamente no sentido de que o prazo prescricional para a cobrança do ônus contratual é de 10 (dez) anos. Tal entendimento fundamenta-se na natureza jurídica de preço público dessa obrigação, razão pela qual não merece acolhimento a preliminar suscitada pela impugnante.
+Ademais, é pertinente abordar a natureza jurídica dessa obrigação, que constitui uma espécie de remuneração paga ao poder concedente pela exploração de serviço público. Trata-se, portanto, de um crédito da Fazenda Pública que, embora não possua natureza tributária, deriva de uma obrigação contratual. Essa obrigação resulta da vontade do interessado em aderir às regras previstas no instrumento de outorga, caracterizando-se como uma relação bilateral, comutativa e formal.
+Embora o contrato contenha elementos de direito público, o vínculo entre a empresa e esta Autarquia foi estabelecido de forma horizontal, em razão da autonomia das partes. Tal relação contratual foi precedida por licitação destinada à concessão de serviços públicos, configurando, assim, um vínculo que não decorre de prerrogativas unilaterais do ente público, mas de um ajuste formal entre as partes. Nesse contexto, devem-se aplicar as regras de direito civil às circunstâncias dessa relação contratual.
+Já no Informe nº 912/2025/COGE/SCO (SEI nº 14320934), a área técnica voltou a se debruçar sobre a questão e se manifestou da seguinte forma:
+Sobre o tema, esta Agência reafirma o posicionamento consolidado de que se aplica, ao caso, o prazo prescricional de 10 (dez) anos previsto no artigo 205 do Código Civil, por se tratar de obrigação contratual decorrente de preço público. Esse entendimento é respaldado por jurisprudência do STJ e reiterado por diversos pareceres da Procuradoria Federal junto à Anatel.
+Oportuno reforçar que, ainda que se admitisse a aplicação do prazo quinquenal previsto no Decreto nº 20.910/32, a pretensão da Agência não estaria fulminada pela prescrição. Isso porque, conforme explicado no Parecer nº 00316/2023/PFE-ANATEL/PGF/AGU (SEI nº 14100733), o termo inicial do prazo prescricional não coincide com a data do pagamento do ônus, mas sim com a constituição definitiva do crédito, o que somente ocorre após o encerramento do processo administrativo, com a apuração da obrigação e a formação de sua exigibilidade.
+A PFE-Anatel também se manifestou sobre a alegação de Prescrição da Prestadora, por meio do Parecer nº 345/2025/PFE-ANATEL/PGF/AGU (SEI nº 14541994), conforme segue:
+Contudo, essa Procuradoria tem sustentado que aos contratos públicos em geral aplica-se o prazo decenal, pois na espécie não há exercício do poder de império da Administração, ao contrário dos atos administrativos que observam os parâmetros do referido Decreto nº 20.910, de 1932. Nos contratos públicos, ao contrário, há uma situação isonômica, de equilíbrio entre as partes, que pactuam espontaneamente os termos do ajuste, à semelhança dos contratos privados. Assim, parece-nos que o prazo prescricional deve seguir o mesmo regramento do Código Civil aplicável a todos os contratos de forma geral, porquanto não há razão para fazer discrimen negativo em relação aos contratos administrativos nesse tocante.
+Nesse sentido, o STJ consolidou o entendimento de que o prazo prescricional para discutir questões contratuais é de dez anos, assentando que "a prescrição aplicável às ações fundadas em inadimplemento contratual é decenal, consoante a regra geral inscrita no artigo 205 do Código Civil", conforme pacificado no acórdão dos Embargos de Divergência no Recurso Especial nº 1.280.825/SP.
+A nosso ver, todo ato jurídico que possua natureza contratual observa o prazo prescricional do art. 205, do Código Civil, sendo indiferente nesse sentido se a avença está submetida a regime público ou privado. Note que a aplicação de normas civis aos contratos públicos é normal, usual e necessária à sua regular execução. Em verdade, tanto os contratos submetidos ao direito público, como aqueles de direito privado, compartilham uma base normativa comum, delineada no Código Civil. Os dispositivos legais que regem os contratos públicos contemplam apenas os elementos que lhe são peculiares e específicos, sem, entretanto, afastarem a aplicação do corpo normativo cabível a todos contratos em geral, que constam do Código Civil.
+Com efeito, os contratos administrativos, a despeito de serem uma tipologia especializada, não diferem em essência e natureza das demais espécies de atos jurídicos bilaterais, gênero do qual são apenas uma das diversas espécies, tendo todas emergido de uma mesma Teoria Geral, na qual estão igualmente inseridas. Ora, a Teoria Geral dos Contratos é uma construção doutrinária rica e robusta herdada de nossas tradições jurídicas, estando em grande parte positivada no Código Civil, cuja normas, portanto, não podem ser amputadas do regime público dos contratos administrativos, por serem sua matriz normativa basilar.
+Entendo que ficou bem assentado no Informe nº 779/2025/COGE/SCO (SEI nº 14097446) que esta Agência possui entendimento reiterado no sentido de que o prazo prescricional aplicável à cobrança do ônus contratual é decenal, por se tratar de obrigação de natureza jurídica de preço público, devida em razão da exploração de serviço público outorgado. Isso porque tal crédito, embora não ostente natureza tributária, configura receita da Fazenda Pública oriunda de relação contratual, estabelecida a partir da adesão voluntária da concessionária às condições previstas no instrumento de outorga, caracterizando vínculo bilateral, comutativo e formal.
+No mesmo sentido, entendo correto o posicionamento que a Procuradoria Federal Especializada tem sustentado de que, aos contratos públicos, enquanto espécies do gênero ato jurídico bilateral, aplica-se o prazo prescricional previsto no art. 205 do Código Civil, qual seja, de dez anos, afastando-se a incidência do Decreto nº 20.910/1932, restrito às hipóteses de atos administrativos unilaterais. Trata-se de orientação que encontra respaldo na jurisprudência consolidada do Superior Tribunal de Justiça, notadamente no julgamento dos Embargos de Divergência no Recurso Especial nº 1.280.825/SP, no qual restou pacificado que “a prescrição aplicável às ações fundadas em inadimplemento contratual é decenal, consoante a regra geral inscrita no artigo 205 do Código Civil”.
+Com efeito, entendo que os contratos administrativos, embora submetidos a um regime jurídico especial, não se dissociam da Teoria Geral dos Contratos, cuja matriz normativa reside no Código Civil. As normas de direito público que lhes são aplicáveis cuidam apenas de aspectos específicos, sem afastar a incidência supletiva e integrativa das regras civis, inclusive no tocante aos prazos prescricionais. Assim, não há fundamento jurídico para conferir tratamento discriminatório negativo aos contratos administrativos em relação aos contratos privados, no que se refere à prescrição.
+Concluo, por fim, que o prazo prescricional aplicável à cobrança do ônus contratual é o decenal previsto no art. 205 do Código Civil, razão pela qual deve ser rejeitada a preliminar de prescrição suscitada pela impugnante.
+III-2 - Receitas que compõe a base de cálculo
+A Prestadora sustenta que já existem decisões judiciais determinando que a Anatel se abstenha de incluir determinadas receitas na base de cálculo do ônus, como as de interconexão, co-billing e download tratadas no âmbito do Processo judicial nº 0030644-52.2014.4.01.3400, bem como a discussão relacionada aos temas tratados na Súmula Anatel nº 13/2012 (Processo Judicial nº 23744-19.2015.4.01.3400). Argumenta que tais decisões possuem efeito vinculante em relação aos Termos de Autorização discutidos e, portanto, impedem a Agência de ampliar a base de cálculo para além do que foi originalmente previsto contratualmente. Assim, defende que a manutenção dessas receitas na base afronta a coisa julgada e desrespeita a delimitação já estabelecida pelo Judiciário.
+A área técnica se manifestou sobre a questão e disse não haver comprovação de decisões judiciais no sentido alegado pela Prestadora, e pediu que a PFE-Anatel informasse se havia decisão judicial específica para o biênio em análise, conforme segue:
+Até o presente momento, não há comprovação de que as decisões judiciais que determinaram a suspensão da exigibilidade relativamente às receitas de interconexão, co-billing, download e venda de aparelhos tenham estendido seus efeitos ao biênio em análise. Ademais, quando instada a se manifestar sobre o tema, conforme registrado no item 4.27.1 do Informe nº 779/2025/COGE/SCO (SEI nº 14097446), a empresa não se manifestou.
+Diante disso, esta área técnica solicita à PFE-Anatel que nos informe se há decisão judicial específica envolvendo a apuração deste biênio, de modo a possibilitar o devido registro de suspensão judicial. Na ausência de pronunciamento judicial nesse sentido, ao término do processo e com o trânsito em julgado, os autos serão encaminhados à gerência de cobrança para adoção das medidas cabíveis.
+(...)
+A Claro discorda da inclusão da venda de aparelhos na base de cálculo, por entender que esse tipo de receita não decorre diretamente da prestação do SMP. A operadora destaca que a Anatel baseou sua decisão na nomenclatura das contas contábeis, mas que isso não justifica a inclusão.
+(...)
+Além disso, ao longo do processo administrativo, a empresa teve diversas oportunidades para demonstrar documentalmente a alegada distinção entre as receitas de venda de mercadorias atreladas ou não aos planos de serviço, mas não logrou êxito em apresentar elementos probatórios suficientes.
+Dessa forma, não há qualquer justificativa para a revisão do cálculo com base nessa alegação. A Agência agiu estritamente dentro de suas competências regulatórias, e a responsabilidade pelo controle contábil e pela comprovação da segregação de receitas cabe exclusivamente à Claro.
+(...)
+A operadora contesta a inclusão de receitas provenientes da cobrança de multas por mora no pagamento de faturas. Argumenta que essas multas possuem caráter indenizatório e não representam contraprestação pelo serviço de telecomunicações.
+(...)
+Em síntese, esta área técnica contesta a tese do parecer jurídico do Prof. Floriano de Azevedo Marques Neto, que argumenta que as multas contratuais não devem ser incluídas na base de cálculo do ônus contratual por não estarem diretamente associadas à exploração do espectro de radiofrequências. Trata-se de uma interpretação restritiva e que desconsidera que o ônus contratual visa remunerar o uso contínuo de um recurso público essencial à prestação do SMP.
+As multas, por resultarem do inadimplemento ou descumprimento de cláusulas contratuais pelos usuários, estão diretamente ligadas à atividade principal da prestadora e, consequentemente, ao uso do espectro.
+(...)
+Acerca do tema, Claro contesta a inclusão das receitas provenientes de aluguel de infraestrutura e cessão de meios na base de cálculo, sob a alegação de que não estão relacionadas à prestação do SMP, pois são atividades voltadas para outras operadoras, e não para usuários finais.
+(...)
+É oportuno ressaltar que não há dúvidas de que as receitas provenientes do aluguel de infraestrutura/cessão de meios devem integrar a base de cálculo. Esse entendimento encontra respaldo nos critérios adotados pelo Conselho Diretor, os quais demonstram de forma inequívoca que tais receitas configuram proveito econômico decorrente da exploração do serviço, o que as torna parte integrante do valor a ser remunerado.
+(...)
+Sem expor suas razões nem, tampouco, especificar as contas contábeis que deseja reclamar, a Claro tão somente solicita a exclusão das seguintes receitas na base de cálculo: capacidade de rede e roaming internacional.
+(...)
+demais, como já exposto, o entendimento reiterado é de que toda e qualquer receita que configure proveito econômico obtido direta ou indiretamente da prestação do serviço, ou que dele dependa, deve ser incluída na base de cálculo do referido ônus. Para corroborar esse entendimento, é oportuno citar trechos da Análise nº 133/2020/MM (SEI nº 5604415), expedida no âmbito do PAC nº 53500.021459/2013-03, que elucidou:
+4.60. Note-se que todas as rubricas mencionadas pela Claro como tendo sido consideradas indevidamente na base de cálculo do ônus contratual da concessão foram auferidas a partir da infraestrutura da concessão. Não importa para o cálculo do ônus contratual se a receita foi auferida a partir de relações comerciais varejistas ou atacadistas no setor de telecomunicações, mas se foi auferida a partir da infraestrutura do serviço concedido. Assim, concordo integralmente com o entendimento da área técnica 890o sentido de que toda e qualquer receita auferida como proveito econômico das concessionárias decorrentes direta ou indiretamente da prestação do serviço de STFC ou dele dependente, devem ser incluídas na base de cálculo do ônus previsto de concessão. (destaque).
+A PFE-Anatel se manifestou nos autos, por meio do Parecer 345/2025/PFE-ANATEL/PGF/AGU (SEI nº 14541994), conforme segue:
+O ônus contratual é definido no contrato a partir de determinação LGT, não podendo ser estipulado livremente, mas deve ter seus termos contratuais alinhados à norma legal de regência. Nesse sentido, a lei impõe, em seu art. 167, §1º, que a prorrogação da outorga de uso do bem público seja onerosa. Em observância à norma legal, a Anatel deve fixar um preço público para o ativo, que não pode ser montante arbitrário, mas deve corresponder seu valor econômico. Nesse sentido, a Agência sempre usou o potencial de riqueza gerada pela utilização da radiofrequência como critério de precificação do ativo, de modo que estimar seu valor justo.
+Por isso, a cláusula contratual contempla de forma ampla todas as receitas auferidas pela exploração do bem, pois tem o objetivo de capturar seu valor econômico, de modo que não faria absolutamente nenhum sentido limitar apenas às receitas internas dos planos comercializados e excluir todas aquelas que também são auferidas a partir do uso do espectro. Daí a expressão das receitas "decorrentes da aplicação" e não das receitas estritas dos planos. Pretende-se abranger as de forma ampla as receitas inerentes à prestação dos serviços ou que sejam um desdobramento natural, pois todas representam o potencial de geração de riqueza do espectro.
+(...)
+Quanto à interconexão, o serviço é expressamente mencionado na Súmula nº 13, de modo que está patente o alinhamento da posição da área técnica com a jurisprudência administrativa.
+(...)
+Outras receitas impugnadas pela Recorrente, notadamente aquelas relativas às serviços de download, compartilhamento e aluguel de infraestrutura, cessão de meios, capacidade de rede e roaming internacional, também decorrem da disponibilização de suas redes, rentabilizando os insumos empregados na operação dos planos de SMP. Constituem atividades intrínsecas à prestação de SMP, uma decorrência necessária da aplicação dos planos básicos e alternativos.
+Todas essas receitas representam remunerações pelo uso das redes, de modo que sua exclusão da base de cálculo representaria diminuição artificiosa do preço público cobrado pelo ativo, por determinação do art. 167, §1º, LGT, excluindo da mensuração de valor riquezas claramente geradas pela exploração da radiofrequência.
+As receitas de co-billing, por sua vez, somente são possíveis de ser obtidas com a aplicação dos planos básico e alternativo, que são o único motivo pelo qual a operadora explora a atividade. A cobrança de valores devidos a outras empresas na mesma fatura para pagamento em conjunto pelo respectivo usuário depende da aplicação desses planos, de modo que o nexo de causalidade é evidente. A matéria já foi reiteradamente examinada por esta Procuradoria, que firmou entendimento a respeito nos termos do Parecer nº 1393/2013/PFS/PFEAnatel/PGF/AGU.
+Quanto às multas impostas aos usuários por descumprimento de obrigações contratuais ou por rompimento de contrato, não procede o argumento de que devem ser excluídas por serem indenizatórias.
+As multas contratuais não tem necessariamente caráter compensatório, sendo igualmente possível que cumpram função punitiva. Não há fundamento, portanto, para simplesmente presumir que sejam de fato indenizatórias. Na verdade, o que se observa nos termos dos planos básicos é a desnecessidade da operadora demonstrar ter sofrido prejuízos efetivos para cobrar as multas do usuário. Ao contrário, as sanções são impostas automaticamente. Disso se infere que seu objetivo não é o de repor perdas e danos, mas o de desestimular a inadimplência ou o rompimento dos contratos, possuindo, por isso, natureza punitiva e não compensatória.
+Assim, o argumento em torno de sua exclusão da base de cálculo em razão de sua natureza indenizatória é improcedente, posto que as multas impostas com função precípua de inibir o descumprimento e a quebra de contrato tem caráter punitivo e não compensatório.
+(...)
+Com relação às receitas decorrentes da venda de equipamentos, deve-se ressalvar que, de fato, a comercialização de aparelhos e acessórios, nesses casos, pode ou não estar associada aos planos de serviço. Com efeito, é possível que a empresa venda esses produtos de forma totalmente autônoma, para clientes que sequer sejam usuários dos serviços de SMP, sendo assim afastado qualquer nexo causal com os planos de serviços, devendo a receita, nessa circunstância, ser excluída do pagamento do ônus contratual. Por outro lado, embora não integrem esses planos, caso a venda componha elemento vinculado aos serviços contratados, consistirá num desdobramento direto, de modo que, nessa hipótese, devem ser incluídos na base de cálculo.
+Contudo, conforme esclarece a área técnica, a recorrente não cuidou de juntar qualquer evidência de que a receita tenha sido auferida de forma independente da comercialização dos planos básicos, mesmo após reiteradas oportunidades de fazê-lo ao longo de toda a instrução processual. Assim, o apelo é improcedente nesse também nesse aspecto, face à ausência de provas da materialidade do fato aduzido.
+Por fim, quanto à conta denominada "comissão distribuição de cartão virtual", o pleito para seja abatida da receita total não merece acolhida. Com efeito, as comissões de venda em geral consistem em despesas operacionais, indistintas de outras tantas assumidas pela operadora para prestar o serviço, de modo que não há razões para ser descontada da base de cálculo.
+Conforme salientado pela D. Procuradoria, em observância à norma legal, a Anatel deve fixar um preço público para o ativo, qual seja, o espectro disponibilizado, que não pode ser montante arbitrário, mas deve corresponder seu valor econômico. Nesse sentido, a Agência sempre usou o potencial de riqueza gerada pela utilização da radiofrequência como critério de precificação do ativo. Em função disso é que a cláusula contratual contempla de forma ampla todas as receitas auferidas pela exploração do bem, pois tem o objetivo de capturar seu valor econômico, de modo que não faria absolutamente nenhum sentido limitar apenas às receitas internas dos planos comercializados e excluir todas aquelas que também são auferidas a partir do uso do espectro.
+As receitas impugnadas pela Recorrente, notadamente aquelas relativas às serviços de download, compartilhamento e aluguel de infraestrutura, cessão de meios, capacidade de rede e roaming internacional, todas elas decorrem da disponibilização de suas redes, rentabilizando os insumos empregados na operação dos planos de SMP, como acontece com interconexão de redes, cujas receitas decorrentes são claramente associadas à prestação do serviço. Tais receitas impugnadas constituem atividades intrínsecas à prestação de SMP, uma decorrência necessária da aplicação dos planos básicos e alternativos. Dito isso, a exclusão de tais receitas, como pretendido pela recorrente, representaria diminuição artificial do preço público cobrado pelo ativo, por determinação do art. 167, §1º, LGT, excluindo da mensuração de valor riquezas claramente geradas pela exploração da radiofrequência.
+Portanto, entendo que a posição da Área Técnica, corroborada pela manifestação da PFE-Anatel, encontra-se em plena consonância com a regulação setorial aplicável e com a jurisprudência consolidada no âmbito da Anatel, inexistindo, portanto, fundamento para acolher a pretensão da prestadora.
+III.3 - Cálculo do descontos de tributos incidentes
+A operadora contesta o cálculo realizado pela área técnica sobre os tributos incidentes, pois afirma que a fiscalização desconsiderou valores apresentados e auditados por empresa independente, aplicando índices gerais sem comprovação de irregularidades nos cálculos da Claro. 
+61. Ora, ainda que se pretendesse impugnar os números apresentados pela prestadora, seria ônus dessa Agência apontar exatamente onde estaria a impropriedade do cálculo apresentado, bem como comprovar que o pagamento de tributo alegado não foi efetuado, e não simplesmente efetuar uma operação aritmética geral e apontar suposta diferença, desconsiderando e desprestigiando inclusive a auditoria externa promovida.
+Por fim, a operadora pede a revisão dessa metodologia e a consideração dos valores efetivamente pagos, conforme segue:
+62. Dessa forma, o que se tem é que, quanto ao cálculo dos tributos incidentes sobre as receitas que compõem a base de cálculo do ônus contratual, impõe-se reconhecer a inadequação do critério adotado pela ANATEL, devendo prevalecer os valores efetivamente pagos e comprovados pela CLARO, conforme previsto nos Termos de Autorização.
+ A área técnica se pronunciou por meio do Informe nº 912/2025/COGE/SCO (SEI nº 14320934), conforme segue:
+No caso em questão, o Relatório de Fiscalização nº 0341/2018/GR07 (SEI nº 3640965, pág. 8/9) constatou de forma inequívoca a precariedade dos dados prestados pelo recorrente. De acordo com o item 4.5 do Relatório, a prestadora se furtou a apresentar informações específicas e detalhadas quanto à incidência de ICMS por conta contábil, limitando-se a remeter meramente um elenco genérico das alíquotas vigentes em cada Unidade Federativa. Da mesma forma, não foram fornecidos dados completos sobre as alíquotas de PIS e Cofins aplicáveis a todas as contas contábeis de receita.
+(...)
+Ademais, é inaceitável que a recorrente, que vem reiteradamente se omitindo em fornecer os dados necessários à completa apuração dos valores (tanto neste processo quanto em outros), venha agora exigir um detalhamento contábil que ela mesmo jamais apresentou. Ao se furtar a cumprir suas obrigações de transparência e colaborar com o processo de fiscalização, o empresa pretende transferir à Anatel a responsabilidade por eventuais imprecisões, quando a origem do problema é, inequivocamente, a sua própria conduta omissiva.
+Nesse sentido, resta claro que o procedimento adotado – que limitou a dedução dos tributos aos valores efetivamente registrados contabilmente, respeitando as alíquotas legais vigentes – é juridicamente robusto e encontra amparo na regulamentação aplicável. Assim, não há que se falar em erro técnico ou de amparo legal na apuração dos tributos incidentes sobre as receitas, de modo que eventual tentativa do recorrente de reabrir o cálculo se revela infundada e inaceitável.
+A PFE-Anatel, por meio do Parecer nº 345/2025/PFE-ANATEL/PGF/AGU (SEI nº 14541994), se manifestou nos autos no mesmo sentido da área técnica, conforme segue:
+O recurso em exame, além de não apresentar qualquer dos documentos solicitados pela equipe de fiscalização, não especifica que equívoco teria ocorrido nos cálculos ou qual seria exatamente a alegada imprecisão dos dados alegados. A operadora se obstina na omissão que manteve durante toda a fiscalização e ao longo de todo processo administrativo fiscal. Limita-se a apresentar irresignações genéricas e pretende impor que a Agência aceita por seu valor de face um trabalho de auditoria realizada por conta da própria operadora, o qual, igualmente, em nada esclarece as deficiências contábeis reiteradamente apontadas pela equipe de fiscalização.
+Concordo com as manifestações da área técnica e da PFE-Anatel que a Prestadora não conseguir trazer provas ou demonstração técnica da alegada falha metodológica. Dessa forma, entendo que a impugnação da Prestadora é improcedente também nesse aspecto.
+III.4 Inclusão da faixa de 700MHz no fator de proporcionalidade
+A prestadora sustenta que o entendimento desta Agência, no sentido de excluir a faixa de 700 MHz do denominador do fator de ponderação quando não esteve em operação durante todo o exercício social, não deve prevalecer, pois esse entendimento contrariaria a própria fórmula de cálculo aprovada pela Agência, que determina a inclusão de todas as faixas de radiofrequências em uso sobre suas respectivas frequências centrais. A prestadora conclui que a exclusão dessa faixa resultaria em arrecadação maior do que o devido, caracterizando enriquecimento sem causa por parte do Poder Público e impondo um ônus desproporcional à empresa. 
+Ao analisar a questão trazida pela Prestadora, a área técnica assim se manifestou no Informe nº 912/2025/COGE/SCO (SEI nº 14320934):
+É importante relembrar que, no contexto da alteração da metodologia de cálculo do ônus do SMP, promovida por meio do Acórdão nº 707/2018, a Análise nº 80 (SEI nº 2617348) registrou expressamente que a inclusão da faixa em questão no fator de ponderação das receitas deveria ocorrer exclusivamente quando estivesse efetivamente em uso. Esse entendimento encontra respaldo na transcrição abaixo:
+4.121 Todavia, a área técnica recomenda a exclusão das faixas de radiofrequências recentemente adquiridas e que não serão utilizadas até 2019 (as faixas de 700 MHz e de 450 MHz, por exemplo) do denominador da razão de cálculo para não subestimar as receitas das faixas de radiofrequências renovadas. Assim, sugere que o cálculo seja realizado apenas para as radiofrequências que estejam em efetivo uso no ano imediatamente anterior ao do pagamento do ônus.
+Considerações sobre a proposta de metodologia
+(...)
+4.124 Concorda-se, adicionalmente, com as recomendações sugeridas pela área técnica de considerar no cálculo do ônus: a) apenas as radiofrequências que estejam em efetivo uso no ano imediatamente anterior ao do pagamento do ônus; e b) a ponderação de cada faixa de radiofrequências por sua frequência central, utilizando a fórmula sugerida. Tais medidas, conforme defendido pela área técnica, buscam dar maior razoabilidade para definição do valor a ser pago para a renovação do direito de uso de radiofrequências, uma vez que consideradas as radiofrequências efetivamente em uso no período do fato gerador e, também, a proporcionalidade durante todo o período de vigência da prorrogação, nesse último caso com o objetivo de afastar eventual diminuição do valor devido após aquisição de grandes faixas de radiofrequências no futuro. (destaque)
+Conforme exposto, a inclusão de determinada faixa somente deve ocorrer quando do seu efetivo uso e não meramente da autorização ou liberação para providências. Ou seja, embora a Claro tenha sido autorizada a utilizar a faixa de 700 MHz, isso não implica que ela estava operando de fato a faixa durante o período de 01/01/2017 a 31/12/2017, de forma a permitir o seu efetivo aproveitamento no cálculo do ônus.
+A PFE-Anatel, por meio do Parecer nº 345/2025/PFE-ANATEL/PGF/AGU (SEI nº 14541994), se manifestou no sentido que as referidas faixas não estavam em uso e sua inclusão nos cálculos geraria desequilíbrio na estimativa de receitas das faixas prorrogadas, conforme segue:
+Ocorre que a referida faixa não estava em uso no biênio e, por isso, não gerava qualquer receita, de modo que sua inclusão na fórmula de cálculo resultaria em desequilíbrio patente na estimativa de receita das faixas prorrogadas. Com efeito, parece-nos intuitivo que o somatório dos MHz deve contemplar apenas o espectro em uso comercial efetivo, posto que a receita total não pode ser ponderada com faixas que não geram nenhuma receita.
+O somatório da receita de todas as faixas incluídas no fator de proporcionalidade equivale à receita total, cuja divisão entre cada faixa será diretamente proporcional à quantidade de espectro. Assim, se incluída uma faixa que não está em uso, a fórmula irá atribuir falsamente a essa uma porção da receita, mesmo sabendo que na verdade essa porção foi zero ou próxima a zero. Como resultado, o percentual da receita total atribuído de forma sabidamente falsa a essa faixa sem uso comercial estará sendo retirado da receita atribuída a todas as demais faixas que de fato produziram receita, cujo valor será, portanto, subestimado.
+Sobre esse ponto, cabe esclarecer que a metodologia de cálculo do ônus de renovação do direito de uso de radiofrequências do SMP, aprovada no âmbito do Acórdão nº 707/2018 e refinada em decisões posteriores, foi deliberadamente construída com o objetivo de simplificação. Em substituição a uma aplicação linear e mais abrangente dos 2% sobre a receita, adotou-se um mecanismo de ponderação baseado na razão entre a quantidade de espectro (MHz) das faixas renovadas e o total de espectro à disposição da prestadora, com ponderação adicional pela frequência central. Essa escolha metodológica reconheceu, desde a origem, a impossibilidade prática de se estabelecer uma relação perfeita e direta entre cada unidade de receita e cada faixa de radiofrequência utilizada, dada a natureza dinâmica e multibanda da prestação do serviço. A metodologia busca capturar, de forma operacionalmente viável, a relação de longo prazo entre a quantidade de espectro e a capacidade de geração de receita.
+No contexto da simplificação, ressalta-se que introdução de qualquer proporcionalização mensal, ou a consideração de faixas meramente autorizadas, ainda que não licenciadas e em operação, contraria frontalmente a lógica de simplificação que orientou a construção da metodologia. Além de elevar significativamente a complexidade operacional e de controle, a fragmentação mensal produz distorções econômicas relevantes. Uma estação licenciada apenas nos últimos meses do exercício social, dificilmente terá gerado, naquele mesmo período, uma base significativa de clientes e de receitas. Utilizar apenas a parcela da receita posterior ao licenciamento tende a gerar resultados pouco representativos da dinâmica econômica que a metodologia pretende capturar. Por outro lado, atribuir automaticamente toda a receita anual de determinado município a uma radiofrequência que só passou a estar disponível no final do ano também carece de justificativa metodológica robusta, pois a estação não esteve em condições de contribuir para a geração daquela receita durante todo o período. Assim, a solução que melhor preserva a finalidade da metodologia é, portanto, a consideração do exercício anual integral, desde que a faixa esteja efetivamente em uso (isto é, com estações licenciadas e operando) ao longo do ano-base.
+Essa interpretação encontra respaldo expresso na Análise nº 80 (SEI nº 2617348), que acompanhou o Acórdão nº 707/2018:
+4.121. a área técnica recomenda a exclusão das faixas de radiofrequências recentemente adquiridas e que não serão utilizadas até 2019 (...) do denominador da razão de cálculo para não subestimar as receitas das faixas de radiofrequências renovadas. Assim, sugere que o cálculo seja realizado apenas para as radiofrequências que estejam em efetivo uso no ano imediatamente anterior ao do pagamento do ônus.
+E, de forma ainda mais categórica, no Acórdão nº 428, de 23 de dezembro de 2021 (SEI nº 7849416):
+4. Não podem ser incluídas no cálculo do ônus faixas de radiofrequência que, no ano-base desse cálculo, estivessem em uso há menos de um ano. Essa inclusão provocaria a diminuição artificial e desequilibrada no valor a ser recolhido. Essa premissa não se caracteriza como inovação e permite o acoplamento da metodologia aprovada pelo Acórdão nº 707, de 13 de dezembro de 2018, ao caso concreto.
+O fundamento econômico e regulatório dessa regra é claro: a base de cálculo do ônus é a receita operacional líquida. Receita só existe, de forma materialmente vinculável a uma determinada faixa, quando essa faixa está efetivamente disponível e em operação, o que se materializa com o licenciamento de estações.
+A mera autorização de uso, ou a liberação formal da faixa para providências técnicas, não gera tráfego, não agrega clientes à base de usuários da prestadora e, consequentemente, não gera receita associada àquela radiofrequência. Incluir no denominador faixas que não completaram doze meses de uso efetivo no ano-base distorce a ponderação, reduz artificialmente o valor devido do ônus pelas faixas já maduras e rompe o equilíbrio de longo prazo que a metodologia busca preservar.
+A metodologia alternativa de segregação por quantidade de MHz foi escolhida precisamente porque, no longo prazo, existe estreita relação entre a quantidade de espectro disponível e a receita auferida. Essa relação, contudo, só se realiza quando a faixa está efetivamente em operação. Considerar faixas autorizadas, mas ainda não licenciadas, equivale a inflar o denominador com um ativo que ainda não contribui para a geração de receita, produzindo subestimação artificial do ônus das faixas renovadas, exatamente o efeito que a área técnica buscou evitar ao recomendar a exclusão das faixas de 700 MHz e 450 MHz enquanto não estivessem em uso.
+No caso concreto da faixa de 700 MHz, a aplicação desse entendimento é direta. Das localidades questionadas, apenas aquelas em que houve licenciamento de estação durante todo o exercício social de apuração da receita podem ser consideradas no denominador. Localidades cujo primeiro licenciamento ocorreu em data intermediária do ano. Exemplificando, seria como um licenciamento nesses municípios em 20/04/2017, para uma receita apurada de 01/01/2017 a 31/12/2017, o que claramente não atende ao requisito de uso efetivo pelo período integral e, portanto, devem ser excluídas, no cômputo por critério geográfico.
+Essa exclusão não constitui inovação, é aplicação coerente e reiterada do critério de “efetivo uso” já consolidado na metodologia e nas decisões do Conselho Diretor. Conforme registrado no Informe nº 779/2025/COGE/SCO (SEI nº 14097446), nos itens 4.154 a 4.160, e na própria lógica que orientou a construção da metodologia, a inclusão de determinada faixa somente deve ocorrer quando do seu efetivo uso e não meramente da autorização ou liberação para providências.
+Não restam dúvidas de que faixas de radiofrequência que não tenham sido objeto de licenciamento de estações pelo período completo de doze meses no ano-base devem ser excluídas do denominador da fórmula de cálculo do ônus. A inviabilidade de se computar, de forma representativa, a receita associada ao uso específico daquelas radiofrequências torna a inclusão metodologicamente indevida e economicamente distorcida. A mera autorização ou a liberação formal da faixa não se confunde com o efetivo uso, o que só se configura com o licenciamento e a operação das estações.
+O arranjo atual reflete, de forma consistente e coerente, o conceito adotado para a cobrança do ônus. A base de cálculo é a receita operacional, e receita só faz sentido existir, e ser alocada a determinada faixa, quando a radiofrequência está efetivamente utilizada, ou seja, após o licenciamento de estações na faixa. Qualquer outra interpretação afastaria a metodologia de sua finalidade originária de simplificação, razoabilidade e equilíbrio de longo prazo entre a quantidade de espectro e a capacidade de geração de receita.
+Portanto, concordo com os posicionamentos exarados pela Área técnica e pela PFE-Anatel, uma vez que a banda de 700 Mhz não estava em uso quando da inclusão dos cálculos, não deve ser incluída na fórmula de cálculo. Dessa forma, também não assiste razão à prestadora em sua impugnação neste caso. 
+III.5 Da Petição Extemporânea - Petição SEI nº 16093279
+De proêmio, insta destacar que, embora a Recorrente tenha interposto petição (SEI nº 16093279) após a interposição do recurso, seus argumentos serão avaliados, com supedâneo na busca da verdade material, uma vez que é possível recebê-lo como petição extemporânea e cujo conhecimento encontra-se disciplinado pela Súmula nº 21, de 10 de outubro de 2017, da Anatel, que assim determina:
+Súmula nº 21 Anatel
+As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+O Conselho Diretor já se manifestou anteriormente neste mesmo sentido, como se demonstra, a título exemplificativo, na recente decisão consignada a seguir, exarada por meio do Acórdão nº 349, de 11 de dezembro de 2024 (SEI nº 13014788):
+Acórdão nº 349, de 11 de dezembro de 2024
+Processo nº 53500.002152/2014-86
+Recorrente/Interessado: ATON ENGENHARIA E COMÉRCIO LTDA.
+CNPJ nº 16.347.049/0001-55
+Conselheiro Relator: Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 939, de 5 de dezembro de 2024
+EMENTA
+PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST. RECURSO DE OFÍCIO. RECURSO ADMINISTRATIVO VOLUNTÁRIO. RECURSO ADMINISTRATIVO INTEMPESTIVO. NÃO CONHECIMENTO. SÚMULA Nº 21/2017. RECURSO ADMITIDO COMO PETIÇÃO EXTEMPORÂNEA. ARBITRAMENTO. DOCUMENTAÇÃO CONTÁBIL NÃO APRESENTADA. PROCEDÊNCIA. REVISÃO DE OFÍCIO. RECURSO CONHECIDO E NÃO PROVIDO. NÃO CONHECIMENTO DE RECURSO DE OFÍCIO. EXONERAÇÃO ABAIXO DO VALOR DE ALÇADA. NOTIFICAÇÃO DA DECISÃO AO MINISTÉRIO DAS COMUNICAÇÕES (MCOM). ADERÊNCIA AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO VOLUNTÁRIO NÃO CONHECIDO. RECURSO DE OFÍCIO NÃO CONHECIDO.
+1. Recurso Administrativo e Recurso de Ofício interpostos em desfavor do Despacho Decisório nº 63/2016/SEI/AFFO6/AFFO/SAF (SEI nº 0724036), por meio do qual o Superintendente de Administração e Finanças (SAF) julgou improcedentes os lançamentos referentes à Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - CIDE-FUST para o exercício financeiro de 2009.
+2. O prazo para interposição de Recurso Administrativo obedece a contagem de prazo de 30 (trinta) dias, contado a partir da intimação do Interessado, conforme estabelecido no item 7.1.1 da Portaria Normativa nº 1.355, de 26 de julho de 2019. Não há previsão legal ou regimental para prorrogação desse prazo, de modo que ele não admite dilações.
+3. A Autoridade de primeira instância recorrerá de ofício sempre que a decisão exonerar o sujeito passivo do pagamento de tributo e encargos de multa, nos termos do art. 34, inciso I, do Decreto nº 70.235, de 6 de março de 1972, observado o valor de alçada definido em Portaria da Anatel.
+4. Quando não apresentada documentação contábil apta a permitir a apuração de valores devidos a título de Fundo de Universalização dos Serviços de Telecomunicações (Fust), deve a Anatel proceder ao arbitramento de tais valores, com base em metodologia própria.
+5. Não se deve conhecer de um Recurso Administrativo interposto fora do prazo, em atenção ao disposto no art. 116, inciso I, do Regimento Interno da Anatel (RIA). A depender das especificidades do caso concreto, é possível recebê-lo como petição extemporânea, cujo conhecimento encontra-se disciplinado pela Súmula nº 21, de 10 de outubro de 2017.
+6. Admite-se o Recurso de Ofício sempre que a decisão exonerar o sujeito passivo do pagamento de tributo em valor total que ultrapasse R$ 500.000,00 (quinhentos mil reais), excluídos juros, multas de ofício e de mora e demais acréscimos legais, consoante a Resolução Interna Anatel nº 338, de 15 de julho de 2024.
+7. Pelo não conhecimento do Recurso de Ofício, tendo em vista que o quantum exonerado é inferior a R$ 500.000,00 (quinhentos mil reais), conforme Resolução Interna Anatel nº 338, de 15 de julho de 2024.
+8. Comunicação ao Ministério das Comunicações (MCom), órgão com capacidade tributária ativa para cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel, para a adoção das providências cabíveis na esfera de suas atribuições.
+9. A fundamentação está em plena sintonia com o Objetivo nº 10 dos Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU), que trata da redução das desigualdades, especialmente com a meta 10.4, que visa promover maior igualdade através de políticas fiscais, salariais e de proteção social. Além disso, alinha-se com o Objetivo nº 16, que foca na promoção da paz, justiça e instituições eficazes. Destacam-se, nesse contexto, a meta 16.6, que busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis, e a meta 16.7, que promove a tomada de decisão inclusiva, participativa e representativa.
+10. Recurso Administrativo não conhecido e Recurso de Ofício não conhecido. (grifo nosso)
+Assim, decido receber a petição extemporânea, cujo conhecimento encontra-se disciplinado pela Súmula nº 21, de 10 de outubro de 2017. Passa-se, portanto, à análise das argumentações do pedido.
+A pretensão formulada pela Claro S.A., tanto na petição de 7 de agosto de 2026, quanto na apresentação anexa, no sentido de que o requisito temporal de doze meses para inclusão de radiofrequências no denominador da fórmula de cálculo do ônus do Biênio tenha sido historicamente consolidado pelo Conselho Diretor a partir da mera vigência do Termo de Autorização de Uso de Radiofrequência, não encontra respaldo nos precedentes invocados nem na ratio das decisões do Colegiado.
+O exame minucioso dos acórdãos trazidos aos autos revela, ao contrário, a ausência de qualquer consolidação no sentido pretendido pela prestadora. Em nenhum deles, o Conselho Diretor firmou o entendimento de que o “uso efetivo” da faixa, para fins de inclusão no denominador, se confunde com a simples outorga formal ou com a data de vigência do respectivo Termo de Autorização. O que se extrai de forma reiterada e coerente é a preocupação com a integridade econômica da metodologia de segregação de receitas, de modo a impedir a diluição artificial do ônus das faixas já maduras pela inclusão de espectro que ainda não se encontra em condições de gerar receita.
+O Acórdão nº 428, de 23 de dezembro de 2021 (Processo nº 53500.017999/2014-65), é expresso ao dispor, em sua ementa (item 4), que “não podem ser incluídas no cálculo do ônus faixas de radiofrequência que, no ano-base desse cálculo, estivessem em uso há menos de um ano”. A formulação adotada pelo Colegiado não é “faixas cujos termos de autorização tivessem vigência inferior a um ano”, mas sim “faixas que estivessem em uso há menos de um ano”. A escolha deliberada do vocábulo “uso”, e não “outorga” ou “vigência”, evidencia que o critério adotado transcende o ato formal de autorização. O fundamento econômico da decisão é claro: a inclusão de faixas que não completaram doze meses de utilização efetiva provocaria “diminuição artificial e desequilibrada no valor a ser recolhido”. Essa premissa, segundo o próprio acórdão, “não se caracteriza como inovação e permite o acoplamento da metodologia aprovada pelo Acórdão nº 707, de 13 de dezembro de 2018, ao caso concreto”.
+O Acórdão nº 707, de 13 de dezembro de 2018 (SEI nº 3610991), por sua vez, constituiu o marco metodológico de referência. Nele, a Análise nº 80/2018/SEI/LM (SEI 2617348) registrou de forma inequívoca a recomendação técnica de exclusão das faixas recentemente adquiridas e ainda não utilizadas (expressamente citando as faixas de 700 MHz e de 450 MHz no item 4.121) “para não subestimar as receitas das faixas de radiofrequências renovadas”, determinando que o cálculo fosse realizado “apenas para as radiofrequências que estejam em efetivo uso no ano imediatamente anterior ao do pagamento do ônus”. A lógica subjacente é a de que a metodologia de ponderação por quantidade de espectro e frequência central só preserva sua finalidade de simplificação e equilíbrio de longo prazo quando o denominador reflete espectro efetivamente disponível e operacional, capaz de contribuir para a geração da receita que se pretende ratear.
+Os Acórdãos nº 58, de 14 de março de 2022 (SEI nº 8166074), nº 169, de 11 de julho de 2024 (SEI nº 12643656) e nº 173, de 11 de julho de 2024 (SEI nº 12269171), embora façam referência à data de vigência dos termos em determinados trechos de suas análises ou informes técnicos, não alteram o entendimento ora exposto. No Acórdão nº 169/2024 (respaldado pela Análise nº 28/2023/MM (SEI nº 10085827) e pelos acréscimos do Voto nº 8/2024/AC (SEI nº 12094501), do Conselheiro Artur Coimbra de Oliveira) não há qualquer afirmação que contrarie a distinção entre outorga formal e uso efetivo das faixas. A exclusão dos Termos de Autorização nº 141, 142 e 143/2014 (faixa de 700 MHz) do denominador decorreu da constatação de que tais faixas não se encontravam em condições de integrar o fator de proporcionalidade no biênio em exame, e não da equiparação da mera vigência do termo a “uso efetivo”. Do mesmo modo, o Acórdão nº 173/2024, ao incluir o Lote 2 da faixa de 2.500 MHz, o fez no contexto da operacionalização da metodologia do Acórdão nº 707/2018, sem erigir a data da outorga formal em critério absoluto e autônomo de “uso”.
+A tese da prestadora, portanto, inverte a ordem lógica das decisões. Os precedentes não consolidam a equivalência entre “autorização” e “uso efetivo”; consolidam, isto sim, a necessidade de preservar a correspondência entre a quantidade de espectro incluída no denominador e a capacidade real de geração de receita no período de apuração. A mera vigência do Termo de Autorização confere o direito de uso, mas não gera, automaticamente, tráfego, clientes ou receita. Somente o licenciamento de estações e a efetiva operação da faixa colocam o espectro em condições de contribuir materialmente para a base de cálculo. Incluir no denominador faixas que, embora autorizadas, ainda não se encontravam operacionais ao longo de todo o exercício social equivale a inflar artificialmente o divisor, transferindo indevidamente parte da receita das faixas maduras para um ativo que ainda não produzia receita – exatamente o efeito que a metodologia buscou evitar desde a Análise nº 80 e o Acórdão nº 707/2018.
+Aceitar a contagem a partir da mera vigência do termo, como pretende a Claro, significaria desconsiderar a ratio decidendi dos precedentes e transformar um critério de natureza econômica e operacional (efetivo uso capaz de gerar receita) em um critério puramente formal e documental. Tal interpretação não encontra lastro nos acórdãos invocados e, se acolhida, comprometeria a coerência interna da metodologia de segregação de receitas, a isonomia entre as prestadoras e a própria finalidade de equilíbrio de longo prazo entre a quantidade de espectro e a capacidade de geração de receita que orientou a construção do sistema.
+Assim, a alegação de que o marco temporal histórico e consolidado seria a data de vigência do Termo de Autorização carece de fundamento nos precedentes do Conselho Diretor. O que se encontra consolidado é o critério de efetivo uso, aferido pela existência de condições materiais de operação da faixa ao longo do ano-base, de modo a evitar a diluição artificial do ônus das radiofrequências já maduras. Por essas razões, a pretensão da prestadora deve ser integralmente rejeitada.
+Assim, diante do exposto, conheço a petição extemporânea e indefiro o pedido nela constante, por não se verificarem argumentos capazes de infirmar o entendimento consolidado sobre os critérios na metodologia de cobrança do ônus contratual. 
+IV. DA RELAÇÃO COM OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+conhecer e negar provimento ao Recurso Administrativo (SEI nº 14163508)
+conhecer a petição extemporânea (SEI nº 16093279), como exercício do direito de petição, conforme disciplinado pela Súmula nº 21, de 10 de outubro de 2017, e indeferir o pedido nela constante.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro Relator, em 03/09/2026, às 17:33, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15031677 e o código CRC 19626F6F.
+ | 
+Referência: Processo nº 53500.005086/2018-20 | 
+SEI nº 15031677 |

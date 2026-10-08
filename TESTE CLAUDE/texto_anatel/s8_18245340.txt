@@ -1,0 +1,42 @@
+SEI/ANATEL - 16268645 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 47
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 246, de 11 de setembro de 2026
+Processo nº 53500.000342/2013-88
+Recorrente/Interessado: INORPEL INDÚSTRIA NORDESTINA DE PRODUTOS ELÉTRICOS LTDA.
+CNPJ nº 08.720.054/0001-33
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP. RECURSO DESPROVIDO. ARQUIVAMENTO DO PROCESSO. ANULAÇÃO DA COBRANÇA DE OFÍCIO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por INORPEL INDÚSTRIA NORDESTINA DE PRODUTOS ELÉTRICOS LTDA. contra decisão da Superintendência de Controle de Obrigações - SCO que reconheceu a procedência de lançamento de crédito tributário referente à Contribuição para o Fomento da Radiodifusão Pública - CFRP do exercício de 2012.
+2. Fato relevante. A Recorrente sustentou que 29 (vinte e nove) estações não estariam sujeitas a licenciamento por se tratarem de estações de radiação restrita e alegou que o licenciamento teria ocorrido por indução de 2 (dois) servidores da Agência.
+3. As decisões anteriores. A área técnica concluiu que as estações estavam licenciadas em 31 de dezembro de 2011, que a gestão das estações no sistema era de inteira responsabilidade da entidade e que a CFRP de 2012 era devida. A Superintendência conheceu do Recurso e manteve a decisão recorrida, com encaminhamento ao Conselho Diretor para julgamento de mérito.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a CFRP do exercício de 2012 era devida em razão de as estações estarem licenciadas em 31 de dezembro de 2011; e (ii) saber se era juridicamente admissível manter a cobrança neste processo diante da existência de outro Processo Administrativo Fiscal - PAF referente à mesma Prestadora, ao mesmo exercício e à mesma notificação de lançamento.
+III. RAZÕES DE DECIDIR
+1. A CFRP foi instituída pelo art. 32 da Lei nº 11.652/2008 e, no caso, sua base de cálculo correspondeu à totalidade das estações licenciadas até 31 de dezembro do ano anterior.
+2. As 29 (vinte e nove) estações questionadas foram licenciadas em 15 de abril de 2011 e somente excluídas em 11 de dezembro de 2012. Por isso, estavam licenciadas em 31 de dezembro de 2011 e integraram validamente a base de cálculo da CFRP de 2012.
+3. A Entidade realizou o autocadastramento das estações e respondeu por inclusão, alteração e exclusão no sistema, bem como pelos encargos financeiros decorrentes das licenças emitidas.
+4. Os autos registram que a Recorrente tinha conhecimento dos procedimentos de licenciamento e recebeu comunicações administrativas que tratavam expressamente de solicitação de licenciamento de estações de Serviço de Comunicação Multimídia - SCM.
+5. Eventual equívoco de entendimento da recorrente não afasta as obrigações assumidas em decorrência do licenciamento das estações até sua exclusão.
+6. O Recurso preencheu os requisitos de admissibilidade. No mérito, não houve fundamento para afastar a incidência da CFRP de 2012 sobre as estações licenciadas.
+7. O PAF nº 53500.001149/2013-64 já havia constituído e exigido crédito tributário referente à mesma Prestadora, ao mesmo exercício de 2012 e à mesma notificação de lançamento.
+8. A manutenção da cobrança neste processo configuraria duplicidade de exigência sobre o mesmo fato gerador e a mesma base de cálculo.
+9. A duplicidade impõe o arquivamento do presente PAF.
+IV. DISPOSITIVO E TESE
+Determinação de arquivamento do Processo Administrativo Fiscal - PAF.
+Tese de julgamento: "1. A CFRP do exercício de 2012 é devida quando as estações que compõem sua base de cálculo estavam licenciadas em 31 de dezembro do ano anterior. 2. O autocadastramento e a solicitação de licenciamento no sistema atribuem à entidade a responsabilidade pelas informações prestadas e pelos encargos tributários decorrentes das licenças emitidas. 3. É indevida a manutenção de cobrança tributária em PAF quando outro processo já constituiu e exigiu o mesmo crédito referente à mesma prestadora, ao mesmo exercício e ao mesmo fato gerador. 4. A duplicidade de exigência impõe o arquivamento do processo posterior."
+Dispositivos relevantes citados: Lei nº 11.652/2008, art. 32; Código Tributário Nacional - CTN, art. 165; e Resolução nº 255/2001, art. 8º, § 3º; e Lei nº 9.784/1999, art. 2º.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 68/2026/EH (SEI nº 16046492), integrante deste acórdão, arquivar o presente Processo Administrativo Fiscal - PAF, por se tratar de débito já previamente constituído e exigido, quanto ao mesmo exercício e fato gerador, no PAF nº 53500.001149/2013-64.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 15/09/2026, às 16:40, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16268645 e o código CRC AA0FD833.
+ | 
+Referência: Processo nº 53500.000342/2013-88 | 
+SEI nº 16268645 |

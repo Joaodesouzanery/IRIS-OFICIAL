@@ -1,0 +1,311 @@
+SEI/ANATEL - 15919507 - Análise
+Boletim de Serviço Eletrônico em 25/08/2026
+Análise nº 65/2026/NP
+Processo nº 53500.013983/2015-64
+Interessado: RPJ PRODUTORES ASSOCIADOS LTDA
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência do lançamento de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), para o exercício de 2011.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL. CONTRIBUIÇÃO AO FUST. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por RPJ PRODUTORES ASSOCIADOS LTDA. contra decisão que reconheceu a procedência dos lançamentos referentes à contribuição ao Fust, no exercício de 2011, e da multa de ofício pela ausência de declaração.
+2. Fato relevante. A fiscalização apurou contribuição ao Fust no montante de [Item 1 - Apartado Sigiloso SEI nº 16167391)], dos quais [Item 2 - Apartado Sigiloso SEI nº 16167391)] não haviam sido recolhidos. A Notificação de Lançamento indicou crédito tributário no valor de [Item 3 - Apartado Sigiloso SEI nº 16167391)], referente ao lançamento de ofício, à multa de ofício e aos juros de mora.
+3. As alegações da recorrente. A recorrente sustentou a indevida incidência do Fust sobre receitas de locação de equipamentos, não vinculadas à prestação de serviços de telecomunicações, e alegou prescrição intercorrente e nulidade do processo administrativo.
+II. QUESTÃO EM DISCUSSÃO
+4. Há duas questões em discussão: (i) saber se incide prescrição intercorrente no processo administrativo fiscal relativo à contribuição ao Fust; e (ii) saber se receitas registradas na conta de venda e locação de equipamentos deveriam ser excluídas da base de cálculo da contribuição por não decorrerem de prestação de serviços de telecomunicações.
+III. RAZÕES DE DECIDIR
+5. O recurso é tempestivo, cabível e preenche os pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no RIA.
+6. A impugnação e o recurso suspendem a exigibilidade do crédito tributário.
+7. Não houve necessidade de manifestação da PFE-Anatel, porque o caso não se enquadra nas hipóteses do art. 5º, IV, da Portaria Anatel nº 642/2013.
+8. Não se aplica prescrição intercorrente ao processo administrativo fiscal, conforme a Súmula CARF nº 11 e a Súmula Anatel nº 26.
+9. O processo administrativo não é a via adequada para afastar a aplicação de norma sob fundamento de inconstitucionalidade.
+10. A contribuição ao Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins.
+11. A fiscalização excluiu da base de cálculo a conta contábil cuja natureza não se relacionava a serviços de telecomunicações e manteve a conta cuja natureza diversa não foi comprovada pela recorrente.
+12. A recorrente não apresentou notas fiscais, contratos ou outros documentos idôneos para demonstrar que as receitas da conta “61104 610010104000000 Vendas Locação de Equipamentos” não decorriam de serviços de telecomunicações.
+13. A mera denominação contábil da conta não basta para afastar a incidência do tributo.
+14. Cabe ao interessado provar os fatos que alega no processo administrativo.
+15. Mantêm-se os valores lançados a título de contribuição ao Fust e de multa de ofício.
+IV. DISPOSITIVO E TESE
+16. Recurso desprovido.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e presentes os pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no RIA. 2. A impugnação e o recurso suspendem a exigibilidade do crédito tributário, nos termos do CTN. 3. Não se aplica prescrição intercorrente ao processo administrativo fiscal. 4. No âmbito do processo administrativo fiscal, não cabe afastar a aplicação de norma sob fundamento de inconstitucionalidade. 5. Incide a contribuição ao Fust sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins. 6. A exclusão de receitas da base de cálculo do Fust exige prova contábil idônea. 7. Não comprovada a natureza não tributável das receitas registradas na conta de venda e locação de equipamentos, mantém-se o lançamento tributário e a multa de ofício."
+Dispositivos relevantes citados: CTN, arts. 151, III, e 174; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 60; Lei nº 9.784/1999, art. 36; Lei nº 9.873/1999, art. 1º, § 1º; Lei nº 9.998/2000, arts. 6º, IV, e 10; Decreto nº 70.235/1972, arts. 26-A e 33; Resolução nº 612/2013, arts. 85 e 116; Portaria Anatel nº 642/2013, art. 5º, IV, “a”; Portaria Anatel nº 1.355/2019, item 7.1.1; Resolução nº 777/2025, art. 119, XIII e XIX.
+Jurisprudência relevante citada: Súmula Anatel nº 26; Súmula CARF nº 11; Parecer nº 00064/2017/PFE-Anatel/PGF/AGU, de 08.02.2017; Parecer nº 00280/2017/PFE/ANATEL/PGF/AGU; Anatel, Acórdão nº 157, Rel. Conselheiro Artur Coimbra de Oliveira, Conselho Diretor, Reunião nº 934, j. 04.07.2024, publ. 10.07.2024; Anatel, Acórdão nº 271, Rel. Conselheiro Alexandre Reis Siqueira Freire, Conselho Diretor, Reunião nº 947, j. 13.10.2025, publ. 20.10.2025; Anatel, Acórdão nº 80, Rel. Conselheiro Moisés Queiroz Moreira, Conselho Diretor, Reunião nº 921, j. 13.04.2023, publ. 19.04.2023.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN).
+Lei nº 9.430, de 27 de dezembro de 1996 - dispõe sobre a legislação tributária federal.
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+Lei nº 9.873, de 23 de novembro de 1999, que estabelece prazo de prescrição para o exercício de ação punitiva pela Administração Pública Federal, direta e indireta, e dá outras providências.
+Lei nº 9.998, de 17 de agosto de 2000 - Lei do Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Resolução Anatel nº 777, de 28 de abril de 2025, que revoga e altera Resoluções expedidas pela Anatel e aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST).
+Resolução Interna Anatel nº 338, de 15 de julho de 2024, que estabelece as regras para a interposição de Recurso de Ofício no âmbito dos Processos Administrativos Fiscais (PAf).
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria Anatel nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por RPJ PRODUTORES ASSOCIADOS LTDA., inscrita no CNPJ sob o nº 05.161.846/0001-27, em face do Despacho Decisório nº 615/2025/CODI/SCO (SEI nº 14446581), que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, do exercício do ano de 2011, bem como a incidência de multa de ofício pela ausência de declaração da respectiva contribuição, conforme consignado na Notificação de Lançamento nº 001-007268/2015/AFFO-ANATEL (págs. 13/14, SEI nº 0237512).
+Em 6 de maio de 2015, concluiu-se o Relatório de Fiscalização nº 0803/2015/GR01 (SEI nº 0237512 - págs. 3 a 11), que apurou valores de contribuição ao Fust no montante de [Item 4 - Apartado Sigiloso SEI nº 16167391)], referentes ao exercício financeiro de 2011, dos quais [Item 5 - Apartado Sigiloso SEI nº 16167391)] não haviam sido recolhidos.
+Aos 25 de maio de 2015 (SEI nº 0237512, pág. 15) a empresa foi intimada acerca da existência de crédito tributário relativo à CIDE-FUST, conforme Notificação de Lançamento nº 001-007268/2015/AFFO-ANATEL (págs. 13/14, SEI nº 0237512), no valor de [Item 6 - Apartado Sigiloso SEI nº 16167391)] referente ao lançamento de ofício, a multa de ofício e aos juros de mora. A empresa apresentou sua impugnação em 24 de junho de 2015 (SEI nº 0237512, págs. 17-45), por meio da qual alegou: (i) inexistência de incidência do Fust sobre receitas decorrentes de serviços diversos que não se referiam à prestação de serviços de telecomunicações, pois o Fust não poderia ser calculado sobre a receita bruta total da entidade, mas somente sobre serviços efetivamente de telecomunicações; e (ii) nulidade do lançamento, pois o lançamento por arbitramento ignorou a verdade material e a realidade contábil da empresa, sendo o lançamento do crédito nulo desde o início.
+Aos 4 de novembro de 2025, a Gerência de Controle de Obrigações de Direitos dos Consumidores - CODI analisou os achados da fiscalização e a impugnação da empresa, nos termos do Informe nº 803/2025/CODI/SCO (SEI nº 14444517), por meio do qual destacou: (i) a suspensão da exigibilidade do crédito tributário diante da apresentação de impugnação; (ii) a inexistência de prescrição intercorrente no Processo Administrativo Fiscal Contencioso, nos termos da Súmula da Anatel nº 26 e da Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11; e (iii) a incidência de juros de mora e multa de ofício sobre o lançamento, nos termos do art. 44, inciso I, da Lei nº 9.430/96. E o Informe apresentou esclarecimentos adicionais. 
+Quanto ao crédito tributário, verificou-se que a entidade se equivoca ao afirmar que o Fust foi calculado com base em toda a sua receita bruta. A fiscalização considerou apenas as receitas relativas à prestação de serviços de telecomunicações ou aquelas cuja natureza diversa não foi comprovada. Assim, o cálculo do Fust não utilizou a receita bruta total, razão pela qual a alegação não procede.
+Os valores lançados decorreram de análise contábil, e não de arbitramento, sendo constituídos de ofício com base na diferença entre os valores declarados e os apurados pela fiscalização. A multa de 75% (setenta e cinco por cento) possui previsão legal e é aplicável em caso de declaração inexata, conforme a legislação e a Súmula Anatel nº 27.
+Considerando a ausência de enquadramento nas hipóteses previstas no art. 5º da Portaria nº 642, de 26 de julho de 2013, e no art. 1º da Resolução Interna da Anatel nº 338, de 15 de julho de 2024, a área técnica não efetuou a remessa dos autos à Procuradoria Federal Especializada junto à Anatel - PFE-Anatel.
+A proposta da Área Técnica, constante no Informe nº 803/2025/CODI/SCO (SEI nº 14444517), foi acolhida pela Superintendente de Controle de Obrigações - SCO, nos termos do Despacho Decisório nº 615/2025/CODI/SCO (SEI nº 14446581), de 4 de novembro de 2025, que decidiu por:
+"RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários relativos ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), do exercício de 2011, indicados na Notificação de Lançamento nº 001-007268/2015/AFFO - ANATEL (págs. 13 e 14 do PDF 0237512), nos termos do art. 6º, IV, da Lei nº 9.998/2000;
+RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos relacionados à multa de ofício, em virtude da parcela não declarada do Fust, do exercício de 2011, indicados na Notificação de Lançamento nº 001-007268/2015/AFFO - ANATEL (págs. 13 e 14 do PDF 0237512), em conformidade com o art. 44, I, da Lei nº 9.430/1996; e
+DETERMINAR à Gerência de Controle de Obrigações de Direitos dos Consumidores (CODI) que proceda à notificação da empresa, encaminhando cópia desta decisão."
+A Prestadora foi notificada da decisão em 10 de novembro de 2025 (SEI nº 14446602 e nº 14822168) e, em 3 de dezembro de 2025, apresentou Recurso Administrativo (SEI nº 14856503), no qual alegou: (i) a indevida incidência da contribuição ao Fust sobre receitas de atividades de locação, não vinculadas à prestação de serviços de telecomunicações; (ii) ocorrência de prescrição intercorrente e nulidade do processo administrativo; e (iii) o erro da fiscalização na inclusão indevida de receitas não sujeitas ao Fust. Ao final, requereu o conhecimento e provimento do recurso.
+As razões recursais foram apreciadas pela CODI no Informe nº 131/2026/CODI/SCO (SEI nº 15215185), de 12 de março de 2026, propondo-se o conhecimento do Recurso e, quanto ao mérito, seu não provimento, diante da ausência de inovação fática ou probatória apta a fundamentar a revisão da decisão recorrida.
+Na mesma data, a Superintendente de Controle de Obrigações proferiu o Despacho Decisório nº 107/2026/CODI/SCO (SEI nº 15224940), conhecendo do Recurso Administrativo e encaminhando os autos para apreciação deste Colegiado, conforme Matéria nº 138/2026 (SEI nº 15224975).
+A Matéria foi remetida à Secretaria do Conselho Diretor - SCD por meio do Despacho Ordinatório SEI nº 15343208, de 17 de março de 2026, sendo distribuída à minha relatoria em 19 de março subsequente (SEI nº 15353841).
+É o relatório.
+fundamentação
+A instauração e instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 4 (quatro) partes. Na primeira, avalia-se a admissibilidade do Recurso Administrativo interposto pela Prestadora. Na segunda, verifica-se a necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel). As preliminares e o mérito recursal serão analisados na terceira parte, com a apreciação da argumentação apresentada pela recorrente. Na quarta e última parte, procede-se à conformação do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - PRELIMINARMENTE
+I.1 - Da admissibilidade recursal
+Em 10 de novembro de 2025 (Ofício nº 845/2025/CODI/SCO-Anatel – SEI nº 14446602 e nº 14822168), cientificou-se a recorrente sobre o teor do Despacho Decisório nº 615/2025/CODI/SCO (SEI nº 14446581), de 4 de novembro de 2025.
+Nos termos do art. 33 do Decreto nº 70.235, de 6 de março de 1972, e da Portaria Anatel nº 1.355, de 26 de julho de 2019, no momento da prolação da decisão, o prazo para interposição de Recurso Administrativo no âmbito do PAF era de 30 (trinta) dias. Confira-se:
+Decreto nº 70.235/72 - Processo Administrativo Fiscal - PAF.
+"Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão."
+...
+Portaria Anatel nº 1.355/2019 - Fase Contenciosa de Processos Administrativos Fiscais - PAF-C 
+"7.1.1. O prazo para apresentação de recurso administrativo é de 30 (trinta) dias. (Redação dada pela Portaria nº 1751, de 3 de dezembro de 2020)"
+O prazo recursal teve início aos 11 de novembro de 2025, terça-feira, primeiro dia útil subsequente à notificação, encerrando-se em 10 de dezembro do mesmo ano, quarta-feira. O Recurso Administrativo foi protocolizado aos 3 de dezembro de 2025, quarta-feira (SEI nº 14856512), sendo, portanto, tempestivo.
+Destaco que, em 13 de janeiro de 2026, foi editada a Lei Complementar nº 227, que, entre outros assuntos, alterou o prazo de interposição de recurso previsto no art. 33 do Decreto nº 70.235/1972, o qual passou a ser de 20 (vinte) dias úteis após a ciência da decisão. Considerando o princípio de que "o tempo rege o ato" (tempus regit actum), os atos jurídicos são regidos pela lei vigente na época em que ocorreram, não se aplicando a nova regra ao caso concreto.
+Ademais, o recurso é cabível, a recorrente possui interesse na reforma da decisão proferida, está regularmente representada e não há contrariedade a entendimentos sumulados pela Agência.
+Assim, estão presentes os pressupostos de admissibilidade recursal previstos no art. 116 do RIA.
+Ante o exposto, ratifico a decisão que admitiu o conhecimento do Recurso Administrativo, consubstanciada no Despacho Decisório nº 107/2026/CODI/SCO, de 12 de março de 2026 (SEI nº 15224940).
+I.2 - Da suspensão do crédito tributário
+Diante da Impugnação à Notificação de Lançamento nº 001-007268/2015/AFFO - ANATEL (págs. 13 e 14, SEI nº 0237512), apresentada em 24 de junho de 2015 (SEI nº 0237512, págs. 17 a 45), a exigibilidade do crédito tributário foi suspenso, em observância ao disposto no art. 151, III, do Código Tributário Nacional - CTN:
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN)
+"Art. 151. Suspendem a exigibilidade do crédito tributário:
+(...)
+III - as reclamações e os recursos, nos têrmos das leis reguladoras do processo tributário administrativo;"
+II - DA MANIFESTAÇÃO DA PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642/2013
+Art. 5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+(...)
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente, tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+No caso concreto, considerando os valores apurados pela fiscalização e notificados pela Anatel, conclui-se não haver necessidade de submissão do feito à manifestação da PFE-Anatel, já que não estão satisfeitos os critérios do art. 5º, IV, da Portaria nº 642/2013, com as alterações trazidas pela Portaria Anatel nº 1.395/2017.
+III - DO MÉRITO RECURSAL
+Em suas razões recursais, a Prestadora alegou: preliminarmente (i) prescrição intercorrente (§1º do art. 1º da Lei nº 9.873/1999); e, no mérito (ii) Incidência da contribuição ao Fust sobre receitas não vinculadas à prestação de serviços de telecomunicações e (iii) erro na inclusão indevida de receitas não sujeitas ao Fust.
+III.1 - Da preliminar de alegação de incidência das prescrições intercorrente e da ação punitiva (Lei nº 9.873, de 23 de novembro de 1.999)
+Conforme relatado, a recorrente argumentou que teria ocorrido prescrição intercorrente no presente caso. A prescrição teria ocorrido por ter sido ultrapassado o prazo máximo de 3 (três) anos para o exercício da ação punitiva por parte da Agência:
+Recurso Administrativo (SEI nº 14856503)
+"O presente processo administrativo tramitou de forma absolutamente irregular, permanecendo paralisado por aproximadamente 10 (dez) anos sem qualquer ato instrutório útil, tampouco julgamento da defesa apresentada, situação que configura, de forma inequívoca, a prescrição intercorrente, nos termos da Lei nº 9.873/1999, tratando-se de violação ao devido processo legal e da razoável duração do processo.
+(...)
+Nos termos do art. 1º, § 1º, da Lei nº 9.873/1999, “incide a prescrição no procedimento administrativo paralisado por mais de 3 (três) anos, pendente de julgamento ou despacho”, devendo os autos serem arquivados de ofício.
+A norma é expressa e dirige-se a toda a Administração Pública Federal, incluindo suas autarquias e agências reguladoras, como a ANATEL. A paralisação superior a 3 anos configura prescrição intercorrente e extingue a pretensão punitiva da Administração."
+Os dispositivos legais acima mencionados têm o seguinte teor:
+Lei nº 9.873, de 23 de novembro de 1999
+"Art. 1º Prescreve em cinco anos a ação punitiva da Administração Pública Federal, direta e indireta, no exercício do poder de polícia, objetivando apurar infração à legislação em vigor, contados da data da prática do ato ou, no caso de infração permanente ou continuada, do dia em que tiver cessado.
+§ 1º Incide a prescrição no procedimento administrativo paralisado por mais de três anos, pendente de julgamento ou despacho, cujos autos serão arquivados de ofício ou mediante requerimento da parte interessada, sem prejuízo da apuração da responsabilidade funcional decorrente da paralisação, se for o caso."
+Observa-se que o § 1º do art. 1º da Lei nº 9.873/1999 se refere à prescrição intercorrente que é a extinção do direito de cobrar judicialmente um crédito tributário em razão da paralisação da execução fiscal pelo prazo previsto em lei. Dessa forma, essa disposição não se aplica ao presente processo, pois não se trata de ação punitiva, mas de Processo Administrativo Fiscal (PAF), para o qual não há, no ordenamento jurídico federal, norma que estabeleça prazo prescricional ou peremptório para sua conclusão.
+A jurisprudência do Superior Tribunal de Justiça e do CARF firmou-se no sentido de que, enquanto não houver decisão administrativa definitiva e consequente constituição definitiva do crédito tributário, não tem início o prazo prescricional previsto no art. 174 do CTN. Nessa mesma perspectiva, prevalece o entendimento pela inaplicabilidade da prescrição intercorrente no âmbito do processo administrativo fiscal, entendimento este consagrado, inclusive, na Súmula CARF nº 11:
+Súmula CARF nº 11
+"Não se aplica a prescrição intercorrente no processo administrativo fiscal."
+(Precedentes: Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003).
+A Súmula do CARF foi integralmente acolhida pela Anatel, tal como consta da Súmula nº 26 desta Agência:
+Súmula Anatel nº 26
+"É inaplicável a prescrição intercorrente no processo administrativo fiscal."
+As referidas súmulas têm fundamento na suspensão automática da exigibilidade do crédito tributário devido ao recurso administrativo, em razão dos arts. 151, III, e 174 da Lei nº 5.172/1966 (CTN). Considerando que a exigibilidade do crédito em discussão fica suspensa, também suspende-se a fluência do prazo prescricional:
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN)
+"Art. 151. Suspendem a exigibilidade do crédito tributário:
+(...)
+III - as reclamações e os recursos, nos têrmos das leis reguladoras do processo tributário administrativo;
+(...)
+Art. 174. A ação para a cobrança do crédito tributário prescreve em cinco anos, contados da data da sua constituição definitiva.
+Parágrafo único. A prescrição se interrompe:
+I – pelo despacho do juiz que ordenar a citação em execução fiscal; (Redação dada pela Lcp nº 118, de 2005)
+II - pelo protesto judicial ou extrajudicial; (Redação dada pela Lei Complementar nº 208, de 2024)
+III - por qualquer ato judicial que constitua em mora o devedor;
+IV - por qualquer ato inequívoco ainda que extrajudicial, que importe em reconhecimento do débito pelo devedor."
+A recorrente argumentou, porém, que a demora fere o princípio da eficiência administrativa, previsto na Constituição Federal (CF):
+Recurso Administrativo (SEI nº 14856503)
+"Ademais, a demora injustificada e absolutamente excessiva de quase uma década viola frontalmente o princípio da eficiência administrativa, impondo indevido ônus ao administrado e caracterizando ofensa direta ao art. 5º, LXXVIII, da Constituição Federal." 
+(grifou-se)
+Nesse particular, observa-se que discussões relativas à legalidade e à constitucionalidade são de competência exclusiva do Poder Judiciário. Assim, o cumprimento das súmulas da Anatel e do CARF não pode aqui ser afastado, uma vez que o âmbito administrativo não é foro adequado para discussão de questões atinentes à inconstitucionalidade de normas. A PFE-Anatel já se manifestou sobre questionamentos similares nos autos do Processo nº 53500.026551/2009-75:
+Parecer nº 00064/2017/PFE­-ANATEL/PGF/AGU, de 8 de fevereiro de 2017 (SEI nº 1180472)
+"47. No que concerne ao questionamento acerca da constitucionalidade/legalidade da CIDE-FUST e dos dispositivos que preveem a multa de mora, a discussão não é cabível no âmbito deste processo administrativo, uma vez que a Anatel não detém a prerrogativa de afastar o cumprimento de norma em vigor.
+48. Na esfera tributária em particular, tal competência é privativa do Poder Judiciário, conforme se depreende do disposto no art. 26-A do Decreto nº 70.235/1972:
+Art. 26-A. No âmbito do processo administrativo fiscal, fica vedado aos órgãos de julgamento afastar a aplicação ou deixar de observar tratado, acordo internacional, lei ou decreto, sob fundamento de inconstitucionalidade.
+49. Portanto, o âmbito administrativo não é o foro adequado para a discussão de questões atinentes à inconstitucionalidade de dispositivos legais, sendo competência exclusiva do Poder Judiciário a análise de tal matéria."
+Há precedentes deste Colegiado nesse sentido:
+Acórdão nº 157, de 10 de julho de 2024
+"Processo nº 53524.002281/2011-53
+Recorrente/Interessado: AXTELECOM LTDA
+CNPJ nº 00.538.593/0001-44
+Conselheiro Relator: Artur Coimbra de Oliveira
+Fórum Deliberativo: Reunião nº 934, de 4 de julho de 2024
+EMENTA
+RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL (PAF). FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (FUST). EXERCÍCIOS FINANCEIROS DE 2007 E 2008. PRESUNÇÃO DE VERACIDADE DO ALEGADO PELOS FISCAIS. ALEGAÇÃO DE INCONSTITUCIONALIDADE. FORO INADEQUADO. RECURSO CONHECIDO E NÃO PROVIDO.
+1. O não cumprimento das obrigações tributárias relativas ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), sujeito a lançamento por homologação, resulta em lançamento, de ofício, dos valores não recolhidos.
+2. As afirmações dos agentes públicos de fiscalização da Anatel implicam na presunção de legitimidade e, em consequência, de presunção relativa de veracidade, que, se não é absoluta, é persistente, somente sendo ilididas mediante prova em contrário.
+3. O âmbito administrativo não é foro adequado para discussão de questões atinentes à inconstitucionalidade de normas, nos termos do art. 26-A do Decreto nº 70.235, de 6 de março de 1972.
+4. Pelo conhecimento e não provimento do Recurso.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 48/2024/AC (SEI nº 12152023), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira e Vicente Bandeira de Aquino Neto e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia."
+Em vista do acima exposto, não podem ser acatados os argumentos de prescrição aqui apresentados pela recorrente.
+Passo a avaliar o mérito das alegações suscitadas.
+III.2 - Da incidência da contribuição ao Fust sobre receitas não vinculadas à prestação de serviços de telecomunicações
+A Recorrente alega que foram indevidamente incluídas, na base de cálculo da contribuição ao Fust, receitas obtidas com a prestação de serviços estranhos à atividade de telecomunicação, em afronta ao art. 4º, IV, da Lei nº 9.998/2000. Afirma, em especial, que a prestação de serviços de telecomunicações não é sua atividade principal e a fiscalização da Anatel teria considerado receitas provenientes da locação de equipamentos como receitas de telecomunicações. Afirma que tais valores não guardam relação com a prestação de serviços de telecomunicações e, por essa razão, não deveriam integrar a base de cálculo do tributo. Confira-se:
+Recurso Administrativo:
+"Ocorre, entretanto, que a locação de equipamento e bens móveis desenvolvida pela Recorrente, tanto não é uma prestação de serviços, quanto também não é serviços de telecomunicações.
+(...)
+Isso, porque, conforme já pacificado pelo STJ, a locação de equipamentos de satélite não configura a telecomunicação."
+A Área Técnica apreciou o argumento recursal no Informe nº 131/2026/CODI/SCO (SEI nº 15215185), reiterando os esclarecimentos constantes no Informe nº 803/2025/CODI/SCO (SEI nº 14444517). Destacou que o Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11, SEI nº 0237512) indicou expressamente as contas contábeis consideradas para fins de incidência da contribuição, incluindo aquela referente à venda e locação de equipamentos (conta 61104 610010104000000), a qual, embora não tivesse sido classificada como serviço de telecomunicações pela Prestadora, foi tratada como tal para fins de incidência do Fust. Ademais, ressaltou que a entidade fiscalizada não apresentou documentação contábil apta a demonstrar que as receitas questionadas não se caracterizariam como serviços de telecomunicações, limitando-se a alegações genéricas, desacompanhadas de notas fiscais, contratos ou demais comprovantes idôneos capazes de afastar as conclusões da ação fiscal. Confira-se:
+Informe nº 803/2025/CODI/SCO (SEI nº 14444517)
+"3.22. Quanto ao alegado, cumpre esclarecer que se equivoca a entidade ao afirmar que o Fust foi calculado com base em sua receita bruta total. Como se percebe da leitura do Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do PDF 0237512), a fiscalização excluiu do cálculo a conta que não se referia à prestação de serviços de telecomunicação, mantendo apenas a conta em que foi constatada esta prestação de serviço e a conta em que a entidade não conseguiu comprovar que se tratava de serviço distinto, ainda que tenha sido oportunizada a possibilidade de fazê-lo."
+Ainda no Informe nº 131/2026/CODI/SCO (SEI nº 15215185), a CODI reforçou a necessidade de demonstração, pelo contribuinte, de que os serviços considerados na base de cálculo da CIDE-FUST não se sujeitam a tal contribuição:
+Informe nº 131/2026/CODI/SCO (SEI nº 15215185)
+"3.23. Importante observar que não basta a recorrente nomear a conta como sendo de locação ou venda de equipamentos, devendo comprovar que, de fato, os valores contidos aí se referem a isto.
+3.24. Neste contexto, vale ressaltar que a fiscalização justificou, de forma clara, o porquê da utilização da conta "61104 610010104000000 Vendas Locação de Equipamentos" para o cálculo do Fust no Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do PDF 0237512):
+Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do PDF 0237512)
+5.2. Considerações:
+(...)
+A empresa considera que as contas "61104 610010104000000 Vendas Locação de Equipamentos" e "61105 610010105000000 Vendas de Produção" não representam receitas de telecomunicações. Dessa forma, tais contas foram objeto de análise deste relatório.
+Foi enviado Requerimento de Informações complementar (Anexo 02), solicitando descrição das contas de receitas e amostras de notas fiscais e contratos.
+Com relação a conta "61105 .610010105000000 Vendas de Produção", a empresa apresentou a amostra de notas fiscais solicitadas, bem como expandiu a amostra (Anexo 08). Através da análise das notas apresentadas, verifica-se que as receitas tratam de produção de programas televisivos. Tais lançamentos, especificamente, não representam receitas de telecomunicações.
+Já com relação a conta "61104 610010104000000 Vendas Locação de Equipamentos", a empresa apresentou somente uma justificativa dos lançamentos por escrito (Anexo 07), sem respectivas notas fiscais e contratos. A empresa descreve que tais lançamentos referem-se a "transferência de adiantamento". Tal descrição não impede a apresentação de respectiva nota fiscal e contrato.
+Assim, não há confiabilidade na classificação de lançamentos de receitas da conta "61104 610010104000000 Vendas Locação de Equipamentos".
+Dessa forma, foram utilizados na memória de cálculo de apuração (Anexo 09), os valores de receitas registrados nas contas contábeis "61103 610010103000000 Vendas de Telecomunicações" e "61104 610010104000000. Vendas Locação de Equipamentos", e valores de ICMS da conta contábil "61203 610020103000000 ICMS s/ Serviços", apresentados nos balancetes mensais (Anexo 06).
+A memória de cálculo (Anexo 09) considerou os valores de ICMS da conta "61203 610020103000000 ICMS s/ Serviços", por tratar-se de conta vinculada ao grupo de impostos referentes a prestação de serviços, conforme balancetes (Anexo 06).
+Já para Pis e Cofins, foram aplicadas as alíquotas de 0,65% e 3,00%, respectivamente, conforme a legislação vigente.
+Por fim, considerando a documentação apresentada pela empresa, não foram identificadas receitas relacionadas a interconexão.
+6. CONCLUSÃO
+Com base nas informações apresentadas pela Prestadora RPJ PRODUTORES ASSOCIADOS LTDA, CNPJ 05.161.846/0001-27, à Anatel, os valores apurados para contribuição ao Fust totalizam, durante o exercício financeiro de 2011, [Item 7 - Apartado Sigiloso SEI nº 16167391)].
+3.25. Nota-se que, a fim de comprovar que a conta "61104 610010104000000 Vendas Locação de Equipamentos" se refere efetivamente à locação de equipamentos, a fiscalização solicitou que a recorrente fornecesse cópias de contratos ou notas fiscais. Contudo, a entidade não apresentou a documentação comprobatória na fase de fiscalização, tampouco na impugnação ou agora em seu recurso, mesmo ciente da necessidade de fazê-lo para comprovar a verdadeira origem dos valores lançados nesta conta. 
+(grifou-se)
+Assim, prevaleceram os elementos probatórios constantes dos autos.
+O Fust tem por finalidade proporcionar recursos para cobrir parcela do custo atribuível ao cumprimento das obrigações de universalização dos serviços de telecomunicações, que não possa ser recuperada com a exploração eficiente do serviço. Para composição do Fundo, criou-se a CIDE-FUST, modalidade de tributo, de 1% (um por cento) sobre a receita operacional bruta decorrente de prestação de serviços de telecomunicações nos regimes público e privado, excluindo-se o ICMS, o PIS e a Cofins:
+Lei nº 9.998, de 17 de agosto de 2000
+"Art. 6º Constituem receitas do Fundo:
+(...)
+IV – contribuição de um por cento sobre a receita operacional bruta, decorrente de prestação de serviços de telecomunicações nos regimes público e privado, excluindo-se o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transportes Interestadual e Intermunicipal e de Comunicação – ICMS, o Programa de Integração Social – PIS e a Contribuição para o Financiamento da Seguridade Social – Cofins;"
+Como dito, o fato gerador da CIDE-FUST é o auferimento da receita decorrente da prestação de serviços de telecomunicações nos regimes público e privado, sem o qual não nasce a obrigação tributária. A base de cálculo, por sua vez, é a Receita Operacional Bruta (ROB), excluindo-se o ICMS, o PIS e a Cofins.
+Como se verifica na Memória de Cálculo de Apuração de Valores (SEI nº 0237517, Anexo 9), a conta referente a "vendas de produção", não foi considerada para a base de cálculo da CIDE-FUST. Veja-se:
+Já em relação à conta "61104 610010104000000 Vendas Locação de Equipamentos", a empresa limitou-se a apresentar justificativa escrita para os registros contábeis (SEI nº 0237517, Anexo 7), sem juntar a documentação comprobatória correspondente, como notas fiscais e contratos, conforme se verifica: 
+Contudo, a comprovação da natureza das operações registradas demanda a apresentação de documentos hábeis, especialmente das respectivas notas fiscais e dos instrumentos contratuais pertinentes. Assim, a mera justificativa apresentada não é suficiente para afastar a conclusão da fiscalização de que as receitas em questão decorrem de atividade que se enquadra no conceito de serviço de telecomunicações, nos termos do art. 60 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+LGT
+"Art. 60. Serviço de telecomunicações é o conjunto de atividades que possibilita a oferta de telecomunicação.
+§ 1° Telecomunicação é a transmissão, emissão ou recepção, por fio, radioeletricidade, meios ópticos ou qualquer outro processo eletromagnético, de símbolos, caracteres, sinais, escritos, imagens, sons ou informações de qualquer natureza."
+Ademais, como salientado pela Área Técnica, a alegação da Recorrente é genérica, posto não ter especificado quais receitas teriam sido equivocadamente consideradas como serviços de telecomunicações, deixando ainda de produzir provas aptas a fundamentar a revisão da decisão proferida.
+Informe nº 131/2026/CODI/SCO (SEI nº 15215185)
+3.26 Ressalta-se que a simples apresentação da documentação poderia ensejar uma nova fiscalização contábil tributária e a revisão dos valores lançados a título de Fust, caso ficasse comprovado que a conta "61104 610010104000000 Vendas Locação de Equipamentos" se refere efetivamente a receitas oriundas de aluguel e/ou venda de equipamentos.
+3.27 Assim, considerando que não foi apresentada nova documentação capaz de alterar a conclusão obtida pela fiscalização no Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do PDF 0237512), sugere-se a manutenção dos valores apurados para a contribuição do Fust, durante o exercício de 2011."
+A jurisprudência administrativa e pareceres da PFE-Anatel, a exemplo do Parecer nº 0280/2017/PFE/ANATEL/PGF/AGU (SEI nº 1401876), elaborado nos autos do Processo nº 5350801486/2009-87, consolidam que, em casos como o presente, compete à prestadora demonstrar, de forma individualizada, quais receitas não integram a hipótese de incidência da CIDE-FUST:
+Parecer nº 00280/2017/PFE/ANATEL/PGF/AGU
+"37. Assim, cabia à empresa comprovar a alegação de que o FUST incidiu sobre receitas de serviços diversos dos de telecomunicações, na forma do art. 36, da Lei 9.784/99 e do art. 85, do Regimento Interno da Anatel (Resolução nº 612/2013).
+38. Em suma, a empresa detém a obrigação de apresentar, de forma individualizada, em seus registros contábeis, as receitas provenientes de serviços de telecomunicações, segregando-as das demais fontes de receitas. Ou, ainda, é da prestadora o ônus de demonstrar quais receitas – entre as consideradas pela fiscalização para fins de cálculo da CIDE-FUST – não integram a hipótese de incidência do tributo."
+(negritei)
+Assim, é certo que a Prestadora não logrou demonstrar a veracidade de suas alegações, pois deixou de apresentar documentação probatória capaz de justificar a exclusão de valores contabilizados na base de cálculo da contribuição ao Fust.
+Alinho-me integralmente à Área Técnica, mantendo os valores na base de cálculo da CIDE-FUST, tal como considerados em primeira instância.
+III.3 - Do suposto erro da fiscalização na inclusão indevida de receitas não sujeitas ao Fust
+A recorrente aduziu que a Fiscalização desconsiderou a natureza jurídica das receitas oriundas de locação de equipamentos, tratando-as, indistintamente, como receitas de prestação de serviços de telecomunicações, sendo que tais atividades não se confundem com o núcleo do fato gerador da contribuição ao Fust. Asseverou, ainda, que não foram apresentados documentos contábeis ou provas técnicas que demonstrem que as receitas incluídas no lançamento se referem, de fato, à prestação de serviços de telecomunicações, tendo a Agência se limitado a presumir que toda a receita seria tributável, invertendo indevidamente o ônus da prova ao exigir da entidade a demonstração negativa de que tais receitas não se sujeitam à contribuição e arbitrando o valor do tributo.
+Recurso Administrativo (SEI nº 14856503)
+"Mesmo com a devida separação na contabilidade da Recorrente, das receitas decorrentes dos serviços de telecomunicação, a Fiscalização optou por efetuar a cobrança do FUST sobre todas as receitas de locação da recorrente.
+(...)
+A conclusão adotada não procede, não só porque, como dito no tópico acima, a venda e locação de equipamentos não consiste em prestação de serviços de telecomunicações, como também pela inconsistência dos fundamentos que embasaram o lançamento.
+(...)
+Daí se concluir, vez mais, que o lançamento contra a Recorrente não se sustenta, uma vez que a Fiscalização não procedeu com a apuração da ocorrência de circunstâncias materiais que configurariam fato gerador do FUST de 2011.
+Ora, o raciocínio presuntivo se pauta na ilação com elementos imateriais/inexistentes, pois consiste em uma suposição: “supõe-se” que os valores de 2013 são decorrentes de serviços de telecomunicações, porque “se supõe” que existiram elemento configuradores do fato gerador."
+Avaliando a Impugnação apresentada pela empresa após a notificação de lançamento (SEI nº 0237512, págs. 17 a 45), verifiquei que tais argumentos também foram ventilados naquela ocasião. A operadora igualmente apontou que não há que se confundir locação de equipamentos com prestação de serviços de telecomunicações, como se vê no trecho abaixo transcrito:
+Impugnação (SEI nº 0237512, págs. 17 a 45)
+"Verificamos que a legislação é clara e que se analisarmos as atividades sociais da Recorrente, verificamos que ela não exerce somente atividades na área de telecomunicação, há por exemplo; locação de equipamentos e bens móveis, representação por conta de terceiros para eletrônicos, administração financeira e consultoria. Assim, mais uma vez confirmamos que o percentual do FUST não pode ser calculado sobre a receita bruta total da Recorrente, mas sim somente sobre os serviços efetivamente de telecomunicações."
+Após a apresentação da referida Impugnação, o Corpo Técnico da Agência analisou os argumentos apresentados por meio do Informe nº 803/2025/CODI/SCO (SEI nº 14444517) e esclareceu que o Fust foi calculado apenas sobre as receitas provenientes de serviços de telecomunicações. Esclareceu, ainda, que os valores lançados não decorreram de arbitramento, mas de uma análise contábil fundamentada realizada pela fiscalização da Anatel.
+Informe nº 803/2025/CODI/SCO (SEI nº 14444517)
+"3.22 Quanto ao alegado, cumpre esclarecer que se equivoca a entidade ao afirmar que o Fust foi calculado com base em sua receita bruta total. Como se percebe da leitura do Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do SEI nº 0237512), a fiscalização excluiu do cálculo a conta que não se referia à prestação de serviços de telecomunicação, mantendo apenas a conta em que foi constatada esta prestação de serviço e a conta em que a entidade não conseguiu comprovar que se tratava de serviço distinto, ainda que tenha sido oportunizada a possibilidade de fazê-lo.
+(...)
+3.27. Inicialmente, cumpre esclarecer que os valores lançados não foram fruto de arbitramento, como alegado pela entidade, mas sim de análise contábil devidamente fundamentada pelo Relatório de Fiscalização nº 0803/2015/GR01 (págs. 03 a 11 do SEI nº 0237512).
+3.28. Assim, o que foi feito, em verdade, foram lançamentos de ofício da diferença entre os valores declarados e os valores verificados em fiscalização tributária da Anatel, e da multa derivada destes lançamentos.
+3.29. Vale observar que nos tributos sujeitos a lançamento por homologação, como é o caso da contribuição para o Fust, cabe ao sujeito passivo declarar ao Fisco a ocorrência do fato imponível, indicar todos os elementos que influenciam seu cálculo e antecipar seu pagamento, possibilitando que a máquina administrativa se volte para outras necessidades sociais.
+3.30. Quando a declaração não é feita corretamente, impõe-se que o crédito seja constituído por ato exclusivo da autoridade fiscal, hipótese em que incide a multa prevista no art. 44, I, da Lei nº 9.430/96."
+Ao analisar os argumentos recursais, a Área Técnica ressaltou a necessidade de a Impugnante demonstrar os fatos alegados mediante documentação juntada ao processo, o que poderia ter sido feito por meio de notas fiscais, contratos de locação, contratos de prestação de serviços, recibos ou qualquer outro comprovante idôneo de tal transação comercial. 
+Informe nº 131/2026/CODI/SCO (SEI nº 15215185)
+"3.31. Como já mencionado anteriormente, não basta que a conta esteja nomeada como aluguel e venda de equipamentos, deve-se comprovar que, de fato, as receitas aí contidas se referem a estas atividades. No caso concreto, a entidade foi instada a apresentar a documentação comprobatória em fase de fiscalização e não o fez. Ainda em sede de impugnação ou recursal, teve a oportunidade de fazê-lo, permanecendo inerte neste sentido.
+3.32. Ressalta-se que a comprovação de que a conta "61104 610010104000000 Vendas Locação de Equipamentos" se refere ao que se propõe deveria ser uma conduta simples a ser adotada pela recorrente, contudo, por razões desconhecidas desta Agência, optou por não fazê-lo.
+3.33. Neste sentido, vale observar que a recorrente não teve problema em apresentar amostra de notas fiscais referentes à conta "61105 .610010105000000 Vendas de Produção", quando contestou prontamente a solicitação da fiscalização. Assim, entende-se que não há justificativa para a não apresentação das notas fiscais ou contratos referentes às receitas lançadas na conta "61104 610010104000000 Vendas Locação de Equipamentos".
+3.34. Cumpre esclarecer, por fim, que o simples fato de nomear uma conta como sendo referente a receitas não tributáveis pelo Fust não é suficiente para a sua exclusão dos cálculos, devendo a entidade comprovar a origem das receitas ali contidas. No caso da conta "61104 610010104000000 Vendas Locação de Equipamentos", a recorrente não logrou êxito em comprovar a origem de suas receitas, por este motivo ela foi corretamente incluída no cálculo do tributo."
+(grifou-se)
+O Fundo de Universalização dos Serviços de Telecomunicações (Fust), instituído pela Lei nº 9.998, de 17 de agosto de 2000, Lei do Fust, visa fomentar a expansão, o uso e a melhoria da qualidade das redes e dos serviços de telecomunicações, reduzir as desigualdades regionais e estimular o uso e o desenvolvimento de novas tecnologias de conectividade para promoção do desenvolvimento econômico e social.
+Constitui receita do Fundo, dentre outras, a "contribuição de 1% (um por cento) sobre a receita operacional bruta, decorrente de prestação de serviços de telecomunicações nos regimes público e privado, a que se refere o inciso XI do art. 21 da Constituição Federal, excluindo-se o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins)" (inciso IV do art. 6º da Lei do Fust).
+Para a apuração da base de cálculo desse tributo, é importante que se averigue qual foi a receita bruta auferida pela empresa a título de serviços de telecomunicações. Desse montante, devem ser deduzidos os valores decorrentes de ICMS, PIS e Cofins, assim como eventuais transferências realizadas entre empresas, quando a entidade que emite a conta para o usuário já houver recolhido tal tributo.
+Significa dizer que a entidade tem o dever de enviar à Anatel a documentação contábil pertinente relativa aos serviços prestados, assim como de separar as receitas auferidas discriminadamente, por serviço explorado, demonstrando, por meio de documentos contábeis, quais são as receitas auferidas por cada um deles, nos termos do que determina o art. 10 da Lei nº 9.998/2000, bem como o inciso XIII do art. 119 do Regulamento Geral dos Serviços de Telecomunicações (RGST), aprovado pela Resolução nº 777, de 28 de abril de 2025:
+Lei nº 9.998/2000
+"Art. 10. As contas dos clientes das empresas prestadoras de serviços de telecomunicações deverão indicar, em separado, o valor da contribuição ao Fust referente aos serviços faturados.
+§ 3º As empresas prestadoras de serviços de telecomunicações encaminharão, mensalmente, à Anatel prestação de contas referente ao valor da contribuição, na forma da regulamentação."
+--------------------
+RGST, aprovado pela Resolução nº 777/2025
+"Art. 119. Sem prejuízo do disposto na legislação aplicável e nos instrumentos de outorga e ressalvadas as exceções dispostas na regulamentação, as Prestadoras de serviços de telecomunicações de interesse coletivo têm a obrigação de:
+(...)
+XIII - manter registros contábeis separados por serviços, caso explore mais de um serviço de telecomunicações;
+(...)
+XIX - informar dados de suas operações, as alterações societárias, os contratos de fornecimento e os acordos celebrados com outras prestadoras, sem prejuízo de outras obrigações de comunicação à Agência, inclusive aquelas relativas a pessoal, sempre que exigido pela Agência;"
+Em seu Recurso Administrativo, a Recorrente deixou de juntar aos autos os documentos que comprovassem as receitas de locação que, em seu entendimento, teriam sido indevidamente incluídas na base de cálculo da contribuição ao Fust.
+Reitero que não é suficiente a mera afirmação de que a conta contábil "Venda e Locação de Equipamentos" (conta 61104 610010104000000) não contempla receitas decorrentes da prestação de serviços de telecomunicações. Para afastar a incidência do Fust, é indispensável que os registros contábeis da entidade evidenciem, de forma clara e inequívoca, a segregação entre as receitas oriundas da prestação de serviços de telecomunicações e aquelas provenientes da locação de equipamentos. Ademais, essa segregação deve estar acompanhada de documentação idônea e suficiente que demonstre a efetiva inexistência de receitas relativas à prestação de serviços de telecomunicações.
+Assim, ao contrário do que sustenta a empresa, compete-lhe comprovar a alegação de que a Anatel teria considerado, na base de cálculo do Fust, receitas estranhas à respectiva hipótese de incidência. Tal ônus decorre do disposto no art. 36 da Lei de Processo Administrativo (LPA) e no art. 85 do Regimento Interno da Anatel (RIA):
+Lei nº 9.784/1999 (LPA)
+"Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei."
+--------------------
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+"Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução."
+Essa é a intelecção do presente Colegiado, segundo se confirma nos julgados abaixo:
+Acórdão nº 271, de 20 de outubro de 2025
+"Processo nº 53500.002854/2008-11
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ/MF nº 02.558.157/0001-62
+Conselheiro Relator: Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 947, de 13 de outubro de 2025
+EMENTA
+DIREITO TRIBUTÁRIO. DIREITO PROCESSUAL TRIBUTÁRIO. PROCESSO ADMINISTRATIVO FISCAL - PAF. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST. DECADÊNCIA DO DIREITO DE LANÇAMENTO COMPLEMENTAR DA ADMINISTRAÇÃO PÚBLICA. DESCABIMENTO. CIDE-FUST. BASE DE CÁLCULO. ALTERAÇÃO. COMUNICAÇÃO OBRIGATÓRIA. MINISTÉRIO DAS COMUNICAÇÕES - MCOM. NECESSIDADE DE APURAÇÃO DE RESPONSABILIDADES PELA CORREGEDORIA DA ANATEL. RECURSO DE OFÍCIO. CONDIÇÕES PARA CABIMENTO DO RECURSO DE OFÍCIO ATENDIDAS. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, DO DECRETO Nº 12.150, DE 20 DE AGOSTO DE 2024, DO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, DAS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, E DOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO. RECURSO DE OFÍCIO CONHECIDO E NÃO PROVIDO.
+1. O cabimento do Recurso de Ofício é determinado pelo Decreto nº 70.235/1972 e pelas normas internas da Anatel (Portarias nº 1.125/2014 e nº 614/2018 e Resolução Interna nº 338/2024), sendo aplicável ao presente caso.
+2. Incumbe à autoridade fiscal demonstrar a legitimidade e a regularidade do lançamento efetuado, ônus que, no presente caso, reputa-se devidamente cumprido.
+3. Recai sobre a Recorrente o ônus de produzir prova em contrário, apta a desconstituir o crédito tributário objeto da impugnação.
+(...)
+11. Recurso Administrativo conhecido e não provido.
+12. Recurso de Ofício conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 133/2025/AF (SEI nº 14491348), integrante deste acórdão:
+a) conhecer do Recurso de Ofício para, no mérito, negar-lhe provimento; e,
+b) conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 6240/2012/ADPFA2/SAD (SEI nº 6304550), nos termos contidos na alínea "b" da Conclusão da referida análise.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda, Octavio Penna Pieranti e Vicente Bandeira de Aquino Neto."
+--------------------
+Acórdão nº 80, de 19 de abril de 2023
+"Processo nº 53500.016302/2015-10
+Recorrente/Interessado: BAPI COMÉRCIO E SERVIÇOS DE TELECOMUNICAÇÕES LTDA.
+CNPJ nº 56.841.067/0001-03
+Conselheiro Relator: Moisés Queiroz Moreira
+Fórum Deliberativo: Reunião nº 921, de 13 de abril de 2023
+EMENTA
+PROCESSO ADMINISTRATIVO FISCAL (PAF). RECURSO ADMINISTRATIVO VOLUNTÁRIO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES (CIDE-FUST). EXERCÍCIO 2011. RECEITAS DE SERVIÇOS DE TELECOMUNICAÇÕES. LANÇAMENTO DE OFÍCIO. MULTA DE OFÍCIO. ATUALIZAÇÃO MONETÁRIA. RECURSO CONHECIDO E NÃO PROVIDO.
+(...)
+2. A exclusão de quaisquer receitas da base de cálculo do Fust depende da apresentação de prova contábil. Ausentes provas ou devida separação contábil, as receitas devem ser consideradas como oriundas da prestação de serviços de telecomunicações.
+(...)
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 21/2023/MM (SEI nº 9938566), integrante deste acórdão, conhecer do Recurso Administrativo Voluntário para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Artur Coimbra de Oliveira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto."
+(grifado)
+Diante de todo esse cenário, deve ser rejeitada a alegação de inclusão indevida de receitas na base de cálculo do Fust relativo ao exercício de 2011.
+IV - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+Por fim, observa-se que a Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela representa um compromisso assumido por todos os países participantes da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável de 2015, que reuniu os 193 (cento e noventa e três) Estados‑membros da ONU, incluindo o Brasil, e prevê a adoção de medidas ousadas, abrangentes e essenciais para fortalecer o Estado de Direito, promover os direitos humanos e ampliar a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar alinhada a esses ODS e às metas que lhes são correlatas, sendo importante que essa aderência esteja explícita nas decisões deste Conselho Diretor.
+A proposta de encaminhamento contida na presente Análise se relaciona com o Objetivo 10 da Agenda 2030, uma vez que a garantia de uma administração tributária eficiente e justa promove uma distribuição de renda mais igualitária e a redução das desigualdades econômicas e sociais.
+Relaciona-se, ainda, com o Objetivo 16, pois, conforme demonstrado, observaram-se, durante todo o trâmite processual, os princípios do devido processo legal, da ampla defesa e do contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel, identificando-se, em especial, com a Meta 16.6, que propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+CONCLUSÃO
+Ante o exposto, voto por ratificar o conhecimento do Recurso Administrativo (SEI nº 14856503 ) interposto pela empresa RPJ PRODUTORES ASSOCIADOS LTDA., inscrita no CNPJ sob o nº 05.161.846/0001-27, para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 615/2025/CODI/SCO (SEI nº 14446581), de 4 de novembro de 2025.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 24/08/2026, às 10:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15919507 e o código CRC 5D0A9189.
+ | 
+Referência: Processo nº 53500.013983/2015-64 | 
+SEI nº 15919507 |

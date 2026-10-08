@@ -1,0 +1,44 @@
+SEI/ANATEL - 16288965 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 48
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 256, de 15 de setembro de 2026
+Processo nº 53504.003287/2018-52
+Recorrente/Interessado: INTERTRADE BRASIL, TELECOMUNICAÇÕES, MULTIMÍDIA E REPRESENTAÇÕES LTDA.
+CNPJ nº 02.621.577/0001-46
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. LANÇAMENTO DE OFÍCIO POR RECOLHIMENTO A MENOR NO EXERCÍCIO DE 2014. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por INTERTRADE BRASIL, TELECOMUNICAÇÕES, MULTIMÍDIA E REPRESENTAÇÕES LTDA. contra decisão da Superintendência de Controle de Obrigações - SCO que reconheceu a procedência dos créditos tributários referentes ao Fust no exercício de 2014.
+2. Fato relevante. O processo foi instaurado para verificar a regularidade do recolhimento da contribuição ao Fust. A fiscalização apurou recolhimento a menor e lavrou notificação de lançamento com base em contas contábeis e documentos apresentados pela própria Prestadora.
+3. As alegações recursais. A Recorrente sustentou nulidade do lançamento. Alegou inclusão indevida, na base de cálculo do Fust, de receitas de locação de equipamentos e de contas contábeis que não corresponderiam a serviços de telecomunicações. Alegou também arbitramento irregular dos valores e invocou decisão judicial relativa à não incidência de Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS sobre locação de equipamentos.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a notificação de lançamento é nula por suposto equívoco na definição da base de cálculo do Fust e por alegado arbitramento irregular; e (ii) saber se decisão judicial relativa à incidência de ICMS sobre locação de equipamentos afasta, por analogia, a exigência da contribuição ao Fust no caso concreto.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Estão presentes tempestividade, interesse recursal, legitimidade e regular representação.
+2. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel. O caso não se enquadra nas hipóteses de remessa obrigatória previstas na Portaria nº 642/2013, conforme interpretação fixada no Parecer nº 00161/2026/PFE-ANATEL/PGF/AGU.
+3. A fiscalização apurou o crédito tributário com base em processo regular. A Prestadora foi intimada a apresentar documentos e esclarecimentos. A documentação foi considerada insuficiente para individualizar integralmente a natureza das receitas.
+4. O relatório de fiscalização registrou que a Empresa não apresentou a descrição detalhada das receitas nem a amostra completa de contratos solicitada. Essa insuficiência documental impediu o afastamento das contas contábeis utilizadas na apuração.
+5. A análise das notas fiscais, do livro razão e do contrato apresentado revelou indícios de receitas decorrentes da prestação de serviços de telecomunicações em contas que a Recorrente pretendia excluir da base de cálculo.
+6. O lançamento de ofício é legítimo quando constatado recolhimento a menor. Compete à autoridade administrativa constituir o crédito tributário e apurar a matéria tributável com base nos elementos constantes dos autos.
+7. Cabia à Recorrente comprovar, de forma objetiva e documental, que as receitas discutidas não integravam a base de cálculo do Fust. A mera impugnação genérica não afasta a presunção de legitimidade do lançamento.
+8. Não houve arbitramento nos termos do art. 148 do Código Tributário Nacional - CTN. O lançamento foi realizado com fundamento nas informações e documentos apresentados pela própria Empresa, ainda que em nível de detalhamento inferior ao exigido pela fiscalização.
+9. A deficiência de segregação contábil não pode ser transferida à Administração. Incumbe à Prestadora manter escrituração apta a identificar as receitas sujeitas à contribuição.
+10. A decisão judicial mencionada pela Recorrente trata de ICMS e de hipótese de incidência diversa. Esse precedente não afasta, por analogia, a incidência da contribuição ao Fust, que possui disciplina legal própria.
+11. A exclusão de receita da incidência de um tributo não implica sua exclusão automática da base de cálculo de outro. Para afastar a exigência do Fust, seria necessária prova específica de que a receita não decorre da prestação de serviços de telecomunicações.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido.
+Tese de julgamento: "1. É válido o lançamento de ofício da contribuição ao Fust quando a fiscalização apura recolhimento a menor com base em documentos e registros contábeis apresentados pela própria Prestadora. 2. Cabe ao Contribuinte demonstrar, de forma documental, a incorreção da base de cálculo utilizada no lançamento e a exclusão das receitas que afirma não integrarem o fato gerador da contribuição. 3. Não há arbitramento irregular quando o crédito tributário é constituído a partir dos elementos fornecidos pelo Contribuinte, ainda que insuficientes para a completa segregação das receitas. 4. Decisão judicial relativa à não incidência de ICMS sobre locação de equipamentos não afasta, por analogia, a exigência da contribuição ao Fust, cuja hipótese de incidência possui disciplina legal própria."
+Dispositivos relevantes citados: CTN, arts. 142 e 148; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.784/1999; Portaria nº 642/2013, art. 5º, IV; e Resolução Interna Anatel nº 338/2024, art. 1º.
+Jurisprudência relevante citada: Anatel, Acórdão nº 113, de 06.05.2024, Processo nº 53500.022021/2010-91, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 931, de 25.04.2024; e Anatel, Acórdão nº 353, de 12.12.2024, Processo nº 53504.026793/2009-29, Rel. Conselheiro Alexandre Reis Siqueira Freire, Reunião nº 939, de 05.12.2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 71/2026/EH (SEI nº 16131107), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 16/09/2026, às 13:30, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16288965 e o código CRC 7898F98C.
+ | 
+Referência: Processo nº 53504.003287/2018-52 | 
+SEI nº 16288965 |

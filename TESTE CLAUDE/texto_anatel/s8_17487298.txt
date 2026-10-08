@@ -1,0 +1,42 @@
+SEI/ANATEL - 15636549 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 134, de 14 de maio de 2026
+Processo nº 53500.005555/2011-34
+Recorrente/Interessado: TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA.
+CNPJ nº 02.884.281/0001-18
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de Extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1, pertencente à TELESAT CANADA, com efeitos a partir de 1º de agosto de 2026.
+2. O direito de exploração foi conferido pelo Ato nº 3.480, de 1º de julho de 2020, ratificado pelo Termo de Autorização nº 2/2021, e tem vigência até 31 de março de 2032.
+3. A representante legal no Brasil, TELESAT BRASIL CAPACIDADE DE SATÉLITES LTDA., formulou o Pedido em 26 de janeiro de 2026, justificado pela redução da demanda por capacidade geoestacionária e baixa utilização do satélite no mercado brasileiro.
+4. A área técnica propôs o deferimento do Pedido, uma vez que a capacidade continuará a ser ofertada aos clientes pelos satélites Telstar 19 Vantage e Telstar 12 Vantage, autorizados pela Anatel.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Conselho Diretor é competente para declarar a extinção, por renúncia, do Direito de Exploração de Satélite; e (ii) saber se estão atendidos os requisitos procedimentais e regulatórios para a extinção do direito de exploração do satélite Anik G1, sem prejuízo das obrigações da Exploradora perante a Anatel e terceiros.
+III. RAZÕES DE DECIDIR
+1. Compete à Anatel disciplinar o uso de recursos de órbita e espectro, cabendo ao Conselho Diretor decidir sobre a extinção de direito de exploração de satélite.
+2. A manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel é dispensável no caso, diante da ausência de dúvida jurídica e da inexistência de hipótese de manifestação obrigatória.
+3. O Pedido foi tempestivo, pois foi apresentado com antecedência superior a 6 (seis) meses em relação à data indicada para a produção de efeitos da renúncia.
+4. A renúncia tem natureza unilateral, irrevogável e irretratável, não desonera a Exploradora de suas obrigações com a Anatel, com terceiros, nem afasta a apuração de infrações ou a cobrança de valores devidos.
+5. Não se verificou impacto aos clientes da Exploradora, uma vez que a oferta de capacidade será mantida por outros satélites de sua propriedade já autorizados pela Anatel.
+6. A existência de estações terrenas vinculadas ao satélite Anik G1 não impede a extinção pretendida, cabendo às prestadoras responsáveis regularizá-las perante a Agência.
+7. A existência de débitos a vencer da representante legal perante a Anatel não impede a extinção, considerando que tais valores permanecem exigíveis.
+8. Assim, não há óbice à extinção, por renúncia, do direito de exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, a partir de 1º de agosto de 2026.
+IV. DISPOSITIVO E TESE
+Pedido deferido. Declarada a extinção, por renúncia, a partir de 1º de agosto de 2026, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. O Pedido de Renúncia apresentado com antecedência mínima de seis meses e por representante legítimo atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a Exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, arts. 113 e 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; Resolução nº 748/2021, arts. 27, 33, 34 e 35.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 22/2026/NP (SEI nº 15279069), integrante deste acórdão, declarar extinto, por renúncia, a partir de 1º de agosto de 2026, o direito de exploração no Brasil do satélite estrangeiro Anik G1 e as subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15153926, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela Empresa.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15636549 e o código CRC F5FD18D6.
+ | 
+Referência: Processo nº 53500.005555/2011-34 | 
+SEI nº 15636549 |

@@ -1,0 +1,41 @@
+SEI/ANATEL - 15364619 - Acórdão
+Boletim de Serviço Eletrônico em 30/03/2026
+DOU de 30/03/2026, seção 1, página 33
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 78, de 20 de março de 2026
+Processo nº 53504.002303/2023-57
+Recorrente/Interessado: RÁDIO TOP FM LTDA.
+CNPJ nº 47.725.825/0001-37
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. USO NÃO AUTORIZADO DE RADIOFREQUÊNCIA POR OPERAÇÃO EM MUNICÍPIO DIVERSO DO AUTORIZADO. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por RÁDIO TOP FM LTDA. contra o Despacho Decisório nº 448/2025/CODI/SCO, que negou provimento a Recurso anterior e alterou, de ofício, o valor da multa para R$ 52.810,27 (cinquenta e dois mil, oitocentos e dez reais e vinte e sete centavos) por uso não autorizado de radiofrequência.
+2. Fato relevante. Fiscalização de 8 de março de 2023 constatou operação de estação de radiodifusão FM em endereço no Município de São Paulo/SP, embora a autorização e a licença indicassem operação no Município de Guarulhos/SP.
+3. Pedidos. A Recorrente pediu o reconhecimento da inexistência de infração e o arquivamento do processo, ou a aplicação de advertência. Subsidiariamente, pediu a revisão do valor da multa, com adoção de Classe C, reconhecimento de atenuantes e afastamento de juros e correção monetária durante a tramitação recursal.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a operação da estação em município diverso do autorizado caracteriza uso não autorizado de radiofrequência; e (ii) saber se são cabíveis a advertência, a revisão do valor da multa, o reconhecimento de atenuantes e o afastamento de juros e correção monetária.
+III. RAZÕES DE DECIDIR
+1. A autorização de uso de radiofrequência abrange a área geográfica, além do canal e da frequência.
+2. A operação em município distinto do autorizado configura uso não autorizado de radiofrequência, por desconformidade com parâmetro da autorização.
+3. A expedição posterior de atos para instalação e operação em novo endereço não afasta a infração constatada na data da fiscalização.
+4. O uso não autorizado do espectro é infração classificada como grave, o que afasta a aplicação de advertência.
+5. A revisão e a majoração da multa foram motivadas, submetidas ao contraditório e baseadas em parâmetros técnicos e no histórico infracional, com adoção da Classe B1 e afastamento parcial da metodologia de cálculo em decisão fundamentada. 
+6. A interposição de Recurso suspende a exigibilidade da multa, mas não altera a data de vencimento nem suspende a atualização pela taxa Sistema Especial de Liquidação e de Custódia - Selic, na forma prevista no regulamento.
+7. Não se reconhecem atenuantes quando a regularização ocorre após a decisão sancionadora e não decorre da autuação.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. A operação de estação de radiodifusão em município diverso do autorizado caracteriza uso não autorizado de radiofrequência. 2. A autorização de uso de radiofrequência inclui a área geográfica e a localização da estação. 3. A regularização posterior não afasta a infração constatada na fiscalização. 4. O uso não autorizado do espectro é infração grave e afasta a penalidade de advertência. 5. A majoração da multa é válida quando motivada, submetida ao contraditório e baseada em parâmetros técnicos e no histórico infracional. 6. A suspensão da exigibilidade por recurso não impede a atualização do débito na forma prevista na regulamentação. 7. Não cabem atenuantes quando a regularização ocorre após a decisão sancionadora e não decorre da autuação."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 163 e 183; Lei nº 9.784/1999; Resolução nº 612/2013, arts. 82, § 3º, 115, § 6º, 116 e 123; Resolução nº 671/2016, arts. 15, 40, inciso IV, e 59, inciso II; Resolução nº 589/2012, arts. 12, parágrafo único, inciso II, 18, § 4º, e 33, caput e § 2º.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 21/2026/OP (SEI nº 15242510), integrante deste acórdão, conhecer do Recurso Administrativo interposto para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/03/2026, às 19:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15364619 e o código CRC 0B02A7DD.
+ | 
+Referência: Processo nº 53504.002303/2023-57 | 
+SEI nº 15364619 |

@@ -1,0 +1,43 @@
+SEI/ANATEL - 15834217 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 56
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 155, de 19 de junho de 2026
+Processo nº 53500.002922/2013-18
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO - TFF. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A., sucessora, por incorporação, da VIVO S.A., contra despacho decisório que reconheceu a procedência dos lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento - TFF, relativos ao exercício de 2009.
+2. Fato relevante. A Recorrente sustenta a inexigibilidade da TFF sobre 3.292 (três mil, duzentas e noventa e duas) estações móveis de teste. Afirma que tais estações eram destinadas a testes internos e não ao uso por assinantes habilitados.
+3. As manifestações anteriores. A área técnica opinou pelo conhecimento e não provimento do Recurso. A Superintendência de Controle de Obrigações - SCO conheceu do Recurso e encaminhou os autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a TFF relativa ao exercício de 2009 incide sobre estações móveis de teste destinadas a uso interno, ainda que não habilitadas para assinantes.
+III. RAZÕES DE DECIDIR
+1. A instrução do Processo observou o Decreto nº 70.235/1972. Foram resguardados o devido processo legal e a ampla defesa.
+2. O Recurso preenche os requisitos de admissibilidade. É tempestivo, foi interposto por parte legítima, revela interesse recursal e não contraria súmula da Agência.
+3. A TFF é devida pelas prestadoras de serviços de telecomunicações e decorre da fiscalização do funcionamento das estações.
+4. O fato gerador da TFF corresponde ao exercício do poder de polícia sobre o funcionamento de estações utilizadas na prestação de serviços de telecomunicações, licenciadas ou não, e sobre o uso de radiofrequências.
+5. A base de cálculo da TFF considera o número de estações em funcionamento no período de referência, nos termos do Regulamento de Arrecadação de Receitas Tributárias.
+6. A expressão “quando aplicável”, constante do art. 12 da Resolução nº 255/2001, não condiciona a incidência da TFF à habilitação de assinantes. Essa expressão apenas contempla hipóteses específicas em que o serviço exige código de acesso ativado.
+7. O poder de polícia que fundamenta a TFF não se limita à exploração comercial do serviço. Ele abrange o controle técnico do funcionamento das estações, inclusive experimentais, para assegurar o uso adequado do espectro, prevenir interferências e garantir a regularidade do serviço.
+8. A existência de licença válida no período de referência basta para caracterizar o fato gerador da TFF. A destinação das estações a testes internos não afasta a incidência tributária.
+9. Não há ausência de fato gerador. Também não há violação aos dispositivos constitucionais e legais invocados pela Recorrente.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido.
+Tese de julgamento: "1. A TFF incide sobre estações em funcionamento sujeitas ao poder de polícia da Anatel, ainda que destinadas a testes internos. 2. A habilitação de assinantes não constitui requisito geral para a incidência da TFF. 3. A existência de licença válida no período de referência é suficiente para caracterizar o fato gerador da TFF."
+Dispositivos relevantes citados: Lei nº 5.070/1966; Decreto nº 70.235/1972; Código Tributário Nacional - CTN, arts. 77 e 78; Resolução nº 729/2020; Resolução nº 255/2001, art. 12; Portaria nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 49/2026/OP (SEI nº 15714516), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15834217 e o código CRC A48B3D8C.
+ | 
+Referência: Processo nº 53500.002922/2013-18 | 
+SEI nº 15834217 |

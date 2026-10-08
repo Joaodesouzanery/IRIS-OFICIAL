@@ -1,0 +1,114 @@
+SEI/ANATEL - 16028190 - Voto
+Boletim de Serviço Eletrônico em 06/08/2026
+Voto nº 10/2026/EH
+Processo nº 53500.002822/2019-79
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso administrativo em face do Despacho Decisório nº 55/2024/CODI/SCO, de 19/03/2024 – infrações ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC) – arts. 81, §1º; 82; 83; 85, caput e parágrafo único; e 6º, IV, da Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor - CDC). Conversão do feito em diligência para esclarecimentos da área técnica.
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. RECURSO ADMINISTRATIVO. DIREITOS DO CONSUMIDOR NO SERVIÇO MÓVEL PESSOAL. PEDIDO DE VISTA. CONVERSÃO DO FEITO EM DILIGÊNCIA. QUESITOS À ÁREA TÉCNICA. AUSÊNCIA DE JUÍZO DE MÉRITO.
+I. CASO EM EXAME
+O recurso. Recurso administrativo interposto por TELEFÔNICA BRASIL S.A. contra o Despacho Decisório nº 55/2024/CODI/SCO, que lhe aplicou sanções de advertência e multa por descumprimento dos arts. 81, § 1º, 82, 83 e 85, caput e parágrafo único, do RGC, e do art. 6º, IV, do CDC.
+Fato relevante. Após a Análise nº 101/2025/VA, do Relator, e o Voto nº 8/2025/OP, apresentado em vista pelo Conselheiro Octavio Penna Pieranti, solicitei vista da matéria na RCD nº 950.
+As alegações da recorrente. A recorrente formulou, em petições e memoriais, alegações de natureza técnica sobre a quantificação dos usuários atingidos (art. 81, § 1º, do RGC) e sobre a apuração da vantagem auferida (art. 85, caput, do RGC), amparadas em bases de dados reprocessadas no âmbito do PAC nº 53500.047004/2024-62.
+A providência adotada. Foi solicitada vista para aprofundar a análise das alegações da recorrente quanto aos arts. 81, § 1º, e 85, caput e parágrafo único, do RGC.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se as alegações técnicas da recorrente exigem, antes da deliberação de mérito, esclarecimentos complementares da área técnica quanto: (i) à quantificação dos usuários atingidos e totais na infração ao art. 81, § 1º, do RGC; e (ii) à metodologia de apuração da vantagem auferida na infração ao art. 85, caput, do RGC.
+III. RAZÕES DE DECIDIR
+As alegações da recorrente têm natureza eminentemente técnica e se apoiam em bases de dados que foram objeto de reprocessamento posterior à decisão recorrida, circunstância que não pôde ser integralmente considerada pela fiscalização à época.
+A instrução adequada do feito, nos termos dos arts. 29 e 38 da Lei nº 9.784/1999, recomenda que tais alegações sejam submetidas à manifestação da unidade competente antes da deliberação do Colegiado.
+A conversão do feito em diligência destina-se exclusivamente à obtenção de esclarecimentos, mediante quesitos objetivos, e não importa antecipação de juízo de mérito deste Conselheiro sobre qualquer das teses em debate.
+IV. DISPOSITIVO E TESE
+Julgamento da matéria convertido em diligência.
+Tese de julgamento: "1. É cabível a conversão do feito em diligência quando as alegações do recorrente suscitam questões técnicas cujo esclarecimento, pela unidade competente, é necessário à adequada instrução do processo. 2. A diligência deve ser formulada por meio de quesitos objetivos, sem antecipação de juízo de mérito. 3. A diligência deve ser dirigida à Superintendência de Controle de Obrigações, pelo prazo de 30 (trinta) dias, com posterior restituição dos autos ao Gabinete para prosseguimento da matéria."
+Dispositivos relevantes citados: Lei nº 9.784/1999, arts. 29 e 38; Lei nº 8.078/1990, arts. 6º, IV, e 42, parágrafo único; Resolução nº 632/2014, arts. 81, § 1º, e 85, caput e parágrafo único; Resolução Interna nº 219/2023, art. 18, § 2º.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIA
+Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor - CDC).
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 (Lei do Processo Administrativo - LPA).
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+Metodologia de cálculo do valor base das sanções de multa relativa a infrações a Direitos e Garantias dos Usuários, aprovada pela Resolução Interna nº 219, de 15 de junho de 2023.
+RELATÓRIO
+DOS FATOS
+Trata-se de recurso administrativo interposto por TELEFÔNICA BRASIL S.A., prestadora do Serviço Móvel Pessoal (SMP), em face do Despacho Decisório nº 55/2024/CODI/SCO (SEI nº 11655278), que lhe aplicou sanções de advertência e multa no valor total de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil, novecentos e três reais e vinte e dois centavos), por descumprimento ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC) e à Lei nº 8.078, de 11 de setembro de 1990, que aprovou o Código de Defesa do Consumidor (CDC).
+A matéria foi apresentada para deliberação pelo Relator, Conselheiro Vicente Aquino, por meio da Análise nº 101/2025/VA (SEI nº 14302251), que concluiu:
+6.1. Voto por:
+6.1.1. conhecer e dar provimento parcial ao Recurso Administrativo unicamente para:
+a) descaracterizar a infração ao art. 81, caput, RGC/2014;
+b) retificar o valor atribuído ao componente "Ua" da infração ao art. 85, parágrafo único, para 924.484 (novecentos e vinte e quatro mil, oitocentos e oitenta e quatro), conforme constante na planilha "considerações PÓS.xls", afastando o carácter sistêmico da infração.
+6.1.2. conhecer e deferir a petição extemporânea SEI nº 13325627, exclusivamente para:
+a) delimitar o "Ua" referente à infração ao art. 81, §§1º e 2º, do RGC/2014, aos usuários do SMP na modalidade pós-paga, correspondente a 40.390.834 (quarenta milhões, trezentos e noventa mil, oitocentos e trinta e quatro);
+b) em relação ao art. 83, afastar as 40.153 (quarenta mil, cento e cinquenta e três) reclamações de cobranças relacionadas ao pré-pago.
+6.1.3. conhecer e deferir o requerimento constante na petição extemporânea SEI nº 14490710, exclusivamente para utilizar no fator "Ua" do cálculo da multa o total de 79.009 (setenta e nove mil e nove) usuários;
+6.1.4. efetuar, de ofício, os seguintes ajustes à decisão recorrida:
+a) aglutinar as infrações aos §§ 1º e 2º do art. 81 do RGC/2014;
+b) retificar os parâmetros "Ua" e "Ut" da fórmula de multa referente ao art. 82 do RGC, a fim de se considerar a quantidade de usuários atingidos pelo ilícito e o número total de usuários da base do SMP;
+c) reenquadrar os ilícitos originalmente tipificados como infração ao art. 86, como infração ao art. 85, parágrafo único, devendo o total de usuários atingidos serem somados àqueles referentes à infração ao art. 85, parágrafo único.
+6.1.5. Como resultado das medidas descritas nos subitens "6.1.1" a "6.1.4", rever a decisão consubstanciada no Despacho Decisório nº 55/2024/CODI/SCO, de 19 de março de 2024 (SEI nº 11655278), a fim de retificar a sanção pecuniária de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil novecentos e três reais e vinte e dois centavos), para R$ 19.637.204,63 (dezenove milhões, seiscentos e trinta e sete mil duzentos e quatro reais e sessenta e três centavos).
+Na RCD nº 948, realizada em 4 de novembro de 2025, o Conselheiro Octavio Penna Pieranti pediu vistas da matéria, conforme Certidão de Julgamento correspondente (SEI nº 14697331).
+Na RCD 950, o Conselheiro Octavio Penna Pieranti apresentou o Voto nº 8/2025/OP, por meio do qual sugeriu conhecer parcialmente do recurso, ajustando parâmetros de cálculo, reconhecendo a necessidade de expurgo de duplicidades e ressarcimentos já realizados no âmbito do PAC nº 53500.047004/2024-62 e, ao final, reduzir o valor da multa para R$ 60.594.250,79 (sessenta milhões, quinhentos e noventa e quatro mil, duzentos e cinquenta reais e setenta e nove centavos), convertendo-a em sanção de obrigação de fazer consistente em conectividade para instituições públicas de ensino superior e institutos federais. 
+Em 05/02/2026, a recorrente apresentou a petição SEI nº 15146942, na qual sustenta que:
+a multa final do processo deveria situar-se em torno de R$ 5,6 milhões, em razão de equívocos na definição dos parâmetros de usuários atingidos e na apuração da vantagem auferida;
+ para o art. 81, §1º, do RGC, os usuários atingidos devem corresponder, no máximo, à chamada “base saneada Vivo”, de 79.009 usuários, e não ao universo de contestações consideradas pela fiscalização, uma vez que apresentam duplicidades;
+para o art. 85, caput, do RGC, a vantagem auferida deve ser calculada com base na “base saneada Vivo”, excluindo-se valores devolvidos em até 30 dias, bem como aqueles relativos a cenários de fraude de subscrição e concessões por fidelização, além de se considerar apenas o valor simples da cobrança indevida e modular a incidência de atualização monetária conforme o efetivo ressarcimento;
+o art. 85, parágrafo único, do RGC, não teria sido violado, diante da prova de que a empresa realiza ressarcimentos também por depósito em conta, o que afastaria a alegada indução do consumidor à devolução exclusivamente em conta futura.
+Como parte da Petição CT LLLAC nº 1485.2025 (SEI nº 14584683), a recorrente apresentou a tabela reproduzida abaixo, juntada no Anexo Docs 1, 2 e 3 (SEI nº 14584684) e elaborada a partir das planilhas SEI nº 12301905, nº 12304398 e nº 12305093, constantes do PAC nº 53500.047004/2024-62, na qual sustenta que a quantidade de usuários efetivamente envolvidos (coluna TT_Cliente) seria sensivelmente inferior ao volume de contestações registrado (coluna TT_Registro):
+Rótulos de Linha
+ | TT_CLIENTE
+ | TT_REGISTRO
+ | VL RESSARCIMENTO
+ | 
+CONCESSÃO POR FIDELIZAÇÃO
+ | 8.311
+ | 12.311
+ | R$ 3.252.635
+ | 
+FRAUDE DE SUBSCRIÇÃO
+ | 47.734
+ | 99.365
+ | R$ 6.719.263
+ | 
+TARIFAÇÃO INCORRETA
+ | 22.964
+ | 36.629
+ | R$ 8.991.513
+ | 
+TOTAL
+ | 79.009
+ | 148.305
+ | R$ 18.963.411,06
+ | 
+O voto vistas do Conselheiro Octavio Penna Pieranti acolheu parcialmente algumas dessas teses – notadamente o reconhecimento de duplicidades e a necessidade de depuração das bases de dados –, mas rejeitou, em linhas gerais, a adoção da “base saneada Vivo” como parâmetro geral de recálculo da multa e afastou a tese de descaracterização da infração ao art. 85, parágrafo único, do RGC.
+Na Reunião nº 950, realizada em 12/02/2026, solicitei vistas da matéria.
+É o relatório.
+DAS CONSIDERAÇÕES POR PARTE DESTE CONSELHEIRO
+As alegações da recorrente têm natureza eminentemente técnica: dizem respeito à composição das bases de dados que fundamentaram a quantificação dos usuários atingidos e a apuração da vantagem auferida, bem como à metodologia de cálculo aplicada. Parte dessas bases foi objeto de reprocessamento no âmbito do PAC nº 53500.047004/2024-62, em momento posterior à decisão recorrida.
+Nos termos dos arts. 29 e 38 da Lei nº 9.784/1999, a instrução do processo administrativo deve reunir os elementos necessários à adequada tomada de decisão, sendo facultada a realização de diligências em qualquer fase. Entendo, assim, que a deliberação de mérito pelo Colegiado será mais bem informada se precedida de manifestação da Superintendência de Controle de Obrigações sobre os pontos suscitados.
+Registro, desde logo, que a presente diligência tem finalidade exclusivamente instrutória. Os quesitos a seguir formulados não importam antecipação de entendimento deste Conselheiro sobre qualquer das teses da recorrente ou dos votos já apresentados, tampouco vinculam a área técnica a determinado resultado. Eventuais considerações de mérito serão apresentadas, se for o caso, por ocasião do voto a ser proferido após o retorno dos autos.
+Assim, submeto à Superintendência de Controle de Obrigações os quesitos abaixo, para que os responda de forma fundamentada, confirmando ou revendo, conforme o caso, os cálculos que subsidiaram a decisão recorrida.
+I – Quesitos relativos ao art. 81, § 1º, do RGC (quantificação de usuários)
+A chamada “base saneada Vivo”, com 79.009 usuários, resultante do reprocessamento realizado no âmbito do PAC nº 53500.047004/2024-62, é metodologicamente apta a quantificar os usuários atingidos (Ua) pela infração ao art. 81, § 1º, do RGC? Em caso negativo, indicar as razões técnicas e as eventuais limitações da referida base.
+Qual o grau de duplicidade efetivamente existente na base bruta de contestações utilizada na decisão recorrida? Confirma-se a proporção de aproximadamente 52% de registros duplicados alegada pela recorrente? Apresentar a quantificação de usuários atingidos (Ua) após o expurgo de duplicidades, indicando a metodologia empregada.
+Há razão técnica que justifique a utilização de bases distintas para a quantificação de usuários atingidos nas infrações ao art. 81, § 1º, e ao art. 85 do RGC, considerando que ambas têm por núcleo comum a cobrança indevida? Em caso afirmativo, explicitar essa razão.
+Quanto ao parâmetro de usuários totais (Ut), qual base é tecnicamente mais adequada à infração em exame: a base total do SMP ou a base de usuários pós-pagos da recorrente? Apresentar o impacto de cada alternativa no cálculo da multa.
+II – Quesitos relativos ao art. 85, caput, do RGC (vantagem auferida)
+Qual foi a base de dados utilizada para a apuração da vantagem auferida na decisão recorrida? Apresentar, comparativamente, o valor da vantagem auferida calculado a partir da “base saneada Vivo” (montante de cobranças indevidas contestadas de aproximadamente R$ 21 milhões, segundo a recorrente), indicando eventuais divergências entre esse montante e os valores constantes das planilhas saneadas.
+Dos valores computados como vantagem auferida, que parcela foi devolvida aos consumidores em até 30 (trinta) dias da contestação, nos termos do RGC? Qual o tratamento dado a esses valores no cálculo realizado? Apresentar cenário alternativo em que a vantagem, nessas hipóteses, seja computada apenas até a data do ressarcimento efetivo.
+Qual o tratamento conferido, no cálculo da vantagem auferida, aos valores associados a cenários de fraude de subscrição e de concessão por fidelização? Esclarecer se, e em que medida, tais valores configuram vantagem econômica apropriada pela prestadora, discriminando-os dos demais.
+O cálculo da vantagem auferida que serviu de piso à multa (art. 18, § 2º, do RASA) incorporou a dobra do art. 42, parágrafo único, do CDC, juros ou outros acréscimos, ou considerou apenas o valor simples das cobranças indevidas? Apresentar cenário alternativo baseado exclusivamente no valor simples das cobranças indevidas e manifestar-se sobre a compatibilidade de cada critério com a metodologia da Resolução Interna nº 219/2023 e com os precedentes invocados pela recorrente (Análises nº 2/2024/CL e nº 95/2025/DD).
+Qual o critério de atualização monetária adotado? É tecnicamente viável a sua modulação de forma distinta para valores devolvidos e não devolvidos — limitando-se a correção, para os primeiros, ao período efetivo de retenção e, para os segundos, à data de referência definida pelo RASA? Apresentar o impacto dessa modulação no cálculo.
+Quanto às demais infrações objeto do recurso, não vislumbro, neste momento, necessidade de reexame a ser realizado. 
+Ante o exposto, voto por converter o feito em diligência, pelo prazo de 30 (trinta) dias, para que a Superintendência de Controle de Obrigações responda aos quesitos formulados neste Voto.
+CONCLUSÃO
+Diante do exposto, proponho converter o feito em diligência, dirigida à Superintendência de Controle de Obrigações, pelo prazo de 30 (trinta) dias, para que responda, de forma fundamentada, aos quesitos formulados neste Voto.
+Após, os autos deverão ser restituídos a este Gabinete para prosseguimento da matéria.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 06/08/2026, às 17:16, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16028190 e o código CRC D0D3D299.
+ | 
+Referência: Processo nº 53500.002822/2019-79 | 
+SEI nº 16028190 |

@@ -1,0 +1,333 @@
+SEI/ANATEL - 15510595 - Análise
+Boletim de Serviço Eletrônico em 24/04/2026
+Análise nº 39/2026/EH
+Processo nº 53500.010731/2026-36
+Interessado: Viasat Brasil Participacoes Ltda., Marlink Participações e Serviços Ltda., Telefonica Global Solutions Brasil Ltda, Guardian Car do Brasil Comercio de Equipamentos Para Monitoramento Veicular Ltda., Satcom Direct Capacidade Satelital Ltda., INMARSAT BRASIL SATÉLITES LTDA., Intersatellite do Brasil Ltda., Orbcomm Comunicacoes Via Satelite Ltda, Sita Inc do Brasil Holdings Ltda, Trucks Provedora de Comunicacoes e Servicos de Satelite Ltda, Arinc Servicos de Comunicacao e Gestao da Informacao Ltda., ARYCOM TECNOLOGIA E COMUNICACOES LTDA, Honeywell Aeroespacial do Brasil Ltda, Honeywell do Brasil Ltda.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Conferência de Direitos de Exploração, no Brasil, do satélite Inmarsat-3 AOR West, para a posição orbital 54°O.
+EMENTA
+DIREITO ADMINISTRATIVO. CONFERÊNCIA DE DIREITO DE EXPLORAÇÃO DE SATÉLITE. SATÉLITE ESTRANGEIRO INMARSAT-3 AOR WEST. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+Solicitação de conferência de Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West, na posição orbital 54°O, até 31 de dezembro de 2028, para a Marlink SAS e a Inmarsat Solutions (Canada) Inc.
+O pedido abrange a operação em todo o território nacional, nas faixas de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz, no enlace de subida, e de 1525 a 1544 MHz e de 1545 a 1559 MHz, no enlace de descida, correspondentes à banda L.
+No curso da instrução, a área técnica analisou a documentação, examinou os aspectos técnicos, regulatórios e de coordenação, reconheceu representantes legais no Brasil e submeteu o pleito à Consulta Pública nº 12/2026, sem recebimento de contribuições.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se estão presentes os requisitos legais e regulamentares para a conferência do Direito de Exploração do satélite estrangeiro Inmarsat-3 AOR West; e (ii) saber se a expedição dos atos pode ser condicionada ao recolhimento do preço público devido.
+III. RAZÕES DE DECIDIR
+Compete ao Conselho Diretor decidir sobre a conferência de direito de exploração de satélite, nos termos da LGT e do RIA.
+A solicitação foi formalizada pelas operadoras interessadas e instruída com projeto técnico simplificado e demais documentos exigidos pelo art. 16 do RGSat e pelo Ato nº 9.526/2021.
+A ORLE atestou a conformidade documental do pedido e a regularidade fiscal das representantes legais perante a Fazenda Federal, o FGTS e a Anatel.
+As representantes legais indicadas são pessoas jurídicas constituídas sob as leis brasileiras, com sede e administração no País.
+As representantes legais apresentaram as declarações exigidas pela regulamentação quanto à aptidão para o desempenho da atividade, à observância da regulamentação aplicável e à inexistência de impedimentos para contratar com o Poder Público.
+A documentação expedida pela administração de origem demonstrou as condições autorizadas do sistema satelital no país de origem.
+A proprietária do satélite reconheceu formalmente a Marlink SAS e a Inmarsat Solutions (Canada) Inc. como operadoras legítimas do satélite.
+O prazo solicitado e as subfaixas de radiofrequências são compatíveis com as condições autorizadas no país de origem.
+A Consulta Pública nº 12/2026 foi realizada, na forma do Ato nº 4.430/2023, e não recebeu contribuições. A ausência de contribuições afastou a necessidade de imposição de restrições, limites ou condições técnicas adicionais.
+A ORER concluiu que as faixas, objeto do pleito, estão atribuídas e destinadas a serviços compatíveis com aplicações por satélite.
+A ORER concluiu que não há redes de satélites brasileiras notificadas, nem pedidos em análise na Agência, para as mesmas frequências.
+A análise técnica concluiu pelo atendimento dos requisitos dos arts. 10, 18 e 30 do RGSat e do Ato nº 9.523/2021.
+Não houve parecer desfavorável da UIT e a vida útil estimada do satélite é compatível com o prazo pretendido.
+O caso não se enquadra nas hipóteses de manifestação obrigatória da PFE-Anatel, previstas no art. 39, § 2º, do RIA e na Portaria nº 642/2013.
+O pleito configura nova conferência de Direito de Exploração, e não prorrogação, porque não houve manifestação de interesse em prorrogação no prazo regulamentar.
+O satélite deverá entrar em operação no prazo máximo de 2 anos, a contar da publicação do extrato do ato no Diário Oficial da União, nos termos do art. 24, § 1º, do RGSat.
+A expedição dos atos deve ficar condicionada ao recolhimento do valor integral do preço público ou, se houver parcelamento, ao pagamento da primeira parcela.
+IV. DISPOSITIVO E TESE
+Pedido deferido.
+Tese de julgamento: "1. É cabível a conferência do Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West à Marlink SAS e à Inmarsat Solutions (Canada) Inc., na posição orbital 54°O, até 31 de dezembro de 2028, para operação em todo o território nacional nas faixas de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz, no enlace de subida, e de 1525 a 1544 MHz e de 1545 a 1559 MHz, no enlace de descida. 2. A conferência do direito depende do atendimento dos requisitos documentais, técnicos, regulatórios e de coordenação previstos na regulamentação setorial. 3. A expedição dos atos de conferência fica condicionada ao recolhimento integral do preço público ou, em caso de parcelamento, ao pagamento da primeira parcela. 4. O satélite deverá entrar em operação no prazo máximo de 2 anos contado da publicação do extrato do ato no Diário Oficial da União. 5. A representante legal da Marlink SAS no Brasil é a Marlink Participações e Serviços Ltda. 6. As representantes legais da Inmarsat Solutions (Canada) Inc. no Brasil são Viasat Brasil Participações Ltda., Telefonica Global Solutions Brasil Ltda., Guardian Car do Brasil Comercio de Equipamentos para Monitoramento Veicular Ltda., Satcom Direct Capacidade Satelital Ltda., Inmarsat Brasil Satélites Ltda., Intersatellite do Brasil Ltda., Orbcomm Comunicacoes Via Satelite Ltda., Sita Inc do Brasil Holdings Ltda., Trucks Provedora de Comunicacoes e Servicos de Satelite Ltda., Arinc Servicos de Comunicacao e Gestao da Informacao Ltda., Arycom Tecnologia e Comunicações Ltda., Honeywell Aeroespacial do Brasil Ltda. e Honeywell do Brasil Ltda."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º, parágrafo único, art. 19, VIII, IX e XXXII, e art. 172; Resolução nº 612/2013, art. 39, § 1º e § 2º, e art. 133, VII e IX; Resolução nº 748/2021, art. 3º, III, art. 10, art. 16, art. 18, art. 22, art. 23, art. 24, § 1º, art. 30, II, III, § 4º e § 5º, art. 38 e art. 39, § 7º; Resolução nº 772/2025; Ato nº 9.523/2021; Ato nº 9.526/2021; Portaria nº 642/2013; Ato nº 4.430/2023.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT);
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA);
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites (RGSat);
+Resolução nº 772, de 16 de janeiro de 2025, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil (PDFF);
+Resolução nº 779, de 28 de abril de 2025, que aprova o Glossário aplicável ao Setor de Telecomunicações;
+Ato nº 9.523, de 27 de outubro de 2021, que aprova os requisitos técnicos e operacionais para sistemas de comunicação via satélite;
+Ato nº 9.526, de 27 de outubro de 2021, que lista a documentação a ser apresentada para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite; e
+Portaria nº 642, de 26 de julho de 2013 - disciplina os casos de manifestação obrigatória da PFE-Anatel.
+RELATÓRIO
+Trata-se de solicitação de Direitos de Exploração de satélite estrangeiro, até 31 de dezembro de 2028, a serem conferidos à Marlink SAS, empresa constituída sob as leis da França, e à Inmarsat Solutions (Canada) Inc., empresa constituída sob as leis do Canadá, visando à exploração, no Brasil, do satélite Inmarsat-3 AOR West, para a posição orbital 54°O, cobrindo todo o território brasileiro, nas faixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida), correspondentes à banda L.
+Histórico
+Em 10/02/2026, conforme Requerimento de Direito de Exploração de Satélite SEI nº 15168495, e anexos (SEI nº 15168496, nº 15168497, nº 15168498, nº 15168499, nº 15168500 e nº 15168502), constantes no Processo nº 53500.010731/2026-36, foi solicitada pelas operadoras Marlink SAS e Inmarsat Solutions (Canada) Inc. a conferência de Direitos de Exploração, no Brasil, do satélite Inmarsat-3 AOR West, pelo prazo até 31/12/2028, ocupando a posição orbital 54°O, tendo sido indicadas as subfaixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida, polarização circular à direita) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida). Na oportunidade, foram indicadas as representantes legais listadas na tabela abaixo para as operadoras em questão:
+ Operador
+ | 
+ Representante legal
+ | 
+ CNPJ
+ | 
+ Marlink SAS
+ | 
+ MARLINK PARTICIPACOES E SERVICOS LTDA.
+ | 
+ 15.539.169/0001-91
+ | 
+ Inmarsat Solutions (Canada) Inc
+ | 
+ VIASAT BRASIL PARTICIPACOES LTDA.
+ | 
+ 24.626.589/0001-04
+ | 
+ TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA.
+ | 
+ 14.314.117/0001-54
+ | 
+ GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA.
+ | 
+ 04.403.421/0001-14
+ | 
+ SATCOM DIRECT CAPACIDADE SATELITAL LTDA.
+ | 
+ 14.990.727/0001-78
+ | 
+ INMARSAT BRASIL SATELITES LTDA.
+ | 
+ 03.398.946/0001-46
+ | 
+ INTERSATELLITE DO BRASIL LTDA.
+ | 
+ 22.725.492/0001-15
+ | 
+ ORBCOMM COMUNICACOES VIA SATELITE LTDA.
+ | 
+ 11.520.057/0001-38
+ | 
+ SITA INC DO BRASIL HOLDINGS LTDA.
+ | 
+ 02.272.289/0001-23
+ | 
+ TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA.
+ | 
+ 27.651.180/0001-28
+ | 
+Após análise técnica e jurídica inicial, realizada por meio dos Check Lists SEI nº 15181707 e nº 15181718, ambos de 20/02/2026, a Gerência de Outorga e Licenciamento de Estações (ORLE) expediu o Ofício nº 1055/2026/ORLE/SOR-ANATEL, de 20/02/2026 (SEI nº 15200766), mediante o qual solicitou o atendimento das exigências documentais de representação.
+Em 20/02/2026, por meio do documento SEI nº 15209243, a empresa ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA., CNPJ nº 23.393.151/0001-52, manifestou o interesse em também ser reconhecida como representante legal da Inmarsat Solutions (Canada) Inc..
+A empresa ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA., CNPJ nº 27.422.548/0001-86, por meio do documento SEI nº 15233574, de 25/02/2026, e anexos (SEI nº 15233575, nº 15233576, nº 15233577, nº 15233578 e nº 15233579), também manifestou interesse em ser reconhecida como representante legal da Inmarsat Solutions (Canada) Inc..
+Em atendimento às exigências efetuadas, por meio do Ofício nº 1055/2026/ORLE/SOR-ANATEL (SEI nº 15200766), foram apresentadas subscrições da documentação anteriormente apresentada, devidamente assinadas por representantes legais das empresas MARLINK PARTICIPACOES E SERVICOS LTDA. (SEI nº 15247634 - 27 de fevereiro de 2026), TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA. (SEI nº 15247430 - 27 de fevereiro de 2026), GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA. (SEI nº 15219788 - 23 de fevereiro de 2026), SATCOM DIRECT CAPACIDADE SATELITAL LTDA. (SEI nº 15228227 - 24 de fevereiro de 2026), INMARSAT BRASIL SATELITES LTDA. (SEI nº 15243178 - 26 de fevereiro de 2026), INTERSATELLITE DO BRASIL LTDA. (SEI nº 15226907 - 24 de fevereiro de 2026), ORBCOMM COMUNICACOES VIA SATELITE LTDA. (SEI nº 15225704 - 24 de fevereiro de 2026), SITA INC DO BRASIL HOLDINGS LTDA. (SEI nº 15231534 - 25 de fevereiro de 2026) e TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA. (SEI nº 15229785 - 25 de fevereiro de 2026).
+Por meio do documento SEI nº 15255460, de 2/03/2026, a VIASAT BRASIL PARTICIPACOES LTDA. prestou esclarecimentos sobre as empresas responsáveis pelo recolhimento dos devidos Preços Públicos e Taxas do Fistel, além de também apresentar, por meio do documento SEI nº 15255461, de mesma data, o Instrumento de Compromisso e Indicação de todas as representantes legais atualizadas da Inmarsat Solutions (Canada) Inc., datado de 10/02/2026.
+Em 2/03/2026, por meio do Check List de análise jurídica (SEI nº 15256366), a ORLE verificou o cumprimento das exigências realizadas por intermédio do Ofício nº 1055/2026/ORLE/SOR-ANATEL (SEI nº 15200766), além de atestar a documentação apresentada pelas empresas ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA. e ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA., assim como verificou a manutenção da situação de regularidade fiscal perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel, de todas as empresas indicadas como representantes legais das operadoras satelitais até então.
+Por meio do Ofício nº 1355/2026/ORLE/SOR-ANATEL, de 2/03/2026 (SEI nº 15256373), a ORLE encaminhou o processo em questão à Gerência de Espectro, Órbita e Radiodifusão - ORER, solicitando análise do pleito quanto aos aspectos técnicos e de coordenação, em consonância com suas competências regimentais.
+Em 16/03/2026, por meio do documento SEI nº 15334165 e anexos (SEI nº 15334166, nº 15334167 e nº 15334168), a empresa HONEYWELL AEROESPACIAL DO BRASIL LTDA., CNPJ nº 63.166.369/0001-99, manifestou o interesse em também ser reconhecida como representante legal da Inmarsat Solutions (Canada) Inc.. Na mesma data, por meio do documento SEI nº 15334294 e anexos (SEI nº 15334295, nº 15334296 e nº 15334297), a empresa HONEYWELL DO BRASIL LTDA., CNPJ nº 61.338.844/0001-31, também manifestou o interesse em ser reconhecida como representante legal da Inmarsat Solutions (Canada) Inc..
+Por meio do Informe nº 367/2026/ORER/SOR, de 30 de março de 2026 (SEI nº 15382260), a ORER concluiu sua análise, tendo restituído os autos do processo à ORLE, por meio do Ofício nº 1557/2026/ORER/SOR-ANATEL, de mesma data (SEI nº 15414528).
+Em 2/04/2026, por meio do Check List de análise jurídica (SEI nº 15431549), a ORLE atestou a documentação apresentada pelas empresas HONEYWELL AEROESPACIAL DO BRASIL LTDA. e HONEYWELL DO BRASIL LTDA., e novamente verificou a manutenção da situação de regularidade fiscal perante a Fazenda Federal, o FGTS e a Anatel, de todas as empresas indicadas como representantes legais das operadoras satelitais até então, conforme indicado na tabela abaixo:
+ Operador
+ | 
+ Representante legal
+ | 
+ CNPJ
+ | 
+ Marlink SAS
+ | 
+ MARLINK PARTICIPACOES E SERVICOS LTDA.
+ | 
+ 15.539.169/0001-91
+ | 
+ Inmarsat Solutions (Canada) Inc
+ | 
+ VIASAT BRASIL PARTICIPACOES LTDA.
+ | 
+ 24.626.589/0001-04
+ | 
+ TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA.
+ | 
+ 14.314.117/0001-54
+ | 
+ GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA.
+ | 
+ 04.403.421/0001-14
+ | 
+ SATCOM DIRECT CAPACIDADE SATELITAL LTDA.
+ | 
+ 14.990.727/0001-78
+ | 
+ INMARSAT BRASIL SATELITES LTDA.
+ | 
+ 03.398.946/0001-46
+ | 
+ INTERSATELLITE DO BRASIL LTDA.
+ | 
+ 22.725.492/0001-15
+ | 
+ ORBCOMM COMUNICACOES VIA SATELITE LTDA.
+ | 
+ 11.520.057/0001-38
+ | 
+ SITA INC DO BRASIL HOLDINGS LTDA.
+ | 
+ 02.272.289/0001-23
+ | 
+ TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA.
+ | 
+ 27.651.180/0001-28
+ | 
+ ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA.
+ | 
+ 23.393.151/0001-52
+ | 
+ ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA.
+ | 
+ 27.422.548/0001-86
+ | 
+ HONEYWELL AEROESPACIAL DO BRASIL LTDA.
+ | 
+ 63.166.369/0001-99
+ | 
+ HONEYWELL DO BRASIL LTDA.
+ | 
+ 61.338.844/0001-31
+ | 
+Cumpre destacar que foram associados ao satélite estrangeiro Inmarsat-3 AOR West Direitos de Exploração, no Brasil, ao longo dos últimos anos, conforme os Atos relacionados abaixo:
+Ato nº 4.197, de 23 de julho de 2012, com vigência de 26 de julho de 2012 a 26 de julho de 2016;
+Ato nº 2.613, de 26 de julho de 2016 (SEI nº 0684957), com vigência de 27 de julho de 2016 a 26 de julho de 2022;
+Atos nº 11.994 (SEI nº 9001879), nº 11.995 (SEI nº 9002025) e nº 11.996 (SEI nº 9002193), todos de 22 de agosto de 2022, com vigência de 27 de julho de 2022 a 31 de dezembro de 2023; e
+Atos nº 17.707, de 26 de dezembro de 2023 (SEI nº 11314409), e nº 17.822, de 29 de dezembro de 2023 (SEI nº 11327752), ambos com vigência de 1º de janeiro de 2024 a 31 de dezembro de 2025.
+Conforme informação constante no âmbito do Processo nº 53500.063488/2023-14, no qual foram analisados e conferidos os últimos Direitos de Exploração vigentes, associados ao satélite estrangeiro Inmarsat-3 AOR West, detidos pela Marlink SAS (Ato nº 17.707/2023) e pela Inmarsat Solutions (Canada) Inc. (Ato nº 17.822/2023), havia expectativa de fim da vida útil do artefato satelital no fim de 2025. No entanto, conforme o item 5 do Requerimento de Direito de Exploração de Satélite SEI nº 15168495, no âmbito do Processo nº 53500.010731/2026-36, há informação de estimativa de vida útil do satélite até 31 de dezembro de 2028, razão pela qual foram solicitados novos Direitos de Exploração para o satélite Inmarsat-3 AOR West no Brasil.
+A Matéria para Apreciação do Conselho Diretor nº 279/2026 (SEI nº 15459990) foi encaminhada à Secretaria do Conselho Diretor, por meio do Despacho Ordinatório SEI nº 15469398, e sorteada para minha relatoria em 13/04/2026 (SEI nº 15476202).
+É o relatório.
+fundamentação
+Cuida-se de solicitação de Direitos de Exploração de satélite estrangeiro, até 31 de dezembro de 2028, a serem conferidos à Marlink SAS, empresa constituída sob as leis da França, e à Inmarsat Solutions (Canada) Inc., empresa constituída sob as leis do Canadá, visando à exploração, no Brasil, do satélite Inmarsat-3 AOR West, para a posição orbital 54°O, cobrindo todo o território brasileiro, nas faixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida), correspondentes à banda L.
+DA COMPETÊNCIA DO CONSELHO DIRETOR
+O inciso III do art. 3º do RGSat, aprovado pela Resolução nº 748, de 22 de outubro de 2021, assim define o direito de exploração de satélite:
+Regulamento Geral de Exploração de Satélites - RGSat, aprovado pela Resolução nº 748, de 22 de outubro de 2021)
+"Art. 3º Para os fins deste Regulamento, além das definições constantes na legislação e regulamentação, aplicam-se as seguintes definições:
+(...)
+III - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;" (grifou-se)
+A competência da Anatel para regular o tema está expressa no parágrafo único, do art. 1º e nos incisos VIII e IX, do art. 19 da Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT, abaixo transcritos:
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências.
+(...)
+Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente:
+(...)
+VIII - administrar o espectro de radiofreqüências e o uso de órbitas, expedindo as respectivas normas;
+(...)
+IX - editar atos de outorga e extinção do direito de uso de radiofreqüência e de órbita, fiscalizando e aplicando sanções;
+(...)
+XXXII - reavaliar, periodicamente, a regulamentação com vistas à promoção da competição e à adequação à evolução tecnológica e de mercado." (destacou-se)
+O art. 172 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT, prevê a possibilidade de prorrogação de direitos de exploração de satélites brasileiros:
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações
+"Art. 172. O direito de exploração de satélite brasileiro para transporte de sinais de telecomunicações assegura a ocupação da órbita e o uso das radiofrequências destinadas ao controle e monitoração do satélite e à telecomunicação via satélite, por prazo de até 15 (quinze) anos, podendo esse prazo ser prorrogado, nos termos da regulamentação, desde que cumpridas as obrigações já assumidas."
+De acordo com o Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir sobre direito de exploração de satélites e uso de radiofrequências associadas decorrentes de procedimentos licitatórios:
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite;" 
+Dessa forma, cabe a este Colegiado deliberar sobre a matéria ora apresentada.
+Dos Requisitos Regulamentares
+De acordo com o art. 3º, inc. III, do RGSat, o Direito de Exploração de satélite é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o provimento de Capacidade Satelital, por satélite brasileiro ou estrangeiro, sobre todo o território brasileiro.
+O art. 16 do RGSat estabelece os requisitos que devem ser atendidos para a obtenção, alteração ou prorrogação do direito de exploração de satélite brasileiro ou estrangeiro:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+Em atendimento ao disposto no §1º, do artigo 16 do RGSat, foi expedido o Ato nº 9.526, de 27 de outubro de 2021 (SEI nº 7596501), que definiu a documentação a ser apresentada para atendimento das condições previstas nos incisos do mencionado artigo:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º Concomitantemente à análise da documentação citada nos incisos anteriores, a área técnica responsável verificará a regularidade fiscal da pretendente perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel.
+§ 2º Não sendo possível realizar a consulta aos bancos de dados referidos no § 1º deste artigo, ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões.
+Art. 2º Sem prejuízo da documentação a ser encaminhada, relacionada no Art. 1º, deverão ser cumpridas as demais condições estabelecidas no Regulamento Geral de Exploração de Satélites.
+Os parágrafos 4º e 5º do artigo 30 do RGSat estabelecem que a Agência adicionalmente aplicará as condições de autorização do país de origem para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro no Brasil:
+Art. 30. Para obtenção de direito de exploração de satélite estrangeiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+(...)
+§ 4º Para a determinação das condições regulatórias a serem estabelecidas para conferência do Direito de Exploração de Satélite estrangeiro, a Agência aplicará adicionalmente as condições da autorização do país de origem, exceto em casos excepcionais, a critério da Agência.
+§ 5º Alterações nas condições da autorização do país de origem posteriores à conferência do Direito de Exploração de Satélite Estrangeiro ensejarão nova análise técnica e possíveis alterações nas condições estabelecidas no Brasil.
+DA DISPENSA DE MANIFESTAÇÃO DA PFE/ANATEL
+As hipóteses de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel estão estabelecidas no RIA, o qual também atribui ao Procurador-Geral a responsabilidade de indicar os casos nos quais a Procuradoria se manifestará de ofício:
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares."
+Verifica-se que as solicitações associadas ao direito de exploração de satélite não se enquadram entre as hipóteses de remessa obrigatória à PFE-Anatel previstas no § 2º do art. 39 do RIA.
+Outrossim, a Portaria nº 642, de 26 de julho de 2013, e suas alterações, em conformidade com o disposto no §1º do art. 39 do RIA, disciplina os casos de manifestação obrigatória da PFE-Anatel. A mencionada Portaria não prevê, dentre as hipóteses de manifestação obrigatória, as solicitações relacionadas ao direito de exploração de satélite.
+Adicionalmente, a Superintendência de Outorga e Recursos à Prestação - SOR consignou que não há dúvidas quanto à matéria jurídica, o que dispensaria a remessa dos autos à Procuradoria. Dessa forma, o Processo foi encaminhado diretamente para análise do Conselho Diretor:
+Informe nº 12077/2025/ORLE/SOR (SEI nº(14844482))
+"3.71. Verifica-se que as solicitações associadas a direito de exploração de satélite não se encontram entre as hipóteses de remessa obrigatória à PFE-Anatel.
+3.72. Além disso, esta Superintendência entende não haver dúvida quanto à matéria jurídica a ensejar a remessa dos autos à Procuradoria e, dessa forma, sugerimos a remessa dos Autos diretamente ao Conselho Diretor."
+Considerando que não há dúvida jurídica e que o Processo em análise não se enquadra nos casos de manifestação obrigatória da PFE-Anatel, conforme estabelecido no art. 39, §2º, do Regimento Interno da Anatel, e na Portaria nº 642/2013, e suas alterações, entende-se ser desnecessária a oitiva do Órgão Jurídico, no presente caso.
+Passa-se, portanto, à análise da solicitação, com base nas avaliações consolidadas pela Área Técnica no Informe nº 3463/2026/ORLE/SOR (15432751), o qual procedeu ao exame minucioso dos aspectos inerentes às exigências normativa.
+DO MÉRITO
+Em 10/02/2026, Marlink SAS (França) e Inmarsat Solutions (Canadá) solicitaram, no Brasil, os Direitos de Exploração do satélite Inmarsat-3 AOR West (posição 54°O) até 31/12/2028, indicando as subfaixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida).
+Em atendimento ao que estabelece a regulamentação, foi apresentado o projeto técnico simplificado do sistema de comunicação via satélite, constante do Requerimento de Direito de Exploração de Satélite (SEI nº 15168495). Após análise da documentação, a ORLE atestou a conformidade da documentação com a regulamentação, especialmente com o art. 16 e incisos I e III do art. 30 do RGSat e com o Ato nº 9526/2021. Os Check Lists de análise técnica (SEI nº 15181707) e jurídica (SEI nº 15431549) demonstram que a solicitação está em conformidade com a legislação vigente.
+Para o satélite Inmarsat-3 AOR West, após o atesto de regularidade de novos pedidos de representantes, foi definido o rol de representantes legais no Brasil, conforme listado na tabela do item 4.12 (empresas constituídas segundo a lei brasileira, com sede e administração no País, comprovadas por atos constitutivos e CNPJ). As operadoras Marlink SAS e Inmarsat Solutions (Canada) Inc. comprometeram-se a manter essa informação atualizada e a prover capacidade do segmento espacial somente por meio dessas representantes. As representantes legais apresentaram as declarações necessárias, atestando: (i) não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea nem punida nos últimos 2 anos com caducidade de concessão, permissão ou autorização de telecomunicações ou de direito de uso de radiofrequências; (ii) possuir aptidão para o desempenho da atividade e pessoal técnico adequado; (iii) observar a regulamentação aplicável e ter ciência das condições de outorga.
+Dessa forma, frisa-se, as representantes se comprometeram a observar as condições de operação da regulamentação brasileira, do Regulamento de Radiocomunicações da UIT e demais normas aplicáveis, durante o prazo de exploração do satélite. Verificou-se, ainda, que as representantes legais indicadas encontram-se em situação de regularidade fiscal perante a Fazenda Federal, o FGTS e a Anatel, conforme indicado no Check List de análise jurídica (SEI nº 15431549), de 2 de abril de 2026.
+Para a conferência do Direito de Exploração de satélite estrangeiro, a Agência avalia os critérios em que estes sistemas foram autorizados no país de origem. No presente caso, foi apresentada a documentação SEI nº 15168496, expedida pelo Office of Communications (Ofcom - Reino Unido), com tradução juramentada, demonstrando as condições autorizadas do sistema satelital no país de origem, sendo que as autorizações da Ofcom não possuem prazo de validade. Ademais, a Inmarsat Global Limited, proprietária do satélite Inmarsat-3 AOR West, reconhece formalmente a Marlink SAS e a Inmarsat Solutions (Canada) Inc. como legítimas operadoras do satélite (Land Earth Station Operators – LESOs), conforme documento SEI nº 15168497. Diante desse contexto, identifica-se que o prazo solicitado para o Direito de Exploração no Brasil e as subfaixas de radiofrequências associadas estão condizentes com o autorizado pela administração de origem.
+Nos termos do Ato nº 4.430, de 19 de abril de 2023, a Anatel estabeleceu a obrigatoriedade de realização de Consulta Pública para a Conferência de Direito de Exploração de Satélite, conforme disposto no item 3 do anexo ao referido Ato. Referida exigência aplica-se, especificamente, à conferência ou adição de faixas de frequências a direito de exploração de satélite correspondente a sistemas de grande porte de satélites não geoestacionários (aqueles compostos por mais de mil satélites) ou a sistemas de satélites geoestacionários ou não geoestacionários associados ao serviço móvel por satélite, desde que as estações terrenas não façam uso de antenas direcionais nem tenham capacidade de manter o apontamento para o satélite correspondente. A consulta pública visa subsidiar as decisões da Agência quanto ao estabelecimento de restrições, limites ou condições, com o propósito de propiciar ampla e justa competição e o acesso por diferentes agentes econômicos ao mercado, tornando o procedimento não apenas recomendável, mas juridicamente vinculante nas hipóteses delineadas pelo regulamento.
+Com base no descritivo das aplicações do sistema, item 5.3 do Requerimento de Direito de Exploração de Satélite SEI nº 15168495, e a aplicabilidade do Ato nº 4.430/2023, a Consulta Pública corretamente indicou a associação do satélite INMARSAT-4 F1 (I4F1) ao serviço móvel por satélite (MSS), nas faixas de frequências da banda L, utilizando estações terrenas com antenas não direcionais.
+Concluído o prazo para comentários à Consulta Pública nº 12/2026, de 10 (dez) dias contados da data de publicação no Diário Oficial da União, ocorrida em 12 de março de 2026, atestou-se que não foram recebidas contribuições em decorrência do referido procedimento. Diante desse cenário, no âmbito do Informe nº 375/2026/ORER/SOR, de 30 de março de 2026 (SEI nº 15385333), a ORER concluiu, em conformidade com a análise ali exposta, que não há necessidade de se estabelecer restrições, limites ou condições técnicas adicionais para a conferência do Direito de Exploração ao satélite INMARSAT‑3 AOR WEST, na posição orbital 54ºO. Essa conclusão alinha-se logicamente ao resultado da Consulta Pública, uma vez que a ausência de contribuições dispensou a imposição de quaisquer medidas suplementares.
+No exame dos aspectos técnico‑regulatórios, promovidos pela ORER por meio do Informe nº 367/2026/ORER/SOR (SEI nº 15382260), verifica-se que as faixas de frequências objeto do pleito encontram‑se devidamente atribuídas e destinadas a serviços compatíveis com aplicações por satélite, nos termos da Resolução nº 772/2025. Quanto aos aspectos de coordenação, observou‑se que não há redes de satélites brasileiras notificadas que abarquem tais faixas, tampouco pedidos de conferência de Direito de Exploração de Satélite em análise na Agência para as mesmas frequências. Ademais, considerando que os satélites INMARSAT‑4 F1 e INMARSAT‑4 F3, operados por entidades do mesmo grupo econômico, já estão autorizados, não se vislumbrou necessidade de acordos adicionais de coordenação, tendo a solicitante cumprido os requisitos dos arts. 10 e 18 do RGSat e do Ato nº 9.523/2021.
+Diante da análise realizada, conclui-se não haver óbices ao deferimento do pleito, destacando que: (i) a Consulta Pública realizada não resultou em restrições, (ii) a rede de satélites não possui parecer desfavorável da UIT, (iii) a vida útil estimada do satélite é compatível com o prazo pretendido e (iv) as faixas de frequências estão adequadamente atribuídas. Assim, concordo com a manifestação favorável da ORER à conferência do Direito de Exploração de Satélite às empresas Inmarsat Solutions (Canada) Inc. e Marlink SAS, para operação do satélite INMARSAT‑3 AOR WEST na posição orbital 54°O, nas faixas de frequências especificadas, conforme expressamente consignado na conclusão do item 4, do Informe nº 367/2026/ORER/SOR: 
+...
+4. CONCLUSÃO
+4.1. Pelo exposto, em conformidade com a análise técnica realizada, esta Gerência se manifesta favorável à conferência do Direito de Exploração de Satélite às empresas Inmarsat Solutions (Canada) Inc. e Marlink SAS, para operação do satélite INMARSAT-3 AOR WEST, na posição orbital 54°O, para provimento de capacidade satelital nas faixas de frequências 1.626,5 a 1.645,5 MHz e 1.646,5 a 1.660,5 MHz (enlaces de subida) e 1.525 a 1.544 MHz e 1.545 a 1.559 MHz (enlaces de descida).
+Quanto ao prazo para entrada em operação, com base no disposto no art. 24 do RGSat, especialmente no §1º, que estabelece o prazo máximo de 2 (dois) anos para a entrada em operação de satélites geoestacionários estrangeiros, contado da data de publicação do extrato do Ato de conferência do Direito de Exploração no DOU, conclui-se que o satélite Inmarsat‑3 AOR West deverá observar rigorosamente esse interregno. Em consonância com tal previsão regulatória, foi proposta corretamente a inclusão de dispositivo específico nas minutas de Ato SEI nº 15459664 e nº 15459957, determinando que o referido satélite entre em operação no prazo máximo de 2 (dois) anos a contar da publicação do extrato do respectivo Ato no DOU, assegurando, assim, o cumprimento das condições temporais aplicáveis à conferência do Direito de Exploração.
+Por fim, nos termos do art. 23 do RGSat, o Direito de Exploração de Satélite é conferido à operadora a título oneroso, exigindo-se, para o satélite estrangeiro Inmarsat‑3 AOR West, o atendimento ao disposto no inciso II do art. 30 do mesmo regulamento, que condiciona a obtenção do direito ao pagamento do valor fixado pela Agência. Conforme o art. 38 do RGSat, o preço público devido é de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), aplicando‑se, no caso de conferência a mais de uma entidade, o pagamento integral por cada uma delas, na forma do §4º do referido artigo. Assim, as empresas Inmarsat Solutions (Canada) Inc. e Marlink SAS devem efetuar o recolhimento do respectivo valor, por meio de suas representantes legais indicadas no Check List SEI nº 15431549, ficando a expedição dos Atos de conferência condicionada à efetivação do pagamento integral do preço público ou, quando parcelado, do valor da primeira parcela, conforme estabelece o §7º do art. 39 do RGSat.
+De todo o exposto, concordo com a sugestão da Área Técnica em conferir à Marlink SAS, empresa constituída sob as leis da França, e à Inmarsat Solutions (Canada) Inc., empresa constituída sob as leis do Canadá, o Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West, ocupando a posição orbital 54°O, até 31 de dezembro de 2028, sem caráter de exclusividade e para operação em todo o território nacional, nas seguintes subfaixas de radiofrequências:
+ Frequências de subida
+ | 
+ Frequências de descida
+ | 
+ Limite inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Limite inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ 1626,5
+ | 
+ 1645,5
+ | 
+ Circ. à direita
+ | 
+ 1525,0
+ | 
+ 1544,0
+ | 
+ Circ. à direita
+ | 
+ 1646,5
+ | 
+ 1660,5
+ | 
+ Circ. à direita
+ | 
+ 1545,0
+ | 
+ 1559,0
+ | 
+ Circ. à direita
+ | 
+Das minutas dos Atos
+O Direito de Exploração de Satélites no Brasil, nos termos do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021, será conferido pelo prazo de até 15 anos (art. 24), podendo ser prorrogado pelo prazo de vida útil do satélite, por período de até 15 anos, desde que a exploradora protocole interesse no mínimo 2 (dois) anos antes do vencimento do prazo original. No presente caso, embora o satélite já estivesse em operação não houve a manifestação de interesse em prorrogação no tempo regulamentar. Portanto, entendo acertada a conferência de novo Direito de Exploração e não prorrogação. 
+No que concerne aos requisitos do art. 22 do RGSat, entendo que as minutas SEI nº 15459664 e SEI nº 15459957 os atendem integralmente, não havendo, portanto, necessidade de reforma de seu conteúdo.
+V. DA RELAÇÃO COM OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL
+Importa destacar, ainda, a correlação entre o desenvolvimento do setor de telecomunicações, em especial do mercado de satélites, e os 17 Objetivos de Desenvolvimento Sustentável da Agenda 2030 da Organização das Nações Unidas - ONU.
+Fonte: https://brasil.un.org/pt-br/sdgs
+As telecomunicações desempenham um papel fundamental no avanço dos Objetivos de Desenvolvimento Sustentável (ODS) ao fornecer a infraestrutura essencial para a conectividade e a disseminação de informações. Elas facilitam o acesso à educação (ODS 4) e saúde (ODS 3) através de plataformas de ensino à distância e telemedicina, promovem a inclusão digital e a igualdade de oportunidades (ODS 10), e suportam a inovação e a indústria (ODS 9). Além disso, podem contribuir para a melhoria da eficiência da gestão urbana e rural (ODS 11), permitindo ainda o monitoramento ambiental (ODS 13, 14 e 15), e dando suporte a parcerias para o desenvolvimento sustentável (ODS 17), criando uma base tecnológica que impulsiona o progresso em todos os ODS.
+De forma mais específica, entende-se haver maior correlação do uso e da expansão das comunicações via satélite com o Objetivo 9 - Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação. Os sistemas de comunicação via satélite podem desempenhar um importante papel no avanço do ODS 9 no Brasil, fornecendo ferramentas avançadas para monitoramento, conectividade e inclusão digital, além da inovação e desenvolvimento tecnológico. Estes sistemas possibilitam a implementação de uma infraestrutura mais resiliente e fomentam a inovação, contribuindo para um desenvolvimento equilibrado e sustentável no país. A infraestrutura de comunicação via satélite é essencial para fornecer acesso à internet em áreas remotas e rurais do Brasil, promovendo a inclusão digital e a conectividade necessárias para o desenvolvimento econômico e social.
+A utilização racional e sustentável dos sistemas de comunicação via satélite fomentam o desenvolvimento de vários setores do país, estando diretamente ligada às metas 9.1, que tem por objetivo "Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional, transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos" e 9.c, que visa "Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020".
+CONCLUSÃO
+Pelo exposto, voto por conferir o Direito de Exploração, no Brasil, do satélite estrangeiro Inmarsat-3 AOR West, à Marlink SAS, empresa constituída sob as leis da França, e à Inmarsat Solutions (Canada) Inc., empresa constituída sob as leis do Canadá, na posição 54°O e faixas de radiofrequências de 1626,5 a 1645,5 MHz e de 1646,5 a 1660,5 MHz (enlace de subida) e de 1525 a 1544 MHz e de 1545 a 1559 MHz (enlace de descida), correspondentes à banda L, até 31 de dezembro de 2028, nos moldes das minutas de Ato SEI nº 15459664 e nº 15459957, respectivamente, cujas expedições encontram-se condicionadas à efetivação do recolhimento do valor integral do preço público, ou, quando parcelado, do valor da primeira parcela.
+Declarar que a representante legal da Marlink SAS no Brasil é a MARLINK PARTICIPAÇÕES E SERVIÇOS LTDA., CNPJ nº 15.539.169/0001-91, empresa constituídas sob as leis brasileiras, com sede e administração no País e que as representantes legais da Inmarsat Solutions (Canada) Inc. no Brasil são as empresas: VIASAT BRASIL PARTICIPACOES LTDA., CNPJ nº 24.626.589/0001-04; TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA., CNPJ nº 14.314.117/0001-54; GUARDIAN CAR DO BRASIL COMERCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA., CNPJ nº 04.403.421/0001-14; SATCOM DIRECT CAPACIDADE SATELITAL LTDA., CNPJ nº 14.990.727/0001-78; INMARSAT BRASIL SATELITES LTDA., CNPJ nº 03.398.946/0001-46; INTERSATELLITE DO BRASIL LTDA., CNPJ nº 22.725.492/0001-15; ORBCOMM COMUNICACOES VIA SATELITE LTDA., CNPJ nº 11.520.057/0001-38; SITA INC DO BRASIL HOLDINGS LTDA., CNPJ nº 02.272.289/0001-23; TRUCKS PROVEDORA DE COMUNICACOES E SERVICOS DE SATELITE LTDA., CNPJ nº 27.651.180/0001-28; ARINC SERVICOS DE COMUNICACAO E GESTAO DA INFORMACAO LTDA., CNPJ nº 23.393.151/0001-52; ARYCOM TECNOLOGIA E COMUNICAÇÕES LTDA., CNPJ nº 27.422.548/0001-86; HONEYWELL AEROESPACIAL DO BRASIL LTDA., CNPJ nº 63.166.369/0001-99; e HONEYWELL DO BRASIL LTDA., CNPJ nº 61.338.844/0001-31; todas constituídas sob as leis brasileiras, com sede e administração no País.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 23/04/2026, às 15:44, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15510595 e o código CRC 3E9B6100.
+ | 
+Referência: Processo nº 53500.010731/2026-36 | 
+SEI nº 15510595 |

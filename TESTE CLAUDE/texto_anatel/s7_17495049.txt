@@ -1,0 +1,651 @@
+SEI/ANATEL - 15643580 - Análise
+Boletim de Serviço Eletrônico em 03/07/2026
+Análise nº 47/2026/NP
+Processo nº 53500.009146/2023-41
+Interessado: Vipway Telecomunicacoes Ltda
+CONSELHEIRO 
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto contra decisão que aplicou multa por descumprimento de dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, e do Código de Defesa do Consumidor (CDC).
+EMENTA
+DIREITO ADMINISTRATIVO SANCIONADOR E DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR. PUBLICIDADE ENGANOSA POR OMISSÃO. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto por Vipway Telecomunicações Ltda. contra decisão que aplicou multa de R$ 1.604.863,74 (um milhão, seiscentos e quatro mil oitocentos e sessenta e três reais e setenta e quatro centavos) por descumprimento dos arts. 3º, II, IV e XIII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações de 2014 e do art. 37, § 1º, do Código de Defesa do Consumidor, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+ A fiscalização apurou, no contexto do programa televisivo Fangames, veiculação de mensagens que direcionavam o consumidor ao uso do Código de Seleção de Prestadora (CSP) 75, de titularidade da Recorrente, e omissão de informação adequada sobre o preço total cobrado nas chamadas realizadas com outros CSPs.
+ A Superintendência de Controle de Obrigações (SCO) aplicou a sanção. Em grau recursal, a Recorrente alegou ausência de publicidade própria, inexistência de violação à livre escolha do CSP, suficiência das informações tarifárias e erro na dosimetria da multa.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se houve violação ao direito de livre escolha da prestadora, previsto no art. 3º, inciso II, do RGC/2014; (ii) saber se a conduta da Recorrente configurou induzimento do consumidor à aquisição de serviço que não era de seu interesse, nos termos do art. 3º, inciso XIII, do RGC/2014; e (iii) saber se houve falha no dever de informação e publicidade enganosa por omissão quanto ao preço do serviço, com repercussão na tipificação e na dosimetria da sanção.
+III. RAZÕES DE DECIDIR
+ O Recurso é admissível. Interposição tempestiva. A Recorrente tem interesse recursal e está regularmente representada.
+ Não ficou configurada infração ao art. 3º, inciso II, do RGC/2014. Os autos demonstram que era tecnicamente possível completar chamadas com CSPs diversos do 75. Não houve impedimento efetivo à escolha da prestadora.
+ Ficou configurada infração ao art. 3º, inciso XIII, do RGC/2014. As mensagens veiculadas no programa e as cláusulas contratuais firmadas com a produtora induziam o consumidor ao uso do CSP 75 e criavam a falsa percepção de exclusividade para participação no programa.
+ Ficou configurada infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC. A informação exibida no rodapé da tela era insuficiente e omitia o valor cobrado quando a ligação era realizada com CSP diverso do 75.
+ A omissão informacional induzia o consumidor a erro quanto ao preço total do serviço. As chamadas com outros CSPs geravam cobrança adicional de R$ 5,59 (cinco reais e cinquenta e nove centavos) em favor da Recorrente, sem informação clara ao usuário.
+ A Recorrente integra a cadeia de consumo e aufere proveito econômico direto com a cobrança. Por isso, responde pela comunicação omissiva que viabilizou a cobrança, ainda que o programa tenha sido produzido por terceiro.
+ As condutas de falta de informação adequada e publicidade enganosa por omissão constituem, no caso, conduta única. O enquadramento correto é no art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, com sancionamento único.
+ A metodologia de cálculo da multa baseada na Resolução Interna Anatel nº 219/2023 foi corretamente adotada. Não cabe sua revisão.
+ Para a infração ao art. 3º, inciso XIII, do RGC/2014, mantêm-se os fatores Ut e Ua em 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) chamadas, por forte probabilidade de que todas tenham decorrido do induzimento ao uso do CSP 75.
+ Para a infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, o fator Ut deve ser ajustado para 59.207 (cinquenta e nove mil duzentos e sete) e o fator Ua para 32 (trinta e dois), com reclassificação da infração como pontual e redução do fator tempo de 0,30 para 0,15.
+ A vantagem auferida calculada para a conduta antes enquadrada no art. 3º, inciso II, do RGC/2014 deve ser integralmente aproveitada para a infração ao art. 3º, inciso XIII, do RGC/2014, pois o suporte fático é o mesmo e houve apenas reenquadramento jurídico da conduta.
+ Não houve nulidade nem reformatio in pejus. No processo administrativo sancionador, a defesa incide sobre os fatos imputados, e não sobre a capitulação jurídica, desde que preservados o contraditório e a ampla defesa.
+ Não cabe aplicação de atenuante. Não ficou comprovada cessação espontânea da infração nem reparação total do dano antes da atuação da Agência.
+IV. DISPOSITIVO E TESE
+ Recurso Administrativo parcialmente provido.
+ A decisão recorrida é revista de ofício para afastar a infração ao art. 3º, inciso II, do RGC/2014, manter a infração ao art. 3º, inciso XIII, do RGC/2014, manter a infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, ajustar os parâmetros de dosimetria e fixar a multa em R$ 1.601.583,90 (um milhão, seiscentos e um mil quinhentos e oitenta e três reais e noventa centavos).
+Tese de julgamento: "1. Não há infração ao art. 3º, inciso II, do RGC/2014 quando o consumidor pode utilizar CSP diverso e completar a chamada, ainda que haja direcionamento comercial ao uso de CSP específico. 2. Configura infração ao art. 3º, inciso XIII, do RGC/2014 a indução do consumidor ao uso de determinado CSP mediante mensagens ostensivas e arranjo contratual que criem falsa percepção de exclusividade. 3. A omissão de informação sobre o preço efetivamente cobrado nas chamadas realizadas com outros CSPs caracteriza infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC. 4. O reenquadramento jurídico da conduta, sem alteração do suporte fático submetido ao contraditório, não implica nulidade nem reformatio in pejus. 5. É cabível a retificação da multa para R$ 1.601.583,90 (um milhão, seiscentos e um mil quinhentos e oitenta e três reais e noventa centavos) em razão do afastamento de uma infração e dos ajustes dos fatores de dosimetria."
+Dispositivos relevantes citados: Lei nº 8.078/1990, arts. 3º e 37, § 1º; Lei nº 9.472/1997, arts. 6º, 104 e 129; Lei nº 9.784/1999, art. 64, parágrafo único; Resolução nº 632/2014, art. 3º, II, IV e XIII; Resolução nº 589/2012, arts. 9º, 10, 18, § 2º, 19 e 20; Resolução nº 612/2013, arts. 116 e 123; Resolução Interna Anatel nº 219/2023.
+Jurisprudência relevante citada: STJ, Súmula nº 672; Conselho Diretor da Anatel, Análise nº 200/2017/SEI/IF; Conselho Diretor da Anatel, Análise nº 13/2018/SEI/EC.
+REFERÊNCIAS
+Lei nº 8.078, de 11 de setembro de 1990 - Código de Defesa do Consumidor (CDC).
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+Regulamento de Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+Resolução Interna Anatel nº 219, de 15 de junho de 2023 (Metodologia de cálculo do valor-base das sanções de multa relativa a descumprimentos a direitos dos usuários - MDGU).
+RELATÓRIO
+Cuida-se de Recurso Administrativo interposto pela Vipway Telecomunicações Ltda., CNPJ nº 06.128.103/0001-18, prestadora do Serviço Telefônico Fixo Comutado (STFC), em face do Despacho Decisório nº 182/2023/CODI/SCO (SEI nº 10713846), de 21 de agosto de 2023, que aplicou penalidade de multa no valor total de R$ 1.604.863,74 (um milhão, seiscentos e quatro mil, oitocentos e sessenta e três reais e setenta e quatro centavos), pelos descumprimentos aos arts. 3º, incisos II, IV e XIII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, e ao art. 37, § 1º, do Código de Defesa do Consumidor (CDC), sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+No intuito de verificar a procedência da denúncia apresentada pela Telefônica Brasil S.A. acerca de suposta prática ilícita na prestação do STFC pela Recorrente, a Gerência de Controle de Obrigações Gerais (COGE) solicitou fiscalização que originou o Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243), o Processo de Fiscalização nº 53504.007024/2020-37, o Processo de Resolução de Conflitos nº 53500.026605/2019-74 e o Procedimento de Acompanhamento de Obrigações nº 53500.023530/2022-75.
+Constatados indícios de irregularidades, inaugurou-se o presente feito via Despacho Ordinatório de Instauração nº 2/2023/CODI/SCO, de 07 de fevereiro de 2023 (SEI nº 9780593), para apurar as condutas abaixo:
+ Item
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ 1
+ | 
+ Não facultar ao consumidor a livre escolha do código de seleção de prestadora (CSP).
+ | 
+ Art. 3º, II, do anexo à Resolução nº 632/2014.
+ | 
+ 2
+ | 
+ Ausência de informação adequada sobre as condições de contratação do serviço.
+ | 
+ Art. 3º, IV, do anexo à Resolução nº 632/2014.
+ | 
+ 3
+ | 
+ Induzir o consumidor a adquirir serviço que não é do seu interesse.
+ | 
+ Art. 3º, XIII, do anexo à Resolução nº 632/2014.
+ | 
+ 4
+ | 
+ Praticar publicidade enganosa por omissão, capaz de induzir o consumidor a erro a respeito do preço total a ser cobrado.
+ | 
+ Art. 37, § 1º, da Lei nº 8.078/1990.
+ | 
+Notificada aos 22 de fevereiro de 2023 (SEI nº 9781091 e 9857796), a Prestadora apresentou sua defesa administrativa (SEI nº 10139646) em 24 de abril de 2023.
+Após notificação para apresentação de Alegações Finais (SEI nº 10309136), em 07 de junho de 2023 a Operadora protocolizou tal peça (SEI nº 10362356).
+Aos 21 de agosto de 2023, foi expedido o Informe nº 328/2023/CODI/SCO (SEI nº 10644431) por meio do qual a Área Técnica analisou os autos e concluiu pela imposição de multa no valor de R$ 1.604.863,74 (um milhão, seiscentos e quatro mil oitocentos e sessenta e três reais e setenta e quatro centavos), sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+Nessa mesma data o Superintendente de Controle de Obrigações (SCO) acatou os termos do Informe supra e proferiu o Despacho Decisório nº 182/2023/SCO (SEI nº 10713846), aplicando a penalidade de multa sugerida.
+Regularmente notificada (SEI nº 10713898 e 10836386), a Operadora interpôs Recurso Administrativo (SEI nº 10814962) em 04 de setembro de 2023 (SEI nº 10814964), aduzindo:
+a tempestividade de sua peça recursal;
+ser mera prestadora do Serviço Telefônico Fixo Comutado (STFC) Local e de Longa Distância, não possuindo qualquer vínculo com emissoras de TV ou produtoras de conteúdo;
+que não produziu, divulgou ou controlou a publicidade do programa FanGames, por ser, como dito, mera prestadora de STFC, e que eventual publicidade enganosa ou abusiva seria de responsabilidade da produtora/emissora e não da Recorrente;
+inexistir, nos autos, prova de que tenha promovido propaganda ou induzido consumidores por meio do conteúdo televisivo, em afronta ao art. 37, § 1º, do CDC;
+sobre o suposto descumprimento ao art. 3º do RGC/2014, que não houve violação ao direito de livre escolha da prestadora, pois os usuários podiam utilizar qualquer Código de Seleção de Prestadora (CSP) para participar do programa, e não apenas o CSP 75 da Recorrente. Consignou que, por se tratar de usuários de outras operadoras, sequer teria meios de bloquear chamadas na origem e que houve participantes vencedores usando outros CSPs, o que demonstraria a inexistência de exclusividade;
+que as conclusões alcançadas pela Agência sobre o contrato firmado com a produtora e sobre o uso de numeração geográfica seriam meras suposições e interpretações e não fatos comprovados;
+a disponibilização do preço cobrado por minuto de ligação em diversas imagens do programa;
+quanto ao cálculo da multa para o art. 3º, que:
+(i) não se pode comparar os valores cobrados pela Recorrente com as tarifas cobradas pela Oi e Telefônica, pois os preços das autorizatárias são de livre estabelecimento e seus custos operacionais e de transporte são muito maiores que os das concessionárias;
+(ii) o cálculo do valor base estaria errado, devendo ser a diferença entre o valor cobrado pela Recorrente e o valor homologado para as concessionárias (R$ 5,59 - R$ 2,70) multiplicado pelas 598.124 (quinhentas e noventa e oito mil cento e vinte e quatro) chamadas com o CSP 75;
+(iii) esse cálculo não considerou o índice de inadimplência superior a 40% (quarenta por cento);
+(iv) o faturamento da empresa a ser considerado seria o do momento da sanção e não o da época da infração;
+(v) considerar a infração como grave estaria infringindo o art. 10 do RASA, devendo ser considerada leve e, assim, ser aplicada a penalidade de advertência;
+(vi) deve ser aplicada a atenuante do inciso I do art. 20 do RASA, tendo em vista que o serviço foi suspenso voluntariamente antes da atuação da Agência; e
+(vii) o valor da sanção aplicada representa praticamente 6 (seis) meses da receita bruta da empresa, podendo causar seu fechamento.
+Ao final, requereu:
+a concessão do efeito suspensivo;
+a improcedência do Pado por não haver prova de conduta ilícita da empresa;
+alternativamente, que seja aplicada sanção de advertência ou a concessão da atenuante de 90% (noventa por cento) prevista no inciso I do art. 20 do RASA.
+Atribuiu-se efeito suspensivo quanto à sanção de multa aplicada (SEI nº 10815015), nos termos do art. 123 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, c/c o art. 33, § 2º, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Em 19 de março de 2026, expediu-se o Informe nº 154/2026/CODI/SCO (SEI nº 15256727) mediante o qual a Área Técnica recomendou o conhecimento e o não provimento da peça recursal interposta, mantendo-se o valor da sanção aplicada.
+Nessa mesma data exarou-se o Despacho Decisório nº 136/2026/SCO (SEI nº 15308325) conhecendo do Recurso interposto e encaminhando os autos ao Conselho Diretor da Agência para julgamento. Emitiu-se, então, a Matéria para Apreciação do Conselho Diretor nº 186/2026 (SEI nº 15308380).
+Aos 23 de março de 2026, os autos foram distribuídos à minha relatoria, nos termos da Certidão de Distribuição SEI nº 15369810.
+É o relatório.
+FUNDAMENTAÇÃO
+A presente Análise será dividida em 6 (seis) capítulos. No Capítulo I, examinarei a admissibilidade do Recurso Administrativo. No Capítulo II, apreciarei o mérito das infrações debatidas no presente Pado para, em seguida, avaliar no Capítulo III os aspectos referentes à dosimetria da pena. Finalmente, no Capítulo IV, demonstrarei a relação entre o encaminhamento por mim proposto e a Agenda 2030: Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - DA ADMISSIBILIDADE DO RECURSO ADMINISTRATIVO
+Na data de 08 de setembro de 2023 (SEI nº 10836386), sexta-feira, a Vipway foi cientificada do teor do Despacho Decisório nº 182/2023/CODI/SCO (SEI nº 10713846). Logo, o termo final do prazo para interposição do Recurso Administrativo foi o dia 20 de setembro de 2023, quarta-feira. Tendo a peça recursal sido protocolizada em 04 de setembro de 2023, conforme Recibo Eletrônico de Protocolo SEI nº 10814964, não há dúvidas quanto à sua tempestividade.
+Demais disso, observo que a Recorrente possui interesse na reforma da decisão exarada pelo Superintendente de Controle de Obrigações (SCO), está regularmente representada e não há contrariedade a entendimento fixado em Súmula pela Anatel.
+Constatados os pressupostos de admissibilidade recursal insculpidos no art. 116 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, julgo acertada a decisão contida no Despacho Decisório nº 136/2026/CODI/SCO (SEI nº 15308325), de 19 de março de 2026, que conheceu da peça recursal interposta.
+II - DO MÉRITO RECURSAL
+Examinarei, a seguir, as razões de fundo do presente feito, bem como os argumentos aventados pela Vipway em seu Recurso Administrativo.
+Consoante disposto no Despacho de Instauração nº 2/2023/CODI/SCO (SEI nº 9780593), as condutas perpetradas pela Recorrente foram enquadradas como transgressões ao RGC/2014 e ao Código de Defesa do Consumidor (Lei nº 8.078/90), segundo se verifica abaixo:
+Não facultar ao consumidor a livre escolha do Código de Seleção de Prestadora (CSP): infração ao art. 3º, inciso II, do RGC/2014;
+Não informar adequadamente sobre as condições de contratação do serviço: infração ao art. 3º, inciso IV, do RGC/2014;
+Induzir o consumidor a adquirir serviço que não é do seu interesse: infração ao art. 3º, inciso XIII, do RGC/2014; e
+Praticar publicidade enganosa por omissão, capaz de induzir o consumidor a erro a respeito do preço total a ser cobrado: infração ao art. 37, § 1º, do CDC.
+Para um melhor entendimento e concatenação das conclusões alcançadas após detido exame deste feito, tais condutas serão divididas em dois blocos para análise conjunta: primeiramente, serão examinadas as condutas indicadas nas letras "a" e "c" supra, previstas, respectivamente, no art. 3º, inciso II e inciso XIII, ambos do RGC/2014; ato contínuo, serão avaliadas as condutas listadas nas letras "b" e "d", dispostas no inciso IV do art. 3º do RGC/2014 e no § 1º, do art. 37 do CDC, respectivamente.
+II.1 - Não facultar ao consumidor a livre escolha do CSP (art. 3º, inciso II, do RGC/2014) e induzir o consumidor a adquirir serviço que não é do seu interesse (art. 3º, inciso XIII, do RGC/2014)
+De proêmio, convém transcrever os dispositivos do RGC/2014 que serão debatidos no presente tópico:
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+II - à liberdade de escolha da Prestadora e do Plano de Serviço;
+(...)
+XIII - a não ser obrigado ou induzido a adquirir serviços, bens ou equipamentos que não sejam de seu interesse, bem como a não ser compelido a se submeter a qualquer condição, salvo diante de questão de ordem técnica, para recebimento do serviço, nos termos da regulamentação;
+Quanto ao inciso II, sustentou a Recorrente a inexistência de violação ao direito de livre escolha da prestadora, uma vez que os usuários podiam utilizar qualquer Código de Seleção de Prestadora (CSP) para participar do programa, e não apenas aquele a ela atribuído (CSP 75). Enfatizou que, por se tratar de usuários de outras operadoras, sequer teria meios de bloquear chamadas na origem e que houve participantes vencedores usando outros CSPs, o que demonstraria a inexistência de exclusividade.
+A Área Técnica assentou a subsunção da conduta ao tipo infracional em comento por entender que restou configurado: (i) o estímulo explícito, durante a transmissão do programa, ao uso do CSP 75; e (ii) cláusulas nos contratos firmados entre a Recorrente e as produtoras do programa que determinam o direcionamento dos participantes ao uso do referido CSP, consoante detalhado no Informe nº 328/2023/CODI/SCO (SEI nº 10644431):
+Informe nº 328/2023/CODI/SCO:
+"3.10. No Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243) há registro de que foram acompanhadas as transmissões ao vivo pela Rede Brasil, do programa FanGames, tanto pela TV, quanto pela Internet, de 4 a 30 de novembro de 2020. O conteúdo divulgava clara e abertamente o CSP 75, com estímulos aos telespectadores, tais como, mas sem se limitar a:
+"(...) ligue exatamente para o número que está na tela, não mude nada: 075 14 38005575 ou então 075 35 38005575"
+"(...) vem que agora é a sua hora, 075 14 38005575 ou então 075 35 38005575."
+"(...) pegue o telefone, vamos fazer a ligação vencedora agora, exatamente para o número que está na tela, não mude nada: 075 14 38005575 ou então 075 35 38005575."
+"(...) ligue agora mesmo exatamente para esse número que está na tela: 075 14 38005575 ou então 075 35 38005575."
+"(...) ligue exatamente para o número que está na tela, não mude nada: 075 14 38005575 ou então 075 35 38005575."
+"(...) Ligue exatamente para o número que está na tela para você ganhar até 80.000 reais: 075 14 38005575 ou então 075 35 38005575."
+"(...) então, vem pra cá pra buscar seu prêmio: 075 14 38005575 ou então 075 35 38005575."
+"(...) pegue o telefone e ligue exatamente para o número que está na tela, não mude nada: 075 14 38005575 ou então 075 35 38005575."
+3.11. Os trechos acima davam a falsa impressão de que o CSP 75 era o único capaz de fazer com que o público participasse do programa televisivo, caracterizando clara violação ao art. 3º, II, do RGC:
+RGC
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+II - à liberdade de escolha da Prestadora e do Plano de Serviço;
+3.12. No Conteúdo de Mídia (SEI 6665156) constam os contratos entre a prestadora e as produtoras do programa televisivo, revestidos de legalidade em termos de livre escolha do consumidor, uma vez que:
+a) Os serviços objeto do contrato apresentam a seguinte descrição:
+“Descrição do serviço: serviço de atendimento telefônico através da navegação em sistema automático de resposta audível “URA” com acesso através de telefone. O acesso ao sistema da VIPWAY TELECOM se dará através da digitação do código de seleção de prestadora da VIPWAY TELECOM “CSP 75”, código de área (CN) e número telefônico abaixo definido.
+(...)
+Números de Acesso: (14) 3800-5570 a 5579 / (35) 3800-5570 a 5579"
+b) Ainda, na cláusula relativa ao objeto, esses mesmos serviços têm a finalidade única e exclusiva de possibilitar a participação de telespectadores nos programas interativos da contratante.
+c) A empresa contratante também se compromete, de acordo com o objeto do contrato, a utilizar de forma exclusiva os serviços da Prestadora, não podendo divulgar durante a exibição do programa [código*] de outra(s) operadora(s), sem prejuízo do telespectador poder se valer de qualquer outra operadora para a chamada.
+* Nesse trecho do contrato não aparece a palavra "código" ou "CSP", mas o texto só passa a ter sentido com a adição de uma dessas opções.
+3.13. Observa-se que um contrato para a disponibilização de recursos de numeração [(14) 3800-5570 a 5579 / (35) 3800-5570 a 5579] não demandaria qualquer uma dessas cláusulas, pois em relação ao item "a", não haveria necessidade de citação do CSP, o item "b" não teria finalidade única e exclusiva de participação em programas interativos e, por fim, o item "c" não vincularia o CSP 75, e, desse modo as cláusulas acima mencionadas obrigam a contratante (produtoras) a divulgar no programa televisivo apenas o CSP da contratada, o que acaba por induzir o consumir a utilizar, de modo quase exclusivo, a VIPWAY como prestadora de longa distância.
+3.14. Além disso, a fiscalização observou que a Vipway prestava o serviço com códigos de acesso associados a áreas de numeração "14" e "35", quando tipicamente deveria utilizar códigos não geográficos, reforçando a tese de responsabilidade da Prestadora sobre os fatos aqui apurados."
+(Grifei)
+No Informe nº 154/2026/CODI/SCO (SEI nº 15256727), que analisou o Recurso Administrativo, o Corpo Técnico manteve a infração ao inciso II do art. 3º do RGC/2014, asseverando que "o cerne da discussão não reside na possibilidade ou não de se usar outro CSP para realizar chamadas para o programa interativo. De fato, existia essa possibilidade. Entretanto, a informação a respeito dessa possibilidade não era clara e transparente, assim como não era ostensiva a informação a respeito da cobrança adicional caso fosse utilizado CSP diverso do 75, pertencente à Vipway, para a realização da chamada, cobrança adicional esta, repita-se, que era lançada em favor da recorrente."
+No que tange à premissa fática, alinho-me ao entendimento de que subsistia a viabilidade técnica e operacional de se escolher outro CSP para efetuar as ligações destinadas ao programa Fangames. O Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243) foi claro nesse sentido, assentando o completamento das chamadas que utilizaram os CSPs 15, 21, 31 e 41.
+Contudo, divirjo do Setor Técnico quanto à definição do núcleo essencial da controvérsia ("cerne da discussão"). Para a configuração do tipo infracional capitulado no art. 3º, inciso II, do RGC/2014, faz-se indispensável o efetivo cerceamento ou impedimento ao exercício do direito de escolha do consumidor.
+Constatado nos autos por testes da própria fiscalização da Agência que o usuário que optasse por discar CSP diverso do 75 lograva êxito em completar a chamada e efetivar sua participação no programa interativo, não há que se falar em infração à liberdade de escolha da prestadora de Longa Distância. A conduta da Recorrente de impelir o consumidor ao uso apenas do CSP 75 não se configurou como barreira técnica ou contratual capaz de anular seu arbítrio no tráfego de interconexão originado.
+De fato, o arranjo contratual firmado entre a Vipway e as produtoras do programa, aliado à insistente mensagem veiculada na tela durante o programa, impunham um forte direcionamento e instigação do consumidor ao uso do CSP 75. Tais práticas materializam comportamento comercial irregular e repreensível sob a ótica regulatória e consumerista, porém não encontram subsunção no inciso II do art. 3º do RGC/2014. Trata-se, em verdade, de hipótese de induzimento do usuário à aquisição de serviço de forma não transparente, conduta tipificada autonomamente no inciso XIII do art. 3º do RGC/2014, sobre o qual passo a discorrer.
+Os fiscais da Agência acompanharam as transmissões ao vivo do programa Fangames entre os dias 04 e 30 de novembro de 2020, registrando trechos desse programa nos dias 04, 05, 06, 09, 10, 11 e 12 de novembro de 2020 (Amostras Fangames 4_11_2020” - SEI nº 6633606, Amostras Fangames 5_11_20 16h42-16h46 - SEI nº 6634062, Amostras Fangames 5_11_20 16h52- 17h - SEI nº 6634162, Amostras Fangames 6-9-10-11_11_20 - SEI nº 6634239, Amostras Fangames 12_11_20 14h-16h - SEI nº 6634318, Amostras Fangames 12_11_20 16h14-16h30 - SEI nº 6634374 e Amostras Fangames 12_11_20 16h31-17h - SEI nº 6634454).
+Em tais registros, é possível constatar a veiculação ostensiva de comandos direcionados à utilização exclusiva do CSP 75, com exortações explícitas aos telespectadores para que não alterassem o código discado, gerando a falsa percepção de que tal CSP seria o único e indispensável meio para a participação no programa. É o que se observa nos trechos abaixo destacados do Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243):
+As falas acima realçadas confirmam o forte incitamento que o programa fazia ao uso exclusivo do CSP 75, pois, para além de na tela aparecer apenas aludido código, o apresentador afirmava que para a participação no programa ser bem-sucedida, o telespectador deveria ligar para o exato número que estava aparecendo no televisor. O fato de, nos meses avaliados pela fiscalização (jun/19 a nov/20), o percentual de ligações utilizando do CSP 75 ser majoritariamente maior que o de ligações utilizando outros CSPs, consoante a Tabela III.4 "Quantidades de chamadas mês a mês utilizando supostamente o CSP 75 em relação ao total" do Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243), corrobora a conclusão quanto à preservação da liberdade de escolha do CSP, ao mesmo tempo em que confirma o contundente sugestionamento quanto ao uso do CSP 75:
+Em seu favor, a Recorrente argumentou que não possui ingerência sobre o programa e tampouco ligação com a produtora. No entanto, observei que no contrato entabulado com a empresa Fangames Produções e Serviços de Tecnologia, há cláusula vedando a utilização ou divulgação de quaisquer outras prestadoras de serviços de telecomunicações e impondo o uso exclusivo dos serviços da Vipway:
+“FANGAMES PRODUÇÕES E SERVIÇOS DE TECNOLOGIA LTDA, com ramo de atividade de Televisão Aberta, Produção Cinematográfica de vídeos e de programas de televisão, inscrita no CNPJ/MF sob nº ......, neste ato...., doravante denominada simplesmente “EMPRESA”, e de outro VIPWAY TELECOMUNICAÇÕES LTDA, inscrita no CNPJ ......., doravante denominada simplesmente “VIPWAY”, resolvem
+PREÂMBULO
+CONSIDERANDO que a EMPRESA produz programas de Televisão Aberta, Produção Cinematográfica de vídeos, programas de televisão como: Call TV; - QUIS; Estúdio; Max Racer; PC´s Jogos Online e presenciais; ou qualquer outro programa interativo (programas que telespectadores participam por meio de ligações telefônicas) que por autorização prévia, escrita e anuída quer por Aditivo Contratual ou por Anexo, a VIPWAY possa participar na condição de operadora de telefonia fixa e móvel
+CONSIDERANDO que a VIPWAY TELECOM é autorizatária do Serviço Telefônico Fixo Comutado (STFC) - ....., titular exclusiva do Código de Seleção de Prestadora (CSP) 75, contando com os recursos técnicos necessários para a prestação de serviços de telecomunicação.
+ACORDAM em celebrar o presente Contrato de Prestação de Serviços (doravante denominado “Contrato”), conforme as cláusulas e condições que seguem', (pág. 1/15);
+'1) OBJETO
+a) A VIPWAY TELECOM prestará à EMPRESA os serviços detalhados no Anexo 1 (doravante denominados, coletivamente, SERVIÇOS) – por esta menção tornados parte integrante do presente Contrato.
+i) As partes poderão acordar, a qualquer tempo, a inclusão ou exclusão de serviços mediante a assinatura de um novo Anexo', (pág. 1 e 2/15);
+'b) Os SERVIÇOS serão prestados com a finalidade única e exclusiva de possibilitar a participação de telespectadores nos PROGRAMAS INTERATIVOS produzidos pela EMPRESA (quer diretamente ou por meio de empresas por ela contratadas – (doravante denominadas, coletiva e genericamente, TERCEIROS) e – cumulativamente – transmitidos por ordem e conta da EMPRESA, vedada qualquer outra forma de utilização ou aproveitamento dos SERVIÇOS pela EMPRESA', (pág. 2/15);
+'c) Os SERVIÇOS serão prestados em âmbito nacional para a EMPRESA, exceto nos estados da região norte que será matéria de aditivo contratual, a qual se compromete a utilizar de forma exclusiva os serviços prestados pela VIPWAY TELECOM, não podendo a EMPRESA utilizar ou divulgar durante a exibição do programa de outra(s) operadora(s), sem prejuízo de o telespectador poder se valer de qualquer operadora para a chamada, observando para o faturamento neste caso o disposto na cláusula 3, b), iii)', (pág. 2/15);"
+(Grifei)
+Assim, podendo as chamadas para a participação no programa Fangames serem efetuadas utilizando-se outros CSPs e tendo os participantes sido levados a acreditar que tal participação ocorreria apenas se ligassem para o exato número indicado na tela do programa com o CSP 75 da Recorrente, entendo configurada a infração ao inciso XIII do art. 3º do RGC/2014 pela violação direta ao direito do consumidor de não ser induzido a adquirir serviços que não sejam de seu interesse.
+Pelo exposto, acolho os argumentos ventilados na peça recursal para afastar o cometimento da infração ao inciso II do art. 3º do RGC/2014, mantendo, porém, a violação ao inciso XIII do art. 3º do RGC/2014 tendo como valor-base a quantia calculada para o inciso II a título de vantagem auferida.
+II.2 - Não informar adequadamente sobre as condições de contratação do serviço (art. 3º, inciso IV, do RGC/2014) e praticar publicidade enganosa por omissão, capaz de induzir o consumidor a erro a respeito do preço total a ser cobrado (art. 37, § 1º , do CDC)
+Os dispositivos em discussão são os seguintes:
+RGC/2014:
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+IV - ao prévio conhecimento e à informação adequada sobre as condições de contratação, prestação, meios de contato e suporte, formas de pagamento, permanência mínima, suspensão e alteração das condições de prestação dos serviços, especialmente os preços cobrados, bem como a periodicidade e o índice aplicável, em caso de reajuste;
+CDC:
+Art. 37. É proibida toda publicidade enganosa ou abusiva.
+§ 1° É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário, inteira ou parcialmente falsa, ou, por qualquer outro modo, mesmo por omissão, capaz de induzir em erro o consumidor a respeito da natureza, características, qualidade, quantidade, propriedades, origem, preço e quaisquer outros dados sobre produtos e serviços.
+Quanto ao inciso IV do art. 3º, a Recorrente salientou que houve a disponibilização do preço cobrado por minuto de ligação em diversas imagens do programa Fangames, segundo se observa nas imagens abaixo:
+Todavia, o exame minudente dos autos corrobora a insuficiência e a inadequação da informação prestada ao consumidor. Explica-se.
+O Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243), elaborado após o acompanhamento contínuo das transmissões ao vivo do programa nos dias 04, 05, 06, 09, 10, 11 e 12 de novembro de 2020, apontou que a nota de rodapé na tela continha os seguintes dizeres: "Custo da ligação: R$ 3,99 + impostos por minuto, podendo ser realizada de qualquer operadora. Participação SOMENTE para MAIORES DE 18 ANOS". De fato, analisando os trechos de alguns dos vídeos anexados pelos fiscais (amostras citadas no item 5.16 supra), vê-se tais dizeres:
+Percebe-se que a mensagem transmitida pelo programa era dúbia. Ao consignar que a ligação possuía custo fixado e que podia "ser realizada de qualquer operadora", fez o consumidor supor que o valor final seria idêntico independentemente da prestadora de Longa Distância selecionada, quando, na verdade, a informação veiculada dizia respeito aos valores das chamadas realizadas com o CSP 75, sem qualquer informação a respeito dos valores nos casos em que outro CSP era utilizado.
+Os fiscais constataram a distinção dos valores cobrados por meio das chamadas de teste realizadas no âmbito da fiscalização, nas quais se observou a cobrança de R$ 5,59 (cinco reais e cinquenta e nove centavos) para 32 (trinta e duas) ligações que utilizaram CSP que não o 75, além de verificarem também a cobrança de chamadas sucessivas por parte da Vipway:
+Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI:
+"6 - Cobranças Vipway: Foram verificadas 32 (trinta e duas) cobranças de R$ 5,59 pelo tempo de 01 (um) minuto pelas chamadas que alcançaram a rede da Fiscalizada. As durações dessas chamadas, registradas nos respectivos CDR, variam de 3 (três) segundos a 35 (trinta e cinco) segundos.
+Dessas trinta e duas, 28 (vinte e oito) cobranças correspondem a chamadas consideradas na Planilha de Testes de Chamadas. Outras 4 (quatro) cobranças foram por chamadas não consideradas na planilha de testes. Uma dessas quatro chamadas, realizada no dia 09/11/2020, 14:23:14, foi seguida por outra iniciada às 14:24, esta considerada na Planilha de Teste, que não foi cobrada pela prestadora de LDN possivelmente por ser uma chamada sucessiva (art. 12, inciso VI, do RSTFC). Entretanto, ocorreu cobrança pela prestadora local de destino (Vipway), indicando que a Fiscalizada pode estar cobrando por chamadas sucessivas dentro do tempo de 120 segundos entre o fim da primeira e o início da segunda.
+(...)
+7 - Chamadas sucessivas para o mesmo destino no intervalo de até 120 segundos não foram cobradas pela prestadora de LDN, mas geraram CDR na prestadora Fiscalizada (Vipway) e foram cobradas conforme abaixo.
+I. Terminal 19 3207-0000 para 15 14 3800-5575 em 09/11/2020, 14:24, precedida por chamada não registrada na Planilha de (um) minuto;
+II. Terminal 19 3207-0000 para 31 14 3800-5575 em 26/11/2020, 14:58, precedida por chamada atendida que resultou em mudez - cobrança de R$ 5,59 por 1 (um) minuto;
+III. Terminal 19 98327-6645 para 31 14 3800-5575 em 30/11/2020, 16:12:00, precedida por chamada às 16:10:18.588 e duração de 12 segundos no CDR – sem lançamento de cobrança pela Vipway até 22/01/2021.
+Esses registros estão reproduzidos no arquivo “Análise das cobranças pelas chamadas de teste completadas.xlsx”, aba “Chamadas sucessivas - 2 min.” (Anexo “Análises das cobranças” (SEI nº 6626642). Há, portanto, um indício de que não existe esse tipo de controle por parte da Fiscalizada ou ação de ajuste ou compensação entre ambas as prestadoras, de LDN e a Fiscalizada, nesses casos;"
+(Destaquei)
+A omissão desse valor de R$ 5,59 (cinco reais e cinquenta e nove centavos) ganha relevância econômica ao se comparar as tarifas praticadas no mercado de telefonia com os valores cobrados pela Recorrente para as ligações que não utilizaram do CSP 75, ou mesmo com os valores anunciados durante o programa. Conforme apurado no item 3.18 do Informe nº 17/2022/COGE/SCO (SEI nº 7918416), emitido nos autos nº 53500.026605/2019-74 que apurou as denúncias relativas à Vipway, o preço mais elevado praticado pelas concessionárias do STFC para chamadas de Longa Distância Nacional (LDN) alcançava R$ 0,85 (oitenta e cinco centavos) por minuto:
+Informe nº 17/2022/COGE/SCO:
+"3.18. A Tabela abaixo apresenta as tarifas praticadas pelas concessionárias do STFC, homologadas pelo Ato n.º 321, de 23 de janeiro de 2017. O preço mais alto verificado é de R$ 0,85 (oitenta e cinco centavos) enquanto a VIPWAY cobrou R$ 5,59 (cinco reais e cinquenta e nove centavos), conforme apurou a equipe de fiscalização (vide. pág. 18 do Relatório de Fiscalização).
+Quanto ao tema, aduziu a Recorrente que, sendo autorizatária na prestação de serviços de telecomunicações, é regida pela liberdade tarifária do regime privado, que lhe confere autonomia de preços, o que de fato procede. No entanto, essa liberdade não constituiu um salvo-conduto para mascarar serviços de entretenimento e jogos sob o manto das telecomunicações, fraudando a transparência, o dever de informação ao consumidor e a boa-fé objetiva. O valor de R$ 0,85 (oitenta e cinco centavos), preço mais alto dentre os homologados à época pela Agência, demonstra que os preços cobrados pela Vipway (R$ 3,99 ou R$ 5,59) são muito superiores à média real do mercado regulado, confirmando que tais valores não remuneravam apenas o serviço de telecomunicações em si, mas também a utilidade correlata de participar do programa. É o que se depreende do excerto abaixo do Informe nº 17/2022/COGE/SCO (SEI nº 7918416), o qual peço vênia para mais uma vez transcrever:
+Informe nº 17/2022/COGE/SCO:
+"3.19. Neste ponto, trazemos à colação as informações contidas no Informe nº 429/2018/SEI/COGE/SCO (SEI nº 2823551), produzido nos autos do Processo nº 53500.023822/2018- 21, que trata de situação fática semelhante à versada nos presentes autos, ao discorrer sobre o conceito de utilidade para justificar a escolha do consumidor pela fruição de um serviço de telecomunicações:
+(...)
+3.63. Os serviços de telecomunicações são prestados em regime de competição (art. 6.º da LGT) e, em parte, em liberdade tarifária (art. 104 e 129 da LGT). Essa liberdade tarifária permite que o prestador de serviços de telecomunicações possa cobrar o preço que lhe convenha pelo serviço.
+(...)
+3.64. Entretanto, a teoria econômica explica o conceito de Utilidade como sendo a rentabilidade ou a satisfação pelo consumo de um bem ou serviço. Trata-se da percepção de satisfação que o consumidor observa na relação de consumo. Esta percepção explica o comportamento deste consumidor diante desta escolha por consumir. Acaso um serviço possa transmitir um nível de satisfação maior o consumidor estaria disposto a pagar um preço maior pelo mesmo.
+3.65. Assim, os agentes econômicos procuram agregar valor a seus produtos ou serviços, diferenciando-o do seu concorrente, transmitindo uma percepção de Utilidade maior do seu produto ou serviço para os consumidores, permitindo que possam cobrar valores mais elevados pelo consumo.
+3.66. O STFC Local, por exemplo, pode oferecer identificação de chamador, caixa de mensagens, chamada em espera e etc. fazendo com que a percepção de Utilidade deste serviço seja maior que outro que não os ofereça. Um Serviço de Comunicação Multimídia (SCM) para acesso à internet pode oferecer velocidades diferenciadas de serviço podendo influenciar na escolha desta ou daquela prestadora do serviço. Um Serviço Móvel Pessoal (SMP) pode diferenciar-se de outro Informe 17 (7918416) SEI 53500.026605/2019-74 / pg. 3 em função da tecnologia que emprega no acesso às redes (3G, 4G, 4,5G).
+3.67. Ocorre que, diferentemente de outros serviços de telecomunicações, o STFC na modalidade Longa Distância não consegue oferecer esta diferenciação. Nesta modalidade de serviços há a possibilidade, apenas, da fruição de uma chamada de voz. Nestas chamadas não há possibilidade de diferenciação por qualidade, velocidade ou tecnologia como nos exemplos acima citados, ao menos de forma perceptível para o consumidor. Restringe-se a possibilidade de diferenciação a indicadores técnicos de redes para os quais os consumidores de telecomunicações tem apresentado pouca sensibilidade, ou a serviço de re-chamada quando o interlocutor não está disponível. Nada que signifique Utilidade diferenciada significativa.
+(...)
+3.70 O que deseja-se demonstrar é que além do STFC na modalidade Longa Distância a prestadora também estaria cobrando por um outro serviço que não é o serviço de telecomunicações, qual seja, a possibilidade do consumidor participar do desafio proposto no Quiz. Somente a possibilidade de participação nos desafios propostos pelo Quiz justificariam a escolha por pagamento de tão maior valor na realização da chamada.
+3.20. Resta evidente que, na prestação dos serviços disponibilizada pela VIPWAY, existe a fruição de um outro serviço que não é o serviço de telecomunicações.
+3.21. Ao compararmos os valores cobrados pelo serviço prestado pela VIPWAY verifica-se que este outro serviço, de fato, é o serviço principal, sendo o serviço de telecomunicações módico no valor cobrado. Esta constatação é de simples verificação. Basta comparar o preço cobrado pelo serviço de telecomunicações pelas demais prestadoras com o preço cobrado pela VIPWAY.
+3.22. Parece claro, portanto, que há remuneração da VIPWAY para a FANGAMES, e, possivelmente, para outras empresas apontadas no relatório de fiscalização para estimular o tráfego telefônico. De outra forma, não existe vantagem econômica para estas empresas incorrerem nos custos associados à produção e veiculação de um programa televisivo, além de custos com publicidade.
+3.23. Sem a remuneração haveria, certamente, prejuízos para estas empresas, o que aponta para a responsabilidade da prestadora sobre estes serviços. Cabe ressaltar que para a divulgação publicitária é necessário realizar a produção da peças, inclusive com a contratação de atores, contratação de estúdio e equipamentos de gravação, e janelas de inserção nos veículos de divulgação, o que representa um ônus significativo.
+3.24. Pelo exposto, entende-se que o modelo de negócios adotado pela VIPWAY distorce a relação de consumo. O elemento objetivo desta relação de consumo, de fato, é a participação nos sorteios ou o acesso a conteúdos diversos. Entretanto, este elemento objetivo é apresentado para o consumidor como se fosse apenas o serviço de telecomunicações.
+3.25. Esta distorção acaba por provocar consequências deletérias. Citamos apenas como exemplo: a desinformação para o consumidor; a criação de dificuldades para reclamar e ter atenção à sua pretensão (os valores são cobrados na conta telefônica e, se não pagos implicam em suspensão de serviços); ou, ainda, a desfiguração da tributação."
+(Destaquei)
+Com isso, tem-se que o dado essencial omitido produzia efeitos patrimoniais diretamente em favor da Recorrente. Logo, não merece guarida a ponderação da Operadora no sentido de ser mera prestadora de STFC e que não produziu, divulgou ou controlou a publicidade do programa FanGames. Não se trata de mera intermediação passiva, mas de proveito econômico direto auferido pela Prestadora em razão da informação sonegada ao consumidor, o que a qualifica como partícipe necessária da cadeia de consumo ora em questão.
+O conceito de fornecedor delineado pelo art. 3º do CDC assenta que é fornecedor toda pessoa jurídica que desenvolve atividade de prestação de serviços, conceito que a doutrina e a jurisprudência interpretam de forma ampla, abarcando todos os partícipes da cadeia de consumo cuja atividade contribua para a oferta do serviço no mercado. A Vipway, ao integrar a cadeia de prestação do serviço de telecomunicações e auferir proveito econômico direto com a tarifa de R$ 5,59 (cinco reais e cinquenta e nove centavos) cobrada dos usuários que utilizavam outros CSPs que não o 75, ostenta inequívoca posição de fornecedora, ainda que não figure como produtora do programa Fangames. A autora Claudia Lima Marques2 destaca que o art. 3º do CDC consagra um conceito objetivo e finalístico de fornecedor, bastando que o agente desenvolva atividade de oferecimento de produtos ou serviços no mercado de consumo, sendo irrelevante investigar se atua diretamente na produção ou apenas se beneficia da comercialização.
+Para além de inexistir durante a transmissão do programa qualquer informação acerca dos valores da chamada para os casos em que o CSP da Recorrente não fosse selecionado, na informação sobre o custo da ligação para os participantes que utilizassem o CSP 75 os caracteres eram, conforme apontado pela Área Técnica no Informe nº 328/2023/CODI/SCO (SEI nº 10644431), diminutos, localizados estritamente no rodapé da tela e em tamanho significativamente menor do que as demais informações e estímulos visuais destinados a fomentar o telespectador ao telefonema, demonstrando que a inserção de tais dados nesse formato igualmente operava-se à margem das diretrizes consumeristas e regulatórias. Tal disparidade na apresentação dos elementos visuais também esvazia o direito do consumidor à informação clara, transformando a transparência tarifária em mera formalidade de modo a inflacionar o tráfego telefônico em detrimento do dever de transparência tutelado por esta Agência.
+No que tange ao § 1º do art. 37 do CDC, o Setor Técnico entendeu pela ocorrência da infração pelo fato de a cobrança da quantia de R$ 5,59 (cinco reais e cinquenta e nove centavos) não ser informada pelo programa Fangames e se reverter em favor da Recorrente:
+Informe nº 328/2023/CODI/SCO:
+"3.27. De acordo com o Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243), a partir do terminal (19) 3207-0000 foram realizadas chamadas teste para os destinos (14) 3800-5575 e (35) 3800-5575, ambos terminais de clientes da Vipway.
+3.28. Embora esse terminal tenha sido utilizado exclusivamente para as chamadas teste com CSPs diferentes do 75, mais precisamente, os CSPs 15, 21 e 31, a fiscalização observou, durante a análise das faturas daquelas prestadoras de longa distância, que cobranças adicionais no valor de R$ 5,59 (cinco reais e cinquenta e nove centavos) foram lançadas em favor da Vipway.
+3.29. Assim, verificou-se o desvirtuamento dos contratos de cofaturamento, demonstrando que o conteúdo do programa omitia a informação de que seria cobrado o valor de R$ 5,59 (cinco reais e cinquenta e nove centavos), independentemente do custo da ligação quando utilizado CSP diverso do 75, bem como, independentemente da duração da ligação.
+CDC
+Art. 37. É proibida toda publicidade enganosa ou abusiva.
+§ 1° É enganosa qualquer modalidade de informação ou comunicação de caráter publicitário, inteira ou parcialmente falsa, ou, por qualquer outro modo, mesmo por omissão, capaz de induzir em erro o consumidor a respeito da natureza, características, qualidade, quantidade, propriedades, origem, preço e quaisquer outros dados sobre produtos e serviços."
+(Grifos no original)
+Ao contestar a infração ao § 1º do art. 37 do CDC, a Recorrente sustentou que eventual publicidade enganosa ou abusiva seria de responsabilidade da produtora/emissora. Afirmou, ainda, inexistir nos autos prova de que tenha promovido propaganda ou induzido consumidores por meio do conteúdo televisivo.
+Consoante relatado em linhas pretéritas, é incabível a alegação de não responsabilização da Recorrente quanto à veiculação do conteúdo informativo no transcorrer do programa. A despeito de o programa haver sido desenvolvido por terceiro, a Recorrente não pode se furtar à responsabilidade pelo conteúdo da comunicação que viabilizava a cobrança em seu benefício e que omitia dado essencial de modo a induzir a erro o consumidor, sob pena de se criar um vazio de responsabilização na cadeia de consumo, resultado que o CDC, por possuir matriz constitucional no inciso V do art. 170 da Constituição Federal, buscou coibir.
+Ademais, como ressaltado no item "5.19", o contrato firmado entre a Prestadora e a produtora, relativo ao programa, vedava, expressamente, a divulgação do CSP de outras operadoras durante a respectiva transmissão.
+Não procede, ainda, a alegação de ausência de provas, pois foram coletadas pelos fiscais várias amostras do programa televisivo no qual se nota a omissão na informação e o induzimento ao consumidor ao erro, nos termos do relatado no item 5.16 e dos exemplos apresentados no item 5.33 desta Análise. 
+Avaliando mais a fundo as condutas debatidas neste tópico, entendo tratar-se não de duas ações, mas de conduta única, na qual a Vipway, ao não informar adequadamente as condições de contratação do serviço de LDN (in casu, os preços referentes aos participantes do programa que não utilizaram o CSP 75), incorreu em publicidade enganosa por omissão, induzindo o consumidor a erro a respeito do preço total a ser cobrado nesses casos, levando-o a crer que pagaria a quantia veiculada no programa (R$ 3,99 + impostos por minuto), independentemente do CSP selecionado. Assim, considero que essa conduta, por estar devidamente caracterizada, deve ser tipificada no inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do CDC, recebendo, dessa forma, sancionamento único.
+Ex positis, deixo de acatar as alegações recursais examinadas neste tópico, devendo ser mantida a caracterização do ilícito referente ao inciso IV do art. 3º do RGC/2014 e ao § 1º do art. 37 do CDC de maneira conjugada, com apenamento único.
+III - DO SANCIONAMENTO
+Passo à análise dos parâmetros empregados para o cálculo da multa e das alegações recursais apresentadas sobre o tema.
+III.1 - Da metodologia utilizada para o cálculo dos valores-base de multa
+Conforme mencionado linhas acima, a SCO empregou a metodologia para o cálculo de multas por descumprimentos a direitos dos usuários constante na Resolução Interna nº 219, de 15 de junho de 2023, a qual estabelece a seguinte fórmula para determinação dos valores-base de multa:
+A citada metodologia contempla os critérios para definição das sanções descritos no RASA então em vigor, reproduzidos a seguir:
+"Art. 10. Na definição da sanção devem ser considerados os seguintes parâmetros e critérios:
+I - a classificação da infração;
+II - os danos resultantes para o serviço e para os usuários efetivos ou potenciais;
+III - as circunstâncias agravantes e atenuantes, conforme definições dos arts. 19 e 20 deste regulamento;
+IV - os antecedentes do infrator;
+V - a reincidência específica;
+VI - o serviço explorado;
+VII - a abrangência dos interesses a que o serviço atende;
+VIII - o regime jurídico de exploração do serviço;
+IX - a situação econômica e financeira do infrator, em especial sua capacidade de geração de receitas e seu patrimônio;
+X - a proporcionalidade entre a gravidade da falta e a intensidade da sanção; e
+XI - o vulto da vantagem auferida, direta ou indiretamente, pelo infrator.
+Parágrafo único. O mesmo registro de sanção não pode ser utilizado como reincidência e antecedente na aplicação da sanção."
+A metodologia utilizada encontra-se em conformidade com o cenário regulatório à época do sancionamento. Não é o caso de alterá-la.
+III.1.1 - Do fator de gravidade (FG)
+Os parágrafos do art. 9º do RASA estabelecem os critérios a serem observados para a definição do fator de gravidade da infração, que poderá ser classificada como leve, média ou grave:
+"Art. 9º As infrações são classificadas, segundo sua natureza e gravidade, em:
+I - leve;
+II - média; e
+III - grave.
+§ 1º A infração deve ser considerada leve quando não verificada nenhuma das hipóteses relacionadas nos §§ 2º ou 3º deste artigo.
+§ 2º A infração deve ser considerada média quando da ocorrência de uma das seguintes alternativas:
+I - vantagem indireta ao infrator em decorrência da infração cometida; ou,
+II - atingir grupo limitado de usuários.
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas:
+I - vantagem direta ao infrator em decorrência da infração cometida;
+III - má-fé;
+III - risco à vida;
+IV - atingir número significativo de usuários;
+V - não atendimento a metas de ampliação ou universalização do acesso a serviço de telecomunicações;
+VI - óbice à atividade de fiscalização regulatória; ou,
+VII - uso não autorizado de radiofrequências ou exploração de serviço de telecomunicações sem autorização da Anatel."
+A Resolução Interna nº 219/2023 atribui valores fixos ao "FG", de acordo com sua classificação:
+"5.1.6. Fator de Gravidade (FG): Observado o disposto no Regulamento de Aplicação de Sanções Administrativas para definir se a infração possui natureza leve, média ou grave, o valor deve ser atribuído de acordo com a gravidade da infração, conforme tabela abaixo:
+5.1.6.1. A infração deverá ser considerada como grave por atingir número significativo de usuários, nos termos do art. 9º, §3º, IV do Rasa, em casos de:
+I - Infrações em que a unidade utilizada em "Ua" e "Ut" seja número de usuários ou número de chamadas e o quociente da divisão entre os fatores seja igual ou superior a 0,01, e igual ou superior a 30.000 (trinta mil); ou
+II - Infrações em que a unidade utilizada em "Ua" e "Ut" não seja número de usuários nem número de chamadas, e o quociente da divisão entre os fatores seja superior a 0,2.
+5.1.6.2. A infração deverá ser considerada como considerada média por atingir grupo limitado de usuários, nos termos do art. 9º, § 2º, II, do Rasa, em casos de:
+I - Infrações em que a unidade utilizada em "Ua" e "Ut" seja número de usuários ou número de chamadas e o número de “Ua” seja igual ou superior a 1.000 (mil); ou
+II - Infrações em que a unidade utilizada em "Ua" e "Ut" não seja número de usuários nem número de chamadas, e o quociente da divisão entre os fatores seja entre 0,1 e 0,2."
+A Área Técnica justificou a classificação das infrações apuradas neste Pado como graves por corresponderem a ofensa a direitos e garantias do usuário, tuteladas no RGC, e terem proporcionado vantagem direta ao infrator (item 3.53 do Informe nº 328/2023/CODI/SCO - SEI nº 10644431).
+A Prestadora defendeu que considerar as infrações como grave infringiria o art. 10 do RASA, uma vez que o valor da sanção aplicada representa praticamente 6 (seis) meses da receita bruta da empresa, podendo comprometer a continuidade de suas atividades. Acentuou, ainda, que as irregularidades deveriam ser consideradas leves e, assim, receber a penalidade de advertência. Em instância recursal, contudo, o Corpo Técnico não sugeriu alterações quanto ao "FG".
+Concordo com as classificações dos ilícitos da forma como apresentadas no decisum recorrido, não devendo prosperar as alegações da Recorrente. A metodologia com a qual foi calculada a penalidade impingida possui, em sua formulação, todos os requisitos elencados no art. 10 do RASA, os quais foram integralmente observados, dentre eles a proporcionalidade, já que se considera nesse cálculo o porte da empresa e sua Receita Operacional Líquida (ROL). E não há que se falar em infrações leves pois, como asseverado pela Área Técnica, as transgressões envolveram número significativo de usuários e acarretaram vantagem direta ao infrator.
+III.1.2 - Dos Fatores "Ut" (Usuários totais) e "Ua" (Usuários atingidos):
+Como dito preteritamente, para o cálculo da sanção empregou-se, acertadamente, a metodologia utilizada para descumprimentos a direitos dos usuários, prevista na Resolução Interna nº 219, de 15 de junho de 2023.
+Não houve manifestação quanto a tais fatores na peça recursal interposta. Avaliarei, assim, os valores utilizados pelo Setor Técnico para cada infração aqui em discussão.
+III.1.2.a - Art. 3º, inciso XIII:
+Antes de avaliar os fatores "Ua" e "Ut" empregados para o cálculo do valor-base da multa referente ao art. 3º, inciso II, do RGC/2014, recordo que, nos termos do tópico "II.1" supra, afastei os indícios dessa irregularidade. Por outro lado, conforme esclarecido naquele mesmo tópico, mantive a infração ao art. 3º, inciso XIII, do RGC/2014, retificando a multa correspondente, para considerar os mesmos parâmetros originalmente empregados para a dosimetria da pena aplicada para o art. 3º, inciso II, do RGC/2014.
+Houve a necessidade que a Área Técnica adequasse a metodologia aprovada pela Resolução Interna nº 219/2023 em relação à composição do fator Usuários totais (Ut), pois como o programa era transmitido tanto pela TV (Rede Brasil TV e Terra Viva da Rede Bandeirantes) quanto pela internet, não havia como mensurar tal fator utilizando-se o parâmetro estabelecido na metodologia, isto é, correspondendo o "Ut" ao "número total de usuários constante na base da prestadora, relativo ao serviço fiscalizado, à época da ocorrência da infração e na respectiva área de abrangência."
+Quanto ao ponto, ressalto que a própria metodologia admite que nem sempre é possível utilizar o conceito de "Ut" nos termos da Resolução Interna, propondo alternativas para tais situações:
+Resolução Interna nº 219, de 15 de junho de 2023:
+"5.1.2. Quantidade de usuários atingidos (Ua): número de usuários atingidos pela infração ou unidade de medida proporcional.
+5.1.2.1. A unidade de medida proporcional será usada nos casos em que não seja possível identificar a quantidade de usuários atingidos em função da característica da infração, mas o item irregular guarde proporcionalidade em relação ao número de usuários. Nesses casos, deve-se considerar a quantidade de itens identificados em discordância com a regulamentação. 
+(...)
+5.1.3. Total de usuários da prestadora (Ut): número total de usuários constante da base da prestadora, relativos ao serviço fiscalizado, à época da ocorrência da infração e na respectiva área de abrangência.
+5.1.3.1. Nos casos de infrações que utilizem outra unidade de medida no fator "Ua", o fator "Ut" deve guardar correspondência com o parâmetro adotado para a variável “Ua”, considerando-se a totalidade de itens existentes."
+Assim, tendo a fiscalização encontrado 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) chamadas realizadas para os números indicados no programa Fangames (14 3800-5575 e 35 3800-5575), no período de junho de 2019 a novembro de 2020, utilizando o CSP 75 da Recorrente, essa quantidade de ligações foi a considerada para o fator Ut. 
+O mesmo valor foi atribuído ao fator Usuários atingidos (Ua), tendo em vista a forte possibilidade de que todas essas ligações, fazendo uso do CSP 75, tenham ocorrido em virtude do induzimento promovido pela Recorrente. Equiparar os valores atribuídos aos fatores "Ua" e "Ut" corresponde a reconhecer a natureza sistêmica ou procedimental da prática ilícita, a qual, de fato, teve o potencial de atingir todos os espectadores do programa.
+Devem ser mantidos os valores atribuídos para tais fatores.
+III.1.2.b - Art. 3º, inciso IV c/c o § 1º do art. 37 do CDC
+Para os dispositivos sub examine, entendo que ambos fatores devem sofrer alteração.
+O fator Ut deverá ser de 59.207 (cinquenta e nove mil duzentos e sete), por ser esse o total de chamadas recebidas pelo programa no mês de novembro/2020 (vide tabela no item 5.18), mês em que a fiscalização fez as chamadas de teste. O fator Ua, por sua vez, será 32 (trinta e dois), haja vista ser esse o número de ligações nas quais se verificou a cobrança de R$ 5,59 (cinco reais e cinquenta e nove centavos), fazendo com que tal violação seja de natureza pontual.
+III.1.3 - Dos Fatores "D" e "T"
+A Resolução Interna nº 219/2023 dispõe o seguinte sobre tais fatores:
+"5.1.4. Dano causado pela infração (D): Valor que guarda relação com a intensidade da lesão causada pela conduta ilícita ao consumidor individualmente considerado. As condutas ilícitas a que se referem o Dano são divididas em 10 (dez) grupos, de acordo com o tipo de lesão provocada ao bem jurídico tutelado, às quais se atribuem valores que variam de 1 (conduta menos danosa) a 10 (conduta mais danosa), conforme tabela abaixo:
+ | 
+ Conduta Ilícita
+ | 
+ 1
+ | 
+ 2
+ | 
+ 3
+ | 
+ 4
+ | 
+ 5
+ | 
+ 10
+ | 
+ a)
+ | 
+ Lesão à integridade física
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ b)
+ | 
+ Ameaça à integridade física
+ | 
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ c)
+ | 
+ Danos materiais, inclusive cobrança indevida ou venda casada
+ | 
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ d)
+ | 
+ Infração sem prejuízo perceptível ao usuário
+ | 
+ x
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ e)
+ | 
+ Impedimento à fruição do serviço sem culpa do Usuário
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ f)
+ | 
+ Dificuldade à fruição do serviço sem culpa do Usuário
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ | 
+ g)
+ | 
+ Desrespeito a regras de sigilo
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ h)
+ | 
+ Inserção indevida em cadastros de devedores
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ i)
+ | 
+ Impedimento para o exercício de direito
+ | 
+ | 
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ j)
+ | 
+ Dificuldade para o exercício de direito
+ | 
+ | 
+ x
+ | 
+ | 
+ | 
+ | 
+ | 
+5.1.4.1. No caso de a situação fática não se enquadrar em nenhuma das condutas ilícitas previstas na tabela, deve-se enquadrá-la com base nos princípios legais e diretrizes regulatórias.
+5.1.4.2. No caso de situação fática se enquadrar em mais de uma das condutas ilícitas previstas na tabela, deve-se enquadrá-la na conduta ilícita de maior dano.
+5.1.4.3. A depender da intensidade da situação fática, o dano poderá ser, justificadamente, majorado em 1 (uma) unidade.
+5.1.4.4. Em situações de calamidade pública, segurança nacional, ou que haja expressivo impedimento ou dificuldade à fruição do Serviço Público de Emergência poderá ser atribuído valor igual a 10 (dez).
+5.1.5. Tempo de duração da infração (T): Valor atribuído de acordo com a duração da infração, variando entre 0,10 (menor duração) e 0,30 (maior duração), conforme tabela abaixo, devendo-se considerar o seguinte:
+ Tempo
+ | 
+ Valor
+ | 
+ Até 1 dia
+ | 
+ 0,10
+ | 
+ De 1 dia a 30 dias
+ | 
+ 0,15
+ | 
+ Entre 30 dias e 6 meses
+ | 
+ 0,20
+ | 
+ Entre 6 meses e 1 ano
+ | 
+ 0,25
+ | 
+ Mais de um ano
+ | 
+ 0,30
+ | 
+5.1.5.1. o tempo de avaliação pela fiscalização em relação a cada infração específica e, dentro desse período, o tempo em que foi observada a ocorrência da infração.
+5.1.5.2. em casos que envolvam diversos usuários atingidos por períodos distintos, o maior tempo.
+5.1.5.3. na ausência de informação específica, o tempo da infração corresponde ao intervalo entre o início da atividade de fiscalização e o encerramento do prazo para alegações finais, salvo se comprovada sua cessação em data anterior."
+Alinho-me aos fatores "D" e "T" atribuídos pela Área Técnica para a infração ao inciso XIII do art. 3º do RGC/2014 (D = 5 e T = 0,30), uma vez que houve dano material e o período irregular é superior a 1 (um) ano. No que tange ao inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do CDC, mantenho o Dano em 3, porém altero o Tempo de 0,30 (mais de 1 ano) para 0,15 (de 1 a 30 dias), já que o ilícito foi constatado analisando o interregno de apenas 30 (trinta) dias (novembro/2020).
+III.1.4 - Da Receita Operacional Líquida (ROL) 
+Em suas razões de Recurso, a Prestadora consignou que o faturamento da empresa a ser considerado seria o do momento da sanção e não o da época da infração.
+Consoante indicado no item 3.59 do Informe nº 328/2023/CODI/SCO (SEI nº 10644431), considerou-se a ROL do ano de 2022, por ser a mais recente disponível no momento da decisão. Logo, observa-se que o pleito recursal não procede, já que não foi considerada a ROL dos anos de 2019 e 2020, época do cometimento das irregularidades, mas sim a última disponível no momento em que a decisão foi proferida, em linha com a metodologia de multa e com os vastos precedentes deste Conselho Diretor.
+De tal modo, ratifico a ROL empregada para o cálculo da multa.
+III.1.5 - Dos valores-base alcançados a partir da metodologia aprovada pela Resolução nº 219/2023
+Os valores-base para as infrações aqui debatidas, demonstrados na planilha de cálculo de multa SEI nº 15303088, foram os seguintes:
+art. 3º, inciso XIII, do RGC/2014: R$ 2.378,23 (dois mil trezentos e setenta e oito reais e vinte e três centavos); e
+art. 3º, inciso IV, do RGC/2014 c/c § 1º do art. 37 do CDC: R$ 1.426,94 (um mil quatrocentos e vinte e seis reais e noventa e quatro centavos).
+Preconiza o § 2º do art. 18 do RASA:
+Art. 18. No cálculo do valor base da multa devem ser considerados os seguintes aspectos:
+I - quantidade de usuários afetados;
+II - período de duração da infração;
+III - a situação econômica e financeira do infrator, em especial sua capacidade de geração de receitas e seu patrimônio;
+IV - a proporcionalidade entre a gravidade da falta e a intensidade da sanção; e
+V - o vulto da vantagem auferida, direta ou indiretamente, pelo infrator.
+(...)
+§ 2º O valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável.
+(Grifei)
+A fim de verificar se o valor calculado a partir do emprego da metodologia atendia ao disposto no art. 18, § 2º, do RASA, a Área Técnica efetuou o cálculo da vantagem auferida para as infrações ao art. 3º, inciso II, do RGC/2014 e para o art. 37, § 1º, do CDC, nos termos a seguir:
+Informe nº 328/2023/CODI/SCO:
+"3.15. De acordo com a tabela III.4 do Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243), foram realizadas 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) chamadas pelo CSP 75 para os números (14) 3800-5575 e (35) 3800-5575, no período de junho de 2019 a novembro de 2020.
+3.16. Destaca-se que o item 3.18 do Informe nº 17/2022/COGE/SCO (SEI 8199492) aponta que o preço mais alto verificado em relação às tarifas de longa distância nacional (LDN) praticadas pelas concessionárias do STFC (Telemar, Oi e Telefônica) é de R$0,85 (oitenta e cinco centavos) por minuto, enquanto a VipWay cobrava R$5,59 (cinco reais e cinquenta e nove centavos) por minuto, conforme detalhado no Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243), no Anexo Análise das Chamadas de Teste (SEI 6626878) e no Anexo Análises das cobranças (SEI 6626642). Assim, fica demonstrada a maneira pela qual a Vipway beneficiou-se da indução do consumidor ao erro, obtendo vantagem indevida ao não facultar a livre escolha do CSP.
+3.17. Considerando-se a diferença entre tais valores, de R$4,74 (quatro reais e setenta e quatro centavos) por minuto, e que foram realizadas no período 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) chamadas, entende-se que a Prestadora auferiu, no mínimo, uma vantagem de R$2.835.107,76 (dois milhões, oitocentos e trinta e cinco mil cento e sete reais e setenta e seis centavos) no período fiscalizado. Registra-se que essa seria a vantagem mínima auferida, já que se considerou apenas um minuto por chamada, a despeito de a lógica atrelada aos jogos televisionados era reter a chamada com o consumidor pelo maior tempo possível, como demonstrado no item 8.2 do Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243).
+(...)
+3.27. De acordo com o Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI 9781243), a partir do terminal (19) 3207-0000 foram realizadas chamadas teste para os destinos (14) 3800-5575 e (35) 3800-5575, ambos terminais de clientes da Vipway.
+3.28. Embora esse terminal tenha sido utilizado exclusivamente para as chamadas teste com CSPs diferentes do 75, mais precisamente, os CSPs 15, 21 e 31, a fiscalização observou, durante a análise das faturas daquelas prestadoras de longa distância, que cobranças adicionais no valor de R$ 5,59 (cinco reais e cinquenta e nove centavos) foram lançadas em favor da Vipway.
+3.30. Portanto, caracteriza-se a conduta como infração ao art. 37, §1º, do CDC, considerando-se 32 (trinta e duas) chamadas, no período de 4 a 26 de novembro de 2020, com cobrança indevida de R$ 178,88 (cento e setenta e oito reais e oitenta e oito centavos).
+(...)
+3.48. Em relação às infrações citadas nos sequenciais 1 e 4, em relação aos art. 3º, II, do RGC e ao art. 37, § 1º, do CDC, foi possível apurar a vantagem auferida e a consequente cobrança indevida dos valores indicados abaixo:
+ Dispositivo
+ | 
+ Data mais recente das cobranças indevidas
+ | 
+ Valor original devido em Reais
+ (sem dobra, juros e correção)
+ | 
+ Art. 3º, II, do RGC
+ | 
+ 30/11/2020
+ | 
+ R$2.835.107,76
+ | 
+ Art. 37, §1º, do CDC
+ | 
+ 26/11/2020
+ | 
+ R$ 178,88
+ | 
+3.49. Conforme preceitua o art. 18, §2º, do Rasa, "o valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável", sendo que o cálculo dessa vantagem, foi feito com base no custo de oportunidade da utilização dos valores cobrados indevidamente, utilizando-se para tanto a taxa Selic, de acordo com os precedentes do Conselho Diretor constantes das Análises nº 200/2017/SEI/IF (SEI 1823042) e nº 13/2018/SEI/EC (SEI 2310525).
+3.50. Nesse cálculo foi empregada como data inicial, a data mais recente das cobranças indevidas analisadas pela fiscalização, conforme tabela acima, e como termo final da atualização o dia 17 de agosto de 2023, data de elaboração deste Informe. O cálculo da correção pela taxa Selic foi feito na Calculadora do Cidadão do Banco Central do Brasil, conforme o Anexo I (SEI 10710641), cujos valores serviram de base para obtenção do dobro da vantagem auferida, conforme segue:
+ | 
+ Dispositivo
+ | 
+ Valor não ressarcido
+ | 
+ Correção pela Taxa Selic
+ | 
+ Vantagem Auferida
+ | 
+ Dobro da Vantagem Auferida
+ | 
+ | 
+ Art. 3º, II, do RGC
+ | 
+ R$2.835.107,76
+ | 
+ R$ 3.609.029,66
+ | 
+ R$ 773.921,90
+ | 
+ R$ 1.547.843,80
+ | 
+ | 
+ Art. 37, §1º, do CDC
+ | 
+ R$ 178,88
+ | 
+ R$ 227,74
+ | 
+ R$ 48,86
+ | 
+ R$ 97,72
+ | 
+3.51. Desse modo, a sanção de multa pela infração ao art. 3º, II, do RGC, não pode ser inferior a R$1.547.843,80 (um milhão, quinhentos e quarenta e sete mil oitocentos e quarenta e três reais e oitenta centavos) e ao art. 37, §1º, do CDC, não pode ser inferior a R$97,72 (noventa e sete reais e setenta e dois centavos), valor equivalente ao dobro da vantagem indevida auferida nos casos apurados com essas infrações."
+(Destaques no original)
+Diante dos valores obtidos, substituiu-se o valor da multa calculada a partir da Resolução Interna nº 219/2023 para o art. 3º, inciso II, do RGC/2014 (descaracterizado nesta Análise, mas cujos parâmetros estão sendo empregados para o cálculo da multa pelo descumprimento ao art. 3º, inciso XIII, do RGC/2014, por valor correspondente ao dobro da vantagem auferida em decorrência da prática ilícita.
+Em sede recursal, a Operadora contestou o valor de R$ 2.835.107,76 (dois milhões, oitocentos e trinta e cinco mil cento e sete reais e setenta e seis centavos) encontrado, aduzindo (i) que não se pode comparar os valores cobrados pela Recorrente com as tarifas cobradas pela Oi e Telefônica, pois os preços das autorizatárias são de livre estabelecimento e seus custos operacionais e de transporte são muito maiores que os das concessionárias; (ii) erro no cálculo do valor base, devendo ser a diferença entre o valor cobrado pela Recorrente e o valor homologado para as concessionárias (R$ 5,59 - R$ 2,70) multiplicado pelas 598.124 (quinhentas e noventa e oito mil cento e vinte e quatro) chamadas com o CSP 75; e (iii) que esse cálculo não considerou o índice de inadimplência superior a 40% (quarenta por cento). Quanto ao valor da vantagem auferida calculado para o § 1º do art. 37 do CDC, não houve impugnação no Recurso interposto.
+Manifestando-se acerca de tais alegações recursais (Informe nº 154/2026/CODI/SCO - SEI nº 15256727), o Corpo Técnico manteve o posicionamento apresentado em 1ª instância:
+Informe nº 154/2026/CODI/SCO:
+"3.39. Diante do estímulo à utilização do CSP 75 e da falsa impressão de que o referido CSP era o único capaz de fazer com que o público participasse do programa televisivo, induzindo o consumidor ao erro para utilizar, de modo quase exclusivo, a Vipway como prestadora, concorda-se com o entendimento de que a recorrente obteve vantagem indevida ao não facultar a livre escolha do CSP (item 3.16 do Informe). 
+3.40. Quando há vantagem auferida, o art. 18, §2º, do Rasa, dispõe que o valor base da sanção nunca será inferior ao seu dobro, quando estimável. A vantagem auferida original de R$2.835.107,76 foi mensurada nos itens 3.16 e 3.17 do Informe nº 328/2023/CODI/SCO, considerando-se o maior valor praticado pelas demais operadoras na época dos fatos (R$0,85), o que se ratifica, sobremaneira porque essa seria a vantagem mínima auferida, já que "se considerou apenas um minuto por chamada, a despeito da lógica atrelada aos jogos televisionados de reter a chamada com o consumidor pelo maior tempo possível". Destaca-se que a prestadora alegou de forma genérica, ou seja, sem qualquer comprovação, a "inadimplência superior a 40% dos valores cobrados".
+3.41. O cálculo do dobro da vantagem auferida, no montante de R$ 1.547.843,80, e seu impacto no respectivo cálculo da multa, com afastamento da Metodologia aprovada pela Resolução Interna nº 219/2023, consta do Tópico V do Informe nº 328/2023/CODI/SCO (10644431), o qual se reitera."
+(Grifos no original)
+Passa-se a análise da matéria.
+É escorreito o valor calculado pela Área Técnica para a vantagem auferida. Ao delimitar a vantagem econômica ao custo de oportunidade gerado pela retenção temporária dos recursos, calculada via Selic, reflete-se o ganho financeiro obtido pela Recorrente no período em que usufruiu da liquidez dos valores cobrados indevidamente, sendo esse o entendimento consolidado deste Colegiado quanto ao ponto. O valor principal não integra a base de cálculo da vantagem auferida no presente Pado porque restou expressamente determinada a instauração de processo administrativo próprio voltado ao ressarcimento dos consumidores (item 3.64 do Informe nº 328/2023/CODI/SCO - SEI nº 10644431), evitando-se, desse modo, o bis in idem.
+No que pertine à alegação de que não se pode comparar os valores cobrados pela empresa com as tarifas praticadas pelas concessionárias Oi e Telefônica, sob o argumento de que os preços das autorizatárias são de livre estabelecimento e seus custos operacionais seriam superiores, não assiste razão à Recorrente. Anteriormente consignei que o regime de liberdade tarifária pela qual as autorizatárias são regidas não constitui um salvo-conduto para a prática de lesões aos consumidores. Ademais, a metodologia adotada não se funda em equiparação de regimes jurídicos ou estruturas de custo, mas sim na constatação objetiva de que a VipWay induziu os consumidores (telespectadores do programa) ao uso do seu CSP, conforme robustamente demonstrado nos autos.
+Quanto ao argumento de que o valor-base deveria corresponder à diferença entre o valor cobrado pela Recorrente (R$ 5,59) e a tarifa de R$ 2,70 extraída do sítio eletrônico da Vivo, a pretensão igualmente não merece acolhimento. O valor de R$ 0,85 (oitenta e cinco centavos) por minuto adotado como parâmetro pela fiscalização corresponde ao maior valor de tarifa de Longa Distância Nacional efetivamente praticado pelas concessionárias no período fiscalizado, conforme informação expressa no item 3.18 do Informe nº 17/2022/COGE/SCO (SEI 8199492), transcrito no item 5.36 desta Análise. A utilização desse valor como referencial mostra-se consentânea com o princípio da razoabilidade, porquanto adota o teto das tarifas reguladas como base de comparação, o que favorece a Recorrente, pois restringe o montante apurado ao mínimo possível. A referência a valor diverso (R$ 2,70), extraído do site da Vivo não se presta a infirmar a metodologia adotada, que se pautou em dados concretos e verificáveis extraídos dos sistemas de arrecadação das concessionárias.
+No que concerne à alegação de que o cálculo não teria considerado índice de inadimplência superior a 40% (quarenta por cento), o argumento é igualmente improcedente. A vantagem auferida corresponde ao benefício econômico obtido pela Prestadora com a prática infracional, e não ao valor adimplido pelos consumidores. O fato de parte dos valores estar em aberto não elide a circunstância de que a cobrança indevida foi realizada, tampouco desconstitui a vantagem econômica que a Recorrente auferiu ao se beneficiar pelo induzimento ao uso do CSP 75. De outra sorte, o cálculo foi realizado tomando-se por base o número de chamadas efetivamente realizadas com o CSP 75 e considerando somente um minuto por chamada, critério conservador que subestima a vantagem real, haja vista que a dinâmica dos serviços de jogos televisionados é a de reter o consumidor na chamada telefônica pelo maior tempo possível, consoante denotado no capítulo 8.2 do Relatório de Fiscalização nº 26/2021/GR01FI1/GR01/SFI (SEI nº 9781243).
+Por fim, registre-se que como não houve impugnação específica quanto ao cálculo da vantagem auferida referente à infração ao art. 37, § 1º, do CDC, no valor de R$ 178,88 (cento e setenta e oito reais e oitenta e oito centavos), a matéria resta preclusa no âmbito do presente Recurso.
+Assim, mantenho incólume o cálculo elaborado pela Área Técnica para a quantificação da vantagem auferida.
+Como dito anteriormente, a transgressão referente ao art. 3º, inciso II, do RGC/2014, para a qual foi calculada a vantagem auferida, foi desconsiderada. Repiso, contudo, que ela está intrinsecamente ligada à infração ao art. 3º, inciso XIII do mesmo diploma, pois não houve o impedimento ao uso dos demais CSPs, mas sim o induzimento ao uso do CSP 75, de propriedade da Recorrente. Como o substrato fático que fundamenta o cálculo é rigorosamente o mesmo, as premissas e os valores usados devem ser integralmente replicados para o cálculo da vantagem auferida relativa ao ilícito ao art. 3º, inciso XIII, do RGC/2014, que passará a perfazer um total de R$ 1.547.843,80 (um milhão, quinhentos e quarenta e sete mil oitocentos e quarenta e três reais e oitenta centavos).
+Ressalte-se que, no direito administrativo sancionador, o administrado defende-se dos fatos que lhe são imputados, e não da capitulação legal a que tais fatos foram subsumidos. Como leciona Fábio Medina Osório2, "o direito de defesa, no processo administrativo sancionador, opera sobre os fatos juridicamente relevantes, e não sobre a qualificação jurídica que a Administração lhes atribui, a qual pode ser ajustada pela autoridade julgadora desde que respeitados o contraditório e a ampla defesa quanto ao suporte fático". Nesse mesmo sentido, o Superior Tribunal de Justiça consolidou o entendimento por meio da Súmula nº 672, segundo a qual "a alteração da capitulação legal da conduta do servidor, por si só, não enseja a nulidade do processo administrativo disciplinar", enunciado que, embora originado no âmbito disciplinar, expressa princípio geral aplicável a todo o direito administrativo sancionador.
+Ora, no caso concreto, os fatos que sustentam o cálculo da vantagem auferida, a saber, as chamadas realizadas, os valores cobrados e o sobrepreço apurado, foram exaustivamente descritos e submetidos ao contraditório da Recorrente durante toda a instrução processual. Rafael Munhoz de Mello3 assinala que "a proibição da reformatio in pejus não impede o reexame da qualificação jurídica dos fatos pelo órgão julgador, desde que a matéria fática subjacente permaneça inalterada e tenha sido submetida ao contraditório". É precisamente o que ocorre neste caso: a base fática é idêntica, o valor da vantagem auferida permanece o mesmo já apurado e a Recorrente, em suas razões recursais, impugnou expressamente todos os elementos do cálculo (a tarifa de referência, o número de chamadas e a inadimplência), tendo exercido de forma plena o seu direito de defesa sobre a matéria.
+Logo, não há que se falar em reformatio in pejus no presente caso, uma vez que o que se opera é tão somente o reenquadramento jurídico de fatos já integralmente conhecidos e debatidos no feito, inclusive com a manutenção do exato valor da vantagem auferida já calculado e do próprio quantum da multa dele decorrente.
+Considerando todo o arrazoado ora exposto e em atenção ao § 2º do art. 18 do RASA, conclui-se o seguinte quanto aos valores-base das multas:
+a) para a violação ao inciso XIII do art. 3º do RGC/2014: aplica-se o valor-base de R$ 1.547.843,80 (um milhão, quinhentos e quarenta e sete mil oitocentos e quarenta e três reais e oitenta centavos), correspondente ao dobro da vantagem auferida em decorrência da prática infracional;
+b) para a violação ao inciso IV do art. 3º do RGC/2014 c/c § 1º do art. 37 do CDC: mantém-se o valor-base de R$ 1.426,94 (um mil quatrocentos e vinte e seis reais e noventa e quatro centavos), calculado a partir da metodologia de multa aprovada pela Resolução Interna nº 219/2023.
+III.2 - Das causas de agravamento e atenuação da pena
+Finalizado o exame quanto aos valores-base das infrações, passo a avaliar as causas de agravamento e atenuação da sanção.
+III.2.1 - Das circunstâncias agravantes
+O RASA, alterado pela Resolução nº 746/2021, estabelece em seu art. 19 as hipóteses de agravamento da pena e seus respectivos percentuais:
+"Art. 19. O valor da multa será acrescido, nos percentuais abaixo, caso incidam as seguintes circunstâncias agravantes:
+I - 10% (dez por cento) para cada caso de reincidência específica, até o limite de 40% (quarenta por cento);
+II - 1% (um por cento) para cada caso de antecedente, até o limite de 20%;
+III - 10% (dez por cento) pela incidência de cada uma das hipóteses previstas no § 3º do art. 9º deste Regulamento, a partir da segunda ocorrência, até o limite de 40% (quarenta por cento) e
+IV - 10% (dez por cento) para cada medida preventiva ou reparatória descumprida no processo de Acompanhamento que precedeu o Pado, até o limite de 40% (quarenta por cento). (Incluído pela Resolução nº 746, de 22 de junho de 2021)
+§ 1º Na hipótese de incidência de mais de um dos incisos deste artigo, deverão ser somados os percentuais relativos a cada fator.
+§ 2º Na hipótese de haver registros computáveis a título de reincidência específica além do suficiente para a incidência do percentual máximo de agravamento previsto no inciso I deste artigo, os excedentes ingressarão na categoria de antecedentes, para o acréscimo previsto no inciso II."
+Em primeira instância, a Área Técnica efetuou o agravamento da pena da empresa com fundamento nos incisos II e III do art. 19:
+Informe nº 328/2023/CODI/SCO:
+"3.61. De acordo com consulta efetuada nos sistemas de controle e utilizando como marco final o dia 31 de março de 2021, relativa ao período de 5 (cinco) anos precedentes a data de término da fiscalização, foi encontrado 1 antecedente, listado no Anexo III - Consulta de antecedentes (SEI 10713569), devendo-se acrescentar ao valor base das multas o percentual de 1% (um por cento), de acordo com o art. 19, II, do Rasa. Também foi acrescentado ao valor base da multas relativas às infrações ao RGC, o percentual de 10% (dez por cento), de acordo com o art. 19, III, do Rasa." 
+Não foram identificadas outras causas de agravamento da pena e a matéria não foi objeto de impugnação específica no Recurso Administrativo, tampouco sendo revisitada pela Área Técnica nessa instância.
+Mantenho o agravamento tal como levado a efeito em 1ª instância, uma vez que a consulta aos antecedentes seguiu os precedentes deste Colegiado e o acréscimo de 10% (dez por cento) é devido em função das transgressões acarretarem vantagem direta (inciso XIII do art. 3º do RGC/2014 e inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do CDC) e atingirem número significativo de usuários (inciso XIII do art. 3º do RGC/2014).
+III.2.2 - Das circunstâncias atenuantes
+O RASA prevê a possibilidade de redução da multa nas seguintes hipóteses, percentuais e condições:
+"Art. 20. O valor da multa será reduzido, nos percentuais abaixo, caso incidam as seguintes circunstâncias atenuantes:
+I - 90% (noventa por cento), nos casos de cessação espontânea da infração e reparação total do dano ao serviço e ao usuário, previamente à ação da Agência;
+II - 70% (setenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, antes da intimação da instauração do Pado ou dentro do prazo estipulado pela Anatel, quando assim ocorrer;
+III - 50% (cinquenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, até o término do prazo para a apresentação de alegações finais em âmbito de Pado;
+IV - 20% (vinte por cento), nos casos de adoção de medidas, pelo infrator, para minimizar os efeitos decorrentes da infração cometida e reparação total ao usuário, quando cabível, até o término do prazo para apresentação de alegações finais nos autos do Pado;
+V - 15% (quinze por cento), nos casos de confissão clara e expressa do infrator acerca da autoria e materialidade do fato apurado, apresentada até o término do prazo para apresentação de defesa.
+§ 1º As circunstâncias atenuantes previstas nos incisos I a IV deste dispositivo não se aplicam em Pados cuja instauração tenha decorrido de processo de Acompanhamento em que medidas reparatórias tenham restado não atendidas.
+§ 2º A reparação total ao usuário, quando cabível, deve ser comprovada à Anatel até o término do prazo para apresentação de alegações finais nos autos do Pado.
+§ 3º O reconhecimento da confissão prevista no inciso V delimitará o prosseguimento processual à apuração dos parâmetros necessários para determinar a sanção.
+§ 4ºA retratação da confissão, de forma clara e expressa, em qualquer instância, torna prejudicada a incidência da atenuante prevista no inciso V e não configura agravamento de pena para efeitos do rito previsto no art. 64, parágrafo único, da Lei nº 9.784, de 1999.
+§ 5º A atenuante prevista no inciso V incidirá sobre o resultado da aplicação das atenuantes previstas nos incisos I a IV deste artigo, caso existentes."
+Não foram identificados fundamentos para a aplicação de qualquer hipótese de atenuação da pena.
+Em suas razões de recurso, a Prestadora sustentou ser cabível a aplicação da atenuante de 90% (noventa por cento), prevista no inciso I supra, em razão de o serviço ter sido suspenso voluntariamente antes da atuação da Agência.
+No entanto, não merece guarida tal alegação. Isso porque não houve, ao contrário do afirmado, a suspensão do serviço antes da atuação da Anatel, tanto que os fiscais, no âmbito da fiscalização, assistiram - e gravaram - a inúmeros programas, conforme apresentado ao longo desta Análise. Ademais, não se comprovou, até o momento, o efetivo ressarcimento aos usuários lesados.
+Dessa maneira, não se justifica, no presente caso, a aplicação de qualquer hipótese de atenuação de pena, razão pela qual mantenho a decisão recorrida quanto ao não cabimento de atenuantes.
+III.3 - Do valor final da multa
+Dadas as razões ao norte debatidas, sugiro as seguintes retificações ao Despacho Decisório nº 182/2023/CODI/SCO, de 21 de agosto de 2023 (SEI nº 10713846):
+a) dar provimento parcial ao Recurso Administrativo unicamente para desconsiderar o ilícito referente ao art. 3º, inciso II, do RGC/2014;
+b) rever de ofício a decisão recorrida para promover as seguintes alterações:
+b.1) quanto à infração ao inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do CDC:
+b.1.1) o Fator Usuários totais (Ut) passará de 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) para 59.207 (cinquenta e nove mil duzentos e sete) e o Fator Usuários atingidos (Ua) de 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) para 32 (trinta e dois); 
+b.1.2) reclassificar a infração de sistêmica para pontual;
+b.1.3) o Fator Tempo ("T") passará de 0,30 (mais de 1 ano) para 0,15 (de 1 dia a 30 dias).
+b.2) quanto à infração ao inciso XIII do art. 3º do RGC/2014, utilizar como valor-base para o cálculo da sanção da quantia de R$ 1.547.843,80 (um milhão, quinhentos e quarenta e sete mil oitocentos e quarenta e três reais e oitenta centavos) referente ao cálculo da vantagem auferida.
+Refeito o cálculo considerando-se os ajustes propostos, o valor da sanção pecuniária deve ser retificado de R$ 1.604.863,74 (um milhão, seiscentos e quatro mil oitocentos e sessenta e três reais e setenta e quatro centavos) para R$ 1.601.583,90 (um milhão, seiscentos e um mil quinhentos e oitenta e três reais e noventa centavos). 
+IV - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 (cento e noventa e três) Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta por 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 9 de agosto de 2021, e alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024. 
+Além disso, a Agenda 2030 foi objeto de alinhamento interno, para o caso brasileiro, sendo o Instituto de Pesquisa Econômica Aplicada (IPEA) o responsável por desenvolver metas brasileiras, conforme seu estudo "ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação"4.
+A matéria em exame guarda relação com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis. Nesse sentido, destaco o caráter educativo do sancionamento imposto em virtude de infrações regulamentares, visando ao comprometimento das Prestadoras dos Serviços de Telecomunicações com as regras que regem o setor, bem como com a qualidade do atendimento e serviços prestados a seus usuários. Ademais, conforme demonstrado nesta Análise, durante todo o trâmite processual, observaram-se os princípios do devido processo legal, ampla defesa e contraditório, motivação dos atos administrativos e transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno desta Casa.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo como foco principal o desenvolvimento humano no Brasil e no Mundo. Nesse contexto, o estudo do IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e revisão de políticas públicas e programas nacionais de desenvolvimento, e evidencia como nosso país está empenhado no cumprimento dessas metas.
+Com essa iniciativa, o Brasil se destaca ao dispor de um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+a) dar provimento parcial ao Recurso Administrativo unicamente para desconsiderar o ilícito referente ao art. 3º, inciso II, do RGC/2014;
+b) rever de ofício a decisão recorrida para promover as seguintes alterações:
+b.1) quanto à infração ao inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do CDC:
+b.1.1) o Fator Usuários totais (Ut) passará de 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) para 59.207 (cinquenta e nove mil duzentos e sete) e o Fator Usuários atingidos (Ua) de 598.124 (quinhentos e noventa e oito mil cento e vinte e quatro) para 32 (trinta e dois); 
+b.1.2) reclassificar a infração de sistêmica para pontual;
+b.1.3) o Fator Tempo ("T") passará de 0,30 (mais de 1 ano) para 0,15 (de 1 dia a 30 dias).
+b.2) quanto à infração ao inciso XIII do art. 3º do RGC/2014, a utilizar como valor-base para o cálculo da sanção da quantia de R$ 1.547.843,80 (um milhão, quinhentos e quarenta e sete mil oitocentos e quarenta e três reais e oitenta centavos) referente ao cálculo da vantagem auferida.
+Em virtude das retificações propostas, rever o valor da sanção aplicada para fixá-la em R$ 1.601.583,90 (um milhão, seiscentos e um mil quinhentos e oitenta e três reais e noventa centavos), nos termos da Planilha SEI 15904763.
+Notas
+[1] MARQUES, Claudia Lima. Contratos no Código de Defesa do Consumidor. 4. ed. São Paulo: RT, 2002.
+[2] OSÓRIO, Fábio Medina. Direito Administrativo Sancionador, 7ª ed., Thomson Reuters.
+[3] MELLO, Rafael Munhoz de. Sanções Administrativas, Revista de Direito Administrativo, v. 267.
+[4] https://repositorio.ipea.gov.br/bitstream/11058/8855/1/Agenda_2030_ods_metas_nac_dos_obj_de_desenv_susten_propos_de_adequa.pdf
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 02/07/2026, às 19:08, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15643580 e o código CRC 49D10F1A.
+ | 
+Referência: Processo nº 53500.009146/2023-41 | 
+SEI nº 15643580 |

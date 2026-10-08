@@ -1,0 +1,42 @@
+SEI/ANATEL - 15949797 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 180, de 10 de julho de 2026
+Processo nº 53500.005818/2025-19
+Recorrente/Interessado: AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO REGULATÓRIO. REAVALIAÇÃO DOS LIMITES MÁXIMOS DE ESPECTRO DE RADIOFREQUÊNCIAS. OBSERVÂNCIA DO PROCEDIMENTO NORMATIVO. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.738, DE 18 DE OUTUBRO DE 2023, AO DECRETO Nº 12.150, DE 20 DE AGOSTO DE 2024, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. SUBMISSÃO À CONSULTA PÚBLICA.
+I. CASO EM EXAME
+1. Proposta de reavaliação dos limites máximos de quantidade de espectro de radiofrequências estabelecidos pela Resolução nº 703, de 1º de novembro de 2018, prevista no item nº 16 da Agenda Regulatória para o biênio 2025-2026.
+2. Processo iniciado em fevereiro de 2025, com constituição de equipe, realização de Tomada de Subsídios, elaboração de Análise de Impacto Regulatório - AIR, Consulta Interna, manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel e encaminhamento à deliberação do Conselho Diretor.
+3. Minuta de Resolução elaborada para atualização dos limites, segmentação das faixas e critérios de apuração, a ser submetida à Consulta Pública pelo prazo de 45 (quarenta e cinco) dias.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a proposta de revisão dos limites máximos de espectro de radiofrequências atende à necessidade de adequação normativa frente às mudanças tecnológicas e concorrenciais do mercado de Serviço Móvel Pessoal - SMP, observando a eficiência, competição e segurança jurídica, bem como o procedimento regulatório previsto.
+III. RAZÕES DE DECIDIR
+1. A Agência Nacional de Telecomunicações - Anatel detém competência legal para revisar limites de espectro, conforme Constituição Federal - CF e Lei nº 9.472/1997.
+2. O processo regulatório observou as etapas previstas na Lei nº 13.848/2019, no Regimento Interno da Anatel - RIA e na Resolução Interna nº 8/2021, incluindo Tomada de Subsídios, AIR, Consulta Interna e manifestação jurídica.
+3. A AIR identificou aumento da concentração no mercado móvel, necessidade de reequilíbrio competitivo e atualização dos limites de espectro.
+4. Proposta técnica recomenda segmentação das faixas em três grupos (abaixo de 1 GHz, entre 1 GHz e 3 GHz, entre 3 GHz e 7,125 GHz) e adoção de limite fixo de 30% (trinta por cento) por grupo econômico, retirando a excursão entre limites mínimos e máximos.
+5. A minuta de Resolução prevê critérios claros para apuração dos limites, atualização das tabelas de faixas e possibilidade de editais estabelecerem limites mais restritivos.
+6. A Consulta Pública oportunizará participação social, análise das alternativas e aprimoramento da proposta normativa.
+7. A decisão fundamenta-se no Decreto Presidencial nº 11.738, de 18 de outubro de 2023, que institui o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, e no Decreto nº 12.150, de 20 de agosto de 2024, que cria a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Também é relevante o Memorando de Entendimento entre Brasil e Estados Unidos, que visa promover boas práticas regulatórias. O programa adota princípios e ações para melhorar a qualidade da regulação e simplificar o processo regulatório.
+8. A proposta normativa observa as recomendações dos estudos apresentados no livro digital “Boas Práticas Regulatórias do QualiREG - Programa de Aprimoramento da Qualidade da Regulação Brasileira” elaborado pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, especialmente a participação da sociedade na construção da proposta regulamentar e o estímulo a um ambiente regulatório mais saudável, modernizando o planejamento e a gestão do espectro.
+9. A atualização da Resolução nº 703/2018 representa uma ação proativa da Agência para cumprir as recomendações da OCDE sobre o papel do regulador na transformação digital. O regulador deve implementar estruturas de planejamento e gestão do espectro que sejam bem desenhadas e transparentes, com abordagens evolutivas de alocação, harmonização técnica avançada e regimes de licenciamento.
+10. A aprovação das normas de gestão do espectro apoia os Objetivos 4 (metas 4.4 e 4.c), 7 (meta 7.a), 8 (meta 8.1), 9 (metas 9.1 e 9.c), 10 (meta 10.2), 11 (metas 11.1, 11.3 e 11.4), 13 (metas 13.1 e 13.3), 16 (metas 16.7) e 17 (meta 17.6) da Agenda 2030 da ONU, promovendo o crescimento sustentável das telecomunicações e criando um ambiente favorável à inovação e ao fortalecimento da economia digital.
+IV. DISPOSITIVO E TESE
+Submissão à Consulta Pública, pelo prazo de 45 (quarenta e cinco) dias, da proposta de Resolução que reavalia os limites máximos de quantidade de espectro de radiofrequências estabelecidos pela Resolução nº 703, de 1º de novembro de 2018.
+Tese de julgamento: "1. A Anatel possui competência para revisar os limites máximos de espectro de radiofrequências. 2. A proposta normativa observa, em juízo preliminar, o procedimento regulatório e critérios de eficiência, competição e segurança jurídica. 3. A segmentação das faixas e a adoção de limite fixo de 30% (trinta por cento) por grupo econômico mostram-se adequadas, em caráter preliminar, para submissão à Consulta Pública. 4. A Consulta Pública é instrumento necessário ao aprimoramento da proposta e à ampliação da participação social".
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 21, XI; Lei nº 9.472/1997, arts. 1º, 19, 127, 157, 160, 161; Lei nº 13.848/2019, arts. 6º, 9º; Resolução nº 612/2013; Resolução nº 703/2018; Resolução nº 772/2025; Resolução Interna nº 8/2021; e, Resolução Interna nº 399/2024.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 66/2026/AF (SEI nº 15867102), submeter à Consulta Pública, pelo prazo de 45 (quarenta e cinco) dias, a proposta de Resolução que reavalia os limites máximos de quantidade de espectro de radiofrequências estabelecidos pela Resolução nº 703, de 1º de novembro de 2018, nos termos da Minuta de Resolução (SEI nº 15273612) e da Minuta de Consulta Pública (SEI nº 15289104).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15949797 e o código CRC F6922B3A.
+ | 
+Referência: Processo nº 53500.005818/2025-19 | 
+SEI nº 15949797 |

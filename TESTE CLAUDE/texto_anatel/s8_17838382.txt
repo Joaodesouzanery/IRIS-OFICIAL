@@ -1,0 +1,52 @@
+SEI/ANATEL - 15942919 - Acórdão
+Boletim de Serviço Eletrônico em 13/07/2026
+DOU de 13/07/2026, seção 1, página 113
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 179, de 09 de julho de 2026
+Processo nº 53500.056639/2023-70
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Circuito Deliberativo nº 167, de 9 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DIREITOS DO CONSUMIDOR EM SERVIÇOS DE TELECOMUNICAÇÕES. COBRANÇA PELO RESTABELECIMENTO DO SERVIÇO E AUSÊNCIA DE DEVOLUÇÃO EM DOBRO. RECURSO DESPROVIDO. REFORMA DE OFÍCIO. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO E AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA. contra decisão da Superintendência de Controle de Obrigações - SCO que aplicou multa por descumprimento dos arts. 85, caput, e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+2. Fatos relevantes. O Procedimento para Apuração de Descumprimento de Obrigações - Pado originou-se de fiscalização regulatória que constatou a cobrança irregular de Taxa de Manutenção de Assinatura para o restabelecimento dos serviços de Serviço de Comunicação Multimídia - SCM e Serviço de Acesso Condicionado - SeAC. Adicionalmente, verificou-se o descumprimento do dever de restituição em dobro dos valores indevidamente auferidos.
+3. As decisões anteriores. A autoridade de primeira instância rejeitou as preliminares, reconheceu a materialidade das infrações, afastou atenuantes, aplicou agravantes e fixou multa no valor de R$ 59.367.657,73 (cinquenta e nove milhões, trezentos e sessenta e sete mil, seiscentos e cinquenta e sete reais e setenta e três centavos), sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) nulidades processuais (vício formal, instrução e litispendência/continência); (ii) admissibilidade do agravamento da sanção em recurso; (iii) materialidade das infrações ao RGC (arts. 85 e 102); (iv) impacto da ausência de dolo na responsabilidade e na conversão da multa em advertência; e (v) revisão da dosimetria (Receita Operacional Líquida - ROL, fatores de cálculo e circunstâncias agravantes/atenuantes).
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Foi interposto tempestivamente por parte legítima e regularmente representada.
+2. O despacho de instauração é válido. O ato indicou os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa.
+3. Não houve cerceamento de defesa. A intimação para alegações finais após o encerramento da instrução observou o art. 82, § 3º, do Regimento Interno da Anatel, e o informe técnico possui natureza de documento preparatório à decisão.
+4. Não se configuraram litispendência, continência ou bis in idem. Os processos apontados pela Recorrente tratam de períodos distintos e de recortes fáticos autônomos.
+5. É possível a reformatio in pejus em sede recursal administrativa, desde que haja prévia intimação da Interessada para manifestação e oitiva da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel. Essas exigências foram observadas no caso.
+6. Restou comprovada a infração ao art. 102, caput, do RGC. A Taxa de Manutenção de Assinatura possuía natureza de cobrança pelo restabelecimento do serviço após suspensão por inadimplência, ainda que lançada sob outra denominação e em momento posterior ao pagamento.
+7. A liberdade de preços no regime privado não afasta a incidência das normas de proteção ao consumidor. A Prestadora deve observar os limites fixados pela regulamentação setorial.
+8. Restou comprovada a infração ao art. 85, caput, do RGC. A Prestadora não demonstrou a devolução em dobro dos valores cobrados indevidamente aos usuários atingidos.
+9. A caracterização das infrações independe de dolo. O descumprimento dos deveres regulamentares é suficiente para a responsabilização administrativa.
+10. Não cabe advertência. As infrações foram consideradas graves, houve vantagem direta à Prestadora e a cessação da conduta ocorreu fora do prazo fixado pela Anatel.
+11. A utilização da ROL de 2021 foi correta. Tratava-se da receita operacional líquida anual mais próxima e disponível na Agência no momento da aplicação da sanção de primeira instância.
+12. Não são cabíveis as atenuantes pleiteadas. A cessação da conduta ocorreu fora do prazo estipulado pela Anatel e não houve comprovação de reparação integral aos usuários.
+13. Mantêm-se as agravantes aplicadas. Houve incidência de mais de uma hipótese de gravidade e descumprimento de medida reparatória no processo de acompanhamento que precedeu o Pado.
+14. A dosimetria exige ajuste de ofício. O fator tempo das infrações ao art. 102 do RGC deve ser alterado de “mais de um ano” para “até um ano”, e o fator dano deve ser fixado em 5, por se tratar de danos materiais decorrentes de cobrança indevida.
+15. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+16. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a segurança jurídica no setor de telecomunicações.
+17. A fundamentação alinha-se às melhores práticas regulatórias da OCDE, na medida em que reafirma uma governança eficiente dos limites da responsabilidade das prestadoras.
+18. A decisão corrobora com o Objetivo 16 (meta 16.7) da Agenda 2030 da Organização das Nações Unidas, ao promover a segurança jurídica e contribuir para a redução da litigiosidade administrativa.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido. Reforma de ofício.
+Tese de julgamento: "1. O despacho de instauração é válido quando indica os fatos apurados, as normas definidoras das infrações e as sanções aplicáveis, sem necessidade de prévia definição do valor da multa. 2. Não há nulidade por ausência de nova intimação entre as alegações finais e a elaboração de informe técnico preparatório. 3. Não há litispendência, continência ou bis in idem entre Pados que apuram fatos e períodos distintos. 4. É possível o agravamento da sanção em sede recursal administrativa, desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel. 5. Configura infração ao art. 102, caput, do RGC a cobrança de Taxa de Manutenção de Assinatura vinculada ao restabelecimento do serviço após suspensão por inadimplência. 6. Configura infração ao art. 85, caput, do RGC a ausência de devolução em dobro dos valores cobrados indevidamente. 7. A caracterização das infrações aos arts. 85 e 102 do RGC independe de dolo. 8. Não cabe advertência nem aplicação de atenuantes quando a cessação da conduta ocorre fora do prazo fixado pela Anatel e não há comprovação de reparação integral aos usuários. 9. A ROL a ser utilizada no cálculo da multa é a anual disponível na Agência mais próxima ao momento da aplicação da sanção. 10. Impõe-se a reforma, de ofício, da dosimetria para ajustar os fatores tempo e dano das infrações ao art. 102 do RGC.
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 126, 127, 128 e 173; Lei nº 9.784/1999, art. 64, parágrafo único; Código de Processo Civil - CPC, art. 56; Resolução nº 589/2012, arts. 9º, § 3º, 12, 19 e 20; Resolução nº 612/2013, arts. 82, 115, § 1º, 116 e 125, §§ 3º e 4º; Resolução nº 632/2014, arts. 85 e 102; e Resolução Interna Anatel nº 219/2023, itens 4.1, 5.1.4 e 5.1.7.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 74/2026/AF (SEI nº 15899261), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento; e,
+b) reformar, de ofício, o valor da multa para R$ 59.637.763,72 (cinquenta e nove milhões, seiscentos e trinta e sete mil, setecentos e sessenta e três reais e setenta e dois centavos), em razão da necessidade de ajuste nos fatores "tempo" (T) e "dano (D)", de "mais de um ano" para "até um ano", e de "4" para "5", respectivamente, aplicado às infrações ao art. 102 do Regulamento Geral de Direitos do Consumidor, diante da cobrança indevida ao usuário.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 09/07/2026, às 20:42, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15942919 e o código CRC 110EC267.
+ | 
+Referência: Processo nº 53500.056639/2023-70 | 
+SEI nº 15942919 |

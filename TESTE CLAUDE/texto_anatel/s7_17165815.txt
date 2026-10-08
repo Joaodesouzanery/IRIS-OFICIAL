@@ -1,0 +1,263 @@
+SEI/ANATEL - 15344439 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 26/2026/NP
+Processo nº 53545.000711/2024-79
+Interessado: Oseias Campanha
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto por OSEIAS CAMPANHA contra o Despacho Decisório nº 622/2025/CODI/SCO (SEI nº 14475046), da Superintendência de Controle de Obrigações da Agência Nacional de Telecomunicações, que negou provimento ao recurso apresentado anteriormente, mantendo, em todos os seus termos, a decisão constante do Despacho Decisório nº 234/2025/GR01CO/GR01/SFI (SEI nº 14202063).
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. USO NÃO AUTORIZADO DE RADIOFREQUÊNCIA E USO DE EQUIPAMENTO NÃO HOMOLOGADO. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por Oseias Campanha contra o Despacho Decisório nº 622/2025/CODI/SCO, que negou provimento a recurso anterior e manteve o Despacho Decisório nº 234/2025/GR01CO/GR01/SFI.
+2. Fato relevante. Fiscalização identificou transmissão de radiodifusão sonora em FM na frequência 94,7 MHz sem autorização de uso de radiofrequência e com equipamento transmissor sem homologação da Anatel, com apreensão do equipamento.
+3. Decisão recorrida. Aplicação de sanção de advertência cumulada com multa no valor de R$ 3.063,53 (três mil sessenta e três reais e cinquenta e três centavos).
+II. QUESTÃO EM DISCUSSÃO
+4. Há duas questões em discussão: (i) saber se as infrações por uso não autorizado de radiofrequência e por uso de equipamento não homologado restaram comprovadas; e (ii) saber se a alegada incapacidade econômica afasta ou autoriza a revisão das sanções aplicadas.
+III. RAZÕES DE DECIDIR
+5. O recurso preenche os requisitos de admissibilidade e foi tempestivo, nos termos do Regimento Interno da Anatel - RIA-Anatel.
+6. A fiscalização confirmou a transmissão em 94,7 MHz em local e coordenadas identificados, sem autorização nos sistemas da Anatel e com transmissor caseiro sem homologação.
+7. A negativa genérica do recorrente não afasta a materialidade e a autoria das infrações constatadas na ação fiscalizatória realizada em conjunto com a Polícia Federal.
+8. A alegação de insuficiência financeira não afasta a responsabilidade administrativa nem autoriza o perdão da sanção aplicada.
+9. O uso de equipamento não homologado admite sancionamento por advertência, por se tratar de infração de gradação leve, nas circunstâncias do caso.
+10. O uso não autorizado de radiofrequência configura infração grave, com imposição de multa, sem possibilidade de conversão em advertência.
+11. O valor da multa observou a metodologia aplicável e os parâmetros utilizados foram considerados corretos.
+IV. DISPOSITIVO E TESE
+12. Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. A operação de radiodifusão sonora em FM sem autorização de uso de radiofrequência e com transmissor não homologado, quando comprovada em fiscalização, caracteriza infrações administrativas. 2. A alegação de incapacidade econômica não afasta a responsabilidade do infrator nem autoriza, por si só, a desconstituição das sanções aplicadas. 3. Mantêm-se a advertência pelo uso de equipamento não homologado e a multa pelo uso não autorizado de radiofrequência, quando observadas a classificação da infração e a metodologia de cálculo aplicável."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 163 e 173; Lei nº 9.784/1999; Resolução nº 612/2013 (Regimento Interno da Anatel), arts. 115, § 6º, e 116; Resolução nº 671/2016, arts. 15 e 59, I; Resolução nº 715/2019, arts. 55 e 83, I; Resolução nº 589/2012, arts. 2º, II e VIII, 9º, § 3º, VII, 12, I, e 19; Resolução Interna nº 188/2023; Resolução nº 637/2014.
+Jurisprudência relevante citada: Anatel, Acórdão nº 32, de 19 de fevereiro de 2025, Processo nº 53554.002752/2023-18, Rel. Conselheiro Daniel Martins D Albuquerque, Reunião nº 940, de 13 de fevereiro de 2025.
+REFERÊNCIAS
+Constituição da República Federativa do Brasil de 1998.
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT.
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal - LPA.
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento para Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+Resolução nº 671, de 3 de novembro de 2016, que aprova o Regulamento de Uso do Espectro de Radiofrequências - RUE - e altera o Regulamento de Cobrança de Preço Público pelo Direito de Uso de Radiofrequências e o Regulamento de Aplicação de Sanções Administrativas.
+Resolução nº 715, de 23 de outubro de 2019, aprova o Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações (RACH).
+Resolução Interna nº 188, de 6 de fevereiro de 2023, que dispõe sobre a metodologia de cálculo do valor-base das sanções de multa relativa à execução sem outorga de serviço de telecomunicações ou ao uso não autorizado do espectro de radiofrequências.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por OSEIAS CAMPANHA, inscrito no CPF nº ***.310.381-**, contra o Despacho Decisório nº 622/2025/CODI/SCO (SEI nº 14475046), de 17 de outubro de 2025, da Superintendência de Controle de Obrigações da Agência Nacional de Telecomunicações, que negou provimento ao recurso apresentado anteriormente, mantendo, em todos os seus termos, a decisão constante do Despacho Decisório nº 234/2025/GR01CO/GR01/SFI (SEI nº 14202063), de 18 de agosto de 2025, que aplicou sanção de advertência cumulada com multa, no valor de R$ 3.063,53 (três mil, sessenta e três reais e cinquenta e três centavos), em desfavor do Recorrente, por uso não autorizado de radiofrequência, no serviço de Radiodifusão Sonora em Frequência Modulada, e por utilização de equipamento transmissor de radiofrequência sem a devida homologação da Anatel.
+Dos Fatos
+O presente processo foi instaurado no SEI por meio do Auto de Infração nº MT202411130849 (SEI nº 12883260), de 13 de novembro de 2024, em decorrência das irregularidades constatadas na Ação de Fiscalização nº UO071_2024_0074 e descrita no Relatório de Fiscalização nº 68/2024/UO071/GR07/SFI (SEI nº 13596948). 
+A fiscalização ocorreu em conjunto com a Polícia Federal de Cuiabá/MT, onde se identificou o local do estúdio da Web Rádio Cultura Mix - FM 94,7 MHz, na Rua Governador Frederico Sólon, nº 5, Bairro Itororó - Cuiabá/MT - CEP: 78138-790, e, durante a abordagem, no local encontrava-se o responsável que, ao ser questionado sobre a licença da rádio, informou que não possuía, assim como nenhum outro documento que autorizasse o funcionamento.
+Constataram-se as irregularidades descritas no quadro abaixo.
+ Item
+ | 
+ Descrição da(s) irregularidade(s)
+ | 
+ Situação Constatada
+ | 
+ Dispositivo(s) infringido(s)
+ | 
+ Sanção Cabível
+ | 
+ 1
+ | 
+ Uso não autorizado de radiofrequência
+ | 
+ Transmissão de sinal de radiodifusão sonora em FM na frequência 94,7 MHz a partir das seguintes Coordenadas Geográficas: Latitude -15.660278° / Longitude -56.172222°, Várzea Grande/MT.
+ | 
+ Art. 15 e art. 59, I, do Regulamento de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+ | 
+ Art. 173 da LGT
+ | 
+ 2
+ | 
+ Uso de equipamento não homologado pela Anatel por radiodifusor.
+ | 
+ Uso de equipamento transmissor de radiofrequência de fabricação caseira, sem homologação da Anatel.
+ | 
+ Art. 83, I, do Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019.
+ | 
+O Auto de Infração foi recebido pelo próprio Recorrente que se manteve silente inclusive após o recebimento, em 8 de julho de 2025, de intimação para apresentação de alegações finais (SEI nº 14147425) realizada por meio do Ofício nº 802/2025/GR01CO/GR01/SFI-ANATEL (SEI nº 13932062).
+Em 18 de agosto de 2025, foi expedido pela Área Técnica o Informe nº 411/2025/GR01CO/GR01/SFI (SEI nº 14196127), apresentando a conclusão que o procedimento estaria devidamente instruído e restariam caracterizadas as infrações. Opinou-se pela aplicação de sanção de advertência cumulada com multa, em face de OSEIAS CAMPANHA, inscrito no CPF nº ***.310.381-**, no valor total de R$ 3.063,53 (três mil sessenta e três reais e cinquenta e três centavos), com fundamento no art. 173, I e II, da LGT.
+Em seguida, o Gerente Regional da Anatel no Estado de São Paulo decidiu aplicar as sanções sugeridas pela Área Técnica e expediu o Despacho Decisório nº 234/2025/GR01CO/GR01/SFI (SEI nº 14202063), também em 18 de agosto de 2025.
+O Recorrente foi cientificado da decisão por meio do Ofício nº 1074/2025/GR01CO/GR01/SFI-ANATEL (SEI nº 14218992), tendo recebido pessoalmente esta intimação em 27 de agosto de 2025, conforme informação constante do Aviso de Recebimento (SEI nº 14412990).
+Em 28 de agosto de 2025, foi interposto Recurso Administrativo (SEI nº 14277355), no qual o Recorrente afirma não operar rádio clandestina e requer a reconsideração da decisão que aplicou a multa, alegando, ainda, não possuir condições de arcar com o seu pagamento.
+Em 29 de agosto de 2025, foi atribuído efeito suspensivo à sanção aplicada, conforme Certidão SEI nº 14284369.
+Na sequência, a Área Técnica se manifestou por meio do Informe nº 70/2025/GR10CO/GR10/SFI (SEI nº 14462022), sugerindo o conhecimento do recurso e seu não provimento.
+Nos termos do Despacho Decisório nº 44/2025/GR10CO/GR10/SFI (SEI nº 14462029), de 30 de setembro de 2025, pelas razões e justificativas constantes no Informe nº 70/2025/GR10CO/GR10/SFI (SEI nº 14462022), o Gerente Regional da Anatel nos Estados do Pará, Maranhão e Amapá decidiu conhecer do Recurso Administrativo interposto e encaminhar os autos à Superintendente de Controle de Obrigações (SCO) para prosseguimento do feito.
+Conforme Despacho Decisório nº 622/2025/CODI/SCO, de 17 de outubro de 2025 (SEI nº 14475046), a SCO decidiu negar provimento ao Recurso Administrativo, mantendo a decisão recorrida. 
+O Recorrente foi notificado dessa decisão em 17 de novembro de 2025, conforme AR SEI nº 14870586, por meio do Ofício nº 88/2025/GR10CO/GR10/SFI-ANATEL (SEI nº 14641808).
+Em 19 de novembro de 2025, foi apresentado novo Recurso Administrativo (SEI nº 14781135). 
+Em suas razões, o Recorrente reitera não possuir rádio clandestina e pede "misericórida e coerência" para rever a multa aplicada, alegando, em suma, "não ter condições de pagar tamanha multa" pois não teria "carteira assinada" e teria uma "situação financeira arruinada" e "nome sujo".
+Em 21 de novembro de 2025, foi atribuído efeito suspensivo à sanção aplicada, conforme Certidão SEI nº 14791673.
+A Área Técnica analisou o segundo Recurso Administrativo apresentado, por meio do Informe nº 90/2025/GR10CO/GR10/SFI (SEI nº 14895300), de 14 de janeiro de 2026, sugerindo à Superintendente de Controle de Obrigações o conhecimento do Recurso e que o Conselho Diretor negue provimento ao mesmo.
+ A SCO, então, decidiu por conhecer do Recurso e encaminhá-lo ao Conselho Diretor para análise de mérito, conforme Despacho Decisório nº 22/2026/CODI/SCO (SEI nº 15036572), de 27 de fevereiro de 2026.
+Por meio da Matéria para Apreciação do Conselho Diretor nº 24/2026 (SEI nº 15036576) os autos foram encaminhados ao Conselho Diretor.
+Em 5 de março de 2026, o presente processo foi sorteado para minha relatoria (SEI nº 15276360).
+É o relatório, passo à análise.
+fundamentação
+A instauração e instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, segundo dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal - LPA, e o Regimento Interno da Anatel - RI-Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A fundamentação da presente Análise encontra-se dividida em 5 (cinco) partes. Na primeira, examinarei a admissibilidade do Recurso Administrativo. Na segunda parte, verificarei o enquadramento das infrações. A terceira parte avaliará o mérito recursal. Na quarta parte, abordarei o sancionamento imposto ao Recorrente. Na última parte, procederei à avaliação quanto à conformação do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+I. Da admissibilidade do recurso
+Quanto aos requisitos de admissibilidade, constata-se que o Recorrente possui interesse na reforma da decisão proferida pela SCO, está regularmente representado e não há contrariedade a entendimento fixado em Súmula pela Agência.
+Observa-se ainda que a apresentação do Recurso Administrativo se deu no prazo de até 10 (dez) dias estabelecido pelo art. 115, § 6º, do RI-Anatel, conforme relatado e demonstrado pela Área Técnica, sendo seu protocolo tempestivo.
+Presentes os pressupostos de admissibilidade do Recurso Administrativo, previstos no art. 116 do RI-Anatel, mostra-se acertada a decisão da SCO, contida no Despacho Decisório nº 22/2026/CODI/SCO (SEI nº 15036572), de 27 de fevereiro de 2026.
+II. Do enquadramento da infração
+Cuida a presente Análise de processo administrativo sancionatório instaurado em virtude de o Recorrente ter feito uso não autorizado de radiofrequência, no serviço de Radiodifusão em Frequência Modulada (FM), e ter utilizado equipamento sem a devida homologação da Anatel.
+Com relação ao uso não autorizado de radiofrequência, a infração ofende o disposto no art. 163 da Lei Geral de Telecomunicações - LGT c/c art. 15 e art. 59, I, do Regulamento de Uso do Espectro de Radiofrequências - RUE, aprovado pela Resolução nº 671, de 3 de novembro de 2016:
+Lei Geral de Telecomunicações
+Art. 163. O uso de radiofreqüência, tendo ou não caráter de exclusividade, dependerá de prévia outorga da Agência, mediante autorização, nos termos da regulamentação.
+Regulamento de Uso do Espectro de Radiofrequências:
+Art. 15. O uso de radiofrequências, faixa ou canal de radiofrequências, tendo ou não caráter de exclusividade, dependerá de prévia outorga da Anatel, mediante autorização, salvo o disposto no inciso II do § 2º e no inciso I do § 3º do art. 1º.
+(...)
+Art. 59. Constitui uso não autorizado de radiofrequências:
+I - uso de radiofrequência, faixa ou canal de radiofrequências por interessado que não possua autorização; ou,
+A infração de uso de equipamento não homologado pela Agência se enquadra art. 55, caput e art. 83, I, do Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações - RACH, aprovado pela Resolução nº 715, de 23 de outubro de 2019:
+Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações:
+Art. 55. A homologação é pré-requisito obrigatório para a utilização e a comercialização, no País, dos produtos abrangidos por este Regulamento.
+(...)
+Art. 83. São condutas passíveis de sancionamento, observada a legislação e a regulamentação específica:
+I - comercialização e uso de produtos não homologados ou em condições diversas das estabelecidas nos respectivos Requisitos Técnicos;
+III. Do mérito
+Como demonstrado nos autos, em especial no Relatório de Fiscalização nº 68/2024/UO071/GR07/SFI (SEI nº 13596948), a fiscalização da Anatel identificou a transmissão de sinal de radiodifusão sonora em FM na frequência 94,7 MHz a partir das coordenadas geográficas de latitude -15.660278° e longitude -56.172222°, em Várzea Grande/MT, com a utilização de equipamento transmissor sem homologação da Anatel. 
+O responsável foi autuado administrativamente e os equipamentos que evidenciam o desenvolvimento de atividade clandestina de telecomunicações foram apreendidos. 
+Registre-se que a identificação do endereço foi retificada pela Prefeitura Municipal de Cuiabá para Rua Governador Frederico Sólon, nº 5, Bairro Itororó - Cuiabá/MT - CEP: 78138-790.
+No Recurso Administrativo em análise (SEI nº 14781135), o Recorrente alega que não possui rádio clandestina. Em suas justificativas, requer o perdão da multa que lhe fora aplicada, alegando não possuir carteira assinada e estar em situação financeira "arruinada".
+Tais alegações, no entanto, não possuem o condão de descaracterizar as infrações cometidas ou afastar a aplicação da sanção cabível.
+Como demonstrado na instrução da Área Técnica, as infrações restaram comprovadas pela Anatel e pela Polícia Federal. Vide trecho transcrito a seguir:
+Informe nº 70/2025/GR10CO/GR10/SFI (SEI nº 14462022)
+"3.15. Analisando sua peça recursal, observa-se que, na primeira razão apresentada pelo Recorrente, dá-se a negativa da operacionalização da rádio clandestina flagrada pela Anatel. Sobre o tema, requer, ainda, que seja feita nova verificação, para a comprovação de sua tese.
+3.16. Ocorre, no entanto, que o uso não autorizado de radiofrequência, na execução clandestina de serviço de radiodifusão sonora em frequência modulada, por meio de equipamento não homologado, restou evidenciado não somente pela Anatel, mas também pela Polícia Federal, eis que a inspeção realizada deu-se em apoio ao cumprimento de Mandado de Busca da Polícia Federal (SEI nº 12909219, no Processo de Fiscalização nº 53504.009804/2024-45), conforme descrito no Relatório de Fiscalização nº 68/2024/UO071/GR07/SFI (SEI 13596948):
+"8.1.1. A fiscalização ocorreu em conjunto com a Polícia Federal de Cuiabá/MT;
+8.1.2. Durante a monitoração do espectro confirmou-se a presença da portadora na frequência 94,7 MHz, conforme Registro Fotográfico (SEI nº 12922257 ), no endereço constante no processo indicado no Mandado de busca (Rua Trinta e Cinco – Qd 46 – Lote 05, Bairro Jardim Itororó , Várzea Grande/MT, CEP: 78138-785) o qual foi retificado para Rua Governador Frederico Sólon, nº 5, bairro Itororó - Cuiabá/MT - CEP: 78138-790, pela Prefeitura, mas tratando-se do mesmo local confirmado pela monitoração espectro e coordenadas geográficas retiradas anteriormente;
+8.1.3. Em consulta ao banco de dados da Anatel, Sistema Mosaico - Canais de radiodifusão não foi encontrada nenhuma autorização para a frequência 94,7 MHz (SEI nº 12922330 ), bem como no SRD- Sistema de Controle de Radiodifusão, não foi encontrado nenhum registro de RADCOM para a localidade de Várzea Grande/MT, (SEI nº 12922336);
+8.1.4. Identificou-se o local do estúdio da rádio na Rua Governador Frederico Sólon, nº 5, bairro Itororó - Cuiabá/MT - CEP: 78138-790, e durante a abordagem, no local encontrava-se a responsável Sr. OSEIAS CAMPANHA , CPF ***.310.381-** que ao ser questionada sobre a licença da rádio informou que não possuía e nenhum outro documento que autoriza-se o funcionamento;
+8.1.5. A rádio foi identificada como Web Rádio Cultura Mix - FM 94,7 MHz, e entidade OSEIAS CAMPANHA, de Varzea Grande/MT, CPF ***.310.381-**, em consulta ao sitio da Receita Federal verificou-se que o cadastro encontra-se ativo, (SEI nº 12922687);
+8.1.6. O Sr. OSEIAS CAMPANHA foi cientificado que, devido a falta de autorização, a emissora FM teria seu funcionamento interrompido e solicitou-se que apresentasse o transmissor utilizado na transmissão;
+8.1.6.1. Foi realizada perícia no transmissor o qual apresentou as seguintes características:
+ Fabricante / Modelo
+ | 
+ Caseiro / Generico
+ | 
+ Nº Série
+ | 
+ Não Tem
+ | 
+ Homologação Anatel
+ | 
+ Não Tem
+ | 
+ Frequência medida
+ | 
+ 94,7 MHz
+ | 
+ Potência medida
+ | 
+ 1,7 Watts
+ | 
+ Estado de conservação
+ | 
+ Usado
+ | 
+ Valoração
+ | 
+ Sem referência
+ | 
+8.1.6.2. Instrumentos utilizados:
+* Analisador de Espectro Anritsu - Modelo: MS270T - Patrimônio n° 6923809;
+* Power Meter Rohde & Schwarz - Modelo NRT - Patrimônio n° 6960786;
+8.1.6.3. O equipamento transmissor utilizado foi apreendido e identificado pelo lacre nº 0003618;"
+(Grifos Nossos)
+3.17. Do exposto, tem-se que o próprio Recorrente recebeu a Anatel e a Polícia Federal, na incursão realizada, tendo assinado os documentos produzidos in loco, e sido intimado, pessoalmente, para o ato processual que inaugurou o feito."
+Verifico que as conclusões constantes do Informe nº 70/2025/GR10CO/GR10/SFI (SEI nº 14462022) evidenciam de forma clara e robusta o uso não autorizado de radiofrequência e a utilização de equipamento de telecomunicações sem homologação emitida pela Anatel, em manifesta desconformidade com a regulação setorial.
+A Área Técnica demonstra que a unidade estava em funcionamento sem o cumprimento dos requisitos essenciais de conformidade operacional e regulatória, no que se refere às condições de outorga e ao uso de equipamentos estabelecidos pela regulamentação vigente. Tal constatação configura descumprimento das obrigações impostas ao responsável pela instalação, impondo a adoção das medidas corretivas cabíveis por esta Agência.
+Restou evidenciado que as operações eram realizadas sob a responsabilidade de Oseias Campanha, CPF nº ***.310.381-**, conforme o Termo de Qualificação (SEI nº 12883267), anexo ao Auto de Infração MT202411130849 (SEI nº 12883260).
+Ressalte-se que o responsável recebeu a equipe de fiscalização e a Polícia Federal pessoalmente, conforme consta no Relatório de Fiscalização nº 68/2024/UO071/GR07/SFI (SEI nº 13596948), citado no Informe nº 70/2025/GR10CO/GR10/SFI (SEI nº 14462022).
+Quanto à alegada incapacidade econômica, verifico que também não merece prosperar.
+A Área Técnica sustenta que essa motivação não ampara a isenção da aplicação da sanção. Veja-se no excerto:
+Informe nº 90/2025/GR10CO/GR10/SFI (SEI nº 14895300)
+"3.18. Em seguimento, no que tange ao argumento sobre falta de condições econômicas e financeiras para arcar com o pagamento da multa, cabe esclarecer que o fato de estar desempregado não tem, também, o condão de isentá-lo de atender os normativos para a execução do serviço, e tampouco de ser responsabilizado e penalizado pela atuação irregular fartamente comprovada nos autos.
+3.19. A infração cometida pelo Recorrente, e atinente ao uso não autorizado de radiofrequência, tem natureza grave, não podendo ser desconsiderada e tampouco sua penalidade pode ser perdoada ou convertida em advertência, por expressa disposição normativa (art. 12 do Rasa). Não obstante, não há empecilho a que o Recorrente solicite o parcelamento da pena pecuniária, nos termos do Regulamento de Parcelamento de Créditos Não Tributários Administrados pela Anatel, aprovado pela Resolução nº 637/2014."
+Concordo integralmente com a conclusão apresentada pela Área Técnica, a qual demonstra, de forma clara e fundamentada, que a alegação do Recorrente quanto à falta de condições econômicas e financeiras não possui o condão de afastar sua responsabilidade pela infração cometida, tampouco de justificar a isenção da sanção aplicada. Ademais, sequer foi apresentada pelo recorrente qualquer prova de sua vulnerabilidade econômica.
+A irradiação de radiofrequência de maneira não autorizada pela Anatel pode comprometer a regular concessão de novas autorizações pela Agência na região, na medida em que a operação irregular pode gerar sobreposição indevida de cobertura e potencial interferência sobre serviços futuros. Isso decorre do fato de que a análise de novos licenciamentos baseia-se nos parâmetros das estações devidamente licenciadas e em operação regular, circunstância comprometida pela ação do Recorrente, em que a emissão eletromagnética irradiada pela radiodifusora não autorizada era completamente desconhecida da Anatel.
+Ressaldo ainda que a utilização de radiofrequências sem autorização da Anatel, bem como o emprego de equipamentos não homologados, possuem potencial para gerar interferências prejudiciais aos demais serviços de telecomunicações regularmente outorgados pela Agência, comprometendo sua adequada fruição e, em última instância, ocasionando danos à própria coletividade que deles se beneficia.
+Diante do exposto, acolho integralmente as conclusões da Área Técnica, reputo como reprovável a conduta da transmissora e dou prosseguimento avaliando a adoção das penalidades.
+IV. Do sancionamento
+O art. 173 da LGT prevê as seguintes sanções:
+Lei Geral de Telecomunicações
+"Art. 173. A infração desta Lei ou das demais normas aplicáveis, bem como a inobservância dos deveres decorrentes dos contratos de concessão ou dos atos de permissão, autorização de serviço ou autorização de uso de radiofreqüência, sujeitará os infratores às seguintes sanções, aplicáveis pela Agência, sem prejuízo das de natureza civil e penal:
+I - advertência;
+II - multa;
+III - suspensão temporária;
+IV - caducidade;
+V - declaração de inidoneidade."
+Como mencionado anteriormente, no caso em análise estão sendo consideradas duas infrações cometidas: (i) a utilização de equipamento sem a devida homologação da Anatel; e (ii) o uso não autorizado de radiofrequência, no serviço de Radiodifusão Sonora em Frequência Modulada.
+Com relação à primeira infração, por considerá-la de gradação leve, a Área Técnica propõe a aplicação da sanção de advertência, sob o seguinte entendimento:
+Informe nº 411/2025/GR01CO/GR01/SFI (SEI nº 14196127)
+"3.30. A infração de uso de equipamento não homologado, segundo o Conselho Diretor da Anatel, em princípio, é de gradação leve.
+3.31. Para as infrações que são de gradação leve, é possível a aplicação de sanção de advertência, caso não se justifique a imposição de pena mais grave, nos termos do art. 12, I, do RASA, com redação dada pela Resolução nº 746, de 22 de junho de 2021:
+Art. 12. A Agência aplicará a sanção de advertência quando da ocorrência de uma das seguintes alternativas:
+I - não justifique a imposição de pena mais grave ao infrator;
+(...)
+3.32. Um dos motivos para não ser aplicada advertência e sim sanção de multa a infrações de natureza leve, é a existência de reincidência específica. No presente caso, no entanto, não há registro neste sentido.
+3.33. Assim, para a irregularidade consistente em uso de produto não homologado que utiliza o espectro radioelétrico, cabível a aplicação de sanção de advertência."
+De fato, o Conselho Diretor tem entendimento consolidado de que, para este tipo de caso e considerando que durante a fiscalização não se identificou a ocorrência de interferência prejudicial, é aplicável o disposto no art. 12, I, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012:
+Regulamento de Aplicação de Sanções Administrativas
+"Art. 12. A Agência aplicará a sanção de advertência quando da ocorrência de uma das seguintes alternativas:
+I - não justifique a imposição de pena mais grave ao infrator; ou,
+(...)"
+Tal entendimento mostra-se expresso, por exemplo, no Acórdão nº 32, de 19 de fevereiro de 2025 (SEI nº 13311971):
+Acórdão nº 32, de 19 de fevereiro de 2025
+"Processo nº 53554.002752/2023-18
+Recorrente/Interessado: ANTONIO FRANCISCO MARQUES COELHO
+CPF nº ***.396.438-**
+Conselheiro Relator: Daniel Martins D Albuquerque
+Fórum Deliberativo: Reunião nº 940, de 13 de fevereiro de 2025
+EMENTA
+RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. USO NÃO AUTORIZADO DE RADIOFREQUÊNCIA. USO DE EQUIPAMENTO NÃO HOMOLOGADO. EXECUÇÃO DO SERVIÇO DE RADIODIFUSÃO SONORA EM FREQUÊNCIA MODULADA - FM SEM A DEVIDA OUTORGA DE SERVIÇO E DE USO DE RADIOFREQUÊNCIA. LACRAÇÃO E APREENSÃO DE EQUIPAMENTOS. INFRAÇÃO DE NATUREZA GRAVE. APLICAÇÃO DE ADVERTÊNCIA E MULTA. RECURSO ADMINISTRATIVO CONHECIDO E NÃO PROVIDO.
+1. Materialidade e autoria da prestação de Serviço de Radiodifusão Sonora em Frequência Modulada - FM e do uso de radiofrequência sem a devida outorga foram confirmadas.
+2. Constatando-se o desenvolvimento clandestino de atividades de telecomunicações, o Agente de Fiscalização poderá interromper cautelarmente o funcionamento de estação, bem como lacrar e apreender bens, produtos e serviços, lavrando os correspondentes termos, conforme determinam os arts. 34 e 35 da Resolução nº 746, de 22 de junho de 2021.
+3. O uso não autorizado de radiofrequências deve ser considerado infração de natureza grave, nos termos do art. 9º, § 3º, inciso VII, do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012, com redação dada pela Resolução nº 746, de 22 de junho de 2021, para a qual não cabe aplicação de sanção de advertência, conforme art. 12, parágrafo único, inciso II, do mesmo regulamento.
+4. O uso de equipamento não homologado deve ser considerado infração de natureza leve, nos termos do art. 9º, § 1º, do RASA, para a qual se aplica a sanção de advertência, conforme art. 12, caput, inciso I, do mesmo regulamento.
+5. A sanção de multa foi aplicada conforme metodologia que considera os parâmetros objetivos estabelecidos na regulamentação.
+6. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 4/2025/DD (SEI nº 13173242), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto e os Conselheiros Substitutos Daniel Martins D Albuquerque e Vinícius Oliveira Caram Guimarães."
+(Grifei)
+Já com relação à infração de uso não autorizado de radiofrequência, há que se considerar, para a definição de sua gradação, o disposto no RASA, art. 9º, §3º, inciso VII:
+Regulamento de Aplicação de Sanções Administrativas
+Art. 9º (...)
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas:
+(...)
+VII - uso não autorizado de radiofrequências ou exploração de serviço de telecomunicações sem autorização da Anatel.
+A Área Técnica se manifestou pela caracterização da infração como grave. Veja-se:
+Informe nº 411/2025/GR01CO/GR01/SFI (SEI nº 14196127)
+"3.23. A infração de uso não autorizado de radiofrequência é considerada grave, nos termos do art. 9º, § 3º, inciso VII, do RASA, com redação dada pela Resolução nº 746, de 22 de junho de 2021, devendo, por essa razão, ser aplicada a sanção de multa:
+Art. 9º As infrações são classificadas, segundo sua natureza e gravidade, em:
+(...)
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+(...)
+VII - uso não autorizado de radiofrequências ou exploração de serviço de telecomunicações sem autorização da Anatel. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+(...)
+3.24. A sanção de multa deve ser aplicada seguindo os parâmetros da Resolução Interna nº 188, de 06 de fevereiro de 2023, que dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa à execução sem outorga de serviço de telecomunicações ou ao uso não autorizado do espectro de radiofrequências, como será referido adiante.
+3.25. Quanto às circunstâncias agravantes, importam os registros de sanção administrativa aplicadas à entidade que constam nos sistemas da Anatel, nos termos do art. 2º, II e VIII, do RASA:
+Art. 2º. Para fins deste Regulamento aplicam-se as seguintes definições:
+(...)
+II – antecedente: registro de sanção administrativa imposta pela Agência, precedente no tempo em prazo não superior a 5 (cinco) anos, contado do trânsito em julgado administrativo do Pado (Procedimento para Apuração de Descumprimento de Obrigações) até a data do cometimento da nova infração, excluído o caso de reincidência específica;
+(...)
+VIII – reincidência específica: repetição de falta de igual natureza, no período de 5 (cinco) anos contado do trânsito em julgado administrativo do Pado, até a data do cometimento da nova infração;
+3.26. Em consulta aos sistemas da Anatel, não se identificou aplicação de sanção ao autuado neste intervalo de tempo, motivo pelo qual não incide circunstância agravante do art. 19 do RASA."
+Dessa forma, resta clara a classificação da infração como grave, não cabendo a possibilidade de conversão da sanção em advertência. Ainda, foi correta a utilização da metodologia aprovada pela Resolução Interna nº 188, de 6 de fevereiro de 2023, que dispõe sobre a metodologia de cálculo do valor-base das sanções de multa relativa à execução sem outorga de serviço de telecomunicações ou ao uso não autorizado do espectro de radiofrequências. 
+O cálculo, demonstrado na planilha SEI nº 14202057, resultou no valor de R$ 3.063,53 (três mil e sessenta e três reais e cinquenta e três centavos).
+Verifico que foram corretos os parâmetros utilizados para o cálculo da sanção. 
+Ressalto que a potência nominal aferida foi 1,7 W, sendo correta a utilização da faixa de até 300 W informada, que é o menor fator previsto na metodologia.
+ A interrupção das atividades da emissora decorreu da apreensão dos equipamentos, razão pela qual o infrator não faz jus a nenhuma das condições atenuantes previstas no RASA.
+Não tenho reparos à decisão e ao encaminhamento proposto pela Área Técnica.
+Sendo assim, proponho o conhecimento do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Da relação com a Agenda 2030: Objetivos de Desenvolvimento Sustentável - ODS da Organização das Nações Unidas - ONU.
+A Agenda 2030 da Organização das Nações Unidas - ONU é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 (cento e noventa e três) Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável - ODS e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+Por fim, com relação com os ODS da Agenda 2030 da ONU, destaco que a proposta de encaminhamento contida na presente Análise relaciona-se com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis. 
+CONCLUSÃO
+Pelo exposto, proponho conhecer e negar provimento ao Recurso Administrativo.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 09/04/2026, às 19:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15344439 e o código CRC AB57A59A.
+ | 
+Referência: Processo nº 53545.000711/2024-79 | 
+SEI nº 15344439 |

@@ -1,0 +1,75 @@
+SEI/ANATEL - 15212911 - Análise
+Boletim de Serviço Eletrônico em 12/03/2026
+Análise nº 17/2026/OP
+Processo nº 53500.049105/2025-59
+Interessado: Marcelo Barbosa de Barros
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 15009766) interposto por Marcelo Barbosa de Barros, CNPJ nº 08.295.857/0001-98, contra o Despacho Decisório nº 921/2025/COGE/SCO (SEI nº 14767798), que julgou procedentes os lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição para o Fomento da Radiodifusão Pública (CFRP), para os exercícios de 2024 e 2025.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. TFF E CFRP. COBRANÇA MANTIDA. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por Marcelo Barbosa de Barros contra o Despacho Decisório nº 921/2025/COGE/SCO, que julgou procedentes lançamentos de créditos tributários de TFF e CFRP, relativos aos exercícios de 2024 e 2025.
+ Fato relevante. O recorrente sustenta que a dispensa de licenciamento de estações que operam com radiação restrita e/ou meios confinados, prevista em Guia publicado pela Anatel, afastaria a exigibilidade de TFF e CFRP.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se a dispensa de licenciamento de estações, prevista em Guia publicado pela Anatel, afasta a cobrança de TFF e CFRP quando há autorização vigente para prestação do SCM e existência de estação licenciada no período do fato gerador.
+III. RAZÕES DE DECIDIR
+ A instrução do PAF observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+ A manifestação intitulada “impugnação” foi recebida como recurso administrativo, em razão de seu caráter recursal e da aplicação do princípio da informalidade.
+ O recurso preencheu os requisitos de admissibilidade, com destaque para a tempestividade e a ausência de contrariedade a Súmula editada pela Agência.
+ A dispensa de licenciamento prevista no Guia pressupõe inexistência de fato gerador vinculado à exploração regular do serviço.
+ O recorrente manteve autorização válida para prestação do SCM, deferida pelo Ato de Autorização nº 2138/2013, vigente até a renúncia formalizada em 16/05/2025.
+ A existência de estação licenciada durante a vigência da outorga mantém a incidência de TFF e CFRP.
+ A área técnica identificou estações licenciadas vinculadas ao mesmo FISTEL, com destaque para a estação nº 699393795, licenciada entre 16/10/2013 e 16/05/2025.
+ Inexistiram fundamentos fáticos ou jurídicos para cancelar os boletos questionados.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: “1. A dispensa de licenciamento de estação indicada em Guia publicado pela Anatel não afasta, por si só, a incidência de TFF e CFRP. 2. A autorização vigente para exploração do SCM e a existência de estação licenciada no período do fato gerador mantêm a exigibilidade de TFF e CFRP.”
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.784/1999, art. 2º, IX; Portaria nº 1.355/2019, item 7.1.1; RIA, art. 37, IX.
+REFERÊNCIAS
+Lei nº 5.070, de 7 de julho de 1966, que cria o Fundo de Fiscalização das Telecomunicações (Fistel), e dá outras providências.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+Guia das Obrigações das Prestadoras de Telecomunicações de Pequeno Porte
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 15009766) interposto por Marcelo Barbosa de Barros, CNPJ nº 08.295.857/0001-98, contra o Despacho Decisório nº 921/2025/COGE/SCO (SEI nº 14767798), que julgou procedentes os lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição para o Fomento da Radiodifusão Pública (CFRP), para os exercícios de 2024 e 2025.
+Em 08/12/2025, conforme Certidão de Intimação Cumprida (SEI nº 14880840), o contribuinte foi notificado do referido Despacho e, de forma tempestiva, interpôs o presente Recurso administrativo.
+Foi elaborado o Informe nº 60/2026/COGE/SCO (SEI nº 15058835), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Nos termos do Despacho Decisório nº 109/2026/COGE/SCO (SEI nº 15138276), a Superintendente de Controle de Obrigações Substituta conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 85/2026 (SEI nº 15138305).
+Fui designado relator da matéria por meio do sorteio realizado em 12/02/2026 (SEI nº 15178162).
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Ademais, vale destacar que considerando que a manifestação apresentada sob o título de “impugnação” foi protocolada após a constituição do débito e que possui nítido caráter recursal, foi recebida como recurso administrativo, nos termos do art. 2º, inciso IX, da Lei nº 9.784/1999, que consagra o princípio da informalidade no âmbito do processo administrativo, bem como do art. 37, inciso IX do RIA.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende os requisitos de: (i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; (ii) legitimidade, uma vez que o recorrente é o destinatário da decisão contra a qual se insurge; (iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, (iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Interessada fundamenta seu Recurso na pretensão de afastar a cobrança da Taxa de Fiscalização de Funcionamento (TFF) e da Contribuição para o Fomento da Radiodifusão Pública (CFRP) em disposições constantes do Guia das Obrigações das Prestadoras de Telecomunicações de Pequeno Porte, publicado pela Anatel, sustentando que a dispensa de licenciamento das estações que operam com radiação restrita e/ou meios confinados implicaria, automaticamente, a inexigibilidade das referidas exações. 
+Reproduzo abaixo, os argumentos trazidos pela área técnica em seu Informe nº 60/2026/COGE/SCO (SEI nº 15058835), que refutam a pretensão da ora Recorrente, e que adoto como razão de decidir:
+(...)
+5.4. De fato, o Guia, na pág. 18, dispõe que determinadas estações estão dispensadas de licenciamento e não sujeitas ao pagamento de TFF, conforme segue:
+Estão dispensadas de licenciamento todas as estações de telecomunicações das redes de suporte que utilizarem exclusivamente equipamentos de radiocomunicação de radiação restrita e/ou meios confinados, independente do serviço e da quantidade de usuários. Por consequência, essas estações não estão sujeitas ao pagamento de TFF e TFI.
+5.5. Embora o Guia preveja a dispensa de licenciamento e, por consequência, do pagamento de TFF e TFI para estações que utilizem exclusivamente equipamentos de radiação restrita e/ou meios confinados, essa regra pressupõe a inexistência de fato gerador vinculado à exploração regular do serviço, o que não se verifica na presente situação.
+5.6. No caso em análise, resta demonstrado que, à época da ocorrência do fato gerador, a empresa detinha autorização válida para a prestação do Serviço de Comunicação Multimídia (SCM), deferida por meio do Ato de Autorização nº 2138/2013, publicado em 09/04/2013, permanecendo vigente até a renúncia formalizada em 16/05/2025, conforme segue:
+5.7. Assim, a eventual classificação de determinada estação como “cadastrada” ou dispensada de licenciamento não tem o condão de afastar a incidência das exações quando a operadora se encontrava regularmente autorizada a explorar o serviço, situação que, por si só, atrai a incidência da CFRP e da TFF, nos termos da legislação aplicável.
+5.8. Corrobora esse entendimento o posicionamento técnico da ORLE (SEI nº 15107043), que esclareceu que, embora não tenha sido possível confirmar a existência da estação nº 1012675502 mencionada pela empresa em seu recurso, foram identificadas três estações licenciadas vinculadas ao mesmo FISTEL da operadora, quais sejam: 699393795, 699688612 e 1000297109 (SEI nº 15111673).
+5.9. No caso em questão, verifica-se que a estação nº 699393795 permaneceu licenciada no período de 16/10/2013 até 16/05/2025, data coincidente com a renúncia da autorização para exploração do SCM, contribuindo, portanto, para a caracterização do fato gerador da CFRP e da TFF, objeto das Notificações de Lançamento. Diante do exposto, conclui a Orle que:
+5. Desta forma, a incidência da CFRP e TFF não se afasta, devido a estação nº 699393795, licenciada no período de 16/10/2013 a 16/05/2025.
+5.10. Diante desse contexto, não prospera a alegação de que a dispensa de licenciamento de determinada estação afastaria, automaticamente, a exigibilidade da CFRP e da TFF. A existência de estação licenciada durante o período de vigência da outorga, aliada à regular autorização para prestação do SCM, é suficiente para manter a incidência das referidas exações.
+5.11. Assim, inexistem fundamentos fáticos ou jurídicos que justifiquem o cancelamento dos boletos questionados, motivo pelo qual o pedido da recorrente deve ser indeferido.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 12/03/2026, às 17:39, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15212911 e o código CRC 7BD97FB2.
+ | 
+Referência: Processo nº 53500.049105/2025-59 | 
+SEI nº 15212911 |

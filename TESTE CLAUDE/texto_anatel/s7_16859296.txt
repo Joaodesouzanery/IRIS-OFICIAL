@@ -1,0 +1,91 @@
+SEI/ANATEL - 15064312 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 7/2026/OP
+Processo nº 53524.002567/2024-53
+Interessado: Gestores Prisionais Associados S/A-Gpa
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14237556) interposto por Gestores Prisionais Associados S/A-GPA, inscritos no CNPJ nº 10.880.989/0001-29, contra o Despacho Decisório nº 455/2025/COUN/SCO (SEI nº 13689313), da Superintendência de Controle de Obrigações, que julgou procedentes os lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), referente ao exercício de 2024.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. LANÇAMENTOS DE TFF E CFRP. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por Gestores Prisionais Associados S/A-GPA contra o Despacho Decisório nº 455/2025/COUN/SCO, que julgou procedentes os lançamentos de créditos tributários de Taxa de Fiscalização de Funcionamento (TFF) e Contribuição para o Fomento da Radiodifusão Pública (CFRP), referentes ao exercício de 2024.
+ Pedidos. A recorrente requer o reconhecimento de ilegitimidade passiva, o cancelamento integral dos lançamentos, a exclusão de cadastros do FISTEL e, subsidiariamente, o redirecionamento da obrigação à empresa contratada responsável à época.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se a recorrente é parte legítima para figurar como sujeito passivo dos lançamentos de TFF e CFRP; e (ii) saber se a ausência de comprovação de pedido de cancelamento de licenças no exercício anterior afasta a exigência tributária e autoriza o cancelamento dos lançamentos, a exclusão do FISTEL ou o redirecionamento da obrigação.
+III. RAZÕES DE DECIDIR
+ O processo administrativo fiscal seguiu o Decreto nº 70.235/1972, com observância do devido processo legal e da ampla defesa.
+ A recorrente atua como prestadora de serviço de telecomunicações na modalidade Serviço Limitado Privado desde 2013.
+ A TFF decorre do exercício do poder de polícia sobre o funcionamento de estações e o uso de radiofrequências, sem relevância para a incidência do tributo quanto à atividade principal do titular das licenças.
+ A CFRP tem como fato gerador a prestação de serviços de telecomunicações previstos no Anexo da Lei nº 11.652/2008.
+ A recorrente não apresentou comprovação de pedido de cancelamento de licenças no exercício anterior, o que mantém a validade da notificação de lançamento.
+ A recorrente não comprovou os fatos alegados, conforme o art. 36 da Lei nº 9.784/1999 e o art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: "1. Mantém-se a exigência de TFF e CFRP quando a prestadora não comprova o pedido de cancelamento de licenças no exercício anterior. 2. Cabe ao interessado comprovar os fatos alegados em recurso administrativo, nos termos do art. 36 da Lei nº 9.784/1999 e do art. 85 do Regimento Interno da Anatel."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.784/1999, art. 36; Lei nº 11.652/2008 (Anexo); Resolução nº 612/2013, art. 85; Resolução nº 617/2013.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerias de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 11.652, de 07 de abril de 2008, que institui os princípios e objetivos dos serviços de radiodifusão pública explorados pelo Poder Executivo ou outorgados a entidades de sua administração indireta e dá outras providências;
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14237556) interposto por Gestores Prisionais Associados S/A-GPA, inscritos no CNPJ nº 10.880.989/0001-29, contra o Despacho Decisório nº 455/2025/COUN/SCO (SEI nº 13689313), da Superintendência de Controle de Obrigações, que julgou procedentes os lançamentos dos créditos tributários referentes à Taxa de Fiscalização de Funcionamento (TFF) e à Contribuição Para o Fomento da Radiodifusão Pública (CFRP), referente ao exercício de 2024.
+Em 22/07/2025, conforme AR referente ao Ofício nº 592/2025/COUN/SCO-ANATEL (SEI nº 14117864), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 695/2025/COUN/SCO (SEI nº 14387674), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 733/2025/COUN/SCO (SEI nº 14387675), o Superintendente de Controle de Obrigações Substituto conheceu do Recurso interposto.
+A matéria foi encaminhada para deliberação deste Colegiado por meio da MACD nº 689/2025 (SEI nº 14387676).
+Fui designado relator da matéria por meio do sorteio realizado em 08/01/2026, nos termos da Certidão de Distribuição SEI nº 15011931.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, restam atendidos os requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente requer, em síntese: (i) o reconhecimento da ilegitimidade passiva, afastando a exigência relativa à TFF e à CFRP do exercício em debate; (ii) o cancelamento integral dos lançamentos tributários realizados; (iii) a exclusão de seu nome dos cadastros do FISTEL, de forma a impedir a emissão de novas cobranças em exercícios futuros; (iv) subsidiariamente, caso não reconhecida a ilegitimidade passiva, que seja determinado o redirecionamento da obrigação à empresa contratada responsável à época (Ricall Rádio Telecomunicações Ltda.), efetiva gestora dos serviços de radiocomunicação. 
+A Recorrente é prestadora do serviço de telecomunicações na modalidade “Limitado Privado", conforme verifica-se do Extrato de Lançamentos dos Sistemas Internos da Anatel (SEI nº 14389241), desde o ano de 2013, e se manteve adimplente até o ano de 2024, que é objeto de análise. 
+No Informe nº 399/2025/COUN/SCO (SEI nº 13688079), na seção que analisou a alegação de ter havido lançamentos indevidos de TFF e de CFRP, restou informado as características do Serviço Limitado Privado, bem como os fatos geradores das cobranças da TFF e CFRP, cujo trecho abaixo transcrevemos:
+...
+6.3 - O Serviço Limitado Privado é um serviço de telecomunicações, de interesse restrito, explorado em âmbito nacional e internacional, no regime privado, destinado ao uso do próprio executante ou prestado a determinados grupos de usuários, selecionados pela prestadora mediante critérios por ela estabelecidos, e que abrange múltiplas aplicações, dentre elas comunicação de dados, de sinais de vídeo e áudio, de voz e de texto, bem como captação e transmissão de Dados Científicos relacionados à Exploração da Terra por Satélite, Auxílio à Meteorologia, Meteorologia por Satélite, Operação Espacial e Pesquisa Espacial. Regulamentado pela Resolução nº 617/2013.
+6.4 - Como já ressaltado, o fato gerador da TFF é o exercício do poder de polícia no que tange ao funcionamento de estações utilizadas para prestação de serviços de telecomunicações, previamente licenciadas ou não, e uso de radiofrequências. Note-se, por óbvio, que é irrelevante para sua ocorrência o tipo de atividade principal do titular das licenças das estações ou se essa atividade é exercida em caráter beneficente ou não. Também é certo que a estrita legalidade tributária impede que a Anatel dispense, por medida infralegal ou por ato administrativo, a cobrança da TFF de entidades que exercem atividades de interesse público – ainda que essas sejam extremamente relevantes.
+6.5 - Já o fato gerador da Contribuição para o Fomento da Radiodifusão Pública (CFRP) é a prestação dos serviços de telecomunicações de que trata o Anexo da Lei nº 11.652, de 7 de abril de 2008, ocorrido no dia 1º de Janeiro de cada ano. Vejamos sobre a CFRP no Regulamento de Arrecadação de Receitas Tributárias (RART):
+RART
+Art. 11. O fato gerador da Contribuição para o Fomento da Radiodifusão Pública (CFRP) é a prestação dos serviços de telecomunicações de que trata o Anexo da Lei nº 11.652, de 2008.
+Parágrafo único. Considera-se ocorrido o fato gerador da CFRP no dia 1º de janeiro de cada ano.
+6.6 - O sujeito passivo da CFRP é o prestador dos serviços de telecomunicações constantes do Anexo da Lei nº 11.652/2008. Vejamos a regulamentação do tema no Regulamento de Arrecadação de Receitas Tributárias (RART):
+Art. 12. O sujeito passivo da CFRP é a prestadora de serviços de telecomunicações, outorgada ou não.
+Parágrafo único. Serão solidariamente responsáveis pelo recolhimento da CFRP todas as prestadoras que realizarem o compartilhamento de infraestrutura ativa de estações de telecomunicações.
+6.7 - A base de cálculo da CFRP corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, à qual será aplicada uma alíquota específica, definida no Anexo da Lei nº 11.652, de 7 de abril de 2008, regulamentada pelo Regulamento de Arrecadação de Receitas Tributárias (RART):
+Art. 13. A base de cálculo da CFRP corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, à qual será aplicada alíquota específica, definida no Anexo da Lei nº 11.652, de 2008.
+Parágrafo único. No caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.
+6.8 - No caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o vigésimo dia útil do mês de janeiro do ano corrente, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.
+6.9 - Sobre o pagamento da CFRP temos que o mesmo deverá ser realizado pelo sujeito passivo até o dia 31 de março, conforme o Regulamento de Arrecadação de Receitas Tributárias (RART):
+Art. 14. O pagamento da CFRP deverá ser realizado pelo sujeito passivo até o dia 31 de março, independentemente de notificação.
+6.10 - Em resumo, a regra matriz de incidência da CFRP se traduz da seguinte forma: a) critério material: prestar serviços de telecomunicações constantes do Anexo da Lei nº 11.652/2008: b) critério espacial: qualquer lugar do território nacional; c) critério temporal: ocorrido no dia 1º de Janeiro de cada ano; d) critério pessoal: sujeito passivo - prestador dos serviços de radiodifusão e telecomunicações de que trata o Anexo da Lei nº 11.652, de 7 de abril de 2008 e sujeito ativo: Agência Nacional de Telecomunicações - Anatel; e, e) critério quantitativo: número de estações licenciadas ou não, na data de ocorrência do fato gerador, à qual será aplicada uma alíquota específica, definida no Anexo da Lei nº 11.652, de 7 de abril de 2008.
+6.11 - Considerando, ainda, que o contribuinte não trouxe aos autos a comprovação de que houve pedido de cancelamento das licenças no exercício anterior, permanece válida a notificação de lançamento.
+6.12 - Portanto, tal alegação é improcedente.
+...
+Em sede de Recurso, a Interessada não trouxe aos autos a comprovação de ter havido o pedido de cancelamento das licenças no exercício anterior, permanecendo plenamente válida a notificação de lançamento.
+Diante dessa situação, a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15064312 e o código CRC 5FDF9561.
+ | 
+Referência: Processo nº 53524.002567/2024-53 | 
+SEI nº 15064312 |

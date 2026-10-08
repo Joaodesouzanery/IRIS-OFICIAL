@@ -1,0 +1,122 @@
+SEI/ANATEL - 14211762 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 53/2025/CL
+Processo nº 53560.001556/2024-10
+Interessado: ASSOCIACAO DE RADIOFUSAO E DESENVOLVIMENTO COMUNITARIO DE FORQUILHA SR ANTONIO FERREIRA GOMES MARTINS
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que negou provimento ao Recurso apresentado anteriormente, em virtude de irregularidade técnica na exploração do Serviço de Radiodifusão Comunitária.
+EMENTA
+DIREITO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. RECURSO ADMINISTRATIVO. SERVIÇO DE RADIODIFUSÃO COMUNITÁRIA. USO IRREGULAR DO ESPECTRO DE RADIOFREQUÊNCIAS. USO DE ANTENA COM GANHO SUPERIOR AO PERMITIDO. INFRAÇÃO CARACTERIZADA. APLICADA SANÇÃO DE ADVERTÊNCIA. IMPOSSIBILIDADE NÃO APLICAÇÃO DE SANÇÃO. Recurso Administrativo conhecido e não provido. REFORMA, DE OFÍCIO, DA DECISÃO.
+1. O presente Pado visa apurar o uso irregular de radiofrequência na exploração do Serviço de Radiodifusão Comunitária, pela interessada, no município de Forquilha/CE.
+2. O ganho da antena transmissora de uma estação de Radiodifusão Comunitária deve ser de, no máximo, 0 dB, em relação ao dipolo de meia onda (art. 332 da Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023).
+3. Constitui uso irregular de radiofrequência o uso de radiofrequência em desacordo com as características técnicas aprovadas para o funcionamento de estação (art. 58, inciso II, do Anexo à Resolução nº 671/2016).
+4. Verificada presença de requisitos de admissibilidade recursal.
+5. Demonstradas autoria e materialidade da infração objeto do presente Pado, tendo sido aplicada a sanção de advertência, não sendo possível a aplicação de sanção menos gravosa.
+6. Recurso Administrativo conhecido e não provido. 
+7. Reforma, de ofício, da decisão para descaracterizar a infração ao art. 331 da Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023, e manter a sanção de advertência pelas demais infrações.
+REFERÊNCIAS
+Lei nº 4.117, de 27 de agosto de 1962 (Código Brasileiro de Telecomunicações);
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal;
+Regulamento de Aplicação de Sanções Administrativas, aprovado pela Resolução nº 589, de 7 de maio de 2012 (Rasa);
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013 (RIA);
+Regulamento de Uso do Espectro de Radiofrequências, aprovado pela Resolução nº 671, de 3 de novembro de 2016 (RUE);
+Regulamento sobre Canalização e Condições de Uso de Radiofrequências para os Serviços de Radiodifusão e seus Ancilares, aprovado pela Resolução nº 721, de 11 de fevereiro de 2020;
+Regulamento de Fiscalização Regulatória, aprovado pela Resolução nº 746, de 22 de junho de 2021 (RFR);
+Requisitos Técnicos de Condições de Uso de Radiofrequências para os Serviços de Radiodifusão Sonora em Frequência Modulada, de Retransmissão de Rádio na Amazônia Legal e Radiodifusão Comunitária, de Radiovias e Limitado Privado - para Autocine, aprovados pelo Ato nº 8.104, de 10 de junho de 2022 (RTFM);
+Metodologia de cálculo do valor base das sanções de multa relativa ao uso irregular do espectro de radiofrequências na execução de serviços de radiodifusão, aprovada pela Resolução Interna nº 205, de 27 de abril de 2023.
+RELATÓRIO
+DOS FATOS
+Cuida-se de Recurso Administrativo interposto por ASSOCIAÇÃO DE RADIODIFUSÃO E DESENVOLVIMENTO COMUNITÁRIO DE FORQUILHA, inscrita no CNPJ sob o nº 01.917.488/0001-89, em face do Despacho Decisório nº 251/2025/CODI/SCO (SEI nº 13579213), exarado pela Superintendente de Controle de Obrigações, que negou provimento ao Recurso Administrativo anteriormente interposto e manteve a sanção de advertência aplicada por meio do Despacho Decisório nº 24/2025/GR09CO/GR09/SFI (SEI nº 13443973), pelo cometimento de infração aos artigos 331 e 332 da Portaria de Consolidação GM/MCOM nº 1/2023 c/c o artigo 58, inciso II, do anexo à Resolução nº 671/2016 (tipo da antena).
+Com fulcro na atividade descrita no Relatório de Fiscalização nº 61/2024/GR09FI2/GR09/SFI (SEI nº 12460539) e respectivos anexos, instaurou-se o presente Processo de Apuração de Descumprimento de Obrigações (Pado) para apurar a infração por uso de radiofrequência em desacordo com as características técnicas aprovadas para o funcionamento de estação, especificamente, o uso de antena com ganho superior a 0 (zero) dBd.
+Como descrito no referido Relatório de Fiscalização, a ação de fiscalização, que teve origem em denúncia, foi realizada presencialmente no dia 15 de agosto de 2024. No trecho abaixo os Agentes de Fiscalização descrevem o ocorrido:
+Relatório de Fiscalização nº 61/2024/GR09FI2/GR09/SFI (SEI nº 12460539):
+8.3. A fiscalização esteve no dia 15/08/2024, na rua São Francisco, s/n, centro, Forquilha/CE, local de instalação da Rádio Forquilha FM, pertencente à Associação de Radiodifusão e Desenvolvimento Comunitário de Forquilha, e realizou uma vistoria técnica na estação transmissora que apresentou a seguinte irregularidade técnica: 
+8.3.1. Antena com ganho superior a 0 dBd (SEI 12460507).
+8.4. O laudo de vistoria técnica foi preenchido em momento posterior à fiscalização presencial tendo em vista que a entidade possuía um prazo de 5 dias após a fiscalização presencial para enviar o Relatório de Conformidade.
+8.5. A entidade será notificada, por meio do Despacho Ordinário de Instauração no PADO nº 53560.001556/2024-10, em razão da infração técnica verificada durante a fiscalização.
+CONCLUSÃO
+9.1. Constatou-se, após a fiscalização, que emissora de Rádio Forquilha FM instalada em Forquilha/CE operava com infração técnica, sendo notificada através do processo PADO e tendo um prazo para apresentar sua defesa administrativa. 
+Em 23 de agosto de 2024, o Gerente Regional da Anatel nos Estados do Ceará, Rio Grande do Norte e Piauí determinou a instauração do presente Pado conforme Despacho Ordinatório de Instauração nº 16/2024/GR09FI2/GR09/SFI (SEI nº 12460354). A interessada foi notificada a apresentar defesa por meio do Ofício nº 110/2024/GR09FI2/GR09/SFI-ANATEL (SEI nº 12461158).
+Em 31 de agosto de 2024, a interessada apresentou Defesa Administrativa (SEI nº 12648704), em que comunica a correção da irregularidade constatada pela fiscalização e envia registros fotográficos para comprovar a substituição da antena irregular por uma antena regular.
+Posteriormente, tendo sido notificada a apresentar Alegações Finais, conforme Ofício nº 609/2024/GR09CO/GR09/SFI-ANATEL (SEI nº 12711969) e Ofício nº 610/2024/GR09CO/GR09/SFI-ANATEL (SEI nº 12711988), apresentou suas Alegações Finais registrada sob o SEI nº 12795250.
+Em 21 de março de 2025, a Área Técnica elaborou o Informe nº 32/2025/GR09CO/GR09/SFI (SEI nº 13443199), sugerindo a aplicação de sanção de advertência, pelo cometimento de infração aos artigos 331 e 332 da Portaria de Consolidação GM/MCOM nº 1/2023 c/c o artigo 58, inciso II, do anexo à Resolução nº 671/2016 (tipo da antena).
+No mesmo dia proferiu-se o Despacho Decisório nº 24/2025/GR09CO/GR09/SFI (SEI nº 13443973), por meio do qual se aplicou a sanção menos gravosa em desfavor da Recorrente conforme proposto pela Área Técnica.
+Notificada no dia 26 de março de 2025 (SEI nº 13468336), a Recorrente interpôs Recurso Administrativo (SEI nº 13513288) em 3 de abril de 2025.
+Em 16 de abril de 2025, a Área Técnica elaborou o Informe nº 27/2025/GR10CO/GR10/SFI (SEI nº 13551815), por meio do qual sugeriu o conhecimento e não provimento do Recurso.
+Na mesma data, o Gerente Regional dos Estados do Pará, Maranhão e Amapá, por meio do Despacho Decisório nº 13/2025/GR10CO/GR10/SFI, decidiu conhecer do Recurso Administrativo interposto e encaminhar os autos à Superintendente de Controle de Obrigações para prosseguimento do feito (SEI nº 13551816).
+A Superintendente de Controle de Obrigações proferiu o Despacho Decisório nº 251/2025/CODI/SCO (SEI nº 13579213), em 12 de maio de 2025, negando provimento ao Recurso e mantendo a sanção de advertência anteriormente aplicada.
+Notificou-se a Recorrente por intermédio do Ofício nº 34/2025/GR10CO/GR10/SFI-ANATEL (SEI nº 13708806), recebido em 26 de maio de 2025 (SEI nº 13757381).
+A Recorrente interpôs Recurso Administrativo (SEI nº 13768999) no dia 28 de maio de 2025.
+Analisando a peça recursal trazida aos autos por meio do Informe nº 44/2025/GR10CO/GR10/SFI, de 8 de julho de 2025 (SEI nº 13844700), a Área Técnica apontou que não havia quaisquer fatos ou circunstâncias suscetíveis de justificar a reforma da decisão recorrida. Assim, dispensando-se a oitiva da Procuradoria, nos termos do Regimento Interno da Anatel, sugeriu-se à Superintendente de Controle de Obrigações conhecer do Recurso Administrativo e propor ao Conselho Diretor negar-lhe provimento.
+Em 30 de julho de 2025, a Superintendente de Controle de Obrigações conheceu do Recurso Administrativo por meio do Despacho Decisório nº 428/2025/CODI/SCO (SEI nº 13979458).
+Acompanhados da Matéria para Apreciação do Conselho Diretor nº 565/2025 (SEI nº 13979462), encaminharam-se os autos a este Colegiado.
+Em 4 de agosto de 2025, distribuiu-se, por sorteio, o presente processo para minha a Relatoria (SEI nº 14126292).
+É o relatório.
+DA ANÁLISE
+Da admissibilidade
+A instauração e instrução do presente processo atenderam a sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, e o Regimento Interno da Anatel - RIA.
+No que se refere aos requisitos de admissibilidade, constata-se que a Recorrente possui interesse na reforma da decisão proferida pela Superintendente de Controle de Obrigações, está regularmente representada e não há contrariedade a entendimento fixado em Súmula pela Anatel.
+Ademais, verifica-se que o Recurso Administrativo foi interposto tempestivamente, observando-se o prazo de 10 (dez) dias descrito no art. 115, § 6º, do RIA, haja vista que a Recorrente foi intimada em 26 de maio de 2025 (SEI nº 13579213) e o Recurso foi protocolizado em 28 de maio de 2025 (SEI nº 13551960).
+Presentes, portanto, os pressupostos de admissibilidade do Recurso Administrativo, previstos no art. 116 do RIA, conforme decisão da Superintendente de Controle de Obrigações, em observância ao que dispõe o art. 115, §1º do RIA, expressa no Despacho Decisório nº 428/2025/CODI/SCO (SEI nº 13979458).
+Do mérito recursal
+Como relatado, este Pado visa apurar a infração de uso de antena com ganho superior a 0 (zero) dBd na exploração do Serviço de Radiodifusão Comunitária.
+O Serviço de Radiodifusão Comunitária foi instituído pela Lei nº 9.612, de 19 de fevereiro de 1998:
+Lei nº 9.612, de 19 de fevereiro de 1998:
+Art. 1º Denomina-se Serviço de Radiodifusão Comunitária a radiodifusão sonora, em freqüência modulada, operada em baixa potência e cobertura restrita, outorgada a fundações e associações comunitárias, sem fins lucrativos, com sede na localidade de prestação do serviço.
+§ 1º Entende-se por baixa potência o serviço de radiodifusão prestado a comunidade, com potência limitada a um máximo de 25 watts ERP e altura do sistema irradiante não superior a trinta metros.
+§ 2º Entende-se por cobertura restrita aquela destinada ao atendimento de determinada comunidade de um bairro e/ou vila.
+(grifei)
+Como destacado acima, o Serviço de Radiodifusão Comunitária, por definição legal, deve estar limitado a uma potência ERP máxima de 25 watts. Em telecomunicações, ERP significa "Potência Irradiada Efetiva" (Effective Radiated Power, em inglês). É uma medida da potência de um sinal de rádio transmitido por uma antena, levando em consideração o ganho da antena em relação a um dipolo de meia onda. 
+Como consignado nos autos, no ato da fiscalização, a interessada possuía a devida outorga para explorar o Serviço de Radiodifusão Comunitária, bem como sua estação estava licenciada, devendo, pois, operar em conformidade com os parâmetros técnicos autorizados e previstos na regulamentação.
+A Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023, da lavra do Ministro de Estado das Comunicações, publicada no Diário Oficial da União em 5 de junho de 2023, que realiza a consolidação das normas ministeriais de radiodifusão, tratando da Radiodifusão Comunitária em seu Livro V, dispõe muito objetivamente em seu art. 332 sobre o ganho da antena transmissora a ser instalada em estação do Serviço de Radiodifusão Comunitária, in verbis:
+Art. 332. O ganho da antena transmissora será de, no máximo, 0 dB, em relação ao dipolo de meia onda. (Origem: PRT GM/MCOM 4.334/2015, art. 81, caput)
+(grifei)
+A conduta de se utilizar de antena com ganho superior 0 dB, em relação ao dipolo de meia onda, além de configurar infração ao dispositivo acima exposto, caracteriza a infração de uso irregular de radiofrequência, nos termos do art. 58, inciso II, do Regulamento de Uso do Espectro de Radiofrequências, aprovado por meio da Resolução nº 671, de 03 de novembro de 2016:
+Art. 58. Constitui uso irregular de radiofrequência:
+(...)
+II - o uso de radiofrequência, faixa ou canal de radiofrequências em conformidade com os parâmetros da autorização, mas em desacordo com as características técnicas aprovadas para o funcionamento de estação.
+(grifei)
+Não bastasse a presunção de veracidade de que gozam os agentes de Fiscalização da Anatel, no Relatório de Fiscalização nº 61/2024/GR09FI2/GR09/SFI (SEI nº 12460539) e, especialmente, no Registro Fotográfico (SEI nº 12460507), é evidenciada a utilização de uma antena do tipo "plano terra 5/8 de onda". Esse tipo de antena possui um ganho típico de 3 dBd, portanto, maior do que 0 dBd, o que dobra a potência ERP transmitida pela estação e extrapola o conceito legal de baixa potência inerente ao Serviço de Radiodifusão Comunitária. Desta forma, resta comprovada nestes autos a ocorrência de uso irregular de radiofrequência na exploração do Serviço de Radiodifusão Comunitária.
+Demonstrada a materialidade da infração cometida pela Recorrente, passo a avaliar suas alegações recursais de mérito.
+Em seu último Recurso Administrativo (SEI nº 13768999), a Recorrente contesta a manutenção da aplicação da sanção de advertência levada a efeito pelo Despacho Decisório nº 24/2025/GR09CO/GR09/SFI (SEI nº 13443973), cujo teor transcrevo abaixo:
+Despacho Decisório nº 24/2025/GR09CO/GR09/SFI
+Processo nº 53560.001556/2024-10
+Interessado: ASSOCIACAO DE RADIOFUSAO E DESENVOLVIMENTO COMUNITARIO DE FORQUILHA SR ANTONIO FERREIRA GOMES MARTINS
+O GERENTE REGIONAL NOS ESTADOS DO CEARÁ, RIO GRANDE DO NORTE E PIAUÍ, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do Processo em epígrafe, instaurado em desfavor da ASSOCIAÇÃO DE RADIODIFUSÃO E DESENVOLVIMENTO COMUNITÁRIO DE FORQUILHA, inscrito no CNPJ nº 01.917.488/0001-89, executante do Serviço de Radiodifusão Comunitária no Município de Forquilha, no Estado do Ceará, a fim de apurar infrações técnicas relativas ao serviço, decide aplicar sanção de ADVERTÊNCIA, pelo cometimento de infração aos artigos 331 e 332 da Portaria de Consolidação GM/MCOM nº 1/2023 c/c o artigo 58, inciso II, do anexo à Resolução nº 671/2016 (tipo da antena), pelas razões e justificativas constantes do Informe nº 32/2025/GR09CO/GR09/SFI (SEI nº 13443199).
+As razões recursais da interessada e a posição da área técnica a respeito foram bem endereçadas no seguinte trecho do Informe nº 44/2025/GR10CO/GR10/SFI (SEI nº 13844700):
+Informe nº 44/2025/GR10CO/GR10/SFI (SEI nº 13844700):
+3.17. Em suas razões, a Entidade repete os fundamentos de suas manifestações anteriores, alegando, em suma:
+que sempre trabalhou em observância da lei, não tendo havido má-fé ou descumprimento intencional das obrigações estabelecidas;
+que "todas as medidas corretivas e ajustes necessários foram prontamente adotados, de modo que a estação encontra-se operando em plena conformidade com os parâmetros técnicos, operacionais e administrativos definidos pela legislação vigente e pelas normas expedidas pela ANATEL";
+que não foi verificado, no caso dos autos, "qualquer situação que tenha causado prejuízo à prestação do serviço à comunidade, tampouco risco à operação de outros serviços de telecomunicações"; e
+que, em consideração aos princípios da razoabilidade e da proporcionalidade, a sanção aplicada deve ser reavaliada.
+3.18. Finaliza suas manifestações, requerendo a reforma da decisão proferida, com a substituição da penalidade imposta por medida de caráter educativo.
+3.19. Passando-se à análise das razões postas, destaca-se inicialmente que a indicação de providências de ajuste ou a regularização posterior à identificação da irregularidade não é suficiente para eximir a responsabilização pelo cometimento da infração constatada, podendo, eventualmente, ser considerada como circunstância atenuante. Contudo, por se tratar a sanção aplicada, no caso vertente, de advertência, não há possibilidade de atenuação sancionatória.
+3.20. Em outra senda, afirmações da Recorrente no sentido de que sempre desempenhou suas atividades de acordo com a lei e com boa-fé, de que não teve qualquer intento infracional no desenvolvimento de suas atividades, não obstante louváveis, não se mostram bastantes para afastarem a responsabilização e sancionamento necessários, face à irregularidade cometida e comprovada pela Agência, em ação regular de fiscalização.
+3.21. Ocorre que a norma sancionadora possui caráter objetivo, prescindindo da verificação da intenção do Infrator em sua conduta, devendo ser observado o que dispõe seu teor, que impõe a obrigação de o radiodifusor outorgado explorar o serviço nas exatas condições técnicas estabelecidas em sua licença de funcionamento. Não se está a analisar, in casu, a intenção na prática ou em seus resultados, subsumindo-se o exame à natureza infracional, em seus aspectos técnico e formal.
+3.22. Por derradeiro, quanto ao pedido de declaração de não cabimento de qualquer penalidade, sendo a entidade flagrada perpetrando a irregularidade acima descrita, cabe a aplicação de sanção pelo seu cometimento, diante do poder-dever da Administração, que não pode se eximir desta penalização, cuja função não é, meramente, repressora ou punitiva, mas, igualmente, educativa. Nesse sentido, com base nos Princípios da Razoabilidade e Proporcionalidade, e diante da ausência de antecedentes nos registros cadastrais da Recorrente, entendeu-se por seu apenamento com advertência, ainda que sem qualquer penalização pecuniária.
+3.23. Finda, portanto, a análise das razões apresentadas pela Recorrente, tem-se que as razões recursais esposadas não prosperam, eis que não logrou ela afastar a infração configurada quando da prolação da decisão ora recorrida, ou ainda, caracterizar a inadequação da sanção aplicada, pelo quê o Recurso deve ser conhecido para que, no mérito, seja negado a ele provimento.
+Estou plenamente de acordo com a fundamentação apresentada pela Área Técnica.
+Em seu Recurso e peças de defesas anteriores, a recorrente reconhece a infração cometida e, inclusive, comprova a correção da irregularidade, com a retirada da antena irregular e instalação de uma antena compatível com a regulamentação. Sendo assim, à ela foi corretamente aplicada a sanção de advertência, que é a menos gravosa dentre as sanções possíveis. Estão demonstradas a autoria e a materialidade, não sendo possível a não aplicação de sanção.
+Em nenhum momento a Recorrente se exime das infrações a ela atribuídas. Portanto, no mérito, deve ser negado provimento ao Recurso.
+Há, no entanto, a necessidade de reformar, de ofício, a decisão para descaracterizar a infração ao art. 331 da Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023. O referido artigo dispõe que a antena a ser utilizada por estação do Serviço de Radiodifusão Comunitária deve ser do tipo omnidirecional, vejamos sua redação:
+Art. 331. O diagrama de irradiação da antena utilizada por estação do Serviço de Radiodifusão Comunitária deverá ser omnidirecional. (Origem: PRT GM/MCOM 4.334/2015, art. 80, caput)
+É incorreto imputar à Recorrente uma infração a tal artigo, pois a antena irregular flagrada pela Fiscalização da Agência, apesar de possuir ganho superior ao máximo permitido, de fato, é uma antena omnidirecional. 
+Sendo assim, proponho conhecer do Recurso e negar a ele provimento, bem como reformar, de ofício, a decisão para descaracterizar a infração ao art. 331 da Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023 e manter a sanção de advertência pelas demais infrações.
+Da relação com a Agenda 2030: Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+Nesse sentido, a proposta de encaminhamento contida nesta Análise relaciona-se diretamente com o Objetivo 16 da Agenda 2030, o qual busca desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.
+CONCLUSÃO
+Pelo exposto na presente Análise, voto por: 
+conhecer e negar provimento ao Recurso Administrativo interposto;
+reformar, de ofício, a decisão consubstanciada no Despacho Decisório nº 24/2025/GR09CO/GR09/SFI (SEI nº 13443973), para descaracterizar a infração ao art. 331 da Portaria de Consolidação GM/MCOM nº 1, de 1º de junho de 2023 e manter a sanção de advertência pelo cometimento pelo cometimento de infração ao art. 332 da Portaria de Consolidação GM/MCOM nº 1/2023 c/c o art. 58, inciso II, do anexo à Resolução nº 671/2016 (tipo da antena).
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 27/08/2025, às 14:59, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14211762 e o código CRC 2459E847.
+ | 
+Referência: Processo nº 53560.001556/2024-10 | 
+SEI nº 14211762 |

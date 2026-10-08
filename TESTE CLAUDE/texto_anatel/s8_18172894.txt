@@ -1,0 +1,44 @@
+SEI/ANATEL - 16207602 - Acórdão
+Boletim de Serviço Eletrônico em 01/09/2026
+DOU de 01/09/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 234, de 31 de agosto de 2026
+Processo nº 53500.016412/2026-34
+Recorrente/Interessado: SANTOS & CARVALHO COMUNICAÇÃO MULTIMÍDIA LTDA., HILINK SERVIÇOS DE COMUNICAÇÃO E MULTIMÍDIA SCM LTDA., R C DOS SANTOS TELECOMUNICAÇÕES, OLIVIVEIRA & POSSIDONIO COMUNICAÇÃO E MULTIMÍDIA LTDA., LINE FIBRA TELECOM LTDA.
+CNPJs nº 24.940.558/0001-15, nº 12.082.987/0001-10, nº 15.165.435/0001-63, nº 16.099.342/0001-40 e nº 17.886.704/0001-06
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 227, de 28 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. PEDIDOS DE ANULAÇÃO DE ATO NORMATIVO. REGULAMENTO GERAL DOS SERVIÇOS DE TELECOMUNICAÇÕES - RGST. VERIFICAÇÃO DOCUMENTAL DE OBRIGAÇÕES TRABALHISTAS, FISCAIS E DE PREVENÇÃO DE ACIDENTES. PEDIDOS CONHECIDOS E DESPROVIDOS. 
+I. CASO EM EXAME
+1. Pedidos de Anulação dos §§ 4º e 5º do art. 43 do Regulamento Geral dos Serviços de Telecomunicações - RGST, aprovado pela Resolução Anatel nº 777/2025.
+2. As Requerentes sustentam que a Anatel não possui competência para fiscalizar normas de segurança do trabalho.
+3. As Requerentes alegam a impossibilidade de delegação do poder de polícia a entidades sindicais.
+4. Subsidiariamente, as Requerentes pedem dispensa da apresentação de certidão de atesto ou parecer emitido por entidade habilitada. Requerem a aceitação direta de documentos como Programa de Gerenciamento de Risco - PGR e Programa de Controle Médico de Saúde Ocupacional - PCMSO.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se a exigência de comprovação documental prevista no art. 43 do RGST extrapola as competências da Anatel; (ii) saber se a atuação de entidades habilitadas configura delegação indevida de competência fiscalizatória; e (iii) saber se as Requerentes podem ser dispensadas da apresentação de certidão de atesto ou de conformidade.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Anulação é admissível. As Requerentes apresentaram alegações relativas à legalidade e à competência da Agência. O procedimento observou o art. 78 do Regimento Interno da Anatel - RIA e incluiu a manifestação da Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+2. A Anatel pode exigir documentos que comprovem a manutenção das condições necessárias à prestação de serviços de telecomunicações. A medida não cria requisito autônomo para obtenção da autorização.
+3. A exigência documental prevista no art. 43 do RGST possui caráter administrativo e declaratório. A Anatel não realiza juízo sobre o cumprimento material de obrigações trabalhistas, fiscais ou de segurança e saúde no trabalho.
+4. A fiscalização trabalhista permanece sob competência dos órgãos públicos competentes. Eventuais indícios de irregularidade devem ser encaminhados ao Ministério do Trabalho e Emprego - MTE.
+5. As entidades habilitadas realizam verificação formal dos documentos e emitem certidão de atesto. Elas não aplicam sanções, não restringem direitos e não adotam medidas coercitivas.
+6. A atuação das entidades habilitadas constitui atividade de apoio à regulação. Essa atuação não configura delegação de competência fiscalizatória.
+7. A apresentação direta de PGR, PCMSO e de outros documentos não substitui a verificação formal nem o atesto previsto no procedimento regulamentar.
+8. A dispensa individual comprometeria a uniformidade, a rastreabilidade e a isonomia do modelo de verificação documental.
+IV. DISPOSITIVO E TESE
+Pedidos de Anulação conhecidos e desprovidos. Pedido subsidiário de dispensa da apresentação da documentação exigida desprovido.
+Tese de julgamento: "1. A exigência de comprovação documental prevista no art. 43 do RGST constitui instrumento de acompanhamento da manutenção das condições necessárias à adequada prestação dos serviços de telecomunicações. 2. A verificação documental realizada pela Anatel e pelas entidades habilitadas possui caráter administrativo e declaratório e não configura fiscalização trabalhista, fiscal ou de segurança e saúde no trabalho. 3. A atuação das entidades habilitadas constitui atividade de apoio à regulação e não implica delegação de competência fiscalizatória. 4. A apresentação direta de documentos pela autorizada não substitui a certidão de atesto prevista no procedimento regulamentar."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 19, XVI, 22, parágrafo único, e 139; Decreto nº 2.338/1997, art. 14, §§ 1º e 2º; Lei nº 9.784/1999, art. 53; Resolução Anatel nº 612/2013, arts. 76 e 78; Resolução Anatel nº 777/2025, art. 43, §§ 2º a 6º; e Resolução Interna Anatel nº 428/2025, art. 4º-A, § 5º.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, Súmula nº 473; STF, ADI 1.668/DF, Tribunal Pleno, j. 01.03.2021, publ. 23.03.2021; e STF, Tema 532 da repercussão geral, RE 633.782/MG.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 88/2026/NP (SEI nº 16186989), integrante deste acórdão:
+a) conhecer dos Pedidos de Anulação dos §§ 4º e 5º do art. 43 do Regulamento Geral dos Serviços de Telecomunicações - RGST, aprovado pela Resolução Anatel nº 777, de 28 de abril de 2025, ou, subsidiariamente, a dispensa de apresentação da documentação exigida pelos dispositivos mencionados, formulados pelas seguintes entidades: SANTOS & CARVALHO COMUNICAÇÃO MULTIMÍDIA LTDA., CNPJ nº 24.940.558/0001-15; HILINK SERVIÇOS DE COMUNICAÇÃO E MULTIMÍDIA SCM LTDA., CNPJ nº 12.082.987/0001-10; R C DOS SANTOS TELECOMUNICAÇÕES, CNPJ nº 15.165.435/0001-63; OLIVIVEIRA & POSSIDÔNIO COMUNICAÇÃO E MULTIMÍDIA LTDA., CNPJ nº 16.099.342/0001-40; e LINE FIBRA TELECOM LTDA., CNPJ nº 17.886.704/0001-06; e,
+b) negar provimento aos Pedidos de Anulação dos referidos dispositivos e da dispensa de apresentação da documentação exigida pelos dispositivos mencionados, realizados pelas Requerentes.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 31/08/2026, às 18:11, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16207602 e o código CRC A42236CD.
+ | 
+Referência: Processo nº 53500.016412/2026-34 | 
+SEI nº 16207602 |

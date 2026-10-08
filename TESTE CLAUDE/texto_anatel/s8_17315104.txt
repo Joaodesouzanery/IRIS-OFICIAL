@@ -1,0 +1,52 @@
+SEI/ANATEL - 15480825 - Acórdão
+Boletim de Serviço Eletrônico em 14/04/2026
+DOU de 14/04/2026, seção 1, página 51
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 91, de 13 de abril de 2026
+Processo nº 01217.001798/2026-81
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 91, de 13 de abril de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ACESSO À INFORMAÇÃO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. PEDIDO DE GRAVAÇÕES DE ATENDIMENTO TELEFÔNICO EM PROCESSOS DE FISCALIZAÇÃO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo de segunda instância interposto por CIDADÃO no Fala.BR contra decisão que indeferiu pedido de acesso à informação.
+2. O pedido. O Requerente solicitou amostras de gravações de atendimento telefônico constantes de processos administrativos de fiscalização de operadoras de telecomunicações, relativas ao período de 2018 a 2025, para pesquisa acadêmica em reconhecimento automático de fala.
+3. Pedido subsidiário. O Requerente também pediu a indicação de processos eletrônicos públicos que contivessem arquivos de áudio e admitiu o fornecimento de material com supressão de dados pessoais.
+4. As decisões anteriores. A área técnica indeferiu o pedido. A decisão de primeira instância conheceu do Recurso e negou seu provimento. O Interessado interpôs Recurso de segunda instância ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se as gravações solicitadas podem ser fornecidas à luz do regime jurídico aplicável às informações pessoais e do dever de compatibilização entre transparência e proteção de direitos dos titulares; e (ii) saber se o atendimento do pedido exige tratamento adicional de dados, em hipótese vedada pelo art. 13, III, do Decreto nº 7.724/2012.
+III. RAZÕES DE DECIDIR
+1. O Recurso foi interposto no prazo legal.
+2. O Recurso foi formulado pelo próprio interessado.
+3. O Conselho Diretor é competente para apreciar o Recurso de segunda instância.
+4. Os áudios solicitados contêm voz e relatos de consumidores.
+5. Esses elementos permitem identificação direta ou indireta dos titulares.
+6. As gravações também podem conter informações de natureza sensível.
+7. A Lei nº 12.527/2011 considera informação pessoal aquela relacionada à pessoa natural identificada ou identificável.
+8. O acesso a informações pessoais é restrito, independentemente de classificação de sigilo.
+9. A Lei nº 9.472/1997 reforça a proteção de dados individualizados dos usuários de serviços de telecomunicações.
+10. A divulgação desses dados depende de consentimento.
+11. O dever de transparência não é absoluto.
+12. Esse dever deve ser compatibilizado com outras limitações legais.
+13. O atendimento do pedido demandaria anonimização, supressão de trechos e adaptação dos registros originais.
+14. Essas providências configuram trabalho adicional de análise e tratamento de dados.
+15. O art. 13, III, do Decreto nº 7.724/2012 afasta o atendimento de pedidos que exijam trabalhos adicionais de análise, interpretação, consolidação ou tratamento de dados.
+16. A anonimização, à luz da fundamentação adotada nos autos, não afasta o risco de reidentificação futura.
+17. A disponibilização pretendida implicaria risco desproporcional aos titulares.
+18. A área técnica apresentou fundamentação suficiente para justificar a impossibilidade de fornecimento das gravações solicitadas.
+19. O pedido, nos moldes formulados, extrapola os limites do direito de acesso à informação.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo de segunda instância desprovido.
+Tese de julgamento: "1. O pedido de acesso a gravações de atendimento telefônico constantes de processos de fiscalização envolve informações pessoais de consumidores, sujeitas a restrição de acesso. 2. A disponibilização dos áudios, com anonimização, supressão de trechos ou adaptação dos registros, exige tratamento adicional da informação e se enquadra na vedação do art. 13, III, do Decreto nº 7.724/2012. 3. O pedido, nos moldes formulados, extrapola os limites do direito de acesso à informação. 4. Nega-se provimento ao Recurso de segunda instância quando a área técnica apresenta fundamentação suficiente para justificar a impossibilidade de fornecimento das gravações solicitadas."
+Dispositivos relevantes citados: Lei nº 12.527/2011, arts. 4º, IV, 15, 21, parágrafo único, e 31, § 1º; Lei nº 9.472/1997, art. 72; Decreto nº 7.724/2012, arts. 13, III, e 21; Lei nº 9.784/1999, n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 37/2026/OP (SEI nº 15474112), integrante deste acórdão, conhecer do Recurso Administrativo de Segunda Instância para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 13/04/2026, às 18:15, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15480825 e o código CRC AC6EEBE9.
+ | 
+Referência: Processo nº 01217.001798/2026-81 | 
+SEI nº 15480825 |

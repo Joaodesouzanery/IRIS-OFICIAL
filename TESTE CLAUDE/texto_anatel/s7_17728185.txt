@@ -1,0 +1,186 @@
+SEI/ANATEL - 15853159 - Análise
+Boletim de Serviço Eletrônico em 20/08/2026
+Análise nº 58/2026/NP
+Processo nº 53500.005421/2024-38
+Interessado: HISPAMAR SATELITES S.A., Hispasat Brasil Ltda.
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Extinção, por renúncia, do Direito de Exploração, no Brasil, do satélite estrangeiro Amazonas 2.
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Amazonas 2, detido por Hispasat S.A.
+2. O direito de exploração foi conferido por meio do Ato nº 5.678, de 2 de outubro de 2009, e prorrogado por intermédio do Ato nº 14.051, de 1º de outubro de 2024 (SEI nº 12661792), com vigência até 4 de outubro de 2027.
+3. A Hispasat S.A., por meio de representante legal no Brasil, a Hispamar Satélites S.A., formulou, em 6 de maio de 2026, pedido de extinção, por renúncia, ao direito de exploração do satélite estrangeiro Amazonas 2, sob o fundamento de que o direito expira em outubro de 2027 e que o satélite Amazonas 2 encontra-se em órbita inclinada e próximo do final de sua vida útil. A Hispasat Brasil Ltda., segunda representante legal, formalizou anuência com o pedido de renúncia apresentado.
+4. A área técnica propôs o deferimento do pedido, uma vez que a renúncia em questão não terá impacto sobre os usuários finais, tendo em vista que a empresa informou que não há mais clientes, serviço ativo ou contrato no Brasil.
+II. QUESTÃO EM DISCUSSÃO
+5. Há duas questões em discussão: (i) saber se o Conselho Diretor é competente para declarar a extinção, por renúncia, do Direito de Exploração de Satélite; e (ii) saber se estão atendidos os requisitos procedimentais e regulatórios para a extinção do direito de exploração do satélite Amazonas 2, sem prejuízo das obrigações da exploradora perante a Anatel e terceiros.
+III. RAZÕES DE DECIDIR
+6. Compete à Anatel disciplinar o uso de recursos de órbita e espectro, cabendo ao Conselho Diretor decidir sobre a extinção de direito de exploração de satélite.
+7. A manifestação da PFE-Anatel é dispensável no caso, diante da ausência de dúvida jurídica e da inexistência de hipótese de manifestação obrigatória.
+9. A renúncia tem natureza unilateral, irrevogável e irretratável, opera seus efeitos a partir do momento de seu protocolo, não desonera a exploradora de suas obrigações com a Anatel, com terceiros, nem afasta a apuração de infrações ou a cobrança de valores devidos.
+10. Não se verificou impacto aos clientes finais, uma vez que a empresa informou que não há mais cliente, serviço ativo ou contrato no Brasil.
+11. A existência de estações terrenas vinculadas ao satélite Amazonas 2 não impede a extinção pretendida, cabendo às prestadoras responsáveis regularizá-las perante a Agência.
+12. A existência de débitos vencidos de uma das representantes legais perante a Anatel não impede a extinção, considerando que tais valores permanecem exigíveis.
+13. Assim, não há óbice à extinção, por renúncia, do direito de exploração no Brasil do satélite estrangeiro Amazonas 2 e das subfaixas de radiofrequências associadas, a partir de 6 de maio de 2026.
+IV. DISPOSITIVO E TESE
+14. Pedido deferido. Declarada a extinção, por renúncia, a partir de 6 de maio de 2026, do Direito de Exploração, no Brasil, do satélite estrangeiro Amazonas 2 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. A renúncia opera seus efeitos a partir do momento de seu protocolo e, desde que formalizado por representante legítimo, com a devida ciência dos demais representantes legais, se for o caso, atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, art. 113 e art. 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; Resolução nº 748/2021, arts. 33, 34 e 35.
+Jurisprudência relevante citada: Anatel, Acórdão nº 167, Processo nº 53500.045091/2024-13, Rel. Daniel Martins D Albuquerque, Conselho Diretor, j. 12.06.2025; Anatel, Acórdão nº 134, Processo nº 53500.005555/2011-34, Rel. Nilo Pasquali, Conselho Diretor, j. 07.05.2026.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 – Lei Geral de Telecomunicações (LGT).
+Decreto nº 11.738, de 18 de outubro de 2023 - Dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671, de 3 de novembro de 2016.
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021.
+Portaria nº 642, de 26 de julho de 2013 - disciplina os casos de manifestação obrigatória da PFE-Anatel.
+RELATÓRIO
+Cuida-se de pedido de extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Amazonas 2, detido pela exploradora Hispasat S.A., a partir de 6 de maio de 2026.
+O Direito de Exploração, no Brasil, do satélite estrangeiro geoestacionário Amazonas 2, situado na posição orbital 61°O, foi conferido à Hispasat S.A., empresa constituída sob as leis da Espanha, por meio do Ato nº 5.678, de 2 de outubro de 2009, com extrato publicado no Diário Oficial da União (DOU) de 5 de outubro de 2009, e prorrogado por intermédio do Ato nº 14.051, de 1º de outubro de 2024 (SEI nº 12661792), com extrato foi publicado no Diário Oficial da União (DOU) de 2 de outubro de 2024, com vigência até 4 de outubro de 2027.
+Por meio do Ato nº 14.501/2024, foram indicadas como representantes legais da operadora estrangeira as empresas Hispamar Satélites S.A., CNPJ nº 04.568.354/0001-98, e Hispasat Brasil Ltda., CNPJ nº 03.542.946/0001-78, empresas constituídas sob as leis brasileiras, com sede e administração no País, tendo sido autorizado o uso de subfaixas de radiofrequências contidas nas denominadas bandas C e Ku sujeitas ao Plano do Apêndice 30B do Regulamento de Rádio (RR) da União Internacional de Telecomunicações (UIT), associadas ao direito de exploração em questão.
+No entanto, em 6 de maio de 2026, a Hispasat S.A., por meio de representante legal no Brasil, a Hispamar Satélites S.A., apresentou formalmente pedido de renúncia ao referido direito de exploração com efeitos imediatos (SEI nº 15591945). Como motivação, alegou que o direito expiraria em outubro de 2027 e que o Amazonas 2 encontra-se em órbita inclinada e próximo do final de sua vida útil. 
+Devido à ausência de comunicação prévia à Agência acerca da descontinuidade, em caráter definitivo, do provimento da capacidade satelital, nos termos do § 7º do art. 33 do RGSat, verificou-se a existência de indícios de possível descumprimento de obrigações, tendo sido encaminhado o Ofício nº 3653/2026/ORLE/SOR-ANATEL (SEI nº 15702993), de 9 de junho de 2026, à Gerência de Controle de Obrigações (COGE), para providências.
+Na mesma data, por meio do Informe nº 4548/2026/ORLE/SOR (SEI nº 15608149), a Superintendência de Outorga e Recursos à Prestação (SOR) propôs o deferimento do pedido, nos termos da minuta de Ato SEI nº 15608464. Destacou-se que a renúncia em questão não terá impacto sobre os clientes finais, uma vez que a empresa informou que não há mais cliente, serviço ativo ou contrato no Brasil.
+A Matéria para Apreciação do Conselho Diretor nº 375/2026 (SEI nº 15608474) foi encaminhada a este Colegiado (SEI nº 15791142) e distribuída para minha relatoria em 18 de junho de 2026 (SEI nº 15827528).
+Considerando que a Hispasat Brasil Ltda., na qualidade de segunda representante legal da Hispasat S.A., não figurou como signatária do pedido de renúncia apresentado, determinou-se o encaminhamento de ofício pela área técnica, a fim de que a empresa confirmar sua ciência quanto ao teor do pedido de extinção por renúncia protocolizado em 6 de maio de 2026, concedendo-se o prazo de 15 (quinze) dias para resposta ao Gabinete, nos termos do Ofício nº 32/2026/NP-ANATEL (SEI nº 15872651), de 30 de julho de 2026. Aos 31 de julho de 2026, a Hispasat Brasil Ltda. protocolizou a petição SEI nº 16050449, por meio da qual manifestou cabalmente sua anuência ao pedido de extinção por renúncia.
+Os autos foram restituídos a este Gabinete em 5 de agosto de 2026.
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise está dividida em 4 (quatro) partes. Na primeira, confirma-se a competência deste Colegiado para decidir sobre a extinção do Direito de Exploração de satélites. Na segunda e na terceira, abordam-se os requisitos processuais e técnico-regulatórios para a extinção do referido direito. Por fim, verifica-se a consistência da presente análise em face do plano estratégico da Agência, dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU e das melhores práticas do setor.
+I - Da competência do Conselho Diretor
+De acordo com art. 1º da Lei nº 9.472, de 1997, Lei Geral de Telecomunicações (LGT), compete à União, por meio da Anatel, disciplinar e fiscalizar o uso do espectro de radiofrequências e de órbitas no país:
+Lei nº 9.472, de 16 de julho de 1997 - (Lei Geral de Telecomunicações - LGT)
+"Art. 1º Compete à União, por intermédio do órgão regulador e nos termos das políticas estabelecidas pelos Poderes Executivo e Legislativo, organizar a exploração dos serviços de telecomunicações.
+Parágrafo único. A organização inclui, entre outros aspectos, o disciplinamento e a fiscalização da execução, comercialização e uso dos serviços e da implantação e funcionamento de redes de telecomunicações, bem como da utilização dos recursos de órbita e espectro de radiofreqüências." 
+Nesse contexto, o Glossário da Anatel define o Direito de Exploração de Satélite como ato administrativo que autoriza o uso de recursos de orbita e radiofrequências associadas para o controle, monitoramento e prestação de capacidade satelital sobre o território brasileiro, nos termos abaixo descritos:
+Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução nº 779, de 28 de abril de 2025
+"Art. 1º (...)
+(...)
+CXXV - Direito de Exploração de Satélite: é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o Provimento de Capacidade Satelital sobre o território brasileiro, por Satélite Brasileiro ou por Satélite Estrangeiro;" (Grifou-se)
+Ressalta-se que a autorização de uso de radiofrequência incluída nessa definição é regida pelo Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021, não se submetendo ao Regulamento de Uso do Espectro de Radiofrequências (RUE):
+Regulamento de Uso do Espectro de Radiofrequências (RUE), aprovado pela Resolução nº 671/2016
+"Art. 1º ...
+(...)
+§ 3º, A utilização de radiofrequências, faixa ou canal de radiofrequências poderá ser permitida de forma diversa da prevista neste Regulamento nos seguintes casos, tratados em regulamentos específicos:
+(...)
+III - autorização de radiofrequência associada ao direito de exploração de satélite." (Grifou-se)
+Conforme disposto no Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 2013, compete a este Colegiado decidir sobre a conferência e a transferência de direitos de exploração de satélites:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+VII - aprovar editais de licitação, homologar adjudicações, outorgar concessão, autorização e permissão de serviços de telecomunicações e direito de uso de radiofrequências, decorrentes de procedimentos licitatórios, bem como decidir pela adaptação, prorrogação, transferência e extinção;
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite; (Redação dada pela Resolução nº 748, de 22 de outubro de 2021);" (Grifou-se)
+Tendo em vista que compete ao Conselho Diretor aprovar a conferência de direito de exploração de satélite, conclui-se que a competência para deliberar sobre a extinção do referido direito caberá ao próprio Conselho Diretor.
+E esse é o entendimento da Agência, já esposado em vários processos com o mesmo tema, dos quais se destaca o Acórdão nº 134, de 14 de maio de 2026, transcrito a seguir:
+Acórdão nº 134, de 14 de maio de 2026
+Processo nº 53500.005555/2011-34
+Recorrente/Interessado: TELESAT Brasil CAPACIDADE DE SATÉLITES Ltda.
+CNPJ nº 02.884.281/0001-18
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. EXTINÇÃO DE DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO POR RENÚNCIA. PEDIDO DEFERIDO.
+I. CASO EM EXAME
+1. Pedido de Extinção, por renúncia, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1, pertencente à TELESAT CANADA, com efeitos a partir de 1º de agosto de 2026.
+(...)
+IV. DISPOSITIVO E TESE
+Pedido deferido. Declarada a extinção, por renúncia, a partir de 1º de agosto de 2026, do Direito de Exploração no Brasil do satélite estrangeiro Anik G1 e das subfaixas de radiofrequências associadas, nos termos da minuta de Ato juntada aos presentes autos.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel declarar a extinção de Direito de Exploração de Satélite. 2. O Pedido de Renúncia apresentado com antecedência mínima de seis meses e por representante legítimo atende aos requisitos procedimentais aplicáveis. 3. A renúncia ao Direito de Exploração de Satélite é ato unilateral, irrevogável e irretratável. 4. A extinção do direito não desonera a Exploradora de obrigações com a Anatel e com terceiros, nem prejudica a apuração de infrações ou a cobrança de valores devidos. 5. Ausente prejuízo ao contraditório e à ampla defesa, admite-se a instrução da renúncia no mesmo processo administrativo."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º e 142; Resolução nº 612/2013, arts. 113 e 133, VII e IX; Resolução nº 671/2016, art. 1º, § 3º, III; Resolução nº 748/2021, arts. 27, 33, 34 e 35.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 22/2026/NP (SEI nº 15279069), integrante deste acórdão, declarar extinto, por renúncia, a partir de 1º de agosto de 2026, o direito de exploração no Brasil do satélite estrangeiro Anik G1 e as subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15153926, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela Empresa.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+II - Dos requisitos técnico-regulatórios
+A renúncia é um ato unilateral, irrevogável e irretratável por parte da exploradora de satélite. Ainda que não implique punição, não desonera a empresa de suas obrigações perante terceiros, tal como consta do art. 142 da LGT:
+LGT
+"Art. 142. Renúncia é o ato formal unilateral, irrevogável e irretratável, pelo qual a prestadora manifesta seu desinteresse pela autorização.
+Parágrafo único. A renúncia não será causa para punição do autorizado, nem o desonerará de suas obrigações com terceiros."
+O art. 113 do RIA disciplina o requerimento de renúncia de direito de exploração de satélite nos seguintes termos:
+RIA
+"Art. 113. O requerimento de renúncia de outorga para exploração de serviço de telecomunicações, de uso de radiofrequência ou de direito de exploração de satélite é ato unilateral, irrevogável e irretratável, devendo ser dirigido à autoridade competente, que instruirá o feito e o encaminhará para deliberação.
+Parágrafo único. A renúncia não desonera o interessado de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela prestadora ou a cobrança de valores devidos que serão apurados em processos próprios." 
+No RGSat, os arts. 33 a 35 regulam a extinção do direito de exploração e a descontinuidade, em caráter definitivo, do provimento de capacidade satelital, nos termos abaixo:
+Art. 33. O Direito de Exploração de Satélite extinguir-se-á pelo advento de seu termo final, encerramento da vida útil do satélite ou mediante anulação, caducidade, cassação, renúncia ou rescisão bilateral.
+[...]
+§ 4º A renúncia é o ato formal unilateral, irrevogável e irretratável, pelo qual a Exploradora de Satélites manifesta seu desinteresse pelo Direito de Exploração do Satélite.
+[...]
+§ 6º A extinção do Direito de Exploração de Satélite não desonera a Exploradora de Satélites de suas obrigações com a Anatel e com terceiros, nem prejudica a apuração de eventuais infrações cometidas pela Exploradora de Satélites ou a cobrança de valores devidos que serão apurados em processos próprios.
+§ 7º A descontinuidade, em caráter definitivo, do Provimento da Capacidade Satelital antes do fim do prazo estabelecido para o Direito de Exploração de Satélite deve ser comunicada à Agência com pelo menos 6 (seis) meses de antecedência, ressalvada hipótese decorrente do § 1º do artigo 27.
+Art. 34. A extinção do direito de exploração deverá ser declarada em procedimento administrativo próprio, garantidos o contraditório e a ampla defesa da Exploradora de Satélites.
+Art. 35. A extinção do Direito de Exploração de Satélite não elide a obrigatoriedade da Exploradora de Satélite de responder pelos danos proporcionados às prestadoras decorrentes da interrupção do Provimento de Capacidade Satelital anteriormente contratada, nem enseja, em qualquer hipótese, direito à indenização à Exploradora de Satélite.
+Quanto à instauração de processo apartado, o corpo técnico ressaltou que o presente pedido de extinção não implica prejuízo à ampla defesa e ao contraditório, uma vez que se atende a um pedido da própria exploradora. Assim, propôs-se dispensar a exigência prevista no art. 34 do RGSat, em benefício da celeridade e economia processual:
+Informe nº 4548/2026/ORLE/SOR (SEI nº 15608149)
+"3.13. Em que pese o comando contido no art. 34 do RGSat para que a instrução da extinção se dê em autos apartados, tal necessidade não se aplica ao caso concreto. Como dito, a renúncia é ato unilateral, irretratável, irrevogável e, desta maneira, não enseja a notificação da interessada para apresentação de contrarrazões. Ademais, também como já mencionado, a interessada manifestou de maneira inequívoca sua vontade pela extinção do direito em apreço, não havendo ofensa aos princípios da ampla defesa e do contraditório. Assim, observando os princípios da economia e celeridade processual, concluiu-se como mais adequada a instrução da manifestação de renúncia no presente processo referente à conferência do Direito de Exploração objeto de extinção."
+Alinho-me ao entendimento da área técnica, no sentido de que a aplicação do dispositivo, no caso concreto, pode ser relativizada sem prejuízo ao contraditório e à ampla defesa.
+No que concerne à comprovação de legitimidade jurídica do subscritor do pedido de extinção por renúncia, verificou-se que o requerimento (SEI nº 15591945) foi apresentado por procurador com poderes especiais (SEI nº 8643058) vinculado a uma das representantes legais, qual seja, a Hispamar Satélites S.A. Tendo em vista que se tratam de duas representantes legais, decidiu-se por solicitar à área técnica, por meio do Ofício nº 32/2026/NP-ANATEL (SEI nº 15872651), que a Hispasat Brasil Ltda. manifestasse formalmente ciência do pedido originalmente proposto. Por meio do Ofício (SEI nº 16050449), a Hispasat Brasil Ltda, por intermédio do responsável legal da empresa (SEI nº 8797595), formalizou anuência à solicitação de renúncia em questão.
+Resta, assim, devidamente comprovada a regularidade da representação e a ciência das representantes legais da exploradora.
+No tocante às obrigações pecuniárias perante a Agência, a área técnica consignou, com base em consulta ao Sistema Integrado de Gestão de Créditos da Anatel (SIGEC), constante do documento SEI nº 15608356, a existência de débitos vencidos em nome da Hispamar Satélites S.A., não havendo registro de débitos em nome da Hispasat Brasil Ltda. 
+Tal circunstância, todavia, não obsta a extinção pretendida, uma vez que a renúncia não afasta a exigibilidade dos valores devidos, os quais permanecem sujeitos à cobrança pelos meios próprios.
+Registre-se ainda que, nos termos do RIA e da Portaria nº 642, de 26 de julho de 2013, a manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) não é obrigatória nos processos de extinção de direitos de exploração de satélite, inexistindo, no caso concreto, dúvida jurídica que justifique sua oitiva.
+Desse modo, reputo atendidos os requisitos técnico-regulatórios e procedimentais aplicáveis à extinção, por renúncia, do Direito de Exploração, no Brasil, do satélite estrangeiro Amazonas 2, sem prejuízo da apuração de eventuais infrações e da cobrança de valores devidos em autos próprios.
+III - Da descontinuidade do provimento de capacidade
+Nos termos do § 7º do art. 33 do RGSat, exige-se que a exploradora informe à Anatel o fim definitivo do provimento de capacidade satelital com pelo menos 6 (seis) meses de antecedência, salvo em caso de falha catastrófica (art. 27, § 1º). Tal exigência é aplicável no presente caso, que trata da extinção do direito de exploração por renúncia:
+Regulamento Geral de Exploração de Satélites (RGSat), aprovado pela Resolução nº 748, de 22 de outubro de 2021
+Art. 33. O Direito de Exploração de Satélite extinguir-se-á pelo advento de seu termo final, encerramento da vida útil do satélite ou mediante anulação, caducidade, cassação, renúncia ou rescisão bilateral.
+(...)
+§ 7º A descontinuidade, em caráter definitivo, do Provimento da Capacidade Satelital antes do fim do prazo estabelecido para o Direito de Exploração de Satélite deve ser comunicada à Agência com pelo menos 6 (seis) meses de antecedência, ressalvada hipótese decorrente do § 1º do artigo 27. (Grifou-se)
+No caso em questão, a solicitação foi protocolizada em 6 de maio de 2026, com produção imediata de efeitos.
+Aos 8 de junho de 2026, elaborou-se o Informe nº 4548/2026/ORLE/SOR (SEI nº 15608149), por meio do qual área técnica informou não ter identificado comunicação prévia à Agência acerca da descontinuidade definitiva do provimento de capacidade satelital no prazo regulamentar. A constatação da irregularidade foi devidamente informada à Gerência de Controle de Obrigações Gerais (COGE), por meio do Ofício nº 3653/2026/ORLE/SOR-ANATEL (SEI nº 15702993), para adoção das providências cabíveis. Por fim, salientou que a renúncia solicitada não produz impacto aos clientes finais, uma vez que a empresa informou não possuir mais clientes ativos.
+Inicialmente, esclarecesse que a irregularidade identificada não impede a declaração de extinção do Direito de Exploração por renúncia. Isso porque, conforme dispõe o § 6º do art. 33 do RGSat, a extinção do direito não desonera a exploradora de suas obrigações perante a Anatel e terceiros, nem prejudica a apuração de eventuais infrações ou a cobrança de valores devidos em processos próprios.
+Esse entendimento está em consonância com a jurisprudência deste Conselho Diretor, a exemplo do Acórdão nº 167, de 23 de junho de 2025, no qual se assentou que a renúncia ao Direito de Exploração de Satélite, por sua natureza unilateral, irrevogável e irretratável, produz efeitos a partir de seu protocolo, sem afastar a responsabilidade da exploradora por obrigações remanescentes perante a Agência e terceiros:
+Acórdão nº 167, de 23 de junho de 2025
+Processo nº 53500.045091/2024-13
+Recorrente/Interessado: INTELSAT Brasil Ltda.
+CNPJ nº 03.804.764/0001-28
+Conselheiro Relator: Daniel Martins D Albuquerque
+Fórum Deliberativo: Reunião nº 944, de 12 de junho de 2025
+EMENTA
+DIREITO REGULATÓRIO. DIREITO DE EXPLORAÇÃO E DE USO DE RADIOFREQUÊNCIAS ASSOCIADAS. SATÉLITE ESTRANGEIRO. PEDIDO DE RENÚNCIA. ATO UNILATERAL, IRREVOGÁVEL E IRRETRATÁVEL. MANUTENÇÃO DAS OBRIGAÇÕES. COMPETÊNCIA DO CONSELHO DIRETOR. OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. DECLARAÇÃO DE EXTINÇÃO.
+1. Pedido de renúncia do Direito de Exploração, no Brasil, do satélite estrangeiro IS-905 e subfaixas de radiofrequências associadas , detido por INTELSAT LICENSE LLC, tendo como representante legal a empresa INTELSAT Brasil Ltda., CNPJ nº 03.804.764/0001-28, conferido por meio do Ato nº 15.962, de 14 de novembro de 2024 (SEI nº 12891087), cujo extrato foi publicado no Diário Oficial da União de 18 de novembro de 2024.
+2. Compete ao Conselho Diretor decidir pela extinção de direito de exploração de satélite, nos termos do art. 133, incisos VII e IX, do Regimento Interno da Agência Nacional de Telecomunicações - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+3. A renúncia é ato unilateral, irrevogável e irretratável, que opera seus efeitos a partir do momento de seu protocolo e que não desonera a prestadora de suas obrigações com terceiros e perante a Anatel.
+4. A presente matéria está alinhada com a Agenda 2030 da Organização das Nações Unidas - ONU, em especial com o Objetivo de Desenvolvimento Sustentável - ODS 9, de "construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação", e com o ODS 16, de "promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis".
+5. Pela declaração de extinção, por renúncia, com efeitos desde 11 de fevereiro de 2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 62/2025/DD (SEI nº 13710903), integrante deste acórdão, declarar extinto, por renúncia, com efeitos a partir de 11 de fevereiro de 2025, o direito de exploração, no Brasil, do satélite estrangeiro IS-905, posicionado a 24,5°O, e subfaixas de radiofrequências associadas , detido por INTELSAT LICENSE LLC, tendo como representante legal a empresa INTELSAT Brasil Ltda., CNPJ nº 03.804.764/0001-28, conferido por meio do Ato nº 15.962, de 14 de novembro de 2024, cujo extrato foi publicado no Diário Oficial da União de 18 de novembro de 2024, nos termos da Minuta de Ato SEI nº 13435656.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire e Vicente Bandeira de Aquino Neto, a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia e o Conselheiro Substituto Daniel Martins D Albuquerque.
+Com relação a terceiros, entende-se que a renúncia em tela não terá impacto, uma vez que a empresa informou que não possuir mais clientes, serviço ativo ou contrato no Brasil:
+Requerimento de Renúncia (SEI nº 15591945)
+"Em relação ao disposto no Artigo 33 do RGSat em vigor, informamos que não há mais cliente, serviço ativo ou contrato no Brasil. Portanto, a descontinuidade da operação do satélite de forma imediata, consubstanciada na apresentação de pleito de renúncia ao direito com efeito a partir da data de seu protocolo, não implicará em qualquer consequência prática, assim como em nenhum descumprimento de compromisso ou violação de direito."
+A área técnica observou, ainda, haver 3 (três) estações terrenas vinculadas ao satélite Amazonas 2, conforme Consulta SEI nº 15608413. Considerando que o cadastramento e o licenciamento de estações terrenas é de responsabilidade da prestadora de serviços de telecomunicações, tais empresas serão notificadas a regularizar o cadastro, caso ainda existam estações vinculadas ao satélite após a presente renúncia:
+Informe nº 4548/2026/ORLE/SOR (SEI nº 15608149)
+"3.19. Ainda nesse contexto, esta área técnica identificou, no Banco de Dados Técnicos e Administrativos da Anatel (BDTA), a existência de 3 (três) estações terrenas vinculadas ao satélite Amazonas 2, conforme Consulta SEI nº 15608413. Segundo relatado, verificou-se que tais estações pertencem a entidades autorizadas a prestar o Serviço de Comunicação Multimídia (SCM) e o Serviço Limitado Privado (SLP).
+3.20. Cumpre esclarecer que o cadastramento e o licenciamento de estações terrenas é de responsabilidade da detentora de autorização para explorar o serviço de telecomunicações associado, sendo esta também a responsável pelo recolhimento das taxas e contribuições incidentes e pela prestação do serviço de telecomunicações suportado pelo meio satelital, e não a Exploradora de Satélite detentora do direito de exploração, em consonância com o disposto no Regulamento Geral de Licenciamento (RGL), aprovado pela Resolução nº 719, de 10 de fevereiro de 2020.
+3.21. Assim, caso ainda haja estações terrenas vinculadas ao satélite na data a partir da qual surtirão os efeitos da renúncia, as empresas serão notificadas a regularizar o cadastro."
+Com relação às obrigações perante a Anatel, o corpo técnico observou que, em consulta ao Sistema Integrado de Gestão de Créditos da Anatel (SIGEC), consoante documento SEI nº 15608356, a Hispamar Satélites S.A. possui débitos vencidos, não constando débitos para a Hispasat Brasil Ltda.
+A existência de débitos vencidos e a eventual apuração de infração relacionada à ausência de comunicação prévia da descontinuidade não constituem óbice à extinção pretendida, uma vez que, nos termos da minuta de Ato (SEI nº 15608464), proposta pela área técnica, a renúncia ao direito de exploração do satélite estrangeiro geoestacionário Amazonas 2 não prejudica a apuração de eventuais infrações cometidas pela empresa e a cobrança de valores devidos, nem desonera a empresa de suas obrigações com terceiros e com a Agência.
+Desta forma, conclui-se que não há óbices à extinção, por renúncia, do Direito de Exploração do satélite Amazonas 2, a partir de 6 de maio de 2026.
+IV - Dos objetivos regulatórios
+Os Objetivos de Desenvolvimento Sustentável (ODS) são parte da Agenda 2030, um plano global elaborado pela Organização das Nações Unidas (ONU) que busca, até o ano de 2030, acabar com a pobreza, proteger o meio ambiente e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+Essa Agenda foi um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, realizada em 2015, a qual congregou os 193 Estados-membros da ONU, incluindo o Brasil, envolvendo a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura abaixo ilustra esses objetivos:
+Figura: Objetivos de Desenvolvimento Sustentável (ODS). Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas. É importante que referida aderência esteja explícita nas decisões deste Conselho Diretor, como bem salientou o Conselheiro Alexandre Freire em seu Ofício nº 90/2023/AF-ANATEL (SEI nº 11203364).
+A proposta de encaminhamento contida na presente Análise está em boa sintonia com os objetivos da Agenda 2030, em particular com o ODS nº 9, relacionado à Indústria, Inovação e Infraestrutura. Ressalta-se que a extinção do direito de exploração de satélites em exame, em razão da baixa demanda, otimiza e libera recursos de espectro e órbita. Isso permite seu reuso de forma mais eficiente e adequada ao mercado. Os referidos recursos são importantes para a construção de novas infraestruturas resilientes, a promoção da industrialização inclusiva e sustentável e o fomento à inovação, em sintonia com as metas 9.1, 9.4 e 9.c:
+Objetivos de Desenvolvimento Sustentável ODS da ONU
+"ODS 9. Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação
+9.1 Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos.
+(...)
+9.4 Até 2030, modernizar a infraestrutura e reabilitar as indústrias para torná-las sustentáveis, com eficiência aumentada no uso de recursos e maior adoção de tecnologias e processos industriais limpos e ambientalmente corretos; com todos os países atuando de acordo com suas respectivas capacidades.
+[...]
+9.c Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2030."
+Reforça-se assim o comprometimento do Brasil com os objetivos e metas da Agenda 2030 para o Desenvolvimento Sustentável.
+Nesse contexto, vale destacar o compromisso da Anatel com a adoção de boas práticas regulatórias preconizadas pelo Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), instituído pelo Decreto Presidencial nº 11.738, de 18 de outubro de 2023.
+Cumpre enfatizar ainda o interesse da Agência pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira - (QualiREG), desenvolvido pela Controladoria Geral da União (CGU), com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), que busca disseminar uma cultura de mensuração da qualidade regulatória no Brasil.
+CONCLUSÃO
+Voto por declarar extinto, por renúncia, a partir de 6 de maio de 2026, o direito de exploração no Brasil do satélite estrangeiro Amazonas 2 e subfaixas de radiofrequências associadas, nos termos da minuta de Ato SEI nº 15608464, sem prejuízo da apuração de eventuais infrações e cobranças de valores devidos pela empresa.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 19/08/2026, às 14:57, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15853159 e o código CRC 5300F224.
+ | 
+Referência: Processo nº 53500.005421/2024-38 | 
+SEI nº 15853159 |

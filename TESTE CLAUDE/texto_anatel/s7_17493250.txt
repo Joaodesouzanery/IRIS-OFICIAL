@@ -1,0 +1,586 @@
+SEI/ANATEL - 15642028 - Análise
+Boletim de Serviço Eletrônico em 18/06/2026
+Análise nº 50/2026/AF
+Processo nº 53500.105865/2023-91
+Interessado: Conselho Diretor
+CONSELHEIRO
+ALEXANDRE REIS SIQUEIRA FREIRE
+ASSUNTO
+Proposta de instituição do Selo de Sustentabilidade em Telecomunicações e aprovação do respectivo Plano de Ação Setorial.
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. SELO DE SUSTENTABILIDADE EM TELECOMUNICAÇÕES. PLANO DE AÇÃO PARA EFICIÊNCIA ENERGÉTICA, ECONOMIA CIRCULAR E SEGURANÇA DIGITAL. REGULAÇÃO RESPONSIVA E INDUTORA. APROVAÇÃO.
+I. CASO EM EXAME
+Proposta de instituição do Selo de Sustentabilidade em Telecomunicações e de aprovação de Plano de Ação setorial para reconhecer e incentivar boas práticas ambientais, sociais e de governança no setor de telecomunicações e de TICs.
+A proposta decorre de determinação do Conselho Diretor no Acórdão nº 300, de 6 de novembro de 2023, que aprovou a revisão do RGC e determinou a constituição de Grupo de Trabalho para definir índices de desempenho e critérios de classificação das prestadoras quanto a compromissos sustentáveis.
+Foi instituído o GT-ESG/RGC, que conduziu benchmarking internacional, diagnóstico setorial e projeto-piloto com apoio técnico do BID. 
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) avaliar se a proposta de instituição do Selo de Sustentabilidade em Telecomunicações possui fundamento jurídico, motivação técnica e regularidade formal; (ii) verificar se a metodologia do Selo e o Plano de Ação Setorial são adequados para induzir práticas sustentáveis no setor de telecomunicações e de TICs; e (iii) deliberar sobre a conveniência de determinar à Superintendência Executiva a constituição do Grupo Técnico do Selo de Sustentabilidade em Telecomunicações para operacionalizar a iniciativa.
+III. RAZÕES DE DECIDIR
+ A proposta encontra fundamento nos arts. 2º e 19 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), que atribuem à Anatel competência para adotar as medidas necessárias ao desenvolvimento das telecomunicações brasileiras e ao atendimento do interesse público.
+ Outrossim, a iniciativa alinha-se às diretrizes da Lei nº 12.187, de 29 de dezembro de 2009, que institui a Política Nacional sobre Mudança do Clima (PNMC), e da Portaria Interna nº 38, de 2021, que estabelece a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel (PGGR), voltadas à promoção de padrões sustentáveis e ao fortalecimento da responsabilidade socioambiental na Agência e no setor regulado.
+ A instrução processual observou o devido processo administrativo, contando com a manifestação das áreas técnicas envolvidas e o estrito cumprimento das competências previstas no Regimento Interno da Anatel.
+ O benchmarking internacional analisou as práticas de 68 instituições globais, identificando convergência regulatória em torno de temas como mensuração de emissões, eficiência energética, economia circular e adoção de métricas comparáveis.
+ O diagnóstico setorial abrangeu 87 entidades e revelou acentuada heterogeneidade na maturidade de sustentabilidade do setor. Esse cenário justificou a adoção de um modelo assimétrico, cujas exigências foram calibradas de acordo com o porte e a capacidade operacional das prestadoras.
+ O projeto-piloto, com participação voluntária de sete empresas, validou a aplicabilidade dos critérios, a proporcionalidade dos pesos e a estabilidade da plataforma tecnológica ECOA, um sistema web escalável que utiliza inteligência artificial para a estruturação de dados de sustentabilidade.
+ O Selo possui natureza estritamente voluntária e reputacional. A adesão a ele não gera direitos subjetivos nem vantagens regulatórias diretas, destina-se, contudo, a induzir comportamentos positivos, ampliar a transparência e estimular investimentos sustentáveis no setor.
+ A metodologia do Selo estrutura-se em um índice consolidado, composto por dimensões, subdimensões e questões que exigem a apresentação de evidências comprobatórias. O modelo atribui prioridade climática à Dimensão Ambiental (E) e incorpora assimetria regulatória na Dimensão de Governança (G). A Dimensão Social (S), por sua vez, foca na Conectividade Significativa, desdobrando-se em subdimensões de empoderamento e de segurança digital.
+ O modelo de governança prevê a criação do Grupo Técnico do Selo de Sustentabilidade em Telecomunicações, com composição multidisciplinar e coordenação da Superintendência Executiva, além da elaboração de Manual Operacional para disciplinar a coleta de dados, as fórmulas de cálculo dos índices e a validação de resultados.
+ O Plano de Ação Setorial organiza 18 ações em três eixos temáticos: Eficiência Energética, Economia Circular e Segurança Digital. A implementação é escalonada em horizontes de curto prazo (até 12 meses), fortalecimento institucional (até 2 anos), consolidação de métricas (até 3 anos) e integração estruturante (até 5 anos).
+ A iniciativa apresenta estrita aderência às diretrizes do Programa de Fortalecimento da Capacidade Institucional para Regulação (PRO-REG), do QualiREG, às recomendações da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) e aos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030, com destaque para os ODS 7, 9, 12, 13, 16 e 17.
+IV. DISPOSITIVO E TESE
+Proposta aprovada.
+Tese de julgamento: "1. É juridicamente válida a instituição do Selo de Sustentabilidade em Telecomunicações como instrumento voluntário de reconhecimento e indução de boas práticas ambientais, sociais e de governança no setor de telecomunicações e de TICs. 2. É adequada a aprovação do Plano de Ação setorial estruturado nos eixos de Eficiência Energética, Economia Circular e Segurança Digital, com implementação escalonada. 3. Cabe determinar à Superintendência Executiva a constituição do Grupo Técnico do Selo de Sustentabilidade em Telecomunicações para operacionalizar a primeira edição do Selo em 2027."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 2º e 19, II, VIII e XIX; Lei nº 9.784/1999; Lei nº 12.187/2009; Decreto nº 11.738/2023; Decreto nº 11.704/2023; Decreto nº 12.150/2024; Resolução Anatel nº 612/2013; Resolução Interna nº 38/2021; Resolução nº 765/2023; Portaria de Pessoal nº 37/2024.
+Jurisprudência relevante citada: ANATEL, Acórdão nº 300, Conselho Diretor, j. 06.11.2023, Processo nº 53500.061949/2017-68; ANATEL, Voto nº 21/2023/VA, Conselheiro Vicente Bandeira de Aquino Neto, j. 06.11.2023, Processo nº 53500.061949/2017-68; ANATEL, Voto nº 1/2022/AF, Conselheiro Alexandre Freire, j. 13.12.2022, Processo nº 53500.041904/2022-34.
+REFERÊNCIAS
+Legislação e Normas:
+Lei nº 9.472, de 16 de julho de 1997, a Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, a Lei do Processo Administrativo (LPA).
+Lei nº 12.187, de 29 de dezembro de 2009, que institui a Política Nacional sobre Mudança do Clima (PNMC).
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 11.704, de 14 de setembro de 2023, que institui a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável e reafirma o compromisso com a Agenda 2030.
+Decreto nº 12.150, de 20 de agosto de 2024, que institui a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Resolução Interna nº 38, de 09 de agosto de 2021, que aprova a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel (PGGR).
+Resolução nº 765, de 6 de novembro de 2023, que aprova o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC-2023).
+Resolução Interna nº 393, de 13 de dezembro de 2024, que aprova o Plano de Gestão Tático (PGT) para o biênio 2025-2026. (SEI nº 13029079).
+Portaria de Pessoal nº 37, de 09 de janeiro de 2024, que institui o Grupo de Trabalho ESG/RGC Anatel (GT-ESG/RGC). (SEI nº 11355494).
+Portaria de Pessoal nº 743, de 04 de junho de 2024, que altera a Portaria de Pessoal nº 37, de 09 de janeiro de 2024. (SEI nº 12072255).
+Julgados e Precedentes:
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL) (Brasil) (Conselho Diretor). Acórdão nº 300, de 6 de novembro de 2023, no Processo nº 53500.061949/2017-68. Relator: Conselheiro Emmanoel Campelo de Souza Pereira. (SEI nº 11095435).
+_____. Voto nº 1/2022/AF, de 13 de dezembro de 2022, no Processo nº 53500.041904/2022-34. Conselheiro Alexandre Freire. (SEI nº 9585106).
+_____. Voto nº 21/2023/VA, de 6 de novembro de 2023, no Processo nº 53500.061949/2017-68. Conselheiro Vicente Bandeira de Aquino Neto. (SEI nº 10871000).
+Demais referências:
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL); BANCO INTERAMERICANO DE DESENVOLVIMENTO (BID). Seminário Pré-COP ANATEL-BID. Brasília, DF, 26 ago. 2025. Transmitido no Canal Oficial da Anatel no YouTube, 1 vídeo (6h 02m 44s). Disponível em: YouTube. Acesso em: 11 mai. 2026.
+___. Relatório de Benchmark Internacional: framework regulatório para promoção de investimento climático sustentável. Consórcio Colin/Ecoa Tech, 2025.
+_____. Relatório de Diagnóstico Setorial: maturidade ESG do setor de TICs no Brasil. Consórcio Colin/Ecoa Tech, 2025.
+_____. Plano de Ação Setorial: trajetória para integração da agenda climática e digital. Consórcio Colin/Ecoa Tech, 2025.
+CGU / ONU / UNOPS / PNUD. Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024. Disponível em: CGU. Acesso em: 11 mai. 2026.
+MOREIRA, Egon Bockmann. Processo administrativo: princípios constitucionais e a Lei nº 9.784/1999 - com especial atenção à LINDB. 6. ed. Belo Horizonte: Fórum, 2022.
+OCDE. Organização para Cooperação e Desenvolvimento Econômico. Recommendation of the Council on Principles of Corporate Governance, OECD/LEGAL/0413, 2023. Disponível em: OECD. Acesso em: 11 mai. 2026.
+ONU. Organização das Nações Unidas. Objetivos de Desenvolvimento Sustentável no Brasil (Agenda 2030). 2023. Disponível em: brasil.org. Acesso em: 11 mai. 2026.
+UIT. União Internacional de Telecomunicações. Correspondência BDT/16188: Parceria para Implementação Piloto de Indicadores Ambientais Globais. Genebra, 19 de dezembro de 2025.
+RELATÓRIO
+Trata-se de proposta de instituição do Selo de Sustentabilidade em Telecomunicações e de aprovação do Plano de Ação Setorial, com o objetivo de reconhecer e incentivar a adoção de boas práticas ambientais, sociais e de governança no setor de telecomunicações e de tecnologias da informação e comunicação (TICs).
+A matéria originou-se de comando deste Colegiado proferido na 926ª Reunião do Conselho Diretor, realizada em 26 de outubro de 2023, e exarado no Acórdão nº 300, de 6 de novembro de 2023 (SEI nº 11095435), que aprovou a revisão do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC) e determinou à Superintendência Executiva (SUE) a constituição de Grupo de Trabalho (GT) para definir índices de desempenho e critérios de classificação das prestadoras quanto aos seus compromissos sustentáveis.
+Em 9 de novembro de 2023, em cumprimento ao referido decisum, foi expedido o Despacho Ordinatório (SEI nº 11095562), assinalando o prazo de 60 dias para a instauração do mencionado grupo técnico.
+Em 9 de janeiro de 2024, a SUE expediu o Informe nº 86/2023/SUE (SEI nº 11319495), que motivou e fundamentou a edição da Portaria de Pessoal nº 37 (SEI nº 11355494), de mesma data , instituindo formalmente o Grupo de Trabalho ESG/RGC Anatel (GT-ESG/RGC).
+Em 4 de junho de 2024, a composição do GT foi atualizada por meio da Portaria de Pessoal nº 743 (SEI nº 12072255), com o objetivo de assegurar maior transversalidade junto às áreas técnicas da Anatel envolvidas com o tema.
+Ao longo dos anos de 2024 e 2025, o GT-ESG/RGC realizou reuniões com representantes do setor e conduziu, sob a égide de cooperação técnica com o Banco Interamericano de Desenvolvimento (BID), as etapas de benchmarking internacional, diagnóstico setorial e teste-piloto, conforme detalhado no Informe nº 102/2025/SUE (SEI nº 14502921). Nesse interregno, destacam-se os seguintes atos e eventos:
+No segundo semestre de 2024, após a manifestação de interesse da Agência por intermédio do Ofício nº 1107/2024/GPR-ANATEL (SEI nº 12396844), o Banco Interamericano de Desenvolvimento (BID) iniciou o processo de seleção e contratação de consultoria especializada para o desenvolvimento de um framework regulatório voltado à promoção de investimento climático sustentável no setor.
+Em 6 de fevereiro de 2025, realizou-se a Reunião de Kick-off do projeto, com a participação de representantes da Anatel e do BID, na qual foi validado o Plano de Trabalho (SEI nº 13518220) e estabelecidas as fases de benchmarking internacional, diagnóstico setorial, projeto-piloto, plano de ação e disseminação de conhecimento.
+Em 18 de abril de 2025, a consultoria selecionada (Consórcio Colin Consultoria e Ecoa ESG Tech) entregou o Relatório de Benchmark Internacional (SEI nº 13595245), que analisou as práticas de 68 instituições globais para subsidiar os critérios do selo brasileiro.
+Entre março e maio de 2025, foi conduzida a etapa de diagnóstico setorial, alcançando 87 entidades (entre prestadoras, data centers e fabricantes).
+No período de 15 de maio a 11 de julho de 2025, realizou-se a etapa de projeto-piloto, que contou com a participação voluntária de sete prestadoras de diferentes portes, com o objetivo de testar a metodologia de avaliação e a estabilidade da plataforma tecnológica ECOA.
+Em 26 de agosto de 2025, a Anatel promoveu o Seminário Pré-COP ANATEL-BID, na sede da Agência em Brasília, DF, com o objetivo de apresentar os resultados do piloto e a proposta de framework de implementação do Selo ao setor regulado e a organismos internacionais.
+Em 24 de setembro de 2025, foram entregues os relatórios finais da consultoria, consubstanciados na proposta de Plano de Ação (SEI nº 14502881) e no Relatório Final do Projeto-Piloto (SEI nº 14502888).
+Em 19 de dezembro de 2025, a União Internacional de Telecomunicações (UIT), por meio da correspondência BDT/16188 (SEI nº 15049349), convidou formalmente esta Agência a participar de projeto-piloto para aprimoramento de indicadores ambientais globais, fundamentando a elaboração do Informe nº 3/2026/AIN (SEI nº 15049351).
+Em 6 de maio de 2026, a Superintendência Executiva (SUE), por intermédio da Matéria para Apreciação do Conselho Diretor nº 270/2026 (SEI nº 15444347), encaminhou a proposta final de instituição do Selo e o Plano de Ação para deliberação deste Órgão Colegiado.
+Em 7 de maio de 2026, o processo foi distribuído para a minha relatoria, conforme Certidão de Distribuição (SEI nº 15598532).
+É o breve relatório.
+DA ANÁLISE
+A fundamentação da presente Análise encontra-se estruturada em dez partes. Na primeira, avaliam-se a fundamentação jurídica, a motivação técnica e o atendimento dos aspectos formais da instrução processual. Na segunda, discorre-se sobre o contexto institucional e estratégico da agenda de sustentabilidade e sua transversalidade na Agência. Na terceira, detalha-se o framework regulatório do Selo, contemplando as etapas de benchmarking internacional, diagnóstico setorial e os resultados do projeto-piloto que subsidiaram sua concepção. Na quarta, apresenta-se a estrutura metodológica do Selo e os critérios de ponderação de seus índices e dimensões. Na quinta, analisam-se o modelo de governança do Selo e os princípios da regulação responsiva aplicados à matéria. Na sexta, examina-se o Plano de Ação Setorial e seu cronograma de implementação escalonada. Na sétima, aborda-se a interlocução internacional, com destaque para a nova parceria com a UIT. Na oitava, faz-se a conformação do objeto desta Matéria com o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com o QualiREG e com as recomendações da Organização para Cooperação e Desenvolvimento Econômico (OCDE). Na nona, demonstra-se a relação da iniciativa com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU). Por fim, na décima, faço minhas considerações finais acerca desta matéria.
+I – Da Fundamentação, Motivação e Aspectos Formais
+A fundamentação consiste na explicitação das razões de fato e de direito que levaram a Anatel a propor a instituição do Selo de Sustentabilidade em Telecomunicações, bem como a dotá-lo do conteúdo em apreço. Complementarmente, a motivação é o elemento que assegura a legitimidade, a transparência e a racionalidade das decisões da Agência, sendo indispensável para o adequado embasamento técnico, jurídico e social do processo.
+Nesse diapasão, a proposta encontra lastro jurídico nos arts. 2º e 19 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), que atribuem à Anatel a competência e legitimidade para adotar as medidas necessárias ao desenvolvimento das telecomunicações e ao atendimento do interesse público.
+Adicionalmente, fundamenta-se na Lei nº 12.187, de 29 de dezembro de 2009, que institui a Política Nacional sobre Mudança do Clima (PNMC), prevendo o estímulo a padrões sustentáveis de produção e consumo. Em particular:
+Política Nacional sobre Mudança do Clima:
+Art. 3º A PNMC e as ações dela decorrentes, executadas sob a responsabilidade dos entes políticos e dos órgãos da administração pública, observarão os princípios da precaução, da prevenção, da participação cidadã, do desenvolvimento sustentável e o das responsabilidades comuns, porém diferenciadas, este último no âmbito internacional, e, quanto às medidas a serem adotadas na sua execução, será considerado o seguinte:
+I - todos têm o dever de atuar, em benefício das presentes e futuras gerações, para a redução dos impactos decorrentes das interferências antrópicas sobre o sistema climático;
+(...)
+IV - o desenvolvimento sustentável é a condição para enfrentar as alterações climáticas e conciliar o atendimento às necessidades comuns e particulares das populações e comunidades que vivem no território nacional;
+(...)
+Art. 4º A Política Nacional sobre Mudança do Clima - PNMC visará:
+I - à compatibilização do desenvolvimento econômico-social com a proteção do sistema climático;
+II - à redução das emissões antrópicas de gases de efeito estufa em relação às suas diferentes fontes;
+(...)
+Art. 5º São diretrizes da Política Nacional sobre Mudança do Clima:
+(...)
+XIII - o estímulo e o apoio à manutenção e à promoção:
+(...)
+b) de padrões sustentáveis de produção e consumo.
+[Grifou-se]
+No plano interno, a iniciativa está em estrita consonância com a Resolução Interna nº 38, de 9 de agosto de 2021, que aprova a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel (PGGR), especialmente quanto à diretriz de fortalecimento da cultura sustentável na Agência e no setor regulado.
+Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel:
+Art. 4º A Governança e a Gestão Executiva da Anatel observarão as seguintes diretrizes:
+(...)
+XI – fortalecer e disseminar a cultura sustentável na Agência e no setor regulado;
+Quanto à motivação, a matéria foi impulsionada pelo Acórdão nº 300, de 6 de novembro de 2023 (SEI nº 11095435), que aprovou o novo Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC).
+Evidenciou-se, naquele momento de discussão sobre a atualização da base normativa, a urgência da gestão de resíduos eletrônicos e o alinhamento do setor à Agenda 2030 da ONU, conforme registrado com maestria pelo eminente Vistor Conselheiro Vicente Bandeira de Aquino Neto, em seu Voto nº 21/2023/VA, de 6 de novembro de 2023 (SEI nº 10871000). In verbis:
+Voto nº 21/2023/VA:
+V.3.3. Da previsão de procedimentos quanto ao recolhimento de resíduos oriundos de telecomunicações para reaproveitamento ou destinação correta
+5.523. A Senacon destacou ainda, em seu Ofício SEI nº 10391439, o tema da inclusão de procedimentos e meios que recolham para reaproveitamento ou destinação correta os resíduos oriundos da telecomunicação.
+(...)
+5.526. A SPR asseverou, ademais, que o art. 33, caput e incisos II e VI, da PNRS [Política Nacional de Resíduos Sólidos] estabelece que os fabricantes, importadores, distribuidores e comerciantes de pilhas, baterias, produtos eletrônicos e seus componentes são obrigados a estruturar e implementar sistemas de logística reversa, mediante retorno dos produtos após o uso pelo consumidor, de forma independente do serviço público de limpeza urbana e de manejo dos resíduos sólidos. Destacou que as maiores empresas de telecomunicações do país têm seus programas de destinação de resíduos sólidos implantados, citando, a título exemplificativo, os links referentes aos programas pertinentes ao tema das empresas CLARO, TIM e VIVO. Por fim, reconheceu a necessidade de se estimular a correta destinação do lixo eletrônico, sugerindo, com esse objetivo, acrescentar ao art. 4º do RGC anexo à Minuta de Resolução SEI nº 9389461 um inciso indicando a necessidade de realização de ações de educação para o consumo sobre o tema:
+(...)
+5.527. Compreendo e compartilho da preocupação apresentada pela Senacon. A gestão dos resíduos da telecomunicação dialoga com a Agenda 2030 da Organização das Nações Unidas (ONU), também conhecida como Agenda ESG, em especial com relação ao aspecto da sustentabilidade ambiental.
+5.528. Um levantamento da Organização das Nações Unidas (ONU) aponta que apenas 3% (três por cento) dos utensílios eletrônicos na América Latina são descartados corretamente. Ainda segundo o estudo, o Brasil realizou o descarte de mais de 2 milhões de toneladas de resíduos eletrônicos, sendo o quinto maior gerador global dessa matéria. Equipamentos eletroeletrônicos e eletrodomésticos geralmente contêm materiais valiosos, como metais preciosos, mas também podem conter substâncias tóxicas, como chumbo, cádmio, mercúrio e outros elementos perigosos. Além disso, ao implementar o sistema de logística reversa, o já citado Decreto nº 10.240/2020 prevê, em seus arts. 31 a 36, obrigações direcionadas aos consumidores, fabricantes, distribuidores e comerciantes. 
+(...)
+5.531. Outrossim, por compreender a urgência de a Anatel engajar-se mais intensamente com os objetivos da Agenda ESG, retomarei essa pauta mais adiante neste Voto, oportunidade em que apresentarei meus fundamentos para a propor a realização, por parte das Superintendências, de aprofundados estudos sobre a matéria, no intuito de melhor endereçá-la no âmbito desta Agência.
+[Grifou-se]
+Adicionalmente, a motivação técnica é reforçada pela necessidade de internalizar os princípios de sustentabilidade como referência para a formulação de políticas públicas, transformando desafios climáticos em oportunidades de investimento sustentável e inovação tecnológica.
+Em relação aos aspectos formais, a instauração e a instrução do processo atenderam à sua finalidade, com observância ao princípio do devido processo legal. A instrução técnica foi conduzida de forma exemplarmente diligente pelo Grupo de Trabalho ESG/RGC, que lhe assegurou participação ampla, diversa e multidisciplinar.
+Registra-se, ainda, que o rito processual cumpriu as exigências formais e de análise, com a devida manifestação das áreas envolvidas e observância às competências previstas no Regimento Interno.
+Por fim, compulsando os atos e documentos constantes do processo em epígrafe, observa-se que as propostas da Resolução Interna e do Plano de Ação encontram-se maduras para deliberação, não se mostrando necessários ajustes ou correções de ordem formal e/ou processual.
+II – Do Contexto Institucional e Estratégico 
+Antes de adentrar no contexto histórico específico da iniciativa, convém registrar que no âmbito da área técnica ela tramitou sob a alcunha de "Selo Climático ESG". Dada a amplitude e envergadura que sua versão final atingiu – integrando valores e princípios de sustentabilidade que vão além da dimensão climática – propõe-se, nesta Relatoria, uma nova nomenclatura: Selo de Sustentabilidade em Telecomunicações.
+Para fins de clareza expositiva, importa mencionar que a sigla ESG corresponde à expressão Environmental, Social and Governance, usualmente traduzida como Ambiental, Social e Governança. O conceito reúne, em perspectiva integrada, critérios destinados a orientar e avaliar o desempenho de organizações quanto à gestão de impactos ambientais, à responsabilidade social e à adoção de práticas de governança corporativa. Essas práticas devem ser pautadas por ética, transparência, integridade e adequada gestão de riscos, consolidando-se, nos últimos anos, como importante referencial para a formulação de políticas, investimentos e mecanismos de indução de boas práticas no setor produtivo.
+No âmbito das telecomunicações e das TICs, a abordagem ESG assume especial relevância em razão da transversalidade e da essencialidade desses serviços para a vida econômica e social contemporânea. De um lado, o setor é chamado a aperfeiçoar aspectos relacionados, por exemplo, à eficiência energética, à gestão de resíduos e equipamentos, à economia circular e à mitigação de impactos ambientais de suas redes e infraestruturas. De outro, sob a dimensão social e de governança, ganham relevo temas como inclusão e conectividade significativa, proteção de usuários, diversidade, segurança digital, transparência, conformidade regulatória e instrumentos internos de integridade, todos eles associados à prestação adequada, sustentável e confiável dos serviços.
+É nesse contexto que se insere a presente proposta, voltada à estruturação de instrumento regulatório de caráter indutor, apto a reconhecer e estimular a adoção voluntária de práticas alinhadas à agenda de sustentabilidade pelas empresas do setor. 
+Importa destacar que a instituição do Selo insere-se em um movimento de estruturação progressiva e consistente da agenda de sustentabilidade nesta Agência, intensificado a partir de 2023. Tal movimento reflete nosso compromisso estratégico em internalizar os princípios de governança ambiental, social e corporativa às decisões regulatórias, assegurando o alinhamento do setor de telecomunicações e TICs às diretrizes da Agenda 2030 das Nações Unidas e às melhores práticas internacionais.
+Sob a ótica do planejamento institucional, a proposta guarda estrita observância ao Plano Estratégico da Anatel para o quadriênio 2023-2027, especificamente ao seu Objetivo Estratégico de Resultado nº 4, que preconiza uma "atuação de excelência e sustentável, com foco em resultados". Essa diretriz orienta a modernização da atuação da Agência, consolidando a sustentabilidade não apenas como um conceito retórico, mas como um pilar fundamental da governança e da regulação setorial.
+Além disso, a agenda ESG encontra-se materializada no Plano de Gestão Tático (PGT) para o biênio 2025-2026, aprovado pela Resolução Interna nº 393, de 13 de dezembro de 2024. No âmbito do referido Plano, destaca-se o Projeto Estratégico Governança 4.0 ESG, com duração de 24 meses, voltado ao fomento de práticas de responsabilidade socioambiental no setor regulado e à sensibilização do corpo técnico da Agência.
+É imperativo destacar a natureza transversal da agenda de sustentabilidade dentro desta Autarquia. A internalização dos Objetivos de Desenvolvimento Sustentável (ODS) permeia diversos processos decisórios, influenciando desde a inclusão de requisitos ambientais e sociais em editais de radiofrequências até a promoção da equidade de gênero e da segurança digital dos consumidores. Essa abordagem integrada permite que esses valiosos critérios orientem a formulação e a análise de políticas públicas setoriais de forma sistemática.
+Portanto, o Selo de Sustentabilidade em Telecomunicações não constitui uma ação isolada, mas o coroamento de um ciclo de amadurecimento institucional que busca transformar os desafios setoriais em vetores de inovação e investimento sustentável. Assim, ao posicionar-se como agente indutor de melhores práticas, a Anatel reafirma sua missão de promover o desenvolvimento das comunicações em harmonia com os compromissos climáticos nacionais e internacionais.
+III – Do Framework Regulatório do Selo
+O desenvolvimento do framework regulatório do Selo de Sustentabilidade em Telecomunicações alicerçou-se em uma instrução técnica exaustiva, estruturada para garantir que a iniciativa brasileira estivesse alinhada ao estado da arte da regulação global e às peculiaridades do setor nacional.
+Essa construção desdobrou-se em três etapas fundamentais: o benchmarking internacional, o diagnóstico setorial brasileiro e a validação por meio de projeto-piloto, detalhadas a seguir.
+III.a – Benchmarking Internacional
+A etapa de benchmarking internacional, realizada entre fevereiro e abril de 2025, consistiu na análise sistêmica das práticas e mandatos de 68 instituições globais distribuídas por quatro continentes, incluindo reguladores setoriais, bancos multilaterais de desenvolvimento e organismos internacionais.
+Informe nº 102/2025/SUE:
+3.57. Ao todo, foram analisados dados e informações de 68 (sessenta e oito) instituições (p. 10 e 11), abrangendo Agências Governamentais, Bancos Multilaterais de Desenvolvimento, Fabricantes de Equipamentos, Organizações Internacionais, Prestadores de Serviços, Reguladores e Agências promovedoras de Rankings, distribuídas por diferentes continentes.
+O estudo buscou identificar tendências regulatórias e metodologias consolidadas para a promoção de investimentos climáticos sustentáveis no setor de TICs. A análise concentrou-se em eixos temáticos essenciais, tais como a incorporação do Acordo de Paris às normas setoriais, métodos de cálculo para emissões de carbono, critérios de eficiência energética para aquisição de infraestrutura e promoção da economia circular para redução de resíduos eletrônicos (e-waste).
+Os resultados apontaram para uma convergência global no sentido de transformar o papel do regulador: de um garantidor exclusivo da concorrência para um indutor proativo de sustentabilidade e resiliência de redes.
+Figura 1. Resultados do Benchmark Internacional (Elaboração: SUE).
+No que tange à mensuração de impactos, o benchmarking revelou a hegemonia do GHG Protocol como padrão predominante para a contabilização de emissões de gases de efeito estufa (GEE) em três escopos, sendo amplamente adotado por reguladores de vanguarda, como a ARCEP (França) e a ANACOM (Portugal).
+Verificou-se, ainda, um foco crescente na eficiência energética, com reguladores como o IFT (México, hoje CRT) e a CRC (Colômbia) utilizando critérios de certificação sustentável em processos de licitação e aquisição de equipamentos.
+Igualmente, destaca-se a interlocução com frameworks globais de transparência, como o Science Based Targets initiative (SBTi) e o Carbon Disclosure Project (CDP), que fornecem a base científica para metas de descarbonização.
+No âmbito setorial, a União Internacional de Telecomunicações (UIT) emergiu como referência central, ao estabelecer metas específicas de redução de 45% nas emissões do setor de TICs até 2030, reforçando a necessidade de métricas harmonizadas e comparáveis globalmente.
+Por oportuno, transcreve-se, a seguir, as conclusões do GT-ESG/RGC sobre essa primeira etapa do trabalho:
+Informe nº 102/2025/SUE:
+3.65. Em síntese, o Benchmark Internacional indica que a sustentabilidade climática no setor de telecomunicações tem sido impulsionada por uma combinação de padrões internacionais de mensuração, instrumentos regulatórios indutores, incentivos econômicos e mecanismos de transparência. Embora persistam diferenças no grau de maturidade regulatória entre regiões, observa-se tendência clara de convergência metodológica e de fortalecimento da atuação regulatória como catalisadora de investimentos sustentáveis.
+3.66. A análise detalhada constante do Relatório de Benchmark (com mais de 390 páginas) fornece um panorama abrangente das práticas globais e se apresenta como ferramenta estratégica para a identificação de referências internacionais e para a adaptação de soluções ao contexto regulatório brasileiro, subsidiando diretamente o desenho e a validação do projeto-piloto do Selo Climático ESG Anatel‑BID.
+Essa imersão em práticas internacionais é muito importante, pois permite a estruturação de um Selo que não apenas replica padrões externos, mas os adapta à realidade brasileira, assegurando que o framework nacional seja tecnicamente rigoroso e, simultaneamente, apto a atrair investimentos verdes para o País.
+III.b – Diagnóstico do Setor Brasileiro 
+A necessidade de um diagnóstico setorial robusto consolidou-se como um dos principais direcionadores do projeto, uma vez que, durante as etapas preliminares em 2024, identificou-se a complexidade de estabelecer padrões de atuação uniformes diante da heterogeneidade dos agentes.
+Assim, entre os meses de março e maio de 2025, a Anatel, em conjunto com o Consórcio especializado, conduziu uma análise profunda da maturidade ESG do setor, abrangendo prestadoras de serviços de telecomunicações, operadores de data centers e fabricantes de equipamentos.
+A metodologia empregada combinou pesquisas quantitativas e qualitativas, alcançando 87 entidades avaliadas. A pesquisa quantitativa permitiu identificar padrões e correlações estatísticas, enquanto a etapa qualitativa, composta por entrevistas em profundidade com nove empresas selecionadas, forneceu insights contextuais sobre motivações e desafios operacionais.
+Para assegurar a representatividade da amostra e tratar adequadamente a assimetria do setor, as empresas foram agrupadas em clusters baseados na receita operacional bruta, seguindo os critérios do BNDES, permitindo uma comparação justa entre microempresas, empresas de pequeno porte (EPP), médias e grandes corporações.
+Figura 2. Diagnóstico Setorial Brasileiro (Elaboração: SUE).
+Os resultados evidenciaram uma acentuada disparidade na maturidade ESG correlacionada ao faturamento e ao segmento de atuação. Enquanto as grandes empresas apresentam, de forma consistente, processos formalizados e altos níveis de conformidade, as empresas de médio e pequeno porte mostram maior variabilidade, com níveis de maturidade avançada de apenas 8% e 4%, respectivamente.
+No segmento de prestação de serviços, que compõe o maior grupo da amostra, 66% das empresas ainda se encontram no nível "Inexistente/Baixo" de maturidade. Em contrapartida, os operadores de data centers destacaram-se positivamente, com 50% da amostra atingindo o nível avançado, impulsionados pela exigência de certificações internacionais como as ISO 14001 (meio ambiente), 27001 (segurança cibernética) e 50001 (gestão energética).
+Um dado de elevada relevância para a atuação desta Agência foi a constatação de que a maturidade ESG não depende exclusivamente do porte econômico. Identificaram-se casos de inovação e resiliência em empresas de menor porte que, mesmo sem estímulo regulatório direto, implementaram ações de mitigação climática e economia circular, como a logística reversa de resíduos eletrônicos e o recondicionamento de equipamentos:
+Informe nº 102/2025/SUE:
+3.74. Assim, mesmo que não tenham inventário de emissões estruturado ou metas Net Zero, as empresas de menor porte apresentaram exemplos concretos de ações de coleta, reuso, doação e transformação de resíduos com impacto ambiental e social direto, como um caso citado em que 11 toneladas de sucata foram transformados em bancos e lixeiras, ou casos de programas de logística reversa, nos quais pequenas prestadoras coletam e destinam corretamente resíduos eletrônicos, mesmo com estrutura limitada, e ainda, casos de reuso interno, a partir do recondicionamento e reaproveitamento de equipamentos dentro da própria operação, reduzindo compra de novos ativos.
+Tal achado reforça a oportunidade de o regulador atuar não apenas como fiscal, mas como um indutor de coordenação e engajamento, capaz de disseminar essas boas práticas para todo o setor.
+O diagnóstico foi estruturado em sete eixos centrais: Perfil Institucional, Estratégia Climática, Gestão de Riscos e Oportunidades, Engajamento da Cadeia de Valor, Emissões e Energia, Reciclagem e Descarte de Resíduos, e Transparência e Padronização. A análise transversal desses eixos revelou que os principais desafios residem na padronização de processos e na integração da cadeia de suprimentos, além de obstáculos técnicos específicos, como a reciclagem de fibra óptica.
+Para o GT-ESG/RGC:
+Informe nº 102/2025/SUE:
+3.76. Essas divergências evidenciam que os desafios e oportunidades para aprimoramento das práticas ESG estão intimamente ligados ao contexto econômico, setorial e territorial das organizações. Ademais, a validação dos dados revelou a importância de revisar e padronizar os instrumentos de coleta de informações, de modo que inconsistências (como contradições na autoavaliação) sejam minimizadas, contribuindo para uma análise mais fidedigna. Na execução do benchmark internacional foi possível observar que a obtenção, padronização e consolidação de informações em ESG é um grande desafio global. 
+3.77. Em síntese, os dados extraídos das 87 empresas revelam um cenário onde a integração de práticas ESG no cerne dos negócios privados ainda encontra desafios, especialmente entre as organizações de menor porte, mas também apontam para o potencial transformador de políticas bem estruturadas. Mas não apenas o porte das empresas influencia. Prestadoras de telecomunicações multisserviço demonstraram maturidade ESG independente do seu porte. Ao associar as variáveis de faturamento anual e atividade econômica à maturidade ESG, o estudo reforça a importância de um compromisso robusto com a sustentabilidade como diferencial competitivo e como resposta às demandas globais por responsabilidade corporativa.
+[Grifo no original]
+Em conclusão, o Relatório de Diagnóstico Setorial, com suas 62 páginas de dados técnicos, serviu de base empírica para a calibração do Selo, assegurando que o framework proposto seja tecnicamente rigoroso para os grandes players e, simultaneamente, acessível e educativo para os agentes de menor porte, promovendo a justiça regulatória e a competitividade sustentável.
+III.c – Projeto-Piloto
+A etapa final de validação do framework consistiu na realização do projeto-piloto, ocorrido entre os meses de maio e julho de 2025. O piloto teve como objetivo central testar, em ambiente controlado, a aplicabilidade dos critérios de desempenho, a proporcionalidade dos pesos atribuídos às dimensões e a estabilidade da infraestrutura tecnológica de suporte, assegurando que o modelo final fosse robusto, flexível e aderente à realidade operacional das empresas.
+Explica o GT-ESG/RGC:
+Informe nº 102/2025/SUE:
+3.117. Essa etapa do projeto foi realizada entre maio e julho de 2025, tendo seus resultados detalhados nas 238 páginas que compõem o Relatório Produto 4 - projeto-piloto (SEI nº 14505174) e em sua versão Pública (SEI nº 14505182). Tais documentos congregam a sistematização de metodologias de mensuração de desempenho ESG, por meio de critérios objetivos, pesos proporcionais e classificações de conformidade. A estrutura proposta permitiu modelar uma forma contínua de acompanhamento, reconhecimento e engajamento que considera o porte, a maturidade e natureza das organizações, oferecendo uma avaliação diferenciada para prestadores de serviço de pequeno, médio e grande porte, data centers e fabricantes.
+3.118. Questionários específicos foram desenvolvidos pelas empresas do consórcio em colaboração com a Anatel (SEI nº (14697659) e com base nos estudos e relatórios das etapas anteriores de benchmark internacional e diagnóstico setorial. Desde o convite inicial até a consolidação dos resultados o processo foi estruturado em cinco etapas principais: i) seleção e mobilização das empresas participantes; ii) alinhamento metodológico e treinamento de usuários na plataforma e processos; iii) coleta de respostas e evidências via sistema ECOA; iv) pesquisa de experiência pós realização dos testes; e v) análise final dos dados. Tais etapas contaram com uma agenda robusta de encontros, workshops, fóruns de discussão, simulações de reportes e coleta de dados via plataforma web.
+3.119. A curva de aprendizado observada permitiu validar tanto a aderência dos questionários quanto a estrutura tecnológica e os fluxos processuais, gerando insumos relevantes para o aperfeiçoamento do framework regulatório, de modo a torná-lo útil, exigente e aderente à realidade operacional das empresas.
+3.120. Com base nessa abordagem, foi elaborado um framework preliminar que traduz os achados do diagnóstico em práticas ESG aplicáveis ao marco regulatório brasileiro, considerando os impactos específicos de cada tipo de empresa. O modelo propõe pesos distintos para dimensões ESG, conforme a criticidade dos temas, assegurando equidade e alinhamento com as melhores práticas globais identificadas a partir do estudo de benchmark internacional realizado. A dimensão ambiental, por exemplo, recebe maior peso relativo, enquanto aspectos de governança ganham relevância proporcional ao porte da organização.
+Participaram desta fase, de forma voluntária, empresas representativas da diversidade do ecossistema de TICs, incluindo prestadoras de diferentes portes (Nível I, II e III), fabricantes e empresas de data centers.
+O processo foi estruturado em cinco etapas principais: mobilização dos participantes; alinhamento metodológico e treinamento; coleta de dados e evidências; pesquisa de experiência pós-testes; e análise final dos resultados.
+A coleta e o processamento das informações foram realizados por meio da plataforma tecnológica ECOA, um sistema web escalável que utiliza inteligência artificial para a estruturação de dados ESG. Os testes confirmaram a estabilidade e a funcionalidade da ferramenta, sem que fossem registrados incidentes de infraestrutura ou dificuldades significativas de uso por parte das organizações participantes.
+Informe nº 102/2025/SUE:
+3.136. A coleta de dados e o processamento das informações considerando os pesos de cada variável avaliada resultam na avaliação da empresa dentro de um range que vai do índice A++, que reflete o estado da arte em todas as dimensões avaliadas para um dado grupo de empresas até o score C-, que indica a necessidade de desenvolvimento de ações para evoluir na escala de avaliação quanto aos quesitos ESG avaliados. Tal processamento de informações e geração de resultados é representado pelo diagrama abaixo:
+Identificou-se que o tempo médio para o preenchimento dos dados foi de 2,4 dias, demonstrando que a estrutura proposta demanda baixo esforço operacional e permite, até mesmo, futuras ampliações nos questionários.
+Os resultados do piloto ratificaram as disparidades de maturidade identificadas no diagnóstico setorial. Enquanto empresas de grande porte (Nível III) demonstraram elevada conformidade e capacidade de fornecer evidências robustas, as empresas de Nível I e II apresentaram fragilidades em temas transversais, como governança estratégica e engajamento da cadeia de suprimentos.
+Figura 3. Resultados e Percepções do Projeto-Piloto (Elaboração: SUE).
+Tais achados permitiram a calibração final do modelo para observar os princípios da regulação responsiva e da assimetria, adaptando as exigências de Governança e os prazos de reporte conforme o porte e a capacidade técnica de cada agente.
+A pesquisa de experiência revelou um sentimento de alto valor de longo prazo para o setor, embora tenha evidenciado a necessidade de o Regulador estabelecer benefícios e incentivos tangíveis para mitigar apreensões iniciais quanto a custos e penalidades. Além disso, as empresas enfatizaram a importância da padronização regulatória e do alinhamento com frameworks internacionais (como CDP, GRI e SASB) para garantir a credibilidade e a comparabilidade dos dados.
+Diante do exposto, o projeto-piloto atingiu seus objetivos ao consolidar um framework composto por quatro níveis hierárquicos (Índice Consolidado, Dimensões, Subdimensões e Questões). Esse resultado demonstra que a Anatel dispõe de uma base técnica e tecnológica madura para evoluir para o ciclo de implementação ampliada do Selo.
+IV – Da Estrutura e Metodologia do Selo
+A metodologia do Selo não se limita a um questionário de conformidade, mas constitui um framework regulatório multidimensional desenhado para traduzir a complexidade das práticas de sustentabilidade em indicadores quantitativos, auditáveis e comparáveis.
+Conforme estabelecido no Anexo I da Minuta de Resolução Interna, a arquitetura do modelo organiza-se em quatro níveis hierárquicos interdependentes, que asseguram a integridade lógica entre a coleta de dados e a nota final:
+ Nível 1 – Índice Consolidado: representa o escore final da empresa, variando de A++ (estado da arte) a C- (necessidade de evolução). Tal índice é o principal instrumento de transparência e "gamificação", permitindo a diferenciação competitiva no setor.
+ Nível 2 – Dimensões (E, S e G): categorias fundamentais que organizam os temas sob os pilares: Ambiental, Social e de Governança.
+ Nível 3 – Subdimensões: componentes temáticos que detalham as prioridades estratégicas, como Eficiência Energética, Economia Circular e Empoderamento Digital.
+ Nível 4 – Questões e Orientações Técnicas: perguntas objetivas que exigem evidências comprobatórias (anexos). Esse nível inclui textos orientativos e gatilhos de desempenho (triggers), que sugerem ações de melhoria imediata caso a performance esteja abaixo do esperado.
+A Tabela a seguir apresenta, de forma sintética, as Dimensões e Subdimensões do Selo de Sustentabilidade em Telecomunicações:
+ ID
+ | 
+ Nível
+ | 
+ Detalhamento
+ | 
+ 1
+ | 
+ Dimensão
+ | 
+ Ambiental
+ | 
+ 1.1
+ | 
+ Subdimensão
+ | 
+ Engajamento da cadeia de suprimentos
+ | 
+ 1.2
+ | 
+ Subdimensão
+ | 
+ Ações para Adaptação e Mitigação a Riscos Climáticos
+ | 
+ 1.3
+ | 
+ Subdimensão
+ | 
+ Metodologias de Cálculo e Estratégias para Redução de Emissões de Carbono
+ | 
+ 1.4
+ | 
+ Subdimensão
+ | 
+ Consumo de Energia
+ | 
+ 1.5
+ | 
+ Subdimensão
+ | 
+ Eficiência Energética
+ | 
+ 1.6
+ | 
+ Subdimensão
+ | 
+ Uso de tecnologias avançadas para gestão da energia
+ | 
+ 1.7
+ | 
+ Subdimensão
+ | 
+ Gestão de Redes e Infraestrutura Energética
+ | 
+ 1.8
+ | 
+ Subdimensão
+ | 
+ Economia Circular e Redução de Resíduos Eletrônicos
+ | 
+ 1.9
+ | 
+ Subdimensão
+ | 
+ Uso de água e gestão de recursos hídricos
+ | 
+ 2
+ | 
+ Dimensão
+ | 
+ Social
+ | 
+ 2.1
+ | 
+ Subdimensão
+ | 
+ Promoção da Conectividade Universal
+ | 
+ 2.2
+ | 
+ Subdimensão
+ | 
+ Promoção da Conectividade Significativa - Empoderamento Digital
+ | 
+ 2.3
+ | 
+ Subdimensão
+ | 
+ Promoção da Conectividade Significativa - Proteção e Segurança
+ | 
+ 3
+ | 
+ Dimensão
+ | 
+ Governança
+ | 
+ 3.1
+ | 
+ Subdimensão
+ | 
+ Estruturação da Governança Climática
+ | 
+ 3.2
+ | 
+ Subdimensão
+ | 
+ Gestão de Riscos e Oportunidades
+ | 
+ 3.3
+ | 
+ Subdimensão
+ | 
+ Adesão a Compromissos Globais ESG
+ | 
+ 3.4
+ | 
+ Subdimensão
+ | 
+ Uso de Referências de Frameworks Internacionais
+ | 
+ 3.5
+ | 
+ Subdimensão
+ | 
+ Transparência e Regularidade na Divulgação de Dados Ambientais e Climáticos
+ | 
+Tabela 1: Estrutura de Dimensões, Subdimensões do Selo de Sustentabilidade em Telecomunicações.
+O ponto de maior densidade estratégica do modelo é a Prioridade Climática, materializada pelo peso superior conferido à Dimensão Ambiental (E). Cabe reforçar que esta escolha metodológica não é arbitrária e encontra arrimo em três fundamentos, a saber:
+ Alinhamento Internacional: o peso reflete a convergência global identificada no benchmarking, onde reguladores de vanguarda priorizam o GHG Protocol e as metas da UIT de redução de 45% nas emissões do setor até 2030.
+ Urgência Setorial: conforme exposto no diagnóstico, o setor de TICs é intensivo em capital e energia – a qual chega a representar 40% do OpEx das redes –, tornando a eficiência energética um fator crítico de produtividade e mitigação climática.
+ Compromissos Nacionais: a ponderação traduz a avaliação de prioridade climática frente às Contribuições Nacionalmente Determinadas (NDCs) assumidas pelo Brasil no Acordo de Paris, posicionando a Anatel como agente ativo na descarbonização da economia.
+Adicionalmente, a metodologia incorpora o princípio da assimetria regulatória de forma inovadora. Conforme validado no projeto-piloto (vide Seção III.c desta Análise), as exigências de Governança (Dimensão G) são calibradas conforme o porte da prestadora: empresas de Nível III (grandes operadoras) enfrentam requisitos rigorosos de estruturação de comitês e auditorias, enquanto empresas de Nível I possuem exigências simplificadas, reconhecendo suas limitações operacionais sem, contudo, renunciar ao monitoramento ambiental essencial.
+A Dimensão Social (S), por sua vez, foca na Conectividade Significativa, desdobrando-se em subdimensões de empoderamento e segurança digital, em consonância com as diretrizes estratégicas desta Agência.
+Por fim, é importante ressaltar que a robustez deste framework é garantida pelo lastro formal da Minuta de Resolução Interna (em especial em seus arts. 8º a 11), a qual estabelece que os pesos e critérios de cálculo devem ser previamente divulgados a cada ciclo, assegurando a previsibilidade e a segurança jurídica necessárias para o engajamento voluntário do setor.
+V – Do Modelo de Governança e Regulação Responsiva
+A governança do Selo de Sustentabilidade em Telecomunicações foi estruturada para assegurar a transversalidade da agenda, a integridade dos dados e a previsibilidade regulatória. O modelo baseia-se na criação de uma estrutura técnica multidisciplinar e na adoção de instrumentos normativos flexíveis, capazes de acompanhar a rápida evolução das métricas globais de sustentabilidade sem comprometer a segurança jurídica dos agentes.
+Conforme estabelecido no art. 3º da Minuta de Resolução Interna, a operacionalização dar-se-á por meio do Grupo Técnico do Selo de Sustentabilidade em Telecomunicações (GT-SS), a ser constituído no prazo de 30 dias após a publicação do ato. Senão vejamos:
+Minuta de Resolução Interna:
+Art. 3º Será constituído o GT-SS, no prazo de até 30 (trinta) dias da publicação desta Resolução Interna no Diário Oficial da União, com o objetivo de estabelecer os parâmetros técnicos de execução, operacionalização e atualização dos procedimentos de aferição dos índices que comporão o Selo, observados os limites de competência normativa estabelecidos nesta Resolução Interna e no Regimento Interno da Anatel.
+(...)
+O GT-SS terá natureza multidisciplinar, congregando representantes das Superintendências de Planejamento e Regulamentação (SPR), Relações com Consumidores (SRC), Outorga e Recursos à Prestação (SOR), Competição (SCP), Fiscalização (SFI) e Controle de Obrigações (SCO), sob a coordenação da Superintendência Executiva (SUE). Esse arranjo institucional reflete a transversalidade intrínseca do tema, garantindo que as dimensões ambiental, social e de governança sejam tratadas de forma integrada e coerente com as competências regimentais de cada área.
+Entre as atribuições centrais do GT-SS, destaca-se a responsabilidade por especificar e validar os requisitos das soluções tecnológicas e propor ao Conselho Diretor a inclusão ou exclusão de indicadores, garantindo que o framework permaneça alinhado ao estado da arte da sustentabilidade:
+Minuta de Resolução Interna:
+Art. 4º São atribuições do GT-SS, no âmbito desta Resolução, dentre outras:
+I - coordenar as atividades do grupo;
+II - discutir e propor o Manual Operacional (MOP), bem como suas atualizações, a ser aprovado pelo Coordenador do GT-SS, por meio de ato próprio;
+III - especificar e validar os requisitos das soluções tecnológicas necessárias à coleta de dados para implementação do Selo;
+IV - propor ao Conselho Diretor da Anatel a inclusão ou exclusão de indicadores a serem coletados, consolidados e publicados;
+V - subsidiar os estudos para a elaboração do manual metodológico das variáveis e critérios que comporão o Selo, sem alteração da estrutura geral do framework definida nesta Resolução.
+Um elemento fundamental deste modelo de governança é a instituição do Manual Operacional (MOP), a ser aprovado por ato próprio da coordenação do GT-SS. O MOP funcionará como um instrumento de gestão dinâmica, detalhando métodos de coleta, fórmulas de cálculo e procedimentos de validação de resultados.
+Minuta de Resolução Interna:
+Art. 5º O MOP estabelecerá os métodos de coleta, cálculo, consolidação e publicação dos indicadores e dos índices do Selo, contendo as disposições necessárias à:
+I - execução dos procedimentos de coleta, processamento e agregação dos dados e cálculo dos indicadores;
+II - definição das variáveis integrantes do Selo;
+III - validação e divulgação dos resultados, incluindo medidas técnicas e operacionais necessárias à implementação do Selo.
+Parágrafo único. O MOP poderá ser atualizado a qualquer tempo, desde que preservada a previsibilidade para os participantes e as diretrizes estabelecidas nesta Resolução Interna.
+Essa abordagem confere agilidade ao sistema, permitindo que critérios técnicos sejam atualizados a qualquer tempo – para incorporar, por exemplo, novas diretrizes da UIT ou padrões do ISSB – sem a necessidade de alteração da Resolução Interna, preservando a estabilidade da estrutura macro do Selo de Sustentabilidade em Telecomunicações.
+No que concerne à filosofia regulatória, a iniciativa fundamenta-se nos preceitos da regulação responsiva, priorizando a indução de comportamentos positivos em detrimento de abordagens sancionatórias.
+Anexo à Minuta de Resolução Interna:
+Art. 1º O Selo de Sustentabilidade em Telecomunicações (Selo) constitui instrumento de reconhecimento voluntário destinado a estimular a adoção de práticas empresariais sustentáveis no setor de telecomunicações e de tecnologias da informação e comunicação, com base em framework regulatório, contribuindo para:
+I - o desenvolvimento sustentável do setor;
+II - a eficiência no uso de recursos naturais e energéticos;
+III - a ampliação da conectividade com responsabilidade socioambiental;
+IV - o fortalecimento de estruturas de governança corporativa alinhadas às melhores práticas nacionais e internacionais.
+(...)
+Art. 3º Poderão aderir ao projeto do Selo:
+I - prestadoras de serviços de telecomunicações;
+II - fabricantes de equipamentos de rede e de dispositivos destinados ao setor;
+III - operadores de data centers;
+IV - outras empresas integrantes da cadeia de valor do setor de Tecnologia da Informação e Comunicação (TIC), conforme disciplinado pela Agência.
+Art. 4º A estrutura do Selo observará os princípios de assimetria regulatória e de regulação responsiva, adaptando as exigências conforme o porte e o tipo de empresa participante.
+(...)
+Art. 7º O framework do Selo estabelece mecanismo contínuo de acompanhamento, reconhecimento e engajamento, considerando o porte, o nível de maturidade e a natureza das diferentes empresas do setor de telecomunicações e de TICs.
+Parágrafo único. Para fins de avaliação, serão observadas as especificidades dos diferentes perfis de participantes, incluindo prestadoras de serviços de pequeno, médio e grande porte, operadores de data centers, fabricantes e demais empresas integrantes da cadeia de valor do setor.
+O Selo é definido como um instrumento de reconhecimento voluntário e reputacional, cuja adesão não gera direitos subjetivos ou vantagens regulatórias diretas, nem exime as empresas de suas obrigações legais. O objetivo é fomentar uma dinâmica de "gamificação" e diferenciação competitiva, onde a transparência de dados funcione como um ativo estratégico para atração de investimentos verdes e fidelização de consumidores conscientes.
+A eficiência operacional da governança será sustentada por plataforma tecnológica permite uma gestão centralizada e segura das informações, oferecendo funcionalidades como lógica condicional de perguntas – que adapta o questionário conforme reportes prévios (ex: notas do CDP) – e suporte a múltiplos idiomas, facilitando a atuação de equipes globais das grandes prestadoras e reduzindo o fardo administrativo para as PPPs.
+Por fim, repisa-se, por sua extrema importância, que o modelo materializa o princípio da assimetria, adaptando o rigor das exigências de governança ao porte das empresas. Dessa forma, enquanto prestadoras de Nível III enfrentam requisitos rigorosos de estruturação de comitês e gestão de riscos, as empresas de Nível I possuem exigências simplificadas, reconhecendo suas particularidades e limitações operacionais.
+Tal arranjo assegura a justiça regulatória e promove o fortalecimento da cultura sustentável em todo o setor, em estrito alinhamento à Política de Governança e Responsabilidade Socioambiental da Anatel (PGGR).
+VI – Do Plano de Ação Setorial
+O Plano de Ação Setorial (SEI nº 14505163) supera o caráter de mero cronograma administrativo ao se consolidar como uma estratégia responsável de transição regulatória. Fruto de ampla interlocução com as Superintendências e Gabinetes deste Colegiado, o Plano integra a agenda de sustentabilidade à atuação operacional da Agência, transformando diretrizes conceituais em vetores práticos de eficiência setorial.
+A seguir, apresenta-se a síntese das 18 ações propostas, organizadas na lógica vertical do Plano de Ação:
+ Horizonte temporal
+ | 
+ Ações Propostas
+ | 
+ Objetivo Estratégico
+ | 
+ 12 meses
+ | 
+ 1. Lançamento do Selo 
+ 2. Definição dos eixos prioritários (eficiência energética, economia circular e segurança digital)
+ 3. Exploração de incentivos regulatórios para adesão voluntária
+ | 
+ Engajar empresas no framework ESG específico para telecom
+ | 
+ 2 anos
+ | 
+ 4. Implantação e monitoramento do Plano Diretor de Logística Sustentável (PLS 2025-2026)
+ 5. Workshops e seminários com setor e servidores
+ 6. Divulgação estruturada das ações de sustentabilidade da Anatel
+ 7. Fortalecimento do Grupo de Trabalho do Selo de Sustentabilidade em Telecomunicações
+ 8. Diálogo institucional com ANEEL, MMA e outros órgãos
+ | 
+ Aculturamento institucional e incorporação de valores de sustentabilidade no curso regulatório
+ | 
+ 3 anos
+ | 
+ 9. Estratégia de medição indireta via consumo de energia (framework comparável)
+ 10. Estudos sobre impacto da IA na eficiência energética (IA.lab)
+ 11. Simplificação da destinação de bens apreendidos
+ 12. Apoio à logística reversa coordenada com MMA
+ 13. Capacitação de micro e pequenas empresas em práticas sociais
+ | 
+ Consolidação de métricas comparáveis, economia circular e inclusão social
+ | 
+ 5 anos
+ | 
+ 14. Revisão de regulamentos (ex. Certificação, R-Ciber, etc.) com critérios de sustentabilidade explícitos
+ 15 Inclusão de condicionantes de sustentabilidade em outorgas, anuências e leilões
+ 16. Incentivo a P&D em reciclagem intrassetor
+ 17. Expansão do conceito security by design e privacy by design para toda a cadeia
+ 18. Cooperação internacional ativa (UIT, OCDE, BEREC, ENISA)
+ | 
+ Integração estrutural e permanente da agenda de sustentabilidade na regulação
+ | 
+Tabela 2: Lógica vertical do Plano de Ação.
+A estratégia estrutura-se em três eixos temáticos prioritários, cuja materialidade para o ecossistema de TICs foi validada pelo diagnóstico setorial:
+ Eficiência Energética: justifica-se pela alta intensidade no uso de energia, que representa cerca de 40% do custo operacional (OpEx) das redes de telecomunicações. O foco recai na adoção de tecnologias verdes e na otimização de infraestruturas críticas, como data centers, cujo consumo tende a crescer exponencialmente com o avanço da Inteligência Artificial.
+ Economia Circular: aborda o desafio do lixo eletrônico (e-waste), considerando que o mundo gerou mais de 62 bilhões de quilos desse resíduo em 2022, com baixo índice de descarte sustentável na América Latina. O eixo promove o reúso de equipamentos, o fortalecimento da logística reversa e o incentivo à pesquisa e desenvolvimento (P&D) para a reciclagem de materiais complexos, como a fibra óptica.
+ Segurança Digital: incorpora os princípios de security by design e privacy by design em toda a cadeia de valor. Busca-se evoluir o modelo regulatório (como o R-Ciber) para proteger o usuário final e garantir a resiliência das infraestruturas frente aos riscos cibernéticos e climáticos.
+O Plano de Ação organiza as 18 ações estratégicas em uma trajetória escalonada, dividida em quatro horizontes temporais, buscando o aculturamento e a segurança jurídica:
+ Curto Prazo (até 12 meses): Foca no engajamento inicial por meio do lançamento do Selo de Sustentabilidade em Telecomunicações como programa voluntário de reconhecimento e na exploração de incentivos regulatórios que agreguem valor à adesão das empresas.
+ Fortalecimento Institucional (até 2 anos): prioriza o diálogo interinstitucional com órgãos como ANEEL e Ministério do Meio Ambiente (MMA), com o objetivo de coordenar políticas de redução de consumo de energia e logística reversa, além de promover workshops para sensibilização do corpo técnico da Agência.
+ Consolidação de Métricas (até 3 anos): implementa a estratégia de medição indireta via consumo de energia, solução pragmática para a baixa comparabilidade atual das métricas de emissões, e simplifica a destinação de bens apreendidos para programas de reúso e inclusão digital.
+ Integração Estruturante (até 5 anos): consiste na revisão de regulamentos finalísticos (Certificação, Segurança Cibernética e RGC, por exemplo) para incorporação de requisitos de sustentabilidade explícitos, bem como inclusão de condicionantes de sustentabilidade em editais de licitação e atos de outorga.
+A implementação desse Plano é impulsionada por três fatores estratégicos fundamentais: (i) a necessidade de mitigar o crescimento do consumo energético decorrente de novas tecnologias; (ii) a pressão internacional e do mercado de capitais por métricas ambientais comparáveis; e (iii) a oportunidade de posicionar o Brasil como referência global na integração entre regulação, sustentabilidade e inovação.
+Dessa forma, o Plano de Ação propicia que esta Agência atue como agente indutor de coordenação, transformando desafios socioambientais em oportunidades de investimento sustentável e ganho de produtividade para o setor, em estrito alinhamento às Contribuições Nacionalmente Determinadas (NDCs) brasileiras e aos Objetivos de Desenvolvimento Sustentável (ODS).
+VII – Da Interlocução Internacional e Futuras Parcerias
+A relevância técnica e o ineditismo da construção do Selo de Sustentabilidade em Telecomunicações da Anatel podem alçar este órgão regulador à condição de referência global na integração entre regulação setorial, inovação e sustentabilidade. Esse posicionamento deve-se ao fato de que o protagonismo da Agência no tema resultou em uma nova e estratégica frente de cooperação internacional, materializada pelo convite formal da União Internacional de Telecomunicações (UIT), por meio da correspondência BDT/16188, de 19 de dezembro de 2025, para que a Anatel firme parceria na implementação piloto de indicadores ambientais globais.
+O convite da UIT fundamenta-se no reconhecimento de que a iniciativa brasileira alinha-se plenamente aos esforços da organização para suprir a ausência de medições abrangentes e harmonizadas sobre o impacto climático no setor de TICs. Nesse contexto, a Anatel foi selecionada como pioneira para testar e aprimorar o conjunto de métricas de emissões de Gases de Efeito Estufa (GEE) e de consumo de energia elaborados pelo Grupo de Especialistas da UIT em Indicadores de Telecomunicações/TIC (EGTI). Essa colaboração permitirá que o Brasil contribua decisivamente para o aperfeiçoamento de parâmetros que beneficiarão reguladores em âmbito global.
+Destaca-se que a interlocução internacional já apresenta marcos operacionais robustos. Em setembro de 2025, durante a reunião anual do EGTI em Genebra, na Suíça, a Anatel apresentou os resultados do projeto-piloto Anatel-BID, ocasião na qual compartilhou os achados do diagnóstico setorial e a estrutura dos eixos temáticos priorizados.
+Intercâmbios dessa natureza reforçam a capacidade institucional da Anatel de gerar informações estratégicas para a formulação de políticas públicas, em consonância com as prioridades nacionais e dos demais países em desenvolvimento. Cabe registrar a estreita sinergia entre as parcerias conduzidas com o BID e com a UIT: enquanto o projeto Anatel-BID forneceu a base diagnóstica e a modelagem da estrutura de referência nacional, a cooperação com a UIT concentra-se na padronização técnica e na comparabilidade internacional de dados de alta complexidade.
+Esse ciclo virtuoso de cooperação, que já conta com atividades iniciadas em fevereiro de 2026, prevê a entrega de resultados consolidados no primeiro semestre deste ano, posicionando a Anatel como protagonista na agenda climática da 17ª reunião do EGTI, a realizar-se em Genebra, Suíça, em setembro de 2026.
+Ademais, ressalta-se que a iniciativa converge diretamente com a Ação Digital Verde (Green Digital Action - GDA), lançada pela UIT na COP28 e consolidada no GDA Hub durante a COP30 em Belém/PA. Essa integração assegura que o modelo regulatório brasileiro não seja apenas compatível, mas sim um vetor de disseminação das melhores práticas globais de computação verde e transição digital sustentável.
+Assim, a interlocução internacional valida a consistência técnica do Selo e reafirma o compromisso da Anatel com a accountability e com a liderança brasileira na agenda climática global do setor de TICs. Ao atuar como laboratório para indicadores mundiais, a Agência moderniza sua atuação interna e contribui para a construção de um ecossistema digital global mais resiliente e sustentável.
+VIII – Aderência a Boas Práticas Regulatórias (PRO-REG, QUALIREG E OCDE) 
+ VIII.a – Aderência aos Objetivos do PRO-REG
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação – PRO-REG", com a finalidade de apoiar a implementação de boas práticas regulatórias e aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional. É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação da Anatel.
+Dentre esses objetivos, destacam-se a necessidade de fortalecer a capacidade de formulação e análise de políticas públicas e a disseminação de boas práticas nacionais e internacionais.
+Decreto nº 11.738/2023:
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+A fundamentação apresentada para o Selo está em total sintonia com esses preceitos, especialmente por se basear em evidências colhidas em extenso benchmarking internacional e diagnóstico setorial, observando o devido processo legal e reafirmando os objetivos perseguidos pela adoção de boas práticas regulatórias.
+Adicionalmente, no âmbito do PRO-REG, o Decreto nº 12.150/2024 instituiu a Estratégia Nacional de Melhoria Regulatória (Estratégia Regula Melhor), que tem por objetivo aprimorar a qualidade regulatória e reduzir assimetrias na adoção de boas práticas. 
+Tal estratégia tem a finalidade de estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Decreto nº 12.150/2024:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+[Grifou-se]
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, com o objetivo de aprimorar os processos regulatórios por meio da troca de conhecimentos. Alinhado à Estratégia Nacional de Boas Práticas Regulatórias, o instrumento prevê a elaboração de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. A iniciativa busca fortalecer o entendimento mútuo sobre os sistemas regulatórios de ambos os países, promover o comércio e o investimento, e fomentar a adoção de práticas eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+Estratégia Nacional de Boas Práticas Regulatórias:
+1.5. (...)
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A instituição do Selo de Sustentabilidade em Telecomunicações pela Anatel reflete essa estratégia. A iniciativa propõe um modelo de regulação responsiva e assimétrica que, ao reconhecer as diferentes etapas de maturidade entre as empresas do setor de TICs, busca estimular condutas positivas sem impor encargos burocráticos desnecessários ou restrições à inovação.
+VIII.b – Boas Práticas Regulatórias Recomendadas pelo QualiREG 
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG), iniciativa da Controladoria-Geral da União (CGU) com apoio da ONU, busca disseminar uma cultura de mensuração sistemática da qualidade regulatória no país.
+Conforme as boas práticas indicadas pelo programa, é essencial que a regulação possua capacidade de resolver problemas provocados por fatores externos, como as mudanças climáticas e suas consequências.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades.
+A referida obra explora debates sobre os desafios e oportunidades dentro dessa temática. No Capítulo 2, que trata da Autonomia Decisória, a autora Patrícia Pessoa Valente (2024, p. 49) destaca, já na introdução, que:
+Boas Práticas Regulatórias do QualiREG:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+Nesse sentido, o QualiREG enfatiza que a gestão de riscos constitui uma abordagem indispensável para o aprimoramento das intervenções dos órgãos reguladores, particularmente diante de ameaças ambientais capazes de impor prejuízos materiais a coletividades inteiras.
+A proposta do Selo de Sustentabilidade em Telecomunicações reflete essas recomendações ao estruturar uma subdimensão voltada à Gestão de Riscos e Oportunidades Climáticas. Essa estrutura incentiva as empresas a mapearem suas vulnerabilidades físicas e de transição, integrando-as de forma definitiva às suas estratégias corporativas.
+Ademais, a utilização de plataforma tecnológica baseada em inteligência artificial para a coleta e o processamento de dados atende ao objetivo de fortalecer a capacidade institucional por meio da inovação e da digitalização. Esse processo garante transparência, integridade e eficiência na interlocução entre a Agência e os agentes regulados.
+VIII.c – Boas Práticas Regulatórias Recomendadas pela OCDE 
+O Brasil tem aderido, embora não seja membro, a diversas recomendações da OCDE, cujos grupos de trabalho discutem temas estratégicos como governança, transparência e a transição para a economia digital sustentável. Em relação ao ambiente regulatório, a OCDE destaca a importância de os governos e reguladores "liderarem pelo exemplo", atuando como indutores de práticas voltadas à redução do impacto ambiental.
+A OCDE oferece orientação para auxiliar os formuladores de políticas na avaliação e melhoria da estrutura legal, regulatória e institucional voltada para a governança corporativa. O objetivo é apoiar a confiança e a integridade do mercado, promover a eficiência econômica, fomentar o crescimento sustentável e assegurar a estabilidade financeira. Os princípios de governança estabelecidos são:
+Boas Práticas Regulatórias (OCDE):
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar, ademais, que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Boas Práticas Regulatórias (OCDE):
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+A iniciativa do Selo alinha-se aos princípios de governança corporativa da OCDE, especialmente no que tange à sustentabilidade e à resiliência. Ao emitir orientações claras, promover o compliance voluntário e adotar uma postura transparente, a Anatel mitiga riscos de judicialização e assegura a estabilidade regulatória — práticas recomendadas pela Organização para que os órgãos reguladores adotem soluções de forma eficiente e alinhada à inovação técnica.
+IX – A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+ODS/ONU (sítio eletrônico):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+O Brasil é um dos países signatários da referida Agenda, tendo, dessa forma, caráter cogente para o Poder Executivo brasileiro. Isso porque, em 2023, editou-se o Decreto nº 11.704, que instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inc. I), competindo-lhe, dentre outros pontos, acompanhar e monitorar o alcance dos ODS (art. 2º, inc. II) e identificar, sistematizar e divulgar boas práticas e iniciativas que colaborem para o alcance dos ODS (art. 2º, inc. IV). Tem-se, portanto, que a República firmou seu compromisso em buscar a implementação dos objetivos e indicadores da referida Agenda.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Pontua-se que a Agenda 2030 não faz incursões sobre as políticas públicas concretas de implementação desses objetivos e indicadores, cabendo essa atribuição às instituições governamentais dos países signatários. Assim, destaca-se que a edição do mencionado Decreto nº 11.704/2023 constitui um ato de reafirmação do compromisso brasileiro com a implementação dos ODS, sendo, novamente, de observância obrigatória pelos órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+A proposta do Selo de Sustentabilidade em Telecomunicações apresenta correlação direta com diversos objetivos da Agenda 2030:
+ ODS 7 (Energia Limpa e Acessível): ao incentivar a eficiência energética e a transição para fontes renováveis nas redes e data centers;
+ ODS 9 (Indústria, Inovação e Infraestrutura): ao promover infraestruturas resilientes e o desenvolvimento tecnológico sustentável;
+ ODS 12 (Consumo e Produção Responsáveis): ao fomentar a economia circular e a gestão adequada de resíduos eletrônicos (e-waste);
+ ODS 13 (Ação Contra a Mudança Global do Clima): um dos eixos centrais da iniciativa, focado na mitigação de emissões e resiliência climática;
+ ODS 16 (Paz, Justiça e Instituições Eficazes): ao fortalecer a governança, a transparência e a tomada de decisão inclusiva e participativa; e
+ ODS 17 (Parcerias e Meios de Implementação): materializado pela colaboração estratégica entre Anatel, BID e UIT para o desenvolvimento de métricas globais.
+Dessa forma, o Selo de Sustentabilidade em Telecomunicações supera o papel institucional desta Autarquia ao consolidar o setor como vetor estratégico da transição para uma economia de baixo carbono, em total harmonia com os compromissos internacionais do Estado brasileiro.
+X – Minhas Considerações Finais 
+A instituição do Selo de Sustentabilidade em Telecomunicações representa a consolidação de um ciclo intenso de trabalho, marcado por elevado rigor técnico, articulação institucional e compromisso coletivo com a construção de um novo paradigma regulatório para o setor de telecomunicações brasileiro.
+Trata-se de uma iniciativa que transcende a criação de um mero instrumento de reconhecimento, configurando-se como a base estruturante para a incorporação definitiva da agenda de sustentabilidade na atuação regulatória desta Agência.
+Desde sua concepção, este projeto foi orientado pelo propósito de desenvolver um framework regulatório capaz de promover investimentos sustentáveis em eficiência energética, economia circular e segurança digital, bem como alinhar o setor às metas globais de enfrentamento às mudanças climáticas, em especial aos compromissos assumidos no âmbito do Acordo de Paris e da Agenda 2030.
+Ao longo desse percurso, conduziram-se etapas robustas de benchmarking internacional, diagnóstico setorial e validação metodológica, envolvendo a análise de dezenas de instituições e a coleta estruturada de informações junto aos diversos agentes do ecossistema digital.
+O resultado desse esforço conjunto materializa-se em um projeto-piloto que forneceu insumos concretos para a formulação de futuras políticas públicas, demonstrando que a Anatel está preparada para atuar como protagonista na integração entre transformação digital, inclusão socioeconômica e responsabilidade ambiental.
+Dessa forma, este projeto deve ser compreendido como um marco de uma agenda estruturante, apto a impulsionar a transição para um setor de telecomunicações mais sustentável, inovador e alinhado às melhores práticas globais. Pois é certo, incontestavelmente, que o Selo de Sustentabilidade em Telecomunicações pode contribuir decisivamente para tornar o sistema de telecomunicações brasileiro mais resiliente, competitivo e apto a responder à emergência climática global.
+X.a – O Coroamento de um Ciclo de Amadurecimento: Inovação e Experimentalismo na Regulação para o Futuro
+Como mencionado, a instituição do Selo de Sustentabilidade em Telecomunicações não representa um evento isolado, mas o coroamento de um ciclo de amadurecimento institucional e consistência estratégica iniciado no marco inaugural deste mandato.
+Desde o princípio, assumiu-se o compromisso de fundamentar a atuação desta Autarquia não apenas no rigor da legislação setorial, mas em sua efetiva contribuição para os Objetivos de Desenvolvimento Sustentável da Agenda 2030 da ONU. Essa visão estratégica evoluiu de diretriz principiológica a pilar estruturante da governança da Anatel, permeando desde a análise de processos administrativos até a formulação de políticas de conectividade significativa.
+Em minha trajetória pessoal, o marco zero dessa evolução consolidou-se no Voto nº 1/2022/AF, de 13 de dezembro de 2022 (SEI nº 9585106), que orientou a incorporação de conceitos e parâmetros voltados à promoção de direitos sociais nos planos táticos da agência.
+Naquele momento, com o inestimável apoio dos meus pares de Colegiado, plantou-se a semente de que a sustentabilidade não poderia ser um conceito retórico, mas um pilar fundamental da governança e da regulação setorial brasileira. Essa mudança de paradigma exigiu que o corpo técnico e os agentes regulados passassem a correlacionar suas ações com metas globais de impacto socioambiental.
+Uma das entregas mais emblemáticas desse reposicionamento estratégico da Agência foi a implementação do projeto de comunicações digitais sustentáveis, que resultou na criação do módulo de metas da Agenda 2030 dentro do nosso Sistema Eletrônico de Informações (SEI).
+Essa inovação procedimental introduziu a lógica das ciências comportamentais na administração pública, incentivando prestadoras e servidores a identificar a aderência de cada processo aos objetivos globais de desenvolvimento. Tal medida demonstra como o experimentalismo institucional pode ser utilizado para promover mudanças de cultura organizacional de forma eficiente e transparente.
+Observa-se que o projeto do Selo materializa uma transição paradigmática na filosofia regulatória da agência, substituindo a lógica tradicional de comando e controle por um modelo de regulação responsiva. A escolha deliberada por um instrumento de reconhecimento voluntário utiliza a gamificação e a diferenciação competitiva para atrair investimentos verdes e fidelizar consumidores conscientes. Essa abordagem indutora é fundamental para garantir que o setor de telecomunicações brasileiro alinhe suas estratégias aos compromissos climáticos nacionais e internacionais sem a imposição de fardos burocráticos desnecessários.
+O envolvimento direto com a agenda de sustentabilidade traduziu-se na conversão de sanções administrativas em impacto social concreto. Sob a relatoria de processos sancionadores neste Colegiado, viabilizou-se a substituição de multas pecuniárias milionárias por obrigações de fazer voltadas à conectividade de escolas remotas e comunidades indígenas. Destaca-se, sob essa mesma ótica, o projeto de empoderamento e capacitação digital de mulheres em situação de vulnerabilidade, iniciativa que integra o letramento tecnológico à promoção dos direitos humanos fundamentais.
+A evolução do conceito original, que nasceu focado exclusivamente no clima, para o selo de sustentabilidade multidimensional reflete a maturidade alcançada nesta relatoria. O framework atual integra as dimensões ambiental, social e de governança, tratando temas como eficiência energética, economia circular e segurança digital de forma coesa e interdependente. Essa arquitetura assegura que a regulação brasileira esteja alinhada ao estado da arte global, contemplando desde a gestão do lixo eletrônico até a inclusão digital produtiva.
+A robustez técnica do modelo é garantida pelo uso de tecnologias de vanguarda, como a inteligência artificial aplicada na plataforma de estruturação de dados setoriais. A utilização de ferramentas automatizadas permite uma gestão centralizada e segura das informações, reduzindo o esforço operacional das empresas e garantindo a integridade dos resultados. Essa sofisticação tecnológica é o que permite à Agência gerir dados complexos de sustentabilidade com a mesma precisão exigida para a fiscalização técnica das redes.
+Essa produção de conhecimento estratégico posicionou a Anatel como uma referência acadêmica e institucional na intersecção entre tecnologia e responsabilidade ambiental. Além disso, o prestígio internacional alcançado pela iniciativa é o reconhecimento externo de uma jornada de excelência conduzida com habitual esmero. O convite formal da União Internacional de Telecomunicações para que o Brasil atue como país-piloto global na testagem de indicadores ambientais coroa o esforço de diplomacia regulatória da agência.
+Por fim, o Selo de Sustentabilidade em Telecomunicações consolida um legado que garante a perenidade da agenda sustentável na Autarquia. A iniciativa estabelece as premissas para uma regulação moderna, na qual a tecnologia e a conectividade significativa atuam como vetores do desenvolvimento socioeconômico e do fortalecimento da soberania digital brasileira.
+Este Relator vê nesse projeto o fechamento de um ciclo intenso de trabalho e, sobretudo, o marco inaugural de um ecossistema de telecomunicações mais resiliente, competitivo e preparado para enfrentar a emergência climática global.
+X.b – Perspectivas para Evolução e Aprimoramento
+A proposta de instituição do Selo de Sustentabilidade em Telecomunicações, em sua primeira edição, ancora-se de forma diligente na Prioridade Climática, reconhecendo a urgência setorial de eficiência energética, economia circular e descarbonização. Entende-se que este foco é fundamental neste início de jornada, permitindo que a Agência e as empresas consolidem uma base técnica sólida sobre temas de alta materialidade para o setor de TICs.
+Como visto, no entanto, ressalta-se que o framework proposto foi especificamente concebido para ser um instrumento flexível e evolutivo, capaz de acompanhar o amadurecimento das práticas de sustentabilidade ao longo dos ciclos avaliativos.
+A estrutura multidimensional do Selo, organizada em quatro níveis hierárquicos e operacionalizada por meio do Manual Operacional (MOP), permite que a inclusão de novos temas ocorra sem a necessidade de rupturas na norma principal. Assim, as versões futuras poderão se beneficiar da experiência adquirida para expandir as fronteiras do reconhecimento institucional, incorporando programas e indicadores que hoje se apresentam como tendências globais. Vislumbra-se, nesse sentido, um processo de aprendizado contínuo, no qual a Anatel atua como indutora de um ecossistema digital integralmente responsável.
+No âmbito da Dimensão Social, por exemplo, edições vindouras poderão explorar a temática da “Equidade de Gênero e Diversidade” de maneira mais pormenorizada. Exemplificativamente, o Selo poderá verificar o percentual de mulheres em cargos de liderança e em áreas STEM, bem como a existência de análises de equidade salarial e programas estruturados de retenção de talentos diversos. Tais medidas permitiriam aferir o impacto social das empresas na redução de desigualdades históricas, alinhando o setor aos indicadores de impacto social mais prestigiados internacionalmente.
+Outra vertente passível de expansão na Dimensão Social refere-se à “Educação Continuada e Requalificação Profissional”. Em um cenário de rápida transição tecnológica, o Selo poderia monitorar a média de horas de treinamento por funcionário e a implementação de programas voltados especificamente para a capacitação em redes de nova geração, inteligência artificial e segurança cibernética. A verificação de taxas de promoção interna e a existência de planos de carreira sólidos consubstanciariam o compromisso das prestadoras com o desenvolvimento de sua força de trabalho.
+A proteção e o bem-estar dos colaboradores também compõem um eixo de evolução natural para as subdimensões Sociais. Futuramente, poderá ser avaliada a maturidade dos programas de “Saúde e Segurança do Trabalho”, com a verificação de taxas de frequência de acidentes e a adoção de certificações reconhecidas, como a ISO 45001. A inclusão de critérios voltados à saúde mental e à ergonomia operacional demonstraria uma preocupação holística com o capital humano, essencial para a resiliência das operações de infraestrutura.
+No que tange à Dimensão Governança, as perspectivas de aprimoramento sugerem uma incursão mais profunda nos programas de “Integridade e Anticorrupção”. Poderão ser avaliadas a robustez dos códigos de ética, a independência dos canais de denúncia e a eficácia das medidas de proteção ao denunciante. Tais evidências, somadas a treinamentos regulares em compliance e auditorias de integridade, fortalecem a transparência e a segurança jurídica, mitigando riscos reputacionais para todo o setor de telecomunicações.
+No âmbito das evoluções pretendidas para esta dimensão, a incorporação do compliance consumerista apresenta-se como um vetor fundamental para o aprimoramento do Selo em ciclos subsequentes. A partir das referências colhidas na fase de prospecção, o framework poderá passar a contemplar a verificação de políticas formais de proteção ao consumidor estritamente alinhadas ao Código de Defesa do Consumidor (CDC) e aos regulamentos da Anatel, avaliando a eficácia das ouvidorias por meio de métricas objetivas, como o tempo médio de resposta e o índice de resolução de reclamações. Esse movimento, que integra a conformidade regulatória à excelência no atendimento, incentivaria a adoção de auditorias periódicas e treinamentos especializados, consolidando a proteção do usuário como um pilar de integridade corporativa e valor público dentro do ecossistema de sustentabilidade das telecomunicações,.
+A governança corporativa também poderá ser fortalecida por meio da “Gestão Responsável da Cadeia de Fornecedores” sob a ótica dos Direitos Humanos. Expandindo o critério ambiental atual, o Selo poderá observar a inclusão de cláusulas contratuais de conformidade socioambiental obrigatória elevaria o padrão de responsabilidade de toda a cadeia produtiva de TICs no Brasil.
+Em conclusão, o Selo de Sustentabilidade em Telecomunicações é um legado em construção, cujas sementes ora plantadas florescerão em uma avaliação multidimensional plena. A flexibilidade da governança proposta assegura que a Anatel permaneça na vanguarda regulatória, adaptando-se a novos desafios e oportunidades que surjam no horizonte do desenvolvimento sustentável. Este compromisso com a evolução constante é o que garantirá, em última instância, a perenidade e a relevância deste instrumento para a sociedade brasileira.
+X.c – Alguns Merecidos Elogios
+Diante de tal cenário, impõe-se o reconhecimento institucional e o registro de elogios aos atores envolvidos nesta construção. Primeiramente, às equipes técnicas das Superintendências Executiva (SUE), de Planejamento e Regulamentação (SPR), de Relações com Consumidores (SRC), de Outorga e Recursos à Prestação (SOR), de Competição (SCP), de Fiscalização (SFI) e de Controle de Obrigações (SCO), cujos servidores atuaram com habitual esmero, dedicação e excelência técnica.
+Igualmente, cumpre consignar o agradecimento à Assessoria Internacional (AIN) e à Procuradoria Federal Especializada (PFE) pela segurança jurídica conferida ao processo, bem como ao Banco Interamericano de Desenvolvimento (BID) pela parceria qualificada e ao consórcio Colin/Ecoa Tech pela contribuição técnica de vanguarda.
+Por fim, estendo os elogios aos representantes do setor regulado que, de forma voluntária e colaborativa, participaram do projeto-piloto, legitimando o modelo proposto.
+X.d – Encaminhamentos para Deliberação
+Por todo o exposto, as conclusões desta Análise conduzem aos seguintes provimentos, a serem submetidos à deliberação deste Órgão Colegiado:
+a aprovação da Resolução Interna que institui o Selo de Sustentabilidade em Telecomunicações e determina providências para a sua operacionalização;
+a aprovação do Plano de Ação setorial, visando à integração estrutural e permanente da agenda climática e de sustentabilidade na regulação do setor de telecomunicações e TICs, com a efetiva incorporação de suas ações e proposições ao Planejamento Estratégico, à Agenda Regulatória e demais instrumentos pertinentes desta Agência, conforme o caso;
+a determinação à Superintendência Executiva para a imediata constituição do GT-SS; e
+a determinação ao GT-SS para o início dos trabalhos relacionados à elaboração do Manual Operacional do Selo e demais providências necessárias para a sua primeira edição, em 2027, bem como aos estudos para avaliar oportunidades de aprimoramento para as futuras edições, conforme sugestões constantes da Seção X.b e outras que o Grupo considere pertinentes.
+CONCLUSÃO
+Voto por:
+aprovar a Resolução Interna que institui o Selo de Sustentabilidade em Telecomunicações, nos termos da minuta de Resolução Interna (SEI nº 15681912); 
+adotar o Plano de Ação estruturado em três eixos: Eficiência Energética, Economia Circular e Segurança Digital, com implementação escalonada em horizontes de 12 meses a 5 anos, conforme proposta constante do documento (SEI nº 14505163);
+determinar à Superintendência Executiva que tome as medidas necessárias para a criação do Grupo Técnico do Selo de Sustentabilidade em Telecomunicações (GT-SS); e
+determinar ao GT-SS que dê início a operacionalização da primeira edição do Selo, em 2027, e aos estudos para avaliar seus futuros aprimoramentos.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 11/06/2026, às 10:21, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15642028 e o código CRC EAC60F21.
+ | 
+Referência: Processo nº 53500.105865/2023-91 | 
+SEI nº 15642028 |

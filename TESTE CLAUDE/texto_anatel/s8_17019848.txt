@@ -1,0 +1,49 @@
+SEI/ANATEL - 15211244 - Acórdão
+Boletim de Serviço Eletrônico em 23/02/2026
+DOU de 23/02/2026, seção 1, página 86
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 17, de 20 de fevereiro de 2026
+Processo nº 53500.060071/2025-53
+Recorrente/Interessado: SERCOMTEL S.A. TELECOMUNICAÇÕES, LIGGA TELECOMUNICAÇÕES S.A., AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A.
+CNPJ nº 01.371.416/0001-89, nº 04.368.865/0001-66 e nº 58.074.301-0001-40
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. ANUÊNCIA PRÉVIA. TRANSFERÊNCIA DE AUTORIZAÇÃO DE USO DE RADIOFREQUÊNCIAS ASSOCIADAS AO SERVIÇO MÓVEL PESSOAL - SMP. PEDIDO PARCIALMENTE DEFERIDO, COM CONDICIONANTES.
+I. CASO EM EXAME
+1. Pedido de anuência prévia formulado por SERCOMTEL S.A. TELECOMUNICAÇÕES, LIGGA TELECOMUNICAÇÕES S.A. e AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., visando à transferência de autorizações de direito de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP detidas pela primeira para a terceira empresa.
+2. Instrução processual pelas áreas técnicas com diligências para complementação documental, manifestação das áreas técnicas e jurídicas, e análise de regularidade fiscal, concorrencial e cumprimento de obrigações regulatórias.
+3. Parecer jurídico favorável à transferência, condicionado à deliberação de Pedido de Reconsideração em processo conexo, comprovação de regularidade fiscal, recolhimento de preço público, sub-rogação de obrigações e apresentação de garantias.
+4. Proposta de decisão condicionando a transferência à observância dos requisitos legais, regulatórios e administrativos, com validade de 180 (cento e oitenta) dias, prorrogável uma única vez.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos legais, regulatórios e administrativos para a anuência prévia à transferência das autorizações de uso de radiofrequências associadas ao SMP, incluindo regularidade fiscal, ausência de óbices concorrenciais e técnicos, sub-rogação de obrigações e apresentação de garantias.
+III. RAZÕES DE DECIDIR
+1. A operação envolve autorizações decorrentes de procedimento licitatório, exigindo anuência prévia da Anatel, conforme Lei nº 9.472/1997 e Decreto nº 10.402/2020.
+2. As áreas técnicas atestaram a conformidade regulatória, ausência de restrições técnicas e concorrenciais, e inexistência de acessos vinculados às outorgas objeto da transferência.
+3. A regularidade fiscal da sucessora deve ser comprovada até a assinatura do ato de transferência, abrangendo as Fazendas Federal, Estadual, Municipal, FGTS e Anatel, nos termos da Súmula nº 19.
+4. A transferência está condicionada à sub-rogação integral das obrigações assumidas pela cessionária, incluindo compromissos pendentes e apresentação de novas garantias.
+5. O preço público devido pela transferência deve ser recolhido conforme o Regulamento Geral de Outorgas.
+6. Não há necessidade de plano de transferência de recursos de numeração, diante da ausência de operação comercial e acessos vinculados.
+7. A atribuição de sigilo documental foi analisada individualmente, com concessão de vista restrita apenas aos documentos que se enquadram nas hipóteses legais.
+IV. DISPOSITIVO E TESE
+Pedido aprovado com condicionantes. Transferência das autorizações de uso de radiofrequências associadas ao SMP da SERCOMTEL para a AMAZÔNIA 5G, condicionada à deliberação de pedido de reconsideração em processo conexo, comprovação de regularidade fiscal, recolhimento de preço público, sub-rogação de obrigações e apresentação de garantias, com validade de 180 (cento e oitenta) dias, prorrogável uma única vez.
+Tese de julgamento: "1. A transferência de autorizações de uso de radiofrequências associadas ao SMP depende de anuência prévia da Anatel, observados os requisitos legais, regulatórios e administrativos. 2. A operação deve ser condicionada à deliberação de pedido de reconsideração em processo conexo, comprovação de regularidade fiscal, recolhimento de preço público, sub-rogação de obrigações e apresentação de garantias. 3. A ausência de acessos vinculados afasta a necessidade de medidas relativas a direitos dos consumidores e recursos de numeração. 4. O sigilo documental deve ser atribuído apenas aos documentos que se enquadram nas hipóteses legais."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 163 e 168; Lei nº 13.879/2019; Decreto nº 10.402/2020, art. 11; Resolução nº 65/1998; Resolução nº 720/2020; Resolução nº 765/2023; Súmula nº 19/2016; Edital nº 1/2021-SOR/SPR/CD-ANATEL.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 13/2026/OP (SEI nº 15103375), integrante deste acórdão:
+a) transferir as autorizações de direito de uso de radiofrequências, em caráter primário, associadas à autorização para explorar o Serviço Móvel Pessoal - SMP detidas por SERCOMTEL S.A. TELECOMUNICAÇÕES, CNPJ nº 01.371.416/0001-89, consoante Termos de Autorização nº 89 (SEI nº 7762915), nº 90 (SEI nº 7762919) e nº 91/2021 (SEI nº 7762935), à empresa AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., CNPJ nº 58.074.301-0001-40, nos moldes da Minuta de Ato SEI nº 15024645, condicionada:
+a.1) à deliberação do Pedido de Reconsideração, com Pedido de Efeito Suspensivo, apresentado por SERCOMTEL S.A. TELECOMUNICAÇÕES e LIGGA TELECOMUNICAÇÕES S.A., CNPJ nº 04.368.865/0001-66, em face do Ato nº 6.591, de 12 de junho de 2025, publicado no Diário Oficial da União de 13 de junho subsequente (SEI nº 13843174), nos autos do Processo nº 53500.043774/2023-55;
+a.2) à comprovação de regularidade fiscal por parte da empresa AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A., CNPJ nº 58.074.301-0001-40, na qualidade de sucessora, mediante o envio de (i) Certidão comprobatória de regularidade perante as Fazendas Federal, Estadual, Municipal ou do Distrito Federal, da sede do licitante, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; (ii) Certificado de Regularidade do Fundo de Garantia por Tempo de Serviço - CRF-FGTS; e (iii) Certidão comprobatória de regularidade perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - CADIN, em consonância com a Súmula nº 19, de 1º de dezembro de 2016, cujo atesto do seu cumprimento deve ser realizado pela Superintendência de Competição - SCP;
+a.3) ao recolhimento do preço público devido pela transferência das autorizações de direito de uso de radiofrequências, em caráter primário, associadas à autorização para explorar o Serviço Móvel Pessoal - SMP, em conformidade com o disposto no art. 26 do Regulamento Geral de Outorgas, aprovado pela Resolução nº 720, de 10 de fevereiro de 2020, cuja comprovação deve ser realizada perante a Superintendência de Outorga e Recursos à Prestação - SOR; e,
+a.4) à apresentação de declaração de sub-rogação da AMAZÔNIA SERVIÇOS DIGITAIS E TELECOMUNICAÇÕES S.A. nos direitos e obrigações assumidos por SERCOMTEL S.A. TELECOMUNICAÇÕES perante a Superintendência de Outorga e Recursos à Prestação - SOR, entre os quais se incluirão todos os compromissos ainda pendentes de atendimento, referentes aos Termos de Autorização nº 89, nº 90 e nº 91/2021, assim como à apresentação de novas Garantia(s) de Execução de Compromissos perante a Superintendência de Controle de Obrigações - SCO, na forma do item 9.7 e nos valores previstos no ANEXO II do Edital de Licitação nº 1/2021-SOR/SPR/CD-ANATEL, que comprove estar dentro do prazo de validade estabelecido no certame;
+b) a decisão do Conselho Diretor a que se refere a alínea "a" valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Acórdão no Diário Oficial da União, prorrogável, a pedido, uma única vez por igual período, se mantidas as mesmas condições de aprovação;
+c) atribuir tratamento sigiloso aos documentos de SEI nº 14098244, nº 14098245, nº 14435037, nº 14657887 e nº 14828962, com concessão de vista restrita às empresas SERCOMTEL, LIGGA e AMAZÔNIA 5G; e,
+d) não atribuir tratamento sigiloso aos documentos de SEI nº 14435036, nº 14657886, nº 14828961 e nº 14829125.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/02/2026, às 17:45, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15211244 e o código CRC 4412C621.
+ | 
+Referência: Processo nº 53500.060071/2025-53 | 
+SEI nº 15211244 |

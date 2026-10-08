@@ -1,0 +1,70 @@
+SEI/ANATEL - 15632852 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 131, de 13 de maio de 2026
+Processo nº 53500.094512/2024-30
+Recorrente/Interessado: V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A.
+CNPJ nº 02.041.460/0001-93
+Conselheiro(a) Relator(a): Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. MANUAL DE ACOMPANHAMENTO E FISCALIZAÇÃO - MAF (Processo Operacional Simplificado - POS) DE COMPROMISSOS DO TERMO DE AUTOCOMPOSIÇÃO. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A. contra o Despacho Decisório nº 13/2024/SUE, retificado em 3 de janeiro de 2025, que aprovou as propostas de Manual de Acompanhamento e Fiscalização das obrigações assumidas pela OI S.A. e pela V.TAL no âmbito do Termo de Autocomposição para Adaptação dos Contratos de Concessão do Serviço Telefônico Fico Comutado - STFC para o Regime de Autorização.
+2. Fato relevante. A controvérsia recursal remanesceu em dois pontos. O primeiro ponto refere-se à comprovação do panorama inicial dos compromissos. O segundo ponto refere-se ao alcance do uso de recursos de terceiros para o cumprimento dos compromissos firmados, com discussão sobre a construção de data centers.
+3. As manifestações anteriores. O Relator propôs o parcial provimento do Recurso e a aprovação da versão de Processo Operacional Simplificado com ajustes redacionais. O Conselheiro Alexandre Reis Siqueire Freire divergiu quanto à manutenção de ressalva no item 11.II da minuta e quanto ao uso de capitais de terceiros para construção de data centers. O Conselheiro Octavio Penna Pieranti acompanhou a retirada da ressalva do item 11.II e divergiu quanto à motivação para ajuste redacional relativo ao uso de investimentos de terceiros para construção de data centers.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se deve ser mantida, no item 11.II da minuta, a expressão relativa às situações em que se trate de infraestruturas inexistentes, cuja comprovação negativa seja inviável; e (ii) saber se a controvérsia sobre o alcance do uso de recursos de terceiros para abranger data centers pode ser decidida no processo de aprovação do MAF.
+III. RAZÕES DE DECIDIR
+1. A comprovação do estado inicial dos compromissos é elemento essencial para demonstrar que as obrigações pactuadas não haviam sido realizadas antes do início da vigência do acordo.
+2. A dispensa dessa comprovação é cabível no compromisso de implementação de rede de acesso para atendimento de escolas públicas de ensino básico listadas no Apêndice C do Anexo 5 do Termo de Autocomposição.
+3. O Ministério das Comunicações - MCom indicou a relação de escolas e possui capacidade técnica para identificar as instituições que atendem aos critérios estabelecidos no Termo de Autocomposição.
+4. As circunstâncias específicas aplicáveis ao compromisso de escolas não se estendem aos demais compromissos assumidos pela Empresa.
+5. A comprovação do status inicial dos demais compromissos é necessária para as atividades de acompanhamento, fiscalização e atesto realizadas pela Anatel.
+6. A ressalva inserida no item 11.II da minuta é inoportuna.
+7. O item 11.II deve retornar à sua redação original, com a retirada da expressão acrescida.
+8. O Termo de Autocomposição foi firmado entre OI S.A., V.TAL, Anatel e União Federal, por intermédio do Ministério das Comunicações.
+9. A divergência sobre o uso de recursos de terceiros para abranger data centers ultrapassa os termos do documento destinado à fiscalização e alcança a interpretação do próprio Termo de Autocomposição.
+10. O Ministério das Comunicações deve ser ouvido sobre esse ponto, porque é parte signatária do Termo de Autocomposição.
+11. O Processo Operacional Simplificado tem como objetivo orientar e estabelecer regras e procedimentos para verificação do cumprimento dos compromissos previstos no Termo de Autocomposição.
+12. O Processo Operacional Simplificado não se presta à criação de novas obrigações nem à alteração unilateral do que foi pactuado no Termo de Autocomposição.
+13. A decisão sobre a aprovação do MAF deve ser ultimada desde logo, para evitar insegurança jurídico-regulatória e permitir a continuidade da execução do Termo de Autocomposição.
+14. O tema relativo ao alcance do uso de recursos de terceiros para abranger data centers deve ser desmembrado e apreciado em processo apartado, com manifestação prévia do Ministério das Comunicações.
+IV. DISPOSITIVO E TESE
+Recurso parcialmente provido.
+Tese de julgamento: "1. É necessária a comprovação do panorama inicial dos compromissos, ressalvada a hipótese específica do compromisso de atendimento de escolas públicas indicadas pelo Ministério das Comunicações. 2. Deve ser retirada do item 11.II da minuta a expressão 'ressalvadas as situações em que se trate de infraestruturas inexistentes, cuja comprovação negativa seja inviável.'. 3. A controvérsia sobre o alcance do uso de recursos de terceiros para abranger data centers não deve ser decidida no processo de aprovação do MAF. 4. O tema relativo ao uso de recursos de terceiros para abranger data centers deve ser desmembrado para processo apartado, com manifestação prévia do Ministério das Comunicações."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 144-A; Resolução Anatel nº 741/2021, art. 38; Termo de Autocomposição, Cláusula 8.3; Termo de Autocomposição, Cláusula 10.1.6; Termo de Autocomposição, Anexo 5, cláusulas 2.1, 2.1.1, 2.1.2, 4.5, 4.5.1, 5.4, 5.4.1, 6.4 e 6.4.1; Instrução Normativa Tribunal de Contas da União - TCU nº 91/2022, art. 13.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel:
+a) conhecer do Recurso Administrativo interposto por V.TAL REDE NEUTRA DE TELECOMUNICAÇÕES S.A. para, no mérito, dar-lhe provimento parcial, no sentido de:
+a.1) alterar a nomenclatura do "Manual de Acompanhamento e Fiscalização - MAF de Compromissos assumidos no Termo de Autocomposição para Adaptação dos Contratos de Concessão do STFC para o Regime de Autorização", para "Processo Operacional Simplificado - POS de Acompanhamento dos Compromissos Assumidos no Termo de Autocomposição para Adaptação dos Contratos de Concessão do STFC para o Regime de Autorização";
+a.2) excluir os itens 29 e 57 do MAF (SEI nº 13075208);
+a.3) retirar do inciso III do item 96 do MAF (SEI nº 13075208) a exigência de haver efetivo atendimento a um Ponto de Troca de Tráfego - PTT, seja público ou privado;
+a.4) alterar o inciso III do item 12 do MAF (SEI nº 13075208) para esclarecer que a Prestadora deve manter à disposição da Anatel documentos que estejam disponíveis ou que sejam passíveis de obtenção por meio de consulta aos aplicativos, facilidades, sistemas, ferramentas e recursos tecnológicos da Prestadora ou por ela utilizados;
+a.5) alterar os incisos II dos itens 56 e 75 do MAF (SEI nº 13075208) para possibilitar a compensação de eventuais prejuízos decorrentes de atos de terceiro, casos de vandalismo, furto e corte de equipamentos e fibras ópticas, desde que devidamente comprovados por Boletim de Ocorrência junto às instituições de segurança de cada localidade; e,
+a.6) atribuir restrição de acesso aos documentos de SEI nº 13130611, nº 13130612, nº 13160926 e nº 13664415;
+b) conhecer da petição extemporânea de SEI nº 13160926, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, indeferir os pedidos nela formulados;
+c) conhecer da petição extemporânea de SEI nº 13664415, protocolizada pela V.TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A., para, no mérito, deferir parcialmente os pedidos nela constantes, exclusivamente para promover alterações formais na minuta de MAF, conforme consta no capítulo "II.5.2 - DAS PROPOSTAS DE AJUSTES FORMAIS" da Análise nº 102/2025/VA (SEI nº 14304245);
+d) de ofício:
+d.1) alterar a redação do inciso III do item 96 do MAF da V.TAL (SEI nº 13075208) para prever que os data centers atendam aos pré-requisitos técnicos para conexão a PTT do projeto IX.br do Comitê Gestor da internet no Brasil - CGIbr;
+d.2) excluir o item 32 do MAF (SEI nº 13075208); e,
+d.3) alterar a redação do inciso II do item 12 do MAF da V.TAL (SEI nº 13075208), para ressalvar situações que possam ser de difícil comprovação;
+e) aprovar o Processo Operacional Simplificado - POS da V.TAL, nos termos da minuta de SEI nº 13924766, retirando a expressão "ressalvadas as situações em que se trate de infraestruturas inexistentes, cuja comprovação negativa seja inviável." do item 11.II da minuta (SEI nº 13924766);
+f) atribuir acesso restrito à Análise nº 102/2025/VA (SEI nº 14304245), ao Recurso Administrativo (SEI nº 13130611) e seus anexos, às petições extemporâneas (SEI nº 13160926 e nº 13664415) e seus anexos, ao comparativo entre o POS e o MAF recorrido (SEI nº 13924773) e ao POS da V.TAL de SEI nº 13924766;
+g) desmembrar do presente processo o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers, de modo que o Conselho Diretor tenha a possibilidade de, desde já, ultimar a decisão quanto à aprovação do MAF;
+h) determinar que o assunto relacionado ao alcance do uso de recursos de terceiros para abranger data centers não seja alvo de atuação das partes neste momento, mas apenas após ser avaliado em processo apartado;
+i) determinar que a Superintendência Executiva - SUE instaure processo apartado especificamente para tratar do tema relativo ao alcance do uso de recursos de terceiros para abranger data centers, notifique nele o Ministério das Comunicações (União Federal) para manifestar-se, uma vez que deve ser ouvido como parte que firmou o Termo de Autocomposição - TAU, e, após avaliação da área técnica competente, encaminhe referido processo apartado ao Conselho Diretor para decisão quanto ao ponto destacado;
+j) ao receber o novo processo apartado para deliberação, a Secretaria do Conselho Diretor - SCD deverá encaminhá-lo diretamente ao Gabinete do Conselheiro Edson Victor Eugênio de Holanda, para prosseguimento da deliberação da matéria, na condição de Conselheiro Vistor do processo.
+Com relação às alíneas "a" a "f", a decisão foi por unanimidade, nos termos propostos pelo ex-Conselheiro Vicente Bandeira de Aquino Neto, Relator, por meio da Análise nº 102/2025/VA (SEI nº 14304245), integrante deste acórdão, com a alteração proposta pelo Conselheiro Alexandre Reis Siqueira Freire por meio do Voto nº 9/2025/AF (SEI nº 14601568), também integrante deste acórdão.
+Quantos às alíneas "g" a "j", a decisão foi por unanimidade dos votantes, nos termos propostos pelo Conselheiro Edson Victor Eugênio de Holanda por meio do Voto nº 5/2026/EH (SEI nº 15568009), de igual modo integrante deste acórdão. Nessa parte, o ex-Conselheiro Vicente Bandeira de Aquino Neto não pôde se manifestar, em decorrência do término do seu mandato.
+O Conselheiro Substituto Nilo Pasquali não proferiu voto manifestando seu entendimento, nos termos do § 2º do art. 5º do Regimento Interno da Anatel, por suceder o ex-Conselheiro Vicente Bandeira de Aquino Neto, Relator.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, o ex-Conselheiro Vicente Bandeira de Aquino Neto, Relator, e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Presentes na Reunião nº 953, de 7 de maio de 2026, o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15632852 e o código CRC 6D8B6646.
+ | 
+Referência: Processo nº 53500.094512/2024-30 | 
+SEI nº 15632852 |

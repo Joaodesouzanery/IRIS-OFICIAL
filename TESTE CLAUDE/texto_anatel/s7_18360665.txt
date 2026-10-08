@@ -1,0 +1,286 @@
+SEI/ANATEL - 16374296 - Análise
+Boletim de Serviço Eletrônico em 07/10/2026
+Análise nº 114/2026/AF
+Processo nº 01217.006743/2026-68
+Interessado: Cidadão
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso Administrativo de Segunda Instância interposto na Plataforma Integrada de Ouvidoria e Acesso à Informação (Fala.BR).
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO DE SEGUNDA INSTÂNCIA. LEI DE ACESSO À INFORMAÇÃO. INEXISTÊNCIA DE CONTROVÉRSIA SOBRE ACESSO A INFORMAÇÃO. MATÉRIA ESTRANHA AO PEDIDO INICIAL. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA OCDE SOBRE A NECESSIDADE DE SE DESENVOLVER UMA POSTURA TRANSPARENTE E AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+Recurso Administrativo de Segunda Instância contra decisão que não conheceu de Recurso de Primeira Instância apresentado no âmbito de pedido de acesso à informação.
+O Cidadão solicitou o número do processo referente a Procedimento de Fiscalização Regulatória (PFR) e a identificação da unidade responsável. Também requereu análise de suposta omissão em atendimento anterior e encaminhamento para apuração de eventual responsabilidade funcional.
+A Anatel informou o número do processo e identificou a Gerência de Tratamento de Solicitações de Consumidores (RCTS) como unidade responsável. A decisão recorrida não conheceu das demais pretensões, por não constituírem pedidos de acesso à informação, e registrou o cancelamento do documento indevidamente juntado aos autos.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se os pedidos de análise de omissão e de encaminhamento correcional se enquadram no procedimento da Lei de Acesso à Informação; e (ii) saber se a alegação de juntada indevida de documento pode ser apreciada em recurso, embora não integre o pedido inicial.
+III. RAZÕES DE DECIDIR
+A Anatel forneceu as informações primárias requeridas. O recorrente não controverte o fornecimento nem a exatidão do número do processo e da identificação da unidade responsável.
+O procedimento da Lei de Acesso à Informação assegura o acesso a informações preexistentes e custodiadas pela Administração.
+Os pedidos de análise de atendimento anterior, avaliação de condutas funcionais e adoção de providências correcionais exigem manifestação administrativa nova. Esses pedidos não constituem acesso a informação preexistente.
+O art. 32 da Lei nº 12.527/2011 não estabelece encaminhamento automático à Corregedoria. A instauração de apuração exige elementos mínimos de materialidade.
+A alegação de juntada indevida de documento constitui matéria estranha ao pedido inicial. A matéria foi apresentada apenas em fase recursal.
+O documento indevidamente juntado foi cancelado. Houve perda superveniente do objeto quanto a essa providência.
+IV. DISPOSITIVO E TESE
+Recurso de segunda instância não conhecido.
+Tese de julgamento: "1. O recurso previsto na Lei nº 12.527/2011 exige controvérsia sobre acesso a informação pública preexistente e custodiada pela Administração. 2. Pedidos de análise de conduta funcional, apuração de responsabilidade e adoção de providências correcionais não se inserem no procedimento de acesso à informação. 3. A matéria estranha ao pedido inicial, apresentada apenas em grau recursal, pode não ser conhecida. 4. O cancelamento do documento indevidamente juntado acarreta a perda superveniente do objeto quanto à providência de regularização documental."
+Dispositivos relevantes citados: Lei nº 12.527/2011, arts. 4º, I, 7º, 15, 16 e 32; Decreto nº 7.724/2012, art. 21.
+Jurisprudência relevante citada: Súmula CMRI nº 2/2015.
+REFERÊNCIAS
+Lei nº 9.784, de 29 de janeiro de 1999 – regula o processo administrativo no âmbito da Administração Pública Federal.
+Lei nº 12.527, de 18 de novembro de 2011 – regula o acesso a informação.
+Decreto nº 7.724, de 16 de maio de 2012 – regulamenta a Lei nº 12.527, de 18 de novembro de 2011, que dispõe sobre o acesso a informações.
+Resolução nº 612, de 29 de abril de 2013 – aprova o Regimento Interno da Anatel (RIA).
+Portaria nº 1.447, de 08 de agosto de 2019 – institui, no âmbito da Anatel, procedimentos para tratativas dos pedidos de acesso à informação.
+BRASIL. Controladoria-Geral da União. Aplicação da Lei de Acesso à Informação na Administração Pública Federal. 4. ed. Brasília, 2017. Disponível em: CGU. Acesso em: 20 mar. 2024.
+GOMES, Lucas Thevenard; SALINAS, Natasha Shimitt Caccia, SAMPAIO, Patrícia Regina Pinheiro. Propostas para assegurar a efetividade das consultas e audiências públicas nos processos regulatórios. In: VALENTE, Patrícia Rodrigues Pessôa. Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília: 2024, p. 71-84. Disponível em: CGU. Acesso em: 1º de jul. de 2024.
+IPEA. Instituto de Pesquisa Econômica Aplicada. ODS - Metas Nacionais dos Objetivos de Desenvolvimento Sustentável Proposta de Adequação, ipea 2018. Disponível em: IPEA. Acesso em: 8 de nov. 2023.
+OCDE. Organização para Cooperação e Desenvolvimento Econômico. Regulatory Enforcement and Inspections, OECD Best - Practice Principles for Regulatory Policy. Paris: OECD Publishing, 2014. Disponível em: dx.doi. Acesso em: 01 mar. 2023.
+ONU. Organização das Nações Unidas. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: Brasil.un. Acesso em: 14 abr. 2023.
+RELATÓRIO
+Trata-se de Recurso Administrativo de Segunda Instância, interposto no âmbito da Plataforma Integrada de Ouvidoria e Acesso à Informação (Fala.BR), no bojo do Pedido de Acesso à Informação nº 01217.006743/2026-68 (cópia SEI nº 16256491 e anexo nº 16256492).
+Em 9 de setembro de 2026, o Cidadão registrou o Pedido de Acesso à Informação nº 01217.006743/2026-68, no qual requereu, in verbis: 
+Pedido de Acesso à Informação (anexo, p.8-9):
+"8. DOS PEDIDOS
+Diante de todo o exposto, com fundamento nos arts. 5º, 6º, 7º, 9º, 10 e 11 da Lei nº 12.527/2011, bem como nos princípios da publicidade, da transparência administrativa, da gestão transparente da informação e da cooperação administrativa, requer-se ao Serviço de Informações ao Cidadão da Anatel, e, por seu intermédio, à unidade administrativa competente:
+Item
+ | Objeto do Requerimento
+ | Texto Literal do Pedido (Preservado na Íntegra)
+ | 
+a)
+ | Número do Processo SEI
+ | Seja informado o número oficial de autuação no Sistema Eletrônico de Informações (SEI) correspondente ao Procedimento de Fiscalização Regulatória mencionado expressamente pela Anatel na resposta ao Quesito 6 do protocolo nº 202608202334001, no qual a Agência afirmou que "o tema está sendo tratado em sede de Procedimento de Fiscalização Regulatória";
+ | 
+b)
+ | Unidade Responsável 
+ | Seja informada a identificação da Superintendência, Gerência ou unidade administrativa responsável pela condução do referido Procedimento de Fiscalização Regulatória;
+ | 
+c)
+ | Encaminhamento Interno (Art. 11, §1º, III)
+ | Caso o SIC não detenha diretamente a informação requerida, seja o presente pedido encaminhado à unidade competente, nos termos expressos do art. 11, §1º, III, da Lei nº 12.527/2011, com a devida ciência ao requerente acerca da remessa, da unidade destinatária e do prazo aplicável ao atendimento;
+ | 
+d)
+ | Análise Objetiva de Omissão
+ | Seja realizada, no âmbito da competência administrativa da Anatel, análise objetiva da eventual omissão verificada no protocolo nº 202608202334001, consistente na ausência de resposta específica ao pedido formulado em 3 de setembro de 2026, que solicitava o número oficial de autuação no SEI e a identificação da unidade responsável, diante da resposta de 8 de setembro de 2026 que se limitou a ratificar as respostas anteriormente enviadas sem enfrentar os quesitos novos então formulados;
+ | 
+e)
+ | Saneamento Administrativo
+ | Caso confirmada a existência de omissão administrativa no atendimento do protocolo nº 202608202334001, seja ela saneada administrativamente, mediante o fornecimento ao requerente das informações que deixaram de ser prestadas na oportunidade adequada, especificamente o número oficial do processo SEI e a identificação da unidade administrativa responsável pelo Procedimento de Fiscalização Regulatória mencionado pela Agência;
+ | 
+f)
+ | Encaminhamento Correcional Subsidiário
+ | Subsidiariamente, caso a análise administrativa identifique elementos passíveis de enquadramento como eventual falha funcional ou eventual irregularidade no tratamento da solicitação anterior, seja o fato encaminhado à unidade administrativa ou correcional competente no âmbito da estrutura interna da Anatel, para que esta avalie, no exercício de suas atribuições legais e regimentais, a existência ou não de responsabilidade funcional pela omissão identificada, com observância do contraditório, da ampla defesa e do devido processo legal previstos no art. 32, §1º, da Lei nº 12.527/2011;
+ | 
+g)
+ | Ciência dos Encaminhamentos
+ | Seja o requerente cientificado dos encaminhamentos realizados em atenção aos pedidos formulados neste requerimento, com indicação das unidades destinatárias e, quando juridicamente possível e não sujeito a restrição legal, do número dos expedientes administrativos instaurados ou aos quais o fato tenha sido juntado.
+ | 
+Requer-se, por fim, que a resposta ao presente pedido seja fornecida no prazo previsto no art. 11 da Lei nº 12.527/2011, preferencialmente em formato eletrônico, por meio do endereço de correio eletrônico indicado na qualificação deste requerimento, e que eventual decisão de indeferimento, total ou parcial, seja devidamente fundamentada, com indicação expressa do fundamento legal da recusa e da possibilidade de interposição de recurso, nos termos do art. 11, §4º, da Lei nº 12.527/2011 e do art. 15 da mesma Lei."
+[Todos os grifos no original]
+Em 21 de setembro de 2026, a Gerência de Tratamento de Solicitações de Consumidores (RCTS), da Superintendência de Relações com Consumidores (SRC), por meio de resposta registrada na plataforma Fala.BR (cópia SEI nº 16319669), prestou as informações relativas aos quesitos informacionais primários, indicando o Processo SEI nº 53500.091566/2025-24 e a própria RCTS como unidade responsável, desconsiderando a apreciação dos demais requerimentos sob o fundamento de que apenas os aspectos informacionais eram passíveis de resposta no âmbito da LAI, além de informar a concessão de acesso externo ao processo. A saber:
+Resposta:
+"Tipo de Resposta: Resposta Conclusiva
+Data/Hora: 21/09/2026 10:59
+PREZADO SENHOR
+Foram considerados passíveis de resposta no âmbito da Lei de Acesso à Informação os pedidos A e B.
+Sobre o quesito a) informamos o número do processo nº 53500.091566/2025-24, instaurado com o objetivo de realizar levantamento de informações referentes ao Atendimento Digital e às Ofertas comercializadas no modelo de contratação e atendimento exclusivamente digitais.
+Relativamente ao quesito b), a unidade responsável pelo tratamento é a Gerência de Tratamento de Solicitações de Consumidores - RCTS.
+Adicionalmente, informamos que foi considerado que o manifestante buscava acesso ao processo SEI (Protocolo Anatel Consumidor nº 202609100754980). E foi disponibilizado acesso externo para [Omissis] até 16/01/2027 (120 dias). Com visualização integral do processo.
+Por fim, cabe esclarecer que a interposição de recurso é cabível exclusivamente nos casos de negativa de acesso à informação já produzida e disponível no órgão ou caso não sejam fornecidas as razões da negativa de acesso à informação solicitada. Dessa forma, eventual recurso não deve ter o objetivo de abordar um novo assunto, mas deve ater-se exclusivamente à negativa de acesso às informações existentes e custodiadas pelo órgão ou ao não fornecimento das razões da negativa de acesso. Portanto, caso queira fazer uma pergunta diferente, não entre com recurso. Nesse caso, faça um novo pedido de acesso à informação."
+No mesmo dia, o Cidadão interpôs Recurso de Primeira Instância (cópia SEI nº 16319361) direcionado à SRC, no qual alegou ter ocorrido a indevida mutilação do pedido original pelo descarte dos quesitos correcionais e saneadores, impugnou a premissa de concessão voluntária de vistas e denunciou a existência de erro material no processo eletrônico, consistente na juntada indevida de extratos de débito de FISTEL pertencentes a terceiro. Em suas palavras:
+Recurso de Primeira Instância (Justificativa):
+"(...) 1. DA ILEGAL MUTILAÇÃO DO PEDIDO - OMISSÃO FUNDAMENTADA DOS QUESITOS 'D' E 'F'
+A resposta recorrida afirmou sumariamente que "foram considerados passíveis de resposta no âmbito da LAI os pedidos A e B", omitindo-se por completo quanto aos Quesitos 'D' e 'F'.
+A Administração Pública não possui prerrogativa para descartar arbitrariamente quesitos do cidadão sem MOTIVAÇÃO LEGAL. O Quesito 'D' requereu a análise objetiva da omissão verificada no Protocolo nº 202608202334001 (que omitiu o número do processo fiscalizatório ao responder a reabertura), e o Quesito 'F' solicitou o encaminhamento correcional do fato por dever de ofício à unidade competente (art. 32, § 1º, LAI).
+A recusa de apreciação sem declinar fundamento legal ou justificativa fática viola o art. 11, § 4º da LAI e o art. 50, I e VII da Lei nº 9.784/1999. Exige-se a apreciação fundamentada de tais quesitos ou seu devido encaminhamento correcional.
+2. DA FALSA PREMISSA QUANTO À CONCESSÃO DE VISTAS E APROPRIAÇÃO INDEVIDA DE MÉRITO
+A resposta no Fala.BR alegou que "foi disponibilizado acesso externo (...) até 16/01/2027 (120 dias)".
+A referida liberação de vistas no Processo SEI nº 01217.006743/2026-68 NÃO DECORREU de ato voluntário ou eficiência deste e-SIC, mas de procedimento autônomo e provocação exclusiva do Recorrente na plataforma Anatel Consumidor (Protocolo nº 202609100754980), canal com fluxo regimental próprio. A tentativa da unidade de utilizar ato provocado pelo cidadão em via diversa para simular atendimento espontâneo e cumprimento do e-SIC constitui premissa falsa e desvio do objeto da demanda.
+3. DO SEVERO TUMULTO PROCESSUAL E ERRO MATERIAL NA INSTRUÇÃO DO SEI
+Consultando a íntegra do Processo SEI nº 01217.006743/2026-68, constatou-se vício gravíssimo na instrução: a Anatel autuou e juntou aos autos extrato e resposta da Gerência de Finanças (AFFO) referentes a débitos de FISTEL de um terceiro (NUP 01217.006897/2026-50), totalmente alheio ao Recorrente e ao objeto do e-SIC.
+Tal erro crasso de juntada evidencia severo tumulto processual, falta de controle documental e divergência entre o cadastrado no Fala.BR e o juntado fisicamente no SEI, maculando a higidez do feito.
+4. REQUERIMENTOS
+Diante do exposto, requer a este Superintendente (SRC):
+a) O CONHECIMENTO e PROVIMENTO do recurso;
+b) O SANEAMENTO DA OMISSÃO quanto aos Quesitos 'D' e 'F', determinando-se a resposta fundamentada aos quesitos ou o ENCAMINHAMENTO DE OFÍCIO à Corregedoria/Ouvidoria para apuração do dever funcional (Art. 32, LAI);
+c) A RETIFICAÇÃO do histórico do e-SIC para afastar a falsa premissa de concessão espontânea de vistas;
+d) A CORREÇÃO DO TUMULTO PROCESSUAL no SEI nº 01217.006743/2026-68, desentranhando-se os documentos alheios de terceiro (AFFO/FISTEL) e regularizando-se a instrução do feito."
+Em 28 de setembro de 2026, a SRC, por meio do Despacho Decisório nº 348/2026/RCRC/SRC (SEI nº 16355100), respaldado no Informe nº 52/2026/RCRC/SRC (SEI nº 16353100), não conheceu do Recurso de Primeira Instância, ao fundamento de que as informações públicas custodiadas haviam sido integralmente prestadas e de que o rito da LAI não comporta pretensões de natureza correcional ou de revisão de atendimento ordinário, registrando ainda a perda de objeto em relação ao erro material ante a emissão do Termo de Cancelamento de Documento SEI nº 16320976.
+Despacho Decisório nº 348/2026/RCRC/SRC:
+"DECIDE:
+1. NÃO CONHECER DO RECURSO DE PRIMEIRA INSTÂNCIA, uma vez que:
+1.1. as informações efetivamente requeridas no pedido de acesso à informação foram fornecidas pela Administração;
+1.2. os quesitos “D” e “F” não se caracterizam como pedidos de acesso à informação preexistente, por demandarem análise administrativa e eventual adoção de providências correcionais;
+1.3. a alegação referente à juntada indevida de documento constitui matéria nova, estranha ao objeto do pedido originário e apresentada apenas em fase recursal;
+1.4. as matérias remanescentes veiculadas no recurso não se inserem no âmbito do procedimento recursal previsto na Lei nº 12.527, de 2011.
+2. REGISTRAR que o documento indevidamente juntado foi formalmente cancelado por meio do Termo de Cancelamento de Documento SEI nº 16320976, encontrando-se materialmente satisfeita a providência administrativa pretendida pelo recorrente.
+3. ESCLARECER que eventuais pretensões relacionadas à revisão de atendimentos realizados em outros canais, à apuração de responsabilidade funcional ou à adoção de providências administrativas deverão ser submetidas aos canais administrativos especificamente destinados ao tratamento dessas matérias.
+4. DETERMINAR à Gerência de Canais de Relacionamento com os Consumidores – RCRC que proceda à comunicação da presente decisão ao interessado por meio da Plataforma Integrada de Ouvidoria e Acesso à Informação – Fala.BR."
+[Grifo no original]
+No mesmo dia, essa decisão foi registrada na plataforma Fala.BR, conforme comprovante de cadastramento SEI nº 16356461, nos seguintes termos:
+Resposta ao Recurso de Primeira Instância:
+"Data da Resposta: 28/09/2026 19:26
+Tipo de Resposta: Não Conhecimento
+Justificativa: Prezado cidadão, Em resposta ao Recurso de 1ª Instância, informa-se que as informações efetivamente solicitadas no pedido de acesso à informação foram disponibilizadas pela Agência, com a identificação do processo relativo ao Procedimento de Fiscalização Regulatória e da unidade administrativa responsável por sua condução. Esclarece-se que os quesitos “D” e “F” não se caracterizam como pedidos de acesso à informação, por demandarem análise de atendimento anteriormente realizado, avaliação de eventual omissão administrativa e adoção de providências de natureza correcional, matérias que não se inserem no escopo da Lei nº 12.527/2011. Quanto à alegação relacionada à disponibilização de acesso externo aos autos, registra-se que a informação prestada era objetiva e correta, limitando-se a informar a existência de acesso válido ao Processo SEI nº 01217.006743/2026-68. A origem da solicitação que resultou na concessão desse acesso não altera a veracidade da informação comunicada ao requerente. Por sua vez, a alegação referente à juntada indevida de documento estranho aos autos não integrou o pedido original nem a resposta recorrida, constituindo matéria nova apresentada apenas em fase recursal. Ademais, a questão já foi solucionada administrativamente por meio do Termo de Cancelamento de Documento (SEI nº 16320976), que promoveu o cancelamento formal do documento indevidamente anexado. Dessa forma, por veicular matérias estranhas ao objeto do pedido de acesso à informação e do procedimento recursal previsto na Lei nº 12.527/2011, o recurso não é conhecido. Eventuais pretensões relacionadas à análise de atendimentos, providências administrativas ou questões processuais deverão ser apresentadas pelos canais administrativos específicos destinados a esse fim. Atenciosamente, Superintendência de Relações com Consumidores (SRC)."
+No mesmo dia, ainda irresignado, o Cidadão interpôs Recurso de Segunda Instância (cópia SEI nº 16361623 e anexo SEI nº 16361656) endereçado ao Presidente do Conselho Diretor da Anatel, no qual reiterou a necessidade de apreciação dos quesitos correcionais, o encaminhamento dos autos à Corregedoria ou Ouvidoria com fulcro no art. 32, § 1º, da LAI, a retificação do histórico quanto à origem do acesso externo concedido e a regularização definitiva do processo no SEI. In verbis:
+Recurso de Segunda Intância (anexo, p.3):
+"4. DOS REQUERIMENTOS FINAIS
+a) CONHECIMENTO E PROVIMENTO do presente Recurso de 2ª Instância pelo Presidente do Conselho Diretor (Autoridade Máxima da Anatel), reformando-se integralmente a decisão recorrida;
+b) SANEAMENTO DA OMISSÃO E REMESSA DE OFÍCIO, determinando-se o encaminhamento dos fatos descritos nos Quesitos 'D' e 'F' à Corregedoria ou Ouvidoria da Anatel, para que o órgão correcional competente avalie a conduta e eventual responsabilidade funcional decorrente da sonegação e evasivas no atendimento primário (Art. 32, § 1º, da LAI);
+c) RETIFICAÇÃO DO HISTÓRICO ADMINISTRATIVO para afastar a falsa premissa de que a concessão de vistas ao processo decorreu de cumprimento espontâneo do e-SIC, registrando-se que resultou de provocação autônoma do Requerente via Anatel Consumidor (Protocolo nº 202609100754980);
+d) REGULARIZAÇÃO DEFINITIVA DO PROCESSO SEI Nº 01217.006743/2026-68, certificando-se a completa higienização dos autos após o cancelamento do documento alheio (Termo SEI nº 16320976) e adotando-se rotinas de triagem rigorosa para evitar novos erros de juntada."
+[Todos os grifos no original]
+Em 29 de setembro de 2026, a SRC, por meio do Informe nº 53/2026/RCRC/SRC (SEI nº 16358970), analisou as razões do Recurso de Segunda Instância e opinou pelo seu não conhecimento, ante o exaurimento do objeto informacional da LAI e a impertinência do uso da transparência passiva para a provocação de apurações disciplinares sem elementos mínimos de materialidade.
+No mesmo dia, a SRC, mediante a Matéria para Apreciação do Conselho Diretor nº 736/2026 (SEI nº 16359966), encaminhou o processo à Secretaria do Conselho Diretor, via Superintendência Executiva, para distribuição e deliberação deste Colegiado.
+Em 30 de setembro de 2026, fui designado Relator da matéria, conforme Certidão de Distribuição SEI nº 16367967.
+É o relatório.
+DA ANÁLISE
+A fundamentação da presente Análise encontra-se dividida em cinco partes. Primeiramente, analisa-se a admissibilidade do recurso. Depois, na sequência, faz-se a conformação do objeto da presente análise com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), as recomendações de boas práticas regulatórias do Programa de Aprimoramento da Qualidade da Regulação Brasileira (QUALI-REG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE) e com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Análise de Admissibilidade Recursal
+O exame dos pressupostos de admissibilidade do Recurso de Segunda Instância deve ser realizado sob a dupla ótica dos requisitos extrínsecos (formais) e intrínsecos (materiais) estabelecidos pela LAI (Lei nº 12.527/2011), pelo seu Regulamento no âmbito do Poder Executivo Federal (Decreto nº 7.724/2012) e pelas normas regimentais desta Agência (Regimento Interno da Anatel, Resolução nº 612/2013, c/c Portaria nº 1.447/2019).
+Sob o prisma dos requisitos extrínsecos, verifica-se a plena legitimidade do recorrente, na qualidade de Cidadão solicitante originário da informação, nos termos dos arts. 10 e 16 da Lei nº 12.527/2011. A representação perante o Conselho Diretor é igualmente regular, figurando este Colegiado como autoridade competente para a apreciação da matéria em segunda instância administrativa no âmbito da Agência.
+Quanto à tempestividade, observa-se que a decisão de primeira instância emitida pela SRC foi disponibilizada na Plataforma Fala.BR em 28 de setembro de 2026, às 19h26. O recurso de segunda instância foi interposto pelo Cidadão nesse mesmo dia, 28 de setembro de 2026, às 22h59, antes sequer da contagem do prazo recursal começar, no primeiro dia útil subsequente.
+De toda sorte, considerando-se o prazo legal de 10 (dez) dias fixado no art. 16 da LAI, no art. 21 do Decreto nº 7.724/2012 e na Portaria Anatel nº 1.447/2019, resta caracterizada a tempestividade do pleito.
+Os supramencionados artigos da LAI possuem a seguinte redação:
+Lei de Acesso à Informação:
+"Art. 10. Qualquer interessado poderá apresentar pedido de acesso a informações aos órgãos e entidades referidos no art. 1º desta Lei, por qualquer meio legítimo, devendo o pedido conter a identificação do requerente e a especificação da informação requerida.
+§ 1º Para o acesso a informações de interesse público, a identificação do requerente não pode conter exigências que inviabilizem a solicitação.
+§ 2º Os órgãos e entidades do poder público devem viabilizar alternativa de encaminhamento de pedidos de acesso por meio de seus sítios oficiais na internet.
+§ 3º São vedadas quaisquer exigências relativas aos motivos determinantes da solicitação de informações de interesse público.
+(...)
+Art. 15. No caso de indeferimento de acesso a informações ou às razões da negativa do acesso, poderá o interessado interpor recurso contra a decisão no prazo de 10 (dez) dias a contar da sua ciência.
+Parágrafo único. O recurso será dirigido à autoridade hierarquicamente superior à que exarou a decisão impugnada, que deverá se manifestar no prazo de 5 (cinco) dias.
+Art. 16. Negado o acesso a informação pelos órgãos ou entidades do Poder Executivo Federal, o requerente poderá recorrer à Controladoria-Geral da União, que deliberará no prazo de 5 (cinco) dias se:
+I - o acesso à informação não classificada como sigilosa for negado;
+II - a decisão de negativa de acesso à informação total ou parcialmente classificada como sigilosa não indicar a autoridade classificadora ou a hierarquicamente superior a quem possa ser dirigido pedido de acesso ou desclassificação;
+III - os procedimentos de classificação de informação sigilosa estabelecidos nesta Lei não tiverem sido observados; e
+IV - estiverem sendo descumpridos prazos ou outros procedimentos previstos nesta Lei.
+§ 1º O recurso previsto neste artigo somente poderá ser dirigido à Controladoria-Geral da União depois de submetido à apreciação de pelo menos uma autoridade hierarquicamente superior àquela que exarou a decisão impugnada, que deliberará no prazo de 5 (cinco) dias.
+§ 2º Verificada a procedência das razões do recurso, a Controladoria-Geral da União determinará ao órgão ou entidade que adote as providências necessárias para dar cumprimento ao disposto nesta Lei.
+§ 3º Negado o acesso à informação pela Controladoria-Geral da União, poderá ser interposto recurso à Comissão Mista de Reavaliação de Informações, a que se refere o art. 35."
+Não obstante o atendimento aos pressupostos formais, o juízo de admissibilidade na via da transparência passiva exige o preenchimento de requisitos materiais intrínsecos de cabimento, consistentes na existência de efetiva controvérsia sobre o acesso a informações públicas preexistentes e custodiadas pela Administração Pública.
+Analisando o objeto do Recurso, constata-se que as informações públicas primárias legitimamente requeridas na exordial – o número do processo referente ao Procedimento de Fiscalização Regulatória (no caso, o Processo nº 53500.091566/2025-24) e a indicação da unidade técnica responsável (no caso, a Gerência de Tratamento de Solicitações de Consumidores, RCTS) – foram integralmente prestadas pela Anatel na resposta originária. 
+O próprio Recorrente, aliás, declara expressamente na peça recursal que não controverte o fornecimento ou a exatidão dessas informações cadastrais.
+Recurso de Segunda Intância (anexo, p.2):
+"Uma vez que o dado público primário (número do Processo SEI) foi devidamente fornecido neste próprio expediente de e-SIC em resposta aos Quesitos 'A' e 'B', pontos que restaram atendidos e dos quais não se recorre, o objeto deste recurso centra-se na responsabilização funcional pela omissão e conduta evasiva praticada no canal primário, bem como no descumprimento do dever de ofício (Art. 32 da LAI)."
+[Grifo no original]
+Ou seja, a controvérsia devolvida a este Colegiado recai exclusivamente sobre as alíneas 'd' e 'f' da petição inicial e sobre a arguição de erro de juntada documental. 
+Ocorre que o pedido de análise objetiva de omissão em atendimento ordinário prévio (Quesito 'd') e o pleito de encaminhamento dos autos para instauração de procedimento correcional disciplinar contra servidores (Quesito 'f') não se enquadram no conceito de informação pública preexistente definido no art. 4º, inciso I, e no art. 7º da LAI. In verbis:
+Lei de Acesso à Informação:
+"Art. 4º Para os efeitos desta Lei, considera-se:
+I - informação: dados, processados ou não, que podem ser utilizados para produção e transmissão de conhecimento, contidos em qualquer meio, suporte ou formato;
+(...)
+Art. 7º O acesso à informação de que trata esta Lei compreende, entre outros, os direitos de obter:
+I - orientação sobre os procedimentos para a consecução de acesso, bem como sobre o local onde poderá ser encontrada ou obtida a informação almejada;
+II - informação contida em registros ou documentos, produzidos ou acumulados por seus órgãos ou entidades, recolhidos ou não a arquivos públicos;
+III - informação produzida ou custodiada por pessoa física ou entidade privada decorrente de qualquer vínculo com seus órgãos ou entidades, mesmo que esse vínculo já tenha cessado;
+IV - informação primária, íntegra, autêntica e atualizada;
+V - informação sobre atividades exercidas pelos órgãos e entidades, inclusive as relativas à sua política, organização e serviços;
+VI - informação pertinente à administração do patrimônio público, utilização de recursos públicos, licitação, contratos administrativos; e
+VII - informação relativa:
+a) à implementação, acompanhamento e resultados dos programas, projetos e ações dos órgãos e entidades públicas, bem como metas e indicadores propostos;
+b) ao resultado de inspeções, auditorias, prestações e tomadas de contas realizadas pelos órgãos de controle interno e externo, incluindo prestações de contas relativas a exercícios anteriores. (...)"
+Tratam-se de solicitações de providências administrativas, avaliação de condutas e emissão de juízos de valor inéditos, pretensões que extrapolam os limites materiais do procedimento de transparência passiva. Nesse sentido, colaciona-se o seguinte trecho do Informe nº 53/2026/RCRC/SRC (SEI nº 16358970), que avaliou as razões recursais de segunda instância:
+Informe nº 53/2026/RCRC/SRC:
+Dos quesitos “D” e “F”
+4.23. Os quesitos “D” e “F” não possuem natureza de pedido de acesso à informação.
+4.24. Enquanto os quesitos atendidos tinham por objeto o acesso a dados e registros já existentes, os quesitos remanescentes não se limitam à obtenção de informação previamente produzida e registrada. Seu atendimento demandaria a elaboração de manifestação administrativa nova, com avaliação de fatos, análise de condutas funcionais e deliberação acerca de providências eventualmente cabíveis.
+4.25. A Lei nº 12.527, de 2011, assegura o acesso a informações existentes e registradas em qualquer meio, suporte ou formato. O procedimento nela previsto, contudo, não se destina a compelir o órgão a formar juízo administrativo inédito, antecipar decisão ainda não adotada ou instaurar procedimento específico para produzir a resposta pretendida.
+4.26. Do mesmo modo, o procedimento recursal previsto nos arts. 15 e 16 da Lei de Acesso à Informação destina-se à revisão de decisões relativas ao acesso à informação, inclusive quanto ao indeferimento do pedido e às razões de eventual negativa. Não constitui, portanto, via própria para obter pronunciamento administrativo sobre condutas funcionais, revisar atendimentos realizados em outros canais institucionais ou provocar a instauração de procedimento correcional.
+4.27. Em consequência, os quesitos remanescentes não podem ser conhecidos, no âmbito deste recurso, como pedidos de acesso à informação.
+4.28. Nesse mesmo sentido, em complemento a todo o exposto, tem-se que o art. 32 da Lei nº 12.527, de 2011, não ampara a pretensão recursal. O dispositivo descreve condutas ilícitas determinadas, entre elas a recusa de informação requerida nos termos da LAI, o retardamento deliberado, o fornecimento intencional de informação incorreta, incompleta ou imprecisa e a atuação com dolo ou má-fé. Seu § 1º limita-se a definir as consequências disciplinares dessas condutas, uma vez comprovadas com observância do contraditório, da ampla defesa e do devido processo legal. Não estabelece dever de encaminhamento automático à Corregedoria e tampouco dispensa a presença de elementos mínimos de materialidade.
+4.29. No caso concreto, nenhum desses elementos está presente. A informação foi prestada no primeiro pronunciamento emitido no âmbito da LAI, sem imposição de sigilo, retardamento ou resistência. O fato de ela não ter sido fornecida anteriormente no Anatel Consumidor não caracteriza, por si só, sonegação dolosa, especialmente porque aquele protocolo possuía objeto mais amplo, dinâmica própria e não tramitava como pedido de acesso à informação. A discordância do interessado quanto à resposta anteriormente prestada não demonstra, por si só, a ocorrência de irregularidade funcional.
+4.30. Não se identifica, portanto, fundamento para qualquer encaminhamento correcional. A mera insistência do interessado, a utilização de expressões como ‘sonegação’, ‘blindagem administrativa’ ou ‘confissão de ineficiência’ e a formulação de juízo crítico sobre o atendimento não convertem fatos objetivos em infração disciplinar.
+4.31. Ausentes indícios de recusa deliberada, ocultação de informação, fornecimento intencional de dado incorreto ou atuação de má-fé, não se identifica justa causa administrativa para o encaminhamento do caso à Corregedoria ou a qualquer outra unidade de controle ou apuração, uma vez que os fatos relatados não revelam, sequer em tese, irregularidade funcional que justifique a instauração de procedimento específico, sob pena de desvirtuamento dos princípios da finalidade, da razoabilidade e da eficiência.
+[Grifei]
+Ademais, a alegação de tumulto processual decorrente da juntada indevida de extrato de FISTEL pertencente a terceiro configura matéria estranha ao pedido originário e à resposta de primeira instância, caracterizando inequívoca inovação em fase recursal. 
+Sob essa perspectiva, incide diretamente a orientação da Súmula CMRI nº 2/2015 da Comissão Mista de Reavaliação de Informações, que faculta ao órgão não conhecer de matérias estranhas ao pedido inicial ou introduzidas apenas em grau de recurso. Senão, vajamos:
+Súmula CMRI nº 2, de 2015:
+“INOVAÇÃO EM FASE RECURSAL – É facultado ao órgão ou entidade demandado conhecer parcela do recurso que contenha matéria estranha: i) ao objeto do pedido inicial ou; ii) ao objeto do recurso que tiver sido conhecido por instância anterior - devendo o órgão ou entidade, sempre que não conheça a matéria estranha, indicar ao interessado a necessidade de formulação de novo pedido para apreciação da matéria pelas instâncias administrativas iniciais.”
+Justificativa
+Esta súmula apresenta regra geral para o conhecimento de recursos interpostos no âmbito do processo administrativo de acesso à informação, segundo a qual somente deverá ser objeto de apreciação por instância superior matéria que já haja sido apreciada pela instância inferior. Nesse sentido, a alteração da matéria do pedido de acesso à informação ao longo dos recursos, quando leve ao aumento do seu escopo ou à sua mudança de assunto, poderá não ser objeto de apreciação pela instância superior, em respeito ao princípio do duplo grau de jurisdição, uma vez que o conhecimento de matéria estranha ao objeto inicial, quando levado à apreciação somente da última instância administrativa, pode levar à sua supressão, em prejuízo do administrado.
+Esta regra, no entanto, merece ser harmonizada com os princípios da instrumentalidade, da eficiência, da economicidade e da tutela da legítima confiança dos administrados. Por esta razão, diz-se que o órgão ou entidade demandada poderá optar por conhecer de parcelas de recursos que apresentem esta natureza. Assim, quando à matéria estranha ao pedido inicial corresponder questão de acesso à informação sobre cujo mérito possa o órgão ou entidade demandado facilmente se manifestar, deverá ele assim proceder, em respeito aos princípios administrativos da eficiência e da economicidade.
+Ademais, a fim de resguardar a legítima confiança dos administrados, o órgão deverá sempre manifestar-se na primeira oportunidade sobre o eventual não conhecimento de parcela do recurso que contenha matéria estranha ao pedido. Assim, não poderá o órgão deixar de conhecer de matéria que tenha sido objeto de apreciação por instância inferior sob o pretexto de que tal matéria não conste no pedido original. Nesse sentido, admite-se que a apreciação da matéria poderá levar tanto ao conhecimento expresso quanto ao conhecimento tácito da parcela do recurso objeto de inovação.
+Ressalta-se que a decisão pelo não conhecimento de parcela do pedido deverá conter orientação para que o interessado interponha novo pedido de informação sobre a matéria estranha ao pedido original. Além disso, naquilo que o recurso não inovar, deve o órgão ou a entidade conhecer do recurso, processando o pedido conforme determina a Lei de Acesso e seu decreto regulamentador. (...)"
+[Todos os grifos no original]
+Adicionalmente, cumpre registrar que a referida falha documental foi devidamente saneada pela própria Administração na via administrativa, mediante a edição do Termo de Cancelamento de Documento SEI nº 16320976, conforme relatado no Informe nº 53/2026/RCRC/SRC (SEI nº 16358970), do que resulta a perda superveniente de objeto sob o prisma fático. 
+Do exposto, diante da inexistência de controvérsia informacional remanescente, da inadequação material do objeto e da caracterização de inovação recursal, conclui-se pelo NÃO CONHECIMENTO do Recurso de Segunda Instância, nos termos do art. 16 da LAI e do art. 21 do Decreto nº 7.724/2012, c/c a Súmula CMRI nº 2/2015.
+II - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE igualmente fornece uma orientação para ajudar os formuladores de políticas a avaliar e melhorar a estrutura legal, regulatória e institucional para governança corporativa, com o objetivo de apoiar a confiança e integridade do mercado, eficiência econômica, crescimento sustentável e estabilidade financeira. Tais princípios de governança são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, a transparência dos atos administrativos da Anatel garante segurança jurídica para o mercado regulado e os cidadãos, uma vez que há a disponibilização mecanismos de acesso à informação.
+III - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+Expõe-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, instituiu, a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada está alinhada com esses objetivos, especialmente aqueles descritos nos incisos VII e XI acima, na medida em que está em consonância com os objetivos de incentivar e promover instrumentos de controle social por meio da transparência das atividades no âmbito do processo regulatório.
+IV - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências sobre os mecanismos de controle social e transparência, além de debates sobre os desafios e oportunidades nessa temática. Na referida obra, em especial no capítulo 4 que trata da Propostas para assegurar a efetividade das consultas e audiências públicas nos processos regulatórios, as autoras Natasha Schmitt Caccia Salinas e Patrícia Regina Pinheiro Sampaio e o autor Lucas Thevenard Gomes (2024, p.80) destacam que:
+Dados abertos, em formato processável, aumentam a transparência da administração, facilitando a realização de análises quantitativas e qualitativas pelos interessados, bem como fomentando pesquisas acadêmicas e empoderando indivíduos e entidades da sociedade civil organizada para se engajar de forma mais efetiva com a governança pública.
+(...)
+Nesse contexto, a atuação transparente da Anatel no presente caso encontra-se devidamente alinhada com os princípios de acesso às informações públicas, bem como conferem o devido controle social e transparência de suas atividades, atendendo ao interesse público.
+V - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento contida na presente Análise relaciona-se com o seguinte Objetivo da Agenda 2030:
+Objetivo 16 - Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.
+A agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Para o caso analisado, destaque-se a Meta nacional 16.6, que busca ampliar a transparência, a accountability e a efetividade das instituições, em todos os seus níveis. Promover a transparência de atos de responsabilidade dos entes estatais significa ampliar a satisfação da sociedade na relação direta com os serviços públicos. Assim, a disponibilização de informações públicas atende ao anseio do cidadão, da sociedade e dos regulados, no sentido de sempre prestigiar a transparência de seus atos administrativos.
+O Brasil está empenhado no cumprimento dessas metas, sendo relevante o estudo desenvolvido pelo IPEA, quanto à adequação das metas globais da Agenda 2030 para o Desenvolvimento Sustentável à realidade brasileira. Trata-se de um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento.
+Com essa iniciativa, o Brasil ganha destaque no sentido de ter à sua disposição um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por não conhecer do Recurso de Segunda Instância, com fundamento no art. 16 da Lei nº 12.527/2011 e do art. 21 do Decreto nº 7.724/2012, c/c a Súmula CMRI nº 2/2015.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 05/10/2026, às 11:19, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16374296 e o código CRC EC773682.
+ | 
+Referência: Processo nº 01217.006743/2026-68 | 
+SEI nº 16374296 |

@@ -1,0 +1,43 @@
+SEI/ANATEL - 15636515 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 133, de 14 de maio de 2026
+Processo nº 53500.001314/2022-79
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE RECONSIDERAÇÃO. TERMO DE AJUSTAMENTO DE CONDUTA - TAC. ÍNDICE DE QUALIDADE PERCEBIDA - IQP DO SERVIÇO DE ACESSO CONDICIONADO - SEAC. PEDIDO NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Pedido de Reconsideração interposto por TELEFÔNICA BRASIL S.A. contra o Acórdão nº 36/2026, que indeferiu pedido de repactuação do compromisso “Índice de Qualidade Percebida - IQP”, para o ano 4 do Termo de Ajustamento de Conduta - TAC nº 1/2022, quanto à Cláusula 10.3 e à Cláusula 10.5, alínea “c”, com exclusão do Serviço de Acesso Condicionado - SeAC e redistribuição dos valores previstos para esse serviço aos demais serviços.
+2. Fundamento do Pedido. A Interessada sustentou que a revisão do Plano Geral de Metas de Competição - PGMC, aprovada pela Resolução nº 783/2025, e a suspensão cautelar das obrigações regulatórias do SeAC pelo Acórdão nº 247/2025-CD autorizariam a repactuação do compromisso. Alegou, ainda, ausência de óbice à repactuação, esvaziamento do interesse público, violação à proporcionalidade e à isonomia, e possibilidade de redistribuição dos valores de referência.
+3. Fato posterior informado. A Interessada protocolizou petição extemporânea para informar que, na verificação do cumprimento do TAC, seriam utilizados os resultados da Pesquisa de Satisfação e Qualidade Percebida de 2025, observada a metodologia indicada para o Serviço Móvel Pessoal - SMP.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Pedido de Reconsideração é admissível, embora protocolizado antes da notificação formal do acórdão recorrido; e (ii) saber se a suspensão cautelar das obrigações regulatórias do SeAC autoriza a repactuação das cláusulas 10.3 e 10.5, alínea “c”, do TAC nº 1/2022, com exclusão do SeAC e redistribuição dos valores de referência aos demais serviços.
+III. RAZÕES DE DECIDIR
+1. O Pedido de Reconsideração é admissível. A peça foi interposta tempestivamente e preenche os requisitos legais e regimentais de cabimento, legitimidade e interesse.
+2. A suspensão promovida pelo Acórdão nº 247/2025-CD tem efeitos ex nunc. Ela não retroage para atingir obrigações já incorporadas ao TAC celebrado em 2022.
+3. O compromisso constante do TAC decorre de ajuste consensual válido e autônomo. A suspensão de obrigações regulatórias gerais do SeAC não extingue nem torna inexigíveis as Cláusulas 10.3 e 10.5, alínea “c”, do TAC nº 1/2022.
+4. Não há conflito normativo direto entre a revisão do PGMC e o TAC. O Acórdão nº 247/2025-CD apenas suspendeu a exigibilidade regulatória geral. Ele não vedou a realização da Pesquisa de Satisfação nem o aproveitamento de seus resultados.
+5. A Pesquisa de Satisfação de 2025 do SeAC já estava em andamento quando sobreveio a suspensão. Seus resultados podiam ser utilizados no acompanhamento do TAC e foram posteriormente publicados pela Agência.
+6. A exclusão do indicador no último ano do TAC contraria o interesse público e os termos pactuados. Também não se demonstrou fato superveniente imprevisível apto a gerar desequilíbrio relevante.
+7. O Pedido de Reconsideração não apresentou fato novo, alteração superveniente relevante ou fundamento jurídico apto a infirmar os fundamentos do indeferimento do pedido de repactuação. A insurgência apenas reiterou argumentos já examinados no acórdão recorrido.
+8. Mantém-se, por isso, o indeferimento da repactuação e a integral eficácia das cláusulas originalmente pactuadas.
+IV. DISPOSITIVO E TESE
+Pedido de Reconsideração conhecido e não provido. 
+Tese de julgamento: "1. O Pedido de Reconsideração protocolizado antes da ciência formal do acórdão é tempestivo, desde que presentes os requisitos legais e regimentais de admissibilidade. 2. A suspensão cautelar, com efeitos ex nunc, das obrigações regulatórias do SeAC não autoriza a repactuação de cláusulas de TAC anteriormente celebrado, quando inexistem retroatividade, conflito normativo direto ou fato superveniente imprevisível apto a gerar desequilíbrio relevante. 3. É inviável excluir o SeAC do compromisso do ano 4 do TAC nº 1/2022 e redistribuir seus valores de referência aos demais serviços. 4. Os resultados da Pesquisa de Satisfação de 2025 podem ser utilizados para a aferição do IQP do SeAC no ano 4 do TAC nº 1/2022."
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 2º, XIII; Decreto-Lei nº 4.657/1942, arts. 23 e 24; Código de Processo Civil - CPC, art. 218, § 4º; Resolução nº 612/2013, arts. 115 e 126, § 2º; TAC nº 1/2022, Cláusulas 10.2, 10.3 e 10.5, alínea “c”.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 30/2026/NP (SEI nº 15407760), integrante deste acórdão:
+a) conhecer do Pedido de Reconsideração para, no mérito, negar-lhe provimento; e,
+b) receber a Petição Extemporânea como mera comunicação processual, sem efeito modificativo sobre a decisão.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15636515 e o código CRC 04EEB20E.
+ | 
+Referência: Processo nº 53500.001314/2022-79 | 
+SEI nº 15636515 |

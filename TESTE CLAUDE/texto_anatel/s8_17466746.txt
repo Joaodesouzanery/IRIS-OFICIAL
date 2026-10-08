@@ -1,0 +1,54 @@
+SEI/ANATEL - 15618257 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 129, de 11 de maio de 2026
+Processo nº 53500.087479/2025-72
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. PROCESSO DE ACOMPANHAMENTO E CONTROLE - PAC. COBRANÇA INDEVIDA DE SERVIÇO DE VALOR ADICIONADO - SVA. RESSARCIMENTO INDIRETO AO FUNDO DE DEFESA DE DIREITOS DIFUSOS - FDD. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por CLARO S.A. contra o Despacho Decisório nº 50/2026/CODI/SCO, que declarou devido e pendente de ressarcimento o valor atualizado de R$ 28.409.511,97 (vinte e oito milhões, quatrocentos e nove mil, quinhentos e onze reais e noventa e sete centavos), a ser revertido ao Fundo de Defesa de Direitos Difusos - FDD.
+2. Fato relevante. O Processo de Acompanhamento e Controle - PAC foi instaurado para acompanhar o cumprimento da obrigação de ressarcimento decorrente de 804.898 (oitocentas e quatro mil, oitocentas e noventa e oito) cobranças indevidas relativas a Serviço de Valor Adicionado - SVA não solicitados e/ou não validados pelos consumidores, no Serviço Móvel Pessoal - SMP.
+3. Pedidos recursais. A Recorrente requereu o arquivamento ou o sobrestamento do PAC até o trânsito em julgado administrativo do Procedimento para Apuração de Descumprimento de Obrigações - Pado correlato. Requereu também a revisão da metodologia de apuração, o afastamento da restituição indireta ao Fundo de Defesa de Direitos Difusos - FDD, o reconhecimento da prescrição prevista no art. 27 do Código de Defesa do Consumidor - CDC e a revisão do valor exigido.
+4. Fato superveniente. Houve decisão judicial que suspendeu a exigibilidade do crédito objeto do PAC e obstou a inscrição da Recorrente em cadastros restritivos em decorrência exclusiva desse débito.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o PAC de ressarcimento se submete ao prazo prescricional decenal do art. 205 do Código Civil - CC e se atos administrativos praticados no processo interrompem a prescrição por analogia ao art. 202 do CC; (ii) saber se o PAC deve ser arquivado ou sobrestado até o trânsito em julgado administrativo do Pado correlato; (iii) saber se, no âmbito do PAC, cabe rediscutir a metodologia de apuração das cobranças indevidas, a exigência de duplo opt-in, a comprovação de pagamento e os abatimentos alegados; (iv) saber se é legítima a restituição indireta ao FDD e se incide a prescrição quinquenal do art. 27 do CDC; e (v) saber se há fundamento para revisar o valor exigido e os critérios de atualização.
+III. RAZÕES DE DECIDIR
+1. A decisão judicial superveniente suspendeu apenas a exigibilidade do crédito. A decisão não impede o regular prosseguimento do processo administrativo até seu julgamento definitivo.
+2. A suspensão judicial da exigibilidade do crédito também suspende a fluência do prazo prescricional para sua cobrança enquanto perdurar o óbice judicial.
+3. O Recurso é tempestivo. Estão presentes os pressupostos de admissibilidade recursal.
+4. O dever de ressarcimento discutido no PAC possui natureza patrimonial e restitutória. Aplica-se o prazo prescricional decenal do art. 205 do CC.
+5. O art. 202 do CC não prevê expressamente atos administrativos como causas interruptivas da prescrição. Há lacuna normativa quanto ao processo administrativo.
+6. A analogia é admitida para integração do ordenamento quando a lei for omissa. Os atos administrativos de notificação e decisão praticados no PAC exercem função equivalente aos atos referidos no art. 202 do CC.
+7. As notificações da Prestadora e o Despacho Decisório nº 50/2026/CODI/SCO interrompem a prescrição por analogia ao art. 202 do CC. Não houve prescrição no caso.
+8. O PAC de ressarcimento possui natureza e finalidade distintas do Pado sancionador. O PAC é procedimento administrativo autônomo.
+9. A tramitação do PAC não depende do trânsito em julgado administrativo do Pado. O sobrestamento é medida excepcional e depende das peculiaridades do caso concreto.
+10. As alegações sobre metodologia de apuração, duplo opt-in, materialidade da infração, extensão do ilícito, comprovação de pagamento e abatimentos dizem respeito, em primeiro plano, ao mérito da imputação administrativa discutida no Pado.
+11. O PAC tem por finalidade apurar e implementar o ressarcimento aos usuários e impedir a retenção de valores cobrados indevidamente. No PAC, basta a identificação administrativa dos valores cobrados indevidamente para viabilizar o ressarcimento.
+12. A mera alegação de ausência de pagamento, de abatimentos ou de devoluções já realizadas não afasta os achados da fiscalização. Cabia à Prestadora comprovar o ressarcimento direto ou a inexistência de pagamento.
+13. O Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC/2023 aplica-se à forma de cumprimento da obrigação de ressarcir, por se tratar de ato futuro ainda não consumado. A aplicação do regulamento vigente ao tempo da execução do ressarcimento não altera a natureza da infração.
+14. Os arts. 68 e 69 da Resolução Anatel nº 765/2023 admitem o ressarcimento indireto ao FDD quando a devolução individual se mostra inviável ou ineficiente. A medida é compatível com a tutela coletiva do consumidor e com a vedação ao enriquecimento sem causa.
+15. O recolhimento ao FDD não constitui sanção autônoma. A medida busca recompor coletivamente o dano e impedir a permanência dos valores indevidamente cobrados no patrimônio da Prestadora.
+16. O consumidor mantém o direito de pleitear o ressarcimento diretamente. O regulamento admite a compensação dos valores pagos em recolhimentos futuros ao Fundo.
+17. Não incide a prescrição quinquenal do art. 27 do CDC. A hipótese não trata de fato do produto ou do serviço, mas de obrigação restitutória decorrente de cobrança indevida.
+18. Não cabe excluir valores relativos a usuários apenas identificáveis sem prova de ressarcimento direto. A Prestadora não comprovou compensação em fatura, concessão de créditos ou pagamento por via bancária nos prazos regulamentares.
+19. Não há fundamento para revisar juros e correção monetária. A ausência de devolução direta e tempestiva mantém íntegros os encargos incidentes.
+20. Mantém-se integralmente o Despacho Decisório recorrido.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e não provido.
+Tese de julgamento: 1. O PAC de ressarcimento submete-se ao regime prescricional decenal do art. 205 do CC. 2. Os atos administrativos de notificação e decisão praticados no PAC interrompem a prescrição por analogia ao art. 202 do CC. 3. O PAC de ressarcimento é autônomo em relação ao Pado sancionador e pode prosseguir independentemente do trânsito em julgado administrativo deste. 4. No PAC, não cabe rediscutir de forma exaustiva a materialidade da infração e a metodologia de apuração próprias do Pado, bastando a identificação administrativa dos valores cobrados indevidamente para viabilizar o ressarcimento. 5. É legítima a restituição indireta ao Fundo de Defesa de Direitos Difusos, nos termos do regulamento vigente ao tempo da execução do ressarcimento, quando a devolução individual se mostrar inviável ou ineficiente. 6. A obrigação de devolução por cobrança indevida não se submete ao prazo prescricional do art. 27 do CDC, aplicando-se o art. 205 do CC. 7. Sem prova de ressarcimento direto e tempestivo, não cabe excluir valores da base apurada nem revisar os encargos incidentes. 8. A decisão judicial superveniente suspende a exigibilidade do crédito, sem impedir o regular prosseguimento e julgamento do processo administrativo.
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 37; Decreto-Lei nº 4.657/1942, arts. 4º, 20 e 22; Lei nº 8.078/1990, arts. 12 a 17, 27 e 42, parágrafo único; Lei nº 10.406/2002, arts. 202, 205 e 884; Resolução Anatel nº 632/2014, arts. 85 e 89, I; Resolução Anatel nº 765/2023, arts. 64, 68 e 69, § 3º.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, Revista de Direito Administrativo, v. 124, p. 87-91; Superior Tribunal de Justiça - STJ, EAREsp 738.991/RS, Rel. Min. Og Fernandes, Corte Especial, j. 20.02.2019, DJe 11.06.2019; STJ, EAREsp 758.676/RS, Rel. Min. Laurita Vaz, j. 18.05.2016.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 38/2026/NP (SEI nº 15494516), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15618257 e o código CRC 3A63E22A.
+ | 
+Referência: Processo nº 53500.087479/2025-72 | 
+SEI nº 15618257 |

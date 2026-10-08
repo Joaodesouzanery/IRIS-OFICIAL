@@ -1,0 +1,45 @@
+SEI/ANATEL - 16168252 - Acórdão
+Boletim de Serviço Eletrônico em 25/08/2026
+DOU de 25/08/2026, seção 1, página 26
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 217, de 24 de agosto de 2026
+Processo nº 53500.026960/2023-20
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 204, de 21 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. RECURSO ADMINISTRATIVO. PROJETO-PILOTO DE VALIDAÇÃO DE PROTOCOLOS DE OUVIDORIA. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por CLARO S.A. contra o Despacho Decisório nº 26/2026/RCRC/SRC, que descontinuou o projeto-piloto de validação de protocolos, determinou a desativação das Application Programming Interface - APIs de validação fornecidas pelas Prestadoras e encerrou o processo no âmbito da Superintendência de Relações com Consumidores - SRC.
+2. Fatos relevantes. O processo de fiscalização regulatória foi instaurado para acompanhar obrigações relativas ao direito do consumidor e para validar a conformidade dos registros de protocolos na Ouvidoria das Prestadoras de serviços de telecomunicações.
+3. As decisões anteriores. A área técnica concluiu que o modelo testado não atendeu às premissas de confiabilidade, integridade, disponibilidade, estabilidade e clareza das informações. A Superintendência acolheu essa conclusão. O Presidente da Agência denegou o efeito suspensivo do Recurso.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o Recurso é admissível diante da existência de interesse recursal; (ii) saber se houve nulidade pela ausência de intimação prévia sobre o informe que subsidiou a decisão recorrida; e (iii) saber se a descontinuidade do projeto-piloto e da validação de protocolos por API possui fundamento jurídico e regulatório.
+III. RAZÕES DE DECIDIR
+1. O Recurso carece de interesse recursal.
+2. A decisão recorrida não imputou irregularidade à Prestadora.
+3. A decisão recorrida não aplicou penalidade nem restringiu direitos.
+4. O processo teve natureza de acompanhamento regulatório e de avaliação da continuidade de projeto da Agência. 
+5. A ausência de intimação prévia do informe não gera nulidade sem demonstração de prejuízo concreto.
+6. O contraditório e a ampla defesa foram exercidos no próprio Recurso Administrativo.
+7. A reabertura do feito para nova intimação não teria utilidade prática.
+8. Não existe regra vigente que imponha a validação de protocolo como condição para o consumidor registrar reclamação na Anatel.
+9. O prévio acionamento da Ouvidoria da Prestadora possui caráter educativo e organizacional.
+10. Esse prévio acionamento não pode impedir o exercício do direito de petição perante a Agência.
+11. A área técnica concluiu pela inviabilidade de continuidade do modelo de validação por API.
+12. A descontinuidade do projeto decorre de dados coletados ao longo de anos e de critérios de eficiência, economicidade e aprendizado regulatório.
+13. A decisão da Superintendência possui motivação suficiente.
+IV. DISPOSITIVO E TESE
+Recurso não conhecido.
+Tese de julgamento: "1. Não se conhece de Recurso Administrativo quando a decisão recorrida não impõe penalidade, restrição de direitos ou prejuízo à Recorrente, por ausência de interesse recursal. 2. Não há nulidade por falta de intimação prévia quando o administrado exerce o contraditório no Recurso e não demonstra prejuízo concreto. 3. Não existe regra vigente que condicione o registro de reclamação na Anatel à validação de protocolo de Ouvidoria da Prestadora. 4. É legítima a descontinuidade de projeto-piloto de validação por API quando a área técnica demonstra falhas persistentes de confiabilidade, disponibilidade e efetividade da solução."
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXIV, a; Lei nº 9.472/1997, art. 3º, XI; Lei nº 9.784/1999, art. 2º e art. 55; CPC, art. 15 e art. 996; Resolução Anatel nº 746/2021, art. 16, art. 44, art. 45 e art. 49; Resolução Anatel nº 612/2013, art. 103 e art. 115, § 5º.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 78/2026/OP (SEI nº 16150454), integrante deste acórdão, não conhecer do Recurso interposto tendo em vista o não atendimento do pressuposto de interesse recursal.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 24/08/2026, às 13:42, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16168252 e o código CRC 2AACF81D.
+ | 
+Referência: Processo nº 53500.026960/2023-20 | 
+SEI nº 16168252 |

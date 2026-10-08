@@ -1,0 +1,41 @@
+SEI/ANATEL - 15223515 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 14
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 40, de 24 de fevereiro de 2026
+Processo nº 53500.000883/2026-21
+Recorrente/Interessado: IEZ! TELECOM LTDA., UNIFIQUE TELECOMUNICAÇÕES S.A., BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A, LIGGA TELECOMUNICAÇÕES S.A., SERCOMTEL S.A. TELECOMUNICAÇÕES
+CNPJ nº 37.278.419/0001-10, nº 02.255.187/0001-08, nº 04.601.397/0001-28, nº 04.368.865/0001-66 e nº 01.371.416/0001-89
+Conselheiro(a) Relator(a): Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. USO DE RADIOFREQUÊNCIA EM CARÁTER SECUNDÁRIO NA FAIXA DE 700 MHZ. PRORROGAÇÃO DO PRAZO PARA INÍCIO DE OPERAÇÃO. SUSPENSÃO DE OUTORGAS A TERCEIROS. PEDIDO PARCIALMENTE DEFERIDO.
+I. CASO EM EXAME
+Dois pedidos conjuntos, de IEZ! TELECOM LTDA., UNIFIQUE TELECOMUNICAÇÕES S.A., BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A., LIGGA TELECOMUNICAÇÕES S.A. e SERCOMTEL S.A. TELECOMUNICAÇÕES, para: (i) prorrogar, em caráter excepcional, o prazo de início de utilização fixados nos Atos nº 9.823, nº 9.828, nº 10.073, nº 10.460, nº 10.461, nº 10.644, nº 10.648 e nº 10.674, emitidos em decorrência do Acórdão nº 148/2024; e (ii) não autorizar a terceiros o uso em caráter secundário de radiofrequências na faixa de 700 MHz que serão objeto de futura licitação, até a definição dos vencedores do certame e suas autorizações de uso em caráter primário.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se é possível prorrogar, em caráter excepcional, os prazos para início da utilização efetiva das radiofrequências autorizadas em caráter secundário nas faixas em questão; e (ii) saber se é adequada a suspensão de novas outorgas em caráter secundário a terceiros nas referidas faixas até a conclusão do Leilão de 700 MHz previsto.
+III. RAZÕES DE DECIDIR
+1. A Anatel tem competência para disciplinar o uso do espectro e regular sua utilização eficiente e adequada.
+2. O art. 45 do Regulamento de Uso do Espectro de Radiofrequências - RUE autoriza a Anatel a prorrogar o prazo de início da utilização efetiva das radiofrequências por não mais que 12 (doze) meses, se o Interessado comprovar caso fortuito ou força maior.
+3. No caso concreto, a postergação do certame das subfaixas de 700 MHz, previsto para o segundo semestre de 2025, nos termos da Agenda Regulatória 2025/2026, não se configura como caso fortuito ou força maior por não impedir o cumprimento da obrigação.
+4. Contudo, o contexto excepcional que viabilizou as outorgas em caráter secundário nessas faixas, voltado a acelerar a sua ocupação, admite a extensão do prazo para início da utilização efetiva por ser medida que viabilizará o mais rápido proveito para a população quando considerado o cronograma do Edital de Licitação das subfaixas de 700 MHz, recém aprovado pelo Tribunal de Contas da União - TCU.
+5. Trata-se, contudo, de medida extraordinária, cujo precedente não serve como parâmetro para solicitações similares no futuro, especialmente no caso de outorgas em caráter primário decorrentes de licitação, em que a aplicação integral do art. 45 do RUE se impõe.
+6. De outro lado, o regime excepcional previsto nos Acórdãos nº 39/2024 (SEI nº 11539456) e nº 148/2024 (SEI nº 12160057) cumpriu integralmente o seu desiderato, não se justificando mais a sua manutenção, dada a proximidade de publicação do Edital de Licitação das subfaixas de 700 MHz.
+IV. DISPOSITIVO E TESE
+Pedido parcialmente deferido.
+Deferida a prorrogação dos prazos máximos para uso efetivo de radiofrequências estabelecidos nos Atos nº 9.823, nº 9.828, nº 10.073, nº 10.460, nº 10.461, nº 10.644, nº 10.648 e nº 10.674 por 12 (doze) meses ou até a data de autorização de uso em caráter primário das faixas de frequências em questão, o que ocorrer primeiro.
+Vedadas novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do Serviço Móvel Pessoal, com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456), com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 12160057).
+Tese de julgamento: "1. A Anatel tem competência para disciplinar e regular a utilização eficiente e adequada do espectro de radiofrequências, considerado o interesse público. 2. Em situação excepcional como a dos autos, é possível prorrogar o prazo de utilização efetiva de radiofrequências autorizadas em caráter secundário por mais 12 (doze) meses ou até as datas de autorização de uso em caráter primário das faixas, o que ocorrer primeiro. 3. Cumprido o desiderato do regime excepcional previsto nos Acórdãos nº 39 (SEI nº 11539456) e nº 148 (SEI nº 12160057), devem ser vedadas novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do serviço móvel pessoal com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456), com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 12160057)."
+Dispositivos relevantes citados: Lei nº 9.472/1997 - Lei Geral de Telecomunicações - LGT, arts. 1º, 127 e 160; Resolução nº 612/2013 - Regimento Interno da Anatel, art. 39; Resolução nº 671/2016 - Regulamento de Uso do Espectro - RUE, arts. 18 e 45; Portaria nº 642/2013.
+Jurisprudência relevante citada: Anatel, Acórdãos nº 139 e nº 148, Conselho Diretor, 2024.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 16/2026/CL (SEI nº 15076580), integrante deste acórdão:
+a) deferir o pedido de prorrogação dos prazos máximo para utilizar efetivamente as radiofrequências estabelecidos nos Atos nº 9.823 (SEI nº 12191039), nº 9.828 (SEI nº 12191659), nº 10.073 (SEI nº 12220869), nº 10.460 (SEI nº 12272492), nº 10.461 (SEI nº 12273594), nº 10.644 (SEI nº 12292849), nº 10.648 (SEI nº 12293056) e nº 10.674 (SEI nº12295743) por 12 (doze) meses ou até a data de autorização de uso em caráter primário das faixas de frequências em questão, o que ocorrer primeiro; e,
+b) vedar novas outorgas em caráter secundário de blocos nas subfaixas de 708 MHz a 718 MHz e 763 MHz a 773 MHz para a prestação do Serviço Móvel Pessoal, com fulcro na alínea "d" do Acórdão nº 39, de 21 de fevereiro de 2024 (SEI nº 11539456), com a redação que lhe foi dada pelo Acórdão nº 148, de 20 de junho de 2024 (SEI nº 12160057 ).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15223515 e o código CRC F5A43A16.
+ | 
+Referência: Processo nº 53500.000883/2026-21 | 
+SEI nº 15223515 |

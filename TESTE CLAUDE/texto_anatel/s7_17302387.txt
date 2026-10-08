@@ -1,0 +1,186 @@
+SEI/ANATEL - 15469184 - Análise
+Boletim de Serviço Eletrônico em 14/04/2026
+Análise nº 46/2026/AF
+Processo nº 01217.001833/2026-62
+Interessado: AGÊNCIA NACIONAL DE TELECOMUNICAÇÃO - ANATEL
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso Administrativo interposto na Plataforma Integrada de Ouvidoria e Acesso à Informação (Fala.BR).
+EMENTA
+RECURSO ADMINISTRATIVO. TRANSPARÊNCIA ADMINISTRATIVA. LEI DE ACESSO À INFORMAÇÃO. ACESSO A CONTRATOS CELEBRADOS NO ÂMBITO DA EAF E APROVADOS PELO GAISPI. DADOS DE IDENTIFICAÇÃO, VALORES E PRAZOS. INEXISTÊNCIA DE CUSTÓDIA DAS INFORMAÇÕES PELA ANATEL. DEVER DE TRANSPARÊNCIA LIMITADO ÀS INFORMAÇÕES SOB GUARDA DO ÓRGÃO. ENTIDADE PRIVADA DOTADA DE AUTONOMIA. INDICAÇÃO DO ENTE RESPONSÁVEL. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA OCDE SOBRE A NECESSIDADE DE SE DESENVOLVER UMA POSTURA TRANSPARENTE E AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+O caso envolve solicitação formulada na plataforma Fala.BR, em que o requerente pede acesso à íntegra de contratos aprovados pelo Grupo de Acompanhamento da Implantação das Soluções para os Problemas de Interferência na faixa de 3.625 a 3.700 MHz (GAISPI) no âmbito da Entidade Administradora da Faixa de 3,5 GHz (EAF), com dados de identificação, valores e prazos. O pedido foi indeferido nas instâncias inferiores, ante a circunstância de a Anatel não deter tais informações.
+II. QUESTÃO EM DISCUSSÃO
+Discute-se o dever da Anatel de fornecer, nos termos da Lei de Acesso à Informação (Lei nº 12.527/2011), dados contratuais de contratos realizados pela EAF. A controvérsia centra-se em verificar se tais informações encontram-se sob sua custódia, em virtude da supervisão exercida sobre o GAISPI, ou se devem ser requeridas diretamente à entidade privada responsável.
+III. RAZÕES DE DECIDIR
+1. Nos termos do art. 15, caput e § 1º, incs. III e IV, do Decreto nº 7.724/2012, o dever de acesso limita-se às informações disponíveis sob guarda do órgão.
+2. A Anatel não detém os dados solicitados, cuja custódia incumbe à EAF, entidade privada dotada de autonomia. Houve indicação clara do ente competente para tanto. Por sua vez, o recorrente não apresentou fundamentos que infirmem essa conclusão.
+3. O encaminhamento proposto está em conformidade com os objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG). A proposta está alinhada com a meta de incentivar e promover instrumentos de controle social por meio da transparência das atividades no processo regulatório, conforme previsto no planejamento estratégico da Anatel 2023-2027.
+4. A decisão está aderente aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União (CGU) em parceria com o Escritório das Nações Unidas de Serviços para Projetos (UNOPS) e com o Programa das Nações Unidas para o Desenvolvimento (PNUD). A decisão promove instrumentos de controle social e transparência da Agência, alinhando-se, assim às diretrizes e recomendações estabelecidas na publicação.
+5. Em relação ao ambiente regulatório, a OCDE tem recomendado o desenvolvimento de uma postura transparente com os diversos stakeholders no setor regulado, adotando, como premissa, procedimentos internos que assegurem a transparência dos atos e decisões, beneficiando todos os atores setoriais.
+6. A fundamentação encontra-se em sintonia com o Objetivo 16 (meta 16.6) da Agenda 2030 da Organização das Nações Unidas, que busca o desenvolvimento de instituições eficazes, responsáveis e transparentes em todos os seus níveis, bem como à meta brasileira 16.6, devidamente revisada pelo Instituto de Pesquisa Econômica Aplicada (IPEA), que trata de ampliar a transparência, a accountability e a efetividade das instituições.
+IV. DISPOSITIVO E TESE
+Recurso não conhecido.
+Tese de julgamento: "1. O dever de acesso limita-se a informações sob custódia do órgão, em que a supervisão sobre outro ente não implica posse das informações passíveis de fiscalização. 2. Inexistente tal domínio, aplica-se o art. 15, §1º, III e IV, do Decreto nº 7.724/2012."
+Dispositivos relevantes citados: Lei nº 12.527/2011, art. 15; Decreto nº 7.724/2012, art. 15.
+REFERÊNCIAS
+Lei nº 9.784, de 29 de janeiro de 1999 – regula o processo administrativo no âmbito da Administração Pública Federal.
+Lei nº 12.527, de 18 de novembro de 2011 – regula o acesso a informação.
+Decreto nº 7.724, de 16 de maio de 2012 – regulamenta a Lei nº 12.527, de 18 de novembro de 2011, que dispõe sobre o acesso a informações.
+Resolução nº 612, de 29 de abril de 2013 – aprova o Regimento Interno da Anatel (RIA).
+BRASIL. Controladoria-Geral da União. Aplicação da Lei de Acesso à Informação na Administração Pública Federal. 4. ed. Brasília, 2017. Disponível em: CGU. Acesso em: 20 mar. 2024.
+GOMES, Lucas Thevenard; SALINAS, Natasha Shimitt Caccia, SAMPAIO, Patrícia Regina Pinheiro. Propostas para assegurar a efetividade das consultas e audiências públicas nos processos regulatórios. In: VALENTE, Patrícia Rodrigues Pessôa. Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília: 2024, p. 71-84. Disponível em: CGU. Acesso em: 1º de jul. de 2024.
+IPEA. Instituto de Pesquisa Econômica Aplicada. ODS - Metas Nacionais dos Objetivos de Desenvolvimento Sustentável Proposta de Adequação, ipea 2018. Disponível em: IPEA. Acesso em: 8 de nov. 2023.
+OCDE. Organização para Cooperação e Desenvolvimento Econômico. Regulatory Enforcement and Inspections, OECD Best -Practice Principles for Regulatory Policy. Paris: OECD Publishing, 2014. Disponível em: dx.doi. Acesso em: 01 mar. 2023.
+ONU. Organização das Nações Unidas. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: Brasil.un. Acesso em: 14 abr. 2023.
+RELATÓRIO
+Trata-se de Recurso Administrativo, apresentado em 13 de abril de 2026 (SEI nº 15443666), na Plataforma Fala.BR, interposto contra resposta da Superintendência de Outorga e Recursos à Prestação (SOR).
+A demanda teve início em 16 de março de 2026, por meio de manifestação anônima. O solicitante requereu a íntegra dos contratos aprovados pelo GAISPI no âmbito da EAF, desde o início de suas atividades. Pediu, especificamente, CNPJ e nome das contratadas, datas de assinatura, valores, prazos e objetos contratuais. Fundamentou o pedido na Lei nº 12.527/2011 (Lei de Acesso à Informação).
+Em 17 de março de 2026, a Gerência de Canais de Relacionamento com os Consumidores (RCRC) autuou a demanda no SEI e a encaminhou à SOR para análise e resposta (SEI nº 15340141).
+Em 31 de março de 2026, a SOR respondeu por meio de ofício. Informou que o Edital do Leilão do 5G (Edital nº 1/2021) estabeleceu obrigações às vencedoras, no que se inclui a criação da Entidade Administradora da Faixa de 3,5 GHz (EAF). Destacou que a EAF foi constituída como associação privada, sem fins lucrativos, com autonomia administrativa, financeira e decisória, e que sua finalidade é executar projetos de interesse público, como mitigação de interferências e expansão de infraestrutura, e que o edital previu a criação do GAISPI. Quanto a este último, pontuou que o grupo possui função de acompanhamento, orientação e fiscalização das atividades da EAF e que ele atua como instância colegiada, com participação de diversos atores institucionais (SEI nº 15417995).
+Com base nesse modelo, a SOR concluiu que as informações solicitadas deveriam ser requeridas diretamente à EAF. Assim, não apresentou os dados pleiteados.
+Em 1º de abril de 2026, a resposta foi registrada no Fala.BR. Na mesma data, o solicitante interpôs Recurso de 1ª Instância (SEI nº 15430956). Alegou que: a) a resposta não enfrentou o pedido; b) solicitou dados objetivos sobre contratos aprovados pelo GAISPI; c) segundo a própria Anatel, o GAISPI exige informações, relatórios e auditorias da EAF; e d) portanto, haveria custódia das informações no âmbito da Agência, o que permitiria o atendimento do pedido com base na Lei de Acesso à Informação.
+O recurso foi encaminhado à SOR em 2 de abril de 2026 (SEI nº 15443933). Ao reexaminar o caso, a SOR reiterou seu entendimento. Ressaltou novamente que a EAF é entidade privada, responsável pela execução dos projetos e pela gestão das contratações; que o GAISPI exerce apenas função de acompanhamento e fiscalização, sem assumir a titularidade das informações requeridas; e que, assim, o pedido deveria ser dirigido à EAF.
+A resposta ao recurso foi registrada no sistema em 6 de abril de 2026 (SEI nº 15440068). Na mesma data, o solicitante interpôs Recurso de 2ª Instância. Argumentou que há contradição na posição da Anatel. Segundo ele, a Agência afirma que o GAISPI acompanha e fiscaliza continuamente a EAF, exigindo informações detalhadas e, ao mesmo tempo, nega possuir acesso aos documentos solicitados. Para o recorrente, tal posição é ilógica e incompatível com o regime da Lei de Acesso à Informação. Reiterou, assim, o pedido de acesso aos contratos.
+A RCRC encaminhou o recurso à SOR para nova apreciação, por meio de ofício expedido em 06 de abril de 2026 (SEI nº 15443933).
+Em nova manifestação, datada de 07 de abril de 2026 (SEI nº 15444389), a SOR reiterou a fundamentação já trazida anteriormente ao processo.
+No mesmo dia, a SOR, por meio da Matéria para Apreciação do Conselho Diretor nº 274/2026 (SEI nº 15451364), encaminhou o processo à Superintendência Executiva da Anatel (SUE). 
+Em seguida, a SUE, mediante Despacho Ordinatório (SEI nº 15453109), encaminhou o processo à Secretaria do Conselho Diretor da Anatel, o qual por sua vez, foi distribuído para minha relatoria, conforme Certidão de Distribuição (SEI nº 13413533).
+É o relatório.
+DA ANÁLISE
+A fundamentação da presente Análise encontra-se dividida em seis partes. Na primeira, analisa-se a admissibilidade do recurso. Na segunda, aborda-se o seu mérito. Por fim, faz-se a conformação do objeto da presente análise com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), as recomendações de boas práticas regulatórias do Programa de Aprimoramento da Qualidade da Regulação Brasileira (QUALI-REG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE) e com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Admissibilidade
+A instauração e instrução do presente processo atenderam à sua finalidade, com observância dos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784/1999 (Lei de Processo Administrativo - LPA) e a Lei nº 12.527/2011 (Lei de Acesso à Informação - LAI).
+No que se refere aos requisitos de admissibilidade, constata-se que, embora o recorrente possua interesse na reforma da decisão e tenha oferecido o recurso tempestivamente, observando o prazo de 10 (dez) dias descrito no art. 15 da Lei nº 12.527/2011, não houve negativa de acesso a informação.
+Dessa forma, o recurso não deve ser conhecido.
+II - Da Contextualização do Recurso
+Os fatos e fundamentos do presente recurso estão bem delineados no relatório desta Análise.
+Nos termos do art. 15, caput e § 1º, incs. III e IV, do Decreto nº 7.724/2012, que regulamenta o cumprimento da Lei de Acesso à Informação, o órgão público deve fornecê-la quando ela estiver disponível em seus registros. Caso contrário, deve comunicar a inexistência da informação ou indicar o ente que a detenha.
+No presente caso, a SOR já esclareceu que a Anatel não detém as informações requeridas. Os dados solicitados referem-se a contratos celebrados no âmbito da Entidade Administradora da Faixa de 3,5 GHz (EAF). A EAF, por sua vez, é pessoa jurídica de direito privado, dotada de autonomia administrativa, financeira e decisória, e cabe a ela a gestão de suas contratações e de seus registros internos. O fato de o GAISPI exercer função de acompanhamento e fiscalização não implica a transferência da titularidade ou da custódia integral dos documentos produzidos pela EAF. A atuação do Grupo ocorre em nível estratégico e supervisionador. Não há, por isso, incorporação automática de todos os documentos da entidade privada ao acervo informacional da Agência. Para isso entende-se pertinente reproduzir as competências do GAISPI e da EAF:
+Edital nº 1/2021/SOR/SPR/CD-Anatel
+ANEXO IV-A
+COMPROMISSOS ASSOCIADOS À MIGRAÇÃO DA RECEPÇÃO DO SINAL DE TELEVISÃO ABERTA E GRATUITA POR MEIO DE ANTENAS PARABÓLICAS NA BANDA C SATELITAL PARA A BANDA KU, À DESOCUPAÇÃO DA FAIXA DE 3.625 MHZ A 3.700 MHZ e À IMPLEMENTAÇÃO DE REDES PÚBLICAS
+(...)
+3. Para disciplinar e fiscalizar a aplicação dos recursos de que trata o item 1 deste Anexo e seus subitens, a Anatel constituirá o Grupo de Acompanhamento da Implantação das Soluções para os Problemas de Interferência na faixa de 3.625 a 3.700 MHz (GAISPI), coordenado e presidido por Conselheiro Diretor indicado pelo Conselho Diretor da Agência em até 15 (quinze) dias corridos a partir da publicação dos extratos dos Termos de Autorização para Uso de Radiofrequências na Faixa de 3,5 GHz no Diário Oficial da União - DOU.
+(...)
+6. As Proponentes vencedoras deverão constituir, no prazo de até 70 (setenta) dias corridos, a partir da criação do Grupo de que trata o item 3 deste Anexo, Entidade Administradora da Faixa de 3,5 GHz (EAF) com o objetivo de operacionalizar, de forma isonômica e não discriminatória, todos os procedimentos relativos às atividades relacionadas no item 1 deste Anexo.
+(...)
+9. São atribuições do GAISPI, dentre outras listadas neste Edital:
+a) aprovar a indicação do(s) satélite(s) tratada no item 4.3 deste Anexo;
+b) disciplinar e fiscalizar as atividades da EAF conforme as obrigações previstas no presente Edital;
+c) definir a forma e demais aspectos do provimento, pela EAF, de página na Internet e campanha publicitária, inclusive em TV aberta, para informar toda a população sobre o processo de continuidade do livre acesso ao conteúdo audiovisual por satélite;
+d) acompanhar os procedimentos operacionais relacionados às atividades da EAF para atendimento dos objetivos e cronogramas estabelecidos;
+e) coordenar os processos negociais que permitam ao Conselho Diretor da Anatel dirimir eventuais conflitos que venham a ocorrer nos procedimentos relativos às atividades da EAF;
+f) aprovar o cronograma operacional de atividades da EAF;
+g) discutir e aprovar as soluções técnicas relativas às medidas para assegurar a continuidade do livre acesso ao conteúdo audiovisual por satélite;
+h) discutir e aprovar as soluções técnicas relativas às medidas para solucionar questões de interferências às estações profissionais operando na faixa 3.700 MHz a 4.200 MHz;
+i) harmonizar essa solução, de forma a adotar arranjo que favoreça a convivência harmônica entre sistemas, o proveito social proporcionado pelos serviços ofertados e o aproveitamento de ganhos de escala visando à inclusão digital;
+j) resguardar, sempre que possível, a competitividade e a diversidade de fornecedores de serviços e equipamentos, bem como preservar a utilização de satélite brasileiro, nos termos da regulamentação;
+k) propor os critérios de utilização do saldo de recursos remanescentes de que trata o item 10 deste Anexo;
+l) atuar preventivamente, caso necessário, para dirimir eventuais problemas técnicos nos processos de que trata o item 1 deste Anexo;
+m) aprovar os critérios e procedimentos para remanejamento das estações vinculadas às exploradoras de satélites, brasileiros e estrangeiros, cujos direitos de exploração contemplam a faixa de 3.625 MHz a 3.700 MHz e para as quais se identificou o efetivo uso da faixa no Brasil até o dia 1º de abril de 2021;
+n) aprovar o seu regimento interno, que estabelecerá as regras de organização, instalação e deliberação das matérias que lhe serão atribuídas, assegurada sua competência residual para fins de resolução dos casos não previstos neste Edital.
+o) definir os critérios para implantação da rede do Programa Amazônia Integrada e Sustentável - PAIS, que compõe o Programa Norte Conectado de que trata o item 1.3 deste Anexo;
+p) definir os critérios para implantação da Rede Privativa de Comunicação da Administração Pública Federal de que trata o item 1.4 deste Anexo;
+q) definir os critérios para a antecipação do início do uso da subfaixa de radiofrequências de 3.300 MHz a 3.700 MHz de que trata o item 6.3.1 do Anexo IV, e decidir sobre a antecipação.
+(...)
+14. A EAF deve executar as seguintes atividades, dentre outras definidas pelo GAISPI:
+a) gerir e empenhar os recursos referidos no item 2 deste Anexo, pagos na forma do item 8 deste Anexo, observando os princípios da economicidade, modicidade, eficiência, probidade administrativa e ética, inclusive para utilização do saldo de recursos remanescente voltado à execução dos projetos a que se refere o item 10.1 deste Anexo;
+b) propor soluções técnicas que permitam assegurar a continuidade do livre acesso ao conteúdo audiovisual por satélite;
+c) implementar as soluções técnicas nas modalidades aprovadas pelo GAISPI, conforme corresponda;
+d) promover, em seu âmbito ou mediante a contratação de terceiros, capacitação dos recursos humanos, quando necessário, para garantir a correta operação dos novos equipamentos adquiridos ou adaptados.
+e) prover, conforme definido pelo GAISPI, página na Internet e campanha publicitária, inclusive em TV aberta, para informar toda a população sobre o processo de continuidade do livre acesso ao conteúdo audiovisual por satélite.
+f) prover, conforme definido pelo GAISPI, central de atendimento telefônico gratuita e atendimento pela Internet para dirimir dúvidas e para auxiliar toda a população em casos de eventuais interferências prejudiciais oriundas da implantação das redes SMP na faixa de 3,5 GHz, dentre outros.
+g) fornecer informações à Agência, conforme definição do GAISPI;
+h) operacionalizar a mitigação de interferência de que trata o item 1.2 deste Anexo, conforme procedimento definido pelo GAISPI.
+i) operacionalizar a migração de que trata o item 1.1 deste Anexo, conforme especificação e forma de distribuição definida pelo GAISPI.
+j) elaborar, para aprovação do GAISPI, cronograma para execução da migração de que tratam os itens 1.1 e 1.2 deste Anexo.
+k) cumprir integralmente o planejamento e o cronograma, entre outras determinações do GAISPI.
+l) implantar, por meios próprios ou por terceiros, a rede do Programa Amazônia Integrada e Sustentável - PAIS, que compõe o Programa Norte Conectado de que trata o item 1.3 deste Anexo, observando as diretrizes estabelecida pelo GAISPI;
+m) implantar, por meios próprios ou por terceiros, a Rede Privativa de Comunicação da Administração Pública Federal de que trata o item 1.4 deste Anexo, observando as diretrizes estabelecida pelo GAISPI;
+n) propor soluções técnicas que permitam o melhor aproveitamento dos recursos para implantação dos itens 1.3 e 1.4 deste Anexo;
+o) obedecendo os critérios definidos pelo GAISPI, elaborar os estudos para a antecipação do início do uso da subfaixa de radiofrequências de 3.300 MHz a 3.700 MHz de que trata o item 6.3.1 do Anexo IV.
+14.1. A EAF permanece como única responsável perante a Agência pela execução das atividades a ela atribuídas, ainda que essas atividades sejam executadas por terceiros. (negritou-se)
+Assim, à luz das disposições normativas acima mencionadas, o Gaispi detém atribuição de disciplinar e fiscalizar as atividades da EAF. Verifica-se que não compete ao GAISPI a contratação dos fornecedores para a execução dos projetos, mas à EAF. Assim, agiu corretamente a áreas técnica da Anatel ao informar que não possui a informação solicitada, uma vez que indicou o ente responsável por sua detenção. Desse modo, se conclui que o dever legal foi integralmente observado.
+Ressalte-se, ainda, que o Recorrente não apresentou elementos novos capazes de afastar essa conclusão. Limitou-se a reiterar argumentos já examinados. Não demonstrou que a Anatel detenha, de forma direta e específica, os documentos solicitados. Tampouco comprovou eventual obrigação legal de guarda desses contratos pela Agência.
+Não se verifica, portanto, omissão, negativa indevida ou restrição ilegítima de acesso à informação. Ao contrário, houve resposta fundamentada e indicação adequada do ente competente.
+Diante do exposto, conclui-se que as informações solicitadas foram devidamente apresentadas e que o recurso não deve ser conhecido.
+III - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE igualmente fornece uma orientação para ajudar os formuladores de políticas a avaliar e melhorar a estrutura legal, regulatória e institucional para governança corporativa, com o objetivo de apoiar a confiança e integridade do mercado, eficiência econômica, crescimento sustentável e estabilidade financeira. Tais princípios de governança são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, a transparência dos atos administrativos da Anatel assegura segurança jurídica ao mercado regulado e aos cidadãos, uma vez que a Agência já indicou adequadamente onde as informações requeridas podem ser obtidas.
+IV - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+Expõe-se, ainda, que, no âmbito do PRO-REG, o Decreto nº 12.150, de 20 de agosto de 2024, instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada está alinhada com esses objetivos, especialmente aqueles descritos nos incisos VI e VII acima, na medida em que está em consonância com os objetivos de incentivar e promover instrumentos de controle social por meio da transparência das atividades no âmbito do processo regulatório, previsto no planejamento estratégico da Anatel 2023-2027.
+V - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências sobre os mecanismos de controle social e transparência, além de debates sobre os desafios e oportunidades nessa temática. Na referida obra, em especial no capítulo 4 que trata da Propostas para assegurar a efetividade das consultas e audiências públicas nos processos regulatórios, as autoras Natasha Schmitt Caccia Salinas e Patrícia Regina Pinheiro Sampaio e o autor Lucas Thevenard Gomes (2024, p.80) destacam que:
+Dados abertos, em formato processável, aumentam a transparência da administração, facilitando a realização de análises quantitativas e qualitativas pelos interessados, bem como fomentando pesquisas acadêmicas e empoderando indivíduos e entidades da sociedade civil organizada para se engajar de forma mais efetiva com a governança pública.
+(...)
+Nesse contexto, a atuação transparente da Anatel no presente caso, com indicação clara e precisa do detentor da informação solicitada, atende ao interesse público. 
+VI - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento contida na presente Análise relaciona-se com o seguinte Objetivo da Agenda 2030:
+Objetivo 16 - Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis, particularmente com a Meta 16.6, que trata justamente do desenvolvimento de instituições eficazes, responsáveis e transparentes em todos os seus níveis. Isso porque a liberação, pela Anatel, de acesso ao processo a todos os cidadãos garante a transparência dos seus atos, conferindo e ampliando a segurança jurídica na sua atividade regulatória.
+A agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+No caso analisado, destaca-se a Meta Nacional 16.6 dos ODS, que busca ampliar a transparência, a prestação de contas e a efetividade das instituições públicas em todos os níveis. Tal promoção eleva a satisfação societal com os serviços públicos. Aqui, embora a Anatel não detenha as informações requeridas, o recorrente foi adequadamente orientado sobre o ente custodiante.
+O Brasil está empenhado no cumprimento dessas metas, sendo relevante o estudo desenvolvido pelo IPEA, quanto à adequação das metas globais da Agenda 2030 para o Desenvolvimento Sustentável à realidade brasileira. Trata-se de um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento.
+Com essa iniciativa, o Brasil ganha destaque no sentido de ter à sua disposição um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por não conhecer Recurso Administrativo.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/04/2026, às 13:02, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15469184 e o código CRC 5444A262.
+ | 
+Referência: Processo nº 01217.001833/2026-62 | 
+SEI nº 15469184 |

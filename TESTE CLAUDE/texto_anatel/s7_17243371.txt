@@ -1,0 +1,1109 @@
+SEI/ANATEL - 15415313 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 42/2026/AF
+Processo nº 53500.061122/2021-31
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso Administrativo interposto por Telefônica Brasil S.A. em face do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), de 8 de março de 2022, por meio do qual lhe foi aplicada sanção de multa no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão de infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, incs. I e XIII, 14, 15, 58, § 2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PADO. SANÇÃO POR INFRAÇÕES AO RSCM E AO RGC 2014. RECURSO CONHECIDO E NÃO PROVIDO. REFORMA DE OFÍCIO DA DECISÃO.
+I. CASO EM EXAME
+O recurso. Recurso Administrativo interposto por Telefônica Brasil S.A. contra Despacho Decisório da Superintendência de Controle de Obrigações que aplicou multa de R$ 1.668.210,50 por infrações ao art. 67, § 1º, do RSCM e aos arts. 3º, I e XIII, 14, 15, 58, § 2º, 66, 85 e 95 do RGC.
+Fatos relevantes. O Pado foi instaurado com base em achados de fiscalização sobre cobrança indevida, descumprimento de oferta, cobrança após cancelamento, cobrança durante suspensão, cobrança de multa de permanência e ausência de devolução em dobro.
+As decisões anteriores. A decisão de primeira instância descaracterizou parte das condutas e sancionou as demais com multa. Em sede recursal, a área técnica propôs a descaracterização da infração ao art. 3º, XIII, do RGC, a conversão da multa em advertência quanto ao art. 66 do RGC e o recálculo das multas. Após diligência complementar, a área técnica revisou a apuração da infração ao art. 14 do RGC e reduziu o valor total da sanção.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se o recurso e a petição extemporânea devem ser conhecidos; (ii) saber se é possível o agravamento da sanção em sede recursal; (iii) saber se é cabível novo despacho decisório com aplicação do fator de redução do art. 33, § 5º, do RASA; (iv) saber qual disciplina do RASA rege a dosimetria no caso; e (v) saber quais infrações restaram materialmente caracterizadas e quais sanções devem ser aplicadas.
+III. RAZÕES DE DECIDIR
+ O recurso é admissível. A petição extemporânea pode ser conhecida.
+ É possível a reformatio in pejus em Recurso Administrativo. Exige-se prévia ciência do interessado e manifestação da PFE/Anatel.
+ Não cabe expedição de novo despacho decisório para permitir a incidência do fator de redução do art. 33, § 5º, do RASA após juízo de retratação. Incide o Enunciado nº 23 da Súmula da Anatel.
+ Aplica-se ao caso o RASA com as alterações promovidas pela Resolução nº 746/2021. O processo ainda pendia de decisão de primeira instância quando da entrada em vigor da norma.
+ A infração ao art. 3º, XIII, do RGC foi descaracterizada por ausência de materialidade. A prestadora havia comprovado a regularidade do ponto ainda na fase de fiscalização.
+ Mantém-se a infração ao art. 3º, I, do RGC nas vertentes relativas a valores em desacordo com a oferta e descumprimento das condições ofertadas. A vertente referente a reajuste superior ao previsto em contrato foi descaracterizada.
+ Devidamente caracterizada a infração ao art. 14 do RGC, pois ocorreu cobrança posterior ao pedido de cancelamento. A diligência complementar apurou casos de cobrança indevida e promoveu o recálculo da multa.
+ Devidamente caracterizadas e sancionadas as demais infrações: (i) ao art. 67, § 1º, do RSCM; (ii) ao art. 15 do RGC; (iii) ao art. 58, § 2º, do RGC; (iv) ao art. 85 do RGC; e (v) ao art. 95 do RGC.
+ Quanto ao art. 66 do RGC, a sanção de multa deve ser convertida em advertência, diante das circunstâncias concretas do caso.
+ A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+ A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União (CGU) em parceria com o Escritório das Nações Unidas de Serviços para Projetos (UNOPS) e com o Programa das Nações Unidas para o Desenvolvimento (PNUD), por reafirmar, no caso concreto, a promoção da segurança jurídica no setor de telecomunicações.
+ A abordagem proposta alinha-se às melhores práticas regulatórias da OCDE, na medida em que reafirma uma governança eficiente das relações entre usuários e prestadoras, com foco na resolução consensual de eventuais contendas.
+ A decisão contribui para a promoção do Objetivo 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas, na medida em que busca incentivar a harmonização das relações entre fornecedores e consumidores por meio da consensualidade.
+ O recurso não comporta provimento. A decisão deve ser reformada de ofício para excluir infrações descaracterizadas, converter em advertência a sanção do art. 66 do RGC e recalcular a multa total.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e, no mérito, não provido. Petição conhecida e indeferida. Reforma de ofício parcial da decisão.
+Tese de julgamento: "1. É possível o agravamento da sanção em sede recursal administrativa, desde que assegurados o contraditório e a ampla defesa e ouvida a PFE/Anatel. 2. É inaplicável o fator de redução do art. 33, § 5º, do RASA na hipótese de novo despacho decisório decorrente de juízo de retratação. 3. Aplica-se aos processos pendentes de decisão de primeira instância o RASA com as alterações promovidas pela Resolução nº 746/2021. 4. Mantidas as infrações aos arts. 67, § 1º, do RSCM e 3º, I, 14, 15, 58, § 2º, 85 e 95 do RGC, com conversão em advertência da sanção relativa ao art. 66 do RGC. Recálculo da multa aplicada."
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 64; Lei nº 9.472/1997; Resolução nº 589/2012, art. 12, II, art. 20, V, e art. 33, § 5º; Resolução nº 612/2013, arts. 115, § 1º, b, 116 e 125, §§ 3º e 4º; Resolução nº 614/2013, art. 67, § 1º; Resolução nº 632/2014, arts. 3º, I e XIII, 14, 15, 58, § 2º, 66, 85 e 95; Resolução nº 746/2021, art. 5º; Enunciados nº 21, nº 22 e nº 23 da Súmula da Anatel.
+Jurisprudência relevante citada: STF, ARE 641.054 AgR, Rel. Min. Luiz Fux, Primeira Turma, j. 22.05.2012, DJe 26.06.2012; Anatel, Acórdão nº 14, Processo nº 53500.002607/2014-63, Rel. Conselheiro Moisés Queiroz Moreira, Conselho Diretor, j. 06.02.2023; Anatel, Acórdão nº 274, Processo nº 53500.033378/2019-33, Rel. Conselheiro Alexandre Freire, Conselho Diretor, j. 04.10.2024; Anatel, Acórdão nº 131, Processo nº 53500.002921/2020-94, Rel. Conselheiro Alexandre Freire, Conselho Diretor, j. 23.05.2025.
+REFERÊNCIAS
+Legislação e Normas:
+Lei nº 8.078, de 11 de setembro de 1990, o Código de Defesa do Consumidor (CDC).
+Lei nº 9.472, de 16 de julho de 1997, a Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999, a Lei do Processo Administrativo (LPA).
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Resolução Anatel nº 589, de 07 de maio de 2012, que aprovou o Regulamento de Aplicação de Sanções Administrativas (RASA).
+Resolução Anatel nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel (RIA).
+Resolução Anatel nº 614, de 28 de maio de 2013, que aprovou o Regulamento do Serviço de Comunicação Multimídia (RSCM).
+Resolução Anatel nº 632, de 07 de março de 2014, que aprovou o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC 2014).
+Resolução Anatel nº 746, de 22 de junho de 2021, que aprovou o Regulamento de Fiscalização Regulatória (RFR).
+Súmula da Anatel, Enunciado nº 21, de 10 de outubro de 2017.
+Súmula da Anatel, Enunciado nº 22, de 18 de outubro de 2019.
+Súmula da Anatel, Enunciado nº 23, de 29 de novembro de 2021.
+Julgados e Precedentes:
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL) (Brasil) (Conselho Diretor). Acórdão nº 14, de 06 de fevereiro de 2023, Processo nº 53500.002607/2014-63. Relator: Conselheiro Moisés Queiroz Moreira. Brasília, 2023.
+_____. Acórdão nº 274, de 04 de outubro de 2024, no Processo nº 53500.033378/2019-33. Relator: Conselheiro Alexandre Freire. Brasília, 2024.
+_____. Acórdão nº 131, de 23 de maio de 2025, no Processo nº 53500.002921/2020-94. Relator: Conselheiro Alexandre Freire. Brasília, 2025.
+SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) (Brasil). Embargos de Divergência no Recurso Especial nº 1.413.542/RS. Relatora: Ministra Maria Thereza de Assis Moura. Relator para acórdão: Ministro Herman Benjamin. Brasília, 21 out. 2020. Disponível em: STJ.Jus. Acesso em: 28 jul. 2025.
+SUPREMO TRIBUNAL FEDERAL (STF) (Brasil). Acórdão no Agravo Regimental no Recurso Extraordinário nº 641.054/RJ. Relator: Ministro Luiz Fux. Brasília, DJe 25 jun. 2012. Disponível em: STF. Acesso em: 18 jun. 2024.
+Demais referências:
+MOREIRA, Egon Bockmann. Processo administrativo: princípios constitucionais e a Lei nº 9.784/1999 - com especial atenção à LINDB. 6. ed. Belo Horizonte: Fórum, 2022.
+OCDE. Organização para Cooperação e Desenvolvimento Econômico. Recommendation of the Council on Principles of Corporate Governance, OECD/LEGAL/0413, 2023. Disponível em: Oecd. Acesso em: 10 jul. 2024.
+ONU. Organização das Nações Unidas. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: brasil.org. Acesso em: 24 abr. 2024.
+VALENTE, Patrícia Rodrigues Pessôa. Autonomia Decisória. In: VALENTE, Patrícia Rodrigues Pessôa (org.). Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024, p. 49-55. Disponível em: CGU. Acesso em: 30 de abr. de 2024.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por Telefônica Brasil S.A. em face do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), de 08 de março de 2022, por meio do qual lhe foi aplicada sanção de multa no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão de infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, incs. I e XIII, 14, 15, 58, § 2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC 2014), aprovado pela Resolução nº 632, de 7 de março de 2014.
+O Procedimento para Apuração de Descumprimento de Obrigações (Pado) foi instaurado em 03 de setembro de 2021, por meio do Despacho Ordinatório de Instauração nº 44/2021/CODI/SCO (SEI nº 7312415), em que, a partir dos achados constantes do Relatório de Fiscalização nº 0414/2019/GR01, constante do Processo de Fiscalização / Fiscalização Regulatória nº 53504.012680/2018-37, imputaram-se as seguintes condutas à ora Recorrente:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração ao
+ | 
+ 1
+ | 
+ Houve cobrança de valores referentes à prestação de serviço durante a suspensão a pedido.
+ | 
+ art. 67, § 1º, do anexo à Resolução nº 614/2013
+ | 
+ 2
+ | 
+ Valores cobrados não estavam de acordo com as condições ofertadas e contratadas.
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ Não foram respeitadas as condições da oferta contidas na sua respectiva documentação.
+ | 
+ Reajuste de valores superior ao previsto em contrato.
+ | 
+ 3
+ | 
+ Houve cobrança de serviços não solicitados pelo consumidor.
+ | 
+ art. 3º, XIII, do anexo à Resolução nº 632/2014
+ | 
+ 4
+ | 
+ Houve cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente.
+ | 
+ art. 14 do anexo à Resolução nº 632/2014
+ | 
+ 5
+ | 
+ Cobrança de serviços prestados após o prazo de processamento do pedido de rescisão automático, exceto o referente aos serviços usufruídos nesse período.
+ | 
+ art. 15 do anexo à Resolução nº 632/2014
+ | 
+ 6
+ | 
+ As condições do Contrato de Permanência contidas na respectiva documentação não foram respeitadas.
+ | 
+ art. 58, § 2º, do anexo à Resolução nº 632/2014
+ | 
+ 7
+ | 
+ Reajuste de valores em prazo inferior a 12 (doze) meses.
+ | 
+ art. 65 do anexo à Resolução nº 632/2014
+ | 
+ 8
+ | 
+ Truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais.
+ | 
+ art. 66 do anexo à Resolução nº 632/2014
+ | 
+ 9
+ | 
+ O faturamento não corresponde a 30 dias de prestação do serviço.
+ | 
+ art. 73 do anexo à Resolução nº 632/2014
+ | 
+ 10
+ | 
+ As informações do Relatório Detalhado não foram apresentadas de forma adequada.
+ | 
+ art. 74, V, VI e VIII "d", do anexo à Resolução nº 632/2014
+ | 
+ 11
+ | 
+ O documento de cobrança foi entregue ao Consumidor com antecedência inferior a 5 (cinco) dias da data de vencimento.
+ | 
+ art. 76 do anexo à Resolução nº 632/2014
+ | 
+ 12
+ | 
+ A Prestadora não enviou, mediante solicitação do consumidor, documento de cobrança com, no mínimo, o demonstrativo dos valores parciais e o valor total para pagamento, escritos em braile.
+ | 
+ art. 76, § 5º, do anexo à Resolução nº 632/2014
+ | 
+ 13
+ | 
+ Não houve devolução em dobro, acrescido de correção, de valores cobrados indevidamente.
+ | 
+ art. 85 do anexo à Resolução nº 632/2014
+ | 
+ 14
+ | 
+ Houve cobrança indevida durante o período de suspensão total do plano.
+ | 
+ art. 95 do anexo à Resolução nº 632/2014
+ | 
+Em 07 de outubro de 2021, a Recorrente apresentou Defesa (SEI nº 1348858), alegando os seguintes pontos:
+as irregularidades para os itens 2 (terceira conduta), 3 e 9, do Despacho de instauração, já haviam sido descaracterizadas no Informe nº 49/2020/CPAE/SCP (SEI nº 5813521);
+eventual sanção deve ser, no máximo, de advertência, seja em razão do art. 12, inc. II, do RASA, seja pela baixa reprovabilidade e ofensividade das condutas atribuídas;
+os sequenciais 10, 11 e 12 do Despacho de Instauração não estão caracterizados;
+os sequenciais 1, 2, 4, 5, 6 e 13 foram solucionados antes da instauração do Pado;
+para o sequencial 7, o processo se encontra viciado, pois a fiscalização concluiu pela regularidade da conduta; e
+as irregularidades relacionadas aos sequenciais 8 e 14 foram solucionadas e são inexpressivas.
+Ao fim, pede:
+a concessão de prazo mínimo de 90 (noventa) dias para que a área competente possa emitir certidão acerca do cumprimento do Plano de Ação lavrado nos autos do Processo nº 53504.012680/2018-37;
+a descaracterização de infrações;
+subsidiariamente, a aplicação de sanção de advertência; e
+subsidiariamente, a aplicação de atenuantes previstas no art. 20 do RASA.
+Em 08 de outubro de 2021, foi encerrada a instrução processual, conforme Certidão (SEI nº 7521116).
+Em 08 de novembro de 2021, a Recorrente apresentou Alegações Finais (SEI nº 7634780), nas quais sustenta que o encerramento da instrução processual ocorreu de maneira prematura e sem justificativa, pois não houve manifestação da Anatel sobre a defesa nem delimitação dos pontos controvertidos. Reforça e faz remissão, ainda, às teses expostas em defesa, como a descaracterização dos itens 10, 11 e 12, e a aplicação de sanção de advertência, especialmente quanto às irregularidades corrigidas durante a execução do Plano de Ação.
+Em 21 de dezembro de 2021, a Recorrente protocolizou petição (SEI nº 7839130), por meio da qual faz juntada de cópia do Informe nº 108/2021/CPAE/SCP (SEI nº 7839131), defendendo que a Anatel teria atestado o cumprimento do Plano de Ação apresentado.
+Em 08 de março de 2022, por meio do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), a Recorrente foi condenada, em primeira instância administrativa, nos seguintes termos:
+Despacho Decisório nº 11/2022/CODI/SCO:
+O SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a disposta no art. 158, inciso IV, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do processo em epígrafe, instaurado em desfavor da Telefônica Brasil S.A., CNPJ/MF nº 02.558.157/0001-62, prestadora do Serviço de Comunicação Multimídia (SCM), para apurar indícios de descumprimentos ao Regulamento do Serviço de Comunicação Multimídia - RSCM, aprovado pela Resolução nº 614, de 28 de maio de 2013 e ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014;
+CONSIDERANDO o teor do Informe nº 20/2022/CODI/SCO (SEI 7946788);
+DECIDE:
+1. Aplicar à prestadora a sanção de MULTA no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão dos descumprimentos ao art. 67, §1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, I e XIII, 14, 15, 58, §2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do posterior ressarcimento aos usuários indevidamente cobrados, nos termos do art. 85 do RGC.
+[Grifos no original]
+O Despacho Decisório adotou a fundamentação do Informe nº 20/2022/CODI/SCO (SEI nº 7946788), em que se teceram as seguintes considerações:
+não houve cerceamento de defesa, pois a Recorrente teve conhecimento preciso das imputações realizadas e não teve provas indeferidas, sendo desnecessário que haja manifestação sobre a defesa anteriormente à fase decisória do Pado;
+alegação de apresentação de um Plano de Ação no curso da ação de fiscalização e de sua aceitação formal não afasta a punibilidade das condutas investigadas;
+a aplicação da pena de advertência deve se dar à luz da redação do RASA anteriormente à redação dada pelo RFR, pois as condutas investigadas são anteriores a 2021;
+as seguintes condutas devem ser descaracterizadas:
+por ausência de materialidade:
+art. 65 do RGC 2014 (sequencial 7), concernente ao reajuste dos valores das tarifas ou preços em prazos inferiores a 12 (doze) meses, por ausência de materialidade;
+art. 73 do RGC 2014 (sequencial 9), sobre o faturamento em período não correspondente ao período de 30 (trinta dias);
+art. 76 do RGC 2014 (sequencial 11), relativa ao prazo para envio do documento de cobrança; e
+art. 76, § 5º, do RGC 2014 (sequencial 12), que trata das formalidades para os documentos de cobrança enviados em braille, por ausência de materialidade quanto ao SCM, destacando-se que a constatação relacionada ao STFC já é objeto de apuração em procedimento específico;
+por atipicidade: art. 74 do RGC 2014 (sequencial 10), relativas ao documento de cobrança, pelos seguintes fundamentos:
+ Inciso
+ | 
+ Fundamento
+ | 
+ V
+ | 
+ A prestadora não tem o dever de indicar a quantidade de dias em atraso.
+ | 
+ VI
+ | 
+ A prestadora não é obrigada a indicar os minutos de interrupção na fatura.
+ | 
+ VIII, alín. "d"
+ | 
+ A fiscalização limitou-se a analisar apenas o índice informado e o valor empregado no cálculo, sem examinar a ausência de comunicação acerca do reajuste.
+ | 
+as condutas a seguir devem ser sancionadas, em caráter pontual;
+art. 67, § 1º, do RSCM (sequencial 1), referente à proibição de cobrança para a suspensão do serviço contratado, para 02 (dois) usuários, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), com a exclusão de outras, ante a ausência de reparação do dano, e sem aplicação de sanção de advertência, ante o seu caráter grave decorrente da vantagem direta à recorrente;
+art. 3º, inc. I, do RGC 2014 (sequencial 2):
+vertentes 1 (valores cobrados em desacordo com as condições ofertadas e contratadas) e 2 (desrespeito) às condições da oferta contidas na sua respectiva documentação): em relação a 24 (vinte e quatro) para a vertente 1 e a 31 (trinta e um) usuários para a vertente 2, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), com a exclusão de outras, ante a ausência de reparação do dano, e sem aplicação de sanção de advertência, ante o seu caráter grave decorrente da vantagem direta à recorrente; e
+vertente 3 (referente à cobrança de chamada em valores superiores à oferta e contratação): em relação a 8 (oito) usuários, sem aplicação de atenuante, ante a ausência de reparação do dano;
+art. 3º, inc. XIII, do RGC 2014 (sequencial 3), referente ao fornecimento do pacote "Serviços Digitais" sem prévia solicitação, para 1.941.850 (um milhão, novecentos e quarenta e um mil, oitocentos e cinquenta) usuários, sendo 1.053.494 (um milhão, cinquenta e três mil quatrocentos e noventa e quatro) clientes do PLANO VIVO FIBRA INTERNET 15 Mbps e 888.356 (oitocentos e oitenta e oito mil trezentos e cinquenta e seis) do plano PLANO VIVO FIBRA INTERNET 25 Mbps, sem aplicação de atenuante, por se tratar de infração média, com vantagem direta ao infrator;
+art. 14 do RGC 2014 (sequencial 4), relativa à cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente, com 7.399 (sete mil, trezentos e noventa e nove) usuários atingidos, sem aplicação de atenuantes e sem conversão em advertência;
+art. 15 do RGC 2014 (sequencial 5), referente à cobrança indevida de serviços prestados após o prazo de processamento do pedido de rescisão automático, para um único usuário, sem aplicação de atenuantes e sem conversão em advertência;
+art. 58, § 2º, do RGC 2014 (sequencial 6), que trata da observância das condições de permanência contratualmente estabelecidas, para 05 (cinco) usuários, sem aplicação de atenuantes e sem conversão em advertência;
+art. 66 do RGC 2014 (sequencial 8), que versa sobre o truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais, para um usuário, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), sem conversão em advertência, ante a vantagem direta à Recorrente;
+art. 85 do RGC 2014 (sequencial 13), omissão na devolução em dobro de valores cobrados indevidamente, devidamente atualizados, para 7.473 (sete mil, quatrocentos e setenta e três) usuários, sendo possível estimar a vantagem auferida pela prestadora apenas em relação a 13 (treze) usuários, no valor total de R$ 37,61; e
+art. 95 do RGC 2014 (sequencial 14), acerca da cobrança de valores durante o período de suspensão total, para um usuário, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), sem conversão em advertência, ante a vantagem direta à recorrente;
+as demais variáveis empregadas no cálculo da multa foram as seguintes:
+Gravidade: exceto para o sequencial 3 (art. 3º, inc. XIII), classificada como "média", todas foram classificadas como "graves";
+Dano: fixado no mínimo regulamentar para cada uma das infrações;
+Tempo: "até 1 ano", tendo em vista que as infrações descritas limitam-se ao período de 30/06/2018 a 19/06/2019; e
+ROL: correspondente ao ano de 2019, mais recente disponível no banco de dados da Anatel na época da aplicação da sanção.
+foram identificados três antecedentes, sem reincidências específicas;
+embora o Plano de Ação tenha sido devidamente cumprido, a ausência de reparação dos usuários não autoriza a incidência de atenuantes referidas no art. 20, incs. I a IV, do RASA, reconhecendo-se, assim, apenas a aplicação da atenuante de confissão (art. 20, inc. V, do RASA) para algumas infrações, conforme visto anteriormente;
+as multas foram assim calculadas, totalizando R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos):
+ Dispositivo infringido
+ | 
+ Conclusão da análise
+ | 
+ Valor individual da multa
+ | 
+ Art. 67, § 1º, Res. 614/2013
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 3º, I, do Anexo do RGC (vertentes 1 e 2)*
+ | 
+ Caracterizada
+ | 
+ R$ 6.497,43
+ | 
+ Art. 3º, I, do Anexo do RGC (vertente 3)
+ | 
+ Caracterizada
+ | 
+ R$ 2.915,32
+ | 
+ Art. 3º, XIII, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 1.436.313,65
+ | 
+ Art. 14, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 104.780,06
+ | 
+ Art. 15, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 58, § 2º, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 65, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 66, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 73, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, V, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, VI, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, VIII, d, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 76, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 76, §5º, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 85, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 105.204,04
+ | 
+ Art. 95, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ * Tendo em vista que as infrações possuem a mesma natureza e características, optou-se por fazer o cálculo da multa em conjunto.
+ | 
+Em 1º de abril de 2022, houve interposição de Recurso Administrativo (SEI nº 8260681), tendo a Recorrente alegado, em síntese, que o indeferimento dos pedidos de conversão de multa em advertência se deu em desacordo com os regulamentos aplicáveis, devendo ser aplicado, inclusive, o princípio da retroatividade da norma mais benéfica. Ao fim, ela pede a aplicação dessa conversão para as condutas sancionadas.
+Em 04 de abril de 2022, certificou-se a atribuição de efeito suspensivo ao recurso (SEI nº 8262449).
+Em 07 de maio de 2024, por meio do Informe nº 136/2024/CODI/SCO (SEI nº 11839115), a área técnica tece as seguintes considerações ao examinar o recurso interposto:
+o recurso atende aos pressupostos de admissibilidade e, portanto, deve ser conhecido;
+a avaliação da conversão da multa em advertência deve se dar à luz da redação do art. 12 do RASA, dada pelo RFR, pois o processo se encontrava pendente de decisão na data do início da vigência do RFR, consoante previsão estabelecida no seu art. 5º, caput e parágrafos;
+a infração sequencial 3 deve ser descaracterizada, por ausência de materialidade;
+devem ser mantidas as infrações sequenciais 1, 2 (neste caso, com descaracterização no que diz respeito ao item 11 do Relatório de Fiscalização, mas com majoração de usuários atingidos para 68), 4 (com diminuição dos usuários atingidos para 7.372 - sete mil trezentos e setenta e dois, no período de 31 de julho a 31 de agosto de 2018), 5 (em 19 de agosto de 2018), 6 (entre 19 de fevereiro e 15 de outubro de 2018), 8 (dia 10 de outubro de 2018, para um usuário, propondo-se a substituição por advertência), 13 (para 7.450 - sete mil quatrocentos e cinquenta - usuários, no período de 14 de agosto de 2017 a 15 de outubro de 2018) e 14 (para um usuário, em 4 de janeiro de 2018);
+para o cálculo da multa:
+Gravidade: todas as infrações ainda caracterizadas foram classificadas como "graves", adotando-se o entendimento constante da decisão recorrida;
+Usuários totais: empregou-se o valor de 7.386.273 (sete milhões, trezentos e oitenta e seis mil duzentos e setenta e três), correspondente ao total de acessos SCM da recorrente;
+Dano: mantido no menor valor, adotando-se o entendimento constante da decisão recorrida;
+Tempo: ajustado para a duração de cada infração;
+ROL: empregou-se a do ano de 2019, para o SCM;
+Agravantes: foram identificados três antecedentes, sem reincidências específicas; e
+Atenuantes: aplicou-se a atenuante de confissão (art. 20, inc. V, do RASA) para os sequenciais 1, 2 e 14;
+em seguida, propôs-se a aplicação da multa nos seguintes termos:
+ Dispositivo infringido
+ | 
+ Sanção (multa ou advertência)
+ | 
+ Art. 67, § 1º, do RSCM
+ | 
+ R$5.000,00
+ | 
+ Art. 3º, I, do RGC
+ | 
+ R$15.948,31
+ | 
+ Art. 14, caput, do RGC
+ | 
+ R$179.079,31
+ | 
+ Art. 15, caput, do RGC
+ | 
+ R$5.000,00
+ | 
+ Art. 58, § 2º, do RGC
+ | 
+ R$5.511,74
+ | 
+ Art. 66, caput, do RGC
+ | 
+ Advertência
+ | 
+ Art. 85, caput, do RGC
+ | 
+ R$196.508,62
+ | 
+ Art. 95, caput, do RGC
+ | 
+ R$5.000,00
+ | 
+ Total
+ | 
+ R$412.047,98
+ | 
+ao final, propôs a instauração de procedimento para acompanhamento do ressarcimento aos usuários e a notificação da prestadora ante o agravamento de elementos que repercutem no cálculo da multa, notadamente os fatores D (dano), T (tempo) e G (gravidade).
+Em 04 de junho de 2024, a Recorrente se manifesta (SEI nº 12073127), alegando que não é possível a reformatio in pejus em sede recursal e que seria necessário novo despacho decisório, de modo que fosse aplicado fator de redução de 25%.
+Em 09 de outubro de 2024, a área técnica, por meio do Informe nº 329/2024/CODI/SCO (SEI nº 12624504) opina pela rejeição da tese de impossibilidade de agravamento, nos termos do Enunciado nº 22, da Súmula da Anatel, e pelo indeferimento do pedido de novo despacho decisório, com aplicação do fator de redução de 25%, pois não houve renúncia expressa ao direito de recorrer. Na mesma ocasião, encaminhou o processo à PFE/Anatel para manifestação.
+Em 04 de dezembro de 2024, a PFE/Anatel, por meio do Parecer 584/2024/PFE-ANATEL/PGF/AGU (SEI nº 12980794), pronuncia-se pela possibilidade de agravamento da sanção; pela impossibilidade de aplicação do fator de redução a que se refere o art. 33, § 5º, do RASA; pela utilização da ROL de 2021 como base para aplicação da sanção, considerando a totalidade da pessoa jurídica, sem distinção geográfica entre matriz e filiais; e pelo emprego de antecedentes considerando a íntegra dos serviços prestados.
+Em 28 de abril de 2025, por meio do Informe nº 317/2025/CODI/SCO (SEI nº 13533002), a área técnica, em resposta ao parecer acima, destacou que foi empregada a ROL mais recente disponível à época da sanção, e que, conforme entendimento do Conselho Diretor, "o cálculo das multas deve ser realizado de forma segregada, levando em consideração apenas os antecedentes relacionados aos serviços onde foram identificadas as irregularidades".
+Ao final, ratificou o entendimento trazido no Informe nº 136/2024/CODI/SCO (SEI nº 11839115), quanto às infrações e sanções ali referidas e propôs o encaminhamento do processo ao Conselho Diretor.
+Na mesma data, a SCO, por meio do Despacho Decisório nº 223/2025/CODI/SCO (SEI nº 13534433), decide conhecer o recurso interposto e encaminhar o processo ao Conselho Diretor e, consoante Matéria para Apreciação do Conselho Diretor 408 (SEI nº 13534048), encaminhou o processo à Superintendência Executiva (SUE).
+Em 30 de abril de 2025, a SUE encaminhou o processo à Secretaria do Conselho Diretor por meio de Despacho Ordinatório (SEI nº 13635051).
+O processo foi distribuído para a minha relatoria em 05 de maio de 2025, conforme respectiva Certidão de Distribuição (SEI nº 13642688).
+Em 04 de junho de 2025, a Recorrente se manifesta (SEI nº 13804917), reiterando o pleito de substituição de sanção de multa por advertência e de prolação de novo despacho decisório, com vistas à aplicação do fator de redução a que se refere o art. 33, § 5º, do RASA.
+Em 17 de setembro de 2025, por meio do Ofício nº 155/2025/AF-ANATEL (SEI nº 14396751), remeti o processo à SCO para a realização de instrução complementar, no prazo de 60 (sessenta) dias. A saber:
+Ofício nº 155/2025/AF-ANATEL:
+(...)
+2. Da análise do processo, verificou-se divergência quanto à caracterização da infração prevista no art. 14 do referido RGC/2014, que dispõe:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+3. Conforme entendimento deste Gabinete, o comando inserido no art. 14 do RGC/2014, caput, exige que os efeitos jurídicos do pedido de rescisão sejam imediatos, independentemente dos aspectos operacionais de processamento técnico. O parágrafo único, por sua vez, estabelece as consequências jurídicas para o retardo no cancelamento, atribuindo à prestadora o ônus de arcar com eventuais encargos decorrentes desse contexto, notadamente a proibição de cobranças referentes a serviços prestados após o pedido de rescisão.
+4. Nesse sentido, a princípio, a mera demora no processamento técnico de pedidos de rescisão, desacompanhada da efetiva realização de cobrança indevida ao consumidor em relação a serviços não contratados (ou seja, referentes a períodos posteriores à extinção do vínculo contratual), não se mostra suficiente para a caracterização da infração em comento. A infração se materializa quando a demora no processamento resulta em prejuízo direto ao consumidor, consubstanciado na cobrança por serviços referentes a período posterior ao cancelamento.
+5. Assim, solicita-se que a recorrente informe quantas, das 7.386 (sete mil trezentos e oitenta e seis) ocorrências constantes da planilha “Pedido vs Atendim. Cancelamento.xlsx”, envolveram cobrança indevida após o cancelamento, sem a devida autorização do consumidor.
+Em 05 de fevereiro de 2026, por meio do Ofício nº 25/2026/AF-ANATEL (SEI nº 15142325), defere-se dilação do prazo para a conclusão da diligência, por 45 (quarenta e cinco) dias adicionais.
+Em 26 de fevereiro de 2026, por meio do Informe nº 111/2026/CODI/SCO (SEI nº 15165427), a área técnica responde aos questionamentos em relação à apuração dos indícios de infração ao art. 14 do RGC, a saber:
+as ocorrências foram analisadas e classificadas, com a indicação dos casos de cobrança indevida sem ressarcimento, cobrança indevida com ressarcimento e ressarcimento parcial, além de registros que não se refeririam a pedido de cancelamento;
+para fins de apuração da infração, a cobrança posterior ao cancelamento configura irregularidade independentemente de posterior ressarcimento, total ou parcial, razão pela qual se consideraram 256 casos de cobrança indevida, equivalentes a 9,28% das 2.756 ocorrências analisadas;
+considerando a ausência de análise da integralidade da base inicialmente apontada, adotou-se o percentual de 9,28% sobre o universo de 7.386 registros, resultando em 685 usuários para fins de recálculo do fator quantitativo da sanção; e
+ao final, apresentou-se o recálculo da multa referente à infração ao art. 14 do RGC e a consolidação dos valores das sanções discutidas no Pado, sintetizados na tabela constante do item 3.15 do mencionado Informe, abaixo reproduzida:
+ Dispositivo Infringido
+ | 
+ Valor de Multa Aplicado
+ | 
+ Valor de Multa Recalculado - Inf. 136/2024
+ | 
+ Valor de Multa neste Informe
+ | 
+ Art. 67, § 1º, do RSCM
+ | 
+ R$2.500,00
+ | 
+ R$5.000,00
+ | 
+ R$5.000,00*
+ | 
+ Art. 3º, I, do RGC (vertentes 1 e 2)*
+ | 
+ R$6.497,43
+ | 
+ R$15.948,00
+ | 
+ R$15.948,00*
+ | 
+ Art. 3º, I, do RGC (vertente 3)
+ | 
+ R$2.915,32
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 3º, XIII, do RGC
+ | 
+ R$1.436.313,65
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 14 do RGC
+ | 
+ R$104.780,06
+ | 
+ R$179.079,31
+ | 
+ R$54.588,11
+ | 
+ Art. 15 do RGC
+ | 
+ R$2.500,00
+ | 
+ R$5.000,00
+ | 
+ R$5.000,00*
+ | 
+ Art. 58, §2º, do RGC
+ | 
+ R$2.500,00
+ | 
+ R$5.511,74
+ | 
+ R$5.511,74*
+ | 
+ Art. 65 do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 66, caput, do RGC
+ | 
+ R$2.500,00
+ | 
+ Advertência
+ | 
+ -
+ | 
+ Art. 73 do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 74, V, do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 74, VI, do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 74, VIII, d, do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 76 do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 76, §5º, do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ -
+ | 
+ Art. 85, caput, do RGC
+ | 
+ R$105.204,04
+ | 
+ R$196.508,62
+ | 
+ R$196.508,62*
+ | 
+ Art. 95, caput, do RGC
+ | 
+ R$2.500,00
+ | 
+ R$5.000,00
+ | 
+ R$5.000,00*
+ | 
+ Total
+ | 
+ R$1.668.210,50
+ | 
+ R$412.047,98
+ | 
+ R$287.556,47
+ | 
+*Não houve recálculo de multa para essas infrações neste Informe.
+É o breve relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise encontra-se dividida em sete partes. Na primeira, analisa-se a admissibilidade do recurso. Na segunda, discorre-se sobre as questões processuais e prejudiciais do mérito da presente apuração. Na terceira, examinam-se a materialidade e a autoria das infrações, bem como as sanções aplicáveis. Por fim, fundamenta-se a presente decisão com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com o Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE), e com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Admissibilidade
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O Recurso Administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão.
+No presente caso, tem-se que o recurso foi dirigido para a SCO, que dele conheceu e manteve a decisão recorrida. Portanto, cabível é o encaminhamento para decisão do Conselho Diretor, conforme previsto no art. 115, § 1º, alínea “b”, do RIA, assim transcrito:
+Regimento Interno da Anatel:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+Não se vislumbra, ainda, a incidência das hipóteses de não conhecimento do presente recurso, previstas no art. 116 do RIA, a saber:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Quanto à tempestividade, conforme certidão SEI nº 8224366, o prazo para a interposição do recurso teve início em 25 de março de 2022. Por sua vez, o recurso administrativo foi interposto em 1º de abril de 2022 (SEI nº 8260682), atendendo ao prazo de 10 (dez) dias definido pelo RIA.
+De igual forma, a Recorrente é parte legítima deste procedimento, possuindo interesse na reforma da decisão, estando regularmente representada.
+Estão presentes os requisitos de admissibilidade recursal, devendo o Conselho Diretor conhecer do pedido de reforma da decisão.
+Assim, admite-se o recurso interposto.
+II - Questões preliminares e prejudicial de mérito
+Neste tópico, estudam-se as questões processuais e prejudiciais de mérito na seguinte ordem: possibilidade de agravamento de sanção em sede recursal, avaliação de petição extemporânea, pedido de aplicação de fator de redução (art. 33, § 5º, do RASA) após juízo de retratação e identificação da legislação aplicável para a dosimetria da multa.
+II.a - Possibilidade de agravamento da sanção (reformatio in pejus)
+A PFE/Anatel, no Parecer nº 584/2024/PFE-ANATEL/PGF/AGU (SEI nº 12980794), manifestou-se no sentido de que é possível o agravamento da sanção (reformatio in pejus) na esfera recursal administrativa, desde que haja a regular intimação para a apresentação de alegações, nos termos do art. 64, parágrafo único da LPA, e desde que sejam respeitados os princípios da razoabilidade, proporcionalidade e motivação. Acrescenta que tal entendimento está respaldado na jurisprudência de diversos tribunais do país e no entendimento da Anatel.
+A possibilidade de agravamento da pena (reformatio in pejus), em sede recursal, é matéria pacificada no Conselho Diretor, conforme Enunciado nº 22 da Súmula da Anatel, assim redigido:
+Enunciado nº 22 da Súmula da Anatel:
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel.
+Veja-se o que diz o art. 64 da LPA:
+Lei nº 9.784, de 29 de janeiro de 1999:
+Art. 64. O órgão competente para decidir o recurso poderá confirmar, modificar, anular ou revogar, total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+Parágrafo único. Se da aplicação do disposto neste artigo puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão. (grifou-se)
+No mesmo sentido, o art. 125, §§ 3º e 4º, do RIA dispõe:
+Regimento Interno da Anatel:
+Art. 125. A tramitação do recurso administrativo observará as seguintes regras:
+(...)
+§3º A autoridade competente para decidir o recurso administrativo poderá confirmar, modificar, anular ou revogar total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+§4º Se da aplicação do disposto no §3º puder decorrer gravame à situação do recorrente, este deverá ser intimado para que, no prazo de 15 (quinze) dias, formule suas alegações antes da decisão. (grifou-se)
+A revisão de uma decisão administrativa é fundamentada no princípio da autotutela da Administração Pública, nos termos do Enunciado nº 346 da Súmula do STF, que afirma que a Administração Pública pode anular seus próprios atos. Ou seja, o Estado possui o dever-poder de corrigir atos ilegais, incluindo os atos de efeitos concretos.
+Nesse sentido, confira-se o seguinte julgado do eg. Supremo Tribunal Federal:
+Ementa: AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO COM AGRAVO. ADMINISTRATIVO. ATENDIMENTO BANCÁRIO. REGULAMENTAÇÃO POR NORMAS INFRACONSTITUCIONAIS LOCAIS. POSSIBILIDADE. REPERCUSSÃO GERAL RECONHECIDA PARA RATIFICAR A JURISPRUDÊNCIA DA CORTE. PROCESSO ADMINISTRATIVO. RECRUDESCIMENTO DA SANÇÃO ADMINISTRATIVA EM RECURSO DO ADMINISTRADO. PRINCÍPIO DA AUTOTUTELA. POSSIBILIDADE.
+1. Os municípios têm competência para regulamentar o atendimento ao público em instituições bancárias, uma vez que se trata de matéria de interesse local.
+2. A jurisprudência da Corte sobre a matéria foi ratificada pelo Plenário desta Corte quando do julgamento do RE 610.221, da Relatoria da E. Min. Ellen Gracie, cuja Repercussão Geral restou reconhecida.
+3. A possibilidade da administração pública, em fase de recurso administrativo, anular, modificar ou extinguir os atos administrativos em razão de legalidade, conveniência e oportunidade, é corolário dos princípios da hierarquia e da finalidade, não havendo se falar em reformatio in pejus no âmbito administrativo, desde que seja dada a oportunidade de ampla defesa e o contraditório ao administrado e sejam observados os prazos prescricionais. 4. In casu, o acórdão recorrido assentou: “ADMINISTRATIVO - FUNCIONAMENTO DOS BANCOS – EXIGÊNCIAS CONTIDAS EM LEI ESTADUAL E MUNICIPAL – LEGALIDADE. 1. A jurisprudência do STF e do STJ reconheceu como possível lei estadual e municipal fazerem exigências quanto ao funcionamento das agências bancárias, em tudo que não houver interferência com a atividade financeira do estabelecimento (precedentes). 2. Leis estadual e municipal cuja argüição de inconstitucionalidade não logrou êxito perante o Tribunal de Justiça do Estado do RJ. 3. Em processo administrativo não se observa o princípio da "non reformatio in pejus" como corolário do poder de auto tutela da administração, traduzido no princípio de que a administração pode anular os seus próprios atos. As exceções devem vir expressas em lei. 4. Recurso ordinário desprovido.” 5. Agravo Regimental no Recurso Extraordinário com Agravo a que se nega provimento.
+(ARE 641054 AgR, Relator(a): LUIZ FUX, Primeira Turma, julgado em 22/05/2012, ACÓRDÃO ELETRÔNICO DJe-124 DIVULG 25-06-2012 PUBLIC 26-06-2012, grifos acrescidos)
+Da mesma forma, sobre o rito a ser seguido para a reformatio in pejus, consignam-se as lições de Egon Bockmann Moreira (2022, p. 317-318):
+A Lei nº 9.784/1999 fixa que, se da confirmação, modificação, anulação ou revogação da decisão recorrida “puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão” (art. 64, parágrafo único).
+Em primeiro lugar, a norma impede a reforma para pior sem prévio conhecimento e defesa do recorrido. Caso o órgão julgador cogite, mesmo em tese, de qualquer agravamento da decisão recorrida (“puder decorrer gravame”), deverá previamente notificar o recorrente de maneira fundamentada, indicando qual o agravamento imaginado e suas consequências. Em decorrência, abre‑se prazo para a manifestação do recorrente.
+Ou seja: nenhum gravame inédito aos autos poderá ocorrer sem o conhecimento prévio e o exercício da ampla defesa e do contraditório por parte do recorrente. Inclusive, poderão ser realizadas diligências probatórias, e o órgão julgador deverá levar em conta a manifestação do recorrente na motivação da decisão.
+Ou seja, é possível o agravamento da pena, em sede de recurso administrativo, desde que seja assegurado ao interessado o exercício das garantias da ampla defesa e do contraditório.
+Dito isso, a Recorrente foi devidamente intimada para apresentar suas alegações quanto à possibilidade da reformatio in pejus.
+Assim, restam atendidas as formalidades processuais para eventual agravamento da pena pelo Conselho Diretor.
+II.b - Da petição extemporânea
+Em 04 de junho de 2025, a Recorrente apresentou, de forma extemporânea, petição (SEI nº 13804917) na qual requer a aplicação de sanção de advertência, bem como a expedição de novo Despacho Decisório pela SCO, abrindo-se a possibilidade da aplicação do art. 33, § 5º, do RASA, ao cumprimento da sanção proposta.
+A disciplina do tratamento a ser conferido às petições extemporâneas é orientada pelo Enunciado nº 21, de 10 de outubro de 2017, da Súmula da Anatel, nos seguintes termos:
+Enunciado nº 21 da Súmula da Anatel:
+As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado.
+O protocolo da petição ocorreu antes da publicação da pauta da Reunião do Conselho Diretor nº 945, de 07 de agosto de 2025, na qual foi incluído o presente processo.
+Assim, conhece-se da manifestação acima.
+II.c - Pedido de prolação de novo despacho decisório e de aplicação de fator de redução (art. 33, § 5º, do RASA)
+A Recorrente requer a prolação de novo despacho decisório após o juízo de retratação pela autoridade recorrida, de modo que lhe seja permitido beneficiar-se do fator de redução a que se refere o art. 33, § 5º, do RASA.
+O pleito encontra óbice no Enunciado nº 23 da Súmula da Anatel, assim redigido:
+Enunciado nº 23 da Súmula da Anatel:
+É inaplicável o desconto previsto no § 5º do art. 33 do Regulamento para Aplicação de Sanções Administrativas (RASA), aprovado pela Resolução nº 589, de 7 de maio de 2012, sobre o valor da sanção de multa, quando da expedição de novo Despacho Decisório de primeira instância, substitutivo do despacho recorrido, por força do exercício do juízo de retratação da autoridade competente, seja total ou parcial.
+Assim, rejeita-se o pedido em comento.
+II.d - Legislação aplicável para a dosimetria de multa 
+A Resolução nº 746, de 22 de junho de 2021, entrou em vigor em 1º de julho de 2021, com aplicação a todos os Pados pendentes de decisão de primeira instância, conforme art. 5º, a seguir transcrito:
+Resolução nº 746/2021:
+Art. 5º Esta Resolução entra em vigor em 1º de julho de 2021, com exceção de seu art. 2º.
+§ 1º O art. 2º e o Anexo a esta Resolução entram em vigor em 21 de outubro de 2021.
+§ 2º As alterações promovidas ao RASA aplicam-se a todos os processos pendentes de decisão de primeira instância quando de sua entrada em vigor.
+Tendo em vista que a decisão recorrida foi proferida em 08 de março de 2022 (SEI nº 7961758), aplica-se, ao presente caso, o RASA, com as alterações trazidas pela Resolução nº 746/2021. Neste sentido, confiram-se os seguintes precedentes: Acórdão nº 14, de 06 de fevereiro de 2023 (SEI nº 9789500, Processo nº 53500.002607/2014-63, Relator: Conselheiro Moisés Queiroz Moreira); Acórdão nº 274, de 04 de outubro de 2024 (SEI nº 12685711, Processo nº 53500.033378/2019-33, de minha relatoria); e Acórdão nº 131, de 23 de maio de 2025 (SEI nº 13745364, Processo nº 53500.002921/2020-94, de minha relatoria).
+Assim, acolhe-se o entendimento proposto pela área técnica e pela Recorrente.
+III - Materialidade das infrações
+Neste tópico, examina-se a materialidade das infrações em apuração, na sequência a seguir: conduta cuja descaracterização foi proposta pela área técnica após o recurso interposto, em seguida, infrações mantidas pela área técnica e, ao fim, consolidação da situação das infrações discutidas no processo.
+III.a - Avaliação da conduta descaracterizada pela área técnica após a interposição do recurso
+Por meio do Informe nº 136/2024/CODI/SCO (SEI nº 11839115), a área técnica propôs descaracterizar a infração Sequencial 3 (art. 3º, inc. XIII, do RGC 2014), assim redigido:
+RGC 2014:
+Art. 3º O Consumidor dos serviços abrangidos por este Regulamento tem direito, sem prejuízo do disposto na legislação aplicável e nos regulamentos específicos de cada serviço:
+(...)
+XIII - a não ser obrigado ou induzido a adquirir serviços, bens ou equipamentos que não sejam de seu interesse, bem como a não ser compelido a se submeter a qualquer condição, salvo diante de questão de ordem técnica, para recebimento do serviço, nos termos da regulamentação;
+Nos termos do Informe acima, a descaracterização encontra-se assim fundamentada:
+Informe nº 136/2024/CODI/SCO:
+3.31. De acordo com o item 3.11 do Informe nº 49/2020/CPAE/SCP (5813521), por meio da CT. nº 1679/LLLADA (4992515) e anexo (4992516), a Prestadora apresentou à CPAE suas contrarrazões, provando que a conduta descrita no item 33 do do Relatório de Fiscalização nº 414/2019/GR01 (4307977) estava regular.
+O item 3.11 do Informe nº 49/2020/CPAE/SCP (SEI nº 5813521), em que a recorrente se manifesta sobre os indícios de irregularidade identificados no item 33 (ou melhor, item 4.2.33, em que se avalia a conformidade com o art. 3º, inc. XIII, do RGC 2014), do Relatório de Fiscalização nº 414/2019/GR01 (SEI nº 4307977), de fato, foi expresso no sentido de que não restou caracterizada a irregularidade em questão, verbis (grifos acrescidos):
+Informe nº 49/2020/CPAE/SCP:
+3.11. Em resposta ao Ofício nº 157/2019/CPAE/SCP-ANATEL (SEI nº 4647760, por meio da CT. nº 1679/LLLADA, de 05/11/2019 – TT (SEI nº 4992515) e seu anexo (SEI nº 4992516), a Telefônica apresentou à CPAE suas contrarrazões aos indícios de irregularidades, provando que os itens 2, 11 e 33 não estavam irregulares. Dessa forma, ela se comprometeu a corrigir as falhas apontadas nos itens 5, 21, 31 e 32.
+Portanto, descaracteriza-se a infração sequencial 3 (art. 3º, inc. XIII, do RGC 2014), relacionada à cobrança de serviços não solicitados pelo consumidor.
+III.b - Avaliação das infrações mantidas pela área técnica
+Neste tópico, avaliam-se as condutas para as quais a área técnica propôs a manutenção da condenação em primeira instância, na seguinte ordem: 
+ Sequencial
+ | 
+ Dispositivo
+ | 
+ Conduta irregular
+ | 
+ 1
+ | 
+ art. 67, § 1º, do anexo à Resolução nº 614/2013
+ | 
+ Houve cobrança de valores referentes à prestação de serviço durante a suspensão a pedido.
+ | 
+ 2
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ Valores cobrados não estavam de acordo com as condições ofertadas e contratadas, não foram respeitadas as condições da oferta contidas na sua respectiva documentação, reajuste de valores superior ao previsto em contrato.
+ | 
+ 4
+ | 
+ art. 14 do anexo à Resolução nº 632/2014
+ | 
+ Houve cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente.
+ | 
+ 5
+ | 
+ art. 15 do anexo à Resolução nº 632/2014
+ | 
+ Cobrança de serviços prestados após o prazo de processamento do pedido de rescisão automático, exceto o referente aos serviços usufruídos nesse período.
+ | 
+ 6
+ | 
+ art. 58, § 2º, do anexo à Resolução nº 632/2014
+ | 
+ As condições do Contrato de Permanência contidas na respectiva documentação não foram respeitadas.
+ | 
+ 8
+ | 
+ art. 66 do anexo à Resolução nº 632/2014
+ | 
+ Truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais.
+ | 
+ 13
+ | 
+ art. 85 do anexo à Resolução nº 632/2014
+ | 
+ Não houve devolução em dobro, acrescido de correção, de valores cobrados indevidamente.
+ | 
+ 14
+ | 
+ art. 95 do anexo à Resolução nº 632/2014
+ | 
+ Houve cobrança indevida durante o período de suspensão total do plano.
+ | 
+III.b.1 - Sequencial 1 - art. 67, § 1º, do RSCM (cobrança de valores durante a suspensão a pedido)
+Segundo o art. 67, § 1º, do RSCM, veda-se a cobrança de qualquer valor referente à prestação de serviço, durante o período de suspensão a pedido.
+No item 26 do Relatório de Fiscalização nº 0414/2019/GR01 (SEI nº 4307977), foram identificadas três ocorrências a partir das reclamações registradas no sistema FOCUS, sendo:
+uma para o PLANO VIVO INTERNET 2Mbps (PSABL/038/POS/SCM), com as seguintes características: Código da Solicitação: 319448.2018 - Data da Solicitação: 06/02/2018 - Síntese da Reclamação e Providência: Cobrança do serviço após pedido de suspensão. Cliente informa que "SOLICITOU O BLOQUEIO TEMPORÁRIO DA SUA INTERNET, PORÉM RECEBEU A FATURA COM VENCIMENTO EM 12/02 COM O VALOR INTEGRAL" e Prestadora informa que " informamos que devido a um erro sistêmico a suspensão temporária não ativou no serviço de banda larga conforme solicitado";
+duas para o PLANO VIVO FIBRA INTERNET 25Mbps (PSABL/043/POS/SCM), com as seguintes características:
+Código da Solicitação: 1304933.2018 - Data da Solicitação: 30/05/2018 - Síntese da Reclamação e Providência: Cobrança do serviço após pedido de suspensão. Cliente informa que "no dia 28/03/2018 solicitei suspensão temporária, porem a cobrança na fatura com vencimento no mês 05 e 06 de 2018 vieram com os valores integrais sendo cobrados" e Prestadora informa que "identificado que cliente solicitou a suspensão dos serviços..., sendo assim como houve erro de faturamento efetuamos o ajuste na fatura";
+Código da Solicitação: 1258548.2018 - Data da Solicitação: 23/05/2018 - Síntese da Reclamação e Providência: Cobrança do serviço após pedido de suspensão. Cliente informa que "RECLAMA QUE RECEBEU COBRANÇA NO VALOR CHEIO... DE SEU SERVIÇO DE INTERNET ENQUANTO O MESMO ESTEVE BLOQUEADO" e Prestadora informa que "esclarecemos que em forma de acordo efetuamos a correção da fatura".
+Por meio da CT. nº 1679/2019/LLLADA (SEI nº 4992515), a Recorrente informou (vide págs. 20 e ss.) que dois casos consistiram em falha operacional e que o outro (ID 1258548.2018) se trata de serviço suspenso por inadimplência, acrescentando-se que esse ponto foi observado no Informe nº 20/2022/CODI/SCO (SEI nº 7946788).
+Dito isso, acompanhando o referido Informe, mantém-se a caracterização da infração em caráter pontual, em duas ocorrências.
+III.b.2 - Sequencial 2 - art. 3º, inc. I, do RGC 2014 (cobrança de valores de forma diversa do contratado)
+Nos termos do art. 3º, inc. I, do RGC 2014, devem ser assegurados ao consumidor, dentre outros, o acesso e a fruição dos serviços conforme as condições ofertadas e contratadas.
+Em primeira instância, caracterizou-se a infração em comento em três vertentes, a saber:
+valores cobrados não estavam de acordo com as condições ofertadas e contratadas (vertente 1).
+não foram respeitadas as condições da oferta contidas na sua respectiva documentação (vertente 2).
+reajuste de valores superior ao previsto em contrato (vertente 3).
+A vertente 3, a exemplo do que ocorre para o sequencial 3 (art. 3º, inc. XIII, do RGC 2014), foi descaracterizada pela área técnica por ausência de materialidade, eis que, conforme exposto no item 3.11 do Informe nº 49/2020/CPAE/SCP (SEI nº 5813521), a Recorrente demonstrou o regular cumprimento do ponto, afastando o indício referido no item 11 do Relatório de Fiscalização nº 414/2019/GR01 (SEI nº 4307977).
+Não havendo fundamentos que afastem tal conclusão, mantém-se a referida descaracterização.
+Para as demais vertentes, com avaliação dos itens Itens 3, 4, 9, 10, 24 e 25, do Relatório de Fiscalização nº 414/2019/GR01 (SEI nº 4307977), apurou-se o seguinte:
+ Item do Relatório de Fiscalização (4307977)
+ | 
+ Conduta
+ | 
+ Casos
+ | 
+ Justificativa da Prestadora para as irregularidades
+ | 
+ 3
+ | 
+ Serviços e valores diferem das condições ofertadas e contratadas
+ | 
+ Geral
+ | 
+ 24
+ | 
+ Houve falhas operacionais e procedimentais, mas foram desenvolvidas ações visando a melhoria na comunicação no momento da oferta e da contratação dos serviços.
+ | 
+ 4
+ | 
+ Mensalidade
+ | 
+ 9
+ | 
+ Descontos (valores e períodos promocionais)
+ | 
+ 31
+ | 
+ 10
+ | 
+ Documento de cobrança
+ | 
+ 24
+ | 
+ Taxa de habilitação
+ | 
+ 13
+ | 
+ 25
+ | 
+ Taxa de instalação
+ | 
+Ressalta a área técnica, no item 3.27 do Informe 136/2024/CODI/SCO (SEI nº 11839115), que essas irregularidades não são passíveis de aplicação da sanção de advertência, uma vez que não houve acompanhamento da matéria, como disciplina o art. 12, II, do RASA, e por se tratar de uma infração grave, tendo a Prestadora obtido vantagem direta em decorrência da infração cometida em, no mínimo, um caso (395759.2018). Todavia, é aplicável a circunstância atenuante de confissão, pois a Recorrente confessou a autoria e a materialidade do fato em 5 de dezembro de 2019 (4992515), antes da apresentação da defesa que se deu em 7 de outubro de 2021 (7520051).
+Assim, em linha com a área técnica, mantém-se a caracterização da infração ao art. 3º, I, do RGC, em relação aos itens 3, 4, 9, 10, 24 e 25, afetando 68 (sessenta e oito) usuários.
+III.b.3 - Sequencial 4 - art. 14 do RGC 2014 (cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente)
+No que diz respeito à cobrança de serviços prestados posteriormente ao encerramento do vínculo contratual entre o usuário e a prestadora, o art. 14 do RGC 2014 assim se encontra redigido:
+RGC 2014:
+Art. 14. Os pedidos de rescisão processados com intervenção de atendente devem ter efeitos imediatos, ainda que seu processamento técnico necessite de prazo.
+Parágrafo único. A Prestadora não pode efetuar qualquer cobrança referente a serviços prestados após o pedido de rescisão, assumindo o ônus de eventuais encargos, inclusive perante as demais Prestadoras de Serviços de Telecomunicações.
+O comando inserido no art. 14, caput, do RGC 2014, apenas exige que os efeitos do pedido de rescisão sejam imediatos. Isto é, independentemente dos aspectos operacionais de processamento do pedido nos diversos sistemas de informação e gestão da prestadora, importa que, a partir do pedido de rescisão, os efeitos jurídicos do contrato cessem imediatamente.
+Por sua vez, o art. 14, parágrafo único, do RGC 2014, estabelece algumas consequências jurídicas para o retardo no cancelamento, atribuindo à prestadora o ônus de arcar com as consequências negativas, isto é, os encargos (financeiros ou não), decorrentes desse contexto.
+No caso ora discutido, a infração resta caracterizada pela presença de cobranças indevidas verificadas na atividade fiscalizatória. Conforme consta do supramencionado Despacho de Instauração, foi identificada a cobrança de serviços prestados após o pedido de rescisão processado sob a intervenção do atendente.
+Nesse sentido, o Informe nº 136/2024/CODI/SCO (SEI nº 11839115) aduziu o seguinte:
+3.33. De acordo com o Anexo Docs Adic. Tabelas e Resultados (4279515), planilha "Pedido vs Atendim. Cancelamento.xlsx", 7.386 (sete mil trezentos e oitenta e seis) usuários foram afetados pela conduta irregular de não dar efeito imediato ao pedido de rescisão com intervenção do atendente. Também foi avaliada uma amostra de 15 (quinze) casos de reclamações no sistema Focus, sendo que 14 (quatorze) deles estão contidos nesse universo inicial. Portanto, foram avaliados os pedidos de 7.387 (sete mil trezentos e oitenta e sete) usuários.
+3.34. Na amostra extraída do sistema Focus foram observados 2 (dois) casos de cobrança após o cancelamento (1859056.2018 e 1258842.2018) e 13 (treze) casos de cancelamentos não efetivados (2576.2018, 292708.2018, 831636.2018, 251936.2018, 733197.2018, 1953590.2018, 1772183.2018, 696314.2018, 1028954.2018, 1938238.2018, 1718449.2018, 1293293.2018 e 64008.2018).
+3.35. De acordo com o item 3.127 do Informe nº 20/2022/CODI/SCO (7946788), a Prestadora apresentou evidências de que, para os dois primeiros casos do sistema Focus (1859056.2018 e 1258842.2018), as cobranças estavam corretas, referindo-se ao período proporcional até a data do pedido de cancelamento. Quanto aos 13 (treze) restantes, de acordo com os itens 3.6 e 3.7 do Informe nº 108/2021/CPAE/SCP (7602499), a correção das falhas foi realizada por meio da reparação aos clientes prejudicados (6719794), conforme segue:
+Para fins de esclarecimento da apuração dos indícios de descumprimentos ao art. 14 do RGC 2014, foi realizada diligência para instrução complementar, conforme exposto no relatório. No Informe nº 111/2026/CODI/SCO (SEI nº 15165427), assim consigna a área técnica em resposta aos questionamentos:
+3.11. Na CT.LLLAC nº 136/2026 (15162636), que consolida as informações parciais fornecidas pela Telefônica nas outras petições, a prestadora assim se manifesta, em síntese:
+II – DA AVALIAÇÃO DOS CASOS
+Com o prazo adicional concedido a Prestadora conseguiu avançar na sua análise para os seguintes cenários:
+Cobrança indevida - sem ressarcimento – 19 casos
+Não foi possível localizar o ressarcimento no prazo concedido.
+Reavaliação dos cenários de cobrança indevida apontados como ‘Já ressarcidos’ em dezembro:
+DE: 5) Já ressarcido - cobrança indevida
+PARA: Cliente saiu da base e o crédito imputado em sistema não foi recebido
+106 linhas em que na avaliação mais detalhada não tiveram o ressarcimento efetivado, embora o crédito tenha sido lançado.
+DE: 5) Já ressarcido - cobrança indevida
+PARA: Já ressarcido parcialmente - cobrança indevida
+20 linhas em que houve, em verdade, ressarcimento parcial.
+Já ressarcidos - cobrança indevida – 70 casos
+Casos que foram ressarcidos, mas que para os fins de apuração do ofício, são consideradas cobrança indevida.
+Já ressarcidos parcialmente - cobrança indevida – 1 caso
+Ressarcido parcialmente.
+Não é pedido de cancelamento - mudança de oferta /titularidade – 11 casos
+Não é um de caso de pedido de desconexão, trata -se, em verdade de uma alteração/movimentação do cliente na base da prestadora. Como comprovação do exposto, à presente manifestação estão anexados dossiês de 163 clientes avaliados nesta ocasião.
+O saldo considerando o que foi juntado pela Prestadora até o momento é a avaliação de 2.756 linhas, das quais se identificou cobrança indevida em aproximadamente 8% das linhas, isto é, mais de 90% das linhas avaliadas não geraram cobrança indevida. A avaliação dos casos, conforme se já se esclareceu, demanda consulta em, ao menos, dois sistemas e é feita, quase que em sua totalidade, de maneira manual. Portanto, por mais que esta Prestadora tenha empenhado enorme esforço em atender à solicitação da Agência nos prazos consignados, não foi possível a avaliação exaustiva das linhas. Desta forma, solicita-se que este resultado seja considerado como amostra e seja ampliado para toda a base, assim, 92% da planilha está em conformidade.
+[grifou-se]
+3.12. Desse modo, considerando que no âmbito do Pado e na análise do caso concreto, a cobrança após o cancelamento é indevida e caracteriza a infração independentemente do posterior ressarcimento, total ou parcial, tem-se, nas 2.756 (duas mil, setecentas e cinquenta e seis) linhas avaliadas pela Telefônica, 256 (duzentos e cinquenta e seis) casos de cobrança indevida (19 + 106 + 20 + 70 +1), ou 9,28% (nove vírgula vinte e oito por cento) de irregularidade.
+3.13. Salientando que todos os prazos adicionais consignados à prestadora não foram suficientes para análise completa das 7.386 (sete mil, trezentas e oitenta e seis) ocorrências presentes na planilha “Pedido vs Atendim. Cancelamento.xlsx” (14431079 - cópia), pondera-se pela utilização do resultado ora apresentado como amostra, "ampliando-o para toda a base", vale dizer, pela consideração de 9,28% (nove vírgula vinte e oito por cento) de irregularidade nos 7.386 (sete mil, trezentos e oitenta e seis) casos constantes da planilha “Pedido vs Atendim. Cancelamento.xlsx”, o que significaria fator (Ua) correspondente a 685 (seiscentos e oitenta e cinco).
+Do exposto acima, com base nas informações prestadas pela Telefônica em atendimento à diligência, identificou-se uma proporção de irregularidades de 9,28% nas linhas analisadas. Considerando a base total de ocorrências, com essa proporção chega-se ao montante de 685 (seiscentos e oitenta e cinco) afetados.
+Com isso, o valor da multa referente ao art. 14 do RGC passa a R$ 54.588,11 (cinquenta e quatro mil quinhentos e oitenta e oito reais e onze centavos), sem agravamento da situação da Recorrente.
+Muito embora concorde com a caracterização da infração, tenho algumas ressalvas em relação à proposta metodológica da área técnica de extrapolação dos resultados.
+Primeiramente, na estatística, para que seja possível extrapolar os resultados de uma amostra, permitindo que as conclusões obtidas no conjunto menor sejam válidas para o universo, é essencial realizar a inferência estatística. No caso, não parece ter sido realizada uma amostragem probabilística rigorosa, do que pode resultar viés de seleção e comprometimento da representatividade amostral.
+Além disso, o procedimento adotado levanta uma crítica metodológica importante em relação à confiabilidade inferencial: a fonte da mensuração da taxa de irregularidade foi uma apuração operacional feita pela própria interessada, para fins de resposta à diligência.
+Assim, e considerando o caráter pedagógico intrínseco dos sancionamentos deste tipo de infração, proponho reavaliar apenas as ocorrências efetivamente analisadas na diligência de instrução complementar, mantendo-se as demais para fins de quantificação da multa.
+Aplicando-se um Ua de 5.352 usuários atingidos (ou seja, 256 verificados na diligência, somados aos 5.096 não analisados) à planilha de multa (SEI nº 15167756) anexa ao mencionado Informe, chega-se a um montante de R$ 152.584,64 (cento e cinquenta e dois mil, quinhentos e oitenta e quatro reais e sessenta e quatro centavos), que proponho utilizar para fins de sancionamento das infrações relativas ao art. 14 do RGC 2014, igualmente sem agravamento da situação da Recorrente.
+III.b.4 - Sequencial 5 - art. 15 do RGC 2014 (cobrança de serviços prestados após o prazo de processamento do pedido de rescisão automático)
+O art. 15 do RGC 2014 assim dispõe sobre o cancelamento do serviço sem a intervenção de atendente:
+RGC 2014:
+Art. 15. Os pedidos de rescisão processados sem intervenção de atendente, na forma deste Regulamento, devem ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito.
+§ 1º É devido, pelo Consumidor, o pagamento referente aos serviços usufruídos durante o prazo de processamento do pedido de rescisão automático.
+§ 2º Deve ser garantida ao Consumidor a possibilidade de cancelar seu pedido de rescisão no prazo previsto no caput.
+No Informe nº 136/2024/CODI/SCO (SEI nº 11839115), a área técnica identificou, no Anexo Docs Adic. Tabelas e Resultados (SEI nº 4279515), um único cancelamento realizado sem a intervenção de atendente concluído em desatendimento ao art. 15, caput, do RGC 2014. O caso envolve um cancelamento solicitado em 19/08/2018 e concluído em 24/09/2018.
+Os argumentos da prestadora são insuficientes para descaracterizar a infração, destacando-se, nesse caso, que houve vantagem direta para a infratora, o que impede a aplicação da pena de advertência.
+Dessa forma, mantém-se a proposta da área técnica e nega-se provimento ao recurso.
+III.b.5 - Sequencial 6 - art. 58, § 2º, do RGC 2014 (cobrança indevida de multa rescisória durante o prazo de fidelização)
+O art. 58, § 2º, do RGC 2014 encontra-se assim redigido:
+RGC 2014:
+Art. 58. Rescindido o Contrato de Prestação de Serviço antes do final do prazo de permanência, a Prestadora pode exigir o valor da multa estipulada no Contrato de Permanência, a qual deve ser proporcional ao valor do benefício e ao tempo restante para o término do prazo de permanência.
+§ 1º Configura descumprimento de obrigação contratual firmada entre prestadora e seus consumidores, o rebaixamento para selo “D” ou “E” em determinado município, após a efetivação do contrato, nos termos do Regulamento de Qualidade dos Serviços de Telecomunicações. (Redação dada pela Resolução nº 717, de 23 de dezembro de 2019)
+§ 2º É vedada a cobrança prevista no caput na hipótese de rescisão em razão de descumprimento de obrigação contratual ou legal por parte da Prestadora, cabendo a ela o ônus da prova da não-procedência do alegado pelo Consumidor. (Redação dada pela Resolução nº 717, de 23 de dezembro de 2019)
+No Informe nº 136/2024/CODI/SCO (SEI nº 11839115), assim se motivou a caracterização da infração:
+com fundamento no Informe nº 20/2022/CODI/SCO (7946788), há uma ocorrência relacionada à solicitação ID 420643.2018, no sistema Focus; e
+conforme item 3.138 do Informe nº 20/2022/CODI/SCO (7946788), haveria quatro casos sobre os quais a recorrente não teria se manifestado, apurados em documentos de cobrança.
+Esclarece a área técnica que, diante desse contexto, torna-se inaplicável a sanção de advertência, pois não houve a reparação de todos os usuários dentro do acompanhamento do plano de ação. Além disso, a circunstância atenuante de confissão também não pode ser aplicada, uma vez que a Prestadora deixou de explicar os casos apurados nos documentos de cobrança.
+Assim, mantém-se caracterizada a infração ao art. 58, §2º, do RGC, afetando 5 (cinco) usuários, no período de 19 de fevereiro a 15 de outubro de 2018.
+III.b.6 - Sequencial 8 - art. 66 do RGC 2014 (Truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais)
+O art. 66 do RGC 2014 determina que "[é] obrigatório o truncamento da fração do centavo na apresentação do valor final de qualquer registro individual cobrado, garantida a devida informação ao Consumidor".
+Nos termos do Informe nº 20/2022/CODI/SCO (SEI nº 7946788), reconheceu-se a incidência da infração nos seguintes termos:
+Informe nº 20/2022/CODI/SCO:
+Da análise dos documentos de cobrança, em especial os referentes as solicitações de cancelamento do serviço, e considerando os valores identificados nas faturas do mês em que se efetivou o cancelamento e o que o antecedeu foi identificada a não conformidade abaixo:
+- 01 (um) caso onde não se identificou a aplicação do truncamento do valor conforme segue.
+4.2.5.1. PLANO VIVO FIBRA INTERNET 15 Mbps (PSABL/042/POS/SCM)
+- 01 (um) caso
+01 - Arquivo: 10.18.pdf Anexo da Carta CT. Nº 685/2019/LLLADA (SEI nº 4192155)
+Vencimento: 10/10/2018 Nº da fatura:0692413525-0
+Código do cliente: 8999 9850 1448 DV: 2
+Dados da Cobrança:
+Vivo Fibra 25 Mbps GT12 UFSP 23/08/2018 a 06/09/2018 25% 3,65% 21,77
+Ciclo de faturamento: 23/08/2018 a 22/09/2018 (31 dias)
+Data do cancelamento: 06/09/2018
+Valor do plano de internet no mês anterior: R$ 44,99 (arquivo 09.18.pdf)
+Quantidade de dias utilizados: 15 (quinze) dias
+Considerando os dados acima obtêm-se o valor de: R$ 21,7694
+Portanto o valor considerando o truncamento seria: R$ 21,76 e não R$ 21,77
+Nos termos do Informe nº 136/2024/CODI/SCO, após a interposição do recurso, opinou-se pela conversão da pena de multa em advertência, verbis:
+Informe nº 136/2024/CODI/SCO:
+3.44. Na Carta CT 1679_Resposta OF 157/2019 (4992515), a Prestadora informou ter tomado as ações de correção para o caso. Adicionalmente, disponibilizou à SCP cópia dos documentos de um outro cliente, com serviços similares que, segundo ela, demonstraria o truncamento da fração do centavo no valor cobrado (4992516).
+3.45. Portanto, mantém-se caracterizada a infração ao art. 66 do RGC, afetando 1 (um) usuário, no dia 10 de outubro de 2018. Porém, especificamente neste caso, entende-se pela aplicabilidade da sanção de advertência, com base no art. 12, I, do Rasa. Tal medida se justifica porque a Prestadora se esforçou em apresentar um caso similar cobrado corretamente e, embora não tenha havido a reparação ao usuário e a Prestadora tenha obtido uma "vantagem" direta, trata-se de truncamento dos centavos, com prejuízo de R$0,01 (um centavo) a 1 (um) usuário, por conta de uma diferença de "R$0,0006" entre o valor cobrado (R$21,77) e o valor calculado na fatura (R$21,7694).
+Assentados esses pontos, acolhe-se a proposta da área técnica de caracterização da infração, convertendo-se a sanção de multa em advertência. 
+III.b.7 - Sequencial 13 - art. 85 do RGC 2014 (ausência de devolução em dobro de valores cobrados indevidamente)
+O art. 85 do RGC 2014 traz as seguintes disposições no que diz respeito à devolução em dobro dos valores pagos indevidamente:
+RGC 2014:
+Art. 85. O Consumidor que efetuar pagamento de quantia cobrada indevidamente tem direito à devolução do valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die.
+Parágrafo único. A critério do Consumidor, os valores cobrados indevidamente devem ser devolvidos por meio de:
+I - compensação por meio de abatimento no documento de cobrança seguinte à data da identificação da cobrança indevida ou do decurso do prazo do art. 83, respeitado o ciclo de faturamento;
+II - pagamento por meio de créditos com validade mínima de 90 (noventa) dias ou com a validade do crédito contestado, o que for maior, considerando o prazo máximo de 10 (dez) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83; ou,
+III - pagamento via sistema bancário, considerando o prazo máximo de 30 (trinta) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83.
+No Informe nº 20/2022/CODI/SCO (SEI nº 7946788), assim restou fundamentada a caracterização da infração em comento, de forma remissiva a outras infrações reconhecidas em primeira instância:
+Informe nº 20/2022/CODI/SCO:
+3.162. Observa-se, neste ponto, que uma vez constatada a cobrança indevida na prática das outras condutas apuradas neste Procedimento, surge a obrigação de ressarcimento, na forma prevista no art. 85.
+3.163. Sobre o assunto, a empresa afirma em sua defesa administrativa que "todas essas condutas foram devidamente tratadas e corrigidas pela prestadora no período de março/2018 a julho/2020, uma vez que desenvolveu ações para a melhoria nos processos internos realizando as devidas correções e implantando novas medidas e procedimentos para atendimento da regulamentação".
+3.164. A prestadora não empreendeu esforços para demonstrar que houve a reparação do dano ao usuário nas condutas consideradas irregulares, pelo que resta configurada a infração ao art. 85, do RGC para 7.461 (sete mil, quatrocentos e sessenta e um) usuários.
+Para fins de maior clareza, a tabela abaixo irá sintetizar as condutas dos sequenciais do Despacho de Instauração que não constam informações do montante indevidamente cobrado e, por conseguinte, impossibilitam a estimativa da vantagem auferida:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Usuários atingidos
+ | 
+ 1
+ | 
+ Houve cobrança de valores referentes à prestação de serviço durante a suspensão a pedido.
+ | 
+ art. 67, §1º, do anexo à Resolução nº 632/2014
+ | 
+ 2
+ | 
+ 2 (vertente 1)
+ | 
+ Valores cobrados não estavam de acordo com as condições ofertadas e contratadas.
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ 24
+ | 
+ 2 (vertente 2)
+ | 
+ Não foram respeitadas as condições da oferta contidas na sua respectiva documentação.
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ 31
+ | 
+ 4
+ | 
+ Houve cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente.
+ | 
+ art. 14 do anexo à Resolução nº 632/2014
+ | 
+ 7.399
+ | 
+ 5
+ | 
+ Cobrança de serviços prestados após o prazo de processamento do pedido de rescisão automático, exceto o referente aos serviços usufruídos nesse período
+ | 
+ art. 15 do anexo à Resolução nº 632/2014
+ | 
+ 1
+ | 
+ 14
+ | 
+ Houve cobrança indevida durante o período de suspensão total do plano.
+ | 
+ art. 95 do anexo à Resolução nº 632/2014
+ | 
+ 1
+ | 
+ Total de usuários atingidos
+ | 
+ 7.459
+ | 
+3.165. Portanto, não há nos autos informação do montante indevidamente cobrado dos 7.459 (sete mil, quatrocentos e cinquenta e nove) usuários, o que impossibilita estimar a vantagem auferida pela prestadora com a prática das condutas acima.
+3.166. Ademais, em relação ao art. 58, § 1º, do Anexo do RGC, verificou-se que dos 5 (cinco) casos apurados, a fiscalização não apontou o valor indevidamente cobrado de 1 (um) usuário do sistema Focus.
+3.167. Dessa forma, não consta a informação do montante devido para 7.460 (sete mil, quatrocentos e sessenta) usuários.
+3.168. Em relação aos 13 (treze) usuários indevidamente cobrados, cujos valores constam no Relatório de Fiscalização, faz-se o seguinte apanhado:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ Usuários atingidos
+ | 
+ Valor indevido
+ | 
+ 2 (vertente 3)
+ | 
+ Reajuste de valores superior ao previsto em contrato.
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ 8
+ | 
+ R$ 34,53
+ | 
+ 6
+ | 
+ As condições do Contrato de Permanência contidas na respectiva documentação não foram respeitadas.
+ | 
+ art. 58, § 2º, do anexo à Resolução nº 632/2014
+ | 
+ 4
+ | 
+ R$ 3,07
+ | 
+ 8
+ | 
+ Truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais.
+ | 
+ art. 66 do anexo à Resolução nº 632/2014
+ | 
+ 1
+ | 
+ R$ 0,01
+ | 
+ Total indevido
+ | 
+ 13
+ | 
+ R$ 37,61
+ | 
+Posteriormente, no Informe nº 136/2024/CODI/SCO (SEI nº 11839115), ressaltou-se que, embora a Prestadora afirme em sua defesa que corrigiu as condutas e desenvolveu ações de melhoria em seus processos internos, ela não empreendeu esforços para demonstrar a reparação dos danos aos usuários ou mesmo que não houve dano.
+Assim, mantém-se caracterizada a infração ao art. 85 do RGC 2014.
+III.b.8 - Sequencial 14 - art. 95 do RGC 2014 (cobrança indevida durante o período de suspensão total do plano)
+Segundo o art. 95 do RGC 2014, "[é] vedada a cobrança de assinatura ou qualquer outro valor referente ao serviço durante o período de suspensão total."
+A caracterização da infração decorreu da solicitação 28366.2018 no sistema Focus, na qual teria sido reconhecida a cobrança do serviço após suspensão.
+Além disso, assim esclarece o Informe nº 136/2024/CODI/SCO (SEI nº 11839115),
+Informe nº 136/2024/CODI/SCO:
+3.26. Conforme exposto no item 3.161 e seguintes do Informe nº 20/2022/CODI/SCO (7946788), sempre que é constatada uma cobrança indevida, nasce a obrigação de ressarcimento, na forma prevista no art. 85 do RGC. Mas, embora a Prestadora afirme em sua defesa que corrigiu as condutas e desenvolveu ações de melhoria em seus processos internos, ela não empreendeu esforços para demonstrar a reparação dos danos aos usuários ou mesmo que não houve dano.
+Do exposto, mantém-se caracterizada a infração.
+III.c - Situação das infrações apuradas
+A partir da fundamentação acima, conclui-se que os argumentos manejados pela Recorrente não se mostram aptos a infirmar a decisão ora recorrida. Propõe-se, por conseguinte, conhecer do Recurso Administrativo (SEI nº 8260681) e, no mérito, negar-lhe provimento, e, na mesma linha, conhecer da petição (SEI nº 13804917) e, no mérito, indeferir seus pedidos.
+Além disso, com base nos Informes nº 136/2024/CODI/SCO (de análise técnica do Recurso Administrativo, SEI nº 11839115), nº 329/2024/CODI/SCO (de análise das alegações em face da possibilidade de agravamento parcial da sanção, SEI nº 12624504) e nº 111/2026/CODI/SCO (de instrução complementar, SEI nº 15165427), propõe-se a reforma, de ofício, do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), no sentido de aplicar:
+a sanção de advertência, pela infração ao art. 66, caput, do RGC 2014; e
+a sanção de multa, no valor total nominal de R$ 385.553,00 (trezentos e oitenta e cinco mil, quinhentos e cinquenta e três reais), por descumprimento ao art. 67, § 1º, do RSCM e aos arts. 3º, I; 14; 15; 58, § 2º; 85 e 95 do RGC 2014.
+IV - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+A fundamentação apresentada está em consonância com esses objetivos, especialmente o descrito no inciso II mencionado acima. A aplicação de reprimenda à recorrente reforça os objetivos das políticas públicas da Anatel, promovendo a qualidade dos serviços de telecomunicações. Além disso, contribui para a confiabilidade esperada na correção de condutas indesejadas pelas prestadoras.
+Expõe-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade de estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada encontra-se alinhada aos objetivos estabelecidos, em especial àqueles dispostos no art. 5º, incs. III e VI, do Decreto nº 12.150/2024, bem como nos itens 1.5, xi, do memorando supracitado. No processo, apesar de ter sido reconhecida a ocorrência de algumas infrações, considerou-se a responsividade da recorrente. Além disso, promove-se mais segurança jurídica com a adoção de critérios mais claros quanto ao cálculo do valor proporcional de períodos inferiores a um ciclo.
+Esse alinhamento reforça e legitima a capacidade regulatória da Anatel para promover intervenções no mercado e, concomitantemente, fortalece a confiança na efetividade das medidas adotadas para a correção de condutas indesejadas praticadas pelas prestadoras.
+V - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento(PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades.
+A referida obra explora debates sobre os desafios e oportunidades dentro dessa temática. No capítulo 2, que trata da Autonomia Decisória, a autora Patrícia Pessoa Valente (2024, p. 49) destaca, já na introdução, que:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+No presente caso, a decisão adotada promove segurança jurídica e previsibilidade para os diversos agentes que integram o mercado regulado.
+VI - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE oferece orientação para auxiliar os formuladores de políticas na avaliação e melhoria da estrutura legal, regulatória e institucional voltada para a governança corporativa. O objetivo é apoiar a confiança e a integridade do mercado, promover a eficiência econômica, fomentar o crescimento sustentável e assegurar a estabilidade financeira. Os princípios de governança estabelecidos são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar, ademais, que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, os entendimentos adotados - especialmente no que diz respeito ao tratamento que deve ser dispensado à prestadora que busca resolver consensualmente as reclamações de seus consumidores - proporciona segurança jurídica e previsibilidade quanto às consequências de ações que contrariem a regulamentação.
+VII - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+O Brasil é um dos países signatários da referida Agenda, tendo, dessa forma, caráter cogente para o Poder Executivo brasileiro. Isso porque, em 2023, editou-se o Decreto nº 11.704, que instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inc. I), competindo-lhe, dentre outros pontos, acompanhar e monitorar o alcance dos ODS (art. 2º, inc. II) e identificar, sistematizar e divulgar boas práticas e iniciativas que colaborem para o alcance dos ODS (art. 2º, inc. IV). Tem-se, portanto, que a República firmou seu compromisso em buscar a implementação dos objetivos e indicadores da referida Agenda.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Pontua-se que a Agenda 2030 não faz incursões sobre as políticas públicas concretas de implementação desses objetivos e indicadores, cabendo essa atribuição às instituições governamentais dos países signatários. Assim, destaca-se que a edição do mencionado Decreto nº 11.704/2023 constitui um ato de reafirmação do compromisso brasileiro com a implementação dos ODS, sendo, novamente, de observância obrigatória pelos órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+Esta Agência, enquanto responsável pela concepção, implementação e monitoramento de políticas públicas relacionadas à ampliação da conectividade no setor de telecomunicações, dispõe de margem de discricionariedade para avaliar quais são as opções concretas de políticas públicas que estão mais alinhadas com a consecução dos ODS.
+O acesso da população ao serviço de telecomunicações com qualidade auxilia na concretização do Objetivo de Desenvolvimento Sustentável nº 1, que busca erradicar a pobreza até 2030. Mais especificamente, contribuirá para o alcance da Meta 1.4, que visa "garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como acesso a serviços básicos, novas tecnologias apropriadas e serviços financeiros".
+Os serviços de telecomunicações desempenham papel fundamental na promoção da educação por meios digitais, ao facilitar o acesso à informação e ao conhecimento, em consonância com o Objetivo de Desenvolvimento Sustentável nº 4, que visa assegurar uma educação de qualidade. Ao promover a melhoria contínua da qualidade dos serviços de telecomunicações, por meio de procedimentos administrativos voltados à proteção dos direitos dos consumidores, a Anatel contribui para proporcionar a crianças, jovens e adultos a conectividade indispensável para uma educação inclusiva e eficaz.
+Essa iniciativa está diretamente alinhada à Meta 4.4, que estabelece, “até 2030, aumentar substancialmente o número de jovens e adultos com habilidades relevantes, incluindo competências técnicas e profissionais, para emprego, trabalho decente e empreendedorismo”.
+Ao proporcionar novas oportunidades socioeconômicas por meio da infraestrutura de telecomunicações, a decisão contribui para o desenvolvimento econômico sustentável do país, tendo como referência o Objetivo nº 8, especialmente a Meta 8.1 ("Manter o crescimento econômico per capita em conformidade com as condições nacionais e, em particular, pelo menos 7% de crescimento econômico anual nos países menos desenvolvidos). Nesse contexto, empresas locais poderiam expandir seus mercados por meio do trabalho e realização de reuniões remotas, inserindo seus produtos e serviços no meio digital, podendo alcançar consumidores e fornecedores até mesmo globalmente. O acesso aos serviços de telecomunicações pode proporcionar não só a comunicação da população, mas também o acesso ao conhecimento, a treinamentos, mas, igualmente, à venda dos produtos produzidos na região, promovendo o desenvolvimento socioeconômico.
+Por sua vez, observa-se que a decisão a ser adotada tem fundamento no Objetivo de Desenvolvimento Sustentável nº 9, que tem por objeto "construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação" e está atrelada principalmente à Meta 9.1 que visa "desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos". Isso porque a decisão garante a qualidade e a resiliência dos serviços de telecomunicações ofertados.
+O acesso aos serviços de telecomunicações certamente tem como referência a redução das desigualdades (ODS 10), uma vez que visa melhorar o acesso a serviços essenciais, como saúde e educação, e promover a inclusão digital. Esta última tem o potencial de permitir que a população local receba mais informações e tenha oportunidades de acessar mais produtos e serviços oferecidos. A proposta, assim, encontra-se em consonância com a Meta 10.2 dos ODS, que é "até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra", pois objetiva assegurar a inclusão de todos os consumidores sem discriminação no atendimento presencial. Além disso, auxilia no cumprimento da Meta 10.3, que é "garantir a igualdade de oportunidades e reduzir as desigualdades de resultados, inclusive por meio da eliminação de leis, políticas e práticas discriminatórias e da promoção de legislação, políticas e ações adequadas a este respeito", em que o cumprimento de normas de acessibilidade é um elemento chave para essa meta.
+A decisão que se toma contribui para o cumprimento do Objetivo 16 da Agenda 2030, que busca promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis. A educação das empresas para que respeitem integralmente os direitos básicos dos consumidores e prestem serviços adequados está em consonância com a meta 16.3, pois promove o Estado de Direito em nível nacional, garantindo igualdade de tratamento para todas as partes interessadas no tema.
+Ademais, há uma relação direta com a meta 16.7, já que a tomada de decisão pelo ente regulador, por meio do sancionamento pautado à luz do comportamento da prestadora junto aos seus consumidores, assegura uma atuação responsiva, inclusiva e participativa da sociedade como um todo.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo, como foco principal, o desenvolvimento humano no Brasil e no Mundo. As principais dimensões desse projeto têm natureza social, ambiental, econômica e institucional. O desenvolvimento global somente é concebível por um caminho sustentável, com medidas verdadeiramente transformadoras. Justamente por isso, foram definidos 17 objetivos e 169 metas globais interconectadas, a serem atingidos até 2030.
+Nesse ponto, pela relevância do tema, destaca-se o Objetivo 1 da Agenda 2030, que é o de acabar com a pobreza em todas as suas formas, em todos os lugares. Para o caso analisado, destacam-se as seguintes metas:
+Meta 1.3 - Implementar, em nível nacional, medidas e sistemas de proteção social adequados, para todos, incluindo pisos, e até 2030 atingir a cobertura substancial dos pobres e vulneráveis;
+Meta 1.4 - Até 2030, garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como o acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias apropriadas e serviços financeiros, incluindo microfinanças;
+Meta 1.a - Garantir uma mobilização significativa de recursos a partir de uma variedade de fontes, inclusive por meio do reforço da cooperação para o desenvolvimento, para proporcionar meios adequados e previsíveis para que os países em desenvolvimento, em particular os países menos desenvolvidos, implementem programas e políticas para acabar com a pobreza em todas as suas dimensões; e
+Meta 1.b - Criar marcos políticos sólidos em níveis nacional, regional e internacional, com base em estratégias de desenvolvimento a favor dos pobres e sensíveis a gênero, para apoiar investimentos acelerados nas ações de erradicação da pobreza.
+O Objetivo 1 se fundamenta na premissa mais sensível e elementar dentre todos os demais: a erradicação da pobreza extrema, condição que mais profundamente compromete o desenvolvimento dos países e a dignidade humana. Não à toa, figura como o primeiro objetivo da Agenda 2030. Todas as medidas regulatórias adotadas pela Anatel devem, em maior ou menor grau, considerar o enfrentamento sistemático e contínuo da pobreza.
+O Brasil demonstra comprometimento com o cumprimento dessas metas, destacando-se o estudo realizado pelo IPEA sobre a adequação dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 à realidade nacional. Tal estudo constitui relevante instrumento de apoio técnico e institucional às ações governamentais, subsidiando a formulação e a reformulação de políticas públicas e programas voltados ao desenvolvimento sustentável.
+Com essa iniciativa, o Brasil consolida sua posição ao dispor de um instrumento orientador para a territorialização dos ODS, mantendo-se fiel aos fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+conhecer da petição (SEI nº 13804917) e, no mérito, indeferi-la;
+conhecer do Recurso Administrativo (SEI nº 8260681) e, no mérito, negar-lhe provimento; e
+reformar, de ofício, a decisão consubstanciada no Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), a fim de aplicar:
+a sanção de advertência, pela infração ao art. 66, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC 2014), aprovado pela Resolução nº 632, de 7 de março de 2014; e
+a sanção de multa, no valor total nominal de R$ 385.553,00 (trezentos e oitenta e cinco mil, quinhentos e cinquenta e três reais), por descumprimento ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e aos arts. 3º, I; 14; 15; 58, § 2º; 85 e 95 do RGC 2014.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 09/04/2026, às 17:54, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15415313 e o código CRC 57DA3B0C.
+ | 
+Referência: Processo nº 53500.061122/2021-31 | 
+SEI nº 15415313 |

@@ -1,0 +1,43 @@
+SEI/ANATEL - 15636476 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 132, de 13 de maio de 2026
+Processo nº 53554.003061/2016-02
+Recorrente/Interessado: SERVIÇO AUTÔNOMO DE ÁGUA E ESGOTO DE ITAPETINGA - SAAE
+CNPJ nº 14.464.143/0001-69
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. SERVIÇO LIMITADO PRIVADO - SLP. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA - CFRP E TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO - TFF. EXERCÍCIOS 2015 E 2016. ANÁLISE DA ALEGAÇÃO DE AUSÊNCIA DE PRESTAÇÃO DE SERVIÇO DE TELECOMUNICAÇÕES. INOPERÂNCIA DOS EQUIPAMENTOS. CONTRATAÇÃO DE SERVIÇO ALTERNATIVO. IRRELEVÂNCIA. AUTARQUIA MUNICIPAL. ALEGAÇÃO DE BOA-FÉ. SERVIÇO MANTIDO ATIVO. AUSÊNCIA DE CANCELAMENTO FORMAL. FATO GERADOR CONFIGURADO. DESPROPORCIONALIDADE DA TAXA. NÃO CABIMENTO. ABATIMENTO DE 50% (CINQUENTA POR CENTO) NO PAGAMENTO DAS TAXAS DE FISCALIZAÇÃO CONFERIDO AOS GOVERNOS ESTADUAIS E MUNICIPAIS QUE PRESTAM SERVIÇO DE TELECOMUNICAÇÕES. CONCEDIDO. CONHECIMENTO E PROVIMENTO PARCIAL DO RECURSO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por SERVIÇO AUTÔNOMO DE ÁGUA E ESGOTO DE ITAPETINGA - SAAE contra decisão que reconheceu a procedência do lançamento de créditos tributários referentes à CFRP e à TFF, relativos aos exercícios de 2015 e 2016.
+2. Alegação de ausência de prestação do serviço, em virtude de equipamentos supostamente defeituosos e inoperantes desde 2010. Pretende-se o afastamento da cobrança.
+3. Fato superveniente relevante. No curso da análise recursal, foi suscitada dúvida sobre a aplicação do abatimento de 50% (cinquenta por cento) da TFF às autarquias municipais. A Procuradoria Federal Especializada junto à Anatel - PFE/Anatel manifestou-se pelo cabimento do benefício.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a alegada inoperância dos equipamentos e a ausência de prestação efetiva do serviço afastam a incidência da CFRP e da TFF; e saber se (ii) a autarquia municipal faz jus ao abatimento de 50% (cinquenta por cento) da TFF previsto na legislação do Fundo de Fiscalização das Telecomunicações - Fistel.
+III. RAZÕES DE DECIDIR
+1. O Recurso Administrativo foi interposto dentro do prazo legal de 30 (trinta) dias, sendo tempestivo.
+2. As informações constantes dos autos demonstram que a Recorrente possuía estações móveis licenciadas para o SLP, sujeitando-se ao recolhimento da CFRP e da TFF em valores fixos por estação. Improcedência da alegação de ausência de prestação do serviço nos anos de 2015 e 2016.
+3. A Recorrente não apresentou outras provas documentais capazes de afastar a presunção de veracidade dos lançamentos efetuados pela fiscalização.
+4. Alegação de boa-fé fundada no desconhecimento da necessidade de cancelamento formal não elide a obrigação tributária. Irrelevância da ausência de dolo. 
+5. A taxa é devida independentemente da efetiva utilização, bastando a existência da outorga/licença.
+6. A CFRP e a TFF são tributos legais, constitucionais, vinculados à fiscalização estatal e cobrados nos termos da lei. Suas cobranças não configuram desproporcionalidade ou inconstitucionalidade, mas resultado da gestão prudente de recursos públicos. Legitimidade dos tributos.
+7. O art. 14 da Lei nº 5.070/1966 e o art. 32 da Resolução nº 255/2001 preveem abatimento de 50% (cinquenta por cento) nas taxas de fiscalização para serviços de telecomunicações realizados pelos Governos Estaduais e Municipais e pelos órgãos federais.
+8. A PFE/Anatel concluiu que a expressão “Governos Estaduais e Municipais” alcança também a administração indireta estadual e municipal de direito público. Desse modo, a Recorrente, na condição de autarquia municipal e pessoa jurídica de direito público, faz jus ao abatimento de 50% (cinquenta por cento) sobre a TFF.
+9. O abatimento não se estende à CFRP, por possuir natureza jurídica distinta e não estar abrangida pela hipótese legal de redução.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e parcialmente provido.
+Tese de julgamento: "1. O Recurso Administrativo interposto no prazo legal deve ser conhecido. 2. A existência de estações móveis licenciadas para o Serviço Limitado Privado caracteriza a obrigação de recolhimento da CFRP e da TFF. 3. Serviço ativo sem cancelamento formal. 4. A autarquia municipal, como pessoa jurídica de direito público da administração indireta, faz jus ao abatimento de 50% (cinquenta por cento) da TFF previsto na legislação do Fistel. 4. O abatimento de 50% (cinquenta por cento) não se aplica à CFRP."
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 5/2026/NP (SEI nº 15271077), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, dar-lhe provimento parcial para revisar os créditos de TFF, dos exercícios de 2015 e 2016, a fim de conceder o abatimento de 50% (cinquenta por cento) e rever multa e juros, de modo que o tributo federal e seus encargos sejam revisados de [informação sigilosa - item 5 - SEI nº 15600901]; e,
+b) manter os valores de CFRP, dos exercícios de 2015 e 2016, constituídos pela Notificação de Lançamento nº 080-005206/2016/GR08-ANATEL (SEI nº 1997552) no valor total de [informação sigilosa - item 6 - SEI nº 15600901].
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15636476 e o código CRC E0839AA6.
+ | 
+Referência: Processo nº 53554.003061/2016-02 | 
+SEI nº 15636476 |

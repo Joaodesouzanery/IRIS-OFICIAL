@@ -1,0 +1,386 @@
+SEI/ANATEL - 15146571 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 18/2026/AF
+Processo nº 53500.061122/2021-31
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso administrativo interposto por Telefônica Brasil S.A. em face do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), de 8 de março de 2022, por meio do qual lhe foi aplicada sanção de multa no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão dos infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, incs. I e XIII, 14, 15, 58, § 2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. PROCEDIMENTO ADMINISTRATIVO DE DESCUMPRIMENTO DE OBRIGAÇÕES (PADO). INFRAÇÕES ao Regulamento do Serviço de Comunicação Multimídia e AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇO DE TELECOMUNICAÇÕES DE 2014. TRANSPARÊNCIA NA COBRANÇA. COBRANÇA INDEVIDA DE VALORES. PRORROGAÇÃO DE PRAZO PARA SUBMISSÃO AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+1. Recurso administrativo interposto por Telefônica Brasil S.A. em face do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), de 8 de março de 2022, por meio do qual lhe foi aplicada sanção de multa no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão dos infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, incs. I e XIII, 14, 15, 58, § 2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+2. Processo incluído automaticamente na pauta da Reunião do Conselho Diretor, conforme previsto no Regimento Interno da Anatel.
+II. QUESTÃO EM DISCUSSÃO: (i) validade do Despacho de Instauração; (ii) punibilidade e apresentação de plano de ação; (iii) requisitos da aplicação de advertência; (iv) retratação recursal e novo despacho decisório; (v) possibilidade de reformatio in pejus; (vi) materialidade das infrações; e (vii) dosimetria da multa no caso de cobrança indevida.
+III. RAZÕES DE DECIDIR
+1. O processo foi incluído automaticamente na pauta da Reunião do Conselho Diretor, nos termos do art. 127, § 3º, do Regimento Interno da Anatel.
+2. A matéria apresenta relevância e complexidade, exigindo análise aprofundada.
+3. O Regimento Interno da Anatel permite a prorrogação do prazo para submissão da matéria ao Conselho Diretor, mediante justificativa.
+IV. DISPOSITIVO
+Prorrogação do prazo para submissão da matéria ao Conselho Diretor por mais 120 dias.
+REFERÊNCIAS
+Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor).
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 (Lei do Processo Administrativo - LPA).
+Resolução nº 589, de 7 de maio de 2012 (Regulamento de Aplicação de Sanções Administrativas - RASA).
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Anatel - RIA).
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC).
+RELATÓRIO
+Trata-se de recurso administrativo interposto por Telefônica Brasil S.A. em face do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), de 8 de março de 2022, por meio do qual lhe foi aplicada sanção de multa no valor de R$ R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão dos infrações ao art. 67, § 1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, incs. I e XIII, 14, 15, 58, § 2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014.
+O Pado foi instaurado em 03 de setembro de 2021, por meio do Despacho Ordinatório de Instauração nº 44/2021/CODI/SCO (SEI nº 7312415), em que, a partir dos achados constantes do Relatório de Fiscalização nº 0414/2019/GR01, constantes do Processo de Fiscalização / Fiscalização Regulatória nº 53504.012680/2018-37, imputaram-se as seguintes condutas à recorrente:
+ Sequencial
+ | 
+ Conduta
+ | 
+ Infração ao
+ | 
+ 1
+ | 
+ Houve cobrança de valores referentes à prestação de serviço durante a suspensão a pedido.
+ | 
+ art. 67, § 1º, do anexo à Resolução nº 614/2013
+ | 
+ 2
+ | 
+ Valores cobrados não estavam de acordo com às condições ofertadas e contratadas.
+ | 
+ art. 3º, I, do anexo à Resolução nº 632/2014
+ | 
+ Não foram respeitadas as condições da oferta contidas na sua respectiva documentação.
+ | 
+ Reajuste de valores superior ao previsto em contrato.
+ | 
+ 3
+ | 
+ Houve cobrança de serviços não solicitados pelo consumidor.
+ | 
+ art. 3º, XIII, do anexo à Resolução nº 632/2014
+ | 
+ 4
+ | 
+ Houve cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente.
+ | 
+ art. 14 do anexo à Resolução nº 632/2014
+ | 
+ 5
+ | 
+ Cobrança de serviços prestados após o prazo de processamento do pedido de rescisão automático, exceto o referente aos serviços usufruídos nesse período.
+ | 
+ art. 15 do anexo à Resolução nº 632/2014
+ | 
+ 6
+ | 
+ As condições do Contrato de Permanência contidas na respectiva documentação não foram respeitadas.
+ | 
+ art. 58, § 2º, do anexo à Resolução nº 632/2014
+ | 
+ 7
+ | 
+ Reajuste de valores em prazo inferior a 12 (doze) meses.
+ | 
+ art. 65 do anexo à Resolução nº 632/2014
+ | 
+ 8
+ | 
+ Truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais.
+ | 
+ art. 66 do anexo à Resolução nº 632/2014
+ | 
+ 9
+ | 
+ O faturamento não corresponde a 30 dias de prestação do serviço.
+ | 
+ art. 73 do anexo à Resolução nº 632/2014
+ | 
+ 10
+ | 
+ As informações do Relatório Detalhado não foram apresentadas de forma adequada.
+ | 
+ art. 74, V, VI e VIII "d", do anexo à Resolução nº 632/2014
+ | 
+ 11
+ | 
+ O documento de cobrança foi entregue ao Consumidor com antecedência inferior a 5 (cinco) dias da data de vencimento.
+ | 
+ art. 76 do anexo à Resolução nº 632/2014
+ | 
+ 12
+ | 
+ A Prestadora não enviou, mediante solicitação do consumidor, documento de cobrança com, no mínimo, o demonstrativo dos valores parciais e o valor total para pagamento, escritos em braile.
+ | 
+ art. 76, § 5º, do anexo à Resolução nº 632/2014
+ | 
+ 13
+ | 
+ Não houve devolução em dobro, acrescido de correção, de valores cobrados indevidamente.
+ | 
+ art. 85 do anexo à Resolução nº 632/2014
+ | 
+ 14
+ | 
+ Houve cobrança indevida durante o período de suspensão total do plano.
+ | 
+ art. 95 do anexo à Resolução nº 632/2014
+ | 
+Em 07 de outubro de 2021, a Prestadora apresentou Defesa (SEI nº 1348858), alegando os seguintes pontos:
+as irregularidades para os itens 2 (terceira conduta), 3 e 9, do Despacho de instauração, já haviam sido descaracterizadas no Informe nº 49/2020/CPAE/SCP (SEI nº 5813521);
+eventual sanção deve ser, no máximo, de advertência, seja em razão do art. 12, inc. II, do RASA, seja pela baixa reprovabilidade e ofensividade das condutas atribuídas;
+os sequenciais 10, 11 e 12 do Despacho de Instauração não estão caracterizados;
+os sequenciais 1, 2, 4, 5, 6 e 13 foram solucionados antes da instauração do Pado;
+para o sequencial 7, o processo se encontra viciado, pois a fiscalização concluiu pela regularidade da conduta; e
+as irregularidades relacionadas aos sequenciais 8 e 14 foram solucionadas e são inexpressivas.
+Ao fim, pede:
+a concessão de prazo mínimo de 90 dias para que a área competente possa emitir certidão acerca do cumprimento do Plano de Ação;
+a descaracterização de infrações;
+subsidiariamente, a aplicação de sanção de advertência; e
+subsidiariamente, a aplicação de atenuantes previstas no art. 20 do RASA.
+Em 08 de outubro de 2021, foi encerrada a instrução processual, conforme Certidão (SEI nº 7521116).
+Em 08 de novembro de 2021, a recorrente apresentou Alegações Finais (SEI nº 7634780), nas quais sustenta que o encerramento da instrução processual ocorreu de maneira prematura e sem justificativa, pois não houve manifestação da Anatel sobre a defesa nem delimitação dos pontos controvertidos. Reforça e faz remissão, ainda, às teses expostas em defesa, como a descaracterização dos itens 10, 11 e 12, e a aplicação de sanção de advertência, especialmente quanto às irregularidades corrigidas durante a execução do plano de ação.
+Em 21 de dezembro de 2021, a recorrente protocolizou petição (SEI nº 7839130), por meio da qual faz juntada de cópia do Informe nº 108/2021/CPAE/SCP (SEI nº 7839131), defendendo que a Anatel teria atestado o cumprimento do Plano de Ação apresentado.
+Em 08 de março de 2022, por meio do Despacho Decisório nº 11/2022/CODI/SCO (SEI nº 7961758), recorrente foi condenada, em primeira instância administrativa, nos seguintes termos:
+O SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a disposta no art. 158, inciso IV, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do processo em epígrafe, instaurado em desfavor da Telefônica Brasil S.A., CNPJ/MF nº 02.558.157/0001-62, prestadora do Serviço de Comunicação Multimídia (SCM), para apurar indícios de descumprimentos ao Regulamento do Serviço de Comunicação Multimídia - RSCM, aprovado pela Resolução nº 614, de 28 de maio de 2013 e ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014;
+CONSIDERANDO o teor do Informe nº 20/2022/CODI/SCO (SEI 7946788);
+DECIDE:
+1. Aplicar à prestadora a sanção de MULTA no valor de R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos), em razão dos descumprimentos ao art. 67, §1º, do Regulamento do Serviço de Comunicação Multimídia (RSCM), aprovado pela Resolução nº 614, de 28 de maio de 2013, e arts. 3º, I e XIII, 14, 15, 58, §2º, 66, 85 e 95, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC), aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do posterior ressarcimento aos usuários indevidamente cobrados, nos termos do art. 85 do RGC.
+O Despacho Decisório adotou a fundamentação do Informe nº 20/2022/CODI/SCO (SEI nº 7946788), em que se teceram as seguintes considerações:
+não houve cerceamento de defesa, pois a recorrente teve conhecimento preciso das imputações realizadas e não teve provas indeferidas, sendo desnecessário que haja manifestação sobre a defesa anteriormente à fase decisória do Pado;
+alegação de apresentação de um Plano de Ação no curso da ação de fiscalização e de sua aceitação formal não afasta a punibilidade das condutas investigadas;
+a aplicação da pena de advertência deve se dar à luz da redação do RASA anteriormente à redação dada pelo RFR, pois as condutas investigadas são anteriores a 2021;
+as seguintes condutas devem ser descaracterizadas:
+por ausência de materialidade:
+art. 65 do RGC 2014 (sequencial 7), concernente ao reajuste dos valores das tarifas ou preços em prazos inferiores a 12 (doze) meses, por ausência de materialidade;
+art. 73 do RGC 2014 (sequencial 9), sobre o faturamento em período não correspondente ao período de 30 (trinta dias);
+art. 76 do RGC 2014 (sequencial 11), relativa ao prazo para envio do documento de cobrança;
+art. 76, § 5º, do RGC 2014 (sequencial 12), que trata das formalidades para os documentos de cobrança enviados em braille, por ausência de materialidade quanto ao SCM, destacando-se que a constatação relacionada ao STFC já é objeto de apuração procedimento específico;
+por atipicidade: art. 74 do RGC 2014 (sequencial 10), relativas ao documento de cobrança, pelos seguintes fundamentos:
+ Inciso
+ | 
+ Fundamento
+ | 
+ V
+ | 
+ A prestadora não tem o dever de indicar a quantidade de dias em atraso.
+ | 
+ VI
+ | 
+ A prestadora não é obrigada a indicar os minutos de interrupção na fatura.
+ | 
+ VIII, alín. "d"
+ | 
+ A fiscalização limitou-se a analisar apenas o índice informado e o valor empregado no cálculo, sem examinar a ausência de comunicação acerca do reajuste.
+ | 
+as condutas a seguir devem ser sancionadas, em caráter pontual;
+art. 67, § 1º, do RSCM (sequencial 1), referente à proibição de cobrança para a suspensão do serviço contratado, para 02 (dois) usuários, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), com a exclusão de outras, ante a ausência de reparação do dano, e sem aplicação de sanção de advertência, ante o seu caráter grave decorrente da vantagem direta à recorrente;
+art. 3º, inc. I, do RGC 2014 (sequencial 2):
+vertentes 1 (valores cobrados em desacordo com as condições ofertadas e contratadas) e 2 (desrespeito) às condições da oferta contidas na sua respectiva documentação): em relação a 24 (vinte e quatro) para a vertente 1 e a 31 (trinta e um) usuários para a vertente 2, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), com a exclusão de outras, ante a ausência de reparação do dano, e sem aplicação de sanção de advertência, ante o seu caráter grave decorrente da vantagem direta à recorrente;
+vertente 3 (referente à cobrança de chamada em valores superiores à oferta e contratação): em relação a 8 (oito) usuários, sem aplicação de atenuante, ante a ausência de reparação do dano;
+art. 3º, inc. XIII, do RGC 2014 (sequencial 3), referente ao fornecimento do pacote "Serviços Digitais" sem prévia solicitação, para 1.941.850 (um milhão, novecentos e quarenta e um mil, oitocentos e cinquenta) usuários, sendo 1.053.494 (um milhão, cinquenta e três mil quatrocentos e noventa e quatro) clientes do PLANO VIVO FIBRA INTERNET 15 Mbps e 888.356 (oitocentos e oitenta e oito mil trezentos e cinquenta e seis) do plano PLANO VIVO FIBRA INTERNET 25 Mbps, sem aplicação de atenuante, por se tratar de infração média, com vantagem direta ao infrator;
+art. 14 do RGC 2014 (sequencial 4), relativa cobrança de serviços prestados após o pedido de rescisão processado com intervenção do atendente, com 7.399 (sete mil, trezentos e noventa e nove) usuários atingidos, sem aplicação de atenuantes e sem conversão em advertência;
+art. 15 do RGC 2014 (sequencial 5), referente à cobrança indevida de serviços prestados após o prazo de processamento do pedido de rescisão automático, para um único usuário, sem aplicação de atenuantes e sem conversão em advertência;
+art. 58, § 2º, do RGC 2014 (sequencial 6), que trata da observância das condições de permanência contratualmente estabelecidas, para 05 (cinco) usuários, sem aplicação de atenuantes e sem conversão em advertência;
+art. 66 do RGC 2014 (sequencial 8), que versa sobre o truncamento incorreto na cobrança da fração do centavo na apresentação dos valores finais, para um usuário, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), sem conversão em advertência, ante a vantagem direta à recorrente;
+art. 85 do RGC 2014 (sequencial 13), omissão na devolução em dobro de valores cobrados indevidamente, devidamente atualizados, para 7.473 (sete mil, quatrocentos e setenta e três) usuários, sendo possível estimar a vantagem auferida pela prestadora apenas em relação a 13 (treze) usuários, no valor total de R$ 37,61
+art. 95 do RGC 2014 (sequencial 14), acerca da cobrança de valores durante o período de suspensão total, para um usuário, com aplicação de atenuante de confissão (art. 20, inc. V, do RASA), sem conversão em advertência, ante a vantagem direta à recorrente;
+as demais variáveis empregadas no cálculo da multa foram as seguintes:
+Gravidade: exceto para o sequencial 3 (art. 3º, inc. XIII), classificada como "média", todas foram classificadas como "graves";
+Dano: fixado no mínimo regulamentar para cada uma das infrações;
+Tempo: "até 1 ano", tendo em vista que as infrações descritas limitam-se ao período de 30/06/2018 a 19/06/2019;
+ROL: correspondente ao ano de 2019, mais recente disponível no banco de dados da Anatel na época da aplicação da sanção.
+foram identificados três antecedentes, sem reincidências específicas;
+embora o plano de ação tenha sido devidamente cumprido, a ausência de reparação do usuários não autoriza a incidência de atenuantes referidas no art. 20, incs. I a IV, do RASA, reconhecendo-se, assim, apenas a aplicação da atenuante de confissão (art. 20, inc. V, do RASA) para algumas infrações, conforme visto anteriormente;
+as multas foram assim calculadas, totalizando R$ 1.668.210,50 (um milhão, seiscentos e sessenta e oito mil duzentos e dez reais e cinquenta centavos):
+ Dispositivo infringido
+ | 
+ Conclusão da análise
+ | 
+ Valor individual da multa
+ | 
+ Art. 67, § 1º, Res. 614/2013
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 3º, I, do Anexo do RGC (vertentes 1 e 2)*
+ | 
+ Caracterizada
+ | 
+ R$ 6.497,43
+ | 
+ Art. 3º, I, do Anexo do RGC (vertente 3)
+ | 
+ Caracterizada
+ | 
+ R$ 2.915,32
+ | 
+ Art. 3º, XIII, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 1.436.313,65
+ | 
+ Art. 14, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 104.780,06
+ | 
+ Art. 15, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 58, § 2º, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 65, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 66, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ Art. 73, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, V, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, VI, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 74, VIII, d, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 76, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 76, §5º, do Anexo do RGC
+ | 
+ Descaracterizada
+ | 
+ -
+ | 
+ Art. 85, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 105.204,04
+ | 
+ Art. 95, do Anexo do RGC
+ | 
+ Caracterizada
+ | 
+ R$ 2.500,00
+ | 
+ * Tendo em vista que as infrações possuem a mesma natureza e características, optou-se por fazer o cálculo da multa em conjunto.
+ | 
+Em 1º de abril de 2022, houve interposição de recurso administrativo (SEI nº 8260681), tendo a recorrente alegado, em síntese, que o indeferimento dos pedidos de conversão de multa em advertência se deu em desacordo com os regulamentos aplicáveis, devendo ser aplicado, inclusive, o princípio da retroatividade da norma mais benéfica. Ao fim, ela pede a aplicação dessa conversão para as condutas sancionadas.
+Em 04 de abril de 2022, certificou-se a atribuição de efeito suspensivo ao recurso (SEI nº 8262449).
+Em 07 de maio de 2024, por meio do Informe nº 136/2024/CODI/SCO (SEI nº 11839115), a área técnica tece as seguintes considerações ao examinar o recurso interposto:
+o recurso atende aos pressupostos de admissibilidade e, portanto, deve ser conhecido;
+a avaliação da conversão da multa em advertência deve se dar à luz da redação do art. 12 do RASA, dada pelo RFR, pois o processo se encontrava pendente de decisão na data do início da vigência do RFR, consoante previsão estabelecida no seu art. 5º, caput e parágrafos;
+a infração sequencial 3 deve ser descaracterizada, por ausência de materialidade;
+devem ser mantidas as infrações sequenciais 1, 2 (neste caso, com descaracterização no que diz respeito ao item 11 do Relatório de Fiscalização, mas com majoração de usuários atingidos para 68), 4 (com diminuição dos usuários atingidos para 7.372 - sete mil trezentos e setenta e dois, no período de 31 de julho a 31 de agosto de 2018), 5 (em 19 de agosto de 2018), 6 (entre 19 de fevereiro e 15 de outubro de 2018), 8 (dia 10 de outubro de 2018, para um usuário, propondo-se a substituição por advertência), 13 (para 7.450 - sete mil quatrocentos e cinquenta - usuários, no período de 14 de agosto de 2017 a 15 de outubro de 2018) e 14 (para um usuário, em 4 de janeiro de 2018);
+para o cálculo da multa:
+Gravidade: todas as infrações ainda caracterizadas foram classificadas como "graves", adotando-se o entendimento constante da decisão recorrida;
+Usuários totais: empregou-se o valor de 7.386.273 (sete milhões, trezentos e oitenta e seis mil duzentos e setenta e três), correspondente ao total de acessos SCM da recorrente;
+Dano: mantido no menor valor, adotando-se o entendimento constante da decisão recorrida;
+Tempo: ajustado para a duração de cada infração;
+ROL: empregou-se a do ano de 2019, para o SCM;
+Agravantes: foram identificados três antecedentes, sem reincidências específicas;
+Atenuantes: aplicou-se a atenuante de confissão (art. 20, inc. V, do RASA) para os sequenciais 1, 2 e 14;
+em seguida, propôs-se a aplicação da multa nos seguintes termos:
+ Dispositivo infringido
+ | 
+ Sanção (multa ou advertência)
+ | 
+ Art. 67, § 1º, do RSCM
+ | 
+ R$5.000,00
+ | 
+ Art. 3º, I, do RGC
+ | 
+ R$15.948,31
+ | 
+ Art. 14, caput, do RGC
+ | 
+ R$179.079,31
+ | 
+ Art. 15, caput, do RGC
+ | 
+ R$5.000,00
+ | 
+ Art. 58, § 2º, do RGC
+ | 
+ R$5.511,74
+ | 
+ Art. 66, caput, do RGC
+ | 
+ Advertência
+ | 
+ Art. 85, caput, do RGC
+ | 
+ R$196.508,62
+ | 
+ Art. 95, caput, do RGC
+ | 
+ R$5.000,00
+ | 
+ Total
+ | 
+ R$412.047,98
+ | 
+ao final, propôs a instauração de procedimento para acompanhamento do ressarcimento aos usuários e a notificação da prestadora ante o agravamento de elementos que repercutem no cálculo da multa, notadamente os D fatores D (dano), T (tempo) e G (gravidade).
+Em 04 de junho de 2024, a recorrente se manifesta (SEI nº 12073127), alegando que não é possível a reformatio in pejus em sede recursal e que seria necessário novo despacho decisório, de modo que fosse aplicado fator de redução de 25%.
+Em 09 de outubro de 2024, a área técnica, por meio do Informe nº 329/2024/CODI/SCO (SEI nº 12624504) opina pela rejeição da tese de impossibilidade de agravamento, nos termos do Enunciado nº 22, da Súmula da Anatel, e pelo indeferimento do pedido de novo despacho decisório, com aplicação do fator de redução de 25%, pois não houve renúncia expressa ao direito de recorrer. Na mesma ocasião, encaminhou o processo à PFE/Anatel para manifestação.
+Em 04 de dezembro de 2024, a PFE/Anatel, por meio do Parecer 584/2024/PFE-ANATEL/PGF/AGU (SEI nº 12980794), pronuncia-se pela possibilidade de agravamento da sanção; pela impossibilidade de aplicação do fator de redução a que se refere o art. 33, § 5º, do RASA; pela utilização da ROL de 2021 como base para aplicação da sanção, considerando a totalidade da pessoa jurídica, sem distinção geográfica entre matriz e filiais; e pelo emprego de antecedentes considerando a íntegra dos serviços prestados.
+Em 28 de abril de 2025, por meio do Informe nº 317/2025/CODI/SCO (SEI nº 13533002), a área técnica, em resposta ao parecer acima, destacou que foi empregada a ROL mais recente disponível à época da sanção, e que, conforme entendimento do Conselho Diretor, "o cálculo das multas deve ser realizado de forma segregada, levando em consideração apenas os antecedentes relacionados aos serviços onde foram identificadas as irregularidades".
+Ao final, ratificou o entendimento trazido no Informe nº 136/2024/CODI/SCO (SEI nº 11839115), quanto às infrações e sanções ali referidas e propôs o encaminhamento do processo ao Conselho Diretor.
+Na mesma data, a SCO, por meio do Despacho Decisório nº 223/2025/CODI/SCO (SEI nº 13534433), decide conhecer o recurso interposto e encaminhar o processo ao Conselho Diretor e, consoante Matéria para Apreciação do Conselho Diretor 408 (SEI nº 13534048), encaminhou o processo à Superintendência Executiva (SUE).
+Em 30 de abril de 2025, a SUE encaminhou o processo à Secretaria do Conselho Diretor por meio de Despacho Ordinatório (SEI nº 13635051).
+O processo foi distribuído para a minha relatoria em 05 de maio de 2025, conforme Certidão de Distribuição (SEI nº Despacho Ordinatório 13642688).
+Em 04 de junho de 2025, a recorrente se manifesta (SEI nº 13804917), reiterando o pleito de substituição de sanção de multa por advertência e de prolação de novo despacho decisório, com vistas à aplicação do fator de redução a que se refere o art. 33, § 5º, do RASA.
+Em 11 de setembro de 2025, na 946º RCD, prorrogou-se a relatoria do caso por 120 (cento e vinte) dias, para a realização de diligência.
+É o relatório.
+FUNDAMENTAÇÃO
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo será automaticamente incluído na pauta da 950ª Reunião deste Colegiado, de 12 de fevereiro de 2025.
+O caso apresenta nuances e complexidade fáticas, relacionada à tarifação de serviços sem que houvesse a contraprestação respectiva ao usuário, demandando a conclusão de diligência determinada em 17 de setembro de 2025, por meio do Ofício nº 155/2025/AF-ANATEL. 
+Por tal motivo, entende-se não ser possível a deliberação da matéria na data prevista regimentalmente, devendo-se prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Submete-se, assim, proposta de prorrogação do prazo de relatoria por mais 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto por prorrogar, por 120 (cento e vinte) dias, o prazo para submissão da matéria ao Conselho Diretor, com fundamento no art. 127, § 3º, do RIA.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 13/02/2026, às 16:27, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15146571 e o código CRC 7CD118CA.
+ | 
+Referência: Processo nº 53500.061122/2021-31 | 
+SEI nº 15146571 |

@@ -1,0 +1,473 @@
+SEI/ANATEL - 15189520 - Análise
+Boletim de Serviço Eletrônico em 13/03/2026
+Análise nº 25/2026/AF
+Processo nº 53500.032176/2025-12
+Interessado: VIASAT BRASIL SERVICOS DE COMUNICACOES LTDA
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Conferência de Direito de Exploração, no Brasil, do satélite brasileiro geoestacionário GX8, associado à posição orbital 72,5°O.
+Atualização do Ato nº 4141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais.
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE BRASILEIRO. SATÉLITE GEOESTACIONÁRIO GX8. REDE NOTIFICADA EM NOME DO BRASIL. ATENDIMENTO DOS REQUISITOS REGULAMENTARES. EXPEDIÇÃO DO ATO DE AUTORIZAÇÃO CONDICIONADA. ATUALIZAÇÃO DA LISTA DE PRIORIDADE DE COORDENAÇÃO. PEDIDO PROCEDENTE.
+I. CASO EM EXAME
+1. VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA requereu direito de exploração, no Brasil, do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, para provimento de capacidade satelital nas faixas de 18,2 GHz a 20,2 GHz (descida) e 28 GHz a 30 GHz (subida), pelo prazo de 15 anos.
+2. O pedido inclui operação em todo o território nacional, sem caráter de exclusividade, e está condicionado ao recolhimento do preço público e à apresentação de garantia de execução de compromisso.
+3. A Superintendência de Outorga e Recursos à Prestação manifestou-se favoravelmente ao atendimento da solicitação, condicionando a expedição do ato ao cumprimento das exigências.
+4. A área técnica propôs a atualização do Ato nº 4141/2025, que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, para inclusão do satélite GX8.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão atendidos os requisitos legais e regulamentares para a conferência do direito de exploração do satélite brasileiro geoestacionário GX8 à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA e se é necessária a atualização da Lista de Prioridade de Coordenação de sistemas satelitais.
+III. RAZÕES DE DECIDIR
+ Compete ao Conselho Diretor decidir sobre direito de exploração de satélites, conforme Lei nº 9.472/1997 e Regimento Interno da Anatel.
+ O pedido atendeu aos requisitos do Regulamento Geral de Exploração de Satélites (RGSat), incluindo apresentação de documentação, regularidade fiscal, projeto técnico e declarações exigidas.
+ A VIASAT BRASIL manifestou interesse em utilizar recursos de órbita e espectro em nome do Brasil, assumindo responsabilidade pelos procedimentos de coordenação e notificação da rede B-SAT-72.5W.
+ Foram apresentados comprovantes de pagamento das taxas de recuperação de custos à UIT.
+ A documentação comprova a constituição da empresa sob as leis brasileiras, regularidade cadastral e atendimento às condições de outorga.
+ Não foi necessária a realização de consulta pública, conforme Ato nº 4430/2023.
+ O prazo de vigência solicitado está de acordo com o limite regulamentar de 15 anos.
+ A expedição do direito de exploração de satélite brasileiro está condicionada à apresentação de garantia de execução de compromisso, conforme previsto no RGSat.
+ As faixas de frequências solicitadas estão atribuídas e destinadas a serviços compatíveis, e a rede de satélites está notificada em nome do Brasil.
+ A coordenação com satélites com prioridade foi tratada nos termos do art. 18 do RGSat, com manifestação expressa da interessada quanto à operação sem direito à proteção e sem causar interferência prejudicial.
+ Não há obrigatoriedade de manifestação da Procuradoria Federal Especializada para o caso.
+ A atualização da Lista de Prioridade de Coordenação é necessária para refletir a inclusão do presente direito, conforme proposta da área técnica.
+ A decisão observa o Decreto nº 11.738/2023 (PRO‑REG), e à Estratégia Regula Melhor, estabelecida pelo Decreto nº 12.150/2024, pois observou os trâmites legais, permitindo a expansão da infraestrutura de telecomunicações no Brasil, fomentando a oferta de conectividade e serviços, e promovendo o uso eficiente dos recursos de órbita e espectro.
+ A decisão atende as recomendações do QualiREG/CGU sobre autonomia decisória das agências e procedimentos legitimadores, assegurando previsibilidade e segurança jurídica ao ato de conferência do direito de exploração.
+ A conferência do direito de exploração está alinhada às orientações da OCDE sobre o novo ambiente de comunicações por satélite e sobre transformação digital no Brasil.
+ A decisão auxilia na concretização de Objetivos do Desenvolvimento Sustentável, em especial as metas para os ODS 1 (metas 1.4 e 1.5), ODS 8 (meta 8.2), ODS 9 (metas 9.1 e 9.c) e ODS 11 (meta 11.b), por meio da expansão de conectividade, inclusão digital e resiliência da infraestrutura.
+IV. DISPOSITIVO E TESE
+ Pedido procedente. Conferido o direito de exploração à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA, no Brasil, do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, para provimento de capacidade satelital nas faixas de 18,2 GHz a 20,2 GHz e 28 GHz a 30 GHz, pelo prazo de 15 anos, condicionado ao recolhimento do preço público e à apresentação de garantia de execução de compromisso. Determinada a atualização do Ato nº 4141/2025 para inclusão do satélite GX8.
+Tese de julgamento: "1. Atendidos os requisitos legais e regulamentares, é conferido à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA o direito de exploração do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, pelo prazo de 15 anos, nas faixas de 18,2 GHz a 20,2 GHz e 28 GHz a 30 GHz, condicionado ao recolhimento do preço público e à apresentação de garantia de execução de compromisso. 2. Determina-se a atualização da Lista de Prioridade de Coordenação de sistemas satelitais para inclusão do satélite GX8."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 170 e 133; Resolução nº 612/2013, art. 133; Resolução nº 748/2021 (RGSat), arts. 3º, 7º, 8º, 10, 16, 17, 18, 23, 24, 28, 29, 38; Ato nº 9.526/2021; Ato nº 4430/2023; Ato nº 4141/2025.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+LEGISLAÇÃO E ATOS 
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Decreto nº 10.402, de 17 de junho de 2020, que dispõe sobre a adaptação do instrumento de concessão para autorização de serviço de telecomunicações e sobre a prorrogação e a transferência de autorização de radiofrequências, de outorgas de serviços de telecomunicações e de direitos de exploração de satélites.
+Decreto nº 11.704, de 14 de setembro de 2023, que institui a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável.
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Resolução nº 612, de 29 de abril de 2013 - Regimento Interno da Anatel (RIA).
+Resolução nº 748, de 22 de outubro de 2021, que aprova o Regulamento Geral de Exploração de Satélites (RGSat).
+Resolução nº 772, de 16 de janeiro de 2025, que aprova o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF, promovendo as atribuições, destinações e condições específicas de uso de faixas de frequências nele dispostas.
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da PFE-Anatel.
+Despacho Decisório nº 8/2021/SUE, que institui a coleta periódica de dados técnico-operacionais e econômico-financeiros das operadoras detentoras de direito de exploração de satélite.
+Ato nº 9.523, de 27 de outubro de 2021, que aprova os requisitos técnicos e operacionais para sistemas de comunicação via satélite operando sobre o território brasileiro. 
+Ato nº 9.526, de 27 de outubro de 2021, que trata da documentação para solicitação de direito de exploração de satélite.
+Ato nº 4430, de 19 de abril de 2023, que aprova os compromissos para exploração de satélites e critérios para realização de consulta pública para conferência de direito de exploração de satélite. 
+Ato nº 4141, de 11 de abril de 2025, que aprova a Lista de Prioridade de Coordenação envolvendo sistemas de satélites não geoestacionários.
+BRASIL. Ministério do Desenvolvimento, Indústria, Comércio e Serviços; BRASIL. Advocacia-Geral da União; ESTADOS UNIDOS. Escritório de Gestão e Orçamento; ESTADOS UNIDOS. Departamento de Comércio. Memorando de Entendimento sobre Cooperação Conjunta em Boas Práticas Regulatórias. Washington, D.C., 20 set. 2024.
+BIBLIOGRAFIA
+GOMES, Lucas Thevenard; SALINAS, Natasha Schmitt Caccia; SAMPAIO, Patrícia Regina Pinheiro. Propostas para assegurar a efetividade das consultas e audiências públicas nos processos regulatórios. In: VALENTE, Patrícia Rodrigues Pessôa. Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024. p. 71-84. Disponível em: CGU. Acesso em: 19 fev. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). Earth’s Orbits at Risk: The Economics of Space Sustainability. Paris: OECD Publishing, 2022. Disponível em: Doi.org. Acesso em: 19 fev. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). Harnessing "New Space" for Sustainable Growth of the Space Economy. Paris: OECD Publishing, 2023. Disponível em: Doi.org. Acesso em: 19 fev. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). The Economics of Space Sustainability: Delivering Economic Evidence to Guide Government Action. Paris: OECD Publishing, 2024. Disponível em: Doi.org. Acesso em: 19 fev. 2026.
+ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT (OECD). The Space Economy in Figures: responding to global challenges. Paris: OECD Publishing, 2023. Disponível em: doi.org. Acesso em: 19 fev. 2026.
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). Objetivos de Desenvolvimento Sustentável no Brasil. [S. l.], 2023. Disponível em: brasil.org. Acesso em: 19 fev. 2026.
+VALENTE, Patrícia Rodrigues Pessôa. Autonomia Decisória. In: VALENTE, Patrícia Rodrigues Pessôa (org.). Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024. p. 49-55. Disponível em: CGU. Acesso em: 19 fev. 2026.
+RELATÓRIO
+Cuida-se de solicitação de Direito de Exploração do satélite brasileiro geoestacionário GX8 solicitado pela VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA., associado à posição orbital 72,5°O, para provimento de capacidade satelital, no Brasil, em parte das subfaixas de radiofrequências contidas na denominada banda Ka, pelo prazo de 15 (quinze) anos.
+A VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA apresentou, em 30 de abril de 2025, Requerimento de Direito de Exploração de Satélite (SEI nº 13635315), constante do Processo nº 53500.032176/2025-12, solicitando a conferência de Direito de Exploração do satélite brasileiro GX8, associado à posição orbital 72,5°O, pelo prazo de 15 (quinze) anos, com a finalidade de "exploração de várias redes de mobilidade para ESIMs aeronáuticas, marítimas e terrestres móveis". No Requerimento constam as seguintes subfaixas de radiofrequências a serem associadas, contidas na denominada banda Ka:
+ Frequências de Subida
+ | 
+ Frequências de Descida
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ Limite Inferior (MHz)
+ | 
+ Limite Superior (MHz)
+ | 
+ Polarização
+ | 
+ Largura de Faixa (MHz)
+ | 
+ 28.000
+ | 
+ 30.000
+ | 
+ LHCP/RHCP
+ | 
+ 2.000
+ | 
+ 18.200
+ | 
+ 20.200
+ | 
+ LHCP/RHCP
+ | 
+ 2.000
+ | 
+Em anexo ao Requerimento supracitado, a VIASAT BRASIL apresentou documentos complementares para subsidiar a análise do pleito, consistindo em: i) Informação CNPJ (SEI nº 13635317) e ii) Informação Contrato Social (SEI nº 13635319), correspondente à 18ª alteração do seu contrato social. 
+Ao analisar o requerimento, a Gerência de Outorga e Licenciamento de Estações (ORLE) elaborou os Check Lists de Análise (SEI nº 13690215, de 25 de junho de 2025, e nº 13872094, de 2 de julho de 2025), expediu o Ofício nº 5016/2025/ORLE/SOR-ANATEL, de 3 de julho de 2025 (SEI nº 13896240), encaminhando o processo em questão à Gerência de Espectro, Órbita e Radiodifusão (ORER), para solicitar análise do pleito quanto aos aspectos técnicos e de coordenação, em consonância com suas competências regimentais.
+Em 15 de setembro de 2025, por meio do Ofício nº 4595/2025/ORER/SOR-ANATEL (SEI nº 14343773), a ORER solicitou à VIASAT BRASIL apresentação dos esforços de coordenação e manifestação de interesse expressa na conferência do Direito de Exploração ao satélite GX8 conforme o § 1º do art. 18 do RGSat, ou seja, sem direito à proteção e sem causar interferência prejudicial aos satélites StarOne D2 (70°O) e SGDC (75°O), tendo em vista a não apresentação dos acordos de coordenação com as operadoras dos mencionados satélites até o momento.
+Em resposta ao referido Ofício, a VIASAT BRASIL solicitou, em 7 de outubro de 2025, a extensão do prazo para cumprimento das exigências por mais 15 (quinze) dias úteis (SEI nº 14514798), o que foi concedido por meio do Ofício nº 5139/2025/ORER/SOR-ANATEL, de 8 de outubro de 2025 (SEI nº 14523786).
+A VIASAT BRASIL apresentou as informações solicitadas em 23 de outubro de 2025 (SEI nº 14619844, nº 14619845 e nº 14619846). 
+A ORER se manifestou favoravelmente ao pedido por meio do Informe nº 945/2025/ORER/SOR, de 9 de dezembro de 2025 (SEI nº 14297165), e restituiu o processo à ORLE, por meio do Ofício nº 6294/2025/ORER/SOR-ANATEL, de mesma data (SEI nº 14833737).
+Em 05 de fevereiro de 2026, a Superintendência de Outorga e Recursos à Prestação (SOR) se manifestou, por meio do Informe nº 737/2026/ORLE/SOR (SEI nº 15074799), favoravelmente ao atendimento da solicitação formulada por VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA. quanto à conferência de Direito de Exploração, no Brasil, do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, para provimento de capacidade satelital nas faixas de frequências de 18,2 GHz a 20,2 GHz (enlace de descida) e 28 GHz a 30 GHz (enlace de subida), sem caráter de exclusividade e para operação em todo o território nacional, pelo prazo de 15 (quinze) anos, nos termos da minuta de Ato (SEI nº 15099542), condicionada a sua expedição:
+ao recolhimento do valor integral do preço público pelo Direito de Exploração de satélite no valor de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), ou, quando parcelado, do valor da primeira parcela; e
+à apresentação de garantia de execução de compromisso de colocar o Segmento Espacial em operação, no valor de 100 (cem) vezes o preço público pelo Direito de Exploração de satélite, na forma de carta de fiança bancária ou caução em dinheiro, e deverá ter prazo de vencimento de, no mínimo, 6 (seis) meses após o termo final do prazo para entrada em operação do segmento espacial.
+A SOR ainda alertou quanto à necessidade de atualizar o Ato nº 4141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato (SEI nº 14837114).
+Na mesma data, a SOR encaminhou o processo à Superintendência Executiva da Anatel (SUE) por meio da Matéria para Apreciação do Conselho Diretor (MACD) nº 56/2026 (SEI nº 15100265), reiterando a opinião favorável ao deferimento do direito de exploração de satélite brasileiro geoestacionário GX8 e à necessidade de alteração do Ato 4141, de 11 de abril de 2025.
+Por meio do Despacho Ordinatório (SEI nº 15167421), de 10 de fevereiro de 2026, a SUE encaminhou o processo à Secretaria do Conselho Diretor.
+O processo foi distribuído para minha relatoria em 12 de fevereiro de 2026 (SEI nº 15178161).
+É o relatório.
+DA ANÁLISE
+A fundamentação da presente Análise encontra-se dividida em sete partes. Na primeira, firma-se a competência do Conselho Diretor para proceder à avaliação do Direito de exploração de satélite. Na segunda, considera-se o arcabouço legal para conferência do direito de exploração. Na terceira, abordam-se o atendimento dos requisitos para a obtenção do direito de exploração de satélite. Por fim, fundamenta-se a presente decisão com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com o Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE), com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - Da Competência do Colegiado
+O art. 170 da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT), prevê que os requisitos para a conferência de Direito de Exploração de satélites serão definidos pela Anatel:
+Art. 170. A Agência disporá sobre os requisitos e critérios específicos para execução de serviço de telecomunicações que utilize satélite, geoestacionário ou não, independentemente de o acesso a ele ocorrer a partir do território nacional ou do exterior.
+De acordo com o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, compete ao Conselho Diretor decidir sobre direito de exploração de satélites e uso de radiofrequências associadas decorrentes de procedimentos licitatórios:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+IX - aprovar o plano de numeração e a conferência ou transferência de direito de exploração de satélite; (Redação dada pela Resolução nº 748, de 22 de outubro de 2021)
+Portanto, firma-se a competência do Conselho Diretor para decidir o pedido de direito de exploração de satélite brasileiro geoestacionário.
+II - Dos Requisitos Regulamentares
+De acordo com o art. 3º, inc. III, do RGSat, o Direito de Exploração de satélite é o ato administrativo que autoriza o uso de recursos de órbita e de radiofrequências para o controle e monitoração do satélite, a telecomunicação via satélite e o provimento de Capacidade Satelital, por satélite brasileiro ou estrangeiro, sobre todo o território brasileiro.
+Especificamente quanto à utilização de recursos orbitais em nome do Brasil, o RGSAT no art. 7º estabelece:
+Art. 7º As entidades interessadas em utilizar um novo recurso de órbita e espectro em nome do Brasil deverão encaminhar à Agência o formulário de solicitação de envio de Filing da Rede de Satélite, disponível no portal da Agência na Internet, e os formulários contendo as informações técnicas do Sistema de Comunicação via Satélite para envio à UIT, conforme estabelecido no RR.
+§ 1º As ações relacionadas ao Filing da Rede de Satélite, inclusive seu envio à UIT, estarão sujeitas à avaliação da Agência, podendo ser solicitadas informações adicionais.
+§ 2º O envio do Filing da Rede de Satélite à UIT não configura conferência de Direito de Exploração de Satélite ou autorização para uso de radiofrequências associada à autorização para exploração de serviço de telecomunicações e não assegura nenhum tipo de privilégio ou preferência para obtenção de tais outorgas.
+§ 3º A interessada que solicitou o envio do Filing da Rede de Satélite à UIT é responsável pelo cumprimento dos procedimentos regulatórios estabelecidos no RR e pelo pagamento da fatura de recuperação de custos gerada pela UIT.
+§ 4º Quando da submissão do Filing da Rede de Satélite à UIT, a Agência informará os dados da entidade responsável à UIT para que a fatura de recuperação de custos seja endereçada à interessada com cópia à Anatel.
+§ 5º O pagamento de que trata o § 3º deverá ser realizado dentro do prazo estabelecido pela UIT, sendo que:
+I - O não pagamento da fatura sujeitará a entidade responsável às sanções estabelecidas na regulamentação, além do cancelamento do Filing da Rede de Satélite pela UIT; e
+II - O comprovante de pagamento da fatura deve ser apresentado à Anatel em até 2 (dois) dias úteis após o pagamento.
+§ 6º No caso de recurso de órbita e espectro associado ao serviço Radioamador, é pré-requisito para envio do Filing da Rede de Satélite à UIT, a obtenção do Certificado de Operador de Estação de Radioamador (COER) apropriado, conforme regulamentação específica.
+Art. 8º Alternativamente ao disposto no artigo 7º deste Regulamento, a entidade interessada em utilizar recursos de órbita e espectro em nome do Brasil poderá assumir a responsabilidade pelo cumprimento dos procedimentos regulatórios estabelecidos no RR e pelo pagamento de fatura de recuperação de custos gerada pela UIT relativos a Filings de Redes de Satélites brasileiros existentes que não estejam sob responsabilidade de nenhuma Operadora de Satélite, desde que a indicação de interesse esteja vinculada à solicitação de outorga para uso de satélites.
+Parágrafo único. A escolha dos recursos de órbita e espectro é de inteira responsabilidade da entidade interessada, não cabendo quaisquer responsabilidades à Anatel.
+Art. 9º Para fins de registro internacional de responsabilidade sobre objetos espaciais, ante aos organismos internacionais competentes, satélites que tenham apenas carga útil associada a recursos de órbita e espectro radioelétrico em nome do Brasil na UIT deverão ser registrados pelo Brasil.
+Parágrafo único. Satélites que também tenham carga útil associada a recursos de órbita e espectro radioelétrico em nome de outras administrações poderão ser registrados pelo Brasil ou por estas administrações. (grifou-se)
+O art. 16 do RGSat estabelece os requisitos que devem ser atendidos para a obtenção, alteração ou prorrogação do direito de exploração de satélite brasileiro ou estrangeiro:
+Art. 16. Para obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro, a Operadora de Satélite ou seu representante legal, no caso de Satélite Estrangeiro, deverá formalizar solicitação perante a Agência, por meio de formulário eletrônico próprio, constante de sistema informatizado da Agência, e atender às seguintes condições gerais:
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências ou de Exploração de Satélite;
+III - dispor de qualificação jurídica e técnica para exploração de satélite, capacidade econômico-financeira e regularidade fiscal perante a Fazenda Federal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço;
+IV - apresentar projeto técnico simplificado do sistema de comunicação via satélite, devendo mantê-lo atualizado; e
+V - apresentar declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º O atendimento às condições previstas nos incisos deste artigo dar-se-á por meio da apresentação da documentação prevista em Ato do Superintendente responsável pela administração do uso do espectro de radiofrequência.
+§ 2º Detectado vício formal na documentação apresentada à Anatel quando da solicitação de direito de exploração de satélite, será concedido prazo razoável para que a interessada possa saná-lo.
+§ 3º A Anatel poderá, quando se mostrar relevante, requerer da interessada a comprovação de regularidade fiscal perante as esferas municipal e estadual do Poder Público.
+Em atendimento ao disposto no parágrafo 1º do artigo 16 do RGSat, foi expedido o Ato nº 9.526, de 27 de outubro de 2021 (SEI nº 7596501), que definiu a documentação a ser apresentada para atendimento das condições previstas nos incisos do mencionado artigo:
+Art. 1º Para fins de obtenção, alteração ou prorrogação de Direito de Exploração de Satélite Brasileiro ou Estrangeiro por operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, deverá ser apresentada a documentação a seguir relacionada, em consonância com o estabelecido no Art. 16 do Regulamento Geral de Exploração de Satélites, aprovado pela Resolução nº 748, de 22 de outubro de 2021:
+I - comprovante de inscrição e de situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) da operadora de satélite ou seu representante legal, no caso de satélite estrangeiro, assim como dos atos constitutivos e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente e, no caso de sociedade por ações, apresentação da composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+II - declaração em que atesta não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+III - declaração de que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+IV - projeto técnico simplificado do sistema de comunicação via satélite, conforme modelo disponibilizado na página da Anatel na Internet;
+V - declaração de observância da regulamentação aplicável e de ciência das condições de outorga.
+§ 1º Concomitantemente à análise da documentação citada nos incisos anteriores, a área técnica responsável verificará a regularidade fiscal da pretendente perante a Fazenda Federal, o Fundo de Garantia por Tempo de Serviço (FGTS) e a Anatel.
+§ 2º Não sendo possível realizar a consulta aos bancos de dados referidos no § 1º deste artigo, ou sendo constatada a existência de débito, inclusive perante a Anatel, caberá à pretendente providenciar a emissão das respectivas certidões.
+Art. 2º Sem prejuízo da documentação a ser encaminhada, relacionada no Art. 1º, deverão ser cumpridas as demais condições estabelecidas no Regulamento Geral de Exploração de Satélites.
+O art. 17, 18, 23 e 24 estabelecem a possibilidade de imposição de compromissos, a necessidade de indicação dos fillings e acordos de coordenação, a onerosidade da conferência e prazo limite para conferência: 
+Art. 17. A Agência poderá estabelecer, em Ato do Conselho Diretor, que deverá ser precedido de Consulta Pública, compromissos para a conferência de Direito de Exploração de Satélite, tais como requisitos mínimos de capacidade e cobertura sobre o território brasileiro, levando em consideração o interesse público quanto ao uso dos recursos de espectro e órbita, em especial nas faixas de frequências sujeitas aos planos dos Apêndices 30-30A e 30B do RR da UIT.
+Parágrafo único. O Ato mencionado no caput poderá prever hipóteses em que deverá ser realizada consulta pública para avaliar a existência de interesse público em requerimentos de direito de exploração de satélite estrangeiro.
+Art. 18. A solicitação de Direito de Exploração de Satélite deverá conter a indicação dos Filings das Redes de Satélite e o nome do satélite ou a indicação do sistema a ser associado ao direito, bem como a posição orbital, as faixas de frequências, a área geográfica de cobertura, o prazo solicitado para vigência do direito de exploração, os acordos de coordenação necessários e, se for o caso, os acordos de colocalização de satélites.
+§ 1º Na hipótese de coordenação entre sistemas de satélites não geoestacionários ou entre satélites não geoestacionários e geoestacionários ou entre satélites geoestacionários com separação orbital de 2° (dois graus) ou mais, caso um ou mais acordos de coordenação não sejam apresentados, a Operadora de Satélite poderá solicitar a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e desde que sua operação não cause interferências prejudiciais em relação àqueles sistemas cujo acordo não foi obtido, sem prejuízo à obtenção dos acordos de coordenação após a conferência do Direito de Exploração de Satélite.
+§ 2º Na hipótese prevista no § 1º deste artigo, a solicitação deverá estar acompanhada de documentos que comprovem os esforços de coordenação, os quais serão analisados pela Agência que poderá solicitar informações adicionais das partes interessadas.
+§ 3º Em nenhuma hipótese serão consideradas solicitações sem os acordos de coordenação necessários ou, se for o caso, sem os documentos com a indicação da operação sem direito à proteção e sem causar interferência prejudicial em relação àqueles sistemas cujo acordo não foi obtido, prevista no § 1º, e sem os documentos que comprovam os esforços de coordenação, previstos no § 2º.
+§ 4º Não serão admitidas alterações na posição orbital nominal e no satélite associado ao Direito de Exploração de Satélite conferido, podendo a operadora realizar pequenos ajustes orbitais em decorrência de soluções de coordenação.
+§ 5º Poderá ser solicitada a adição de novas faixas de frequências ao Direito de Exploração de Satélite conferido, sendo devido o pagamento do Preço Público, conforme disposto no Título III deste Regulamento, e devendo ser observadas as regras de coordenação estabelecidas, bem como aquelas definidas no artigo 19.
+§ 6º A inclusão de novas faixas de frequências não implica alteração no prazo de vigência do Direito de Exploração conferido, ou no prazo máximo para entrada em operação.
+§ 7º Não será permitida a retirada de qualquer faixa de frequências previamente autorizada, salvo em casos de força maior, devidamente justificados, a critério da Agência.
+§ 8º O Direito de Exploração de Satélites deve estar associado a um único satélite ou a sistema de satélites não geoestacionários.
+§ 9º Poderão ser conferidos Direitos de Exploração de Satélite associados ao mesmo satélite ou ao mesmo sistema de satélites não geoestacionários a diferentes exploradoras de satélites, inclusive nas mesmas faixas de frequências, uma vez que haja acordo entre as partes interessadas.
+§ 10º Para as solicitações de Direito de Exploração de Satélite associados a sistemas de satélites não geoestacionários, poderão ser solicitadas comprovações e compromissos adicionais que assegurem a coexistência com outros sistemas em operação ou com sistemas a serem autorizados posteriormente, de forma a garantir que não haja restrição à competição.
+(...)
+Art. 23. O Direito de Exploração de Satélite será conferido à Operadora de Satélite a título oneroso, conforme estabelecido neste Regulamento.
+Art. 24. O Direito de Exploração de Satélite será conferido pelo prazo de até 15 (quinze) anos, a contar da data de publicação do extrato do Ato que conferirá o referido Direito no DOU.
+§ 1º O prazo máximo para entrada em operação de satélites geoestacionários será de 5 (cinco) anos para satélite brasileiro e de 2 (dois) anos para satélite estrangeiro, contado a partir da data de publicação do extrato do Ato que conferirá o referido Direito no DOU, observada a necessidade de continuidade no Provimento de Capacidade Satelital no caso de aplicação do disposto no artigo 20.
+§ 2º O prazo e as condições para entrada em operação de sistemas de satélites não geoestacionários serão estabelecidos pelo Conselho Diretor em cada caso, observadas as particularidades dos sistemas, o estabelecido no RR da UIT e o interesse público.
+§ 3º O prazo para entrada em operação de satélites poderá ser prorrogado mediante solicitação devidamente justificada, a critério da Anatel, em especial em situações de força maior, conforme o entendimento da UIT, observado o interesse público.
+Em atenção ao art. 17 do RGSat, a Anatel aprovou os "Compromissos para exploração de satélites e critérios para realização de Consulta Pública para a Conferência de Direito de Exploração de Satélite", por meio do Ato nº 4430, de 19 de abril de 2023 (SEI nº 10126046), conforme se lê abaixo:
+2. Para conferência ou adição de faixas de frequências a direito de exploração de satélite estrangeiro associados às faixas de frequências dos Planos do Apêndice 30-30A e do Apêndice 30B do Regulamento de Rádio da União Internacional de Telecomunicações, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública.
+3. Para conferência ou adição de faixas de frequências a direito de exploração de satélite correspondente a sistemas de grande porte de satélites não-geoestacionários, ou a sistemas de satélites geoestacionários ou não-geoestacionários associados ao serviço móvel por satélite, a Superintendência responsável pela gestão do Espectro e da Órbita deve realizar Consulta Pública, em especial para subsidiar as decisões da Agência quanto ao estabelecimento de restrições, limites ou condições, visando propiciar ampla e justa competição e o acesso por diferentes agentes econômicos ao mercado.
+3.1. Entende-se por sistemas de grande porte de satélites não-geoestacionários aqueles compostos por mais de mil satélites.
+3.2. Os sistemas de satélites associados ao serviço móvel por satélite, a que se refere o item 3, são aqueles cujas estações terrenas não façam uso de antenas direcionais e que não tenham capacidade para manter o apontamento para o satélite correspondente à sua rede.
+A respeito da coordenação do direito de exploração, o RGSAT estabelece:
+CAPÍTULO V
+DAS DIRETRIZES DE COORDENAÇÃO
+Art. 10. A exploração de satélites sobre o território brasileiro requer coordenação prévia com sistemas de comunicação via satélite que tenham prioridade de coordenação no âmbito nacional para os quais haja sobreposição de frequências, observados os critérios técnicos e operacionais definidos em Ato da Superintendência responsável pela administração do uso do espectro de radiofrequências.
+§ 1º Terão prioridade de coordenação no âmbito nacional sobre satélites entrantes as redes de satélite notificadas em nome do Brasil, os direitos de exploração devidamente conferidos e aqueles cuja solicitação de autorização para exploração de satélite tenha sido protocolizada anteriormente.
+§ 2º Satélites que implementem redes de satélite notificadas em nome do Brasil assumirão a prioridade de coordenação, no âmbito nacional, da rede de satélite, sem necessidade de realização de nova coordenação, desde que mantidas as características operacionais acordadas para uso da rede.
+§ 3º Para fins de coordenação no âmbito nacional entre satélites associados aos serviços de Exploração da Terra por Satélite, Meteorologia por Satélite, Operação Espacial e Pesquisa Espacial, terão prioridade de coordenação sobre satélites entrantes os satélites já em operação no Brasil, cujas redes de satélites tenham sido submetidas à UIT anteriormente.
+§ 4º A coordenação de satélites associados ao serviço Radioamador por Satélite observará os procedimentos da UIT e da União Internacional de Radioamadores.
+§ 5º A exploradora de satélite que efetue alterações às características técnicas em seu sistema, que possam causar interferência maior que aquela já coordenada, deverá se submeter a novo processo de coordenação com os sistemas potencialmente afetados.
+§ 6º O requisito de coordenação prévia deve ser atendido mediante assinatura de acordo de coordenação com as operadoras de satélites autorizadas envolvidas, o qual não dispensa o atendimento aos parâmetros e critérios técnicos mencionados no artigo 15, observando que:
+I - Nos casos de exploração de satélite associada aos serviços de radiocomunicação listados no inciso I do artigo 4º, uma cópia do acordo de coordenação firmado deve ser enviada à Anatel quando da solicitação de direito de exploração de satélite;
+II - Nos casos de exploração de satélite associada aos serviços de radiocomunicação listados no inciso II do artigo 4º, uma cópia do acordo de coordenação firmado deve ser enviada à Anatel antes da entrada em operação do satélite.
+§ 7º A Agência acompanhará os procedimentos de coordenação entre as operadoras de satélite, apoiando as ações necessárias perante as demais administrações estrangeiras envolvidas e, por provocação de uma das partes, poderá mediar reuniões de coordenação, uma vez que já tenham sido envidados os devidos esforços para a realização da coordenação entre as operadoras.
+§ 8º Sistemas de satélites não geoestacionários não devem causar interferência inaceitável, conforme definições constantes do Ato previsto no artigo 15, ou solicitar proteção de satélites geoestacionários operando nas faixas de frequências do Serviço Fixo por Satélite ou do Serviço de Radiodifusão por Satélite, independente dos critérios de prioridade de coordenação no âmbito nacional, estando dispensados da necessidade de apresentação de acordo de coordenação em relação a satélites geoestacionários, nas faixas de frequências especificadas por meio do referido Ato.
+A respeito das condições para exploração, o RGSAT estabelece como condição e procedimentos:
+CAPÍTULO VI
+DAS CONDIÇÕES PARA EXPLORAÇÃO DE SATÉLITES
+Art. 11. Os satélites devem dispor de recurso operacional que permita a imediata interrupção de emissões de radiofrequências.
+Especificamente para a obtenção do direito de exploração de satélite brasileiro:
+DOS REQUISITOS ESPECÍFICOS DO DIREITO DE EXPLORAÇÃO DE SATÉLITE BRASILEIRO
+Art. 28. Para obtenção de Direito de Exploração de Satélite Brasileiro, a Operadora de Satélite deverá observar as disposições dos artigos 16, 17 e 18, além de atender os seguintes requisitos:
+I - efetuar os procedimentos estabelecidos no artigo 7º, caso não tenham sido previamente realizados, ou indicar o interesse em um dos Filings de Rede de Satélite sob responsabilidade do Brasil que não estejam sob responsabilidade de nenhuma Operadora de Satélite;
+II - efetuar o pagamento do preço público pelo Direito de Exploração de Satélite, de valor fixado pela Agência, conforme estabelecido neste Regulamento;
+III - apresentar garantia de execução de compromisso de colocar o Segmento Espacial em operação, no valor de 100 (cem) vezes o preço público pelo Direito de Exploração de Satélite.
+Parágrafo único. A garantia de execução de compromisso de colocar o Segmento Espacial em operação pode ser apresentada na forma de carta de fiança bancária ou caução em dinheiro e deverá ter prazo de vencimento de, no mínimo, 6 (seis) meses após o termo final do prazo para entrada em operação do segmento espacial.
+Art. 29. Na hipótese de não entrada em operação do Segmento Espacial, no prazo e condições estabelecidos pela Agência no Ato de conferência do Direito de Exploração, em qualquer das faixas de frequências constantes do Direito, a Exploradora de Satélite estará sujeita à execução da garantia de execução do referido compromisso.
+Parágrafo único. Uma vez cumprido o compromisso de colocar o Segmento Espacial em operação, em todas as faixas de frequências constantes do Direito, a Exploradora de Satélite tem o direito de resgatar o valor apresentado como garantia de execução do referido compromisso.
+Sobre o preço público a ser conferido:
+Art. 38. O valor a ser pago como preço público pelo Direito de Exploração de Satélite, Brasileiro ou Estrangeiro, bem como por sua prorrogação, será de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+§ 1º O valor de que trata o caput independe das faixas de radiofrequências envolvidas e do prazo de validade da outorga.
+§ 2º Às transferências de Direito de Exploração de Satélite Brasileiro ou Estrangeiro se aplica o valor de R$ 400,00 (quatrocentos reais). (Retificação publicada no Boletim de Serviço Eletrônico em 26/10/2021)
+§ 3º Aos órgãos da Administração Pública direta, autárquica e fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, será concedido desconto de 90% (noventa por cento) no pagamento do preço público pelo Direito de Exploração de Satélite Brasileiro.
+§ 4º O Direito de Exploração de um mesmo satélite geoestacionário ou constelação de satélites não geoestacionários conferido a mais de uma entidade dará ensejo ao pagamento integral do valor de que trata o caput por cada uma delas.
+§ 5º No caso de uma constelação de satélites não geoestacionários, com Direito de Exploração conferido a uma única entidade, o valor de que trata o caput aplica-se para a totalidade dessa constelação.
+Passa-se a análise da observância dos requisitos regulatórios.
+III - Da Solicitação de Direito de Exploração de Satélite Brasileiro
+Quanto ao atendimento dos aspectos regulatórios referentes à solicitação de direito de exploração brasileiro de satélite geoestacionário, o formulário previsto no art. 7º e 8º do RGSat, a ORER esclarece no Informe nº 945/2025/ORER/SOR:
+3.30 No que se refere à rede de satélites a ser associada ao satélite GX8, cumpre mencionar que a Viasat manifestou interesse em utilizar recursos de órbita e espectro em nome do Brasil, ao indicar sua intenção de assumir a responsabilidade pelos procedimentos de coordenação e notificação da rede de satélites B-SAT-72.5W, anteriormente submetida à UIT pela Anatel e até então não vinculada a nenhum operador de satélites.
+3.31 A manifestação de interesse consta do documento SEI nº 13460000, que menciona o disposto no art. 8º do RGSat, transcrito abaixo:
+Art. 8º Alternativamente ao disposto no artigo 7º deste Regulamento, a entidade interessada em utilizar recursos de órbita e espectro em nome do Brasil poderá assumir a responsabilidade pelo cumprimento dos procedimentos regulatórios estabelecidos no RR e pelo pagamento de fatura de recuperação de custos gerada pela UIT relativos a Filings de Redes de Satélites brasileiros existentes que não estejam sob responsabilidade de nenhuma Operadora de Satélite, desde que a indicação de interesse esteja vinculada à solicitação de outorga para uso de satélites.
+Parágrafo único. A escolha dos recursos de órbita e espectro é de inteira responsabilidade da entidade interessada, não cabendo quaisquer responsabilidades à Anatel.
+3.32Após manifestar seu interesse, a Viasat encaminhou à Anatel os arquivos necessários para a notificação da rede de satélites B-SAT-72.5W antes do prazo regulatório estabelecido no Regulamento de Radiocomunicações da UIT. Adicionalmente, informa-se que a operadora utilizou outro satélite de sua frota para realizar o procedimento de entrada em operação (bringing into use) exigido pela UIT, evitando, assim, a supressão da referida rede. A operadora é responsável também pelo pagamento, à UIT, dos custos referentes ao processamento da notificação da rede brasileira.
+Conforme consta no processo nº 53500.022066/2025-42, a Viasat Brasil apresentou (SEI nº 13460000) manifestação de interesse pelo uso da rede B.SAT - 72.5W, a respeito da qual foi oficiada pela ORWER sobre a necessidade de apresentação de requerimento de direito de exploração, além do envio de correspondência à UIT informando sobre a realização do Bringing Into Use da rede de satélites B-SAT-72.5W, para proceder à notificação formal da rede antes do dia 3 de maio de 2025. Outro requisito exigido foi o envio de confirmação adicional à UIT atestando que o satélite permaneceu na posição orbital de 72,5° Oeste pelo período mínimo de 90 dias.
+A ORER enviou à VIASAT BRASIL, em 20 de outubro de 2025, a fatura gerada pela UIT em 7 de agosto de 2025, para realização de pagamento concernente à recuperação de custos (cost recovery) previamente à data de 7 de fevereiro de 2026, conforme Ofício nº 5218/2025/ORER/SOR (SEI nº 14564015).
+Em 10 de fevereiro de 2026, a VIASAT BRASIL apresentou Recibo de pagamento (SEI nº 15164131) e comprovante de pagamento (SEI nº 15169057). Portanto, foi atendido o art. 7º, § 1º , I do RGSAT.
+A respeito do atendimento do art. 16 do RGSat e do Ato nº 9.526, de 27 de outubro de 2021 (SEI nº 7596501), que definiu a documentação a ser apresentada, a ORLE elaborou Check Lists de Análise Técnica (SEI nº 13690215), de 25 de junho de 2025, e de Análise Jurídica nº 13872094, de 2 de julho de 2025, e juntou ao processo os comprovantes de regularidade junto à Receita Federal, FGTS, Anatel e do CNPJ ( SEI nº 14987571).
+A SOR, no Informe nº 737/2026/ORLE/SOR, atestou a apresentação do projeto técnico simplificado do sistema de comunicação via satélite objeto do pleito constante do Requerimento de Direito de Exploração de Satélite (SEI nº 13635315), e informou que, por se tratar de direito de exploração que utilizará recursos de espectro e órbita notificados em nome do Brasil, há a previsão de instalação de uma estação terrena de TT&C (Telemetria, Telecomando e Controle) no país, com a indicação das respectivas frequências para telemetria (19.691,6 MHz e 19.696,4 MHz) e controle (29.491,6 MHz e 29.496,4 MHz), conforme apontou a VIASAT BRASIL no item 5.2.4 do Requerimento. 
+O requisito de comando e controle em território nacional igualmente consta do item 1.1 e 1.2 do Ato n° 4.430, de 2023. A exploradora de satélite brasileiro deve manter recursos humanos em quantidade suficiente para a completa operação, durante 24 horas por dia e 7 dias por semana, da Estação de Controle, localizada em território brasileiro, de seu satélite, assim como os centros de deliberação e implementação das decisões estratégicas, gerenciais e técnicas envolvidas deve ser realizada no território nacional.
+A respeito das condições para exploração, o RGSAT estabelece que os satélites disponham de recurso operacional que permita a imediata interrupção de emissões de radiofrequências. Sobre o tema há informações no requerimento que apresentam capacidade de atender o requisito regulamentar.
+Por se tratar de conferência de direito de exploração brasileiro verificou-se que a VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA., CNPJ nº 27.001.440/0002-09, é empresa constituída sob as leis brasileiras, com sede e administração no País, apresentou cópia dos seus atos constitutivos e de comprovante de inscrição e situação cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ), constantes dos documentos (SEI nº 13635319, nº 13635317 e nº 14987571), e apresentou declaração na qual atesta (SEI nº 13635315 - item 8):
+não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+possuir aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização;
+observar a regulamentação aplicável e ter ciência das condições de outorga; e
+observar as condições de operação contidas na Regulamentação Nacional e no Regulamento de Radiocomunicações da União Internacional de Telecomunicações, além das condições legais, regulamentares e normativas para Exploração de Satélite, durante o prazo de exploração do satélite.
+Entende-se, portanto, atendidos os requisitos do art. 16 do RGSAT e do e do Ato nº 9.526, de 27 de outubro de 2021 (SEI nº 7596501).
+A respeito da realização de Consulta Pública prevista no art. 17 e do Ato 4.430, de 2023, a SOR justifica, no item 3.26 do Informe 737/2026/ORLE/SOR, "que não foi realizada Consulta Pública para o presente caso, tendo em vista a não obrigatoriedade de sua realização diante do fato de o pleito em questão não se enquadrar nos itens 2 e 3 do Ato nº 4430, de 19 de abril de 2023 (SEI nº 10126046)".
+O Requerimento, conforme já apontado, apresenta o filling da rede e o nome do satélite associado ao direito, a posição orbital, as faixas de frequência, a área de cobertura e o prazo solicitado. O filling a ser associado é a rede BSAT-72.5W, o satélite a ser associado é o GX8, a posição orbital é a 72, 5° W, as faixas de frequência encontram-se na denominada banda Ka, e solicita a vigência pelo prazo de 15 (quinze) anos. O prazo solicitado observa o limite previsto no art. 24 e, de acordo com atesto da SOR, a VIASAT BRASIL garante que o satélite terá vida útil. 
+Sobre o prazo de entrada em operação previsto no § 1º do art. 24, a SOR esclarece que no requerimento a VIASAT BRASIL informou que o satélite GX8 entrará em operação no quarto quadrimestre de 2027 (item 5 do Requerimento) e alerta para o previsto no art. 29 do RGSAT: em caso de não entrada em operação do segmento espacial nas condições previstas no ato de autorização, o referido compromisso estará sujeito à execução da garantia. Em razão disso, a SOR propõe que seja estabelecido o prazo máximo de 5 (cinco) anos para a entrada em operação do satélite brasileiro GX8. De modo a destacar as provisões regulatórias sobre o assunto, foi proposta a inclusão de dispositivo, na minuta de Ato (SEI nº 15099542), indicando que o satélite brasileiro GX8 deve entrar em operação no prazo máximo de 5 (cinco) anos, contado da data de publicação do extrato do Ato de conferência do Direito de Exploração no Diário Oficial da União (DOU), e que a não entrada em operação nesse prazo sujeitará à execução da garantia de execução do compromisso de colocar o Segmento Espacial em operação.
+No entanto, o prazo de entrada em operação impacta no tempo de vigência da garantia, com consequências financeiras ao outorgado. A rede a ser utilizada é uma rede que já havia sido notificada pelo Brasil (a rede B-SAT-72.5W), ou seja, anteriormente submetida à UIT pela Anatel e até então não vinculada a nenhum operador de satélites.
+Adicionalmente, no requerimento da VIASAT consta prazo diverso do proposto pela área técnica.
+Soma-se ainda a possibilidade de prorrogação do prazo de entrada em operação, caso atendidos os termos do § 3º do art. 24 do RGSat.
+Assim, propõe-se que seja deferido o prazo de dois anos para a entrada em operação, considerando requerimento da VIASAT. 
+Quanto à apresentação da garantia de execução do compromisso, o RGSAT, no art. 28, III, estabelece que a garantia seja no valor de 100 (cem) vezes o preço público do direito de exploração de satélite, sendo uma condição do Ato de Autorização. Essa garantia terá prazo final de 6 meses após o prazo estabelecido para a entrada em operação. Frisa-se, ainda, que a garantia somente poderá ser por carta fiança bancária ou caução em dinheiro, conforme parágrafo único do art. 28 do RGSAT. No intuito de orientar as modalidades de apresentação, no que não contraria o RGSAT, poderá ser aplicada subsidiariamente as regras previstas no Manual de Garantias anexado ao último edital de licitação de radiofrequências publicado pela Anatel. 
+Em relação à onerosidade prevista nos art. 23 e art. 38 do RGSAT, o valor a ser pago será de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+Sobre a destinação das faixas de frequências, a ORER, no Informe nº 945/2025/ORER/SOR (SEI nº 14297165), esclareceu que:
+3.24 Adicionalmente, conforme prevê o Regulamento de Uso do Espectro, aprovado pela Resolução nº 671, de 3 de novembro de 2016, o uso das radiofrequências está condicionado à existência de prévia atribuição e destinação aos serviços a serem prestados na faixa de interesse.
+3.26 Portanto, verificou-se se as faixas objeto do pleito estão atribuídas e destinadas a serviços compatíveis com as aplicações pretendidas e se a interessada apresentou informações sobre redes de satélites compatíveis com as características técnicas do satélite objeto do pleito, conforme se descreve na Lista de Verificação II.
+Lista de Verificação II – Avaliação sobre Faixas de Radiofrequências e Rede de Satélites
+ Faixas de Frequências atribuídas e destinadas aos serviços de interesse?
+ | 
+ Sim
+ | 
+ Nome da Rede de Satélites
+ | 
+ B-SAT-72.5W
+ | 
+ Faixas de Frequências da Rede de Satélites
+ | 
+ 17,7 a 20,2 GHz ↓
+ 27 a 30 GHz ↑
+ | 
+ Status da Rede na UIT
+ | 
+ Notificada
+ | 
+ Há parecer desfavorável sobre a Rede de Satélites na UIT? Qual?
+ | 
+ Não
+ | 
+ Administração Notificante
+ | 
+ Brasil
+ | 
+ Faixas de Frequências da Rede Compatíveis com o pleito?
+ | 
+ Sim
+ | 
+3.28 Assim, conforme verificado, as faixas de frequências objeto do pleito encontram-se devidamente atribuídas e destinadas a serviços compatíveis com aplicações por satélite.
+(..)
+3.34 Finalmente, menciona-se que as porções do espectro cobertas pelas redes de satélites indicadas e que possuem implementação no satélite são as faixas de 18,2 GHz a 20,2 GHz (enlace de descida) e 28 GHz a 30 GHz (enlace de subida).
+Com relação à coordenação de sistemas de comunicação via satélite, o art. 10 do RGSAT estabelece a ordem de prioridade em âmbito nacional, em especial os parágrafos determinam prioridade às redes de satélite notificadas em nome do Brasil. Assim, a ORER analisou as questões afetas à coordenação:
+III.c. Dos Aspectos de Coordenação
+3.41 Com relação à análise dos aspectos de coordenação, verifica-se qual a hipótese regulatória, referente à coordenação para uso de satélites no Brasil, é aplicável ao pleito em questão.
+(...)
+3.45 Ressalta-se que o art. 18 do RGSat prevê ainda possibilidade de autorização sem que sejam apresentados os acordos de coordenação previstos no regulamento, desde que sejam comprovados esforços de coordenação e que o sistema não cause interferência ou solicite proteção. Adicionalmente, menciona-se que o art. 20 do mesmo Regulamento prevê hipótese de desnecessidade de apresentação de novos acordos de coordenação, caso o pedido de novo Direito contemple os mesmos recursos de espectro e órbita já autorizados à interessada, devendo ser observadas determinadas condicionantes.
+3.47 Os requisitos técnicos e operacionais para sistemas de comunicação via satélite, brasileiros e estrangeiros, comunicando-se com estações no território brasileiro nas faixas de frequências associadas aos serviços de radiocomunicação por satélite foram estabelecidos pelo Ato nº 9.523, de 27 de outubro de 2021 (SEI nº 7595677), em atendimento ao disposto no artigo 10 do RGSat. O referido Ato traz em seu item 5.1 os critérios técnico-operacionais relativos à convivência e coordenação dos sistemas de satélites não geoestacionários, observadas as disposições do RGSat, conforme se lê abaixo:
+5.1 Sistemas de Satélites Geoestacionários
+5.1.1. Para fins de coordenação de sistemas de satélites geoestacionários com outros sistemas de satélites geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por satélites geoestacionários dentro do arco de coordenação estabelecido na Tabela 1.
+Tabela 1 - Arco de coordenação
+ Serviço de Radiocomunicação associado
+ | 
+ Faixa de frequência
+ | 
+ Arco de coordenação
+ (em longitude)
+ | 
+ Serviço Fixo por Satélite
+ | 
+ Faixas de frequências abaixo de 3,4 GHz
+ | 
+ Não se aplica 1
+ | 
+ Faixas de frequências entre 3,4 GHz e 8,4 GHz
+ | 
+ ± 6°
+ | 
+ Faixas de frequências acima de 8,4 GHz
+ | 
+ ± 4°
+ | 
+ Serviço de Radiodifusão por Satélite
+ | 
+ Faixas de frequências abaixo de 12,2 GHz
+ | 
+ Não se aplica 1
+ | 
+ Faixas de frequências acima de 12,2 GHz
+ | 
+ ± 6°
+ | 
+ Serviço Móvel por Satélite
+ | 
+ Todas as faixas de frequências
+ | 
+ Não se aplica 1
+ | 
+1 Para fins de coordenação no âmbito nacional de satélites associados a esse serviço, nessas faixas de frequências, não se aplica o critério de arco de coordenação, sendo requerido acordo de coordenação com todas as operadoras de satélite que tenham prioridade de coordenação no âmbito nacional, independente da posição orbital.
+5.1.2. Para fins de coordenação de sistemas de satélites geoestacionários com sistemas de satélites não-geoestacionários que tenham prioridade de coordenação no âmbito nacional, é requerido acordo de coordenação com as operadoras responsáveis por sistemas de satélites não-geoestacionários nas faixas de frequências sujeitas à disposição 9.13 do Regulamento de Rádio da União Internacional de Telecomunicações, não sendo necessária a apresentação de acordo de coordenação para as demais faixas de frequências.
+3.49 Assim, à luz das referidas hipóteses regulatórias relativas à coordenação, esta Gerência identificou a aplicabilidade do enquadramento assinalado na Lista de Verificação III, disposta abaixo.
+Lista de Verificação III – Avaliação sobre as hipóteses de coordenação
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 10 do RGSat
+ | 
+ Aplicável
+ | 
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 18 do RGSat
+ | 
+ Aplicável
+ | 
+ Novo Direito de Exploração / Adição de Faixas – Aplicação do Art. 20 do RGSat
+ | 
+ Não se aplica
+ | 
+ Pedido de Prorrogação de Direito de Exploração – Sem necessidade de apresentação de novos acordos
+ | 
+ Não se aplica
+ | 
+3.51 Assim, para fins de aplicação do art. 10 do RGSAT, é necessário verificar a existência de sistemas de satélites com prioridade de coordenação em âmbito nacional em relação ao sistema objeto do pedido de Direito de Exploração de Satélites, conforme os critérios estabelecidos no § 1º do referido artigo. Nesse sentido, menciona-se que, para as faixas de frequências abrangidas pelo pleito:
+a) há redes de satélites brasileiras notificadas nas faixas objeto da solicitação. Tais redes estão associadas a satélites com Direito de Exploração, conforme se detalha na alínea b);
+b) há direitos de exploração de satélites conferidos pela Agência, associados aos satélites geoestacionários StarOne D2 (70°O) e SGDC (75°O), dentro do arco orbital de ± 4°; e
+c) não há pedidos de Direito de Exploração de Satélites em análise cuja data de protocolo seja anterior à solicitação apresentada pela Viasat Brasil Serviços de Comunicações LTDA.
+3.52.Considerando que, para as faixas de frequências abrangidas pelo pleito, existem Direitos de Exploração associados aos satélites StarOne D2 (70°O) e SGDC (75°O), dentro do arco orbital de ± 4°, esta Gerência de Espectro, Órbita e Radiodifusão encaminhou o Ofício nº 4595/2025/ORER/SOR-ANATEL (SEI nº 14343773) à interessada, solicitando a apresentação dos acordos de coordenação correspondentes ou, alternativamente, manifestação expressa quanto ao interesse na conferência da autorização sem direito à proteção e sem causar interferências prejudiciais aos sistemas para os quais não tenha sido obtido acordo de coordenação.
+3.53 Em resposta, a interessada encaminhou o documento SEI nº 14619844, por meio do qual, foram apresentadas as mensagens trocadas com a Telebras e Claro, bem como informado que as tratativas de coordenação ainda se encontram em andamento. Dessa forma, a interessada solicita expressamente a conferência do Direito de Exploração associado ao Satélite GX8 (posição orbital 72,5°O e faixas da Banda Ka) sem direito à proteção contra interferência prejudicial e sem causar interferências prejudiciais aos sistemas com os quais não foi possível firmar acordo de coordenação, em conformidade com os §§ 1º e 3º do art. 18 do RGSAT. A operadora se compromete, ainda, a enviar à ANATEL os acordos de coordenação tão logo fossem firmados, de modo a afastar a condicionante antes mencionada.
+3.54 Desta forma, observada a hipótese regulatória aplicável ao presente caso, verificou-se que a solicitante cumpriu com os requisitos de coordenação determinados na regulamentação.
+Em relação à necessidade de remessa do processo à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), as hipóteses de manifestação obrigatória da PFE-Anatel estão estabelecidas no § 2º do artigo 39 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013. Além disso, o §1º do mesmo dispositivo atribui ao Procurador-Geral a responsabilidade de apontar os casos sobre os quais se manifestará de ofício:
+Art. 39. A Procuradoria, de ofício ou por consulta devidamente formalizada, pronunciar-se-á nos casos de dúvida quanto à matéria jurídica, e ainda, a critério do Conselho Diretor ou de um de seus membros.
+§ 1º Cabe ao Procurador-Geral apontar os casos sobre os quais se manifestará de ofício.
+§ 2º A Procuradoria será necessariamente ouvida nos procedimentos licitatórios, de elaboração de atos normativos, de anulação, de revisão em Procedimento para Apuração de Descumprimento de Obrigações (Pado), de sindicâncias e processos administrativos disciplinares.
+Portanto, observa-se que as solicitações associadas a direito de exploração de satélite não se encontram entre as hipóteses de remessa obrigatória à PFE-Anatel, previstas no § 2º do artigo 39 do RIA.
+Adicionalmente, a Portaria nº 642, de 26 de julho de 2013, em conformidade com o disposto no § 1º do artigo 39 do RIA, disciplina os casos de manifestação obrigatória da PFE-Anatel, a qual não prevê, dentre as hipóteses de manifestação obrigatória, solicitações relacionadas ao direito de exploração de satélite.
+A respeito da minuta de ato (SEI nº 15099542), uma vez que o art. 8º e o art. 11 da proposta mencionam a apresentação de garantia, é necessário unificar essa previsão em um único dispositivo. Dessa forma, realizou-se o ajuste na minuta proposta.
+Adicionalmente, em razão de a garantia ser condição para a expedição do ato de autorização, entende-se que o art. 11 do Ato pode ser ajustado no momento da expedição já mencionando tipologia da garantia apresentada pela operadora de satélite. 
+Os direitos de exploração de satélite brasileiro devem prever uma estação terrena de TT&C (Telemetria, Telecomando e Controle) no Brasil, com a indicação das respectivas frequências para telemetria (19.691,6 MHz e 19.696,4 MHz) e controle (29.491,6 MHz e 29.496,4 MHz). Em razão das referidas frequências já estarem abarcadas nas frequências mencionadas nas subfaixas de frequências autorizadas, entende-se desnecessário destacá-las, por trazer redundância à autorização. 
+A despeito de não estar segmentada no ato do direito de exploração de satélite brasileiro, ressalta-se a importância de seu detalhamento na documentação técnica e de coordenação disponível à Anatel, tendo em vista que as faixas de TT&C demandam controle próprio.
+Em razão de existirem compromissos específicos para direitos de exploração de satélite brasileiro previsto no Anexo ao Ato nº 4.430, de 2023, foi inserido um inciso terceiro buscando refletir a necessidade de observância dos compromissos constantes do Ato. 
+Diante do exposto, entende-se observados os requisitos regulamentares para a conferência do direito de exploração à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA., CNPJ nº 27.001.440/0002-09, no Brasil, do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, para provimento de capacidade satelital nas faixas de frequências de 18,2 GHz a 20,2 GHz (enlace de descida) e 28 GHz a 30 GHz (enlace de subida), sem caráter de exclusividade e para operação em todo o território nacional, pelo prazo de 15 (quinze) anos, nos termos da minuta de Ato (SEI nº 15099542), condicionada a sua expedição:
+ao recolhimento do valor integral do preço público pelo Direito de Exploração de satélite no valor de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), ou, quando parcelado, do valor da primeira parcela; e
+à apresentação de garantia de execução de compromisso de colocar o Segmento Espacial em operação, no valor de 100 (cem) vezes o preço público pelo Direito de Exploração de satélite, na forma de carta de fiança bancária ou caução em dinheiro, e deverá ter prazo de vencimento de, no mínimo, 6 (seis) meses após o termo final do prazo para entrada em operação do segmento espacial.
+IV- Da Atualização do Ato nº 4141, de 2025
+A SOR afirmou que o deferimento do presente direito de exploração implicará na necessidade de atualização do Ato nº 4141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato (SEI nº 14837114), para incluir a lista de prioridade de satélites geoestacionários na banda Ka.
+Verifica-se que a VIASAT BRASIL requereu a conferência do Direito de Exploração de Satélite sem direito à proteção contra interferência prejudicial e sem causar interferência prejudicial com relação aos sistemas com os quais não foi possível celebrar acordo de coordenação, nos termos dos §§ 1º e 3º do art. 18 do RGSat. 
+A Lista de Prioridade de Coordenação de Sistemas Satelitais foi aprovada pelo Conselho Diretor por meio do Ato nº 4141, de 2025, alterada por meio dos Atos nº 3023, de 2 de março de 2026 (SEI nº 15259653) e 3084 , de 3 de março de 2026 (SEI nº 15267146). 
+Por meio deste instrumento, a Agência confere maior transparência em relação às informações das prioridades nacionais de coordenação definidas para os sistemas satelitais autorizados no Brasil, facilitando sua consulta por empresas exploradoras e demais interessados
+Assim, a Lista de Prioridade de Coordenação deve ser atualizada sempre que houver a aprovação de novo pedido de conferência ou de alteração do Direito de Exploração que impacte sua composição.
+Em razão de o Ato nº 4.141, de 2025, conter apenas os direitos de exploração conferidos sem direito à proteção contra interferência prejudicial e sem causar interferência prejudicial com relação aos sistemas com os quais não foi possível celebrar acordo de coordenação, até então apenas afetos a sistemas não geoestacionários, ajustes no objeto do Ato deverão ser realizados para abarcar o presente pleito, que se trata de satélite geoestacionário. De forma a unificar a lista de prioridade de coordenação e não gerar uma exclusiva para os geoestacionários e outra para os não geoestacionários, acata-se a proposta da área técnica.
+Neste sentido, concordo com a proposta da área técnica para atualização da Lista de Prioridades de Coordenação, aprovada pelo Ato nº 4.141, de 11 de abril de 2025, conforme minuta (SEI nº 14837114).
+V - Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+Embora o referido Decreto ainda careça de uma série de atos posteriores das pastas nele mencionadas para sua plena eficácia, é importante ressaltar que ele estabelece objetivos que, por si sós, já possuem densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+Ressalta-se, ainda, que, no âmbito do PRO-REG, foi publicado o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória, denominada "Estratégia Regula Melhor". Tal estratégia busca estabelecer e difundir boas práticas regulatórias, com foco no cidadão, a fim de promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Seus objetivos, geral e específicos, são os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+O Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação está alinhada com os objetivos descritos no art. 3º, incisos I, III e VI, do Decreto nº 11.738/2023, e nos itens 1.5 - i, x, xi e xiii do memorando mencionado. A conferência do direito de exploração de satélite geoestacionário brasileiro observou os trâmites legais, permitindo a expansão da infraestrutura de telecomunicações no Brasil, fomentando a oferta de conectividade e serviços, e promovendo o uso eficiente dos recursos de órbita e espectro.
+VI - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento (PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades, além de debates sobre os desafios e oportunidades nessa temática. Na referida obra, em especial no capítulo 2 que trata da Autonomia decisória, a autora Patrícia Pessoa Valente (2024, p.49) destaca já na introdução do capítulo que:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+No presente caso, o procedimento garante segurança jurídica e previsibilidade para os atos de conferência de direito de exploração de satélites.
+VII - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+A Organização para Cooperação e Desenvolvimento Econômico (OCDE) mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com entidades da sociedade civil, regulação (incluindo a transição para a economia digital), dentre outros. Isso faz com que esses temas ganhem um tom estratégico que vai além do ordenamento constitucional pátrio. Busca-se não apenas fornecer soluções que melhorem o bem-estar das pessoas, mas outras que auxiliem as instituições a chegarem a essas soluções de forma eficiente.
+No estudo da OCDE sobre "Um novo ambiente de comunicações por satélite" (2019, tradução livre), apresenta-se o seguinte:
+O novo ambiente para telecomunicações por satélite certamente será moldado por diferentes elementos, incluindo novas mudanças tecnológicas, competição entre operadores históricos e novos atores, possível consolidação, padronização e regulamentos internacionais liderados pela indústria.
+No geral, as redes de satélite devem poder aproveitar seus pontos fortes e recursos específicos, para se tornarem mais integradas e otimizadas na infraestrutura de telecomunicações mais ampla. Como complementos úteis às redes terrestres, particularmente em áreas geográficas carentes, elas contribuirão para maximizar o desenvolvimento de uma economia digital inclusiva.
+Em outra temática sobre a transformação digital para o Brasil, a OCDE vem recomendando, dentre outras, a adoção de práticas voltadas ao acesso a infraestrutura e serviços de comunicações confiáveis, conforme pode ser depreendido do seguinte trecho:
+Infraestruturas e serviços de comunicação confiáveis, sustentam o uso de todas as tecnologias digitais, além de facilitar interações entre pessoas, organizações e máquinas conectadas. De modo semelhante, os dados que circulam pelas redes emergiram como uma fonte de valor na era digital, mas seu uso produtivo depende da sua disponibilidade. Como infraestruturas e serviços de comunicação confiáveis são essenciais para a transformação digital, o primeiro elemento básico integrado está relacionado ao acesso a dados, infraestruturas e serviços de comunicação (por exemplo, backhaul de fibra óptica, torres, espectro, cabos internacionais). Também abrange redes e serviços de comunicação de banda larga eficientes, confiáveis e amplamente acessíveis, além de facilitadores complementares essenciais (por exemplo, sistemas coordenados de nomes de domínios internacionais, maior adoção de endereços da Internet IPv6, pontos de troca de tráfego), dados, software e hardware. Esses componentes agem como as bases técnicas para uma Internet aberta, interconectada e distribuída, que permite a livre circulação global de informações e, de modo geral, a transformação digital (OCDE, 2011). Múltiplos domínios políticos precisam ser considerados para garantir o acesso, incluindo: infraestruturas e serviços de comunicação, investimentos, concorrência, e desenvolvimento regional. (OCDE, 2020, p. 23).
+No presente caso, o deferimento do direito de exploração atende a esses ditames, uma vez que os satélites são infraestruturas essenciais para o provimento de diversos serviços de comunicação, promovendo o uso eficiente tanto dos recursos escassos (como o espectro e as posições orbitais) quanto da infraestrutura. Portanto, conclui-se que a fundamentação apresentada nesta análise está em conformidade com as observações da OCDE para o cenário brasileiro.
+VIII - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Em 2023, o Decreto Presidencial nº 11.704 instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inciso I). Entre as competências da Comissão, destacam-se o acompanhamento e monitoramento do alcance dos ODS (art. 2º, inciso II), bem como a identificação, sistematização e divulgação de boas práticas e iniciativas que colaborem para o atingimento desses objetivos (art. 2º, inciso IV).
+O Decreto Presidencial nº 11.704/2023 representa a reafirmação do compromisso brasileiro com a implementação dos ODS, sendo de observância obrigatória por todos os órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+A Anatel, responsável pela concepção, implementação e monitoramento de políticas públicas voltadas à ampliação da conectividade no setor de telecomunicações, possui discricionariedade para avaliar e definir quais políticas públicas estão mais alinhadas aos ODS, os quais são de observância obrigatória pela Agência.
+A conferência de direitos de exploração contribui diretamente para a concretização do Objetivo do Desenvolvimento Sustentável nº 1, voltado à erradicação da pobreza. Isso ocorre porque os satélites desempenham papel fundamental no monitoramento de áreas suscetíveis a desastres, como inundações e secas, possibilitando respostas rápidas e eficazes, além de proporcionarem conectividade a localidades remotas.
+Dessa forma, essa medida colabora especialmente para o alcance das seguintes metas do ODS 1: Meta 1.4: Até 2030, garantir que todos os homens e mulheres, em particular os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias apropriadas e serviços financeiros, incluindo microfinanças; eMeta 1.5: Até 2030, construir a resiliência dos pobres e daqueles em situação de vulnerabilidade, reduzindo sua exposição e vulnerabilidade a eventos extremos relacionados ao clima e a outros choques e desastres econômicos, sociais e ambientais.
+Assim, a exploração de satélites reforça a viabilização de políticas e ações voltadas ao combate à pobreza e à promoção da equidade social, em alinhamento com a Agenda 2030.
+A ampliação da infraestrutura satelital autorizada no Brasil contribui significativamente para a concretização do ODS 8 – Trabalho Decente e Crescimento Econômico. A conectividade viabilizada por satélites potencializa o crescimento econômico inclusivo e sustentável, além de criar melhores oportunidades de trabalho, especialmente em áreas isoladas ou em desenvolvimento.
+A infraestrutura satelital permite conectar pessoas e empresas a mercados globais, viabilizando o acesso a novos modelos de negócios e promovendo o acesso à informação. Isso resulta em melhorias na competitividade e na produtividade em diversos setores da economia.
+Dentre as metas do ODS 8 que podem ser impulsionadas pela infraestrutura satelital, destaca-se a meta 8.2, que prevê a necessidade de alcançar níveis mais elevados de produtividade econômica, por meio da diversificação, modernização tecnológica e inovação, com foco em setores de elevado valor agregado e intensivos em mão de obra.
+Assim, o fortalecimento da infraestrutura satelital integra-se às estratégias de desenvolvimento econômico do Brasil, promovendo avanços concretos rumo aos objetivos da Agenda 2030.
+A utilização racional e consciente de um recurso escasso, como a exploração satelital, contribui diretamente para a concretização do Objetivo de Desenvolvimento Sustentável 9 – Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação. Tal utilização é fundamental para o desenvolvimento de diversos setores no país, impactando positivamente a sociedade em geral. Destaca-se a aderência às seguintes metas do ODS 9: Meta 9.1: Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos; e Meta 9.c: Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020.
+Os sistemas de comunicação via satélite desempenham papel essencial no avanço do ODS 9 no Brasil, viabilizando ferramentas avançadas de monitoramento, conectividade e inclusão digital, além de fomentar a inovação e o desenvolvimento tecnológico. Tais sistemas possibilitam a implementação de infraestrutura mais resiliente e inovadora, promovendo um desenvolvimento econômico e social equilibrado e sustentável.
+A infraestrutura de comunicação via satélites é especialmente relevante para garantir o acesso à internet em áreas remotas e rurais do Brasil, promovendo a inclusão digital e a conectividade necessárias ao progresso social e econômico do país.
+A exploração e ampliação da infraestrutura satelital ainda contribui para a concretização do Objetivo de Desenvolvimento Sustentável 11 – Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis, especialmente em relação à meta 11.b. Quanto maior a diversidade e flexibilidade para a conexão entre países e pessoas, maior será o número de cidades conectadas, promovendo ambientes urbanos mais seguros e previsíveis.
+A conectividade proporcionada pelos sistemas satelitais facilita a adoção de políticas públicas eficazes, notadamente em situações de emergência, como desastres naturais, ao permitir monitoramento em tempo real, comunicação ágil e resposta coordenada.
+Dessa forma, a infraestrutura satelital auxilia no fortalecimento da resiliência urbana e na construção de cidades mais inteligentes e sustentáveis.
+CONCLUSÃO
+Voto por:
+conferir o direito de exploração à VIASAT BRASIL SERVIÇOS DE COMUNICAÇÕES LTDA., CNPJ nº 27.001.440/0002-09, no Brasil, do satélite brasileiro geoestacionário GX8, na posição orbital 72,5°O, para provimento de capacidade satelital nas faixas de frequências de 18,2 GHz a 20,2 GHz (enlace de descida) e 28 GHz a 30 GHz (enlace de subida), sem caráter de exclusividade e para operação em todo o território nacional, pelo prazo de 15 (quinze) anos, nos termos da minuta de Ato SEI nº 15099542, condicionada a sua expedição:
+ao recolhimento do valor integral do preço público pelo Direito de Exploração de satélite no valor de R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), ou, quando parcelado, do valor da primeira parcela, conforme art. 22, § 1º, do RGSat; e
+à apresentação de garantia de execução de compromisso de colocar o Segmento Espacial em operação, no valor de 100 (cem) vezes o preço público pelo Direito de Exploração de satélite, na forma de carta de fiança bancária ou caução em dinheiro, e deverá ter prazo de vencimento de, no mínimo, 6 (seis) meses após o termo final do prazo para entrada em operação do segmento espacial.
+Atualizar o Ato nº 4141, de 11 de abril de 2025 (SEI nº 13552719), que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da minuta de Ato (SEI nº 14837114), após a expedição do ato de autorização do direito de exploração do satélite GX8, na posição orbital 72,5°O. 
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 13/03/2026, às 08:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15189520 e o código CRC 201B0B91.
+ | 
+Referência: Processo nº 53500.032176/2025-12 | 
+SEI nº 15189520 |

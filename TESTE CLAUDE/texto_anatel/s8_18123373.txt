@@ -1,0 +1,39 @@
+SEI/ANATEL - 16168028 - Acórdão
+Boletim de Serviço Eletrônico em 25/08/2026
+DOU de 25/08/2026, seção 1, página 26
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 216, de 24 de agosto de 2026
+Processo nº 53500.056673/2020-00
+Recorrente/Interessado: CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL
+CNPJ nº 06.102.961/0001-93
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Circuito Deliberativo nº 203, de 21 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E REGULATÓRIO. RECURSO ADMINISTRATIVO. PROJETO-PILOTO DE VALIDAÇÃO DE PROTOCOLOS DE OUVIDORIA. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por CONEXIS BRASIL DIGITAL contra despachos decisórios da Superintendência de Relações com Consumidores - SRC que determinaram a descontinuidade do projeto-piloto de validação de protocolos de Ouvidoria, a desativação das Application Programming Interface - APIs de validação e o encerramento dos processos correspondentes. 
+2. O projeto foi implementado após a instituição da obrigação de Ouvidoria pelo Regulamento de Qualidade dos Serviços de Telecomunicações. A Agência Nacional de Telecomunicações - Anatel constatou, ao longo de anos de testes, baixo índice de validação dos protocolos e falhas recorrentes nos sistemas das Prestadoras.
+3.A área técnica concluiu pela inviabilidade de continuidade do modelo testado. O voto examinou a admissibilidade recursal e, em caráter adicional, enfrentou as alegações sobre nulidade procedimental, interesse público na continuidade do projeto e suposta necessidade de prévio acionamento da Ouvidoria para registro de reclamação na Agência. 
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se o Recurso atende ao pressuposto de interesse recursal; (ii) saber se houve nulidade pela ausência de intimação prévia das Prestadoras sobre os informes que subsidiaram a decisão recorrida; e (iii) saber se o registro de reclamação na Agência Nacional de Telecomunicações - Anatel depende de prévio registro na Ouvidoria da prestadora e se isso justificaria a continuidade do projeto-piloto.
+III. RAZÕES DE DECIDIR
+1. O Recurso não deve ser conhecido por ausência de interesse recursal. A decisão recorrida não imputou irregularidade às Prestadoras, não aplicou sanção e não gerou restrição de direitos. 
+2. A ausência de intimação prévia sobre os informes não gera nulidade sem demonstração de prejuízo concreto. O contraditório e a ampla defesa foram exercidos no próprio Recurso Administrativo. 
+3. O processo de fiscalização teve natureza voltada ao alinhamento operacional e à avaliação da continuidade do projeto, e não à apuração de infração regulatória. 
+4. Não há norma vigente que condicione o registro de reclamação na Anatel ao prévio acionamento da Ouvidoria da prestadora ou à validação de protocolo por API. O acionamento da Ouvidoria tem caráter orientativo e pedagógico. 
+5. A exigência cogente de validação de protocolo, diante dos baixos níveis de disponibilidade e confiabilidade da API, poderia restringir o direito do consumidor de peticionar perante a Agência. 
+6. A descontinuidade do projeto-piloto foi motivada por dados coletados ao longo de anos, pela persistência de falhas técnicas, pela ausência de solução de curto ou médio prazo e pela necessidade de alocação eficiente de recursos públicos. 7.
+A interrupção da validação via API não afasta a diretriz regulatória de orientar o consumidor a buscar previamente os canais da Prestadora e a Ouvidoria. A Anatel mantém medidas educativas e de direcionamento nos canais digitais e telefônicos.
+IV. DISPOSITIVO E TESE
+Recurso não conhecido. Mantida a concordância com os despachos decisórios que descontinuaram o projeto-piloto de validação de protocolos de Ouvidoria. 
+Tese de julgamento: "1. Não há interesse recursal quando a decisão administrativa não impõe gravame, sanção ou restrição de direitos à Recorrente. 2. A ausência de intimação prévia sobre informe interno não acarreta nulidade sem demonstração de prejuízo concreto ao contraditório e à ampla defesa. 3. Não existe norma vigente que condicione o registro de reclamação na Anatel ao prévio registro na Ouvidoria da Prestadora ou à validação de protocolo. 4. É legítima a descontinuidade de projeto-piloto de validação por API quando a medida se funda em falhas persistentes, baixa efetividade e critérios de eficiência administrativa." 
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXIV, a; Lei nº 9.472/1997, art. 3º, XI; Lei nº 9.784/1999, art. 55; CPC, arts. 15 e 996; Resolução Anatel nº 746/2021, art. 16; Resolução Anatel nº 717/2019, art. 104-A.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 79/2026/OP (SEI nº 16153847), integrante deste acórdão, não conhecer do Recurso interposto tendo em vista o não atendimento do pressuposto de interesse recursal.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 24/08/2026, às 13:42, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16168028 e o código CRC BC11D3B4.
+ | 
+Referência: Processo nº 53500.056673/2020-00 | 
+SEI nº 16168028 |

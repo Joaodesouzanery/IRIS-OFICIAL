@@ -1,0 +1,47 @@
+SEI/ANATEL - 16105501 - Acórdão
+Boletim de Serviço Eletrônico em 17/08/2026
+DOU de 17/08/2026, seção 1, página 14
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 199, de 11 de agosto de 2026
+Processo nº 53524.002645/2024-10
+Recorrente/Interessado: EMPRESA BRASIL DE COMUNICAÇÃO S.A. - EBC
+CNPJ nº 09.168.704/0001-42
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 956, de 6 de agosto de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. RECURSO ADMINISTRATIVO. USO NÃO AUTORIZADO DE RADIOFREQUÊNCIA EM RADIODIFUSÃO FM. AUTORIA E MATERIALIDADE CONFIRMADAS. INFRAÇÃO DE NATUREZA GRAVE. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO DECRETO Nº 12.150, DE 20 DE AGOSTO DE 2024, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO E AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Segundo Recurso Administrativo interposto pela EMPRESA BRASIL DE COMUNICAÇÃO S.A. - EBC contra o Despacho Decisório nº 636/2025/CODI/SCO, que negou provimento ao Recurso anterior e revisou, de ofício, a multa para R$ 29.998,09 (vinte e nove mil, novecentos e noventa e oito reais e nove centavos).
+2. Fato relevante. A fiscalização constatou uso não autorizado de radiofrequência em 87,1 MHz, em Belo Horizonte/MG, na exploração do Serviço de Radiodifusão Sonora em FM, com ocorrência de interferência prejudicial associada ao transmissor da emissora.
+3. Pedido. Afastamento da multa, com aplicação de advertência ou revisão da dosimetria, inclusive por equiparação da EBC a ente público ou por reclassificação de porte.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se ficou caracterizada a infração de uso não autorizado de radiofrequência na prestação de radiodifusão sonora em FM; e (ii) saber se é cabível a substituição da multa por advertência ou a revisão da dosimetria aplicada.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo e preenche os requisitos de admissibilidade previstos no Regimento Interno da Anatel - RIA.
+2. O conhecimento de Petições Extemporâneas é possível, nos termos do Enunciado nº 21 da Anatel, quando protocoladas antes da publicação da pauta e não caracterizado abuso.
+3. A fiscalização comprovou a operação em 87,1 MHz sem autorização válida no período apurado, após o término do ato temporário e antes da autorização definitiva.
+4. A participação em política pública e as tratativas administrativas para consignação e licenciamento não afastam a exigência de prévia autorização de uso de radiofrequência.
+5. A irregularidade configura infração formal e se caracteriza pela constatação do uso não autorizado, independentemente de intenção específica.
+6. A interferência prejudicial foi apurada como gerada no transmissor da Emissora e foi considerada na dosimetria.
+7. O uso não autorizado de radiofrequência é infração grave, o que impede a aplicação de advertência e impõe a sanção de multa.
+8. A metodologia de cálculo da multa observou os critérios da Resolução Interna nº 188/2023 e os parâmetros do Regulamento de Aplicação de Sanções Administrativas - RASA, com consideração de antecedentes por serviço, conforme entendimento do Conselho Diretor.
+9. Não cabe equiparar a EBC a órgão público para fins de enquadramento do infrator na metodologia da Resolução Interna nº 188/2023.
+10. A decisão fundamenta-se no Decreto Presidencial nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG; no Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor; e no Memorando de Entendimento firmado entre Brasil e Estados Unidos, com o objetivo de promover boas práticas regulatórias. Esse programa adota princípios, estratégias, ações e procedimentos voltados para a melhoria da qualidade da regulação, por meio do aperfeiçoamento contínuo e da simplificação do processo regulatório.
+11. A decisão está em conformidade com os estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG - Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e o Programa das Nações Unidas para o Desenvolvimento - PNUD. O objetivo é estimular um ambiente regulatório mais saudável, inibindo o uso inadequado do espectro radioelétrico.
+12. A decisão segue as recomendações da Organização para Cooperação e Desenvolvimento Econômico - OCDE ao prevenir e reprimir o uso inadequado do espectro de radiofrequências. Além disso, contribui para a criação de um ambiente competitivo mais saudável.
+13. A fundamentação alinha-se aos Objetivos 9, 10 e 16 (metas 9.1, 10.5, 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas - ONU, relacionados à preocupação com o desenvolvimento de infraestrutura de qualidade, confiável, sustentável e resiliente; à melhoria da regulamentação e monitoramento dos mercados e instituições financeiras globais e fortalecimento da implementação de tais regulamentações; à promoção do Estado de Direito, em nível nacional e internacional, e garantia da igualdade de acesso à justiça para todos; e à garantia da tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis. Igualmente apoia as metas brasileiras 10.5 e 16.3, revisadas pelo Instituto de Pesquisa Econômica Aplicada - IPEA, que visam à universalização do acesso à justiça e à construção de instituições eficazes, responsáveis e inclusivas. A deliberação reafirma a força normativa dos regulamentos da Anatel, oferecendo uma resposta regulatória para promover a saúde e a segurança do consumidor no setor de telecomunicações.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: “1. O uso de radiofrequência em radiodifusão sonora FM sem prévia autorização caracteriza infração administrativa, ainda que existam tratativas de regularização. 2. O uso não autorizado de radiofrequência configura infração grave e impõe a aplicação de multa, sendo incabível advertência. 3. Mantém-se a dosimetria quando o cálculo observa a metodologia aplicável e considera interferência prejudicial e antecedentes conforme entendimento do Conselho Diretor.”
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 163 e 173; Lei nº 9.784/1999, art. 64, parágrafo único; Decreto nº 8.139/2013; Resolução nº 612/2013 - RIA, arts. 115, § 1º, e 116; Resolução nº 589/2012 - RASA, arts. 9º, § 3º, VII, e 12, parágrafo único, II; Resolução nº 671/2016 - Regulamento de Uso do Espectro de Radiofrequências - RUER, arts. 15 e 59; e Resolução Interna nº 188/2023.
+Jurisprudência relevante citada: Anatel, Conselho Diretor, Acórdão nº 125/2023, Processo nº 53500.024598/2014-61, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Circuito Deliberativo nº 131, 31.05.2023 (Acórdão de 01.06.2023).
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 40/2026/AF (SEI nº 15345868), integrante deste acórdão, conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/08/2026, às 12:00, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16105501 e o código CRC 09F13871.
+ | 
+Referência: Processo nº 53524.002645/2024-10 | 
+SEI nº 16105501 |

@@ -1,0 +1,77 @@
+SEI/ANATEL - 11948337 - Análise
+Boletim de Serviço Eletrônico em 06/03/2026
+Análise nº 9/2024/CL
+Processo nº 53500.031253/2022-74
+Interessado: Oi S.A., Grupo Oi
+CONSELHEIRO
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Recurso Administrativo interposto pela Oi S.A. em face do Despacho Decisório nº 139/2023/CPRP/SCP (10832582), pelo qual o Superintendente de Competição decidiu não aceitar o Plano de Conformidade apresentado para regularização do atendimento aos pedidos de interconexão constantes do Sistema de Negociação de Ofertas de Atacado (SNOA).
+EMENTA
+SUPERINTENDÊNCIA DE COMPETIÇÃO. procedimento de fiscalização regulatória. GRUPO OI. recurso administrativo. NECESSIDADE DE PRAZO adicional PARA CONCLUIR A ANÁLISE. PRORROGAÇÃO DE RELATORIA.
+Processo incluído automaticamente na pauta da Reunião do Conselho Diretor.
+Pela prorrogação do prazo para submissão da matéria ao Conselho Diretor pelo prazo de 120 (cento e vinte) dias.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT);
+Lei nº 9.874, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Matéria para Apreciação do Conselho Diretor nº 316/2024 (SEI nº 11815299).
+RELATÓRIO
+DOS FATOS processuais
+Tratam os presentes autos de Procedimento de Fiscalização Regulatória com o propósito de promover a regularização do atendimento, pelas empresas do Grupo Oi, dos pedidos de interconexão em redes de telecomunicações presentes no Sistema de Negociação de Ofertas de Atacado (SNOA), tendo em vista as análises contidas no Informe nº 41/2022/CPRP/SCP (SEI nº 8100517), prolatado no âmbito do Processo nº 53500.016694/2022-46, instaurado para fins do acompanhamento do atendimento dos pedidos de interconexão.
+Em referido documento, a Gerência de Monitoramento das Relações entre Prestadoras (CPRP/SCP) analisa as informações do SNOA em torno do atendimento dos pedidos de interconexão entre redes de telecomunicações envolvendo as empresas dos Grupos Telefônica, Tim, Claro e Oi, à luz da regulamentação vigente. Após destacar a importância da interconexão para a comunicação entre redes, a necessidade de conformidade regulatória e a necessidade de implementação de um plano de ação para monitorar e melhorar o atendimento dos pedidos de interconexão, conclui-se por sugerir ao Superintendente de Competição a adoção de medidas para regularização dos atendimentos de interconexão.
+Em 13/04/2022, o Superintendente de Competição prolatou o Despacho Decisório nº 82/2022/CPRP/SCP (SEI nº 8312750), por meio do qual decidiu acatar os termos do Informe nº 41/2022/CPRP/SCP, determinando ao Grupo Oi, à guisa de fiscalização regulatória, a regularização do atendimento dos pedidos pendentes no SNOA, nos termos que reproduzo a seguir:
+Despacho Decisório nº 82/2022/CPRP/SCP (SEI nº 8312750)
+Processo nº 53500.031253/2022-74
+Interessado: Grupo Oi
+O SUPERINTENDENTE DE COMPETIÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, com fundamento nos artigos 2º, 8º, 9º, 19, 127 e 128 da Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT), bem como nos arts. 159, I, 115, §§ 7º e 8º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, e
+CONSIDERANDO os apontamentos consignados no Informe nº 41/2022/CPRP/SCP (SEI nº 8100517), o qual se adota como fundamento da presente decisão, nos termos do art. 50, § 1º, da Lei nº 9.784, de 29 de janeiro de 1999.
+DECIDE:
+I - DETERMINAR a aplicação do disposto no art. 42, inciso III, do Regulamento de Fiscalização Regulatória, aprovado pela Resolução Anatel nº 746, de 22 de junho de 2021, ao GRUPO OI, para que este realize a regularização do atendimento dos pedidos de interconexão presentes no Sistema de Negociação de Ofertas de Atacado (SNOA) no prazo de 12 (doze) meses, contado da publicação deste Despacho no Boletim de Serviço da Anatel.
+II - DETERMINAR que, findo o prazo disposto no item I, a análise de desempenho será medida a partir dos dados constantes no SNOA, observando o quantitativo de solicitações com prazo superior a 90 (noventa) dias, considerando-se os seguintes critérios:
+a) até 10% - considerado regular;
+b) acima de 10% até 30% - considerado irregular com ressalvas; e
+c) acima de 30% - considerado irregular.
+III - NOTIFICAR a parte do inteiro teor da decisão.
+Em 25/04/2022, foi acostada aos autos a Planilha "Comprovante DADOS DO SNOA" (SEI nº 8354923), contendo as informações referentes ao Grupo Oi provenientes da Planilha de Pedidos do Sistema de Negociação de Ofertas de Atacado (SNOA) de SEI nº 8176341, constante do Processo nº 53500.016694/2022-46 - conforme Certidão de SEI nº 8354916.
+Em 28/04/2022, as empresas do Grupo Oi foram notificadas da decisão por meio do Ofício nº 216/2022/CPRP/SCP-ANATEL (SEI nº 8312808; Certidões de Intimação Cumprida de SEI nº 8377300, SEI nº 8377301 e SEI nº 8377302).
+Em 01/06/2023, foi expedido o Informe nº 97/2023/CPRP/SCP (SEI nº 10251724), no âmbito do qual foi realizado o acompanhamento do atendimento dos pedidos de interconexão pelo Grupo Oi e outras prestadoras detentoras de Poder de Mercado Significativo (PMS), e detalha o projeto de Fiscalização Regulatória iniciado para resolver a morosidade e o acúmulo desses pedidos, conforme estabelecido no Regulamento de Fiscalização Regulatória da Anatel, aprovado pela Resolução nº 746, de 22 de junho de 2021.
+No âmbito de tal projeto, foram estabelecidas metas para reduzir o percentual de pedidos com mais de 90 dias em andamento, com realização de reuniões plenárias e iniciativas de saneamento da base de dados, com a participação de várias entidades e associações representativas de prestadoras de serviços de telecomunicações, tendo-se alçado uma redução agregada de 62% dos pedidos em andamento. 
+No entanto, as empresas do Grupo Oi não conseguiram reduzir sua fila de pedidos, tendo apresentado uma capacidade de encerramento de pedidos inferior ao número de novos pedidos recebidos, sugerindo uma incapacidade de atender à demanda. Assim, por tais achados, o documento conclui que o Grupo Oi não conseguiu cumprir as metas do projeto de fiscalização regulatória, necessitando de ações punitivas e coercitivas. Propôs a notificação da OI e da TELEFÔNICA para esclarecimentos adicionais e a comunicação dos resultados à Superintendência de Controle de Obrigações.
+Nessa esteira, em 01/06/2023, foram expedidos os Ofícios nº 252/2023/CPRP/SCP-ANATEL (SEI nº 10276133), nº 253/2023/CPRP/SCP-ANATEL (SEI nº 10276362) e nº 261/2023/CPRP/SCP-ANATEL (SEI nº 10288804), endereçados, respectivamente, ao Grupo Oi, à Telefônica, e à SCO.
+Em 30/06/2023, o Grupo TELEFÔNICA manifestou-se nos autos em resposta ao Ofício nº 253/2023/CPRP/SCP-ANATEL por meio da Petição de SEI nº 10482629.
+Em 04/07/2023, o Grupo Oi se manifestou em resposta ao Ofício nº 252/2023/CPRP/SCP-ANATEL por meio da Petição CT/Oi/GCRCM/0001/2023, de SEI nº 10499503. Na oportunidade, o Grupo destacou as ações tomadas e as dificuldades enfrentadas no atendimento dos pedidos de interconexão. Relata que teria participado de reuniões com a Anatel e outras prestadoras, revisado processos internos, além de ter contratado terceiros para acelerar a ativação das interconexões, e que o quantitativo de pedidos teria sofrido aumento expressivo notadamente após a alienação de suas operações móveis, mencionando a complexidade de sua rede legada. 
+Assim, o Grupo Oi apresentou um Plano de Conformidade para atender aos prazos repactuados com as solicitantes e melhorar a capacidade produtiva interna, ante o que solicitou que a Anatel considerasse os esforços realizados e aprovasse o tal Plano.
+Em 15/08/2023, foi expedido o Informe nº 176/2023/CPRP/SCP (SEI nº 10615447), no qual a área técnica destacou a importância da teoria da responsividade regulatória, que busca a conformidade por meio de medidas progressivas, e evidenciou que o Grupo Oi não teria reduzido seu passivo de pedidos de interconexão. O Grupo Telefônica também foi mencionado por seu comportamento anômalo, abrindo mais de 2 mil pedidos de interconexão nos últimos dois meses do projeto, o que teria distorcido os resultados. Ao final, sugeriu o encaminhamento dos autos à SCO para apuração do descumprimento de obrigações pelo Grupo Oi.
+Na mesma data, foram expedidos os Ofícios nº 478/2023/CPRP/SCP-ANATEL (SEI nº 10694240) e nº 479/2023/CPRP/SCP-ANATEL (SEI nº 10694512), endereçados respectivamente ao Grupo Oi, para ciência, e à SCO.
+Em 31/08/2023, o Grupo Oi manifestou-se nos autos por meio da Petição de SEI nº 10802698, na qual atualiza a Anatel sobre seu Plano de Conformidade em andamento para o atendimento de pedidos de interconexão, detalha suas ações para reduzir o estoque de pedido, destacando a ampliação da capacidade produtiva e a contratação de recursos humanos. 
+Em 08/09/2023, foi expedido o Informe nº 205/2023/CPRP/SCP (SEI nº 10831692), por meio do qual a área técnica analisa a proposta de Plano de Conformidade 2023-2024 apresentada pelo Grupo Oi para regularizar a fila de pedidos de interconexão. Em referido documento, destaca-se que a petição fora apresentada de forma intempestiva, meses após o término do projeto de fiscalização regulatória, encerrado em 30 de abril de 2023, e evidencia o não cumprimento, pelo Grupo Oi, das metas estabelecidas durante o período de acompanhamento, e por tentar repactuar prazos de forma imotivada. Ao final, o documento conclui que o Plano de Conformidade apresentado seria insuficiente, e propõe o não aceite do mesmo, declarando encerrada a fase de acompanhamento e iniciando a fase de controle.
+Nessa toada, na mesma data, o Superintendente de Competição prolatou o Despacho Decisório nº 139/2023/CPRP/SCP (SEI nº 10832582), pelo qual decidiu, in verbis:
+Despacho Decisório nº 139/2023/CPRP/SCP (SEI nº 10832582)
+[...]
+I - NÃO ACEITAR o Plano de Conformidade apresentado pelo Grupo OI (SEI nº 10802698).
+II - DECLARAR encerrada a fase de Acompanhamento do projeto de fiscalização regulatória do Grupo OI referente à fila de pedidos de interconexão, nos termos do art. 45 do Regulamento de Fiscalização Regulatória, aprovado pela Resolução Anatel nº 746, de 22 de junho de 2021.
+III - ENCAMINHAR os autos à Superintendência de Controle das Obrigações (SCO) para início da fase de controle, nos termos do inciso II do art. 17 do Regulamento de Fiscalização Regulatória, aprovado pela Resolução Anatel nº 746, de 22 de junho de 2021.
+Em 15/09/2023, o Grupo Oi foi devidamente notificado dos termos da decisão, por meio do Ofício nº 552/2023/CPRP/SCP-ANATEL (SEI nº 10832642, Certidão de Intimação Cumprida SEI nº 10864104). Pelo Ofício nº 650/2023/CPRP/SCP-ANATEL (SEI nº 11040861), em 24/10/2023 o Grupo Oi recebeu nova notificação dos termos da decisão, reabrindo o prazo para interposição de recurso, tendo em vista a necessária disponibilização do Informe nº 205/2023/CPRP/SCP.
+Em 17/11/2023, o Grupo Oi manifestou-se nos autos por meio da Petição CT/Oi/GCRCM/0572/2023 (SEI nº 11153468), requerendo, em linha com a atuação responsiva da Agência, a aceitação do Plano de Conformidade apresentado, cujos resultados já estariam sendo identificados.
+Em 15/12/2023, foi expedido o Despacho Decisório nº 182/2023/CPRP/SCP (SEI nº 11275133), pelo qual o Superintendente de Competição decidiu conhecer a Petição CT/Oi/GCRCM/0572/2023 (SEI nº 11153468) como recurso administrativo em face do Despacho Decisório nº 139/2023/CPRP/SCP.
+Em 12/01/2024, o Grupo Oi foi notificado do Despacho Decisório nº 182/2023/CPRP/SCP por meio do Ofício nº 738/2023/CPRP/SCP-ANATEL (SEI nº 11275483; Certidão de Intimação Cumprida de SEI nº 11368288).
+Em 12/04/2024, foi expedido o Informe nº 25/2024/CPRP/SCP (SEI nº 11586383), por meio do qual a área técnica analisou o recurso administrativo apresentado pela Oi, concluindo por sugerir ao Conselho Diretor o seu conhecimento para, no mérito, negar a ele provimento.
+Na mesma data, os autos foram encaminhados para apreciação do Conselho Diretor por meio da MACD nº 316/2024 (SEI nº 11815299), tendo sido distribuídos para o gabinete do então Conselheiro Substituto Raphael Garcia, para fins de relatoria, em 18/04/2024, conforme Certidão de Distribuição de SEI nº 11843815.
+Em razão de minha nomeação para compor este Conselho Diretor, os autos foram redistribuídos para o meu gabinete, para fins de relatoria, em 25/04/2024, conforme Certidão de Distribuição nº 11884358.
+Em 22/05/2024, o Grupo Oi manifestou-se nos autos por meio da Petição CT/Oi/GCRCM/1175/2024 (SEI nº 12022303), pela qual solicitou à Anatel o sobrestamento do presente processo.
+São os fatos. 
+DA ANÁLISE
+Considerando o prazo previsto e as disposições constantes do art. 127, § 2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, os autos foram automaticamente incluídos na pauta da Reunião nº 936, de 25 de setembro de 2024.
+Todavia, considerando a complexidade da matéria, a análise não pôde ser concluída dentro do prazo regimental, de modo que requeiro a prorrogação por 120 (cento e vinte) dias para submissão da matéria ao Conselho Diretor, com fulcro no § 3º do art. 127 do Regimento Interno da Agência, in verbis:
+Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+................................................................................................................................................
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho a prorrogação do prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 2013.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 25/09/2024, às 20:39, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 11948337 e o código CRC F9FA2189.
+ | 
+Referência: Processo nº 53500.031253/2022-74 | 
+SEI nº 11948337 |

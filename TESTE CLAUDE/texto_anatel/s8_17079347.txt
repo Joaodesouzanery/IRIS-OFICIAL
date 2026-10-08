@@ -1,0 +1,44 @@
+SEI/ANATEL - 15264985 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 14
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 52, de 03 de março de 2026
+Processo nº 53500.026914/2021-69
+Recorrente/Interessado: SKY SERVIÇOS DE BANDA LARGA LTDA.
+CNPJ nº 00.497.373/0001-10
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESCUMPRIMENTO AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. MULTA REFORMADA. APLICAÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA. contra decisão que aplicou multa de R$ 18.955.003,30 (dezoito milhões, novecentos e cinquenta e cinco mil, três reais e trinta centavos) por descumprimento ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+2. Fatos relevantes incluem alegações de nulidades processuais, questionamento sobre métodos amostrais, contestação do arbitramento de valores a ressarcir e discussão sobre a legitimidade de cobrança antecipada.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se houve nulidade no processo administrativo por vícios na fiscalização, arbitramento de valores ou encerramento da instrução; (ii) saber se houve infração aos arts. 3º, XIII; 14 e 15; 61, § 1º c/c 106; e 85 do RGC; (iii) saber se as infrações devem ser classificadas como sistêmicas ou pontuais; (iv) saber se o valor da multa foi corretamente apurado e se observou os critérios de proporcionalidade, gravidade e vantagem auferida; e (v) aplicação de sanção de obrigação de fazer, consistente no provimento de conectividade para universidades públicas e institutos federais.
+III. RAZÕES DE DECIDIR
+1. Não se verificou nulidade no processo administrativo, pois as infrações apuradas independem de métodos amostrais e não houve prejuízo ao contraditório ou ampla defesa.
+2. A infração ao art. 3º, XV, do RGC foi descaracterizada por ausência de materialidade suficiente.
+3. As infrações aos arts. 14 e 15 do RGC foram caracterizadas como pontuais, limitadas aos 23.974 (vinte e três mil, novecentos e setenta e quatro) casos de agendamento de cancelamento em janeiro de 2020.
+4. A infração ao art. 61, § 1º c/c 106 do RGC foi caracterizada como pontual, limitada aos 1.766.260 (um milhão, setecentos e sessenta e seis mil, duzentos e sessenta) usuários de planos pós-pagos com pagamento antecipado.
+5. A infração ao art. 85 do RGC foi caracterizada como pontual, limitada aos 22.481 (vinte e dois mil, quatrocentos e oitenta e um) casos de cancelamento com cobrança indevida após o pedido de rescisão.
+6. O enquadramento da infração ao art. 64, parágrafo único, do RGC foi alterado para o art. 3º, XIII, do RGC, sem prejuízo à defesa.
+7. O valor da multa foi recalculado para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil, oitocentos e vinte e dois reais e vinte e um centavos), observando-se a limitação ao dobro da vantagem auferida, a gravidade das infrações e a ausência de antecedentes.
+8. A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para universidades públicas e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+IV. DISPOSITIVO E TESE
+Recurso parcialmente provido. Multa reformada para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil, oitocentos e vinte e dois reais e vinte e um centavos). Aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, conforme requisitos e parâmetros definidos.
+Tese de julgamento: "1. Não há nulidade no processo administrativo por vícios na fiscalização, arbitramento de valores ou encerramento da instrução. 2. A infração ao art. 3º, XV, do RGC é descaracterizada. 3. As infrações aos arts. 14 e 15; 61, § 1º c/c 106; e 85 do RGC são caracterizadas como pontuais, com delimitação dos usuários atingidos. 4. O valor da multa é reformado para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil, oitocentos e vinte e dois reais e vinte e um centavos), observando-se o dobro da vantagem auferida, gravidade e ausência de antecedentes. 5. Aplicação da sanção de obrigação de fazer consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999; Resolução nº 632/2014, arts. 3º, XIII, 14, 15, 61, § 1º, 85 e 106; Resolução nº 589/2012; Resolução nº 612/2013; Resolução nº 784/2025.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 2/2025/OP (SEI nº 14330268), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, dar-lhe parcial provimento;
+b) reformar, de ofício, a decisão recorrida, alterando o valor da sanção de multa de R$ 18.955.003,30 (dezoito milhões, novecentos e cinquenta e cinco mil, três reais e trinta centavos) para R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil, oitocentos e vinte e dois reais e vinte e um centavos), em razão das infrações aos arts. 3º, XIII; 14 e 15; 61, § 1º c/c art. 106 e 85, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014;
+c) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da Rede Nacional de Ensino e Pesquisa - RNP, nos termos descritos na referida análise, tendo como base o valor de R$ 5.456.822,21 (cinco milhões, quatrocentos e cinquenta e seis mil, oitocentos e vinte e dois reais e vinte e um centavos), com as correções monetárias e dedução, nos termos do Regulamento de Aplicação de Sanções Administrativas - RASA, a ser implementado nos termos expostos no item 4.86 da referida análise; e,
+d) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou, caso queira, comunique à Agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15264985 e o código CRC 1A506F89.
+ | 
+Referência: Processo nº 53500.026914/2021-69 | 
+SEI nº 15264985 |

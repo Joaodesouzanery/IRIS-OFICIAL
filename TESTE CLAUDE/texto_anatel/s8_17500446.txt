@@ -1,0 +1,46 @@
+SEI/ANATEL - 15648424 - Acórdão
+Boletim de Serviço Eletrônico em 18/05/2026
+DOU de 18/05/2026, seção 1, página 30
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 137, de 15 de maio de 2026
+Processo nº 53500.093979/2025-43
+Recorrente/Interessado: AST & SCIENCE DO BRASIL LTDA.
+CNPJ nº 44.808.310/0001-02
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 126/2026, de 15 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. TELECOMUNICAÇÕES. DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO. SISTEMA DE SATÉLITES NÃO-GEOESTACIONÁRIOS SPACEMOBILE. PEDIDO PARCIALMENTE DEFERIDO.
+I. CASO EM EXAME
+1. O Pedido. Pedido de conferência de direito de exploração, no Brasil, do sistema de satélites não-geoestacionários SpaceMobile, de propriedade da AST & SCIENCE, LLC, formulado por sua representante legal AST & SCIENCE DO BRASIL LTDA., pelo prazo de 15 (quinze) anos.
+2. Fato relevante. O sistema é composto por até 248 (duzentos e quarenta e oito) satélites. O Pedido abrange faixas da Banda S e das Bandas Q/V. A operação informada associa o sistema às redes SSG-CSL e USASAT-NGSO-20. Posteriormente, a Requerente informou também associação às redes D-BLUEBIRD, D-BLUEBIRD-QV-1 e D-BLUEBIRD-QV-2.
+3. Instrução processual. A Gerência de Outorga e Licenciamento de Estações - ORLE realizou análises preliminares e formulou exigências. A Requerente apresentou documentação complementar. A Anatel submeteu o Pedido à Consulta Pública nº 8/2026. A Superintendência de Outorga e Recursos à Prestação - SOR analisou os aspectos técnicos, regulatórios, de coordenação e, em particular, a canalização da Banda S e o prazo de validade.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) verificar se foram atendidos os requisitos procedimentais e técnico-regulatórios para a conferência do direito de exploração do sistema SpaceMobile no Brasil; (ii) confirmar que os parâmetros orbitais notificados à União Internacional de Telecomunicações - UIT permitem a operação simultânea dos 248 (duzentos e quarenta e oito) satélites nas bandas S e Q/V; (iii) saber se a outorga pode ser conferida com limitação a 10+10 MHz na Banda S, sem prioridade de coordenação em relação aos sistemas previamente autorizados; e (iv) definir o prazo de validade, considerando as datas limites da atual autorização da Comissão Federal de Comunicação (FCC - Federal Communications Commission) dos Estados Unidos da América e da futura autorização do órgão regulador da Alemanha.
+III. RAZÕES DE DECIDIR
+1. Compete ao Conselho Diretor conferir direito de exploração de satélite, nos termos da Lei nº 9.472/1997 e da Resolução nº 612/2013.
+2. A Requerente apresentou a documentação exigida pelo art. 16 do Regulamento Geral de Exploração de Satélites - RGSat e pelo Ato nº 9.526/2021. A ORLE certificou a conformidade documental.
+3. A Consulta Pública nº 8/2026 foi realizada nos termos dos arts. 17 e 19 do RGSat e do item 3.2 do Anexo ao Ato nº 4.430/2023.
+4. As faixas indicadas na Banda S e nas Bandas Q/V têm atribuição e destinação compatíveis com o uso pretendido, conforme o Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil - PDFF aprovado pela Resolução nº 772/2025.
+5. O sistema SpaceMobile está devidamente associado a redes de satélites no âmbito da UIT, sendo que algumas ainda se encontram em processamento junto ao órgão.
+6. A exploração de satélite estrangeiro exige observância das condições da autorização concedida no país de origem, nos termos do art. 30 do RGSat.
+7. O preço público devido pela outorga é de R$ 102.677,00 (cento e dois mil seiscentos e setenta e sete reais), nos termos dos arts. 38 e 39 do RGSat.
+8. Distintamente das Bandas Q/V, a Banda S apresenta elevada demanda e comporta revisão futura de canalização. A análise técnica indicou a conveniência de adoção de bloco de 10+10 MHz para favorecer a competição e o acesso por diferentes interessados.
+9. A outorga pode ser concedida com vigência até 19 de setembro de 2039, com a ressalva de que esse prazo de validade poderá ser revisto caso o órgão regulador da Alemanha conceda sua autorização por um prazo inferior ao da FCC.
+10. A Requerente apresentou documentos comprobatórios dos esforços de coordenação e solicitou a conferência do direito sem proteção contra interferência prejudicial e com a obrigação de não causar interferência prejudicial aos sistemas com os quais não firmou acordo.
+IV. DISPOSITIVO E TESE
+Pedido parcialmente deferido para conferir à AST & SCIENCE, LLC, por sua representante legal AST & SCIENCE DO BRASIL LTDA., direito de exploração, no Brasil, do sistema de satélites não-geoestacionários SpaceMobile, operando em faixas das Bandas S e Q/V nas condições estabelecidas na minuta de Ato SEI nº 15604032, ressaltando-se que a autorização na Banda S é limitada a um bloco de 10+10 MHz e não tem prioridade de coordenação em relação aos sistemas previamente autorizados.
+Tese de julgamento: "1. Compete ao Conselho Diretor da Anatel conferir direito de exploração de satélite, inclusive estrangeiro. 2. Atendidos os requisitos procedimentais e técnico-regulatórios do RGSat, é possível conferir direito de exploração ao sistema de satélites não-geoestacionários SpaceMobile. 3. A outorga será limitada, na Banda S, às subfaixas de 1.990 a 2.000 MHz e de 2.180 a 2.190 MHz, em bloco de 10+10 MHz, sem prioridade de coordenação em relação aos sistemas previamente autorizados, sem prejuízo da autorização das Bandas Q/V nas condições do ato. 4. Na ausência de acordo de coordenação, a outorga pode ser conferida sem direito à proteção contra interferência prejudicial e com a obrigação de não causar interferência prejudicial aos sistemas com prioridade de coordenação. 5. A expedição do ato de outorga depende da comprovação do pagamento do preço público de R$ 102.677,00 (cento e dois mil seiscentos e setenta e sete reais). 6. A presente autorização será revista pela Anatel no prazo de 5 (cinco) anos, em decorrência de estudos encomendados à SOR sobre o uso das faixas de frequências associadas, podendo ainda ser revista a qualquer tempo em caso de mudanças nas condições de autorização do segmento espacial no país de origem." 
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 1º; Resolução nº 612/2013, arts. 39 e 133, IX; Resolução nº 671/2016, art. 1º, § 3º, III, e art. 7º, parágrafo único; Resolução nº 748/2021, arts. 4º, § 2º, 10, 15, 16, 17, 18, 19, 21, 22, 30, 38 e 39; Resolução nº 772/2025; Resolução nº 779/2025, art. 1º, CXXV; Ato nº 9.523/2021; Ato nº 9.526/2021; Ato nº 4.430/2023.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 40/2026/NP (SEI nº 15529377), integrante deste acórdão:
+a) deferir parcialmente o Pedido da AST & SCIENCE, LLC, entidade constituída sob as leis dos Estados Unidos da América, formulado por sua representante legal AST & SCIENCE DO BRASIL LTDA., CNPJ nº 44.808.310/0001-02, referente à conferência de direito de exploração, no Brasil, do sistema de satélites SpaceMobile operando em faixas das Bandas S e Q/V, composto por 248 (duzentos e quarenta e oito) satélites, nas condições estabelecidas na minuta de Ato SEI nº 15604032, ressaltando-se que a autorização na Banda S é limitada a um bloco de 10+10 MHz e não possui prioridade de coordenação em relação aos sistemas previamente autorizados;
+b) estabelecer que novos direitos de exploração de satélite nas faixas de 1.980 MHz a 2.010 MHz e de 2.170 MHz a 2.220 MHz, bem como a prorrogação de direitos vigentes, deverão observar a divisão da faixa em três blocos de 10 + 10 MHz, com a autorização de, no máximo, um bloco por exploradora; e,
+c) condicionar a expedição do respectivo Ato de outorga à comprovação do pagamento do preço público, estipulado em R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 15/05/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15648424 e o código CRC 0FE95CDA.
+ | 
+Referência: Processo nº 53500.093979/2025-43 | 
+SEI nº 15648424 |

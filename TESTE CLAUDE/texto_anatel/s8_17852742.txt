@@ -1,0 +1,44 @@
+SEI/ANATEL - 15955740 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 188, de 13 de julho de 2026
+Processo nº 53524.001079/2020-03
+Recorrente/Interessado: COMPANHIA ITABIRANA DE TELECOMUNICAÇÕES LTDA.
+CNPJ nº 05.684.180/0001-91
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. BASE DE CÁLCULO E MULTA DE OFÍCIO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por COMPANHIA ITABIRANA DE TELECOMUNICAÇÕES LTDA. contra decisão que reconheceu a procedência parcial dos lançamentos de créditos tributários referentes à Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2018, e da multa de ofício decorrente da ausência de declaração da Contribuição.
+2. Fato relevante. A fiscalização apurou diferenças de Fust no exercício de 2018. Após a Impugnação, a Área Técnica reexaminou balancetes, notas fiscais e memória de cálculo e promoveu revisão parcial dos valores originalmente lançados.
+3. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO acolheu a revisão parcial e manteve o lançamento remanescente. Em grau recursal, a Prestadora reiterou as alegações de erro na base de cálculo, inconstitucionalidade do Fust e abusividade da multa.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se o Recurso preenche os pressupostos de admissibilidade e se a impugnação suspende a exigibilidade do crédito tributário; (ii) saber se a Recorrente comprovou a exclusão, da base de cálculo do Fust, de receitas registradas nas contas “322 - Aluguéis” e “388 - Serviços Prestados”; (iii) saber se a instância administrativa pode afastar a cobrança do Fust por alegada inconstitucionalidade; e (iv) se é cabível a multa de ofício de 75% (setenta e cinco por cento) aplicada ao lançamento.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo, cabível e foi interposto por parte legítima e regularmente representada.
+2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário.
+3. Não se aplica a prescrição intercorrente ao Processo Administrativo Fiscal - PAF.
+4. A Contribuição ao Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS, Programa de Integração Social - PIS e Contribuição para o Financiamento da Seguridade Social - Cofins.
+5. A Prestadora deve manter segregação contábil por serviço e comprovar, com documentação contábil e fiscal, a natureza das receitas que pretende excluir da base de cálculo.
+6. A reanálise fiscal examinou os documentos apresentados e expurgou parte das receitas das contas “322 - Aluguéis” e “388 - Serviços Prestados”.
+7. A Recorrente não apresentou, na fase recursal, prova nova apta a demonstrar erro remanescente na apuração ou segregação contábil inequívoca das receitas controvertidas.
+8. A instância administrativa não pode afastar a aplicação de lei ou decreto por fundamento de inconstitucionalidade.
+9. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 incide quando há ausência de declaração ou declaração inexata da Contribuição ao Fust.
+10. A Administração está vinculada à lei e não pode afastar ou reduzir a penalidade por alegações de razoabilidade, proporcionalidade ou efeito confiscatório.
+11. Cabe comunicar a decisão ao Ministério das Comunicações - MCom, em razão de sua capacidade tributária ativa para a cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido. Determinada a comunicação da decisão ao Ministério das Comunicações - MCom.
+Tese de julgamento: "1. O Recurso Administrativo contra decisão que reconhece a procedência parcial de lançamento relativo ao Fust é admissível quando interposto tempestivamente por parte legítima e regularmente representada. 2. A exclusão de receitas da base de cálculo do Fust exige segregação contábil clara e comprovação documental suficiente. 3. Ausente prova nova apta a infirmar a reanálise fiscal, deve ser mantida a decisão que reconheceu a procedência parcial do lançamento. 4. A instância administrativa não pode afastar a cobrança do Fust por alegação de inconstitucionalidade. 5. É legítima a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 nos casos de ausência de declaração ou declaração inexata da contribuição ao Fust. 6. Cabe comunicar a decisão ao Ministério das Comunicações - MCom para as providências pertinentes quanto ao Funttel."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, art. 151, III; Constituição Federal - CF/1988, arts. 150, IV, e 155, § 3º; Lei nº 9.430/1996, arts. 44, I, e 61; Lei nº 9.472/1997, art. 81, II; Lei nº 9.998/2000, arts. 1º, 6º, IV, e 10; Decreto nº 70.235/1972, arts. 26-A e 33; Decreto nº 3.624/2000; Resolução Anatel nº 612/2013, art. 116; Resolução Anatel nº 73/1998, arts. 23 e 30; e Portaria Anatel nº 642/2013, art. 5º, IV, “a”.
+Jurisprudência relevante citada: Súmula nº 26 da Anatel; Súmula nº 27 da Anatel; Súmula nº 11 do Conselho Administrativo de Recursos Fiscais - CARF; Anatel, Acórdão nº 20, Processo nº 53500.006882/2015-37, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 940, j. 13.02.2025; Anatel, Acórdão nº 80, Processo nº 53500.016302/2015-10, Rel. Conselheiro Moisés Queiroz Moreira, Reunião nº 921, j. 13.04.2023; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 941, j. 13.03.2025; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Conselheiro Carlos Manuel Baigorri, Reunião nº 885, j. 28.05.2020; Anatel, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Conselheiro Otavio Luiz Rodrigues Junior, Reunião nº 823, j. 06.04.2017; Supremo Tribunal Federal - STF, ADI nº 551/RJ, publicação no DJ de 14.02.2003; STF, RE nº 582.461/SP, publicação no DJ de 18.08.2011; e STF, AgR no RE nº 833.106/GO, publicação no DJe de 12.12.2014.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 54/2026/NP (SEI nº 15744408), integrante deste acórdão, conhecer do Recurso Administrativo (SEI nº 14157643) interposto pela COMPANHIA ITABIRANA DE TELECOMUNICAÇÕES LTDA., CNPJ nº 05.684.180/0001-91, para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 419/2025/COUN/SCO (SEI nº 13631782), de 9 de junho de 2025.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15955740 e o código CRC B23D29E3.
+ | 
+Referência: Processo nº 53524.001079/2020-03 | 
+SEI nº 15955740 |

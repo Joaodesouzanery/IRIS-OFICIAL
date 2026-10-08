@@ -1,0 +1,55 @@
+SEI/ANATEL - 15949852 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 184, de 10 de julho de 2026
+Processo nº 53500.009146/2023-41
+Recorrente/Interessado: VIPWAY TELECOMUNICAÇÕES LTDA.
+CNPJ nº 06.128.103/0001-18
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO SANCIONADOR E DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. PUBLICIDADE ENGANOSA POR OMISSÃO. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por VIPWAY TELECOMUNICAÇÕES LTDA. contra decisão que aplicou multa de R$ 1.604.863,74 (um milhão, seiscentos e quatro mil, oitocentos e sessenta e três reais e setenta e quatro centavos) por descumprimento dos arts. 3º, II, IV e XIII, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC/2014 e do art. 37, § 1º, do Código de Defesa do Consumidor - CDC, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+2. A fiscalização apurou, no contexto do programa televisivo "Fangames", veiculação de mensagens que direcionavam o consumidor ao uso do Código de Seleção de Prestadora - CSP 75, de titularidade da Recorrente, e omissão de informação adequada sobre o preço total cobrado nas chamadas realizadas com outros CSPs.
+3. A Superintendência de Controle de Obrigações - SCO aplicou a sanção. Em grau recursal, a Recorrente alegou ausência de publicidade própria, inexistência de violação à livre escolha do CSP, suficiência das informações tarifárias e erro na dosimetria da multa.
+II. QUESTÃO EM DISCUSSÃO
+Há três questões em discussão: (i) saber se houve violação ao direito de livre escolha da Prestadora, previsto no art. 3º, inciso II, do RGC/2014; (ii) saber se a conduta da Recorrente configurou induzimento do consumidor à aquisição de serviço que não era de seu interesse, nos termos do art. 3º, inciso XIII, do RGC/2014; e (iii) saber se houve falha no dever de informação e publicidade enganosa por omissão quanto ao preço do serviço, com repercussão na tipificação e na dosimetria da sanção.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Interposição tempestiva. A Recorrente tem interesse recursal e está regularmente representada.
+2. Não ficou configurada infração ao art. 3º, inciso II, do RGC/2014. Os autos demonstram que era tecnicamente possível completar chamadas com CSPs diversos do 75. Não houve impedimento efetivo à escolha da Prestadora.
+3. Ficou configurada infração ao art. 3º, inciso XIII, do RGC/2014. As mensagens veiculadas no programa e as cláusulas contratuais firmadas com a produtora induziam o consumidor ao uso do CSP 75 e criavam a falsa percepção de exclusividade para participação no programa.
+4. Ficou configurada infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC. A informação exibida no rodapé da tela era insuficiente e omitia o valor cobrado quando a ligação era realizada com CSP diverso do 75.
+5. A omissão informacional induzia o consumidor a erro quanto ao preço total do serviço. As chamadas com outros CSPs geravam cobrança adicional de R$ 5,59 (cinco reais e cinquenta e nove centavos) em favor da Recorrente, sem informação clara ao usuário.
+6. A Recorrente integra a cadeia de consumo e aufere proveito econômico direto com a cobrança. Por isso, responde pela comunicação omissiva que viabilizou a cobrança, ainda que o programa tenha sido produzido por terceiro.
+7. As condutas de falta de informação adequada e publicidade enganosa por omissão constituem, no caso, conduta única. O enquadramento correto é no art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, com sancionamento único.
+8. A metodologia de cálculo da multa baseada na Resolução Interna Anatel nº 219/2023 foi corretamente adotada. Não cabe sua revisão.
+9. Para a infração ao art. 3º, inciso XIII, do RGC/2014, mantêm-se os fatores Usuários totais - Ut e Usuários atingidos - Ua em 598.124 (quinhentos e noventa e oito mil, cento e vinte e quatro) chamadas, por forte probabilidade de que todas tenham decorrido do induzimento ao uso do CSP 75.
+10. Para a infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, o fator Ut deve ser ajustado para 59.207 (cinquenta e nove mil, duzentos e sete) e o fator Ua para 32 (trinta e dois), com reclassificação da infração como pontual e redução do fator tempo de 0,30 para 0,15.
+11. A vantagem auferida calculada para a conduta antes enquadrada no art. 3º, inciso II, do RGC/2014 deve ser integralmente aproveitada para a infração ao art. 3º, inciso XIII, do RGC/2014, pois o suporte fático é o mesmo e houve apenas reenquadramento jurídico da conduta.
+12. Não houve nulidade nem reformatio in pejus. No processo administrativo sancionador, a defesa incide sobre os fatos imputados, e não sobre a capitulação jurídica, desde que preservados o contraditório e a ampla defesa.
+13. Não cabe aplicação de atenuante. Não ficou comprovada cessação espontânea da infração nem reparação total do dano antes da atuação da Agência.
+IV. DISPOSITIVO E TESE
+1. Recurso Administrativo parcialmente provido.
+2. A decisão recorrida é revista, de ofício, para afastar a infração ao art. 3º, inciso II, do RGC/2014, manter a infração ao art. 3º, inciso XIII, do RGC/2014, manter a infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC, ajustar os parâmetros de dosimetria e fixar a multa em R$ 1.601.583,90 (um milhão, seiscentos e um mil, quinhentos e oitenta e três reais e noventa centavos).
+Tese de julgamento: "1. Não há infração ao art. 3º, inciso II, do RGC/2014 quando o consumidor pode utilizar CSP diverso e completar a chamada, ainda que haja direcionamento comercial ao uso de CSP específico. 2. Configura infração ao art. 3º, inciso XIII, do RGC/2014 a indução do consumidor ao uso de determinado CSP mediante mensagens ostensivas e arranjo contratual que criem falsa percepção de exclusividade. 3. A omissão de informação sobre o preço efetivamente cobrado nas chamadas realizadas com outros CSPs caracteriza infração ao art. 3º, inciso IV, do RGC/2014 c/c o art. 37, § 1º, do CDC. 4. O reenquadramento jurídico da conduta, sem alteração do suporte fático submetido ao contraditório, não implica nulidade nem reformatio in pejus. 5. É cabível a retificação da multa para R$ 1.601.583,90 (um milhão, seiscentos e um mil, quinhentos e oitenta e três reais e noventa centavos) em razão do afastamento de uma infração e dos ajustes dos fatores de dosimetria."
+Dispositivos relevantes citados: Lei nº 8.078/1990, arts. 3º e 37, § 1º; Lei nº 9.472/1997, arts. 6º, 104 e 129; Lei nº 9.784/1999, art. 64, parágrafo único; Resolução nº 632/2014, art. 3º, II, IV e XIII; Resolução nº 589/2012, arts. 9º, 10, 18, § 2º, 19 e 20; Resolução nº 612/2013, arts. 116 e 123; e Resolução Interna Anatel nº 219/2023.
+Jurisprudência relevante citada: Superior Tribunal de Justiça - STJ, Súmula nº 672; Conselho Diretor da Anatel, Análise nº 200/2017/SEI/IF; e Conselho Diretor da Anatel, Análise nº 13/2018/SEI/EC.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 47/2026/NP (SEI nº 15643580), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, unicamente para desconsiderar o ilícito referente ao art. 3º, inciso II, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC/2014;
+b) rever, de ofício, a decisão recorrida para promover as seguintes alterações:
+b.1) quanto à infração ao inciso IV do art. 3º do RGC/2014 c/c o § 1º do art. 37 do Código de Defesa do Consumidor - CDC:
+b.1.1) o Fator Usuários totais - Ut passará de 598.124 (quinhentos e noventa e oito mil, cento e vinte e quatro) para 59.207 (cinquenta e nove mil, duzentos e sete) e o Fator Usuários atingidos - Ua, de 598.124 (quinhentos e noventa e oito mil, cento e vinte e quatro) para 32 (trinta e dois);
+b.1.2) reclassificar a infração de sistêmica para pontual; e,
+b.1.3) o Fator Tempo - "T" passará de 0,30 (mais de 1 ano) para 0,15 (de 1 dia a 30 dias); e,
+b.2) quanto à infração ao inciso XIII do art. 3º do RGC/2014, utilizar como valor-base para o cálculo da sanção a quantia de R$ 1.547.843,80 (um milhão, quinhentos e quarenta e sete mil, oitocentos e quarenta e três reais e oitenta centavos) referente ao cálculo da vantagem auferida; e,
+c) em virtude das retificações propostas, rever o valor da sanção aplicada para fixá-la em R$ 1.601.583,90 (um milhão, seiscentos e um mil, quinhentos e oitenta e três reais e noventa centavos), nos termos da Planilha SEI 15904763.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15949852 e o código CRC 8E15398B.
+ | 
+Referência: Processo nº 53500.009146/2023-41 | 
+SEI nº 15949852 |

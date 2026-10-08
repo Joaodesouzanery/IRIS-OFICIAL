@@ -1,0 +1,62 @@
+SEI/ANATEL - 15596483 - Análise
+Boletim de Serviço Eletrônico em 07/05/2026
+Análise nº 44/2026/NP
+Processo nº 53500.206843/2015-38
+Interessado: Agera Telecomunicacoes S.A.
+CONSELHEIRO 
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto em face de decisão que reconheceu a procedência parcial do lançamento de créditos tributários referentes à Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-FUST) e a multa de ofício aplicada relativamente ao exercício financeiro do ano de 2013 e 2014.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CIDE-FUST. BASE DE CÁLCULO. ICMS. RESTITUIÇÃO OU COMPENSAÇÃO EM PROCEDIMENTO PRÓPRIO. PRORROGAÇÃO DE RELATORIA.
+1. Recurso administrativo interposto por AGERA TELECOMUNICAÇÕES S.A. contra decisão da Superintendência de Controle de Obrigações que julgou procedentes os lançamentos de créditos tributários referentes à contribuição ao FUST, relativa aos exercícios de 2013 e 2014, e à multa de ofício aplicada pela não declaração da contribuição.
+2. Processo incluído automaticamente na pauta da Reunião do Conselho Diretor.
+3. Pela prorrogação do prazo para submissão da matéria ao Conselho Diretor por 120 (cento e vinte) dias.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966 - Código Tributário Nacional (CTN).
+Lei nº 9.430, de 27 de dezembro de 1996 - dispõe sobre a legislação tributária federal.
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo (LPA).
+Lei nº 9.998, de 17 de agosto de 2000 - Lei do Fundo de Universalização dos Serviços de Telecomunicações (FUST).
+Decreto nº 70.235, de 6 de março de 1972 - Processo Administrativo Fiscal (PAF).
+Decreto nº 3.624, de 5 de outubro de 2000 - Regulamento do FUST.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Súmula nº 7, de 15 de dezembro de 2005, referente a receitas que compõem a base de cálculo das contribuições ao FUST.
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria Anatel nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+Trata-se de Recurso Administrativo interposto por AGERA TELECOMUNICAÇÕES S.A., inscrita no CNPJ sob o nº 01.009.876/0001-61, em face do Despacho Decisório nº 281/2025/COUN/SCO (SEI nº 13507084), que reconheceu a procedência parcial dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - FUST, reduzindo os valores do tributo relativos ao exercício do ano de 2014, bem como a incidência de multa de ofício, e manteve os valores do tributo no lançamento referente à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - FUST, relativos ao exercício do ano de 2013, bem como a incidência de multa de ofício, conforme consignado na Notificação de Lançamento nº 001-021266/2016/AFFO-ANATEL (SEI nº 1271094).
+Em 6 de agosto de 2016, concluíram-se os Relatórios de Fiscalização nº 1219/2016/GR01 (SEI nº 0857618) e nº 1448/2016/GR01 (SEI nº 0998307), que apuraram os valores de contribuição ao FUST nos montantes de R$ 1.635.812,03 (um milhão, seiscentos e trinta e cinco mil oitocentos e doze reais e três centavos), para o exercício de 2013, e R$ 1.569.285,40 (um milhão, quinhentos e sessenta e nove mil duzentos e oitenta e cinco reais e quarenta centavos), para o exercício de 2014. A partir da comparação entre os valores declarados pela empresa e aqueles apurados pela fiscalização, a Anatel verificou a existência de montante ainda não recolhido ao Fundo. Diante disso, efetuou o lançamento de ofício referente à diferença identificada e expediu a Notificação de Lançamento nº 001‑021266/2016/AFFO‑ANATEL (SEI nº 1271094), no valor de R$ 1.857.123,72 (um milhão, oitocentos e cinquenta e sete mil, cento e vinte e três reais e setenta e dois centavos).
+Em 26 de dezembro de 2016 (SEI nº 1329278), a Prestadora foi intimada acerca da existência de crédito tributário relativo à CIDE-FUST, conforme Notificação de Lançamento nº 001-021266/2016/AFFO-ANATEL (SEI nº 1454869), tendo apresentado sua impugnação em 6 de março de 2017 (SEI nº 1250923), por meio da qual alegou: (i) a quitação integral da contribuição ao FUST relativa aos anos de 2013 e 2014; (ii) erro da fiscalização ao usar balancetes em vez dos SPEDs; (iii) inclusão indevida de receitas de exercícios anteriores, gerando cobrança em duplicidade; (iv) dedução incorreta do ICMS pago em outros estados além de São Paulo; (v) inconstitucionalidade do FUST por ter sido instituído por lei ordinária; (vi) nulidade da Notificação de Lançamento.
+Tendo em vista as alegações da empresa e atendendo à solicitação de fiscalização para os anos de 2013 e 2014 (SEI nº 7240196), foram elaborados novos Relatórios de Fiscalização nº 34/2023/GR05FI1/GR05/SFI (SEI nº 10367479) e nº 37/2023/GR05FI1/GR05/SFI (SEI nº 10415993), nos quais foram majorados os valores devidos. Portanto, concluiu-se pela revisão parcial dos valores calculados nos relatórios de fiscalização anteriores.
+Em 6 de maio de 2025, a Gerência de Controle de Obrigações de Universalização e Ampliação do Acesso - COUN analisou a impugnação da Prestadora e os achados da fiscalização, nos termos do Informe nº 291/2025/COUN/SCO (SEI nº 13507080), por meio do qual destacou: (i) a suspensão da exigibilidade do crédito tributário diante da apresentação de impugnação; (ii) a inexistência de prescrição intercorrente no Processo Administrativo Fiscal Contencioso, nos termos da Súmula da Anatel nº 26 e da Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11; e (iii) a incidência de juros de mora e multa de ofício sobre o lançamento, nos termos do art. 44, inciso I, da Lei nº 9.430/96.
+Quanto ao crédito tributário, verificou-se que, nos novos Relatórios de Fiscalização, para determinados meses, foram apurados valores maiores do que os lançados por meio da Notificação de Lançamento. No entanto, a área técnica manteve o valor lançado no momento anterior, em observância aos artigos 149, parágrafo único e 150, §4º do Código Tributário Nacional. Dessa forma, não foi possível majorar os valores relativos aos meses de janeiro a dezembro do exercício de 2013 e janeiro, fevereiro, abril e junho do exercício de 2014, para os quais se mantiveram aqueles apurados nos Relatórios de Fiscalização originais. A área técnica revisou os valores lançados, reduzindo o tributo para os meses de fevereiro, março, maio, junho e dezembro do exercício de 2014.
+Considerando a ausência de enquadramento nas hipóteses previstas no art. 5º da Portaria nº 642, de 26 de julho de 2013, e no art. 1º da Resolução Interna da Anatel nº 338, de 15 de julho de 2024, deixou-se de encaminhar os autos à Procuradoria Federal Especializada junto à Anatel - PFE-Anatel.
+A proposta da Área Técnica constante no Informe nº 291/2025/COUN/SCO (SEI nº 13507080) foi acolhida pela Superintendente de Controle de Obrigações - SCO, nos termos do Despacho Decisório nº 281/2025/COUN/SCO (SEI nº 13507084), de 6 de maio de 2025, que decidiu por:
+"RECONHECER A PROCEDÊNCIA PARCIAL dos lançamentos dos créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (Fust), traduzidos na Notificação de Lançamento nº 001-021266/2016/AFFO-ANATEL (SEI nº 1271094), especificamente quanto aos valores referentes ao exercício de 2014, em razão da revisão promovida pelo novo Relatório de Fiscalização nº 37/2023/GR05FI1/GR05/SFI (SEI nº 10415993), mantendo-se os valores originalmente apurados para o exercício de 2013;
+RECONHECER A PROCEDÊNCIA PARCIAL dos lançamentos dos créditos referentes à incidência de multa de ofício, em virtude da não declaração da contribuição, traduzidos na Notificação de Lançamento nº 001-021266/2016/AFFO-ANATEL (SEI nº 1271094), especificamente quanto aos valores referentes ao exercício de 2014, em razão da revisão promovida pelo novo Relatório de Fiscalização nº 37/2023/GR05FI1/GR05/SFI (SEI nº 10415993), mantendo-se os valores originalmente apurados para o exercício de 2013;"
+Notificada dos termos da decisão proferida, em 3 de junho de 2025 (SEI nº 13585844 e nº 13792911), a Prestadora apresentou Recurso Administrativo em 3 de julho de 2025 (SEI nº 13945460 e nº 13945462), no qual alegou:
+(i) realização de perícia contábil sem prévia cientificação da recorrente;
+(ii) não ter a Anatel enfrentado os argumentos trazidos na impugnação;
+(iii) desconsideração injustificada dos valores pagos a maior, cuja glosa foi pleiteada;
+(iv) que a área técnica não excluiu os valores de ICMS recolhidos em todos os estados.
+Ao final, requereu o conhecimento e provimento do recurso, e, alternativamente, caso se decida pela manutenção do lançamento de ofício, que sejam abatidos os valores pagos a maior pela recorrente, conforme apurado pela fiscalização.
+As razões recursais foram apreciadas pela COUN no Informe nº 657/2025/COUN/SCO (SEI nº 14263575), de 15 de dezembro de 2025, no qual se propôs o conhecimento do Recurso e, quanto ao mérito, seu não provimento, diante da ausência de inovação fática ou probatória apta a fundamentar a revisão da decisão recorrida.
+Na mesma data, a Superintendente de Controle de Obrigações - SCO proferiu o Despacho Decisório nº 682/2025/COUN/SCO (SEI nº 14263600), conhecendo do Recurso Administrativo e encaminhando os autos para apreciação deste Colegiado, conforme Matéria nº 639/2025 (SEI nº 14263613).
+A Matéria foi remetida à Secretaria do Conselho Diretor - SCD por meio do Despacho Ordinatório SEI nº 14946477, de 19 de dezembro de 2025, sendo distribuída à minha relatoria em 4 de março de 2026 (SEI nº 15269711).
+É o relatório.
+FUNDAMENTAÇÃO
+Observa-se que, por força do previsto no art. 127, § 2º, do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, este Recurso Administrativo foi incluído automaticamente na pauta da Reunião do Conselho Diretor nº 953, que ocorrerá em 7 de maio de 2026.
+Todavia, em razão da necessidade de um exame mais aprofundado sobre o caso concreto, entendo não ser possível sua deliberação na data prevista regimentalmente, devendo-se prorrogar o prazo para a submissão da matéria ao Conselho Diretor, consoante previsto no art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Nessa medida, submeto a proposta de prorrogação do prazo de relatoria por 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto pela prorrogação do prazo para submissão da matéria ao Conselho Diretor por 120 (cento e vinte) dias, nos termos do § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 07/05/2026, às 16:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15596483 e o código CRC 5A496CF6.
+ | 
+Referência: Processo nº 53500.206843/2015-38 | 
+SEI nº 15596483 |

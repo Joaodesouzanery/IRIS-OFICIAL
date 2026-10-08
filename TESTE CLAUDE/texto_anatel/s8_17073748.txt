@@ -1,0 +1,238 @@
+SEI/ANATEL - 15259822 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 12
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 48, de 02 de março de 2026
+Processo nº 53500.003915/2019-11
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544.0001-47
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. DIREITO DO CONSUMIDOR. RECURSO ADMINISTRATIVO. INFRAÇÕES AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC. AGRAVAMENTO DE SANÇÃO EM SEDE RECURSAL. POSSIBILIDADE. ENUNCIADO Nº 22 DA SÚMULA DA ANATEL. ALEGAÇÃO DE COMPLEXIDADE FÁTICA. CERCEAMENTO DE DEFESA. AUSÊNCIA. ACHADOS DE FISCALIZAÇÃO. PRESUNÇÃO DE VERACIDADE. ÔNUS DA PRESTADORA DE DESCONSTITUÍ-LA. PRECEDENTES. AGLUTINAÇÃO DAS INFRAÇÕES AO ART. 51, CAPUT E § 2º, DO RGC 2014. IMPOSSIBILIDADE. INFRAÇÃO AO ART. 50, CAPUT, DO RGC 2014. DOSIMETRIA. PROPORCIONALIDADE À QUANTIDADE DE ELEMENTOS INOBSERVADOS. EMPREGO DA QUANTIDADE DE ESTABELECIMENTOS IRREGULARES. MANUTENÇÃO. PRECEDENTES. RESOLUÇÃO INTERNA ANATEL Nº 219, DE 15 DE JUNHO DE 2023. PROCESSO DECIDIDO EM PRIMEIRA INSTÂNCIA ANTERIORMENTE À SUA PUBLICAÇÃO. INAPLICABILIDADE. RECEITA OPERACIONAL LÍQUIDA - ROL E USUÁRIOS. SEGMENTAÇÃO POR ÁREA E POR SERVIÇOS FISCALIZADOS. PRECEDENTES. ANTECEDENTES. apuração POR INFRATOR E POR SERVIÇO. PRECEDENTES. APLICAÇÃO DE OBRIGAÇÃO DE FAZER. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A PROMOÇÃO DO ENFORCEMENT REGULATÓRIO, AOS OBJETIVOS DO DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. REFORMA DE OFÍCIO.
+I. CASO EM EXAME
+No caso, apuram-se infrações no atendimento, em sua maioria, relacionadas à omissão no fornecimento de informações aos usuários por ocasião da contratação dos serviços oferecidos pela Recorrente, no Serviço Móvel Pessoal - SMP, Serviço de Acesso Condicionado - SeAC, Serviço Telefônico Fico Comutado - STFC e Serviço de Comunicação Multimídia - SCM. Na decisão recorrida, a Recorrente foi condenada ao pagamento multa por infração aos arts. 46; 50, I, II, III, IV, V, VI, VII, VIII, IX e parágrafo único; e 51, caput e § 2º, todos do RGC 2014.
+II. QUESTÕES EM DISCUSSÃO:
+Há seis questões em discussão: (i) possibilidade de reformatio in pejus; (ii) nulidade do processo por cerceamento de defesa, validade do ato de instauração e complexidade fática; (iii) ônus probatório e achados de fiscalização; (iv) proporcionalização da infração ao art. 50, caput, do RGC 2014; (v) aglutinação das infrações ao art. 51, caput e § 2º, do RGC 2014; e (vi) avaliação dos antecedentes.
+III. RAZÕES DE DECIDIR
+1. Nos termos do Enunciado nº 22 da Súmula da Anatel, “é possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel”.
+2. Não se configura cerceamento de defesa quando é assegurado ao interessado o exercício das garantias processuais do contraditório, da ampla defesa e do devido processo legal, e desde que reste evidenciada a sua compreensão adequada dos fatos imputados e do teor do acervo probatório que os lastreia. A mera alegação de "complexidade fática" do processo não constitui condição suficiente para afastar esse entendimento. Precedentes do Conselho Diretor.
+3. A fé pública dos agentes de fiscalização é relativa e somente afastada quando presentes evidências em sentido contrário. Cabe à Recorrente o ônus da prova dos fatos que alega, nos termos do disposto no art. 85 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e do art. 36 da Lei nº 9.784, de 29 de janeiro de 1999 - Lei de Processo Administrativo - LPA. Precedentes do Conselho Diretor.
+4. As hipóteses previstas no art. 50, caput, do RGC 2014, relativas às informações sobre as condições do serviço contratado, consubstanciam uma única infração, devendo a dosimetria da multa considerar, para cada item, o número de comandos violados, à razão de um nono. Precedente do Conselho Diretor.
+5. Não é cabível a aglutinação das infrações previstas no art. 51, caput, e no art. 51, § 2º, do RGC 2014, uma vez que, embora ambas se relacionem ao momento da contratação, tratam de condutas distintas e autônomas. Cada dispositivo impõe obrigações específicas, direcionadas, conforme o caso, ao atendimento presencial, ao atendimento remoto e à divulgação de informações sobre promoções, incidindo sobre bens jurídicos e esferas de proteção diversos do consumidor de serviços de telecomunicações.
+6. Para as infrações relativas a obrigações de atendimento presencial, e dada a impossibilidade de determinar os usuários individualmente afetados, a correlação deve ser estabelecida entre o número de estabelecimentos em situação irregular e o total de estabelecimentos da Prestadora. Precedentes do Conselho Diretor.
+7. A Resolução Interna Anatel nº 219, de 15 de junho de 2023, que aprova a metodologia de cálculo do valor-base das sanções de multa relativa a descumprimentos a direitos dos usuários, não se aplica a processos que já tenham sido decididos em primeira instância anteriormente à data de sua publicação.
+8. No cálculo da sanção, devem ser considerados a Receita Operacional Líquida - ROL e os usuários relativos à área em que foi realizada a fiscalização, devidamente segmentados conforme o serviço objeto da apuração. Precedentes do Conselho Diretor.
+9. A avaliação dos antecedentes, conforme o art. 19 do Regulamento de Aplicação de Sanções Administrativas - RASA, deve ser individualizada por serviço fiscalizado. Isso significa que condenações por infrações em uma modalidade não podem agravar a penalidade de infrações cometidas em outra modalidade de serviço da mesma prestadora. Precedentes.
+10. É possível a aplicação de obrigação de fazer - OdF, consistente na antecipação de metas do Edital 5G na faixa de 3,5 GHz e na faixa de 2,3 GHz em localidades com conectividade provida exclusivamente pelo Serviço Telefônico Fico Comutado - STFC, observados os critérios de escolha, custos, prazos e comprovação definidos pela Anatel.
+11. A antecipação dos investimentos nas redes móveis contribui para a transformação digital do país. O acesso à Internet de alta velocidade e baixa latência é um vetor de crescimento econômico que incrementa o Produto Interno Bruno - PIB per capita e a produtividade local. Focar essa antecipação em localidades cujo único recurso de conectividade local seja a telefonia fixa é essencial para fomentar o desenvolvimento regional e mitigar assimetrias estruturais.
+12. O acesso à conectividade digital amplia oportunidades de educação, saúde e inclusão social para populações historicamente desassistidas. E, ao antecipar infraestruturas resilientes e promover instituições eficazes e transparentes, a Anatel reafirma seu compromisso com um futuro digital inclusivo e sustentável para todos os brasileiros.
+13. A obrigação de fazer é de inegável interesse público e está alinhada às políticas públicas de telecomunicações, ao Plano Estratégico da Anatel, ao Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, ao Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG, às boas práticas regulatórias da Organização para Cooperação e Desenvolvimento Econômico - OCDE e aos Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU.
+14. A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório.
+15. A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a efetividade da regulação na proteção do consumidor com deficiência dos serviços de telecomunicações.
+16. A abordagem proposta alinha-se às melhores práticas regulatórias da - OCDE, na medida em que busca reafirmar a governança regulatória para assegurar o cumprimento dos padrões mínimos de qualidade de atendimento presencial ao usuário.
+17. A decisão contribui para a promoção dos Objetivos 9 (meta 9.1) e 10 (metas 10.2 e 10.3), e 16 (metas 16.3 e 16.7) da Agenda 2030 da Organização das Nações Unidas, na medida em que reforça a atuação institucional regulatória na proteção dos direitos dos usuários e promove acessibilidade a pessoas situadas à margem da transformação digital.
+IV. DISPOSITIVO
+Recurso parcialmente provido. Revisão de ofício.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 4/2026/AF (SEI nº 15033683), integrante deste acórdão:
+a) conhecer e do Recurso interposto para, no mérito, dar-lhe parcial provimento para:
+a.1) alterar o valor da ROL nas infrações e serviços abaixo discriminados:
+a.1.1) para as infrações ao art. 46 do RGC 2014:
+a.1.1.1) no STFC: R$ 391.488.296,46 (trezentos e noventa e um milhões, quatrocentos e oitenta e oito mil, duzentos e noventa e seis reais e quarenta e seis centavos);
+a.1.1.2) no SMP: R$ 4.093.348.457,60 (quatro bilhões, noventa e três milhões, trezentos e quarenta e oito mil, quatrocentos e cinquenta e sete reais e sessenta centavos);
+a.1.1.3) no SCM: R$ 770.209.329,59 (setecentos e setenta milhões, duzentos e nove mil, trezentos e vinte e nove reais e cinquenta e nove centavos); e,
+a.1.1.4) no SeAC: R$ 4.180.746.712,74 (quatro bilhões, cento e oitenta milhões, setecentos e quarenta e seis mil, setecentos e doze reais e setenta e quatro centavos);
+a.1.2) para as infrações ao art. 51, caput, do RGC 2014:
+a.1.2.1) no STFC: R$ 1.540.324.865,22 (um bilhão, quinhentos e quarenta milhões, trezentos e vinte e quatro mil, oitocentos e sessenta e cinco reais e vinte e dois centavos);
+a.1.2.2) no SMP: R$ 9.744.796.825,40 (nove bilhões, setecentos e quarenta e quatro milhões, setecentos e noventa e seis mil, oitocentos e vinte e cinco reais e quarenta centavos);
+a.1.2.3) no SCM: R$ 7.666.611.967,06 (sete bilhões, seiscentos e sessenta e seis milhões, seiscentos e onze mil, novecentos e sessenta e sete reais e seis centavos); e,
+a.1.2.4) no SeAC: R$ 6.325.201.458,18 (seis bilhões, trezentos e vinte e cinco milhões, duzentos e um mil, quatrocentos e cinquenta e oito reais e dezoito centavos); e,
+a.1.3) para as infrações ao art. 51, § 2º, do RGC 2014:
+a.1.3.1) no STFC: R$ 1.410.911.149,46 (um bilhão, quatrocentos e dez milhões, novecentos e onze mil, cento e quarenta e nove reais e quarenta e seis centavos);
+a.1.3.2) no SMP: R$ 8.056.106.471,50 (oito bilhões, cinquenta e seis milhões, cento e seis mil, quatrocentos e setenta e um reais e cinquenta centavos);
+a.1.3.3) no SCM: R$ 6.599.071.523,96 (seis bilhões, quinhentos e noventa e nove milhões, setenta e um mil, quinhentos e vinte e três reais e noventa e seis centavos); e,
+a.1.3.4) no SeAC: R$ 5.777.513.165,95 (cinco bilhões, setecentos e setenta e sete milhões, quinhentos e treze mil, cento e sessenta e cinco reais e noventa e cinco centavos);
+a.2) alterar o valor da variável "Ut"" nas infrações e serviços abaixo discriminados:
+a.2.1) para as infrações ao art. 46 do RGC 2014:
+a.2.1.1) no STFC: para 441;
+a.2.1.2) no SMP: para 664;
+a.2.1.3) no SCM: para 331; e,
+a.2.1.4) no SeAC: para 487;
+a.2.2) para as infrações ao art. 51, caput, do RGC 2014:
+a.2.2.1) no STFC: para 1.516;
+a.2.2.2) no SMP: para 1.399;
+a.2.2.3) no SCM: para 1.686; e,
+a.2.2.4) no SeAC: para 1.336; e,
+a.2.3) para as infrações ao art. 51, § 2º, do RGC 2014:
+a.2.3.1) no STFC: para 1.156;
+a.2.3.2) no SMP: para 996;
+a.2.3.3) no SCM: para 1.020; e,
+a.2.3.4) no SeAC: para 758; e,
+a.3) aplicar fator de proporcionalização da multa nas infrações ao art. 50, caput, do RGC 2014, na fração de um nono por obrigação descumprida;
+b) rever, de ofício, o Despacho Decisório nº 26/2022/CODI/SCO (SEI nº 7996221), de 15 de fevereiro de 2022, para:
+b.1) diminuir o fator Ua, na dosimetria da multa nas infrações abaixo, para os seguintes valores e serviços:
+b.1.1) art. 50, inciso I, do RGC 2014:
+b.1.1.1) no STFC, para "9";
+b.1.1.2) no SMP, para "7";
+b.1.1.3) no SCM, para "5"; e,
+b.1.1.4) no SeAC, para "6";
+b.1.2) art. 50, inciso II, do RGC 2014:
+b.1.2.1) no STFC, para "14";
+b.1.2.2) no SMP, para "12";
+b.1.2.3) no SCM, para "8"; e,
+b.1.2.4) no SeAC, para "10";
+b.1.3) art. 50, inciso III, do RGC 2014:
+b.1.3.1) no STFC, para "24";
+b.1.3.2) no SMP, para "22";
+b.1.3.3) no SCM, para "19"; e,
+b.1.3.4) no SeAC, para "17";
+b.1.4) art. 50, inc. IV, do RGC 2014:
+b.1.4.1) no STFC, para "8";
+b.1.4.2) no SMP, para "7";
+b.1.4.3) no SCM, para "7"; e,
+b.1.4.4) no SeAC, para "7";
+b.1.5) art. 50, inciso V, do RGC 2014:
+b.1.5.1) no STFC, para "12";
+b.1.5.2) no SMP, para "15";
+b.1.5.3) no SCM, para "10"; e,
+b.1.5.4) no SeAC, para "10";
+b.1.6) art. 50, inciso VI, do RGC 2014:
+b.1.6.1) no STFC, para "13";
+b.1.6.2) no SMP, para "10";
+b.1.6.3) no SCM, para "9"; e,
+b.1.6.4) no SeAC, para "4";
+b.1.7) art. 50, inciso VII, do RGC 2014:
+b.1.7.1) no STFC, para "5";
+b.1.7.2) no SMP, para "26";
+b.1.7.3) no SCM, para "18"; e,
+b.1.7.4) no SeAC, para "8";
+b.1.8) art. 50, inciso VIII, do RGC 2014:
+b.1.8.1) no STFC, para "7";
+b.1.8.2) no SMP, para "6";
+b.1.8.3) no SCM, para "6"; e,
+b.1.8.4) no SeAC, para "4";
+b.1.9) art. 50, inciso IX, do RGC 2014:
+b.1.9.1) no STFC, para "14";
+b.1.9.2) no SMP, para "9";
+b.1.9.3) no SCM, para "7"; e,
+b.1.9.4) no SeAC, para "8";
+b.1.10) art. 50, parágrafo único, do RGC 2014:
+b.1.10.1) no STFC, para "46";
+b.1.10.2) no SCM, para "34"; e,
+b.1.10.3) no SeAC para "40; e,
+b.1.11) art. 51, caput, do RGC 2014:
+b.1.11.1) no STFC, para "29";
+b.1.11.2) no SCM, para "23"; e,
+b.1.11.3) no SeAC para "24"; e,
+b.2) desaglutinar a infração ao art. 51, § 2º, do RGC 2014, com dosimetria de forma independente da infração ao art. 51, caput, do RGC 2014, com os seguintes valores para o Fator "Ua":
+b.2.1) no STFC, em "12";
+b.2.2) no SMP, em "8";
+b.2.3) no SCM, em "8"; e,
+b.2.4) no SeAC, em "7";
+c) fixar o valor das multas para cada uma das infrações, nos seguintes valores:
+c.1) art. 46 do RGC 2014:
+c.1.1) no STFC, em R$ 10.771,11 (dez mil, setecentos e setenta e um reais e onze centavos);
+c.1.2) no SMP, em R$ 158.852,73 (cento e cinquenta e oito mil, oitocentos e cinquenta e dois reais e setenta e três centavos);
+c.1.3) no SCM, em R$ 24.224,76 (vinte e quatro mil, duzentos e vinte e quatro reais e setenta e seis centavos); e,
+c.1.4) no SeAC, em R$ 118.848,38 (cento e dezoito mil, oitocentos e quarenta e oito reais e trinta e oito centavos);
+c.2) art. 50, inciso I, do RGC 2014:
+c.2.1) no STFC, em R$ 1.204,84 (um mil, duzentos e quatro reais e oitenta e quatro centavos);
+c.2.2) no SMP, em R$ 9.761,67 (nove mil, setecentos e sessenta e um reais e sessenta e sete centavos);
+c.2.3) no SCM, em R$ 4.287,17 (quatro mil, duzentos e oitenta e sete reais e dezessete centavos); e,
+c.2.4) no SeAC, em R$ 4.284,76 (quatro mil, duzentos e oitenta e quatro reais e setenta e seis centavos);
+c.3) art. 50, inciso II, do RGC 2014:
+c.3.1) no STFC, em R$ 1.502,70 (um mil, quinhentos e dois reais e setenta centavos);
+c.3.2) no SMP, em R$ 11.955,56 (onze mil, novecentos e cinquenta e cinco reais e cinquenta e seis centavos);
+c.3.3) no SCM, em R$ 5.422,89 (cinco mil, quatrocentos e vinte e dois reais e oitenta e nove centavos); e,
+c.3.4) no SeAC, em R$ 5.531,60 (cinco mil, quinhentos e trinta e um reais e sessenta centavos);
+c.4) art. 50, inciso III, do RGC 2014:
+c.4.1) no STFC, em R$ 1.967,50 (um mil, novecentos e sessenta e sete reais e cinquenta centavos);
+c.4.2) no SMP, em R$ 15.434,56 (quinze mil, quatrocentos e trinta e quatro reais e cinquenta e seis centavos);
+c.4.3) no SCM, em R$ 8.357,23 (oito mil, trezentos e cinquenta e sete reais e vinte e três centavos); e,
+c.4.4) no SeAC, em R$ 7.212,32 (sete mil, duzentos e doze reais e trinta e dois centavos);
+c.5) art. 50, inciso IV, do RGC 2014:
+c.5.1) no STFC, em R$ 1.135,94 (um mil, cento e trinta e cinco reais e noventa e quatro centavos);
+c.5.2) no SMP, em R$ 9.131,21 (nove mil, cento e trinta e um reais e vinte e um centavos);
+c.5.3) no SCM, em R$ 5.072,65 (cinco mil, setenta e dois reais e sessenta e cinco centavos); e,
+c.5.4) no SeAC, em R$ 4.628,07 (quatro mil, seiscentos e vinte e oito reais e sete centavos);
+c.6) art. 50, inciso V, do RGC 2014:
+c.6.1) no STFC, em R$ 1.391,23 (um mil, trezentos e noventa e um reais e vinte e três centavos);
+c.6.2) no SMP, em R$ 13.366,72 (treze mil, trezentos e sessenta e seis reais e setenta e dois centavos);
+c.6.3) no SCM, em R$ 6.062,97 (seis mil, sessenta e dois reais e noventa e sete centavos); e,
+c.6.4) no SeAC, em R$ 5.531,60 (cinco mil, quinhentos e trinta e um reais e sessenta centavos);
+c.7) art. 50, inciso VI, do RGC 2014:
+c.7.1) no STFC, em R$ 1.448,04 (um mil, quatrocentos e quarenta e oito reais e quatro centavos);
+c.7.2) no SMP, em R$ 10.913,88 (dez mil, novecentos e treze reais e oitenta e oito centavos);
+c.7.3) no SCM, em R$ 5.751,84 (cinco mil, setecentos e cinquenta e um reais e oitenta e quatro centavos); e,
+c.7.4) no SeAC, em R$ 3.498,49 (três mil, quatrocentos e noventa e oito reais e quarenta e nove centavos);
+c.8) art. 50, inciso VII, do RGC 2014:
+c.8.1) no STFC, em R$ 1.000,00 (um mil reais);
+c.8.2) no SMP, em R$ 17.598,11 (dezessete mil, quinhentos e noventa e oito reais e onze centavos);
+c.8.3) no SCM, em R$ 8.134,33 (oito mil, cento e trinta e quatro reais e trinta e três centavos); e,
+c.8.4) no SeAC, em R$ 4.947,61 (quatro mil, novecentos e quarenta e sete reais e sessenta e um centavos);
+c.9) art. 50, inciso VIII, do RGC 2014:
+c.9.1) no STFC, em R$ 1.062,57 (um mil, sessenta e dois reais e cinquenta e sete centavos);
+c.9.2) no SMP, em R$ 8.453,86 (oito mil, quatrocentos e cinquenta e três reais e oitenta e seis centavos);
+c.9.3) no SCM, em R$ 4.696,36 (quatro mil, seiscentos e noventa e seis reais e trinta e seis centavos); e,
+c.9.4) no SeAC, em R$ 3.498,49 (três mil, quatrocentos e noventa e oito reais e quarenta e nove centavos);
+c.10) art. 50, inciso IX, do RGC 2014:
+c.10.1) no STFC, em R$ 1.502,70 (um mil, quinhentos e dois reais e setenta centavos);
+c.10.2) no SMP, em R$ 10.353,82 (dez mil, trezentos e cinquenta e três reais e oitenta e dois centavos);
+c.10.3) no SCM, em R$ 5.072,65 (cinco mil, setenta e dois reais e sessenta e cinco centavos); e,
+c.10.4) no SeAC, em R$ 4.947,61 (quatro mil, novecentos e quarenta e sete reais e sessenta e um centavos);
+c.11) art. 50, parágrafo único, do RGC 2014:
+c.11.1) no STFC, em R$ 24.514,89 (vinte e quatro mil, quinhentos e quatorze reais e oitenta e nove centavos);
+c.11.2) no SMP, em R$ 206.038,37 (duzentos e seis mil, trinta e oito reais e trinta e sete centavos);
+c.11.3) no SCM, em R$ 100.616,14 (cem mil, seiscentos e dezesseis reais e quatorze centavos); e,
+c.11.4) no SeAC, em R$ 99.568,73 (noventa e nove mil, quinhentos e sessenta e oito reais e setenta e três centavos);
+c.12) art. 51, caput, do RGC 2014:
+c.12.1) no STFC, em R$ 18.463,49 (dezoito mil, quatrocentos e sessenta e três reais e quarenta e nove centavos);
+c.12.2) no SMP, em R$ 124.947,58 (cento e vinte e quatro mil, novecentos e quarenta e sete reais e cinquenta e oito centavos);
+c.12.3) no SCM, em R$ 76.858,98 (setenta e seis mil, oitocentos e cinquenta e oito reais e noventa e oito centavos); e,
+c.12.4) no SeAC, em R$ 71.353,76 (setenta e um mil, trezentos e cinquenta e três reais e setenta e seis centavos); e,
+c.13) art. 51, § 1º, do RGC 2014:
+c.13.1) no STFC, em R$ 12.458,43 (doze mil, quatrocentos e cinquenta e oito reais e quarenta e três centavos);
+c.13.2) no SMP, em R$ 72.200,55 (setenta e dois mil, e duzentos reais e cinquenta e cinco centavos);
+c.13.3) no SCM, em R$ 50.163,03 (cinquenta mil, cento e sessenta e três reais e três centavos); e,
+c.13.4) no SeAC, em R$ 46.729,97 (quarenta e seis mil, setecentos e vinte e nove reais e noventa e sete centavos); e,
+d) aplicar sanção de obrigação de fazer, tendo por base o valor consolidado de R$ 1.432.734,42 (um milhão, quatrocentos e trinta e dois mil, setecentos e trinta e quatro reais e quarenta e dois centavos), consistente na antecipação de metas dos compromissos de abrangência do Edital 5G na faixa de radiofrequências de 3,5 GHz, com vencimento até 31 de julho de 2027, ou na faixa de radiofrequências de 2,3 GHz, com vencimento até 31 de dezembro de 2027, considerados os parâmetros trazidos no Informe nº 270/2025/COQL/SCO (SEI nº 14749168) e as retificações, condicionantes adicionais e propostas constantes do Ofício nº 23/2026/COQL/SCO-ANATEL (SEI nº 15027045), abaixo transcritos, bem como a adição que ora se faz para esclarecer que, no caso de recolhimento do valor em decorrência de ele ser superior ao custo estimado da OdF, a Prestadora não terá direito ao abatimento de 5% (cinco por cento), nos termos do art. 36-A, § 3º, do RASA:
+Informe nº 270/2025/COQL/SCO (SEI nº 14749168):
+"b) Os custos associados ao projeto foram calculados: i) de acordo com a "Planilha - Valores da Antecipação" (SEI nº 14684737), conforme estudo da Superintendência da Competição constante do Informe nº 70/2025/CPAE/SCP (SEI nº 14682575), para as metas da faixa do 3,5 GHz; e ii) de acordo com o Informe nº 18/2024/CPAE/SCP (SEI nº 11510808), para as metas da faixa do 2,3 GHz;
+c) [...], a Prestadora deverá escolher os municípios que serão antecipados conforme o painel de acompanhamento dos compromissos do Edital do 5G (https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g), dentre aqueles constantes da "Planilha - Valores da Antecipação" (SEI nº 14684737), para as metas do 3,5 GHz, e da Planilha Localidades atendimento somente STFC (SEI nº 14874307), para as metas do 2,3 GHz. Tal valor deverá ser ajustado, caso seja diverso daquele decidido pelo Conselho Diretor ao analisar o recurso interposto;
+d) Quando da apresentação do rol de localidades selecionadas, a Prestadora deverá apresentar o cálculo dos custos da operação por município, nos termos da alínea "c" e da "Planilha - Valores da Antecipação" (SEI nº 14684737) ou do valor previsto no Informe nº 18/2024/CPAE/SCP (SEI nº 11510808), de 21 de fevereiro de 2024;
+e) O somatório dos custos associados à sua implementação deve ser igual ou superior ao valor total da obrigação de fazer aplicável;
+f) Dado que a obrigação de fazer tem foco na antecipação de metas dos compromissos de abrangência do Edital 5G na faixa de radiofrequências de 3,5 GHz, com vencimento até 31/07/2027, e na faixa de radiofrequências de 2,3 GHz, com vencimento até 31 de dezembro de 2027, a Prestadora tem liberdade para escolher as localidades a serem beneficiadas na antecipação, entre os municípios constantes da "Planilha - Valores da Antecipação" (SEI nº 14684737) e da "Planilha Localidades atendimento somente STFC" (SEI nº 14874307), que deverão ser informadas pela Prestadora à Anatel antes da respectiva antecipação;
+g) A prestadora deverá cumprir todas as metas previstas no Edital 5G, além das que serão antecipadas por meio do cumprimento da OdF proposta;
+h) Será concedido o prazo de 60 (sessenta dias), a contar da data da notificação, para a Prestadora comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, ocasião em que deverá apresentar projeto técnico da obrigação de fazer nos termos estabelecidos nos itens “b” a “f”, devendo-se observar o disposto no art. 36-A, §3º, do Regulamento de Aplicação de Sanções Administrativas - Rasa, aprovado pela Resolução nº 589, de 7 de maio de 2012, e alterado pela Resolução Anatel nº 784, de 07 de novembro de 2025;
+i) Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento";
+j) Uma vez formalizada junto à Anatel a seleção de localidades realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol de localidades deverão ser precedidas de solicitação formal à Superintendência de Controle de Obrigações, obedecidas as regras do Edital 5G, cabendo à autoridade competente decidir sobre a questão;
+k) A análise do cumprimento dos requisitos de seleção de localidades pela Prestadora, a concessão de atesto e as demais providências serão realizadas pela Superintendência de Controle de Obrigações (SCO);
+l) A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão, e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos;
+m) A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer acarretará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer;
+n) A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as localidades selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas localidades, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das localidades em que tais requisitos não tenham sido observados;
+o) A instalação da infraestrutura deverá obedecer aos critérios estabelecidos no Edital 5G;
+p) A comprovação da instalação da infraestrutura deverá ser realizada nos termos previstos no Edital 5G;
+q) O prazo de manutenção da infraestrutura observará as disposições contidas no Edital 5G;
+r) 70% dos investimentos decorrentes da antecipação das metas do Edital do 5G sejam direcionados para localidades que não disponham de alternativa de prestação de serviço de voz que não o STFC, conforme previsto na Planilha Localidades (SEI nº 14874307);
+s) Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, a sanção de multa será retomada, em valor proporcional às estimativas de custo dos projetos das localidades em que não houver comprovação suficiente e tempestiva;
+t) Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção;
+u) O valor de multa originalmente imposta no PADO será corrigido segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia - Selic - ou outro índice que vier a substituí-lo, conforme a legislação em vigor, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer; e
+v) Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada."
+Condicionantes adicionais constantes do Ofício nº 23/2026/COQL/SCO-ANATEL (SEI nº 15027045):
+12.2.1. "No caso de aplicação de sanção de obrigação de fazer em âmbito recursal, nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, é que será aplicado o desconto de 5% (cinco por cento) acima referido";
+12.2.2. "Caso os custos associados ao projeto, calculados nos termos previstos nas alíneas "b" a "f", perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, a diferença será aplicada na forma de sanção de multa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA)";
+12.2.3. "Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A";
+12.2.4. "No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa";
+12.2.5. "A operadora não adquire direito à lista de localidades para antecipação de metas, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da operadora deve recair sobre localidades disponíveis na data em que ela comunicar à Anatel em que cumprirá a sanção de obrigação de fazer";
+12.2.6. "Caso constatado o atendimento na localidade, a prestadora deverá solicitar, formalmente, à Superintendência de Controle de Obrigações (SCO), a alteração anterior ao início do cumprimento"; e
+12.2.7. "Eventuais conflitos decorrentes da seleção de localidades para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações".
+d.1) na hipótese do item 12.2.2, acima transcrito, deverá ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, § 3º, do RASA; e,
+d.2) conforme proposto no Ofício nº 23/2026/COQL/SCO-ANATEL (SEI nº 15027045), substitui-se a "Planilha Localidades de atendimento com STFC" (SEI nº 14874307) pela "Planilha Análise das Localidades Edital 5G Claro" (SEI nº 15009102).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15259822 e o código CRC 387087DD.
+ | 
+Referência: Processo nº 53500.003915/2019-11 | 
+SEI nº 15259822 |

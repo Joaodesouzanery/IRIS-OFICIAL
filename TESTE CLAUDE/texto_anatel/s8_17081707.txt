@@ -1,0 +1,44 @@
+SEI/ANATEL - 15267130 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 57, de 03 de março de 2026
+Processo nº 53500.101314/2025-11
+Recorrente/Interessado: SPACESAIL BRAZIL LTDA.
+CNPJ nº 63.617.987/0001-08
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO. DIREITO DE EXPLORAÇÃO DE SATÉLITE ESTRANGEIRO NO BRASIL. DEFERIMENTO PARCIAL.
+I. CASO EM EXAME
+1. SPACESAIL BRAZIL LTDA., representante legal da SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD, solicita direito de exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 648 (seiscentos e quarenta e oito) satélites, nas bandas Ku e Q/V, pelo prazo de 15 (quinze) anos.
+2. Documentação apresentada indica autorização no país de origem para até 324 (trezentos e vinte e quatro) satélites, com vigência até 31 de julho de 2031.
+3. Áreas técnicas da Anatel analisam documentação, aspectos técnicos, coordenação, necessidade de Consulta Pública, sustentabilidade espacial e preço público.
+4. Proposta de deferimento parcial do pedido, autorizando operação de até 324 (trezentos e vinte e quatro) satélites, nas faixas de frequências requeridas, até 31 de julho de 2031, com prazo máximo de 2 (dois) anos para entrada em operação e atualização da Lista de Prioridade de Coordenação de sistemas satelitais.
+II. QUESTÃO EM DISCUSSÃO
+Saber se estão atendidos os requisitos legais e regulamentares para conferência do direito de exploração de satélite estrangeiro, considerando documentação apresentada, número de satélites, prazo de vigência e requisitos de coordenação com outros sistemas satelitais.
+III. RAZÕES DE DECIDIR
+1. Competência da Anatel e do Conselho Diretor para decidir sobre direito de exploração de satélites estrangeiros está prevista na Lei nº 9.472/1997 e no Regimento Interno.
+2. Documentação apresentada atende aos requisitos do Regulamento Geral de Exploração de Satélites - RGSat e do Ato nº 9.526/2021.
+3. Autorização no país de origem limita o número de satélites a 324 (trezentos e vinte e quatro) e vigência até 31 de julho de 2031, devendo o direito de exploração no Brasil observar essas condições.
+4. Não há necessidade de Consulta Pública, pois o sistema não se enquadra como constelação de grande porte nem opera em faixas de frequências que exigem consulta, conforme RGSat e Ato nº 4.430/2023.
+5. Requisitos de coordenação técnica foram atendidos, com apresentação de esforços de coordenação e manifestação expressa para operação sem direito à proteção contra interferência prejudicial.
+6. Estabelecimento de prazo máximo de 2 (dois) anos para entrada em operação, a ser caracterizado pelo lançamento de ao menos 10% (dez por cento) dos satélites autorizados, conforme precedentes e regulamentação.
+7. Estabelecimento de obrigações de apresentação de relatórios anuais, com possibilidade de imposição de requisitos de sustentabilidade espacial no futuro.
+8. Atualização da Lista de Prioridade de Coordenação de sistemas satelitais, conforme proposta da área técnica.
+9. Valor do preço público fixado em R$ 102.677,00 (cento e dois mil, seiscentos e setenta e sete reais), conforme art. 38 do RGSat.
+10. Não há obrigatoriedade de manifestação da Procuradoria Federal Especializada junto à Anatel.
+IV. DISPOSITIVO E TESE
+Pedido parcialmente deferido. Conferência de direito de exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 324 (trezentos e vinte e quatro) satélites, nas faixas de 10.700 MHz - 12.700 MHz e 37.500 MHz - 38.000 MHz (descida), e 14.000 MHz - 14.500 MHz e 47.200 MHz - 49.200 MHz (subida), até 31 de julho de 2031, com prazo máximo de 2 (dois) anos para entrada em operação, atualização da Lista de Prioridade de Coordenação e observância das obrigações técnicas e regulatórias.
+Tese de julgamento: "1. O direito de exploração de satélite estrangeiro deve observar as condições da autorização no país de origem quanto ao número de satélites e prazo de vigência. 2. O pedido de direito de exploração pode ser deferido parcialmente, limitando o número de satélites e o prazo conforme documentação apresentada. 3. Não há necessidade de Consulta Pública para sistemas não classificados como de grande porte e que não operam em faixas específicas. 4. Estabelecimento de obrigações de apresentação de relatórios anuais, com possibilidade de imposição de requisitos de sustentabilidade espacial no futuro."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 19, IX, 170; Resolução nº 612/2013, arts. 39 e 133; Resolução nº 748/2021 (RGSat), arts. 10, 16, 18, 21, 23, 24, 30 e 38; Ato nº 9.526/2021; Ato nº 4.430/2023; Resolução nº 772/2023.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 11/2026/OP (SEI nº 15089791), integrante deste acórdão, deferir parcialmente o pedido apresentado pela SPACESAIL BRAZIL LTDA., CNPJ nº 63.617.987/0001-08, para conferir à SHANGHAI SPACESAIL TECHNOLOGIES CO. LTD., entidade constituída sob as leis da República Popular da China, Direito de Exploração, no Brasil, do sistema de satélites não geoestacionários SPACESAIL, composto por até 324 (trezentos e vinte e quatro) satélites, para provimento de capacidade satelital nas faixas de 10.700 MHz - 12.700 MHz e de 37.500 MHz - 38.000 MHz (enlaces de descida), e de 14.000 MHz - 14.500 MHz e de 47.200 MHz - 49.200 MHz (enlaces de subida), até 31 de julho de 2031, estabelecendo o prazo máximo de 2 (dois) anos para entrada em operação do sistema, conforme Minuta de Ato (SEI nº 15120354) e atualizando o Ato nº 4.141, de 11 de abril de 2025, que aprova a Lista de Prioridade de Coordenação de sistemas satelitais, nos termos da Minuta de Ato SEI nº 14853212.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15267130 e o código CRC 23D06A00.
+ | 
+Referência: Processo nº 53500.101314/2025-11 | 
+SEI nº 15267130 |

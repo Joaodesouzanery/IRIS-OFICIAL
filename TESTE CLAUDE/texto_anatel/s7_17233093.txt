@@ -1,0 +1,87 @@
+SEI/ANATEL - 15405954 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 30/2026/OP
+Processo nº 53500.206021/2015-57
+Interessado: EMPRESA DE TAXIS CATUMBI LTDA.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 13609512) interposto pela EMPRESA DE TAXIS CATUMBI LTDA., CNPJ nº 62.733.118/0001-86, contra o Despacho Decisório nº 543/2025/CODI/SCO (SEI nº 14229103), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2012.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CIDE-FUST. MULTA DE OFÍCIO POR DECLARAÇÃO INEXATA. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo (SEI 13609512) interposto pela EMPRESA DE TAXIS CATUMBI LTDA. contra o Despacho Decisório nº 543/2025/CODI/SCO, que julgou procedentes lançamentos de créditos tributários de FUST no exercício de 2012.
+ Fato relevante. A Recorrente alega ausência de receita oriunda de serviço de radiotáxi e sustenta limitação da multa a 20% com base no art. 61, § 2º, da Lei nº 9.430/1996.
+ Marcha processual. A Recorrente foi notificada em 17/09/2025 e interpôs recurso em 19/09/2025. A SCO sugeriu conhecimento e não provimento. A PFE-Anatel não foi provocada por ausência dos critérios do art. 5º da Portaria Anatel nº 642/2013.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se a Recorrente auferiu receitas decorrentes de prestação de serviços de telecomunicações para fins de CIDE-Fust; e (ii) saber se é legítima a aplicação de multa de ofício em razão de ausência de declaração ou declaração inexata que importe em recolhimento a menor da CIDE-Fust.
+III. RAZÕES DE DECIDIR
+ A instrução do Processo Administrativo Fiscal observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+ O recurso atende aos requisitos de admissibilidade, inclusive tempestividade, legitimidade e interesse em recorrer.
+ A multa do art. 44, I, da Lei nº 9.430/1996 tem natureza punitiva e incide nas hipóteses de lançamento de ofício por falta de declaração ou declaração inexata.
+ A aplicação da multa de ofício às contribuições administradas pela Anatel encontra respaldo em entendimento da PFE-Anatel.
+ A Súmula nº 27/2024 reconhece a legitimidade da aplicação de multa de ofício, nos processos administrativos fiscais, quando a ausência de declaração ou a declaração inexata importar em recolhimento a menor da CIDE-Fust.
+ A multa de ofício aplicada no caso é vinculada à previsão legal e não comporta discricionariedade administrativa.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: “1. O Recurso Administrativo é admissível quando presentes os requisitos de tempestividade, legitimidade e interesse em recorrer. 2. É legítima a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 nos casos de ausência de declaração ou declaração inexata que importe em recolhimento a menor da CIDE-Fust.”
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.430/1996, arts. 44, I, e 61, § 2º; Portaria Anatel nº 642/2013, art. 5º; Portaria nº 1355/2019, item 7.1.1.
+Jurisprudência relevante citada: Anatel, Súmula nº 27, de 26.07.2024.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 13609512) interposto pela EMPRESA DE TAXIS CATUMBI LTDA., CNPJ nº 62.733.118/0001-86, contra o Despacho Decisório nº 543/2025/CODI/SCO (SEI nº 14229103), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2012.
+Em 17/09/2025, conforme AR referente ao Ofício nº 718/2025/CODI/SCO-ANATEL (SEI nº 14511770), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise, em 19/09/2025.
+Foi elaborado o Informe nº 139/2026/CODI/SCO (SEI nº 15230470), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 110/2026/CODI/SCO (SEI nº 15230488), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 141/2026 (SEI nº 15230514).
+Fui designado relator da matéria por meio do sorteio realizado em 26/03/2026, nos termos da Certidão de Distribuição SEI nº 15392085.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese, que: (i) tem como objetivo a exploração da locação de veículos em geral, inclusive táxi, sem condutor, e em nenhum momento a recorrente obteve receita proveniente da utilização do serviço de radiotáxi, eis que sua receita advém exclusivamente de diárias de locação do veículo, pagas pelos motoristas profissionais autônomos que locam os veículos de propriedade da recorrente; e (ii) que a multa aplicada deve ser de no máximo 20%, nos termos do parágrafo 2º do artigo 61, da Lei n. 9.430/96, que trata da fixação da multa aplicada aos tributos federais.
+A empresa reitera argumento já apresentado em sede de Impugnação, aduzindo que não auferiu receitas decorrentes de prestação de serviços de telecomunicações, e tem como como objetivo a exploração do ramo de transportes de passageiros por meio de veículos táxi, bem como a locação de veículos em geral, inclusive táxi, utilizando-se do serviço limitado de radiotaxi para prestar seus serviços, mas não obtendo receita com a atividade.
+Diferentemente do que alega, sua outorga não é para o serviço limitado de radiotaxi - que tem por característica o uso do próprio outorgado, mas sim para o serviço especializado de radiotaxi, que em sua concepção engloba a disponibilização de equipamentos de radiotaxi com uso de radiofrequência específica a seus clientes, o que configura a prestação de serviços de telecomunicações.
+Ademais, como se observa do disposto no Relatório de Fiscalização nº 0176/2016/UO001FS Fust 2012 (SEI nº 0745143), a Interessada deixou de apresentar os documentos contábeis necessários à análise da fiscalização, que precisou recorrer ao arbitramento das receitas, para calcular o valor do Fust. 
+Além disso, nas duas oportunidades em que se manifestou nos autos, não trouxe qualquer documentação contábil capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+No que tange à multa instituída pelo art. 44, inciso I, da Lei nº 9.430/1996, a mesma possui natureza de penalidade ante o não cumprimento adequado da obrigação acessória de realizar a declaração e o recolhimento ao fundo.
+A prática adotada pela Anatel está de acordo com o entendimento da PFE-Anatel, a qual se posicionou favoravelmente à incidência da multa de ofício, esclarecendo-se que o preâmbulo da Lei nº 9.430/1996 incorpora, expressamente, a legislação tributária federal, hipótese que, por sua vez, abrange as contribuições administradas pela Anatel, autarquia pública federal.
+PARECER Nº 1060/2010/BSA/PGF/PFE-Anatel (fl. 41/68 SEI nº 4341421)
+...
+4. Antes de responder ao questionamento, cumpre-nos analisar se há ou não incidência da multa de oficio nos tributos administrados pela Anatel.
+5. Em resposta, entendemos pela incidência da penalidade. De primeiro, porque o preâmbulo diz expressamente que a Lei n.º 9.430/96, dentre outros assuntos, também se refere à legislação tributária federal, hipótese em que se abrangem as contribuições administradas pela Anatel, autarquia pública federal.
+6. De segundo, porque o art. 44, I, da Lei n.º 9.430/96, trata da imposição de multa de ofício em relação aos impostos e contribuições federais, nas situações específicas em que haja necessidade de lançamento de ofício pela falta de declaração ou declaração inexata do contribuinte que importe no recolhimento a menor do tributo.
+7. Tal situação se amolda perfeitamente às contribuições administradas pela Anatel, que além de serem contribuições federais, no caso da CIDE-FUST, o contribuinte não só tem a obrigação de pagar o tributo, mas também de apurá-lo, declará-lo e recolhê-lo na forma prevista na legislação. Desta feita, como a multa de ofício contempla penalidade específica pela não atividade ou atividade incompleta do contribuinte, diferentemente da multa de mora que visa punir o pagamento a destempo, não há dúvida acerca da sua aplicação às contribuições administradas pela Agência Reguladora.
+8. E nem poderia ser diferente, haja vista não haver motivo para tratar de forma desigual, quanto às obrigações tributárias de apurar, declarar e recolher o montante devido, os contribuintes da Administração Direta e Indireta1, até porque, a competência para a instituição dos tributos federais pertence à União2, que apenas delega a capacidade tributária ativa —administração e cobrança - a outras pessoas de direito pfiblico3, a exemplo da Anatel.
+9. O tratamento desigual entre contribuintes somente pode ser adotado se houver justificativa plausível, não havendo razão para tal discriminação na ausência de critérios justificadores4. Ao contrário, no que se refere à obrigação de declarar, apurar e recolher o tributo, o Código Tributário Nacional, quanto a essa obrigação acessória, não fez nenhuma distinção em relação aos sujeitos passivos, sendo descabida qualquer medida nesse sentido.
+Como se pode ver, a multa punitiva em discussão se trata de imposição legal sobre a qual não há margem de discricionariedade para a atuação da Anatel para qualquer alteração quanto ao percentual a ser aplicado ao caso concreto. Havendo a declaração inexata, deve incidir a multa sobre a diferença apurada.
+Ademais, convém acrescentar que foi editada a Súmula nº 27, de 26 de julho de 2024, por esta Agência, que assim dispõe:
+Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust).
+Não há dúvida sobre regularidade da aplicação da multa de ofício no presente caso.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15405954 e o código CRC 8C0262EC.
+ | 
+Referência: Processo nº 53500.206021/2015-57 | 
+SEI nº 15405954 |

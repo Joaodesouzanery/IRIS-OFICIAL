@@ -1,0 +1,79 @@
+SEI/ANATEL - 16010328 - Análise
+Boletim de Serviço Eletrônico em 06/08/2026
+Análise nº 60/2026/OP
+Processo nº 53500.017411/2014-73
+Interessado: ACOM COMUNICACOES LTDA
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 10814520) interposto pela SKY SERVIÇOS DE BANDA LARGA LTDA., incorporadora por sucessão de ACOM COMUNICACOES LTDA, CNPJ nº 02.126.673/0001-18, contra o Despacho Decisório nº 394/2023/AFFO6/AFFO/SAF (SEI nº 10277113), do Superintendente de Administração e Finanças, que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2010.
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL. FUST. BASE DE CÁLCULO. RECEITA DE LOCAÇÃO DE DECODER. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso Administrativo interposto por SKY SERVIÇOS DE BANDA LARGA LTDA., incorporadora por sucessão de ACOM COMUNICACOES LTDA., contra Despacho Decisório do Superintendente de Administração e Finanças que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição ao FUST no exercício de 2010.
+Fato relevante. A recorrente sustenta que a Anatel incluiu na base de cálculo do FUST as receitas da conta “Receita de Locação de Decoder – TV”, relativas à locação de decoder, as quais, segundo a empresa, não corresponderiam à prestação de serviço de telecomunicações.
+Manifestação técnica. O Informe nº 15/2026/SCO sugeriu o conhecimento e o não provimento do recurso. A área técnica e a fiscalização mantiveram os valores apurados no Relatório de Fiscalização nº 0126/2014/GR02.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o recurso administrativo preenche os requisitos de admissibilidade; e (ii) saber se a receita de locação de decoder integra a base de cálculo da contribuição ao FUST no exercício de 2010.
+III. RAZÕES DE DECIDIR
+A instrução do processo administrativo fiscal observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+O recurso é admissível, pois foi interposto tempestivamente, por parte legítima, com interesse recursal e sem contrariedade a súmula da Agência.
+A contribuição ao FUST incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins.
+Os relatórios de fiscalização gozam de presunção de legalidade e veracidade. Cabe ao interessado provar os fatos que alega.
+A recorrente não apresentou documentação contábil idônea apta a demonstrar que a receita de locação de decoder era autônoma em relação ao serviço de telecomunicações.
+A fiscalização concluiu que, no modo de prestação adotado pela empresa em 2010, o decoder era imprescindível para a fruição do serviço de televisão por assinatura. Por isso, a receita de sua locação era indissociável da prestação do serviço de telecomunicações e deveria compor a base de cálculo do FUST.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido.
+Tese de julgamento: "1. O recurso administrativo é admissível quando preenchidos os requisitos de tempestividade, legitimidade, interesse recursal e ausência de contrariedade a súmula da Agência. 2. A receita de locação de decoder integra a base de cálculo do FUST quando o equipamento é imprescindível para a fruição do serviço de telecomunicações e não subsiste de forma autônoma. 3. A alegação de exclusão de receita da base de cálculo do FUST exige prova documental idônea, não bastando impugnação desacompanhada de comprovação contábil."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, art. 85; Portaria Normativa nº 1.355/2019, item 7.1.1; Portaria nº 642/2013, art. 5º.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 10814520) interposto pela SKY SERVIÇOS DE BANDA LARGA LTDA., incorporadora por sucessão de ACOM COMUNICACOES LTDA, CNPJ nº 02.126.673/0001-18, contra o Despacho Decisório nº 394/2023/AFFO6/AFFO/SAF (SEI nº 10277113), do Superintendente de Administração e Finanças, que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (FUST), no exercício de 2010.
+Em 03/08/2023, conforme Certidão de Intimação Cumprida - SEI nº 10650185, o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 15/2026/SCO (SEI nº 15509819), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 11/2026/SCO (SEI nº 15510621), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 313/2026 (SEI nº 15510651).
+Fui designado relator da matéria por meio do sorteio realizado em 09/07/2026, nos termos da Certidão de Distribuição SEI nº 15938738.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese, que a Anatel considerou em seu cálculo as receitas com locação de decoder (conta nº 4.1.01.01.002), a qual reflete a prestação de um serviço que não se confunde com a comunicação e que não deveria compor a base de cálculo da contribuição ao FUST.
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou por duas vezes nos autos acerca da regularidade dos valores identificados como declarados a menor do que aqueles efetivamente devidos.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Ressalte-se que para o Fisco não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, para que seja comprovada documentalmente que uma conta de prestadora de serviços de telecomunicações não é operação de telecomunicações, é necessário haver: notas fiscais, contratos de locação, contratos de prestação de serviços, recibos, etc, ou qualquer outro comprovante idôneo de tal transação comercial. É necessário haver a verdade material. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+No caso em tela, a fiscalização analisou toda a documentação trazida aos autos, concluindo que, na forma como o serviço era prestado pela empresa, o mesmo tinha característica de serviço de telecomunicação, sobre o qual deveria incidir o FUST, objeto deste processo administrativo fiscal, conforme se depreende do trecho do Relatório de Fiscalização nº 16/2025/GR03FI1/GR03/SFI (SEI nº 13347578), abaixo: 
+8.3. Em sede de Recurso Administrativo (SEI nº 10814520), a empresa alega que o Relatório de Fiscalização nº 0126/2014/GR02 (SEI nº 0070159), considerou a totalidade das receitas da prestadora, incluindo a conta 4.1.01.01.002 – Receita de Locação de Decoder – TV. Segundo a empresa, esta receita, que no ano calendário de 2010 somou valor não desprezível, montante este superior a R$ 32.000.000 ( trinta e dois milhões de reais), deveria, segundo a empresa, ser retirada da base de cálculo por se tratar de prestação de serviços diversos que não se confundem com os serviços de telecomunicações propriamente dito.
+8.4. Esta fiscalização entende que, apesar de hoje configurar prática em desuso, a cobrança por aluguel de equipamento decodificador era usual no período das contribuições em tela (i.e., 2010). Se os contratos firmados com os clientes, e que definem a natureza dos serviços prestados, estabelecem o aluguel do equipamento decodificador como imprescindível para o usufruto do serviço de televisão por assinatura, tem-se que a substância do negócio jurídico é efetivamente a própria prestação dos serviços de telecomunicações, servindo a locação dos equipamentos como simples meio para a fruição dos serviços, não subsistindo independente do serviço de telecomunicação.
+8.5. Desta forma, a receita auferida com a "aluguel de conversores" é indissociável da prestação do serviço de telecomunicação ofertado ao usuário. Ocorre que, nessa situação, para o usuário dispor do serviço de telecomunicações contratado, é imprescindível a disponibilização de equipamento decodificador para liberação do sinal, sendo essa atividade, portanto, parte integrante do serviço de telecomunicações, devendo-se portanto ser devidamente considerada na base de cálculo do tributo.
+9. CONCLUSÃO
+9.1 Diante das razões expostas acima, conclui-se pela manutenção dos valores apurados pelo Relatório de Fiscalização nº 0126/2014/GR02, conforme memória de cálculo em anexo (SEI nº 0070170).
+9.1.1 Com base nas informações da Prestadora ACOM COMUNICAÇÕES LTDA., CNPJ 02.126.673/0001-18, os valores de contribuições devidas ao Fust em relação às receitas de telecomunicações auferidas no exercício financeiro de 2010 totalizam R$ 633.670,17 (seiscentos e trinta e três mil, seiscentos e setenta reais e dezessete centavos)..
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 06/08/2026, às 17:54, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16010328 e o código CRC D8B677D9.
+ | 
+Referência: Processo nº 53500.017411/2014-73 | 
+SEI nº 16010328 |

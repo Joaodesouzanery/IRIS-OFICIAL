@@ -1,0 +1,45 @@
+SEI/ANATEL - 16171692 - Acórdão
+Boletim de Serviço Eletrônico em 26/08/2026
+DOU de 26/08/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 224, de 24 de agosto de 2026
+Processo nº 53500.002728/2017-58
+Recorrente/Interessado: CENTRAIS ELÉTRICAS DO NORTE DO BRASIL S.A.
+CNPJ nº 00.357.038/0001-16
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 209, de 24 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. EXERCÍCIO DE 2015. RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto contra decisão que reconheceu a procedência de lançamento de ofício de créditos tributários referentes à contribuição ao FUndo de Universalização dos Serviços de Telecomunicações Fust no exercício de 2015 e da multa de ofício correspondente.
+2. Fato relevante. A Recorrente sustentou que a Anatel não deduziu o Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS relativo ao mês de dezembro de 2015 da base de cálculo do Fust. Alegou que a receita foi contabilizada em dezembro de 2015 e que o ICMS foi recolhido na mesma competência, embora as notas fiscais tenham sido emitidas apenas em março de 2016 por questões operacionais.
+3. As decisões anteriores. A fiscalização apurou diferença no recolhimento do Fust referente a dezembro de 2015 e aplicou multa de ofício de 75% (setenta e cinco por cento). Após diligência complementar, a área técnica manteve a apuração original. A Superintendência de Controle de Obrigações - SCO reconheceu a procedência dos lançamentos e, em juízo de admissibilidade, conheceu do Recurso e o encaminhou ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se as notas fiscais emitidas em março de 2016 e os demais documentos apresentados pela Recorrente comprovam o recolhimento do ICMS em dezembro de 2015 para fins de exclusão desse valor da base de cálculo do Fust; e (ii) saber se devem ser mantidos o lançamento de ofício da contribuição ao Fust e a multa de ofício aplicada por declaração inexata.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Foi interposto tempestivamente. A Recorrente tem interesse recursal e está regularmente representada.
+2. A competência para julgamento do mérito recursal é do Conselho Diretor, porque a autoridade recorrida conheceu do Recurso e não se retratou.
+3. A oitiva da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel é dispensável porque se trata de Recurso voluntário com valor nominal inferior ao limite de alçada e não há Recurso de Ofício.
+4. A exclusão do ICMS da base de cálculo do Fust exige comprovação idônea e contemporânea nos registros contábeis do exercício analisado.
+5. As notas fiscais apresentadas pela Recorrente foram emitidas em março de 2016. Esses documentos não coincidem com a escrituração contábil regular de 2015 validada pela fiscalização.
+6. Os balancetes contábeis mensais de 2015 e a Demonstração do Resultado do Exercício - DRE de 2015 não registram valor algum de ICMS recolhido.
+7. A própria Recorrente informou, em resposta ao requerimento de informações da fiscalização, que não houve tributação de ICMS nos períodos de 2014 e 2015. Por isso, não apresentou os arquivos de Escrituração Fiscal Digital correspondentes.
+8. A declaração no sistema SFUST, com abatimento de ICMS apenas em dezembro de 2015, sem lastro na contabilidade do exercício, não é suficiente para alterar a base de cálculo apurada.
+9. A análise técnica constatou inconsistências nas notas fiscais apresentadas, inclusive quanto ao período de prestação do serviço, pois parte delas indica prestação em março de 2016.
+10. Não houve erro material na apuração. A diferença lançada decorre da divergência entre o valor declarado pela Recorrente e o valor comprovado nos registros contábeis validados pela fiscalização.
+11. A diligência complementar confirmou a apuração original. 
+12. A multa de ofício de 75% (setenta e cinco por cento) é cabível porque houve declaração inexata quanto à contribuição devida.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo não provido.
+Tese de julgamento: "1. A exclusão do ICMS da base de cálculo da contribuição ao Fust depende de comprovação contábil e fiscal idônea no exercício de referência. 2. Notas fiscais emitidas em exercício posterior, sem correspondência com os balancetes e a DRE do período fiscalizado, não bastam para retificar a apuração do tributo. 3. É legítima a manutenção do lançamento de ofício da contribuição ao Fust e da multa de ofício quando a diferença apurada decorre de declaração inexata não confirmada pela escrituração contábil regular."
+Dispositivos relevantes citados: Constituição Federal - CF/1988; Lei nº 9.784/1999; Lei nº 9.998/2000, art. 6º, IV; Lei nº 9.430/1996, art. 44, I; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, arts. 115 e 116; Portaria nº 642/2013, art. 5º, IV, "a" e "b"; Portaria nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 76/2026/NP (SEI nº 16110686), integrante deste acórdão, conhecer do Recurso Administrativo interposto por AXIA ENERGIA NORTE S.A., CNPJ nº 00.357.038/0001-16, nova razão social de CENTRAIS ELÉTRICAS DO NORTE DO BRASIL S.A. - ELETRONORTE, em face do Despacho Decisório nº 648/2025/CODI/SCO, para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 25/08/2026, às 17:37, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16171692 e o código CRC CC21B2FC.
+ | 
+Referência: Processo nº 53500.002728/2017-58 | 
+SEI nº 16171692 |

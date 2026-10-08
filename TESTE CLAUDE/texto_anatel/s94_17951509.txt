@@ -1,0 +1,408 @@
+SEI/ANATEL - 16031379 - Voto
+Boletim de Serviço Eletrônico em 27/08/2026
+Voto nº 89/2026/PR
+Processo nº 53500.004589/2026-98
+Interessado: Agência Nacional de Telecomunicações, Universidade Federal da Paraíba
+CONSELHEIRO
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Análise de proposta de celebração de Termo de Execução Descentralizada (TED) entre a Agência Nacional de Telecomunicações (Anatel) e a Universidade Federal da Paraíba (UFPB), para desenvolvimento tecnológico de um ecossistema de inteligência regulatória e ferramentas de automação voltadas para a modernização do sistema de avaliação da conformidade de produtos para telecomunicações.
+EMENTA
+DIREITO ADMINISTRATIVO. GOVERNANÇA PÚBLICA. DESCENTRALIZAÇÃO DE CRÉDITOS. TERMO DE EXECUÇÃO DESCENTRALIZADA ENTRE A ANATEL E A UNIVERSIDADE FEDERAL DA PARAÍBA. DESENVOLVIMENTO DE ECOSSISTEMA DE INTELIGÊNCIA REGULATÓRIA. MODERNIZAÇÃO DA SUPERVISÃO REGULATÓRIA. MARKETPLACES E PRODUTOS NÃO HOMOLOGADOS. CONFORMIDADE DE DATA CENTERS. RASTREABILIDADE DE PRODUTOS. ADMINISTRAÇÃO DE RECURSOS DE NUMERAÇÃO. CONVENIÊNCIA E OPORTUNIDADE. AUTORIZAÇÃO.
+I. CASO EM EXAME
+Proposta de celebração de Termo de Execução Descentralizada entre a Agência Nacional de Telecomunicações e a Universidade Federal da Paraíba, por intermédio do Laboratório de Aplicações de Vídeo Digital, para a produção de subsídios técnicos, diagnósticos estratégicos e ferramentas de monitoramento destinados à modernização da supervisão regulatória da Agência.
+Projeto estruturado em quatro eixos: monitoramento de marketplaces e combate à comercialização de produtos não homologados; avaliação da conformidade de data centers; marcação e rastreabilidade de produtos; e administração dos recursos de numeração.
+Descentralização de créditos no valor de R$ 1.000.000,00, com vigência de 18 meses, execução dos produtos prevista para os primeiros oito meses e acompanhamento pela Superintendência de Outorga e Recursos à Prestação.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se compete ao Conselho Diretor apreciar a conveniência e a oportunidade da descentralização de créditos e autorizar a celebração do TED, considerando seu caráter estratégico-regulatório e a possibilidade de avocação prevista na regulamentação interna; e (ii) saber se as justificativas, os resultados esperados, a capacidade técnica da unidade descentralizada, a disponibilidade orçamentária e a instrução processual demonstram a conveniência e a oportunidade da parceria.
+III. RAZÕES DE DECIDIR
+Embora os TEDs e os contratos administrativos sejam institutos distintos, ambos envolvem a realização de despesa pública, o que autoriza a aplicação, por analogia, da lógica de governança prevista na Resolução Interna Anatel nº 214/2023.
+O Conselho Diretor pode avocar a competência para aprovação da conveniência e da oportunidade de projetos específicos, independentemente de seu valor, nos termos do art. 7º, § 4º, da Resolução Interna Anatel nº 214/2023.
+O caráter estratégico-regulatório da proposta, que não foi previamente apreciada no âmbito do Plano de Contratações Anual, recomenda sua submissão ao órgão colegiado, de modo a assegurar unidade direcional e estratégica à atuação da Agência.
+O ato de governança limita-se à avaliação do mérito da descentralização, no que se refere ao interesse público, à relevância institucional e à conveniência da execução do objeto pela unidade descentralizada, sem implicar ratificação ou validação dos atos técnicos, formais ou jurídicos que integram o processo.
+A proposta enquadra-se no art. 3º, inciso II, do Decreto nº 10.426/2020, por envolver a execução, pela UFPB, de atividades específicas em benefício da Anatel.
+A celebração do TED é motivada pela necessidade de modernizar os instrumentos de supervisão regulatória diante da expansão do comércio eletrônico, da crescente integração entre redes de telecomunicações e data centers, da necessidade de rastreabilidade individual de equipamentos e da evolução das aplicações que utilizam recursos de numeração.
+O projeto permitirá o desenvolvimento de estudos técnicos, benchmarks internacionais, indicadores de risco, referenciais regulatórios e painéis analíticos destinados a apoiar a tomada de decisão, fortalecer a capacidade de diagnóstico e de supervisão regulatória e ampliar a capacidade preditiva da Agência.
+No eixo relativo aos marketplaces, serão sistematizados modelos regulatórios e mecanismos de fiscalização destinados à prevenção, detecção, remoção, sanção e rastreabilidade de produtos não homologados.
+No eixo relativo aos data centers, serão mapeados critérios internacionais de resiliência, cibersegurança, eficiência energética e sustentabilidade, com elaboração de requisitos técnicos, indicadores e painel analítico para supervisão comparativa.
+No eixo de marcação e rastreabilidade, serão estudados padrões de serialização e mecanismos de validação digital destinados a conferir autenticidade e identificação unívoca aos produtos.
+No eixo de recursos de numeração, serão desenvolvidas estimativas de demanda para o Serviço de Comunicação Multimídia, mediante análise de séries históricas, levantamento com prestadoras e modelagem de cenários relacionados a voz, vídeo, dados, Internet das Coisas e comunicações máquina a máquina.
+A escolha da UFPB, por intermédio do Laboratório de Aplicações de Vídeo Digital (LAVID), encontra-se justificada pela experiência acadêmica e técnica da instituição em inteligência analítica, engenharia de dados, segurança digital, sistemas distribuídos, computação em nuvem e desenvolvimento de soluções tecnológicas complexas.
+Foram apresentadas as Declarações de Capacidade Técnica e de Compatibilidade de Custos, bem como atestada a disponibilidade orçamentária para a descentralização dos recursos.
+Os custos indiretos correspondem a 19% do valor global do TED, percentual inferior ao limite de 20% estabelecido no art. 8º, § 2º, do Decreto nº 10.426/2020.
+A instrução observou os requisitos dos arts. 8º, 9º e 11 do Decreto nº 10.426/2020, com aprovação prévia do Plano de Trabalho, manifestação favorável da Assessoria de Relações Institucionais, indicação dos responsáveis pelo acompanhamento e utilização dos modelos padronizados disponibilizados no Transferegov.br.
+A análise jurídica individualizada é dispensável, nos termos do art. 12 do Decreto nº 10.426/2020, diante da utilização de modelos padronizados previamente examinados e aprovados pela Procuradoria-Geral da Fazenda Nacional.
+A Superintendência de Outorga e Recursos à Prestação será responsável pelo acompanhamento da execução do objeto, do cronograma e das entregas, bem como pela avaliação e pelo aceite dos produtos.
+Compete à UFPB executar regularmente os recursos descentralizados, apresentar os relatórios de cumprimento do objeto e devolver eventuais saldos não utilizados, sem prejuízo das atribuições de acompanhamento e controle da Anatel.
+A parceria guarda correlação com o Objetivo de Desenvolvimento Sustentável 16 da Agenda 2030, especialmente com as Metas 16.6 e 16.7, ao contribuir para instituições mais eficazes, responsáveis e transparentes e para a tomada de decisão responsiva e baseada em evidências.
+IV. DISPOSITIVO E TESE
+Proposta aprovada.
+Tese de julgamento: “1. Compete ao Conselho Diretor apreciar a conveniência e a oportunidade e autorizar a celebração de Termo de Execução Descentralizada de caráter estratégico-regulatório, independentemente do valor da descentralização, mediante avocação da competência prevista no art. 7º, § 4º, da Resolução Interna Anatel nº 214/2023. 2. É cabível a celebração de TED para a execução, por instituição pública com capacidade técnica demonstrada, de atividades específicas em benefício da Anatel, quando evidenciados o interesse público, a relevância institucional do objeto, a disponibilidade orçamentária, a compatibilidade dos custos e o atendimento aos requisitos do Decreto nº 10.426/2020. 3. A aprovação da conveniência e da oportunidade constitui ato de governança e não implica ratificação ou validação das análises técnicas, formais ou jurídicas que integram o processo.”
+Dispositivos relevantes citados: Lei nº 9.472/1997; Decreto nº 10.426/2020, arts. 3º, inciso II, 6º, 7º, 8º, 9º, 11, 12 e 25; Decreto nº 11.271/2022, art. 18; Portaria nº 739/2019, art. 5º; Portaria SEGES/ME nº 13.405/2021; Resolução Interna Anatel nº 214/2023, art. 7º, §§ 3º e 4º; Resolução nº 612/2013, arts. 133 e 136.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIA
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Decreto nº 10.426, de 16 de julho de 2020, que dispõe sobre a descentralização de créditos entre órgãos e entidades da administração pública federal integrantes dos Orçamentos Fiscal e da Seguridade Social da União, por meio da celebração de termo de execução descentralizada;
+Decreto nº 11.271, de 5 de dezembro de 2022, que institui o Sistema de Gestão de Parcerias da União - Sigpar;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Resolução Interna Anatel nº 214, de 23 de maio de 2023, que Aprova a Norma sobre a governança, os limites de alçada e as autoridades competentes para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel);
+Portaria nº 739, de 23 de abril de 2019, que aprova Norma sobre propositura, celebração e acompanhamento de instrumentos de cooperação no âmbito da Agência Nacional de Telecomunicações (Anatel);
+Portaria SEGES/ME nº 13.405, de 1º de dezembro de 2021, que estabelece a obrigatoriedade de operacionalização dos termos de execução descentralizada, de que trata o Decreto nº 10.426/2020, na Plataforma +Brasil;
+Parecer Referencial nº 13085/ME da Procuradoria-Geral da Fazenda Nacional;
+Ofício nº 35/2026/ORCN/SOR-ANATEL (SEI nº 15071534);
+Despacho de Encaminhamento da UFPB (SEI nº 15644491);
+Informe nº 44/2026/ORCN/SOR (SEI nº 15648581);
+Declaração de Capacidade Técnica (SEI nº 15777359);
+Declaração de Compatibilidade de Custos (SEI nº 15777361);
+Plano de Trabalho assinado pela Reitora da UFPB (SEI nº 15777362);
+Decreto de Nomeação da Reitora da UFPB (SEI nº 15777363);
+Minuta de Termo de Execução Descentralizada e respectivo Plano de Trabalho (SEI nº 15807010);
+Declaração de Disponibilidade Orçamentária (SEI nº 15904941);
+Relatório de Disponibilidade Orçamentária (SEI nº 15905280);
+Minuta de Portaria de Pessoal (SEI nº 15957995);
+Ofício nº 91/2026/SOR (SEI nº 15971515);
+Ofício nº 1361/2026/ARI-ANATEL (SEI nº 15976510);
+Informe nº 33/2026/AFCA/SAF (SEI nº 15944992);
+Check List de Análise (SEI nº 16001829); 
+Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888); e
+Minuta de Termo de Execução Descentralizada (SEI nº 16058936).
+RELATÓRIO
+Trata-se de proposta de celebração de Termo de Execução Descentralizada (TED) entre a Agência Nacional de Telecomunicações (Anatel) e a Universidade Federal da Paraíba (UFPB), para desenvolvimento tecnológico de um ecossistema de inteligência regulatória e ferramentas de automação voltadas para a modernização do sistema de avaliação da conformidade de produtos para telecomunicações, por intermédio do Laboratório de Aplicações de Vídeo Digital (LAVID), do Centro de Informática da Universidade, conforme a Minuta de Termo de Execução Descentralizada e o Plano de Trabalho que a integra (SEI nº 15807010).
+I. DOS FATOS
+A instrução teve início com o Ofício nº 35/2026/ORCN/SOR-ANATEL (SEI nº 15071534), por meio do qual a Superintendência de Outorga e Recursos à Prestação (SOR) consultou a UFPB acerca do interesse e da possibilidade de desenvolvimento conjunto de projeto de pesquisa e desenvolvimento tecnológico voltado ao aperfeiçoamento de instrumentos regulatórios relacionados à certificação e à numeração.
+A Universidade manifestou interesse por meio do Despacho de Encaminhamento (SEI nº 15644491), apresentando proposta de pesquisa e desenvolvimento tecnológico destinada à criação de um ecossistema de inteligência regulatória e automação para apoiar a Gerência de Certificação e Numeração no monitoramento, na qualificação e na gestão de processos críticos.
+Informe nº 44/2026/ORCN/SOR (SEI nº 15648581):
+3.151. O objetivo central é a criação de soluções que automatizem o diagnóstico de riscos em marketplaces e importações via SiscomexData; estabeleçam frameworks de conformidade para data centers; modernizem a rastreabilidade e a gestão de recursos de numeração, aumentando a eficiência operacional e a eficácia regulatória da utilização desses recursos; tudo no sentido de contribuir para alavancar o desenvolvimento do mercado de telecomunicações no Brasil.
+A SOR, no Informe nº 44/2026/ORCN/SOR (SEI nº 15648581), apresentou extensa fundamentação sobre o papel da avaliação da conformidade e da homologação de produtos na segurança das redes, na gestão do espectro e na proteção do consumidor; os desafios decorrentes da comercialização de produtos não homologados em plataformas digitais; a necessidade de critérios e instrumentos para supervisão de data centers; o aprimoramento da marcação e da rastreabilidade de produtos; e a administração eficiente dos recursos de numeração.
+Para enfrentar os problemas identificados, a área técnica estruturou o projeto em quatro eixos: (i) Marketplaces e Produtos não Homologados; (ii) Avaliação da Conformidade de Data Centers; (iii) Marcação e Rastreabilidade de Produtos; e (iv) Administração dos Recursos de Numeração.
+A proposta da UFPB foi avaliada pela SOR, que justificou a escolha da Universidade em razão do notório conhecimento acadêmico e tecnológico do LAVID nas áreas de inteligência analítica e modelagem estatística, engenharia de dados e visualização, identificação digital, segurança de requisitos, inteligência artificial, sistemas distribuídos e computação em nuvem.
+Além da Minuta de TED e respectivo Plano de Trabalho, foram juntadas aos autos a Declaração de Capacidade Técnica (SEI nº 15777359), a Declaração de Compatibilidade de Custos (SEI nº 15777361), o Plano de Trabalho assinado pela Reitora da UFPB (SEI nº 15777362) e o Decreto de sua nomeação (SEI nº 15777363).
+A Minuta de TED fixa o valor global de R$ 1.000.000,00 (um milhão de reais), a vigência de 18 (dezoito) meses a partir da assinatura e a responsabilidade da SOR pelo acompanhamento da execução. O Plano de Trabalho prevê a conclusão dos produtos em ciclo de 8 (oito) meses e o desembolso integral em outubro de 2026.
+A Gerência de Finanças, Orçamento e Arrecadação atestou a disponibilidade orçamentária para a descentralização pretendida, por meio da Declaração de Disponibilidade Orçamentária (SEI nº 15904941), com fundamento no Relatório de Disponibilidade Orçamentária (SEI nº 15905280).
+A Assessoria de Relações Institucionais manifestou-se favoravelmente à continuidade da proposta, nos termos do Ofício nº 1361/2026/ARI-ANATEL (SEI nº 15976510).
+A Gerência de Aquisições e Contratos, mediante o Informe nº 33/2026/AFCA/SAF (SEI nº 15944992) e o Check List de Análise (SEI nº 16001829), examinou a conformidade da instrução com os arts. 8º, 9º e 11 do Decreto nº 10.426/2020, atestou a aderência da Minuta de TED e do Plano de Trabalho aos modelos do Transferegov.br e concluiu pela aptidão do processo para apreciação de mérito pelo Conselho Diretor, dispensada a análise jurídica individualizada.
+Informe nº 33/2026/AFCA/SAF (SEI nº 15944992):
+6.1. Considerando a fundamentação, as justificativas apresentadas, bem como a documentação acostada aos autos, entende-se que o processo de formalização de Termo de Execução Descentralizada com a Universidade Federal da Paraíba (UFPB) (...) encontra-se apto para apreciação de mérito pelo Conselho Diretor e posterior assinatura das autoridades competentes, sem o referido envio para análise jurídica, em obediência ao princípio da eficiência e observância do art. 12 do Decreto 10.426/2020.
+Por meio da Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888), a Superintendência de Administração e Finanças (SAF) consolidou a instrução e submeteu ao Colegiado a proposta de autorização da celebração do TED.
+Posteriormente, a SOR juntou aos autos nova versão de Minuta de TED (SEI nº 16058936), retificando erro material relacionado ao número da Classificação Funcional Programática, de acordo com a informação registrada na Declaração de Disponibilidade Orçamentária (SEI nº 15904941). 
+São os fatos.
+DAS CONSIDERAÇÕES POR PARTE DESTE PRESIDENTE
+DA COMPETÊNCIA DO CONSELHO DIRETOR
+Quanto à competência para autorizar a celebração de convênios, ajustes, termos e acordos de cooperação, inclusive TEDs, o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, dispõe, de um lado, sobre a competência do Conselho Diretor para autorizar a contratação de serviços de terceiros e, de outro, sobre a representação da Agência pelo Presidente na assinatura desses instrumentos:
+RIA:
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+XX - autorizar a contratação de serviços de terceiros, na forma da legislação em vigor;
+(...)
+Art. 136. É competência do Presidente da Agência:
+II - representar a Agência, ativa e passivamente, firmando, em conjunto com outro Conselheiro, convênios, ajustes, termos, acordos de cooperação e contratos;
+A Portaria nº 739, de 23 de abril de 2019, que aprova a Norma sobre propositura, celebração e acompanhamento de instrumentos de cooperação no âmbito da Anatel, no art. 5º, caput, estabelece que os instrumentos de cooperação e seus termos aditivos são aprovados e assinados pelo Presidente, em conjunto com outro Conselheiro, com posterior comunicação ao Conselho Diretor:
+ Portaria nº 739/2019:
+Art. 5º Os instrumentos de cooperação, bem como os seus respectivos termos aditivos, são aprovados e assinados pelo Presidente da Anatel, em conjunto com outro Conselheiro, com posterior comunicação ao Conselho Diretor e publicação do ato na página da Anatel na internet.
+Embora TEDs e contratos administrativos sejam institutos distintos, ambos envolvem a realização de despesa pública. Por essa razão, mostra-se adequada a aplicação, por analogia, da lógica de governança prevista na Resolução Interna Anatel nº 214/2023.
+Conforme consignado no Voto nº 114/2022/PR ( SEI nº 9424089), que fundamentou a aprovação da referida Norma, a aprovação da conveniência e da oportunidade constitui ato de governança por meio do qual a autoridade competente avalia o mérito da celebração, considerada a motivação quanto ao interesse, à relevância e à adequação à satisfação do interesse público.
+Nos termos do art. 7º, § 3º, da Resolução Interna Anatel nº 214/2023, compete ao Conselho Diretor aprovar a conveniência e a oportunidade das contratações com limite de alçada igual ou superior a R$ 5.000.000,00, enquanto as contratações com valor inferior a esse montante submetem-se às demais autoridades ali indicadas, conforme a área requisitante.
+O valor do TED em exame é de R$ 1.000.000,00 (um milhão de reais). Não obstante, a proposta não integrou previamente o Plano de Contratações Anual, instrumento no qual este Colegiado ordinariamente exerce a governança estratégica das contratações, e apresenta inequívoco caráter estratégico-regulatório, por abranger ferramentas e diagnósticos destinados ao aperfeiçoamento da supervisão de mercados digitais, de infraestrutura crítica, da conformidade de produtos e da gestão de recursos públicos escassos.
+Além disso, o § 4º do art. 7º da Resolução Interna Anatel nº 214/2023 autoriza expressamente o Conselho Diretor a avocar a competência para aprovar a conveniência e a oportunidade de projetos específicos, independentemente de seu valor:
+Resolução Interna Anatel nº 214/2023:
+Art. 7º (...)
+§ 4º O Conselho Diretor poderá avocar para si a competência para aprovação de conveniência e oportunidade de projetos de contratação específicos, independentemente de seu valor.
+A própria Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888) destacou que a relevância e o caráter estratégico-institucional da iniciativa recomendam a avaliação pelo órgão colegiado, de modo a permitir contribuições e reforçar a unidade direcional e estratégica da Agência.
+Assim, considera-se o Conselho Diretor competente para apreciar a conveniência e a oportunidade da descentralização de créditos e autorizar a celebração do TED, com fundamento no art. 5º da Portaria nº 739/2019 e no art. 7º, § 4º, da Resolução Interna Anatel nº 214/2023.
+Feitos esses esclarecimentos, passa-se à análise dos elementos necessários à deliberação.
+DA ANÁLISE
+De início, ressalta-se que o ato de governança ora praticado não substitui a análise técnica, realizada pela SOR e pela UFPB durante a formulação do projeto e consolidada no Informe nº 44/2026/ORCN/SOR (SEI nº 15648581), tampouco a análise formal efetuada pela AFCA no Informe nº 33/2026/AFCA/SAF (SEI nº 15944992).
+A governança também não abrange a avaliação jurídica individualizada. O art. 12 do Decreto nº 10.426/2020 faculta a dispensa dessa análise quando utilizados os modelos padronizados previstos em seu art. 25, previamente examinados e aprovados pela Procuradoria-Geral da Fazenda Nacional. Assim, a área técnica constatou ser dispensável a análise jurídica pela Procuradoria Federal Especializada junto à Anatel (PFE/ANATEL), tendo em vista a utilização do modelo disponível no Portal Transferegov.br.:
+Decreto nº 10.426/2020:
+Art. 12. Na celebração de TED que utilize os modelos padronizados de que trata o art. 25 fica facultada a dispensa de análise jurídica.
+(...)
+Art. 25. A Secretaria de Gestão manterá atualizados na plataforma eletrônica os modelos de minuta padrão do TED, plano de trabalho e relatório de cumprimento do objeto, previamente examinados e aprovados pela Procuradoria-Geral da Fazenda Nacional.
+A AFCA atestou a aderência da Minuta de TED e de seu anexo ao modelo disponibilizado no Transferegov.br e registrou a utilização do Parecer Referencial nº 13085/ME da Procuradoria-Geral da Fazenda Nacional. Também consignou que o instrumento somente será formalizado após o cumprimento dos requisitos legais remanescentes, utilizando-se, como instrumento de apoio, o Check List de Análise (SEI nº 16001829), conforme modelo também disponibilizado no Portal Transferegov.br.
+Desse modo, o ato de governança não implica ratificação ou validação dos atos que integram o processo, mas a avaliação do mérito da descentralização, no que toca à relevância institucional, ao interesse público e à conveniência da execução do objeto pela unidade descentralizada.
+A proposta enquadra-se no art. 3º, inciso II, do Decreto nº 10.426/2020, pois prevê a execução, pela UFPB, de atividades específicas em benefício da Anatel:
+Decreto nº 10.426/2020
+Art. 3º A descentralização de créditos orçamentários de que trata este Decreto será motivada e terá as seguintes finalidades:
+(...)
+II - execução de atividades específicas pela unidade descentralizada em benefício da unidade descentralizadora;
+(...)
+§ 1º As descentralizações de crédito de que tratam os incisos I e II do caput serão realizadas por meio da celebração de TED.
+A motivação para a celebração decorre da necessidade de atualizar os instrumentos de supervisão da Agência diante da expansão do comércio eletrônico, do uso de infraestruturas críticas de processamento e armazenamento de dados, da necessidade de rastreabilidade individual de equipamentos e da introdução de recursos de numeração para novas aplicações e serviços.
+Informe nº 44/2026/ORCN/SOR (SEI nº 15648581):
+3.105. Embora medidas administrativas de relevância tenham sido tomadas, há necessidade de este órgão regulador instrumentalizar-se com ferramentas de monitoramento que possibilitem o manuseio de dados massivos da comercialização de produtos on-line, a identificação de agentes infratores e o monitoramento das importações via sistema do comércio exterior.
+Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+18.1.2. Existe um desequilíbrio crítico entre a velocidade de inovação do mercado e os modelos tradicionais de supervisão. O combate à comercialização de produtos não homologados demanda agora a construção de um framework de inteligência regulatória e benchmarks internacionais que sistematizem as melhores práticas globais de fiscalização e criem taxonomias eficazes para a prevenção e detecção de irregularidades em plataformas digitais.
+O objeto foi descrito na Minuta de TED como a produção de subsídios técnicos, diagnósticos estratégicos e ferramentas de monitoramento destinados a modernizar a supervisão regulatória da Anatel em frentes essenciais do setor de telecomunicações. O projeto foi organizado em quatro eixos, desdobrados em cinco metas e produtos, conforme descrição contida na tabela do item 22 - "Cronograma físico-financeiro" do Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+22. CRONOGRAMA FÍSICO-FINANCEIRO:
+Metas
+ | Descrição
+ | Unidade de Medida
+ | Qtde
+ | Valor Unitário
+ | Valor Total
+ | Início
+ | Fim
+ | Produtos
+ | 
+1
+ | Framework e Benchmark Marketplaces
+ | Relatório
+ | 1
+ | R$ 180.000,00
+ | R$ 180.000,00
+ | Mês 1
+ | Mês 4
+ | Documento de Diretrizes e Taxonomia
+ | 
+2
+ | Benchmark Data Centers
+ | Relatório 
+técnico
+ | 1
+ | R$ 180.000,00
+ | R$ 180.000,00
+ | Mês 1
+ | Mês 5
+ | Referencial de 
+Requisitos Técnicos
+ | 
+3
+ | KPIs e Painel Analítico Data 
+Centers
+ | Dashboard
+ | 1
+ | R$ 250.000,00
+ | R$ 250.000,00
+ | Mês 5
+ | Mês 8
+ | Painel de Monitoramento de Performance
+ | 
+4
+ | Rastreabilidade Unívoca de 
+Produto
+ | Especificação Técnica
+ | 1
+ | R$ 170.000,00
+ | R$ 170.000,00
+ | Mês 3
+ | Mês 7
+ | Modelo de 
+Identificação Digital
+ | 
+5
+ | Estimativa de Demanda SCM (Numeração)
+ | Estudo Estatístico
+ | 1
+ | R$ 220.000,00
+ | R$ 220.000,00
+ | Mês 2
+ | Mês 6
+ | Relatório de Projeção 
+de Demanda
+ | 
+Quanto à relevância da descentralização ora em análise, verifica-se, conforme delineado no Informe nº 44/2026/ORCN/SOR (SEI nº 15648581), que deve ser compreendida a partir da própria evolução da atuação regulatória da Anatel. Extrai-se do Informe, de forma resumida, que, desde a edição da Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT), a avaliação da conformidade e a homologação de produtos constituem instrumentos essenciais para assegurar a segurança dos usuários, a compatibilidade técnica dos equipamentos e o uso adequado das redes e do espectro de radiofrequências. Esse modelo foi estruturado inicialmente pelas Resoluções nº 242/2000 e nº 323/2001 e posteriormente atualizado pelo Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715/2019 e alterado pela Resolução nº 780/2025.
+Nos últimos anos, contudo, o avanço do comércio eletrônico, a ampliação da oferta de produtos importados, a crescente integração entre redes de telecomunicações e data centers e a evolução dos serviços digitais passaram a exigir instrumentos regulatórios mais sofisticados. Fiscalizações realizadas pela Agência identificaram percentuais relevantes de comercialização de aparelhos não homologados em grandes plataformas digitais, evidenciando limitações dos mecanismos tradicionais de supervisão e a necessidade de ferramentas capazes de tratar grandes volumes de dados, identificar agentes infratores e acompanhar importações e anúncios em marketplaces.
+Paralelamente, a expansão das redes móveis, da computação em nuvem, da Internet das Coisas e das comunicações entre máquinas aumentou a importância dos data centers e tornou mais complexa a administração dos recursos de numeração. A regulamentação mais recente passou a reconhecer expressamente a relevância dos data centers que integram as redes de telecomunicações e estabeleceu requisitos relacionados à continuidade operacional, à segurança física e cibernética, à eficiência energética e à sustentabilidade.
+Nesse contexto, o TED mostra-se relevante por permitir o desenvolvimento de estudos, benchmarks internacionais, indicadores de risco e painéis analíticos destinados a modernizar a atuação da Anatel em quatro frentes: combate à comercialização de produtos não homologados em marketplaces, avaliação da conformidade de data centers, rastreabilidade unívoca de produtos e planejamento dos recursos de numeração. As entregas deverão apoiar a tomada de decisão, fortalecer a capacidade de diagnóstico e de supervisão regulatória, promover transferência de tecnologia e ampliar a capacidade preditiva da Agência diante dos novos desafios do setor de telecomunicações.
+A escolha da Universidade é justificada na Minuta de TED (SEI nº 16058936), que registra que "o Laboratório de Aplicações de Vídeo Digital (LAVID) da Universidade Federal da Paraíba (UFPB) é referência em pesquisa, desenvolvimento e inovação nas áreas de Vídeo Digital, Redes de Computadores, TV Digital Interativa e Middleware. Além do compromisso com a inovação no ambiente acadêmico, o LAVID desempenha um importante papel social, ao promover ações que disseminam o conhecimento produzido no laboratório e visam garantir a inclusão digital. O núcleo acumula mais de 20 anos de atuação e é referência nacional e internacional em pesquisa, desenvolvimento e inovação tecnológica", conforme se transcreve:
+Plano de Trabalho anexo à Minuta de Termo de Execução Descentralizada (SEI nº 16058936):
+18.7.2. (...)
+a) Acessibilidade Digital: Desenvolvimento de tecnologias assistivas com grande impacto social;
+b) Inteligência Artificial: Aplicação de algoritmos avançados, processamento e aprendizado de máquina;
+c) Vídeo e TV Digital: Criação de middlewares, interatividade e transmissão de sistemas multimídia;
+d) Sistemas Distribuídos e Redes: Pesquisa focada em infraestrutura e computação em nuvem".
+ (...)
+18.7.4. O laboratório possui sólida capacidade técnica e jurídica para firmar acordos e executar projetos focados em diagnósticos de infraestrutura, análise de processos e desenvolvimento de sistemas complexos. A atuação do laboratório conecta a pesquisa acadêmica de ponta às demandas de órgãos públicos e empresas privadas através de arranjos institucionais estruturados. Nesse contexto, mantém parcerias ativas com órgãos governamentais e universidades estrangeiras, consolidando-se como um polo essencial para a transformação digital inclusiva no Brasil
+18.7.5. O laboratório opera em todo o ciclo de vida da engenharia de software e da infraestrutura de TI, dividindo sua capacidade em duas grandes vertentes:
+18.7.5.1 Realização de Diagnósticos Técnicos
+a)Auditoria de Sistemas e Segurança: Histórico na execução de varreduras, testes de intrusão, mapeamento de vulnerabilidades periféricas e emissão de relatórios de conformidade de rede;
+b) Avaliação de Usabilidade e Acessibilidade: Capacidade de diagnosticar portais, aplicativos e sistemas legados para verificar aderência a padrões de experiência do usuário (UX) e acessibilidade digital;
+c) Mapeamento de Processos e Dados: Diagnósticos orientados à arquitetura de informação e modelagem de banco de dados para otimização de fluxos governamentais ou corporativos.
+18.7.5.2. Desenvolvimento de Sistemas
+18.7.5.3. Aplicações Web e Mobile de Larga Escala: Criação de arquiteturas robustas em modelos full-stack e devops, garantindo portabilidade entre múltiplas plataformas;
+18.7.5.4. Inteligência Artificial e Redes Neurais: Desenvolvimento de motores de busca, sistemas especialistas de processamento de sinais e automação inteligente;
+18.7.5.5. Sistemas Distribuídos e Cloud: Projetos focados em alta disponibilidade, computação em nuvem e transmissão contínua de dados de alta velocidade.
+18.7.6. Para viabilizar a execução desses projetos, o LAVID adota modelos formais de cooperação respaldados pela Universidade Federal da Paraíba (UFPB):
+18.7.6.1. TED (Termo de Execução Descentralizada): Utilizado primordialmente para parcerias com Ministérios, Secretarias Nacionais e outros órgãos federais (como o Ministério da Gestão e da Inovação - MGI). Viabiliza o repasse direto de recursos orçamentários para o desenvolvimento de soluções de Estado;
+18.7.6.2. Convênios de P&D: Acordos firmados com agências de fomento (CNPq, RNP, FINEP) e o setor privado para pesquisa aplicada e desenvolvimento de protótipos industriais;
+18.7.6.3. Intercâmbios e Cooperações Internacionais: Acordos científicos bilaterais, como as missões técnicas recentes com a Universidad de Valparaíso (Chile), que focam na transferência tecnológica e cocriação de sistemas complexos;
+18.7.6.4. Gestão via Fundações de Apoio: A execução financeira e administrativa dos contratos e bolsas do LAVID conta com o suporte de fundações credenciadas da universidade, como a FUNETEC-UFPB.
+18.7.7. Os projetos de Inteligência Artificial (IA) executados pelo LAVID (UFPB) focam principalmente em acessibilidade digital, processamento de linguagem natural e sistemas complexos de automação. O laboratório aplica modelos avançados de aprendizado de máquina para resolver desafios sociais e governamentais.
+18.7.6.1. Ecossistema VLibras (Tradução Automática):
+a) Redes Neurais para Tradução: É o projeto mais premiado do LAVID. Utiliza redes neurais artificiais híbridas para traduzir, em tempo real, textos e áudios em português para a Língua Brasileira de Sinais (Libras);
+b) Processamento Gráfico e Movimento: Aplicação de algoritmos de IA para calibrar a naturalidade e as expressões faciais e corporais dos avatares 3D (como o Guga e a Hozana);
+c) Reconhecimento Internacional: Essa tecnologia serve como base para parcerias, incluindo missões técnicas com a Universidad de Valparaíso (Chile) para o desenvolvimento de sistemas equivalentes de tradução automática baseada em IA.
+18.7.6.2. Iniciativa ReNTAI e Transformação Digital: O projeto recente ReNTAI integra pesquisadores para aplicar inteligência artificial, ciência de dados e algoritmos preditivos na otimização de infraestruturas e transformação digital de serviços públicos.
+18.7.6.3. Ferramentas de Multimídia Assistiva: Pesquisas voltadas ao desenvolvimento de modelos computacionais inteligentes capazes de reconhecer objetos em vídeos e extrair contextos de roteiros de cinema. A IA analisa a cena e gera automaticamente faixas de audiodescrição em texto/áudio para auxiliar pessoas cegas ou com baixa visão.
+18.7.6.4. Ecossistema Conectado - ARIA: O LAVID atua em estreita colaboração com o ARIA (Laboratório de Aplicações em Inteligência Artificial), um núcleo irmão dentro do Centro de Informática da UFPB focado estritamente em levar protótipos de visão computacional e modelos de linguagem do ambiente acadêmico para validação prática em campo com o mercado.
+18.7.6.5. SEFAZ - Cruzamento de dados fiscais e monitoramento de cargas: outro projeto de destaque por meio do qual o LAVID, em parceria com o laboratório ARIA, a SEFAZ-PB e a BRISANET, desenvolve uma infraestrutura tecnológica avançada para o processamento e análise de dados fiscais no estado da Paraíba. O projeto integra soluções para o cruzamento automatizado de documentos fiscais, com foco na detecção de fraudes, e sistemas de monitoramento em tempo real de cargas interestaduais, promovendo maior eficiência, transparência e segurança na gestão tributária estadual.
+O objetivo geral é estabelecer um framework de inteligência regulatória e diagnóstico técnico que auxilie as unidades da Anatel no monitoramento de mercados digitais, na avaliação de infraestruturas críticas e na gestão estratégica de recursos, mediante benchmarks internacionais, taxonomias regulatórias, indicadores e ferramentas de visualização.
+No primeiro eixo, pretende-se sistematizar modelos regulatórios e mecanismos de fiscalização aplicados ao comércio eletrônico, com classificação de práticas de prevenção, detecção, remoção, sanção e rastreabilidade de produtos não certificados. Trata-se de resposta à crescente presença de equipamentos não homologados em marketplaces e à necessidade de atuação regulatória baseada em dados.
+No segundo eixo, o projeto mapeará critérios internacionais de resiliência, segurança cibernética, eficiência energética e sustentabilidade aplicáveis a data centers, formulará requisitos mínimos e recomendáveis e desenvolverá quadro de indicadores e painel analítico para supervisão comparativa.
+No terceiro eixo, serão estudados padrões de serialização, marcação e identificação unívoca, com proposição de mecanismos de validação digital, a exemplo de QR code e assinaturas digitais, destinados a ampliar a autenticidade e a rastreabilidade dos equipamentos comercializados.
+No quarto eixo, serão elaboradas estimativas de demanda futura de recursos de numeração para o Serviço de Comunicação Multimídia, abrangendo aplicações de voz, vídeo, dados, IoT e comunicações máquina a máquina, mediante séries históricas, levantamento amostral com prestadoras e modelagem de cenários por Código Nacional.
+A metodologia de execução prevê sprints quinzenais, workshops mensais de validação técnica e atuação simultânea de equipes especializadas, conforme Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936), com conclusão dos resultados em 8 (oito) meses, assinalando marcos críticos e gestão de riscos, a seguir transcritos.
+Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+Metodologia de Execução
+(...)
+18.8.4. Marcos Críticos (Milestones)
+Marco
+ | Mês
+ | Entregável
+ | 
+Kick-off
+ | 1
+ | Planejamento aprovado e formalização do acesso às séries de numeração e dados de infraestrutura.
+ | 
+Benchmarks Internacionais
+ | 3
+ | Relatórios de benchmark para Marketplaces (Meta 1) e Data Centers (Meta 2) concluídos.
+ | 
+Definições Técnicas e 
+Survey
+ | 5
+ | Definição dos KPIs de Data Centers (Meta 3) e lançamento do survey de demanda de numeração para prestadoras de SCM..
+ | 
+Estudos de Rastreabilidade
+ | 6
+ | Entrega do estudo de Rastreabilidade Unívoca (Meta 4) com proposição de validação digital.
+ | 
+Dashboards e Estimativas
+ | 8
+ | Painel Analítico de Data Centers operacionais e relatório final de Estimativa de Demanda de Numeração SCM.
+ | 
+Encerramento
+ | 8
+ | Transferência de conhecimento, documentação técnica e encerramento do projeto.
+ | 
+18.8.5. Gestão de Riscos
+Risco
+ | Probabilidade
+ | Impacto
+ | Mitigação
+ | 
+Baixa Adesão ao Survey (PPPs/SCM)
+ | Média
+ | Médio
+ | Engajamento precoce via associações de prestadoras e simplificação dos questionários de coleta.
+ | 
+Divergência em Padrões Técnicos
+ | Média
+ | Médio
+ | Workshops mensais para garantir alinhamento precoce com os requisitos mínimos recomendáveis.
+ | 
+Limitação de Dados Históricos
+ | Baixa
+ | Médio
+ | Uso de técnicas de modelagem para cenários de crescimento baseados em tendências globais de IoT/M2M
+ | 
+Privacidade e LGPD
+ | Baixa
+ | Alto
+ | Anonimização de dados de consumo e uso de criptografia nos selos digitais e APIs de consulta.
+ | 
+O prazo de vigência do TED será de 18 (dezoito) meses, contados a partir da data de sua assinatura, podendo ser prorrogado de acordo com o disposto no art. 10 do Decreto nº 10.426, de 2020, nos termos do item 5 da Minuta de TED (SEI nº 16058936). Considerando os marcos críticos e a execução das metas distribuídos entre o primeiro e o oitavo mês, pondera-se que a vigência oferece margem para as providências administrativas de mobilização, validação, transferência de conhecimento, avaliação e encerramento do instrumento. 
+A avaliação quanto aos benefícios diretos e indiretos que resultarão da contratação é feita, de forma sucinta, pela Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888):
+Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888):
+Benefícios diretos e indiretos que resultarão da contratação
+3.11. Consta do Plano de Trabalho que a descentralização gearrá um projeto de pesquisa e desenvolvimento tecnológico que "visa estabelecer um framework de inteligência regulatória e diagnóstico técnico que auxilie as Gerências da Anatel no monitoramento de mercados digitais, na avaliação de infraestruturas críticas e na gestão estratégica de recursos".
+Os resultados esperados incluem a entrega de painéis analíticos e indicadores de risco para apoio à decisão, a sistematização de benchmarks internacionais, o fortalecimento da rastreabilidade de produtos, o aprimoramento do planejamento de recursos de numeração e a transferência de tecnologia e conhecimento à Agência.
+Informe nº 44/2026/ORCN/SOR (SEI nº 15648581):
+3.155. A adoção de uma metodologia focada em benchmarks internacionais e entregas incrementais permite que a Agência modernize seus processos, robusteça a supervisão de infraestrutura crítica e consolide uma supervisão de mercado que garanta a conformidade do uso de equipamentos nas redes de telecomunicações.
+3.156. A execução culminará na transferência de tecnologia e no fortalecimento da capacidade preditiva da Anatel frente aos novos desafios do setor de telecomunicações.
+Nesse sentido, foram estabelecidas as seguintes metas no Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936):
+17.3. METAS:
+17.3.1. Eixo 1 – Monitoramento de marketplaces e combate à comercialização de produtos não homologados
+17.3.1.1. Meta 1: Construir um framework de inteligência regulatória e benchmark internacional - sistematizar como outros reguladores tratam marketplaces, produtos não certificados e mecanismos de fiscalização
+a) Levantar casos internacionais relevantes e classificar os modelos regulatórios por país, tipo de plataforma e grau de intervenção.
+b)Criar uma taxonomia de práticas de combate à venda irregular: prevenção, detecção, remoção, sanção e rastreabilidade.
+c) Estruturar uma matriz comparativa com critérios jurídicos, tecnológicos e operacionais. 
+d) Produzir síntese executiva com recomendações transferíveis ao contexto brasileiroo
+17.3.2. Eixo 2 – Avaliação da conformidade de data centers
+17.3.2.1. Meta 2: Construir um benchmark internacional estruturado - mapear critérios usados por outras administrações para monitorar data centers de interesse regulatório
+a) Levantar normas, guias e práticas internacionais sobre conformidade, resiliência, cibersegurança e sustentabilidade.
+b) Organizar um referencial comparativo com categorias técnicas padronizadas.
+c) Traduzir os achados em um conjunto de requisitos mínimos e recomendáveis.
+d) Destacar o que é regulável por evidência documental, inspeção ou auditoria remota.
+17.3.2.2. Meta 3: Criar um quadro de KPIs e um painel analítico - padronizar indicadores de desempenho e apoiar a supervisão regulatória
+a) Definir KPIs de consumo energético, eficiência, disponibilidade, segurança e sustentabilidade ambiental. 
+b) Estabelecer fórmulas, faixas de referência e critérios de interpretação.
+c) Desenvolver dashboard para acompanhamento comparativo entre prestadoras
+17.3.3. Eixo 3 – Procedimento de marcação e avaliação da conformidade por etiquetagem
+17.3.3.1. Meta 4: Modernizar a Rastreabilidade Unívoca de Produtos - garantir que cada unidade comercializada possa ser identificada de forma unívoca
+a) Estudar padrões internacionais de serialização, rastreio e marcação de produtos.
+b) Definir requisitos para identificação unívoca por lote, unidade e fabricante.
+c) Propor um esquema de consulta pública do selo com validação digital.
+d) Avaliar a integração com QR code, assinatura digital ou outros mecanismos de autenticação.
+17.3.4. Eixo 4 – Administração dos recursos de numeração
+17.3.4.1. Meta 5: Construir uma estimativa de demanda de numeração para o Serviço de Comunicação Multimídia (SCM) - projetar consumo futuro de recursos de numeração com base em mercado e serviços, segmentado por CN (Código Nacional)
+a) Levantar séries históricas e dados de base sobre Serviço Telefônico Fixo Comutado (STFC), SCM e outros serviços relevantes.
+b) Realizar survey amostral com prestadoras de SCM para medir intenção e necessidade de numeração.
+c) Modelar cenários de crescimento para voz, vídeo, dados, M2M e IoT.
+d) Considerar também os recursos de numeração de rede necessários para prestação do SCM, tais como RN1, RN2, RN3, EOT, etc.
+Coaduno-me com as justificativas apresentadas pela SOR para a celebração do TED, porquanto a proposta se mostra adequada ao enfrentamento de desafios regulatórios concretos e atuais da Agência, relacionados à comercialização de produtos não homologados em marketplaces, à avaliação da conformidade de data centers, à modernização da rastreabilidade de produtos e à administração eficiente dos recursos de numeração. As entregas previstas — que incluem estudos técnicos, benchmarks internacionais, indicadores de risco, painéis analíticos e recomendações regulatórias — tendem a fortalecer a capacidade de monitoramento, diagnóstico e tomada de decisão da Anatel, além de contribuir para a transferência de tecnologia e para o aprimoramento de sua capacidade preditiva diante da evolução do setor de telecomunicações. 
+Nesse contexto, a parceria com a UFPB, por intermédio do LAVID, revela-se compatível com a natureza e a complexidade do projeto, diante da experiência acadêmica e técnica da instituição nas áreas de inteligência analítica, engenharia de dados, segurança digital e desenvolvimento de sistemas complexos.
+A Declaração de Capacidade Técnica (SEI nº 15777359) e a Declaração de Compatibilidade de Custos (SEI nº 15777361) observam os requisitos previstos nos arts. 7º e 11 do Decreto nº 10.426/2020.
+Sobre a disponibilidade orçamentária, o Gerente de Finanças, Orçamento e Arrecadação, no uso de suas atribuições legais e regulamentares, em especial ao disposto no art. 238, inciso I, do RIA, bem como no exercício da atividade delegada de ordenador de despesas, consoante o art. 1º, da Portaria nº 2.893, de 04 de setembro de 2024, e tendo em vista o os valores registrados no Sistema Valor, Identificador de Despesa (ID) 03795, com Classificação Funcional Programática (Projeto/Atividade) 24.722.2305.20ZD.0001, Relatório SEI nº 15905280, atestou, por meio da Declaração (SEI nº 15904941), "a existência de disponibilidade orçamentária referente ao exercício de 2026, no valor de R$ 1.000.000,00 (um milhão de reais)".
+Quanto ao desembolso dos valores por esta unidade descentralizadora, prevê-se que se dará de forma única, no exercício de 2026, conforme a Declaração acima citada, no mês de outubro - após a assinatura do instrumento -, nos termos indicados no item 23 - "Cronograma de Desembolso" do Plano de Trabalho anexo à Minuta de TED (SEI nº 16058936).
+O Plano de Aplicação Consolidado distribui o valor em R$ 810.000,00 para outros serviços de terceiros - pessoa jurídica, R$ 90.000,00 para despesas operacionais e administrativas da fundação de apoio e R$ 100.000,00 para ressarcimento de custos indiretos da UFPB. Os custos indiretos totalizam R$ 190.000,00, correspondentes a 19% do valor global, portanto inferiores ao limite de 20% previsto no art. 8º, § 2º, do Decreto nº 10.426/2020, conforme atestado no Check List de Análise (SEI nº 16001829).
+A Minuta não autoriza subdescentralização a outro órgão ou entidade da administração pública federal. A execução dos créditos poderá ocorrer de forma descentralizada por meio de fundação de apoio regida pela Lei nº 8.958/1994, solução expressamente prevista no Plano de Trabalho. Também foi assinalado que o objeto não contempla a aquisição, produção ou construção de bens remanescentes.
+No tocante ao sigilo e à proteção de dados, a AFCA registrou que a ausência de cláusulas específicas foi justificada no Ofício nº 91/2026/SOR (SEI nº 15971515), segundo o qual o ajuste não envolve tratamento de dados pessoais. Sem prejuízo disso, o Plano de Trabalho determina a observância da legislação de proteção de dados e prevê medidas de anonimização e segurança quando pertinentes às bases técnicas utilizadas.
+A análise formal identificou a aprovação prévia do Plano de Trabalho pelas Unidades Descentralizadora e Descentralizada; a disponibilidade orçamentária; as Declarações de Capacidade Técnica e de Compatibilidade de Custos; a manifestação favorável da ARI; a utilização dos modelos padronizados; e a indicação, em Minuta de Portaria de Pessoal (SEI nº 15957995), dos agentes responsáveis pelo acompanhamento junto à área gestora.
+No que se refere à celebração do TED, a AFCA alerta que será formalizado no Portal Transferegov.br. pela área interessada e que "os atos serão realizados naquele sistema por agentes designados após as análises e tomadas de decisão proferidas nos presentes autos, pelas autoridades competentes", em observância ao que dispõe o art. 1º da Portaria SEGES/ME nº 13.405, de 1º de dezembro de 2021 e o art. 18 do Decreto nº 11.271/2022:
+Portaria SEGES/ME nº 13.405/2021:
+Art. 1º Os termos de execução descentralizada - TED, celebrados a partir de 1º de janeiro de 2022, deverão ser operacionalizados na Plataforma +Brasil.
+Decreto nº 11.271/2022:
+Art. 18. As informações, os dados e os cadastros das parcerias e dos beneficiários registrados na Plataforma +Brasil na data da publicação deste Decreto serão automaticamente transferidos para o Transferegov.br.
+A SOR será a unidade responsável pelo acompanhamento da execução do objeto, do cronograma e das entregas, bem como pela adoção das providências necessárias ao adequado aproveitamento da parceria. Assim, pós a assinatura, caberá à SOR instruir a execução, promover os registros necessários e encaminhar os autos à AFFO para a descentralização dos recursos conforme o cronograma.
+Quanto à adequabilidade dos valores atribuídos a cada produto, não cabe a este Conselho Diretor substituir a avaliação técnica das unidades competentes. O art. 6º do Decreto nº 10.426/2020 atribui à unidade descentralizadora a análise, a aprovação e o acompanhamento do Plano de Trabalho, ao passo que o art. 7º impõe à unidade descentralizada o dever de executar os créditos, zelar pela aplicação regular dos recursos e apresentar a documentação comprobatória. Segundo disposição expressa contida no art. 6º do Decreto nº 10.426/2020, cabe à Anatel, como unidade descentralizadora, in verbis:
+Art. 6º Compete à unidade descentralizadora:
+I - analisar e aprovar os pedidos de descentralização de créditos;
+II - analisar, aprovar e acompanhar a execução do plano de trabalho;
+III - descentralizar os créditos orçamentários;
+IV - repassar os recursos financeiros em conformidade com o cronograma de desembolso;
+V - aprovar a prorrogação da vigência do TED ou realizar sua prorrogação, de ofício, quando necessário, nos termos do disposto no art. 10;
+VI - aprovar as alterações no TED;
+VII - solicitar relatórios parciais de cumprimento do objeto ou outros documentos necessários à comprovação da execução do objeto, quando necessário;
+VIII - analisar e manifestar-se sobre o relatório de cumprimento do objeto apresentado pela unidade descentralizada; e
+IX - instaurar tomada de contas especial, quando cabível.
+De outro prisma, o art. 7º estabelece as competências da unidade descentralizada:
+Art. 7º Compete à unidade descentralizada:
+I - elaborar e apresentar o plano de trabalho;
+II - apresentar a declaração de capacidade técnica necessária à execução do objeto;
+III - apresentar a declaração de compatibilidade de custos;
+IV - executar os créditos orçamentários descentralizados e os recursos financeiros recebidos;
+V - aprovar as alterações no TED;
+VI - encaminhar à unidade descentralizadora:
+a) relatórios parciais de cumprimento do objeto, quando solicitado; e
+b) o relatório final de cumprimento do objeto;
+VII - zelar pela aplicação regular dos recursos recebidos e assegurar a conformidade dos documentos, das informações e dos demonstrativos de natureza contábil, financeira, orçamentária e operacional;
+VIII - citar a unidade descentralizadora quando divulgar dados, resultados e publicações referentes ao objeto do TED, quando necessário; e
+IX - instaurar tomada de contas especial, quando necessário, e dar conhecimento dos fatos à unidade descentralizadora.
+Logo, a presente análise se restringiu à aprovação da conveniência e da oportunidade da realização de despesa pública e à autorização para a celebração do TED, no valor total de R$ 1.000.000,00 (um milhão de reais), tendo em vista a relevância do projeto para a Agência. A análise de tais requisitos demanda deste Colegiado o exame dos fatos, fundamentos e justificativas para que se forme adequado juízo de valor acerca da autorização para a celebração do presente TED. Trata-se, em verdade, de avaliação do mérito administrativo na prática do ato de autorização para descentralização dos créditos orçamentários pretendida, e, portanto, demanda uma análise de aspectos fáticos e a ocorrência da subsunção do fato à norma para se decidir se haverá benefício para Anatel na realização da parceria pretendida, objeto do TED.
+Caberá à unidade descentralizada, no entanto, zelar pela aplicação regular dos recursos recebidos e assegurar a conformidade dos documentos, das informações e dos demonstrativos de natureza contábil, financeira, orçamentária e operacional, nos termos do que prevê o art. 7º, VII, acima transcrito. Reforça a responsabilidade da unidade descentralizada em zelar pelo recurso efetivamente descentralizado o que prevêem os §§ 1º, 2º e 3º desse mesmo dispositivo do Decreto. Segundo tais previsões, o saldo dos créditos orçamentários descentralizados e não empenhados deverá ser devolvido à unidade descentralizadora até quinze dias antes da data estabelecida para encerramento do exercício financeiro; após o encerramento do TED ou da conclusão da execução do objeto, o que ocorrer primeiro, os créditos orçamentários e os recursos financeiros serão devolvidos no prazo de trinta dias, contado da data do encerramento ou da conclusão, e caberá à unidade descentralizada apresentar aos órgãos de controle e à unidade descentralizadora documentação que comprove a aplicação regular dos recursos financeiros, conforme se transcreve:
+Art. 7º (...)
+(...)
+§ 1º Os saldos dos créditos orçamentários descentralizados e não empenhados e os recursos financeiros não utilizados serão devolvidos à unidade descentralizadora até quinze dias antes da data estabelecida para encerramento do exercício financeiro.
+§ 2º Após o encerramento do TED ou da conclusão da execução do objeto, o que ocorrer primeiro, os créditos orçamentários e os recursos financeiros serão devolvidos no prazo de trinta dias, contado da data do encerramento ou da conclusão.
+§ 3º A unidade descentralizada disponibilizará os documentos comprobatórios da aplicação regular dos recursos aos órgãos de controle e à unidade descentralizadora.
+Desse modo, caberá ao Conselho Diretor unicamente aprovar a realização da despesa pública, mediante a descentralização de recursos, objeto da presente análise, e a conveniência e a oportunidade para a celebração do TED. Ao passo que à unidade descentralizada caberá adotar todas as medidas cabíveis e necessárias para que tais recursos sejam devidamente utilizados, sob pena de responsabilização, nos exatos termos contidos nos §§ 5º e 6º do art. 7º do Decreto nº 10.426/2020:
+Decreto nº 10.426/2020:
+Art. 7º (...)
+§ 5º A unidade descentralizada instaurará a tomada de contas especial, na hipótese de:
+I - identificação de indícios de atos de improbidade que importem enriquecimento ilícito ou que causem lesão ao erário; ou
+II - solicitação da unidade descentralizadora ou dos órgãos de controle, em decorrência da identificação dos indícios a que se refere o inciso I.
+§6º Na hipótese de que trata o inciso II do § 5º, a unidade descentralizada iniciará os procedimentos de instauração da tomada de contas especial no prazo de trinta dias, contado da data do recebimento da comunicação da unidade descentralizadora ou dos órgãos de controle.
+Ante o exposto, julga-se satisfatoriamente concluído o exame dos elementos necessários à deliberação, nos moldes prescritos pela Resolução Interna Anatel nº 214/2023, considerando as justificativas e a motivação apresentadas pela SOR, no sentido de primar pelo interesse público no processo de desenvolvimento tecnológico de um ecossistema de inteligência regulatória e ferramentas de automação voltadas para a modernização do sistema de avaliação da conformidade de produtos para telecomunicações; a aprovação do Plano de Trabalho; o atendimento ao Decreto nº 10.426/2020, em especial o aceite e as Declarações de Capacidade Técnica e de Compatibilidade de Custos pela UFPB, a Declaração de Disponibilidade Orçamentária pela AFFO, e a utilização dos modelos disponíveis no Portal Transferegov.br, bem como pela validação dos aspectos formais pela SAF.
+Assim, sem adentrar o mérito técnico e jurídico do Processo, consistindo o ato de governança na avaliação sobre a conveniência da despesa pública, proponho autorizar a descentralização do crédito para a execução do objeto do instrumento em análise.
+Por fim, é importante que se faça a correlação entre a presente parceria e os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas. Ressalta-se que a Agenda 2030 constitui-se compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. São 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) que a compõem.
+Verifica-se que a proposta de parceria também se correlaciona com o Objetivo de Desenvolvimento Sustentável 16 da Agenda 2030 - Paz, Justiça e Instituições Eficazes, especialmente com as Metas 16.6 e 16.7, ao contribuir para o desenvolvimento de instituições eficazes, responsáveis e transparentes e para a tomada de decisão responsiva e baseada em evidências, conforme assinalado na Matéria para Apreciação do Conselho Diretor nº 541/2026 (SEI nº 16003888).
+CONCLUSÃO
+Diante do exposto, proponho aprovar a conveniência e oportunidade da realização de despesa pública no valor estimado de R$ 1.000.000,00 (um milhão de reais), com desembolso previsto para outubro de 2026, e autorizar a celebração de Termo de Execução Descentralizada (TED), a ser firmado entre a Agência Nacional de Telecomunicações (Anatel) e a Universidade Federal da Paraíba (UFPB), para desenvolvimento tecnológico de um ecossistema de inteligência regulatória e ferramentas de automação voltadas para a modernização do sistema de avaliação da conformidade de produtos para telecomunicações, nos termos da Minuta de Resolução Interna (SEI nº 16078630) e da Minuta de Termo de Execução Descentralizada (TED) e respectivo Plano de Trabalho anexo (SEI nº 16058936).
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/08/2026, às 14:39, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16031379 e o código CRC AA54655F.
+ | 
+Referência: Processo nº 53500.004589/2026-98 | 
+SEI nº 16031379 |

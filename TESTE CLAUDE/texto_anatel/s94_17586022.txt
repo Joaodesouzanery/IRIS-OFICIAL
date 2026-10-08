@@ -1,0 +1,901 @@
+SEI/ANATEL - 15726068 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 68/2026/PR
+Processo nº 53500.013951/2025-31
+Interessado: Agência Nacional de Telecomunicações
+CONSELHEIRO
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Proposta de 5ª Alteração do Plano de Contratações Anual da Anatel para o ano de 2026 (PCA 2026), no que se refere à alteração de projeto com valor superior a R$ 5 milhões (cinco milhões de reais).
+EMENTA
+DIREITO ADMINISTRATIVO. GOVERNANÇA DAS CONTRATAÇÕES PÚBLICAS. PLANO DE CONTRATAÇÕES ANUAL DA ANATEL PARA O ANO DE 2026. 5ª ALTERAÇÃO. INCLUSÕES, EXCLUSÕES E REDIMENSIONAMENTOS DE PROJETOS. PROJETO COM VALOR SUPERIOR AO LIMITE DE ALÇADA DA SUPERINTENDÊNCIA DE ADMINISTRAÇÃO E FINANÇAS. COMPETÊNCIA DO CONSELHO DIRETOR. CONSULTORIA ESPECIALIZADA PARA APRIMORAMENTO E DESENVOLVIMENTO DE METODOLOGIA DE PRECIFICAÇÃO DE MODELOS DE NEGÓCIOS DE TELECOMUNICAÇÕES E ESPECTRO DE RADIOFREQUÊNCIA. ATENDIMENTO À DETERMINAÇÃO DO TRIBUNAL DE CONTAS DA UNIÃO. APROVAÇÃO.
+I. CASO EM EXAME
+ Proposta de 5ª Alteração do Plano de Contratações Anual da Anatel para o ano de 2026 (PCA 2026), instruída pelo Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927) e encaminhada ao Conselho Diretor por meio da Matéria para Apreciação do Conselho Diretor nº 399/2026 (SEI nº 15669774).
+ A alteração decorre de solicitações encaminhadas pelas áreas requisitantes da Agência no período de 1º/4/2026 a 8/5/2026, abrangendo inclusões, exclusões e redimensionamentos de projetos, conforme documentação consolidada pela Superintendência de Administração e Finanças (SAF).
+ Após a 5ª Alteração, o PCA 2026 passará a contar com 292 (duzentos e noventa e dois) projetos, no valor total de R$ 203.508.809,65 (duzentos e três milhões, quinhentos e oito mil oitocentos e nove reais e sessenta e cinco centavos), sendo 194 (cento e noventa e quatro) novos projetos, no total de R$ 100.443.784,80 (cem milhões, quatrocentos e quarenta e três mil setecentos e oitenta e quatro reais e oitenta centavos), e 98 (noventa e oito) prorrogações, no total de R$ 103.065.024,85 (cento e três milhões, sessenta e cinco mil vinte e quatro reais e oitenta e cinco centavos).
+ A única alteração submetida à deliberação do Conselho Diretor refere-se à inclusão, pela Superintendência de Competição (SCP), de projeto de contratação de consultoria especializada para aprimoramento e desenvolvimento de metodologia de precificação de modelos de negócios de telecomunicações e espectro de radiofrequência, no valor estimado de R$ 7.000.000,00 (sete milhões de reais), em atendimento à determinação constante do item 9.2.2 do Acórdão nº 276/2026-TCU-Plenário, no âmbito do TC 015.833/2025-9.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se a proposta de alteração do PCA 2026 observou o procedimento de governança aplicável às alterações do Plano de Contratações Anual; (ii) saber se compete ao Conselho Diretor deliberar sobre a inclusão do projeto com valor superior a R$ 5 milhões; e (iii) saber se a inclusão do projeto de consultoria especializada para aprimoramento e desenvolvimento de metodologia de precificação está devidamente justificada e apta à aprovação.
+III. RAZÕES DE DECIDIR
+ O PCA constitui instrumento de governança destinado a racionalizar as contratações sob competência da Agência, assegurar alinhamento ao planejamento estratégico e subsidiar a elaboração da respectiva lei orçamentária.
+ A 5ª Alteração do PCA 2026 foi instruída pela Gerência de Aquisições e Contratos (AFCA) e submetida à Superintendência de Administração e Finanças (SAF), com posterior manifestação da Comissão de Gestão Executiva (CGE), nos termos do inciso II do art. 16 da Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel.
+ O Superintendente de Administração e Finanças aprovou, por meio da Portaria nº 3161, de 20 de maio de 2026 (SEI nº 15668691), as 37 (trinta e sete) alterações informadas no período de 1º/4/2026 a 8/5/2026, submetendo ao Conselho Diretor apenas a alteração cujo valor supera o limite de alçada de R$ 5 milhões.
+ A competência do Conselho Diretor decorre do art. 24, § 3º, da Norma de Planejamento das Contratações no âmbito da Anatel, aprovada pela Resolução Interna nº 208, de 18 de maio de 2023, combinado com o art. 7º, § 3º, inciso I, da Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, aprovada pela Resolução Interna nº 214, de 23 de maio de 2023.
+ A inclusão do projeto de consultoria especializada, no valor estimado de R$ 7.000.000,00, encontra-se fundamentada na necessidade de aprimoramento e desenvolvimento de metodologia de precificação de modelos de negócios de telecomunicações e espectro de radiofrequência disponível para a Anatel, em atendimento à determinação 9.2.2 do Tribunal de Contas da União no Acórdão nº 276/2026-TCU-Plenário, no âmbito do TC 015.833/2025-9.
+ A alteração proposta insere-se no âmbito ordinário de ajustes do Plano de Contratações Anual, cuja elaboração ocorre com antecedência em relação à execução, sendo natural e juridicamente previsto que o planejamento possa ser revisado para melhor aderência à realidade fática e às necessidades institucionais.
+IV. DISPOSITIVO E TESE
+ Proposta aprovada.
+Tese de julgamento: “1. O Plano de Contratações Anual constitui instrumento de governança destinado a racionalizar as contratações públicas, assegurar aderência ao planejamento institucional e subsidiar a elaboração orçamentária. 2. As alterações do PCA, quando devidamente justificadas, constituem mecanismo legítimo de adequação do planejamento à realidade fática e às necessidades supervenientes da Administração. 3. Compete ao Conselho Diretor deliberar sobre inclusão, exclusão ou redimensionamento de projeto inserido no PCA quando o valor da contratação for igual ou superior a R$ 5 milhões, nos termos das normas internas de planejamento e governança das contratações da Anatel. 4. A inclusão de projeto destinado ao aprimoramento de metodologia de precificação de modelos de negócios de telecomunicações e espectro de radiofrequência mostra-se compatível com o interesse institucional quando vinculada ao cumprimento de determinação do Tribunal de Contas da União.”
+Dispositivos relevantes citados: Decreto nº 10.947, de 25 de janeiro de 2022; Resolução Interna nº 208, de 18 de maio de 2023; Resolução Interna nº 214, de 23 de maio de 2023; Resolução Interna nº 38, de 9 de agosto de 2021; Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, art. 133, incisos II, XIX e XX.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Decreto nº 10.947, de 25 de janeiro de 2022, que regulamenta o inciso VII do caput do art. 12 da Lei nº 14.133, de 1º de abril de 2021, para dispor sobre o plano de contratações anual e instituir o Sistema de Planejamento e Gerenciamento de Contratações no âmbito da administração pública federal direta, autárquica e fundacional.
+Resolução Interna nº 214, de 23 de maio de 2023, que aprova a Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel).
+Resolução Interna nº 208, de 18 de maio de 2023, que aprova a Norma de Planejamento das Contratações no âmbito da Agência Nacional de Telecomunicações (Anatel).
+Resolução Interna nº 38, de 09 de agosto de 2021, que aprova a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Agência Nacional de Telecomunicações (PGGR).
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Resolução Interna nº 424, de 11 de abril de 2025 (SEI nº 13557170), que aprova o Plano de Contratações Anual para o exercício de 2026 (PCA 2026).
+Informe nº 18/2026/AFCA2/AFCA/SAF - Proposta de 5ª Alteração do PCA 2026 (SEI nº 15537927).
+Despacho Ordinatório SAF - Encaminha à CGE a Alteração do PCA 2026 (SEI nº 15613956).
+Despacho CGE - Apreciação da 5ª Alteração do PCA (SEI nº 15660275).
+Portaria nº 3161, de 20 de maio de 2026 (SEI nº 15668691) - 5ª Alteração do PCA 2026.
+Matéria para Apreciação do Conselho Diretor nº 399/2026 (SEI nº 15669774).
+Minuta de Resolução Interna - 5ª Alteração do PCA 2026 (SEI nº 15669719).
+RELATÓRIO
+DOS FATOS
+Trata-se de análise da proposta de 5ª Alteração do Plano de Contratações Anual da Anatel para o ano de 2026 (PCA 2026), no que se refere à alteração de projeto com valor superior a R$ 5 milhões (cinco milhões de reais), submetida à apreciação do Conselho Diretor, nos termos da Norma de Planejamento das Contratações no âmbito da Agência Nacional de Telecomunicações, aprovada pela Resolução Interna nº 208, de 18 de maio de 2023, e da Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Anatel, aprovada pela Resolução Interna nº 214, de 23 de maio de 2023. 
+O Plano de Contratações Anual constitui instrumento de governança, elaborado anualmente, contendo as contratações que se pretende realizar, com o objetivo de racionalizar as contratações sob competência da Administração, assegurar o alinhamento com o planejamento estratégico e subsidiar a elaboração da respectiva lei orçamentária. Conforme disposto no art. 15 do Decreto nº 10.947, de 25 de janeiro de 2022, durante o ano de elaboração, o Plano de Contratações Anual poderá ser revisado e alterado por meio de inclusão, exclusão ou redimensionamento de itens no período de 15 de setembro a 15 de novembro, com o objetivo de adequar o planejamento à proposta orçamentária da entidade.
+No Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), a Superintendência de Administração e Finanças (SAF) ressalta que, ainda que os sistemas do Ministério da Economia não englobem as prorrogações contratuais pretendidas para o ano de execução do PCA, a Anatel tem optado por fazer constar no Plano também as prorrogações contratuais, com a finalidade de aprimorar a gestão das contratações da Agência e consolidar, em um único instrumento, todos os processos de contratação previstos para cada exercício.
+O PCA 2026 foi aprovado pela Resolução Interna nº 424, de 11 de abril de 2025 (SEI nº 13557170), contemplando, inicialmente, 234 (duzentos e trinta e quatro) projetos, no valor total de R$ 166.080.780,08 (cento e sessenta e seis milhões, oitenta mil setecentos e oitenta reais e oito centavos), sendo 91 (noventa e uma) novas contratações, no valor de R$ 42.506.490,67 (quarenta e dois milhões, quinhentos e seis mil quatrocentos e noventa reais e sessenta e sete centavos), e 143 (cento e quarenta e três) prorrogações, no valor de R$ 123.574.289,41 (cento e vinte e três milhões, quinhentos e setenta e quatro mil duzentos e oitenta e nove reais e quarenta e um centavos).
+ Após sucessivas alterações, a 4ª Alteração do PCA 2026, aprovada pela Portaria nº 3152 (SEI nº 15520685), consolidou o Plano em 289 (duzentos e oitenta e nove) projetos, no valor total de R$ 196.442.595,64 (cento e noventa e seis milhões, quatrocentos e quarenta e dois mil quinhentos e noventa e cinco reais e sessenta e quatro centavos), sendo 183 (cento e oitenta e três) novas contratações, no valor de R$ 92.817.858,79 (noventa e dois milhões, oitocentos e dezessete mil oitocentos e cinquenta e oito reais e setenta e nove centavos), e 106 (cento e seis) prorrogações, no valor de R$ 103.624.736,85 (cento e três milhões, seiscentos e vinte e quatro mil setecentos e trinta e seis reais e oitenta e cinco centavos).
+A 5ª Alteração do PCA 2026, em análise, abrange as solicitações de alterações de projetos encaminhadas pelas áreas requisitantes da Agência no período de 1º de abril de 2026 a 8 de maio de 2026, autuadas, para melhor organização da documentação, no Processo nº 53500.028351/2025-77.
+Nos termos do Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), as alterações compreendem 15 (quinze) inclusões, 12 (doze) exclusões e 11 (onze) redimensionamentos de projetos.
+A Gerência de Aquisições e Contratos (AFCA) consignou que todas as inclusões e redimensionamentos apresentam data desejada para conclusão posterior ao Informe, não havendo indicação de incompatibilidade temporal com a tramitação da proposta.
+Em sendo aprovada a presente alteração, o PCA 2026 contará com 292 (duzentos e noventa e dois) projetos, no valor total de R$ 203.508.809,65 (duzentos e três milhões, quinhentos e oito mil oitocentos e nove reais e sessenta e cinco centavos), distribuídos da seguinte forma:
+194 (cento e noventa e quatro) novos projetos, totalizando R$ 100.443.784,80 (cem milhões, quatrocentos e quarenta e três mil setecentos e oitenta e quatro reais e oitenta centavos); e
+98 (noventa e oito) prorrogações, totalizando R$ 103.065.024,85 (cento e três milhões, sessenta e cinco mil vinte e quatro reais e oitenta e cinco centavos).
+A Comissão de Gestão Executiva (CGE), em atenção ao disposto no inciso II do art. 16 da Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Agência Nacional de Telecomunicações, aprovada pela Resolução Interna nº 38, de 9 de agosto de 2021, manifestou-se por meio do Despacho Ordinatório (SEI nº 15660275), não tendo apresentado contribuição adicional em relação ao Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927).
+Por meio da Portaria nº 3161, de 20 de maio de 2026 (SEI nº 15668691), o Superintendente de Administração e Finanças, no uso das atribuições conferidas pelo art. 24, § 3º, da Norma de Planejamento das Contratações no âmbito da Anatel, aprovada pela Resolução Interna nº 208, de 18 de maio de 2023, aprovou a 5ª Alteração do PCA 2026, no que se refere às 37 (trinta e sete) alterações solicitadas pelas áreas técnicas, no período de 1º de abril de 2026 a 8 de maio de 2026, cujos valores estão abaixo do limite de alçada deste Conselho Diretor.
+No âmbito da instrução, a SAF identificou uma única alteração de projeto com valor superior ao limite de alçada de R$ 5 milhões (cinco milhões de reais), submetida, por essa razão, à apreciação do Conselho Diretor.
+Trata-se da inclusão, pela Superintendência de Competição (SCP), de projeto de contratação de consultoria especializada para aprimoramento e desenvolvimento de metodologia de precificação de modelos de negócios de telecomunicações e espectro de radiofrequência disponível para a Anatel, no valor estimado de R$ 7.000.000,00 (sete milhões de reais), com data desejada para 30 de novembro de 2026.
+Conforme justificativa constante do Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), a contratação visa atender à determinação 9.2.2 do Tribunal de Contas da União (TCU), constante do Acórdão nº 276/2026-TCU-Plenário, no âmbito do TC 015.833/2025-9.
+Assim, a Matéria para Apreciação do Conselho Diretor nº 399/2026 (SEI nº 15669774) submete a este Colegiado a única alteração de projeto cujo valor supera o limite de alçada fixado nas normas internas de governança das contratações, dando-se ciência das demais alterações aprovadas pela SAF.
+É o relatório.
+DA COMPETÊNCIA
+Inicialmente, mister destacar que este Conselho Diretor aprovou a Norma de Planejamento das Contratações no âmbito da Agência Nacional de Telecomunicações (Anatel), por meio da Resolução Interna nº 208, de 18 de maio de 2023, com a finalidade de estabelecer diretrizes e orientações para elaboração, revisão e acompanhamento do PCA da Anatel.
+De acordo com o art. 24 da referida Norma, durante o ano de sua elaboração, o PCA poderá ser revisado e alterado, por meio de justificativa aprovada pela autoridade competente, observado o cronograma estabelecido anualmente pela SAF. 
+O § 2º do referido dispositivo dispõe que as alterações serão realizadas pela SAF e informadas trimestralmente ao Conselho Diretor.
+Todavia, o § 3º estabelece que, no caso de inclusão, exclusão ou redimensionamento de projetos inseridos no PCA aprovado cujo valor de contratação seja igual ou superior ao limite fixado para análise do Conselho Diretor, a SAF deverá adotar o mesmo procedimento previsto para aprovação do Plano, nos termos do art. 15 da mesma Norma.
+Por sua vez, a Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, aprovada pela Resolução Interna nº 214, de 23 de maio de 2023, estabelece, no art. 7º, § 3º, inciso I, que a aprovação da conveniência e oportunidade das contratações compete ao Conselho Diretor quando o valor for igual ou superior a R$ 5.000.000,00 (cinco milhões de reais).
+Ademais, o art. 133, incisos II, XIX e XX, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, dispõe competir ao Conselho Diretor, entre outras atribuições, aprovar normas de licitação e contratação próprias da Agência, deliberar sobre a aquisição e alienação de bens da Agência e autorizar a contratação de serviços de terceiros, na forma da legislação em vigor.
+Assim, considerando que a alteração submetida à apreciação deste Colegiado refere-se à inclusão de projeto no PCA 2026 com valor estimado de R$ 7.000.000,00 (sete milhões de reais), resta configurada a competência do Conselho Diretor para deliberar sobre a matéria.
+DA ANÁLISE
+Conforme exposto, a presente proposta trata da 5ª Alteração do PCA 2026, instrumento de planejamento e governança das contratações da Agência, cuja finalidade é racionalizar as contratações, assegurar alinhamento ao planejamento estratégico e subsidiar a elaboração orçamentária.
+A possibilidade de alteração do PCA encontra respaldo expresso no art. 24 da Norma de Planejamento das Contratações no âmbito da Anatel, desde que acompanhada de justificativa aprovada pela autoridade competente e observados os procedimentos de governança aplicáveis.
+A tabela a seguir, transcrita do Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), apresenta o histórico das alterações relativas ao PCA 2026:
+Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927):
+Tabela 1 - Histórico de Projetos constantes do PCA 2026
+ Versão do PCA 2026
+ | 
+ Projetos
+ | 
+ Novas contratações
+ | 
+ Prorrogações
+ | 
+ Total
+ | 
+ Quant.
+ | 
+ Valor (R$)
+ | 
+ Quant.
+ | 
+ Valor (R$)
+ | 
+ Quant.
+ | 
+ Valor (R$)
+ | 
+ Aprovação
+ abr/25
+ | 
+ Resolução Interna
+ | 
+ 424
+ SEI nº 13557170
+ | 
+ 91
+ | 
+ 42.506.490,67
+ | 
+ 143
+ | 
+ 123.574.289,41
+ | 
+ 234
+ | 
+ 166.080.780,08
+ | 
+ Revisão
+ nov/25
+ | 
+ Portaria
+ | 
+ 3065
+ SEI nº 14555377
+ | 
+ 137
+ | 
+ 74.714.417,40
+ | 
+ 119
+ | 
+ 108.789.818,25
+ | 
+ 256
+ | 
+ 183.509.235,65
+ | 
+ Resolução Interna
+ | 
+ 491
+ SEI nº 14685453
+ | 
+ 1ª Alteração
+ jan/25
+ | 
+ Portaria
+ | 
+ 3121
+ SEI nº 15098228
+ | 
+ 141
+ | 
+ 69.581.659,20
+ | 
+ 121
+ | 
+ 113.958.538,79
+ | 
+ 260
+ | 
+ 183.540.197,99
+ | 
+ 2ª Alteração
+ fev/25
+ | 
+ Portaria
+ | 
+ 3126
+ SEI nº 15179423
+ | 
+ 148
+ | 
+ 69.709.509,20
+ | 
+ 117
+ | 
+ 114.040.763,99
+ | 
+ 265
+ | 
+ 183.750.273,19
+ | 
+ 3ª Alteração
+ mar/25
+ | 
+ Portaria
+ | 
+ 3135
+ SEI nº 15307031
+ | 
+ 164
+ | 
+ 87.360.395,79
+ | 
+ 109
+ | 
+ 104.802.537,75
+ | 
+ 272
+ | 
+ 192.162.933,54
+ | 
+ 4ª Alteração
+ mar/25
+ | 
+ Portaria
+ | 
+ 3152
+ SEI nº 15520685
+ | 
+ 183
+ | 
+ 92.817.858,79
+ | 
+ 106
+ | 
+ 103.624.736,85
+ | 
+ 289
+ | 
+ 196.442.595,64
+ | 
+As alterações que compõem a 5ª Alteração do PCA 2026 foram consolidadas pela AFCA/SAF, conforme Tabela a seguir transcrita do Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), e submetidas à análise da CGE, a qual consignou o resultado dos encaminhamentos, mediante o Despacho Ordinatório (SEI nº 15660275), sem registro de contribuições.
+Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927):
+Tabela 2 - Pedidos de alteração por Área Requisitante
+ Área Gestora
+ | 
+ Alteração
+ | 
+ Tipo
+ | 
+ Objeto
+ | 
+ Valor Total
+ da Contratação (R$)
+ | 
+ Data Desejada
+ | 
+ Justificativa
+ | 
+ Recomendação
+ | 
+ SEI
+ | 
+ SAF
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Coleta e Reciclagem de Resíduos
+ | 
+ 4.140,00
+ | 
+ 08/06/2026
+ | 
+ A inclusão do projeto no PCA marca um avanço nas iniciativas de sustentabilidade da Anatel, alinhado ao Plano de Gerenciamento de Resíduos Sólidos (PGRS), que está em fase de elaboração.
+ | 
+ Aprovar
+ | 
+ 15493225
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Plataforma digital integrada de qualidade de vida e bem-estar
+ | 
+ 88.842,00
+ | 
+ 01/06/2026
+ | 
+ Trata-se de oportunidade de contratação de serviços de implantação e implementação de plataforma digital integrada de qualidade de vida e bem-estar
+ | 
+ Aprovar
+ | 
+ 15603120
+ | 
+ SCP
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Consultoria especializada para aprimoramento e desenvolvimento de metodologia para precificação
+ | 
+ 7.000.000,00
+ | 
+ 30/11/2026
+ | 
+ Aprimoramento e desenvolvimento da metodologia de precificação de modelos de negócios de telecomunicações e espectro de radiofrequência disponível para a Anatel, em atendimento de determinação 9.2.2 do Tribunal de Contas da União - TCU no Acórdão nº 276/2026-TCU-Plenário, no âmbito do TC 015.833/2025-9
+ | 
+ Aprovar
+ | 
+ 15319575
+ | 
+ SGI
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ IDT068 Suporte técnico e atualização do SAS Viya (SAS Detection and Investigation - SDI)
+ | 
+ 405.646,92
+ | 
+ 30/10/2026
+ | 
+ Alteração da Data Desejada, considerando o cronograma interno de instrução, a tramitação da fase preparatória e a necessidade de recomposição da cobertura contratual da solução. Alteração do valor da Contratação, conforme Documento de Formalização de Demanda (DFD)
+ | 
+ Aprovar
+ | 
+ 15546370
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ IDT0024 Solução de segurança para endpoint e serviço de AntiSpam
+ | 
+ 3.741.620,00
+ | 
+ 27/12/2026
+ | 
+ Alteração da Data desejada, considerando o término da vigência do atual contrato
+ | 
+ Aprovar
+ | 
+ 15551740
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Manutenção dos arquivos deslizantes do Arquivo Geral da Anatel
+ | 
+ 350.000,04
+ | 
+ 30/09/2026
+ | 
+ Alteração da Data Desejada, considerando o cronograma interno de instrução, e a tramitação da fase preparatória
+ | 
+ Aprovar
+ | 
+ 15551740
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Aquisição de carrinhos plataforma com grade para transporte de caixas-arquivo
+ | 
+ 7.500,00
+ | 
+ 30/09/2026
+ | 
+ Alteração da Data Desejada, considerando o cronograma interno de instrução, e a tramitação da fase preparatória
+ | 
+ Aprovar
+ | 
+ 15551740
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Solução de gerenciamento de acesso privilegiado (Senha Segura)
+ | 
+ 3.567.500,00
+ | 
+ 31/05/2026
+ | 
+ Alteração da Data Desejada, considerando o cronograma interno de instrução, e a tramitação da fase preparatória.
+ | 
+ Aprovar
+ | 
+ 15551740
+ | 
+ SUE
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Consultoria especializada para fornecimento à Anatel de Informações de Crowdsource
+ | 
+ 4.032.000,00
+ | 
+ 15/09/2026
+ | 
+ Alteração da Data Desejada, considerando o cronograma interno de estudo de viabilidade técnica, e a tramitação da fase preparatória.
+ | 
+ Aprovar
+ | 
+ 15586866
+ | 
+ GR01
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Energia elétrica site Guarulhos
+ | 
+ 4.000,00
+ | 
+ 26/08/2026
+ | 
+ Inclusão de novo site.
+ | 
+ Aprovar
+ | 
+ 15431641
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviços de Buffet
+ | 
+ 45.000,00
+ | 
+ 29/07/2026
+ | 
+ Cancelamento da prorrogação.
+ | 
+ Aprovar
+ | 
+ 15506350
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Serviço de Buffet para a GR01
+ | 
+ 25.000,00
+ | 
+ 27/06/2026
+ | 
+ Desinteresse do fornecedor na prorrogação.
+ | 
+ Aprovar
+ | 
+ 15506350
+ | 
+ GR02
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviço de Fornecimento de Coffee Break
+ | 
+ 28.000,00
+ | 
+ 10/06/2026
+ | 
+ Demanda apresentada pela equipe de fiscalização posteriormente à elaboração do Plano de Contratações Anual da Anatel - PCA/2026.
+ | 
+ Aprovar
+ | 
+ 15499908
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Aquisição de Mastros e Bandeiras do Rio de Janeiro para a GR02
+ | 
+ 4.300,90
+ | 
+ 16/06/2026
+ | 
+ Suprir a necessidade da Gerência Regional no Estado do Rio de Janeiro - GR02.
+ | 
+ Aprovar
+ | 
+ 15499908
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviço de instalação/desinstalação de antena de radiomonitoramento Galeão
+ | 
+ 30.000,00
+ | 
+ 17/08/2026
+ | 
+ Demanda apresentada pela equipe de fiscalização posteriormente à elaboração do Plano de Contratações Anual da Anatel - PCA/2026.
+ | 
+ Aprovar
+ | 
+ 15499908
+ | 
+ Exclusão
+ | 
+ Nova Contratação
+ | 
+ Apoio Administrativo
+ | 
+ 120.000,00
+ | 
+ 01/09/2026
+ | 
+ O serviço está sendo realizados pelos próprios servidores.
+ | 
+ Aprovar
+ | 
+ 15533948
+ | 
+ Exclusão
+ | 
+ Nova Contratação
+ | 
+ Vigilância eletrônica/monitorada ERM Niterói
+ | 
+ 16.000,00
+ | 
+ 17/08/2026
+ | 
+ Encerramento da Cessão de Uso da ERM Niterói.
+ | 
+ Aprovar
+ | 
+ 15533948
+ | 
+ GR03
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviços de Recepção para a sede da Anatel em Curitiba/PR
+ | 
+ 540.960,00
+ | 
+ 16/11/2026
+ | 
+ Necessidade do aumento do quantitativo de serviços, o que impede a prorrogação do Contrato vigente.
+ | 
+ Aprovar
+ | 
+ 15495774
+ | 
+ Exclusão
+ | 
+ Nova Contratação
+ | 
+ Aplicação de Camada Asfáltica sobre o Pavimento do Pátio da GR03 em Curitiba/PR
+ | 
+ 40.000,00
+ | 
+ 30/11/2026
+ | 
+ Não será realizada em 2026 para otimização da implantação da nova cobertura das garagens.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Nova Contratação
+ | 
+ Seguro predial para Florianópolis e Curitiba/PR
+ | 
+ 15.240,00
+ | 
+ 30/09/2026
+ | 
+ Foi possível contratar os seguros já em 2025, com prazo de vigência até 2030.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Copos Plásticos - Paraná e Santa Catarina
+ | 
+ 2.500,00
+ | 
+ 13/08/2026
+ | 
+ Empresa não concordou em prorrogar o Contrato.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Controle de Pragas - Paraná
+ | 
+ 5.040,00
+ | 
+ 14/02/2026
+ | 
+ Não foi possível prorrogar o Contrato em virtude da empresa apresentar irregularidade no CADIN.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Manutenção do Elevador - Paraná
+ | 
+ 9.024,00
+ | 
+ 23/12/2026
+ | 
+ Não foi possível prorrogar o Contrato em virtude da empresa apresentar irregularidade no CADIN.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Auxiliar de Arquivistas - Protocolo - Paraná
+ | 
+ 125.172,00
+ | 
+ 21/08/2026
+ | 
+ Contrato não será prorrogado em virtude dos serviços não serem mais necessários na Anatel em Curitiba/PR
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Recepção - Paraná
+ | 
+ 197.976,00
+ | 
+ 15/11/2026
+ | 
+ Contrato contou, até agora, com 03 recepcionistas. Entretanto, com objetivo de reduzir custos e unificar Contratos, os serviços de protocolo serão realizados também por recepcionistas, passando a ser necessária mais 01 profissional (serão dispensadas 02 auxiliares de arquivistas, o que reduzirá os valores de dispêndio da GR03 em Curitiba/PR). Como não é possível acrescer 01 posto sobre o total de 03 existentes (limitação imposta pela Lei 14.1333/2021), será necessário realizar novo procedimento licitatório para a contratação de mais 01 posto de recepcionista.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Controle de Pragas - Santa Catarina
+ | 
+ 3.000,00
+ | 
+ 14/02/2026
+ | 
+ Não foi possível prorrogar o Contrato em virtude da empresa apresentar irregularidade no CADIN.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ Exclusão
+ | 
+ Prorrogação
+ | 
+ Manutenção das Estações da Fiscalização
+ | 
+ 192.000,00
+ | 
+ 31/10/2026
+ | 
+ Foi possível contratar já em 2025, com prazo de vigência até 2027.
+ | 
+ Aprovar
+ | 
+ 15549435
+ | 
+ GR06
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviço de elaboração de projetos para reforma da UO06.2
+ | 
+ 14.257,13
+ | 
+ 01/06/2026
+ | 
+ A contratação do serviço não estava planejada para 2026, porém entende-se necessária para aprimorar os projetos de reforma da UO06.2.
+ | 
+ Aprovar
+ | 
+ 15536103
+ | 
+ GR08
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Reparo de Instalações Hidráulicas
+ | 
+ 13.098,41
+ | 
+ 30/06/2026
+ | 
+ A presente demanda fundamenta-se na necessidade imperativa de garantir a integridade física das instalações da GR08BA, assegurando um ambiente de trabalho seguro para servidores e usuários.
+ | 
+ Aprovar
+ | 
+ 15499439
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Reparo de Instalações Elétricas
+ | 
+ 13.098,41
+ | 
+ 30/06/2026
+ | 
+ A presente demanda fundamenta-se na necessidade imperativa de garantir a integridade física das instalações da GR08BA, assegurando um ambiente de trabalho seguro para servidores e usuários.
+ | 
+ Aprovar
+ | 
+ 15499439
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviços continuados de apoio administrativo - UO08.1
+ | 
+ 392.189,28
+ | 
+ 01/06/2026
+ | 
+ A terceirização dos serviços propostos permitem à Agência manter o foco nas suas atividades finalísticas
+ | 
+ Aprovar
+ | 
+ 15543742
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviços de limpeza e higienização de reservatórios de água - UO08.1
+ | 
+ 785,00
+ | 
+ 29/05/2026
+ | 
+ A higienização periódica de reservatórios de água é uma medida essencial para garantir a qualidade da água consumida nas dependências da unidade, estando diretamente relacionada à saúde e segurança dos servidores, colaboradores e visitantes
+ | 
+ Aprovar
+ | 
+ 15552063
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Aparelhos de ar condicionado para a GR08 e UO08.1
+ | 
+ 70.000,00
+ | 
+ 30/10/2026
+ | 
+ Alteração da data desejada, considerando o cronograma interno de instrução, tramitação da fase preparatória e eventuais necessidades urgentes da GR08.
+ | 
+ Aprovar
+ | 
+ 15562837
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Manutenção de Plataforma Elevatória UO08.1
+ | 
+ 84.000,00
+ | 
+ 31/07/2026
+ | 
+ Alteração da data desejada, considerando o cronograma interno de instrução, tramitação da fase preparatória e eventuais necessidades urgentes da GR08.
+ | 
+ Aprovar
+ | 
+ 15562837
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Serviços de Limpeza UO08.1
+ | 
+ 195.000,00
+ | 
+ 30/11/2026
+ | 
+ Alteração da data desejada, considerando o cronograma interno de instrução, tramitação da fase preparatória e eventuais necessidades urgentes da GR08.
+ | 
+ Aprovar
+ | 
+ 15562837
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Manutenção Predial GR08
+ | 
+ 314.000,00
+ | 
+ 30/10/2026
+ | 
+ Alteração da data desejada, considerando o cronograma interno de instrução, tramitação da fase preparatória e eventuais necessidades urgentes da GR08.
+ | 
+ Aprovar
+ | 
+ 15562837
+ | 
+ Redimensionamento
+ | 
+ Nova Contratação
+ | 
+ Manutenção Predial UO08.1
+ | 
+ 250.000,00
+ | 
+ 30/10/2026
+ | 
+ Alteração da data desejada, considerando o cronograma interno de instrução, tramitação da fase preparatória e eventuais necessidades urgentes da GR08.
+ | 
+ Aprovar
+ | 
+ 15562837
+ | 
+ GR11
+ | 
+ Inclusão
+ | 
+ Nova Contratação
+ | 
+ Serviço de buffet, sob demanda, para eventos institucionais na GR11 e UOs
+ | 
+ 123.598,00
+ | 
+ 15/07/2026
+ | 
+ Contratação não prevista inicialmente no PCA2026, mas necessária para atender as necessidades
+ | 
+ Aprovar
+ | 
+ 15560799
+ | 
+As alterações propostas compreendem a inclusão de 15 (quinze) projetos, a exclusão de 12 (doze) projetos, e o redimensionamento de 11 (onze) projetos, conforme detalhamento contido na tabela acima. Com a aprovação da presente alteração, o PCA 2026 passará a contemplar 292 (duzentos e noventa e dois) projetos, no valor total de R$ 203.508.809,65 (duzentos e três milhões, quinhentos e oito mil oitocentos e nove reais e sessenta e cinco centavos), assim distribuídos:
+194 (cento e noventa e quatro) novos projetos, totalizando R$ 100.443.784,80 (cem milhões, quatrocentos e quarenta e três mil setecentos e oitenta e quatro reais e oitenta centavos); e
+98 (noventa e oito) prorrogações, totalizando R$ 103.065.024,85 (cento e três milhões, sessenta e cinco mil vinte e quatro reais e oitenta e cinco centavos).
+Das 38 (trinta e oito) alterações informadas pelas áreas técnicas, no período de 1º de abril de 2026 a 8 de maio de 2026, 37 (trinta e sete) possuem valores abaixo do limite de alçada do Conselho Diretor, tendo sido, portanto, aprovadas pelo Superintendente de Administração e Finanças, por meio da Portaria nº 3161, de 20 de maio de 2026 (SEI nº 15668691).
+A Matéria para Apreciação do Conselho Diretor nº 399/2026 (SEI nº 15669774) submetida a este Conselho Diretor restringe-se à inclusão de um projeto de valor superior a R$ 5 milhões, solicitado pela Superintendência de Competição (SCP), com valor estimado de R$ 7.000.000,00 (sete milhões de reais), com data desejada para 30 de novembro de 2026 e previsão de contratação na modalidade pregão.
+A área técnica demandante justificou que a contratação tem por objetivo aprimorar e desenvolver metodologia de precificação de modelos de negócios de telecomunicações e de espectro de radiofrequência disponível para a Agência, em atendimento à determinação constante do item 9.2.2 do Acórdão nº 276/2026-TCU-Plenário, proferido pelo Tribunal de Contas da União (TCU) no âmbito do TC 015.833/2025-9.
+Acolho a motivação apresentada, por evidenciar a aderência da contratação ao interesse institucional e a necessidade de conferir maior robustez técnica a tema de elevada relevância econômica e regulatória, diretamente relacionado às competências da Agência.
+Sobre as alterações, a AFCA destaca, de forma pertinente, que o PCA, embora constitua instrumento prévio de planejamento, não possui caráter estático, podendo ser ajustado durante sua execução para refletir necessidades supervenientes e assegurar maior aderência à realidade administrativa. Assim, desde que devidamente motivadas e submetidas às instâncias competentes, as alterações do Plano não fragilizam o planejamento, mas o atualizam e preservam sua utilidade como instrumento de governança das contratações.
+Nesse contexto, importante ressaltar que as alterações ora apresentadas não conflitam com o disposto no Decreto nº 12.990, de 29 de maio de 2026, publicado no Diário Oficial da União de 29 de maio de 2026, pelo qual o Poder Executivo impôs à Agência a contenção de suas despesas discricionárias no valor de R$ 51.827.581,00, correspondendo a uma restrição de 18,82% do orçamento discricionário da Anatel. 
+Isso porque a SAF está em processo de levantamento com os Núcleos Orçamentários e Financeiros, para indicação dos valores que poderão ser disponibilizados para bloqueio orçamentário e verificação quanto à suficiência do valor a ser apurado, para a elaboração de proposta de priorização e alocação dos recursos orçamentários, nos termos detalhados no Ofício nº 221/2026/AFFO/SAF-ANATEL (SEI nº 15731498).
+Ante o exposto, entendo que a proposta reúne os elementos necessários à sua aprovação, tendo sido devidamente instruída e motivada, com observância do fluxo de governança aplicável e do limite de alçada para submissão a este Conselho Diretor.
+Sobre a Minuta de Resolução Interna (SEI nº 15669719), verifico que, com relação ao art. 2º, a área técnica adotou posição aprovada pelo Conselho Diretor, quando da análise das propostas de alteração do PCA 2024 e de aprovação do PCA 2026, no sentido de que seria desnecessária a referência à atribuição de competência para inclusão dos projetos aprovados no Sistema de Planejamento e Gerenciamento de Contratações (PGC), com o posterior encaminhamento ao Ministério da Gestão e da Inovação em Serviços Públicos, já que se trata de atividade operacional realizada pela SAF, com respaldo no art. 17 da Norma de Planejamento das Contratações da Anatel.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A proposta de encaminhamento contida na presente Matéria relaciona-se com o Objetivo 12 da Agenda 2030, mais especificamente com a Meta 12.7, uma vez que a adoção do Plano de Contratações Anual tem por objetivo precípuo assegurar padrões de produção e de consumo sustentáveis e promover práticas de compras públicas sustentáveis, de acordo com as políticas e prioridades nacionais.
+CONCLUSÃO
+Diante de todo o exposto, proponho:
+aprovar a 5ª Alteração do Plano de Contratações Anual para o exercício de 2026 (PCA 2026), no que se refere à única alteração de projeto com valor superior a R$ 5 milhões (cinco milhões de reais), nos termos do Informe nº 18/2026/AFCA2/AFCA/SAF (SEI nº 15537927), deste Voto e da Minuta de Resolução Interna (SEI nº 15669719); e
+determinar à Superintendência de Administração e Finanças (SAF) que inclua os projetos objeto desta 5ª Alteração do Plano de Contratações Anual para o exercício de 2026 (PCA 2026) no Sistema de Planejamento e Gerenciamento de Contratações (PGC), com o posterior encaminhamento ao Ministério da Gestão e da Inovação em Serviços Públicos (MGI), conforme preceitua o art. 17 da Norma de Planejamento das Contratações no âmbito da Anatel.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 16:38, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15726068 e o código CRC 528A26E8.
+ | 
+Referência: Processo nº 53500.013951/2025-31 | 
+SEI nº 15726068 |

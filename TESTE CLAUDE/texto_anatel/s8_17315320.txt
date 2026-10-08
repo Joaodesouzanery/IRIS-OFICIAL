@@ -1,0 +1,36 @@
+SEI/ANATEL - 15481025 - Acórdão
+Boletim de Serviço Eletrônico em 14/04/2026
+DOU de 14/04/2026, seção 1, página 51
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 92, de 13 de abril de 2026
+Processo nº 01217.001833/2026-62
+Recorrente/Interessado: CIDADÃO
+Conselheiro(a) Relator(a): Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Circuito Deliberativo nº 92, de 13 de abril de 2026
+EMENTA
+RECURSO ADMINISTRATIVO. TRANSPARÊNCIA ADMINISTRATIVA. LEI DE ACESSO À INFORMAÇÃO - LAI. ACESSO A CONTRATOS CELEBRADOS NO ÂMBITO DA EAF E APROVADOS PELO GRUPO DE ACOMPANHAMENTO DA IMPLANTAÇÃO DAS SOLUÇÕES PARA OS PROBLEMAS DE INTERFERÊNCIA NA FAIXA DE 3.625 A 3.700 MHZ - GAISPI. DADOS DE IDENTIFICAÇÃO, VALORES E PRAZOS. INEXISTÊNCIA DE CUSTÓDIA DAS INFORMAÇÕES PELA ANATEL. DEVER DE TRANSPARÊNCIA LIMITADO ÀS INFORMAÇÕES SOB GUARDA DO ÓRGÃO. ENTIDADE PRIVADA DOTADA DE AUTONOMIA. INDICAÇÃO DO ENTE RESPONSÁVEL. ATENDIMENTO AOS OBJETIVOS DO DECRETO PRESIDENCIAL Nº 11.378, DE 18 DE OUTUBRO DE 2023, AO PROGRAMA DE APRIMORAMENTO DA QUALIDADE DA REGULAÇÃO BRASILEIRA - QUALIREG, ÀS DIRETRIZES DA ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE SOBRE A NECESSIDADE DE SE DESENVOLVER UMA POSTURA TRANSPARENTE E AOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+O caso envolve solicitação formulada na plataforma Fala.BR, em que o Requerente pede acesso à íntegra de contratos aprovados pelo Grupo de Acompanhamento da Implantação das Soluções para os Problemas de Interferência na faixa de 3.625 a 3.700 MHz - GAISPI no âmbito da Entidade Administradora da Faixa de 3,5 GHz - EAF, com dados de identificação, valores e prazos. O pedido foi indeferido nas instâncias inferiores, ante a circunstância de a Anatel não deter tais informações.
+II. QUESTÃO EM DISCUSSÃO
+Discute-se o dever da Anatel de fornecer, nos termos da Lei de Acesso à Informação - LAI (Lei nº 12.527/2011), dados contratuais de contratos realizados pela EAF. A controvérsia centra-se em verificar se tais informações encontram-se sob sua custódia, em virtude da supervisão exercida sobre o GAISPI, ou se devem ser requeridas diretamente à entidade privada responsável.
+III. RAZÕES DE DECIDIR
+1. Nos termos do art. 15, caput e § 1º, incisos III e IV, do Decreto nº 7.724/2012, o dever de acesso limita-se às informações disponíveis sob guarda do órgão.
+2. A Anatel não detém os dados solicitados, cuja custódia incumbe à EAF, entidade privada dotada de autonomia. Houve indicação clara do ente competente para tanto. Por sua vez, o Recorrente não apresentou fundamentos que infirmem essa conclusão.
+3. O encaminhamento proposto está em conformidade com os objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG. A proposta está alinhada com a meta de incentivar e promover instrumentos de controle social por meio da transparência das atividades no processo regulatório, conforme previsto no planejamento estratégico da Anatel 2023-2027.
+4. A decisão está aderente aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD. A decisão promove instrumentos de controle social e transparência da Agência, alinhando-se, assim às diretrizes e recomendações estabelecidas na publicação.
+5. Em relação ao ambiente regulatório, a Organização para Cooperação e Desenvolvimento Econômico - OCDE tem recomendado o desenvolvimento de uma postura transparente com os diversos stakeholders no setor regulado, adotando, como premissa, procedimentos internos que assegurem a transparência dos atos e decisões, beneficiando todos os atores setoriais.
+6. A fundamentação encontra-se em sintonia com o Objetivo 16 (meta 16.6) da Agenda 2030 da Organização das Nações Unidas, que busca o desenvolvimento de instituições eficazes, responsáveis e transparentes em todos os seus níveis, bem como à meta brasileira 16.6, devidamente revisada pelo Instituto de Pesquisa Econômica Aplicada - IPEA, que trata de ampliar a transparência, a accountability e a efetividade das instituições.
+IV. DISPOSITIVO E TESE
+Recurso não conhecido.
+Tese de julgamento: "1. O dever de acesso limita-se a informações sob custódia do órgão, em que a supervisão sobre outro ente não implica posse das informações passíveis de fiscalização. 2. Inexistente tal domínio, aplica-se o art. 15, §1º, III e IV, do Decreto nº 7.724/2012."
+Dispositivos relevantes citados: Lei nº 12.527/2011, art. 15; Decreto nº 7.724/2012, art. 15.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 46/2026/AF (SEI nº 15469184), integrante deste acórdão, não conhecer Recurso Administrativo.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 13/04/2026, às 18:15, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15481025 e o código CRC CDCD8639.
+ | 
+Referência: Processo nº 01217.001833/2026-62 | 
+SEI nº 15481025 |

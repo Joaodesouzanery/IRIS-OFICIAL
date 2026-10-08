@@ -1,0 +1,87 @@
+SEI/ANATEL - 15068248 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 8/2026/OP
+Processo nº 53500.000798/2015-18
+Interessado: Tracker do Brasil Ltda
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14427006) interposto pela Tracker do Brasil Ltda., CNPJ nº 02.756.315/0001-99, contra o Despacho Decisório nº 629/2025/COGE/SCO (SEI nº 14069495), que julgou procedentes os lançamentos dos créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública (CFRP) no exercício de 2012.
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA (CFRP). RECURSO NÃO PROVIDO.
+I. CASO EM EXAME
+ Recurso administrativo interposto pela Tracker do Brasil Ltda. contra o Despacho Decisório nº 629/2025/COGE/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes à CFRP no exercício de 2012.
+ Empresa requer nulidade do lançamento por supostos vícios na metodologia de apuração, reconhecimento de incompatibilidade da sistemática administrativa aplicada, apuração da base de cálculo apenas sobre estações efetivamente em operação, reconhecimento de cerceamento do direito de quitação espontânea, admissão de documentos novos, retificação do lançamento para refletir o número real de estações em funcionamento e reconhecimento de boa-fé para afastar imputação de inadimplência voluntária.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se há vícios na metodologia de apuração da CFRP que justifiquem a nulidade do lançamento; e (ii) saber se a sistemática administrativa adotada pela Anatel viola o regime do lançamento por homologação e cerceia o direito de quitação espontânea do tributo.
+III. RAZÕES DE DECIDIR
+ O processo administrativo fiscal observou o devido processo legal e a ampla defesa.
+ O recurso atende aos requisitos de admissibilidade e deve ser conhecido.
+ A metodologia de apuração da CFRP segue a regulamentação vigente, utilizando o número de estações regularmente licenciadas na data do fato gerador, não admitindo apuração casuística baseada em funcionamento episódico das estações.
+ A legislação e regulamentação aplicáveis não autorizam a exclusão de estações licenciadas com base em critérios subjetivos ou circunstanciais.
+ O procedimento de pagamento via Sistema Boleto está dentro dos limites da competência normativa e operacional da Anatel, não havendo violação ao regime do lançamento por homologação ou cerceamento do direito de pagar.
+ O valor da CFRP é calculado a partir de informações prestadas pelo próprio contribuinte, inexistindo presunção arbitrária por parte da Agência.
+ O depósito judicial do valor integral suspendeu a exigibilidade do tributo, afastando multa e juros de mora, inexistindo prejuízo jurídico ou financeiro à empresa.
+ A boa-fé da empresa não afasta a materialidade da conduta praticada.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e não provido.
+Tese de julgamento: "1. A metodologia de apuração da CFRP, baseada no número de estações regularmente licenciadas na data do fato gerador, observa a legislação e regulamentação vigentes. 2. Não há vícios que justifiquem a nulidade do lançamento ou a apuração casuística do tributo. 3. O procedimento administrativo adotado pela Anatel não viola o regime do lançamento por homologação nem cerceia o direito de quitação espontânea do tributo."
+Dispositivos relevantes citados: Lei nº 5.172/1966 (CTN); Lei nº 11.652/2008; Decreto nº 70.235/1972; Resolução nº 729/2020; Portaria Anatel nº 642/2013; Portaria nº 1355/2019.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerias de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 11.652, de 07 de abril de 2008, que institui os princípios e objetivos dos serviços de radiodifusão pública explorados pelo Poder Executivo ou outorgados a entidades de sua administração indireta e dá outras providências;
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14427006) interposto pela Tracker do Brasil Ltda., CNPJ nº 02.756.315/0001-99, contra o Despacho Decisório nº 629/2025/COGE/SCO (SEI nº 14069495), que julgou procedentes os lançamentos dos créditos tributários referentes à Contribuição para o Fomento da Radiodifusão Pública (CFRP) no exercício de 2012.
+Em 22/08/2025, conforme Certidão de Intimação Cumprida (SEI nº 14246382), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 1229/2025/COGE/SCO (SEI nº 14934227), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 988/2025/COGE/SCO (SEI nº 14972794), a Superintendente de Controle de Obrigações conheceu do Recurso interposto.
+A matéria foi encaminhada para deliberação deste Colegiado por meio da MACD nº 941/2025 (SEI nº 14972886).
+Fui designado relator da matéria por meio do sorteio realizado em 05/01/2026, nos termos da Certidão de Distribuição SEI nº 14995048.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente requer, em síntese: (i) a nulidade do lançamento da Contribuição para o Fomento da Radiodifusão Pública – CFRP, referente ao exercício de 2012, por vícios insanáveis em sua metodologia de apuração; (ii) o reconhecimento da incompatibilidade da sistemática administrativa aplicada, que presumiu em funcionamento, em 01/01/2012, todas as estações meramente licenciadas em 31/12/2011, determinando-se, em substituição, a apuração da base de cálculo apenas sobre as estações efetivamente em operação na data do fato gerador; (iii) o reconhecimento de que houve cerceamento do direito de quitação espontânea, diante da recusa da Agência em receber o recolhimento antecipado da CFRP por meio de GRU Depósito, em frontal violação ao regime do lançamento por homologação; (iv) a admissão e análise dos documentos novos ora apresentados, imprescindíveis à correta fixação da base de cálculo da CFRP de 2012, caso sejam acolhidas as razões recursais, em estrita observância ao princípio da verdade material; (v) a retificação do lançamento de 2012, para que reflita, de modo fiel, o número real de estações em funcionamento em 01/01/2012; e (vi) o reconhecimento da boa-fé da Recorrente, a fim de afastar qualquer imputação de inadimplência voluntária ou de resistência injustificada ao cumprimento da obrigação tributária.
+Primeiramente, cumpre destacar que a Contribuição para o Fomento da Radiodifusão Pública - CFRP tem como fato gerador a prestação dos serviços de telecomunicações de que trata o Anexo da Lei nº 11.652/2008. 
+A Resolução nº 729/2020 também regulamentou aspectos importantes inerentes a essa contribuição:
+o sujeito passivo da CFRP é a prestadora de serviços de telecomunicações, outorgada ou não;
+sua base de cálculo corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, que acontece no dia 1º de janeiro de cada ano; e
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.
+À Anatel, na condição de sujeito ativo dos referidos tributos, compete planejar, executar, acompanhar e avaliar as atividades relativas à tributação, fiscalização, arrecadação, cobrança e recolhimento de tais obrigações.
+Conforme muito bem sustentado pela área técnica no Informe nº 1229/2025/COGE/SCO (SEI nº 14934227) , entendo que a tese de nulidade da Interessada não se sustenta, tendo em vista não existirem vícios na metodologia ora empregada que segue o disposto na regulamentação ora vigente, não cabendo qualquer atitude discricionária por parte desta Agência.
+O critério objetivo de utilização do número de estações regularmente licenciadas na data do fato gerador reflete opção normativa legítima, não comportando substituição por apuração casuística fundada em alegado funcionamento episódico das estações, inexistente no ordenamento jurídico.
+Ademais no que tange ao suposto cerceamento de defesa, em face do direito de quitação espontânea, convém esclarecer que a Anatel, ao não autorizar o recolhimento por meio de GRU Depósito, e ao estabelecer o pagamento via Sistema Boleto como procedimento padrão, atuou dentro dos limites de sua competência normativa e operacional, inexistindo fundamento legal que amparasse a pretensão da empresa de impor meio de pagamento diverso daquele regularmente definido pela Administração. Não se verifica, portanto, violação ao regime do lançamento por homologação ou cerceamento indevido do direito de pagar, mas sim a observância das regras administrativas vigentes à época.
+Outrossim, resta incontroverso que a própria empresa efetuou o depósito judicial do valor integral do crédito de forma tempestiva, circunstância que suspendeu a exigibilidade do tributo, afastando, inclusive, a incidência de multa e juros de mora, o que evidencia a inexistência de prejuízo jurídico ou financeiro decorrente do procedimento adotado pela Agência. 
+No que tange a base de cálculo do tributo, como dito acima, a incidência da CFRP à análise individualizada do funcionamento de cada estação, à luz de suas particularidades operacionais não se sustenta. 
+A legislação de regência e a regulamentação aplicável não admitem a apuração casuística do uso efetivo das estações, tampouco autorizam a exclusão de estações regularmente licenciadas com base em critérios subjetivos ou circunstanciais.
+O modelo normativo adotado pelo legislador e pela Anatel é objetivo, padronizado e impessoal, justamente para assegurar segurança jurídica, isonomia e viabilidade administrativa da arrecadação. Admitir a avaliação individual do funcionamento de cada estação implicaria criar exceção não prevista em lei, inviabilizando o regime de fiscalização e arrecadação do tributo, além de afrontar os princípios da legalidade e da igualdade tributária.
+Assim, a cobrança da CFRP deve observar os parâmetros legais estabelecidos, sendo juridicamente inviável a análise das particularidades operacionais de cada prestadora ou estação.
+Sobre o lançamento por homologação, a empresa sustenta que a Anatel adota um procedimento irregular de apuração e cobrança da CFRP ao restringir as prerrogativas do contribuinte próprias do lançamento por homologação, uma vez que exige o prévio cadastramento das estações no sistema eletrônico e, com base nesses dados, calcula unilateralmente o valor do tributo e disponibiliza boletos para pagamento, sem permitir retificação ou recolhimento espontâneo em valores distintos.
+Sobre o tema, transcrevo abaixo o teor do Informe nº 1229 (SEI nº 14934227) que rebate o argumento da recorrente e que adoto como razão de decidir:
+5.39. A tese da empresa parte de uma premissa equivocada ao sustentar que a sistemática adotada pela Anatel desvirtua o lançamento por homologação. Conforme assentado no Parecer nº 907/2020/PFE-ANATEL/PGF/AGU (SEI nº 14971734), a CFRP é regularmente constituída por lançamento por homologação, nos termos do art. 150 do CTN, sendo irrelevante a inexistência de exame prévio da Administração no momento do pagamento. O elemento caracterizador dessa modalidade é justamente o pagamento antecipado pelo contribuinte, com posterior possibilidade de fiscalização e homologação pela autoridade tributária, e não a liberdade absoluta para redefinir unilateralmente os critérios legais de incidência.
+5.40. Além disso, não procede a alegação de que a Anatel realiza apuração unilateral com base em presunções. O referido Parecer é explícito ao afirmar que o valor da CFRP é calculado a partir de informações prestadas pelo próprio contribuinte, especialmente quanto ao quantitativo de estações licenciadas, inexistindo qualquer presunção arbitrária por parte da Agência.
+5.41. Ao contrário do que sustenta a Tracker, a legislação de regência atribui ao sujeito passivo a responsabilidade pela correta declaração e pelo pagamento antecipado, cabendo à Anatel apenas a fiscalização posterior, nos limites legais, caso se verifique pagamento parcial ou ausência de recolhimento. Portanto, entende-se que os argumentos apresentados pela empresa não merecem prosperar.
+O que se vê é que a argumentação trazida pela Recorrente pretende subverter a lógica da arrecadação da CFRP que está disciplinada pela regulamentação em vigor.
+O recolhimento do tributo se dá em estrito cumprimento ao disciplinado pela lei e pelo regulamento, não havendo margem de discricionariedade para atuação da Anatel.
+Ademais, cumpre esclarecer que a boa fé da empresa ao praticar atos na tentativa de correção de obrigações legais e regulamentares não afasta a materialidade da conduta ora praticada.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15068248 e o código CRC D016BB7E.
+ | 
+Referência: Processo nº 53500.000798/2015-18 | 
+SEI nº 15068248 |

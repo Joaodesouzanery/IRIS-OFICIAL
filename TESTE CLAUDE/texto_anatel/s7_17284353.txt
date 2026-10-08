@@ -1,0 +1,149 @@
+SEI/ANATEL - 15452757 - Análise
+Boletim de Serviço Eletrônico em 07/05/2026
+Análise nº 31/2026/EH
+Processo nº 53500.324872/2022-18
+Interessado: Sky Servicos de Banda Larga Ltda.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso administrativo, cumulado com pedido de efeito suspensivo, interposto em face do Despacho Decisório nº 280/2025/CODI/SCO (SEI nº 13603390), por meio do qual se aplicou sanção de multa no valor de R$57.586.853,24 (cinquenta e sete milhões, quinhentos e oitenta e seis mil, oitocentos e cinquenta e três reais e vinte e quatro centavos), por descumprimentos aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PADO. PRORROGAÇÃO DE PRAZO PARA SUBMISSÃO AO CONSELHO DIRETOR.
+I. CASO EM EXAME
+O recurso. Recurso administrativo, com pedido de efeito suspensivo, interposto por Sky Serviços de Banda Larga Ltda. contra o Despacho Decisório nº 280/2025/CODI/SCO, que aplicou multa de R$ 57.586.853,24 por descumprimento aos arts. 85, caput, e 102, caput, do RGC, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+Fato relevante. O Pado foi instaurado para apurar cobrança indevida de taxa de manutenção de assinatura. Posteriormente, o objeto foi retificado para incluir a apuração de não devolução em dobro, acrescida de correção, de valores cobrados indevidamente.
+As decisões anteriores. A área técnica opinou pela aplicação da multa. A PFE-Anatel manifestou-se pela regularidade formal do Pado e pela adequada caracterização das infrações, com recomendações sobre a dosimetria. A SCO aplicou a sanção. O recurso foi conhecido e encaminhado ao Conselho Diretor para análise de mérito.
+Providência no âmbito da relatoria. Após a distribuição, o Relator identificou a necessidade de esclarecimentos adicionais sobre fatores utilizados no cálculo da multa e expediu diligência à SCO, com prazo de 60 (sessenta) dias, diante da possibilidade de reformatio in pejus.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes fundamentos para prorrogar, por 120 (cento e vinte) dias, o prazo para submissão da matéria ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA.
+III. RAZÕES DE DECIDIR
+A matéria seria automaticamente incluída em pauta, nos termos do art. 127, § 2º, do RIA, em razão da data de distribuição e do prazo regimental aplicável.
+A diligência expedida pelo Relator à SCO ainda estava em curso no momento da elaboração da análise.
+A relevância do caso e a necessidade de exame de todos os aspectos considerados necessários pelo Relator impediram a conclusão da análise dentro do prazo regimental.
+O art. 127, § 3º, do RIA autoriza o Conselheiro Relator a requerer, de forma justificada, a prorrogação de prazo para submissão da matéria ao Conselho Diretor quando não for possível apresentar voto.
+IV. DISPOSITIVO E TESE
+Proposta de prorrogação de prazo por 120 (cento e vinte) dias.
+Tese de julgamento: "1. É cabível a prorrogação do prazo para submissão da matéria ao Conselho Diretor quando a análise não puder ser concluída dentro do prazo regimental. 2. A necessidade de diligência para esclarecimentos adicionais sobre a dosimetria da multa justifica a prorrogação prevista no art. 127, § 3º, do RIA. 3. A relevância do caso e a pendência de resposta da área técnica constituem fundamento suficiente para o requerimento de prorrogação."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 173, I e II; Lei nº 9.784/1999, art. 50, § 1º; Resolução nº 612/2013, art. 82, II e III, art. 127, § 2º e § 3º, e art. 206, IV; Resolução nº 632/2014, art. 85, caput, e art. 102, caput.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT);
+Lei nº 9.784, de 29 de janeiro de 1999 (Regulamento do processo administrativo no âmbito da Administração Pública Federal - LPA);
+Lei nº 13.874, de 20 de setembro de 2019 (Institui a Declaração de Direitos e Liberdade Econômica);
+Resolução nº 589, de 7 de maio de 2012, (Regulamento de Aplicação de Sanções Administrativas);
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Anatel - RIA);
+Resolução nº 632, de 7 de março de 2014 (Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC);
+Resolução Interna nº 219, de 15 de junho de 2023 (Metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos a direitos dos Usuários previstos na regulamentação - MDGU - 10393366).
+RELATÓRIO
+I - DO OBJETO
+Trata-se da análise do Recurso Administrativo (SEI nº 13884477), interposto por SKY Serviços de Banda Larga Ltda. (SKY), CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Comunicação Multimídia (SCM) e Serviço de Acesso Condicionado (SeAC), em face do Despacho Decisório nº 280/2025/CODI/SCO (SEI nº 13603390), por meio do qual se aplicou sanção de multa no valor de R$57.586.853,24 (cinquenta e sete milhões, quinhentos e oitenta e seis mil, oitocentos e cinquenta e três reais e vinte e quatro centavos), por descumprimentos aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+II - DOS FATOS
+O presente Procedimento para Apuração de Descumprimento de Obrigações (Pado) foi instaurado no dia 20/10/2022, por meio do Despacho Ordinatório de Instauração nº 135/2022/CODI/SCO (SEI nº 9312416), no qual foram apontados os indícios de infração, a respectiva capitulação legal e o sancionamento aplicável, conforme se transcreve a seguir:
+I) FATOS e NORMA:
+A fim de verificar a conformidade do processo de tarifação dos valores apurados no momento do faturamento em face dos termos e condições constantes nos respectivos contratos da oferta associada, na prestação do Serviço de Comunicação Multimídia (SCM) e do Serviço de Acesso Condicionado (SeAC) pela Sky Serviços de Banda Larga Ltda, foram solicitadas atividades de fiscalização pela Gerência de Acompanhamento Econômico da Prestação (CPAE), área responsável pelo acompanhamento da matéria, as quais apontaram os seguintes indícios de irregularidades, detalhados nos Relatórios de Fiscalização nº 0114/2019/GR05 (SEI 4549454) e 115/2019/GR05 (SEI nº 4567206), e tratados nos Informes nº 34/2021/CPAE/SCP (SEI 6739802), 36/2021/CPAE/SCP (SEI 6757814) e 62/2022/CPAE/SCP (SEI 8872242), no Processo de Fiscalização/Fiscalização Regulatória nº 53528.000984/2018-83, cujas conclusões devem ser consideradas para fins da concessão de atenuantes na eventual imposição de sanção:
+ Item
+ | 
+ Conduta
+ | 
+ Dispositivo
+ | 
+ 1
+ | 
+ Cobrança indevida de taxa de manutenção de assinatura.
+ | 
+ Art. 102 do RGC
+ | 
+II) SANÇÃO APLICÁVEL:
+Advertência e Multa, de acordo com as disposições contidas no artigo 173, incisos I e II, da LGT (Lei nº 9.472/1997).
+RESOLVER:
+a) Instaurar Procedimento para Apuração de Descumprimento de Obrigações – Pado, observado o rito processual previsto no art. 82 do Regimento Interno da Anatel, em desfavor de Sky Serviços de Banda Larga Ltda, CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Comunicação Multimídia (SCM) e Serviço de Acesso Condicionado (SeAC), para apuração de indícios de descumprimento ao art. 102 do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações – RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+b) Conceder à Sky Serviços de Banda Larga Ltda acesso integral ao presente Processo, em atenção ao disposto no artigo 82, inciso III, do Regimento Interno da Anatel; e
+c) Expedir intimação à Sky Serviços de Banda Larga Ltda para que, no prazo de 15 (quinze) dias, ofereça defesa e produza as provas que julgar cabíveis, na forma do artigo 82, inciso II, do Regimento Interno da Anatel.
+Nos termos do Informe nº 742/2022/CODI/SCO (cópia) (SEI nº 9314264), contextualizou-se a instauração deste feito, a qual decorreu de procedimento fiscalizatório ocorrido entre os dias 16/03/2018 e 23/08/2019, relatado nos autos do Processo de Fiscalização/Fiscalização Regulatória nº 53528.000984/2018-83, cujo objetivo foi o de verificar a existência de indícios de descumprimentos ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 632, de 7/03/2014, pela Sky Serviços de Banda Larga Ltda, na prestação do SCM e do SeAC, especificamente quanto à conformidade do processo de tarifação dos valores apurados no momento do faturamento em face dos termos e condições constantes nos respectivos termos contratuais da oferta associada. Durante o período fiscalizado, foram elaborados dois Relatórios de Fiscalização: o Relatório nº 114/2019/GR05 (SEI 4549454), que cuidou do Serviço de Comunicação Multimídia (SCM), e o Relatório nº 115/2019/GR05 (SEI 4567206), que tratou do Serviço de Acesso Condicionado (SeAC). Referidos relatórios fundamentaram a Fiscalização Regulatória iniciada em 11 de outubro de 2019 e concluída em 29 de setembro de 2022.
+Em 20/10/2022, acostou-se a Certidão de SEI nº 9312417, para se informar que devido ao grande volume de dados contidos nos autos do Processo nº 53528.000984/2018-83, o que dificulta a sua anexação integral a estes autos, será concedido à Sky o acesso integral ao referido processo, no qual constam os elementos que justificaram a instauração deste Pado, permitindo o pleno exercício dos direitos ao contraditório e ampla defesa pela prestadora.
+Conforme indica a Certidão de Intimação Cumprida de SEI nº 9403607, a Prestadora foi notificada da instauração deste feito, bem como do prazo para oferecer suas razões de defesa, em 07/11/2022, por meio do Ofício nº 420/2022/CODI/SCO-ANATEL(SEI nº 9312424).
+Em 21/11/2022 (SEI nº 9461650), a interessada apresentou a peça Defesa Petição (SEI nº 9461645).
+Por não haver dúvida processual ou necessidade de realização de diligências, declarou-se encerrada a instrução processual, conforme Certidão sob SEI nº 9462664, de 22/11/2022.
+No termos do Ofício nº 485/2022/CODI/SCO-ANATEL (SEI nº 9462666), a prestadora foi intimada em 08/12/2022 (SEI nº 9535086) sobre o prazo para protocolizar suas alegações finais, as quais (Carta Petição - SEI nº 9585060)) foram juntadas aos autos em 19/12/2022 (SEI nº 9585062). 
+Com base no Informe nº 150/2023/CODI/SCO (SEI nº 10102057), tendo em vista os indícios de cobrança indevida de taxa de manutenção de assinatura pela Sky, a área técnica identificou a necessidade de retificação do Despacho Ordinatório de Instauração nº 135/2022/CODI/SCO, para que nele passasse a constar e pudesse ser apurado neste processo o "não ressarcimento aos consumidores indevidamente cobrados, com os devidos acréscimos", em observância ao disposto no art. 85, caput, do RGC, restituindo-se à prestadora, como consequência, o prazo legal para o oferecimento de defesa.
+Assim, em 04/05/2023, expediu-se o Despacho Ordinatório de Instauração nº 23/2023/CODI/SCO (SEI nº 10191359), nos seguintes termos:
+O GERENTE DE CONTROLE DE OBRIGAÇÕES DE DIREITOS DOS CONSUMIDORES DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial a disposta no artigo 206, IV, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, examinando os autos do processo em epígrafe, instaurado em desfavor de Sky Serviços de Banda Larga Ltda, CNPJ nº 00.497.373/0001-10, prestadora do Serviço de Comunicação Multimídia (SCM) e Serviço de Acesso Condicionado (SeAC), a fim de apurar indícios de descumprimentos ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 632, de 7 de março de 2014;
+CONSIDERANDO o teor do Informe nº 150/2023/CODI/SCO (SEI 10102057);
+DECIDE:
+1. Retificar o Despacho Ordinatório de Instauração nº 135/2022/CODI/SCO (SEI nº 9312416), para que figurem e sejam apurados os seguintes indícios de infrações:
+ Item
+ | 
+ Conduta
+ | 
+ Infração
+ | 
+ 1
+ | 
+ Cobrança indevida de taxa de manutenção de assinatura.
+ | 
+ art. 102, caput, do RGC
+ | 
+ 2
+ | 
+ Não devolução em dobro, acrescido de correção, de valores cobrados indevidamente.
+ | 
+ art. 85, caput, do RGC
+ | 
+2. Reabrir o prazo para apresentação de Defesa, na forma do artigo 82, inciso II, do Regimento Interno da Anatel.
+Intimada no dia 22/05/2023 (SEI nº 10271701), por meio do Ofício nº 176/2023/CODI/SCO-ANATEL (SEI nº 10191416), a Sky protocolizou suas razões defensivas (SEI nº 10393961), em 05/06/2023 (SEI nº 10347091).
+Não havendo dúvidas processuais e não se identificando necessidade de realização de diligências, declarou-se encerrada a fase de instrução processual nos termos da Certidão de SEI nº 10900290, em 22/09/2023.
+No dia 09/10/2023 (SEI nº 10977729), por meio do Ofício nº 370/2023/CODI/SCO-ANATEL (SEI nº 10900303), cientificou-se a prestadora do prazo para oferta de suas alegações finais, as quais (SEI nº 11022527) foram protocolizadas no dia 19/10/2023 (SEI nº 11022528). 
+As razões de defesa e as alegações finais da prestadora foram então analisadas pela área técnica por meio do Informe nº 248/2024/CODI/SCO (SEI nº 12370337), de 01/11/2024, no qual se opinou pela aplicação da sanção de multa no valor total de R$57.586.853,24 (cinquenta e sete milhões, quinhentos e oitenta e seis reais e vinte e quatro centavos) pelo descumprimento aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014. Em razão do montante sugerido, os autos foram encaminhados para a oitiva obrigatória da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel).
+Por meio do Parecer nº 560/2024/PFE-ANATEL/PGF/AGU (SEI nº 12969673), o órgão de consultoria jurídica manifestou-se nos seguintes termos:
+3. CONCLUSÃO
+48. Por todo o exposto, esta Procuradoria Federal Especializada, órgão de execução da ProcuradoriaGeral Federal (PGF), vinculada à Advocacia Geral da União (AGU), opina:
+a) pela regularidade formal do Pado;
+b) pelo entendimento de que os informes caracterizam-se como documentos preparatórios, elaborados pela área técnica da Agência quando já encerrada a fase de instrução processual, que podem ser utilizados como fundamento para a edição do próprio ato administrativo decisório, nos termos do art. 50, § 1º, da Lei nº 9.784/1999;
+c) pela ausência de nulidade do Despacho Ordinatório De Instauração;
+d) pela inexistência de litispendência, caracterização de bis in idem ou necessidade de sobrestamento do processo;
+e) pela adequada caracterização das infrações aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC;
+f) pelo entendimento de que a ROL a ser considerada, referente ao serviço fiscalizado, é a da pessoa jurídica infratora como um todo, com a inclusão de todos os seus estabelecimentos (matriz e filiais), e a do ano imediatamente anterior ao da aplicação da sanção;
+g) salvo impossibilidade fática, aponta-se a necessidade de diferenciação da sanção por serviço, realizando-se cálculos distintos para o SCM e o SeAC, nos moldes em que realizado no Pado nº 53500.056639/2023-70;
+h) pela recomendação de realização de nova pesquisa quanto à existência de antecedentes da prestadora, considerando todos os serviços de telecomunicações outorgados a ela; e
+i) pelo esclarecimento da área técnica sobre possível inconsistência a respeito da caracterização das infrações apuradas nos autos como pontuais no Informe nº 248/2024/CODI/SCO (SEI nº 12370337), em seu item 3.66, ao passo que, na planilha de cálculo da multa (SEI nº 12527273), essas infrações estão referidas como procedimentais.
+A área técnica avaliou as recomendações apresentadas pela PFE-Anatel e, conforme consignado no Informe nº 369/2025/CODI/SCO (SEI nº 13602048), manteve a sugestão de sanção realizada anteriormente. 
+Assim, a Superintendente de Controle de Obrigações (SCO) da Anatel proferiu a seguinte decisão, nos termos do Despacho Decisório nº 280/2025/CODI/SCO (SEI nº 13603390), de 26/05/2025:
+DECIDE:
+Aplicar sanção de MULTA no valor de R$57.586.853,24 (cinquenta e sete milhões, quinhentos e oitenta e seis mil oitocentos e cinquenta e três reais e vinte e quatro centavos), pelo descumprimento aos arts. 85, caput; e 102, caput, do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+Notificada (SEI nº 13603392) da decisão, em 11/06/2025 (SEI nº 13836018), a empresa interpôs seu Recurso Administrativo (SEI nº 13884477) no dia 23/06/2025, com pedido de efeito suspensivo, no qual apresentou as seguintes razões:
+preliminarmente, arguiu a nulidade do Despacho Ordinatório de Instauração por suposta insuficiência e equivocada especificação das condutas tidas por infratoras e da sanção aplicável;
+necessidade de saneamento de suposta desordem processual e reconhecimento de continência;
+impossibilidade do encerramento da instrução processual e necessidade de devolução do prazo para apresentação de alegações finais;
+no mérito, afirmou inexistir violação ao artigo 102 do RGC e sustentou a licitude da Taxa de Manutenção de Assinatura (TMA);
+apresentou análise dos cenários de cobrança da TMA, defendendo a legalidade de sua exigência nos cenários em que ela ocorria;
+inexistência de violação ao artigo 85 do RGC, visto que a cobrança da TMA seria lícita e devida;
+impossibilidade de apenamento ante a ausência de elemento volitivo e necessidade de regulação responsiva;
+quanto à dosimetria da pena, alega impossibilidade de aplicação de penalidade mais grave do que advertência e pugna pela aplicação dos princípios da proporcionalidade e da razoabilidade;
+argui a necessidade de aplicação da Receita Operacional Líquida Anual (ROL) adequada;
+dever-se-ia fazer diferenciação da sanção por serviço, realizando-se cálculos distintos para o Serviço de Comunicação Multimídia (SCM) e o de TV por Assinatura (SeAC);
+aplicação de atenuantes em caso de manutenção da multa;
+seria indevida a aplicação de agravante à SKY e consideração do custo de oportunidade dos valores cobrados pela SKY; e 
+seria necessária a correção da Planilha de Cálculo de Multa. 
+À mesma data, em 23/06/2025, atribuiu-se efeito suspensivo ao recurso, nos termos da Certidão de SEI nº 13884550.
+Os argumentos recursais foram analisados no Informe nº 876/2025/CODI/SCO (SEI nº 14602604), de 15/12/2025, no qual se propôs conhecer e negar provimento ao recurso.
+A Superintendente de Controle de Obrigações conheceu do Recurso e encaminhou os autos a este Conselho para análise de mérito, conforme Despacho Decisório nº 678/2025/CODI/SCO (SEI nº 14692360 ) e Matéria para Apreciação do Conselho Diretor (MACD) nº 826/2025 (SEI nº 14692364), de 15/12/2025.
+Nos termos do Ofício 79/2025/SCD-ANATEL (SEI nº 14927928), o presente feito foi encaminhado ao Presidente Executivo da Anatel, a fim de que se avaliasse o pedido de sua distribuição ao Conselheiro Alexandre Freire, por já estar sob sua relatoria o Pado nº 53500.056639/2023-70, no qual são tratadas condutas análogas. 
+Conforme consta no Ofício 1592025/PR-ANATEL (SEI nº 14945852), por não se ter identificado enquadramento em hipótese de conexão ou continência que dê suporte à distribuição direta do processo 53500.324872/2022-18 ao Conselheiro em questão, nos termos dispostos na Portaria nº 495, de 24 de maio de 2012, os autos foram restituídos à Secretaria do Conselho Diretor (SCD), para realização do regular sorteio da relatoria.
+Ato contínuo, de acordo com a Certidão de Distribuição de SEI nº 14955234, em 22/12/2025, fui sorteado relator da matéria.
+Ao examinar os presentes autos, verifiquei a necessidade de esclarecimentos adicionais acerca de alguns fatores utilizados no cálculo da multa recorrida, razão por qual encaminhei o Ofício nº 37/2026/EH-ANATEL (SEI nº 15441053), de 07/04/2026, à Superintendência de Controle de Obrigações (SCO), para sua devida reavaliação, considerando o prazo de 60 (sessenta) dias para conclusão e restituição dos autos a este gabinete, tendo em vista a possibilidade de reformatio in pejus da sanção aplicada.
+É o breve relato.
+DA ANÁLISE
+Tendo em vista o prazo previsto e as disposições constantes do art. 127, § 2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, e a data em que a presente matéria foi sorteada à minha relatoria, tem-se que esta deverá ser automaticamente incluída na pauta da Reunião nº 953, que ocorrerá em 07/05/2026.
+Considerando a relevância do presente caso e o prazo para atendimento, pela Superintendência de Controle de Obrigações (SCO), da diligência efetuada por este gabinete por meio do Ofício nº 37/2026/EH-ANATEL (SEI nº 15441053), de 07/04/2026 , não foi possível concluir a análise com o devido exame de todos os aspectos que considero necessários para a tomada de decisão deste Colegiado, dentro do prazo regimental.
+Por esse motivo, requeiro a prorrogação de prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fulcro no § 3º do art. 127 do Regimento Interno da Agência, in verbis:
+Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+................................................................................................................................................
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor.
+CONCLUSÃO
+Diante do exposto, pelas razões e justificativas constantes da presente Análise, proponho a prorrogação do prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 07/05/2026, às 16:25, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15452757 e o código CRC 3A30AF92.
+ | 
+Referência: Processo nº 53500.324872/2022-18 | 
+SEI nº 15452757 |

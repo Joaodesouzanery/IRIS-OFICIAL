@@ -1,0 +1,39 @@
+SEI/ANATEL - 15349843 - Acórdão
+Boletim de Serviço Eletrônico em 23/03/2026
+DOU de 23/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 72, de 18 de março de 2026
+Processo nº 53520.000067/2023-36
+Recorrente/Interessado: CENTRO DE INFORMÁTICA E AUTOMAÇÃO DO ESTADO DE SC S.A.
+CNPJ nº 83.043.745/0001-65
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 951, de 12 de março de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por CENTRO DE AUTOMAÇÃO E INFORMÁTICA DO ESTADO DE SANTA CATARINA S.A. - CIASC contra decisão da Superintendência de Controle de Obrigações - SCO da Anatel que julgou procedentes os lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2019.
+2. Recorrente alega não prestar serviços de telecomunicações, impossibilidade de segregação de receitas, inclusão de receitas de Serviços de Valor Adicionado - SVA na base de cálculo e ilegalidade do indeferimento de prova pericial contábil e técnica.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a Recorrente está sujeita à contribuição para o Fust, considerando a natureza dos serviços prestados; e (ii) saber se é válida a inclusão de receitas e a negativa de realização de perícia contábil e técnica.
+III. RAZÕES DE DECIDIR
+1. A prestação de serviços de rede de telecomunicações a um grupo restrito de usuários, ainda que seja ao Governo do Estado de Santa Catarina, configura serviço de telecomunicações, sujeitando a Recorrente à contribuição para o Fust.
+2. A Recorrente possui outorga ativa do Serviço de Comunicação Multimídia - SCM, sendo considerada prestadora de serviços de telecomunicações.
+3. A separação contábil das receitas é obrigação acessória prevista na legislação, devendo ser comprovada documentalmente.
+4. A negativa de realização de perícia contábil e técnica é válida, pois não foram apresentados novos elementos pela Recorrente que justificassem sua realização.
+5. Não há comprovação de prestação de serviços de valor adicionado - SVA que justifique exclusão de receitas da base de cálculo.
+6. A incidência de multas está prevista na legislação aplicável ao caso.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido.
+Tese de julgamento: "1. A prestação de serviços de rede de telecomunicações a um grupo restrito de usuários, ainda que seja ao Governo do Estado de Santa Catarina, configura serviço de telecomunicações, sujeitando a Recorrente à contribuição para o Fust. 2. A separação contábil das receitas é obrigação acessória prevista na legislação. 3. A negativa de realização de perícia contábil e técnica é válida diante da ausência da apresentação de novos elementos pela Recorrente que justifiquem sua necessidade. 4. Não há comprovação de prestação de Serviços de Valor Adicionado que justifique exclusão de receitas da base de cálculo. 5. A incidência de multas está prevista na legislação aplicável ao caso."
+Dispositivos relevantes citados: Lei nº 9.998/2000, arts. 6º, IV, e 10; Lei nº 9.472/1997, arts. 60, 62, 63 e 69; Decreto nº 70.235/1972, art. 16, IV; Resolução Anatel nº 73/1998, arts. 18, 23 e 29; Resolução Anatel nº 729/2020, art. 23; Lei nº 10.522/2002, art. 37-A; Lei nº 9.065/1995, art. 13.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 13/2026/EH (SEI nº 15178434), integrante deste acórdão, conhecer do Recurso interposto, por estarem preenchidos os requisitos de admissibilidade, para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti.
+Ausente o Conselheiro Substituto Nilo Pasquali, em período de férias.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/03/2026, às 16:16, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15349843 e o código CRC 90AEC564.
+ | 
+Referência: Processo nº 53520.000067/2023-36 | 
+SEI nº 15349843 |

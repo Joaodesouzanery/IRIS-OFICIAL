@@ -1,0 +1,622 @@
+SEI/ANATEL - 14866620 - Voto
+Boletim de Serviço Eletrônico em 13/02/2026
+Voto nº 8/2025/OP
+Processo nº 53500.002822/2019-79
+Interessado: TELEFONICA BRASIL S.A.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso administrativo interposto por Telefônica S.A., prestadora do Serviço Móvel Pessoal - SMP, em face do Despacho Decisório nº 55/2024/CODI/SCO, de 19 de março de 2024 (SEI nº 11655278), por meio do qual o Superintendente de Controle de Obrigações - SCO aplicou as sanções de ADVERTÊNCIA e MULTA no valor de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil novecentos e três reais e vinte e dois centavos), por descumprimentos ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESCUMPRIMENTO AO REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES. MULTA REFORMADA. APLICAÇÃO DE SANÇÃO DE OBRIGAÇÃO DE FAZER.
+I. CASO EM EXAME
+ Recurso administrativo interposto por Telefônica Brasil S.A., prestadora do Serviço Móvel Pessoal, contra decisão que aplicou sanções de advertência e multa de R$ 135.724.903,22 por descumprimento ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC) e ao Código de Defesa do Consumidor (CDC).
+ Fatos relevantes incluem alegações de falhas nos critérios de cálculo da sanção, petições extemporâneas sobre duplicidade de registros e ressarcimentos, e proposta de aplicação obrigação de fazer consistente em conectividade para instituições públicas de ensino superior.
+II. QUESTÃO EM DISCUSSÃO
+ Há cinco questões em discussão: (i) saber se houve infração ao art. 81, §§1º e 2º, do RGC e a correta metodologia de cálculo da multa; (ii) saber se houve infração ao art. 83, do RGC e a delimitação dos usuários totais; (iii) saber se o cálculo da multa referente ao art. 85, do RGC deve considerar o dobro da vantagem auferida, com expurgos de duplicidades e ressarcimentos; (iv) saber se a infração ao art. 85, parágrafo único, do RGC deve ser considerada pontual e a gravidade corretamente classificada; e (v) saber se é possível converter a sanção pecuniária em obrigação de fazer, consistente no provimento de conectividade a instituições públicas de ensino superior e institutos federais.
+III. RAZÕES DE DECIDIR
+ A infração ao art. 81, §§1º e 2º, do RGC foi caracterizada de forma aglutinada, com redução do fator dano e ajuste dos parâmetros de cálculo para considerar o total de contestações de usuários pós-pagos e de contas não pagas sem emissão de novo documento.
+ Para o art. 83, do RGC, o fator de usuários totais foi alterado para abranger apenas as unidades federadas onde ocorreram as infrações.
+ O cálculo da multa referente ao art. 85, do RGC foi reformado para considerar o dobro da vantagem auferida, após exclusão de duplicidades e ressarcimentos comprovados, conforme apurado pela área técnica.
+ A infração ao art. 85, parágrafo único, do RGC foi considerada pontual, com ajuste do universo de usuários atingidos e reclassificação da gravidade para infração grave por atingir número significativo de usuários.
+ O valor da multa foi alterado de R$ 135.724.903,22 para R$ 60.594.250,79, conforme planilha anexada ao Voto.
+ A aplicação da sanção de obrigação de fazer foi considerada possível e adequada, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção.
+IV. DISPOSITIVO E TESE
+ Recurso parcialmente provido. Multa reformada para R$ 60.594.250,79. Sanção convertida em obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, conforme requisitos e parâmetros definidos.
+ Tese de julgamento: "1. A infração ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações foi caracterizada nos termos dos arts. 81, §§1º e 2º; 83; 85; e 85, parágrafo único, com ajustes metodológicos e de gravidade. 2. O cálculo da multa deve considerar o dobro da vantagem auferida, com expurgos de duplicidades e ressarcimentos comprovados. 3. O valor da multa é reformado para R$ 60.594.250,79. 4. É possível a aplicação da sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para instituições públicas de ensino superior e institutos federais, observados os requisitos técnicos, valores de referência, diversidade regional e prazos de implementação e manutenção."
+Dispositivos relevantes citados: Lei nº 8.078/1990, art. 6º, IV; Lei nº 9.472/1997; Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (Resolução nº 632/2014), arts. 3º, IV, 81, §§1º e 2º, 82, 83, 85, 85, parágrafo único, 86, 89; Regulamento de Aplicação de Sanções Administrativas (RASA); Resolução Interna nº 219/2023; Resolução nº 784/2025.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor).
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 (Lei do Processo Administrativo - LPA).
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+Metodologia de cálculo do valor base das sanções de multa relativa a infrações a Direitos e Garantias dos Usuários, aprovada pela Resolução Interna nº 219, de 15 de junho de 2023.
+RELATÓRIO
+I - DOS FATOS
+Cuida-se de Voto elaborado no curso da análise pelo Conselho Diretor de Recurso Administrativo interposto Telefônica S.A., prestadora do Serviço Móvel Pessoal - SMP, em face do Despacho Decisório nº 55/2024/CODI/SCO, de 19 de março de 2024 (SEI nº 11655278), por meio do qual o Superintendente de Controle de Obrigações - SCO aplicou as sanções de ADVERTÊNCIA por descumprimento aos artigos 3º, IV, e 89, e MULTA no valor de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil novecentos e três reais e vinte e dois centavos), por descumprimentos aos artigos 81, caput, §§1º e 2º; 82, caput; 83, caput; 85, caput e parágrafo único; e 86, caput, todos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014, e ao art. 6º, IV, do Código de Defesa do Consumidor, instituído pela Lei nº 8.078, de 11 de setembro de 1990, sem prejuízo do ressarcimento aos clientes indevidamente cobrados.
+O relato detalhado dos fatos encontra-se na Análise nº 101/2025/VA (SEI nº 14302251), entendendo-se desnecessário reproduzi-los nesse momento.
+Na Reunião nº 948, deste Conselho, realizada em 4 de novembro de 2025, pedi vistas da matéria, conforme Certidão de Julgamento correspondente (SEI nº 14697331).
+Em razão de petições apresentadas pela Recorrente apontando falhas nos autos do PAC que teriam resultado nos critérios utilizados no cálculo da sanção, diligenciei à área técnica por meio do Ofício nº 29/2025/OP-ANATEL (SEI nº 14702348), requerendo avaliação da documentação encaminhada e seu cotejo com as alterações promovidas pelo Conselheiro Relator, Vicente Aquino.
+Em resposta, a área técnica, pelo Informe nº 912/2025/CODI/SCO (SEI nº 14715995), de 24 de novembro de 2025, atendeu à diligência por mim formulada.
+Em 19 de janeiro de 2026 e em 5 de fevereiro de 2026, a Recorrente juntou aos autos petições extemporâneas (SEI nº 15060244 e nº 15146942).
+São os fatos.
+II - DAS CONCLUSÕES DO RELATOR
+A tabela abaixo resume as conclusões do relator em relação a cada um dos dispositivos supostamente descumpridos pela Recorrente e apenados com sanção de multa:
+ Dispositivo
+ | 
+ Redação
+ | 
+ Conclusão do Relator
+ | 
+ Justificativa
+ | 
+ Art. 81, caput
+ | 
+ Art. 81. O Consumidor, no prazo de 3 (três) anos, pode contestar junto à Prestadora valores contra ele lançados, contado o prazo para a contestação a partir da data da cobrança considerada indevida
+ | 
+ infração descaracterizada
+ | 
+ A fiscalização relata a dificuldade de recuperação de protocolo online e não casos de impedimento de contestação.
+ Descaracteriza a infração dando parcial provimento ao recurso.
+ | 
+ Art. 81, §1º c/c §2º
+ | 
+ § 1º A Prestadora deve permitir o pagamento dos valores não contestados, emitindo, sem ônus, novo documento de cobrança, com prazo adicional para pagamento, observado o disposto no caput do art. 76.
+ § 2º O valor contestado deve ter sua cobrança suspensa e sua nova cobrança fica condicionada à prévia justificativa, junto ao Consumidor, acerca das razões pelas quais a contestação foi considerada improcedente pela Prestadora.
+ | 
+ infração caracterizada
+ | 
+ Prestadora adotava como praxe não emitir nova fatura com prorrogação de prazo para pagamento de valores incontroversos. Tal omissão tem por consequência a não suspensão dos valores contestados.
+ Condutas aglutinadas de ofício, posto que entrelaçadas de forma indissociável.
+ Retificação de Ua para usuários pós-pago, indo ao encontro da recomendação da PFE.
+ | 
+ Art. 82
+ | 
+ Art. 82. A contestação de débito suspende a fluência dos prazos previstos no Capítulo VI deste Título até que o Consumidor seja notificado da resposta da Prestadora à sua contestação.
+ | 
+ infração caracterizada
+ | 
+ Restou demonstrado, pela fiscalização, milhares de casos de usuários suspensos mesmo com a fatura contestada.
+ Adequação de Ut para o total de usuários do SMP.
+ Adequação no número de Ua, excluindo reclamações duplicadas de um mesmo usuário.
+ | 
+ Art. 83
+ | 
+ Art. 83. A ausência de resposta à contestação de débito no prazo de 30 (trinta) dias a contar da contestação obriga a Prestadora à devolução automática, na forma do art. 85, do valor questionado. 
+ Parágrafo único. Se, após o prazo previsto no caput, a Prestadora constatar que a contestação é improcedente, a nova cobrança fica condicionada à prévia justificativa, junto ao Consumidor, acerca das razões da improcedência e ao acordo para o pagamento dos valores indevidamente devolvidos.
+ | 
+ infração caracterizada
+ | 
+ Restou demonstrada a ausência de resposta à contestação no prazo.
+ Retificou-se o valor de Ua, em razão de contagem errada na amostra de usuários pré-pagos. 
+ | 
+ Art. 85, caput
+ | 
+ Art. 85. O Consumidor que efetuar pagamento de quantia cobrada indevidamente tem direito à devolução do valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die. 
+ | 
+ infração caracterizada
+ | 
+ Demonstrado que usuários não foram restituídos em dobro. A obrigação de ressarcimento não está condicionada à comprovação de má-fé da prestadora. A responsabilidade é objetiva.
+ Desconsiderou a aplicação do dobro da vantagem auferida como sanção, vez que demonstrada a existência de duplicidade de registros que merecem auditoria detalhada. Contudo, o PAC se encontra em fase preliminar e sobrestado, entendendo-se desaconselhável a utilização do valor.
+ Multa calculada com total de usuários atingidos, excluídas as duplicidades.
+ | 
+ Art. 85, par. único
+ | 
+ Parágrafo único. A critério do Consumidor, os valores cobrados indevidamente devem ser devolvidos por meio de:
+ I - compensação por meio de abatimento no documento de cobrança seguinte à data da identificação da cobrança indevida ou do decurso do prazo do art. 83, respeitado o ciclo de faturamento;
+ II - pagamento por meio de créditos com validade mínima de 90 (noventa) dias ou com a validade do crédito contestado, o que for maior, considerando o prazo máximo de 10 (dez) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83; ou,
+ III - pagamento via sistema bancário, considerando o prazo máximo de 30 (trinta) dias para devolução, contado da data da identificação da cobrança indevida ou do decurso do prazo do art. 83.
+ | 
+ infração caracterizada
+ | 
+ Há provas de que empresa priorizava o ressarcimento em fatura.
+ Afasta caráter sistêmico, posto que demonstrados casos de ressarcimento por meio de depósitos. 
+ Limita Ua aos casos citados pela fiscalização (pré e pós pagos), dando parcial provimento ao recurso.
+ | 
+ Art. 86
+ | 
+ Art. 86. Os créditos a que se refere o inciso II do parágrafo único do art. 85 devem permitir sua utilização para a fruição de quaisquer serviços e de facilidades. 
+ | 
+ reclassificada para 85, par. único, II
+ | 
+ A infração de refere ao prazo previsto no art. 85, par. único, II, ultrapassado em mais de 10 dias para usuários pré-pagos identificados no Relatório.
+ Reclassificação de ofício.
+ | 
+ Art. 6º. IV, CDC
+ | 
+ Art. 6º São direitos básicos do consumidor:
+ (...)
+ IV - a proteção contra a publicidade enganosa e abusiva, métodos comerciais coercitivos ou desleais, bem como contra práticas e cláusulas abusivas ou impostas no fornecimento de produtos e serviços;
+ | 
+ infração caracterizada
+ | 
+ Não foi objeto de recurso, nem de análise pelo Relator.
+ | 
+As infrações aos arts. 3º, IV, e 89, do RGC, sancionadas com advertência, bem como a infração ao art. 6º, IV, do CDC, sancionada com multa, não foram objeto de recurso, sendo mantida a condenação pelo Relator conforme aplicada pelo Despacho Decisório nº 55/2024/CODI/SCO (11655278).
+Ao final, propôs o conhecimento e provimento parcial do recurso, reformando de ofício a sanção de multa para R$ 19.637.204,63 (dezenove milhões, seiscentos e trinta e sete mil duzentos e quatro reais e sessenta e três centavos).
+III - DA PETIÇÃO EXTEMPORÂNEA
+Como mencionado, em 19 de janeiro de 2026 e em 5 de fevereiro de 2026, a Recorrente trouxe aos autos petições extemporâneas (SEI nº 15060244 e nº 15146942).
+No primeiro caso, na qual se limitou a repisar as alegações de que cobranças derivadas de ativações indevidas realizadas por terceiros (fraude de subscrição) não se caracterizariam como indevidas, em razão de ausência de conduta contrária à boa-fé objetiva, mas de exercício legítimo de direito.
+Na segunda petição, reitera os valores já ressarcidos, requerendo seu expurgo dos cálculos relativos à cobrança indevida e se opondo quanto à data de início do cálculo dos juros e atualização monetária.
+Em 10 de outubro de 2017, expediu-se a Súmula nº 21, disciplinando o tratamento a ser conferido às petições extemporâneas, nos seguintes termos:
+"As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo.
+Não há necessidade de desentranhamento de petições extemporâneas, ainda que não conhecidas por esse órgão colegiado". 
+As petições SEI nº 15060244 e nº 15146942 são extemporâneas e o protocolo se deu antes da publicação da pauta da Reunião do Conselho Diretor na qual se reincluiu este Pado. É de se conhecer as petições extemporâneas, cujo mérito será apreciado no decorrer deste Voto.
+IV - DIVERGÊNCIA
+Conforme mencionei, na Reunião nº 948, deste Conselho, realizada em 4 de novembro de 2025, solicitei vistas da matéria visando, especialmente, me aprofundar nos aspectos apontados pela Recorrente em relação aos registros constantes do PAC nº 53500.047004/2024-62, utilizados para se calcular a sanção em relação ao art. 85 do RGC.
+Nesse contexto, em resposta à diligência por mim formulada, além de questões afetas aos registros do PAC, a área técnica apontou algumas inconsistências no recálculo levado a efeito pelo Conselheiro Relator, fazendo algumas ponderações. Passo a tratá-las.
+IV.a. Do art. 81, §§1º e 2º, do RGC
+Em primeira instância, a área técnica propôs aglutinar as infrações aos §§1º e 2º do art. 81, do RGC, mas na planilha de cálculo, por equívoco, aglutinou o §2º com o art. 82, caput, do RGC. Ao analisar o recurso, acusou o erro e propôs sua retificação, mantendo aglutinados os §§1º e 2º do dispositivo.
+Estabelece a norma:
+Art. 81 (...)
+§ 1º A Prestadora deve permitir o pagamento dos valores não contestados, emitindo, sem ônus, novo documento de cobrança, com prazo adicional para pagamento, observado o disposto no caput do art. 76.
+§ 2º O valor contestado deve ter sua cobrança suspensa e sua nova cobrança fica condicionada à prévia justificativa, junto ao Consumidor, acerca das razões pelas quais a contestação foi considerada improcedente pela Prestadora.
+Na visão da área técnica, assim como na visão do Relator, ao adotar, como praxe, o não envio de um novo documento de cobrança, consequentemente não havia a suspensão do valor contestado, o que levou à aglutinação das infrações.
+De fato, na conclusão do item, os fiscais da Anatel reportaram que o "procedimento orienta aos representantes a pedirem que o Consumidor pague a conta que na fatura seguinte será debitado o valor contestado" (SEI nº 3744533). Na análise de um banco de dados contendo todas as contestações de novembro de 2016 a janeiro de 2017, a fiscalização verificou milhares de usuários com contestações procedentes com a conta não paga, sem ter havido, por parte da Recorrente, emissão de uma nova fatura com exclusão do valor contestado.
+Portanto, concordo com o Relator, sendo inquestionável a caracterização da infração ao art. 81, §§1º e 2º, do RGC, de forma aglutinada, dando-se parcial provimento ao recurso.
+Ao analisar o recurso, a área técnica propôs revisitar os parâmetros da sanção, considerada sistêmica em primeira instância, pois em nenhum dos casos avaliados pela fiscalização (tarifa incorreta; fraude de subscrição e concessão por fidelização) a irregularidade foi identificada na totalidade de contestações (SEI nº 13622335).
+Ocorre que a fiscalização não trouxe o número de usuários atingidos, mas sim o número de protocolos de contestação, dados esses utilizados na proposta da área técnica em substituição ao parâmetro usuários. Dessa forma, de um universo de 630.474 (seiscentos e trinta mil, quatrocentas e setenta e quatro) contestações em contas não pagas, a infração foi evidenciada em 64.162 (sessenta e quatro mil, cento e sessenta e duas) delas, totalizando uma multa de R$ 9.101.322,43 (nove milhões, cento e um mil, trezentos e vinte e dois reais e quarenta e três centavos).
+Em sua Análise, porém, o Relator entendeu que a infração seria procedimental, para usuários pós-pagos, pela praxe de não se emitir novo documento de cobrança com prorrogação de prazo para a quitação de valores incontroversos. Tal prática dificulta a regular liquidação do débito pelo usuário que, ao aguardar a emissão da nova fatura em consonância com os termos regulamentares, era induzido à inadimplência. Utilizou, nos parâmetros de cálculo da sanção, como usuários totais, o total de usuários da prestadora; e como usuários atingidos, o total de usuários pós-pago. 
+Propôs alterar, ainda, o fator dano, reduzindo-o para 5 (cinco). 
+O valor final da multa, após tais alterações, totalizou mais de R$ 18.000.0000,00 (dezoito milhões de reais).
+Ainda que se entenda como o Relator, a área técnica apontou um equívoco na planilha de cálculo da sanção (SEI nº 14699549) anexada à Análise. Transcrevo os apontamentos:
+Informe nº 912/2025/CODI/SCO (SEI nº 14715995)
+3.19. Nesse descumprimento, a Análise nº 101/2025/VA (14302251) manteve a caracterização e a aglutinação das infrações aos §§1º e 2º do art. 81. Contudo, alterou os parâmetros usuários totais (Ut) e usuários atingidos (Ua), passando a utilizar "usuários" no lugar de "contestações", unidade de medida proporcional adotada pela área técnica nos Informes nº 10/2025/CODI/SCO (13127588) e nº 375/2025/CODI/SCO (13622335), que entendeu não ser possível mensurar o (Ua) considerando o protocolo de cada reclamação/contestação como um usuário atingido, porque a fiscalização analisou "reclamações/contestações" e, como em muitos casos um mesmo usuário possuía diversos números de protocolo, o numero de reclamações/contestações e usuários não era coincidente.
+3.20. Houve manutenção do dano (D) em 5 (cinco) e do tempo (T) em 0,2 (zero vírgula dois).
+3.21. Destaca-se que a Análise considerou procedimental a infração "por se tratar de um procedimento operacional inadequado e sistêmico adotado pela recorrente" (item 5.37), delimitando o fator (Ua) aos usuários do SMP na modalidade pós-paga - 40.390.834 (quarenta milhões, trezentos e noventa mil, oitocentos e trinta e quatro) -, e utilizando, no fator (Ut), o número total de acessos da prestadora no SMP em janeiro de 2017 - 73.896.211 (setenta e três milhões, oitocentos e noventa e seis mil, duzentos e onze). Ou seja, entendeu a infração, além de sistêmica/procedimental, como de abrangência nacional (abrangência esta também considerada pela área técnica, conforme demonstra quadro do Tópico III). Entretanto, na Planilha de Recálculo de Multa (14699549) que acompanha a Análise nº 101/2025/VA, acredita-se que, por equívoco, a abrangência da infração, e consequentemente a receita operacional líquida (ROL) adotada como referência, foram delimitadas, de Brasil (BR) para BA, DF, ES, GO, MG, PA, PE, PR, RJ, RS, SC e SP. Além disso, a infração foi classificada como "restrita", com atingimento a "grupo limitado" de usuários, não observando o inciso I do item 5.1.6.1 da Resolução nº 219/2023, abaixo transcrito, e deixando de incluir no respectivo cálculo da multa a agravante de 10% (dez por cento), prevista no art. 19, III, do Rasa, uma vez que a infração é grave por vantagem direta e por atingimento a número significativo de usuários (art. 9º, §3º, I e IV, do Rasa).
+Resolução Anatel nº 219/2023
+5.1.6.1. A infração deverá ser considerada como grave por atingir número significativo de usuários, nos termos do art. 9º, §3º, IV do Rasa, em casos de:
+I - Infrações em que a unidade utilizada em "Ua" e "Ut" seja número de usuários ou número de chamadas e o quociente da divisão entre os fatores seja igual ou superior a 0,01, e igual ou superior a 30.000 (trinta mil); ou
+[grifou-se]
+3.22. Na Planilha de Recálculo (14699549) que acompanha a Análise nº 101/2025/VA (14302251), o valor da multa da infração ao art. 81, §§1º e 2º, do RGC, é correspondente a R$18.450.720,93 (dezoito milhões, quatrocentos e cinquenta mil, setecentos e vinte reais e noventa e três centavos). 
+3.23. Assim, quanto às alterações promovidas pelo Conselheiro Relator no cálculo da multa da infração ao art. 81, §§1º e 2º, do RGC, esta área técnica, passando a utilizar "usuários" como unidade de medida nos fatores (Ut) e (Ua), apresenta, na Planilha 14747558 deste Informe, recálculo de multa para o descumprimento em questão, com os ajustes necessários (destacados em azul na Planilha), para que a sanção corresponda ao entendimento exposto na Análise nº 101/2025/VA (14302251), em seus itens 5.23 a 5.38.
+3.24. Na Planilha 14747558, o valor de multa recalculado é de R$22.850.282,62 (vinte e dois milhões, oitocentos e cinquenta mil, duzentos e oitenta e dois reais e sessenta e dois centavos), salientando-se que o recálculo ora efetuado não implica em agravamento à situação da recorrente, pois neste Pado foi aplicada multa de R$36.803.477,38 (trinta e seis milhões, oitocentos e três mil, quatrocentos e setenta e sete reais e trinta e oito centavos) para essa infração (vide quadro do Tópico III). 
+Ou seja, levando-se em consideração os critérios definidos pelo Relator, a multa por tal infração deveria ser corrigida, passando a ser de R$22.850.282,62 (vinte e dois milhões, oitocentos e cinquenta mil, duzentos e oitenta e dois reais e sessenta e dois centavos).
+Peço licença, contudo, para discordar do Relator quanto ao caráter sistêmico da infração. Ainda que a fiscalização tenha relatado ser praxe não se emitir novo documento de cobrança, não há provas de que assim procedia a Recorrente em todos os casos. Pelo contrário. O Relatório transcreveu os procedimentos gerais, dele constando o que segue:
+Relatório de Fiscalização:
+Adicionalmente a isso, conforme apontado pela área técnica, em nenhum dos casos avaliados pela fiscalização (tarifa incorreta; fraude de subscrição e concessão por fidelização) a irregularidade foi identificada na totalidade de contestações. Dessa forma, não há, nos autos, dados que permitam concluir pelo caráter sistêmico da infração.
+Nesse caso, necessário reavaliar os parâmetros da sanção, já que, como mencionado anteriormente, o Relatório não trouxe o número de usuários atingidos, mas sim o número de protocolo de contestações (que podem, ou não, encontrar a correspondência de usuários em dois ou mais deles).
+A metodologia aprovada pela Resolução nº 219, de 2023, aplicada no presente caso, embora dê preferência ao uso de número de usuários atingidos, prevê, em consonância com precedentes deste Conselho, a utilização de unidade de medida proporcional nos casos em que não seja possível identificar a quantidade de usuários atingidos.
+Quando do uso de unidade de medida proporcional, a metodologia prevê:
+Para usuários atingidos:
+5.1.2.1. A unidade de medida proporcional será usada nos casos em que não seja possível identificar a quantidade de usuários atingidos em função da característica da infração, mas o item irregular guarde proporcionalidade em relação ao número de usuários. Nesses casos, deve-se considerar a quantidade de itens identificados em discordância com a regulamentação.
+Para usuários totais:
+5.1.3.1. Nos casos de infrações que utilizem outra unidade de medida no fator "Ua", o fator "Ut" deve guardar correspondência com o parâmetro adotado para a variável “Ua”, considerando-se a totalidade de itens existentes.
+Nesse caso concreto, não vejo outra possibilidade senão se utilizar de medida proporcional, vez que não é possível se identificar a quantidade de usuários atingidos. Assim, proponho utilizar-se, como atingidos, o número de contestações de contas não pagas para as quais não houve a emissão de novo documento sem o valor contestado, totalizando 64.162 (sessenta e quatro mil, cento e sessenta e duas).
+Diferentemente da proposta inicial da área técnica, que utilizou, para usuários totais, o total de contestações de usuários pós-pagos com contas não pagas, entendo que a medida que melhor guarda correspondência com a metodologia e com a infração seria o total de contestações de usuários pós-pagos no período, representando 1.048.575 (um milhão, quarenta e oito mil, quinhentas e setenta e cinco) contestações:
+Relatório de Fiscalização:
+Em petição extemporânea, a Recorrente requereu fossem considerados, como atingidos, o mesmo quantitativo de usuários considerados no PAC, de 79.009, sobre o total de usuários da prestadora. Porém, os usuários do PAC são aqueles afetados pela infração ao art. 85, do RGC, relativamente ao não ressarcimento em dobro, não se confundindo com os atingidos pela presente infração. 
+Mantidos os demais parâmetros e considerando a utilização da ROL nacional da Recorrente, o valor final da sanção para referida infração ao art. 81, §§1º e 2º, é de R$ 7.057.296,14 (sete milhões, cinquenta e sete mil, duzentos e noventa e seis reais e quatorze centavos), conforme planilha anexada ao presente Voto.
+Em resumo, proponho para o presente item:
+acompanhar o Relator quanto à caracterização da infração ao art. 81, §§1º e 2º de forma aglutinada, dando-se parcial provimento ao recurso;
+acompanhar o Relator quanto à redução do parâmetro dano para 5 (cinco), com parcial provimento ao recurso;
+corrigir a ROL utilizada pelo Relator para a ROL Brasil; e
+divergir do Relator quanto ao caráter sistêmico da infração, reformando de ofício a sanção de multa para aplicar, nos parâmetros Ut e Ua, respectivamente, o total de contestações de usuários pós-pagos no período (1.048.575) e o total de contestações de contas não pagas para as quais não houve a emissão de novo documento sem o valor contestado (64.162).
+IV.b. Do art. 83, do RGC
+Para a infração ao art. 83, do RGC, a área técnica alertou que a planilha de recálculo (SEI nº 14699549) que acompanhou a Análise do Relator replicou o recálculo da área técnica, com exceção do fator (Ut). Para este, o Relator preencheu com o número total de usuários da Recorrente em janeiro de 2017 no Brasil. No entanto, a infração é restrita às unidades federadas da BA, DF, ES, GO, MG, PA, PE, PR, RJ, RS, SC e SP. 
+Nesse sentido, apresentou o devido recálculo que, apesar de totalizar valor maior do que aquele que constou da Análise do Relator, não representa agravamento da sanção em relação à multa aplicada em primeira instância.
+Assim, acompanho o Relator quanto às alterações mencionadas em sua Análise para o dispositivo em questão, retificando, contudo, o total de usuários para aqueles correspondentes às unidades da Federação onde ocorrera as infrações, nos termos sugeridos pela área técnica, resultando em valor de multa de R$ 12.802,39 (doze mil oitocentos e dois reais e trinta e nove centavos).
+IV.c. Do art. 85, do RGC
+O art. 85, do RGC, determina à prestadora a devolução ao consumidor da quantia cobrada indevidamente, referente ao dobro do que pagou em excesso, acrescido de correção monetária e juros de 1% (um por cento) ao mês pro rata die.
+De acordo com o Relatório de Fiscalização (SEI nº 3744533), a conduta da Recorrente não estaria aderente à regulamentação. Transcrevo:
+Não Conforme. Com base na análise dos Bancos de Dados (NGIN / Atlys) de todas as contestações ocorridas entre novembro/2016 e janeiro/2017, encontraram-se as seguintes não conformidades: - No Pré-Pago (NGIN): 8% não foram creditados em dobro, embora fossem PROCEDENTES; - No Pós-Pago (ATLYS): 100% não foram creditados em dobro (Procedentes que pagaram a conta 320.795 contestações / 1.048.575 do total de contestações); - Na amostragem Pré- Pago, em 16 (dezesseis) casos esmiuçados de 239 (duzentos e trinta e nove) levantados, o que corresponde a 7 %, não foram ressarcidos em dobro; - Na amostragem Pós-Pago, de todos os casos procedentes, cujos consumidores haviam pago a fatura (7 casos em 49 equivalente a 14%), não houve devolução em dobro (100%). Portanto, pode-se afirmar que: - em contestações de Pré-Pago, a proporção estimada de itens não conformes é 6,667%. Ou seja, com 95% de confiança, a proporção de itens não-conformes na população é um número entre 4,226% e 9,950%. - em contestações de Pós-Pago, a proporção estimada de itens não conformes é 100%, sendo que, com nível de 95% de confiança, a proporção de itens não-conformes, levando-se em consideração não só o Art. 85, mas todas as outras possíveis irregularidades, na população das contestações, corresponderá a um número entre 6,76% e 24,69%. Com base na análise dos registros FOCUS amostrados (58) de todas as RECLAMAÇÕES contra a Telefônica ocorridas entre novembro/2016 e janeiro/2017, encontraram-se as seguintes não conformidades: - No Pré-Pago, de 20 (vinte) casos analisados, 8 (oito) não tiveram sua devolução em dobro (40%); - No Pós-Pago, de 38 (trinta e oito) casos analisados, 3 (três) não tiveram a devolução em dobro (8%). § único. A critério do Consumidor, os valores cobrados indevidamente.
+Outra passagem do Relatório também menciona a prática de não devolução em dobro na totalidade dos casos em que a reclamação foi considerada procedente, como na "fraude de subscrição":
+Já para a descrição "FRAUDE DE SUBSCRIÇÃO", sendo 26% dos casos reclamados, a mesma observação pode ser feita em 100% dos casos, uma vez que todos foram considerados procedentes, ou seja, os que já haviam pago a conta deveriam ter o RESSARCIMENTO EM DOBRO, o que não ocorreu para 126.944 (cento e vinte e seis mil novecentos e quarenta e quatro) contestações, ou seja, não conformidade com o caput do Art. 85.
+A área técnica citou, ainda, outras páginas do Relatório em que a infração foi constatada:
+Informe 50 (SEI nº 5218247)
+Ressalte-se aqui que os casos apontados nas demais páginas do Relatório de fiscalização (pg. 22 na concessão por fidelização: 34.278 (trinta e quatro mil, duzentos e setenta e oito mil) casos e na pg. 25, os 7 (sete) casos de pós pagos que não houve devolução em dobro e fl. 35, somados aos 6(seis) casos pontuais achados no Focus foram aglutinados à conduta sistêmica por se tratarem de condutas idênticas em descumprimento ao artigo 85 do RGC.
+Em primeira instância, a infração foi considerada sistêmica e esse caráter foi respaldado pela PFE no Parecer nº 486/2020/PFE-ANATEL/PGF/AGU (SEI nº 5803368):
+51. De fato, não merece guarida a tentativa da Prestadora de induzir que a infração ao art. 85, caput, do Anexo ao RGC a ela imputada, restringir-se-ia aos casos de concessão por ﬁdelização. Conforme claramente demonstrado, o script usado por seus funcionários deixa em evidência que se trata de conduta geral e abstrata, aplicada a todas as hipóteses como regra, nos termos do Parecer n° 00565/2017/PFE-ANATEL/PGF/AGU. Destaca-se, in casu, a observação da ﬁscalização, explicitada no trecho do RF supratranscrito: "não se fala em devolução em dobro".
+(original não sublinhado)
+O valor final da multa foi calculado em R$ 30.669.564,49 (trinta milhões, seiscentos e sessenta e nove mil, quinhentos e sessenta e quatro reais e quarenta e nove centavos).
+Em seu recurso, a Recorrente traz uma série de alegações sobre a infração em comento, entre elas a de que seu script previa o ressarcimento em dobro em caso de erro da prestadora em fatura paga, arrolando jurisprudências do STJ no sentido de que a devolução em dobro só é devida quando demonstrada a má-fé do credor na cobrança dos valores. Colaciona o seguinte print à sua manifestação:
+Quanto ao cálculo da sanção, ao analisar o Recurso, a área técnica fez algumas ressalvas (SEI nº 13127588).
+Inicialmente, propôs alterar o caráter sistêmico da infração, pontuando, no entanto, que o Relatório de Fiscalização narra a conduta utilizando o quantitativo de contestações e não de usuários. Nesse cenário:
+No pré-pago (análise do Banco de Dados de Contestações e Devoluções) - 781.794 (setecentas e oitenta e uma mil, setecentas e noventa e quatro) contestações, das quais 220.070 (duzentas e vinte mil e setenta) foram consideradas como descumprimento ao art. 85, caput, do RGC;
+No pós-pago (análise do Banco de Dados de Contestações e Devoluções) - 1.048.575 (um milhão, quarenta e oito mil, quinhentas e setenta e cinco) contestações, das quais 137.392 (cento e trinta e sete mil, trezentas e noventa e duas) foram consideradas como descumprimento ao art. 85, caput, do RGC, em "tarifa incorreta"; 134.540 (cento e trinta e quatro mil, quinhentas e quarenta) foram consideradas como descumprimento ao art. 85, caput, do RGC, em "fraude de subscrição"; e 36.087 (trinta e seis mil e oitenta e sete) foram consideradas como descumprimento ao art. 85, caput, do RGC, em "concessão por fidelização", totalizando 308.019 (trezentas e oito mil e dezenove) contestações;
+No Sistema Focus (análise do Sistema Focus) - 84.636 (oitenta e quatro mil, seiscentas e trinta e seis) contestações, das quais 6 (seis) foram consideradas como descumprimento ao art. 85, caput, do RGC.
+Considerando os quantitativos de contestações, a área técnica propôs rever o cálculo da sanção, adotando "unidade de medida proporcional" da infração ao art. 85, caput, como "contestação", utilizando:
+no fator usuários totais (Ut) o total de contestações analisadas no período, ou seja, 1.915.005 (um milhão, novecentas e quinze mil e cinco), correspondente à soma de 781.794 (setecentas e oitenta e uma mil, setecentas e noventa e quatro) de pré-pago + 1.048.575 (um milhão, quarenta e oito mil, quinhentos e setenta e cinco) de pós-pago + 84.636 (oitenta e quatro mil, seiscentas e trinta e seis) registradas no Focus; e
+no fator usuários atingidos (Ua), a quantidade de contestações em desconformidade com o dispositivo regulamentar, correspondente a 528.095 (quinhentos e vinte e oito mil e noventa e cinco), sendo 220.070 (duzentos e vinte mil e setenta) de pré-pago + 308.019 (trezentos e oito mil e dezenove) de pós-pago + 6 (seis) de Focus.
+O recálculo levado a efeito pela área técnica totalizou R$ 18.727.518,27 (dezoito milhões, setecentos e vinte e sete mil, quinhentos e dezoito reais e vinte e sete centavos).
+Ressaltou, contudo, o comando do art. 18, §2º, do RASA, que estabelece que o valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável. 
+Nesse sentido, buscou, nos autos do PAC nº 53500.047004/2024-62, instaurado para fins de ressarcimento aos usuários lesados, os valores indevidamente cobrados para se calcular, nos termos de precedentes deste Conselho objeto das Análises nº 200/2017/SEI/IF (SEI nº 1823042) e nº 13/2018/SEI/EC (SEI nº 2310525), o "custo de oportunidade da retenção dos valores devidos, corrigido pela taxa Selic".
+Destacou que, nos autos do PAC, entre os 528.095 (quinhentos e vinte e oito mil e noventa e cinco) casos atingidos pela infração, só foi possível estimar a vantagem em relação a 308.019 (trezentos e oito mil e dezenove) deles. Com base nos valores apurados, e em atendimento ao art. 18, §2º do RASA, propôs se afastar a metodologia de cálculo da sanção, aplicando à Recorrente multa no valor máximo permitido pelo art. 17, caput e §1º do RASA, no montante de R$ 50.000.000,00 (cinquenta milhões de reais). Trago a tabela de resumo do recálculo com fulcro na vantagem auferida:
+ Descumprimento
+ | 
+ Cobrança indevida
+ | 
+ Correção pela Taxa Selic
+ | 
+ Vantagem Auferida
+ | 
+ Dobro da Vantagem Auferida
+ | 
+ Acréscimo de 30% de Agravantes
+ | 
+ Valor Base na Planilha I (13203105)
+ | 
+ Valor Final da Multa
+ | 
+ Art. 85, caput, do RGC
+ | 
+ R$154.916.311,02
+ | 
+ R$281.479.700,59
+ | 
+ R$126.563.389,57
+ | 
+ R$253.126.779,14
+ | 
+ R$329.064.812,88
+ | 
+ R$18.727.518,27
+ | 
+ R$50.000.000,00
+ | 
+Ao se manifestar sobre a possibilidade de agravamento da sanção, a Recorrente alegou:
+que a Anatel cai em contradição, pois ao reconhecer que, dos 528.095 (quinhentos e vinte e oito mil e noventa e cinco) usuários supostamente atingidos, apenas 308.019 (trezentos e oito mil e dezenove) possuem valores passíveis de estimativa, não há certeza de que os demais tenham direito ao ressarcimento, ou que a prestadora já não tenha realizado a devolução. Essa incerteza tornaria indevida a caracterização da infração para todos os 528.095 (quinhentos e vinte e oito mil e noventa e cinco) casos;
+que para a parcela remanescente de 308.019 usuários, constatou que diversos usuários não estariam hábeis ao ressarcimento, seja por duplicidade de registro de contestação para o mesmo usuário, em aproximadamente 80% (oitenta por cento) dos casos; inclusão indevida de contestações julgadas improcedentes; e inclusão de usuários que não pagaram a fatura contestada.
+A Recorrente também alegou ser improcedente o cálculo baseado no dobro da vantagem auferida, pois não teria obtido qualquer vantagem, na medida em que esta se exaure com o ressarcimento ao usuário.
+Solicitou prazo para apresentar novas contestações ao cálculo e reunir elementos necessários à sua defesa.
+A área técnica rebateu as alegações da Recorrente. Quanto à primeira delas, esclareceu, devidamente, que se trata de vantagem auferida estimável e que o fato de não se conseguir estimar o montante devido a todos os consumidores não significa que a cobrança indevida não ocorreu. Os autos contêm detalhado levantamento e análise de todas as situações descritas pelos fiscais.
+Quanto às inconsistências apontadas, reavaliou as supostas duplicidades e concluiu que não se trata de linhas repetidas e sim de repetidas cobranças indevidas para um mesmo consumidor. Os demais casos reportados pela Recorrente sequer constaram da planilha do PAC utilizada para cálculo da vantagem auferida.
+Em relação ao cálculo baseado no dobro da vantagem auferida, a área técnica corretamente salientou que o simples ato de cobrança indevida já gera vantagem, havendo, até o ressarcimento, custo de oportunidade pela retenção desses valores, ou "ganho econômico ao longo do tempo". Portanto, se o ressarcimento foi simples e não em dobro, ainda há a retenção de valores que geram uma vantagem para a prestadora ao longo do tempo, até o efetivo ressarcimento.
+Em petição extemporânea (SEI nº 14490710), a Recorrente reiterou as alegações de duplicidade de registros nas planilhas anexadas ao PAC, as quais subsidiaram a materialidade e o cálculo da multa associada à infração ao art. 85, caput, apresentando casos que julgou serem inconsistências e duplicidades nos registros.
+Em nova petição extemporânea (SEI nº 14584683), afirmou que a análise da planilha usada de insumo no PAC não permite, de forma isolada, se concluir pela existência de infrações, pois seria necessário que a Fiscalização a tivesse cotejado com informações diretamente nos sistemas da Prestadora.
+Com isso, elencou algumas falhas, como (i) os usuários também foram ressarcidos por meio de créditos, conforme comprovantes anexados, e não só por fatura; (ii) a planilha não reflete a situação do serviço no momento da contestação; (iii) os dados não permitiriam verificar se o usuário solicitou ou não a emissão de boleto com valores incontroversos, entre outros motivos com os quais concluiu que os dados deveriam ser confrontados com seus sistemas.
+No seu entender, as concessões por fidelização, por exemplo, não configurariam cobranças indevidas, mas mera liberalidade da Prestadora para manter o vínculo com o usuário. De igual forma, considera não ser razoável se considerar vantagem auferida sobre ressarcimentos por "fraude de subscrição", já que se tratam de atos praticados por terceiros de má-fé, tendo a Prestadora agido de boa-fé e cobrado com base em dados validados em seus sistemas de cadastro.
+Considera também que a correção dos valores só pode ser considerada a partir do vencimento da obrigação, ou seja, após 30 (trinta) dias da contestação, por ser o prazo estipulado na norma para o ressarcimento.
+O mesmo argumento de não configuração de cobranças indevidas em casos de fraude de subscrição foi trazido em nova petição extemporânea (SEI nº 14866620). No entender da Recorrente, só haveria cobrança indevida em caso de conduta contrária à boa-fé objetiva no momento da cobrança, mas o que ocorreu foi legítimo exercício de direito, por ter sido vítima direta da conduta ilícita.
+Já em petição extemporânea (SEI nº 15146942) protocolada no dia da publicação da pauta de Reunião do Conselho na qual se incluiu este Pado, a Recorrente volta a alegar duplicidade de registros, a requerer o expurgo dos valores já ressarcidos e a contestar a data de início da atualização monetária, argumentos esses já trazidos anteriormente.
+Alguns outros pontos são trazidos pela Recorrente como forma de tentar contestar a validade da planilha, como o fato de haver ressarcido montante dos valores em 2 de março de 2017, mas para o dobro da vantagem se considerou como termo a data do Despacho Decisório, qual seja, 1º de julho de 2024, bem como requereu a exclusão dos ressarcimentos promovidos em até 30 (trinta) dias, por não representarem benefício econômico para a empresa.
+Em resumo, após todas as colocações anteriores, a Recorrente entende pertinente excluir da planilha os casos de fraude de subscrição, de concessão por fidelização e de ressarcimentos com até 30 (trinta) dias. Além disso, altera a data do cômputo da correção, chegando a um valor de multa de R$ 4.746.800,24 (quatro milhões, setecentos e quarenta e seis mil, oitocentos reais e vinte e quatro centavos), que seria o correto, no seu entender.
+As alegações de mérito da Recorrente foram devidamente rejeitadas pelo Relator, não havendo divergência da minha parte. 
+Nesse aspecto, faço coro ao Relator de que a obrigação de ressarcimento em dobro prevista na norma não está condicionada à comprovação de má-fé da prestadora. Sequer caberia, no caso, a hipótese de "engano justificável" prevista no Código de Defesa do Consumidor - CDC, uma vez que, ao presente caso, o regime é de responsabilidade objetiva da empresa pelos danos causados aos consumidores.
+Com relação às concessões por fidelização, em nenhum momento a Recorrente fez provas de que as contestações eram improcedentes. Pelo contrário, as declarou procedentes nos registros analisados pela Fiscalização. 
+No que se refere à fraude de subscrição, não há que se isentar a Recorrente de responsabilidade em razão de conduta de terceiros de má-fé. A Recorrente tem total domínio sobre sua rede e sobre as habilitações dos consumidores. Se não zelou pela correta habilitação, prejudicando um consumidor com cobranças indevidas, tem o dever de ressarci-lo em dobro. Tal cobrança, ao contrário do que tenta aparentar a Recorrente, decorre de ausência de procedimentos internos seus, capazes de impedir a contratação de serviços em nome de terceiros. 
+Com relação aos ressarcimentos efetuados em até 30 (trinta) dias, é correto afirmar que aqueles devidamente ressarcidos, em dobro e com as devidas correções, foram excluídos do cálculo. Porém, foram mantidos os casos em que o ressarcimento não ocorreu em sua completude, relativamente à parcela faltante, conforme recorte abaixo extraído do PAC. Nesse caso, não há que se falar de exclusão de qualquer ressarcimento promovido dentro dos 30 (trinta) dias:
+Portanto, os argumentos de mérito não se sustentam.
+Quanto ao cálculo da sanção, o Relator concordou com a Recorrente quanto à existência de duplicidade de registros. Dessa forma, considerando que o PAC se encontrava sobrestado e em fase preliminar, entendeu que as informações constantes daquele processo ainda estavam sujeitas a ajustes e modificações, desaconselhando a sua utilização como fundamento para a aplicação do art. 18, §2º do RASA na fixação da sanção.
+Opinou pela utilização da metodologia de cálculo de multa, tal qual adotado em primeira instância, mas com alteração de parâmetros.
+Nesse contexto, utilizou, como atingidos, o quantitativo de 79.009 (setenta e nove mil e nove) usuários, informada na manifestação SEI nº 14584683, da Recorrente, que já teria excluído os registros duplicados. Ao final, a multa pela presente infração totalizou R$ 277.923,60 (duzentos e setenta e sete mil, novecentos e vinte e três reais e sessenta centavos).
+A conclusão do Relator sobre a existência de duplicidades de registros, o que o levou a afastar o cálculo pelo dobro da vantagem auferida, contudo, não foi respaldada pela área técnica, visto que não foi promovida diligência para avaliação dos argumentos da Recorrente.
+Ao pedir vistas da matéria, solicitei à área técnica que avaliasse a procedência dos fatos e dados trazidos pela Recorrente, bem como trouxesse considerações adicionais que considerasse pertinente.
+Em resposta (SEI nº 14715995), a área técnica citou que as alegações da Recorrente foram também juntadas aos autos do PAC e, considerando a diligência por mim promovida, analisadas pelo Informe nº 927/2025/CODI/SCO (SEI nº 14742545), datado de 19 de novembro de 2025.
+Salientou que a Telefônica, na manifestação extemporânea SEI nº 14490710 e 14584683, não negou a ocorrência de cobranças indevidas, chegando a mensurar os usuários por ela afetados - 79.009 (setenta e nove mil, noventa e nove) - como também não se negou a estimar o montante indevidamente cobrado - aproximadamente R$21.000.000,00 (vinte e um milhões de reais). Portanto, seria possível, de igual forma, se calcular a sanção com base na vantagem auferida estimável. 
+Nesse contexto, a área técnica pontuou que o Relator, para o cálculo da sanção, aceitou o número de usuários atingidos nos termos trazidos pela Recorrente na petição SEI nº 14584683, mas não o montante indevidamente cobrado também trazido por ela, afastando o critério do art. 18, §2º, do RASA.
+Em que pese esse racional, esclareceu que o recálculo levado a efeito pelo Relator traz equívocos. Inicialmente, se classificou como leve a infração ao art. 85, caput, do RGC, que, na verdade, é grave por vantagem direta. Além disso, com a utilização da unidade de medida "usuários" ao invés da vantagem auferida, ter-se-ia a incidência da agravante de 10% (dez por cento), prevista no art. 19, III, do Rasa, por atingimento a número significativo de usuários (inciso I do item 5.1.6.1 da Resolução nº 219/2023).
+Dessa forma, caso se decida levar a efeito o racional proposto pelo Relator, utilizando a metodologia e os parâmetros de usuários atingidos por ele propostos, o cálculo deve ser retificado.
+Informou, contudo, ser procedente as alegações de duplicidade de registros informadas pela Recorrente, mas que promovendo-se as devidas exclusões de duplicidades e ressarcimentos, e considerando a existência de 77.971 (setenta e sete mil, novecentos e setenta e um) usuários (individualizados pelo nome mais CPF/CNPJ), número exatamente igual ao trazido pela Recorrente (SEI nº 14490710), se apurou que tais usuários sofreram cobrança indevida no valor original de R$26.779.030,97 (vinte e seis milhões, setecentos e setenta e nove mil, trinta reais e noventa e sete centavos). Transcrevo:
+Informe nº 927/2025/CODI/SCO
+3.3. Através do Informe nº 229/2024/CODI/SCO (12308266), realizou-se a apuração de 308.019 (trezentas e oito mil dezenove) cobranças indevidas na prestação de serviços pela Telefônica S.A., afetando o total de 78.836 (setenta e oito mil oitocentos e trinta e seis) pessoas individualizadas pelo nome mais o CPF/CNPJ, sendo claro que ocorreu mais de uma cobrança para vários consumidores, no período de novembro e dezembro de 2016 e janeiro de 2017, conforme Planilha Memoria de Calculo - 53500.047004.2024 (12383556). 
+(...)
+3.42. Como a análise deste PAC considerou as evidências constantes do processo de fiscalização e também do Pado n.º 53500.002822/2019-79, o tratamento dado ao conteúdo do relatório se restringiu a filtrar os casos considerados procedentes, ou seja, os casos em que a contestação foi informada como procedente e para os quais o consumidor efetuou o pagamento. Não houve filtro buscando por linhas repetidas, situação não vislumbrada por esta equipe ao considerar o zelo e a boa-fé da prestadora no fornecimento das respostas aos RIs da fiscalização. Contudo, a própria prestadora informou, após proferida decisão de primeira instância, que o conteúdo da sua resposta ao RI da Fiscalização não estaria consistente, por apresentar um sem número de registros repetidos, o que acaba por causar embaraços até mesmo para a fiscalização, culminando em prejuízos à instrução do processo sancionador, ao acompanhamento do ressarcimento e mesmo a revisão da multa aplicada pelo Conselho Diretor da Anatel.
+3.43. Desta feita, recebida a demanda de diligência do Conselho Diretor para validar as alegações da prestadora, nova análise foi realizada nos registros constantes do Conteúdo de Mídia Dados de Contestações (SEI n.º 12301894).
+3.44. O primeiro ponto de alerta sobre as alegações da prestadora, atinente à modalidade de ressarcimento, para o qual ela informa que houve ressarcimentos via depósito em conta corrente. Salienta-se que esta informação não afeta as conclusões deste PAC, pelo fato de não importar para o ressarcimento a via e sim a comprovação de sua execução; o objeto do presente processo é a comprovação e atesto do efetivo ressarcimento.
+3.45. Quanto à alegação de que o campo “status serviço” não permite indicar se a suspensão ou bloqueio do serviço decorreu do crédito contestado ou de débito anterior, tem-se que esta informação não é relevante para a análise deste PAC, dado que aqui se considera relevante ao acompanhamento apenas as cobranças pagas e neste quesito não interessa se o terminal/cliente estaria ao tempo da contestação suspenso ou bloqueado, importando simplesmente que houve a contestação de uma cobrança indevida quitada. Demonstrar que a cobrança era devida é uma obrigação da prestadora, principalmente por ser contestada. Ausente tal comprovação, o consumidor tem o direito de rever os valores cobrados indevidamente, na conformidade do artigo 85 do RGC.
+3.46. Cotejando os registros e considerando os argumentos apresentados pela prestadora, constatou-se a existência de registros/linhas com conteúdo idêntico, sugerindo a existência de registros duplicados e, em alguns casos, com mais de uma duplicata. Constatou-se casos com mesmo protocolo e casos com protocolo distinto. Registros com o mesmo protocolo sugerem erro na extração dos dados, já casos com protocolos distintos não se pode conjecturar, pois a sugestão mais lógica aponta para erro na inserção de dados no SGBD, mas isso não passa de conjectura, que não foi considerada na primeira avaliação pelo fato de não se esperar erro deste nível no registro de dados de tamanha importância.
+3.47. Desta feita, aplicaram-se no arquivo de resposta da prestadora filtros, para primeiro extrair os registros contendo os três motivos de cobrança indevida, a saber, “TARIFA INCORRETA”, “CONCESSÃO POR FIDELIZAÇÃO”, “FRAUDE DE SUBSCRIÇÃO”. Importante ressaltar que não é possível realizar esta análise e operação em aplicativos como Excel da Microsoft ou similares, em razão da limitação imposta ao número de linhas deste arquivo, a saber, 1.112.053 linhas. Realizada a extração de dados do arquivo principal, gerando arquivos menores contendo somente o motivo específico, aplicou-se nestes, filtro para eliminar os registros duplicados considerando a chave nome, “ID_CONS”, “CPF_CNPJ_CLIENTE”, “MES_REF” e “VALOR_CONTEST”.
+3.48. A operação de seleção dos registros vinculados a cada motivo de contestação gerou arquivos exclusivos que podem ser acessados nos seguintes anexos:
+a) Planilha CONCESSÃO_POR_FIDELIZAÇÃO (14749661).
+b) Planilha FRAUDE_DE_SUBSCRIÇÃO (14749750).
+c) Planilha TARIFAÇÃO_INCORRETA (14749841).
+3.49. Com estes filtros foram encontrados os seguintes quantitativos:
+ Motivo
+ | 
+ Total de registros brutos.
+ | 
+ Total de registros únicos. Com filtro.
+ | 
+ Número de consumidores afetados.
+ | 
+ Total de registros procedentes e pagos.
+ Sem filtro / com filtro
+ | 
+ Valor da cobrança indevida com filtro
+ | 
+ Valor ressarcido com filtro.
+ | 
+ Valor devido corrigido
+ Sem filtro / com filtro
+ | 
+ TARIFA INCORRETA
+ | 
+ 477.049
+ | 
+ 314.014
+ | 
+ 24.974
+ | 
+ 137.392 / 42.906
+ | 
+ R$14.994.592,58
+ | 
+ R$12.318.363,44
+ | 
+ R$420.347.384,81 / R$58.251.112,14
+ | 
+ CONCESSÃO POR FIDELIZAÇÃO
+ | 
+ 220.002
+ | 
+ 175.348
+ | 
+ 8.318
+ | 
+ 36.087 / 13.365
+ | 
+ R$4.668.088,26
+ | 
+ R$4.277.221,51
+ | 
+ R$86.462.444,01 / R$16.628.144,30
+ | 
+ FRAUDE DE SUBSCRIÇÃO
+ | 
+ 285.765
+ | 
+ 227.917
+ | 
+ 47.766
+ | 
+ 134.540 / 103.372
+ | 
+ R$7.116.350,13
+ | 
+ R$7.112.605,84
+ | 
+ R$27.486.069,62 / R$23.631.871,32
+ | 
+ TOTAL
+ | 
+ 982.816
+ | 
+ 717.279
+ | 
+ 77.971
+ | 
+ 308.019 / 159.643
+ | 
+ R$26.779.030,97
+ | 
+ R$23.708.190,79
+ | 
+ R$534.295.898,44 /
+ R$98.511.127,76
+ | 
+(...)
+3.61. Reavaliando o arquivo fornecido pela prestadora, em resposta ao RI da fiscalização, com foco específico, constatou-se registros/linhas com conteúdo idêntico. Essa constatação só é possível ao se criar uma chave de unicidade e aplicar um filtro de unicidade, usando o conteúdo desta chave como elemento a ser filtrado. A chave foi composta pelos seguintes campos (nome, “ID_CONS”, “CPF_CNPJ_CLIENTE”, “MES_REF” e “VALOR_CONTEST”).
+3.62. Considerando somente um registro após o emprego do filtro de unicidade, o número de registros aproveitáveis reduz consideravelmente. Ressalta-se que não existe entre os campos do relatório/base de dados, fornecido pela prestadora, um que represente o time stamp do registro, informação que poderia demonstrar se a duplicidade decorre de mais de um registro da mesma reclamação (consumidor inseriu mais de uma contestação para o mesmo caso) ou outra motivação (uma possível inconsistência gerada pela prestadora ou ainda uma falha na extração dos dados). Mesmo assim, ainda resta uma grande quantidade de registros pendentes de comprovação de ressarcimento.
+3.63. A tabela 02, que serve para apresentar um pequeno resumo das quantidades, demonstra que a prestadora ressarciu valor inferior ao montante contestado pelos consumidores, considerando os casos pagos e procedentes, conforme informação da própria prestadora. Por esta razão, conclui-se que não houve a repetição do indébito nem a correção monetária e/ou a incidência dos juros descritos no artigo 85 do RGC.
+3.64. Por estas constatações, é necessário que a prestadora demonstre tais ressarcimentos em sua completude, com a apresentação de evidências que podem ser a fatura na qual o crédito foi aportado para o consumidor, uma cópia do comprovante de depósito, quando este tiver solicitado que o recurso fosse creditado em conta bancária ou, se o ressarcimento não foi efetivado, que o proceda e encaminhe documentação demonstrando sua realização.
+Da obrigação de reparação.
+Após aplicar, aos valores pendentes, as regras do artigo 85 do RGC, relativos à atualização monetária do valor cobrado indevidamente, sobre os R$ 26.779.030,97 (vinte e seis milhões, setecentos e setenta e nove mil trinta reais e noventa e sete centavos) cobrados indevidamente, obtém-se, considerando como termo final para os juros o dia 31/10/2025 e para atualização monetária o acumulado do IPCA disponível referente a 30/09/2025, o montante corrigido de R$ 98.511.127,76 (noventa e oito milhões, quinhentos e onze mil cento e vinte e sete reais e setenta e seis centavos).
+(...)
+[grifou-se]
+Tecidas as considerações acerca da análise das petições da Recorrente, a área técnica conclui a diligência apresentando recálculo com fulcro na metodologia e no número de consumidores afetados após reanálise dos dados, corrigindo os equívocos no cálculo apresentado pelo Relator, bem como, para fins de atendimento ao art. 18, §2º, do RASA, recálculo considerando o dobro da vantagem auferida em relação ao valor apurado de R$ 26.779.030,97 (vinte e seis milhões, setecentos e setenta e nove mil, trinta reais e noventa e sete centavos):
+ Descumprimento
+ | 
+ Cobrança indevida
+ | 
+ Correção pela Taxa Selic
+ | 
+ Vantagem Auferida
+ | 
+ Dobro da Vantagem Auferida
+ | 
+ Acréscimo de 30% de Agravantes
+ | 
+ Valor Base na Planilha 14747558
+ | 
+ Valor Final da Multa
+ | 
+ Art. 85, caput, do RGC
+ | 
+ R$26.779.030,97
+ | 
+ R$48.656.939,80
+ | 
+ R$21.877.908,83
+ | 
+ R$43.755.817,66
+ | 
+ R$56.882.562,96
+ | 
+ R$1.158.416,21
+ | 
+ R$50.000.000,00
+ | 
+Ainda assim, como se vê, o valor final da sanção seria de R$50.000.000,00 (cinquenta milhões de reais), valor máximo permitido para a infração, de acordo com o art. 17, caput e §1º, do RASA.
+Na transcrição do Informe da área técnica se verifica que os argumentos trazidos pela Recorrente foram analisados. As duplicidades foram devidamente excluídas, os valores já ressarcidos, sendo esses aqueles para os quais a fiscalização já apontou o ressarcimento e/ou há provas de que foram ressarcidos nos autos, foram também excluídos, permanecendo a parcela complementar quando se tratou de ressarcimento simples e sem a devida correção.
+Com isso, aplicados os devidos filtros relativos a tais ajustes, ainda se verificou uma pendência de ressarcimento que totaliza R$ 26.779.030,97 (vinte e seis milhões, setecentos e setenta e nove mil, trinta reais e noventa e sete centavos).
+Um dos pontos trazidos pela Recorrente é que a correção dos valores pela taxa SELIC só poderia ser considerada a partir do vencimento da obrigação regulamentar. Ou seja, se analisou contestações de novembro de 2016 e o prazo para ressarcimento seria de 30 (trinta) dias, a obrigação só poderia ser considerada vencida após dezembro de 2016.
+Nesse aspecto equivoca-se a Recorrente. A obrigação de ressarcimento nasce no momento do pagamento, pelo usuário, daquilo que lhe foi cobrado indevidamente. Sequer nasce na data da contestação. A partir do momento do pagamento do valor indevidamente cobrado, passa a incidir o dever de se ressarcir em dobro, com a devida correção. O prazo de 30 (trinta) dias previsto na regulamentação é para a análise de eventual contestação. Sendo procedente, a correção deve ser aplicada desde a data da cobrança indevida e não a partir desses 30 (trinta) dias. Dessa forma, a aplicação da taxa SELIC foi corretamente levada a efeito pela área técnica.
+Repiso que todo o montante ressarcido e devidamente comprovado e atestado nos autos do PAC foram excluídos do valor final. 
+Entendo, conforme já expus no meu Voto nº 2/2025/OP (SEI nº 14628089), que PAC e PADO não se confundem. A obrigação de ressarcir é autônoma e sua verificação e execução, materializadas no PAC, não podem estar condicionadas à conclusão do processo que apura a infração para fins punitivos (PADO).
+Se a Recorrente, notificada para se manifestar sobre os cálculos promovidos pela área técnica no PAC, apresentou, em 2024, solicitação de sobrestamento dos autos e, nesse interregno, não juntou, naqueles autos, nenhum outro comprovante de ressarcimento dos usuários listados que permitissem o atesto do cumprimento de sua obrigação autônoma de reparar os danos causados, não pode pretender agora que a sua inércia lhe beneficie para afastar o cálculo da multa sobre o dobro da vantagem auferida. 
+Do exposto, divirjo do Relator para alterar o cálculo da presente infração pelo dobro da vantagem auferida, totalizando R$ 50.000.000,00 (cinquenta milhões de reais).
+IV.d. Do art. 85, parágrafo único, I, do RGC
+O dispositivo em comento estabelece a possibilidade de o usuário indicar a forma como pretende ser ressarcido pelas cobranças indevidas: compensação na próxima fatura, créditos ou depósito bancário.
+A infração foi caracterizada e considerada como sistêmica em primeira instância, entendendo a área técnica haver forte tendência em induzir o consumidor a aceitar o ressarcimento apenas em conta futura, inclusive pedindo que o usuário pague a conta contestada.
+Em petição extemporânea, a Recorrente apresentou comprovantes de depósito em conta aos usuários relacionados no PAC, razão pela qual o Relator entendeu pela fragilidade de se considerar como sistêmica a infração.
+Por tal razão, alterou o universo de usuários atingidos para aqueles identificados pela fiscalização, somando a eles o universo de usuários da modalidade pré-paga que foram considerados como atingidos pela infração ao art. 85, II, do RGC.
+Ao analisar a minha diligência, a área técnica apontou equívoco no recálculo apresentado pelo Relator, conforme transcrevo:
+Informe 912 (14715995)
+3.43. Destaca-se que nos Informes nº 10/2025/CODI/SCO (13127588) e nº 375/2025/CODI/SCO (13622335) a referida infração foi considerada de natureza grave, nos termos do art. 9º, §3º, I (vantagem direta) e IV (atingimento a número significativo de usuários), do Rasa, incidindo sobre a irregularidade a agravante de 10% (dez por cento), prevista no art. 19, III, do mesmo Regulamento. Na Planilha de Recálculo (14699549) da Análise, a infração foi classificada como leve, o que, pondera-se, foi por equívoco, pois, ainda que a diminuição do fator dano (D) tenha decorrido do entendimento de ausência de vantagem direta, persiste a natureza grave da infração, por atingimento a número significativo de usuários - 924.898 (novecentos e vinte e quatro mil, oitocentos e noventa e oito).
+3.44. Assim, quanto às alterações promovidas pelo Conselheiro Relator no cálculo da multa da infração ao art. 85, parágrafo único, I, do RGC, esta área técnica, passando a utilizar "usuários" como unidade de medida nos fatores (Ut) e (Ua), apresenta, na Planilha 14747558 deste Informe, recálculo de multa para o descumprimento em questão, com os ajustes necessários (destacados em azul na Planilha), para que a sanção corresponda ao entendimento exposto na Análise nº 101/2025/VA (14302251), em seus itens 5.87 a 5.103.
+3.45. Na Planilha 14747558, o valor de multa recalculado é de R$2.553.435,94 (dois milhões, quinhentos e cinquenta e três mil, quatrocentos e trinta e cinco reais e noventa e quatro centavos). Não há agravamento à situação da recorrente, pois neste Pado foi aplicada multa de R$30.669.564,49 (trinta milhões, seiscentos e sessenta e nove mil, quinhentos e sessenta e quatro reais e quarenta e nove centavos) para essa infração (vide quadro do Tópico III).
+Em razão do apontamento trazido pela área técnica, acompanho o exposto no sentido de manter a infração como pontual, assim como o Relator, dando parcial provimento ao recurso, mas retificando os parâmetros da sanção que, por equívoco, não corresponderam ao entendimento trazido na Análise.
+IV.e. Considerações adicionais
+Embora não tenha sido objeto de recurso e tampouco da Análise do Relator, a área técnica, com o intuito de manter uma padronização no cálculo da sanção, propôs alterar os parâmetros da infração ao art. 6º, IV, do CDC para usuários no fator (Ut), considerando os acessos do SMP nos Estados do Rio de Janeiro e de São Paulo. O valor da multa, contudo, não se alterou.
+Não vejo óbices em acompanhar o exposto pela área técnica.
+IV.f. Conclusão do item
+Do exposto, concluo por:
+Em relação ao art. 81, §§1º e 2º, do RGC:
+acompanhar o relator quanto à caracterização da infração de forma aglutinada, reduzindo o fator dano para 5 (cinco), dando parcial provimento ao recurso;
+alterar a ROL utilizada pelo Relator para a ROL Brasil;
+divergir do Relator quanto ao caráter sistêmico da infração, reformando de ofício a sanção de multa para aplicar, nos parâmetros Ut e Ua, respectivamente, o total de de contestações de usuários pós-pagos no período (1.048.575) e o total de contestações de contas não pagas para as quais não houve a emissão de novo documento sem o valor contestado (64.162).
+Em relação ao art. 83, do RGC, alterar o fator Ut para os usuários das unidades federadas da BA, DF, ES, GO, MG, PA, PE, PR, RJ, RS, SC e SP. 
+Em relação ao art. 85, divergir do cálculo do Relator, aplicando-se o dobro da vantagem auferida, com os devidos expurgos de duplicidades e ressarcimentos promovidos e atestados pela área técnica nos autos do PAC nº 53500.047004/2024-62;
+Em relação ao art. 85, parágrafo único:
+acompanhar o Relator na alteração da infração para pontual, somando-se o universo de usuários das modalidades pós-paga (inciso I) e pré-paga (inciso II), dando parcial provimento ao recurso; 
+retificar o parâmetros de cálculo da sanção relativo à gravidade da infração, de leve para grave,, por atingir número significativo de usuários.
+Alterar, de ofício, os usuários totais da infração ao art. 6º, IV, CDC para os acessos SMP nos Estados do Rio de Janeiro e São Paulo, sem alteração no valor da multa.
+Alterar o valor da multa de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil novecentos e três reais e vinte e dois centavos) para R$ 60.594.250,79 (sessenta milhões, quinhentos e noventa e quatro mil, duzentos e cinquenta reais e setenta e nove centavos), conforme planilha anexada ao presente Voto.
+V - DA OBRIGAÇÃO DE FAZER
+V.a. Da análise de conveniência e oportunidade quanto à aplicação da sanção de Obrigação de Fazer 
+A aplicação da sanção de obrigação de fazer está prevista no RASA, nos seguintes termos: 
+Art. 15. As sanções de obrigação de fazer e de não fazer poderão ser aplicadas nas infrações classificadas como leves, médias e graves, cumulativamente ou não com a sanção de multa, quando a autoridade competente, valendo-se da oportunidade e conveniência, verificar que a imposição de prática ou abstenção de conduta à sancionada será mais razoável e adequada para o atingimento do interesse público, devendo a escolha ser devidamente motivada, observados os princípios da legalidade, razoabilidade, proporcionalidade e economicidade. 
+Como se vê, o balizador dessa decisão é o interesse público, tal como exposto no seguinte trecho extraído do Parecer nº 882/2019/PFEANATEL/PGF/AGU, de 12 de dezembro de 2019 (SEI nº 5028661), elaborado pela PFE-Anatel: 
+Parecer nº 882/2019/PFEANATEL/PGF/AGU (SEI nº 5028661) 
+"20. Como se observa, é o interesse público que irá ensejar a aplicação da sanção de obrigação de fazer. Caso a autoridade administrativa competente, no seu juízo discricionário, entenda conveniente, oportuno e mais adequado ao atendimento do interesse público a fixação de sanção de obrigação de fazer, ao invés de obrigação de pagar (multa), ou concomitantemente com esta, não haverá óbice para implementação desta medida, desde que apresente a devida fundamentação. 
+(...)
+25. De início, é muito importante registrar que a opção/escolha pela obrigação de fazer, ao invés da obrigação de pagar (multa), recai exclusivamente no âmbito de discricionariedade da autoridade administrativa, não caracterizando, assim, qualquer espécie de direito, opção ou escolha por parte do administrado. 
+26. Assim, é irrelevante para a aplicação da obrigação de fazer a existência de eventual pedido formulado por uma entidade que responde a um processo punitivo, pois não se trata de acolher ou rejeitar a pretensão da autuada, mas, sim, de definir a espécie de sanção à luz do interesse público, conforme acima demonstrado. 
+27. Acrescente-se que esta circunstância decorre diretamente da compreensão de que a sanção de obrigação de fazer não é melhor ou pior do que a sanção de obrigação de pagar (multa). As duas espécies de sanção possuem - e devem possuir - a mesma envergadura, sendo certo que ambas, observadas as suas respectivas naturezas e características, devem ser aptas a atingir as funções clássicas da pena relativas à repressão e prevenção quanto ao cometimento de infrações."
+V.b. Do projeto de conectividade de universidades (federais, estaduais e municipais) e institutos federais 
+V.b.1. Da diligência 
+Em 3 de outubro de 2025, pelo Ofício nº 9/2025/OP-ANATEL, nos autos do Processo nº 53500.081616/2025-65, demandei às Superintendências de Regulamentação (SPR), Competição (SCP) e Controle de Obrigações (SCO), o levantamento e mapeamento de carências e lacunas de serviços de telecomunicações, bem como das respectivas infraestruturas de transporte e de acesso, das instituições públicas de ensino superior, pesquisa e extensão (portanto, universidades federais, estaduais e municipais e institutos federais).
+A partir de tal levantamento, solicitei o encaminhamento de proposta de valores de referência para a adoção de obrigações de fazer e outros projetos de implementação de políticas públicas para o atendimento dos tipos de lacunas encontradas.
+Em resposta à diligência por mim formulada, nos termos do Informe Técnico nº 187/2025/PRUV/SPR (SEI nº 14883767), de 31 de dezembro de 2025, as áreas técnicas apresentaram o resultado obtido com a Tomada de Subsídios nº 9/2025 (SEI nº 14513242), realizada para a coleta de informações, posteriormente refinadas em conjunto com a Rede Nacional de Ensino e Pesquisa – RNP.
+Importante mencionar que a conexão dessas instituições à internet se dá normalmente por intermédio da RNP, associação de direito privado, sem fins lucrativos, qualificada como organização social (OS) nos termos da Lei nº 9.637, de 15 de maio de 1998, já que a RNP oferece às instituições acesso a plataformas e aplicações específicas, que podem ser consultados por meio do link https://www.rnp.br/servicos/servicos-do-sistema-rnp/ Por esse motivo, a área técnica, acompanhada por este gabinete, tem dialogado com a RNP sobre o levantamento em tela.
+Também é importante mencionar os entendimentos com os ministérios das Comunicações e da Educação ao longo deste processo, notadamente por meio de diálogos bilaterais, reuniões e a formalização, junto ao MCOM, por meio do Ofício nº20/2025/OP-Anatel (SEI nº 14559937).
+A Tomada de Subsídios realizada pela Área Técnica recebeu 1310 (mil trezentas e dez) contribuições de 85 (oitenta e cinco) universidades federais, estaduais e municiais e de institutos federais, conforme detalhado no referido Informe.
+A RNP, por sua vez, enviou à Anatel, em 22 de dezembro de 2025, uma listagem (SEI nº 14963393) com a análise do status de conexão de cada unidade mencionada na tomada de subsídios, informando o seguinte panorama (SEI nº 14963339):
+ 226 unidades estaduais ou municipais não conectadas, atualmente com status em discussão;
+ 110 unidades federais não conectadas;
+ 40 unidades já conectadas;
+ 4 unidades com previsão de conexão.
+Quanto às 226 (duzentas e vinte e seis) unidades estaduais e municipais citadas, ressaltou que a conexão não pode ser tratada de forma automática. Assim, no momento da resposta, haveria 110 (cento e dez) unidades de universidades federais aptas a serem conectadas e, portanto, objeto de políticas públicas.
+Ato contínuo, as áreas técnicas da Anatel e da RNP, acompanhadas por este gabinete, estão mantendo diálogo com as instituições responsáveis pelas 226 (duzentas e vinte e seis) unidades estaduais e municipais mencionadas, no sentido de esclarecer eventuais pendências. Feito isso, a lista de unidades aptas a serem contempladas com as obrigações de fazer aqui tratadas será atualizada, com a inclusão de novas unidades.
+Diante disso, a Área Técnica da Anatel não vislumbrou óbices regulatórios à substituição da sanção pecuniária pela de obrigação de conectividade às universidades públicas e institutos federais sem conexão, considerando que um dos objetivos estratégicos da Agência é o de "Promover a conectividade universal e significativa com qualidade e segurança".
+Feita essa introdução, avaliou a aderência da sanção de obrigação de fazer, consistente na conectividade em instituições públicas de ensino superior, às condições estabelecidas no art. 16 do RASA vigente, conforme detalharei adiante.
+V.b.2. Do alinhamento da obrigação de fazer aos requisitos estabelecidos no RASA 
+Os parâmetros a serem observados pela sanção de obrigação de fazer estão previstos no art. 16 do RASA, com redação dada pela Resolução nº 784, de 7 de novembro de 2025:
+"Art. 16. As sanções de obrigação de fazer e de não fazer devem observar os seguintes parâmetros:
+I - não podem se restringir ao mero cumprimento das obrigações já impostas ao infrator pelo arcabouço regulatório e pelos contratos ou termos celebrados;
+II - promover o atendimento de políticas públicas do setor de telecomunicações, em especial aquelas que visem a conectividade; (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+III - ser compatíveis com os objetivos estratégicos da Agência, constantes seu Plano Estratégico; e, (Redação dada pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+IV - preferencialmente, privilegiar projetos que atendam às necessidades estruturantes previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), no Plano Estrutural de Redes de Telecomunicações (PERT). (Incluído pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 1º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 2º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)
+§ 3º As sanções de obrigação de fazer e não fazer não se confundem com a determinação para reparação dos usuários prejudicados, nem com as medidas cautelares.
+§ 4º (Revogado pela Resolução Anatel nº 784, de 07 de novembro de 2025)"
+O Corpo Técnico da Agência avaliou a aderência do projeto à norma no item 3.22 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), conforme transcrevo:
+3.22.1. O inciso I do mencionado dispositivo impede que as obrigações já estejam previstas no arcabouço regulatório e nos contratos e termos celebrados. De fato, não há instrumento dessa natureza que obrigue as prestadoras a proverem conectividade às instituições de ensino superior, pesquisa e extensão. Tampouco existe, no PGMU V ou em outras sanções de obrigação de fazer, compromissos de implementação de rede de transporte para essas instituições. Assim, verifica-se que a obrigação ora cotejada não viola o primeiro condicionante do art. 16.
+3.22.2. O art. 16, II, estabelece que a obrigação de fazer visa promover o atendimento de políticas públicas, com destaque para projetos que fomentem a conectividade. Nesse sentido, o provimento de conectividade às instituições de ensino superior, pesquisa e extensão alinha-se a tal propósito, materializando a instrução de implementar e complementar as políticas setoriais constante do Decreto nº 9.612, de 17/12/2018, em especial de seu art. 2º, IV, "a", art. 3º e art. 4º, I, III, IV e V, uma vez que tais infraestruturas incentivam e fomentam a pesquisa brasileira.
+3.22.3. No art. 16, III, tem-se o comando de que as obrigações de fazer devem ser compatíveis com os objetivos estratégicos da Anatel (conforme Plano Estratégico). Como o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão fornece acesso a serviços de alta capacidade para instituições estratégicas, a presente obrigação de fazer materializa o objetivo estratégico de resultado nº 1 e nº 3 do Plano Estratégico da Anatel 2023-2027, quais sejam "Promover a conectividade universal e significativa com qualidade e segurança" e "Fomentar a transformação digital e a inovação tecnológica junto à sociedade". Mais especificamente, o instrumento teria o condão de atender aos objetivos estratégicos dos processos 1A "Viabilizar o acesso físico aos serviços de conectividade com qualidade a todos", 1B "Viabilizar a expansão e a implantação da infraestrutura da rede de base", 1D "Proteger as infraestruturas críticas da conectividade" e 3B "Fomentar aplicações e modelos de negócio inovadores".
+3.22.4. O art. 16, IV, dispõe que, preferencialmente, a obrigação de fazer deverá atender as necessidades previstas no Plano de Conectividade Significativa e Sustentabilidade Socioambiental - PCS e no Plano Estrutural de Redes de Telecomunicações - PERT. Nessa seara, o provimento de conectividade às instituições públicas de ensino superior, pesquisa e extensão está de acordo com os projetos do PERT ATUAL de "Projetos de conectividade para locais de relevante interesse público", mais especificamente o projeto 1 "Conectividade Educacional". De qualquer forma, a presente Tomada de Subsídio poderá resultar na inclusão no PERT de um projeto específico nesse sentido.
+Assim, não há dúvidas quanto à aderência da obrigação submetida a este Colegiado ao art. 16 do RASA.
+V.b.3. Do alinhamento da obrigação de fazer com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU) 
+Como bem consignou a Área Técnica nos itens 3.30 a 3.33 do Informe 187/2025/PRUV/SPR (SEI nº 14883767), na Reunião nº 929, de 08/02/2024, nos termos do Acórdão nº 65, de 28/02/2024 (SEI nº 11578112) e com fulcro na Análise nº 4/2024/AF (SEI nº 11360149), este Conselho Diretor decidiu aprovar a alteração da Agenda Regulatória para o biênio 2023-2024, na forma da Resolução Interna nº 290, de 28/02/2024 (SEI nº 11578151), modificando, dentre outros aspectos, o item 10 da Agenda Regulatória 2023-2024. Dentre a alteração promovida, determinou-se que a conversão de multas pecuniárias em obrigações de fazer devem estar voltadas ao cumprimento de metas ESG, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU), o que, igualmente, restou demonstrado no referido Informe.
+V.b.4. Do modelo de custos da obrigação de fazer 
+Para a delimitação da presente obrigação de fazer, foram solicitados subsídios à RNP, os quais foram encaminhados por meio dos e-mails (SEI nº 14963487 e nº 14890826).
+Entre os documentos encaminhados, consta o arquivo "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), anexo ao Contrato Master (SEI nº 14963517), com as especificações técnicas da conectividade que precisa ser fornecida por uma prestadora de serviços de telecomunicações para as instituições usuárias do sistema RNP. 
+Apresentou, ainda, (a) a relação das instituições de ensino superior que ainda não são atendidas pela RNP; (b) a relação completa dos Pontos de Presença (PoPs) da RNP; (c) um estudo detalhado dos custos médios do megabit (Mb/s) por região e média nacional, apurados a partir de contratos vigentes firmados pela própria RNP.
+Para se delimitar os custos da obrigação, foram estabelecidos três pilares principais:
+I - Circuito de Transporte: Contratação de capacidade de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto);
+II - Rede Móvel: Cobertura do campus das instituições de ensino;
+III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto).
+Com isso, o presente projeto de ODF consiste, precipuamente, na instalação e na manutenção de enlace ponto a ponto de conectividade entre os campi de instituições de ensino superior federal, estadual ou municipal e a rede da RNP (item I – Circuito de Transporte). Para as instituições situadas em regiões carentes de infraestrutura básica de conectividade, prevê-se, ainda, a possibilidade de instalação e de manutenção de backhaul de fibra óptica que permita o fechamento do circuito de transporte item III – Backhaul de fibra óptica).
+No que se refere à Rede Móvel (item II), o presente projeto visa subsidiar a Anatel com informações sobre áreas de sombra dos campi das instituições beneficiadas, para que, em momento futuro, se avalie a pertinência de implementação de rede móvel local. Logo, esta presente análise não versará sobre o item II, sem prejuízo de seu tratamento posteriormente.
+Assim, observado que (i) instituições de ensino localizadas em área urbana, em regra, prescindem da instalação de infraestrutura de backhaul; enquanto (ii) instituições de ensino em zona rural são mais propensas a depender desse tipo de instalação prévia, a Prestadora deverá apresentar, quanto a estas últimas, declaração formal de que inexiste, nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio. 
+Adicionalmente, deve ser observado que o somatório dos custos totais da execução dos projetos deve ser igual ou superior ao valor da sanção de multa aplicada neste caso concreto, com as correções monetárias e dedução, nos termos do Rasa.
+Conforme salientado no Informe da Área Técnica (SEI nº 14883767), quanto ao Item I - Circuito de Transporte, a precificação apresentada em relação aos custos envolvidos para o circuito de transporte ponto a ponto (entre a instituição de ensino e o PoP da RNP), disponibilizados na Planilha Valores ODF Conectividade IPES (SEI nº 14890893), considerou que a solução técnica deve estar orientada "à contratação de serviço de transporte de dados com capacidade de 1 Gbps”.
+Esta solução deve estar aderente às cláusulas contratuais de conectividade da RNP, conforme melhor detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767) e no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+Além disso, a ODF deve prever que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP nos modelos de contrato.
+A estratégia de dimensionamento da rede fundamenta-se na entrega padrão inicial de 1 Gbps por instituição, conforme diretriz técnica reportada pela RNP em reunião, o que assegura o atendimento imediato às demandas institucionais. Segundo o modelo operacional da RNP, a expansão dessa capacidade ocorre de forma otimizada mediante upgrades sob demanda, condicionados à prévia constatação técnica de saturação do circuito original.
+Os valores para contratação do circuito também derivam dos contratos vigentes da RNP, conforme apresentado no Anexo I (SEI nº 14890826) do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), cujos custos médios anuais por megabit (Mb/s), avaliados nacionalmente e segmentados por região (Centro-Oeste, Nordeste, Norte, Sudeste, Sul), servem de base para o presente planejamento.
+É importante destacar que a Anatel adotou, de forma integral, exatamente os mesmos valores de referência e requisitos técnicos de conectividade praticados pela RNP em seus certames. Tal adoção fundamenta-se na premissa de convergência metodológica desta ODF com a operação da rede da RNP. Justifica-se que os modelos de contratação da RNP representam o estado da arte em termos de definições técnicas e aderência às especificidades geográficas e operacionais do território brasileiro, servindo como o espelho ideal para a política pública de conectividade das instituições de ensino.
+Dessa forma, a utilização dos valores de referência da RNP assegura a eficiência econômica, pois os contratos da RNP incorporam ganhos de escala e condições de mercado diferenciadas, validados por uma ampla base de contratos capilarizada em todas as regiões do país. Portanto, a solução técnica alinhada aos referenciais praticados pela RNP garante a compatibilidade com o mercado de telecomunicações e o cumprimento dos princípios de eficiência na aplicação dos recursos públicos.
+Adicionalmente, considerou-se um custo para a implantação do serviço de conectividade (taxa de instalação), também estimado com base no histórico de contratos da RNP desde 2010, que observa que as taxas de instalação cobradas pelas operadoras de telecomunicações representam, em média, o valor correspondente a uma mensalidade da conexão contratada.
+Com base nesse prazo e nos custos apurados, foi desenvolvida a planilha de cálculo anexa ao Informe 187/2025/PRUV/SPR (Anexo II - Valores de referência ODF para Conectividade em instituições públicas de ensino superior - SEI nº 14890893). Esta planilha sistematiza o cálculo dos custos totais do projeto e requer a seguinte customização para obter o cálculo final:
+ Acessar a aba "1B ENT TOTAL INSTITUIÇÕES";
+ Informar a quantidade exata de instituições a serem contempladas pela política pública de conectividade, por região;
+ O resultado final pode ser verificado na aba "CAPA".
+Já em relação ao "Item III - Backhaul de fibra óptica: Construção de rede de transporte para as instituições de ensino localizadas em regiões remotas, de modo a permitir o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP (ponto a ponto)", "aplicam-se os custos de implantação de rede de transporte com tecnologia Dense Wavelength Division Multiplexing (DWDM), já previstos no instrumento da OdF, visando o atendimento a instituições de ensino localizadas em regiões remotas. A escolha por backhaul em fibra óptica com tecnologia DWDM, em detrimento de alternativas com limitações de desempenho, como micro-ondas e satélites, é fundamental pois garante a alta disponibilidade, a baixa latência e a elevada capacidade da rede, elementos cruciais para o cumprimento do SLA do circuito nos padrões RNP. A precificação considerou premissas relativas tanto à implantação completa da rede DWDM (abrangendo todos os equipamentos da solução DWDM, a rede externa de fibra óptica e a infraestrutura civil das estações) quanto à operação e manutenção dos ativos por um horizonte temporal de 3 (três) anos. Os valores e detalhamentos associados a estes custos estão dispostos no Informe nº 8/2023/CPAE/SCP (SEI nº 9663283), em seu anexo Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261)".
+Ainda quanto aos custos, destacou-se questão relevante acerca do período de manutenção da infraestrutura (Opex), contido no modelo de custo apresentado pela CPAE. A esse respeito, este Conselho Diretor tem entendido que a operadora sancionada não deve somente proceder à instalação da infraestrutura, mas mantê-la operacional e atendendo aos consumidores por um período mínimo de 3 (três) anos, de forma que a inclusão de custos operacionais para o cálculo de estimativa de obrigações de fazer já é questão pacificada no âmbito deste Colegiado.
+Assim, o presente projeto de ODF consiste na instalação e na manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), de modo que a arquitetura da rede e os equipamentos envolvidos cumpram com os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519). A depender da infraestrutura de conectividade disponível para a instituição contemplada, o projeto prevê a instalação de backhaul de fibra óptica, com especial enfoque para instituições de ensino localizadas em regiões remotas.
+Dessa forma, além da comprovação de instalação e manutenção das infraestruturas, a Prestadora também deverá comprovar ter atendido aos parâmetros definidos no referido modelo de contrato (SEI nº 14963517 e 14963519).
+Por fim, quanto à seleção das instituições de ensino superior, pesquisa e extensão, a Prestadora deverá utilizar a versão atualizada da lista disponibilizada no documento SEI nº 14963393, a qual, conforme anteriormente explicitado, ainda sofrerá alteração, vez que estão em debate com a RNP a inclusão de novas unidades.
+V.b.5. Das considerações adicionais a serem observadas na aplicação da sanção de obrigação de fazer 
+Como bem colocado pela Área Técnica (itens 3.56 a 3.60 do Informe nº 187/2025/PRUV/SPR - SEI nº 14883767), o monitoramento da implementação de compromissos estabelecidos pela Anatel em troca de valores a serem arrecadados pelo Estado já suscitou preocupações expressas por órgãos de controle, por essa razão, as decisões de sanção de obrigação de fazer devem prever regras para o seu acompanhamento e verificação de seu cumprimento, de modo que o procedimento seja realizado com maior segurança jurídica para as partes envolvidas.
+V.b.6. Dos contornos da obrigação de fazer 
+Os itens 3.61 a 3.76 do Informe da Área Técnica (SEI nº 14883767) detalham a obrigação, seu acompanhamento, requisitos a serem observados, forma de comprovação e, ainda, a possibilidade de recomposição da sanção de obrigação de fazer e a aplicação de multa em caso de descumprimento.
+Destaca referido Informe que o art. 36-A do Rasa determina que as sanções de obrigações de fazer devem ser cumpridas nos prazos previstos na decisão que as aplica, rememorando que, no caso da obrigação de fazer aplicada em segunda instância, o §3º prevê que o infrator fará jus a um fator de redução de 5% (cinco por cento) sobre o valor correspondente à sanção aplicada em segunda instância, caso não se manifeste pela preferência pela sanção de multa.
+Tal fator de redução, contudo, será aplicado após a correção do valor da sanção de multa adotado como referência para a OdF, nos termos do art. 36-A, §6º, II, do Rasa. Nesse sentido, o valor será corrigido a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, até a data da publicação do Acórdão.
+Nos termos do art. 16-A, II, do RASA, acompanho sugestão da Área Técnica para conceder o prazo de 60 (sessenta) dias para que a Prestadora se manifeste. Nesse período, a prestadora deverá (a) apresentar o projeto técnico referente à obrigação de fazer ora aplicada, levando em conta o apontamento das unidades a serem contempladas, a partir da lista consolidada pela Anatel e considerando apenas as unidades ainda não contempladas em ODFs objeto de outros processos, a análise das diversas circunstâncias relacionadas à execução de projetos de infraestrutura, tais como a verificação da viabilidade de obtenção de licenças urbanísticas e ambientais, o levantamento de custos e o dimensionamento técnico dos projetos, ou (b) optar formalmente pela conversão da OdF em multa, abrindo mão do percentual de desconto previsto no Rasa.
+No caso da apresentação do projeto técnico da sanção imposta, nos termos do art. 16-A, §2º, do Rasa, até a validação da manifestação do infrator no prazo estabelecido no item acima, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento. A Anatel deverá validar o cumprimento dos requisitos e prazos estabelecidos para a seleção de localidades.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.109.1 a 4.109.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, devendo ser excluído o valor relativo ao desconto aplicado por força do art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Ainda que não tenha sido objeto das considerações encaminhadas pela área técnica, entendo necessário se garantir a diversidade regional.
+Dessa forma, no caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas, podendo, da quarta em diante, a Prestadora adotar o critério que preferir.
+Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas. Da quarta em diante, a Prestadora poderá adotar o critério que preferir.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos nesta decisão não foram adequadamente obedecidos para todas as instituições selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor equivalente às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+Essa previsão está alinhada com a recomendação da Controladoria-Geral da União - CGU contida no "Relatório de Auditoria SAAI - Manifestação da CGU" (SEI nº 8945272), de 10 de agosto de 2022, para os casos de compromissos de backhaul. Confira-se:
+"Recomendação nº 2: Resolver os casos de sobreposição indicados no Anexo I deste Relatório de Auditoria, notadamente sobre as sobreposições dos compromissos de backhaul do Edital do 5G com as demais ações regulatórias e políticas públicas."
+Embora sejam tomadas todas as precauções necessárias para evitar a sobreposição de investimentos de origem pública, em infraestrutura de telecomunicações instalada com uma mesma finalidade, essa última medida se coloca como uma possibilidade de contornar eventuais sobreposições que venham a se verificar durante o acompanhamento do provimento da conectividade, priorizando-se a seleção de nova(s) instituição(ções) substitutiva(s) para o cumprimento da sanção de obrigação de fazer, ou, nessa impossibilidade por questões relacionadas ao prazo para cumprimento - resolvendo-se a questão mediante aplicação de sanção pecuniária.
+A multa aplicada deve ter sua exigibilidade suspensa quando a Anatel realizar a validação da manifestação da prestadora com o deferimento das localidades e, somente após o integral cumprimento da sanção de obrigação de fazer e o respectivo atesto pela autoridade competente, a multa deverá ser cancelada nos sistemas de crédito da Agência, conforme prevê o art. 36-A, §7º, do Rasa.
+Outra questão que perpassa pelo acompanhamento da sanção de obrigação de fazer diz respeito ao seu descumprimento. Nesta hipótese, uma vez atestado o não cumprimento da sanção de obrigação de fazer e não fazer, haverá o trâmite para a cobrança da multa, seja proporcional ou integral a depender se o descumprimento foi parcial ou total.
+No caso de descumprimento, a multa será calculada com base no valor descrito na decisão que estabeleceu a sanção de obrigação de fazer, atualizado por meio da Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-la, desde a data da intimação da decisão que a aplica até a data da intimação do atesto de descumprimento, parcial ou integral, da obrigação de fazer e de não fazer.
+A Agência poderá solicitar a apresentação de documentos complementares ou determinar a realização de inspeção durante o prazo de cumprimento e manutenção da obrigação assumida pela Prestadora.
+V.c. Da conclusão quanto à obrigação de fazer 
+Em conclusão, voto por:
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade ponto a ponto para o estabelecimento de circuito de transporte para a conexão das instituições de ensino à rede da RNP, tendo como base o valor de R$ 60.594.250,79 (sessenta milhões, quinhentos e noventa e quatro mil, duzentos e cinquenta reais e setenta e nove centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado (i) no prazo de 6 (seis) meses a partir validação da manifestação da Prestadora pela Anatel, e mantido pelo período de 3 (três) anos; ou (ii) no prazo de 1 (um) ano, nos casos em que o enlace tenha que ser complementado com a instalação de backhaul de fibra ótica, e mantido pelo período de 2,5 (dois e meio) anos.
+O somatório do custo relativo à instalação da infraestrutura e o período de sua manutenção deve ser igual ou superior ao valor da multa aplicada, considerando as correções monetárias nos termos do RASA e a precificação apresentada no item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão" do Informe nº 187/2025/PRUV/SPR (SEI nº 14883767).
+O cumprimento da sanção de obrigação de fazer deverá ter por objeto levar conectividade às universidades públicas (federais, estaduais e municipais) e institutos federais.
+No caso de valores suficientes para atendimento de múltiplas unidades, a segunda e a terceira deverão ser escolhidas em macrorregiões distintas. Caso a Prestadora atue apenas em uma macrorregião, as três primeiras unidades indicadas devem estar localizadas em UFs distintas.
+Para fins de atendimento do disposto no item anterior, atendidas três macrorregiões ou unidades da federação distintas, conforme o caso, a Prestadora, em ainda havendo saldo, poderá escolher livremente as demais instituições que irá atender, entre aquelas constantes da lista.
+Para a instalação de backhaul de fibra óptica, a infraestrutura a ser instalada em cada instituição de ensino deverá possuir capacidade mínima de 10 Gbps (dez gigabits por segundo), do início ao ﬁm do trecho utilizado para atendimento da respectiva instituição de ensino. Além disso, nos projetos que envolverem Capex, a prestadora fica obrigada a disponibilizar o acesso à infraestrutura a partir da data de sua entrada em operação, nos termos da regulamentação específica, às demais prestadoras autorizadas de serviços de telecomunicações de interesse coletivo.
+O provimento da conectividade deve englobar a instalação e a manutenção de circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto), observando-se os requisitos operacionais e de nível de serviço (SLA - Service Level Agreement) nos mesmos padrões demonstrados pela RNP no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519).
+A Prestadora deve selecionar as unidades das universidades públicas e institutos federais entre aquelas indicadas na lista constante da versão atualizada do documento SEI nº 14963393 , observadas as condições anteriormente expostas.
+Após a seleção das instituições de ensino, os custos associados aos projetos devem ser calculados de acordo com o item "I.d - Dos parâmetros e Custos da Obrigação de Fazer de conectividade em instituições públicas de ensino superior, pesquisa e extensão", detalhado no Informe nº 187/2025/PRUV/SPR (SEI nº 14883767), devendo-se observar quanto à aplicação de desconto o disposto no art. 36-A, §3º, do Rasa, bem como:
+Para o Circuito de Transporte, a Planilha Valores ODF Conectividade IPES (SEI nº 14890893); e
+Para o Backhaul de fibra óptica, a Planilha de Valores de Referência para Rede de Backhaul de Fibra Óptica (SEI nº 9967261).
+Nos termos do §6º, II, do art. 36-A do Rasa, o valor da sanção será corrigido, a contar da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo. A correção deve incidir até a data da publicação do Acórdão. Após a referida correção, será aplicado o desconto de 5% (cinco por cento) previsto no Rasa.
+No prazo de 60 (sessenta dias), a contar da data da notificação, a Prestadora poderá comunicar à Anatel sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no Rasa, ou deverá, no mesmo prazo (i) apresentar projeto técnico da obrigação de fazer nos termos delimitados na presente Análise e no Informe 187/2025/PRUV/SPR (SEI nº 14883767); (ii) informar as instituições selecionadas para o cumprimento da sanção, nos termos estabelecidos nos itens 4.75.1 a 4.75.7.; e iii) no caso de instalação de backhaul de fibra óptica, apresentar declaração formal de que inexiste nas instituições de ensino selecionadas para o cumprimento da sanção de obrigação de fazer, rede de transporte de fibra óptica de que seja titular ou que seja por ela utilizada, por qualquer meio.
+Nos termos do art. 16-A, §2º, do Rasa, no caso da apresentação do projeto técnico da sanção imposta, até a validação da manifestação do infrator no prazo estabelecido no item acima, a qual se dá com o atesto inicial de adesão à obrigação de fazer pela Anatel, não incidirão sobre a sanção imposta a multa moratória e os juros de mora previstos no art. 36 do citado Regulamento.
+A Prestadora não adquire direito à lista de instituições públicas de ensino superior disponíveis para instalação de infraestrutura, vigente na data da decisão que possibilitou o cumprimento da sanção de obrigação de fazer em substituição à aplicação da sanção de multa. Nesse sentido, a escolha da Prestadora deve recair sobre as instituições públicas de ensino superior disponíveis na data em que ela comunicar à Anatel que cumprirá a sanção de obrigação de fazer.
+Eventuais conflitos decorrentes da seleção de instituições públicas de ensino superior pela operadora para cumprimento da sanção de obrigação de fazer serão resolvidos pela Superintendência de Controle de Obrigações.
+Uma vez formalizada junto à Anatel a seleção de instituições públicas de ensino superior realizada pela Prestadora para cumprimento da sanção de obrigação de fazer, mudanças posteriores nesse rol deverão ser precedidas de solicitação formal justificada à Superintendência de Controle de Obrigações, cabendo à autoridade competente decidir sobre a questão.
+A adesão da Prestadora à sanção de obrigação de fazer estará condicionada à validação, pela Anatel, dos requisitos e prazos estabelecidos na decisão para seleção de instituições de ensino e ensejará a suspensão da exigibilidade de multa enquanto se apura o cumprimento dos compromissos estabelecidos.
+A concessão do atesto ao cumprimento integral da sanção de obrigação de fazer ensejará o cancelamento da inscrição de eventual crédito no Sistema de Gerenciamento de Créditos (SIGEC), originário de sanção de multa aplicada, mas substituída pela sanção de obrigação de fazer.
+A Anatel poderá, a qualquer tempo, determinar a recomposição da sanção de obrigação de fazer, na hipótese de se verificarem situações que indiquem que os requisitos estabelecidos na decisão não foram adequadamente obedecidos para todas as instituições de ensino selecionadas quando da concessão do atesto, podendo-se determinar: i) a substituição dessas instituições de ensino, respeitados os requisitos e prazos de cumprimento da sanção de obrigação de fazer, ou; ii) a aplicação de sanção de multa, em valor proporcional às estimativas de custo dos projetos das instituições em que tais requisitos não tenham sido observados.
+A instalação da infraestrutura, observados os requisitos previstos no documento "Descrição de Serviços e Acordo de Nível de Serviço - SLA" (SEI nº 14963519), deverá ser comprovada à Anatel em até 30 (trinta) dias após o exaurimento dos prazos previstos no item 4.75.1., e não poderá decorrer de acordos de RAN sharing, swap, aluguel de redes, contratos de exploração industrial ou outros meios contratuais. Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Já a comprovação da manutenção deverá ocorrer em até 10 (dez) dias após o vencimento do prazo de manutenção da última instituição pública de ensino superior atendida em cumprimento à sanção de obrigação de fazer.
+Quanto ao circuito de transporte entre a rede local da instituição de ensino e a rede da RNP (ponto a ponto):
+a comprovação da sua instalação deverá ser realizada, minimamente, mediante a apresentação: i) das configurações utilizadas nos equipamentos; ii) de relatórios de tráfego gerado nos equipamentos das instituições, relativos a um período mínimo de 15 (quinze) dias posteriormente à data de sua ativação; iii) de formulário e declaração do diretor ou responsável administrativo da instituição de ensino certificando que todos os requisitos foram cumpridos; iv) de formulário e declaração do responsável administrativo da Rede Nacional de Ensino e Pesquisa - RNP certificando que todos os requisitos foram cumpridos. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel, minimamente, relatórios de tráfego gerados dos equipamentos de todas as instituições de ensino atendidas em decorrência da presente decisão, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção das instituições, ou correspondentes a período posterior à data de término da obrigação, sob pena de sua conversão em multa. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel;
+No caso da infraestrutura ser provida por meio de backhaul de fibra óptica:
+a comprovação da instalação da infraestrutura deverá ser realizada, minimamente, mediante a apresentação: de: i) as-built do projeto técnico implementado; ii) tela do sistema de gerência da prestadora, destacando o circuito físico entre os municípios de origem e destino da fibra, bem como sua capacidade; iii) tela do sistema de gerência da prestadora, destacando link lógico entre os municípios de origem e destino da fibra, bem como sua capacidade. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel e em avaliação com a prestadora; e
+para a comprovação da manutenção, a prestadora deverá encaminhar à Anatel relatórios de tráfego indubitavelmente cursado nas redes instaladas, relativos ao período mínimo de 30 (trinta) dias correspondentes ao último mês de vigência da obrigação de manutenção, ou correspondentes a período posterior à data de término da obrigação. Tais documentos deverão ser apresentados sem prejuízo de outros que venham a ser demandados, a critério da Anatel.
+Os prazos de manutenção da conectividade em cada instituição de ensino são contados das datas de suas respectivas ativações. Na eventualidade de não apresentação de comprovação válida do cumprimento das obrigações ora determinadas, aplica-se sanção de multa, em valor proporcional às estimativas de custos dos projetos das instituições de ensino em que não houver comprovação suficiente e tempestiva.
+Caso os custos associados ao projeto, calculados nos termos previstos nos itens 4.75.1 a 4.75.8, detalhados no Informe 187/2025/PRUV/SPR (SEI nº 14883767), perfaçam valores menores do que os indicados como referência para a sanção de obrigação de fazer, cuja diferença seja insuficiente para a assunção de novo projeto, o saldo será aplicado na forma de sanção de multa, novamente acrescidos o desconto previsto no art. 36-A, §3º, do Rasa, que deve ser recolhida pela Prestadora por meio de boleto, realizando-se a devida correção conforme o disposto no art. 36 do Regulamento de Aplicação de Sanções Administrativas (RASA).
+Se não comprovado o cumprimento da sanção de obrigação de fazer, a Prestadora será intimada para se manifestar no prazo de 15 (quinze) dias e a Superintendência de Controle de Obrigações decidirá sobre a caracterização do descumprimento da sanção.
+Caso a autoridade competente decida pela caracterização do descumprimento da sanção, nos termos do art. 36-B do Rasa, o valor da obrigação de fazer será convertido em multa, proporcional ao seu descumprimento, sendo vedada a sua conversão em nova obrigação de fazer, e o valor da parcela descumprida não considerará o desconto previsto nos §§1º a 3º do art. 36-A.
+No caso do item acima, o valor de multa equivalente à parte descumprida da obrigação será corrigida, a contar da data da intimação da primeira decisão que aplicou a sanção, e segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou outro índice que vier a substituí-lo, conforme a legislação em vigor, em conformidade com o §6º do art. 36-A do Rasa.
+Caso se evidencie a adoção de conduta protelatória por parte da Prestadora, tal fato poderá ensejar eventual aplicação de sanção decorrente de má-fé a ser apurada em autos próprios, mediante instauração de processo específico, que não comportará qualquer discussão a respeito da autoria, materialidade ou valor da multa ora aplicada.
+CONCLUSÃO
+Por todo o exposto, voto por:
+Em relação ao art. 81, §§1º e 2º, do RGC:
+acompanhar o relator quanto à caracterização da infração de forma aglutinada, reduzindo o fator dano para 5 (cinco), dando parcial provimento ao recurso;
+alterar a ROL utilizada pelo Relator para a ROL Brasil;
+divergir do Relator quanto ao caráter sistêmico da infração, reformando de ofício a sanção de multa para aplicar, nos parâmetros Ut e Ua, respectivamente, o total de de contestações de usuários pós-pagos no período (1.048.575) e o total de contestações de contas não pagas para as quais não houve a emissão de novo documento sem o valor contestado (64.162).
+Em relação ao art. 83, do RGC, alterar o fator Ut para os usuários das unidades federadas da BA, DF, ES, GO, MG, PA, PE, PR, RJ, RS, SC e SP. 
+Em relação ao art. 85, divergir do cálculo do Relator, aplicando-se o dobro da vantagem auferida, com os devidos expurgos de duplicidades e ressarcimentos promovidos e atestados pela área técnica nos autos do PAC nº 53500.047004/2024-62;
+Em relação ao art. 85, parágrafo único:
+acompanhar o Relator na alteração da infração para pontual, somando-se o universo de usuários das modalidades pós-paga (inciso I) e pré-paga (inciso II), dando parcial provimento ao recurso;
+retificar o parâmetros de cálculo da sanção relativo à gravidade da infração, de leve para grave,, por atingir número significativo de usuários.
+Alterar, de ofício, os usuários totais da infração ao art. 6º, IV, CDC para os acessos SMP nos Estados do Rio de Janeiro e São Paulo, sem alteração no valor da multa.
+Alterar o valor da multa de R$ 135.724.903,22 (cento e trinta e cinco milhões, setecentos e vinte e quatro mil novecentos e três reais e vinte e dois centavos) para R$ 60.594.250,79 (sessenta milhões, quinhentos e noventa e quatro mil, duzentos e cinquenta reais e setenta e nove centavos), conforme planilha anexada ao presente Voto.
+Aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à rede da RNP, nos termos aqui descritos, tendo como base o valor de R$ 60.594.250,79 (sessenta milhões, quinhentos e noventa e quatro mil, duzentos e cinquenta reais e setenta e nove centavos), com as correções monetárias e dedução, nos termos do Rasa, a ser implementado nos termos expostos no item 4.75 do presente Voto.
+Conceder o prazo de 60 (sessenta dias), a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Conhecer e indeferir os pedidos das petições extemporâneas SEI nº 15060244 e SEI nº 15146942, pelas razões expostas no presente Voto.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 14866620 e o código CRC D6E5AF25.
+ | 
+Referência: Processo nº 53500.002822/2019-79 | 
+SEI nº 14866620 |

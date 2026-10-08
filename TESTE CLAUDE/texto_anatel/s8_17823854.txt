@@ -1,0 +1,46 @@
+SEI/ANATEL - 15930048 - Acórdão
+Boletim de Serviço Eletrônico em 15/07/2026
+DOU de 15/07/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 176, de 07 de julho de 2026
+Processo nº 53500.003898/2023-06
+Recorrente/Interessado: CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇO MÓVEL CELULAR E PESSOAL
+CNPJ nº 06.102.961/0001-93
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 955, de 2 de julho de 2026
+EMENTA
+DIREITO REGULATÓRIO. DIREITO DE PETIÇÃO. PEDIDO DE RECONSIDERAÇÃO CONTRA ATO NORMATIVO. PEDIDO INDEFERIDO.
+I. CASO EM EXAME
+1. A Petição. Petição apresentada por CONEXIS BRASIL DIGITAL em face do Acórdão nº 123, de 8 de maio de 2026, e da Resolução nº 788, de 8 de maio de 2026, que aprovou Norma para estabelecimento de diretrizes em modelagem de custos e ﬁxação de valores máximos de tarifas de uso de rede ﬁxa do Serviço Telefônico Fixo Comutado - STFC e de valores de referência de produtos de atacado.
+2. Fato relevante. A Requerente pediu a revogação dos arts. 5º e 6º da Resolução nº 788/2026 e, por consequência, dos arts. 9º e 10, sob o fundamento de que a Resolução nº 787/2026 não prevê informações que viabilizem o cálculo dos modelos Top-Down FAC-CCA - Fully Allocated Costs Current Cost Accounting e Top-Down LRIC - Long Run Incremental Cost.
+3. Fato relevante. A Requerente também pediu a revogação do art. 18 da Resolução nº 788/2026, sob o fundamento de que o mercado de Transporte de Dados em Alta Capacidade em taxas superiores a 1 Gbps (gigabit por segundo) não foi mantido como mercado relevante no Plano Geral de Metas de Competição - PGMC aprovado pela Resolução nº 783/2025.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a manifestação da Interessada pode ser conhecida como Recurso contra ato normativo ou se deve ser recebida como exercício do direito de petição; e (ii) saber se há fundamento para revogar os arts. 5º, 6º, 9º, 10 e 18 da Resolução nº 788/2026.
+III. RAZÕES DE DECIDIR
+1. A Manifestação não pode ser recebida com natureza recursal, porque a Resolução nº 788/2026 constitui ato normativo editado no exercício do poder normativo da Anatel.
+2. O Pedido atende aos requisitos de legitimidade e tempestividade e deve ser recebido como exercício do direito de petição.
+3. A Resolução nº 787/2026 e a Resolução nº 788/2026 possuem objetos distintos. A primeira disciplina obrigações de apresentação do Documento de Separação e Alocação de Contas - DSAC. A segunda estabelece características metodológicas e critérios de utilização dos modelos de custos.
+4. A ausência, na Resolução nº 787/2026, de obrigação de apresentação dos modelos Top-Down FAC-CCA e Top-Down LRIC não gera incompatibilidade com a Resolução nº 788/2026.
+5. Os modelos Top-Down FAC-CCA e Top-Down LRIC podem subsistir no plano metodológico da regulação sem impor obrigação adicional às prestadoras.
+6. Não há fundamento para revogar os arts. 5º, 6º, 9º e 10 da Resolução nº 788/2026.
+7. O art. 18 da Resolução nº 788/2026 guarda coerência com a alegação da Requerente quanto à exclusão do mercado de Transporte de Dados em Alta Capacidade em taxas superiores a 1 Gbps (gigabit por segundo) do rol de mercados relevantes de atacado do PGMC.
+8. A revogação de dispositivo regulamentar deve observar, em regra, o procedimento de regulamentação previsto na Resolução Interna nº 8/2021.
+9. O art. 18 da Resolução nº 788/2026 depende de regulamentação por Ato do Conselho Diretor para produzir efeitos. Sem esse ato, não há intervenção imediata no mercado.
+10. Não há elementos para atuação urgente do Conselho Diretor com vistas à exclusão imediata do art. 18 da Resolução nº 788/2026.
+11. A proposta de revogação do art. 18 da Resolução nº 788/2026 deve ser encaminhada para exame na iniciativa de Guilhotina Regulatória do biênio 2027-2028.
+IV. DISPOSITIVO E TESE
+Manifestação não conhecida como Recurso. Petição recebida como exercício do direito de petição. Pedidos indeferidos. Determinação à Superintendência de Planejamento e Regulamentação - SPR, com apoio da Superintendência de Competição - SCP, para incluir a proposta de revogação do art. 18 da Resolução nº 788/2026 na Guilhotina Regulatória do biênio 2027-2028.
+Tese de julgamento: "1. Pedido de Reconsideração contra ato normativo da Anatel não se conhece como Recurso e pode ser recebido como exercício do direito de petição, se presentes os requisitos de admissibilidade. 2. A Resolução nº 787/2026 e a Resolução nº 788/2026 possuem escopos normativos distintos, de modo que a ausência de obrigação de apresentação de informações no Regulamento de Separação e Alocação de Contas - RSAC não implica incompatibilidade com a disciplina metodológica dos modelos de custos. 3. Não cabe revogar os arts. 5º, 6º, 9º e 10 da Resolução nº 788/2026. 4. A eventual revogação do art. 18 da Resolução nº 788/2026 deve ser tratada no procedimento regulatório próprio, sem urgência para exclusão imediata, com encaminhamento da matéria à Guilhotina Regulatória 2027-2028."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 5º, XXXIV, a; Lei nº 9.472/1997, arts. 19, 22 e 44; Lei nº 9.784/1999, art. 50; Resolução nº 612/2013, art. 41; Resolução Interna nº 8/2021; Resolução nº 783/2025, art. 36; Resolução nº 787/2026; e Resolução nº 788/2026, arts. 5º, 6º, 9º, 10 e 18.
+Jurisprudência relevante citada: n/a.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 48/2026/EH (SEI nº 15714386), integrante deste acórdão:
+a) não conhecer como Recurso a Petição apresentada por CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇO MÓVEL CELULAR E PESSOAL (SEI nº 15687390); e,
+b) receber a Petição como exercício do direito de petição, nos termos do art. 5º, inciso XXXIV, “a” da Constituição da República, do art. 44 da Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações - LGT e do art. 41 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e indeferir os pedidos ali contidos.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 13/07/2026, às 20:50, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15930048 e o código CRC B7845D5E.
+ | 
+Referência: Processo nº 53500.003898/2023-06 | 
+SEI nº 15930048 |

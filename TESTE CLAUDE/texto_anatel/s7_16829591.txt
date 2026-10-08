@@ -1,0 +1,303 @@
+SEI/ANATEL - 15037315 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 1/2026/OP
+Processo nº 53500.089835/2025-92
+Interessado: TI SPARKLE BRASIL TELECOMUNICACOES LTDA.
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Pedido de anuência prévia formulado por TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA., com o objetivo de implementar operação societária que resultará na transferência de seu controle indireto.
+EMENTA
+DIREITO ADMINISTRATIVO. ANUÊNCIA PRÉVIA. TRANSFERÊNCIA DE CONTROLE INDIRETO. TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. ANUÊNCIA CONCEDIDA COM CONDIÇÕES.
+I. CASO EM EXAME
+ Pedido de anuência prévia apresentado por TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. para implementação de operação societária que resultará na transferência de seu controle indireto.
+ A operação envolve a aquisição da totalidade das ações da TELECOM ITALIA SPARKLE S.P.A. pelo Ministério da Economia e Finanças da Itália e pela RETELIT S.P.A., por meio de veículos de propósito específico.
+ A documentação apresentada foi considerada suficiente para instrução do pedido, com comprovação de habilitação jurídica, qualificação técnica e econômico-financeira, e declaração de inexistência de impedimentos legais.
+ A regularidade fiscal da requerente deverá ser comprovada até a assinatura dos atos de anuência.
+ A área técnica e a Procuradoria Federal Especializada junto à Anatel manifestaram-se favoravelmente à concessão da anuência, condicionando-a à comprovação da regularidade fiscal.
+II. QUESTÃO EM DISCUSSÃO
+ Há duas questões em discussão: (i) saber se a operação societária atende aos requisitos legais e regulamentares para transferência de controle indireto; e (ii) saber se há riscos à competição ou à adequada prestação do serviço decorrentes da operação.
+III. RAZÕES DE DECIDIR
+ A documentação apresentada pela requerente atende aos requisitos do Regulamento Geral de Outorgas e demais normas aplicáveis.
+ A operação não resulta em concentração de mercado nem apresenta riscos à competição no setor de telecomunicações.
+ Não foram identificados óbices de natureza regulatória, concorrencial ou de propriedade cruzada, sendo suficiente a declaração apresentada quanto ao art. 5º da Lei nº 12.485/2011.
+ A regularidade fiscal deverá ser comprovada até a assinatura dos atos de anuência, abrangendo Fazenda Federal, FGTS e Anatel.
+ A competência para deliberação é do Conselho Diretor da Anatel, conforme o Regimento Interno.
+ A anuência prévia terá validade de 180 dias, prorrogável uma única vez por igual período, desde que mantidas as condições societárias.
+ A requerente deverá encaminhar à Anatel cópia dos atos societários que efetivarem a transferência de controle no prazo de até 60 dias do respectivo registro.
+IV. DISPOSITIVO E TESE
+ Pedido procedente. Concessão de anuência prévia à operação societária que resultará na alteração de controle indireto da TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA., condicionada à comprovação da regularidade fiscal, com validade de 180 dias, prorrogável uma vez, e obrigação de encaminhamento dos atos societários à Anatel.
+Tese de julgamento: "1. A operação societária que resulta na transferência de controle indireto da TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. atende aos requisitos legais e regulamentares. 2. A anuência prévia é concedida, condicionada à comprovação da regularidade fiscal, com validade de 180 dias, prorrogável uma vez, e obrigação de encaminhamento dos atos societários à Anatel."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 6º e 133; Lei nº 12.485/2011, art. 5º; Lei nº 13.874/2019; Resolução Anatel nº 101/1999, arts. 6º e 7º; Resolução Anatel nº 720/2020, arts. 5º, 17, 19 e 21; Resolução Anatel nº 612/2013, art. 133, XLI; Súmula Anatel nº 19/2016.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT).
+Lei nº 12.485, de 12 de setembro de 2011, Lei do Serviço de Acesso Condicionado (SeAC).
+Lei nº 13.874, de 20 de setembro de 2019, Declaração de Direitos de Liberdade Econômica.
+Regulamento para Apuração de Controle e de Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações, aprovado pela Resolução nº 101, de 4 de fevereiro de 1999.
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regulamento Geral de Outorgas (RGO), aprovado pela Resolução nº 720, de 10 de fevereiro de 2020.
+Súmula nº 19, de 1º de dezembro de 2016.
+Portaria nº 642, de 26 de julho de 2013, disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Processo nº 53500.014637/2020, processo de monitoramento.
+Processo nº 53500.051211/2020-98, processo Súmula nº 19/2016.
+Processo CADE nº 08700.007032/2025-17.
+RELATÓRIO
+Cuida-se de pedido de anuência prévia formulado por TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. (TIS BRASIL TELECOM), com o objetivo de implementar operação societária destinada à transferência de seu controle indireto, nos termos da regulamentação aplicável.
+I - Do pedido de anuência prévia
+No dia 21 de outubro de 2025, a empresa TIS BRASIL TELECOM protocolizou pedido de anuência prévia perante esta Agência para alteração de seu controle societário indireto (SEI nº 14615121) instruindo o requerimento com os documentos que reputou necessários ao exame da matéria (SEI nº 14615122).
+Em 4 de novembro de 2025, a área técnica expediu correspondência, na qual solicita o envio de documentação complementar com vistas ao regular prosseguimento da instrução processual.
+A Requerente enviou os documentos solicitados em 6 de novembro de 2025 (SEI nº 14707754 e 14707755).
+Em 18 de novembro de 2025, foi proferido o Despacho Decisório nº 15/2025/CPOE/SCP (SEI nº 14708097), por meio do qual se deliberou acerca do grau de acesso aos documentos constantes dos autos, tendo a prestadora sido devidamente notificada (SEI nº 14779450 e 14784706).
+II - Do Informe nº 24/2025/CPOE/SCP
+Ao proceder à análise do feito, a Superintendência de Competição (SCP), em 19 de novembro de 2025, consignou, em síntese, que:
+a TIS BRASIL TELECOM solicitou anuência prévia à Anatel para uma operação societária que resultará na transferência de seu controle indireto, envolvendo a aquisição da totalidade das ações da TELECOM ITALIA SPARKLE S.P.A. pelo MINISTÉRIO DA ECONOMIA E FINANÇAS DA ITÁLIA (MEF) e pela RETELIT S.P.A., por meio de veículos de propósito específico (BOOST HOLDCO S.R.L. - HOLDCO e BOOST BIDCO S.R.L. - BIDCO);
+a documentação apresentada pela TIS BRASIL TELECOM atende aos requisitos legais e regulamentares exigidos para a transferência de controle, abrangendo comprovação de habilitação jurídica, qualificação técnica e econômico-financeira, e declarações de inexistência de impedimentos legais;
+a regularidade fiscal da Requerente deverá ser comprovada até a assinatura dos atos de anuência, abrangendo Fazenda Federal, Fundo de Garantia por Tempo de Serviço (FGTS), Anatel entre outros, conforme estabelecido na Súmula nº 19, de 1º de dezembro de 2016;
+a operação não enseja riscos à competição no setor de telecomunicações por não resultar em concentração de mercado no Brasil;
+a empresa apresentou declaração expressa de que não incorre nas vedações previstas no art. 5º da Lei nº 12.485, de 12 de setembro de 2011, que trata das restrições ao controle cruzado entre os setores de telecomunicações e radiodifusão;
+compete ao Conselho Diretor da Anatel deliberar acerca da concessão de anuência prévia de operação de alteração de controle societário;
+Dessa forma, concluiu-se que, sob a ótica regulatória, a operação societária proposta atende às disposições normativas aplicáveis.
+Ao final, sugeriu-se a concessão da anuência prévia, condicionada, entre outros aspectos, à comprovação da regularidade fiscal da Requerente, bem como o encaminhamento dos autos à Procuradoria Federal Especializada junto à Anatel (PFE/Anatel), nos termos do inciso VII do art. 3º da Portaria nº 642, de 26 de julho de 2013.
+III - Do Parecer nº 417/2025/PFE-ANATEL/PGF/AGU
+No Parecer nº 417/2025/PFE-ANATEL/PGF/AGU (SEI nº 14870660), de 5 de dezembro de 2025, o Órgão Jurídico manifestou-se favoravelmente à concessão de anuência prévia para a alteração do controle indireto da TIS BRASIL TELECOM, condicionando-a à comprovação de regularidade fiscal, sem identificar óbices de natureza regulatória ou concorrencial, competindo ao Conselho Diretor a decisão final. Não obstante a área técnica haver considerado atendidas as restrições do art. 5º da Lei nº 12.485/2011, com base nas declarações apresentadas pelas partes, a PFE/Anatel recomendou a realização de consulta ao Sistema de Acompanhamento de Controle Societário (SIACCO).
+IV - Do Informe nº 27/2025/CPOE/SCP
+Por meio do Informe nº 27/2025/CPOE/SCP, de 11 de dezembro de 2025 (SEI nº 14876834), a área técnica procedeu análise complementar, com o objetivo de se manifestar sobre as considerações constantes do Parecer nº 417/2025/PFE-ANATEL/PGF/AGU (SEI nº 14870660). 
+Na oportunidade, a CPOE/SCP reiterou seu entendimento, já apresentado em processos similares, no sentido de que a consulta ao SIACCO seria dispensável, uma vez que as informações ali registradas possuem natureza autodeclaratória, mostrando-se, portanto, redundantes em relação à declaração já juntada aos autos pela requerente. 
+Ao final, foi anexada Minuta de Ato (SEI nº 14879220), na qual se concede a anuência prévia da operação, propondo-se:
+a concessão de anuência prévia condicionada à comprovação da regularidade fiscal da TIS BRASIL TELECOM;
+o estabelecimento de que a decisão do Conselho Diretor terá validade de 180 (cento e oitenta) dias, contados da publicação do respectivo Ato no Diário Oficial da União, prorrogável, a pedido, uma única vez, por igual período, desde que mantidas as mesmas condições societárias; e
+a determinação para que a Requerente encaminhe à Anatel cópia dos atos societários que efetivarem a transferência de controle, no prazo de até 60 (sessenta) dias, contado do respectivo registro no órgão competente.
+V - Do encaminhamento dos autos ao Conselho Diretor
+Em 12 de dezembro de 2025, por meio do Despacho Ordinatório SEI nº 14909604, os autos foram encaminhados à Secretaria do Conselho Diretor (SCD) para distribuição.
+O processo foi distribuído à minha relatoria em 18 de dezembro de 2025, conforme certidão expedida pela Secretaria do Conselho Diretor (SEI nº 14938937).
+É o relatório.
+FUNDAMENTAÇÃO
+Cuida-se de pedido de anuência prévia formulado por TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. (TIS BRASIL TELECOM), com o objetivo de implementar operação societária destinada à transferência de seu controle indireto, nos termos da regulamentação aplicável.
+I - Das outorgas envolvidas na operação
+A TIS BRASIL TELECOM possui autorização para prestação de Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito. A autorização foi conferida, sem caráter de exclusividade, por meio do Ato nº 4.334 (SEI nº 5864225), de 13 de agosto de 2020, publicado no Diário Oficial da União (DOU) em 14 de dezembro de 2020, tendo como serviço notificado o Serviço de Comunicação Multimídia (SCM), prestação autorizada, por meio do Ato nº 51.236/2005. O referido Ato não é oriundo de procedimento licitatório.
+Registre-se, ainda, que a Requerente não detém autorizações de direito de uso de radiofrequências, conforme informações constantes da base de dados pública disponibilizada no site da Anatel. 
+II - Da operação
+Atualmente, 99,9% do capital social da TIS BRASIL TELECOM é detido pela TI SPARKLE BRASIL PARTICIPAÇÕES LTDA., cujo capital social é, igualmente, detido em 99,9% pela TELECOM ITALIA SPARKLE S.P.A., sociedade subsidiária integral da TELECOM ITALIA S.P.A:
+Estrutura societária da TI SPARKLE BRASIL ANTES da operação
+De acordo com a Petição Inicial (SEI nº 14615121), ao término da operação pretendida, a TI SPARKLE S.P.A. terá a totalidade de seu capital social detido pela BOOST BIDCO, que passará a deter ações representativas de 100% (cem por cento) do capital social da TI SPARKLE S.P.A. A BOOST BIDCO é subsidiária integral da BOOST HOLDCO S.R.L., sociedade constituída de acordo com as leis da Itália.
+Quando do fechamento, o capital social da BOOST HOLDCO será detido em 70% (setenta por cento) pelo Ministério da Economia e Finanças da Itália, órgão do governo italiano responsável por finanças públicas, tributação e participação estatal em empresas estratégicas, e em 30% (trinta por cento) pela RETELIT S.P.A., sociedade constituída de acordo com as leis da Itália, e que atua na prestação de serviços de telecomunicações e de tecnologia da informação e comunicação naquele país.
+Quando da concretização da operação, a TI SPARKLE BRASIL passará a ter a seguinte estrutura societária:
+Estrutura societária da TI SPARKLE APÓS operação
+Dentro de um ano após o fechamento, está prevista a incorporação da BOOST BIDCO pela TI SPARKLE S.P.A., de modo que a BOOST HOLDCO, mantendo sua composição acionária, passará a ser a acionista direta da TI SPARKLE S.P.A.
+III – Da previsão regulatória
+O pedido em análise, que envolve outorga advinda de procedimento não-licitatório, tem fundamento no art. 17 do Regulamento Geral de Outorgas (RGO), aprovado pela Resolução Anatel nº 720, de 10 de fevereiro de 2020, e no artigo 6º do Regulamento para Apuração de Controle e de Transferência de Controle em Empresas Prestadoras de Serviços de Telecomunicações, aprovado pela Resolução Anatel nº 101, de 4 de fevereiro de 1999:
+RGO
+"Art. 17. Deverá ser submetida previamente à Anatel alteração que possa vir a caracterizar transferência de controle, a ser apurado nos termos do Regulamento de Apuração de Controle e de Transferência de Controle em Empresas Prestadoras dos Serviços de Telecomunicações, aprovado pela Resolução nº 101, de 4 de fevereiro de 1999, quando as partes envolvidas na operação se enquadrarem nas condições dispostas no art. 88 da Lei nº 12.529, de 30 de novembro de 2011.
+§ 1º A prestadora deverá enviar à Agência requerimento contendo sua composição societária, a descrição detalhada da operação pretendida e o quadro resultante da operação, acompanhado da documentação a seguir descrita:
+I - minuta da alteração contratual pretendida, no caso de sociedade por quotas de responsabilidade limitada;
+II - Ata da Assembleia Geral que tenha decidido pela modificação societária pretendida, no caso de sociedade por ações;
+III - contrato social ou estatuto consolidado, quando for o caso, e sua última alteração, devidamente registrados no órgão competente;
+IV - relação dos acionistas, com direito a voto ou que possuam qualquer outra condição que caracterize controle, indicando o número, o tipo e o valor de cada ação, bem como o número do registro no Cadastro Nacional de Pessoas Físicas (CPF) ou no Cadastro Nacional de Pessoas Jurídicas (CNPJ) dos sócios, assim como a Ata da Assembleia de eleição dos dirigentes, no caso de sociedade por ações;
+V - cópia das demonstrações financeiras do último exercício fiscal disponível, evidenciando a receita operacional, bruta e líquida, auferida com a prestação dos serviços de telecomunicações, que não inclui Serviços de Valor Adicionado (SVA), para fins de enquadramento no art. 88 da Lei nº 12.529, de 30 de novembro de 2011; e,
+VI - declaração firmada pela prestadora de que não está, direta, indiretamente ou por meio de empresa sob controle comum, enquadrada em qualquer hipótese de restrição prevista no art. 5º da Lei nº 12.485, de 12 de setembro de 2011.
+§ 2º Caso o requerimento e a declaração sejam firmados por representante da prestadora, deve ser encaminhado o respectivo instrumento que comprove os poderes do signatário para representá-la.
+§ 3º A Anatel, a seu critério, poderá determinar que as alterações societárias que não se enquadrem nos termos definidos no caput sejam submetidas à anuência prévia.
+§4º Excepcionalmente e de forma fundamentada, a Anatel poderá impor condicionantes adicionais em casos concretos."
+................................
+Resolução nº 101/1999
+"Art. 6º Deverá ser submetida previamente à Anatel alteração que possa vir a caracterizar transferência de Controle, especialmente:
+I - quando a Controladora ou um de seus integrantes se retira ou passa a deter participação inferior a cinco por cento no capital votante da prestadora ou de sua controladora;
+II - quando a Controladora deixa de deter a maioria do capital votante da empresa;
+III - quando a Controladora, mediante acordo, contrato ou qualquer outro instrumento, cede, total ou parcialmente, a terceiros, poderes para condução efetiva das atividades sociais ou de funcionamento da empresa.
+Parágrafo único. Regulamentação específica poderá dispor sobre submissão a posteriori de alteração de que trata o caput ou mesmo dispensá-la."
+A Requerente, por meio do documento nº 3 do SEI nº 14615122, declarou expressamente se enquadrar nas condições dispostas no art. 88 da Lei nº 12.529, de 30 de novembro de 2011
+O Anexo ao RGO estabelece os requisitos necessários para a comprovação de qualificação jurídica, técnica e econômico-financeira:
+RGO - ANEXO
+"Art. 1º Para comprovação de qualificação jurídica, a pretendente deve:
+a) informar, por meio de sistema informatizado disponibilizado pela Anatel, sua qualificação, indicando sua razão social e o nome fantasia quando aplicável, o número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) e o endereço;
+b) apresentar ato constitutivo e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente;
+c) apresentar, no caso de sociedade por ações, a composição acionária do controle societário e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações;
+d) declarar, por meio de sistema informatizado disponibilizado pela Anatel, quando aplicável, a inexistência de impedimentos regulamentares para a obtenção da autorização; e,
+e) apresentar prova de inscrição no cadastro de contribuintes estadual ou distrital, relativo à sede da entidade, pertinente a seu ramo de atividade e compatível com o objeto da autorização.
+Art. 2º Para comprovação de qualificação técnica, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que possui aptidão para o desempenho da atividade pertinente bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização.
+Art. 3º Para comprovação de qualificação econômico-financeira, a pretendente deve declarar, por meio de sistema informatizado disponibilizado pela Anatel, que está em boa situação financeira e que não se encontra em falência.
+Parágrafo único. A qualquer tempo, a Anatel pode exigir documentos e informações para a comprovação do requisito previsto no caput."
+Conforme atestado pela área técnica, os requisitos do art. 17 do RGO e arts. 1º, 2º e 3º do Anexo do RGO foram atendidos pela Requerente:
+Informe nº 24/2025/CPOE/SCP (SEI nº 14652354)
+"3.19. Nessa esteira, a tabela abaixo demonstra que a documentação apresentada pela Requerente tem o condão de comprovar o atendimento aos requisitos previstos no art. 17 do RGO pela TI SPARKLE:
+ REQUISITO
+ | 
+ DOCUMENTO
+ | 
+ Requerimento contendo a composição societária, a descrição detalhada da operação pretendida e o quadro resultante da operação (art. 17, § 1º).
+ | 
+ SEI nº 
+ | 
+ Minuta da alteração contratual pretendida, no caso de sociedade por quotas de responsabilidade limitada (art. 17, inciso I).
+ | 
+ Contrato de Compra e Venda de Ações. (SEI nº 14615122, doc. 2).
+ | 
+ Ata da Assembleia Geral que tenha decidido pela modificação societária pretendida, no caso de sociedade por ações (art. 17, inciso II).
+ | 
+ Não se Aplica
+ | 
+ Contrato Social ou Estatuto consolidado, quando for o caso, e sua última alteração, devidamente registrados no órgão competente (art. 17, inciso III).
+ | 
+ SEI nº 14615122, doc.1.
+ | 
+ Relação dos acionistas, com direito a voto ou que possuam qualquer outra condição que caracterize controle, indicando o número, o tipo e o valor de cada ação, bem como o número do registro no Cadastro Nacional de Pessoas Físicas (CPF) ou no Cadastro Nacional de Pessoas Jurídicas (CNPJ) dos sócios, assim como a Ata da Assembleia de eleição dos dirigentes, no caso de sociedade por ações (art. 17, inciso IV).
+ | 
+ SEI nº 14615122, doc.1.
+ | 
+ Cópia das demonstrações financeiras do último exercício fiscal disponível, evidenciando a receita operacional, bruta e líquida, auferida com a prestação dos serviços de telecomunicações, que não inclui Serviços de Valor Adicionado (SVA), para fins de enquadramento no art. 88 da Lei nº 12.529, de 30 de novembro de 2011 (art. 17, inciso V).
+ | 
+ Dispensado dado a declaração SEI nº 14615122, doc.3.
+ | 
+ Declaração firmada pela prestadora de que não está direta, indiretamente ou por meio de empresa sob controle comum, enquadrada em qualquer hipótese de restrição prevista no art. 5º da Lei nº 12.485, de 12 de setembro de 2011 (art. 17, inciso VI).
+ | 
+ SEI nº 14615122, doc. 5.
+ | 
+ Habilitação Jurídica: Qualificação da prestadora, indicando sua razão social e o nome fantasia quando aplicável, o número de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) e o endereço (art. 1º, alínea "a", do Anexo ao RGO).
+ | 
+ SEI nº 14615121
+ | 
+ Habilitação Jurídica: Ato constitutivo da prestadora e suas alterações vigentes, ou sua consolidação, devidamente registrados ou arquivados na repartição competente (art. 1º, alínea "b", do Anexo ao RGO).
+ | 
+ SEI nº 14615121
+ | 
+ Habilitação Jurídica: Composição acionária do controle societário da prestadora, no caso de sociedade por ações, e os documentos de eleição de seus administradores, exigência também necessária quando se tratar de sociedade que designe sua diretoria nos moldes das sociedades por ações (art. 1º, alínea "c", do Anexo ao RGO).
+ | 
+ SEI nº 14615122, doc 1.
+ | 
+ Habilitação Jurídica: Declarações firmada pela prestadora de que inexistem impedimentos regulamentares para a obtenção de autorização para explorar serviços de telecomunicações (art. 1º, alínea "d", do Anexo ao RGO).
+ | 
+ SEI nº 14615122, doc. 7.
+ | 
+ Habilitação Jurídica: Provas de inscrição da prestadora no cadastro de contribuintes estadual ou distrital, relativo à sede da entidade, pertinente a seu ramo de atividade e compatível com o objeto da autorização para explorar serviços de telecomunicações (art. 1º, alínea "e", do Anexo ao RGO).
+ | 
+ SEI nº 14615122, doc. 9.
+ | 
+ Qualificação Técnica: Declarações firmada pelas prestadora de que possuem aptidão para o desempenho da atividade pertinente, bem como a existência de pessoal técnico adequado e disponível para a realização do objeto da autorização para explorar serviços de telecomunicações (art. 2º do Anexo ao RGO).
+ | 
+ SEI nº 14615122, doc. 10. 
+ | 
+ Qualificação Econômico-Financeira: Declarações firmada pelas prestadora de que estão em boa situação financeira e que não se encontra em falência (art. 3º do Anexo ao RGO).
+ | 
+ SEI nº 14707755, doc. 2
+ | 
+Complemento o quadro acima com o SEI nº 14615121, que atende o requisito estabelecido no §1º do art. 17 do RGO.
+A Lei Geral de Telecomunicações (LGT) ou Lei nº 9.472, de 16 de julho de 1997, e RGO estabelecem condições subjetivas semelhantes que devem ser observadas na operação sob análise:
+LGT
+"Art. 133. São condições subjetivas para obtenção de autorização de serviço de interesse coletivo pela empresa ou pela cooperativa: 
+I - estar constituída segundo as leis brasileiras, com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos dois anos anteriores, com a decretação da caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou da caducidade de direito de uso de radiofreqüência;
+III - dispor de qualificação técnica para bem prestar o serviço, capacidade econômico-financeira, regularidade fiscal e estar em situação regular com a Seguridade Social;
+IV - não ser, na mesma região, localidade ou área, encarregada de prestar a mesma modalidade de serviço.
+Parágrafo único. A Agência deverá verificar a situação de regularidade fiscal da empresa ou da cooperativa relativamente a entidades integrantes da administração pública federal, podendo, ainda, quando se mostrar relevante, requerer comprovação de regularidade perante as esferas municipal e estadual do poder público."
+...........................
+RGO
+"Art. 5º Quando se tratar de serviços de telecomunicações de interesse coletivo, a obtenção da autorização está condicionada ao atendimento das seguintes condições gerais: 
+I - ser pessoa jurídica, de direito público ou privado, constituída sob as leis brasileiras e com sede e administração no País;
+II - não estar proibida de licitar ou contratar com o Poder Público, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências;
+II - não estar proibida de licitar ou contratar com a Anatel, não ter sido declarada inidônea ou não ter sido punida, nos 2 (dois) anos anteriores, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências; (Redação dada pela Resolução Anatel nº 781, de 1º de agosto de 2025)
+III - dispor de qualificação jurídica e técnica para bem prestar o serviço, capacidade econômico-financeira e regularidade fiscal e estar em situação regular com o Fundo de Garantia por Tempo de Serviço; e,
+IV - não deter autorização para a exploração de serviço de telecomunicações de interesse coletivo."
+Os aspectos arrolados no art. 5º do RGO e art. 133 da LGT foram considerados atendidos, segundo consignado pela área técnica. A regularidade fiscal será avaliada em seção específica nesta Análise:
+Informe nº 24/2025/CPOE/SCP (SEI nº 14652354)
+"3.21. A condição imposta pelo inciso I do art. 5º do RGO e inciso I do art. 133 da LGT refere-se à habilitação jurídica já averiguada e encontra-se atendida, uma vez que a prestadora TI SPARKLE é constituída segundo as leis brasileiras, com sede e administração no País, conforme Ato Constitutivo já mencionado.
+3.22. Constata-se, do mesmo modo, o atendimento da condição exigida no inciso II do art. 5º do RGO e inciso II do art. 133 da LGT, haja vista a declaração firmada pela TI SPARKLE no sentido de que (i) não está proibida de contratar com o Poder Público; (ii) não foi declarada inidônea; e (iii) não foi punida, nos últimos dois anos, com a decretação de caducidade de concessão, permissão ou autorização de serviço de telecomunicações, ou de caducidade de direito de uso de radiofrequências, (SEI nº 14707755. doc. 1). Nesse cenário, válido destacar que foi realizada consulta ao Cadastro Nacional de Empresas Inidôneas e Suspensas (CEIS), que tem por objetivo consolidar a relação das empresas e pessoas físicas que sofreram sanções que restringiram o direito de participar de licitações ou de celebrar contratos com a Administração Pública, o que gerou as telas, anexas ao SEI nº 14708086, as quais demonstram a ausência de registros em nome da TI SPARKLE.
+3.23. A habilitação jurídica, a qualificação técnica e a capacidade econômico-financeira da TI SPARKLE também já foi averiguada, consoante os termos do Anexo ao RGO, conforme tabela acima, sendo que o tema regularidade fiscal será analisado em subtópico específico. Desse modo, pode-se concluir que houve o atendimento da condição prevista no inciso III do art. 5º do RGO e inciso III do art. 133.
+3.24. No que se refere às vedações estabelecidas no inciso IV do art. 5º do RGO e inciso IV do art. 133 da LGT, que alcançam apenas a prestadora, verifica-se que a operação envolve apenas a transferência do controle da prestadora TI SPARKLE, não contemplando transferência de outorga das referidas sociedades, de modo que a situação atual será mantida, em pleno atendimento da condição subjetiva imposta."
+O art. 19 do RGO, por sua vez, estabelece que a anuência prévia para a transferência de controle, somente poderá ser concedida quando não houver prejuízo à competição nem risco à adequada prestação do serviço, devendo-se considerar limitações estabelecidas:
+RGO
+"Art. 19. A anuência prévia para a transferência de controle de que tratam os arts. 17 e 18 deste Regulamento somente será concedida se não prejudicar a competição e não colocar em risco a prestação do serviço.
+Parágrafo único. A Agência levará em consideração restrições, limites ou condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais."
+O art. 7º da Resolução 101/1999, por sua vez, além do aspecto competitivo, lista requisitos adicionais: 
+Resolução nº 101/1999
+"Art. 7º A Anatel, na análise de processo de transferência de Controle, considerará, entre outros, os seguintes aspectos:
+I - restrições, limites ou condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais e vedações à concentração econômica;
+II - manutenção das condições aferidas no processo que originou o direito de exploração do serviço, em especial as de habilitação e qualificação previstas no edital de licitação ou na regulamentação;
+III - grau de competição no setor e na prestação do serviço;
+IV - existência e validade de instrumento jurídico formalmente celebrado em data anterior à vigência deste Regulamento.
+Parágrafo único. Sem prejuízo das demais disposições legais e regulamentares, a transferência de Controle somente será aprovada se não prejudicar a competição e não colocar em risco a prestação do serviço."
+A operação será avaliada pela perspectiva competitiva em seção específica na presente Análise, para verificação do atendimento do art. 19 do RGO, e dos incisos I e III do art. 7º da Resolução nº 101/1999. Além desses aspectos, a área técnica considerou os requisitos da análise regulatória atendidos, não havendo a necessidade de impor restrições ou condicionamentos à operação: 
+Informe nº 24/2025/CPOE/SCP (SEI nº 14652354)
+"3.25. A análise sob a ótica competitiva exigida por força do parágrafo único do art. 19 do RGO, e dos incisos I e III do art. 7º do Regulamento anexo à Resolução nº 101, de 1999, será efetuada em tópico específico do presente Informe. Já quanto à análise dos riscos à prestação dos serviços, requisito também previsto no parágrafo único do art. 19 do RGO, esta área técnica entende que a averiguação da manutenção das condições de habilitação das outorgas de interesse coletivo e sob o regime privado, detida pela prestadora envolvida na operação que visa à alteração do seu controle é medida que contempla a análise regulatória sob essa ótica, tal como efetuado neste subtópico.
+3.26. Diante do exposto, levando-se ainda em consideração a análise regulatória realizada nos subtópicos seguintes deste Informe, conclui-se que a implementação da operação societária acarretará na alteração do controle da prestadora TI SPARKLE, objeto da Anuência Prévia em exame, pode ser aprovada, sem a imposição de restrições e/ou condicionamentos regulatórios, por estar de acordo com os requisitos normativos que regem as autorizações para explorar serviços de telecomunicações."
+A PFE/Anatel não apontou óbice quanto aos requisitos regulatórios ao alegar que "o corpo técnico instruiu devidamente os autos, atestando a apresentação da documentação necessária à análise do pleito em tela, não se vislumbrando óbice quanto ao ponto" (item 62.b, SEI nº 14870660).
+A avaliação realizada pela área técnica mostrou-se adequada e suficiente, não havendo, portanto, necessidade de apresentação de documentação adicional, tampouco de imposição de restrições ou condicionantes.
+IV - Da competência do Conselho Diretor para análise da operação
+Conforme demonstrado acima, a outorga detida pela Requerente não decorre de procedimento licitatório.
+Ademais, a empresa possui em sua cadeia societária a TELECOM ITALIA S.P.A., sociedade controladora da TIM S.A., integrante do GRUPO TELECOM ITÁLIA:
+Fonte: Processo de Monitoramento SEI nº 53500.014637/2020-61
+A Requerente, portanto, não se enquadra na definição de Prestadora de Pequeno Porte (PPP), nos termos do Ato nº 6.539 (SEI nº 4773304), de 18 de outubro de 2019, :
+Ato nº 6.539/2019
+"Art. 1º Declarar que as prestadoras pertencentes ao GRUPO TELEFÔNICA, ao GRUPO TELECOM AMERICAS, ao GRUPO TELECOM ITALIA, ao GRUPO OI e ao GRUPO SKY/AT&T não são consideradas Prestadoras de Pequeno Porte, segundo o conceito estabelecido no inciso XV do art. 4º do Plano Geral de Metas de Competição, aprovado pela Resolução nº 600, de 8 de novembro de 2012, e alterado pela Resolução nº 694, de 17 de julho de 2018.
+Art. 2º Declarar, por critério de exclusão, que as prestadoras de serviços de telecomunicações não pertencentes aos Grupos elencados no art. 1º deste Ato são consideradas Prestadora de Pequeno Porte, segundo o conceito estabelecido no inciso XV do art. 4º do Plano Geral de Metas de Competição, aprovado pela Resolução nº 600, de 8 de novembro de 2012, e alterado pela Resolução nº 694, de 17 de julho de 2018." (grifado)
+Concluo que a competência do Colegiado para deliberar sobre o pedido submetido por TIS BRASIL TELECOM tem respaldo no inciso XLI do art. 133 do RIA, transcrito a seguir:
+RIA
+"Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+[...]
+XLI - anuir previamente e aprovar, conforme o caso, alteração que caracterize transferência de controle de empresas concessionárias, permissionárias e autorizadas de serviços de telecomunicações e de uso de radiofrequências, especialmente as decorrentes de cisão, fusão, incorporação e transformação, referente a outorgas decorrentes de procedimentos licitatórios, ou detidas por empresas que não se enquadrem no conceito de Prestadoras de Pequeno Porte, nos termos da legislação aplicável;"
+Dessa forma, encontra-se devidamente caracterizada a competência deste Colegiado para deliberar acerca da operação em exame, a qual resulta na alteração do controle societário indireto da prestadora, nos termos da regulação vigente.
+V - Da tempestividade do pedido
+Pelas informações presentes dos autos, verifico que a operação em exame ainda não foi implementada, razão pela qual considero o pedido de anuência prévia tempestivo. Destaco que a efetiva concretização da operação de transferência de controle societário somente poderá ocorrer após a expedição do respectivo Ato de anuência por esta Agência.
+VI - Da vedação à propriedade cruzada - art. 5º da Lei do SeAC
+O art. 5º da Lei n.º 12.485 (Lei do Serviço de Acesso Condicionado - SeAC), de 12 de setembro de 2011, que dispõe sobre restrições ao controle cruzado e à propriedade cruzada entre prestadoras de serviços de telecomunicações de interesse coletivo e empresas de radiodifusão de sons e imagens, bem como de produção e programação de conteúdo audiovisual, estabelece o seguinte:
+Lei do SeAC
+"Art. 5º O controle ou a titularidade de participação superior a 50% (cinquenta por cento) do capital total e votante de empresas prestadoras de serviços de telecomunicações de interesse coletivo não poderá ser detido, direta, indiretamente ou por meio de empresa sob controle comum, por concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e por produtoras e programadoras com sede no Brasil, ficando vedado a estas explorar diretamente aqueles serviços.
+§ 1º O controle ou a titularidade de participação superior a 30% (trinta por cento) do capital total e votante de concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e de produtoras e programadoras com sede no Brasil não poderá ser detido, direta, indiretamente ou por meio de empresa sob controle comum, por prestadoras de serviços de telecomunicações de interesse coletivo, ficando vedado a estas explorar diretamente aqueles serviços.
+§ 2º É facultado às concessionárias e permissionárias de radiodifusão sonora e de sons e imagens e a produtoras e programadoras com sede no Brasil, diretamente ou por meio de empresa sobre a qual detenham controle direto, indireto ou sob controle comum, prestar serviços de telecomunicações exclusivamente para concessionárias e permissionárias dos serviços de radiodifusão sonora e de sons e imagens ou transportar conteúdo audiovisual das produtoras ou programadoras com sede no Brasil para entrega às distribuidoras, desde que no âmbito da própria rede.
+§ 3º É facultado às empresas prestadoras de serviços de telecomunicações de interesse coletivo, diretamente ou por meio de empresa sobre a qual detenham controle direto, indireto ou sob controle comum, controlar produtoras e programadoras com sede no Brasil que exerçam atividades exclusivamente destinadas à comercialização de produtos e serviços para o mercado internacional".
+A requerente apresentou declaração expressa de inexistência de enquadramento nas hipóteses vedadas pelo referido dispositivo legal (docs. 5 e 6, SEI nº 14615122), considerada suficiente pela área técnica (item 3.34, SEI nº 14652354).
+Quanto ao ponto, embora a PFE/Anatel tenha recomendado a consulta ao Sistema de Acompanhamento de Controle Societário (SIACCO), a área técnica, no Informe nº 27/2025/CPOE/SCP (SEI nº 14876834), alegou que tal providência seria dispensável, uma vez que as informações constantes daquele sistema possuem natureza autodeclaratória, revelando-se redundantes em relação à declaração já acostada aos autos.
+Observo que o entendimento da área técnica se ampara em uma série de precedentes da Agência, nos quais a consulta ao SIACCO foi dispensada. Trata-se de entendimento pacificado deste Colegiado que a declaração formal apresentada pela Requerente, no sentido de que não se encontra, direta ou indiretamente, nem por intermédio de empresa sob controle comum, enquadrada em quaisquer das hipóteses de restrição previstas no art. 5º da Lei do SeAC, constitui condição suficiente para afastar o risco de configuração de controle cruzado, inexistindo, na ausência de indícios concretos em sentido contrário, óbice à continuidade da análise do pedido. Cito como exemplos de precedentes os Acórdãos nº 15 (SEI nº 9794457), de 7 de fevereiro de 2023, nº 39 (SEI nº 9824291), de 13 de fevereiro de 2023, nº 432 (SEI nº 5855308), de 11 de agosto de 2020 e nº 274 (SEI nº 14594727), de 20 de outubro de 2025. 
+Portanto, acolho entendimento da área técnica, porquanto inexistem elementos concretos que indiquem risco de violação ao art. 5º da Lei nº 12.485/2011, não se mostrando razoável impor diligência adicional. Registro inexistir normativo que estabeleça a obrigatoriedade de consulta a sistemas de informações societárias para fins de apuração do cumprimento do art. 5º da Lei do SeAC, razão pela qual alinho-me com o entendimento da área técnica. A boa-fé do particular perante o Poder Público constitui princípio basilar consagrado na Declaração de Direitos de Liberdade Econômica, Lei nº 13.874, de 20 de setembro de 2019, o que ampara a decisão de acolher a declaração apresentada pela Requerente como suficiente para o atendimento da obrigação em análise.
+VII - Dos aspectos concorrenciais
+A operação sob exame deve ser apreciada sob a ótica concorrencial, à luz dos princípios da livre, ampla e justa competição, consagrados no art. 6º da LGT. Na hipótese de identificação de potenciais riscos à competição, compete ao Regulador impor restrições, limites ou condicionamentos à operação, de modo a preservar condições competitivas adequadas ao setor.
+Nesse contexto, transcrevo as previsões regulamentares aplicáveis ao caso, que orientam a atuação da Agência na análise de operações de transferências de controle:
+Regulamento aprovado pela Resolução nº 101/1999
+"Art. 7º A Anatel, na análise de processo de transferência de Controle, considerará, entre outros, os seguintes aspectos:
+I - restrições, limites ou condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais e vedações à concentração econômica;
+[...]
+III - grau de competição no setor e na prestação do serviço;
+[...]
+...................................
+RGO
+"Art. 19. A anuência prévia para a transferência de controle de que tratam os arts. 17 e 18 deste Regulamento somente será concedida se não prejudicar a competição e não colocar em risco a prestação do serviço.
+Parágrafo único. A Agência levará em consideração restrições, limites ou condicionamentos estabelecidos nas disposições legais, regulamentares, editalícias ou contratuais."
+Segundo a área técnica, a operação pretendida não apresenta riscos competitivos ao setor:
+Informe nº 24/2025/CPOE/SCP (SEI nº 14652354)
+“3.42. Feito estas considerações, a RETELIT é uma empresa italiana provedora de serviços de telecomunicações e Tecnologia da Informação e Comunicação (TIC), oferecendo conectividade por fibra para backbone e backhaul, serviços de colocation e soluções em nuvem. A RETELIT é controlada pela ASTERION INDUSTRIAL PARTNERS SGEIC S.A. (“ASTERION"). A ASTERION é uma gestora de investimentos espanhola.
+3.43. O Grupo ASTERION não possui infraestrutura de rede backbone no Brasil e não oferece qualquer serviço de telecomunicações no mercado brasileiro. As atividades do Grupo no Brasil se limitam à prestação de serviços nas áreas de Engenharia, Consultoria e Operação & Manutenção em usinas de geração de energia, por meio da IQONY SOLUTIONS DO BRASIL LTDA.
+3.44. In casu, observa-se que a operação societária pretendida não tem o condão de impactar o atual cenário competitivo dos mercados varejistas de serviços de telecomunicações em que atua a TI SPARKLE, a terceiros e aos usuários desses serviços, ou de gerar condições para o exercício de poder de mercado afastando, desta feita, preocupações regulatórias de natureza concorrencial.” (grifado)
+A PFE/Anatel acompanhou a avaliação acima e não apontou óbices à operação (item 53, SEI nº 14870660).
+Importa registrar que a operação societária foi submetida ao Conselho Administrativo de Defesa Econômica (CADE), tendo sido aprovada sem restrições, nos termos do Despacho SG nº 1076 (SEI CADE nº 1603170), de 7 de agosto de 2025, com base no Parecer nº 465/2025/CGAA5/SGA1/SG (SEI CADE nº 1603165), de mesma data, no qual se concluiu que a operação "não possui o condão de acarretar prejuízos ao ambiente concorrencial".
+Diante dos elementos constantes nos autos, concluo que não há óbices à aprovação da operação sob o prisma concorrencial.
+VIII - Da Regularidade Fiscal
+Na Súmula nº 19 da Anatel, aprovada em 1º de dezembro de 2016, o Colegiado consolidou o entendimento institucional acerca da exigência de comprovação da regularidade fiscal no âmbito da análise de pedidos de anuência prévia. Posteriormente, conforme consignado no Acórdão nº 382, de 29 de novembro de 2021 (SEI nº 7736653), nos autos do Processo nº 53500.051211/2020-98, a referida Súmula passou por atualização, com o objetivo de adequá-la às alterações legislativas e regulamentares supervenientes, notadamente aquelas introduzidas pela Lei nº 13.879, de 3 de outubro de 2019, bem como ao Regulamento Geral de Outorgas – RGO, aprovado pela Resolução nº 720, de 2020:
+Súmula nº 19
+"Requerimentos de anuência prévia para transferência de controle, de outorga ou de direito de exploração de satélite podem ser recebidos e instruídos sem a comprovação da regularidade fiscal, que deve ser demonstrada até o momento da assinatura dos atos de anuência prévia ou de transferência de outorga, conforme o caso. 
+Nos casos de transferência de controle, a regularidade fiscal deve ser exigida apenas da empresa detentora de outorga para exploração do serviço de telecomunicações que estiver envolvida na operação. Nos casos de transferência de outorga ou de direito de exploração de satélite, a regularidade fiscal deve ser exigida apenas do sucessor. 
+Requerimentos de anuência prévia para transferência de controle ou de outorga que envolvam empresa detentora de autorização não decorrente de procedimento licitatório, a comprovação deve incluir a regularidade fiscal perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço – FGTS; e a regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - Cadin.
+Requerimentos de anuência prévia para transferência de controle ou de outorga que envolvam empresa detentora de concessão ou autorização decorrente de procedimento licitatório, ou para transferência de direito de exploração de satélite decorrente de procedimento licitatório, a comprovação deve incluir, adicionalmente, a regularidade fiscal perante a Fazenda Estadual ou do Distrito Federal, e a Fazenda Municipal, expedida por órgão do lugar da sede da empresa envolvida na operação ou do sucessor, conforme o caso, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívidas ativas.
+Caso os documentos apresentados não atestem, de forma expressa, a inexistência de débitos inscritos em dívida ativa, devem ser apresentados, também, documentos expedidos pela Procuradoria da Fazenda Nacional, pela Procuradoria Geral do Estado e do Munícipio da sede da empresa envolvida na operação ou do sucessor, conforme o caso, ou órgão equivalente, nos quais seja atestada a inexistência de débitos inscritos em dívida ativa.
+A prova de regularidade fiscal perante a Fazenda Municipal deve abranger a apresentação das regularidades relativas a todos os débitos de natureza mobiliária.
+Requerimentos de anuência prévia que não tenham como objeto a transferência de controle, de outorga ou de direito de exploração de satélite dispensam a comprovação de regularidade fiscal pelo interessado, exceto quanto ao Fundo de Fiscalização das Telecomunicações - Fistel, por falta de previsão legal ou regulamentar.
+Excepcionalmente e de forma fundamentada, a Anatel pode demandar, quando se mostrar relevante, condicionantes adicionais em casos concretos.” (Grifou-se)
+Conforme estabelecido na Súmula, pedidos de anuência prévia podem ser protocolizados, recebidos e regularmente instruídos mesmo sem a apresentação imediata da comprovação de regularidade fiscal. Todavia, essa exigência não é afastada, devendo a regularidade fiscal ser necessariamente demonstrada até o momento da assinatura dos atos administrativos que formalizem a anuência prévia, conforme a natureza da operação analisada.
+Noto que tanto área técnica (item 3.29, SEI nº 14652354), como a PFE/Anatel (item 38, SEI nº 14870660) apresentaram avaliação convergente. Concluíram que, o presente caso, por envolver empresa detentora de autorização não decorrente de procedimento licitatório, a comprovação deve incluir a regularidade fiscal perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço – FGTS; e a regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal - CADIN.
+Assim, filio-me ao encaminhamento proposto pela PFE/Anatel e área Técnica, no sentido de que a anuência prévia seja condicionada à comprovação de regularidade fiscal: 
+perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa;
+relativamente ao FGTS; e
+perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no CADIN.
+X. Das considerações finais
+Em observância ao art. 21 do RGO, proponho que a presente anuência prévia tenha validade de 180 (cento e oitenta) dias, contados a partir da publicação do Ato de Anuência no Diário Oficial da União (DOU), prorrogável, a pedido da parte interessada, uma única vez por igual período, desde que mantidas as condições aqui verificadas. Ademais, deve-se determinar que as cópias dos atos praticados para a realização da operação sejam encaminhadas à Anatel no prazo de 60 (sessenta) dias, contado do respectivo registro no órgão competente.
+Por fim, sugiro que a anuência prévia seja concedida nos termos da Minuta de Ato SEI nº 14879220.
+CONCLUSÃO
+Diante do exposto na presente Análise, proponho:
+conceder anuência prévia à operação societária que resultará na alteração de controle indireto da TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA., inscrita no CNPJ nº 04.475.718/0001-95, nos termos da Petição SEI nº 14615121, condicionada à comprovação da regularidade fiscal da TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. perante a Superintendência de Competição, nos termos da Súmula nº 19, de 1º de dezembro de 2016, ou seja, mediante o envio da documentação que comprove a regularidade fiscal perante a Fazenda Federal, abrangendo os débitos tributários constituídos em definitivo, inscritos ou não em dívida ativa; a regularidade relativamente ao Fundo de Garantia por Tempo de Serviço (FGTS); e a regularidade fiscal perante a Anatel, abrangendo créditos tributários e não tributários, constituídos de forma definitiva, mesmo que não tenha havido inscrição em dívida ativa ou no Cadastro Informativo de Créditos não Quitados do Setor Público Federal (CADIN);
+estabelecer que a decisão do Conselho Diretor a respeito do item 6.1.a desta Conclusão valerá pelo prazo de 180 (cento e oitenta) dias, contado a partir da publicação do Ato que formaliza a Anuência Prévia no Diário Oficial da União, prorrogável, a pedido, uma única vez, por igual período, se mantidas as mesmas condições societárias; e
+determinar à TI SPARKLE BRASIL TELECOMUNICAÇÕES LTDA. que encaminhe à Anatel as cópias dos atos praticados que resultarem na transferência de seu controle, no prazo de até 60 (sessenta) dias, contado do registro no órgão competente.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 13/02/2026, às 10:47, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15037315 e o código CRC 2210AC01.
+ | 
+Referência: Processo nº 53500.089835/2025-92 | 
+SEI nº 15037315 |

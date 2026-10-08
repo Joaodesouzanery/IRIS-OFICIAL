@@ -1,0 +1,561 @@
+SEI/ANATEL - 15272169 - Análise
+Boletim de Serviço Eletrônico em 15/06/2026
+Análise nº 18/2026/NP
+Processo nº 53524.019858/2017-51
+Interessado: BYSAT AUTOMACAO E CONTROLE EIRELI
+CONSELHEIRO
+NILO PASQUALI
+ASSUNTO
+Recurso Administrativo interposto pela empresa BYSAT AUTOMACAO E CONTROLE EIRELI, CNPJ nº 03.399.403/0001-43, contra o Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) para o exercício financeiro de 2014.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO AO FUST. RECURSO PROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso administrativo interposto por BYSAT Automação e Controle Eireli contra o Despacho Decisório nº 239/2025/COUN/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes ao Fust no exercício de 2014.
+ Fato relevante. A fiscalização concluiu que a empresa não declarou valores devidos ao Fust no exercício de 2014. A Anatel emitiu a Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL, com cobrança do principal, da multa de ofício e dos juros de mora.
+ As alegações da recorrente. A recorrente alegou prescrição intercorrente, inexistência de fato gerador da contribuição ao Fust e inaplicabilidade da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996. Sustentou que presta serviços de monitoramento e rastreamento veicular e que utiliza serviços de telecomunicações de terceiros como insumo operacional.
+ Petição extemporânea. A recorrente apresentou petição extemporânea antes da divulgação da pauta de julgamento. Requereu a juntada de decisões administrativas da própria Anatel em processos da mesma empresa e defendeu a identidade fática e jurídica com o caso em exame.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se incide prescrição intercorrente no processo administrativo fiscal; (ii) saber se houve fato gerador da contribuição ao Fust no exercício de 2014; e (iii) saber se é aplicável a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996.
+III. RAZÕES DE DECIDIR
+ O recurso é admissível. A autoridade recorrida conheceu do recurso. Não houve retratação. Compete ao Conselho Diretor apreciar o mérito recursal.
+ Não há necessidade de manifestação da PFE-Anatel. O caso não preenche os requisitos do art. 5º, IV, da Portaria nº 642/2013.
+ A petição extemporânea deve ser conhecida. Ela foi protocolizada antes da divulgação da pauta de reunião. Incide a Súmula nº 21 da Anatel.
+ Não se aplica prescrição intercorrente ao processo administrativo fiscal. Incidem a Súmula nº 26 da Anatel e a Súmula CARF nº 11.
+ Os contratos celebrados pela BYSAT com seus clientes têm por objeto licenciamento de software, gerenciamento, rastreamento e monitoramento de bens, com cessão de equipamentos em comodato, instalação e manutenção.
+ Os elementos dos autos não demonstram oferta autônoma de serviço de telecomunicações ao usuário final. A conectividade aparece como meio técnico necessário à execução do serviço de monitoramento e rastreamento.
+ O serviço de telecomunicações, no arranjo operacional examinado, configura insumo para a prestação de Serviço de Valor Adicionado (SVA). Não há comprovação de faturamento específico por prestação de serviço de telecomunicações ao cliente final.
+ A Análise nº 199/2020/MM, o Acórdão nº 516/2020 e decisões proferidas em outros processos da mesma empresa adotaram entendimento no mesmo sentido.
+ Não se configurou o fato gerador da contribuição ao Fust no exercício de 2014. O lançamento deve ser cancelado.
+ A multa de ofício do art. 44, I, da Lei nº 9.430/1996 é, em tese, aplicável aos processos administrativos fiscais relativos ao Fust. Esse entendimento decorre de pareceres da PFE-Anatel e da PGF, de precedentes do Conselho Diretor e da Súmula nº 27 da Anatel.
+ A multa de ofício não subsiste no caso concreto. A sua exigência depende da existência de crédito principal válido. Reconhecida a inocorrência do fato gerador, deve ser afastada a penalidade.
+ Os autos revelam indícios de possível operação de estações sem licenciamento pela BYSAT a partir de 2014, especialmente no contexto dos contratos firmados com Onixsat e OnixTel. A matéria deve ser avaliada pela Superintendência de Controle de Obrigações.
+ A Superintendência de Controle de Obrigações deve comunicar ao Ministério das Comunicações o resultado do processo, para as providências cabíveis quanto à atualização dos valores do Fust e do Funttel.
+IV. DISPOSITIVO E TESE
+ Recurso administrativo provido.
+Tese de julgamento: "1. Não se aplica prescrição intercorrente ao processo administrativo fiscal. 2. Não há fato gerador da contribuição ao Fust quando a receita da empresa decorre de serviços de monitoramento e rastreamento e os serviços de telecomunicações são utilizados apenas como insumo operacional, sem faturamento específico ao usuário final. 3. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 é, em tese, aplicável aos processos administrativos fiscais relativos ao Fust, mas não subsiste quando afastado o crédito principal. 4. Devem ser avaliados os indícios de operação de estações sem licenciamento. 5. Deve a Superintendência de Controle de Obrigações comunicar ao Ministério das Comunicações o resultado do processo para as providências cabíveis quanto ao Fust e ao Funttel."
+Dispositivos relevantes citados: CF/1988, arts. 37 e 150, II; CTN, arts. 149, 150, 151, III, e 156, V; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 2º; Lei nº 9.873/1999, art. 1º, § 1º; Lei nº 9.998/2000, art. 6º, IV; Lei nº 10.522/2002, art. 37-A; Decreto nº 70.235/1972, arts. 10, 11, 33 e 59; Resolução nº 612/2013, arts. 115 e 116; Portaria nº 642/2013, art. 5º, IV; Portaria Anatel nº 1.395/2017; Portaria Anatel nº 2.946/2021; LC nº 183/2021, art. 2º.
+Jurisprudência relevante citada: Anatel, Súmula nº 21, de 10.10.2017; Anatel, Súmula nº 26, de 26.07.2024; Anatel, Súmula nº 27, de 26.07.2024; CARF, Súmula nº 11; Anatel, Acórdão nº 516/2020, j. 2020; Anatel, Acórdão nº 312, Processo nº 53500.009838/2008-50, Rel. Carlos Manuel Baigorri, Reunião nº 885, de 28.05.2020; Anatel, Acórdão nº 114, Processo nº 53524.008586/2009-54, Rel. Otavio Luiz Rodrigues Junior, Reunião nº 823, de 06.04.2017; Anatel, Acórdão nº 68, Processo nº 53500.206476/2015-72, Rel. Vicente Bandeira de Aquino Neto, Reunião nº 941, de 13.03.2025; STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014.
+REFERÊNCIAS
+Constituição da República Federativa do Brasil de 1988.
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional, CTN).
+Lei nº 9.065, de 20 de junho de 1995, que dá nova redação a dispositivos da Lei nº 8.981, de 20 de janeiro de 1995, que altera a legislação tributária federal, e dá outras providências.
+Lei nº 9.430, de 27 de dezembro de 1996, que dispõe sobre a legislação tributária federal, as contribuições para a seguridade social, o processo administrativo de consulta e dá outras providências.
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (Lei do Processo Administrativo, LPA).
+Lei nº 9.873, de 23 de novembro de 1999, que estabelece prazo de prescrição para o exercício de ação punitiva pela Administração Pública Federal, direta e indireta, e dá outras providências.
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (Fust).
+Lei nº 10.522, de 19 de julho de 2002, que dispõe sobre o Cadastro Informativo dos créditos não quitados de órgãos e entidades federais e dá outras providências.
+Lei Complementar nº 227, de 13 de janeiro de 2026, que altera o Decreto nº 70.235, de 6 de março de 1972 e dá outras providências.
+Decreto nº 3.624, de 5 de outubro de 2000, que dispõe sobre a regulamentação do Fundo de Universalização dos Serviços de Telecomunicações (Fust), e dá outras providências. Revogado pelo Decreto nº 11.004, de 21 de março de 2022.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o processo administrativo fiscal e dá outras providências.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Súmula nº 21, de 10 de outubro de 2017, que trata do conhecimento e análise, pelo Conselho Diretor, de petições extemporâneas.
+Súmula nº 26, de 26 de julho de 2024, que estabelece que é inaplicável a prescrição intercorrente no processo administrativo fiscal.
+Súmula nº 27, de 26 de julho de 2024, que estabelece que, nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust).
+Súmula CARF nº 11, que estabelece que não se aplica a prescrição intercorrente no processo administrativo fiscal.
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Portaria Anatel nº 1.395, de 9 de outubro de 2017, que altera a Portaria nº 642, de 26 de julho de 2013.
+Portaria Anatel nº 2.946, que delega competência à Superintendência de Controle de Obrigações para instaurar, instruir e decidir Processos Administrativos Fiscais (PAF).
+Matéria para Apreciação do Conselho Diretor nº 764/2025 (SEI nº 14559105), de 30 de janeiro de 2026.
+PAF nº 53524.000642/2016-31, que trata de lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (Fust), no exercício de 2012.
+PAF nº 53569.000109/2023-82, que trata de lançamentos dos créditos tributários referentes à contribuição para o Fundo de Universalização dos Serviços de Telecomunicações (Fust), no exercício de 2021. 
+RELATÓRIO
+Trata-se de Recurso Administrativo (SEI nº 13771207 ) interposto pela empresa BYSAT AUTOMACAO E CONTROLE EIRELI, inscrita no CNPJ nº 03.399.403/0001-43, contra o Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) para o exercício de 2014, traduzidos na Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546).
+Em 30 de novembro de 2017, concluiu-se o Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814), que apurou valores de contribuição ao Fust no montante de [Item 1 do Apartado Sigiloso SEI nº 15509511], referentes ao exercício financeiro de 2014. A partir das informações constantes do Anexo 09 - Consulta ao SFUST (SEI nº 2156211), o relatório afirma que a Prestadora não declarou, no sistema SIGEC, valores devidos referentes ao Fust. A ausência de valores declarados pode ser também verificada pela inexistência de lançamentos de receitas de código 4100 constantes do documento Extrato Sigec Fust 2014 (SEI nº 2333361).
+Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814)
+4.7 Das Disposições Finais
+O cálculo da contribuição ao Fundo encontra-se detalhado na Planilha de Apuração do Fust-Funttel (Anexo 08 ¦ SEI nº 2156202).
+A prestadora não declarou valores ao FUST, relativos a 2014, conforme consulta ao Sistema de Acolhimento da Declaração do Fust - SFUST (Anexo 09 - SEI nº 2156211).
+5. CONCLUSÃO
+Com base nas informações apresentadas pela Prestadora BYSAT AUTOMACAO E CONTROLE LTDA, CNPJ 03.399.403/0001-43, à Anatel, os valores apurados para contribuição ao Fust, totalizam, durante o exercício financeiro de 2014, [Item 2 do Apartado Sigiloso SEI nº 15509511].
+(destaque acrescido aos existentes)
+A partir do cotejo dos valores apurados pela fiscalização com a ausência de montantes declarados pelo Contribuinte, a Anatel, ao identificar valores ainda devidos ao Fundo, procedeu ao lançamento de ofício da diferença constatada e emitiu a Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546), no valor de [Item 3 do Apartado Sigiloso SEI nº 15509511], composto das seguintes parcelas:
+Lançamento de ofício: [Item 4 do Apartado Sigiloso SEI nº 15509511];
+Multa de ofício: [Item 5 do Apartado Sigiloso SEI nº 15509511]; e
+Juros de mora: [Item 6 do Apartado Sigiloso SEI nº 15509511].
+A notificação foi recebida em 19 de dezembro de 2017, conforme Aviso de Recebimento acostado aos autos (SEI nº 2336812).
+Em 12 de janeiro de 2018, a entidade apresentou Impugnação (SEI nº 2309943), em que alega que:
+não auferiu receitas oriundas da prestação de serviços de telecomunicações, o que afasta a incidência do Fust, visto que contrata empresas terceirizadas para a realização dos serviços em relação aos quais incide a referida contribuição; e
+não há embasamento legal para a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430, de 27 de dezembro de 1996.
+Em razão da Impugnação, a exigibilidade do crédito foi suspensa, conforme comprovação contida na Consulta Sigec - Fust 2014 (SEI nº 13476503), em atendimento ao disposto no art. 151, III, do Código Tributário Nacional (CTN):
+Código Tributário Nacional
+Art. 151. Suspendem a exigibilidade do crédito tributário:
+I - moratória;
+II - o depósito do seu montante integral;
+III - as reclamações e os recursos, nos termos das leis reguladoras do processo tributário administrativo;
+IV - a concessão de medida liminar em mandado de segurança.
+(grifou-se)
+Em 15 de abril de 2025, a Gerência de Controle de Obrigações de Universalização e de Ampliação do Acesso (COUN) analisou os argumentos apresentados pela Impugnante e, nos termos do Informe nº 244/2025/COUN/SCO (SEI nº 13435354), indicou que:
+em razão da impugnação, a exigibilidade do crédito deve ser suspensa, conforme disposto no art. 151, III, do CTN;
+não é aplicável a prescrição intercorrente ao Processo Administrativo Fiscal Contencioso, conforme disposto na Súmula nº 26, de 26 de julho de 2024, da Anatel, e na Súmula CARF nº 11, do Conselho Administrativo de Recursos Fiscais (CARF);
+a contribuição para o Fust constitui um tributo sujeito ao lançamento por homologação, espécie de lançamento tributário em que o contribuinte tem a atribuição de apurar, declarar e recolher a exação tributária, sem qualquer análise prévia por parte da autoridade administrativa, aguardando o procedimento homologatório tácito ou expresso. O sujeito passivo da contribuição para o Fust é a prestadora de serviços de telecomunicações, outorgada ou não, nos regimes público ou privado, e o fato gerador do tributo, que ocorre no último dia de cada mês, é a obtenção de receita decorrente da prestação dos serviços de telecomunicações, na forma da Lei nº 9.998, de 17 de agosto de 2000;
+sobre o lançamento de ofício, além dos juros de mora, também incorre a incidência da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996;
+a Superintendência de Controle de Obrigações (SCO) possui as competências para instaurar, instruir e decidir Processos Administrativos Fiscais, incluindo todas as atividades relacionadas ao correto tratamento dos processos, decorrentes da delegação promovida pelo Superintendente de Administração e Finanças (SAF) por meio da Portaria nº 2.946, de 30 de janeiro de 2025 (SEI nº 13215863), publicada no Boletim de Serviço da Anatel (BS) e no Diário Oficial da União (DOU) no dia 6 de fevereiro de 2025;
+a Impugnação (SEI nº 2309943) foi apresentada dentro do prazo legal. Contudo, não foi possível verificar a legitimidade da representação, pois não consta procuração nos autos e tampouco foi possível identificar quem subscreveu a impugnação em nome da entidade;
+a Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546) foi emitida em decorrência do descumprimento da obrigação estabelecida no art. 6º, IV, da Lei nº 9.998/2000 e conforme estabelecido nos arts. 149 e 150 do CTN, além de atender aos critérios estabelecidos no art. 11 do Decreto nº 70.235, de 6 de março de 1972;
+o presente processo atendeu aos requisitos formais estabelecidos no art. 142 do CTN, combinado com os arts. 10 e 59 do Decreto nº 70.235/1972;
+quanto à alegação de inexistência de fato gerador, entende-se que o Relatório de Fiscalização nº 0566/2017/AFFO-ANATEL (SEI nº 2179814) apresenta fundamentação suficiente para comprovar a prestação de serviços de telecomunicações pelo Contribuinte. Ademais, a Impugnação não trouxe documentos contábeis capazes de sustentar suas alegações ou demonstrar a necessidade de revisão dos resultados anteriormente apurados pela fiscalização;
+a Lei nº 9.430/1996 dispõe sobre a legislação tributária federal, o que inclui as agências reguladoras;
+o valor da multa de ofício é determinado no art. 44, I, da Lei nº 9.430/1996 e corresponde a 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição;
+aos valores de lançamento de ofício e multa de ofício são acrescidos, desde o vencimento, juros de mora correspondentes à taxa Selic, conforme previsto no art. 37-A, da Lei nº 10.522, de 19 de julho de 2002, e no art. 13 da Lei nº 9.065, de 20 de junho de 1995; e
+não há necessidade de submissão do feito à manifestação da PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Por fim, o Informe nº 244/2025/COUN/SCO (SEI nº 13435354) propôs a manutenção dos lançamentos dos créditos tributários e da multa de ofício referentes à Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546).
+A proposta da Área Técnica foi acolhida pela Superintendente de Controle de Obrigações (SCO), nos termos do Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), de 15 de abril de 2025.
+Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797)
+(...)
+DECIDE:
+1. RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos tributários referentes à contribuição para o Fust, para o exercício de 2014, nos termos do art. 6º, IV, da Lei nº 9.998/2000.
+2. RECONHECER A PROCEDÊNCIA dos lançamentos dos créditos referentes à incidência de multa de ofício, referente aos lançamentos dos créditos em virtude da não declaração da contribuição, para o exercício de 2014, em conformidade com o art. 44, I, da Lei nº 9.430/1996.
+3. DETERMINAR a notificação da empresa, encaminhando cópia desta decisão.
+Notificou-se a Prestadora da decisão proferida em 28 de abril de 2025 (SEI nº 13438850 e nº 13621204), a qual interpôs Recurso Administrativo em 28 de maio de 2025 (SEI nº 13771207 e nº 13771213). A Recorrente reiterou os argumentos já apresentados em sua defesa, sustentando a improcedência do lançamento fiscal por ausência de fato gerador e inaplicabilidade da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996. Ademais, alegou a ocorrência de prescrição, em razão do transcurso de período superior a três anos em que o processo permaneceu paralisado sem apreciação pela autoridade competente.
+Manteve-se suspensa a exigibilidade do crédito tributário diante da instauração da instância recursal, em observância ao disposto no art. 151, III, do CTN, conforme demonstrado no Extrato SIGEC - FUST 2014 - atualizado - 14/10/2025 (SEI nº 14558694).
+A COUN apreciou as razões recursais no Informe nº 757/2025/COUN/SCO (SEI nº 14551181), de 30 de janeiro de 2026, e concluiu que:
+o Recurso Administrativo (SEI nº 13771207) deve ser conhecido, por atender a todos os critérios de admissibilidade;
+em razão da apresentação do Recurso Administrativo (SEI nº 13771207), a exigibilidade do crédito tributário permanece suspensa conforme disposto no art. 151, III, do CTN;
+não é aplicável a prescrição intercorrente ao Processo Administrativo Fiscal Contencioso, conforme disposto na Súmula nº 26, da Anatel, e na Súmula CARF nº 11, do Conselho Administrativo de Recursos Fiscais (CARF);
+os contratos anexados ao Recurso Administrativo (SEI nº 13771207) referem-se ao provimento de capacidade de satélite, o que, juntamente com as provas já obtidas pela fiscalização da Anatel, corroboram que a Impugnante efetivamente prestou serviços de telecomunicações;
+conforme Parecer Jurídico nº 1.060/2010/BSA/PGF/PFE-Anatel (SEI nº 4341421, fls. 41-68), cujo entendimento foi confirmado pela Coordenação-Geral de Cobrança e Recuperação de Créditos da Procuradoria-Geral Federal por meio do Parecer CGCOB/DIGEVAT nº 26/2010 (SEI nº 4341421, fls. 79-86), a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 incide sobre as contribuições federais, sujeitas a lançamento por homologação, instituídas pela União em decorrência do exercício da sua competência constitucional; e
+aos valores de lançamento de ofício e multa de ofício são acrescidos, desde o vencimento, juros de mora correspondentes à taxa Selic, conforme previsto no art. 37-A, da Lei nº 10.552/2002, e no art. 13 da Lei nº 9.065/1995.
+Por fim, o Informe nº 757/2025/COUN/SCO (SEI nº 14551181) propôs o conhecimento do Recurso e, no mérito, o seu indeferimento.
+Ainda em 30 de janeiro de 2026, a SCO proferiu o Despacho Decisório nº 781/2025/COUN/SCO (SEI nº 14558960), no qual conheceu do Recurso Administrativo interposto. Por meio da Matéria nº 764/2025 (SEI nº 14559105), os autos foram encaminhados à apreciação deste Colegiado.
+Distribuiu-se o processo à relatoria da então Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia em 9 de fevereiro de 2026 (SEI nº 15156761).
+Em 4 de março de 2026, o processo foi redistribuído, para minha relatoria (SEI nº 15269721).
+Em 4 de maio de 2026 (SEI nº 15580727), a Recorrente protocolizou a Petição Extemporânea SEI nº 15580723, contendo dois anexos: o Anexo SEI nº 15580724 e o Anexo SEI nº 15580726. Em sua petição, a empresa requer a juntada de decisões e a aplicação de precedentes administrativos vinculantes no âmbito do PAF nº 53524.019858/2017-51, sustentando que os lançamentos de créditos tributários de Fust discutidos nos presentes autos são materialmente idênticos a outros dois processos da própria empresa já encerrados pela Anatel com reconhecimento de improcedência total. A empresa reitera que sua atividade é de monitoramento e rastreamento veicular (TIV), em que os serviços de telecomunicações são apenas insumo, e não serviço prestado ao cliente final, de modo que não há fato gerador do Fust.
+Por fim, a Petição SEI nº 15580723 requer o conhecimento da petição e a juntada aos autos dos documentos referentes aos processos paradigmas por ela indicados, bem como o reconhecimento da identidade fática e jurídica entre esses processos e o presente caso. Com base nisso, pede ainda o reconhecimento da improcedência dos lançamentos de Fust no PAF nº 53524.019858/2017-51, por ausência de fato gerador, a anulação da multa de ofício eventualmente lançada, por ser acessória ao crédito principal, e, por fim, a extinção do presente Processo Administrativo Fiscal nos mesmos termos adotados nos processos anteriores da empresa.
+É o relatório.
+FUNDAMENTAÇÃO
+A fundamentação da presente Análise encontra-se dividida em 6 (seis) partes. Na primeira, avalia-se a regularidade processual e confirma-se a competência do Conselho Diretor para deliberar sobre a matéria. A segunda parte trata da admissibilidade do Recurso Administrativo interposto. Na terceira, verifica-se a necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel). O mérito recursal é analisado na quarta parte, momento em que se examinam as argumentações apresentadas pela Recorrente. A quinta parte é dedicada à proposta de resolução para o presente processo. Na sexta e última parte, procede-se à conformação do objeto da presente análise com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I - DA REGULARIDADE PROCESSUAL E DA COMPETÊNCIA DO CONSELHO DIRETOR
+A instauração e a instrução deste processo atenderam à sua finalidade, em observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Constituição Federal, a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Adicionalmente, o art. 115 do Regimento Interno da Anatel (RIA) dispõe que o juízo de conhecimento recursal compete à própria autoridade que proferiu a decisão:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116.
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+§ 2º Caberá recurso contra decisão que não conhecer do recurso administrativo, na hipótese prevista na alínea “a” do parágrafo anterior, que deverá ser encaminhado à autoridade hierarquicamente superior à que proferiu a decisão.
+§ 3º A reforma da decisão sobre admissibilidade do recurso administrativo ensejará, na mesma decisão, a deliberação sobre o mérito do recurso originalmente interposto.
+§ 4º Salvo disposição em contrário, a autoridade imediatamente superior àquela que proferiu a decisão será competente para analisar o pedido de concessão de efeito suspensivo, quando houver.
+§ 5º Cabe ao Presidente do Conselho Diretor decidir sobre pedido de efeito suspensivo, nos recursos administrativos cuja decisão compete ao Conselho Diretor, observados os termos do art. 123.
+§ 6º Será de 10 (dez) dias o prazo para interposição de recurso administrativo, contado a partir da intimação do interessado.
+§ 7º O exercício do juízo de retratação a que se refere o § 1º ensejará a expedição de um novo Despacho Decisório, o qual opera efeito substitutivo em relação ao Despacho Decisório recorrido, devendo o interessado ser intimado da nova decisão.
+§ 8º Em caso de retratação parcial, a decisão a que se refere o § 7º deve explicitar a parte retratada, bem como a ratificação dos demais termos da decisão recorrida.
+§ 9º Os recursos referentes a licitações e contratos administrativos observam a legislação específica da matéria.
+(grifou-se)
+Nos presentes autos, o Despacho Decisório nº 781/2025/COUN/SCO (SEI nº 14558960), emitido pelo Superintendente de Controle de Obrigações, substituto, conheceu do Recurso Administrativo interposto. Considerando que não houve retratação da decisão recorrida, a competência para a avaliação do mérito recursal recai sobre o Conselho Diretor.
+II - DA ADMISSIBILIDADE DO RECURSO ADMINISTRATIVO
+Em seu art. 116, o RIA prevê as hipóteses nas quais um recurso administrativo não deve ser conhecido, a saber:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Ademais, o Decreto nº 70.235, de 6 de março de 1972, vigente à época dos fatos e que dispunha sobre o processo administrativo fiscal, especificava que o recurso poderia ser apresentado dentro do prazo de 30 (trinta) dias a partir da notificação da decisão proferida, conforme a seguir. O referido normativo sofreu alterações promovidas pela Lei Complementar nº 227, de 13 de janeiro de 2026. 
+Decreto nº 70.235/1972
+Art. 33. Da decisão caberá recurso voluntário, total ou parcial, com efeito suspensivo, dentro dos trinta dias seguintes à ciência da decisão.
+(N. do R.: Redação anterior à vigência da Lei Complementar nº 227/2026)
+Nos presentes autos, a Prestadora foi notificada da decisão recorrida em 28 de abril de 2025, conforme Certidão de Intimação Cumprida (SEI nº 13621204), tendo o Recurso sido interposto em 28 de maio de 2025, conforme atesta o Recibo Eletrônico de Protocolo (SEI nº 13771213). Resta comprovado, portanto, que o recurso foi apresentado dentro do prazo legal de 30 (trinta) dias, vigente à época dos fatos. 
+Nos termos do que prevê o RIA, a Recorrente possui interesse na reforma da decisão recorrível, está regularmente representada e não há contrariedade a entendimento fixado em Súmula pela Agência.
+Assim, estão presentes os pressupostos de admissibilidade recursal previstos no art. 116 do RIA.
+Ante o exposto, ratifica-se a decisão que conheceu do Recurso Administrativo, consubstanciada no Despacho Decisório nº 781/2025/COUN/SCO (SEI nº 14558960), de 30 de janeiro de 2026.
+III - DA MANIFESTAÇÃO DA PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL
+O art. 5º, IV, da Portaria nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 9 de outubro de 2017, determina que a PFE-Anatel deve ser consultada nos casos que envolverem Processos Administrativos Fiscais nas seguintes situações:
+Portaria nº 642/2013
+Art. 5º A PFE-Anatel deve ser necessariamente ouvida, nos termos do art. 13, inciso VII, da Portaria nº 18, de 5 de janeiro de 2018, nos seguintes casos que envolvam procedimentos fiscais: (Redação dada pela Portaria nº 963, de 02 de julho de 2020)
+(...)
+IV – processos administrativos fiscais que: (Redação dada pela Portaria nº 1395, de 09 de outubro de 2017)
+a) cumulativamente, tenham recurso voluntário e cujo valor nominal dos lançamentos seja igual ou superior a R$ 1.000.000,00 (um milhão de reais); e (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+b) tenham recurso de ofício ao Conselho Diretor. (Incluído pela Portaria nº 1395, de 09 de outubro de 2017)
+No caso concreto, considerando os valores apurados pela fiscalização e notificados pela Anatel, conclui-se não haver necessidade de submissão do feito à manifestação da PFE-Anatel, já que não estão satisfeitos os critérios do art. 5º, IV, da Portaria nº 642/2013, com as alterações trazidas pela Portaria Anatel nº 1.395/2017.
+IV - DO MÉRITO RECURSAL
+Como já relatado, a Recorrente manifestou inconformismo contra o Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), de 15 de abril de 2025, que reconheceu a procedência dos lançamentos dos créditos tributários e da multa de ofício, conforme especificado na Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546), referente ao exercício de 2014.
+Em seu Recurso Administrativo (SEI nº 13771207 ), a Prestadora alegou que:
+no curso do processo, ocorreu a prescrição intercorrente dos débitos aqui discutidos, nos termos do art. 1º, § 1º, da Lei nº 9.873, de 23 de novembro de 1999;
+inexiste o fato gerador da contribuição ao Fust, relativa ao exercício financeiro de 2014; e
+há ilegalidade na aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996.
+Por fim, o recurso requer:
+o reconhecimento da prescrição intercorrente e extinção dos débitos;
+caso não seja reconhecida a prescrição, a reforma do lançamento por inexistência de fato gerador da contribuição ao Fust; e
+subsidiariamente, o afastamento da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996, por ausência de base legal para sua aplicação.
+Antes de adentrar nos argumentos recursais, discute-se a petição extemporânea apresentada pela Recorrente. Na sequência, os argumentos recursais apresentados são analisados.
+IV.1 - Da Petição Extemporânea SEI nº 15580723
+Em sua Petição Extemporânea SEI nº 15580723, a Recorrente requer a juntada, aos autos do PAF nº 53524.019858/2017-51, de decisões administrativas anteriores da própria Anatel e a aplicação, ao caso, dos precedentes nelas firmados. A petição sustenta que o processo atual trata de lançamentos de créditos tributários relativos ao Fust em contexto idêntico ao de dois outros processos da mesma empresa — o PAF nº 53524.000642/2016-31, referente ao exercício de 2012, e o PAF nº 53569.000109/2023-82, referente ao exercício de 2021 — ambos já encerrados com retratação total da área competente, reconhecimento da improcedência dos lançamentos e extinção dos respectivos processos administrativos fiscais.
+A BYSAT reconstrói o histórico desses paradigmas para demonstrar que, embora inicialmente a SCO tenha julgado procedentes os créditos, após recurso da empresa e consulta à área de fiscalização, a própria Anatel reviu integralmente seu entendimento e concluiu que não havia fato gerador da contribuição ao Fust nas atividades desempenhadas pela peticionante. A empresa afirma que a situação fática e jurídica do presente processo é rigorosamente a mesma: trata-se da mesma pessoa jurídica, da mesma atividade econômica e da mesma discussão sobre a incidência do Fust.
+No mérito, a Recorrente reitera que não presta serviço de telecomunicações, mas sim atividade de Tecnologia da Informação Veicular (TIV), consistente em monitoramento e rastreamento veicular, utilizando serviços de telecomunicações apenas como insumo operacional para viabilizar sua atividade-fim. Por isso, sustenta que não aufere receita operacional bruta decorrente da prestação de serviços de telecomunicações, que é justamente a hipótese de incidência prevista no art. 6º, IV, da Lei nº 9.998/2000 para a contribuição ao Fust. Para reforçar essa tese, menciona manifestação anterior da própria Anatel no Ofício nº 399/2010/PVCPR/PVCP, segundo a qual empresas de TIV que utilizam o Serviço Móvel Pessoal (SMP) como meio para o exercício de sua atividade não se confundem com prestadoras de telecomunicações. Também invoca a Análise nº 199/2020/MM (SEI nº 5803348) e o Acórdão nº 516/2020 (SEI nº 6071887), que teriam reconhecido expressamente que, nos serviços de monitoramento e rastreamento, a telecomunicação é apenas meio para a prestação do serviço final ao cliente, sem faturamento específico pela oferta de capacidade de tráfego, o que afastaria a incidência de contribuições como o Fust.
+A BYSAT também sustenta que o Ofício nº 54/2023/FIGF5/FIGF/SFI-ANATEL (SEI nº 11165460) consolidou o entendimento de que, nos serviços de monitoramento e rastreamento em que a telecomunicação é apenas insumo, não há faturamento específico por serviço de telecomunicações e, portanto, não incidem Fust nem Funttel. Afirma que esse é o seu caso, pois contrata serviços de telecomunicações de terceiros, sem revenda ou cobrança destacada ao cliente final, de modo que sua receita decorre exclusivamente da atividade de monitoramento/rastreamento. Como reforço, invoca a LC nº 183/2021, que enquadrou esses serviços no campo do ISS, e não do ICMS, o que, segundo a empresa, confirma a inexistência de prestação de serviço de telecomunicações para fins tributários. Com isso, defende não apenas a ausência de fato gerador do Fust, mas também o afastamento da multa de ofício, por ser acessória ao tributo principal.
+Por fim, a BYSAT sustenta que a Administração está vinculada ao dever de coerência decisória, especialmente porque já existem ao menos duas decisões definitivas da própria Anatel, em exercícios distintos, reconhecendo a improcedência de lançamentos idênticos em relação à mesma empresa e à mesma atividade. A petição afirma que a repetição desse entendimento configura precedente administrativo consolidado, cuja observância decorre dos princípios da isonomia, segurança jurídica, boa-fé, eficiência administrativa, proteção da confiança legítima e da vedação ao comportamento contraditório da Administração. Nessa linha, argumenta que decidir de forma diversa no presente processo representaria tratamento desigual em matéria tributária e afrontaria os arts. 37 da Constituição, 2º da Lei nº 9.784/1999 e 150, II, da Constituição Federal. Ao final, a empresa pede: (i) o conhecimento da petição e a juntada dos documentos dos processos paradigmas; (ii) o reconhecimento da identidade fática e jurídica entre o presente caso e os precedentes indicados; (iii) o reconhecimento da improcedência dos lançamentos de Fust no PAF nº 53524.019858/2017-51 por ausência de fato gerador; (iv) a anulação da multa de ofício eventualmente lançada; e (v) a extinção do presente processo administrativo fiscal, nos mesmos termos dos processos paradigmas.
+Verifica-se, assim, que a Petição Extemporânea SEI nº 15580723 apresenta argumentos adicionais referentes à inocorrência do fato gerador do Fust.
+Ademais, uma vez que a petição extemporânea foi protocolizada anteriormente à publicação da pauta da Reunião do Conselho Diretor a que os presentes autos serão submetidos à deliberação do Colegiado, seu teor deve ser conhecido e considerado juntamente com os argumentos recursais, conforme estabelecido na Súmula nº 21, de 10 de outubro de 2017.
+Súmula nº 21
+"As petições extemporâneas, quando não caracterizado abuso do exercício do direito de petição, devem ser conhecidas e analisadas pelo Conselho Diretor desde que protocolizadas até a data de divulgação da pauta de Reunião na Biblioteca e na página da Agência na internet.
+É facultado o exame dessas petições, no caso concreto, pelo Conselheiro ou pelo Conselho Diretor após o prazo estipulado e até o julgamento da matéria, sobretudo se a manifestação do interessado trouxer a lume a notícia de fato novo ou relevante que possa alterar o desfecho do processo. (...)".
+IV.2 - Dos Argumentos Recursais
+IV.2.1 - Da suposta ocorrência de prescrição intercorrente
+A Prestadora alega que ocorreu a prescrição intercorrente dos débitos discutidos, nos termos do art. 1º, §1º, da Lei nº 9.873/1999. Argumenta que, após a apresentação de sua impugnação em 12 de janeiro de 2018 (SEI nº 2309943), o Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797) somente foi proferido mais de 7 (sete) anos depois, em 15 de abril de 2025. Esse lapso temporal supera o prazo prescricional de 3 (três) anos previsto em lei. Sustenta que não houve qualquer causa interruptiva ou suspensiva da prescrição nesse intervalo e cita precedentes judiciais e administrativos que reconhecem a aplicação da prescrição intercorrente em processos administrativos, inclusive no âmbito da Anatel, além do disposto na Lei nº 9.873/1999. Requer, então, o reconhecimento da prescrição e a extinção dos débitos:
+Lei nº 9.873/1999
+Art. 1º Prescreve em cinco anos a ação punitiva da Administração Pública Federal, direta e indireta, no exercício do poder de polícia, objetivando apurar infração à legislação em vigor, contados da data da prática do ato ou, no caso de infração permanente ou continuada, do dia em que tiver cessado.
+§ 1º Incide a prescrição no procedimento administrativo paralisado por mais de três anos, pendente de julgamento ou despacho, cujos autos serão arquivados de ofício ou mediante requerimento da parte interessada, sem prejuízo da apuração da responsabilidade funcional decorrente da paralisação, se for o caso.
+Quanto à questão suscitada, é importante destacar que não se aplica a prescrição intercorrente no âmbito de Processos Administrativos Fiscais (PAF), conforme Súmula nº 26 da Anatel, de 26 de julho de 2024 e a Súmula CARF nº 11, do Conselho Administrativo de Recursos Fiscais (CARF):
+Súmula nº 26
+"É inaplicável a prescrição intercorrente no processo administrativo fiscal."
+--------------------
+Súmula CARF nº 11
+"Não se aplica a prescrição intercorrente no processo administrativo fiscal."
+(Precedentes: Acórdão nº 103-21113, de 05/12/2002 Acórdão nº 104-19410, de 12/06/2003 Acórdão nº 104-19980, de 13/05/2004 Acórdão nº 105-15025, de 13/04/2005 Acórdão nº 107-07733, de 11/08/2004 Acórdão nº 202-07929, de 22/08/1995 Acórdão nº 203-02815, de 23/10/1996 Acórdão nº 203-04404, de 11/10/1997 Acórdão nº 201-73615, de 24/02/2000 Acórdão nº 201-76985, de 11/06/2003).
+Verificando-se os precedentes judiciais e administrativos citados pela Recorrente, tem-se que não são aplicáveis ao caso concreto, visto que não tratam de processos administrativos fiscais.
+Diante do exposto, impõe-se a rejeição do argumento recursal.
+IV.2.2 - Da suposta inocorrência do fato gerador do Fust
+A Recorrente alega a inexistência de fato gerador do Fust no exercício de 2014, afirmando não ter prestado serviços de telecomunicações. Sustenta que suas atividades se restringem à venda de serviços e ao licenciamento de software, bem como ao monitoramento de sistemas de segurança, utilizando comunicação de dados contratada de empresas especializadas do setor, razão pela qual figura apenas como usuária de infraestrutura de comunicação, e não como prestadora de serviços de telecomunicações. Argumenta que, embora possua autorização para o Serviço Limitado Especializado (SLE), não auferiu receitas decorrentes de serviços de telecomunicações, mas apenas de serviços de monitoramento e Tecnologia da Informação Veicular (TIV), que não se confundem com telecomunicações.
+Para embasar sua tese, apresenta documentos contábeis, pareceres da Anatel e decisões judiciais que afastam a incidência do Fust em situações em que não foram identificadas receitas decorrentes da prestação de serviços de telecomunicações. Informa, ainda, que, desde 2008, utiliza terminais satelitais Inmarsat fornecidos pela empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda e, a partir de 2009, também serviços de comunicação de dados da Onixsat Rastreamento de Veículos Ltda, o que evidenciaria que toda a infraestrutura de comunicação é fornecida por terceiros. Por fim, destaca o Ofício nº 399/2010/PVCPR/PVCP, no qual a Agência concluiu que atividades de TIV caracterizam mera utilização de serviços de telecomunicações, e não sua prestação, reforçando a inexistência do fato gerador.
+No Informe nº 757/2025/COUN/SCO (SEI nº 14551181), a Área Técnica destaca que, no caso concreto, a Recorrente possui autorização ativa para exploração do SLE por Satélite, o que a caracteriza como prestadora de serviço de telecomunicações. Além disso, a fiscalização apurou que a empresa auferiu receitas lançadas em conta contábil específica (“VENDA DE SERV MONIT VEICULO VIA SATELITE”), que compuseram a base de cálculo do Fust. Afirma também que a empresa não apresentou documentação contábil suficiente para comprovar que tais receitas não se referiam à prestação de serviços de telecomunicações.
+O Corpo Técnico sustenta ainda que a análise dos contratos com empresas fornecedoras de capacidade de satélite apresentados pela Impugnante não descaracteriza sua condição de prestadora, visto que ambos versam sobre o provimento de capacidade de satélite à Impugnante. Dessa forma, confirma que a Recorrente comercializa serviços de monitoramento veicular via satélite, atividade que, no contexto do processo, foi considerada prestação de serviço de telecomunicações:
+Informe nº 757/2025/COUN/SCO (SEI nº 14551181)
+II.3.1 - DOS NOVOS CONTRATOS:
+6.20. A Recorrente apresentou dois contratos de prestação de serviços, alegando não prestar serviços de telecomunicações:
+ CONTRATO
+ | 
+ Objeto
+ | 
+ Cláusula
+ | 
+ Data assinatura
+ | 
+ ONIXTEL COMUNICAÇÕES LTDA
+ CNPJ nº 18.079.896/0001-01
+ | 
+ Contrato de Provimento de Capacidade de Satélite
+ | 
+ Cláusula II - A OnixTel, na qualidade de representante legal da Stratos para o Satélite, adquire Capacidade de Satélite da Stratos de acordo com a Legislação Brasileira, e possui direito de comercializar a referida capacidade exclusivamente para sociedades autorizadas pela ANATEL a fornecer serviços de telecomunicações no Brasil, conforme Despacho 5551/2013- SOR, de 18 de novembro de 2013, Processo 53500.004955/2009 da ANATEL.
+ Cláusula III - A Sociedade está autorizada pela ANATEL a fornecer serviços de telecomunicações no Brasil e deseja adquirir Capacidade de Satélite da OnixTel
+ | 
+ 01/11/2014
+ | 
+ GUARDIAN CAR DO BRASIL COMÉRCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA
+ CNPJ nº 04.403.421/0001-14
+ | 
+ Contrato de Provimento de Capacidade de Satélite
+ | 
+ Definição de Sistema - software para gerenciamento de mensagem (Message Handling System), suporte de rede e banco de dados.
+ | 
+ 01/10/2010
+ | 
+6.21. Conforme se depreende dos contratos firmados com as empresas acima, ambos versam sobre Provimento de Capacidade de Satélite.
+6.22. Deve-se destacar que na fiscalização presencial realizada pela Agência em 24/05/2016, na sua sede localizada à Rua Juruá nº 50, bairro Graça, Belo Horizonte/MG, conforme dita o Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814), restou constatado o contrato firmado entre a BYSAT AUTOMAÇÃO E CONTROLE EIRELI. e a ONIXSAT RASTREAMENTO DE VEÍCULOS LTDA. (Anexo 03 - SEI nº 2155972), bem como cópia de notas fiscais dos exercícios de 2013 e de 2014 em decorrência desse contrato
+6.23. Ademais, conforme já dito no presente Informe, foi feito novo requerimento de Informações (SEI nº 0555357) requisitando:
+6.24. Dos documentos apresentados, através de correspondência sob o SEI nº 0599527 e conteúdo de mídia sob o SEI nº 0600445, restou constatado que a empresa Recorrente auferiu receitas de serviços de telecomunicação lançadas na conta contábil 41201 - VENDA DE SERV MONIT VEICULO VIA SATELITE, que compôs a base de cálculo do Fundo.
+6.25. Destaque-se que a Recorrente não afasta as receitas auferidas na conta contábil acima suscitada.
+6.26. Assim, tal tese também não se sustenta.
+O Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814) descreve os serviços prestados pela Recorrente, além de destacar que seu contrato com a empresa Onixsat Rastreamento de Veículos Ltda. tem por objeto o fornecimento, por esta última, de capacidade satelital:
+Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814)
+4.4 Da Prestação de Serviço de Telecomunicação
+O sítio eletrônico da empresa BYSAT AUTOMAÇÃO E CONTROLE EIRELI., que utiliza o nome fantasia de BYSAT, informa que possui central de monitoramento 24 horas, instalada em sua sede, possui conexão permanente com satélites, servidores seguros e sistemas de proteção capazes de funcionar mesmo durante falhas de energia (Anexo 04 - SEI nº 2156006).
+Em seu sítio eletrônico, a BYSAT fornece a seguinte explicação sobre um dos seus produtos (“SPY ON SKY”):
+“Sistema de rastreamento e monitoramento da BySat que permite a localização em tempo real de veículos, provendo informação e segurança além de atender aos requisitos das gerenciadoras de risco. Disponibiliza ainda serviços de cerca eletrônica, "tracking" extensivo a clientes, emissão de relatórios gerenciais e análises de desempenho que possibilitam melhorar o uso e o manejo da frota. É um produto desenvolvido para atender as necessidades tanto de pequenas como de médias frotas em operações comuns de transporte.”
+Portanto, a BYSAT é uma empresa que comercializa produtos/serviços de tecnologia, desenvolvidos e customizados para o sistema de gestão de frotas, fornecendo um pacote de informações de telemetria, como por exemplo, controle de velocidade, rpm, frenagens.
+Além disso, há cópia do contrato firmado entre a BYSAT AUTOMAÇÃO E CONTROLE EIRELI. e a ONIXSAT RASTREAMENTO DE VEÍCULOS LTDA., a fim de que a ONIXSAT forneça capacidade de satélite para a BYSAT, no contrato denominada de “Sociedade”, segundo o Anexo 03 - SEI nº 2155972:
+iii) A Sociedade se declara autorizada pela Anatel a fornecer serviços de telecomunicações no Brasil e deseja adquirir capacidade de satélite da ONIXSAT;
+iv) A ONIXSAT deseja fornecer capacidade de satélite à Sociedade.
+2. OBJETIVO
+2.1. Sujeito a todos os termos e condições deste Contrato, durante o prazo, a Onixsat deverá fornecer à Sociedade a capacidade de satélite em bases contínuas, sem interrupção voluntária ou injustificada, de acordo com os termos e as condições estabelecidas neste Contrato e nos Anexos.
+2.1.1. A capacidade de satélite consiste em recursos de satélites, incluindo energia de transponder, capacidade de banda que suporta transmissão bilateral de sinais digitais entre a LES e múltiplas SES, conforme especificado nas Especificações Técnicas de Capacidade de Satélite, e somente deverão ser utilizados pela Sociedade para fornecer Serviços de Telecomunicações a seus clientes no Brasil.
+Consta ainda a relação de notas fiscais emitidas pela ONIXSAT para o cliente BYSAT adquirir o provimento de capacidade de satélite (Anexo 03 - SEI nº 2155972).
+Destaca-se que o contrato analisado pela fiscalização, firmado entre a BYSAT e a Onixsat, foi assinado em 2 de outubro de 2012, conforme "Anexo 03 Contrato entre BYSAT e ONIXSAT" (SEI nº 2155972).
+Os valores apurados pela fiscalização e referentes à prestação de serviços de telecomunicações foram os registrados na conta contábil "41201 - VENDA DE SERV MONIT VEICULO VIA SATELITE", que compôs a base de cálculo do Fundo:
+Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814)
+4.5 Da Análise dos Documentos Apresentados.
+Fizemos a conciliação das receitas dos balancetes mensais (Anexo 05 ¦ SEI nº 2156092) com as receitas da Demonstração do Resultado do Exercício ¦ DRE extraídas da Escrituração Contábil Fiscal ¦ ECF (Anexo 06 ¦ SEI nº 2156102). Não foram encontradas divergências de valores entre as receitas constantes nestes documentos.
+Verificou-se que a empresa auferiu receitas de serviços de telecomunicação lançadas na conta contábil 41201 - VENDA DE SERV MONIT VEICULO VIA SATELITE, que compôs a base de cálculo do Fundo.
+A Recorrente não discute os valores em si, identificados pela fiscalização, mas sua caracterização como receitas decorrentes da prestação de serviços de telecomunicações.
+Assim, na tentativa de demonstrar que a empresa não prestou serviços de telecomunicações no exercício de 2014, a Recorrente afirmou que atua como cliente de provedores de serviços de telecomunicações via satélite, contratados junto a terceiros:
+Recurso Administrativo (SEI nº 13771207 )
+(...)
+Por sua vez, a Recorrente, desde 2009, utiliza-se tão somente de parcerias firmadas com outras pessoas jurídicas para usufruir do serviço de comunicação de dados.
+Sobre isso, conforme argumentado na impugnação, a Recorrente, a partir do ano de 2008, passou a utilizar terminais habilitados no sistema satelital Inmarsat, fornecido pela empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda.
+E, a partir de 2009, além dos serviços de comunicação de dados fornecidos pela empresa Guardian, a Recorrente, também mediante contrato (doc. 2 da impugnação) passou a utilizar os mesmos serviços da empresa Onixsat Rastreamento de Veículos Ltda.
+(...)
+Não se trata, portanto, de empresa de telecomunicações, como o Despacho recorrido concluiu. Em verdade, foram serviços de monitoramento nos quais a Recorrente contratou empresa especializada – fornecedora – para prestar os serviços de tecnologia da informação contratados pelos seus clientes.
+Logo, não há que se perquirir o recolhimento de contribuição ao FUST pela Recorrente, mas sim em relação aos seus fornecedores, tendo em vista que o serviço da Recorrente apenas abrangeu os serviços de telecomunicações prestados por terceiros (no caso, seus fornecedores).
+Os contratos apresentados como comprovação de seus argumentos foram:
+Contrato entre a BYSAT e a empresa OnixTel Comunicações Ltda. (SEI nº 13771209), assinado em 1º de novembro de 2014; e
+Contrato entre a BYSAT e a empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda (SEI nº 13771210), assinado em 1º de março de 2010.
+Analisando-se toda a documentação acostada aos autos, resta incontroverso que a Recorrente presta o Serviço de Valor Adicionado (SVA) referente ao licenciamento de software e gerenciamento de bens, com cessão de equipamentos em regime de comodato, associada à respectiva instalação e manutenção. Tal descrição está presente nos contratos da BYSAT com seus clientes. A redação de cada contrato apresenta variação, mas se pode verificar, como exemplo, a descrição apresentada no contrato junto à empresa [Item 7 do Apartado Sigiloso SEI nº 15509511], apresentado pela Recorrente no documento SEI nº 0600445, nos autos do Processo nº 53500.206692/2015-18, referente à fiscalização da contribuição ao Fust no exercício de 2013. Veja-se o texto:
+Contrato Particular de Prestação de Serviços de Licenciamento de Software e Gerenciamento de Bens, com Cessão de Equipamentos em Regime de Comodato, Instalação e Manutenção dos Mesmos (SEI nº 0600445)
+A BYSAT AUTOMAÇÃO E CONTROLE EIRELI, pessoa jurídica de direito privado (...) doravante denominada BYSAT e a CONTRATANTE, qualificada no Anexo I, celebram o presente CONTRATO PARTICULAR DE PRESTAÇÃO DE SERVIÇOS DE LICENCIAMENTO DE SOFTWARE E GERENCIAMENTO DE BENS, COM CESSÃO DE EQUIPAMENTOS EM REGIME DE COMODATO, INSTALAÇÃO E MANUTENÇÃO DOS MESMOS, doravante simplesmente Contrato, que será regido pelas seguintes cláusulas e condições:
+(...)
+CLÁUSULA PRIMEIRA - DEFINIÇÕES
+1.1 Para os efeitos deste instrumento os vocábulos e expressões abaixo têm as seguintes definições:
+(...)
+1.1.2. EQUIPAMENTO: equipamento específico, de propriedade exclusiva da BYSAT, destinado a prover as funcionalidades de rastreamento e gerenciamento de BENS nos quais foi instalado;
+(...)
+1.1.4. BEM ("BENS"): veículo, equipamento ou instalação física de propriedade da CONTRATANTE no qual se tenha interesse em contratar os serviços da BYSAT para instalação do(s) EQUIPAMENTO(S) para monitoramento e gerenciamento do(s) mesmo(s);
+(...)
+CLÁUSULA SEGUNDA - OBJETO
+2.1 O presente Contrato tem por objeto a prestação, pela BYSAT à CONTRATANTE, dos serviços de licenciamento não exclusivo do software BYLOG, o gerenciamento dos BENS da CONTRATANTE com a cessão de equipamentos em regime de comodato com instalação e manutenção dos mesmos pela BYSAT, de acordo com as demais condições definidas no presente instrumento.
+(destaques acrescidos)
+É certo que, para a viabilização do SVA ofertado pela BYSAT, é necessária a existência de serviço de telecomunicações apto a assegurar a comunicação entre os equipamentos instalados nos bens dos clientes e as bases de dados da própria empresa. Tal circunstância, contudo, não conduz, por si só, à conclusão de que a Recorrente prestava serviços de telecomunicações ao usuário final, sendo indispensável distinguir, no caso concreto, o serviço final efetivamente contratado pelo cliente do meio técnico utilizado para sua execução.
+A controvérsia jurídica, portanto, consiste em verificar se a BYSAT, para além das atividades de rastreamento e monitoramento de bens e da cessão de equipamentos em regime de comodato, ofertava aos seus clientes serviço de telecomunicações propriamente dito, ou se a conectividade empregada entre os terminais instalados e a infraestrutura tecnológica da empresa configurava mero insumo operacional necessário à prestação do SVA. Em outros termos, impõe-se apurar se a comunicação de dados subjacente integrava o objeto contratual disponibilizado ao cliente como utilidade autônoma ou, alternativamente, limitava-se a viabilizar tecnicamente a execução do serviço de monitoramento e rastreamento.
+À luz dos elementos constantes dos autos, verifica-se que os contratos celebrados entre a Recorrente e seus clientes têm por objeto exclusivo a prestação de serviços de licenciamento de software, gerenciamento, rastreamento e monitoramento de bens, cumulada com a cessão de equipamentos em comodato, bem como sua instalação e manutenção. Não há, nesses instrumentos, previsão de oferta autônoma de serviço de telecomunicações ao contratante, tampouco indicação de que o usuário pudesse dispor da conectividade para fins próprios, como transmissão de informações de sua titularidade, acesso independente a redes de comunicação ou utilização livre da infraestrutura de telecomunicações.
+Ao contrário, o que se extrai do conjunto documental é que o serviço de telecomunicações existente no arranjo operacional se destinava exclusivamente a permitir a troca de dados entre os terminais vinculados ao sistema de rastreamento e os servidores da BYSAT, funcionando como suporte técnico indispensável à execução da atividade-fim contratada. Nessa perspectiva, a telecomunicação não se caracterizava, sob a ótica do tomador, como prestação dotada de autonomia funcional ou passível de utilização independente do serviço de monitoramento, qualificando-se, ao contrário, como meio instrumental imprescindível à consecução do resultado final pretendido pelo contratante.
+Desse modo, o serviço efetivamente prestado pela BYSAT aos seus clientes restringe-se ao rastreamento e monitoramento de bens, associado à disponibilização dos equipamentos necessários à consecução dessa finalidade, o que se amolda à caracterização de SVA. Diante da inexistência de comprovação de faturamento específico relativo à prestação de serviços de telecomunicações ao usuário final, não se verifica, no caso concreto, a incidência da contribuição ao Fust.
+O racional apresentado acima já havia sido abordado nos autos do Processo nº 53516.007900/2014-48, que tratou da falta de licenciamento de estações utilizadas para o SLE por Satélite e cujas estações proviam o serviço de telecomunicações necessário para a prestação, pela autuada, de serviço de monitoramento e rastreamento a seus clientes. Apesar de não ser o tema central desse processo, a Análise nº 199/2020/MM (SEI nº 5803348) apresentou o entendimento de que o SLE por Satélite que dá suporte ao serviço de monitoramento e rastreamento não é prestado ao cliente da autuada, mas se caracteriza como insumo para a prestação da sua atividade comercial final:
+Análise nº 199/2020/MM (SEI nº 5803348)
+4.84. Entretanto, em consulta ao citado PAF, verifica-se que foram elaborados novos Relatórios de Fiscalização, referente aos anos de 2012, 2013 e 2014 (SEI nº 5967748, 5968069 e 5968198), que apontaram que a prestadora utiliza os serviços de telecomunicações como insumo para a prestação da sua atividade comercial final. Ainda, relataram que mesmo a sua rede própria funciona apenas como suporte facilitador para a sua finalidade comercial devidamente constituída e registrada, qual seja a monitoração e rastreamento de veículos e cargas. Portanto, a receita da prestadora seria proveniente destas atividades comerciais, que não se confundem com a prestação de serviços de telecomunicações.
+4.85. Dessa forma, concluiu-se que a prestadora não é passível de cobrança do FUST, uma vez que não obteve receita pela prestação de serviços de telecomunicações.
+4.86. Particularmente, me filio ao novo entendimento expressado pela área responsável por identificar as receitas passíveis de recolhimento do FUST, uma vez que a atividade comercial executada pela recorrente não é regulada pela Agência, devendo ela apenas observar as regras atinentes à utilização de sua autorização do Serviço Limitado Especializado, como por exemplo a obrigatoriedade do devido licenciamento de suas estações. Assim, entendo que o enquadramento da prestadora nos grupos econômicos definidos no RASA deve ser revisto, passando a considerar seu porte como micro empresa.
+(destaques não constam na versão original)
+O Conselho Diretor aprovou, por unanimidade, a Análise nº 199/2020/MM (SEI nº 5803348), nos termos do Acórdão nº 516/2020 (SEI nº 6071887).
+Adicionalmente, conforme destacado pela Recorrente em sua Petição Extemporânea SEI nº 15580723, conclusão similar foi alcançada no PAF nº 53524.000642/2016-31 e no PAF nº 53569.000109/2023-82.
+O PAF nº 53524.000642/2016-31 trata dos lançamentos dos créditos tributários referentes à contribuição para o Fust, no exercício de 2012, incluindo o recurso administrativo interposto pela BYSAT contra o Despacho Decisório nº 315/2025/COGE/SCO (SEI nº 13575060), da SCO. Em seu Informe nº 158/2026/COGE/SCO (SEI nº 15193078), a Área Técnica considerou que a BYSAT não prestou serviços de telecomunicações a seus clientes, visto que tais serviços se caracterizam como insumo para a prestação dos serviços de monitoramento e rastreamento a seus clientes:
+Informe nº 158/2026/COGE/SCO (SEI nº 15193078)
+Da inocorrência do fato gerador
+5.15. A Recorrente alega a inocorrência do fato gerador, por ser empresa de TIV (Tecnologia de Informação Veicular), posicionando-se como empresa usuária do serviço de telecomunicação e não prestadora.
+5.16. Em primeira instância de julgamento, a Anatel entendeu que deveria julgar procedentes os créditos tributários. Dado o recurso, após consulta à área técnica (SEI 15197886), a Gerência de Fiscalização (FIGF), por meio do Ofício nº 54/2023/FIGF5/FIGF/SFI-ANATEL (SEI 15235759), sustentou que deve ser afastada a natureza de prestação de serviços de telecomunicações em serviços de monitoramento e rastreamento, quando prestados com rede de terceiros, ou mesmo com rede própria, dada a alteração legislativa sobre esses serviços, os enquadrando na hipótese de incidência do ISS e afastando o ICMS, que seria aplicável a serviços de telecom. Vejamos:
+Ofício nº 54/2023/FIGF5/FIGF/SFI-ANATEL
+(...)
+7. Serviços de monitoramento e rastreamento
+7.1. Conforme entendimento vigente emanado na Análise nº 199/2020/MM (SEI nº 5803348) e no Acórdão nº 516/2020 (SEI nº 6071887), na prestação de serviços de monitoramento e rastreamento os serviços de telecomunicações podem caracterizar apenas “insumo” (meio) para a prestação do serviço final ao contratante. Caracterizada essa situação, não haverá faturamento específico pela prestação do serviço de telecomunicações, logo, não há fato gerador de contribuições devidas ao Fust ou ao Funttel.
+7.2. Soma-se ao entendimento referenciado acima a definição da Lei Complementar nº 183, de 22 de setembro de 2021, que explicita a incidência do Imposto sobre Serviços de Qualquer Natureza - ISS sobre o monitoramento e rastreamento de veículos e carga, e incluiu os referidos serviços dentre o rol de atividades sujeitas à tributação pelo ISS prevista na lista de serviços anexa à Lei Complementar nº 116, de 31 de julho de 2003, afastando-se, assim, a incidência de ICMS que se aplicaria ao faturamento de serviços de telecomunicações:
+Art. 2º O item 11 da lista de serviços anexa à Lei Complementar nº 116, de 31 de julho de 2003, passa a vigorar acrescido do seguinte subitem 11.05:
+11 (...)
+11.05 – Serviços relacionados ao monitoramento e rastreamento a distância, em qualquer via ou local, de veículos, cargas, pessoas e semoventes em circulação ou movimento, realizados por meio de telefonia móvel, transmissão de satélites, rádio ou qualquer outro meio, inclusive pelas empresas de Tecnologia da Informação Veicular, independentemente de o prestador de serviços ser proprietário ou não da infraestrutura de telecomunicações que utiliza".
+7.3. Ressalta-se que haverá fato gerador de contribuições ao Fust e ao Funttel se constatado faturamento específico da entidade fiscalizada pela oferta de serviço de telecomunicação (capacidade de tráfego de sinais radioelétricos) necessário à prestação do serviço finalístico de monitoramento ou rastreamento ofertado ao usuário, cabendo ao agente de fiscalização, neste caso, descrever no relatório de fiscalização as evidências da existência do fato gerador.
+5.17. Diante do exposto acima, verifica-se, pelos documentos constantes nos autos, que os serviços do contribuinte no caso em concreto se referem à prestação de serviços de monitoramento e rastreamento, diante de que os serviços de telecomunicações se caracterizam como “insumo” (meio) para a prestação do serviço final ao contratante, motivo pelo qual não se conformou o fato gerador do tributo. Por conseguinte, a multa de ofício, por ser acessória, segue a sorte do tributo principal, de forma que deve ser anulada a Notificação de Lançamento nº 001-026363/2015/AFFO-ANATEL (SEI nº 1229593), para o exercício de 2012.
+5.18. Concluindo, pelas razões apresentadas, o Despacho Decisório nº 315/2025/COGE/SCO (SEI 13575060) deve ser retratado totalmente para julgar improcedente a notificação de lançamento.
+(destaques não constam na versão original)
+Com fundamento no Informe nº 158/2026/COGE/SCO (SEI nº 15193078), a SCO decidiu por se retratar e reconhecer a improcedência total dos lançamentos de créditos referentes ao Fust e à multa de ofício:
+Despacho Decisório nº 154/2026/COGE/SCO (SEI nº 15193079)
+(...)
+DECIDE pelo:
+a) CONHECIMENTO do Recurso Administrativo (SEI 13876335) e RETRATAÇÃO TOTAL do Despacho Decisório nº 315/2025/COGE/SCO (SEI nº 13575060), para RECONHECER A IMPROCEDÊNCIA total dos lançamentos dos créditos tributários referentes ao FUST exercício 2012 e à multa de ofício, traduzidos na Notificação de Lançamentos nº 001-026363/2015/AFFO-ANATEL (SEI nº 1229593) e, por conseguinte, extinguir esse Processo Administrativo Fiscal; e
+b) NOTIFICAR o contribuinte dessa decisão.
+O PAF nº 53569.000109/2023-82 trata dos lançamentos dos créditos tributários referentes à contribuição para o Fust, no exercício de 2021, incluindo o recurso administrativo interposto pela BYSAT contra o Despacho Decisório nº 73/2025/COGE/SCO (SEI nº 13325869), da SCO. A Área Técnica, por meio do Informe nº 588/2025/COGE/SCO (SEI nº 13834125), apresentou entendimento similar ao expresso no Informe nº 158/2026/COGE/SCO (SEI nº 15193078), caracterizando o serviço de telecomunicações, envolvido na prestação dos serviços de monitoramento e rastreamento prestados pela BYSAT a seus clientes, como insumo.
+Informe nº 588/2025/COGE/SCO (SEI nº 13834125)
+Da base de cálculo
+5.2. O Recorrente alegou o que segue:
+a) Da inexistência do fato gerador do Fust, tendo em vista que presta serviços de monitoramento de sistemas de segurança eletrônico, instalação de hardwares, traduzidos da seguinte forma: utiliza terminais habilitados no sistema satelital Inmarsat, fornecido pela empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda e serviços de comunicação de dados fornecidos pela empresa Guardian e da Onixsat Rastreamento de Veículos Ltda.;
+b) Houve consulta à Anatel e, em resposta, foi elaborado o Ofício nº 399/2010/PVCPR/PVCP, nos autos do processo nº 53500.017836/2010-59, o qual traz a informação que corrobora o entendimento que empresas TIV que atuam utilizando o serviço de SMP para proveito próprio, ou seja, como meio para o exercício de sua atividade, não se confundem com prestadoras de serviço de telecomunicações. Em outras palavras, a empresa é usuária do serviço de telecomunicação e não prestadora.
+5.3. Em primeira instância, a Anatel entendeu que deveria julgar procedente os créditos tributários; no entanto, em consulta informal (SEI nº 13834744) à Gerência de Fiscalização (FIGF), obteve-se a informação constante do item 7 do Ofício nº 54/2023/FIGF5/FIGF/SFI-ANATEL (SEI nº 11165460) que, em resumo, traz o entendimento de que deve ser afastada a natureza de prestação de serviços de telecomunicações em serviços de monitoramento e rastreamento, quando prestado com rede de terceiros, ou mesmo com rede própria, dada a alteração legislativa sobre esses serviços, os enquadrando na hipótese de incidência do ISS e afastando o ICMS, que seria aplicável a serviços de telecom. Vejamos:
+Ofício nº 54/2023/FIGF5/FIGF/SFI-ANATEL
+(...)
+7. Serviços de monitoramento e rastreamento
+7.1. Conforme entendimento vigente emanado na Análise nº 199/2020/MM (SEI nº 5803348) e no Acórdão nº 516/2020 (SEI nº 6071887), na prestação de serviços de monitoramento e rastreamento os serviços de telecomunicações podem caracterizar apenas “insumo” (meio) para a prestação do serviço final ao contratante. Caracterizada essa situação, não haverá faturamento específico pela prestação do serviço de telecomunicações, logo, não há fato gerador de contribuições devidas ao Fust ou ao Funttel.
+7.2. Soma-se ao entendimento referenciado acima a definição da Lei Complementar nº 183, de 22 de setembro de 2021, que explicita a incidência do Imposto sobre Serviços de Qualquer Natureza - ISS sobre o monitoramento e rastreamento de veículos e carga, e incluiu os referidos serviços dentre o rol de atividades sujeitas à tributação pelo ISS prevista na lista de serviços anexa à Lei Complementar nº 116, de 31 de julho de 2003, afastando-se, assim, a incidência de ICMS que se aplicaria ao faturamento de serviços de telecomunicações:
+Art. 2º O item 11 da lista de serviços anexa à Lei Complementar nº 116, de 31 de julho de 2003, passa a vigorar acrescido do seguinte subitem 11.05:
+11 (...)
+11.05 – Serviços relacionados ao monitoramento e rastreamento a distância, em qualquer via ou local, de veículos, cargas, pessoas e semoventes em circulação ou movimento, realizados por meio de telefonia móvel, transmissão de satélites, rádio ou qualquer outro meio, inclusive pelas empresas de Tecnologia da Informação Veicular, independentemente de o prestador de serviços ser proprietário ou não da infraestrutura de telecomunicações que utiliza".
+7.3. Ressalta-se que haverá fato gerador de contribuições ao Fust e ao Funttel se constatado faturamento específico da entidade fiscalizada pela oferta de serviço de telecomunicação (capacidade de tráfego de sinais radioelétricos) necessário à prestação do serviço finalístico de monitoramento ou rastreamento ofertado ao usuário, cabendo ao agente de fiscalização, neste caso, descrever no relatório de fiscalização as evidências da existência do fato gerador.
+5.4. Diante do exposto acima, verifica-se, pelos documentos constantes nos autos, que os serviços do contribuinte, no caso concreto, referem-se à prestação de serviços de monitoramento e rastreamento, sendo que os serviços de telecomunicações se caracterizam apenas como “insumo” (meio) para a prestação do serviço final ao contratante.
+5.5. Por conseguinte, a multa de ofício, por ser acessória, segue a sorte do tributo principal.
+5.6. Portanto, tal alegação merece acolhida e o Despacho Decisório deve ser retratado totalmente para julgar improcedente a notificação de lançamento.
+(destaques não constam na versão original)
+Considerando o entendimento apresentado pela Área Técnica, a SCO emitiu o Despacho Decisório nº 494/2025/COGE/SCO (SEI nº 13834130), por meio do qual reconheceu a improcedência dos lançamentos realizados:
+Decisório Decisório nº 494/2025/COGE/SCO (SEI nº 13834130)
+(...)
+DECIDE:
+a) pela RETRATAÇÃO TOTAL do Despacho Decisório nº 73/2025/COGE/SCO (SEI 13325869), para RECONHECER A IMPROCEDÊNCIA dos lançamentos dos créditos tributários referentes ao FUST e à multa de ofício, traduzidos na Notificação de Lançamento nº 001-006690/2024/AFFO-ANATEL (SEI 12259493), e, por conseguinte, extinguir esse Processo Administrativo Fiscal;
+b) NOTIFICAR o contribuinte dessa decisão para fins de mera ciência.
+Conclui-se, assim, que assiste razão à Recorrente, devendo ser reconhecida, no âmbito deste processo, a inocorrência do fato gerador da contribuição ao Fust.
+Ademais, considerando o entendimento consolidado nesta Análise, em decisões da SCO e em precedentes do Conselho Diretor quanto à inocorrência do fato gerador, é recomendável que a SCO verifique a existência de processos em tramitação que versem sobre a incidência da contribuição ao Fust sobre receitas auferidas por prestadoras de serviços de monitoramento e rastreamento veicular que utilizem serviços de telecomunicações de terceiros como insumo operacional, avaliando a pertinência do cancelamento dos créditos tributários neles constituídos.
+IV.2.2.1 - Do potencial uso de estações terminais não licenciadas pela BYSAT
+Em sua Impugnação (SEI nº 2309943) e em seu Recurso Administrativo (SEI nº 13771207), a Recorrente afirmou que utiliza terminais habilitados pelas empresas Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda. e Onixsat Rastreamento de Veículos Ltda. Para comprovar sua afirmação, o Recurso apresentou cópia de contratos com as empresas Guardian e OnixTel Comunicações Ltda. Destaca-se, aqui, a informação imprecisa apresentada pela Recorrente, visto que o texto recursal menciona a empresa Onixsat, mas o anexo apresenta o contrato com a empresa OnixTel.
+Em relação à BYSAT e às três empresas mencionadas pela Anatel e pela Recorrente, verificam-se as seguintes autorizações de prestação de serviços de telecomunicações e de exploração de satélites, conforme disponibilizado no Sistema SIGEC da Anatel:
+ Empresa
+ | 
+ CNPJ
+ | 
+ Serviços Autorizados
+ | 
+ BYSAT Automação e Controle Ltda.
+ | 
+ 03.399.403/0001-43
+ | 
+ 182 - Serviço Limitado Especializado por Satélite, atual SLP prestação a terceiros
+ 002 - Serviço de Interesse Restrito
+ | 
+ Onixsat Rastreamento de Veículos Ltda.
+ | 
+ 05.520.402/0001-30
+ | 
+ 110 - Serviço Móvel Pessoal por Satélite
+ 182 - Serviço Limitado Especializado por Satélite, atual SLP prestação a terceiros
+ 185 - Exploração de Satélite e Estações de Acesso
+ 189 - Serviço Móvel Global por Satélite (extinto em 5 de dezembro de 2025)
+ 001 - Serviço de Interesse Coletivo
+ | 
+ OnixTel Comunicações Ltda.
+ | 
+ 18.079.896/0001-01
+ | 
+ 185 - Exploração de Satélite e Estações de Acesso
+ | 
+ Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda.
+ | 
+ 04.403.421/0001-14
+ | 
+ 182 - Serviço Limitado Especializado por Satélite, atual SLP prestação a terceiros
+ 002 - Serviço de Interesse Restrito
+ | 
+Adicionalmente, tem-se que a empresa Guardian é um dos representantes legais da INMARSAT SOLUTIONS (CANADA) INC no Brasil, conforme Ato nº 12876/2025 (SEI nº 14382866), e pode prover a capacidade do satélite Inmarsat-4 F3.
+Verifica-se, portanto, que apenas as empresas BYSAT, Onixsat e Guardian possuem autorização para prestação de serviços de telecomunicações a terceiros.
+Conforme registrado no Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814), a BYSAT é autorizada a prestar o SLE por Satélite desde 30 de novembro de 2000:
+Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814)
+4.2 Da Outorga dos Serviços de Telecomunicações
+A empresa fiscalizada foi outorgada para prestação do Serviço Limitado Especializado por Satélite, em 30/11/2000, com a publicação do Ato nº 13.199 no Diário Oficial da União, conforme consulta ao Sistema de Serviços de Telecomunicações ¦ STEL (Anexo 02- SEI nº 2155872).
+A empresa OnixTel, mencionada pela Recorrente em seu recurso, possui autorização para exploração de capacidade satelital. No entanto, essa empresa não possui autorização de prestação de serviços de telecomunicações e, portanto, não está apta a prestar o serviço necessário para interconectar os terminais utilizados pelos clientes da BYSAT.
+Em relação aos contratos firmados pela BYSAT junto à Onixsat, OnixTel e Guardian, tem-se que, durante a atividade presencial de fiscalização, conforme registrado no Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814), a BYSAT forneceu o contrato firmado entre a Recorrente e a Onixsat:
+Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814)
+4.3 Dos Requerimentos de Informações
+(...)
+Contudo, verificou-se a necessidade de obtenção de mais informações com a empresa a fim de conhecer melhor a sua atuação no mercado e assim, foi realizada fiscalização presencial em sua sede à Rua Juruá nº 50, bairro Graça, Belo Horizonte/MG, no dia 24 de maio de 2016.
+O resultado dessa fiscalização presencial foi obtenção de contrato firmado entre a BYSAT AUTOMAÇÃO E CONTROLE EIRELI. e a ONIXSAT RASTREAMENTO DE VEÍCULOS LTDA. (Anexo 03 - SEI nº 2155972), bem como cópia de notas fiscais dos exercícios de 2013 e de 2014 em decorrência desse contrato.
+Em sua Impugnação (SEI nº 2309943), a BYSAT afirmou que, a partir de 2008, passou a utilizar terminais fornecidos pela empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda. Indicou ainda que, a partir de 2009, passou a utilizar também terminais fornecidos pela empresa Onixsat Rastreamento de Veículos Ltda.:
+Impugnação (SEI nº 2309943)
+Conforme expresso na referida resposta, a partir de 2008 a IMPUGNANTE passou a utilizar terminais habilitados no sistema satélite Inmarsat, modalidade D+ fornecidos pela empresa GUARDIAN CAR DO BRASIL COMÉRCIO DE EQUIPAMENTOS PARA MONITORAMENTO VEICULAR LTDA. (autorizada pela ANATEL pelo Ato n.° 36.711, de 05/06/2003). a qual também fornece os serviços de comunicação de dados. E mais, a partir de 2009, a IMPUGNANTE passou a contratar, para a mesma modalidade de prestação de serviços, a empresa ONIXSAT RASTREAMENTO DE VEÍCULOS LTDA.
+Nessa oportunidade, cumpre esclarecer que os referidos contratos foram apresentados e levados ao conhecimento da ANATEL, no termo de resposta ao RI 1537/2015 (doc. 3).
+(destaques acrescidos)
+Embora a Impugnação (SEI nº 2309943) sustente que os contratos firmados com a Guardian e a Onixsat estariam incluídos no anexo denominado “doc.3”, constata-se que referido anexo não contém o contrato com a Onixsat, mas sim o contrato celebrado com a OnixTel.
+Os mesmos argumentos foram apresentados em seu Recurso Administrativo (SEI nº 13771207):
+Recurso Administrativo (SEI nº 13771207)
+Por sua vez, a Recorrente, desde 2009, utiliza-se tão somente de parcerias firmadas com outras pessoas jurídicas para usufruir do serviço de comunicação de dados.
+Sobre isso, conforme argumentado na impugnação, a Recorrente, a partir do ano de 2008, passou a utilizar terminais habilitados no sistema satelital Inmarsat, fornecido pela empresa Guardian Car do Brasil Comércio de Equipamentos para Monitoramento Veicular Ltda.
+E, a partir de 2009, além dos serviços de comunicação de dados fornecidos pela empresa Guardian, a Recorrente, também mediante contrato (doc. 2 da impugnação) passou a utilizar os mesmos serviços da empresa Onixsat Rastreamento de Veículos Ltda.
+Ainda, a despeito de possuir autorização da ANATEL para operação do serviço limitado especializado (SLE), a Recorrente não prestou quaisquer serviços que possam ser qualificados como serviços de telecomunicação.
+Novamente, destaca-se que, apesar do Recurso Administrativo (SEI nº 13771207) mencionar o contrato com a Onixsat, o anexo fornecido traz a cópia do contrato com a OnixTel (SEI nº 13771209).
+Passa-se, então, à análise dos contratos mencionados.
+O contrato entre a BYSAT e a Onixsat, conforme já mencionado, foi obtido pela fiscalização da Anatel durante atividade presencial. Esse contrato (SEI nº 2155972) foi assinado em 2 de outubro de 2012 e estava ativo durante todo o exercício financeiro auditado.
+O Contrato BYSAT - Onixsat (SEI nº 2155972) tem por objeto o provimento de capacidade satelital, não contemplando o fornecimento de serviços de telecomunicações pela Onixsat à BYSAT. Ao contrário, nesse contrato, a BYSAT é denominada de "Sociedade" e figura como única prestadora de serviços de telecomunicações autorizada pela Anatel:
+Contrato BYSAT - Onixsat - 2012 (SEI nº 2155972)
+Contrato de Provimento de Capacidade de Satélite
+Contrato celebrado neste dia 02 de outubro de 2012, por e entre a Onixsat - Onixsat Rastreamento de Veículos Ltda., (...) e Bysat Automação e Controle Ltda., (...), neste ato representada por seu representante legal abaixo assinado ("Sociedade").
+(...)
+ii) A Onixsat, na qualidade de representante legal da Stratos para o Satélite, adquire Capacidade de Satélite da Stratos de acordo com a Legislação Brasileira, e possui direito de comercializar a referida capacidade exclusivamente para sociedades autorizadas pela ANATEL a fornecer serviços de telecomunicações no Brasil;
+iii) A Sociedade se declara autorizada pela ANATEL a fornecer serviços de telecomunicações no Brasil e deseja adquirir capacidade de satélite da ONIXSAT;
+iv) A Onixsat deseja fornecer capacidade de satélite à Sociedade.
+(...)
+1.17. "Serviços de Telecomunicações" significa os serviços de telecomunicações prestados pela Sociedade.
+(...)
+2. OBJETIVO
+2.1. Sujeito a todos os termos e condições deste Contrato, durante o prazo, a Onixsat deverá fornecer à Sociedade a capacidade de satélite em bases contínuas, sem interrupção voluntária ou injustificada, de acordo com os termos e as condições estabelecidas neste Contrato e nos Anexos.
+2.1.1. A capacidade de satélite consiste em recursos de satélites, incluindo energia de transponder, capacidade de banda que suporta transmissão bilateral de sinais digitais entre a LES e múltiplas SES, conforme especificado nas Especificações Técnicas de Capacidade de Satélite, e somente deverão ser utilizados pela Sociedade para fornecer Serviços de Telecomunicações a seus clientes no Brasil.
+(...)
+4. FATURAMENTO E PAGAMENTO
+4.1. Pelo fornecimento de Capacidade de Satélite, a Sociedade pagará à Onixsat os valores especificados nos Anexo A e Anexo B pelo tráfego gerado pela Sociedade no Satélite para a prestação de Serviços de Telecomunicações a seus clientes (...).
+(...)
+6.3. A Sociedade:
+6.3.1. Deverá obter e manter todas as licenças, aprovações e autorizações exigidas por lei para a contratação e utilização da Capacidade de Satélite.
+6.3.2. Caso a Onixsat venha a ser responsabilizada e/ou penalizada por ausência de qualquer licença exigida pela ANATEL para a Sociedade operar no Brasil, esta ressarcirá/indenizará a Onixsat de todos os eventuais prejuízos suportados, cujos valores serão cobrados na fatura seguinte a tal ocorrência.
+(...)
+6.3.8. Deverá fornecer, operar e manter o equipamento necessário para acessar a Capacidade de Satélite.
+(destaques acrescidos)
+Adicionalmente, o contrato especifica a BYSAT como responsável por fornecer, operar e manter o equipamento necessário para acessar a capacidade satelital fornecida pela Onixsat, além de obter e manter todas as licenças exigidas por lei.
+Dessa forma, apesar da Onixsat possuir autorização para prestação de serviços de telecomunicações, conforme detalhado anteriormente, o contrato entre a BYSAT e a Onixsat está relacionado apenas à autorização de exploração de satélite e, portanto, não inclui o serviço de telecomunicações necessário para realizar a conectividade dos terminais dos clientes da BYSAT.
+O Contrato BYSAT - OnixTel (SEI nº 13771209) foi firmado em 1º de novembro de 2014 e também contempla, como objeto, o provimento de capacidade satelital. Também nesse contrato, a BYSAT é denominada de "Sociedade" e figura como única prestadora de serviços de telecomunicações autorizada pela Anatel:
+Contrato BYSAT - OnixTel - 2014 (SEI nº 13771209)
+Contrato de Provimento de Capacidade de Satélite
+Contrato celebrado neste dia 1º de Novembro de 2014, por e entre a OnixTel Comunicações Ltda., (...) e Bysat Automação e Controle Ltda., (...), neste ato representada por seu representante legal abaixo assinado ("Sociedade").
+(...)
+ii) A OnixTel, na qualidade de representante legal da Stratos para o Satélite, adquire Capacidade de Satélite da Stratos de acordo com a Legislação Brasileira, e possui direito de comercializar a referida capacidade exclusivamente para sociedades autorizadas pela ANATEL a fornecer serviços de telecomunicações no Brasil, conforme Despacho 5551/2013-SOR, de 18 de novembro de 2013, Processo 53500.004955/2009 da ANATEL;
+iii) A Sociedade está autorizada pela ANATEL a fornecer serviços de telecomunicações no Brasil e deseja adquirir capacidade de satélite da OnixTel;
+iv) A OnixTel deseja fornecer capacidade de satélite à Sociedade.
+(...)
+1.17. "Serviços de Telecomunicações" significa os serviços de telecomunicações prestados pela Sociedade.
+(...)
+2. OBJETIVO
+2.1. Sujeito a todos os termos e condições deste Contrato, durante o Prazo, a OnixTel deverá fornecer à Sociedade a Capacidade de Satélite em bases contínuas, sem interrupção voluntária ou injustificada, de acordo com os termos e as condições estabelecidos neste Contrato e nos Anexos.
+2.1.1. A Capacidade de Satélite consiste em recursos de satélites, incluindo energia de transponder, capacidade de banda que suporta transmissão bilateral de sinais digitais entre a LES e múltiplas SES, conforme especificado nas Especificações Técnicas de Capacidade de Satélite, e somente deverão ser utilizados pela Sociedade para fornecer Serviços de Telecomunicações a seus clientes no Brasil.
+(...)
+4. FATURAMENTO E PAGAMENTO
+4.1. Pelo fornecimento de Capacidade de Satélite, a Sociedade pagará à OnixTel os valores especificados nos Anexo A e Anexo B pelo tráfego gerado pela Sociedade no Satélite para a prestação de Serviços de Telecomunicações a seus clientes (...).
+(...)
+6.3. A Sociedade:
+6.3.1. Deverá obter e manter todas as licenças, aprovações e autorizações exigidas por lei para a contratação e utilização da Capacidade de Satélite.
+(...)
+6.3.8. Deverá fornecer, operar e manter o equipamento necessário para acessar a Capacidade de Satélite. (...)
+(destaques acrescidos)
+Conforme o contrato, a BYSAT é responsável por fornecer, operar e manter o equipamento necessário para acessar a capacidade satelital fornecida pela OnixTel, além de obter e manter todas as licenças exigidas por lei.
+Destaca-se que a OnixTel não é provedora de serviços de telecomunicações, pois possui autorização para exploração de capacidade satelital. Portanto, não há dúvida de que o Contrato BYSAT - OnixTel (SEI nº 13771209) não contempla o serviço de telecomunicações referente à conectividade dos terminais dos clientes da BYSAT.
+Além disso, visto que foi assinado em novembro de 2014 e que o objeto do presente PAF se refere às receitas auferidas entre janeiro e dezembro de 2014, resta claro que esse contrato apenas poderia ter sido utilizado nos dois últimos meses do período fiscalizado.
+Por último, o Contrato BYSAT - Guardian (SEI nº 13771210), assinado em 1º de março de 2010, possui como objeto o fornecimento do serviço de telecomunicações necessário para o monitoramento de terminais e estações remotas.
+Contrato BYSAT - Guardian (SEI nº 13771210)
+CONTRATO DE TELECOMUNICAÇÃO 010/2008
+AS PARTES:
+I. BYSAT (...), doravante "CONTRATANTE".
+II. GUARDIAN (...), denominada "CONTRATADA".
+CONSIDERANDO QUE:
+(1) à CONTRATADA, foi concedida a licença para exploração do Serviço Limitado Especializado (SLE) pela Agência Nacional de Telecomunicações - ANATEL, ato 36.711 publicado no Diário Oficial da União em 05 de 06 de 2003.
+(2) a CONTRATADA é autorizada pela SATAMATICS, empresa que fornece mundialmente a tecnologia e capacidade satelital INMARSAT, a operar no país e toda América Latina o seu sistema mundial Message Handling System (MHS)
+(...)
+CLÁUSULA 1 - DO OBJETO
+O presente contrato tem como objeto propiciar à CONTRATANTE o serviço de telecomunicações para o monitoramento de terminais e estações remotas.
+Parágrafo Primeiro: A CONTRATANTE deverá solicitar a ativação dos terminais junto à CONTRATADA informando-a, por meio de correio eletrônico ou fax, o número do terminal e seu respectivo serial number para que ocorra a correta ativação e registro de seus terminais junto à CONTRATADA, bem como junto à ANATEL, através de procedimentos a serem efetuados pela CONTRATADA.
+(...)
+Parágrafo Terceiro: A CONTRATADA deverá recolher da CONTRATANTE as taxas devidas à ANATEL pela instalação e funcionamento do terminal, conforme estabelecido pela Lei nº 9.472, de 16 de julho de 1997 e art. 35 do Regulamento da ANATEL, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997, e demais leis, decretos e portarias pertinentes.
+(destaques acrescidos)
+Da análise desses três contratos e das autorizações de cada empresa, conclui-se que: 
+resta incontroverso que os contratos firmados pela Recorrente com as empresas Onixsat e OnixTel abrangem exclusivamente o fornecimento de capacidade satelital por essas contratadas. Dos referidos instrumentos contratuais decorre, ainda, que os serviços de telecomunicações prestados com a utilização da capacidade satelital disponibilizada são de responsabilidade exclusiva da BYSAT;
+a BYSAT é a parte responsável por fornecer, operar e manter os equipamentos necessários para acessar a capacidade satelital fornecida pelas empresas Onixsat e OnixTel, além de obter e manter todas as licenças exigidas por lei;
+nos termos do Contrato BYSAT – Guardian (SEI nº 13771210), a BYSAT figura como cliente dos serviços de telecomunicações fornecidos pela Guardian, a quem compete a responsabilidade pela conectividade dos terminais por ela indicados; e
+a OnixTel não pode prover serviços de telecomunicações, pois não possui a necessária autorização.
+Considerando os contratos analisados e em relação ao licenciamento das estações terminais instaladas para os clientes da BYSAT, tem-se que apenas os terminais próprios da Recorrente e aqueles fornecidos pela Guardian podem ser licenciados.
+Segundo o Sistema Mosaico da Anatel, a BYSAT possui 57 (cinquenta e sete) estações terminais desabilitadas, as quais possuíam licenciamento válido até janeiro de 2013. A Onixsat possui 1.491 (mil, quatrocentos e noventa e um) terminais desabilitados, tendo licença válida até março de 2021. A OnixTel não possui autorização de prestação de serviços de telecomunicações e, portanto, não há registro de estações que tenham sido licenciadas. Por último, a Guardian possui 1.523 (mil, quinhentos e vinte e três) terminais em operação:
+Assim, considerando que 2013 foi o último ano em que as estações terminais da BYSAT se encontravam regularmente licenciadas, conclui-se que, a partir de 2014, as estações instaladas junto aos clientes da empresa e que utilizaram ou utilizam a capacidade satelital decorrente dos contratos celebrados com a Onixsat e a OnixTel (SEI nº 2155972 e nº 13771209, respectivamente) configuram, em tese, estações não licenciadas, caracterizando potencial infração por operação de estação sem a devida autorização. Ressalta-se que, nesses contratos, a BYSAT era a parte responsável pelo fornecimento dos equipamentos terminais necessários, assim como pela obtenção e manutenção das licenças necessárias.
+Diante do exposto, mostra-se necessária a avaliação, pela Superintendência de Controle de Obrigações (SCO), da eventual ocorrência de operação de estação sem o devido licenciamento por parte da BYSAT, relativamente aos terminais que utilizaram capacidade satelital fornecida no âmbito dos contratos firmados com as empresas Onixsat e OnixTel (SEI nº 2155972 e nº 13771209, respectivamente), ao longo dos diversos exercícios envolvidos.
+IV.2.3 - Da suposta inaplicabilidade de multa de ofício nos termos do inciso I do art. 44 da Lei nº 9.430/1996
+A Recorrente sustenta, em seu recurso, que a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 não pode ser aplicada ao caso de descumprimento da obrigação principal referente à contribuição ao Fust. Segundo sua argumentação, o Decreto nº 3.264, de 5 de outubro de 2000, que regulamentava, à época dos fatos deste processo, a cobrança do Fust, estabelecia expressamente, em seu art. 8º, §1º, que o descumprimento das obrigações relacionadas ao recolhimento da contribuição implicaria a aplicação de multa de 2% (dois por cento) sobre o valor devido, além de juros de 1% (um por cento) ao mês, não havendo previsão para aplicação da multa de ofício da Lei nº 9.430/1996.
+Destaca, ainda, que o Decreto nº 3.624/2000 não menciona a possibilidade de aplicação conjunta ou subsidiária das penalidades previstas na Lei nº 9.430/1996, demonstrando, assim, a ausência de base legal para tal medida. Argumenta que o art. 44, I, da Lei nº 9.430/1996 é aplicável apenas aos tributos administrados pela Receita Federal do Brasil, pois está inserido no capítulo que disciplina os procedimentos de fiscalização da Receita Federal, não podendo ser adotado por analogia para contribuições administradas por outros órgãos, como a Anatel.
+Portanto, a Recorrente conclui que, por se tratar de contribuição administrada pela Anatel, deve ser aplicada exclusivamente a legislação específica do Fust (Lei nº 9.998/2000 e Decreto nº 3.264/2000), afastando-se a aplicação da Lei nº 9.430/1996. Assim, requer o reconhecimento da ilegalidade da aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 ao caso concreto.
+Em sua análise (SEI nº 14551181), a Área Técnica esclarece que o Fust é um tributo sujeito ao regime de lançamento por homologação, o que significa que cabe ao contribuinte apurar, declarar e recolher o valor devido. Caso haja omissão ou inexatidão nessas informações, a autoridade fiscal tem o dever de constituir o crédito tributário por meio de lançamento de ofício, situação em que incide a multa prevista no dispositivo legal mencionado.
+O Informe nº 757/2025/COUN/SCO (SEI nº 14551181) ressalta que a finalidade da multa de ofício é justamente penalizar o contribuinte que não cumpre corretamente a obrigação de declarar o fato gerador do tributo, obrigando o Fisco a atuar para constituir o crédito. Observa, ainda, que a ausência de previsão expressa de multa de ofício na Lei do Fust não impede a aplicação da penalidade geral prevista na Lei nº 9.430/1996, pois esta decorre do exercício da competência tributária da União. Em seu art. 44, inciso I, a referida lei determina que, em casos de lançamento de ofício, deve ser aplicada a multa de ofício no percentual de 75% (setenta e cinco por cento).
+Lei nº 9.430/1996
+Art. 44. Nos casos de lançamento de ofício, serão aplicadas as seguintes multas:
+I - de 75% (setenta e cinco por cento) sobre a totalidade ou diferença de imposto ou contribuição nos casos de falta de pagamento ou recolhimento, de falta de declaração e nos de declaração inexata;
+O Corpo Técnico acrescenta que a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) já se debruçou sobre o tema e concluiu pela aplicabilidade da multa de ofício prevista no art. 44, inciso I, da Lei nº 9.430/1996 para a situação em análise, conforme Parecer Jurídico nº 1.060/2010/BSA/PGF/PFE-Anatel (fl. 41/68 do SEI nº 4341421). Em seguida, esse entendimento foi confirmado pela Coordenação-Geral de Cobrança e Recuperação de Créditos da Procuradoria-Geral Federal por meio do Parecer CGCOB/DIGEVAT nº 26/2010 (fl. 79/86 do SEI nº 4341421), aprovado pelo Despacho CGCOB nº 26/2011 (fl. 89/98 do SEI nº 4341421). Por fim, o entendimento foi referendado pelo Procurador-Geral Federal, conforme Despacho s/nº (fl. 99 do SEI nº 4341421).
+Dessa forma, o Informe conclui que, na hipótese de falta ou inexatidão na declaração dos valores devidos ao Fust, é cabível a aplicação da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996, afastando o argumento recursal apresentado.
+Examinando-se a questão, tem-se que há mais de uma década resta igualmente consolidada na jurisprudência a possibilidade de aplicação de multa de ofício em omissões no recolhimento do Fust, não havendo entendimento novo em sentido diverso acerca desse tema. O Supremo Tribunal Federal (STF) possui entendimento pacífico no sentido de que a multa é adequada e não se configura o efeito confiscatório de multa punitiva tributária quando o seu valor não exceder a totalidade da diferença apurada pela ação fiscal. Nesse sentido, vejam-se os seguintes precedentes da 1ª e 2ª Turmas do eg. STF:
+EMENTA: SEGUNDO AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. MULTA PUNITIVA. 75% DO VALOR DO TRIBUTO. CARÁTER PEDAGÓGICO. EFEITO CONFISCATÓRIO NÃO CONFIGURADO. PRECEDENTES. A multa punitiva é aplicada em situações nas quais se verifica o descumprimento voluntário da obrigação tributária prevista na legislação pertinente. Trata-se da sanção prevista para coibir a prática de ilícitos tributários. Nessas circunstâncias, conferindo especial relevo ao caráter pedagógico da sanção, que visa desestimular a burla à atuação da Administração tributária, deve ser reconhecida a possibilidade de aplicação da multa em percentuais mais rigorosos. Nesses casos, a Corte vem adotando como limite o valor devido pela obrigação principal. Agravo regimental a que se nega provimento.
+(RE 602686 AgR-segundo, Relator(a): ROBERTO BARROSO, Primeira Turma, julgado em 09/12/2014, ACÓRDÃO ELETRÔNICO DJe-024 DIVULG 04-02-2015 PUBLIC 05-02-2015)
+--------------------
+EMENTA: PROCESSUAL CIVIL. AGRAVO REGIMENTAL NO RECURSO EXTRAORDINÁRIO. VIOLAÇÃO DOS PRINCÍPIOS DO DIREITO ADQUIRIDO, DO CONTRADITÓRIO E DA AMPLA DEFESA. OFENSA CONSTITUCIONAL REFLEXA. AUSÊNCIA DE REPERCUSSÃO GERAL. ARE 748.371 (REL. MIN. GILMAR MENDES - TEMA 660). TRIBUTÁRIO. MULTA DE 75% DO CRÉDITO. EFEITO CONFISCATÓRIO. INOCORRÊNCIA. PRECEDENTE DO PLENÁRIO SOB A SISTEMÁTICA DA REPERCUSSÃO GERAL: RE 582.461-RG (REL. MIN. GILMAR MENDES, DJE DE 05/02/10, TEMA 214), BEM COMO JULGADOS RECENTES DAS TURMAS. AGRAVO REGIMENTAL A QUE SE NEGA PROVIMENTO.
+(RE 678347 AgR, Relator(a): TEORI ZAVASCKI, Segunda Turma, julgado em 29/04/2014, ACÓRDÃO ELETRÔNICO DJe-090 DIVULG 12-05-2014 PUBLIC 13-05-2014)
+(Grifou-se)
+E neste Conselho a situação não é diferente, consoante precedentes proferidos nos Acórdãos nº 68 (SEI nº 13457597), de 24 de março de 2025, nº 312 (SEI nº 5610416), de 2 de junho de 2020, e nº 114 (SEI nº 1371477), de 12 de abril de 2017.
+A consistência desse entendimento no âmbito deste Colegiado levou-o a ser sumulado. Assim, em 26 de julho de 2024, foi editada a Súmula nº 27 da Anatel, nos seguintes termos:
+Súmula nº 27
+"Nos processos administrativos fiscais, é legítima a aplicação da multa de ofício pela ausência de declaração ou declaração inexata pelo contribuinte que importe no recolhimento a menor da Contribuição ao Fundo de Universalização dos Serviços de Telecomunicações (CIDE-Fust)".
+Em recente manifestação, por meio do Parecer nº 55/2026/PFE-ANATEL/PGF/AGU (SEI nº 15289243) emitido nos autos do Processo nº 53508.015099/2009-46, a PFE-Anatel destacou que a incidência da multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 é pacífica e consolidada no âmbito da Procuradoria Federal Especializada e da Procuradoria-Geral Federal. Ressaltou que o Fust mantém natureza de tributo federal, ainda que arrecadado pela Anatel, motivo pelo qual omissões ou declarações inexatas justificam a penalidade punitiva.
+Também esclareceu que a multa prevista no Decreto nº 3.624/2000 tem caráter meramente compensatório e não afasta a multa de ofício, cuja natureza é sancionatória. As duas multas possuem fundamentos e finalidades distintos, de modo que não há sobreposição entre elas. Destacou ainda que, mesmo em hipótese de conflito, a lei prevalece sobre o decreto, em razão da hierarquia normativa.
+Por fim, ressaltou que, em 2024, a Agência aprovou a Súmula nº 27, que reconhece a legitimidade da aplicação da multa de ofício nos casos de ausência ou inexatidão na declaração da contribuição ao Fust, reforçando o entendimento já sedimentado.
+Entende-se adequada a posição sustentada pela Área Técnica e pela PFE‑Anatel. Como bem ressaltado pelo Órgão Jurídico, a legislação é clara ao distinguir dois tipos de multa, de naturezas distintas: a moratória e a sancionatória. A multa de mora, definida no art. 8º, I, do Decreto nº 3.624/2000, tem como objetivo a compensação pelo inadimplemento no pagamento do tributo. Por outro lado, a multa sancionatória, estabelecida pelo art. 44, I, da Lei nº 9.430/1996, é aplicável em situações infracionais, tais como omissões ou fraudes cometidas pelo contribuinte.
+A aplicação de cada tipo de multa depende, então, da situação fática específica.
+Nos presentes autos, a partir dos resultados expressos no Relatório de Fiscalização nº 0566/2017/GR04 (SEI nº 2179814), entendeu-se caracterizados valores devidos não declarados pela Recorrente, o que exigiria a aplicação de multa de ofício, conforme definida pelo art. 44, I, da Lei nº 9.430/1996.
+Considerando todo o exposto, resta comprovada a possibilidade de aplicação de multa de ofício fundamentada no art. 44, I, da Lei nº 9.430/1996.
+No entanto, no presente caso, concluiu-se pela inocorrência do fato gerador da contribuição ao Fust, o que conduz à inexistência de multa de ofício a ser aplicada.
+V - DA PROPOSTA DE ENCAMINHAMENTO
+Nos presentes autos, foram discutidos os argumentos apresentados pela BYSAT em seu Recurso Administrativo (SEI nº 13771207 ) contra o Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), que reconheceu procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) para o exercício de 2014, traduzidos na Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546).
+Conforme já tratado nesta Análise, o processo, que tramitou regularmente, decorre de fiscalização que resultou em lançamento de Fust posteriormente impugnado pela Recorrente, tendo-se afastado a preliminar de prescrição intercorrente e, no mérito, reconhecido a inexistência de fato gerador, com consequente insubsistência do crédito e da penalidade acessória.
+Embora o recurso deva ser provido quanto ao lançamento do Fust, os autos revelam indícios de possível uso de estações terminais não licenciadas pela BYSAT a partir de 2014, especialmente no contexto dos contratos firmados com Onixsat e OnixTel. Por essa razão, entendeu-se necessária a avaliação da matéria pela SCO, em apuração própria, sem prejuízo da solução do presente recurso fiscal.
+Ademais, à luz do entendimento ora consolidado nesta Análise, bem como das decisões proferidas pela SCO e dos precedentes firmados pelo Conselho Diretor acerca da inexistência do fato gerador, é recomendável que a SCO avalie a existência de processos em curso que tratem da incidência da contribuição ao Fust sobre receitas percebidas por prestadoras de serviços de monitoramento e rastreamento veicular que se valham de serviços de telecomunicações de terceiros como insumo operacional para apreciar a conveniência do cancelamento dos créditos tributários ali constituídos.
+Por fim, em razão da constatação de inocorrência do fato gerador da contribuição ao Fust, é necessário que a SCO proceda à comunicação formal ao Ministério das Comunicações, para que sejam adotadas as providências cabíveis quanto à atualização dos valores referentes à contribuição ao Fust, bem como à cobrança do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel), considerando que ambos compartilham a mesma base de cálculo.
+Diante do exposto, propõe-se o conhecimento do Recurso Administrativo e, no mérito, o seu provimento, com a reforma do Despacho Decisório nº 239/2025/COUN/SCO (SEI nº 13438797), para reconhecer a improcedência da Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL (SEI nº 12808546), relativa ao exercício de 2014, e o consequente cancelamento dos créditos tributários constituídos a título de Fust, da multa de ofício e dos juros correspondentes.
+VI - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+Por fim, observa-se que a Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, se tenha um mundo melhor para todos os povos e nações. Ela representa um compromisso assumido por todos os países participantes da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável de 2015, que reuniu os 193 (cento e noventa e três) Estados‑membros da ONU, incluindo o Brasil, e prevê a adoção de medidas ousadas, abrangentes e essenciais para fortalecer o Estado de Direito, promover os direitos humanos e ampliar a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 (cento e sessenta e nove) metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que essa aderência esteja explícita nas decisões deste Conselho Diretor, como sempre defendeu o Conselheiro Alexandre Freire em suas manifestações (vide Ofício nº 90/2023/AF-ANATEL - SEI nº 11203364).
+A proposta de encaminhamento contida na presente Análise se relaciona com o Objetivo 10 da Agenda 2030, uma vez que a garantia de uma administração tributária eficiente e justa favorece uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais.
+Relaciona-se, ainda, com o Objetivo 16, pois, conforme demonstrado, observaram-se durante todo o trâmite processual os princípios do devido processo legal, da ampla defesa e do contraditório, da motivação dos atos administrativos e da transparência, assegurados pela Constituição da República, pelas Leis aplicáveis ao processo administrativo e pelo Regimento Interno da Anatel, identificando-se, em especial, com a Meta 16.6, que propõe "desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis".
+CONCLUSÃO
+Voto por:
+ratificar o conhecimento do recurso administrativo interposto pela BYSAT AUTOMACAO E CONTROLE EIRELI, CNPJ nº 03.399.403/0001-43, e, no mérito, dar-lhe provimento, para reformar o Despacho Decisório nº 239/2025/COUN/SCO, reconhecendo a improcedência da Notificação de Lançamento nº 001-011110/2017/AFFO-ANATEL, relativa ao exercício de 2014, com o consequente cancelamento dos créditos tributários lançados a título de Fust, da multa de ofício e dos juros correlatos;
+determinar à Superintendência de Controle de Obrigações (SCO) que:
+b.1) avalie os indícios de operação de estações sem licenciamento pela BYSAT AUTOMACAO E CONTROLE EIRELI a partir de 2014, especialmente no contexto dos contratos firmados com Onixsat e OnixTel; e
+b.2) comunique ao Ministério das Comunicações o resultado deste processo, para as providências cabíveis quanto à atualização dos valores do Fust e do Funttel.
+determinar a notificação da Recorrente e o posterior arquivamento dos autos.
+ | Documento assinado eletronicamente por Nilo Pasquali, Conselheiro, Substituto, em 13/06/2026, às 09:24, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15272169 e o código CRC 0772CE20.
+ | 
+Referência: Processo nº 53524.019858/2017-51 | 
+SEI nº 15272169 |

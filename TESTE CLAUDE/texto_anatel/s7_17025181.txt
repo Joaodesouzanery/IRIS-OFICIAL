@@ -1,0 +1,504 @@
+SEI/ANATEL - 15216069 - Análise
+Boletim de Serviço Eletrônico em 12/03/2026
+Análise nº 18/2026/OP
+Processo nº 53500.063260/2021-54
+Interessado: TRANSIT DO BRASIL S.A
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo interposto por TRANSIT DO BRASIL S.A., prestadora do Serviço Telefônico Fixo Comutado (STFC), em face do Despacho Decisório nº 40/2024/COGE/SCO (SEI nº 11514611), de 04 de dezembro de 2024, que lhe aplicou sanção de multa em razão do descumprimento a dispositivos da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT) e do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC, aprovado pela Resolução nº 588, de 07 de maio de 2012, e às determinações contidas nos itens II, III, V e VII do Despacho Decisório n.º 175/2018/SEI/CPRP/SCP, de 05 de setembro de 2018 (SEI n.º 7346749), retificado pelo Despacho Decisório n.º 234/2018/SEI/CPRP/SCP (SEI n.º 7346758).
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. DESCUMPRIMENTO DE OBRIGAÇÕES REGULATÓRIAS E DETERMINAÇÕES DA ANATEL. MULTA. RECURSO CONHECIDO E NÃO PROVIDO. REFORMA DE OFÍCIO DO VALOR DA MULTA.
+I. CASO EM EXAME
+ Recurso administrativo interposto por TRANSIT DO BRASIL S.A., prestadora do Serviço Telefônico Fixo Comutado (STFC), contra decisão que aplicou sanção de multa por descumprimento de dispositivos da Lei nº 9.472/1997 (LGT), do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC (Resolução nº 588/2012), e às determinações contidas nos itens II, III, V e VII do Despacho Decisório n.º 175/2018/SEI/CPRP/SCP, de 05 de setembro de 2018 (SEI n.º 7346749), retificado pelo Despacho Decisório n.º 234/2018/SEI/CPRP/SCP (SEI n.º 7346758).
+ A decisão de primeira instância fundamentou-se em infrações ao art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC, bem como descumprimento de determinações contidas nos itens II, III, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP, retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP, caracterizando infração ao §2º do art. 16 do RASA.
+ A multa inicialmente aplicada foi de R$ 115.884,63, posteriormente ajustada para R$ 114.615,61 em razão de recomendações da Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) e revisão dos critérios de dosimetria.
+II. QUESTÃO EM DISCUSSÃO
+ Há seis questões em discussão: (i) saber se a Anatel possui competência para atuar em casos de inadimplência regulatória e determinar ressarcimentos entre prestadoras; (ii) saber se o acordo extrajudicial firmado entre as partes extinguiu as obrigações administrativas e regulatórias; (iii) saber se houve caracterização de má-fé por parte da TRANSIT; (iv) saber se houve má-fé do GRUPO OI; (v) saber se é adequada a aplicação da taxa SELIC para atualização da multa; e (vi) saber se o valor da multa é proporcional às infrações apuradas.
+III. RAZÕES DE DECIDIR
+ A Anatel possui competência para arbitrar condições de interconexão e determinar ressarcimentos entre prestadoras, conforme previsto na LGT e precedentes do Conselho Diretor.
+ O acordo extrajudicial firmado entre as partes não extinguiu as obrigações administrativas, pois a OI S.A. informou o não recebimento dos valores determinados e a TRANSIT reconheceu a dívida, evidenciando inadimplemento.
+ A má-fé da TRANSIT foi caracterizada pelo descumprimento deliberado e reiterado de obrigações regulatórias e determinações da Agência, bem como pela obtenção de vantagem econômica indevida.
+ Não se verificou má-fé do GRUPO OI, que buscou a Agência para resolução do impasse e recebimento legítimo dos valores de interconexão.
+ A aplicação da taxa SELIC para atualização da multa encontra respaldo na legislação vigente, no RASA e na Emenda Constitucional nº 113/2021.
+ O valor da multa foi fixado observando critérios objetivos, limites regulatórios para microempresas e agravantes previstos no RASA, sendo proporcional às infrações apuradas.
+IV. DISPOSITIVO E TESE
+ Recurso administrativo conhecido e não provido. Reforma de ofício do valor da multa para R$ 114.615,61.
+Tese de julgamento: "1. A Anatel possui competência para determinar ressarcimentos entre prestadoras e instaurar processo sancionatório por descumprimento de obrigações regulatórias. 2. O acordo extrajudicial não extinguiu as obrigações administrativas, diante do inadimplemento reconhecido. 3. A má-fé da TRANSIT foi caracterizada pelo descumprimento deliberado de determinações da Agência e retenção indevida de receitas de interconexão. 4. A aplicação da taxa SELIC para atualização da multa é adequada e encontra respaldo legal. 5. O valor da multa é proporcional às infrações apuradas e respeita os limites regulatórios para microempresas."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 19, 145 a 150, 152, 153, 173, II; Lei nº 10.522/2002, art. 37-A; EC nº 113/2021, art. 3º; Decreto-Lei nº 4.657/1942, art. 20; Resolução nº 588/2012, art. 3º; Resolução nº 589/2012, arts. 7º, 9º, 16, 18, 19, 34.
+Jurisprudência relevante citada: Anatel, Acórdão nº 634/2019, Rel. Moisés Queiroz Moreira, Reunião nº 880, 12.12.2019; Anatel, Acórdão nº 40/2018, Rel. Otavio Luiz Rodrigues Junior, Reunião nº 842, 18.01.2018; Parecer nº 289/2024/PFE-ANATEL/PGF/AGU; Parecer nº 328/2025/PFE-ANATEL/PGF/AGU; Parecer nº 86/2023/PFE-ANATEL/PGF/AGU.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT.
+Lei nº 10.522, de 19 de julho de 2002.
+Emenda Constitucional nº 113, de 08 de dezembro de 2021.
+Decreto-Lei nº 4.657, de 1942, Lei de Introdução às normas do Direito Brasileiro - LINDB.
+Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - STFC, aprovado pela Resolução nº 588, de 07 de maio de 2012.
+Regulamento de Aplicação de Sanções - RASA, aprovado pela Resolução nº 589, de 07 de maio de 2012.
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Reclamação Administrativa nº 53500.013107/2015-38.
+RELATÓRIO
+Cuida-se de Recurso administrativo interposto por TRANSIT DO BRASIL S.A., inscrita no CNPJ/MF sob nº 02.868.267/0001-20, prestadora do Serviço Telefônico Fixo Comutado (STFC), em face do Despacho Decisório nº 40/2024/COGE/SCO (SEI nº 11514611), de 04 de dezembro de 2024, que lhe aplicou a sanção de MULTA no valor de R$115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos), nos termos do art. 173, II, da Lei nº 9.472, de 16 de julho de 1997, Lei nº 9.472, de 16 de julho de 1997, a Lei Geral de Telecomunicações (LGT), por infração ao art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC, aprovado pela Resolução nº 588, de 07 de maio de 2012, e por descumprir as determinações contidas nos itens II, III, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), de 05 de setembro de 2018, retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 7346758), nos autos da Reclamação Administrativa (RA) nº 53500.013107/2015-38, por meio dos quais o Superintendente de Competição, entre outros, determinou o pagamento de valores de remuneração de rede fixa e móvel devidos pela TRANSIT DO BRASIL S.A. à TELEMAR NORTE LESTE S.A., OI S.A., e OI MÓVEL S.A., caracterizando infração ao §2º do art. 16 do Regulamento de Aplicação de Sanções (RASA), aprovado pela Resolução nº 589, em 07 de maio de 2012.
+I - DA INSTAURAÇÃO DESTE FEITO
+I.a - Do Despacho Ordinatório de Instauração nº 197/2021/COGE/SCO (SEI nº 7347826)
+Instaurou-se o presente Procedimento de Apuração de Descumprimento de Obrigações (PADO) por meio do Despacho Ordinatório de Instauração nº 197/2021/COGE/SCO (SEI nº 7347826), de 23 de janeiro de 2023, fundamentado no Informe nº 391/2021/COGE/SCO (SEI nº 7346831), de mesma data, em razão do descumprimento do artigo 152 da LGT c/c artigo 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC e, ainda, não cumpriu as determinações contidas no Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 7346758), o que também caracteriza suposta infração às disposições do artigo 152 da LGT c/c artigo 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - STFC, aprovado pela Resolução nº 588, em 07 de maio de 2012, além de suposto descumprimento ao § 2º do art. 16 do Regulamento de Aplicação de Sanções - RASA, aprovado pela Resolução nº 589, em 07 de maio de 2012.
+Apresento a seguir um breve relato acerca da Reclamação Administrativa nº 53500.013107/2015-38, no qual foi proferida a decisão ora em debate.
+I.b - Da Reclamação Administrativa nº 53500.013107/2015-38
+Em 22 de junho de 2015, quando o GRUPO OI (TELEMAR NORTE LESTE S.A., OI S.A. e OI MÓVEL S.A.) protocolou Reclamação Administrativa em face da TRANSIT DO BRASIL S.A., alegando retenção reiterada e injustificada de receitas oriundas do Documento de Declaração de Tráfego (DETRAF) desde fevereiro de 2014, apontou-se inadimplemento contratual e descumprimento de Termo de Confissão de Dívida (TCD), tendo sido indicado débito inicial no montante de R$ 353.263,63 (trezentos e cinquenta e três mil duzentos e sessenta e três reais e sessenta e três centavos).
+Posteriormente, em 16 de novembro de 2016, o GRUPO OI apresentou nova manifestação, demonstrando o agravamento do cenário de inadimplência. Informou-se a celebração de novo TCD em 22 de setembro de 2015, por meio do qual a TRANSIT reconheceu dívida no valor de R$ 1.568.103,02 (um milhão, quinhentos e sessenta e oito mil cento e três reais e dois centavos), permanecendo pendente o pagamento de R$ 1.023.537,68 (um milhão, vinte e três mil, quinhentos e trinta e sete reais e sessenta e oito centavos). 
+Após a instrução processual, o Superintendente de Competição proferiu o Despacho Decisório nº 175/2018 (SEI nº 3125869), em 5 de setembro de 2018. O ato determinou à TRANSIT o pagamento de R$ 1.023.537,68 (valor sujeito à atualização), bem como a abstenção de novas retenções de receitas. Além disso, autorizou-se a suspensão da interconexão em caso de inadimplemento, determinou-se a publicação de comunicado aos usuários e promoveu-se o encaminhamento dos autos à área competente para avaliação de eventual Processo Administrativo por Descumprimento de Obrigações (PADO), prevendo-se o arquivamento após o cumprimento das determinações.
+Irresignada, a TRANSIT interpôs Recurso Administrativo (SEI nº 3290882), em 1º de outubro de 2018, demonstrando a continuidade da controvérsia na esfera recursal. Na sequência, em 4 de outubro de 2018, o GRUPO OI manifestou-se apontando erro material no item V do Despacho Decisório, relacionado à exclusão indevida da OI S.A. na mensagem de suspensão da interconexão.
+Reconhecida a inconsistência formal, a autoridade administrativa editou o Despacho Decisório nº 234/2018 (SEI nº 3321767), em 11 de outubro de 2018, promovendo a retificação do item questionado. Esse ato não alterou o mérito da decisão anterior, limitando-se à correção material da decisão.
+O Acórdão nº 634/2019 (SEI nº 5034383), de 16 de dezembro de 2019, aprovado por unanimidade pelo Colegiado, confirmou a determinação para que a TRANSIT DO BRASIL S.A. pague os valores devidos ao GRUPO OI, rejeitando o recurso administrativo da TRANSIT e mantendo as decisões anteriores da ANATEL.
+Face ao Despacho Decisório nº 108/2021/CPRP/SCP (SEI nº 6907666), de 19 de maio de 2021, que decidiu sobre o grau de acesso aos autos, a TRANSIT protocolizou recursos administrativos (SEI nº 7194123 e nº 7522938). 
+Por meio do Acórdão nº 424/2021 (SEI nº 7838770), proferido em 21 de dezembro de 2021, o Conselho Diretor, por unanimidade, conheceu dos recursos interpostos, mas lhes negou provimento. 
+Mesmo após o julgamento definitivo, o GRUPO OI (SEI nº 8028466) se manifestou, em 8 de fevereiro de 2022, informando o não recebimento dos valores determinados e reiterando o cumprimento, por sua parte, das medidas de publicação e suspensão da interconexão, o que indicou possível persistência do descumprimento das obrigações pela TRANSIT.
+Diante desse cenário, em 27 de abril de 2022, o Gerente de Monitoramento das Relações entre Prestadoras emitiu o Memorando nº 10/2022/CPRP/SCP (SEI nº 8255743), por meio do qual encaminhou os autos à Superintendência de Controle de Obrigações (SCO) para adoção das providências cabíveis diante do descumprimento das determinações administrativas.
+Por fim, ainda em 2022, o processo foi arquivado por exaurimento de sua finalidade.
+I.c - Da defesa da TRANSIT
+Devidamente notificada (SEI nº 7350022 e 9806254) da instauração do presente PADO, a TRANSIT protocolizou defesa (SEI nº 9862300) em 23 de fevereiro de 2023, alegando que:
+as obrigações regulatórias e administrativas teriam sido extintas por meio de acordo extrajudicial firmado entre as partes, em 22 de setembro de 2015, com quitação ampla, total e irrevogável das disputas, inclusive quanto aos valores pleiteados;
+o GRUPO OI teria omitido a existência desse acordo e a distribuição de ação monitória judicial sobre o mesmo objeto, elegendo o foro judicial para dirimir eventuais inadimplências;
+a questão passou a ser de natureza civil, não cabendo à ANATEL instaurar procedimento administrativo para apuração de descumprimento de obrigação já extinta;
+cerceamento de defesa na RA nº 53500.013107/2015-38, ausência de competência da ANATEL para determinar pagamentos entre prestadoras (citando decisão judicial) e lapso temporal superior a sete anos desde o acordo.
+Ao final, requereu o recebimento da defesa, a declaração de improcedência do PADO e seu arquivamento.
+II - DAS ALEGAÇÕES FINAIS
+Em 23 de maio de 2023, a Prestadora foi intimada para apresentar alegações finais por meio de Ofício nº 404/2023/COGE/SCO-Anatel (SEI nº 10274573 e 10372650).
+A TRANSIT manifestou-se (SEI n° 10425716) em 21 de junho de 2023, reiterando as alegações de suas defesas.
+III - DO DESPACHO DECISÓRIO Nº 40/2024/COGE/SCO
+Em 1º de maio de 2024, elaborou-se o Informe nº 83/2024/COGE/SCO (SEI nº 11514587). Argumentou-se que: 
+a competência da Agência em compor eventuais conflitos entre as partes, nas negociações sobre interconexão, emana do § 2º do art. 153 da LGT, revelando-se improcedente a alegação de que a questão versada na RA nº 53500.013107/2015-38 estaria fora do âmbito de competências da ANATEL, por se tratar de obrigação de natureza civil;
+diante do extenso quadro probatório constante da RA, e da ausência de impugnação específica dos fatos imputados, os indícios de infração foram devidamente confirmados, sendo cabível a aplicação de sanção;
+as condutas da prestadora foram consideradas de natureza GRAVE devido à obtenção de vantagem econômica indevida, em razão da retenção de receitas de interconexão e má-fé decorrente do descumprimento deliberado da decisão da Agência, nos termos do inciso I do art. 7º, combinado com os incisos I e II do § 3° do art. 9º do RASA;
+Após aplicar os parâmetros e critérios para definições das sanções previstos no RASA (porte: micro, Fator T 3,50, percentual de cumprimento 0%, antecedentes 20%, ausência de reincidência específica, agravante de 10%, ausência de atenuante), encontrou-se o valor de R$ 1.064,17 (um mil sessenta e quatro reais e dezessete centavos) pela conduta de descumprimento de obrigações de interconexão e R$ 7.355,79 (sete mil trezentos e cinquenta e cinco reais e setenta e nove centavos) pela conduta de descumprimento de determinações impostas pelo Despacho Decisório n° 175/2018/SEI/CPRP/SCP (SEI nº 7346749), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 7346758), no total de R$ 8.419,96 (oito mil quatrocentos e dezenove reais e noventa e seis centavos).
+Contudo, a COGE entendeu que o valor da multa apurada se mostrava desproporcional e insuficiente para produzir efeitos pedagógicos almejados, sendo incapaz de desestimular ou refrear a conduta adotada pela TRANSIT. 
+Considerando que não houve o ressarcimento da OI nos autos da Reclamação Administrativa 53500.013107/2015-38, comprovado pela ausência de celebração de Termo de Quitação Mútua de Valores entre a TRANSIT e a OI naqueles autos, a COGE calculou a sanção do presente PADO a partir do débito por inadimplência acumulado corrigido pela SELIC. A multa base foi calculada como o dobro da vantagem auferida, além do agravante de má-fé. Ao fim, a sanção de multa atingiu o valor de R$ 1.809.136,47 (um milhão, oitocentos e nove mil e cento e trinta e seis reais e quarenta e sete centavos). Os autos foram enviados para a Procuradoria Federal Especializada junto à Anatel (PFE/Anatel) para manifestação.
+Por meio do Parecer nº 289/2024/PFE-ANATEL/PGF/AGU (SEI nº 12114675), o Órgão Jurídico alegou que:
+a infração pela retenção indevida de receitas e descumprimento de determinações da Anatel restou comprovada;
+a tentativa de afastar a competência da Agência, alegando acordo extrajudicial, é improcedente;
+a caracterização de má-fé exige comprovação de descumprimento deliberado e premeditado das normas ou determinações da Agência, sendo necessária a complementação para devida caracterização da má-fé da prestadora;
+as multas devem ser calculadas para cada infração e devem ter seu valor base calculado, no mínimo, pelo dobro da vantagem auferida pelo infrator.
+Em sua conclusão, a PFE/Anatel recomendou ajustes na fundamentação sobre a caracterização de má-fé e no cálculo das multas. Opinou ainda pela regularidade formal do PADO e pela caracterização das infrações apuradas.
+No intuito de atender as recomendações do referido Parecer, a Gerência de Controle de Obrigações Gerais (COGE) apresentou as seguintes alegações no Informe nº 369/2024/COGE/SCO (SEI nº 12325614), 4 de dezembro de 2014:
+a caracterização de má-fé se fundamenta: (i) no descumprimento deliberado e reiterado de obrigações regulatórias e determinações da ANATEL; (ii) na conduta contumaz de reter receitas de interconexão, mesmo após decisões administrativas e judiciais; (iii) na utilização das regras de interconexão para obter vantagens, sem cumprir os ônus correspondentes;
+o valor total da multa, de R$ 1.809.136,47 (um milhão, oitocentos e nove mil cento e trinta e seis reais e quarenta e sete centavos), foi ajustado devido ao porte "MICRO" da empresa (conforme Receita Operacional Líquida), que considera como teto o valor de R$ 110.000,00 para cada infração.
+A COGE conclui pela aplicação de multa à TRANSIT limitada ao teto regulatório considerando seu porte econômico, devido à retenção indevida de receitas de interconexão e descumprimento de determinações da Anatel, totalizando R$ 115.884,63 (cento e quinze mil oitocentos e oitenta e quatro reais e sessenta e três centavos).
+Em 4 de dezembro de 2024, proferiu-se o Despacho Decisório nº 40/2024/COGE/SCO (SEI nº 11514611), nos seguintes termos:
+"A SUPERINTENDENTE DE CONTROLE DE OBRIGAÇÕES DA ANATEL, (...) DECIDE: 1. Aplicar à empresa TRANSIT DO BRASIL S.A, inscrita no CNPJ/MF sob nº 02.868.267/0001-20, prestadora do Serviço Telefônico Fixo Comutado (STFC), a sanção de MULTA no valor de R$115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos), nos termos do art. 173, II, da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações - LGT, por infração ao artigo 152 da LGT c/c artigo 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - STFC, aprovado pela Resolução n.º 588, de 07 de maio de 2012, e por descumprir as determinações contidas nos itens II, III, V e VII do Despacho Decisório n.º 175/2018/SEI/CPRP/SCP, de 05 de setembro de 2018 (SEI n.º 7346749), retificado pelo Despacho Decisório n.º 234/2018/SEI/CPRP/SCP (SEI n.º 7346758), caracterizando infração ao art. 16, §2º, do Regulamento de Aplicação de Sanções - Rasa, aprovado pela Resolução n.º 589, em 07 de maio de 2012. 1.1. Caso a prestadora resolva, de acordo com o disposto no § 5º do art. 33 do Regulamento de Aplicação de Sanções Administrativas (Rasa), aprovado pela Resolução nº 589, de 07 de maio de 2012, renunciar expressamente ao direito de recorrer da decisão de primeira instância, fará jus a um fator de redução de 25% (vinte e cinco por cento) no valor da multa aplicada, totalizando R$86.913,47 (oitenta e seis mil novecentos e treze reais e quarenta e sete centavos) desde que faça o recolhimento no prazo regulamentar. [destaques no original].
+Em 23 de dezembro de 2024, notificou-se a TRANSIT (SEI nº 11514612 e 13075692).
+IV - DO RECURSO ADMINISTRATIVO
+Em 28 de dezembro de 2024, a TRANSIT interpôs Recurso Administrativo (SEI nº 13090878), alegando que:
+o acordo firmado entre as partes em 2015 teria extinguido todas as obrigações administrativas e regulatórias, incluindo as derivadas da RA que originou o PADO;
+a Anatel não poderia atuar como instância de cobrança de dívidas civis;
+não haveria provas concretas de má-fé por parte da TRANSIT, sendo insuficiente a mera presunção para aplicação de penalidades agravadas;
+o Grupo OI teria omitido o acordo extrajudicial e a existência de ação judicial, induzindo a Anatel a erro;
+a correção da multa administrativa pela taxa SELIC violaria o princípio da legalidade;
+diante da ausência de provas concretas e pela questão estar sub judice, o valor da multa seria desproporcional.
+Requereu-se, ao final, o recebimento do recurso com efeito suspensivo e a revisão da decisão e improcedência da multa, com arquivamento do processo administrativo. Alternativamente, requereu-se a conversão da multa em advertência ou redução do valor, excluindo-se a aplicação da taxa SELIC.
+V - DO ENCAMINHAMENTO DESTE FEITO AO CONSELHO DIRETOR 
+Em 17 de abril de 2025, elaborou-se o Informe nº 189/2025/COGE/SCO (SEI nº 13415555), no qual a área técnica argumentou que:
+a Anatel possui competência para atuar em casos de inadimplência regulatória e para determinar ressarcimentos entre prestadoras; 
+a instrução do processo administrativo observou o devido processo legal, contraditório e ampla defesa;
+má-fé da TRANSIT restou caracterizada pela retenção reiterada de receitas e pelo descumprimento das determinações da Agência, inclusive mediante confissão expressa do débito formalizada em instrumento próprio;
+a aplicação da taxa SELIC para atualização do valor seguiu legislação aplicável e encontra respaldo na jurisprudência consolidada.
+Face ao afastamento das alegações suscitadas, procedeu-se à revisão do valor inicial da multa, levando-se em consideração circunstâncias agravantes, tais como os antecedentes, a reincidência, a má-fé e a obtenção de vantagem indevida, bem como o porte econômico da empresa, classificado como microempresa. O valor-base da penalidade, calculado pelo critério da vantagem auferida, ultrapassaria R$ 2,9 milhões. Contudo, em razão do limite legal aplicável às microempresas, foi ajustado para R$ 110.000,00. Ademais, pelo descumprimento de determinações específicas, aplicou-se multa adicional no montante de R$ 6.613,84 (seis mil seiscentos e treze reais e oitenta e quatro centavos), perfazendo o valor total sugerido de R$ 116.613,84 (cento e dezesseis mil seiscentos e treze reais e oitenta e quatro centavos).
+Por meio do Despacho Decisório nº 927/2025/COGE/SCO (SEI nº 14789752), a Superintendente de Controle de Obrigações conheceu do Recurso Administrativo, com fundamento no Informe nº 1132/2025/COGE/SCO (SEI nº 14788642).
+Encaminharam-se os autos à apreciação deste Órgão Colegiado (SEI nº 14789769 e 14927615) e, em sorteio realizado no dia 18 de dezembro de 2025 (SEI nº 14938935), designou-se a relatoria do presente Recurso Administrativo a este Conselheiro.
+A empresa foi notificada para apresentações de alegações nos termos do §4º do art. 125 do RIA (SEI nº 13526779 e 13640834), com cumprimento de intimação por decurso de prazo tácito, em 2 de maio de 2025.
+Não houve apresentação de alegações.
+Por meio do Informe nº 890/2025/COGE/SCO (SEI nº 14264242), de 11 de setembro de 2025, diante do silêncio da prestadora em relação ao agravamento da multa sugerido no Informe nº 189/2025/COGE/SCO (SEI nº 13415555), a área técnica reiterou seu entendimento e propôs o encaminhamento dos autos à PFE/Anatel.
+Em 26 de setembro de 2025, o Órgão Jurídico, no Parecer nº 328/2025/PFE-ANATEL/PGF/AGU (SEI nº 14463870), tratou do tema nos seguintes termos:
+é possível agravar a sanção em instância recursal administrativa, desde que o interessado seja previamente notificado para apresentar alegações, conforme previsto na Lei 9.784/1999 e no Regimento Interno da Anatel;
+a jurisprudência dos tribunais superiores e a Súmula nº 22 da Anatel também respaldam a possibilidade do reformatio in pejus;
+quanto ao cálculo da multa recomendou-se a revisão do recálculo da sanção, ajustando: (i) exclusão da agravante por reincidências específicas no descumprimento de determinações; (ii) ajuste do percentual de antecedentes de 11% para 13%, considerando corretamente os registros; (iii) correção do número de ocorrências para 4, conforme apurado; (iv) manutenção do agravante de 10% por má-fé e obtenção de vantagem direta.
+Ao fim, a PFE/Anatel restituiu os autos à área técnica e sugeriu que, apenas em caso de novo agravamento, os autos deveriam retornar ao Órgão Jurídico para nova manifestação. 
+O Informe nº 1132/2025/COGE/SCO (SEI nº 14788642), de 15 de dezembro de 2025, a área técnica acolheu as recomendações do Parecer nº 328/2025/PFE-ANATEL/PGF/AGU (SEI nº 14463870) por meio do recálculo da multa nos parâmetros indicados. Com os ajustes, o valor total do sancionamento foi reduzido para o valor de R$ 114.615,61 (cento e quatorze mil seiscentos e quinze reais e sessenta e um centavos). 
+Em virtude do recálculo, que reduziu o valor da multa, não houve nova notificação da Recorrente.
+Pelo Despacho Decisório nº 927/2025/COGE/SCO (SEI nº 14789752), a Superintendente de Controle de Obrigações decidiu conhecer do Recurso, encaminhando os autos a este Conselho para análise de mérito pela Matéria nº 869/2025 (SEI nº 14789769).
+Realizado sorteio em 9 de fevereiro de 2026 (SEI nº 14789769), fui designado o novo relator da matéria.
+É o relatório.
+DA fundamentação
+I - DO RECURSO ADMINISTRATIVO
+I.a - DA ADMISSIBILIDADE RECURSAL
+A Recorrente foi notificada do Despacho Decisório nº 40/2024/COGE/SCO (SEI nº 11514611) em 23 de dezembro de 2024 (SEI nº 13075692), e apresentou Recurso Administrativo em 28 de dezembro de 2024 (SEI nº 13090878), o qual é tempestivo.
+Ademais, o Recorrente possui interesse na reforma da decisão proferida, está regularmente representado e não há contrariedade a entendimento fixado em Súmula pela Agência.
+Logo, estão presentes os pressupostos de admissibilidade previstos no art. 116 do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, de modo a ser correta a decisão de se conhecer do Recurso Administrativo contida no Despacho Decisório nº 927/2025/COGE/SCO (SEI nº 14789752).
+Passa-se à análise do mérito recursal.
+I.b - DO MÉRITO RECURSAL
+I.b.1 - Da suposta competência exclusiva do Poder Judiciário para análise da matéria 
+A Recorrente sustentou que o procedimento administrativo instaurado teria se desviado de sua finalidade ao tratar de inadimplência relacionada a título executivo extrajudicial firmado entre as partes, o Termo de Confissão de Dívida datado de 28 de abril de 2014, matéria que teria competência exclusiva do Poder Judiciário no processo judicial nº 019450-91.2020.8.19.0001, em trâmite na Comarca do Rio de Janeiro.
+A controvérsia inaugurada nos autos da Reclamação Administrativa nº 53500.013107/2015-38 confere à Anatel dever de atuação, conforme estabelecido pela LGT para arbitrar as condições para interconexão, mediante provocação de um interessado:
+LGT
+"Art. 153. As condições para a interconexão de redes serão objeto de livre negociação entre os interessados, mediante acordo, observado o disposto nesta Lei e nos termos da regulamentação.
+§ 1° O acordo será formalizado por contrato, cuja eficácia dependerá de homologação pela Agência, arquivando-se uma de suas vias na Biblioteca para consulta por qualquer interessado.
+§ 2° Não havendo acordo entre os interessados, a Agência, por provocação de um deles, arbitrará as condições para a interconexão." [destaquei].
+Quanto ao ponto, a LGT estabelece a obrigatoriedade de conexão entre as redes, cabendo à Anatel adoção de medidas necessárias para o atendimento do interesse público:
+LGT
+"Art. 19. À Agência compete adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento das telecomunicações brasileiras, atuando com independência, imparcialidade, legalidade, impessoalidade e publicidade, e especialmente: (...) 
+XIV - expedir normas e padrões que assegurem a compatibilidade, a operação integrada e a interconexão entre as redes, abrangendo inclusive os equipamentos terminais; (...) 
+Art. 145. A implantação e o funcionamento de redes de telecomunicações destinadas a dar suporte à prestação de serviços de interesse coletivo, no regime público ou privado, observarão o disposto neste Título. 
+Art. 146. As redes serão organizadas como vias integradas de livre circulação, nos termos seguintes: 
+I - é obrigatória a interconexão entre as redes, na forma da regulamentação; 
+II - deverá ser assegurada a operação integrada das redes, em âmbito nacional e internacional; 
+III - o direito de propriedade sobre as redes é condicionado pelo dever de cumprimento de sua função social. 
+Parágrafo único. Interconexão é a ligação entre redes de telecomunicações funcionalmente compatíveis, de modo que os usuários de serviços de uma das redes possam comunicar-se com usuários de serviços de outra ou acessar serviços nela disponíveis.
+Art. 147. É obrigatória a interconexão às redes de telecomunicações a que se refere o art. 145 desta Lei, solicitada por prestadora de serviço no regime privado, nos termos da regulamentação. 
+Art. 148. É livre a interconexão entre redes de suporte à prestação de serviços de telecomunicações no regime privado, observada a regulamentação. 
+Art. 149. A regulamentação estabelecerá as hipóteses e condições de interconexão a redes internacionais. 
+Art. 150. A implantação, o funcionamento e a interconexão das redes obedecerão à regulamentação editada pela Agência, assegurando a compatibilidade das redes das diferentes prestadoras, visando à sua harmonização em âmbito nacional e internacional." (grifos não constam do original)
+A Recorrente cita em seu Recurso que por meio do Instrumento Particular de Transação, Confissão de Dívida, Quitação de Valores e Outras Avenças (SEI nº 9862305) firmado entre TRANSIT e GRUPO OI, anexado à sua Defesa inicial (SEI nº 9862300), quaisquer disputas administrativas e regulatórias, incluindo as obrigações derivadas da RA nº 53500.013107/2015-38 estariam extintas. Destacou que o GRUPO OI teria reconhecido "expressamente ampla, total, geral, irrestrita e irrevogável quitação a essas obrigações" (SEI nº 13090878).
+Debrucei-me sobre o Instrumento de Confissão de Dívida (SEI nº 9862305) e faço as seguintes considerações. Nesse documento a TRANSIT confessa, declara e reconhece dívidas à OI (item 1.1.1) no montante de R$ 1.568.103,02 (um milhão, quinhentos e sessenta e oito mil cento e três reais e dois centavos) (item 3.1). Em seu objeto, as partes estabelecem a extinção de disputas administrativas e/ou negociais entre as partes.
+Primeiramente, o reconhecimento da TRANSIT de pendência de pagamentos à OI relacionados ao DETRAF evidencia a obtenção de vantagens econômicas com a retenção indevida de receitas de interconexão, restando à ANATEL dever de atuar devido a sua competência legal de garantir a interconexão obrigatória de redes. Nesse sentido, a PFE/Anatel alegou que a Agência é competente para arbitrar as condições relativas à interconexão, no Parecer nº 289/2024/PFE-ANATEL/PGF/AGU (SEI nº 12114675), ao afirmar que "não procede a tentativa de afastar os indícios de infração sob a alegação de que a Agência não teria competência para atuar sobre a matéria, uma vez que as partes teriam celebração transação extrajudicial."
+O argumento da Recorrente já foi analisado pelo Colegiado nos autos da RA nº 53500.013107/2015-38, que originou o presente PADO. Importa esclarecer que na ocasião, a alegação de que não caberia à Anatel interferir na disputa, tendo em vista a celebração entre as partes de Termo de Confissão de Dívida, foi afastada pelo Conselho.
+Os precedentes quanto ao tema são consistentes. Nesse sentido, transcrevo decisões nos quais o Colegiado tanto em processos de Reclamação Administrativa como em PADOs afirmou de forma inequívoca que cabe à ANATEL determinar o ressarcimento e instaurar procedimento sancionatório em caso de ausência da devida remuneração de rede de terceiro:
+Acórdão nº 634 (SEI nº 5034383), de 16 de dezembro de 2019
+"Processo nº 53500.013107/2015-38
+Recorrente/Interessado: TRANSIT DO BRASIL S.A.
+CNPJ nº 02.868.267/0001-20
+Conselheiro Relator: Moisés Queiroz Moreira
+Fórum Deliberativo: Reunião nº 880, de 12 de dezembro de 2019
+EMENTA
+RECLAMAÇÃO ADMINISTRATIVA. RECURSO ADMINISTRATIVO. RETENÇÃO DE RECEITAS DEVIDAS A TÍTULO DE INTERCONEXÃO. INADIMPLEMENTO RECORRENTE. MANUTENÇÃO DO DESPACHO RECORRIDO. CONHECIMENTO. NÃO PROVIMENTO.
+1. Determinação de pagamento dos valores devidos a título de interconexão.
+2. Competência da Anatel para determinar o pagamento de valores. Precedentes deste Conselho Diretor.
+3. A despeito da obrigatoriedade da interconexão, a contraprestação monetária é devida, podendo ensejar a autorização, pela Agência, do bloqueio das rotas de interconexão.
+4. Atendimento aos requisitos de admissibilidade do Recurso Administrativo interposto. Conhecimento.
+5. Argumentos da Recorrente não foram capazes de promover a reforma da decisão recorrida. Não provimento.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 181/2019/MM (SEI nº 4964601), integrante deste acórdão, conhecer do Recurso Administrativo interposto por TRANSIT DO BRASIL S.A. para, no mérito, negar-lhe provimento, mantendo a decisão exarada nos termos do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 3125869), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 3321767).
+Participaram da deliberação o Presidente Leonardo Euler de Morais e os Conselheiros Emmanoel Campelo de Souza Pereira, Moisés Queiroz Moreira e Vicente Bandeira de Aquino Neto."
+................................
+Acórdão nº 40 (SEI nº 2367474), de 30 de janeiro de 2018
+"Processo nº 53500.007007/2014-91
+Recorrente/Interessado: TRANSIT DO BRASIL S.A.
+CNPJ/MF nº 02.868.267/0001-20
+Conselheiro Relator: Otavio Luiz Rodrigues Junior
+Fórum Deliberativo: Reunião nº 842, de 18 de janeiro de 2018
+EMENTA
+RECURSO ADMINISTRATIVO. DESCUMPRIMENTO DE DETERMINAÇÕES DA ANATEL. INSTAURAÇÃO DESTE PROCESSO SANCIONATÓRIO. AUSÊNCIA DE NULIDADE. RETIFICAÇÃO DO ATO INSTAURADOR. POSSIBILIDADE. COMPETÊNCIA DA ANATEL PARA ARBITRAR VALORES DEVIDOS. EFETIVIDADE ÀS CONDIÇÕES PARA INTERCONEXÃO. INTELIGÊNCIA DO ART. 153, § 2º, DA LGT. INFRAÇÕES CARACTERIZADAS. SANCIONAMENTO PROPORCIONAL E RAZOÁVEL. METODOLOGIA ALTERNATIVA. POSSIBILIDADE. INTELIGÊNCIA DO ART. 18, § 4º, DO RASA/2012. CARACTERIZAÇÃO DE MÁ-FÉ. INFRAÇÃO GRAVE. MULTA. ANTECEDENTES. REFORMA DE OFÍCIO DO VALOR DA MULTA. AUSÊNCIA DE CIRCUNSTÂNCIA ATENUANTE. REFORMATIO IN MELIUS. DETERMINAÇÃO AO SUPERINTENDENTE EXECUTIVO. RECURSO CONHECIDO E NÃO PROVIDO.
+1. Recurso Administrativo interposto em face do Despacho Decisório nº 199/2016-COGE6/COGE/SCO, de 22 de fevereiro de 2016, por meio do qual o Superintendente de Controle de Obrigações (SCO) aplicou a sanção de multa no valor de R$ 4.134.755,25 (quatro milhões, cento e trinta e quatro mil, setecentos e cinquenta e cinco reais e vinte e cinco centavos) por descumprimento dos itens "D" e "E" do Despacho nº 4.521/2012/PBQIO/PBQI/SPB, de 5 de julho de 2012, proferido nos autos da Reclamação Administrativa nº 53500.020013/2009, e do item "B" do Despacho nº 6.814/2012/PBQIO/PBQI/SPB, de 8 de novembro de 2012, proferido nos autos da Reclamação Administrativa nº 53500.001520/2010, por meio dos quais a Anatel determinou o pagamento de valores de remuneração de rede fixa e móvel devidos pela TRANSIT DO BRASIL LTDA. à TELEFÔNICA DO BRASIL S.A.
+[...]
+3. A Anatel é competente para arbitrar e determinar o pagamento de valores devidos por uma prestadora à outra, em atendimento ao disposto no art. 153, § 2º, da Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT).
+[...]
+10. Recurso Administrativo conhecido e não provido.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 13/2018/SEI/OR (SEI nº 2301767), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, negar-lhe provimento; e,
+b) reformar, de ofício, o Despacho Decisório nº 199/2016-COGE6/COGE/SCO, de 22 de fevereiro de 2016, a fim de se reduzir a sanção de multa de R$ 4.134.755,25 (quatro milhões, cento e trinta e quatro mil, setecentos e cinquenta e cinco reais e vinte e cinco centavos) para R$ 4.117.669,49 (quatro milhões, cento e dezessete mil, seiscentos e sessenta e nove reais e quarenta e nove centavos), em virtude de retificação da quantidade de antecedentes considerados no sancionamento de primeira instância.
+Participaram da deliberação o Presidente Juarez Quadros do Nascimento e os Conselheiros Anibal Diniz, Otavio Luiz Rodrigues Junior, Leonardo Euler de Morais e Emmanoel Campelo de Souza Pereira." [grifei]
+A interconexão entre redes de telecomunicações constitui matéria expressamente disciplinada pela LGT, em especial em seus arts. 145 a 150, complementados pelos arts. 152 e 157. Essa previsão normativa busca assegurar objetivos estruturantes do setor, como a promoção da competição, a interoperabilidade e compatibilidade entre redes, bem como a continuidade e universalização dos serviços de telecomunicações.
+Embora os valores de remuneração de interconexão sejam, em regra, definidos por meio de livre negociação entre as prestadoras, a matéria não se esgota na esfera estritamente privada. A legislação setorial confere à Agência competência para atuar quando provocada por uma das partes, exercendo função conciliatória e regulatória destinada a solucionar conflitos e preservar o adequado funcionamento do mercado. Nesses casos, as decisões administrativas proferidas pela Anatel assumem natureza vinculante, impondo às prestadoras o dever de observância das condições e valores estabelecidos.
+A competência da Agência para determinar o ressarcimento dos valores de interconexão indevidamente retidos, bem como para instaurar processo sancionatório diante de tal conduta, encontra amparo no ordenamento jurídico e respaldo em precedentes deste Colegiado, razão pela qual rejeito o argumento apresentado pela Recorrente.
+I.b.2 - Da suposta extinção da controvérsia administrativa
+A Recorrente afirmou que, em 22 de setembro de 2015, foi celebrado Instrumento Particular de Transação entre as partes, por meio do qual foram expressamente extintas eventuais controvérsias administrativas e regulatórias, inclusive aquelas relacionadas às obrigações decorrentes da RA nº 53500.013107/2015-38. Portanto, a seu ver, a obrigação contida naquele procedimento administrativo restaria cumprida na esfera administrativa.
+Esclareço que apesar do Instrumento Particular de Transação celebrado entre as partes com a finalidade de encerrar a controvérsia relacionada à retenção de valores de interconexão pela TRANSIT referente ao período de janeiro de 2014 à abril de 2015, em 8 de fevereiro de 2022, a OI S.A. protocolizou na Agência, correspondência (SEI nº 8028466), na qual informou que a empresa permanecia sem adimplir com o débito constantes na RA nº 53500.013107/2015-38.
+Pois bem. Apesar do reconhecimento por parte da Recorrente da dívida, observa-se sua recusa reiterada em cumprir sua obrigação, evidenciando-se a obtenção de vantagens econômicas com a retenção indevida de receitas. Como já analisado na subseção anterior, a Agência tem o dever legal de atuação de modo a garantir o interesse público na prestação dos serviços de telecomunicações, assegurando a competição ampla e justa e garantir a prestação adequada dos serviços. A alegação da Recorrente não deve prosperar.
+I.b.3 - Da suposta não caracterização da má-fé da TRANSIT pela Anatel
+A Recorrente sustentou que a Anatel não teria demonstrado de forma objetiva a existência de dolo ou de conduta deliberada por parte da TRANSIT no descumprimento de suas obrigações, razão pela qual a má-fé seria observada.
+Segundo o RASA, a má-fé é caracterizada pelo descumprimento deliberado de leis, regulamentos, súmulas, contratos, termos e atos da Agência: 
+RASA
+"Art. 7º Considera-se má-fé os seguintes comportamentos:
+I- descumprir deliberadamente as disposições de leis, regulamentos, súmulas, contratos, termos e atos da Agência;" [Destacou-se]
+No Informe nº 369/2024/COGE/SCO (SEI nº 12325614), a área técnica argumentou que a prestadora, de forma reiterada, reteve indevidamente receitas de interconexão devidas ao GRUPO OI, em desrespeito à regulamentação vigente e às determinações expressas da Agência constantes do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749). Complementou ainda que o histórico da empresa evidencia prática contumaz de inadimplemento perante diversas prestadoras, objeto inclusive de outros processos administrativos sancionadores:
+ Informe nº 369/2024/COGE/SCO (SEI nº 12325614)
+"4.5. Inicialmente, há de se considerar que a empresa age com má-fé ao, reiteradamente, reter indevidamente receitas decorrentes da remuneração pelo uso de rede da OI, obrigação não apenas prevista de forma clara na legislação mas, sobretudo, objeto de determinação específica da Anatel no bojo de Reclamação Administrativa envolvendo a própria empresa, bem como o descumprimento deliberado das determinações dos itens (II); (III); (IV); (V) e (VIII) do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 3125869), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 3321767).
+4.6. Ademais, ao se analisar o histórico do comportamento da Prestadora em face de várias outras prestadoras de telecomunicações (o que deu origem à instauração de diversos procedimentos administrativos - confira-se, por exemplo, o Pado nº 53500.003484/2013-05), verifica-se que a empresa tem optado por descumprir deliberadamente suas obrigações referentes à interconexão.
+4.7. Ressalte-se, por oportuno, que nos autos do processo 53500.026536/2021-13, que trata de infração similar cometida pela empresa, a Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) opinou, por meio do Parecer nº 487/2023/PFE-ANATEL/PGF/AGU (SEI nº 10917023), pela configuração da má-fé da prestadora interessada.
+4.8. Ao mesmo tempo em que se valeu da regulamentação e das decisões da Anatel para utilizar as redes de telecomunicações de outras empresas e, com isso, obter lucros financeiros, a empresa recusou-se a observar a mesma regulamentação e as mesmas decisões da Anatel relativas à remuneração pelo uso destas redes.
+4.9. Ou seja, a empresa busca obter vantagens, de maneira irregular, por meio de comportamento indevido e contumaz: usufruir dos bônus das regras referentes à interconexão, mas sem se sujeitar aos ônus remuneratórios impostos."
+A caracterização de má-fé transcrita acima foi considerada devidamente motivada pela PFE/Anatel (SEI nº 14463870, item 36).
+Acompanho integralmente as conclusões apresentadas pela área técnica, porquanto os elementos constantes dos autos, tanto no presente PADO quanto na RA nº 53500.013107/2015-38, evidenciam comportamento reiterado da Recorrente consistente na inobservância de regulamentos e atos decisórios expedidos pela Agência. Verifico a existência de conjunto probatório robusto apto a demonstrar o inadimplemento das obrigações relacionadas ao adequado repasse das receitas de interconexão. Nesse sentido, destaco o Instrumento Particular firmado entre as partes, por meio do qual a TRANSIT reconhece expressamente a dívida constituída perante o GRUPO OI, circunstância que reforça a materialidade da má-fé.
+Ademais, restou igualmente caracterizado o não atendimento às determinações impostas por esta Agência nos termos do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 3125869), evidenciando resistência injustificada ao cumprimento de determinações de Atos da Agência.
+Nesse contexto, a tipificação de má-fé foi correta.
+I.b.4 - Da alegada má-fé do GRUPO OI
+A Recorrente aduziu que o GRUPO OI, na Reclamação Administrativa nº 53500.013107/2015-38, ao acionar a Anatel, em 22 de setembro de 2020, teria omitido deliberadamente fatos relevantes à adequada análise do caso, notadamente o Acordo Extrajudicial que teria extinguido expressamente as obrigações administrativas e regulatórias entre as partes, bem como a existência do processo judicial nº 019450-91.2020.8.19.0001. Tal omissão configuraria a má-fé do Grupo.
+Diante da recusa deliberada em atender dispositivos legais e regulatórios face ao caso concreto, restou à OI recorrer à Agência visando a resolução definitiva do impasse para recebimento legítimo dos valores de interconexão retidos pela Recorrente. 
+Como extensivamente analisado acima, a Agência é competente para arbitrar e determinar o pagamento de valores devidos por uma prestadora à outra, em atendimento ao disposto no § 2º do art. 153 da LGT. Deve-se, portanto, rejeitar o argumento da Recorrente.
+I.b.5 - Da suposta inaplicabilidade da taxa SELIC
+A Recorrente alegou que a multa pecuniária imposta teria sido calculada de forma inadequada, em razão da incidência da taxa SELIC para atualização de seu valor, em violação ao princípio da legalidade.
+A aplicação da taxa SELIC encontra fundamento no art. 37-A da Lei nº 10.522, de 19 de julho de 2002, incluído pela Lei nº 11.941, de 27 de maio de 2009, no qual se estabelece que créditos de autarquias e fundações públicas federais deverão ser ter seus valores atualizados:
+Lei nº 10.522, de 19 de julho de 2002
+"Art. 37-A. Os créditos das autarquias e fundações públicas federais, de qualquer natureza, não pagos nos prazos previstos na legislação, serão acrescidos de juros e multa de mora, calculados nos termos e na forma da legislação aplicável aos tributos federais. (Incluído pela Lei nº 11.941, de 2009)
+§ 1o Os créditos inscritos em Dívida Ativa serão acrescidos de encargo legal, substitutivo da condenação do devedor em honorários advocatícios, calculado nos termos e na forma da legislação aplicável à Dívida Ativa da União. (Incluído pela Lei nº 11.941, de 2009)"
+A utilização da SELIC como taxa para correção monetária encontra amparo no §1º do art. 34 do RASA, inexistindo previsão normativa que autorize a adoção de índice diverso:
+RASA
+"Art. 34. Após o julgamento final do processo administrativo, o pagamento da multa deve ser efetuado no prazo de 30 (trinta) dias contados da intimação da decisão definitiva.
+§ 1º Tendo sido negado provimento ou seguimento ao recurso administrativo ou ao pedido de reconsideração o valor da multa a ser paga deve sofrer correção segundo a Taxa Referencial do Sistema Especial de Liquidação e Custódia (Selic) ou de outro índice que vier a substituí-lo, conforme a legislação em vigor, desde a data da intimação da cominação da multa até a data de intimação da decisão definitiva."
+Quanto aos créditos da Fazenda Pública de natureza não tributária, o art. 3º da Emenda Constitucional nº 113, de 08 de dezembro de 2021, estabelece que "nas discussões e nas condenações que envolvam a Fazenda Pública, independentemente de sua natureza e para fins de atualização monetária, de remuneração do capital e de compensação da mora, inclusive do precatório, haverá a incidência, uma única vez, até o efetivo pagamento, do índice da taxa referencial do Sistema Especial de Liquidação e de Custódia (Selic), acumulado mensalmente". 
+Concluo, portanto, que a aplicação da taxa SELIC como índice de atualização no presente PADO revela-se adequada. Não deve prosperar, portanto a alegação de afronta ao princípio da legalidade, mas, ao contrário, a utilização dessa taxa assegura sua plena observância.
+I.b.6 - Da suposta desproporcionalidade da sanção
+A Recorrente alegou incompatibilidade do valor da multa pecuniária aplicada, fixada em R$ 115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos), alegando desproporcionalidade em relação aos fatos apurados.
+No caso concreto, verificou-se a ocorrência de infrações ao art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC e por descumprir as determinações contidas nos itens II, III, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), razão pela qual considero apropriada a aplicação da Metodologia de Descumprimento de Obrigações Contratuais. 
+Quanto ao ponto cito o Decreto-Lei nº 4.657, de 1942, que estabelece:
+Decreto-Lei nº 4.657, de 1942:
+"Art. 20. Nas esferas administrativa, controladora e judicial, não se decidirá com base em valores jurídicos abstratos sem que sejam consideradas as consequências práticas da decisão.
+Parágrafo único. A motivação demonstrará a necessidade e a adequação da medida imposta ou da invalidação de ato, contrato, ajuste, processo ou norma administrativa, inclusive em face das possíveis alternativas."
+Pela leitura dos autos, verifiquei que o presente PADO foi regularmente instruído, assegurando a produção de elementos probatórios. O sancionamento se amparou em critérios objetivos, inexistindo inovação interpretativa. A materialidade da infração restou devidamente demonstrada ao longo da instrução processual, mediante análise técnica circunstanciada. 
+Concluo pela improcedência da alegação relativa à falta de proporcionalidade da multa. 
+II - DA SANÇÃO
+II.a - Da decisão de primeira instância
+Diante do afastamento das razões recursais, passo a analisar o sancionamento de multa aplicado ao presente PADO por violação ao art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do STFC e, ainda, ás determinações contidas no Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), retificado pelo Despacho Decisório nº 234/2018/SEI/CPRP/SCP (SEI nº 7346758), o que também caracteriza infração ao § 2º do art. 16 do RASA. 
+Quanto a natureza das infrações, o Regulamento de Aplicação de Sanções apresenta as seguintes classificações:
+Art. 7º Considera-se má-fé os seguintes comportamentos:
+I - descumprir deliberadamente as disposições de leis, regulamentos, súmulas, contratos, termos e atos da Agência;
+(...)
+Art. 9º. As infrações são classificadas, segundo sua natureza e gravidade, em:
+I - leve;
+II - média; e
+III - grave.
+§ 1º. [...].
+§ 2º. [...].
+§ 3º. A infração deve ser considerada grave quando verificada uma das seguintes hipóteses:
+I - vantagem direta ao infrator em decorrência da infração cometida; (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - má-fé; (Redação dada pela Resolução nº 746, de 22 de junho de 2021);
+Segundo avaliação da área técnica, a conduta deve ser considerada de natureza grave, em razão da má-fé e da obtenção de vantagem auferida, devendo ser aplicada a sanção de multa (SEI nº 11514587, item 3.41). 
+A meu ver, essa classificação não merece reparos, vez que a retenção de receitas de interconexão resultou em vantagem econômica indevida pela Recorrente. Adicionalmente, a má-fé foi evidenciada pelo descumprimento deliberado de decisão da Agência, conforme termos do inciso I do art. 7º c/c os incisos I e II, § 3º do art. 9º do RASA. 
+O porte econômico da prestadora foi classificado como MICRO ou Grupo 5, em que a receita operacional líquida (ROL) anual, é igual ou inferior a R$ 1.199.999,00 (um milhão, cento e noventa e nove mil novecentos e noventa e nove reais). Essa classificação se baseou no relatório de SEI nº 11516547 que possui dados da ROL da Recorrente referente ao ano de 2023. O porte econômico da uma empresa, determinada na Agência por meio da receita operacional líquida, é medida utilizada para atendimento ao §1º do art. 179 da LGT, no qual se determina que quando da aplicação da multa deve-se levar em consideração a condição econômica do infrator e ao princípio da proporcionalidade entre a gravidade da falta e a intensidade da sanção
+A decisão de primeira instância fundamentou-se no Informe nº 369/2024/COGE/SCO (SEI nº 12325614), no qual se adotou a Metodologia de Descumprimento de Obrigações Contratuais e a Metodologia de Descumprimento de Determinação da Anatel, determinou-se a multa para o descumprimento de obrigações de interconexão (art. 152 da LGT c/c art. 3° do Regulamento de Remuneração pelo Uso de Redes - STFC):
+Metodologia de Descumprimento de Obrigações Contratuais
+ VBásico = Vfixo + (VRef)β* 1/FG
+ | 
+Onde:
+• VBásico= Valor de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa;
+• Vfixo = Valor fixo por infração, equivalente a R$ 500,00;
+• VRef = Valor correspondente à Receita Operacional Líquida (ROL) da prestadora;
+• β = Fator de Ponderação do VRef , equivalente a 0,5;
+• FG = Fator de Ponderação da Gravidade, podendo ser igual a 1, 2 e 5, para as infrações consideradas Leve, Média ou Grave, respectivamente.
+A área técnica utilizou os valores de interconexão retidos pela TRANSIT, aplicou atualização monetária e considerou os valores como vantagem auferida:
+"3.70. Conforme narrado pela OI em manifestação de 02/05/2020, o débito da TRANSIT por inadimplência estava acumulado o R$ 1.932.326,69 (um milhão e novecentos e trinta e dois mil e trezentos e vinte e seis reais e sessenta e nove centavos), referente à determinação constante do subitem (i) do item III do Despacho nº 175/2018/SEI/CPRP/SCP e R$ 10.385,96 (dez mil e trezentos e oitenta e cinco reais e noventa e seis reais) quanto à determinação constante do subitem (ii) do item III do Despacho nº 175/2018/SEI/CPRP/SCP, totalizando R$ 1.942.712,65 (um milhão, novecentos e quarenta e dois mil setecentos e doze reais e sessenta e cinco centavos). 
+3.71. Não consta nos autos a celebração de Termo de Quitação Mútua de Valores entre a TRANSIT e a OI. E como dito resta inconteste a obtenção indevida de vantagem financeira pela TRANSIT ao não realizar o devido ressarcimento à OI.
+3.72. O montante do débito trazido aos autos em 02/05/2020 será utilizado para o cálculo do valor da multa com base na vantagem obtida que seria granjeada no caso de investimento do valor no mercado com retorno pela taxa Selic, a contar da data apresentada pela OI, até o último dia do mês anterior à quitação do valor devido ou, quando isto não houver ocorrido, ao do cálculo da multa.
+3.73. Para o cálculo do valor da multa, com base na vantagem auferida, primeiro será feita a correção pela taxa SELIC, do valor apresentado pela OI, utilizando-se da calculadora do Banco Central do Brasil na internet em 19/02/2024 às 11h15m, disponível em https://www3.bcb.gov.br/CALCIDADAO/publico/corrigirPelaSelic.do?method=corrigirPelaSelic,
+3.74. Nesses termos, tem-se o valor atualizado de R$ 2.638.534,37 (dois milhões, seiscentos e trinta e oito mil quinhentos e trinta e quatro reais e trinta e sete centavos) - SEI nº 11525526. A diferença, portanto, entre o valor original e o atualizado é de R$ 695.821,72 (seiscentos e noventa e cinco mil oitocentos e vinte e um reais e setenta e dois centavos), que remonta à vantagem auferida."
+Verifico que a área técnica apurou o montante de R$ 695.821,72 (seiscentos e noventa e cinco mil, oitocentos e vinte e um reais e setenta e dois centavos), correspondendo à atualização monetária obtida pela retenção dos valores de interconexão. Sobre esse valor, calculou-se o dobro da vantagem como multa, com base no disposto no § 2º do art. 18 do RASA, segundo o qual o valor-base da multa não pode ser inferior ao dobro da vantagem obtida. Assim, tomando-se como referência o dobro da vantagem auferida, chegou-se ao montante de R$ 1.391.643,44 (um milhão, trezentos e noventa e um mil seiscentos e quarenta e três reais e quarenta e quatro centavos), ao qual se acrescem os antecedentes e a agravante de má-fé, nos termos dos incisos II, III e IV do art. 19 do mesmo regulamento. Com a incidência desses acréscimos, a multa totalizou R$ 1.809.136,47 (um milhão, oitocentos e nove mil, cento e trinta e seis reais e quarenta e sete centavos).
+ Valor devido pela TRANSIT à OI
+ | 
+ R$ 1.942.712,65
+ | 
+ Valor Corrigido – Taxa SELIC
+ | 
+ R$ 2.638.534,37
+ | 
+ Diferença (Vantagem Auferida)
+ | 
+ R$ 695.821,72
+ | 
+ art. 18, § 2º X 2
+ | 
+ R$ 1.391.643,44
+ | 
+ Agravantes art.19, II, III e IV - ( 30%)
+ | 
+ R$ 417.493,03
+ | 
+ TOTAL
+ | 
+ R$ 1.809.136,47
+ | 
+Informe nº 369/2024/COGE/SCO (SEI nº 12325614)
+Noto que, em observância ao Parecer nº 86/2023/PFE-ANATEL/PGF/AGU (SEI nº 9952480), nos autos do Pado nº 53500.002329/2020-92, a área técnica aplicou o limite máximo para infração grave de R$ 110.000,00 (cento e dez mil reais):
+Parecer nº 86/2023/PFE-ANATEL/PGF/AGU (SEI nº 9952480)
+(...)
+"43. Entretanto, este órgão jurídico discorda do afastamento do limite máximo da multa aplicável à infratora em razão do seu porte, ao considerar a Receita Operacional Líquida - ROL de conhecimento da Agência. Como se observa da transcrição acima, a última ROL identificada pela Agência refere-se ao ano de 2020, (...). De acordo com as tabelas constantes do Anexo ao RASA, essa ROL qualifica a prestadora, de acordo com o seu porte, em "Micro", tendo como limites mínimo e máximo de multa para infração grave os valores de R$ 440,00 e R$ 110.000,00, respectivamente.
+44. É importante ressaltar que, embora o RASA tenha estipulado que o valor base da multa nunca deva ser inferior ao dobro da vantagem auferida (art. 18, § 2º), o mesmo regulamento impôs limites mínimos e máximos para a aplicação de multas em função do porte da empresa infratora. Os correspondentes parâmetros (máximos e mínimos) para a fixação de multas foram estabelecidos em cinco faixas diferentes, as quais levaram em consideração a ROL anual da empresa infratora, nos termos da tabela disposta no item 1 do anexo ao RASA.
+45. Assim, esta Procuradoria entende pela impossibilidade de afastamento do limite máximo de multa previsto no Anexo ao RASA. Nada impede, no entanto, que a área técnica diligencie no intuito de investigar a veracidade e atualidade dessa ROL constatada. Para isso, a Agência pode se valer de outros documentos e sistemas para averiguar a correta ROL da prestadora. (...)
+(...)"
+A adoção do limite máximo não constitui medida inédita, tendo sido aplicada em outras ocasiões, a exemplo dos PADO nº 53500.026536/2021-13 e nº 53500.000515/2023-30. Em ambos os casos, o Colegiado deliberou sobre infrações relacionadas à interconexão, nas quais a TRANSIT figurava como empresa infratora, adotando entendimento semelhante quanto à dosimetria da penalidade.
+ Em relação à Metodologia de Descumprimento de Determinações, que também foi utilizada para a decisão de primeira instância, é aplicável no caso de descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), os elementos da fórmula de cálculo da multa são:
+Metodologia de Descumprimento de Determinações
+NO x ROL Mensal x Fator de Gravidade “K” x Fator "T" x (1 - % de Cumprimento)
+Sendo:
+a) NO = Número de ocorrências de descumprimento de determinações apuradas;
+b) ROL Mensal = Resultado Operacional Líquido da prestadora no exercício do descumprimento;
+c) Fator de Gravidade “k” = Diferencia a gravidade da infração em “LEVE”, “MÉDIA” ou “GRAVE”, considerando-se os pesos 0,1%, 0,5% e 1,0%, respectivamente.
+d) Fator T = Variação referente ao tempo do descumprimento, sendo:
+1 a 30 dias = 1,00
+30 a 180 dias = variação linear de 1,00 a 2,00
+180 a 365 dias = variação linear de 2,00 a 3,00
+maior que 365 dias = 3,50
+e) % de Cumprimento = Parte cumprida da determinação sobre o total da determinação.
+Assim como no cálculo de multa referente à descumprimento de obrigações de interconexão, a infração foi classificada como grave no cômputo da sanção de descumprimento de determinações, em razão da má-fé e da obtenção de vantagem indevida.
+Transcrevo a seguir, os parâmetros adotados pela área técnica no cálculo da multa:
+Informe nº 83/2024/COGE/SCO (SEI nº 11514587)
+"3.54. O Fator T deve ser considerado como 3,50 ("maior que 365 dias"), uma vez que a TRANSIT não quitou, até o momento, o débito que deu origem à Reclamação Administrativa do Grupo Oi, e, portanto, permanece descumprindo o Despacho Decisório nº 175/2018. O percentual de cumprimento é de 0%, uma vez que a Superintendência de origem informou que a empresa não cumpriu com nenhuma das obrigações que lhe cabiam, no cumprimento da decisão da Anatel.
+[...]
+3.57. Em relação aos antecedentes, verifica-se do doc. SEI nº 11537921 que constam 234 (duzentos e trinta e quatro reais) registros de sanção em desfavor da prestadora no período de 05 (cinco) anos antes da presente infração, materializada com o envio do Memorando nº 72/2020/CPRP/SCP (cópia SEI nº 7346824), em 16/10/2020, quando se tornou certo o descumprimento, pela TRANSIT, das disposições do Despacho Decisório nº 175/2018. Incide, portanto, o limite de 20% (vinte por cento) previsto no art. 19, I, do Rasa.
+3.58. Por outro lado, não foi identificada reincidência específica para as infrações apuradas no presente Pado.
+3.59. Considerando a incidência de duas hipóteses previstas no art. 9º, § 3º (vantagem auferida e má-fé), a seguir transcrito, deve incidir a agravante prevista no art. 19, III, do Rasa, à razão de 10% (dez por cento).
+[...]
+3.61. A prestadora não apresentou, nos presentes autos, qualquer circunstância [atenuante] que se amolde às hipóteses previstas. "
+Embora inicialmente a COGE tenha contabilizado cinco descumprimentos ao Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749), posteriormente, no Informe nº 369/2024/COGE/SCO (SEI nº 12325614), o número de descumprimentos foi adequadamente retificado. Assim, foram contabilizados quatro descumprimentos, referentes aos itens II, III, IV, V e VII do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749). Nesses itens, exceto o "IV", a Superintendência de Competição estabeleceu determinações para a TRANSIT com vistas a garantir o cumprimento das obrigações contratuais e regulatórias de interconexão por parte da Recorrente, assegurando a adequada remuneração pelo uso de rede e a transparência perante os usuários e o mercado, conforme estabelecido pela Anatel. O tratamento ao item IV da decisão, no qual o cômputo representou erro material da área técnica, será analisada na próxima seção devido a cronologia do cálculo dos descumprimentos. 
+Portanto, utilizando a Metodologia de Descumprimento de Obrigações Contratuais e a Metodologia de Descumprimento de Determinação da Anatel, determinou-se a multa para o descumprimento de obrigações de interconexão (art. 152 da LGT c/c art. 3° do Regulamento de Remuneração pelo Uso de Redes - STFC) no valor de R$ 1.809.136,47 (um milhão, oitocentos e nove mil cento e trinta e seis reais e quarenta e sete centavos), limitado ao teto de R$ 110.000,00 (cento e dez mil reais). O montante para a descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 7346749) totalizou R$ 5.884,63 (cinco mil oitocentos e oitenta e quatro reais e sessenta e três centavos). Em decisão de primeira instância, por meio do Despacho Decisório nº 40/2024/COGE/SCO (SEI nº 11514611), a SCO estabeleceu sancionamento de multa no valor de R$115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos), fundamentado pelo Informe nº 369/2024/COGE/SCO (SEI nº 12325614).
+ Conduta
+ | 
+ Enquadramento
+ | 
+ Natureza
+ | 
+ Agrav.
+ | 
+ Aten.
+ | 
+ Reinc. Espec
+ | 
+ Vant. Auf.
+ | 
+ CI
+ | 
+ MULTA
+ | 
+ Descumprimento de obrigações de interconexão
+ | 
+ art. 152 da LGT c/c art. 3º do Regulamento de Remuneração pelo Uso de Redes - STFC (Res. 588/2012)
+ | 
+ Grave
+ | 
+ 30%
+ | 
+ 0%
+ | 
+ Não
+ | 
+ Sim
+ | 
+ Não
+ | 
+ R$ 110.000,00 (teto)
+ | 
+ Descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018, retificado pelo Despacho Decisório nº 234/2018
+ | 
+ Despacho Decisório nº 175/2018
+ | 
+ Grave
+ | 
+ 30%
+ | 
+ 0%
+ | 
+ 0%
+ | 
+ Não
+ | 
+ Não
+ | 
+ R$ 5.884,63
+ | 
+ TOTAL
+ | 
+ R$ 115.884,63
+ | 
+Informe nº 369/2024/COGE/SCO (SEI nº 12325614)
+II.b - Dos ajustes no cálculo da multa
+Posteriormente, conforme descrevi no Relatório da presente Análise, o cálculo do sancionamento passou por ajustes advindos de recomendações da PFE/Anatel:
+Parecer nº 00328/2025/PFE-ANATEL/PGF/AGU (SEI nº 14463870)
+"a) pela possibilidade de agravamento da sanção administrativa pela Superintendente de Controle de Obrigações, visto que foram observados os requisitos do art. 64, parágrafo único, da Lei nº 9.784/1999 e do art. 125, parágrafos 1º e 4º, do Regimento Interno;
+b) por recomendar a revisão do recálculo da sanção pelo descumprimento das determinações contidas no Despacho Decisório nº 175/2018, apresentado na Planilha de cálculo SEI nº 13514852, a fim de se excluir a agravante por reincidências específicas, ajustar o valor considerado como antecedentes de 11% (onze por cento) para 13% (treze por cento), ante a desconsideração dos 2 (dois) casos de reincidências, e corrigir o fator “NO”, para se considerar o valor “4”, nos termos do Informe nº 369/2024/COGE/SCO;"
+As retificações do ajuste do número de antecedentes, a exclusão por reincidências específicas, correção do Fator "NO" e a contagem do número de descumprimentos do Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 3125869) foram realizadas adequadamente pela área técnica:
+Informe nº 189/2025/COGE/SCO
+"6.3. Nos moldes da Planilha SEI nº 13512667 verifica-se a existência de 13 (treze) antecedentes em desfavor da prestadora, no período de 23/01/2018 a 23/01/2023.
+6.4. A Planilha SEI nº 13512864 demonstra a existência de 02 (duas) reincidências específicas, no mesmo período, caracterizadas nos Processos 53500.022462/2016-89 e 53500.030979/2016-41.
+6.5. Tendo em vista que, nos termos do parágrafo único do art. 10 do Rasa, um mesmo registro de sanção não pode ser simultaneamente classificado como reincidência e antecedente na aplicação da penalidade, o total de antecedentes deve ser ajustado para 11 (onze) registros.
+6.6. Na forma do exposto, devem ser contabilizados como agravantes no cálculo da multa: 11 (onze) antecedentes (11%) e 02 (duas) reincidências específicas (20%).
+6.7. Além disso, o art. 19 do Rasa prevê a incidência de agravante de 10% (dez por cento) pela incidência de cada uma das hipóteses previstas no § 3º do art. 9º do Rasa, a partir da segunda ocorrência, até o limite de 40% (quarenta por cento). Isto porque a primeira ocorrência das hipóteses previstas no referido dispositivo do Rasa é considerada na classificação da infração como leve, média ou grave, sendo indevida a sua dupla valoração.
+6.8. No caso em exame, verifica-se a incidência de duas hipóteses previstas no art. 9º, § 3º: obtenção de vantagem direta (inciso I) e má-fé (inciso II). Assim, deve incidir a agravante prevista no art. 19, III, à razão de 10% (dez por cento)."
+.....................................
+Informe nº 1132/2025/COGE/SCO (SEI nº 14788642)
+"4.6. Desta maneira, e de acordo com o sugerido no retro mencionado Parecer, a este valor deverá ser excluída a agravante por reincidências específicas, ajustada o valor considerado como antecedentes de 11% (onze por cento) para 13% (treze por cento), ante a desconsideração dos 2 (dois) casos de reincidências, e corrigido o fator “NO”, para se considerar o valor “4”, conforme constava no item 4.15 do Informe nº 369/2024/COGE/SCO (SEI nº 12325614), que subsidiou a sanção aplicada em primeira instância.
+4.7. Feitas os ajustes devidos, o valor atualizado da multa imposta pelo descumprimento da determinação, restou da seguinte forma, nos termos da nova Planilha de Cálculo (SEI nº 14789474):
+ Conduta
+ | 
+ Enquadramento
+ | 
+ Natureza
+ | 
+ Art.19 III, Rasa
+ | 
+ Atenuante
+ | 
+ Antecedentes/
+ Reincidência
+ | 
+ Vantagem Auferida
+ | 
+ MULTA
+ | 
+ Descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018
+ | 
+ Despacho Decisório nº 175/2018
+ | 
+ Grave
+ | 
+ 10%
+ | 
+ 0%
+ | 
+ 13%
+ | 
+ Não
+ | 
+ R$ 4.615,61
+ | 
+No cálculo pelo descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018/SEI/CPRP/SCP (SEI nº 3125869), esclareço que também se observa vantagem auferida devido a má-fé de descumprimento deliberado de decisão da Agência como a obtenção de vantagem direta, decorrente da retenção de valores de interconexão. Portanto, a incidência de 10% no valor da multa, considerando o inciso III do art. 19 do RASA é adequada e já foi aplicada pela área técnica, na tabela acima. Noto, contudo, que no campo "Vantagem Auferida", consta a referência "Não", quando o correto seria a classificação "Sim". Portanto, realizarei a devida retificação, que não altera os valores aplicados na sanção em análise. 
+Pelas razões acima, proponho o conhecimento do Recurso Administrativo para, no mérito, negar-lhe provimento, no total de R$ 114.823,79 (cento e quatorze mil, oitocentos e vinte e três reais e setenta e nove centavos), conforme exponho na tabela abaixo:
+ Conduta
+ | 
+ Enquadramento
+ | 
+ Natureza
+ | 
+ Art.19 III, Rasa
+ | 
+ Atenuante
+ | 
+ Antecedentes/
+ Reincidência
+ | 
+ Vantagem Auferida
+ | 
+ MULTA
+ | 
+ Remuneração de Rede
+ | 
+ art. 152 da LGT; art. 3° do Regulamento de Remuneração pelo Uso de Redes - STFC (Res. 588/2012)
+ | 
+ Grave
+ | 
+ 10%
+ | 
+ 0%
+ | 
+ 31%
+ | 
+ SIM
+ | 
+ R$ 110.000,00
+ | 
+ Descumprimento de determinações impostas pelo Despacho Decisório nº 175/2018
+ | 
+ Despacho Decisório nº 175/2018
+ | 
+ Grave
+ | 
+ 10%
+ | 
+ 0%
+ | 
+ 13%
+ | 
+ SIM
+ | 
+ R$ 4.615,61
+ | 
+ TOTAL
+ | 
+ R$ 114.615,61
+ | 
+CONCLUSÃO
+Voto por:
+conhecer do recurso administrativo interposto para, no mérito, negar a ele provimento;
+reformar, de ofício, o valor da multa aplicada de R$ 115.884,63 (cento e quinze mil, oitocentos e oitenta e quatro reais e sessenta e três centavos) para R$ 114.615,61 (cento e quatorze mil seiscentos e quinze reais e sessenta e um centavos).
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 12/03/2026, às 17:39, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15216069 e o código CRC 7E1D6C4F.
+ | 
+Referência: Processo nº 53500.063260/2021-54 | 
+SEI nº 15216069 |

@@ -1,0 +1,39 @@
+SEI/ANATEL - 16171468 - Acórdão
+Boletim de Serviço Eletrônico em 26/08/2026
+DOU de 26/08/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 221, de 24 de agosto de 2026
+Processo nº 53524.003364/2017-55
+Recorrente/Interessado: VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A.
+CNPJ nº 05.872.814/0001-30
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 211, de 24 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. BASE DE CÁLCULO. RECEITAS DE INTERCONEXÃO E EXPLORAÇÃO INDUSTRIAL DE LINHA DEDICADA - EILD. MULTA DE OFÍCIO. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A., sucessora por incorporação da ALGAR MULTIMÍDIA S.A. contra decisão que reconheceu a procedência de lançamento da Contribuição ao Fundo de Universalização de Telecomunicações - Cide-Fust e de multa de ofício referentes ao exercício de 2014.
+2. Fato relevante. Fiscalização apurou diferença entre os valores devidos e os declarados, com lavratura de Notificação de Lançamento.
+3. As alegações. Recorrente alegou a não incidência da Cide-Fust sobre receitas de interconexão e exploração industrial e ocorrência de bis in idem.
+4. As decisões anteriores. A Superintendência de Controle de Obrigações - SCO julgou parcialmente procedentes os lançamentos e encaminhou o recurso ao Conselho Diretor para julgamento de mérito.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se incide Cide-Fust sobre receitas de interconexão e exploração industrial; e (ii) saber se é cabível a manutenção da multa de ofício aplicada por ausência ou inexatidão de declaração.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível, pois foi interposto tempestivamente, a Recorrente tem interesse em recorrer e está regularmente representada.
+2. O parágrafo único do art. 6º da Lei nº 9.998/2000 não se aplica quando há contraprestação por serviço de interconexão e exploração industrial.
+3. Incide a Cide-Fust sobre receitas de interconexão e exploração industrial, conforme a Súmula Anatel nº 7/2005.
+4. Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações entre prestadora e usuário.
+5. A multa de ofício é devida nos casos de ausência ou inexatidão de declaração, no percentual previsto em lei.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e atendidos os pressupostos de admissibilidade do Decreto nº 70.235/1972 e do Regimento Interno da Anatel. 2. Incide a Cide-Fust sobre receitas de interconexão e exploração industrial, por configurarem contraprestação vinculada a serviço de telecomunicações entre prestadoras. 3. Não há bis in idem quando a incidência decorre de fatos geradores distintos nas relações entre prestadoras e nas relações com usuários. 4. É cabível a multa de ofício, no percentual legal, nos casos de ausência ou inexatidão de declaração."
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 36; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, art. 33; Resolução nº 777/2025, art. 44; Resolução nº 612/2013, arts. 115 e 116.
+Jurisprudência relevante citada: Súmula Anatel nº 7; Anatel, Acórdão nº 114, de 12.04.2017; Anatel, Acórdão nº 312, de 02.06.2020; Anatel, Acórdão nº 89, de 08.04.2025; Anatel, Acórdão nº 97, de 08.04.2025; Anatel, Acórdão nº 104, de 17.04.2026.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 66/2026/NP (SEI nº 15921353), integrante deste acórdão, conhecer do Recurso Administrativo (SEI nº 13733225) interposto por VOGEL SOLUÇÕES EM TELECOMUNICAÇÕES E INFORMÁTICA S.A., CNPJ nº 05.872.814/0001-30, sucessora por incorporação da ALGAR MULTIMÍDIA S.A., CNPJ nº 04.622.116/0001-13, em face do Despacho Decisório nº 135/2025/CODI/SCO (SEI nº 13434641) para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 25/08/2026, às 17:37, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16171468 e o código CRC 5E4C13C3.
+ | 
+Referência: Processo nº 53524.003364/2017-55 | 
+SEI nº 16171468 |

@@ -1,0 +1,54 @@
+SEI/ANATEL - 15629737 - Acórdão
+Boletim de Serviço Eletrônico em 15/05/2026
+DOU de 15/05/2026, seção 1, página 9
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 130, de 13 de maio de 2026
+Processo nº 53500.005408/2019-11
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 953, de 7 de maio de 2026
+EMENTA
+DIREITO ADMINISTRATIVO SANCIONADOR. RECURSO ADMINISTRATIVO. SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA - SCM. DESCUMPRIMENTO DO Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC. RECURSO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo com pedido de efeito suspensivo interposto por CLARO S.A. contra despacho decisório que aplicou multa de R$ 30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos) por descumprimento dos arts. 26, § 2º, 50, I, c/c 57, § 3º, II, 57, § 3º, IV, 57, §§ 1º, 2º e 4º, e 58, caput e parágrafo único, do RGC.
+2. Fato relevante. A fiscalização apurou irregularidades relacionadas a contrato de permanência, prazo de fidelização, ausência de contrato de permanência firmado, impossibilidade de contratação sem fidelização, cobrança de multa desproporcional, cobrança de multa por descumprimento imputável à Prestadora e não armazenamento de gravações.
+3. As decisões anteriores. A decisão de primeira instância aplicou multa. Em análise recursal, a área técnica sugeriu revisão parcial do valor. O feito foi encaminhado ao Conselho Diretor para julgamento de mérito.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se houve nulidade processual por ausência de nova notificação para alegações finais após a elaboração do informe técnico que subsidiou a decisão de primeira instância; e saber se (ii) devem ser mantidas ou revistas a tipificação, a classificação e o cálculo das infrações apuradas, bem como se é cabível a substituição da multa por sanção de obrigação de fazer.
+III. RAZÕES DE DECIDIR
+1. Não há nulidade processual. O informe técnico que subsidia a decisão constitui documento preparatório. A legislação não exige nova manifestação da Prestadora entre o encerramento da instrução e a prolação da decisão.
+2. O Recurso é admissível. Estão presentes os requisitos de cabimento, tempestividade, legitimidade e interesse recursal.
+3. A infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC deve ser mantida. No caso concreto, as condutas podem ser tratadas de forma combinada, pois a fiscalização examinou gravações e contratos de permanência e constatou ausência das informações exigidas.
+4. A classificação sistêmica da infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC deve ser afastada. Os achados em lojas presenciais indicaram regularidade em parte dos casos. Isso afasta a conclusão de descumprimento integral e generalizado.
+5. É cabível aplicar o percentual de descumprimento da obrigação na infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC.
+6. A infração ao art. 57, § 1º, do RGC não é sistêmica. O contrato padrão e os planos juntados aos autos indicam prazo de permanência de 12 (doze) meses para pessoas físicas.
+7. A infração ao art. 57, § 1º, do RGC subsiste em caráter pontual. A Prestadora não apresentou os contratos solicitados em 20 (vinte) atendimentos. Além disso, a fiscalização identificou 3 (três) casos no Focus em que a fidelização superou 12 (doze) meses.
+8. A infração ao art. 57, § 2º, do RGC deve ser mantida. A Prestadora não apresentou contratos de permanência assinados e datados nos casos analisados.
+9. A classificação sistêmica da infração ao art. 57, § 2º, do RGC deve ser afastada. As diligências em lojas presenciais registraram entrega de contrato de permanência em parte relevante dos casos. Isso impede concluir pela generalização da conduta.
+10. A infração ao art. 57, § 4º, do RGC permanece sistêmica. A contratação pela internet não permitia adesão sem fidelização. Nas gravações, a possibilidade de contratação sem fidelização não era informada espontaneamente. Nas lojas, a cobrança de taxa tornava economicamente inviável a escolha sem permanência mínima.
+11. As demais infrações devem ser mantidas. Não houve impugnação específica apta a afastar os fundamentos adotados na decisão recorrida.
+12. O valor total da multa deve ser reduzido para R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis), em razão da reclassificação das infrações dos arts. 50, I, c/c 57, § 3º, II e IV, 57, § 1º e 57, § 2º, do RGC, e da aplicação do percentual de descumprimento na primeira delas.
+13. É cabível aplicar sanção de obrigação de fazer em substituição à sanção pecuniária, com fundamento na conveniência e oportunidade administrativas e no interesse público.
+14. A obrigação de fazer consistente em prover conectividade ponto a ponto para conexão de instituições públicas de ensino superior e institutos federais à Rede Nacional de Ensino e Pesquisa - RNP atende aos requisitos do art. 16 do Regulamento de Aplicação de Sanções Administrativas - RASA. A medida promove política pública de conectividade e é compatível com os objetivos estratégicos da Agência.
+15. A obrigação de fazer deve observar os parâmetros técnicos e econômicos definidos pela área técnica, inclusive quanto à instalação e manutenção do circuito de transporte, à eventual implantação de backhaul de fibra óptica, aos requisitos de Service Level Agreement - SLA da RNP, aos prazos de execução, à comprovação do cumprimento e à possibilidade de conversão em multa em caso de descumprimento.
+16. Deve ser concedido prazo de 60 (sessenta) dias para que a Prestadora apresente projeto técnico e indique as instituições a serem atendidas, ou opte pela conversão da obrigação de fazer em multa, com renúncia ao desconto previsto no RASA.
+IV. DISPOSITIVO E TESE
+Recurso parcialmente provido.
+Tese de julgamento: "1. Não há nulidade processual pela ausência de nova notificação para alegações finais entre o informe técnico preparatório e a decisão administrativa de primeira instância. 2. As infrações aos arts. 50, I, c/c 57, § 3º, II e IV, 57, § 1º e 57, § 2º, do RGC devem ser reclassificadas de sistêmicas para pontuais, com aplicação do percentual de descumprimento na infração aos arts. 50, I, c/c 57, § 3º, II e IV, do RGC. 3. A infração ao art. 57, § 4º, do RGC permanece classificada como sistêmica. 4. O valor da multa deve ser reduzido de R$ 30.868.788,47 (trinta milhões, oitocentos e oitenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos) para R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos). 5. É cabível a aplicação da sanção de obrigação de fazer, em substituição à multa, consistente no provimento de conectividade de instituições públicas de ensino superior e institutos federais à rede da RNP, observados os parâmetros e prazos fixados na decisão. 6. Deve ser concedido prazo de 60 (sessenta) dias para que a Prestadora apresente projeto técnico e indique as unidades a serem conectadas, ou opte pela conversão da sanção de obrigação de fazer em multa."
+Dispositivos relevantes citados: Lei nº 9.472/1997; Lei nº 9.784/1999, arts. 44 e 50, § 1º; Decreto nº 6.523/2008, art. 15, § 3º; Decreto nº 7.724/2012, arts. 3º, XII, e 20; Decreto nº 9.612/2018, art. 2º, IV, a, art. 3º e art. 4º, I, III, IV e V; Lei nº 9.637/1998; Resolução Anatel nº 589/2012, arts. 15, 16, 16-A, 33, § 5º, 36, 36-A e 36-B; Resolução Anatel nº 632/2014, arts. 26, § 2º, 50, I, 57, §§ 1º, 2º, 3º, II e IV, 4º, e 58, caput e parágrafo único; Resolução Anatel nº 612/2013; Resolução Anatel nº 784/2025.
+Jurisprudência relevante citada: Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, Parecer nº 00266/2018/PFE-ANATEL/PGF/AGU, 06.10.2018; PFE-Anatel, Parecer nº 588/2021/PFE-ANATEL/PGF/AGU, 13.10.2021; PFE-Anatel, Parecer nº 882/2019/PFE-ANATEL/PGF/AGU, 12.12.2019; PFE-Anatel, Parecer nº 00565/2017/PFE-ANATEL/PGF/AGU; Anatel, Acórdão nº 65, de 28.02.2024; Anatel, Análise nº 24/2019/VA, Pado nº 53528.006931/2012-81; Anatel, Análise nº 4/2024/AF; Pado nº 53500.000556/2021-64; Anatel, Análise 107/2025/VA.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 15/2026/OP (SEI nº 15196033), integrante deste acórdão:
+a) conhecer do Recurso para, no mérito, dar-lhe parcial provimento para alterar o caráter sistêmico das infrações aos arts. 50, I, c/c 57, § 3º, II e IV; 57, §§ 1º e 2º, todos do RGC;
+b) conhecer do Recurso para, no mérito, dar-lhe parcial provimento para aplicar o percentual de descumprimento da obrigação na infração ao art. 50, I, c/c 57, § 3º, II e IV, todos do RGC;
+c) alterar o valor da multa de R$ 30.868.788,47 (trinta milhões, oitocentos e sessenta e oito mil, setecentos e oitenta e oito reais e quarenta e sete centavos) para R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos);
+d) aplicar a sanção de obrigação de fazer, consistente no provimento de conectividade das instituições de ensino à Rede Nacional de Ensino e Pesquisa - RNP, tendo como base o valor de R$ 7.681.089,56 (sete milhões, seiscentos e oitenta e um mil, oitenta e nove reais e cinquenta e seis centavos) com as correções monetárias e dedução, nos termos do RASA, a ser implementado nos termos expostos em especial no item 4.92 da referida análise;
+e) conceder o prazo de 60 (sessenta) dias, a contar da data da notificação, para que a Prestadora comunique as unidades a serem conectadas, conforme lista disponibilizada pela Anatel, ou , caso queira, comunique à agência sua opção pela conversão da sanção de obrigação de fazer em multa, abrindo mão do desconto previsto no RASA.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 14/05/2026, às 17:13, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15629737 e o código CRC A9BEB80C.
+ | 
+Referência: Processo nº 53500.005408/2019-11 | 
+SEI nº 15629737 |

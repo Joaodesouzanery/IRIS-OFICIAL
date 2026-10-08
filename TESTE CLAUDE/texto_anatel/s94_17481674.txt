@@ -1,0 +1,790 @@
+SEI/ANATEL - 15631587 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 59/2026/PR
+Processo nº 53500.100814/2025-35
+Interessado: First Decision Tecnologias Inovadoras e Informatica Ltda
+presidente
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Aprovação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , pelo período de 12 (doze) meses, de 01/07/2026 a 30/06/2027.
+EMENTA
+DIREITO ADMINISTRATIVO. PRORROGAÇÃO DE CONTRATO ADMINISTRATIVO. SERVIÇOS TÉCNICOS ESPECIALIZADOS EM BUSINESS INTELLIGENCE, GESTÃO DE DADOS, ENGENHARIA DE DADOS E CIÊNCIA DE DADOS. PROPOSTA DE APROVAÇÃO.
+I. CASO EM EXAME
+ Voto submetido ao Conselho Diretor para aprovação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), firmado com FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA.
+ O contrato tem por objeto a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados, com disponibilização de mão de obra em regime de dedicação exclusiva.
+ A prorrogação proposta é de 12 meses, de 01/07/2026 a 30/06/2027, com valor global estimado de R$ 8.383.509,32.
+ A área gestora informou a regularidade da execução contratual, a continuidade da necessidade administrativa, a compatibilidade quantitativa e qualitativa da demanda e a existência de disponibilidade orçamentária.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se estão presentes os elementos de conveniência e oportunidade para a prorrogação do Contrato nº 60/2022 - Anatel por mais 12 meses, diante da natureza continuada do serviço, da justificativa de necessidade institucional, da vantajosidade econômica, da previsão no planejamento institucional e da competência do Conselho Diretor.
+III. RAZÕES DE DECIDIR
+ Compete ao Conselho Diretor aprovar a conveniência e oportunidade de prorrogações contratuais com valor igual ou superior a R$ 5.000.000,00, nos termos da Resolução Interna nº 214/2023.
+ A deliberação do Conselho Diretor recai sobre o mérito administrativo da prorrogação. Ela não substitui a análise técnica e jurídica do procedimento.
+ O objeto contratual tem natureza continuada. Sua interrupção pode comprometer atividades institucionais relacionadas à governança de dados, análise de dados, ciência de dados e apoio à tomada de decisão.
+ A área gestora atestou a boa execução do contrato. Os fiscais registraram o cumprimento das obrigações contratuais e a qualidade satisfatória dos serviços prestados.
+ A área gestora justificou a manutenção das condições quantitativas e qualitativas do contrato. Ela apontou crescimento gradual da alocação de profissionais, ausência de ociosidade e tendência de aumento das demandas.
+ A instrução registra que a não prorrogação pode causar descontinuidade de serviços essenciais, prejuízo à confiabilidade dos dados, atraso em projetos e redução da capacidade analítica da Agência.
+ A vantajosidade econômica da prorrogação foi considerada atendida. O contrato contém previsão de reajustamento em sentido amplo, o que permite dispensar pesquisa de preços, nos termos do Anexo IX da Instrução Normativa SEGES nº 5/2017 e do Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU.
+ Há disponibilidade orçamentária para a despesa. O ordenador de despesas atestou recursos para o exercício de 2026 e consignou a necessidade de previsão para o exercício subsequente.
+ A prorrogação está alinhada ao Plano de Gestão Tático da Anatel para o biênio 2025-2026 e aos Planos de Contratações Anuais de 2026 e 2027.
+ As informações constantes dos autos são suficientes para a análise de conveniência e oportunidade da prorrogação proposta.
+IV. DISPOSITIVO E TESE
+ Proposta de aprovação acolhida.
+Tese de julgamento: "1. Compete ao Conselho Diretor aprovar a conveniência e oportunidade da prorrogação de contrato administrativo com valor igual ou superior a R$ 5.000.000,00. 2. A prorrogação de contrato de serviços continuados é cabível quando a área gestora demonstra a necessidade institucional, a regularidade da execução, a essencialidade do objeto e a compatibilidade da demanda para a nova vigência. 3. A vantajosidade econômica da prorrogação pode ser reconhecida quando o contrato contém cláusula de reajustamento em sentido amplo, nos termos da Instrução Normativa SEGES nº 5/2017 e do Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU. 4. A existência de disponibilidade orçamentária e o alinhamento da contratação ao planejamento institucional reforçam a conveniência e oportunidade da prorrogação. 5. É cabível a aprovação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel, pelo período de 01/07/2026 a 30/06/2027, no valor global estimado de R$ 8.264.570,10."
+Dispositivos relevantes citados: Lei nº 8.666/1993, art. 57, II; Lei nº 9.472/1997, art. 22, XII; Lei nº 14.133/2021, art. 6º, XV; Decreto nº 2.338/1997, art. 35, X; Decreto nº 9.507/2018, art. 3º e § 1º; Instrução Normativa SEGES nº 5/2017, art. 15 e Anexo IX, itens 7 e 9; Resolução nº 612/2013, art. 238, I; Resolução Interna nº 214/2023, arts. 2º, I, e 7º, § 3º, I.
+Jurisprudência relevante citada: n/a
+REFERÊNCIA
+Lei nº 14.133, de 1º de abril de 2021 (Lei de Licitações e Contratos Administrativos);
+Instrução Normativa SEGES/ME nº 65, de 07 de julho de 2021;
+Instrução Normativa SEGES nº 5, de 26 de maio de 2017
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023;
+Processo nº 53500.019339/2021-48.
+Processo nº 53500.100814/2025-35.
+Processo nº 53500.052229/2022-79.
+Processo nº 53500.033564/2024-30.
+Processo nº 53500.020708/2026-50.
+Processo nº 53500.010996/2026-34.
+Informe nº 5/2026/GIIB/SGI (SEI nº 15120383).
+Informe nº 33/2026/AFCA6/AFCA/SAF (SEI nº 15536887).
+Informe nº 8/2026/AFCA4/AFCA/SAF (SEI nº 15315397).
+Matéria para Apreciação do Conselho Diretor nº 336/2026 (SEI nº 15536889).
+Minuta de Resolução Interna (SEI nº 11822835).
+RELATÓRIO
+Por meio da Matéria para Apreciação do Conselho Diretor nº 336/2026 (SEI nº 15536889), de 27/04/2026, o presente processo foi encaminhado a esta Presidência a fim de ser submetido ao Colegiado para a apreciação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348) firmado com a empresa FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA, cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , pelo período de 12 (doze) meses, de 01/07/2026 a 30/06/2027, visando atender as necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel), com disponibilização de mão de obra em regime de dedicação exclusiva.
+A avença foi originalmente firmada em 08/06/2022, no âmbito do Processo nº 53500.019339/2021-48, com a empresa FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA., inscrita no CNPJ/MF sob o nº 05.276.049/0001-95, após ter-se sagrado vencedora da etapa concorrencial do Pregão Eletrônico nº 03/2022. 
+O Contrato nº 60/2022 - Anatel (SEI nº 8559348) já passou por quatro prorrogações e outros apostilamentos:
+ Número do Instrumento
+ | 
+ Número SEI
+ | 
+ Período Vigência
+ | 
+ Contrato Original
+ | 
+ 8559348
+ | 
+ 01/07/2022 a 30/06/2023
+ | 
+ Primeiro Termo Aditivo
+ | 
+ 10469139
+ | 
+ 01/07/2023 a 30/06/2024
+ | 
+ Segundo Termo Aditivo
+ | 
+ 12040467
+ | 
+ 01/07/2024 a 30/06/2025
+ | 
+ Terceiro Termo Aditivo
+ | 
+ 13854051
+ | 
+ 01/07/2025 a 30/06/2026
+ | 
+ Quarto Termo Aditivo
+ | 
+ 13856972
+ | 
+ Revisão e repactuação de preços
+ | 
+Esta será a quarta prorrogação contratual, que vigerá de 01/07/2026 a 30/06/2027, correspondente a 12 (doze) meses.
+A prorrogação do prazo de vigência encontra respaldo legal no art. 57, II da Lei nº 8.666/93. Além disso, o Contrato Original previu a possibilidade de prorrogação na Cláusula Sétima.
+Dessa forma, com a presente prorrogação, tem-se que serão atingidos 60 (sessenta) meses de vigência desde o Contrato original, dentro, portanto, do limite de 60 (sessenta) meses.
+Com vistas à celeridade no trâmite processual, a área técnica optou por instaurar em apartado o presente processo de autorização, conforme permissão contida no art. 4º, § 1º, da Portaria nº 1.197/2018, constando os demais documentos que instruíram a prorrogação ora em análise no Processo nº 53500.110965/2023-30.
+Os fiscais do Contrato exararam, em 06/01/2026, a Declaração SEI nº 14998903, por meio da qual declaram que "no tocante aos serviços prestados, que, durante a vigência atual, foram cumpridas as obrigações contratuais e demonstrada a capacidade técnica e a qualidade devida no desempenho das atividades, tendo a empresa se empenhado na resolução de problemas porventura registrados afetos à execução contratual. Não há registro relevante que contradiga de forma assertiva a avaliação satisfatória da atual Contratada, não restando qualquer óbice para a prorrogação do contrato, no que se refere à boa qualidade dos serviços.", bem como que "não ocorreram eventos relevantes que ensejam a atualização do Mapa de Riscos do contrato.", em atenção ao art. 26, inciso IV da IN SEGES nº 05/2017.
+Em seguida, a Gerência de Informações e Biblioteca (GIIB) expediu, em 06/01/2026, o Ofício nº 3/2026/GIIB/SGI-ANATEL (SEI nº 14998920), por meio do qual consultou a empresa FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA. acerca do seu interesse na prorrogação. Em resposta à consulta, a empresa manifestou-se interessada nos termos propostos, conforme verifica-se no Ofício FDTI 041/2026 - Confirma Interesse na Prorrogação (SEI nº 15003128), de 06/01/2026, juntamente com os seguintes documentos:
+Contrato Social I - First 1 (15003129);
+Contrato CS - Alteração12 8 (15003130);
+CNH Francis Dedavid - CNH-e Atualizada 1 (15003131);
+Certidão SICAF (15003132);
+Declaração de Conformidade com a Legislação (15003133).
+No caso em questão, como o valor máximo estimado da contratação pretendida era de R$ 8.264.570,10 (oito milhões, duzentos e sessenta e quatro mil quinhentos e setenta reais e dez centavos), cabe exclusivamente a este Colegiado avaliar a oportunidade e conveniência da contratação proposta. Todavia, mister destacar que no Processo nº 53500.010996/2026-34 está sendo discutida a revisão contratual advinda da Reoneração gradual do INSS na planilha de custos e formação de preços do Contrato nº 60/2022 (SEI nº 8559348) e, conforme consta do Informe nº 8/2026/AFCA4/AFCA/SAF (SEI nº 15315397), o valor global atualizado é de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos).
+Pelo Ofício nº 35/2026/GIIB/SGI-ANATEL (SEI nº 15120378) a área gestora requisitou ao Gerente de Finanças Orçamento e Arrecadação (AFFO) a emissão da respectiva Declaração de Disponibilidade Orçamentária no valor de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos). Por seu turno, o Gerente de Finanças Orçamento e Arrecadação (AFFO), no exercício da atividade delegada de ordenador de despesas, consubstanciada pelo art. 1º, da Portaria nº 1.620/2018, atestou a disponibilidade orçamentária para cobrir as despesas do referido Contrato, nos seguintes termos - Declaração de Disponibilidade Orçamentária (SEI nº 15449248):
+Declaração de Disponibilidade Orçamentária
+Processo nº 53500.100814/2025-35
+Interessado: First Decision Tecnologias Inovadoras e Informatica Ltda
+O GERENTE DE FINANÇAS, ORÇAMENTO E ARRECADAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, em especial ao disposto no art. 238, inciso I, do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, bem como no exercício da atividade delegada de ordenador de despesas, consubstanciada pelo art. 1º, da Portaria nº 2.893, de 04 de setembro de 2024, examinando os autos do Processo em epígrafe, que versa sobre prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados;
+CONSIDERANDO o disposto nos arts. 18 e 19 da Norma de Gestão Orçamentária e Financeira da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna Anatel nº 314, de 17 de abril de 2024;
+CONSIDERANDO os valores requisitados para a referida contratação por meio Ofício nº 35/2026/GIIB/SGI-ANATEL (SEI nº 15120378);
+CONSIDERANDO os valores registrados no Sistema Valor, Identificadores de Despesa (IDs) 1878(2026), com Classificação Funcional Programática (Projeto/Atividade) 24.122.0032.2000.0001, vide relatório SEI nº 15449243;
+ATESTA, nos limites da dotação constante da Lei Orçamentária Anual, a existência de disponibilidade orçamentária referente ao exercício de 2026, no valor de R$ 4.191.754,66 (quatro milhões, cento e noventa e um mil setecentos e cinquenta e quatro reais e sessenta e seis centavos).
+INFORMA que os valores para os exercícios subsequentes deverão ser estimados e requisitados por essa área requisitante quando da elaboração da proposta orçamentária da Agência para o referido ano, ficando sua disponibilidade orçamentária condicionada à sanção da respectiva lei orçamentária.
+INFORMA a área requisitante que o remanejamento dos valores registrados nos IDs da referida contratação não poderá ser realizado sem aprovação prévia da Gerência de Finanças, Orçamento e Arrecadação.
+Ato contínuo, em cumprimento ao disposto no Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), a área gestora do Contrato elaborou o Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, contendo a análise dos requisitos necessários à prorrogação contratual.
+Em seguida a área gestora encaminhou o processo à Gerência de Aquisições e Contratos (AFCA), em observância ao disposto na Lei nº 8.666/1993, na Lei nº 10.520/2002, na IN SEGES nº 05/2017, na IN ME nº 73/2020, e alterações posteriores, na Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023.
+Assim, com fundamento no Informe nº 33/2026/AFCA6/AFCA/SAF (SEI nº 15536887), de 27/4/2024, após analisar todas as informações encaminhadas pela área gestora, a Superintendência de Administração e Finanças (SAF) remeteu os autos a este Colegiado para aprovação da conveniência e oportunidade da prorrogação, por meio da Matéria para Apreciação do Conselho Diretor nº 336/2026 (SEI nº 15536889).
+No que tange ao prazo previsto para a prorrogação, verifica-se que este processo foi enviado para este Presidente em 29/04/2026 e o Contrato nº 60/2022 - Anatel (SEI nº 8559348) terá sua vigência corrente encerrada em 30/06/2026.
+É o relatório.
+DAS CONSIDERAÇÕES POR PARTE DESTE PRESIDENTE
+I - DA COMPETÊNCIA DO CONSELHO DIRETOR
+No âmbito da Anatel, a delegação de competências para contratação de obras e serviços de terceiros, aquisição de bens, gestão dos contratos administrativos e a administração de bens móveis e imóveis é disciplinada por meio da Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023.
+Nos termos da Resolução Interna nº 214, de 23 de maio de 2023, compete ao Conselho Diretor (CD) da Anatel a aprovação da conveniência e oportunidade de contratações e prorrogações com valores superiores a R$ 5.000.000,00 (cinco milhões de reais).
+Resolução Interna nº 214, de 23 de maio de 2023
+(...)
+CAPÍTULO II
+DAS DEFINIÇÕES
+Art. 2º Para fins dos processos de contratações de bens, serviços, obras e serviços de engenharia, bem como de prorrogações e alterações contratuais considera-se:
+I - Aprovação da conveniência e oportunidade: ato de governança pelo qual a autoridade competente avalia o mérito da celebração ou prorrogação de contrato, realizando a análise de sua motivação quanto ao interesse, relevância e adequação à satisfação do interesse público, inclusive no que se refere à vantagem econômica vislumbrada em razão da vigência contratual proposta;
+(...)
+CAPÍTULO IV
+DA FASE PREPARATÓRIA DA CONTRATAÇÃO E DOS LIMITES DE ALÇADA
+Art. 7º. São atos relacionados à fase preparatória da contratação:
+(...)
+§ 3º A aprovação da conveniência e oportunidade das contratações compete:
+I - Para o limite de alçada igual ou superior a R$ 5.000.000,00: ao Conselho Diretor da Anatel; (negrito nosso)
+Ainda na mesma linha, vale destacar a redação do art. 22, inc. XI, da Lei nº 9.472, de 16 de julho de 1997 (LGT), e do art. 35, inc. X, do Decreto nº 2.338, de 07 de outubro de 1997, que tratam da competência do Conselho Diretor para autorizar a contratação de serviços de terceiros, in verbis:
+Lei nº 9.472, de 16 de julho de 1997 (LGT)
+Art. 22. Compete ao Conselho Diretor:
+[...] XII - autorizar a contratação de serviços de terceiros, na forma da legislação em vigor.”
+Decreto nº 2.338, de 07 de outubro de 1997
+Art.35. Compete ao Conselho Diretor, sem prejuízo de outras atribuições previstas na Lei, neste Regulamento ou no Regimento Interno:
+[...] X - autorizar a contratação de serviços de terceiros, na forma da legislação em vigor;
+A aprovação a que se refere a Resolução Interna fundamenta-se na análise de mérito do ato administrativo, adstrito à conveniência e oportunidade da contratação. Ou seja, trata-se de ato de governança pelo qual a autoridade competente avalia o mérito da celebração ou prorrogação de contrato, realizando a análise de sua motivação quanto ao interesse institucional, relevância e adequação à satisfação do interesse público, inclusive no que se refere à vantagem econômica vislumbrada em razão da vigência contratual proposta. Os aspectos legais da contratação, por outro lado, são objetos de avaliação pela Procuradoria Federal Especializada junto à Anatel (PFE-Anatel).
+Vale destacar que, conforme entendimento pacificado na doutrina e na jurisprudência administrativa, cada ato de prorrogação equivale a uma renovação contratual, motivo pelo qual a decisão pela prorrogação de contratação direta deve ser devidamente planejada e motivada, principalmente mediante a indicação da hipótese legal ensejadora da dispensa ou da inexigibilidade de licitação, válida no momento do ato de prorrogação contratual.
+Diante dos esclarecimentos expostos, passa-se à verificação dos elementos necessários à prática do ato de aprovação da conveniência e oportunidade da contratação.
+II - DA ANÁLISE
+Posta a competência do CD para decisão sobre o tema, passa-se à análise da conveniência e oportunidade da Aprovação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, pelo período de 12 (doze) meses, de 01/07/2026 a 30/06/2027, de acordo com o quantitativo e as condições estabelecidas no Termo de Referência (SEI nº 8113514).
+Inicialmente, registra-se que o presente Voto não envolve a análise técnica e jurídica do procedimento, não implicando na validação de qualquer ato que compõe o processo de contratação. Trata-se aqui de aprovação da conveniência e oportunidade da realização de despesa pública e autorização para a renovação de contrato administrativo, com o valor estimado de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos).
+A análise desses requisitos de conveniência e oportunidade e vantajosidade demanda deste Colegiado o exame dos fatos, fundamentos e justificativas para que se forme adequado juízo de valor acerca da autorização para a prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348) pela Superintendência de Gestão Interna da Informação. (SGI). Trata-se, em verdade, de avaliação do mérito administrativo na avaliação de conveniência e oportunidade da celebração de termo aditivo de prorrogação ao Contrato nº 60/2022 - Anatel (SEI nº 8559348), e, portanto, demanda uma análise de aspectos fáticos e a ocorrência da subsunção do fato à norma para se decidir sobre a viabilidade da despesa para arcar com a execução do serviço.
+Com efeito, conveniente é aquilo que é adequado, apropriado ao objeto que se destinou. A medida administrativa editada será conveniente se for apta a cumprir o objetivo previsto, se for proporcional e útil, ajustada ao interesse público.
+A oportunidade, por sua vez, com visível caráter econômico, se refere à adaptação da medida ao cumprimento dos fins pretendidos pelo mandamento normativo que o ato administrativo busca satisfazer. Oportuno é o que se pratica em tempo hábil, em boa hora. Deve a oportunidade apresentar-se como medida de proporção entre o conteúdo do ato e o resultado que se quer obter.
+Para a correta avaliação desses quesitos, faz-se necessário averiguar os seguintes pontos:
+A necessidade da solução proposta;
+A comprovação da vantajosidade econômica da avença; e
+O alinhamento do Ato aos requisitos e disposições previstos na legislação.
+Com relação à necessidade da solução proposta a área técnica destaca no Informe nº 107/2021/AFCA1/AFCA/SAF (7784916) exarado no Processo nº 53500.019339/2021-48 a área técnica apontou o objeto da contratação:
+Discriminação do objeto a ser contratado
+3.5. Conforme extraído da Minuta de Termo de Referência 6701667, o objeto consiste na contratação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , visando atender as necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel) para o período de 12 (doze) meses.
+3.6. Referida contratação visa substituir o Contrato nº 68/2020 (GIIB) - SEI nº 5710779 firmado em 13 de julho de 2020, e visa implementar ajustes nas especificações e requisitos de referida contratação, de acordo com o observado durante a execução do contrato, dentre as quais a Gerência de Informações e Biblioteca-GIIB, gestora do contrato, indica:
+a) Melhoria no quantitativo de postos para cada perfil, com incremento no quantitativo de postos de trabalho do perfil cientista de dados;
+b) Definição das senioridades especialista, sênior e pleno para o perfil cientista de dados, que não tinha distinção de senioridade no Contrato nº 68/2020 (GIIB) - SEI nº 5710779;
+c) Melhoria das especificações de requisitos de formação da equipe, com melhor descrição dos conhecimentos técnicos de cada perfil e senioridade;
+d) Definição da atuação de recrutador técnico no processo de recrutamento e seleção da contratada para os perfis a serem alocados na contratação em questão;
+e) Melhoria da descrição das responsabilidades e obrigações do preposto;
+f) Melhoria dos índices que compõem o IMR.
+3.7. Para melhor elucidação, apresentamos abaixo os perfis profissionais indicados na Tabela 1 da Minuta de Termo de Referência GIIB (6701667) da presente contratação e os da Tabela 1 do Contrato nº 68/2020 (GIIB) - SEI nº 5710779 , destacando que ambos são estimados com a previsão de quantitativos máximos de postos que poderão ser demandados ao longo da execução contratual:
+ Tabela 1 da Minuta de Termo de Referência GIIB (6701667)
+ Grupo
+ | 
+ Item
+ | 
+ Perfil Profissional
+ | 
+ CATSER
+ | 
+ Carga Horária Semanal
+ | 
+ Salário Mínimo
+ (conforme item 24.8.2)
+ | 
+ Valor Unitário Mensal (R$)
+ (A)
+ | 
+ Quantidade Máxima
+ (B)
+ | 
+ Valor Máximo Mensal (R$)
+ (C) = A x B
+ | 
+ Valor Máximo Vigência (R$)
+ (D) = C x 12
+ | 
+ 1
+ | 
+ 1
+ | 
+ Cientista de Dados Especialista
+ | 
+ 27308
+ | 
+ 40h
+ | 
+ R$ 23.067,68
+ | 
+ R$ 52.688,67
+ | 
+ 1
+ | 
+ R$ 52.688,67
+ | 
+ R$ 632.263,99
+ | 
+ 2
+ | 
+ Cientista de Dados Sênior
+ | 
+ 27308
+ | 
+ 40h
+ | 
+ R$ 18.193,03
+ | 
+ R$ 41.574,48
+ | 
+ 4
+ | 
+ R$ 166.014,81
+ | 
+ R$ 1.995.574,94
+ | 
+ 3
+ | 
+ Cientista de Dados Pleno
+ | 
+ 27308
+ | 
+ 40h
+ | 
+ R$ 15.064,61
+ | 
+ R$ 34.441,68
+ | 
+ 4
+ | 
+ R$ 137.483,62
+ | 
+ R$ 1.653.200,66
+ | 
+ 4
+ | 
+ Analista de Dados Sênior
+ | 
+ 27308
+ | 
+ 40h
+ | 
+ R$ 15.947,00
+ | 
+ R$ 36.453,54
+ | 
+ 6
+ | 
+ R$ 218.249,39
+ | 
+ R$ 2.624.654,64
+ | 
+ 5
+ | 
+ Analista de Dados Pleno
+ | 
+ 27308
+ | 
+ 40h
+ | 
+ R$ 13.167,71
+ | 
+ R$ 30.116,76
+ | 
+ 4
+ | 
+ R$ 120.183,92
+ | 
+ R$ 1.445.604,26
+ | 
+ Totais
+ | 
+ 19
+ | 
+ R$ 694.620,41
+ | 
+ R$ 8.351.298,48
+ | 
+(...)
+Razões e justificativas para a contratação e informações sobre a adequação do bem ou serviço às necessidades da Anatel
+3.12. A justificativa para a contratação em tela se encontra no Estudo Técnico Preliminar da Contratação de TI GIIB 6701662, elaborado pela Gerência de Informações e Biblioteca, cujos trechos principais destacamos abaixo:
+2.2 A contratação em tela visa precipuamente aprimorar a prestação do serviço do Contrato nº 68/2020 (GIIB) - SEI nº 5710779, que não será prorrogado.
+2.2.1 Cumpre destacar que o supracitado contrato não será prorrogado por vários fatores, dentre os quais destacamos a incompatível quantidade máxima de postos de trabalho em relação às demandas que se observa atualmente e futuramente para os perfis contratados, também destacamos a ausência de senioridades previstas para o perfil cientista de dados.
+2.2.2 Quantitativo máximo do perfil cientista de dados é insuficiente para atender as demandas formalizadas após o início da execução do contrato supracitado, como também para atender eventuais demandas que venham a surgir futuramente, como parte de um processo de modernização tecnológica e de processos que a Anatel executa continuamente. Esta limitação representa relevante risco para a Anatel, principalmente ao considerarmos o crescente investimento em análise de dados e em aprendizagem de máquina, como ferramentas para suportar, habilitar e alavancar a regulação responsiva, que tem sido cada vez mais focada em evidências, dados, informações, estatísticas, conhecimentos e na observação dos impactos gerados pelas ações regulatórias.
+2.2.3 Se faz necessário ressaltar que o Contrato nº 68/2020 foi assinado em 13/07/2020, enquanto novas demandas de ciência de dados, aprendizagem de máquina e inteligência artificial foram formalizadas por meio do PDTIC 21/22, que foi aprovado pela Portaria nº 1.208, SEI nº 5911075. As referidas demandas são:
+a) O Memorando nº 10/2020/PR (SEI nº 5257839) apresentou a necessidade de "Contratação de software ou solução de TIC de inteligência artificial (ferramentas de deep learning como Victoria, Drª Luiza e/ou OABJuris) adaptadas e personalizadas às necessidades da Agência para automação de pesquisa de precedentes, jurisprudência, análise preliminar das petições protocoladas e confecção de minutas de documentos (Informes, Votos, Análises)". Neste documento avaliaremos as soluções elencadas, suas funcionalidades e as formas de desenvolvimento ou contratação adotadas pelas organizações detentoras destas soluções;
+b) O Memorando nº 10/2020/PR (SEI nº 5257839) a presentou a necessidade “Avaliar a viabilidade de se estabelecer convênio com o STJ, de forma a cooperar no desenvolvimento e fazer uso do Projeto Sócrates, Sistema de Inteligência Artificial capaz de examinar Recursos e Acórdãos Recorridos”. Neste documento avaliaremos o Projeto Sócrates e outras soluções baseadas em inteligência artificial do STJ, considerando a possibilidade de aplicação no contexto da Anatel;
+c) O Memorando nº 8/2020/CB (SEI nº 5245465) demandou “Solução de inteligência artificial adaptada às necessidades da Agência para automação de pesquisa de precedentes e análise de Recursos e Acórdãos Recorridos”, que demonstra grande alinhamento com as demais demandas citadas anteriormente neste documento.
+2.3 Esta estimativa de demanda tem como foco a análise das necessidades das áreas de negócio relacionadas à prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados", que demanda a alocação de uma quantidade de perfis profissionais e senioridades adequados para que as necessidades sejam atendidas em tempo e com a qualidade esperada.
+2.4 O levantamento dos quantitativos de profissionais tomou como subsídio inicial a pesquisa “Data and Analytics Job Description Library", ID G00710304, realizada pelo Gartner Group. Na pesquisa, foram buscadas descrições de trabalho de amostra e perfis para as funções de suporte a análise e gerenciamento de dados no contexto da Anatel. Esta pesquisa foi fundamental para subsidiar um entendimento sobre as competências, capacidades técnicas, perfis, escopo de atuação e as oportunidades que estes perfis profissionais poderão proporcionar para a Anatel.
+2.5 Aos cargos, responsabilidades, habilidades e experiências levantadas, acrescentaram-se registros com base no material disponibilizado no curso "Analytics & Data Literacy", fornecido pela fabricante da principal plataforma de análise de dados adotada pela Anatel - o Qlik Sense.
+2.6 A lista foi enriquecida com base em especificações de requisitos encontrados nas licitações/contratos firmados pela Administração Pública e posteriormente discutida não somente entre a Equipe de Planejamento da Contratação (EPC), mas também com outros servidores do quadro das gerências que compõe a Superintendência de Gestão Interna da Informação (SGI). Desta forma, delinearam-se os perfis, inicialmente adotados para o Contrato nº 68/2020.
+(...)
+2.8 O que se conhece com certeza é a existência de um número significativo de demandas reprimidas e de oportunidades de melhoria já identificadas, o que se pode obter ao consultar os registros do Sistema de Gestão de Demandas (SGD) adotado, denominado Taiga e acessível em https://taiga.anatel.gov.br/, como também pode ser observado na Planilha SEI nº 7672032, que armazena as demandas que ainda não foram adicionadas ao backlog de atendimento via SGD e apresenta o estado das demais demandas, para fins de gestão e análise estatística.
+2.9 A execução do Contrato nº 68/2020 (processo de acompanhamento nº 53500.032226/2020-57), evidencia a crescente execução de demandas do referido contrato, com uma crescente alocação de demandas de alocação de postos de trabalho e uma forte demanda por suporte a análise e gerenciamento de dados.
+2.10 Sabe-se também que demandas de suporte a análise e gerenciamento de dados surgirão a partir de necessidades cultivadas no planejamento institucional da Anatel, em especial em função da diretriz estratégica "Proporcionar o fortalecimento institucional" e do tema "Inteligência Regulatória". Também brotarão do próprio Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC) 2019-2020, em função de ações como "Formalizar Programa de Gestão da Informação" ou "Estruturar Projeto de Governança de Dados e Informações", ou das metas "Ampliar a disponibilização de dados abertos", "Prover serviços e sistemas de qualidade", "Prover ações de suporte à gestão da informação" e "Adequar os sistemas de TI ao Plano Estratégico".
+2.11 Há, portanto, uma tendência de crescimento do número de demandas a serem atendidas, a saber:
+a) do projeto Data e Analytics, cujo plano de ação tem alavancado o Business Intelligence e a análise de dados na Anatel, formalizado por meio do processo nº 53500.027461/2018-92;
+b) da existência de demandas de saneamento das bases de dados de coletas pré-existentes, de implantação de outras soluções ou tecnologias emergentes (como machine learning, deep learning e inteligência artificial) e de alteração de atribuições ou dos subprocessos integrantes do processo "Gerir Dados", justamente pela ausência de recursos aptos e suficientes para executá-las;
+c) do atendimento ao plano de transformação que migrará várias aplicações transacionais para soluções baseadas em ferramentas especializadas para coleta e análise de dados, visto que a grande maioria dos Sistemas da Anatel realizam recebimento de dados e geração de relatórios. A estratégia para implementação deste plano tem sido viabilizada por meio do uso do DICI (sistema único para coleta de dados da Anatel), da construção de dashboards por meio do Qlik Sense para publicação e análises diretamente pelos usuários sobre os dados e da publicação externa de dashboards por meio do Portal de Painéis de Dados, como também através das análises de dados e de inteligência desenvolvidas através das soluções que compõe o SAS adquirido pela Anatel. Neste sentido, espera-se não somente continuar com esta estratégia, mas têm-se a expectativa que o novo contrato represente aporte de capacidade para as atividades ainda não executadas;
+d) do fato da continuidade da participação dos profissionais contratados em reuniões, discussões, cerimônias e construção de soluções junto aos Times Ágeis das frentes de desenvolvimento conduzidas pela Gerência de Planejamento, Desenvolvimento e Segurança de Sistemas (GIDS), onde trabalharão no atendimento de demandas afetas a dados no âmbito desses projetos de desenvolvimento, realizando, por exemplo, a proposição, revisão e validação de Modelos de Dados. Não somente sobre os projetos no formato de Times Ágeis, os profissionais de dados também poderão ser demandados a qualquer momento para opinar sobre bancos de dados de sistemas já existentes ou no âmbito de evoluções pontuais que envolvam mudanças na estrutura do banco de dados;
+e) da existência de demandas reprimidas relacionadas ao suporte, análise e gerenciamento de dados que a GIIB tem que atender toda a Anatel no âmbito do modelo de Business Intelligence (BI) federado mencionado no item 1.2.5, mas que não vem tendo capacidade de atender tempestivamente por falta de pessoal de servidores (em termos de quantidade e em conhecimento especializado) e por deficiências no formato e limitações de escopo e recursos dispostos no supramencionado Contrato nº 68/2020 a ser substituído;
+f) da expectativa do surgimento de novas demandas decorrentes do progressivo estabelecimento de uma cultura de alfabetização e literacia de dados onde, em linha com o termo conceituado pelo Massachusetts Institute of Technology (MIT) e pela Emerson University, prevê-se aumento nas capacidades institucionais de ler, trabalhar, analisar e discutir com dados, com decorrente desenvolvimento e aprimoramento de novas e poderosas habilidades no mundo dos dados e da análise de dados.
+(...)
+Benefícios diretos e indiretos que resultarão da contratação
+3.15. Com a contratação de serviços técnicos especializados na área de Tecnologia da Informação de "desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados ", são esperados os seguintes benefícios e resultados, extraídos do item 3.59 a 3.66 da Minuta de Termo de Referência 6701667:
+3.59 Quanto à eficácia, a solução escolhida possibilitará aprimorar a prestação do serviço correntemente objeto do Contrato nº 91/2017 (Serviços de técnicos continuados na área de Tecnologia da informação, relacionados ao apoio à Arquitetura de Sistemas e Administração de Dados) e prover não somente sua evolução, mas também continuidade a serviços técnicos especializados na área de Tecnologia da Informação de "desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados ".
+3.60 Possibilitará também o alcance das estratégias corporativas suportadas pela TI, terá maior disponibilidade dos dados tanto para o público interno como para o público externo, ampliará o uso dos dados e possibilitará soluções inovadoras a partir dos dados da Anatel ou coletados por ela.
+3.61 Quanto à eficiência, a solução escolhida possibilitará intensificar o uso de dados como instrumento de decisão e inovação, de transformação dos processos produtivos e de incremento da produtividade, colaborando ainda com a transparência governamental e a prestação de serviços digitais. Facilitará à Anatel lidar mais facilmente com a quantidade de dados produzidos, crescentemente a taxas incríveis.
+3.62 Quanto à efetividade, a solução escolhida permitirá elevar o nível dos requisitos de qualidade (precisão, completude, consistência, atualidade, precisão numérica, disponibilidade e unicidade) dos dados.
+3.63 Quanto à economicidade, ao cabo, a solução escolhida representará maior economia de recursos públicos dentre as soluções identificadas.
+3.64 A iniciativa tem por objetivo fomentar o uso das soluções e as melhores práticas de Analytics e Business Intelligence (BI), através de uma melhor gestão das soluções de BI, da disponibilização e publicação de dados, suportados pela ampliação do conhecimento dos envolvidos e da comunicação com o restante da Agência. Com sua realização, espera-se imprimir maior ritmo à alfabetização de dados já iniciada na organização e aprimorar o BI e a análise de dados na Agência, causando assim um maior alinhamento dos investimentos analíticos com os objetivos estratégicos, criando novas oportunidades de negócios por meio da inovadora tecnologia analítica, facilitando o auto-atendimento de recursos analíticos em toda a organização e apoiando o processo de tomada de decisões mais complexas por meio de análises de dados mais sofisticadas.
+3.65 A Estratégia de Governo Digital (EGD), dentre os "Objetivos Estratégia de Governo Digital - 2020/2022", estabelece o objetivo estratégico "OB07 Políticas públicas baseadas em dados e evidências". Esta contratação tem entre seus objetivos o fornecimento de suporte direto e indireto para maximizar o apoio às políticas públicas, regulamentos e demais ações regulatórias baseadas em dados e evidências. Estes objetivos podem ser alcançados por meio da disponibilidade de dados com qualidade e através de soluções de análise de dados, como também através de soluções baseadas em análises avançadas, tais como a utilização de inteligência artificial e aprendizagem de máquina.
+3.66 O Plano de Gestão Tático da Anatel para o biênio 2021-2022 e a Estratégia Brasileira de Inteligência Artificial (EBIA) destacam a latente necessidade de investimento em soluções analíticas avançadas, baseadas em aprendizagem de máquina e inteligência artificial, justificando portanto a contratação de prestação de serviços especializados para o desenvolvimento de soluções baseadas em inteligência artificial.
+Todavia, mister destacar que no Processo nº 53500.010996/2026-34 está sendo discutida a revisão contratual advinda da Reoneração gradual do INSS na planilha de custos e formação de preços do Contrato nº 60/2022 (SEI nº 8559348) e, conforme consta do Informe nº 8/2026/AFCA4/AFCA/SAF (SEI nº 15315397), o valor global atualizado é de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos):
+ Área requisitante
+ | 
+ SGI
+ | 
+ UGR
+ | 
+ 413071
+ | 
+ Tipo de Contratação
+ | 
+ Prorrogação
+ | 
+ Nº do Contrato
+ | 
+ 60/2022 (SEI nº 8559348)
+ | 
+ IDs
+ | 
+ 2026: ID 1878
+ 2027: ID 2892
+ | 
+ Projeto/Atividade
+ | 
+ 24.122.0032.2000.0001
+ | 
+ Natureza da Despesa
+ | 
+ 33904000
+ | 
+ Valor por ano
+ | 
+ 2026: R$ 4.191.754,66;
+ 2027: R$ 4.191.754,66
+ | 
+ Valor Total
+ | 
+ R$ 8.383.509,32
+ | 
+Veja, portanto, que a área técnica apresentou o objeto, especificações, justificativas e valor que, na época da contratação em 2022 era superior ao valor apresentado agora para sua prorrogação.
+No que tange às justificativas e razões para a prorrogação em tela, a área gestora apresentou, no Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, as seguintes razões para fundamentar a prorrogação em análise:
+Informe nº 5/2026/GIIB/SGI (SEI nº 15120383)
+Das justificativas para prorrogação de vigência
+3.2. Preliminarmente, registra-se que o inciso II, art. 57 da Lei nº 8.666/93 preceitua que os contratos administrativos de caráter continuado podem atingir o limite de 60 (sessenta) meses.
+Art. 57. A duração dos contratos regidos por esta Lei ficará adstrita à vigência dos respectivos créditos orçamentários, exceto quanto aos relativos:
+(...)
+II - à prestação de serviços a serem executados de forma contínua, que poderão ter a sua duração prorrogada por iguais e sucessivos períodos com vistas à obtenção de preços e condições mais vantajosas para a administração, limitada a sessenta meses; (Redação dada pela Lei nº 9.648, de 1998)
+3.3. A vigência atual do contrato, considerando a última prorrogação de 12 (doze) meses (SEI nº 13458193), foi iniciada em 01/07/2025 e terá seu término em 30/06/2026, motivo pelo qual se faz necessária sua prorrogação, tendo em vista trata-se de serviço continuado de suma importância para a Anatel. O item 2.1 da Cláusula Segunda do Contrato traz a previsão para prorrogações sucessivas:
+2.1 O prazo de vigência deste Termo de Contrato é de 12 (doze) meses com início em 1º de julho de 2022, podendo ser prorrogado por interesse das partes até o limite de 60 (sessenta) meses, desde que haja autorização formal da autoridade competente e seja observado o disposto no Anexo IX da IN SEGES/MP n.º 05/2017, atentando, em especial, para o cumprimento dos seguintes requisitos:
+3.4. As justificativas apostas no Documento de Oficialização de Demanda de TI (SEI nº 6701658) permanecem válidas e atuais. Vejamos:
+7.1 A Anatel tem grande dependência de seus sistemas de informação, que auxiliam fortemente no desempenho de suas atividades meio e finalísticas. Correntemente, a Anatel é detentora de um portfólio de mais de 160 sistemas e mais de 300 bases de dados em produção, de acordo com o Produto VI.3. versão 1.3.4 do Relatório contendo o Plano de Melhorias e Novo Mapa de Sistemas apresentado pela Consultoria Advisia (SEI nº 1128255).
+7.2 Este extenso conjunto de aplicações e bases de dados corporativas armazena, processa e dá origem a grande quantidade de dados (estruturados e não estruturados), na ordem de muitos Terabytes, a partir dos quais são obtidas informações com o objetivo de suportar as atividades da Agência.
+7.3 Os dados disponíveis, se considerados isoladamente, não agregam qualquer valor à organização, pois não conduzem a nenhuma compreensão, não embasam conclusões nem tampouco respaldam decisões. Em princípio, os dados isoladamente representam algo que não tem sentido. Contudo, ao serem submetidos a processos de governança, gestão, organização, ordenação, relacionamento, contextualização e abstração, transitando de sua forma estática para estados mais dinâmicos, passam a agregar significado e compreensão dentro de um determinado contexto, o que resulta na produção de informações seguras para suportar melhor as atividades da Agência, sobretudo tomada de decisões.
+7.4 Resta claro, portanto, que os dados não só precedem, mas inauguram a construção de informações confiáveis e contextualizadas. Em decorrência, não se pode esperar que dados de baixa qualidade originem informações de alta qualidade.
+7.5 Ocorre que, quando usuários de dados encontram algum tipo de problema que comprometa sua confiabilidade, perdem convicção no uso desses dados e tornam-se menos propensos a utilizá-los para tomadas de decisões futuras. Pior é quando usam os dados para tomar uma decisão de negócio apenas para descobrir, em retrospectiva, que os dados eram imprecisos. Depois de um tempo, os usuários acabam desistindo completamente dos dados e passam a confiar apenas em sua intuição.
+7.6 Isto impacta negativamente a manutenção dos dados, que tornam-se progressivamente irrelevantes e falhos. E o ciclo se repete, num fenômeno convencionado como "Data Wheel of Death", ou "roda da morte dos dados", representada pela figura abaixo:
+7.7 Esta contratação relaciona-se exatamente com a busca pela boa e constante manutenção dos dados e apoio às áreas para alavancar mais as análises de dados. Tal busca passa pela execução de procedimentos como consultas de procedência dos fatos, verificações das composições dos elementos e avaliação da consistência das informações disponíveis, além da gestão de ferramentas especializadas como Qlik Sense, SAS e Power Designer, para citar apenas alguns exemplos.
+7.8 Outra vertente importante da presente iniciativa diz respeito ao apoio que presta ao processo de desenvolvimento de software. A confiança nos dados repassados para as camadas de software, sejam eles desenvolvidos internamente ou não, é essencial para que os usuários se utilizem plenamente das ferramentas que lhes são disponibilizadas.
+3.5. Percebe-se, portanto, a necessidade de manter a continuidade de serviços mais especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence, gestão de dados, engenharia de dados e ciência de dados da Anatel, a fim de aumentar a confiabilidade e disponibilidade dos dados e gerar oportunidades inovadoras sobre os dados por meio de técnicas avançadas, como BI, ciência de dados, aprendizagem de máquina e Inteligência Artificial (IA).
+3.6. A Estratégia de Governo Digital (EGD), dentre os "Objetivos Estratégia de Governo Digital - 2024/2027", estabelece o objetivo estratégico "OB07 Políticas públicas baseadas em dados e evidências". Neste sentido, esta prorrogação tem entre seus objetivos a continuidade do fornecimento de suporte direto e indireto para maximizar o apoio às políticas públicas, regulamentos e demais ações regulatórias baseadas em dados e evidências. Estes objetivos podem ser alcançados por meio da disponibilidade de dados com qualidade e através de soluções de análise de dados, como também por meio de soluções baseadas em análises avançadas, tais como a utilização de inteligência artificial e aprendizagem de máquina.
+3.7 O Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13062049) e a Estratégia Brasileira de Inteligência Artificial (EBIA) destacam a latente necessidade de investimento em soluções de inteligência artificial, justificando, portanto, a continuidade de prestação de serviços especializados para o desenvolvimento de soluções baseadas nesta tecnologia.
+3.8. Soma-se a isso o fortalecimento das recomendações do Gartner no paper "2019 Planning Guide for Data and Analytics", publicado em 5 de outubro de 2018 (ID G00361501), e do modelo de análise de dados adotado na Anatel, onde esta contratação suporta modelo federado de BI para entregar, gerenciar e dimensionar BI de forma eficaz, fornecendo autonomia aos usuários de negócios, mantendo os padrões de arquitetura corporativa. Dentro do modelo federado, a equipe central de BI deve possuir capacidade e especialização suficientes para padronizar e gerenciar a arquitetura de BI, como também deve ser capaz de atender as necessidades de áreas que não possuem pessoas com conhecimento para tal, construir suas análises de dados ou para atender às necessidades de negócio mais complexas no que tange a dados, por exemplo, revisando ou criando modelos e algoritmos de aprendizagem de máquina e inteligência artificial.
+3.9.Desta maneira, a prorrogação dará continuidade às melhores práticas de Analytics e Business Intelligence (BI), através de uma melhor gestão das soluções de BI, da disponibilização e publicação de dados, suportados pela ampliação do conhecimento dos envolvidos e da comunicação com o restante da Agência. Com sua realização, espera-se imprimir um maior ritmo à alfabetização de dados já iniciada na organização e ao aprimoramento de BI e da análise de dados na Agência, causando assim um maior alinhamento dos investimentos analíticos com os objetivos estratégicos, criando novas oportunidades de negócios por meio da inovadora tecnologia analítica, facilitando o auto-atendimento de recursos analíticos em toda a organização e apoiando o processo de tomada de decisões mais complexas por meio de análises de dados mais sofisticadas.
+No tocante à análise qualitativa e quantitativa dos benefícios e resultados alcançados na última vigência, bem como à análise da demanda atual e de sua compatibilidade para a próxima vigência, a SGI apresentou as informações necessárias nos itens 3.11. a 3.12. do Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, vejamos a seguir os destaques mais relevantes:
+Informe nº 5/2026/GIIB/SGI (SEI nº 15120383)
+Da análise qualitativa e quantitativa e compatibilidade da demanda atual para próxima vigência 
+3.11. Qualitativamente, analisando o histórico da empresa, desde o início da vigência do Contrato nº 60/2022 (SEI nº 8559348), por meio do processo de acompanhamento da execução contratual 53500.052229/2022-79, pode-se afirmar que há satisfatória execução do serviço, atestando-se, portanto, a qualidade do serviço contratado. A CONTRATADA tem atendido às expectativas da Anatel, de modo que a manutenção do contrato tem proporcionado os seguintes benefícios:
+3.11.1. Continuidade de serviços técnicos especializados na área de Tecnologia da Informação de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados;
+3.11.2. Intensificação do uso de dados como instrumento de decisão e inovação, de transformação dos processos produtivos e de incremento da produtividade, colaborando ainda com a transparência governamental e a prestação de serviços digitais. Isso tem auxiliado a Anatel a lidar mais facilmente com a quantidade de dados produzidos, crescentemente a taxas incríveis;
+3.11.3. Elevação do nível dos requisitos de qualidade dos dados (precisão, completude, consistência, atualidade, precisão numérica, disponibilidade e unicidade);
+3.11.4. Alcance das estratégias corporativas suportadas pela TI, com maior disponibilidade dos dados tanto para o público interno como para o público externo, ampliando o uso dos dados e possibilitando soluções inovadoras a partir dos dados da Anatel ou coletados por ela;
+3.11.5. Fomento do uso das soluções e das melhores práticas de Analytics e Business Intelligence (BI), através de uma melhor gestão das soluções de BI, da disponibilização e publicação de dados, suportados pela ampliação do conhecimento dos envolvidos e da comunicação com o restante da Agência. Com sua realização, percebe-se um maior ritmo à alfabetização de dados já iniciada na organização e o aprimoramento de BI e da análise de dados na Agência, causando assim um maior alinhamento dos investimentos analíticos com os objetivos estratégicos, criando novas oportunidades de negócios por meio da inovadora tecnologia analítica, facilitando o autoatendimento de recursos analíticos em toda a organização e apoiando o processo de tomada de decisões mais complexas por meio de análises de dados mais sofisticadas;
+3.11.6. Fornecimento de suporte direto e indireto para maximizar o apoio às políticas públicas, regulamentos e demais ações regulatórias baseadas em dados e evidências. Estes objetivos são alcançados por meio da disponibilidade de dados com qualidade e através de soluções de análise de dados, como também por meio de soluções baseadas em análises avançadas, tais como a utilização de inteligência artificial e aprendizagem de máquina;
+3.11.7. Atendimento ao Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799) e à Estratégia Brasileira de Inteligência Artificial (EBIA), que incluem a latente necessidade de investimento em soluções analíticas avançadas, baseadas em aprendizagem de máquina e inteligência artificial, justificando portanto a necessidade de prestação de serviços especializados para o desenvolvimento de soluções baseadas em inteligência artificial.
+3.12. Quantitativamente, não há necessidade de alterar os números de postos de trabalho contratados, tendo em vista que o disposto no item 2 do Estudo Técnico Preliminar da Contratação (SEI nº 6701662) continua válido. Justifica-se a prorrogação por mais 12 (doze) meses, considerando que tal período permitirá a boa e constante manutenção dos dados, com apoio às áreas da Agência para continuar alavancando suas análises de dados, além do apoio ao processo de desenvolvimento de software, uma vez que a confiança nos dados repassados para as camadas de software, sejam eles desenvolvidos internamente ou não, é essencial para que os usuários se utilizem plenamente das ferramentas que lhes são disponibilizadas. Ainda com relação aos benefícios e os resultados alcançados, em termos quantitativos e qualitativos, durante a vigência que se encerra e o dimensionamento originalmente planejado, cabe resgatar aspectos do dimensionamento e metas inicialmente planejadas a partir do Estudo Técnico Preliminar da Contratação supracitado:
+2.2.3. Se faz necessário ressaltar que o Contrato nº 68/2020 foi assinado em 13/07/2020, enquanto novas demandas de ciência de dados, aprendizagem de máquina e inteligência artificial foram formalizadas por meio do PDTIC 21/22, que foi aprovado pela Portaria nº 1.208, SEI nº 5911075. As referidas demandas são:
+a) O Memorando nº 10/2020/PR (SEI nº 5257839) apresentou a necessidade de "Contratação de software ou solução de TIC de inteligência artificial (ferramentas de deep learning como Victoria, Drª Luiza e/ou OABJuris) adaptadas e personalizadas às necessidades da Agência para automação de pesquisa de precedentes, jurisprudência, análise preliminar das petições protocoladas e confecção de minutas de documentos (Informes, Votos, Análises)". Neste documento avaliaremos as soluções elencadas, suas funcionalidades e as formas de desenvolvimento ou contratação adotadas pelas organizações detentoras destas soluções;
+b) O Memorando nº 10/2020/PR (SEI nº 5257839) apresentou a necessidade “Avaliar a viabilidade de se estabelecer convênio com o STJ, de forma a cooperar no desenvolvimento e fazer uso do Projeto Sócrates, Sistema de Inteligência Artificial capaz de examinar Recursos e Acórdãos Recorridos”. Neste documento avaliaremos o Projeto Sócrates e outras soluções baseadas em inteligência artificial do STJ, considerando a possibilidade de aplicação no contexto da Anatel;
+c) O Memorando nº 8/2020/CB (SEI nº 5245465) demandou “Solução de inteligência artificial adaptada às necessidades da Agência para automação de pesquisa de precedentes e análise de Recursos e Acórdãos Recorridos”, que demonstra grande alinhamento com as demais demandas citadas anteriormente neste documento.
+...
+2.7. Em que pese o cuidado adotado pela EPC no planejamento feito, não há que se ignorar as dificuldades existente para apontamento das quantidades de ocorrências das atividades a serem desempenhadas no âmbito da contratação. Embora exista um PDTIC que formaliza a alocação de recursos (financeiros, humanos, materiais etc) para que a TI atenda às demandas do negócio, inexiste uma ponte entre o instrumento estratégico e a capilaridade necessária à aferição mais precisa da quantidade de demandas em suporte a análise e gerenciamento de dados. Não se sabe, a priori, com o devido nível de detalhamento, quais sistemas e demandas ocorrerão e em quais momentos.
+2.8. O que se conhece com certeza é a existência de um número significativo de demandas reprimidas e de oportunidades de melhoria já identificadas, o que se pode obter ao consultar os registros do Sistema de Gestão de Demandas (SGD) adotado, denominado Taiga e acessível em https://taiga.anatel.gov.br/, como também pode ser observado na Planilha SEI nº 7672032, que armazena as demandas que ainda não foram adicionadas ao backlog de atendimento via SGD e apresenta o estado das demais demandas, para fins de gestão e análise estatística.
+...
+2.10. Sabe-se também que demandas de suporte a análise e gerenciamento de dados surgirão a partir de necessidades cultivadas no planejamento institucional da Anatel, em especial em função da diretriz estratégica "Proporcionar o fortalecimento institucional" e do tema "Inteligência Regulatória". Também brotarão do próprio Plano Diretor de Tecnologia da Informação e Comunicação (PDTIC) 2019-2020, em função de ações como "Formalizar Programa de Gestão da Informação" ou "Estruturar Projeto de Governança de Dados e Informações", ou das metas "Ampliar a disponibilização de dados abertos", "Prover serviços e sistemas de qualidade", "Prover ações de suporte à gestão da informação" e "Adequar os sistemas de TI ao Plano Estratégico".
+2.11. Há, portanto, uma tendência de crescimento do número de demandas a serem atendidas, a saber:
+a) do projeto Data e Analytics, cujo plano de ação tem alavancado o Business Intelligence e a análise de dados na Anatel, formalizado por meio do processo nº 53500.027461/2018-92;
+b) da existência de demandas de saneamento das bases de dados de coletas pré-existentes, de implantação de outras soluções ou tecnologias emergentes (como machine learning, deep learning e inteligência artificial) e de alteração de atribuições ou dos subprocessos integrantes do processo "Gerir Dados", justamente pela ausência de recursos aptos e suficientes para executá-las;
+c) do atendimento ao plano de transformação que migrará várias aplicações transacionais para soluções baseadas em ferramentas especializadas para coleta e análise de dados, visto que a grande maioria dos Sistemas da Anatel realizam recebimento de dados e geração de relatórios. A estratégia para implementação deste plano tem sido viabilizada por meio do uso do DICI (sistema único para coleta de dados da Anatel), da construção de dashboards por meio do Qlik Sense para publicação e análises diretamente pelos usuários sobre os dados e da publicação externa de dashboards por meio do Portal de Painéis de Dados, como também através das análises de dados e de inteligência desenvolvidas através das soluções que compõe o SAS adquirido pela Anatel. Neste sentido, espera-se não somente continuar com esta estratégia, mas têm-se a expectativa que o novo contrato represente aporte de capacidade para as atividades ainda não executadas;
+d) do fato da continuidade da participação dos profissionais contratados em reuniões, discussões, cerimônias e construção de soluções junto aos Times Ágeis das frentes de desenvolvimento conduzidas pela Gerência de Planejamento, Desenvolvimento e Segurança de Sistemas (GIDS), onde trabalharão no atendimento de demandas afetas a dados no âmbito desses projetos de desenvolvimento, realizando, por exemplo, a proposição, revisão e validação de Modelos de Dados. Não somente sobre os projetos no formato de Times Ágeis, os profissionais de dados também poderão ser demandados a qualquer momento para opinar sobre bancos de dados de sistemas já existentes ou no âmbito de evoluções pontuais que envolvam mudanças na estrutura do banco de dados;
+e) da existência de demandas reprimidas relacionadas ao suporte, análise e gerenciamento de dados que a GIIB tem que atender toda a Anatel no âmbito do modelo de Business Intelligence (BI) federado mencionado no item 1.2.5, mas que não vem tendo capacidade de atender tempestivamente por falta de pessoal de servidores (em termos de quantidade e em conhecimento especializado) e por deficiências no formato e limitações de escopo e recursos dispostos no supramencionado Contrato nº 68/2020 a ser substituído;
+f) da expectativa do surgimento de novas demandas decorrentes do progressivo estabelecimento de uma cultura de alfabetização e literacia de dados onde, em linha com o termo conceituado pelo Massachusetts Institute of Technology (MIT) e pela Emerson University, prevê-se aumento nas capacidades institucionais de ler, trabalhar, analisar e discutir com dados, com decorrente desenvolvimento e aprimoramento de novas e poderosas habilidades no mundo dos dados e da análise de dados.
+2.12. Em que pese todo o levantamento feito, a exata medida da demanda a ser atendida caracteriza-se ainda por um forte componente estocástico e por um grau nada irrelevante de incerteza, que sofre grande influência da evolução de projetos relativos à regulação, contexto das áreas de negócio, sazonalidades, projetos governamentais, adaptação às medições feitas do mercado, regulamentação e desenvolvimento de soluções de TIC. Também é importante citar as incertezas ligadas às demandas oriundas de órgãos externos, em especial às demandas de dados por parte de órgãos de controle.
+3.12.1. No tocante às demandas contidas na Planilha SEI nº 7672032 indicada no Estudo Técnico Preliminar, apresenta-se anexo nova versão da planilha de demandas previstas, SEI nº 15386092, contendo atualização da lista de demandas neste momento e da coluna "Situação da Demanda", por meio da qual se verifica o tratamento que foi dado às demandas originalmente previstas na época da licitação e ao longo das quatro primeiras vigências do Contrato nº 60/2022 (SEI nº 8559348), somando até o momento de redação deste documento cerca de 45 meses.
+3.12.2. Quanto às demandas previstas, descritas no Estudo Técnico Preliminar da Contratação SEI nº 6701662, cabe atualizar que, no contexto da Inteligência Artificial:
+a) Encontram-se em andamento atividades relacionadas ao Projeto SEI IA, solução de inteligência artificial implantada na Agência desde agosto de 2024, estruturada em dois subcomponentes: o SEI-IA SIMILARIDADE, voltado à recomendação de processos e documentos similares, e o SEI-IA ASSISTENTE, responsável pelo assistente baseado em IA generativa para interação com documentos do SEI. A solução disponibiliza funcionalidades de resumo, tradução, revisão e classificação de documentos, bem como localização de trechos relevantes em processos extensos. Integram ainda o escopo do projeto o desenvolvimento de modelos de anonimização de dados pessoais em processos administrativos;
+b) Encontra-se em desenvolvimento o Assistente ANA, solução de IA generativa voltada ao suporte na navegação do arcabouço regulatório da Agência. A ferramenta destina-se a responder consultas sobre normas, resoluções, atos e jurisprudência regulatória de forma contextualizada, com suporte a agentes personalizados, agentes inteligentes, buscas na Web e consulta a bases de dados, ampliando o acesso qualificado ao conhecimento regulatório por parte do consumidor;
+c) Encontra-se em fase final de desenvolvimento o Projeto Melhor Rota, solução de IA destinada à estimação das rotas mais eficientes para a implantação de infraestrutura de fibra óptica, com foco na minimização de custos e na maximização da cobertura de localidades sem acesso à banda larga. A solução articula dados geoespaciais, informações de infraestrutura preexistente e indicadores socioeconômicos para subsidiar o planejamento estratégico da expansão da conectividade no País;
+d) Encontra-se em desenvolvimento o Projeto AvalIA, solução de inteligência artificial voltada à avaliação automatizada de dados e indicadores regulatórios setoriais, com vistas a aprimorar a capacidade analítica da Agência na identificação de desvios de qualidade, no acompanhamento do desempenho das prestadoras e na geração de subsídios para a tomada de decisão regulatória;
+e) Recentemente, foram levantadas novas necessidades de soluções corporativas de ciência de dados junto às Superintendências, já incluídas na citada nova versão da planilha de demandas previstas, SEI nº 15386092.
+3.12.3. Sobre a planilha de demandas previstas, no contexto das atividades relacionadas aos analistas de dados, destaca-se que (além das mais diversas demandas afetas a gestão, administração, análise e engenharia de dados):
+a) Estes acompanham todo o desenvolvimento e manutenção evolutiva de sistemas, sendo responsáveis pelo entendimento do negócio para a consequente boa modelagem do banco de dados do sistema, o que ocupa estes analistas boa parte do período;
+b) O desenvolvimento de diversas coletas de dados setoriais realizadas por meio do Sistema de Coleta de Dados Anatel, o que envolve, para cada coleta desenvolvida, a modelagem da estrutura de dados a serem gravados no DW da Anatel, criação de procedimentos de transformação de dados (ETLs) e o desenvolvimento das regras de qualidade sobre estes dados;
+c) O desenvolvimento de scripts em Python para atender demandas de carga e monitoramento de dados ou operações complexas, como por exemplo a movimentação de arquivos grandes recebidos das prestadoras de telecomunicações via SFTP, a geração de arquivos com dados georreferenciados a partir de manchas de cobertura de telefonia móvel e até a realização de uma ponte entre a ferramenta Qlik Sense e outros scripts Python feitos pelas áreas negociais;
+d) A manutenção da arquitetura de Big Data On-Premise utilizando Spark, Python e demais tecnologias de Big Data para carregar dados de qualidade de telefonia móvel e de registros de detalhes de chamadas com fins de fiscalização. Esta atividade está em andamento e servirá de prova de conceito para a gradual migração para a nuvem, objeto do Contrato Nº 11/2026 (SEI nº 15165198), com o SERPRO e que está em vias de operacionalização;
+e) A organização de uma arquitetura de geoprocessamento com o ArcGIS Enterprise, adquirido através do Contrato Nº 120/2025 (SEI nº 14747073), que demandará apoio dos analistas na estruturação e gerenciamento dos dados disponibilizados para a criação de mapas e painéis pelas áreas negociais da Anatel.
+3.12.4. A execução contratual tem crescido, tendo em vista a necessidade das demandas (muitas ainda reprimidas) e novas demandas e oportunidades que surgem constantemente, sempre observada a capacidade de gestão da execução contratual por parte da própria Anatel, de forma que até este mês de março de 2026 a alocação de profissionais atingiu os seguintes quantitativos, em comparação com o máximo previsto no Contrato nº 60/2022 (SEI nº 8559348):
+ Comparativo de alocação de profissionais ao longo da vigência
+ Perfil Profissional
+ | 
+ Quantidade Máxima de Postos prevista no Contrato nº 60/2022 (SEI nº 8559348)
+ | 
+ Quantidade alocada em julho/2022 (início do Contrato)
+ | 
+ Quantidade alocada em junho/2023 (após um ano de contrato) | 
+ Quantidade alocada em junho/2024 (após dois anos de contrato) | 
+ Quantidade alocada em junho/2025 (após três anos de contrato)
+ | 
+ Quantidade alocada em março/2026 (após três anos e nove meses de contrato) | 
+ Cientista de Dados Especialista
+ | 
+ 1
+ | 
+ 0
+ | 
+ 0
+ | 
+ 1
+ | 
+ 1
+ | 
+ 1
+ | 
+ Cientista de Dados Sênior
+ | 
+ 4
+ | 
+ 1
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ Cientista de Dados Pleno
+ | 
+ 4
+ | 
+ 2
+ | 
+ 2
+ | 
+ 2
+ | 
+ 1
+ | 
+ 2
+ | 
+ Analista de Dados Sênior
+ | 
+ 6
+ | 
+ 3
+ | 
+ 4
+ | 
+ 5
+ | 
+ 6
+ | 
+ 6
+ | 
+ Analista de Dados Pleno
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ 4
+ | 
+ Total
+ | 
+ 19
+ | 
+ 10
+ | 
+ 14
+ | 
+ 16
+ | 
+ 16
+ | 
+ 17
+ | 
+3.12.5. Conforme tabela acima, percebe-se um crescimento gradual na alocação dos profissionais nestes quarenta e cinco meses de vigência contratual, como reflexo do equilíbrio entre a quantidade de demandas, a capacidade e amadurecimento da Anatel para gerir as atividades inerentes e a quantidade de profissionais alocados. Comparando-se com a quantidade de demandas previstas, identifica-se que não há ociosidade do quadro de profissionais. Pelo contrário, a demanda da instituição pelos serviços relacionados com análise de dados e com ciência de dados levam à previsão de que a alocação de profissionais tende a aumentar com o amadurecimento das necessidades, demandas desenvolvidas ou em desenvolvimento e com o surgimento constante de novas oportunidades de inovação em dados.
+3.12.6. Acrescenta-se que nos últimos anos, como fruto de iniciativas estratégicas que privilegiam a gestão baseada em dados, a Anatel tem se tornado referência na sua atuação no serviço público brasileiro, sendo uma das instituições do serviço público federal que mais produzem painéis de dados.
+3.12.7. Sobre a necessidade de adequação quantitativa e/ou qualitativa para a presente prorrogação contratual, reforça-se a fundamentação que foi dada quando da própria contratação, no sentido de que:
+a) O quantitativo de demandas já existentes e represadas é suficiente para se dar continuidade à execução contratual, sem alterações, por mais uma vigência;
+b) O modelo de gestão incorporado pela Anatel, que tem como princípio a decisão baseada em evidências fornecidas por dados, requer da área de tecnologia um esforço contínuo de implementação e manutenção de infraestrutura e soluções relacionadas a dados;
+c) Novas demandas e oportunidades surgem constantemente, representando tendência de crescimento do número de demandas de dados, o que, tão quanto ocorre com desenvolvimento de sistemas, representa forte componente estocástico e grau relevante de incerteza para prever com exatidão volume de demanda futura. Desta forma, não se observa como aconselhável qualquer diminuição no quantitativo previsto contratualmente, pois representaria elevado risco de limitação intransponível de capacidade de atendimento das demandas;
+d) O novo "boom" pelo qual vem passando, não apenas a área de ciência de dados, mas a sociedade como um todo, em razão dos Grandes Modelos de Linguagem (Large Language Models - LLMs), a exemplo do GPT, demandará cada vez mais profissionais de ciência de dados com elevada capacitação para desenvolvimento de soluções de IA.
+3.12.8. Apenas à título de exemplificação do volume de demandas atendidas pelos profissionais alocados no presente Contrato, seguem dados sobre:
+3.12.8.1. As Coletas de Dados Setoriais, que podem ser consultados neste Painel, como dito mais acima, realizadas por meio do Sistema de Coleta de Dados Anatel:
+3.12.8.2. O controle geral das demandas de dados sob a gestão do presente Contrato, que podem ser consultados neste Painel:
+Total
+Projetos Abertos (em andamento)
+3.12.9. Assim sendo, tendo em vista a fase ainda de amadurecimento da Anatel no contexto das demandas de análise e de ciência de dados, atrelada à expectativa de natural incremento das demandas atendidas por meio deste contrato, entende-se que a postura mais adequada é a manutenção das condições do Contrato nº 60/2022 (SEI nº 8559348), tanto no seu aspecto quantitativo quanto qualitativo, através desta prorrogação.
+Em relação à vantajosidade econômica na prorrogação, a Instrução Normativa SEGES/MPDG nº 05/2017, em seu Anexo IX, item 7, traz as seguintes disposições:
+Instrução Normativa SEGES/MPDG nº 05/2017
+Anexo IX - DA VIGÊNCIA E DA PRORROGAÇÃO
+(...)
+7. A vantajosidade econômica para prorrogação dos contratos com mão de obra exclusiva estará assegurada, sendo dispensada a realização de pesquisa de mercado, nas seguintes hipóteses:
+a) quando o contrato contiver previsões de que os reajustes dos itens envolvendo a folha de salários serão efetuados com base em Acordo, Convenção, Dissídio Coletivo de Trabalho ou em decorrência de lei;
+b) quando o contrato contiver previsões de que os reajustes dos itens envolvendo insumos (exceto quanto a obrigações decorrentes de Acordo, Convenção, Dissídio Coletivo de Trabalho e de lei) e materiais serão efetuados com base em índices oficiais, previamente definidos no contrato, que guardem a maior correlação possível com o segmento econômico em que estejam inseridos tais insumos ou materiais ou, na falta de qualquer índice setorial, o Índice Nacional de Preços ao Consumidor Amplo (IPCA/IBGE); e
+c) no caso dos serviços continuados de limpeza, conservação, higienização e de vigilância, os valores de contratação ao longo do tempo e a cada prorrogação serão iguais ou inferiores aos limites estabelecidos em ato normativo da Secretaria de Gestão do Ministério do Planejamento, Desenvolvimento e Gestão.
+Nesse sentido, a Câmara Permanente de Licitações e Contratos da Advocacia-Geral da União, por meio do Parecer nº 04/2018/CPLC/PGF/AGU (SEI nº 2896756), apresentou o seguinte entendimento:
+Parecer nº 04/2018/CPLC/PGF/AGU (SEI nº 2896756)
+3. CONCLUSÃO
+52. Pelo exposto, podemos concluir que:
+(...)
+d) A vantajosidade da prorrogação nos contratos de serviços continuados com dedicação exclusiva de mão de obra estará assegurada quando houver previsão no ajuste dos requisitos previstos no item 7 do Anexo IX da IN nº 05/2017-SEGES/MP;
+e) A vantajosidade da prorrogação nos contratos de serviços continuados sem dedicação exclusiva de mão de obra estará assegurada quando houver previsão contratual de índice de reajustamento de preços, o que não impede que o gestor, diante das especificidades do contrato firmado, da competitividade do certame, da adequação da pesquisa de preços que fundamentou o valor de referência da licitação, da realidade de mercado, bem como da eventual ocorrência de circunstâncias atípicas no setor da contratação, decida, de maneira fundamentada, pela realização da pesquisa de preços.
+Ademais, o Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372) dispõe no seguinte sentido:
+59. Conclui-se, à vista do exposto, que, para os contratos de serviços continuados com dedicação exclusiva de mão de obra, a vantajosidade da prorrogação estará assegurada quando o contrato preencher os requisitos previstos no item 7 do Anexo IX da IN nº 05/2017-SEGES/MP. Por outro lado, nos contratos de serviços continuados sem dedicação exclusiva de mão de obra, a vantajosidade da prorrogação estará assegurada quando houver previsão contratual de índice de reajustamento de preços.
+Considerando o exposto acima, verifica-se que se encontram presentes as previsões contratuais supra na CLÁUSULA SÉTIMA do Contrato nº 60/2022 - Anatel (SEI nº 8559348), in verbis:
+CLÁUSULA SÉTIMA – do REAJUSTAMENTO DE PREÇOS EM SENTIDO AMPLO.
+7.1 As regras acerca do reajustamento de preços em sentido amplo do valor contratual (reajuste em sentido estrito e/ou repactuação) são as estabelecidas no Termo de Referência, anexo I deste Contrato.
+Nesse sentido é importante destacar o disposto nos itens 3.29. a 3.35. do Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026:
+Informe nº 5/2026/GIIB/SGI (SEI nº 15120383)
+Da pesquisa de preços de preços e da vantajosidade econômica do Contrato
+3.29. O Parecer Referencial nº 03/2020/PFE-Anatel/PGF/AGU (SEI nº 5553372) traz o seguinte:
+59. Conclui-se, à vista do exposto, que, para os contratos de serviços continuados com dedicação exclusiva de mão de obra, a vantajosidade da prorrogação estará assegurada quando o contrato preencher os requisitos previstos no item 7 do Anexo IX da IN nº 05/2017-SEGES/MP.
+3.30. A Instrução Normativa nº 05/2017, por sua vez, em seu Anexo IX, item 7, possibilita a dispensa da pesquisa de preços em determinadas situações:
+7. A vantajosidade econômica para prorrogação dos contratos com mão de obra exclusiva estará assegurada, sendo dispensada a realização de pesquisa de mercado, nas seguintes hipóteses:
+a) quando o contrato contiver previsões de que os reajustes dos itens envolvendo a folha de salários serão efetuados com base em Acordo, Convenção, Dissídio Coletivo de Trabalho ou em decorrência de lei;
+b) quando o contrato contiver previsões de que os reajustes dos itens envolvendo insumos (exceto quanto a obrigações decorrentes de Acordo, Convenção, Dissídio Coletivo de Trabalho e de lei) e materiais serão efetuados com base em índices oficiais, previamente definidos no contrato, que guardem a maior correlação possível com o segmento econômico em que estejam inseridos tais insumos ou materiais ou, na falta de qualquer índice setorial, o Índice Nacional de Preços ao Consumidor Amplo (IPCA/IBGE); e
+c) no caso dos serviços continuados de limpeza, conservação, higienização e de vigilância, os valores de contratação ao longo do tempo e a cada prorrogação serão iguais ou inferiores aos limites estabelecidos em ato normativo da Secretaria de Gestão do Ministério do Planejamento, Desenvolvimento e Gestão.
+3.31. A hipótese "a" elencada no item 7 do Anexo IX da IN nº 05/2017 está prevista na Cláusula Sétima do Contrato nº 60/2022 (SEI nº 8559348):
+CLÁUSULA SÉTIMA – do REAJUSTAMENTO DE PREÇOS EM SENTIDO AMPLO.
+7.1 As regras acerca do reajustamento de preços em sentido amplo do valor contratual (reajuste em sentido estrito e/ou repactuação) são as estabelecidas no Termo de Referência, anexo I deste Contrato.
+3.32. Por sua vez, o Contrato nº 60/2022 (SEI nº 8559348) menciona o Termo de Referência (SEI nº 8113514), anexo ao Contrato, como referência para as regras de reajustamento:
+21. DO REAJUSTAMENTO DE PREÇOS EM SENTIDO AMPLO (REPACTUAÇÃO)
+(...)
+21.5.1 Para os custos relativos à mão de obra, vinculados à data-base da categoria profissional: a partir dos efeitos financeiros do Acordo, Convenção ou Dissídio Coletivo de Trabalho, vigente à época da apresentação da proposta, relativo a cada categoria profissional abrangida pelo contrato.
+3.33. Destaca-se, por oportuno, que o próprio Tribunal de Contas da União prevê a possibilidade de dispensa da pesquisa de preços, por ocasião da prorrogação, nos contratos com e sem dedicação exclusiva de mão-de-obra, conforme Portaria TCU nº 128/2014:
+Art. 24 (...)
+(...)
+§3º A vantajosidade econômica, de que trata o inciso IV do caput deste artigo, para prorrogação de contratos de serviços continuados para fornecimento de bens ou utilidades, produzidos ou elaborados nas dependências do TCU ou fora delas, estará assegurada, dispensando-se a realização de pesquisa de preços, quando houver previsão contratual de que o objeto contratado será reajustado tendo por base índice previamente definido no edital.
+3.34. Ressalta-se, portanto, que o intuito é desburocratizar o procedimento de realização de pesquisa de preços no momento da prorrogação, tornando esta etapa procedimental mais célere e ágil, regendo-se, portanto, pelo princípio da economicidade, intrínseco ao princípio da eficiência, previsto no art. 37, caput, da Constituição Federal.
+3.35. Assim, considerando-se atendidos todos os requisitos e previsões contratuais supracitados, tal pesquisa para a prorrogação contratual pode ser dispensada.
+Nos itens 3.17 a 3.24 do Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, a área gestora esclarecer sobre a manifestação expressa da Contratada quanto à prorrogação do Contrato, natureza contínua do serviço, avaliação dos serviços prestados e essencialidade do objeto e o relevante interesse público:
+Da manifestação expressa da Contratada quanto à prorrogação do Contrato
+3.17. Por meio do Ofício nº 3 (SEI nº 14998920), a Anatel consultou a FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA, sobre o interesse na prorrogação contratual nos mesmos termos do Contrato Original.
+3.18. A FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA manifestou expressamente o interesse em prorrogar o Contrato em comento, por meio do Ofício FDTI 041-2026 - Renovação (SEI nº 15003128). Assim, com a pretendida prorrogação, a vigência contratual será acrescida do período de 01/07/2026 a 30/06/2027.
+3.19. A CONTRATADA solicitou ainda no Ofício FDTI 041-2026 - Renovação (SEI nº 15003128) que na prorrogação do instrumento em tela seja observado o direito ao reajuste de preços. Neste sentido, informamos que a Cláusula Sétima do Contrato GIIB nº 60/2022 (SEI nº 8559348) prevê o reajustamento de preços. Desta maneira, as condições de reajuste serão atendidas pela Agência, conforme previsão contratual.
+3.20. Adicionalmente, a empresa encaminhou os documentos necessários para confirmação da legitimidade de seus representantes legais, responsáveis pela assinatura do Termo Aditivo.
+Da natureza contínua do serviço
+3.21. Conforme definição contida no art. 15 da IN 05/2017, o serviço a ser prorrogado se encaixa nesta definição. Vejamos:
+Os serviços prestados de forma contínua são aqueles que, pela sua essencialidade, visam atender à necessidade pública de forma permanente e contínua, por mais de um exercício financeiro, assegurando a integridade do patrimônio público ou o funcionamento das atividades finalísticas do órgão ou entidade, de modo que sua interrupção possa comprometer a prestação de um serviço público ou o cumprimento da missão institucional.
+3.22. O serviço objeto do contrato visa proporcionar a boa e constante manutenção dos dados disponíveis da Agência que, se considerados isoladamente, não agregam qualquer valor à organização, pois não conduzem a nenhuma compreensão, não embasam conclusões nem tampouco respaldam decisões. Em princípio, os dados isoladamente representam algo que não tem sentido. Contudo, ao serem submetidos a processos de governança, gestão, organização, ordenação, relacionamento, contextualização e abstração, transitando de sua forma estática para estados mais dinâmicos, passam a agregar significado e compreensão dentro de um determinado contexto, o que resulta na produção de informações seguras para suportar melhor as atividades da Agência, sobretudo na tomada de decisões, colaborando sobremaneira com o desenvolvimento das atividades finalísticas do órgão e dando apoio às atividades indispensáveis ao funcionamento do órgão. Por conseguinte, a natureza desses serviços vem a ser contínua, nos moldes definidos pelo item 3 do Anexo IX da Instrução Normativa nº 05/2017, da SLTI do MPOG, uma vez que sua interrupção pode comprometer a construção de informações confiáveis e contextualizadas da Administração. O Decreto nº 9.507, de 21 de setembro de 2018, ao dispor sobre a execução indireta das contratações de serviços pela Administração Pública Federal Direta, Autárquica e Fundacional, não vedou a contratação a que se pretende por meio da prorrogação em tela:
+Artigo 3. Não serão objeto de execução indireta na administração pública federal direta, autárquica e fundacional, os serviços:
+I - que envolvam a tomada de decisão ou posicionamento institucional nas áreas de planejamento, coordenação, supervisão e controle;
+II - que sejam considerados estratégicos para o órgão ou a entidade, cuja terceirização possa colocar em risco o controle de processos e de conhecimentos e tecnologias;
+III - que estejam relacionados ao poder de polícia, de regulação, de outorga de serviços públicos e de aplicação de sanção; e
+IV - que sejam inerentes às categorias funcionais abrangidas pelo plano de cargos do órgão ou da entidade, exceto disposição legal em contrário ou quando se tratar de cargo extinto, total ou parcialmente, no âmbito do quadro geral de pessoal.
+§ 1º Os serviços auxiliares, instrumentais ou acessórios de que tratam os incisos do caput poderão ser executados de forma indireta, vedada a transferência de responsabilidade para a realização de atos administrativos ou a tomada de decisão para o contratado.
+Da avaliação dos serviços prestados
+3.23. Os serviços foram prestados regularmente, conforme Relatórios de Acompanhamento da Execução Contratual disponíveis no processo 53500.052229/2022-79. Os fiscais também atestam em Declaração que a CONTRATADA cumpriu suas obrigações e demonstrou capacidade técnica e qualidade satisfatórias no desempenho das atividades (SEI nº 14998903).
+Da essencialidade do objeto e o relevante interesse público
+3.24. O serviço é essencial para garantir a manutenção da confiabilidade e disponibilidade dos dados da Agência, por meio da produção de informações seguras para suportar melhor as atividades da Agência, sobretudo na tomada de decisões, contribuindo assim com o desenvolvimento das atividades finalísticas do órgão e dando apoio às atividades indispensáveis ao funcionamento do órgão, de modo que sua paralisação, interrupção ou descontinuidade poderia comprometer ou prejudicar o cumprimento da missão institucional da Agência.
+No item 3.27 do Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, a área gestora informa que a não prorrogação do contrato pode acarretar os seguintes prejuízos à Agência:
+Dos riscos relacionados à não prorrogação do Contrato
+3.27. Impende registrar que caso a prorrogação em tela não seja efetivada, haveria descontinuidade de serviços de governança de dados, gestão e administração de dados, qualidade de dados, análise de dados e ciência de dados atualmente prestados por meio do atual e vigente Contrato nº 60/2022 (SEI nº 8559348), acarretando em atrasos ou equívocos de tomadas de decisões, diante de dados sem a devida confiabilidade, ocasionando seguintes impactos negativos:
+3.27.1. Falta de tratamento adequado dos sintomas relacionados à qualidade insatisfatória da gestão de dados, com decorrente estagnação ou mesmo involução em relação ao nível já alcançado pela Anatel;
+3.27.2. Sem o adequado suporte a dados, é certo que o processo de desenvolvimento de software vivenciaria ocorrências opositoras à consecução de seus objetivos e de boas práticas na gestão de dados, tais como aumento no desencontro de prazos de entrega, majoração do número de não-conformidades em avaliações da qualidade no desenvolvimento, alta na taxa de defeitos, incremento de desvios de custo e prazos em projetos, queda de produtividade e progressão na insatisfação das áreas;
+3.27.3. Estagnação ou mesmo retrocesso em relação à boa gestão de dados e à decorrente consolidação de uma base para uma arquitetura de dados que compreenda a origem dos dados e sua evolução até o alcance dos objetivos para os quais foram criados, assim como preconizado por Boulonne et al. (2010);
+3.27.4. De forma ampla, repouso ou recuo em relação à melhoria da qualidade da informação;
+3.27.5. Assimetria e limitações de regular o setor de telecomunicações, que é dinâmico e forte usuário das tecnologias mais modernas, tais como Big Data e IA, como forma de potenciar seus negócios.
+Conforme determinação contida na Portaria Anatel nº 1.148, de 2 de setembro de 2016 (SEI nº 0786999), quando da instrução de prorrogações contratuais, as áreas gestoras deverão apresentar informações acerca do a) os benefícios e os resultados alcançados, em termos quantitativos e qualitativos, durante a vigência que se encerra; e, b) a análise da demanda atual e de sua compatibilidade para a próxima vigência, providenciando, se for o caso, a adequação quantitativa e/ou qualitativa, a fim de garantir o melhor aproveitamento dos recursos orçamentários disponíveis e para melhor adequação técnica aos objetivos da contratação.
+Além desses pontos o Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, esclareceu, ainda, sobre amortização dos custos fixos ou variáveis não renováveis, valores para a prorrogação e a existência de disponibilidade orçamentária da despesa para a prorrogação:
+Da amortização dos custos fixos ou variáveis não renováveis
+3.36. Por meio da Instrução Normativa SEGES/MPDG nº 5/2017, em seu "ANEXO IX - DA VIGÊNCIA E DA PRORROGAÇÃO", item 9, prevê:
+9. A Administração deverá realizar negociação contratual para a redução e/ou eliminação dos custos fixos ou variáveis não renováveis que já tenham sido amortizados ou pagos no primeiro ano da contratação.
+3.37. Neste sentido, o Termo de Referência (SEI nº 8113514), anexo ao Contrato nº 60/2022 (SEI nº 8559348), item 1.14:
+1.14 Por ocasião da repactuação, após interregno mínimo de 1 (um) ano contado da data do Acordo, Convenção, Dissídio Coletivo de Trabalho ou equivalente vigente à época da apresentação da proposta quando a variação dos custos for decorrente da mão de obra e estiver vinculada às datas-bases destes instrumentos, as partes negociarão os custos não renováveis que irão compor o preço a ser pago pelo serviço que se pretende prorrogar, tais como equipamentos, instalações e aviso prévio.
+3.38. O Parecer Referencial da PFE/ANATEL nº 00047-2018/PFE/ANATEL/PFG/AGU (SEI nº 2638217) também recomenda:
+51. É também de todo recomendável que o órgão apure a existência de custos fixos ou variáveis não renováveis que já tenham sido amortizados ou pagos, reunindo, assim, argumentos que viabilizem eventual negociação de preços por parte da autoridade, visando reduzir ou eliminar esses custos, como também reforçar o poder de barganha da Administração.
+3.39. Frisa-se que na ocasião da primeira prorrogação de vigência contratual que ensejou o Primeiro Termo Aditivo (SEI nº 10274936) foi realizada a redução dos custos variáveis não renováveis já pagos ou amortizados no primeiro ano da contratação.
+Dos valores para prorrogação
+3.40. O valor global atualizado do Contrato GIIB nº 60/2022 (SEI nº 8559348), para o período de 12 (doze meses), conforme Informe nº 8/2026/AFCA4/AFCA/SAF (SEI nº 15315397), é de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil, quinhentos e nove reais e trinta e dois centavos).
+3.41. Com a prorrogação são previstas as despesas de R$ 4.191.754,66 (quatro milhões, cento e noventa e um mil, setecentos e cinquenta e quatro reais e sessenta e seis centavos) para o exercício corrente, e de R$ 4.191.754,66 (quatro milhões, cento e noventa e um mil, setecentos e cinquenta e quatro reais e sessenta e seis centavos) para o exercício seguinte.
+Da disponibilidade orçamentária da despesa para a prorrogação
+3.42. As despesas decorrentes da contratação correrão à conta dos recursos consignados no Orçamento Geral da União, a cargo da Anatel, disponibilizados no Programa de Trabalho nº 24.122.0032.2000.0001 - Administração da Unidade, Elemento de Despesa 33.90.40.00 - Serviços de Tecnologia da Informação e Comunicação - Pessoa Jurídica, UG: 413071.
+3.43. Por meio do Ofício nº 35 (SEI nº 15120378), foi solicitada a Declaração de Disponibilidade para cobrir as despesas com a prorrogação em pauta.
+3.44. Por meio da Declaração SEI nº 15449248, o Ordenador de Despesas da Anatel atestou a existência de recurso orçamentário para a referida prorrogação.
+A SAF, por seu turno, ao proceder à avaliação da regularidade da proposta de prorrogação para posterior análise da conveniência e oportunidade de sua realização elaborou o Informe nº 33/2026/AFCA6/AFCA/SAF (SEI nº 15536887) com o objetivo de analisar e propor ao Conselho Diretor a avaliação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022-Anatel (SEI nº 8559348), pelo período de 12 (doze) meses, de 01/07/2026 a 30/06/2027, firmado com a empresa FIRST DECISION TECNOLOGIAS INOVADORAS E INFORMÁTICA LTDA, tendo acrescentado o seguinte à análise contida no Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, da qual transcreve quase integralmente e, por já estar contida nesse voto, deixo de citá-las novamente:
+Dos valores estimados da prorrogação e da disponibilidade orçamentária
+3.13. Em consonância com a Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Anatel, o Gerente de Informações e Biblioteca/GIIB solicitou, por meio do Ofício nº 35/2026/GIIB/SGI-ANATEL (SEI nº 15120378), a declaração de disponibilidade orçamentária para a referida prorrogação.
+3.14. O Ordenador de Despesas declarou haver disponibilidade orçamentária por meio da Declaração de Disponibilidade Orçamentária SEI nº 15449248.
+Escopo de obtenção de preços e condições mais vantajosas para a Administração
+3.15. Em relação à vantajosidade econômica do Contrato, a Instrução Normativa SEGES/MPDG nº 05/2017, em seu Anexo IX, item 7, cujo teor foi corroborado pela a Câmara Permanente de Licitações e Contratos da Advocacia-Geral da União por meio do Parecer nº 04/2018/CPLC/PGF/AGU (SEI nº 2896756), trouxe a previsão de que tal vantajosidade estará assegurada quando houver previsão contratual de índice de reajustamento de preços, sendo dispensada a realização de pesquisa de mercado para a prorrogação.
+3.16. Nesse caso, encontram-se presentes as previsões contratuais de reajuste na Cláusula Sétima, do Contrato nº 60/2022 - Anatel:
+As regras acerca do reajustamento de preços em sentido amplo do valor contratual (reajuste em sentido estrito e/ou repactuação) são as estabelecidas no Termo de Referência, anexo I deste Contrato.
+Os preços inicialmente contratados são fixos e irreajustáveis no prazo de um ano contado da data limite para a apresentação das propostas.
+Após o interregno de um ano, mediante solicitação da Contratada, os preços iniciais poderão ser repactuados.
+3.17. Consoante a fundamentação acima, a área gestora do Contrato dispensou a realização da pesquisa de preços, segundo indicado no Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), transcrito abaixo:
+(...)
+Das razões e justificativas para a prorrogação
+3.18. A Área Gestora justificou a necessidade de continuação dos serviços prestados presentes no Contrato nº 60/2022 - Anatel da seguinte forma:
+(...)
+Desta maneira, a prorrogação dará continuidade às melhores práticas de Analytics e Business Intelligence (BI), através de uma melhor gestão das soluções de BI, da disponibilização e publicação de dados, suportados pela ampliação do conhecimento dos envolvidos e da comunicação com o restante da Agência. Com sua realização, espera-se imprimir um maior ritmo à alfabetização de dados já iniciada na organização e ao aprimoramento de BI e da análise de dados na Agência, causando assim um maior alinhamento dos investimentos analíticos com os objetivos estratégicos, criando novas oportunidades de negócios por meio da inovadora tecnologia analítica, facilitando o auto-atendimento de recursos analíticos em toda a organização e apoiando o processo de tomada de decisões mais complexas por meio de análises de dados mais sofisticadas.
+Das informações sobre a adequação do bem ou serviço às necessidades da Anatel
+3.19. A análise qualitativa e quantitativa dos benefícios e resultados alcançados no início da vigência e da compatibilidade da demanda atual com os prognósticos da próxima vigência foi apresentada pela Área Gestora conforme exposto no Informe nº 5/2026/GIIB/SGI (SEI nº 15120383):
+(...)
+Da regularidade da prestação do serviço pelo contratado
+3.20. Quanto à qualidade e à regularidade dos serviços prestados pela Contratada, o fiscal do Contrato atesta que os serviços são prestados de forma satisfatória e não há ocorrências de descumprimentos das obrigações contratuais, conforme Declaração exarada (SEI nº 14998903).
+Riscos relacionados à não prorrogação do contrato
+3.21. A Área Gestora apontou, no Informe nº 5/2026/GIIB/SGI (SEI n° 15120383), os seguintes riscos relacionados à não prorrogação do Contrato:
+(...)
+Do atesto de essencialidade do objeto e do relevante interesse público
+3.22. O atesto de essencialidade do objeto e do relevante interesse público, conforme prescrito no Decreto nº 8.540/2015, foi indicado no documento SEI nº 15120383, nos seguintes termos:
+O serviço é essencial para garantir a manutenção da confiabilidade e disponibilidade dos dados da Agência, por meio da produção de informações seguras para suportar melhor as atividades da Agência, sobretudo na tomada de decisões, contribuindo assim com o desenvolvimento das atividades finalísticas do órgão e dando apoio às atividades indispensáveis ao funcionamento do órgão, de modo que sua paralisação, interrupção ou descontinuidade poderia comprometer ou prejudicar o cumprimento da missão institucional da Agência.
+Verifica-se, portanto, do exposto até o presente momento que as áreas técnicas realizaram análise detalhada da proposta de prorrogação ora em debate, tendo apresentado todas as informações necessárias para justificar sua realização, em atendimento às normas aplicáveis ao caso, destacando-se a robustez contida no Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, e no Informe nº 33/2026/AFCA6/AFCA/SAF (SEI nº 15536887), de 27/04/2026.
+Destaco, ainda, que a presente proposta de prorrogação está alinhada aos requisitos e disposições previstos na legislação aplicável às contratações e suas prorrogações, em especial a Instrução Normativa SEGES/MPDG nº 05/2017, em seu Anexo IX, item 7, o Parecer nº 04/2018/CPLC/PGF/AGU (SEI nº 2896756), o Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), ao disposto na Lei nº 8.666/1993, na Lei nº 10.520/2002, na IN SEGES nº 05/2017, na IN ME nº 73/2020, e alterações posteriores, na Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023, na Lei nº 9.472, de 16 de julho de 1997 (LGT), e no Decreto nº 2.338, de 07 de outubro de 1997.
+III - DA CONVENIÊNCIA E OPORTUNIDADE DO CONTRATO ORIGINAL E PRORROGAÇÕES
+Com relação ao ato de governança estritamente relacionado a uma avaliação sobre a conveniência da despesa pública, consta do Informe nº 99/2021/AFCA1/AFCA/SAF (SEI nº 7718198), exarado no Processo nº 53500.019339/2021-48, o qual originou a contratação inicial, que a competência para o ato de Governança é do Conselho Diretor, tendo sido aberto processo apartado nº 53500.085221/2021-16 com vistas a exposição do tema àquele consultivo, conforme permissivo do §1º do artigo 4º da Portaria nº 1.197, de 23 de julho de 2018.
+No Processo nº 53500.019339/2021-48 consta aprovação da conveniência e oportunidade da contratação original pelo Superintendente de Gestão interna da Informação no Despacho Decisório nº 18/2021/GIIB/SGI (7712136):
+Despacho Decisório nº 18/2021/GIIB/SGI
+Processo nº 53500.019339/2021-48
+Interessado: Gerência de Informações e Biblioteca
+O SUPERINTENDENTE DE GESTÃO INTERNA DA INFORMAÇÃO DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais e regulamentares, considerando os limites e as instâncias para a prática de atos relacionados à contratação de obras e serviços de terceiros, aquisição de bens, gestão de contratos administrativos e administração de bens móveis e imóveis fixados pela Portaria Anatel nº 410, de 10 de junho de 2009 e suas alterações, examinando os autos do Processo em epígrafe, visto se tratar de contratação que atende aos requisitos de conveniência e oportunidade, aprova a requisição para o gasto de R$ 8.351.298,48 (oito milhões, trezentos e cinquenta e um mil duzentos e noventa e oito reais e quarenta e oito centavos) , referente à contratação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados, conforme valores estimados no Informe nº 21/2021/GIIB/SGI (SEI nº 7654511) e RMS nº 6.637, de 24 de novembro de 2021 (SEI nº 7711910).
+No Processo nº 53500.085221/2021-16 constou no Voto nº 11/2022/PR (SEI Nº 8114167) a seguinte análise acerca da aprovação do ato de governança estritamente relacionado a uma avaliação sobre a conveniência da realização da despesa pública atinente à primeira contratação:
+DA ANÁLISE
+5.9. É imperioso ressaltar que o ato de governança não envolve a análise técnica e jurídica do procedimento, nem implica ratificação ou validação dos atos que compõem o processo de contratação, consoante o disposto no art. 2º da Portaria Anatel nº 1.197/2018. A análise ora exposta refere-se, especificamente, à avaliação da conveniência da despesa pública no valor estimado acima consignado e representará a autorização para a contratação dos serviços estabelecidos na Minuta de Edital AFCA1 (SEI nº 7718307) e seus anexos.
+5.10. Em consonância ao disposto no DOD, a GIIB apresentou no item 2 do Estudo Preliminar Técnico da Contratação (SEI nº 6701662 ) as seguintes razões e justificativas para a contratação em tela:
+(...) repete informações contidas nos documentos das áreas
+5.11. No tocante ao Contrato GIIB nº 68/2020 - Anatel (SEI nº 5710779), cuja vigência encerra-se em 30/6/2022, conforme última prorrogação formalizada pelo Processo nº 53500.004197/2022-03, destaca-se que, nos termos do citado no Estudo Técnico Preliminar, o contrato vigente não prosseguirá com suas prorrogações devido à identificação de melhorias e oportunidades que apenas poderiam ser aplicadas através de uma nova contratação, tais como os casos que envolvem alteração no quantitativo dos itens, como também os casos relativos à alteração de requisitos de qualificação técnica dos perfis profissionais.
+5.12. Insta ressaltar que, conforme indicado pela Área Requisitante no item 4.2 do Estudo Preliminar Técnico da Contratação (SEI nº 6701662), o Contrato GIIB nº 68/2020 - Anatel (SEI nº 5710779) cumpre um importante papel para o atendimento das demandas de análise e ciência de dados da Anatel, no entanto as alterações no objeto almejam aprimorar a contratação atual e fornecer maior capacidade de atendimento das demandas da Agência, de maneira quantitativa e qualitativa, destacando-se, inclusive, a adoção deste modelo como referência para contratações conduzidas por outros órgãos, como a Polícia Rodoviária Federal (PRF) e o Ministério da Cidadania. Em conclusão, verifica-se que o Contrato GIIB nº 68/2020 - Anatel (SEI nº 5710779) é reconhecido pela GIIB como capaz de atender satisfatoriamente as necessidades estipuladas para seu escopo, embora ainda haja espaço para melhorias.
+5.13. No que tange à disponibilidade orçamentária, destaca-se que o gasto estimado foi requisitado pelo Gerente de Informações e Biblioteca por meio do Despacho Decisório nº 17/2021/GIIB/SGI (SEI nº 7712131 ), e aprovado pelo Superintendente de Gestão Interna da Informação, nos termos do Despacho Decisório nº 18/2021/GIIB/SGI (SEI nº 7712136). O Gerente de Finanças, Orçamento e Arrecadação, ordenador de despesas, por meio do Despacho Decisório nº 146/2021/AFFO1/AFFO/SAFI (SEI nº 7712889), atestou, nos limites da dotação orçamentária constante da LOA/2022, que há previsão de recursos para 2022 no valor de R$ 6.727.434,89 (seis milhões, setecentos e vinte e sete mil quatrocentos e trinta e quatro reais e oitenta e nove centavos), para a referida contratação, e que o valor de R$ 1.623.863,59 (um milhão, seiscentos e vinte e três mil oitocentos e sessenta e três reais e cinquenta e nove centavos), referente ao exercício de 2023, assim como para os exercícios subsequentes, deverá ser estimado e requisitado por essa área requisitante quando da elaboração da proposta orçamentária da Agência para o referido ano, ficando sua disponibilidade orçamentária condicionada à sanção da respectiva lei orçamentária.
+5.14. No tocante aos aspectos gerais legais acerca da contratação, registra-se que, conforme fundamentação exposta no Informe nº 99/2021/AFCA1/AFCA/SAF (SEI nº 7718198 ), o processo encontra-se em análise pela PFE/Anatel, de forma que o prosseguimento da presente contratação fica condicionada ao cumprimento e à motivação por parte da área requisitante e da área responsável pela contratação de todas as recomendações exaradas pelo órgão de consultoria jurídica.
+5.15. Dito isso, considerando todas as informações constantes acima, entendo que foram realizadas diligências e ações capazes de robustecer as informações referentes ao procedimento em apreço, restando devidamente justificado e motivado o valor estimado da contratação ora proposta.
+5.16. Do exposto, afigura-se, numa análise perfunctória compatível com a natureza da deliberação deste Conselho Diretor, juridicamente possível a contratação em tela.
+5.17. Deste modo, como o presente processo trata de ato de governança circunscrito a uma avaliação sobre a conveniência da despesa pública, julga-se satisfatoriamente concluído o exame dos elementos necessários a essa avaliação, nos moldes prescritos pela Portaria Anatel nº 1.197, de 23/7/2018, alterada pela Portaria nº 1.826, 1/11/2018.
+6. CONCLUSÃO
+6.1. Diante do exposto, proponho ao Conselho Diretor (CD):
+6.1.1. autorizar, no exercício de ato de governança, a realização de despesa pública no valor referencial estimado de R$ 8.351.298,48 (oito milhões, trezentos e cinquenta e um mil, duzentos e noventa e oito reais e quarenta e oito centavos) , referente à contratação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , visando atender às necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel), por um período de 12 (doze) meses, conforme condições, quantidades e exigências estabelecidas pela área requisitante (GIIB/SGI) na Minuta de Termo de Referência GIIB (SEI nº 6701667) e seus anexos, desde que atendidas todas as recomendações exaradas pela PFE/Anatel, conforme justificativas constantes no item 5.14 deste voto.
+Essa análise foi aprovado pela Ata de Circuito Deliberativo do Conselho Diretor nº 41/2022 (SEI nº 8121707) e constou da Resolução Interna 85, de 3 de março de 2022 (SEI nº 8121736).
+No Processo nº 53500.017829/2023-71 constou no Voto nº 48/2023/PR (SEI nº 10189245) a seguinte análise acerca da aprovação do ato de governança estritamente relacionado à avaliação sobre a conveniência da realização da primeira prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348):
+DA ANÁLISE
+5.7. Ressalta-se que o ato de governança não envolve a análise técnica e jurídica do procedimento, nem implica ratificação ou validação dos atos que compõem o processo de contratação, consoante o disposto no art. 2º da Portaria Anatel nº 1.197/2018 (SEI nº 2984787). A análise ora exposta refere-se, especificamente, à avaliação da adequação da despesa pública no valor, acima consignado, e representará a autorização para a prorrogação por 12 (doze) meses, de 01/07/2023 a 30/06/2024, do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , visando atender as necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel), com disponibilização de mão de obra em regime de dedicação exclusiva, que se expira em 30/06/2023.
+5.8. No que tange às justificativas e razões para a prorrogação em tela, a área gestora traz, no Informe nº 8/2023/GIMR/SGI (SEI nº 9806207), as seguintes razões para fundamentar a prorrogação em análise:
+(...) repetição das informações contidas no Informe nº 8/2023/GIMR/SGI (SEI nº 9806207)
+5.18. A partir dos dados colacionados acima, extraídos do Informe nº 8/2023/GIMR/SGI (SEI nº 9806207), verifica-se que os preços praticados no contrato permanecem vantajosos para a Administração Pública, não havendo prejuízo econômico na autorização para a prorrogação proposta.
+5.19. Entretanto, importante destacar que não compete ao Conselho Diretor a análise de planilhas de preços apresentadas pelas empresa/órgãos públicos indicados, sendo de inteira responsabilidade da área gestora a conferência e revisão dos valores informados.
+5.20. Quanto aos aspectos gerais legais acerca das prorrogações, registra-se que o procedimento em comento deve estar alinhado aos requisitos e recomendações contidos no Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), de forma a dispensar a remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e viabilizar a formalização de Termo Aditivo de prorrogação de vigência.
+5.21. Diante do exposto acima, verifica-se que, até o momento, não consta no processo nº 53500.000943/2023-62 a análise técnica da SAF quanto ao atendimento das recomendações do Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), o que deverá ser providenciado antes da assinatura do respectivo Termo Aditivo. Ademais, a existência de parecer referencial não veda a submissão dos autos à análise da PFE/Anatel caso existam dúvidas jurídicas específicas. Todavia, a pendência indicada não obsta a análise em tela, visto que a autorização da realização da despesa pública (Ato de governança) é etapa procedimental dos processos de prorrogação de vigência contratual.
+5.22. Conforme relatado no item 4.13. do presente Voto, foi realizada diligência junto à SAF e à GIIB, por meio do Memorando nº 28/2023/PR (SEI nº 10201746), para o esclarecimento de dúvidas e complemento de informações, vide:
+Memorando nº 28/2023/PR (SEI nº 10201746)
+Assunto: Diligência. Processo nº 53500.017829/2023-71.
+1. Reporto-me à Matéria para Apreciação do Conselho Diretor nº 188/2023 (SEI nº 9934154), de 24/04/2023, que propôs a aprovação (Ato de governança) e consequente autorização da realização da despesa pública no valor de R$ 6.877.189,30 (seis milhões, oitocentos e setenta e sete mil cento e oitenta e nove reais e trinta centavos), referente à prorrogação, pelo período de 12 (doze) meses, de 01/07/2023 a 30/06/2024, do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , visando atender as necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel), com disponibilização de mão de obra em regime de dedicação exclusiva, que se expira em 30/06/2023.
+2. Durante a análise dos documentos presentes no processos nº 53500.017829/2023-71 e nº 53500.000943/2023-62, foram identificados pontos que merecem esclarecimento para o seguimento da análise, vejamos:
+2.1. O valor global para a prorrogação de vigência do Contrato nº 60/2022 - Anatel (SEI nº 8559348), indicado no Informe nº 21/2023/AFCA6/AFCA/SAF (SEI nº 9934152) e na Matéria para Apreciação do Conselho Diretor nº 188/2023 (SEI nº 9934154), difere daquele requisitado e aprovado pelos Despachos Decisórios nº 4/2023/GIIB/SGI (SEI nº 9877559) e nº 5/2023/GIIB/SGI (SEI nº 9877568). Enquanto a SAF indica o montante de R$ 6.877.189,30 (seis milhões, oitocentos e setenta e sete mil cento e oitenta e nove reais e trinta centavos), a área gestora do contrato requereu e aprovou um total de R$ 6.889.444,92 (seis milhões, oitocentos e oitenta e nove mil, quatrocentos e quarenta e quatro reais e noventa e dois centavos).
+2.2. Não obstante o valor indicado pela área administrativa conste da Planilha de Custos e Formação de Preços (SEI nº 10052962), juntada ao processo nº 53500.000943/2023-62 pela Gerência de Aquisições e Contratos (AFCA) posteriormente à requisição e aprovação da despesa pela área gestora, não foi encontrada nos autos a explicação para a diferença entre o valores. Diante do exposto, solicita-se que sejam aduzidas as justificativas para a diferença entre os valores apresentados ou, caso sejam identificados erros, que se proceda à devida retificação.
+2.3. Quanto à análise da demanda atual e de sua compatibilidade para a próxima vigência, providenciando, se for o caso, a adequação quantitativa e/ou qualitativa, em atenção à Portaria Anatel nº 1.148/2016 (SEI nº 0786999), a área gestora do Contrato nº 60/2022 - Anatel (SEI nº 8559348) indicou no item 3.13. do Informe nº 8/2023/GIMR/SGI (SEI nº 9806207) que "Não há necessidade de alterar os quantitativos contratados, tendo em vista que o disposto no item 2 do Estudo Técnico Preliminar da Contratação (SEI nº 6701662) continua válido". Conquanto a indicação de manutenção das condições previstas no planejamento da contratação, solicita-se o robustecimento da análise apresentada com o confrontamento entre os resultados alcançados durante a vigência que se encerra e o dimensionamento originalmente planejado.
+2.4. Cabe registrar que o Contrato nº 60/2022 - Anatel (SEI nº 8559348) compreende 19 (dezenove) postos de trabalho que, embora alocados por meio de Ordem de Serviço (OS) de quantitativo máximo estimado sem compromisso de demanda mínima, e com a possibilidade de aplicação de ajustamento de pagamento (glosa), apresentam custo unitário mensal substancial.
+3. Considerando os pontos indicados, retornam-se os autos à origem para os ajustes necessários e posterior restituição para regular prosseguimento do feito.
+5.23. Por sua vez, a área gestora apresentou o Informe nº 10/2023/GIIB/SGI (SEI nº 10211541), no qual buscou apresentar informações complementares, em atenção ao item 2.3 do Memorando nº 28/2023/PR (SEI nº 10201746). A partir da leitura do Informe, complementado pela Planilha atualizada de demandas (SEI nº 10275994), conclui-se que foram apresentadas as motivações necessárias para justificar a manutenção dos quantitativos do Contrato nº 60/2022 - Anatel (SEI nº 8559348).
+5.24. Já a área administrativa abordou a questão do montante necessário para a prorrogação, indicada nos itens 2.1. e 2.2. do Memorando nº 28/2023/PR (SEI nº 10201746), por meio do Ofício nº 26/2023/AFCA6/AFCA/SAF-ANATEL (SEI nº 10209815), no qual explica que:
+Ofício nº 26/2023/AFCA6/AFCA/SAF-ANATEL (SEI nº 10209815)
+2. Inicialmente, cabe esclarecer que o Contrato nº GIIB nº 60/2022 (SEI nº 8559348) irá completar seu primeiro ano de vigência em 30/06/2023. Neste sentido, por advento da prorrogação da vigência contratual solicitada por meio do Informe nº 8/2023/GIMR/SGI (SEI nº 9806207), a Administração deve realizar negociação contratual para a redução e/ou eliminação dos custos fixos ou variáveis não renováveis que já tenham sido amortizados ou pagos no primeiro ano da contratação (Instrução Normativa SEGES/MPDG nº 05/2017, item 9 do ANEXO IX).
+3. Por meio do Ofício nº 1/2023/GIMR/SGI-ANATEL (SEI nº 9654498), a área gestora solicitou que a contratada enviasse a comprovação do efetivo dispêndio das provisões cotadas na Planilha de Custos anexa ao Contrato nº 60/2022 (SEI nº 8559348) e que, no caso da utilização dos valores, enviassem nova Planilha de Custos e Formação de Preços, considerando a amortização ou pagamento dos custos fixos ou variáveis não renováveis.
+4. A contratada protocolou a nova Planilha (SEI nº 9797925) no processo de prorrogação (SEI nº 53500.000943/2023-62), em que consta o valor de R$ 6.889.444,92 (seis milhões, oitocentos e oitenta e nove mil quatrocentos e quarenta e quatro reais e noventa e dois centavos), valor esse utilizado pela área gestora para emitir os Despachos nº 4/2023/GIIB/SGI (SEI nº 9877559) e nº 5/2023/GIIB/SGI (SEI nº 9877568).
+5. Entretanto, a Gerência de Aquisições e Contratos (AFCA) realizou os cálculos na Planilha de Custos e Formação de Preços (SEI nº 10052962) conforme as informações fornecidas pela área gestora (SEI nº 10061850), chegando ao valor de R$ 6.877.189,30 (seis milhões, oitocentos e setenta e sete mil cento e oitenta e nove reais e trinta centavos), gerando uma diferença a menor no valor de R$ 12.255,62 (doze mil duzentos e cinquenta e cinco reais e sessenta e dois centavos).
+6. Assim, considerando que o valor requisitado e aprovado pela área gestora por meio dos Despachos nº 4/2023/GIIB/SGI (SEI nº 9877559) e nº 5/2023/GIIB/SGI (SEI nº 9877568) é suficiente para cobrir as despesas com a prorrogação em questão, não se verificou necessário solicitar ajuste nos referidos documentos.
+5.25. Considerando as informações constantes acima e a documentação arrolada nos Processos nº 53500.017829/2023-71 e nº 53500.000943/2023-62, entendo estar devidamente justificada e motivada a proposta de prorrogação apresentada pela área técnica.
+5.26. Sem adentrar no mérito técnico e jurídico do Processo, tratando-se o ato de governança da avaliação sobre a adequação da despesa pública, julga-se satisfatoriamente concluído o exame dos elementos necessários à deliberação, nos moldes prescritos pela Portaria Anatel nº 1.197/2018 (SEI nº 2984787), alterada pela Portaria nº 1.826/2018 (SEI nº 3431623).
+6. CONCLUSÃO
+6.1. Diante do exposto, proponho ao Conselho Diretor (CD):
+ 6.1.1.Autorizar, no exercício de ato de governança, a realização da despesa pública no valor de R$ 6.877.189,30 (seis milhões, oitocentos e setenta e sete mil cento e oitenta e nove reais e trinta centavos), referente à prorrogação, pelo período de 12 (doze) meses, de 01/07/2023 a 30/06/2024, do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados , visando atender as necessidades de tecnologia da informação da Agência Nacional de Telecomunicações (Anatel), com disponibilização de mão de obra em regime de dedicação exclusiva, que se expira em 30/06/2023, e a celebração do respectivo Termo Aditivo de contrato.
+Essa análise foi aprovado pela Ata de Circuito Deliberativo do Conselho Diretor nº 137/2023 (SEI nº 10373081) e constou da Resolução Interna 217, de 13 de junho de 2023 (SEI nº 10373143).
+No Processo nº 53500.015374/2024-31 constou no Voto nº 52/2024/PR (SEI nº 11770282) a seguinte análise acerca da aprovação do ato de governança estritamente relacionado à avaliação sobre a conveniência da realização da segunda prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348):
+DA ANÁLISE
+5.8 Posta a competência do CD para decisão sobre os temas, passa-se à análise da conveniência e oportunidade da Aprovação da conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, pelo período de 12 (doze) meses, de 01/07/2024 a 30/06/2025, de acordo com o quantitativo e as condições estabelecidas no Termo de Referência (SEI nº 8113514).
+5.9. Inicialmente, registra-se que o presente Voto não envolve a análise técnica e jurídica do procedimento, não implicando na validação de qualquer ato que compõe o processo de contratação. Trata-se aqui de aprovação da conveniência e oportunidade da realização de despesa pública e autorização para a renovação de contrato administrativo, com o valor estimado de R$ 7.209.828,11 (sete milhões, duzentos e nove mil, oitocentos e vinte e oito reais e onze centavos).
+5.10. A análise de tais requisitos demanda deste Colegiado o exame dos fatos, fundamentos e justificativas para que se forme adequado juízo de valor acerca da autorização para a prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348) pela Superintendência de Gestão Interna da Informação. (SGI). Trata-se, em verdade, de avaliação do mérito administrativo na avaliação de conveniência e oportunidade da celebração de termo aditivo de prorrogação ao Contrato nº 60/2022 - Anatel (SEI nº 8559348), e, portanto, demanda uma análise de aspectos fáticos e a ocorrência da subsunção do fato à norma para se decidir sobre a viabilidade da despesa para arcar com a execução do serviço.
+5.11. Com efeito, conveniente é aquilo que é adequado, apropriado ao objeto que se destinou. A medida administrativa editada será conveniente se for apta a cumprir o objetivo previsto, se for proporcional e útil, ajustada ao interesse público.
+5.12. A oportunidade, por sua vez, com visível caráter econômico, se refere à adaptação da medida ao cumprimento dos fins pretendidos pelo mandamento normativo que o ato administrativo busca satisfazer. Oportuno é o que se pratica em tempo hábil, em boa hora. Deve a oportunidade apresentar-se como medida de proporção entre o conteúdo do ato e o resultado que se quer obter.
+5.13. Inicialmente, no que tange às justificativas e razões para a prorrogação em tela, a área gestora apresentou, no Informe nº 2/2024/GIIB/SGI (SEI nº 11500492), as seguintes razões para fundamentar a prorrogação em análise:
+(...) repetição de informações contidas no Informe nº 2/2024/GIIB/SGI (SEI nº 11500492)
+5.21. A partir dos dados colacionados acima, extraídos do Informe nº 2/2024/GIIB/SGI (SEI nº 11500492), verifica-se que os preços praticados no contrato permanecem vantajosos para a Administração Pública, não havendo prejuízo econômico na autorização para a prorrogação proposta.
+5.22. Entretanto, importante destacar que não compete ao Conselho Diretor a análise de planilhas de preços apresentadas pelas empresa/órgãos públicos indicados, sendo de inteira responsabilidade da área gestora a conferência e revisão dos valores informados.
+5.23. Quanto aos aspectos gerais legais acerca das prorrogações, registra-se que o procedimento em comento deve estar alinhado aos requisitos e recomendações contidos no Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), de forma a dispensar a remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e viabilizar a formalização de Termo Aditivo de prorrogação de vigência.
+5.24. Diante do exposto acima, verifica-se que, até o momento, não consta no processo nº 53500.110965/2023-30 a análise técnica da SAF quanto ao atendimento das recomendações do Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), o que deverá ser providenciado antes da assinatura do respectivo Termo Aditivo. Ademais, a existência de parecer referencial não veda a submissão dos autos à análise da PFE/Anatel caso existam dúvidas jurídicas específicas. Todavia, a pendência indicada não obsta a análise em tela, visto que a autorização da realização da despesa pública (Ato de governança) é etapa procedimental dos processos de prorrogação de vigência contratual.
+5.25. Considerando as informações constantes acima e a documentação arrolada nos Processos nº 53500.110965/2023-30 e nº 53500.015374/2024-31, entendo estar devidamente justificada e motivada a proposta de prorrogação apresentada pela área técnica, no valor estimado de R$ 7.209.828,11 (sete milhões, duzentos e nove mil, oitocentos e vinte e oito reais e onze centavos), por um período de 12 (doze) meses, de 01/07/2024 a 30/06/2025, estando aderente às necessidades institucionais da Agência.
+5.26. Sem adentrar nos requisitos técnicos e jurídicos do Processo, tratando-se a aprovação da conveniência e oportunidade de manifestação adstrita ao mérito do ato administrativo, julga-se satisfatoriamente concluído o exame dos elementos necessários à deliberação, nos moldes prescritos pela Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023.
+6. CONCLUSÃO
+6.1. Diante do exposto, proponho ao Conselho Diretor (CD):
+6.1.1. Aprovar a conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, com valor global estimado de R$ 7.209.828,11 (sete milhões, duzentos e nove mil, oitocentos e vinte e oito reais e onze centavos) pelo período de 12 (doze) meses, de 01/07/2024 a 30/06/2025.
+Essa análise foi aprovado pela Ata de Circuito Deliberativo do Conselho Diretor nº 127/2024 (SEI nº 11880349) e constou da Resolução Interna 318, de 24 de abril de 2024 (SEI nº 11880352).
+No Processo nº 53500.027040/2025-91 constou no Voto nº 37/2025/PR (SEI nº 13658436) a seguinte análise acerca da aprovação do ato de governança estritamente relacionado à avaliação sobre a conveniência da realização da terceira prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348):
+II - DA ANÁLISE
+5.8. Conforme exposto, trata-se de análise da conveniência e oportunidade da prorrogação do Contrato nº 60/2022-Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, pelo período de 12 (doze) meses, de 1º de julho de 2025 a 30 de junho de 2026, de acordo com o quantitativo e as condições estabelecidas no Termo de Referência (SEI nº 8113514).
+5.9. Inicialmente, registra-se que o presente Voto não envolve a análise técnica e jurídica do procedimento, não implicando na validação de qualquer ato que compõe o processo de contratação. Trata-se aqui de aprovação da conveniência e oportunidade da realização de despesa pública e autorização para a renovação de contrato administrativo, com o valor estimado de R$ 7.699.337,59 (sete milhões, seiscentos e noventa e nove mil, trezentos e trinta e sete reais e cinquenta e nove centavos).
+5.10. A análise de tais requisitos demanda do Conselho Diretor o exame dos fatos, fundamentos e justificativas para que se forme adequado juízo de valor acerca da autorização para a nova prorrogação do Contrato nº 60/2022-Anatel (SEI nº 8559348) pela Superintendência de Gestão Interna da Informação (SGI). Trata-se, em verdade, de avaliação do mérito administrativo para a celebração de termo aditivo de prorrogação ao Contrato nº 60/2022-Anatel (SEI nº 8559348) e, portanto, demanda uma análise de aspectos fáticos e a ocorrência da subsunção do fato à norma para se decidir sobre a viabilidade da despesa para arcar com a execução do serviço.
+5.11. Com efeito, conveniente é aquilo que é adequado, apropriado ao objeto que se destinou. A medida administrativa editada será conveniente se for apta a cumprir o objetivo previsto, se for proporcional e útil, ajustada ao interesse público.
+5.12. A oportunidade, por sua vez, com visível caráter econômico, se refere à adaptação da medida ao cumprimento dos fins pretendidos pelo mandamento normativo que o ato administrativo busca satisfazer. Oportuno é o que se pratica em tempo hábil, em boa hora. Deve a oportunidade apresentar-se como medida de proporção entre o conteúdo do ato e o resultado que se quer obter.
+5.13. Inicialmente, no que tange às justificativas e razões para a prorrogação em tela, a área gestora apresentou, no Informe nº 4/2025/GIIB/SGI (SEI nº 13253195), as seguintes razões para fundamentar a prorrogação em análise:
+(...) repetição das informações contidas no Informe nº 4/2025/GIIB/SGI (SEI nº 13253195)
+5.21. A partir dos dados colacionados acima, extraídos do Informe nº 4/2025/GIIB/SGI (SEI nº 13253195), verifica-se que os preços praticados no contrato permanecem vantajosos para a Administração Pública, não havendo prejuízo econômico na autorização para a prorrogação proposta.
+5.22. Entretanto, importante destacar que não compete ao Conselho Diretor a análise de planilhas de preços apresentadas pelas empresa/órgãos públicos indicados, sendo de inteira responsabilidade da área gestora a conferência e revisão dos valores informados.
+5.23. Quanto aos aspectos gerais legais acerca das prorrogações, registra-se que o procedimento em comento deve estar alinhado aos requisitos e recomendações contidos no Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), de forma a dispensar a remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e viabilizar a formalização de Termo Aditivo de prorrogação de vigência.
+5.24. Diante do exposto acima, verifica-se que, até o momento, não consta no processo nº 53500.100915/2024-25 a análise técnica da SAF quanto ao atendimento das recomendações do Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), o que deverá ser providenciado antes da assinatura do respectivo Termo Aditivo. Ademais, a existência de parecer referencial não veda a submissão dos autos à análise da PFE/Anatel caso existam dúvidas jurídicas específicas. Todavia, a pendência indicada não obsta a análise em tela, visto que a autorização da realização da despesa pública (Ato de governança) é etapa procedimental dos processos de prorrogação de vigência contratual.
+5.25. Considerando as informações constantes acima e a documentação arrolada nos processos nº 53500.100915/2024-25 e nº 53500.027040/2025-91, entendo estar devidamente justificada e motivada a proposta de prorrogação apresentada pela área técnica, no valor estimado de R$ 7.699.337,59 (sete milhões, seiscentos e noventa e nove mil, trezentos e trinta e sete reais e cinquenta e nove centavos), por novo período de 12 (doze) meses, de 1º de julho de 2025 a 30 de junho de 2026, estando aderente às necessidades institucionais da Agência.
+5.26. Sem adentrar nos requisitos técnicos e jurídicos do Processo, tratando-se a aprovação da conveniência e oportunidade de manifestação adstrita ao mérito do ato administrativo, julga-se satisfatoriamente concluído o exame dos elementos necessários à deliberação, nos moldes prescritos pela Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023.
+6. CONCLUSÃO
+6.1. Diante do exposto, proponho ao Conselho Diretor aprovar a conveniência e oportunidade da prorrogação do Contrato nº 60/2022-Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, com valor global estimado de R$ 7.699.337,59 (sete milhões, seiscentos e noventa e nove mil, trezentos e trinta e sete reais e cinquenta e nove centavos), por período de 12 (doze) meses, de 1º de julho de 2025 a 30 de junho de 2026, nos termos da Minuta de Resolução Interna (SEI nº 13659728).
+Essa análise foi aprovado pela Ata de Circuito Deliberativo do Conselho Diretor nº 127/2024 (SEI nº 11880349) e constou da Resolução Interna 438, de 9 de junho de 2025 (SEI nº 13824905).
+Diante do quanto exposto nessas análises de conveniência e oportunidade da primeira contratação original e das três prorrogações anteriores, verifica-se que foram apresentadas informações minimamente necessárias para tal análise, que foram aprovadas pelo Conselho Diretor em todas as oportunidades.
+IV - DA ADESÃO AO PLANO DE GESTÃO TÁTICO 2025-2026
+Com relação à adesão ao Plano de Gestão Tático cabe esclarecer que o Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, esclarece o seguinte:
+Informe nº 5/2026/GIIB/SGI (SEI nº 15120383)
+(...)
+3.6. A Estratégia de Governo Digital (EGD), dentre os "Objetivos Estratégia de Governo Digital - 2024/2027", estabelece o objetivo estratégico "OB07 Políticas públicas baseadas em dados e evidências". Neste sentido, esta prorrogação tem entre seus objetivos a continuidade do fornecimento de suporte direto e indireto para maximizar o apoio às políticas públicas, regulamentos e demais ações regulatórias baseadas em dados e evidências. Estes objetivos podem ser alcançados por meio da disponibilidade de dados com qualidade e através de soluções de análise de dados, como também por meio de soluções baseadas em análises avançadas, tais como a utilização de inteligência artificial e aprendizagem de máquina.
+3.7 O Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13062049) e a Estratégia Brasileira de Inteligência Artificial (EBIA) destacam a latente necessidade de investimento em soluções de inteligência artificial, justificando, portanto, a continuidade de prestação de serviços especializados para o desenvolvimento de soluções baseadas nesta tecnologia.
+(...)
+Da análise qualitativa e quantitativa e compatibilidade da demanda atual para próxima vigência 
+(...)
+3.11.7. Atendimento ao Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799) e à Estratégia Brasileira de Inteligência Artificial (EBIA), que incluem a latente necessidade de investimento em soluções analíticas avançadas, baseadas em aprendizagem de máquina e inteligência artificial, justificando portanto a necessidade de prestação de serviços especializados para o desenvolvimento de soluções baseadas em inteligência artificial.
+Ao analisar as metas táticas previstas no Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799), aprovado no Processo nº 53500.033564/2024-30, verifica-se a existência de 5 (cinco) metas táticas para a área de tecnologia da informação vinculadas ao Objetivo Estratégico de Processo que visa "Garantir a agilidade da gestão e a adequabilidade da infraestrutura interna com o uso das tecnologias da informação e comunicação":
+A fim de comunicar à sociedade os resultados a serem alcançados no biênio 2025-2026, foram estabelecidas metas táticas para os objetivos estratégicos de processos, que compõem o Mapa Estratégico da Anatel, priorizados para o período de referência. 
+O Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799) aborda a questão da adoção de tecnologias emergentes, incluindo Inteligência Artificial (IA), defendendo que a adoção de novas tecnologias pelos agentes do mercado traz desafios para o Regulador, que precisa estar atualizado e preparado para lidar com as rápidas mudanças no setor e que novos riscos à segurança das redes e à privacidade dos usuários podem surgir devido à complexidade, descentralização e interoperabilidade, características comuns às novas tecnologias. Por sua vez, o uso de técnicas de IA pode acarretar riscos relacionados à disponibilidade de dados imparciais e confiáveis, à responsabilidade em caso de erro devido à complexidade dos ecossistemas de IA, assim como à transparência na tomada de decisões.
+Conforme previsto no Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799) para busca da promoção da qualidade dos serviços prestados pela Anatel e do alcance das metas e resultados, serão executados os seguintes planos institucionais organizados por ambientes da Cadeia de Valor. Para a área de TI consta os seguintes planos institucionais que abarcam as metas táticas relacionadas à área:
+O Anexo II apresenta o Portifólio de Projetos Estratégicos para o biênio 2025-2026, o qual se caracteriza como o conjunto de projetos gerenciados em grupo para alcançar as metas estratégicas ou voltados para promoção da qualidade dos serviços prestados pela Agência, sendo considerados fundamentais para o alcance da visão de futuro e do cenário-alvo para a Estratégia da Anatel. Está estruturado em três Programas Estratégicos associados aos objetivos estratégicos de resultados, com o propósito de proporcionar valor público à sociedade. São eles: (i) Conectividade Significa0va; (ii) Ecossistema Digital; e (iii) Atuação de Excelência.
+Para a área de TI prevê o Programa Atuação de Excelência congrega os projetos estratégicos cujo impacto reflete a necessidade de transformação institucional interna da Anatel, destinando-se a superar os desafios da regulação convergente digital, assim como a assegurar a transparência das ações desenvolvidas ao cidadão no ambiente digital:
+Diante do exposto, verifica-se que a prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, está plenamente aderente ao Plano de Gestão Tático da Anatel para o biênio 2025-2026 (SEI nº 13280799) e ao Objetivo Estratégico de Processo que visa "Garantir a agilidade da gestão e a adequabilidade da infraestrutura interna com o uso das tecnologias da informação e comunicação".
+V - DA PREVISÃO DO CONTRATO NO PLANO DE CONTRATAÇÕES DA ANATEL (PCA 2026 E PCA 2027)
+Com relação ao Plano de Contratações Anual da Anatel para o ano de 2026 (PCA 2026), aprovado no Processo nº 53500.013951/2025-31, verifica-se que consta a previsão de prorrogação da contratação do objeto TIC - Suporte a Ferramenta de Dados: IDT060 Serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados, com valor de R$ 7.209.828,11 (sete milhões, duzentos e nove mil oitocentos e vinte e oito reais e onze centavos), com data prevista de 30/6/2026, conforme contida na Planilha PCA 2026 (SEI nº 13431130). O PCA 2026 foi aprovado pela Resolução Interna nº 424, de 11 de abril de 2025(SEI nº 13557170).
+Com relação ao Plano de Contratações Anual da Anatel para o ano de 2027 (PCA 2027), aprovado no Processo nº 53500.020708/2026-50, verifica-se que consta a previsão de contratação do novo objeto TIC - Suporte a Ferramenta de Dados: IDT069-Serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), gestão de dados, engenharia de dados e ciência de dados, com valor de R$ 7.718.082,84 (sete milhões, setecentos e dezoito mil oitenta e dois reais e oitenta e quatro centavos), com data prevista de 30/6/2027, conforme contida na Planilha PCA 2027 (SEI nº 15418552). O PCA 2027 foi aprovado pela Resolução Interna nº 546, de 8 de maio de 2026 (SEI nº 15610304).
+VI - DAS CONSIDERAÇÕES FINAIS
+A partir dos dados colacionados acima, extraídos do Informe nº 5/2026/GIIB/SGI (SEI nº 15120383), de 8/4/2026, verifica-se que os preços praticados no contrato permanecem vantajosos para a Administração Pública, não havendo prejuízo econômico na autorização para a prorrogação proposta.
+Entretanto, importante destacar que não compete ao Conselho Diretor a análise de planilhas de preços apresentadas pelas empresa/órgãos públicos indicados, sendo de inteira responsabilidade da área gestora a conferência e revisão dos valores informados.
+Quanto aos aspectos gerais legais acerca das prorrogações, registra-se que o procedimento em comento deve estar alinhado aos requisitos e recomendações contidos no Parecer Referencial nº 03/2020/PFE-ANATEL/PGF/AGU (SEI nº 5553372), de forma a dispensar a remessa dos autos à Procuradoria Federal Especializada junto à Anatel (PFE-Anatel) e viabilizar a formalização de Termo Aditivo de prorrogação de vigência.
+Considerando as informações constantes acima e a documentação arrolada no processo, entendo estar devidamente justificada e motivada a proposta de prorrogação apresentada pela área técnica, no valor estimado de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos), por um período de 12 (doze) meses, de 01/07/2026 a 30/06/2027, estando aderente às necessidades institucionais da Agência.
+Sem adentrar nos requisitos técnicos e jurídicos do Processo, tratando-se a aprovação da conveniência e oportunidade de manifestação adstrita ao mérito do ato administrativo, julga-se satisfatoriamente concluído o exame dos elementos necessários à deliberação, nos moldes prescritos pela Norma sobre a governança, os limites de alçada e as instâncias para a contratação de bens e serviços, bem como as prorrogações e alterações contratuais, no âmbito da Agência Nacional de Telecomunicações (Anatel), aprovada pela Resolução Interna nº 214, de 23 de maio de 2023. 
+CONCLUSÃO
+Diante do exposto, proponho ao Conselho Diretor:
+Aprovar a conveniência e oportunidade da prorrogação do Contrato nº 60/2022 - Anatel (SEI nº 8559348), cujo objeto é a prestação de serviços técnicos especializados de desenvolvimento, manutenção, configuração, implantação, operação e sustentação de soluções relacionadas a Business Intelligence (BI), Gestão de Dados, Engenharia de Dados e Ciência de Dados, com valor global estimado de R$ 8.383.509,32 (oito milhões, trezentos e oitenta e três mil quinhentos e nove reais e trinta e dois centavos), pelo período de 12 (doze) meses, de 01/07/2026 a 30/06/2027.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 08/06/2026, às 08:05, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15631587 e o código CRC FF8FC004.
+ | 
+Referência: Processo nº 53500.100814/2025-35 | 
+SEI nº 15631587 |

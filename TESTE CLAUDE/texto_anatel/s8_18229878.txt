@@ -1,0 +1,48 @@
+SEI/ANATEL - 16254476 - Acórdão
+Boletim de Serviço Eletrônico em 17/09/2026
+DOU de 17/09/2026, seção 1, página 47
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 242, de 09 de setembro de 2026
+Processo nº 53500.005086/2018-20
+Recorrente/Interessado: CLARO S.A.
+CNPJ nº 40.432.544/0001-47
+Conselheiro(a) Relator(a): Edson Victor Eugênio de Holanda
+Fórum Deliberativo: Reunião nº 957, de 3 de setembro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. ÔNUS CONTRATUAL PELA PRORROGAÇÃO DO USO DE RADIOFREQUÊNCIAS ASSOCIADAS AO SERVIÇO MÓVEL PESSOAL - SMP. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por CLARO S.A. contra decisão que manteve a cobrança de ônus contratual complementar referente ao biênio 2017/2018.
+2. Fato relevante. A Agência atualizou a metodologia de cálculo do ônus contratual. A atualização reduziu o valor complementar apurado para R$ 16.836.825,83 (dezesseis milhões, oitocentos e trinta e seis mil, oitocentos e vinte e cinco reais e oitenta e três centavos).
+3. A controvérsia. A Recorrente alegou prescrição. Impugnou a inclusão de receitas na base de cálculo. Contestou o cálculo dos tributos incidentes. Requereu a inclusão da faixa de 700 MHz no fator de proporcionalidade.
+4. A Petição Extemporânea. A Recorrente apresentou Petição sobre o requisito temporal para inclusão de radiofrequências no denominador da fórmula de cálculo. A petição foi recebida e analisada.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a cobrança do ônus contratual está prescrita; (ii) saber se as receitas impugnadas integram a base de cálculo; (iii) saber se o cálculo dos tributos incidentes deve ser revisto; e (iv) saber se a faixa de 700 MHz deve integrar o denominador do fator de proporcionalidade.
+III. RAZÕES DE DECIDIR
+1. O ônus contratual possui natureza de preço público. A obrigação decorre dos Termos de Autorização.
+2. Aplica-se o prazo prescricional de dez anos às obrigações contratuais. Não incide o prazo previsto no Decreto nº 20.910/1932.
+3. A base de cálculo do ônus inclui receitas decorrentes da exploração do Serviço Móvel Pessoal - SMP ou que dependam dessa exploração.
+4. A Súmula nº 13/2012 da Anatel inclui as receitas de interconexão, de facilidades ou comodidades adicionais e as receitas operacionais inerentes ao Serviço Móvel Pessoal na base de cálculo.
+5. A Recorrente não comprovou que as receitas de venda de equipamentos foram auferidas de forma independente dos planos de serviço.
+6. As comissões de distribuição de cartão virtual constituem despesas operacionais. Elas não devem ser abatidas da receita total.
+7. A fiscalização limitou a dedução dos tributos aos valores registrados contabilmente. A Recorrente não apresentou dados específicos sobre a incidência dos tributos nem demonstrou erro no cálculo.
+8. A metodologia considera somente as radiofrequências em efetivo uso no ano-base.
+9. A mera vigência do Termo de Autorização não demonstra o uso efetivo da radiofrequência.
+10. A inclusão de faixa sem operação durante todo o ano-base reduz artificialmente o ônus devido pelas faixas que geraram receita.
+11. A faixa de 700 MHz não estava em uso no período considerado. Ela não deve integrar o denominador da fórmula de cálculo.
+12. A Petição Extemporânea deve ser conhecida nos termos da Súmula nº 21/2017 da Anatel. Os argumentos apresentados não afastam o critério de efetivo uso das radiofrequências.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo desprovido. Petição Extemporânea conhecida e pedido indeferido.
+Tese de julgamento: "1. O prazo prescricional para a cobrança de ônus contratual decorrente da prorrogação do direito de uso de radiofrequências é de dez anos. 2. Integram a base de cálculo do ônus contratual as receitas decorrentes da exploração do Serviço Móvel Pessoal ou que dependam dessa exploração. 3. A faixa de radiofrequência somente integra o denominador do fator de proporcionalidade quando estiver em efetivo uso durante o ano-base. 4. A vigência do Termo de Autorização não se confunde com o efetivo uso da radiofrequência."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 48, 163 e 167, § 1º; e Resolução nº 612/2013, arts. 37, XII, 41, I a V, 47, 115, § 2º, e 116, I a V; CC, art. 205.
+Jurisprudência relevante citada: Anatel, Súmula nº 13, de 31 de outubro de 2012; Anatel, Súmula nº 21, de 10 de outubro de 2017; STJ, EREsp nº 1.280.825/SP; Anatel, Acórdão nº 707, de 13 de dezembro de 2018; Anatel, Acórdão nº 428, de 23 de dezembro de 2021.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 2/2026/EH (SEI nº 15031677), integrante deste acórdão:
+a) conhecer do Recurso Administrativo (SEI nº 14163508) para, no mérito, negar-lhe provimento; e,
+b) conhecer da Petição Extemporânea (SEI nº 16093279), como exercício do direito de petição, conforme disciplinado pela Súmula nº 21, de 10 de outubro de 2017, e indeferir o pedido nela constante.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Suzana Silva Rodrigues.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 15/09/2026, às 16:40, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16254476 e o código CRC 8BFDD957.
+ | 
+Referência: Processo nº 53500.005086/2018-20 | 
+SEI nº 16254476 |

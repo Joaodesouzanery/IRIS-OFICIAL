@@ -1,0 +1,52 @@
+SEI/ANATEL - 15212592 - Acórdão
+Boletim de Serviço Eletrônico em 02/03/2026
+DOU de 02/03/2026, seção 1, página 13
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 21, de 20 de fevereiro de 2026
+Processo nº 53500.343036/2022-24
+Recorrente/Interessado: FLUX TECNOLOGIA LTDA.
+CNPJ nº 30.288.995/0001-07
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. SERVIÇO TELEFÔNICO FIXO COMUTADO - STFC. SPOOFING E UTILIZAÇÃO IRREGULAR DE RECURSOS DE NUMERAÇÃO. MULTA. RECURSO CONHECIDO E NÃO PROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por FLUX TECNOLOGIA LTDA., prestadora do Serviço Telefônico Fixo Comutado - STFC, contra o Despacho Decisório nº 513/2025/COGE/SCO, de 11 de setembro de 2025, que aplicou sanção de multa no valor de R$ 228.108,50 (duzentos e vinte e oito mil, cento e oito reais e cinquenta centavos), por infrações ao art. 8º do Regulamento do Serviço Telefônico Fixo Comutado - RSTFC, ao art. 19 do Regulamento Geral de Numeração - RGN e ao art. 65-M do Regulamento dos Serviços de Telecomunicações - RST.
+2. Fato relevante. Procedimento para Apuração de Descumprimento de Obrigações - Pado instaurado para apurar irregularidade consistente na utilização de recursos de numeração para identificar terminais originadores de chamadas que não correspondiam à numeração designada aos usuários, com alteração do número de origem em chamadas originadas por clientes da Recorrente.
+3. As decisões anteriores. As alegações recursais foram analisadas no Informe nº 985/2025/COGE/SCO. A Superintendente de Controle de Obrigações - SCO, por meio do Despacho Decisório nº 850/2025/COGE/SCO, conheceu do Recurso. A Procuradoria Federal Especializada junto à Anatel teve manifestação dispensada. Os autos foram encaminhados ao Conselho Diretor pela Matéria para Apreciação do Conselho Diretor - MACD nº 788/2025, tendo sido designado relator em 4 de dezembro de 2025.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se restou caracterizada a materialidade das infrações ao art. 8º do RSTFC e ao art. 19 do RGN, em razão da alteração dos números originadores e da utilização de recursos de numeração não devidamente atribuídos, independentemente de comprovação de fraude, dano concreto ou vantagem econômica; e saber se (ii) a multa aplicada observou os critérios de legalidade, proporcionalidade, razoabilidade e condição econômica do infrator, inclusive quanto à aplicação de atenuantes previstas no art. 20 do Regulamento de Aplicação de Sanções Administrativas - RASA e à adoção de metodologia excepcional de cálculo.
+III. RAZÕES DE DECIDIR
+1. A instauração e a instrução do processo obedeceram ao Regimento Interno da Anatel - RIA e às disposições da Lei nº 9.784/1999, com observância do devido processo legal, do contraditório, da ampla defesa e da motivação.
+2. O Recurso preencheu os requisitos de admissibilidade, notadamente tempestividade, legitimidade e interesse recursal, razão pela qual foi corretamente conhecido pela Superintendência de Controle de Obrigações.
+3. O Relatório de Fiscalização nº 46/2022 demonstrou que os números originadores apresentados aos usuários recebedores das chamadas originadas por clientes da FLUX não correspondiam à identidade numérica real desses clientes, sendo considerados números falsos.
+4. A análise de CDRs (Call Detail Records) indicou elevado volume de chamadas com números originadores não atribuídos a prestadora alguma, números formatados como chamadas internacionais e números atribuídos a outras prestadoras, evidenciando a utilização de recursos de numeração não autorizados e a alteração do número de origem.
+5. A fiscalização concluiu que, nas chamadas em que foi possível comparar o Código Nacional dos números originadores e chamados, verificou-se coincidência em 98% dos casos, de forma a induzir o recebedor a acreditar tratar-se de chamada originada em sua região, reforçando a gravidade da conduta.
+6. As informações constantes do Relatório de Fiscalização nº 46/2022 e do Informe nº 985/2025/COGE/SCO confirmam a ocorrência de tráfego alterado por técnica de spoofing em 100% das chamadas analisadas, com uso de recursos de numeração não atribuídos ou atribuídos a terceiros.
+7. A irregularidade não decorre da comprovação de fraude ou de ilícito penal, mas da própria alteração do número de origem e da utilização de recursos de numeração sem prévia atribuição da Anatel, em afronta ao art. 8º do RSTFC, ao art. 19 do RGN e ao art. 65-M do RST.
+8. O entendimento técnico consignado no Informe nº 985/2025/COGE/SCO esclarece que o termo spoofing, para fins regulatórios, abrange todas as alterações do número de origem, independentemente de objetivo fraudulento, sendo a fraude apenas uma subespécie dessas alterações.
+9. Não subsiste a alegação de ausência de materialidade ou de dano, pois a infração regulatória se aperfeiçoa com a não identificação adequada do acesso individual ou coletivo de origem e com a utilização de recursos de numeração não atribuídos, ainda que não haja prova de fraude ou de vantagem econômica.
+10. A alegada boa-fé da Empresa e a adoção de medidas corretivas não afastam a configuração da infração administrativa e não descaracterizam a materialidade e a autoria apuradas.
+11. O art. 20 do Regulamento de Aplicação de Sanções Administrativas - RASA prevê hipóteses taxativas de atenuação da multa, vinculadas à cessação espontânea da infração, à reparação do dano, à adoção de medidas para minimizar efeitos e à confissão.
+12. No caso concreto, conforme apontado no Informe nº 608/2025/COGE/SCO, os fatos apresentados não se enquadram em nenhuma das hipóteses de atenuantes previstas no art. 20 do RASA, inexistindo fundamento para redução do valor da multa.
+13. O art. 179 da Lei nº 9.472/1997 estabelece que, na aplicação de multa, devem ser considerados a condição econômica do infrator e o princípio da proporcionalidade entre a gravidade da falta e a intensidade da sanção.
+14. A Anatel possui discricionariedade técnica para definir e aplicar metodologias de cálculo de multa, inclusive mediante fórmulas pré-estabelecidas, desde que respeitados os critérios legais e regulamentares e os princípios da proporcionalidade, razoabilidade e segurança jurídica.
+15. A adoção de metodologia excepcional, distinta da regra padrão, é admitida para ajustar o valor da multa às peculiaridades do caso concreto, garantindo que a sanção seja adequada à gravidade da infração e à condição econômica do infrator.
+16. No caso em exame, a área técnica aplicou metodologia de cálculo em consonância com a regulamentação vigente, com o art. 179 da Lei Geral de Telecomunicações - LGT e com o RASA, não se verificando desproporcionalidade ou violação à legalidade, à proporcionalidade ou à segurança jurídica.
+17. Os precedentes do Conselho Diretor, consubstanciados nos Acórdãos nº 287/2025 e nº 121/2025, reforçam a possibilidade de ajuste ou afastamento de metodologias de cálculo de multa para atender aos princípios da razoabilidade e proporcionalidade, bem como consolidam o entendimento sobre infrações ligadas a spoofing e uso irregular de recursos de numeração.
+18. A decisão proposta contribui para o Objetivo de Desenvolvimento Sustentável - ODS nº 16 da Agenda 2030 da Organização das Nações Unidas - ONU, ao fortalecer a atuação de instituição reguladora eficaz, responsável e transparente no combate a práticas irregulares nas redes de telecomunicações.
+19. Diante do conjunto probatório e dos fundamentos jurídicos e regulatórios analisados, impõe-se a manutenção da multa aplicada e a negativa de provimento ao Recurso.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e não provido, mantida a sanção de multa aplicada à FLUX TECNOLOGIA LTDA.
+Tese de julgamento: "1. A alteração do número de origem em chamadas de STFC, com apresentação ao usuário recebedor de números que não correspondem à identidade numérica do cliente e com utilização de recursos de numeração não devidamente atribuídos pela Anatel, configura infrações ao art. 8º do RSTFC e ao art. 19 do RGN, independentemente de comprovação de fraude, dano específico ou vantagem econômica. 2. A boa-fé do infrator e a adoção de medidas corretivas não afastam a infração e somente ensejam redução da multa quando preenchidos os requisitos das hipóteses atenuantes taxativamente previstas no art. 20 do RASA, o que não ocorreu no caso concreto. 3. A Anatel pode adotar metodologia excepcional para cálculo do valor-base da multa, desde que observados o art. 179 da Lei nº 9.472/1997, o RASA e os princípios da proporcionalidade, razoabilidade e segurança jurídica, sendo legítima a manutenção de multa que se revele compatível com a gravidade da conduta e com a condição econômica da prestadora. 4. Recurso Administrativo conhecido e não provido, mantida a sanção de multa aplicada."
+Dispositivos relevantes citados: Lei nº 9.472/1997, art. 179; Lei nº 9.784/1999, art. 50; Resolução nº 426/2005 - RSTFC, art. 8º; Resolução nº 709/2019 - RGN, art. 19; Resolução nº 73/1998, com redação dada pela Resolução nº 738/2020 - RST, art. 65-M; Resolução nº 589/2012 - RASA, art. 20.
+Jurisprudência relevante citada: Anatel, Acórdão nº 287, de 22 de outubro de 2025, Processo nº 53542.000706/2022-24, Cons. Rel. Octavio Penna Pieranti, Reunião nº 947, de 13 de outubro de 2025; Anatel, Acórdão nº 121, de 21 de maio de 2025, Processo nº 53500.037883/2021-71, Cons. Rel. Vicente Bandeira de Aquino Neto, Reunião nº 943, de 15 de maio de 2025.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 40/2025/OP (SEI nº 14939257), integrante deste acórdão, conhecer do Recurso para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 27/02/2026, às 17:23, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15212592 e o código CRC 439AE838.
+ | 
+Referência: Processo nº 53500.343036/2022-24 | 
+SEI nº 15212592 |

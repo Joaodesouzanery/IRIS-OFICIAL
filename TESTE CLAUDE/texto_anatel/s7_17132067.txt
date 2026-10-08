@@ -1,0 +1,82 @@
+SEI/ANATEL - 15313335 - Análise
+Boletim de Serviço Eletrônico em 17/03/2026
+Análise nº 39/2026/AF
+Processo nº 53500.003291/2025-80
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Apreciação de Pedido de dilação de prazo da Consulta Pública nº 3/2026.
+EMENTA
+DIREITO REGULATÓRIO. DIREITO ADMINISTRATIVO. CONSULTA PÚBLICA. DILAÇÃO DE PRAZO. INDEFERIMENTO DO PEDIDO.
+I. CASO EM EXAME
+ Associação Nacional dos Transportes Ferroviários (ANTF) apresentou pedido de prorrogação de prazo para apresentação de contribuições à Consulta Pública nº 3/2026, que trata da atualização das atribuições e destinações do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências – PDFF 2025-2026.
+ Pedido fundamentado na necessidade de avaliação criteriosa e multidisciplinar das alterações propostas, considerando a complexidade técnica e o impacto para diversos segmentos do setor.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se o prazo originalmente estabelecido para o recebimento de contribuições na Consulta Pública nº 3/2026 é suficiente, ou se é necessária a prorrogação para garantir a participação adequada dos interessados.
+III. RAZÕES DE DECIDIR
+ Anatel observou o prazo de 45 dias previsto no § 2º do art. 9º da Lei nº 13.848/2019, em consonância com a sistemática de revisões bienais do PDFF adotada desde 2023.
+ Consulta Pública nº 3/2026 está inserida em contexto de múltiplas iniciativas regulatórias, incluindo Consultas Públicas nº 6 e nº 10, ambas de 2026, relacionadas à evolução da radiodifusão.
+ Proposta de alteração regulatória visa promover a destinação de faixa adicional para sistemas de radiodifusão de segunda geração, alinhando-se às diretrizes do Decreto nº 12.595/2025.
+ Conclusão tempestiva do processo é fundamental para edição de atos complementares e implementação da TV 3.0.
+ Prazo estabelecido revela-se adequado e suficiente para análise e manifestação dos interessados.
+ Área técnica manifestou-se pelo indeferimento do pedido de prorrogação, recomendando a manutenção do cronograma inicialmente previsto.
+IV. DISPOSITIVO E TESE
+ Pedido de prorrogação de prazo indeferido.
+Tese de julgamento: "1. O prazo de 45 dias estabelecido para o recebimento de contribuições na Consulta Pública nº 3/2026 é compatível com a natureza e complexidade da matéria. 2. A manutenção do cronograma é recomendável para garantir a celeridade e a implementação das políticas públicas de evolução tecnológica do setor. 3. Indeferido o pedido de prorrogação apresentado pela ANTF."
+Dispositivos relevantes citados: Lei nº 13.848/2019, § 2º do art. 9º; Decreto nº 12.595/2025.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 13.848, de 25 de junho de 2019, que dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras.
+Decreto nº 10.411 de 30 de Junho de 2020 (Regulamenta a análise de impacto regulatório, de que tratam o art. 5º da Lei nº 13.874, de 20 de setembro de 2019, e o art. 6º da Lei nº 13.848, de 25 de junho de 2019);
+Decreto nº 11.484, de 6 de abril de 2023, que dispõe sobre as diretrizes para a evolução do Sistema Brasileiro de Televisão Digital Terrestre e para garantir a disponibilidade de espectro de radiofrequências para a sua implantação.
+Decreto nº 12.595, de 27 de agosto de 2025, que dispõe sobre a escolha do padrão tecnológico da segunda geração do Sistema Brasileiro de Televisão Digital Terrestre, denominada TV 3.0, e sobre a sua implantação no território nacional.
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel.
+Análise nº 160/2025/AF (SEI nº 14934771);
+Acórdão nº 3, de 28 de janeiro de 2026 (SEI nº 15106560);
+Consulta Pública nº 3, de 28 de janeiro de 2026 (SEI nº 15106742).
+RELATÓRIO
+A ANTF solicitou, por meio da Carta Dilação de Prazo - CP 03 (SEI nº 15288578), um prazo adicional de 60 (sessenta) dias para a consulta pública Consulta Pública nº 3, de 28 de janeiro de 2026 (SEI nº 15106742), iniciada em 29 de janeiro de 2026 e com o término previsto para 15 de março de 2026.
+A referida consulta pública trata da proposta de "atualização das atribuições e destinações do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF 2025-2026, objeto do item nº 22 da Agenda Regulatória para o biênio 2025-2026".
+A interessada fundamentou seu pedido, em essência, com os seguintes argumentos:
+Carta Dilação de Prazo - CP 03 (SEI nº 15288578)
+(...)
+Como se sabe, a minuta submetida à consulta envolve matérias de grande impacto para diversos segmentos, abrangendo aspectos sensíveis da organização do espectro e da prestação de serviços de telecomunicações – como atribuição, destinação e/ou canalização de faixas relativas aos serviços de radiodifusão e retransmissão de televisão, no contexto da evolução da TV 3.0, bem como aos serviços satelitais –, todos marcados por elevada complexidade técnica.
+Nesse sentido, o próprio Conselheiro Relator do processo ressaltou a essencialidade da participação social e destacou que a efetividade e legitimidade da decisão final dependerão diretamente das contribuições recebidas, especialmente no que diz respeito a:
+- especificação de prazos, mecanismos e critérios para migração e eventual descontinuidade de sistemas do Serviço Limitado Privado – SLP e de interesse público;
+- aperfeiçoamentos técnicos relacionados a filtros, topologias de canais e coordenação transfronteiriça, sobretudo em áreas limítrofes, garantindo convivência pacífica entre estações nacionais e estrangeiras;
+- definição de parâmetros de campo, níveis de sinal e métodos de verificação de interferência, tornando o regimento de proteção mais claro e aplicável;
+- feedback de associações de radiodifusores, entidades de segurança pública, operadores de redes privativas e usuários finais sobre prioridades, riscos e oportunidades decorrentes do refarming.
+(...)
+Ademais, sabe-se que há outras consultas públicas em curso tratando de matérias correlatas às discutidas na Consulta Pública n.º 3/20262 , o que impõe aos agentes setoriais a elaboração de uma leitura integrada, coerente e sistemática das distintas propostas apresentadas pela Agência. Esse contexto reforça ainda mais a necessidade de prazo adicional, a fim de permitir que a análise seja realizada de forma aprofundada e alinhada ao conjunto das iniciativas regulatórias em andamento.
+Considerando, portanto, o potencial impacto das alterações propostas e a imprescindibilidade de uma avaliação criteriosa e multidisciplinar, a ampliação do prazo mostra-se medida necessária para garantir a apresentação de contribuições técnicas compatíveis com a relevância e complexidade do tema.
+Diante do exposto, e com vistas a assegurar a mais ampla participação dos interessados, a ANTF requer a prorrogação do prazo para apresentação de contribuições à Consulta Pública n.º 3/2026 por mais 60 (sessenta) dias, contados da data originalmente assinalada para encerramento.
+A Superintendência de Planejamento e Regulamentação (SPR), por meio do Informe nº 27/2026/PRRE/SPR (SEI nº 15294409), de 10 de março de 2026, manifestou-se pelo indeferimento do pedido de prorrogação do prazo da referida Consulta Pública.
+Na mesma data, a área técnica produziu a Matéria para Apreciação do Conselho Diretor nº 179/2026 (SEI nº 15298941) e encaminhou o processo à Superintendência Executiva (SUE).
+Em 11 de março, a SUE encaminhou o processo à Secretaria do Conselho Diretor (SCD) por meio do Despacho Ordinatório (SEI nº 15310378).
+Distribuiu-se o processo para minha relatoria em 11 de março de 2026, conforme Certidão de Distribuição (SEI nº 15311716).
+É o relatório.
+ANÁLISE
+Trata-se de avaliação de pedido de dilação de prazo da Associação Nacional dos Transportes Ferroviários (ANTF), CNPJ/MF nº 01.585.551/0001-27, apresentado em 6 de março de 2026, para o recebimento de contribuições para a Consulta Pública nº 3, de 28 de janeiro de 2026, que trata da proposta de "atualização das atribuições e destinações do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF 2025-2026, objeto do item nº 22 da Agenda Regulatória para o biênio 2025-2026".
+A solicitação de dilação de prazo fundamenta-se, em suma, na necessidade de uma avaliação mais criteriosa e multidisciplinar das alterações propostas, objetivando garantir a apresentação de contribuições técnicas compatíveis com a relevância e a complexidade do tema.
+A área técnica, por meio do Informe nº 27/2026/PRRE/SPR (SEI nº 15294409), manifestou-se pelo indeferimento da solicitação, com os seguintes fundamentos:
+Informe nº 27/2026/PRRE/SPR
+(...) 
+3.3. Inicialmente, cumpre destacar que a Anatel resguardou, na Consulta Pública sob sua responsabilidade, o prazo de 45 (quarenta e cinco) dias previsto na Lei das Agências Reguladoras (§ 2º do art. 9º da Lei nº 13.848, de 25 de junho de 2019). Este prazo foi definifo não apenas o mérito dos assuntos ali debatidos, conforme será apresentado a seguir, mas também considerando a sistemática de realização bienal das revisões do PDFF, conforme prática adotada pela Anatel em suas Agendas Regulatórias desde 2023.
+3.4. De fato, a Consulta Pública em tela concorre com outras duas consultas relacionadas: (i) a Consulta Pública nº 10, de 25 de fevereiro de 2026, que trata de requisitos técnicos para a avaliação da conformidade de transmissores da TV 3.0; e (ii) a Consulta Pública nº 6, de 11 de fevereiro de 2026, que trata dos requisitos técnicos de condições de uso de radiofrequências para TV e RTV. Entretanto, a proposta de alteração regulatória apresentada em Consulta Pública tem como um de seus objetivos promover a destinação de faixa adicional para a implementação de sistemas de radiodifusão de sons e imagens com tecnologia de segunda geração, em consonância com as políticas públicas estabelecidas pelo Decreto nº 12.595/2025, permitindo a evolução tecnológica do setor de forma célere e ordenada.
+3.5. Ademais, o avanço e a conclusão do presente processo permitirão a posterior edição dos atos complementares, responsáveis por definir os requisitos técnicos para o uso das faixas destinadas à TV 3.0, etapa necessária à efetiva implementação da nova tecnologia no País.
+3.6. Nesse contexto, entende-se que o prazo originalmente estabelecido para o recebimento de contribuições mostra-se compatível com a natureza da matéria submetida à Consulta Pública, permitindo que os interessados analisem a proposta e apresentem suas manifestações. Ademais, considerando a relevância de conferir celeridade às medidas necessárias à implementação das políticas públicas voltadas à evolução tecnológica do setor, entende-se recomendável a manutenção do cronograma inicialmente previsto para o procedimento
+3.7. Nesses termos, manifesta-se posicionamento desfavorável ao deferimento do pedido de prorrogação de prazo da Consulta Pública encaminhado pela ANTF.
+(Grifou-se)
+Entende-se que posicionamento apresentado pela área técnica quanto à manutenção do prazo originalmente estabelecido para o recebimento de contribuições na Consulta Pública ora em debate deve ser acolhido. Conforme destacado, a Anatel observou rigorosamente o prazo de 45 dias previsto no § 2º do art. 9º da Lei nº 13.848/2019, demonstrando compromisso com as melhores práticas regulatórias e com a transparência no processo de tomada de decisão.
+Ressalta-se que a Consulta Pública ora analisada está inserida em um contexto de múltiplas iniciativas regulatórias, incluindo as Consultas Públicas nº 6 e nº 10, ambas de 2026, que tratam de aspectos técnicos para a evolução da radiodifusão no Brasil. A proposta de alteração regulatória visa, entre outros objetivos, promover a destinação de faixa adicional para sistemas de radiodifusão de segunda geração do Sistema Brasileiro de Televisão Digital Terrestre - SBTVD-T, alinhando-se às diretrizes estabelecidas pelo Decreto nº 12.595/2025 e viabilizando a implementação célere e ordenada da TV 3.0.
+Nesse cenário, a conclusão tempestiva deste processo é fundamental para a edição dos atos complementares que definirão os requisitos técnicos para o uso das faixas destinadas à nova tecnologia, etapa imprescindível para a efetiva modernização do setor. Portanto, o prazo estabelecido para a Consulta Pública revela-se adequado e suficiente para que os interessados possam analisar a proposta e apresentar suas contribuições, sem prejuízo da qualidade do debate.
+Ante o exposto, propõe-se que o pedido de prorrogação de prazo encaminhado pela ANTF seja indeferido. 
+CONCLUSÃO
+Voto pelo indeferimento do pedido de prorrogação do prazo da Consulta Pública nº 3/2026, apresentado pela Associação Nacional dos Transportes Ferroviários (ANTF).
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro, em 13/03/2026, às 15:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15313335 e o código CRC BCFC5840.
+ | 
+Referência: Processo nº 53500.003291/2025-80 | 
+SEI nº 15313335 |

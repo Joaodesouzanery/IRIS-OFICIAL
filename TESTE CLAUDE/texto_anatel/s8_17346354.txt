@@ -1,0 +1,43 @@
+SEI/ANATEL - 15509550 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 5
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 101, de 17 de abril de 2026
+Processo nº 53500.018283/2014-85
+Recorrente/Interessado: DATORA TELECOMUNICAÇÕES LTDA.
+CNPJ nº 39.495.486/0001-11
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECEITAS DE INTERCONEXÃO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por DATORA TELECOMUNICAÇÕES LTDA. contra o Despacho Decisório nº 228/2025/CODI/SCO, que julgou procedentes os lançamentos dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2010.
+2. Fundamentos do Recurso. A Recorrente sustenta que as receitas de interconexão não podem ser tributadas pelo Fust, que a Súmula Anatel nº 7 contraria o art. 6º, parágrafo único, da Lei nº 9.998/2000, que a cobrança configura bis in idem e que a multa aplicada tem caráter confiscatório.
+3. Admissibilidade. O Recurso foi interposto no prazo, por parte legítima e com interesse recursal.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se as receitas de interconexão e de Exploração Industrial de Linha Dedicada - EILD integram a base de cálculo da contribuição ao Fust, ou se estão abrangidas pela exclusão prevista no art. 6º, parágrafo único, da Lei nº 9.998/2000, com afastamento da cobrança por alegado bis in idem.
+III. RAZÕES DE DECIDIR
+1. O Processo Administrativo Fiscal observou o Decreto nº 70.235/1972 e resguardou o devido processo legal e a ampla defesa.
+2. A Súmula Anatel nº 7/2005 veda a exclusão, da base de cálculo do Fust, das receitas devidas ou recebidas a título de remuneração de interconexão e pelo uso de recursos integrantes de redes.
+3. As receitas de interconexão e de EILD decorrem de serviços de telecomunicações prestados entre operadoras.
+4. Essas receitas se enquadram no conceito de serviço de telecomunicações previsto no art. 60 da Lei nº 9.472/1997.
+5. As receitas de interconexão e de EILD não se confundem com simples transferências de valores entre prestadoras.
+6. O art. 6º, parágrafo único, da Lei nº 9.998/2000 alcança transferências relacionadas ao co-billing, e não receitas contábeis próprias da prestação de serviços de telecomunicações.
+7. A incidência do Fust sobre receitas de interconexão e de EILD não configura bis in idem, porque há fatos geradores, bases de cálculo e sujeitos passivos distintos.
+8. A Recorrente não comprovou a existência de medida liminar apta a suspender a incidência da Súmula Anatel nº 7/2005.
+9. As receitas de interconexão permanecem, portanto, na base de cálculo do Fust no exercício de 2010.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido.
+Tese de julgamento: "1. As receitas auferidas com interconexão e EILD constituem receitas de prestação de serviços de telecomunicações e integram a base de cálculo da contribuição ao Fust. 2. O art. 6º, parágrafo único, da Lei nº 9.998/2000 não alcança essas receitas, porque elas não se confundem com meras transferências financeiras entre prestadoras. 3. A incidência do Fust sobre receitas de interconexão e de EILD não configura bis in idem."
+Dispositivos relevantes citados: Lei nº 9.998/2000, art. 6º, parágrafo único; Lei nº 9.472/1997, art. 60; Decreto nº 70.235/1972; Portaria Normativa nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: Súmula Anatel nº 7/2005.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 31/2026/OP (SEI nº 15413610), integrante deste acórdão, conhecer do Recurso para, no mérito, negar-lhe provimento.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15509550 e o código CRC CDA15336.
+ | 
+Referência: Processo nº 53500.018283/2014-85 | 
+SEI nº 15509550 |

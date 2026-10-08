@@ -1,0 +1,290 @@
+SEI/ANATEL - 15360076 - Análise
+Boletim de Serviço Eletrônico em 20/03/2026
+Análise nº 25/2026/EH
+Processo nº 01217.001623/2026-74
+Interessado: Usuário com Pedido de Informação no e-SIC
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso de 2ª Instância apresentado na Plataforma Integrada de Ouvidoria - Fala.BR nº 01217.001623/2026-74.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO EM 2ª INSTÂNCIA. ACESSO À INFORMAÇÃO. INFORMAÇÕES PRESTADAS. RECURSO NÃO CONHECIDO.
+I. CASO EM EXAME
+Recurso administrativo em 2ª instância apresentado por usuário na Plataforma Fala.BR. 
+Pedido inicial solicitou esclarecimentos e documentos sobre propriedade de torres e estações licenciadas.
+Área técnica indicou os documentos públicos existentes para atendimento da demanda e prestou esclarecimentos adicionais.
+Interessado alegou resposta incompleta e reiterou pedido de informação objetiva .
+Área técnica retificou o documento apresentado, procedeu com as explicações individualizadas e apresentou os dados públicos para consulta.
+Recurso de 2ª instância fundamentou-se na suposta ausência de resposta objetiva, além do não enfrentamento específico e individualizado dos itens expressamente formulados no pedido.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se houve negativa de acesso à informação ou às razões da negativa, apta a ensejar o conhecimento do recurso de 2ª instância, nos termos da Lei nº 12.527/2011.
+III. RAZÕES DE DECIDIR
+Pedido inicial foi respondido com indicação dos documentos públicos existentes.
+Não houve negativa de acesso à informação ou às razões da negativa, pois todas as informações disponíveis foram prestadas e os documentos públicos foram indicados.
+Recurso de 2ª instância não se enquadra nas hipóteses do art. 15 da Lei nº 12.527/2011, pois não houve indeferimento de acesso à informação.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo não conhecido.
+Tese de julgamento: "1. Não há negativa de acesso à informação ou às razões da negativa quando o órgão indica os documentos públicos disponíveis e esclarece os fundamentos da resposta. 2. O recurso de 2ª instância não deve ser conhecido quando ausente indeferimento de acesso à informação, nos termos do art. 15 da Lei nº 12.527/2011."
+Dispositivos relevantes citados: Lei nº 12.527/2011, art. 15; Decreto nº 7.724/2012, art. 21; Lei nº 9.472/1997, art. 39, parágrafo único.
+REFERÊNCIAS
+Lei n.º 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT);
+Lei n.º 12.527, de 18 de novembro de 2011 - Lei de Acesso a Informações (LAI);
+Decreto nº 7.724, de 16 de maio de 2012, que regulamenta a Lei nº 12.527, de 2011;
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria nº 1447, de 08 de agosto de 2019, que institui, no âmbito da Anatel, procedimentos para tratativas dos pedidos de acesso à informação, no âmbito da Lei nº 12.527, de 18 de novembro de 2011, e dá outras providências;
+Processo nº 01217.001623/2026-74.
+RELATÓRIO
+I - Do Objeto
+Trata-se de Recurso Administrativo interposto em 2ª Instância nº 01217.001623/2026-74 (SEI nº 15352525), em razão de demanda apresentada por meio do Fala.BR – Plataforma Integrada de Ouvidoria e Acesso à Informação nº 01217.001623/2026-74 (SEI nº 15291188), em que o cidadão contesta a resposta concedida pela área técnica, em 1ª instância, ao questionamento sobre propriedade de torres e estações licenciadas na Rodovia RJ-14, nº 90, Sítio Nilda, Alto de Ibicuí, Município de Mangaratiba/RJ. 
+II - Dos Fatos
+Inicialmente, o Pedido de Acesso à Informação nº 01217.001623/2026-74 (SEI nº 15291188) foi protocolizado pelo cidadão nos seguintes termos:
+Eu, RODRIGO PHANARDZIS ANCORA DA LUZ, brasileiro, casado, advogado inscrito na OAB/RJ sob o nº 130.647 e no CPF sob o nº 005.745.645-16, portador da carteira de identidade nº 10.643.867, expedida pela SSPMG, residente e domiciliado à Rua Primeiro de Maio, nº 339, Muriqui, Município de Mangaratiba/RJ, CEP 23860-000, usuário do e-mail rodrigoluz@yahoo.com e da linha telefônica (21) 99856-9182, venho, com fundamento no art. 5º, XXXIII, da Constituição Federal e nos arts. 7º, 10 e 11 da Lei nº 12.527/2011 (Lei de Acesso à Informação), requerer a prestação das seguintes informações e a disponibilização de documentos relativos à infraestrutura de telecomunicações instalada no seguinte local:
+Rodovia RJ-14, nº 90, Sítio Nilda, Alto de Ibicuí, Município de Mangaratiba/RJ.
+Trata-se de torre de telecomunicações objeto de licenciamento ambiental municipal por meio da Licença Ambiental de Instalação nº 110/2023, expedida em 26/09/2023 pela Secretaria Municipal de Meio Ambiente de Mangaratiba, em favor da empresa QMC Telecom do Brasil Cessão de Infraestrutura S.A., no âmbito do Processo Administrativo nº 5380/2023.
+Diante disso, requer-se informar:
+1. quais ESTAÇÕES RÁDIO BASE (ERB) ou outras estações de telecomunicações encontram-se licenciadas pela ANATEL nas coordenadas ou na área correspondente ao endereço acima indicado;
+2. o número de identificação das estações cadastradas nos sistemas da ANATEL (MOSAICO ou sistemas equivalentes);
+3. as empresas ou operadoras de telecomunicações responsáveis pelas estações instaladas na referida infraestrutura;
+4. a data de licenciamento de cada estação junto à ANATEL;
+5. a data de entrada em operação das respectivas estações;
+6. as faixas de frequência autorizadas para utilização nas referidas estações;
+7. as tecnologias utilizadas (por exemplo: 3G, 4G, 5G ou outras);
+8. a potência autorizada para transmissão das estações instaladas no referido local;
+9. eventual compartilhamento da infraestrutura entre múltiplas operadoras;
+10. a identificação da empresa responsável pela infraestrutura passiva (tower company), bem como eventual registro da infraestrutura junto à ANATEL;
+11. eventuais alterações posteriores de licenciamento ou ampliação das estações instaladas na referida torre;
+12. eventuais processos administrativos, autorizações ou registros existentes na ANATEL relacionados à infraestrutura de telecomunicações situada no endereço acima indicado.
+Requer-se, sempre que possível, a disponibilização de cópia dos registros ou documentos administrativos correspondentes, preferencialmente em meio digital. Caso alguma das informações solicitadas não esteja disponível em razão de dados pessoais ou sigilo legal, requer-se que sejam fornecidas as informações técnicas não protegidas, com eventual ocultação de dados sensíveis, nos termos da Lei nº 12.527/2011.
+Os autos foram encaminhados para a Superintendência de Outorgas e Recursos à Prestação (SOR), por meio do Ofício nº 238/2026/RCRC/SRC-ANATEL (SEI nº 15294832), de 10/03/2026, para a elaboração de subsídios à resposta ao pedido de informação.
+A solicitação foi avaliada e respondida pela Gerência de Outorga e Licenciamento de Estações (ORLE), conforme consta no Ofício nº 1716/2026/ORLE/SOR-ANATEL (SEI nº 15309047), de 11/03/2026, cujos esclarecimentos foram prestados ao cidadão em 12/03/2026, nos termos do Comprovante do cadastramento da resposta (SEI nº 15316953).
+No dia 13/03/2026, o cidadão interpôs Recurso de 1ª instância (SEI nº 15324063), por considerar que as informações teriam sido prestadas de forma incompleta, conforme transcrição a seguir:
+Nos termos do art. 15 da Lei nº 12.527/2011, venho interpor recurso em face da resposta apresentada pela Gerência de Outorga e Licenciamento de Estações – ORLE no âmbito do pedido de acesso à informação acima referido.
+A resposta foi classificada como “acesso parcialmente concedido”, tendo sido encaminhada planilha com dados de estações licenciadas no endereço indicado.
+Todavia, a resposta apresentada limitou-se a afirmar, de forma genérica, que a Agência Nacional de Telecomunicações não dispõe de determinadas informações relativas à propriedade de torres ou ao compartilhamento de infraestrutura, sem indicar de forma específica quais dos itens formulados no pedido possuem registros existentes na Agência e quais efetivamente não constam de suas bases de dados.
+O pedido original formulou doze itens específicos de informação, incluindo, entre outros aspectos:
+- data de entrada em operação das estações; - eventuais alterações posteriores de licenciamento;
+- existência de processos administrativos relacionados à infraestrutura indicada;
+- identificação da empresa responsável pela infraestrutura passiva, caso registrada nos sistemas da Agência.
+Nos termos do art. 11, §1º, da Lei nº 12.527/2011 e do art. 13 do Decreto nº 7.724/2012, quando a informação solicitada não estiver disponível no órgão, a Administração Pública deve:
+I – informar expressamente a inexistência da informação;
+II – indicar o órgão ou entidade que a detenha; ou
+III – proceder ao encaminhamento do pedido ao órgão competente.
+No caso concreto, a resposta apresentada não esclareceu item a item quais informações estão disponíveis nos sistemas da Agência e quais não existem em seus registros, limitando-se a apresentar explicação genérica sobre a competência regulatória da ANATEL.
+Ressalte-se que a planilha constante no anexo da resposta não trouxe explicitamente a data de ativação operacional, nem o histórico de modificações, além de faltar informações sobre os processos internos.
+Dessa forma, requer-se que seja reavaliada a resposta fornecida, a fim de que:
+- sejam explicitadas, de forma individualizada, as informações existentes nos sistemas da Agência relativas aos itens do pedido formulado;
+- seja formalmente declarada a inexistência de eventuais informações que não constem das bases da ANATEL;
+- caso alguma das informações solicitadas esteja sob custódia de outro órgão ou entidade, seja indicada a autoridade ou instituição responsável por sua guarda.
+Termos em que,
+Pede deferimento.
+Rodrigo Phanardzis Ancora da Luz OAB/RJ nº 130.647
+Os autos foram novamente encaminhados para a Superintendência de Outorgas e Recursos à Prestação (SOR), por meio do Ofício nº 266/2026/RCRC/SRC-ANATEL (SEI nº 15324066), de 13/03/2026, para avaliação e elaboração de subsídios à resposta a ser inserida no Fala.BR - pela Gerência de Canais de Relacionamento com os Consumidores (RCRC).
+Em 11/03/2026, com fundamento nas informações prestadas por meio do Ofício nº 1716/2026/ORLE/SOR-ANATEL (SEI nº 15309047), a área técnica entendeu já ter sido concedido parcialmente o acesso à informação solicitada. É o que esclarece a resposta registrada no Comprovante do cadastramento da resposta ao recurso (1ª inst.), de SEI nº 15350333:
+1. Em resposta ao recurso ora apresentado, informamos que, após reavaliação da demanda inicial apresentada (SEI nº 15291188), foi identificado um descompasso no procedimento interno de extração dos dados contidos nos sistemas de informações técnicas da Anatel relacionados à estação objeto do questionamento.
+2. Com efeito, a estação apontada anteriormente no Ofício nº 238/2026/RCRC/SRC-ANATEL (SEI nº 15294832) não corresponde à indagada no Pedido de Acesso à Informação nº 01217.001623/2026-74 (SEI nº 15291188). Desse modo, a informação constante no documento Consulta Estações Licenciadas (SEI nº 15309002) deve ser desconsiderada, ao passo que a informação a ser corretamente observada é a indicada no documento Consulta MOSAICO – ERB RJ-14 nº 90 (SEI nº 15336353).
+3. Frente às aludidas retificações, procederemos com as explicações individualizadas, atendendo item a item dos questionamentos referidos no Pedido de Acesso à Informação nº 01217.001623/2026-74 (SEI nº 15291188).
+4. Assim, com base nos dados públicos de consulta de estações licenciadas, disponíveis em https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento e http://sistemas.anatel.gov.br/se/public/view/b/licenciamento, consolidados no documento Consulta MOSAICO – ERB RJ-14 nº 90 (SEI nº 15336353), prestamos os seguintes esclarecimentos:
+1. Há no endereço em questão, apenas 1 (uma) estação base licenciada perante esta Agência em nome da empresa TELEFONICA BRASIL S.A.;
+2. Esta informação encontra-se na coluna "D" da planilha SEI nº 15336353;
+3. Esta informação encontra-se na coluna "A" da planilha SEI nº 15336353, visto que a empresa responsável pelo licenciamento de estações perante esta Agência é a mesma que consta na licença de estação;
+4. Esta informação encontra-se na coluna "AW" da planilha SEI nº 15336353;
+5. Esta informação também se encontra-se na coluna "AW" da planilha SEI nº 15336353, visto que a entrada em operação coincide com a emissão da licença de funcionamento de estação;
+6. Esta informação encontra-se nas colunas "AS" e "AT" da planilha SEI nº 15336353, correspondendo as frequências centrais de transmissão e recepção da estação, respectivamente;
+7. Esta informação encontra-se na coluna "AK" da planilha SEI nº 15336353;
+8. Esta informação encontra-se na coluna "AI" da planilha SEI nº 15336353;
+9. Não há outra empresa além da TELEFONICA BRASIL S.A. fazendo uso da infraestrutura em questão;
+10. A ANATEL não possui ou registra essa informação. Repise-se que a Anatel não possui informações dos proprietários de torres, mas tão somente das estações compostas pelos equipamentos de telecomunicações;
+11. Esta informação encontra-se na coluna "AX" da planilha SEI nº 15336353, onde as datas indicadas referem-se a ocorrência das alterações sofridas pela estação;
+12. Reiteramos que a ANATEL não regula infraestrutura de suporte, como já informado. A empresa responsável pela infraestrutura não necessita explorar serviço de telecomunicações, tratando-se meramente de obra civil. Informamos ainda que esta Agência não possui registros referentes a infraestrutura de apoio, devendo os órgãos competentes, tais como prefeituras, serem consultados. Por fim, ressaltamos que o licenciamento de estações é efetuado pelas prestadoras de serviço de telecomunicações de forma eletrônica por meio de sistema disponibilizado pela Anatel nos termos do Art.12 do Regulamento Geral de Licenciamento, aprovado pela Resolução nº 719, de 10/02/2020.
+5. Ademais, levando-se em conta as especificidades da matéria, consoante detalhado no documento SEI nº 15291189, cabe lançar mão das seguintes considerações:
+5.1 Quanto aos aspectos relativos à ocupação do solo, as operadoras de telecomunicações deverão seguir, precipuamente, as normas municipais atinente ao Plano de Desenvolvimento Urbano (Plano Diretor), conforme previsto na Lei Geral de Telecomunicações - Lei nº 9.472, de 16/07/1997, em seu artigo 74, e no Regulamento Geral dos Serviços de Telecomunicações - RGST, instituído pela Resolução nº 777, de 28 de abril de 2025, especificamente em seu art. 119, inciso X, in verbis: “observar as leis e normas técnicas relativas à construção e utilização de infraestruturas”;
+5.2 Os municípios são os detentores da competência para legislar sobre assuntos de interesse local e promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano. A Lei nº 13.116, de 20/04/2015, estabelece princípios a serem adotados pelos municípios no licenciamento de infraestrutura urbana e no licenciamento ambiental;
+5.3 A competência legal da ANATEL, nos casos de licenciamento de estações de telecomunicações, limita-se aos aspectos técnicos dos equipamentos de telecomunicações relacionados à exploração do serviço. No caso da estrutura física de instalação, bem como aspectos relacionados à proteção contra descargas elétricas e níveis de ruído emitido, cada prestadora deverá seguir as especificações da Associação Brasileira de Normas Técnicas de Telecomunicações (ABNT), do Conselho Regional de Engenharia e Agronomia (CREA) e do Código de Posturas Municipais, conforme respectivas competências, antes de realizar o procedimento de licenciamento das estações perante esta Agência;
+5.4 A esta Agência Reguladora, também não compete definir os requisitos ou condições referentes a estudos de conformidade para construção de torres que dão suporte para as estações de telecomunicações;
+5.5 O detentor da torre poderá não ser necessariamente ser um detentor de serviço de telecomunicações, mas somente responsável em explorar comercialmente a infraestrutura, bem como obter o licenciamento perante os órgãos municipais, responsáveis pelo controle da ocupação do solo urbano;
+5.6 O compartilhamento de infraestrutura é permitido pela legislação em vigor. A exploração da infraestrutura não caracteriza a titularidade das estações de telecomunicações que a utilizam, podendo existir várias operadoras utilizando uma mesma torre. Nessa situação, poderá também ocorrer o compartilhamento dos recursos técnicos regulados pela ANATEL, tais como estação de telecomunicações, rádios, antenas, etc.; e
+5.7 Cumpre destacar que a Anatel atua tão somente no âmbito da regulamentação técnica e na fiscalização do uso adequado dos recursos de telecomunicações, o que não se confunde com a gestão da infraestrutura física, que é de responsabilidade do detentor da torre. Nesse sentido, importa ressaltar que a Anatel também não participa da relação contratual estabelecida entre o proprietário da torre e as prestadoras de serviços de telecomunicações que dela se utilizam.
+6. Prestadas as informações então solicitas, e exauridos os questionamentos sobre o tema, considera-se plenamente satisfeita a demanda recursal.
+Inconformado, o cidadão interpôs Recurso em 2ª instância (SEI nº 15352525), em 18/03/2026, nos seguintes termos:
+À AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES - ANATEL
+Conselho Diretor (CD)
+Ref.: NUP nº 01217.001623/2026-74
+Recorrente: Rodrigo Phanardzis Ancora da Luz
+I- SÍNTESE DO CASO
+Trata-se de recurso de 2ª instância interposto em face de decisão da Superintendência de Outorga e Recursos à Prestação (SOR), que manteve resposta parcialmente satisfatória a pedido de acesso à informação formulado com fundamento na Lei nº 12.527/2011. O requerimento original solicitou informações técnicas específicas e individualizadas acerca de estações de telecomunicações (ERBs) supostamente instaladas no endereço: Rodovia RJ-14, nº 90, Sítio Nilda, Alto de Ibicuí, Mangaratiba/RJ, inclusive com vinculação ao processo de licenciamento ambiental municipal.
+II- DA INSUFICIÊNCIA DA RESPOSTA PRESTADA
+A resposta da ANATEL limitou-se a afirmar que não possui informações sobre a propriedade da torre, indicar genericamente a existência de estações licenciadas na região e encaminhar planilha com dados técnicos não estruturados. Todavia, não houve enfrentamento específico e individualizado dos itens expressamente formulados no pedido, o que configura resposta incompleta, nos termos do art. 11 da Lei nº 12.527/2011
+III - DA AUSÊNCIA DE CORRESPONDÊNCIA ENTRE OS DADOS FORNECIDOS E O OBJETO DO PEDIDO
+A planilha disponibilizada não permite identificar, com segurança técnica se as estações listadas estão efetivamente instaladas na infraestrutura objeto do licenciamento municipal indicado, nem se há correspondência precisa entre as coordenadas informadas e o endereço fornecido ou quais estações efetivamente operam na torre específica questionada. Verifica-se, ao contrário, a existência de múltiplos registros com coordenadas semelhantes ou aproximadas, sem qualquer indicação de vinculação inequívoca à estrutura física em análise. Tal circunstância compromete a utilidade da informação fornecida, na medida em que impede a verificação do objeto concreto do pedido.
+IV - DA INCONSISTÊNCIA TÉCNICA RELATIVA AO COMPARTILHAMENTO DE INFRAESTRUTURA
+A resposta afirma que a ANATEL não mantém registro de compartilhamento de infraestrutura. Entretanto, a própria planilha indica a coexistência de múltiplas estações (possivelmente de diferentes operadoras) em coordenadas coincidentes ou muito próximas, o que sugere, tecnicamente, o uso compartilhado de infraestrutura. A ausência de esclarecimento sobre esse ponto configura lacuna relevante, especialmente diante da expressa solicitação constante do item 9 do pedido original.
+V - DA AUSÊNCIA DE RESPOSTA A ITENS ESSENCIAIS
+Diversos itens do pedido não foram adequadamente respondidos, dentre eles: identificação inequívoca das estações (IDs ou registros MOSAICO); datas de licenciamento e entrada em operação; faixas de frequência autorizadas; tecnologias utilizadas (3G, 4G, 5G); potência de transmissão; histórico de alterações ou ampliações; existência de processos administrativos correlatos. A simples disponibilização de planilha genérica, sem organização ou correlação com os itens solicitados, não atende ao dever legal de informação.
+VI - DO DEVER DE FORNECIMENTO DE INFORMAÇÃO CLARA, PRECISA E COMPLETA
+Nos termos do art. 7º e art. 11 da Lei nº 12.527/2011, a Administração Pública deve garantir acesso à informação de forma clara e compreensível, bem como fornecer dados completos ou, quando inexistentes, declarar expressamente sua inexistência. No presente caso, não houve: resposta estruturada por item; indicação de inexistência de dados quando aplicável; nem esclarecimento técnico mínimo que permita a compreensão da informação
+VII - DO CARÁTER OBJETIVO DO PEDIDO
+Importa destacar que o pedido formulado não possui caráter opinativo, consultivo ou investigativo genérico, mas sim refere-se a dados existentes em sistemas da própria ANATEL, está delimitado por endereço específico e apresenta quesitos técnicos objetivos. Portanto, trata-se de típico pedido de acesso à informação, plenamente amparado pela Lei nº 12.527/2011.
+VIII - DO PEDIDO
+Diante do exposto, requer:
+1. o conhecimento e provimento do presente recurso, para reformar a decisão recorrida;
+2. a determinação de complementação da resposta, com:
+a) apresentação das informações de forma estruturada, item a item, conforme o requerimento original;
+b) indicação expressa das estações efetivamente instaladas na infraestrutura localizada no endereço informado, com base em critérios técnicos de vinculação (coordenadas, cadastro ou outro meio idôneo);
+c) esclarecimento quanto à eventual coexistência de múltiplas estações no mesmo ponto geográfico, inclusive para fins de identificação indireta de compartilhamento de infraestrutura;
+d) fornecimento das informações técnicas solicitadas (frequência, tecnologia, potência, datas, etc.), ou declaração expressa de inexistência, quando for o caso;
+e) indicação da existência ou inexistência de processos administrativos relacionados à infraestrutura em questão no âmbito da ANATEL;
+3. subsidiariamente, caso parte das informações não seja de competência da ANATEL, que seja indicada de forma específica a autoridade ou órgão detentor dos dados, nos termos do art. 11, §1º, III, da Lei nº 12.527/2011.
+IX - CONCLUSÃO
+A resposta apresentada não atende ao padrão legal de transparência exigido pela Lei de Acesso à Informação, na medida em que não permite a identificação objetiva da realidade fática subjacente ao pedido.
+Requer-se, assim, a sua complementação, com vistas à efetiva garantia do direito de acesso à informação.
+Termos em que,
+Pede deferimento.
+Mangaratiba/RJ, 18 de março de 2026
+Rodrigo Phanardzis Ancora da Luz OAB/RJ 130.647
+Instada novamente a se manifestar (SEI nº 15353836), a SOR pronunciou-se quanto a essa impugnação por intermédio do Informe nº 2900/2026/ORLE/SOR (SEI nº 15357000), de 19/03/2026.
+Nos termos do item 5.1. da Matéria para Apreciação do Conselho Diretor nº 226/2026 (SEI nº 15358021), a área técnica sugeriu conhecer do recurso para, no mérito, negar-lhe provimento.
+Consoante Certidão de Distribuição SEI nº 15359539, em 19/03/2026, fui designado Relator da matéria.
+É o relatório.
+DA ANÁLISE
+I - Da admissibilidade
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A interposição deste Recurso de 2ª Instância, ocorrida em 18/03/2026 (SEI nº 15352525), foi tempestiva, uma vez que ocorreu no prazo de 10 (dez) dias previsto no art. 15, caput, da Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação - LAI), e do art. 21 do Decreto nº 7.724, de 16 de maio de 2012, transcritos abaixo: 
+Lei n.º 12.527/2011
+"Art. 15. No caso de indeferimento de acesso a informações ou às razões da negativa do acesso, poderá o interessado interpor recurso contra a decisão no prazo de 10 (dez) dias a contar da sua ciência. 
+Parágrafo único. O recurso será dirigido à autoridade hierarquicamente superior à que exarou a decisão impugnada, que deverá se manifestar no prazo de 5 (cinco) dias."
+...........................................................
+Decreto n.º 7.724/2012
+"Art. 21. No caso de negativa de acesso à informação ou de não fornecimento das razões da negativa do acesso, poderá o requerente apresentar recurso no prazo de dez dias, contado da ciência da decisão, à autoridade hierarquicamente superior à que adotou a decisão, que deverá apreciá-lo no prazo de cinco dias, contado da sua apresentação." (Grifou-se)
+Para além da tempestividade, resta atendido, igualmente, o requisito de legitimidade, por ter sido o pleito recursal formulado pelo próprio interessado.
+Quanto à competência para análise das razões recursais, prevista no art. 21 do Decreto nº 7.724/2012, observa-se que a resposta ao Recurso de 1ª instância foi realizada pela autoridade hierarquicamente superior àquela que tomou a decisão. Contra tal decisão, o cidadão interpôs Recurso em 2ª instância, de modo que cabe a este Conselho Diretor a análise do pedido.
+Por fim, o sorteio da presente matéria para minha relatoria foi tempestivo, uma vez que o prazo de 5 (cinco) dias para sua deliberação esgotar-se-á em 23/03/2026, nos termos do art. 15, parágrafo único, da LAI e do art. 21 do Decreto nº 7.724/2012, transcritos acima.
+Presentes os pressupostos de tempestividade e de legitimidade, passo ao exame de cabimento da peça recursal, sob a óptica da Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação - LAI).
+II - Do mérito recursal
+A irresignação do cidadão consignada no recurso sob análise se baseia em suposta hipótese de fornecimento de informações incompletas, pois argumenta que "a resposta da Anatel limitou-se a afirmar que não possui informações sobre a propriedade da torre, indicar genericamente a existência de estações licenciadas na região e encaminhar planilha com dados técnicos não estruturados". Acrescenta que não houve enfrentamento específico e individualizado dos itens expressamente formulados no pedido.
+Como relatado anteriormente, a solicitação inicial do cidadão teve sua resposta elaborada pela Gerência de Outorga e Licenciamento de Estações (ORLE), por meio do Ofício nº 1716/2026/ORLE/SOR-ANATEL (SEI nº 15309047), de 11/03/2026, ocasião em que foi informado ao cidadão onde poderia obter as informações solicitadas na página da Anatel na Internet, de forma pública, conforme orientações registradas.
+No Recurso de 1ª instância (SEI nº 15324063), o cidadão demandante reiterou seu pleito, pontuando que houve inexatidão das informações encaminhadas:
+Recurso de 1ª Instância
+Dessa forma, requer-se que seja reavaliada a resposta fornecida, a fim de que:
+- sejam explicitadas, de forma individualizada, as informações existentes nos sistemas da Agência relativas aos itens do pedido formulado;
+- seja formalmente declarada a inexistência de eventuais informações que não constem das bases da ANATEL;
+- caso alguma das informações solicitadas esteja sob custódia de outro órgão ou entidade, seja indicada a autoridade ou instituição responsável por sua guarda.
+Em atenção ao recurso de 1ª instância interposto, no dia 13/03/2026, a Superintendência de Outorgas e Recursos à Prestação (SOR), com base no Ofício nº 1867/2026/ORLE/SOR-ANATEL (SEI nº 15334433), retificou algumas informações e explicou individualmente os itens apresentados no Pedido de Acesso à Informação nº 01217.001623/2026-74 (SEI nº 15291188). No que se refere à especificidade da matéria questionada, a área técnica diligentemente apontou considerações extremamente relevantes para entendimento do caso. Veja-se:
+Ofício nº 1867/2026/ORLE/SOR-ANATEL (SEI nº 15334433)
+Quanto aos aspectos relativos à ocupação do solo, as operadoras de telecomunicações deverão seguir, precipuamente, as normas municipais atinente ao Plano de Desenvolvimento Urbano (Plano Diretor), conforme previsto na Lei Geral de Telecomunicações - Lei nº 9.472, de 16/07/1997, em seu artigo 74, e no Regulamento Geral dos Serviços de Telecomunicações - RGST, instituído pela Resolução nº 777, de 28 de abril de 2025, especificamente em seu art. 119, inciso X, in verbis: “observar as leis e normas técnicas relativas à construção e utilização de infraestruturas”;
+Os municípios são os detentores da competência para legislar sobre assuntos de interesse local e promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano. A Lei nº 13.116, de 20/04/2015, estabelece princípios a serem adotados pelos municípios no licenciamento de infraestrutura urbana e no licenciamento ambiental;
+A competência legal da ANATEL, nos casos de licenciamento de estações de telecomunicações, limita-se aos aspectos técnicos dos equipamentos de telecomunicações relacionados à exploração do serviço. No caso da estrutura física de instalação, bem como aspectos relacionados à proteção contra descargas elétricas e níveis de ruído emitido, cada prestadora deverá seguir as especificações da Associação Brasileira de Normas Técnicas de Telecomunicações (ABNT), do Conselho Regional de Engenharia e Agronomia (CREA) e do Código de Posturas Municipais, conforme respectivas competências, antes de realizar o procedimento de licenciamento das estações perante esta Agência;
+A esta Agência Reguladora, também não compete definir os requisitos ou condições referentes a estudos de conformidade para construção de torres que dão suporte para as estações de telecomunicações;
+O detentor da torre poderá não ser necessariamente ser um detentor de serviço de telecomunicações, mas somente responsável em explorar comercialmente a infraestrutura, bem como obter o licenciamento perante os órgãos municipais, responsáveis pelo controle da ocupação do solo urbano;
+O compartilhamento de infraestrutura é permitido pela legislação em vigor. A exploração da infraestrutura não caracteriza a titularidade das estações de telecomunicações que a utilizam, podendo existir várias operadoras utilizando uma mesma torre. Nessa situação, poderá também ocorrer o compartilhamento dos recursos técnicos regulados pela ANATEL, tais como estação de telecomunicações, rádios, antenas, etc.; e
+Cumpre destacar que a Anatel atua tão somente no âmbito da regulamentação técnica e na fiscalização do uso adequado dos recursos de telecomunicações, o que não se confunde com a gestão da infraestrutura física, que é de responsabilidade do detentor da torre. Nesse sentido, importa ressaltar que a Anatel também não participa da relação contratual estabelecida entre o proprietário da torre e as prestadoras de serviços de telecomunicações que dela se utilizam.
+Analisando-se a resposta ao recurso ora interposto, não verifico quaisquer irregularidades no tratamento da presente solicitação. 
+Em sua resposta, a área técnica, diante da insistência do cidadão, reiterou as informações prestadas e, por fim, ao analisar o recurso interposto em 2ª instância, ora sob análise, pontuou que "(...) encaminhou o Ofício nº 1867/2026/ORLE/SOR-ANATEL, de 18 de março de 2026 (SEI nº 15334433), no qual prestou as informações pormenorizadamente", como se lê no item 3.18 do Informe nº 2900/2026/ORLE/SOR (SEI nº 15357000), de 19/03/2026.
+Reproduzo, para melhor elucidação, trecho do Informe acima citado que consta quadro com os itens questionados pelo usuário e as respectivas respostas da área técnica, evidenciando o atendimento respeitável desta Agência para com qualquer cidadão que venha buscar informações produzidas ou custodiadas pela Anatel. 
+3.16. De acordo com o § 6º do art. 11 da LAI c/c o art. 17 do Decreto nº 7.724/2012, caso a informação solicitada por meio do SIC esteja disponível ao público em formato eletrônico, serão informados ao requerente o lugar e a forma pela qual se poderá consultar, obter ou reproduzir a referida informação, procedimento esse que, em tese, desonerará o órgão ou entidade pública da obrigação de seu fornecimento direto, salvo exceções. Logo, nos links fornecidos ao cidadão, é possível obter a relação de estações do Serviço de Comunicação Multimídia - SCM (internet fixa), do Serviço Móvel Pessoal - SMP (telefonia móvel, incluindo internet móvel) e de diversos outros serviços de telecomunicações, o que inclui todos as estações licenciadas objeto da solicitação formulada.
+3.17. Ademais, consoante disposto no inciso III e parágrafo único do art. 13 do Decreto nº 7.724/2012, não serão atendidos pedidos de informações que exijam trabalhos adicionais de análise, interpretação ou consolidação de dados e informações. Nestes casos, cabe ao órgão ou entidade, caso tenha conhecimento, indicar o local onde se encontram as informações a partir das quais o requerente poderá realizar a interpretação, consolidação ou tratamento de dados.
+3.18. Não obstante tais disposições previstas na regulamentação aplicável, ao reavaliar a demanda incialmente apresentado pelo cidadão, esta Superintendência encaminhou o Ofício nº 1867/2026/ORLE/SOR-ANATEL, de 18 de março de 2026 (SEI nº 15334433), no qual prestou as informações pormenorizadamente, conforme a seguir:
+ Questionamento
+ | 
+ Resposta
+ | 
+ Informação da planilha em anexo
+ | 
+ 1. quais ESTAÇÕES RÁDIO BASE (ERB) ou outras estações de telecomunicações encontram-se licenciadas pela ANATEL nas coordenadas ou na área correspondente ao endereço acima indicado;
+ | 
+ 1. Há no endereço em questão, apenas 1 (uma) estação base licenciada perante esta Agência em nome da empresa TELEFONICA BRASIL S.A.;
+ | 
+ Não se aplica
+ | 
+ 2. o número de identificação das estações cadastradas nos sistemas da ANATEL (MOSAICO ou sistemas equivalentes);
+ | 
+ 2. Esta informação encontra-se na coluna "D" da planilha SEI nº 15336353;
+ | 
+ Estação nº 1015263507
+ | 
+ 3. as empresas ou operadoras de telecomunicações responsáveis pelas estações instaladas na referida infraestrutura;
+ | 
+ 3. Esta informação encontra-se na coluna "A" da planilha SEI nº 15336353, visto que a empresa responsável pelo licenciamento de estações perante esta Agência é a mesma que consta na licença de estação;
+ | 
+ TELEFONICA BRASIL S.A.
+ | 
+ 4. a data de licenciamento de cada estação junto à ANATEL;
+ | 
+ 4. Esta informação encontra-se na coluna "AW" da planilha SEI nº 15336353;
+ | 
+ 21/09/2023
+ | 
+ 5. a data de entrada em operação das respectivas estações;
+ | 
+ 5. Esta informação também se encontra-se na coluna "AW" da planilha SEI nº 15336353, visto que a entrada em operação coincide com a emissão da licença de funcionamento de estação;
+ | 
+ 21/09/2023
+ | 
+ 6. as faixas de frequência autorizadas para utilização nas referidas estações;
+ | 
+ 6. Esta informação encontra-se nas colunas "AS" e "AT" da planilha SEI nº 15336353, correspondendo as frequências centrais de transmissão e recepção da estação, respectivamente;
+ | 
+ 788.0-733.0 MHz // 2160.0-1970.0 MHz // 3450.0-3450.0 MHz // 1865.0-1770.0 MHz // 1862.5-1767.5 MHz // 1867.5-1772.5 MHz // 1865.0-1770.0 MHz // 1862.5-1767.5 MHz // 1867.5-1772.5 MHz // 1865.0-1770.0 MHz // 1862.5-1767.5 MHz // 1867.5-1772.5 MHz
+ | 
+ 7. as tecnologias utilizadas (por exemplo: 3G, 4G, 5G ou outras);
+ | 
+ 7. Esta informação encontra-se na coluna "AK" da planilha SEI nº 15336353;
+ | 
+ LTE // NR
+ | 
+ 8. a potência autorizada para transmissão das estações instaladas no referido local;
+ | 
+ 8. Esta informação encontra-se na coluna "AI" da planilha SEI nº 15336353;
+ | 
+ 40.0 Watts// 200.0 Watts
+ | 
+ 9. eventual compartilhamento da infraestrutura entre múltiplas operadoras;
+ | 
+ 9. Não há outra empresa além da TELEFONICA BRASIL S.A. fazendo uso da infraestrutura em questão;
+ | 
+ Não se aplica
+ | 
+ 10. a identificação da empresa responsável pela infraestrutura passiva (tower company), bem como eventual registro da infraestrutura junto à ANATEL;
+ | 
+ 10. A ANATEL não possui ou registra essa informação. Repise-se que a Anatel não possui informações dos proprietários de torres, mas tão somente das estações compostas pelos equipamentos de telecomunicações;
+ | 
+ Não se aplica
+ | 
+ 11. eventuais alterações posteriores de licenciamento ou ampliação das estações instaladas na referida torre;
+ | 
+ 11. Esta informação encontra-se na coluna "AX" da planilha SEI nº 15336353, onde as datas indicadas referem-se a ocorrência das alterações sofridas pela estação;
+ | 
+ 21/09/2023 // 09/12/2024 // 14/11/2025
+ | 
+ 12. eventuais processos administrativos, autorizações ou registros existentes na ANATEL relacionados à infraestrutura de telecomunicações situada no endereço acima indicado.
+ | 
+ 12. Reiteramos que a ANATEL não regula infraestrutura de suporte, como já informado. A empresa responsável pela infraestrutura não necessita explorar serviço de telecomunicações, tratando-se meramente de obra civil. Informamos ainda que esta Agência não possui registros referentes a infraestrutura de apoio, devendo os órgãos competentes, tais como prefeituras, serem consultados. Por fim, ressaltamos que o licenciamento de estações é efetuado pelas prestadoras de serviço de telecomunicações de forma eletrônica por meio de sistema disponibilizado pela Anatel nos termos do Art.12 do Regulamento Geral de Licenciamento, aprovado pela Resolução nº 719, de 10/02/2020.
+ | 
+ Não se aplica
+ | 
+Assim, entendo que o fornecimento tido como parcial das informações solicitadas foi devidamente afastado pela SOR, devendo-se ressaltar que todos os esclarecimentos e documentos pedidos, e existentes na Agência, foram informados, não havendo de se falar em recusa deste órgão no atendimento do pleito, ainda que de maneira incompleta.
+Por fim, importante notar que as condições para interposição de recurso estão previstas no art. 15 da Lei nº 12.527, de 18 de novembro de 2011, Lei de Acesso à Informação (LAI), cuja literalidade reproduzo abaixo:
+Art. 15. No caso de indeferimento de acesso a informações ou às razões da negativa do acesso, poderá o interessado interpor recurso contra a decisão no prazo de 10 (dez) dias a contar da sua ciência.
+Entendo, por todo o exposto, que o tratamento conferido à presente demanda pela SOR, em 1ª instância, não é eivado de qualquer mácula ao direito à informação do cidadão, protegido pelos mesmos regramentos, os quais, por sua vez, também estabelecem limites ao seu exercício, em observância ao princípio do interesse público tutelado.
+Em face da inexistência de indeferimento de acesso a informações ou às razões da negativa do acesso, não vislumbro o cabimento do recurso interposto, considerando irretocável o tratamento dado à presente demanda, tanto pela ORLE quanto pela SOR, conforme os motivos expostos. Para corroborar tal assertiva, segue trecho do Informe nº 2900/2026/ORLE/SOR (SEI nº 15357000), de 19/03/2026, que apresenta novamente explicações sobre pontos já informados ao cidadão:
+Em todo o caso, as orientações sobre o modo de obtenção da relação das estações de telecomunicações, incluindo informações de localização, foram devidamente fornecidas em ambas as respostas registradas no sistema.
+Logo, considerando que foram abordados todos os pontos solicitados pelo recorrente, conclui-se que não merecem prosperar os argumentos de que a resposta prestada teria sido insuficiente, ou que haveria ausência de resposta a itens essenciais, ou ainda que a Agência haveria faltado ao seu dever de fornecimento de informação clara, precisa e completa. Nota-se, ao contrário, que a Anatel prestou informações de forma ainda mais clara, precisa e completa do que estaria obrigada por disposição legal.
+Quanto à alegação de ausência de correspondência entre os dados fornecidos e o objeto do pedido, repisa-se que a única estação, cuja licença segue em anexo (SEI nº 15357987), que consta no endereço informado pelo recorrente é a estação na que foram prestadas as informações requeridas.
+Acerca da argumentação de que haveria inconsistência técnica relativa ao compartilhamento de infraestrutura, sustentando que a Anatel teria informado que não mantém registro de compartilhamento de infraestrutura, e de forma ambígua, a planilha encaminhada indicaria a coexistência de múltiplas estações, faz-se mister desfazer o equívoco posto. Esclareça-se que a informação prestada foi de que a Agência não mantém registro de compartilhamento em si, limitando-se a registrar várias operadoras na mesma licença. No entanto, pontua-se que a planilha indica a existência de apenas uma estação cadastrada para somente uma operadora, não sendo o caso, portanto, de compartilhamento no caso concreto. 
+Assim, tendo em vista que o recurso interposto não se subsume às circunstâncias para sua interposição, conforme prevê o art. 15 da LAI, proponho seu não conhecimento.
+III - A relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+Para o caso analisado, destaque-se a Meta nacional 16.6, que busca ampliar a transparência, a accountability e a efetividade das instituições, em todos os seus níveis. Promover a transparência de atos de responsabilidade dos entes estatais significa ampliar a satisfação da sociedade na relação direta com os serviços públicos.
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Tendo-se por fundamento as razões constantes desta Análise, voto pelo não conhecimento do Recurso de 2ª Instância interposto na Plataforma Integrada de Ouvidoria - Fala.BR nº 01217.001623/2026-74 (SEI nº 15291188).
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 20/03/2026, às 15:26, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15360076 e o código CRC F1AA8327.
+ | 
+Referência: Processo nº 01217.001623/2026-74 | 
+SEI nº 15360076 |

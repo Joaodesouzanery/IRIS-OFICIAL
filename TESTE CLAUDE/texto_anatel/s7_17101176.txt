@@ -1,0 +1,479 @@
+SEI/ANATEL - 15285087 - Análise
+Boletim de Serviço Eletrônico em 10/04/2026
+Análise nº 23/2026/OP
+Processo nº 53500.083769/2025-47
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Submissão à Consulta Pública de proposta de simplificação e consolidação, incluindo disposições afetas ao Serviço de Comunicação Multimídia - SCM, do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - RRUR-STFC, aprovado pela Resolução nº 588, de 7 de maio de 2012 e do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal - RRUR-SMP, aprovado pela Resolução nº 438, de 10 de julho de 2006, objeto do item 32 da Agenda Regulatória para o biênio 2025-2026.
+EMENTA
+DIREITO REGULATÓRIO. PROPOSTA DE SIMPLIFICAÇÃO E CONSOLIDAÇÃO DA REGULAMENTAÇÃO DE REMUNERAÇÃO DE USO DE REDES. INCLUSÃO DE DISPOSIÇÕES AFETAS AO SERVIÇO DE COMUNICAÇÃO MULTIMÍDIA – SCM. SUBMISSÃO À CONSULTA PÚBLICA.
+I. CASO EM EXAME
+1. Proposta de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições relativas ao Serviço de Comunicação Multimídia – SCM, para adequação à possibilidade de uso de recursos de numeração pública UIT E.164 e obrigações correlatas à interconexão de redes a partir de 1º de março de 2027.
+2. A proposta visa consolidar e simplificar regras atualmente previstas no Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado (Resolução nº 588/2012) e no Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal (Resolução nº 438/2006), bem como estender dispositivos ao SCM.
+3. O projeto foi precedido de Análise de Impacto Regulatório, Consulta Interna sem recebimento de contribuições e manifestação favorável da Procuradoria Federal Especializada junto à Anatel, com recomendações de ajustes redacionais.
+II. QUESTÃO EM DISCUSSÃO
+4. Há três questões em discussão: (i) saber se é adequada a consolidação normativa das regras de remuneração pelo uso de redes dos diversos serviços de telecomunicações em um único instrumento; (ii) saber se é pertinente a simplificação normativa, com revogação de dispositivos desatualizados ou absorvidos por outros normativos; e (iii) saber se é necessária a unificação das regras de remuneração pelo uso de redes aplicáveis ao SCM e ao STFC, diante da possibilidade de uso de numeração pública UIT E.164 pelo SCM.
+III. RAZÕES DE DECIDIR
+5. A consolidação normativa é determinada pelo Decreto nº 12.002/2024 e visa garantir maior consistência regulatória e transparência, reunindo em um único normativo as regras de remuneração pelo uso de redes.
+6. A simplificação normativa é necessária diante da evolução do setor e da existência de dispositivos que perderam sua razão de existir ou foram absorvidos por outros regulamentos, sendo dever da Agência promover a revisão e revogação de regras desatualizadas.
+7. A unificação das regras de remuneração pelo uso de redes para o SCM e o STFC é justificada pela inclusão do SCM no mesmo mercado de varejo de voz fixa, conforme o Plano Geral de Metas de Competição (Resolução nº 783/2025), e pela necessidade de adequação à operacionalização do uso de numeração pública UIT E.164 pelo SCM.
+8. O procedimento observou os requisitos legais e regimentais, incluindo Análise de Impacto Regulatório, Consulta Interna, manifestação jurídica e elaboração de minuta de resolução consolidada, com ajustes redacionais sugeridos pela PFE/Anatel.
+IV. DISPOSITIVO E TESE
+9. Encaminhamento da proposta de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia – SCM, para submissão à Consulta Pública pelo prazo de 45 dias.
+Tese de julgamento: "1. É adequada a consolidação normativa das regras de remuneração pelo uso de redes dos diversos serviços de telecomunicações em um único instrumento. 2. É pertinente a simplificação normativa, com revogação de dispositivos desatualizados ou absorvidos por outros normativos. 3. É necessária a unificação das regras de remuneração pelo uso de redes aplicáveis ao SCM e ao STFC, diante da possibilidade de uso de numeração pública UIT E.164 pelo SCM."
+Dispositivos relevantes citados: Lei nº 9.472/1997, arts. 1º, 19, 42; Lei nº 13.848/2019, art. 9º; Decreto nº 12.002/2024, arts. 65 a 67; Resolução nº 588/2012; Resolução nº 438/2006; Resolução nº 693/2018; Resolução nº 783/2025; Resolução nº 777/2025; Resolução Interna nº 8/2021.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, que aprovou a Lei Geral de Telecomunicações - LGT.
+Lei nº 13.848, de 25 de junho de 2019, que aprovou a Lei das Agências Reguladoras.
+Lei nº 15.263, de 14 de novembro de 2025, que instituiu a Política Nacional de Linguagem Simples.
+Decreto nº 10.139 de 28 de novembro de 2019, que dispôs sobre a revisão e a consolidação dos atos normativos inferiores a decreto.
+Decreto nº 10.411, de 30 de junho de 2020, que regulamenta a análise de impacto regulatório.
+Decreto nº 12.002, de 22 de abril de 2024, que estabeleceu normas para elaboração, redação, alteração e consolidação de atos normativos.
+Resolução nº 83, de 30 de dezembro de 1998, que aprovou o Regulamento de Numeração.
+Resolução nº 438, de 10 de julho de 2006, que aprovou o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal - RRUR-SMP.
+Resolução nº 588, de 7 de maio de 2012, que aprovou o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - RRUR-STFC.
+Resolução nº 612, de 29 de abril de 2013, que aprovou o Regimento Interno da Anatel.
+Resolução nº 639, de 1 de julho de 2014, que aprovou a Norma para fixação dos valores máximos das tarifas de uso de rede fixa do Serviço Telefônico Fixo Comutado - STFC, dos valores de referência de uso de rede móvel do Serviço Móvel Pessoal - SMP e de Exploração Industrial de Linha Dedicada - EILD, com base em Modelos de Custos.
+Resolução nº 693, de 17 de julho de 2018, que aprovou o Regulamento Geral de Interconexão - RGI.
+Resolução Anatel nº 749, de 15 de março de 2022, que aprovou o Regulamento de Numeração dos Serviços de Telecomunicações.
+Resolução nº 694, de 17 de julho de 2018, que alterou o Plano Geral de Metas de Competição - PGMC, aprovado pela Resolução nº 600, de 8 de novembro de 2012.
+Resolução nº 749, de 15 de março de 2022, que aprovou o Regulamento de Numeração dos Serviços de Telecomunicações.
+Resolução Anatel nº 752, de 22 de junho de 2022, que revogou e alterou Resoluções expedidas pela Agência - Guilhotina Regulatória.
+Resolução Anatel nº 765, de 6 de novembro de 2023, que aprovou o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC.
+Resolução Anatel nº 777, de 28 de abril de 2025, que aprovou o Regulamento Geral dos Serviços de Telecomunicações - RGST.
+Resolução nº 779, de 28 de abril de 2025, que aprovou o Glossario aplicável ao Setor de Telecomunicações.
+Resolução Interna nº 8, de 26 de fevereiro de 2021, que aprovou diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+Resolução Interna nº 399, de 30 de dezembro de 2024, que aprovou a Agenda Regulatória para o biênio 2025-2026 e, posteriormente, foi alterada pelas Resoluções Internas nº 409, de 19 de fevereiro de 2025, nº 429, de 28 de abril de 2025, nº 445, de 23 de junho de 2025, nº 469, de 15 de agosto de 2025, e nº 523 (SEI nº 15247243), de 27 de fevereiro de 2026.
+Processo nº 53500.059638/2017-39.
+Processo nº 53500.059950/2017-22, no qual se reavaliou a regulamentação de numeração de redes e serviços de telecomunicações.
+Processo nº 53500.335711/2022-41.
+Processo nº 53500.011386/2024-96, no qual se avaliou proposta de atualização da Agenda Regulatória da Anatel para o biênio 2025-2026.
+Processo nº 53500.083769/2025-47.
+RELATÓRIO
+Cuida-se de submissão à Consulta Pública de proposta de simplificação e consolidação, incluindo disposições afetas ao Serviço de Comunicação Multimídia - SCM, do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - RRUR-STFC, aprovado pela Resolução nº 588, de 7 de maio de 2012 e do Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal - RRUR-SMP, aprovado pela Resolução nº 438, de 10 de julho de 2006, objeto do item 32 da Agenda Regulatória para o biênio 2025-2026.
+Em 15 de dezembro de 2025, por meio do Termo de Abertura de Projeto (SEI nº 14506302) iniciaram-se atividades com o objetivo de simplificar e consolidar a regulamentação de remuneração de uso de redes, incluindo o caso do SCM, que passará a poder usar recursos de numeração pública UIT E.164, com obrigações correlatas a interconexão de redes, a partir de 2027, conforme Resolução nº 777, de 28 de abril de 2025, que aprovou o Regulamento Geral dos Serviços de Telecomunicações - RGST, bem como o Acórdão nº 202, de 14 de agosto de 2025 (SEI nº 14194308).
+Foi realizada Consulta Interna nº 22/2025 (SEI nº 14618220), entre 8 e 12 de dezembro de 2025, sem o recebimento de contribuições (SEI nº 14506860).
+Em 15 de dezembro de 2025, a Superintendência de Planejamento e Regulamentação - SPR elaborou o Informe nº 136/2025/PRRE/SPR (SEI nº 14506538), no qual propôs o prosseguimento do projeto de simplificação e consolidação da regulamentação de remuneração pelo uso de redes, incluindo o SCM, com início antecipado das etapas internas, condicionado à aprovação formal de sua inclusão na Agenda Regulatória.
+Anexado ao referido Informe, o Relatório de Análise de Impacto Regulatório - AIR (SEI nº 14506833) apresentou os problemas mapeados pela área técnica e as respectivas alternativas consideradas, apontando aquelas avaliadas como as mais adequadas. 
+Adicionalmente, anexados ao Informe nº 136/2025/PRRE/SPR (SEI nº 14506538), constaram: (i) as Minutas de Resolução da proposta encaminhada pela área técnica (SEI nº 14506857 e 14618540), (ii) a planilha De-Para das Resoluções nº 438, de 2006, e nº 588, de 2012 (SEI nº 14506888), (iii) o extrato de contribuições da Consulta Interna (SEI nº 14506860) e (iv) a Minuta de Consulta Pública (SEI nº 14506894).
+O Processo foi encaminhado à Procuradoria Federal Especializada junto à Agência Nacional de Telecomunicações - PFE/Anatel que emitiu o Parecer nº 6/2026/PFE-ANATEL/PGF/AGU (SEI nº 15040217), de 12 de janeiro de 2026, atestando a competência da Anatel para tratar do tema, a regularidade do procedimento, a necessidade de consulta pública e sugerindo ajustes redacionais na Minuta de Resolução.
+Em 13 de fevereiro de 2026, a área técnica analisou o Parecer referenciado acima, por meio do Informe nº 18/2026/PRRE/SPR (SEI nº 15139376), no qual concordou com as recomendações e promoveu ajustes na Minuta de Resolução (SEI nº 15146863 e 15150860) referente à numeração dos dispositivos e à ordem alfabética das definições no Glossário aplicável ao Setor de Telecomunicações, aprovado peloa Resolução nº 779, de 28 de abril de 2025.
+Subsequentemente, por meio da Matéria para Apreciação do Conselho Diretor nº 89/2026 (SEI nº 15139383), a proposta foi submetida à deliberação desse Colegiado.
+O Processo foi objeto de sorteio no dia 26 de fevereiro de 2026, ocasião em que fui designado relator da matéria, conforme Certidão de Distribuição SEI nº 15237165.
+É o relatório.
+FUNDAMENTAÇÃO 
+Cuida-se de proposta de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia - SCM, item 32 da Agenda Regulatória 2025-2026.
+A fundamentação da presente Análise encontra-se dividida em 3 (três) partes.
+Na primeira, examinarei a regularidade da tramitação do presente feito e seus aspectos formais, que abarcam a competência legal do Conselho Diretor para Deliberar sobre a matéria e os procedimentos adotados pela Agência na elaboração e aprovação de normas.
+A segunda parte será dedicada à análise de mérito, nos quais avaliarei individualmente os itens da Análise de Impacto Regulatório juntamente com minhas considerações e proposta de encaminhamento do presente processo.
+Por fim, na terceira parte, avaliarei a Minuta de Resolução e apresentarei minhas sugestões de aprimoramento.
+I - DOS ASPECTOS FORMAIS
+De início, constato que a instauração e a instrução do presente procedimento atenderam plenamente às disposições do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A edição de atos de caráter normativo pela Agência encontra-se disciplinada: (i) pelo art. 42 da Lei nº 9.472, de 16 de julho de 1997 - a Lei Geral de Telecomunicações – LGT; (ii) pelo art. 9º da Lei nº 13.848, de 25 de junho de 2019, que dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras; bem como (iii) pelos arts. 62 a 66 do RIA.
+Os dispositivos mencionados disciplinam o procedimento de elaboração de atos normativos aplicados à Agência, nos quais se estabelecem, como regra, a necessidade de submissão prévia das respectivas minutas à consulta pública, como instrumento de participação social e de apoio à tomada de decisão:
+LGT
+"Art. 42. As minutas de atos de caráter normativo serão submetidos à consulta pública, formalizada por publicação no Diário Oficial da União, devendo as críticas e sugestões merecer exame e permanecer à disposição do público na Biblioteca". 
+...........................................
+Lei nº 13.848/2019
+"Art. 9º Serão objeto de consulta pública, previamente à tomada de decisão pelo conselho diretor ou pela diretoria colegiada, as minutas e as propostas de alteração de atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados.
+§ 1º A consulta pública é o instrumento de apoio à tomada de decisão por meio do qual a sociedade é consultada previamente, por meio do envio de críticas, sugestões e contribuições por quaisquer interessados, sobre proposta de norma regulatória aplicável ao setor de atuação da agência reguladora.
+§ 2º Ressalvada a exigência de prazo diferente em legislação específica, acordo ou tratado internacional, o período de consulta pública terá início após a publicação do respectivo despacho ou aviso de abertura no Diário Oficial da União e no sítio da agência na internet, e terá duração mínima de 45 (quarenta e cinco) dias, ressalvado caso excepcional de urgência e relevância, devidamente motivado.
+§ 3º A agência reguladora deverá disponibilizar, na sede e no respectivo sítio na internet, quando do início da consulta pública, o relatório de AIR, os estudos, os dados e o material técnico usados como fundamento para as propostas submetidas a consulta pública, ressalvados aqueles de caráter sigiloso.
+§ 4º As críticas e as sugestões encaminhadas pelos interessados deverão ser disponibilizadas na sede da agência e no respectivo sítio na internet em até 10 (dez) dias úteis após o término do prazo da consulta pública.
+§ 5º O posicionamento da agência reguladora sobre as críticas ou as contribuições apresentadas no processo de consulta pública deverá ser disponibilizado na sede da agência e no respectivo sítio na internet em até 30 (trinta) dias úteis após a reunião do conselho diretor ou da diretoria colegiada para deliberação final sobre a matéria.
+§ 6º A agência reguladora deverá estabelecer, em regimento interno, os procedimentos a serem observados nas consultas públicas.
+§ 7º Compete ao órgão responsável no Ministério da Economia opinar, quando considerar pertinente, sobre os impactos regulatórios de minutas e propostas de alteração de atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados submetidas a consulta pública pela agência reguladora. (grifei)
+I.a - Da Competência do Conselho Diretor
+Segundo estabelecem os arts. 59, 62 e 133 do RIA, é competência deste Colegiado expedir Consultas Públicas, assim como aprovar a Agenda Regulatória:
+RIA
+"Art. 59. A Consulta Pública tem por finalidade submeter minuta de ato normativo, documento ou matéria de interesse relevante, a críticas e sugestões do público em geral.
+§ 1º A Consulta Pública pode ser realizada pelo Conselho Diretor ou pelos Superintendentes, nas matérias de suas competências. 
+(...)
+Art. 62. Os atos de caráter normativo da Agência serão expedidos por meio de Resoluções, de competência exclusiva do Conselho Diretor, observado o disposto nos arts. 59 e 60, relativos aos procedimentos de Consultas Pública e Interna, respectivamente.
+Parágrafo único. Os atos de caráter normativo a que se refere o caput, salvo em situações expressamente justificadas, deverão ser precedidos de Análise de Impacto Regulatório.
+(...)
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável: (...)
+LXIII - aprovar a Agenda Regulatória da Anatel;"
+O RIA é claro quanto à competência do Colegiado para realizar Consultas Públicas bem como aprovar a Agenda Regulatória.
+I.b - Da Agenda Regulatória
+A Resolução Interna nº 8, de 26 de fevereiro de 2021, estabelece diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência. O art. 4º da Norma estabelece que a Agenda Regulatória reunirá todos os Projetos de Regulamentação da Agência para um período de 2 (dois) anos, cabendo ao Conselho Diretor sua aprovação, assim como a alteração (inclusão ou exclusão) dos Projetos de Regulamentação a qualquer momento, desde que devidamente motivados: 
+Resolução Interna nº 8/2021
+"Art. 4º Caberá à Superintendência de Planejamento e Regulamentação (SPR), nos termos do Regimento Interno, submeter à aprovação do Conselho Diretor proposta de Consulta Pública da Agenda Regulatória da Anatel até 31 de maio do ano anterior ao de início de sua vigência.
+§ 1º A Agenda Regulatória deverá considerar a necessidade de resolução de problemas regulatórios identificados e que possam demandar ação normativa pela Agência, bem como a necessidade de atualização do estoque regulatório.
+§ 2º A Agenda Regulatória reunirá todos os Projetos de Regulamentação da Agência para um período de 2 (dois) anos e estabelecerá as prioridades e os prazos para cada Projeto de Regulamentação previsto.
+(...)
+§ 5º A Agenda Regulatória deverá ser aprovada pelo Conselho Diretor até a última reunião deliberativa do ano anterior ao início de sua vigência.
+(...)
+§ 8º O Conselho Diretor poderá, a qualquer momento da vigência da Agenda Regulatória e com a devida motivação, incluir ou excluir Projetos de Regulamentação, considerando, entre outros fatores, a conveniência, a necessidade e a urgência de condução daquele Projeto de Regulamentação, bem como a quantidade de Projetos de Regulamentação já constantes na Agenda Regulatória consoante os recursos disponíveis na Agência para a condução adequada dos Projetos de Regulamentação."
+Conforme relatado pela área técnica, no Informe nº 136/2025/PRRE/SPR (SEI nº 14506538, itens 3.6 e 3.7), para o biênio 2025-2026 a Agenda Regulatória foi aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024, contendo inicialmente 28 (vinte e oito) projetos normativos. Posteriormente, por meio das Resoluções Internas: (i) nº 409, de 19 de fevereiro de 2025; (ii) nº 429, de 28 de abril de 2025; (iii) nº 445, de 23 de junho de 2025; e (iv) nº 469, de 15 de agosto de 2025, a Agenda passou por alterações para: (i) inclusão de nova iniciativa de nº 29; (ii) alteração do cronograma da iniciativa nº 10; (iii) inclusão de nova iniciativa de nº 30; e (iv) inclusão de nova iniciativa de nº 31, respectivamente. 
+No Informe nº 18/2026/PRRE/SPR (SEI nº 15139376), a área técnica esclareceu que a proposta em debate no presente processo havia sido apresentada como item a ser incluído na Agênda Regulatória 2025-2026 nos autos do Processo nº 53500.011386/2024-96 por meio do Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), de 5 de dezembro de 2025.
+I.b.1 - Do Processo nº 53500.011386/2024-96
+Nota-se que a matéria foi apreciada pelo Colegiado que, por meio do Acórdão nº 41 (SEI nº 15245646), de 27 de fevereiro de 2026, aprovou a inclusão da proposta de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições para o SCM, , na Agenda Regulatória 2025-2026, assim como outras iniciativas: 
+Acórdão nº 41 (SEI nº 15245646), de 27 de fevereiro de 2026
+"EMENTA
+DIREITO ADMINISTRATIVO. ANÁLISE DE PROPOSTA DE ATUALIZAÇÃO DA AGENDA REGULATÓRIA. INCLUSÃO DE NOVAS INICIATIVAS E AJUSTES DE METAS. PROPOSTA APROVADA.
+I. CASO EM EXAME
+1. Proposta de atualização da Agenda Regulatória da Anatel para o biênio 2025-2026, apresentada pela Superintendência de Planejamento e Regulamentação - SPR, com base nos §§ 6º a 9º do art. 4º da Resolução Interna Anatel nº 8/2021.
+2. Ajustes de metas de iniciativas regulamentares para 2026, considerando a execução real dos projetos em 2025.
+3. Inclusão de nove novas iniciativas regulamentares: (i) simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições para o Serviço de Comunicação Multimídia - SCM; (ii) criação do Comitê de Implementação de Políticas Públicas - CIPP; (iii) criação do Centro de Mediação e Soluções Consensuais - CEMESC; (iv) elaboração de edital de licitação para autorização de uso de radiofrequências na faixa de 450 MHz; (v) reavaliação do Regulamento Geral de Licenciamento - RGL para alinhamento à Súmula nº 28/2025; (vi) reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações - RQUAL; (vii) revisão do Regimento Interno do Conselho Consultivo; (viii) revisão do Regimento Interno do Comitê de Defesa dos Usuários de Serviços de Telecomunicações - CDUST; e (ix) Consolidação e Atualização das regras aplicáveis a Cabos Submarinos.
+4. Ajuste do cronograma da iniciativa nº 23, referente à reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, em atendimento à determinação do Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos formais e materiais para aprovação da atualização da Agenda Regulatória 2025-2026, com os ajustes de metas e inclusão das novas iniciativas regulamentares propostas.
+III. RAZÕES DE DECIDIR
+1. A tramitação do processo observou as competências regimentais do Conselho Diretor e da SPR, estando dispensada manifestação jurídica sobre o mérito estratégico pela Procuradoria Federal Especializada junto à Anatel.
+2. Os ajustes de metas para 2026 foram fundamentados na execução real dos projetos em 2025, visando maior precisão e transparência no planejamento normativo.
+3. A inclusão das novas iniciativas regulamentares atende a determinações do Conselho Diretor e necessidades identificadas pelas áreas da Agência, contemplando temas relevantes para o setor de telecomunicações.
+(...)
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos propostos pela Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia, Relatora, por meio da Análise nº 22/2026/CL (SEI nº 15175775), com o acréscimo proposto pelo Conselheiro Alexandre Reis Siqueira Freire por meio do Voto nº 7/2026/AF (SEI nº 15183508), ambos integrantes deste acórdão, aprovar a Agenda Regulatória para o biênio 2025-2026, na forma da Minuta de Resolução Interna SEI nº 15023503, com a inclusão de iniciativa para a atualização das regras afetas a cabos submarinos.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia." (grifou-se)
+A decisão transcrita acima, resultou na Resolução Interna nº 523 (SEI nº 15247243), de 27 de fevereiro de 2026. Assim, a Agenda Regulatória 2025-2026 foi republicada, possuindo, atualmente, quarenta itens. A simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao SCM, objeto da presente Análise, é a iniciativa de número 32 da Agenda, como priorização ordinária e com metas de (i) Relatório de AIR e proposta para o 1º semsetre de 2026 e (ii) Consulta Pública para o 2º semestre de 2026. Sua inclusão atende ao art. 9º da Resolução Interna nº 8 no qual se estabelece que todo projeto de regulamentação deve constar da Agenda Regulatória aprovada pelo Conselho Diretor. Informações sobre o tema podem ser acessadas no site da Agência: https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/2025-2026. 
+I.b - Da Consulta Interna
+A Consulta Interna tem por finalidade submeter a proposta normativa à análise das áreas técnicas da Agência antes da decisão final. Esse procedimento atua como um mecanismo para validação institucional interna que, por meio de críticas e sugestões dos servidores, pode promover o aprimoramento da minuta de ato. A consulta interna encontra-se regulamentada no art. 60 do RIA, a saber:
+RIA
+"Art. 60. A Consulta Interna tem por finalidade submeter minuta de ato normativo, documento ou matéria de interesse relevante, a críticas e sugestões dos servidores da Agência.
+§ 1º A Consulta Interna será realizada previamente ao encaminhamento da proposta de Consulta Pública ao Conselho Diretor, com prazo fixado pela autoridade competente, devendo ser juntada aos autos do processo a que se refere.
+§ 2º A Consulta Interna poderá, justificadamente, ser dispensada quando a sua realização impedir ou retardar a deliberação de matéria urgente.
+§ 3º A Consulta Interna poderá ser realizada independentemente de realização de Consulta Pública.
+§ 4º As críticas e as sugestões encaminhadas e devidamente justificadas deverão ser consolidadas em documento próprio, anexado aos autos do processo administrativo, contendo as razões para sua adoção ou rejeição."
+Pela leitura dos autos, noto que por meio da Consulta Interna nº 22/2025 (SEI nº 14618220), a proposta de regulamento ora em análise foi disponibilizada para contribuições entre os dias 8 a 12 de dezembro de 2025. Não foram recebidas manifestações, conforme Certificado de Contribuições (SEI nº 14506860).
+I.c - Da Consulta Pública
+Em continuidade à análise dos requisitos formais da matéria, observo que o procedimento de Consulta Pública na Agência é disciplinado pelo art. 59 do RIA, teno por finalidade submeter minuta de ato normativo, documento ou matéria de interesse relevante, a críticas e sugestões do público em geral.
+Com base no art. 9º da Lei nº 13.848/2019, que dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras, temos a disciplina da Consulta Pública, in verbis:
+Art. 9º Serão objeto de consulta pública, previamente à tomada de decisão pelo conselho diretor ou pela diretoria colegiada, as minutas e as propostas de alteração de atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados.
+§ 1º A consulta pública é o instrumento de apoio à tomada de decisão por meio do qual a sociedade é consultada previamente, por meio do envio de críticas, sugestões e contribuições por quaisquer interessados, sobre proposta de norma regulatória aplicável ao setor de atuação da agência reguladora.
+§ 2º Ressalvada a exigência de prazo diferente em legislação específica, acordo ou tratado internacional, o período de consulta pública terá início após a publicação do respectivo despacho ou aviso de abertura no Diário Oficial da União e no sítio da agência na internet, e terá duração mínima de 45 (quarenta e cinco) dias, ressalvado caso excepcional de urgência e relevância, devidamente motivado.
+§ 3º A agência reguladora deverá disponibilizar, na sede e no respectivo sítio na internet, quando do início da consulta pública, o relatório de AIR, os estudos, os dados e o material técnico usados como fundamento para as propostas submetidas a consulta pública, ressalvados aqueles de caráter sigiloso.
+O Decreto nº 10.411, de 30 de julho de 2020, estabelece que, ressalvados casos de urgência, a Consulta Pública deve apresentar prazo proporcional à complexidade do tema, sendo 45 (quarenta e cinco) dias o prazo mínimo (inciso V do §1º e inciso II do §2º do art. 9º). 
+Nesse sentido, a área técnica consignou que o período de 45 (quarenta e cinco) dias atende a legislação aplicável sem comprometer o projeto (SEI nº 15139376).
+A PFE/Anatel, por meio do Parecer 06/2026/PFE-ANATEL/PGF/AGU (SEI nº 15040217), concluiu pelo atendimento dos aspectos formais:
+Aspectos formais
+a) Não há dúvidas de que compete à Agência a reavaliação da regulamentação de remuneração de uso de redes de telecomunicações;
+b) Pela necessidade de submissão da proposta em tela ao procedimento de consulta pública, nos termos do art. 9º da Lei nº 13.848/2019 e art. 59 do Regimento Interno da Agência;
+b.1) É importante consignar, ainda, que o art. 59, §3º, do Regimento Interno da Agência dispõe expressamente acerca da necessidade de divulgação da Consulta Pública também na página da Agência na Internet e menciona, inclusive, a lista de documentos a serem divulgados, dentre outros elementos pertinentes;
+b.2) Desta feita, é necessário que se proceda à publicação, no sítio eletrônico da Agência na Internet, de toda a documentação pertinente à proposta em tela, nos termos do parágrafo terceiro supracitado, em consonância com a noção de transparência e publicidade que deve pautar a atuação da Agência, e que se refletirá em uma participação mais ampla e consciente da sociedade e dos agentes regulados;
+b.3) Pela importância de que a Consulta Pública da presente proposta observe as disposições da Lei nº 13.848/2019;
+b.4) Cite-se, ainda, o disposto nos Decretos nº 10.411/2020 e nº 11.243/2022 quanto ao tema. Nos termos de tais disposições, estipula-se o prazo para a realização de consulta pública de sessenta dias, para os casos que impactem significativamente o comércio internacional, e de quarenta e cinco dias, para os demais casos;
+b.5) In casu, trata-se da simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo o caso do Serviço de Comunicação Multimídia - SCM. No ponto, observa-se que a minuta de Consulta Pública (SEI nº 14506894), o corpo técnico propôs que a consulta pública seja realizada pelo prazo de 45 (quarenta e cinco) dias. No entanto, caso o corpo técnico vislumbre impacto significativo no comércio internacional, é importante que o prazo de 60 (sessenta) dias seja observado;
+c) O corpo técnico registrou que foi realizada a Consulta Interna nº 22/2025 (SEI nº 14618220). Dessa forma, tem-se que foi cumprido o requisito constante no art. 60 do Regimento Interno da Agência;
+d) Considerando a elaboração do Relatório de AIR, encontra-se atendido o requisito previsto no art. 62 do Regimento Interno da Agência;
+e) Ante o exposto, opina-se pela regularidade do procedimento em liça, que deve ser submetido à apreciação do Conselho Diretor.
+Entendo que o prazo de 45 (quarenta e cinco) dias para a apresentação de contribuições da sociedade à proposta normativa em debate mostra-se compatível com a complexidade da matéria.
+I.d - Da Análise de Impacto Regulatório
+A Análise de Impacto Regulatório - AIR tem por objetivo principal delimitar o problema regulatório e indicar a alternativa mais adequada, normativa ou não, para enfrentar o problema inicialmente identificado. Por meio desse estudo, com base em evidências, busca-se subsidiar a tomada de decisão sobre a realização ou não de intervenção regulatória.
+Na esfera federal, a AIR é regulamentada pelo Decreto nº 10.411/2020, no qual são estabelecidos o conteúdo, os requisitos para sua aplicação, as definições, os requisitos mínimos a serem objeto de análise, os casos em que a AIR pode ser dispensada e aqueles nos quais não é necessária sua realização. A apresentação do processo da AIR deve ser feita por meio da elaboração de um relatório final.
+Na Anatel, sua elaboração é prevista pelo art. 62 do RIA e constitui etapa do processo de elaboração de normas da Agência:
+RIA
+"Art. 62. Os atos de caráter normativo da Agência serão expedidos por meio de Resoluções, de competência exclusiva do Conselho Diretor, observado o disposto nos arts. 59 e 60, relativos aos procedimentos de Consultas Pública e Interna, respectivamente.
+Parágrafo único. Os atos de caráter normativo a que se refere o caput, salvo em situações expressamente justificadas, deverão ser precedidos de Análise de Impacto Regulatório."
+O art. 16 da Resolução Interna nº 8/2021 estebelece os elementos mínimos que devem ser observados em uma AIR:
+Resolução Interna nº 8/2021 
+"Art. 16. O Relatório de AIR deverá conter, no mínimo, os seguintes elementos:
+I - descrição do(s) tema(s) objeto da Análise de Impacto Regulatório;
+II - sumário executivo objetivo e conciso, que deverá empregar linguagem simples e acessível ao público em geral;
+III - problema(s) regulatório(s) identificado(s) que se pretende solucionar, com a apresentação de suas causas e sua extensão;
+IV - objetivos da ação regulatória;
+V - identificação da fundamentação legal que ampara a ação da Agência quanto ao(s) problema(s) regulatório(s) identificado(s);
+VI - alternativas de ação possíveis ao enfrentamento do(s) problema(s) regulatório(s) identificado(s), consideradas as opções de não ação, de soluções normativas e de, sempre que possível, soluções não normativas, como, por exemplo, mecanismos de Autorregulação;
+VII - Grupos Afetados, incluindo os agentes econômicos e os usuários dos serviços prestados;
+VIII - análise de impacto das alternativas, utilizando preferencialmente avaliações quantitativas;
+IX - exposição dos possíveis impactos das alternativas identificadas, inclusive quanto aos seus custos regulatórios;
+X - considerações referentes às informações e às manifestações recebidas para a Análise de Impacto Regulatório na Tomada de Subsídios ou em outros processos de participação social, quando realizados;
+XI - mapeamento da experiência internacional quanto às medidas adotadas para a resolução do problema regulatório identificado;
+XII - identificação e definição dos efeitos e riscos decorrentes da edição, da alteração ou da revogação do ato normativo, quando esta for a alternativa escolhida;
+XIII - descrição da estratégia para implementação da alternativa sugerida, acompanhada das formas de monitoramento e de avaliação a serem adotadas e, quando couber, avaliação quanto à necessidade de alteração ou de revogação de normas vigentes; e,
+XIV - comparação das alternativas consideradas para a resolução do(s) problema(s) regulatório(s) identificado(s) e conclusões que justifiquem a alternativa preferencial."
+Nos presentes autos, conforme registrei acima, a área técnica elaborou o Relatório de AIR de SEI nº 14506833. Esse Relatório analisou três temas sujeitos à alteração: (i) consolidação normativa; (ii) simplificação normativa; e (iii) regras de remuneração pelo uso de redes aplicáveis ao SCM. A cada tema, foi aplicada uma estrutura padrão no desenvolvimento da proposta da área técnica:
+Seção 1: Resumo da Análise de Impacto Regulatório
+a.1. descrição introdutória;
+a.2. contexto do problema;
+a.3. problema a ser solucionado;
+a.4. competência da Agência;
+a.5. objetivos da ação;
+a.6. tratamento internacional;
+a.7. grupos afetados;
+a.8. opções regulatórias consideradas.
+Seção 2: Análise das Alternativas
+b.1. Justifica a escolha de alternativa única, dispensando análise de outras opções quando não aplicável.
+Seção 3: Conclusão e Alternativa Sugerida
+c.1. conclusão da análise;
+c.2. riscos identificados;
+c.3. operacionalização da alternativa;
+c.4. monitoramento;
+c.5. aspectos de Inteligência Artificial.
+Os elementos de um Relatório de AIR estabelecidos no art. 16 da Resolução Interna nº 8/2021 foram observados. Adicionalmente, a área técnica apresentou a Minuta de Resolução (SEI nº 14506857, 14618540), Planilha De-Para das Resoluções nº 438/2006, e nº 588/2012 (SEI nº 14506888) e Minuta de Consulta Pública (SEI nº 14506894). 
+Considero atendidos os aspectos formais da proposta. Na próxima seção, avalio as questões de mérito do feito.
+II - DO MÉRITO DA PROPOSTA
+Diante do contexto, entendo pertinente, para uma melhor compreensão da presente Análise ordenar minhas considerações primeiramente conforme os temas da AIR e, após, quanto à Minuta de Resolução da proposta em debate. 
+II.1 - TEMA 1: Consolidação normativa
+Conforme analisado entre os itens 5.1 a 7.5.2 do Relatório de AIR (SEI nº 14506833), o Tema 1 trata da obrigatoriedade e dos benefícios de consolidar, em um único normativo, todas as regras sobre remuneração pelo uso de redes de telecomunicações, eliminando sobreposições, redundâncias e facilitando a compreensão e aplicação das normas, em linha com as melhores práticas nacionais e internacionais e com a legislação federal vigente.
+Seguindo a organização da AIR, inicialmente, a área técnica apresentou uma contextualização da base legal aplicável. 
+O Decreto nº 10.139, de 28 de novembro de 2019, tratava da revisão, consolidação e simplificação dos atos normativos inferiores a decreto no âmbito da administração pública federal. Esse ato tinha por objetivo organizar e racionalizar o estoque de normas, reduzindo a excessiva quantidade de atos dispersos, muitas vezes desatualizados ou redundantes. Ele determinava que os órgãos e entidades da administração pública federal deveriam, entre outros:
+revisar seus atos normativos;
+revogar normas obsoletas ou incompatíveis;
+consolidar normas sobre o mesmo tema em um único ato; e
+simplificar a redação, tornando-a mais clara e acessível.
+O Decreto nº 12.002 de 22 de abril de 2024, por sua vez, revogou o Decreto nº 10.139/2019. O novo ato normativo reforça as diretrizes de governança regulatória no âmbito da administração pública federal, com foco em melhorar a qualidade das decisões normativas. Notem que o novo decreto manteve as diretrizes referentes à consolidação de normas: 
+Decreto nº 12.002/2024
+"CAPÍTULO IX
+DA CONSOLIDAÇÃO DE ATOS NORMATIVOS
+(...)
+Seção II
+Dos atos normativos inferiores a decreto
+Competência para revisar e consolidar
+Art. 65. A competência para revisar e consolidar atos normativos inferiores a decreto é do órgão ou da entidade:
+I - que os editou;
+II - que assumiu as competências do órgão ou da entidade que os editou; ou
+III - com competência sobre a matéria de fundo, quando não for possível identificar o órgão ou a entidade responsável, na forma prevista no inciso II.
+Parágrafo único. O disposto neste artigo aplica-se à identificação dos órgãos e das entidades responsáveis por:
+I - interagir e realizar a revisão e a consolidação de atos normativos conjuntos; e
+II - revogar os atos normativos.
+Revogação de ato normativo conjunto
+Art. 66. A revogação de ato normativo conjunto poderá ser realizada por ato apenas do órgão ou da entidade que tiver encaminhado o ato a ser revogado para publicação, desde que haja anuência dos demais subscritores.
+Parágrafo único. A revogação de atos normativos antigos e com dificuldades práticas de identificação poderá ser realizada pelo órgão ou pela entidade por meio da previsão de revogação de todos os atos normativos anteriores a determinada data, desde que:
+I - a data de revogação não abranja atos normativos publicados após 5 de outubro de 1988; e
+II - o ato revogador preveja vacatio legis de, no mínimo, três meses.
+Futuras revisões e consolidações
+Art. 67. É obrigatória a manutenção da consolidação normativa por meio:
+I - da realização de alteração da norma consolidada cada vez que novo ato com temática aderente a ela for editado; e
+II - de medidas periódicas de revisão e consolidação normativa, na forma estabelecida em plano de trabalho de cada órgão ou entidade."
+No âmbito da Agência, o acompanhamento e implementação das diretrizes estabelecidas pelos Decretos citados acima têm sido conduzidos pela Superintendência de Planejamento e Regulamentação - SPR, que garantiu publicidade e transparência de suas atividades relacionadas por meio da elaboração de relatórios trimestrais, disponíveis em https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/revisao-e-consolidacao-de-atos-normativos, referentes aos períodos de 31 de março de 2021 até 31 de dezembro de 2025 (relatório mais recente). 
+Conforme relatado na AIR (SEI nº 14506833, itens 5.1.9 a 5.1.19), a Anatel já vinha promovendo a consolidação normativa desde a reestruturação da Agência em 2013, intensificando o processo após a edição do Decreto nº 10.139/2019. Com a publicação da Resolução nº 777/2025, a Anatel consolidou 34 resoluções e reduziu em 60% o total de dispositivos regulamentares e em 40% o número de páginas. Em outubro de 2025, das 763 resoluções já publicadas pela Anatel, apenas 138 permaneciam vigentes, sendo que 43 já têm revogação aprovada, restando 95 resoluções consolidadas após a entrada em vigor das revogações.
+Em linha com as orientações na esfera federal, no Relatório de AIR se identificou que ainda há normas de remuneração pelo uso de redes dispersas em diferentes resoluções: (i) o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado - RRUR-STFC, aprovado pela Resolução nº 588, de 7 de maio de 2012; e (ii) o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal - RRUR-SMP, aprovado pela Resolução nº 438, de 10 de julho de 2006.
+A área técnica avaliou que o tratamento de remuneração de uso de redes em normas distintas dificulta a compreensão, aplicação e atualização do arcabouço regulatório. Concluiu, portanto, que apesar de a Anatel já ter finalizado o processo de consolidação e simplificação normativas determinadas pelos Decretos nº 10.139/2019 e nº 12.002/2024, as resoluções de remuneração pelo uso de redes dos diversos serviços de telecomunicações podem ser unificadas em um único instrumento normativo (SEI nº 14506833, item 2.2).
+Nesse sentido, por se tratar de uma determinação legal vigente no Decreto nº 12.002/2024, a avaliação constante na AIR não se vislumbrou outra alternativa que não consolidar o RRUR-STFC e o RRUR-SMP em uma norma única, preferencialmente no RGI, considerando que a remuneração do uso de redes se relaciona diretamente à interconexão. Não foram identificados riscos relevantes, pois a consolidação não altera o mérito das regras, apenas reúne e racionaliza o estoque normativo. A alternativa sugerida foi resumida na AIR como segue:
+AIR (SEI nº 14506833)
+Considerando que a consolidação normativa por tema se trata de uma determinação do Decreto nº 10.139, de 2019, posteriormente substituído pelo Decreto nº 12.002, de 2024, não se vislumbra outra alternativa que não consolidar a regulamentação de remuneração pelo uso de redes dos diversos serviços de telecomunicações em uma única, garantindo melhor consistência regulatória e transparência à sociedade.
+A PFE/Anatel não apresentou ressalvas jurídicas quanto à avaliação do Tema 1 da AIR:
+Parecer nº 6/2026/PFE-ANATEL/PGF/AGU SEI nº 15040217)
+"44. Dessa maneira, a proposta apresentada quanto ao Tema 01 refere-se apenas à consolidação dos atos normativos aplicáveis à remuneração pelo uso de redes, atualmente dispostos em duas normas distintas, estando devidamente fundamentada, não se vislumbrando ressalvas jurídicas quanto ao ponto."
+Pois bem. Em 2013, a Anatel passou por amplo processo de reestruturação com o advento do Regimento Interno. Essa reorganização interna implicou na substituição de um modelo de regulação até então baseado em silos de serviços e passou a adotar um modelo baseado por superintendências temáticas. A edição do novo RIA permitiu a melhora da coordenação interna das atividades da Agência com ganhos de eficiência, resultando em ações regulatórias mais coerentes, previsíveis e alinhadas com a dinâmica do ecossistema digital. 
+Face à nova estrutura interna da Agência, bem como a convergência das redes de telecomunicações, a consolidação normativa mostrou-se como uma etapa evolutiva relevante a ser implementada na Agência. Somado a isso, a edição dos Decretos nº 10.139/2019 e 12.002/2024 aceleraram esse processo na Agência. 
+Nesse sentido, como destacado na AIR, o Regulamento Geral de Serviços de Telecomunicações - RGST é produto de uma série de ações adotadas pela Anatel visando a consolidação de regulamentos. Não é à toa que a edição dessa norma resultou na revogação de outras 34 resoluções que tratam de aspectos específicos de cada serviço de telecomunicações. Foram também revogados diversos dispositivos em outras resoluções, além de substituídos outros normativos setoriais anteriores à criação da Anatel. Registro ainda a aprovação do Glossário aplicável ao setor de telecomunicações que congrega as definições de termos aplicáveis ao setor e evita conceitos antes dispersos em diversos regulamentos, por vezes, conflitantes.
+II.1.1 - RRUR-STFC
+De volta aos regulamentos em debate, o RRUR-STFC define critérios de remuneração pelo uso de redes do serviço fixo quando interconectadas a redes de outras Prestadoras de Serviços de Telecomunicações de Interesse Coletivo. Editado em 2012 pela Resolução nº 588, sofreu uma série de alterações ao longo dos anos.
+No que tange às inclusões textuais, ocorreram de forma pontual, sobretudo para ajustes redacionais do regulamento às alterações sofridas no mercado do STFC face ao fim das concessões, por meio da Resolução nº 768/2024.
+Por outro lado, as revogações sofridas pelo RRUR-STFC ocorreram de forma mais extensa, atingindo diversos dispositivos estruturais da norma:
+o Capítulo II, do Título I - "DAS DEFINIÇÕES" foi integralmente revogado pela Resolução nº 779/2025, em virtude da incorporação das definições cabíveis ao Glossário aplicável ao setor de telecomunicações;
+o Capítulo II do Título II - "DOS CRITÉRIOS PARA ESTABELECIMENTO DOS VALORES DE REMUNERAÇÃO PELO USO DE REDES DE CONCESSIONÁRIAS E PRESTADORAS PERTENCENTES A GRUPO DETENTOR DE PMS" foi revogado pela Resolução nº 639, de 1º de julho de 2014, a qual, atualmente carreia as mais relevantes definições e determinações relacionadas às tarifas da telefonia fixa;
+o Capítulo III do Título II - "DA APURAÇÃO DOS VALORES DE REMUNERAÇÃO PELO USO DE REDES" teve revogação parcial estabelecida pela Resolução nº 752, de 22 de junho de 2022 - Guilhotina Regulatória, referente a dispositivos que perderam a validade por decurso de prazo;
+o Título III - " DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS" mais da metade de seus dispositivos foi revogado tanto pela Resolução 639/2014 como pela Resolução nº 694, de 17 de julho de 2018, que alterou o Plano Geral de Metas de Competição - PGMC, em sua segunda atualização, tendo seu conteúdo atualizado e transportado para esses regulamentos.
+Observo, portanto, que o RRUR-STFC tem sofrido gradual esvaziamento de seu conteúdo original devido a: (i) remoção de regras detalhadas de precificação; (ii) eliminação de dispositivos transitórios; e (iii) transferência de dispositivos para outros instrumentos regulatórios.
+II.1.2 - RRUR-SMP
+O RRUR-SMP tem por objetivo definir os critérios aplicáveis à remuneração pelo uso de redes do SMP quando interconectadas a redes de outras Prestadoras de Serviços de Telecomunicações de Interesse Coletivo para troca de tráfego telefônico. Editado em 2006 pela Resolução nº 438, sofreu uma série de alterações ao longo dos anos.
+No que tange às inclusões textuais, ocorreram de forma bastante pontual, nos arts. 18 e 19.
+As revogações no RRUR-SMP ocorreram de forma relevante ao longo do regulamento, atingindo diversos dispositivos. Registro que a Guilhotina Regulatória revogou dispositivos transitórios ou ultrapassados. A Resolução nº 639/2014, por sua vez, revogou, incorporou e/ou atualizou dispositivos relacionados à aplicação do modelo de custos na precificação de produtos do SMP. Noto, contudo, que aspectos estruturais do RRUR-SMP foram mantidos, no caso, a normatização do Valor de Uso de Rede do SMP - VU-M, tendo passado apenas por ajustes pontuais. 
+Diante da contextualização trazida face à proposta da área técnica, entendo que a consolidação das normas atualmente vigentes de remuneração de redes (Resolução nº 588/2012 e 438/2006) possui previsão legal no Despacho nº 12.002/2024, alinhando-se e complementando as consolidações já realizadas pela Agência. Ademais, a proposta deve trazer maior transparência e objetividade de compreensão das regras de remuneração de uso de redes para a sociedade em geral. Noto que o RRUR-STFC, na prática, tem passado por um processo gradual de esvaziamento. O RRUR-SMP apesar de ter mantido pontos relevantes em seus dispositivos, deve passar pelo processo de racionalização normativa, como adotado de forma ampla pelos regulamentos da Agência. Ademais, considero a sugestão de consolidar os regulamentos de remuneração do uso de redes, incorporando-os ao Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693, de 17 de julho de 2018, medidas coerentes, dado que a remuneração de redes é intrinsicamente ligada ao processo de interconexão. Dito isso, acolho nessse tema a proposta da AIR.
+II.2 - TEMA 2: Simplificação normativa
+O Tema 2 do Relatório de AIR (SEI nº 14506833) trata da simplificação normativa relacionada à remuneração pelo uso de redes, especialmente no que se refere às regras estabelecidas para o STFC e para o SMP.
+Segundo a avaliação realizada, as normas atualmente vigentes (RRUR-SMP e RRUR-STFC) foram criadas há mais de uma década, em um contexto de mercado e tecnologia bastante diferentes do atual. Desde então, houve significativa evolução tecnológica, mudanças no setor e revisão de diversos normativos correlatos, como o Plano Geral de Metas de Competição - PGMC, aprovado pela Resolução nº 783, de 03 de setembro de 2025 e o RGI. Ademais, a Anatel promoveu reduções expressivas nos valores de remuneração de uso de rede, unificou valores e eliminou assimetrias, o que contribuiu para maior competição, redução de preços ao consumidor e expansão dos serviços.
+Nesse contexto, o problema a ser enfrentado refere-se à perda da razão de existir de alguns dispositivos dos regulamentos de remuneração do uso de redes em virtude da evolução do setor de telecomunicações, pois os problemas regulatórios que motivaram a criação e manutenção dessas regras não persistem mais ou foram absorvidos por outros normativos. 
+Segundo a AIR, o endereçamento proposto para resolução do problema envolveria a simplificação normativa a ser operacionalizada por meio da análise detalhada dos dispositivos do RRUR-STFC e RRUR-SMP, mantendo apenas o conteúdo necessário e não duplicado em outros regulamentos. A planilha de SEI nº 14506888 contém a análise dos dispositivos desses regulamentos quanto à simplificação e fundamentação da proposta.
+Portanto, como alternativa, no Relatório de AIR apresenta-se a seguinte proposta: "Não se vislumbra outra alternativa que não seja revogar tais regras consideradas desatualizadas, seja pelo fato de não existirem mais os problemas regulatórios que as justificaram quando de sua edição, seja por terem sido tratadas em outras regulamentações que tangenciam a questão da remuneração pelo uso de redes." (SEI nº 14506833, item 1.5).
+A PFE/Anatel não vislumbrou óbice de natureza jurídica à proposta (SEI nº 15040217, item 51).
+Conforme avaliado na AIR, a Agência tem empreendido uma série de ações visando a simplificação de normas, em conjunto com o processo de consolidação. As principais iniciativas já foram tratadas na Seção referente ao Tema 1 e, por esse motivo, não serão avaliadas novamente.
+Quanto à proposta de simplificação normativa, noto que ela também é objeto do Decreto nº 12.002/2024. Portanto, o procedimento em debate representa dever legal face ao disposto nessa determinação.
+Ademais, entendo que os processos de simplificação e consolidação se complementam e contribuem para um ambiente regulatório mais eficiente e aderente à realidade do setor de telecomunicações, favorecendo a interação da Agência com a sociedade. Enquanto a consolidação consiste na reunião de atos normativos pertinentes a determinada matéria em uma única norma sem a modificação dos dispositivos consolidados, a simplificação envolve evolução e redução de complexidade de regras. Aplicadas em conjunto, como tem sido realizado nas revisões dos normativos da Agência, identifico ganhos de eficiência ao resultar em redução da complexidade regulatória, eliminação de regras obsoletas, transparência e previsibilidade para os agentes do setor.
+II.3 - TEMA 3: Regras de remuneração pelo uso de redes aplicáveis ao SCM
+O Tema 3 do Relatório de AIR (SEI nº 14506833) trata da operacionalização do uso da numeração pública UIT E.164 pelo SCM.
+Esse tema possui um longo e relevante histórico que fundamentou a AIR e será apresentado nesta Análise. 
+A discussão acerca da simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao SCM tem origem no Processo nº 53500.059950/2017-22, no qual a Agência cuidou da reavaliação da regulamentação de numeração de redes e serviços de telecomunicações, item integrante da Agenda Regulatória 2021-2022.
+A avaliação desse Tema, segue estrutura apresentada na AIR (SEI nº 14506833). Adicionalmente, inclui informações relevantes do histórico da regulamentação do uso de numeração pelo SCM, em seguida, apresento minhas considerações.
+No que tange ao uso de numeração pública, o Brasil segue a Recomendação E.164 da União Internacional de Telecomunicações - UIT, padrão internacional, no qual se define como deve ser estruturada a numeração telefônica no mundo, garantindo que chamadas possam ser completadas corretamente entre diferentes países e redes. Nota-se que o SCM já possuia normatização referente a recursos de numeração, regida pelo Regulamento de Numeração, aprovado pela Resolução nº 83, de 30 de dezembro de 1998, e pelo Plano de Numeração do SCM, embora tivessem eficácia limitada em virtude da ausência de regulamentação complementar que possibilitasse a implementação prática da numeração do SCM. 
+Regulamento do SCM
+"Art. 5º A utilização de recursos de numeração pelas redes de suporte à prestação do SCM é regida pelo Regulamento de Numeração, aprovado pela Resolução nº 83, de 30 de dezembro de 1998, e pelo Plano de Numeração do SCM."
+Nesse sentido, na Análise nº 131/2021/MM (SEI nº 7614476), de 10 de março de 2022, o Conselheiro Relator Moisés Moreira argumentou que a atribuição de numeração E.164 ao SCM era um tema mais amplo e ainda não maduro, dependendo de mudanças estruturais no setor, por envolver impactos complexos, como interconexão, remuneração, acesso a serviços de emergência e efeitos sobre outros serviços. 
+Análise nº 131/2021/MM (SEI nº 7614476)
+"4.155. De todo o exposto, resta claro que o ponto ora em debate, qual seja, a efetiva atribuição de recursos de numeração E.164 ao SCM, envolve uma discussão muito mais abrangente, sobre um novo marco dos serviços de telecomunicações.
+4.156. A atribuição de recursos de numeração é, portanto, apenas um gatilho, cujo acionamento depende de uma discussão muito mais ampla e que se prolongará por mais alguns anos. 
+4.157. Para que esse gatilho possa vir a ser acionado futuramente, é preciso haver concordância deste Colegiado com parte da conclusão do Tema 1 da AIR do projeto de simplificação regulatória. Caso contrário, a atribuição de numeração para o SCM jamais terá utilidade.
+4.158. Isso porque a numeração é um insumo básico para o serviço de voz e hoje o SCM encontra em sua regulamentação a vedação de que ele se confunda com o STFC. Assim, atribuir numeração ao SCM é medida inócua até que essa restrição seja revista e outras questões sejam debatidas.
+4.159. Nesse sentido, entendo que a introdução de um plano de numeração E.164 para o SCM é ponto crucial para se iniciar essa fusão e simplificação dos serviços, mesmo que, por ora, tal atribuição de um plano de numeração não tenha qualquer utilidade prática para os prestadores de SCM.
+4.160. Ainda, na medida em que se está a discutir uma convergência entre os serviços fixos de interesse coletivo, considero acertado que a proposta já enderece essa atribuição de numeração como algo similar ao STFC, mantendo a lógica de 8 (oito) dígitos o que, em princípio, dado o desinteresse da população pelo STFC, teria a capacidade de atender as demandas que surgirem. Ademais, a proposta faz a atribuição por Área de Numeração, atualmente correspondente a 67 (sessenta e sete) Códigos Nacionais - CN, assim como o é no SMP, sendo também uma tendência que o STFC convirja de Área Local para Área de Numeração.
+(...)
+4.162. O endereçamento proposto, a meu ver, não corresponde à conclusão da análise promovida, a qual demonstra que a viabilidade de uso dos recursos de numeração pelo SCM somente é possível após superados obstáculos legais (regulatórios) existentes, a exemplo da redefinição do escopo do serviço e de questões de interconexão e de remuneração. Ou seja, apesar da destinação de numeração estabelecida na presente minuta, a efetiva atribuição dos recursos de numeração não depende apenas da conclusão do processo de simplificação, mas da superação dos obstáculos colocados na AIR daquele projeto o que, não necessariamente, se dará com a conclusão do projeto de simplificação regulatória e com a entrada em vigor da regulamentação dele resultante.
+4.163. Nesse sentido, proponho determinar à Superintendência de Outorgas e Recursos à Prestação que a atribuição dos recursos de numeração às prestadoras de SCM, destinados no Regulamento de Numeração de Serviços de Telecomunicações, fique condicionada à revisão do escopo do SCM, bem como dos aspectos de interconexão e de remuneração de redes."
+Com base na Análise citada acima, o Colegiado aprovou o Regulamento de Numeração dos Serviços de Telecomunicações anexo à Resolução nº 749, de 15 de março de 2022, no qual foram criadas previsões específicas relativas aos recursos de numeração para o SCM, seguindo o plano internacional de numeração das telecomunicações públicas IUT E.16.4:
+Regulamento de Numeração dos Serviços de Telecomunicações
+"Do Código de Acesso de Usuário no Formato de 8 dígitos [N8N7N6N5N4N3N2N1]
+Art. 11. O Código de Acesso de Usuário, no formato [N8N7N6N5N4N3N2N1], tem a seguinte Destinação:
+I - para o identificador de serviço N8:
+a) “2” a “6”: Serviço Telefônico Fixo Comutado (STFC) e Serviço de Comunicação Multimídia (SCM); e,
+b) demais dígitos: Reserva Técnica dos serviços listados na alínea “a”; e,
+(...)
+NA PRESTAÇÃO DO STFC MODALIDADE LOCAL E DO SCM
+Art. 21. Os procedimentos de marcação aplicáveis no serviço de comunicação multimídia são:
+I - para chamadas destinadas a Código de Acesso de Usuário: devem ser marcados, em sequência, o Código Nacional e o Código de Acesso de destino, no formato [“0”N10N9N8N7N6N5N4N3N2N1], para chamadas fixas, e [“0” N11N10N9N8N7N6N5N4N3N2N1], para chamadas móveis; e,
+II - para chamadas a cobrar destinadas a Código de Acesso de Usuário: deve ser marcado, em sequência, o Prefixo de Chamada a Cobrar, o código destinado a identificar chamada local a cobrar e o Código de Acesso de destino, no formato [“9090” N10N9N8N7N6N5N4N3N2N1], para chamadas fixas, e [“9090” N11N10N9N8N7N6N5N4N3N2N1], para chamadas móveis.
+§ 1º Nas chamadas fixas marcadas no formato [N8N7N6N5N4N3N2N1], a prestadora considerará os dígitos N10N9 como sendo o Código Nacional do originador da chamada.
+§ 2º Nas chamadas móveis marcadas no formato [N9N8N7N6N5N4N3N2N1], a prestadora considerará os dígitos N11N10 como sendo o Código Nacional do originador da chamada."
+Ao atribuir a padronização de numeração E.164 ao SCM, permite-se que esse serviço opere de forma mais integrada aos serviços de voz, recebendo e originando chamadas como um serviço telefônico. Destaco que a atribuição dos recursos de numeração às prestadoras de SCM foi condicionada à revisão do escopo desse serviço, bem como dos aspectos de interconexão e de remuneração de redes, nos termos do Despacho Ordinatório SEI nº 8173995:
+Despacho Ordinatório SEI nº 8173995
+"O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à Proposta de reavaliação da regulamentação de numeração de redes e serviços de telecomunicações - Numeração de Serviços, constante do item 14 da Agenda Regulatória 2021-2022, decidiu, em sua Reunião nº 910, de 10 de março de 2022, tendo por fundamento a Análise nº 131/2021/MM (SEI nº 7614476), determinar:
+(...)
+b) à Superintendência de Outorga e Recursos à Prestação (SOR) que a atribuição dos recursos de numeração às prestadoras de Serviço de Comunicação Multimídia (SCM), destinados no Regulamento de Numeração de Serviços de Telecomunicações, fique condicionada à revisão do escopo do SCM, bem como dos aspectos de interconexão e de remuneração de redes."
+Sobre a interconexão de redes do STFC e SCM, no Processo nº 53500.059638/2017-39, o Relator Conselheiro Alexandre Freire, na Análise nº 49 (SEI nº 13457561), de 24 de abril de 2025, acolheu proposição da área técnica de modo a ajustar o Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693, de 17 de julho de 2018, de modo a assegurar o devido tratamento à interconexão de redes dado que o SCM passasse a utilizar recursos de numeração e possibilitar chamadas de voz (SEI nº 13457561, item 5.342).
+A proposta foi aprovada pelo Colegiado, por unanimidade, por meio do Acórdão nº 113 (SEI nº 13619435), de 28 de abril de 2025, e culminou na seguinte previsão constante da Resolução nº 777/2025:
+Resolução nº 777/2025
+"Art. 10. O art. 10 do Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693, de 17 de julho de 2018, publicada no Diário Oficial da União em 18 de julho de 2018, passa a vigorar acrescido dos seguintes §§ 6º e 7º:
+“Art. 10...................................................................................................................................
+...................................................................................................................................................................
+§ 6º Para fins de Interconexão para Troca de Tráfego Telefônico fazendo uso de numeração pública da Recomendação UIT E.164 ou a que venha a substituí-la, considera-se a área local do Serviço de Comunicação Multimídia a área geográfica de mesmo Código Nacional - CN.
+§ 7º As prestadoras do Serviço de Comunicação Multimídia que façam uso de numeração pública da Recomendação UIT E.164 ou a que venha a substituí-la, devem tornar disponível pelo menos um POI ou PPI para tráfego telefônico em cada área geográfica de mesmo Código Nacional - CN de sua área de prestação em que faça uso desses recursos. (NR)”
+Ainda, no Processo nº 53500.059638/2017-39, foi identificada a necessidade de ajustes ao formado do Código de Acesso aplicável ao SCM, alterando-se o Regulamento de Numeração dos Serviços de Telecomunicações:
+Resolução nº 749/2022
+Art. 21. A alínea “a” do inciso I do art. 11 do Regulamento de Numeração de Serviços de Telecomunicações, aprovado pela Resolução nº 749, de 15 de março de 2022, publicada no Diário Oficial da União em 18 de março de 2022, passa a vigorar com a seguinte redação:
+"Art. 11..........................................................................................:
+I - ......................:
+a) “2” a “5”: Serviço Telefônico Fixo Comutado - STFC; e,
+............................................................ (NR)"
+Art. 22. O art. 12 do Regulamento de Numeração de Serviços de Telecomunicações, aprovado pela Resolução nº 749, de 15 de março de 2022, publicada no Diário Oficial da União em 18 de março de 2022, passa a vigorar com a seguinte redação:
+"Art. 12. O Código de Acesso de Usuário, no formato [N9N8N7N6N5N4N3N2N1], tem a seguinte Destinação:
+I - para o identificador de serviço N9:
+a) “6”: Serviço de Comunicação Multimídia - SCM;
+b) "8" e “9”: Serviço Móvel Pessoal - SMP, ressalvado o disposto no inciso II deste artigo; e,
+c) demais dígitos: Reserva Técnica dos serviços listados nas alíneas “a” e “b”; e,
+II - para o identificador de serviço N9N8N7:
+a) “700”: Serviço Móvel Global por Satélite - SMGS e Serviço Móvel Pessoal - SMP por Satélite. (NR)"
+Art. 23. O art. 21 do Regulamento de Numeração de Serviços de Telecomunicações, aprovado pela Resolução nº 749, de 15 de março de 2022, publicada no Diário Oficial da União em 18 de março de 2022, passa a vigorar com a seguinte redação:
+"Art. 21. Os procedimentos de marcação aplicáveis no serviço de comunicação multimídia são:
+I - para chamadas destinadas a Código de Acesso de Usuário: devem ser marcados, em sequência, o Código Nacional e o Código de Acesso de destino, no formato [“0” N11N10N9N8N7N6N5N4N3N2N1]; e,
+II - para chamadas a cobrar destinadas a Código de Acesso de Usuário: deve ser marcado, em sequência, o Prefixo de Chamada a Cobrar, o código destinado a identificar chamada local a cobrar e o Código de Acesso de destino, no formato [“9090” N11N10N9N8N7N6N5N4N3N2N1].
+Parágrafo único. Nas chamadas marcadas no formato [N9N8N7N6N5N4N3N2N1], a prestadora considerará os dígitos N11N10 como sendo o Código Nacional do originador da chamada." (NR)
+Por sua vez, no Processo nº 53500.335711/2022-41, entre outros temas, a Agência tratou do faseamento da implementação da nova regra de formatação das Áreas Locais do STFC, estabelecida na Resolução nº 768, de 19 de agosto de 2024. O tema possui impacto direto na implementação da Numeração Pública UIT E.164 pelo SCM, conforme aduziu o Conselheiro Relator Alexandre Freire, na Análise nº 109/2025/AF (SEI nº 14124210), de 7 de agosto de 2025:
+Análise nº 109/2025/AF (SEI nº 14124210)
+"5.52. A coincidência dos limites geográficos entre os serviços é essencial por diversas razões estratégicas e operacionais, pois contribui para a unificação e simplificação de regras e procedimentos, eliminando barreiras técnicas. É vantajosa para os consumidores, pois confere maior clareza e entendimento sobre as condições de prestação dos serviços ao adotarem uma lógica comum de funcionamento.
+5.53. Além disso, a coincidência traz diversos benefícios competitivos, pois possibilitará que pequenas prestadoras expandam suas operações e passem a atuar em localidades onde, nas regras vigentes, precisariam implantar uma central de operações local. Várias das manifestações na Tomada de Subsídios destacaram esse aspecto competitivo.
+5.54. A diferença no tamanho das áreas locais no cenário atual torna mais onerosa a operacionalização de questões como interconexão e remuneração de redes, razão pela qual a harmonização é essencial não apenas para o sucesso da portabilidade entre os serviços, mas da plena implementação da Numeração Pública UIT E.164 pelo SCM.
+5.55. Isto é, a implementação da Numeração Pública UIT E.164 pelo SCM é imensamente facilitada pela ampliação das Áreas Locais do STFC. Considerando que já se tem um horizonte próximo para essa ampliação da granularidade, a implementação da Numeração Pública UIT E.164 deve aguardar ou ocorrer concomitantemente?
+5.56. É certo que as duas implementações podem ocorrer simultaneamente, apesar da maior complexidade, antecipando-se, assim, os benefícios esperados com o uso da Numeração Pública UIT E.164 pelo SCM. Essa foi escolha da Análise nº 86/2025/AF (SEI nº 13704435)."
+A proposta acima fundamentou a deliberação do Colegiado que, por unanimidade, aprovou o Acórdão nº 202 (SEI nº 14194308), de 14 de agosto de 2025. Nessa decisão, a data de 1º de março de 2027 foi estabelecida para que passem a vigorar diversos dispositivos da Resolução nº 777/2025 e de seu Regulamento anexo, que tratam especificamente do uso de recursos de numeração E.164 pelo SCM. Entre esses dispositivos estão as regras sobre remuneração pelo uso de redes, interconexão, formato da numeração (passando de oito para nove dígitos), marcação de chamadas, definição da área local para o SCM, e restrições ao uso de E.164 por grupos econômicos de concessionárias do STFC local. A data de 1º de setembro de 2027 foi estabelecida como marco para a entrada em vigor dos dispositivos referentes à portabilidade numérica do SCM:
+Acórdão nº 202 (SEI nº 14194308)
+"Processo nº 53500.335711/2022-41
+Recorrente/Interessado: CONEXIS - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL
+CNPJ nº 06.102.961/0001-93
+Conselheiro Relator: Alexandre Reis Siqueira Freire
+Fórum Deliberativo: Reunião nº 945, de 7 de agosto de 2025
+EMENTA
+DIREITO REGULATÓRIO. SERVIÇO TELEFÔNICO FIXO COMUTADO - STFC. TARIFAÇÃO. ÁREAS LOCAIS. NOVA FORMATAÇÃO. IMPLEMENTAÇÃO. PEDIDO DE FASEAMENTO. CRONOGRAMA ESTRUTURADO. PARTICIPAÇÃO SOCIAL. TOMADA DE SUBSÍDIOS. INSTRUÇÃO COMPLEMENTAR. RAZOABILIDADE. INTERESSE PÚBLICO. BOAS PRÁTICAS REGULATÓRIAS. PROGRAMA DE FORTALECIMENTO DA CAPACIDADE INSTITUCIONAL PARA GESTÃO EM REGULAÇÃO - PRO-REG. ESTRATÉGIA NACIONAL DE MELHORIA REGULATÓRIA. Organização para Cooperação e Desenvolvimento Econômico - OCDE. Programa de Aprimoramento da Qualidade da Regulação Brasileira - QUALIREG. OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ODS DA AGENDA 2030 DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS - ONU. TRANSPARÊNCIA. PREVISIBILIDADE. pelo estabelecimento de CRONOGRAMA DE FASEAMENTO. pela POSTERGAÇÃO DA VIGÊNCIA DE REGRAS CORRELATAS.
+1. A Resolução nº 768, de 19 de agosto de 2024, aprovou, na forma de seu Anexo III, o novo Regulamento de Tarifação do Serviço Telefônico Fixo Comutado Prestado Destinado ao Uso do Público em Geral. O art. 3º desse Regulamento alterou o critério para a formação das Áreas Locais do STFC, as quais passarão, com a vigência do Regulamento a partir de 1º de janeiro de 2026, a ter os mesmos limites geográficos das Áreas de Numeração.
+(...)
+6. Proposta de cronograma estruturado para o faseamento da implantação das novas Áreas Locais do STFC, com definição de etapas e datas, e recomendação de postergação da entrada em vigor das regras de uso da Numeração Pública UIT E.164 pelo Serviço de Comunicação Multimídia - SCM e da portabilidade numérica interserviços, de modo a garantir segurança operacional, alinhamento regulatório e proteção ao consumidor.
+(...)
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 109/2025/AF (SEI nº 14124210), integrante deste acórdão:
+(...)
+b) estabelecer a data de 1º de março de 2027 para a entrada em vigor dos seguintes dispositivos que tratam do uso de Numeração Pública da Recomendação UIT E.164 pelo Serviço de Comunicação Multimídia, da Resolução nº 777, de 28 de abril de 2025, e seu anexo, o Regulamento Geral dos Serviços de Telecomunicações:
+I – art. 6º da Resolução, que trata da remuneração pelo uso de redes (bill & keep entre SCM e STFC Local para troca de tráfego telefônico);
+II – art. 7º da Resolução, que trata da suspensão parcial do serviço para prestadora de SCM que faça uso de recursos de numeração UIT E.164;
+III – art. 8º da Resolução, que trata da suspensão parcial do serviço para prestadora de SCM que não faça uso de recursos de numeração UIT E.164;
+IV – art. 10 da Resolução, que trata das regras de interconexão de redes para prestadora de SCM que faça uso de recursos de numeração UIT E.164;
+V – arts. 21 e 22 da Resolução, que tratam da destinação de recursos de numeração UIT E.164 para o SCM, alterando seu formato de oito para nove dígitos;
+VI – art. 23 da Resolução, que trata do procedimento de marcação de chamadas para o SCM que faça uso de recursos de numeração UIT E.164;
+VII – art. 17 do Regulamento anexo à Resolução, que trata da definição do SCM (retirando a vedação atual no sentido de que não se confunda com o STFC);
+VIII – art. 18 do Regulamento anexo à Resolução, que trata da área local do SCM para fins de troca de tráfego telefônico usando recursos de numeração UIT E.164; e,
+IX – art. 60, § 1º, do Regulamento anexo à Resolução, que trata da vedação de uso de recursos de numeração UIT E.164 no SCM por grupo econômico de concessionária do STFC na modalidade local;
+c) estabelecer a data de 1º de setembro de 2027 para a entrada em vigor dos dispositivos referentes à portabilidade numérica do SCM, constantes do Título III, Capítulo V, Seção III, do Regulamento Geral dos Serviços de Telecomunicações, anexo à Resolução nº 777, de 28 de abril de 2025; (...)"
+Ademais, conforme registrado na AIR, na revisão do Plano Geral de Metas de Competição, aprovado pela Resolução nº 783, de 03 de setembro de 2025, na análise a respeito do Mercado de Atacado de Oferta de Interconexão para Tráfego Telefônico em Rede Fixa, verificou-se que esse mercado de atacado precisaria passar por ajustes.
+Nesse sentido, para o Mercado de Atacado de Oferta de Interconexão para Tráfego Telefônico em Rede Fixa foi considerado não apenas o STFC, mas também o SCM, conforme dispõe o Informe º 150/2024/PRRE/SPR (SEI nº 13010135), de 17 de dezembro de 2024:
+Informe º 150/2024/PRRE/SPR (SEI nº 13010135)
+"Proposta de Refinamento da Metodologia de Aferição de Grupos PMS
+(...)
+Critério 5 - Atuação Concomitante nos Mercados de Atacado e Varejo
+Por fim, foi adotado no estudo submetido à consulta pública (SEI nº 9114920) como parâmetro para aferir este critério a participação significativa no mercado de atacado superior a 20% (vinte por cento) do tráfego de interconexão para terminação de chamada em rede fixa e, concomitantemente, possuir acessos do Serviço Telefônico Fixo Comutado (STFC).
+Assim como realizado no Critério 2, acima descrito, entendeu-se que o atendimento a este critério pelo grupo econômico poderia ser mais bem refletido pelo parâmetro “possuir participação significativa no mercado de atacado superior a 20% (vinte por cento) do tráfego de interconexão para terminação de chamada em rede fixa e, concomitantemente, possuir participação acessos do STFC ou no SCM.
+Na AIR, a área técnica argumentou que a Resolução nº 783/2025 deveria ser ajustada para refletir essa alteração:
+Informe º 150/2024/PRRE/SPR (SEI nº 13010135)
+"11.1.18. Diante desses elementos, faz-se necessária retificação pontual na Resolução Anatel nº 783, de 03 de setembro de 2025, para refletir esse modificação, conforme disposto abaixo:
+Art. 36. Os Mercados Relevantes de Atacado objeto de regulação ex ante do PGMC são:
+(...)
+II - Interconexão para Tráfego Telefônico em Rede Fixa, que versa sobre a oferta de terminação de chamadas em redes do Serviço Telefônico Fixo Comutado - STFC ou do Serviço de Comunicação Multimídia - SCM na dimensão geográfica Código Nacional - CN;"
+A AIR delineou como problema a ser solucionado a operacionalização do uso da numeração pública UIT E.164 pelo SCM, com a consequente interconexão de redes para troca de tráfego telefônico, inclusive com outros serviços de telecomunicações, demandando a reavaliação sobre a regulamentação de remuneração pelo uso de redes fixas no sentido de se verificar a suficiência das regras atuais.
+A PFE/Anatel não apresentou ressalvas jurídicas quanto à avaliação do Tema 3 da AIR:
+Parecer nº 6/2026/PFE-ANATEL/PGF/AGU SEI nº 15040217)
+"h) Quanto ao Tema 03, a proposta é a de unificar as regras previstas para as redes aplicáveis ao SCM e ao STFC. Considera-se que a proposta encontra-se devidamente fundamentada, não se vislumbrando óbices jurídicos ao seu prosseguimento e submissão à avaliação do Conselho Diretor da Agência;"
+Diante da evolução do ambiente regulatório, torna-se necessário definir mecanismos de remuneração capazes de sustentar as relações decorrentes de chamadas originadas e terminadas nas redes do SCM.
+Verifico que a proposta relativa ao Tema 3 consolida um processo regulatório gradual, tecnicamente fundamentado e alinhado às transformações estruturais do setor de telecomunicações, ao viabilizar a plena operacionalização do uso da numeração pública UIT E.164 pelo SCM. Nesse contexto, a iniciativa da área técnica mostra-se adequada e necessária, na medida em que remove entraves históricos, confere coerência ao conjunto de normas relacionadas ao uso de numeração pelo SCM e cria condições efetivas para que esse serviço integre de forma mais harmônica os serviços de voz, juntamente com o STFC.
+II.4 - Da Minuta de Resolução 
+Junto ao Relatório de AIR, foram apresentadas as Minutas de Resolução (SEI nº 15146863 e 15150860) e a Planilha De-Para (SEI nº 14506888). 
+Após minuciosa avaliação desses documentos, tecerei algumas considerações. 
+Referente ao Tema 1 - Consolidação Normativa, notei que os textos da RRUR-STFC e RRUR-SMP foram consolidados e incorporados ao RGI por meio da criação do Capítulo IV, no Título II, denominado "DA REMUNERAÇÃO PELO USO DE REDES". Entendo que a medida é coerente com a avaliação apresentada na AIR, sobre a qual apresento minha concordância.
+Referente ao Tema 2 - Simplificação Normativa, verifico que a área técnica não apenas transportou os dispositivos do RRUR-STFC e RRUR-SMP para o RGI. Houve também um trabalho de aprimoramento redacional de modo a tornar a leitura da norma mais simples e direta, quando aplicável, além de situações que envolveram o aperfeiçoamento da norma referente à remuneração do uso de redes. Concordo com o posicionamento técnico a respeito da matéria, não havendo considerações adicionais de minha parte.
+Referente ao Tema 3 - Uso da numeração pública UIT E.164 pelo SCM, nas Minutas de Resolução (SEI nº 15146863 e 15150860), a área técnica adaptou as redações do RGI, PGMC e Glossário de modo que o uso de numeração pelo SCM possa ser devidamente efetivado.
+Passo a fundamentação de minhas sugestões de ajustes na proposta apresentada pela área técnica, além de comentários adicionais que têm o condão de facilitar o entendimento das propostas das alterações pretendidas. As alterações propostas encontram-se destacadas na Minuta de Resolução SEI nº 15462980, com marcas de revisão SEI nº 15409884, sem as marcas. Adicionalmente, esclareço que apesar da tecnicidade inerente ao regulamento, sempre que possível, busquei aplicar as orientações da Lei nº 15.263, de 14 de novembro de 2025, que instituiu a Política Nacional de Linguagem Simples, pois a meu ver, o uso de linguagem simples nos atos administrativos da Agência resulta em transparência e aproxima a regulação do cidadão comum e prestadoras de todos os portes econômicos, possibilitando maior engajamento e participação social. Quanto ao ponto, transcrevo o art. 5º da Lei:
+Lei nº 15.263/2025
+Art. 5º A administração pública obedecerá às técnicas de linguagem simples na redação de textos dirigidos ao cidadão, tais como:
+I - redigir frases em ordem direta;
+II - redigir frases curtas;
+III - desenvolver uma ideia por parágrafo;
+IV - usar palavras comuns, de fácil compreensão;
+V - usar sinônimos de termos técnicos e de jargões ou explicá-los no próprio texto;
+VI - evitar palavras estrangeiras que não sejam de uso corrente;
+VII – não usar termos pejorativos;
+VIII - redigir o nome completo antes das siglas;
+IX – organizar o texto de forma esquemática, quando couber, com o uso de listas, tabelas e recursos gráficos;
+X - organizar o texto a fim de que as informações mais importantes apareçam primeiramente;
+XI – não usar novas formas de flexão de gênero e de número das palavras da língua portuguesa, em contrariedade às regras gramaticais consolidadas, ao Vocabulário Ortográfico da Língua Portuguesa (Volp) e ao Acordo Ortográfico da Língua Portuguesa, promulgado pelo Decreto nº 6.583, de 29 de setembro de 2008.
+XII – redigir frases preferencialmente na voz ativa;
+XIII – evitar frases intercaladas;
+XIV – evitar o uso de substantivos no lugar de verbos;
+XV – evitar redundâncias e palavras desnecessárias;
+XVI – evitar palavras imprecisas;
+XVII – usar linguagem acessível à pessoa com deficiência, observados os requisitos de acessibilidade previstos na Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência);
+XVIII – testar com o público-alvo se a mensagem está compreensível."
+Dando seguimento à análise, realizarei minhas considerações referentes às mudanças que produzem efeito ao longo de toda a Minuta de Resolução. 
+Realizei ajustes na redação da Minuta que podem facilmente ser visualizadas no arquivo de SEI nº 15462980, que possui marcas de revisão nas alterações. Busquei uniformizar termos e estilo de redação ao longo da proposta, sem qualquer impacto quanto ao mérito. Também busquei adotar termos assim como os observados em Resoluções conexas à Minuta em análise. Por exemplo, substitui o termo "Grupo sem PMS" por "Grupo não detentor de PMS", assim como é adotado no PGMC. 
+O Valor Remuneração de Uso de Rede - VU é um conceito utilizado para se referir ao preço pago na remuneração do uso de redes entre prestadoras na prestação de interconexão, no regime privado. O RRUR-SMP adota o termo "Valor de Remuneração de Uso de Rede do SMP" como o valor que remunera uma Prestadora de SMP, por unidade de tempo. Seus valores são negociados entre as prestadoras, podendo ser objeto de regulação assimétrica pela Agência. Por sua vez, a tarifa é o valor pago em contraprestação a um serviço público, conforme esclarecido por Di Pietro, Maria Sylvia (2022). As tarifas do setor de telecomunicações são regidas por uma série de normativos, com especial atenção à LGT, ao RGST,e ao Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução nº 765, de 6 de novembro de 2023.
+Com o fim da prestação do STFC em regime público, a manutenção do termo "tarifa" no novo regulamento não se mostra adequada. Ademais, considerando o processo de simplificação normativa, é salutar adotar uma uniformidade nas nomenclaturas para os valores de remuneração da rede fixa e rede móvel. Isso foi realizado pela área técnica, que promoveu os seguintes ajustes ao longo da proposta normativa. Destaco aqui a nova nomeclatura proposta de modo a evidenciar a alteração dos nomes até então adotados no RRUR-STFC:
+ Regulamento Original
+ | 
+ De
+ | 
+ Para
+ | 
+ RRUR-SMP
+ | 
+ Valor de Remuneração de Uso de Rede do SMP – VU-M
+ | 
+ mantém a nomeclatura
+ | 
+ RRUR-STFC
+ | 
+ Tarifa de Uso de Rede Local - TU-RL
+ | 
+ Valor de Remuneração de Uso de Rede Local - VU-F
+ | 
+ RRUR-STFC
+ | 
+ Tarifa de Uso de Rede Interurbana Nível 2 - TU-RIU2
+ | 
+ Valor de Remuneração de Uso de Rede Interurbana - VU-F1
+ | 
+ RRUR-STFC
+ | 
+ Tarifa de Uso de Comutação - TU-COM
+ | 
+ Valor de Uso de Comutação - VU-COM
+ | 
+Ademais, com o advento do fim das concessões, a área técnica promoveu a substituição do termo "concessionária do STFC" para "prestadora do STFC", conforme consta na Planilha De-Para (SEI nº 14506888). Nesse ponto, destaco que há o caso excepcional da Sercomtel, que teve seu Contrato de Concessão prorrogado excepcionalmente até o fim de julho de 2026, prazo considerado necessário para concluir o acordo de autocomposição visando sua migração para o regime privado. Considero que, apesar desse caso transitório e excepcional, as alterações propostas pela área técnica refletem uma perspectiva futura do ambiente regulatório quando da entrada em vigor da norma em debate. Pela Agenda Regulatória 2025-2026, a Iniciativa 32 tem como meta a realização de Consulta Pública no 2º semestre de 2026. Portanto, com possível aprovação final da Norma em 2027, considerando o planejamento atual, a prestação do STFC em regime público da Sercomtel já terá chegado a termo. Contudo, caso até a edição do Regulamento, a migração da Sercomtel não tenha sido concluída, entendo que deve ser considerada a possibilidade de a redação da Minuta de Resolução ser ajustada de modo a abarcar a permanência da concessão do STFC.
+Encerrado os comentários gerais sobre a Minuta, passo a avaliar os casos pontuais.
+Na Ementa, proponho a inclusão da referência ao PGMC, considerando que essa norma também passará por alteração:
+"Altera o Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693, de 17 de julho de 2018, o Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução nº 779, de 28 de abril de 2025, o Plano Geral de Metas de Competição, aprovado pela Resolução nº 783, de 3 de setembro de 2025 e dá outras providências. 
+No art. 1º, especificamente sobre as alterações do RGI, proponho simplificar a redação do art. 2º inicialmente proposta pela área técnica, sem prejuízo de seu teor. 
+A alteração do art. 41 do RGI se alinha com os demais ajustes promovidos pela Minuta, que exclui as referências à concessão do STFC. Portanto, realizo o ajuste como demonstrado abaixo: 
+"Art. 1º O Regulamento Geral de Interconexão - RGI, aprovado pela Resolução nº 693, de 17 de julho de 2018, publicada no Diário Oficial da União -DOU, de 18 de julho de 2018, passa a vigorar com as seguintes alterações:
+"Art. 2º Este Regulamento estabelece os princípios e regras básicas para a Interconexão de redes e sistemas das prestadoras de Serviços de Telecomunicações de interesse coletivo, abrangendo os seus aspectos comerciais, técnicos, e jurídicos e de, além de disposições sobre a remuneração pelo uso de redes destas Prestadoras quando interconectadas para troca de tráfego telefônico." (NR)
+"Art. 41 As condições para provimento de Trânsito Local e Transporte deverão estar previstas na Oferta Pública de Interconexão das concessionárias do Serviço Telefônico Fixo Comutado nas modalidades Local e Longa Distância, respectivamente, e das detentoras de Poder de Mercado Significativo - PMS nos mercados de atacado de terminação em rede fixa ou de terminação em rede móvel designadas pela regulamentação de competição." (NR)
+Diante do exposto, proponho aprovar a proposta, nos termos das minutas de Resolução (SEI nº 15462980 e 15409884) anexas.
+CONCLUSÃO
+Pelo exposto, proponho submeter à Consulta Pública, pelo prazo de 45 (quarente e cinco) dias, a proposta de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia - SCM, nos termos da Minuta de Resolução SEI nº 15462980 e 15409884.
+REFERÊNCIA
+DI PIETRO, Maria Sylvia Zanella, 1943- Direito Administrativo / Maria Sylvia Zanella di Pietro. – 35. ed. – [2. reimp.] – Rio de Janeiro: Forense, 2022. 1120 p.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15285087 e o código CRC 03EB53A0.
+ | 
+Referência: Processo nº 53500.083769/2025-47 | 
+SEI nº 15285087 |

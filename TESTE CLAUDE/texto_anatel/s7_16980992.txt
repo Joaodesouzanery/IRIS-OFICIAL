@@ -1,0 +1,1374 @@
+SEI/ANATEL - 15175775 - Análise
+Boletim de Serviço Eletrônico em 13/02/2026
+Análise nº 22/2026/CL
+Processo nº 53500.011386/2024-96
+Interessado: CONSELHO DIRETOR DA ANATEL - CD
+CONSELHEIRA
+CRISTIANA CAMARATE SILVEIRA MARTINS LEÃO QUINALIA
+ASSUNTO
+Proposta de atualização da Agenda Regulatória 2025-2026, conforme §§ 6º a 9º do artigo 4º da Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprova diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+EMENTA
+DIREITO ADMINISTRATIVO. ANÁLISE DE PROPOSTA DE ATUALIZAÇÃO DA AGENDA REGULATÓRIA. INCLUSÃO DE NOVAS INICIATIVAS E AJUSTES DE METAS. PROPOSTA APROVADA.
+I. CASO EM EXAME
+1. Proposta de atualização da Agenda Regulatória da Anatel para o biênio 2025-2026, apresentada pela Superintendência de Planejamento e Regulamentação (SPR), com base nos §§ 6º a 9º do art. 4º da Resolução Interna Anatel nº 8/2021.
+2. Ajustes de metas de iniciativas regulamentares para 2026, considerando a execução real dos projetos em 2025.
+3. Inclusão de oito novas iniciativas regulamentares: (i) simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições para o Serviço de Comunicação Multimídia (SCM); (ii) criação do Comitê de Implementação de Políticas Públicas (CIPP); (iii) criação do Centro de Mediação e Soluções Consensuais (CEMESC); (iv) elaboração de edital de licitação para autorização de uso de radiofrequências na faixa de 450 MHz; (v) reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento à Súmula nº 28/2025; (vi) reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL); (vii) revisão do Regimento Interno do Conselho Consultivo; e (viii) revisão do regimento interno do Comitê de Defesa dos Usuários de Serviços de Telecomunicações.
+4. Ajuste do cronograma da iniciativa nº 23, referente à reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, em atendimento à determinação do Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se estão presentes os requisitos formais e materiais para aprovação da atualização da Agenda Regulatória 2025-2026, com os ajustes de metas e inclusão das novas iniciativas regulamentares propostas.
+III. RAZÕES DE DECIDIR
+1. A tramitação do processo observou as competências regimentais do Conselho Diretor e da SPR, estando dispensada manifestação jurídica sobre o mérito estratégico pela Procuradoria Federal Especializada junto à Anatel.
+2. Os ajustes de metas para 2026 foram fundamentados na execução real dos projetos em 2025, visando maior precisão e transparência no planejamento normativo.
+3. A inclusão das novas iniciativas regulamentares atende a determinações do Conselho Diretor e necessidades identificadas pelas áreas da Agência, contemplando temas relevantes para o setor de telecomunicações.
+4. O ajuste do cronograma da iniciativa nº 23 garante a continuidade do ambiente regulatório experimental (sandbox) e evita impactos na operação dos equipamentos em teste.
+5. A proposta está alinhada ao Plano Estratégico da Anatel, às diretrizes do PRO-REG, à Estratégia Nacional de Melhoria Regulatória, às boas práticas recomendadas pelo QualiREG e OCDE, e aos Objetivos de Desenvolvimento Sustentável da ONU.
+6. A revisão do Regimento Interno do Conselho Consultivo demanda inclusão na Agenda Regulatória, por ter natureza de norma "de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados" estando, portanto, atrelado ao procedimento normativo previsto no art. 62 e seguintes do Regimento Interno da Anatel.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Aprovação da atualização da Agenda Regulatória para o biênio 2025-2026, com os ajustes de metas e inclusão das novas iniciativas regulamentares, conforme Minuta de Resolução Interna SEI nº 15023503.
+Tese de julgamento: "1. A atualização da Agenda Regulatória 2025-2026 da Anatel, com ajustes de metas e inclusão de novas iniciativas regulamentares, observa os requisitos formais e materiais exigidos."
+Dispositivos relevantes citados: Resolução Interna Anatel nº 8/2021, art. 4º, §§ 6º a 9º; Resolução nº 612/2013, art. 133, LXIII e art. 155, VIII; Portaria nº 642/2013; Resolução Interna Anatel nº 399/2024; Súmula nº 28/2025; Resolução nº 717/2019.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Decreto nº 2.338, de 7 de outubro de 1997, que aprova o Regulamento da Agência Nacional de Telecomunicações e dá outras providências.
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 12.002, de 22 de abril de 2024, que estabelece normas para elaboração, redação, alteração e consolidação de atos normativos.
+Decreto nº 12.150, de 20 de agosto de 2024, que institui, no âmbito do Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação, a Estratégia Nacional de Melhoria Regulatória.
+Resolução nº 438, de 10 de julho de 2006, que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Móvel Pessoal (SMP).
+Resolução nº 588, de 7 de maio de 2012, que aprova o Regulamento de Remuneração pelo Uso de Redes de Prestadoras do Serviço Telefônico Fixo Comutado (STFC).
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+Resolução nº 667, de 31 de maio de 2026, que aprova o Regulamento Geral de Acessibilidade em Serviços de Telecomunicações de interesse coletivo.
+Resolução nº 690, de 29 de janeiro de 2018, que aprova o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel e dá outras providências.
+Resolução nº 717, de 23 de dezembro de 2019, que aprova o Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL).
+Resolução Anatel nº 765, de 6 de novembro de 2023, que aprova o Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações.
+Resolução Anatel nº 777, de 28 de abril de 2025, que revoga e altera Resoluções expedidas pela Anatel e aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST).
+Resolução Anatel nº 783, de 3 de setembro de 2025, que aprova o Plano Geral de Metas de Competição (PGMC).
+Resolução Anatel nº 785, de 10 de dezembro de 2025, que aprova o planejamento da Anatel de realização de licitações para autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP.
+Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprova diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência.
+Resolução Interna Anatel nº 38, de 9 de fevereiro de 2021, que aprova a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental - PGGR da Agência Nacional de Telecomunicações, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, que aprova a Agenda Regulatória para o biênio 2025-2026, e suas alterações.
+Resolução Interna Anatel nº 409, de 19 de fevereiro de 2025, que altera a Agenda Regulatória para o biênio 2025-2026.
+Resolução Interna Anatel nº 429, de 28 de abril de 2025, que altera a Agenda Regulatória para o biênio 2025-2026.
+Resolução Interna Anatel nº 445, de 23 de junho de 2025, que altera a Agenda Regulatória para o biênio 2025-2026.
+Resolução Interna Anatel nº 469, de 15 de agosto de 2025, que altera a Agenda Regulatória para o biênio 2025-2026.
+Portaria nº 642, de 26 de julho de 2013, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel.
+Matéria para Apreciação do Conselho Diretor nº 870/2025 (SEI nº 14799239).
+Regula Melhor: Estratégia Nacional de Melhoria Regulatória. Ministério do Desenvolvimento, Indústria, Comércio e Serviços - MDIC. Brasília, 2024. Disponível em https://www.gov.br/mdic/pt-br/assuntos/reg/governanca-regulatoria/EBook_RegulaMelhor_A411.pdf. Último acesso em 11 de janeiro de 2026.
+QualiREG: Aprimorando a Regulação Brasileira. Disponível em https://www.gov.br/cgu/pt-br/assuntos/auditoria-e-fiscalizacao/qualireg. Último acesso em 11 de janeiro de 2026.
+Boas Práticas Regulatórias do QualiREG: Programa de Aprimoramento da Qualidade da Regulação Brasileira. Brasília, 2024. Controladoria Geral da União - CGU. Organização: Patrícia Rodrigues Pessoa Valente. Disponível em https://repositorio.cgu.gov.br/handle/1/78223. Último acesso em 11 de janeiro de 2026.
+Avaliação da OCDE sobre Telecomunicações e Radiodifusão no Brasil 2020. OECD Publishing, Paris. Disponível em https://doi.org/10.1787/0a4936dd-pt. Último acesso em 11 de janeiro de 2026.
+Sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs). Último acesso em 11 de janeiro de 2026.
+ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação. Instituto de Pesquisa Econômica Aplicada - IPEA, 2018. e-Book. Disponível em https://repositorio.ipea.gov.br/bitstream/11058/8636/1/Agenda 2030 ODS Metas Nac dos Obj de Desenv Susten 2018.pdf. Último acesso em 11 de janeiro de 2026.
+RELATÓRIO
+I - DOS FATOS
+Trata-se de proposta de alteração à Agenda Regulatória 2025-2026, consoante prescreve o art. 4º, §§ 6º a 9º, da Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, que aprovou as diretrizes para a elaboração da Agenda Regulatória e para o processo de regulamentação no âmbito da Agência. Eis o dispositivo citado:
+Resolução Interna Anatel nº 8/2021
+Art. 4º Caberá à Superintendência de Planejamento e Regulamentação (SPR), nos termos do Regimento Interno, submeter à aprovação do Conselho Diretor proposta de Consulta Pública da Agenda Regulatória da Anatel até 31 de maio do ano anterior ao de início de sua vigência.
+(...)
+§ 6º Os prazos previstos na Agenda Regulatória para o segundo ano de sua vigência poderão ser revistos considerando a execução dos Projetos de Regulamentação durante o primeiro ano de sua vigência.
+§ 7º A alteração de prazos prevista no parágrafo anterior independerá da realização de Consulta Pública e deverá ser aprovada pelo Conselho Diretor na primeira reunião deliberativa do segundo ano de vigência da Agenda Regulatória.
+§ 8º O Conselho Diretor poderá, a qualquer momento da vigência da Agenda Regulatória e com a devida motivação, incluir ou excluir Projetos de Regulamentação, considerando, entre outros fatores, a conveniência, a necessidade e a urgência de condução daquele Projeto de Regulamentação, bem como a quantidade de Projetos de Regulamentação já constantes na Agenda Regulatória consoante os recursos disponíveis na Agência para a condução adequada dos Projetos de Regulamentação.
+§ 9º A inclusão ou exclusão de Projetos de Regulamentação prevista no parágrafo anterior independerá da realização de Consulta Pública.
+A Agenda Regulatória 2025-2026 foi inicialmente aprovada pela Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, contemplando 28 (vinte e oito) iniciativas normativas e 3 (três) Avaliações de Resultado Regulatório (ARR).
+Posteriormente, o documento passou por ajustes sucessivos, formalizados pelas seguintes Resoluções Internas:
+Resolução Interna Anatel nº 409, de 19 de fevereiro de 2025, que incluiu a iniciativa nº 29, que trata da Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 6425-7125 MHz;
+Resolução Interna Anatel nº 429, de 28 de abril de 2025, que reprogramou os prazos da iniciativa nº 10, que trata da Reavaliação da regulamentação afeta ao setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços;
+Resolução Interna Anatel nº 445, de 23 de junho de 2025, que acrescentou a iniciativa nº 30, que trata da Reavaliação das obrigações regulatórias a que está sujeito o Serviço de Acesso Condicionado - SeAC; e
+Resolução Interna Anatel nº 469, de 15 de agosto de 2025, que incorporou a iniciativa nº 31, que trata da Avaliação da necessidade de eventuais ajustes às atuais regras de outorga e de prestação de serviços, conforme Plano de Ação para combate à concorrência desleal e para a regularização da prestação do serviço de banda larga fixa (Serviço de Comunicação Multimídia – SCM).
+Dessa forma, a Agenda Regulatória 2025-2026 totaliza atualmente 31 (trinta e uma) iniciativas normativas, além das 3 (três) ARR previstas desde sua versão original.
+Em 5 de dezembro de 2025, por meio do Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), a Superintendência de Planejamento e Regulamentação (SPR) propôs o encaminhamento dos autos ao Conselho Diretor para "alterar a Agenda Regulatória 2025-2026 para promover (i) ajustes às metas de 2026 considerando a execução em 2025; (ii) incluir novas iniciativas normativas conforme exposto no presente Informe (itens 32, 33 e 34); e (iii) ajustar o cronograma para a iniciativa nº 23 em atendimento à determinação constante no item "c" do Despacho Ordinatório SEI 14612247, de 22 de outubro de 2025, do Conselho Diretor". 
+Em relação a ajustes às metas de 2026, em seu Informe, a SPR destacou que os ajustes às metas previstas para 2026 consideraram os seguintes pontos principais:
+Dinâmica de Estabelecimento das Metas e Prazos: As metas e prazos da Agenda foram originalmente definidos com base na fase atual de cada iniciativa, considerando prazos médios de cada etapa do processo regulamentar, conforme acompanhamento trimestral da Agenda;
+Impacto da Execução Real dos Projetos em 2025: Os ajustes para 2026 foram realizados levando em conta o que efetivamente foi executado em 2025. Isso permitiu reestimar as metas para o segundo ano do biênio, refletindo adiantamentos ou atrasos observados;
+Não Alteração de Metas Já Vencidas: A SPR optou por não ajustar metas previstas para 2025 que não foram cumpridas, para evitar distorções na avaliação do desempenho regulatório da Agência. Alterar metas já vencidas poderia aumentar artificialmente o percentual de execução da Agenda e prejudicar o planejamento futuro;
+Transparência e Planejamento: O objetivo dos ajustes é proporcionar uma melhor visualização das expectativas para 2026, tanto para o planejamento interno da Agência quanto para a transparência perante a sociedade, especialmente quanto à realização de Consultas Públicas e aprovações finais de iniciativas; e
+Metodologia Baseada em Relatórios de Acompanhamento: A reprogramação das metas foi fundamentada nos prazos médios observados para cada fase do processo regulamentar, conforme relatórios de acompanhamento publicados pela SPR.
+Segundo a SPR, essas premissas garantem que os ajustes propostos estejam alinhados com a execução real dos projetos, promovendo maior precisão e transparência no planejamento normativo da Anatel para o biênio 2025-2026.
+Considerando as premissas acima, foram propostos os seguintes ajustes para os projetos já constantes da Agenda Regulatória para o ano de 2026:
+Informe nº 167/2025/PRRE/SPR (SEI nº 14791189)
+3.16. Com base nestas premissas e metodologia adotadas, foram sugeridos os seguintes ajustes pontuais nas metas previstas para 2026:
+Item nº 1- Reavaliação da regulamentação sobre compartilhamento de rede e roaming especificamente no que tange ao atendimento às rodovias e aos compromissos de investimento estabelecidos em Editais de Licitação para autorização de uso de radiofrequências.
+Encaminhamento: prorrogar meta da aprovação final para o 2º semestre de 2026, considerando a data de conclusão da Consulta Pública e a expectativa de prazo para as semanas seguintes, conforme planilha de análise anexada ao SEI nº 14791198.
+Item nº 2 - Reavaliação do Regulamento Geral de Acessibilidade - RGA, aprovado pela Resolução nº 667, de 31 de maio de 2016.
+Encaminhamento: retirar a meta de aprovação final de 2026, considerando que a Consulta Pública (prevista para 2025) ainda não foi aprovada, conforme planilha de análise anexada ao SEI nº 14791198.
+Item nº 4 - Planejamento de Editais de Licitação para autorização de uso de radiofrequências.
+Encaminhamento: antecipar meta de aprovação final para o 1º semestre de 2026, considerando que a Consulta Pública ocorreu bem antes do esperado., conforme planilha de análise anexada ao SEI nº 14791198.
+Item nº 25 - Reavaliação do Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, aprovado pela Resolução nº 690, de 29 de janeiro de 2018.
+Encaminhamento: antecipar a meta aprovação final para 2º semestre de 2026 (considerando que a Consulta Pública aconteceu antes do prazo), conforme planilha de análise anexada ao SEI nº 14791198.
+Item nº 26 - Elaboração de novo Regimento Interno da Anatel.
+Encaminhamento: (i) prorrogar a meta de Consulta Pública do 1º para o 2º semestre de 2026, conforme fase atual e perspectiva de prazos para as fases seguintes; e (ii) retirar a meta de aprovação final de 2026, considerando a prorrogação da meta da Consulta Pública; conforme planilha de análise anexada ao SEI nº 14791198.
+A área técnica apresentou justificativa para a manutenção das metas das demais iniciativas, nos seguintes termos:
+Informe nº 167/2025/PRRE/SPR (SEI nº 14791189)
+3.17. Além disso, em outros casos, apesar de a metodologia utilizada ter indicado a necessidade de ajustes das metas previstas para 2026, a área técnica sugere que estas não sejam ajustadas, pelos motivos expostos na tabela abaixo:
+ SEQ.
+ | 
+ PROJETO/AÇÃO REGULATÓRIA
+ | 
+ ANÁLISE SPR
+ | 
+ 8
+ | 
+ Reavaliação das regras aplicáveis às redes comunitárias.
+ | 
+ Não alterar. Meta de aprovação final vencida em 2025.
+ | 
+ 9
+ | 
+ Regulamento de Deveres dos Usuários.
+ | 
+ Não alterar. Metas de Consulta Pública e aprovação final vencidas em 2025.
+ | 
+ 10
+ | 
+ Reavaliação da regulamentação afeta ao setor de telecomunicações à luz da possibilidade de uso de Inteligência Artificial ao longo de toda a cadeia de valor de prestação dos serviços.
+ | 
+ Não alterar. Metas antecipadas por meio da Resolução Interna nº 429, de 28 de abril de 2025.
+ | 
+ 14
+ | 
+ Reavaliação da regulamentação sobre compartilhamento de postes entre distribuidoras de energia elétrica e prestadoras de serviços de telecomunicações.
+ | 
+ Não alterar. Meta de aprovação final vencida em 2025.
+ | 
+ 17
+ | 
+ Reavaliação (i) do Regulamento de Separação e Alocação de Contas, aprovado pela Resolução nº 396, de 31 de março de 2005; e (ii) da Norma para fixação dos valores máximos das tarifas de uso de rede fixa do Serviço Telefônico Fixo Comutado - STFC, dos valores de referência de uso de rede móvel do Serviço Móvel Pessoal - SMP e de Exploração Industrial de Linha Dedicada - EILD, com base em Modelos de Custos, aprovada pela Resolução nº 639, de 1º de julho de 2014.
+ | 
+ Não alterar. Meta de aprovação final vencida em 2025.
+ | 
+ 20
+ | 
+ Revisão do Regulamento de Uso do Espectro - RUE.
+ | 
+ Não alterar. Meta de aprovação final vencida em 2025.
+ | 
+ 22
+ | 
+ Atualização das atribuições e destinações do Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências - PDFF 2025-2026.
+ | 
+ Não alterar. Projeto recorrente, que se repete a cada biênio. Assim, as fases tendem a acontecer de maneira mais acelerada para que se inicie e conclua no mesmo biênio.
+ | 
+ 27
+ | 
+ Revogação de normativos (guilhotina regulatória 2025-2026).
+ | 
+ Não alterar. Projeto recorrente, que se repete a cada biênio. Assim, as fases tendem a acontecer de maneira mais acelerada para que se inicie e conclua no mesmo biênio.
+ | 
+ 29
+ | 
+ Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 6425-7125 MHz.
+ | 
+ Não alterar. Projeto inserido posteriormente na Agenda Regulatória (Resolução Interna nº 409, de 19 de fevereiro de 2025). Cronograma reflete o Despacho do Conselho Diretor da Anatel sobre a faixa de 6425-7125 MHz (SEI nº 13097993).
+ | 
+ 30
+ | 
+ Reavaliação das obrigações regulatórias a que está sujeito o Serviço de Acesso Condicionado - SeAC.
+ | 
+ Não alterar. Projeto inserido posteriormente na Agenda Regulatória (Resolução Interna nº 445, de 23 de junho de 2025). Cronograma reflete o Despacho do Ordinatório Conselho Diretor da Anatel (SEI nº 13624811), destacando-se a avaliação dos prazos conforme exposto na Análise nº 63/2025/DD (SEI nº 13718630), em especial os itens 4.24 a 4.32.
+ | 
+ 31
+ | 
+ Avaliação da necessidade de eventuais ajustes às atuais regras de outorga e de prestação de serviços, conforme Plano de Ação para combate à concorrência desleal e para a regularização da prestação do serviço de banda larga fixa (Serviço de Comunicação Multimídia – SCM).
+ | 
+ Não alterar. Projeto inserido posteriormente na Agenda Regulatória (Resolução Interna nº 469, de 15 de agosto de 2025). Apesar do ritmo mais acelerado para o projeto, tal situação já foi considerada nas motivações para a inclusão do projeto na Agenda (Informe nº 79/2025/PRRE/SPR - SEI nº 13926156, e Análise nº 101/2025/AF - SEI nº 13969338), em especial quanto à relevância e à urgência das ações constantes no Plano de Ação para combate à concorrência desleal e para a regularização da prestação do serviço de banda larga fixa (Serviço de Comunicação Multimídia – SCM), aprovado pela Resolução Interna nº 449, 27 de junho de 2025.
+ | 
+3.18. Por fim, para várias iniciativas a metodologia utilizada não indicou a necessidade replanejamento das metas previstas para 2026.
+No tocante à inclusão de novas iniciativas normativas, propôs-se a incorporação de três iniciativas regulamentares adicionais, conforme detalhado a seguir:
+Simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia (SCM):
+Descrição: O projeto inclui em seu escopo: (i) a consolidação e a simplificação dos regramentos afetos à remuneração pelo uso de redes, em especial aqueles trazidos pela Resolução nº 438, de 10 de julho de 2006, e pela Resolução nº 588, de 7 de maio de 2012; (ii) a inclusão de disposições ao SCM, de maneira análoga ao que existe atualmente para o STFC (considerando que ambos os serviços compõem o mercado de varejo de voz fixa, conforme Plano Geral de Metas de Competição (PGMC), recentemente aprovado pela Resolução Anatel nº 783, de 3 de setembro de 2025).
+Priorização: Ordinário
+Metas (para a vigência da Agenda Regulatória 2025-2026): (i) conclusão do Relatório de AIR e da proposta até o 1º semestre de 2026; e (ii) aprovação da Consulta Pública até o 2º semestre de 2026.
+Criação do Comitê de Implementação de Políticas Públicas (CIPP):
+Descrição: Criação do Comitê de Implementação de Políticas Públicas (CIPP) em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI nº 14831116, de 28 de novembro de 2025.
+Priorização: Ordinário.
+Metas (para a vigência da Agenda Regulatória 2025-2026): (i) Relatório de AIR e respectiva proposta no 1º semestre de 2026; (ii) Consulta Pública no 1º semestre de 2026; e (iii) aprovação final no 2º semestre de 2026.
+Criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel (CEMESC):
+Descrição: Criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel (CEMESC) em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI nº 14831137, de 28 de novembro de 2025.
+Priorização: Ordinário.
+Metas (para a vigência da Agenda Regulatória 2025-2026): (i) Relatório de AIR e respectiva proposta no 1º semestre de 2026; (ii) Consulta Pública no 1º semestre de 2026; e (iii) aprovação final no 2º semestre de 2026.
+Em relação ao ajuste do cronograma da iniciativa nº 23, a área técnica ressaltou que, por meio do Despacho Ordinatório SEI 14612247, de 22 de outubro de 2025, o Conselho Diretor determinou "à Superintendência de Planejamento e Regulamentação - SPR que avalie a execução do cronograma do projeto do item 23 na Agenda Regulatória 2025-2026, referente à Reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, para afastar eventuais impactos na continuidade do funcionamento dos equipamentos objeto deste sandbox". Após considerar todos os aspectos envolvidos, foi proposta a alteração das metas, conforme a seguir:
+aprovação da Consulta Pública até o 1º semestre de 2026; e
+aprovação final até o 2º semestre de 2026.
+Adicionalmente, o Informe nº 167/2025/PRRE/SPR (SEI nº 14791189) descreveu uma possível nova iniciativa referente à revisão do Regimento Interno do Conselho Consultivo, propondo, motivadamente, que a revisão não seja tratada no âmbito da Agenda Regulatória.
+Por fim, a SPR consolidou as propostas de alteração e inclusão de projetos na Minuta de Resolução Interna SEI nº 14799078. O documento SEI nº 14791207 contém a versão da Minuta de Resolução Interna com marcas de revisão.
+Em 5 de dezembro de 2025, a SPR encaminhou os autos à Superintendência Executiva da Anatel (SUE) por meio da Matéria para Apreciação do Conselho Diretor nº 870/2025 (SEI nº 14799239).
+Em 8 de dezembro de 2025, a SUE emitiu o Despacho Ordinatório SEI nº 14878225, por meio do qual encaminhou os autos à Secretaria do Conselho Diretor (SCD).
+Distribuiu-se o processo para minha relatoria em 11 de dezembro de 2025, conforme Certidão de Distribuição SEI nº 14899581.
+Em 11 de dezembro de 2025, a SPR emitiu o Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243), que submeteu a proposta de revisão da meta da iniciativa nº 29 (Edital do 6 GHz) e a inclusão de mais 3 (três) novas iniciativas regulamentares:
+Editais de licitação para as faixas de 450 MHz;
+Reavaliação do Regulamento Geral de Licenciamento – RGL para alinhamento à Súmula nº 28/2025; e
+Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL.
+É o relatório.
+II - DA ANÁLISE
+A presente Análise encontra-se dividida em quatro partes. Na primeira, analisa-se a regularidade da tramitação do presente feito. Na segunda, examinam-se as propostas de ajustes na Agenda Regulatória do biênio 2025-2026 da Anatel. Na terceira, apresenta-se a proposta de encaminhamento da matéria. Na quarta e última, faz-se a conformação do objeto da presente Análise com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com as boas práticas regulatórias recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiReg) e pela Organização para Cooperação e Desenvolvimento Econômico (OCDE) e, finalmente, com os Objetivos do Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU).
+II.1 - Da regularidade formal do processo e competência do Conselho Diretor
+A proposta de alteração da Agenda Regulatória 2025-2026 foi conduzida em consonância com as competências regimentais pertinentes. Compete ao Conselho Diretor a aprovação da Agenda Regulatória da Anatel, nos termos do art. 133, inciso LXIII, do Regimento Interno da Anatel (RIA), enquanto à Superintendência de Planejamento e Regulamentação (SPR) incumbe submeter à aprovação as propostas correlatas à Agenda, conforme art. 155, inciso VIII, do RIA. Tais dispositivos delineiam, de modo claro, a repartição de competências decisórias e instrutórias aplicáveis ao presente feito, assegurando a legitimidade formal do trâmite:
+Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612/2013
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+LXIII - aprovar a Agenda Regulatória da Anatel;"
+(...)
+Art. 155. A Superintendência de Planejamento e Regulamentação tem como competência:
+(...)
+VIII - submeter à aprovação proposta de Agenda Regulatória da Anatel.
+A instrução do feito foi devidamente conduzida pela Superintendência de Planejamento e Regulamentação, por meio do Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), em conformidade com as atribuições previstas no RIA.
+No que se refere à oitiva da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), não se impõe manifestação jurídica sobre o mérito da gestão estratégica. Em manifestação emitida em 19 de junho de 2015, quando da aprovação da Agenda Regulatória 2015-2016, nos autos do processo SICAP nº 53500.010073/2015-20, o órgão jurídico consignou que se tratava de proposta cujo objeto estava relacionado à gestão estratégica da Agência, não cabendo a ela emitir juízo sobre o mérito de tal gestão.
+Parecer nº 637/2015/PFE‑ANATEL/PGF/AGU
+18. Demais disso, a área técnica destacou que todas as ações regulatórias indicadas relacionam-se com as iniciativas estratégicas vinculadas ao Plano Estratégico 2015-2024, bem como indicou os critérios utilizados no processo de priorização das ações regulatórias relacionadas.
+19. De início, insta consignar que se trata de proposta cujo objeto está relacionado à gestão estratégica da Agência, não cabendo a esta Procuradoria emitir juízo sobre o mérito de tal gestão.
+(...)
+3. CONCLUSÃO 
+(...)
+c) No que se refere à proposta contida no bojo dos autos, de início, insta salientar que se trata de proposta cujo objeto está relacionado à gestão estratégica da Agência, não cabendo a esta Procuradoria emitir juízo sobre o mérito de tal questão;
+Adicionalmente, tem-se que a aprovação de alteração da Agenda Regulatória da Anatel não está prevista como um dos casos que demandam a manifestação obrigatória da PFE-Anatel, previstos na Portaria nº 642, de 26 de julho de 2013.
+À luz desse entendimento, não há óbice formal à tramitação e deliberação da proposta sem pronunciamento jurídico substantivo sobre o conteúdo estratégico em discussão.
+Quanto ao procedimento participativo, as diretrizes para elaboração da Agenda Regulatória e para o processo de regulamentação, aprovadas pela Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, estabelecem a submissão da proposta de Agenda ao rito de Consulta Pública. Todavia, para ajustes em Agenda já aprovada — tais como inclusão ou exclusão de Projetos de Regulamentação ao longo da vigência — o próprio ato normativo prevê mecanismo de atualização contínua, dispensando nova Consulta Pública: o art. 4º, § 8º, autoriza o Conselho Diretor a alterar a Agenda “a qualquer momento da vigência”, mediante motivação; e o § 9º explicita que tais alterações independem de consulta pública. Em consequência, o caso concreto prescinde de nova consulta, bastando a motivação técnica e regulatória que fundamente os ajustes propostos.
+Resolução Interna Anatel nº 8/2021
+Art. 4º Caberá à Superintendência de Planejamento e Regulamentação (SPR), nos termos do Regimento Interno, submeter à aprovação do Conselho Diretor proposta de Consulta Pública da Agenda Regulatória da Anatel até 31 de maio do ano anterior ao de início de sua vigência.
+(...)
+§ 8º O Conselho Diretor poderá, a qualquer momento da vigência da Agenda Regulatória e com a devida motivação, incluir ou excluir Projetos de Regulamentação, considerando, entre outros fatores, a conveniência, a necessidade e a urgência de condução daquele Projeto de Regulamentação, bem como a quantidade de Projetos de Regulamentação já constantes na Agenda Regulatória consoante os recursos disponíveis na Agência para a condução adequada dos Projetos de Regulamentação.
+§ 9º A inclusão ou exclusão de Projetos de Regulamentação prevista no parágrafo anterior independerá da realização de Consulta Pública.
+Verificados, pois, (i) a competência decisória do Conselho Diretor e a competência instrutória da SPR, (ii) a dispensa de juízo jurídico sobre mérito estratégico pela PFE-Anatel, e (iii) a dispensa de nova consulta pública para ajustes motivados na Agenda vigente conforme a Resolução Interna Anatel nº 8/2021, conclui‑se pela regularidade formal do trâmite.
+II.2 - Das alterações na Agenda Regulatória 2025-2026 e do prazo regulamentar para deliberação
+As atualizações na Agenda Regulatória 2025-2026, propostas no Informe nº 167/2025/PRRE/SPR (SEI nº 14791189) e complementadas pelo Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243) podem ser classificados nos seguintes itens:
+ajustes às metas de 2026 considerando a execução em 2025;
+inclusão de novas iniciativas regulamentares; e 
+ajustes de metas da iniciativa nº 23 em atendimento a determinação do Conselho Diretor.
+Destaco que, nos termos do § 7º do art. 4º da Resolução Interna Anatel nº 8, de 26 de fevereiro de 2021, o prazo previsto na regulamentação para a deliberação da presente proposta, em função da revisão indicada na alínea "a", acima, é "a primeira reunião deliberativa do segundo ano de vigência da Agenda Regulatória".
+A seguir, são analisadas as propostas apresentadas.
+II.2.1 - Dos ajustes às metas de 2026 considerando a execução em 2025
+Conforme mencionado anteriormente, o Informe nº 167/2025/PRRE/SPR (SEI nº 14791189) propôs ajustes nas metas das iniciativas regulamentares nº 1, 2, 4, 25 e 26 da Agenda Regulatória 2025-2026, devido à dinâmica de estabelecimento das metas e prazos da Agenda Regulatória e às metas e prazos estabelecidos originalmente para 2026, que foram impactados pela real execução dos projetos ao longo de 2025:
+Informe nº 167/2025/PRRE/SPR (SEI nº 14791189)
+II - DOS AJUSTES ÀS METAS PREVISTAS PARA 2026
+3.9. Conforme consta nos documentos de construção da Agenda Regulatória 2025-2026, as metas e prazos previstos foram definidos da seguinte maneira:
+- Para as iniciativas normativas que se tratavam de continuidade de projetos da Agenda Regulatória 2023-2024, estimou-se as metas de Consulta Pública e de aprovação final, conforme cada caso, partindo-se da fase atual de cada uma destas iniciativas e tomando como base os prazos médios de cada fase do processo regulamentar, conforme consta do acompanhamento trimestral de acompanhamento da Agenda Regulatória elaborado por esta SPR. Esta sistemática consta da planilha eletrônica SEI nº 12641664, no processo nº 53500.011386/2024-96, após a Consulta Pública realizada (nº 46, de 2024); e
+- Para as novas iniciativas sugeridas, estimou-se a fase inicial (relatório de Análise de Impacto Regulatório – AIR e proposta) para cada uma, conforme a realidade do caso específico, e a partir daí estimou-se as demais etapas tomando também como base os prazos médios de cada fase do processo regulamentar.
+3.10. Tal situação está descrita no Informe nº 18/2024/PRRE/SPR (SEI nº 11533862), que encaminhou a primeira proposta de Agenda Regulatória 2025-2026 ao Conselho Diretor, antes da Consulta Pública.
+3.11. Ato contínuo, tais prazos foram atualizados na etapa de análise das contribuições recebidas na Consulta Pública, conforme detalhado no Informe nº 113/2024/PRRE/SPR (SEI nº 12641604).
+3.12. Desta maneira, tendo em vista (i) a dinâmica de estabelecimento das metas e prazos da Agenda Regulatória, (ii) que as metas e prazos estabelecidos originalmente para 2026 são impactados pela real execução dos projetos ao longo de 2025 e (iii) o que determina o § 6º do art. 4º da Resolução Interna nº 8, de 26 de fevereiro de 2021, esta Superintendência de Planejamento e Regulamentação procedeu a análise das metas e prazos da Agenda em questão conforme detalhado a seguir.
+3.13. Assim, considerando-se a fase de cada uma das 31 (trinta e uma) iniciativas normativas da Agenda Regulatória 2025-2026 ao final de 2025, bem como os prazos médios observados para cada fase do processo regulamentar conforme relatório de acompanhamento de setembro de 2025 (SEI nº 14517909 e nº 14517913), foi possível reestimar as metas para o ano de 2026. O detalhamento de tal análise consta da planilha eletrônica anexada ao presente Informe (SEI nº 14791198).
+(...)
+3.15. Esta atualização é importante pois, originalmente, as metas para 2026 foram dimensionadas a partir das metas planejadas para 2025. Entretanto, no curso real das iniciativas regulamentares ao longo de 2025 houve metas cumpridas em maior ou menor prazo em relação ao originalmente estimado. Assim, considerando-se o que de fato foi executado em 2025 pode-se dar uma melhor visualização das expectativas para o ano de 2026, tanto no que diz respeito ao planejamento interno da Agência quanto à transparência para a sociedade do planejamento normativo da Anatel, especialmente quanto à expectativa de realização de Consulta Pública ou de aprovação final de cada uma das iniciativas regulamentares previstas.
+A seguir, são analisadas as alterações de meta propostas.
+II.2.1.1 - Iniciativa regulamentar nº 1 - Reavaliação da regulamentação sobre compartilhamento de rede e roaming especificamente no que tange ao atendimento às rodovias e aos compromissos de investimento estabelecidos em Editais de Licitação para autorização de uso de radiofrequências
+O item nº 1 da Agenda Regulatória atual é especificado da seguinte forma:
+Agenda Regulatória 2025-2026, aprovada pela Resolução Interna Anatel nº 399/2024
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 1
+ | 
+ Reavaliação da regulamentação sobre compartilhamento de rede e roaming especificamente no que tange ao atendimento às rodovias e aos compromissos de investimento estabelecidos em Editais de Licitação para autorização de uso de radiofrequências.
+ | 
+ Trata-se de iniciativa que visa reavaliar a regulamentação sobre compartilhamento de rede e atendimento ao usuário visitante (roaming) no SMP buscando debater e endereçar aspectos referentes ao atendimento às rodovias com esse serviço de telecomunicações. Também se busca debater aspectos referentes à abertura de roaming em municípios e localidades onde há compromissos de investimento editalício designado a apenas uma prestadora de SMP, incluindo, entre outros aspectos, as tecnologias que devem ser consideradas nessa abertura de rede.
+ | 
+ 53500.072943/2023-64
+ | 
+ 26
+ | 
+ Ordinário
+ | 
+ Consulta Pública
+ | 
+ -
+ | 
+ Aprovação final
+ | 
+ -
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+A etapa de Consulta Pública, prevista para ser concluída no primeiro semestre de 2025, teve sua data de término prorrogada para 29 de outubro de 2025, por meio do Acórdão nº 257 (SEI nº 14427004), de 22 de setembro de 2025.
+A área técnica propõe que a meta de Aprovação Final seja alterada do primeiro para o segundo semestre de 2026.
+Considerando a prorrogação do término da Consulta Pública nº 30/2025, justifica-se a alteração proposta para o cronograma da Aprovação Final.
+II.2.1.2 - Iniciativa regulamentar nº 2 - Reavaliação do Regulamento Geral de Acessibilidade - RGA, aprovado pela Resolução nº 667, de 31 de maio de 2016
+A Agenda Regulatória 2025-2026 define a iniciativa regulamentar nº 2 nos seguintes termos:
+Agenda Regulatória 2025-2026, aprovada pela Resolução Interna Anatel nº 399/2024
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 2
+ | 
+ Reavaliação do Regulamento Geral de Acessibilidade - RGA, aprovado pela Resolução nº 667, de 31 de maio de 2016.
+ | 
+ Reavaliação do Regulamento Geral de Acessibilidade - RGA no sentido de verificar a conveniência de atualizar a norma para (i) incluir outros grupos sociais sob vulnerabilidade (além das Pessoas com Deficiência - PcD) e (ii) propor melhorias na Central de Intermediação de Comunicação - CIC.
+ | 
+ 53500.111043/2023-40
+ | 
+ 27
+ | 
+ Prioritário
+ | 
+ -
+ | 
+ Consulta Pública
+ | 
+ -
+ | 
+ Aprovação final
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Por meio do Ofício nº 150/2025/AF-ANATEL (SEI nº 14325540), o Conselheiro Relator solicitou ao Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi) a realização de relevante diligência relacionada à aplicação de Behavioral Insights para a proposta do Regulamento Geral de Acessibilidade e Inclusão Digital (RGAID), tendo o Secretário Executivo do referido centro solicitado, posteriormente, a prorrogação do prazo originalmente fixado.
+Destaco ainda que o Ceadi, recentemente, efetuou a contratação (Contrato nº 145, de 24 de dezembro de 2025 - SEI nº 14963873) da consultoria dinamarquesa "iNudgeyou – The Applied Behavioural Science Centre", para a aplicação de ciência comportamental na regulamentação produzida pela Agência. A colaboração se concentrará no fortalecimento da aplicação de intervenções comportamentais para o aprimoramento das propostas do Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS), a revisão do Regulamento Geral de Acessibilidade e Inclusão Digital (RGAID) e para a implementação da Política de Governança de Inteligência Artificial da Anatel (PGIA), conforme consta do termo de referência da referida contratação.
+Assim, considerando-se que a realização de Consulta Pública ainda não foi aprovada, justifica-se a proposta de retirada da meta de Aprovação Final de 2026, apresentada no Informe nº 167/2025/PRRE/SPR (SEI nº 14791189). Ressalta-se que, devido às premissas utilizadas pela área técnica para os ajustes em metas, a etapa de Consulta Pública, prevista para o segundo semestre de 2025, não foi alterada.
+II.2.1.3 - Iniciativa regulamentar nº 4 - Planejamento de Editais de Licitação para autorização de uso de radiofrequências
+A iniciativa regulamentar nº 4 da Agenda Regulatória 2025-2026 trata do planejamento de editais de licitação para autorização de uso de radiofrequências e está assim especificada na atual Agenda Regulatória:
+Agenda Regulatória 2025-2026, aprovada pela Resolução Interna Anatel nº 399/2024
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 4
+ | 
+ Planejamento de Editais de Licitação para autorização de uso de radiofrequências.
+ | 
+ Planejamento de Editais de Licitação para autorização de uso de radiofrequências associadas à prestação do Serviço Móvel Pessoal - SMP com vistas a disponibilizar subfaixas disponíveis em diversas faixas do espectro no curto, médio e longo prazos.
+ | 
+ 53500.007959/2024-87
+ | 
+ 28
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ Consulta Pública
+ | 
+ -
+ | 
+ Aprovação final
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Em seu Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), a área técnica propôs a antecipação da meta de aprovação final para o 1º semestre de 2026, visto que a etapa de Consulta Pública havia sido concluída com significativa antecedência em relação ao cronograma estabelecido.
+No entanto, em 10 de dezembro de 2025, o Conselho Diretor aprovou a Resolução Anatel nº 785, de 10 de dezembro de 2025, que aprova o planejamento da Anatel de realização de licitações para autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP, efetivamente concluindo, portanto, a iniciativa regulamentar.
+Assim, não há necessidade de antecipação da meta da iniciativa nº 4 da Agenda Regulatória 2025/2026 devido à conclusão da iniciativa regulamentar no segundo semestre de 2025.
+II.2.1.4 - Iniciativa regulamentar nº 25 - Reavaliação do Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, aprovado pela Resolução nº 690, de 29 de janeiro de 2018
+O item nº 25 da atual Agenda Regulatória tem como objetivo reavaliar o Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, aprovado pela Resolução nº 690, de 29 de janeiro de 2018:
+Agenda Regulatória 2025-2026, aprovada pela Resolução Interna Anatel nº 399/2024
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 25
+ | 
+ Reavaliação do Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, aprovado pela Resolução nº 690, de 29 de janeiro de 2018.
+ | 
+ O Regulamento de Restituição e Compensação das Receitas Administradas pela Anatel, aprovado pela Resolução nº 690, de 29 de janeiro de 2018 trata, entre outros aspectos, dos requisitos para o envio do requerimento de restituição ou compensação de receitas administradas pela Agência (arts. 12 a 19), além do próprio processo de análise pela Anatel (arts. 20 a 31). Ao longo da aplicação desde sua edição, a experiência interna demonstrou a possibilidade de simplificar tanto os requisitos para o requerimento quanto algumas etapas da análise pela Agência. Além disso, vislumbra-se a possibilidade de melhorar e simplificar o texto normativo a fim de facilitar seu entendimento pelos regulados.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Prioritário
+ | 
+ Relatório de AIR e proposta
+ | 
+ -
+ | 
+ Consulta Pública
+ | 
+ -
+ | 
+A área técnica, no Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), ressalta que a etapa de consulta pública teve seu cumprimento antecipado, o que permite que a etapa de aprovação final, inexistente na Agenda Regulatória 2025-2026, possa ser prevista para o segundo semestre de 2026.
+ O projeto está sendo executado nos autos do Processo SEI nº 53500.005829/2025-91. A Consulta Pública nº 40 (SEI nº 14598515), de 21 de outubro de 2025, foi encerrada em 8 de dezembro de 2025. Atualmente, as contribuições recebidas estão sendo analisadas pela área técnica.
+Justifica-se, assim, a antecipação da etapa de aprovação final do projeto, que passa a ser prevista para o 2º semestre de 2026, dentro, portanto, do período de vigência da atual Agenda Regulatória.
+II.2.1.5 - Iniciativa regulamentar nº 26 - Elaboração de novo Regimento Interno da Anatel
+O item nº 26 da atual Agenda Regulatória tem como objetivo reavaliar o Regimento Interno da Anatel:
+Agenda Regulatória 2025-2026, aprovada pela Resolução Interna Anatel nº 399/2024
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 26
+ | 
+ Elaboração de novo Regimento Interno da Anatel.
+ | 
+ Reavaliação do Regimento Interno da Anatel, conforme diretrizes constantes da Portaria nº 1.701, de 8 de dezembro de 2016, examinando, dentre outros: aprimoramentos nas decisões tomadas em circuitos deliberativos (ex: ampliação de suas hipóteses de adoção, possibilidade de sustentação oral e de pedidos de vista simultâneos) e nos procedimentos de resolução de conflitos envolvendo prestadoras de serviços de telecomunicações (ex: Resolução Online de Conflitos, do inglês, Online Dispute Resolution - ODR); proposta de reestruturação da Superintendência de Gestão da Informação - SGI, conforme apresentada no Ofício nº 265/2024/AF-ANATEL (SEI nº 12930136); e proposta de inclusão de competência da Superintendência de Fiscalização - SFI referente ao desenvolvimento de ferramentas para as atividades de fiscalização.
+ | 
+ 53500.052390/2017-85
+ | 
+ 22
+ | 
+ Prioritário
+ | 
+ Relatório de AIR e proposta
+ | 
+ -
+ | 
+ Consulta Pública
+ | 
+ Aprovação final
+ | 
+O Informe nº 167/2025/PRRE/SPR (SEI nº 14791189) propõe a prorrogação da meta de Consulta Pública do primeiro para o segundo semestre de 2026, considerando a fase atual e perspectiva de prazos para as fases seguintes. Como consequência, recomenda a retirada da meta de aprovação final de 2026.
+O projeto de revisão do Regimento Interno da Anatel tem se mostrado bastante complexo e desafiador. Um breve histórico foi apresentado pelo então Conselheiro Vicente de Aquino, quando da submissão da proposta de Agenda Regulatória 2025-2026 ao procedimento de consulta pública:
+Análise nº 92/2024/VA (SEI nº 12142298)
+III.1.18 - Item 23: Elaboração de novo Regimento Interno da Anatel
+(...)
+5.102. A iniciativa foi inserida como item 23 da Agenda proposta pela SPR (SEI nº 11535362).
+5.103. A revisão do Regimento Interno da Anatel constou, inicialmente, como o item 23 da Agenda Regulatória 2021-2022. Posteriormente, foi inclusa como o item 22 da Agenda Regulatória 2023-2024. A Consulta Pública nº 59/2021 foi concluída em 16 de fevereiro de 2022. Atualmente, encontra-se na fase de avaliação das contribuições recebidas em Consulta Pública e elaboração de nova proposta de normativo.
+5.104. Por meio de reuniões realizadas junto ao Gabinete do ilustre Conselheiro Alexandre Freire, foi-me reportada sua preocupação com os assuntos que estão sendo tratados no âmbito da revisão do Regimento Interno, incluindo a oportunidade de aprimoramentos que possam promover inovações no normativo, tornando seus procedimentos mais ágeis de forma a beneficiar todos os agentes envolvidos no setor de telecomunicações.
+5.105. Devido à importância das ideias e conceitos trazidos pelo Conselheiro Alexandre Freire, concordo que deva ser avaliada a possibilidade de inserções, na elaboração de novo Regimento Interno, que reflitam a nova realidade tecnológica que se deu após o advento da pandemia de Covid-19. Tais análises podem focar em uma maior possibilidade de se utilizar os meios de tecnologia da informação e comunicação para as deliberações da Agência e a resolução de conflitos, sem perder de vista a transparência necessária. Basicamente, propõe-se uma avaliação quanto à dinâmica do circuito deliberativo (com a revisão das hipóteses de sua utilização e forma de divulgação), a possibilidade de devolução de vistas em ambiente virtual, assim como a resolução de conflitos em ambiente virtual.
+5.106. Hoje, é permitida a adoção de circuito deliberativo apenas para "as matérias previamente definidas pelo Conselho Diretor, que envolvam entendimento já consolidado na Agência, quando desnecessário o debate oral ou se tratar de matéria relevante e urgente cuja omissão possa causar prejuízos irreversíveis". É a inteligência do art. 27, § 1º, do Regimento Interno da Anatel.
+5.107. Seria oportuno avaliar a possibilidade de o circuito deliberativo ser utilizado para qualquer matéria, inclusive aquelas que foram objeto de pedido de vista por Conselheiro(a), retirando-se as restrições hoje existentes. Importante ainda que, neste caso, se examine se tal possibilidade é compatível com os movimentos de transparência prezados pela Agência, especialmente para casos em que haja debate sobre a matéria tratada no processo. Adicionalmente, convém refletir sobre a possibilidade de realização de sustentação oral para os processos submetidos a circuito deliberativo, assim como a realização de vista simultânea pelos Conselheiros.
+5.108. Dessa forma, é imperioso estudar a possibilidade de todos os processos de competência do Conselho Diretor, a critério do relator ou do Conselheiro(a) vistor com a anuência do relator, poderem ser submetidos a circuito deliberativo, após a concordância do Presidente da Anatel. No caso do processo em vista, o circuito pode prever fluxo de decisão que possibilite a manifestação dos demais Conselheiros e a transparência necessária ao caso.
+5.109. Contudo, é necessário ponderar também a conveniência da criação de uma lista preferencial para aqueles que podem ser julgados em circuito deliberativo, a exemplo de: matérias administrativas, matérias com decisões reiteradas ou que a decisão tenha sido tomada com base em Súmula da Agência, desde que justificadas cada uma dessas hipóteses.
+5.110. Quanto à resolução de conflitos em ambiente virtual, tem-se que a proposta relativa à Online Dispute Resolution - ODR já foi aprovada por este Colegiado, com base em minha Análise nº 143/2022/VA (SEI nº 9635565), nos termos do Despacho Ordinatório SEI nº 9635939, de 31 de dezembro de 2022:
+(...)
+5.111. Esse mecanismo parece ser mais provável de ser utilizado em conflitos envolvendo prestadoras de serviços de telecomunicações, pois seu uso em questões afetas ao relacionamento entre consumidores e provedores de serviços demandaria recursos não disponíveis na Agência.
+(...)
+5.113. Considerando esses ajustes no escopo da iniciativa regulamentar em andamento, com a inclusão de novos temas, entendo oportuna a realização de nova Consulta Pública, o que implica mudança de seu cronograma, cuja conclusão deve passar do primeiro semestre 2025 para o segundo semestre 2026. O novo cronograma considera a necessidade de a SPR ter tempo hábil para executar todas as ações necessárias para a realização da nova Consulta Pública. Assim, proponho que a iniciativa passe a ser descrita da seguinte forma:
+(...)
+(destaques acrescidos)
+Quando da aprovação final da Agenda Regulatória 2025-2026, a iniciativa regulamentar de revisão do Regimento Interno da Agência sofreu novo ajuste de escopo, conforme pode ser constatado na Análise nº 169/2024/VA (SEI nº 12918434), que fundamentou a aprovação da Agenda pelo Acórdão nº 395 (SEI nº 13095914):
+Análise nº 169/2024/VA (SEI nº 12918434)
+II.3.2.2 - Do escopo do item sobre a "Elaboração do Regimento Interno da Anatel"
+5.77. Ainda em seu Ofício nº 265/2024/AF-ANATEL SEI nº 12930136), o Eminente Conselheiro Alexandre Freire destacou o papel da Superintendência de Gestão Interna da Informação - SGI, considerando as entregas inovadoras daquela área, como o módulo SEI-IA e funcionalidades baseadas em IA. Além disso, ressaltou que a SGI lidera a iniciativa de “Desenvolvimento Interno de IA” e que o Plano Diretor de Tecnologia da Informação (2025-2026) já contempla novas aplicações, incluindo análise de padrões regulatórios, estimativas de qualidade de serviço e monitoramento de redes sociais.
+5.78. Por fim, o Conselheiro propôs a criação de um Núcleo de Inteligência Artificial no âmbito da SGI, que será responsável por desenvolver soluções internas, conduzir experimentos e estudos, além de monitorar os riscos associados ao uso da IA. Essa iniciativa está vinculada à proposta de reestruturação da SGI, que passará a ser denominada Superintendência de Gestão da Informação e Tecnologias Emergentes, com a criação de gerências dedicadas às novas demandas tecnológicas.
+5.79. Quanto à reestruturação da SGI, sugeriu que "sua análise seja incorporada ao processo de revisão do Regimento Interno da Anatel, constante no item 22 da Agenda Regulatória para o biênio 2023-2024, respeitando o rito regulamentar aplicável às alterações normativas no âmbito da Agência".
+5.80. A proposta de ajustes na estrutura organizacional da Agência, acompanhada da definição detalhada de suas competências, representa uma oportunidade estratégica para realizar uma análise mais abrangente, contemplando outros órgãos internos.
+5.81. Em recente reunião realizada com a Superintendente de Fiscalização, Sra. Gesiléa Teles, foram apresentadas iniciativas de elevado valor, que merecem uma consideração mais aprofundada com vistas à sua eventual incorporação ao Regimento Interno.
+(...)
+5.86. Apesar de o desenvolvimento de ferramentas estar intrinsecamente ligado à atividade de fiscalização, essa atribuição não está expressamente prevista no Regimento Interno como competência da SFI.
+5.87. Atualmente o Regimento Interno estabelece, nos incisos I a VI do art. 157, a competência da SFI para realizar os diversos tipos de fiscalização. Adicionalmente, o inciso IV do art. 190 atribui à Gerência de Suporte à Fiscalização- FISF, uma das gerências da SFI, a responsabilidade de "especificar, gerir e manter sistemas, instrumentos e demais recursos necessários às atividades de fiscalização".
+5.88. Diante desse cenário, parece-me pertinente que o Regimento Interno passe a explicitar a competência da SFI para o desenvolvimento de ferramentas voltadas às atividades de fiscalização. Tal inclusão não apenas reconheceria formalmente essa importante atribuição, mas também contribuiria para a consolidação e fortalecimento institucional da Agência.
+5.89. Considero que as ações propostas são estruturantes e consistentes com as melhores práticas nacionais e internacionais, promovendo inovação tecnológica e o aprimoramento regulatório. Entendo, ainda, que o momento é particularmente oportuno para incorporar a proposta apresentada no escopo da revisão do Regimento Interno da Agência. Assim, proponho que a descrição da iniciativa regulamentar de "Elaboração do novo Regimento Interno da Anatel" passe a ter a seguinte redação:
+"Reavaliação do Regimento Interno da Anatel, conforme diretrizes constantes da Portaria nº 1.701, de 8 de dezembro de 2016, examinando, dentre outros: aprimoramentos nas decisões tomadas em circuitos deliberativos (ex: ampliação de suas hipóteses de adoção, possibilidade de sustentação oral e de pedidos de vista simultâneos) e nos procedimentos de resolução de conflitos envolvendo prestadoras de serviços de telecomunicações (ex: Resolução Online de Conflitos, do inglês, Online Dispute Resolution - ODR); proposta de reestruturação da Superintendência de Gestão da Informação - SGI, conforme apresentada no Ofício nº 265/2024/AF-ANATEL (SEI nº 12930136); e proposta de inclusão de competência da Superintendência de Fiscalização - SFI referente ao desenvolvimento de ferramentas para as atividades de fiscalização."
+(destaques acrescidos aos originais)
+Destaca-se, então, que projeto demandou ajustes significativos em seu cronograma e em seu escopo, o que resultou na decisão de realização de nova consulta pública.
+Em 11 de fevereiro de 2025, a SPR instaurou novo processo (Processo SEI nº 53500.008958/2025-31) para reavaliação do Regimento Interno, a partir do Termo de Abertura de Projeto (TAP) SEI nº 13241873:
+Termo de Abertura de Projeto (TAP) SEI nº 13241873
+1. OBJETIVO DO DOCUMENTO
+1.1. O objetivo deste documento é apresentar como o fluxo de interações irá prosseguir durante a criação do projeto de maneira completa, com o máximo de clareza e fundamentação. Este documento servirá de referência básica para o decorrer da criação do produto, na qual todo o projeto está relacionado. Para termos de metodologia de Projetos adotada na Anatel, esse documento representará o Termo de Abertura de Projetos (TAP) e o Plano de Gerenciamento de Projeto (PGP).
+1.2. Trata-se de projeto constante do item 26 da Agenda Regulatória para o biênio 2025-2026, que propõe a Elaboração de novo Regimento Interno da Anatel.
+Nos autos daquele processo, em 5 de dezembro de 2025, a SPR elaborou a Matéria para Apreciação do Conselho Diretor nº 782/2025 (SEI nº 14602000), contendo proposta de revisão do Regimento Interno da Agência, a ser submetida ao procedimento de consulta pública.
+A matéria foi submetida ao Colegiado por meio do Despacho Ordinatório SEI nº 14878432 e distribuída ao Conselheiro Octavio Penna Pieranti, conforme Certidão de Distribuição SEI nº 14899582.
+Assim, os ajustes propostos no cronograma da iniciativa regulamentar (postergação da Consulta Pública para o segundo semestre de 2026 e retirada da aprovação final da Agenda Regulatória 2025/2026) mostram-se necessários e devem ser acolhidos.
+Adicionalmente, considerando que foi instaurado um novo processo para tratamento do item 26 (Processo SEI nº 53500.008958/2025-31), entendo necessário que isso também esteja refletido na Agenda Regulatória 2025-2026, o que inclusive já foi antecipado pela SPR na página que comunica à sociedade os resultados das iniciativas da Agenda Regulatória (Link).
+II.2.1.6 - Iniciativa regulamentar nº 29 - Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 6425-7125 MHz
+No Ofício nº 284/2025/PRRE/SPR‑ANATEL (SEI nº 14898243), de 11 de dezembro de 2025, a SPR informa que, com base na Análise nº 5/2025/EH (SEI nº 14388822), o Conselho Diretor deliberou incluir a faixa de 450 MHz no horizonte de licitação previsto para ocorrer ainda em 2026. Ademais, o Colegiado determinou que a SPR apresentasse, previamente à submissão do edital à sua apreciação, um panorama detalhado do ecossistema de dispositivos International Mobile Telecommunications – IMT referentes às faixas de 450 MHz e 6 GHz. Essa decisão foi formalizada no Acórdão nº 335 (SEI nº 14890623), de 10 de dezembro de 2025, e no Despacho Ordinatório SEI nº 14891035, expedido na mesma data.
+Além disso, no que se refere à faixa de 6 GHz, cujo edital corresponde à iniciativa nº 29 da Agenda Regulatória em revisão, e considerando que a Resolução Anatel nº 785, de 10 de dezembro de 2025, a incluiu entre aquelas previstas para licitação no horizonte de curto prazo (até 2028), o mencionado Ofício recomenda ao Conselho Diretor que avalie a conveniência de revisar as metas estabelecidas. Ressalta também que esse item prevê, atualmente, a aprovação final do Edital de Licitação até o 1º semestre de 2026, prazo originalmente alinhado à determinação contida no Despacho Ordinatório SEI nº 13097993.
+Dessa forma, considerando a alteração da meta de realização da licitação para até 2028 e a determinação do Conselho Diretor para que seja elaborado o panorama detalhado do ecossistema de dispositivos International Mobile Telecommunications – IMT referentes às faixas de 450 MHz e 6 GHz, entende-se pertinente que seja excluída a meta de aprovação final prevista para o item 29 da Agenda Regulatória 2025-2026.
+II.2.2 - Da inclusão de novas iniciativas regulamentares
+Por meio do Informe nº 167/2025/PRRE/SPR (SEI nº 14791189), complementado pelo Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243), foi proposta a inclusão de seis novas iniciativas regulamentares:
+Simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia (SCM);
+Criação do Comitê de Implementação de Políticas Públicas (CIPP);
+Criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel (CEMESC);
+Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz;
+Reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento com a Súmula nº 28, de 9 de dezembro de 2025 (SEI nº 14885978); e
+Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL).
+O Informe nº 167/2025/PRRE/SPR (SEI nº 14791189) também apresentou uma possível nova iniciativa referente à revisão do Regimento Interno do Conselho Consultivo. No entanto, sugeriu que essa revisão não seja tratada no âmbito da Agenda Regulatória.
+Adicionalmente, em reunião realizada em fevereiro de 2026, o Presidente do Conselho de Defesa dos Usuários de Serviços de Telecomunicações (CDUST) da Anatel, o Conselheiro Octavio Penna Pieranti, sugeriu-me a inclusão de nova iniciativa regulamentar, voltada à revisão do Regimento Interno do CDUST, com o objetivo de promover aprimoramentos em fase de discussão com os membros do comitê. 
+II.2.2.1 - Do projeto de simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia (SCM)
+O projeto de "Simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia (SCM)” tem por finalidade revisar, unificar e atualizar o conjunto normativo que disciplina a remuneração pelo uso de redes no setor de telecomunicações. Trata-se de iniciativa motivada pela necessidade, identificada pela Superintendência de Competição (SCP), de aprimorar a coerência e a racionalidade regulatória em um tema hoje disciplinado por normas dispersas e que demandam um estudo para avaliar a necessidade de sua revisão.
+Atualmente, as regras relativas à remuneração pelo uso de redes encontram-se distribuídas sobretudo em dois regulamentos: o Regulamento de Remuneração pelo Uso de Redes do STFC (RRUR‑STFC), aprovado pela Resolução nº 588, de 7 de maio de 2012, e o Regulamento de Remuneração pelo Uso de Redes do SMP (RRUR‑SMP), aprovado pela Resolução nº 438, de 10 de julho de 2006. Em razão do tempo decorrido desde suas edições, diversos dispositivos tornaram‑se redundantes, foram absorvidos por normas posteriores ou já constam da própria legislação setorial, tornando necessária uma revisão abrangente. Ademais, o Decreto nº 12.002, de 22 de abril de 2024, reforça a diretriz de consolidação normativa, estimulando a eliminação de sobreposições, lacunas e complexidades desnecessárias.
+Outro elemento motivador do projeto reside nas transformações tecnológicas e regulatórias recentes, especialmente a evolução do Serviço de Comunicação Multimídia (SCM). A partir de 1º de março de 2027, o SCM passará a poder utilizar recursos de numeração pública UIT E.164, com obrigações de interconexão correspondentes, conforme previsto na Resolução Anatel nº 777, de 28 de abril de 2025, no Acórdão nº 202, de 14 de agosto de 2025 (SEI nº 14194308). Diante dessas novas atribuições, torna-se imprescindível que o SCM também seja contemplado no marco regulatório de remuneração pelo uso de redes, em linha com o tratamento já conferido ao STFC — serviços que, inclusive, integram o mercado de varejo de voz fixa, nos termos do PGMC aprovado pela Resolução Anatel nº 783/2025.
+Assim, o projeto compreende, em síntese:
+A consolidação e simplificação dos regulamentos existentes sobre remuneração pelo uso de redes, com foco nas Resoluções nº 438/2006 e nº 588/2012; e
+A inclusão de regras específicas aplicáveis ao SCM, harmonizadas com o modelo regulatório já adotado para o STFC, considerando a convergência entre os serviços e a necessidade de tratamento isonômico e tecnicamente atualizado.
+A proposta da área técnica, classificada como de prioridade ordinária, estabelece como metas para o ciclo da Agenda Regulatória 2025‑2026 a conclusão do Relatório de Análise de Impacto Regulatório (AIR) e da minuta de proposta até o primeiro semestre de 2026, bem como a aprovação da Consulta Pública correspondente até o segundo semestre do mesmo ano.
+A proposta submetida à deliberação do Conselho Diretor está presente na Minuta de Resolução Interna SEI nº 14799078 nos seguintes termos:
+Minuta de Resolução Interna SEI nº 14799078
+Subtema: Preços e tarifas
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 32
+ | 
+ Simplificação e consolidação da regulamentação de remuneração de uso de redes, incluindo disposições afetas ao Serviço de Comunicação Multimídia - SCM.
+ | 
+ O projeto inclui em seu escopo: (i) a consolidação e a simplificação dos regramentos afetos à remuneração pelo uso de redes, em especial aqueles trazidos pelas Resoluções nº 438, de 10 de julho de 2006, e nº 588, de 7 de maio de 2012; (ii) a inclusão de disposições ao SCM, de maneira análoga ao que existe atualmente para o STFC (considerando que ambos os serviços compõem o mercado de varejo de voz fixa, conforme Plano Geral de Metas de Competição - PGMC recentemente aprovado pela Resolução nº 783, de 3 de setembro de 2025).
+ | 
+ 53500.083769/2025-47
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+ Consulta Pública
+ | 
+De fato, o projeto busca modernizar o arcabouço regulatório, promover maior clareza e coerência das regras aplicáveis ao uso de redes e antecipar as adaptações necessárias para o ingresso do SCM em um ambiente regulatório de interconexão e remuneração alinhado às melhores práticas e às dinâmicas atuais do setor.
+Em termos de governança, a iniciativa favorece a racionalidade normativa e a eficiência administrativa: um texto consolidado facilita a compreensão das obrigações, reduz custos de implementação, e fortalece a capacidade de supervisão e acompanhamento pela Anatel. Para o usuário final, os efeitos esperados incluem maior estabilidade nas relações entre agentes, incentivos à cooperação e ao investimento em infraestrutura, e, como consequência, a melhoria da qualidade e da continuidade dos serviços. Em síntese, a proposta está plenamente justificada porque responde a demandas concretas do setor, atualiza o marco regulatório diante de novas funcionalidades do SCM e promove um ambiente de maior segurança jurídica, transparência e coerência regulatória.
+As metas propostas mostram-se desafiadoras mas factíveis, considerando o estado atual do Processo SEI nº 53500.083769/2025-47, motivo pelo qual opto pelo acolhimento da proposta da área técnica em conformidade com o proposto pela SPR.
+II.2.2.2 - Do projeto de criação do Comitê de Implementação de Políticas Públicas (CIPP)
+A criação do Comitê de Implementação de Políticas Públicas (CIPP) decorre do Despacho Ordinatório SEI nº 14831116, de 28 de novembro de 2025, pelo qual o Conselho Diretor determinou que a Superintendência de Planejamento e Regulamentação (SPR) instaurasse, com urgência, processo regulatório destinado a avaliar e estruturar a instituição do Comitê. A determinação incluiu, ainda, a orientação para inserir a iniciativa na Agenda Regulatória 2025‑2026, com o objetivo de garantir o acompanhamento formal do projeto.
+Despacho Ordinatório SEI nº 14831116
+Processo nº 53500.078474/2025-59
+Interessado: Agência Nacional de Telecomunicações
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à proposta de criação de Grupo de Trabalho de Acompanhamento da Implementação de Políticas Públicas - GT-ACIPP e de determinação à área técnica para avaliar proposta de ulterior criação de Comitê de Implementação de Políticas Públicas - CIPP, decidiu, por meio do Circuito Deliberativo nº 295, de 28 de novembro de 2025, tendo por fundamento o Voto nº 112/2025/PR (SEI nº 14754843), determinar à Superintendência de Planejamento e Regulamentação - SPR para que, nos termos regimentais, instrua de forma célere processo de regulamentação voltado à análise quanto à criação do Comitê de Implementação de Políticas Públicas - CIPP, propondo ainda a inclusão de novo item na Agenda Regulatória da Anatel para o biênio 2025-2026, aprovada pela Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, para suportar a iniciativa.
+O CIPP é concebido como um mecanismo permanente de apoio à Anatel na coordenação, implementação e monitoramento de políticas públicas relacionadas ao setor de telecomunicações. Sua criação atende à necessidade de fortalecer a governança institucional da Agência diante do crescente número de iniciativas governamentais que dependem de suporte técnico e regulatório da Anatel. O comitê busca aprimorar a integração entre áreas internas, aumentar a coerência na execução das políticas públicas e assegurar alinhamento estratégico com os objetivos regulatórios setoriais.
+A motivação essencial do projeto reside no reconhecimento, pelo Conselho Diretor, da importância de consolidar uma estrutura que permita planejar, acompanhar e integrar ações públicas complexas, garantindo maior eficiência administrativa, transparência e previsibilidade. A inclusão do projeto na Agenda Regulatória dá suporte formal ao seu desenvolvimento e estabelece um cronograma detalhado para sua implementação.
+De forma consistente com a celeridade requerida pelo Colegiado, todas as etapas do projeto foram previstas para o ano de 2026, conforme descrito na Minuta de Resolução Interna SEI nº 14799078:
+Minuta de Resolução Interna SEI nº 14799078
+TEMA: GESTÃO INTERNA
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 33
+ | 
+ Criação do Comitê de Implementação de Políticas Públicas - CIPP.
+ | 
+ Criação do Comitê de Implementação de Políticas Públicas - CIPP em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI 14831116, de 28 de novembro de 2025.
+ | 
+ 53500.103468/2025-47
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ Consulta Pública
+ | 
+ Aprovação final
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+A medida representa avanço institucional relevante e contribuirá para o fortalecimento da capacidade da Anatel de implementar, acompanhar e avaliar políticas públicas que impactam diretamente o desenvolvimento do setor de telecomunicações e o atendimento ao interesse público.
+II.2.2.3 - Do projeto de criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel (CEMESC)
+O projeto de criação do Centro de Mediação e Soluções Consensuais (CEMESC) foi motivada por determinação expressa do Conselho Diretor, formalizada no Despacho Ordinatório SEI nº 14831137, de 28 de novembro de 2025. A partir dessa orientação, incumbiu-se a Superintendência de Planejamento e Regulamentação (SPR) de desenvolver, de forma célere, o processo regulatório necessário à avaliação e estruturação do novo Comitê, bem como de incluir o tema na Agenda Regulatória 2025–2026.
+Despacho Ordinatório SEI nº 14831137
+Processo nº 53500.097798/2025-96
+Interessado: Agência Nacional de Telecomunicações
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à proposta de estabelecimento de Grupo de Trabalho de Consensualidade - GT-Consensualidade e de determinação à área técnica para avaliar proposta de ulterior criação do Comitê de Consensualidade denominado CEMESC - Centro de Mediação e Soluções Consensuais junto à Anatel, decidiu, por meio do Circuito Deliberativo nº 296, de 28 de novembro de 2025, tendo por fundamento o Voto nº 116/2025/PR (SEI nº 14813840), determinar à Superintendência de Planejamento e Regulamentação - SPR para que, nos termos regimentais, instrua de forma célere processo de regulamentação voltado à análise quanto à criação do Comitê de Consensualidade denominado CEMESC - Centro de Mediação e Soluções Consensuais junto à Anatel, propondo ainda a inclusão de novo item na Agenda Regulatória da Anatel para o biênio 2025-2026, aprovada pela Resolução Interna Anatel nº 399, de 30 de dezembro de 2024, para suportar a iniciativa.
+A proposta surge diante da constatação de que o ambiente regulatório das telecomunicações envolve disputas complexas e recorrentes entre agentes do setor, consumidores e demais partes interessadas. Nesse contexto, o CEMESC é concebido como um espaço institucional dedicado à mediação, conciliação e à construção de soluções consensuais, permitindo que conflitos sejam resolvidos de forma mais rápida e cooperativa, reduzindo a dependência de processos formais e de litígios administrativos ou judiciais.
+Sua criação atende ao interesse de fortalecer práticas de autocomposição no âmbito da Anatel, aprimorar a eficiência da atuação regulatória e promover maior estabilidade nas relações entre regulados e regulador. O Comitê atua como instrumento de apoio à governança, contribuindo para o tratamento mais estruturado e ágil de controvérsias, o que beneficia tanto a Administração quanto os agentes do setor e os próprios usuários dos serviços.
+Em atendimento à urgência estabelecida pelo Colegiado, todas as etapas previstas para o desenvolvimento do projeto foram programadas para ocorrer ao longo do ano de 2026, conforme disposto na Minuta de Resolução Interna SEI nº 14799078.
+Minuta de Resolução Interna SEI nº 14799078
+TEMA: GESTÃO INTERNA
+ SEQ
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ (...)
+ | 
+ 34
+ | 
+ Criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel - CEMESC.
+ | 
+ Criação do Comitê de Consensualidade denominado Centro de Mediação e Soluções Consensuais junto à Anatel - CEMESC em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI 14831137, de 28 de novembro de 2025.
+ | 
+ 53500.103469/2025-91
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ Consulta Pública
+ | 
+ Aprovação final
+ | 
+A criação do CEMESC evidencia a postura moderna da Anatel e seu compromisso com práticas regulatórias pautadas na cooperação. Sua implementação reforçará os canais de diálogo e incentivará soluções consensuais, representando um avanço significativo para a eficiência e a maturidade regulatória da Agência.
+II.2.2.4 - Do projeto de elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz
+O projeto de elaboração do Edital de Licitação para a faixa de 450 MHz tem origem nas deliberações recentes do Conselho Diretor no âmbito do planejamento das futuras outorgas de uso de radiofrequências destinadas ao Serviço Móvel Pessoal (SMP). No item 4 da Agenda Regulatória, associado ao Processo nº 53500.007959/2024-87, o Colegiado aprovou a estratégia da Anatel para realizar novas licitações de faixas de radiofrequência, visando à expansão da infraestrutura móvel e ao atendimento das demandas tecnológicas emergentes.
+A inclusão específica da faixa de 450 MHz no horizonte de licitação de 2026 foi decidida a partir da Análise nº 5/2025/EH (SEI nº 14388822), que indicou a necessidade de avaliar sua destinação em função de seu potencial para cobertura ampliada em regiões menos adensadas. Assim, determinou à SPR que apresente, antes da submissão da matéria para aprovação do Conselho Diretor, o panorama do ecossistema de dispositivos International Mobile Telecommunications - IMT para as faixas de 450 MHz e de 6 GHz. 
+Essa decisão foi formalizada no Acórdão nº 335 (SEI nº 14890623), de 10 de dezembro de 2025, complementado pelo Despacho Ordinatório SEI nº 14891035.
+Em 10 de dezembro de 2025, foi publicada a Resolução Anatel nº 785, de 10 de dezembro de 2025, que aprova o planejamento da Anatel de realização de licitações para autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP. O documento prevê a realização da licitação para autorização de uso de radiofrequências na faixa de 450 MHz até 2026:
+Resolução Anatel nº 785/2025
+Art. 1º Aprovar, na forma da tabela a seguir, o planejamento da Anatel de realização de licitações para autorizações de uso de radiofrequências associadas ao Serviço Móvel Pessoal - SMP:
+ Período de realização da(s) licitação(ões)
+ | 
+ Faixas de radiofrequências candidatas
+ | 
+ até 2026
+ | 
+ 450 MHz
+ | 
+ (...)
+ | 
+ (...)
+ | 
+Por meio do Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243), de 11 de dezembro de 2025, a SPR sugeriu a inclusão de iniciativa regulamentar específica na Agenda Regulatória 2025-2026, nos seguintes termos:
+Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243)
+6. Além do estudo acima, considerando o horizonte de licitação ainda em 2026, é importante prever desde já os itens na Agenda Regulatória 2025-2026 para tanto. Com relação à faixa de 6 GHz já está previsto o item 29 (processo nº 53500.012864/2025-66). De maneira análoga, é importante prever também item específico para a faixa de 450 MHz, motivo pelo qual esta SPR sugere a inclusão do seguinte projeto normativo na proposta anteriormente enviada (minuta de Resolução Interna SEI nº 14799078):
+TEMA: PRESTAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES
+Subtema: Modelo de prestação e ampliação do acesso
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ 35
+ | 
+ Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz.
+ | 
+ Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz, em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI nº 14891035, de 10 de dezembro de 2025, em atendimento à deliberação no Acórdão nº 335, da mesma data (SEI nº 14890623).
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Prioritário
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+ Consulta Pública
+ Aprovação final
+ | 
+Resta comprovada, portanto, a necessidade de inclusão dessa iniciativa regulamentar na forma como proposta pela área técnica.
+II.2.2.5 - Do projeto de reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento com a Súmula nº 28, de 9 de dezembro de 2025 (SEI nº 14885978)
+A Superintendência de Planejamento e Regulamentação comunicou, por meio do Ofício nº 284/2025/PRRE/SPR‑ANATEL (SEI nº 14898243), que o Conselho Diretor, ao analisar o Processo nº 53500.032771/2025-58, discutiu a necessidade de uniformizar o entendimento da Agência quanto à dispensa de licenciamento de estações máquina a máquina (M2M), prevista no § 4º do art. 162 da LGT. O debate culminou na deliberação registrada no Acórdão nº 334 (SEI nº 14885351), de 9 de dezembro de 2025, a partir da qual foi editada a Súmula nº 28 (SEI nº 14885978), consolidando o entendimento da Anatel sobre o tema.
+Súmula Anatel nº 28
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997, e pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997;
+CONSIDERANDO a competência prevista no inciso XXXII do art. 133 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+CONSIDERANDO deliberação tomada em sua Reunião nº 949, de 4 de dezembro de 2025;
+CONSIDERANDO o constante dos autos do processo nº 53500.032771/2025-58;
+RESOLVE:
+Editar a presente Súmula:
+“As estações de telecomunicações que integrem sistemas de comunicação máquina a máquina - M2M, em sua acepção regulatória de Internet das Coisas - IoT, a qual abarca o tráfego de dados de controle e telemetria com ou sem interação humana operacional, ficam excluídas do regime de licenciamento prévio pelo art. 162, § 4º, da Lei nº 9.472/1997, não se submetendo à incidência da Taxa de Fiscalização da Instalação - TFI, da Taxa de Fiscalização do Funcionamento - TFF e da Contribuição para o Fomento da Radiodifusão Pública - CFRP, em razão da inexistência de fato gerador e da ausência de base legal para sua cobrança.”
+Esta Súmula entra em vigor na data de sua publicação.
+Na mesma data, foi expedido o Despacho Ordinatório SEI nº 14886119, que atribuiu à SPR a responsabilidade de adotar as providências necessárias para harmonizar a Súmula com o Regulamento Geral de Licenciamento (RGL). Para viabilizar essa adequação normativa, determinou-se a inclusão de um novo projeto específico na Agenda Regulatória 2025‑2026, aprovada pela Resolução Interna Anatel nº 399/2024. Trata-se, portanto, da ampliação da proposta de revisão da Agenda Regulatória para abarcar essa iniciativa adicional.
+Despacho Ordinatório SEI nº 14886119
+Processo nº 53500.032771/2025-58
+Interessado: Agência Nacional de Telecomunicações - Anatel
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à edição da Súmula nº 28, sobre dispensa de licenciamento de estações máquina a máquina - M2M, em virtude do art. 162, § 4º, da Lei Geral de Telecomunicações - LGT, decidiu, em sua Reunião nº 949, de 4 de dezembro de 2025, tendo por fundamento a Análise nº 15/2025/OP (SEI nº 14442552):
+a. determinar à Superintendência de Planejamento e Regulamentação - SPR a adoção das providências necessárias para que o entendimento sumulado seja harmonizado com os dispositivos correlatos no Regulamento Geral de Licenciamento - RGL, por meio da inclusão de projeto específico na Agenda Regulatória 2025-2026, aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024;
+(...)
+Quanto à definição de prioridade e prazos do novo projeto, a área técnica destacou que, diante de dois fatores recentes — (i) a publicação da Súmula nº 28 e (ii) a prorrogação, pelo Congresso Nacional, dos benefícios tributários aplicáveis às estações M2M e satelitais de pequeno porte até 31 de dezembro de 2030 — a iniciativa pode tramitar com prioridade ordinária, conforme previsto no art. 4º, § 3º, III, da Resolução Interna nº 8/2021. Assim, a proposta pode ser estruturada para início dos trabalhos em 2026, com conclusão planejada para o biênio 2027‑2028, de forma compatível com o novo cenário regulatório e tributário que favorece o desenvolvimento desse segmento.
+A área técnica, então, propôs a inclusão da seguinte iniciativa regulatória:
+Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243)
+9. Foi também expedido o Despacho Ordinatório SEI nº 14886119, também de 9 de dezembro de 2025, determinando a esta SPR a “adoção das providências necessárias para que o entendimento sumulado seja harmonizado com os dispositivos correlatos no Regulamento Geral de Licenciamento - RGL, por meio da inclusão de projeto específico na Agenda Regulatória 2025-2026, aprovada pela Resolução Interna nº 399, de 30 de dezembro de 2024”. Diante dessa determinação, adita-se a proposta anterior de revisão da Agenda Regulatória 2025-2026 para a inclusão de nova iniciativa, nos seguintes termos:
+TEMA: RECURSOS À PRESTAÇÃO
+(...)
+Subtema: Outorga de serviços e licenciamento de estações
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ ...
+ | 
+ 36
+ | 
+ Reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento com a Súmula nº 28, de 9 de dezembro de 2025 (SEI nº 14885978).
+ | 
+ Reavaliação do Regulamento Geral de Licenciamento (RGL), aprovado pela Resolução nº 719, de 10 de fevereiro de 2020, para alinhamento com a Súmula nº 28, de 9 de dezembro de 2025 (SEI nº 14885978), em atendimento à determinação do Conselho Diretor no Despacho Ordinatório SEI nº 14886119 e à deliberação no Acórdão nº 334 (SEI nº 14885351), ambos também de 9 de dezembro de 2025.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+Considerando o teor da Súmula nº 28 (SEI nº 14885978), de 9 de dezembro de 2025, e a determinação expressa no Despacho Ordinatório SEI nº 14886119, justifica-se a inclusão da iniciativa regulamentar proposta.
+II.2.2.6 - Do projeto de reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL)
+Em 5 de dezembro de 2025, a Superintendência de Controle de Obrigações (SCO) encaminhou o Ofício nº 694/2025/COQL/SCO-ANATEL (SEI nº 14850221) para a SPR, solicitando a inclusão de uma nova iniciativa regulamentar na Agenda Regulatória 2025-2026.
+A motivação principal para essa inclusão é a necessidade de revisar o Regulamento de Qualidade dos Serviços de Telecomunicações (RQUAL), aprovado pela Resolução nº 717, de 23 de dezembro de 2019, visando aprimorar aspectos relacionados ao ressarcimento dos consumidores e à padronização de procedimentos entre diferentes prestadoras de serviços.
+A iniciativa propõe:
+a revisão dos dispositivos do RQUAL que tratam do ressarcimento aos consumidores (art. 32 e IV do art. 33), especialmente considerando atualizações normativas recentes (como a atualização do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações, aprovado pela Resolução Anatel nº 765, de 6 de novembro de 2023) e buscando uniformidade entre Prestadoras de Pequeno Porte (PPPs) e demais empresas participantes do RQUAL, para evitar divergências de interpretação e tratamento dos consumidores; e
+criação de um indicador informativo, único e específico, para cada uma das redes de quarta (4G) e quinta (5G) gerações, além da avaliação da possibilidade de bonificação para prestadoras que superem esse indicador, conforme determinação do Conselho Diretor (por meio do Despacho Ordinatório SEI nº 13077211), no contexto da atualização do Documento de Valores de Referência previsto no RQUAL:
+Despacho Ordinatório SEI nº 13077211
+Processo nº 53500.051612/2020-48
+Interessado: Prestadoras de Serviços de Telecomunicações
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à análise da proposta de atualização do Documento de Valores de Referência - DVR, aprovado pela Resolução Interna Anatel nº 132, de 6 de setembro de 2022 (SEI nº 9077475), e previsto no Regulamento de Qualidade dos Serviços de Telecomunicações - RQUAL, aprovado pela Resolução nº 717, de 23 de setembro de 2019, decidiu, por meio do Circuito Deliberativo nº 376, de 24 de dezembro de 2024, tendo por fundamento a Análise nº 153/2024/VA (SEI nº 12776968), determinar à Superintendência de Controle de Obrigações - SCO que, em conjunto com a Superintendência de Planejamento e Regulamentação - SPR:
+a) elaborem a formatação de um indicador informativo, único e específico, para cada uma das redes de quarta e quinta geração; e,
+b) avaliem a possibilidade de conceder bonificação para prestadoras que ultrapassem o indicador especificado na alínea a.
+A iniciativa está classificada como ordinária e tem como tema central a prestação dos serviços de telecomunicações, com foco no subtema qualidade. O prazo previsto para conclusão do relatório de Análise de Impacto Regulatório e da respectiva proposta é o segundo semestre de 2026.
+O alinhamento estratégico da proposta é destacado, pois ela contribui para os quatro objetivos estratégicos da Anatel para o período de 2023 a 2027, incluindo promoção da conectividade com qualidade, estímulo a mercados dinâmicos e sustentáveis, fomento à transformação digital em equilíbrio de mercado e garantia de atuação de excelência com foco em resultados para a sociedade.
+A SPR, por meio do Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243), concordou com a proposta da SCO e a encaminhou a este Gabinete, com a sugestão de inclusão da iniciativa descrita na Agenda Regulatória:
+Ofício nº 284/2025/PRRE/SPR-ANATEL (SEI nº 14898243)
+Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL
+11. Por fim, por meio do Ofício nº 694/2025/COQL/SCO-ANATEL (SEI nº 14850221), foi solicitada a inclusão de iniciativa na Agenda Regulatória 2025-2026 para a revisão do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL, aprovado pela Resolução nº 717, de 23 de dezembro de 2019. O escopo, objetivo e prazo estão dispostos no referido Ofício. Neste sentido, esta SPR, concordando com a sugestão feita pela SCO (na descrição e escopo ali dispostos), adita a proposta de revisão da Agenda Regulatória 2025-2026 para que seja incluída também a seguinte iniciativa:
+TEMA: PRESTAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES
+(...)
+Subtema: Qualidade
+A reavaliação da regulamentação sobre qualidade de serviços de telecomunicações foi concluída na vigência da Agenda Regulatória 2019-2020, por meio da Resolução nº 717, de 23 de dezembro de 2019. Por esse motivo, não foram mapeadas iniciativas regulamentares sobre esse subtema para a Agenda Regulatória 2025-2026.
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 37
+ | 
+ Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL, aprovado pela Resolução nº 717, de 23 de dezembro de 2019.
+ | 
+ Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL, aprovado pela Resolução nº 717, de 23 de dezembro de 2019, com foco nos seguintes pontos: (i) aspectos relacionados ao ressarcimento dos consumidores (art. 32, IV do art. 33 do RQUAL), bem como a associações deles ao IND8 (disponibilidade), em face da atualização normativa oriunda da RGC/2023 e a necessidade de padronização entre PPPs e empresas participantes do RQUAL, de modo a evitar-se interpretações e tratamentos discordantes entre consumidores; e (ii) avaliação quanto à formatação de indicador informativo, único e específico, para cada uma das redes de quarta e de quinta gerações, combinada à avaliação da possibilidade de concessão de bonificação para prestadoras que o ultrapassem, conforme determinação do Despacho Ordinatório do Conselho Diretor (SEI nº 13077211), no âmbito do processo de atualização do Documento de Valores de Referência previsto no RQUAL.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+Diante do conjunto de fundamentos apresentados, conclui-se que a inclusão da iniciativa regulamentar referente à Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL na Agenda Regulatória 2025–2026 é não apenas adequada, mas necessária para assegurar a coerência, a atualidade e a efetividade da política regulatória de qualidade conduzida pela Anatel.
+A solicitação encaminhada pela SCO evidencia que o RQUAL, aprovado em 2019, embora recente em termos normativos, já demanda ajustes estruturais para refletir adequadamente o novo marco de direitos do consumidor introduzido pela Resolução Anatel nº 765/2023, bem como para suprir divergências identificadas no trato do ressarcimento ao consumidor e na uniformização dos procedimentos entre diferentes classes de prestadoras. A atualização desses dispositivos é essencial para evitar tratamentos desiguais, lacunas na interpretação regulatória e desequilíbrios no atendimento ao usuário, o que se mostra incompatível com o estágio atual de maturidade do setor e com os princípios de isonomia e segurança jurídica.
+Além disso, a determinação do Conselho Diretor para avaliar a criação de indicadores específicos de qualidade para redes 4G e 5G, com possibilidade de bonificação regulatória, reforça a necessidade de revisão tempestiva do regulamento, uma vez que tais indicadores impactam diretamente a transparência, o acompanhamento público e os incentivos para melhoria contínua das redes móveis. A iniciativa, portanto, não se limita a um ajuste pontual, mas constitui um aprimoramento estratégico de instrumentos que orientam a competição, a inovação e o padrão de qualidade percebido pelo consumidor.
+A inclusão da reavaliação na Agenda Regulatória também se justifica por seu alinhamento direto aos quatro objetivos estratégicos da Anatel para 2023–2027, em especial aqueles relativos à conectividade com qualidade, estímulo a mercados dinâmicos, promoção da transformação digital e atuação regulatória orientada a resultados. Trata-se de ação que reforça a coerência entre a agenda institucional e os compromissos regulatórios assumidos pela Agência.
+Por fim, destaca-se que a proposta foi analisada e explicitamente apoiada pela SPR, que ratificou a pertinência do escopo definido pela SCO e recomendou sua inclusão formal na Agenda. Tal convergência técnica reforça que a matéria está madura para ingresso imediato no planejamento regulatório, com cronograma compatível e prioridade adequada.
+À vista do exposto, defende-se a inclusão da iniciativa regulamentar relativa à Reavaliação do RQUAL na Agenda Regulatória 2025–2026, como medida essencial para garantir a contínua evolução do marco regulatório de qualidade, fortalecer a proteção aos consumidores e assegurar que a atuação da Agência permaneça aderente às necessidades do setor e da sociedade.
+II.2.2.7 - Do projeto de revisão do Regimento Interno do Conselho Consultivo
+O projeto de revisão do Regimento Interno do Conselho Consultivo da Anatel tem por finalidade atualizar e modernizar as regras que orientam o funcionamento do colegiado, criado para assegurar a participação social no processo regulatório. A iniciativa foi formalmente solicitada pelo próprio Conselho Consultivo, por meio do Ofício nº 62/2025/CC‑ANATEL (SEI nº 14746468, contido no Processo SEI nº 53500.097356/2025-40), que destaca que o regimento vigente, datado de 2001, não reflete mais o atual contexto tecnológico, regulatório e institucional das telecomunicações, o que torna necessária sua revisão para fortalecer a representatividade e a efetividade da atuação do órgão.
+Em análise jurídica preliminar, a PFE-Anatel, por meio do Parecer nº 107/2025/PFE‑Anatel/PGF/AGU (SEI nº 13815930), entendeu que qualquer alteração no regimento deve observar o rito de expedição de atos normativos previsto nos arts. 62 e 63 do Regimento Interno da Anatel (RIA), por considerar que se trata de ato de caráter normativo sujeito às etapas formais típicas desse procedimento.
+Parecer nº 107/2025/PFE‑Anatel/PGF/AGU (SEI nº 13815930)
+3. CONCLUSÃO
+42. Ante ao exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral, vinculada à Advocacia-Geral da União – AGU, manifesta-se quanto às questões propostas no Ofício nº Ofício nº 40/2025/CC-ANATEL
+(13457583), nos seguintes termos:
+* Tendo em vista o arcabouço jurídico normativo acima discorrido, responde-se positivamente sobre a necessidade de ser observado o rito para expedição de atos normativos previsto no art. 62 e 63 do Regimento Interno da Anatel em caso de alteração do Regimento Interno do Conselho Consultivo da Anatel.
+43. Saliente-se, que a orientação promovida por este Órgão Consultivo é quanto ao controle de legalidade da Administração, não implicando, necessariamente, a deliberação, que é prerrogativa do gestor, de modo que, caso este não acate o entendimento jurídico aviado no assessoramento, o registro das posições divergentes permitirá ao gestor cotejar os elementos necessários para a fundamentação de sua posição, consoante art. 50, inciso VII, da Lei nº 9.784, de 1999.
+Em manifestação correlata, no Parecer nº 193/2025/PFE‑Anatel/PGF/AGU (SEI nº 14393738, nos autos do Processo SEI nº 53500.008958/2025-31), a Procuradoria recomenda inclusive que a Agência avalie inserir disposição expressa no RIA sobre a necessária observância do rito dos arts. 62 e 63 quando da aprovação ou alteração do regimento interno do Conselho Consultivo, a fim de eliminar dúvidas procedimentais.
+Parecer nº 193/2025/PFE‑Anatel/PGF/AGU (SEI nº 14393738)
+71. Por oportuno, registra-se que, nos autos nº 53500.021933/2025-22, foi submetida consulta a esta PFE/Anatel a respeito do procedimento a ser adotado para alteração do Regimento Interno do Conselho Consultivo.
+72. Por meio do Parecer nº 74/2024/PFE-Anatel/PGF/AGU (SEI 11627872), esta Procuradoria concluiu que, “Tendo em vista o arcabouço jurídico normativo acima discorrido, responde-se positivamente sobre a necessidade de ser observado o rito para expedição de atos normativos previsto no art. 62 e 63 do Regimento Interno da Anatel em caso de alteração do Regimento Interno do Conselho Consultivo da Anatel.”
+73. Nesse diapasão, considerando a conclusão trazida pelo parecer acima referido, recomenda-se que a Agência avalie se não seria o caso de incluir disposição expressa no RIA sobre a necessária observância do rito para expedição de atos normativos previsto no art. 62 e 63 do Regimento Interno da Anatel em caso de alteração do Regimento Interno do Conselho Consultivo da Anatel.
+No bojo do Processo SEI nº 53500.008958/2025-31, a área técnica, no Informe nº 131/2025/PRRE/SPR (SEI nº 14435047), traz entendimento no sentido de que a aprovação do regimento interno do Conselho Consultivo é competência do Conselho Diretor, mas diverge quanto à necessidade de seguir o rito normativo. Para a SPR, o regimento disciplina apenas matéria interna de organização e funcionamento, não configurando ato normativo no sentido restrito do RIA. Assim, sua aprovação poderia ocorrer por instrumentos internos mais céleres, como Resolução Interna, sem necessidade de AIR ou Consulta Pública. Para tornar expressa a necessidade de aprovação pelo Conselho Diretor, a área técnica propõe, ao fim do referido Informe, a alteração do Regimento Interno da Anatel:
+3.23. Assim, acolhe-se a sugestão da PFE/Anatel, para prever no RIA que a aprovação ou alteração do regimento interno do Conselho Consultivo cabe ao Conselho Diretor, mas não que sua aprovação deva seguir o rito dos atos normativos previsto no RIA, conforme redação abaixo transcrita:
+Art. 45. O Conselho Consultivo, para o exercício de suas competências, terá o seu funcionamento disciplinado por regimento interno próprio., aprovado pelo Conselho Diretor da Anatel.
+3.24. Salienta-se que a redação foca na autoridade decisória para a aprovação do regimento interno da Agência, sem pré-estabelecer o instrumento a ser utilizado, o que, por óbvio, deve considerar aqueles previstos no próprio RIA.
+Diante desses entendimentos, neste processo, a área técnica apresenta duas possibilidades ao Conselho Diretor:
+seguir o entendimento da PFE, o que demandaria incluir o tema na Agenda Regulatória e aplicar integralmente o rito normativo; ou
+adotar a interpretação da área técnica, permitindo que a revisão avance mediante instrumento deliberativo interno mais simples, mantendo apenas a previsão expressa no RIA de que o regimento do Conselho Consultivo deve ser aprovado pelo Conselho Diretor.
+Segundo a área técnica, essa última abordagem procura equilibrar a necessidade de atualização do regimento com a proporcionalidade procedimental, permitindo que o Conselho Diretor escolha o encaminhamento mais adequado à natureza interna da matéria.
+Como se vê, embora haja consenso nos documentos citados acima quanto à competência do Conselho Diretor para aprovar o referido regimento, os entendimentos apresentados pela PFE-Anatel e pela área técnica revelam divergência quanto a natureza da matéria. A SPR entende que a matéria possui natureza estritamente interna, voltada à organização e ao funcionamento de órgão consultivo da Agência, não se caracterizando como ato normativo dirigido ao setor regulado e, portanto, sujeito à necessidade de previsão no principal instrumento de planejamento normativo desta Agência, o que é uma posição defendida pela PFE-Anatel.
+No caso concreto, entendo que a razão assiste à Procuradoria Federal Especializada junto à Anatel.
+O Conselho Consultivo é um órgão de representação institucionalizada da sociedade na Agência, sendo o único colegiado desta Casa além do Conselho Diretor que tem seus membros nomeados pelo Presidente da República e tem sua composição prevista no Regulamento desta Agência (Decreto nº 2.338, de 1997). De fato, essa composição prevê a indicação por parte de um conjunto relevantíssimo de stakeholders: Poder Legislativo, Poder Executivo, Prestadoras de Serviços de Telecomunicações, Consumidores e entidades representativas da sociedade.
+Entendo que essas características permitem que o seu Regimento Interno tenha natureza de norma "de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados", estando, portanto, atrelado ao procedimento normativo previsto no art. 62 e seguintes do Regimento Interno da Anatel, especialmente por, nos termos do Ofício nº 62/2025/CC‑ANATEL (SEI nº 14746468) as alterações regimentais terem por objetivo "contribuir para o fortalecimento da participação social".
+Destaco que este Conselho Diretor já determinou a inclusão da criação de dois outros colegiados (CIPP e CEMESC) na Agenda Regulatória - o que é inclusive operacionalizado na presente análise -, pelo que resta evidente que o procedimento normativo relacionado a Colegiados com participação externa de entidades não é matéria estranha à agenda regulatória. 
+Dessa forma, proponho incluir a iniciativa na Agenda Regulatória da seguinte forma:
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 38
+ | 
+ Revisão do Regimento Interno do Conselho Consultivo
+ | 
+ Revisão do Regimento Interno do Conselho Consultivo visando contribuir para o fortalecimento da participação social e reafirmar o compromisso com os princípios democráticos que fundamentam a existência do referido Colegiado, visando à construção de uma cultura de participação social mais robusta e efetiva.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+ Consulta Pública
+ Aprovação final
+ | 
+Evidentemente, a revisão do Regimento Interno do Conselho Consultivo deve considerar as leis e normas vigentes, especialmente os arts. 33 a 37 da Lei Geral de Telecomunicações e os arts. 36 a 45 do Decreto nº 2.338, de 1997.
+Destaco, ademais, que na 234ª Reunião do Conselho Consultivo foi apresentada a linha de condução esperada para o desenvolvimento dos trabalhos por parte do referido colegiado, apontando que há interesse de condução de um processo participativo, com escuta da sociedade em diversos foros de debates e reuniões sobre o documento por parte do próprio Conselho Consultivo.
+A referida reunião ainda deixa claro que a expectativa do Conselho Consultivo é, ao fim desse processo, exercer a iniciativa do Regimento Interno do Conselho Consultivo, encaminhando a sua proposta ao Conselho Diretor, um procedimento que, apesar de lícito - o Conselho Consultivo pode apresentar propostas a respeito de matérias de competência do Conselho Diretor, nos termos do art. 34, IV, do Regimento Interno da Agência - é raramente utilizado no âmbito desta Agência, que concentra a iniciativa dos processos normativos junto à Superintendência de Planejamento e Regulamentação.
+Dessa forma, entendo que, para além do relevante trabalho de suporte administrativo já desenvolvido pela Secretaria do Conselho Diretor, a Superintendência de Planejamento e Regulamentação, que tem profunda expertise sobre os processos normativos no âmbito desta Agência, deve prestar o apoio técnico necessário ao Conselho Consultivo para a construção da proposta de Regimento Interno antes de sua submissão ao Conselho Diretor da Anatel, objetivando que a condução dos trabalhos ocorra com a celeridade esperada pela sociedade.
+II.2.2.8 - Do projeto de revisão do Regimento Interno do Conselho de Defesa dos Usuários de Serviços de Telecomunicações (CDUST)
+O Comitê de Defesa dos Usuários de Serviços de Telecomunicações (CDUST) tem por objetivo assessorar e subsidiar o Conselho Diretor da Agência em assuntos relacionados à defesa e à proteção dos direitos dos usuários de serviços de telecomunicações. Ele é formado por 16 (dezesseis) membros efetivos, distribuídos entre representantes da Anatel (quatro membros), representantes convidados de instituições públicas e privadas (cinco membros) e representantes de usuários de telecomunicações ou entidades de defesa do consumidor, públicas ou privadas, sem fins lucrativos (sete membros).
+Por meio da Portaria de Pessoal nº 1.370 (SEI nº 14951989), de 19 de dezembro de 2025, o Presidente da Anatel revogou a Portaria nº 1.876 (SEI nº 6387060), de 30 de dezembro de 2020, e designou o Conselheiro Octavio Penna Pieranti para exercer o cargo de Presidente do CDUST.
+Em reunião realizada em fevereiro de 2026, tendo em vista o andamento de trabalhos iniciados ainda na gestão anterior, o Presidente do CDUST procurou este Gabinete para propor a inclusão de nova iniciativa regulatória com o objetivo de revisar o Regimento Interno do CDUST, atualizando suas normas e procedimentos, de forma a modernizar e aprimorar a atuação do Comitê. Sensível às necessidades do Comitê e seus trabalhos já em andamento, o Presidente identificou a necessidade de incluir nova iniciativa na atual Agenda Regulatória.
+A necessidade de aprimoramentos no Regimento Interno do CDUST já tem sido estudada e debatida no âmbito das reuniões do Comitê no ano de 2025. Durante 2ª Reunião Ordinária do Comitê, realizada em 24 de junho de 2025, foram ponderados alguns pontos importantes. Para a elaboração de proposta de revisão do Regimento Interno do Comitê, foi definido um grupo de trabalho composto por quatro membros:
+ATA DA 2ª REUNIÃO ORDINÁRIA/2025 DO CDUST
+4. Aprimoramentos no Regimento Interno do CDUST
+Iniciando o quarto item da pauta, a Sra Irani apresentou o tema e passou a palavra à Sra Isadora Moreira Firmino, que cumprimentou a todos e abriu o debate convidando os membros à oportunidade de aprimoramento do regimento interno do CDUST. Destacou que internamente na SRC já havia um início de debates nesse sentido, à luz das inovações trazidas pelo trabalho remoto, principalmente pós-pandemia, dificuldades em atender o quórum, entre outros. Dessa forma entende oportuno abrir aos membros do CDUST a possibilidade de debate sobre o tema. Sugeriu a indicação de um membro do CDUST para ficar responsável como relator, de forma a receber e coordenar as discussões internas entre os membros. Como sugestões de temas, destacou a flexibilização de reuniões online, transmissões das reuniões, revisão do quórum de instalação e quórum de deliberação, dentre outros. Nesse sentido, sugeriu como data de devolutiva destas discussões, a quarta reunião ordinária do CDUST ao final do ano. O Sr. Pablo Bismack Oliveira Leite questionou se já há alguma proposta da Anatel com relação a reuniões online. A Sra. Isadora respondeu que a discussão está totalmente aberta, para deliberação dos membros, e caso haja alguma concordância nesse sentido, o objetivo e atualizar o regimento para que esteja mais expresso no seu texto. Aproveitando, esclareceu que hoje o regimento preceitua reuniões presenciais, sendo que a ocorrência de reuniões online é bem excepcional, devidamente justificadas. O Sr. Pablo se voluntariou como ponto focal para liderar esta discussão. Para compor este grupo, também se voluntariaram para discutir em conjunto, a Sra. Maria Eliza, o Sr. Moyses Bendahan, e a Sra. Flávia Lira. Dessa forma, ficou acertado a criação de um grupo de trabalho com estes quatro membros, liderado pelo Sr. Pablo. O Sr. Pablo também disponibilizou seu e-mail pessoal para que outros membros que não estejam no grupo de trabalho, mas que queiram contribuir, possam enviar sugestões.
+A proposta de inclusão da revisão do Regimento Interno do CDUST na Agência Regulatória 2025-2026 revela-se absolutamente necessária e tempestiva, alinhada, inclusive, com os trabalhos já em andamento do próprio Comitê, motivo pelo qual estou de acordo com a proposta de nova iniciativa.
+A modernização do Regimento Interno, editado há mais de 10 (dez) anos, permitirá otimizar os fluxos decisórios, fortalecer mecanismos de participação social e aprimorar a atuação do CDUST na promoção, defesa e proteção dos direitos dos consumidores dos serviços de telecomunicações, em consonância com o interesse público e com as diretrizes estabelecidas pela Anatel.
+Assim, proponho a inclusão da seguinte iniciativa regulamentar:
+ SEQ.
+ | 
+ INICIATIVA REGULAMENTAR
+ | 
+ DESCRIÇÃO
+ | 
+ PROCESSO
+ | 
+ ITEM AGENDA 2023-2024
+ | 
+ PRIORIZAÇÃO
+ | 
+ METAS
+ | 
+ 1º/2025
+ | 
+ 2º/2025
+ | 
+ 1º/2026
+ | 
+ 2º/2026
+ | 
+ 39
+ | 
+ Revisão do Regimento Interno Comitê de Defesa dos Usuários de Serviços de Telecomunicações (CDUST)
+ | 
+ Revisão do Regimento Interno do Comitê de Defesa dos Usuários de Serviços de Telecomunicações (CDUST), visando otimizar os fluxos decisórios, fortalecer mecanismos de participação social e aprimorar a atuação do CDUST na promoção, defesa e proteção dos direitos dos usuários dos serviços de telecomunicações.
+ | 
+ A ser instaurado
+ | 
+ -
+ | 
+ Ordinário
+ | 
+ -
+ | 
+ -
+ | 
+ -
+ | 
+ Relatório de AIR e proposta
+ | 
+II.2.3 - Dos ajustes de metas da iniciativa nº 23 em atendimento a determinação do Conselho Diretor
+O Despacho Ordinatório SEI nº 14612247, emitido em 22 de outubro de 2025, estabeleceu que a SPR deveria revisar o cronograma da iniciativa regulamentar nº 23 da Agenda Regulatória 2025‑2026 — que trata da reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita — com o objetivo de assegurar que o andamento do projeto não cause qualquer interrupção no funcionamento dos equipamentos atualmente em operação no ambiente de testes regulatórios (sandbox):
+Despacho Ordinatório SEI nº 14612247
+Processo nº 53557.000127/2023-01
+Interessado: ROHDE E SCHWARZ DO BRASIL LTDA.
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições legais, regulamentares e regimentais, examinando os autos do processo em epígrafe, referente à solicitação de prorrogação do prazo de vigência e da ampliação do escopo do Projeto de ambiente regulatório experimental (sandbox) aprovado pelo Ato nº 15.039, de 21 de outubro de 2024, que permitiu, em caráter excepcional, a utilização do equipamento do tipo emissor-sensor de varredura corporal, operando na faixa de 71 GHz a 76 GHz, para aplicação de segurança, decidiu, por meio do Circuito Deliberativo nº 244, de 22 de outubro de 2025, tendo por fundamento a Análise nº 145/2025/AF (SEI nº 14609887):
+a) determinar às Superintendências de Outorga e Recursos à Prestação - SOR e de Fiscalização - SFI, que:
+a.1) continuem realizando o acompanhamento do projeto-piloto aprovado, com especial atenção ao potencial de interferência em sistemas de telecomunicações em operação, bem como ao potencial de interferência de serviços de telecomunicações licenciados nos escâneres instalados no âmbito deste sandbox;
+a.2) continuem produzindo e mantendo base de dados com todas as informações necessárias para o acompanhamento do projeto; e,
+a.3) reportem-se ao Comitê de Infraestrutura de Telecomunicações - C-INT e ao Comitê de Uso do Espectro e de Órbita - CEO, informando-lhes periodicamente sobre o andamento do projeto-piloto;
+b) determinar à Superintendência de Outorga e Recursos à Prestação - SOR que atualize a página da Anatel referente ao presente sandbox, fornecendo informações claras e de fácil compreensão para a sociedade e potenciais interessados. As informações devem abranger as etapas de execução dos projetos e permitir o acompanhamento de seu progresso; e,
+c) determinar à Superintendência de Planejamento e Regulamentação - SPR que avalie a execução do cronograma do projeto do item 23 na Agenda Regulatória 2025-2026, referente à Reavaliação do Regulamento sobre Equipamentos de Radiocomunicação de Radiação Restrita, para afastar eventuais impactos na continuidade do funcionamento dos equipamentos objeto deste sandbox.
+(destaque acrescido)
+Essa determinação está diretamente relacionada ao Projeto Piloto de Ambiente Regulatório Experimental, constante do Processo SEI nº 53557.000127/2023-01, que autoriza o uso controlado de um equipamento emissor‑sensor de varredura corporal para fins de segurança em ambientes fechados. Esse projeto teve início com o Ato nº 15.039 (SEI nº 12771156), de 21 de outubro de 2024, posteriormente prorrogado por mais 12 meses pelo Ato nº 15.724 (SEI nº 14612302), de 22 de outubro de 2025, estendendo sua vigência até outubro de 2026. Considerando o novo prazo de encerramento do sandbox, tornou‑se imprescindível ajustar os marcos da iniciativa nº 23 para que as discussões normativas avancem sem afetar a continuidade do uso experimental desse tipo de equipamento.
+A análise técnica referente à reavaliação do referido regulamento foi concluída em novembro de 2025, dentro do prazo previsto na Agenda Regulatória, e consta no Processo nº 53500.005821/2025‑24. O respectivo Relatório de Análise de Impacto Regulatório (AIR) identificou, entre outros pontos, que o pedido inicial de certificação na subfaixa de 71 a 76 GHz motivou a criação do ambiente regulatório experimental, permitindo testes em condições distintas daquelas hoje previstas na regulamentação vigente. As medições espectrais conduzidas pela Superintendência de Fiscalização (SFI) demonstraram que os equipamentos em operação, instalados nos aeroportos de Brasília e de São Paulo, não causaram interferências nas faixas monitoradas, reforçando a segurança técnica do uso experimental.
+O relatório também destacou que a alternativa regulatória mais adequada no momento é a denominada Alternativa B, que prevê uma alteração pontual na tabela de restrição do Regulamento de Radiação Restrita apenas para as faixas solicitadas pelos interessados. Essa abordagem foi considerada capaz de equilibrar agilidade regulatória, segurança operacional e estímulo à inovação, preservando a proteção aos serviços críticos sem impor mudanças amplas e imediatas no regulamento.
+A Agenda Regulatória vigente estabelece, atualmente, que a Consulta Pública do item nº 23 deve ser aprovada até o segundo semestre de 2026. Contudo, considerando a necessidade de alinhar o processo regulatório ao cronograma do sandbox, cujo término ocorrerá no mesmo ano, e a determinação expressa no Despacho Ordinatório SEI nº 14612247, a SPR propõe a revisão das metas para:
+aprovação da Consulta Pública até o primeiro semestre de 2026; e
+aprovação final da iniciativa até o segundo semestre de 2026.
+Esses ajustes permitem compatibilizar o andamento regulatório com o ambiente experimental em curso, evitando lacunas normativas e assegurando a continuidade das operações autorizadas durante o sandbox.
+À vista do Despacho Ordinatório SEI nº 14612247, que expressamente determinou à SPR a reavaliação do cronograma da iniciativa nº 23 para evitar impactos na continuidade do sandbox (Processo SEI nº 53557.000127/2023-01), e considerando que o projeto‑piloto foi prorrogado até outubro de 2026, impõe‑se ajustar os marcos regulatórios para que o processo normativo avance em sincronia com a operação experimental. Somam‑se a isso os achados do Relatório de AIR (Processo SEI nº 53500.005821/2025‑24), que registrou ausência de interferências nas medições conduzidas pela SFI e indicou, como solução mais prudente e eficaz, a alteração pontual da tabela de restrição apenas para as faixas solicitadas, equilibrando agilidade regulatória, segurança operacional e estímulo à inovação.
+Assim, o ajuste proposto compatibiliza o rito regulatório com o cronograma do ambiente experimental, previne lacunas normativas, preserva a segurança do espectro e garante o atendimento fiel à determinação colegiada, sem onerar indevidamente os agentes envolvidos e mantendo o estrito compromisso com a eficiência e a proporcionalidade na atuação regulatória.
+Proponho, portanto, o acolhimento da proposta da área técnica neste ponto.
+III - Da Proposta de Encaminhamento
+A presente Análise tem como propósito atualizar a Agenda Regulatória da Anatel para o biênio 2025–2026, ajustando as metas previstas para 2026, incorporando novas iniciativas regulamentares e adequando o planejamento regulatório à execução real dos projetos ao longo de 2025. Ao revisar prazos, prioridades e escopos, a atualização assegura que a Agenda permaneça alinhada ao Plano Estratégico 2023–2027 e às necessidades operacionais da Agência, garantindo coerência entre o planejamento e a evolução das demandas do setor de telecomunicações.
+Os principais motivadores da revisão incluem a execução efetiva das iniciativas em 2025, que exigiu reestimativa de cronogramas; a necessidade de evitar distorções no acompanhamento da performance regulatória; determinações específicas do Conselho Diretor relacionadas a projetos sensíveis, como o sandbox regulatório; e o surgimento de novas demandas regulatórias que passaram a exigir inclusão formal na Agenda. A revisão também responde a diretrizes estabelecidas pela Resolução Interna Anatel nº 8/2021 quanto à atualização contínua da Agenda durante sua vigência.
+Os ajustes promovidos oferecem benefícios relevantes: refinam a previsibilidade regulatória ao adequar metas à realidade da execução dos projetos; ampliam a transparência ao comunicar expectativas realistas para 2026; e contribuem para maior eficiência administrativa ao aprimorar o planejamento das etapas de consulta pública e aprovação final. Entre os ajustes realizados, destacam-se a prorrogação ou retirada de metas em projetos como o RGA, o novo Regimento Interno da Agência e a revisão sobre roaming e compartilhamento de redes, bem como a antecipação de metas de iniciativas cuja execução avançou mais rapidamente, como a reavaliação do Regulamento de Restituição e Compensação das Receitas da Anatel.
+Os projetos incluídos também agregam benefícios estratégicos ao ambiente regulatório. Entre eles, estão a simplificação e consolidação das regras de remuneração pelo uso de redes, a criação de dois comitês internos (CIPP e CEMESC) voltados à governança e à mediação de conflitos, além de novas iniciativas referentes ao planejamento de licitações de espectro, ao alinhamento do RGL à Súmula nº 28, a revisão do Regimento Interno do Conselho Consultivo para assegurar maior participação social e a reavaliação do regulamento de qualidade RQUAL. Essas inclusões fortalecem a governança institucional, aprimoram instrumentos regulatórios centrais e permitem que a Agência acompanhe transformações tecnológicas, demandas concorrenciais e exigências de sustentabilidade e qualidade de serviço no setor.
+A atualização da Agenda Regulatória é, assim, essencial para o ambiente regulatório, pois garante que os esforços da Anatel permaneçam coordenados, transparentes e ajustados às prioridades setoriais. Também reforça a segurança jurídica, otimiza recursos e contribui para a implementação de políticas públicas e ações regulatórias mais eficazes. Para a Agência, a revisão assegura maior capacidade de planejamento e execução, enquanto, para o setor e a sociedade, representa um mecanismo de previsibilidade e confiança na atuação regulatória da Anatel.
+A Minuta de Resolução Interna SEI nº 14799078, submetida pela área técnica à deliberação deste Colegiado, foi revisada à luz das conclusões apresentadas nesta Análise, realizando-se os seguintes ajustes:
+correção de erro de formatação identificado no item 3;
+manutenção da redação original do item 4, com previsão da Aprovação Final para o Segundo Semestre de 2026;
+alteração da referência ao Processo nº 53500.052390/2017-85 para o Processo SEI nº 53500.008958/2025-31 no item 26;
+inclusão da iniciativa regulamentar nº 35 - Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz;
+exclusão da meta de aprovação final para a iniciativa regulamentar nº 29 da Agenda Regulatória 2025-2026;
+inclusão da iniciativa regulamentar nº 36 - Reavaliação do Regulamento Geral de Licenciamento (RGL) para alinhamento com a Súmula nº 28, de 9 de dezembro de 2025 (SEI nº 14885978);
+inclusão da iniciativa regulamentar nº 37 - Reavaliação do Regulamento de Qualidade dos Serviços de Telecomunicações – RQUAL, aprovado pela Resolução nº 717, de 23 de dezembro de 2019;
+inclusão da iniciativa regulamentar nº 38 - Revisão do Regimento Interno do Conselho Consultivo; 
+inclusão da iniciativa regulamentar nº 39 - Revisão do Regimento Interno do Conselho de Defesa dos Usuários de Serviços de Telecomunicações (CDUST)
+alteração das metas das etapas de consulta pública e aprovação final da iniciativa regulamentar nº 23 para o primeiro e o segundo semestre de 2026, respectivamente.
+Assim, foi elaborada a Minuta de Resolução Interna SEI nº 15023503, cuja aprovação ora proponho.
+IV - DOS OBJETIVOS REGULATÓRIOS E BOAS PRÁTICAS
+A atuação da Anatel é crucial para o desenvolvimento do setor de telecomunicações no Brasil, e sua eficácia depende de uma governança robusta e alinhada com princípios estratégicos e regulatórios globais. Nesse contexto, o Plano Estratégico da Anatel serve como um mapa para a Agência, estabelecendo diretrizes e metas claras que orientam suas ações e decisões. Adicionalmente, a Agência deve desenvolver métodos e procedimentos que a ajudem a agir com excelência, o que pode ser incentivado através das boas práticas regulatórias recomendadas pela balizando sua atuação nas melhores práticas regulatórias disponíveis.
+Além disso, é importante reconhecer o papel fundamental que os serviços de telecomunicações desempenham nas mais variadas atividades humanas. Considerando esse efeito transversal, o compromisso da Anatel com os Objetivos de Desenvolvimento Sustentável da ONU é uma extensão natural de seu papel como reguladora de um setor vital para o desenvolvimento do país.
+A seguir, verifica-se como a proposta apresentada neste processo alinha-se aos objetivos do Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, às diretrizes da Estratégia Nacional de Melhoria Regulatória, às boas práticas regulatórias recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira e pela OCDE e, por fim, aos Objetivos de Desenvolvimento Sustentável - ODS.
+IV.1 - Da Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023, e à Estratégia do Decreto nº 12.150, de 20 de agosto de 2024.
+O Decreto nº 11.738, de 18 de outubro de 2023, instituiu o "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG", com o propósito de apoiar a implementação de boas práticas regulatórias e melhorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional.
+Embora o Decreto ainda dependa de uma série de atos subsequentes a serem emitidos pelas pastas mencionadas para sua completa efetivação, é relevante destacar que ele estabelece objetivos substanciais que são suficientes para guiar a atuação dos diversos órgãos que compõem a administração pública federal, incluindo a Anatel:
+Decreto nº 11.738/2023
+"Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias."
+Destaco que a fundamentação apresentada neste processo está alinhada com esses objetivos, especialmente os descritos nos incisos I e II, pois a inclusão de projeto de "Elaboração de Edital de Licitação para autorização de uso de radiofrequências na faixa de 450 MHz" a ser inserido na Agenda Regulatória da Anatel 2025-2026 promove a oferta de serviços de qualidade adequada para a sociedade e a melhoria da conectividade, além de estimular o ambiente concorrencial, o que, ao fim e ao cabo, implica maior universalização dos serviços e a adoção de práticas mais eficientes de gestão do espectro de radiofrequências com o uso de novas tecnologias. Adicionalmente, os ajustes de metas realizados na Agenda Regulatória traduzem o constante acompanhamento das ações da Agência, buscando o desenvolvimento do setor de telecomunicações em prol da sociedade, em alinhamento com os incisos V, VI e VII do art. 3º do referido decreto.
+Mais recentemente, no âmbito do PRO-REG, foi lançada a Estratégia Nacional de Melhoria Regulatória, ou simplesmente Estratégia Regula Melhor, instituída pelo Decreto nº 12.150, de 20 de agosto de 2024. A Estratégia tem por finalidade "estabelecer e difundir boas práticas regulatórias, com foco no cidadão, promovendo a evolução contínua no processo regulatório de forma a assegurar os interesses da sociedade e aprimorar o ambiente de negócios" (MDIC, 2024).
+Por meio da definição de objetivos, ações, indicadores e metas a serem alcançados e atendidos, o objetivo da Estratégia é garantir a eficiência da ação governamental, com medidas que irão ampliar os benefícios para a sociedade com a utilização de menos recursos e, a partir da melhoria regulatória, aumentar a competitividade do Brasil no mercado global, trazendo mais segurança jurídica para os investidores. Para tanto, a iniciativa se apoia em um conjunto de diretrizes para estabelecer um ambiente regulatório mais seguro, previsível e confiável, que promova o bem-estar social e o desenvolvimento do País em bases sustentáveis, inclusivas e íntegras, conforme transcrito abaixo:
+Decreto nº 12.150/2024
+"Art. 3º São diretrizes da Estratégia Regula Melhor:
+I - governo aberto - modelo de governança que promove a colaboração entre o Governo e a sociedade, por meio da transparência, da participação social, da responsabilidade e da responsividade;
+II - atividade regulatória baseada em evidências - a atividade regulatória deve ser baseada em dados e informações confiáveis, a fim de mitigar erros e de gerar o maior benefício possível à sociedade;
+III - eficiência alocativa e efetividade - o tempo e os recursos investidos no processo regulatório devem ser alocados conforme o impacto regulatório estimado e a efetividade das medidas e com foco em soluções que atendam às demandas da sociedade;
+IV - uso de linguagem simples - utilização de linguagem simples, clara e concisa, para que as regulações sejam acessíveis e as partes interessadas possam facilmente compreender seus direitos e suas obrigações;
+V - accountability- responsabilização, integridade, obrigação de prestação de contas e necessidade de justificar as ações que foram ou deixaram de ser praticadas;
+VI - justiça e bem-estar social - consideração dos efeitos da atividade regulatória no bem-estar social, especialmente os efeitos redistributivos, como parte da busca pelo desenvolvimento econômico e sustentável do País;
+VII - incentivo à concorrência - a atividade regulatória deve promover maior concorrência no mercado com vistas à eficiência e à melhor qualidade de produtos e serviços para a sociedade; e
+VIII - inovação - a atividade regulatória deve viabilizar um ambiente propício à inovação, favorável ao desenvolvimento, atrativo aos investimentos e comprometido com o interesse público."
+Apesar dos conceitos trazidos pela Estratégia Nacional de Melhoria Regulatória referirem-se à atuação sistêmica de cada Órgão do Poder Público, o tratamento dispensado no presente processo, mesmo sendo uma ação pontual, demonstra que a Agência busca adotar as melhores práticas regulatórias e orienta suas ações em busca dos resultados mais eficientes para a sociedade e para o desenvolvimento do setor.
+Ressalto que a elaboração da Agenda Regulatória da Anatel, que ora se atualiza, se harmoniza especialmente com as diretrizes I, II, III, V, VI, VII e VIII, pois incentiva a ampla participação social, identifica as iniciativas regulamentares a serem adotadas a partir das evidências disponíveis e visando os resultados mais eficientes, permite o acompanhamento da execução das ações regulatórias planejadas e seleciona as ações prioritárias que promovem o desenvolvimento da disponibilidade e qualidade dos serviços para a população, além de garantir um ambiente propício à concorrência e à inovação.
+Assim, são atendidas as necessidades da sociedade e do mercado regulado, em que são tornadas públicas as principais iniciativas regulamentares voltadas a contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos entes estatais voltados a tal fim.
+IV.2 - Das boas práticas regulatórias recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira - QualiREG é uma iniciativa da Controladoria Geral da União - CGU, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento - PNUD e do Escritório das Nações Unidas de Serviços para Projetos - UNOPS, para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades, além de debates sobre os desafios e oportunidades nessa temática. Na referida obra, em especial no capítulo 2 que trata da Autonomia decisória, a autora Patrícia Pessoa Valente destaca já na introdução do capítulo que:
+"Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. (...)" (CGU, 2024)
+No presente caso, a fundamentação contida na presente Análise contribui para a garantia da segurança jurídica e previsibilidade das ações regulatórias promovidas pela Anatel.
+IV.3 - Das boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico - OCDE
+Nos últimos anos, o Brasil vem envidando esforços na sua candidatura para tornar-se membro da OCDE. Tal organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com entidades da sociedade civil, regulação (incluindo a transição para a economia digital), dentre outros. Isso faz com que esses temas ganhem um tom estratégico que vai além do ordenamento constitucional pátrio. Busca-se não apenas fornecer soluções que melhorem o bem-estar das pessoas, mas igualmente outras que auxiliem as instituições a chegarem a essas soluções de forma eficiente.
+Alinhado a tais recomendações, especificamente em relação ao ambiente regulatório, a OCDE, no âmbito do estudo "Avaliação da OCDE sobre Telecomunicações e Radiodifusão no Brasil 2020" (OCDE, 2020), recomendou que os reguladores adotem uma postura transparente com os diversos stakeholders no setor regulado. Veja-se:
+"a agência reguladora deve adotar procedimentos internos para garantir a transparência; certificar um diálogo aberto com os Poderes Executivo e Legislativo, associações, consumidores, cidadãos e organizações não governamentais (ONGs); fortalecer análises ex post; e assegurar a clareza e transparência das decisões de recursos." (OCDE, 2020)
+A fundamentação ora apresentada encontra-se alinhada com esse direcionamento, uma vez que visa promover a transparência e a eficiência na gestão do espectro pela Anatel, no cumprimento de suas missões institucionais de assegurar o regular fornecimento dos serviços de telecomunicações no país.
+IV.4 - Da relação com os Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU
+As ações aqui elencadas revelam-se, ainda, aderentes à Agenda 2030, que se constitui em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+“Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil”
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável - ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 9 de agosto de 2021, e alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+Identifica-se maior aderência da presente fundamentação aos seguintes objetivos:
+Objetivo nº 8 ("Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todas e todos"), ao proporcionar novas oportunidades socioeconômicas por meio do acesso aos serviços de telecomunicações e contribuir para o desenvolvimento econômico sustentável da região. Verifica-se o alinhamento com os objetivos da Meta 8.4 ("Melhorar progressivamente, até 2030, a eficiência dos recursos globais no consumo e na produção, e empenhar-se para dissociar o crescimento econômico da degradação ambiental, de acordo com o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com os países desenvolvidos assumindo a liderança"), por meio da gestão eficiente do espectro; e
+Objetivo nº 9 ("Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação"): constata-se aderência à Meta 9.c ("Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020"), por meio da disponibilização de espectro necessário para o desenvolvimento de aplicações que exigem maior qualidade de serviço.
+Adicionalmente, o Instituto de Pesquisa Econômica Aplicada - IPEA apresentou metas para o monitoramento da implementação das ODS no Brasil. Verifica-se, do estudo "ODS – Metas Nacionais dos Objetivos de Desenvolvimento Sustentável - Proposta de adequação" (IPEA, 2018), que foram propostas adequações que relacionam as metas globais com as nacionais. Assim, tem-se que o encaminhamento proposto no presente processo contribui com todas as metas nacionais adaptadas referentes às metas globais já mencionadas acima.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo como foco principal o desenvolvimento humano no Brasil e no Mundo. Nesse contexto, o estudo do IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e revisão de políticas públicas e programas nacionais de desenvolvimento, e evidencia como nosso país está empenhado no cumprimento dessas metas.
+Com essa iniciativa, o Brasil se destaca ao dispor de um instrumento orientativo para a territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+aprovar a Agenda Regulatória para o biênio 2025-2026, na forma da Minuta de Resolução Interna SEI nº 15023503;
+determinar à Superintendência de Planejamento e Regulamentação, que preste o apoio técnico necessário ao Conselho Consultivo para a construção da proposta de Regimento Interno daquele Colegiado (Iniciativa Regulamentar nº 38) antes de sua submissão ao Conselho Diretor da Anatel; e,
+determinar que a revisão do Regimento Interno do Conselho Consultivo deve considerar as leis e normas vigentes, especialmente os arts. 33 a 37 da Lei Geral de Telecomunicações e os arts. 36 a 45 do Decreto nº 2.338, de 1997.
+ | Documento assinado eletronicamente por Cristiana Camarate Silveira Martins Leão Quinalia, Conselheira, Substituta, em 13/02/2026, às 16:41, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15175775 e o código CRC CEA78A8B.
+ | 
+Referência: Processo nº 53500.011386/2024-96 | 
+SEI nº 15175775 |

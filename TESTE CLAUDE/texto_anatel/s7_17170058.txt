@@ -1,0 +1,87 @@
+SEI/ANATEL - 15348317 - Análise
+Boletim de Serviço Eletrônico em 09/04/2026
+Análise nº 26/2026/OP
+Processo nº 53500.080059/2017-55
+Interessado: NETSTYLE COMERCIO DE EQUIPAMENTOS DE INFORMATICA LTDA ., Desktop Internet Ltda
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 14525208), interposto por Desktop Internet Ltda., CNPJ nº 09.666.183/0001-53, sucessora por incorporação da Netstyle Comércio de Equipamentos e Informática Ltda., CNPJ nº 05.431.922/0001-77, contra o Despacho Decisório nº 545/2025/CODI/SCO (SEI nº 14229795), que reconheceu a procedência dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e à multa de ofício, relativos ao exercício de 2016.
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. FUST. BASE DE CÁLCULO. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo interposto por Desktop Internet Ltda., sucessora por incorporação, contra o Despacho Decisório nº 545/2025/CODI/SCO, que reconheceu a procedência de créditos tributários de Fust e de multa de ofício, relativos ao exercício de 2016.
+ Fato relevante. A Recorrente alega erro na base de cálculo do Fust, por inclusão de receitas que não decorreriam de prestação de serviço de telecomunicações.
+ As decisões anteriores. O Informe nº 71/2026/CODI/SCO sugeriu o conhecimento e o não provimento do recurso. A Superintendência de Controle de Obrigações conheceu do recurso e encaminhou os autos ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+ A questão em discussão consiste em saber se houve erro na base de cálculo do Fust, em razão da inclusão de receitas contabilizadas como serviços de valor adicionado, quando os documentos fiscais e contratuais indicariam prestação de serviço de telecomunicações.
+III. RAZÕES DE DECIDIR
+ O Processo Administrativo Fiscal transcorreu conforme o Decreto nº 70.235/1972, com observância do devido processo legal e da ampla defesa.
+ O recurso preencheu os requisitos de admissibilidade, com destaque para a tempestividade, nos termos do item 7.1.1 da Portaria Normativa nº 1355/2019.
+ A base de cálculo do Fust decorre de receitas de prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins.
+ A fiscalização concluiu que as receitas lançadas em contas de SCM e de SVA compunham a base de cálculo do Fundo, a partir da análise de notas fiscais e de cláusulas contratuais.
+ Os contratos indicaram características de prestação de SCM, com garantia de banda larga e exigência de contratação de provedor para acesso à internet.
+ A Recorrente não apresentou fato novo ou circunstância relevante capaz de afastar as conclusões da fiscalização.
+ A Recorrente não se desincumbiu do ônus de provar os fatos alegados, nos termos do art. 36 da Lei nº 9.784/1999 e do art. 85 do Regimento Interno da Anatel.
+ As orientações do Ofício nº 124/2025/PR-Anatel não afastaram as conclusões da fiscalização no caso concreto.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: "1. Integram a base de cálculo do Fust as receitas registradas como SCM e como SVA quando a documentação fiscal e contratual indicar que os serviços prestados, na essência, possuem características de serviço de telecomunicações. 2. Cabe ao interessado provar os fatos alegados no recurso administrativo, sob pena de prevalecerem as conclusões dos relatórios de fiscalização. 3. Orientações gerais dirigidas a administrações tributárias estaduais não afastam a conclusão firmada a partir da análise do caso concreto."
+Dispositivos relevantes citados: Decreto nº 70.235/1972; Portaria Anatel nº 642/2013, art. 5º; Portaria Normativa nº 1355/2019, item 7.1.1; Lei nº 9.784/1999, art. 36; Resolução nº 612/2013, art. 85.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 9.998, de 17 de agosto de 2000, que institui o Fundo de Universalização dos Serviços de Telecomunicações (FUST);
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 14525208), interposto por Desktop Internet Ltda., CNPJ nº 09.666.183/0001-53, sucessora por incorporação da Netstyle Comércio de Equipamentos e Informática Ltda., CNPJ nº 05.431.922/0001-77, contra o Despacho Decisório nº 545/2025/CODI/SCO (SEI nº 14229795), que reconheceu a procedência dos créditos tributários referentes ao Fundo de Universalização dos Serviços de Telecomunicações (Fust) e à multa de ofício, relativos ao exercício de 2016.
+Em 08/09/2025, conforme Certidão de Intimação Cumprida (SEI nº 14343067), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 71/2026/CODI/SCO (SEI nº 15102910), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 53/2026/CODI/SCO (SEI nº 15111710), a Superintendente de Controle de Obrigações conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 71/2026 (SEI nº 15111733).
+Fui designado relator da matéria por meio do sorteio realizado em 26/02/2026, nos termos da Certidão de Distribuição SEI nº 15237161.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese, que há erro quanto a base de cálculo do tributo, tendo em vista terem sido consideradas receitas não advindas da prestação de serviço de telecomunicações.
+As receitas que integram a base de cálculo do FUST decorrem de prestação de serviços de telecomunicações nos regimes público e privado, devendo-se excluir o Imposto sobre Operações relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS), o Programa de Integração Social (PIS) e a Contribuição para o Financiamento da Seguridade Social (Cofins).
+Assim, a contribuição para o FUST, que se trata de contribuição de intervenção no domínio econômico, é devida por todo aquele que preste serviço de telecomunicações, compreendendo "1%" de sua receita operacional bruta, com as devidas deduções acima mencionadas.
+A Fiscalização da Anatel se manifestou nos autos acerca da regularidade dos valores identificados como declarados a menor do que aqueles efetivamente devidos.
+Da análise das notas fiscais juntadas ao autos, verificou-se que havia a discriminação de cobrança de dois tipos de serviço distintos, concluindo que os serviços prestados tratavam-se na sua essência de serviços de telecomunicação.
+Tal fato foi corroborado também pela análise dos contratos, em que a fiscalização notou que a empresa garantia a velocidade de acesso (banda larga), que é uma característica da prestação do Serviço de Comunicação Multimídia - SCM, bem como que a prestação do serviço englobava dois serviços de natureza distinta, impondo ao contratante a necessidade de contratar um provedor para acesso à internet, conforme abaixo transcrevemos:
+Relatório de Fiscalização nº 169/2018/GR04 (SEI nº 2641163).
+Além disso, nesse “Termo de Contrato de Provimento de Serviço de Conexão à Internet - PSCI - SVA” encaminhado pela prestadora (SEI nº 2557195), em sua cláusula 8.15 dispõe que: 8.15. O CONTRATANTE reconhece que a velocidade de conexão à internet depende de fatores alheios ao controle da CONTRATADA, a exemplo: (i) da capacidade de processamento do computador do próprio CONTRATANTE; (ii) da velocidade disponível aos demais computadores que integram a rede mundial (internet); (iii) do número de conexões simultâneas; (iv) condições climáticas; (v) dentre outros fatores. Desta forma, a CONTRATADA se compromete exclusivamente a cumprir a garantia de banda fixada na PROPOSTA DE ADESÃO, sendo que, na remota hipótese de descumprimento, total ou parcial desta garantia, terá o CLIENTE exclusivamente direito aos descontos proporcionais ao período de indisponibilidade, nos termos deste contrato.
+Verifica-se que, pela análise da cláusula do contrato, a operadora dispôs sobre a velocidade de acesso à internet (banda larga) por ela fornecida, sendo uma característica da prestação do SCM. Analisando o “Termo do Contrato de Prestação de Serviços de Comunicação Multimídia - SCM”, obtido no sítio eletrônico da prestadora (Anexo 04/FUST-FUNTTEL_2016 - SEI nº 2612375), tem como objeto o disposto na sua cláusula 3.2:
+3.2. A prestação do Serviço de Comunicação Multimídia (SCM) será realizada diretamente pela CONTRATADA, que se encontra devidamente autorizada para ofertar referidos serviços de telecomunicações, conforme autorização expedida pela Agência Nacional de Telecomunicações - ANATEL, nos termos do processo nº 53500.003218/2003, Ato Autorizador nº 42.809, de 27 de Fevereiro de 2004 e TERMO PVST/SPV Nº 027/2004 - ANATEL.
+Esse Contrato de Prestação de SCM estabelece a obrigação de o cliente contratar um provedor de serviço de conexão à Internet (PSCI) em sua cláusula 7.11:
+7.11. O CLIENTE reconhece que os serviços objeto do presente contrato não são suficientes a viabilizar, por si só, o ingresso do CLIENTE na rede mundial de computadores (internet). O CLIENTE reconhece como imprescindível, para esse fim, a contratação de um “Provedor de Serviço Conexão à Internet”, sendo que este deverá atender às condições técnicas da rede da CONTRATADA e ser por ela homologado.
+Como se nota dos trechos acima do contrato de prestação de serviço, a operadora em seu contrato de adesão engloba 02 (dois) serviços para compor a prestação do Serviço de Comunicação Multimídia (SCM), quais sejam: SCM e PSCI - SVA.
+Neste sentido, a partir da análise das claúsulas contratuais acima descritas, foi que os fiscais concluíram que a totalidade das receitas consignadas nas contas “3.1.1.06.0001 - Serviços de Comunicação Multimídia - SCM” e “3.1.1.05.0001 - Serviços de Valor Adicionado - SVA” deveriam compor a base de cálculo do Fundo.
+Em seu recurso, a Interessada não trouxe qualquer fato novo ou circunstância relevante capaz de refutar os achados da Fiscalização.
+Diante dessa situação, prevalece a presunção de legalidade e veracidade dos Relatórios de Fiscalização, pois a empresa não provou suas alegações, não se desincumbindo do seu ônus processual previsto no artigo 36 da Lei nº 9784, 29 de janeiro de 1999.
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+Essa é também a inteligência do art. 85 do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013, conforme abaixo:
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Ressalte-se que para o Fisco não basta declarar que determinadas contas não são serviços de telecomunicações e depois fazer impugnação através de retórica jurídica. Há que se demonstrar tais fatos contabilmente na documentação juntada ao processo. Assim, somente a afirmação não calçada em documentação contábil não é capaz de afastar o entendimento firmado pela fiscalização de que o serviço prestado é serviço de telecomunicações.
+No caso em tela, a fiscalização analisou toda a documentação trazida aos autos, concluindo que, na forma como o serviço era prestado pela empresa, o mesmo tinha característica de serviço de telecomunicação, sobre o qual deveria incidir o FUST, objeto deste processo administrativo fiscal. 
+Os esclarecimentos feitos pelo Presidente da Agência, por meio do Ofício nº 124/2025/PR-Anatel (SEI nº 14413981), que apresenta orientações dirigida às Secretarias de Receita Estaduais, não invalida o que a fiscalização apontou para o caso concreto objeto dos autos, onde se concluiu que a natureza do serviço prestado era telecomunicações.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 09/04/2026, às 17:53, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15348317 e o código CRC 85615D25.
+ | 
+Referência: Processo nº 53500.080059/2017-55 | 
+SEI nº 15348317 |

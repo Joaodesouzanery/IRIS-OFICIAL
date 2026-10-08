@@ -1,0 +1,796 @@
+SEI/ANATEL - 15658051 - Voto
+Boletim de Serviço Eletrônico em 07/10/2026
+Voto nº 65/2026/PR
+Processo nº 53500.007663/2026-28
+Interessado: Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas
+presidente
+CARLOS MANUEL BAIGORRI
+ASSUNTO
+Ratificação, pelo Conselho Diretor da Anatel, do Planejamento Operacional 2026 do Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi).
+EMENTA
+DIREITO ADMINISTRATIVO. GOVERNANÇA INSTITUCIONAL. CENTRO DE ALTOS ESTUDOS EM COMUNICAÇÕES DIGITAIS E INOVAÇÕES TECNOLÓGICAS (CEADI). PLANEJAMENTO OPERACIONAL 2026. ART. 11, § 3º, DO REGIMENTO INTERNO DO CEADI. APROVAÇÃO PELO CONSELHO SUPERIOR DO CEADI. NECESSIDADE DE RATIFICAÇÃO PELO CONSELHO DIRETOR DA ANATEL. CONSOLIDAÇÃO DE EIXOS TEMÁTICOS, INSTRUMENTOS DE EXECUÇÃO, DIRETRIZES DE GOVERNANÇA, CAPACITAÇÃO, ORÇAMENTO E MONITORAMENTO. ADERÊNCIA AO PLANEJAMENTO ESTRATÉGICO DA AGÊNCIA E ÀS TENDÊNCIAS DO ECOSSISTEMA DIGITAL. RATIFICAÇÃO.
+I. Caso em exame
+ Proposta de ratificação, pelo Conselho Diretor, do Planejamento Operacional 2026 do Ceadi, aprovado no âmbito de seu Conselho Superior, nos termos do art. 139-C do Regimento Interno da Anatel e do art. 11, § 3º, do Regimento Interno do Ceadi.
+ O planejamento contempla diretrizes temáticas, instrumentos de execução, mecanismos de governança, monitoramento, gestão de riscos, calendário institucional e previsão orçamentária para o exercício de 2026.
+II. Questão em discussão
+ Verificar a conformidade do Planejamento Operacional 2026 do Ceadi com o Regimento Interno do Centro, com o Planejamento Estratégico da Anatel e com as diretrizes institucionais aplicáveis, para fins de ratificação pelo Conselho Diretor.
+III. Razões de decidir
+ A proposta observa o disposto no art. 11 do Regimento Interno do Ceadi, tendo sido precedida de consultas às áreas internas da Agência e aos membros do Conselho Superior do Centro.
+ O Planejamento Operacional organiza as atividades do Ceadi em blocos temáticos estratégicos relacionados ao ecossistema digital, incluindo inteligência artificial, cibersegurança, conectividade significativa, inovação tecnológica, proteção de dados, infraestrutura digital e regulação.
+ O documento estabelece instrumentos graduais de execução, mecanismos de priorização, acompanhamento e reprogramação, com vistas a conferir maior racionalidade, flexibilidade e efetividade à atuação institucional do Ceadi.
+ O instrumento prevê que a escolha dos instrumentos de execução deverá considerar, entre outros fatores, a capacidade operacional do Ceadi e das áreas envolvidas, e que, para a execução dos tratamentos definidos, serão observadas as competências institucionais pertinentes.
+ A proposta demonstra aderência ao Planejamento Estratégico da Anatel 2023-2027 e às tendências nacionais e internacionais relacionadas às comunicações digitais e às tecnologias emergentes.
+IV. DISPOSITIVO E TESE
+ Proposta ratificada.
+Tese de julgamento: “1. É cabível a ratificação, pelo Conselho Diretor da Anatel, do Planejamento Operacional do Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas – Ceadi, após aprovação pelo respectivo Conselho Superior, nos termos do art. 139-C do Regimento Interno da Anatel e do art. 11, § 3º, do Regimento Interno do Ceadi. 2. É admissível a aprovação de planejamento operacional estruturado em blocos temáticos estratégicos, com previsão de mecanismos de priorização, monitoramento, gestão de riscos, reprogramação e utilização de instrumentos graduais de execução, em alinhamento ao Planejamento Estratégico da Anatel e às tendências do ecossistema digital.”
+Dispositivos relevantes citados: Regimento Interno da Anatel - Resolução nº 612/2013; Regimento Interno do Ceadi - Resolução Interna nº 284/2024; Programa de Alta Formação de Liderança para Mulheres da Anatel - Resolução Interna nº 419/2025.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013.
+Regimento Interno do Ceadi, ratificado pela Resolução Interna da Antel nº 284, de 24 de janeiro de 2024.
+Planejamento Estratégico da Anatel 2023-2027 (disponível em https://www.gov.br/anatel/pt-br/assuntos/noticias/plano-estrategico-da-anatel-2023-2027-e-atualizado).
+Plano de Gestão Tático 2025-2026 da Anatel, aprovado pela Resolução Interna Anatel nº 393, de 13 de dezembro de 2024 e respectivas alterações.
+Informe nº 9/2026/CEADI (SEI nº 15210788).
+Minuta de Resolução Interna (SEI nº 15294825).
+Ofício nº 60/2026/CEADI-ANATEL (SEI nº 15480839).
+Despacho Ordinatório Aprovação CS-Ceadi (SEI nº 15551288).
+Matéria para Apreciação do Conselho Diretor nº 347/2026 (SEI nº 15551196).
+RELATÓRIO
+DOS FATOS
+Trata-se de proposta de ratificação, por este Conselho Diretor, do Planejamento Operacional 2026 do Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi), aprovado no âmbito de seu Conselho Superior (CS-Ceadi), nos termos do art. 11, § 3º, do Regimento Interno do Ceadi, aprovado pela Resolução Interna da Anatel nº 284, de 24 de janeiro de 2024.
+Conforme consignado no Informe nº 9/2026/CEADI (SEI nº 15210788), a proposta de Planejamento Operacional foi estruturada a partir de levantamento de temas junto às áreas internas da Agência e aos membros do CS-Ceadi, considerando, ainda, estudos já desenvolvidos no âmbito da Anatel, Termos de Execução Descentralizada (TEDs), white papers institucionais e avaliações externas de tendências relacionadas ao ecossistema digital.
+Segundo assinalado no citado Informe, a matéria foi apresentada na 1ª Reunião Ordinária do CS-Ceadi, realizada em 11 de fevereiro de 2026, conforme Registro de Reunião (SEI nº 15196879), ocasião em que foram aprovados o orçamento e o calendário institucional propostos para o exercício de 2026, além de terem sido debatidos os agrupamentos temáticos, os tratamentos propostos e as ações de capacitação.
+A proposta consolidada contempla, entre outros aspectos, diretrizes de priorização, mecanismos de monitoramento, gestão de riscos, possibilidade de reprogramação justificada e definição de entregas institucionais mínimas por bloco temático priorizado.
+O Planejamento Operacional 2026 organiza as atividades do Ceadi em dez blocos temáticos estratégicos, abrangendo, entre outros temas, Cibersegurança, Inteligência Artificial, Proteção de Dados, Inovação Tecnológica, Conectividade Significativa, Gestão do Espectro, Regulação e Competição.
+Consta, ainda, previsão de utilização de múltiplos instrumentos de execução, como TEDs, Acordos de Cooperação Técnica, capacitações, eventos, mecanismos de fomento e intercâmbio acadêmico, observada lógica incremental de maturidade e viabilidade institucional das ações.
+No que diz respeito ao orçamento, registra-se que este Conselho Diretor aprovou para o Ceadi, no exercício de 2026, montante de R$ 6.502.000,00 (seis milhões, quinhentos e dois mil reais), com destaque para ações de estudos e pesquisas e capacitação internacional.
+Após o regular encaminhamento da proposta aos Conselheiros do CS-Ceadi, por meio do Sistema Eletrônico de Informações (SEI) e, quanto aos representantes externos, por correspondência eletrônica, na forma do art. 8º, §§ 2º e 3º, do Regimento Interno do Ceadi, as manifestações recebidas no prazo concedido foram favoráveis à aprovação da proposta.
+Nesse sentido, o Presidente do Conselho Superior do Ceadi expediu o Despacho Ordinatório (SEI nº 15551288), consignando a aprovação desse Colegiado quanto à proposta de Planejamento Operacional de 2026 do Ceadi, consubstanciada na Minuta de Resolução Interna (SEI nº 15294825), bem como a necessidade de encaminhamento dos autos para ratificação do Conselho Diretor da Agência, nos termos do art. 8º, §§ 2º e 3º, e do art. 11, § 3º, do Regimento Interno próprio.
+Ante o exposto, em ato subsequente, os autos foram encaminhados a este Gabinete, por meio Matéria para Apreciação do Conselho Diretor nº 347/2026 (SEI nº 15551196), para ratificação do Planejamento Operacional de 2026 do Ceadi, como condição para sua eficácia, nos termos do art. 139-C do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013 (RIA).
+Eis os fatos.
+DAS CONSIDERAÇÕES POR PARTE DESTE PRESIDENTE
+Cabe salientar que o planejamento operacional das unidades da Anatel deve, essencialmente, observar o cumprimento do que dispõe o RIA, nos moldes a seguir destacados, seja na fase de elaboração (art. 131 do RIA) e de consolidação - fase em que se avalia a consistência com o Plano Estratégico da Agência (art. 176, inciso III, do RIA), seja nas etapas de aprovação e de acompanhamento da execução (arts. 133, inciso XXIV, e 136, inciso V, do RIA):
+Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013:
+Art. 131. A Agência deverá planejar e gerir sua atuação segundo modelo de planejamento e gestão nos níveis estratégico e operacional.
+§ 1º Entende-se como nível estratégico os objetivos a serem apresentados à sociedade voltados para o cumprimento da missão institucional da Agência, bem como a definição de instrumentos de programação plurianual e de acompanhamento e avaliação.
+§ 2º Entende-se como nível operacional a elaboração e execução do plano de ação anual, de acordo com os instrumentos definidos pela Agência.
+(...)
+Art. 133. São competências do Conselho Diretor, sem prejuízo de outras previstas na Lei nº 9.472/1997, no Regulamento da Agência e na legislação aplicável:
+(...)
+XXIV - aprovar o Plano Operacional da Agência, que consolida o Plano Anual de Atividades de cada órgão da Agência;
+(...)
+Art. 136. É competência do Presidente da Agência:
+(...)
+V - fazer cumprir o Plano Operacional da Agência, submetendo à apreciação do Conselho Diretor relatório de acompanhamento de sua execução;
+Art. 176. A Gerência de Planejamento Estratégico tem, em sua área de atuação, as seguintes competências dentre as atribuídas à Superintendência de Planejamento e Regulamentação:
+(...)
+III - consolidar os Planos Anuais de Atividades elaborados pelos órgãos da Agência no Plano Operacional da Agência, avaliando a consistência com o Plano Estratégico da Agência;
+(Grifos meus)
+Ressalta-se que o Ceadi constitui unidade específica na estrutura organizacional da Agência, com orçamento próprio e atribuições orientadas pelo Plano Estratético e pelo Plano de Gestão Tático da Anatel, nos termos do Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013 (RIA), no art. 32, inciso V, nos arts. 139-A a 139-C:
+Regimento Interno da Anatel, aprovado pela Resolução nº 612/2013 (RIA):
+Art. 132. A Agência tem a seguinte estrutura organizacional:
+(...)
+V - Centro de Altos Estudos em Telecomunicações; (Redação dada pela Resolução nº 691, de 22 de fevereiro de 2018)
+(...)
+Art. 139-A. O Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi) deve buscar a imersão técnica e científica da Anatel nas discussões relacionadas ao setor de telecomunicações perante as comunidades brasileira e internacional, competindo-lhe desenvolver a política de incentivo à pesquisa aplicada, aos estudos e aos eventos de caráter técnico-científico nas áreas relacionadas com a missão institucional da Anatel, inclusive no que se refere a capacitações, sem prejuízo das atribuições de outros órgãos da Agência para atividades assemelhadas. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 1º O Ceadi é dotado de orçamento próprio. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 2º No desenvolvimento de suas atribuições, o Ceadi observará as competências dos demais órgãos da Anatel e as orientações do Plano Estratégico e do Plano de Gestão Tático da Anatel. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 3º O Ceadi deverá editar e publicar conteúdos produzidos como resultado de suas atividades, inclusive a Revista da Agência. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 4º O Ceadi terá um Presidente e um Vice-Presidente, escolhidos entre os membros do Conselho Diretor da Anatel, e um Conselho Superior. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 5º A Assessoria Técnica da Anatel (ATC) atuará como Secretaria Executiva do Ceadi, com as atribuições de assessorar e apoiar o Ceadi na execução de suas atividades. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+Art. 139-B. O Conselho Superior do Ceadi tem as atribuições de assessorar, debater e deliberar acerca das questões de competência do Ceadi. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023)
+§ 1º O Conselho Superior do Ceadi é composto: (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+I - pelo Presidente do Ceadi; (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+II - pelo Vice-Presidente do Ceadi; (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+III - por 5 (cinco) representantes da Anatel, escolhidos entre os Superintendentes e Chefes de Assessoria; e, (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+IV - por 8 (oito) representantes da sociedade civil e da comunidade acadêmica. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 2º Os membros do Conselho Superior do Ceadi serão escolhidos pelo Conselho Diretor da Anatel. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+§ 3º O Conselho Superior do Ceadi é representado pelo Presidente do Ceadi e pelo Vice-Presidente do Ceadi. (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+Art. 139-C. O Regimento Interno do Ceadi será aprovado pelo Conselho Superior do Ceadi, devendo ser ratificado pelo Conselho Diretor da Anatel como condição para sua eficácia." (Redação dada pela Resolução nº 764, de 08 de agosto de 2023 )
+(Grifos meus)
+Em 24 de janeiro de 2024, o Conselho Diretor da Anatel ratificou, por meio da Resolução Interna da Antel nº 284/2024, o Regimento Interno do Ceadi, aprovado pelo respectivo Conselho Superior (CS-CEADI). Sobre o planejamento operacional desse Centro de Altos Estudos, o art. 11 do Regimento Interno próprio assim dispôs:
+Regimento Interno do Ceadi, ratificado pela Resolução Interna da Antel nº 284/2024:
+Art. 11. As avidades do Ceadi devem ser desenvolvidas de acordo com seu planejamento operacional.
+§ 1º O planejamento deve ser elaborado em consonância com os seguintes dispositivos:
+I - Regras da Anatel para elaboração de planejamento;
+II - Planejamento estratégico da Agência; e
+III - Avidades de escopo internacional das quais a Anatel participe, incluindo as atividades das Comissões Brasileiras de Comunicações.
+§ 2º A elaboração do planejamento deverá incluir, sempre que possível, consultas às áreas da Anatel e à sociedade civil organizada, bem como a instituições nacionais ou internacionais de relevância.
+§ 3º A proposta de planejamento do Ceadi deve ser aprovada pelo Conselho Superior do Ceadi e ratificada pelo Conselho Diretor da Anatel.
+Em linha com os citados normativos, a Secretaria Executiva do Ceadi, exercida pela Assessoria Técnica da Anatel (ATC), conforme o art. 139-A, § 5º, do RIA, relata a realização de consulta às áreas da Agência e posterior reunião do CS-Ceadi, para levantamento de temas e apresentação da respectiva proposta de Planejamento Operacional de 2026, conforme expõe:
+Informe nº 9/2026/CEADI (SEI nº15210788):
+II - Do levantamento de temas
+3.8. Como primeiro passo para a elaboração do Planejamento Operacional do Ceadi de 2026, foram solicitados temas de interesse aos membros do CS-Ceadi e às áreas internas da Anatel através de Ofícios expedidos nos autos do presente Processo. Em tais ofícios foram mencionadas atividades que são atualmente objeto de estudos do Centro, bem como os temas de interesse levantados durante a 2ª Reunião Ordinária do CS-Ceadi, ocorrida em 9 de dezembro de 2025.
+3.9. Em respostas, foram recebidos ofícios com manifestações das áreas internas da Anatel e dos membros do Conselho Superior do Ceadi com propostas de temas, conforme tabela acostada ao SEI nº 15153435:
+3.10. Face à diversidade de temas propostos e dadas as semelhanças observadas entre eles, foi feito agrupamento, para melhor visualização e definição daqueles que serão objetos de avaliação mais detalhada no presente planejamento. O resultado é apresentado na tabela a seguir:
+ Agrupamento por assunto
+ | 
+ Temas propostos
+ | 
+ Área
+ | 
+ Tratamento de dados e eficiência energética
+ | 
+ Data centers e cloud computing;
+ | 
+ CS-CEADI
+ | 
+ Edge computing e eficiência energética;
+ | 
+ CS-CEADI
+ | 
+ Data centers e cloud computing.
+ | 
+ SCO
+ | 
+ Cibersegurança
+ | 
+ Segurança cibernética e combate a fraudes;
+ | 
+ CS-CEADI
+ | 
+ Combate a fraudes e enforcement com órgãos de segurança pública;
+ | 
+ CS-CEADI
+ | 
+ Segurança cibernética e combate a fraudes;
+ | 
+ SCO
+ | 
+ Combate a fraudes;
+ | 
+ AUD
+ | 
+ Segurança cibernética.
+ | 
+ AUD
+ | 
+ Frameworks Internacionais: ISO/IEC 27001, NIST Cybersecurity Framework e ITU-T X.1500;
+ | 
+ SGI
+ | 
+ Avaliação de Vulnerabilidades e Pentest
+ | 
+ SGI
+ | 
+ Proteção de dados e privacidade
+ | 
+ Privacidade e proteção de dados;
+ | 
+ CS-CEADI
+ | 
+ Privacy Enhanced Technologies, Privacy and Security by design;
+ | 
+ CS-CEADI
+ | 
+ Interface entre concorrência e proteção de dados;
+ | 
+ CS-CEADI
+ | 
+ Privacy Enhancing Technology (PET); Privacy by Design, Privacy by Default; Security by Design, Security by Default;
+ | 
+ ARU
+ | 
+ Impacto do uso de IA na privacidade;
+ | 
+ ARU
+ | 
+ Proteção de Dados e Privacidade.
+ | 
+ SGI
+ | 
+ Inovação tecnológica
+ | 
+ Inovação tecnológica;
+ | 
+ CS-CEADI
+ | 
+ Computação e comunicação quântica;
+ | 
+ CS-CEADI
+ | 
+ Inovação como fator de competitividade;
+ | 
+ SCP
+ | 
+ Computação e comunicação quântica;
+ | 
+ SCO
+ | 
+ Tecnologias emergentes para a regulação 5G/6G, comunicações ópticas, data centers, big data, computação em nuvem e de borda;
+ | 
+ EH
+ | 
+ Inovação tecnológica.
+ | 
+ OP
+ | 
+ Aspectos relacionados a IA
+ | 
+ Inteligência artificial;
+ | 
+ CS-CEADI
+ | 
+ Capacitação em inteligência para operações complexas;
+ | 
+ CS-CEADI
+ | 
+ Aplicação de IA para uso do espectro de forma oportunística;
+ | 
+ CS-CEADI
+ | 
+ Inteligência artificial;
+ | 
+ SCO
+ | 
+ Inteligência Artificial;
+ | 
+ AUD
+ | 
+ Agentes IA;
+ | 
+ EH
+ | 
+ Programação em IA aplicada;
+ | 
+ EH
+ | 
+ Projeto de Lei de IA e seu uso em ambiente escolar/universitário (CNE).
+ | 
+ OR
+ | 
+ Tributo e arrecadação
+ | 
+ Questões tributárias (impactos da reforma tributária);
+ | 
+ CS-CEADI
+ | 
+ Análises Estatísticas e Indicadores de Arrecadação (traçado de perfil dívida/devedores).
+ | 
+ SAF
+ | 
+ Gestão Espectro e Infraestrutura
+ | 
+ Atividades espaciais;
+ | 
+ CS-CEADI
+ | 
+ TV White Space e uso oportunístico do espectro;
+ | 
+ CS-CEADI
+ | 
+ Cabos submarinos (mapeamento infraestrutura);
+ | 
+ SCO
+ | 
+ Regulação de postes e direito ambiental.
+ | 
+ OR
+ | 
+ Conectividade Significativa
+ | 
+ Conectividade e inclusão digital;
+ | 
+ CS-CEADI
+ | 
+ Conectividade e inclusão digital;
+ | 
+ SCO
+ | 
+ Conectividade e inclusão digital – serviços essenciais;
+ | 
+ OV
+ | 
+ Telecomunicações como infraestrutura habilitadora do ecossistema digital.
+ | 
+ SCP
+ | 
+ Regulação
+ | 
+ Sandbox Regulatório;
+ | 
+ SPR
+ | 
+ Sandbox Regulatório em IA;
+ | 
+ OV
+ | 
+ Aspectos políticos e administrativos da governança das tecnologias emergentes no Brasil;
+ | 
+ OP
+ | 
+ Geoprocessamento e análise intersetorial para orientação de políticas públicas e
+ | 
+ EH
+ | 
+ | 
+ análise qualitativa e quantitativa para orientação de políticas públicas de telecomunicações através de indicadores socioeconômicos e de infraestrutura;
+ | 
+ Competição
+ | 
+ Dinâmica concorrencial entre prestadoras tradicionais e big techs;
+ | 
+ SCP
+ | 
+ Impactos concorrenciais das Operadoras Móveis Virtuais (MVNOs) e dos provedores regionais;
+ | 
+ SCP
+ | 
+ A regulação ex ante e ex post: vantagens e desvantagens no contexto da competição no setor de telecomunicações;
+ | 
+ SCP
+ | 
+ Modelos de arranjos de exploração industrial;
+ | 
+ SCP
+ | 
+ Geoprocessamento e análise intersetorial para orientação de políticas públicas e
+ | 
+ EH
+ | 
+ | 
+ análise qualitativa e quantitativa para orientação de políticas públicas de telecomunicações através de indicadores socioeconômicos e de infraestrutura;
+ | 
+Inobstante alguns temas acima propostos não tenham se originado das áreas regimentalmente competentes, pondero que a Minuta de Resolução Interna (SEI nº 15294825) cuida, adequadamente, de estabelecer que a escolha dos instrumentos de execução deverá considerar, entre outros fatores, “a capacidade operacional do Ceadi e das áreas envolvidas” (item 2.5, inciso IV). Além disso, prevê que o Ceadi, em conjunto com as áreas proponentes, adotará as providências necessárias à execução dos tratamentos definidos, “observadas as competências institucionais pertinentes” (item 3.6). Tais previsões conferem salvaguardas adequadas para que a implementação das ações observe a necessária articulação com as áreas técnicas competentes. Acrescenta-se a essas ressalvas a necessidade de oitiva dos Comitês existentes na Agência sobre inciativas do Ceadi relacionadas aos temas a eles pertinentes.
+O Ceadi informa, ainda, que, com vistas à avaliação dos temas agrupados e sua correlação com as atividades de pesquisas em andamento na Anatel, realizou levantamento dos Termos de Execução Descentralizada (TEDs) firmados desde 2020, os quais foram consolidados na Lista TEDs celebrados (SEI nº 15153605):
+Lista TEDs celebrados (SEI nº 15153605):
+ Número do processo
+ | 
+ Número do TED
+ | 
+ Instituição
+ | 
+ Período
+ | 
+ Objetivo
+ | 
+ 53500.103127/2025-71
+ | 
+ .6/2025
+ | 
+ SETEL/MCom - OCDE
+ | 
+ de 19/12/2025 a 19/05/2027
+ | 
+ Revisão/atualização do estudo sobre conectividade no Brasil
+ | 
+ 53542.010832/2022-97
+ | 
+ .2/2022
+ | 
+ UFG
+ | 
+ de 13/12/2022 a 13/12/2024
+ | 
+ Pesquisa sobre arcabouço tecnológico da Web 3.0
+ | 
+ 53500.095504/2025-91
+ | 
+ .5/2025
+ | 
+ UNB
+ | 
+ de 02/12/2025 a 02/08/2030
+ | 
+ Modernização normativa das telecomunicações
+ | 
+ 53500.071567/2025-52
+ | 
+ .4/2025
+ | 
+ UNB
+ | 
+ de 27/11/2025 a 27/05/2027
+ | 
+ Curso de formação de lideranças regulatórias
+ | 
+ 53500.089752/2024-12
+ | 
+ .3/2025
+ | 
+ UNB
+ | 
+ de 27/11/2025 a 27/11/2027
+ | 
+ Pesquisa em tecnologias de redes de satélites
+ | 
+ 53500.074297/2025-31
+ | 
+ .2/2025
+ | 
+ UFMA
+ | 
+ de 24/11/2025 a 24/05/2027
+ | 
+ Projeto de inclusão digital para comunidades tradicionais
+ | 
+ 53500.009810/2025-13
+ | 
+ .1/2025
+ | 
+ UNB
+ | 
+ de 02/12/2025 a 02/12/2026
+ | 
+ Aplicar Design de Serviços na transformação digital da Anatel
+ | 
+ 53500.095645/2024-23
+ | 
+ .6/2024
+ | 
+ UFCG
+ | 
+ de 16/01/2025 a 16/09/2026
+ | 
+ IA em processos sancionadores
+ | 
+ 53500.060216/2024-35
+ | 
+ .4/2024
+ | 
+ UFRJ
+ | 
+ de 06/12/2024 a 06/06/2027
+ | 
+ IA para gestão eficiente do espectro
+ | 
+ 53500.112653/2023-61
+ | 
+ .3/2024
+ | 
+ INMETRO
+ | 
+ de 06/11/2024 a 06/02/2026
+ | 
+ Desenvolver sistema de gestão de medição
+ | 
+ 53500.037825/2024-91
+ | 
+ .1/2024
+ | 
+ UFSC
+ | 
+ de 20/09/2024 a 20/03/2026
+ | 
+ Implementar Programa ANATEL-S sobre sustentabilidade
+ | 
+ 53500.081323/2023-16
+ | 
+ .4/2023
+ | 
+ UNB
+ | 
+ de 12/12/2023 a 12/06/2026
+ | 
+ Pesquisa em redes de Telecom e laboratório 6G
+ | 
+ 53500.089170/2023-55
+ | 
+ .3/2023
+ | 
+ ITA
+ | 
+ de 21/12/2023 a 21/06/2026
+ | 
+ IA aplicada a ambientes de Telecom
+ | 
+ 53500.099070/2023-37
+ | 
+ .2/2023
+ | 
+ UFSC
+ | 
+ de 30/11/2023 a 30/05/2026
+ | 
+ Aprimorar metodologia de precificação do espectro
+ | 
+ 53500.068097/2023-88
+ | 
+ .1/2023
+ | 
+ UNB
+ | 
+ de 03/10/2023 a 03/10/2024
+ | 
+ Curso de extensão para reguladores CPLP
+ | 
+ 53500.298766/2022-63
+ | 
+ .1/2022
+ | 
+ UNB
+ | 
+ de 17/10/2022 a 17/04/2025
+ | 
+ Pesquisa sobre desafios regulatórios do ecossistema digital
+ | 
+ 53500.054870/2020-86
+ | 
+ .7653844/2021
+ | 
+ UNB
+ | 
+ de 11/11/2021 a 11/11/2023
+ | 
+ Pesquisa sobre Open RAN
+ | 
+ 53500.029611/2021-06
+ | 
+ .7755919/2021
+ | 
+ UFCG
+ | 
+ de 06/12/2021 a 06/08/2023
+ | 
+ Segurança cibernética em redes 5G
+ | 
+Além dos TEDs acima relacionados, o Centro de Altos Estudos assinala que foram publicados os seguintes White Papers pela Anatel voltados a temas relevantes para o setor de comunicações digitais:
+Informe nº 9/2026/CEADI (SEI nº 15210788):
+3.12. (...)
+ Título
+ | 
+ Data
+ | 
+ Local
+ | 
+ Agenda 2030 e as telecomunicações
+ | 
+ 12/02/2025
+ | 
+ https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica/estudos-e-pesquisas
+ | 
+ Combate à Pirataria
+ | 
+ 04/11/2025
+ | 
+ https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-lanca-white-paper-e-reforca-compromisso-com-a-seguranca-dos-usuarios
+ | 
+ Data centers
+ | 
+ 13/10/2025
+ | 
+ https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-lanca-white-paper-sobre-o-papel-estrategico-dos-data-centers-no-ecossistema-digital-brasileirocanops
+ | 
+ Cibersegurança & Regulação
+ | 
+ 26/04/2024
+ | 
+ https://www.gov.br/anatel/pt-br/assuntos/seguranca-cibernetica/estudos-e-pesquisas
+ | 
+A partir da consolidação dos temas propostos com os TEDs já celebrados (SEI nº 15153605), os White Papers publicados pela Agência e o levantamento temático constante da Proposta Temas (SEI nº 15153435), verificou-se que diversos assuntos já vêm sendo acompanhados pelo Ceadi ou tratados em estudos recentes da Anatel. Ainda assim, a constante evolução das tecnologias digitais evidencia a necessidade de atualização contínua do conhecimento institucional e de estímulo permanente à pesquisa aplicada.
+Nesse contexto, o Ceadi avaliou diferentes mecanismos para fortalecimento da interação com a comunidade acadêmica e para desenvolvimento de estudos estratégicos, incluindo eventos técnicos, capacitações, programas de intercâmbio, premiações, parcerias institucionais, mecanismos de fomento e chamamentos públicos. A proposta adotou abordagem gradual de implementação, priorizando inicialmente instrumentos menos complexos e avançando, conforme a maturidade dos temas, para iniciativas mais estruturadas, diretriz incorporada à Minuta de Resolução Interna (SEI nº 15294825).
+As propostas foram submetidas ao CS-Ceadi na 1ª Reunião Ordinária de 2026, conforme Registro de Reunião (SEI nº 15196879), ocasião em que foram acolhidos ajustes relacionados ao reposicionamento de temas entre os blocos temáticos, à inclusão de capacitações em segurança da informação e à previsão de TED voltado à identificação de infraestruturas críticas. A partir dessas contribuições, foi consolidada a proposta de tratamento dos temas do Planejamento Operacional 2026 do Ceadi:
+Informe nº 9/2026/CEADI (SEI nº 15210788):
+3.17. (...)
+ Agrupamento por assunto
+ | 
+ Análise de temas tratados nos TEDs
+ | 
+ Proposta de tratamento
+ | 
+ Eficiência energética
+ | 
+ Eficiência energética são citados isoladamente em alguns TEDs. Além disso, foi elaborado um White paper recente sobre o tema.
+ | 
+ Realização de Eventos
+ | 
+ Cibersegurança
+ | 
+ Tema tratado por diversos TEDs e objeto de white paper publicado em 2024. Entretanto, tendo em vista a importância crescente do tema para a Agência e sua rápida evolução, propõe um programa integrado de capacitação para os servidores, incluindo computação quântica. Além disso, será proposta a realização de estudos para identificação das infraestruturas críticas existentes.
+ | 
+ TED e Capacitação de servidores
+ | 
+ Proteção de dados, segurança da informação e privacidade
+ | 
+ Tema privacidade é mencionado em alguns TEDs, mas proteção de dados menos. Há oportunidades de diferentes abordagens com temas levantados. Cabe destacar, contudo, que atualmente a competência da Anatel é residual em relação a esse tema.
+ | 
+ Realização de Eventos e capacitações
+ | 
+ Inovação tecnológica
+ | 
+ Tema tratado por diferentes TEDs, entretanto há espaço para desenvolvimento de temas relacionados, tais como a correlação entre inovação com competição.
+ | 
+ Capacitação de servidores e Premiação - Mérito Rondon
+ | 
+ Aspectos relacionados a IA
+ | 
+ Tema tratado por vários TEDs associado a produtos como: processos sancionadores, gestão de espectro, entre outros. Oportunidade a ser desenvolvida relacionada à capacitação IA geral para os servidores da Agência considerando: operações complexas, agentes IA e outras ferramentas. Discussão acerca do projeto de lei em IA.
+ | 
+ Eventos, capacitação de servidores e TEDs
+ | 
+ Tributo e arrecadação
+ | 
+ Foram tratados aspectos fiscais e tributários nos mercados digitais (TED ecossistema digital) finalizado em 2025. Possibilidade de nova abordagem considerando reforma tributária. Tema sugerido "Análises Estatísticas e Indicadores de Arrecadação" não tratado pelos estudos ainda.
+ | 
+ Eventos
+ | 
+ Gestão do Espectro e Infraestrutura
+ | 
+ O gerenciamento do espectro é tratado em diferentes TEDs através de uso de IA para gerenciamento, precificação, atividades espaciais, também previsão de estudo de cabos submarinos. Tema sugerido “TV White Space e uso oportunístico do espectro” não encontrado estudo específico.
+ Os temas Data Centers, Cloud/edge computing são citados isoladamente em alguns TEDs, porém demandam tratamento mais específico.
+ | 
+ Evento
+ | 
+ Conectividade Significativa
+ | 
+ Os temas inclusão digital e conectividade já estão sendo tratados por TEDs em curso.
+ | 
+ Evento
+ | 
+ Regulação
+ | 
+ Tema sandbox já tratado anteriormente, entretanto existe oportunidade de trabalho conjunta com avaliação dos resultados juntamente com governança, análise intersetorial das tecnologias emergentes para orientação de políticas públicas.
+ | 
+ TED
+ | 
+ Competição
+ | 
+ Temas como concorrência e poder de mercado já tratado em outros TEDs. Há oportunidade de tratamento de dinâmica concorrencial entre prestadoras tradicionais e big techs.
+ | 
+ TED
+ | 
+Avalia-se que a proposta revela esforço de conferir maior coerência metodológica e racionalidade executiva às ações do Ceadi, mediante a organização dos temas em blocos estruturados e alinhados a assuntos estratégicos e contemporâneos do ecossistema digital.
+Observa-se, ainda, cautela quanto à sobreposição temática, aproveitamento de sinergias entre estudos em andamento, racionalidade na utilização de recursos públicos e flexibilidade necessária para adaptação a mudanças tecnológicas, regulatórias e geopolíticas:
+Informe nº 9/2026/CEADI (SEI nº 15210788):
+3.21. Considerando a extensão temática do planejamento e o fato de o exercício de 2026 já se encontrar em curso, a minuta prevê a possibilidade de priorização gerencial das ações, de modo a compatibilizar relevância institucional, urgência, maturidade técnica, capacidade operacional e disponibilidade orçamentária. Além disso, ela estabelece a busca de ao menos uma entrega institucional por bloco temático priorizado, como forma de conferir maior objetividade à execução do planejamento e facilitar sua posterior avaliação.
+3.22. Com vistas a fortalecer o acompanhamento da execução, a minuta prevê monitoramento mínimo das ações realizadas, dos eventos promovidos, das capacitações ofertadas, das parcerias instruídas ou formalizadas, dos produtos concluídos e da execução orçamentária. Tendo em vista a natureza dinâmica das ações previstas, a minuta também passou a contemplar tratamento de riscos e possibilidade de reprogramação justificada, inclusive em razão de restrições orçamentárias, atraso na formalização de parcerias, limitações operacionais, sobreposição temática ou alterações supervenientes de contexto.
+IV - Tendências identificadas
+3.23. Além dos subsídios fornecidos internamente pela Anatel e, externamente, pelos Conselheiros do CS-Ceadi, foram feitos levantamentos em fontes especializadas a fim de identificar se os temas identificados são compatíveis com as principais tendências para 2026.
+3.24. De acordo com o relatório "Global trends in digital policies and regulations to watch in 2026" da Cullen International (disponível em https://www.cullen-international.com/client/site/documents/RRGTGO20260001), consultoria internacional com a qual a Anatel possui um contrato de prestação de serviços, o presente ano será marcado por um ambiente geopolítico e comercial desafiador, com possível impacto nas políticas públicas de conectividade digital. Neste contexto, a análise realizada é dividida em três partes:
+a) proteção de infraestrutura de conectividade crítica: cabos submarinos, cloud e data centers, redes móveis.
+b) promoção em inovação em tecnologias digitais estratégicas, em especial IA (preocupação não apenas com aspectos tecnológicos, mas também a facilitação da desinformação, potencialização de ataques cibernéticos, entre outros), tecnologias quânticas, 6G e crescimento do componente espacial (LEO e D2D) nas políticas de conectividade.
+c) proteção da sociedade civil, com a preocupação de riscos econômicos (poder de mercado) e sociais (segurança, integridade do ambiente online, privacidade e antifraude/anti-scam) potencializado pelas grandes plataformas online.
+3.25. Por sua vez, o Relatório da Research Themes 2026 da GSMA Intelligence (disponível em https://www.gsmaintelligence.com/research/2026-research-themes-topics-shaping-the-industry-and-driving-our-focus) aponta o setor de telecomunicações como uma infraestrutura digital crítica, crucial para economia, serviços e inclusão social. As tendências são agrupadas em três eixos: transformação técnica, inovação de serviços/monetização e impacto do celular em termos de economia digital e sustentabilidade. Como tecnologias citadas estão: 5G-advanced, 6G, satélites /NTN, edge computing, edge AI, computação quântica. O estudo também aponta aspectos de segurança para proteção de redes, dispositivos e usuários.
+3.26. Estes temas também são compatíveis com as informações disponibilizadas pelo IEEE em sua página web como os mais atuais, destacando temas como Inteligência Artificial, IoT, 6G e redes quânticas (disponível em https://transmitter.ieee.org).
+3.27. Além de corroborar a adequação temática da proposta, os referenciais analisados reforçam a conveniência de que o planejamento de 2026 preserve capacidade de priorização e adaptação a mudanças de contexto, notadamente em temas sujeitos a rápida evolução tecnológica, regulatória ou geopolítica.
+O planejamento contempla, além de estudos e eventos, também capacitações relacionadas a temas de crescente impacto institucional e regulatório, como cibersegurança, inteligência artificial, inovação tecnológica, conectividade significativa e proteção de dados, prevendo instrumentos de atuação compatíveis com o grau de maturidade e complexidade de cada eixo temático. Ressalta-se que 
+É de se notar que a proposta de capacitação internacional do Ceadi busca fortalecer a formação técnica e estratégica dos servidores da Agência em temas relacionados ao ecossistema digital e às transformações regulatórias contemporâneas, além de ampliar a articulação institucional com universidades e centros de pesquisa de referência. Nesse contexto, o Ceadi destaca a atualização do Programa Eleva, responsável pela capacitação de mais de 30 servidores em instituições internacionais, cuja nova seleção de cursos consta na Lista Cursos (SEI nº 15153804) a seguir, que será avaliada em processo específico (Processo nº 53500.045819/2023-26):
+Lista Cursos (SEI nº 15153804):
+ Grupo Temático
+ | 
+ Universidade
+ | 
+ Nome do Programa
+ | 
+ Cibersegurança
+ | 
+ USTTI (United States Telecommunications Training Institute)
+ | 
+ Cybersecurity Leadership Training
+ | 
+ Inteligência Artificial
+ | 
+ ITU Academy
+ | 
+ AI governance in practice: developing secure and innovative frameworks
+ | 
+ Regulação
+ | 
+ USTTI
+ | 
+ Creating and Enabling Regulatory Environment for ICT Services
+ | 
+ Cibersegurança
+ | 
+ Harvard University
+ | 
+ Cybersecurity: The Intersection of Policy and Technology
+ | 
+ Inteligência Artificial
+ | 
+ Harvard University
+ | 
+ AI and the Law: Navigating the New Legal Landscape
+ | 
+ Regulação
+ | 
+ Harvard University
+ | 
+ Strategic Management of Regulatory and Enforcement Agencies
+ | 
+ Liderança
+ | 
+ University of Oxford
+ | 
+ Rising Public Leaders Programme
+ | 
+ Inteligência Artificial
+ | 
+ Harvard Kennedy School
+ | 
+ Leading in Artificial Intelligence: Exploring Technology and Policy
+ | 
+ Inteligência Artificial
+ | 
+ University of Cambridge (PACE)
+ | 
+ International Summer Programme - Artificial Intelligence
+ | 
+ Inteligência Artificial
+ | 
+ MIT - Massachusetts Institute of Technology
+ | 
+ Leading the AI-Driven Organization
+ | 
+ Inteligência Artificial
+ | 
+ MIT - Massachusetts Institute of Technology
+ | 
+ AI Executive Academy
+ | 
+ Liderança
+ | 
+ Harvard Law School (PON)
+ | 
+ Negotiation and Leadership: Dealing with Difficult People and Problems
+ | 
+ Liderança
+ | 
+ Harvard Law School
+ | 
+ Harvard Mediation Intensive
+ | 
+ Liderança
+ | 
+ Sciences Po Paris
+ | 
+ Certificate International Relations and Diplomacy
+ | 
+ Liderança
+ | 
+ Sciences Po Paris
+ | 
+ Crisis Management and Preparedness
+ | 
+ Proteção de dados, segurança da informação e privacidade
+ | 
+ Maastricht University
+ | 
+ Master Class on Privacy Management and Data Governance under GDPR and EU AI Act
+ | 
+ Cibersegurança
+ | 
+ International Telecommunication Union (ITU) Academy
+ | 
+ Securing next-gen telecom: building resilience and trust
+ | 
+ Liderança
+ | 
+ Harvard University
+ | 
+ Emerging leaders
+ | 
+ Inovação Tecnológica
+ | 
+ Harvard University
+ | 
+ Leadership in emergin technologies: security, strategy and risk
+ | 
+ Liderança
+ | 
+ Harvard University
+ | 
+ Behavorial insights in public policy
+ | 
+O planejamento também prevê continuidade das ações voltadas ao desenvolvimento de lideranças femininas, nos termos do Programa de Alta Formação de Liderança para Mulheres da Anatel, aprovado pela Resolução Interna nº 419, de 2 de abril de 2025.
+Salienta-se, ainda, a compatibilidade da proposta com o Planejamento Estratégico da Anatel 2023-2027, especialmente no que diz respeito à promoção de estudos e capacitações relacionados ao ecossistema digital, inovação tecnológica, plataformas digitais e modernização tecnológica, associados à "Iniciativa Estratégica 20: Promover estudos e acompanhar projetos sobre plataformas digitais " e ao "Objetivo Estratégico 3C - Promover a modernização da tecnologia de forma isonômica e transparente". 
+No tocante à execução orçamentária, a proposta preserva a flexibilidade administrativa ao consignar que o quantitativo de TEDs e de capacitações internacionais constitui estimativa referencial, condicionada à disponibilidade orçamentária, à maturidade das propostas, à capacidade operacional de implementação e à priorização institucional. O orçamento do Ceadi aprovado para 2026, no montante de R$ 6.502.000,00, privilegia estudos, pesquisas e capacitação internacional, que representam 85% do valor orçamentário aprovado:
+Informe nº 9/2026/CEADI (SEI nº 15210788):
+Quanto ao calendário do Ceadi proposto para 2026, ressalta-se que contempla eventos já ocorridos, planejados ou em fase de estruturação, como workshops e seminários relacionados a TEDs, o Programa Anatel de Intercâmbio em Ecossistema Digital (P@ed) e o Prêmio Mérito Rondon, além da perspectiva de realização de conferências temáticas sobre inteligência artificial e sobre os TEDs celebrados pela Agência. A proposta também prevê possível lançamento da Revista da Anatel e admite a adoção de cronograma executivo complementar para detalhamento e acompanhamento das ações ao longo do exercício. As datas das reuniões ordinárias do CS-Ceadi para 2026 foram previamente definidas e aprovadas por unanimidade na 1ª Reunião Ordinária do CS-Ceadi, realizada em 11 de fevereiro de 2026, conforme Registro de Reunião (SEI nº 15196879).
+Ante todo o exposto, considero que a proposta de Planejamento Operacional 2026 do Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi) alinha-se com as competências institucionais previstas no RIA e no Regimento Interno do próprio Centro, além de estar aderente ao Planejamento Estratégico da Agência e às tendências nacionais e internacionais relacionadas ao ecossistema digital. Cabe apenas ressaltar a necessidade de oitiva não apenas das áreas regimentalmente competentes, mas também dos Comitês existentes na Agência sobre inciativas do Ceadi especificamente relacionadas aos temas a eles pertinentes, previamente à sua execução.
+Constato, ainda, que a proposta foi regularmente aprovada pelo Conselho Superior do Ceadi (CS-Ceadi), conforme Despacho Ordinatório (SEI nº 15551288), restando atendida a exigência contida no art. 139-C do RIA e no art. 11, §3º, do Regimento Interno do Ceadi quanto à necessidade de ratificação por este Conselho Diretor, como condição de eficácia do Planejamento Operacional 2026 do Ceadi.
+Diante disso, proponho a ratificação do Planejamento Operacional 2026 do Ceadi, nos termos da Minuta de Resolução Interna (SEI nº 15294825), com ressalva apenas dos ajustes realizados para adequação ao art. 4º, § 3º, do Decreto nº 12.002, de 22 de abril de 2024, que estabelece normas para elaboração, redação, alteração e consolidação de atos normativos, consubstanciados na Minuta de Resolução Interna (SEI nº 15680667).
+Decreto nº 12.002/2024:
+Art. 4º (...)
+(...)
+§ 3º Ressalvados os decretos de promulgação de atos internacionais, os atos normativos não conterão enunciados iniciados pela expressão “considerando”, nem explicações destinadas a justificar a edição do ato normativo.
+CONCLUSÃO
+Diante do exposto, proponho a este Conselho Diretor:
+ratificar o Planejamento Operacional 2026 do Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi), nos termos deste Voto e da Minuta de Resolução Interna (SEI nº 15680667) e
+determinar ao Ceadi que promova a oitiva não apenas das áreas regimentalmente competentes, mas também dos Comitês existentes na Agência sobre inciativas desse Centro relacionadas especificamente aos temas a eles pertinentes, previamente à sua execução.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 02/06/2026, às 17:18, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15658051 e o código CRC 337470D8.
+ | 
+Referência: Processo nº 53500.007663/2026-28 | 
+SEI nº 15658051 |

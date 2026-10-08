@@ -1,0 +1,60 @@
+SEI/ANATEL - 15267178 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 15
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 58, de 03 de março de 2026
+Processo nº 53500.003904/2023-17
+Recorrente/Interessado: CÂMARA BRASILEIRA DA ECONOMIA DIGITAL, ASSOCIAÇÃO DAS EMPRESAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO E DE TECNOLOGIAS DIGITAIS, CONEXIS BRASIL DIGITAL - SINDICATO NACIONAL DAS EMPRESAS DE TELEFONIA E DE SERVIÇOS MÓVEIS CELULAR E PESSOAL
+CNPJ nº 04.481.317/0001-48, nº 06.244.855/0001-44 e nº 06.102.961/0001-93
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. PEDIDO DE ANULAÇÃO DE ATO NORMATIVO. RESOLUÇÃO ANATEL Nº 780/2025. PETIÇÃO NÃO CONHECIDA COMO RECURSO OU PEDIDO DE RECONSIDERAÇÃO. PEDIDOS INDEFERIDOS. DETERMINAÇÕES E SUSPENSÃO TEMPORÁRIA DE EXIGIBILIDADE.
+I. CASO EM EXAME
+1. A petição da CÂMARA-E.NET. Petição com pedido de efeito suspensivo contra o Acórdão nº 184/2025, que aprovou a Resolução Anatel nº 780/2025, com requerimento de anulação integral ou parcial de dispositivos relativos à responsabilização de marketplaces e à avaliação de conformidade de data centers que integram redes de telecomunicações.
+2. Decisão anterior. Indeferimento do efeito suspensivo pelo Presidente do Conselho Diretor no Despacho Decisório nº 39/2025/PR.
+3. Pedidos acessórios. Pedido de ingresso da BRASSCOM como terceira interessada. Pedido da CONEXIS de prorrogação do prazo do art. 85-B, § 1º, da Resolução Anatel nº 780/2025.
+II. QUESTÃO EM DISCUSSÃO
+Há seis questões em discussão: (i) saber se a petição da CÂMARA-E.NET pode ser conhecida como Recurso Administrativo ou Pedido de Reconsideração; (ii) saber se a petição deve ser recebida como pedido de anulação de ato normativo; (iii) saber se há vícios de competência ou de forma na Resolução Anatel nº 780/2025 quanto à responsabilização administrativa de marketplaces; (iv) saber se há vícios de competência ou de forma na Resolução Anatel nº 780/2025 quanto à avaliação de conformidade de data centers que integram redes de telecomunicações; (v) saber se cabe ingresso de terceira interessada no procedimento do art. 78 do Regimento Interno da Anatel - RIA; e (vi) saber se é cabível prorrogar o prazo do art. 85-B, § 1º, bem como suspender temporariamente a exigibilidade do art. 6º da Resolução Anatel nº 780/2025 e expedir determinações correlatas.
+III. RAZÕES DE DECIDIR
+1. Não cabe Recurso Administrativo contra decisão proferida pelo Conselho Diretor, nos termos do art. 115 do RIA.
+2. O Pedido de Reconsideração contra decisão do Conselho Diretor observa o prazo do art. 115, § 6º, do RIA, aplicado por força do art. 126, § 2º, do RIA.
+3. A petição da CÂMARA-E.NET é intempestiva para fins recursais, considerando a data de publicação do Acórdão nº 184/2025 e da Resolução Anatel nº 780/2025 e a data de protocolo.
+4. A petição deve ser recebida, pelo seu conteúdo, como pedido de anulação de ato normativo, processado nos termos do art. 78 do RIA.
+5. Não se identificam máculas jurídicas aptas a justificar a anulação dos dispositivos sobre responsabilização administrativa de plataformas intermediadoras de comércio eletrônico.
+6. A Anatel tem competência para tratar de data centers que integrem redes de telecomunicações.
+7. A ausência de Análise de Impacto Regulatório - AIR específica sobre data centers pode ser afastada mediante consideração de diligências e estudos como documentos equivalentes, sem invalidade automática do ato.
+8. Não há previsão regimental, no procedimento do art. 78 do RIA, para ingresso de terceira interessada.
+9. Data centers que integram redes de telecomunicações se enquadram como infraestruturas críticas, conforme o Decreto nº 9.573/2018 e o Glossário aprovado pela Resolução Anatel nº 779/2025.
+10. A Consulta Pública nº 48/2025 constitui instrumento adequado para o debate e o aprimoramento do procedimento operacional previsto no art. 85-B, § 1º, da Resolução Anatel nº 780/2025.
+11. Não se acolhe a prorrogação do prazo solicitada pela CONEXIS.
+12. A exigibilidade do art. 6º da Resolução Anatel nº 780/2025 deve ser suspensa, de ofício, até que o Conselho Diretor reavalie a matéria.
+13. A Superintendência de Outorga e Recursos à Prestação - SOR deve remeter ao Conselho Diretor eventuais contribuições da Consulta Pública nº 48/2025 que possam ensejar ajustes na Resolução Anatel nº 780/2025.
+14. A SOR não deve editar o ato de procedimentos operacionais e requisitos técnicos, objeto da Consulta Pública nº 48/2025, enquanto perdurar a suspensão da exigibilidade do art. 6º da Resolução Anatel nº 780/2025.
+15. A Superintendência Executiva - SUE deve coordenar a Superintendência de Planejamento e Regulamentação - SPR e a Superintendência de Controle de Obrigações - SCO para definição operacional do tratamento regulatório de data centers como infraestrutura crítica.
+16. A SOR deve considerar data centers como infraestruturas críticas nos trabalhos do procedimento operacional.
+IV. DISPOSITIVO E TESE
+Petição não conhecida como Recurso Administrativo ou Pedido de Reconsideração. Petição recebida como pedido de anulação de ato normativo e indeferida no mérito. Pedido de ingresso de terceira interessada indeferido. Data centers que integram redes de telecomunicações declarados como infraestruturas críticas. Petição da CONEXIS recebida e indeferida. Suspensão, de ofício, da exigibilidade do art. 6º da Resolução Anatel nº 780/2025, com determinações à SUE e à SOR.
+Tese de julgamento: "1. Não cabe conhecer da petição como Recurso Administrativo ou Pedido de Reconsideração. 2. A petição deve ser recebida como pedido de anulação de ato normativo, nos termos do art. 78 do RIA. 3. Não há fundamento para anular os dispositivos da Resolução Anatel nº 780/2025 impugnados pela CÂMARA-E.NET. 4. Não há previsão regimental para ingresso de terceira interessada no procedimento do art. 78 do RIA. 5. Os data centers que integram as redes de telecomunicações constituem infraestruturas críticas. 6. Deve-se indeferir a prorrogação do prazo do art. 85-B, § 1º, da Resolução Anatel nº 780/2025. 7. Deve-se suspender, de ofício e temporariamente, a exigibilidade do art. 6º da Resolução Anatel nº 780/2025 até reapreciação da matéria pelo Conselho Diretor. 8. Determinações à SUE e à SOR."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 5º, XXXIV, “a”; Lei nº 9.472/1997, art. 44 e art. 1º, parágrafo único; Lei nº 13.848/2019, art. 6º, § 5º, e art. 9º; Decreto nº 10.411/2020, art. 21; Decreto nº 9.573/2018, art. 1º, parágrafo único, I; RIA, arts. 41, 78, 115, § 6º, e 126; Resolução Interna Anatel nº 8/2021, art. 8º; Resolução Anatel nº 779/2025, art. 1º, CCXLIII; Resolução Anatel nº 740/2020, art. 20 e parágrafo único.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, RE nº 1.037.396 (Tema 987); STF, RE nº 1.057.258 (Tema 533).
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 30/2025/OP (SEI nº 14804766), integrante deste acórdão:
+a) não conhecer da petição SEI nº 14317363, apresentada pela CÂMARA BRASILEIRA DA ECONOMIA DIGITAL (CÂMARA-E.NET), como Recurso Administrativo ou Pedido de Reconsideração;
+b) receber a petição SEI nº 14317363 como pedido de anulação de ato normativo, nos termos do art. 78 do RIA, para, no mérito, indeferir os pedidos nela contidos;
+c) receber a petição SEI nº 14841514 e indeferir o ingresso da BRASSCOM - ASSOCIAÇÃO DAS EMPRESAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (TIC) E DE TECNOLOGIAS DIGITAIS como terceira interessada nos presentes autos;
+d) declarar expressamente que os Data Centers que integram as redes de telecomunicações são infraestruturas críticas, nos termos do art. 1º, parágrafo único, inciso I, do Decreto nº 9.573, de 22 de novembro de 2018, e da definição constante do inciso CCXLIII do art. 1º do Glossário aplicável ao Setor de Telecomunicações, aprovado pela Resolução Anatel nº 779, de 28 de abril de 2025;
+e) receber a petição SEI nº 14936688 e indeferi-la;
+f) determinar, caso ainda não estejam sendo considerados dessa forma, que:
+f.1) a Superintendência Executiva - SUE coordene as áreas técnicas envolvidas, em princípio as Superintendências de Regulamentação - SPR e de Controle de Obrigações - SCO, para que adotem as providências cabíveis para a definição operacional do tratamento regulatório a ser adotado para os data centers como infraestrutura crítica; e,
+f.2) a Superintendência de Outorga e Recursos à Prestação - SOR, nos trabalhos em desenvolvimento no grupo de elaboração do procedimento operacional de avaliação da conformidade e homologação dos Data Centers que integram as redes de telecomunicações, já os considere como infraestruturas críticas de telecomunicações;
+g) suspender, de ofício, a exigibilidade dos efeitos do art. 6º da Resolução Anatel nº 780, de 1º de agosto de 2025, até que o Conselho Diretor reavalie a matéria após a conclusão do procedimento descrito nas alíneas seguintes;
+h) determinar à Superintendência de Outorga e Recursos à Prestação - SOR que remeta ao Conselho Diretor, após a conclusão da análise das contribuições à Consulta Pública nº 48/2025, eventuais contribuições recebidas que ensejem, possivelmente, a seu critério, ajustes na Resolução Anatel nº 780, de 1º de agosto de 2025; e,
+i) determinar à Superintendência de Outorga e Recursos à Prestação - SOR que não edite o ato de procedimentos operacionais e requisitos técnicos, objeto da Consulta Pública nº 48/2025, enquanto perdurar a suspensão da exigibilidade dos efeitos do art. 6º da Resolução nº 780/2025, disposta na alínea "g".
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15267178 e o código CRC B8139543.
+ | 
+Referência: Processo nº 53500.003904/2023-17 | 
+SEI nº 15267178 |

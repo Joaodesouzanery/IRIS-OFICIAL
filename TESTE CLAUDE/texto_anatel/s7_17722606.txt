@@ -1,0 +1,89 @@
+SEI/ANATEL - 15847951 - Análise
+Boletim de Serviço Eletrônico em 03/07/2026
+Análise nº 55/2026/EH
+Processo nº 53500.016992/2018-50
+Interessado: CLARO S.A.
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Recurso Administrativo, cumulado com pedido de efeito suspensivo, interposto pela CLARO S.A., CNPJ nº 40.432.544/0001-47, em face do Despacho Decisório nº 5/2023/COQL/SCO (SEI nº 10200191), de 08/05/2023, que aplicou a sanção de multa no valor de R$ 22.110.163,48 (vinte e dois milhões, cento e dez mil cento e sessenta e três reais e quarenta e oito centavos), pelos descumprimentos ao artigo 1º, I e §1º da Lei nº 10.703, de 18/07/2003, c/c art. 58, I, II, III, IV e §1º, "d" do Regulamento de Gestão de Qualidade do Serviço Móvel Pessoal (RGQ-SMP).
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PRORROGAÇÃO DE PRAZO DE RELATORIA. PROPOSTA DEFERIDA.
+I. CASO EM EXAME
+O recurso. Recurso administrativo, com pedido de efeito suspensivo, interposto por CLARO S.A. contra o Despacho Decisório nº 5/2023/COQL/SCO, que aplicou multa por descumprimento do art. 1º, I e § 1º, da Lei nº 10.703/2003, c/c art. 58, I, III, IV e § 1º, “d”, do RGQ-SMP.
+Fato relevante. O Pado foi instaurado em 2018. A prestadora apresentou defesa, alegações finais e recurso administrativo. A área técnica analisou o caso em sucessivas manifestações. O processo foi encaminhado ao Conselho Diretor após juízo de retratação com proposta de redução da multa.
+Andamento processual. Houve distribuição, cancelamento de distribuição, redistribuição e nova distribuição da relatoria. O relator determinou diligências à SCO e solicitou manifestação da PFE-Anatel. A instrução passou a incluir revisão do cálculo da multa e avaliação sobre possível conversão da multa em obrigação de fazer para capacitação de jovens em cibersegurança.
+Situação atual. Os autos foram automaticamente incluídos na pauta da 955ª Reunião do Conselho Diretor. A diligência ainda está em instrução na área técnica.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é cabível a prorrogação, por 120 dias, do prazo para submissão da matéria ao Conselho Diretor, diante da inclusão automática do processo em pauta e da impossibilidade de conclusão da análise no prazo regimental.
+III. RAZÕES DE DECIDIR
+O art. 127, § 2º, do RIA prevê a inclusão automática do processo em pauta.
+O processo foi incluído na pauta da 955ª Reunião do Conselho Diretor.
+A matéria é complexa.
+A diligência determinada à área técnica ainda não foi concluída.
+A análise do mérito não pode ser finalizada dentro do prazo regimental.
+O art. 127, § 3º, do RIA autoriza o Conselheiro Relator a requerer, de forma justificada, a prorrogação do prazo para submissão da matéria ao Conselho Diretor.
+IV. DISPOSITIVO E TESE
+Proposta de prorrogação do prazo de relatoria por 120 dias.
+Tese de julgamento: "1. É cabível a prorrogação do prazo de relatoria quando o processo é incluído automaticamente em pauta e a análise não pode ser concluída no prazo regimental. 2. A complexidade da matéria e a pendência de diligência na área técnica justificam a prorrogação do prazo para submissão da matéria ao Conselho Diretor. 3. O art. 127, § 3º, do RIA autoriza a prorrogação do prazo mediante justificativa do Conselheiro Relator."
+Dispositivos relevantes citados: Lei nº 10.703/2003, art. 1º, I e § 1º; Resolução nº 612/2013, art. 127, §§ 2º e 3º; Resolução nº 477/2007, art. 58, I, II, IV e § 1º, “d”.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações - LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o Processo Administrativo no âmbito da Administração Pública Federal – Lei de Processo Administrativo - LPA;
+Lei nº 10.703, de 18 de julho de 2003, que dispõe sobre o cadastramento de usuários de telefones celulares pré-pagos e dá outras providências;
+Lei nº 12.527 (Lei de Acesso à Informação - LAI), de 18 de novembro de 2011;
+Resolução nº 589, de 7 de maio de 2012 (Regulamento para Aplicação de Sanções Administrativas - RASA);
+Resolução nº 612, de 29 de abril de 2013 (Regimento Interno da Agência Nacional de Telecomunicações - RIA); e
+Regulamento do Serviço Móvel Pessoal (RSMP), aprovado pela Resolução nº 477, de 7 de agosto de 2007.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo interposto pela CLARO S.A., CNPJ nº 40.432.544/0001-47, em face do Despacho Decisório nº 5/2023/COQL/SCO (SEI nº 10200191), de 08/05/2023, que aplicou a sanção de multa no valor de R$22.110.163,48 (vinte e dois milhões, cento e dez mil cento e sessenta e três reais e quarenta e oito centavos), pelos descumprimentos ao artigo 1º, I e §1º da Lei nº 10.703, de 18/07/2003, c/c art. 58, I, II, III, IV e §1º, "d" do Regulamento de Gestão de Qualidade do Serviço Móvel Pessoal (RGQ-SMP).
+O presente Pado foi instaurado em 10/05/2018, por meio do Despacho Ordinatório de Instauração nº 19/2018/SEI/COQL/SCO (SEI nº 2692393), em razão dos apontamentos constantes do Informe nº 237/2018/SEI/COQL/SCO (SEI nº 2672837), nos autos do Processo de Acompanhamento e Controle - PAC nº 53500.075728/2017-77), elaborado com fundamento no teor do Relatório de Fiscalização n.º 0033/2018/GR02 (SEI nº 2541418) (nos autos do Processo nº 53508.006875/2017-27).
+Notificada, a Recorrente apresentou sua defesa administrativa (SEI nº 2835390) em 12/06/2018, oportunidade em que manifestou seu entendimento a respeito das infrações ora apuradas e requereu a disponibilização das cópias do PAC nº 53508.006875/2017 e a reabertura de oportunidade para apresentação de defesa. 
+A manifestação da Interessada foi analisada por meio do Informe nº 362/2018/COQL/SCO (SEI nº 2920266), de 08/08/2018, que sugeriu a suspensão do prazo para a apresentação da defesa a partir do registro do pedido de vistas no Sistema Focus, do PAC SEI nº 53508.006875/2017-27, oportunizando a manifestação da prestadora, com o retorno do trâmite do prazo regimental para a apresentação de defesa.
+Na sequência, foi expedido o Ofício nº 554/2018/SEI/COQL/SCO-ANATEL (SEI nº 2926532), que notificou a Interessada da instauração do Pado, para, querendo, oferecer defesa, no prazo remanescente, e informou que, em atenção ao questionamento da prestadora, foi disponibilizado o acesso à documentação integral constante do PAC SEI nº 53508.006875/2017-27.
+A Recorrente apresentou sua nova peça de defesa "Carta Petição CLARO" (SEI nº 3158825) em 27/08/2018; e "Alegações Alegações Finais_Claro" (SEI nº 3507121) em 22/11/2018.
+As manifestações foram objeto de análise do Informe SEI nº 517/2018/COQL/SCO (SEI nº 3326084), que não reconheceu elementos hábeis a descaracterizar as infrações demonstradas em relatório de fiscalização. Propôs, assim, a notificação da recorrente para apresentar alegações finais.
+Em 12/03/2019, o Superintendente de Controle de Obrigações sobrestou o andamento do Pado, por meio do Despacho Ordinatório SEI nº 3908728, até a conclusão do Plano de ação da Recorrente, nos termos do Informe nº 313/2018/SEI/COQL/SCO (SEI nº 2803073), inserido no Processo de Acompanhamento e Controle SEI nº 53500.075728/2017-77.
+Em 14/07/2021, a Anatel solicitou informações adicionais, por meio do Ofício nº 349/2021/COQL/SCO-ANATEL (SEI nº 7126708), as quais foram apresentadas pela Interessada no dia 09/08/2021, por meio da "Petição Resp. ao Of. 349/2021" (SEI nº 7239168).
+Por meio do Informe nº 93/2023/COQL/SCO (SEI nº 10200187), de 8/05/2023, os autos foram analisados, com sugestão de aplicação de sanção de multa à Recorrente.
+Sobreveio, assim, o Despacho Decisório ora recorrido, com o seguinte teor:
+"Despacho Decisório nº 5/2023/COQL/SCO (SEI nº 10200191)
+(...)
+1. Restabelecer os trâmites do presente processo ao considerar os resultados relativos à execução do Plano de Ação Setorial, conforme o exposto por meio do Informe nº 69/2023/COQL/SCO (SEI nº 10109089), constante dos autos do Procedimento de Acompanhamento de Controle (PAC) nº 53500.075728/2017-77
+2. Aplicar sanção de MULTA no valor de R$ 22.110.163,48 (vinte e dois milhões, cento e dez mil cento e sessenta e três reais e quarenta e oito centavos), pelas infrações ao artigo 1º, §1º, caput, I, e II da Lei nº 10.703, de 18 de julho de 2003, que dispõe sobre o cadastramento de usuários de telefones celulares pré-pagos e dá outras providências; c/c art. 58, I, II, III, IV e §1º, "d" do Regulamento de Gestão de Qualidade do Serviço Móvel Pessoal (RGQ-SMP), aprovado pela Resolução nº 477, de 7 de agosto de 2007.
+2.1. Caso a prestadora resolva, de acordo com o disposto no § 5º do art. 33 do Regulamento de Aplicação de Sanções Administrativas (Rasa), aprovado pela Resolução nº 589/2012, renunciar expressamente ao direito de recorrer da decisão de primeira instância, fará jus a um fator de redução de 25% (vinte e cinco por cento) no valor da multa aplicada, desde que faça o recolhimento no prazo regulamentar, totalizando, para esse caso, o montante de R$ 16.582.622,61 (dezesseis milhões, quinhentos e oitenta e dois mil seiscentos e vinte e dois reais e sessenta e um centavos)."
+A Prestadora foi notificada da decisão, por meio do Ofício nº 260/2023/COQL/SCO-ANATEL (SEI nº 10200201), em 23/05/2023, e apresentou o "Recurso Resp. ao Of. 260" (SEI nº 10338927) em 02/06/2023.
+Atribuiu-se efeito suspensivo ao Recurso Administrativo, exclusivamente quanto à exigibilidade da sanção de multa aplicada, nos termos da Certidão 10349683.
+As razões da Prestadora foram analisadas, por meio do Informe nº 208/2024/CODI/SCO (SEI nº 12211221), que sugeriu o agravamento da sanção aplicada pelo Despacho Decisório nº 5/2023/COQL/SCO (SEI nº 10200191).
+Em 02/08/2024, a prestadora foi notificada para apresentar alegações, por meio do Ofício nº 232/2024/CODI/SCO-ANATEL (SEI nº 12272670), em razão da sugestão de agravamento da sanção aplicada.
+A Recorrente protocolou as petições "Alegações Resp. Of.232" (SEI nº 12450979), em 19/08/2024, e "Petição Manifestação complementar" (SEI nº 12528957), em 04/09/2024.
+A análise das alegações ocorreu, por meio do Informe nº 400/2024/CODI/SCO (SEI nº 12934389), de 27/12/2024, que alinhando-se às razões do Informe nº 208/2024/CODI/SCO (SEI nº 12211221), propôs o conhecimento do Recurso interposto, bem como o encaminhamento dos autos ao Conselho Diretor da Agência para análise de mérito, com a sugestão do exercício do juízo de retratação, para redução da multa para R$ 10.169.951,73 (dez milhões, cento e sessenta e nove mil novecentos e cinquenta e um reais e setenta e três centavos).
+Nos termos do Despacho Decisório nº 212/2024/CODI/SCO (SEI nº 13056324), a Superintendente de Controle de Obrigações conheceu do recurso interposto e encaminhou os autos ao Conselho Diretor da Agência para análise de mérito e decisão.
+Os autos foram encaminhados para manifestação deste colegiado, por meio do MACD nº 1019/2024 (SEI nº 13056351) e distribuídos para relatoria do então Conselheiro Substituto Vinícius Oliveira Caram Guimarães (SEI nº 13509083) em 06/01/2025.
+Em 05/05/2025, por meio da Certidão de Cancelamento de Distribuição (SEI nº 13642094) a distribuição do feito foi cancelada, em razão de vacância do cargo de Conselheiro, conforme Regimento Interno da Anatel, art. 9º, § 8º, e Decreto nº 2.338/1997, art. 26.
+Ato contínuo, o processo foi redistribuído em 06/05/2025, por prevenção (Certidão de Distribuição SEI nº 13651668), ao então Conselheiro Substituto Daniel D'Albuquerque.
+Os autos foram automaticamente incluídos na pauta da 943ª Reunião deste Colegiado, de 15/05/2025. Naquela oportunidade, foi proposta a prorrogação do prazo de relatoria, por 120 (cento e vinte) dias, nos termos da Análise nº 55/2025/DD (SEI nº 13655116).
+Em 24/07/2025, o processo foi remetido em diligência à Superintendência de Controle de Obrigações (SCO) para a necessária manifestação da Procuradoria Federal Especializada junto à Anatel (PFE-Anatel), conforme Ofício nº 57/2025/DD-ANATEL (SEI nº 14051147).
+Em 29/08/2025, foi realizado o cancelamento da distribuição do processo, em razão da nomeação de Conselheiro(a) sucessor(a) para cargo que estava ocupado por Conselheiro(a) Substituto(a), conforme consta da Certidão de Cancelamento de Distribuição SEI nº 14289004. Ato contínuo, o processo foi, então, distribuído para minha relatoria, em 04/09/2025 (SEI nº 14319972).
+A PFE-Anatel manifestou-se, por meio do Parecer nº 293/2025/PFE-ANATEL/PGF/AGU (SEI nº 14368192), de 04/09/2025; enquanto que a SCO, por seu turno, apresentou a análise complementar ao referido Parecer, nos termos do Informe nº 768/2025/CODI/SCO (SEI nº 14373171) de 19/09/2025.
+Durante a instrução processual, identifiquei necessidade de nova diligência à SCO para a revisão do cálculo de multa e a avaliação de se converter a multa em obrigação de fazer, encaminhada por meio do Ofício nº 4/2025/EH-ANATEL (SEI nº 14482500), de 12/11/2025.
+A resposta da SCO à diligência foi apresentada nos termos do Informe nº 945/2025/CODI/SCO (SEI nº 14796361), em 06/01/2026.
+Em 29/05/2026, por meio do Ofício nº 61/2026/EH-ANATEL (SEI nº 15718977), solicitei nova avaliação da área técnica quanto à possibilidade de converter a multa em obrigação de fazer para capacitar jovens em cibersegurança.
+Em 24/06/2026, a SCO solicitou, nos termos do Ofício nº 114/2026/SCO-ANATEL (SEI nº 15852710), prorrogação do prazo para atendimento da diligência requerida no Ofício nº 61/2026/EH-ANATEL (SEI nº 15718977), a qual foi concedida por meio do Ofício nº 69/2026/EH-ANATEL (SEI nº 15860453), de 25/06/2026.
+É o relatório.
+DA ANÁLISE
+Considerando o prazo previsto e as disposições constantes no art. 127, § 2º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, os autos foram automaticamente incluídos na pauta da 955ª Reunião deste Colegiado, a ser realizada em 02/07/2026.
+Diante da complexidade da matéria, corroborada pelo fato de que a diligência ainda se encontra em instrução na área técnica, a análise não poderá ser concluída dentro do prazo regimental, de modo que proponho a prorrogação, por 120 (cento e vinte) dias, do prazo para submissão da matéria ao Conselho Diretor, com fulcro no § 3º do art. 127 do Regimento Interno da Agência, in verbis:
+Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor.
+CONCLUSÃO
+Proponho a prorrogação do prazo para submissão da matéria ao Conselho Diretor, por 120 (cento e vinte) dias, nos termos do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro Relator, em 02/07/2026, às 14:21, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15847951 e o código CRC 4C768897.
+ | 
+Referência: Processo nº 53500.016992/2018-50 | 
+SEI nº 15847951 |

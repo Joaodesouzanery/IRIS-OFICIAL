@@ -1,0 +1,44 @@
+SEI/ANATEL - 16171593 - Acórdão
+Boletim de Serviço Eletrônico em 26/08/2026
+DOU de 26/08/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 223, de 24 de agosto de 2026
+Processo nº 53500.013983/2015-64
+Recorrente/Interessado: RPJ PRODUTORES ASSOCIADOS LTDA.
+CNPJ nº 05.161.846/0001-27
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Circuito Deliberativo nº 208, de 24 de agosto de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O recurso. Recurso Administrativo interposto por RPJ PRODUTORES ASSOCIADOS LTDA. contra decisão que reconheceu a procedência dos lançamentos referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, no exercício de 2011, e da multa de ofício pela ausência de declaração.
+2. Fato relevante. A fiscalização apurou contribuição ao Fust no montante de [Item 1 - Apartado Sigiloso SEI nº 16167391)], dos quais [Item 2 - Apartado Sigiloso SEI nº 16167391)] não haviam sido recolhidos. A Notificação de Lançamento indicou crédito tributário no valor de [Item 3 - Apartado Sigiloso SEI nº 16167391)], referente ao lançamento de ofício, à multa de ofício e aos juros de mora.
+3. As alegações da Recorrente. A Recorrente sustentou a indevida incidência do Fust sobre receitas de locação de equipamentos, não vinculadas à prestação de serviços de telecomunicações, e alegou prescrição intercorrente e nulidade do processo administrativo.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se incide prescrição intercorrente no processo administrativo fiscal relativo à contribuição ao Fust; e (ii) saber se receitas registradas na conta de venda e locação de equipamentos deveriam ser excluídas da base de cálculo da contribuição por não decorrerem de prestação de serviços de telecomunicações.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo, cabível e preenche os pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no Regimento Interno da Anatel - RIA.
+2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário.
+3. Não houve necessidade de manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, porque o caso não se enquadra nas hipóteses do art. 5º, IV, da Portaria Anatel nº 642/2013.
+4. Não se aplica prescrição intercorrente ao processo administrativo fiscal, conforme a Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11 e a Súmula Anatel nº 26.
+5. O processo administrativo não é a via adequada para afastar a aplicação de norma sob fundamento de inconstitucionalidade.
+6. A contribuição ao Fust incide sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - ICMS, Programa de Integração Social - PIS e Contribuição para o Financiamento da Seguridade Social - Cofins.
+7. A fiscalização excluiu da base de cálculo a conta contábil cuja natureza não se relacionava a serviços de telecomunicações e manteve a conta cuja natureza diversa não foi comprovada pela Recorrente.
+8. A Recorrente não apresentou notas fiscais, contratos ou outros documentos idôneos para demonstrar que as receitas da conta “61104 610010104000000 Vendas Locação de Equipamentos” não decorriam de serviços de telecomunicações.
+9. A mera denominação contábil da conta não basta para afastar a incidência do tributo.
+10. Cabe ao Interessado provar os fatos que alega no processo administrativo.
+11. Mantêm-se os valores lançados a título de contribuição ao Fust e de multa de ofício.
+IV. DISPOSITIVO E TESE
+Recurso desprovido.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo e presentes os pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no RIA. 2. A impugnação e o recurso suspendem a exigibilidade do crédito tributário, nos termos do Código Tributário Nacional - CTN. 3. Não se aplica prescrição intercorrente ao processo administrativo fiscal. 4. No âmbito do processo administrativo fiscal, não cabe afastar a aplicação de norma sob fundamento de inconstitucionalidade. 5. Incide a contribuição ao Fust sobre a receita operacional bruta decorrente da prestação de serviços de telecomunicações, com exclusão de ICMS, PIS e Cofins. 6. A exclusão de receitas da base de cálculo do Fust exige prova contábil idônea. 7. Não comprovada a natureza não tributável das receitas registradas na conta de venda e locação de equipamentos, mantém-se o lançamento tributário e a multa de ofício."
+Dispositivos relevantes citados: Código Tributário Nacional - CTN, arts. 151, III, e 174; Lei nº 9.430/1996, art. 44, I; Lei nº 9.472/1997, art. 60; Lei nº 9.784/1999, art. 36; Lei nº 9.873/1999, art. 1º, § 1º; Lei nº 9.998/2000, arts. 6º, IV, e 10; Decreto nº 70.235/1972, arts. 26-A e 33; Resolução nº 612/2013, arts. 85 e 116; Portaria Anatel nº 642/2013, art. 5º, IV, “a”; Portaria Anatel nº 1.355/2019, item 7.1.1; Resolução nº 777/2025, art. 119, XIII e XIX.
+Jurisprudência relevante citada: Súmula Anatel nº 26; Súmula CARF nº 11; Parecer nº 00064/2017/PFE-Anatel/PGF/AGU, de 08.02.2017; Parecer nº 00280/2017/PFE/ANATEL/PGF/AGU; Anatel, Acórdão nº 157, Rel. Conselheiro Artur Coimbra de Oliveira, Conselho Diretor, Reunião nº 934, j. 04.07.2024, publ. 10.07.2024; Anatel, Acórdão nº 271, Rel. Conselheiro Alexandre Reis Siqueira Freire, Conselho Diretor, Reunião nº 947, j. 13.10.2025, publ. 20.10.2025; Anatel, Acórdão nº 80, Rel. Conselheiro Moisés Queiroz Moreira, Conselho Diretor, Reunião nº 921, j. 13.04.2023, publ. 19.04.2023.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 65/2026/NP (SEI nº 15919507), integrante deste acórdão, ratificar o conhecimento do Recurso Administrativo (SEI nº 14856503 ) interposto pela empresa RPJ PRODUTORES ASSOCIADOS LTDA., inscrita no CNPJ sob o nº 05.161.846/0001-27, para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 615/2025/CODI/SCO (SEI nº 14446581), de 4 de novembro de 2025.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 25/08/2026, às 17:37, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16171593 e o código CRC CDD8322A.
+ | 
+Referência: Processo nº 53500.013983/2015-64 | 
+SEI nº 16171593 |

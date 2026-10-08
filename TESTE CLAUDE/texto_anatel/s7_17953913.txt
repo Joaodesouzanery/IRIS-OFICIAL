@@ -1,0 +1,104 @@
+SEI/ANATEL - 16033119 - Análise
+Boletim de Serviço Eletrônico em 06/08/2026
+Análise nº 65/2026/OP
+Processo nº 53500.014039/2010-10
+Interessado: Tim S A
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº (14073981) interposto pela TIM S.A., inscrita no CNPJ sob nº 02.421.421/0001-11, contra o teor do Despacho Decisório nº 320/2025/CODI/SCO (SEI nº 13651599), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários relativos à Contribuição para o Fomento da Radiodifusão Pública (CFRP), para os exercícios de 2009 e 2010.
+EMENTA
+DIREITO TRIBUTÁRIO E ADMINISTRATIVO. RECURSO ADMINISTRATIVO. CONTRIBUIÇÃO PARA O FOMENTO DA RADIODIFUSÃO PÚBLICA. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso administrativo interposto por TIM S.A. contra despacho da Superintendência de Controle de Obrigações que julgou procedentes os lançamentos dos créditos tributários relativos à Contribuição para o Fomento da Radiodifusão Pública (CFRP), referentes aos exercícios de 2009 e 2010.
+Pedidos da recorrente. A recorrente alegou vício material na exigência da CFRP. Sustentou que não presta serviços de comunicação social. Defendeu violação ao princípio da referibilidade. Alegou erro material no cálculo do número de estações. Argumentou que a contribuição somente poderia ser exigida a partir de 31/03/2010, em razão do princípio da anterioridade.
+Admissibilidade. O recurso foi considerado tempestivo. A decisão reconheceu a legitimidade, o interesse recursal e a ausência de contrariedade a súmula da Agência.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se a prestadora de serviços de telecomunicações é sujeito passivo da CFRP, ainda que não preste serviços de comunicação social; (ii) saber se a cobrança da CFRP exige referibilidade direta entre o contribuinte e a destinação dos recursos; (iii) saber se houve erro material no cálculo do número de estações considerado no lançamento; e (iv) saber se a cobrança da contribuição nos exercícios de 2009 e 2010 violou o princípio da anterioridade tributária.
+III. RAZÕES DE DECIDIR
+A CFRP tem como fato gerador a prestação dos serviços de telecomunicações previstos no Anexo da Lei nº 11.652/2008.
+O sujeito passivo da CFRP é a prestadora de serviços de telecomunicações.
+A destinação dos valores arrecadados à Empresa Brasil de Comunicação não afasta a sujeição passiva das prestadoras de serviços de telecomunicações.
+A Administração não dispõe de discricionariedade para afastar a incidência da lei sobre a prestadora definida como contribuinte.
+A exigência de referibilidade direta não se aplica nos termos defendidos pela recorrente. A decisão considerou suficiente o vínculo da exação com os objetivos da intervenção no domínio econômico.
+O fomento à radiodifusão pública foi considerado compatível com a eleição das prestadoras de telecomunicações como sujeitos passivos da contribuição.
+Não foi reconhecido erro material no cálculo do número de estações. A decisão registrou que os dados foram extraídos do STEL com base nas estações licenciadas pela própria prestadora.
+Não houve violação ao princípio da anterioridade tributária. A decisão adotou o entendimento de que a cobrança da CFRP em 2009 observou o exercício financeiro seguinte ao da publicação da lei instituidora.
+A decisão registrou que a própria Lei nº 11.652/2008 diferiu para 2009 a produção de efeitos dos arts. 32 e 33. Por isso, a incidência da contribuição sobre fatos geradores de 2009 foi considerada válida.
+IV. DISPOSITIVO E TESE
+Recurso desprovido.
+Tese de julgamento: "1. A prestadora de serviços de telecomunicações é sujeito passivo da Contribuição para o Fomento da Radiodifusão Pública, ainda que não preste serviços de comunicação social. 2. A cobrança da CFRP não depende de referibilidade direta e individual entre o contribuinte e a destinação dos recursos. 3. Não há erro material no lançamento quando o número de estações é apurado a partir dos dados do STEL relativos às estações licenciadas pela própria prestadora. 4. A cobrança da CFRP nos exercícios de 2009 e 2010 não viola o princípio da anterioridade, pois a Lei nº 11.652/2008 produziu efeitos quanto à instituição da exação a partir do ano seguinte à sua publicação."
+Dispositivos relevantes citados: CF/1988, art. 150, III, a, b e c; Lei nº 11.652/2008, arts. 32, § 3º e § 9º, e 34; Portaria Anatel nº 1.355/2019, item 7.1.1.
+REFERÊNCIAS
+Lei nº 5.172, de 25 de outubro de 1966, que dispõe sobre o Sistema Tributário Nacional e institui normas gerais de direito tributário aplicáveis à União, Estados e Municípios (Código Tributário Nacional - CTN);
+Lei nº 11.652, de 07 de abril de 2008, que institui os princípios e objetivos dos serviços de radiodifusão pública explorados pelo Poder Executivo ou outorgados a entidades de sua administração indireta e dá outras providências;
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Portaria Anatel nº 642, de 26 de julho de 2013, com a redação dada pela Portaria Anatel nº 1.395, de 09 de outubro de 2017, que disciplina os casos de manifestação obrigatória da Procuradoria Federal Especializada junto à Anatel; e
+Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C), aprovado pela Portaria nº 1355, 26 de julho de 2019.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº (14073981) interposto pela TIM S.A., inscrita no CNPJ sob nº 02.421.421/0001-11, contra o teor do Despacho Decisório nº 320/2025/CODI/SCO (SEI nº 13651599), da Superintendência de Controle de Obrigações (SCO), que julgou procedentes os lançamentos dos créditos tributários relativos à Contribuição para o Fomento da Radiodifusão Pública (CFRP), para os exercícios de 2009 e 2010.
+Em 25/6/2025, conforme Certidão de Intimação Cumprida (SEI nº 13894690), o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo ora sob análise.
+Foi elaborado o Informe nº 297/2026/CODI/SCO (SEI nº 15552073), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Os autos não foram encaminhados para manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel, visto que não estão satisfeitos os critérios do art. 5º da Portaria nº 642, de 26 de julho de 2013.
+Nos termos do Despacho Decisório nº 222/2026/CODI/SCO (SEI nº 15552086), a Superintendente de Controle de Obrigações conheceu do Recurso interposto, e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 355/2026 (SEI nº 15557518).
+Fui designado relator da matéria por meio do sorteio realizado em 27/07/2026, nos termos da Certidão de Distribuição SEI nº 16023750.
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, atende aos requisitos de: i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; ii) legitimidade, uma vez que a empresa é a destinatária da decisão contra a qual se insurge; iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+A Recorrente alega, em síntese: (i) existência de vício material na exigência da Contribuição para o Fomento da Radiodifusão Pública – CFRP, uma vez que a Recorrente não está autorizada a prestar serviços de comunicação social, não podendo ser destinatária dos recursos arrecadados pela Anatel à Empresa Brasil de Comunicação – EBC; (ii) que a exigência da CFRP viola o princípio da referibilidade, pois a contribuição foi instituída com a condição de que o produto da arrecadação seja destinado a finalidade específica, característica típica das CIDEs. Dessa forma, somente poderia ser cobrada de contribuintes que recebam benefício direto dos serviços prestados pela entidade destinatária dos recursos (empresas prestadoras de serviços de telecomunicações), sendo indispensável a vinculação a uma finalidade específica; (iii) que houve erro material no cálculo do número de estações, que foi realizado com base no item 49 da Lei nº 11.652/2008, quando o correto seria o item 7 do mesmo diploma legal; (iv) que a Contribuição para o Fomento da Radiodifusão Pública – CFRP somente poderia ser exigida – ad argumentandum – a partir de 31/03/2010, em respeito ao princípio da anterioridade.
+Primeiramente, cumpre destacar que a Contribuição para o Fomento da Radiodifusão Pública - CFRP tem como fato gerador a prestação dos serviços de telecomunicações de que trata o Anexo da Lei nº 11.652/2008.
+A Resolução nº 729/2020 também regulamentou aspectos importantes inerentes a essa contribuição:
+o sujeito passivo da CFRP é a prestadora de serviços de telecomunicações, outorgada ou não;
+sua base de cálculo corresponde ao número de estações licenciadas ou não, na data de ocorrência do fato gerador, que acontece no dia 1º de janeiro de cada ano; e
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a CFRP terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até esta data.
+À Anatel, na condição de sujeito ativo dos referidos tributos, compete planejar, executar, acompanhar e avaliar as atividades relativas à tributação, fiscalização, arrecadação, cobrança e recolhimento de tais obrigações.
+Conforme se depreende do texto legal, o sujeito passivo da CFRP é a prestadora de serviços de telecomunicações. Os valores recolhidos à título desta contribuição são destinados ao apoio e desenvolvimento da rede pública de comunicação gerida pela Empresa Brasil de Comunicação - EBC.
+Não cabe aqui qualquer discricionariedade do agente público na interpretação da lei, que já foi objeto de diversas decisões judiciais em que se reconheceu a legitimidade da cobrança de referida contribição pelas prestadoras de serviços de telecomunicações.
+O contribuinte, no presente caso, não é a empresa de radiodifusão, como pretende sustentar a ora Recorrente, mas a prestadora de serviços de telecomunicações, que financia o sistema de comunicação social.
+A Recorrente sustenta, ainda, a necessidade da referibilidade direta de referida contribuição, uma vez que a CFRP retira recursos do setor de telecomunicações para custear a radiodifusão pública.
+Há jurisprudência consolidada no sentido de se admitir que, no caso das Contribuições de Intervenção no Domínio Econômico - CIDEs, como é o caso da CFRP, não há que existir um benefício direto e individual ao pagador, bastando que a exação esteja atrelada aos grandes objetivos e diretrizes da atividade econômica geral fixados na Constituição.
+ A atuação estatal voltada ao fomento à radiodifusão pública justifica-se pelo impacto social amplo, integrando a política nacional de comunicação de competência da União. A infraestrutura de telecomunicações e a radiodifusão compartilham o mesmo ecossistema tecnológico e regulatório, o que legitima a eleição das prestadoras de telecomunicações como sujeitos passivos para financiar o setor público de comunicação.
+No tocante à existência de erro material quanto ao número de estações, cumpre destacar que os dados foram extraídos do STEL com base nas estações licenciadas pela própria prestadora, conforme descrito nos itens 3.17 a 3.20 do Informe nº 157/2025/CODI/SCO (SEI nº 13397055).
+ No tocante à violação ao princípio da anterioridade tributária, já refutado em outros momentos no curso deste processo, vale reproduzir o disposto no Parecer nº 299/2023/PFE-ANATEL/PGF/AGU (10522450), que se manifestou no seguinte sentido:
+Parecer nº 299/2023/PFE-ANATEL/PGF/AGU
+(...)
+12. O princípio da anterioridade determina a observância de um período entre a publicação de lei que institua ou majore tributo e o início da respectiva cobrança. Cuida-se de um desdobramento do princípio da segurança jurídica, assegurando a devida previsibilidade para os contribuintes, evitando que esses sejam surpreendidos por mudanças abruptas na legislação tributária. Dessa forma, o contribuinte tem a oportunidade de se preparar financeiramente para o pagamento das exações, uma vez que terá conhecimento prévio das obrigações que lhe serão impostas.
+13. A Constituição Federal positivou esse princípio nos seguintes termos:
+Art. 150. Sem prejuízo de outras garantias asseguradas ao contribuinte, é vedado à União, aos Estados, ao Distrito Federal e aos Municípios:
+III - cobrar tributos:
+a) em relação a fatos geradores ocorridos antes do início da vigência da lei que os houver instituído ou aumentado;
+b) no mesmo exercício financeiro em que haja sido publicada a lei que os instituiu ou aumentou; (Vide Emenda Constitucional nº 3, de 1993)
+c) antes de decorridos noventa dias da data em que haja sido publicada a lei que os instituiu ou aumentou, observado o disposto na alínea b; (grifou-se)
+14. Assim, tributos novos ou majorados somente são exigíveis apenas no exercício financeiro seguinte ao da publicação da respectiva lei. Além disso, caso o tributo tenha sido instituído no trimestre final do exercício, a cobrança poderá ser efetivada no exercício seguinte, porém será necessária a observância adicional de período mínimo de 90 (noventa) dias após a publicação da respectiva lei.
+15. A prestadora aduz que a Lei nº 11.652, de 2008, ao instituir a CFRP, não especificou o momento de concreção do fato gerador, tendo previsto somente que essa "será paga, anualmente, até o dia 31 de março" . Tendo em vista que no §3º do art. 32 do referido Diploma Legal se determina a aplicação subsidiária da legislação do imposto de renda, concluí que o fato gerador deveria, portanto, observar a mesma sistemática, de modo que sua concreção ocorreria no final de cada exercício, isto é, no dia 31 de dezembro.
+16. Diante disso, segundo essa tese, o pagamento a ser efetivado até 31 de março contemplaria o fato gerador ocorrido no ano anterior. Assim, argumenta que não haveria qualquer tributo a ser pago em 2009, pois a lei não poderia cobrar tributos referentes a 2008, ano em que a exação foi instituída, em observância ao princípio da anterioridade.
+17. Na hipótese, entretanto, a articulação do princípio da anterioridade, conforme aduzida na impugnação, está incorreta, confundindo-o com o princípio da irretroatividade. A vedação constitucional presente no art. 150, III, 'b', C.F. se refere à cobrança do tributo no mesmo exercício, não à incidência da lei ou à configuração do fato gerador. Conforme disposto no art. 150, III, 'a', C.F., a lei não pode retroagir para alcançar fatos geradores anteriores à publicação lei, sendo possível, a contrario sensu, cobrar exações em relação àqueles ocorridos posteriormente. Assim, desde que a cobrança seja feita apenas no exercício seguinte, em obediência à alínea 'b' do mesmo comando constitucional, não há vedação para que recaia sobre fato gerador ocorrido no ano anterior após a publicação da respectiva lei, em consonância com a alínea 'a'.
+18. Entretanto, no caso específico da CFRP, o impedimento para a cobrança do tributo sobre fatos geradores ocorridos em 2008 não decorre do princípio da anterioridade, mas da determinação da própria Lei nº 11.652, de 2008. É que o referido Diploma Legal, em seu art. 34, estabeleceu que a norma de instituição desse tributo somente passaria a ter a efeitos a partir de 2009, de modo que não estava apta a incidir sobre os fatos materializados em 2008. In verbis:
+Art. 32. Fica instituída a Contribuição para o Fomento da Radiodifusão Pública, com o objetivo de propiciar meios para a melhoria dos serviços de radiodifusão pública e para a ampliação de sua penetração mediante a utilização de serviços de telecomunicações.
+(...)
+Art. 34. Esta Lei entra em vigor na data de sua publicação, produzindo efeitos, relativamente aos arts. 32 e 33 desta Lei, a partir do ano seguinte à sua publicação.
+19. Com isso, ainda que o princípio da anterioridade e da irretroatividade não representem óbice para que o tributo recaia sobre fatos geradores ocorridos em 2008, a própria lei de criação impediu sua incidência sobre eventos materializados naquele ano, pois não apenas a cobrança, mas a produção de efeitos da norma in totum foram diferidas para o ano de 2009.
+(...)
+35. ISSO POSTO, em resposta às indagações formuladas pelo consulente, proponho que se encaminhe as conclusões a seguir.
+(...)
+b) Quanto à possibilidade de cobrança do tributo no exercício de 2009:
+- o fato gerador da CFRP ocorre com a prestação de serviço de telecomunicação no mesmo ano em que se efetiva a cobrança, conforme se infere claramente do art. 32, §9º, combinado com o art. 34, da Lei nº 9.652, de 2008, que determinaram de forma explícita e especifica que os efeitos da instituição do tributo se iniciariam em 2009 e que naquele mesmo ano haveria sua primeira cobrança;
+- a cobrança do tributo em 2009 é compatível com o princípio da anterioridade, por ter sido efetivada no exercício seguinte ao da publicação da lei que o institui, recaindo sobre fato gerador ocorrido no mesmo ano.
+Pelo acima exposto, opino pelo conhecimento e não provimento do recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 06/08/2026, às 17:54, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16033119 e o código CRC 0E0B7671.
+ | 
+Referência: Processo nº 53500.014039/2010-10 | 
+SEI nº 16033119 |

@@ -1,0 +1,54 @@
+SEI/ANATEL - 15511178 - Acórdão
+Boletim de Serviço Eletrônico em 27/04/2026
+DOU de 27/04/2026, seção 1, página 6
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 112, de 17 de abril de 2026
+Processo nº 53508.015099/2009-46
+Recorrente/Interessado: TELEFÔNICA BRASIL S.A.
+CNPJ nº 02.558.157/0001-62
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 952, de 9 de abril de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. RECURSO ADMINISTRATIVO. RECURSO DE OFÍCIO. RECURSO DE OFÍCIO NÃO CONHECIDO. RECURSO ADMINISTRATIVO PARCIALMENTE PROVIDO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por TELEFÔNICA BRASIL S.A., sucessora da TELERGIPE CELULAR S.A., contra decisão que reconheceu créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust nos exercícios de 2005 e 2006.
+2. Recurso de Ofício interposto em razão de exoneração parcial de créditos tributários.
+3. Revisão dos valores lançados após manifestação da Procuradoria Federal Especializada junto à Anatel - PFE-Anatel e realização de nova fiscalização, com ajuste da base de cálculo e das penalidades aplicadas.
+II. QUESTÃO EM DISCUSSÃO
+1. Saber se o Recurso de Ofício atende ao requisito de valor mínimo para sua admissibilidade.
+2. Saber se os lançamentos de créditos tributários e multas de ofício relativos ao Fust, nos exercícios de 2005 e 2006, observaram a legislação aplicável, inclusive quanto à base de cálculo, decadência, motivação dos atos e aplicação de penalidades.
+III. RAZÕES DE DECIDIR
+1. O Recurso de Ofício não deve ser conhecido, pois o valor exonerado é inferior ao limite estabelecido pela Resolução Interna Anatel nº 338/2024, desconsiderados juros e multas.
+2. O Recurso Administrativo é tempestivo, interposto por parte legítima e com interesse recursal.
+3. Não há nulidade nas notificações de lançamento, pois os atos administrativos continham os elementos essenciais e eventuais omissões foram supridas pelo acesso aos relatórios de fiscalização, não havendo prejuízo ao direito de defesa.
+4. O prazo decadencial para constituição do crédito tributário foi observado, nos termos do art. 173, I, do Código Tributário Nacional - CTN.
+5. A base de cálculo da contribuição ao Fust foi revisada, com exclusão de receitas não tributáveis, abatimento de descontos concedidos e segregação de receitas de interconexão e Exploração Industrial de Linha Dedicada - EILD, em conformidade com decisão judicial.
+6. Sobre receitas de interconexão com exigibilidade suspensa, não incide multa de ofício, subsistindo, contudo, a incidência de juros de mora.
+7. A multa de ofício de 75% (setenta e cinco por cento), prevista no art. 44, I, da Lei nº 9.430/1996, é aplicável nos casos de omissão ou inexatidão na declaração, não prevalecendo o percentual de 2% (dois por cento) previsto no Decreto nº 3.624/2000, que se refere à multa de mora.
+IV. DISPOSITIVO E TESE
+1. Recurso de Ofício não conhecido.
+2. Recurso Administrativo conhecido e parcialmente provido para ajustar a base de cálculo da contribuição ao Fust e das penalidades, reconhecendo:
+a) para 2005: créditos de [Item 1 do Apartado Sigiloso SEI nº 15465041] (receitas de interconexão), [Item 2 do Apartado Sigiloso SEI nº 15465041] (receitas sem interconexão) e multa de ofício de [Item 3 do Apartado Sigiloso SEI nº 15465041] (receitas sem interconexão); e,
+b) para 2006: créditos de [Item 4 do Apartado Sigiloso SEI nº 15465041] (receitas de interconexão), R$ 0,00 (receitas sem interconexão) e multa de ofício de R$ 0,00.
+3. Interrupção da incidência da multa de mora sobre receitas de interconexão, desde a concessão da medida judicial até 30 (trinta) dias após a publicação da decisão judicial que considerar devido o tributo.
+4. Determinação de comunicação ao Ministério das Comunicações - MCom para atualização dos valores do Fust e do Fundo para o Desenvolvimento Tecnológico das Telecomunicações - Funttel.
+Tese de julgamento: "1. O Recurso de Ofício não deve ser conhecido quando o valor exonerado é inferior ao limite legal, desconsiderados juros e multas. 2. O Recurso Administrativo deve ser parcialmente provido para ajustar a base de cálculo da contribuição ao Fust e das penalidades, observando a exclusão de receitas não tributáveis, a segregação de receitas de interconexão e a aplicação da multa de ofício de 75% (setenta e cinco por cento) apenas sobre as parcelas cabíveis."
+Dispositivos relevantes citados: Lei nº 5.172/1966 - CTN, arts. 142, 150, § 4º, e 173, I; Lei nº 9.430/1996, art. 44, I; Lei nº 9.998/2000, art. 6º, IV; Decreto nº 70.235/1972, arts. 10, 11 e 34; Resolução Interna Anatel nº 338/2024; Resolução nº 612/2013; Decreto nº 3.624/2000, art. 8º.
+Jurisprudência relevante citada: Súmula Anatel nº 27, de 26 de julho de 2024; Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 5; Súmula CARF nº 103.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 19/2026/NP (SEI nº 15272297), integrante deste acórdão:
+a) não conhecer do Recurso de Ofício, uma vez que o valor exonerado é inferior ao limite para sua interposição;
+b) ratificar o conhecimento do Recurso Administrativo interposto pela TELEFÔNICA BRASIL S.A., sucessora da TELERGIPE CELULAR S.A., para, no mérito, dar-lhe provimento parcial, apenas em relação à reavaliação da base de cálculo da contribuição ao Fust, revendo os valores devidos para:
+b.1) reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao Fust, nos montantes de [Item 75 do Apartado Sigiloso SEI nº 15465041], referentes às receitas de interconexão, e de [Item 76 do Apartado Sigiloso SEI nº 15465041], referentes às receitas sem interconexão, para o exercício de 2005, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000;
+b.2) reconhecer a procedência parcial dos lançamentos dos créditos tributários referentes ao Fust, nos montantes de [Item 77 do Apartado Sigiloso SEI nº 15465041], referentes às receitas de interconexão, e, R$ 0,00 (zero real), referentes às receitas sem interconexão, para o exercício de 2006, nos termos do art. 6º, IV, da Lei nº 9.998, de 17 de agosto de 2000;
+b.3) reconhecer a procedência parcial dos lançamentos dos créditos referentes à multa de ofício, referente às receitas sem interconexão e em virtude da não declaração da contribuição, no montante de [Item 78 do Apartado Sigiloso SEI nº 15465041], para o exercício de 2005, em conformidade com o art. 44, I, da Lei nº 9.430, de 27 de dezembro de 1996; e,
+b.4) interromper a incidência da multa de mora, sobre as receitas de interconexão relativas aos exercícios de 2005 e 2006, desde a concessão da medida judicial até 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo; e,
+c) determinar a notificação da Recorrente e o posterior arquivamento dos autos.
+Participaram da deliberação o Presidente Substituto Alexandre Reis Siqueira Freire, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Presidente Carlos Manuel Baigorri, em licença para tratamento da própria saúde.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Presidente, Substituto, em 24/04/2026, às 18:04, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15511178 e o código CRC F132818E.
+ | 
+Referência: Processo nº 53508.015099/2009-46 | 
+SEI nº 15511178 |

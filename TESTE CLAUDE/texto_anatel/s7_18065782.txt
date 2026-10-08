@@ -1,0 +1,115 @@
+SEI/ANATEL - 16122764 - Análise
+Boletim de Serviço Eletrônico em 04/09/2026
+Análise nº 75/2026/OP
+Processo nº 53504.008043/2025-95
+Interessado: GUILHERME CARRAPATOSO GARCIA SERVICOS ADMINISTRATIVOS
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo em face de decisão proferida pela Superintendente de Controle de Obrigações, que negou provimento ao Recurso Administrativo anteriormente apresentado, mantendo, integralmente, decisão de aplicação da sanção de multa por obstrução à atividade de fiscalização da Anatel.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. OBSTRUÇÃO À ATIVIDADE DE FISCALIZAÇÃO. MULTA. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+O recurso. Recurso administrativo contra decisão que manteve multa de R$ 55.000,00 por obstrução à atividade de fiscalização da Anatel.
+A alegação recursal. A recorrente sustenta excesso, desproporcionalidade e falta de fundamentação da multa.
+O pedido. A recorrente requer a redução da multa ou, subsidiariamente, sua fixação no valor mínimo.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a conduta caracterizou obstrução à atividade de fiscalização; e (ii) saber se a multa foi calculada e fundamentada de forma adequada.
+III. RAZÕES DE DECIDIR
+O recurso atende aos requisitos de tempestividade, legitimidade e interesse em recorrer.
+A recorrente não apresentou provas suficientes para afastar as conclusões registradas no auto de infração e no relatório de fiscalização.
+A obstrução à fiscalização ocorre quando o administrado impede, dificulta ou embaraça a atividade da Anatel.
+A infração não exige a produção de resultado concreto além do impedimento ou da dificuldade à atuação fiscalizatória.
+A multa considerou o porte da empresa e a intensidade da obstrução à fiscalização.
+A metodologia não aplicou acréscimos por antecedentes ou agravantes.
+Não foram identificadas circunstâncias que permitissem a redução da multa.
+A comparação com multa aplicada em outro processo não afasta a sanção, pois as infrações possuem naturezas e metodologias de cálculo distintas.
+A decisão recorrida apresentou os critérios e o cálculo da sanção no informe de primeira instância, ao qual a recorrente teve acesso.
+IV. DISPOSITIVO E TESE
+Recurso administrativo conhecido e desprovido.
+Tese de julgamento: "1. A ausência de prova capaz de afastar as conclusões da fiscalização mantém caracterizada a obstrução à atividade de fiscalização. 2. A multa calculada com base no porte da empresa e na intensidade da obstrução deve ser mantida quando não houver circunstância que autorize sua redução."
+Dispositivos relevantes citados: Lei nº 9.784/1999, art. 36; Resolução Anatel nº 612/2013, arts. 85, 116 e 123; Resolução Anatel nº 746/2021, art. 7º, II, e art. 40, I e IV.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, Lei Geral de Telecomunicações (LGT);
+Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal;
+Lei nº 9.873, de 23 de novembro de 1999, que estabelece prazo de prescrição para o exercício de ação punitiva pela Administração Pública Federal, direta e indireta;
+Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD);
+Resolução nº 589, de 7 de maio de 2012, que aprova o Regulamento de Aplicação de Sanções Administrativas (Rasa);
+Resolução nº 612, de 29 de abril de 2013, que aprova o Regimento Interno da Anatel (RIA).
+RELATÓRIO
+DOS FATOS
+Trata-se de análise do Recurso Administrativo SEI nº 15851258, interposto por GUILHERME CARRAPATOSO GARCIA SERVIÇOS ADMINISTRATIVOS (INOVACODE), inscrito no CNPJ com o nº 14.737.908/0001-97, contra o Despacho Decisório nº 259/2026/CODI/SCO (SEI nº 15680095), da Superintendente de Controle de Obrigações, que negou provimento ao Recurso Administrativo anteriormente apresentado, mantendo, integralmente, os termos do Despacho Decisório nº 25/2026/GR09CO/GR09/SFI (SEI nº 15267250), por meio do qual o Gerente Regional nos Estados do Ceará, Rio Grande do Norte e Piauí decidiu aplicar a sanção de multa no valor de R$ 55.000,00 (cinquenta e cinco mil reais) por obstrução à atividade de fiscalização desta Agência.
+Por meio do Informe nº 53/2026/GR10CO/GR10/SFI (SEI nº 16034878), cujo relatório detalhou todos os fatos anteriores desde a instauração do presente processo, a área técnica analisou as alegações recursais e sugeriu ao Conselho Diretor o conhecimento e não provimento do Recurso.
+Informe nº 53/2026/GR10CO/GR10/SFI (SEI nº 16034878):
+I - Relatório
+3.2. O presente Pado foi instaurado para apurar a irregularidade de obstrução à fiscalização, conforme indicado no Auto de Infração SP202508131100 (SEI nº 14191742).
+3.3. O Autuado foi intimada da instauração do processo e da concessão de prazo para apresentação de defesa por meio do recebimento do Auto de Infração SP202508131100 (SEI nº 14191742), quedando-se inerte.
+3.4. Notificado para a apresentação de Alegações Finais, por meio do Ofício nº 151/2026/GR01CO/GR01/SFI-ANATEL (SEI nº 15161536), o Autuado se pronunciou (SEI nº 15201778).
+3.5. Proferido o Despacho Decisório nº 25/2026/GR09CO/GR09/SFI (SEI nº 15267250), que acolheu as razões do Informe nº 60/2026/GR09CO/GR09/SFI (SEI nº 15265810), foi aplicada ao Interessado sanção de multa, no valor de R$ 55.000,00 (cinquenta e cinco mil reais).
+3.6. Cientificado do teor da decisão, por meio do Ofício nº 298/2026/GR09CO/GR09/SFI-ANATEL (SEI nº 15345282), o Interessado apresentou Recurso Administrativo 31/03/2026 (SEI nº 15417182).
+3.7. Restou suspensa a exigibilidade da sanção, em virtude da interposição do Recurso Administrativo, conforme Certidão (SEI nº 15423398).
+3.8. Os pressupostos de admissibilidade recursal, bem como as razões de mérito apresentadas, foram examinados por meio do Informe nº 28/2026/GR10CO/GR10/SFI-ANATEL (SEI nº 15556506), sendo em seu bojo sugerido o conhecimento do Recurso Administrativo apresentado e seu não provimento.
+3.9. A Superintendente de Controle de Obrigações, acolhendo as sugestões supra, exarou decisão por meio do Despacho Decisório nº 259/2026/CODI/SCO (SEI nº 15680095).
+3.10. O interessado foi intimado da decisão, por meio do Ofício nº 31/2026/GR10CO/GR10/SFI-ANATEL (SEI nº 15739224), apresentando novo Recurso Administrativo em 23/06/2026 (SEI nº 15851258).
+3.11. Considerando o disposto no art. 123 do Regimento Interno da Anatel, foi atribuído efeito suspensivo ao Recurso Administrativo em análise, conforme Certidão (SEI nº 15855423).
+...
+4. CONCLUSÃO
+4.1. Ante o exposto, dispensando-se a oitiva da Procuradoria, nos termos do Regimento Interno da Anatel, sugere-se, à Superintendente de Controle de Obrigações, que conheça do Recurso e, ao Conselho Diretor da Anatel, que negue a ele provimento.
+O processo foi, então, encaminhado para deliberação deste colegiado pela Matéria para Apreciação do Conselho Diretor nº 577/2026 (SEI nº 16045192).
+Em 6 de agosto de 2026 fui designado relator da matéria, nos termos da certidão SEI nº 16081384.
+São os fatos.
+DA ANÁLISE
+A tramitação do processo ocorreu em consonância com os dispositivos legais e regulamentares, sendo observados os princípios do processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.874, de 29 de janeiro de 1999 (Lei do Processo Administrativo - LPA) e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, 29 de abril de 2013.
+I - DA ADMISSIBILIDADE
+Quanto à admissibilidade do Recurso Administrativo em tela, verifica-se, como já atestado pela área técnica, que este atende aos requisitos: de tempestividade, visto que interposto no prazo recursal de 10 (dez) dias, a contar da intimação; de legitimidade, posto que a peça recursal foi assinada por representante legal devidamente habilitado; de interesse em recorrer, uma vez que a entidade é a destinatária direta da decisão contra a qual se insurge; e, por fim, não há contrariedade a entendimento fixado em Súmula pela Anatel.
+Presentes os pressupostos de admissibilidade recursal insculpidos no art. 116 do RIA, entendo como correta a decisão de se conhecer do Recurso Administrativo contida no Despacho Decisório nº 343/2026/CODI/SCO (SEI nº 16045185).
+II - DO MÉRITO RECURSAL
+À Recorrente foi aplicada a sanção de multa no valor de R$ 55.000,00 (cinquenta e cinco mil reais) por obstrução à atividade de fiscalização de certificação de produtos, conduta descrita e atestada por Agentes de Fiscalização desta Agência no Relatório de Fiscalização nº 161/2025/GR01FI2/GR01/SFI (SEI nº 14198991), caracterizando infração ao art. 7º, inciso II, c/c o art. 40, incisos I e IV, da Resolução Anatel nº 746, de 22 de junho de 2021, que aprovou o Regulamento de Fiscalização Regulatória.
+Regulamento de Fiscalização Regulatória:
+Art. 7º Os Administrados submetem-se à Fiscalização Regulatória da Anatel mediante as seguintes obrigações, dentre outras constantes da legislação e da regulamentação:
+...
+II - permitir o acesso às instalações, equipamentos, aplicativos, facilidades, sistemas, ferramentas e recursos tecnológicos, documentos, dados e informações de natureza técnica, operacional, econômico-financeira, contábil ou outras pertinentes, em seu poder ou em poder de terceiros, observado o disposto no art. 19 deste Regulamento;
+...
+Art. 40. Obstrução à atividade de Fiscalização Regulatória é todo ato, comissivo ou omissivo, direto ou indireto, do Administrado ou de seus prepostos, que impeça, dificulte ou embarace a atividade de acompanhamento exercida pela Anatel mediante:
+I - oferecimento de entrave à atuação dos servidores ou recusa no atendimento;
+...
+IV - impedimento de acesso físico às instalações, por parte do Administrado.
+Em seu Recurso (SEI nº 15851258), a Recorrente sustenta, em síntese, que a penalidade é excessiva, desproporcional e insuficientemente fundamentada. Alega que as decisões administrativas não apresentaram critérios objetivos e individualizados para definir o valor, nem ponderaram adequadamente a gravidade concreta da conduta, sua condição econômica, eventual vantagem auferida e as circunstâncias do caso. Também afirma inexistirem agravantes e haver atenuantes, tais como a ausência de outras infrações e de prejuízo à coletividade.
+A requerente compara a sanção tratada nestes autos com a multa de R$ 6.753,44 a ela aplicada no âmbito de processo conexo (SEI nº 53504.010408/2025-41), no qual, segundo relata, houve demonstração expressa da fórmula de cálculo. Argumenta ainda que a metodologia aprovada por meio da Resolução Interna Anatel nº 472, de 22 de agosto de 2025, prevê, para empresa de médio porte, valor-base de R$ 10.500,00 e valor mínimo de R$ 2.500,00 em casos de obstrução à fiscalização. 
+Ao final requer:
+que o Conselho Diretor conheça e dê provimento ao recurso, reformando a decisão para reduzir a multa a patamar que considere justo, razoável e proporcional, à luz dos argumentos e critérios por ela indicados;
+subsidiariamente, que a multa seja fixada em seu valor mínimo legal. 
+Todas as alegações da Recorrente foram detalhamente examinadas e afastadas por meio do Informe nº 53/2026/GR10CO/GR10/SFI (SEI nº 16034878), com o qual estou integralmente de acordo, razão pela qual o referido Informe torna-se parte integrante desta Análise, conforme art. 3º, §5º do RIA.
+§ 5º Os votos serão motivados, contendo resumo em forma de ementa, e fundamentação clara e congruente, admitida a declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas que, nesse caso, farão parte do voto.
+No mérito, observo que a maior parte dos argumentos apenas repete questões já examinadas no recurso anterior, sem trazer elementos novos que justifiquem a revisão da decisão. Quanto à comparação com a multa aplicada em outro processo, entendo que ela não é adequada, pois as infrações possuem naturezas distintas e seguem metodologias de cálculo diferentes.
+Verifico que a multa de R$ 55.000,00 (cinquenta e cinco mil reais) foi calculada com base em metodologia objetiva prevista na regulamentação aplicável, aprovada pela Resolução Interna Anatel nº 472, de 22 de agosto de 2025. Foram considerados o porte médio da empresa e a ocorrência de óbice total à fiscalização, sem acréscimos por antecedentes ou agravantes. Também não foram identificadas circunstâncias que permitissem reduzir a multa.
+Entendo, ainda, que a decisão foi devidamente fundamentada, pois os critérios e o cálculo da sanção foram detalhados no informe de primeira instância, ao qual a recorrente teve acesso. A alegação de falta de proporcionalidade também não merece acolhimento, já que a metodologia prevê valores graduados conforme o porte da empresa e a intensidade da obstrução.
+A empresa teve, também, a oportunidade para se manifestar antes da decisão de primeira instância. No entanto, não apresentou elementos capazes de contestar as conclusões da fiscalização da Agência.
+As informações registradas pela equipe de fiscalização no Auto de Infração e no Relatório de Fiscalização têm presunção relativa de veracidade. Isso significa que, por terem sido produzidas por agentes públicos no exercício da atividade fiscalizatória, são consideradas verdadeiras até que haja prova suficiente em sentido contrário. Cabia, portanto, à empresa apresentar provas que afastassem as conclusões dos fiscais, o que não ocorreu de forma satisfatória.
+Esse entendimento está previsto no art. 36 da Lei nº 9.784/1999, que estabelece que o interessado deve provar os fatos que alegar, sem afastar o dever do órgão competente de instruir o processo. 
+Art. 36. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução e do disposto no art. 37 desta Lei.
+A mesma regra consta do art. 85 do RIA.
+Art. 85. Cabe ao interessado a prova dos fatos que tenha alegado, sem prejuízo do dever atribuído ao órgão competente para a instrução.
+(grifou-se)
+Assim, se a empresa pretendia contestar as alegações dos fiscais e afastar a presunção de veracidade dos atos de fiscalização, deveria ter apresentado provas consistentes de que a infração não ocorreu. Entretanto, essas provas não foram apresentadas.
+Ainda assim, em respeito ao direito de defesa, ao contraditório e à possibilidade de reavaliação ampla dos recursos administrativos, os argumentos apresentados no recurso foram examinados.
+A atividade de fiscalização da Anatel decorre de seu poder de polícia. Além disso, a empresa tem dever legal e regulatório de permitir o acesso às instalações, equipamentos, aplicativos, facilidades, sistemas, ferramentas e recursos tecnológicos, documentos, dados e informações de natureza técnica, operacional, econômico-financeira, contábil ou outras pertinentes, em seu poder ou em poder de terceiros, no prazo definido pela Agência. Quando o prazo não é cumprido, ou diante de qualquer ato, comissivo ou omissivo, direto ou indireto, do Administrado ou de seus prepostos, que impeça, dificulte ou embarace a atividade exercida pela Anatel, fica caracterizada a obstrução à fiscalização.
+A fiscalização não pode esperar indefinidamente pela resposta da prestadora. Suas ações exigem planejamento detalhado, considerando custos, benefícios para a sociedade, recursos disponíveis e os riscos decorrentes da falta de fiscalização.
+Também não é necessário que a conduta da empresa produza outro resultado concreto para que a infração seja configurada. Basta que ela impeça ou dificulte o trabalho dos agentes da Anatel de fiscalizar a entidade. Esse entendimento é amplamente adotado em decisões deste Colegiado.
+Dessa forma, considero caracterizada a obstrução à fiscalização.
+Ressalto que a obstrução às atividades de fiscalização é uma conduta grave, pois impede uma das principais funções do órgão regulador: verificar a correta prestação dos serviços de telecomunicações, no presente caso, a observação da devida certificação e homologação exigida para a conformidade da comercialização de equipamentos de telecomunicações. Ao dificultar a fiscalização, a empresa pode operar fora do acompanhamento da Agência e, eventualmente, deixar ocultas outras irregularidades. Por isso, essa conduta é considerada grave.
+Diante disso, concordo com a área técnica quanto à metodologia utilizada para calcular e graduar a sanção. Assim, o recurso deve ser conhecido, mas, no mérito, deve ser negado, mantendo-se a decisão recorrida.
+III - DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ONU
+A Agenda 2030 é composta de 17 Objetivos de Desenvolvimento Sustentável (ODS) e de 169 metas universais. A Figura abaixo ilustra esses objetivos:
+Figura: Objetivos de Desenvolvimento Sustentável (ODS). Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, sendo importante que referida aderência esteja explícita nas decisões deste Conselho Diretor.
+Assim, consigno que, como disposto na Matéria para Apreciação do Conselho Diretor nº 577/2026 (SEI nº 16045192), a presente matéria é abrangida pelos Objetivos de Desenvolvimento Sustentável (ODS) nº 9 (construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação), nº 12 (assegurar padrões de produção e de consumo sustentáveis) e nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU), uma vez que se alinha aos comandos arquitetados na LGT, especialmente em seu art. 19, caput e incisos VI, IX, XI, XVI e XVIII, na medida em que promove um ambiente favorável ao desenvolvimento das telecomunicações brasileiras, garante a tomada de decisão responsiva, promovendo e fazendo cumprir as leis, por meio da fiscalização, aplicação de sanções e repressão às infrações dos direitos dos usuários.
+CONCLUSÃO
+Voto por conhecer e negar provimento ao Recurso Administrativo SEI nº 15851258.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 04/09/2026, às 11:23, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16122764 e o código CRC 7C15D884.
+ | 
+Referência: Processo nº 53504.008043/2025-95 | 
+SEI nº 16122764 |

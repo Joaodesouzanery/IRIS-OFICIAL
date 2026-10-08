@@ -1,0 +1,51 @@
+SEI/ANATEL - 15822937 - Acórdão
+Boletim de Serviço Eletrônico em 19/06/2026
+DOU de 19/06/2026, seção 1, página 20
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 145, de 17 de junho de 2026
+Processo nº 53500.076806/2025-61
+Recorrente/Interessado: CLARO S.A., TIM S.A., ASSOCIAÇÃO NEO - ASSOCIAÇÃO DE OPERADORES DE TV POR ASSINATURA, PROVEDORES DE INTERNET, FORNECEDORES DE SOLUÇÕES E SERVIÇOS, FABRICANTES/DISTRIBUIDORES DE EQUIPAMENTOS E DISTRIBUIDORES DE CONTEÚDO
+CNPJ nº 40.432.544/0001-47, nº 02.421.421/0001-11 e nº 03.571.517/0001-29
+Conselheiro(a) Relator(a): Octavio Penna Pieranti
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PUBLICIDADE DE DADOS SETORIAIS DE SERVIÇO MÓVEL PESSOAL - SMP SEGMENTADOS POR OPERADORAS MÓVEIS VIRTUAIS - MVNO CREDENCIADAS. RECURSO DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. CLARO S.A. requereu tratamento sigiloso para os dados individualizados de acessos da telefonia móvel segmentados por operadoras móveis virtuais (MVNO) credenciadas. O Pedido foi negado em primeira instância. A Empresa interpôs Recurso Administrativo com pedido de efeito suspensivo.
+2. Fatos relevantes. Os dados foram retirados do painel público da Anatel em caráter preventivo. O efeito suspensivo do Recurso foi posteriormente concedido. A área técnica e a Procuradoria Federal Especializada junto à Anatel - PFE/Anatel afastaram os fundamentos do pedido de sigilo.
+3. Intervenção de terceiro. TIM S.A. e ASSOCIAÇÃO DE OPERADORES DE TV POR ASSINATURA, PROVEDORES DE INTERNET, FORNECEDORES DE SOLUÇÕES E SERVIÇOS, FABRICANTES/DISTRIBUIDORES DE EQUIPAMENTOS E DISTRIBUIDORES DE CONTEÚDO - ASSOCIAÇÃO NEO requereram ingresso no processo como terceiras interessadas. A Empresa sustentou a manutenção da publicidade dos dados e o não provimento do Recurso.
+4. Nível de acesso dos autos. Na relatoria, foi identificado que a petição inicial da CLARO S.A., a complementação da petição inicial, o Recurso Administrativo e a petição da TIM S.A. estavam com acesso restrito. Examinou-se a legalidade dessa classificação.
+II. QUESTÃO EM DISCUSSÃO
+Há quatro questões em discussão: (i) saber se o Recurso Administrativo preenche os requisitos de admissibilidade; (ii) saber se os dados de acessos do SMP segmentados por MVNO credenciadas devem receber tratamento sigiloso ou público; (iii) saber se a TIM S.A. e a ASSOCIAÇÃO NEO devem ser admitidas como terceiras interessadas; e (iv) saber se as petições e o Recurso juntados aos autos devem permanecer com acesso restrito.
+III. RAZÕES DE DECIDIR
+1. O Recurso é admissível. Foi interposto no prazo. A Recorrente é parte legitimada. Há interesse recursal. Não há contrariedade a Súmula da Agência.
+2. A publicidade é a regra na atuação administrativa e regulatória. O sigilo é medida excepcional. A restrição de acesso exige fundamento normativo específico e motivação concreta.
+3. A CLARO S.A. não demonstrou, de forma específica e individualizada, risco regulatório, concorrencial ou comercial decorrente da divulgação dos dados. As alegações foram genéricas.
+4. Os dados de acessos segmentados por MVNO credenciadas não se enquadram, sem comprovação concreta, nas hipóteses de confidencialidade do art. 39, parágrafo único, da Lei nº 9.472/1997.
+5. A divulgação dos dados atende ao interesse público e à finalidade regulatória. A medida amplia a granularidade da informação. A medida melhora a leitura da dinâmica de mercado. A medida subsidia estudos, diagnósticos e avaliações regulatórias.
+6. As MVNO credenciadas não podem ser tratadas como agentes irrelevantes para fins regulatórios. A vinculação à prestadora de origem não impede a divulgação segmentada dos acessos.
+7. O argumento de confusão do consumidor não procede. O Regulamento Geral de Serviços de Telecomunicações - RGST exige a identificação do credenciado e da prestadora de origem nos documentos da contratação e da fruição do serviço.
+8. O Recurso não trouxe elementos novos aptos a afastar os fundamentos da decisão recorrida. A manutenção da negativa de sigilo é cabível.
+9. Como os dados permaneceram indisponíveis por retirada preventiva e por força de efeito suspensivo, é cabível determinar à Superintendência Executiva - SUE e à Superintendência de Planejamento e Regulamentação - SPR a publicação de todos os dados disponíveis referentes aos acessos segmentados por MVNO credenciadas.
+10. A TIM S.A. e a ASSOCIAÇÃO NEO demonstraram interesse jurídico e regulatório na controvérsia. A decisão pode afetar seus interesses. A admissão como terceiras interessadas é cabível.
+11. A petição inicial da CLARO S.A., sua complementação, o Recurso Administrativo e a petição da TIM não contêm, nos termos reconhecidos no voto, informações cuja restrição tenha sido concretamente demonstrada. Os documentos veiculam argumentos jurídicos, pedidos e questionamentos à atuação administrativa. O acesso deve ser público.
+12. As procurações devem permanecer com acesso restrito por conterem informação pessoal. Os documentos preparatórios devem tornar-se públicos após a decisão do Conselho Diretor.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo conhecido e desprovido. Reconhecimento da TIM S.A. e ASSOCIAÇÃO NEO como terceiras interessadas. Determinação de publicação dos dados de acessos da telefonia móvel segmentados por MVNO credenciadas. Revisão, de ofício, do nível de acesso do documento SEI nº 15287315. Atribuição de acesso público aos documentos SEI nº 15287315, nº 14385907, nº 14733693 e nº 15492425.
+Tese de julgamento: "1. Os dados de acessos do SMP segmentados por MVNO credenciadas submetem-se à regra de publicidade e não recebem tratamento sigiloso sem demonstração concreta de enquadramento nas hipóteses legais de confidencialidade. 2. Alegações genéricas de sensibilidade estratégica, comercial ou concorrencial não bastam para restringir o acesso a dados setoriais. 3. A divulgação segmentada desses dados atende à finalidade regulatória, amplia a transparência e favorece o acompanhamento concorrencial do mercado. 4. É cabível a admissão de terceira interessada quando a decisão administrativa puder afetar seus direitos ou interesses. 5. Petições e recursos que contenham apenas argumentos jurídicos, pedidos e fundamentos recursais devem ter acesso público, ressalvadas as hipóteses legais específicas de restrição."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 37; Lei nº 9.472/1997, arts. 38 e 39, parágrafo único; Lei nº 9.784/1999, art. 9º, II; Lei nº 12.527/2011, arts. 3º, I, 7º, § 3º, e 31; Lei nº 14.129/2021, art. 29; Resolução nº 612/2013, arts. 47, II, 115, 116, 117, 118, § 1º, 125, II, e 133, XXXIII e LVI; Resolução Anatel nº 777/2025, arts. 217, parágrafo único, 218 e 237, §§ 2º e 3º; Resolução Interna Anatel nº 464/2025, art. 5º, I.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 52/2026/OP (SEI nº 15736157), integrante deste acórdão:
+a) conhecer do Recurso Administrativo interposto pela CLARO S.A. em face do Despacho Decisório nº 7/2026/CGE, de 27 de fevereiro de 2026, para, no mérito, negar-lhe provimento, mantendo a decisão recorrida; 
+b) reconhecer TIM S.A. e ASSOCIAÇÃO NEO como terceiras interessadas no presente Processo Administrativo, nos termos do art. 9º, inciso II, da Lei nº 9.784/1999 e do art. 47, inciso II, do Regimento Interno da Anatel;
+c) determinar à Superintendência Executiva - SUE e à Superintendência de Planejamento e Regulamentação - SPR que publique todos os dados disponíveis referentes aos acessos da telefonia móvel segmentados por operadoras móveis virtuais (MVNO) credenciadas; e,
+d) rever, de ofício, o item II do Decisório nº 1/2026/UEPE/SUE (SEI nº 15288500), de 10 de março de 2026, para atribuir acesso público ao documento SEI nº 15287315; e determinar que seja atribuído acesso público aos documentos SEI nº 14385907, nº 14733693 e nº 15492425.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 18/06/2026, às 17:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15822937 e o código CRC D4B50BFB.
+ | 
+Referência: Processo nº 53500.076806/2025-61 | 
+SEI nº 15822937 |

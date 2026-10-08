@@ -1,0 +1,40 @@
+SEI/ANATEL - 15210187 - Acórdão
+Boletim de Serviço Eletrônico em 23/02/2026
+DOU de 23/02/2026, seção 1, página 86
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 15, de 20 de fevereiro de 2026
+Processo nº 53500.006042/2026-27
+Recorrente/Interessado: SERCOMTEL S.A. TELECOMUNICAÇÕES
+CNPJ nº 01.371.416/0001-89
+Conselheiro(a) Relator(a): Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Circuito Deliberativo nº 34, de 20 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO. REVISÃO TARIFÁRIA. SERVIÇO TELEFÔNICO FIXO COMUTADO - STFC. VALOR DE COMUNICAÇÃO VC‑1. ALTERAÇÃO DO VALOR DE REMUNERAÇÃO DE USO DE REDE DO SERVIÇO MÓVEL PESSOAL - VU‑M. APROVAÇÃO.
+I. CASO EM EXAME
+1. Proposta de revisão do Valor de Comunicação VC‑1 do Plano Básico de Serviço da concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES, em razão da alteração dos valores de referência de VU‑M com base no Modelo de Custos.
+2. Área Técnica instruiu o processo conforme o Informe nº 7/2026/CPAE/SCP e submeteu a minuta de ato à Procuradoria Federal Especializada junto à Anatel - PFE/Anatel.
+3. A Procuradoria manifestou-se favoravelmente à legalidade e regularidade da instrução e recomendou adequações, incluindo a definição da vigência dos novos valores a partir de 25 de fevereiro de 2026 (Parecer nº 50/2026/PFE‑ANATEL/PGF/AGU).
+4. SERCOMTEL anuiu aos novos valores propostos e aos procedimentos adotados.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se a alteração dos valores de referência do VU‑M para 2026 impõe a revisão dos Valores de Comunicação VC‑1 e se a metodologia e o procedimento adotados atendem às exigências regulamentares.
+III. RAZÕES DE DECIDIR
+1. A revisão tarifária foi conduzida de acordo com as competências previstas no Regimento Interno da Anatel (Resolução nº 612/2013) e observou a manifestação obrigatória da Procuradoria, nos termos da Portaria nº 642/2013.
+2. O art. 8º da Resolução nº 576/2011 determina a revisão das tarifas de VC‑1 quando houver fixação ou revisão do VU‑M. O art. 7º da Resolução nº 438/2006 exige que eventual redução do VU‑M seja integralmente repassada ao preço de público.
+3. Os novos valores de referência de VU‑M foram definidos pelo Ato nº 3.246/2023, resultando, para a Região II, na diferença entre 0,01650 (2025) e 0,01686 (2026), utilizada para atualização do VC‑1.
+4. O novo VC‑1 foi fixado em R$ 0,24334, com variação de 0,15%, e o valor reduzido em R$ 0,17033, conforme limite previsto no art. 6º da Resolução nº 576/2011.
+5. Chamadas de longa distância (VC‑2 e VC‑3) não integram a revisão, pois estão sujeitas à liberdade tarifária desde a edição da Resolução nº 724/2020.
+6. Ajustes finais foram incorporados à minuta de ato, incluindo a revogação do Ato nº 13.384/2025, referência aos aditivos contratuais e definição da data‑base para futuros reajustes.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Aprovação da revisão dos Valores de Comunicação VC‑1 da concessionária SERCOMTEL, com vigência a partir de 25 de fevereiro de 2026.
+Tese de julgamento: “1. A alteração dos valores de referência de VU‑M impõe a revisão dos Valores de Comunicação VC‑1, nos termos das Resoluções nº 576/2011 e nº 438/2006. 2. A metodologia adotada e a instrução processual observam a regulamentação aplicável, com manifestação favorável da área técnica, da Procuradoria e anuência da concessionária. 3. Os novos valores de VC‑1 são fixados em 0,24334 (normal) e 0,17033 (reduzido), com vigência em 25 de fevereiro de 2026.”
+Dispositivos relevantes citados: Resolução nº 612/2013 (Regimento Interno da Anatel - RIA), art. 133, L; Portaria nº 642/2013, art. 3º, XIII; Resolução nº 576/2011, arts. 6º e 8º; Resolução nº 438/2006, art. 7º; Resolução nº 639/2014, art. 14; Resolução nº 724/2020, art. 5º; Ato nº 3.246/2023.
+Jurisprudência relevante citada: n/a
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 23/2026/CL (SEI nº 15178484), integrante deste acórdão, aprovar a revisão tarifária do plano básico do STFC, da Concessionária SERCOMTEL S.A. TELECOMUNICAÇÕES, na modalidade local, expresso pelo VC-1, decorrente da alteração dos Valores de Referência de VU-M, com base no Modelo de Custos desenvolvido pela Anatel, nos termos da Minuta de Ato SEI nº 15187154.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 20/02/2026, às 14:52, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15210187 e o código CRC 13EC9943.
+ | 
+Referência: Processo nº 53500.006042/2026-27 | 
+SEI nº 15210187 |

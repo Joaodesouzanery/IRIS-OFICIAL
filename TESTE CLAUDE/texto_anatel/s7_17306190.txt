@@ -1,0 +1,141 @@
+SEI/ANATEL - 15472653 - Análise
+Boletim de Serviço Eletrônico em 14/04/2026
+Análise nº 34/2026/EH
+Processo nº 53500.027474/2026-71
+Interessado: Telefonica do Brasil S/A
+CONSELHEIRO
+EDSON HOLANDA
+ASSUNTO
+Impugnação ao Esclarecimento nº 019, do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHz, apresentada por TELEFÔNICA BRASIL S.A., CNPJ sob o nº 02.558.157/0001-62, com proposta de recebimento como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal.
+EMENTA
+DIREITO ADMINISTRATIVO. LICITAÇÃO. IMPUGNAÇÃO A ESCLARECIMENTO DE EDITAL. NÃO CONHECIMENTO E INDEFERIMENTO DO PEDIDO.
+I. CASO EM EXAME
+A petição. Petição apresentada por TELEFÔNICA BRASIL S.A. contra o Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, com pedido de recebimento como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da CF/1988.
+Fato relevante. A peticionária requereu que fosse afastada a parte final do Esclarecimento nº 019, para fixar o entendimento de que a obrigação editalícia seria cumprida com a instalação de uma única ERB por trecho de rodovia.
+As manifestações anteriores. A Área Técnica sugeriu o não provimento da impugnação e seu recebimento como exercício do direito de petição. A PFE-Anatel opinou no mesmo sentido.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se a impugnação ao Esclarecimento nº 019 é admissível, diante da intempestividade e do não cabimento da via eleita; e saber se (ii) o Esclarecimento nº 019 deve ser alterado para considerar suficiente a instalação de uma única ERB por trecho de rodovia.
+III. RAZÕES DE DECIDIR
+O item 3.1 do Edital admite impugnação ao Edital e seus anexos no prazo de 10 dias contados da divulgação. O Aviso de Licitação foi publicado em 13/02/2026. A impugnação foi protocolada em 06/04/2026. O prazo para impugnação expirou em 27/02/2026. O requisito da tempestividade não foi atendido.
+A legitimidade da peticionária foi reconhecida com base nos documentos societários analisados pela Área Técnica.
+A impugnação não é cabível contra esclarecimento que não altera o texto do Edital.
+O art. 16, § 2º, do Regulamento aprovado pela Resolução nº 65/1998 estabelece que os esclarecimentos servem apenas para afastar obscuridades do instrumento convocatório.
+Os esclarecimentos não podem alterar disposições editalícias nem incluir normas novas que modifiquem as condições inicialmente previstas.
+O item 3.6 do Edital aplica-se apenas às hipóteses de alteração substancial ou relevante do Edital. 
+O Esclarecimento nº 019 não configurou alteração do Edital.
+A impugnação não deve ser conhecida por ser incabível.
+A petição pode ser recebida como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da CF/1988.
+O item 3.5.1 do Anexo IV-A do Edital prevê o atendimento do compromisso mediante a implantação de pelo menos 1 ERB no trecho de rodovia.
+A expressão “pelo menos” indica exigência mínima.
+A redação não limita o cumprimento da obrigação à instalação de apenas uma ERB por trecho.
+A vencedora deve cobrir os quilômetros de rodovia que constam sem cobertura.
+A metodologia de precificação considerou os quilômetros desatendidos e raios médios de cobertura com base em parâmetros técnicos.
+Essa metodologia foi aplicada de forma uniforme a todos os lotes.
+Não há desequilíbrio entre as obrigações das proponentes.
+O pedido de alteração do entendimento externado no Esclarecimento nº 019 deve ser indeferido.
+IV. DISPOSITIVO E TESE
+Impugnação não conhecida. Petição recebida como exercício do direito de petição. Pedidos indeferidos.
+Tese de julgamento: "1. É incabível impugnação contra esclarecimento que não altera o texto do Edital, nos termos do art. 16, § 2º, do Regulamento aprovado pela Resolução nº 65/1998. 2. A petição intempestiva e incabível pode ser recebida como exercício do direito de petição, nos termos do art. 5º, XXXIV, “a”, da CF/1988. 3. A previsão editalícia de implantação de pelo menos 1 ERB por trecho estabelece exigência mínima e não limita o cumprimento da obrigação à instalação de uma única ERB. 4. A obrigação da vencedora consiste em cobrir os quilômetros de rodovia que constam sem cobertura."
+Dispositivos relevantes citados: CF/1988, art. 5º, XXXIV, “a”; Lei nº 9.784/1999, art. 42; Resolução nº 65/1998, art. 16, § 2º, e art. 17, § 1º.
+Jurisprudência relevante citada: n/a
+REFERÊNCIAS
+Lei nº 9.472, de 16 de julho de 1997, e alterações - Lei Geral de Telecomunicações – LGT;
+Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela Resolução nº 65, de 29 de outubro de 1998;
+Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 29 de abril de 2013;
+Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHZ;
+Processo nº 53500.009201/2026-45;
+RELATÓRIO
+Trata-se de Impugnação ao Esclarecimento nº 019, do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, apresentada por TELEFÔNICA BRASIL S.A., CNPJ sob o nº 02.558.157/0001-62, por meio da petição SEI nº 15445928, protocolizada em 6 de abril de 2026, nos autos do processo nº 53500.027474/2026-71, com proposta de que seja recebida como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal.
+Em 13/02/2026, foi publicado o Aviso de Licitação no Diário Oficial da União (DOU), conforme descrito a seguir:
+CONCORRÊNCIA Nº 1/2026-SOR/SPR/CD-ANATEL
+O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES, no uso de suas atribuições, considerando deliberação tomada por meio do Circuito Deliberativo nº 180, de 13 de agosto de 2025, autoriza a abertura de procedimento licitatório, na modalidade de Concorrência Pública, para conferir Autorizações para Uso de Radiofrequências, nas Subfaixas de 708 MHz a 718 MHz e de 763 MHz a 773 MHz, com possibilidade de outorga do Serviço Móvel Pessoal – SMP, e torna público que receberá, no dia 15 de abril de 2026, às 10h, no Edifício-sede da Agência, situado na Quadra 06, blocos C a H, do Setor de Autarquias Sul, em Brasília-DF, os Documentos de Identificação e de Regularidade Fiscal, as Garantias de Manutenção de Proposta de Preço e as Propostas de Preço dos interessados em participar da presente Licitação, a serem julgadas pelo critério da maior Proposta de Preço ofertada para cada lote constante do Edital de Licitação. O Edital de Licitação estará disponível aos interessados na página da Anatel na Internet, no endereço http://gov.br/anatel, a partir das 14h da data de publicação deste Aviso no Diário Oficial da União.
+Em 01/04/2026, a Comissão Especial de Licitação (CEL) prestou esclarecimentos sobre itens do Edital, por meio de Comunicado Público (SEI nº 15445928), incluindo o Esclarecimento nº 019, tendo em vista os pedidos formalizados de acordo com item 2.1 do Edital.
+Em 06/04/2026, a Telefônica, irresignada com os esclarecimentos, protocolou impugnação (SEI nº 15445928) ao Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHz, com proposta de recebimento como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal.
+A Área Técnica analisou o pleito, por meio do Informe nº 3/2026/CEL.RF (SEI nº 15447420), sugerindo o não provimento da impugnação e encaminhamento à Procuradoria Federal Especializada (PFE-Anatel)
+Em 07 de abril de 2026, o processo foi encaminhado PFE-Anatel para manifestação sobre a impugnação interposta pela Telefônica. Registre-se que a manifestação jurídica, Parecer nº 145/2026/PFE-ANATEL/PGF/AGU (SEI nº 15467386), ocorreu dentro do prazo de 15 (quinze) dias previsto no art. 42 da Lei nº 9.784/99.
+Por meio do Despacho Ordinatório SEI nº 15468963, o Superintendente Executivo encaminhou os autos para deliberação deste Colegiado, por meio da Matéria para Apreciação do Conselho Diretor nº 290/2026 (SEI nº 15467773).
+Fui designado relator da matéria, conforme sorteio realizado em 10/04/2026 (SEI nº 15469734).
+É o breve relato dos fatos.
+FUNDAMENTAÇÃO
+DOS REQUISITOS DE ADMISSIBILIDADE
+De partida, a respeito da admissibilidade de impugnação, o item 3 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL estabelece o rito aplicável a Impugnações, dispondo da seguinte forma:
+3.1. Eventuais impugnações ao Edital e seus anexos deverão ser encaminhadas à CEL por meio do SEI em até 10 (dez) dias contados de sua divulgação, devendo-se observar a mesma estrutura de parametrização indicada nos subitens 2.1.1 e 2.1.2 deste Edital, indicando-se, no campo "informação", que se trata de "Impugnação do Edital".
+3.1.1. A CEL se manifestará sobre as eventuais impugnações apresentadas, encaminhando-as, com parecer da Procuradoria Federal Especializada junto à Anatel, para o Conselho Diretor, nos termos do art. 17, § 1º, do Regulamento de Licitação para Concessão Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela Resolução nº 65, de 29 de outubro de 1998.
+3.2. As impugnações não terão efeito suspensivo e deverão ser decididas até a data fixada para o recebimento dos Documentos de Identificação e de Regularidade Fiscal e das Propostas de Preço.
+3.3. Caso sejam acolhidas as impugnações, a CEL divulgará Aviso, no Diário Oficial da União - DOU, informando as partes do Edital alteradas e a Licitação será refeita desde o início, ressalvando-se a hipótese em que as alterações do Edital não importarem em modificação das condições para a elaboração das propostas.
+3.4. O não oferecimento de impugnação ao Edital no prazo, e a subsequente entrega dos Documentos de Identificação e de Regularidade Fiscal e das Propostas de Preço, pressupõe que a Proponente tem dele pleno conhecimento e que aceita, incondicionalmente, os seus termos, vedadas alegações posteriores de desconhecimento ou discordância de suas cláusulas ou condições, bem como das normas regulamentares pertinentes.
+3.5. Decairá do direito de impugnar os termos deste Edital o interessado que, mesmo indicando suas falhas ou irregularidades, não o fizer no prazo estabelecido no item 3.1.
+3.6. No caso de alteração do Edital, substancial ou relevante para a preparação dos Documentos de Identificação e de Regularidade Fiscal e das Propostas de Preço, caberá a apresentação de impugnações especificamente relacionadas às modificações havidas, no prazo de 5 (cinco) dias, contados de sua divulgação.
+3.7. As impugnações formuladas e as decisões da ANATEL serão juntadas, para conhecimento geral, aos autos do processo administrativo, disponível no Sistema Eletrônico de Informações – SEI, acessível pelo sítio da Anatel em www.gov.br/anatel.
+Como definido no item 3.1 do Edital, após a publicação do Aviso de Licitação no DOU, admite-se impugnação ao Edital em até 10 (dez) dias contados da publicação, que ocorreu em 13/02/2026. Conforme Recibo Eletrônico de Protocolo SEI nº 15445934, a impugnação em comento foi protocolada em 06/04/2026. Dessa forma, o requisito de tempestividade está prejudicado, pois, o prazo para impugnação expirou em 27/02/2026. Assim, a pedido não atende ao requisito da tempestividade. 
+No que tange a legitimidade, a Área Técnica analisou os anexos à impugnação (Ata AGO SEI nº 15445929, Ata RCA SEI nº 15445930, Ata RCA SEI nº 15445931, Ata AGE SEI nº 15445932 e Ata AGO SEI nº 15445933) e conclui pelo atendimento desse requisito. Nesse ponto, entendo que a impugnante é a parte legítima para peticionar impugnações ao Edital em comento. 
+Sobre o cabimento, o Edital prevê recurso apenas contra o texto do instrumento convocatório e seus anexos. Os esclarecimentos, nos termos do regulamento, destinam-se exclusivamente a afastar obscuridades, sendo vedada a alteração das disposições editalícias ou a inclusão de novas normas que modifiquem as condições originalmente previstas, conforme disposto no art. 16 §2º do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela Resolução nº 65/1998 – Anatel:
+Art. 16. Toda pessoa natural ou jurídica poderá pedir esclarecimentos sobre as disposições constantes do instrumento convocatório até 10 (dez) dias depois da publicação do aviso de licitação, se aquele não fixar prazo superior.
+(...)
+§ 2º Por meio dos esclarecimentos, a Comissão poderá apenas afastar obscuridades do texto do instrumento convocatório, sendo vedadas a alteração das suas disposições e a inclusão de normas nele não contidas que alterem em essência as condições inicialmente previstas no instrumento convocatório.
+Desta forma, não há que se falar em aplicação do item 3.6 do Edital ao caso em comento, pois, trata de impugnações contra alterações substanciais ou relevantes no texto editalício, decorrentes de impugnações anteriores. Como os esclarecimentos da CEL não implicam alteração da regra editalícia, resta afastada a hipótese de cabimento da impugnação, impondo-se o não conhecimento da impugnação interposta, conforme dispositivo item 3.6 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL:
+3.6. No caso de alteração do Edital, substancial ou relevante para a preparação dos Documentos de Identificação e de Regularidade Fiscal e das Propostas de Preço, caberá a apresentação de impugnações especificamente relacionadas às modificações havidas, no prazo de 5 (cinco) dias, contados de sua divulgação.
+Não obstante, a título de argumentação e com vistas a afastar quaisquer questionamentos sobre a regularidade da observância das disposições editalícias, alinho-me à possibilidade de que o documento SEI nº 7568035 seja recebido como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal, conforme entendimento consolidado pelo Colegiado da Agência, demonstrado pelos precedentes constantes dos Processos nº 53572.001330/2005-17, nº 53500.030878/2016-71, nº 53500.007414/2014-07, nº 53528.000473/2007-17 e nº 53500.048942/2019-12.
+Reforço que esse entendimento está alinhado à manifestação proferida pela PFE-Anatel por meio do Parecer nº 145/2026/PFE-ANATEL/PGF/AGU (SEI nº 15467386), que concluiu da seguinte forma:
+Diante do exposto, esta Procuradoria Federal Especializada órgão de execução da Procuradoria-Geral Federal, vinculada à Advocacia - Geral da União, opina, tal qual a Comissão de Assessoramento Técnico à CEL e a CEL, pelo recebimento da Impugnação ao Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL, apresentado por TELEFÔNICA BRASIL S.A., CNPJ como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal, e, no mérito, por seu não provimento.
+DA PETIÇÃO
+Ainda que os requisitos essenciais estejam prejudicados, cabe refletir sobre o mérito do pedido apresentado, com fito de sedimentar o entendimento sobre o tema em debate, proporcionando clareza jurídica sobre o equilíbrio da aplicação das regras do Edital. 
+Em síntese, a peticionária solicita a impugnação da parte final do Esclarecimento nº 019, contido no Comunicado Público (SEI n° 15354014), ao Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL (SEI nº 15190907), fixando-se o entendimento de que a obrigação editalícia restará cumprida pelas Proponentes vencedoras com a instalação de uma única ERB por trecho de rodovia, vejamos:
+Diante de todo o exposto, a Telefônica requer que essa d. Comissão de Licitação acolha a presente impugnação, dando a ela provimento , a fim de que a parte final do esclarecimento nº 19(ii), no qual foi afirmado que “A vencedora deve cobrir os quilômetros de rodovia que constam sem cobertura” seja tornada sem efeito, fixando-se o entendimento de que a obrigação editalícia restará cumprida pelas Proponentes vencedoras com instalação de uma única ERB por trecho (linha do Anexo XII-A), de forma a se garantir um equilíbrio entre as obrigações prevista no Anexo XII-A, além da certeza do objeto a ser licitado.
+De partida, conforme abordado no item 5.4, em observância ao art. 16, §2º do Regulamento de Licitação para Concessão, Permissão e Autorização de Serviço de Telecomunicações e de Uso de Radiofrequência, aprovado pela Resolução nº 65/1998, com a redação alterada pela Resolução nº 781/2025, verifica-se que, por meio de esclarecimentos, a Comissão Especial de Licitação (CEL) restringe-se a afastar obscuridades do texto do instrumento convocatório, vedadas a alteração de suas disposições e a inclusão de normas nele não contidas que modifiquem, em essência, as condições inicialmente previstas.
+Nesse contexto, cumpre destacar o conceito, a finalidade dos pedidos de esclarecimentos e a natureza das respostas prestadas pela CEL, nos termos da Resolução nº 65/1998. Os pedidos de esclarecimentos visam tão somente dirimir eventuais obscuridades do edital e, dessa forma, aclarar as dúvidas suscitadas pelas interessadas.
+Assim, de acordo com a disposição expressa entabulada no artigo 16, §2º do Regulamento em comento, seria vedado à Comissão Especial de Licitação a alteração das disposições do Edital e a inclusão de normas nele não contidas que alterem em essência as condições inicialmente previstas no instrumento convocatório.
+Nesse ponto, é importante trazer à análise os esclarecimentos prestados pela Área Técnica sobre o tema em debate:
+ Numeração
+ | 
+ Esclarecimento 019 - Edital nº 1/2026-SOR/SPR/CD-ANATEL
+ | 
+ Autor
+ | 
+ TELEFONICA BRASIL S.A.
+ | 
+ Documento
+ | 
+ SEI nº 15221752
+ | 
+ Item(ns)
+ | 
+ Anexo XII - A
+ | 
+ Pergunta(s)
+ | 
+ Considerando que no Anexo XII - A os TRECHOS DE ESTRADAS RELATIVOS AOS LOTES A1 A A25, CORRESPONDENTES AOS COMPROMISSOS DE COBERTURA DE RODOVIAS FEDERAIS COM SMP são reportados quanto à “Código”, “Trecho Início”, “Trecho Fim”, “Malha sem cobertura 4G” e “Código SNV”, e
+ Questiona -se:(i) É correto o entendimento de que os quilômetros não cobertos listados no Anexo XII - A nem sempre correspondem ao comprimento do segmento da rodovia? Por exemplo, para o Código SNV 242BTO0420, o Anexo XII - A informa que 87,3 km não estão cobertos, enquanto o comprimento reportado da rodovia é de 92 km.
+ (ii) No exemplo dado no item (i) acima, para o Código SNV 242BTO0420, é correto o entendimento que partes do segmento desta rodovia já estão cobertas ou não fazem parte do compromisso? Caso negativo, favor justificar.
+ (iii) A Anatel disponibilizará um arquivo georreferenciado em formato shapefile (*.shp) de cada SNV, descontando os quilômetros já cobertos por quaisquer operadoras?
+ (iv) É correto afirmar que a “Malha sem cobertura 4G” corresponde a um único SNV, geralmente o que aparece na primeira linha correspondente a ele?
+ (v) O licitante pode selecionar apenas um trecho (SNV) de uma rodovia ou se adquirir um trecho (SNV) é obrigado a priorizar a aquisição de outros trechos (SNV) da mesma rodovia?
+ (vi) Qual a data ou versão da base de dados de SNVs considerada pela Anatel na elaboração do Anexo XII - A, uma vez que ela sofre alterações periódicas?
+ | 
+ Esclarecimento(s)
+ | 
+ (i) É correto o entendimento.(ii) É correto o entendimento. A vencedora deve cobrir os quilômetros de rodovia que constam sem cobertura.(iii) Caso necessário, a Anatel avaliará a disponibilização de arquivo georreferenciado com a situação de cobertura por trecho.(iv) É correto o entendimento. A malha sem cobertura corresponde a um trecho com código SNV. O código SNV está no Anexo XII-A.(v) Os trechos são independentes.(vi) A estimativa de quilômetros sem cobertura foi feita com base na versão SNV_202507A.shp, disponível na página da internet do Departamento Nacional de Infraestrutura de Transportes - DNIT.
+ | 
+Diante do pedido de esclarecimento apresentado, a Comissão Especial de Licitação (CEL) consolidou seu entendimento no sentido de que o item 3.5.1 do Anexo IV-A do Edital não impõe o cumprimento da obrigação de abrangência mediante a instalação de uma única Estação Rádio Base (ERB) por trecho, conforme alegado pela impugnante. Como se verifica do próprio dispositivo editalício, a redação estabelece que os compromissos serão considerados atendidos "mediante a implantação de pelo menos 1 (uma) ERB contida dentro do polígono do setor censitário da localidade ou do trecho de rodovia, conforme IBGE, e com capacidade instalada na interface S1 igual ou superior a 50 Mbps, sendo vedada a utilização de Femtocells". Assim, a expressão "pelo menos" revela que a instalação de uma ERB constitui patamar mínimo, não excluindo a possibilidade de que mais de uma seja necessária para a adequada cobertura.
+Ademais, a CEL entendeu que o cálculo da precificação dos investimentos considerou a quantidade de quilômetros efetivamente desatendidos e raios médios de cobertura, com base em parâmetros técnicos pré-estabelecidos e de natureza teórica, razão pela qual é admissível que, em alguns trechos, se exija a implantação de mais de uma ERB para garantir a cobertura total. Esse raciocínio, aliado ao fato de que a metodologia de cálculo e definição dos trechos foi aplicada igualitariamente a todos os lotes, afasta qualquer alegação de desequilíbrio entre as obrigações das proponentes vencedoras, uma vez que a regra é a mesma para todas. Diante disso, a CEL propôs o não provimento da impugnação, recebendo-a apenas como exercício do direito de petição.
+O posicionamento da CEL revela-se inteiramente acertado, pois interpreta o instrumento convocatório em sua literalidade e teleologia, evitando tanto a rigidez excessiva, que prejudicaria a efetiva prestação dos serviços, quanto a insegurança jurídica decorrente de leituras equivocadas do edital. Ao deixar claro que "pelo menos uma ERB" não equivale a "apenas uma ERB", a Comissão assegura que a obrigação de abrangência seja cumprida em sua finalidade essencial, qual seja, a efetiva cobertura das localidades e trechos rodoviários, sem onerar desarrazoadamente os licitantes, uma vez que a metodologia de custos foi aplicada de forma uniforme. Desse modo, a decisão de não dar provimento à impugnação harmoniza-se com os princípios da isonomia, da vinculação ao instrumento convocatório e da eficiência, que devem reger toda licitação no setor de telecomunicações.
+Assim, por todo o exposto, em concordância com a proposta da Área Técnica, bem como com o opinativo da PFE-Anatel, sugiro ao Conselho Diretor que: (i) não conheça a Impugnação ao Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHz, apresentado por TELEFÔNICA BRASIL S.A., CNPJ sob o nº 02.558.157/0001-62, por ser incabível; (ii) a referida petição seja recebida como exercício de direito de petição e que os pedidos nela contidos sejam indeferidos. 
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs).
+Os Objetivos de Desenvolvimento Sustentável – ODS são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Esses são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+São 17 (dezessete) os ODS que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+A atuação da Anatel também deve estar aderente a esses ODS e às metas que lhes são correlatas, e é importante que referida afinidade esteja explícita nas decisões deste Conselho Diretor, em consonância com a Política de Governança, Gestão Executiva e Responsabilidade Socioambiental da Anatel, aprovada pela Resolução Interna Anatel nº 38, de 09 de agosto de 2021, alterada pela Resolução Interna Anatel nº 301, de 25 de março de 2024.
+A proposta de encaminhamento contida na presente Análise relaciona-se com o ODS nº 16 (promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis) da Agenda 2030 da Organização das Nações Unidas (ONU).
+A Agenda 2030 foi objeto de alinhamento no Brasil, sendo o IPEA responsável por desenvolver as metas brasileiras, conforme fundamentado estudo realizado pelo referido Instituto.
+Neste contexto, cumpre destacar que o estudo desenvolvido pelo IPEA é um importante instrumento de suporte técnico e institucional às ações governamentais para a formulação e reformulação de políticas públicas e programas nacionais de desenvolvimento. Com ele, o Brasil ganha destaque na territorialização dos ODS, sem perder de vista os fundamentos da proposta original.
+CONCLUSÃO
+Diante do exposto, proponho:
+não conhecer a Impugnação ao Esclarecimento nº 019 do Edital de Licitação nº 1/2026-SOR/SPR/CD-ANATEL - Radiofrequências nas Faixas de 700 MHz, apresentado por TELEFÔNICA BRASIL S.A., CNPJ sob o nº 02.558.157/0001-62, por ser incabível;
+que a Impugnação apresentada seja recebida como exercício de direito de petição, nos termos do art. 5º, inciso XXXIV, "a", da Constituição Federal e que os pedidos nela contidos sejam indeferidos.
+ | Documento assinado eletronicamente por Edson Victor Eugênio de Holanda, Conselheiro, em 14/04/2026, às 08:48, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15472653 e o código CRC 01404BB2.
+ | 
+Referência: Processo nº 53500.027474/2026-71 | 
+SEI nº 15472653 |

@@ -1,0 +1,65 @@
+SEI/ANATEL - 15850505 - Análise
+Boletim de Serviço Eletrônico em 02/07/2026
+Análise nº 59/2026/AF
+Processo nº 53500.013038/2025-34
+Interessado: Superintendência de Planejamento e Regulamentação, Superintendência de Relações com Consumidores, Conselho Diretor
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Submissão da proposta de Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS) ao procedimento de Consulta Pública.
+EMENTA
+DIREITO REGULATÓRIO. PROCESSO ADMINISTRATIVO. PLANO DE CONECTIVIDADE SIGNIFICATIVA E SUSTENTABILIDADE SOCIOAMBIENTAL (PCS). PRORROGAÇÃO DE PRAZO DE RELATORIA. PEDIDO PROCEDENTE.
+I. CASO EM EXAME
+Proposta de Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS) submetida ao procedimento de Consulta Pública.
+Processo instaurado para definição e detalhamento de projetos voltados à conectividade universal e significativa e à sustentabilidade socioambiental.
+Relevância e complexidade do tema justificam a necessidade de prorrogação do prazo para submissão da matéria ao Conselho Diretor.
+II. QUESTÃO EM DISCUSSÃO
+A questão em discussão consiste em saber se é possível prorrogar o prazo de relatoria para submissão da matéria ao Conselho Diretor, nos termos do Regimento Interno da Anatel, diante da relevância e complexidade da matéria.
+III. RAZÕES DE DECIDIR
+O art. 127, § 3º, do Regimento Interno da Anatel prevê a possibilidade de prorrogação do prazo de relatoria, mediante justificativa.
+A relevância e complexidade da matéria justificam a necessidade de prorrogação do prazo para análise e apresentação de voto.
+IV. DISPOSITIVO E TESE
+Pedido procedente. Prorrogação do prazo de relatoria por 120 dias para submissão da matéria ao Conselho Diretor.
+Tese de julgamento: "1. É possível prorrogar o prazo de relatoria para submissão da matéria ao Conselho Diretor, nos termos do art. 127, § 3º, do Regimento Interno da Anatel. 2. A relevância e complexidade da matéria justificam a prorrogação do prazo por 120 dias."
+Dispositivos relevantes citados: Resolução nº 612/2013, art. 127, § 3º.
+Jurisprudência relevante citada: n/a.
+REFERÊNCIAS
+ANATEL. Agência Nacional de Telecomunicações (Brasil). Resolução nº 612, de 19 de abril de 2013. Brasília, DF, 2013. Aprova o Regimento Interno da Anatel (RIA).
+___. Acórdão nº 395, de 30 de dezembro de 2024. Relator: Vicente Bandeira de Aquino Neto. Brasília, DF, 2 jan. 2025. SEI nº 13095914.
+RELATÓRIO
+Trata-se da submissão da proposta de Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS) ao procedimento de Consulta Pública.
+Em 17 de outubro de 2024, este Colegiado, por ocasião de sua 937ª Reunião Ordinária, aprovou a submissão à Consulta Pública da proposta de reavaliação do Regulamento de Aplicação de Sanções Administrativas da Anatel (RASA), objeto do item 10 da Agenda Regulatória para o biênio 2023-2024.
+Nessa deliberação, entre outras providências, determinou-se à Superintendência de Planejamento e Regulamentação (SPR) que propusesse a inclusão do Plano de Conectividade Significativa e Sustentabilidade Socioambiental (PCS) na Agenda Regulatória.
+Em 22 de outubro de 2024, o Presidente do Conselho Diretor, mediante o Despacho Ordinatório (SEI nº 12771295), determinou à SPR a adoção das providências acima delineadas.
+A alteração da Agenda Regulatória (já para o biênio seguinte, 2025-2026) foi realizada no Processo nº 53500.011386/2024-96, conforme decisão consubstanciada no Acórdão nº 395, de 30 de dezembro de 2024 (SEI nº 13095914).
+Em 20 de fevereiro de 2025, a SPR instaurou este Processo nº 53500.013038/2025-34, no qual foi elaborada a proposta de PCS, com definição e detalhamento de projetos para os eixos habilitadores da conectividade universal e significativa e de sustentabilidade socioambiental.
+Em 26 de junho de 2025, a SPR, a Superintendência de Controle de Obrigações (SCO) e a Superintendência de Relações com Consumidores (SRC), conjuntamente, elaboraram o Informe nº 54/2025/PRUV/SPR (SEI nº 13840221), no qual propuseram para este Conselho Diretor uma minuta de PCS, para fins de submissão ao procedimento de Consulta Pública.
+Em 2 de julho de 2025, a Procuradoria Federal Especializada junto à Anatel (PFE/Anatel), por meio do Parecer nº 00218/2025/PFE-ANATEL/PGF/AGU, aprovado sem ressalvas pelo Despacho nº 00766/2025/PFE-ANATEL/PGF/AGU, apresentou seu opinativo jurídico.
+Em 13 de agosto de 2025, a SPR, mediante a Matéria para Apreciação do Conselho Diretor nº 567/2025 (SEI nº 13992276), encaminhou este processo para distribuição, via Superintendência Executiva (SUE).
+Em 18 de agosto de 2025, o processo foi designado à minha relatoria, conforme Certidão de Distribuição (SEI nº 14207698).
+Em 2 de setembro de 2025, o processo foi enviado ao Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi), por meio do Ofício nº 149/2025/AF-ANATEL (SEI nº 14288143), para fins de realização de diligência relacionada à aplicação de Behavioral Insights para a proposta do PCS, a saber:
+Ofício nº 149/2025/AF-ANATEL:
+[Omissis]
+16. Diante do exposto, e em alinhamento com a busca por inovação e eficácia regulatória, solicita-se que o Centro de Altos Estudos em Comunicações Digitais e Inovações Tecnológicas (Ceadi), por meio do seu Grupo de Pesquisa em Ciências Comportamentais (Nudge.lab), conduza, no prazo de 60 (sessenta) dias, um estudo aprofundado sobre aplicações viáveis de behavioral insights para o aprimoramento das propostas do Plano de Conectividade Significativa e Sustentabilidade Socioambiental, com foco nos seguintes aspectos:
+16.1. identificar os principais vieses comportamentais que podem afetar a adoção e o uso efetivo da conectividade significativa e das práticas de sustentabilidade socioambiental no setor de telecomunicações;
+16.2. propor, quando cabível, intervenções baseadas em insights comportamentais (nudges) para cada um dos desafios identificados, buscando maximizar a adesão e a efetividade das ações propostas no plano;
+16.3. caso seja possível, desenvolver metodologias para testar a eficácia dessas intervenções, preferencialmente por meio de experimentos controlados (A/B testing), a fim de gerar evidências robustas para futuras implementações.
+Em 18 de março de 2026, o Conselho Consultivo da Anatel, por intermédio do Ofício nº 8/2026/CC-ANATEL (SEI nº 15340924), encaminhou o Relatório (SEI nº 15340020), no qual subscreve suas considerações sobre a proposta.
+Em 28 de abril de 2026, o Nudge.lab, por meio do Informe nº 2/2026/SRC (SEI nº 15477297), relatou as atividades desenvolvidas na supracitada diligência.
+Em 11 de maio de 2026, o Grupo de Trabalho de Acompanhamento da Implementação de Políticas Públicas (GT-IPP), mediante o Ofício nº 60/2026/OP-ANATEL (SEI nº 15606780), constribuiu com seu posicionamento sobre a matéria.
+É o relatório. 
+DA ANÁLISE 
+Considerando o prazo previsto e as disposições constantes do art. 127, § 3º, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013, o processo foi automaticamente incluído na pauta desta 955ª Reunião deste Colegiado, de 2 de julho de 2026.
+Diante da relevância e complexidade da matéria, entende-se não ser possível a deliberação da matéria na data prevista regimentalmente, devendo-se prorrogar o prazo para sua submissão ao Conselho Diretor, nos termos do art. 127, § 3º, do RIA, a saber:
+"Art. 127. Quando outros não estiverem previstos neste Regimento ou em disposições especiais, os seguintes prazos serão observados:
+(...)
+§ 3º Na hipótese de inclusão automática em pauta de Reunião prevista no § 2º, o Conselheiro Relator deverá apresentar voto ou, em caso de impossibilidade de fazê-lo, requerer, de forma justificada, a prorrogação de prazo para a submissão da matéria ao Conselho Diretor."
+Submete-se, assim, proposta de nova prorrogação do prazo de relatoria por mais 120 (cento e vinte) dias.
+CONCLUSÃO
+Voto por prorrogar o prazo, por 120 (cento e vinte) dias, para submissão da matéria ao Conselho Diretor, com fundamento no § 3º do art. 127 do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 02/07/2026, às 16:00, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15850505 e o código CRC AA07A895.
+ | 
+Referência: Processo nº 53500.013038/2025-34 | 
+SEI nº 15850505 |

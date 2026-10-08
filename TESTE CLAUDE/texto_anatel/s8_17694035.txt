@@ -1,0 +1,49 @@
+SEI/ANATEL - 15823111 - Acórdão
+Boletim de Serviço Eletrônico em 02/07/2026
+DOU de 01/07/2026, seção 1, página 55
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 146, de 17 de junho de 2026
+Processo nº 53516.000024/2022-39
+Recorrente/Interessado: BJ NET PROVEDOR DE INTERNET LTDA.
+CNPJ nº 11.799.650/0001-65
+Conselheiro(a) Relator(a): Nilo Pasquali
+Fórum Deliberativo: Reunião nº 954, de 12 de junho de 2026
+EMENTA
+DIREITO TRIBUTÁRIO. RECURSO ADMINISTRATIVO EM PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - FUST. BASE DE CÁLCULO E MULTA DE OFÍCIO. RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+1. O Recurso. Recurso Administrativo interposto por BJ NET PROVEDOR DE INTERNET LTDA. contra decisão que reconheceu a procedência dos lançamentos de créditos tributários referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust, relativos ao exercício de 2020, bem como da multa de ofício por ausência de declaração da respectiva contribuição.
+2. Fato relevante. Fiscalização apurou valores devidos a título de Fust no montante de [item 1 do Apartado Sigiloso – SEI nº 15794820] para o exercício de 2020. Desse total, [item 2 do Apartado Sigiloso – SEI nº 15794820] haviam sido declarados. Restou apurada diferença de [item 2 do Apartado Sigiloso – SEI nº 15794820].
+3. As alegações. A Recorrente sustentou que não incide a contribuição sobre receitas de hospedagem, instalação e manutenção, por não se confundirem com serviços de telecomunicações. A Recorrente alegou que a multa de ofício é abusiva e confiscatória.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se houve erro na base de cálculo da contribuição ao Fust pela inclusão de receitas de hospedagem, instalação e manutenção; e (ii) saber se é cabível a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996, no caso de ausência ou inexatidão de declaração.
+III. RAZÕES DE DECIDIR
+1. O Recurso é tempestivo, cabível e atende aos pressupostos de admissibilidade previstos no Decreto nº 70.235/1972 e no art. 116 do Regimento Interno da Anatel - RIA.
+2. A Impugnação e o Recurso suspendem a exigibilidade do crédito tributário, nos termos do art. 151, III, do Código Tributário Nacional - CTN.
+3. Não se aplica a prescrição intercorrente no Processo Administrativo Fiscal, conforme a Súmula Anatel nº 26 e a Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11.
+4. A apuração da base de cálculo do Fust exige a identificação da receita bruta decorrente da prestação de serviços de telecomunicações, com as exclusões legais cabíveis.
+5. A Recorrente tinha o dever de manter registros contábeis separados por serviço e de demonstrar, por documentação idônea, a natureza das receitas auferidas.
+6. A fiscalização examinou a documentação contábil e fiscal apresentada pela Recorrente e concluiu que as receitas de telecomunicações do exercício de 2020 estavam registradas nas contas 3.1.01.005.001.2703 e 3.1.01.005.001.2705.
+7. A Recorrente não apresentou prova contábil suficiente para demonstrar que as receitas lançadas na conta 3.1.01.005.001.2703 decorriam exclusivamente de serviços de hospedagem, instalação e manutenção dissociados da prestação de serviços de telecomunicações.
+8. A documentação juntada apenas na fase recursal foi considerada extemporânea, sem demonstração das hipóteses legais que autorizariam sua apreciação.
+9. A desconsideração da segregação formal das receitas encontra amparo no parágrafo único do art. 116 do CTN e nos princípios da primazia da realidade e da verdade material.
+10. Não procede a alegação de erro na base de cálculo da contribuição ao Fust.
+11. A contribuição ao Fust está sujeita a lançamento por homologação.
+12. A multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 incide nos casos de falta de declaração ou de declaração inexata que importe recolhimento a menor.
+13. A penalidade aplicada no percentual de 75% (setenta e cinco por cento) decorre expressamente da lei e é compatível com a jurisprudência citada no processo e com a Súmula Anatel nº 27.
+14. A multa aplicada tem natureza de multa de ofício e não de multa moratória.
+15. Não é necessária comunicação ao Ministério das Comunicações - MCom, porque a decisão não alterou a base de cálculo nem o valor dos créditos tributários relativos à Contribuição ao Fundo de Universalização de Telecomunicações - Cide-Fust.
+IV. DISPOSITIVO E TESE
+Recurso conhecido e desprovido.
+Tese de julgamento: "1. O Recurso Administrativo é conhecido quando tempestivo, cabível e atendidos os pressupostos de admissibilidade do Decreto nº 70.235/1972 e do Regimento Interno da Anatel - RIA. 2. A impugnação e o recurso suspendem a exigibilidade do crédito tributário no processo administrativo fiscal. 3. A exclusão de receitas da base de cálculo da contribuição ao Fust depende de comprovação contábil idônea e de segregação suficiente das receitas. 4. Não comprovada a natureza não tributável das receitas de hospedagem, instalação e manutenção, é legítima sua manutenção na base de cálculo quando a documentação contábil as vincula à prestação de serviços de telecomunicações. 5. É cabível a multa de ofício prevista no art. 44, I, da Lei nº 9.430/1996 nos casos de ausência de declaração ou de declaração inexata da contribuição ao Fust. 6. Não é necessária comunicação ao Ministério das Comunicações - MCom quando a decisão administrativa não altera a base de cálculo nem o valor dos créditos tributários relativos à Cide-Fust."
+Dispositivos relevantes citados: Constituição Federal - CF/1988, art. 150, IV; Lei nº 5.172/1966, arts. 116, parágrafo único, e 151, III; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, art. 50, § 1º; Lei nº 9.998/2000, arts. 6º, IV, e 10; Decreto nº 70.235/1972, art. 33; Resolução nº 612/2013, art. 116; Portaria Anatel nº 642/2013, art. 5º, IV, “a”; Portaria Anatel nº 1.355/2019, item 7.1.1; Resolução nº 73/1998, arts. 23 e 30.
+Jurisprudência relevante citada: Súmula Anatel nº 26; Súmula Anatel nº 27; Súmula do Conselho Administrativo de Recursos Fiscais - CARF nº 11; Supremo Tribunal Federal - STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014, DJe 05.02.2015; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014, DJe 13.05.2014; Anatel, Acórdão nº 20, de 18.02.2025; Anatel, Acórdão nº 68, de 24.03.2025; Anatel, Acórdão nº 114, de 12.04.2017; Anatel, Acórdão nº 312, de 02.06.2020; Anatel, Acórdão nº 80, de 19.04.2023; Anatel, Acórdão nº 19, de 16.02.2024; Anatel, Acórdão nº 38, de 13.02.2023; Anatel.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 32/2026/NP (SEI nº 15417067), integrante deste acórdão, ratificar o conhecimento do Recurso Administrativo (SEI nº 13582884) interposto pela empresa BJ NET PROVEDOR DE INTERNET LTDA., CNPJ nº 11.799.650/0001-65, para, no mérito, negar-lhe provimento, mantendo o Despacho Decisório nº 196/2025/COUN/SCO (SEI nº 13358617), de 6 de março de 2025.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e o Conselheiro Substituto Nilo Pasquali.
+Ausente o Conselheiro Alexandre Reis Siqueira Freire, em missão oficial internacional.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 30/06/2026, às 11:46, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15823111 e o código CRC 625C60E4.
+ | 
+Referência: Processo nº 53516.000024/2022-39 | 
+SEI nº 15823111 |

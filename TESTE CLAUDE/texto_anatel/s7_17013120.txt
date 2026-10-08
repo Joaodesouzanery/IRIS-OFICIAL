@@ -1,0 +1,116 @@
+SEI/ANATEL - 15205082 - Análise
+Boletim de Serviço Eletrônico em 12/03/2026
+Análise nº 16/2026/OP
+Processo nº 53500.012349/2024-03
+Interessado: Oi S.a. - em Recuperacao Judicial
+CONSELHEIRO
+OCTAVIO PENNA PIERANTI
+ASSUNTO
+Recurso Administrativo (SEI nº 13528103 ) interposto pela empresa OI S.A. - EM RECUPERAÇÃO JUDICIAL, CNPJ nº 76.535.764/0001-43, contra o Despacho Decisório nº 52/2025/GR04AF/GR04/SFI (SEI nº 13346604), da Gerência Regional da Anatel em Minas Gerais - GR04, referente ao recolhimento de valores relativos à Taxa de Fiscalização de Funcionamento (TFF), no exercício de 2023.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. TAXA DE FISCALIZAÇÃO DE FUNCIONAMENTO (TFF). RECURSO CONHECIDO E DESPROVIDO.
+I. CASO EM EXAME
+ O recurso. Recurso Administrativo (SEI nº 13528103) interposto por Oi S.A. – em recuperação judicial contra o Despacho Decisório nº 52/2025/GR04AF/GR04/SFI (SEI nº 13346604).
+ Fato relevante. Despacho que julgou procedentes lançamentos de créditos relativos à TFF do exercício de 2023 e interrompeu a incidência de multa de mora, com previsão de nova imposição após decisão judicial que considerar devido o tributo.
+ Alegações da recorrente. Nulidade da decisão por ausência de fundamentação. Nulidade do lançamento por falta de clareza sobre juros, termo inicial e índice de correção. Vedação de exigência de multa de mora durante suspensão da exigibilidade. Ilegitimidade da cobrança da TFF.
+II. QUESTÃO EM DISCUSSÃO
+ Há três questões em discussão: (i) saber se há nulidade processual por ausência de prejuízo ao direito de defesa; (ii) saber se o lançamento para prevenir decadência é válido durante a suspensão da exigibilidade; e (iii) saber se é possível analisar a alegação de ilegitimidade da cobrança da TFF diante de ação judicial com o mesmo objeto.
+III. RAZÕES DE DECIDIR
+ O processo observou o Decreto nº 70.235/1972, com garantia do devido processo legal e da ampla defesa.
+ A nulidade exige demonstração de prejuízo ao exercício da defesa.
+ A recorrente apresentou impugnação e razões recursais. A recorrente não demonstrou prejuízo concreto.
+ A suspensão da exigibilidade não impede o lançamento para prevenir decadência.
+ A multa de mora tem incidência interrompida enquanto vigente a suspensão da exigibilidade, até 30 dias após a publicação da decisão judicial que considerar devido o tributo.
+ A alegação de ilegitimidade da cobrança da TFF coincide com o objeto de ação judicial. O órgão administrativo deve limitar-se a matéria distinta da constante do processo judicial.
+IV. DISPOSITIVO E TESE
+ Recurso conhecido e desprovido.
+Tese de julgamento: "1. A nulidade processual exige demonstração de prejuízo ao direito de defesa. 2. A suspensão da exigibilidade do crédito tributário não impede o lançamento para prevenir decadência. 3. A incidência da multa de mora é interrompida durante a suspensão da exigibilidade, nos termos do art. 63, § 2º, da Lei nº 9.430/1996. 4. A propositura de ação judicial com o mesmo objeto implica renúncia às instâncias administrativas quanto à matéria discutida em juízo."
+Dispositivos relevantes citados: Lei nº 5.070/1966; Decreto nº 70.235/1972; Lei nº 5.172/1966 (CTN), art. 151, V; Decreto nº 7.574/2011, art. 86; Lei nº 9.430/1996, art. 63, § 2º; Portaria Normativa nº 1.355/2019, item 7.1.1; Resolução nº 729/2020, art. 32, §§ 5º e 6º.
+Jurisprudência relevante citada: CARF, Súmula nº 1/2006; CARF, Acórdão nº 9101-002.423; CARF, Acórdão nº 3301-003.029; CARF, Acórdão nº 1401-003.896; PFE-Anatel, Parecer nº 249/2020/PFE-ANATEL/PGF/AGU.
+REFERÊNCIAS
+Lei nº 5.070, de 7 de julho de 1966, que cria o Fundo de Fiscalização das Telecomunicações (Fistel), e dá outras providências.
+Decreto nº 70.235, de 6 de março de 1972, que dispõe sobre o Processo Administrativo Fiscal Federal e dá outras providências.
+Resolução nº 729, de 19 de junho de 2020, que aprova o Regulamento de Arrecadação de Receitas Tributárias (RART), e dá outras providências.
+Portaria nº 1.355, de 26 de julho de 2019, que aprova, no âmbito da Superintendência de Administração e Finanças da Anatel, o Manual de Tratamento da Fase Contenciosa de Processos Administrativos Fiscais (PAF-C) e as Listas de Súmulas e Pareceres aplicáveis ao PAF-C.
+RELATÓRIO
+DOS FATOS
+Trata-se de Recurso Administrativo (SEI nº 13528103 ) interposto por OI S.A. - Em recuperação judicial, CNPJ nº 76.535.764/0001-43, contra o Despacho Decisório nº 52/2025/GR04AF/GR04/SFI (SEI nº 13346604), da Gerência Regional no Estado de Minas Gerais da Agência Nacional de Telecomunicações, que julgou procedentes os lançamentos dos créditos e interrompeu a incidência de Multa de Mora, devendo esta ser novamente imposta ao contribuinte até 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo, tudo referente de valores relativos à Taxa de Fiscalização de Funcionamento (TFF), no exercício de 2023.
+Em 24/03/2025, conforme Certidão de Intimação Cumprida (SEI nº 13453607), por "consulta direta", o contribuinte foi notificado do referido Despacho, e interpôs Recurso Administrativo (SEI nº 13528103 ).
+Foi elaborado o Informe nº 763/2025/COUN/SCO (SEI nº 14594865), que sugeriu o conhecimento e não provimento do Recurso Administrativo.
+Nos termos do Despacho Decisório nº 788/2025/COUN/SCO (SEI nº 14603599), a Superintendente de Controle de Obrigações Substituta conheceu do Recurso interposto e, em seguida os autos foram encaminhados para deliberação deste Colegiado por meio da MACD nº 783/2025 (SEI nº 14603622).
+Fui designado relator da matéria por meio do sorteio realizado em 09/02/2026 (SEI nº 15156771).
+É o relatório.
+DA ANÁLISE
+Inicialmente, cumpre frisar que a instrução do presente Processo Administrativo Fiscal - PAF transcorreu de acordo com o previsto no Decreto nº 70.235, de 6 de março de 1972, tendo sido resguardados todos os pressupostos do devido processo legal e da ampla defesa.
+Quanto à admissibilidade do Recurso Administrativo em tela, entendo que atende os requisitos de: (i) tempestividade, visto que interposto no prazo recursal de 30 (trinta) dias, nos termos do item 7.1.1 da Portaria Normativa nº 1355, de 26 de julho de 2019; (ii) legitimidade, uma vez que o recorrente é o destinatário da decisão contra a qual se insurge; (iii) interesse em recorrer, tendo em vista o liame existente entre a decisão e o prejuízo que supostamente está sofrendo; e, por fim, (iv) ausência de contrariedade a Súmula editada pela Agência, razão pela qual proponho o seu conhecimento.
+Em 06/03/2025, o Gerênte Regional da Anatel em Minas Gerais - GR04 exarou o Despacho Decisório nº 52/2025/GR04AF/GR04/SFI (SEI nº 13346604), que acatou o Informe nº 58/2025/GR04AF/GR04/SFI (SEI nº 13346099). Vejamos:
+Despacho Decisório nº 52/2025/GR04AF/GR04/SFI (SEI nº 13346604)
+Em seu recurso, a Interessada alega, em síntese: (i) que a decisão recorrida é nula, por ausência de fundamentação clara e precisa, na medida em que não apreciou adequadamente os argumentos expostos na impugnação; (ii) que o próprio lançamento é nulo, porque não permite ao contribuinte compreender nem qual foi o valor dos juros, nem o termo inicial de sua incidência, e nem mesmo qual foi o índice que a ANATEL tem aplicado para a correção dos valores lançados; (iii) não se pode admitir a exigência de multa de mora, nem mesmo condicionada automaticamente ao insucesso da ação declaratória, por força da dicção do art. 63, § 2º, da Lei nº 9.430/1996; e (iv) é ilegítima na cobrança da TFF, por afrontar o princípio da razoável equivalência que norteia a base de cálculo das taxas.
+A TFF é devida pelas concessionárias, permissionárias e autorizadas de serviços de telecomunicações e de uso de radiofrequência pela fiscalização do funcionamento das estações. Instituída pela Lei nº 5.070/1966, deve ser paga, anualmente, até o dia 31 de março, e seus valores serão os correspondentes a 33% (trinta e três por cento) dos fixados para a TFI.
+O Regulamento de Arrecadação de Receitas Tributárias (RART), esclarece características importantes sobre esse tributo:
+o sujeito passivo da TFF é a prestadora de serviços de telecomunicações sujeita à atividade fiscalizadora da Anatel, sendo solidariamente responsáveis pelo seu recolhimento todas as prestadoras que realizarem o compartilhamento de infraestrutura ativa de estações de telecomunicações;
+seu fato gerador é o exercício do poder de polícia no que tange ao funcionamento de estações utilizadas para prestação de serviços de telecomunicações, previamente licenciadas ou não, e uso de radiofrequências;
+considera-se ocorrido o fato gerador da TFF no dia 1º de janeiro de cada ano;
+a base de cálculo da TFF corresponde ao número de estações licenciadas ou não, incluindo os terminais móveis habilitados, quando aplicável, em 31 de dezembro do ano anterior;
+no caso de Licença para Funcionamento em Bloco de Estações, emitida de acordo com as normas que regem o licenciamento de estações na Anatel, a TFF terá como base de cálculo o número de estações em funcionamento cuja licença tenha sido emitida até o 20º (vigésimo) dia útil do mês de janeiro do ano corrente, que correspondem às estações em operação em 31 de dezembro do ano anterior, acrescido do crédito de blocos de estações acumulado pela prestadora até essa data;
+a TFF somente deixará de incidir sobre a estação licenciada a partir do exercício subsequente àquele em que: (i) o sujeito passivo venha a protocolizar, perante a Anatel, pedido de cancelamento da licença; e (ii) for publicado o ato que determinar o cancelamento da licença em função da extinção da outorga de serviço de telecomunicações, do direito de uso de radiofrequências ou do direito de exploração de satélite; e
+a expedição de nova licença para funcionamento de estação, em substituição à licença anterior, após a ocorrência do fato gerador da TFF não desonerará a responsável de seu pagamento, mesmo que a substituição gere nova incidência da TFI.
+À Anatel, na condição de sujeito ativo do referido tributo, compete planejar, executar, acompanhar e avaliar as atividades relativas à tributação, à fiscalização, à arrecadação, à cobrança e ao recolhimento da contribuição.
+No tocante à preliminar arguida pela Recorrente, tem-se que a mesma alega a nulidade da Notificação de lançamento posto não apresentar segregação entre multa de mora e juros de mora, impedindo o contribuinte de ter pleno conhecimento dos valores que lhe estão sendo cobrados.
+Isto porque, em razão do crédito encontrar-se com sua exigibilidade suspensa em face de determinação judicial, não poderiam incidir sobre os valores lançados a cobrança da multa de mora, conforme assegurado pela legislação vigente.
+Entendeu, a ora Recorrente que a Anatel ao analisar a sua Impugnação não se manifestou sobre o mérito da alegação ora suscitada, tornando assim nula também a decisão recorrida.
+Todavia, para que um ato processual seja declarado nulo, não basta a mera constatação de um vício formal, caso exista. É imprescindível que a parte que alega a nulidade demonstre, de forma concreta, qual foi o prejuízo sofrido em seu direito de defesa. É o chamado princípio do pas de nullité sans grief, ou seja, não há nulidade sem prejuízo.
+A invalidade de um ato não é um fim em si mesma, mas um meio de assegurar a paridade de armas e o justo processo.
+Portanto, ao analisar uma arguição de nulidade deverá ser constatada a existência de um dano efetivo ao exercício da defesa do contribuinte. Se, a despeito do suposto vício, o contribuinte conseguiu exercer plenamente seu contraditório, apresentar suas razões e produzir provas, deverá ser afastada a preliminar de nulidade.
+Neste sentido, existem várias decisões do CARF, senão vejamos:
+Acórdão nº 9101-002.423-CARF
+NULIDADE. PREJUÍZO. INOCORRÊNCIA. No Direito pátrio vigora o princípio do pas de nullité sans grief, isto é, não há nulidade processual sem prejuízo. Incabível, portanto, a decretação de nulidade do processo administrativo quando inexistem evidências de que o vício alegado tenha prejudicado, ainda que minimamente, a defesa do sujeito passivo.
+Acórdão nº 3301-003.029-CARF
+NULIDADE PROCESSUAL. CERCEAMENTO AO DIREITO DE DEFESA. INOCORRÊNCIA. Nos termos do princípio pas de nullité sans grief, a nulidade por cerceamento ao direito de defesa exige seja comprovado o efetivo prejuízo ao exercício desse direito por parte do sujeito passivo.
+Acórdão nº 1401-003.896-CARF
+Afasta a nulidade por vício na intimação quando verificado que o contribuinte, ainda assim, compareceu aos autos e apresentou sua defesa tempestivamente, demonstrando a ausência de prejuízo.
+No caso em tela, entendo que o Informe nº 763/2025/COUN/SCO (SEI nº 14594865) ao apreciar a impugnação da Interessada concluiu não haver nulidade, e analisou os argumentos apresentados pela Interessada.
+Portanto, não tendo a Recorrente comprovado prejuízo real decorrente do suposto vício, não há fundamento para acolher a preliminar de nulidade suscitada.
+No tocante ao lançamento do crédito tributário no caso em tela, apesar da existência de decisão judicial em vigor, impende salientar que, a despeito do previsto no artigo 151, inciso V, do Código Tributário Nacional, a suspensão da exigibilidade do crédito tributário, não obsta a Administração de realizar o lançamento do crédito tributário para fins de prevenir a decadência do direito de constituí-lo, conforme dispõe o artigo 86 do Decreto nº 7.574, de 29 de setembro de 2011:
+Decreto nº 7.574/2011:
+"Art. 86. O lançamento para prevenir a decadência deverá ser efetuado nos casos em que existir a concessão de medida liminar em mandado de segurança ou de concessão de medida liminar ou de tutela antecipada, em outras espécies de ação judicial."
+Tal procedimento é necessário para preservar a possibilidade de cobrança futura, respeitando-se a suspensão da exigibilidade.
+O lançamento nesse contexto deve ser regularmente notificado ao contribuinte, deixando claro que a exigibilidade do crédito permanece suspensa em razão da tutela judicial concedida. Dessa forma, a constituição do crédito tributário ocorre normalmente, com todos os atos administrativos próprios, excetuando-se apenas aqueles voltados à execução e cobrança, que ficam suspensos até o julgamento final do processo ou eventual revogação da medida judicial.
+Quanto à multa de mora, é importante destacar que sua incidência fica interrompida enquanto a suspensão da exigibilidade estiver em vigor, conforme dispõe o artigo 63, § 2º, da Lei nº 9.430, de 27 de dezembro de 1996. O que conforme dito alhures, já foi efetivamente feito pela área competente.
+“Art. 63. Na constituição de crédito tributário destinada a prevenir a decadência, relativo a tributo de competência da União, cuja exigibilidade houver sido suspensa na forma dos incisos IV e V do art. 151 da Lei nº 5.172, de 25 de outubro de 1966, não caberá lançamento de multa de ofício.
+(...)
+§ 2º A interposição da ação judicial favorecida com a medida liminar interrompe a incidência da multa de mora, desde a concessão da medida judicial, até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo ou contribuição."
+A Procuradoria Federal Especializada junto à Anatel já se manifestou sobre o tema, conforme segue:
+PARECER nº 249/2020/PFE-ANATEL/PGF/AGU
+11. Por fim, a decisão de primeira instância determinou a “extinção” da multa de mora sobre as parcelas decorrentes de receitas de interconexão, cuja exigibilidade se encontra suspensa por ordem judicial, em conformidade com o disposto no art. 63, § 2º, da Lei nº 9.430/1996.
+12. Neste ponto, há uma impropriedade técnica, pois a Lei nº 9.430/1996 estabelece, em verdade, que “a medida liminar interrompe a incidência da multa de mora” (art. 63, § 2º).
+13. A esse respeito, vale citar o exposto no Informe nº 127/2020/AFFO6/AFFO/SAF (SEI 5382467):
+O parágrafo 2º do art. 63 da Lei no 9.430196, determina que "A interposição da ação judicial favorecida com a medida liminar interrompe a incidência da multa de mora, desde a concessão da medida judicial, até 30 dias após a data da publicação da decisão judicial que considerar devido o tributo ou contribuição".
+Diante o exposto, conclui-se que a decisão concessiva da suspensão da exigibilidade ocorreu em 26 de junho de 2006, ao passo que o primeiro ato de fiscalização ocorreu em 27/06/2006. Como o primeiro ato fiscalizatório ocorreu após a decisão judicial, tem-se que as parcelas do crédito que estavam com exigibilidade suspensa devem ser concedidos ao contribuinte 30 (trinta) dias para pagamento destas, sem a multa de mora, em obediência ao disposto no art. 63, §2º, da Lei no 9.430196.
+Ocorre que no Despacho nº 5857/2013/AFFO/SAF (SEI 2880242), houve uma atecnia, ou seja, extinguiu a multa de mora, quando em verdade deveria ter interrompido a multa de mora, concedendo a empresa um prazo de 30 dias para o contribuinte efetuar o pagamento dessas parcelas dos créditos, sem a multa de mora, após a decisão judicial que considerar devido o tributo, nos termos do art. 63, §2º da Lei 9430/96.
+Assim, sugere-se a revisão de ofício da letra "c" do Despacho nº 5857/2013/AFFO/SAF.
+14. Por tais razões, a decisão de primeira instância deve ser corrigida neste ponto, a fim de ser determinada a interrupção da incidência da multa de mora sobre as receitas com exigibilidade suspensa por ordem judicial, nos termos do art. 63, § 2º, da Lei nº 9.430/1996.
+Vale ressaltar, ainda, o que dispõe o art. 32, §5º e §6º da Resolução nº 729/2020, que aprova o Regulamento para Arrecadação de Receitas Tributárias:
+§ 5º Na constituição de crédito tributário destinada a prevenir a decadência, a incidência da multa de mora é interrompida com a concessão de medida liminar ou antecipação de tutela em sede de ação judicial, desde que ocorra antes da ciência do Requerimento de Informações ou de qualquer outro procedimento de fiscalização relativo ao tributo.
+§ 6º Na hipótese do § 5º, a incidência da multa de mora é interrompida desde a prolação da decisão interlocutória até 30 (trinta) dias após a data da publicação da decisão judicial que considerar devido o tributo.
+Além do mais, no caso em concreto, a decisão concessiva da suspensão da exigibilidade estabeleceu, expressamente, a renovação da tutela recursal para manter a suspensão da exigibilidade do crédito tributário discutido nos autos até julgamento da apelação. Dessa forma, não há se falar em multa de mora.
+Donde se pode concluir que não há nos autos qualquer irregularidade ou afronta à decisão judicial.
+No tocante ao argumento de ilegitimidade da cobrança da TFF, a Súmula Vinculante nº 1 do Conselho Administrativo de Recursos Fiscais - CARF estabelece que a propositura de ação judicial de qualquer natureza, antes ou depois do lançamento de ofício, desde que envolvendo o mesmo objeto, implica renúncia às instâncias administrativas. Nesse caso, o órgão de julgamento administrativo deve apreciar apenas as matérias que não estejam sendo discutidas no processo judicial:
+Súmula nº 1/2006 - CARF
+"Importa renúncia às instâncias administrativas a propositura pelo sujeito passivo de ação judicial por qualquer modalidade processual, antes ou depois do lançamento de ofício, com o mesmo objeto do processo administrativo, sendo cabível apenas a apreciação, pelo órgão de julgamento administrativo de matéria distinta da constante do processo judicial." [Grifou-se]
+Neste ponto, portanto, verifica-se que há coincidência de objetos com a ação judicial em curso, não sendo cabível a análise desta questão por este colegiado.
+Em face do exposto, opino pelo conhecimento e não provimento do Recurso.
+DA RELAÇÃO COM A AGENDA 2030: OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS) DA ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU)
+A Agenda 2030 da Organização das Nações Unidas (ONU) é um plano global para que, em 2030, possamos ter um mundo melhor para todos os povos e nações. Ela consubstancia um compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em 2015, a qual contempla os 193 Estados-membros da ONU, incluindo o Brasil, e envolve a adoção de medidas ousadas, abrangentes e essenciais para promover o Estado de Direito, os direitos humanos e a responsividade das instituições políticas.
+A Agenda 2030 é composta de 17 (dezessete) Objetivos de Desenvolvimento Sustentável (ODS) e 169 metas universais. A figura abaixo ilustra esses objetivos, que, de acordo com sítio eletrônico da ONU no Brasil (https://brasil.un.org/pt-br/sdgs), são definidos como "um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade".
+No presente caso, identifica-se aderência aos seguintes objetivos e metas:
+Objetivo nº 10 ("Reduzir as desigualdades no interior dos países e entre países"), com destaque para a Meta 10.4 ("Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade"), uma vez que uma administração tributária eficiente e justa garante uma distribuição de renda mais igualitária e promove redução das desigualdades econômicas e sociais; e
+Objetivo nº 16 ("Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis"), com destaque para as metas 16.6 ("Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis") e 16.7 ("Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis").
+CONCLUSÃO
+Diante das considerações expostas nesta Análise, voto por conhecer e negar provimento ao Recurso.
+ | Documento assinado eletronicamente por Octavio Penna Pieranti, Conselheiro, em 12/03/2026, às 17:39, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15205082 e o código CRC F4527F37.
+ | 
+Referência: Processo nº 53500.012349/2024-03 | 
+SEI nº 15205082 |

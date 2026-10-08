@@ -1,0 +1,44 @@
+SEI/ANATEL - 15219054 - Acórdão
+Boletim de Serviço Eletrônico em 05/03/2026
+DOU de 05/03/2026, seção 1, página 10
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES
+Acórdão nº 34, de 23 de fevereiro de 2026
+Processo nº 53504.002331/2018-15
+Recorrente/Interessado: CONTROL SERVICE DO BRASIL EIRELI
+CNPJ nº 03.770.372/0001-95
+Conselheiro(a) Relator(a): Cristiana Camarate Silveira Martins Leão Quinalia
+Fórum Deliberativo: Reunião nº 950, de 12 de fevereiro de 2026
+EMENTA
+DIREITO ADMINISTRATIVO E TRIBUTÁRIO. RECURSO ADMINISTRATIVO. PROCESSO ADMINISTRATIVO FISCAL - PAF. CONTRIBUIÇÃO AO FUNDO DE UNIVERSALIZAÇÃO DOS SERVIÇOS DE TELECOMUNICAÇÕES - CIDE-FUST. EXERCÍCIO DE 2014. RECURSO INTEMPESTIVO. NÃO CONHECIMENTO. PETIÇÃO EXTEMPORÂNEA. INDEFERIMENTO.
+I. CASO EM EXAME
+1. Recurso Administrativo interposto por CONTROL SERVICE DO BRASIL EIRELI contra o Despacho Decisório nº 42/2025/COUN/SCO, que reconheceu a procedência dos lançamentos de créditos tributários e de multa de ofício referentes à contribuição ao Fundo de Universalização dos Serviços de Telecomunicações - Fust no exercício de 2014.
+2. A Recorrente alegou nulidade da Notificação de Lançamento por falta de detalhamento da base de cálculo, inclusão indevida de receitas de locação de equipamentos, manutenção e comercialização de mercadorias, e inaplicabilidade de multa de ofício e juros de mora.
+II. QUESTÃO EM DISCUSSÃO
+Há duas questões em discussão: (i) saber se o Recurso Administrativo é tempestivo e deve ser conhecido; e (ii) caso recebido como petição extemporânea, saber se há nulidade do lançamento, inclusão indevida, de receitas na base de cálculo ou irregularidade na aplicação da multa de ofício e dos juros de mora.
+III. RAZÕES DE DECIDIR
+1. A Recorrente foi notificada em 2 de maio de 2025 e protocolizou o Recurso no SEI em 5 de junho de 2025 e, fisicamente, em 10 de junho de 2025, após o termo final de 3 de junho de 2025.
+2. A data de postagem nos Correios não serve como marco para aferição da tempestividade do Recurso Administrativo.
+3. O Recurso Administrativo é intempestivo e não deve ser conhecido.
+4. O Recurso pode ser recebido como petição extemporânea, nos termos da Súmula nº 21/2017.
+5. A Notificação de Lançamento atendeu aos requisitos formais do art. 11 do Decreto nº 70.235/1972.
+6. A Notificação de Lançamento indicou a possibilidade de acesso aos documentos e à metodologia de apuração nos autos, sem prejuízo ao contraditório e à ampla defesa.
+7. A Prestadora não apresentou documentação apta a afastar o enquadramento, na base de cálculo do Fust, de receitas de locação de radiocomunicadores com serviço de telecomunicações associado.
+8. Incumbe ao interessado provar os fatos alegados.
+9. A multa de ofício de 75% (setenta e cinco por cento) foi aplicada conforme o art. 44, inciso I, da Lei nº 9.430/1996, em razão de omissão na declaração e recolhimento a menor.
+10. Os juros de mora são exigíveis diante da constituição válida do crédito tributário e do não pagamento do tributo no seu vencimento.
+IV. DISPOSITIVO E TESE
+Recurso Administrativo não conhecido. Petição extemporânea indeferida.
+Tese de julgamento: “1. O Recurso Administrativo interposto após o prazo aplicável não deve ser conhecido. 2. A petição extemporânea pode ser conhecida, nos termos da Súmula nº 21/2017, e deve ser indeferida quando a Notificação de Lançamento atende aos requisitos do Decreto nº 70.235/1972 e não há prova apta a afastar a base de cálculo apurada, a multa de ofício do art. 44, I, da Lei nº 9.430/1996 e os juros de mora.”
+Dispositivos relevantes citados: Lei nº 5.172/1966 (Código Tributário Nacional - CTN), art. 116, parágrafo único; Lei nº 9.430/1996, art. 44, I; Lei nº 9.784/1999, arts. 25 e 36; Lei nº 9.998/2000, arts. 6º, IV, e 10; Decreto nº 70.235/1972, art. 11; Resolução nº 612/2013 (RIA), arts. 85, 115 e 116; Resolução nº 73/1998, arts. 23 e 30; Portaria Normativa nº 1.355/2019, item 7.1.1.
+Jurisprudência relevante citada: Supremo Tribunal Federal - STF, RE 602686 AgR-segundo, Rel. Min. Roberto Barroso, Primeira Turma, j. 09.12.2014, publ. 05.02.2015; STF, RE 678347 AgR, Rel. Min. Teori Zavascki, Segunda Turma, j. 29.04.2014, publ. 13.05.2014; Anatel, Acórdão nº 358/2024, Reunião nº 939, Rel. Cons. Vicente Bandeira de Aquino Neto; Anatel, Acórdão nº 201/2023, Reunião nº 924, Rel. Cons. Alexandre Reis Siqueira Freire; Anatel, Acórdão nº 138/2025, Reunião nº 943, Rel. Cons. Subst. Daniel Martins D Albuquerque; Anatel, Acórdão nº 375/2024, Reunião nº 939, Rel. Cons. Vicente Bandeira de Aquino Neto; Anatel, Acórdão nº 92/2025, Reunião nº 942, Rel. Cons. Subst. Daniel Martins D Albuquerque; Anatel, Acórdão nº 91/2023, Reunião nº 921, Rel. Cons. Vicente Bandeira de Aquino Neto; Anatel, Acórdão nº 55/2019, Reunião nº 865, Rel. Cons. Vicente Bandeira de Aquino Neto; Anatel, Acórdão nº 684/2017, Reunião nº 841, Rel. Cons. Otavio Luiz Rodrigues Junior; Anatel, Acórdão nº 271/2025, Reunião nº 947, Rel. Cons. Alexandre Reis Siqueira Freire; Anatel, Acórdão nº 80/2023, Reunião nº 921, Rel. Cons. Moisés Queiroz Moreira; Anatel, Acórdão nº 68/2025, Reunião nº 941, Rel. Cons. Vicente Bandeira de Aquino Neto; Anatel, Acórdão nº 312/2020, Reunião nº 885, Rel. Cons. Carlos Manuel Baigorri; Anatel, Acórdão nº 114/2017, Reunião nº 823, Rel. Cons. Otavio Luiz Rodrigues Junior; Anatel, Acórdão nº 356/2024, Reunião nº 939, Rel. Cons. Vicente Bandeira de Aquino Neto; Superior Tribunal de Justiça - STJ, Enunciado 216.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 15/2026/CL (SEI nº 15060525), integrante deste acórdão:
+a) não conhecer do Recurso Administrativo e recebê-lo como Petição Extemporânea, em conformidade com a Súmula nº 21, de 10 de outubro de 2017; e,
+b) indeferir os pedidos constantes da Petição Extemporânea.
+Participaram da deliberação o Presidente Carlos Manuel Baigorri, os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda e Octavio Penna Pieranti e a Conselheira Substituta Cristiana Camarate Silveira Martins Leão Quinalia.
+ | Documento assinado eletronicamente por Carlos Manuel Baigorri, Presidente, em 04/03/2026, às 17:12, conforme horário oficial de Brasília, com fundamento no art. 23, inciso II, da Portaria nº 912/2017 da Anatel.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 15219054 e o código CRC B0CE7E80.
+ | 
+Referência: Processo nº 53504.002331/2018-15 | 
+SEI nº 15219054 |
