@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Votos dos Diretores 2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sidebar fixa (seletor de agencia + secoes) e area de trabalho com cards KPI, graficos de blocos e tabelas filtraveis. Tema escuro carvao com acento laranja, claro opcional. */
+:root{--bg:#f3f1ed;--panel:#ffffff;--panel2:#f8f6f2;--line:#e1ddd5;--fg:#25231f;--mu:#6d685f;--acc:#e8590c;--acc-soft:#fbe3d3;--inf:#a79f92;--ok:#2b8a3e;--warn:#b7791f;--bad:#c92a2a;--cell:#e9e5dd;--font:'DM Sans',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1b19;--panel:#262523;--panel2:#2d2c29;--line:#3b3935;--fg:#ece8e1;--mu:#a09a8f;--acc:#ff7a1a;--acc-soft:#4a2a14;--inf:#7a746a;--ok:#51cf66;--warn:#fcc419;--bad:#ff6b6b;--cell:#33312d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c1b19;--panel:#262523;--panel2:#2d2c29;--line:#3b3935;--fg:#ece8e1;--mu:#a09a8f;--acc:#ff7a1a;--acc-soft:#4a2a14;--inf:#7a746a;--ok:#51cf66;--warn:#fcc419;--bad:#ff6b6b;--cell:#33312d;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 var(--font)}
+.app{display:grid;grid-template-columns:260px minmax(0,1fr);min-height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:14px;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{display:flex;gap:10px;align-items:center}.logo{width:34px;height:34px;border-radius:8px;background:var(--acc);display:grid;place-items:center;color:var(--bg);font:600 15px var(--mono)}
+.brand b{display:block;font-size:14px}.brand span{color:var(--mu);font-size:11.5px}
+.sel{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px}.sel label{display:block;font:500 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+select,input{background:var(--panel2);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font:inherit;min-width:0;width:100%}.sel select{border:0;background:transparent;padding:2px 0;font-weight:600;font-size:14px}
+.sec{font:500 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin:6px 0 -6px}
+nav{display:flex;flex-direction:column;gap:2px}nav button{display:flex;gap:10px;align-items:center;text-align:left;border:0;background:transparent;color:var(--fg);padding:8px 10px;border-radius:8px;cursor:pointer;font:inherit}
+nav button:hover{background:var(--panel2)}nav button.on{background:var(--acc-soft);color:var(--acc);font-weight:600}nav i{width:8px;height:8px;border-radius:2px;background:currentColor;opacity:.55}
+.theme{margin-top:auto;display:flex;gap:6px}.theme button{flex:1;border:1px solid var(--line);background:var(--panel2);color:var(--fg);border-radius:8px;padding:6px;cursor:pointer;font:500 11px var(--mono)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+main{padding:18px 22px 40px;min-width:0}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.crumb{font-size:13px;color:var(--mu)}.crumb b{color:var(--acc);font-weight:500}
+h1{font:500 24px var(--font);margin:0 0 4px}.lead{color:var(--mu);margin:0 0 14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.k{display:flex;justify-content:space-between;gap:8px;align-items:flex-end}.lab{font:500 10.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--mu)}
+.big{font:500 28px var(--mono);letter-spacing:-.02em;margin-top:4px}.sub{color:var(--mu);font-size:12px;margin-top:6px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:38px}.spark i{width:4px;background:var(--cell);border-radius:1px}.spark i.hi{background:var(--acc)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:12px;margin-bottom:12px}
+@media(max-width:1100px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.blocks{overflow-x:auto}.blocks svg{display:block;min-width:520px;width:100%;height:auto}
+.hb{display:grid;gap:7px;margin-top:8px}.hb .r{display:grid;grid-template-columns:minmax(110px,38%) minmax(0,1fr) 54px;gap:8px;align-items:center;font-size:12.5px}
+.hb .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hb .bar{height:12px;border-radius:3px;background:var(--cell);display:flex;overflow:hidden;gap:2px}.hb .bar i{display:block;height:100%}
+.hb .v{font:400 12px var(--mono);text-align:right;color:var(--mu)}
+.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mu);margin-top:8px}.leg span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--c);margin-right:6px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:end;margin-bottom:10px}.tools .f{display:flex;flex-direction:column;gap:3px;flex:1 1 150px;min-width:130px}.tools .f label{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+.tools .grow{flex:2 1 260px}
+.btn{border:1px solid var(--line);background:var(--panel2);color:var(--fg);padding:7px 11px;border-radius:8px;cursor:pointer;font:inherit}.btn.pri{background:var(--acc);color:var(--bg);border-color:var(--acc);font-weight:600}
+.meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:6px 0;color:var(--mu);font-size:12.5px}.meta b{color:var(--fg);font-family:var(--mono);font-weight:500}
+.tw{overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);max-height:68vh}
+table{border-collapse:collapse;width:100%}th,td{padding:6px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:12.5px}
+th{position:sticky;top:0;background:var(--panel2);font:500 10.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mu);white-space:nowrap;cursor:pointer;z-index:1}th.s:after{content:" ▾";color:var(--acc)}th.s.a:after{content:" ▴"}
+td{max-width:340px}td .c{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}td.n{text-align:right;font-family:var(--mono)}
+.chip{display:inline-block;padding:1px 8px;border-radius:99px;font:500 11px var(--mono);border:1px solid var(--line);white-space:nowrap}
+.k-nom{color:var(--acc);border-color:var(--acc)}.k-inf{color:var(--mu)}.k-ok{color:var(--ok);border-color:var(--ok)}.k-warn{color:var(--warn);border-color:var(--warn)}.k-bad{color:var(--bad);border-color:var(--bad)}
+.aviso{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:8px;padding:9px 12px;margin:10px 0;font-size:12.8px}
+.heat{display:grid;gap:2px;overflow-x:auto;font-size:11px}.heat div{min-height:18px;border-radius:2px}.heat .h{color:var(--mu);font-family:var(--mono);font-size:10px;display:flex;align-items:center}
+.heat .l{background:none;color:var(--fg);display:flex;align-items:center;white-space:nowrap;padding-right:8px;font-size:11.5px}
+.tip{position:fixed;z-index:9;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:12px;box-shadow:0 6px 18px #0004;display:none}
+dl.l{display:grid;grid-template-columns:minmax(120px,240px) minmax(0,1fr);gap:8px 16px;margin:0}dl.l dt{font-weight:600}dl.l dd{margin:0;color:var(--mu)}dl.l dt.h{grid-column:1/-1;font:500 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-top:10px}
+@media(max-width:900px){.app{grid-template-columns:minmax(0,1fr)}aside{position:static;height:auto;flex-direction:column}nav{flex-direction:row;overflow-x:auto}nav button{white-space:nowrap}.theme{margin-top:0}main{padding:14px 16px 32px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><div class="logo">IR</div><div><b>IRIS-Regulação</b><span>Votos dos diretores · 2026</span></div></div>
+  <div class="sel"><label for="ag">Agência</label><select id="ag"></select></div>
+  <div class="sec">Visão</div><nav id="nav1"></nav>
+  <div class="sec">Bases</div><nav id="nav2"></nav>
+  <div class="sec">Controle</div><nav id="nav3"></nav>
+  <div class="theme"><button id="tl">CLARO</button><button id="td">ESCURO</button></div>
+</aside>
+<main id="main"><div class="card">Carregando dados…</div></main>
+</div>
+<div class="tip" id="tip"></div>
+<script id="dados" type="text/plain">__PAYLOAD__</script>
+<script>
+const EXPORTA=__EXPORTA__, GERADO='__GERADO__';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const fmt=n=>Number(n).toLocaleString('pt-BR');
+async function carregar(){const bin=Uint8Array.from(atob($('#dados').textContent.trim()),c=>c.charCodeAt(0));
+  const txt=await new Response(new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'))).text();return JSON.parse(txt)}
+let S={},T={};
+const PAGES=[
+ ['visao','Visão geral','Painel','nav1'],['diretor','Perfil do diretor','Diretores','nav1'],
+ ['Votos','Votos','Votos','nav2'],['Deliberações','Deliberações','Deliberações','nav2'],['Matriz de votos','Matriz de votos','Matriz de votos','nav2'],['Diretores','Diretores (tabela)','Diretores','nav2'],
+ ['Controle','Controle','Controle','nav3'],['Reuniões','Reuniões','Reuniões','nav3'],['Apoio','Apoio','Apoio','nav3'],['LEIA-ME','Leia-me','LEIA-ME','nav3']];
+const FIL={'Votos':['Mês','Diretor','Papel','Evidência','Tipo de item','Modal','Tema','Microtema (IRIS)'],'Deliberações':['Mês','Tipo de item','Relator','Modal','Tema','Microtema (IRIS)'],
+ 'Matriz de votos':['Mês','Tipo de item','Tema'],'Diretores':['Diretor','Mês','Modal','Tema','Microtema (IRIS)'],'Controle':['Tipo','Status'],'Reuniões':['Tipo'],'Apoio':['Tipo']};
+const ST={page:'visao',ag:'',q:'',f:{},sort:null,pg:0,dir:''};
+const PG=100;
+function tab(n){if(!T[n]){const r=S[n];const c=r[0];const l=r.slice(1).map(x=>{x=x.slice();while(x.length<c.length)x.push('');return x});T[n]={c,l,ix:Object.fromEntries(c.map((h,i)=>[h,i]))}}return T[n]}
+function rowsAg(n){const t=tab(n);const i=t.ix['Agência'];return ST.ag&&i!==undefined?t.l.filter(r=>r[i]===ST.ag):t.l}
+function cnt(rows,i){const m=new Map();rows.forEach(r=>m.set(r[i],(m.get(r[i])||0)+1));return m}
+function tipTip(e,h){const t=$('#tip');t.innerHTML=h;t.style.display='block';const w=t.offsetWidth;t.style.left=Math.min(innerWidth-w-8,e.clientX+14)+'px';t.style.top=(e.clientY+14)+'px'}
+document.addEventListener('mouseout',e=>{if(e.target.closest&&e.target.closest('[data-tip]'))$('#tip').style.display='none'});
+document.addEventListener('mousemove',e=>{const x=e.target.closest&&e.target.closest('[data-tip]');if(x)tipTip(e,x.dataset.tip)});
+/* ---------- graficos ---------- */
+function blocos(mapa,rotulo){ // colunas de quadradinhos, 1 coluna por mes (estilo da referencia)
+ const ms=[...mapa.keys()].filter(Boolean).sort();if(!ms.length)return'<div class="sub">Sem dados.</div>';
+ const mx=Math.max(...ms.map(m=>mapa.get(m).t)),H=12,un=Math.max(1,Math.ceil(mx/H)),cs=14,g=3,w=ms.length*(cs*2+g*2+8)+30;
+ let s=`<svg viewBox="0 0 ${w} ${H*(cs+g)+34}" role="img" aria-label="${esc(rotulo)}">`;
+ ms.forEach((m,i)=>{const o=mapa.get(m),x=28+i*(cs*2+g*2+8);const n=Math.round(o.t/un),nn=Math.round(o.n/un);
+  s+=`<g data-tip="<b>${esc(m)}</b><br>${fmt(o.t)} ${esc(rotulo)}<br>${fmt(o.n)} individuais · ${fmt(o.t-o.n)} inferidos">`;
+  for(let k=0;k<H;k++)for(let c=0;c<2;c++){const y=(H-1-k)*(cs+g),on=k<n;const ind=k<Math.min(nn,n);
+   s+=`<rect x="${x+c*(cs+g)}" y="${y}" width="${cs}" height="${cs}" rx="2" fill="${on?(ind?'var(--acc)':'var(--inf)'):'var(--cell)'}" opacity="${on?1:.55}"/>`}
+  s+=`<text x="${x+cs+g/2}" y="${H*(cs+g)+16}" text-anchor="middle" font-size="10.5" font-family="JetBrains Mono,monospace" fill="var(--mu)">${m.slice(5)}/${m.slice(2,4)}</text></g>`});
+ for(let k=0;k<=H;k+=4)s+=`<text x="0" y="${(H-k)*(cs+g)-3}" font-size="9.5" font-family="JetBrains Mono,monospace" fill="var(--mu)">${k*un}</text>`;
+ return s+`</svg><div class="leg"><span style="--c:var(--acc)">individual (citado na ata)</span><span style="--c:var(--inf)">inferido (unanimidade)</span><span style="--c:var(--cell)">1 quadrado = ${un} ${esc(rotulo)}</span></div>`}
+function hbars(it,top){it=it.slice(0,top||10);const mx=Math.max(1,...it.map(x=>x.t));
+ return '<div class="hb">'+it.map(x=>`<div class="r" data-tip="<b>${esc(x.l)}</b><br>${fmt(x.t)} (${fmt(x.n||0)} individuais)"><div class="t" title="${esc(x.l)}">${esc(x.l)}</div><div class="bar" style="width:${Math.max(3,x.t*100/mx)}%"><i style="width:${x.t?(x.n||0)*100/x.t:0}%;background:var(--acc)"></i><i style="flex:1;background:var(--inf)"></i></div><div class="v">${fmt(x.t)}</div></div>`).join('')+'</div>'}
+function agg(rows,ci,nomi){const m=new Map();rows.forEach(r=>{const k=r[ci]||'—';const o=m.get(k)||{l:k,t:0,n:0};o.t++;if(r[nomi]==='nominal')o.n++;m.set(k,o)});return[...m.values()].sort((a,b)=>b.t-a.t)}
+function spark(vals,destaque){const mx=Math.max(1,...vals);return '<div class="spark">'+vals.map((v,i)=>`<i class="${i===destaque?'hi':''}" style="height:${Math.max(4,v*100/mx)}%"></i>`).join('')+'</div>'}
+function mensal(rows,ci,pi){const m=new Map();rows.forEach(r=>{const k=r[ci];if(!k)return;const o=m.get(k)||{t:0,n:0};o.t++;if(r[pi]==='nominal')o.n++;m.set(k,o)});return m}
+/* ---------- paginas ---------- */
+function pgVisao(){
+ const V=tab('Votos'),Dl=tab('Deliberações'),vr=rowsAg('Votos'),dr=rowsAg('Deliberações'),rr=rowsAg('Reuniões'),cr=rowsAg('Controle'),P=tab('Painel');
+ const nom=vr.filter(r=>r[V.ix['Proveniência']]==='nominal').length,pend=cr.filter(r=>r[0]==='Pendência da fonte'&&r[tab('Controle').ix['Status']]==='ABERTA').length;
+ const dirs=new Set(vr.map(r=>r[V.ix['Agência']]+'|'+r[V.ix['Diretor']]));
+ const mv=mensal(vr,V.ix['Mês'],V.ix['Proveniência']),md=mensal(dr,Dl.ix['Mês'],Dl.ix['Resultado']);const ms=[...mv.keys()].sort();
+ const kp=(l,b,sub,sp)=>`<div class="card"><div class="k"><div><div class="lab">${l}</div><div class="big">${b}</div></div>${sp||''}</div><div class="sub">${sub}</div></div>`;
+ let h=`<h1>Visão geral</h1><p class="lead">${ST.ag?esc(ST.ag):'Todas as agências'} · ${vr.length?'votos de '+ms[0]+' a '+ms[ms.length-1]:''} · gerado em ${GERADO}</p>`;
+ h+='<div class="kpis">'+kp('Votos',fmt(vr.length),'1 linha por diretor em cada item da ata',spark(ms.map(m=>mv.get(m).t),ms.length-1))
+  +kp('Deliberações',fmt(dr.length),'itens de ata (inclui retiradas e vistas)')+kp('Reuniões',fmt(rr.length),'com ou sem ata lida')
+  +kp('Evidência individual',vr.length?Math.round(nom*100/vr.length)+'%':'—',`${fmt(nom)} citados na ata · ${fmt(vr.length-nom)} inferidos`)
+  +kp('Diretores',fmt(dirs.size),'com ao menos 1 voto')+kp('Pendências da fonte',fmt(pend),'o que a fonte ainda não publicou')+'</div>';
+ h+=`<div class="grid2"><div class="card"><div class="lab">Votos por mês</div><div class="blocks">${blocos(mv,'votos')}</div></div>`;
+ const ag=agg(vr,V.ix['Agência'],V.ix['Proveniência']);
+ h+=`<div class="card"><div class="lab">Votos por agência</div>${hbars(ag,15)}<div class="leg"><span style="--c:var(--acc)">individual</span><span style="--c:var(--inf)">inferido</span></div></div></div>`;
+ h+=`<div class="grid2"><div class="card"><div class="lab">Temas mais frequentes (votos)</div>${hbars(agg(vr,V.ix['Tema'],V.ix['Proveniência']),10)}</div><div class="card"><div class="lab">Modal</div>${hbars(agg(vr,V.ix['Modal'],V.ix['Proveniência']),10)}</div></div>`;
+ const q=cr.filter(r=>r[0]==='Qualidade'),qs=cnt(q,tab('Controle').ix['Status']);
+ h+=`<div class="card"><div class="lab">Qualidade automática</div><div class="meta">${[...qs.entries()].map(([k,v])=>`<span class="chip ${k==='OK'?'k-ok':k==='DIVERGE'?'k-bad':'k-warn'}">${esc(k)} · ${v}</span>`).join(' ')}<span>checagens por agência: contagem × âncoras, presença por fonte independente, datas, numeração</span></div></div>`;
+ h+=`<div class="card" style="margin-top:12px"><div class="lab">Placar do objetivo final (aba Painel da planilha)</div><div class="tw" style="margin-top:8px;max-height:none"><table><tbody>${P.l.concat([P.c]).sort(()=>0).map(()=>'').join('')}${S['Painel'].map(r=>{const f=r.filter(x=>x!=='');if(!f.length)return'';return f.length===1?`<tr><td colspan="12" style="font-weight:600;color:var(--acc)">${esc(f[0])}</td></tr>`:'<tr>'+r.map(c=>`<td class="${typeof c==='number'?'n':''}"><div class="c">${esc(c)}</div></td>`).join('')+'</tr>'}).join('')}</tbody></table></div></div>`;
+ return h}
+function codCls(c){c=String(c);if(!c||c==='—')return'';if(c.startsWith('RELATOR')||c.startsWith('RETIROU'))return'k-nom';if(c.startsWith('DIVERGIU')||c.startsWith('REVISAR'))return'k-bad';if(c.startsWith('AUSENTE')||c.startsWith('IMPEDIDO'))return'k-warn';return c.endsWith('*')?'k-inf':'k-ok'}
+function celula(t,n,ci,v){if(typeof v==='number')return`<td class="n">${fmt(v)}</td>`;const h=t.c[ci];
+ if(n==='Votos'&&(h==='Proveniência'))return`<td><span class="chip ${v==='nominal'?'k-nom':v==='REVISAR'?'k-bad':'k-inf'}">${esc(v)}</span></td>`;
+ if(n==='Controle'&&h==='Status')return`<td><span class="chip ${v==='OK'||/RESOLVIDA/.test(v)?'k-ok':v==='DIVERGE'?'k-bad':'k-warn'}">${esc(v)}</span></td>`;
+ if(n==='Matriz de votos'&&ci>=9&&ci<t.c.length-1&&v)return`<td><span class="chip ${codCls(v)}">${esc(v)}</span></td>`;
+ return`<td><div class="c" title="${esc(v)}">${esc(v)}</div></td>`}
+function pgTabela(n){const t=tab(n),F=FIL[n]||[];
+ let rows=rowsAg(n);const qs=norm(ST.q).split(/\s+/).filter(Boolean);
+ if(qs.length){t.n=t.n||t.l.map(r=>norm(r.join(' ')));const nn=new Map(t.l.map((r,i)=>[r,t.n[i]]));rows=rows.filter(r=>qs.every(w=>nn.get(r).includes(w)))}
+ const base=rows;
+ const opts=h=>{const i=t.ix[h];const s=new Set();base.forEach(r=>{let ok=true;F.forEach(g=>{if(g!==h&&ST.f[n+g]&&r[t.ix[g]]!==ST.f[n+g])ok=false});if(ok&&r[i]!=='')s.add(r[i])});return[...s].sort((a,b)=>String(a).localeCompare(String(b),'pt-BR'))};
+ F.forEach(g=>{if(ST.f[n+g])rows=rows.filter(r=>r[t.ix[g]]===ST.f[n+g])});
+ if(ST.sort&&ST.sort.n===n){const i=ST.sort.i,d=ST.sort.d;rows=rows.slice().sort((a,b)=>(typeof a[i]==='number'&&typeof b[i]==='number'?a[i]-b[i]:String(a[i]).localeCompare(String(b[i]),'pt-BR',{numeric:true}))*d)}
+ const tp=Math.max(1,Math.ceil(rows.length/PG));if(ST.pg>=tp)ST.pg=tp-1;
+ let h=`<h1>${esc(PAGES.find(p=>p[0]===n)[1])}</h1><p class="lead">${esc(descr[n]||'')}</p><div class="tools"><div class="f grow"><label for="q">Busca livre</label><input id="q" value="${esc(ST.q)}" placeholder="assunto, processo, diretor, relator…"></div>`;
+ F.forEach(g=>{h+=`<div class="f"><label>${esc(g)}</label><select data-g="${esc(g)}"><option value="">(todos)</option>${opts(g).map(o=>`<option${ST.f[n+g]===o?' selected':''}>${esc(o)}</option>`).join('')}</select></div>`});
+ h+=`<div class="f" style="flex:0 0 auto"><label>&nbsp;</label><button class="btn" id="lim">Limpar</button></div></div>`;
+ h+=`<div class="meta"><b>${fmt(rows.length)}</b> linhas${rows.length!==rowsAg(n).length?' (de '+fmt(rowsAg(n).length)+')':''}<span>Página <b>${ST.pg+1}</b> de ${tp}</span><button class="btn" data-p="-1">◀</button><button class="btn" data-p="1">▶</button>${EXPORTA?'<button class="btn pri" id="csv">Exportar CSV do filtro</button>':''}</div>`;
+ h+=`<div class="tw"><table><thead><tr>${t.c.map((c,i)=>`<th data-i="${i}" class="${ST.sort&&ST.sort.n===n&&ST.sort.i===i?'s '+(ST.sort.d>0?'a':''):''}">${esc(c)}</th>`).join('')}</tr></thead><tbody>${rows.slice(ST.pg*PG,ST.pg*PG+PG).map(r=>'<tr>'+r.map((v,i)=>celula(t,n,i,v)).join('')+'</tr>').join('')}</tbody></table></div>`;
+ window._rows=rows;window._t=t;return h}
+function pgDiretor(){
+ const V=tab('Votos'),vr0=rowsAg('Votos'),ags=[...new Set(vr0.map(r=>r[V.ix['Agência']]))];
+ const lista=[...new Set(vr0.map(r=>r[V.ix['Diretor']]))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
+ if(!lista.includes(ST.dir))ST.dir=lista[0]||'';
+ const vr=vr0.filter(r=>r[V.ix['Diretor']]===ST.dir);const n=vr.length,I=h=>V.ix[h];
+ const c=x=>vr.filter(r=>r[I('Papel')]===x).length,nom=vr.filter(r=>r[I('Proveniência')]==='nominal').length,inf=n-nom-vr.filter(r=>r[I('Proveniência')]==='REVISAR').length;
+ let h=`<h1>Perfil do diretor</h1><p class="lead">Em que temas e microtemas cada diretor votou, e com que evidência. Use o seletor de agência na lateral para reduzir a lista.</p><div class="tools"><div class="f grow"><label for="dsel">Diretor</label><select id="dsel">${lista.map(d=>`<option${d===ST.dir?' selected':''}>${esc(d)}</option>`).join('')}</select></div></div>`;
+ if(!n)return h+'<div class="aviso">Sem votos neste recorte.</div>';
+ const kp=(l,b,s)=>`<div class="card"><div class="lab">${l}</div><div class="big">${b}</div><div class="sub">${s||''}</div></div>`;
+ h+=`<div class="meta"><b>${esc(ST.dir)}</b> · ${esc(ags.filter(a=>vr.some(r=>r[I('Agência')]===a)).join(', '))}</div><div class="kpis">`+kp('Linhas de voto',fmt(n))+kp('Relator / proponente',fmt(c('Relator/proponente')))+kp('Acompanhou',fmt(c('Votante (acompanhou)')))+kp('Divergiu',fmt(c('Votante (divergiu)')))+kp('Pediu vista',fmt(c('Pediu vista')))+kp('Ausente',fmt(c('Ausente')))+kp('Evidência individual',Math.round(nom*100/n)+'%',fmt(nom)+' citados na ata')+'</div>';
+ h+=`<div class="aviso"><b>Como ler com confiança.</b> Presença, relatoria, vista e divergência citada vêm direto da ata. Em ${Math.round(inf*100/n)}% das linhas deste recorte a ata só diz “por unanimidade”: o diretor <b>acompanhou</b>, mas não há voto individual escrito. O perfil mostra <b>onde o diretor participou</b>, não uma posição própria sobre o tema.</div>`;
+ const so=vr.filter(r=>r[I('Tipo de item')]!=='Aprovação de ata');
+ h+=`<div class="grid2"><div class="card"><div class="lab">Modal › tema</div>${hbars(agg(so.map(r=>[...r,(r[I('Modal')]||'—')+' › '+(r[I('Tema')]||'—')]),V.c.length,I('Proveniência')),12)}</div><div class="card"><div class="lab">Microtema (IRIS)</div>${hbars(agg(so,I('Microtema (IRIS)'),I('Proveniência')),12)}</div></div>`;
+ const meses=[...new Set(so.map(r=>r[I('Mês')]))].sort(),temas=agg(so,I('Tema'),I('Proveniência')).slice(0,10).map(x=>x.l);
+ const mp=new Map();so.forEach(r=>{const k=(r[I('Tema')]||'—')+'|'+r[I('Mês')];mp.set(k,(mp.get(k)||0)+1)});const mx=Math.max(1,...mp.values());
+ h+=`<div class="card"><div class="lab">Mapa de calor: tema × mês (nº de votos)</div><div class="heat" style="grid-template-columns:minmax(150px,230px) repeat(${meses.length},minmax(34px,1fr));margin-top:8px"><div></div>${meses.map(m=>`<div class="h">${m.slice(5)}/${m.slice(2,4)}</div>`).join('')}${temas.map(t=>`<div class="l" title="${esc(t)}">${esc(t.length>34?t.slice(0,33)+'…':t)}</div>`+meses.map(m=>{const v=mp.get(t+'|'+m)||0;return`<div data-tip="<b>${esc(t)}</b><br>${m}: ${v} votos" style="background:${v?'var(--acc)':'var(--cell)'};opacity:${v?.25+.75*v/mx:.5}"></div>`}).join('')).join('')}</div></div>`;
+ return h}
+const descr={'Votos':'Base única: 1 linha por diretor em cada item da ata.','Deliberações':'1 linha por item da ata, com relator, resultado, interessado, assunto, modal e tema.','Matriz de votos':'1 linha por item, 1 coluna por diretor. * = voto inferido da unanimidade.','Diretores':'Contagens por Agência, Diretor, Mês, Modal, Tema, Subtema, Microtema e Área.','Controle':'Cobertura, Qualidade, Pendência da fonte e Não feito (filtre a coluna Tipo).','Reuniões':'Presentes e ausentes de cada reunião, e observações.','Apoio':'Contagem de temas, concordância regra × IA e inventários.'};
+function pgLeia(){let h='<h1>Leia-me</h1><dl class="l">';S['LEIA-ME'].forEach(r=>{const[a,b]=[r[0]||'',r[1]||''];if(!a&&!b)return;h+=b===''?`<dt class="h">${esc(a)}</dt>`:`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`});return h+'</dl>'}
+/* ---------- controle ---------- */
+function desenha(foco){const p=ST.page,m=$('#main');
+ let h=`<div class="top"><div class="crumb">Dashboard › <b>${esc(PAGES.find(x=>x[0]===p)[1])}</b></div><div class="crumb">${ST.ag?esc(ST.ag):'Todas as agências'}</div></div>`;
+ h+=p==='visao'?pgVisao():p==='diretor'?pgDiretor():p==='LEIA-ME'?pgLeia():pgTabela(p);
+ m.innerHTML=h;
+ const q=$('#q');if(q){q.oninput=e=>{ST.q=e.target.value;ST.pg=0;desenha(true)};if(foco){q.focus();q.setSelectionRange(q.value.length,q.value.length)}}
+ m.querySelectorAll('select[data-g]').forEach(s=>s.onchange=e=>{ST.f[p+e.target.dataset.g]=e.target.value;ST.pg=0;desenha()});
+ const l=$('#lim');if(l)l.onclick=()=>{ST.q='';Object.keys(ST.f).forEach(k=>{if(k.startsWith(p))delete ST.f[k]});ST.pg=0;desenha()};
+ m.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{ST.pg=Math.max(0,ST.pg+ +b.dataset.p);desenha()});
+ m.querySelectorAll('th[data-i]').forEach(th=>th.onclick=()=>{const i=+th.dataset.i;ST.sort=ST.sort&&ST.sort.n===p&&ST.sort.i===i?{n:p,i,d:-ST.sort.d}:{n:p,i,d:1};ST.pg=0;desenha()});
+ const d=$('#dsel');if(d)d.onchange=e=>{ST.dir=e.target.value;desenha()};
+ const c=$('#csv');if(c)c.onclick=()=>{const t=window._t,q=x=>'"'+String(x).replace(/"/g,'""')+'"';const s=[t.c.map(q).join(';')].concat(window._rows.map(r=>r.map(q).join(';'))).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+s],{type:'text/csv'}));a.download=p+'.csv';a.click()};
+ document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.p===p))}
+function menu(){PAGES.forEach(([k,l,,nv])=>{const b=document.createElement('button');b.dataset.p=k;b.innerHTML='<i></i>'+l;b.onclick=()=>{ST.page=k;ST.pg=0;ST.q='';desenha();scrollTo(0,0)};$('#'+nv).appendChild(b)})}
+function tema(t){try{if(t)document.documentElement.setAttribute('data-theme',t);else document.documentElement.removeAttribute('data-theme');localStorage.setItem('tema',t||'')}catch(e){if(t)document.documentElement.setAttribute('data-theme',t)}}
+$('#tl').onclick=()=>tema('light');$('#td').onclick=()=>tema('dark');
+try{const t=localStorage.getItem('tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
+carregar().then(d=>{S=d;const ags=[...new Set(tab('Votos').l.map(r=>r[tab('Votos').ix['Agência']]))];
+ $('#ag').innerHTML='<option value="">Todas as agências</option>'+ags.map(a=>`<option>${esc(a)}</option>`).join('');$('#ag').onchange=e=>{ST.ag=e.target.value;ST.pg=0;desenha()};
+ menu();desenha()}).catch(e=>{$('#main').innerHTML='<div class="card">Não foi possível ler os dados: '+esc(e.message)+'. Abra em um navegador atual.</div>'});
+</script>
+</body>
+</html>

@@ -198,3 +198,50 @@ def tipo_ato(campos):
     for nome, pat in TIPO_ATO:
         if re.search(pat, t2): return nome
     return 'Outros'
+
+
+# ------------------------------------------------------------------ SETORES (agencias nao-transporte): modal fixo + temas proprios
+# regra: (tema, subtema, [regex sobre assunto+unidade normalizados], peso). 'unidade' = "secao|grupo" (ANVISA) ou natureza (ANPD).
+SETOR = {
+    'ANVISA': {'modal': 'Saúde e vigilância sanitária', 'temas': [
+        ('Regulação e normas', 'Abertura de processo regulatório / agenda', [r'abertura de processo administrativo de regulacao', r'agenda regulatoria'], 4),
+        ('Regulação e normas', 'Resolução (RDC) / instrução normativa', [r'resolucao da diretoria colegiada', r'\brdc\b', r'instrucao normativa', r'\bin n'], 3),
+        ('Regulação e normas', 'Consulta pública / audiência', [r'consulta publica', r'audiencia publica'], 4),
+        ('Regulação e normas', 'Norma (geral)', [r'^2\|'], 2),
+        ('Recursos administrativos', 'Fiscalização e inspeção sanitária (GGFIS)', [r'^3\|ggfis', r'ggfis'], 4),
+        ('Recursos administrativos', 'Portos, aeroportos e fronteiras (GGPAF)', [r'ggpaf'], 4),
+        ('Recursos administrativos', 'Medicamentos (GGMED)', [r'ggmed'], 4),
+        ('Recursos administrativos', 'Alimentos (GGALI)', [r'ggali'], 4),
+        ('Recursos administrativos', 'Produtos fumígenos (GGTAB)', [r'ggtab'], 4),
+        ('Recursos administrativos', 'Cosméticos e saneantes (GGCOS)', [r'ggcos'], 4),
+        ('Recursos administrativos', 'Tecnologia de produtos para saúde (GGTPS)', [r'ggtps'], 4),
+        ('Recursos administrativos', 'Produtos biológicos / toxicologia (GGBIO, GGTOX)', [r'ggbio', r'ggtox'], 4),
+        ('Recursos administrativos', 'Servidor / pessoal (SIAPE, GGPES)', [r'ggpes', r'siape'], 4),
+        ('Recursos administrativos', 'Gestão (GGGAF)', [r'gggaf'], 4),
+        ('Recursos administrativos', 'Recurso (geral)', [r'^3\|', r'recurso administrativo'], 2),
+        ('Efeito suspensivo', 'Julgamento de efeito suspensivo', [r'^4\|', r'efeito suspensivo'], 9),
+        ('Efeito suspensivo', 'Pedido de revisão', [r'^5\|', r'pedido de revisao'], 9),
+        ('Governança e gestão', 'Recomendações e orientações', [r'^[67]\|', r'recomenda'], 2),
+    ]},
+    'ANPD': {'modal': 'Proteção de dados pessoais', 'temas': [
+        ('Acesso à informação (LAI)', 'Recurso em 2ª instância', [r'lei de acesso', r'\blai\b', r'fala\.?br', r'recurso em 2'], 5),
+        ('Cooperação e acordos', 'Acordo / ACT / memorando', [r'acordo de cooperacao', r'\bact\b', r'memorando de entendimento', r'convenio', r'protocolo de intencoes', r'cooperacao', r'arranjo administrativo'], 4),
+        ('Regulamentação', 'Resolução / regulamento / portaria', [r'minuta de (resolucao|portaria|regulamento)', r'regulamento', r'resolucao cd', r'portaria anpd', r'revisao da resolucao', r'\bnorma', r'diretrizes', r'politica nacional', r'\bguia\b'], 4),
+        ('Regulamentação', 'Consulta / tomada de subsídios', [r'consulta publica', r'tomada de subsidios', r'audiencia publica'], 5),
+        ('Fiscalização e sanções', 'Processo sancionador / fiscalização', [r'sancionador', r'fiscaliza', r'infracao', r'sancao', r'multa'], 4),
+        ('Transferência internacional e adequação', 'Decisão de adequação / cláusulas', [r'adequacao', r'transferencia internacional', r'clausulas', r'uniao europeia', r'reciprocidade'], 5),
+        ('Proteção de crianças e adolescentes', 'ECA Digital', [r'eca digital', r'crianca', r'adolescente'], 5),
+        ('Gestão institucional e administrativa', 'Estrutura / agenda / planejamento', [r'agenda regulatoria', r'planejamento estrategico', r'regimento interno', r'estrutura', r'orcamento', r'servidor', r'organizacao e funcionamento', r'administrativa', r'premio', r'concurso', r'lei n.{0,3}9\.986', r'substituicao'], 3),
+    ]},
+}
+def pontuar_setor(campos, agencia):
+    cfg = SETOR[agencia]; t = norm(campos.get('assunto', '')); u = norm(campos.get('unidade', '')); tx = t + ' ' + norm(campos.get('texto', ''))[:300]
+    sc = {}; termos = {}
+    for tema, sub, pats, w in cfg['temas']:
+        for p in pats:
+            alvo = u if p.startswith('^') else (u + ' ' + t if re.search(r'gg[a-z]{3}|siape', p) else tx)
+            if re.search(p, alvo):
+                k = (tema, sub); sc[k] = sc.get(k, 0) + w + (3 if re.search(r'gg[a-z]{3}|siape', p) else 0); termos.setdefault(k, []).append(p)
+    if not sc: return ('Outros', 'Não classificado'), 0, 0.0, []
+    o = sorted(sc.items(), key=lambda kv: -kv[1]); (best, s1) = o[0]; s2 = o[1][1] if len(o) > 1 else 0
+    return best, s1, round(min(1.0, (s1 / (s1 + s2 + 1)) * min(1.0, s1 / 4)), 2), termos[best][:4]

@@ -34,6 +34,14 @@ for r in art['reunioes']: R.append(dict(r, agencia='ARTESP'))
 for d in art['deliberacoes']: D.append(dict(d, agencia='ARTESP', relator='Conselho Diretor', texto='', item=f"Del. {d['deliberacao']}", voto_doc=''))
 for v in art['votos']: V.append(dict(v, agencia='ARTESP'))
 
+# ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
+EXTRAS = {sg: json.load(open(sg.lower() + '.json')) for sg in ('ANPD', 'ANVISA') if os.path.exists(sg.lower() + '.json')}
+for sg, x in EXTRAS.items():
+    for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
+    for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
+    for v in x['votos']: V.append(dict(v, agencia=sg))
+AGS = ['ANM', 'ANTT', 'ARTESP'] + list(EXTRAS)
+
 def tipo_de(d):
     r = d['resultado']
     if d.get('tipo_item'): return d['tipo_item']
@@ -70,6 +78,8 @@ def kind(v):
     if t.startswith('DIVERGIU'): return 'divergiu'
     if t == 'PEDIU VISTA': return 'pediu vista'
     if t.startswith('AUSENTE'): return 'ausente'
+    if t.startswith('IMPEDIDO'): return 'impedido'
+    if t.startswith('SEM VOTO (não votou'): return 'sem voto (não votou)'
     if t.startswith('SEM VOTO'): return 'sem voto (retirado de pauta)'
     if t.startswith('VISTA COLETIVA'): return 'pediu vista'
     return 'a revisar'
@@ -121,7 +131,7 @@ chk('ARTESP', 'Deliberações lidas × âncoras "N. Deliberação ARTESP nº" na
 nums = {d['deliberacao'] for d in D if d['agencia'] == 'ARTESP'}; falt = [x for x in range(1, max(nums) + 1) if x not in nums]
 dels = collections.Counter(d['deliberacao'] for d in D if d['agencia'] == 'ARTESP')
 Q.append(['ARTESP', 'Numeração das deliberações 1..max sem buraco', 0, len(falt), 'OK' if not falt else 'EXCEÇÃO', f'sem registro em ata nem em PDF de Deliberação: {falt}; repetidos: {[k for k, n in dels.items() if n > 1]}'])
-for ag in ('ANM', 'ANTT', 'ARTESP'):
+for ag in AGS:
     vs = [v for v in V if v['agencia'] == ag]; c = collections.Counter(v['proveniencia'] for v in vs)
     chk(ag, 'nominal + inferido + REVISAR + n/a = total de votos', len(vs), sum(c.values()), str(dict(c)))
     chk(ag, 'Datas dentro de 2026', len(vs), sum(1 for v in vs if (v['data'] or '').startswith('2026')))
@@ -130,6 +140,7 @@ for ag in ('ANM', 'ANTT', 'ARTESP'):
         if r['agencia'] == ag: pres[r['reuniao']] = set(r.get('presentes', [])) | set(r.get('ausentes', []))
     fora = sum(1 for v in vs if v['reuniao'] in pres and pres[v['reuniao']] and v['diretor'] not in pres[v['reuniao']] and not v['voto'].startswith('RELATOR'))
     chk(ag, 'Votos de diretor que não está na presença/ausência da reunião (exceto relator)', 0, fora, 'relator de vista pode ser diretor de reunião anterior (ANM)')
+for sg, x in EXTRAS.items(): Q.extend(x['qualidade'])
 sheet('Qualidade', ['Agência', 'Checagem', 'Esperado', 'Observado', 'Status', 'Nota'], Q, {'Checagem': 70, 'Nota': 80})
 
 # ---- Cobertura
@@ -163,9 +174,10 @@ cob = [
  ['ARTESP', 'Deliberações lidas', sum(1 for d in D if d['agencia'] == 'ARTESP'), str(dict(dist('ARTESP')))],
  ['ARTESP', 'Presença', 'ver Reuniões', 'Constituição da ata: 4 diretores (47 reuniões) ou 3 com ausência justificada nominal (9 reuniões)'],
 ]
-for ag in ('ANM', 'ANTT', 'ARTESP'):
+for ag in AGS:
     ct = collections.Counter(d['tipo_item'] for d in D if d['agencia'] == ag)
     cob.append([ag, 'Itens da ata por tipo (todos têm 1 linha de voto por diretor, exceto Cancelada)', sum(ct.values()), '; '.join(f'{k}: {v}' for k, v in ct.most_common())])
+for sg, x in EXTRAS.items(): cob += x['cobertura']
 sheet('Cobertura', ['Agência', 'Medida', 'Valor', 'Nota'], cob, {'Medida': 70, 'Nota': 110})
 sheet('Pendências', ['Item', 'Detalhe'], [
  ['Proveniência', 'inferido = a ata diz "por unanimidade": todos os presentes acompanharam (não há voto individual escrito). nominal = o texto cita o diretor (relator, vista, ausente, retirada, divergência).'],
@@ -185,13 +197,14 @@ hoje = datetime.date.today()
 ordem = {'ANM': ['Mauro Henrique Moreira Sousa', 'Fábio Fernando Borges', 'Luiz Paniago Neves', 'José Fernando de Mendonça Gomes Júnior'],
          'ANTT': ['Guilherme Theo Rodrigues da Rocha Sampaio', 'Felipe Fernandes Queiroz', 'Lucas Asfor da Rocha Lima', 'Alex Antônio de Azevedo Cruz', 'Alessandro Baumgartner', 'Marcelo Cardoso Fonseca', 'Severino Medeiros Ramos Neto'],
          'ARTESP': ['André Isper Rodrigues Barnabé', 'Diego Albert Zanatto', 'Fernanda Esbízaro Rodrigues Rudnik', 'Raquel França Carneiro']}
+for sg, x in EXTRAS.items(): ordem[sg] = x['diretores']
 vidx = collections.defaultdict(dict)
 for v in V: vidx[(v['agencia'], v['reuniao'], v['processo'], v.get('deliberacao'))][v['diretor']] = v
 def cod(v):
     t = v['voto']; b = ('RELATOR' if t.startswith('RELATOR') else 'RETIROU' if t.startswith('RETIROU') else 'ACOMPANHOU' if t.startswith('ACOMPANHOU') else 'DIVERGIU' if t.startswith('DIVERGIU')
-                        else 'VISTA' if 'VISTA' in t and not t.startswith('SEM') else 'AUSENTE' if t.startswith('AUSENTE') else 'sem voto' if t.startswith('SEM VOTO') else 'REVISAR')
+                        else 'VISTA' if 'VISTA' in t and not t.startswith('SEM') else 'AUSENTE' if t.startswith('AUSENTE') else 'sem voto' if t.startswith('SEM VOTO') else 'IMPEDIDO' if t.startswith('IMPEDIDO') else 'REVISAR')
     return b + ('*' if v['proveniencia'] == 'inferido' else '')
-for ag in ('ANM', 'ANTT', 'ARTESP'):
+for ag in AGS:
     cabs = ordem[ag]; linhas = []
     for d in D:
         if d['agencia'] != ag or d['tipo_item'] == 'Cancelada': continue
@@ -208,7 +221,7 @@ for d in D:
     n_esp = len(set(r.get('presentes', [])) | set(r.get('ausentes', []))) if r else 0
     n_obs = len(vidx.get((d['agencia'], d['reuniao'], d['processo'], d.get('deliberacao')), {}))
     if n_esp != n_obs: falhas.append((d['agencia'], d['reuniao'], d['processo'], n_esp, n_obs))
-for ag in ('ANM', 'ANTT', 'ARTESP'):
+for ag in AGS:
     tot_d = sum(1 for d in D if d['agencia'] == ag and d['tipo_item'] not in ('Cancelada', 'Só voto do relator (sem ata)'))
     ruim = [f for f in falhas if f[0] == ag]
     Q.append([ag, 'Cada deliberação não cancelada tem 1 linha de voto por diretor presente/ausente', tot_d, tot_d - len(ruim), 'OK' if not ruim else 'DIVERGE', f'{len(ruim)} divergentes: {ruim[:4]}' if ruim else ''])
@@ -279,6 +292,8 @@ for d in D:
     if d['agencia'] == 'ARTESP' and d.get('numero_na_ata'): P.append(('ARTESP', f"{d['reuniao']} Del. {d['deliberacao']}", d['data'], 'Erro de numeração na fonte (corrigido pelo PDF)', f"ata diz {d['numero_na_ata']}; PDF diz {d['deliberacao']}", 'Número digitado errado na ata', 'Nenhuma: já corrigido na planilha'))
 for r in R:
     if r['agencia'] == 'ARTESP' and r['reuniao'] == 'ORD1187': P.append(('ARTESP', r['reuniao'], r['data'], 'Erro de digitação no título da ata (sem efeito)', 'ata completa', 'Título diz 1178ª; data e conteúdo são da 1187ª', 'Nenhuma'))
+for sg, x in EXTRAS.items():
+    for pe in x['pendencias']: P.append(tuple(pe))
 hist = json.load(open('pendencias_historico.json')) if os.path.exists('pendencias_historico.json') else {}
 hoje_s = hoje.isoformat(); atuais = set()
 for pe in P:
@@ -332,7 +347,7 @@ def sheetf(nome, cab, linhas, larg=None, cor='base', filtro=True):
     ws.sheet_properties.tabColor = COR[cor]; return ws
 def papel(v):
     if v['tipo_item'] == 'Aprovação de ata': return 'Aprovou a ata anterior'
-    return {'como relator/proponente': 'Relator/proponente', 'acompanhou': 'Votante (acompanhou)', 'divergiu': 'Votante (divergiu)', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar'}[kind(v)]
+    return {'como relator/proponente': 'Relator/proponente', 'acompanhou': 'Votante (acompanhou)', 'divergiu': 'Votante (divergiu)', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)'}[kind(v)]
 EVID = {'nominal': 'Individual (citada na ata)', 'inferido': 'Inferida (unanimidade/sem divergência)', 'n/a': 'Não se aplica', 'REVISAR': 'A revisar'}
 mes_ = lambda d: (d or '')[:7]
 # ---- Votos
@@ -346,7 +361,7 @@ sheetf('Deliberações', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'D
          tm(d, 'modal'), tm(d, 'tema'), tm(d, 'subtema'), tm(d, 'tipo_ato'), tm(d, 'microtema_iris'), tm(d, 'area_iris'), tm(d, 'confianca', ''), tm(d, 'fonte'), d.get('texto', '')] for d in D],
        {'Relator': 36, 'Interessado': 40, 'Assunto': 50, 'Texto da decisão': 80, 'Processo': 24, 'Resultado': 34, 'Tipo de item': 22, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Tipo de ato': 22})
 # ---- Matriz de votos única
-todos_dir = [(ag, nome) for ag in ('ANM', 'ANTT', 'ARTESP') for nome in ordem[ag]]
+todos_dir = [(ag, nome) for ag in AGS for nome in ordem[ag]]
 curto = lambda ag, n: f"{ag}: {n.split()[0]} {n.split()[-1]}"
 linhas = []
 for d in D:
@@ -360,9 +375,9 @@ ws.cell(row=len(linhas) + 3, column=1, value='Legenda: * = voto inferido da unan
 dl = collections.defaultdict(collections.Counter)
 for v in V:
     d = get_res(v); k = (v['agencia'], v['diretor'], mes_(v['data']), tm(d, 'modal') or '—', tm(d, 'tema') or '—', tm(d, 'subtema') or '—', tm(d, 'microtema_iris') or '—', tm(d, 'area_iris') or '—'); c = dl[k]; c['Registros'] += 1
-    c['Aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else {'como relator/proponente': 'Como relator/proponente', 'acompanhou': 'Acompanhou', 'divergiu': 'Divergiu', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar'}[kind(v)]] += 1
+    c['Aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else {'como relator/proponente': 'Como relator/proponente', 'acompanhou': 'Acompanhou', 'divergiu': 'Divergiu', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)'}[kind(v)]] += 1
     c['Votos individuais (citados)'] += v['proveniencia'] == 'nominal'; c['Votos inferidos'] += v['proveniencia'] == 'inferido'
-colsDir = ['Registros', 'Como relator/proponente', 'Acompanhou', 'Divergiu', 'Pediu vista', 'Ausente', 'Sem voto (retirada)', 'A revisar', 'Aprovou a ata anterior', 'Votos individuais (citados)', 'Votos inferidos']
+colsDir = ['Registros', 'Como relator/proponente', 'Acompanhou', 'Divergiu', 'Pediu vista', 'Ausente', 'Sem voto (retirada)', 'Sem voto (não votou)', 'Impedido', 'A revisar', 'Aprovou a ata anterior', 'Votos individuais (citados)', 'Votos inferidos']
 sheetf('Diretores', ['Agência', 'Diretor', 'Mês', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)'] + colsDir, [list(k) + [c[x] for x in colsDir] for k, c in sorted(dl.items())], {'Diretor': 38, 'Modal': 32, 'Tema': 34, 'Subtema': 34, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24}, cor='dir')
 # ---- Reuniões
 sheetf('Reuniões', ['Agência', 'Reunião', 'Data', 'Tipo', 'Presentes', 'Ausentes', 'Nº de itens lidos', 'Observação'], [[r['agencia'], r['reuniao'], r.get('data'), r.get('tipo', ''), '; '.join(r.get('presentes', [])), '; '.join(r.get('ausentes', [])), nd[(r['agencia'], r['reuniao'])], r.get('obs', '')] for r in sorted(R, key=lambda r: (r['agencia'], r.get('data') or ''))], {'Presentes': 80, 'Ausentes': 36, 'Observação': 50}, cor='apoio')
@@ -382,10 +397,11 @@ exd = [d for d in D if d['agencia'] == 'ANM' and d['tipo_item'] in ('Deliberaç�
 NF.append(['ANM', 'D. Relator que não é mais diretor', f'{len(exd)} itens (ex-diretores: {", ".join(sorted({x["relator"].split()[0] + " " + x["relator"].split()[-1] for x in exd}))})', 'NÃO FEITO', 'O voto deles foi em reunião anterior a 2026 e não aparece como linha de voto', 'Incluir como "relator (voto em reunião anterior)" fora dos totais'])
 pr_ = fatos.get('artesp_procedencia', {})
 NF.append(['ARTESP', 'E. Relator não publicado', f"Procedência dos {pr_.get('pdfs_de_deliberacao', 0)} PDFs: superintendência {pr_.get('superintendencia', 0)}; diretor (DIR-RC) {pr_.get('diretoria_dir_rc', 0)}; Presidência {pr_.get('presidencia', 0)}", 'NÃO FEITO / LIMITE DA FONTE', 'A ARTESP não diz quem relatou em ~91% das deliberações', 'Recuperar os 62 com diretor/Presidência como proponente nominal; o resto é limite da fonte'])
-for ag in ('ANM', 'ANTT', 'ARTESP'):
+for ag in AGS:
     vs = [v for v in V if v['agencia'] == ag]; n_inf = sum(1 for v in vs if v['proveniencia'] == 'inferido')
     NF.append([ag, 'G. Voto individual inferido da unanimidade', f'{n_inf} de {len(vs)} linhas ({n_inf * 100 // len(vs)}%)', 'LIMITE ESTRUTURAL', 'Em unanimidade a ata não traz o voto de cada diretor; só vídeos das sessões trazem', 'Não perseguido; usar a coluna Evidência para separar individual de inferida'])
-for ag in ('ANM', 'ANTT', 'ARTESP'): NF.append([ag, 'H. Auditoria humana de 60 deliberações (resultado e presença)', 'não feita', 'NÃO FEITO', 'Só há amostras de tema (AMOSTRA_TEMAS.md) e conferência automática', 'Sortear e conferir 60 itens'])
+for sg, x in EXTRAS.items(): NF += x['nao_feito']
+for ag in AGS: NF.append([ag, 'H. Auditoria humana de 60 deliberações (resultado e presença)', 'não feita', 'NÃO FEITO', 'Só há amostras de tema (AMOSTRA_TEMAS.md) e conferência automática', 'Sortear e conferir 60 itens'])
 
 # ---- Controle (Cobertura + Qualidade + Pendências da fonte + Não feito)
 ctrl = []
@@ -414,22 +430,22 @@ def bloco(ws, titulo, cab, linhas, linha0):
         for k, val in enumerate(l, 1): ws.cell(row=linha0 + 2 + i, column=k, value=val).alignment = Alignment(wrap_text=True, vertical='top')
     return linha0 + 3 + len(linhas)
 cnt_q = collections.Counter(r[5] for r in ctrl if r[0] == 'Qualidade'); n_pend = sum(1 for r in ctrl if r[0] == 'Pendência da fonte' and r[5] == 'ABERTA'); n_nf = sum(1 for r in ctrl if r[0] == 'Não feito')
-vot = {ag: [v for v in V if v['agencia'] == ag] for ag in ('ANM', 'ANTT', 'ARTESP')}
+vot = {ag: [v for v in V if v['agencia'] == ag] for ag in AGS}
 pc = lambda ag, p: f"{sum(1 for v in vot[ag] if v['proveniencia'] == p) * 100 // max(1, len(vot[ag]))}%"
 def cob_ag(ag):
     rs = [r for r in R if r['agencia'] == ag]; return rs
 cal_n = sum(1 for dt in json.load(open('calendario_anm_2026.json'))['rops'].values() if datetime.date.fromisoformat(dt) <= hoje)
 antt_real = sum(1 for r in R if r['agencia'] == 'ANTT' and datetime.date.fromisoformat(r['data']) <= hoje); antt_ata = sum(1 for r in R if r['agencia'] == 'ANTT' and not r.get('obs'))
 art_ok = sum(1 for r in R if r['agencia'] == 'ARTESP' and not r.get('obs')); art_tot = sum(1 for r in R if r['agencia'] == 'ARTESP')
-ws.cell(row=1, column=1, value=f'PAINEL — votos dos diretores em 2026 (ANM, ANTT, ARTESP) · gerado em {hoje.strftime("%d/%m/%Y")}').font = Font(bold=True, size=15, color='2E7D32')
+ws.cell(row=1, column=1, value=f'PAINEL — votos dos diretores em 2026 ({', '.join(AGS)}) · gerado em {hoje.strftime("%d/%m/%Y")}').font = Font(bold=True, size=15, color='2E7D32')
 r0 = bloco(ws, '1. Placar do objetivo final', ['Parte', 'Situação', 'Evidência medida'], [
-    ['1. Coleta sem perda silenciosa', 'Quase', f'ANM {sum(1 for r in R if r["agencia"] == "ANM")}/{cal_n} ROPs realizadas · ANTT {antt_ata}/{antt_real} realizadas com ata · ARTESP {art_ok}/{art_tot} atas corretas · {n_pend} pendências da fonte abertas (aba Controle)'],
+    ['1. Coleta sem perda silenciosa', 'Quase', f'ANM {sum(1 for r in R if r["agencia"] == "ANM")}/{cal_n} ROPs realizadas · ANTT {antt_ata}/{antt_real} realizadas com ata · ARTESP {art_ok}/{art_tot} atas corretas' + ''.join(f' · {sg} {sum(1 for r in R if r["agencia"] == sg and not r.get("obs"))} reuniões com ata lida' for sg in EXTRAS) + f' · {n_pend} pendências da fonte abertas (aba Controle)'],
     ['2. Extração (relator, resultado, processo, interessado)', 'Bom, com furos', 'Contagens batem com as âncoras das atas (aba Controle > Qualidade); modal e tema ≈ 94% em amostra manual (AMOSTRA_TEMAS.md); ARTESP não publica o relator em ~91% das deliberações'],
     ['3. Voto de cada diretor com proveniência', 'Parcial', f'{len(V)} linhas de voto, 1 por diretor em cada item; evidência individual ANM {pc("ANM", "nominal")} · ANTT {pc("ANTT", "nominal")} · ARTESP {pc("ARTESP", "nominal")}; o restante é inferido da unanimidade; {sum(rev.values())} linhas ainda "A revisar"'],
     ['4. Métricas por diretor, agência e período', 'Parcial', f'Abas Diretores e Votos (filtros por Agência, Diretor, Mês, Modal, Tema). Qualidade: {dict(cnt_q)}; {n_nf} lacunas "Não feito" listadas em Controle'],
 ], 3)
 r0 = bloco(ws, '2. Cobertura por agência', ['Agência', 'Reuniões com ata lida', 'Itens lidos', 'Linhas de voto', 'Individual (citada)', 'Inferida', 'A revisar', 'Pendências abertas'], [
-    [ag, sum(1 for r in R if r['agencia'] == ag and not r.get('obs')), sum(1 for d in D if d['agencia'] == ag), len(vot[ag]), pc(ag, 'nominal'), pc(ag, 'inferido'), sum(1 for v in vot[ag] if v['proveniencia'] == 'REVISAR'), sum(1 for r in ctrl if r[0] == 'Pendência da fonte' and r[1] == ag and r[5] == 'ABERTA')] for ag in ('ANM', 'ANTT', 'ARTESP')], r0)
+    [ag, sum(1 for r in R if r['agencia'] == ag and not r.get('obs')), sum(1 for d in D if d['agencia'] == ag), len(vot[ag]), pc(ag, 'nominal'), pc(ag, 'inferido'), sum(1 for v in vot[ag] if v['proveniencia'] == 'REVISAR'), sum(1 for r in ctrl if r[0] == 'Pendência da fonte' and r[1] == ag and r[5] == 'ABERTA')] for ag in AGS], r0)
 dres = collections.defaultdict(collections.Counter)
 for v in V:
     c = dres[(v['agencia'], v['diretor'])]; c['reg'] += 1; c['p' if v['tipo_item'] == 'Aprovação de ata' else kind(v)] += 1; c['nom'] += v['proveniencia'] == 'nominal'
@@ -440,7 +456,7 @@ for col in 'DEFGHIJKL': ws.column_dimensions[col].width = 18
 # ---- LEIA-ME
 ws = wbf.create_sheet('LEIA-ME'); ws.sheet_properties.tabColor = COR['leia']; ws.column_dimensions['A'].width = 34; ws.column_dimensions['B'].width = 140
 linhas = [
- ('VOTOS DOS DIRETORES — 2026', 'ANM (atas da ROP), ANTT (atas das reuniões deliberativas), ARTESP (atas do Conselho Diretor). Coleta independente do pipeline do IRIS.'),
+ ('VOTOS DOS DIRETORES — 2026', 'ANM (atas da ROP), ANTT (atas das reuniões deliberativas), ARTESP (atas do Conselho Diretor)' + ''.join({'ANPD': ', ANPD (atas dos circuitos deliberativos)', 'ANVISA': ', ANVISA (atas das ROP/REP da Diretoria Colegiada)'}.get(sg, ', ' + sg) for sg in EXTRAS) + '. Coleta independente do pipeline do IRIS.'),
  ('Gerada em', f'{hoje.strftime("%d/%m/%Y")} · tudo é gerado por scripts (rodar_tudo.sh); nada é digitado à mão.'),
  ('', ''),
  ('COMO LER AS ABAS', ''),

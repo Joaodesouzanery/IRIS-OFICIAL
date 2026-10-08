@@ -19,9 +19,17 @@ for f in fonte/artesp/*/ata.pdf; do t=$(basename "$(dirname "$f")"); pdftotext -
 python3 -I scripts/artesp_parse.py artesp_inventario.json texto_artesp artesp.json
 python3 -I scripts/artesp_conciliar.py artesp.json fonte/artesp artesp_conciliacao.json
 python3 -I scripts/artesp_ajustes.py artesp.json artesp_conciliacao.json texto_artesp_ocr artesp_final.json
+# ANPD (circuitos deliberativos; ata + votos)
+python3 -I scripts/anpd_baixar.py anpd_inventario.json manifesto_anpd.json fonte/anpd
+for f in fonte/anpd/*-ata.pdf; do pdftotext -layout "$f" "texto_anpd/$(basename "$f" .pdf).txt"; done   # cd-02/cd-04 sao imagem: python3 -I scripts/ocr_pdf.py <pdf> texto_anpd_ocr/<nome>.txt
+python3 -I scripts/anpd_parse.py manifesto_anpd.json anpd.json
+# ANVISA (atas das ROP/REP; listagem Volto com JSON embutido)
+python3 -I scripts/anvisa_baixar.py anvisa_inventario.json manifesto_anvisa.json fonte/anvisa
+for f in fonte/anvisa/*_ata.pdf; do pdftotext -layout "$f" "texto_anvisa/$(basename "$f" .pdf).txt"; done
+python3 -I scripts/anvisa_parse.py manifesto_anvisa.json anvisa.json
 # Temas: regras (taxonomia do repo) + revisão por IA só nos itens de baixa confiança
 python3 -I scripts/temas.py            # grava temas.json e temas_revisao_pendente.json (itens que ainda precisam de IA)
 # Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),
 # salvar em temas_ia/resultado_N.json e rodar:  python3 -I scripts/temas.py --importar-ia temas_ia && python3 -I scripts/temas.py
 python3 -I scripts/build_xlsx.py       # também atualiza a aba 'Pendências da fonte' e pendencias_historico.json
-python3 -I scripts/build_html.py     # gera votos_2026.html (e _artifact.html) a partir do xlsx
+python3 -I scripts/build_html.py       # dashboard votos_2026.html (+_artifact); falha se o HTML divergir do xlsx

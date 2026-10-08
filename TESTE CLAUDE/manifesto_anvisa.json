@@ -1,0 +1,119 @@
+{
+ "REP1": {
+  "titulo": "Ata da Reunião Extraordinária Pública nº 1, de 15 de maio de 2026",
+  "data": "2026-05-15",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-extraordinaria-publica-no-1-de-15-de-maio-de-2026",
+  "tipo": "Extraordinária (REP)",
+  "arquivo": "fonte/anvisa/REP1_ata.pdf",
+  "sha256": "604d70e6b5f5af9875c342efea242e0fa83bec21edcbffbeff143e491a9a1bf9",
+  "ok": true
+ },
+ "ROP1": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 1, de 28 de janeiro de 2026",
+  "data": "2026-01-28",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-1-de-28-de-janeiro-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP1_ata.pdf",
+  "sha256": "af93534421e434006c4d02cf2ad37265510a25c7e1cfce84259b01d72ad9cfe6",
+  "ok": true
+ },
+ "ROP10": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 10, de 10 de junho de 2026",
+  "data": "2026-06-10",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-10-de-10-de-junho-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP10_ata.pdf",
+  "sha256": "aa628f100fe0e613fa6ed66814369437311fb21cd38e71cebcee10f93511f36b",
+  "ok": true
+ },
+ "ROP12": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 12, de 8 de julho de 2026",
+  "data": "2026-07-08",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-12-de-8-de-julho-de-2026.pdf",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP12_ata.pdf",
+  "sha256": "5c83fae28cf0b3700ef69f4842a916a53a6fa5f920e268f4c2d743fb88760ebc",
+  "ok": true
+ },
+ "ROP13": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 13, de 22 de julho de 2026",
+  "data": "2026-07-22",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-13-de-22-de-julho-de-2026.pdf",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP13_ata.pdf",
+  "sha256": "1c87281959b54ca84924b2e0f47bc1e2641a749ca33543404c273255a40df18b",
+  "ok": true
+ },
+ "ROP2": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 2, de 11 de fevereiro de 2026",
+  "data": "2026-02-11",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-2-de-11-de-fevereiro-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP2_ata.pdf",
+  "sha256": "4506277b5aeea785e31045417d4d9df363557913f645216bc39cdda42d5cb682",
+  "ok": true
+ },
+ "ROP3": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 3, de 4 de março de 2026",
+  "data": "2026-03-04",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-3-de-4-de-marco-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP3_ata.pdf",
+  "sha256": "ba44e25d6c86813a5954becd220280f286b5cf58f690186f771e0afd84502984",
+  "ok": true
+ },
+ "ROP4": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 4, de 24 de março de 2026",
+  "data": "2026-03-24",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-4-de-24-de-marco-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP4_ata.pdf",
+  "sha256": "3b7b2cc18c20ed03a1c4634800c02165c75ec7d76d9745da2647b3da6bb4c6a1",
+  "ok": true
+ },
+ "ROP5": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 5, de 1º de abril de 2026",
+  "data": "2026-04-01",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-5-de-1o-de-abril-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP5_ata.pdf",
+  "sha256": "2200e2435da8bbc013118b0b6b361492ff819bb7d24ce88f42c450063436f93c",
+  "ok": true
+ },
+ "ROP6": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 6, de 15 de abril de 2026",
+  "data": "2026-04-15",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-6-de-15-de-abril-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP6_ata.pdf",
+  "sha256": "ce9edc9e5c33888a3ee3a945726e3e03773b6429e222496345955ed4e7d2e99d",
+  "ok": true
+ },
+ "ROP7": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 7, de 6 de maio de 2026",
+  "data": "2026-05-06",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-7-de-6-de-maio-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP7_ata.pdf",
+  "sha256": "f880575780f01571fc72cfe1444157f5e62efd36a4f336f8e5b182faf479b274",
+  "ok": true
+ },
+ "ROP8": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 8, de 13 de maio de 2026",
+  "data": "2026-05-13",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-8-de-13-de-maio-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP8_ata.pdf",
+  "sha256": "ecfea8da62de1834d92fc046436fe4800279e3e5a68e297e750bc66d8ba2e0ce",
+  "ok": true
+ },
+ "ROP9": {
+  "titulo": "Ata da Reunião Ordinária Pública nº 9, de 27 de maio de 2026",
+  "data": "2026-05-27",
+  "url": "https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026/ata-da-reuniao-ordinaria-publica-no-9-de-27-de-maio-de-2026",
+  "tipo": "Ordinária (ROP)",
+  "arquivo": "fonte/anvisa/ROP9_ata.pdf",
+  "sha256": "a3d357c7cbc27606192ddd4d8f6d72f45ee5b1a58ae0aff380f8dc1a13fabdaf",
+  "ok": true
+ }
+}

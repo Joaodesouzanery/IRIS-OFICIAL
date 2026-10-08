@@ -5,6 +5,7 @@ Uso: python3 -I scripts/temas.py            -> temas.json, temas_revisao_pendent
 import json, sys, os, collections, hashlib
 sys.path.insert(0, os.path.dirname(__file__)); import taxonomia as T
 anm, antt, art = (json.load(open(f)) for f in ('anm.json', 'antt.json', 'artesp_final.json')); rde = json.load(open('antt_rde270.json'))
+EXTRAS = {sg: json.load(open(sg.lower() + '.json')) for sg in ('ANPD', 'ANVISA') if os.path.exists(sg.lower() + '.json')}
 LIMIAR = 0.45
 
 def itens():
@@ -14,12 +15,20 @@ def itens():
     for d in antt['deliberacoes']: yield 'ANTT', d, {'assunto': d.get('assunto', ''), 'interessado': d.get('interessado', ''), 'unidade': '', 'texto': d.get('decisao_texto', '')}
     for x in rde: yield 'ANTT', {'reuniao': 'RDE270', 'processo': x['processo'], 'tipo_item': 'Só voto do relator (sem ata)'}, {'assunto': x['objeto'], 'interessado': '', 'unidade': '', 'texto': x['encaminhamento']}
     for d in art['deliberacoes']: yield 'ARTESP', d, {'assunto': d.get('assunto', ''), 'interessado': d.get('interessado', ''), 'unidade': d.get('unidade', ''), 'texto': d.get('dispositivo', '')}
+    for sg, x in EXTRAS.items():
+        for d in x['deliberacoes']:
+            un = f"{d.get('secao', '')}|{d.get('unidade', '')}" if sg == 'ANVISA' else (d.get('natureza') or '')
+            yield sg, d, {'assunto': d.get('assunto', ''), 'interessado': d.get('interessado', ''), 'unidade': un, 'texto': d.get('decisao_texto', '')}
 
 def chave(ag, d): return f"{ag}|{d['reuniao']}|{d.get('processo')}|{d.get('deliberacao') or ''}"
 
 def classificar(ag, d, c):
     if d.get('tipo_item') == 'Aprovação de ata':
         return {'modal': 'Institucional e administrativo', 'tema': 'Aprovação de ata', 'subtema': 'Ata da reunião anterior', 'tipo_ato': 'Aprovação de ata', 'confianca': 1.0, 'termos': ['aprovação de ata'], 'fonte': 'regra'}
+    if ag in T.SETOR:
+        (tema, sub), ts, conf, tt = T.pontuar_setor(c, ag); modal = T.SETOR[ag]['modal']; alltxt = ' '.join([c['assunto'], c['interessado'], c['texto']])
+        conf_tema = 0.0 if tema == 'Outros' else conf
+        return {'modal': modal, 'tema': tema, 'subtema': sub, 'tipo_ato': T.tipo_ato(c), 'microtema_iris': T.microtema_iris(alltxt, ag), 'area_iris': T.area_iris(alltxt), 'confianca': conf, 'conf_tema': conf_tema, 'conf_modal': 1.0, 'termos': tt[:6], 'fonte': 'regra'}
     modal, ms, mt = T.pontuar_modal(c, ag)
     (tema, sub), ts, conf, tt = T.pontuar_tema(c, ag)
     alltxt = ' '.join([c['assunto'], c['interessado'], c['unidade'], c['texto']])
@@ -67,7 +76,7 @@ if __name__ == '__main__':
     for k, r in out.items(): n[(k.split('|')[0], r['modal'])] += 1
     print('itens', len(out), '| baixa confiança sem IA (únicos):', len(vistos), '| classificados pela IA:', sum(1 for r in out.values() if r['fonte'] == 'IA'))
     if '--medir' in sys.argv:
-        for ag in ('ANM', 'ANTT', 'ARTESP'):
+        for ag in ['ANM', 'ANTT', 'ARTESP'] + list(EXTRAS):
             L = [r for k, r in out.items() if k.startswith(ag + '|')]
             print(f"\n== {ag}: {len(L)} itens | tema!=Outros: {sum(1 for r in L if r['tema'] != 'Outros')} | modal!=Outros: {sum(1 for r in L if not r['modal'].startswith('Outros'))} | conf>={LIMIAR}: {sum(1 for r in L if r['confianca'] >= LIMIAR)}")
             print(' modal:', collections.Counter(r['modal'] for r in L).most_common()); print(' tema :', collections.Counter(r['tema'] for r in L).most_common(14))

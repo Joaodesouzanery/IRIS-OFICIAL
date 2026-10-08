@@ -1,0 +1,1937 @@
+{
+ "reunioes": [
+  {
+   "reuniao": "CD01",
+   "titulo": "Circuito Deliberativo nº 1/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-01-23",
+   "inicio": "2026-01-20",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD02",
+   "titulo": "Circuito Deliberativo nº 2/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-02-26",
+   "inicio": "2026-02-19",
+   "presentes": [
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Waldemar Gonçalves Ortunho Júnior"
+   ],
+   "obs": "ata lida por OCR (sem acentos; contagens em branco)"
+  },
+  {
+   "reuniao": "CD03",
+   "titulo": "Circuito Deliberativo nº 3/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-02-24",
+   "inicio": "2026-02-24",
+   "presentes": [
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Waldemar Gonçalves Ortunho Júnior"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD04",
+   "titulo": "Circuito Deliberativo nº 4/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-03-13",
+   "inicio": "2026-02-27",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": "ata lida por OCR (sem acentos; contagens em branco)"
+  },
+  {
+   "reuniao": "CD05",
+   "titulo": "Circuito Deliberativo nº 5/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-03-09",
+   "inicio": "2026-03-09",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD06",
+   "titulo": "Circuito Deliberativo nº 6/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-03-27",
+   "inicio": "2026-03-26",
+   "presentes": [
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Waldemar Gonçalves Ortunho Júnior"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD07",
+   "titulo": "Circuito Deliberativo nº 7/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-03-26",
+   "presentes": [],
+   "ausentes": [],
+   "obs": "SEM ATA PUBLICADA (só o PDF de votos)"
+  },
+  {
+   "reuniao": "CD08",
+   "titulo": "Circuito Deliberativo nº 8/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-04-06",
+   "inicio": "2026-04-06",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD09",
+   "titulo": "Circuito Deliberativo nº 9/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-04-13",
+   "inicio": "2026-04-09",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD10",
+   "titulo": "Circuito Deliberativo nº 10/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-04-13",
+   "inicio": "2026-04-10",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD11",
+   "titulo": "Circuito Deliberativo nº 11/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-05-18",
+   "inicio": "2026-05-18",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD12",
+   "titulo": "Circuito Deliberativo nº 12/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-05-18",
+   "inicio": "2026-05-18",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD13",
+   "titulo": "Circuito Deliberativo nº 13/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-05-20",
+   "inicio": "2026-05-18",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD14",
+   "titulo": "Circuito Deliberativo nº 14/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-12",
+   "inicio": "2026-05-29",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD15",
+   "titulo": "Circuito Deliberativo nº 15/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-08",
+   "inicio": "2026-06-02",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD16",
+   "titulo": "Circuito Deliberativo nº 16/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-03",
+   "inicio": "2026-06-03",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD17",
+   "titulo": "Circuito Deliberativo nº 17/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-03",
+   "inicio": "2026-06-03",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD18",
+   "titulo": "Circuito Deliberativo nº 18/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-03",
+   "inicio": "2026-06-03",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD19",
+   "titulo": "Circuito Deliberativo nº 19/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-06-09",
+   "inicio": "2026-06-08",
+   "presentes": [
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Waldemar Gonçalves Ortunho Júnior"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD20",
+   "titulo": "Circuito Deliberativo nº 20/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-07-03",
+   "inicio": "2026-06-24",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD21",
+   "titulo": "Circuito Deliberativo nº 21/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-07-07",
+   "inicio": "2026-07-07",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Miriam Wimmer"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD22",
+   "titulo": "Circuito Deliberativo nº 22/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-08-21",
+   "inicio": "2026-08-21",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD23",
+   "titulo": "Circuito Deliberativo nº 23/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-08-31",
+   "presentes": [],
+   "ausentes": [],
+   "obs": "SEM ATA PUBLICADA (só o PDF de votos)"
+  },
+  {
+   "reuniao": "CD24",
+   "titulo": "Circuito Deliberativo nº 24/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-09-11",
+   "inicio": "2026-09-03",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD25",
+   "titulo": "Circuito Deliberativo nº 25/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-09-21",
+   "inicio": "2026-09-11",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD26",
+   "titulo": "Circuito Deliberativo nº 26/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-09-14",
+   "inicio": "2026-09-11",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD27",
+   "titulo": "Circuito Deliberativo nº 27/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-09-25",
+   "inicio": "2026-09-17",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD28",
+   "titulo": "Circuito Deliberativo nº 28/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-09-25",
+   "inicio": "2026-09-18",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Lorena Giuberti Coutinho"
+   ],
+   "obs": ""
+  },
+  {
+   "reuniao": "CD29",
+   "titulo": "Circuito Deliberativo nº 29/2026",
+   "tipo": "Circuito Deliberativo",
+   "data": "2026-10-05",
+   "inicio": "2026-09-25",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [],
+   "obs": ""
+  }
+ ],
+ "deliberacoes": [
+  {
+   "reuniao": "CD01",
+   "data": "2026-01-23",
+   "processo": "00261.005809/2024-32",
+   "deliberacao": "CD 1/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Decisão de adequação entre Brasil e União Europeia",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "1/2026/DIR-IM/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD02",
+   "data": "2026-02-26",
+   "processo": "00261.002118/2024-87",
+   "deliberacao": "CD 2/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Acordo de cooperacao entre a Agéncia Nacional de Protecao de Dados (ANPD) e a Agéncia Nacional de Transportes Terrestres (ANTT).",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "2/2026/DIR-LC/CD",
+   "decisao_texto": "Contagens ilegíveis no OCR da ata; levar à reunião: Nao",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD03",
+   "data": "2026-02-24",
+   "processo": "00261.000368/2026-44",
+   "deliberacao": "CD 3/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) – NUP 00263.000097/2026-15",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "4/2026/DIR-IM/CD",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD04",
+   "data": "2026-03-13",
+   "processo": "",
+   "deliberacao": "CD 4/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Acordo de cooperacao entre a Agéncia Nacional de Protecao de Dados - ANPD e o Ministério da Educacao - MEC",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "3/2026/DIR-MW/CD",
+   "decisao_texto": "Contagens ilegíveis no OCR da ata; levar à reunião: Nao",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD05",
+   "data": "2026-03-09",
+   "processo": "00261.005338/2025-43",
+   "deliberacao": "CD 5/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) – NUP 00261.005338/2025-43",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "7/2026/DIR-IM/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD06",
+   "data": "2026-03-27",
+   "processo": "00261.000031/2026-37",
+   "deliberacao": "CD 6/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "IV Prêmio Danilo Doneda de Artigos Científicos da Agência Nacional de Proteção de Dados - Edição 2026",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "7/2026/DIR-MW/CD",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD07",
+   "data": "2026-03-26",
+   "processo": "00261.000650/2026-21",
+   "deliberacao": "CD 7/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "1.1. Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala.BR 00263.000215/2026-87]",
+   "resultado": "SEM ATA — só o voto do relator",
+   "voto_doc": "",
+   "decisao_texto": "",
+   "tipo_item": "Só voto do relator (sem ata)",
+   "natureza": ""
+  },
+  {
+   "reuniao": "CD08",
+   "data": "2026-04-06",
+   "processo": "00261.000633/2026-94",
+   "deliberacao": "CD 8/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Reestruturação de Cargos e Funções da Agência Nacional de Proteção de Dados",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "10/2026/DIR-LC/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD09",
+   "data": "2026-04-13",
+   "processo": "00261.001715/2026-56",
+   "deliberacao": "CD 9/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso à Informação (LAI)",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "9/2026/DIR-MW/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD10",
+   "data": "2026-04-13",
+   "processo": "00261.001159/2026-18",
+   "deliberacao": "CD 10/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala.BR 00263.000386/2026-14]",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "11/2026/DIR-",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD11",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 11/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala.BR 00263.000654/2026-90]",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "1/2026/GABDIR1/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD12",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 12/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala BR 00263.000616/2026-37]",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD13",
+   "data": "2026-05-20",
+   "processo": "00261.000779/2022-14",
+   "deliberacao": "CD 13/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD e CGU",
+   "assunto": "1º Termo Aditivo ao Acordo de Cooperação Técnica (ACT) nº 01/2023, a ser celebrado entre a Agência Nacional de Proteção de Dados (ANPD) e Controladoria-Geral da União (CGU).",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Relação Interinstitucional",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD14",
+   "data": "2026-06-12",
+   "processo": "00261.004823/2025-08",
+   "deliberacao": "CD 14/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Acordo de cooperação entre a Agência Nacional de Proteção de Dados - ANPD e o Agência Nacional de Águas e Saneamento Básico - ANA.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Relação Interinstitucional",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD15",
+   "data": "2026-06-08",
+   "processo": "00261.002614/2026-01",
+   "deliberacao": "CD 15/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala.BR 00263.000807/2026-07]",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD16",
+   "data": "2026-06-03",
+   "processo": "00261.000483/2021-12",
+   "deliberacao": "CD 16/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD e CADE",
+   "assunto": "1º Termo Aditivo ao Acordo de Cooperação Técnica (ACT) nº 05/2021, a ser celebrado entre a Agência Nacional de Proteção de Dados - ANPD e o Conselho Administrativo de Defesa Econômica - CADE.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Relação Institucional",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD17",
+   "data": "2026-06-03",
+   "processo": "00261.002945/2026-32",
+   "deliberacao": "CD 17/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD e DG-CONNECT",
+   "assunto": "ARRANJO ADMINISTRATIVO ENTRE A ANPD E A DIRECTORATE-GENERAL FOR COMMUNICATIONS NETWORKS, CONTENT AND TECHNOLOGY (DG- CONNECT) DA COMISSÃO EUROPEIA.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Relações internacionais e matéria institucionais",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD18",
+   "data": "2026-06-03",
+   "processo": "00261.002790/2026-34",
+   "deliberacao": "CD 18/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) – NUP 00263.000856/2026-31.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD19",
+   "data": "2026-06-09",
+   "processo": "00261.006960/2024-98",
+   "deliberacao": "CD 19/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD, CNPD e MJSP",
+   "assunto": "Diretrizes para a Política Nacional de Proteção de Dados e da Privacidade.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Regulamentação e Normatização",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD20",
+   "data": "2026-07-03",
+   "processo": "00261.000908/2026-90",
+   "deliberacao": "CD 20/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Proposta de Substituição de que trata a Lei nº 9.986, de 18 de julho de 2000.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "3/2026/GABDIR1/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Administrativa",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD21",
+   "data": "2026-07-07",
+   "processo": "00261.003231/2026-41",
+   "deliberacao": "CD 21/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala BR00263.000991/2026-87]",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD22",
+   "data": "2026-08-21",
+   "processo": "00261.000297/2021-75",
+   "deliberacao": "CD 22/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ByteDance Brasil Tecnologia Ltda (\"ByteDance Brasil\")",
+   "assunto": "Recurso administrativo – Processo de Fiscalização",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Fiscalização",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD23",
+   "data": "2026-08-31",
+   "processo": "00261.004526/2026-35",
+   "deliberacao": "CD 23/2026",
+   "relator": "Lorena Giuberti Coutinho",
+   "interessado": "ANPD",
+   "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala BR 00263.001457/2026-98]",
+   "resultado": "SEM ATA — só o voto do relator",
+   "voto_doc": "",
+   "decisao_texto": "",
+   "tipo_item": "Só voto do relator (sem ata)",
+   "natureza": ""
+  },
+  {
+   "reuniao": "CD24",
+   "data": "2026-09-11",
+   "processo": "00261.004718/2025-61",
+   "deliberacao": "CD 24/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Minuta que altera o Regulamento do Processo de Fiscalização e do Processo Administrativo Sancionador no âmbito da Agência Nacional de Proteção de Dados, aprovado pela Resolução CD/ANPD nº 1, de 28 de outubro de 2021 - Revisão da Resolução CD/ANPD nº 1, de 28 de outubro de 2021. Proposta de submissão à Consulta Pública.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Finalística",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD25",
+   "data": "2026-09-21",
+   "processo": "00261.000924/2022-59",
+   "deliberacao": "CD 25/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Guia - Tratamento de dados pessoais de alto risco.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "11/2025/DIR-",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Regulatória",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD26",
+   "data": "2026-09-14",
+   "processo": "00261.005393/2026-14",
+   "deliberacao": "CD 26/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Pedido de prorrogação de prazo de obrigação legal (o relatório semestral de transparência do art. 31 da ECA Digital).",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Administrativa",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD27",
+   "data": "2026-09-25",
+   "processo": "00261.002919/2026-12",
+   "deliberacao": "CD 27/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Acordo de Cooperação Técnica (ACT) entre a Agência Nacional de Proteção de Dados - ANPD e a Agência Nacional de Energia Elétrica - ANEEL.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "9/2026/GABDIR1/CD",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Relação Interinstitucional",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD28",
+   "data": "2026-09-25",
+   "processo": "00261.004918/2026-02",
+   "deliberacao": "CD 28/2026",
+   "relator": "Iagê Zendron Miola",
+   "interessado": "ANPD",
+   "assunto": "Memorando de Entendimento entre a Agência Nacional de Proteção de Dados (ANPD) e a Comissão Nacional de Proteção de Dados (CNPD) de Portugal.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "",
+   "decisao_texto": "Total de votos 3; acompanha 2; não acompanha 0; levar à reunião: Não",
+   "natureza": "Cooperação Internacional",
+   "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "CD29",
+   "data": "2026-10-05",
+   "processo": "00261.002928/2026-03",
+   "deliberacao": "CD 29/2026",
+   "relator": "Miriam Wimmer",
+   "interessado": "ANPD",
+   "assunto": "Minuta de Resolução que revisa a Portaria ANPD nº 16, de 8 de julho de 2021, responsável por disciplinar o processo regulatório no âmbito da ANPD.",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
+   "voto_doc": "10/2026/GABDIR1/CD",
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Finalística",
+   "tipo_item": "Deliberação"
+  }
+ ],
+ "votos": [
+  {
+   "reuniao": "CD01",
+   "data": "2026-01-23",
+   "processo": "00261.005809/2024-32",
+   "deliberacao": "CD 1/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD01",
+   "data": "2026-01-23",
+   "processo": "00261.005809/2024-32",
+   "deliberacao": "CD 1/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD01",
+   "data": "2026-01-23",
+   "processo": "00261.005809/2024-32",
+   "deliberacao": "CD 1/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD01",
+   "data": "2026-01-23",
+   "processo": "00261.005809/2024-32",
+   "deliberacao": "CD 1/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD02",
+   "data": "2026-02-26",
+   "processo": "00261.002118/2024-87",
+   "deliberacao": "CD 2/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD02",
+   "data": "2026-02-26",
+   "processo": "00261.002118/2024-87",
+   "deliberacao": "CD 2/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD02",
+   "data": "2026-02-26",
+   "processo": "00261.002118/2024-87",
+   "deliberacao": "CD 2/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD02",
+   "data": "2026-02-26",
+   "processo": "00261.002118/2024-87",
+   "deliberacao": "CD 2/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD03",
+   "data": "2026-02-24",
+   "processo": "00261.000368/2026-44",
+   "deliberacao": "CD 3/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD03",
+   "data": "2026-02-24",
+   "processo": "00261.000368/2026-44",
+   "deliberacao": "CD 3/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD03",
+   "data": "2026-02-24",
+   "processo": "00261.000368/2026-44",
+   "deliberacao": "CD 3/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD03",
+   "data": "2026-02-24",
+   "processo": "00261.000368/2026-44",
+   "deliberacao": "CD 3/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD04",
+   "data": "2026-03-13",
+   "processo": "",
+   "deliberacao": "CD 4/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD04",
+   "data": "2026-03-13",
+   "processo": "",
+   "deliberacao": "CD 4/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD04",
+   "data": "2026-03-13",
+   "processo": "",
+   "deliberacao": "CD 4/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD04",
+   "data": "2026-03-13",
+   "processo": "",
+   "deliberacao": "CD 4/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD05",
+   "data": "2026-03-09",
+   "processo": "00261.005338/2025-43",
+   "deliberacao": "CD 5/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD05",
+   "data": "2026-03-09",
+   "processo": "00261.005338/2025-43",
+   "deliberacao": "CD 5/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD05",
+   "data": "2026-03-09",
+   "processo": "00261.005338/2025-43",
+   "deliberacao": "CD 5/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD05",
+   "data": "2026-03-09",
+   "processo": "00261.005338/2025-43",
+   "deliberacao": "CD 5/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD06",
+   "data": "2026-03-27",
+   "processo": "00261.000031/2026-37",
+   "deliberacao": "CD 6/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD06",
+   "data": "2026-03-27",
+   "processo": "00261.000031/2026-37",
+   "deliberacao": "CD 6/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD06",
+   "data": "2026-03-27",
+   "processo": "00261.000031/2026-37",
+   "deliberacao": "CD 6/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD06",
+   "data": "2026-03-27",
+   "processo": "00261.000031/2026-37",
+   "deliberacao": "CD 6/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD07",
+   "data": "2026-03-26",
+   "processo": "00261.000650/2026-21",
+   "deliberacao": "CD 7/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (proposta; resultado sem ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD08",
+   "data": "2026-04-06",
+   "processo": "00261.000633/2026-94",
+   "deliberacao": "CD 8/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD08",
+   "data": "2026-04-06",
+   "processo": "00261.000633/2026-94",
+   "deliberacao": "CD 8/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD08",
+   "data": "2026-04-06",
+   "processo": "00261.000633/2026-94",
+   "deliberacao": "CD 8/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD08",
+   "data": "2026-04-06",
+   "processo": "00261.000633/2026-94",
+   "deliberacao": "CD 8/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD09",
+   "data": "2026-04-13",
+   "processo": "00261.001715/2026-56",
+   "deliberacao": "CD 9/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD09",
+   "data": "2026-04-13",
+   "processo": "00261.001715/2026-56",
+   "deliberacao": "CD 9/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD09",
+   "data": "2026-04-13",
+   "processo": "00261.001715/2026-56",
+   "deliberacao": "CD 9/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD09",
+   "data": "2026-04-13",
+   "processo": "00261.001715/2026-56",
+   "deliberacao": "CD 9/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD10",
+   "data": "2026-04-13",
+   "processo": "00261.001159/2026-18",
+   "deliberacao": "CD 10/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD10",
+   "data": "2026-04-13",
+   "processo": "00261.001159/2026-18",
+   "deliberacao": "CD 10/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD10",
+   "data": "2026-04-13",
+   "processo": "00261.001159/2026-18",
+   "deliberacao": "CD 10/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD10",
+   "data": "2026-04-13",
+   "processo": "00261.001159/2026-18",
+   "deliberacao": "CD 10/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD11",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 11/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD11",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 11/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD11",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 11/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD11",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 11/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD12",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 12/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD12",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 12/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD12",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 12/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD12",
+   "data": "2026-05-18",
+   "processo": "00261.002075/2026-00",
+   "deliberacao": "CD 12/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD13",
+   "data": "2026-05-20",
+   "processo": "00261.000779/2022-14",
+   "deliberacao": "CD 13/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD13",
+   "data": "2026-05-20",
+   "processo": "00261.000779/2022-14",
+   "deliberacao": "CD 13/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD13",
+   "data": "2026-05-20",
+   "processo": "00261.000779/2022-14",
+   "deliberacao": "CD 13/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD13",
+   "data": "2026-05-20",
+   "processo": "00261.000779/2022-14",
+   "deliberacao": "CD 13/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD14",
+   "data": "2026-06-12",
+   "processo": "00261.004823/2025-08",
+   "deliberacao": "CD 14/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD14",
+   "data": "2026-06-12",
+   "processo": "00261.004823/2025-08",
+   "deliberacao": "CD 14/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD14",
+   "data": "2026-06-12",
+   "processo": "00261.004823/2025-08",
+   "deliberacao": "CD 14/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD14",
+   "data": "2026-06-12",
+   "processo": "00261.004823/2025-08",
+   "deliberacao": "CD 14/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD15",
+   "data": "2026-06-08",
+   "processo": "00261.002614/2026-01",
+   "deliberacao": "CD 15/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD15",
+   "data": "2026-06-08",
+   "processo": "00261.002614/2026-01",
+   "deliberacao": "CD 15/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD15",
+   "data": "2026-06-08",
+   "processo": "00261.002614/2026-01",
+   "deliberacao": "CD 15/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD15",
+   "data": "2026-06-08",
+   "processo": "00261.002614/2026-01",
+   "deliberacao": "CD 15/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD16",
+   "data": "2026-06-03",
+   "processo": "00261.000483/2021-12",
+   "deliberacao": "CD 16/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD16",
+   "data": "2026-06-03",
+   "processo": "00261.000483/2021-12",
+   "deliberacao": "CD 16/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD16",
+   "data": "2026-06-03",
+   "processo": "00261.000483/2021-12",
+   "deliberacao": "CD 16/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD16",
+   "data": "2026-06-03",
+   "processo": "00261.000483/2021-12",
+   "deliberacao": "CD 16/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD17",
+   "data": "2026-06-03",
+   "processo": "00261.002945/2026-32",
+   "deliberacao": "CD 17/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD17",
+   "data": "2026-06-03",
+   "processo": "00261.002945/2026-32",
+   "deliberacao": "CD 17/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD17",
+   "data": "2026-06-03",
+   "processo": "00261.002945/2026-32",
+   "deliberacao": "CD 17/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD17",
+   "data": "2026-06-03",
+   "processo": "00261.002945/2026-32",
+   "deliberacao": "CD 17/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD18",
+   "data": "2026-06-03",
+   "processo": "00261.002790/2026-34",
+   "deliberacao": "CD 18/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD18",
+   "data": "2026-06-03",
+   "processo": "00261.002790/2026-34",
+   "deliberacao": "CD 18/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD18",
+   "data": "2026-06-03",
+   "processo": "00261.002790/2026-34",
+   "deliberacao": "CD 18/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD18",
+   "data": "2026-06-03",
+   "processo": "00261.002790/2026-34",
+   "deliberacao": "CD 18/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD19",
+   "data": "2026-06-09",
+   "processo": "00261.006960/2024-98",
+   "deliberacao": "CD 19/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD19",
+   "data": "2026-06-09",
+   "processo": "00261.006960/2024-98",
+   "deliberacao": "CD 19/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD19",
+   "data": "2026-06-09",
+   "processo": "00261.006960/2024-98",
+   "deliberacao": "CD 19/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD19",
+   "data": "2026-06-09",
+   "processo": "00261.006960/2024-98",
+   "deliberacao": "CD 19/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD20",
+   "data": "2026-07-03",
+   "processo": "00261.000908/2026-90",
+   "deliberacao": "CD 20/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD20",
+   "data": "2026-07-03",
+   "processo": "00261.000908/2026-90",
+   "deliberacao": "CD 20/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD20",
+   "data": "2026-07-03",
+   "processo": "00261.000908/2026-90",
+   "deliberacao": "CD 20/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD20",
+   "data": "2026-07-03",
+   "processo": "00261.000908/2026-90",
+   "deliberacao": "CD 20/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD21",
+   "data": "2026-07-07",
+   "processo": "00261.003231/2026-41",
+   "deliberacao": "CD 21/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD21",
+   "data": "2026-07-07",
+   "processo": "00261.003231/2026-41",
+   "deliberacao": "CD 21/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD21",
+   "data": "2026-07-07",
+   "processo": "00261.003231/2026-41",
+   "deliberacao": "CD 21/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD21",
+   "data": "2026-07-07",
+   "processo": "00261.003231/2026-41",
+   "deliberacao": "CD 21/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD22",
+   "data": "2026-08-21",
+   "processo": "00261.000297/2021-75",
+   "deliberacao": "CD 22/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD22",
+   "data": "2026-08-21",
+   "processo": "00261.000297/2021-75",
+   "deliberacao": "CD 22/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD22",
+   "data": "2026-08-21",
+   "processo": "00261.000297/2021-75",
+   "deliberacao": "CD 22/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD22",
+   "data": "2026-08-21",
+   "processo": "00261.000297/2021-75",
+   "deliberacao": "CD 22/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD23",
+   "data": "2026-08-31",
+   "processo": "00261.004526/2026-35",
+   "deliberacao": "CD 23/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "RELATOR (proposta; resultado sem ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD24",
+   "data": "2026-09-11",
+   "processo": "00261.004718/2025-61",
+   "deliberacao": "CD 24/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD24",
+   "data": "2026-09-11",
+   "processo": "00261.004718/2025-61",
+   "deliberacao": "CD 24/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD24",
+   "data": "2026-09-11",
+   "processo": "00261.004718/2025-61",
+   "deliberacao": "CD 24/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD24",
+   "data": "2026-09-11",
+   "processo": "00261.004718/2025-61",
+   "deliberacao": "CD 24/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD25",
+   "data": "2026-09-21",
+   "processo": "00261.000924/2022-59",
+   "deliberacao": "CD 25/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD25",
+   "data": "2026-09-21",
+   "processo": "00261.000924/2022-59",
+   "deliberacao": "CD 25/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD25",
+   "data": "2026-09-21",
+   "processo": "00261.000924/2022-59",
+   "deliberacao": "CD 25/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD25",
+   "data": "2026-09-21",
+   "processo": "00261.000924/2022-59",
+   "deliberacao": "CD 25/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD26",
+   "data": "2026-09-14",
+   "processo": "00261.005393/2026-14",
+   "deliberacao": "CD 26/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD26",
+   "data": "2026-09-14",
+   "processo": "00261.005393/2026-14",
+   "deliberacao": "CD 26/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD26",
+   "data": "2026-09-14",
+   "processo": "00261.005393/2026-14",
+   "deliberacao": "CD 26/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD26",
+   "data": "2026-09-14",
+   "processo": "00261.005393/2026-14",
+   "deliberacao": "CD 26/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD27",
+   "data": "2026-09-25",
+   "processo": "00261.002919/2026-12",
+   "deliberacao": "CD 27/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD27",
+   "data": "2026-09-25",
+   "processo": "00261.002919/2026-12",
+   "deliberacao": "CD 27/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD27",
+   "data": "2026-09-25",
+   "processo": "00261.002919/2026-12",
+   "deliberacao": "CD 27/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD27",
+   "data": "2026-09-25",
+   "processo": "00261.002919/2026-12",
+   "deliberacao": "CD 27/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD28",
+   "data": "2026-09-25",
+   "processo": "00261.004918/2026-02",
+   "deliberacao": "CD 28/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD28",
+   "data": "2026-09-25",
+   "processo": "00261.004918/2026-02",
+   "deliberacao": "CD 28/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD28",
+   "data": "2026-09-25",
+   "processo": "00261.004918/2026-02",
+   "deliberacao": "CD 28/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD28",
+   "data": "2026-09-25",
+   "processo": "00261.004918/2026-02",
+   "deliberacao": "CD 28/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD29",
+   "data": "2026-10-05",
+   "processo": "00261.002928/2026-03",
+   "deliberacao": "CD 29/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD29",
+   "data": "2026-10-05",
+   "processo": "00261.002928/2026-03",
+   "deliberacao": "CD 29/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD29",
+   "data": "2026-10-05",
+   "processo": "00261.002928/2026-03",
+   "deliberacao": "CD 29/2026",
+   "diretor": "Lorena Giuberti Coutinho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD29",
+   "data": "2026-10-05",
+   "processo": "00261.002928/2026-03",
+   "deliberacao": "CD 29/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  }
+ ],
+ "qualidade": [
+  [
+   "ANPD",
+   "Nº de votantes citados × \"Total de votos\" da própria ata",
+   25,
+   25,
+   "OK",
+   "2 atas por OCR sem a contagem"
+  ],
+  [
+   "ANPD",
+   "Acompanha + relator = Total (aritmética da ata)",
+   25,
+   25,
+   "OK",
+   ""
+  ],
+  [
+   "ANPD",
+   "Ata assinada por diretor do colegiado (presidente/substituta)",
+   27,
+   27,
+   "OK",
+   ""
+  ],
+  [
+   "ANPD",
+   "Numeração dos circuitos 1..max sem buraco",
+   0,
+   0,
+   "OK",
+   "1..29 na página oficial"
+  ],
+  [
+   "ANPD",
+   "Votos por circuito = 4 diretores (1 por membro do colegiado)",
+   29,
+   29,
+   "OK"
+  ]
+ ],
+ "cobertura": [
+  [
+   "ANPD",
+   "Circuitos deliberativos 2026 na página oficial",
+   29,
+   "cd-01 a cd-29, sem buraco"
+  ],
+  [
+   "ANPD",
+   "Circuitos com ata lida",
+   27,
+   "2 por OCR (cd-02, cd-04)"
+  ],
+  [
+   "ANPD",
+   "Reuniões deliberativas marcadas em 2026",
+   9,
+   "todas canceladas por \"ausência de processos\" (página de avisos); a deliberação ocorre por circuito"
+  ]
+ ],
+ "pendencias": [
+  [
+   "ANPD",
+   "CD07",
+   "2026-03-26",
+   "Ata do circuito não publicada (só PDF de votos)",
+   "PDF de votos existe; ata não",
+   "Circuito já realizado",
+   "Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD"
+  ],
+  [
+   "ANPD",
+   "CD23",
+   "2026-08-31",
+   "Ata do circuito não publicada (só PDF de votos)",
+   "PDF de votos existe; ata não",
+   "Circuito já realizado",
+   "Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD"
+  ]
+ ],
+ "nao_feito": [
+  [
+   "ANPD",
+   "Voto individual em divergência",
+   "0 linhas REVISAR",
+   "SEM CASOS",
+   "Quem não acompanhou o relator só consta no PDF de votos",
+   "Ler o PDF de votos nos circuitos com \"não acompanha\" > 0"
+  ]
+ ],
+ "diretores": [
+  "Waldemar Gonçalves Ortunho Júnior",
+  "Miriam Wimmer",
+  "Lorena Giuberti Coutinho",
+  "Iagê Zendron Miola"
+ ],
+ "colegiado": "Conselho Diretor",
+ "meses_nota": ""
+}

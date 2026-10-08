@@ -1,0 +1,458 @@
+{
+ "cd-01-ata": {
+  "cd": 1,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-01-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-01-2026-ata.pdf",
+  "sha256": "a3fbb3c11f7a7f54b2006b2bb00b894be1d426cf4588eafb31b94c34d46e6059",
+  "ok": true
+ },
+ "cd-01-votos": {
+  "cd": 1,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-01-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-01-2026-votos.pdf",
+  "sha256": "2f23cf39a97855f758dfe3529bf8fdd2d9191dba5be9611af845f6b5526740ed",
+  "ok": true
+ },
+ "cd-02-ata": {
+  "cd": 2,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-02-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-02-2026-ata.pdf",
+  "sha256": "b5d8fc78ee024fc013baa6b39335df18444cb28c2d5721e06399787544ea014e",
+  "ok": true
+ },
+ "cd-02-votos": {
+  "cd": 2,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-02-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-02-2026-votos.pdf",
+  "sha256": "81995f0519d3b11333a9f456f05bedc6eb93776b911aec354b497626019aa8ae",
+  "ok": true
+ },
+ "cd-03-ata": {
+  "cd": 3,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-03-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-03-2026-ata.pdf",
+  "sha256": "a0972037ba05d456feb8b4f40a5c790c52e71b343508fbf844d6ceff4c1d08d1",
+  "ok": true
+ },
+ "cd-03-votos": {
+  "cd": 3,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-03-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-03-2026-votos.pdf",
+  "sha256": "8f4ef59791c7c55df580f085f6e9956d517d08e2df96f1ed582c9553b9051a87",
+  "ok": true
+ },
+ "cd-04-ata": {
+  "cd": 4,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-04-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-04-2026-ata.pdf",
+  "sha256": "c41c58d28136d37c17fdce3d8a0156d15631b0e363cfc1529656814b3b29ced0",
+  "ok": true
+ },
+ "cd-04-votos": {
+  "cd": 4,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-04-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-04-2026-votos.pdf",
+  "sha256": "2820dbe05fe1fc6641b1216b1db6e29749ca31da53d37afd4432d509124e609d",
+  "ok": true
+ },
+ "cd-05-ata": {
+  "cd": 5,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-05-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-05-2026-ata.pdf",
+  "sha256": "b317aa58a134219be2f646d82e92ba2c8b4d31f9a4267ca8cc7bcf5c05347b97",
+  "ok": true
+ },
+ "cd-05-votos": {
+  "cd": 5,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-05-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-05-2026-votos.pdf",
+  "sha256": "d4b7c767c9a05f24739386aeb406516f80d10e7fad7995fab08fff76f480d866",
+  "ok": true
+ },
+ "cd-06-ata": {
+  "cd": 6,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-06-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-06-2026-ata.pdf",
+  "sha256": "bafc4ae40168db50bd73e23538e9d2b8dff216d47f6efc4e82e78e13dbce834e",
+  "ok": true
+ },
+ "cd-06-votos": {
+  "cd": 6,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-06-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-06-2026-votos.pdf",
+  "sha256": "6dbec42e4e7597a9855b4075a667d89d1bf4ace1835a4b90ac30edab52e376e8",
+  "ok": true
+ },
+ "cd-07-votos": {
+  "cd": 7,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-07-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-07-2026-votos.pdf",
+  "sha256": "b166ced79919b49381d1640ed124646c7f8638b5fab46341ad8dcba2e290bc76",
+  "ok": true
+ },
+ "cd-08-ata": {
+  "cd": 8,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-08-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-08-2026-ata.pdf",
+  "sha256": "926230cbd5a5b765957855355f14064f251b03edd30742f8fd41774e13432b6a",
+  "ok": true
+ },
+ "cd-08-votos": {
+  "cd": 8,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-08-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-08-2026-votos.pdf",
+  "sha256": "20d8da097dd0484562d252fab8cd811c2c63ad9ba58c775ef050b3a2178e7439",
+  "ok": true
+ },
+ "cd-09-ata": {
+  "cd": 9,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-09-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-09-2026-ata.pdf",
+  "sha256": "02cdb3391178a63b5d508951b8d576ffc486fbf978b7880ee7d2c2bcee88c528",
+  "ok": true
+ },
+ "cd-09-votos": {
+  "cd": 9,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-09-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-09-2026-votos.pdf",
+  "sha256": "7586fc94ef58b33da278f37690b67f88eaf35767538834e6fbbf243e01e12aa7",
+  "ok": true
+ },
+ "cd-10-ata": {
+  "cd": 10,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-10-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-10-2026-ata.pdf",
+  "sha256": "e49266e42c4bc290b56efaeccb9aee40dbc37674246d367d2786f32775fa3c16",
+  "ok": true
+ },
+ "cd-10-votos": {
+  "cd": 10,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-10-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-10-2026-votos.pdf",
+  "sha256": "2a4717429ef661fee9bd0bfb65d167420e61659120f2354559b5c665a3d2bc6d",
+  "ok": true
+ },
+ "cd-11-ata": {
+  "cd": 11,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-11-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-11-2026-ata.pdf",
+  "sha256": "df6a5c74ab39fa6439469b37c3ed6daf9ff853afdaa4de52929d4f98410deeff",
+  "ok": true
+ },
+ "cd-11-votos": {
+  "cd": 11,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-11-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-11-2026-votos.pdf",
+  "sha256": "064684f9681cbe48060d990bee56ecc76c2713b392124fd0640128394d48a592",
+  "ok": true
+ },
+ "cd-12-ata": {
+  "cd": 12,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-12-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-12-2026-ata.pdf",
+  "sha256": "3e07773f5a8c447c94057c5033a2a28903b17fc91fc7a29c4cbd4436f1e14a4c",
+  "ok": true
+ },
+ "cd-12-votos": {
+  "cd": 12,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-12-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-12-2026-votos.pdf",
+  "sha256": "5b1cd094ecbdda009f29177591ead54b8fd68a97fed09b54dea8816e1fac2a99",
+  "ok": true
+ },
+ "cd-13-ata": {
+  "cd": 13,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo/cd-13-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-13-2026-ata.pdf",
+  "sha256": "71453fbb52c0391632509fcb59fb146fc9a20d54609e58b25b1eac58eec12c20",
+  "ok": true
+ },
+ "cd-13-votos": {
+  "cd": 13,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo/cd-13-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-13-2026-votos.pdf",
+  "sha256": "cfb3e0a270bed8a987c0ca5140da3cb693deded50b3ae6b97655aa96ddf6d21d",
+  "ok": true
+ },
+ "cd-14-ata": {
+  "cd": 14,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-14-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-14-2026-ata.pdf",
+  "sha256": "fdf3b92731e8cafe6234d06be4a182f1639fb1eff48a43182dee9fa29385607d",
+  "ok": true
+ },
+ "cd-14-votos": {
+  "cd": 14,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-14-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-14-2026-votos.pdf",
+  "sha256": "c31a2884ff96756d97a8e3c279fab500a9083abf5d3f92dffa24776b498ec615",
+  "ok": true
+ },
+ "cd-15-ata": {
+  "cd": 15,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-15-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-15-2026-ata.pdf",
+  "sha256": "68e6148515e4f9406eefcc4de4c2c8621392175e26ccc1c2503e8ce288db1a11",
+  "ok": true
+ },
+ "cd-15-votos": {
+  "cd": 15,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-15-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-15-2026-votos.pdf",
+  "sha256": "b1a48f19375c76fb4ed166bd668b63aeda24cdba581b6b459921bc3c5a9141a1",
+  "ok": true
+ },
+ "cd-16-ata": {
+  "cd": 16,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-16-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-16-2026-ata.pdf",
+  "sha256": "bb118705eed1120468b89de60f390af0a2f24ddc7bcb5de4c39f100e139e058f",
+  "ok": true
+ },
+ "cd-16-votos": {
+  "cd": 16,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-16-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-16-2026-votos.pdf",
+  "sha256": "3e67dccd61fbddc16ec046ff6f062a2d548d6677ce9881905c39efae48c146c1",
+  "ok": true
+ },
+ "cd-17-ata": {
+  "cd": 17,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-17-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-17-2026-ata.pdf",
+  "sha256": "b082f94414b7952fb010b502a1a10f429514fdc4b78016d6f963c6336cce7566",
+  "ok": true
+ },
+ "cd-17-votos": {
+  "cd": 17,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-17-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-17-2026-votos.pdf",
+  "sha256": "18510002c7f6110f5f9524d0262a75964b34f64716f100d76d18258acb07cb8b",
+  "ok": true
+ },
+ "cd-18-ata": {
+  "cd": 18,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-18-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-18-2026-ata.pdf",
+  "sha256": "e49c8de4d5188a5ee9d6842afe90209358cc34eb742cb9d28108eca6e051e842",
+  "ok": true
+ },
+ "cd-18-votos": {
+  "cd": 18,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-18-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-18-2026-votos.pdf",
+  "sha256": "2cca17140fdf9930150f21448a4e3c98f4f4b18f5187306bac4c647f844df6fe",
+  "ok": true
+ },
+ "cd-19-ata": {
+  "cd": 19,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-19-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-19-2026-ata.pdf",
+  "sha256": "174fd0efc7a7ba10f328036ba0337036d039fd7d8a62b9ed06592f47908aac4d",
+  "ok": true
+ },
+ "cd-19-votos": {
+  "cd": 19,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-19-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-19-2026-votos.pdf",
+  "sha256": "4f760a2c1d292bf631b0a19cd18a87e30f3a5358bb5bb36ded9c0ee58bea21cc",
+  "ok": true
+ },
+ "cd-20-ata": {
+  "cd": 20,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-20-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-20-2026-ata.pdf",
+  "sha256": "7146c004b4489228d5df5811822402c2cfdf2b89db137d154102b3c34b06a4b2",
+  "ok": true
+ },
+ "cd-20-votos": {
+  "cd": 20,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-20-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-20-2026-votos.pdf",
+  "sha256": "3deb7fe58407aba78831b3292ad2c3351adef74edf56cd95540a760958bf0848",
+  "ok": true
+ },
+ "cd-21-ata": {
+  "cd": 21,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-21-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-21-2026-ata.pdf",
+  "sha256": "d155969919b3ca3657a0211ec55286664941a00f1e4e42230865f44afce6e1b6",
+  "ok": true
+ },
+ "cd-21-votos": {
+  "cd": 21,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-21-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-21-2026-votos.pdf",
+  "sha256": "9d5599e3c6cf91bbe2859576eb02a0be7bfa8580d4a3a6e6786fd3244cb95b0b",
+  "ok": true
+ },
+ "cd-22-ata": {
+  "cd": 22,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-22-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-22-2026-ata.pdf",
+  "sha256": "56e395612c1c8f133545e3d52bac4dca520769d313a8e0619627c7943353f1f7",
+  "ok": true
+ },
+ "cd-22-votos": {
+  "cd": 22,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-22-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-22-2026-votos.pdf",
+  "sha256": "13e79338e46c44a5636a889801524d789a95048fc28123b786093b8ef903f95e",
+  "ok": true
+ },
+ "cd-23-votos": {
+  "cd": 23,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-23-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-23-2026-votos.pdf",
+  "sha256": "bb95a6e95ba2ab72eac4171faf08be0bb4ab25f55443e93fcebfb5fde14ddaaa",
+  "ok": true
+ },
+ "cd-24-ata": {
+  "cd": 24,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-24-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-24-2026-ata.pdf",
+  "sha256": "b511b50ff94756f61fd1deae4a5c30301f3c86e4a3fa9993e1c0442e21bec501",
+  "ok": true
+ },
+ "cd-24-votos": {
+  "cd": 24,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-24-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-24-2026-votos.pdf",
+  "sha256": "8da6cc13f8038abc5960d9a9531f543b685fc03ab86419c397721ee4af1d28c0",
+  "ok": true
+ },
+ "cd-25-ata": {
+  "cd": 25,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-25-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-25-2026-ata.pdf",
+  "sha256": "77c11dbec73f7ac72ae841a44a85e3a34a8a168ae940f420e2a8cb53df844e2d",
+  "ok": true
+ },
+ "cd-25-votos": {
+  "cd": 25,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-25-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-25-2026-votos.pdf",
+  "sha256": "8c7ff22cb3464cfbc9d0eaf66ea8ba8fe2c73bb9d1b55c4ca63c1144ee6aa293",
+  "ok": true
+ },
+ "cd-26-ata": {
+  "cd": 26,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-26-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-26-2026-ata.pdf",
+  "sha256": "8baa096f59e9588c55b58f20007e0582579043abd7e606b089bae921e2a248cd",
+  "ok": true
+ },
+ "cd-26-votos": {
+  "cd": 26,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-26-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-26-2026-votos.pdf",
+  "sha256": "962db5b0fbe099912875f7c3150feb36c9632ab4f7e9478d7a433442e248bec1",
+  "ok": true
+ },
+ "cd-27-ata": {
+  "cd": 27,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-27-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-27-2026-ata.pdf",
+  "sha256": "91f379275b82f86656ba019db00762a209931e293a16ea660b47f8006ec055a6",
+  "ok": true
+ },
+ "cd-27-votos": {
+  "cd": 27,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-27-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-27-2026-votos.pdf",
+  "sha256": "85e5ec0edc0f02c0ddf4de1ce06ec10f1e9c8283bf14bdca9235ada623e44395",
+  "ok": true
+ },
+ "cd-28-ata": {
+  "cd": 28,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-28-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-28-2026-ata.pdf",
+  "sha256": "ecc2e53f2d5960592ce758b91cc5ce6ed99d0ec53cb6157ebe480b68c0e09d6f",
+  "ok": true
+ },
+ "cd-28-votos": {
+  "cd": 28,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-28-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-28-2026-votos.pdf",
+  "sha256": "563b3ee1b5d897ba5d78316453d0f3cf769c7bf5f24311fdf351a5e14d6ee2cc",
+  "ok": true
+ },
+ "cd-29-ata": {
+  "cd": 29,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-29-2026-ata.pdf",
+  "arquivo": "fonte/anpd/cd-29-2026-ata.pdf",
+  "sha256": "b8c23cf962aa138dc30f42485679ea0a9d1c91ca8a72b6e315020d9a549bc43f",
+  "ok": true
+ },
+ "cd-29-pauta": {
+  "cd": 29,
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-29-2026-pauta.pdf",
+  "arquivo": "fonte/anpd/cd-29-2026-pauta.pdf",
+  "sha256": "9c97e8265ce5ea5afab956590516cc61e8d3b17d791e6b235e99c4aa5d964fda",
+  "ok": true
+ },
+ "cd-29-votos": {
+  "cd": 29,
+  "tipo": "votos",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-29-2026-votos.pdf",
+  "arquivo": "fonte/anpd/cd-29-2026-votos.pdf",
+  "sha256": "dc59ab6dbcf4d1d9f8303447c06423272d9f965ea6744d2b3b30f2d4b9631ded",
+  "ok": true
+ }
+}
