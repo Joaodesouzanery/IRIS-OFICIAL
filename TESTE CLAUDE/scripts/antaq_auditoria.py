@@ -53,7 +53,21 @@ for d in sorted(amostra, key=lambda x: (x['reuniao'], int(x['item_n']))):
     ok['presentes'] = nomes(r_pres) <= {v['diretor'] for v in vts} and {v['diretor'] for v in vts if v['voto'].startswith(('ACOMPANHOU', 'RELATOR', 'REVISOR', 'REDATOR', 'DIVERGIU', 'IMPEDIDO'))} <= nomes(r_pres) | nomes(r_imp) | nomes(r_ant)
     venc_json = {v['diretor'] for v in vts if v['voto'].startswith('DIVERGIU') or 'voto vencido' in v['voto']}
     lab = set(re.split(r'\s*;\s*', d['resultado'].split(' — ')[0]))
-    ok['resultado'] = (nomes(r_venc) == venc_json) and (('POR MAIORIA' in d['resultado']) == bool(r_venc)) and (('IMPEDIDO' in d['resultado'] or 'impedido:' in d['resultado']) == bool(r_imp)) and (verbo not in ACEITA or bool(lab & ACEITA[verbo]) or d['resultado'].startswith('DECIDIDO'))
+    rd = norm(flat((re.search(r'ACORDAM.*?\bem\s*:?\s*(.*?)\s6\.\s*Data da Reuni', b) or [None, ''])[1]))
+    FAM = ((r'\bneg\w*(?:-lhe)? (?:o )?provimento', 'PROVIMENTO NEGADO'), (r'parcial provimento|provimento parcial', 'PROVIMENTO PARCIAL'), (r'\bd[aá]r?(?:-lhe)? (?:integral )?provimento|dar provimento', 'MÉRITO: PROVIMENTO'),
+           (r'rejeit\w+ (?:os )?embargos', 'EMBARGOS REJEITADOS'), (r'\bnao conhec', 'NÃO CONHECIDO'), (r'arquivamento|arquivar', 'ARQUIVADO'), (r'\breferendar', 'REFERENDADO'), (r'inexistencia de obices', 'ÓBICES'),
+           (r'\bindefer', 'INDEFERIDO'), (r'(?<!in)\bdefer|(?<!in)defer(?:ir|imos)', 'DEFERIDO'), (r'\breform', 'REFORMADA'), (r'^(?:\d\.\d\.\s*)?(?:conhecer|receber|admitir)|\d\.\d\.\s*(?:conhecer|receber|admitir)\b', 'CONHECIDO'))
+    esperado = {rot for pat, rot in FAM if re.search(pat, rd)}
+    res_lab = d['resultado'].split(' — ')[0]
+    obtido = {rot for pat, rot in FAM if rot.split(': ')[-1] in res_lab or rot in res_lab}
+    # 'DEFERIDO' esta dentro de 'INDEFERIDO': checa pelo termo com fronteira
+    if 'DEFERIDO' in esperado and not re.search(r'(?<!IN)DEFERIDO', res_lab): obtido.discard('DEFERIDO')
+    if 'DEFERIDO' in obtido and not re.search(r'(?<!IN)DEFERIDO', res_lab): obtido.discard('DEFERIDO')
+    if 'PROVIMENTO NEGADO' in esperado: esperado.discard('MÉRITO: PROVIMENTO')
+    if 'PROVIMENTO NEGADO' in obtido: obtido.discard('MÉRITO: PROVIMENTO')
+    if 'PROVIMENTO PARCIAL' in esperado: esperado.discard('MÉRITO: PROVIMENTO')
+    ok['resultado'] = (nomes(r_venc) == venc_json) and (('POR MAIORIA' in d['resultado']) == bool(r_venc)) and (('IMPEDIDO' in d['resultado'] or 'impedido:' in d['resultado']) == bool(r_imp)) and (esperado - {'CONHECIDO'} <= obtido) and (obtido - esperado <= {'CONHECIDO'} | ({'REFORMADA'} if 'REFORMADA' in obtido else set()))
+    if not ok['resultado']: falhas.append((d['deliberacao'], 'resultado-detalhe', (sorted(esperado), sorted(obtido), res_lab)))
     r_ass = re.sub(r'^(?:de|d[aeo]s?)\s+', '', r_ass).rstrip('.')
     ok['assunto'] = norm(flat(d['assunto'])[:80].rstrip('.')) in norm(r_ass) and (len(flat(d['assunto'])) >= min(len(r_ass), 600) * 0.7)
     for c, v in ok.items():

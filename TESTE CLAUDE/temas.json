@@ -55036,17 +55036,20 @@
  },
  "ANTAQ|ROD603|50300.014487/2025-68|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
   "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "confianca": 0.91,
+  "conf_tema": 0.91,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "ed3205e420aeb881",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD603|50300.013934/2025-61|Retirada de pauta": {
@@ -56481,17 +56484,20 @@
  },
  "ANTAQ|ROD605|50300.011261/2025-13|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
   "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "confianca": 0.91,
+  "conf_tema": 0.91,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "e1233c59821c2b53",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD605|50300.023532/2025-75|Retirada de pauta": {
@@ -57913,32 +57919,36 @@
  },
  "ANTAQ|ROD607|50300.019320/2024-11|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
+  "tema": "Autorizações e outorgas",
+  "subtema": "Autorização de instalação portuária e empresas",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "afretamento"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "9f8d4c7e6a2b9054",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD607|50300.020847/2024-80|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Termo de ajustamento de conduta (TAC) e cumprimento de determinações",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
+  "microtema_iris": "obras",
   "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "confianca": 0.89,
+  "conf_tema": 0.89,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "cumprimento (do|da|das|dos)"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "899e39c9310f06af",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD607|50300.009996/2024-98|Pedido de vista": {
@@ -59000,7 +59010,7 @@
    "tarifa"
   ],
   "fonte": "regra",
-  "hash": "39ca7f71e236bff1",
+  "hash": "d9583732df42311f",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD608|50300.022287/2024-06|Retirada de pauta": {
@@ -59008,47 +59018,57 @@
   "tema": "Denúncias e medidas cautelares",
   "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
+  "microtema_iris": "tarifa",
   "area_iris": "outros",
-  "confianca": 0.94,
-  "conf_tema": 0.94,
+  "confianca": 0.7,
+  "conf_tema": 0.7,
   "conf_modal": 1.0,
   "termos": [
    "medida cautelar",
    "cautelar"
   ],
   "fonte": "regra",
-  "hash": "71a7886ab2746ed4",
+  "hash": "d56de9b88da313c5",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD608|50300.003255/2026-65|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
+  "tema": "Denúncias e medidas cautelares",
+  "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "cobranca",
+   "denuncia",
+   "medida cautelar",
+   "cautelar"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "b75ad99588f88fb0",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD608|50300.009465/2026-67|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
+  "tema": "Denúncias e medidas cautelares",
+  "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "cobranca",
+   "denuncia",
+   "medida cautelar",
+   "cautelar"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "f7ff85852ff9221f",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD608|50300.022517/2024-29|Retirada de pauta": {
@@ -59852,20 +59872,20 @@
  },
  "ANTAQ|ROD610|50300.011688/2026-94|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Denúncias e medidas cautelares",
-  "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
-  "tipo_ato": "Termo aditivo",
-  "microtema_iris": "contrato",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
   "area_iris": "cargas_logistica",
-  "confianca": 0.55,
-  "conf_tema": 0.55,
+  "confianca": 0.59,
+  "conf_tema": 0.59,
   "conf_modal": 1.0,
   "termos": [
-   "medida cautelar",
-   "cautelar"
+   "recurso",
+   "reconsideracao"
   ],
   "fonte": "regra",
-  "hash": "b4ece075120a859f",
+  "hash": "6648cfef1aa2fc60",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD610|50300.020846/2025-16|Retirada de pauta": {
@@ -60678,17 +60698,21 @@
  },
  "ANTAQ|ROD611|50300.004744/2023-91|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
+  "tema": "Concessões e arrendamentos portuários",
+  "subtema": "Contratos, reequilíbrio e licitação",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "contrato",
   "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "confianca": 0.95,
+  "conf_tema": 0.95,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "arrendamento",
+   "contrato de arrendamento",
+   "porto organizado"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "685767abdc8903c7",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD611|50300.010110/2026-11|Retirada de pauta": {
@@ -60710,17 +60734,20 @@
  },
  "ANTAQ|ROD611|50300.029019/2025-98|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
+  "tema": "Concessões e arrendamentos portuários",
+  "subtema": "Contratos, reequilíbrio e licitação",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "arrendamento",
+   "porto organizado"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "c7b230e0047da3e2",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD611|50300.014981/2025-22|Pedido de vista": {
@@ -61526,7 +61553,7 @@
   "subtema": "Contratos, reequilíbrio e licitação",
   "tipo_ato": "Reajuste / revisão / reequilíbrio",
   "microtema_iris": "outros",
-  "area_iris": "cargas_logistica",
+  "area_iris": "rodoviario_passageiros",
   "confianca": 0.5,
   "conf_tema": 0.5,
   "conf_modal": 1.0,
@@ -61534,22 +61561,24 @@
    "licitacao"
   ],
   "fonte": "regra",
-  "hash": "c9c77638bdcf09a7",
+  "hash": "cf90ff7cba801ffc",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD612|50300.001028/2025-14|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
   "microtema_iris": "outros",
   "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "confianca": 0.83,
+  "conf_tema": 0.83,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "recurso"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "b365db44a3d1223e",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD612|50300.013402/2026-13|Retirada de pauta": {
@@ -61586,7 +61615,7 @@
    "cautelar"
   ],
   "fonte": "regra",
-  "hash": "b8e62f5c33f5b3e1",
+  "hash": "f7ff85852ff9221f",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD612|50300.017434/2025-07|Retirada de pauta": {
@@ -61609,22 +61638,20 @@
  },
  "ANTAQ|ROD612|50300.011238/2026-00|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Denúncias e medidas cautelares",
-  "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
   "tipo_ato": "Recurso / reconsideração",
-  "microtema_iris": "obras",
-  "area_iris": "cargas_logistica",
-  "confianca": 0.78,
-  "conf_tema": 0.78,
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.91,
+  "conf_tema": 0.91,
   "conf_modal": 1.0,
   "termos": [
-   "sobre-?estadia",
-   "cobranca",
-   "denuncia",
-   "medida cautelar"
+   "recurso",
+   "reconsideracao"
   ],
   "fonte": "regra",
-  "hash": "198c8c88818d772f",
+  "hash": "24bf40fbd1841993",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD612|50300.016675/2025-21|Retirada de pauta": {
@@ -61633,17 +61660,18 @@
   "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
   "tipo_ato": "Outros",
   "microtema_iris": "obras",
-  "area_iris": "infraestrutura_geral",
-  "confianca": 0.96,
-  "conf_tema": 0.96,
+  "area_iris": "cargas_logistica",
+  "confianca": 0.97,
+  "conf_tema": 0.97,
   "conf_modal": 1.0,
   "termos": [
+   "sobre-?estadia",
    "cobranca",
    "medida cautelar",
    "cautelar"
   ],
   "fonte": "regra",
-  "hash": "61dcaf52a5af94f2",
+  "hash": "ec805f9d9c5e1e97",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD613|50300.001288/2022-47|Acórdão 388-2026": {
@@ -62126,7 +62154,7 @@
   "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
   "tipo_ato": "Outros",
   "microtema_iris": "obras",
-  "area_iris": "outros",
+  "area_iris": "cargas_logistica",
   "confianca": 0.94,
   "conf_tema": 0.94,
   "conf_modal": 1.0,
@@ -62135,7 +62163,7 @@
    "cautelar"
   ],
   "fonte": "regra",
-  "hash": "3181a9278e9a9acd",
+  "hash": "4733862240ea8727",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD614|50300.015189/2026-76|Acórdão 412-2026": {
@@ -64071,32 +64099,38 @@
  },
  "ANTAQ|ROD616|50300.011297/2025-99|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "tema": "Denúncias e medidas cautelares",
+  "subtema": "Sobre-estadia / cobranças indevidas (usuários)",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "tarifa",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "cobranca",
+   "denuncia",
+   "cobranca abusiva"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "1ba92ba50c42b13b",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD616|50300.014751/2026-44|Retirada de pauta": {
   "modal": "Portos, hidrovias e navegação",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
+  "tema": "Regulação e normas",
+  "subtema": "Análise de impacto regulatório / alteração de resolução",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
   "conf_modal": 1.0,
-  "termos": [],
+  "termos": [
+   "resolucao antaq"
+  ],
   "fonte": "regra",
-  "hash": "80a2cc393e396324",
+  "hash": "0bc6f6d536254d3e",
   "tipo_item": "Retirada de pauta"
  },
  "ANTAQ|ROD616|50300.008957/2026-35|Pedido de vista (renovado)": {

@@ -134,7 +134,8 @@ def campos(b):
             d['q']['presentes'] = quem_papeis(tx.split(':', 1)[1]); d['q']['presentes_txt'] = tx
         elif re.search(r'voto vencido', tx, re.I): d['q'].setdefault('vencidos', []).extend(quem(tx.split(':', 1)[1]))
         elif re.search(r'(?:alegou|declarou|declarou-se|arguiu).{0,20}(?:impedimento|suspei)', tx, re.I): d['q'].setdefault('impedidos', []).extend(quem(tx.split(':', 1)[1]))
-        elif re.search(r'n[ãa]o participou da vota', tx, re.I): d['q'].setdefault('nao_votou', []).extend(quem(tx.split(':', 1)[1]))
+        elif re.search(r'n[ãa]o participou da vota', tx, re.I):
+            d['q'].setdefault('nao_votou', []).extend(quem(tx.split(':', 1)[1])); d['q']['nao_votou_legal'] = bool(re.search(r'afastamento legal', tx, re.I))
         elif re.search(r'votou em', tx, re.I):
             d['q'].setdefault('votou_antes', []).extend(quem(tx.split(':', 1)[1])); d['q']['votou_antes_txt'] = tx
         else: d['q'].setdefault('nao_classificado', []).append(tx)
@@ -168,7 +169,7 @@ def parse_pauta(t):
     for ln in L:
         m = re.match(r'^\s*RELATOR(?:A)?:\s*(.*?):?\s*$', ln)
         if m: rel = (quem(m[1]) or [None])[0]; cur = None; continue
-        m = re.match(r'^\s*(\d+)\.\s*(' + PROC + r')?\s*$', ln)
+        m = re.match(r'^\s*(\d+)\.\s*(' + PROC + r')?\s*(?:\([^)]*\))?\s*$', ln)
         if m and m[2]: cur = {'item': int(m[1]), 'processo': m[2], 'relator': rel, 'txt': []}; itens[m[2]] = cur; continue
         m = re.match(r'^\s*(\d+)\.\s*$', ln)
         if m: cur = {'item': int(m[1]), 'processo': None, 'relator': rel, 'txt': []}; continue
@@ -276,30 +277,63 @@ ROT = ((r'^n[aã]o conhec', 'NÃO CONHECIDO'), (r'^conhec|^receb|^admit', 'CONHE
        (r'^aplic\w+ (?:a )?(?:multa|penalidade|san)', 'SANÇÃO APLICADA'), (r'^mant', 'MANTIDO'), (r'^suspend', 'SUSPENSO'), (r'^determin\w+ a suspens', 'SUSPENSO'), (r'^instaur|^abrir|^determin\w+ a abertura', 'PROCEDIMENTO INSTAURADO'),
        (r'^acolh', 'ACOLHIDO'), (r'^declar', 'DECLARADO'), (r'^homolog', 'HOMOLOGADO'), (r'^anuir|^dar anuência|^conced\w+ anuência', 'ANUÊNCIA'), (r'^restitu|^devolv', 'RESTITUÍDO'), (r'^extingu', 'EXTINTO'))
 SECUND = ((r'^determin', 'DETERMINAÇÃO'), (r'^recomend', 'RECOMENDAÇÃO'), (r'^encaminh', 'ENCAMINHADO'), (r'^inform', 'INFORMADO'), (r'^consider\w+ .*encerrad|^encerr', 'ENCERRADO'),
-          (r'^convert\w+ em definitiva', 'CAUTELAR CONVERTIDA EM DEFINITIVA'), (r'^reintegr|^incorpor', 'PROVIDÊNCIA PATRIMONIAL'), (r'^cientific|^dar ci[eê]ncia|^arquiv|^notific', 'CIENTIFICADO/ARQUIVADO'))
+          (r'^convert\w+ em definitiva', 'CAUTELAR CONVERTIDA EM DEFINITIVA'), (r'^reintegr|^incorpor', 'PROVIDÊNCIA PATRIMONIAL'), (r'^cientific|^dar ci[eê]ncia|^arquiv|^notific', 'CIENTIFICADA(S) AS PARTES'))
+def _obj(c_, verbo):
+    m = re.search(verbo + r'\w*\s+(?:parcialmente\s+)?(.{4,200})', c_, re.I)
+    if not m or re.match(r'-?l[oa]s?\b', m[1]) : return ''
+    o = re.split(r'[;,]| uma vez| por | haja vista| tendo em vista| considerando', m[1])[0].strip()
+    o = re.sub(r'^(?:o|a|os|as)\s+', '', o)
+    if len(o) > 90: o = o[:90].rsplit(' ', 1)[0]
+    return (': ' + o) if len(o) > 3 else ''
 def tag_resultado(disp):
-    cl = [plano(c) for c in re.split(r'(?:(?<=^)|(?<=\s))5\.\d+\.\s+(?!\d)', disp) if c.strip()]
+    cl = [plano(c) for c in re.split(r'(?:(?<=^)|(?<=\s))5\.\d+(?:\.\d+)*\.\s+(?!\d)', disp) if c.strip()]
     if not cl: cl = [plano(disp)]
-    tags, sec = [], []
+    tags, sec, defer = [], [], collections.Counter()
+    def add(t):
+        if t not in tags: tags.append(t)
     for c in cl:
         x = norm(c).strip(' :,;')
         x = re.sub(r'^(?:com fundamento|com base|nos termos|em face|tendo em vista|considerando)[^,]{0,200},\s*', '', x)
-        neg = False
-        if re.match(r'^neg\w+ (?:o )?(?:pleito|pedido|recurso|requerimento|solicit)', x): tags.append('INDEFERIDO') if 'INDEFERIDO' not in tags else None; continue
-        if re.match(r'^n[aã]o (?:conhec|reconhec|acolh|defer|aprov|autoriz|admit|receb)', x) and not x.startswith('nao conhec'): neg = True; x = re.sub(r'^n[aã]o ', '', x)
-        hit = False
-        for pat, rot in ROT:
-            if re.search(pat, x):
-                rot = ('NÃO ' + rot) if neg and not rot.startswith('NÃO') else rot
-                if rot not in tags: tags.append(rot)
-                hit = True; break
-        if not hit:
+        usado = False
+        if re.search(r'^conhec\w+ parcialmente', x): add('CONHECIDO PARCIALMENTE'); usado = True
+        elif re.search(r'^n[aã]o conhec|^nao conhec', x): add('NÃO CONHECIDO'); usado = True
+        elif re.search(r'^(?:conhec|receb|admit)', x): add('CONHECIDO'); usado = True
+        elif re.search(r'^referend', x): add('REFERENDADO'); usado = True
+        extras = []
+        for pat, rot in ((r'\bneg\w+(?:-lhe)? (?:o )?provimento', 'MÉRITO: PROVIMENTO NEGADO'), (r'parcial provimento|provimento parcial', 'MÉRITO: PROVIMENTO PARCIAL'),
+                         (r'\bd[aá]r?(?:-lhe| lhes)? (?:integral )?provimento|\bdar provimento|conced\w+ provimento', 'MÉRITO: PROVIMENTO'), (r'\breform\w+', 'DECISÃO REFORMADA'),
+                         (r'rejeit\w+ (?:os )?embargos', 'EMBARGOS REJEITADOS'), (r'acolh\w+ (?:os )?embargos', 'EMBARGOS ACOLHIDOS'), (r'inexistencia de obices', 'INEXISTÊNCIA DE ÓBICES DECLARADA'),
+                         (r'arquiv', 'ARQUIVADO')):
+            m_ = re.search(pat, x)
+            if m_: extras.append((m_.start(), rot))
+        if re.search(r'\breform\w+ parcialmente|parcialmente (?:a )?decis', x): extras = [(p_, 'DECISÃO REFORMADA PARCIALMENTE' if r_ == 'DECISÃO REFORMADA' else r_) for p_, r_ in extras]
+        for pat, base in ((r'indefer', 'INDEFERIDO'), (r'(?<!in)defer', 'DEFERIDO')):
+            for m_ in re.finditer(pat, x):
+                ob = _obj(c, 'indefer' if base == 'INDEFERIDO' else r'(?<!in)defer')
+                extras.append((m_.start(), base + ob)); defer[base + ob] += 1; break
+        if any(r_ == 'MÉRITO: PROVIMENTO PARCIAL' for _, r_ in extras): extras = [(p_, r_) for p_, r_ in extras if r_ != 'MÉRITO: PROVIMENTO']
+        for _, r_ in sorted(extras): add(r_); usado = True
+        if not usado:
+            neg_ = bool(re.match(r'^n[aã]o (?:reconhec|acolh|aprov|autoriz)', x)); x2 = re.sub(r'^n[aã]o ', '', x) if neg_ else x
+            for pat, rot in ROT:
+                if re.search(pat, x2):
+                    add(('NÃO ' + rot) if neg_ else rot); usado = True; break
+        if not usado:
             for pat, rot in SECUND:
                 if re.search(pat, x):
                     if rot not in sec: sec.append(rot)
                     break
-    r = tags[:3] or sec[:2]
-    return '; '.join(r) if r else 'DECIDIDO'
+    if not tags: tags = sec[:2]
+    # varios pedidos deferidos/indeferidos sem objeto identificavel: indicar a quantidade
+    out = []
+    for t in tags[:5]: out.append(t + (f' ({defer[t]} pedidos)' if defer.get(t, 0) > 1 else ''))
+    return '; '.join(out) if out else 'DECIDIDO'
+AUS_MOT = {}
+def aus_label(n, tag=None):
+    m = AUS_MOT.get(tag or CUR_TAG[0], {})
+    if n in m: return m[n]
+    return 'AUSENTE (não consta entre os presentes do acórdão, item 7.1)'
+CUR_TAG = [None]
 def voto_linhas(tag, ac, presentes_reuniao, roster):
     """1 linha por diretor: roster da reuniao U quorum do acordao"""
     q = ac['q']; pres = [n for n, _ in q.get('presentes', [])]; papeis = dict(q.get('presentes', []))
@@ -308,16 +342,24 @@ def voto_linhas(tag, ac, presentes_reuniao, roster):
     out = []
     for n in pessoas:
         if n in imp: v, pv = 'IMPEDIDO (alegou impedimento)', 'nominal'
-        elif n in nv: v, pv = 'AUSENTE (não participou da votação)', 'nominal'
+        elif n in nv: v, pv = ('AUSENTE (não participou da votação; afastamento legal)' if q.get('nao_votou_legal') else 'AUSENTE (não participou da votação)'), 'nominal'
         elif n == rel and n in venc: v, pv = 'RELATOR (voto vencido' + ('; votou antes do pedido de vista' if n in ant else '') + ')', 'nominal'
         elif n == rel: v, pv = 'RELATOR (voto proferido)', ('nominal' if (n in pres or n in ant) else 'REVISAR')
         elif n in venc: v, pv = 'DIVERGIU (voto vencido)', 'nominal'
         elif n == rev: v, pv = ('REDATOR (voto proferido)' if ac['papel31'].lower().startswith('redator') else 'REVISOR (voto proferido)'), 'nominal'
         elif n in ant: v, pv = 'VOTOU ANTES (pedido de vista)', 'nominal'
         elif n in pres: v, pv = 'ACOMPANHOU', 'inferido'
-        else: v, pv = 'AUSENTE', 'nominal'
+        else: v, pv = aus_label(n), 'nominal'
         out.append((n, v, pv))
     return out
+def acha_pauta(tag, p):
+    for tg2 in [tag] + sorted(pauta, reverse=True):
+        x = pauta.get(tg2, {}).get(p)
+        if x and x.get('interessado'): return x
+    for tg2 in [tag] + sorted(virt, reverse=True):
+        x = virt.get(tg2, {}).get('itens', {}).get(p)
+        if x and x.get('interessado'): return x
+    return None
 chaves = set()
 def add_d(d, v):
     k = (d['reuniao'], d['processo'], d['deliberacao'])
@@ -332,6 +374,7 @@ for tag in TAGS:
     ini, fim = c['ini'], c['fim']
     pres = c['participantes']; aus = c['ausentes']
     roster = list(dict.fromkeys(pres + aus))
+    AUS_MOT[tag] = {n: ('AUSENTE (não participou da votação; afastamento legal)' if 'afastamento legal' in c['ausente_txt'] else 'AUSENTE (ausente na abertura da reunião)') for n in aus}; CUR_TAG[0] = tag
     meta_r[tag] = {'ini': ini, 'fim': fim, 'roster': roster, 'pres': pres, 'aus': aus, 'modal': modal, 'num': num}
     per = f'{ini[8:]}/{ini[5:7]} a {fim[8:]}/{fim[5:7]}/2026' if fim != ini else f'{ini[8:]}/{ini[5:7]}/2026'
     obs = '' if 'int' in atas[tag] else 'Só a ata Externa foi localizada (a Interna não consta no Sophia)'
@@ -341,7 +384,7 @@ for tag in TAGS:
     for ac in sorted(ac_l, key=lambda x: x['num']):
         q = ac['q']; venc = q.get('vencidos', [])
         tg = tag_resultado(ac['disp_5x'])
-        res = tg + (' — POR MAIORIA (vencido: ' + lista_nomes(venc) + ')' if venc else ' — sem voto divergente registrado')
+        res = tg + (' — POR MAIORIA (vencido: ' + lista_nomes(venc) + ')' if venc else ' — sem voto vencido registrado na ata (item 7.2 vazio)')
         if q.get('impedidos'): res += f' [impedido: {lista_nomes(q["impedidos"])}]'
         d = dict(base, processo=ac['processo'], deliberacao=f'Acórdão {ac["num"]}-2026', item_n=str(ac['num']), relator=ac['relator'], interessado=ac['interessado'], assunto=ac['assunto'], resultado=res, voto_doc=ac['voto_doc'],
                  decisao_texto=ac['disp_5x'][:1500], tipo_item='Deliberação', secao='Acórdãos aprovados (ata ' + ac['origem'] + ')', unidade=ac['unidade'])
@@ -356,11 +399,11 @@ for tag in TAGS:
         for m in re.finditer(r'-\s*((?:' + PROC + r'(?:,\s*|\s+e\s+|\s+))+?)\s*,?\s*de relatoria d[oa]s? (.*?)(?=;|\.\s|\s-\s' + P5 + r'|$)', tx):
             procs = re.findall(PROC, m[1]); rel = (quem(m[2]) or [None])[0]
             for p in procs:
-                pa = next((pp.get(p) for tg2, pp in pauta.items() if tg2 == tag and p in pp), None) or (virt.get(tag, {}).get('itens', {}).get(p))
+                pa = acha_pauta(tag, p)
                 d = dict(base, processo=p, deliberacao='Retirada de pauta', item_n='', relator=rel, interessado=(pa or {}).get('interessado', ''), assunto=(pa or {}).get('ctx', '')[:600], resultado='RETIRADO DE PAUTA', voto_doc='',
                          decisao_texto=f'Retirado de pauta (ata {og}), relatoria: {rel}', tipo_item='Retirada de pauta', secao='Processos retirados de pauta (ata ' + og + ')', unidade='')
                 if (tag, p, 'Retirada de pauta') in chaves: continue
-                add_d(d, [(n, 'SEM VOTO (retirado de pauta)', 'nominal') for n in pres])
+                add_d(d, [(n, 'SEM VOTO (retirado de pauta)', 'nominal') for n in pres] + [(n, aus_label(n, tag), 'nominal') for n in aus])
         # vistas (pedidos novos e renovacoes)
         for sec in ('PEDIDOS DE VISTA', 'REABERTURAS DE DISCUSSÃO'):
             tx = S.get(sec, '')
@@ -379,7 +422,7 @@ for tag in TAGS:
                 ocas = (re.search(r'por ocasi[ãa]o da Reuni[ãa]o n[ºo] (\d+)', pt) or [None, ''])[1]
                 renov = sec == 'REABERTURAS DE DISCUSSÃO'
                 for p in procs:
-                    pa = next((pp.get(p) for tg2, pp in pauta.items() if tg2 == tag and p in pp), None) or (virt.get(tag, {}).get('itens', {}).get(p))
+                    pa = acha_pauta(tag, p)
                     dlb = 'Pedido de vista (renovado)' if renov else 'Pedido de vista'
                     if (tag, p, dlb) in chaves: continue
                     d = dict(base, processo=p, deliberacao=dlb, item_n='', relator=rel, interessado=(pa or {}).get('interessado', ''), assunto=(pa or {}).get('ctx', '')[:600],
@@ -390,6 +433,7 @@ for tag in TAGS:
                         if n in vistantes: vl.append((n, 'PEDIU VISTA', 'nominal'))
                         elif n == rel: vl.append((n, 'RELATOR (voto proferido; vista concedida)' if relvotou else 'RELATOR (relatou; sem voto — vista pendente)', 'nominal' if (relvotou or nvoto) else 'inferido'))
                         else: vl.append((n, 'SEM VOTO AINDA (vista pendente)', 'nominal' if nvoto else 'inferido'))
+                    vl += [(n, aus_label(n, tag), 'nominal') for n in aus]
                     add_d(d, vl)
         # homologacao de atas
         tx = plano(S.get('HOMOLOGAÇÃO DE ATAS', ''))
@@ -400,7 +444,7 @@ for tag in TAGS:
                 if (tag, f'ATA-ROD{nn}', dlb) in chaves: continue
                 d = dict(base, processo=f'ATA-ROD{nn}', deliberacao=dlb, item_n='', relator=None, interessado='Diretoria Colegiada', assunto=f'Homologação da ata da {nn}ª Reunião', resultado='ATA HOMOLOGADA', voto_doc='', decisao_texto=tx[:400],
                          tipo_item='Aprovação de ata', secao='Homologação de atas (ata ' + og + ')', unidade='Secretaria-Geral')
-                add_d(d, [(n, 'ACOMPANHOU', 'inferido') for n in pres] + [(n, 'AUSENTE', 'nominal') for n in aus])
+                add_d(d, [(n, 'ACOMPANHOU', 'inferido') for n in pres] + [(n, aus_label(n, tag), 'nominal') for n in aus])
         if re.search(r'homologou', tx) and not m: D.append({'_erro': f'homologação não parseada em {tag}', 'reuniao': tag})
 D = [d for d in D if '_erro' not in d]
 # ---------------------------------------------------------------- SEI: declaracoes de voto (HTML publico) -> votos NOMINAIS dos demais diretores
