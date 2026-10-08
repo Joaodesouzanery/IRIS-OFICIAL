@@ -86,24 +86,1269 @@
    "titulo": "640ª Reunião da Diretoria Colegiada"
   }
  ],
+ "dicol_api": {
+  "base": "https://www.ans.gov.br/index.php?option=com_dicol&format=json",
+  "anos_consultados": {
+   "2019": {
+    "http": 200,
+    "n": 30
+   },
+   "2020": {
+    "http": 200,
+    "n": 39
+   },
+   "2021": {
+    "http": 200,
+    "n": 34
+   },
+   "2022": {
+    "http": 200,
+    "n": 40
+   },
+   "2023": {
+    "http": 200,
+    "n": 28
+   },
+   "2024": {
+    "http": 200,
+    "n": 30
+   },
+   "2025": {
+    "http": 200,
+    "n": 30
+   },
+   "2026": {
+    "http": 200,
+    "n": 19
+   },
+   "2027": {
+    "http": 200,
+    "n": 0
+   }
+  },
+  "contador_oficial_2026": 19,
+  "lista_oficial_2026": [
+   {
+    "id": "92586",
+    "titulo": "642ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92579",
+    "titulo": "641ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92560",
+    "titulo": "640ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92531",
+    "titulo": "639ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92516",
+    "titulo": "638ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92517",
+    "titulo": "8ª Reunião Extraodinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92493",
+    "titulo": "637ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92495",
+    "titulo": "7ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92484",
+    "titulo": "636ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92488",
+    "titulo": "6ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92466",
+    "titulo": "635ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92444",
+    "titulo": "634ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92452",
+    "titulo": "5ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92449",
+    "titulo": "4ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92420",
+    "titulo": "633ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92436",
+    "titulo": "3ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92419",
+    "titulo": "2ª Reunião Extraordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92399",
+    "titulo": "632ª Reunião Ordinária de Diretoria Colegiada"
+   },
+   {
+    "id": "92410",
+    "titulo": "1ª Reunião Extraordinária de Diretoria Colegiada"
+   }
+  ],
+  "varredura": {
+   "id_de": 92359,
+   "id_ate": 92726,
+   "ids_consultados": 368,
+   "ids_com_reuniao": 37,
+   "reunioes_2026_numeradas": 25,
+   "ordinarias": [
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644
+   ],
+   "extraordinarias": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "fora_da_lista_oficial": [
+    "643#92599",
+    "644#92600",
+    "?644#92601",
+    "?645#92603",
+    "?646#92602",
+    "?647#92604"
+   ]
+  },
+  "reunioes": [
+   {
+    "chave": "632",
+    "id": 92399,
+    "titulo": "632ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "30/01/2026",
+    "na_lista_oficial": true,
+    "ata": "92399___ATA DA 632ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA 30.01.2026.pdf",
+    "pauta": "92399___Pauta da 632ª DICOL Ordinária.pdf",
+    "n_itens": 7,
+    "anexos": [
+     {
+      "item": "92416",
+      "orgao": "DIDES",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92416___Documentos%20632%C2%AA%20DICOL%20-%2033910.014193_2025_39.pdf"
+     },
+     {
+      "item": "92417",
+      "orgao": "DIDES",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92417___Documentos%20632%C2%AA%20DICOL%20-%2033910.031840_2025_77.pdf"
+     },
+     {
+      "item": "92414",
+      "orgao": "DIFIS",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92414___Documentos%20632%C2%AA%20DICOL%20-%2033902.010473_2017_67.pdf"
+     },
+     {
+      "item": "92415",
+      "orgao": "DIFIS",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92415___Documentos%20632%C2%AA%20DICOL%20-%2033910.013611_2022_28.pdf"
+     },
+     {
+      "item": "92413",
+      "orgao": "DIOPE",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Documentos%20632%C2%AA%20DICOL%20-%2033910.057923_2025_96.pdf"
+     },
+     {
+      "item": "92413",
+      "orgao": "DIOPE",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Apresenta%C3%A7%C3%A3o%20DIOPE%20-%20632%C2%AA%20DICOL%20-%2033910.057923_2025-96.pptx"
+     },
+     {
+      "item": "92418",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92418___Documentos%20632%C2%AA%20DICOL%20-%2033910.000122_2026_30.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92416",
+      "orgao": "DIDES",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação entre a Agência Nacional de Saúde Suplementar, o Institute For Healthcare Improvement - IHI, o Hospital Alemão Oswaldo Cruz - HAOC e a Sociedade Brasileira de Medicina de Família e Comunidade - SBMFC. Projeto Cuidado Integral. Processo nº 33910.014193/2025-39.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92417",
+      "orgao": "DIDES",
+      "assunto": "EXTRAPAUTA - APROVAÇÃO do Edital Conjunto de Chamamento das Operadoras de Planos Privados de Assistência à Saúde para participação do Programa Agora Tem Especialistas do Ministério da Saúde, na forma do Edital Conjunto MS-ANS 2026. Processo nº 33910.031840/2025-77.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92414",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e a Defensoria Pública do Estado de São Paulo DP/SP. Processo nº 33902.010473/2017-67.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92415",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Tribunal de Justiça do Estado do Mato grosso TJ/MT. Processo nº 33910.013611/2022-28.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92413",
+      "orgao": "DIOPE",
+      "assunto": "APROVAÇÃO de (i) dispensa da Análise de Impacto Regulatório; e (ii) realização de consulta pública pelo prazo de 45 (quarenta e cinco) dias. Proposta de alteração das Resoluções Normativas nº 516 e 521, ambas de 29 de abril de 2022. Processo nº 33910.057923/2025-96.",
+      "n_arquivos": 2
+     },
+     {
+      "id": "92418",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92412",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO das minutas das atas da 631ª Reunião Ordinária de Diretoria Colegiada, de 05/12/2025; e da 15ª Reunião Extraordinária de Diretoria Colegiada, de 19/12/2025.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "633",
+    "id": 92420,
+    "titulo": "633ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "23/02/2026",
+    "na_lista_oficial": true,
+    "ata": "92420___ATA DA 633ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA REALIZADA EM 23 DE FEVEREIRO DE 2026..pdf",
+    "pauta": "92420___Pauta da 633ª DICOL.pdf",
+    "n_itens": 6,
+    "anexos": [
+     {
+      "item": "92443",
+      "orgao": "DIFIS",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92443___Documentos%20633%C2%AA%20DICOL%20-%2033910.036648_2023_13.pdf"
+     },
+     {
+      "item": "92439",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Documentos%20633%C2%AA%20DICOL%20-%2033910.049000_2025_61.pdf"
+     },
+     {
+      "item": "92439",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%20633%C2%AA%20DICOL%20-%2033910.049000_2025-61.pdf"
+     },
+     {
+      "item": "92440",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92440___Documentos%20633%C2%AA%20DICOL%20-%2033910.059754_2025_29.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92441",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANTO – ACS/ES, sem registro na ANS. Processo nº 33910.029011/2025-24.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92442",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS. Processo nº 3910.029234/2025-91.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92443",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da declaração de cumprimento do TCAC 004/2024, celebrado entre a ANS e a operadora CLÍNICA SÃO GABRIEL S/S LTDA. Processo nº 33910.036648/2023-13.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92439",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO da proposta de atualização das Regiões de Saúde utilizadas na regulamentação da saúde suplementar. Processo nº 33910.049000/2025-61.",
+      "n_arquivos": 2
+     },
+     {
+      "id": "92440",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO das propostas normativas que alteram a Resolução Normativa nº 565/2022 e a Instrução Normativa - IN/ANS nº 30/2022. Processo nº 33910.059754/2025-29.",
+      "n_arquivos": 1
+     },
+     {
+      "id": "92438",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO das minutas das atas da 1ª Reunião Extraordinária de Diretoria Colegiada, de 26/01/2026; da 632ª Reunião Ordinária de Diretoria Colegiada, de 30/01/2026; e da 2ª Reunião Extraordinária de Diretoria Colegiada, de 06/02/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "634",
+    "id": 92444,
+    "titulo": "634ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "13/03/2026",
+    "na_lista_oficial": true,
+    "ata": "92444___ATA DA 634ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA REALIZADO EM 13 DE MARÇO DE 2026..pdf",
+    "pauta": "92444___ATUALIZAÇÃO - Pauta da 634ª Reunião.pdf",
+    "n_itens": 8,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92460",
+      "orgao": "DIDES",
+      "assunto": "INFORME sobre comunicação da decisão de indeferimento do pedido de desistência do pleito de reconsideração formulado pelas empresas do grupo HAPVIDA. Processo nº 33910.008275/2025-44.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92461",
+      "orgao": "DIDES",
+      "assunto": "APROVAÇÃO (i) do Relatório de ARR, (ii) da Nota Técnica de Dispensa de AIR e (iii) da autorização para abertura de consulta pública. Unificação e atualização das regras para celebração de contratos entre operadoras e prestadores de saúde, em substituição às Resoluções Normativas - RN nº 503 e RN nº 512. Processo: 33910.000171/2025-91.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92459",
+      "orgao": "DIFIS",
+      "assunto": "INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao segundo ciclo avaliativo da RN nº 623/2024. Processo nº 33910.060457/2025-26.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92462",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO do Acordo de Cooperação Técnica entre a ANS e Defensoria Pública do Estado de Alagoas – DP/AL, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.096580/2017-74.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92463",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO do Acordo de Cooperação Técnica entre a ANS e o Ministério Público do Estado de Pernambuco – MP/PE, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.078630/2017-31.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92464",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO da proposta de Resolução Normativa que dispõe sobre a visita técnico-assistencial, e que revoga a IN/DIPRO nº 53/2017. Processo nº 33910.011545/2023-32.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92465",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre as tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92458",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO das minutas das atas da 3ª Reunião Extraordinária de Diretoria Colegiada, de 13/02/2026; da 633ª Reunião Ordinária de Diretoria Colegiada, de 23/02/2026; e da 4ª Reunião Extraordinária de Diretoria Colegiada, de 03/03/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "635",
+    "id": 92466,
+    "titulo": "635ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "06/04/2026",
+    "na_lista_oficial": true,
+    "ata": "92466___Ata da 635ª DICOL - retificada.pdf",
+    "pauta": "92466___Pauta da 635ª DICOL   (Pauta Aberta) - v3.pdf",
+    "n_itens": 8,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92474",
+      "orgao": "DIDES",
+      "assunto": "INFORME sobre o Edital Complementar do Projeto Cuidado Integral à Gestante e ao Neonato – Parto Adequado. Processo nº 33910.009994/2023-11.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92475",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARANÁ - TJ/PR, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.017005/2022-81.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92476",
+      "orgao": "DIOPE",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da proposta de convocação de Audiência Pública sobre o tema Aprimoramento da supervisão regulatória sobre a governança corporativa no Sistema Unimed. Processo nº 33910.010071/2026-54.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92477",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, realizadas no período de 02/05/2019 a 02/09/2021. Recomendação final para tecnologia em saúde de proposição interna da ANS. UAT nº 77 (Reação em cadeia da polimerase RT-PCR quantitativo para diagnóstico da leucemia mielóide crônica (LMC) e leucemia linfoblástica aguda (LLA)). Processo nº 33910.006470/2024-59.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92478",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF. Aprovação da proposta de Resolução Normativa. Processo nº 33910.000998/2026-86.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92479",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.008417/2026-54.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92480",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 175. Aprovação da proposta de Resolução Normativa. Processo nº 33910.048937/2025-19.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92467",
+      "orgao": "PRESI",
+      "assunto": "Aprovação das minutas das atas da 5ª Reunião Extraordinária de Diretoria Colegiada, de 06/03/2026, e da 634ª Reunião Ordinária de Diretoria Colegiada, de 13/03/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "636",
+    "id": 92484,
+    "titulo": "636ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "24/04/2026",
+    "na_lista_oficial": true,
+    "ata": "92484___ATA DA 636ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92484___Pauta da 636ª DICOL - 24.04.2026  atualizada em 22.04.pdf",
+    "n_itens": 3,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92491",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 190. Processo nº 33910.000998/2026-86.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92492",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre Tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92485",
+      "orgao": "PRESI",
+      "assunto": "Aprovação da minuta da ata da 635ª Reunião Ordinária de Diretoria Colegiada, de 06/04/2026",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "637",
+    "id": 92493,
+    "titulo": "637ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "15/05/2026",
+    "na_lista_oficial": true,
+    "ata": "92493___ATA DA 637ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92493___Pauta da 637ª DICOL  - 15.05.2026 (Pauta Aberta)- versão 4.pdf",
+    "n_itens": 15,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92502",
+      "orgao": "DIDES",
+      "assunto": "INFORME sobre o 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR). Processo nº 33910.014193/2025-39.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92515",
+      "orgao": "DIDES",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da prorrogação do prazo da Consulta Pública nº 170, que trata da proposta de nova RN sobre Contratualização entre operadoras de planos privados de assistência à saúde e prestadores de serviço de atenção à saúde. Processo nº 33910.000171/2025-91.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92509",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de declaração de cumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 1/2024 pela empresa PRESERVE SAÚDE ASSISTÊNCIA MÉDICA LTDA, registro ANS sob o nº 42.295-9. Processo nº 33910.035871/2023-35.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92510",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta -TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS, inscrita no CNPJ nº 03.077.236/0001-14. Processo nº 33910.029234/2025-91.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92511",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta (TCAC) entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANTO – ACS/ES, sem registro na ANS, inscrita no CNPJ nº 14.145.515/0001-94. Processo nº 33910.029011/2025-24.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92507",
+      "orgao": "DIGES",
+      "assunto": "APROVAÇÃO da proposta de Resolução Administrativa que disciplina a Tomada de Contas Especial - atendimento à Auditoria Interna da ANS. Processo nº 33910.040748/2023-36.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92508",
+      "orgao": "DIGES",
+      "assunto": "APROVAÇÃO da proposta de Resolução Regimental que altera a RR nº 21/2022 e seus anexos, em consonância com o Decreto nº 12.934/2026. Processo nº 33910.048330/2025-39.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92505",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO da proposta de interrupção temporária do processamento do Mapeamento do Risco Assistencial em razão de sua reestruturação metodológica. Processo nº 33910.011437/2026-11.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92506",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO da Análise de Resultado Regulatório - ARR referente à Resolução Normativa - RN nº 438/2018 e da abertura de Consulta Pública. Processo nº 33902.461712/2016-62.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92512",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre o recurso administrativo interposto por EDWARDS LIFESCIENCES COMÉRCIO DE PRODUTOS MÉDICO-CIRÚRGICOS LTDA quanto à não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº 160. Processo nº 33910.030610/2025-91.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92513",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA - DELIBERAÇÃO sobre tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92514",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 193. Processo nº 33910.003276/2026-83.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92501",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO das minutas das atas da 6ª Reunião Extraordinária de Diretoria Colegiada, de 17/04/2026, e da 636ª Reunião Ordinária de Diretoria Colegiada, de 24/04/2026.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92503",
+      "orgao": "PRESI",
+      "assunto": "APRECIAÇÃO do Relatório Conclusivo nº 2/2026/COINQ/SECEX/PRESI da ex-operadora ASSOCIAÇÃO AUXILIADORA DAS CLASSES LABORIOSAS. Processo nº 33910.016100/2024-20.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92504",
+      "orgao": "PRESI",
+      "assunto": "APRECIAÇÃO do Relatório Conclusivo nº 3/2026/COINQ/SECEX/PRESI da ex-operadora ASSOCIAÇÃO DE SAÚDE DOS POLICIAIS E BOMBEIROS MILITARES DO ESPÍRITO SANTO - ASPBMES. Processo nº 33910.023676/2023-62.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "638",
+    "id": 92516,
+    "titulo": "638ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "08/06/2026",
+    "na_lista_oficial": true,
+    "ata": "92516___ATA DA 638ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92516___Pauta da 638ª Dicol.pdf",
+    "n_itens": 8,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92527",
+      "orgao": "DIFIS",
+      "assunto": "INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao terceiro ciclo avaliativo da RN nº 623/2024. Processo nº 33910.060457/2025-26.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92529",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARÁ - TJ/PA, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.003953/2021-59.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92528",
+      "orgao": "DIPRO",
+      "assunto": "APRECIAÇÃO da proposta de Resolução Normativa que altera a RN nº 585/2023 e da proposta de Instrução Normativa que altera a IN/ANS nº 28/2022. Sistema de Alteração de Produtos no Registro de Planos de Saúde - RPS/ANS. Processo nº 33910.015974/2026-21.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92532",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública. Apreciação da Nota Técnica de Recomendação Preliminar – NTRF referente à UAT nº 202. Processo nº 33910.012596/2026-24.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92533",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 171. Processo nº 33910.048937/2025-19.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92534",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 183 e nº 196. Processo nº 33910.008417/2026-54",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92535",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92526",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO da minuta da ata da 7ª Reunião Extraordinária de Diretoria Colegiada, de 08/05/2026, e da minuta da ata da 637ª Reunião Ordinária de Diretoria Colegiada, de 15/05/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "639",
+    "id": 92531,
+    "titulo": "639ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "26/06/2026",
+    "na_lista_oficial": true,
+    "ata": "92531___ATA DA 639ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92531___Pauta da 639ª DICOL ATT.pdf",
+    "n_itens": 9,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92546",
+      "orgao": "DIDES",
+      "assunto": "INFORME sobre prorrogação do prazo de inscrição do 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR). Processo nº 33910.014193/2025-39.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92551",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO ESPÍRITO SANTO - TJ/ES, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.269858/2015-77.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92547",
+      "orgao": "DIGES",
+      "assunto": "INFORME acerca da minuta de Portaria que dispõe sobre a utilização da Sala 360. Processo nº 33910.060555/2025-63.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92548",
+      "orgao": "DIGES",
+      "assunto": "APRECIAÇÃO da proposta de Resolução Administrativa que disciplina os critérios e procedimentos a serem observados para avaliação de desempenho de servidores ocupantes de cargo público efetivo durante o estágio probatório, no âmbito da ANS; e estabelece a composição e a forma de funcionamento da Comissão de Avaliação Especial de Desempenho - CAEDE. Processo nº 33910.015898/2025-73.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92552",
+      "orgao": "DIOPE",
+      "assunto": "EXTRAPAUTA – APRECIAÇÃO da proposta de Resolução Administrativa resultado de revisão e de consolidação normativa da Portaria nº 7.113, de 27 de abril de 2015, que dispõe sobre o Comitê Técnico Contábil da Agência Nacional de Saúde Suplementar, e de suas alterações. Processo nº 33902.208313/2014-11.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92549",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre o recurso administrativo interposto por AMGEN BIOTECNOLOGIA DO BRASIL LTDA. quanto a não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº 150. Processo nº 33910.005047/2025-12.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92550",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO dos percentuais de reajuste das Operadoras signatárias dos Termos de Compromisso. Processo nº 33910.010535/2017-31.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92553",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e a UNIVERSIDADE DE SÃO PAULO – USP, no interesse da FACULDADE DE MEDICINA – FMUSP. Processo nº 33910.003733/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92545",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO das minutas das atas da 8ª Reunião Extraordinária de Diretoria Colegiada, de 29/05/2026, e da 638ª Reunião Ordinária de Diretoria Colegiada, de 08/06/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "640",
+    "id": 92560,
+    "titulo": "640ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "17/07/2026",
+    "na_lista_oficial": true,
+    "ata": "92560___ATA DA 640ª REUNIÃO ORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92560___Pauta da 640ª DICOL- 17.07.2026.pdf",
+    "n_itens": 9,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92570",
+      "orgao": "DIDES",
+      "assunto": "EXTRAPAUTA – INFORME sobre prevenção para as consequências sanitárias decorrentes do Fenômeno El Niño – 2026.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92567",
+      "orgao": "DIOPE",
+      "assunto": "APROVAÇÃO de relatório técnico que trata da definição dos seis trimestres que compõem o período para o cálculo do Fator Individual de PEONA SUS e do Fator Teto de PEONA SUS. Processo nº 33910.030581/2020-52.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92574",
+      "orgao": "DIOPE",
+      "assunto": "EXTRAPAUTA – INFORME sobre o início das tratativas para a celebração de Acordo de Cooperação Técnica com a UNIMED DO BRASIL – CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS MÉDICAS. Processo nº 33910.017052/2026-59.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92568",
+      "orgao": "DIPRO",
+      "assunto": "APROVAÇÃO da proposta de alterações normativas – RN nº 585, de 2023 e IN/ANS nº 28, de 2022. Sistema de Alteração de Produtos no Registro de Planos de Saúde - RPS/ANS. Processo nº 33910.015974/2026-21.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92571",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.018676/2026-93.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92572",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.000122/2026-30.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92573",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA – DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs 187, 188 e 198. Processo nº 33910.012010/2026-21.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92566",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO da minuta da ata da 639ª Reunião Ordinária de Diretoria Colegiada, de 26/06/206.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92569",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO da Agenda Regulatória da ANS 2026-2028. Processo nº 33910.027921/2025-72.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "641",
+    "id": 92579,
+    "titulo": "641ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "07/08/2026",
+    "na_lista_oficial": true,
+    "ata": null,
+    "pauta": "92579___Pauta da 641ª DICOL - atualizada.pdf",
+    "n_itens": 4,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92582",
+      "orgao": "DIDES",
+      "assunto": "APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92584",
+      "orgao": "DIPRO",
+      "assunto": "EXTRAPAUTA - DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e&#8239;Audiência Pública. Processo nº 33910.021273/2026-21.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92581",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO da minuta da ata da 640ª Reunião Ordinária de Diretoria Colegiada, de 17/07/206.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92583",
+      "orgao": "PRESI",
+      "assunto": "EXTRAPAUTA – REFERENDO da decisão do Diretor-Presidente que (i) prorroga o Chamamento Público pelo período de quinze dias, com a redução do número de questionamentos obrigatórios, sobre os cartões de desconto, cartões pré-pagos ou serviços correlatos; e (ii) autoriza a possibilidade de que os participantes do chamamento público possam ser diretamente arguidos pela ANS. Processo nº 33910.011904/2026-02",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "642",
+    "id": 92586,
+    "titulo": "642ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "26/08/2026",
+    "na_lista_oficial": true,
+    "ata": null,
+    "pauta": "92586___Pauta da 642ª Reunião Ordinária Att..pdf",
+    "n_itens": 7,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92591",
+      "orgao": "DIDES",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da proposta de alteração dos Anexos I e I-d da Resolução Regimental - RR nº 21, de 26 de janeiro de 2022, no âmbito da Diretoria de Desenvolvimento Setorial. Processo nº 33910.024041/2026-25.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92593",
+      "orgao": "DIDES",
+      "assunto": "APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e recursos no processo administrativo de ressarcimento ao SUS, proposto no projeto de parametrização de dados e análise em lote. Processo nº 33910.022773/2026-81.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92589",
+      "orgao": "DIFIS",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO DO SUL, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.119363/2017-60.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92590",
+      "orgao": "DIFIS",
+      "assunto": "EXTRAPAUTA – APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO TOCANTINS – TJ/TO, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.013588/2022-71.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92594",
+      "orgao": "DIFIS",
+      "assunto": "APROVAÇÃO da proposta de declaração de descumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 002/2024 celebrado entre a ANS e a ORAL GAM ASSISTENCIA ODONTOLÓGICA LTDA. Processo nº 33910.036962/2023-98.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92595",
+      "orgao": "DIFIS",
+      "assunto": "EXTRAPAUTA – INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao ciclo avaliativo da RN nº 623/2024 correspondente aos meses de abril a junho de 2026. Processo nº 33910.060457/2025-26.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92592",
+      "orgao": "PRESI",
+      "assunto": "APROVAÇÃO da minuta da ata da 641ª Reunião Ordinária de Diretoria Colegiada, de 07/08/2026, e da minuta da ata da 9ª Reunião Extraordinária de Diretoria Colegiada, de 21/08/2026.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "643",
+    "id": 92599,
+    "titulo": "643ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "18/09/2026",
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "644",
+    "id": 92600,
+    "titulo": "644ª Reunião Ordinária de Diretoria Colegiada",
+    "data": "18/09/2026",
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "?644",
+    "id": 92601,
+    "titulo": "644 Reunião Ordinária de Diretoria Colegiada",
+    "data": null,
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "?645",
+    "id": 92603,
+    "titulo": "645 Reunião Ordinária de Diretoria Colegiada",
+    "data": null,
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "?646",
+    "id": 92602,
+    "titulo": "646 Reunião Ordinária de Diretoria Colegiada",
+    "data": null,
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "?647",
+    "id": 92604,
+    "titulo": "647 Reunião Ordinária de Diretoria Colegiada",
+    "data": null,
+    "na_lista_oficial": false,
+    "ata": null,
+    "pauta": null,
+    "n_itens": 0,
+    "anexos": [],
+    "itens": []
+   },
+   {
+    "chave": "X01",
+    "id": 92410,
+    "titulo": "1ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "26/01/2026",
+    "na_lista_oficial": true,
+    "ata": "92410___ATA DA 1ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA 26.01.2026.pdf",
+    "pauta": "92410___1ª  Extraordinária  26.01.2026.pdf",
+    "n_itens": 1,
+    "anexos": [
+     {
+      "item": "92411",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92411___Documentos%201%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92411",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à Unidade de Análise Técnica – UAT nº 176. Aprovação da proposta de Resolução Normativa. Processo nº 33910.048937/2025-19.",
+      "n_arquivos": 1
+     }
+    ]
+   },
+   {
+    "chave": "X02",
+    "id": 92419,
+    "titulo": "2ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "06/02/2026",
+    "na_lista_oficial": true,
+    "ata": "92419___2ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA 06.02.2026.pdf",
+    "pauta": "92419___Pauta da 2ª Reunião Extra.pdf",
+    "n_itens": 3,
+    "anexos": [
+     {
+      "item": "92422",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026-86.pptx"
+     },
+     {
+      "item": "92422",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026_86.pdf"
+     },
+     {
+      "item": "92423",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025_82.pdf"
+     },
+     {
+      "item": "92423",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025-82.pptx"
+     },
+     {
+      "item": "92424",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92424___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92422",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Nota Técnica de Recomendação Preliminar – NTRP referente às UATs nº 186, 189 e 190. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.000998/2026-86",
+      "n_arquivos": 2
+     },
+     {
+      "id": "92423",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 172. Aprovação da proposta de Resolução Normativa. Processo nº 33910.041022/2025-82.",
+      "n_arquivos": 2
+     },
+     {
+      "id": "92424",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO da proposta de suspensão do prazo para conclusão da análise referente à UAT nº 171. Inclisirana para o tratamento da hipercolesterolemia primária ou dislipidemia mista em pacientes com doença aterosclerótica. Processo nº 33910.048937/2025-19.",
+      "n_arquivos": 1
+     }
+    ]
+   },
+   {
+    "chave": "X03",
+    "id": 92436,
+    "titulo": "3ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "13/02/2026",
+    "na_lista_oficial": true,
+    "ata": "92436___ATA DA 3ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92436___Pauta da 3ª Reunião Extraordinária.pdf",
+    "n_itens": 1,
+    "anexos": [
+     {
+      "item": "92435",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025-71.pptx"
+     },
+     {
+      "item": "92435",
+      "orgao": "DIPRO",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Documentos%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025_71.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92435",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Aprovação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 179 e nº 182. Processo nº 33910.058550/2025-71.",
+      "n_arquivos": 2
+     }
+    ]
+   },
+   {
+    "chave": "X04",
+    "id": 92449,
+    "titulo": "4ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "03/03/2026",
+    "na_lista_oficial": true,
+    "ata": "92449___ATA DA 4ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA REALIZADA EM 03 DE MARÇO DE 2026..pdf",
+    "pauta": "92449___Pauta da 4ª Reunião Extraordinária.pdf",
+    "n_itens": 1,
+    "anexos": [
+     {
+      "item": "92448",
+      "orgao": "DIFIS",
+      "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92448___Documentos%204%C2%AA%20Extraordin%C3%A1ria%20-%2033910.005263_2026_49.pdf"
+     }
+    ],
+    "itens": [
+     {
+      "id": "92448",
+      "orgao": "DIFIS",
+      "assunto": "ITEM DIFIS – APROVAÇÃO da tomada de medidas fiscalizatórias excepcionais em razão de calamidade pública na região de Juiz de Fora/MG, Matias Barbosa/MG e Ubá/MG. Processo nº 33910.005263/2026-49.",
+      "n_arquivos": 1
+     }
+    ]
+   },
+   {
+    "chave": "X05",
+    "id": 92452,
+    "titulo": "5ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "06/03/2026",
+    "na_lista_oficial": true,
+    "ata": "92452___ATA DA 5ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA REALIZADA EM 06 DE MARÇO DE 2026.pdf",
+    "pauta": "92452___Pauta da 5ª Reunião Extraordinária.pdf",
+    "n_itens": 2,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92450",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Nota Técnica de Recomendação Preliminar – NTRP referente à UAT nº 193. Processo nº 33910.003276/2026- 83.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92451",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 178. Processo nº 33910.058550/2025-71.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "X06",
+    "id": 92488,
+    "titulo": "6ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "17/04/2026",
+    "na_lista_oficial": true,
+    "ata": "92488___ATA DA 6ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92488___Pauta da 6ª  Extraordinária de Diretoria Colegiada -.pdf",
+    "n_itens": 1,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92489",
+      "orgao": "PRESI",
+      "assunto": "DELIBERAÇÃO acerca dos cartões de desconto, cartões pré-pagos ou serviços correlatos. Processo nº 33910.011904/2026-02.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "X07",
+    "id": 92495,
+    "titulo": "7ª Reunião Extraordinária de Diretoria Colegiada",
+    "data": "08/05/2026",
+    "na_lista_oficial": true,
+    "ata": "92495___ATA DA 7ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92495___Pauta da 7ª Dicol Extraordinária de Diretoria Colegiada - 08.05.2026.pdf",
+    "n_itens": 2,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92496",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.012010/2026-21.",
+      "n_arquivos": 0
+     },
+     {
+      "id": "92497",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo nº 33910.006470/2024-59.",
+      "n_arquivos": 0
+     }
+    ]
+   },
+   {
+    "chave": "X08",
+    "id": 92517,
+    "titulo": "8ª Reunião Extraodinária de Diretoria Colegiada",
+    "data": "29/05/2026",
+    "na_lista_oficial": true,
+    "ata": "92517___ATA DA 8ª REUNIÃO EXTRAORDINÁRIA DE DIRETORIA COLEGIADA.pdf",
+    "pauta": "92517___Pauta da 8ª Reunião Extraordinária de Diretoria Colegiada.pdf",
+    "n_itens": 1,
+    "anexos": [],
+    "itens": [
+     {
+      "id": "92519",
+      "orgao": "DIPRO",
+      "assunto": "DELIBERAÇÃO sobre o reajuste para as contraprestações pecuniárias dos planos privados de assistência suplementar à saúde, individuais e familiares regulamentados de assistência médico-hospitalar, no período compreendido entre 1º de maio de 2026 e 30 de abril de 2027. Processo nº 33910.010285/2026-21.",
+      "n_arquivos": 0
+     }
+    ]
+   }
+  ],
+  "processos_sancionadores": [
+   {
+    "id": 92380,
+    "titulo": "632ª PROCESSOS SANCIONADORES",
+    "data": "30/01/2026",
+    "n_itens": 19,
+    "sem_documento": true
+   },
+   {
+    "id": 92421,
+    "titulo": "633ª PROCESSOS SANCIONADORES",
+    "data": "23/02/2026",
+    "n_itens": 10,
+    "sem_documento": true
+   },
+   {
+    "id": 92445,
+    "titulo": "634ª PROCESSOS SANCIONADORES",
+    "data": "13/03/2026",
+    "n_itens": 7,
+    "sem_documento": true
+   },
+   {
+    "id": 92468,
+    "titulo": "635ª PROCESSOS SANCIONADORES",
+    "data": "06/04/2026",
+    "n_itens": 3,
+    "sem_documento": true
+   },
+   {
+    "id": 92486,
+    "titulo": "636ª Processos Sancionadores",
+    "data": "24/04/2026",
+    "n_itens": 4,
+    "sem_documento": true
+   },
+   {
+    "id": 92494,
+    "titulo": "637ª Processos Sancionadores",
+    "data": "15/05/2026",
+    "n_itens": 2,
+    "sem_documento": true
+   },
+   {
+    "id": 92518,
+    "titulo": "638ª Processos Sancionadores",
+    "data": "08/06/2026",
+    "n_itens": 7,
+    "sem_documento": true
+   },
+   {
+    "id": 92530,
+    "titulo": "639ª Processos Sancionadores",
+    "data": "26/06/2026",
+    "n_itens": 0,
+    "sem_documento": true
+   },
+   {
+    "id": 92561,
+    "titulo": "640ª Processos Sancionadores",
+    "data": "17/07/2026",
+    "n_itens": 9,
+    "sem_documento": true
+   },
+   {
+    "id": 92580,
+    "titulo": "641ª Processos Sancionadores",
+    "data": "07/08/2026",
+    "n_itens": 4,
+    "sem_documento": true
+   },
+   {
+    "id": 92587,
+    "titulo": "642ª Processos Sancionadores",
+    "data": "28/08/2026",
+    "n_itens": 1,
+    "sem_documento": true
+   }
+  ],
+  "calendario_legado": "https://www.ans.gov.br/aans/transparencia-institucional/reunioes-da-diretoria-ans (calendario estatico ate 2021: nao cobre 2026; datas vem do campo DT_REUNIAO_REALIZADA da API, conferidas contra pautas/atas)"
+ },
  "paginas": [
   {
    "url": "https://componentes-portal.ans.gov.br/link/listadicol",
-   "http": 0,
-   "estado": "REDE",
-   "bytes": 0
+   "http": 200,
+   "estado": "OK",
+   "bytes": 8599,
+   "arquivo_local": "fonte/ans/html/listadicol.html"
   },
   {
    "url": "https://www.ans.gov.br/aans/transparencia-institucional/reunioes-da-diretoria-ans",
-   "http": 0,
-   "estado": "REDE",
-   "bytes": 0
+   "http": 200,
+   "estado": "OK",
+   "bytes": 55530,
+   "arquivo_local": "fonte/ans/html/reunioes-da-diretoria-ans.html"
   },
   {
    "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/audiencias-publicas/audiencias-publicas-realizadas-1/audiencias-publicas-realizadas",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/reunioes-da-diretoria-da-ans",
@@ -115,13 +1360,13 @@
    "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/reunioes-da-diretoria-da-ans/historico-de-reunioes-da-diretoria-ans",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "OK",
-   "bytes": 179304,
+   "bytes": 179298,
    "arquivo_local": "fonte/ans/html/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026.html"
   },
   {
@@ -232,7 +1477,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/641a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 179678,
+   "bytes": 179672,
    "arquivo_local": "fonte/ans/html/641a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -246,7 +1491,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/643a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 178911,
+   "bytes": 178917,
    "arquivo_local": "fonte/ans/html/643a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -380,7 +1625,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-638a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 178697,
+   "bytes": 178691,
    "arquivo_local": "fonte/ans/html/deliberacoes-da-638a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -393,7 +1638,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-640a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 181692,
+   "bytes": 181686,
    "arquivo_local": "fonte/ans/html/deliberacoes-da-640a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -414,7 +1659,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-643a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 181484,
+   "bytes": 181528,
    "arquivo_local": "fonte/ans/html/deliberacoes-da-643a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -457,7 +1702,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/diretoria-colegiada-da-ans-tem-nova-composicao",
    "http": 200,
    "estado": "OK",
-   "bytes": 180248,
+   "bytes": 180242,
    "arquivo_local": "fonte/ans/html/diretoria-colegiada-da-ans-tem-nova-composicao.html"
   },
   {
@@ -584,7 +1829,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/deliberacoes-da-638a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 178697,
+   "bytes": 178691,
    "arquivo_local": "fonte/ans/html/deliberacoes-da-638a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -657,13 +1902,13 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/1a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/2a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/3a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -675,7 +1920,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/4a-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/4a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -687,7 +1932,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/5a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/632a-reuniao-da-diretoria-colegiada",
@@ -699,7 +1944,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/633a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/634a-reuniao-da-diretoria-colegiada",
@@ -777,7 +2022,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/6a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/7a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -789,7 +2034,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/8a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/9a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -855,7 +2100,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-632a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-633a-reuniao-da-diretoria-colegiada",
@@ -867,7 +2112,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-634a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-635a-reuniao-da-diretoria-colegiada",
@@ -962,6 +2207,454 @@
   }
  ],
  "pdfs": [
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92411___Documentos%201%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X01_92411",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 263952
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Apresenta%C3%A7%C3%A3o%20DIOPE%20-%20632%C2%AA%20DICOL%20-%2033910.057923_2025-96.pptx",
+   "tipo": "anexo_dicol",
+   "ref": "632_92413",
+   "http": 200,
+   "estado": "NAO_PDF",
+   "bytes": 133476
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Documentos%20632%C2%AA%20DICOL%20-%2033910.057923_2025_96.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92413",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 242717
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92414___Documentos%20632%C2%AA%20DICOL%20-%2033902.010473_2017_67.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92414",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 493685
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92415___Documentos%20632%C2%AA%20DICOL%20-%2033910.013611_2022_28.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92415",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 497230
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92416___Documentos%20632%C2%AA%20DICOL%20-%2033910.014193_2025_39.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92416",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 566285
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92417___Documentos%20632%C2%AA%20DICOL%20-%2033910.031840_2025_77.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92417",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 115895
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92418___Documentos%20632%C2%AA%20DICOL%20-%2033910.000122_2026_30.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "632_92418",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 389981
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026-86.pptx",
+   "tipo": "anexo_dicol",
+   "ref": "X02_92422",
+   "http": 200,
+   "estado": "NAO_PDF",
+   "bytes": 382941
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026_86.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X02_92422",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 340619
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025-82.pptx",
+   "tipo": "anexo_dicol",
+   "ref": "X02_92423",
+   "http": 200,
+   "estado": "NAO_PDF",
+   "bytes": 297386
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025_82.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X02_92423",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 278833
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92424___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X02_92424",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 195969
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025-71.pptx",
+   "tipo": "anexo_dicol",
+   "ref": "X03_92435",
+   "http": 200,
+   "estado": "NAO_PDF",
+   "bytes": 296833
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Documentos%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025_71.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X03_92435",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 176302
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%20633%C2%AA%20DICOL%20-%2033910.049000_2025-61.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "633_92439",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 1316499
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Documentos%20633%C2%AA%20DICOL%20-%2033910.049000_2025_61.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "633_92439",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 986646
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92440___Documentos%20633%C2%AA%20DICOL%20-%2033910.059754_2025_29.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "633_92440",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 375691
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92443___Documentos%20633%C2%AA%20DICOL%20-%2033910.036648_2023_13.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "633_92443",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 125340
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92448___Documentos%204%C2%AA%20Extraordin%C3%A1ria%20-%2033910.005263_2026_49.pdf",
+   "tipo": "anexo_dicol",
+   "ref": "X04_92448",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 125248
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92399___ATA%20DA%20632%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2030.01.2026.pdf",
+   "tipo": "ata_dicol",
+   "ref": "632",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 355021
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92410___ATA%20DA%201%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2026.01.2026.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X01",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 65028
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92419___2%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2006.02.2026.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X02",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 65564
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92420___ATA%20DA%20633%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2023%20DE%20FEVEREIRO%20DE%202026..pdf",
+   "tipo": "ata_dicol",
+   "ref": "633",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 295326
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92436___ATA%20DA%203%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X03",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 65231
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92444___ATA%20DA%20634%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADO%20EM%2013%20DE%20MAR%C3%87O%20DE%202026..pdf",
+   "tipo": "ata_dicol",
+   "ref": "634",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 255152
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92449___ATA%20DA%204%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2003%20DE%20MAR%C3%87O%20DE%202026..pdf",
+   "tipo": "ata_dicol",
+   "ref": "X04",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 80606
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92452___ATA%20DA%205%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2006%20DE%20MAR%C3%87O%20DE%202026.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X05",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 67241
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92466___Ata%20da%20635%C2%AA%20DICOL%20-%20retificada.pdf",
+   "tipo": "ata_dicol",
+   "ref": "635",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 319712
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92484___ATA%20DA%20636%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "636",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 260516
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92488___ATA%20DA%206%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X06",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 65127
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92493___ATA%20DA%20637%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "637",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 266070
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92495___ATA%20DA%207%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X07",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 62136
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92516___ATA%20DA%20638%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "638",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 253904
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92517___ATA%20DA%208%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "X08",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 55514
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92531___ATA%20DA%20639%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "639",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 239842
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92560___ATA%20DA%20640%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+   "tipo": "ata_dicol",
+   "ref": "640",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 381088
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92399___Pauta%20da%20632%C2%AA%20DICOL%20Ordin%C3%A1ria.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "632",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 237196
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92410___1%C2%AA%20%20Extraordin%C3%A1ria%20%2026.01.2026.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X01",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 138435
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92419___Pauta%20da%202%C2%AA%20Reuni%C3%A3o%20Extra.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X02",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 143403
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92420___Pauta%20da%20633%C2%AA%20DICOL.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "633",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 448324
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92436___Pauta%20da%203%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X03",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 139652
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92444___ATUALIZA%C3%87%C3%83O%20-%20Pauta%20da%20634%C2%AA%20Reuni%C3%A3o.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "634",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 199032
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92449___Pauta%20da%204%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X04",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 138525
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92452___Pauta%20da%205%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X05",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 140225
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92466___Pauta%20da%20635%C2%AA%20DICOL%20%20%20%28Pauta%20Aberta%29%20-%20v3.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "635",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 211267
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92484___Pauta%20da%20636%C2%AA%20DICOL%20-%2024.04.2026%20%20atualizada%20em%2022.04.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "636",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 169356
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92488___Pauta%20da%206%C2%AA%20%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada%20-.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X06",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 127697
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92493___Pauta%20da%20637%C2%AA%20DICOL%20%20-%2015.05.2026%20%28Pauta%20Aberta%29-%20vers%C3%A3o%204.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "637",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 186869
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92495___Pauta%20da%207%C2%AA%20Dicol%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada%20-%2008.05.2026.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X07",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 136054
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92516___Pauta%20da%20638%C2%AA%20Dicol.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "638",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 172275
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92517___Pauta%20da%208%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "X08",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 133725
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92531___Pauta%20da%20639%C2%AA%20DICOL%20ATT.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "639",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 175713
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92560___Pauta%20da%20640%C2%AA%20DICOL-%2017.07.2026.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "640",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 203843
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92579___Pauta%20da%20641%C2%AA%20DICOL%20-%20atualizada.pdf",
+   "tipo": "pauta_dicol",
+   "ref": "641",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 182518
+  },
+  {
+   "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92586___Pauta%20da%20642%C2%AA%20Reuni%C3%A3o%20Ordin%C3%A1ria%20Att..pdf",
+   "tipo": "pauta_dicol",
+   "ref": "642",
+   "http": 200,
+   "estado": "OK",
+   "bytes": 205719
+  },
   {
    "url": "https://www.gov.br/ans/pt-br/arquivos/acesso-a-informacao/participacao-da-sociedade/audiencias-publicas/60/SEI_35064558_Extrato_da_Ata_de_Reuniao___DICOL.pdf",
    "tipo": "extrato",

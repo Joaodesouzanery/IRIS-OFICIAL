@@ -40,11 +40,11 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANEEL | Votos: nominal + inferido + REVISAR = total | 5023 | 5023 | OK | {'inferido': 3423, 'nominal': 1588, 'REVISAR': 12} |
 | ANEEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (divergência de data, buraco, truncad, sem pedinte) | 0 | 0 | OK | 4 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANEEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 87 | 87 | OK |  |
-| ANA | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 0 | 0 | OK | 0 itens sem resultado publicado/informe |
+| ANA | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 61 | 61 | OK | 0 itens sem resultado publicado/informe |
 | ANA | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANA | Votos: nominal + inferido + REVISAR = total | 0 | 0 | OK | {} |
-| ANA | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (NÃO baixado, bloqueado pela fonte) | 0 | 0 | OK | 1 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 29 | 29 | OK |  |
+| ANA | Votos: nominal + inferido + REVISAR = total | 244 | 244 | OK | {'inferido': 166, 'nominal': 78} |
+| ANA | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (NÃO baixado, bloqueado pela fonte) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
+| ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 12 | 12 | OK |  |
 | ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 39 | 39 | OK | 46 itens sem resultado publicado/informe |
 | ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANS | Votos: nominal + inferido + REVISAR = total | 195 | 195 | OK | {'inferido': 189, 'REVISAR': 5, 'nominal': 1} |
@@ -56,8 +56,8 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANTAQ | Votos no JSON × linhas na aba Votos | 3413 | 3413 | OK |  |
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
 | ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5023 | 5023 | OK |  |
-| ANA | Votos no JSON × linhas na aba Votos | 0 | 0 | OK |  |
+| ANA | Votos no JSON × linhas na aba Votos | 244 | 244 | OK |  |
 | ANS | Votos no JSON × linhas na aba Votos | 195 | 195 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 522 | 522 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 505 | 505 | OK | sem URL: [] |

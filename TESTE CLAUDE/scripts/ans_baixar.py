@@ -11,6 +11,13 @@ def curl(u, tries=8):
         if r.returncode == 0 and r.stdout: return r.stdout
         time.sleep(1.2 * (i + 1))
     return b''
+def extrai_pymupdf(f, t):
+    """pdftotext PERDE a ligadura 'ti' dos PDFs SEI da ANS (Execu vo, norma va); o PyMuPDF a devolve como um digito 4-9 entre letras ('Execu9vo', 'administra7vo'): repara e normaliza ligaduras fi/fl."""
+    import pymupdf, unicodedata
+    tx = ''.join(p.get_text() for p in pymupdf.open(f))
+    tx = ''.join(unicodedata.normalize('NFKC', c) if '\ufb00' <= c <= '\ufb06' else c for c in tx)   # so ligaduras fi/fl/ff (NFKC geral destruiria ª/º)
+    tx = re.sub(r'(?<=[A-Za-zÀ-ÿ])[4-9](?=[A-Za-zÀ-ÿ])', 'ti', tx)   # a fonte troca por documento: 9, 7, 6, 5, 4 (nunca ocorrem digitos no meio de palavra na prosa)
+    open(t, 'w', encoding='utf8').write(tx)
 def nome(u): return re.sub(r'[^A-Za-z0-9._-]', '_', u.split('/')[-1])
 def baixa(p):
     f = f"{dest}/pdf/{p['tipo']}_{p['ref']}__{nome(p['url'])}"
@@ -20,7 +27,7 @@ def baixa(p):
     ok = os.path.exists(f) and open(f, 'rb').read(4) == b'%PDF'
     t = None
     if ok:
-        t = f"{txt}/{os.path.basename(f)[:-4]}.txt"; subprocess.run(['pdftotext', '-layout', f, t], check=False)
+        t = f"{txt}/{os.path.basename(f)[:-4]}.txt"; (extrai_pymupdf(f, t) if p['tipo'] in ('ata_dicol', 'pauta_dicol', 'anexo_dicol') else subprocess.run(['pdftotext', '-layout', f, t], check=False))
         if os.path.exists(t) and os.path.getsize(t) < 200: t = t + ' (VAZIO: PDF imagem?)'
     return dict(url=p['url'], tipo=p['tipo'], ref=p['ref'], formato='pdf', ok=ok, arquivo_local=f if ok else None, texto=t,
                 sha256=hashlib.sha256(open(f, 'rb').read()).hexdigest() if ok else None, bytes=os.path.getsize(f) if ok else 0)

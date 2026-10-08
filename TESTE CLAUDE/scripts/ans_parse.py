@@ -191,8 +191,206 @@ for ref, m in paginas.items():
     mm = re.match(r'^deliberacoes-da-(\d+)a-reuniao-da-diretoria-colegiada', ref)
     if mm and 'sobre-ans' not in m['url'].split('/ans/pt-br/')[1][:0]: pg_por_reuniao.setdefault(mm[1], m)
 ex_por_reuniao = extratos
+# ---------- ATAS OFICIAIS (DICOL, modulo com_dicol do www.ans.gov.br): reunioes 632..640 e extraordinarias 1..8
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import ans_ata
+API = inv.get('dicol_api', {})
+ATAS = {nref(m['ref']): m for m in man if m['ok'] and m['tipo'] == 'ata_dicol' and m.get('texto')}
+PAUTAS_API = {nref(m['ref']): m for m in man if m['ok'] and m['tipo'] == 'pauta_dicol' and m.get('texto')}
+API_REUN = {r['chave']: r for r in API.get('reunioes', []) if not r['chave'].startswith('?')}
+PROC_RX = re.compile(r'\d{5}\.\d{6}/\d{4}-\d{2}')
+AREAS = 'DIGES|DIOPE|DIPRO|DIFIS|DIDES|PRESI'
+CARGO_AREA = [('Fiscaliza', 'DIFIS'), ('Produtos', 'DIPRO'), ('Operadoras', 'DIOPE'), ('Gest', 'DIGES'), ('Desenvolvimento', 'DIDES'), ('Presidente', 'PRESI')]
+# votos escritos (anexos "Documentos NNNª DICOL - <processo>"): quem assina o voto = relator REAL quando o documento nomeia o diretor
+ANEXO_VOTO = {}   # (chave_reuniao, processo) -> dict(nome|cargo, voto_no, url, arquivo)
+_item_proc = {}
+for r_ in API.get('reunioes', []):
+    for it_ in r_.get('itens', []):
+        ps_ = PROC_RX.findall(it_['assunto'])
+        if ps_: _item_proc[(r_['chave'], it_['id'])] = ps_[0]
+for m in man:
+    if m['ok'] and m['tipo'] == 'anexo_dicol' and m.get('texto') and m['formato'] == 'pdf':
+        k_, _, iid = m['ref'].partition('_'); proc_ = _item_proc.get((k_, iid))
+        tx_ = open(m['texto'].split(' (VAZIO')[0], encoding='utf8').read()
+        h_ = re.search(r'(?m)^DIRETORA?\s*\n\s*(.+)$', tx_); vn_ = re.search(r'VOTO\s+N[oº]\s*([\w./-]+)', tx_[:600])
+        if proc_ and h_ and vn_:
+            ANEXO_VOTO.setdefault((k_, proc_), dict(quem=h_[1].strip(), voto_no=vn_[1], url=m['url'], arquivo=m['arquivo_local']))
+def area_do_voto(txt, area_ata):
+    """Area do voto citada na PROPRIA ata: 'voto condutor da DIGES', 'Voto nº 84/2026/DIPRO', 'VOTO Nº 4/2026/.../DIOPE'; senao 'Area Responsavel'."""
+    m = re.search(r'(?i)(?:voto|despacho)(?: da)?(?: condutor)?\s+d[ao]\s+(' + AREAS + r')\b', txt)
+    if m: return m[1].upper(), 'voto condutor da ' + m[1].upper()
+    m = re.search(r'(?i)(?:voto|despacho)\s+n\s?[ºo°]?\s*:?\s*[\w./ -]*?/(' + AREAS + r')\b', txt)
+    if m: return m[1].upper(), 'numero do voto'
+    return (area_ata if re.fullmatch(AREAS, area_ata or '') else ''), 'área responsável da pauta'
+def acha_impedidos(dec):
+    m = re.search(r'(?i)impedid[oa]s?\s+de\s+votar\s+(.{0,330})', dec)
+    if not m: return [], ''
+    seg = m[1]; cut = re.search(r'(?i),?\s+(?:o|os)\s+(?:voto|despacho)\b|\.\s+[A-ZÁ]|Processo', seg); seg = seg[:cut.start()] if cut else seg
+    return nomes_em(seg), re.sub(r'\s+', ' ', seg).strip()
+def romanos(dec):
+    p = re.split(r'\(\s?(i{1,3}|iv|vi{0,3}|ix|xi{0,3}|xiv|xv)\s?\)', dec)
+    return [(p[i], p[i + 1].strip(' ;.')) for i in range(1, len(p) - 1, 2)] if len(p) > 2 else []
+def classifica_ata(it):
+    d = it['decisao']; a = it.get('assunto', '')
+    if re.match(r'(?i)item retirado de pauta pel[oa]\s+', d): return 'Retirada de pauta'
+    if re.search(r'(?i)suspensa pelo pedido de (vistas?|dilig)', d): return 'Vista'
+    if re.match(r'(?i)somente informe\.?$', d.strip()) or (re.match(r'(?i)somente informe', d) and not re.search(r'(?i)aprov|deliber', d)): return 'Informe'
+    if re.match(r'(?i)informe', it.get('secao', '').split(') ', 1)[-1]) and not re.search(r'(?i)aprov|deliberou', d): return 'Informe'   # seção de informe cuja decisão é só recomendação/encaminhamento (sem votação)
+    if re.match(r'(?i)aprova[çc][ãa]o d(a|as) minutas? d(a|as) atas?', a.strip()): return 'Aprovação de ata'
+    return 'Deliberação'
+def resultado_ata(tipo, d, imp_txt):
+    if tipo == 'Retirada de pauta': return re.sub(r'\s*Processo.*$', '', d).strip().rstrip('.').upper().replace('ITEM RETIRADO DE PAUTA', 'RETIRADO DE PAUTA')
+    if tipo == 'Vista': return 'SOBRESTADO — ' + re.sub(r'^Deliberação suspensa pel[oa]\s+', '', d).rstrip('.')
+    if tipo == 'Informe': return 'Informe (sem deliberação nem votação)' + ('' if re.match(r'(?i)somente informe', d) else ' — registrado na ata: ' + d[:200])
+    mm = re.match(r'(?i)(aprovad[oa]s?\s+por\s+unanimidade)(?:,\s*impedid[oa]s?\s+de\s+votar[^,]*?,)?[,:]?\s*(.*)', d)
+    if mm:
+        resto = re.sub(r'(?i)^(?:o|a|os|as)\s+', '', mm[2]).strip()
+        r = 'Aprovado por unanimidade' + (' — ' + resto[:300] if resto else '')
+        return r + (f' [impedido(s) de votar: {imp_txt[:120]}]' if imp_txt and 'mpedid' not in r else '')
+    return d[:300]
+def processa_ata(ref):
+    m = ATAS[ref]; A = ans_ata.parse_ata(open(m['texto'], encoding='utf8').read()); cab = A['cabecalho']
+    api = API_REUN.get(ref, {}); url_ata = m['url']; mi = mid(ref)
+    hd = re.search(r'REALIZADA EM (\d+) DE (\w+) DE (\d{4})', cab, re.I)
+    d_hd = '%s-%02d-%02d' % (hd[3], MESES[hd[2].upper()], int(hd[1])) if hd else ''
+    ds = api.get('data') or ''; d_api = f'{ds[6:]}-{ds[3:5]}-{ds[:2]}' if ds else ''
+    d = d_api or d_hd
+    if d_hd and d_api and d_hd != d_api: cal_anom.append((ref, f'cabeçalho da ata diz {d_hd}, API oficial diz {d_api} (usada a da API)', 'ata ' + ref))
+    pres_s = re.search(r'contou com a presença (.*?)(?:\. Ausente|\. A reunião foi)', cab); aus_s = re.search(r'Ausente[s]? (?:o|a|os|as) (.*?)(?:\. A reunião foi|$)', cab)
+    presentes = nomes_em(pres_s[1]) if pres_s else []
+    pr_ = re.search(r'presidida pel[oa] Diretor[a]?-?\s?Presidente (.*?) e contou', cab)
+    if pr_ and curto2nome(pr_[1]) and curto2nome(pr_[1]) not in presentes: presentes.insert(0, curto2nome(pr_[1]))
+    ausentes = nomes_em(aus_s[1]) if aus_s else []; mot_aus = re.sub(r'.*?,\s*', '', aus_s[1], count=1) if aus_s else ''
+    for mb in membros(d):   # membro do colegiado na data que a ata nem lista como presente nem como ausente
+        if mb not in presentes and mb not in ausentes: ausentes.append(mb)
+    fontes = [{'tipo': 'ata (DICOL)', 'url': url_ata}] + ([{'tipo': 'pauta (DICOL)', 'url': PAUTAS_API[ref]['url']}] if ref in PAUTAS_API else [])
+    obs = [f'ata oficial DICOL (sha256 {m["sha256"][:12]}…)', 'presença nominal (cabeçalho da ata)']
+    if aus_s: obs.append(f'ausência declarada na ata: {", ".join(ausentes)} ({mot_aus or "sem motivo"})')
+    reunioes.append(dict(reuniao=mi, titulo=titulo(ref, d), tipo='Extraordinária' if ref.startswith('X') else 'Ordinária', data=d, presentes=presentes, ausentes=ausentes, obs='; '.join(obs),
+                         situacao='Realizada (ata oficial publicada)', evidencia_data=[f'API oficial DICOL ({ds})' + (f'; cabeçalho da ata ({d_hd})' if d_hd else '')], fontes=fontes))
+    ds_ref = []; dir_aus = [x for x in ausentes if x in (nomes_em(aus_s[1]) if aus_s else [])]
+    def mk_voto(x, tipo, imp=(), ressalva=(), pedinte=None, retirou=None, modo=''):
+        if tipo == 'Informe': return
+        rel = x['relator']; rel_prov = x.get('_rel_prov', 'inferido')
+        for dr in presentes:
+            mot = ''
+            if tipo == 'Retirada de pauta': v, pv, mot = 'SEM VOTO (retirado de pauta)', 'nominal', f'ata: item retirado de pauta por {retirou or "diretor não identificado"}'
+            elif tipo == 'Vista':
+                if dr == pedinte: v, pv, mot = 'PEDIU VISTA', 'nominal', 'ata: deliberação suspensa a pedido deste diretor'
+                elif dr == rel: v, pv, mot = 'RELATOR (vista concedida; sem voto proferido na ata)', rel_prov, 'relator = diretor da área do voto (a ata não usa o termo relator)'
+                else: v, pv, mot = 'SEM VOTO AINDA (vista pendente)', 'inferido', 'deliberação suspensa; os demais não votaram na reunião'
+            elif modo == 'unanimidade':
+                if dr in imp: v, pv, mot = 'IMPEDIDO (por ter proferido a decisão recorrida / participado do processo)', 'nominal', 'ata: "impedido de votar" — ' + x.get('_imp_txt', '')[:140]
+                elif dr == rel and tipo == 'Deliberação': v, pv, mot = 'RELATOR', rel_prov, x['_rel_mot']
+                elif dr in ressalva: v, pv, mot = 'ACOMPANHOU (com ressalvas)', 'nominal', 'ata: aprovado por unanimidade; o diretor apresentou ressalvas (registradas na ata)'
+                else: v, pv, mot = 'ACOMPANHOU', 'inferido', 'ata diz apenas "aprovado por unanimidade" (voto individual não detalhado)' + (' dos não impedidos' if imp else '')
+            elif modo == 'apreciado': v, pv, mot = 'SEM VOTO (apreciação, sem votação)', 'nominal', 'ata: "Apreciado" — o colegiado tomou conhecimento, sem votação declarada'
+            else: v, pv, mot = 'SEM VOTO REGISTRADO', 'REVISAR', 'a ata registra a decisão da Diretoria Colegiada sem declarar votação nem unanimidade'
+            votos.append(dict(reuniao=mi, data=d, processo=x['processo'], deliberacao=x['deliberacao'], diretor=dr, voto=v, proveniencia=pv, voto_por_parte='', motivo=mot))
+        if True:
+            for dr in ausentes:
+                votos.append(dict(reuniao=mi, data=d, processo=x['processo'], deliberacao=x['deliberacao'], diretor=dr, voto='AUSENTE', proveniencia='nominal',
+                                  voto_por_parte='', motivo='ata: ' + (f'ausente ({mot_aus})' if dr in dir_aus else 'membro do colegiado na data não listado entre os presentes')))
+    def relator_de(area, tipo, proc, txt, origem_area):
+        """(nome, prov, motivo): anexo-voto que NOMEIA o diretor => nominal; cargo no anexo ou area do voto citada na ata => inferido (a ata nao diz 'relator')."""
+        if tipo not in ('Deliberação', 'Vista') or not area or area == 'DICOL': return '', '', ''
+        av = ANEXO_VOTO.get((ref, proc)) if proc else None
+        if av:
+            nm = next((n for k_, n in CHAVES if k_.lower() in av['quem'].lower()), None)
+            if nm: return nm, 'nominal', f'voto escrito (anexo da pauta, VOTO nº {av["voto_no"]}) assinado por {nm}'
+            ar_ = next((a_ for k_, a_ in CARGO_AREA if k_ in av['quem']), area); dn = diretor_area(ar_, d)
+            if dn: return dn, 'inferido', f'voto escrito (anexo, VOTO nº {av["voto_no"]}) é do cargo "{av["quem"]}"; titular na data = {dn}'
+        dn = diretor_area(area, d)
+        return (dn or ''), 'inferido', f'a ata não nomeia relator; autor do voto = {origem_area} ({area}) → diretor da área na data ({dn})'
+    # ---- itens das sessoes (aberta/reservada)
+    n_aberta = 0
+    for it in A['itens']:
+        if 'erro' in it: pend.append(('ANS', f'{titulo(ref, d)}: item de ata ilegível', d, 'falha de leitura', it['texto'][:200], 'formato fora do padrão', 'ler manualmente a ata', url_ata)); continue
+        dec = re.sub(r'\s+', ' ', it['decisao']); tipo = classifica_ata(it); sess = 'Reservada' if re.search('(?i)reservada', it['secao']) else 'Aberta'
+        if sess == 'Aberta' and tipo != 'Informe': n_aberta += 1
+        area_v, orig = area_do_voto(dec + ' ' + it['assunto'], it['area'])
+        imp, imp_txt = acha_impedidos(dec); ress = []
+        mr = re.search(r'((?:As|Os)?\s*Diretor\w*\s+.*?)\s+apresentaram ressalvas', dec)
+        if mr: ress = nomes_em(mr[1])
+        retirou = None; pedinte = None
+        if tipo == 'Retirada de pauta':
+            mm = re.match(r'(?i)item retirado de pauta pel[oa]\s+(.*?)\.', dec); retirou = curto2nome(mm[1]) if mm else None
+        if tipo == 'Vista':
+            mm = re.search(r'pedido de (?:vistas?|diligência).*?\b(?:do|da|feito pel[oa])\s+(?:Diretor\w*(?:-Presidente)?)\s+(.*?)\.', dec); pedinte = curto2nome(mm[1]) if mm else None
+        modo = 'unanimidade' if re.search(r'(?i)por unanimidade', dec) and tipo in ('Deliberação', 'Aprovação de ata') else 'apreciado' if re.match(r'(?i)apreciad', dec) else 'decidido'
+        proc = it['processo'] or (f'ATA {mi}-{it["secao_letra"]}{it["n"]}' if tipo == 'Aprovação de ata' else f'{mi}-{it["secao_letra"]}{it["n"]}')
+        rel, rel_prov, rel_mot = ('', '', '') if tipo in ('Aprovação de ata', 'Informe', 'Retirada de pauta') else relator_de(area_v, tipo, it['processo'], dec, orig)
+        if tipo == 'Deliberação' and modo != 'unanimidade': rel, rel_prov, rel_mot = '', '', 'sem votação declarada na ata: sem RELATOR'
+        if rel and rel not in presentes: rel_mot = f'relator inferido ({rel}) não consta entre os presentes: sem RELATOR'; rel = ''
+        titulo_d = re.sub(r'\s+', ' ', it['assunto']).strip()
+        av = ANEXO_VOTO.get((ref, it['processo'])) if it['processo'] else None
+        res = resultado_ata(tipo, dec, imp_txt)
+        if modo == 'apreciado': res = 'Apreciado' if len(dec) <= 12 else dec[:300]
+        elif modo == 'decidido' and tipo == 'Deliberação': res = dec[:300]
+        x = dict(reuniao=mi, data=d, processo=proc, deliberacao=f'Item {it["secao_letra"]}{it["n"]}: {titulo_d[:200]}', item_n=f'{it["secao_letra"]}{it["n"]}', relator=rel, interessado='ANS — Diretoria Colegiada' + (f' ({it["area"]})' if it['area'] else ''),
+                 assunto=titulo_d[:500], resultado=res, voto_doc=av['url'] if av else '', decisao_texto=dec, tipo_item=tipo, secao=it['secao'] + (' [sessão reservada]' if sess == 'Reservada' else ''), unidade=it['area'],
+                 partes=[], origem=url_ata, sessao=sess, area_do_voto=area_v, area_do_voto_fonte=orig, impedidos=imp, relator_proveniencia=rel_prov, relator_motivo=rel_mot or '', _rel_prov=rel_prov, _rel_mot=rel_mot, _imp_txt=imp_txt)
+        if av: x['voto_escrito'] = dict(voto_no=av['voto_no'], assinante=av['quem'], url=av['url'])
+        pr_rom = romanos(dec)
+        if tipo in ('Deliberação', 'Aprovação de ata'):
+            x['partes'] = [dict(parte=f'({r_})', acao=t_[:200], modo=('unanimidade' if modo == 'unanimidade' else modo), vencidos=[]) for r_, t_ in pr_rom] or [dict(parte='item', acao=titulo_d[:160], modo=('unanimidade' if modo == 'unanimidade' else modo), vencidos=[])]
+        if it.get('complemento_assunto'): x['complemento_assunto'] = it['complemento_assunto']
+        delibs.append(x); ds_ref.append(x)
+        mk_voto(x, tipo, imp=imp, ressalva=ress, pedinte=pedinte, retirou=retirou, modo=modo if tipo in ('Deliberação', 'Aprovação de ata') else '')
+    # ---- blocao (AEP): 1 item agregado + lista de processos + decisoes individuais; excecoes viram item proprio
+    ind = []; exc = []
+    for it in A['aep']:
+        dec = re.sub(r'\s+', ' ', it['decisao']); proc = it['processos'][-1] if it['processos'] else ''
+        area_v, orig = area_do_voto(dec, ''); imp, imp_txt = acha_impedidos(dec)
+        ret = re.match(r'(?i)item retirado de pauta pel[oa]\s+(.*?)\.', dec)
+        unan = bool(re.match(r'(?i)aprovad[oa]s?\s+por\s+unanimidade', dec))
+        cls = 'retirado de pauta' if ret else 'impedimento' if imp else 'unanimidade' if unan else 'apreciação/outro'
+        out = ('não provido' if re.search(r'(?i)n[ãa]o provimento|improvimento|mantendo', dec) else 'provido' if re.search(r'(?i)provimento (?:parcial )?d?o? ?recurso|reformando', dec) else 'outro')
+        rec = dict(secao=it['secao'], n=it['n'], processo=proc, processos_citados=[p for p in it['processos'] if p != proc], area_condutora=area_v, classe=cls, impedidos=imp, resumo=dec[:400], anomalia_ata=it['anomalia'] or ('processo ausente no texto da ata' if not proc else ''))
+        if ret: rec['retirou'] = curto2nome(ret[1]); rec['retirou_nome_ata'] = ret[1]
+        ind.append(rec)
+        if cls != 'unanimidade': exc.append((it, rec, dec, imp, imp_txt, ret))
+    if A['aep']:
+        procs = sorted({r['processo'] for r in ind if r['processo']}); nsub = Counter(r['secao'] for r in ind); cl = Counter(r['classe'] for r in ind)
+        res_b = f"{len(ind)} decisões em bloco (AEP): {cl['unanimidade']} aprovadas por unanimidade; {cl['impedimento']} com diretor impedido (item próprio); {cl['retirado de pauta']} retirada(s) de pauta (item próprio); {cl['apreciação/outro']} apreciação/outro (item próprio)"
+        x = dict(reuniao=mi, data=d, processo=f'BLOCAO-{mi}', deliberacao=f'Blocão (Circuito Deliberativo/AEP): {len(ind)} decisões, {len(procs)} processos', item_n='B', relator='', interessado='ANS — Diretoria Colegiada (AEP)',
+                 assunto=f'Blocão AEP da {titulo(ref, d)}: ' + '; '.join(f'{k} = {v}' for k, v in nsub.items()), resultado=res_b, voto_doc='', decisao_texto='cada decisão individual vem em decisoes_individuais', tipo_item='Deliberação', secao='Blocão (AEP)', unidade='COREC/SECEX',
+                 partes=[dict(parte='blocão', acao='aprovar os processos do blocão (decisão individual de cada um em decisoes_individuais)', modo='unanimidade', vencidos=[])], origem=url_ata, sessao='Blocão', impedidos=[],
+                 processos_do_bloco=procs, n_processos_ata=len(procs), n_decisoes_ata=len(ind), decisoes_individuais=ind, subsecoes=dict(nsub), classes=dict(cl))
+        delibs.append(x); ds_ref.append(x); mk_voto(x, 'Deliberação', modo='unanimidade')
+        for it, rec, dec, imp, imp_txt, ret in exc:   # decisoes que a ata diferencia: item proprio
+            tipo = 'Retirada de pauta' if ret else 'Deliberação'; unan = rec['classe'] in ('impedimento',)
+            proc = rec['processo'] or f'{mi}-AEP-{it["secao"][:3]}{it["n"]}'
+            rel = diretor_area(rec['area_condutora'], d) if (tipo == 'Deliberação' and rec['area_condutora']) else ''
+            if rel and rel not in presentes: rel = ''
+            if rel in imp or not unan: rel = ''
+            x2 = dict(reuniao=mi, data=d, processo=proc, deliberacao=f'Blocão {it["secao"]} nº {it["n"]}: ' + dec[:160], item_n=f'B{it["secao"][:3]}-{it["n"]}', relator=rel, interessado='ANS — Diretoria Colegiada (AEP)', assunto=dec[:500],
+                      resultado=resultado_ata(tipo, dec, imp_txt) if rec['classe'] != 'apreciação/outro' else dec[:300], voto_doc='', decisao_texto=dec, tipo_item=tipo, secao=f'Blocão (AEP) — {rec["classe"]}', unidade='COREC/SECEX', partes=[], origem=url_ata, sessao='Blocão',
+                      area_do_voto=rec['area_condutora'], area_do_voto_fonte='voto condutor citado na ata', impedidos=imp, relator_proveniencia='inferido' if rel else '', relator_motivo=f'a ata não nomeia relator; voto condutor da {rec["area_condutora"]} → diretor da área ({rel})' if rel else '',
+                      _rel_prov='inferido', _rel_mot=f'a ata não nomeia relator; voto condutor da {rec["area_condutora"]} → diretor da área na data', _imp_txt=imp_txt)
+            if tipo == 'Deliberação': x2['partes'] = [dict(parte='item', acao=dec[:160], modo='unanimidade' if unan else 'apreciado', vencidos=[])]
+            delibs.append(x2); ds_ref.append(x2)
+            mk_voto(x2, tipo, imp=imp, retirou=rec.get('retirou_nome_ata') and curto2nome(rec['retirou_nome_ata']), modo=('unanimidade' if unan else 'apreciado' if re.match(r'(?i)aprecia', dec) else 'decidido') if tipo == 'Deliberação' else '')
+    # ---- conferencias contra fontes INDEPENDENTES da ata
+    n_it_api = api.get('n_itens'); abertos_api = sum(1 for i in api.get('itens', []) if i.get('orgao'))
+    qual.append(('ANS', f'{mi}: itens públicos da API oficial (com diretoria) × itens da sessão aberta na ata', abertos_api, n_aberta, 'OK' if abertos_api == n_aberta else 'DIVERGE',
+                 'API getDadosReuniaoAjax (itens com SG_ORGAO) × seções não reservadas da ata (exceto informes)' if abertos_api == n_aberta else f'API {abertos_api} × ata {n_aberta}: informes/itens sem órgão na API'))
+    if ref in PAUTAS_API:
+        pp = set(PROC_RX.findall(open(PAUTAS_API[ref]['texto'], encoding='utf8').read())); pa = set(PROC_RX.findall(ans_ata.limpa(open(m['texto'], encoding='utf8').read())))
+        qual.append(('ANS', f'{mi}: processos da pauta oficial (API) presentes na ata', len(pp), len(pp & pa), 'OK' if pp <= pa else 'DIVERGE', f'fora da ata: {sorted(pp - pa)[:5]}' if pp - pa else 'todos os processos da pauta constam na ata'))
+    cob.append(('ANS', f'{mi} itens', len(ds_ref), f'ata: {len(A["itens"])} itens de sessão + {len(A["aep"])} decisões de blocão (AEP) em {len({r["processo"] for r in ind})} processos; {sum(1 for x_ in ds_ref if x_["tipo_item"] != "Informe")} itens deliberativos nas linhas'))
+    qual.append(('ANS', f'{mi}: "Decisão:" no texto da ata × itens de sessão lidos', len(re.findall(r'Decisão:', ans_ata.limpa(open(m['texto'], encoding='utf8').read()))), len(A['itens']), 'OK' if len(re.findall(r'Decisão:', ans_ata.limpa(open(m['texto'], encoding='utf8').read()))) == len(A['itens']) else 'DIVERGE', 'cada item de sessão tem um "Decisão:"'))
+    if A['aep']:
+        txt_p = {re.sub(r'\s', '', p_) for p_ in re.findall(ans_ata.PROC, ' '.join(i['decisao'] for i in A['aep']))}
+        ind_p = {r['processo'] for r in ind if r['processo']} | {p_ for r in ind for p_ in r['processos_citados']}
+        qual.append(('ANS', f'{mi}: blocão — processos citados no texto do AEP × processos nas decisões individuais lidas', len(txt_p), len(txt_p & ind_p), 'OK' if txt_p <= ind_p else 'DIVERGE',
+                     f'{len(ind)} decisões individuais; {sum(1 for r in ind if r["anomalia_ata"])} com anomalia de numeração/processo na ata (registrada na própria decisão)' + (f'; fora: {sorted(txt_p - ind_p)[:4]}' if txt_p - ind_p else '')))
+    return ds_ref
+
 todas = ORD + EXT
 for ref in todas:
+    if ref in ATAS:
+        processa_ata(ref); continue
     key = ref
     d = datas.get(ref)
     p_its, p_procs, p_atual = ([], [], '')
@@ -383,7 +581,8 @@ rest_pg = [p['url'] for p in inv['paginas'] if p['estado'] == 'RESTRITO' and 'no
 if rest_pg:
     pend.append(('ANS', f'{len(rest_pg)} páginas de aviso/deliberações de reuniões anteriores a jul/2026 (633–639 e extraordinárias 1–9, 11)', '2026-10-08', 'bloqueado pela fonte', 'todas respondem 200 com "Conteúdo Restrito" (ex.: ' + rest_pg[0] + ')', 'notícias de antes do período eleitoral foram restringidas', 'Pedir republicação à ANS', rest_pg[0]))
 # ---------- finalizacao
-for x in delibs: x.pop('_votar'); x.pop('_modo')
+for x in delibs:
+    for k_ in ('_votar', '_modo', '_rel_prov', '_rel_mot', '_imp_txt'): x.pop(k_, None)
 # unicidade de chave
 ch = Counter((x['reuniao'], x['processo'], x['deliberacao']) for x in delibs)
 dup = [k for k, v in ch.items() if v > 1]

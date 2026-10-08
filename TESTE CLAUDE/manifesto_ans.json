@@ -1,5 +1,577 @@
 [
  {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92411___Documentos%201%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X01_92411",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X01_92411__92411___Documentos_201_C2_AA_20Extraordin_C3_A1ria_20-_2033910.048937_2025_19.pdf",
+  "texto": "texto_ans/anexo_dicol_X01_92411__92411___Documentos_201_C2_AA_20Extraordin_C3_A1ria_20-_2033910.048937_2025_19.txt",
+  "sha256": "b9690c725dfad5fd2052d5e378c8aa504651f872351723777e0ef39ad0249902",
+  "bytes": 263952
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Documentos%20632%C2%AA%20DICOL%20-%2033910.057923_2025_96.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92413",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92413__92413___Documentos_20632_C2_AA_20DICOL_20-_2033910.057923_2025_96.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92413__92413___Documentos_20632_C2_AA_20DICOL_20-_2033910.057923_2025_96.txt",
+  "sha256": "6c2166e78698ee196e178d0b5f7aa4fea16fe679e5763a30f0eb9b10cb07e0aa",
+  "bytes": 242717
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92414___Documentos%20632%C2%AA%20DICOL%20-%2033902.010473_2017_67.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92414",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92414__92414___Documentos_20632_C2_AA_20DICOL_20-_2033902.010473_2017_67.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92414__92414___Documentos_20632_C2_AA_20DICOL_20-_2033902.010473_2017_67.txt",
+  "sha256": "a7985ce86ed8cf8e8ba7231aac248ec06fbaa519a326601430e5d83487db14f9",
+  "bytes": 493685
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92415___Documentos%20632%C2%AA%20DICOL%20-%2033910.013611_2022_28.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92415",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92415__92415___Documentos_20632_C2_AA_20DICOL_20-_2033910.013611_2022_28.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92415__92415___Documentos_20632_C2_AA_20DICOL_20-_2033910.013611_2022_28.txt",
+  "sha256": "e12ea051cac165e39df63c27f569a38d6aff8d5efb0bd005b09689d2b8a37837",
+  "bytes": 497230
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92416___Documentos%20632%C2%AA%20DICOL%20-%2033910.014193_2025_39.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92416",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92416__92416___Documentos_20632_C2_AA_20DICOL_20-_2033910.014193_2025_39.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92416__92416___Documentos_20632_C2_AA_20DICOL_20-_2033910.014193_2025_39.txt",
+  "sha256": "dc6d3e96cef5c988d88cd77edb18ae483c78400201c8da80e4c1f5fd25050478",
+  "bytes": 566285
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92417___Documentos%20632%C2%AA%20DICOL%20-%2033910.031840_2025_77.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92417",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92417__92417___Documentos_20632_C2_AA_20DICOL_20-_2033910.031840_2025_77.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92417__92417___Documentos_20632_C2_AA_20DICOL_20-_2033910.031840_2025_77.txt",
+  "sha256": "f6811cb5cc8c62135ffafe81315b80f1315930808f76845f8569529685966a1d",
+  "bytes": 115895
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92418___Documentos%20632%C2%AA%20DICOL%20-%2033910.000122_2026_30.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "632_92418",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_632_92418__92418___Documentos_20632_C2_AA_20DICOL_20-_2033910.000122_2026_30.pdf",
+  "texto": "texto_ans/anexo_dicol_632_92418__92418___Documentos_20632_C2_AA_20DICOL_20-_2033910.000122_2026_30.txt",
+  "sha256": "52694c4b476072bef291a5f90d2e210fd203aa19f1508eb5f0f5bd82848bec25",
+  "bytes": 389981
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026_86.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X02_92422",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X02_92422__92422___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.000998_2026_86.pdf",
+  "texto": "texto_ans/anexo_dicol_X02_92422__92422___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.000998_2026_86.txt",
+  "sha256": "bf31d4c0aeded486a405de2a34f05db06a96ca4979fa80a82e27cd48f6612e59",
+  "bytes": 340619
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025_82.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X02_92423",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X02_92423__92423___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.041022_2025_82.pdf",
+  "texto": "texto_ans/anexo_dicol_X02_92423__92423___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.041022_2025_82.txt",
+  "sha256": "3fcea9371c13b024e5dd63e4a4e05125a608a12b1b5eb62b643184431a73829f",
+  "bytes": 278833
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92424___Documentos%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.048937_2025_19.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X02_92424",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X02_92424__92424___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.048937_2025_19.pdf",
+  "texto": "texto_ans/anexo_dicol_X02_92424__92424___Documentos_202_C2_AA_20Extraordin_C3_A1ria_20-_2033910.048937_2025_19.txt",
+  "sha256": "da80b52604368f15f727d3d186f37702ef90523c94e718d76e8f771b0498754d",
+  "bytes": 195969
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Documentos%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025_71.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X03_92435",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X03_92435__92435___Documentos_203_C2_AA_20Extraordin_C3_A1ria_20-_2033910.058550_2025_71.pdf",
+  "texto": "texto_ans/anexo_dicol_X03_92435__92435___Documentos_203_C2_AA_20Extraordin_C3_A1ria_20-_2033910.058550_2025_71.txt",
+  "sha256": "57d368ff2b5cb12d43f0c557834db30b007448755cafa966e7ff96e3fe40088b",
+  "bytes": 176302
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%20633%C2%AA%20DICOL%20-%2033910.049000_2025-61.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "633_92439",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_633_92439__92439___Apresenta_C3_A7_C3_A3o_20DIPRO_20-_20633_C2_AA_20DICOL_20-_2033910.049000_2025-61.pdf",
+  "texto": "texto_ans/anexo_dicol_633_92439__92439___Apresenta_C3_A7_C3_A3o_20DIPRO_20-_20633_C2_AA_20DICOL_20-_2033910.049000_2025-61.txt",
+  "sha256": "990ab962ddd2f50c6e86781fa921a6f119be33d98a13ec6f341151924ff9690c",
+  "bytes": 1316499
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92439___Documentos%20633%C2%AA%20DICOL%20-%2033910.049000_2025_61.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "633_92439",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_633_92439__92439___Documentos_20633_C2_AA_20DICOL_20-_2033910.049000_2025_61.pdf",
+  "texto": "texto_ans/anexo_dicol_633_92439__92439___Documentos_20633_C2_AA_20DICOL_20-_2033910.049000_2025_61.txt",
+  "sha256": "5fc00e7f93a43018a7463c06c6772e4f0d8b2ac7c029cf5f3d3a31f854085b48",
+  "bytes": 986646
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92440___Documentos%20633%C2%AA%20DICOL%20-%2033910.059754_2025_29.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "633_92440",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_633_92440__92440___Documentos_20633_C2_AA_20DICOL_20-_2033910.059754_2025_29.pdf",
+  "texto": "texto_ans/anexo_dicol_633_92440__92440___Documentos_20633_C2_AA_20DICOL_20-_2033910.059754_2025_29.txt",
+  "sha256": "594f12f017dc0b6cb5f0a9b26eb7aaff956077ec950fb266fae17cda45653a90",
+  "bytes": 375691
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92443___Documentos%20633%C2%AA%20DICOL%20-%2033910.036648_2023_13.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "633_92443",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_633_92443__92443___Documentos_20633_C2_AA_20DICOL_20-_2033910.036648_2023_13.pdf",
+  "texto": "texto_ans/anexo_dicol_633_92443__92443___Documentos_20633_C2_AA_20DICOL_20-_2033910.036648_2023_13.txt",
+  "sha256": "222a04ce64d4ca1b99bb59f04b213fd63e022b22daf400ec142ef75bcb45fe81",
+  "bytes": 125340
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92448___Documentos%204%C2%AA%20Extraordin%C3%A1ria%20-%2033910.005263_2026_49.pdf",
+  "tipo": "anexo_dicol",
+  "ref": "X04_92448",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/anexo_dicol_X04_92448__92448___Documentos_204_C2_AA_20Extraordin_C3_A1ria_20-_2033910.005263_2026_49.pdf",
+  "texto": "texto_ans/anexo_dicol_X04_92448__92448___Documentos_204_C2_AA_20Extraordin_C3_A1ria_20-_2033910.005263_2026_49.txt",
+  "sha256": "a1d4ea18c4ec728e4b68d7baf19d359bdf7b8ca5b4e45a9ab56c134fcc0c695a",
+  "bytes": 125248
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92399___ATA%20DA%20632%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2030.01.2026.pdf",
+  "tipo": "ata_dicol",
+  "ref": "632",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_632__92399___ATA_20DA_20632_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2030.01.2026.pdf",
+  "texto": "texto_ans/ata_dicol_632__92399___ATA_20DA_20632_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2030.01.2026.txt",
+  "sha256": "52d06318d39dbc65da370901422b6bb54847934a1915c4cc723e78b9596759d7",
+  "bytes": 355021
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92410___ATA%20DA%201%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2026.01.2026.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X01",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X01__92410___ATA_20DA_201_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2026.01.2026.pdf",
+  "texto": "texto_ans/ata_dicol_X01__92410___ATA_20DA_201_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2026.01.2026.txt",
+  "sha256": "be1e8dd501599c15392b55493808c83aa2a64e6651db2bfb7bf94e19e5b62103",
+  "bytes": 65028
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92419___2%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%2006.02.2026.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X02",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X02__92419___2_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2006.02.2026.pdf",
+  "texto": "texto_ans/ata_dicol_X02__92419___2_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_2006.02.2026.txt",
+  "sha256": "56c75fb1a67d88f77189ed032370e6475541d8958add5a931ba27a4b3c7fb2e1",
+  "bytes": 65564
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92420___ATA%20DA%20633%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2023%20DE%20FEVEREIRO%20DE%202026..pdf",
+  "tipo": "ata_dicol",
+  "ref": "633",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_633__92420___ATA_20DA_20633_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2023_20DE_20FEVEREIRO_20DE_202026..pdf",
+  "texto": "texto_ans/ata_dicol_633__92420___ATA_20DA_20633_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2023_20DE_20FEVEREIRO_20DE_202026..txt",
+  "sha256": "89d0086bf71dae56f9d412c09e0c6092e9055fe37fbeb0663af1a31cb4dce075",
+  "bytes": 295326
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92436___ATA%20DA%203%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X03",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X03__92436___ATA_20DA_203_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_X03__92436___ATA_20DA_203_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "171e757868096b48e113442e8e03131ab26811ff15808465c84f0bb2670b8bed",
+  "bytes": 65231
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92444___ATA%20DA%20634%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADO%20EM%2013%20DE%20MAR%C3%87O%20DE%202026..pdf",
+  "tipo": "ata_dicol",
+  "ref": "634",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_634__92444___ATA_20DA_20634_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADO_20EM_2013_20DE_20MAR_C3_87O_20DE_202026..pdf",
+  "texto": "texto_ans/ata_dicol_634__92444___ATA_20DA_20634_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADO_20EM_2013_20DE_20MAR_C3_87O_20DE_202026..txt",
+  "sha256": "97968e472552b31a04aaaf643a4424c96d63e033af91392d48b163e86fce4eae",
+  "bytes": 255152
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92449___ATA%20DA%204%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2003%20DE%20MAR%C3%87O%20DE%202026..pdf",
+  "tipo": "ata_dicol",
+  "ref": "X04",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X04__92449___ATA_20DA_204_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2003_20DE_20MAR_C3_87O_20DE_202026..pdf",
+  "texto": "texto_ans/ata_dicol_X04__92449___ATA_20DA_204_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2003_20DE_20MAR_C3_87O_20DE_202026..txt",
+  "sha256": "6b31a6b7e85002bb973b526ce92d5239a50335f2c2ab6f9611c5866a0806adc8",
+  "bytes": 80606
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92452___ATA%20DA%205%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA%20REALIZADA%20EM%2006%20DE%20MAR%C3%87O%20DE%202026.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X05",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X05__92452___ATA_20DA_205_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2006_20DE_20MAR_C3_87O_20DE_202026.pdf",
+  "texto": "texto_ans/ata_dicol_X05__92452___ATA_20DA_205_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA_20REALIZADA_20EM_2006_20DE_20MAR_C3_87O_20DE_202026.txt",
+  "sha256": "8c99bbbb564518e2a1a60e431b43b8db0999f340efd25f670888bb4a5bdcedf0",
+  "bytes": 67241
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92466___Ata%20da%20635%C2%AA%20DICOL%20-%20retificada.pdf",
+  "tipo": "ata_dicol",
+  "ref": "635",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_635__92466___Ata_20da_20635_C2_AA_20DICOL_20-_20retificada.pdf",
+  "texto": "texto_ans/ata_dicol_635__92466___Ata_20da_20635_C2_AA_20DICOL_20-_20retificada.txt",
+  "sha256": "9ad316baf9ba65ec756baff9734554068e7b224a0b3c1eee5d24c761f89e1104",
+  "bytes": 319712
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92484___ATA%20DA%20636%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "636",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_636__92484___ATA_20DA_20636_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_636__92484___ATA_20DA_20636_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "3e8d5051b77e8e3cd77bdedf717bd73c7e0171016986d1127dd447ba2fb33a78",
+  "bytes": 260516
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92488___ATA%20DA%206%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X06",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X06__92488___ATA_20DA_206_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_X06__92488___ATA_20DA_206_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "0d5f40ca12e7cffbe2eb6cc4a3199633296f3193d766cdef9c8564c0a62116ba",
+  "bytes": 65127
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92493___ATA%20DA%20637%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "637",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_637__92493___ATA_20DA_20637_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_637__92493___ATA_20DA_20637_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "6ea7e589bbfb3a54a898a852a1a03e8364ceb19ce68bc76ba19466ca99d52f42",
+  "bytes": 266070
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92495___ATA%20DA%207%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X07",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X07__92495___ATA_20DA_207_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_X07__92495___ATA_20DA_207_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "b50c2d0f23c5fec18ec77d3ea7ad8261986fa9fc48c36a449673674ec93f91c3",
+  "bytes": 62136
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92516___ATA%20DA%20638%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "638",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_638__92516___ATA_20DA_20638_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_638__92516___ATA_20DA_20638_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "7e6239b4bf9264c505e0e412e63d8d650b23ea51b879c3e54b22a82252899ae1",
+  "bytes": 253904
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92517___ATA%20DA%208%C2%AA%20REUNI%C3%83O%20EXTRAORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "X08",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_X08__92517___ATA_20DA_208_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_X08__92517___ATA_20DA_208_C2_AA_20REUNI_C3_83O_20EXTRAORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "7f4326d15fe560ae0064af2fbeda2c057e33bcddf20a161ce08b7148ac9a1863",
+  "bytes": 55514
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92531___ATA%20DA%20639%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "639",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_639__92531___ATA_20DA_20639_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_639__92531___ATA_20DA_20639_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "b5e24b996a650daad0b66236f5e12050f1356e905bc4398a9afce91ab40d07bb",
+  "bytes": 239842
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92560___ATA%20DA%20640%C2%AA%20REUNI%C3%83O%20ORDIN%C3%81RIA%20DE%20DIRETORIA%20COLEGIADA.pdf",
+  "tipo": "ata_dicol",
+  "ref": "640",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/ata_dicol_640__92560___ATA_20DA_20640_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.pdf",
+  "texto": "texto_ans/ata_dicol_640__92560___ATA_20DA_20640_C2_AA_20REUNI_C3_83O_20ORDIN_C3_81RIA_20DE_20DIRETORIA_20COLEGIADA.txt",
+  "sha256": "20caea28adf202f387ea8743be8693d7fc311ee02994db87967fc1f7c62ada56",
+  "bytes": 381088
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92399___Pauta%20da%20632%C2%AA%20DICOL%20Ordin%C3%A1ria.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "632",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_632__92399___Pauta_20da_20632_C2_AA_20DICOL_20Ordin_C3_A1ria.pdf",
+  "texto": "texto_ans/pauta_dicol_632__92399___Pauta_20da_20632_C2_AA_20DICOL_20Ordin_C3_A1ria.txt",
+  "sha256": "9a4ac8bd7eff71ca55cf26fbf5df97c75a8b989f866ae7620c4e5313fa1320f0",
+  "bytes": 237196
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92410___1%C2%AA%20%20Extraordin%C3%A1ria%20%2026.01.2026.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X01",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X01__92410___1_C2_AA_20_20Extraordin_C3_A1ria_20_2026.01.2026.pdf",
+  "texto": "texto_ans/pauta_dicol_X01__92410___1_C2_AA_20_20Extraordin_C3_A1ria_20_2026.01.2026.txt",
+  "sha256": "7da199b9721db5639e1cd2efc99d9c5c7f2472008c7c0026392f1910eda0437f",
+  "bytes": 138435
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92419___Pauta%20da%202%C2%AA%20Reuni%C3%A3o%20Extra.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X02",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X02__92419___Pauta_20da_202_C2_AA_20Reuni_C3_A3o_20Extra.pdf",
+  "texto": "texto_ans/pauta_dicol_X02__92419___Pauta_20da_202_C2_AA_20Reuni_C3_A3o_20Extra.txt",
+  "sha256": "c02bec1e27c95094d7e8f3ff1f1343e66abab7746138895f7c0b5cb08251393f",
+  "bytes": 143403
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92420___Pauta%20da%20633%C2%AA%20DICOL.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "633",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_633__92420___Pauta_20da_20633_C2_AA_20DICOL.pdf",
+  "texto": "texto_ans/pauta_dicol_633__92420___Pauta_20da_20633_C2_AA_20DICOL.txt",
+  "sha256": "222020e132cb1646f9f39695cf88f85bbb92cd205aa298e4f0269fff97ddf9ab",
+  "bytes": 448324
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92436___Pauta%20da%203%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X03",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X03__92436___Pauta_20da_203_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.pdf",
+  "texto": "texto_ans/pauta_dicol_X03__92436___Pauta_20da_203_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.txt",
+  "sha256": "876b07fef4213c9b135d153f2906200890d7c55074df16bc5da958a3cdea1801",
+  "bytes": 139652
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92444___ATUALIZA%C3%87%C3%83O%20-%20Pauta%20da%20634%C2%AA%20Reuni%C3%A3o.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "634",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_634__92444___ATUALIZA_C3_87_C3_83O_20-_20Pauta_20da_20634_C2_AA_20Reuni_C3_A3o.pdf",
+  "texto": "texto_ans/pauta_dicol_634__92444___ATUALIZA_C3_87_C3_83O_20-_20Pauta_20da_20634_C2_AA_20Reuni_C3_A3o.txt",
+  "sha256": "c390a91ac9d63f42b908203c84a7dfd043e1acd8ea1786716c824a9cd3e80413",
+  "bytes": 199032
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92449___Pauta%20da%204%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X04",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X04__92449___Pauta_20da_204_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.pdf",
+  "texto": "texto_ans/pauta_dicol_X04__92449___Pauta_20da_204_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.txt",
+  "sha256": "753090dd96387f2d1e4ab0d0ab8876c4af815e862ec96c698949351d46cdec8d",
+  "bytes": 138525
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92452___Pauta%20da%205%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X05",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X05__92452___Pauta_20da_205_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.pdf",
+  "texto": "texto_ans/pauta_dicol_X05__92452___Pauta_20da_205_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria.txt",
+  "sha256": "d756008df0777e24cb968950890806fae4b5f3ec2fe1659baec2bbb0ebb3778c",
+  "bytes": 140225
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92466___Pauta%20da%20635%C2%AA%20DICOL%20%20%20%28Pauta%20Aberta%29%20-%20v3.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "635",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_635__92466___Pauta_20da_20635_C2_AA_20DICOL_20_20_20_28Pauta_20Aberta_29_20-_20v3.pdf",
+  "texto": "texto_ans/pauta_dicol_635__92466___Pauta_20da_20635_C2_AA_20DICOL_20_20_20_28Pauta_20Aberta_29_20-_20v3.txt",
+  "sha256": "f3390b0a66fc901a54db286720e2b3cd9c8a0253c0ee0022bfeac4038bc134db",
+  "bytes": 211267
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92484___Pauta%20da%20636%C2%AA%20DICOL%20-%2024.04.2026%20%20atualizada%20em%2022.04.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "636",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_636__92484___Pauta_20da_20636_C2_AA_20DICOL_20-_2024.04.2026_20_20atualizada_20em_2022.04.pdf",
+  "texto": "texto_ans/pauta_dicol_636__92484___Pauta_20da_20636_C2_AA_20DICOL_20-_2024.04.2026_20_20atualizada_20em_2022.04.txt",
+  "sha256": "d6097fb96e80b3c0c32850c3afe902103ac141849f23aea0befb8dbe70f4cdcb",
+  "bytes": 169356
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92488___Pauta%20da%206%C2%AA%20%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada%20-.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X06",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X06__92488___Pauta_20da_206_C2_AA_20_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada_20-.pdf",
+  "texto": "texto_ans/pauta_dicol_X06__92488___Pauta_20da_206_C2_AA_20_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada_20-.txt",
+  "sha256": "420ffb6b435f0399d3787659b995f147434fbc2cdd1da420b781491630d47303",
+  "bytes": 127697
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92493___Pauta%20da%20637%C2%AA%20DICOL%20%20-%2015.05.2026%20%28Pauta%20Aberta%29-%20vers%C3%A3o%204.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "637",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_637__92493___Pauta_20da_20637_C2_AA_20DICOL_20_20-_2015.05.2026_20_28Pauta_20Aberta_29-_20vers_C3_A3o_204.pdf",
+  "texto": "texto_ans/pauta_dicol_637__92493___Pauta_20da_20637_C2_AA_20DICOL_20_20-_2015.05.2026_20_28Pauta_20Aberta_29-_20vers_C3_A3o_204.txt",
+  "sha256": "3ba25d1e85ee37ca9a9b73559f06f72eac17241121d7b0f475017d1996bb6aad",
+  "bytes": 186869
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92495___Pauta%20da%207%C2%AA%20Dicol%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada%20-%2008.05.2026.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X07",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X07__92495___Pauta_20da_207_C2_AA_20Dicol_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada_20-_2008.05.2026.pdf",
+  "texto": "texto_ans/pauta_dicol_X07__92495___Pauta_20da_207_C2_AA_20Dicol_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada_20-_2008.05.2026.txt",
+  "sha256": "ef2266c8b52d655c481568bf8dcf28db540d7cbc0ae84ab5598a3844c763c6ef",
+  "bytes": 136054
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92516___Pauta%20da%20638%C2%AA%20Dicol.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "638",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_638__92516___Pauta_20da_20638_C2_AA_20Dicol.pdf",
+  "texto": "texto_ans/pauta_dicol_638__92516___Pauta_20da_20638_C2_AA_20Dicol.txt",
+  "sha256": "4631b5c39128f735af0d95fe42c0379c3522c43cc6becb970708b3cc9477ea26",
+  "bytes": 172275
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92517___Pauta%20da%208%C2%AA%20Reuni%C3%A3o%20Extraordin%C3%A1ria%20de%20Diretoria%20Colegiada.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "X08",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_X08__92517___Pauta_20da_208_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada.pdf",
+  "texto": "texto_ans/pauta_dicol_X08__92517___Pauta_20da_208_C2_AA_20Reuni_C3_A3o_20Extraordin_C3_A1ria_20de_20Diretoria_20Colegiada.txt",
+  "sha256": "8f3a142d257706e23d72d2f36f66b4a3f5bd3725ac8e31a4008a8215d6480262",
+  "bytes": 133725
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92531___Pauta%20da%20639%C2%AA%20DICOL%20ATT.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "639",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_639__92531___Pauta_20da_20639_C2_AA_20DICOL_20ATT.pdf",
+  "texto": "texto_ans/pauta_dicol_639__92531___Pauta_20da_20639_C2_AA_20DICOL_20ATT.txt",
+  "sha256": "afbaec72bd6cc4ffff0c7ccae13e24631bb230c7e5c378e438e3ecc22a9da59a",
+  "bytes": 175713
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92560___Pauta%20da%20640%C2%AA%20DICOL-%2017.07.2026.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "640",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_640__92560___Pauta_20da_20640_C2_AA_20DICOL-_2017.07.2026.pdf",
+  "texto": "texto_ans/pauta_dicol_640__92560___Pauta_20da_20640_C2_AA_20DICOL-_2017.07.2026.txt",
+  "sha256": "be2a335800664105b99f3b8919d46aaaa3516810a4d15f531bb2053f918cc2a0",
+  "bytes": 203843
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92579___Pauta%20da%20641%C2%AA%20DICOL%20-%20atualizada.pdf",
+  "tipo": "pauta_dicol",
+  "ref": "641",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_641__92579___Pauta_20da_20641_C2_AA_20DICOL_20-_20atualizada.pdf",
+  "texto": "texto_ans/pauta_dicol_641__92579___Pauta_20da_20641_C2_AA_20DICOL_20-_20atualizada.txt",
+  "sha256": "05126a417e296bf76017a67a647119546e0ac1241193c7585fcf14957e36143a",
+  "bytes": 182518
+ },
+ {
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=pauta/92586___Pauta%20da%20642%C2%AA%20Reuni%C3%A3o%20Ordin%C3%A1ria%20Att..pdf",
+  "tipo": "pauta_dicol",
+  "ref": "642",
+  "formato": "pdf",
+  "ok": true,
+  "arquivo_local": "fonte/ans/pdf/pauta_dicol_642__92586___Pauta_20da_20642_C2_AA_20Reuni_C3_A3o_20Ordin_C3_A1ria_20Att..pdf",
+  "texto": "texto_ans/pauta_dicol_642__92586___Pauta_20da_20642_C2_AA_20Reuni_C3_A3o_20Ordin_C3_A1ria_20Att..txt",
+  "sha256": "8ca1460bba8e03c24b4a92db475fccbd21c49de724ebe76defceec3d8c0f4a31",
+  "bytes": 205719
+ },
+ {
   "url": "https://www.gov.br/ans/pt-br/arquivos/acesso-a-informacao/participacao-da-sociedade/audiencias-publicas/60/SEI_35064558_Extrato_da_Ata_de_Reuniao___DICOL.pdf",
   "tipo": "extrato",
   "ref": "X2",
@@ -209,6 +781,28 @@
   "bytes": 182518
  },
  {
+  "url": "https://componentes-portal.ans.gov.br/link/listadicol",
+  "tipo": "html",
+  "ref": "listadicol",
+  "formato": "html",
+  "ok": true,
+  "arquivo_local": "fonte/ans/html/listadicol.html",
+  "texto": null,
+  "sha256": "9ad616c829659eaf02e2ab6dce7fa3049055aecf957b9a7e26fc24295fa8416b",
+  "bytes": 8599
+ },
+ {
+  "url": "https://www.ans.gov.br/aans/transparencia-institucional/reunioes-da-diretoria-ans",
+  "tipo": "html",
+  "ref": "reunioes-da-diretoria-ans",
+  "formato": "html",
+  "ok": true,
+  "arquivo_local": "fonte/ans/html/reunioes-da-diretoria-ans.html",
+  "texto": null,
+  "sha256": "b2736ace629e4a5ad6fcb3c70cee43c0c781e10b7aaeed47af3e9cb9752d3c11",
+  "bytes": 55530
+ },
+ {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
   "tipo": "html",
   "ref": "10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -216,8 +810,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026.html",
   "texto": null,
-  "sha256": "d2e8e263bdb22c9a5a25633106f8eaf4a8adb636d80de56bc113ae859f4fb4e1",
-  "bytes": 179304
+  "sha256": "4db3a68b14a0b16d7dd02f08bc2f4433f24ea12a4dfec77f8de1510ef4f4ee5b",
+  "bytes": 179298
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/12a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -249,8 +843,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/641a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "13a744a40d870802d384ed1a9bc42694fc4c98bfb24cb407663bc009ba74d07f",
-  "bytes": 179678
+  "sha256": "e827989e0fd3ac01cf0ae984c8507b69c11e2543bb81acc57568279e283c87a4",
+  "bytes": 179672
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/642a-reuniao-da-diretoria-colegiada",
@@ -271,8 +865,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/643a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "6dfeebda55de49ccd0a67eec10e828ff07ba70d03eec36199d9293e676f91475",
-  "bytes": 178911
+  "sha256": "fdf89a25de780c1ca5873a82f283d5cdfb90088e2b23da83419202fe86e2f9c7",
+  "bytes": 178917
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/644a-reuniao-da-diretoria-colegiada",
@@ -293,8 +887,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/deliberacoes-da-638a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "a0e2897f958815966aaaac3395be901f82e4cce3d725c1f47b0c3a0931dae8ab",
-  "bytes": 178697
+  "sha256": "6ab17bff48b716c0845471a7a6e7f6251bfabdbe3053bafea928151407d97fc1",
+  "bytes": 178691
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-640a-reuniao-da-diretoria-colegiada",
@@ -304,8 +898,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/deliberacoes-da-640a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "10d25107a84ef21a3d5e534b0f356b6056700eff9e90112d4169fd8754899919",
-  "bytes": 181692
+  "sha256": "870ba44a1de8ec9216152ebec2d3ba539eb4faf09b516206ebc5352a700099d3",
+  "bytes": 181686
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-641a-reuniao-da-diretoria-colegiada",
@@ -337,8 +931,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/deliberacoes-da-643a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "14cd248f80e679926d6229811309d602051e4c897ccc3dd00670641ed81b2a02",
-  "bytes": 181484
+  "sha256": "0e48e076d1ce92b8e85782ae3bf138dcc822643ae398b6ffea9851b4156a5cc6",
+  "bytes": 181528
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/diretoria-colegiada-da-ans-tem-nova-composicao",
@@ -348,8 +942,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/diretoria-colegiada-da-ans-tem-nova-composicao.html",
   "texto": null,
-  "sha256": "d65acdfe225bce4468199ca2b55f2db6496722af7e20f60fb9156a7d2cf1bf98",
-  "bytes": 180248
+  "sha256": "ba51185cc40073576ed373184bcffc38e39584edc81d5956c2cd3890ac7dd12d",
+  "bytes": 180242
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/deliberacoes-da-638a-reuniao-da-diretoria-colegiada",
@@ -359,8 +953,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/deliberacoes-da-638a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "a0e2897f958815966aaaac3395be901f82e4cce3d725c1f47b0c3a0931dae8ab",
-  "bytes": 178697
+  "sha256": "6ab17bff48b716c0845471a7a6e7f6251bfabdbe3053bafea928151407d97fc1",
+  "bytes": 178691
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-638a-reuniao-da-diretoria-colegiada",
@@ -370,7 +964,7 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/deliberacoes-da-638a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "a0e2897f958815966aaaac3395be901f82e4cce3d725c1f47b0c3a0931dae8ab",
-  "bytes": 178697
+  "sha256": "6ab17bff48b716c0845471a7a6e7f6251bfabdbe3053bafea928151407d97fc1",
+  "bytes": 178691
  }
 ]

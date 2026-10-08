@@ -1,0 +1,951 @@
+ 
+PROCESSO Nº: 33910.057923/2025-96
+VOTO Nº 10/2025/CESME/GEHAE/GGAME/DIRAD-DIOPE/DIOPE
+ 
+DIRETOR
+JORGE ANTÔNIO AQUINO LOPES
+1.
+RELATÓRIO E FUNDAMENTAÇÃO
+1.1.
+Trata-se de processo administra vo norma vo que tem por objeto problema regulatório
+consistente em atualizar a disciplina dos Fundos Dedicados ao Setor de Saúde Suplementar, promovendo
+ajustes pontuais, basicamente, concentrados na revisão da nomenclatura dos instrumentos jurídicos
+celebrados com ins tuições financeiras parceiras; na definição dos requisitos para a seleção das
+ins tuições financeiras parceiras e na previsão da tecnologia a ser empregada para operacionalizar o
+trânsito de dados financeiros que viabiliza a supervisão dos Fundos Dedicados ao Setor de Saúde
+Suplementar.
+1.2.
+O obje vo da proposta é alterar a Resolução Norma va ANS nº 516, de 29 de abril de
+2022, que "regulamenta os critérios, diretrizes, obrigações e responsabilidades oriundos da formalização
+do convênio para aceitação de cotas de Fundo Dedicado ao Setor de Saúde Suplementar como A vos
+Garantidores", e a Resolução Normativa ANS nº 521, de 29 de abril de 2022, que "dispõe sobre aceitação,
+registro, vinculação, custódia, movimentação e limites de alocação e de concentração na aplicação dos
+ativos garantidores das operadoras no âmbito do sistema de saúde suplementar".
+1.3.
+A instauração do processo administra vo norma vo observa o disposto no ar go 3º da
+Resolução Administrativa nº 49, de 13 de abril de 2012:
+Art. 3° Os Diretores, Diretores-Adjuntos, no âmbito de seus órgãos regimentados, Procurador-
+Chefe, Ouvidor, Secretários, Auditor – Chefe, Corregedor e o Presidente da Comissão de É ca
+da ANS – CEANS, na forma prevista na Resolução Regimental – RR nº 01, de 13 de março de
+2017, e os grupos de trabalho cons tuídos pela Diretoria Colegiada - DICOL possuem
+legi midade para dar início ao processo administra vo norma vo. (Redação dada pela RA nº
+66, de 2017)
+Parágrafo único. A legi midade guardará per nência temá ca com as atribuições
+regimentais.
+ 
+1.4.
+O Diretor  tular da Diretoria de Normas e Habilitação das Operadoras, é autoridade
+competente - ou, na dicção da RA nº 49, de 2012, "possui legi midade" - para iniciar processos
+administra vos norma vos que disponham sobre garan as financeiras porque tal matéria é de
+competência da Diretoria sobre a qual exerce sua autoridade, conforme se extrai especialmente da
+alínea "c" do inciso I do ar go 26 do Regimento Interno da ANS - Resolução Regimental nº 21, de 26 de
+janeiro de 2022:
+Art. 26. À Diretoria de Normas e Habilitação das Operadoras - DIOPE compete:
+I - planejar as a vidades exercidas por suas Gerências-Gerais, bem como propor diretrizes
+para a saúde suplementar sobre:
+a) constituição, organização e funcionamento das operadoras;
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 1
+b) contabilidade, estaNs ca e dados atuariais, estes referentes às reservas e provisões das
+operadoras;
+c) critérios de cons.tuição de garan.as de manutenção do equilíbrio econômico-financeiro
+consistente em bens, móveis ou imóveis, ou fundos especiais ou seguros garantidores;
+d) parâmetros de capital e patrimônio líquido das operadoras;
+e) criação de fundo, contratação de seguro garan dor ou outros instrumentos que julgar
+adequados, com o obje vo de proteger o consumidor de planos privados de assistência à
+saúde em caso de insolvência das operadoras;
+f) Procedimentos de Adequação Econômico Financeira - PAEF das operadoras;
+g) regime de direção fiscal e liquidação extrajudicial nas operadoras;
+II - outorgar e cancelar o registro e a autorização de funcionamento das operadoras;
+III - autorizar a cisão, fusão, incorporação, alteração ou transferência do controle societário
+das operadoras, sem prejuízo do disposto em legislação específica;
+IV - inabilitar o exercício de cargos diretivos nas operadoras;
+V - aprovar as propostas de saneamento apresentadas pelas operadoras no curso do regime
+de direção fiscal;
+VI - proferir decisões no âmbito dos Procedimentos de Adequação Econômico-Financeira -
+PAEF;
+VII - elaborar relatórios estaNs cos setoriais da saúde suplementar, no âmbito de suas
+atribuições;
+VIII - desenvolver e manter, em conjunto com as demais áreas competentes, sistemas de
+informações compreendendo os dados cadastrais e econômico-financeiros das operadoras;
+IX - propor projetos de estudo e desenvolvimento do mercado, podendo servir-se de apoio
+técnico das demais gerências da ANS, sobre os assuntos de sua competência;
+X - propor a instauração de Câmaras Técnicas sobre os assuntos de sua competência;
+XI - aprovar os Termos de Assunção de Obrigações – TAO apresentados pelas Operadoras
+sobre os assuntos de sua competência;
+XII - representar a ANS junto a organizações nacionais e internacionais que estudam assuntos
+afetos à sua área e ao mercado de saúde suplementar, em especial os Subcomitês da
+International Association of Insurance Supervisors – IAIS;
+XIII - encaminhar à DIFIS, através da DIRAD e/ou suas gerências, comunicação acerca de
+indícios de infração por descumprimento da legislação de saúde suplementar, para apuração
+e aplicação das penalidades cabíveis, ressalvadas as hipóteses previstas no inciso XIV deste
+artigo;
+XIV - instaurar e instruir os processos administra vos para apuração de indícios de infrações
+às disposições legais ou infra legais disciplinadoras do mercado de saúde suplementar cujo
+monitoramento, análise ou solicitação sejam relacionados às suas competências; e
+XV – celebrar termo de compromisso.
+ 
+1.5.
+A instrução do processo administra vo norma vo observa o disposto no ar go 4º da RA
+nº 49, de 2012:
+Art. 4º O processo administrativo normativo deverá ser instruído, obrigatoriamente, com:
+I – (Revogado pela RN nº 548, de 10/10/2022)
+II - a Exposição de Motivos;
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 2
+III – a minuta do ato normativo proposto; e
+IV – o despacho de encaminhamento dos autos para a Procuradoria Federal Junto à ANS -
+PROGE, que deverá conter, além dos documentos listados nos incisos I, II e III:
+a) a assinatura da autoridade prevista no artigo 3º; e
+b) a indicação de servidor em exercício no órgão proponente que ficará responsável por
+acompanhar o processo e esclarecer as dúvidas eventualmente levantadas pela PROGE.
+§ 1º O encaminhamento de proposta de IN ou IS à PROGE ficará a critério da autoridade
+prevista no ar go 3º responsável pelo ato proposto, considerando, especialmente, a
+complexidade da minuta.
+§ 2º Na hipótese de Súmula Norma va, o processo deverá ser instruído ainda com o texto
+explica vo do ato norma vo proposto, para fins de divulgação no endereço eletrônico da ANS
+na Internet.
+ 
+1.6.
+Passa-se a expor a fundamentação e a jus fica va para o ato administra vo norma vo
+proposto.
+1.7.
+A fundamentação da presente proposta está expressa na Nota Técnica n.º
+689/2025/CESME/GEHAE/GGAME/DIRAD-DIOPE/DIOPE (SEI nº 34540987) e no Despacho n.º
+221/2025/CESME/GEHAE/GGAME/DIRAD-DIOPE/DIOPE (SEI 
+nº 34555726), que se tornam peças
+integrantes do presente voto, nos termos do § 1º do artigo 50 da Lei nº 9.784, de 29 de janeiro de 1999.
+1.8.
+A minuta do ato normativo proposto se encontra anexa (SEI nº 34540997).
+1.9.
+O despacho de encaminhamento dos autos para a Procuradoria Federal Junto à ANS -
+PROGE será proferido se e quando a Diretoria Colegiada entender por bem apreciar a proposta após
+consulta pública. Nesta ocasião será assinado pela autoridade competente indicado os servidores a quem
+a Procuradoria deverá se reportar para os fins da alínea "b" do inciso IV do ar go 4º da RA nº 49, de
+2012, por sinal, previamente apontados no Despacho n.º 221/2025/CESME/GEHAE/GGAME/DIRAD-
+DIOPE/DIOPE (SEI nº 34555726).
+1.10.
+O conteúdo da Exposição de Motivos é disciplinado pelo artigo 7º da RA nº 49, de 2012:
+Art. 7º A Exposição de Motivos deverá conter:
+I – jus fica va e fundamentação da edição do ato norma vo, de tal forma que possibilite a
+sua utilização como defesa em eventual argüição de ilegalidade ou inconstitucionalidade;
+II – explicitação da razão de o ato proposto ser o melhor instrumento norma vo para
+disciplinar a matéria;
+III – apontamento das normas legais e infralegais relacionadas com a matéria do ato
+normativo;
+IV – apontamento das normas afetadas ou revogadas pela proposição;
+V - apresentação de quadro compara vo entre o texto atual e o texto proposto da minuta
+quando se tratar de alteração ou revogação de ato normativo existente;
+VI – indicação de que não há aumento de despesas nas hipóteses de transformação ou
+qualquer  po de redistribuição de cargos comissionados e comissionados técnicos da ANS,
+conforme disposto no ar go 14 da Lei nº 9.986, de 18 de julho de 2000, a ser confirmada pelo
+órgão competente integrante da estrutura da ANS;
+VII – indicação da existência de prévia dotação orçamentária, quando a proposta demandar
+despesas;
+VIII – indicação da existência de impacto em sistemas de informação no âmbito da ANS;
+IX - indicação acerca da urgência para publicação, quando for o caso; e
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 3
+X – demais documentos que o órgão proponente julgar per nentes para fundamentar a sua
+proposta, sejam esses em mídia ou não.
+Parágrafo único. Ocorrendo mo vo superveniente para solicitação de análise com urgência,
+esta deverá também ser formulada por escrito.
+ 
+1.11.
+A justificativa e fundamentação para o ato proposto se encontra acima.
+1.12.
+O ato proposto, se adotado, adotará a forma de Resolução Norma va em atenção ao
+inciso IV do ar go 42 da RR nº 21, de 2022, e observando o princípio da simetria das formas, dado que a
+norma que será alterada é uma Resolução Normativa.
+1.13.
+As normas legais e infralegais relacionadas à matéria do ato norma vo são a alínea “d” do
+inciso IV e o parágrafo único do art. 35-A e o art. 35-L, ambos da Lei nº 9.656, de 3 de junho de 1998; o
+inciso XXIX do art. 4º e o inciso II do art. 10, II, ambos da Lei nº 9.961, de 28 de janeiro de 2000; e os atos
+administra vos norma vos a serem alterados, a Resolução Norma va ANS nº 516 e a Resolução
+Normativa ANS nº 521, ambas de 29 de abril de 2022.
+1.14.
+A alínea “d” do inciso IV e o parágrafo único do ar go 35-A e o ar go 35-L, ambos da Lei nº
+9.656, de 1998, dispõem sobre a competência da ANS para editar atos administra vos norma vos que
+disponham sobre a matéria ora examinada, enquadrada como "garan as de manutenção do equilíbrio
+econômico-financeiro", em referência à alínea "d" do inciso IV do ar go 35-A da Lei nº 9.656, de 1998, ou
+como "critérios de cons tuição de garan as de manutenção do equilíbrio econômico-financeiro,
+consistentes em bens, móveis ou imóveis, ou fundos especiais ou seguros garan dores", em referência
+ao ar go 35-L da Lei nº 9.656, de 1998, sendo a disciplina desta matéria a nente à competência para
+"fiscalizar o cumprimento das disposições da Lei no 9.656, de 1998, e de sua regulamentação", em
+referência ao inciso XXIX do artigo 4º da Lei nº 9.961, de 2000.
+1.15.
+A matéria é de competência da ANS, quer primária, sob o ângulo do inciso XXIX do ar go
+4º da Lei nº 9.961, de 2000, norma mais geral; quer subsidiária, sob o ângulo do parágrafo único do
+ar go 35-A da Lei nº 9.656, de 1998, norma mais específica, na ausência de norma adotada pelo
+Conselho de Saúde Suplementar - CONSU. O inciso II do ar go 10 da Lei nº 9.961, de 2000, trata da
+competência da Diretoria Colegiada da ANS para "editar normas sobre matérias de competência da
+ANS", o que, conjugado ao que dispõe o ar go 42 da Resolução Regimental nº 21, de 26 de janeiro de
+2022, significa adotar resoluções norma vas como "ato norma vo que disciplina matérias de
+competência legal normativa da ANS, sem inovar em relação às resoluções regimentais".
+1.16.
+Os atos administrativos normativos diretamente afetados pela proposição são a R esolução
+Normativa ANS nº 516 e a Resolução Normativa ANS nº 521, ambas de 29 de abril de 2022.
+1.17.
+As alterações propostas se inserem na moldura legal estabelecida para a disciplina da
+matéria, sendo de teor puramente discricionário.
+1.18.
+O quadro comparativo entre o texto atual e o texto projetado consta de SEI nº 34541491.
+1.19.
+Não se trata de transformação ou redistribuição de cargos comissionados ou
+comissionados técnicos.
+1.20.
+O ato proposto não demandará aumento nas despesas comportadas pela dotação
+orçamentária da ANS.
+1.21.
+Não há impacto em sistemas de informação no âmbito da ANS.
+1.22.
+Para os fins do inciso IX do ar go 7º da RA nº 49, de 2022 - solicitação de análise
+prioritária da Procuradoria - a publicação é urgente, considerando a necessidade de atualizar a disciplina
+da matéria, especialmente no que se refere à tecnologia a ser empregada para a supervisão dos Fundos
+Dedicados ao Setor de Saúde Suplementar, dado que a tecnologia atual é mais onerosa aos cofres
+públicos do que a tecnologia proposta, de modo que a adoção da tecnologia proposta vai ao encontro do
+princípio da economicidade (artigo 70 da Constituição da República).
+1.23.
+Todos os documentos pertinentes constam destes autos.
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 4
+1.24.
+Explicitada, assim, a Exposição de Motivos.
+1.25.
+Em atenção ao que dispõe o ar go 6º da Lei nº 13.848, de 25 de junho de 2019; o ar go 5º
+da Lei nº 13.874, de 20 de setembro de 2019; o Decreto nº 10.411, de 30 de junho de 2020, e a Resolução
+Norma va nº 548, de 10 de outubro de 2022, observa-se que a proposta se insere entre as hipóteses de
+dispensa de análise de impacto regulatório porque promove mudanças de baixo impacto regulatório.
+1.26.
+Está caracterizada, portanto, a hipótese de dispensa de análise de impacto regulatório
+prevista no inciso III do artigo 4º do Decreto nº 10.411, de 2019:
+Art. 4º A AIR poderá ser dispensada, desde que haja decisão fundamentada do órgão ou da
+entidade competente, nas hipóteses de:
+....................................................................................
+III - ato normativo considerado de baixo impacto;
+....................................................................................
+§ 1º Nas hipóteses de dispensa de AIR, será elaborada nota técnica ou documento
+equivalente que fundamente a proposta de edição ou de alteração do ato normativo.
+§ 2º Na hipótese de dispensa de AIR em razão de urgência, a nota técnica ou o documento
+equivalente de que trata o § 1º deverá, obrigatoriamente, iden ficar o problema regulatório
+que se pretende solucionar e os obje vos que se pretende alcançar, de modo a subsidiar a
+elaboração da ARR, observado o disposto no art. 12.
+§ 3º Ressalvadas informações com restrição de acesso, nos termos do disposto na Lei nº
+12.527, de 18 de novembro de 2011, a nota técnica ou o documento equivalente de que
+tratam o § 1º e o § 2º serão disponibilizados no sí o eletrônico do órgão ou da en dade
+competente, conforme definido nas normas próprias.
+ 
+1.27.
+Na mesma linha, a hipótese se enquadra no disposto no inciso III do ar go 8º da
+Resolução Normativa ANS nº 548, de 10 de outubro de 2022:
+Art. 8º A AIR poderá ser dispensada, por decisão da Diretoria Colegiada - DICOL, nos seguintes
+casos:
+...................................................................................
+III - ato normativo considerado de baixo impacto;
+...................................................................................
+§ 1º Nas hipóteses de dispensa de AIR, será publicada no site da Agência, nota técnica que
+mo ve a dispensa, fundamente a proposta de edição ou de alteração do ato norma vo,
+iden fique o problema regulatório que se pretende solucionar e os obje vos que se pretende
+alcançar, conforme estabelecido no Anexo I da presente Resolução Norma va, ressalvadas
+informações com restrição de acesso, nos termos do disposto na Lei nº 12.527, de 18 de
+novembro de 2011, regulamentada pelo Decreto nº 7.724, de 16 de maio de 2012.
+§ 2º Para os atos norma vos cuja AIR tenha sido dispensada, a nota técnica terá que constar o
+prazo máximo para a sua verificação quanto à necessidade de atualização do estoque
+regulatório.
+§ 3º Os atos norma vos cuja AIR tenha sido dispensada em razão de urgência serão objeto de
+Avaliação do Resultado Regulatório- ARR no prazo de três anos, contados da data de sua
+entrada em vigor.
+ 
+1.28.
+A Nota Técnica n.º 689/2025/CESME/GEHAE/GGAME/DIRAD-DIOPE/DIOPE (SEI nº
+34540987) cons tui a nota técnica que "mo ve a dispensa, fundamente a proposta de edição ou de
+alteração do ato norma vo, iden fique o problema regulatório que se pretende solucionar e os obje vos
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 5
+que se pretende alcançar", sendo que dela consta "o prazo máximo para a sua verificação quanto à
+necessidade de atualização do estoque regulatório", atendendo-se à estrutura prevista no Anexo I da RN
+nº 548, de 2022.
+1.29.
+Os §§ 2º e 3º do ar go 8º da RN nº 548, de 2022, preveem providências que já foram
+abordadas acima por ocasião do exame do atendimento aos ar gos 12 e 15 do Decreto nº 10.411, de
+2020.
+1.30.
+Foi demonstrado o atendimento de todas as formalidades do processo administra vo
+normativo.
+1.31.
+Por força do que dispõe o ar go 9º da Lei nº 13.848, de 25 de junho de 2019, é necessário
+encaminhar a proposta a consulta pública pelo prazo de 45 dias, mínimo previsto em lei, não parecendo
+ser a proposta sob exame coberta pelas situações em que a consulta pública seria imper nente ou
+poderia 
+ser 
+postergada, 
+hipóteses 
+essas 
+alinhadas 
+pela 
+Procuradoria 
+no 
+Parecer 
+nº
+59/2020/GECOS/PFANS/PGF/AGU:
+35. Em síntese, os destacados Pareceres reconhecem como exceções à regra da
+obrigatoriedade da consulta pública previamente à tomada de decisão os seguintes casos:
+a) Questões de natureza estritamente jurídica, sem qualquer alterna va regulatória,
+considerando que a par cipação pública serve para colher subsídios técnicos e fá cos para a
+tomada de decisão administra va e não para que seja prestado assessoramento jurídico para
+as agências, sendo certo que a a vidade de consultoria e de assessoramento jurídico das
+autarquias federais é competência outorgada por lei à Procuradoria-Geral Federal e seus
+órgãos.
+b) Urgência da alteração regulatória, haja vista que o prejuízo que pode causar a manutenção
+do status quo autoriza o uso do poder geral de cautela, devendo, para que isto ocorra, haver
+fundamentação técnica para a mudança que demonstre o fumus boni iuris, e também ficar
+expresso o perigo de demora para a alteração norma va, ficando a realização de consulta
+pública para momento posterior.
+c) Simples incorporação e organização formal de normas editadas pelo Governo Federal,
+desde que não haja qualquer alteração de conteúdo ou de mérito, nem qualquer alterna va
+regulatória, o que deve ser avaliado de acordo com as peculiaridades de cada caso concreto
+(nessa hipótese, poder-se-ia também incluir o simples cumprimento de determinações legais,
+em que não haja opção regulatória, bem como a consolidação de normas vigentes editadas
+pela própria agência, sem qualquer alteração de mérito ou conteúdo, e ainda, a revogação de
+normas obsoletas ou as propostas de alterações estritamente formais em normas vigentes:
+situações de total inexistência de escolha por parte da agência, e, sendo a consulta pública
+um elemento de suporte e legitimação das escolhas feitas pela agência, não há porque realizá-
+la quando inexistir qualquer escolha).
+36. Outro caso que pode ser acrescentado a essa relação consta da Lei nº 13.655/2018, de 25
+de abril de 2018, que incluiu no Decreto-Lei nº 4.657, de 4 de setembro de 1942, disposições
+sobre segurança jurídica e eficiência na criação e na aplicação do direito público. No art. 29
+introduzido no supracitado Decreto está dito que "em qualquer órgão ou Poder, a edição de
+atos norma vos por autoridade administra va, salvo os de mera organização interna, poderá
+ser precedida de consulta pública para manifestação de interessados, preferencialmente por
+meio eletrônico, a qual será considerada na decisão".
+37. Assim, a princípio, atos norma vos de mera organização interna não se submetem à regra
+da prévia realização de consulta pública.
+38. Vale destacar que, enquanto norma geral, o art. 29 do Decreto-Lei nº 4.657/1942,
+introduzido pela Lei nº 13.655/2018, não foi revogado ou modificado pelo art. 9º da Lei nº
+13.848/2019, que cuida de norma especial (Art. 2º, § 2º, do Decreto-Lei nº 4.657/1942: A lei
+nova, que estabeleça disposições gerais ou especiais a par das já existentes, não revoga nem
+modifica a lei anterior).
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 6
+39. De todo modo, importa ressaltar que a regra insculpida na Lei nº 13.848/2019 é a
+realização de consulta pública como condição sine qua non para a edição de atos norma vos
+de interesse geral.
+40. Com efeito, a consulta pública, como disciplinada pelo art. 9º da Lei nº 13.848/2019,
+compõe o devido processo regulatório na a vidade norma va das agências reguladoras,
+apresentando-se como importante instrumento legi mador de sua atuação e um critério
+adicional a ser observado pelo Judiciário no desempenho de sua atividade de controle.
+41. Faz parte do controle judicial da a vidade norma va da Administração a apreciação dos
+procedimentos em si mesmos, para verificar se foram convenientemente conduzidos. Daí a
+imprescindibilidade da escrupulosa observância dos ritos previstos em lei.
+ 
+1.32.
+Com efeito: (i) não se trata de matéria estritamente jurídica sem qualquer alterna va
+regulatória, ao contrário: trata-se de matéria estritamente técnica; (ii) embora se trate de proposta que
+requer tramitação urgente, não se trata de matéria que revele periculum in mora, risco de dano
+iminente, que jus fique a adoção de medida cautelar administra va, de modo a, num procedimento de
+ponderação de bens e interesses, afastar a exigência legal de prévia par cipação social; (iii) não se trata
+de simples incorporação e organização formal de normas editadas pelo Governo Federal, desde que não
+haja qualquer alteração de conteúdo ou de mérito, nem qualquer alterna va regulatória; ao contrário:
+trata-se de ato circunstanciado especificamente no âmbito do setor de saúde suplementar que é fruto de
+atuação inovadora da ANS; e (iv) não se trata de ato de mera organização interna.
+1.33.
+Estando o processo devidamente instruído, passo ao encaminhamento para deliberação.
+2.
+CONCLUSÃO
+2.1.
+Ante ao exposto, voto (i) pela dispensa da Análise de Impacto Regulatório com base no
+ar go 4º, inciso III, do Decreto n.º 10.411, de 30 de junho de 2020, e ar go 8º, inciso III, da Resolução
+Normativa n.º 548, de 10 de outubro de 2022, por ser considerado um ato normativo de baixo impacto; e
+(ii) pela realização de consulta pública pelo prazo de 45 (quarenta e cinco) dias para propiciar à sociedade
+civil e aos agentes regulados a possibilidade de apresentar sugestões e contribuições para a proposta de
+alteração das Resoluções Normativas nº 516 e 521, ambas de 29 de abril de 2022.
+Rio de Janeiro, na data da assinatura.
+ 
+JORGE ANTÔNIO AQUINO LOPES
+Diretor de Normas e Habilitação das Operadoras
+Documento assinado eletronicamente por Jorge Antonio Aquino Lopes, Diretor(a) de Normas e
+Habilitação das Operadoras, em 22/12/2025, às 10:18, conforme horário oficial de Brasília, com
+fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 34555750 e o código CRC
+C26C1984.
+Referência: Processo nº 33910.057923/2025-96
+SEI nº 34555750
+Voto 10 (34555750)         SEI 33910.057923/2025-96 / pg. 7
+ 
+PROCESSO Nº: 33910.057923/2025-96
+NOTA TÉCNICA Nº 689/2025/CESME/GEHAE/GGAME/DIRAD-DIOPE/DIOPE
+ 
+Interessado:
+COORDENADORIA DE ESTUDOS DE MERCADO
+Registro ANS: CESME
+ 
+1.
+ALTERAÇÃO DAS RESOLUÇÕES NORMATIVAS Nº 516/22 E 521/22
+1.1.
+Apresenta-se nesta nota técnica sugestão de alteração das resoluções normava nº
+516/22 e 521/22 que regulamentam, respecvamente, os critérios, diretrizes, obrigações e
+responsabilidades oriundos da formalização do convênio para aceitação de cotas de Fundo Dedicado ao
+Setor de Saúde Suplementar como Avos Garandores e; aceitação, registro, vinculação, custódia,
+movimentação e limites de alocação e de concentração na aplicação dos avos garandores das
+operadoras no âmbito do sistema de saúde suplementar.
+1.2.
+Dada o grau atual de maturidade do mercado de saúde suplementar, entende-se que as
+operadoras, como gestoras de seu negócio, devem possuir capacidade técnica de avaliação dos riscos
+associados aos seus invesmentos financeiros e, com isso, assumirem a responsabilidade por todos os
+aspectos neste processos, respeitando os limites impostos na resolução normava que trata dos critérios
+para invesmento em avos garandores bem como na definição do patrimônio líquido ajustado, que
+serve para aferição da adequação do capital regulatório.
+1.3.
+Com base nisso, é possível relaxar as obrigações impostas inicialmente pela ANS aos
+fundos classificados como 'Fundos dedicados ao setor de saúde suplementar', aumentando a
+concorrência neste mercado, considerando as vantagens advindas desta concorrência, entre elas a
+diminuição de custos para os detentores das cotas destes fundos e, ainda, a diminuição dos custos
+regulatórios para a ANS, sem aumento dos riscos ao setor de saúde suplementar.
+1.4.
+Aqui cabe destacar a movação inicial das obrigações colocadas quando da instuição
+desta classificação de fundos de invesmentos, sejam elas o incenvo da entrada de grandes
+parcipantes do mercado financeiro neste setor bem como a preocupação com o oferecimento de
+fundos cujos administradores e/ou gestores trouxessem riscos demasiados para as operadoras de plano
+de saúde contratantes.
+1.5.
+Em ambos os casos, tais obrigações não se mostram mais necessárias, ou mesmo
+adequadas, visto que já há grande diversidade de participantes ofertando estes fundos às operadoras.
+1.6.
+Ademais, como dito anteriormente, entende-se que após anos de regulação deste
+mercado e da criação destes fundos, as operadoras devem possuir capacidade de avaliação dos riscos
+assumidos em seus invesmentos financeiros, não cabendo ao regulador a verificação de adequação
+destes entes aos objevos propostos, considerando-se ainda que todos os fundos enquadrados nesta
+categoria são regulados e fiscalizados pelo órgão competente para isso, qual seja, a Comissão de Valores
+Mobiliários, além do fato da composição destes fundos também ser vinculada aos limites e às regras de
+diversificação impostas aos ativos garantidores das operadoras de planos de saúde pela RN nº 521/22.
+1.7.
+Também foi verificada a necessidade de adequação do texto do normavo em voga às
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 8
+determinações impostas tanto pelo Decreto nº 11.531/2023 quanto pela Portaria SEGES/MGI nº
+3.506/2025, conforme orientações da PROGE no PARECER n. 00084/2024/GEADM/PFANS/PGF/AGU (SEI
+nº 30453200).
+1.8.
+Por fim, ainda no escopo da alteração das retromencionadas resoluções normavas, cabe
+destacar o fim do monopólio da empresa RTM para o fornecimento de informações financeiras
+necessárias ao monitoramentos dos avos financeiros das endades supervisionadas pela ANS, trazendo
+neste ensejo, a necessidade de adaptação normativa a esta condição.
+1.9.
+Sob essa égide, tem-se que a ANS contratou os serviços da RTM em 2002, para que os
+usuários da DIOPE pudessem ter acesso à Financial Net, Extranet privava, desnada ao mercado
+financeiro brasileiro, que oferecia acesso a diversos provedores de serviços e informações em um único
+ambiente operacional sendo, à época a única empresa capaz de conectar a ANS ao mercado financeiro
+através de uma infraestrutura de telecomunicações que possibilitava receber informações de custódia de
+avos das operadoras de plano de saúde nas centrais de custódia (B3/CETIP e SELIC). A conexão entre a
+ANS e a RTM é feita pelos mes técnicos da RTM junto às operadoras de telecomunicação, que
+providenciaram a instalação, testes e liberação da conexão, juntamente com técnicos da RTM, sendo a
+RTM somente o meio de acesso, com a integridade das informações oferecidas de responsabilidade do
+respectivo provedor.
+1.10.
+Na ANS, a conexão da RTM também era ulizada para receber os diversos arquivos das
+instuições financeiras que possuíam convênio (posteriormente Acordos de Cooperação Técnica) com a
+ANS para oferecimento de Fundos Dedicados ao setor de Saúde Suplementar - FDSS. No entanto,
+considerando a evolução tecnológica, durante o ano de 2024, a CESME e a GETI estudaram a
+possibilidade de realizar a conexão com as centrais de custódia e administradoras de FDSS sem a
+necessidade de ulizar a conexão da RTM, uma vez que as conexões com a CSD e com o segmento de
+listados da B3 já haviam sido desenvolvidas (também em 2024) diretamente, sem passar pela RTM. Após
+conversas com a B3 e o BACEN, foi verificado com ambas as instuições a viabilidade da mudança. Dado
+que a B3 já possuía previsão de conexão para o ambiente de balcão fora da RTM e o BACEN possibilitou a
+disponibilização dos arquivos através do Sistema de Transferência de Arquivos (STA), dentro do
+SISBACEN, para o qual a ANS já possuía convênio e acesso, o que gerou apenas a necessidade de
+desenvolvimento de uma API por parte da ANS para automatizar a recepção dos arquivos.
+1.11.
+Quanto aos administradores de FDSS, a GETI possibilitou a conexão através de SFTP
+(Secure File Transfer Protocol) - SSH File Transfer Protocol diretamente via IP público e, adicionalmente,
+possibilitou o estabelecimento de túnel VPN IPsec Site-to-Site (S2S) combinado com o protocolo SFTP,
+que garante a confidencialidade e integridade dos dados durante a transferência, ulizando criptografia
+SSH. A VPN site-to-site, por sua vez, estabelece um túnel seguro entre duas redes, permindo que os
+dados trafeguem de forma criptografada e, juntos, eles proporcionam uma solução segura para a
+transferência de arquivos sensíveis.
+1.12.
+Destaque-se, por fim, que o contrato com a RTM termina em 11/03/2026 e até lá toda a
+comunicação da ANS com as centrais de custódia e administradoras de FDDS já terá sido migrada para
+fora do ambiente RTM.
+2.
+DA PROPOSTA DE ALTERAÇÃO NORMATIVA
+2.1.
+Assim, sugere-se a exnção da exigência de documento que comprove a classificação de
+"baixo risco de crédito" fornecida por agências classificadoras de risco em atuação no Brasil,
+considerando-se o grau de maturidade dos parcipantes do setor, que devem ser capazes de avaliar e
+selecionar seus parceiros de negócio com liberdade, desde que observados níveis de risco aceitáveis.
+Adicionalmente, todos os fundos de invesmento, incluindo aqui, obviamente, aqueles dedicados ao
+setor de saúde suplementar, se reportam à Comissão de Valores Mobiliários (CVM), órgão responsável
+por sua regulação e fiscalização.
+2.2.
+Ainda, é necessária a adequação dos termos do normavo às determinações impostas
+tanto pelo Decreto nº 11.531/2023 quanto pela Portaria SEGES/MGI nº 3.506/2025, com a celebração de
+acordos de cooperação técnica, em substituição aos convênios anteriormente firmados.
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 9
+2.3.
+Também são propostos ajustes referentes ao fim do contrato com a RTM, conforme
+apresentado anteriormente e adequações no texto de forma a refler prácas já presentes nos acordos
+de cooperação técnica firmados.
+2.4.
+O quadro comparavo encontra-se acostado a este processo, em anexo a esta Nota
+Técnica, sob o número SEI 34541491, assim como a minuta de norma (SEI nº 34540997).
+DE
+PARA
+Justificativa
+RN 516
+Art. 1º Esta Resolução Normativa
+regulamenta os critérios, diretrizes,
+obrigações e responsabilidades oriundos
+da formalização do convênio para
+aceitação de cotas de Fundo Dedicado ao
+Setor de Saúde Suplementar como ativos
+garantidores.
+Art. 1º Esta Resolução Normativa regulamenta os
+critérios, diretrizes, obrigações e
+responsabilidades oriundos da formalização do
+convêniode Acordo de Cooperação Técnica para
+aceitação de cotas de Fundo Dedicado ao Setor
+de Saúde Suplementar como ativos garantidores.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 2°
+III - as entidades financeiras
+administradoras de carteira deverão
+manter preposto, aceito pela ANS,
+responsável pela gestão das informações
+relacionas ao Fundo Dedicado; e
+Art. 2°
+III - as entidades financeiras administradoras de
+carteira deverão manter prepostorepresentantes
+titular e suplente, previamente indicados à ANS,
+responsáveis pela gestão das informações
+relacionadas ao Fundo Dedicado e ao Acordo de
+Cooperação Técnica; e
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 3°
+I - documento que comprove a
+classificação de "baixo risco de crédito"
+fornecida por alguma das agências
+classificadoras de risco em atuação no
+Brasil, em período máximo que anteceder
+seis meses da data da apresentação da
+proposta. Esta avaliação deverá ser
+renovada semestralmente com idêntica
+classificação de risco;
+Art. 3°
+I - documento que comprove a classificação de
+"baixo risco de crédito" fornecida por alguma das
+agências classificadoras de risco em atuação no
+Brasil, em período máximo que anteceder seis
+meses da data da apresentação da proposta.
+Esta avaliação deverá ser renovada
+semestralmente com idêntica classificação de
+risco;
+REVOGADO
+Considerando-se o grau de
+maturidade dos participantes do setor,
+que devem ser capazes de avaliar e
+selecionar seus parceiros de negócio
+com liberdade, desde que observados
+níveis de risco aceitáveis. Ainda,
+todos os fundos de investimento,
+estão sob a regulação da Comissão
+de Valores Mobiliários (CVM), órgão
+responsável por sua regulação e
+fiscalização.
+Art. 5º O fundo, objeto do convênio,
+denominado Fundo Dedicado ao Setor de
+Saúde Suplementar, deverá obedecer aos
+seguintes requisitos para que suas cotas
+possam ser aceitas pela ANS como ativo
+garantidor:
+Art. 5º O fundo, objeto convêniode Acordo de
+Cooperação Técnica, denominado Fundo
+Dedicado ao Setor de Saúde Suplementar,
+deverá obedecer aos seguintes requisitos para
+que suas cotas possam ser aceitas pela ANS
+como ativo garantidor:
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 5º
+III - esteja enquadrado em uma das
+modalidades de fundos de investimentos
+financeiros 
+previsto 
+na 
+Resolução
+Normativa nº 521, de 2022; e
+ 
+Art. 5º
+III - esteja enquadrado em uma das modalidades
+de fundos de investimentos financeiros previsto
+na Resolução Normativa nº 521, de 2022; e
+REVOGADO
+Eliminação de redundância - limitação
+já é prevista na RN nº 521
+Art. 6º Aprovada a proposta inicial, a
+entidade financeira administradora e a ANS
+poderão celebrar convênio onde ficará
+estabelecido o detalhamento das
+obrigações da entidade financeira
+administradora, devendo conter, no
+mínimo, as seguintes especificações:
+Art. 6º Aprovada a proposta inicial, a entidade
+financeira administradora e a ANS poderão
+celebrar convênio Acordo de Cooperação
+Técnica onde ficará estabelecido o detalhamento
+das obrigações da entidade financeira
+administradora, devendo conter, no mínimo, as
+seguintes especificações:
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 10
+Art. 7º O convênio deverá disciplinar o
+envio das informações periódicas à ANS
+acerca da posição individual dos cotistas
+operadoras de planos de saúde cujas
+cotas estejam vinculadas à ANS como
+ativo garantidor, tais como:
+Art. 7º O convênio Acordo de Cooperação
+Técnica deverá disciplinar o envio das
+informações periódicas à ANS, o que inclui a
+composição da carteira do Fundo Dedicado e
+acerca da posição individual dos cotistas
+operadoras de planos de saúde cujas cotas
+estejam vinculadas à ANS como ativo garantidor,
+tais como:
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 7°
+V - movimentação realizada no período
+(aplicações e resgates).
+Art. 7°
+V - movimentação realizada no período
+(aplicações e resgates). Bloqueio judicial.
+Adaptação ao que já se pratica e é
+estabelecido nos ACTs dado que esta
+informação não é solicitada pela ANS;
+e adição de informação acerca de
+eventual bloqueio judicial
+Art. 7°
+§ 1º As informações individuais acima
+deverão ser enviadas a ANS mensalmente,
+sendo que a ANS poderá, a qualquer
+tempo, solicitar informação adicional que
+julgar necessária.
+Art. 7°
+§ 1º As informações individuais acima deverão
+ser enviadas a ANS diariamente ou
+mensalmente, de acordo com sua natureza e
+conforme estabelecido no Acordo de
+Cooperação Técnica, sendo que a ANS poderá,
+a qualquer tempo, solicitar informação adicional
+que julgar necessária.
+Adaptação ao que já se prática e é
+estabelecido nos ACTs
+Art. 7°
+§ 2º O envio das informações à ANS se
+dará através de arquivo texto (.txt),
+seguindo formatação a ser fornecida pela
+ANS no ato do convênio, disponibilizado
+em um servidor para transferência via rede
+RTM, com acesso restrito à ANS e
+validação de usuário e senha.
+Art. 7°
+§ 2º O envio das informações à ANS se dará
+através de arquivo texto (.txt)eletrônico, seguindo
+formatação a ser fornecida definida pela ANS no
+ato do convênioem manual próprio,
+disponibilizado em um servidorvia Secure File
+Transfer Protocol (SFTP) para transferência via
+rede RTM, com acesso restrito à ANS e
+validação de usuário e senha.
+Exclusão da menção à RTM e ajuste
+no detalhe técnico
+Art. 8º A entidade financeira conveniada
+deverá se comprometer em requisitar
+autorização dos cotistas Operadoras de
+Planos de Saúde para a divulgação para a
+ANS das informações de custódia, de que
+trata o artigo 7º desta Resolução
+Normativa.
+Art. 8º A instituição financeira administradora que
+possua Acordo de Cooperação Técnica com a
+ANS entidade financeira conveniada deverá se
+comprometer em requisitar autorização dos
+cotistas operadoras de Planos de Saúde para a
+divulgação para a ANS das informações de
+custódia, de que trata o artigo 7º.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 9º Uma vez firmado o convênio com a
+ANS, a entidade estará obrigada a manter
+todas as características do produto nos
+moldes estabelecidos, bem como todos os
+procedimentos acordados, sob a pena de
+rescisão unilateral do convênio que
+culminará na imediata desqualificação do
+produto como fundo dedicado ao setor de
+saúde suplementar.
+Art. 9º Uma vez firmado o convênio Acordo de
+Cooperação Técnica com a ANS, a entidade
+estará obrigada a manter todas as características
+do produto nos moldes estabelecidos, bem como
+todos os procedimentos acordados, sob a pena
+de rescisão unilateral do convênio Acordo de
+Cooperação Técnica que culminará na imediata
+desqualificação do produto como fundo dedicado
+ao setor de saúde suplementar.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+RN 521
+Art. 4°
+VI - fundo de investimento dedicado ao
+setor de saúde suplementar: o fundo de
+investimento financeiro disponível em
+instituições financeiras administradoras
+conveniadas à ANS;
+Art. 4°
+VI - fundo de investimento dedicado ao setor de
+saúde suplementar: o fundo de investimento
+financeiro disponível em instituições financeiras
+administradoras que celebrem Acordo de
+Cooperação Técnica com aconveniadas ANS;
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 11
+3.
+DA DISPENSA DE ANÁLISE DE IMPACTO REGULATÓRIO
+3.1.
+Por consumir tempo e envolver custos em contextos de proposições normavas de baixa
+relevância ou pela urgência da decisão, a AIR poderá ser considerada inaplicável ou, ainda, dispensada.
+Tais hipóteses foram expressamente previstas no art. 3º, § 2º, e no art. 4º do Decreto nº 10.411, de
+2020:
+“Art. 4º A AIR poderá ser dispensada, desde que haja decisão
+fundamentada do órgão ou da en*dade competente, nas hipóteses
+de:
+I - urgência;
+II - ato norma*vo des*nado a disciplinar direitos ou obrigações
+definidos em norma hierarquicamente superior que não permita,
+técnica ou juridicamente, diferentes alternativas regulatórias;
+III - ato normativo considerado de baixo impacto;
+IV - ato norma*vo que vise à atualização ou à revogação de normas
+consideradas obsoletas, sem alteração de mérito;
+V - ato normativo que vise a preservar liquidez, solvência ou higidez:
+a) dos mercados de seguro, de resseguro, de capitalização e de
+previdência complementar;
+b) dos mercados financeiros, de capitais e de câmbio; ou
+c) dos sistemas de pagamentos;
+VI - ato norma*vo que vise a manter a convergência a padrões
+internacionais;
+Seção III
+Convênio
+ 
+Seção III
+ConvênioAcordo de Cooperação Técnica
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 13. As operadoras que optarem por
+adquirir quotas de fundo de investimento
+dedicado ao setor de saúde suplementar,
+cujas instituições financeiras
+administradoras possuam convênio com a
+ANS, estarão isentas da necessidade de
+custódia dessas quotas.
+Art. 13. As operadoras que optarem por adquirir
+quotas de fundo de investimento dedicado ao
+setor de saúde suplementar, cujas instituições
+financeiras administradoras celebrem convênio
+Acordo de Cooperação Técnica com a ANS,
+estarão isentas da necessidade de custódia
+dessas quotas.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+ 
+Art. 13
+§ 1º O convênio que trata o caput deverá
+prever que as quotas estarão vinculadas à
+ANS, a qual poderá consultar o montante
+total de quotas adquiridas e ordenar o
+bloqueio e desbloqueio, total ou parcial, a
+qualquer momento, de todos os valores
+aplicados em nome da operadora.
+Art. 13
+§ 1º O convênio Acordo de Cooperação Técnica
+que trata o caput deverá prever que as quotas
+estarão vinculadas à ANS, a qual poderá
+consultar o montante total de quotas adquiridas e
+ordenar o bloqueio e desbloqueio, total ou
+parcial, a qualquer momento, de todos os valores
+aplicados em nome da operadora.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Art. 13
+§ 2° Os critérios e condições para a
+celebração do convênio com a ANS para
+gerir os fundos de investimento dedicados
+ao setor de saúde suplementar serão
+definidos pela DIOPE em regulamentação
+específica.
+Art. 13
+§ 2° Os critérios e condições para a celebração
+do convênio Acordo de Cooperação Técnica com
+a ANS para gerir os fundos de investimento
+dedicados ao setor de saúde suplementar serão
+definidos pela DIOPE em regulamentação
+específica.
+Adequação aos artigos 24 e 25 do
+Decreto nº 11.531/2023 e à Portaria
+SEGES/MGI nº 3.506/2025
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 12
+VII - ato norma*vo que reduza exigências, obrigações, restrições,
+requerimentos ou especificações com o obje*vo de diminuir os custos
+regulatórios; e
+VIII - ato norma*vo que revise normas desatualizadas para adequá-
+las ao desenvolvimento tecnológico consolidado internacionalmente,
+nos termos do disposto noDecreto nº 10.229, de 5 de fevereiro de
+2020.”
+O documento “Diretrizes gerais e guia orienta*vo para elaboração de
+Análise de Impacto Regulatório”, da Casa Civil, detalha outros
+contextos em que pode ser justificada a não aplicabilidade da AIR.
+“I – atos norma*vos de natureza administra*va, cujos efeitos sejam
+restritos à própria Agência Reguladora, órgão ou en*dade da
+administração pública;
+II – atos norma*vos de efeitos concretos, voltados a disciplinar
+situação específica e que tenham destinatários individualizados;
+III – atos norma*vos que visam correção de erros de sintaxe,
+ortografia, pontuação, *pográficos, de numeração de normas
+previamente publicadas;
+IV – atos norma*vos que visam revogação ou atualização de normas
+obsoletas, sem alteração de mérito; e
+V – atos norma*vos que visam consolidar outras normas sobre
+determinada matéria, sem alteração de mérito”
+3.2.
+O argo 8º da RN n.º 548, de 2022 que dispõe sobre o processo de Análise de Impacto
+Regulatório (AIR) e sobre o processo de Parcipação Social (PS) no âmbito da Agência Nacional de Saúde
+Suplementar e revoga a Resolução Normava nº 242, de 7 de dezembro de 2010, e disposivos da
+Resolução Administrava nº 49, de 13 de abril de 2012, é no mesmo sendo, possibilitando a dispensa
+de AIR nos seguintes casos:
+Art. 8º A AIR poderá ser dispensada, por decisão da Diretoria
+Colegiada – DICOL, nos seguintes casos:
+I – de urgência, desde que devidamente fundamentados e jus*ficados
+pelo diretor competente;
+II – ato norma*vo des*nado a disciplinar direitos ou obrigações
+definidos em norma hierarquicamente superior que não permita,
+técnica ou juridicamente, diferentes alternativas regulatórias;
+III – ato normativo considerado de baixo impacto;
+IV – ato norma*vo que vise à atualização ou à revogação de normas
+consideradas obsoletas, sem alteração de mérito;
+V – ato norma*vo que vise a manter a convergência a padrões
+internacionais; e
+VI – ato norma*vo que reduza exigências, obrigações, restrições,
+requerimentos ou especificações com o obje*vo de diminuir os custos
+regulatórios.
+3.3.
+Nesse contexto, entende-se que apropostade alteração normavaapresentada na
+presente Nota Técnica atendeaos critérios de dispensa de Análise de Impacto Regulatório, elencados
+noDecreto nº 10.411, de 2020 e nas“Diretrizes gerais e guia orientavo para elaboração de Análise de
+Impacto Regulatório”, pelo seu baixo impacto.
+3.4.
+Atendendo-se à estrutura prevista no Anexo I da RN nº 548, de 2022, que adota a forma
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 13
+de um quadro sintético que se passa a preencher abaixo:
+NOTA TÉCNICA DE DISPENSA DE AIR
+Tema
+Atualização da Disciplina dos Fundos Dedicados ao Setor de Saúde Suplementar
+Diretoria
+Diretoria de Normas e Habilitação das Operadoras
+Gerência
+GEHAE/GGAME/DIOPE
+Equipe Técnica
+Responsável
+Alexandre Fiori Pregueiro e Washington Oliveira Alves
+1 - Introdução
+Trata-se de proposta de Resolução Normativa que altera a Resolução Normativa nº 516, de 2022, e
+a Resolução Normativa nº 521, de 2022, promovendo ajustes pontuais, basicamente,
+concentrados na revisão da nomenclatura dos instrumentos jurídicos celebrados com
+instituições financeiras parceiras; na definição dos requisitos para a seleção das
+instituições financeiras parceiras e na previsão da tecnologia a ser empregada para
+operacionalizar o trânsito de dados financeiros que viabiliza a supervisão dos Fundos
+Dedicados ao Setor de Saúde Suplementar.
+2 - Descrição do
+Problema
+Regulatório
+Constata-se que a disciplina atual dos Fundos Dedicados ao Setor de Saúde Suplementar utiliza
+terminologia defasada para se referir ao instrumento jurídico que documenta a parceria entre a
+ANS e as instituições financeiras que oferecem estes fundos; que a disciplina atual estabelece
+barreiras à entrada de instituições financeiras parceiras que não mais se justificam e que a
+disciplina atual não prevê a utilização da tecnologia menos onerosa para os cofres públicos dentre
+as alternativas disponíveis no mercado para a supervisão dos fundos. 
+3 - Quais são os
+objetivos que se
+pretende
+alcançar?
+Pretende-se alinhar a terminologia empregada para se referir aos termos jurídicos com a
+terminologia mais atual adotada pela Administração Pública Federal para se referir aos
+instrumentos jurídicos de suas parcerias; reduzir as barreiras à entrada de instituições financeiras
+parceiras e reduzir o custo de supervisão da ANS. 
+4 - Motivação do
+pedido de
+dispensa de AIR
+Inciso III do artigo 4º do Decreto nº 10.411, de 2020, e inciso III do artigo 8º da RN nº 548, de 2022.
+5 - Conclusão
+A proposta, caso aprovada, alcançará os objetivos propostos, que são socialmente relevantes por
+implicar maior adequação à moldura legal no que se refere à nomenclatura utilizada; maior
+concorrência entre instituições financeiras parceiras e maior economicidade para a ANS.
+6 - Prazo
+máximo para
+verificação do
+ato normativo
+quanto à
+necessidade de
+atualização do
+estoque
+regulatório
+5 anos
+ 
+4.
+CONCLUSÃO
+4.1.
+A alteração proposta busca ajustar o normavo vigente ao fim do contrato com a RTM,
+atribuir mais autonomia e responsabilidade das operadoras na gestão de seu negócio, e ainda ajustar os
+termos do normativo à atual necessidade, respeitando o rito formal sugerido.
+4.2.
+Com o intuito depermir contribuições e sugestões por parte dos agentes regulados e
+demais interessados, sugere-seque sejarealizada consulta pública, como forma de colher subsídios
+adicionais da sociedade em relação à proposta aqui apresentada.
+4.3.
+Sendo essas as considerações, submeta-se a consideração superior.
+OBS.: Atenção - Antes de assinar verifique se possui autoridade no Regimento interno da ANS
+para assinar este tipo de documento.
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 14
+Documento assinado eletronicamente por Alexandre Fiori Pregueiro, Assessor(a), em 09/12/2025, às
+17:36, conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543,
+de 13 de novembro de 2020.
+Documento assinado eletronicamente por Washington Oliveira Alves, Gerente de Habilitação e
+Estudos de Mercado, em 10/12/2025, às 12:03, conforme horário oficial de Brasília, com fundamento
+no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Documento assinado eletronicamente por Bruno Martins Rodrigues, Gerente-Geral de
+Acompanhamento Econômico-Financeiro das Operadoras e Mercado, em 10/12/2025, às 14:15,
+conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de
+novembro de 2020.
+Documento assinado eletronicamente por Leonardo Fernandes Ferreira, Coordenador(a) de Estudos
+de Mercado, em 10/12/2025, às 14:18, conforme horário oficial de Brasília, com fundamento no §
+3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Documento assinado eletronicamente por Cesar Brenha Rocha Serra, Diretor(a)-Adjunto(a) da DIOPE,
+em 10/12/2025, às 14:37, conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do
+Decreto nº 10.543, de 13 de novembro de 2020.
+Documento assinado eletronicamente por FERNANDA FREIRE DE ARAUJO, Assessor(a), em
+16/12/2025, às 16:41, conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do
+Decreto nº 10.543, de 13 de novembro de 2020.
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 34540987 e o código CRC
+029D2325.
+Referência: Processo nº 33910.057923/2025-96
+SEI nº 34540987
+Nota Técnica 689 (34540987)         SEI 33910.057923/2025-96 / pg. 15

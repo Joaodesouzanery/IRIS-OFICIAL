@@ -1,0 +1,1382 @@
+ 
+PROCESSO Nº: 33910.048937/2025-19
+VOTO Nº 595/2025/DIPRO
+ 
+DIRETOR
+Diretor de Normas e Habilitação dos Produtos
+ASSUNTO
+Atualização do Rol de Procedimentos e Eventos em Saúde. Procedimento definido pela Lei nº 14.307, de 03 de março de 2022. Abertura de Consulta Pública e Audiência
+Pública.
+DOCUMENTOS RELACIONADOS
+Relatório Preliminar da COSAÚDE UAT nº 186 (35008838).
+Relatório Preliminar da COSAÚDE UAT nº 189 ( 35008841).
+Relatório Preliminar da COSAÚDE UAT nº 190 ( 34145031).
+Nota Técnica nº 46/2025/GCITS/GGRAS/DIRAD-DIPRO/DIPRO(35008871).
+REFERÊNCIA
+Resolução Normativa n.º 555, de 14 de dezembro de 2022.
+RN nº 465, de 24 de fevereiro de 2021.
+RN n.º 548, DE 10 de outubro de 2022.
+Resolução Regimental - RR nº 21, de 26 de janeiro de 2022.
+Parecer nº 00055/2021/GECOS/PFANS/PGF/AGU.
+Lei nº 14.307, de 03 de março de 2022.
+Lei nº 13.848, de 25 de junho de 2019.
+Lei nº 9.961, de 28 de janeiro de 2000.
+Lei nº 9.656, de 03 de junho de 1998.
+Decreto nº 10.411, de 30 de junho de 2020.
+RELATÓRIO
+Senhoras e senhores membros da Diretoria Colegiada,
+Trata-se de proposta de Resolução Norma@va que visa a atualização do Rol de Procedimentos e Eventos em Saúde, nos moldes do que foi determinado pela
+Lei nº 14.307, de 2022, que alterou a Lei nº 9.656, de 1998.
+Com a edição da Lei nº 14.307, de 2022, inaugurou-se o prazo de 180 (cento e oitenta) dias para que a ANS editasse normas que dessem o devido
+cumprimento às alterações dispostas: “Art. 3º A ANS editará normas para o devido cumprimento desta Lei no prazo de 180 (cento e oitenta) dias.” 
+Diante das novas disposições legais em vigor, constatou-se a necessidade de unificar as Resoluções Norma@vas RN nº 470, de 2021 e nº 474, de 2021,
+consolidando-as em uma nova RN e promovendo as atualizações impostas pela Lei.
+Por conseguinte, como resultado dos estudos e debates realizados pela área técnica, somados à assessoria da Comissão de Atualização do Rol de
+Procedimentos e Eventos em Saúde Suplementar – COSAÚDE por meio das contribuições realizadas, foi elaborada a RN n.º 555,  de 2022, que contempla e dá
+cumprimento às alterações advindas da Lei n.º 14.307, de 2022, sendo revogada a Resolução Normativa nº 470,  de 2021 e a Resolução Normativa nº 474,  de 2021.
+Destaca-se como alteração mais relevante a imposição de novos prazos para a conclusão da análise técnica das Propostas de Atualização do Rol – PAR, que
+se encontram dispostos no art. 6º da RN n.º 555, de 20221.
+A presente proposta de atualização do Rol de Procedimentos e Eventos em Saúde é, portanto, balizada pela RN n.º 555,  de 2022, e trata nesta fase da
+apresentação da Nota Técnica de Recomendação Preliminar – NTRP referente às UATs n.º 186; 189; e 190, que nos termos do art. 25 deverá conter:
+Art. 25. A NTRP deverá conter:
+I - o estudo técnico de cada PAR;
+II - a recomendação técnica preliminar favorável ou desfavorável a cada PAR; e
+III - quando couber, a minuta da resolução norma@va que atualizará a lista de coberturas assistenciais obrigatórias e de diretrizes de u@lização que compõem o Rol de
+Procedimentos e Eventos em Saúde.
+Portanto, em atendimento ao disposto, apresenta-se a Nota Técnica nº 7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525) e o Relatório de Análise de
+Impacto Regulatório (35047533). Destacamos que, para as UATs n.º 186 e 190 a recomendação preliminar foi desfavorável à incorporação e, quanto à UAT n. 189, a
+recomendação foi favorável e, portanto, apresento a Minuta de Norma 35044293. 
+DA ANÁLISE DE IMPACTO REGULATÓRIO
+A Análise de Impacto Regulatório - AIR, obrigatória para as Agências Reguladoras a par@r da edição da Lei n.º 13.848, de 2019, carrega como principal
+obje@vo o oferecimento de subsídios e segurança para os processos decisórios na Administração Pública, sem re@rar a competência da autoridade decisória ou subs@tuir
+seu poder de julgamento.
+Depreende-se da leitura do Guia de AIR, lançado pela Secretaria Especial de Produ@vidade, Emprego e Compe@@vidade, do Ministério da Economia - SEAE 2,
+que os procedimentos ali apresentados não possuem caráter vinculante. “Sua aplicação deverá ser definida no caso concreto, de acordo com a complexidade do tema
+objeto de análise e da experiência acumulada pelos órgãos ou entidades da administração pública.”.
+Como cediço, a Lei 9656, de 1998 (alterada pela Lei n.º 14.307, de 2022 ) delimita as diretrizes, os procedimentos e prazos a serem adotadas na atualização
+do Rol. Destaca-se, neste ponto, o §5º art. 10 e o art. 10-D:
+Art. 10.  É instuído o plano-referência de assistência à saúde, com cobertura assistencial médico-ambulatorial e hospitalar, compreendendo partos e tratamentos, realizados
+exclusivamente no Brasil, com padrão de enfermaria, centro de terapia intensiva, ou similar, quando necessária a internação hospitalar, das doenças listadas na Classificação
+Esta+sca Internacional de Doenças e Problemas Relacionados com a Saúde, da Organização Mundial de Saúde, respeitadas as exigências mínimas estabelecidas no art. 12
+desta Lei, exceto:    
+(...)
+§ 5º As metodologias ulizadas na avaliação de que trata o § 3º do art. 10-D desta Lei, incluídos os indicadores e os parâmetros de avaliação econômica de tecnologias em
+saúde ulizados em combinação com outros critérios, serão estabelecidas em norma editada pela ANS, assessorada pela Comissão de Atualização do Rol de Procedimentos e
+Eventos em Saúde Suplementar, e terão ampla divulgação.   (Incluído pela Lei nº 14.307, de 2022)
+Voto 84 (35047660)         SEI 33910.000998/2026-86 / pg. 1
+(...)
+Art. 10-D (...)
+§ 3º A Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde Suplementar deverá apresentar relatório que considerará:     (Incluído pela Lei nº 14.307, de 2022)
+I - as melhores evidências cien+ficas disponíveis e possíveis sobre a eficácia, a acurácia, a efevidade, a eficiência, a usabilidade e a segurança do medicamento, do produto ou
+do procedimento analisado, reconhecidas pelo órgão competente para o registro ou para a autorização de uso;     (Incluído pela Lei nº 14.307, de 2022)
+II - a avaliação econômica comparava dos beneDcios e dos custos em relação às coberturas já previstas no rol de procedimentos e eventos em saúde suplementar, quando
+couber; e     (Incluído pela Lei nº 14.307, de 2022)
+III - a análise de impacto financeiro da ampliação da cobertura no âmbito da saúde suplementar.     (Incluído pela Lei nº 14.307, de 2022)
+Como visto, a lei apresentou contornos claros e rígidos ao processo de atualização da cobertura assistencial obrigatória e definiu que a metodologia para a
+realização da avaliação das melhores evidências cienNficas; da avaliação econômica compara@va dos benePcios e dos custos; e da análise de impacto financeiro da
+ampliação da cobertura seria estabelecida em norma editada pela ANS, assessorada nesta tarefa pela Comissão de Atualização do Rol de Procedimentos e Eventos em
+Saúde Suplementar.
+A Lei n.º 9656,  de 1998, pela redação concedida pela Lei n.º 14.307, de 2022, indicou que a complexidade e especificidade do tema exigem uma
+metodologia própria de análise que também comtemple as questões inerentes aos procedimentos e eventos em saúde suplementar.  Como já exposto, atualmente o rito
+processual para a atualização do ROL está definido pela RN n.º 555, de 14 de dezembro de 2022, que dá cumprimento às alterações advindas e orienta a análise das PAR.
+Neste novo rito, mantém-se a essência do processo de incorporação de tecnologias, que emprega a metodologia mul@disciplinar denominada Avaliação de
+Tecnologias em Saúde (ATS). A avaliação reúne todas as informações sobre evidências cienNficas rela@vas à eficácia, efe@vidade, acurácia e segurança da tecnologia,
+avaliação econômica e de impacto orçamentário, disponibilidade de rede prestadora, bem como a aprovação pelos conselhos profissionais quanto ao uso da tecnologia,
+dentre outros. A análise é realizada pela área técnica da ANS, assessorada pela Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde Suplementar –
+COSAÚDE, de uma maneira robusta, imparcial, transparente e sistemática, de forma a permitir a tomada de decisão para incorporação ou não da tecnologia ao Rol. 
+Por conseguinte, entendemos que tal metodologia mul@disciplinar, a Avaliação de Tecnologias em Saúde (ATS), se enquadra na opção concedida pelo §2º ,
+art. 7º do Decreto n.º 10.411. de 2020:
+Art. 7º Na elaboração da AIR, será adotada uma das seguintes metodologias específicas para aferição da razoabilidade do impacto econômico, de que trata o art. 5º da Lei nº
+13.874, de 2019:
+I - análise multicritério;
+(...)
+§ 2º O órgão ou a endade competente poderá escolher outra metodologia além daquelas mencionadas no caput, desde que jusfique tratar-se da metodologia mais
+adequada para a resolução do caso concreto. (grifo nosso)
+ 
+Resta claro, portanto, que a avaliação de que trata o §3º do art. 10-D Lei n.º 9656, de 98, que considera metodologia própria, carrega a essência da Análise
+de Impacto Regulatório – AIR. No caso da presente proposta, tal conteúdo está consubstanciado no Relatório de Análise de Impacto Regulatório (35047533); e  Nota
+Técnica nº 7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35047660) e seus anexos. 
+DA CONSULTA PÚBLICA E AUDIÊNCIA PÚBLICA
+            Em prosseguimento ao rito processual de atualização do Rol de Procedimentos e Eventos em Saúde, sendo deliberada a aprovação da Nota Técnica nº
+7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35047660), solicita-se a autorização para realização de Consulta Pública, a ser realizada entre 10/02/2026 a 01/03/2026, em
+observância ao art. 26 da RN n.º 555, de 2012:
+Art. 26. A NTRP e o relatório preliminar da COSAÚDE serão subme@dos à consulta pública pelo prazo de vinte dias. Parágrafo único. O prazo previsto no caput poderá ser
+reduzido para dez dias, nos casos de urgência na análise da matéria, devidamente mo@vada. Art. 27. Será realizada audiência pública na hipótese de matéria relevante, ou
+quando tiver recomendação preliminar desfavorável à incorporação, ou quando solicitada por no mínimo um terço dos membros da COSAÚDE.
+                Além disso, diante da recomendação preliminar desfavorável à incorporação das UATs n.º 186 e 190, solicita-se a autorização para realização de
+Audiência Pública, no dia 26/02/2026, em observância ao art. 27 da RN n.º 555, de 2012:
+Art. 27. Será realizada audiência pública na hipótese de matéria relevante, ou quando @ver recomendação preliminar desfavorável à incorporação, ou quando solicitada por no
+mínimo um terço dos membros da COSAÚDE.
+De outro turno, como destacado pelo órgão técnico em sua manifestação é necessário excluir o prazo de 07 (sete) dias previsto na Resolução Norma@va - RN
+nº 242, de 2010 a fim de evitar o decurso do prazo para conclusão do processo de cada Propostas de Incorporação ao Rol - PAR e suas consequências elencadas no § 9º do
+art. 10  da Lei nº 9.656, de 1998, incluído pela Lei nº 14.307, de 2022.
+Todos os aspectos da questão já foram objeto de análise, mo@vo pelo qual é possível adotar o relatório e as fundamentações constantes da Nota Técnica nº
+7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525), que adotamos como Exposição de Mo@vos (considerando que a recomendação preliminar da UAT passou a ter
+recomendação final favorável após a realização da par@cipação social), como mo@vação referenciada, parte integrante deste voto, na forma do que autoriza o § 1º do art.
+50, da Lei do Processo Administrativo Federal (Lei nº 9.784, de 29 de janeiro de 1999). E diante da citada recomendação preliminar favorável da 
+É o relatório e a fundamentação. Passo à decisão.
+VOTO
+Diante do exposto, acolho integralmente a Nota Técnica nº 7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO ( 35046525) e encaminho o presente processo
+administra@vo à Coordenadoria Geral de Apoio à Diretoria Colegiada – CGADC , com a indicação de matéria para inclusão em pauta de Reunião Extraordinária de Diretoria
+Colegiada, a ser realizada com a maior brevidade possível, tendo em vista a premência dos prazos fixados em lei e na forma do que autoriza o parágrafo único, do art. 85,
+da Resolução Regimental - RR nº 21, de 2022; e
+VOTO: (i) pela aprovação da Nota Técnica de Recomendação Preliminar n.º 7 /2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525​), com recomendação
+desfavorável à incorporação da tecnologia proposta pelas UATs n.º UATs nº 186 (Encorafenibe associado a cetuximabe para tratamento, em primeira linha, de pacientes adultos
+com câncer colorretal metastá@co BRAF V600E+); e 190(Talazoparibe para tratamento, em primeira linha, de pacientes homens adultos com câncer de próstata metastá@co resistentes à
+castração com a iden@ficação de mutações nos genes do reparo por recombinação homóloga (HRR); e recomendação favorável à incorporação da UATs n.º 189 (Mesilato de osimer@nibe
+para tratamento de primeira linha de pacientes com câncer de pulmão não pequenas células (CPNPC) localmente avançado ou metastá@co, cujo tumor apresenta mutações de deleções no
+éxon 19 ou de substituição no éxon 21 (L858R) do EGFR, em combinação com pemetrexede e quimioterapia à base de platina);
+(ii) pela aprovação da Análise de Impacto Regulatório composta pela Relatório de Análise de Impacto Regulatório ( 35047533); e Nota Técnica nº
+7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525​) e seus anexos, nos termos do §2º , art. 7º do Decreto n.º 10.411/2020;
+(iii) pela autorização para realização da Audiência Pública em no dia 26/02/2026, nos termos do art. 27 da RN n.º 555, de 2022, , tendo em vista as
+recomendações preliminares desfavoráveis apresentadas para as UATs nº 186 e 190; 
+(iv) pela autorização da realização de Consulta Pública pelo período de 20 dias, no período de 10 de fevereiro de 1016 a 1 de março de 2026, nos termos do
+art. 10, § 11, inciso III, da Lei nº 9.656, de 1998 c/c o art. 26 da RN n.º 555, de 2012; e
+(v) pela exclusão do prazo de 07 (sete) dias previsto no § 2º do art. 22 da RN nº 548, de 2022.
+É como voto.
+Rio de Janeiro, na data da assinatura eletrônica.
+ 
+ 
+LENISE BARCELLOS DE MELLO SECCHIN
+Diretora de Normas e Habilitação dos Produtos
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Voto 84 (35047660)         SEI 33910.000998/2026-86 / pg. 2
+[1] Art. 6º A análise técnica da PAR elegível prevista no art. 8º, inciso I, desta Resolução, será realizada de acordo com a ordem de protocolização do FormRol e será concluída no prazo de cento e oitenta dias, prorrogável por noventa dias corridos, quando as circunstância
+ § 1º Terá prioridade a análise técnica da PAR elegível prevista no art. 8º, inciso I, desta Resolução, que se referir aos eventos listados nas alíneas c do inciso I e g do inciso II do caput do art. 12 da Lei nº 9.656, de 1998, a qual deverá ser concluída no prazo de cento e vinte
+ § 2º Finalizado o prazo previsto no caput sem decisão da ANS, a tecnologia em saúde objeto da PAR será incluída automaticamente no Rol, garantida a continuidade da assistência iniciada, mesmo que futura decisão seja desfavorável à inclusão da tecnologia.
+(Resolução Normativa n.º 555, de 14 de dezembro de 2022)
+[2] Disponível em: https://www.gov.br/economia/pt-br/assuntos/air/guias-e-documentos/diretrizesgeraiseguiaorientativo_AIR_semlogo.pdf. Acesso em 07/03/2023.
+ 
+Documento assinado eletronicamente por Lenise Barcellos de Mello Secchin, Diretor(a) de Normas e Habilitação dos Produtos, em 04/02/2026, às 14:07, conforme horário
+oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+A autenticidade deste documento pode ser conferida no site https://www.ans.gov.br/sei/autenticidade, informando o código verificador 35047660 e o código CRC
+C38EtiFC1.
+Referência: Processo nº 33910.000998/2026-86
+SEI nº 35047660
+Voto 84 (35047660)         SEI 33910.000998/2026-86 / pg. 3
+RELATÓRIO DE ANÁLISE DE IMPACTO REGULATÓRIO - RAIR
+Requisitos mínimos obrigatórios que devem constar do Relatório de AIR, conforme art. 6º do Decreto nº
+10.411/2020
+ 
+TEMA: ATUALIZAÇÃO DO ROL DE PROCEDIMENTOS E EVENTOS EM SAÚDE
+DIRETORIA: DIRETORIA DE NORMAS E HABILITAÇÃO DOS PRODUTOS
+GERÊNCIA: GCITS
+ 
+1 - Sumário Executivo
+Trata-se de processo que visa a análise da atualização do Rol de Procedimentos e Eventos
+em Saúde, nos moldes do que foi determinado pela Lei nº 14.307, de 2022, que alterou a Lei nº 9.656, de
+1998, referente às Unidades de Análise Técnica - UATs nº 186 (Encorafenibe associado a cetuximabe para
+tratamento, em primeira linha, de pacientes adultos com câncer colorretal metastáAco BRAF V600E+); UATs nº 189
+(Mesilato de osimerAnibe para tratamento de primeira linha de pacientes com câncer de pulmão não pequenas
+células (CPNPC) localmente avançado ou metastáAco, cujo tumor apresenta mutações de deleções no éxon 19 ou de
+subsAtuição no éxon 21 (L858R) do EGFR, em combinação com pemetrexede e quimioterapia à base de plaAna);
+e UATs nº 190 (Talazoparibe para tratamento, em primeira linha, de pacientes homens adultos com câncer de
+próstata metastáAco resistentes à castração com a idenAficação de mutações nos genes do reparo por
+recombinação homóloga (HRR)). 
+2 - Iden1ficação do problema regulatório que se pretende solucionar, com a apresentação de
+suas causas e sua extensão
+O processo de atualização do Rol de Procedimentos e Eventos em Saúde tem sido objeto
+de conMnuo aprimoramento, sempre com o objeAvo de se alcançar maior padronização, transparência,
+previsibilidade e efeAva parAcipação social. A cada ciclo de atualização e aprimoramento, o grau de
+complexidade técnica e administraAva do processo tornaram evidente a premência em se estabelecer a
+normatização do rito administrativo da atualização do Rol.
+Por conseguinte, visando encontrar uma solução que pudesse diminuir o tempo de revisão
+da periodicidade de publicação do Rol sem que isso pudesse comprometer a qualidade técnica das
+análises, a transparência na tomada de decisão e a ampla parAcipação social no processo, em um cenário
+de mão de obra de qualificação específica e escassa, foi elaborada uma proposta de reorganização do
+processo do Rol com redução do prazo de publicação da atualização do Rol de Procedimentos e Eventos
+em Saúde na periodicidade semestral. Tal proposta resultou na publicação da Resolução NormaAva - RN
+nº 470, de 09 de julho de 2021.
+Ato conMnuo, em decorrência da edição da Medida Provisória - MP nº 1.067, de 02 de
+setembro de 2021, que alterou a Lei nº 9.656, de 03 de junho de 1998, para dispor sobre o processo de
+atualização das coberturas no âmbito da saúde suplementar, fez-se necessário revisitar o processo de
+atualização do Rol até a conclusão do processo legislativo.
+Dessa forma, foi publicada a RN nº 474, de 25 de novembro de 2021, que dispõe sobre a
+consAtuição e o funcionamento da Comissão de Atualização do Rol de Procedimentos e Eventos em
+Saúde Suplementar – COSAÚDE e da parAcipação social na atualização do Rol, no âmbito da Agência
+Nacional de Saúde Suplementar.
+Com a aprovação da MP nº 1.067, de 2021, na forma de Projeto de Lei de Conversão, com
+emendas nº 29, de 2021, que foi converAdo na Lei nº 14.307, de 03 de março de 2022, foram iniciados
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 4
+estudos e discussões direcionados à atualização do normaAvo que trata do rito de atualização do Rol, por
+determinação da citada lei, que alterou a Lei nº 9.656, de 1998.
+Diante disso, como resultado dos estudos e debates realizados pela área técnica somados
+às contribuições da Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde Suplementar
+– COSAÚDE, da Consulta Pública nº 99, do corpo técnico de outras diretorias da ANS, do Ministério da
+Economia e as recomendações da Procuradoria Federal junto à ANS - PROGE, foi publicada, em 16 de
+dezembro de 2022, a RN nº 555, de 14 de dezembro de 2022, vigente desde 02 de janeiro de 2023.
+Importante salientar que, na ocasião da revisão da RN nº 439, de 2018, a qual culminou
+com a publicação da RN nº 470, de 2021, pontuou-se a complexidade do processo de atualização do Rol
+que inclui etapas técnicas especializadas, aAvidades administraAvas e operacionais evidenciando a
+mulAplicidade de aspectos que precisam ser contemplados a fim de se reduzir os prazos do rito
+processual de atualização do Rol. Nesse senAdo, considerando as etapas de elegibilidade, análise técnica,
+discussão nas reuniões técnicas do Rol, consulta pública, inclusão nos anexos da norma, apreciação e
+aprovação da Diretoria Colegiada - DICOL, decidiu-se que seria necessário um prazo de até 18 (dezoito)
+meses para a sua conclusão.
+No entanto, a MP nº 1.067, de 2021 determinou uma redução severa do prazo máximo do
+ciclo de atualização do Rol em comparação àquele estabelecido pela RN nº 470, de 2021. Assim, o prazo
+para conclusão da análise da propostas de atualização do Rol foi definido em 120 (cento e vinte) dias,
+prorrogável por mais 60 (sessenta) dias, sob pena de inclusão automática da tecnologia no Rol.
+Com a conversão da MP nº 1.067, de 2021 na Lei nº 14.307, de 2022, houve alteração dos
+prazos anteriormente definidos, de modo que o §7º do art. 10 da Lei nº 9.656, de 1998 passou a
+estabelecer que a atualização do Rol seria realizada por meio da instauração de processo administraAvo,
+a ser concluído no prazo de 180 (cento e oitenta) dias, prorrogável por mais 90 (noventa) dias quando as
+circunstâncias o exigissem.
+Já o § 8º do referido art. 10 foi incluído com o objeAvo de priorizar a análise das Propostas
+de Atualização do Rol - PARs que Averem como objeto as tecnologias em saúde voltadas ao tratamento
+do câncer, previstas nas alíneas “c” do inciso I e “g” do inciso II do caput do art. 12 da Lei nº 9.656, de
+1998, devendo ser concluída no prazo de 120 (cento e vinte) dias, prorrogável por 60 (sessenta) dias.
+Por fim, o § 9º do mesmo arAgo, também incluído pela Lei nº 14.307, de 2022, prevê que
+finalizado o prazo previsto §7º sem decisão da ANS, a tecnologia em saúde seria incluída
+automaAcamente no Rol, garanAda a conAnuidade da assistência iniciada, mesmo que futura decisão
+fosse desfavorável à inclusão da tecnologia.
+Salienta-se que o rito processual de atualização do Rol observa as seguintes diretrizes
+previstas no art. 3º da RN nº 555, de 2022:
+I. a defesa do interesse público na assistência suplementar à saúde, de modo a contribuir
+para o desenvolvimento das ações de saúde no país;
+II. as ações de promoção à saúde e de prevenção de doenças;
+III. o alinhamento com as políticas nacionais de saúde;
+IV. a utilização dos princípios da avaliação de tecnologias em saúde - ATS;
+V. a observância aos princípios da saúde baseada em evidências - SBE;
+VI. a manutenção do equilíbrio econômico-financeiro do setor;
+VII. a transparência dos atos administrativos;
+VIII. a observância aos aspectos éticos da atenção à saúde; e
+IX. a participação social efetiva
+Como visto, cabe à ANS a atualização da cobertura assistencial obrigatória, nos termos e
+prazos dispostos pela citada legislação perAnente e, na presente ocasião, tratamos da Proposta de
+Atualização do Rol – PAR elegível vinculada às Unidades de Análise Técnica - UAT Nº 186; 189; e 190. 
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 5
+QUADRO Nº 1: UNIDADES DE ANÁLISE TÉCNICA EM ETAPA DE AVALIAÇÃO PRELIMINAR
+PROTOCOLO
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE USO
+PROPONENTE
+2025.2.000299 186
+Encorafenibe
+associado a
+cetuximabe
+Tratamento, em primeira linha, de pacientes
+adultos com câncer colorretal metastático
+BRAF V600E+
+Wyeth Industria
+Farmacêutica Ltda.
+2025.2.000304 189
+Mesilato de
+osimertinibe
+Tratamento de primeira linha de pacientes
+com câncer de pulmão não pequenas células
+(CPNPC) localmente avançado ou
+metastático, cujo tumor apresenta mutações
+de deleções no éxon 19 ou de substituição no
+éxon 21 (L858R) do EGFR, em combinação
+com pemetrexede e quimioterapia à base de
+platina
+Astrazeneca do Brasil
+Ltda.
+2025.2.000305 190
+Talazoparibe
+Tratamento, em primeira linha, de pacientes
+homens adultos com câncer de próstata
+metastático resistentes à castração com a
+identificação de mutações nos genes do
+reparo por recombinação homóloga (HRR)
+Wyeth Industria
+Farmacêutica Ltda.
+¹ UAT - Unidade de Análise Técnica.
+ 
+ 
+3 - Iden1ficação dos agentes econômicos, dos usuários dos serviços prestados e dos demais
+afetados pelo problema regulatório identificado
+São diversos os agentes econômicos envolvidos no processo de incorporação de
+tecnologias, indo dos consumidores de assistência à saúde suplementar; às Operadoras de Planos de
+Assistência à Saúde, incluindo os prestadores de assistência à saúde e, no presente caso, a indústria
+farmacêutica.
+4 - Iden1ficação da fundamentação legal que ampara a ação do órgão ou da en1dade quanto ao
+problema regulatório identificado
+A seguir destacamos os fundamentos legais de atuação da ANS:
+Lei nº 14.307, de 03 de março de 2022.
+Lei nº 13.848, de 25 de junho de 2019.
+Lei nº 9.961, de 28 de janeiro de 2000.
+Lei nº 9.656, de 03 de junho de 1998.
+Decreto nº 10.411, de 30 de junho de 2020.
+Resolução Normativa - RN nº 555, de 14 de dezembro de 2022.
+RN nº 465, de 24 de fevereiro de 2021.
+RN nº 548, DE 10 de outubro de 2022.
+Resolução Regimental - RR nº 21, de 26 de janeiro de 2022.
+5 - Definição dos objetivos a serem alcançados
+O objeAvo a ser alcançado é a atualização do rol de procedimentos e eventos em saúde da
+ANS de modo conMnuo, técnico e seguro, melhor explicando, com as melhores evidências cienMficas
+disponíveis e possíveis sobre a eficácia, a acurácia, a efeAvidade, a eficiência, a usabilidade e a segurança
+do medicamento, do produto ou do procedimento analisado, reconhecidas pelo órgão competente para
+o registro ou para a autorização de uso.
+6 
+- 
+Descrição 
+das 
+alterna1vas 
+possíveis 
+ao 
+enfrentamento 
+do 
+problema
+regulatório iden1ficado, consideradas as opções de não ação, de soluções norma1vas e de, sempre
+que possível, soluções não normativas
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 6
+Não há alternaAva, nem mesmo a não ação, uma vez que as premissas de enfrentamento
+do problema regulatório foram fixadas em lei e a consequência da não ação seria a aprovação
+automáAca da tecnologia (§ 9º, do art. 10, da Lei nº 9.656, de 1998) o que poderia colocar em risco a
+segurança da saúde dos beneficiários da saúde suplementar, além de, potencialmente, levar a um
+desequilíbrio do sistema de saúde suplementar.
+7 - Exposição dos possíveis impactos das alterna1vas iden1ficadas, inclusive quanto aos seus custos
+regulatórios e sobre microempresas e empresas de pequeno porte
+Vide item 6.
+8 - Considerações referentes às informações e às manifestações recebidas para a AIR em
+eventuais processos de par1cipação social ou de outros processos de recebimento de subsídios de
+interessados na matéria em análise
+Ademais da parAcipação da Comissão de Atualização do Rol de Procedimentos e Eventos
+em Saúde Suplementar – COSAÚDE que atua como Câmara Técnica especializada e qualificada, como se
+sabe o processo de incorporação de tecnologias ao rol de procedimento e eventos em saúde tem
+previsão legal obrigatória de parAcipação social ampla (Consulta Pública em todos os casos e Audiência
+Pública em caso de recomendação desfavorável à incorporação no Rol).
+Assim, em observância ao inciso III, § 11, do art. 10, da Lei nº 9.656, de 1998 e ao art. 26,
+da RN nº 555, de 2022, recomenda a Nota Técnica nº 7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO
+(35046525) a real
+ização de Consulta Pública pelo período de vinte dias; e Audiência Pública em razão
+das recomendações desfavoráveis à incorporação no Rol para as UATS tratadas nos presentes autos. 
+Assim, a análise das contribuições feitas na parAcipação social será levada a cabo na Nota
+Técnica de Recomendação Final.
+9 - Mapeamento da experiência internacional quanto às medidas adotadas para a resolução
+do problema regulatório identificado
+Não houve mapeamento de experiência internacional quanto às medidas adotadas para a
+resolução do problema regulatório identificado em face da singularidade da questão.
+10 - Iden1ficação e definição dos efeitos e riscos decorrentes da edição, da alteração ou da revogação
+do ato normativo
+Com relação aos efeitos e riscos decorrentes da edição do ato normaAvo adotamos o
+disposto na Nota Técnica nº 7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525) e Relatórios
+preliminares do COSAÚDE (35008838; 35008841; e 35008871), como moAvação referenciada, parte
+integrante desta AIR, na forma do que autoriza o § 1º do art. 50, da Lei do Processo AdministraAvo
+Federal (Lei nº 9.784, de 29 de janeiro de 1999).
+11 – Metodologia escolhida e justificativa para sua escolha
+A Análise de Impacto Regulatório - AIR, obrigatória para as Agências Reguladoras a parAr
+da edição da Lei nº 13.848, de 25 de junho de 2019, carrega como principal objeAvo o oferecimento de
+subsídios e segurança para os processos decisórios na Administração Pública, sem reArar a competência
+da autoridade decisória ou substituir seu poder de julgamento.
+Depreende-se da leitura do Guia de AIR, lançado pela Secretaria Especial de
+Produtividade, Emprego e Competitividade, do Ministério da Economia - SEAE2, que os procedimentos ali
+apresentados não possuem caráter vinculante. “Sua aplicação deverá ser definida no caso concreto, de
+acordo com a complexidade do tema objeto de análise e da experiência acumulada pelos órgãos ou
+entidades da administração pública.”.
+Como cediço, a Lei nº 9.656, de 03 de junho de 1998 (alterada pela Lei nº 14.307, de 03 de
+março de 2022) delimita as diretrizes, os procedimentos e prazos a serem adotadas na atualização do Rol
+de Procedimentos e Eventos em Saúde. Destaca-se, neste ponto, o § 5º art. 10 e o art. 10-D:
+Art. 10. É instuído o plano-referência de assistência à saúde, com cobertura assistencial médico-
+ambulatorial e hospitalar, compreendendo partos e tratamentos, realizados exclusivamente no
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 7
+Brasil, com padrão de enfermaria, centro de terapia intensiva, ou similar, quando necessária a
+internação hospitalar, das doenças listadas na Classificação Esta+sca Internacional de Doenças e
+Problemas Relacionados com a Saúde, da Organização Mundial de Saúde, respeitadas as
+exigências mínimas estabelecidas no art. 12 desta Lei, exceto:
+(...)
+§ 5º As metodologias ulizadas na avaliação de que trata o § 3º do art. 10-D desta Lei, incluídos
+os indicadores e os parâmetros de avaliação econômica de tecnologias em saúde ulizados em
+combinação com outros critérios, serão estabelecidas em norma editada pela ANS, assessorada
+pela Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde Suplementar, e terão
+ampla divulgação. (Incluído pela Lei nº 14.307, de 2022)
+(...)
+Art. 10-D (...)
+§ 3º A Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde Suplementar deverá
+apresentar relatório que considerará: (Incluído pela Lei nº 14.307, de 2022)
+I - as melhores evidências cien+ficas disponíveis e possíveis sobre a eficácia, a acurácia, a
+efevidade, a eficiência, a usabilidade e a segurança do medicamento, do produto ou do
+procedimento analisado, reconhecidas pelo órgão competente para o registro ou para a
+autorização de uso; (Incluído pela Lei nº 14.307, de 2022)
+II - a avaliação econômica comparava dos bene@cios e dos custos em relação às coberturas já
+previstas no rol de procedimentos e eventos em saúde suplementar, quando couber; e (Incluído
+pela Lei nº 14.307, de 2022)
+III - a análise de impacto financeiro da ampliação da cobertura no âmbito da saúde suplementar.
+(Incluído pela Lei nº 14.307, de 2022)
+Como visto, a lei apresentou contornos claros e rígidos ao processo de atualização da
+cobertura assistencial obrigatória e definiu que a metodologia para a realização da avaliação das
+melhores evidências cienMficas; da avaliação econômica comparaAva dos beneZcios e dos custos; e da
+análise de impacto financeiro da ampliação da cobertura seria estabelecida em norma editada pela ANS,
+assessorada nesta tarefa pela Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde
+Suplementar.
+A Lei nº 9.656, de 1998, pela redação concedida pela Lei n.º 14.307, de 2022, indicou que a
+complexidade e especificidade do tema exigem uma metodologia própria de análise que também
+comtemple as questões inerentes aos procedimentos e eventos em saúde suplementar. Como já
+exposto, atualmente o rito processual para a atualização do Rol está definido pela RN nº 555, de 14 de
+dezembro de 2022, que dá cumprimento às alterações advindas e orienta a análise das Propostas de
+Atualização do Rol – PAR.
+Neste novo rito, mantém-se a essência do processo de incorporação de tecnologias, que
+emprega a metodologia mulAdisciplinar denominada Avaliação de Tecnologias em Saúde - ATS. A
+avaliação reúne todas as informações sobre evidências cienMficas relaAvas à eficácia, efeAvidade,
+acurácia e segurança da tecnologia, avaliação econômica e de impacto orçamentário, disponibilidade de
+rede prestadora, bem como a aprovação pelos conselhos profissionais quanto ao uso da tecnologia,
+dentre outros. A análise é realizada pela área técnica da ANS, assessorada pela Comissão de Atualização
+do Rol de Procedimentos e Eventos em Saúde Suplementar – COSAÚDE, de uma maneira robusta,
+imparcial, transparente e sistemáAca, de forma a permiAr a tomada de decisão para incorporação ou não
+da tecnologia ao Rol.
+Por conseguinte, entendemos que tal metodologia mulAdisciplinar, a Avaliação de
+Tecnologias em Saúde - ATS, se enquadra na opção concedida pelo § 2º , art. 7º do Decreto n.º 10.411.
+de 30 de junho de 2020:
+Art. 7º Na elaboração da AIR, será adotada uma das seguintes metodologias específicas para
+aferição da razoabilidade do impacto econômico, de que trata o art. 5º da Lei nº 13.874, de 2019:
+I - análise multicritério;
+(...)
+§ 2º O órgão ou a endade competente poderá escolher outra metodologia além daquelas
+mencionadas no caput, desde que jusfique tratar-se da metodologia mais adequada para a
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 8
+resolução do caso concreto. (grifo nosso)
+Resta claro, portanto, que a avaliação de que trata o §3º do art. 10-D Lei nº 9.656, de
+1998, que considera metodologia própria, carrega a essência da Análise de Impacto Regulatório – AIR. No
+caso 
+da 
+presente 
+proposta, 
+tal 
+conteúdo 
+está 
+consubstanciado 
+na Nota 
+Técnica 
+nº
+7/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (35046525) e Relatórios da COSAUDE (35008838;
+35008841; e 35008871) e Anexos, bem como neste Relatório de Análise de Impacto Regulatório - RAIR.
+12 
+- 
+Comparação 
+das 
+alterna1vas 
+consideradas 
+para 
+a 
+resolução 
+do 
+problema
+regulatório iden1ficado, acompanhada de análise fundamentada que contenha a alterna1va ou
+a 
+combinação 
+de 
+alterna1vas 
+sugerida, 
+considerada 
+mais 
+adequada 
+à 
+resolução 
+do
+problema regulatório e ao alcance dos objetivos pretendidos
+Vide item 6.
+13 - Descrição da estratégia para implementação da alterna1va sugerida, acompanhada das formas de
+monitoramento e de avaliação a serem adotadas e, quando couber, avaliação quanto à necessidade de
+alteração ou de revogação de normas vigentes
+A presente proposta trata das UATs nº 186; 189 e 190, com recomendação preliminar
+desfavorável à incorporação e, em atendimento ao disposto no art. 10, § 11, inciso III e IV, da Lei nº
+9.656, de 1998, incluído pela Lei nº 14.307, de 2022, propõe-se a realização de Consulta Pública para
+todas as tecnologias tratadas, além da realização de Audiência Pública em razão das recomendações
+desfavoráveis à incorporação no Rol para as UATS tratadas nos presentes autos.
+QUADRO Nº 3: RECOMENDAÇÕES PRELIMINARES PARA AS UAT Nº 186, 189 e 190
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+No cenário do tratamento, em primeira linha, de
+pacientes com câncer colorretal metastático com
+mutação BRAF V600E, há evidências oriundas de
+um ensaio clínico randomizado (BREAKWATER)
+que comparou a associação de encorafenibe,
+cetuximabe e mFOLFOX6 (EC+mFOLFOX6) com
+tratamento padrão (quimioterapia associada ou
+não a bevacizumabe).
+ 
+Quanto à qualidade metodológica, de modo
+geral, o estudo BREAKWATER tem alto risco de
+viés (a depender do desfecho avaliado, há alto
+risco de viés de atrito, de detecção e/ou de
+performance). Também foi apontado relato
+seletivo, pois a avaliação da qualidade de vida foi
+planejada no protocolo do estudo, mas não foi
+localizado relato relacionado a este desfecho.
+ 
+Em relação à eficácia, as evidências sugerem que,
+comparado ao tratamento padrão, o tratamento
+com EC+mFOLFOX6 provavelmente (certeza da
+evidência moderada) está associado a uma
+redução de 51% no risco de morte, com ganho
+(mediano) de sobrevida global de 15,2 meses, e a
+uma redução de 47% no risco de progressão da
+doença, com ganho (mediano) de sobrevida livre
+de progressão de 5,7 meses. Ademais, é incerto
+(certeza da evidência muito baixa) o efeito do
+tratamento com EC+mFOLFOX6 na taxa de
+resposta completa, em comparação ao
+tratamento padrão.
+ 
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 9
+186
+Encorafenibe
+Em combinação
+com cetuximabe,
+para o tratamento,
+em primeira linha,
+de pacientes
+adultos com câncer
+colorretal
+metastático BRAF
+V600E+
+Desfavorável
+No que diz respeito à segurança, a incidência de
+quaisquer eventos adversos foi considerada
+semelhante entre os grupos (RR 1,01; IC95% 1,00
+a 1,02). No entanto, a estimativa pontual indicou
+que, comparado ao tratamento padrão, o
+tratamento com EC+mFOLFOX6 aumentou em
+22% a proporção de pacientes com eventos
+adversos graves (RR 1,22; IC95% 1,09 a 1,36),
+foram reportados eventos adversos graves em
+81,5% dos pacientes no grupo EC+mFOLFOX e em
+66,8% dos pacientes no grupo tratamento
+padrão. A certeza da evidência foi classificada
+como baixa para os desfechos de segurança
+(quaisquer eventos adversos e eventos adversos
+graves).
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando encorafenibe em
+combinação com cetuximabe e mFOLFOX6 com
+quimioterapia padrão associada ou não com
+bevacizumabe. O resultado foi de uma razão de
+custo-efetividade incremental de R$ 308 mil por
+ano de vida ganho e uma razão de custo-utilidade
+incremental de 378 mil por ano de vida ajustado
+pela qualidade (AVAQ) adicionado. A análise
+apresenta fragilidades que reduzem sua
+robustez: foram usados dados internos de
+qualidade de vida para estimar a utilidade; o
+custo no braço comparador pode estar
+superestimado pois foram considerados apenas
+os preços dos medicamentos referência, apesar
+das quimioterapias terem vários fabricantes com
+preço registrado na CMED; foi aplicada a
+intensidade relativa da dose (provenientes da
+análise interina), o que tende a subestimar os
+custos do tratamento, especialmente no braço da
+intervenção; e a redução de neutrófilos
+(observada em 19% do grupo EC+mFOLFOX6) não
+foi incluída entre os eventos adversos mais
+frequentes.
+ 
+O estudo de impacto orçamentário realizado
+pelos pareceristas, com horizonte temporal de
+cinco anos e difusão da combinação proposta
+variando de 40% a 80% no período, revelou o
+resultado de gasto para a saúde suplementar de
+R$ 77,9 milhões em média por ano e a média
+anual de 215 pacientes elegíveis. Trata-se de um
+impacto orçamentário expressivo, especialmente
+ao se considerar o tamanho da população
+elegível.
+No cenário do tratamento, em primeira linha, de
+pacientes com câncer de pulmão não pequenas
+células (CPNPC) localmente avançado ou
+metastático, com mutação do gene EGFR, as
+evidências são oriundas de um ensaio clínico
+randomizado (FLAURA2), que comparou
+osimertinibe associado à quimioterapia a
+osimertinibe em monoterapia.
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 10
+189
+Osimertinibe
+Em combinação
+com pemetrexede
+e quimioterapia à
+base de platina,
+para o tratamento
+de primeira linha
+de pacientes com
+câncer de pulmão
+não pequenas
+células (CPNPC)
+localmente
+avançado ou
+metastático, cujo
+tumor apresenta
+mutações de
+deleções no éxon
+19 ou de
+substituição no
+éxon 21 (L858R) do
+EGFR
+Favorável
+Quanto à qualidade metodológica, de modo
+geral, o estudo FLAURA2 tem alto risco de viés (a
+depender do desfecho avaliado, há alto risco de
+viés de atrito, de detecção e/ou de performance).
+ 
+Em relação à eficácia, as evidências sugerem que,
+comparado ao osimertinibe em monoterapia, o
+tratamento com osimertinibe associado à
+quimioterapia provavelmente (certeza da
+evidência moderada) está associado a uma
+redução de 23% no risco de morte, com ganho
+(mediano) de sobrevida global de 9,9 meses, e a
+uma redução de 38% no risco de progressão da
+doença, com ganho (mediano) de sobrevida livre
+de progressão de 9,5 meses. Ademais, é incerto
+(certeza da evidência muito baixa) o efeito do
+osimertinibe associado à quimioterapia na taxa
+de resposta completa e na qualidade de vida, em
+comparação a osimertinibe em monoterapia.
+ 
+No que diz respeito à segurança, a incidência de
+quaisquer eventos adversos foi considerada
+semelhante entre os grupos (RR 1,03; IC 95% 1,01
+a 1,05). A estimativa pontual indicou um
+aumento de 96% na proporção de pacientes que
+apresentaram eventos adversos graves no grupo
+osimertinibe associado à quimioterapia em
+comparação ao grupo osimertinibe em
+monoterapia (RR 1,96; IC 95% 1,47 a 2,60), foram
+reportados eventos adversos graves em 38% dos
+pacientes no grupo da associação com
+quimioterapia e em 19% dos pacientes no grupo
+monoterapia. No entanto, os eventos adversos
+foram considerados manejáveis. A certeza da
+evidência foi classificada com baixa para os
+desfechos de segurança (quaisquer eventos
+adversos e eventos adversos graves).
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando osimertinibe associado à
+quimioterapia com osimertinibe em
+monoterapia. O resultado foi de uma RCUI de
+R$353.822/AVAQ. Para estimar o custo de
+osimertinibe em ambos os braços, o proponente
+utilizou o Preço Fábrica da tabela CMED com
+ICMS de 0%, no entanto, as análises para ANS
+adotam, de maneira geral, o PF 18% para
+preservar a comparabilidade entre as avaliações
+e a validade temporal da análise independente
+de convênios aprovados em legislação estadual.
+Além disso o modelo teve algumas limitações
+metodológicas – uso de utilidades do Reino
+Unido; desutilidades fixas, únicas e não
+cumulativas; não considera que, mesmo dentro
+de um mesmo estado de saúde, a qualidade de
+vida pode diferir entre tratamentos - que trazem
+incerteza para o resultado.
+ 
+O estudo de impacto orçamentário realizado
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 11
+pelos pareceristas apontou que a população
+elegível é, em média, de 467 pacientes ao ano,
+com resultado de gasto para a saúde
+suplementar de R$ 67 milhões em média por ano
+considerando difusão de 30% a 70% em cinco
+anos.
+190
+Talazoparibe
+em combinação
+com enzalutamida,
+para o tratamento,
+em primeira linha,
+de pacientes
+homens adultos
+com câncer de
+próstata
+metastático
+resistentes à
+castração com a
+identificação de
+mutações nos
+genes do reparo
+por recombinação
+homóloga (HRR)
+Desfavorável
+A melhor evidência atualmente disponível sobre
+eficácia e segurança da associação de
+talazoparibe a enzalutamida para o tratamento
+em primeira linha do câncer de próstata
+metastático resistente à castração com mutação
+nos genes de reparo por recombinação homóloga
+(CPRCm-HRR) baseia-se em um ensaio clínico
+randomizado de fase III (estudo TALAPRO-2), que
+compara a tecnologia proposta a placebo
+associado a enzalutamida.
+ 
+Os resultados indicam que a combinação
+provavelmente (certeza da evidência moderada)
+está associada a uma redução de 38% no risco de
+morte, com ganho (mediano) de sobrevida global
+de 14 meses, e a uma redução de 53% no risco de
+progressão da doença, com ganho (mediano) de
+sobrevida livre de progressão de 18,4 meses.
+ 
+A combinação pode não diferir do comparador
+quanto à qualidade de vida relacionada à saúde,
+com certeza moderada, e pode aumentar a taxa
+de resposta tumoral completa, com certeza baixa
+da evidência.
+ 
+Quanto à segurança, a evidência sugere que a
+combinação provavelmente aumenta a
+incidência de eventos adversos graves, com
+certeza moderada. O estudo apresenta risco de
+viés de atrito relevante, decorrente de perdas
+elevadas e desbalanceadas entre os grupos,
+especialmente para os desfechos de qualidade de
+vida e resposta tumoral.
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando a associação de
+talazoparibe e enzalutamida com enzalutamida
+em monoterapia. Os resultados foram de uma
+razão de custo efetividade incremental (RCEI) de
+R$ 286,7 mil por ano de vida ganho (AVG) e uma
+razão de custo utilidade incremental (RCUI) de R$
+331 mil por ano de vida ajustado pela qualidade
+(AVAQ) adicional. A análise apresenta fragilidades
+que reduzem sua robustez, como o uso de
+estimativas de utilidades provenientes de análise
+interna não verificável e a superestimação dos
+custos da segunda linha de tratamento, que pode
+ter tido maior impacto no braço comparador.
+ 
+O estudo de impacto orçamentário realizado
+pelos pareceristas resultou em gasto para a
+saúde suplementar de R$ 36,3 milhões em média
+por ano, considerando a difusão de talazoparibe
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 12
+associado a enzalutamida de 60% a 80% no
+horizonte temporal de cinco anos, sendo de 124 a
+média anual pacientes elegíveis no período.
+Quando considerado o custo do teste genético
+para a detecção da mutação HRR, o gasto médio
+estimado para o período aumentou para R$ 37,1
+milhões por ano.
+ 
+Durante 47ª reunião técnica da Cosaúde foi
+destacado que existem incertezas relacionadas ao
+custo do teste genético para a detecção da
+mutação HRR e à estimativa da população que
+seria elegível para a tecnologia em proposição,
+cabendo aguardar a etapa de participação social
+para obtenção de subsídios que possam agregar
+informação relevante acerca dessas questões.
+UAT¹ TECNOLOGIA
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+¹ UAT - Unidade de Análise Técnica.
+Após a realização da Consulta Pública e análise das contribuições recebidas, será elaborada
+a Nota Técnica de Recomendação Final. Sendo a Recomendação Final favorável à incorporação
+da tecnologia tratada, será editada a Resolução NormaAva que alterará a Resolução NormaAva - RN nº
+465, de 24 de fevereiro de 2021, atualizando o Rol de Procedimentos e Eventos em Saúde.
+A implementação da medida é imediata após a vacao legis com a inclusão no rol de
+procedimentos e eventos disponível no síAo da ANS e o monitoramento é feito por meio de reclamações
+dos beneficiários em processos administraAvos sancionadores e por intermédio do monitoramento da
+garantia de atendimento.
+14 - Caso a alterna1va mais adequada seja a edição ou alteração de ato norma1vo, será registrado o
+prazo máximo para a sua verificação quanto à necessidade de atualização do estoque regulatório (art.
+14 do Decreto nº 10.411/2020)
+Tendo em vista que a avaliação de resultado regulatório - ARR tem previsão de vigência
+mínima de cinco anos (art. 13, § 3º , inciso V, do Decreto nº 10.411, de 30 de junho de 2020), indicamos
+como prazo máximo para a revisão da alteração do rol de procedimentos e eventos em saúde o prazo de
+10 anos
+Rio de Janeiro, na data da assinatura eletrônica.
+Documento assinado eletronicamente por MARLY D ALMEIDA PIMENTEL CORREA PEIXOTO, Gerente
+de Cobertura Assistencial e Incorporação de Tecnologias em Saúde, em 04/02/2026, às 12:19,
+conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de
+novembro de 2020.
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 35047533 e o código CRC
+316AtiBD0.
+Referência: Processo nº 33910.000998/2026-86
+SEI nº 35047533
+Relatório de Análise de Impacto Regulatório - RAIR 2 (35047533)         SEI 33910.000998/2026-86 / pg. 13
+ 
+PROCESSO Nº: 33910.000998/2026-86
+NOTA TÉCNICA Nº 3/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO
+ 
+INTERESSADOS:
+AGÊNCIA NACIONAL DE SAÚDE SUPLEMENTAR - ANS
+DIRETORIA DE NORMAS E HABILITAÇÃO DOS PRODUTOS - DIPRO
+DIRETORIA ADJUNTA DA DIPRO - DIRAD/DIPRO
+GERÊNCIA GERAL DE REGULAÇÃO ASSISTENCIAL - GGRAS
+GERÊNCIA DE COBERTURA ASSISTENCIAL E INCORPORAÇÃO DE TECNOLOGIAS EM SAÚDE - GCITS
+ 
+1.
+ASSUNTO
+1.1.
+Trata-se de Nota Técnica de Recomendação Preliminar – NTRP, que tem por objevo
+apresentar:
+I -
+as Recomendações Preliminares - RP para as Propostas de Atualização do Rol –
+PAR elegíveis vinculadas às Unidades de Análise Técnica - UATs nº 186, 189 e 190 , para
+fins de apreciação e deliberação quanto à submissão à parcipação social ampliada
+(Consulta Pública e Audiência Pública); e 
+II -
+os relatórios preliminares da Comissão de Atualização do Rol de Procedimentos
+e Eventos em Saúde Suplementar – COSAÚDE, elaborados na Reunião Técnica - RT nº
+47. 
+2.
+REFERÊNCIAS
+2.1.
+O rito processual de atualização do Rol de Procedimentos e Eventos em Saúde é
+regulamentado pelas disposições da Lei nº 9.656/1998 (alterada pela Lei nº 14.307/2022) e da Resolução
+Normativa - RN nº 555/2022.
+2.2.
+Em observância ao art. 24 da RN nº 555/2022, a presente NTRP trata do resultado
+da etapa de avaliação preliminar das PAR elegíveis vinculadas às UATs nº 186, 189 e 190, listadas no
+quadro nº 1.
+Art. 24.  Encerradas as discussões nas RTs e finalizada a análise técnica, a unidade competente da
+DIPRO elaborará NTRP, que será objeto de deliberação pela DICOL. 
+ 
+QUADRO Nº 1: UNIDADES DE ANÁLISE TÉCNICA EM ETAPA DE AVALIAÇÃO PRELIMINAR 
+PROTOCOLO
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE USO 
+PROPONENTE
+2025.2.000299 186
+Encorafenibe
+associado a
+cetuximabe
+Tratamento, em primeira linha, de pacientes
+adultos com câncer colorretal metastático
+BRAF V600E+ 
+Wyeth Industria
+Farmacêutica Ltda.
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 14
+2025.2.000304 189
+Mesilato de
+osimertinibe
+Tratamento de primeira linha de pacientes
+com câncer de pulmão não pequenas células
+(CPNPC) localmente avançado ou
+metastático, cujo tumor apresenta mutações
+de deleções no éxon 19 ou de substituição
+no éxon 21 (L858R) do EGFR, em
+combinação com pemetrexede e
+quimioterapia à base de platina
+Astrazeneca do Brasil
+Ltda.
+2025.2.000305 190
+Talazoparibe
+Tratamento, em primeira linha, de pacientes
+homens adultos com câncer de próstata
+metastático resistentes à castração com a
+identificação de mutações nos genes do
+reparo por recombinação homóloga (HRR)
+Wyeth Industria
+Farmacêutica Ltda.
+PROTOCOLO
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE USO 
+PROPONENTE
+¹ UAT - Unidade de Análise Técnica.
+ 
+2.3.
+Na etapa de avaliação preliminar, foram realizados pela ANS estudos técnicos (Relatórios
+de Análise Críca - RAC) para as UATs em comento nesta NT, bem como reuniões técnicas da COSAÚDE
+para discussão  das tecnologias.
+2.4.
+Na Reunião Técnica – RT da COSAÚDE nº 47, realizada nos dias 27 e 28/01/2026, após as
+apresentações dos interessados, foram realizadas discussões que abordaram aspectos relacionados às
+evidências cienRficas sobre eficácia, efevidade e segurança das tecnologias, à avaliação econômica de
+beneTcios e custos em comparação às coberturas já previstas no Rol de Procedimentos e Eventos em
+Saúde, bem como à análise de impacto orçamentário da ampliação da cobertura no âmbito da saúde
+suplementar.
+2.5.
+As manifestações dos membros integrantes da COSAÚDE na RT nº 47 foram registradas
+nos relatórios preliminares da comissão, bem como as listas de presença e todo o material ulizado nas
+apresentações realizadas durante as reuniões.
+2.6.
+O conteúdo integral da 47ª RT da COSAÚDE está disponível no canal oficial da ANS no
+YouTube (ANS Reguladora) no seguinte endereço eletrônico: https://www.youtube.com/watch?v=IE-
+exgIV1yw (dia 27/01/2026) e https://www.youtube.com/watch?v=NHdetiZtiPlzg (dia 28/01/2026).
+2.7.
+Em conclusão, acompanham a presente NTRP, conforme quadro nº 2, os itens dispostos
+nos artigos 23 e 25, da RN nº 555/2022, conforme segue:
+Art. 23.  O relatório preliminar da COSAÚDE será apresentado à DICOL por ocasião da deliberação
+da Nota Técnica de Recomendação Preliminar - NTRP.
+Art. 25.  A NTRP deverá conter:
+I - o estudo técnico de cada PAR;
+II - a recomendação técnica preliminar favorável ou desfavorável a cada PAR; e
+III - quando couber, a minuta da resolução normava que atualizará a lista de coberturas
+assistenciais obrigatórias e de diretrizes de ulização que compõem o Rol de Procedimentos e
+Eventos em Saúde.
+ 
+QUADRO Nº 2: DOCUMENTAÇÃO VINCULADA ÀS UAT Nº 186, 189 e 190
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE USO 
+DOSSSIÊ
+DO PROPONENTE 
+RAC²
+RELATÓRIO
+PRELIMINAR
+DA COSAÚDE 
+186
+Encorafenibe
+associado a
+cetuximabe
+Tratamento, em primeira linha,
+de pacientes adultos com
+câncer colorretal metastático
+BRAF V600E+ 
+SEI nº 34908355
+SEI
+nº 35037354
+SEI
+nº 35008838
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 15
+189
+Mesilato de
+osimertinibe
+Tratamento de primeira linha
+de pacientes com câncer de
+pulmão não pequenas células
+(CPNPC) localmente avançado
+ou metastático, cujo tumor
+apresenta mutações de
+deleções no éxon 19 ou de
+substituição no éxon 21 (L858R)
+do EGFR, em combinação com
+pemetrexede e quimioterapia à
+base de platina
+SEI nº 34908357
+SEI
+nº 35037355
+SEI
+nº 35008841
+190
+Talazoparibe
+Tratamento, em primeira linha,
+de pacientes homens adultos
+com câncer de próstata
+metastático resistentes à
+castração com a identificação
+de mutações nos genes do
+reparo por recombinação
+homóloga (HRR)
+SEI nº 34908358
+SEI
+nº 35037357
+SEI
+nº 35008871
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE USO 
+DOSSSIÊ
+DO PROPONENTE 
+RAC²
+RELATÓRIO
+PRELIMINAR
+DA COSAÚDE 
+¹ UAT - Unidade de Análise Técnica; ² RAC - Relatório de Análise Crítica.
+ 
+3.
+RECOMENDAÇÃO PRELIMINAR
+3.1.
+Fundamentadas pelos estudos e discussões técnicas, a presente NT apresenta as
+recomendações preliminares, devidamente movadas, para as PARs elegíveis vinculadas às UATs nº 186,
+189 e 190, conforme quadro nº 3. 
+ 
+QUADRO Nº 3: RECOMENDAÇÕES PRELIMINARES PARA AS UAT Nº 186, 189 e 190
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+No cenário do tratamento, em primeira linha, de
+pacientes com câncer colorretal metastático com
+mutação BRAF V600E, há evidências oriundas de
+um ensaio clínico randomizado (BREAKWATER)
+que comparou a associação de encorafenibe,
+cetuximabe e mFOLFOX6 (EC+mFOLFOX6) com
+tratamento padrão (quimioterapia associada ou
+não a bevacizumabe).
+ 
+Quanto à qualidade metodológica, de modo geral,
+o estudo BREAKWATER tem alto risco de viés (a
+depender do desfecho avaliado, há alto risco de
+viés de atrito, de detecção e/ou de performance).
+Também foi apontado relato seletivo, pois a
+avaliação da qualidade de vida foi planejada no
+protocolo do estudo, mas não foi localizado relato
+relacionado a este desfecho.
+ 
+Em relação à eficácia, as evidências sugerem que,
+comparado ao tratamento padrão, o tratamento
+com EC+mFOLFOX6 provavelmente (certeza da
+evidência moderada) está associado a uma
+redução de 51% no risco de morte, com ganho
+(mediano) de sobrevida global de 15,2 meses, e a
+uma redução de 47% no risco de progressão da
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 16
+186
+Encorafenibe
+Em combinação
+com cetuximabe,
+para o
+tratamento, em
+primeira linha, de
+pacientes adultos
+com câncer
+colorretal
+metastático BRAF
+V600E+ 
+Desfavorável
+doença, com ganho (mediano) de sobrevida livre
+de progressão de 5,7 meses. Ademais, é incerto
+(certeza da evidência muito baixa) o efeito do
+tratamento com EC+mFOLFOX6 na taxa de
+resposta completa, em comparação ao tratamento
+padrão.
+ 
+No que diz respeito à segurança, a incidência de
+quaisquer eventos adversos foi considerada
+semelhante entre os grupos (RR 1,01; IC95% 1,00 a
+1,02). No entanto, a estimativa pontual indicou
+que, comparado ao tratamento padrão, o
+tratamento com EC+mFOLFOX6 aumentou em 22%
+a proporção de pacientes com eventos adversos
+graves (RR 1,22; IC95% 1,09 a 1,36), foram
+reportados eventos adversos graves em 81,5% dos
+pacientes no grupo EC+mFOLFOX e em 66,8% dos
+pacientes no grupo tratamento padrão. A certeza
+da evidência foi classificada como baixa para os
+desfechos de segurança (quaisquer eventos
+adversos e eventos adversos graves).
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando encorafenibe em
+combinação com cetuximabe e mFOLFOX6 com
+quimioterapia padrão associada ou não com
+bevacizumabe. O resultado foi de uma razão de
+custo-efetividade incremental de R$ 308 mil por
+ano de vida ganho e uma razão de custo-utilidade
+incremental de 378 mil por ano de vida ajustado
+pela qualidade (AVAQ) adicionado. A análise
+apresenta fragilidades que reduzem sua robustez:
+foram usados dados internos de qualidade de vida
+para estimar a utilidade; o custo no braço
+comparador pode estar superestimado pois foram
+considerados apenas os preços dos medicamentos
+referência, apesar das quimioterapias terem vários
+fabricantes com preço registrado na CMED; foi
+aplicada a intensidade relativa da dose
+(provenientes da análise interina), o que tende a
+subestimar os custos do tratamento,
+especialmente no braço da intervenção; e a
+redução de neutrófilos (observada em 19% do
+grupo EC+mFOLFOX6) não foi incluída entre os
+eventos adversos mais frequentes.
+ 
+O estudo de impacto orçamentário realizado pelos
+pareceristas, com horizonte temporal de cinco
+anos e difusão da combinação proposta variando
+de 40% a 80% no período, revelou o resultado de
+gasto para a saúde suplementar de R$ 77,9
+milhões em média por ano e a média anual de 215
+pacientes elegíveis. Trata-se de um impacto
+orçamentário expressivo, especialmente ao se
+considerar o tamanho da população elegível.
+No cenário do tratamento, em primeira linha, de
+pacientes com câncer de pulmão não pequenas
+células (CPNPC) localmente avançado ou
+metastático, com mutação do gene EGFR, as
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 17
+189
+Osimertinibe
+Em combinação
+com pemetrexede
+e quimioterapia à
+base de platina,
+para o tratamento
+de primeira linha
+de pacientes com
+câncer de pulmão
+não pequenas
+células (CPNPC)
+localmente
+avançado ou
+metastático, cujo
+tumor apresenta
+mutações de
+deleções no éxon
+19 ou de
+substituição no
+éxon 21 (L858R)
+do EGFR
+Favorável
+evidências são oriundas de um ensaio clínico
+randomizado (FLAURA2), que comparou
+osimertinibe associado à quimioterapia a
+osimertinibe em monoterapia.
+Quanto à qualidade metodológica, de modo geral,
+o estudo FLAURA2 tem alto risco de viés (a
+depender do desfecho avaliado, há alto risco de
+viés de atrito, de detecção e/ou de performance).
+ 
+Em relação à eficácia, as evidências sugerem que,
+comparado ao osimertinibe em monoterapia, o
+tratamento com osimertinibe associado à
+quimioterapia provavelmente (certeza da
+evidência moderada) está associado a uma
+redução de 23% no risco de morte, com ganho
+(mediano) de sobrevida global de 9,9 meses, e a
+uma redução de 38% no risco de progressão da
+doença, com ganho (mediano) de sobrevida livre
+de progressão de 9,5 meses. Ademais, é incerto
+(certeza da evidência muito baixa) o efeito do
+osimertinibe associado à quimioterapia na taxa de
+resposta completa e na qualidade de vida, em
+comparação a osimertinibe em monoterapia.
+ 
+No que diz respeito à segurança, a incidência de
+quaisquer eventos adversos foi considerada
+semelhante entre os grupos (RR 1,03; IC 95% 1,01
+a 1,05). A estimativa pontual indicou um aumento
+de 96% na proporção de pacientes que
+apresentaram eventos adversos graves no grupo
+osimertinibe associado à quimioterapia em
+comparação ao grupo osimertinibe em
+monoterapia (RR 1,96; IC 95% 1,47 a 2,60), foram
+reportados eventos adversos graves em 38% dos
+pacientes no grupo da associação com
+quimioterapia e em 19% dos pacientes no grupo
+monoterapia. No entanto, os eventos adversos
+foram considerados manejáveis. A certeza da
+evidência foi classificada com baixa para os
+desfechos de segurança (quaisquer eventos
+adversos e eventos adversos graves).
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando osimertinibe associado à
+quimioterapia com osimertinibe em monoterapia.
+O resultado foi de uma RCUI de R$353.822/AVAQ.
+Para estimar o custo de osimertinibe em ambos os
+braços, o proponente utilizou o Preço Fábrica da
+tabela CMED com ICMS de 0%, no entanto, as
+análises para ANS adotam, de maneira geral, o PF
+18% para preservar a comparabilidade entre as
+avaliações e a validade temporal da análise
+independente de convênios aprovados em
+legislação estadual. Além disso o modelo teve
+algumas limitações metodológicas – uso de
+utilidades do Reino Unido; desutilidades fixas,
+únicas e não cumulativas; não considera que,
+mesmo dentro de um mesmo estado de saúde, a
+qualidade de vida pode diferir entre tratamentos -
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 18
+que trazem incerteza para o resultado.
+ 
+O estudo de impacto orçamentário realizado pelos
+pareceristas apontou que a população elegível é,
+em média, de 467 pacientes ao ano, com resultado
+de gasto para a saúde suplementar de R$ 67
+milhões em média por ano considerando difusão
+de 30% a 70% em cinco anos.
+190
+Talazoparibe
+em combinação
+com enzalutamida,
+para o
+tratamento, em
+primeira linha, de
+pacientes homens
+adultos com
+câncer de próstata
+metastático
+resistentes à
+castração com a
+identificação de
+mutações nos
+genes do reparo
+por recombinação
+homóloga (HRR)
+Desfavorável
+A melhor evidência atualmente disponível sobre
+eficácia e segurança da associação de
+talazoparibe a enzalutamida para o tratamento em
+primeira linha do câncer de próstata metastático
+resistente à castração com mutação nos genes de
+reparo por recombinação homóloga (CPRCm-HRR)
+baseia-se em um ensaio clínico randomizado de
+fase III (estudo TALAPRO-2), que compara a
+tecnologia proposta a placebo associado a
+enzalutamida.
+ 
+Os resultados indicam que a combinação
+provavelmente (certeza da evidência moderada)
+está associada a uma redução de 38% no risco de
+morte, com ganho (mediano) de sobrevida global
+de 14 meses, e a uma redução de 53% no risco de
+progressão da doença, com ganho (mediano) de
+sobrevida livre de progressão de 18,4 meses.
+ 
+A combinação pode não diferir do comparador
+quanto à qualidade de vida relacionada à saúde,
+com certeza moderada, e pode aumentar a taxa de
+resposta tumoral completa, com certeza baixa da
+evidência.
+ 
+Quanto à segurança, a evidência sugere que a
+combinação provavelmente aumenta a incidência
+de eventos adversos graves, com certeza
+moderada. O estudo apresenta risco de viés de
+atrito relevante, decorrente de perdas elevadas e
+desbalanceadas entre os grupos, especialmente
+para os desfechos de qualidade de vida e resposta
+tumoral.
+ 
+O proponente apresentou um estudo de custo-
+utilidade comparando a associação de talazoparibe
+e enzalutamida com enzalutamida em
+monoterapia. Os resultados foram de uma razão de
+custo efetividade incremental (RCEI) de R$ 286,7
+mil por ano de vida ganho (AVG) e uma razão de
+custo utilidade incremental (RCUI) de R$ 331 mil
+por ano de vida ajustado pela qualidade (AVAQ)
+adicional. A análise apresenta fragilidades que
+reduzem sua robustez, como o uso de estimativas
+de utilidades provenientes de análise interna não
+verificável e a superestimação dos custos da
+segunda linha de tratamento, que pode ter tido
+maior impacto no braço comparador.
+ 
+O estudo de impacto orçamentário realizado pelos
+pareceristas resultou em gasto para a saúde
+suplementar de R$ 36,3 milhões em média por
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 19
+ano, considerando a difusão de talazoparibe
+associado a enzalutamida de 60% a 80% no
+horizonte temporal de cinco anos, sendo de 124 a
+média anual pacientes elegíveis no período.
+Quando considerado o custo do teste genético
+para a detecção da mutação HRR, o gasto médio
+estimado para o período aumentou para R$ 37,1
+milhões por ano.
+ 
+Durante 47ª reunião técnica da Cosaúde foi
+destacado que existem incertezas relacionadas ao
+custo do teste genético para a detecção da
+mutação HRR e à estimativa da população que
+seria elegível para a tecnologia em proposição,
+cabendo aguardar a etapa de participação social
+para obtenção de subsídios que possam agregar
+informação relevante acerca dessas questões.
+UAT¹ TECNOLOGIA 
+INDICAÇÃO DE
+USO
+RECOMENDAÇÃO
+PRELIMINAR
+MOTIVAÇÃO
+¹ UAT - Unidade de Análise Técnica. 
+ 
+3.2.
+Em observância ao art. 10, § 11, inciso III, da Lei nº 9.656/1998, incluído pela Lei nº
+14.307/2022, propõe-se a realização de Consulta Pública, pelo período de vinte dias, em conformidade
+com o o disposto no art. 26 da RN nº 555/2022, a ser iniciada na data da publicação de sua aprovação,
+submetendo-se à participação social ampliada o seguinte conteúdo:
+I -
+os relatórios preliminares da COSAÚDE para as UAT nº 186, 189 e 190; 
+II -
+as recomendações preliminares para as UAT nº 186, 189 e 190, acrescidas
+dos insumos correspondentes; e
+III -
+versão preliminar da minuta de resolução normava para a atualização do Rol
+de Procedimentos e Eventos em Saúde.
+3.3.
+Cabe destacar que, considerando os prazos para a conclusão do processo administravo
+de cada PAR elegível, estabelecidos pelos § 7º e § 8º, do art. 10, da Lei nº 9.656/1998, é essencial que a
+Consulta Pública se inicie na data da publicação de sua autorização no Diário Oficial da União – DOU,
+suprimindo-se o cumprimento do intervalo de 7 (sete) dias a parr de sua formalização, previsto no § 2º,
+do art. 22º, da RN nº 548/2022, a fim de evitar o decurso do prazo para conclusão do processo de cada
+PAR e suas consequências, elencadas no § 9º, do art. 10, da Lei nº 9.656/1998.
+3.4.
+Por fim, considerando as recomendações preliminares desfavoráveis formuladas para as
+UATs nº 186 e 190, em atendimento ao disposto no inciso IV, §11, do art. 10, da Lei nº 9.656/1998 e ao
+art. 27 da RN nº 555/2022, propõe-se a realização de Audiência Pública – AP para discussão desta PAR.
+3.5.
+As inscrições para parcipação na AP, abertas a toda sociedade, serão realizadas por meio
+do sítio eletrônico da ANS, após sua aprovação.
+4.
+MINUTA DE RESOLUÇÃO NORMATIVA
+4.1.
+Atendendo ao disposto no inciso III do art. 25, da RN nº 555/2022, a minuta de resolução
+normava para atualização do Rol de Procedimentos e Eventos em Saúde encontra-se anexada ao
+presente processo (SEI nº 35044293).
+5.
+CONCLUSÃO
+5.1.
+Por todo o exposto, apresenta-se a presente Nota Técnica de Recomendação Preliminar –
+NTRP, visando seu encaminhamento à Diretoria Colegiada da ANS para:
+a) apreciação do relatórios preliminares da COSAÚDE referentes às UATs nº 186, 189 e
+190;
+b) apreciação das recomendações preliminares desta área técnica, conforme quadro nº
+3, referentes às UATs nº 186, 189 e 190;  
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 20
+c) apreciação da versão preliminar da minuta de resolução normava para a
+atualização do Rol de Procedimentos e Eventos em Saúde;
+d) aprovação da realização de consulta pública, pelo prazo de 20 (vinte) dias,
+no período de 10/02/2026 a 01/03/2026, com base no inciso III, §11, do art. 10, da Lei
+nº 9.656/1998 e no art. 26, da RN 555/2022, suprimindo-se o prazo previsto no § 2º, do
+art. 22º, da RN nº 548/2022, pelas razões acima citadas, para as tecnologias referentes
+às UATs nº 186, 189 e 190;
+e) aprovação da realização de audiência pública, nos termos do previsto no inciso IV, §
+11, do art. 10 da Lei nº 9.656/1998 e no art. 27 da RN nº 555/2022, no dia 26/02/2026,
+tendo em vista as recomendações preliminares desfavoráveis apresentadas para as
+UATs nº 186 e 190.
+5.2.
+À consideração superior.
+ 
+Documento assinado eletronicamente por Ana Cecilia de Sa Campello Faveret, Coordenador(a) de
+Gestão de Tecnologias em Saúde, em 04/02/2026, às 09:05, conforme horário oficial de Brasília, com
+fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 35046525 e o código CRC
+3DtiF408D.
+Referência: Processo nº 33910.000998/2026-86
+SEI nº 35046525
+Nota Técnica 7 (35046525)         SEI 33910.000998/2026-86 / pg. 21

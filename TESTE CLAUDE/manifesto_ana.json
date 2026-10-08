@@ -4,8 +4,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa",
   "arquivo": "fonte/ana/web/govbr_reuniao_deliberativa.html",
   "http": "200",
-  "bytes": 208774,
-  "sha256": "3250a8c04dc1686c2d811d9201f61a6c784a21543c9f32815942e9c0649b4d5a",
+  "bytes": 208768,
+  "sha256": "97cb5046ec024317bc02d5e9ecbe5b5c72e2525ef2762eb54e5c80de8167d778",
   "ok": true
  },
  "web:govbr_calendario": {
@@ -22,8 +22,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/atas-das-reunioes-deliberativas",
   "arquivo": "fonte/ana/web/govbr_atas.html",
   "http": "200",
-  "bytes": 203547,
-  "sha256": "3f150cf2890ea5a77419dc295c9d0474b5fb94a6d3eeb1c31bb363ff0b6eeb81",
+  "bytes": 203553,
+  "sha256": "91c476104d4de39a8d1be125e024149889fcdb0c3602680356fbe135b0cd01b6",
   "ok": true
  },
  "web:govbr_pautas": {
@@ -31,8 +31,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/pautas-das-reunioes-deliberativas",
   "arquivo": "fonte/ana/web/govbr_pautas.html",
   "http": "200",
-  "bytes": 209292,
-  "sha256": "13e8e169b4e6fb611b6669a00864045be986f1bdd3a09f1985cce3c07d61e18e",
+  "bytes": 209286,
+  "sha256": "a029a3e01899c3bb06cfc0f7c78a73b5299040404214267ab9205d6fcb2ab932",
   "ok": true
  },
  "web:govbr_circuitos": {
@@ -58,8 +58,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/diretoria-colegiada",
   "arquivo": "fonte/ana/web/govbr_diretoria.html",
   "http": "200",
-  "bytes": 202954,
-  "sha256": "f19f96c7ab8b20e644122c823d8f927facd20777b823999545037b570df26408",
+  "bytes": 202960,
+  "sha256": "01c45f37cd9b152888e3efeaedddbd2e5dfd24170d9895bf56162c371d611150",
   "ok": true
  },
  "web:govbr_quem_e_quem": {
@@ -86,7 +86,7 @@
   "arquivo": "fonte/ana/web/www2_atas_deliberativas.html",
   "http": "200",
   "bytes": 201355,
-  "sha256": "50f8d0f5fb017a37b946738a9ac93474306e605261ba9ed2021386de50fa023c",
+  "sha256": "88105bc79b040fe5ac01bfbb463700e071f932115e97d9a3fb823ab8cefdf4b2",
   "ok": true
  },
  "web:www2_pautas_deliberativas": {
@@ -95,7 +95,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html",
   "http": "200",
   "bytes": 204476,
-  "sha256": "eeba783fb377933ccf48abf4b8aa744ca6a2a5b957a4e9679f28a8308856241c",
+  "sha256": "d14b0a508285460ec7d37d33a03c21d89f2d89f902c5a2645d4b9b12c6b3f3b6",
   "ok": true
  },
  "web:www2_atas_administrativas": {
@@ -104,7 +104,7 @@
   "arquivo": "fonte/ana/web/www2_atas_administrativas.html",
   "http": "200",
   "bytes": 61060,
-  "sha256": "1ef8b43f638746160884a3e342f5db0308f489a4842b0147a17abc78e0159b14",
+  "sha256": "91828a77a7e959012da9c02a5755bbd33898231653339f89b359227c3e38935b",
   "ok": true
  },
  "web:www2_pautas_administrativas": {
@@ -113,7 +113,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_administrativas.html",
   "http": "200",
   "bytes": 60955,
-  "sha256": "4bec361596ddf61e78ab14d745bcb892c242d36727424cb137273bb2640f1179",
+  "sha256": "0191c85099e9372af4f08197da9e6949f0ad35eb358c4c64b6af618251799a5b",
   "ok": true
  },
  "pdf:ata:949": {

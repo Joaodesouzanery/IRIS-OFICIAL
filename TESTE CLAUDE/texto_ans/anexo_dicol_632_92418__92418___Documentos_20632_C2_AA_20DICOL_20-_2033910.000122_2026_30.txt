@@ -1,0 +1,1404 @@
+ 
+PROCESSO Nº: 33910.000122/2026-30
+VOTO Nº 70/2026/DIPRO
+ 
+DIRETORA
+Diretora de Normas e Habilitação dos Produtos
+1.
+ASSUNTO
+1.1.
+Tecnologias em saúde recomendadas posivamente pela Comissão Nacional de
+Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único
+de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde.
+2.
+DOCUMENTOS RELACIONADOS
+2.1.
+Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO (34756476).
+2.2.
+Nota Técnica de Dispensa de Análise de Impacto Regulatório ( 34999919).
+2.3.
+Proposta de Resolução Normativa (34765875).
+2.4.
+Relatório de Recomendação - RR CONITEC nº 864, de 2025 ( 34954389).
+2.5.
+RR CONITEC nº 944, de 2025 (34954484).
+2.6.
+RR CONITEC nº 1046, de 2025 (34954461).
+2.7.
+RR CONITEC nº 1047, de 2025 (34954445).
+2.8.
+RR CONITEC nº 1051, de 2025 (34954435).
+2.9.
+RR CONITEC nº 1056, de 2025 (34954374).
+2.10.
+RR CONITEC nº 1058, de 2025 (34954423).
+2.11.
+RR CONITEC nº 1062, de 2025 (34954410).
+3.
+REFERÊNCIA
+3.1.
+Lei nº 9.656, de 03 de junho de 1998.
+3.2.
+Lei nº 14.307, de 03 de março de 2022.
+3.3.
+Decreto nº 10.411, de 30 de junho de 2020.
+3.4.
+Resolução Normativa - RN nº 465, de 24 de fevereiro de 2021.
+3.5.
+RN nº 555, de 14 de dezembro de 2022.
+3.6.
+Portaria SCTIE/MS nº 25, de 17 de novembro de 2025 (34954487).
+3.7.
+Portaria SCTIE/MS nº 27, de 27 de novembro de 2025 (34954437).
+3.8.
+Portaria SCTIE/MS nº 28, de 27 de novembro de 2025 (34954451).
+3.9.
+Portaria SCTIE/MS nº 29, de 27 de novembro de 2025 (34954465).
+3.10.
+Portaria SCTIE/MS nº 90, de 04 de dezembro de 2025 (34954385).
+3.11.
+Portaria SCTIE/MS nº 91, de 04 de dezembro de 2025 (34954403).
+3.12.
+Portaria SCTIE/MS nº 94, de 26 de dezembro de 2025 (34954417).
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 1
+3.13.
+Portaria SCTIE/MS nº 95, de 26 de dezembro de 2025 (34954428).
+4.
+RELATÓRIO E FUNDAMENTAÇÃO
+Senhora e Senhores Membros da Diretoria Colegiada,
+4.1.
+Trata-se da análisedas tecnologias em saúde recomendadas posivamente pela Comissão
+Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, com decisão de
+incorporação ao Sistema Único de Saúde – SUS, publicada no Diário Oficial da União - DOU, no período
+de 04 de novembro de 2025 a 11 de janeiro de 2026, para fins de inclusão no Rol de Procedimentos e
+Eventos em Saúde, referente as seguintes tecnologias: (1) exame Pesquisa de Ctid por imuno-
+histoquímica e ancorpos An-HLA (DSA), para avaliação de rejeição de Transplante Hepáco;
+(2) medicamento Ustequinumabe, para tratamento de pacientes com Doença de Crohn ativa moderada a
+grave; (3) medicamento Emicizumabe, para tratamento profiláco de pacientes com hemofilia "A" grave
+ou com nível de avidade de fator VIII inferior a 2%, sem ancorpos inibidores do fator VIII, com até 6
+anos de idade no início do tratamento; (4) medicamento Sofosbuvir/Velpatasvir, para tratamento da
+hepatite "C" crônica em crianças de 3 a 11 anos; (5) Protocolo Clínico e Diretrizes Terapêuticas da Doença
+de Alzheimer para a incorporação da donepezila em monoterapia e combinação livre com memanna
+para tratamento de pacientes com Doença de Alzheimer grave, por via oral domiciliar; (6) Protocolo
+Clínico e Diretrizes Terapêucas da Dermate Atópica referente à incorporação do medicamento
+injetável Dupilumabe em crianças, do uso oral domiciliar do medicamento Upadacinibe em
+adolescentes, e do uso tópico domiciliar dos medicamentos Furoato de mometasona e Tacrolimo em
+pacientes de qualquer idade; (7) Protocolo Clínico e Diretrizes Terapêucas da Dermate Atópica
+referente à incorporação do medicamento do Metotrexato para tratamento de Dermate Atópica
+moderada a grave, cuja indicação não consta em bula registrada na Anvisa, portanto, uso off label;
+(8) Protocolo Clínico e Diretrizes Terapêucas da Doença Pulmonar Obstruva Crônica – DPOC para
+inclusão de duas combinações de medicamentos para uso inalatório por via oral, de uso domiciliar, para
+tratamento da DPOC, quais sejam: (a) Furoato de flucasona/Brometo de umeclidínio/Trifenatato de
+vilanterol; e (b) Dipropionato de beclometasona, Fumarato de formoterol di-hidratado e Brometo de
+glicopirrônio; e (9) Protocolo Clínico e Diretrizes Terapêucas do Adenocarcinoma de cólon e reto,
+oriunda da alteração de formato e da atualização das Diretrizes Diagnóscas e Terapêucas do Câncer de
+cólon e reto, tudo em observância ao § 10, do art. 10 da Lei nº 9.656, de 03 de junho de 1998.
+§ 10. As tecnologias avaliadas e recomendadas posivamente pela Comissão Nacional de
+Incorporação de Tecnologias no Sistema Único de Saúde (Conitec), instituída pela Lei nº 12.401, de
+28 de abril de 2011, cuja decisão de incorporação ao SUS já tenha sido publicada, serão incluídas
+no Rol de Procedimentos e Eventos em Saúde Suplementar no prazo de até 60 (sessenta) dias.
+4.2.
+Importante destacar que, para além dos Relatório de Recomendação CONITEC - RR temos
+dois Relatórios de Recomendação com decisão de exclusão: RR nº 1059, de 2025; e RR nº 1060, de 2025;
+e cinco Relatórios de Recomendação com decisão de não incorporação: RR nº 1057, de 2025, RR nº 1063,
+de 2025, RR nº 1067, de 2025, RR nº 1068, de 2025, e RR nº 1069, de 2025, que não se enquadram na
+hipótese legal.
+4.3.
+Além disso, com a edição da Lei nº 14.307, de 03 de março de 2022 inaugurou-se o prazo
+de 180 (cento e oitenta) dias para que a Agência Nacional de Saúde Suplementar - ANS editasse normas
+que dessem o devido cumprimento às alterações dispostas:
+Art. 3º A ANS editará normas para o devido cumprimento desta Lei no prazo de 180 (cento e
+oitenta) dias.”
+4.4.
+Por conseguinte, como resultado dos estudos e debates realizados pela área técnica,
+somados à assessoria da Comissão de Atualização do Rol de Procedimentos e Eventos em Saúde
+Suplementar – COSAÚDE por meio das contribuições realizadas, foi elaborada a Resolução Normava
+- RN nº 555, de 14 de dezembro de 2022, que contempla e dá cumprimento às alterações advindas da Lei
+nº 14.307, de 2022, dispondo sobre o rito processual de atualização do Rol de Procedimentos e Eventos
+em Saúde – Rol, que estabelece a cobertura assistencial a ser garanda nos planos privados de
+assistência à saúde.
+4.5.
+A inclusão das tecnologias avaliadas e recomendadas posivamente pela CONITEC no Rol
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 2
+de Procedimentos e Eventos em Saúde é regulamentada pelo art. 33 da RN nº 555, de 2022 e, em seus
+termos, a análise do órgão técnico da Diretoria de Normas e Habilitação dos Produtos - DIPRO está
+limitada, em síntese, a quatro pontos:
+(1) se o procedimento já consta do Rol de Procedimentos e Eventos em Saúde da ANS;
+(2) se o procedimento foi efevamente incorporado às coberturas obrigatórias do Sistema
+Único de Saúde – SUS, ou se ocorreu apenas uma ampliação de uso, p.ex.;
+(3) se foi observada a legislação vigente para as situações em que a incorporação de
+tecnologia ocorreu para indicação disnta daquela aprovada no registro da Agência Nacional de
+Vigilância Sanitária - ANVISA de uso do medicamento ou produto; e
+(4) a compabilidade do procedimento incorporado pela CONITEC ao ordenamento
+jurídico setorial.
+4.6.
+Dito isso, cumpre destacar:
+4.7.
+Como explicitado na Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO
+(34756476), no período sob análise (04 de novembro de 2025 a 11 de janeiro de 2026), a CONITEC
+proferiu decisão de recomendação posiva em quatro tecnologias, tratadas nos Relatórios de
+Recomendação - RR CONITEC nº 864, de 2025 (34954389); RR CONITEC nº 1056, de 2025 (34954374); e
+RR CONITEC nº 1058, de 2025 (34954423); e RR nº 1062, de 2025 (34954410); e aprovou quatro
+relatórios de aprovação de Protocolos Clínicos e Diretrizes Terapêucas tratados no RR CONITEC nº 944,
+de 2025 (34954484) ; RR CONITEC nº 1046, de 2025 (34954461); RR CONITEC nº 1047, de 2025
+(34954445); RR CONITEC nº 1051, de 2025 (34954435); os quais foram publicadas no Diário Oficial da
+União.
+4.8.
+ Dessas tecnologias, a conda no RR nº 864, de 2025 (medicamento Ustequinumabe , para
+tratamento de pacientes com Doença de Crohn ava moderada a grave), entendeu o órgão técnico que
+não se trata de incorporação de tecnologia inédita, já possuindo cobertura obrigatória estabelecida no
+âmbito da saúde suplementar, assegurada por meio da Diretriz de Ulização nº 65.6, referente ao
+procedimento “TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU SUBCUTÂNEA (COM
+DIRETRIZ DE UTILIZAÇÃO - DUT). Não cabe, portanto, a inclusão das tecnologias no Rol.
+4.9.
+Com relação à tecnologia conda no RR nº 944, de 2025 (Protocolo Clínico e Diretrizes
+Terapêucas do Adenocarcinoma de cólon e reto, oriunda da alteração de formato e da atualização das
+Diretrizes Diagnóscas e Terapêucas do Câncer de cólon e reto), entendeu o órgão técnico que não
+cabe inclusão da tecnologia no Rol de Procedimento se Eventos em Saúde da ANS, por se tratar de
+demanda que atende ao parágrafo único do argo 26 do Decreto nº 7.508, de 2011, que dispõe sobre a
+competência do Ministério da Saúde de atualizar os Protocolos Clínicos e Diretrizes Terapêucas. Não
+cabe, portanto, a inclusão das tecnologias no Rol.
+4.10.
+Para a tecnologia prevista no RR nº 1046, de 2025 ( Protocolo Clínico e Diretrizes
+Terapêucas da Doença Pulmonar Obstruva Crônica – DPOC para inclusão de duas combinações de
+medicamentos para uso inalatório por via oral, de uso domiciliar, para tratamento da DPOC, quais sejam:
+(a) furoato de flucasona/brometo de umeclidínio/trifenatato de vilanterol; e (b) Dipropionato de
+beclometasona, Fumarato de formoterol di-hidratado e Brometo de glicopirrônio), entendeu o órgão
+técnico que não há providências a serem tomadas na presente tecnologia em saúde, por se tratar de
+exclusão assistencial prevista no art. 10, inciso VI, da Lei nº 9.656, de 1998 e no art. 17, inciso VII, da RN
+nº 465, de 2021. Não cabe, portanto, a inclusão das tecnologias no Rol.
+4.11.
+Com relação ao RR nº 1047, de 2025 temos duas tecnologias analisadas (1 - Protocolo
+Clínico e Diretrizes Terapêucas da Dermate Atópica referente à incorporação do medicamento
+injetável Dupilumabe em crianças, do uso oral domiciliar do medicamento Upadacinibe em
+adolescentes, e do uso tópico domiciliar dos medicamentos Furoato de mometasona e Tacrolimo em
+paciented de qualquer idade; e 2 - Protocolo Clínico e Diretrizes Terapêucas da Dermate Atópica
+referente à incorporação do medicamento do Metotrexato para tratamento de DA moderada a grave,
+cuja indicação não consta em bula registrada na Anvisa, portanto, uso off label) o primeiro protocolo se
+subdivide em dois medicamentos: (a) Dupilumabe que já está assegurado por meio da Diretriz de
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 3
+Ulização nº 65.14, referente ao procedimento “TERAPIA IMUNOBIOLÓGICA ENDOVENOSA,
+INTRAMUSCULAR OU SUBCUTÂNEA", portanto, não há providências a serem tomadas em relação à
+presente tecnologia; e (b) Upadacinibe, Furoato de mometasona e Tacrolim que configuram medicação
+não caracterizada como medicamento anneoplásico oral domiciliar ou medicamento para o controle de
+efeitos adversos relacionados ao tratamento oncológico e adjuvantes, portanto, não há providências a
+serem tomadas em relação às presentes tecnologias.
+4.12.
+Ademais, o RR nº 1047, de 2025 contempla o Protocolo Clínico e Diretrizes Terapêuticas da
+Dermate Atópica referente à incorporação do medicamento do Metotrexato para tratamento de DA
+moderada a grave, cuja indicação não consta em bula registrada na Anvisa, portanto, uso off label, para o
+qual entendeu o órgão técnico que faz-se necessário atualizar a DUT 158, relacionada à “TERAPIA
+MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM DIRETRIZ DE UTILIZAÇÃO)”, para incluir o
+medicamento Metotrexto para tratamento de pacientes de qualquer idade com Dermate Atópica
+moderada a grave, evidenciada por uma das escalas de gravidade.
+4.13.
+No que se refere ao RR nº 1051, de 2025 ( Protocolo Clínico e Diretrizes Terapêucas da
+Doença de Alzheimer para a incorporação da donepezila em monoterapia e combinação livre com
+memanna para tratamento de pacientes com DA grave, por via oral domiciliar), entendeu o órgão
+técnico que não há providências a serem tomadas na presente tecnologia em saúde, por se tratar de
+exclusão assistencial prevista no art. 10, inciso VI, da Lei nº 9.656, de 1998 e no art. 17, inciso VII, da RN
+nº 465, de 2021. Não cabe, portanto, a inclusão das tecnologias no Rol.
+4.14.
+ Com relação ao RR nº 1056, de 2025 (exame Pesquisa de Ctid por imuno-histoquímica e
+anticorpos Anti-HLA (DSA), para avaliação de rejeição de Transplante Hepático) o órgão técnico entendeu
+tratar se de procedimentos que já estão assegurados no Rol de Procedimentos e Eventos em Saúde por
+meio dos procedimentos denominados “CtiD FRAGMENTO", “TIPAGEM HLA, LOCI A E B, MÉTODOS
+IMUNOLÓGICOS (TIPAGEM DO RECEPTOR E DOS CANDIDATOS A DOADOR)” e “TIPAGEM HLA, LOCI DR E
+DQ, MÉTODOS IMUNOLÓGICOS (TIPAGEM DO RECEPTOR E DOS CANDIDATOS A DOADOR)”, incluindo os
+materiais e insumos necessários à sua execução, logo, não há providências a serem tomadas em relação
+à presente tecnologia.
+4.15.
+No que tange ao RR nº 1058, de 2025 (medicamento Sofosbuvir/Velpatasvir, para
+tratamento da hepate "C" crônica em crianças de 3 a 11 anos), entendeu o órgão técnico que não há
+providências a serem tomadas na presente tecnologia em saúde, por se tratar de exclusão assistencial
+prevista no art. 10, inciso VI, da Lei nº 9.656, de 1998 e no art. 17, inciso VII, da RN nº 465, de 2021. Não
+cabe, portanto, a inclusão das tecnologias no Rol.
+4.16.
+Para a tecnologia prevista no RR nº 1062, de 2025 (medicamento Emicizumabe, para
+tratamento profiláco de pacientes com hemofilia A grave ou com nível de avidade de fator VIII inferior
+a 2%, sem ancorpos inibidores do fator VIII, com até 6 anos de idade no início do tratamento) o órgão
+técnico entendeu que faz-se necessário atualizar a DUT 65.18 para ampliar a cobertura para o
+tratamento profiláco de pacientes com hemofilia A grave ou com nível de avidade de fator VIII inferior
+a 2%, sem anticorpos inibidores do fator VIII, com até 6 anos de idade no início do tratamento.
+5.
+DA ANÁLISE DE IMPACTO REGULATÓRIO E DA PARTICIPAÇÃO SOCIAL
+5.1.
+Primeiramente, cabe pontuar que a elaboração de Análise de Impacto Regulatório - AIR foi
+dispensada na forma do que dispõe o inciso II, do art. 4º do Decreto nº 10.411, de 2020, por se tratar de
+ato 
+normavo 
+desnado 
+a 
+disciplinar 
+direitos 
+ou 
+obrigações 
+definidos 
+em 
+norma
+hierarquicamente superior (§ 10,do art. 10 daLei nº 9.656, de 1998, incluído pela Lei nº 14.307, de 2022)
+que não permite, técnica ou juridicamente, diferentes alternativas regulatórias.
+5.2.
+Não foi realizada a análise de impacto orçamentário da incorporação dos procedimentos,
+na óca da saúde suplementar, por força do comando trazido pelo § 10, inserido, pela Lei nº 14.307, de
+2022, no art. 10, da Lei nº 9.656, de 1998, que determina a incorporação automáca, no prazo de até
+sessenta dias, das tecnologias avaliadas e recomendadas posivamente pela CONITEC, cuja decisão de
+incorporação ao SUS já tenha sido publicada. 
+5.3.
+Conforme o destacado no Parecer nº 0059/2020/GECOS/PFANS/AGU descabe a
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 4
+parcipação social tendo em vista que a presente proposta de RN tem como escopo a incorporação de
+procedimento aprovado pela CONITEC, não havendo alternava regulatória à alteração do conteúdo ou
+do mérito e, sendo a consulta pública um elemento de suporte e legimação das escolhas feitas pela
+agência, não há motivos para realizá-la quando inexistir escolha.
+6.
+DA VIGÊNCIA DO ATO NORMATIVO
+6.1.
+No que se refere à vacância da norma sobre a incorporação no Rol das tecnologias em
+saúde recomendadas posivamente pela CONITEC, com decisão de incorporação ao SUS, publicadas no
+Diário Oficial da União - DOU, no Rol de Procedimentos e Eventos em Saúde, em cumprimento ao § 10
+do art. 10, da Lei nº 9.656, de 1998, a referida legislação é silente quanto ao prazo para que as
+tecnologias em saúde recomendadas posivamente pela CONITEC (com decisão de incorporação ao SUS
+e publicadas no DOU) sejam efetivamente disponibilizadas aos beneficiários.
+6.2.
+Todavia, a Procuradoria Federal junto à ANS - PROGE, em pronunciamento sobre o
+assunto, por meio do Parecer nº 00022/2023/GECOS/PFANS/PGF/AGU ( 26970052), aprovado pelo
+Despacho nº 00190/2023/PROGE/PFANS/PGF/AGU ( 26970060), reconheceu que não há óbice jurídico
+para o estabelecimento do período de vacância nas resoluções que atualizam o Rol de Procedimentos e
+Eventos em Saúde.
+6.3.
+Portanto, considerando a relevância e as providências operacionais necessárias para
+disponibilização da tecnologia aqui apresentada, propõe-se que a proposta de resolução normava
+(34608287) entre em vigor no dia 10 de fevereiro de 2026 .
+6.4.
+Por fim, nos termos do § 2º da RN nº 555, de 2012, apresenta-se para deliberação da
+DICOL a Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO ( 34756476); a Nota Técnica de
+Dispensa de Análise de Impacto Regulatório (34999919); e a minuta da Resolução Normava, que
+atualizará a lista de coberturas assistenciais obrigatórias.  
+6.5.
+Todos os aspectos da questão já foram objeto de análise, movo pelo qual é possível
+adotar o relatório e as fundamentações constantes da Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-
+DIPRO/DIPRO (34756476), como movação referenciada, parte integrante deste voto, na forma do que
+autoriza o § 1º do art. 50, da Lei do Processo Administravo Federal (Lei nº 9.784, de 29 de janeiro de
+1999).
+6.6.
+É o relatório e a fundamentação. Passo a decidir.
+7.
+VOTO
+7.1.
+Diante do exposto, acolho na íntegra a Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-
+DIPRO/DIPRO (34756476) e encaminho o processo administravo à Coordenação Geral de Apoio à
+Diretoria Colegiada – CGADC, com a indicação de matéria como item extra pauta a ser pautado na
+632ª Reunião Ordinária de Diretoria Colegiada, a ser realizada em 30 de janeiro de 2026, face a
+necessidade de atender ao lapso temporal fixado no § 10 do art. 10, da Lei nº 9.656, de 1998, tudo na
+forma do que autoriza o parágrafo único do art. 85, da Resolução Regimental - RR nº 21,  de 2022
+(Regimento Interno da ANS); e
+7.2.
+VOTO: (i) pela apreciação da Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO
+(34756476);
+(ii) pela aprovação da Nota Técnica de Dispensa de Análise de Impacto Regulatório
+(34999919), com fundamento no art. 4º, inciso II, do Decreto nº 10.411, de 2020;
+(iii) pela dispensa da análise de impacto orçamentário da incorporação dos
+procedimentos, na óca da saúde suplementar, por força do comando trazido pelo § 10, inserido, pela
+Lei nº 14.307, de 2022, no art. 10, da Lei nº 9.656, de 1998, que determina a incorporação automáca,
+no prazo de até sessenta dias, das tecnologias avaliadas e recomendadas posivamente pela CONITEC,
+cuja decisão de incorporação ao SUS já tenha sido publicada;
+(iv) pela dispensa da parcipação social por não haver alternava regulatória à alteração
+do conteúdo ou do mérito na norma federal hierarquicamente superior;
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 5
+(v) pela não incorporação dos procedimentos condos nos Relatórios de Recomendações -
+RR nº 864, de 2025; RR nº 944, de 2025; RR nº 1046, de 2025; RR nº 1047, de 2025 (medicamentos
+Dupilumabe, Upadacinibe, Furoato de mometasona e Tacrolimo); RR nº 1051, de 2025; RR nº 1056, de
+2025; RR nº 1057, de 2025; RR nº 1058, de 2025; RR nº 1059, de 2025; RR nº 1060, de 2025; RR nº 1063,
+de 2025, RR nº 1067, de 2025, RR nº 1068, de 2025, e RR nº 1069, de 2025; tendo em vista as razões
+anteriormente explicitadas; e
+(vi) pela aprovação de proposta de Resolução Normava (34765875) que atualiza o Anexo
+I e II da RN nº 465, de 2021, para incorporar os seguintes procedimentos no Rol de Procedimentos e
+Eventos em Saúde: 
+(a) RR nº 1062, de 2025 propõe-se a atualização da Diretriz de Ulização - DUT nº 65.18 do
+anexo II da RN nº 465, de 2021, relacionado à "TERAPIA IMUNOBIOLÓGICA ENDOVENOSA,
+INTRAMUSCULAR OU SUBCUTÂNEA COM DIRETRIZ DE UTILIZAÇÃO)", para ampliar a cobertura
+assistencial do medicamento Emicizumabe, para o tratamento profiláco de pacientes com hemofilia A
+grave ou com nível de avidade de fator VIII inferior a 2%, sem ancorpos inibidores do fator VIII, com
+até 6 anos de idade no início do tratamento, conforme exposto no quadro constante da proposta de
+Resolução Normativa; e
+(b) RR nº 1047, de 2025 propõe-se a atualização da Diretriz de Ulização - DUT nº 158 do
+anexo II da RN nº 465, de 2021, relacionada à “TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL”,
+para incluir o medicamento Metotrexato para tratamento de pacientes de qualquer idade com
+Dermate Atópica moderada a grave, evidenciada por uma das escalas de gravidade, conforme exposto
+no quadro constante da proposta de Resolução Normativa.
+É como voto.
+Rio de Janeiro, na data da assinatura eletrônica.
+ 
+LENISE BARCELLOS DE MELLO SECCHIN
+Diretora de Normas e Habilitação dos Produtos
+____________________________
+[1] Art. 33. As tecnologias avaliadas e recomendadas positivamente pela CONITEC, cuja decisão de incorporação ao SUS tenha
+sido publicada no Diário Oficial da União - D.O.U. a partir da vigência da MP nº 1.067, de 2 de setembro de 2021, convertida na
+Lei nº 14.307, de 2022, serão incluídas no Rol de Procedimentos e Eventos em Saúde Suplementar no prazo de até sessenta
+dias.
+§ 1º A unidade competente da DIPRO apresentará Nota Técnica de Tecnologia CONITEC, que observará:
+I - se o procedimento ou medicamento já consta do Rol de Procedimentos e Eventos em Saúde;
+II - se o procedimento ou medicamento foi efetivamente incorporado às coberturas obrigatórias do SUS ou se ocorreu apenas a
+ampliação de uso de tecnologia já incorporada ao SUS ou a inclusão de nova apresentação ou forma farmacêutica de
+medicamento já oferecido pelo SUS;
+ III - se foi seguido o disposto no inciso I do parágrafo único do art. 19-T da Lei nº 8.080, de 1990, incluído pela Lei nº 14.313, de
+21 de março de 2022, e nos §§ 6º e 7º do art. 15 do Decreto nº 7.646, de 21 de dezembro de 2011, incluído pelo Decreto nº
+11.161, de 4 de agosto de 2022, nas situações em que a incorporação de tecnologia ocorreu para indicação distinta daquela
+aprovada no registro da ANVISA de uso do medicamento ou produto; e
+IV - a compatibilidade do procedimento ou medicamento incorporado ao SUS com o ordenamento jurídico aplicável à saúde
+suplementar, notadamente no que se refere às exclusões previstas no art. 10 da Lei nº 9.656, de 1998.
+§ 2º A Nota Técnica de Tecnologia CONITEC será apresentada para deliberação da DICOL e deverá conter, em caso de
+recomendação de incorporação da tecnologia, a minuta da resolução normativa que atualizará a lista de coberturas
+assistenciais obrigatórias e, quando couber, de diretrizes de utilização, que compõem o Rol de Procedimentos e Eventos em
+Saúde, ou fundamentar a recomendação de não inclusão.
+Documento assinado eletronicamente por Lenise Barcellos de Mello Secchin, Diretor(a) de Normas e
+Habilitação dos Produtos, em 29/01/2026, às 09:45, conforme horário oficial de Brasília, com
+fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 6
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 34992272 e o código CRC
+CtiDA26CB.
+Referência: Processo nº 33910.000122/2026-30
+SEI nº 34992272
+Voto 70 (34992272)         SEI 33910.000122/2026-30 / pg. 7
+NOTA TÉCNICA DE DISPENSA DE AIR Nº 1/2026/DIPRO
+ 
+TEMA: Tecnologia em saúde recomendada posivamente pela Comissão Nacional de Incorporação de
+Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS.
+Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde.
+DIRETORIA: Diretoria de Normas e Habilitação dos Produtos - DIPRO
+GERÊNCIA: Gerência de Cobertura Assistencial e Incorporação de Tecnologias em Saúde - GCTIS.
+ 
+1 - INTRODUÇÃO
+Trata-se da análisede tecnologia em saúde recomendada posivamente pela Comissão
+Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, com decisão de
+incorporação ao Sistema Único de Saúde – SUS, publicada no Diário Oficial da União - DOU, para fins de
+avaliação quanto à possível incorporação ao Rol de Procedimentos e Eventos em Saúde, referente as
+seguintes tecnologias:
+0.1.
+(1) exame Pesquisa de Ctid por imuno-histoquímica e ancorpos An-HLA (DSA), para
+avaliação de rejeição de Transplante Hepáco; (2) medicamento Ustequinumabe, para tratamento de
+pacientes com Doença de Crohn ava moderada a grave; (3) medicamento Emicizumabe, para
+tratamento profiláco de pacientes com hemofilia "A" grave ou com nível de avidade de fator VIII
+inferior a 2%, sem ancorpos inibidores do fator VIII, com até 6 anos de idade no início do tratamento;
+(4) medicamento Sofosbuvir/Velpatasvir, para tratamento da hepate "C" crônica em crianças de 3 a 11
+anos; (5) Protocolo Clínico e Diretrizes Terapêucas da Doença de Alzheimer para a incorporação da
+donepezila em monoterapia e combinação livre com memanna para tratamento de pacientes com
+Doença de Alzheimer grave, por via oral domiciliar; (6) Protocolo Clínico e Diretrizes Terapêucas da
+Dermate Atópica referente à incorporação do medicamento injetável Dupilumabe em crianças, do uso
+oral domiciliar do medicamento Upadacinibe em adolescentes, e do uso tópico domiciliar dos
+medicamentos Furoato de mometasona e Tacrolimo em pacientes de qualquer idade; (7) Protocolo
+Clínico e Diretrizes Terapêucas da Dermate Atópica referente à incorporação do medicamento do
+Metotrexato para tratamento de Dermate Atópica moderada a grave, cuja indicação não consta em
+bula registrada na Anvisa, portanto, uso off label; (8) Protocolo Clínico e Diretrizes Terapêucas da
+Doença Pulmonar Obstruva Crônica – DPOC para inclusão de duas combinações de medicamentos para
+uso inalatório por via oral, de uso domiciliar, para tratamento da DPOC, quais sejam: (a) Furoato de
+flucasona/Brometo de umeclidínio/Trifenatato de vilanterol; e (b) Dipropionato de beclometasona,
+Fumarato de formoterol di-hidratado e Brometo de glicopirrônio; e (9) Protocolo Clínico e Diretrizes
+Terapêucas do Adenocarcinoma de cólon e reto, oriunda da alteração de formato e da atualização das
+Diretrizes Diagnóscas e Terapêucas do Câncer de cólon e reto, tudo em observância ao § 10, do art.
+10, da Lei nº 9.656, de 03 de junho de 1998.
+2 - DESCRIÇÃO DO PROBLEMA REGULATÓRIO
+Determina o § 10,do art. 10 daLei nº 9.656, de 1998, incluído pela Lei nº 14.307, de 03 de
+março de 2022, que as tecnologias avaliadas e recomendadas posivamente pela Comissão Nacional de
+Incorporação de Tecnologias no Sistema Único de Saúde - CONITEC, cuja decisão de incorporação ao SUS
+já tenha sido publicada, devem ser incluídas no Rol de Procedimentos e Eventos em Saúde Suplementar
+no prazo de até 60 (sessenta) dias.
+3 - QUAIS OBJETIVOS SE PRETENDE ALCANÇAR?
+Busca-se o atendimento do § 10,do art. 10 daLei nº 9.656, de 1998, incluído pela Lei nº
+Nota Técnica de Dispensa de AIR 1 (34999919)         SEI 33910.000122/2026-30 / pg. 8
+14.307, de 2022, atualizando o Rol de Procedimentos e Eventos em Saúde das tecnologias avaliadas e
+recomendadas posivamente pela CONITEC no Rol de Procedimentos e Eventos em Saúde,
+regulamentada pelo art. 33 da Resolução Normava - RN nº 555, de 14 de dezembro de 2012, por meio
+de análise realizada pelo órgão técnico da Diretoria de Normas e Habilitação dos Produtos - DIPRO, que
+limita-se, em síntese, a quatro pontos:
+(1) se o procedimento já consta do Rol de Procedimentos e Eventos em Saúde da ANS;
+(2) se o procedimento foi efevamente incorporado às coberturas obrigatórias do Sistema Único
+de Saúde – SUS, ou se ocorreu apenas uma ampliação de uso, p.ex.;
+(3) se foi observada a legislação vigente para as situações em que a incorporação de tecnologia
+ocorreu para indicação disnta daquela aprovada no registro da ANVISA de uso do medicamento
+ou produto; e
+(4) a compabilidade do procedimento incorporado pela CONITEC ao ordenamento jurídico
+setorial.
+4 - MOTIVAÇÃO DO PEDIDO DE DISPENSA DE AIR (§1º do art. 4º do Decreto nº 10.411
+de 2020)
+Mova-se o pedido de dispensa de Análise de Impacto Regulatório - AIR nos termos do
+que dispõe o inciso II, do art. 4º do Decreto nº 10.411, de 30 de junho de 2020, por se tratar de ato
+normavo desnado a disciplinar direitos ou obrigações definidos em norma hierarquicamente superior
+(§ 10,do art. 10 daLei nº 9.656, de 1998, incluído pela Lei nº 14.307, de 2022) que não permite, técnica
+ou juridicamente, diferentes alternativas regulatórias.
+5 - CONCLUSÃO
+Recomenda-se, com fundamento no art. 4º, inciso II, do Decreto nº 10.411, de 2020, a
+aprovação da dispensa da análise de impacto regulatório da incorporação dos procedimentos, na óca
+da saúde suplementar, por força do comando trazido pelo § 10, inserido, pela Lei nº 14.307, de 2022, no
+art. 10, da Lei nº 9.656, de 1998, que determina a incorporação automáca, no prazo de até sessenta
+dias, das tecnologias avaliadas e recomendadas posivamente pela CONITEC, cuja decisão de
+incorporação ao SUS já tenha sido publicada.
+Ademais, adota-se como sucedâneo a Nota Técnica nº 1/2026/GCITS/GGRAS/DIRAD-
+DIPRO/DIPRO (34756476), na forma do que determina o art. 4º, § 1º, do Decreto nº 10.411, de 2020.
+6 - PRAZO MÁXIMO PARA A VERIFICAÇÃO DO ATO NORMATIVO QUANTO 
+NECESSIDADE DE ATUALIZAÇÃO DO ESTOQUE REGULATÓRIO (art. 14 do Decreto nº 10.411, de 2020)
+Tendo em vista que a avaliação de resultado regulatório - ARR tem previsão de vigência
+mínima de cinco anos (art. 13, § 3º , inciso V, do Decreto nº 10. 411, de 30 de junho de 2020), indicamos
+como prazo máximo para a revisão da alteração do rol de procedimentos e eventos em saúde o prazo de
+10 anos.
+Rio de Janeiro, na data da assinatura eletrônica.
+Documento assinado eletronicamente por Ana Cristina Marques Martins, Gerente-Geral de Regulação
+Assistencial, em 29/01/2026, às 09:19, conforme horário oficial de Brasília, com fundamento no § 3ºdo
+art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Documento assinado eletronicamente por MARLY D ALMEIDA PIMENTEL CORREA PEIXOTO, Gerente
+de Cobertura Assistencial e Incorporação de Tecnologias em Saúde, em 29/01/2026, às 09:19,
+conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de
+novembro de 2020.
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 34999919 e o código CRC
+244FAtiF4.
+Nota Técnica de Dispensa de AIR 1 (34999919)         SEI 33910.000122/2026-30 / pg. 9
+Referência: Processo nº 33910.000122/2026-30
+SEI nº 34999919
+Nota Técnica de Dispensa de AIR 1 (34999919)         SEI 33910.000122/2026-30 / pg. 10
+ 
+ 
+RESOLUÇÃO NORMATIVA - RN Nº [INSERIR NÚMERO DA RESOLUÇÃO], DE [DIA] DE [MÊS] DE 2025
+ 
+  
+ 
+Altera o anexo II da Resolução Normativa -
+RN nº 465, de 24 de fevereiro de 2021, que
+dispõe sobre o Rol de Procedimentos e
+Eventos em Saúde no âmbito da Saúde
+Suplementar, para ampliar a cobertura
+assistencial do medicamento Emicizumabe,
+relacionado à "TERAPIA IMUNOBIOLÓGICA
+ENDOVENOSA, INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ DE
+UTILIZAÇÃO)", no tratamento profilático de
+pacientes com hemofilia A grave ou com
+nível de atividade de fator VIII inferior a 2%,
+sem anticorpos inibidores do fator VIII, com
+até 6 anos de idade no início do
+tratamento; e para incorporar o uso não
+descrito em bula registrada na Anvisa do 
+medicamento Metotrexato, vinculado à
+"TERAPIA MEDICAMENTOSA INJETÁVEL
+AMBULATORIAL (COM DIRETRIZ DE
+UTILIZAÇÃO)", para tratamento de
+pacientes de qualquer idade com Dermatite
+Atópica moderada a grave, em
+cumprimento ao disposto no art. 33 da RN
+nº 555/2022, ao art. 19T da Lei º
+8.080/1990, alterada pela Lei nº
+14.313/2022, e aos parágrafos 4º e 10, do
+art. 10, da Lei nº 9.656/1998. 
+A Diretoria Colegiada da Agência Nacional de Saúde Suplementar - ANS, em vista do que
+dispõem os §§ 4º e 10, do art. 10, da Lei nº 9.656, de 3 de junho de 1998; o inciso III do art. 4º e inciso II
+do art. 10, ambos da Lei nº 9.661, de 28 de janeiro de 2000; e o inciso III do art. 24, além do art. 43 e art.
+45, todos da Resolução Regimental - RR nº 21, de 26 de janeiro de 2022; adota a seguinte Resolução
+Normativa e eu, Diretor(a)-Presidente, determino a sua publicação.
+Art. 1º A presente resolução altera o anexo II da Resolução Normativa - RN nº 465, de 24
+de fevereiro de 2021, que dispõe sobre o Rol de Procedimentos e Eventos em Saúde no âmbito da Saúde
+Suplementar, para ampliar a cobertura assistencial do medicamento Emicizumabe, relacionado à
+"TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU SUBCUTÂNEA (COM DIRETRIZ DE
+UTILIZAÇÃO)", no tratamento profilático de pacientes com hemofilia A grave ou com nível de atividade
+de fator VIII inferior a 2%, sem anticorpos inibidores do fator VIII, com até 6 anos de idade no início do
+Minuta de Norma 34765875         SEI 33910.000122/2026-30 / pg. 11
+tratamento; e para incorporar o uso não descrito em bula registrada na Anvisa do medicamento
+Metotrexato, vinculado à "TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM DIRETRIZ DE
+UTILIZAÇÃO)",  para tratamento de pacientes de qualquer idade com Dermatite Atópica moderada a
+grave, em cumprimento ao disposto no art. 33 da RN nº 555/2022, ao art. 19T da Lei º 8.080/1990,
+alterada pela Lei nº 14.313/2022, e nos parágrafos 4º e 10, do art. 10, da Lei nº 9.656/1998.
+Art. 2º O Anexo II da RN nº 465, de 24 de fevereiro de 2021, passa a vigorar acrescido de
+indicação de uso para o medicamento Emicizumabe, listado na Diretriz de Utilização – DUT nº 65.18
+vinculada ao procedimento “TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ DE UTILIZAÇÃO)", estabelecendo-se a cobertura obrigatória do
+medicamento Emicizumabe para o tratamento profilático de pacientes com hemofilia A grave ou com
+nível de atividade de fator VIII inferior a 2%, sem anticorpos inibidores do fator VIII, com até 6 anos de
+idade no início do tratamento, conforme Anexo desta Resolução.
+Art. 3º O Anexo II da RN nº 465, de 24 de fevereiro de 2021, passa a estabelecer a
+cobertura obrigatória do medicamento Metotrexato, para  uso não descrito em bula registrada na
+Agência Nacional de Vigilância Sanitária - Anvisa até a data de publicação deste Normativo, listado na
+Diretriz de Utilização – DUT nº 158, vinculada à "TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL
+(COM DIRETRIZ DE UTILIZAÇÃO)", para tratamento de pacientes de qualquer idade com Dermatite
+Atópica moderada a grave, conforme Anexo desta Resolução.
+Art. 4º O Anexo II da RN nº 465, de 24 de fevereiro de 2021, passa a vigorar acrescido do
+item de observação 2 "Outro medicamento para o tratamento de Dermatite Atópica está disposto na
+Diretriz de Utilização nº 158, relacionada à 'TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM
+DIRETRIZ DE UTILIZAÇÃO)'", descrito na Diretriz de Utilização – DUT nº 65.14 DERMATITE ATÓPICA,
+vinculada ao procedimento “TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ DE UTILIZAÇÃO)", conforme Anexo desta Resolução.
+Art. 5º Esta RN, bem como seus Anexos, estarão disponíveis para consulta e cópia no sítio
+institucional da ANS na Internet (www.gov.br/ans).  
+Art. 6º Esta Resolução entra em vigor em 10 de fevereiro de 2026.
+ 
+ 
+ANEXO I À MINUTA DE NORMA
+ 
+ANEXO II DA RESOLUÇÃO NORMATIVA Nº 465/2021
+ 
+65. TERAPAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU SUBCUTÂNEA
+65.14 DERMATITE ATÓPICA
+(...)
+Observação 2: Outro medicamento para o tratamento de Dermatite Atópica está disposto na Diretriz de
+Utilização nº 158, relacionada à “TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM DIRETRIZ DE
+UTILIZAÇÃO)".
+ 
+ 
+65.18 HEMOFILIA A
+(...)
+2. Cobertura obrigatória do medicamento Emicizumabe, para tratamento profilático de pacientes
+com Hemofilia A grave ou com nível de atividade de fator VIII inferior a 2%, sem anticorpos inibidores
+do fator VIII, com até 6 anos de idade no início do tratamento.
+ 
+Minuta de Norma 34765875         SEI 33910.000122/2026-30 / pg. 12
+Observação: A Hemofilia A pode ser classificada de acordo com a concentração de FVIII no sangue: 
+ 
+Gravidade
+Concentração de Fator VIII
+Leve
+5 UI/dI a 40 UI/dI
+(0,05 – 0,40 UI/mL) ou
+Maior que 5% e menor que 40% do normal
+Moderada
+1 UI/dl a 5 UI/dl
+(0,01 - 0,05 UI/mL) ou
+Entre 1% a 5% do normal
+Grave
+Menor que 1 UI/dl
+(menor que 0,01 UI/mL) ou
+Menor que 1% do normal
+ 
+158. TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL
+ 
+SUBSTÂNCIA
+INDICAÇÃO
+Metotrexato
+Tratamento de pacientes de qualquer idade com Dermatite Atópica moderada a grave, que atendam
+a pelo menos um dos seguintes critérios:
+a. Escore de Atividade da Dermatite Atópica - SCORAD igual ou superior a 25;
+b. Índice de Área e Gravidade do Eczema - EASI superior a 7;
+c. Índice de Qualidade de Vida em Dermatologia - DLQI superior a 5;
+d. Índice Pediátrico de Qualidade de Vida em Dermatologia (Children's Dermatology Life Quality
+Index- CDLQI superior a 6;
+e. Escala de Eczema Orientada ao Paciente (Patient-Oriented Eczema Measure) - POEM superior a 7;
+f. Índice de Gravidade da Dermatite Atópica Orientado ao Paciente (Patient-Oriented SCORAD) - PO-
+SCORAD igual ou superior a 25;
+g. Avaliação Global Validada do Investigador para Dermatite Atópica ( (Validated Investigator Global
+Assessment for Atopic Dermatitis) - vIGA-AD superior a 2.
+ 
+Observação: Outro medicamento para o tratamento de Dermatite Atópica está disposto na Diretriz
+de Utilização nº 158, relacionada à “TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM
+DIRETRIZ DE UTILIZAÇÃO)".
+ 
+ 
+ 
+ 
+Documento assinado eletronicamente por MARLY D ALMEIDA PIMENTEL CORREA PEIXOTO, Gerente
+de Cobertura Assistencial e Incorporação de Tecnologias em Saúde, em 28/01/2026, às 15:43,
+conforme horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de
+novembro de 2020.
+Documento assinado eletronicamente por Ana Cristina Marques Martins, Gerente-Geral de Regulação
+Assistencial, em 28/01/2026, às 16:22, conforme horário oficial de Brasília, com fundamento no § 3ºdo
+art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Minuta de Norma 34765875         SEI 33910.000122/2026-30 / pg. 13
+A autenticidade deste documento pode ser conferida no site
+https://www.ans.gov.br/sei/autenticidade, informando o código verificador 34765875 e o código CRC
+9A19ABBD.
+Referência: Processo nº 33910.000122/2026-30
+SEI nº 34765875
+Minuta de Norma 34765875         SEI 33910.000122/2026-30 / pg. 14
+ 
+PROCESSO Nº: 33910.000122/2026-30
+NOTA TÉCNICA Nº 1/2026/GCITS/GGRAS/DIRAD-DIPRO/DIPRO
+ 
+Interessados: 
+AGÊNCIA NACIONAL DE SAÚDE SUPLEMENTAR - ANS
+DIRETORIA DE NORMAS E HABILITAÇÃO DOS PRODUTOS - DIPRO
+DIRETORIA ADJUNTA DA DIPRO - DIRAD/DIPRO
+GERÊNCIA GERAL DE REGULAÇÃO ASSISTENCIAL - GGRAS
+GERÊNCIA DE COBERTURA ASSISTENCIAL E INCORPORAÇÃO DE TECNOLOGIAS EM SAÚDE - GCITS
+ 
+1.
+ASSUNTO
+1.1.
+Apresentação das tecnologias em saúde recomendadas posivamente pela Comissão Nacional
+de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, com decisão de incorporação ao
+Sistema Único de Saúde – SUS, publicadas no Diário Oficial da União (DOU), para fins de avaliação quanto à
+possível incorporação ao Rol de Procedimentos e Eventos em Saúde, em observância ao § 10, do art. 10, da
+Lei nº 9.656/1998.
+ 
+2.
+CONTEXTO
+2.1.
+Na forma do que dispõe o § 10 do art. 10 da Lei nº 9.656/1998, as tecnologias avaliadas e
+recomendadas posivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de
+Saúde (Conitec), instuída pela Lei nº 12.401, de 28 de abril de 2011, cuja decisão de incorporação ao SUS já
+tenha sido publicada, serão incluídas no Rol de Procedimentos e Eventos em Saúde Suplementar no prazo de
+até 60 (sessenta) dias.
+2.2.
+Nesse sendo, no período de 04/11/2025 a 11/01/2026,  foram publicadas, no Diário Oficial
+da União, Portarias  da Secretária de Ciência, Tecnologia e Inovação e do Complexo Econômico-Industrial da
+Saúde do Ministério da Saúde (SECTICS/MS) relacionadas aos seguintes Relatórios de Recomendação da
+Conitec:  
+- 4 Relatórios de Recomendação com decisão de incorporação: nº 864/2025 nº 1056/2025,
+nº 1058/2025, e nº 1062/2025;
+- 2 Relatórios de Recomendação com decisão de exclusão: nº 1059/2025; e nº 1060/2025;
+- 4 Relatórios de Recomendação com decisão de aprovação de Protocolos Clínicos e
+Diretrizes Terapêuticas (PCDT): nº 944/2024, nº 1046/2026, nº 1047/2025; e nº
+1051/2025;
+- 5 Relatórios de Recomendação com decisão de não incorporação: nº 1057/2025, nº
+1063/2025, nº 1067/2025, nº 1068/2025, e nº 1069/2025.
+ 
+2.3.
+O levantamento dos Relatórios de Recomendação - RRs e das reuniões de recomendação,
+contendo as pautas, atas e gravações, foi realizado por meio de consulta ao sío eletrônico da CONITEC, nos
+seguintes 
+links: https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-
+saude/recomendacoes-da-conitec e https://www.gov.br/conitec/pt-br/assuntos/reunioes-da-conitec/pautas-
+e-atas.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 15
+3.
+TECNOLOGIAS EM SAÚDE
+3.1.
+À luz da regulamentação da cobertura assistencial obrigatória no âmbito da saúde
+suplementar, especialmente no que tange à Lei nº 9.656/1998 e às Resoluções Normavas - RN nº 465/2021
+e nº 555/2022, apresentamos, abaixo, o Quadro Geral de Análise das Tecnologias em Saúde, com o descrivo
+das tecnologias em análise no período indicado.
+ 
+QUADRO GERAL DE ANÁLISE DA TECNOLOGIAS EM SAÚDE
+ 
+TECNOLOGIA 
+EM SAÚDE
+INDICAÇÃO DE
+USO
+RELATÓRIO
+CONITEC
+PORTARIA COM
+DECISÃO DE
+INCORPORAÇÃO
+AO SUS
+TIPO DE
+TECNOLOGIA
+ANÁLISE
+ 
+Pesquisa de Ctid por
+imuno-histoquímica e
+anticorpos Anti-HLA
+(DSA) 
+ 
+Para avaliação
+de rejeição de
+Transplante
+Hepático
+Relatório de
+Recomendação
+nº 1056,
+out/2025
+(SEI nº
+34954374)
+SECTICS/MS nº
+90/2025 -
+Publicada em
+05/12/2025
+(SEI nº
+34954385)
+Exame
+Tratam-se de procedimentos
+que já estão assegurados no Rol
+de Procedimentos e Eventos em
+Saúde por meio dos
+procedimentos denominados
+“CtiD FRAGMENTO", “TIPAGEM
+HLA, LOCI A E B, MÉTODOS
+IMUNOLÓGICOS (TIPAGEM DO
+RECEPTOR E DOS CANDIDATOS
+A DOADOR)” e “TIPAGEM HLA,
+LOCI DR E DQ, MÉTODOS
+IMUNOLÓGICOS (TIPAGEM DO
+RECEPTOR E DOS CANDIDATOS
+A DOADOR)”, incluindo os
+materiais e insumos necessários
+à sua execução, nos termos da
+RN nº 465/2021, arts. 8º e 12.
+Nesse sentido, não há
+providências a serem tomadas
+em relação à presente
+tecnologia.
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 16
+Ustequinumabe
+ 
+Tratamento de
+pacientes com
+Doença de
+Crohn ativa
+moderada a
+grave
+ 
+Relatório de
+Recomendação
+nº 864,
+nov/2025
+(SEI nº
+34954389)
+ 
+SECTICS/MS nº
+91/2025 -
+Publicada em
+05/12/2025
+(SEI
+nº 34954403)
+Medicamento
+Trata-se de medicamento com
+via de administração
+intravenosa, cuja indicação de
+uso incorporada ao SUS consta
+em bula registrada junto à
+Anvisa.
+A cobertura obrigatória do
+Ustequinumabe já está
+assegurada durante a
+internação hospitalar e na
+internação domiciliar oferecida
+pela operadora em substituição
+à hospitalar,
+independentemente de previsão
+contratual (art. 12, inciso II,
+alínea d, da Lei nº 9.656/1998,
+c/c art. 8º, inciso III, e 19, inciso
+VIII e IX, da RN nº 465/2021).
+No mesmo sentido, o
+Ustequinumabe para o
+tratamento ambulatorial de
+Doença de Crohn moderada a
+grave já está assegurado por
+meio da Diretriz de Utilização nº
+65.6, referente ao
+procedimento “TERAPIA
+IMUNOBIOLÓGICA
+ENDOVENOSA,
+INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ
+DE UTILIZAÇÃO)".
+Nesse sentido, não há
+providências a serem tomadas
+em relação à presente
+tecnologia.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 17
+Emicizumabe
+Tratamento
+profilático de
+pacientes com
+hemofilia A
+grave ou com
+nível de
+atividade de
+fator VIII inferior
+a 2%, sem
+anticorpos
+inibidores do
+fator VIII, com
+até 6 anos de
+idade no início
+do tratamento
+ 
+Relatório de
+Recomendação
+nº 1062,
+dez/2025
+(SEI nº
+34954410)
+ 
+SECTICS/MS nº
+94/2025 -
+Publicada em
+29/12/2025
+(SEI nº
+34954417)
+Medicamento
+Trata-se de medicamento com
+via de administração
+subcutânea, cuja indicação de
+uso incorporada ao SUS consta
+em bula registrada junto à
+Anvisa.
+ 
+A cobertura obrigatória do
+Emicizumabe já está
+assegurada durante a
+internação hospitalar e na
+internação domiciliar oferecida
+pela operadora em
+substituição à hospitalar,
+independentemente de
+previsão contratual (art. 12,
+inciso II, alínea d, da Lei nº
+9.656/1998, c/c art. 8º, inciso
+III, e 19, inciso VIII e IX, da RN
+nº 465/2021).
+ 
+No mesmo sentido, o
+Emicizumabe para o
+tratamento profilático de
+pacientes com hemofilia A,
+moderada ou grave, e
+anticorpos inibidores do Fator
+VIII, sem restrição de faixa
+etária, já está assegurado por
+meio da Diretriz de Utilização
+nº 65.18, referente ao
+procedimento “TERAPIA
+IMUNOBIOLÓGICA
+ENDOVENOSA,
+INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ
+DE UTILIZAÇÃO)".
+ 
+Nesse sentido, faz-se
+necessário atualizar a DUT
+65.18 para ampliar a
+cobertura para o tratamento
+profilático de pacientes com
+hemofilia A grave ou com
+nível de atividade de fator VIII
+inferior a 2%, sem anticorpos
+inibidores do fator VIII, com
+até 6 anos de idade no início
+do tratamento.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 18
+Sofosbuvir/Velpatasvir
+ 
+Tratamento da
+hepatite C
+crônica em
+crianças de 3 a
+11 anos.
+ 
+Relatório de
+Recomendação
+nº 1058,
+dez/2025
+(SEI nº
+34954423)
+ 
+SECTICS/MS nº
+95/2025 -
+Publicada em
+29/12/2025
+(SEI nº
+34954428)
+Medicamento
+Trata-se de medicamento oral,
+de uso domiciliar, para
+tratamento da hepatite C
+crônica em crianças de 3 a 11
+anos.
+A cobertura assistencial
+obrigatória dos medicamentos
+Sofosbuvir / Velpatasvir está
+assegurada no período de
+internação hospitalar e na
+internação domiciliar ofertada
+pela operadora em substituição
+à internação hospitalar, com ou
+sem previsão contratual (art. 12,
+inciso II, alínea d, da Lei nº
+9.656/1998, c/c art. 8º, inciso III,
+e 19, inciso VIII e IX, da RN nº
+465/2021).
+Por não se tratar de
+medicamento antineoplásico
+oral ou de medicamento para o
+controle de efeitos adversos
+relacionados ao tratamento
+oncológico e adjuvantes, sua
+cobertura não é obrigatória na
+saúde suplementar para uso
+domiciliar ou ambulatorial.
+Nesse sentido, não há
+providências a serem tomadas
+na presente tecnologia em
+saúde, por se tratar de
+exclusão assistencial prevista
+no art. 10, inciso VI, da Lei nº
+9.656/1998 e no art. 17, inciso
+VII, da RN nº 465/2021.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 19
+Donepezila em
+monoterapia e
+combinação livre com
+Memantina
+Protocolo Clínico
+e Diretrizes
+Terapêuticas -
+Doença de
+Alzheimer
+ 
+Relatório de
+Recomendação
+nº 1051,
+set/2025
+(SEI nº
+34954435)
+ 
+SECTICS/MS nº
+27/2025 -
+Publicada em
+28/11/2025
+(SEI nº
+34954437)
+Medicamento
+ 
+Trata-se de atualização do
+Protocolo Clínico e Diretrizes
+Terapêuticas - PCDT da Doença
+de Alzheimer (DA) para a
+incorporação da Donepezila
+em monoterapia e combinação
+livre com Memantina para
+tratamento de pacientes com
+DA grave, por via oral, de uso
+domiciliar.
+ 
+A cobertura assistencial
+obrigatória desses
+medicamentos referidos está
+assegurada no período de
+internação hospitalar e na
+internação domiciliar ofertada
+pela operadora em
+substituição à internação
+hospitalar, com ou sem
+previsão contratual (art. 12,
+inciso II, alínea d, da Lei nº
+9.656/1998, c/c art. 8º, inciso
+III, e 19, inciso VIII e IX, da RN
+nº 465/2021).
+ 
+Por não se tratar de
+medicamento antineoplásico
+oral ou de medicamento para
+o controle de efeitos adversos
+relacionados ao tratamento
+oncológico e adjuvantes, sua
+cobertura não é obrigatória na
+saúde suplementar para uso
+domiciliar ou ambulatorial.
+ 
+Nesse sentido, não há
+providências a serem tomadas
+na presente tecnologia em
+saúde, por se tratar de
+exclusão assistencial prevista
+no art. 10, inciso VI, da Lei nº
+9.656/1998 e no art. 17, inciso
+VII, da RN nº 465/2021.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 20
+Dupilumabe,
+Upadacitinibe,
+Furoato de
+Mometasona e
+Tacrolimo
+Protocolo Clínico
+e Diretrizes
+Terapêuticas -
+Dermatite
+Atópica
+ 
+Relatório de
+Recomendação
+nº 1047,
+set/2025
+(SEI nº
+34954445)
+ 
+SECTICS/MS nº
+28/2025 -
+Publicada em
+28/11/2025
+(SEI nº
+34954451)
+Medicamento
+Trata-se de atualização do
+Protocolo Clínico e Diretrizes
+Terapêuticas - PCDT
+da Dermatite Atópica (DA)
+referente à incorporação do
+medicamento injetável
+Dupilumabe em crianças, do
+uso oral domiciliar do
+medicamento Upadacitinibe
+em adolescentes, e do uso
+tópico domiciliar dos
+medicamentos Furoato de
+mometasona e Tacrolimo em
+paciented de qualquer idade.
+ 
+A avaliação de cobertura
+assistencial dos medicamentos
+Dupilumabe e Upadacitinibe
+foi tratada na Nota Técnica nº
+47/2024/GCITS/GGRAS/DIRAD-
+DIPRO/DIPRO (doc. SEI
+nº 30723101 - Processo SEI
+nº 33910.000496/2024-93), e
+dos medicamentos tópicos
+Furoato de mometasona e
+Tacrolimo foi tratada Nota
+Técnica nº
+26/2025/GCITS/GGRAS/DIRAD-
+DIPRO/DIPRO (doc. SEI nº
+32828959 - Processo SEI
+nº 33910.000679/2025-90).
+ 
+Sendo assim, os
+medicamentos:
+a) Dupilumabe já está
+assegurado por meio da
+Diretriz de Utilização nº 65.14,
+referente ao procedimento
+“TERAPIA IMUNOBIOLÓGICA
+ENDOVENOSA,
+INTRAMUSCULAR OU
+SUBCUTÂNEA", portanto, não
+há providências a serem
+tomadas em relação à
+presente tecnologia; e
+ 
+b) Upadacitinibe, Furoato de
+mometasona e Tacrolimo
+configuram medicação não
+caracterizada como
+medicamento antineoplásico
+oral domiciliar ou
+medicamento para o controle
+de efeitos adversos
+relacionados ao tratamento
+oncológico e
+adjuvantes, portanto, não há
+providências a serem tomadas
+em relação às presentes
+tecnologias.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 21
+Metotrexato
+Protocolo Clínico
+e Diretrizes
+Terapêuticas -
+Dermatite
+Atópica
+ 
+Relatório de
+Recomendação
+nº 1047,
+set/2025
+(SEI nº
+34954445)
+ 
+SECTICS/MS nº
+28/2025 -
+Publicada em
+28/11/2025
+(SEI nº
+34954451)
+Medicamento
+Trata-se de atualização do
+Protocolo Clínico e Diretrizes
+Terapêuticas - PCDT
+da Dermatite Atópica (DA)
+referente à incorporação do
+medicamento do Metotrexato
+para tratamento de
+DA moderada a grave, cuja
+indicação não consta em bula
+registrada na Anvisa, portanto,
+uso off-label.
+ 
+O Metotrexato para o
+tratamento de DA moderada a
+grave está apto à inclusão no
+Rol de Procedimentos
+obrigatórios, pois há
+recomendação positiva pela
+Conitec/MS [Relatório de
+Recomendação nº 968,
+fev/2025 (doc. SEI nº
+32840642, Processo SEI nº
+33910.000679/2025-90)] e
+Protocolo Clínico e Diretrizes
+Terapêuticas - PCDT publicado
+pelo Ministério da Saúde, em
+atenção ao art. 33 da RN nº
+555/2022 e ao art. 19T da Lei º
+8.080/1990, alterada pela Lei
+nº 14.313/2022.
+ 
+Nesse sentido, faz-se
+necessário atualizar a DUT
+158, relacionada à “TERAPIA
+MEDICAMENTOSA INJETÁVEL
+AMBULATORIAL (COM
+DIRETRIZ DE UTILIZAÇÃO)”,
+para incluir o medicamento
+Metotrexto para tratamento
+de pacientes de qualquer
+idade com DA moderada a
+grave, evidenciada por uma
+das escalas de gravidade.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 22
+Furoato de
+fluticasona/Brometo
+de
+meclidínio/Trifenatato
+de vilanterol;
+Dipropionato de
+beclometasona,
+Fumarato de
+formoterol di-
+hidratado e Brometo
+de glicopirrônio
+Protocolo Clínico
+e Diretrizes
+Terapêuticas -
+Doença
+Pulmonar
+Obstrutiva
+Crônica
+ 
+Relatório de
+Recomendação
+nº 1046,
+set/2025
+(SEI nº
+34954461)
+ 
+SECTICS/MS nº
+29/2025 -
+Publicada em
+28/11/2025
+(SEI nº
+34954465)
+Medicamento
+Trata-se de atualização do
+Protocolo Clínico e Diretrizes
+Terapêuticas - PCDT da Doença
+Pulmonar Obstrutiva Crônica –
+DPOC para inclusão de duas
+combinações de medicamentos
+para uso inalatório por via oral,
+de uso domiciliar, para
+tratamento da DPOC, quais
+sejam: a) Furoato de
+fluticasona/Brometo de
+umeclidínio/Trifenatato de
+vilanterol; e b) Dipropionato de
+beclometasona, Fumarato de
+formoterol di-hidratado e
+Brometo de glicopirrônio.
+A cobertura assistencial
+obrigatória desses
+medicamentos referidos está
+assegurada no período de
+internação hospitalar e na
+internação domiciliar ofertada
+pela operadora em substituição
+à internação hospitalar, com ou
+sem previsão contratual (art. 12,
+inciso II, alínea d, da Lei nº
+9.656/1998, c/c art. 8º, inciso III,
+e 19, inciso VIII e IX, da RN nº
+465/2021).
+Por não se tratar de
+medicamento antineoplásico
+oral ou de medicamento para o
+controle de efeitos adversos
+relacionados ao tratamento
+oncológico e adjuvantes, sua
+cobertura não é obrigatória na
+saúde suplementar para uso
+domiciliar ou ambulatorial.
+Nesse sentido, não há
+providências a serem tomadas
+na presente tecnologia em
+saúde, por se tratar de
+exclusão assistencial prevista
+no art. 10, inciso VI, da Lei nº
+9.656/1998 e no art. 17, inciso
+VII, da RN nº 465/2021.
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 23
+Não se aplica
+Protocolo Clínico
+e Diretrizes
+Terapêuticas -
+Adenocarcinoma
+de Cólon e Reto
+ 
+Relatório de
+Recomendação
+nº 944,
+nov/2024
+(SEI nº
+34954484)
+ 
+SECTICS/MS nº
+25/2025 -
+Publicada em
+11/12/2025
+(SEI nº
+34954487)
+Não se aplica
+ 
+Trata-se do Protocolo Clínico e
+Diretrizes Terapêuticas (PCDT)
+do Adenocarcinoma de cólon e
+reto, oriunda da alteração de
+formato e da atualização das
+Diretrizes Diagnósticas e
+Terapêuticas do Câncer de
+cólon e reto, sendo uma
+demanda que atende ao
+parágrafo único do artigo 26
+do Decreto nº 7.508/2011, que
+dispõe sobre a competência
+do Ministério da Saúde de
+atualizar os Protocolos Clínicos
+e Diretrizes Terapêuticas. 
+ 
+Não há providências a serem
+tomadas na presente
+tecnologia em saúde.
+ 
+ 
+ 
+ 
+ 
+4.
+VACÂNCIA
+4.1.
+No que se refere à vacância da norma sobre a incorporação no Rol das tecnologias em saúde
+recomendadas posivamente pela CONITEC, com decisão de incorporação ao SUS, publicadas no DOU, no Rol
+de Procedimentos e Eventos em Saúde, em cumprimento ao § 10 do art. 10, da Lei nº 9.656/1998. A referida
+legislação é silente quanto ao prazo para que as tecnologias em saúde recomendadas posivamente pela
+CONITEC (com decisão de incorporação ao SUS e publicadas no DOU) sejam efevamente disponibilizadas aos
+beneficiários.
+4.2.
+Todavia, a Procuradoria Federal junto à ANS - PROGE, em pronunciamento sobre o assunto,
+por meio do PARECER n. 00022/2023/GECOS/PFANS/PGF/AGU (SEI nº 26970052), aprovado pelo DESPACHO
+n. 00190/2023/PROGE/PFANS/PGF/AGU (SEI nº 26970060), reconheceu que não há óbice jurídico para o
+estabelecimento do período de vacância nas resoluções que atualizam o Rol.
+4.3.
+Portanto, considerando as providências operacionais necessárias para disponibilização das
+tecnologias aqui apresentadas, propõe-se que a resolução normava aqui proposta  (SEI nº 34765875) entre
+em vigor no dia 10/02/2026.
+ 
+5.
+RECOMENDAÇÕES E ENCAMINHAMENTOS
+5.1.
+Por todo o exposto, em cumprimento ao § 10 do art. 10, da Lei nº 9.656/1998, apresenta-se a
+presente Nota Técnica à consideração superior e posterior envio à DIRAD/DIPRO, para encaminhamento à
+Diretoria Colegiada da ANS para apreciação e deliberação, nos termos da proposição de minuta de resolução
+normativa anexa para a atualização do anexo II da RN nº 465/2021, conforme segue:
+ 
+a) Em relação ao RR nº 1062/2025, propõe-se a atualização da Diretriz de Ulização - DUT
+nº 65.18 do anexo II da RN nº 465/2021, relacionado à "TERAPIA IMUNOBIOLÓGICA
+ENDOVENOSA, INTRAMUSCULAR OU SUBCUTÂNEA COM DIRETRIZ DE UTILIZAÇÃO)", para
+ampliar a cobertura assistencial do medicamento Emicizumabe, para o tratamento
+profiláTco de pacientes com hemofilia A grave ou com nível de aTvidade de fator VIII
+inferior a 2%, sem anTcorpos inibidores do fator VIII, com até 6 anos de idade no início do
+tratamento, conforme exposto no quadro supracitado;
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 24
+65.18 HEMOFILIA A
+(...)
+2. Cobertura obrigatória do medicamento Emicizumabe, para tratamento profiláco de pacientes com
+Hemofilia A grave ou com nível de avidade de fator VIII inferior a 2%, sem ancorpos inibidores do
+fator VIII, com até 6 anos de idade no início do tratamento.
+ 
+Observação: A Hemofilia A pode ser classificada de acordo com a concentração de FVIII no sangue: 
+ 
+Gravidade
+Concentração de Fator VIII
+Leve
+5 UI/dI a 40 UI/dI
+(0,05 – 0,40 UI/mL) ou
+Maior que 5% e menor que 40% do normal
+Moderada
+1 UI/dl a 5 UI/dl
+(0,01 - 0,05 UI/mL) ou
+Entre 1% a 5% do normal
+Grave
+Menor que 1 UI/dl
+(menor que 0,01 UI/mL) ou
+Menor que 1% do normal
+ 
+b) Em relação ao RR nº 1047 - Protocolo Clínico e Diretrizes Terapêucas - PCDT de
+Dermate Atópica, propõe-se a atualização da Diretriz de Ulização - DUT nº 158 do anexo II
+da RN nº 465/2021, relacionada à “TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL”,
+para incluir o medicamento Metotrexato para tratamento de pacientes de qualquer idade
+com Dermatite Atópica moderada a grave, evidenciada por uma das escalas de gravidade.
+SUBSTÂNCIA
+INDICAÇÃO
+Metotrexato
+Tratamento de pacientes de qualquer idade com Dermatite Atópica moderada a grave, que atendam a
+pelo menos um dos seguintes critérios:
+a. Escore de Atividade da Dermatite Atópica - SCORAD igual ou superior a 25;
+b. Índice de Área e Gravidade do Eczema - EASI superior a 7;
+c. Índice de Qualidade de Vida em Dermatologia - DLQI superior a 5;
+d. Índice Pediátrico de Qualidade de Vida em Dermatologia (Children's Dermatology Life Quality Index-
+CDLQI superior a 6;
+e. Escala de Eczema Orientada ao Paciente (Patient-Oriented Eczema Measure) - POEM superior a 7;
+f. Índice de Gravidade da Dermatite Atópica Orientado ao Paciente (Patient-Oriented SCORAD) - PO-
+SCORAD igual ou superior a 25;
+g. Avaliação Global Validada do Investigador para Dermatite Atópica ( (Validated Investigator Global
+Assessment for Atopic Dermatitis) - vIGA-AD  superior a 2.
+ 
+Observação: Outro medicamento para o tratamento de Dermatite Atópica está disposto na Diretriz de
+Utilização nº 65.14, relacionada à TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU
+SUBCUTÂNEA (COM DIRETRIZ DE UTILIZAÇÃO).
+ 
+c) Incluir item de observação na Diretriz de Ulização  nº 65.14 DERMATITE ATÓPICA,
+vinculada à "TERAPIA IMUNOBIOLÓGICA ENDOVENOSA, INTRAMUSCULAR OU SUBCUTÂNEA
+COM DIRETRIZ DE UTILIZAÇÃO)", para informar a existência de outro medicamento
+destinado à cobertura assistencial no tratamento de Dermatite Atópica:
+ 
+65.14 DERMATITE ATÓPICA
+(...)
+Observação 2: Outro medicamento para o tratamento de Dermate Atópica está disposto na Diretriz
+de Ulização nº 158, relacionada à “TERAPIA MEDICAMENTOSA INJETÁVEL AMBULATORIAL (COM
+DIRETRIZ DE UTILIZAÇÃO)".
+ 
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 25
+d) Ausência de providências a serem tomadas em relação às tecnologias tratadas nos RRs nº
+864/2025 nº 1056/2025, nº 1058/2025, nº 1059/2025, nº 1060/2025, nº 944/2024, nº
+1046/2026, nº 1047/2025 (medicamentos Dupilumabe, Upadacinibe, Furoato de
+mometasona e Tacrolimo), nº 1051/2025, nº 1057/2025, nº 1063/2025, nº 1067/2025, nº
+1068/2025, e nº 1069/2025;
+e) Aprovação da minuta de resolução normava que atualizará o anexo II da RN nº
+465/2021 (SEI nº 34765875), com vigência a partir de 10/02/2026.
+ 
+5.2.
+À consideração superior.
+ 
+ 
+ 
+Documento assinado eletronicamente por MARLY D ALMEIDA PIMENTEL CORREA PEIXOTO, Gerente de
+Cobertura Assistencial e Incorporação de Tecnologias em Saúde, em 28/01/2026, às 15:54, conforme
+horário oficial de Brasília, com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de
+2020.
+Documento assinado eletronicamente por MILTON DAYRELL LUCAS FILHO, Coordenador(a) de Mecanismos
+de Regulação e Coberturas Assistenciais, em 28/01/2026, às 15:54, conforme horário oficial de Brasília,
+com fundamento no § 3ºdo art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+Documento assinado eletronicamente por Ana Cristina Marques Martins, Gerente-Geral de Regulação
+Assistencial, em 28/01/2026, às 16:21, conforme horário oficial de Brasília, com fundamento no § 3ºdo art.
+4º, do Decreto nº 10.543, de 13 de novembro de 2020.
+A autenticidade deste documento pode ser conferida no site https://www.ans.gov.br/sei/autenticidade,
+informando o código verificador 34756476 e o código CRC 651AtiEC1.
+Referência: Processo nº 33910.000122/2026-30
+SEI nº 34756476
+Nota Técnica 1 (34756476)         SEI 33910.000122/2026-30 / pg. 26

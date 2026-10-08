@@ -93251,6 +93251,1047 @@
   "hash": "1f74a1e79e249375",
   "tipo_item": "Vista"
  },
+ "ANA|RD949|ATA RD948|Aprovação da ata da 948ª RD (RD949)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "a06793e77e3453e9",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD949|02501.004214/2022-53|RD949-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "administrativo",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "37a4148e6f97eb15",
+  "tipo_item": "Vista"
+ },
+ "ANA|RD949|02501.004082/2023-41|RD949-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "8cc56d29a7174ad8",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD949|02501.003172/2023-14|RD949-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "ef9b4b93b0505de6",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANA|RD949|02502.002034/2025-70|RD949-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao"
+  ],
+  "fonte": "regra",
+  "hash": "77adb8a540cd9ca0",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD949|02501.003338/2022-11|RD949-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "824e643a42c71213",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD949|02501.000714/2024-88|RD949-DLB6": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "c1e86c0a69e40846",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD949|02501.007405/2025-10|RD949-DLB7": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Auto de infração / multa",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "multa",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "auto de infracao",
+   "infracao"
+  ],
+  "fonte": "regra",
+  "hash": "e006f6556fbc3036",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD949|02501.000397/2019-32|RD949-DLB8": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "948706c7f0a945b5",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD950|ATA RD949|Aprovação da ata da 949ª RD (RD950)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "cf5b4fcd29601f03",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD950|02501.003545/2024-38|RD950-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "597a9a5964161567",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD950|02501.000475/2023-85|RD950-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "bffac82a18ff1603",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD950|02501.004214/2022-53|RD950-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "37a4148e6f97eb15",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD950|02501.000027/2023-81|RD950-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "4f9318de89c81d3a",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD950|02501.005135/2024-21|RD950-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "54d04514cd5878b5",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANA|RD951|ATA RD950|Aprovação da ata da 950ª RD (RD951)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "4f25466101814110",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD951|02501.000888/2026-11|RD951-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "3e4056b107242f65",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD951|02501.005135/2024-21|RD951-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "54d04514cd5878b5",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANA|RD951|02501.000716/2024-77|RD951-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "a75e6980eba9d596",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD951|02502.002374/2025-09|RD951-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "c5fe46ad54f00d05",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD951|02502.004318/2025-09|RD951-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.64,
+  "conf_tema": 0.64,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "7603f70e7967e0ab",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD952|ATA RD951|Aprovação da ata da 951ª RD (RD952)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "114873a5e16d8f9d",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD952|02501.005135/2024-21|RD952-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.95,
+  "conf_tema": 0.95,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "54d04514cd5878b5",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD952|02501.001387/2022-10|RD952-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "7fecfefc15a249f6",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD952|02502.001501/2025-44|RD952-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "usuario",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "93b79233a37e22ce",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD952|02501.001538/2022-30|RD952-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "4f3d1b20fd111b94",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD952|02501.002932/2018-17|RD952-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "tarifa",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao"
+  ],
+  "fonte": "regra",
+  "hash": "8fa4a00cac87e4b7",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|ATA RD952|Aprovação da ata da 952ª RD (RD953)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "17370206762c80c9",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD953|02501.001076/2021-70|RD953-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "68cf106a68723a7b",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|02502.002878/2025-11|RD953-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "usuario",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "6195ef87c956ef0c",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|02501.004756/2021-45|RD953-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "5867c47e2b5f9da1",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|02501.004560/2021-51|RD953-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "68d1815b66e00f2c",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|02502.000023/2025-55|RD953-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso"
+  ],
+  "fonte": "regra",
+  "hash": "83a84d1a90099136",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD953|02501.001538/2022-30|RD953-DLB6": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "3b3e1feae5a2094c",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD954|ATA RD953|Aprovação da ata da 953ª RD (RD954)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "1df3172b7a99f874",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD954|02501.002950/2025-10|RD954-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "ebf51987f55f7a7f",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD954|02501.006528/2019-95|RD954-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "direito de uso",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "f1982a8a83d3048f",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD954|02501.005617/2018-33|RD954-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "f7528c54ec1203ed",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD955|ATA RD954|Aprovação da ata da 954ª RD (RD955)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "b47527a0359ac1b9",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD955|02501.001071/2023-17|RD955-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "usuario",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "610fc8a6ad0958e5",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD955|02501.001039/2023-23|RD955-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "36e18fbe8a062a27",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD955|02501.010429/2025-56|RD955-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Segurança de barragens",
+  "subtema": "Barragens e reservatórios",
+  "tipo_ato": "Outros",
+  "microtema_iris": "seguranca",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "seguranca de barragens"
+  ],
+  "fonte": "regra",
+  "hash": "ed9a07e2979d8780",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD955|02501.003543/2025-20|RD955-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Auto de infração / multa",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "multa",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "auto de infracao",
+   "infracao"
+  ],
+  "fonte": "regra",
+  "hash": "13b4b5dbb05d29ec",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD955|02501.000756/2024-19|RD955-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "5eb6f59639cf8830",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD956|ATA RD955|Aprovação da ata da 955ª RD (RD956)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "2c52d090c4143492",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD956|02501.000767/2024-07|RD956-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "178d30f661913b25",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD956|02502.000965/2025-33|RD956-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "d1786f8f476239b4",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD956|02501.005035/2022-33|RD956-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.67,
+  "conf_tema": 0.67,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "c216ae1c334a2e8c",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD956|02502.000014/2025-64|RD956-DLB4": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "reequilibrio",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "db2ae9191e8faf29",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD956|02501.002222/2026-99|RD956-DLB5": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / consulta pública / agenda regulatória",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.73,
+  "conf_tema": 0.73,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao",
+   "consulta publica",
+   "agenda regulatoria",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "d2649e2946eea740",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD957|ATA RD956|Aprovação da ata da 956ª RD (RD957)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "a42f76478d58b39e",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD957|02501.001370/2022-62|RD957-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.56,
+  "conf_tema": 0.56,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "83113655947e63c1",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD957|02501.000149/2026-11|RD957-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "d24b59474a5a7de2",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD957|02501.004517/2026-08|RD957-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "ambiental",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "e42b274b3b6d024c",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD958|ATA RD957|Aprovação da ata da 957ª RD (RD958)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "eb95cd2ecfc83fe1",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD958|02501.001538/2022-30|RD958-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "7a342a7624836094",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD958|02502.000135/2026-97|RD958-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga",
+   "dominio da uniao",
+   "captacao"
+  ],
+  "fonte": "regra",
+  "hash": "d38ea07ebd7ca735",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD959|ATA RD958|Aprovação da ata da 958ª RD (RD959)": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "48b93b9121b5c85b",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANA|RD959|02501.000945/2023-19|RD959-DLB1": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "8aa82bf0b7e85f34",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD959|02501.003397/2023-71|RD959-DLB2": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Outorgas e autorizações",
+  "subtema": "Outorga / reserva de disponibilidade hídrica",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "reserva de disponibilidade"
+  ],
+  "fonte": "regra",
+  "hash": "50ec66f75a7c459d",
+  "tipo_item": "Deliberação"
+ },
+ "ANA|RD959|02502.000014/2025-64|RD959-DLB3": {
+  "modal": "Recursos hídricos e saneamento",
+  "tema": "Saneamento básico",
+  "subtema": "Normas de referência e regulação do saneamento",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "tarifa",
+  "area_iris": "administrativo",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma de referencia",
+   "abastecimento de agua",
+   "esgot"
+  ],
+  "fonte": "regra",
+  "hash": "43bacd887f637940",
+  "tipo_item": "Deliberação"
+ },
  "ANS|DICOL633|ATA DICOL633-i1|Item 1: APROVAÇÃO das minutas das atas da 1ª Reunião Extraordinária de Diretoria Colegiada, de 26/01/2026; da 632ª Reunião Ordinária de Diretoria Colegiada, de 30/01/2026; e da 2ª Reunião Extraordinária de Di": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
