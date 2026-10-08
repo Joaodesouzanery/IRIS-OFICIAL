@@ -11069,7 +11069,7 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11079,7 +11079,7 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11089,7 +11089,7 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11099,7 +11099,7 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Guilherme Gomes",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11159,8 +11159,8 @@
    "processo": "27213.826299/1997-38",
    "deliberacao": "1.3.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11169,8 +11169,8 @@
    "processo": "27213.826299/1997-38",
    "deliberacao": "1.3.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11179,8 +11179,8 @@
    "processo": "27213.826299/1997-38",
    "deliberacao": "1.3.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11189,8 +11189,8 @@
    "processo": "27207.872093/1996-88",
    "deliberacao": "3.3.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11199,8 +11199,8 @@
    "processo": "27207.872093/1996-88",
    "deliberacao": "3.3.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11219,8 +11219,8 @@
    "processo": "27207.872093/1996-88",
    "deliberacao": "3.3.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11319,7 +11319,7 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11329,7 +11329,7 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11339,7 +11339,7 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -11809,8 +11809,8 @@
    "processo": "48403.830075/2006-13",
    "deliberacao": "2.2.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11819,8 +11819,8 @@
    "processo": "48403.830075/2006-13",
    "deliberacao": "2.2.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11849,8 +11849,8 @@
    "processo": "27203.833738/2004-68",
    "deliberacao": "2.2.2",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11859,8 +11859,8 @@
    "processo": "27203.833738/2004-68",
    "deliberacao": "2.2.2",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -11999,8 +11999,8 @@
    "processo": "48403.830660/2018-49",
    "deliberacao": "4.1.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12009,8 +12009,8 @@
    "processo": "48403.830660/2018-49",
    "deliberacao": "4.1.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12039,8 +12039,8 @@
    "processo": "48403.830659/2018-14",
    "deliberacao": "4.1.2",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12049,8 +12049,8 @@
    "processo": "48403.830659/2018-14",
    "deliberacao": "4.1.2",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12079,8 +12079,8 @@
    "processo": "48403.830658/2018-70",
    "deliberacao": "4.1.3",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12089,8 +12089,8 @@
    "processo": "48403.830658/2018-70",
    "deliberacao": "4.1.3",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12119,8 +12119,8 @@
    "processo": "48403.830657/2018-25",
    "deliberacao": "4.1.4",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12129,8 +12129,8 @@
    "processo": "48403.830657/2018-25",
    "deliberacao": "4.1.4",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12159,8 +12159,8 @@
    "processo": "48403.830649/2018-89",
    "deliberacao": "4.1.5",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12169,8 +12169,8 @@
    "processo": "48403.830649/2018-89",
    "deliberacao": "4.1.5",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12199,8 +12199,8 @@
    "processo": "48403.830190/2018-13",
    "deliberacao": "4.1.6",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12209,8 +12209,8 @@
    "processo": "48403.830190/2018-13",
    "deliberacao": "4.1.6",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12239,8 +12239,8 @@
    "processo": "48403.830189/2018-99",
    "deliberacao": "4.1.7",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12249,8 +12249,8 @@
    "processo": "48403.830189/2018-99",
    "deliberacao": "4.1.7",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12279,8 +12279,8 @@
    "processo": "48403.830188/2018-44",
    "deliberacao": "4.1.8",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12289,8 +12289,8 @@
    "processo": "48403.830188/2018-44",
    "deliberacao": "4.1.8",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12319,8 +12319,8 @@
    "processo": "48403.830187/2018-08",
    "deliberacao": "4.1.9",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12329,8 +12329,8 @@
    "processo": "48403.830187/2018-08",
    "deliberacao": "4.1.9",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12359,8 +12359,8 @@
    "processo": "48403.830174/2018-21",
    "deliberacao": "4.1.10",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12369,8 +12369,8 @@
    "processo": "48403.830174/2018-21",
    "deliberacao": "4.1.10",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12399,8 +12399,8 @@
    "processo": "48403.830172/2018-31",
    "deliberacao": "4.1.11",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12409,8 +12409,8 @@
    "processo": "48403.830172/2018-31",
    "deliberacao": "4.1.11",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -12469,7 +12469,7 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -12479,7 +12479,7 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -12489,7 +12489,7 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -12546,6 +12546,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "27209.890204/1998-80",
+   "deliberacao": "5.1.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "27209.890205/1998-24",
    "deliberacao": "5.1.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12582,6 +12593,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27209.890205/1998-24",
+   "deliberacao": "5.1.2",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -12626,6 +12648,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "48420.996118/2017-69",
+   "deliberacao": "5.2.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "48406.860296/2014-98",
    "deliberacao": "5.3.1",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12662,6 +12695,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48406.860296/2014-98",
+   "deliberacao": "5.3.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -12706,6 +12750,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "48416.858095/2013-21",
+   "deliberacao": "5.4.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "48403.831009/2014-62",
    "deliberacao": "5.4.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12742,6 +12797,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48403.831009/2014-62",
+   "deliberacao": "5.4.2",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -12786,6 +12852,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "48422.806052/2008-13",
+   "deliberacao": "5.5.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "48418.878053/2006-67",
    "deliberacao": "5.5.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12822,6 +12899,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48418.878053/2006-67",
+   "deliberacao": "5.5.2",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -12866,6 +12954,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "48413.826431/2013-04",
+   "deliberacao": "5.5.3",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "48063.980034/2024-49",
    "deliberacao": "5.6.1",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12906,6 +13005,17 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "48063.980034/2024-49",
+   "deliberacao": "5.6.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "48403.933830/2011-70",
    "deliberacao": "5.7.1",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -12942,6 +13052,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48403.933830/2011-70",
+   "deliberacao": "5.7.1",
+   "diretor": "Luiz Paniago Neves",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -13549,8 +13670,8 @@
    "processo": "27205.850006/1996-51",
    "deliberacao": "3.4.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -13559,8 +13680,8 @@
    "processo": "27205.850006/1996-51",
    "deliberacao": "3.4.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -13579,8 +13700,8 @@
    "processo": "27205.850006/1996-51",
    "deliberacao": "3.4.1",
    "diretor": "José Fernando de Mendonça Gomes Jr",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -13669,8 +13790,8 @@
    "processo": "27205.851966/1992-13",
    "deliberacao": "2.7.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -13779,8 +13900,8 @@
    "processo": "48075.000119/2019-53",
    "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -18546,6 +18667,17 @@
   {
    "reuniao": "ROP82",
    "data": "2026-02-23",
+   "processo": "48066.815567/2021-88",
+   "deliberacao": "2.3.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "ROP82",
+   "data": "2026-02-23",
    "processo": "27220.896443/2000-61",
    "deliberacao": "2.3.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -18582,6 +18714,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP82",
+   "data": "2026-02-23",
+   "processo": "27220.896443/2000-61",
+   "deliberacao": "2.3.2",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP82",
@@ -19949,7 +20092,7 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -19969,7 +20112,7 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -19979,7 +20122,7 @@
    "processo": "48403.831349/2015-74",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -19999,7 +20142,7 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20009,7 +20152,7 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20019,7 +20162,7 @@
    "processo": "48403.830597/2011-74",
    "deliberacao": "2.4.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20066,6 +20209,17 @@
   {
    "reuniao": "ROP83",
    "data": "2026-03-25",
+   "processo": "48403.830512/2018-24",
+   "deliberacao": "2.5.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
    "processo": "48412.866510/2015-11",
    "deliberacao": "2.6.1",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -20102,6 +20256,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
+   "processo": "48412.866510/2015-11",
+   "deliberacao": "2.6.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP83",
@@ -20119,7 +20284,7 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20129,7 +20294,7 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20139,7 +20304,7 @@
    "processo": "48403.832699/2005-86",
    "deliberacao": "2.7.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20149,7 +20314,7 @@
    "processo": "48403.832959/2005-13",
    "deliberacao": "2.7.2",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20169,7 +20334,7 @@
    "processo": "48403.832959/2005-13",
    "deliberacao": "2.7.2",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20179,7 +20344,7 @@
    "processo": "48403.832959/2005-13",
    "deliberacao": "2.7.2",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -20226,6 +20391,17 @@
   {
    "reuniao": "ROP83",
    "data": "2026-03-25",
+   "processo": "48403.932145/2008-21",
+   "deliberacao": "2.8.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
    "processo": "48402.921239/2013-41",
    "deliberacao": "2.8.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -20262,6 +20438,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP83",
+   "data": "2026-03-25",
+   "processo": "48402.921239/2013-41",
+   "deliberacao": "2.8.2",
+   "diretor": "Guilherme Santana Lopes Gomes",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP83",
@@ -22466,6 +22653,17 @@
   {
    "reuniao": "ROP84",
    "data": "2026-04-29",
+   "processo": "48054.930707/2019-61",
+   "deliberacao": "2.1.1",
+   "diretor": "Carlos Cordeiro Ribeiro",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
+  },
+  {
+   "reuniao": "ROP84",
+   "data": "2026-04-29",
    "processo": "48402.922857/2009-29",
    "deliberacao": "2.1.2",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -22502,6 +22700,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP84",
+   "data": "2026-04-29",
+   "processo": "48402.922857/2009-29",
+   "deliberacao": "2.1.2",
+   "diretor": "Guilherme Santana Lopes Gomes",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP84",
@@ -22549,7 +22758,7 @@
    "processo": "48406.861600/2008-76",
    "deliberacao": "2.3.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -22569,7 +22778,7 @@
    "processo": "48406.861600/2008-76",
    "deliberacao": "2.3.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -22579,7 +22788,7 @@
    "processo": "48406.861600/2008-76",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -22622,6 +22831,17 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP84",
+   "data": "2026-04-29",
+   "processo": "48403.834865/2010-46",
+   "deliberacao": "2.4.1",
+   "diretor": "Guilherme Santana Lopes Gomes",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP84",
@@ -24279,8 +24499,8 @@
    "processo": "27202.820791/1987-57",
    "deliberacao": "1.5.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -24289,8 +24509,8 @@
    "processo": "27202.820791/1987-57",
    "deliberacao": "1.5.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -24299,9 +24519,20 @@
    "processo": "27202.820791/1987-57",
    "deliberacao": "1.5.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP85",
+   "data": "2026-05-27",
+   "processo": "27202.820791/1987-57",
+   "deliberacao": "1.5.1",
+   "diretor": "Guilherme Santana Lopes Gomes",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP85",
@@ -24349,7 +24580,7 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -24359,7 +24590,7 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -24369,7 +24600,7 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -24379,9 +24610,20 @@
    "processo": "27203.802386/1974-22",
    "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
+  },
+  {
+   "reuniao": "ROP85",
+   "data": "2026-05-27",
+   "processo": "27203.802386/1974-22",
+   "deliberacao": "2.1.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "ROP85",
@@ -25359,7 +25601,7 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -25369,7 +25611,7 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -25379,7 +25621,7 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -25709,7 +25951,7 @@
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -25729,7 +25971,7 @@
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -25739,7 +25981,7 @@
    "processo": "27220.896259/2004-44",
    "deliberacao": "2.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
+   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
    "proveniencia": "REVISAR",
    "tipo_item": "Deliberação"
   },
@@ -26479,8 +26721,8 @@
    "processo": "48405.950484/2011-09",
    "deliberacao": "3.1.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -26499,8 +26741,8 @@
    "processo": "48405.950484/2011-09",
    "deliberacao": "3.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -28029,8 +28271,8 @@
    "processo": "48061.860677/2019-20",
    "deliberacao": "3.6.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -28039,8 +28281,8 @@
    "processo": "48061.860677/2019-20",
    "deliberacao": "3.6.1",
    "diretor": "Fábio Fernando Borges",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -29569,8 +29811,8 @@
    "processo": "48411.815707/2008-73",
    "deliberacao": "2.3.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {
@@ -29579,8 +29821,8 @@
    "processo": "48411.815707/2008-73",
    "deliberacao": "2.3.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "REVISAR",
-   "proveniencia": "REVISAR",
+   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
+   "proveniencia": "inferido",
    "tipo_item": "Vista"
   },
   {

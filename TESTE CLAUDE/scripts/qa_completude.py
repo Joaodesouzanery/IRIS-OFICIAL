@@ -72,6 +72,16 @@ vts = [r for r in wb['Votos'].iter_rows(min_row=2, values_only=True)]
 cx = collections.Counter(r[0] for r in vts)
 lin('ANVISA', 'Votos no JSON final × linhas na aba Votos', len(fin['votos']), cx['ANVISA'])
 lin('ANPD', 'Votos no JSON × linhas na aba Votos', len(b['votos']), cx['ANPD'])
+# ---------------- regra: tudo que falta (esperado − coletado) está na aba 'Faltam na fonte', com URL
+fx = [r for r in wb['Faltam na fonte'].iter_rows(min_row=2, values_only=True)]
+chaves = collections.defaultdict(set)
+for r in fx: chaves[r[0]].add(str(r[2]).split(' — ')[0].strip())
+for ag, js in (('ANVISA', fin), ('ANPD', b)):
+    esp = [p_[1] for p_ in js.get('pendencias', [])]
+    faltam = [x for x in esp if not any(x == c or c.startswith(x) or x in c for c in chaves[ag])]
+    lin(ag, 'Documentos pendentes do JSON × linhas da aba "Faltam na fonte"', len(esp), len(esp) - len(faltam), nota=f'ausentes da aba: {faltam[:6]}')
+sem_url = [r for r in fx if not r[5]]
+lin('TODAS', 'Linhas da aba "Faltam na fonte" com URL da página-fonte', len(fx), len(fx) - len(sem_url), nota=f'sem URL: {[(r[0], str(r[2])[:40]) for r in sem_url[:4]]}')
 # ---------------- saída
 print(f"{'Agência':7} | {'Esperado':>8} | {'Coletado':>8} | Status | Verificação")
 for ag, item, esp, obs, st, nota in L: print(f"{ag:7} | {str(esp):>8} | {str(obs):>8} | {st:6} | {item}" + (f'  [{nota[:120]}]' if nota else ''))

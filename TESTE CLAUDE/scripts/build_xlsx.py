@@ -18,8 +18,9 @@ for r in anm['reunioes']:
     if r['reuniao'] in keep_anm: R.append(dict(r, agencia='ANM', tipo='Ordinária (ROP)' if r['reuniao'].startswith('ROP') else 'Extraordinária (REP)', ausentes=[]))
 for d in anm['deliberacoes']:
     if d['reuniao'] in keep_anm: D.append(dict(d, agencia='ANM', item=d['processo'], texto=d.get('deliberacao_texto', '')))
+VX = []   # votos de ex-diretores (relator de reunião anterior): aparecem na aba Votos, mas NÃO entram nos totais de 2026
 for v in anm['votos']:
-    if v['reuniao'] in keep_anm: V.append(dict(v, agencia='ANM'))
+    if v['reuniao'] in keep_anm: (VX if v.get('fora_total') else V).append(dict(v, agencia='ANM'))
 # ---- ANTT
 for r in antt['reunioes']: R.append(dict(r, agencia='ANTT'))
 for d in antt['deliberacoes']: D.append(dict(d, agencia='ANTT', texto=d.get('decisao_texto', ''), item=d['processo']))
@@ -32,7 +33,16 @@ for x in rde270:
 # ---- ARTESP
 for r in art['reunioes']: R.append(dict(r, agencia='ARTESP'))
 for d in art['deliberacoes']: D.append(dict(d, agencia='ARTESP', relator='Conselho Diretor', texto='', item=f"Del. {d['deliberacao']}", voto_doc=''))
-for v in art['votos']: V.append(dict(v, agencia='ARTESP'))
+PROC_ART = json.load(open('artesp_procedencia.json')) if os.path.exists('artesp_procedencia.json') else {}
+for v in art['votos']:
+    pr_ = PROC_ART.get(str(v.get('deliberacao'))) or {}
+    nv_ = dict(v, agencia='ARTESP')
+    if pr_.get('diretor') and v['diretor'] == pr_['diretor'] and not v['voto'].startswith(('AUSENTE', 'SEM VOTO')):
+        nv_['voto'] = 'PROPONENTE (Procedência da deliberação: ' + pr_['procedencia'][:60] + ')'; nv_['proveniencia'] = 'nominal'
+    V.append(nv_)
+for d in D:
+    pr_ = PROC_ART.get(str(d.get('deliberacao'))) if d['agencia'] == 'ARTESP' else None
+    if pr_ and pr_.get('diretor'): d['relator'] = pr_['diretor'] + ' (proponente: ' + pr_['procedencia'][:40] + ')'
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
 EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json')) if os.path.exists(f)}
@@ -60,7 +70,30 @@ for d in D: res[(d['agencia'], d['reuniao'], d['processo'], d.get('deliberacao')
 def get_res(v):
     d = res.get((v['agencia'], v['reuniao'], v['processo'], v.get('deliberacao')))
     return d or {}
-for v in V: v['tipo_item'] = get_res(v).get('tipo_item', 'Deliberação')
+for v in V + VX: v['tipo_item'] = get_res(v).get('tipo_item', 'Deliberação')
+
+# ---- CICLO DA VISTA: liga o item em vista ao desfecho posterior do MESMO processo (mesma agência, reunião/data depois)
+def _ck(x): return (x['agencia'], x['reuniao'], x.get('processo'), x.get('deliberacao'))
+DESF = {}   # chave do item -> (status, chave do item do desfecho | None)
+_por_proc = collections.defaultdict(list)
+for d in D:
+    if d['tipo_item'] in ('Deliberação', 'Vista', 'Aprovação de ata') and d.get('processo') and not str(d['processo']).startswith(('ROP', 'CD ')): _por_proc[(d['agencia'], d['processo'])].append(d)
+for d in D:
+    if d['tipo_item'] != 'Vista': continue
+    seq = sorted([x for x in _por_proc.get((d['agencia'], d.get('processo')), []) if (x['data'] or '') > (d['data'] or '') or ((x['data'] or '') == (d['data'] or '') and _ck(x) != _ck(d) and x['reuniao'] > d['reuniao'])], key=lambda x: (x['data'] or '', x['reuniao']))
+    fim = next((x for x in seq if x['tipo_item'] == 'Deliberação'), None)
+    DESF[_ck(d)] = ('Resolvido em ' + fim['reuniao'] + ' (' + (fim['data'] or '') + ')', _ck(fim)) if fim else ('Aberto: vista ainda sem desfecho em 2026', None)
+def status_proc(x): return DESF.get(_ck(x), ('', None))[0]
+_resx = {}
+for d in D: _resx[_ck(d)] = d
+def desfecho_final(x):
+    k = DESF.get(_ck(x), ('', None))[1]; return _resx[k]['resultado'] if k else ''
+_vk = {}
+for v in V: _vk[(v['agencia'], v['reuniao'], v.get('processo'), v.get('deliberacao'), v['diretor'])] = v
+def voto_final(v):
+    k = DESF.get((v['agencia'], v['reuniao'], v.get('processo'), v.get('deliberacao')), ('', None))[1]
+    if not k: return ''
+    w = _vk.get(k + (v['diretor'],)); return w['voto'] if w else ''
 
 wb = Workbook(); wb.remove(wb.active)
 def sheet(nome, cab, linhas, larg=None):
@@ -73,7 +106,7 @@ def sheet(nome, cab, linhas, larg=None):
 # ---- Resumo por diretor
 def kind(v):
     t = v['voto']
-    if t.startswith('RELATOR') or t.startswith('RETIROU'): return 'como relator/proponente'
+    if t.startswith('RELATOR') or t.startswith('RETIROU') or t.startswith('PROPONENTE'): return 'como relator/proponente'
     if t == 'ACOMPANHOU': return 'acompanhou'
     if t.startswith('DIVERGIU'): return 'divergiu'
     if t == 'PEDIU VISTA': return 'pediu vista'
@@ -202,7 +235,7 @@ for sg, x in EXTRAS.items(): ordem[sg] = x['diretores']
 vidx = collections.defaultdict(dict)
 for v in V: vidx[(v['agencia'], v['reuniao'], v['processo'], v.get('deliberacao'))][v['diretor']] = v
 def cod(v):
-    t = v['voto']; b = ('RELATOR' if t.startswith('RELATOR') else 'RETIROU' if t.startswith('RETIROU') else 'ACOMPANHOU' if t.startswith('ACOMPANHOU') else 'DIVERGIU' if t.startswith('DIVERGIU')
+    t = v['voto']; b = ('RELATOR' if t.startswith(('RELATOR', 'PROPONENTE')) else 'RETIROU' if t.startswith('RETIROU') else 'ACOMPANHOU' if t.startswith('ACOMPANHOU') else 'DIVERGIU' if t.startswith('DIVERGIU')
                         else 'VISTA' if 'VISTA' in t and not t.startswith('SEM') else 'AUSENTE' if t.startswith('AUSENTE') else 'sem voto' if t.startswith('SEM VOTO') else 'IMPEDIDO' if t.startswith('IMPEDIDO') else 'REVISAR')
     return b + ('*' if v['proveniencia'] == 'inferido' else '')
 for ag in AGS:
@@ -348,20 +381,21 @@ def sheetf(nome, cab, linhas, larg=None, cor='base', filtro=True):
     if filtro: ws.auto_filter.ref = ws.dimensions
     ws.sheet_properties.tabColor = COR[cor]; return ws
 def papel(v):
+    if v.get('fora_total'): return 'Relator (voto em reunião anterior)'
     if v['tipo_item'] == 'Aprovação de ata': return 'Aprovou a ata anterior'
     return {'como relator/proponente': 'Relator/proponente', 'acompanhou': 'Votante (acompanhou)', 'divergiu': 'Votante (divergiu)', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar', 'impedido': 'Impedido', 'sem voto (não votou)': 'Sem voto (não votou)'}[kind(v)]
 EVID = {'nominal': 'Individual (citada na ata)', 'inferido': 'Inferida (unanimidade/sem divergência)', 'n/a': 'Não se aplica', 'REVISAR': 'A revisar'}
 mes_ = lambda d: (d or '')[:7]
 # ---- Votos
-sheetf('Votos', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Diretor', 'Voto', 'Papel', 'Evidência', 'Proveniência', 'Tipo de item', 'Resultado da deliberação', 'Relator', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)', 'Assunto'],
+sheetf('Votos', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Diretor', 'Voto', 'Papel', 'Evidência', 'Proveniência', 'Tipo de item', 'Resultado da deliberação', 'Relator', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)', 'Assunto', 'Status do processo (vista)', 'Voto final (reunião do desfecho)', 'Conta nos totais de 2026'],
        [[v['agencia'], mes_(v['data']), v['data'], v['reuniao'], v['processo'], v.get('deliberacao', ''), v['diretor'], v['voto'], papel(v), EVID[v['proveniencia']], v['proveniencia'], v['tipo_item'], get_res(v).get('resultado', ''), get_res(v).get('relator', ''),
-         tm(get_res(v), 'modal'), tm(get_res(v), 'tema'), tm(get_res(v), 'subtema'), tm(get_res(v), 'microtema_iris'), tm(get_res(v), 'area_iris'), (get_res(v).get('assunto') or '')[:160]] for v in V],
-       {'Diretor': 38, 'Voto': 32, 'Papel': 22, 'Evidência': 32, 'Tipo de item': 22, 'Resultado da deliberação': 34, 'Relator': 36, 'Processo': 24, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24, 'Assunto': 60})
+         tm(get_res(v), 'modal'), tm(get_res(v), 'tema'), tm(get_res(v), 'subtema'), tm(get_res(v), 'microtema_iris'), tm(get_res(v), 'area_iris'), (get_res(v).get('assunto') or '')[:160], status_proc(get_res(v)) if get_res(v) else '', voto_final(v), 'Não (ex-diretor, voto em reunião anterior)' if v.get('fora_total') else 'Sim'] for v in V + VX],
+       {'Conta nos totais de 2026': 28, 'Diretor': 38, 'Voto': 32, 'Papel': 22, 'Evidência': 32, 'Tipo de item': 22, 'Resultado da deliberação': 34, 'Relator': 36, 'Processo': 24, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24, 'Assunto': 60})
 # ---- Deliberações
-sheetf('Deliberações', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Tipo de item', 'Relator', 'Interessado', 'Assunto', 'Resultado', 'Voto (doc)', 'Modal', 'Tema', 'Subtema', 'Tipo de ato', 'Microtema (IRIS)', 'Área (IRIS)', 'Confiança', 'Fonte da classificação', 'Texto da decisão'],
+sheetf('Deliberações', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Tipo de item', 'Relator', 'Interessado', 'Assunto', 'Resultado', 'Voto (doc)', 'Modal', 'Tema', 'Subtema', 'Tipo de ato', 'Microtema (IRIS)', 'Área (IRIS)', 'Confiança', 'Fonte da classificação', 'Texto da decisão', 'Status do processo (vista)', 'Desfecho final'],
        [[d['agencia'], mes_(d['data']), d['data'], d['reuniao'], d['processo'], d.get('deliberacao', ''), d['tipo_item'], d.get('relator'), d.get('interessado', ''), d.get('assunto', ''), d['resultado'], d.get('voto_doc', ''),
-         tm(d, 'modal'), tm(d, 'tema'), tm(d, 'subtema'), tm(d, 'tipo_ato'), tm(d, 'microtema_iris'), tm(d, 'area_iris'), tm(d, 'confianca', ''), tm(d, 'fonte'), d.get('texto', '')] for d in D],
-       {'Relator': 36, 'Interessado': 40, 'Assunto': 50, 'Texto da decisão': 80, 'Processo': 24, 'Resultado': 34, 'Tipo de item': 22, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Tipo de ato': 22})
+         tm(d, 'modal'), tm(d, 'tema'), tm(d, 'subtema'), tm(d, 'tipo_ato'), tm(d, 'microtema_iris'), tm(d, 'area_iris'), tm(d, 'confianca', ''), tm(d, 'fonte'), d.get('texto', ''), status_proc(d), desfecho_final(d)] for d in D],
+       {'Relator': 36, 'Interessado': 40, 'Assunto': 50, 'Texto da decisão': 80, 'Status do processo (vista)': 34, 'Desfecho final': 34, 'Processo': 24, 'Resultado': 34, 'Tipo de item': 22, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Tipo de ato': 22})
 # ---- Matriz de votos única
 todos_dir = [(ag, nome) for ag in AGS for nome in ordem[ag]]
 curto = lambda ag, n: f"{ag}: {n.split()[0]} {n.split()[-1]}"
@@ -388,30 +422,67 @@ sheetf('Reuniões', ['Agência', 'Reunião', 'Data', 'Tipo', 'Presentes', 'Ausen
 NF = []
 rev = collections.Counter((v['agencia']) for v in V if v['proveniencia'] == 'REVISAR')
 imp = sum(1 for d in D if d['agencia'] == 'ANM' and d.get('tem_impedimento'))
-NF.append(['ANM', 'B. Impedimento / "não votaria" não modelado', f"{rev.get('ANM', 0)} linhas ainda 'REVISAR' (maioria/vista); {imp} itens citam impedimento", 'NÃO FEITO', 'O texto da ata registra diretor impedido; falta o estado IMPEDIDO e a dedução por exclusão', 'Modelar IMPEDIDO e deduzir votos quando restarem 3 votantes'])
-for ag in ('ANM', 'ANTT'):
-    vis = [d for d in D if d['agencia'] == ag and d['tipo_item'] == 'Vista']; res_ = 0
-    for d in vis:
-        if any(x['agencia'] == ag and x['processo'] == d['processo'] and (x['data'] or '') > (d['data'] or '') and x['tipo_item'] in ('Deliberação',) for x in D): res_ += 1
-    NF.append([ag, 'C. Ciclo da vista não ligado ao desfecho', f'{len(vis)} itens em vista: {res_} com desfecho posterior em 2026, {len(vis) - res_} ainda abertos', 'NÃO FEITO', 'O voto final de um processo em vista está em outra reunião e não está ligado', 'Criar Status do processo e Desfecho final'])
+NF.append(['ANM', 'B. Impedimento / "não votaria"', f"{rev.get('ANM', 0)} linhas 'REVISAR' (maioria sem divergentes nomeados na ata); 6 linhas de vista agora 'sem voto ainda'", 'FEITO (resíduo = limite da fonte)', 'Estado IMPEDIDO lido do texto (ANVISA: ' + str(sum(1 for v in V if v['agencia'] == 'ANVISA' and v['voto'].startswith('IMPEDIDO'))) + ' linhas); maioria com 1 divergente nomeado vira inferido por exclusão; o resíduo é "aprovado por maioria" sem nomes (aba Faltam na fonte)', 'Aguardar a ANM publicar os votos nominais'])
+for ag in ('ANM', 'ANTT', 'ANVISA'):
+    vis = [d for d in D if d['agencia'] == ag and d['tipo_item'] == 'Vista']
+    if not vis: continue
+    res_ = sum(1 for d in vis if DESF.get(_ck(d), ('', None))[1])
+    NF.append([ag, 'C. Ciclo da vista ligado ao desfecho', f'{len(vis)} itens em vista: {res_} resolvidos em reunião posterior (coluna "Status do processo" e "Voto final"), {len(vis) - res_} abertos', 'FEITO (abertos = aguardam a fonte)', 'Cada item em vista aponta o desfecho do mesmo processo em reunião posterior de 2026', 'Vistas abertas estão em Faltam na fonte'])
 pres_anm = {r['reuniao']: set(r['presentes']) for r in R if r['agencia'] == 'ANM'}
-exd = [d for d in D if d['agencia'] == 'ANM' and d['tipo_item'] in ('Deliberação', 'Vista') and d.get('relator') and d['relator'] not in pres_anm.get(d['reuniao'], set())]
-NF.append(['ANM', 'D. Relator que não é mais diretor', f'{len(exd)} itens (ex-diretores: {", ".join(sorted({x["relator"].split()[0] + " " + x["relator"].split()[-1] for x in exd}))})', 'NÃO FEITO', 'O voto deles foi em reunião anterior a 2026 e não aparece como linha de voto', 'Incluir como "relator (voto em reunião anterior)" fora dos totais'])
+NF.append(['ANM', 'D. Relator que não é mais diretor', f'{len(VX)} linhas de ex-diretores (Guilherme Santana, Caio Mário, Roger Cabral, Carlos Cordeiro)', 'FEITO', 'Entram na aba Votos como "Relator (voto em reunião anterior)", com a coluna "Conta nos totais de 2026" = Não', 'Nenhuma'])
 pr_ = fatos.get('artesp_procedencia', {})
-NF.append(['ARTESP', 'E. Relator não publicado', f"Procedência dos {pr_.get('pdfs_de_deliberacao', 0)} PDFs: superintendência {pr_.get('superintendencia', 0)}; diretor (DIR-RC) {pr_.get('diretoria_dir_rc', 0)}; Presidência {pr_.get('presidencia', 0)}", 'NÃO FEITO / LIMITE DA FONTE', 'A ARTESP não diz quem relatou em ~91% das deliberações', 'Recuperar os 62 com diretor/Presidência como proponente nominal; o resto é limite da fonte'])
+NF.append(['ARTESP', 'E. Relator não publicado (parcial)', f"Procedência dos {pr_.get('pdfs_de_deliberacao', 0)} PDFs: superintendência {pr_.get('superintendencia', 0)}; diretor (DIR-RC) {pr_.get('diretoria_dir_rc', 0)}; Presidência {pr_.get('presidencia', 0)}", 'FEITO para os que a fonte informa / LIMITE DA FONTE no resto', 'A ARTESP não diz quem relatou na maioria das deliberações; as de procedência diretor/Presidência entram como PROPONENTE nominal (' + str(sum(1 for v in V if v['agencia'] == 'ARTESP' and v['voto'].startswith('PROPONENTE'))) + ' votos)', 'Resto em Faltam na fonte'])
 for ag in AGS:
     vs = [v for v in V if v['agencia'] == ag]; n_inf = sum(1 for v in vs if v['proveniencia'] == 'inferido')
     NF.append([ag, 'G. Voto individual inferido da unanimidade', f'{n_inf} de {len(vs)} linhas ({n_inf * 100 // len(vs)}%)', 'LIMITE ESTRUTURAL', 'Em unanimidade a ata não traz o voto de cada diretor; só vídeos das sessões trazem', 'Não perseguido; usar a coluna Evidência para separar individual de inferida'])
 for sg, x in EXTRAS.items(): NF += x['nao_feito']
 for ag in AGS: NF.append([ag, 'H. Auditoria humana de 60 deliberações (resultado e presença)', 'não feita', 'NÃO FEITO', 'Só há amostras de tema (AMOSTRA_TEMAS.md) e conferência automática', 'Sortear e conferir 60 itens'])
 
-# ---- Controle (Cobertura + Qualidade + Pendências da fonte + Não feito)
+
+# ---- FALTAM NA FONTE: tudo que a FONTE deveria ter publicado (ou não publica) e que por isso não está nos votos
+URL_FONTE = {
+ 'ANM': 'https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/atas-da-rop/atas-reunioes-ordinarias',
+ 'ANTT': 'https://portal.antt.gov.br/web/guest/reunioes-da-diretoria', 'ARTESP': 'https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria',
+ 'ANVISA': 'https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026',
+ 'ANVISA|CD': 'https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/extratos-dos-circuitos-deliberativos-1/2026',
+ 'ANPD': 'https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo',
+ 'ANP': 'https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026',
+ 'ANTAQ': 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes'}
+def _tipo_pend(sit):
+    t = sit.lower()
+    if t.startswith('futura'): return 'Reunião futura (ainda não ocorreu)'
+    if 'sem registro' in t or 'número sem' in t: return 'Número sem registro na fonte'
+    if 'erro' in t: return 'Erro da fonte (corrigido por nós)'
+    if 'bloqueado' in t: return 'Bloqueado pela fonte'
+    if 'sem extrato' in t or 'sem ata' in t or 'não publicad' in t: return 'Documento não publicado'
+    return 'Documento não publicado'
+FALTAM = []   # [Agência, Tipo, Documento ou dado esperado, Data, Como sabemos que existe, URL da fonte, Situação, Votos afetados, Visto pela 1ª vez, Verificado em, Como resolver]
+for pe in P:
+    ag, item, dt_, sit, existe, motivo, como = pe[:7]; url = pe[7] if len(pe) > 7 and pe[7] else (URL_FONTE['ANVISA|CD'] if ag == 'ANVISA' and item.startswith('CD ') else URL_FONTE.get(ag, ''))
+    k = '|'.join(pe[:2] + (pe[3],)); h_ = hist.get(k, {})
+    afet = 'nenhum ainda (reunião futura)' if sit.lower().startswith('futura') else ('todos os diretores × itens da reunião/circuito' if _tipo_pend(sit) in ('Documento não publicado', 'Bloqueado pela fonte') else 'ver detalhe')
+    FALTAM.append([ag, _tipo_pend(sit), f'{item} — {sit}', dt_ or '', f'{existe}; {motivo}', url, 'ABERTA', afet, h_.get('primeira_vez', hoje_s), hoje_s, como])
+for k, x in DESF.items():
+    if x[1] is None:
+        d = _resx[k]; FALTAM.append([d['agencia'], 'Desfecho pendente (vista aberta)', f"{d['reuniao']} · {d.get('processo')} · item {d.get('deliberacao', '')}: voto final dos demais diretores", d['data'] or '', 'processo em vista sem retorno em reunião posterior de 2026', URL_FONTE.get(d['agencia'], ''), 'ABERTA', 'voto final dos diretores que não votaram antes da vista', hoje_s, hoje_s, 'Rodar rodar_tudo.sh quando a reunião de retorno for publicada'])
+_rv = collections.defaultdict(list)
+for v in V:
+    if v['proveniencia'] == 'REVISAR' and v['agencia'] == 'ANM': _rv[(v['reuniao'], v.get('processo'), v.get('deliberacao'))].append(v['diretor'])
+for (r_, pr_, dl_), ds_ in _rv.items():
+    d = _resx.get(('ANM', r_, pr_, dl_)) or {}
+    FALTAM.append(['ANM', 'Dado não publicado na ata', f'{r_} · {pr_}: nomes dos diretores que divergiram ("aprovado por maioria" sem nomear)', d.get('data', ''), 'a ata diz maioria e não lista os votos individuais', URL_FONTE['ANM'], 'LIMITE DA FONTE', f'{len(ds_)} votos (' + ', '.join(x.split()[0] for x in ds_) + ')', hoje_s, hoje_s, 'Depende da ANM publicar o resultado nominal; não resolvível por nós'])
+n_art = sum(1 for d in D if d['agencia'] == 'ARTESP' and 'proponente' not in str(d.get('relator')) and d['tipo_item'] != 'Cancelada')
+FALTAM.append(['ARTESP', 'Dado não publicado na ata', f'Relator/proponente de {n_art} deliberações (a Procedência do PDF é uma superintendência)', '', 'a ARTESP não informa qual diretor relatou', URL_FONTE['ARTESP'], 'LIMITE DA FONTE', f'campo "relator" de {n_art} deliberações; o voto de cada diretor continua registrado', hoje_s, hoje_s, 'Depende da ARTESP; 59 deliberações com procedência de diretoria já constam como proponente'])
+FALTAM.sort(key=lambda r: (r[0], r[1], r[2]))
+
+# ---- Controle (Cobertura + Qualidade + Não feito)
 ctrl = []
 for r in [list(x) for x in wb['Cobertura'].iter_rows(min_row=2, values_only=True)]: ctrl.append(['Cobertura', r[0], r[1], r[2], '', '', r[3], '', '', ''])
 for r in [list(x) for x in wb['Qualidade'].iter_rows(min_row=2, values_only=True)]: ctrl.append(['Qualidade', r[0], r[1], r[2], r[3], r[4], r[5], '', '', ''])
-for r in [list(x) for x in wb['Pendências da fonte'].iter_rows(min_row=3, values_only=True)]: ctrl.append(['Pendência da fonte', r[0], f'{r[1]} — {r[3]}', r[2], '', r[6], f'{r[5]} | já existe: {r[4]}', r[9], r[7], r[8]])
 for r in NF: ctrl.append(['Não feito', r[0], r[1], '', r[2], r[3], r[4], r[5], '', hoje_s])
 ctrl_ws = sheetf('Controle', ['Tipo', 'Agência', 'Item', 'Valor / data / esperado', 'Observado', 'Status', 'Detalhe', 'Como resolver', 'Visto pela 1ª vez', 'Verificado em'], ctrl, {'Tipo': 18, 'Item': 70, 'Valor / data / esperado': 22, 'Observado': 34, 'Status': 26, 'Detalhe': 100, 'Como resolver': 60}, cor='ctrl')
+
+sheetf('Faltam na fonte', ['Agência', 'Tipo', 'Documento ou dado esperado', 'Data', 'Como sabemos que existe', 'URL da fonte', 'Situação', 'Votos afetados', 'Visto pela 1ª vez', 'Verificado em', 'Como resolver'], FALTAM, {'Tipo': 30, 'Documento ou dado esperado': 70, 'Como sabemos que existe': 60, 'URL da fonte': 60, 'Votos afetados': 40, 'Como resolver': 50}, cor='ctrl')
 
 # ---- Apoio (Temas, Temas regra x IA, ARTESP inventário)
 ap_rows = []
@@ -431,7 +502,7 @@ def bloco(ws, titulo, cab, linhas, linha0):
     for i, l in enumerate(linhas):
         for k, val in enumerate(l, 1): ws.cell(row=linha0 + 2 + i, column=k, value=val).alignment = Alignment(wrap_text=True, vertical='top')
     return linha0 + 3 + len(linhas)
-cnt_q = collections.Counter(r[5] for r in ctrl if r[0] == 'Qualidade'); n_pend = sum(1 for r in ctrl if r[0] == 'Pendência da fonte' and r[5] == 'ABERTA'); n_nf = sum(1 for r in ctrl if r[0] == 'Não feito')
+cnt_q = collections.Counter(r[5] for r in ctrl if r[0] == 'Qualidade'); n_pend = sum(1 for r in FALTAM if r[6] == 'ABERTA' and not r[1].startswith('Reunião futura') and not r[1].startswith('Erro')); n_nf = sum(1 for r in ctrl if r[0] == 'Não feito')
 vot = {ag: [v for v in V if v['agencia'] == ag] for ag in AGS}
 pc = lambda ag, p: f"{sum(1 for v in vot[ag] if v['proveniencia'] == p) * 100 // max(1, len(vot[ag]))}%"
 def cob_ag(ag):
@@ -446,8 +517,8 @@ r0 = bloco(ws, '1. Placar do objetivo final', ['Parte', 'Situação', 'Evidênci
     ['3. Voto de cada diretor com proveniência', 'Parcial', f'{len(V)} linhas de voto, 1 por diretor em cada item; evidência individual ANM {pc("ANM", "nominal")} · ANTT {pc("ANTT", "nominal")} · ARTESP {pc("ARTESP", "nominal")}; o restante é inferido da unanimidade; {sum(rev.values())} linhas ainda "A revisar"'],
     ['4. Métricas por diretor, agência e período', 'Parcial', f'Abas Diretores e Votos (filtros por Agência, Diretor, Mês, Modal, Tema). Qualidade: {dict(cnt_q)}; {n_nf} lacunas "Não feito" listadas em Controle'],
 ], 3)
-r0 = bloco(ws, '2. Cobertura por agência', ['Agência', 'Reuniões com ata lida', 'Itens lidos', 'Linhas de voto', 'Individual (citada)', 'Inferida', 'A revisar', 'Pendências abertas'], [
-    [ag, sum(1 for r in R if r['agencia'] == ag and not r.get('obs')), sum(1 for d in D if d['agencia'] == ag), len(vot[ag]), pc(ag, 'nominal'), pc(ag, 'inferido'), sum(1 for v in vot[ag] if v['proveniencia'] == 'REVISAR'), sum(1 for r in ctrl if r[0] == 'Pendência da fonte' and r[1] == ag and r[5] == 'ABERTA')] for ag in AGS], r0)
+r0 = bloco(ws, '2. Cobertura por agência', ['Agência', 'Reuniões com ata lida', 'Itens lidos', 'Linhas de voto', 'Individual (citada)', 'Inferida', 'A revisar', 'Faltam na fonte (abertas)'], [
+    [ag, sum(1 for r in R if r['agencia'] == ag and not r.get('obs')), sum(1 for d in D if d['agencia'] == ag), len(vot[ag]), pc(ag, 'nominal'), pc(ag, 'inferido'), sum(1 for v in vot[ag] if v['proveniencia'] == 'REVISAR'), sum(1 for r in FALTAM if r[0] == ag and r[6] == 'ABERTA' and not r[1].startswith('Reunião futura') and not r[1].startswith('Erro'))] for ag in AGS], r0)
 dres = collections.defaultdict(collections.Counter)
 for v in V:
     c = dres[(v['agencia'], v['diretor'])]; c['reg'] += 1; c['p' if v['tipo_item'] == 'Aprovação de ata' else kind(v)] += 1; c['nom'] += v['proveniencia'] == 'nominal'
@@ -467,7 +538,8 @@ linhas = [
  ('Deliberações', '1 linha por item da ata, com relator, resultado, interessado, assunto, modal/tema/subtema.'),
  ('Matriz de votos', '1 linha por item, 1 coluna por diretor (filtre Agência). * = voto inferido da unanimidade.'),
  ('Diretores', 'Contagens por Agência, Diretor, Mês, Modal, Tema, Subtema, Microtema e Área (filtre ou some com tabela dinâmica).'),
- ('Controle', 'Coluna Tipo: Cobertura, Qualidade (checagens automáticas), Pendência da fonte (o que a fonte ainda não publicou) e Não feito (lacunas conhecidas).'),
+ ('Faltam na fonte', 'Tudo que a FONTE deveria ter publicado (ou não publica) e por isso não está nos votos: documento, URL da página-fonte, como sabemos que existe, votos afetados e como resolver. Filtre por Agência e Tipo.'),
+ ('Controle', 'Coluna Tipo: Cobertura, Qualidade (checagens automáticas) e Não feito (lacunas nossas conhecidas).'),
  ('Reuniões', 'Presentes e ausentes de cada reunião, e observações.'),
  ('Apoio', 'Contagem de temas, concordância regra × IA e inventário da ARTESP (coluna Tipo).'),
  ('', ''),
@@ -485,7 +557,7 @@ linhas = [
 ]
 for i, (a, b) in enumerate(linhas, 1):
     ws.cell(row=i, column=1, value=a).font = Font(bold=True, color='2E7D32' if b == '' and a else '000000', size=14 if i == 1 else 11); ws.cell(row=i, column=2, value=b).alignment = Alignment(wrap_text=True, vertical='top')
-wbf._sheets = [wbf[n] for n in ['LEIA-ME', 'Painel', 'Votos', 'Deliberações', 'Matriz de votos', 'Diretores', 'Controle', 'Reuniões', 'Apoio']]
+wbf._sheets = [wbf[n] for n in ['LEIA-ME', 'Painel', 'Votos', 'Deliberações', 'Matriz de votos', 'Diretores', 'Faltam na fonte', 'Controle', 'Reuniões', 'Apoio']]
 wb = wbf
 
 wb.save('votos_2026.xlsx'); print('ok', len(V), 'votos', len(D), 'deliberacoes', len(R), 'reunioes')

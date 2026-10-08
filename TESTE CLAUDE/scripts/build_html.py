@@ -37,4 +37,4 @@ for ws in wb2:
     if nb != nl or sb != sl: erros.append((ws.title, 'celulas/soma', (nb, sb), (nl, sl)))
     print(f'  {ws.title:16} {len(b):6} linhas  {nb:7} células  soma numérica {sb}')
 if erros: raise SystemExit('PARIDADE FALHOU: ' + str(erros))
-print('ok', out, round(len(full) / 1e6, 2), 'MB · paridade HTML × xlsx OK (9 abas, linhas, células e somas)')
+print('ok', out, round(len(full) / 1e6, 2), 'MB · paridade HTML × xlsx OK ({} abas, linhas, células e somas)'.format(len(back)) + '')

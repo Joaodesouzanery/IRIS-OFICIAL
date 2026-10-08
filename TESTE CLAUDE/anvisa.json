@@ -487,7 +487,9 @@
     "25351.093922/2022-17"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    37
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1069,7 +1071,9 @@
     "25757.127356/2018-13"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    57
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1179,7 +1183,9 @@
     "25351.942715/2025-49"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    60
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1271,7 +1277,9 @@
     "25351.917220/2025-81"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    63
+   ],
    "secao": "4",
    "unidade": "GGALI"
   },
@@ -1293,7 +1301,9 @@
     "25351.943830/2025-31"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    64
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1315,7 +1325,9 @@
     "25351.905856/2025-81"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    65
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -1727,7 +1739,9 @@
     "25351.681883/2019-12"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    111
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1771,7 +1785,9 @@
     "25351.044657/2022-43"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    112
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -1793,7 +1809,9 @@
     "25743.636742/2013-24"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    113
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -1979,7 +1997,9 @@
     "25761.648514/2019-88"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    119
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -2001,7 +2021,9 @@
     "25755.353357/2020-48"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    120
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -2273,7 +2295,9 @@
     "25351.063024/2017-15"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    168
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -2675,7 +2699,9 @@
     "25351.942563/2025-84"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    183
+   ],
    "secao": "5",
    "unidade": "GGTAB"
   },
@@ -2697,7 +2723,9 @@
     "25351.942503/2025-61"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    184
+   ],
    "secao": "5",
    "unidade": "GGTAB"
   },
@@ -3097,7 +3125,9 @@
     "25351.922124/2023-93"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    233
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3255,7 +3285,9 @@
     "25351.922123/2023-49"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    236
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -3701,7 +3733,9 @@
     "25351.908611/2025-13"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    251
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3723,7 +3757,9 @@
     "25351.938516/2025-36"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    252
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -3791,7 +3827,9 @@
     "25351.949455/2025-32"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    255
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -4415,7 +4453,9 @@
     "25752.567962/2012-02"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    295
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -4739,7 +4779,9 @@
     "25351.207485/2025-78"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    304
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -5477,7 +5519,9 @@
     "25351.910342/2022-02"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    366
+   ],
    "secao": "5",
    "unidade": "GGFIS"
   },
@@ -5747,7 +5791,9 @@
     "25351.480353/2015-58"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    428
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -5981,7 +6027,9 @@
     "25351.933472/2025-58"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    436
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6097,7 +6145,9 @@
     "25351.178392/2025-29"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    440
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -6523,7 +6573,9 @@
     "25351.848461/2021-40"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    298
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -6569,7 +6621,9 @@
     "25741.812785/2018-51"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    300
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -6591,7 +6645,9 @@
     "25351.192189/2023-01"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    301
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7017,7 +7073,9 @@
     "25351.034863/2021-64"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    509
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -7367,7 +7425,9 @@
     "25351.908040/2026-90"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    520
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -7521,7 +7581,9 @@
     "25351.451313/2024-59"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    550
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7543,7 +7605,9 @@
     "25757.225325/2017-24"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    551
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7565,7 +7629,9 @@
     "25759.844572/2016-13"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    552
+   ],
    "secao": "3",
    "unidade": "GGPAF"
   },
@@ -7587,7 +7653,9 @@
     "25351.039776/2025-27"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    553
+   ],
    "secao": "3",
    "unidade": "GGTAB"
   },
@@ -7633,7 +7701,9 @@
     "25351.788437/2021-44"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    555
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7703,7 +7773,9 @@
     "25351.253183/2019-23"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    558
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7725,7 +7797,9 @@
     "25351.192189/2023-01"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    559
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -7937,7 +8011,9 @@
     "25351.801122/2024-42"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    567
+   ],
    "secao": "4",
    "unidade": "GGALI"
   },
@@ -8525,7 +8601,9 @@
     "25351.063024/2017-15"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    708
+   ],
    "secao": "3",
    "unidade": "GGFIS"
   },
@@ -9447,7 +9525,9 @@
     "25351.907794/2026-22"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    679
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -9865,7 +9945,9 @@
     "25351.424402/2021-80"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    732
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -9887,7 +9969,9 @@
     "25351.424360/2021-87"
    ],
    "sigilo": true,
-   "cds_citados": [],
+   "cds_citados": [
+    733
+   ],
    "secao": "3",
    "unidade": "GGGAF"
   },
@@ -10263,7 +10347,9 @@
     "25351.910611/2026-56"
    ],
    "sigilo": false,
-   "cds_citados": [],
+   "cds_citados": [
+    746
+   ],
    "secao": "4",
    "unidade": "GGFIS"
   },
@@ -10895,8 +10981,8 @@
    "processo": "25351.093922/2022-17",
    "deliberacao": "3.2.2.5",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -11507,8 +11593,8 @@
    "processo": "25351.109991/2021-79",
    "deliberacao": "3.4.1.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -13325,8 +13411,8 @@
    "processo": "25351.681883/2019-12",
    "deliberacao": "3.2.2.9",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13388,8 +13474,8 @@
    "processo": "25351.044657/2022-43",
    "deliberacao": "3.3.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13406,8 +13492,8 @@
    "processo": "25351.044657/2022-43",
    "deliberacao": "3.3.2.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13415,8 +13501,8 @@
    "processo": "25351.044657/2022-43",
    "deliberacao": "3.3.2.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13433,8 +13519,8 @@
    "processo": "25743.636742/2013-24",
    "deliberacao": "3.3.3.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13451,8 +13537,8 @@
    "processo": "25743.636742/2013-24",
    "deliberacao": "3.3.3.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13460,8 +13546,8 @@
    "processo": "25743.636742/2013-24",
    "deliberacao": "3.3.3.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13802,8 +13888,8 @@
    "processo": "25761.648514/2019-88",
    "deliberacao": "3.5.3.2",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13811,8 +13897,8 @@
    "processo": "25761.648514/2019-88",
    "deliberacao": "3.5.3.2",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13847,8 +13933,8 @@
    "processo": "25755.353357/2020-48",
    "deliberacao": "3.5.3.3",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -13856,8 +13942,8 @@
    "processo": "25755.353357/2020-48",
    "deliberacao": "3.5.3.3",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -14099,8 +14185,8 @@
    "processo": "25351.207485/2025-78",
    "deliberacao": "4.5.2.2",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -14117,8 +14203,8 @@
    "processo": "25351.207485/2025-78",
    "deliberacao": "4.5.2.2",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -14126,8 +14212,8 @@
    "processo": "25351.207485/2025-78",
    "deliberacao": "4.5.2.2",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -14396,8 +14482,8 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP3",
@@ -14405,8 +14491,8 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP3",
@@ -16025,8 +16111,8 @@
    "processo": "25351.922124/2023-93",
    "deliberacao": "3.1.10.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP4",
@@ -16340,8 +16426,8 @@
    "processo": "25351.922123/2023-49",
    "deliberacao": "3.2.10.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP4",
@@ -16745,8 +16831,8 @@
    "processo": "25351.702367/2021-45",
    "deliberacao": "3.4.2.3",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP4",
@@ -16835,8 +16921,8 @@
    "processo": "25351.149659/2019-22",
    "deliberacao": "3.4.3.2",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP4",
@@ -18032,8 +18118,8 @@
    "processo": "25000.004661/97-03",
    "deliberacao": "3.1.1.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18041,8 +18127,8 @@
    "processo": "25000.004661/97-03",
    "deliberacao": "3.1.1.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18635,8 +18721,8 @@
    "processo": "25752.567962/2012-02",
    "deliberacao": "3.3.3.3",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18833,8 +18919,8 @@
    "processo": "25741.812785/2018-51",
    "deliberacao": "3.4.3.2",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18959,8 +19045,8 @@
    "processo": "25351.192189/2023-01",
    "deliberacao": "3.5.2.3",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18977,8 +19063,8 @@
    "processo": "25351.192189/2023-01",
    "deliberacao": "3.5.2.3",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -25565,8 +25651,8 @@
    "processo": "25351.907794/2026-22",
    "deliberacao": "4.5.2.2",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP10",
@@ -25574,8 +25660,8 @@
    "processo": "25351.907794/2026-22",
    "deliberacao": "4.5.2.2",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP10",
@@ -26285,8 +26371,8 @@
    "processo": "25351.115568/2020-27",
    "deliberacao": "3.2.2.4",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26303,8 +26389,8 @@
    "processo": "25351.115568/2020-27",
    "deliberacao": "3.2.2.4",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26510,8 +26596,8 @@
    "processo": "25351.058161/2025-08",
    "deliberacao": "3.2.4.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26528,8 +26614,8 @@
    "processo": "25351.058161/2025-08",
    "deliberacao": "3.2.4.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26591,8 +26677,8 @@
    "processo": "25351.719685/2018-40",
    "deliberacao": "3.3.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26618,8 +26704,8 @@
    "processo": "25351.719685/2018-40",
    "deliberacao": "3.3.2.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26726,8 +26812,8 @@
    "processo": "25748.405541/2017-63",
    "deliberacao": "3.3.3.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26771,8 +26857,8 @@
    "processo": "25759.746989/2019-88",
    "deliberacao": "3.3.3.2",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26798,8 +26884,8 @@
    "processo": "25759.746989/2019-88",
    "deliberacao": "3.3.3.2",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -27680,8 +27766,8 @@
    "processo": "25351.910611/2026-56",
    "deliberacao": "4.4.2.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -29030,8 +29116,8 @@
    "processo": "25351.424402/2021-80",
    "deliberacao": "3.4.10.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP13",
@@ -29926,7 +30012,7 @@
   ],
   [
    "ANVISA",
-   "Presença: relatores/vencidos/impedidos/vista citados no corpo ⊆ presentes do cabeçalho (reuniões)",
+   "Presença: relatores e vencidos citados no corpo ⊆ presentes do cabeçalho (reuniões)",
    13,
    13,
    "OK",
@@ -30051,7 +30137,7 @@
   [
    "ANVISA",
    "Votos já proferidos em itens com vista",
-   "130 linhas \"sem voto ainda\"",
+   "95 linhas \"sem voto ainda\"",
    "NÃO FEITO",
    "A ata cita os votos já dados antes da vista (\"dos votos da Diretora X, do Diretor Y\"); hoje todos os não-relator ficam \"sem voto ainda\"",
    "Registrar esses votos como nominais"

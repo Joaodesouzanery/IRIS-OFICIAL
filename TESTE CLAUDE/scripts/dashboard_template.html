@@ -83,9 +83,9 @@ let S={},T={};
 const PAGES=[
  ['visao','Visão geral','Painel','nav1'],['diretor','Perfil do diretor','Diretores','nav1'],
  ['Votos','Votos','Votos','nav2'],['Deliberações','Deliberações','Deliberações','nav2'],['Matriz de votos','Matriz de votos','Matriz de votos','nav2'],['Diretores','Diretores (tabela)','Diretores','nav2'],
- ['Controle','Controle','Controle','nav3'],['Reuniões','Reuniões','Reuniões','nav3'],['Apoio','Apoio','Apoio','nav3'],['LEIA-ME','Leia-me','LEIA-ME','nav3']];
+ ['Faltam na fonte','Faltam na fonte','Faltam na fonte','nav3'],['Controle','Controle','Controle','nav3'],['Reuniões','Reuniões','Reuniões','nav3'],['Apoio','Apoio','Apoio','nav3'],['LEIA-ME','Leia-me','LEIA-ME','nav3']];
 const FIL={'Votos':['Mês','Diretor','Papel','Evidência','Tipo de item','Modal','Tema','Microtema (IRIS)'],'Deliberações':['Mês','Tipo de item','Relator','Modal','Tema','Microtema (IRIS)'],
- 'Matriz de votos':['Mês','Tipo de item','Tema'],'Diretores':['Diretor','Mês','Modal','Tema','Microtema (IRIS)'],'Controle':['Tipo','Status'],'Reuniões':['Tipo'],'Apoio':['Tipo']};
+ 'Matriz de votos':['Mês','Tipo de item','Tema'],'Diretores':['Diretor','Mês','Modal','Tema','Microtema (IRIS)'],'Controle':['Tipo','Status'],'Faltam na fonte':['Tipo','Situação'],'Reuniões':['Tipo'],'Apoio':['Tipo']};
 const ST={page:'visao',ag:'',q:'',f:{},sort:null,pg:0,dir:''};
 const PG=100;
 function tab(n){if(!T[n]){const r=S[n];const c=r[0];const l=r.slice(1).map(x=>{x=x.slice();while(x.length<c.length)x.push('');return x});T[n]={c,l,ix:Object.fromEntries(c.map((h,i)=>[h,i]))}}return T[n]}
@@ -114,7 +114,7 @@ function mensal(rows,ci,pi){const m=new Map();rows.forEach(r=>{const k=r[ci];if(
 /* ---------- paginas ---------- */
 function pgVisao(){
  const V=tab('Votos'),Dl=tab('Deliberações'),vr=rowsAg('Votos'),dr=rowsAg('Deliberações'),rr=rowsAg('Reuniões'),cr=rowsAg('Controle'),P=tab('Painel');
- const nom=vr.filter(r=>r[V.ix['Proveniência']]==='nominal').length,pend=cr.filter(r=>r[0]==='Pendência da fonte'&&r[tab('Controle').ix['Status']]==='ABERTA').length;
+ const nom=vr.filter(r=>r[V.ix['Proveniência']]==='nominal').length,FT=tab('Faltam na fonte'),pend=rowsAg('Faltam na fonte').filter(r=>r[FT.ix['Situação']]==='ABERTA'&&!/^(Reunião futura|Erro)/.test(r[FT.ix['Tipo']])).length;
  const dirs=new Set(vr.map(r=>r[V.ix['Agência']]+'|'+r[V.ix['Diretor']]));
  const mv=mensal(vr,V.ix['Mês'],V.ix['Proveniência']),md=mensal(dr,Dl.ix['Mês'],Dl.ix['Resultado']);const ms=[...mv.keys()].sort();
  const kp=(l,b,sub,sp)=>`<div class="card"><div class="k"><div><div class="lab">${l}</div><div class="big">${b}</div></div>${sp||''}</div><div class="sub">${sub}</div></div>`;
@@ -122,7 +122,7 @@ function pgVisao(){
  h+='<div class="kpis">'+kp('Votos',fmt(vr.length),'1 linha por diretor em cada item da ata',spark(ms.map(m=>mv.get(m).t),ms.length-1))
   +kp('Deliberações',fmt(dr.length),'itens de ata (inclui retiradas e vistas)')+kp('Reuniões',fmt(rr.length),'com ou sem ata lida')
   +kp('Evidência individual',vr.length?Math.round(nom*100/vr.length)+'%':'—',`${fmt(nom)} citados na ata · ${fmt(vr.length-nom)} inferidos`)
-  +kp('Diretores',fmt(dirs.size),'com ao menos 1 voto')+kp('Pendências da fonte',fmt(pend),'o que a fonte ainda não publicou')+'</div>';
+  +kp('Diretores',fmt(dirs.size),'com ao menos 1 voto')+kp('Faltam na fonte',fmt(pend),'documentos e dados que a fonte não publicou (aba Faltam na fonte)')+'</div>';
  h+=`<div class="grid2"><div class="card"><div class="lab">Votos por mês</div><div class="blocks">${blocos(mv,'votos')}</div></div>`;
  const ag=agg(vr,V.ix['Agência'],V.ix['Proveniência']);
  h+=`<div class="card"><div class="lab">Votos por agência</div>${hbars(ag,15)}<div class="leg"><span style="--c:var(--acc)">individual</span><span style="--c:var(--inf)">inferido</span></div></div></div>`;
@@ -134,6 +134,8 @@ function pgVisao(){
 function codCls(c){c=String(c);if(!c||c==='—')return'';if(c.startsWith('RELATOR')||c.startsWith('RETIROU'))return'k-nom';if(c.startsWith('DIVERGIU')||c.startsWith('REVISAR'))return'k-bad';if(c.startsWith('AUSENTE')||c.startsWith('IMPEDIDO'))return'k-warn';return c.endsWith('*')?'k-inf':'k-ok'}
 function celula(t,n,ci,v){if(typeof v==='number')return`<td class="n">${fmt(v)}</td>`;const h=t.c[ci];
  if(n==='Votos'&&(h==='Proveniência'))return`<td><span class="chip ${v==='nominal'?'k-nom':v==='REVISAR'?'k-bad':'k-inf'}">${esc(v)}</span></td>`;
+ if(n==='Faltam na fonte'&&h==='Situação')return`<td><span class="chip ${v==='ABERTA'?'k-warn':v==='LIMITE DA FONTE'?'k-bad':'k-ok'}">${esc(v)}</span></td>`;
+ if(n==='Faltam na fonte'&&h==='URL da fonte'&&v)return`<td><a href="${esc(v)}" target="_blank" rel="noopener" style="color:var(--acc)">abrir fonte ↗</a></td>`;
  if(n==='Controle'&&h==='Status')return`<td><span class="chip ${v==='OK'||/RESOLVIDA/.test(v)?'k-ok':v==='DIVERGE'?'k-bad':'k-warn'}">${esc(v)}</span></td>`;
  if(n==='Matriz de votos'&&ci>=9&&ci<t.c.length-1&&v)return`<td><span class="chip ${codCls(v)}">${esc(v)}</span></td>`;
  return`<td><div class="c" title="${esc(v)}">${esc(v)}</div></td>`}
@@ -168,7 +170,7 @@ function pgDiretor(){
  const mp=new Map();so.forEach(r=>{const k=(r[I('Tema')]||'—')+'|'+r[I('Mês')];mp.set(k,(mp.get(k)||0)+1)});const mx=Math.max(1,...mp.values());
  h+=`<div class="card"><div class="lab">Mapa de calor: tema × mês (nº de votos)</div><div class="heat" style="grid-template-columns:minmax(150px,230px) repeat(${meses.length},minmax(34px,1fr));margin-top:8px"><div></div>${meses.map(m=>`<div class="h">${m.slice(5)}/${m.slice(2,4)}</div>`).join('')}${temas.map(t=>`<div class="l" title="${esc(t)}">${esc(t.length>34?t.slice(0,33)+'…':t)}</div>`+meses.map(m=>{const v=mp.get(t+'|'+m)||0;return`<div data-tip="<b>${esc(t)}</b><br>${m}: ${v} votos" style="background:${v?'var(--acc)':'var(--cell)'};opacity:${v?.25+.75*v/mx:.5}"></div>`}).join('')).join('')}</div></div>`;
  return h}
-const descr={'Votos':'Base única: 1 linha por diretor em cada item da ata.','Deliberações':'1 linha por item da ata, com relator, resultado, interessado, assunto, modal e tema.','Matriz de votos':'1 linha por item, 1 coluna por diretor. * = voto inferido da unanimidade.','Diretores':'Contagens por Agência, Diretor, Mês, Modal, Tema, Subtema, Microtema e Área.','Controle':'Cobertura, Qualidade, Pendência da fonte e Não feito (filtre a coluna Tipo).','Reuniões':'Presentes e ausentes de cada reunião, e observações.','Apoio':'Contagem de temas, concordância regra × IA e inventários.'};
+const descr={'Faltam na fonte':'Tudo que a fonte deveria ter publicado (ou não publica) e por isso não está nos votos: documento, URL da página-fonte, como sabemos que existe e como resolver.','Votos':'Base única: 1 linha por diretor em cada item da ata.','Deliberações':'1 linha por item da ata, com relator, resultado, interessado, assunto, modal e tema.','Matriz de votos':'1 linha por item, 1 coluna por diretor. * = voto inferido da unanimidade.','Diretores':'Contagens por Agência, Diretor, Mês, Modal, Tema, Subtema, Microtema e Área.','Controle':'Cobertura, Qualidade, Pendência da fonte e Não feito (filtre a coluna Tipo).','Reuniões':'Presentes e ausentes de cada reunião, e observações.','Apoio':'Contagem de temas, concordância regra × IA e inventários.'};
 function pgLeia(){let h='<h1>Leia-me</h1><dl class="l">';S['LEIA-ME'].forEach(r=>{const[a,b]=[r[0]||'',r[1]||''];if(!a&&!b)return;h+=b===''?`<dt class="h">${esc(a)}</dt>`:`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`});return h+'</dl>'}
 /* ---------- controle ---------- */
 function desenha(foco){const p=ST.page,m=$('#main');

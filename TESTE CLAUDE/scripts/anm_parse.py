@@ -148,11 +148,13 @@ def parse(path):
             elif p in d.get('dissidentes', []): v, prov = 'DIVERGIU', 'nominal'
             elif p in d.get('vista_por', []): v, prov = 'PEDIU VISTA', 'nominal'
             elif p in d.get('favoraveis', []): v, prov = 'ACOMPANHOU (votou a favor antes da vista)', 'nominal'
-            elif d['resultado'] == 'APROVADO POR MAIORIA' and len(d.get('dissidentes', [])) == 1 and d['relator'] in pr: v, prov = 'ACOMPANHOU (por exclusão: um só divergente nomeado)', 'inferido'
+            elif d['resultado'] == 'APROVADO POR MAIORIA' and len(d.get('dissidentes', [])) == 1 and len(pr) >= 3: v, prov = 'ACOMPANHOU (por exclusão: um só divergente nomeado)', 'inferido'
             elif d['resultado'] == 'APROVADO POR UNANIMIDADE' and not d['tem_impedimento']: v, prov = 'ACOMPANHOU', 'inferido'
-            elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'REVISAR', 'REVISAR'
-            else: v, prov = 'REVISAR', 'REVISAR'
+            elif d['resultado'] == 'SOBRESTADO (vista)': v, prov = 'SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)', 'inferido'
+            else: v, prov = 'REVISAR (maioria sem divergentes nomeados na ata)', 'REVISAR'
             votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': p, 'voto': v, 'proveniencia': prov, 'tipo_item': d['tipo_item']})
+        if d['relator'] and d['relator'] not in pr and d['tipo_item'] in ('Deliberação', 'Vista'):
+            votos.append({'reuniao': d['reuniao'], 'data': d['data'], 'processo': d['processo'], 'deliberacao': d['deliberacao'], 'diretor': d['relator'], 'voto': 'RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)', 'proveniencia': 'nominal', 'tipo_item': d['tipo_item'], 'fora_total': True})
     return meta, out, votos
 
 if __name__ == '__main__':

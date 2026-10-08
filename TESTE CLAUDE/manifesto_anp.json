@@ -1,0 +1,416 @@
+{
+ "ata-1175.pdf": {
+  "tag": "RD1175",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1175.pdf",
+  "arquivo": "fonte/anp/ata-1175.pdf",
+  "sha256": "b80a255ae4988a36eb7fb94228479be456ac70870eb0515bf1f54487c755af3f",
+  "ok": true,
+  "texto": "texto_anp/ata-1175.txt"
+ },
+ "ata-1176.pdf": {
+  "tag": "RD1176",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1176.pdf",
+  "arquivo": "fonte/anp/ata-1176.pdf",
+  "sha256": "1ab46ca19e68514e991a30700c6a8a3f58e99741a5e829cef80875cef5112867",
+  "ok": true,
+  "texto": "texto_anp/ata-1176.txt"
+ },
+ "ata-1177.pdf": {
+  "tag": "RD1177",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1177.pdf",
+  "arquivo": "fonte/anp/ata-1177.pdf",
+  "sha256": "2eb4517096d08d17e2a3e26590f4d0ffc539c8ef05e087aa3934fc690ace7beb",
+  "ok": true,
+  "texto": "texto_anp/ata-1177.txt"
+ },
+ "ata-1178.pdf": {
+  "tag": "RD1178",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1178.pdf",
+  "arquivo": "fonte/anp/ata-1178.pdf",
+  "sha256": "808cc620487211c31f64d89cf401bbda62d5a4e4aba98d0b231bf22c29563a90",
+  "ok": true,
+  "texto": "texto_anp/ata-1178.txt"
+ },
+ "ata-1179.pdf": {
+  "tag": "RD1179",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1179.pdf",
+  "arquivo": "fonte/anp/ata-1179.pdf",
+  "sha256": "d80cc98804e678beacc22360ead6866bcaf956fd4630cc5e626e44c35df89f19",
+  "ok": true,
+  "texto": "texto_anp/ata-1179.txt"
+ },
+ "ata-1180.pdf": {
+  "tag": "RD1180",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1180.pdf",
+  "arquivo": "fonte/anp/ata-1180.pdf",
+  "sha256": "6ba7fee95470f2673a18b9213530bae1efbf9d3a6810e3d59abbd415983aa2d1",
+  "ok": true,
+  "texto": "texto_anp/ata-1180.txt"
+ },
+ "ata-1181.pdf": {
+  "tag": "RD1181",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1181.pdf",
+  "arquivo": "fonte/anp/ata-1181.pdf",
+  "sha256": "952408e0243d05373b8e4c43af477751c930e6640288482a2ddc49ce5479eb9a",
+  "ok": true,
+  "texto": "texto_anp/ata-1181.txt"
+ },
+ "ata-1182.pdf": {
+  "tag": "RD1182",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1182.pdf",
+  "arquivo": "fonte/anp/ata-1182.pdf",
+  "sha256": "7a191aaba820640a79bf3233575eb1e73d57e9d5588fbecad88242936adc30fc",
+  "ok": true,
+  "texto": "texto_anp/ata-1182.txt"
+ },
+ "ata-1183.pdf": {
+  "tag": "RD1183",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1183.pdf",
+  "arquivo": "fonte/anp/ata-1183.pdf",
+  "sha256": "53df4a9e3a8dc3db0762a82a7a64ae552e1bf70dd14002f4bd9feffd68c4ae32",
+  "ok": true,
+  "texto": "texto_anp/ata-1183.txt"
+ },
+ "ata-1184.pdf": {
+  "tag": "RD1184",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1184.pdf",
+  "arquivo": "fonte/anp/ata-1184.pdf",
+  "sha256": "e7b91d2a1e2981a27d3db70c370f0727cd50e8b289b77e12dfff5ed3446f729f",
+  "ok": true,
+  "texto": "texto_anp/ata-1184.txt"
+ },
+ "ata-1185.pdf": {
+  "tag": "RD1185",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-1185.pdf",
+  "arquivo": "fonte/anp/ata-1185.pdf",
+  "sha256": "0f33e45bb9427b246cc082e0a2f0f72f31f057c24e0c23af15f6fc2bd4a46862",
+  "ok": true,
+  "texto": "texto_anp/ata-1185.txt"
+ },
+ "ata-extraordinaria-69.pdf": {
+  "tag": "EXT69",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-extraordinaria-69.pdf",
+  "arquivo": "fonte/anp/ata-extraordinaria-69.pdf",
+  "sha256": "8a199dda73e0146683d0c06f028b507b2ab36194b2b2df2fc6606673cdb75ba9",
+  "ok": true,
+  "texto": "texto_anp/ata-extraordinaria-69.txt"
+ },
+ "ata-extraordinaria-70.pdf": {
+  "tag": "EXT70",
+  "tipo": "ata",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/ata-extraordinaria-70.pdf",
+  "arquivo": "fonte/anp/ata-extraordinaria-70.pdf",
+  "sha256": "f995aab84cfda9aab42c92f090808a4b693b62243ae6038b20c28629eaa81a4d",
+  "ok": true,
+  "texto": "texto_anp/ata-extraordinaria-70.txt"
+ },
+ "pauta-1175.pdf": {
+  "tag": "RD1175",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1175.pdf",
+  "arquivo": "fonte/anp/pauta-1175.pdf",
+  "sha256": "25800386211275b20969e9879f8dbeb2006bd4b0443107b6b4958c2e398eaabe",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1176.pdf": {
+  "tag": "RD1176",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1176.pdf",
+  "arquivo": "fonte/anp/pauta-1176.pdf",
+  "sha256": "2b7a9861175d2ba6fa1d9544cef56a2ce1cae030dc108fd8fe37cf14125f8e4e",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1177-com-extrapauta-2.pdf": {
+  "tag": "RD1177",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1177-com-extrapauta-2.pdf",
+  "arquivo": "fonte/anp/pauta-1177-com-extrapauta-2.pdf",
+  "sha256": "ee4d9d88e2b7709833f1199fe1ea9cda790dae2938b7c881016e5c9ec90cd5c5",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1177-com-extrapauta.pdf": {
+  "tag": "RD1177",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1177-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1177-com-extrapauta.pdf",
+  "sha256": "cd70b8ff62f702e0edb1364f1c78cae124a9e245a30718673ec15d92c229580f",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1177.pdf": {
+  "tag": "RD1177",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1177.pdf",
+  "arquivo": "fonte/anp/pauta-1177.pdf",
+  "sha256": "73ece9f9d5c55835361c80c85ecc06b0901bf3a17d70aff307ebbe1b4f17e217",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1178.pdf": {
+  "tag": "RD1178",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1178.pdf",
+  "arquivo": "fonte/anp/pauta-1178.pdf",
+  "sha256": "4a6e7117baf0e05c10ce65e4b0ecc5d50f71ddc23b5ab4124628e47f9fa9ad86",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1179-com-2-extrapauta.pdf": {
+  "tag": "RD1179",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1179-com-2-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1179-com-2-extrapauta.pdf",
+  "sha256": "e84680e4b07d6d6ba4aa439555507697012466ff3fe0c0c9609e43e43dcff9bc",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1179-com-extrapauta.pdf": {
+  "tag": "RD1179",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1179-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1179-com-extrapauta.pdf",
+  "sha256": "98ba093baab15478a4c159becc51e62d525fd362ac43b23200cde753c5f39d1d",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1179.pdf": {
+  "tag": "RD1179",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1179.pdf",
+  "arquivo": "fonte/anp/pauta-1179.pdf",
+  "sha256": "70d5fa0701f099f29bf898cb1e226016d38f627f003005da54149e2ecbe5d922",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1180.pdf": {
+  "tag": "RD1180",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1180.pdf",
+  "arquivo": "fonte/anp/pauta-1180.pdf",
+  "sha256": "09c516b97a96178ddb517d406a206e9e81f46daf7ce9c1eee4112174d7378868",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1181-com-extrapauta.pdf": {
+  "tag": "RD1181",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1181-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1181-com-extrapauta.pdf",
+  "sha256": "7e46fe0378d6ebe766069baa93f23254d2460fe02b63f39ba728f2a5e6456b4d",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1181.pdf": {
+  "tag": "RD1181",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1181.pdf",
+  "arquivo": "fonte/anp/pauta-1181.pdf",
+  "sha256": "00e35b439989dc6ef16d0c83fe4ef8082af390f0dfeb673f233713a3aae1bffb",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1182-retificada-2.pdf": {
+  "tag": "RD1182",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1182-retificada-2.pdf",
+  "arquivo": "fonte/anp/pauta-1182-retificada-2.pdf",
+  "sha256": "ddf4e495bdb6513bc9bb6e2723f1b1e62900ca40f6aa3726bd00aae391956cfa",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1182-retificada.pdf": {
+  "tag": "RD1182",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1182-retificada.pdf",
+  "arquivo": "fonte/anp/pauta-1182-retificada.pdf",
+  "sha256": "a4de9f8bf590b800791552b3602544d8b8e8d3cb0e0c777ebc91a34584c43053",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1182.pdf": {
+  "tag": "RD1182",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1182.pdf",
+  "arquivo": "fonte/anp/pauta-1182.pdf",
+  "sha256": "4df9908c83a05e1fac9a408876c8e3d7dae64d9156da7c612ced6d913ccb772a",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1183-com-extrapauta.pdf": {
+  "tag": "RD1183",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1183-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1183-com-extrapauta.pdf",
+  "sha256": "8a1e3d56dbc5a917b1590a91b8bd0103c34281dc8ec7d57285d325fab1644189",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1183.pdf": {
+  "tag": "RD1183",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1183.pdf",
+  "arquivo": "fonte/anp/pauta-1183.pdf",
+  "sha256": "f300b0ff28580bcef25315c96ade6adc166dffc6986a32bd04694f43f34fa192",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1184-com-extrapauta-2.pdf": {
+  "tag": "RD1184",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1184-com-extrapauta-2.pdf",
+  "arquivo": "fonte/anp/pauta-1184-com-extrapauta-2.pdf",
+  "sha256": "7e24916be64b965de16a47f08b8789bfcca067b0cf57be13a614c532fde79899",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1184-com-extrapauta.pdf": {
+  "tag": "RD1184",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1184-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1184-com-extrapauta.pdf",
+  "sha256": "6b3d3b6d0ed4b978256521e99a382a9603d20f5f4bad0e21e71bc56e8dbe29c3",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1184.pdf": {
+  "tag": "RD1184",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1184.pdf",
+  "arquivo": "fonte/anp/pauta-1184.pdf",
+  "sha256": "017b90489f9629d711d74584de19bbca474aabede9efaedf5d9ce1e4ddb4fe92",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1185.pdf": {
+  "tag": "RD1185",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1185.pdf",
+  "arquivo": "fonte/anp/pauta-1185.pdf",
+  "sha256": "aa7a254bf350dc8451cc0826356c04ecf081dc17fc99c6042bbd64a1a4a7713e",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1186-com-extrapauta.pdf": {
+  "tag": "RD1186",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1186-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1186-com-extrapauta.pdf",
+  "sha256": "50ff936b2f570a3a94ea1483ef4d0c9a10648724a8365449b3fe191a0c735f82",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1186.pdf": {
+  "tag": "RD1186",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1186.pdf",
+  "arquivo": "fonte/anp/pauta-1186.pdf",
+  "sha256": "9a789b7f898b5f19925f05c0f0e83ccaed1b2aff6110ebb59cfd905b0eb0e6b3",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1187.pdf": {
+  "tag": "RD1187",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1187.pdf",
+  "arquivo": "fonte/anp/pauta-1187.pdf",
+  "sha256": "daff9290830dbf366ea7ed22839748155430179b3b5e2aef1c0e6216bda2b51f",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1188.pdf": {
+  "tag": "RD1188",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1188.pdf",
+  "arquivo": "fonte/anp/pauta-1188.pdf",
+  "sha256": "3f58056f8ecc2522cf55a44b0b6365e601f478c13bd129a410a58ab72e0f17cd",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1189.pdf": {
+  "tag": "RD1189",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1189.pdf",
+  "arquivo": "fonte/anp/pauta-1189.pdf",
+  "sha256": "9151a7d796a677b2ec5dd369cb5943a9bc3db3a136971e7af24b0be974ef0ab3",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1190-com-extrapauta.pdf": {
+  "tag": "RD1190",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1190-com-extrapauta.pdf",
+  "arquivo": "fonte/anp/pauta-1190-com-extrapauta.pdf",
+  "sha256": "a357d119e8abe2813b4b3ffedaf1dd8e3c14cb41c84b5fbcc8df22a6fdfee862",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1190.pdf": {
+  "tag": "RD1190",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1190.pdf",
+  "arquivo": "fonte/anp/pauta-1190.pdf",
+  "sha256": "34105cb685a8479d414181f622c56de3187e00a80b05132f218d91e91db9a03c",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1191.pdf": {
+  "tag": "RD1191",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1191.pdf",
+  "arquivo": "fonte/anp/pauta-1191.pdf",
+  "sha256": "9de7ced760020f55c8169a2dea85943ac6433e85a0d8c6b68a714d4967286d04",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-1192.pdf": {
+  "tag": "RD1192",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-1192.pdf",
+  "arquivo": "fonte/anp/pauta-1192.pdf",
+  "sha256": "75e9c588fc053365910656cbb8ff0754b5d816b36e50c77657cf9308e6a9cf38",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-extraordinaria-70.pdf": {
+  "tag": "EXT70",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-extraordinaria-70.pdf",
+  "arquivo": "fonte/anp/pauta-extraordinaria-70.pdf",
+  "sha256": "13e52e7d710db1ce2485421a56942930b6d821629d2c1fb819b15bb6aec82c08",
+  "ok": true,
+  "texto": null
+ },
+ "pauta-rd-extraordinaria-71.pdf": {
+  "tag": "EXT71",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pauta-rd-extraordinaria-71.pdf",
+  "arquivo": "fonte/anp/pauta-rd-extraordinaria-71.pdf",
+  "sha256": "651320c034c1593ffeef4a0233d438ea60f4114e9e2f1c2dec96097608614296",
+  "ok": true,
+  "texto": null
+ },
+ "pautardcextraordinaria692026.pdf": {
+  "tag": "EXT69",
+  "tipo": "pauta",
+  "url": "https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026/arquivos-rd-2026/pautardcextraordinaria692026.pdf",
+  "arquivo": "fonte/anp/pautardcextraordinaria692026.pdf",
+  "sha256": "2689b495436ee7ba24009da48e3d2b58a193333be600039aaca851a8149d2e88",
+  "ok": true,
+  "texto": null
+ }
+}

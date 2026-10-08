@@ -66,7 +66,7 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
             elif re.match(r'^-\s*(?:Item )?[Rr]etirado de pauta', b): desf.append(('ret', b))
         fin = [b for k, b in desf if k == 'fin']; vis = [b for k, b in desf if k == 'vis']
         ult = desf[-1][0] if desf else None
-        tipo, res_, vencidos, vista_a, decis, vexterno = 'Deliberação', '', [], [], '', False
+        tipo, res_, vencidos, vista_a, decis, vexterno, votaram = 'Deliberação', '', [], [], '', False, []
         if ult == 'fin':
             decis = fin[-1]; mm = re.match(r'^-\s*A Diretoria Colegiada decidiu,?\s*(por unanimidade|por maioria)?,?\s*(.*)$', decis)
             modo = (mm[1] or '').replace('por ', '') if mm else ''
@@ -85,6 +85,9 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
         elif ult == 'tra': tipo, res_ = 'Retirada de pauta', 'TRANSFERIDO — reunião presencial'
         elif ult == 'vis':
             tipo = 'Vista'; vv = re.search(r'concedeu vista (?:ao|à|aos|às|a)\s+(.*?)(?:\.|$)', vis[-1]); vista_a = quem(vv[1]) if vv else []
+            mvv = re.search(r'votos? d[aoe]s? (.*?)(?:,? e)? concedeu vista', vis[-1]); votaram = [x for x in quem(mvv[1]) if x not in vista_a] if mvv else []
+            mrv = re.search(r'retorno de vista d[aoe]s? (.*?)(?:,? e)? concedeu vista', vis[-1])
+            if mrv: votaram = list(dict.fromkeys(votaram + [x for x in quem(mrv[1]) if x not in vista_a]))
             res_ = 'SOBRESTADO — vista concedida a ' + (', '.join(vista_a) or '?')
         elif re.search(r'(?:ser[áa]|ser[áa] ) deliberado na pr[óo]xima reuni[ãa]o', btxt) and not ult: tipo, res_ = 'Retirada de pauta', 'ADIADO — será deliberado na próxima reunião pública (pedido do recorrente, art. 3º da RDC 862/2024)'
         elif ult == 'ret': tipo, res_ = 'Retirada de pauta', 'RETIRADO DE PAUTA' + (' (por despacho, antes da reunião)' if 'Despacho' in desf[-1][1] else '')
@@ -92,6 +95,8 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
         atual = btxt
         for b in bul:
             if re.match(r'^-\s*ROP\s*\d+', b): atual = atual.replace(b, ' ')
+        mk = [mm.start() for mm in re.finditer(r'O item foi apreciado (?:em sigilo )?(?:no|em) Circuito Deliberativo\s+n[ºo]\s*[\d.]+/2026', btxt)]
+        if mk: atual = btxt[mk[-1]:]
         imp = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]', atual)))
         cds_cit = sorted({int(x.replace('.', '')) for x in re.findall(r'Circuito Deliberativo\s+n[ºo]?\s*([\d.]+)/2026', atual)})
         ausv = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?esteve ausente d[ae] vota[çc][ãa]o', atual)))
@@ -109,6 +114,7 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
             elif tipo == 'Vista':
                 if n in vista_a: v, pv = 'PEDIU VISTA', 'nominal'
                 elif n in rel: v, pv = 'RELATOR (voto proferido; vista concedida)', 'nominal'
+                elif n in votaram: v, pv = 'VOTOU (antes da vista; posição só no voto escrito)', 'nominal'
                 else: v, pv = 'SEM VOTO AINDA (vista pendente)', 'inferido'
             elif 'SEM DESFECHO' in res_: v, pv = 'A REVISAR (sem desfecho na ata)', 'REVISAR'
             elif 'MAIORIA' in res_:
@@ -122,7 +128,7 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
                 else: v, pv = 'ACOMPANHOU', 'inferido'
             V.append(dict(base, voto=v, proveniencia=pv))
         for n in aus: V.append({'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'diretor': n, 'voto': 'AUSENTE (não consta entre os presentes)', 'proveniencia': 'nominal'})
-        Qd.setdefault(tag, []).append({'ausv': ausv, 'item': item, 'tipo': tipo, 'rel': rel, 'vencidos': vencidos, 'imp': imp, 'vista': vista_a, 'proferiu': proferiu, 'ndec': len(fin)})
+        Qd.setdefault(tag, []).append({'ausv': ausv, 'votaram': votaram, 'item': item, 'tipo': tipo, 'rel': rel, 'vencidos': vencidos, 'imp': imp, 'vista': vista_a, 'proferiu': proferiu, 'ndec': len(fin)})
     ntot_dec = len(re.findall(r'(?:^|[.;:)] )- ?A Diretoria Colegiada decidiu', h))
     R.append({'reuniao': tag, 'titulo': m['titulo'], 'tipo': m['tipo'], 'data': m['data'], 'presentes': pres, 'ausentes': aus, 'obs': '', '_ret_hdr': sorted(ret_hdr), '_sig_hdr': sorted(sig_hdr), '_ndec_total': ntot_dec, '_ndec_blocos': sum(q['ndec'] for q in Qd.get(tag, []))})
 # ---- dedupe de chave
@@ -135,11 +141,11 @@ chk('Decisões "A Diretoria Colegiada decidiu" no texto × decisões atribuídas
 ok_p = 0; bad = []
 for r in R:
     nomes = set()
-    for q in Qd.get(r['reuniao'], []): nomes |= (set(q['rel']) if q['tipo'] != 'Retirada de pauta' else set()) | set(q['vencidos']) | set(q['imp']) | set(q['proferiu'])
+    for q in Qd.get(r['reuniao'], []): nomes |= (set(q['rel']) if q['tipo'] != 'Retirada de pauta' else set()) | set(q['vencidos'])
     fora = [n for n in nomes if n not in r['presentes']]
     ok_p += not fora
     if fora: bad.append((r['reuniao'], fora))
-chk('Presença: relatores/vencidos/impedidos/vista citados no corpo ⊆ presentes do cabeçalho (reuniões)', len(R), ok_p, str(bad))
+chk('Presença: relatores e vencidos citados no corpo ⊆ presentes do cabeçalho (reuniões)', len(R), ok_p, str(bad))
 vis_aus = [(r['reuniao'], q['item'], n) for r in R for q in Qd.get(r['reuniao'], []) for n in q['vista'] if n not in r['presentes']]
 Q.append(['ANVISA', 'Vista concedida a diretor que consta como ausente na reunião', 0, len(vis_aus), 'OK' if not vis_aus else 'EXCEÇÃO', str(vis_aus)])
 chk('Itens com chave única (reunião, processo, item)', len(D), len(cnt), f'{[k for k, n in cnt.items() if n > 1][:5]}')
