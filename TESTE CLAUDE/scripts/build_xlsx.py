@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Consolida ANM + ANTT + ARTESP em votos_2026.xlsx. Uso: python3 -I scripts/build_xlsx.py  (rodar dentro de 'TESTE CLAUDE/')"""
-import json, re, glob, collections, os, zipfile
+import json, re, glob, collections, os, sys, zipfile
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
@@ -45,13 +45,14 @@ for d in D:
     if pr_ and pr_.get('diretor'): d['relator'] = pr_['diretor'] + ' (proponente: ' + pr_['procedencia'][:40] + ')'
 
 # ---- Agencias novas (um <sigla>.json por agencia; mesmo formato: reunioes/deliberacoes/votos + qualidade/cobertura/pendencias/nao_feito/diretores)
-EXTRAS = {sg: json.load(open(f)) for sg, f in (('ANPD', 'anpd.json'), ('ANVISA', 'anvisa_final.json'), ('ANP', 'anp.json'), ('ANTAQ', 'antaq.json'), ('ANATEL', 'anatel.json'), ('ANEEL', 'aneel.json')) if os.path.exists(f)}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import agencias as AG
+EXTRAS = AG.carregar()
 for sg, x in EXTRAS.items():
     for r in x['reunioes']: R.append(dict(r, agencia=sg, ausentes=r.get('ausentes', [])))
     for d in x['deliberacoes']: D.append(dict(d, agencia=sg, texto=d.get('decisao_texto', ''), item=d['processo']))
     _pres = {r['reuniao']: set(r.get('presentes', [])) | set(r.get('ausentes', [])) for r in x['reunioes']}
     for v in x['votos']:
-        if sg in ('ANATEL', 'ANEEL') and v['diretor'] not in _pres.get(v['reuniao'], {v['diretor']}): VX.append(dict(v, agencia=sg, fora_total=True))   # ex-conselheiro (relator/votante de reunião anterior): na aba Votos, fora dos totais
+        if sg in AG.ex_fora_total() and v['diretor'] not in _pres.get(v['reuniao'], {v['diretor']}): VX.append(dict(v, agencia=sg, fora_total=True))   # ex-conselheiro (relator/votante de reunião anterior): na aba Votos, fora dos totais
         else: V.append(dict(v, agencia=sg))
 AGS = ['ANM', 'ANTT', 'ARTESP'] + list(EXTRAS)
 
@@ -455,14 +456,8 @@ for ag in AGS: NF.append([ag, 'H. Auditoria humana de 60 deliberações (resulta
 # ---- FALTAM NA FONTE: tudo que a FONTE deveria ter publicado (ou não publica) e que por isso não está nos votos
 URL_FONTE = {
  'ANM': 'https://www.gov.br/anm/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/atas-da-rop/atas-reunioes-ordinarias',
- 'ANTT': 'https://portal.antt.gov.br/web/guest/reunioes-da-diretoria', 'ARTESP': 'https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria',
- 'ANVISA': 'https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026',
- 'ANVISA|CD': 'https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/extratos-dos-circuitos-deliberativos-1/2026',
- 'ANPD': 'https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuito-deliberativo',
- 'ANP': 'https://www.gov.br/anp/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria-colegiada/pautas-atas-e-calendario-de-reunioes-da-diretoria-colegiada/2026',
- 'ANTAQ': 'https://www.gov.br/antaq/pt-br/acesso-a-informacao/institucional/reunioes-deliberativas/atas-e-pautas-das-reunioes',
- 'ANEEL': 'https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/reunioes-publicas',
- 'ANATEL': 'https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&id_orgao_publicacao=0&id_unidade_responsavel=110000842&id_serie=8'}
+ 'ANTT': 'https://portal.antt.gov.br/web/guest/reunioes-da-diretoria', 'ARTESP': 'https://www.artesp.sp.gov.br/artesp/transparencia/reunioes-diretoria'}
+URL_FONTE.update(AG.urls())   # demais agências: registro único em scripts/agencias.py
 def _tipo_pend(sit):
     t = sit.lower()
     if t.startswith('futura'): return 'Reunião futura (ainda não ocorreu)'
@@ -544,7 +539,7 @@ for col in 'DEFGHIJKL': ws.column_dimensions[col].width = 18
 # ---- LEIA-ME
 ws = wbf.create_sheet('LEIA-ME'); ws.sheet_properties.tabColor = COR['leia']; ws.column_dimensions['A'].width = 34; ws.column_dimensions['B'].width = 140
 linhas = [
- ('VOTOS DOS DIRETORES — 2026', 'ANM (atas da ROP), ANTT (atas das reuniões deliberativas), ARTESP (atas do Conselho Diretor)' + ''.join({'ANPD': ', ANPD (atas dos circuitos deliberativos)', 'ANVISA': ', ANVISA (atas das ROP/REP da Diretoria Colegiada)'}.get(sg, ', ' + sg) for sg in EXTRAS) + '. Coleta independente do pipeline do IRIS.'),
+ ('VOTOS DOS DIRETORES — 2026', 'ANM (atas da ROP), ANTT (atas das reuniões deliberativas), ARTESP (atas do Conselho Diretor)' + ''.join(f", {a['sg']} ({a['desc']})" for a in AG.ativas()) + '. Coleta independente do pipeline do IRIS.'),
  ('Gerada em', f'{hoje.strftime("%d/%m/%Y")} · tudo é gerado por scripts (rodar_tudo.sh); nada é digitado à mão.'),
  ('', ''),
  ('COMO LER AS ABAS', ''),
