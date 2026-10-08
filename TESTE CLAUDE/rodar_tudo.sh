@@ -24,3 +24,4 @@ python3 -I scripts/temas.py            # grava temas.json e temas_revisao_penden
 # Se temas_revisao_pendente.json não estiver vazio: classificar esses itens (subagentes Claude, taxonomia_fechada.json),
 # salvar em temas_ia/resultado_N.json e rodar:  python3 -I scripts/temas.py --importar-ia temas_ia && python3 -I scripts/temas.py
 python3 -I scripts/build_xlsx.py       # também atualiza a aba 'Pendências da fonte' e pendencias_historico.json
+python3 -I scripts/build_html.py     # gera votos_2026.html (e _artifact.html) a partir do xlsx

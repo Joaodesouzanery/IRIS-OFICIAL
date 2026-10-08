@@ -336,10 +336,10 @@ def papel(v):
 EVID = {'nominal': 'Individual (citada na ata)', 'inferido': 'Inferida (unanimidade/sem divergência)', 'n/a': 'Não se aplica', 'REVISAR': 'A revisar'}
 mes_ = lambda d: (d or '')[:7]
 # ---- Votos
-sheetf('Votos', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Diretor', 'Voto', 'Papel', 'Evidência', 'Proveniência', 'Tipo de item', 'Resultado da deliberação', 'Relator', 'Modal', 'Tema', 'Subtema', 'Assunto'],
+sheetf('Votos', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Diretor', 'Voto', 'Papel', 'Evidência', 'Proveniência', 'Tipo de item', 'Resultado da deliberação', 'Relator', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)', 'Assunto'],
        [[v['agencia'], mes_(v['data']), v['data'], v['reuniao'], v['processo'], v.get('deliberacao', ''), v['diretor'], v['voto'], papel(v), EVID[v['proveniencia']], v['proveniencia'], v['tipo_item'], get_res(v).get('resultado', ''), get_res(v).get('relator', ''),
-         tm(get_res(v), 'modal'), tm(get_res(v), 'tema'), tm(get_res(v), 'subtema'), (get_res(v).get('assunto') or '')[:160]] for v in V],
-       {'Diretor': 38, 'Voto': 32, 'Papel': 22, 'Evidência': 32, 'Tipo de item': 22, 'Resultado da deliberação': 34, 'Relator': 36, 'Processo': 24, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Assunto': 60})
+         tm(get_res(v), 'modal'), tm(get_res(v), 'tema'), tm(get_res(v), 'subtema'), tm(get_res(v), 'microtema_iris'), tm(get_res(v), 'area_iris'), (get_res(v).get('assunto') or '')[:160]] for v in V],
+       {'Diretor': 38, 'Voto': 32, 'Papel': 22, 'Evidência': 32, 'Tipo de item': 22, 'Resultado da deliberação': 34, 'Relator': 36, 'Processo': 24, 'Modal': 30, 'Tema': 30, 'Subtema': 30, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24, 'Assunto': 60})
 # ---- Deliberações
 sheetf('Deliberações', ['Agência', 'Mês', 'Data', 'Reunião', 'Processo', 'Deliberação nº / item', 'Tipo de item', 'Relator', 'Interessado', 'Assunto', 'Resultado', 'Voto (doc)', 'Modal', 'Tema', 'Subtema', 'Tipo de ato', 'Microtema (IRIS)', 'Área (IRIS)', 'Confiança', 'Fonte da classificação', 'Texto da decisão'],
        [[d['agencia'], mes_(d['data']), d['data'], d['reuniao'], d['processo'], d.get('deliberacao', ''), d['tipo_item'], d.get('relator'), d.get('interessado', ''), d.get('assunto', ''), d['resultado'], d.get('voto_doc', ''),
@@ -359,11 +359,11 @@ ws.cell(row=len(linhas) + 3, column=1, value='Legenda: * = voto inferido da unan
 # ---- Diretores (long)
 dl = collections.defaultdict(collections.Counter)
 for v in V:
-    d = get_res(v); k = (v['agencia'], v['diretor'], mes_(v['data']), tm(d, 'modal') or '—', tm(d, 'tema') or '—'); c = dl[k]; c['Registros'] += 1
+    d = get_res(v); k = (v['agencia'], v['diretor'], mes_(v['data']), tm(d, 'modal') or '—', tm(d, 'tema') or '—', tm(d, 'subtema') or '—', tm(d, 'microtema_iris') or '—', tm(d, 'area_iris') or '—'); c = dl[k]; c['Registros'] += 1
     c['Aprovou a ata anterior' if v['tipo_item'] == 'Aprovação de ata' else {'como relator/proponente': 'Como relator/proponente', 'acompanhou': 'Acompanhou', 'divergiu': 'Divergiu', 'pediu vista': 'Pediu vista', 'ausente': 'Ausente', 'sem voto (retirado de pauta)': 'Sem voto (retirada)', 'a revisar': 'A revisar'}[kind(v)]] += 1
     c['Votos individuais (citados)'] += v['proveniencia'] == 'nominal'; c['Votos inferidos'] += v['proveniencia'] == 'inferido'
 colsDir = ['Registros', 'Como relator/proponente', 'Acompanhou', 'Divergiu', 'Pediu vista', 'Ausente', 'Sem voto (retirada)', 'A revisar', 'Aprovou a ata anterior', 'Votos individuais (citados)', 'Votos inferidos']
-sheetf('Diretores', ['Agência', 'Diretor', 'Mês', 'Modal', 'Tema'] + colsDir, [list(k) + [c[x] for x in colsDir] for k, c in sorted(dl.items())], {'Diretor': 38, 'Modal': 32, 'Tema': 34}, cor='dir')
+sheetf('Diretores', ['Agência', 'Diretor', 'Mês', 'Modal', 'Tema', 'Subtema', 'Microtema (IRIS)', 'Área (IRIS)'] + colsDir, [list(k) + [c[x] for x in colsDir] for k, c in sorted(dl.items())], {'Diretor': 38, 'Modal': 32, 'Tema': 34, 'Subtema': 34, 'Microtema (IRIS)': 30, 'Área (IRIS)': 24}, cor='dir')
 # ---- Reuniões
 sheetf('Reuniões', ['Agência', 'Reunião', 'Data', 'Tipo', 'Presentes', 'Ausentes', 'Nº de itens lidos', 'Observação'], [[r['agencia'], r['reuniao'], r.get('data'), r.get('tipo', ''), '; '.join(r.get('presentes', [])), '; '.join(r.get('ausentes', [])), nd[(r['agencia'], r['reuniao'])], r.get('obs', '')] for r in sorted(R, key=lambda r: (r['agencia'], r.get('data') or ''))], {'Presentes': 80, 'Ausentes': 36, 'Observação': 50}, cor='apoio')
 
@@ -448,7 +448,7 @@ linhas = [
  ('Votos', 'Base única: 1 linha por diretor em cada item da ata. Filtre por Agência, Diretor, Mês, Modal, Tema, Papel, Evidência.'),
  ('Deliberações', '1 linha por item da ata, com relator, resultado, interessado, assunto, modal/tema/subtema.'),
  ('Matriz de votos', '1 linha por item, 1 coluna por diretor (filtre Agência). * = voto inferido da unanimidade.'),
- ('Diretores', 'Contagens por Agência, Diretor, Mês, Modal e Tema (filtre ou some com tabela dinâmica).'),
+ ('Diretores', 'Contagens por Agência, Diretor, Mês, Modal, Tema, Subtema, Microtema e Área (filtre ou some com tabela dinâmica).'),
  ('Controle', 'Coluna Tipo: Cobertura, Qualidade (checagens automáticas), Pendência da fonte (o que a fonte ainda não publicou) e Não feito (lacunas conhecidas).'),
  ('Reuniões', 'Presentes e ausentes de cada reunião, e observações.'),
  ('Apoio', 'Contagem de temas, concordância regra × IA e inventário da ARTESP (coluna Tipo).'),
