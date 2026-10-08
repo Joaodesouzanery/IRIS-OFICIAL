@@ -19,8 +19,8 @@
   "govbr_atas": {
    "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/atas-das-reunioes-deliberativas",
    "http": "200",
-   "bytes": 203553,
-   "sha256": "91c476104d4de39a8d1be125e024149889fcdb0c3602680356fbe135b0cd01b6",
+   "bytes": 203547,
+   "sha256": "3f150cf2890ea5a77419dc295c9d0474b5fb94a6d3eeb1c31bb363ff0b6eeb81",
    "nota": "embute iframe www2/resolucoes/atasreuniao.asp",
    "arquivo": "fonte/ana/web/govbr_atas.html"
   },
@@ -76,7 +76,7 @@
    "url": "https://www.ana.gov.br/www2/resolucoes/atasreuniao.asp",
    "http": "200",
    "bytes": 201355,
-   "sha256": "cb8e5a4533b900c2dc524f28d97b7b62182cd2b6500649bda2a34c045d225ffa",
+   "sha256": "50f8d0f5fb017a37b946738a9ac93474306e605261ba9ed2021386de50fa023c",
    "nota": "LISTAGEM de atas deliberativas (iframe, HTML estatico por ano)",
    "arquivo": "fonte/ana/web/www2_atas_deliberativas.html"
   },
@@ -84,7 +84,7 @@
    "url": "https://www.ana.gov.br/www2/resolucoes/atosconvocatorios.asp",
    "http": "200",
    "bytes": 204476,
-   "sha256": "ac9cdda275142779ae3f7ec27eda63e6620bd9fda05d332997803c87084ccc8c",
+   "sha256": "eeba783fb377933ccf48abf4b8aa744ca6a2a5b957a4e9679f28a8308856241c",
    "nota": "LISTAGEM de pautas deliberativas (iframe)",
    "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html"
   },
@@ -92,7 +92,7 @@
    "url": "https://www.ana.gov.br/www2/resolucoes/atasreuniao.asp?tiporeuniao=Administrativa",
    "http": "200",
    "bytes": 61060,
-   "sha256": "d96c4c9ba4d426bf2ffb21e8248aa2e28739b989ffad9c92f5b028359c9aa282",
+   "sha256": "1ef8b43f638746160884a3e342f5db0308f489a4842b0147a17abc78e0159b14",
    "nota": "atas administrativas (fora do escopo)",
    "arquivo": "fonte/ana/web/www2_atas_administrativas.html"
   },
@@ -100,14 +100,14 @@
    "url": "https://www.ana.gov.br/www2/resolucoes/atosconvocatorios.asp?tiporeuniao=Administrativa",
    "http": "200",
    "bytes": 60955,
-   "sha256": "cab6640dd6fef0f8a19e9b30da4a7fc522c74ec59512b64a6a5a2d3854da0da8",
+   "sha256": "4bec361596ddf61e78ab14d745bcb892c242d36727424cb137273bb2640f1179",
    "nota": "pautas administrativas (fora do escopo)",
    "arquivo": "fonte/ana/web/www2_pautas_administrativas.html"
   },
   "arquivos_ana_pdf": {
    "url": "https://arquivos.ana.gov.br/atas/2026/ata-958-ordin-delib.pdf",
-   "http": "000",
-   "erro": "curl: (56) CONNECT tunnel failed, response 403",
+   "http": "200",
+   "erro": "",
    "nota": "host que serve TODOS os PDFs (atas, pautas, votos). Aqui: CONNECT recusado (403) pelo proxy de saida do ambiente; via http nao resolve DNS; Chromium igual (ERR_TUNNEL_CONNECTION_FAILED). Nao contornado."
   }
  },

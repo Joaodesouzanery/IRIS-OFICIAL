@@ -218,6 +218,12 @@ cob = [
 for ag in AGS:
     ct = collections.Counter(d['tipo_item'] for d in D if d['agencia'] == ag)
     cob.append([ag, 'Itens da ata por tipo (todos têm 1 linha de voto por diretor, exceto Cancelada)', sum(ct.values()), '; '.join(f'{k}: {v}' for k, v in ct.most_common())])
+for ag in AGS:   # resumo honesto de cobertura de votos: o que existe × o que a fonte entregou (ZERO / PARCIAL / COMPLETA)
+    _rs = [r for r in R if r['agencia'] == ag]; _com = {d['reuniao'] for d in D if d['agencia'] == ag}
+    _sem = [r['reuniao'] for r in _rs if r['reuniao'] not in _com]; _vs = [v for v in V if v['agencia'] == ag]
+    _n = collections.Counter(v['proveniencia'] for v in _vs)
+    _st = 'ZERO (nenhum voto lido)' if not _vs else ('PARCIAL' if _sem else 'COMPLETA no que a fonte publicou')
+    cob.append([ag, 'COBERTURA DE VOTOS (resumo)', f'{len(_vs)} votos', f'{_st} · reuniões listadas {len(_rs)}, com itens lidos {len(_rs) - len(_sem)}, sem itens {len(_sem)}' + (f' ({", ".join(_sem[:8])}{"…" if len(_sem) > 8 else ""})' if _sem else '') + f' · nominal {_n["nominal"]}, inferido {_n["inferido"]}, REVISAR {_n["REVISAR"]}'])
 for sg, x in EXTRAS.items(): cob += x['cobertura']
 sheet('Cobertura', ['Agência', 'Medida', 'Valor', 'Nota'], cob, {'Medida': 70, 'Nota': 110})
 sheet('Pendências', ['Item', 'Detalhe'], [

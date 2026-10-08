@@ -22,8 +22,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/atas-das-reunioes-deliberativas",
   "arquivo": "fonte/ana/web/govbr_atas.html",
   "http": "200",
-  "bytes": 203553,
-  "sha256": "91c476104d4de39a8d1be125e024149889fcdb0c3602680356fbe135b0cd01b6",
+  "bytes": 203547,
+  "sha256": "3f150cf2890ea5a77419dc295c9d0474b5fb94a6d3eeb1c31bb363ff0b6eeb81",
   "ok": true
  },
  "web:govbr_pautas": {
@@ -86,7 +86,7 @@
   "arquivo": "fonte/ana/web/www2_atas_deliberativas.html",
   "http": "200",
   "bytes": 201355,
-  "sha256": "cb8e5a4533b900c2dc524f28d97b7b62182cd2b6500649bda2a34c045d225ffa",
+  "sha256": "50f8d0f5fb017a37b946738a9ac93474306e605261ba9ed2021386de50fa023c",
   "ok": true
  },
  "web:www2_pautas_deliberativas": {
@@ -95,7 +95,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html",
   "http": "200",
   "bytes": 204476,
-  "sha256": "ac9cdda275142779ae3f7ec27eda63e6620bd9fda05d332997803c87084ccc8c",
+  "sha256": "eeba783fb377933ccf48abf4b8aa744ca6a2a5b957a4e9679f28a8308856241c",
   "ok": true
  },
  "web:www2_atas_administrativas": {
@@ -104,7 +104,7 @@
   "arquivo": "fonte/ana/web/www2_atas_administrativas.html",
   "http": "200",
   "bytes": 61060,
-  "sha256": "d96c4c9ba4d426bf2ffb21e8248aa2e28739b989ffad9c92f5b028359c9aa282",
+  "sha256": "1ef8b43f638746160884a3e342f5db0308f489a4842b0147a17abc78e0159b14",
   "ok": true
  },
  "web:www2_pautas_administrativas": {
@@ -113,237 +113,237 @@
   "arquivo": "fonte/ana/web/www2_pautas_administrativas.html",
   "http": "200",
   "bytes": 60955,
-  "sha256": "cab6640dd6fef0f8a19e9b30da4a7fc522c74ec59512b64a6a5a2d3854da0da8",
+  "sha256": "4bec361596ddf61e78ab14d745bcb892c242d36727424cb137273bb2640f1179",
   "ok": true
  },
  "pdf:ata:949": {
   "tipo": "ata",
   "reuniao": 949,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-949-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_949.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "d9e47ef69563a05dcd9ecd4f1f061ffe88cc9a09e153568159c2fe38881ff215",
+  "motivo": ""
  },
  "pdf:pauta:949": {
   "tipo": "pauta",
   "reuniao": 949,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato949-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_949.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "fe33e73b524363ac560ce30d0bfb9d87646133d948b7af393cdd9404f1d593b8",
+  "motivo": ""
  },
  "pdf:ata:950": {
   "tipo": "ata",
   "reuniao": 950,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-950-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_950.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "bed19b88209a7731b234e2f43beff5f4f55a45d412a2e728254a991b0565affe",
+  "motivo": ""
  },
  "pdf:pauta:950": {
   "tipo": "pauta",
   "reuniao": 950,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato950-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_950.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "4f6b1cbb0b870fb55ee3d4b0229d306abe38bc71ed60dd71459e4a15b557122b",
+  "motivo": ""
  },
  "pdf:ata:951": {
   "tipo": "ata",
   "reuniao": 951,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-951-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_951.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "5d407d9099a4e0721af4788e3358861170a010ac5443dad3c3adc7818e078229",
+  "motivo": ""
  },
  "pdf:pauta:951": {
   "tipo": "pauta",
   "reuniao": 951,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato951-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_951.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "a848bfbe93de88b5581f923228dba50b98ee11d1d13ba62b6554bb64ba03cae3",
+  "motivo": ""
  },
  "pdf:ata:952": {
   "tipo": "ata",
   "reuniao": 952,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-952-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_952.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "8088270c71ed2f9f39a2f1f6e227beec332f2b988ab2d2f2fbefdca61cf6593d",
+  "motivo": ""
  },
  "pdf:pauta:952": {
   "tipo": "pauta",
   "reuniao": 952,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato952-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_952.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "65e5745fc9b0b89315c034cf9800bafca660ea367fabbe919a12bfc03f3546eb",
+  "motivo": ""
  },
  "pdf:ata:953": {
   "tipo": "ata",
   "reuniao": 953,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-953-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_953.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "eabfb5233466fc245b8a71f8d10342166345a4febe0a3e42c8dac3feb201d862",
+  "motivo": ""
  },
  "pdf:pauta:953": {
   "tipo": "pauta",
   "reuniao": 953,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato953-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_953.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "94a838cc921f62fef68237c8ff8a2a43a3a08d4ed91152f91bb5662d445780f5",
+  "motivo": ""
  },
  "pdf:ata:954": {
   "tipo": "ata",
   "reuniao": 954,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-954-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_954.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "537dc47e360a0d005463ea461bf1334343a49249da9e559f427f25bf4f0662c7",
+  "motivo": ""
  },
  "pdf:pauta:954": {
   "tipo": "pauta",
   "reuniao": 954,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato954-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_954.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "ee14bef224825cb2650c7d3a965a249bf1aca7a563decf1b0ba0284579ce1240",
+  "motivo": ""
  },
  "pdf:ata:955": {
   "tipo": "ata",
   "reuniao": 955,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-955-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_955.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "0292dbc6b1a0ad8571720bf877173d597af6a9cfb9329258b09e9ba7e745f4e9",
+  "motivo": ""
  },
  "pdf:pauta:955": {
   "tipo": "pauta",
   "reuniao": 955,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato955-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_955.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "e1a8dad06a9d242baf728574af1db880803edd33c245dc0c62e839cc68a01e58",
+  "motivo": ""
  },
  "pdf:ata:956": {
   "tipo": "ata",
   "reuniao": 956,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-956-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_956.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "15811d877a250ac8ee878c0413be8c88a9f1cdb615e225c3a2fc35bb479b76d8",
+  "motivo": ""
  },
  "pdf:pauta:956": {
   "tipo": "pauta",
   "reuniao": 956,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato956-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_956.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "d28b064033fcdaabfa33372b02cdfd905176237c9289cd7f1fb74b6f27c979f7",
+  "motivo": ""
  },
  "pdf:ata:957": {
   "tipo": "ata",
   "reuniao": 957,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-957-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_957.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "b89263814245feb69f485560f137fbb8d0c78a3e45ae55f712efb647b4686b4c",
+  "motivo": ""
  },
  "pdf:pauta:957": {
   "tipo": "pauta",
   "reuniao": 957,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato957-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_957.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "3772619d993cda6a06ce6603771aca0086e1ac83bba10514bba198e886e068ae",
+  "motivo": ""
  },
  "pdf:ata:958": {
   "tipo": "ata",
   "reuniao": 958,
   "url": "https://arquivos.ana.gov.br/atas/2026/ata-958-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_958.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "4734fb6973f5942a185d6fc3c3cc5d633b58d70ac79732c73294ef7e69a32913",
+  "motivo": ""
  },
  "pdf:pauta:958": {
   "tipo": "pauta",
   "reuniao": 958,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato958-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_958.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "40b75b9d72ae3575d11141b2a3bed582c53b7010a1f6df3d1457af3fa6e3d92c",
+  "motivo": ""
  },
  "pdf:ata:959": {
   "tipo": "ata",
   "reuniao": 959,
   "url": "https://arquivos.ana.gov.br/atas/2027/ata-959-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/ata_959.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "aa851019c430d375611d6b1a3443acbf1996c9f747734e688620768e70b02c29",
+  "motivo": ""
  },
  "pdf:pauta:959": {
   "tipo": "pauta",
   "reuniao": 959,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato959-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_959.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "4f4893b8667d45ea7fd05d1b9f9ad2a838b6c4a60aba8b3a9ad18b1bf85eacdb",
+  "motivo": ""
  },
  "pdf:pauta:960": {
   "tipo": "pauta",
   "reuniao": 960,
   "url": "https://arquivos.ana.gov.br/atos/2026/ato960-ordin-delib.pdf",
-  "arquivo": null,
-  "http": "000",
-  "ok": false,
-  "sha256": null,
-  "motivo": "bloqueado pela fonte/egress: curl: (56) CONNECT tunnel failed, response 403"
+  "arquivo": "fonte/ana/pdf/pauta_960.pdf",
+  "http": "200",
+  "ok": true,
+  "sha256": "659f8c18d173bb3d60df48c82959a7a46cfcd6088d36c4d614bc0845fd0be909",
+  "motivo": ""
  }
 }
