@@ -45,11 +45,11 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANA | Votos: nominal + inferido + REVISAR = total | 244 | 244 | OK | {'inferido': 166, 'nominal': 78} |
 | ANA | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (NÃO baixado, bloqueado pela fonte) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 12 | 12 | OK |  |
-| ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 39 | 39 | OK | 46 itens sem resultado publicado/informe |
+| ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 252 | 252 | OK | 29 itens sem resultado publicado/informe |
 | ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANS | Votos: nominal + inferido + REVISAR = total | 195 | 195 | OK | {'inferido': 189, 'REVISAR': 5, 'nominal': 1} |
+| ANS | Votos: nominal + inferido + REVISAR = total | 1260 | 1260 | OK | {'inferido': 1147, 'nominal': 108, 'REVISAR': 5} |
 | ANS | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, fora da allowlist, sem documento) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 23 | 23 | OK |  |
+| ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 10 | 10 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
@@ -57,7 +57,7 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
 | ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5023 | 5023 | OK |  |
 | ANA | Votos no JSON × linhas na aba Votos | 244 | 244 | OK |  |
-| ANS | Votos no JSON × linhas na aba Votos | 195 | 195 | OK |  |
+| ANS | Votos no JSON × linhas na aba Votos | 1260 | 1260 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 505 | 505 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 494 | 494 | OK | sem URL: [] |

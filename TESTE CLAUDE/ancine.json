@@ -22398,51 +22398,24 @@
   },
   {
    "reuniao": "RD961",
-   "data": "2026-03-25",
+   "data": "2026-04-01",
    "processo": "01416.011340/2025-11",
-   "deliberacao": "DDC 528-E",
+   "deliberacao": "DDC 528-E (não publicada)",
    "item_n": "1",
    "relator": "",
    "interessado": "Secretaria de Regulação - SRG",
    "assunto": "Apresentação da Análise de Impacto Regulatório - AIR e encaminhamento de proposta de aperfeiçoamento da regulamentação referente à Cota de Tela para o ciclo de 2026.",
-   "resultado": "Matéria deliberada [unanimidade]",
-   "voto_doc": "https://sei.ancine.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=4366335&id_orgao_publicacao=0",
-   "decisao_texto": "A Diretoria Colegiada, com base na Proposta de Ação - PA - Atos Normativos Externos n.º 5-E/2025/SRG (SEI 3932688), no Parecer n.º 00043/2025/PROC-CHEFE/PFEANCINE/PGF/AGU (SEI 3906762), no Despacho n.º 70-E/2025/SRG (SEI 3899330), e no Despacho n.º 18-E/2026/SRG (SEI 4010468), tomou conhecimento do Relatório Preliminar de Consulta Pública n.º 4 (SEI 3932695), e decidiu, por unanimidade, aprovar a proposta de Instrução Normativa, nos termos da minuta (SEI 4009406), com as ressalvas consignadas nesta deliberação, dispensando a realização de Análise de Impacto Regulatório - AIR, na forma do inciso II do §2º do art. 8º da Resolução de Diretoria Colegiada ANCINE n.º 119/2022, e definindo a entrada em vigor na data de sua publicação. Os Diretores decidiram por unanimidade pela inclusão, na Instrução Normativa, de previsão expressa quanto à possibilidade de atuação de ofício da ANCINE, tanto para a instauração quanto para a condução de procedimentos administrativos, inclusive nos casos de representações e denúncias. Adicionalmente, a Diretoria Colegiada decidiu, por unanimidade, pela inclusão de dispositivo sobre a publicação semestral de relatório de transparência, contendo informações agregadas sobre os atos e procedimentos praticados com fundamento na referida Instrução Normativa, acompanhadas de avaliação de resultados e eficiência. Por fim, em complementação ao escopo da Instrução Normativa, os Diretores decidiram, por unanimidade, pela previsão da realização de tratativas para a formalização de acordos de cooperação voluntária com titulares de direitos, plataformas digitais, provedores e intermediários, com o objetivo de pactuar procedimentos para a remoção consensual de conteúdo audiovisual ofertado sem autorização.",
+   "resultado": "Matéria deliberada [sem modo declarado]",
+   "voto_doc": "",
+   "decisao_texto": "matéria deliberada",
    "tipo_item": "Deliberação",
    "secao": "Sessão reservada",
    "unidade": "Secretaria de Regulação - SRG",
    "partes": [
     {
      "parte": "I",
-     "acao": "A Diretoria Colegiada, com base na Proposta de Ação - PA - Atos Normativos Externos n.º 5-E/2025/SRG (SEI 3932688), no Parecer n.º 00043/2025/PROC-CHEFE/PFEANCINE/PGF/AGU (SEI 3906762), no Despacho n.º 70-E/2025/SRG (SEI 3899330), e no Despacho n.º 18-E/2026/SRG (SEI 4010468), tomou conhecimento do Relatório Preliminar de Consulta Pública n.º 4 (SEI 3932695), e decidiu, por unanimidade, aprovar a proposta de Instrução Normativa, nos termos da minuta (SEI 4009406), com as ressalvas consignadas nesta deliberação, dispensando a realização de Análise de Impacto Regulatório - AIR, na forma do incis",
-     "modo": "unanimidade",
-     "vencidos": [],
-     "abstencoes": [],
-     "impedidos": [],
-     "ressalvas": []
-    },
-    {
-     "parte": "II",
-     "acao": "Os Diretores decidiram por unanimidade pela inclusão, na Instrução Normativa, de previsão expressa quanto à possibilidade de atuação de ofício da ANCINE, tanto para a instauração quanto para a condução de procedimentos administrativos, inclusive nos casos de representações e denúncias",
-     "modo": "unanimidade",
-     "vencidos": [],
-     "abstencoes": [],
-     "impedidos": [],
-     "ressalvas": []
-    },
-    {
-     "parte": "III",
-     "acao": "Adicionalmente, a Diretoria Colegiada decidiu, por unanimidade, pela inclusão de dispositivo sobre a publicação semestral de relatório de transparência, contendo informações agregadas sobre os atos e procedimentos praticados com fundamento na referida Instrução Normativa, acompanhadas de avaliação de resultados e eficiência",
-     "modo": "unanimidade",
-     "vencidos": [],
-     "abstencoes": [],
-     "impedidos": [],
-     "ressalvas": []
-    },
-    {
-     "parte": "IV",
-     "acao": "Por fim, em complementação ao escopo da Instrução Normativa, os Diretores decidiram, por unanimidade, pela previsão da realização de tratativas para a formalização de acordos de cooperação voluntária com titulares de direitos, plataformas digitais, provedores e intermediários, com o objetivo de pactuar procedimentos para a remoção consensual de conteúdo audiovisual ofertado sem autorização.",
-     "modo": "unanimidade",
+     "acao": "matéria deliberada",
+     "modo": "sem modo declarado",
      "vencidos": [],
      "abstencoes": [],
      "impedidos": [],
@@ -22451,11 +22424,11 @@
    ],
    "origem": "https://sei.ancine.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=4374894&id_orgao_publicacao=0",
    "ddc": 528,
-   "ddc_publicada": true,
+   "ddc_publicada": false,
    "extrapauta": null,
    "manifestacao": "",
    "ad_referendum": [],
-   "ausencias_txt": "Não houve."
+   "ausencias_txt": ""
   },
   {
    "reuniao": "RD961",
@@ -92049,47 +92022,47 @@
   },
   {
    "reuniao": "RD961",
-   "data": "2026-03-25",
+   "data": "2026-04-01",
    "processo": "01416.011340/2025-11",
-   "deliberacao": "DDC 528-E",
+   "deliberacao": "DDC 528-E (não publicada)",
    "diretor": "Alex Braga Muniz",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU",
-   "motivo": "unanimidade declarada na DDC: todo signatário acompanhou"
+   "voto": "SEM VOTO (sem votação declarada)",
+   "proveniencia": "REVISAR",
+   "voto_por_parte": "",
+   "motivo": "DDC da sessão reservada não publicada; a ata registra só o resultado (\"matéria deliberada\") sem modo de votação"
   },
   {
    "reuniao": "RD961",
-   "data": "2026-03-25",
+   "data": "2026-04-01",
    "processo": "01416.011340/2025-11",
-   "deliberacao": "DDC 528-E",
+   "deliberacao": "DDC 528-E (não publicada)",
    "diretor": "Paulo Xavier Alcoforado",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU",
-   "motivo": "unanimidade declarada na DDC: todo signatário acompanhou"
+   "voto": "SEM VOTO (sem votação declarada)",
+   "proveniencia": "REVISAR",
+   "voto_por_parte": "",
+   "motivo": "DDC da sessão reservada não publicada; a ata registra só o resultado (\"matéria deliberada\") sem modo de votação"
   },
   {
    "reuniao": "RD961",
-   "data": "2026-03-25",
+   "data": "2026-04-01",
    "processo": "01416.011340/2025-11",
-   "deliberacao": "DDC 528-E",
+   "deliberacao": "DDC 528-E (não publicada)",
    "diretor": "Patrícia Barcelos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU",
-   "motivo": "unanimidade declarada na DDC: todo signatário acompanhou"
+   "voto": "SEM VOTO (sem votação declarada)",
+   "proveniencia": "REVISAR",
+   "voto_por_parte": "",
+   "motivo": "DDC da sessão reservada não publicada; a ata registra só o resultado (\"matéria deliberada\") sem modo de votação"
   },
   {
    "reuniao": "RD961",
-   "data": "2026-03-25",
+   "data": "2026-04-01",
    "processo": "01416.011340/2025-11",
-   "deliberacao": "DDC 528-E",
+   "deliberacao": "DDC 528-E (não publicada)",
    "diretor": "Vinicius Clay Araújo Gomes",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "voto_por_parte": "I: ACOMPANHOU | II: ACOMPANHOU | III: ACOMPANHOU | IV: ACOMPANHOU",
-   "motivo": "unanimidade declarada na DDC: todo signatário acompanhou"
+   "voto": "SEM VOTO (sem votação declarada)",
+   "proveniencia": "REVISAR",
+   "voto_por_parte": "",
+   "motivo": "DDC da sessão reservada não publicada; a ata registra só o resultado (\"matéria deliberada\") sem modo de votação"
   },
   {
    "reuniao": "RD961",
@@ -145687,7 +145660,7 @@
    1830,
    1830,
    "OK",
-   "1820 itens com DDC lida; 10 sem DDC publicada; DDC 528 repartida por 2 itens do mesmo ato"
+   "1819 itens com DDC lida; 11 sem DDC publicada; conflitos de numeração ata×DDC (processo diferente): [('RD961', '1', '01416.011340/2025-11', 528)]"
   ],
   [
    "ANCINE",
@@ -145751,7 +145724,7 @@
    7000,
    7000,
    "OK",
-   "{'inferido': 6797, 'nominal': 128, 'REVISAR': 75}"
+   "{'inferido': 6793, 'nominal': 128, 'REVISAR': 79}"
   ],
   [
    "ANCINE",
@@ -145795,7 +145768,7 @@
    "ANCINE",
    "Itens deliberados em reunião (itens das atas)",
    1830,
-   "1820 com DDC lida; 10 de sessão reservada sem DDC publicada"
+   "1819 com DDC lida; 11 de sessão reservada sem DDC publicada"
   ],
   [
    "ANCINE",
@@ -145866,6 +145839,16 @@
    "a ata cita a DDC, mas a série 307 (Boletim de Serviço) não a publica: matéria de sessão reservada",
    "solicitar à Secretaria da Diretoria Colegiada (LAI) ou aguardar publicação",
    "https://sei.ancine.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=4369351&id_orgao_publicacao=0"
+  ],
+  [
+   "ANCINE",
+   "DDC n.º 528-E (sessão reservada) — decisão, modo de votação e assinantes",
+   "2026-04-01",
+   "documento não publicado",
+   "RD961 item 1 (proc. 01416.011340/2025-11): voto de cada diretor só como REVISAR",
+   "a ata cita a DDC n.º 528-E, mas o documento de mesmo número na série 307 trata de OUTRO processo (01416.000936/2025-88): numeração conflitante na ata (SEI diferente); a DDC própria deste item não está publicada (sessão reservada)",
+   "solicitar à Secretaria da Diretoria Colegiada (LAI) ou aguardar publicação",
+   "https://sei.ancine.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=4374894&id_orgao_publicacao=0"
   ],
   [
    "ANCINE",
@@ -146364,7 +146347,7 @@
   [
    "ANCINE",
    "Decisões \"tomou conhecimento\" (sem modo de votação)",
-   "75 linhas",
+   "79 linhas",
    "REVISAR (limite da fonte)",
    "a DDC registra que a Diretoria \"tomou conhecimento\" sem declarar unanimidade/maioria; cada signatário aparece como SEM VOTO (sem votação declarada) REVISAR",
    "Nenhuma: a fonte não declara"

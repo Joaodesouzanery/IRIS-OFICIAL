@@ -1,0 +1,220 @@
+{
+ "verificacoes": {
+  "sha256 do manifesto = sha256 recalculado do arquivo (todos os PDFs)": {
+   "acertos": 71,
+   "total": 71,
+   "taxa": 100.0
+  },
+  "data da reunião (cabeçalho da ata × JSON; erro de digitação do ano na ata conta como divergência explicada)": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "presentes (cabeçalho da ata × JSON)": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "ausentes declarados na ata ⊆ ausentes do JSON": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "mapa área→diretor reconstruído das assinaturas da ata cobre as áreas dos diretores presentes": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "nº de \"Decisão:\" nas sessões da ata = nº de itens de sessão no JSON": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "nº de blocos Assunto/Área/Decisão relidos = itens JSON": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "item da ata encontrado no JSON (processo/assunto)": {
+   "acertos": 234,
+   "total": 234,
+   "taxa": 100.0
+  },
+  "tipo_item (Informe/Retirada/Vista/Ata/Deliberação) relido da decisão": {
+   "acertos": 234,
+   "total": 234,
+   "taxa": 100.0
+  },
+  "impedidos (ata × JSON x[impedidos])": {
+   "acertos": 234,
+   "total": 234,
+   "taxa": 100.0
+  },
+  "linhas IMPEDIDO nos votos = impedidos da ata": {
+   "acertos": 234,
+   "total": 234,
+   "taxa": 100.0
+  },
+  "1 linha de voto por membro (presentes + ausentes) e sem duplicata": {
+   "acertos": 212,
+   "total": 212,
+   "taxa": 100.0
+  },
+  "todos os rótulos de voto dentro da lista permitida": {
+   "acertos": 212,
+   "total": 212,
+   "taxa": 100.0
+  },
+  "unanimidade → ninguém DIVERGIU e todo presente não impedido ACOMPANHOU/RELATOR": {
+   "acertos": 201,
+   "total": 201,
+   "taxa": 100.0
+  },
+  "proveniência inferido apenas em ACOMPANHOU/RELATOR de item \"por unanimidade\"": {
+   "acertos": 201,
+   "total": 201,
+   "taxa": 100.0
+  },
+  "sem relator quando o diretor da área não vota (impedido/ausente) ou item de ata/PRESI sem diretor": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "relator = diretor da área do voto citado na ata (ou signatário do voto escrito)": {
+   "acertos": 192,
+   "total": 192,
+   "taxa": 100.0
+  },
+  "relator com voto escrito nomeando o diretor → proveniência nominal": {
+   "acertos": 5,
+   "total": 5,
+   "taxa": 100.0
+  },
+  "informe não tem votos": {
+   "acertos": 22,
+   "total": 22,
+   "taxa": 100.0
+  },
+  "blocão: existe item agregado BLOCAO na reunião": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: todo processo citado como \"Processo: P\" no AEP aparece nas decisões individuais": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: nº de decisões = nº de decisões relidas (unanimidade + retirado + apreciação) no AEP": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: retiradas de pauta (ata × JSON)": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: impedimentos (ata × JSON)": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: apreciações sem unanimidade (ata × JSON)": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: decisão individual localizada na ata pelo \"Processo: P\"": {
+   "acertos": 2064,
+   "total": 2064,
+   "taxa": 100.0
+  },
+  "blocão: classe da decisão individual (unanimidade/impedimento/retirada/apreciação) relida na ata": {
+   "acertos": 2064,
+   "total": 2064,
+   "taxa": 100.0
+  },
+  "blocão: área condutora da decisão individual relida na ata": {
+   "acertos": 2056,
+   "total": 2056,
+   "taxa": 100.0
+  },
+  "blocão: impedidos da decisão individual relidos na ata": {
+   "acertos": 4,
+   "total": 4,
+   "taxa": 100.0
+  },
+  "blocão: todo exceção (retirada/impedimento/apreciação) virou item próprio": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "blocão: processos_do_bloco = processos distintos das decisões": {
+   "acertos": 9,
+   "total": 9,
+   "taxa": 100.0
+  },
+  "reunião com ata tem ≥1 item": {
+   "acertos": 17,
+   "total": 17,
+   "taxa": 100.0
+  },
+  "retirada → todos SEM VOTO (retirado de pauta)": {
+   "acertos": 5,
+   "total": 5,
+   "taxa": 100.0
+  },
+  "quem retirou (nome na ata) aparece no resultado": {
+   "acertos": 5,
+   "total": 5,
+   "taxa": 100.0
+  },
+  "vista/diligência → o pedinte nominal tem PEDIU VISTA": {
+   "acertos": 2,
+   "total": 2,
+   "taxa": 100.0
+  },
+  "atas listadas na API oficial = atas baixadas e lidas": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "toda reunião JSON com fonte \"ata (DICOL)\" tem o PDF no manifesto": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "votos: rótulos dentro da lista permitida (todas as agências-ANS)": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "votos: proveniência ∈ {nominal, inferido, REVISAR}": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "deliberações: chave (reunião, processo, deliberação) única": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "votos: chave (item, diretor) única": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "no máximo 1 RELATOR por item e relator preenchido ⇒ linha RELATOR (itens com voto)": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  }
+ },
+ "total": {
+  "acertos": 8459,
+  "total": 8459,
+  "taxa": 100.0
+ },
+ "divergencias": {}
+}

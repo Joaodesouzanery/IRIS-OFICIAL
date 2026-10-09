@@ -34,6 +34,29 @@
     "proveniencia": "44/44"
    },
    "nota": "itens sorteados se sobrepoem a 1a rodada (populacao de 85 itens); todos os 44 relidos contra pauta/pagina/extrato; invariantes verificadas por script em todos os 85 itens"
+  },
+  {
+   "escopo": "atas oficiais (632-640 e extras 1-8)",
+   "semente": 2026,
+   "n": 44,
+   "campos_conferidos": 264,
+   "erros": 0,
+   "estratos": "sessao_aberta 8, sessao_reservada 10, impedimento 4, retirada 2, vista 2, informe 3, ata 3, blocao_agregado 2, blocao_excecao 2, ressalva 1, blocao_decisao 7",
+   "metodo": "texto-fonte = pdftotext direto do PDF da ata, lido ANTES do JSON; campos: data, tipo_item, resultado, relator, votos/presentes, proveniencia",
+   "taxa_por_campo": {
+    "data": "44/44",
+    "tipo_item": "44/44",
+    "resultado": "44/44",
+    "relator": "44/44",
+    "votos_presentes": "44/44",
+    "proveniencia": "44/44"
+   },
+   "checagens_extras": [
+    "relator nominal conferido contra assinatura do voto escrito anexo (632 A3 Eliane, A5 Wadih)",
+    "processo no blocao vem DEPOIS do texto da decisao (verificado nos itens 17/18 da 636)",
+    "n decisoes blocao 198/162 confere; +1 em \"processos distintos\" e o numero SEI do rodape"
+   ],
+   "limite": "relator = diretor da area citada no voto (inferido) onde a ata nao traz o relator; a ata nao usa a palavra relator"
   }
  ],
  "invariantes_todos_os_itens": [
@@ -41,5 +64,6 @@
   "no maximo 1 RELATOR por item e relator preenchido => linha RELATOR",
   "nenhum relator em item sem voto",
   "rotulos na lista permitida"
- ]
+ ],
+ "varredura_100pct": "scripts/ans_varredura.py (nao importa o parser): 8459/8459 = 100% -> ans_varredura.json"
 }

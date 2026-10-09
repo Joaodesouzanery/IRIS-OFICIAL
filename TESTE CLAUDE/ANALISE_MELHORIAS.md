@@ -89,3 +89,4 @@ Proveniência: **nominal** (a ata cita o diretor: relator, vista, ausência, ret
 - **ANS:** 85 itens e 195 votos (189 inferidos, 5 REVISAR, 1 nominal); fonte oficial de atas restrita; relator inferido da área proponente (inferência nossa). Auditoria 100% após correção (rodada 1: 93,6%).
 - **ANA:** inventário (12 reuniões 949ª–960ª, 29 pendências com URL) e 0 votos: `arquivos.ana.gov.br` recusado pelo egress do ambiente.
 - Desbloqueios que trariam votos: `arquivos.ana.gov.br` (ANA); `www.ans.gov.br` e `componentes-portal.ans.gov.br` (ANS atas).
+- **ANS refeita com atas oficiais:** 17 atas lidas (17/17/17), 281 itens, 1.260 votos (1.147 inferidos); auditoria 44 itens 100% e varredura 8.459/8.459; limites: nenhuma ata usa 'relator' (inferido pela área em 192 itens), nenhum voto vencido nas atas, 641–643 sem ata publicada.

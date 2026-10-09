@@ -7,7 +7,7 @@
 > | ANPD, ANVISA, ANP, ANTAQ | feito, QA + auditoria | 110 / 5.795 / 695 / 3.413 | unanimidade = voto inferido |
 > | ANATEL | feito, varredura 100% + auditoria | 2.922 (67,5% nominal) | 9 relatores ex-conselheiros sem linha; CD215 sem placar |
 > | ANEEL | feito, varredura 100% + auditoria | 5.023 (31,6% nominal) | atas PDF bloqueadas (Cloudflare): presença inferida; 20 vistas sem pedinte |
-> | ANS | **parcial**: 85 itens, 195 votos (189 inferidos) | só pautas, páginas de deliberações e extratos abertos | pasta de atas "Conteúdo Restrito"; `componentes-portal.ans.gov.br` e `www.ans.gov.br` fora do egress; 12 reuniões sem documento |
+> | ANS | **parcial**: 281 itens, 1.260 votos (1.147 inferidos, 108 nominais, 5 REVISAR; blocões = 2.064 decisões individuais) | 17 atas oficiais lidas | atas 641–643 ainda não publicadas, 644ª em 09/10, extraordinárias 9–11 só por citação; relator inferido pela área em 192 itens; zero voto vencido/divergente nas atas |
 > | ANA | **bloqueada pelo ambiente**: 12 reuniões inventariadas, 0 votos | — | PDFs em `arquivos.ana.gov.br` recusado pelo egress |
 > | ANCINE, ANAC | não iniciadas | — | ANAC por último (captcha) |
 

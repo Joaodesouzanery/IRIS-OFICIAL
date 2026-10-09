@@ -1,13 +1,13 @@
 {
- "total": 28451,
- "ok": 28411,
+ "total": 28459,
+ "ok": 28459,
  "por_checagem": {
   "ddc_citada_em_ata": [
    1819,
    1819
   ],
   "ddc_reuniao = ata": [
-   1818,
+   1819,
    1819
   ],
   "item_no_json": [
@@ -27,20 +27,24 @@
    6857
   ],
   "rotulo do signatario coerente com a DDC": [
-   6832,
+   6857,
    6857
   ],
   "modo = JSON": [
-   1803,
-   1803
+   1810,
+   1810
   ],
   "provenciencia: inferido só com unanimidade/maioria declarada": [
-   1812,
+   1819,
    1819
   ],
   "data do item = data da ata (+-8d)": [
    1819,
    1819
+  ],
+  "numero de DDC conflitante na ata => nenhum voto herdado (so REVISAR/SEM VOTO)": [
+   1,
+   1
   ],
   "ausente => AUSENTE": [
    75,
@@ -55,7 +59,7 @@
    23
   ],
   "presentes da ata = JSON": [
-   16,
+   23,
    23
   ],
   "ausentes da ata = JSON": [
@@ -87,54 +91,5 @@
    1
   ]
  },
- "divergencias": {
-  "ddc_reuniao = ata": [
-   "DDC 528: reuniao do cabecalho 960 x ata 961"
-  ],
-  "rotulo do signatario coerente com a DDC": [
-   "DDC 534: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 534: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 534: Patrícia Barcelos = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 534: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 665: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 665: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 665: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 666: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 666: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 666: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 786: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 786: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 786: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 786: Patrícia Barcelos = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 796: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 796: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 796: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 796: Patrícia Barcelos = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 798: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 798: Vinicius Clay Araújo Gomes = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 798: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 798: Patrícia Barcelos = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 981: Alex Braga Muniz = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 981: Patrícia Barcelos = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])",
-   "DDC 981: Paulo Xavier Alcoforado = ACOMPANHOU (fonte: unan=False maioria=False div=[] abst=[] imp=[])"
-  ],
-  "provenciencia: inferido só com unanimidade/maioria declarada": [
-   "DDC 534: inferido sem unanimidade/maioria",
-   "DDC 665: inferido sem unanimidade/maioria",
-   "DDC 666: inferido sem unanimidade/maioria",
-   "DDC 786: inferido sem unanimidade/maioria",
-   "DDC 796: inferido sem unanimidade/maioria",
-   "DDC 798: inferido sem unanimidade/maioria",
-   "DDC 981: inferido sem unanimidade/maioria"
-  ],
-  "presentes da ata = JSON": [
-   "RD977: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD976: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD975: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD974: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD973: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD972: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']",
-   "RD971: ata ['Alex Braga Muniz', 'Patrícia Barcelos', 'Paulo Xavier Alcoforado'] x JSON ['Alex Braga Muniz', 'Paulo Xavier Alcoforado', 'Patrícia Barcelos', 'Leandro de Sousa Mendes']"
-  ]
- }
+ "divergencias": {}
 }

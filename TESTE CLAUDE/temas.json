@@ -94292,7 +94292,7 @@
   "hash": "43bacd887f637940",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL633|ATA DICOL633-i1|Item 1: APROVAÇÃO das minutas das atas da 1ª Reunião Extraordinária de Diretoria Colegiada, de 26/01/2026; da 632ª Reunião Ordinária de Diretoria Colegiada, de 30/01/2026; e da 2ª Reunião Extraordinária de Di": {
+ "ANS|DICOL632|ATA DICOL632-A1|Item A1: Aprovação das minutas das atas da 631ª Reunião Ordinária de Diretoria Colegiada, de 05/12/2025; e da 15ª Reunião Extraordinária de Diretoria Colegiada, de 19/12/2025.": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -94302,25 +94302,418 @@
    "aprovação de ata"
   ],
   "fonte": "regra",
-  "hash": "300ff085465afb8f",
+  "hash": "71cca13438e7d8a3",
   "tipo_item": "Aprovação de ata"
  },
- "ANS|DICOL633|33910.049000/2025-61|Item 2: APROVAÇÃO da proposta de atualização das Regiões de Saúde utilizadas na regulamentação da saúde suplementar. Processo nº 33910.049000/2025-61.": {
+ "ANS|DICOL632|33910.057923/2025|Item A2: Aprovação d e (i) dispensa da Análise de Impacto Regulatório; e (ii) realização de consulta pública pelo prazo de 45 (quarenta e cinco) dias. Proposta de alteração das Resoluções Normativas nº 516 e 5": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "72b1e0737d6bed98",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33902.010473/2017-67|Item A3: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e a Defensoria Pública do Estado de São Paulo DP/SP.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "8a8d48b0a63e2c44",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.013611/2022-28|Item A4: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Tribunal de Justiça do Estado do Mato grosso TJ/MT.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "e59a98e244f7d225",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.014193/2025-39|Item A5: Aprovação da proposta de celebração de Acordo de Cooperação entre a Agência Nacional de Saúde Suplementar, o Institute For Healthcare Improvement - IHI, o Hospital Alemão Oswaldo Cruz - HAOC e a Socie": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "21712cb63fecc59e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.031840/2025-77|Item B1: Aprovação do Edital Conjunto de Chamamento das Operadoras de Planos Privados de Assistência à Saúde para participação do Programa Agora Tem Especialistas do Ministério da Saúde, na forma do Edital Con": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
-  "tipo_ato": "Outros",
+  "tipo_ato": "Edital / leilão / processo competitivo",
   "microtema_iris": "outros",
-  "area_iris": "cargas_logistica",
+  "area_iris": "outros",
   "confianca": 0.0,
   "conf_tema": 0.0,
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "6287b138331ae03e",
+  "hash": "80534e96ed676c23",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL633|33910.059754/2025-29|Item 3: APROVAÇÃO das propostas normativas que alteram a Resolução Normativa nº 565/2022 e a Instrução Normativa - IN/ANS nº 30/2022. Processo nº 33910.059754/2025-29.": {
+ "ANS|DICOL632|33910.000122/2026-30|Item B2: Aprovação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "3108ecd6e979d40f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.032743/2025-00|Item C1: VOTO Nº 66/2025/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE, em face de PRONTO SOCORRO CONDE DE MOREIRA LIMA, ANS Nº 41.747-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "952cd41568d683ec",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.022917/2025-18|Item C2: VOTO Nº 67/2025/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE, em face de AME VVIDA PLANOS DE SAÚDE INTEGRADO LTDA, ANS Nº 42.335-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "efaac3483f1f3a99",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.043891/2025-41|Item C3: VOTO Nº 69/2025/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE, em face de INFINITY SAÚDE SUPLEMENTAR LTDA, ANS Nº 42.356-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "014d4a6c6153d296",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.035299/2024-95|Item C4: VOTO Nº 32/2025/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE, em face de SANTA CASA DE MISERICÓRDIA DE JUIZ DE FORA, ANS Nº 34.280-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "f2ae1a1b8cda523a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.032222/2024-63|Item C5: VOTO Nº 21/2026/DIPRO, em face de INTEGRA ASSISTÊNCIA MÉDICA S/A, ANS Nº 42.317-3).": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "1e685e0b40d2c9d0",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.054886/2025-64|Item C6: VOTO Nº 51/2026/DIPRO em face de MAIS SAÚDE S/A, ANS Nº 41.951-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "41464469e304042b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.035466/2024-06|Item C7: VOTO Nº 52/2026/DIPRO em face de AMERON - ASSISTÊNCIA MÉDICA RONDÔNIA S/A – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS Nº 32.133-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.93,
+  "conf_tema": 0.93,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao",
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "36e5c23586b31287",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.001389/2025-63|Item C8: VOTO Nº 841/2025/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de UNIMED NOROESTE RS – SOCIEDADE COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA, ANS Nº 35.726-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "2df7f93174c0e995",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.047195/2025-12|Item C9: VOTO Nº 865/2025/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de RMBG PLANO ODONTOLÓGICO LTDA, SEM REGISTRO ANS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "autorizacao de funcionamento"
+  ],
+  "fonte": "regra",
+  "hash": "ee9235e12ee51222",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.000826/2025-21|Item C10: VOTO Nº 830/2025/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de UNIMED SÃO LOURENÇO COOPERATIVA DE TRABALHO MÉDICO, ANS Nº 37.008-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "5e5941041d4b2cdd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.019100/2023-09|Item C11: VOTO Nº 362/2025/ASSNT-DIDES/DIRAD-DIDES/DIDES em face de UNIMED VALE DO JAURU COOPERATIVA DE TRABALHO MÉDICO, ANS Nº 370975.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "4d5fc6b36c9a9ab9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.058511/2025-73|Item D1: Aprovação do plano de ocupação preliminar descrito no Relatório Técnico nº 28/2026, nos termos do Voto nº 38/2026/ASSNT-DIGES/DIRAD-DIGES/DIGES. Compartilhamento de espaços com a RioSaúde.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "b3c35ddccdf5ec68",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|DICOL632-E1|Item E1: Informe sobre a direção técnica da Unimed Ferj.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "rodoviario_passageiros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b5c1fd17c16511ce",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL632|BLOCAO-DICOL632|Blocão (Circuito Deliberativo/AEP): 378 decisões, 378 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "2c57078d92f64b8e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.008498/2023-40|Blocão F.2) Processos de Ressarcimento ao SUS nº 59: Apreciação do voto condutor da DIFIS em processo de Ressarcimento ao SUS, da Operadora FEDERAÇÃO DAS UNIMEDS DO ESTADO DE SÃO PAULO, ANS 319996, pela aprovação ": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "99cbdd96be33cf10",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL632|33910.001389/2025-63|Blocão F.3) Processos de Doença e Lesão Preexistente nº 4: Aprovado por unanimidade, impedida de votar a Diretora Lenise Barcellos de Mello Secchin por ter proferido a decisão recorrida ou o juízo de reconsideração, o v": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "eb514be1afe47082",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|ATA DICOL633-A1|Item A1: Aprovação das minutas das atas da 1ª Reunião Extraordinária de Diretoria Colegiada, de 26/01/2026; da 632ª Reunião Ordinária de Diretoria Colegiada, de 30/01/2026; e da 2ª Reunião Extraordinária de Di": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "cf97a823279b2da6",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL633|33910.049000/2025-61|Item A2: Aprovação da proposta de atualização das Regiões de Saúde utilizadas na regulamentação da saúde suplementar.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.78,
+  "conf_tema": 0.78,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "8db008be2af378d5",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.059754/2025-29|Item A3: Aprovação das propostas normativas que alteram a Resolução Normativa nº 565/2022 e a Instrução Normativa - IN/ANS nº 30/2022.": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
@@ -94335,10 +94728,10 @@
    "norma"
   ],
   "fonte": "regra",
-  "hash": "0770736316d1904f",
+  "hash": "23e4456439da2f2c",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL633|33910.029011/2025-24|Item 4: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
+ "ANS|DICOL633|33910.029011/2025-24|Item A4: Aprovação da proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94350,10 +94743,10 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "9687d343415a5a53",
-  "tipo_item": "Deliberação"
+  "hash": "22d142895507d3f2",
+  "tipo_item": "Retirada de pauta"
  },
- "ANS|DICOL633|33910.029234/2025-91|Item 5: APROVAÇÃO proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS. Processo nº 339": {
+ "ANS|DICOL633|33910.029234/2025-91|Item A5: Aprovação proposta de celebração de Termo de Compromisso de Ajuste de Conduta – TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94365,10 +94758,42 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "5056aa364c6f406c",
+  "hash": "0937e82ae8dcd74a",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL633|33910.036648/2023-13|Item A6: Aprovação da declaração de cumprimento do TCAC 004/2024, celebrado entre a ANS e a operadora CLÍNICA SÃO GABRIEL S/S LTDA.": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "93cb7dc7f2c7a38e",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL633|33910.036648/2023-13|Item 6: APROVAÇÃO da declaração de cumprimento do TCAC 004/2024, celebrado entre a ANS e a operadora CLÍNICA SÃO GABRIEL S/S LTDA. Processo nº 33910.036648/2023-13.": {
+ "ANS|DICOL633|33910.012430/2017-17|Item B1: VOTO Nº 1/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de AMPEME ASSISTÊNCIA MÉDICO HOSPITALAR LTDA – FALIDA, ANS cancelado nº 35.578-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "be816b94844ad8af",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.037378/2020-15|Item B2: VOTO Nº 2/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PAME – ASSOCIAÇÃO DE ASSISTÊNCIA PLENA EM SAÚDE, ANS cancelado nº 34.240-8.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94380,10 +94805,401 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "8c72a769a78b1d02",
+  "hash": "c84b278eddbc24d6",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL633|BLOCAO-DICOL633|Blocão (COREC/SECEX): 209 processos": {
+ "ANS|DICOL633|3910.002012/2024-41|Item B3: VOTO Nº 3/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de EVERCROSS PLANEJAMENTO DE ASSISTÊNCIA MÉDICA LTDA – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 41.017-9.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "f672c8d3cb959d5d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.028529/2025-41|Item B4: VOTO Nº 5/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VISION MED ASSISTÊNCIA MÉDICA LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 40.391-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "0a223165bb6dbaf0",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.029961/2024-78|Item B5: VOTO Nº 70/2025/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de CAIXA DE ASSISTÊNCIA DOS EMPREGADOS DO BANEB, ANS nº 31.558-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "7977fc91d834fdc7",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.036220/2025-24|Item B6: VOTO Nº 1/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PLANODENTE LTDA, ANS nº 41.651-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "3dfba5f52c8296be",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.008503/2021-52|Item B7: VOTO Nº 2/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de G L PARTICIPAÇÕES E ADMINISTRAÇÃO DE BENS LTDA, ANS cancelado nº 42.020-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "10865a5048ac6838",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.023786/2025-96|Item B8: VOTO Nº 3/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de UNIVERSAL PLANO ODONTOLÓGICO LTDA, ANS nº 41.334-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "7352a1674210d586",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.049289/2025-18|Item B9: VOTO Nº 5/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PLANO SIGMA SAÚDE LTDA, ANS nº 42.340-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "9450e2683399aa03",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.009454/2024-18|Item B10: VOTO Nº 6/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ASSOCIAÇÃO BENEFICENTE DOS PROFESSORES PÚBLICOS ATIVOS E INATIVOS DO RIO DE JANEIRO – APPAI, ANS nº 38.254-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "9339545b570cb2e6",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.013727/2024-29|Item B11: VOTO Nº 7/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SAMIG - SERVIÇO DE ASSISTÊNCIA MÉDICA DA ILHA DO GOVERNADOR LTDA, ANS nº 34.016-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "939b46603fbaf706",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.029217/2025-54|Item B12: VOTO Nº 8/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de MEDHEALTH PLANOS DE SAÚDE LTDA, ANS nº 42.136-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "87ea2e6d4d51a6ea",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.001068/2026-40|Item B13: VOTO Nº 9/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VOCÊ TOTAL PLANOS DE SAÚDE LIMITADA, ANS nº 42.248-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "f692f481efee33bb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.042839/2025-78|Item B14: VOTO Nº 10/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SOCIEDADE BENECAP DE ASSISTÊNCIA À SAÚDE, ANS nº 41.589-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "dff90c3b094ff031",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.000601/2017-65|Item B15: VOTO Nº 11/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de E.X.M. BRASIL SAÚDE LTDA, ANS nº 41.628-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "11d1e14a1f879888",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.035295/2024-15|Item B16: VOTO Nº 33/2025/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED NORTE/NORDESTE – FEDERAÇÃO INTERFEDERATIVA DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO, ANS nº 32.421-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "1be31716d68fa676",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.035296/2024-51|Item B17: VOTO Nº 1/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED VERTENTE DO CAPARAÓ - COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 31.789-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "3abf591c44524752",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.061591/2025-44|Item B18: VOTO Nº 01/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de FEDERAÇÃO DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO DO ACRE, AMAPÁ, AMAZONAS, PARÁ, RONDONIA E RORAIMA, ANS Nº 31.397-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "administrativo",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "29b3875c29c7722d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.062509/2025-07|Item B19: VOTO Nº 3/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de ASSOCIAÇÃO ASSISTENCIAL DE SAÚDE SUPLEMENTAR CRUZ AZUL SAÚDE, ANS Nº 41.175-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b"
+  ],
+  "fonte": "regra",
+  "hash": "f4a40b8864a49b5c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.000205/2026-29|Item B20: VOTO Nº 4/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de CAIXA ASSISTENCIAL DOS AUDITORES FISCAIS DA RECEITA FEDERAL DO BRASIL (CAARF) – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 41.665-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b"
+  ],
+  "fonte": "regra",
+  "hash": "b2df159b05e1ebad",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.040373/2022-23|Item B21: VOTO Nº 1/2026/COPAEF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de ASSOCIAÇÃO DE SAÚDE PORTUGUESA DE BENEFICÊNCIA, ANS nº 41.753-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "fe95b1a363ba877d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.000702/2025-46|Item B22: VOTO Nº 2/2026/ASSNT-DIOPE/DIRAD-DIOPE/DIOPE em face de UNIMED DE PARANAVAÍ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 32.086-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "ce47138dde31537b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.018883/2025-67|Item B23: VOTO Nº 107/2026/DIPRO em face de ATITUDE SAÚDE ASSISTÊNCIA MÉDICA LTDA, ANS nº 42.215-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "a5453e5d61fa77bf",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|33910.054886/2025-64|Item C1: VOTO Nº 122/2026/DIPRO, em face de MAIS SAÚDE S/A, ANS nº 41.951-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "rodoviario_passageiros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "408f95ee6c628661",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL633|DICOL633-D1|Item D1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "45036395514f1379",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL633|BLOCAO-DICOL633|Blocão (Circuito Deliberativo/AEP): 209 decisões, 208 processos": {
   "modal": "Saúde suplementar",
   "tema": "Fiscalização e sanções",
   "subtema": "Processo sancionador / multa",
@@ -94397,27 +95213,32 @@
    "sancionador"
   ],
   "fonte": "regra",
-  "hash": "f9f25b8288fd180a",
+  "hash": "10e3734d53a3c9a6",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|ATA DICOL635-i1|Item 1: APROVAÇÃO das minutas das atas da 5ª Reunião Extraordinária de Diretoria Colegiada, de 06/03/2025, e da 634ª Reunião Ordinária de Diretoria Colegiada, de 13/03/2026.": {
-  "modal": "Institucional e administrativo",
-  "tema": "Aprovação de ata",
-  "subtema": "Ata da reunião anterior",
-  "tipo_ato": "Aprovação de ata",
-  "confianca": 1.0,
+ "ANS|DICOL633|33910.031857/2024-43|Blocão E.3) Processos de Doença e Lesão Preexistente nº 1: Aprovado por unanimidade, impedida de votar a Diretora Lenise Barcellos de Mello Secchin por ter proferido a decisão recorrida ou o juízo de reconsideração, o v": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
   "termos": [
-   "aprovação de ata"
+   "recurso",
+   "reconsideracao"
   ],
   "fonte": "regra",
-  "hash": "81ada5e2c9046786",
-  "tipo_item": "Aprovação de ata"
+  "hash": "e91aaafef46aa327",
+  "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|33910.009994/2023-11|Item 2: INFORME sobre o Edital Complementar do Projeto Cuidado Integral à Gestante e ao Neonato – Parto Adequado. Processo nº 33910.009994/2023-11.": {
+ "ANS|DICOL634|33910.060457/2025-26|Item A1: Informe sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao segundo ciclo avaliativo da RN nº 623/2024.": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
-  "tipo_ato": "Edital / leilão / processo competitivo",
+  "tipo_ato": "Outros",
   "microtema_iris": "outros",
   "area_iris": "outros",
   "confianca": 0.8,
@@ -94427,10 +95248,58 @@
    "informe"
   ],
   "fonte": "regra",
-  "hash": "c02210b2e009300e",
+  "hash": "8cbc73267c3ccab9",
   "tipo_item": "Informe"
  },
- "ANS|DICOL635|33910.017005/2022-81|Item 3: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARANÁ - TJ/PR, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.017": {
+ "ANS|DICOL634|33910.060457/2025-26|Item A2: Informe sobre comunicação da decisão de indeferimento do pedido de desistência do pleito de reconsideração formulado pelas empresas do grupo HAPVIDA": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "b91d977d8cee0aa9",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL634|ATA DICOL634-B1|Item B1: Aprovação das minutas das atas da 3ª Reunião Extraordinária de Diretoria Colegiada, de 13/02/2026; da 633ª Reunião Ordinária de Diretoria Colegiada, de 23/02/2026; e da 4ª Reunião Extraordinária de Di": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "9c37f8fa02ebe856",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL634|33910.000171/2025-91|Item B2: Aprovação (i) do Relatório de Avaliação de Resultado Regulatório, (ii) da Nota Técnica de Dispensa de Análise de Impacto Regulatório e (iii) da autorização da abertura de consulta pública. Unificação ": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "73b71e55ab621ceb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33902.096580/2017-74|Item B3: Aprovação do Acordo de Cooperação Técnica entre a ANS e Defensoria Pública do Estado de Alagoas – DP/AL, no âmbito do Programa Parceiros da Cidadania.": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
@@ -94444,10 +95313,359 @@
    "cooperacao"
   ],
   "fonte": "regra",
-  "hash": "7d4ececf7dcdc1ec",
+  "hash": "63a4d16c3b0b5669",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|33910.010071/2026-54|Item 4: APROVAÇÃO da proposta de convocação de Audiência Pública sobre o tema Aprimoramento da supervisão regulatória sobre a governança corporativa no Sistema Unimed. Processo nº 33910.010071/2026-54.": {
+ "ANS|DICOL634|33902.078630/2017-31|Item B4: Aprovação do Acordo de Cooperação Técnica entre a ANS e o Ministério Público do Estado de Pernambuco – MP/PE, no âmbito do Programa Parceiros da Cidadania.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "ab8cf24eb31108dd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.011545/2023-32|Item B5: Aprovação da proposta de Resolução Normativa que dispõe sobre a visita técnico-assistencial e que revoga a IN/DIPRO nº 53/2017.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "21a3fba0912bc883",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.000122/2026-30|Item C1: Deliberação sobre as tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Sa": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "6132e944b3595050",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|DICOL634-D1|Item D1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL634|33910.020758/2025-17|Item E1: VOTO Nº 4/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VISION MED ASSISTÊNCIA MÉDICA LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 40.391-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "e318def034e3e758",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.026261/2019-64|Item E2: VOTO Nº 26/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SEMOP - SERVIÇOS MÉDICOS ODONTOLÓGICOS E OCUPACIONAL DE PITUBA LTDA – FALIDA, sem registro na ANS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "60e7b81a8a331af8",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.001717/2026-11|Item E3: VOTO Nº 13/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ATÍVIA SERVIÇOS DE SAÚDE S/A, ANS nº 32.051-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "978df4d5da97159f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.036923/2025-52|Item E4: VOTO Nº 15/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de WRE BENEFÍCIOS EM SAÚDE LTDA, ANS nº 42.193-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "21e5a2fa75531e03",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.012223/2018-43|Item E5: VOTO Nº 16/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de POPDENTS OPERADORA DE PLANOS ODONTOLÓGICOS EIRELI – EPP, ANS cancelado nº 42.002-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "administrativo",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "cc8a304a74c71207",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.017829/2019-56|Item E6: VOTO Nº 17/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ODONTOPARÁ PLANO DE SAÚDE E CLÍNICA ODONTOLÓGICA LTDA, ANS cancelado nº 41.871-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "administrativo",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "085ecae1294a9964",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.001367/2026-84|Item E7: VOTO Nº 06/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de SANTO ANDRÉ PLANOS DE ASSISTÊNCIA MÉDICA LTDA, ANS nº 40.019-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "f76c51638f7d5a76",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.003054/2025-80|Item E8: VOTO Nº 146/2026/DIPRO em face de UNIMED-SÃO GONÇALO - NITERÓI - SOC.COOP.SERV.MED E HOSP LTDA, ANS nº 34.373-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "97311b68d158376d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.028454/2024-17|Item E9: VOTO Nº 152/2026/DIPRO em face de UNIMED DO SUDOESTE COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 35.037-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "def0740b1b135a1a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.004857/2025-51|Item E10: VOTO Nº 158/2026/DIPRO em face de UNIMED MONTES CLAROS COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 30.405-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "2fe96c9f84c40781",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.047515/2025-26|Item E11: VOTO Nº 2/2026/RST-DIDES/DIDES em face de UNIMED OESTE DO PARÁ - COOPERATIVA DE TRABALHO MÉDICO, ANS nº 36.214-0. Retorno do item após pedido de vistas do Diretor Wadih Nemer Damous Filho na 630ª Reun": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "851eafa038f90978",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|DICOL634-F1|Item F1: Deliberação sobre a distribuição das vagas, considerando o ingresso de novos servidores.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "administrativo",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "servidor"
+  ],
+  "fonte": "regra",
+  "hash": "7ecec537cf83c367",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|BLOCAO-DICOL634|Blocão (Circuito Deliberativo/AEP): 198 decisões, 198 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "766c1672e62ff1f1",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL634|33910.001389/2025-63|Blocão G.3) Processos de Doença e Lesão Preexistente nº 1: Aprovado por unanimidade, impedida de votar a Diretora Lenise Barcellos de Mello Secchin por ter proferido a decisão recorrida ou o juízo de reconsideração, o v": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "administrativo",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "af6e7cfe1bce29c5",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.009994/2023-11|Item A1: Informe sobre o Edital Complementar do Projeto Cuidado Integral à Gestante e ao Neonato – Parto Adequado.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "40e36660b76ff8d4",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL635|ATA DICOL635-B1|Item B1: Aprovação das minutas das atas da 5ª Reunião Extraordinária de Diretoria Colegiada, de 06/03/2025, e da 634ª Reunião Ordinária de Diretoria Colegiada, de 13/03/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "0d6d627b68f11c4f",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL635|33910.017005/2022-81|Item B2: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARANÁ - TJ/PR, no âmbito do Programa Parceiros da Cidadania.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "5fdb71666eb6cdb5",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.010071/2026-54|Item C1: Aprovação da proposta de convocação de Audiência Pública sobre o tema Aprimoramento da supervisão regulatória sobre a governança corporativa no Sistema Unimed.": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
@@ -94461,18 +95679,18 @@
    "audiencia publica"
   ],
   "fonte": "regra",
-  "hash": "15a6831fa9292db5",
-  "tipo_item": "Deliberação"
+  "hash": "2c6836137e1c59b1",
+  "tipo_item": "Vista"
  },
- "ANS|DICOL635|33910.006470/2024-59|Item 5: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema": {
+ "ANS|DICOL635|33910.006470/2024-59|Item C2: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Outros",
   "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.97,
-  "conf_tema": 0.97,
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.82,
+  "conf_tema": 0.82,
   "conf_modal": 1.0,
   "termos": [
    "\\brol\\b",
@@ -94481,10 +95699,10 @@
    "tecnologia em saude"
   ],
   "fonte": "regra",
-  "hash": "1447abab62e352ce",
+  "hash": "15de95707384c7fa",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|33910.000998/2026-86|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF. Aprovação da proposta de R": {
+ "ANS|DICOL635|33910.000998/2026-86|Item C3: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF. Aprovação da proposta de R": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
@@ -94500,15 +95718,15 @@
    "incorporacao"
   ],
   "fonte": "regra",
-  "hash": "3371d41b87a4ba96",
+  "hash": "ce3e7221cc1d33fd",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|33910.008417/2026-54|Item 7: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.008417/2026-54.": {
+ "ANS|DICOL635|33910.008417/2026-54|Item C4: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública.": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
+  "microtema_iris": "seguranca",
   "area_iris": "governanca_regulatoria",
   "confianca": 0.55,
   "conf_tema": 0.55,
@@ -94518,29 +95736,393 @@
    "procedimento"
   ],
   "fonte": "regra",
-  "hash": "cd713b999f7e4c8d",
+  "hash": "e1f5c62b43c78a3b",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|33910.048937/2025-19|Item 8: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 175. Apr": {
+ "ANS|DICOL635|33910.048937/2025-19|Item C5: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 175. Apr": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
   "tipo_ato": "Audiência / consulta pública",
   "microtema_iris": "outros",
   "area_iris": "governanca_regulatoria",
-  "confianca": 0.51,
-  "conf_tema": 0.51,
+  "confianca": 0.59,
+  "conf_tema": 0.59,
   "conf_modal": 1.0,
   "termos": [
    "resolucao normativa",
    "consulta publica",
+   "audiencia publica",
    "norma"
   ],
   "fonte": "regra",
-  "hash": "fe975435f65e9fc9",
+  "hash": "f28d06c59904b0d6",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL635|BLOCAO-DICOL635|Blocão (COREC/SECEX): 212 processos": {
+ "ANS|DICOL635|DICOL635-D1|Item D1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL635|33902.477826/2016-24|Item E1: VOTO Nº 7/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de MASSA FALIDA DE VIVA PLANOS DE SAÚDE LTDA, ANS cancelado nº 41.279-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "8ce9094b7f0d7554",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.020758/2025-17|Item E2: VOTO Nº 8/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VISION MED ASSISTÊNCIA MÉDICA LTDA – EM LIQUIDAÇÃO EXTRAJUDICIAL (ANS cancelado nº 40.391-1).": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "4deaaf4f78ee54f9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.003185/2026-48|Item E3: VOTO Nº 18/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de BRASIL ODONTO OPERADORAS DE PLANO ODONTOLÓGICO LTDA (ANS nº 42.156-1).": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "d8e729806cd3b74c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.010304/2023-76|Item E4: VOTO Nº 20/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SUA SAÚDE ADMINISTRADORA DE BENEFÍCIOS LTDA-ME, ANS cancelado nº 42.082-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "administrativo",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "2547578b3ee1ad4d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.005675/2026-89|Item E5: VOTO Nº 21/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de MAXIMED PLANOS DE SAÚDE LTDA, ANS nº 42.419-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "fcdea7d974767adc",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.004807/2026-55|Item E6: VOTO Nº 7/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de ASSOCIAÇÃO VALEPARAIBANA DE ASSISTÊNCIA MÉDICA POLICIAL LTDA – AVAMP, ANS nº 41.263-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "1f7025898f6d11a4",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.001527/2026-95|Item E7: VOTO Nº 8/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED CUIABÁ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 34.208-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "80a0d3d482fa37cd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.006890/2026-05|Item E8: VOTO Nº 9/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de FEDERAÇÃO DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO DO ACRE, AMAPÁ, AMAZONAS, PARÁ, RONDONIA E RORAIMA, ANS nº 31.397-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "a53090ac1a39a8e2",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.029931/2019-02|Item E9: VOTO Nº 10/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED TAUBATÉ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 36.328-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "2a994a3b481e8fac",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.004881/2026-71|Item E10: VOTO Nº 11/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED NORTE/NORDESTE - FEDERAÇÃO INTERFEDERATIVA DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO - EM RECUPERAÇÃO JUDICIAL, ANS Nº 32.421": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b"
+  ],
+  "fonte": "regra",
+  "hash": "727191a3022fdf34",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.030357/2025-75|Item E11: VOTO Nº 1/2026/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de AMESC – ASSOCIAÇÃO MÉDICA ESPÍRITA CRISTÃ, ANS nº 40.108-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "2e922ef9f43d1aa3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.003237/2025-03|Item E12: VOTO Nº 143/2026/DIPRO em face de UNIMED VERTENTE DO CAPARAÓ - COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 31.789-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "5f46f94b01e4a398",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.003622/2026-23|Item E13: VOTO Nº 250/2026/DIPRO em face de MAIS SAÚDE S/A, ANS nº 41.951-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "7054984bfce04f56",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.007940/2025-82|Item E14: VOTO Nº 251/2026/DIPRO em face de ÚNICA ASSISTÊNCIA MÉDICA LTDA, ANS nº 42.194-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "be3e7e98fbf04f3f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.004840/2025-02|Item E16: VOTO Nº 253/2026/DIPRO em face de IDEAL SAÚDE ASSISTÊNCIA MÉDICA AMBULATORIAL LTDA, ANS nº 42.075-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.58,
+  "conf_tema": 0.58,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "748190af2d6c8bb7",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.023871/2024-73|Item E16bis: VOTO Nº 44/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de ÍNTEGRA ASSISTÊNCIA MÉDICA S/A, ANS nº 42.317-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "d515f10ebb83ef7a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.025946/2025-31|Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "149e28537bcf4bfd",
+  "tipo_item": "Vista"
+ },
+ "ANS|DICOL635|33910.060398/2025-96|Item E18: VOTO Nº 138/2026/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de BR SAÚDE S.A., sem registro ANS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.63,
+  "conf_tema": 0.63,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso",
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "3d50988c1fa1946a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|DICOL635-F1|Item F1: Informe e discussão sobre Cartões de Desconto.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "4d18c559b93744d8",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL635|33910.003309/2025-12|Item G1: VOTO Nº 279/2026/DIPRO em face de FEDERAÇÃO DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO DO ACRE, AMAPÁ, AMAZONAS, PARÁ, RONDONIA E RORAIMA, ANS o nº 31.397-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "58a744eb48d716be",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|33910.035558/2025-69|Item G2: Deliberação sobre o Termo de Compromisso a ser celebrado entre o Ministério Público do Estado do Rio de Janeiro e a Unimed do Brasil, e como intervenientes a Unimed do Estado do Rio de Janeiro - Feder": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "d1f462419bc7ddaf",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL635|BLOCAO-DICOL635|Blocão (Circuito Deliberativo/AEP): 212 decisões, 211 processos": {
   "modal": "Saúde suplementar",
   "tema": "Fiscalização e sanções",
   "subtema": "Processo sancionador / multa",
@@ -94554,10 +96136,10 @@
    "sancionador"
   ],
   "fonte": "regra",
-  "hash": "b2f10c4423d89d16",
+  "hash": "a92153c757b4e2a9",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL636|ATA DICOL636-i1|Item 1: APROVAÇÃO da minuta da ata da 635ª Reunião Ordinária de Diretoria Colegiada, de 06/04/2026.": {
+ "ANS|DICOL636|ATA DICOL636-A1|Item A1: Aprovação da minuta da ata da 635ª Reunião Ordinária de Diretoria Colegiada, de 06/04/2026.": {
   "modal": "Institucional e administrativo",
   "tema": "Aprovação de ata",
   "subtema": "Ata da reunião anterior",
@@ -94567,10 +96149,10 @@
    "aprovação de ata"
   ],
   "fonte": "regra",
-  "hash": "f0ccd9a112370a1d",
+  "hash": "c10f1d3fe38d1169",
   "tipo_item": "Aprovação de ata"
  },
- "ANS|DICOL636|33910.000998/2026-86|Item extrapauta (só no extrato): Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 190.": {
+ "ANS|DICOL636|33910.000998/2026-86|Item B1: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 190.": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
@@ -94588,7 +96170,295 @@
   "hash": "66d4b1ef54a102ff",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL636|BLOCAO-DICOL636|Blocão (COREC/SECEX): 219 processos": {
+ "ANS|DICOL636|33910.000122/2026-30|Item B2: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 190.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "66d4b1ef54a102ff",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|DICOL636-C1|Item C1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL636|33910.011681/2026-75|Item D1: Aprovação da Nota Técnica metodológica que norteará as amostras mensais para análises individualizadas no âmbito da NIP. Art. 13 da RN nº 483/22 com redação dada pela RN nº 657/25 a vigorar a partir d": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "ef3cd247d1fdf9f5",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.005683/2026-25|Item D2: VOTO Nº 23/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de AMPLA PLANOS DE SAÚDE LTDA, ANS nº 42.272-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "4ddd1e7592b0d4ed",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33902.006252/2019-56|Item D3: VOTO Nº 25/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de CLINIPREV SAÚDE LTDA, ANS cancelado nº 41.541-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "3ec55ebcf5e80174",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.010372/2026-88|Item D4: VOTO Nº 27/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED VALE DO JAURU COOPERATIVA DE TRABALHO MÉDICO, ANS nº 37.097-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "bd3f2bf1384e1bb9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.005423/2024-98|Item D5: VOTO Nº 28/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ODONTO MAIS BRASIL OPERADORA DE PLANO ODONTOLÓGICO LTDA, ANS nº 42.285-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "8ef7dd6d8ef7bbdd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.022023/2025-28|Item D6: VOTO Nº 29/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SORRISO STUDIO PLANO DE SAÚDE LTDA, ANS nº 42.147-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "efd749bd58d51b28",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.022917/2025-18|Item D7: VOTO Nº 32/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de AME VVIDA PLANOS DE SAÚDE INTEGRADO LTDA, ANS nº 42.335-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "2945e6c5283df2e7",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.007201/2025-91|Item D8: VOTO Nº 2/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED PETRÓPOLIS - RJ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 32.399-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "aea833a63829b4ee",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.007206/2025-13|Item D9: VOTO Nº 3/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED MONTES CLAROS - COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 30.405-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "19caac5429fe04bb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.008160/2026-31|Item D10: VOTO Nº 12/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de ASSOCIAÇÃO ASSISTENCIAL DE SAÚDE SUPLEMENTAR CRUZ AZUL SAÚDE, ANS nº 41.175-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "d2d368914b98f575",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.009734/2026-98|Item D11: VOTO Nº 14/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de SANTA CASA DE MISERICÓRDIA DE JUIZ DE FORA, ANS nº 34.280-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "ab57b1e9c09079d9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.010557/2026-92|Item D12: VOTO Nº 16/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED FRUTAL COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 37.156-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "8a14bb97afca95cf",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.040907/2023-01|Item D13: VOTO Nº 3/2026/COPAEF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de MAIS SAÚDE S/A, ANS Nº 41.951-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "35614734963b95e8",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.010764/2025-66|Item D14: VOTO Nº 77/2026/DIPRO em face de UNIMED COSTA VERDE RJ, ANS nº 31.114-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "16c7c8f5a6563b0d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|33910.010285/2026-21|Item E1: Aprovação do índice máximo de reajuste para as contraprestações pecuniárias dos planos privados de assistência suplementar à saúde, individuais e familiares regulamentados de assistência médico-hospit": {
+  "modal": "Saúde suplementar",
+  "tema": "Reajustes e preços",
+  "subtema": "Reajuste de planos / precificação",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "reajuste"
+  ],
+  "fonte": "regra",
+  "hash": "83a2f1801ef15f29",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL636|BLOCAO-DICOL636|Blocão (Circuito Deliberativo/AEP): 219 decisões, 219 processos": {
   "modal": "Saúde suplementar",
   "tema": "Fiscalização e sanções",
   "subtema": "Processo sancionador / multa",
@@ -94602,23 +96472,70 @@
    "sancionador"
   ],
   "fonte": "regra",
-  "hash": "96358326c625f8c8",
+  "hash": "995f4084d7133559",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|ATA DICOL637-i1|Item 1: APROVAÇÃO das minutas das atas da 6ª Reunião Extraordinária de Diretoria Colegiada, de 17/04/2026, e da 636ª Reunião Ordinária de Diretoria Colegiada, de 24/04/2026.": {
-  "modal": "Institucional e administrativo",
-  "tema": "Aprovação de ata",
-  "subtema": "Ata da reunião anterior",
-  "tipo_ato": "Aprovação de ata",
-  "confianca": 1.0,
-  "termos": [
-   "aprovação de ata"
-  ],
+ "ANS|DICOL636|33910.028066/2023-55|Blocão F.1) Processos Sancionadores nº 3: Item retirado de pauta pela Diretora Lenise Barcellos de Mello Secchin. Processo: 33910.028066/2023-55": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
   "fonte": "regra",
-  "hash": "265b08d511eec7cf",
-  "tipo_item": "Aprovação de ata"
+  "hash": "40375cd5290cce27",
+  "tipo_item": "Retirada de pauta"
  },
- "ANS|DICOL637|33910.014193/2025-39|Item 2: INFORME sobre o 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR). Processo nº 33910.014193/2025-39.": {
+ "ANS|DICOL636|33910.027527/2023-72|Blocão F.1) Processos Sancionadores nº 9: Item retirado de pauta pela Diretora Lenise Barcellos de Mello Secchin. Processo: 33910.027527/2023-72": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "76ea1ec2c17ce0e7",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL636|33910.005490/2024-11|Blocão F.1) Processos Sancionadores nº 18: Item retirado de pauta pela Diretora Lenise Barcellos de Mello Secchin. Processo: 33910.005490/2024-11": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "b43633260d15691d",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL636|33910.010121/2023-51|Blocão F.1) Processos Sancionadores nº 20: Item retirado de pauta pela Diretora Lenise Barcellos de Mello Secchin. Processo: 33910.010121/2023-51.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "52f3551513279d32",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL637|33910.014193/2025-39|Item A1: Informe sobre o 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR).": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
@@ -94632,10 +96549,10 @@
    "informe"
   ],
   "fonte": "regra",
-  "hash": "07db128f67f6d10d",
+  "hash": "90838fc6828e866b",
   "tipo_item": "Informe"
  },
- "ANS|DICOL637|DICOL637-ITEM3|Item 3: APRECIAÇÃO do Relatório Conclusivo nº 2/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO AUXILIADORA DAS CLASSES LABORIOSAS. Processo nº 33910.016100/2024- 20.": {
+ "ANS|DICOL637|33910.016100/2024-20|Item B1: Apreciação do Relatório Conclusivo nº 2/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO AUXILIADORA DAS CLASSES LABORIOSAS.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94647,10 +96564,10 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "372786e1c56d1728",
+  "hash": "5f9af38ff2754732",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.023676/2023-62|Item 4: APRECIAÇÃO do Relatório Conclusivo nº 3/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO DE SAÚDE DOS POLICIAIS E BOMBEIROS MILITARES DO ESPÍRITO SANTO - ASPBMES. Processo nº 33910.023676/2023-62.": {
+ "ANS|DICOL637|33910.023676/2023-62|Item B2: Apreciação do Relatório Conclusivo nº 3/2026/COINQ/SECEX/PRESI da ex- operadora ASSOCIAÇÃO DE SAÚDE DOS POLICIAIS E BOMBEIROS MILITARES DO ESPÍRITO SANTO - ASPBMES.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94662,44 +96579,55 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "5b11abd086d722ef",
+  "hash": "f9570da480f0d66d",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.011437/2026-11|Item 5: APROVAÇÃO da proposta de interrupção temporária do processamento do Mapeamento do Risco Assistencial em razão de sua reestruturação metodológica. Processo nº 33910.011437/2026-11.": {
+ "ANS|DICOL637|ATA DICOL637-C1|Item C1: Aprovação das minutas das atas da 6ª Reunião Extraordinária de Diretoria Colegiada, de 17/04/2026, e da 636ª Reunião Ordinária de Diretoria Colegiada, de 24/04/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "9f827458178b5705",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL637|33910.011437/2026-11|Item C2: Aprovação da proposta de interrupção temporária do processamento do Programa de Mapeamento do Risco Assistencial, durante o período de reestruturação metodológica decorrente da substituição do SIP pel": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
   "tipo_ato": "Outros",
-  "microtema_iris": "seguranca",
+  "microtema_iris": "pessoal",
   "area_iris": "outros",
   "confianca": 0.0,
   "conf_tema": 0.0,
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "c0c0be5a75033815",
+  "hash": "601416aeb9c7009b",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33902.461712/2016-62|Item 6: APROVAÇÃO da Análise de Resultado Regulatório – ARR referente à Resolução Normativa - RN nº 438/2018 e da autorização para realização de Audiência Pública. Processo nº 33902.461712/2016-62.": {
+ "ANS|DICOL637|33902.461712/2016-62|Item C3: Aprovação do Voto nº 381/2026/DIPRO (i) pela apreciação do Relatório de Análise de Resultado Regulatório; e ( i i ) pela autorização para realização da Audiência Pública em data a ser designada.": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
   "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
+  "microtema_iris": "pessoal",
   "area_iris": "governanca_regulatoria",
-  "confianca": 0.95,
-  "conf_tema": 0.95,
+  "confianca": 0.55,
+  "conf_tema": 0.55,
   "conf_modal": 1.0,
   "termos": [
-   "resolucao normativa",
-   "audiencia publica",
-   "norma"
+   "audiencia publica"
   ],
   "fonte": "regra",
-  "hash": "08e7ecf2e4decb6a",
+  "hash": "2bbc2d8fef68191b",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.040748/2023-36|Item 7: APROVAÇÃO da proposta de Resolução Administrativa que disciplina a Tomada de Contas Especial - atendimento à Auditoria Interna da ANS. Processo nº 33910.040748/2023-36.": {
+ "ANS|DICOL637|33910.040748/2023-36|Item C4: Aprovação da proposta de Resolução Administrativa que disciplina a Tomada de Contas Especial - atendimento à Auditoria Interna da ANS.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94711,25 +96639,25 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "596889dc500df77e",
+  "hash": "ab8b3467ef50ffa3",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.048330/2025-39|Item 8: APROVAÇÃO da proposta de Resolução Regimental que altera a RR nº 21/2022 e seus anexos, em consonância com o Decreto nº 12.934/2026. Processo nº 33910.048330/2025-39.": {
+ "ANS|DICOL637|33910.048330/2025-39|Item C5: Aprovação da proposta da proposta de Resolução Regimental que altera a RR nº 21/2022 e seus anexos, em consonância com o Decreto nº 12.934/2026.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
   "tipo_ato": "Resolução / norma",
-  "microtema_iris": "outros",
+  "microtema_iris": "adimplencia",
   "area_iris": "governanca_regulatoria",
   "confianca": 0.0,
   "conf_tema": 0.0,
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "8760d449c7c64797",
+  "hash": "91a27f1fd30d7fd0",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.035871/2023-35|Item 9: APROVAÇÃO da proposta de declaração de cumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 1/2024 pela empresa PRESERVE SAÚDE ASSISTÊNCIA MÉDICA LTDA, registro ANS sob o nº 42.295-9. Pr": {
+ "ANS|DICOL637|33910.035871/2023-35|Item C6: Aprovação da proposta de declaração de cumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 1/2024 pela empresa PRESERVE SAÚDE ASSISTÊNCIA MÉDICA LTDA, registro ANS sob o nº 42.295-9.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94741,10 +96669,10 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "f51239bbd6aa26bc",
+  "hash": "2d2ae2f808481944",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.029234/2025-91|Item 10: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta -TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE- ES, sem registro na ANS, inscrita no ": {
+ "ANS|DICOL637|33910.029234/2025-91|Item C7: Aprovação da proposta de celebração de Termo de Compromisso de Ajuste de Conduta -TCAC entre a ANS e a ASSOCIAÇÃO COMERCIAL E EMPRESARIAL DO ESPÍRITO SANTO – ACE-ES, sem registro na ANS, inscrita no C": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94756,10 +96684,10 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "d5b0cc5402501b10",
+  "hash": "a0a34b3f1ec36c82",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.029011/2025-24|Item 11: APROVAÇÃO da proposta de celebração de Termo de Compromisso de Ajuste de Conduta (TCAC) entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
+ "ANS|DICOL637|33910.029011/2025-24|Item C8: Aprovação da proposta de celebração de Termo de Compromisso de Ajuste de Conduta (TCAC) entre a ANS e a ASSOCIAÇÃO DAS EMPRESAS E FUNCIONÁRIOS DO COMÉRCIO DE BENS E SERVIÇOS NO ESTADO DO ESPÍRITO SANT": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -94771,10 +96699,10 @@
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "3d36067ed1fdf1d6",
+  "hash": "1980740852d2be43",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.030610/2025-91|Item 12: DELIBERAÇÃO sobre o recurso administrativo interposto por EDWARDS LIFESCIENCES COMÉRCIO DE PRODUTOS MÉDICO-CIRÚRGICOS LTDA quanto à não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº": {
+ "ANS|DICOL637|33910.030610/2025-91|Item D1: Deliberação sobre o recurso administrativo interposto por EDWARDS LIFESCIENCES COMÉRCIO DE PRODUTOS MÉDICO-CIRÚRGICOS LTDA quanto à não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
@@ -94790,16 +96718,16 @@
    "incorporacao"
   ],
   "fonte": "regra",
-  "hash": "3d3fdec5fa8b3484",
+  "hash": "a385198102468bd0",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.000122/2026-30|Item 13: DELIBERAÇÃO sobre tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde –": {
+ "ANS|DICOL637|33910.000122/2026-30|Item D2: Deliberação sobre tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde –": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Outros",
   "microtema_iris": "outros",
-  "area_iris": "outros",
+  "area_iris": "governanca_regulatoria",
   "confianca": 0.97,
   "conf_tema": 0.97,
   "conf_modal": 1.0,
@@ -94810,28 +96738,28 @@
    "tecnologia em saude"
   ],
   "fonte": "regra",
-  "hash": "435cd2dc14e25a68",
+  "hash": "8a7ffc72b69da372",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.003276/2026-83|Item 14: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 193. Pro": {
+ "ANS|DICOL637|33910.003276/2026-83|Item D3: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 193.": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Audiência / consulta pública",
   "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.7,
-  "conf_tema": 0.7,
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
   "conf_modal": 1.0,
   "termos": [
    "\\brol\\b",
    "procedimento"
   ],
   "fonte": "regra",
-  "hash": "31f515a72f002850",
+  "hash": "a00c8365cc57be7b",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|33910.000171/2025-91|Item 15: APROVAÇÃO da prorrogação do prazo da Consulta Pública nº 170, que trata da proposta de nova RN sobre Contratualização entre operadoras de planos privados de assistência à saúde e prestadores de serviç": {
+ "ANS|DICOL637|33910.000171/2025-91|Item D4: Aprovação da prorrogação do prazo da Consulta Pública nº 170, que trata da proposta de nova RN sobre Contratualização entre operadoras de planos privados de assistência à saúde e prestadores de serviç": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
@@ -94845,40 +96773,10 @@
    "consulta publica"
   ],
   "fonte": "regra",
-  "hash": "11cc1163d03def61",
+  "hash": "e394c945db84ab7a",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL637|BLOCAO-DICOL637|Blocão (COREC/SECEX): 204 processos": {
-  "modal": "Saúde suplementar",
-  "tema": "Fiscalização e sanções",
-  "subtema": "Processo sancionador / multa",
-  "tipo_ato": "Auto de infração / sanção",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.88,
-  "conf_tema": 0.88,
-  "conf_modal": 1.0,
-  "termos": [
-   "sancionador"
-  ],
-  "fonte": "regra",
-  "hash": "7b15cc66fc33fecd",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|ATA DICOL638-i1|Item 1: APROVAÇÃO da minuta da ata da 7ª Reunião Extraordinária de Diretoria Colegiada, de 08/05/2026, e da minuta da ata da 637ª Reunião Ordinária de Diretoria Colegiada, de 15/05/2026.": {
-  "modal": "Institucional e administrativo",
-  "tema": "Aprovação de ata",
-  "subtema": "Ata da reunião anterior",
-  "tipo_ato": "Aprovação de ata",
-  "confianca": 1.0,
-  "termos": [
-   "aprovação de ata"
-  ],
-  "fonte": "regra",
-  "hash": "43ae694b56c051db",
-  "tipo_item": "Aprovação de ata"
- },
- "ANS|DICOL638|33910.060457/2025-26|Item 2: INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao terceiro ciclo avaliativo da RN nº 623/2024. Processo nº 33910.060457/2025-26.": {
+ "ANS|DICOL637|DICOL637-E1|Item E1: Informe sobre a direção técnica na Unimed FERJ.": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
@@ -94892,10 +96790,244 @@
    "informe"
   ],
   "fonte": "regra",
-  "hash": "2ac6d9283dc59016",
+  "hash": "b23e6b94df51c89b",
   "tipo_item": "Informe"
  },
- "ANS|DICOL638|33910.015974/2026-21|Item 3: APRECIAÇÃO da proposta de Resolução Normativa que altera a RN nº 585/2023 e da proposta de Instrução Normativa que altera a IN/ANS nº 28/2022. Sistema de Alteração de Produtos no Registro de Planos de": {
+ "ANS|DICOL637|DICOL637-E2|Item E2: Informe sobre os Termos de Compromisso com as Administradoras de Benefícios para fins fiscalizatórios após vigência da RN nº 656/2025 e da RN nº 657/2025.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "55d0e70c9a1bf841",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL637|33910.032260/2022-54|Item F1: VOTO Nº 31/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VIDAPLAN SAÚDE LTDA – EPP, ANS nº 34.444-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "ed2d3d2dbd43f215",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.011256/2026-86|Item F2: VOTO Nº 33/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PRESERVE SAÚDE ASSISTÊNCIA MÉDICA LTDA, ANS nº 42.295-9.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "2f6dff820904e631",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.012300/2026-75|Item F3: VOTO Nº 38/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de CENTRAL OPERADORA DE PLANOS DE SAÚDE NORTE-NORDESTE LTDA, ANS nº 41.709-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "1f253814c598e120",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.058850/2025-50|Item F4: VOTO Nº 35/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de OPERADORA DE PLANOS ODONTOLÓGICOS ODONCLÍNICA LTDA, ANS nº 42.074-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "ed767651f98aa46c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.047515/2025-26|Item F5: VOTO Nº 36/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED OESTE DO PARÁ - COOPERATIVA DE TRABALHO MÉDICO, ANS nº 36.214-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.62,
+  "conf_tema": 0.62,
+  "conf_modal": 1.0,
+  "termos": [
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "a47df0137e3ac1dd",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.004811/2026-13|Item F6: VOTO Nº 15/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED VERTENTE DO CAPARAÓ - COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 31.789-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b"
+  ],
+  "fonte": "regra",
+  "hash": "a89aa26981de806d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.019820/2025-28|Item G1: VOTO Nº 388/2026/DIPRO em face de AMEPLAN ASSISTÊNCIA MÉDICA PLANEJADA LTDA, ANS nº 39.473-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "81fac1e1951c5ac9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.034716/2024-82|Item G2: Aprovação do Voto nº 8/2026/PRESI/ANS – Unimed do Estado do Rio de Janeiro – Federação Estadual das Cooperativas Médicas (Unimed FERJ) e Unimed-Rio Cooperativa de Trabalho Médico do Rio de Janeiro.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "34bfa6a061ddb8a7",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL637|33910.012527/2026-11|Item G3: Aprovação do afastamento do país do Diretor-Presidente da ANS. Participação no XIV Fórum de Lisboa, Portugal, no período de 30 de maio de 2026 a 06 de junho de 2026.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "51375217a0166c4d",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.000519/2025-41|Item G4: Deliberação sobre Recurso Administrativo em PAD.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "476d90878ad53d95",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|BLOCAO-DICOL637|Blocão (Circuito Deliberativo/AEP): 204 decisões, 203 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "76df5a091f5c476e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL637|33910.001389/2025-63|Blocão H.3) Processo de Doença e lesão Preexistente nº 1: Aprovado por unanimidade, impedidas de votar a Diretora Lenise Barcellos de Mello Secchin e a Diretora Carla de Figueiredo Soares, o voto condutor da DIOPE no p": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "administrativo",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "d7e23ab23eafcb4c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.060457/2025-26|Item A1: Informe sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao terceiro ciclo avaliativo da RN nº 623/2024.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "0a28f7aa59173d67",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL638|33910.015974/2026-21|Item B1: Apreciação da proposta de Resolução Normativa que altera a RN nº 585/2023 e da proposta de Instrução Normativa que altera a IN/ANS nº 28/2022. Sistema de Alteração de Produtos no Registro de Planos de": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
@@ -94910,10 +97042,23 @@
    "norma"
   ],
   "fonte": "regra",
-  "hash": "de0ebd23a7dec90a",
+  "hash": "f1a64d1e128bda2a",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL638|33910.003953/2021-59|Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARÁ - TJ/PA, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.00395": {
+ "ANS|DICOL638|ATA DICOL638-C1|Item C1: Aprovação das minutas das atas da 7ª Reunião Extraordinária de Diretoria Colegiada, de 08/05/2026, e da 637ª Reunião Ordinária de Diretoria Colegiada, de 15/05/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "498dcb3078d15dda",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL638|33910.003953/2021-59|Item C2: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO PARÁ - TJ/PA, no âmbito do Programa Parceiros da Cidadania.": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
@@ -94927,196 +97072,29 @@
    "cooperacao"
   ],
   "fonte": "regra",
-  "hash": "af6124d723cdd9b1",
+  "hash": "d97c765f6ab368e4",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL638|33910.012596/2026-24|Item 5: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública. Apreciação da Nota Técnica de Recomendação Preliminar – NTRF referente à UAT nº 20": {
+ "ANS|DICOL638|33910.012596/2026-24|Item D1: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública. Apreciação da Nota Técnica de Recomendação Preliminar – NTRF referente à UAT nº 20": {
   "modal": "Saúde suplementar",
-  "tema": "Rol e cobertura assistencial",
-  "subtema": "Rol de procedimentos e eventos em saúde",
-  "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.7,
-  "conf_tema": 0.7,
-  "conf_modal": 1.0,
-  "termos": [
-   "\\brol\\b",
-   "procedimento"
-  ],
-  "fonte": "regra",
-  "hash": "def56ec58367b93f",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|33910.048937/2025-19|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 171. Pro": {
-  "modal": "Saúde suplementar",
-  "tema": "Rol e cobertura assistencial",
-  "subtema": "Rol de procedimentos e eventos em saúde",
-  "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.7,
-  "conf_tema": 0.7,
-  "conf_modal": 1.0,
-  "termos": [
-   "\\brol\\b",
-   "procedimento"
-  ],
-  "fonte": "regra",
-  "hash": "eee7997d63979262",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|33910.008417/2026-54|Item 7: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 183 e ": {
-  "modal": "Saúde suplementar",
-  "tema": "Rol e cobertura assistencial",
-  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
   "tipo_ato": "Audiência / consulta pública",
   "microtema_iris": "outros",
   "area_iris": "governanca_regulatoria",
-  "confianca": 0.7,
-  "conf_tema": 0.7,
+  "confianca": 0.51,
+  "conf_tema": 0.51,
   "conf_modal": 1.0,
   "termos": [
-   "\\brol\\b",
-   "procedimento"
-  ],
-  "fonte": "regra",
-  "hash": "dbf97978f73d9158",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|33910.000122/2026-30|Item 8: DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
-  "modal": "Saúde suplementar",
-  "tema": "Rol e cobertura assistencial",
-  "subtema": "Rol de procedimentos e eventos em saúde",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.96,
-  "conf_tema": 0.96,
-  "conf_modal": 1.0,
-  "termos": [
-   "\\brol\\b",
-   "procedimento",
-   "incorporacao"
-  ],
-  "fonte": "regra",
-  "hash": "66e9dd688b3b6765",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|BLOCAO-DICOL638|Blocão (COREC/SECEX): 179 processos": {
-  "modal": "Saúde suplementar",
-  "tema": "Fiscalização e sanções",
-  "subtema": "Processo sancionador / multa",
-  "tipo_ato": "Auto de infração / sanção",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.88,
-  "conf_tema": 0.88,
-  "conf_modal": 1.0,
-  "termos": [
-   "sancionador"
-  ],
-  "fonte": "regra",
-  "hash": "182cb492ae1411a1",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL638|BLOCAO-DICOL638-RETIRADO|Blocão: 1 processo(s) retirado(s) de pauta (não identificado(s) na fonte)": {
-  "modal": "Saúde suplementar",
-  "tema": "Outros",
-  "subtema": "Não classificado",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.0,
-  "conf_tema": 0.0,
-  "conf_modal": 1.0,
-  "termos": [],
-  "fonte": "regra",
-  "hash": "078d454b81f483af",
-  "tipo_item": "Retirada de pauta"
- },
- "ANS|DICOL640|ATA DICOL640-i1|Item 1: APROVAÇÃO da minuta da ata da 639ª Reunião Ordinária de Diretoria Colegiada, de 26/06/206.": {
-  "modal": "Institucional e administrativo",
-  "tema": "Aprovação de ata",
-  "subtema": "Ata da reunião anterior",
-  "tipo_ato": "Aprovação de ata",
-  "confianca": 1.0,
-  "termos": [
-   "aprovação de ata"
-  ],
-  "fonte": "regra",
-  "hash": "3680d45980da3486",
-  "tipo_item": "Aprovação de ata"
- },
- "ANS|DICOL640|33910.030581/2020-52|Item 2: APROVAÇÃO de relatório técnico que trata da definição dos seis trimestres que compõem o período para o cálculo do Fator Individual de PEONA SUS e do Fator Teto de PEONA SUS. Processo nº 33910.030581/2": {
-  "modal": "Saúde suplementar",
-  "tema": "Gestão institucional e administrativa",
-  "subtema": "Estrutura, pessoal, orçamento e reuniões",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.8,
-  "conf_tema": 0.8,
-  "conf_modal": 1.0,
-  "termos": [
-   "ata "
-  ],
-  "fonte": "regra",
-  "hash": "498ee05c233bc2bb",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL640|33910.015974/2026-21|Item 3: APROVAÇÃO da proposta de alterações normativas – RN nº 585, de 2023 e IN/ANS nº 28, de 2022. Sistema de Alteração de Produtos no Registro de Planos de Saúde - RPS/ANS. Processo nº 33910.015974/2026-21": {
-  "modal": "Saúde suplementar",
-  "tema": "Regulação e normas",
-  "subtema": "Resolução normativa / consulta pública",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.86,
-  "conf_tema": 0.86,
-  "conf_modal": 1.0,
-  "termos": [
+   "resolucao normativa",
+   "consulta publica",
    "norma"
   ],
   "fonte": "regra",
-  "hash": "1114e37124d1c094",
+  "hash": "3669b4c014a07934",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL640|33910.027921/2025-72|Item 4: APROVAÇÃO da Agenda Regulatória da ANS 2026-2028. Processo nº 33910.027921/2025-72.": {
-  "modal": "Saúde suplementar",
-  "tema": "Regulação e normas",
-  "subtema": "Resolução normativa / consulta pública",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.86,
-  "conf_tema": 0.86,
-  "conf_modal": 1.0,
-  "termos": [
-   "agenda regulatoria"
-  ],
-  "fonte": "regra",
-  "hash": "54d048aac835c89e",
-  "tipo_item": "Deliberação"
- },
- "ANS|DICOL640|DICOL640-ITEM5|Item 5: INFORME sobre prevenção para as consequências sanitárias decorrentes do Fenômeno El Niño – 2026.": {
-  "modal": "Saúde suplementar",
-  "tema": "Gestão institucional e administrativa",
-  "subtema": "Estrutura, pessoal, orçamento e reuniões",
-  "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.8,
-  "conf_tema": 0.8,
-  "conf_modal": 1.0,
-  "termos": [
-   "informe"
-  ],
-  "fonte": "regra",
-  "hash": "ce424cd9c64f92ef",
-  "tipo_item": "Informe"
- },
- "ANS|DICOL640|33910.018676/2026-93|Item 6: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.018676/2026-93.": {
+ "ANS|DICOL638|33910.048937/2025-19|Item D2: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à UAT nº 171.": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
@@ -95131,16 +97109,34 @@
    "procedimento"
   ],
   "fonte": "regra",
-  "hash": "dc1bf57ed606be12",
+  "hash": "39ca3c75b9ecd8d3",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL640|33910.000122/2026-30|Item 7: DELIBERAÇÃO sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
+ "ANS|DICOL638|33910.008417/2026-54|Item D3: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 183 e ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.7,
+  "conf_tema": 0.7,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "193c758ea13c7239",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.000122/2026-30|Item D4: Deliberação sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Outros",
   "microtema_iris": "outros",
-  "area_iris": "outros",
+  "area_iris": "governanca_regulatoria",
   "confianca": 0.96,
   "conf_tema": 0.96,
   "conf_modal": 1.0,
@@ -95150,28 +97146,787 @@
    "incorporacao"
   ],
   "fonte": "regra",
-  "hash": "66e9dd688b3b6765",
+  "hash": "b3ac3750ae4dc893",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL640|33910.012010/2026-21|Item 8: DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs 187, 188 ": {
+ "ANS|DICOL638|DICOL638-E1|Item E1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL638|33910.036220/2025-24|Item F1: VOTO Nº 41/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PLANODENTE LTDA, ANS nº 41.651-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "4fbea8586d3bc7a4",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.013052/2026-80|Item F2: VOTO Nº 39/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VALE PLANOS DE SAÚDE LTDA ANS nº 42.404-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "e1cec9d6f97d694b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.028902/2020-59|Item F3: VOTO Nº 9/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de AGEMED SAÚDE LTDA – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS nº 33.960-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "f4f6c6849b06761b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.023094/2024-67|Item F4: VOTO Nº 4/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de AVAMP – ASSOCIAÇÃO VALEPARAIBANA DE ASSISTÊNCIA MÉDICA POLICIAL, ANS nº 41.263-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "223d1ccd70e859b3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.007218/2025-48|Item F5: VOTO Nº 7/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de SAÚDE BRASIL ASSISTÊNCIA MÉDICA LTDA, ANS nº 42.115-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.6,
+  "conf_tema": 0.6,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "ea216dbde6c6e4fe",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.012788/2026-31|Item F6: VOTO Nº 17/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED PETRÓPOLIS-RJ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 32.399-3.": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
-  "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
-  "confianca": 0.7,
-  "conf_tema": 0.7,
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
   "conf_modal": 1.0,
   "termos": [
-   "\\brol\\b",
+   "\\brol\\b"
+  ],
+  "fonte": "regra",
+  "hash": "6ee6d902aa5bfc95",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.020723/2025-88|Item F7: VOTO Nº 19/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de SANTA CASA DE MISERICÓRDIA DE JUIZ DE FORA, ANS nº 34.280-7.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "seguranca",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "5338689f69684dee",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.010764/2025-66|Item F8: VOTO Nº 4/2026/COPAEF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED COSTA VERDE RJ, ANS nº 31.114-6.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "8ba54c57fbe12136",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.022074/2025-50|Item F9: VOTO Nº 456/2026/DIPRO em face de LEADER ASSISTÊNCIA MÉDICA E HOSPITALAR LTDA, ANS nº 36.459-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "5ed97835687ed85e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.017755/2022-53|Item F10: VOTO Nº 142/2026/ASSNT-DIDES/DIRAD-DIDES/DIDES em face de UNIMED PETROPOLIS-RJ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 32.399–3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "6a339bc8c0645988",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.022309/2025-11|Item G1: VOTO Nº 435/2026/DIPRO em face de AME VVIDA PLANOS DE SAÚDE INTEGRADO LTDA. - VIVA VIDA, ANS nº 42.335-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "1a596bed2d03f67b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.048330/2025-39|Item H1: Informe sobre a alteração dos nomes dos Núcleos da ANS promovida pela RR n.37/2026.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "d629188e9c20ef70",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL638|DICOL638-H2|Item H2: Informe sobre a necessidade de bloqueio adicional na Unidade Orçamentária da ANS, a ser efetivada até o prazo limite de 08/06/2026, em cumprimento à decisão da Junta de Execução Orçamentária (JEO).": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "c087bcaf121e48d4",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL638|BLOCAO-DICOL638|Blocão (Circuito Deliberativo/AEP): 179 decisões, 179 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "39b832d046b254f3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL638|33910.006445/2023-94|Blocão I.1) PROCESSOS SANCIONADORES nº 118: Item retirado de pauta pelo Diretor Wadih Damous. Processo: 33910.006445/2023-94": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "2060a1d00ed79d8f",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL639|33910.014193/2025-39|Item A1: Informe sobre prorrogação do prazo de inscrição do 3º Edital do Projeto Cuidado Integral à Saúde – Desenvolvimento e Implementação do Modelo de Atenção Coordenado em Rede (MACOR).": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "55855ccc85f5d5e9",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL639|33910.060555/2025-63|Item A2: Informe acerca da minuta de Portaria que dispõe sobre a utilização da Sala 360.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "7b3dd8ecf0aab881",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL639|33910.015898/2025-73|Item B1: Apreciação da proposta de Resolução Administrativa que disciplina os critérios e procedimentos a serem observados para avaliação de desempenho de servidores ocupantes de cargo público efetivo durante ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Resolução / norma",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.62,
+  "conf_tema": 0.62,
+  "conf_modal": 1.0,
+  "termos": [
    "procedimento"
   ],
   "fonte": "regra",
-  "hash": "b534ff14f8172f85",
+  "hash": "ebb50a1e0a269a3e",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOL640|33910.017052/2026-59|Item 9: INFORME sobre o início das tratativas para a celebração de Acordo de Cooperação Técnica com a UNIMED DO BRASIL – CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS MÉDICAS. Processo nº 33910.017052/2026-59.": {
+ "ANS|DICOL639|ATA DICOL639-C1|Item C1: Aprovação das minutas das atas da 8ª Reunião Extraordinária de Diretoria Colegiada, de 29/05/2026, e da 638ª Reunião Ordinária de Diretoria Colegiada, de 08/06/2026.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "363d90d0d60f4bf0",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL639|33910.005047/2025-12|Item C2: Deliberação sobre o recurso administrativo interposto por AMGEN BIOTECNOLOGIA DO BRASIL LTDA. quanto a não incorporação ao Rol de Procedimentos e Eventos em Saúde - UAT nº 150.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "obras",
+  "area_iris": "outros",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "3026786cdc2c7e44",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.010535/2017-31|Item C3: Aprovação dos percentuais de reajuste das Operadoras signatárias dos Termos de Compromisso.": {
+  "modal": "Saúde suplementar",
+  "tema": "Reajustes e preços",
+  "subtema": "Reajuste de planos / precificação",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "reajuste"
+  ],
+  "fonte": "regra",
+  "hash": "f510f4502efe596f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33902.269858/2015-77|Item C4: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO ESPÍRITO SANTO - TJ/ES, no âmbito do Programa Parceiros da Cidadania.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "d412a7a1df2e8fa4",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33902.208313/2014-11|Item D1: Apreciação da proposta de Resolução Administrativa resultado de revisão e de consolidação normativa da Portaria nº 7.113, de 27 de abril de 2015, que dispõe sobre o Comitê Técnico Contábil da Agência ": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "93c4585d878d2b07",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.003733/2026-30|Item E1: Aprovação da proposta de celebração de Acordo de Cooperação Técnica entre a Agência Nacional de Saúde Suplementar - ANS e a UNIVERSIDADE DE SÃO PAULO - USP, no interesse da FACULDADE DE MEDICINA - FMU": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "cooperacao"
+  ],
+  "fonte": "regra",
+  "hash": "35cc34a9d68d2506",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|DICOL639-F1|Item F1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.028652/2024-81|Item G1: VOTO Nº 10/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de GOOD LIFE SAÚDE LTDA. – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 30.599-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "01c240526bd12a80",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.032875/2023-61|Item G2: VOTO Nº 11/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de SEMPRE SAÚDE FAMÍLIA ADMINISTRADORA DE BENEFÍCIOS LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 42.214-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "10a118946a05b438",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.013232/2025-81|Item G3: VOTO Nº 37/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de YOU ASSISTÊNCIA MÉDICA LTDA, ANS nº 42.238-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "8c5604e033d51348",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.049289/2025-18|Item G4: VOTO Nº 44/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de PLANO SIGMA SAÚDE LTDA, ANS nº 42.340-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "4f30fc0b06dc9da3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.032260/2022-54|Item G5: VOTO Nº 45/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VIDAPLAN SAÚDE LTDA – EPP, ANS cancelado nº 34.444-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.5,
+  "conf_tema": 0.5,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "299439309303a67a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.001717/2026-11|Item G6: VOTO Nº 46/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ATÍVIA SERVIÇOS DE SAÚDE S/A, ANS nº 32.051-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "703ba32e696baf6e",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.021628/2025-00|Item G7: VOTO Nº 5/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de IBBCA 2008 GESTÃO EM SAÚDE LTDA, ANS nº 41.705-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "9bfbcd4f6024ddd5",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL639|33910.019446/2025-61|Item G8: VOTO Nº 8/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIODONTO BELÉM – COOPERATIVA DE ASSISTÊNCIA À SAÚDE ODONTOLÓGICA, ANS nº 36.855-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "62f9cd378a3cb1c0",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.015345/2026-00|Item G9: VOTO Nº 20/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de AMERON – ASSISTÊNCIA MÉDICA RONDÔNIA S/A – EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS cancelado nº 32.133-8.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "525c0da573d38c25",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.015193/2026-37|Item G10: VOTO Nº 21/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIODONTO BELÉM – COOPERATIVA DE ASSISTÊNCIA À SAÚDE ODONTOLÓGICA, ANS nº 36.855-5.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "2afea457fd5f383b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.015346/2026-46|Item G11: VOTO Nº 22/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED CUIABÁ COOPERATIVA DE TRABALHO MÉDICO, ANS nº 34.208-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "f582da20c9ccec7f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.017055/2026-92|Item G12: VOTO Nº 23/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED FRUTAL COOPERATIVA DE TRABALHO MÉDICO LTDA, ANS nº 37.156-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "dbe93f4d98024072",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.001701/2023-57|Item G13: VOTO Nº 1/2026/COAOP/GEAOP/GGAME/DIRAD-DIOPE/DIOPE em face de OPERADORA ON MED ASSISTÊNCIA MÉDICA LTDA, ANS Nº 30.421-2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "392f4c2ba83e070d",
+  "tipo_item": "Retirada de pauta"
+ },
+ "ANS|DICOL639|33910.004983/2025-14|Item G14: VOTO Nº 326/2026/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de CEAM BRASIL - PLANOS DE SAÚDE LTDA, ANS Nº 31.147 -2.": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "9f5931327b50b87c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|33910.027395/2025-41|Item G15: VOTO Nº 581/2026/DIPRO em face de UNIMED OESTE DO PARÁ – COOPERATIVA DE TRABALHO MÉDICO, ANS nº 36.214-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "a438114c9ff890fa",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL639|BLOCAO-DICOL639|Blocão (Circuito Deliberativo/AEP): 162 decisões, 162 processos": {
+  "modal": "Saúde suplementar",
+  "tema": "Fiscalização e sanções",
+  "subtema": "Processo sancionador / multa",
+  "tipo_ato": "Auto de infração / sanção",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "sancionador"
+  ],
+  "fonte": "regra",
+  "hash": "1fc596f37bac40a9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|ATA DICOL640-A1|Item A1: Aprovação da minuta da ata da 639ª Reunião Ordinária de Diretoria Colegiada, de 26/06/206.": {
+  "modal": "Institucional e administrativo",
+  "tema": "Aprovação de ata",
+  "subtema": "Ata da reunião anterior",
+  "tipo_ato": "Aprovação de ata",
+  "confianca": 1.0,
+  "termos": [
+   "aprovação de ata"
+  ],
+  "fonte": "regra",
+  "hash": "24c5bf303004ab20",
+  "tipo_item": "Aprovação de ata"
+ },
+ "ANS|DICOL640|33910.030581/2020-52|Item A2: Aprovação de relatório técnico que trata da definição dos seis trimestres que compõem o período para o cálculo do Fator Individual de PEONA SUS e do Fator Teto de PEONA SUS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.71,
+  "conf_tema": 0.71,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "264b8e2e391e3a09",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.015974/2026-21|Item A3: Aprovação da proposta de alterações normativas – RN nº 585, de 2023 e IN/ANS nº 28, de 2022. Sistema de Alteração de Produtos no Registro de Planos de Saúde - RPS/ANS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.92,
+  "conf_tema": 0.92,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "47c210e1bf785704",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.027921/2025-72|Item A4: Aprovação da Agenda Regulatória da ANS 2026-2028": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "agenda regulatoria"
+  ],
+  "fonte": "regra",
+  "hash": "b428da2901126ab2",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|DICOL640-B1|Item B1: Informe sobre prevenção para as consequências sanitárias decorrentes do Fenômeno El Niño – 2026.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "3ca1c2b13888953e",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL640|33910.017052/2026-59|Item B2: Informe sobre o início das tratativas para a celebração de Acordo de Cooperação Técnica com a UNIMED DO BRASIL – CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS MÉDICAS.": {
   "modal": "Saúde suplementar",
   "tema": "Gestão institucional e administrativa",
   "subtema": "Estrutura, pessoal, orçamento e reuniões",
@@ -95186,10 +97941,354 @@
    "informe"
   ],
   "fonte": "regra",
-  "hash": "2e64a9bcbea6142a",
+  "hash": "2acd47c2a1b645c6",
   "tipo_item": "Informe"
  },
- "ANS|DICOL640|BLOCAO-DICOL640|Blocão (COREC/SECEX): 306 processos": {
+ "ANS|DICOL640|33910.018676/2026-93|Item C1: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.59,
+  "conf_tema": 0.59,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "audiencia publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "e1f5c62b43c78a3b",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.000122/2026-30|Item C2: Deliberação sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "obras",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.96,
+  "conf_tema": 0.96,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "b3ac3750ae4dc893",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.012010/2026-21|Item C3: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF referente às UATs 187, 188 ": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "c9efdd2ed60f61db",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|DICOL640-D1|Item D1: Informe sobre a direção técnica na Unimed FERJ.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "b23e6b94df51c89b",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL640|33910.037163/2022-58|Item E1: Deliberação sobre o pedido de reconsideração apresentado por ASSOCIAÇÃO DE ASSISTÊNCIA À SAÚDE DA AMAGIS (registro ANS nº 41.669-0).": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "reconsideracao"
+  ],
+  "fonte": "regra",
+  "hash": "f326ad5b37107d49",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.017289/2026-30|Item E2: VOTO Nº 47/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de INTERCLÍNICAS PLANO VIDA USA OPERADORA DE SAÚDE LTDA, ANS nº 42.084-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Registro e autorização de operadoras",
+  "subtema": "Registro de produto e operadora",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "alienacao"
+  ],
+  "fonte": "regra",
+  "hash": "01debe7e15fbc9cb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.003185/2026-48|Item E3: VOTO Nº 48/2026/COCAR/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de BRASIL ODONTO OPERADORA DE PLANOS ODONTOLÓGICOS LTDA, ANS nº 42.156-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.62,
+  "conf_tema": 0.62,
+  "conf_modal": 1.0,
+  "termos": [
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "a879869a4e0ab12a",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.028029/2024-28|Item E4: VOTO Nº 49/2026/COCAR/GERER/GGAER/DIRAD-DIOPE em face de POLIMÉDICA SAÚDE SOCIEDADE SIMPLES LTDA, ANS Nº 31.690-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.53,
+  "conf_tema": 0.53,
+  "conf_modal": 1.0,
+  "termos": [
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "77808cb97a240507",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.028928/2020-05|Item E5: VOTO Nº 12/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de COOPERATIVA DE TRABALHO MÉDICO DE SÃO LUIS LTDA. – UNIMED DE SÃO LUIS – INSOLVENTE, ANS CANCELADO Nº 33.855-9.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "1495d267090d2049",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.020841/2025-96|Item E6: VOTO Nº 13/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de VISION MED ASSISTÊNCIA MÉDICA LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL, ANS CANCELADO Nº 40.391-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "administrativo",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "97d96cd8a5f4b5ab",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.005634/2026-92|Item E7: VOTO Nº 14/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de AP AREAL PARTICIPAÇÕES LTDA – EM LIQUIDAÇÃO EXTRAJUDICIAL, SEM REGISTRO NA ANS, CNPJ Nº 01.870.896/0001-22.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.58,
+  "conf_tema": 0.58,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "8bf8c341bf254791",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.006551/2026-11|Item E8: VOTO Nº 15/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ORION PROMOÇÕES E REPRESENTAÇÕES LTDA, SEM REGISTRO NA ANS, CNPJ Nº 08.492.453/0001-94.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.58,
+  "conf_tema": 0.58,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "2b53276aeb9fb867",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.005699/2026-38|Item E9: VOTO Nº 16/2026/COALIQ/GERER/GGAER/DIRAD-DIOPE/DIOPE em face de ASSISTÊNCIA MÉDICA GLOBAL - AMEG LTDA – EM LIQUIDAÇÃO EXTRAJUDICIAL, SEM REGISTRO NA ANS, CNPJ Nº 32.266.698/0001-88.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.58,
+  "conf_tema": 0.58,
+  "conf_modal": 1.0,
+  "termos": [
+   "liquidacao"
+  ],
+  "fonte": "regra",
+  "hash": "1e6b4392053a7ad3",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.007212/2025-71|Item E10: VOTO Nº 9/2026/CODIF/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de AMEPLAN ASSISTÊNCIA MÉDICA PLANEJADA LTDA, ANS Nº 39.473-4.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "b7e8cba7528d1147",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.018348/2026-97|Item E11: VOTO Nº 24/2026/COIND/GEAES/GGAER/DIRAD-DIOPE/DIOPE em face de UNIMED-RIO COOPERATIVA DE TRABALHO MÉDICO DO RIO DE JANEIRO, ANS Nº 39.332-1.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "disponibilidade",
+  "area_iris": "outros",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "direcao fiscal"
+  ],
+  "fonte": "regra",
+  "hash": "54e3286724d2fc15",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.026269/2025-79|Item E12: VOTO Nº 613/2026/DIPRO em face de UNIMED NORTE/NORDESTE- FEDERAÇÃO INTERFEDERATIVA DAS SOCIEDADES COOPERATIVAS DE TRABALHO MÉDICO, ANS Nº 32.421-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "infraestrutura_geral",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "3f30e14a7158d4d2",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.007955/2025-41|Item E13: VOTO Nº 621/2026/DIPRO em face de SANTO ANDRÉ PLANOS DE ASSISTENCIA MÉDICA LTDA, ANS Nº 40.019-0.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regime e solvência das operadoras",
+  "subtema": "Direção fiscal, liquidação e capital",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.88,
+  "conf_tema": 0.88,
+  "conf_modal": 1.0,
+  "termos": [
+   "regime especial"
+  ],
+  "fonte": "regra",
+  "hash": "a88f5981411f8cd4",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.003226/2026-04|Item E14: VOTO Nº 673/2026/DIPRO em face de INTEGRA ASSISTÊNCIA MÉDICA – BLUE COMPANY, ANS Nº 42.317-3.": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.46,
+  "conf_tema": 0.46,
+  "conf_modal": 1.0,
+  "termos": [
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "aadaccdc45265609",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.017234/2018-10|Item F1: Informe sobre o PROADI-SUS.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "c2b109da8fd2fc2f",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|DICOL640-F2|Item F2: Informe sobre as medidas adotadas diante das denúncias apresentadas na atuação das juntas médicas.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.8,
+  "conf_tema": 0.8,
+  "conf_modal": 1.0,
+  "termos": [
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "2ef61b54a28794a3",
+  "tipo_item": "Informe"
+ },
+ "ANS|DICOL640|BLOCAO-DICOL640|Blocão (Circuito Deliberativo/AEP): 306 decisões, 306 processos": {
   "modal": "Saúde suplementar",
   "tema": "Fiscalização e sanções",
   "subtema": "Processo sancionador / multa",
@@ -95203,7 +98302,39 @@
    "sancionador"
   ],
   "fonte": "regra",
-  "hash": "0786f9e95c7513dd",
+  "hash": "cef3b838a361ed21",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.020556/2023-11|Blocão G.2) PROCESSOS DE RESSARCIMENTO AO SUS nº 11: Apreciação do voto condutor da DIPRO em processo de Ressarcimento ao SUS no recurso interposto pela Operadora INSTITUIÇÃO BENEFICENTE CEL MASSOT - IBCM, ANS 419": {
+  "modal": "Saúde suplementar",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.86,
+  "conf_tema": 0.86,
+  "conf_modal": 1.0,
+  "termos": [
+   "recurso"
+  ],
+  "fonte": "regra",
+  "hash": "ff8e3b16ad96aab7",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOL640|33910.031422/2023-18|Blocão G.2) PROCESSOS DE RESSARCIMENTO AO SUS nº 18: Apreciação do voto condutor da DIPRO em processo de Ressarcimento ao SUS, da Operadora UNIMED ALFENAS COOPERATIVA DE TRABALHO MÉDICO, ANS 354996, pela aprovação": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "outros",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "78493b3715e15c80",
   "tipo_item": "Deliberação"
  },
  "ANS|DICOL641|ATA DICOL641-i1|Item 1: APROVAÇÃO da minuta da ata da 640ª Reunião Ordinária de Diretoria Colegiada, de 17/07/206.": {
@@ -95612,7 +98743,7 @@
   "hash": "05fbde3d371d906b",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOLE01|33910.048937/2025-19|Item 1: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à Unidade de Análise Técnica – UAT nº 176. Aprovaçã": {
+ "ANS|DICOLE01|33910.048937/2025-19|Item A1: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Apreciação da Nota Técnica de Recomendação Final – NTRF referente à Unidade de Análise Técnica – UAT nº 176. Aprovaçã": {
   "modal": "Saúde suplementar",
   "tema": "Regulação e normas",
   "subtema": "Resolução normativa / consulta pública",
@@ -95632,25 +98763,26 @@
   "hash": "c75207f601420c3a",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOLE02|33910.000998/2026-86|Item 1: DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Nota Técnica de Recomendação Preliminar – NTRP referente às UATs nº 186, 189 e 190. Abertura de Consulta Pública e Au": {
+ "ANS|DICOLE02|33910.000998/2026-86|Item A1: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Nota Técnica de Recomendação Preliminar – NTRP referente às UATs nº 186, 189 e 190. Abertura de Consulta Pública e Au": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
   "tipo_ato": "Audiência / consulta pública",
-  "microtema_iris": "outros",
+  "microtema_iris": "pessoal",
   "area_iris": "governanca_regulatoria",
-  "confianca": 0.55,
-  "conf_tema": 0.55,
+  "confianca": 0.65,
+  "conf_tema": 0.65,
   "conf_modal": 1.0,
   "termos": [
    "\\brol\\b",
-   "procedimento"
+   "procedimento",
+   "incorporacao"
   ],
   "fonte": "regra",
-  "hash": "08af1b7a50b98a8e",
+  "hash": "d8086e27ab6c3935",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOLE02|33910.041022/2025-82|Item 2: DELIBERAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 172. Aprovação da proposta ": {
+ "ANS|DICOLE02|33910.041022/2025-82|Item A2: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 172. Aprovação da proposta ": {
   "modal": "Saúde suplementar",
   "tema": "Rol e cobertura assistencial",
   "subtema": "Rol de procedimentos e eventos em saúde",
@@ -95666,22 +98798,184 @@
    "incorporacao"
   ],
   "fonte": "regra",
-  "hash": "d4e6fdf1a53d8ade",
+  "hash": "1e9b77f1a3a51d8c",
   "tipo_item": "Deliberação"
  },
- "ANS|DICOLE02|33910.048937/2025-19|Item 3: DELIBERAÇÃO da proposta de suspensão do prazo para conclusão da análise referente à UAT nº 171. Inclisirana para o tratamento da hipercolesterolemia primária ou dislipidemia mista em pacientes com doe": {
+ "ANS|DICOLE02|33910.048937/2025-19|Item A3: Deliberação da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 172. Aprovação da proposta ": {
+  "modal": "Saúde suplementar",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução normativa / consulta pública",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.51,
+  "conf_tema": 0.51,
+  "conf_modal": 1.0,
+  "termos": [
+   "resolucao normativa",
+   "consulta publica",
+   "norma"
+  ],
+  "fonte": "regra",
+  "hash": "1e9b77f1a3a51d8c",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE03|33910.058550/2025-71|Item A1: Deliberação sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Aprovação da Nota Técnica de Recomendação Final – NTRF referente às UATs nº 179 e nº 182.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "seguranca",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "591ef3df9f3cca68",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE04|33910.005263/2026-49|Item A1: Aprovação da tomada de medidas fiscalizatórias excepcionais em razão de calamidade pública na região de Juiz de Fora/MG, Matias Barbosa/MG e Ubá/MG.": {
   "modal": "Saúde suplementar",
   "tema": "Outros",
   "subtema": "Não classificado",
   "tipo_ato": "Outros",
-  "microtema_iris": "outros",
-  "area_iris": "outros",
+  "microtema_iris": "contrato",
+  "area_iris": "governanca_regulatoria",
   "confianca": 0.0,
   "conf_tema": 0.0,
   "conf_modal": 1.0,
   "termos": [],
   "fonte": "regra",
-  "hash": "7129120ef1357957",
+  "hash": "13861d6d2fe455f9",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE04|DICOLE04-B1|Item B1: Informe sobre o cenário dos novos servidores (especialistas, técnicos e temporários) e discussão sobre os critérios para distribuição das vagas.": {
+  "modal": "Saúde suplementar",
+  "tema": "Gestão institucional e administrativa",
+  "subtema": "Estrutura, pessoal, orçamento e reuniões",
+  "tipo_ato": "Outros",
+  "microtema_iris": "fiscalizacao",
+  "area_iris": "administrativo",
+  "confianca": 0.89,
+  "conf_tema": 0.89,
+  "conf_modal": 1.0,
+  "termos": [
+   "servidor",
+   "informe"
+  ],
+  "fonte": "regra",
+  "hash": "0dd9e6bbf6722bf4",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE05|33910.003276/2026-83|Item A1: Deliberação sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Nota Técnica de Recomendação Preliminar – NTRP referente à UAT nº 193.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "daa3f961f1d96576",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE05|33910.058550/2025-71|Item A2: Deliberação sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 178.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento"
+  ],
+  "fonte": "regra",
+  "hash": "7a0c31785af5b9d6",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE06|33910.011904/2026-02|Item A1: Deliberação acerca dos cartões de desconto, cartões pré-pagos ou serviços correlatos.": {
+  "modal": "Saúde suplementar",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "pessoal",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 1.0,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "87a9c4f2774a32eb",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE07|33910.012010/2026-21|Item A1: Deliberação sobre a atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública.": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Audiência / consulta pública",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.65,
+  "conf_tema": 0.65,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "f633ff66770eaeca",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE07|33910.006470/2024-59|Item A2: Deliberação sobre tecnologias em saúde recomendadas positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde": {
+  "modal": "Saúde suplementar",
+  "tema": "Rol e cobertura assistencial",
+  "subtema": "Rol de procedimentos e eventos em saúde",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.77,
+  "conf_tema": 0.77,
+  "conf_modal": 1.0,
+  "termos": [
+   "\\brol\\b",
+   "procedimento",
+   "incorporacao"
+  ],
+  "fonte": "regra",
+  "hash": "b3ac3750ae4dc893",
+  "tipo_item": "Deliberação"
+ },
+ "ANS|DICOLE08|33910.010285/2026-21|Item A1: Deliberação sobre o reajuste para as contraprestações pecuniárias dos planos privados de assistência suplementar à saúde, individuais e familiares regulamentados de assistência médico-hospitalar, no p": {
+  "modal": "Saúde suplementar",
+  "tema": "Reajustes e preços",
+  "subtema": "Reajuste de planos / precificação",
+  "tipo_ato": "Reajuste / revisão / reequilíbrio",
+  "microtema_iris": "outros",
+  "area_iris": "administrativo",
+  "confianca": 0.93,
+  "conf_tema": 0.93,
+  "conf_modal": 1.0,
+  "termos": [
+   "reajuste",
+   "mensalidade"
+  ],
+  "fonte": "regra",
+  "hash": "5877d293d370d3de",
   "tipo_item": "Deliberação"
  },
  "ANS|DICOLE12|33910.021273/2026-21|Item 2: Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 199. Aprovação da prop": {

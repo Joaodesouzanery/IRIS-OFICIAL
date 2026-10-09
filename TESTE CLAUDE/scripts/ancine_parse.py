@@ -189,7 +189,7 @@ def fmt_res(res_txt, partes):
     return base[:1].upper() + base[1:] + (' [' + '; '.join(extra) + ']' if extra else '')
 # ---------------------------------------------------------------- 6) Montagem: reunioes deliberativas
 REU, DEL, VOT, QUAL, PEND, NF, LOG = [], [], [], [], [], [], []
-ERRO_DATA = []; sem_ddc_publicada = []; ddc_usadas = collections.Counter(); chave_vistas = set()
+CONFLITO = []; ERRO_DATA = []; sem_ddc_publicada = []; ddc_usadas = collections.Counter(); chave_vistas = set()
 for nm in sorted(ATAS):
     A = ATAS[nm]; rid = f'RD{nm}'
     d0 = A['datas'][0] if A['datas'] else None
@@ -206,6 +206,8 @@ for nm in sorted(ATAS):
     for it in A['itens']:
         n = it['ddc']; ddc = DDC.get(n) if n else None
         if ddc and not ddc['ok']: ddc = None
+        if ddc and ddc['processos'] and it['processo'] not in ddc['processos']:  # ata cita numero de DDC de OUTRO processo (erro na ata): nao herdar votos alheios
+            CONFLITO.append((rid, it['n'], it['processo'], n, ddc['processos'])); ddc = None
         res_txt = it['res_txt']; sess = SESS[it['sessao']]
         base_id = f'DDC {n}-E' if n else f'{rid}-{it["sessao"][0]}{it["n"]}'
         if ddc is None and n: base_id = f'DDC {n}-E (não publicada)'
@@ -379,7 +381,7 @@ REU.sort(key=lambda r: (r['data'] or '', r['reuniao']))
 # ---- pendencias da fonte (todas com URL)
 for rid, n_, proc, ddcn in sem_ddc_publicada:
     PEND.append(['ANCINE', f'DDC n.º {ddcn}-E (sessão reservada) — decisão, modo de votação e assinantes', next((r['data'] for r in REU if r['reuniao'] == rid), ''), 'documento não publicado',
-                 f'{rid} item {n_} (proc. {proc}): voto de cada diretor só como REVISAR', 'a ata cita a DDC, mas a série 307 (Boletim de Serviço) não a publica: matéria de sessão reservada', 'solicitar à Secretaria da Diretoria Colegiada (LAI) ou aguardar publicação',
+                 f'{rid} item {n_} (proc. {proc}): voto de cada diretor só como REVISAR', ('a ata cita a DDC n.º %s-E, mas o documento de mesmo número na série 307 trata de OUTRO processo (%s): numeração conflitante na ata (SEI diferente); a DDC própria deste item não está publicada (sessão reservada)' % (ddcn, ', '.join(next(c[4] for c in CONFLITO if c[0] == rid and c[1] == n_))) if any(c[0] == rid and c[1] == n_ for c in CONFLITO) else 'a ata cita a DDC, mas a série 307 (Boletim de Serviço) não a publica: matéria de sessão reservada'), 'solicitar à Secretaria da Diretoria Colegiada (LAI) ou aguardar publicação',
                  ATAS[int(rid[2:])]['url']])
 nao_listada = [k for k, v in DDC.items() if not v['ok']]
 falhas = [m for m in man.values() if not m['ok']]
@@ -427,7 +429,7 @@ q('Reuniões: numeração das pautas (incl. futura) = atas + futuras', len(PAUTA
 reu_ddc = collections.Counter(d['reuniao'] for d in DDC.values() if d['ok'])
 q('Reuniões nos cabeçalhos das DDC × reuniões com ata', len(ATAS), len({int(k) for k in reu_ddc}), {int(k) for k in reu_ddc} == set(ATAS))
 tot_itens = sum(len(A['itens']) for A in ATAS.values())
-q('Itens das atas × DDC publicadas citadas × DDC de sessão reservada sem publicação', tot_itens, sum(ddc_usadas.values()) + len(sem_ddc_publicada), tot_itens == sum(ddc_usadas.values()) + len(sem_ddc_publicada), f'{sum(ddc_usadas.values())} itens com DDC lida; {len(sem_ddc_publicada)} sem DDC publicada; DDC 528 repartida por 2 itens do mesmo ato' if any(c > 1 for c in ddc_usadas.values()) else '')
+q('Itens das atas × DDC publicadas citadas × DDC de sessão reservada sem publicação', tot_itens, sum(ddc_usadas.values()) + len(sem_ddc_publicada), tot_itens == sum(ddc_usadas.values()) + len(sem_ddc_publicada), f'{sum(ddc_usadas.values())} itens com DDC lida; {len(sem_ddc_publicada)} sem DDC publicada; conflitos de numeração ata×DDC (processo diferente): ' + str([c[:4] for c in CONFLITO]))
 q('DDC publicadas citadas por algum item de ata (nenhuma órfã)', n_ddc_ok, len([k for k in ddc_usadas if ddc_usadas[k]]), set(DDC) - set(ddc_usadas) == set(), f'DDC não citadas em ata: {sorted(set(DDC) - set(ddc_usadas))}')
 q('Itens da ata (processos) contidos na UNIÃO das versões de pauta da reunião', tot_itens, tot_itens - sum(len(v) for v in dif_pauta.values()), not dif_pauta, f'sem pauta correspondente: {dif_pauta}' if dif_pauta else f'{len(PAUTA_UNIAO)} reuniões com pauta lida; itens só na pauta (retirados antes da reunião/versões intermediárias): {sum(so_pauta_uniao.values())}')
 q('Itens da ÚLTIMA versão da pauta contidos na ata (nenhum item pautado ficou sem registro)', sum(sum(c.values()) for c in PAUTA_ULT.values()), sum(sum(c.values()) for c in PAUTA_ULT.values()) - sum(len(v) for v in dif_ult.values()), not dif_ult, f'pautados e ausentes da ata: {dif_ult}' if dif_ult else 'todos')

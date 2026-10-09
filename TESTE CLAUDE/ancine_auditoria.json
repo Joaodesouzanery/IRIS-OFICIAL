@@ -1,0 +1,30 @@
+{
+ "agencia": "ANCINE",
+ "semente": 2026,
+ "n_auditados": 44,
+ "modo": "cartoes (texto-fonte antes do JSON) via scripts/ancine_auditoria.py ancine.json 44 2026, conferidos campo a campo",
+ "estratos": {
+  "unanimidade": 10,
+  "ratificacao_dar": 4,
+  "maioria_nominal": 8,
+  "ausencia": 4,
+  "partes": 4,
+  "tomou_conhecimento": 3,
+  "retirada": 3,
+  "reservada_sem_ddc": 3,
+  "manifestacao": 2,
+  "circuito": 3
+ },
+ "corretos": 44,
+ "incorretos": 0,
+ "taxa": 1.0,
+ "conferido": "diretores presentes=assinantes+ausentes; rotulo de cada diretor; proveniencia; modo; tipo_item; partes/voto_por_parte; relator (circuitos); data; processo; DDC",
+ "observacoes": [
+  "#30 DDC 884: proposta da Diretora Patrícia Barcelos; a DDC não a nomeia relatora, mantido ACOMPANHOU inferido (sem inventar relator)",
+  "amostra fixa nao contem RD961 item 1; esse item foi corrigido por achado da varredura 100% (ata cita DDC 528-E, mas o corpo da 528 trata de outro processo): agora SEM VOTO/REVISAR + pendencia"
+ ],
+ "achados_corrigidos": [
+  "RD961 item 1 herdava votos da DDC 528 (outro processo): corrigido no parser",
+  "varredura: regex de unanimidade apos \"Adicionalmente\" e presenca do Diretor Substituto (falsos positivos do verificador, 32 divergencias) corrigidos"
+ ]
+}

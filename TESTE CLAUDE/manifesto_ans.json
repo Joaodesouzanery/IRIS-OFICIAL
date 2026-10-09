@@ -821,8 +821,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/12a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026.html",
   "texto": null,
-  "sha256": "4423f312b3d888c7e05cbaeeaa6e5c1adf8b438124f814866acfc60f1fc56346",
-  "bytes": 179377
+  "sha256": "359cdbd401925ada168664227ece9f69cfbaaaebe289b53f3f2f8d69f9fd9f35",
+  "bytes": 179371
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/640a-reuniao-da-diretoria-colegiada",
@@ -832,8 +832,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/640a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "b359da4a5a376a17be6216a36311131fa8137057a1adca734fea173397f45db5",
-  "bytes": 178884
+  "sha256": "d9dd11b1359c4f747164b3cb967533e45779754e3bcd0a3da7a2f4dee5fbbed1",
+  "bytes": 178890
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/641a-reuniao-da-diretoria-colegiada",
@@ -865,8 +865,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/643a-reuniao-da-diretoria-colegiada.html",
   "texto": null,
-  "sha256": "fdf89a25de780c1ca5873a82f283d5cdfb90088e2b23da83419202fe86e2f9c7",
-  "bytes": 178917
+  "sha256": "6dfeebda55de49ccd0a67eec10e828ff07ba70d03eec36199d9293e676f91475",
+  "bytes": 178911
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/644a-reuniao-da-diretoria-colegiada",
@@ -942,8 +942,8 @@
   "ok": true,
   "arquivo_local": "fonte/ans/html/diretoria-colegiada-da-ans-tem-nova-composicao.html",
   "texto": null,
-  "sha256": "ba51185cc40073576ed373184bcffc38e39584edc81d5956c2cd3890ac7dd12d",
-  "bytes": 180242
+  "sha256": "d65acdfe225bce4468199ca2b55f2db6496722af7e20f60fb9156a7d2cf1bf98",
+  "bytes": 180248
  },
  {
   "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/deliberacoes-da-638a-reuniao-da-diretoria-colegiada",

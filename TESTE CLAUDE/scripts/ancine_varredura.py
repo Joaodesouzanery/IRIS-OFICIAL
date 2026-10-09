@@ -73,6 +73,12 @@ for n, doc in sorted(ddc_doc.items()):
     its = ata_item_por_ddc.get(n, [])
     chk('ddc_citada_em_ata', len(its) >= 1, f'DDC {n} nao citada em nenhum item de ata')
     if not its: continue
+    for nm_, it_ in its:  # ata que cita o numero de uma DDC cujo corpo trata de OUTRO processo: nao pode herdar os votos dela
+        if re.search(r'\d{5}\.\d{6}/\d{4}-\d{2}', corpo.split('DECIS')[0]) and it_['proc'] not in corpo:
+            vv = [v for v in d['votos'] if v['reuniao'] == f'RD{nm_}' and v['processo'] == it_['proc']]
+            chk('numero de DDC conflitante na ata => nenhum voto herdado (so REVISAR/SEM VOTO)', bool(vv) and all(v['proveniencia'] != 'inferido' and not v['voto'].startswith('ACOMPANHOU') for v in vv), f'RD{nm_} proc {it_["proc"]}: DDC {n} e de outro processo mas o JSON herdou votos')
+    its = [x_ for x_ in its if x_[1]['proc'] in corpo or not re.search(r'\d{5}\.\d{6}/\d{4}-\d{2}', corpo.split('DECIS')[0])]
+    if not its: continue
     nm, it = its[0]
     chk('ddc_reuniao = ata', reu and int(reu[1]) == nm, f'DDC {n}: reuniao do cabecalho {reu and reu[1]} x ata {nm}')
     rid = f'RD{nm}'; cand = [k for k in DEL if k[0] == rid and k[1].split(' (')[0].split(' #')[0] == f'DDC {n}-E']
@@ -89,6 +95,8 @@ for n, doc in sorted(ddc_doc.items()):
     low = dec_c.lower()
     princ = re.split(r'\badicionalmente\b|no que se refere|\bpor fim\b', low)[0]
     un = 'por unanimidade' in princ or 'unanimemente' in princ; ma = 'por maioria' in princ
+    if not (un or ma):  # 'tomou conhecimento ... Adicionalmente, os Diretores decidiram, por unanimidade': a votacao esta apos o 'Adicionalmente'
+        un = 'por unanimidade' in low or 'unanimemente' in low; ma = 'por maioria' in low
     div = set(); ab = set(); im = set()
     for s in re.split(r'(?<=[a-z\)0-9])\.\s+', princ):
         if re.search(r'voto (contr|venc|diverg)', s): div |= {q for q in [quem(z) for z in re.findall(r'(?:alcoforado|barcelos|clay|braga|mendes)', fold(s))] if q}
@@ -114,7 +122,7 @@ for nm, L in itens_ata.items():
     ordem_js = [(x['processo'], x['ddc']) for x in sorted(js, key=lambda x: (int(x['item_n']) if False else 0))]
     chk('multiconjunto (processo, DDC) da ata = JSON', collections.Counter(ordem_ata) == collections.Counter(ordem_js), f'{rid}: diferenca {(collections.Counter(ordem_ata) - collections.Counter(ordem_js)).most_common(2)}')
     t = atas_txt[nm]; cab = re.sub(r'\s+', ' ', t[t.find('Ao '):t.find('Verificado')])
-    pres = {q for q in (quem(z) for z in re.findall(r'(?:Alex Braga|Alcoforado|Barcelos|Clay|Leandro)', cab.split('Registrada também')[0])) if q}
+    pres = {q for q in (quem(z) for z in re.findall(r'(?:Alex Braga|Alcoforado|Barcelos|Clay|Leandro|Mendes)', cab.split('Registrada também')[0])) if q}
     r = [x for x in d['reunioes'] if x['reuniao'] == rid][0]
     chk('presentes da ata = JSON', pres == set(r['presentes']), f'{rid}: ata {sorted(pres)} x JSON {r["presentes"]}')
     ausm = re.search(r'Registra-se a aus[êe]ncia[^.]*\.', cab)
