@@ -3,6 +3,18 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 04/out/2026).
 
+## 🟡 Qualidade Regulatória — workbook IMQN das 12 agências (09/out/2026)
+
+`docs/metodologia/IMQN_agencias_workbook.xlsx` + `IMQN_agencias_prototipo.html`: desenho próprio a
+partir da planilha rev2022 (73 condições, 12 agências, avaliação por condição, nota **estimada ×
+comprovada**). **Nenhuma agência foi avaliada** — as respostas nascem em branco (≠ "não atende").
+Não altera código nem banco.
+- [ ] Revisar a classificação pública/interna, as perguntas e os termos de busca (são proposta).
+- [ ] Conferir a base legal (PS: Lei 13.848 arts. 9º–11; ARR: Decreto 10.411) e o ministério supervisor.
+- [ ] Decidir se os níveis assimétricos (Processo: 1 condição em Gerenciado) serão normalizados.
+- [ ] Teto verificável só por fonte pública: ~55 de 100 (Capacitação é dado interno).
+- [ ] Quando aprovado: rota de escrita de `condicoes_avaliadas` + checklist na aba Diagnóstico.
+
 ## 🔴 FASE 39 (05/out/2026) — datas, depois votos (o cadastro está FECHADO)
 
 O SQL B confirmou os mandatos (ANM e ANTT batem com o DOU) e o SQL A provou que os 81 votos "fora do
