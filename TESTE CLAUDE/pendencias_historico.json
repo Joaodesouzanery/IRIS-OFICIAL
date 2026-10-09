@@ -116,7 +116,7 @@
  },
  "ANPD|CD23|Ata do circuito não publicada (só PDF de votos)": {
   "primeira_vez": "2026-10-08",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANVISA|ROP14|Realizada, ata aguardando publicação": {
@@ -2331,37 +2331,37 @@
  },
  "ANAC|RE6 item 1 (proc. 00058.078676/2024-29) — quem pediu vista|dado não publicado na página": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE9 item 1 (proc. 00058.018087/2019-24) — quem divergiu (\"Deferido parcialmente por maioria\")|dado não publicado na página": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD5 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|REX2 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD6 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE30 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD7 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD7 — deliberações (1 item(ns) na pauta)|documento não publicado": {
@@ -2371,7 +2371,7 @@
  },
  "ANAC|RE31 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE31 — deliberações (5 item(ns) na pauta)|documento não publicado": {
@@ -2381,7 +2381,7 @@
  },
  "ANAC|RE32 — ata|documento não publicado": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE32 — deliberações (3 item(ns) na pauta)|reunião futura": {
@@ -2391,362 +2391,362 @@
  },
  "ANAC|RE1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE2 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE3 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE4 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE5 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE6 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE7 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE8 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD2 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE9 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE10 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD3 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|REX1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE11 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE12 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE13 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE14 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE15 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD4 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE16 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE17 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE18 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE19 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE20 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE21 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE22 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE23 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE24 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE25 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE26 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE27 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE28 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE29 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE3 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE4 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE5 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE6 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE7 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE8 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE9 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE10 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD3 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|REX1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE11 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE12 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE13 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE14 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE15 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD4 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE16 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE18 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE19 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE20 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE21 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE22 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE23 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE24 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD5 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE25 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE26 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|REX2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE27 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE28 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE29 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD6 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RE30 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|Composição do colegiado em jan-fev/2026 e fim exato dos mandatos de Luiz Ricardo Nascimento e Mariana Altoé|bloqueado pela fonte (CAPTCHA no gov.br/search; nunca resolvido)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|Votos em vídeo (YouTube) das reuniões presenciais|fora de escopo": {
@@ -2845,6 +2845,306 @@
   "ultima_vez": "2026-10-09"
  },
  "ANTT|Todas as reuniões · votos em unanimidade|Dado não publicado na ata (LIMITE DA FONTE)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE16 item 3 (proc. 00058.035485/2026-34) — certidão desta reunião|link incorreto na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD5 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX2 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD6 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE30 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD7 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE31 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE32 — ata (presença, votos nominais, vencidos)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 item 1 (proc. 00058.078676/2024-29) — desfecho após a vista|ainda não deliberado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE1 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE1 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE2 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE2 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD1 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD1 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE3 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE3 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE4 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE4 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE5 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE5 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE7 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE7 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE8 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE8 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD2 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE9 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE10 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE10 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD3 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD3 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX1 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX1 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE11 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE12 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE12 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE13 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE13 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE14 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE14 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE15 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE15 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD4 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD4 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE16 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE16 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE18 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE19 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE20 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE21 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE22 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE23 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD5 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE26 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE27 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE27 — ementas SimplificaJuris (pergamum.anac.gov.br)|conteúdo não lido": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD6 — pesquisa pública SEI do processo|documento indisponível na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|Início exato do exercício de Mariana Altoé e fim dos mandatos de Luiz Ricardo Nascimento e Tiago Sousa Pereira|dado não publicado": {
   "primeira_vez": "2026-10-09",
   "resolvida_em": null,
   "ultima_vez": "2026-10-09"

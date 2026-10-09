@@ -16,10 +16,10 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANVISA | CDs citados nas atas sem extrato publicado (pendência da fonte) | 0 | 37 | OK | 37 CDs: [61, 109, 112, 113, 119, 120, 122, 123, 168, 240, 244, 245, 246, 253, 298, 300, 301, 355, 356, 358, 364, 365, 458, 460, 461] |
 | ANVISA | CD 1..1057: números sem extrato publicado (pendência da fonte) | 0 | 123 | OK | 123 números; 42 deles têm só o PDF do voto escrito do relator (CD [112, 113, 119, 120, 122, 123, 168, 244, 245, 246, 298, 300, 301, 643, 646]) |
 | ANPD | Circuitos 1..29 sem buraco | 29 | 29 | OK |  |
-| ANPD | Circuitos: listados × baixados (PDFs válidos) | 57 | 57 | OK |  |
-| ANPD | Circuitos com ata lida + sem ata (só voto) = todos | 29 | 29 | OK | sem ata publicada: ['CD07', 'CD23'] |
-| ANPD | 4 votos (1 por membro do Conselho Diretor) em cada circuito com ata | 27 | 27 | OK |  |
-| ANPD | Presença: assinante da ata é diretor do colegiado | 25 | 25 | OK | conferido no parser (27/27) |
+| ANPD | Circuitos: listados × baixados (PDFs válidos) | 58 | 58 | OK |  |
+| ANPD | Circuitos com ata lida + sem ata (só voto) = todos | 29 | 29 | OK | sem ata publicada: ['CD07'] |
+| ANPD | 4 votos (1 por membro do Conselho Diretor) em cada circuito com ata | 28 | 28 | OK |  |
+| ANPD | Presença: assinante da ata é diretor do colegiado | 26 | 26 | OK | conferido no parser (27/27) |
 | ANPD | Circuitos com "não acompanha o relator" > 0 ou levados à reunião | 0 | 0 | OK |  |
 | ANP | atas baixadas válidas × reuniões lidas | 13 | 13 | OK |  |
 | ANP | 5 votos (1 por diretor) em cada item | 139 | 139 | OK |  |
@@ -47,21 +47,21 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 12 | 12 | OK |  |
 | ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 252 | 252 | OK | 29 itens sem resultado publicado/informe |
 | ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANS | Votos: nominal + inferido + REVISAR = total | 1260 | 1260 | OK | {'inferido': 1147, 'nominal': 108, 'REVISAR': 5} |
+| ANS | Votos: nominal + inferido + REVISAR = total | 1260 | 1260 | OK | {'inferido': 1132, 'nominal': 123, 'REVISAR': 5} |
 | ANS | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, fora da allowlist, sem documento) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 9 | 9 | OK |  |
 | ANCINE | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1835 | 1835 | OK | 3 itens sem resultado publicado/informe |
 | ANCINE | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANCINE | Votos: nominal + inferido + REVISAR = total | 7000 | 7000 | OK | {'inferido': 6793, 'nominal': 128, 'REVISAR': 79} |
+| ANCINE | Votos: nominal + inferido + REVISAR = total | 7000 | 7000 | OK | {'inferido': 6789, 'nominal': 128, 'REVISAR': 83} |
 | ANCINE | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, não baixado, sem DDC, sem ata) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANCINE | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 52 | 52 | OK |  |
 | ANAC | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 86 | 86 | OK | 9 itens sem resultado publicado/informe |
 | ANAC | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANAC | Votos: nominal + inferido + REVISAR = total | 411 | 411 | OK | {'nominal': 87, 'inferido': 318, 'REVISAR': 6} |
+| ANAC | Votos: nominal + inferido + REVISAR = total | 428 | 428 | OK | {'nominal': 114, 'inferido': 314} |
 | ANAC | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (bloqueado pela fonte) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANAC | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 85 | 85 | OK |  |
+| ANAC | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 64 | 64 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
-| ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
+| ANPD | Votos no JSON × linhas na aba Votos | 116 | 116 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
 | ANTAQ | Votos no JSON × linhas na aba Votos | 3413 | 3413 | OK |  |
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
@@ -69,7 +69,7 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANA | Votos no JSON × linhas na aba Votos | 244 | 244 | OK |  |
 | ANS | Votos no JSON × linhas na aba Votos | 1260 | 1260 | OK |  |
 | ANCINE | Votos no JSON × linhas na aba Votos | 7000 | 7000 | OK |  |
-| ANAC | Votos no JSON × linhas na aba Votos | 411 | 411 | OK |  |
+| ANAC | Votos no JSON × linhas na aba Votos | 428 | 428 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
-| ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 653 | 653 | OK | sem URL: [] |
+| ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 1 | 1 | OK | ausentes da aba: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 630 | 630 | OK | sem URL: [] |

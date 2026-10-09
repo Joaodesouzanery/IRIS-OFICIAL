@@ -30049,7 +30049,7 @@
   "hash": "7d9452094df5952c",
   "tipo_item": "Deliberação"
  },
- "ANPD|CD04||CD 4/2026": {
+ "ANPD|CD04|00261.004679/2025-00|CD 4/2026": {
   "modal": "Proteção de dados pessoais",
   "tema": "Cooperação e acordos",
   "subtema": "Acordo / ACT / memorando",
@@ -30121,7 +30121,7 @@
   ],
   "fonte": "regra",
   "hash": "2d0a70cde847ee9d",
-  "tipo_item": "Só voto do relator (sem ata)"
+  "tipo_item": "Deliberação (lida do PDF de votos, sem ata)"
  },
  "ANPD|CD08|00261.000633/2026-94|CD 8/2026": {
   "modal": "Proteção de dados pessoais",
@@ -30418,8 +30418,8 @@
    "recurso em 2"
   ],
   "fonte": "regra",
-  "hash": "a94fa2262ed1dc5b",
-  "tipo_item": "Só voto do relator (sem ata)"
+  "hash": "6b899e69ac4b3859",
+  "tipo_item": "Deliberação"
  },
  "ANPD|CD24|00261.004718/2025-61|CD 24/2026": {
   "modal": "Proteção de dados pessoais",
@@ -97031,7 +97031,7 @@
   "termos": [],
   "fonte": "regra",
   "hash": "149e28537bcf4bfd",
-  "tipo_item": "Vista"
+  "tipo_item": "Deliberação"
  },
  "ANS|DICOL635|33910.060398/2025-96|Item E18: VOTO Nº 138/2026/ASSNT-DIGES/DIRAD-DIGES/DIGES em face de BR SAÚDE S.A., sem registro ANS.": {
   "modal": "Saúde suplementar",
