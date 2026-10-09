@@ -6,70 +6,70 @@
   "bytes": 0,
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "nota": "URL citada no enunciado (Joomla antigo): hoje responde 302 para a home do gov.br (site migrado; conteúdos podem ter sido removidos no defeso eleitoral desde 04/07/2026)",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "govbr_reunioes": {
   "url": "https://www.gov.br/anatel/pt-br/composicao/conselho-diretor/reunioes",
   "http": "200",
   "redirect": "",
-  "bytes": 398123,
-  "sha256": "b8923cc33a53ca9c82ffc47bcc4b06b26b4d595418f7541c74497124884f897a",
+  "bytes": 382175,
+  "sha256": "209111a8858ceb414cb2be10c6cf20896f63457bdb52310068809ed47bdaccac",
   "nota": "Página oficial atual de Reuniões: texto institucional + links para o SEI (Publicações Eletrônicas, série 229 Ata e 432 Pauta), sem lista de reuniões",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "govbr_historico": {
   "url": "https://www.gov.br/anatel/pt-br/composicao/conselho-diretor/historico-de-pautas-e-atas",
   "http": "200",
   "redirect": "",
-  "bytes": 414157,
-  "sha256": "424e7ed7b01df0d245f60065e0503968dedf704e6a93c8aed2a633658a9900a4",
+  "bytes": 414501,
+  "sha256": "8a4ffef8e16c9f408d145cdda9e90f477e1aa107f257a962f092691fc301fd12",
   "nota": "Histórico de pautas e atas: só até a 873ª reunião (01/08/2019); nada de 2026",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "govbr_conselho": {
   "url": "https://www.gov.br/anatel/pt-br/composicao/conselho-diretor",
   "http": "200",
   "redirect": "",
-  "bytes": 402610,
-  "sha256": "f45f28612772edd1cb49888930c6de40a5ca67fdb841ed61627b4798e87c0b7f",
+  "bytes": 406407,
+  "sha256": "90c79844dcf5c53c04e9db7a307d6c489a6d97aff5db3e02ca2b3f4310e16427",
   "nota": "Composição do Conselho Diretor",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "govbr_noticia_958": {
   "url": "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-realiza-958a-reuniao-do-conselho-diretor-nesta-quinta-feira-8-10",
   "http": "200",
   "redirect": "",
-  "bytes": 379220,
-  "sha256": "6466e55883828f6b705bf9f1007c4d57d972e3bd7fa9003cd2ba016aa99be52f",
+  "bytes": 380255,
+  "sha256": "95b5db0fec47b28c0e8cc0fd51399ad194b2d8fed276fecd2fa3d3401db7fd81",
   "nota": "Notícia da 958ª reunião (08/10/2026, 15h, videoconferência): denominador independente do nº da reunião",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "legislacao": {
   "url": "https://informacoes.anatel.gov.br/legislacao/",
   "http": "200",
   "redirect": "",
-  "bytes": 52086,
-  "sha256": "d1d4afd3134738e3ddf71ecffadeea0ce8bab4bc1aafbe76ee1dcc19a6cb987c",
+  "bytes": 52085,
+  "sha256": "4c52aebbc42e036a73b099128b7c7598012f283c76a897f1d8e43d1d592a689c",
   "nota": "Portal de Legislação (resoluções, súmulas, portarias): não publica Acórdãos nem atas",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "sei_publicacoes": {
   "url": "https://sei.anatel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0&rdo_data_publicacao=I",
   "http": "200",
   "redirect": "",
-  "bytes": 91805,
-  "sha256": "8db9c51fe2b4a81ad1205628e9709f0570218c3258731e97590209b5fa637a36",
+  "bytes": 93339,
+  "sha256": "1340890509d8e5f4e627281f4f1aeedaad8428d6ef60172f1f6514d33d39c771",
   "nota": "SEI > Publicações Eletrônicas: ABRE SEM CAPTCHA (usado). Séries: Acórdão 8, Análise 7, Voto 94, Ata de Reunião 229, Pauta de Reunião 432, Ata de Circuito 187, Pauta de Circuito 188",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "sei_pesquisa_publica": {
   "url": "https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0",
   "http": "200",
   "redirect": "",
-  "bytes": 124019,
-  "sha256": "34b86e932219903541fa1caafac6e7ca2dbfbf55b34f0126b4a098b98ee6b021",
+  "bytes": 124091,
+  "sha256": "ca2d1f10c3827730678b32e94aca87bc22f1a0f8bdca7a5fe9704127f06117ad",
   "nota": "SEI > Pesquisa pública de processo: exige CAPTCHA (não resolvido; bloqueado pela fonte)",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "anexar_api": {
   "url": "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/0000",
@@ -78,7 +78,7 @@
   "bytes": 34,
   "sha256": "9a25ebb3d74c6822aa8fc67da2a901f4084cde7b17177981628d60dd6fe45322",
   "nota": "API de anexos: host responde (400 para hash inválido); nenhum hash é publicado nas páginas de reunião/Publicações -> não há como enumerar",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "anexar_api_raiz": {
   "url": "https://sistemas.anatel.gov.br/",
@@ -87,7 +87,7 @@
   "bytes": 0,
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "nota": "Raiz de sistemas.anatel: 302",
-  "sondado_em": "2026-10-08"
+  "sondado_em": "2026-10-09"
  },
  "sei_series_disponiveis": {
   "292": "Abertura de Procedimento Licitatório",

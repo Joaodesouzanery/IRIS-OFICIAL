@@ -84,8 +84,8 @@ const PAGES=[
  ['visao','Visão geral','Painel','nav1'],['diretor','Perfil do diretor','Diretores','nav1'],
  ['Votos','Votos','Votos','nav2'],['Deliberações','Deliberações','Deliberações','nav2'],['Matriz de votos','Matriz de votos','Matriz de votos','nav2'],['Diretores','Diretores (tabela)','Diretores','nav2'],
  ['Faltam na fonte','Faltam na fonte','Faltam na fonte','nav3'],['Controle','Controle','Controle','nav3'],['Reuniões','Reuniões','Reuniões','nav3'],['Apoio','Apoio','Apoio','nav3'],['LEIA-ME','Leia-me','LEIA-ME','nav3']];
-const FIL={'Votos':['Mês','Diretor','Papel','Evidência','Tipo de item','Modal','Tema','Microtema (IRIS)'],'Deliberações':['Mês','Tipo de item','Relator','Modal','Tema','Microtema (IRIS)'],
- 'Matriz de votos':['Mês','Tipo de item','Tema'],'Diretores':['Diretor','Mês','Modal','Tema','Microtema (IRIS)'],'Controle':['Tipo','Status'],'Faltam na fonte':['Tipo','Situação'],'Reuniões':['Tipo'],'Apoio':['Tipo']};
+const FIL={'Votos':['Agência','Mês','Diretor','Papel','Evidência','Tipo de item','Modal','Tema','Microtema (IRIS)'],'Deliberações':['Agência','Mês','Tipo de item','Relator','Modal','Tema','Microtema (IRIS)'],
+ 'Matriz de votos':['Agência','Mês','Tipo de item','Tema'],'Diretores':['Agência','Diretor','Mês','Modal','Tema','Microtema (IRIS)'],'Controle':['Tipo','Agência','Status'],'Faltam na fonte':['Agência','Tipo','Situação'],'Reuniões':['Agência','Tipo'],'Apoio':['Tipo','Agência']};
 const ST={page:'visao',ag:'',q:'',f:{},sort:null,pg:0,dir:''};
 const PG=100;
 function tab(n){if(!T[n]){const r=S[n];const c=r[0];const l=r.slice(1).map(x=>{x=x.slice();while(x.length<c.length)x.push('');return x});T[n]={c,l,ix:Object.fromEntries(c.map((h,i)=>[h,i]))}}return T[n]}
