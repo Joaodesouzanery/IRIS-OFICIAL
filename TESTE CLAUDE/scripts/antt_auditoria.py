@@ -69,7 +69,7 @@ def varredura(A, M, VP, REV):
             if d['resultado'] != 'RETIRADO DE PAUTA' and d['resultado'] != 'SOBRESTADO (vista coletiva)':
                 fora = any(e['reuniao'] == tag and e['processo'] == p and e.get('relator') not in roster for e in REV)   # relator original fora da presença (revisão curada)
                 if len(rels) != 1 and not (d['resultado'].startswith('SOBRESTADO') and not rels) and not (fora and not rels): falhas['E5 nº de linhas RELATOR ≠ 1'].append((tag, p, [x['diretor'].split()[0] for x in rels]))
-            if m and not m[1] and (d.get('relator') or '').split()[0:1] != [PRE.get(m[2])]: falhas['E5 relator do JSON ≠ prefixo do voto citado'].append((tag, p, m[0], d.get('relator')))
+            if m and not m[1] and not any(e['reuniao'] == tag and e['processo'] == p for e in REV) and (d.get('relator') or '').split()[0:1] != [PRE.get(m[2])]: falhas['E5 relator do JSON ≠ prefixo do voto citado'].append((tag, p, m[0], d.get('relator')))
             if m and not m[1]:
                 n['E6 relatoria do PDF'] += 1
                 pr = pdf_rel.get((m[2], int(m[3]), int(m[4])))
@@ -80,7 +80,7 @@ def varredura(A, M, VP, REV):
                 if v['voto'] == 'PEDIU VISTA' and not re.search(r'vista', nd): falhas['E7 PEDIU VISTA sem a palavra vista'].append((tag, p, v['diretor']))
                 if v['voto'].startswith('DIVERGIU') and 'diverg' not in nd: falhas['E7 DIVERGIU sem a palavra divergiu'].append((tag, p, v['diretor']))
                 if v['voto'].startswith('IMPEDIDO') and 'impedid' not in nd: falhas['E7 IMPEDIDO sem a palavra impedido'].append((tag, p, v['diretor']))
-                if v['voto'].startswith('AUSENTE') and v['diretor'] not in r['ausentes'] and 'ausente' not in nd: falhas['E7 AUSENTE fora da lista de ausentes e sem "ausente" no texto'].append((tag, p, v['diretor']))
+                if v['voto'].startswith('AUSENTE') and v['diretor'] not in r['ausentes'] and 'ausente' not in nd and not re.search(r'a par\s?r do item', flat(open(glob.glob(f'texto_antt/{tag}__ata_*')[0], encoding='utf8').read())[:4000]): falhas['E7 AUSENTE fora da lista de ausentes e sem "ausente" no texto'].append((tag, p, v['diretor']))
                 if v['proveniencia'] == 'inferido' and v['voto'].startswith('ACOMPANHOU') and rl not in ('unanimidade', 'maioria'): falhas['E8 ACOMPANHOU inferido fora de unanimidade/maioria'].append((tag, p, v['diretor'], rl))
             if rl == 'unanimidade':
                 n['E9 unanimidade sem REVISAR'] += 1

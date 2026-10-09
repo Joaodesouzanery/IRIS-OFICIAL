@@ -60,6 +60,10 @@ def parse(r, ata):
     pres, aus = roster(t); todos = pres + [a for a in aus if a not in pres]
     heads = [(m.start(), (quem(m[2]) or [None])[0]) for m in HEAD.finditer(t)]
     procs = list(re.finditer(r'\n\s*(\d+\.\d+\.\d+)\s+Processo[^\d\n]{0,10}[\u200b ]*([\d]{4,5}\.[\d./-]+)', t))
+    # ausência PARCIAL declarada no cabeçalho: "... do Diretor-Geral X, a partir do item 1.2.1" -> AUSENTE nos itens de número >= esse (salvo quem pediu vista no próprio item: a ata se contradiz em ROD1035)
+    parcial = {}
+    for pm in re.finditer(r'(Diretor[^.;]{0,60}?),?\s+a\s+par\s?r\s+do\s+item\s+(\d+(?:\.\d+)+)', re.sub(r'\s+', ' ', t[:4000])):
+        for q in quem(pm[1]): parcial[q] = tuple(int(x) for x in pm[2].split('.'))
     D, V = [], []
     for i, m in enumerate(procs):
         fim = procs[i+1].start() if i+1 < len(procs) else len(t)
@@ -97,7 +101,8 @@ def parse(r, ata):
         if voto and not voto[1]: d['voto_doc'] = f'{voto[2]} {voto[3]}'
         D.append(d)
         for p in pres + [a for a in aus if a not in pres]:
-            if p == rel and p in aus and p not in pres and res != 'RETIRADO DE PAUTA': v, pv = 'RELATOR (voto escrito; ausência declarada na ata)', 'nominal'
+            if p in parcial and tuple(int(x) for x in m[1].split('.')) >= parcial[p] and p not in vista and p != rel: v, pv = 'AUSENTE', 'nominal'
+            elif p == rel and p in aus and p not in pres and res != 'RETIRADO DE PAUTA': v, pv = 'RELATOR (voto escrito; ausência declarada na ata)', 'nominal'
             elif p in aus and p not in pres or p in ausentes_item: v, pv = 'AUSENTE', 'nominal'
             elif res == 'RETIRADO DE PAUTA': v, pv = 'SEM VOTO (retirado de pauta)', 'nominal' if p == rel else 'n/a'
             elif res == 'SOBRESTADO (vista coletiva)' and p in vista: v, pv = 'PEDIU VISTA', 'nominal'
@@ -132,6 +137,7 @@ if __name__ == '__main__':
     # etapa final (aditiva): revisão curada + cruzamento com os PDFs de voto (texto/OCR) + pendências com URL. Só roda se antt_revisao.json existir (degrada para o parse puro)
     import os
     if os.path.exists('antt_revisao.json'):
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import antt_votos_pdf, antt_finalizar
         antt_votos_pdf.main(sys.argv[1], 'antt_votos_pdf.json')
         antt_finalizar.main(sys.argv[2], sys.argv[1], 'antt_inventario.json', 'antt_votos_pdf.json', 'antt_revisao.json', 'antt_sem_ata.json')

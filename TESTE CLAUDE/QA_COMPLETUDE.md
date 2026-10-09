@@ -72,4 +72,4 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANAC | Votos no JSON × linhas na aba Votos | 411 | 411 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 634 | 634 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 653 | 653 | OK | sem URL: [] |

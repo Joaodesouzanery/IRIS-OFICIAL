@@ -1,0 +1,498 @@
+28/04/2026,11:34 SEI/ANTT-41960480-VotoDAA
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DAA
+RELATORIA: ALEX ANTONIO DE AZEVEDO CRUZ
+TERMO: A DIRETORIA
+NUMERO: 17/2026
+OBJETO: Recurso Administrativo interposto pelo Sindicato dos Transportadores Autonomos de Cargas de
+Guarulhos e Regiao - SINDITAC-GRU contra a Deliberacao ANTT n? 467, de 25 de novembro de 2025, que
+autorizou o inicio da cobranca de tarifa de pedagio na modalidade fluxo livre (free flow) na rodovia BR-
+116/SP, km 205 ao km 230, na Regiao Metropolitana de Sao Paulo
+ORIGEM: Superintendéncia de Infraestrutura Rodoviaria - SUROD
+PROCESSO (S): 50500.066793/2025-23
+PROPOSICAO PF-ANTT: Nao ha.
+ENCAMINHAMENTO: A VOTACAO - DIRETORIA COLEGIADA
+1. EMENTA
+1.1. RECURSO ADMINISTRATIVO. DELIBERACAO ANTT N 467/2025. COBRANCA DE PEDAGIO
+EM FLUXO LIVRE (FREE FLOW). RODOVIA BR-116/SP. REGIAO METROPOLITANA DE SAO PAULO (KM 2O5
+DE REGULAMENTACAO ESPECiFICA DA ANTT; (II) VIOLACAO A NORMAS HIERARQUICAMENTE SUPERIORES
+INADEQUACAO DOS MEIOS DE PAGAMENTO PARA USUARIOS SEM DISPOSITIVO ELETRONICO DE
+IDENTIFICACAO. ARGUICOES IMPROCEDENTES. INEXISTENCIA DE ViCIO DE LEGALIDADE NO ATO
+ADMINISTRATIVO IMPUGNADO. COBRANCA EM FLUXO LIVRE EXPRESSAMENTE AUTORIZADA PELO
+(ARTS. 58 A 63 DA RESOLUCAO ANTT N 6.032/2023); CLAUSULAS 19.5 E 19.6.1 A 19.6.5 DO CONTRATO
+DE CONCESSAO; E RESOLUCAO ANTT N? 5.999/2022 (SANDBOX REGULATORIO). SUPERVENIENCIA DA
+RESOLUCAO ANTT N 6.079, DE 26 DE MARCO DE 2026, EDITADA NO PROCESSO N 50500.284423/2022-
+23 (AUDIENCIA PUBLICA ABERTA PELA DELIBERACAO ANTT N? 489/2024), QUE REGULAMENTA O
+RCR1, RCR2, RCR3 E RCR4, COM VACATIO LEGIS DE 120 (CENTO E VINTE) DIAS (ART. 69). PRESERVACAO
+INTEGRAL DO REGIME JURiDICO DA DELIBERACAO IMPUGNADA DURANTE O INTERREGNO E
+RELATORIO
+2.
+2.1. Do Objeto
+2.1.1. Trata-se de Recurso Administrativo apresentado pelo Sindicato dos Transportadores
+Autonomos de Cargas de Guarulhos e Regiao - SINDITAC-GRU em face da Deliberacao ANTT n? 467, de
+25 de novembro de 2025 (SEl n° 37569496), prolatada no ambito do Processo n 50505.044581/2025-45
+que autorizou o inicio da cobranca de tarifa de pedagio na modalidade fluxo livre (free flow) na rodovia
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 1/11
+[pg 1]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+BR-116/sP, na Regiao Metropolitana de Sao Paulo, compreendendo o trecho do km 205 ao km 230, com
+cobranca nos segmentos SP1, SP2, SP3, RJ1, RJ2, RJ3 e RJ4.
+2.1.2. O presente voto refere-se ao Processo n 50500.066793/2025-23, no qual o SINDITAC-GRU
+impugna a Deliberacao 467/2025, arguindo sua suposta ilegalidade, e ao qual foi dado seguimento
+regulatorio até a presente deliberacao.
+2.2.
+Do Historico Processual
+2.2.1. Em 25 de novembro de 2025, a Diretoria Colegiada da ANTT prolatou a Deliberacao n 467,
+autorizando o inicio da cobranca de tarifa de pedagio na modalidade free flow no trecho urbano da BR-
+116/SP compreendido entre o km 205 e o km 230, na Regiao Metropolitana de Sao Paulo, com postos de
+cobranca eletronica nos segmentos SP1, SP2, SP3, RJ1, RJ2, RJ3 e RJ4.
+2.2.2. Em 1 de dezembro de 2025, o SINDITAC-GRU interpos Recurso Administrativo contra a
+Deliberacao 467/2025, protocolado sob o SEl n? 37.664.528, arguindo que o ato administrativo padece de
+"vicio de legalidade insanavel", por auséncia de regulamentacao especifica da ANTT disciplinando a
+cobranca de pedagio na modalidade de fluxo livre, e por suposta violacao a normas hierarquicamente
+superiores e a politicas publicas do Poder Executivo Federal.
+2.2.3. Em 3 de fevereiro de 2026, a Superintendencia de Infraestrutura Rodoviaria (SUROD), por
+meio do Despacho SEl n 39.278.100, encaminhou o feito a Geréencia de Regulacao Rodoviaria (GERER)
+para analise e manifestacao sobre o conteudo apresentado.
+2.2.4. Em 19 de marco de 2026, o Gabinete do Diretor-Geral (GAB-DG), por despacho da Chefe de
+Gabinete Substituta (SEl n°40779340), encaminhou o processo a Secretaria-Geral (SEGER) para inclusao
+na pauta de sorteio, nos termos do Regimento Interno da ANTT.
+2.2.5. Em 19 de marco de 2026, conforme Certidao de Distribuicao SEl n? 40.794.140, o processo
+foi distribuido por sorteio ao Diretor Alex Antonio de Azevedo Cruz, para atuacao como Relator, no
+ambito da 276a Reuniao Deliberativa Eletronica (RDE).
+2.2.6. A Nota Técnica SEI n 2.325/2026/CNORD/GERER/SUROD/DIR-ANTT (SEI n°40215232),
+elaborada pela Coordenacao de Normas de Rodovias - CNORD, vinculada a Geréncia de Regulacao
+Rodoviaria - GERER, e datada de 18 de marco de 2026, analisou exaustivamente os argumentos recursais
+fundamentacao deste voto.
+2.2.7. O Relatorio a Diretoria SEl n 107/2026 (SEl n°40740462), subscrito pelo Superintendente
+de Infraestrutura Rodoviaria  sUROD, Fernando de Freitas Bezerra, com lastro na Nota Técnica n?
+2.325/2026/CNORD/GERER, recomendou a Diretoria Colegiada o conhecimento do recurso e a negativa
+de provimento, mantendo-se integralmente os efeitos da Deliberacao ANTT n? 467/2025.
+2.2.8. Em 14 de abril de 2026, o Relator, Diretor Alex Antonio de Azevedo Cruz, por meio do
+Oficio SEl n 14.724/2026/DAA-ANTT (SEl n°41725044), encaminhou o processo a Secretaria-Geral -
+SEGER para inclusao na pauta da 276a Reuniao Deliberativa Eletronica - RDE, com fundamento no art. 79
+do Regimento Interno da ANTT (Resolucao ANTT n 5.976, de 7 de abril de 2022), propondo a submissao
+do feito a deliberacao da Diretoria Colegiada, mediante o sistema SEI JULGAR.
+2.2.9.
+No curso da tramitacao do presente recurso administrativo, foi editada a Resolucao ANTT
+n² 6.079, de 26 de marco de 2026 (SEl n°41073568), no bojo do Processo n² 50500.284423/2022-23, que
+6.000/2022), o RCR3 (Resolucao ANTT n² 6.032/2023) e o RCR4 (Resolucao ANTT n² 6.053/2024), com
+vistas a regulamentacao do sistema de livre passagem (free flow) em vias urbanas e rurais sob
+entra em vigor em 12o (cento e vinte) dias, contados de sua publicacao", de sorte que, durante todo o
+da mesma Resolucao 6.079/2026.
+3. FUNDAMENTACAO
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 2/11
+[pg 2]
+
+28/04/2026,11:34 SEI/ANTT-41960480-Voto DAA
+3.1. Da Admissibilidade
+3.1.1. O recurso administrativo é tempestivo, tendo sido interposto no prazo legal, e o recorrente
+possui legitimidade ativa para sua propositura, tratando-se de entidade representativa de categoria
+profissional diretamente afetada pela cobranca de pedagio no trecho concedido.
+3.1.2. A competencia da ANTT para conhecer e decidir o presente recurso administrativo é
+inequivoca, decorrendo: (i) do art. 22, inciso V, c/c art. 26, incisos Vl e Vll, da Lei n² 10.233/2001, que
+definem a esfera de atuacao da Agencia sobre a exploracao da infraestrutura rodoviaria federal e suas
+do Regimento Interno da ANTT (Resolucao ANTT n 5.976, de 7 de abril de 2022), que atribui a Diretoria
+Colegiada competencia para decidir, em grau final, os recursos administrativos no ambito da Agencia; e
+Publica Federal e asseguram a revisao das decisoes por razoes de legalidade e de mérito.
+3.1.3. Estao presentes os requisitos de admissibilidade - legitimidade, interesse, tempestividade
+e adequacao formal - nao havendo vicios processuais que obstem o conhecimento do recurso pela
+Diretoria Colegiada.
+3.1.4. Do pedido de medida liminar. O recorrente pleiteou, no item Ill de sua peca recursal, a
+concessao de medida liminar, inaudita altera pars, para suspender imediatamente os efeitos da
+Deliberacao ANTT n? 467/2025, sob invocacao dos pressupostos do fumus boni iuris e do periculum in
+tampouco se identificam, nos autos, fundamentos fatico-juridicos que autorizassem a tutela pretendida.
+superveniente de objeto, uma vez que a questao de fundo - a alegada ilegalidade da Deliberacao
+467/2025 - é nesta oportunidade examinada e resolvida em cognicao exauriente pelo Colegiado.
+3.2. Da Analise de Mérito
+3.2.1. O sistema de cobrana por fluxo livre (free flow) autorizado pela Deliberacao 467/2025
+aplica-se ao trecho urbano da BR-116/SP compreendido entre o km 205 e o km 230, na Regiao
+Metropolitana de Sao Paulo, com postos de cobranca eletronica nos segmentos SP1, SP2, SP3, RJ1, RJ2,
+RJ3 e RJ4, em extensao de aproximadamente 25 km.
+3.2.2. A BR-116, no segmento urbano da Regiao Metropolitana de Sao Paulo, constitui eixo viario
+de altissima circulacao, com fluxo pesado de veiculos comerciais e de passageiros, conectando a capital
+paulista a regiao do Grande ABC e ao corredor rumo ao Estado do Rio de Janeiro.
+3.2.3. O modelo free flow implantado no trecho caracteriza-se pela ausencia de pracas fisicas de
+pedagio, com cobranca eletronica automatica por meio de porticos equipados com tecnologia de leitura
+de tags e de reconhecimento de placas veiculares (OCR/ANPR), garantindo a cobranca tarifaria
+proporcional a distancia percorrida e a fluidez do trafego urbano.
+3.2.4. A implantacao do sistema free flow no trecho urbano da BR-116/SP representa evolucao
+do modelo de cobranca eletronica implementado com sucesso em trechos rodoviarios de outras
+concessoes reguladas pela ANTT, adequando-se as caracteristicas de trafego intenso da regiao
+metropolitana.
+3.2.5. Conclusao parcial: O sistema de cobranca em fluxo livre autorizado pela Deliberacao
+467/2025 é tecnicamente justificado e opera dentro do marco regulatorio aplicavel, nao havendo
+irregularidade no ato impugnado.
+3.3. Do Enquadramento Normativo
+3.3.1. O ordenamento juridico brasileiro oferece base legal ampla e suficiente para a cobranca de
+pedagio na modalidade de fluxo livre. A Lei n 14.157, de 19 de junho de 2021, estabeleceu as condicoes
+gerais para implementacao de sistemas de livre passagem nas rodovias nacionais, dispondo, em seu art.
+proporcionalidade com o trecho da via efetivamente utilizado - finalidade que foi igualmente
+incorporada, pela propria Lei n 14.157/2021, a Lei n² 10.233/2001, art. 26, $ 2, que hoje determina a
+ANTT, na elaboracao dos editais de licitacao das concessoes rodoviarias federais, a utilizacao de sistema
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 3/11
+[pg 3]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+tarifario que guarde essa proporcionalidade. Ha, portanto, dupla ancoragem legal da cobranca
+exclusivamente em pracas fisicas de cobranca.
+3.3.2. O Regulamento das Concessoes Rodoviarias (RCR3), aprovado pela Resolucao ANTT n?
+6.032, de 21 de dezembro de 2023, estabelece em sua Subsecao ll - Fluxo Livre (arts. 58 a 62),
+complementada pelo art. 63 (alocacao de riscos), que a concessionaria podera implementar cobranca de
+tarifa de pedagio em fluxo livre, sem necessidade de desaceleracao dos veiculos ou de instalacao de
+pracas fisicas de pedagio, observados os requisitos dos ss 1 a 4 do art. 58.
+3.3.3. Nos termos do art. 59 do RCR3, a concessionaria deve submeter a ANTT projeto inicial de
+cobranca em fluxo livre, contendo, no minimo, a definicao do trecho abrangido, a descricao da estrutura
+pagamento admitidas, os incentivos a adesao ao pagamento automatico, as medidas de reducao de
+inadimplencia e mitigacao de evasoes, a estimativa de evasoes e os mecanismos de protecao de dados
+pessoais  requisitos devidamente atendidos no caso da Deliberacao 467/2025, conforme analise técnica
+da Superintendencia competente e aprovacao da Diretoria Colegiada, na forma do s 5 do art. 59.
+em ambiente experimental (sandbox), formalizada nos termos da Resolucao ANTT n 5.999/2022 e
+consubstanciada em Termo de Referéncia de Ambiente Regulatorio Experimental celebrado entre a ANTT
+e a Concessionaria do Sistema Rodoviario Rio-Sao Paulo S.A., o que permitiu teste controlado do pedagio
+eletronico sem parada de veiculos, avaliacao de impactos operacionais e regulatorios e consolidacao
+de concessao do Sistema Rodoviario Rio-Sao Paulo (Edital n? 03/2021), especialmente nas clausulas
+19.6.1 a 19.6.5, que disciplinam o Gerenciamento de Trafego no Trecho Metropolitano mediante
+mecanismo de Free Flow, a condicionacao de sua cobranca a conclusao das obras de ampliacao de
+capacidade, a destinacao das receitas a Conta do Free Flow - nao configurando, portanto, inovacao
+regulatoria ou alteracao contratual unilateral, mas a mera implementacao operacional de mecanismo
+previamente estabelecido no instrumento contratual.
+3.3.4. A Resolucao CONTRAN n? 1.013, de 14 de outubro de 2024, dispoe sobre os sistemas de
+livre passagem (free flow) em vias urbanas e rurais, estabelecendo padroes técnicos de
+interoperabilidade, identificacao veicular e cobranca eletronica. Cumpre observar, todavia, que a
+invocacao da Resolucao CONTRAN n? 1.013/2024 pelo recorrente nao tem o condao de afastar a
+regulamentacao setorial estabelecida pela ANTT, porquanto aquela norma dispoe sobre aspectos
+relacionados a circulacao e ao transito de veiculos - matéria de competéncia do cONTRAN -, nao
+alcancando a disciplina da prestacao do servico publico de exploracao de infraestrutura rodoviaria
+concedida, cuja competéencia regulatoria é atribuida a ANTT nos termos da Lei n? 10.233/2001.
+3.3.5. A Portaria MT n² 995, de 17 de outubro de 2023, que institui a Politica Nacional de
+Outorgas Rodoviarias, reconhece o sistema de fluxo livre como modalidade legitima de cobranca tarifaria
+no ambito de concessoes rodoviarias.
+3.3.6. A Lei n? 13.848/2019, que dispoe sobre a gestao, organizacao, processo decisorio e
+condicoes de exploracao de servicos de transporte terrestre, incluindo a definicao de modalidades de
+cobranca aplicaveis.
+3.3.7. Conclusao parcial: O arcabouco normativo aplicavel - Lei n² 14.157/2021, Lei n?
+10.233/2001 (art. 22, V, e art. 26, Vl-Vll e s 2, este ultimo com a redacao dada pela Lei n² 14.157/2021),
+Lei n² 13.848/2019, RCR3 (Subsecao Il - arts. 58 a 62, e art. 63 sobre alocacao de riscos), Resolucao
+ANTT n 5.999/2022 (sandbox), Resolucao CONTRAN n 1.013/2024 e Portaria MT n² 995/2023 (art. 13, S
+para lastrear a Deliberacao 467/2025, nao havendo omissao regulatoria que configure vicio de legalidade.
+3.4. 3.3-A. Da Superveniencia da Resolucao ANTT n 6.079/2026 e do Regime de Transicao
+Regulatorio
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 4/11
+[pg 4]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+3.3-A.1. Da edicao da Resolucao ANTT n? 6.079/2026. No curso da tramitacao do presente recurs0
+precisamente aquele invocado pelo recorrente como evidencia de suposta "mora regulatoria" , editou a
+Resolucao ANTT n 6.079, de 26 de marco de 2026 (SEl n°41073568), que promoveu alteracoes
+simultaneas nas quatro normas que compoem o Regulamento das Concessoes Rodoviarias: RCR1
+6.032/2023) e RCR4 (Resolucao ANTT n² 6.053/2024) 一, consolidando, em disciplina integrada e
+pormenorizada, a regulamentacao do sistema de livre passagem (free flow) no ambito das concessoes
+rodoviarias federais.
+plano infralegal, os pilares ja contemplados no arcabouco anterior, destacando-se: (i) a explicitacao, no
+tarifas proporcionais ao trecho efetivamente percorrido - em total alinhamento com o art. 1? da Lei n?
+s 3, do RcR2, de disponibilizacao de multiplos meios de pagamento (dinheiro em espécie, cartao de
+débito, cartao de crédito, Plx e dispositivos de arrecadacao eletronica); (ili) a previsao, no novo art. 63-C
+do RcR3, de tres momentos distintos de pagamento - antes, durante e apos a passagem do veiculo pelo
+portico -, com plataformas digitais e postos de atendimento presencial; (iv) a pormenorizacao técnica da
+infraestrutura tecnologica e da interoperabilidade (arts. 201-A a 201-F, acrescidos ao RCR2); (v) a
+disciplina detalhada da matriz de riscos de inadimpléncia entre Poder Concedente e concessionaria (arts.
+63-H e 81-A do RCR3 e arts. 180-A a 180-D do RCR2, relativos a conta de compensacao do sistema de livre
+que tipifica, como infracoes administrativas dos grupos 3, 4 e 5, o descumprimento das obrigacoes
+regulatorias do sistema de livre passagem - incluindo, entre outras, a conduta de "deixar de
+tarifa de pedagio" (art. 22, ll) e a de "deixar de efetuar a devolucao em dobro dos valores pagos em razao
+de cobrangas indevidas no prazo estabelecido" (art. 24, esta ultima enquadrada no grupo de maior
+severidade).
+clausula expressa, que "esta Resolucao entra em vigor em 120 (cento e vinte) dias, contados de sua
+publicacao". Trata-se de vacatio legis razoavel e compativel com a natureza técnico-operacional das
+tecnologicos pelas concessionarias, a eventual celebracao de aditivos contratuais (nos termos do art. 170,
+s 2, do RCR2 alterado) e a integracao progressiva dos novos parametros de interoperabilidade (art. 201-
+B, $s 2 e 3, do RCR2 alterado).
+3.3-A.4. Da plena vigéncia do regime atual durante a vacatio. Durante o periodo de vacatio legis,
+6.079/2026. A Deliberacao ANTT n 467/2025, 0ra recorrida, foi editada em 25 de novembro de 2025,
+sob a égide integral do RcR3 em sua redacao original, encontrando-se, portanto, perfeitamente
+respaldada no arcabouco normativo a época vigente - situacao que permanece inalterada até o término
+da vacatio.
+3.3-A.5. Da compatibilidade material com o novo regime. Para além da preservacao formal do ato
+impugnado durante a vacatio, cumpre destacar que os pilares operacionais da Deliberacao ANTT n?
+467/2025 - cobranca proporcional ao trecho percorrido, utilizacao de infraestrutura de porticos com
+identificacao veicular automatica e integracao com o contrato de concessao do Sistema Rodoviario Rio-
+ANTT n² 6.079/2026. Assim, mesmo apos o termo final da vacatio (aproximadamente 120 dias apos a
+publicacao da Resolucao 6.079/2026 no Diario Oficial da Uniao), o ato recorrido permanecera em plena
+harmonia com o novo marco regulatorio, sem necessidade de sua revisao, repactuacao ou reedicao.
+3.3-A.6. Desmontagem definitiva da tese de "mora regulatoria". A promulgacao da Resolucao ANTT n?
+6.079/2026 - no proprio processo regulatorio invocado pelo recorrente como evidencia de suposta
+omissao normativa - desmonta de forma definitiva o argumento central da peca recursal. A ANTT, longe
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 5/11
+[pg 5]
+
+28/04/2026, 11:34 SEI/ANTT - 41960480 - Voto DAA
+de incorrer em mora normativa, conduziu, de maneira concomitante e escalonada, tanto a aplicacao do
+arcabouco entao vigente (consubstanciada na Deliberacao 467/2025) quanto a atualizacao regulamentar
+consonancia com o dever regulatorio conferido pela Lei n 10.233/2001 e pela Lei n 13.848/2019.
+regulatorio invocado pelo recorrente, reforca a legitimidade da Deliberacao ANTT n? 467/2025, na
+RCR3 durante toda a vacatio legis de 120 dias; (ii) seu conteudo material é inteiramente compativel com o
+6.079/2026 evidencia o exercicio tempestivo e diligente da competencia regulatoria desta Agencia,
+afastando de maneira definitiva qualquer alegacao de omissao normativa.
+3.5. Do Quadro Fatico-Técnico
+3.5.1. Da alegacao de auséncia de regulamentacao especifica da ANTT. O recorrente sustenta que
+a Deliberacao 467/2025 seria ilegal por inexistir regulamentacao especifica da ANTT disciplinando a
+cobranca de pedagio na modalidade de fluxo livre. Tal alegacao nao procede. Conforme demonstrado na
+secao 3.3, o RCR3 (arts. 58 a 63) ja contempla expressamente a modalidade de cobranca em fluxo livre,
+estabelecendo os requisitos para sua implementacao  submissao de projeto inicial a ANTT, observancia
+de padroes de interoperabilidade e de identificacao veicular, assuncao exclusiva pela concessionaria dos
+Deliberacao 467/2025 constitui, precisamente, o ato administrativo previsto no § 5? do art. 59 do RCR3,
+por meio do qual a Diretoria Colegiada, a luz da analise técnica da Superintendencia competente,
+aprovou o projeto inicial apresentado pela concessionaria e autorizou o inicio da cobranca no trecho
+concedido, no ambito de contrato de concessao vigente e sob supervisao regulatoria desta Agencia.
+3.5.1.1. Especificamente quanto ao argumento recursal de que estaria em curso processo
+administrativo (n? 50500.284423/2022-23)destinado a regulamentacao do tema, com audiencia publica
+a Nota Técnica n 2.325/2026/CNORD, que tal iniciativa configura processo regulatorio voltado ao
+aperfeicoamento continuo do arcabouco normativo vigente  mecanismo ordinario da atividade
+operacionais. A existencia de processo regulatorio voltado ao aprimoramento de determinada matéria
+aplicaveis, tampouco invalida os atos administrativos praticados com fundamento no RcR3. Consoante
+Resolucao ANTT n? 6.079, de 26 de marco de 2026, a qual, ao estabelecer vacatio legis de 120 (cento e
+vinte) dias em seu art. 6, assegura, durante todo esse interregno, o pleno vigor dos arts. 58 a 63 do RCR3
+— arcabouco em que se fundamenta a Deliberacao ANTT n 467/2025 -, além de disciplinar o sistema
+de livre passagem em termos materialmente compativeis com o ato impugnado.
+3.5.1.2. Cumpre, por fim, sublinhar a inversao dialetica fundamental que encerra esta controversia:
+o Processo n 50500.284423/2022-23, invocado pelo recorrente como prova cabal de suposta mora
+regulatoria desta Agencia, revelou-se, no curso da tramitacao do proprio recurso ora examinado, o
+instrumento mesmo pelo qual a ANTT exerceu, de forma tempestiva, diligente e completa, a competencia
+regulatoria cuja omissao se Ihe imputava - culminando na edicao da Resolucao ANTT n? 6.079/2026. O
+argumento recursal, portanto, auto-refuta-se: o proprio elemento invocado como evidencia da pretensa
+da diligencia com que esta Agencia conduziu, ao longo de mais de trés anos (desde a abertura do
+processo regulatorio em 2022), o aperfeicoamento normativo da materia. Nao ha, pois, mora regulatoria
+a sanar, nem lacuna normativa a preencher: ha, ao contrario, exercicio pleno da competencia regulatoria,
+demonstrado institucionalmente pela trajetoria do proprio processo invocado como suporte da alegacao
+recursal.
+3.5.2. Da alegacao de violacao a normas hierarquicamente superiores e a politicas publicas do
+Poder Executivo. O recorrente afirma que a Deliberacao 467/2025 violaria frontalmente disposicoes
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 6/11
+[pg 6]
+
+28/04/2026, 11:34 SEI/ANTT-41960480-Voto DAA
+sustenta em qualquer das duas frentes.
+3.5.2.1. Quanto a Resolucao CONTRAN n 1.013/2024, o silogismo recursal - "o art. 3 atribui ao
+regulatoria" - ignora dois elementos: (i) a ANTT ja regulamentou a matéria no ambito de sua
+competencia, por meio do RCR3 (arts. 58 a 62 da Resolucao ANTT n² 6.032/2023, c/c art. 63), de sorte
+que a obrigacao decorrente do art. 3o da cONTRAN esta devidamente cumprida; e (ii) a Resolucao
+CONTRAN disciplina aspectos relacionados a circulacao, sinalizacao e fiscalizacao de infracoes de transito,
+no ambito das competéencias conferidas pelo Codigo de Transito Brasileiro - com regramento
+complementar sobre homologacao do sistema perante o orgao maximo executivo de transito da Uniao
+(CONTRAN 1.013/2024, art. 3, Ss 1 a 39) -, nao alcancando a disciplina da prestacao do servico publico
+nos termos do art. 22, inciso V, c/c art. 26, incisos Vl e Vll, da Lei n 10.233/2001. Nao ha, portanto,
+conflito normativo nem omissao regulatoria a sanar.
+3.5.2.2. Quanto a Portaria MT n 995/2023, trata-se de diretriz de politica publica voltada a
+estruturacao de novos projetos de concessao e a evolucao dos modelos contratuais, sem aptidao para
+alterar unilateralmente as condicoes economico-financeiras de contratos vigentes nem para impor, de
+forma automatica, modificacoes tarifarias em concessoes em curso. A eventual implementacao de
+mecanismos de desconto para usuarios frequentes deve observar a estrutura economico-financeira de
+cada contrato e as condicoes regulatorias especificas da concessao respectiva. No caso concreto, o
+contrato de concessao do Sistema Rodoviario Rio-Sao Paulo preve expressamente, em sua clausula 19.5, a
+aplicacao do Desconto de Usuario Frequente - DUF, vinculando a concessao do beneficio a utilizacao do
+Sistema de Cobranca Eletronica (Avl) - previsao que reflete o modelo tecnologico predominante a época
+da licitacao, no qual os mecanismos de identificacao automatica de veiculos por etiquetas eletronicas
+constituiam a principal forma de viabilizar descontos progressivos aos usuarios frequentes. A evolucao
+descontos a utilizacao exclusiva de dispositivos eletronicos de identificacao veicular e sem configurar
+inovacao em relacao ao arcabouco vigente.
+3.5.2.3. Cumpre destacar, ademais, ponto que desmonta frontalmente a premissa recursal quanto
+995/2023, em seu art. 13, $ 4, preconiza que "a implantacao de sistemas de pedagiamento automatico
+de livre passagem ('Free Flow') deve, preferencialmente, ser contemplada nos contratos de concessao
+federal, no inicio do pedagiamento ou, na impossibilidade, dentro de prazo razoavel definido
+contratualmente, preferencialmente, até o 5? ano". A diretriz ministerial, portanto, longe de obstar a
+cobranca em fluxo livre, fomenta e prioriza sua adocao nas concessoes rodoviarias federais  reforcando,
+ANTT n 467/2025.
+3.5.2.4. O quadro de convergencia normativa é ainda confirmado, em perspectiva prospectiva, pela
+requisitos de infraestrutura dos porticos, padroes de identificacao veicular e exigéncias de
+interoperabilidade aplicaveis as concessionarias federais, em coordenacao sistematica com os padroes
+portanto, nao tensao mas coordenacao normativa deliberada entre as esferas de competencia da ANTT
+portanto, para a tese recursal de violacao ou conflito normativo.
+3.5.3. Da alegacao de utilizacao do free flow como mecanismo de gerenciamento de trafego
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 7/11
+[pg 7]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+caso concreto, constitui modalidade de cobranca tarifaria - e nao instrumento autonomo de
+gerenciamento de trafego -, expressamente prevista no contrato de concessao (clausulas 19.6.1 a
+da Tarifa das Pistas Expressas com base em mecanismo de Free Flow, nos termos do Anexo 14 do
+que guardem maior proporcionalidade com o trecho da via efetivamente utilizado. A legislacao federal,
+portanto, reconhece e legitima o free flow como forma de cobranca tarifaria proporcional ao uso da
+infraestrutura  nao, como pretende o recorrente, como mecanismo de gerenciamento de trafego
+dissociado de base juridica.
+3.5.3.1. Releva registrar, em argumento de reforco, que a Resolucao ANTT n 6.079/2026, editada
+no bojo do Processo n² 50500.284423/2022-23 - o mesmo processo regulatorio invocado pelo
+recorrente como evidencia de suposta "mora regulatoria" - consolidara prospectivamente, em plano
+infralegal, a qualificacao do sistema de livre passagem como instrumento de cobranca tarifaria
+proporcional, e nao de gerenciamento de trafego. Com efeito, o novo art. 63-A, inciso I, do RCR3
+(introduzido pela referida Resolucao, em vigor apos a vacatio legis de 120 dias - art. 6) elencara
+expressamente, como primeira finalidade do sistema de livre passagem, "permitir o pagamento de tarifas
+proporcionais ao trecho efetivamente percorrido", ao passo que o  3 do mesmo dispositivo
+determinara, como imperativo regulatorio, que "na implementacao da cobranca proporcional, a tarifa
+devera assegurar a correspondéncia entre o valor cobrado e o trecho percorrido". A qualificacao juridica
+resta, assim, desautorizada por uma triplice ancoragem: legal (art. 1? da Lei n² 14.157/2021),
+regulamentar atual (arts. 58 a 63 do RCR3, vigentes ao tempo da Deliberacao impugnada e durante todo
+o interregno recursal) e regulamentar prospectiva (art. 63-A, I, e § 3, introduzidos pela Resolucao
+6.079/2026). A Deliberacao ANTT n? 467/2025, fundada no regime regulamentar atual e amparada pela
+dostrés vetores normativos.
+3.5.4. Da alegacao de inadequacao dos meios de pagamento para usuarios sem dispositivo
+eletronico de identificacao. O recorrente sustenta, ainda, que o sistema autorizado submeteria os
+usuarios que nao possuem tags a buscar, por meio de sistemas informaticos acessiveis apenas pela rede
+mundial de computadores, as passagens efetuadas pelos porticos de cobranca, sob pena de multa por
+do RCR3 determina que a tecnologia empregada pela concessionaria devera permitir ao usuario associar
+o seu veiculo ou perfil a meios eletronicos de pagamento, observadas as normas de padronizacao; e o art.
+admitidas, os incentivos a adesao ao pagamento automatico (inclusive mediante desconto) e as medidas
+multiplos meios de pagamento da tarifa de pedagio e encontra-se em permanente processo de
+incorporar novas solucoes tecnologicas e ampliar as alternativas disponiveis aos usuarios. Quanto a
+referencia recursal a "multas por evasao", cumpre registrar que a propria Lei n 14.157/2021, em seu art.
+2, inseriu no Codigo de Transito Brasileiro (Lei n? 9.503/1997) o art. 209-A, o qual tipifica como infracao
+de natureza grave, punida com multa, a conduta de "evadir-se da cobranca pelo uso de rodovias e vias
+urbanas para nao efetuar o seu pagamento, ou deixar de efetua-lo na forma estabelecida". A previsao
+legal da infracao, portanto, integra o mesmo arcabouco legislativo que estabeleceu o sistema de livre
+passagem e antecede qualquer ato regulatorio especifico. Eventuais inconsistencias operacionais
+vicio de legalidade do ato autorizativo ora impugnado.
+3.5.4.1. Cumpre acrescentar, em reforco, argumento que evidencia de maneira definitiva a
+fragilidade da presente alegacao: o proprio Processo n² 50500.284423/2022-23 ， invocado pelo
+recorrente como evidéencia de suposta lacuna regulatoria, culminou na edicao da Resolucao ANTT n?
+6.079, de 26 de marco de 2026, cuja disciplina prospectiva - a entrar em vigor ao fim da vacatio legis de
+120 dias (art. 69) - contempla, com acentuado rigor, precisamente a matéria dos meios de pagamento
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_sist... 8/11
+[pg 8]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+ora impugnada. A titulo ilustrativo do grau de diligencia regulatoria da Agencia sobre o tema, o novo art.
+55,  3, do RCR2 (introduzido pela Resolucao 6.079/2026) impora a concessionaria a disponibilizacao
+minima de cinco meios de pagamento - dinheiro em especie em moeda nacional; cartao de débito;
+cartao de crédito; pagamento instantaneo brasileiro (PiX); e dispositivos de arrecadacao eletronica de
+pedagio; o novo art. 63-C do RCR3 prevera trés momentos distintos de pagamento - antes, durante e
+apos a passagem do veiculo pelo portico, com plataformas de venda online, postos de servico de
+atendimento ao usuario e rede credenciada; e o novo art. 22, inciso Ill, do RCR4 tipificara como infracao
+tarifa de pedagio". Verifica-se, assim, que a mesma Agéncia a qual o recorrente imputa omissao
+regulatoria, no proprio processo por ele invocado, (i) positivou regra expressa de multiplos meios de
+pagamento; (ii) estabeleceu pluralidade de momentos para quitacao; e (ili) criou sancao especifica para
+eventual descumprimento - evidéncia cabal, portanto, do exercicio pleno, tempestivo e diligente da
+competencia regulatoria. Sublinha-se, para preservar a fidelidade temporal, que a Deliberacao ANTT n?
+467/2025 foi editada e permanecera regida, durante todo o periodo de vacatio legis, pelo arcabouco do
+RCR3 em sua redacao original (arts. 58 a 63), que ja admite, como demonstrado acima, multiplos meios
+de pagamento - de modo que a superveniéncia regulatoria apenas confirma prospectivamente a
+adequacao da providencia ora recorrida, sem alterar seu fundamento normativo atual.
+3.5.5. Da conclusao da analise fatico-técnica. As alegacoes apresentadas no recurso
+administrativo nao evidenciam qualquer vicio de legalidade ou irregularidade no ato administrativo
+consubstanciado na Deliberacao ANTT n 467/2025. A Deliberacao impugnada foi prolatada em
+conformidade com o marco normativo vigente, com base em analise téecnica da sUROD e da
+GERER/CNORD, e dentro dos poderes regulatorios conferidos a ANTT pela Lei n? 10.233/2001 e pela Lei
+n² 13.848/2019.
+3.6. Da Conclusao da Analise Processual
+3.6.1.
+Apos analise exaustiva dos aspectos formais, técnicos e regulatorios, conclui-se que:
+a) Admissibilidade: O recurso administrativo atende a todos os requisitos de
+admissibilidade, sendo tempestivo, haja sido apresentado por entidade com
+legitimidade recursal, e nao apresentando vicios formais que obstem seu conhecimento;
+b) Mérito: A analise de mérito confirma que as alegacoes do recorrente sao
+improcedentes - inexiste omissao regulatoria invalidante, e a Deliberacao 467/2025
+apoia-se em base legal, regulamentar e contratual solida, constituida pela Lei n?
+14.157/2021, pelo RCR3 (arts. 58 a 63 da Resolucao ANTT n² 6.032/2023), pela
+Resolucao ANTT n? 5.999/2022 (sandbox regulatorio), pelas clausulas 19.5 e 19.6.1 a
+19.6.5 do contrato de concessao do Sistema Rodoviario Rio-Sao Paulo (Edital n?
+03/2021) e, ainda, pelo reconhecimento expresso do modelo na Portaria MT n?
+995/2023. Adicionalmente, a superveniente Resolucao ANTT n? 6.079, de 26 de marco
+de 2026 - editada no ambito do proprio Processo n² 50500.284423/2022-23 invocado
+pelo recorrente e dotada de vacatio legis de 12o (cento e vinte) dias, nos termos de seu
+art. 6 - reforca o respaldo normativo ao ato impugnado, por preservar integralmente
+o regime atual durante o periodo de transicao e por disciplinar o sistema de livre
+c) Enquadramento normativo: O ato impugnado conforma-se integralmente ao
+ordenamento juridico brasileiro, nao havendo conflito com a Resolucao CONTRAN n?
+1.013/2024 - norma dirigida ao sistema nacional de transito - nem com a Portaria MT
+n? 995/2023 - diretriz voltada a estruturacao de novos projetos de concessao, sem
+efeito retroativo sobre contratos vigentes;
+d) Quadro fatico-tecnico: A implementacao do free flow no trecho urbano da BR-116/sP
+é solucao tecnicamente adequada para o contexto de altissima circulacao veicular da
+regiao metropolitana, precedida de experimentacao regulatoria em ambiente
+experimental (sandbox) instituido nos termos da Resolucao ANTT n 5.999/2022 e em
+plena conformidade com o modelo regulatorio da ANTT;
+9/11
+[pg 9]
+
+28/04/2026,11:34 SEI/ANTT-41960480-VotoDAA
+e) Pedido liminar: O pedido de medida liminar formulado no item Ill da peca recursal
+resta prejudicado em razao do julgamento do proprio mérito no presente voto, nao se
+verificando, nos autos, fundamentos que autorizassem sua concessao.
+3.6.2. As alegacoes apresentadas no recurso administrativo nao se sustentam a luz da legislacao
+aplicavel, do marco regulatorio vigente e das disposicoes contratuais que regem a concessao do Sistema
+Rodoviario Rio-Sao Paulo. Nao havendo vicio de legalidade a sanar, revela-se adequado o conhecimento
+do recurso e a negativa de provimento, mantendo-se integralmente a Deliberacao 467/2025.
+4. PROPOSICAO FINAL
+4.1. Diante do exposto, e considerando:
+(i) A competencia legal da ANTT para conhecer e decidir recursos administrativos em
+matéria de regulacao da exploracao de infraestrutura rodoviaria federal concedida, nos
+termos do art. 22, inciso V, c/c art. 26, incisos Vl e Vll, da Lei n? 10.233, de 5 de junho de
+2001, do Regimento Interno da ANTT (Resolucao ANTT n 5.976/2022) e dos arts. 56 a
+65 da Lei n 9.784/1999;
+(i) A analise técnica da Nota Técnica SEI n 2.325/2026/CNORD/GERER/SUROD/DIR-
+ANTT (SEl n° 40215232), que concluiu pela improcedéencia integral das alegacoes do
+recorrente e pela conformidade da Deliberacao 467/2025 com o ordenamento juridico e
+o marco regulatorio vigentes;
+(ili) A fundamentacao da Deliberacao 467/2025 na Lei n 14.157/2021, no Regulamento
+das Concessoes Rodoviarias - RCR3 (arts. 58 a 63 da Resolucao ANTT n 6.032/2023),
+nas clausulas 19.5 e 19.6.1 a 19.6.5 do contrato de concessao do Sistema Rodoviario Rio-
+Sao Paulo (Edital n 03/2021), na Resolucao ANTT n² 5.999/2022 (sandbox regulatorio) e
+na Portaria MT n? 995/2023, que constituem base legal, regulamentar e contratual
+completa e suficiente para a cobranca de pedagio na modalidade de fluxo livre;
+(iv) A auséncia de omissao regulatoria invalidante, tendo o Processo n?
+50500.284423/2022-23 — com audiencia publica aberta pela Deliberacao ANTT n?
+489/2024 - resultado na edicao da Resolucao ANTT n 6.079, de 26 de marco de 2026,
+cuja vacatio legis de 120 (cento e vinte) dias (art. 6) preserva, durante todo o periodo
+de transicao, o pleno vigor dos arts. 58 a 63 do RCR3 - fundamento regulamentar
+do ato recorrido com o novo marco regulatorio a vigorar apos o término da vacatio;
+2.325/2026/CNORD/GERER e no Relatorio a Diretoria SEl n 107/2026, no sentido do
+conhecimento do recurso e da negativa de provimento, mantendo-se a Deliberacao
+impugnada;
+(vi) A manifesta improcedéncia das alegacoes recursais, que nao evidenciam qualquer
+vicio de legalidade ou irregularidade no ato administrativo impugnado - improcedéncia
+da Deliberacao 467/2025 ao RCR3 em sua redacao vigente (arts. 58 a 63) e ao arcabouco
+contratual e legal que a suporta; e (b) no plano prospectivo, pela integral
+compatibilidade material do ato recorrido com a disciplina inaugurada pela Resolucao
+ANTT n² 6.079/2026 - a qual, ao ser editada precisamente no Processo n?
+50500.284423/2022-23 invocado pelo recorrente como suposta prova de mora
+regulatoria, desmonta, pelo proprio curso dos fatos institucionais, todas as alegacoes
+recursais em sua raiz comum (qualificacao tarifaria do free flow, multiplos meios de
+pagamento, interoperabilidade harmonica com a Resolucao CONTRAN n 1.013/2024 e
+regime sancionatorio especifico);
+(vi) A prejudicialidade do pedido de medida liminar formulado no item ll da peca
+recursal, em razao do julgamento de mérito ora proferido em cognicao exauriente;
+4.2. VOTO:
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_si... 10/11
+[pg 10]
+
+28/04/2026,11:34 SEI/ANTT -41960480 - Voto DAA
+a) pelo cONHECIMENTO do Recurso Administrativo interposto pelo Sindicato dos
+Transportadores Autonomos de Cargas de Guarulhos e Regiao - SINDITAC-GRU;
+b) pela PREJUDICIALIDADE do pedido de medida liminar formulado no item III da peca
+recursal, em razao do julgamento de mérito ora proferido em cognicao exauriente e da
+inexistencia, nos autos, de fundamentos que autorizassem a tutela cautelar;
+c) no mérito, pela NEGATIVA DE PROVIMENTO do recurso, mantendo-se integralmente
+a Deliberacao ANTT n 467, de 25 de novembro de 2025, que autorizou o inicio da
+cobranca de tarifa de pedagio na modalidade fluxo livre (free flow) na rodovia BR-
+116/SP, no trecho do km 205 ao km 230, na Regiao Metropolitana de Sao Paulo, nos
+segmentos de cobranca SP1, SP2, SP3, RJ1, RJ2, RJ3 e RJ4, nos termos da Minuta de
+Deliberacao (SEl n°41962217).
+4.3. E o voto.
+Brasilia, 21 de abril de 2026.
+ALEX AZEVEDO
+Diretor
+Agencia Nacional de Transportes Terrestres - ANTT
+sei!
+Documento assinado eletronicamente por ALEX ANTONIO DE AZEVEDO CRUZ, Diretor, em
+22/04/2026, as 10:54, conforme horario oficial de Brasilia, com fundamento no art. 21, inciso Il, da
+assinatura
+eletronica Instrucao Normativa n 22/2023 da ANTT.
+A autenticidade deste documento pode ser conferida no site
+http://sei.antt.gov.br/sei/controlador_externo.php?
+acao=documento conferir&id _orgao _acesso_externo=0, informando o codigo verificador 41960480 e
+O codigo CRC F90BAAFB.
+Referencia:Processon50500.066793/2025-23 SEI n 41960480
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF - www.antt.g0v.br
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=48843565&infra_si... 11/11
+[pg 11]

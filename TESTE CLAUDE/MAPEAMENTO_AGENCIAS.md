@@ -3,7 +3,7 @@
 > **Status real em 08/10/2026 (substitui as hipóteses da pesquisa inicial abaixo, que seguem como histórico):**
 > | Agência | Estado | Votos | Limite |
 > |---|---|---|---|
-> | ANM, ANTT, ARTESP | feito | 1.527 / 1.529 / 2.816 | ANTT 99 PDFs de voto em imagem; ANM 5 REVISAR |
+> | ANM, ANTT, ARTESP | feito | 1.527 / 1.529 / 2.816 | ANTT: 87 PDFs de voto lidos por OCR; 6 atas aguardando publicação; ANM 5 REVISAR |
 > | ANPD, ANVISA, ANP, ANTAQ | feito, QA + auditoria | 110 / 5.795 / 695 / 3.413 | unanimidade = voto inferido |
 > | ANATEL | feito, varredura 100% + auditoria | 2.922 (67,5% nominal) | 9 relatores ex-conselheiros sem linha; CD215 sem placar |
 > | ANEEL | feito, varredura 100% + auditoria | 5.023 (31,6% nominal) | atas PDF bloqueadas (Cloudflare): presença inferida; 20 vistas sem pedinte |

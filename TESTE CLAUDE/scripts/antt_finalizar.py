@@ -64,6 +64,9 @@ def main(a_json, man_json, inv_json, vp_json, rev_json, sa_json=None):
     for (r_, pr_, cod) in cruz['sem_pdf']:
         m = M.get(r_, {}); P.append(['ANTT', f'{r_} · {pr_}', D[(r_, pr_)]['data'], 'Voto escrito citado na ata e não publicado', f'ata cita Voto {cod}; a página da reunião não o lista', 'A página publica só parte dos votos; sem o PDF não confirmamos a relatoria nem a proposta',
                   'Pedir à ANTT o PDF do Voto ' + cod + '; rodar antt_rodar.sh quando publicarem', m.get('url') or URL_LIST])
+    for (r_, pr_, cod, rel_, rels_, procs_) in cruz['divergem']:
+        P.append(['ANTT', f'{r_} · {pr_}', D[(r_, pr_)]['data'], 'Erro da fonte: ata cita Voto ' + cod + ' de outro processo', f'PDF do Voto {cod} é do processo {", ".join(procs_)}; o voto do processo {pr_} publicado na reunião tem outro código',
+                  'Citação errada na ata; relatoria resolvida pelo PDF do voto do processo (revisão curada)', 'Pedir à ANTT a retificação da ata', M[r_].get('url') or URL_LIST])
     for (r_, pr_, cod, hdr) in cruz['cab_diferente']:
         P.append(['ANTT', f'{r_} · {pr_}', D[(r_, pr_)]['data'], 'Erro da fonte: cabeçalho do Voto ' + cod + ' com nº de outro processo (sem efeito)', f'PDF do Voto {cod}: campo PROCESSO(S) = {", ".join(hdr)}; o processo da ata ({pr_}) consta no corpo do voto',
                   'Erro de digitação/modelo na fonte; relatoria e proposta conferem', 'Nenhuma (já reconciliado pelo corpo do voto)', M[r_].get('url') or URL_LIST])
@@ -71,6 +74,10 @@ def main(a_json, man_json, inv_json, vp_json, rev_json, sa_json=None):
         if k == ('RDE268', '50500.047133/2025-43'):
             P.append(['ANTT', f'{k[0]} · {k[1]}', D[k]['data'], 'Dado não publicado na ata (LIMITE DA FONTE)', 'ata RDE268 item 1.1.2: "por maioria", sem nomear quem divergiu', '2 votos (Guilherme e Alex) ficam REVISAR: Felipe ausente (férias) e Severino considerado ausente',
                       'Depende da ANTT publicar o resultado nominal ou o vídeo/ata retificada', M[k[0]].get('url') or URL_LIST])
+    P.append(['ANTT', 'ROD1035 · itens 1.2.1 a 2.1.1', '2026-06-18', 'Ata se contradiz (LIMITE DA FONTE)', 'cabeçalho da ata ROD1035: Diretor-Geral ausente "a partir do item 1.2.1"; porém o item 1.2.3 registra que ele pediu vista',
+              'Adotado: AUSENTE nos itens 1.2.1, 1.2.2, 1.2.4, 1.3.1 e 2.1.1; PEDIU VISTA no 1.2.3 (nominal em ambos)', 'Pedir à ANTT a retificação da ata da 1.035ª', M['ROD1035'].get('url') or URL_LIST])
+    P.append(['ANTT', 'Todas as reuniões · votos em unanimidade', '', 'Dado não publicado na ata (LIMITE DA FONTE)', 'a ata registra "por unanimidade" sem listar o voto de cada diretor; o voto escrito publicado é só o do relator (proposta) e, quando há vista, o do revisor',
+              f'{sum(1 for v in A["votos"] if v["proveniencia"] == "inferido")} votos individuais seguem inferidos (ACOMPANHOU); só o vídeo da sessão (aba Vídeo da página de cada reunião) mostra cada voto', 'Fora de escopo (vídeo); não resolvível por texto', URL_LIST])
     # reuniões realizadas SEM ata: o voto escrito do relator (proposta, sem resultado) é o que a fonte publica -> antt_sem_ata.json (mesmo formato de antt_rde270.json + reuniao/data/voto_doc)
     SA = []
     for r in A['reunioes']:

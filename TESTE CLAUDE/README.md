@@ -10,7 +10,7 @@ Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Document
 ## Agências (status em 08/10/2026)
 | Agência | Estado | Observação |
 |---|---|---|
-| ANM, ANTT, ARTESP | feito | atas em PDF; ANTT: 99 PDFs de voto em imagem não lidos; ANM: 5 linhas REVISAR |
+| ANM, ANTT, ARTESP | feito | ANTT: 87 PDFs de voto lidos por OCR (só trazem a proposta do relator), 11 votos citados na ata não publicados, 6 atas aguardando publicação; ANM: 5 linhas REVISAR |
 | ANPD, ANVISA, ANP, ANTAQ | feito + QA + auditoria | ANVISA inclui Circuitos Deliberativos |
 | ANATEL, ANEEL | feito + varredura 100% + auditoria | ANEEL: atas em PDF bloqueadas (Cloudflare) → presença inferida, ~68% dos votos inferidos |
 | ANA | feito + varredura + auditoria | 61 itens, 244 votos (68% inferidos); atas só dizem 'por unanimidade' |

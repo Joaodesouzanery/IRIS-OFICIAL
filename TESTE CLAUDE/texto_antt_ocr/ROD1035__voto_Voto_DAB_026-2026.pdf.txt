@@ -1,0 +1,226 @@
+19/06/2026,15:39 SEI/ANTT-43366523-VotoDAB
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DAB
+RELATORIA: Diretoria Alessandro Baumgartner -DAB
+TERMO:VOTO ADIRETORIACOLEGIADA
+NUMERO:026/2026
+OBJETO: Revisao metodologica do WACC regulatorio de rodovias
+ORIGEM:SuperintendenciadeConcessaoda Infraestrutura-SUCON
+PROCESSO(S):50500.071083/2025-15
+PROPOSICAoPF/ANTT:Naoha
+ENCAMINHAMENTO:PELAAPROVACAO DO RELATORIODEANALISEDE IMPACTO REGULATORIO -AIR,VERSAO2.O,DOPROJETO REVISAO DAS RESOLUCOES
+RELACIONADAS AO CALCULO DO WACC REGULATORIO PARA O SETOR DE RODOVIAS FEDERAIS CONCEDIDAS.PELAABERTURADA AUDIENCIA PUBLICA PARA
+1. DOOBJETO
+1.1. O presente processo trata da proposta de revisao da metodologia de calculo do Custo Medio Ponderado de Capital-Weighted Average Cost of
+Capital (WAcc) regulatorio aplicavel as concessoes rodoviarias federais, atualmente disciplinada pelas Resolucoes n 6.002, 6.003 e n 6.004, todas de 22 de
+dezembro de 2022.
+1.2. Tratam-se nos autos a respeito da Analise de Impacto Regulatorio - AiR, versao 2.o, do projeto Revisao das Resolucoes relacionadas ao calculo do
+WAcC Regulatorio para o setor de rodovias federais concedidas, bem como propoe-se a abertura de Audiencia Publica para submissao da metodologia de calculo
+do WAcC regulatorio a apreciacao publica e coleta de sugestoes.
+2. DOS FATOS
+SiNTESE SOBRE O WACC
+2.1. O WAcC (Weighted Average Cost of Capital), traduzido nas normas da ANTT como Custo Medio Ponderado de Capital (CMPC), é um indicador que
+representa o custo medio de financiamento de um projeto, combinando o custo do capital proprio e o custo do capital de terceiros. Economicamente, ele reflete
+a remuneracao minima exigida pelos investidores para financiar as atividades de uma concessao, atuando como uma metrica de custo de oportunidade.
+2.2. O indicador é utilizado em diversas fases do ciclo de uma concessao de acordo com o modelo regulatorio atual da ANTT. Por exemplo, vale citar
+sua aplicacao nos contextos de:
+a) Taxa de Desconto em Estudos de Viabilidade (EVTEA): O WAcC é utilizado para trazer a valor presente os fluxos de caixa estimados nos
+estudos tecnicos que precedem a licitacao, sendo fundamental para determinar a tarifa-teto de pedagio e a viabilidade financeira de novos
+projetos;
+b) Recomposigao do Equilibrio Economico-Financeiro (Fluxo de Caixa Marginal): E a taxa aplicada para calcular o reequilibrio dos contratos
+c) Definicao das Faixas de Remuneragao por Risco (CRs): O WACC serve de base para estabelecer diferentes niveis de retorno regulatorio
+licenciamento ambiental);
+d) Parametro de Decisao em Leiloes: A taxa de retorno (TIR) definida via WACC influencia a atratividade do certame para proponentes e a
+agressividade dos desagios ofertados pelas empresas.
+2.3. O historico da regulamentacao do WACC (Weighted Average Cost of Capital),ou CMPC (Custo Medio Ponderado de Capital),pela ANTT revela uma
+evolucao de modelos estritamente deterministicos para abordagens probabilisticas mais sofisticadas, buscando maior aderencia a realidade do mercado de
+infraestrutura.
+2.4. A necessidade de uma metodologia especifica para a taxa de retorno ganhou relevancia apos o Acordao n? 2.154/2007 do TcU, que recomendou a
+ANTT a adequacao das taxas utilizadas para recomposicao do equilibrio economico-financeiro em novos investimentos mediante Fluxo de Caixa Marginal.
+Inicialmente, o tema foi tratado de forma generica na Resolucao n3.651/2011, que deixou em aberto quais parametros e variaveis deveriam ser considerados.
+2.5. A primeira regulamentacao foi entao substituida pela Resolucao n 4.075, de 3 de abril de 2013. Esta resolucao estabeleceu a primeira
+metodologia detalhada para o calculo das variaveis do WAcc, tendo seu foco em parametros inteiramente no mercado doméstico. Vale citar que, por meio da
+Resolucao ANTT n 4.903/2015, a metodologia ate entao adotada foi beneficiada pela introducao de analise probabilistica via Simulacao de Monte Carlo para
+avaliar os cenarios de incerteza macroeconomica no modelo.
+2.6. Atualmente, a metodologia de calculo do WACC regulatorio é estabelecida pela Resolucao ANTT n? 6.003/2022. A norma consolida a estrutura da
+metodologia probabilistica a ser adotada pela ANTT e institui as Classificacoes de Risco (CRO a CR3), que definem diferentes faixas de remuneracao do capital
+regulatorio conforme o perfil de risco de cada projeto de novos investimentos na concessao.
+DANECESSIDADEDEATUALIZACAODAMETODOLOGIA
+2.7. A aplicacao da metodologia em vigor com fulcro na Resolucao ANTT n 6.003/2022 evidencia a necessidade de aprimoramentos observados pela
+Superintendencia de Concessao da Infraestrutura. Em sede de revisoes do modelo, a referida area tecnica destaca no Relatorio a Diretoria 190 (42485080) os
+seguintes pontos criticos:
+i. elevada sensibilidade decorrente da utilizagao de valores pontuais para mensuragao do capital proprio (equity);
+ii. utilizagao de series historicas com horizontes temporais distintos, comprometendo a coerencia estatistica entre variaveis do modelo;
+ii. ausencia de tratamento explicito da dependencia entre variaveis economico-financeiras utilizadas na simulagao probabilistica;
+iv. perda de aderencia empirica das proxies utilizadas para estimagao do beta regulatorio;
+v. utilizagao de proxy de custo de capital de terceiros (RD) pouco representativa da estrutura efetiva de financiamento das concessoes rodoviarias federais; e
+vi. limitagoes interpretativas associadas a metodologia atualmente utilizada para definigao das classificagoes regulatorias de risco (CRs).
+2.8. A revisao proposta tambem responde a observacoes da cGU e recomendacoes de auditorias que apontaram a necessidade de aprimorar o
+tratamento estatistico e a fundamentacao tecnica das variaveis do modelo. As recomendacoes do orgao de controle foram emanadas no seio do Relatorio
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50451569&infra_siste... 1/4
+[pg 1]
+
+19/06/2026,15:39 SEI/ANTT-43366523-VotoDAB
+Preliminar de Auditoria 37307541, recebido pela ANTT em 14 de novembro de 2025 (37307581). Extrai-se das conclusoes do referido relatorio que:
+Quanto a TIR regulatoria (CMPCr), os itens 5.6 a 5.9 indicam que, embora haja evolucao conceitual, ha espaco para aprimorar a alocagao dos fatores de risco e sua
+incidencia sobre o VPL, com criterios mais claros, auditaveis e institucionalizados.
+2.9. Com isso, pretende-se aumentar a aderencia economica do modelo as condicoes reais do mercado de infraestrutura, corrigindo fragilidades
+tecnicas e estatisticas identificadas no arcabouco atual.
+DA INSTRUCAO PROCESSUAL
+2.10. O procedimento de melhoria da metodologia regulatoria contou com reunioes de alinhamento e tomada de subsidios junto ao Ministerio dos
+Transportes, culminando no Relatorio de Analise de Impacto Regulatorio - AlR 42486124.
+2.11. A Procuradoria Federal junto a ANTT - PF-ANTT foi comunicada por meio do Despacho SUCON 42485372, tendo se posicionado pela Cota Ng
+02216/2026/PF-ANTT/PGF/AGU (43046665) no sentido de nao se manifestar por meio de parecer juridico nesta fase do Processo de Participacao e Controle
+Social.
+2.12. Os autos foram instruidos com a Nota Tecnica -ANTT 4941 (42487455)- com seus anexos, Relatorio a Diretoria 190 (42485080) e com as minutas
+dos atos propostos para Deliberacao da Diretoria Colegiada. O processo foi submetido a sorteio nos termos do art. 39 do Regimento Interno da ANTI e,
+conforme Certidao de Distribuicao 42820061, distribuido a minha relatoria.
+2.13. Destaque-se que, no curso da revisao do processo pela Assessoria desta diretoria com vistas a deliberagao pela Diretoria Colegiada, foram
+no Relatorio de Analise de Impacto Regulatorio -AIR 43033880 encaminhado pelo Despacho SUcON 43033336.
+2.14. Sao os fatos, passa-se a analise.
+3. DA ANALISE PROCESSUAL
+3.1. Conforme o art. 12 da Lei n 10.233, de 5 de junho de 2001, entre as diretrizes gerais a serem seguidas pela ANTT no gerenciamento da
+infraestrutura de transportes terrestres esta a priorizacao de programas de acao e investimentos relacionados aos eixos estrategicos de integracao nacional e
+desenvolvimento economico.
+3.2. O Regimento Interno da ANTT, aprovado por meio da Resolucao n 5.976, de 7 de abril de 2022, estabelece, em seu art. 88, os objetivos do
+Processo de Participacao e Controle Social, dentre os quais se destacam:
+I-incentivar a efetiva participagao da sociedade e das partes interessadas;
+II  recolher subsidios para o processo decisorio da ANTT;
+Ill- proporcionar ambiente adequado para manifestagao de usuarios e agentes economicos;
+IV identificar os aspectos relevantes da materia em analise; e
+V  conferir publicidade as acoes regulatorias da Agencia.
+3.3. A Resolucao ANTT n 6.020, de 20 de julho de 2023, que regula os meios de Participacao e Controle Social no ambito da Agencia, estabelece que
+as propostas de realizacao de Audiencia Publica devem ser submetidas a deliberacao da Diretoria Colegiada, com a devida comunicacao previa a Procuradoria
+Federal junto a ANTT - PF-ANTT, conforme realizado por meio de Despacho SEl n 42485372 da SUCON, constante dos autos. Nesse sentido, os arts. 14 e 15 da
+referida Resolucao fundamentam a obrigatoriedade e o rito de convocacao da Audiencia Publica para materias de alto impacto como a revisao da metodologia
+do WACC.
+3.4. O exame do processo em apreco exige minuciosa subsuncao ao arcabouco normativo do Estado regulador brasileiro, em especial a Lei de
+Liberdade Economica, Lei n.9 13.874, de 20 de setembro de 2019, a Lei das Agencias Reguladoras, Lei n. 13.848, de 25 de junho de 2019, e o respectivo Decreto
+regulamentador de ambas as normas, Decreto n. 10.411, de 30 de junho de 2020.
+3.5. A Lei n. 13.874/2019, dispoe em seu art. 5, caput, que as propostas de edicoes e alteracoes de normativos de interesse geral de agentes
+economicos ou de usuarios dos servicos prestados devem ser precedidas da realizacao de Analise de Impacto Regulatorio - AiR, que contera informacoes sobre
+possiveis impactos do ato normativo para verificar a razoabilidade de seus efeitos.
+3.6. Na mesma esteira, o art. 6, da Lei n. 13.848/2019, tambem preve que a adocao e as proposta de alteracao de atos normativos de interesse dos
+agentes economicos e da sociedade em geral devem ser precedidas de AiR, que contera informacoes e dados sobre os possiveis efeitos do ato normativo.
+3.7.
+algumas falhas no primeiro relatorio de AlR (SEl n. 42486124), quanto aos elementos do AlR constantes no art. 69 do Decreto n.9 10.411/2020. Veja-se os
+elementos obrigatorios da AlR:
+O art. 69 do referido Decreto preve que a AIR contera os seguintes elementos:
+II - identificacao do problema regulatorio que se pretende solucionar, com a apresentacao de suas causas e sua extensao;
+IlI-identificacao dos agentes economicos, dos usuarios dos servicos prestados e dos demais afetados pelo problema regulatorio identificado;
+IV - identificacao da fundamentacao legal que ampara a agao do orgao ou da entidade quanto ao problema regulatorio identificado;
+V - definicao dos objetivos a serem alcancados;
+VI - descricao das alternativas possiveis ao enfrentamento do problema regulatorio identificado, consideradas as opcoes de nao acao, de solucoes normativas e de,
+sempre que possivel, solugoes nao normativas;
+Vll- exposigao dos possiveis impactos das alternativas identificadas, inclusive quanto aos seus custos regulatorios;
+VIl-A - os impactos sobre as microempresas e as empresas de pequeno porte; (lncluido pelo Decreto ng 11.243, de 2022) Vigencia
+VIll - consideragoes referentes as informagoes e as manifestagoes recebidas para a AlR em eventuais processos de participacao social ou de outros processos de
+recebimento de subsidios de interessados na materia em analise;
+IX - mapeamento da experiencia internacional quanto as medidas adotadas para a resolucao do problema regulatorio identificado;
+X - identificacao e definicao dos efeitos e riscos decorrentes da edicao, da alteracao ou da revogagao do ato normativo;
+XI - comparacao das alternativas consideradas para a resolucao do problema regulatorio identificado, acompanhada de analise fundamentada que contenha a
+metodologia especifica escolhida para o caso concreto e a alternativa ou a combinacao de alternativas sugerida, considerada mais adequada a resolucao do problema
+regulatorio e ao alcance dos objetivos pretendidos; e
+Xil - descrigao da estrategia para implementagao da alternativa sugerida, acompanhada das formas de monitoramento e de avaliagao a serem adotadas e, quando
+couber, avaliacao quanto a necessidade de alteragao ou de revogacao de normas vigentes.
+3.8. Foi constatado que o requisito do inciso primeiro, sumario executivo objetivo e conciso, nao foi atendido. O sumario executivo é essencial
+para facilitar a compreensao e o acesso das informacoes ao publico em geral.
+3.9. Outrossim, constatou-se tambem o descumprimento do inciso setimo,"A", devendo constar na AiR uma analise dos impactos da alteracao
+normativa sobre as microempresas (ME) e as empresas de pequeno porte (EPP), arrematando o paragrafo segundo do mesmo artigo:"s 2° Em observancia ao
+disposto no inciso Vll-A do caput, o relatorio de AiR incluira a analise dos impactos sobre as microempresas e as empresas de pequeno porte e prevera as medidas que
+poderao seradotadasparaminimizaresses impactos.".
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50451569&infra_siste... 2/4
+[pg 2]
+
+19/06/2026,15:39 SEI/ANTT-43366523-Voto DAB
+3.10. Apos Despacho DAB (SEl n. 43030730), requisitando a area tecnica a revisao da AIR, observa-se que o novo Relatorio (43033880) sanou as
+lacunas identificadas, estando em perfeita harmonia comtodas as normas pertinentes aotema.
+3.11. Seguindo a analise processual, o rito decisorio observou a competencia colegiada e a fundamentagao dos pressupostos de fato e de direito. A
+proposta foi precedida da necessaria fundamentacao analitica (Nota Tecnica n 4941/2026/SUcON [42487455]) e a submissao a diretoria colegiada atende ao
+rito estabelecido no art.6, S 32. A comunicacao a Procuradoria Federal (PF-ANTT), ocorrida em 19/05/2026,garantiu a observancia do rito de controle previo de
+legalidade. Alem disso, o processo atende ao requisito da obrigatoriedade da AiR (art. 5) e a transparencia na modelagem economica, alinhando-se ao principio
+da previsibilidade regulatoria ao substituir na metodologia criterios de discricionariedade nao estruturada por bandas de quantis.
+3.12. O cronograma inicialmente proposto -com divulgacao em 08 de junho e inicio das contribuicoes em 15 de junho de 2026 - ja nao é factivel em
+virtude da data finalizacao da instrucao processual e, consequentemente, de apresentacao deste voto.Desta forma, para o cumprimento integral do prazo de 5
+dias uteis de antecedencia (art. 16, § 5, da Resolucao n.9 6020, de 20 de julho de 2023) e para se assegurar o periodo de 45 dias para a consulta publica (art. 24,
+§ 1, da Resolucao n.2 6020/2023),propoe-se os seguintes prazos para a Audiencia Publica:
+Periodo para conhecimento do projeto: 19 de junho a 25 de junho de 2026;
+Periodo de envio de contribuicoes: 26 de junho a 10 de agosto de 2026.
+ANTT no YouTube.
+3.13. A modalidade hibrida para a Audiencia Publica demonstra pleno alinhamento com a finalidade de maximizacao da participacao social.
+3.14. Em sintese, o rito processual apresenta-se substancialmente cumprido, com todas as pendencias sanadas. O processo encontra-se maduro para a
+abertura do PPCS, eis que acompanhado da devida retificacao no Relatorio de AiR para inclusao da analise de impacto nas ME e EPP e Sumario Executivo. A
+estrutura das minutas de resolucao propostas, ao manterem os spreads em aberto, respeita o postulado da participacao social, evitando o engessamento da
+decisao que somente ocorrera apos o crivo da sociedade civil.
+3.15. No que tange a descricao sintetica das melhorias ao atual modelo de calculo do WAcC, a SUcoN propoe a submissao a Audiencia Publica as
+seguintes alteracoes:
+Mensuracao do Capital Proprio (Equity): Propoe-se substituir o uso de um ponto unico temporal (cotacao de fechamento do ultimo
+dia do ano) pela mediana anual dos precos de fechamento. Isso reduz a sensibilidade a ruidos transitorios e oscilacoes de curtissimo prazo que
+do periodo de um ano.
+II - Padronizagao das Series Historicas: Adota-se uma janela temporal comum (iniciada em 2011) para a maioria das variaveis, garantindo
+homogeneidade estatistica, baseando-se na disponibilidade da serie historica mais recente incorporada ao modelo regulatorio, correspondente
+as series do Banco Central do Brasil (BACEN). A excecao é o calculo do beta, que mantem um horizonte de 5 anos para refletir condicoes mais
+recentes de mercado
+Tratamento da Correlagao entre Variaveis: O modelo deixa de considerar as variaveis como independentes e passa a utilizar o metodo
+de copulas - seguindo a recomendacao dada pela cGu - para modelar a dependencia estatistica entre elas. Isso evita cenarios simulados
+incompativeis com a realidade economica e reduz distorcoes nas"caudas" da distribuicao.
+IV- Calculo do Beta Regulatorio: Devido a flagrante perda de aderencia entre o comportamento das holdings brasileiras e o indice S&P 500
+no periodo 2021-2025, propoe-se o uso de uma proxy setorial calibrada com base em evidencias internacionais de infraestrutura regulada
+(ajustada para um valor central de 1,10 alavancado).
+V- Uso de Retornos Logaritmicos: A modelagem passa a utilizar retornos continuos (logaritmicos) em vez de aritmeticos simples sempre
+que as fontes primarias permitirem esta transformacao. Essa tecnica atenua a intensidade de variacoes extremas e melhora as propriedades
+inferenciais das distribuicoes.
+VI- Revisao do Custo de Capital de Terceiros (Rd): Propoe-se abandonar a media aritmetica simples de series bancarias do BACEN e adotar
+uma abordagem de Rd setorial ponderado. Esta nova metrica incorpora a estrutura efetiva de financiamento das concessionarias, incluindo o
+peso relevante das debentures incentivadas.
+vII - Redefinicao das Classificagoes de Risco (CRs): Substitui-se o criterio de "multiplos do desvio-padrao" por bandas de quantis da
+distribuicao simulada (ex: CRo no P5o, CR1 no P60, etc.). Essa mudanca torna a regra de decisao mais transparente, explicitando como a
+incerteza e repartida entre usuarios e setor privado.
+3.16. Na sintese conclusiva dos aprimoramentos propostos, a area tecnica apresenta o resumo da simulacao considerando os efeitos de todas as
+medidas de aperfeicoamento detalhadas no Relatorio de Analise de Impacto Regulatorio - AiR 43033880. Os efeitos trazem significativa expectativa de alteracao
+dos spreads da Resolucao ANTT n 6.004/2022, conferindo menor variabilidade e maior equilibrio entre os diferentes perfis de risco de projeto, conforme se
+observa no comparativo a seguir. Importa ressaltar que este processo nao trata a respeito da fixacao de novos spreads ao art. 19 da Resolucao ANTT n?
+6.004/2022. Tao somente sao apresentadas simulacoes para melhor avaliacao especulativa dos resultados esperados a partir dos estudos em comento.
+CR Spread Atual Spread Esperado
+CRO 2,09% 2,39%
+CR1 3,52% 2,97%
+CR2 4,94% 3,60%
+CR3 6,37% 4,35%
+3.17. A leitura comparativa dos spreads evidencia um efeito redistributivo deliberado da revisao metodologica proposta. Projetos de menos
+complexidade e risco (CR0) terao remuneracao ligeiramente elevada - de 2,09% para 2,39% - o que reflete um ajuste historico de custo de capital nesses
+ativos. Por outro lado, os spreads das faixas CR1, CR2 e CR3 apresentam expectativas de reducao, fruto da correcao de distorcoes estatisticas identificadas pela
+analise tecnica da SUcON.
+3.18. O efeito liquido sobre o portfolio de concessoes vigentes dependera da classificacao de risco dos investimentos propostos e sera gerado a cada
+revisao ordinaria ou extraordinaria subsequente, tudo apos conducao do presente processo normativo e nos termos que foram fixados na resolugao revisora,
+preservada a seguranca juridica dos certames ja realizados.
+3.19. Por todo o exposto, diante do estagio de maturidade das analises tecnicas e juridicas conduzidas pelas unidades organizacionais da
+Superintendencia de Concessao da Infraestrutura-sucoN, entende-se que o projeto encontra-se apto a ser apresentado a sociedade para coleta de sugestoes e
+contribuicoes no ambito do Processo de Participacao e Controle Social.
+4. DA PROPOSICAO FINAL
+4.1.
+Ante o exposto, VOTO por:
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50451569&infra_siste.. 3/4
+[pg 3]
+
+19/06/2026,15:39 SEI/ANTT- 43366523 -Voto DAB
+-- APROVAR o Relatorio de Analise de Impacto Regulatorio (AIR), constante dos autos (SEl n 43033880);
+APRoVAR a abertura de Audiencia Publica com o objetivo de tornar publica e colher sugestoes a respeito da proposta de revisao da
+metodologia de calculo do WAcC regulatorio, conforme cronograma proposto (divulgacao em 19/06/2026 e inicio das contribuicoes em
+26/06/2026), assegurando o prazo de 45 dias para participacao social, nos termos da Minuta de Deliberacao (43366617), Minuta de Aviso de
+Audiencia Publica (43424147)e Minuta de Portaria de designacao da Comissao da Audiencia Publica (43366727) acostadas aos autos.
+E o voto.
+Brasilia, 18 de junho de 2026.
+(assinado eletronicamente)
+Alessandro Baumgartner
+DIRETOR
+sei!
+Documento assinado eletronicamente por ALESSANDRO BAUMGARTNER, Diretor, em 18/06/2026, as 18:36, conforme horario oficial de Brasilia, com
+assinatura fundamento no art. 21, inciso Il, da Instrucao Normativa ng 22/2023 da ANTT.
+eletronica
+A autenticidade deste documento pode ser conferida no site http://sei.antt.gov.br/sei/controlador_externo.php?
+acao=documento_conferir&id_orgao_acesso_externo=0, informando o codigo verificador 43366523 e o codigo CRC 67Bc6761.
+Referencia: Processo n 50500.029039/2026-93 SEI ng 43366523
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF-www.antt.gov.br
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50451569&infra_siste... 4/4
+[pg 4]

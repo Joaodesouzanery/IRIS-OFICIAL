@@ -8,7 +8,7 @@ from openpyxl.utils import get_column_letter
 anm, antt, art = (json.load(open(f)) for f in ('anm.json', 'antt.json', 'artesp_final.json'))
 man_antt = {r['tag']: r for r in json.load(open('manifesto_antt.json'))}
 inv_antt = json.load(open('antt_inventario.json')); inv_art = json.load(open('artesp_inventario.json'))
-rde270 = json.load(open('antt_rde270.json'))
+rde270 = json.load(open('antt_sem_ata.json')) if os.path.exists('antt_sem_ata.json') else json.load(open('antt_rde270.json'))
 ano = lambda x: (x.get('data') or '')[:4]
 
 # ---- ANM (só 2026)
@@ -26,10 +26,11 @@ for r in antt['reunioes']: R.append(dict(r, agencia='ANTT'))
 for d in antt['deliberacoes']: D.append(dict(d, agencia='ANTT', texto=d.get('decisao_texto', ''), item=d['processo']))
 for v in antt['votos']: V.append(dict(v, agencia='ANTT'))
 # RDE270: só votos dos relatores (sem ata)
-for x in rde270:
-    d = {'agencia': 'ANTT', 'reuniao': 'RDE270', 'data': '2026-03-02', 'processo': x['processo'], 'relator': x['relator'], 'interessado': '', 'assunto': x['objeto'],
-         'resultado': 'SEM ATA — só o voto do relator (' + (x['encaminhamento'] or 'sem encaminhamento') + ')', 'voto_doc': x['arquivo'].replace('voto_Voto_', '').replace('.pdf.txt', ''), 'texto': '', 'item': x['processo']}
-    D.append(d); V.append({'agencia': 'ANTT', 'reuniao': 'RDE270', 'data': '2026-03-02', 'processo': x['processo'], 'diretor': x['relator'], 'voto': 'RELATOR (proposta; resultado sem ata)', 'proveniencia': 'nominal'})
+for x in rde270:   # votos de relator de reuniões sem ata publicada (antt_sem_ata.json)
+    _ru, _dt = x.get('reuniao', 'RDE270'), x.get('data', '2026-03-02')
+    d = {'agencia': 'ANTT', 'reuniao': _ru, 'data': _dt, 'processo': x['processo'], 'relator': x['relator'], 'interessado': '', 'assunto': x['objeto'],
+         'resultado': 'SEM ATA — só o voto do relator (' + (x['encaminhamento'] or 'sem encaminhamento') + ')', 'voto_doc': x.get('voto_doc') or x['arquivo'].replace('voto_Voto_', '').replace('.pdf.txt', ''), 'texto': '', 'item': x['processo']}
+    D.append(d); V.append({'agencia': 'ANTT', 'reuniao': _ru, 'data': _dt, 'processo': x['processo'], 'diretor': x['relator'], 'voto': 'RELATOR (proposta; resultado sem ata)', 'proveniencia': 'nominal'})
 # ---- ARTESP
 for r in art['reunioes']: R.append(dict(r, agencia='ARTESP'))
 for d in art['deliberacoes']: D.append(dict(d, agencia='ARTESP', relator='Conselho Diretor', texto='', item=f"Del. {d['deliberacao']}", voto_doc=''))
@@ -231,7 +232,7 @@ sheet('Pendências', ['Item', 'Detalhe'], [
  ['REVISAR', 'Maioria, vista pendente ou texto ambíguo: a ata não nomina quem votou como; exige o voto individual/vídeo.'],
  ['ANM', 'Ata da 89ª ROP (30/09) ainda não publicada. Métricas cobrem ROP 81–88 (jan–ago/2026).'],
  ['ANTT', 'Atas ausentes: 299ª, 300ª, 301ª, 1042ª (publicação) e 270ª (lacuna antiga: só votos de relator). 3 reuniões futuras.'],
- ['ANTT', '99 PDFs de voto são imagem e não foram lidos (a ata já traz o resultado).'],
+ ['ANTT', '87 PDFs de voto em imagem lidos por OCR (o voto escrito do relator traz só a proposta dele); 11 votos escritos citados na ata não estão publicados.'],
  ['ARTESP', 'Numeração de deliberações com buracos e repetições: ver aba Qualidade. Deliberações canceladas não têm voto.'],
  ['Qualidade', 'Parser conferido por contagem automática e amostra manual (ver AMOSTRA.md); não é auditoria completa.'],
 ], {'Detalhe': 150})
@@ -340,6 +341,9 @@ for d in D:
     if d['agencia'] == 'ARTESP' and d.get('numero_na_ata'): P.append(('ARTESP', f"{d['reuniao']} Del. {d['deliberacao']}", d['data'], 'Erro de numeração na fonte (corrigido pelo PDF)', f"ata diz {d['numero_na_ata']}; PDF diz {d['deliberacao']}", 'Número digitado errado na ata', 'Nenhuma: já corrigido na planilha'))
 for r in R:
     if r['agencia'] == 'ARTESP' and r['reuniao'] == 'ORD1187': P.append(('ARTESP', r['reuniao'], r['data'], 'Erro de digitação no título da ata (sem efeito)', 'ata completa', 'Título diz 1178ª; data e conteúdo são da 1187ª', 'Nenhuma'))
+_jaP = {(p[0], str(p[1])) for p in P}
+for pe in antt.get('pendencias', []):   # pendências novas do parser da ANTT (votos escritos não publicados, erros da fonte, RDE268…); as de ata já geradas acima não duplicam
+    if (pe[0], str(pe[1])) not in _jaP: P.append(tuple(pe))
 for sg, x in EXTRAS.items():
     for pe in x['pendencias']: P.append(tuple(pe))
 hist = json.load(open('pendencias_historico.json')) if os.path.exists('pendencias_historico.json') else {}
@@ -442,7 +446,7 @@ NF.append(['ANTT', 'B. Impedimento / voto antes da vista', '0 menções a impedi
 NF.append(['ANVISA', 'B. Impedimento', f"{_imp.get('ANVISA', 0)} linhas IMPEDIDO (nominal)", 'FEITO', 'Lido de "declarou-se impedido" nas atas e nos extratos de CD', 'Nenhuma'])
 _comp = sum(1 for d in D if str(d.get('decisao_texto', '') or d.get('texto', '')).count('unanimidade') and str(d.get('decisao_texto', '') or d.get('texto', '')).count('maioria') and d['agencia'] in ('ANVISA',))
 NF.append(['TODAS', 'Decisão de várias partes (I/II/III)', 'ANVISA 73 itens, ANP 64, ANTAQ 46 com mais de uma ação; só 1 item (ANVISA ROP1 2.5) tem modos de votação diferentes por parte, e os diretores atuais acompanharam as duas', 'FEITO (medido)', 'O texto completo de todas as ações está na coluna "Texto da decisão"; o voto de cada diretor não muda por parte nos dados de 2026. Os itens do ANP com "unanimidade" e "maioria" no texto são a suspensão/retomada da reunião 1.179, sem voto individual', 'Reavaliar a cada rodada (regra no QA)'])
-NF.append(['ANM/ANVISA/ANTT', 'Votos escritos (PDFs de voto)', 'ANTT: 99 PDFs de voto em imagem não lidos; ANVISA: PDFs de voto por reunião não lidos; ANM: sem PDF de voto separado', 'PARCIAL', 'Onde a ata/extrato nomeia o voto de cada diretor o voto escrito não muda nada; só resolveria "maioria sem divergentes nomeados" (ANM: 5 linhas) e as posições dentro de "unanimidade"', 'Ler o voto escrito só para as 5 linhas REVISAR'])
+NF.append(['ANM/ANVISA/ANTT', 'Votos escritos (PDFs de voto)', 'ANTT: 87 PDFs de voto em imagem lidos por OCR (só trazem a proposta do relator; 11 votos citados na ata não publicados); ANVISA: PDFs de voto por reunião não lidos; ANM: sem PDF de voto separado', 'PARCIAL', 'Onde a ata/extrato nomeia o voto de cada diretor o voto escrito não muda nada; só resolveria "maioria sem divergentes nomeados" (ANM: 5 linhas) e as posições dentro de "unanimidade"', 'Ler o voto escrito só para as 5 linhas REVISAR'])
 for ag in ('ANM', 'ANTT', 'ANVISA'):
     vis = [d for d in D if d['agencia'] == ag and d['tipo_item'] == 'Vista']
     if not vis: continue

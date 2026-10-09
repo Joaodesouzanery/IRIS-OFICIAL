@@ -4,7 +4,7 @@ Uso: python3 -I scripts/temas.py            -> temas.json, temas_revisao_pendent
      python3 -I scripts/temas.py --medir     -> imprime cobertura/distribuição"""
 import json, sys, os, collections, hashlib
 sys.path.insert(0, os.path.dirname(__file__)); import taxonomia as T
-anm, antt, art = (json.load(open(f)) for f in ('anm.json', 'antt.json', 'artesp_final.json')); rde = json.load(open('antt_rde270.json'))
+anm, antt, art = (json.load(open(f)) for f in ('anm.json', 'antt.json', 'artesp_final.json')); rde = json.load(open('antt_sem_ata.json')) if os.path.exists('antt_sem_ata.json') else json.load(open('antt_rde270.json'))
 import agencias as AG
 EXTRAS = AG.carregar()
 LIMIAR = 0.45
@@ -14,7 +14,7 @@ def itens():
         if d['data'].startswith('2026'):
             yield 'ANM', d, {'assunto': d.get('assunto') or ('Aprovação da ata da reunião anterior' if d.get('tipo_item') == 'Aprovação de ata' else ''), 'interessado': d.get('interessado', ''), 'unidade': '', 'texto': d.get('voto_resumo', '')}
     for d in antt['deliberacoes']: yield 'ANTT', d, {'assunto': d.get('assunto', ''), 'interessado': d.get('interessado', ''), 'unidade': '', 'texto': d.get('decisao_texto', '')}
-    for x in rde: yield 'ANTT', {'reuniao': 'RDE270', 'processo': x['processo'], 'tipo_item': 'Só voto do relator (sem ata)'}, {'assunto': x['objeto'], 'interessado': '', 'unidade': '', 'texto': x['encaminhamento']}
+    for x in rde: yield 'ANTT', {'reuniao': x.get('reuniao', 'RDE270'), 'processo': x['processo'], 'tipo_item': 'Só voto do relator (sem ata)'}, {'assunto': x['objeto'], 'interessado': '', 'unidade': '', 'texto': x['encaminhamento']}
     for d in art['deliberacoes']: yield 'ARTESP', d, {'assunto': d.get('assunto', ''), 'interessado': d.get('interessado', ''), 'unidade': d.get('unidade', ''), 'texto': d.get('dispositivo', '')}
     for sg, x in EXTRAS.items():
         for d in x['deliberacoes']:

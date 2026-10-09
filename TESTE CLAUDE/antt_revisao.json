@@ -386,5 +386,38 @@
     "pediu vista ao processo o Diretor Felipe Queiroz"
    ]
   ]
+ },
+ {
+  "reuniao": "ROD1041",
+  "processo": "50500.074884/2020-28",
+  "relator": "Guilherme Theo Rodrigues da Rocha Sampaio",
+  "votos": {
+   "Guilherme Theo Rodrigues da Rocha Sampaio": [
+    "RELATOR (voto proferido; Voto DG 44/2026)",
+    "nominal",
+    "PDF (OCR) Voto DG 44-2026: RELATORIA \"Diretoria Geral\", PROCESSO 50500.074884/2020-28 (Ferrogrão); a ata cita \"Voto DLA - 56/2026\", que no PDF publicado é outro processo (ROF 1, 50500.019001/2025-21, ROD1040): erro de citação da ata"
+   ],
+   "Lucas Asfor da Rocha Lima": [
+    "ACOMPANHOU",
+    "inferido",
+    "ata: por unanimidade"
+   ]
+  },
+  "fonte": "PDF de voto (OCR) + ata ROD1041",
+  "obs": "Ata cita Voto DLA 56/2026; o voto da Ferrogrão publicado é DG 44/2026.",
+  "checar": [
+   [
+    "texto_antt/ROD1041__ata_*",
+    "Voto DLA - 56/2026"
+   ],
+   [
+    "texto_antt_ocr/ROD1041__voto_Voto_DG_44-2026_1_.pdf.txt",
+    "50500.074884/2020-28"
+   ],
+   [
+    "texto_antt_ocr/ROD1040__voto_Voto_DLA_56-2026.pdf.txt",
+    "50500.019001/2025-21"
+   ]
+  ]
  }
 ]

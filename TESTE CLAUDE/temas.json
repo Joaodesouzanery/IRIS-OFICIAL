@@ -13780,25 +13780,24 @@
   "hash": "3a29857128a3bb73",
   "tipo_item": ""
  },
- "ANTT|RDE270|50505.017825/2025-17|": {
-  "modal": "Transporte rodoviário de passageiros",
-  "tema": "Outorgas, autorizações e habilitações",
-  "subtema": "Linhas e seções de passageiros",
-  "tipo_ato": "Outros",
+ "ANTT|ROD1042|50500.052025/2026-73|": {
+  "modal": "Outros / não identificado",
+  "tema": "Regulação e normas",
+  "subtema": "Resolução / súmula / ato normativo",
+  "tipo_ato": "Resolução / norma",
   "microtema_iris": "outros",
-  "area_iris": "rodoviario_passageiros",
-  "confianca": 0.9,
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.3,
   "conf_tema": 0.9,
-  "conf_modal": 1.0,
+  "conf_modal": 0.3,
   "termos": [
-   "tar",
-   "\\blinha\\b"
+   "resolucao"
   ],
   "fonte": "regra",
-  "hash": "32a07db83d66548a",
+  "hash": "c645cad3fb43b39d",
   "tipo_item": "Só voto do relator (sem ata)"
  },
- "ANTT|RDE270|50500.032419/2025-24|": {
+ "ANTT|ROD1042|50500.050259/2025-03|": {
   "modal": "Outros / não identificado",
   "tema": "Outros",
   "subtema": "Não classificado",
@@ -13815,6 +13814,131 @@
   "regra": "Outros / não identificado / Outros / Não classificado",
   "motivo_ia": "Classificação por assunto, interessado e unidade.",
   "concorda_regra": true
+ },
+ "ANTT|ROD1042|50500.043918/2025-47|": {
+  "modal": "Rodovias (concessões e pedágio)",
+  "tema": "Outorgas, autorizações e habilitações",
+  "subtema": "Autorização / outorga ferroviária",
+  "tipo_ato": "Edital / leilão / processo competitivo",
+  "microtema_iris": "contrato",
+  "area_iris": "rodovia",
+  "confianca": 0.55,
+  "conf_tema": 0.55,
+  "conf_modal": 1.0,
+  "termos": [
+   "rodovias?",
+   "r-? ?\\d{2,3}",
+   "sistema rodoviario",
+   "outorga"
+  ],
+  "fonte": "regra",
+  "hash": "9224e12f33fb2fff",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE300|50500.022617/2025-80|": {
+  "modal": "Outros / não identificado",
+  "tema": "Obras e investimentos",
+  "subtema": "Conservação / OAE / projeto executivo",
+  "tipo_ato": "Outros",
+  "microtema_iris": "ambiental",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.3,
+  "conf_tema": 0.96,
+  "conf_modal": 0.3,
+  "termos": [
+   "\\bviario\\b",
+   "estudo de viabilidade",
+   "\\bevtea\\b"
+  ],
+  "fonte": "regra",
+  "hash": "1d506f9b640e31e6",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE300|50505.038593/2025-31|": {
+  "modal": "Outros / não identificado",
+  "tema": "Recursos administrativos",
+  "subtema": "Recurso / reconsideração / embargos",
+  "tipo_ato": "Recurso / reconsideração",
+  "microtema_iris": "recursos",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.3,
+  "conf_tema": 0.38,
+  "conf_modal": 0.3,
+  "termos": [
+   "\\brecurso"
+  ],
+  "fonte": "regra",
+  "hash": "8bb496a9bb1c9ad4",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE300|50500.049241/2026-31|": {
+  "modal": "Outros / não identificado",
+  "tema": "Outros",
+  "subtema": "Não classificado",
+  "tipo_ato": "Outros",
+  "microtema_iris": "outros",
+  "area_iris": "governanca_regulatoria",
+  "confianca": 0.0,
+  "conf_tema": 0.0,
+  "conf_modal": 0.3,
+  "termos": [],
+  "fonte": "regra",
+  "hash": "31ebfe79a8fd8bc2",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE299|50500.024723/2026-89|": {
+  "modal": "Outros / não identificado",
+  "tema": "Contratos de concessão",
+  "subtema": "Termo aditivo / modificativo",
+  "tipo_ato": "Termo aditivo",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.3,
+  "conf_tema": 0.71,
+  "conf_modal": 0.3,
+  "termos": [
+   "termo aditivo",
+   "\\baditivo\\b"
+  ],
+  "fonte": "regra",
+  "hash": "36e23bdeb6eac15d",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE270|50500.055655/2025-19|": {
+  "modal": "Outros / não identificado",
+  "tema": "Outorgas, autorizações e habilitações",
+  "subtema": "Habilitação / revogação (IPEF, FVPO, RNTRC)",
+  "tipo_ato": "Autorização / outorga / habilitação",
+  "microtema_iris": "outros",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.3,
+  "conf_tema": 0.95,
+  "conf_modal": 0.3,
+  "termos": [
+   "habilitacao",
+   "\\bfvpo\\b"
+  ],
+  "fonte": "regra",
+  "hash": "9397b5d6faea6a00",
+  "tipo_item": "Só voto do relator (sem ata)"
+ },
+ "ANTT|RDE270|50500.032419/2025-24|": {
+  "modal": "Outros / não identificado",
+  "tema": "Contratos de concessão",
+  "subtema": "Termo aditivo / modificativo",
+  "tipo_ato": "Termo aditivo",
+  "microtema_iris": "contrato",
+  "area_iris": "cargas_logistica",
+  "confianca": 0.3,
+  "conf_tema": 0.71,
+  "conf_modal": 0.3,
+  "termos": [
+   "termo aditivo",
+   "\\baditivo\\b"
+  ],
+  "fonte": "regra",
+  "hash": "06af96fe90c47976",
+  "tipo_item": "Só voto do relator (sem ata)"
  },
  "ANTT|RDE270|50505.006011/2026-38|": {
   "modal": "Transporte rodoviário de passageiros",
@@ -13834,23 +13958,21 @@
   "hash": "3a7cf25b782918d1",
   "tipo_item": "Só voto do relator (sem ata)"
  },
- "ANTT|RDE270|50500.055655/2025-19|": {
-  "modal": "Governança regulatória e normas",
+ "ANTT|RDE270|50505.017825/2025-17|": {
+  "modal": "Outros / não identificado",
   "tema": "Outorgas, autorizações e habilitações",
-  "subtema": "Habilitação / revogação (IPEF, FVPO, RNTRC)",
-  "tipo_ato": "Autorização / outorga / habilitação",
+  "subtema": "Linhas e seções de passageiros",
+  "tipo_ato": "Outros",
   "microtema_iris": "outros",
-  "area_iris": "governanca_regulatoria",
-  "confianca": 0.64,
-  "conf_tema": 0.64,
-  "conf_modal": 0.75,
+  "area_iris": "rodoviario_passageiros",
+  "confianca": 0.3,
+  "conf_tema": 0.9,
+  "conf_modal": 0.3,
   "termos": [
-   "resolucao antt",
-   "habilitacao",
-   "\\bfvpo\\b"
+   "\\blinha\\b"
   ],
   "fonte": "regra",
-  "hash": "5f95eaa75636fb40",
+  "hash": "f9e934ade44a72b7",
   "tipo_item": "Só voto do relator (sem ata)"
  },
  "ARTESP|S230_230|134.00019283/2025-69.|1": {
