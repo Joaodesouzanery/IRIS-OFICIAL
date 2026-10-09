@@ -23,6 +23,9 @@ AGENCIAS = [
  {'sg': 'ANS', 'json': 'ans.json', 'desc': 'pautas, extratos e páginas de deliberações da DICOL (atas restritas)', 'ex_fora_total': False,
   'diverge_ok': ('restrit', 'bloqueado', 'fora da allowlist', 'sem documento'),
   'url': 'https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/reunioes-da-diretoria-da-ans'},
+ {'sg': 'ANCINE', 'json': 'ancine.json', 'desc': 'atas, pautas e Decisões da Diretoria Colegiada (SEI)', 'ex_fora_total': False,
+  'diverge_ok': ('restrit', 'bloqueado', 'não baixado', 'sem DDC', 'sem ata'),
+  'url': 'https://www.gov.br/ancine/pt-br/acesso-a-informacao/institucional/diretoria-colegiada/reunioes-da-diretoria-colegiada'},
 ]
 # Novas (ANS, ANA, ...) entram aqui quando o json existir; arquivo ausente = agência ignorada (degrada sem quebrar)
 def ativas(): return [a for a in AGENCIAS if os.path.exists(a['json'])]

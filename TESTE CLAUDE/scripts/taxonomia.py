@@ -332,3 +332,13 @@ SETOR['ANS'] = {'modal': 'Saúde suplementar', 'temas': [
     ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos'], 6),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'ata ', r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'informe'], 4),
 ]}
+
+SETOR['ANCINE'] = {'modal': 'Audiovisual', 'temas': [
+    ('Fomento e recursos', 'FSA / incentivos fiscais / prestação de contas', [r'fundo setorial', r'\bfsa\b', r'incentivo', r'lei do audiovisual', r'rouanet', r'prestacao de contas', r'captacao', r'investimento', r'financiamento', r'recurso'], 8),
+    ('Registro e classificação de obras', 'CPB / registro de obra / certificado', [r'certificado de produto', r'\bcpb\b', r'registro de obra', r'obra audiovisual', r'classificacao', r'registro de empresa', r'cota de tela', r'obrigacao de exibicao'], 7),
+    ('Fiscalização e sanções', 'Auto de infração / multa / sanção', [r'auto de infracao', r'multa', r'sancao', r'infracao', r'penalidade', r'fiscaliza', r'condecine'], 7),
+    ('Regulação e normas', 'Instrução normativa / consulta pública / agenda', [r'instrucao normativa', r'consulta publica', r'audiencia publica', r'agenda regulatoria', r'norma', r'regulamento', r'resolucao'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos', r'pedido de revisao'], 6),
+    ('Mercado e serviços audiovisuais', 'TV por assinatura, VOD e salas de exibição', [r'video sob demanda', r'\bvod\b', r'tv por assinatura', r'servico de acesso condicionado', r'sala de exibicao', r'cinema', r'streaming', r'programadora'], 6),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo de cooperacao', r'ata '], 4),
+]}

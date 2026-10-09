@@ -15,7 +15,8 @@ Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Document
 | ANATEL, ANEEL | feito + varredura 100% + auditoria | ANEEL: atas em PDF bloqueadas (Cloudflare) → presença inferida, ~68% dos votos inferidos |
 | ANA | inventário e pendências; **0 votos** | PDFs em `arquivos.ana.gov.br`, recusado pelo egress do ambiente (liberar o host e rodar `scripts/ana_rodar.sh`) |
 | ANS | **parcial**: 281 itens/1.260 votos (91% inferidos) | atas 641–643 não publicadas; relator inferido pela área |
-| ANCINE, ANAC | não iniciadas | ANAC por último (captcha) |
+| ANCINE | feito + varredura 100% + auditoria | 1.838 deliberações, 7.000 votos (97% inferidos); só circuitos têm votação nominal |
+| ANAC | não iniciada | por último (captcha) |
 
 ## Como funciona
 - `scripts/agencias.py` é o **registro único** das agências com pipeline próprio (arquivo JSON, URL da fonte, regra de ex-membros fora dos totais).

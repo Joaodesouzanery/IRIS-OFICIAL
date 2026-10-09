@@ -90,3 +90,4 @@ Proveniência: **nominal** (a ata cita o diretor: relator, vista, ausência, ret
 - **ANA:** inventário (12 reuniões 949ª–960ª, 29 pendências com URL) e 0 votos: `arquivos.ana.gov.br` recusado pelo egress do ambiente.
 - Desbloqueios que trariam votos: `arquivos.ana.gov.br` (ANA); `www.ans.gov.br` e `componentes-portal.ans.gov.br` (ANS atas).
 - **ANS refeita com atas oficiais:** 17 atas lidas (17/17/17), 281 itens, 1.260 votos (1.147 inferidos); auditoria 44 itens 100% e varredura 8.459/8.459; limites: nenhuma ata usa 'relator' (inferido pela área em 192 itens), nenhum voto vencido nas atas, 641–643 sem ata publicada.
+- **ANCINE:** 32 reuniões (24 deliberativas + 8 circuitos), 1.838 deliberações, 7.000 votos; DDC 1.819×1.819×1.819; 2.281 documentos com sha256; varredura 28.459/28.459 e auditoria 44/44; bug real corrigido (RD961 item 1 herdava votos de outra DDC); 79 REVISAR ('tomou conhecimento' sem modo declarado).
