@@ -1,0 +1,111 @@
+31/08/2026,18:58 SEI/ANTT-45258761-VotoDFQ
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DFQ
+RELATORIA: DFQ
+TERMO: VOTO A DIRETORIA COLEGIADA
+NUMERO:59/2026
+oBJETo: Proposta de submissao da Minuta de Edital de Sandbox Regulatorio de Interoperabilidade do Sistema de Livre Passagem - Free Flow ao Processo de
+Participacao e Controle Social, na modalidade Audiencia Publica.
+ORIGEM: Superintendencia de Infraestrutura Rodoviaria (SUROD)
+PROCESSO(S):50500.020891/2026-03
+PROPOSICAo PF/ANTT:Naoha manifestacao.
+ENCAMINHAMENTO: por aprovar a submissao da Minuta de Edital de Sandbox Regulatorio de Interoperabilidade do Sistema de Livre Passagem (Free Flow) e de
+seus anexos ao Processo de Participacao e Controle Social, na modalidade Audiencia Publica.
+DO OBJETO
+1.1. Trata-se de proposta de abertura de Audiencia Publica para colher contribuicoes da sociedade acerca da Minuta de Edital de Sandbox Regulatorio
+destinada a experimentacao da interoperabilidade do Sistema de Livre Passagem (free flow) no ambito das concessoes rodoviarias federais reguladas pela
+Agencia Nacional de Transportes Terrestres -ANTT.
+2. DOS FATOS
+2.1. A proposta insere-se no processo de regulamentacao do Sistema de Livre Passagem conduzido no ambito do Processo n 50500.284423/2022-23.
+Por meio do Voto DFQ n? 17/2026, esta Diretoria reconheceu que, muito embora a regulamentagao do Sistema de Livre Passagem avancasse, a
+2.2. Neste sentido, a Deliberacao n 88, de 26 de marco de 2026, aprovou o Relatorio Final da reabertura da Audiencia Publica n 010/2024, bem como
+determinou que a SUROD procedesse com a instrucao processual para criacao de Grupo de Trabalho multidisciplinar para fornecer subsidios a implementacao de
+sandbox regulatorio sobre interoperabilidade. Na sequencia, por meio dos Despachos SUROD 41258919 e GERER 41253616, ambos de 19 de abril de 2026, foram
+adotadas as providencias necessarias a constituicao de Grupo de Trabalho multidisciplinar, o que culminou na edicao da Portaria DG n 107, de 15 de maio de
+2026 (SEI 42769348).
+2.3. Os trabalhos do Grupo de Trabalho subsidiaram a elaboracao da Minuta de Edital ora submetida e dos documentos tecnicos que a integram, tendo
+a Gerencia de Regulacao Rodoviaria (GERER), vinculada a Superintendencia de Infraestrutura Rodoviaria (SUROD), elaborado a Nota Tecnica SEI n?
+8586/2026/GERER/SUROD/DIR-ANTT (SEI 44836507), de 18 de agosto de 2026, propondo a submissao da minuta de Edital (SEI 45019147) a processo de
+participacao e controle social.
+2.4. Por meio do Despacho GERER 44862095, de 19 de agosto de 2026, a Procuradoria Federal junto a ANTT (PF-ANTT), foi comunicada da submissao
+de proposta de realizagao de Audiencia Publica para deliberacao da Diretoria para colher contribuicoes acerca da minuta de Edital 45019147.
+2.5. Em seguida, os autos foram instruidos com o Relatorio a Diretoria SEl n 390/2026 (SEl 44836189), a minuta de Deliberacao Abertura de AP
+44836210, a minuta de Aviso AP 44836221,a minuta de Portaria Comissao AP 44836239 e foram remetidos a Diretoria Colegiada para analise e deliberacao.
+2.6. A distribuicao do processo a esta Diretoria foi solicitada ad hoc, conforme Despacho de Instrucao (SEl 44836250), tendo em vista o
+2.7. Sao os fatos. Passa-se, a seguir, a analise processual.
+3. DAANALISEPROCESSUAL
+3.1. Em apertada sintese, a minuta de Edital ora em analise propoe a selecao de concessionaria de rodovia federal, individualmente ou em consorcio, e
+da respectiva solucao tecnologica, para desenvolvimento, implantagao e operacao experimental de Portal de Interoperabilidade e da infraestrutura que o
+suporta, permitindo a ANTT produzir evidencias técnicas, operacionais, regulatorias e institucionais antes de eventual definicao quanto a implementacao
+definitiva do modelo.
+Da adequacao da Audiencia Publica
+3.2. A Resolucao n 6.020, de 20 de julho de 2023, que disciplina os meios de Participacao e Controle Social (PPCS) no ambito da Agencia, orienta a
+submissao a participacao social de propostas de natureza inovadora e com efeitos sobre agentes regulados e usuarios, previamente a sua aprovacao definitiva.
+3.3. A Nota Tecnica SEI n 8586/2026/GERER/SUROD/DIR-ANTT (SEI 44836507), assim se manifestou sobre a necessidade de realizacao de PPCS:
+21. O Ppcs permitira que os interessados avaliem o conjunto de regras proposto para o experimento e apresentem contribuicoes quanto a sua viabilidade, aos
+requisitos de participacao e integracao, as condicoes de execucao, aos riscos e salvaguardas, aos criterios de avaliagao e aos demais aspectos relevantes para a
+adequada realizacao do Sandbox. A participacao social assume especial relevancia nesta etapa porque o Sandbox se destina justamente a experimentacao de solucao
+cuja implementagao definitiva depende da obtengao de evidencias acerca de sua viabilidade e de seus efeitos. Assim, a consulta ao mercado e aos demais interessados
+antes do inicio da experimentacao contribui para identificar alternativas, restrigoes, riscos e possibilidades de aperfeicoamento da proposta. O PpCS permitira, ainda,
+obter subsidios sobre aspectos tecnicos e operacionais que permanecem sujeitos a detalhamento nas etapas subsequentes do experimento, sem necessidade de
+antecipar, na presente fase, escolhas tecnologicas que possam ser melhor avaliadas a partir das contribuicoes dos agentes e das solucoes apresentadas.
+3.4. De fato, a Minuta de Edital em exame institui ambiente regulatorio experimental de natureza inedita no ambito da ANTT, com potenciais efeitos
+sobre concessionarias de rodovias federais, empresas responsaveis por sistemas de pagamento, prestadores de servicos e usuarios do Sistema de Livre
+Passagem, o que, aliado a complexidade tecnica da proposta, sugere a sua submissao da minuta ao escrutinio publico antes de sua aprovacao final, de modo a
+colher contribuicoes que aperfeicoem as condicoes do sandbox regulatorio.
+Da sintese da Minuta de Edital
+3.5. A Minuta de Edital (SEl 45019147) disciplina as condicoes de elegibilidade e de apresentacao das propostas, os criterios e o procedimento de
+selecao, a autorizacao temporaria, a admissao dos Agentes Integrados, as condicoes de execucao do experimento, o monitoramento e a producao de evidencias,
+a gestao de riscos e as salvaguardas, as responsabilidades dos participantes, as hipoteses de suspensao, cancelamento e encerramento, as medidas
+administrativas e penalidades, os recursos e a atuacao da Comissao do Sandbox.
+3.6. Entendo pertinente registrar, de forma resumida, os elementos centrais da proposta.
+3.7. Em relacao aos participantes, a minuta estabelece duas categorias distintas:
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52651459&infra_siste... 1/2
+[pg 1]
+
+31/08/2026,18:58 SEI/ANTT-45258761-VotoDFQ
+Concessionaria Participante: selecionada por processo competitivo para o preenchimento de vaga unica (individual ou em consorcio)
+Agentes Integrados: adesao voluntaria, nao competitiva e sem restricao de vagas, englobando as demais concessionarias operadoras
+do Sistema de Livre Passagem e os responsaveis pelos meios de pagamento admitidos na regulamentacao. Agentes integrados poderao aderir
+inclusive durante o andamento do ambiente regulatorio experimental.
+3.8. Quanto aos criterios de selecao da Concessionaria Participante, a avaliacao combina criterios tecnico-regulatorios (ex: arquitetura e
+3.9. Quanto a duracao, o ambiente regulatorio experimental podera se estender por ate 36 (trinta e seis) meses, compreendendo as etapas de
+desenvolvimento, implantacao/homologacao e operacao, esta ultima comduracao minima de 12 (doze)meses.
+3.10. A minuta preserva, como premissas do experimento, a titularidade dos creditos tarifarios pelas respectivas concessionarias, a ausencia de custodia
+de recursos financeiros pelo Portal, a liquidacao financeira descentralizada, a liberdade de escolha do usuario e a integracao dos agentes em condicoes
+isonomicas e nao discriminatorias.
+Da dispensa de Analisede Impacto Regulatorio
+3.11. Nao foi realizada Analise de Impacto Regulatorio -AlR especifica para a instituicao do presente Sandbox Regulatorio. A Resolucao n 5.999/2022,
+que disciplina a constituicao e o funcionamento de ambientes regulatorios experimentais no ambito da ANTT, nao estabelece a realizacao de AiR como requisito
+Regulatorio a sua realizacao.
+3.12. Considero adequado o entendimento da area tecnica de que, em razao do carater temporario, controlado e experimental da iniciativa, os
+resultados obtidos ao longo do Sandbox poderao fundamentar posterior AlR, ARR ou outro processo de avaliacao regulatoria, na hipotese de a ANTT vir a
+considerara incorporacao definitiva do modelo a regulamentacao vigente:
+(...)
+25. Por fim, cabe acrescentar que nao foi realizada Analise de Impacto Regulatorio  AR especifica para a instituicao deste Sandbox Regulatorio, considerando que a
+Resolugao ANTT n 5.999, de 3 de novembro de 2022, que disciplina a constituicao e o funcionamento de ambientes regulatorios experimentais no ambito da ANTT,
+nao estabelece a realizagao de AlR como requisito para a instituicao do experimento ou para a publicagao do respectivo edital de participagao. Do mesmo modo, a
+Resolucao ANTT ng 6.020, de 20 de julho de 2023, que disciplina o processo de participacao e controle social e a realizacao de AIR e ARR no ambito da Agencia, nao
+preve a realizacao de AiR como condicao especifica para a instauracao de Sandbox Regulatorio. Considerando, ainda, o carater temporario, controlado e experimental
+da iniciativa, destinada justamente a produgao de evidencias para subsidiar futuras decisoes regulatorias, os resultados obtidos no experimento poderao fundamentar
+posterior AIR, ARR ou outro processo de avaliacao regulatoria, caso a ANTT venha a considerar a incorporacao definitiva do modelo a regulamentagao.
+(.) (Nota Tecnica SEI n 8586/2026/GERER/SUROD/DIR-ANTT  SEI 44836507)
+3.13. Pelo exposto, considerando os elementos trazidos aos autos, os quais passam a integrar o presente ato e constituem sua razao de decidir, verifica-
+se que a proposta de submissao da Minuta de Edital de Sandbox Regulatorio de Interoperabilidade do Sistema de Livre Passagem (Free Flow) ao Processo de
+4. DAPROPOSICAO FINAL
+4.1. Ante o exposto, voTo por aprovar a abertura de Audiencia Publica destinada a tornar publico, colher sugestoes e contribuicoes a Minuta de
+Edital de Sandbox Regulatorio de Interoperabilidade do Sistema de Livre Passagem (SEl 44908734), e de seus anexos, assim como autorizar a publicacao do
+Aviso de Audiencia Publica (SEl 44836221), nos termos da minuta de Deliberacao 45259332.
+Brasilia, 27 de agosto de 2026.
+(assinado eletronicamente)
+FELIPE QUEIROZ
+DIRETOR
+sei!
+Documento assinado eletronicamente por FELIPE FERNANDES QUEIROZ,Diretor, em 31/08/2026,as 15:19, conforme horario oficial de Brasilia, com fundamento
+eletronica no art. 21, inciso Il, da Instrucao Normativa ng 22/2023 da ANTT.
+ autenticidade deste documento pode ser conferida no site http://sei.antt.gov.br/sei/controlador _externo.php?
+Referencia: Processo n9 50500.020891/2026-03 SEI ng 45258761
+St.de Clubes Esportivos Sul Trecho 3-Telefone Sede: 613410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF-www.antt.gov.br
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52651459&infra_siste... 2/2
+[pg 2]

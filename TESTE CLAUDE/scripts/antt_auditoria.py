@@ -101,7 +101,7 @@ def mudancas(A, B):
     dd = {(d['reuniao'], d['processo']): d for d in B['deliberacoes']}; dl = []
     for d in A['deliberacoes']:
         o = dd.get((d['reuniao'], d['processo']))
-        if o and any(o[f] != d[f] for f in ('relator', 'resultado')): dl.append((d, o))
+        if o and any(o[f] != d[f] for f in ('relator', 'resultado', 'decisao_texto')): dl.append((d, o))   # inclui texto da decisão aparado (fecho/assinaturas da ata saíram)
     return out, dl
 def main():
     a = sys.argv[1:]
@@ -110,7 +110,7 @@ def main():
         n, seed = int(a[a.index('--amostra') + 1]), int(a[a.index('--amostra') + 2])
         vs, dl = mudancas(A, B)
         itens = sorted({(v['reuniao'], v['processo']) for v, _ in vs} | {(d['reuniao'], d['processo']) for d, _ in dl})
-        print('itens alterados (voto, relator ou resultado):', len(itens))
+        print('itens alterados (voto, relator, resultado ou texto da decisão):', len(itens))
         random.Random(seed).shuffle(itens)
         for tag, p in itens[:n]:
             print('=' * 100); print(tag, p)
