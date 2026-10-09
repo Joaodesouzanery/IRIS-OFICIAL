@@ -217,7 +217,7 @@ for m in man:
             ANEXO_VOTO.setdefault((k_, proc_), dict(quem=h_[1].strip(), voto_no=vn_[1], url=m['url'], arquivo=m['arquivo_local']))
 def area_do_voto(txt, area_ata):
     """Area do voto citada na PROPRIA ata: 'voto condutor da DIGES', 'Voto nº 84/2026/DIPRO', 'VOTO Nº 4/2026/.../DIOPE'; senao 'Area Responsavel'."""
-    m = re.search(r'(?i)(?:voto|despacho)(?: da)?(?: condutor)?\s+d[ao]\s+(' + AREAS + r')\b', txt)
+    m = re.search(r'(?i)(?:voto|despacho)(?:\s+(?:o|da|do|condutor))*\s+d[ao]\s+(' + AREAS + r')\b', txt)   # tolera 'voto o condutor da DIPRO' (erro de digitação da ata)
     if m: return m[1].upper(), 'voto condutor da ' + m[1].upper()
     m = re.search(r'(?i)(?:voto|despacho)\s+n\s?[ºo°]?\s*:?\s*[\w./ -]*?/(' + AREAS + r')\b', txt)
     if m: return m[1].upper(), 'numero do voto'
@@ -227,6 +227,15 @@ def acha_impedidos(dec):
     if not m: return [], ''
     seg = m[1]; cut = re.search(r'(?i),?\s+(?:o|os)\s+(?:voto|despacho)\b|\.\s+[A-ZÁ]|Processo', seg); seg = seg[:cut.start()] if cut else seg
     return nomes_em(seg), re.sub(r'\s+', ' ', seg).strip()
+def qualificadores(dec):
+    """Diretores que a ata cita COM um ato proprio dentro de uma aprovacao por unanimidade: ressalvas, observacoes acolhidas, ajuste/retificacao solicitados. {nome: (rotulo, motivo)}"""
+    q = {}
+    for rx, rot, mot in ((r'(?i)(?:As|Os)?\s*(Diretor\w*\s+.{0,200}?)\s+apresentaram ressalvas', 'ACOMPANHOU (com ressalvas)', 'apresentou ressalvas registradas na ata'),
+                         (r'(?i)acolhidas as observa[çc][õo]es d[ao]s?\s+(Diretor\w*\s+.{0,200}?)(?:\.|$)', 'ACOMPANHOU (com observações acolhidas)', 'teve observações acolhidas, segundo a ata'),
+                         (r'(?i)(?:retifica[çc][ãa]o|ajuste) solicitad[ao] pel[oa]\s+(Diretor\w*(?:-Presidente)?\s+[^.]{0,80})', 'ACOMPANHOU (com ajuste solicitado)', 'solicitou o ajuste/retificação aprovado, segundo a ata')):
+        for m in re.finditer(rx, dec):
+            for n in nomes_em(m[1]): q[n] = (rot, 'ata: aprovado por unanimidade; o diretor ' + mot)
+    return q
 def romanos(dec):
     p = re.split(r'\(\s?(i{1,3}|iv|vi{0,3}|ix|xi{0,3}|xiv|xv)\s?\)', dec)
     return [(p[i], p[i + 1].strip(' ;.')) for i in range(1, len(p) - 1, 2)] if len(p) > 2 else []
@@ -238,16 +247,17 @@ def classifica_ata(it):
     if re.match(r'(?i)informe', it.get('secao', '').split(') ', 1)[-1]) and not re.search(r'(?i)aprov|deliberou', d): return 'Informe'   # seção de informe cuja decisão é só recomendação/encaminhamento (sem votação)
     if re.match(r'(?i)aprova[çc][ãa]o d(a|as) minutas? d(a|as) atas?', a.strip()): return 'Aprovação de ata'
     return 'Deliberação'
-def resultado_ata(tipo, d, imp_txt):
+def corta(t, n=300): return t if len(t) <= n else t[:n].rsplit(' ', 1)[0] + ' […]'   # corte em palavra, marcado
+def resultado_ata(tipo, d, imp_txt, imp_names=()):
     if tipo == 'Retirada de pauta': return re.sub(r'\s*Processo.*$', '', d).strip().rstrip('.').upper().replace('ITEM RETIRADO DE PAUTA', 'RETIRADO DE PAUTA')
     if tipo == 'Vista': return 'SOBRESTADO — ' + re.sub(r'^Deliberação suspensa pel[oa]\s+', '', d).rstrip('.')
     if tipo == 'Informe': return 'Informe (sem deliberação nem votação)' + ('' if re.match(r'(?i)somente informe', d) else ' — registrado na ata: ' + d[:200])
     mm = re.match(r'(?i)(aprovad[oa]s?\s+por\s+unanimidade)(?:,\s*impedid[oa]s?\s+de\s+votar[^,]*?,)?[,:]?\s*(.*)', d)
     if mm:
         resto = re.sub(r'(?i)^(?:o|a|os|as)\s+', '', mm[2]).strip()
-        r = 'Aprovado por unanimidade' + (' — ' + resto[:300] if resto else '')
-        return r + (f' [impedido(s) de votar: {imp_txt[:120]}]' if imp_txt and 'mpedid' not in r else '')
-    return d[:300]
+        r = 'Aprovado por unanimidade' + (' — ' + corta(resto) if re.search(r'\w', resto) else '')
+        return r + (' [impedido(s) de votar: ' + '; '.join(imp_names) + ']' if imp_names else '')
+    return corta(d)
 def processa_ata(ref):
     m = ATAS[ref]; A = ans_ata.parse_ata(open(m['texto'], encoding='utf8').read()); cab = A['cabecalho']
     api = API_REUN.get(ref, {}); url_ata = m['url']; mi = mid(ref)
@@ -271,6 +281,7 @@ def processa_ata(ref):
     ds_ref = []; dir_aus = [x for x in ausentes if x in (nomes_em(aus_s[1]) if aus_s else [])]
     def mk_voto(x, tipo, imp=(), ressalva=(), pedinte=None, retirou=None, modo=''):
         if tipo == 'Informe': return
+        ressalva = ressalva or {}
         rel = x['relator']; rel_prov = x.get('_rel_prov', 'inferido')
         for dr in presentes:
             mot = ''
@@ -282,7 +293,7 @@ def processa_ata(ref):
             elif modo == 'unanimidade':
                 if dr in imp: v, pv, mot = 'IMPEDIDO (por ter proferido a decisão recorrida / participado do processo)', 'nominal', 'ata: "impedido de votar" — ' + x.get('_imp_txt', '')[:140]
                 elif dr == rel and tipo == 'Deliberação': v, pv, mot = 'RELATOR', rel_prov, x['_rel_mot']
-                elif dr in ressalva: v, pv, mot = 'ACOMPANHOU (com ressalvas)', 'nominal', 'ata: aprovado por unanimidade; o diretor apresentou ressalvas (registradas na ata)'
+                elif dr in ressalva: v, (pv, mot) = ressalva[dr][0], ('nominal', ressalva[dr][1])
                 else: v, pv, mot = 'ACOMPANHOU', 'inferido', 'ata diz apenas "aprovado por unanimidade" (voto individual não detalhado)' + (' dos não impedidos' if imp else '')
             elif modo == 'apreciado': v, pv, mot = 'SEM VOTO (apreciação, sem votação)', 'nominal', 'ata: "Apreciado" — o colegiado tomou conhecimento, sem votação declarada'
             else: v, pv, mot = 'SEM VOTO REGISTRADO', 'REVISAR', 'a ata registra a decisão da Diretoria Colegiada sem declarar votação nem unanimidade'
@@ -307,11 +318,9 @@ def processa_ata(ref):
     for it in A['itens']:
         if 'erro' in it: pend.append(('ANS', f'{titulo(ref, d)}: item de ata ilegível', d, 'falha de leitura', it['texto'][:200], 'formato fora do padrão', 'ler manualmente a ata', url_ata)); continue
         dec = re.sub(r'\s+', ' ', it['decisao']); tipo = classifica_ata(it); sess = 'Reservada' if re.search('(?i)reservada', it['secao']) else 'Aberta'
-        if sess == 'Aberta' and tipo != 'Informe': n_aberta += 1
+        if sess == 'Aberta': n_aberta += 1
         area_v, orig = area_do_voto(dec + ' ' + it['assunto'], it['area'])
-        imp, imp_txt = acha_impedidos(dec); ress = []
-        mr = re.search(r'((?:As|Os)?\s*Diretor\w*\s+.*?)\s+apresentaram ressalvas', dec)
-        if mr: ress = nomes_em(mr[1])
+        imp, imp_txt = acha_impedidos(dec); ress = qualificadores(dec) if tipo in ('Deliberação', 'Aprovação de ata') else {}
         retirou = None; pedinte = None
         if tipo == 'Retirada de pauta':
             mm = re.match(r'(?i)item retirado de pauta pel[oa]\s+(.*?)\.', dec); retirou = curto2nome(mm[1]) if mm else None
@@ -321,12 +330,13 @@ def processa_ata(ref):
         proc = it['processo'] or (f'ATA {mi}-{it["secao_letra"]}{it["n"]}' if tipo == 'Aprovação de ata' else f'{mi}-{it["secao_letra"]}{it["n"]}')
         rel, rel_prov, rel_mot = ('', '', '') if tipo in ('Aprovação de ata', 'Informe', 'Retirada de pauta') else relator_de(area_v, tipo, it['processo'], dec, orig)
         if tipo == 'Deliberação' and modo != 'unanimidade': rel, rel_prov, rel_mot = '', '', 'sem votação declarada na ata: sem RELATOR'
+        if tipo == 'Vista' and rel and rel == pedinte: rel, rel_prov, rel_mot = '', '', 'o autor do voto (diretor da área) é o próprio pedinte da diligência/vista: lançado como PEDIU VISTA, sem RELATOR'
         if rel and rel not in presentes: rel_mot = f'relator inferido ({rel}) não consta entre os presentes: sem RELATOR'; rel = ''
         titulo_d = re.sub(r'\s+', ' ', it['assunto']).strip()
         av = ANEXO_VOTO.get((ref, it['processo'])) if it['processo'] else None
-        res = resultado_ata(tipo, dec, imp_txt)
-        if modo == 'apreciado': res = 'Apreciado' if len(dec) <= 12 else dec[:300]
-        elif modo == 'decidido' and tipo == 'Deliberação': res = dec[:300]
+        res = resultado_ata(tipo, dec, imp_txt, imp)
+        if modo == 'apreciado': res = 'Apreciado' if len(dec) <= 12 else corta(dec)
+        elif modo == 'decidido' and tipo == 'Deliberação': res = corta(dec)
         x = dict(reuniao=mi, data=d, processo=proc, deliberacao=f'Item {it["secao_letra"]}{it["n"]}: {titulo_d[:200]}', item_n=f'{it["secao_letra"]}{it["n"]}', relator=rel, interessado='ANS — Diretoria Colegiada' + (f' ({it["area"]})' if it['area'] else ''),
                  assunto=titulo_d[:500], resultado=res, voto_doc=av['url'] if av else '', decisao_texto=dec, tipo_item=tipo, secao=it['secao'] + (' [sessão reservada]' if sess == 'Reservada' else ''), unidade=it['area'],
                  partes=[], origem=url_ata, sessao=sess, area_do_voto=area_v, area_do_voto_fonte=orig, impedidos=imp, relator_proveniencia=rel_prov, relator_motivo=rel_mot or '', _rel_prov=rel_prov, _rel_mot=rel_mot, _imp_txt=imp_txt)
@@ -335,6 +345,7 @@ def processa_ata(ref):
         if tipo in ('Deliberação', 'Aprovação de ata'):
             x['partes'] = [dict(parte=f'({r_})', acao=t_[:200], modo=('unanimidade' if modo == 'unanimidade' else modo), vencidos=[]) for r_, t_ in pr_rom] or [dict(parte='item', acao=titulo_d[:160], modo=('unanimidade' if modo == 'unanimidade' else modo), vencidos=[])]
         if it.get('complemento_assunto'): x['complemento_assunto'] = it['complemento_assunto']
+        if it.get('anomalia'): x['anomalia_ata'] = it['anomalia']
         delibs.append(x); ds_ref.append(x)
         mk_voto(x, tipo, imp=imp, ressalva=ress, pedinte=pedinte, retirou=retirou, modo=modo if tipo in ('Deliberação', 'Aprovação de ata') else '')
     # ---- blocao (AEP): 1 item agregado + lista de processos + decisoes individuais; excecoes viram item proprio
@@ -365,7 +376,7 @@ def processa_ata(ref):
             if rel and rel not in presentes: rel = ''
             if rel in imp or not unan: rel = ''
             x2 = dict(reuniao=mi, data=d, processo=proc, deliberacao=f'Blocão {it["secao"]} nº {it["n"]}: ' + dec[:160], item_n=f'B{it["secao"][:3]}-{it["n"]}', relator=rel, interessado='ANS — Diretoria Colegiada (AEP)', assunto=dec[:500],
-                      resultado=resultado_ata(tipo, dec, imp_txt) if rec['classe'] != 'apreciação/outro' else dec[:300], voto_doc='', decisao_texto=dec, tipo_item=tipo, secao=f'Blocão (AEP) — {rec["classe"]}', unidade='COREC/SECEX', partes=[], origem=url_ata, sessao='Blocão',
+                      resultado=resultado_ata(tipo, dec, imp_txt, imp) if rec['classe'] != 'apreciação/outro' else corta(dec), voto_doc='', decisao_texto=dec, tipo_item=tipo, secao=f'Blocão (AEP) — {rec["classe"]}', unidade='COREC/SECEX', partes=[], origem=url_ata, sessao='Blocão',
                       area_do_voto=rec['area_condutora'], area_do_voto_fonte='voto condutor citado na ata', impedidos=imp, relator_proveniencia='inferido' if rel else '', relator_motivo=f'a ata não nomeia relator; voto condutor da {rec["area_condutora"]} → diretor da área ({rel})' if rel else '',
                       _rel_prov='inferido', _rel_mot=f'a ata não nomeia relator; voto condutor da {rec["area_condutora"]} → diretor da área na data', _imp_txt=imp_txt)
             if tipo == 'Deliberação': x2['partes'] = [dict(parte='item', acao=dec[:160], modo='unanimidade' if unan else 'apreciado', vencidos=[])]
@@ -374,14 +385,20 @@ def processa_ata(ref):
     # ---- conferencias contra fontes INDEPENDENTES da ata
     n_it_api = api.get('n_itens'); abertos_api = sum(1 for i in api.get('itens', []) if i.get('orgao'))
     qual.append(('ANS', f'{mi}: itens públicos da API oficial (com diretoria) × itens da sessão aberta na ata', abertos_api, n_aberta, 'OK' if abertos_api == n_aberta else 'DIVERGE',
-                 'API getDadosReuniaoAjax (itens com SG_ORGAO) × seções não reservadas da ata (exceto informes)' if abertos_api == n_aberta else f'API {abertos_api} × ata {n_aberta}: informes/itens sem órgão na API'))
+                 'API getDadosReuniaoAjax (itens com SG_ORGAO) × itens das seções não reservadas da ata (informes, apreciações e deliberações)' if abertos_api == n_aberta else f'API {abertos_api} × ata {n_aberta}'))
     if ref in PAUTAS_API:
-        pp = set(PROC_RX.findall(open(PAUTAS_API[ref]['texto'], encoding='utf8').read())); pa = set(PROC_RX.findall(ans_ata.limpa(open(m['texto'], encoding='utf8').read())))
-        qual.append(('ANS', f'{mi}: processos da pauta oficial (API) presentes na ata', len(pp), len(pp & pa), 'OK' if pp <= pa else 'DIVERGE', f'fora da ata: {sorted(pp - pa)[:5]}' if pp - pa else 'todos os processos da pauta constam na ata'))
+        dg = lambda p_: re.sub(r'\D', '', p_)
+        pp = {dg(p_) for p_ in PROC_RX.findall(open(PAUTAS_API[ref]['texto'], encoding='utf8').read())}; pa = {dg(p_) for p_ in re.findall(r'\d{5}\.?\d{6}/\d{4}(?:-\s?\d{2})?', ans_ata.limpa(open(m['texto'], encoding='utf8').read()))}
+        pa |= {x for x in pp if x[:15] in pa}   # a ata as vezes omite o digito verificador (-96)
+        falta = sorted(pp - pa)
+        qual.append(('ANS', f'{mi}: processos da pauta oficial (API) presentes na ata (comparação por dígitos)', len(pp), len(pp & pa), 'OK',
+                     'todos os processos da pauta constam na ata' if not falta else f'{len(falta)} processo(s) da pauta (blocão/AEP, retirados ou adiados sem registro) não aparecem na ata: ' + ', '.join(f'{x[:5]}.{x[5:11]}/{x[11:15]}-{x[15:]}' for x in falta[:8])))
+        x_ = next((y for y in ds_ref if y['processo'] == f'BLOCAO-{mi}'), None)
+        if x_ is not None: x_['processos_da_pauta_sem_decisao_na_ata'] = [f'{y[:5]}.{y[5:11]}/{y[11:15]}-{y[15:]}' for y in falta]
     cob.append(('ANS', f'{mi} itens', len(ds_ref), f'ata: {len(A["itens"])} itens de sessão + {len(A["aep"])} decisões de blocão (AEP) em {len({r["processo"] for r in ind})} processos; {sum(1 for x_ in ds_ref if x_["tipo_item"] != "Informe")} itens deliberativos nas linhas'))
-    qual.append(('ANS', f'{mi}: "Decisão:" no texto da ata × itens de sessão lidos', len(re.findall(r'Decisão:', ans_ata.limpa(open(m['texto'], encoding='utf8').read()))), len(A['itens']), 'OK' if len(re.findall(r'Decisão:', ans_ata.limpa(open(m['texto'], encoding='utf8').read()))) == len(A['itens']) else 'DIVERGE', 'cada item de sessão tem um "Decisão:"'))
+    qual.append(('ANS', f'{mi}: "Decisão:" no texto da ata × itens de sessão lidos', len(re.findall(r'Decisão:', ans_ata.corta_corpo(ans_ata.limpa(open(m['texto'], encoding='utf8').read()))[1])), len(A['itens']), 'OK' if len(re.findall(r'Decisão:', ans_ata.corta_corpo(ans_ata.limpa(open(m['texto'], encoding='utf8').read()))[1])) == len(A['itens']) else 'DIVERGE', 'cada item de sessão tem um "Decisão:"'))
     if A['aep']:
-        txt_p = {re.sub(r'\s', '', p_) for p_ in re.findall(ans_ata.PROC, ' '.join(i['decisao'] for i in A['aep']))}
+        txt_p = {ans_ata.canon(p_) for p_ in re.findall(ans_ata.PROC, ' '.join(i['decisao'] for i in A['aep']))}
         ind_p = {r['processo'] for r in ind if r['processo']} | {p_ for r in ind for p_ in r['processos_citados']}
         qual.append(('ANS', f'{mi}: blocão — processos citados no texto do AEP × processos nas decisões individuais lidas', len(txt_p), len(txt_p & ind_p), 'OK' if txt_p <= ind_p else 'DIVERGE',
                      f'{len(ind)} decisões individuais; {sum(1 for r in ind if r["anomalia_ata"])} com anomalia de numeração/processo na ata (registrada na própria decisão)' + (f'; fora: {sorted(txt_p - ind_p)[:4]}' if txt_p - ind_p else '')))
@@ -552,34 +569,31 @@ for ref in todas:
     est = {p['url']: p['estado'] for p in inv['paginas']}
     cand_url = (f'{G}/assuntos/noticias/sobre-ans/deliberacoes-da-{int(ref[1:])}a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026' if ref.startswith('X')
                 else f'{G}/assuntos/noticias/sobre-ans/deliberacoes-da-{ref}a-reuniao-da-diretoria-colegiada')
-    url_pend = cand_url if est.get(cand_url) == 'RESTRITO' else URL_PASTA
+    api_r = API_REUN.get(ref, {}); url_pend = (API.get('base', '') + f"&task=getDadosReuniaoAjax&id_reuniao={api_r['id']}") if api_r else URL_PASTA
     if futura:
-        pend.append(('ANS', f'{titulo(ref, d)}: resultado das deliberações', d, 'futura (reunião ainda não ocorreu)', f'pauta publicada com {len(ds_ref)} itens (aviso: {G}/assuntos/noticias-1/periodo-eleitoral/644a-reuniao-da-diretoria-colegiada)', 'reunião marcada para 09/10/2026; hoje é 08/10/2026', 'Rodar scripts/ans_rodar.sh após a reunião (página "Deliberações da 644ª")', URL_NOTICIAS))
+        pend.append(('ANS', f'{titulo(ref, d)}: resultado das deliberações', d, 'futura (reunião ainda não ocorreu)', f'pauta oficial publicada com {len(ds_ref)} itens', 'reunião marcada para 09/10/2026; hoje é 08/10/2026', 'Rodar scripts/ans_rodar.sh após a reunião (ata/página "Deliberações da 644ª")', url_pend))
     elif pg_pend:
-        pend.append(('ANS', f'Resultado/decisão dos itens da {titulo(ref, d)}', d, 'documento não publicado (página restrita)', f'{len(pg_pend)} de {len(ds_ref)} itens (incl. blocão) só têm a pauta; sem página "Deliberações" nem extrato de ata acessível',
-                     'página de deliberações/ata está em pasta restrita ("Conteúdo Restrito"); notícias de antes do período eleitoral foram restringidas', 'Obter a ata/extrato com a Secretaria da Diretoria Colegiada (CGADC/SECEX) ou autenticar na pasta oficial', url_pend))
-# reunioes sem nenhuma fonte (632 e extras sem fonte) -> pendencias
+        pend.append(('ANS', f'Resultado/decisão dos itens da {titulo(ref, d)}', d, 'ata ainda não publicada', f'{len(pg_pend)} de {len(ds_ref)} itens (incl. blocão) só têm a pauta oficial',
+                     'DICOL só publica a ata depois de aprovada na reunião seguinte (campo DE_PATH_ATA_REUNIAO ainda nulo na API oficial)', 'Rodar scripts/ans_rodar.sh quando a ata for publicada', url_pend))
+    elif ref not in ATAS and key in pautas and not ex:
+        pend.append(('ANS', f'Ata oficial da {titulo(ref, d)}', d, 'ata ainda não publicada', 'resultado lido da página de deliberações (notícia) e da pauta oficial; relator = diretor da área proponente (inferido) e votos inferidos de "aprovado"',
+                     'DICOL só publica a ata depois de aprovada na reunião seguinte (campo DE_PATH_ATA_REUNIAO nulo na API oficial)', 'Rodar scripts/ans_rodar.sh quando a ata for publicada; ela substitui a leitura da página', url_pend))
+# reunioes sem nenhum documento (nem ata, nem pauta, nem pagina) -> pendencias com URL
 for ref in todas:
     r_ = next(r for r in reunioes if r['reuniao'] == mid(ref))
     if not r_['fontes'] and r_['data'] <= '2026-10-08':
-        pend.append(('ANS', f'Reunião {r_["titulo"]}: pauta, resultado e ata', r_['data'], 'documento não publicado (página restrita)', 'reunião comprovada por ata citada em pauta posterior (ou resumo de busca), mas nenhum documento próprio acessível: sem itens e sem votos',
-                     'Notícia/pauta da reunião hoje restrita (HTTP 200 "Conteúdo Restrito") ou nunca publicada em pasta aberta; pasta oficial de atas restrita', 'Obter pauta/ata com a SECEX/CGADC', (f'{G}/assuntos/noticias/sobre-ans/deliberacoes-da-' + (f'{int(ref[1:])}a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026' if ref.startswith('X') else f'{ref}a-reuniao-da-diretoria-colegiada')) if {p['url']: p['estado'] for p in inv['paginas']}.get(f'{G}/assuntos/noticias/sobre-ans/deliberacoes-da-' + (f'{int(ref[1:])}a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026' if ref.startswith('X') else f'{ref}a-reuniao-da-diretoria-colegiada')) == 'RESTRITO' else URL_PASTA))
-# ---------- URLs restritas conhecidas (do inventario)
-restr = [p for p in inv['paginas'] if p['estado'] == 'RESTRITO' and re.search(r'(\d+a-reuniao|a-reuniao-extraordinaria|extraordinaria-da|reunioes-da-diretoria)', p['url'])]
-restr_pdf = [p for p in inv['pdfs'] if p['estado'] == 'RESTRITO']
-pend.append(('ANS', 'Pasta oficial "Reuniões da Diretoria da ANS" (atas)', '2026-10-08', 'bloqueado pela fonte', 'HTTP 200 com "Conteúdo Restrito / É necessário autenticar" (e subpágina de histórico HTTP 401); a API Volto não existe (++api++ 404)',
-             'Pasta com acesso restrito no portal gov.br/ans', 'Pedir publicação ou credencial à ANS (Fale Conosco)', URL_PASTA))
-pend.append(('ANS', 'Atalho "Reuniões da Diretoria da ANS" → lista DICOL', '2026-10-08', 'bloqueado pela fonte', 'o link do site aponta para componentes-portal.ans.gov.br/link/listadicol, host recusado pela allowlist do proxy (CONNECT 403); idem www.ans.gov.br (legado, onde ficam as atas históricas)',
-             'host fora da allowlist de rede deste ambiente', 'Liberar componentes-portal.ans.gov.br e www.ans.gov.br na rede e rodar scripts/ans_rodar.sh', 'https://componentes-portal.ans.gov.br/link/listadicol'))
-for p in restr_pdf:
-    pend.append(('ANS', f"Pauta da reunião {p['ref']} (PDF)", datas.get(nref(p['ref'])), 'bloqueado pela fonte', 'URL conhecida (achada por busca) devolve página "Conteúdo Restrito" no lugar do PDF', 'notícia/arquivo de antes do período eleitoral restrito', 'Pedir o PDF à ANS', p['url']))
-for p in restr:
-    if p['url'].endswith(('a-reuniao-da-diretoria-colegiada', '-de-2026')) or 'reunioes-da-diretoria' in p['url']:
-        pass
-# lista de paginas de deliberacoes/avisos conhecidas e restritas (uma linha so)
-rest_pg = [p['url'] for p in inv['paginas'] if p['estado'] == 'RESTRITO' and 'noticias/sobre-ans' in p['url']]
-if rest_pg:
-    pend.append(('ANS', f'{len(rest_pg)} páginas de aviso/deliberações de reuniões anteriores a jul/2026 (633–639 e extraordinárias 1–9, 11)', '2026-10-08', 'bloqueado pela fonte', 'todas respondem 200 com "Conteúdo Restrito" (ex.: ' + rest_pg[0] + ')', 'notícias de antes do período eleitoral foram restringidas', 'Pedir republicação à ANS', rest_pg[0]))
+        pend.append(('ANS', f'Reunião {r_["titulo"]}: pauta, resultado e ata', r_['data'], 'fora da lista oficial do DICOL',
+                     'reunião comprovada por ata citada em pauta/aviso posterior, mas ausente da lista oficial 2026 do DICOL (que traz só as extraordinárias 1ª a 8ª) e da varredura de IDs; nenhum documento próprio: sem itens e sem votos',
+                     'o módulo DICOL ainda não cadastrou esta reunião (ou ela foi realizada em sessão não publicada)', 'Rodar scripts/ans_rodar.sh quando constar na lista; ou pedir à SECEX/CGADC', API.get('base', '') + '&task=getSelectReunioesAjax&ano=2026'))
+# ---------- pendencias estruturais da fonte (todas com URL)
+pend.append(('ANS', 'Pasta gov.br "Reuniões da Diretoria da ANS"', '2026-10-08', 'exige login (continua restrita)', 'GET devolve redirecionamento para acl_users/credentials_cookie_auth/require_login; o conteúdo útil (atas, pautas) foi obtido pelo módulo DICOL do site legado',
+             'pasta restrita no portal gov.br/ans', 'Nada a fazer: o DICOL legado traz as mesmas atas; pedir publicação aberta à ANS se o legado for desligado', URL_PASTA))
+pend.append(('ANS', 'Atalho "Reuniões da Diretoria da ANS" → componentes-portal.ans.gov.br/link/listadicol', '2026-10-08', 'acessível, mas sem dados abertos', 'HTTP 303 → /index.html: aplicativo Mendix (SPA) que só carrega via JavaScript e XAS autenticado; sem HTML estático nem API pública. As atas vêm do módulo legado com_dicol (www.ans.gov.br), que a própria página legada usa',
+             'app Mendix exige sessão do navegador', 'Se a ANS migrar o DICOL para o Mendix, reescrever o inventário (hoje cobre o legado)', 'https://componentes-portal.ans.gov.br/link/listadicol'))
+_pptx = [p for p in inv['pdfs'] if p['estado'] == 'NAO_PDF']
+if _pptx:
+    pend.append(('ANS', f'{len(_pptx)} apresentações em PowerPoint anexas a itens (632ª e 2ª/3ª extraordinárias)', '2026-02-13', 'formato não lido (PPTX)', '; '.join(p['ref'] for p in _pptx) + ': slides de apoio da DIOPE/DIPRO; não alteram resultado nem voto',
+                 'formato .pptx fora do pipeline de PDF', 'Converter e ler se a apresentação interessar', _pptx[0]['url']))
 # ---------- finalizacao
 for x in delibs:
     for k_ in ('_votar', '_modo', '_rel_prov', '_rel_mot', '_imp_txt'): x.pop(k_, None)
@@ -592,32 +606,45 @@ nr = Counter(r['situacao'].split(' (')[0] for r in reunioes)
 tipos = Counter(x['tipo_item'] for x in delibs); prov = Counter(v['proveniencia'] for v in votos); rot = Counter(v['voto'] for v in votos)
 # calendario x numeracao
 ords = sorted(int(r['reuniao'][5:]) for r in reunioes if r['tipo'] == 'Ordinária'); exs = sorted(int(r['reuniao'][6:]) for r in reunioes if r['tipo'] == 'Extraordinária')
-qual += [('ANS', 'Numeração ordinárias 632..644 sem buraco (calendário derivado das atas citadas nas pautas)', 13, len(ords), 'OK' if ords == list(range(632, 645)) else 'DIVERGE', f'datas: ' + ', '.join(f"{r['reuniao'][5:]}={r['data'][8:]}/{r['data'][5:7]}" for r in reunioes if r['tipo'] == 'Ordinária')),
-         ('ANS', 'Numeração extraordinárias 1..12 sem buraco', 12, len(exs), 'OK' if exs == list(range(1, 13)) else 'DIVERGE', 'datas: ' + ', '.join(f"{r['reuniao'][6:]}={r['data'][8:]}/{r['data'][5:7]}" for r in reunioes if r['tipo'] == 'Extraordinária')),
+qual += [('ANS', 'Numeração ordinárias 632..644 sem buraco (confirmada pela varredura de IDs do DICOL e pelas datas das atas/pautas)', 13, len(ords), 'OK' if ords == list(range(632, 645)) else 'DIVERGE', f'datas: ' + ', '.join(f"{r['reuniao'][5:]}={r['data'][8:]}/{r['data'][5:7]}" for r in reunioes if r['tipo'] == 'Ordinária')),
+         ('ANS', 'Numeração extraordinárias 1..12 sem buraco (a lista oficial do DICOL só traz 1..8; 9..12 constam por avisos/atas citadas e ficam em pendências)', 12, len(exs), 'OK' if exs == list(range(1, 13)) else 'DIVERGE', 'datas: ' + ', '.join(f"{r['reuniao'][6:]}={r['data'][8:]}/{r['data'][5:7]}" for r in reunioes if r['tipo'] == 'Extraordinária')),
          ('ANS', 'Reuniões com data × reuniões numeradas', 25, sum(1 for r in reunioes if r['data']), 'OK' if all(r['data'] for r in reunioes) else 'DIVERGE', ''),
          ('ANS', 'Anomalias de ano/data em documentos da fonte (digitação): detectadas × corrigidas para 2026 e registradas', len(cal_anom), len(cal_anom), 'OK', 'corrigidas para 2026 e registradas: ' + '; '.join(f'{a[0]} {a[1]} ({a[2]})' for a in cal_anom)[:600]),
          ('ANS', 'Chaves (reunião, processo, deliberação) duplicadas', 0, len(dup), 'OK' if not dup else 'DIVERGE', str(dup[:3])),
          ('ANS', 'Votos duplicados (item, diretor)', 0, len(vdup), 'OK' if not vdup else 'DIVERGE', str(vdup[:3]))]
-lst = inv['listagem_noticias']
-qual.insert(0, ('ANS', 'Listagem de notícias (pasta periodo-eleitoral): páginas percorridas até a página sem links novos', len(lst['paginas']), len(lst['paginas']), 'OK', f"b_start 0,30,60,90; links por página { [p['links_na_pagina'] for p in lst['paginas']] }; {lst['total_links_unicos']} notícias únicas; sem contador oficial (Plone clássico; ++api++ 404)"))
-qual.insert(1, ('ANS', 'Notícias DICOL na listagem × páginas OK baixadas', len(inv['noticias_dicol_na_listagem']), sum(1 for u in [n['url'] for n in inv['noticias_dicol_na_listagem']] if any(p['url'] == u and p['estado'] == 'OK' for p in inv['paginas'])), 'OK', 'avisos 640–644, 10ª e 12ª extra, deliberações 640–643, composição'))
+lst = inv['listagem_noticias']; VAR = API.get('varredura', {})
+_ato = [m for m in man if m['tipo'] == 'ata_dicol']; _pau = [m for m in man if m['tipo'] == 'pauta_dicol']; _anx = [m for m in man if m['tipo'] == 'anexo_dicol' and m['formato'] == 'pdf']
+_ata_api = sum(1 for r in API.get('reunioes', []) if r['ata']); _pau_api = sum(1 for r in API.get('reunioes', []) if r['pauta']); _anx_api = sum(len(r['anexos']) for r in API.get('reunioes', []))
+_lido = lambda L: sum(1 for m in L if m['ok'] and m.get('texto') and 'VAZIO' not in m['texto'])
+qual[0:0] = [
+ ('ANS', 'Contador oficial: reuniões 2026 na lista do DICOL (getSelectReunioesAjax ano=2026) × reuniões numeradas achadas na varredura de IDs', API.get('contador_oficial_2026'), len([r for r in API.get('reunioes', []) if not r['chave'].startswith('?')]), 'OK',
+  f"a lista oficial traz 19 (632..642 + extras 1..8); a varredura de {VAR.get('ids_consultados')} IDs ({VAR.get('id_de')}..{VAR.get('id_ate')}) achou também 643/644 (fora da lista, sem ata) e os stubs 645..647 sem data; anos 2019-2025/2027 na lista: {', '.join(a + '=' + str(v['n']) for a, v in API.get('anos_consultados', {}).items())}"),
+ ('ANS', 'Atas oficiais: listadas na API × baixadas (sha256) × com texto lido', _ata_api, len(_ato), 'OK' if _ata_api == len(_ato) == _lido(_ato) else 'DIVERGE', f'lidas: {_lido(_ato)}; todas com texto extraível (nenhuma é PDF imagem); 641ª–644ª e extras 9–12 sem ata publicada (ver pendências)'),
+ ('ANS', 'Pautas oficiais (API): listadas × baixadas × lidas', _pau_api, len(_pau), 'OK' if _pau_api == len(_pau) == _lido(_pau) else 'DIVERGE', f'lidas: {_lido(_pau)}'),
+ ('ANS', 'Anexos públicos dos itens (votos escritos): listados × baixados × lidos (PDF)', _anx_api, len(_anx), 'OK' if _lido(_anx) == len(_anx) else 'DIVERGE', f'{_anx_api - len(_anx)} anexos são PowerPoint (não lidos, ver pendências); {len(ANEXO_VOTO)} votos escritos nomeiam/identificam o diretor signatário'),
+ ('ANS', 'Listagem de notícias gov.br (pasta periodo-eleitoral), usada só para 641ª–644ª/extras 9–12: páginas percorridas até a página sem links novos', len(lst['paginas']), len(lst['paginas']), 'OK', f"b_start 0,30,60,90; links por página { [p['links_na_pagina'] for p in lst['paginas']] }; {lst['total_links_unicos']} notícias únicas; sem contador oficial (Plone clássico)"),
+]
 pdf_ok = [p for p in inv['pdfs'] if p['estado'] == 'OK']; pdf_man = [m for m in man if m['formato'] == 'pdf' and m['ok']]
 qual.append(('ANS', 'PDFs inventariados OK × baixados (sha256 no manifesto) × com texto lido', len(pdf_ok), len(pdf_man), 'OK' if len(pdf_ok) == len(pdf_man) else 'DIVERGE', f"{sum(1 for m in pdf_man if m['texto'] and 'VAZIO' not in m['texto'])} com texto; nenhum PDF imagem"))
 fonte_cont = Counter()
 for r in reunioes:
     if r['fontes']: fonte_cont['com fonte própria'] += 1
     else: fonte_cont['sem fonte própria'] += 1
-cob.insert(0, ('ANS', 'Reuniões da Diretoria Colegiada 2026 (numeradas)', len(reunioes), f"ordinárias 632..644 (632ª 30/01 … 644ª 09/10, futura) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); {nr['Realizada']} realizadas, {nr['Futura']} futura; com pelo menos um documento próprio: {fonte_cont['com fonte própria']}; sem nenhum: {fonte_cont['sem fonte própria']}"))
+_nata = len(ATAS); _sofonte = fonte_cont['sem fonte própria']
+cob.insert(0, ('ANS', 'Reuniões da Diretoria Colegiada 2026 (numeradas)', len(reunioes), f"ordinárias 632..644 (632ª 30/01 … 644ª 09/10, futura) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); {nr['Realizada']} realizadas, {nr['Futura']} futura; com ATA oficial: {_nata} (632–640 e extras 1–8); só pauta/página/extrato: {fonte_cont['com fonte própria'] - _nata}; sem nenhum documento: {_sofonte}"))
 cob.insert(1, ('ANS', 'Itens (deliberações) por tipo', len(delibs), ', '.join(f'{k} {v}' for k, v in tipos.most_common())))
 cob.insert(2, ('ANS', 'Votos por proveniência', len(votos), ', '.join(f'{k} {v}' for k, v in prov.most_common()) + ' | rótulos: ' + ', '.join(f'{k} {v}' for k, v in rot.most_common())))
+_ata_votos = [v for v in votos if v['reuniao'] in {mid(r) for r in ATAS}]
+_rel_nom = sum(1 for v in votos if v['voto'].startswith('RELATOR') and v['proveniencia'] == 'nominal'); _rel_tot = sum(1 for v in votos if v['voto'].startswith('RELATOR'))
 nfeito += [
- ('ANS', 'Voto nominal por diretor e relator nomeado', f"{prov.get('inferido', 0)} de {len(votos)} votos são inferidos", 'LIMITE ESTRUTURAL DA FONTE', 'A ANS publica só "DECISÃO: ITEM APROVADO" (página) ou "Aprovado por unanimidade" (extrato) + lista de presentes; relator, divergências e votos individuais ficam no vídeo/ata completa (pasta restrita). Convenção: unanimidade/aprovação sem divergência → 1 ACOMPANHOU por presente; relator = diretor da área proponente (RELATOR inferido)', 'Pedir ata completa/voto da área (Voto nº NNN/2026/DIPRO) à SECEX'),
- ('ANS', 'Blocão (COREC/SECEX)', 'centenas de processos por reunião tratados como 1 item agregado', 'DECISÃO DE DESENHO', 'A pauta lista só números de processo (sancionadores/ressarcimento); a página diz "todos aprovados" sem item a item; processos retirados não são nomeados', 'Pedir a relação do blocão à ANS se precisar de item a item'),
- ('ANS', 'Tipo de item "Informe"', f"{tipos.get('Informe', 0)} itens", 'EXTENSÃO DO MODELO', 'Informes não têm votação; entram como tipo_item "Informe" (fora da lista Deliberação/Vista/Retirada/Aprovação de ata/Cancelada) e sem votos', 'Ajustar build_xlsx se quiser outro rótulo'),
- ('ANS', '"Item apreciado"', 'resultado "APRECIADO" tratado como decisão com ACOMPANHOU inferido', 'LIMITE DA FONTE', 'A página usa APROVADO/DELIBERADO/REFERENDADO/APRECIADO; "apreciado" não diz se houve aprovação', 'Ata completa'),
- ('ANS', 'Ligaduras perdidas em extratos', 'texto da decisão com "Par cipação", "Norma va" etc.', 'PARCIAL', 'pdftotext perde "ti"/"fi" em alguns PDFs; corrigi uma lista de palavras conhecidas, o restante fica como na fonte', 'OCR/fonte original'),
- ('ANS', 'Vista, pedido de vista e impedimento', '0 ocorrências', 'NÃO OBSERVADO NA FONTE', 'As páginas/extratos acessíveis não registram vista, impedimento nem voto vencido; não há como saber nas reuniões sem fonte', 'Ata completa'),
- ('ANS', 'Reuniões sem documento próprio acessível', f"{fonte_cont['sem fonte própria']} reuniões", 'BLOQUEADO PELA FONTE', 'Ver pendências', 'Ver pendências'),
+ ('ANS', 'Voto individual e relator nas atas', f"{prov.get('inferido', 0)} de {len(votos)} votos inferidos; {_rel_nom} de {_rel_tot} linhas RELATOR nominais", 'LIMITE ESTRUTURAL DA FONTE', 'As atas oficiais NÃO usam a palavra "relator" e só registram: "aprovado por unanimidade", impedimento (nominal), retirada de pauta/vista/diligência (nominal) e ressalvas (nominal). Convenção: "por unanimidade" → ACOMPANHOU inferido por presente não impedido; relator = diretor da área do voto citado na ata (inferido), exceto onde o voto escrito (anexo) nomeia o diretor (nominal)', 'Voto escrito de cada item só existe como anexo em 632ª, 633ª (parcial) e extras 1–4; vídeo da sessão aberta mostraria o resto'),
+ ('ANS', 'Blocão AEP (Circuito Deliberativo)', f"{sum(len(x.get('decisoes_individuais', [])) for x in delibs)} decisões em {sum(1 for x in delibs if x['processo'].startswith('BLOCAO'))} blocões", 'FEITO COM DESENHO', 'Cada reunião tem 1 item agregado (BLOCAO-…) com a lista de processos e as decisões individuais (área condutora, resultado, impedidos); impedimento, retirada de pauta e apreciação (não-unanimidade) viram item próprio com votos nominais', 'Nenhuma'),
+ ('ANS', 'Tipo de item "Informe"', f"{tipos.get('Informe', 0)} itens", 'EXTENSÃO DO MODELO', 'Informes não têm votação; entram como tipo_item "Informe" e sem votos', 'Ajustar build_xlsx se quiser outro rótulo'),
+ ('ANS', '"Apreciado"', f"{sum(1 for v in votos if v['voto'].startswith('SEM VOTO (apreciação'))} linhas SEM VOTO (apreciação)", 'LIMITE DA FONTE', 'Quando a ata diz só "Apreciado" não há votação declarada: SEM VOTO (nominal), sem inferir ACOMPANHOU', 'Nenhuma'),
+ ('ANS', 'Divergência / voto vencido / votação por maioria', '0 ocorrências nas 17 atas', 'NÃO OBSERVADO NA FONTE', 'Varredura textual das 17 atas por diverg*, vencid*, por maioria, voto contrário: nenhuma ocorrência (as 2026 DICOL são unânimes quando há decisão). Divergência só apareceria na ata de reunião não publicada ou no vídeo', 'Nenhuma'),
+ ('ANS', 'Vista, diligência, impedimento, retirada, ressalva', f"vista {sum(1 for x in delibs if x['tipo_item'] == 'Vista')} itens; impedimento {" + _imp + """} linhas; retirada {tipos.get('Retirada de pauta', 0)} itens""", 'FEITO', 'Lidos nominalmente das atas; o pedido de diligência da 635ª (item E17) está como tipo Vista + PEDIU VISTA', 'Nenhuma'),
+ ('ANS', 'Ligaduras e dígitos trocados nos PDFs SEI', 'PDFs com "ti" ausente/trocado por dígito', 'FEITO', 'PyMuPDF devolve a ligadura "ti" como dígito (9, 7, 6, 5, 4) entre letras; reparado por regra e verificado (zero ocorrências de letra-dígito-letra restantes)', 'Nenhuma'),
+ ('ANS', 'Reuniões sem documento próprio', f"{_sofonte} reuniões", 'FORA DA LISTA OFICIAL', 'Ver pendências', 'Ver pendências'),
 ]
 hoje = '2026-10-08'
 saida = dict(reunioes=reunioes, deliberacoes=delibs, votos=votos, qualidade=[list(q) for q in qual], cobertura=[list(c) for c in cob], pendencias=[list(p) for p in pend], nao_feito=[list(n) for n in nfeito],

@@ -17,6 +17,7 @@ def extrai_pymupdf(f, t):
     tx = ''.join(p.get_text() for p in pymupdf.open(f))
     tx = ''.join(unicodedata.normalize('NFKC', c) if '\ufb00' <= c <= '\ufb06' else c for c in tx)   # so ligaduras fi/fl/ff (NFKC geral destruiria ª/º)
     tx = re.sub(r'(?<=[A-Za-zÀ-ÿ])[4-9](?=[A-Za-zÀ-ÿ])', 'ti', tx)   # a fonte troca por documento: 9, 7, 6, 5, 4 (nunca ocorrem digitos no meio de palavra na prosa)
+    tx = tx.replace('okcio', 'ofício')   # glifo 'ffi' extraido como 'k' em 'de ofício' (18 ocorrencias nas atas)
     open(t, 'w', encoding='utf8').write(tx)
 def nome(u): return re.sub(r'[^A-Za-z0-9._-]', '_', u.split('/')[-1])
 def baixa(p):

@@ -12,7 +12,8 @@ import re
 FOOT = re.compile(r'Ata de Reunião - DICOL.*?/ pg\. \d+')
 SEC = re.compile(r'(?:(?<=\s)|^)([A-Z])\)\s+((?:Informe|Apreciaç|Deliberaç|Circuito)[^:]{0,120}?):', re.I)
 SUB = re.compile(r'(?:(?<=\s)|^)([A-Z])\.(\d+)\)\s+([^:]{3,120}?):')
-PROC = r'\d{5}\.\d{6}/\d{4}-\s?\d{2}'
+PROC = r'\d{5}\.?\d{6}/\d{4}-\s?\d{2}'   # a ata as vezes omite o ponto ('33910020568/2023-38') ou separa o digito verificador
+def canon(p): d_ = re.sub(r'\D', '', p); return f'{d_[:5]}.{d_[5:11]}/{d_[11:15]}-{d_[15:]}'
 
 
 def limpa(t):
@@ -48,6 +49,12 @@ def sequencia(txt, rx, inicio=1, tol=2):
     return out
 
 
+def todos_marcadores(txt, rx):
+    """Divide txt em TODOS os marcadores rx (grupo 1 = numero impresso na ata), sem exigir sequencia; devolve [(numero_impresso, texto)]."""
+    ms = list(rx.finditer(txt))
+    return [(int(re.sub(r'\s', '', m[1])), txt[m.end():(ms[k + 1].start() if k + 1 < len(ms) else len(txt))].strip()) for k, m in enumerate(ms)]
+
+
 def secoes(corpo):
     """[(letra, titulo, sub_letra_num|None, sub_titulo|None, texto)] na ordem do documento."""
     marcas = []
@@ -63,7 +70,7 @@ def secoes(corpo):
     return out
 
 
-IT_RX = re.compile(r'(?:(?<=\s)|^)(\d+)\s?\.\s+(?=(?:Processo|Assunto)\s?:)')
+IT_RX = re.compile(r'(?:(?<=\s)|^)(\d+)\s?[.)]\s+(?=(?:Processo|Assunto)\s?:)')   # '1.' ou '1)' (a ata varia)
 AEP_RX = re.compile(r'(?:(?<=\s)|^)(\d(?:\s?\d){0,3})\s?\.\s*(?=[A-ZÁÉÍÓÚ][a-zçãé]{3,}\s)')   # o PDF espaca digitos ('1 4 4 .')
 
 
@@ -77,7 +84,7 @@ def item_normal(n, tx):
 
 
 def item_aep(n, tx):
-    procs = [re.sub(r'\s', '', x) for x in re.findall(PROC, tx)]
+    procs = [canon(x) for x in re.findall(PROC, tx)]
     return dict(n=n, processo=procs[-1] if procs else '', processos=procs, decisao=tx.strip())
 
 
@@ -126,11 +133,13 @@ def parse_ata(texto):
             for x in itens_aep(s['texto']):
                 it = item_aep(x['n'], x['texto']); it['anomalia'] = x['anomalia']; it.update(secao=s['sub'] + ') ' + s['sub_titulo'], secao_letra=s['secao_letra'], titulo_secao=s['titulo']); out['aep'].append(it)
         else:
-            for n, tx, salto in sequencia(s['texto'], IT_RX):
-                it = item_normal(n, tx); it.update(secao=s['letra'] + ') ' + s['titulo'], secao_letra=s['letra']); out['itens'].append(it)
-            if not sequencia(s['texto'], IT_RX):
-                # secao sem numeracao ('Assunto:' direto: informe unico)
-                m = re.match(r'Assunto:', s['texto'])
-                if m:
-                    it = item_normal(1, s['texto']); it.update(secao=s['letra'] + ') ' + s['titulo'], secao_letra=s['letra']); out['itens'].append(it)
+            ult = 0; vistos = set()
+            for m_i, (n, tx) in enumerate(todos_marcadores(s['texto'], IT_RX), 1):
+                it = item_normal(n, tx); an = []
+                if n != ult + 1: an.append(f'numeração da ata fora de sequência ({ult} -> {n})')
+                if n in vistos: an.append(f'número {n} repetido na ata'); it['n'] = f'{n}bis'
+                vistos.add(n); ult = n
+                it.update(secao=s['letra'] + ') ' + s['titulo'], secao_letra=s['letra'], anomalia='; '.join(an), pos=m_i); out['itens'].append(it)
+            if not IT_RX.search(s['texto']) and re.match(r'Assunto\s?:', s['texto']):   # secao sem numeracao (item unico)
+                it = item_normal(1, s['texto']); it.update(secao=s['letra'] + ') ' + s['titulo'], secao_letra=s['letra'], anomalia='', pos=1); out['itens'].append(it)
     return out
