@@ -6,5 +6,6 @@
 set -e
 python3 -I scripts/ans_inventario.py ans_inventario.json fonte/ans
 python3 -I scripts/ans_baixar.py ans_inventario.json manifesto_ans.json fonte/ans texto_ans
+python3 -I scripts/ans_pptx.py ans_inventario.json fonte/ans texto_ans ans_pptx.json
 python3 -I scripts/ans_parse.py manifesto_ans.json ans_inventario.json ans.json
 python3 -I scripts/ans_auditoria.py ans.json 44 2026 > /dev/null

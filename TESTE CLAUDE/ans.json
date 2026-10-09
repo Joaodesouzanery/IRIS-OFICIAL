@@ -50497,7 +50497,7 @@
    "ANS",
    "Reuniões da Diretoria Colegiada 2026 (numeradas)",
    25,
-   "ordinárias 632..644 (632ª 30/01 … 644ª 09/10, futura) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); 24 realizadas, 1 futura; com ATA oficial: 17 (632–640 e extras 1–8); só pauta/página/extrato: 5; sem nenhum documento: 3"
+   "ordinárias 632..644 (632ª 30/01 … 644ª 09/10) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); 24 realizadas, 1 futura; com ATA oficial: 17 (632–640 e extras 1–8); só pauta/página/extrato: 5; sem nenhum documento: 3"
   ],
   [
    "ANS",
@@ -50681,7 +50681,7 @@
    "2026-10-09",
    "futura (reunião ainda não ocorreu)",
    "pauta oficial publicada com 5 itens",
-   "reunião marcada para 09/10/2026; hoje é 08/10/2026",
+   "reunião marcada para 09/10/2026; hoje é 09/10/2026 (dia da reunião: resultado ainda não publicado)",
    "Rodar scripts/ans_rodar.sh após a reunião (ata/página \"Deliberações da 644ª\")",
    "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=getDadosReuniaoAjax&id_reuniao=92600"
   ],
@@ -50718,7 +50718,7 @@
   [
    "ANS",
    "Pasta gov.br \"Reuniões da Diretoria da ANS\"",
-   "2026-10-08",
+   "2026-10-09",
    "exige login (continua restrita)",
    "GET devolve redirecionamento para acl_users/credentials_cookie_auth/require_login; o conteúdo útil (atas, pautas) foi obtido pelo módulo DICOL do site legado",
    "pasta restrita no portal gov.br/ans",
@@ -50728,7 +50728,7 @@
   [
    "ANS",
    "Atalho \"Reuniões da Diretoria da ANS\" → componentes-portal.ans.gov.br/link/listadicol",
-   "2026-10-08",
+   "2026-10-09",
    "acessível, mas sem dados abertos",
    "HTTP 303 → /index.html: aplicativo Mendix (SPA) que só carrega via JavaScript e XAS autenticado; sem HTML estático nem API pública. As atas vêm do módulo legado com_dicol (www.ans.gov.br), que a própria página legada usa",
    "app Mendix exige sessão do navegador",
@@ -50859,6 +50859,6 @@
   "Eliane Aparecida de Castro Medeiros": "mandato encerrado em 24/09/2026",
   "Jorge Antônio Aquino Lopes": "mandato encerrado em 26/08/2026"
  },
- "composicao_nota": "Colegiado em 08/10/2026: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.",
+ "composicao_nota": "Colegiado em 09/10/2026: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.",
  "log_pareamento": []
 }

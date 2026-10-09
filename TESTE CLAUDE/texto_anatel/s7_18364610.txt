@@ -1,0 +1,1190 @@
+SEI/ANATEL - 16377916 - Análise
+Boletim de Serviço Eletrônico em 08/10/2026
+Análise nº 119/2026/AF
+Processo nº 53500.005231/2019-53
+Interessado: CLARO S.A.
+CONSELHEIRO
+ALEXANDRE FREIRE
+ASSUNTO
+Recurso administrativo, cumulado com pedido de efeito suspensivo, interposto pela Claro S.A. em face do Despacho Decisório nº 73/2022/CODI/SCO.
+EMENTA
+DIREITO ADMINISTRATIVO. RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES. CONTRATO DE PERMANÊNCIA E GRAVAÇÕES DE ATENDIMENTO. RECURSO NÃO PROVIDO. REVISÃO DE OFÍCIO.
+I. CASO EM EXAME
+Recurso administrativo interposto por prestadora de Serviço Telefônico Fixo Comutado contra decisão que aplicou multa de R$ 1.331.694,50 por infrações ao Regulamento Geral de Direitos do Consumidor e ao Decreto nº 6.523/2008.
+A recorrente requereu o afastamento da sanção ou, subsidiariamente, a aplicação de advertência e a revisão dos parâmetros de cálculo da multa.
+A instrução recursal indicou a possibilidade de agravamento da sanção. A prestadora foi intimada e apresentou alegações.
+II. QUESTÃO EM DISCUSSÃO
+Há cinco questões em discussão: (i) saber se houve cerceamento de defesa por insuficiência de provas; (ii) saber se ocorreu prescrição intercorrente; (iii) saber se é possível agravar a sanção em recurso administrativo; (iv) saber se subsiste a infração por não disponibilização de serviço sem prazo de permanência mínima; e (v) saber se a dosimetria da sanção deve ser revista.
+III. RAZÕES DE DECIDIR
+Os documentos de fiscalização identificam os fatos, os dispositivos infringidos e as provas que fundamentaram a autuação. A recorrente teve acesso aos elementos necessários para apresentar defesa. Não houve demonstração de prejuízo ao contraditório ou à ampla defesa.
+Os atos de fiscalização possuem presunção relativa de legitimidade e veracidade. A recorrente não apresentou elementos suficientes para afastar as constatações relativas às gravações e à simulação de contratação no sítio eletrônico.
+Não ocorreu prescrição intercorrente ou quinquenal. A Lei nº 9.873/1999 rege a pretensão punitiva da Administração Pública Federal e admite múltiplas causas interruptivas.
+O agravamento da sanção em sede recursal é possível quando a recorrente é previamente intimada para se manifestar e a Procuradoria Federal Especializada junto à Anatel é ouvida.
+A fiscalização constatou que os planos disponibilizados condicionavam descontos à permanência mínima de doze meses. A conduta caracterizou infração ao art. 57, § 4º, do RGC/2014 e possui caráter sistêmico.
+A infração ao art. 57, § 4º, do RGC/2014 deve permanecer classificada como grave. A conduta proporcionou vantagem direta à prestadora e teve potencial de atingir número significativo de usuários.
+O fator Tempk da infração ao art. 57, § 4º, do RGC/2014 deve corresponder a até um ano.
+As infrações aos arts. 57, § 1º, e 58, caput e parágrafo único, do RGC/2014 devem ser classificadas como graves.
+A dosimetria deve considerar a proporcionalização da Receita Operacional Líquida e dos usuários totais nas infrações verificadas em lojas nos estados em que foram constatadas.
+O valor-base das multas pelas infrações ao art. 58, caput e parágrafo único, do RGC/2014 não pode ser inferior ao dobro da vantagem auferida.
+Não incidem circunstâncias atenuantes. A documentação apresentada para demonstrar a regularização da conduta foi juntada após o prazo regulamentar.
+ A decisão alinha-se aos objetivos do Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, no sentido de prestigiar boas práticas regulatórias, com princípios, estratégias, ações e procedimentos destinados a promover a melhoria da qualidade da regulação por meio do aperfeiçoamento contínuo do processo regulatório. 
+A solução atende aos estudos apresentados na publicação “Boas Práticas Regulatórias do QualiREG – Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborada pela Controladoria-Geral da União - CGU em parceria com o Escritório das Nações Unidas de Serviços para Projetos - UNOPS e com o Programa das Nações Unidas para o Desenvolvimento - PNUD, por reafirmar, no caso concreto, a segurança jurídica no setor de telecomunicações. 
+A fundamentação alinha-se às melhores práticas regulatórias da OCDE, na medida em que assegura transparência, responsabilização e previsibilidade na atuação regulatória. 
+A decisão corrobora com objetivos da Agenda 2030 da Organização das Nações Unidas, ao promover a proteção dos direitos dos consumidores de serviços de telecomunicações.
+IV. DISPOSITIVO E TESE
+Recurso administrativo conhecido e não provido. Revisão de ofício da sanção.
+Tese de julgamento: "1. É possível agravar a sanção em recurso administrativo quando o interessado é previamente intimado para apresentar alegações e a Procuradoria Federal Especializada junto à Anatel é ouvida. 2. A indisponibilidade de plano de serviço sem prazo de permanência mínima caracteriza infração sistêmica ao art. 57, § 4º, do RGC/2014 quando a prática possui potencial de atingir número significativo de usuários. 3. A dosimetria da multa deve observar a gravidade da conduta, o fator tempo, a vantagem auferida e a delimitação territorial das infrações constatadas."
+Dispositivos relevantes citados: Lei nº 9.784/1999, arts. 50, § 1º, 64, parágrafo único, e 65; Lei nº 9.873/1999; Decreto nº 6.523/2008, art. 15, § 3º; Resolução Anatel nº 589/2012, arts. 9º, §§ 2º e 3º, 12, 18, § 2º, 19 e 20; Resolução Anatel nº 612/2013, arts. 115, § 1º, 116 e 125, §§ 1º, 3º e 4º; Resolução Anatel nº 632/2014, arts. 57, §§ 1º a 4º, e 58, caput e parágrafo único.
+Jurisprudência relevante citada: Súmula Anatel nº 22, publicada em 21.10.2019; Anatel, Acórdão nº 311, de 11.11.2025, Processo nº 53500.000556/2021-64, Rel. Conselheiro Vicente Bandeira de Aquino Neto, Reunião nº 948, de 04.11.2025; Anatel, Acórdão nº 130, de 13.05.2026.
+REFERÊNCIAS
+LEGISLAÇÃO CITADA:
+Decreto-Lei nº 4.657, de 4 de setembro de 1942 - Lei de Introdução às normas do Direito Brasileiro.
+Lei nº 8.078, de 11 de setembro de 1990 - Código de Defesa do Consumidor.
+Lei nº 9.472, de 16 de julho de 1997 - Lei Geral de Telecomunicações (LGT).
+Lei nº 9.784, de 29 de janeiro de 1999 - Lei do Processo Administrativo (LPA).
+Decreto nº 8.892, de 27 de outubro de 2016, que cria a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável.
+Decreto nº 9.612, de 17 de dezembro de 2018, que dispõe sobre políticas públicas de telecomunicações.
+Decreto nº 10.531, de 26 de outubro de 2020, que institui a Estratégia Federal de Desenvolvimento para o Brasil no período de 2020 a 2031.
+Decreto nº 11.632, de 11 de agosto de 2023, que Institui o Programa de Aceleração do Crescimento - Novo PAC, o Comitê Gestor do Programa de Aceleração do Crescimento e o Grupo Executivo do Programa de Aceleração do Crescimento.
+Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG).
+Decreto nº 11.704, de 14 de setembro de 2023, que institui a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável.
+Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor.
+Decreto nº 6.523, de 31 de julho de 2008, que fixa normas gerais sobre o Serviço de Atendimento ao Consumidor - Decreto do SAC.
+Resolução nº 589, de 7 de maio de 2012 - Regulamento de Aplicação de Sanções Administrativas (RASA).
+Resolução nº 612, de 29 de abril de 2013 - Regimento Interno da Anatel (RIA).
+Resolução nº 632, de 7 de março de 2014 - Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações (RGC).
+Resolução nº 746, de 22 de junho de 2021 - Regulamento de Fiscalização Regulatória (RFR).
+Resolução Anatel nº 784, de 07 de novembro de 2025, que altera o Regulamento de Aplicação de Sanções Administrativas - RASA e o seu Anexo.
+Portaria nº 791, de 26 de agosto de 2014, que dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos a direito dos Usuários previstas na regulamentação.
+Enunciado nº 22 da Súmula da Anatel.
+PRECEDENTES CITADOS:
+AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (Brasil). Conselho Diretor. Acórdão nº 311, de 11 de novembro de 2025. Processo nº 53500.000556/2021-64. Recorrentes/Interessadas: Claro S.A. e Embratel TVSAT Telecomunicações S.A. Relator: Conselheiro Vicente Bandeira de Aquino Neto. Brasília, DF: 2025.
+SUPREMO TRIBUNAL FEDERAL (Brasil). Agravo regimental no recurso extraordinário com agravo n. 641.054/RJ. Relator: Min. Luiz Fux. 1. Turma. Diário da Justiça Eletrônico, Brasília, DF, 26 jun. 2012.
+SUPERIOR TRIBUNAL DE JUSTIÇA (Brasil). Recurso ordinário em mandado de segurança n. 21.981/RJ. Relatora: Min. Eliana Calmon. 2. Turma. Diário da Justiça Eletrônico, Brasília, DF, 5 ago. 2010.
+TRIBUNAL REGIONAL FEDERAL DA 1ª REGIÃO (Brasil). Apelação Cível n. 0080340-91.2013.4.01.3400/DF. Relator: Des. Federal Jirair Aram Meguerian. 6. Turma. Julgado em: 20 mar. 2017.
+TRIBUNAL REGIONAL FEDERAL DA 2ª REGIÃO (Brasil). Medida cautelar inominada n. 2012.02.01.011414-0. Relator: Juiz Federal Convocado Marcelo Pereira da Silva. 5. Turma. e-DJF2R, 27 set. 2012.
+TRIBUNAL REGIONAL FEDERAL DA 4ª REGIÃO (Brasil). Apelação Cível n. 5056938-10.2012.404.7000/PR. Relator: Des. Federal Luís Carlos Cervi. 4. Turma. Julgado em: 13 maio 2014.
+DEMAIS REFERÊNCIAS:
+CONTROLADORIA-GERAL DA UNIÃO (Brasil); ESCRITÓRIO DAS NAÇÕES UNIDAS DE SERVIÇOS PARA PROJETOS (UNOPS); PROGRAMA DAS NAÇÕES UNIDAS PARA O DESENVOLVIMENTO (PNUD). Boas práticas regulatórias do QualiREG: Programa de Aprimoramento da Qualidade da Regulação Brasileira. Brasília, DF: CGU, 2024.
+INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). Adequação dos Objetivos de Desenvolvimento Sustentável da Agenda 2030 à realidade brasileira. Brasília, DF: Ipea, [s. d.].
+PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL. Parecer nº 78/2026/PFE-ANATEL/PGF/AGU. SEI nº 15365669. Brasília, DF: PFE-Anatel, 2026.
+PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À ANATEL. Parecer Normativo nº 420/2008/PGF/PFE-Anatel. Brasília, DF: PFE-Anatel, 2008.
+PROCURADORIA FEDERAL ESPECIALIZADA JUNTO À AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (Brasil). Parecer nº 00052/2026/PFE-ANATEL/PGF/AGU, de 16 de junho de 2026. Processo nº 53500.024929/2020-10. Brasília, DF: PFE-Anatel, 2026.
+ORGANIZAÇÃO PARA COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO - OCDE. Recommendation of the Council on Principles of Corporate Governance, OECD/LEGAL/0413, 2023. Disponível em: Oecd. Acesso em: 18 maio 2026.
+ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO (OCDE). Princípios de governança corporativa do G20 e da OCDE. Paris: OECD, [s. d.].
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS ONU. Objetivos de Desenvolvimento Sustentável no Brasil. 2023. Disponível em: brasil.org. Acesso em: 18 maio 2026.
+VALENTE, Patrícia Rodrigues Pessôa. Autonomia Decisória. In: VALENTE, Patrícia Rodrigues Pessôa (org.). Boas Práticas Regulatórias: Programa de aprimoramento da qualidade da Regulação Brasileira (QualiREG). Brasília, 2024, p. 49-55. Disponível em: CGU. Acesso em: 18 maio 2026.
+RELATÓRIO
+Cuida-se de Recurso Administrativo, cumulado com pedido de efeito suspensivo, interposto pela CLARO S.A., CNPJ nº 40.432.544/0001-47, prestadora do Serviço Telefônico Fixo Comutado (STFC), em face do Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175).
+A instauração do presente processo ocorreu por meio do Despacho Ordinatório de Instauração nº 26/2019/SEI/CODI/SCO (SEI nº 3805560), fundamentado no Relatório de Fiscalização nº 0431/2017/GR01 (SEI nº 3805561), parte integrante do Processo de Fiscalização nº 53504.001361/2017-15. Na ocasião, foram constatados indícios das seguintes infrações:
+Seq.
+ | Conduta
+ | Infração
+ | 
+1
+ | O tempo máximo para o prazo de permanência de 12 meses não é cumprido
+ | Art. 57, §1º, do Anexo à Resolução nº 632/2014
+ | 
+2
+ | A prestadora não permite a contratação de nenhum serviço sem fidelização
+ | Art. 57, § 4º, do Anexo à Resolução nº 632/2014
+ | 
+3
+ | O valor da multa pela rescisão contratual antecipada não é proporcional ao tempo restante para o término do prazo de permanência e/ou não é proporcional ao valor do benefício concedido para ficar fidelizado
+ | Art. 58, caput, do Anexo à Resolução nº 632/2014
+ | 
+4
+ | A operadora não apresentou os contratos de permanência preenchidos com os dados do cliente e as respectivas assinaturas e datas das contratações, não comprovando assim que o prazo máximo contratado pelo cliente seja de 12 meses
+ | Art. 57, § 1º, do Anexo à Resolução nº 632/2014
+ | 
+5
+ | A operadora não apresentou os contratos de permanência assinados e datados, indicando que estes não foram firmados
+ | Art. 57, § 2º, do Anexo à Resolução nº 632/2014
+ | 
+6
+ | Não constam de forma clara, no Contrato de Permanência, todas as informações obrigatórias (Prazo de permanência aplicável; Descrição do benefício concedido e seu valor; Valor da multa em caso de rescisão antecipada do Contrato; Contrato de Prestação de Serviço a que se vincula)
+ | Art. 57, § 3º, do Anexo à Resolução nº 632/2014
+ | 
+7
+ | O cliente foi cobrado por multa em virtude de descumprimento de obrigação contratual por parte da prestadora
+ | Art. 58, P.U., do Anexo à Resolução nº 632/2014
+ | 
+8
+ | Não armazenou o restante das gravações
+ | Art. 15, §3º, do Decreto nº 6.523/2008 c/c Art. 26, caput e §2º, do Anexo à Resolução nº 632/2014
+ | 
+A Claro S.A. foi notificada, em 25 de setembro de 2019 (SEI nº 4658791), por meio do Ofício nº 82/2019/CODI/SCO (SEI nº 3805562), de 23 de setembro de 2019, para apresentar defesa. 
+Em 1º de outubro de 2019, por meio da Certidão (SEI nº 4684625), a Gerência de Acompanhamento de Direitos dos Consumidores (CODI) retificou o Despacho Ordinatório de Instauração quanto ao campo interessado. 
+Em 10 de outubro de 2019, a Claro apresentou Defesa (SEI nº 4742041).
+A CODI, por meio da Certidão (SEI nº 5907801), em 26 de agosto de 2020, declarou encerrada a instrução. 
+Na mesma data, a CODI notificou a Claro para apresentação de alegações finais, conforme Ofício nº 479/2020/CODI/SCO (SEI nº 5907806).
+A Claro foi notificada em 02 de setembro de 2020 e apresentou as Alegações Finais (SEI nº 5969099) em 14 de setembro de 2020. 
+Em 25 de março de 2022, após analisar as alegações da Claro no Informe nº 195/2022/CODI/SCO (SEI nº 8136509), a Superintendência de Controle de Obrigações (SCO) proferiu o Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175). A decisão aplicou multa no valor de R$ 1.331.694,50 pelas infrações aos arts. 57, §§ 1º ao 4º, e 58, caput e parágrafo único, do RGC (Resolução nº 632/2014), bem como ao art. 15, § 3º, do RSAC (Decreto nº 6.523/2008).
+A Claro foi notificada do referido despacho, em 11 de abril de 2022 (SEI nº 8302369), por meio do Ofício nº 178/2022/CODI/SCO (SEI nº 8149184). 
+A Claro apresentou Recurso Administrativo (SEI nº 8352431), em 23 de abril de 2022 (SEI nº 8352433), no qual solicitou que: 
+a sanção seja integralmente afastada nos termos apresentados;
+subsidiariamente, a aplicação da sanção de advertência, em observância ao disposto no inciso I do artigo 12 do RASA;
+subsidiariamente, caso mantida a sanção de multa, que os parâmetros utilizados sejam revistos, especialmente considerando-se as infrações como pontuais e os clientes de fato potencialmente afetados;
+a concessão do efeito suspensivo e o encaminhamento do recurso ao Conselho Diretor para conhecimento e, no mérito, integral provimento, reformando o despacho recorrido para anular a sanção de multa aplicada. Alternativamente, pugna pela revisão da penalidade, ainda que em parte.
+Em 25 de abril de 2022, a SCO, por meio da Certidão (SEI nº 8353288), atestou a aplicação do efeito suspensivo à sanção de multa.
+As razões recursais foram analisadas pela CODI no Informe nº 194 /2024/CODI/SCO (SEI nº 12126319), no qual opinou:
+pelo conhecimento do recurso interposto por CLARO S.A., CNPJ nº 40.432.544/0001-47, prestadora do Serviço Telefônico Fixo Comutado (STFC), contra o Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175), diante do atendimento dos requisitos de admissibilidade;
+pela alteração da sanção, passando de multa no valor de R$1.331.694,50 para advertência cumulada com multa no valor de R$ 847.464,29, pelo descumprimento aos arts. 57, §§1º; 2º; 3º, I; II; iII; 4º; 58, caput e parágrafo único, do RGC e ao art. 15, §3º, do RSAC;
+pela notificação da prestadora para apresentar suas alegações no prazo de 15 dias, conforme previsão do art. 64, parágrafo único, da LPA e do art. 125, § 4º, do RIA, em razão da possibilidade de agravamento parcial da sanção originalmente aplicada.
+A recorrente foi notificada, em 12 de julho de 2024 (SEI nº 12271213), por meio do Ofício nº 203 /2024/CODI/SCO (SEI nº 12167118) sobre a possibilidade de agravamento da sanção.
+Em 25 de julho de 2024, a CODI por meio do Despacho Ordinatório (SEI nº 12295778), informou que não há necessidade de instauração de Procedimento de Acompanhamento quanto ao ressarcimento de valores aos consumidores. 
+Em 29 de julho de 2024, a recorrente apresentou Alegações (SEI nº 12347600 e nº 12347601), requerendo, ao final: a) a revisão da sanção, especialmente para descaracterizar a infração amparada nas evidências extraídas do site da Claro; b) subsidiariamente, caso mantida a infração, o recálculo e a redução da multa, afastando-se o caráter sistêmico e aplicando-se a proporcionalidade em relação aos usuários efetivamente atingidos; c) o afastamento do agravamento das penalidades sugerido pelo Informe nº 194/2024/CODI/SCO; e d) na hipótese de não acolhimento das razões em juízo de retratação, a remessa do expediente à autoridade hierarquicamente superior para julgamento.
+As alegações foram analisadas pela SCO no Informe nº 45/2026/CODI/SCO (SEI nº 15064314), que concluiu pelo envio do processo à Procuradoria Federal Especializada da Anatel (PFE-Anatel), nos termos do art. 125, §1º, do Regimento Interno, e do art. 7º, V, da Portaria nº 642/2013, alterada pela Portaria nº 739/2013, que disciplina os casos em que o referido Órgão Jurídico deve se manifestar obrigatoriamente.
+A PFE-Anatel emitiu Parecer nº 78/2026/PFE-ANATEL/PGF/AGU (SEI nº 15365669), de 20 de março de 2026, opinando:
+a) pela possibilidade de agravamento da sanção de multa pela autoridade competente, tendo em vista que foram observados os requisitos do art. 64, parágrafo único, da Lei 9.784/1999, e do art. 125, parágrafos 1º, 3º e 4º, do Regimento Interno;
+b) pela recomendação de se adotar a ROL de 2021 caso, neste momento, já seja de conhecimento da Agência, considerando que o Despacho Decisório data de 25/03/2022 (SEI nº 8149175), em consonância com as reiteradas manifestações desta Procuradoria no sentido de se adotar a ROL do ano imediatamente anterior ao da aplicação da sanção, bem como a consideração da ROL da pessoa jurídica infratora como um todo, sem limitação geográfica ou distinção entre matriz e filiais;
+c) no que concerne aos antecedentes a serem considerados no cálculo da multa, eles devem ser referentes à pessoa jurídica como um todo, sem a distinção por serviço; e
+d) havendo acolhimento das sugestões feitas por esta Procuradoria neste opinativo, caso ocorra agravamento da situação da recorrente, esta deverá ser novamente notificada para apresentar alegações. Nessa hipótese, e caso inexistam novas controvérsias jurídicas ou novos fundamentos para o agravamento da situação da recorrente diversos daqueles que já foram apreciados neste Parecer, não haverá necessidade de retorno dos autos a esta Procuradoria após eventual nova manifestação da autuada e consequente análise da área técnica, já que, nesta situação, os fins buscados pela Portaria nº 642/2013 terão sido plenamente observados.
+A SCO analisou o opinativo da PFE-Anatel no Informe nº 305/2026/CODI/SCO (SEI nº 15563467), de 04 de maio de 2026, concluindo pelo conhecimento do recurso administrativo e o "envio do Pado ao Conselho Diretor da Anatel para decisão final do processo, conforme previsão do art. 115, §1º, “b”, do Regimento Interno, com a sugestão da revisão, de ofício, da sanção aplicada, consistente em multa, no valor total de R$ 1.331.694,50 (um milhão, trezentos e trinta e um mil, seiscentos e noventa e quatro reais e cinquenta centavos), para advertência cumulada com multa, no valor de R$ 847.464,29 (oitocentos e quarenta e sete mil quatrocentos e sessenta e quatro reais e vinte e nove centavos)."
+Na mesma data, a SCO, mediante o Despacho Decisório nº 228/2026/CODI/SCO (SEI nº 15564162), conheceu do recurso, uma vez que preenchidos seus requisitos de admissibilidade, e encaminhou o processo para distribuição e deliberação deste Conselho Diretor, conforme preceitua o art. 115, § 1º, alínea “b”, do Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+A SCO, em 04 de maio de 2026, expediu a Matéria para Apreciação do Conselho Diretor nº 362/2026 (SEI nº 15564186), encaminhando o processo e sugerindo o provimento parcial do recurso, com a revisão, de ofício, da sanção aplicada.
+O Superintendente Executivo da Anatel (SUE) encaminhou, em 6 de maio de 2026, o processo à Secretaria do Conselho Diretor para distribuição, conforme o Despacho Ordinatório (SEI nº 15594812).
+Em 7 de maio de 2026, o processo foi distribuído para minha relatoria, conforme Certidão de Distribuição (SEI nº 15598531).
+Na mesma data, foi expedido o Ofício nº 164/2026/AF-ANATEL, por meio do qual o processo foi encaminhados à Superintendência de Controle de Obrigações para instrução adicional, em razão da necessidade de esclarecimentos complementares acerca da dosimetria sancionatória.
+Em atendimento à diligência, a Superintendência de Controle de Obrigações elaborou o Informe nº 422/2026/CODI/SCO, no qual procedeu à reanálise dos pontos indicados pela relatoria. Nesse documento, a área técnica consignou que promoveu ajustes na dosimetria sancionatória, com revisão da classificação de determinadas condutas, reexame do fator temporal e recálculo das infrações relativas aos arts. 57 e 58 do RGC e ao art. 15, § 3º, do Decreto nº 6.523/2008. Em razão da possibilidade de agravamento da sanção anteriormente aplicada, indicando majoração do valor total da multa de R$ 1.331.694,50 para R$ 1.517.297,43, e propôs a adoção das providências necessárias para oportunizar manifestação prévia da prestadora, em observância ao contraditório e à ampla defesa. 
+Na sequência, foi expedido o Ofício nº 636/2026/CODI/SCO-ANATEL, por meio do qual a Claro S.A. foi notificada, em 15 de julho de 2026 (Certidão de Intimação Cumprida nº 15966574), para apresentar alegações no prazo de 15 (quinze) dias, em face da possibilidade de agravamento da sanção, nos termos do parágrafo único do art. 64 da Lei nº 9.784/1999 e do § 4º do art. 125 do Regimento Interno da Anatel.
+A Claro apresentou manifestação (SEI nº 16049407), em 30 de julho de 2026 (SEI nº 16049409), requerendo o reconhecimento da prescrição intercorrente e arquivamento; subsidiariamente, afastamento do agravamento; se não for esse o entendimento, aplicação de advertência; e, se mantida a multa, recálculo com exclusão do caráter sistêmico, limitação do fator tempo, manutenção da gravidade média no art. 57, § 1º, e afastamento da agravante de 10%.
+A SCO analisou as alegações da Claro por meio do Informe nº 500/2026/CODI/SCO (SEI nº 16050854) analisou as alegações da Claro S.A., concluindo, em síntese que:
+Prescrição intercorrente: rejeita a tese da recorrente de que apenas o primeiro ato poderia interromper a prescrição. Conforme a regra de unicidade do art. 202 do Código Civil não se aplica aos processos sancionadores da Anatel, regidos pela Lei nº 9.873/1999, que admite múltiplas causas interruptivas. 
+Reformatio in pejus: considera juridicamente possível agravar a sanção em julgamento recursal, desde que o interessado seja previamente intimado para se manifestar, com respeito à motivação, proporcionalidade, razoabilidade, contraditório e ampla defesa. 
+Infração ao art. 57, §4º, do RGC: mantém o entendimento de que a impossibilidade de contratar sem fidelização tinha caráter sistêmico. A análise afirma que uma prática procedimental no site, potencialmente aplicável aos consumidores em geral, dispensa a comprovação de dano concreto ou a quantificação exata de usuários afetados.
+Argumentos sobre contratação em combo, prova impossível e tratamento desigual em processo análogo: foram afastados. Afirma que taisas alegações já haviam sido examinadas em manifestações anteriores e que a prestadora não apresentou prova suficiente de que, à época da fiscalização, havia opção de contratação individual de STFC sem fidelização. Também sustenta a presunção relativa de veracidade das constatações fiscais.
+Fator tempo da infração: confirma a adoção do período de “até um ano”, considerando a ocorrência da irregularidade em diferentes momentos e canais durante a fiscalização — gravações, site e lojas. Afasta a alegação de dupla valoração.
+Gravidade e dosimetria: mantém a classificação grave da infração referente ao prazo de permanência superior a 12 meses, por vantagem direta, e entende cabível a agravante de 10% para a infração sistêmica, quando presentes mais de uma das hipóteses regulamentares de gravidade. Rejeita a alegação de bis in idem.
+Advertência: entende que ela não é aplicável às infrações graves e que, inclusive para as infrações de gravidade média tratadas no caso, a multa é cabível.
+Ao final, propõe o encaminhamento dos autos à Procuradoria Federal Especializada junto à Anatel, para manifestação obrigatória antes da decisão
+A Procuradoria Federal Especializada junto à Anatel se manifestou por meio do Parecer nº 352/2026/PFE-ANATEL/PGF/AGU (SEI nº 16386159), de 1º de outubro de 2026, no qual conclui:
+a) pela possibilidade de agravamento da sanção administrativa pelo Conselho Diretor da Anatel, visto que foram observados os requisitos do art. 64, parágrafo único, da Lei nº 9.784, de 1999, e do art. 125, parágrafos 1º e 4º, do Regimento Interno; 
+b) pela não ocorrência de prescrição intercorrente ou de prescrição quinquenal nos presentes autos; 
+c) pela não utilização, por cautela, do fator de gradação previsto no art. 9º, § 3º, IV, do RASA como elemento adicional para a incidência da circunstância agravante, com a consequente majoração do valor de multa, prevista no art. 19, III, do Regulamento de Sanções;
+d) pela recomendação de se adotar a ROL de 2021 caso, neste momento, já seja de conhecimento da Agência, considerando que o Despacho Decisório data de 25/03/2022 (SEI nº 8149175), em consonância com as reiteradas manifestações desta Procuradoria no sentido de se adotar a ROL do ano imediatamente anterior ao da aplicação da sanção, bem como a consideração da ROL da pessoa jurídica infratora como um todo, sem limitação geográfica ou distinção entre matriz e filiais, visto que a sanção foi aplicada antes da alteração promovida no art. 18, § 1º do RASA pela Resolução nº 784, de 07 e novembro de 2025; 
+e) no que concerne aos antecedentes a serem considerados no cálculo da multa, eles devem ser referentes à pessoa jurídica como um todo, sem a distinção por serviço; 
+f) havendo acolhimento das sugestões feitas por esta Procuradoria neste opinativo, caso ocorra agravamento da situação da recorrente, esta deverá ser novamente notificada para apresentar alegações. Nessa hipótese, e caso inexistam novas controvérsias jurídicas ou novos fundamentos para o agravamento da situação da recorrente diversos daqueles que já foram apreciados neste Parecer, não haverá necessidade de retorno dos autos a esta Procuradoria após eventual nova manifestação da autuada e consequente análise da área técnica, já que, nesta situação, os fins buscados pela Portaria nº 642/2013 terão sido plenamente observados; e
+ g) por fim, alerta-se quanto ao risco de incidência de prescrição quinquenal no presente Pado, considerando-se prudente que a decisão de segunda instância seja proferida antes de 25/03/2027.
+É o breve relato.
+DA ANÁLISE
+A presente fundamentação está estruturada em sete partes. Na primeira, examina-se a admissibilidade recursal. Na segunda, apresentam-se os argumentos e pedidos da Recorrente. Na terceira, trata-se da análise das suas razões recursais. Por fim, fundamenta-se a presente decisão com o Decreto nº 11.738, de 18 de outubro de 2023, que dispõe sobre o Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação (PRO-REG), com o Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG), com as boas práticas regulatórias recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE), com os Objetivos do Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU).
+I – Da Admissibilidade Recursal
+A instauração e a instrução do presente processo atenderam à sua finalidade, com observância aos princípios do devido processo legal, do contraditório e da ampla defesa, conforme dispõem a Lei nº 9.784, de 29 de janeiro de 1999, que regula o processo administrativo no âmbito da Administração Pública Federal (LPA), e o Regimento Interno da Anatel (RIA), aprovado pela Resolução nº 612, de 29 de abril de 2013.
+O Recurso Administrativo deverá ser encaminhado à autoridade hierarquicamente superior quando não houver retratação pela autoridade que proferiu a decisão. No caso, o recurso foi dirigido para a SCO, que dele conheceu e manteve sua decisão. Portanto, correto é o encaminhamento para decisão deste Conselho Diretor, conforme previsto no art. 115, § 1º, alínea “b” do RIA, aqui transcrito:
+Regimento Interno da Anatel:
+Do Recurso Administrativo
+Art. 115. Das decisões da Agência, quando não proferidas pelo Conselho Diretor, cabe interposição de recurso administrativo por razões de legalidade e de mérito, independentemente de caução.
+§ 1º O recurso administrativo será dirigido à autoridade que proferiu a decisão, que:
+a) decidirá sobre o seu conhecimento, nos termos do art. 116;
+b) na hipótese de conhecimento, caso não se retrate, o encaminhará à autoridade hierarquicamente superior.
+Não se vislumbra, ainda, a incidência das hipóteses numerus clausus de não conhecimento do recurso, previstas no art. 116 do RIA, a saber:
+Regimento Interno da Anatel:
+Art. 116. O recurso, dentre outras hipóteses, não será conhecido quando interposto:
+I - fora do prazo;
+II - por quem não seja legitimado;
+III - por ausência de interesse recursal;
+IV - após exaurida a esfera administrativa;
+V - quando contrariar entendimento fixado em Súmula da Agência.
+Parágrafo único. O não conhecimento do recurso não impede a Administração de rever de ofício o ato ilegal, desde que não ocorrida preclusão administrativa.
+Quanto à tempestividade, tem-se que o prazo recursal iniciou no dia 12 de abril de 2022, terça-feira, primeiro dia útil subsequente ao da intimação da Recorrente.
+Considerando o ínterim de 10 dias previsto no art. 129, §§ 1º e 3º, do RIA, este requisito de admissibilidade encontra-se atendido, pois o Recurso Administrativo foi protocolizado no dia 22 subsequente, sexta-feira, o último dia do prazo recursal.
+Adicionalmente, a Recorrente é parte legítima deste processo, encontra-se regularmente representada (Procurações Eletrônicas SEI nº 5476473 e SEI nº 5477114) e existe interesse na reforma da decisão.
+O recurso não contraria entendimento fixado por súmula da Agência. 
+Portanto, correto é o encaminhamento da admissão do Recurso Administrativo promovida pelo Despacho Decisório nº 228/2026/CODI/SCO (SEI nº 15564162), não havendo reparos a serem feitos nesse tocante.
+Diante disso, passa-se à análise das razões recursais.
+II – Das Razões Recursais
+II. 1 Preliminares
+II.1.1- Cerceamento de Defesa diante de Vício de Motivação
+A recorrente alegou, em síntese, que houve cerceamento de defesa e nulidade do PADO por falta de motivação e de provas suficientes das infrações imputadas. 
+Argumentou que a fiscalização restringiu-se a apresentar uma planilha (Anexo 4.3b SEI nº 1602058) com dados genéricos de lojas e irregularidades, sem detalhar como o procedimento foi realizado ou quais provas sustentam as conclusões. Para a recorrente, essa deficiência compromete o exercício do contraditório e da ampla defesa, dificultando a compreensão das acusações e a implementação de eventuais correções.
+Afirmou que, embora o Informe nº 195/2022/CODI/SCO tenha atestado a suficiência das informações, sua insurgência recai justamente sobre a precariedade do documento. Sustentou que o arquivo omite o modus operandi da fiscalização, deixando de esclarecer se houve o acompanhamento de atendimentos, a realização de entrevistas com funcionários, a análise de sistemas ou a verificação de casos concretos.
+Argumentou que a ausência de relatórios detalhados, fichas de campo, gravações e das pastas 'RADAR' no processo compromete a materialidade das supostas infrações. Para a recorrente, a falta desses elementos probatórios impede a verificação da veracidade dos fatos narrados e coloca em dúvida a própria execução dos procedimentos de fiscalização. 
+Por fim, defendeu que a mera invocação da presunção de legitimidade dos atos administrativos é insuficiente. Sustentou que, em sede de processo sancionador, incumbe à Administração o ônus de produzir provas robustas, capazes de elidir a presunção de inocência e demonstrar, mediante motivação idônea, a efetiva ocorrência das infrações. Com fundamento nos princípios da motivação, da verdade material, do devido processo legal, do contraditório e da ampla defesa, concluiu que a fragilidade probatória impõe o afastamento das sanções aplicadas.
+Sobre a alegação a SCO, no Informe nº 194/2024/CODI/SCO, apresentou o seguinte posicionamento:
+3.10. Análise: Compulsando os autos desse processo, verifica-se que o item 4.3 do Relatório de Fiscalização nº 431/2017/GR01 (3805561) indica como foram realizadas as diligências nas lojas, com a análise detalhada das irregularidades no item 4 do Relatório de Fiscalização constante do processo 53504.003941/2017-47. Todavia, esse processo não foi disponibilizado à Prestadora, embora contenha as Fichas de Campo com detalhes importantes que subsidiaram a ação de fiscalização realizada em lojas. Portanto, entende-se que as infrações verificadas em lojas devem ser descaracterizadas.
+O processo de fiscalização nº 53504.001361/2017-15 foi anexado na íntegra a este PADO em 24 de setembro de 2019. Os elementos probatórios das fiscalizações presenciais estão disponíveis para consulta, conforme detalhado no item 4.3 do Relatório de Fiscalização nº 431/2017/GR01 (SEI nº 3805561), o que demonstra a regularidade da instrução processual e a disponibilidade dos subsídios à Prestadora:
+4.3 Das Diligências realizadas nos Setores de Atendimento Presencial (lojas)
+Considerando uma relação de 2180 (Anexo 4.3a, SEI nº 1602058) setores de atendimento presencial, obtida em fiscalização do RGC na prestadora no ano de 2016, foram fiscalizadas 65 setores de atendimento (lojas) para o SeAC. A relação dos setores de atendimento fiscalizados constam na planilha Anexo 4.3b, SEI nº 1602058.
+Foram realizadas fiscalizações em campo que resultaram na planilha consolidada Anexo 4.3b, SEI nº 1602058.
+A tabela a seguir demonstra o quantitativo/porcentagem das lojas fiscalizadas, onde a equipe de fiscalização constatou irregularidades nos itens verificados:
+Entre as irregularidades constatadas, cabem destacar algumas, que por serem sistêmicas podem se aplicar a qualquer loja do STFC:
+(...)
+- Planos CLARO FIXO: Há multa de R$ 200,00 para contratação com fidelização, no entanto, caso o cliente opte por contratar sem fidelização terá que pagar Taxa de adesão (R$ 240,00), obrigando assim o cliente a contratar com fidelização;
+- Para os planos prestados pela NET, o cliente apenas recebe uma via de Formulário para Cadastro de Vendas. Neste formulário não deixa claro os benefícios concedidos e o valor da multa em caso de fidelização.
+A análise detalhada dessas irregularidades está contidas no item 4 do relatório de fiscalização processo SEI 53504.003941/2017- 47.
+Obs: as possíveis irregularidades de outros serviços serão relatadas em pastas específicas.
+A argumentação da recorrente não procede totalmente, porquanto fundamenta-se na premissa equivocada de que a motivação válida exigiria o relato exaustivo e individualizado de cada ato operacional praticado durante as vistorias. No processo administrativo sancionador, o dever de motivar satisfaz-se com a apresentação de elementos suficientes para a identificação dos fatos, o correto enquadramento normativo e a indicação da base probatória. Não se exige, portanto, a juntada de todos os registros operacionais internos produzidos no curso da ação fiscalizatória.
+No caso concreto, o Anexo 4.3.a traz a relação de lojas e o Anexo 4.3b – Consolidação lojas (SEI nº 1602058), em conjunto com o Relatório de Fiscalização e os demais documentos acostados, cumpre integralmente essa finalidade. O conjunto probatório delimita a controvérsia ao indicar as unidades fiscalizadas, os respectivos endereços, os dispositivos normativos infringidos e os achados apurados. Tais elementos são suficientes para viabilizar o pleno exercício do contraditório e da ampla defesa — tanto que a própria CLARO apresentou contestação específica sobre o conteúdo, evidenciando a ciência inequívoca dos fatos imputados.
+A materialidade das infrações administrativas prescinde da juntada exaustiva de gravações, fichas de campo ou relatórios narrativos individualizados, desde que o acervo probatório seja idôneo e suficiente para fundamentar a convicção fiscalizatória. A planilha consolidada e o relatório técnico não representam meros apontamentos abstratos; constituem a formalização dos achados da fiscalização, dotados de presunção de veracidade por terem sido elaborados por agentes públicos no exercício de suas competências.
+Nesse contexto, cumpre reiterar que os atos administrativos gozam de presunção de legitimidade e veracidade. Embora tal atributo não dispense o dever de motivação, ele afasta a alegação de insuficiência probatória baseada apenas na pretensão da autuada por um detalhamento documental exaustivo. Referida presunção é juris tantum, subsistindo até que sobrevenha demonstração inequívoca de erro ou falsidade — o que não ocorreu na espécie. A recorrente limita-se a suscitar dúvidas genéricas sobre o modus operandi da fiscalização, sem apontar vícios objetivos ou apresentar contraprovas capazes de infirmar os achados registrados pelos agentes públicos.
+Inexiste, ademais, violação ao princípio da presunção de inocência. No âmbito do direito administrativo sancionador, tal postulado coexiste com a presunção de legitimidade dos atos administrativos e com a prerrogativa da Administração de formar sua convicção a partir de elementos técnicos regularmente produzidos. Exige-se que a sanção fundamente-se em provas suficientes e motivação idônea, prescindindo de documentação exaustiva de cada etapa da diligência. Impor a juntada de todo e qualquer registro interno como condição de validade da autuação configuraria formalismo excessivo, carente de amparo normativo.
+A referência a pastas 'RADAR' ou a documentos de apoio não enseja, por si só, a nulidade do processo ou a inexistência de prova. Os elementos essenciais dos achados foram devidamente trasladados aos autos por meio dos documentos oficiais que fundamentaram a imputação. O processo administrativo prescinde da incorporação exaustiva de todo o acervo preparatório da atividade fiscal, exigindo-se apenas o aporte dos elementos necessários à compreensão, motivação e ao controle de legalidade do ato sancionador.
+Não se sustenta a tese de cerceamento de defesa. A nulidade de um ato administrativo exige a comprovação de um dano efetivo à parte, o que não ocorreu no presente caso. Dado que a CLARO teve acesso aos dados das lojas e às irregularidades apontadas, podendo contestá-las ponto a ponto, o direito de defesa foi integralmente preservado. A mera invocação abstrata de nulidade, sem a prova de prejuízo real, não é suficiente para anular a autuação.
+Assim, com fulcro no art. 50, § 1º, da Lei do Processo Administrativo (LPA) — que dispensa a reprodução de fundamentação anteriormente formulada —, expõe-se o que segue:
+Lei do Processo Administrativo (LPA)
+Art. 50. Os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando:
+(...)
+§1º A motivação deve ser explícita, clara e congruente, podendo consistir em declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas, que, neste caso, serão parte integrante do ato.
+Vale ressaltar que, embora o fiscal detenha fé pública no exercício de suas atividades, as fiscalizações questionadas pela prestadora ocorreram de forma presencial, sendo ela parte de todo o processo fiscalizatório, tendo recebido os fiscais em suas lojas quando das vistorias em campo. Assim, não cabe o alegado de que não constam no processo provas suficientes de que estas fiscalizações de fato ocorreram.
+Os achados fiscalizatórios gozam de presunção relativa de legitimidade e veracidade, a qual somente cede diante de demonstração concreta de inconsistência ou insuficiência probatória
+Tem-se ainda que as disposições relacionadas ao direito do consumidor são de ordem pública e, portanto, indisponíveis. Ademais, a materialidade das infrações restou devidamente comprovada pelas tabelas anexas ao relatório de fiscalização, sendo certo que a prestadora não logrou apresentar contraprovas aptas a elidir os achadosda fiscalização.
+Pelo exposto, afasta-se a alegação de cerceamento ao direito de defesa, uma vez que as irregularidades estão definidas de forma clara, com sua descrição no Despacho Ordinatório de Instauração e no Relatório de Fiscalização e nos seus anexos.
+II.1.2. Da Possibilidade de Agravamento Parcial da Sanção
+Em razão de a análise das razões recursais pela SCO ter proposta a readequação do fator (T) e da gravidade (G), além do cômputo da vantagem auferida — o que agrava parcialmente a sanção em relação àquela aplicada no Despacho Decisório nº 73/2022/CODI/SCO ( SEI nº 8149175)—, a recorrente foi notificada para apresentar alegações. Em sua manifestação, a empresa afirmou que a proposta de agravamento frustra a justa expectativa ao ingressar com recurso administrativo, que é a de não ter sua situação piorada. Nesse sentido, questionou a Súmula nº 22 do Conselho Diretor da Anatel, que legitima a possibilidade de agravamento da sanção no âmbito de processos administrativos sancionadores. Afirmou que a admissão da reformatio in pejus desconsidera princípios constitucionais que não só dão base à própria noção de devido processo legal, como fundamentaram a edição da Lei nº 9.784/1999 (Lei do Processo Administrativo - LPA). Tais argumentos foram novamente apresentado no âmbito da petição SEI nº 16049407.
+A recorrente citou, ainda, os arts. 64, parágrafo único, e 65 da referida Lei (LPA). Sustentou que o art. 64 dispõe sobre as consequências dos recursos em processos administrativos em geral, enquanto o art. 65 trata especificamente da revisão em processos sancionadores. Defendeu, assim, que a revisão das decisões administrativas é cabível, desde que dela não resulte o agravamento da sanção imposta pela Administração.
+Nas alegações após diligênia, a Recorrente sustenta que, em processos administrativos sancionadores, deve prevalecer o art. 65 da Lei nº 9.784/1999, que veda o agravamento da sanção em revisão, e não o art. 64, aplicável, segundo a empresa, a outras modalidades de processos administrativos. Argumenta que a reformatio in pejus viola o devido processo legal, a ampla defesa e o contraditório, além de desestimular a interposição de recursos.
+A prestadora afirma ter enfrentado três propostas de agravamento ao longo do processo e destaca que a multa relativa ao art. 57, §4º, do RGC teria aumentado de R$ 835.705,35 para R$ 1.375.262,69, superando inclusive o valor inicialmente fixado. Por isso, defende que a Súmula nº 22 da Anatel não pode afastar garantias constitucionais e pede a rejeição integral do agravamento proposto.
+O artigo 64 da Lei do Processo Administrativo (LPA) dispõe sobre o poder de ampla revisão pelo órgão competente para decidir o recurso, além de prever explicitamente, em seu parágrafo único, a possibilidade de ocorrer gravame à situação da recorrente, nos seguintes termos:
+Lei do Processo Administrativo (LPA)
+Art. 64. O órgão competente para decidir o recurso poderá confirmar, modificar, anular ou revogar, total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+Parágrafo único. Se da aplicação do disposto neste artigo puder decorrer gravame à situação do recorrente, este deverá ser cientificado para que formule suas alegações antes da decisão.
+Já o artigo 65 da Lei nº 9.784/1999 dispõe sobre situação diversa, qual seja, a possibilidade de pedido de revisão da sanção administrativa já transitada em julgado, na hipótese de surgirem fatos novos ou circunstâncias relevantes, vedando, apenas nesta hipótese, o agravamento da sanção, conforme abaixo:
+Lei do Processo Administrativo (LPA)
+Art. 65. Os processos administrativos de que resultem sanções poderão ser revistos, a qualquer tempo, a pedido ou de ofício, quando surgirem fatos novos ou circunstâncias relevantes suscetíveis de justificar a inadequação da sanção aplicada.
+Parágrafo único. Da revisão do processo não poderá resultar agravamento da sanção.
+Portanto, os arts. 64 e 65 tratam de situações distintas. O primeiro, sobre o poder de ampla revisão das decisões em sede recursal. O segundo, sobre a possibilidade de revisão da decisão já transitada em julgado, sendo plenamente possível o agravamento da sanção no primeiro caso.
+A possibilidade de reforma da decisão é igualmente prevista no Regimento Interno da Anatel, aprovado pela Resolução nº 612, de 2013, conforme art. 125, §§ 1º, 3º e 4º, e incorporada na Súmula nº 22 da Agência, de 18 de outubro de 2019, publicada no Diário Oficial da União (DOU) do dia 21 de outubro de 2019, cujo teor se replica abaixo:
+Regimento Interno da Anatel
+Art. 125. A tramitação do recurso administrativo observará as seguintes regras:
+§ 1º O recurso administrativo poderá ser submetido à Procuradoria, consoante o disposto no § 2º do art. 39,sendo obrigatória a remessa na ocorrência da hipótese prevista no parágrafo único do art. 64 da Lei nº 9.784, de 29 de janeiro de 1999.
+(...)
+§ 3º A autoridade competente para decidir o recurso administrativo poderá confirmar, modificar, anular ou revogar, total ou parcialmente, a decisão recorrida, se a matéria for de sua competência.
+§ 4º Se da aplicação do disposto no § 3º puder decorrer gravame à situação do recorrente, este deverá ser intimado para que, no prazo de 15 (quinze) dias, formule suas alegações antes da decisão.
+Súmula nº 22
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel.
+A desistência do recurso administrativo ou do pedido de reconsideração não obsta a continuidade do processo, acaso assim demande o interesse público, podendo resultar no agravamento ou na atenuação da decisão recorrida.
+Sobre a reformatio in pejus, a Procuradoria Federal Especializada da Anatel (PFE-Anatel) manifestou-se acerca da possibilidade de agravamento da sanção administrativa em sede recursal, conforme Parecer nº 78/2026/PFE-ANATEL/PGF/AGU (SEI nº 15365669), exarado no presente processo, do qual se destacam os seguintes trechos:
+Parecer nº 78/2026/PFE-ANATEL/PGF/AGU:
+(...)
+2.1 Da possibilidade de agravamento da sanção na esfera recursal administrativa
+13. Cumpre externar o firme posicionamento desta Procuradoria Federal sobre a possibilidade de reformatio in pejus na esfera recursal administrativa, conforme amplamente difundido por este órgão em diversas manifestações, a exemplo do Parecer Normativo nº 420/2008/PGF/PFE-Anatel.
+14. De fato, não há qualquer impedimento legal ao agravamento da situação da recorrente pela autoridade hierarquicamente superior na análise do recurso administrativo, uma vez que esse agente detém o poder de ampla revisibilidade em relação aos atos praticados e às decisões proferidas por seus órgãos subordinados, com fulcro no poder hierárquico que possui, com seus consectários lógicos decorrentes (poder de comando, poder de fiscalização e poder de revisão).
+15. Importa destacar que as garantias constitucionais da ampla defesa e do contraditório, inteiramente aplicáveis ao processo administrativo, não impedem a possibilidade de reformatio in pejus, desde que respeitado o procedimento previsto no parágrafo único do artigo 64 da Lei nº 9.784/1999 (Lei de Processo Administrativo – LPA), bem como no Regimento Interno da ANATEL, aprovado pela Resolução nº 612/2013, no artigo 125, §§ 1º, 3º e 4º, verbis:
+(...)
+16. O entendimento adotado por esta Procuradoria Especializada também tem sido confirmado pelos mais altos Tribunais do País, conforme demonstram os seguintes precedentes, dos quais transcrevemos a ementa do primeiro: STF ARE 641.054-AgR/RJ, Rel. Min. Luiz Fux, 1ª Turma do STF, DJe 26.06.2012; STJ - RMS 21.981/RJ, Rel. Min. Eliana Calmon, 2ª Turma do STJ, DJe 05.08.2010; TRF-1ª Região - Apelação Cível nº 0080340-91.2013.4.01.3400/DF, 6ª Turma, Rel. Des. Federal Jirair Aram Meguerian, j. 20.03.2017; TRF-4ª Região, Apelação Cível nº 5056938-10.2012.404.7000/PR, 4ª Turma, Rel. Des. Federal Luís Carlos Cervi, j. 13.05.2014; e, TRF-2ª Região - MCI 2012.02.01.011414-0, 5ª Turma, Rel. Juiz Federal Convocado Marcelo Pereira da Silva, e-DJF2R 27.09.2012, verbis:
+(...)
+17. Ademais, o Conselho Diretor da Agência recentemente editou a Súmula nº 22, de 18 de outubro de 2019, que assim dispõe, verbis:
+É possível o agravamento da sanção imposta no âmbito do julgamento de recursos administrativos e pedidos de reconsideração (reformatio in pejus), desde que oportunizada manifestação prévia ao interessado e ouvida a Procuradoria Federal Especializada junto à Anatel. A desistência do recurso administrativo ou do pedido de reconsideração não obsta a continuidade do processo, acaso assim demande o interesse público, podendo resultar no agravamento ou na atenuação da decisão recorrida.
+18. Portanto, não há dúvida acerca da possibilidade de agravamento, em tese, da situação da recorrente, desde que haja a regular intimação para a apresentação de alegações, nos termos do parágrafo único do art. 64 da LPA, e que sejam respeitados os princípios da razoabilidade, da proporcionalidade e da motivação.
+19. No caso dos autos, a recorrente foi devidamente intimada da possibilidade de agravamento de sua sanção pelo Ofício nº 203/2024/CODI/SCO-ANATEL (SEI nº 12167118), tendo se manifestado por meio da Petição SEI nº 12347600, apresentada em 29/07/2024 (SEI nº 12347601).
+20. Assim, conclui-se pela observância integral dos princípios do devido processo legal, da ampla defesa e do contraditório, não havendo óbice jurídico para o agravamento da sanção aplicada à infratora na instância recursal administrativa.
+2.2 Possibilidade de reformatio in pejus no caso concreto
+21. No presente caso, nos termos do Informe nº 194/2024/CODI/SCO (SEI nº 12126319), apesar de a área técnica ter considerado parcialmente procedentes as razões recursais apresentadas pela prestadora, o agravamento da situação da recorrente poderá ocorrer em razão da alteração no fator tempo (T), de “1 dia” para “até 6 meses", para as infrações aos artigos 57, § 1º, § 2º e § 3º; 58, caput e parágrafo único do RGC; e art. 15, § 3º do Decreto nº 6.523/2008. Além disso, houve alteração na gravidade de ”média" para “grave”, nas infrações aos artigos 58, caput e parágrafo único do RGC.
+(...)
+23. Considerando-se as justificativas expostas pela área técnica, bem como as informações contidas nos autos e a necessidade de correta aplicação da metodologia de cálculo e dos preceitos previstos no Regulamento de Aplicação de Sanções Administrativas (RASA), mostra-se imperativo o recálculo da sanção de multa aplicada, sendo adequado, no presente caso, o agravamento da situação da prestadora em sede recursal.
+(...)
+No Informe nº 500/2026/CODI/SCO, a SCO reitera que não procede a tese de vedação de reformatio in pejus, e que o rito processual para tanto foi devidamente observado, conforme item 3.23:
+3.23 Desse modo, verifica-se o cumprimento dos princípios do devido processo legal, da ampla defesa e do contraditório, uma vez que a prestadora foi devidamente notificada para apresentar suas alegações ante a possibilidade de agravamento da decisão, tendo regularmente exercido a faculdade de manifestação na petição ora em análise. Destaca-se, outrossim, que a referida possibilidade de agravamento será submetida à apreciação da PFE-Anatel.
+No Parecer nº 352/2026/PFE-ANATEL/PGF/AGU (SEI nº 16386159), de 1º de outubro de 2026, a PFE reitera a possibilidade de reformatio in pejus: "a) pela possibilidade de agravamento da sanção administrativa pelo Conselho Diretor da Anatel, visto que foram observados os requisitos do art. 64, parágrafo único, da Lei nº 9.784, de 1999, e do art. 125, parágrafos 1º e 4º, do Regimento Interno".
+Ante o exposto, conclui-se pela possibilidade de reformatio in pejus e constata-se o cumprimento dos princípios do devido processo legal, da ampla defesa e do contraditório, uma vez que a recorrente foi devidamente intimada para apresentar suas alegações ante a possibilidade de agravamento da sanção, tendo regularmente exercido a sua faculdade de manifestação. 
+II. 1.3 Da alegação de prescrição intercorrente 
+A CLARO sustenta a ocorrência de prescrição intercorrente, nos termos do art. 1º, §1º, da Lei nº 9.873/1999, em razão da paralisação do processo administrativo por período superior a três anos sem decisão ou despacho efetivamente apto a impulsionar o feito. Segundo a recorrente, após o Despacho Decisório nº 73/2022, de 10 de março de 2022, não houve decisão final no PADO, sendo que os atos posteriores, como informes técnicos, pareceres e notificações relacionadas ao recálculo da multa, constituem meras formalidades administrativas, desprovidas de caráter instrutório ou decisório capaz de interromper a prescrição. Destaca que a jurisprudência exige a prática de atos efetivamente instrutórios ou decisórios para a interrupção do prazo prescricional, não sendo suficientes despachos internos, informes ou notificações de caráter meramente procedimental.
+Adicionalmente, invoca a tese da unicidade do ato interruptivo, segundo a qual a repetição de atos da mesma natureza não pode renovar indefinidamente o prazo prescricional. Nesse sentido, cita precedente do STF que afasta interpretações que conduzam, na prática, à imprescritibilidade dos processos administrativos sancionadores.
+A área técnica, no Informe nº 500/2026/CODI/SCO, afirma que o argumento não procede. "O princípio da unicidade da interrupção do prazo prescricional avençado na decisão do STF está lastreado na aplicação analógica do caput do artigo 202 do Código Civil/2002, portanto, norma de direito privado. Por sua vez, a Lei nº 9.873/1999 prevê causas interruptivas da ação punitiva da Administração Pública Federal, regida pelo direito público, o que impede a aplicação da tese da unicidade do ato interruptivo e dos seus eventuais efeitos nos Pados da Agência." Desse modo, entende-se que a interpretação dada à citada norma de direito privado não é conciliável com o modelo normativo previsto na Lei nº 9.873/1999, regida pelo direito público.
+A área técnica fundamenta que esse é o entendimento da PFE-Anatel, como se observa no Parecer nº 00052/2026/PFE-ANATEL/PGF/AGU (15899096), de 16 de junho de 2026, emitido no Processo nº 53500.024929/2020-10, quando consultada acerca dos eventuais impactos dos julgados da Suprema Corte, no âmbito dos processos de tomada de contas especial, na contagem dos prazos prescricionais em processos administrativos sancionadores instaurados pela Anatel:
+Parecer nº 00052/2026/PFE-ANATEL/PGF/AGU
+84. Diante dessas premissas, constata-se que a postulação apresentada pela prestadora recorrente nos autos deste Pado nada mais representa que uma tentativa indevida de transpor uma solução integrativa do STF – criada para remediar um quadro específico de inexistência de regulamentação legal – para uma outra situação já integralmente disciplinada pelo ordenamento jurídico. Como visto, a interessada, para alcançar esse propósito, sustentou, equivocadamente, que os processos de controle externo do TCU, como as tomadas de contas especiais, e os processos administrativos sancionadores da administração pública federal estariam sujeitos a uma mesmíssima disciplina legal quanto à prescrição.
+(...)
+3. CONCLUSÃO
+100. Diante do exposto, esta Procuradoria Federal Especializada, órgão de execução da Procuradoria-Geral Federal – PGF, vinculada à Advocacia-Geral da União – AGU, opina:
+a) que não há, quanto às questões enfrentadas nesta consulta, determinações ou entendimentos emanados do Supremo Tribunal Federal a serem observados pela Anatel, seja por não ter a Agência figurado como parte ou pessoa jurídica interessada nos mandados de segurança apontados pela interessada, seja por não possuírem os acórdãos por ela especificamente invocados eficácia erga omnes, tampouco efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à Administração Pública direta e indireta, nas esferas federal, estadual e municipal;
+b) que o STF, alterando longevo posicionamento anterior, assentou a total sujeição das atividades típicas de controle externo das contas públicas ao fenômeno da prescrição, rejeitando, com isso, a aplicação da cláusula de imprescritibilidade extraída do art. 37, §5º, da Constituição Federal às apurações de prejuízos ao erário realizadas pelo TCU;
+c) que, ao proclamar, em revisão de sua jurisprudência, a plena incidência da prescrição sobre as atividades de competência do TCU, o STF passou a colmatar jurisdicionalmente as lacunas normativas existentes sobre essa específica matéria indicando quais dispositivos da Lei nº 9.873/1999 e de outros diplomas afins se mostravam total ou parcialmente aplicáveis, por analogia, às pretensões ressarcitória e punitiva da Corte de Contas;
+d) que a aplicação da norma de direito privado que permite uma única interrupção prescricional (art. 202, caput, do Código Civil) aos processos de tomada de contas especial − diretriz hoje prevalecente na Segunda Turma do STF − não decorre de uma nova interpretação geral e abstrata dada à Lei nº 9.873/1999, a ser exigida de toda a administração pública federal. Trata-se, em verdade, de medida que busca suprir, mais uma vez, o quadro de lacuna legislativa existente sobre a prescrição das pretensões ressarcitória e punitiva do TCU, dando-se a maior efetividade possível à orientação da Suprema Corte que afastou definitivamente a tese da imprescritibilidade das apurações de prejuízos ao erário, outrora extraída do art. 37, § 5º, da Constituição Federal;
+e) que a transposição dessa solução integrativa – concebida pelo STF, pontualmente, para remediar o vácuo legislativo acerca da prescrição no TCU – para o regime prescricional da pretensão punitiva da administração pública federal, já integralmente disciplinado pela Lei nº 9.873/1999, encontra óbice no princípio constitucional da legalidade estrita (art. 37, caput, da CF) e no critério da especialidade das normas (art. 2º, §2º, da LINDB). Ademais, a extensão sustentada contraria o próprio alcance da jurisprudência firmada pela Segunda Turma, cujo foco restringe-se, exclusivamente, às pretensões ressarcitória e punitiva da Corte de Contas;
+f) que a pretendida “importação” do instituto da unicidade da interrupção prescricional, veiculado no art. 202 do Código Civil, à disciplina da prescrição incidente sobre os processos administrativos sancionadores em geral desnaturaria por completo o microssistema jurídico concebido pelo legislador federal ordinário ao editar a Lei nº 9.873/1999, diploma lastreado em premissas completamente distintas para o estabelecimento de seus próprios e distintos marcos interruptivos da prescrição;
+g) que a incidência plúrima de causas interruptivas, por si só, não é afrontosa ao fenômeno prescricional, modelo este adotado não só no contexto do art. 2º da Lei nº 9.873/1999 como, também, no do art. 117 do Código Penal. Não é possível pressupor que a regular e legítima incidência dos restritos marcos interruptivos expressamente autorizados por esses dispositivos legais tenha o condão de tornar inócuo o instituto da prescrição;
+h) que a norma de direito privado que prevê a unicidade da interrupção prescricional (art. 202, caput, do Código Civil) não se amolda à pretensão punitiva da Agência, por ser ela regida, de forma exaustiva e sem lacunas normativas, pelo microssistema jurídico instituído pela Lei nº 9.873/1999, nos termos do art. 89 do Regimento Interno da Anatel.
+[grifou-se]
+A PFE no Parecer nº 352/2026/PFE-ANATEL/PGF/AGU (SEI nº 16386159), de 1º de outubro de 2026, reitera a não ocorrência de prescrição intercorrente ou de prescrição quinquenal nos presentes processo.
+Fundamentado no mencionado Parecer, conclui o corpo técnico que a pretensão de transpor essa solução integrativa específica e excepcional para o regime prescricional da pretensão punitiva, integralmente disciplinado pela Lei nº 9.873/1999, viola o princípio da legalidade estrita (art. 37, caput, da CF) e da especialidade das normas (art. 2º, §2º, da LINDB).
+Concordo com o entendimento expresso pela nossa d. PFE e pela área técnica da Anatel pela ausência de prescrição no processo.
+II.2 Do Mérito
+A recorrente foi sancionada por infrações aos artigos 57, §§1º; 2º; 3º, I; II; III; 4º; 58, caput e parágrafo único, do RGC e ao art. 15, §3º, do RSAC:
+DECRETO Nº 6.523, DE 31 DE JULHO DE 2008.
+Art. 15. Será permitido o acompanhamento pelo consumidor de todas as suas demandas por meio de registro numérico, que lhe será informado no início do atendimento.
+§ 1º Para fins do disposto no caput, será utilizada seqüência numérica única para identificar todos os atendimentos.
+§ 2º O registro numérico, com data, hora e objeto da demanda, será informado ao consumidor e, se por este solicitado, enviado por correspondência ou por meio eletrônico, a critério do consumidor.
+§ 3º É obrigatória a manutenção da gravação das chamadas efetuadas para o SAC, pelo prazo mínimo de noventa dias, durante o qual o consumidor poderá requerer acesso ao seu conteúdo.
+§ 4º O registro eletrônico do atendimento será mantido à disposição do consumidor e do órgão ou entidade fiscalizadora por um período mínimo de dois anos após a solução da demanda.
+RGC, aprovado pela Resolução nº 632/2014
+CAPÍTULO III
+DO CONTRATO DE PERMANÊNCIA
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo. (Revogado pela Resolução Anatel nº 765, de 6 de novembro de 2023)
+§ 1º O tempo máximo para o prazo de permanência é de 12 (doze) meses.
+§ 2º Os benefícios referidos no caput devem ser objeto de instrumento próprio, denominado Contrato de Permanência, firmado entre as partes.
+§ 3º O Contrato de Permanência não se confunde com o Contrato de Prestação do Serviço, mas a ele se vincula, sendo um documento distinto, de caráter comercial e regido pelas regras previstas no Código de Defesa do Consumidor, devendo conter claramente:
+I - o prazo de permanência aplicável;
+II - a descrição do benefício concedido e seu valor;
+III - o valor da multa em caso de rescisão antecipada do Contrato; e,
+IV - o Contrato de Prestação de Serviço a que se vincula.
+§ 4º Caso o Consumidor não se interesse pelo benefício oferecido, poderá optar pela adesão a qualquer serviço, não sendo a ele imputada a necessidade de permanência mínima.
+Art. 58. Rescindido o Contrato de Prestação de Serviço antes do final do prazo de permanência, a Prestadora pode exigir o valor da multa estipulada no Contrato de Permanência, a qual deve ser proporcional ao valor do benefício e ao tempo restante para o término do prazo de permanência. (Revogado pela Resolução Anatel nº 765, de 6 de novembro de 2023)
+Parágrafo único. É vedada a cobrança prevista no caput na hipótese de rescisão em razão de descumprimento de obrigação contratual ou legal por parte da Prestadora, cabendo a ela o ônus da prova da não-procedência do alegado pelo Consumidor. (Revogado pela Resolução nº 717, de 23 de dezembro de 2019)
+A respeito das infrações cometidas, a recorrente apenas apresenta irresignação em relação ao art. 57, § 4º, do RGC, tanto no recurso quanto nas alegações em face à possibilidade de agravamento. Segundo a recorrente, as telas juntadas pela equipe de fiscalização, no arquivo "Anexo 4.4a Análise contratação site STFC", demonstrariam que a contratação foi simulada na página dos combos, e não na página relativa ao STFC (Fone). Além disso, a tela deixaria claro que o cliente poderia contratar o combo com desconto e, consequentemente, com fidelização, ou contratar apenas o STFC avulso, por um preço de franquia maior, sendo que a contratação individual não ensejaria a cobrança pela fidelização. Assim, caso a fiscalização tivesse avançado nas etapas de contratação, poderia ter verificado a regularidade da conduta, mas, como navegou somente na primeira página de oferta dos combos, deduziu equivocadamente haver um período de permanência mínima. A recorrente informou que não detém o armazenamento do histórico de alterações realizadas na página da Internet, não sendo possível demonstrar a regularidade, tratando-se de prova impossível de ser produzida. Contudo, asseverou que a possibilidade de contratação sem fidelização encontra-se evidenciada no PADO nº 53500.005477/2019-25, conforme Doc.01 (SEI nº 8352432), por meio do site, conforme Doc.02 (SEI nº 8352432). Desse modo, requereu a descaracterização da infração. 
+Nas alegações, a recorrente afirmou que as telas da simulação realizada no site e juntadas ao processo pela fiscalização não permitem a caracterização da infração como sistêmica. Argumentou que o site viabilizava a contratação individual do STFC e sem prazo de permanência mínima, conforme as telas anexadas ao recurso. Ressaltou que tais documentos foram desconsiderados sob o argumento de que "não serviam como prova de que essa opção era oferecida na época da fiscalização", ocorrida em 2017. Por fim, afirmou que tomou ciência do resultado da ação fiscalizatória apenas em 2019, razão pela qual a produção da contraprova exigida pela Agência tornar-se-ia materialmente impossível.
+Reiterou, ainda, que os fiscais não acessaram os caminhos disponíveis para contratação, pois não foram anexadas telas do site para a contratação do serviço Claro Fixo, mas apenas do NET Fone (no combo), conforme se observa no Anexo 4.4a (SEI nº 1602058). Para a recorrente, tal fato enfraquece o argumento de que "a fiscalização possui expertise suficiente para navegar, buscar e diferenciar as páginas do site de uma prestadora, a fim de concluir pela existência de irregularidades".
+Para corroborar ao alegado, a recorrente afirmou que no PADO nº 53500.005477/2019-25, a SCO reconheceu que a avaliação do site realizada pelos fiscais não constitui prova suficiente de que houve a irregularidade, como segue:
+‒ Informe nº 107/2023/CODI/SCO, exarado nos autos do PADO 53500.005477/2019-25 - SeAC:
+"Do mesmo modo, as telas juntadas aos autos pela fiscalização, em relação à avaliação do site, também não constituem provas suficientes de que houve irregularidade nesse ambiente, pois apesar do resultado da análise e da conclusão constantes da última página do anexo 4.4a - Análise contratação site SeAC.pdf (SEI 1578824) serem claros, foram realizadas montagens de pacotes (combos), enquanto o que se queria avaliar era a possibilidade de contratação de qualquer serviço sem benefício e, portanto, sem fidelização”.
+Na sequência, a recorrente solicitou a análise comparativa entre as capturas de tela que fundamentaram a infração no PADO nº 53500.005477/2019-25 (SEI nº 1578824) e aquelas juntadas pela fiscalização neste PADO (SEI nº 1602058). Sustentou que "se verificará que a simulação de contratação dos serviços para cada Pado (SeAC e STFC, respectivamente) foram realizadas na mesma data (certamente pelos mesmos fiscais), partindo da mesma página de internet da Claro e que se seguiram idênticas, comprovando tratar-se, sim, de simulação de contratação no ambiente combo (como reconhecido no Pado nº 53500.005477/2019-25)", com benefícios para os clientes que contratam em conjunto, o que enseja a descaracterização da infração ao artigo 57, §4º, do RGC, em relação ao site da Claro, uma vez que era possível a "contratação individual do STFC e sem prazo de permanência mínima".
+Em manifestação apresentada após a diligência (SEI nº 16049407), a Recorrente reiterou os argumentos já expostos, acrescentando que a caracterização da infração como sistêmica exigiria comprovação de procedimento geral e padronizado, não demonstrada, a seu ver, pelas cinco gravações de televendas e pela única simulação no site. Reafirmou, ainda, a alegação de tratamento contraditório em relação ao PADO nº 53500.005477/2019-25 e a impossibilidade de produzir prova histórica acerca da configuração do site em 2017.
+Primeiramente, sobre os fatos além da fiscalização em lojas, subsidiam o relatório gravações e a simulação de contratação no sítio eletrônico da prestadora que sustentam a caracterização da infração ao art. 57, § 4º, do RGC.
+Ao examinar as razões recursais, a SCO, no Informe nº 45/2026/CODI/SCO (SEI nº 15064314), opinou pela improcedência das alegações e esclareceu que a recorrente foi sancionada por não permitir a contratação de serviços sem fidelização, conforme constatado pela fiscalização por meio de gravações (item 4.1), em diligências nas lojas (item 4.3) e na simulação realizada no site (item 4.4). Ressaltou, ainda, que a recorrente não apresentou manifestação recursal específica quanto às gravações, razão pela qual se posicionou pela manutenção da sanção com fundamento em 5 gravações e nas infrações constatadas no site da prestadora, conforme caracterizado no item 4.4 do Relatório de Fiscalização nº 431/2017/GR01 ( SEI nº 3805561).
+A SCO consignou, ainda, que os documentos apresentados pela recorrente para demonstrar a regularidade da conduta no site, especialmente as evidências constantes do Doc. 01, anexo ao recurso (SEI nº 8352432) referem-se a: telas de sistema interno; telas para montagem de combos; e contratações relacionadas ao SeAC. Para SCO, tal documento não pode ser considerado para descaracterização da infração, por ser totalmente discrepante do caso concreto.
+Quanto ao Doc.02 (SEI nº 8352432), a SCO assinalou que as telas de montagem de combos foram extraídas em 22 de abril de 2022 e contemplam opção de contratação com ou sem fidelidade. Porém, embora representem indício de que esse seria mesmo o local ou o único caminho existente para a contratação de serviços individuais, não servem como prova de que essa opção era oferecida na época da fiscalização. Além disso, a fiscalização possui expertise suficiente para navegar, buscar e diferenciar as páginas do site de uma prestadora, a fim de concluir pela existência de irregularidades.
+Adicionalmente, sobre a similaridade de telas apresentadas nas distintas fiscalizações, a SCO afirmou que o argumento já foi apresentado em sede de defesa e refutada pela área técnica:
+Informe nº 195/2022/CODI/SCO
+IV.f. Da simulação feita no sítio da operadora. Suposta infração ao art. 57, §4º, do RGC.
+3.45. Nesse item da peça de defesa, alega a Prestadora que "a simulação realizada pelo fiscal (Anexo 4.4a do SEI 1602058) foi realizada no portal de contratação do Combo, razão pela qual, em decorrência dos benefícios concedidos aos clientes, aplica-se fidelização. Todavia, para contratação apenas do STFC, sem a fruição de qualquer benefício, não implicaria em [sic] prazo de permanência mínima", o que não seria prova idônea. Para a Prestadora, "as telas apresentadas como evidências, [sic] trazem apenas os valores das ofertas e informações gerais, incluindo a possibilidade de prazo de permanência em razão da contratação com benefícios".
+3.46. Sobre o assunto, inicialmente, é oportuna a referência às conclusões apresentadas à pág. 8 do arquivo Anexo 4.4a - Análise contratação site STFC, parte integrante do documento SEI 1602058:
+Resultado da Análise
+Conforme simulações acima foi identificado que:
+1- Todos os planos só possuem a opção de serem escolhidos com a taxa de instalação gratuita;
+Conclusão:
+Uma vez que está claro e explicito que “os descontos nas taxas de adesão e/ou instalação estão condicionados a permanência mínima de 12 meses”, e uma vez que todos os planos só possuem opções com desconto na taxa de instalação, isso implica necessariamente que não há opção de contratação sem fidelização.
+3.47. Como verificado acima, as conclusões apresentadas pela fiscalização não fazem qualquer referência à contratação dentro ou fora de planos conjuntos (combos). A defesa, por sua vez, não traz comprovações do alegado, como telas de sua página na internet, ao tempo da ação fiscalizatória, em que se poderia verificar de forma precisa a possibilidade de contratação do STFC individual sem a fidelização.
+3.48. Da mesma maneira, nenhum contrato de usuário que, no caso concreto, tenha optado pelo STFC individual sem fidelização foi juntado aos autos, o que também seria aceito como prova capaz de afastar a infração ou, ao menos, seu caráter sistêmico.
+3.49. Feitos esses esclarecimentos, conclui-se pela rejeição dos argumentos trazidos nesse tópico.
+A área técnica refuta novamente as alegações recursais no Informe nº 500/2026/CODI/SCO, as quais foram reiteradas na manifestação SEI nº 16049407, mantendo o entendimento de que a infração possui caráter sistêmico, pois decorrem de procedimentos adotados pela prestadora que podem afetar consumidores de forma geral e abstrata, independentemente da comprovação de dano concreto ou da quantificação dos usuários efetivamente atingidos.
+Afirma que no presente caso, a configuração do site da prestadora não permitia a contratação do serviço sem fidelização, o que caracteriza uma prática padronizada e potencialmente aplicável a todos os consumidores. Por essa razão, a infração mantém natureza sistêmica, sendo inclusive compatível com a aplicação da agravante prevista no RASA por vantagem direta e atingimento potencial de número significativo de usuários.
+A respeito da simulação em ambiente de combos, a inexistência de infrações declarada em processo análogo e alegação de produção de prova impossível, reitera, em síntese que:
+A fiscalização concluiu que todos os planos disponíveis apresentavam desconto condicionado à permanência mínima de 12 meses, não havendo alternativa de contratação sem fidelização.
+A CLARO não apresentou provas contemporâneas aos fatos que demonstrassem a existência de opção de contratação individual do STFC sem fidelização.
+Os documentos apresentados posteriormente, inclusive extraídos de outros processos e de data posterior à fiscalização, foram considerados insuficientes para afastar a infração. 
+O processo citado pela CLARO (PADO nº 53500.005477/2019-25) foi considerado distinto do caso concreto, afastando alegações de tratamento contraditório, violação à segurança jurídica ou aplicação retroativa de entendimentos administrativos.
+Quanto à alegação de prova impossível, a área técnica sustenta que os atos fiscalizatórios possuem presunção relativa de veracidade e que caberia à prestadora produzir elementos concretos capazes de desconstituir as conclusões da fiscalização, o que não ocorreu.
+Sobre as telas de contratação, em que pese possa do Anexo 4.4.a (SEI nº 1602058), se verificar a possibilidade contratação individual:
+Ao simular tanto a contratação somente do plano local, a fiscalização verificou que somente havia a opção da tava de instalação "gratis", porém com taxa e adesão de R$ 240,00:
+Estratégia similar foi constatada na contratação do plano Brasil 21:
+A fiscalização ao final do documento 4.4.a, concluiu que "Uma vez que está claro e explicito que “os descontos nas taxas de adesão e/ou instalação estão condicionados a permanência mínima de 12 meses”, e uma vez que todos os planos só possuem opções com desconto na taxa de instalação, isso implica necessariamente que não há opção de contratação sem fidelização".
+Diferentemente do que ocorreu no PADO nº 53500.005477/2019-25, em que há na página de fato a constatação do plano individual com e sem findelização, aqui a página anexada pela fiscalização traz apenas a possibilidade de contratação individual ou no combo. Não há na figura acima transposta do arquivo 4.4.a a informação a contratação sem fidelização do plano individual.
+Dessa forma, não procedem as afirmações recursais sobre a necessidade de descaracterização da infração ao art. 57, § 4º do RGC.
+Registre-se, por oportuno, que as demais infrações consignadas no Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175) não foram objeto de impugnação específica nas razões recursais. Assim, ausente insurgência apta a infirmar os fundamentos da decisão recorrida quanto a tais apontamentos, impõe-se reconhecê-los como incontroversos no âmbito recursal.
+III - Do Cálculo da Sanção Aplicada
+III.1. Da Metodologia Aplicada e Vantagem Aferida
+A sanção de primeira instância foi aplicada em 25 de março de 2022, por meio do Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175). Dessa forma, a metodologia a ser utilizada é a aprovada pela Portaria nº 791/2014:
+5. FÓRMULA DE CÁLCULO
+O valor base das sanções de multa relativa a infrações a direito dos usuários previstas na regulamentação é determinado pela seguinte fórmula, para cada indicador em análise:
+Onde:
+a) VBase: Valor base de multa referente a uma infração, sobre o qual ainda serão consideradas as circunstâncias atenuantes e agravantes, bem como os limites mínimos e máximos para aplicação de multa, nos termos do Regulamento de Aplicação de Sanções Administrativas;
+b) Ua: Quantidade de Usuários que foram afetados pela infração;
+c) UT: Total de Usuários da base da Prestadora;
+d) FatorDT: Fator de proporcionalidade da Infração obtida da seguinte forma:
+(...)
+Em função dos ajustes propostos quanto a caracterização das infrações, a SCO, no Informe nº 194 /2024/CODI/SCO (SEI nº 12126319), revisitou o cálculo da sanção apresentada, conforme explicação que se reproduz a seguir:
+3.32 As infrações ao art. 58, caput e parágrafo único, do RGC, possuem natureza grave, por proporcionarem vantagem direta à Prestadora, conforme o art. 9º, §3º, I, do Rasa. Por sua vez, as infrações ao art. 57, §§1º e 4º, do RGC, são de natureza média, por proporcionarem vantagem indireta à Prestadora. Por fim, as infrações ao art. 57, §§ 2º e 3º, I, II e III, do RGC, e ao art. 15, § 3º, do RSAC, são consideradas de natureza leve, pois não se enquadram em nenhuma das hipóteses previstas nos §§ 2º e 3º, do art. 9º, do Rasa, nos termos do art. 9º, § 1º, do Rasa.
+3.33 Considerando-se a natureza leve de algumas das infrações analisadas neste Informe, foi possível a aplicação da sanção de advertência, com base no art. 12, I, do Rasa.
+3.34 Foi empregada neste Informe a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos a direito dos usuários, aprovada pela Portaria nº 791/2014, em função da afinidade temática com as infrações aqui analisadas e por ser a metodologia vigente na data da aplicação da sanção.
+3.35 O número de "usuários totais" (Ut) neste Pado equivale a 10.825.659 (dez milhões, oitocentos e vinte e cinco mil seiscentos e cinquenta e nove) de acessos do STFC, em junho de 2017, conforme consulta quantidade de acessos STFC - Anexo I (12159262).
+3.36 O número de "usuários atingidos" (Ua) equivale ao número de usuários do STFC afetados.
+3.37 O fator "dano" (D) foi mantido nos menores valores da tabela do item 5 da Portaria nº 791/2014, não se vislumbrando motivos que justificassem sua elevação.
+3.38 O fator tempo (T) das infrações foi estabelecido de acordo com a duração de cada infração, sendo que as gravações e as reclamações Focus foram avaliadas de novembro de 2016 a janeiro de 2017 (3 meses) e o site foi avaliado em apenas 1 (um) dia.
+3.39 Foi empregada no cálculo da multa a Receita Operacional Líquida (ROL) da Claro S.A., CNPJ nº 40.432.544/0001-47, auferida na prestação do Serviço Telefônico Fixo Comutado (STFC) no ano de 2019, uma vez que a sanção foi aplicada em 25 de março de 2022 e que a ROL relativa a 2020 somente foi conhecida pela SCO em 31 de maio de 2022.
+3.40 Ressalta-se, por fim, a aplicação das mudanças trazidas pelo RFR ao Rasa, uma vez que a decisão de primeira instância no presente processo foi proferida após as alterações por ela introduzidas.
+A respeito do cálculo da multa, a recorrente afirmou ser irrazoável e desproporcional a aplicação da sanção no valor de R$ 1.331.694,50, especialmente por terem sido apurados casos pontuais, restritos a apenas uma parcela das lojas fiscalizadas. Além disso, sustentou não ter havido qualquer comportamento doloso ou má-fé que justificasse tamanha penalidade, pugnando, ao final, pela aplicação da sanção de advertência. Conforme síntese apresentada pela SCO no Informe nº 422/2026/CODI/SCO (SEI nº 15872450), na sanção aplicada no Despacho Decisório nº 73/2022/CODI/SCO (SEI nº 8149175) foram considerados os seguintes critérios:
+3.4 O Informe nº 195/2022/CODI/SCO (8136509) fundamentou o Despacho Decisório nº 73/2022/CODI/SCO (8149175), que aplicou à prestadora sanção de multa no valor total de R$1.331.694,50 (um milhão, trezentos e trinta e um mil, seiscentos e noventa e quatro reais e cinquenta centavos), de acordo com a tabela abaixo:
+Dispositivo infringido
+ | Conclusão da análise
+ | Tipo de infração
+ | Usuários atingidos
+ | Usuários totais
+ | Fator de gravidade
+ | Dano
+ | Tempo
+ | Valor da multa proposta
+ | 
+art. 57, §1º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 1+6=7
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | R$ 2.000,00
+ | 
+art. 57, §2º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 31
+ | 2.180
+ | Médio
+ | 2
+ | 1 dia
+ | R$ 49.828,27
+ | 
+art. 57, §3º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 33
+ | 2.180
+ | Médio
+ | 2
+ | 1 dia
+ | R$ 51.410,51
+ | 
+art. 57, §4º, Res. 632/2014
+ | Infração caracterizada
+ | Sistêmica
+ | n/a
+ | n/a
+ | Grave
+ | 3
+ | Até 6 meses
+ | R$ 1.222.455,72
+ | 
+art. 58, caput, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 5+39=44
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | R$ 2.000,00
+ | 
+art. 58, § único, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 25
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | R$ 2.000,00
+ | 
+art. 15, §3º, Dec. 6.523/2008
+ | Infração caracterizada
+ | Pontual
+ | 13
+ | 10.825.659
+ | Médio
+ | 2
+ | Até 6 meses
+ | R$ 2.000,00
+ | 
+Sobre o cálculo da sanção apresentado no Planilha de cálculo de multa - STFC - Anexo IV (SEI nº 12162227), realizado após a interposição do recurso adminsitrativo, a recorrente requereu que seja revisto o caráter sistêmico da infração ao art. 57, § 4º. Argumentou que não possui apenas o site como canal de vendas e que a maior parte de suas comercializações ocorre pelo televendas, lojas físicas e parceiros comerciais. Com isso, as evidências extraídas do site não podem ser estendidas a toda a sua base, já que as contratações se dão por diversos canais de vendas. Sob esse prisma, requereu a exclusão da base de cálculo as contratações realizadas fora do site, bem como as contratações do produto Claro Fixo, sob o argumento de que a simulação realizada no site contempla apenas o produto NET Fone, conforme se pode observar no anexo 4.4a do Relatório de Fiscalização (SEI nº 1602058).
+Afirmou, ainda, já ser consolidado o entendimento no âmbito do Conselho Diretor sobre a necessidade de ponderar o fator “Ua/Ut”, a fim de refletir o universo de usuários efetivamente atingido, assegurando a proporcionalidade da reprimenda à gravidade do dano causado. Acrescentou que a nova metodologia de cálculo para as sanções de direitos e garantias dos usuários, aprovada pela Resolução Interna nº 219/2023, pacificou a necessidade de segmentar a sanção proporcionalmente à base afetada por determinada conduta. Portanto, faz-se necessária a depuração dos usuários impactados nos moldes expostos, de forma a garantir a fixação de uma sanção proporcional e razoável, como realizado em outros casos. Tal argumento foi reiterado na manifestação SEI nº 16049407.
+A SCO opinou pela improcedência da proporcionalização, pois o Conselho Diretor aplica esse entendimento a situações em que um determinado dispositivo regulamentar prevê expressamente mais de uma forma de cumprimento da obrigação nele estabelecida, a exemplo do art. 41, § 5º, do antigo RSTFC, o que não é o caso do art. 57, § 4º, do RGC. Para o referido artigo, não importa como ou por qual meio se deu a adesão ao serviço. Desse modo, concluiu que deve ser mantido o caráter sistêmico da infração.
+ O § 4º do art. 57 do RGC/2014 assim dispõe:
+RGC/2014:
+Art. 57. A Prestadora pode oferecer benefícios ao Consumidor e, em contrapartida, exigir que permaneça vinculado ao Contrato de Prestação do Serviço por um prazo mínimo.
+(...)
+§ 4º Caso o Consumidor não se interesse pelo benefício oferecido, poderá optar pela adesão a qualquer serviço, não sendo a ele imputada a necessidade de permanência mínima.
+(Destaquei)
+Da leitura do dispositivo em questão, vê-se que: (i) a obrigação consiste na existência de planos de serviço nos quais não haja fidelização; e (ii) a norma não estabelece os canais por meio dos quais essa obrigação deve ser cumprida. Assim, tem-se que em todos os canais de atendimento devem ser disponibilizados ao usuário planos de serviços sem fidelização.
+Além do portal eletrônico da prestadora, constatou-se a ocorrência de transgressões a esse dispositivo em outros canais de atendimento fiscalizados, a exemplo da central de teleatendimento (call center), conforme gravações analisadas. Tal conclusão extrai-se dos excertos do Relatório de Fiscalização nº 431/2017/GR01 (SEI nº 3805561), com destaque para os itens 4.1 e 4.4.
+Adicionalmente, conforme anteriormente fundamentado nesta análise restou caracterizadas as infrações ao § 4º do art. 57 do RGC identificadas nos setores de atendimento presencial, houve a necessidade de ajustar o cálculo da sanção, em especial quanto a caracterização como sistêmica. Para tanto foi realizado instrução adicional, tendo a área técnica ajustado os cálculo à referida infração, conforme Planilha I - Recálculo de Sanção de Multa - Brasil (SEI nº 15905388).
+Sobre os usuarios totais, utilizou-se adequadamente a quantidade de usuários do STFC em junho de 2017, conforme consta dos dados do sistema da Anatel (SEI nº 12159262), tendo sido ajustados os valores de usuários totais relativos às infrações art. 57, § 2º e 3ª do RGC. Isso porque na Planilha Anexo II - Cálculo de multa/metodologia (SEI nº 8149150), que respaldou a decisão da SCO, constava equivocadamente o valor de 2.180. Após a instrução complementar, as infrações aos incisos § 3º o art. 57 foram devidamente individualizadas, conforme Planilha I - Recálculo de Sanção de Multa - Brasil (SEI nº 15905388).
+Já o número de "usuários atingidos" (Ua) equivale ao número de usuários do STFC afetados constatados na fiscalização, salvo quando tiver caráter sistêmico, como é o caso da infração ao § 4º do art. 57 do RGC. Quanto às demais infrações, foi considerado o quantitativo reportado pela SCO no Informe nº 195/2022/ CODI/SCO, cujo trecho se replica a seguir:
+VI. Considerações sobre as infrações
+3.60 O quantitativo das infrações encontradas neste processo foi extraído dos arquivos Anexo 4.1a - ANALISE DAS GRAVAÇÕES STFC.xlsx, Anexo 4.2a - ANÁLISE DOS FOCUS STFC.xlsx e Anexo 4.3b - Consolidação lojas.xlsx, que integram o documento SEI 1602058, e é o seguinte:
+3.60.1 Gravações - conforme arquivo Anexo 4.1a - ANÁLISE DAS GRAVAÇÕES STFC:
+3.60.1.1 Violações ao art. 57, § 1º da Resolução nº 632/2014: originalmente apontado como 13 (treze), o quantitativo deve ser revisado para 6 (seis);
+3.60.1.2 Violações ao art. 57, § 3º, I da Resolução nº 632/2014: originalmente apontado como 12 (doze), o quantitativo deve ser revisado para 4 (quatro);
+3.60.1.3 Violações ao art. 57, § 3º, II da Resolução nº 632/2014: originalmente apontado como 7 (sete), o quantitativo deve ser revisado para 5 (cinco);
+3.60.1.4 Violações ao art. 57, § 3º, III da Resolução nº 632/2014: originalmente apontado como 13 (treze), o quantitativo deve ser revisado para 5 (cinco);
+3.60.1.5 Violações ao art. 57, § 4º da Resolução nº 632/2014: originalmente apontado como 12 (doze), o quantitativo deve ser revisado para 5 (cinco);
+3.60.1.6 Violações ao art. 58 da Resolução nº 632/2014: originalmente apontado como 13 (treze), o quantitativo deve ser revisado para 5 (cinco).
+3.60.2 Reclamações extraídas do sistema Focus - conforme arquivo Anexo 4.2a - ANÁLISE DOS FOCUS STFC:
+3.60.2.1 Violações ao art. 57, § 1º da Resolução nº 632/2014: 1 (uma);
+3.60.2.2 Violações ao art. 57, § 2º da Resolução nº 632/2014: 39 (trinta e nove);
+3.60.2.3Violações ao art. 57, § 3º da Resolução nº 632/2014: 39 (trinta e nove);
+3.60.2.4 Violações ao art. 58 da Resolução nº 632/2014: 39 (trinta e nove);
+3.60.2.5 Violações ao parágrafo único do art. 58 da Resolução nº 632/2014: 25 (vinte e cinco).
+3.60.3 Fiscalização em setores de atendimento presencial - conforme arquivo Anexo 4.3b - Consolidação lojas:
+3.60.3.1 Violações ao art. 57, § 2º da Resolução nº 632/2014: em 31 (trinta e uma) lojas;
+3.60.3.2 Violações ao art. 57, § 3º da Resolução nº 632/2014: em 33 (trinta e três) lojas;
+3.60.3.3 Violações ao art. 57, § 4º da Resolução nº 632/2014: em 10 (dez) lojas, mas procedimentais e aplicáveis em caráter sistêmico, dada a impossibilidade, na prática, da contratação dos serviços sem fidelização, como explicado anteriormente neste Informe.
+3.61 Ademais, conforme a alínea "b" do item 4.1 do Relatório de Fiscalização, foram requeridas 37 (trinta e sete) gravações específicas à Prestadora, que forneceu apenas 24 (vinte e quatro) delas, perfazendo 13 (treze) ofensas ao art. 15, § 3º do Decreto nº 6.523/2008.
+Verifica-se que foram ajustados pela SCO, na proposta da "Planilha de cálculo de multa - STFC - Anexo IV" ( SEI nº 12162227), os Uas relativos às infrações aos §§ 2º e 3º do art. 57 do RGC. No entanto, após a diligência efetuada no âmbito da relatoria, a SCO revisou alguns quantativos, conforme trechos que se extrai do Informe nº 422/2026/CODI/SCO:
+3.17 Assim, tomando como referência as considerações do item 3.60 e subitens do Informe nº 195/2022/CODI/SCO (8136509), as Planilhas II (15905444) e III (15905456) em anexo apresentam os recálculos das multas do descumprimento ao art. 57, §2º, do RGC, no âmbito dos usuários e das lojas, do seguinte modo:
+3.19=7.1 Planilha II - Usuários: (Ua) = 39 (trinta e nove) reclamações Focus. Abrangência da infração: BA, CE, MG, RJ, SP e TO, conforme extraído do arquivo "Anexo 4.2a - Análise do Focus STFC", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). A ROL e o fator (Ut) utilizados na Planilha II observam a delimitação da abrangência da infração. O (Ut) foi obtido na base de dados oficial da Anatel. O fator (T) da irregularidade corresponde a "até 6 (seis) meses", pois as reclamações Focus foram avaliadas de novembro de 2016 a janeiro de 2017.
+3.17.2 Planilha III - Lojas: (Ua) = 31 (trinta e um) estabelecimentos. Abrangência da infração: AC, AL, BA, ES, MG, PE, RJ, RS, SE, SP e TO, conforme extraído do arquivo "Anexo 4.3b - Consolidação Lojas", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). A ROL e o fator (Ut) utilizados na Planilha III observam a delimitação da abrangência da infração. O (Ut) foi obtido no arquivo "Anexo 4.3a - Lojas", abas "Lojas Claro" e "Lojas NET", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). O fator (T) da irregularidade equivale a "até 6 (seis) meses", correspondente ao tempo de duração da atividade fiscalizatória, conforme considerações tecidas no Tópico II.3 acima.
+(...)
+3.19. Novamente tomando como referência as considerações do item 3.60 e subitens do Informe nº 195/2022/CODI/SCO (8136509), as Planilhas I (15905388) e IV (15905505) em anexo apresentam os recálculos das multas do descumprimento ao art. 57, §3º, do RGC, no âmbito dos usuários e das lojas, do seguinte modo:
+3.19.1 Planilha I - Usuários: (Ua) = 53 (cinquenta e três) - 14 (catorze) gravações + 39 (trinta e nove) reclamações Focus. Destaca-se ter sido mantida a abrangência nacional da fiscalização, pela impossibilidade de delimitação da origem das gravações no arquivo "Anexo 4.1a - Análise das Gravações STFC", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). O fator (T) da irregularidade corresponde a "até 6 (seis) meses", pois as gravações e as reclamações Focus foram avaliadas de novembro de 2016 a janeiro de 2017.
+3.19.2 Planilha IV - Lojas: (Ua) = 33 (trinta e três) estabelecimentos. Abrangência da infração: AL, CE, MS, MT, PE, PR, RS e SP, conforme extraído do arquivo "Anexo 4.3b - Consolidação Lojas", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). A ROL e o fator (Ut) utilizados na Planilha IV observam a delimitação da abrangência da infração. O (Ut) foi obtido no arquivo "Anexo 4.3a - Lojas", abas "Lojas Claro" e "Lojas NET", disponível no documento "Anexo ao Relatório de Fiscalização" (1602058). O fator (T) da irregularidade equivale a "até 6 (seis) meses", correspondente ao tempo de duração da atividade fiscalizatória, conforme considerações tecidas no Tópico II.3 acima
+Verifica-se da planilha 4.3.b -Consolidação loja, que para o serviço STFC foram fiscalizadas lojas nos estados de: SP (São Paulo); RJ (Rio de Janeiro); ES (Espírito Santo); PR (Paraná); SC (Santa Catarina); MG (Minas Gerais); RS (Rio Grande do Sul); PE (Pernambuco); AL (Alagoas); PB (Paraíba); GO (Goiás); MT (Mato Grosso); MS (Mato Grosso do Sul); TO (Tocantins); BA (Bahia); SE (Sergipe); CE (Ceará); RN (Rio Grande do Norte); PI (Piauí); PA (Pará); MA (Maranhão); AP (Amapá); RO (Rondônia); AC (Acre). Porém, nem todas as 24 unidades da federação fiscalizadas apresentaram infrações. 
+Em relação ao § 2º do art. 57 do RGC, a área técnica propôs a adequação do quantitativo de 31 para 39 usuários atingidos. Tal medida visou contemplar o total de amostras extraídas do sistema Focus, em decorrência da exclusão das infrações constatadas nas lojas. No que tange às infrações aos incisos I, II e III do § 3º do art. 57, a SCO desmembrou o cálculo unificado anterior (que considerava 33 usuários), ajustando-o para 43, 5 e 5 usuários atingidos, respectivamente.
+No que se refere a ponderação das lojas ao universo fiscalizado e constatada a infração entende-se adequado seguir o precedente em caso análogo da Claro S.A., Acórdão nº 130, de 13 de maio de 2026 (SEI nº 15629737), no qual foi considerado o universo dos estados em que foi realizada a fiscalização e constatados as infrações. Assim, expõe a área técnica que a base para apuração do quantitativo de lojas os Estados em que houve às infrações aos §§ 2º e 3º do art. 57 do RGC, foram retiradas do "Anexo 4.3.a Lojas". Portanto, havia informações no processo para realizar a ponderação. 
+Quanto ao fator "dano" (D) tem por base os valores da tabela do item 5 da Portaria nº 791/2014:
+ | C O N D U T A
+ | 1
+ | 2
+ | 3
+ | 4
+ | 5
+ | 10
+ | 
+a)
+ | Lesão ou ameaça à integridade física
+ | 
+ | 
+ | 
+ | 
+ | x
+ | x
+ | 
+b)
+ | Danos materiais, inclusive cobrança indevida
+ | 
+ | 
+ | 
+ | x
+ | x
+ | 
+ | 
+c)
+ | Negativa de atendimento
+ | 
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+d)
+ | Omissão de informação
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+ | 
+e)
+ | Informação errônea ou que induza o usuário a erro
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+ | 
+f)
+ | Infração sem prejuízo perceptível
+ | x
+ | x
+ | 
+ | 
+ | 
+ | 
+ | 
+g)
+ | Oferta discriminatória
+ | 
+ | 
+ | x
+ | x
+ | 
+ | 
+ | 
+h)
+ | Impedimento ou dificuldade à fruição do serviço sem culpa do Usuário
+ | 
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+i)
+ | Desrespeito a regras de sigilo
+ | 
+ | 
+ | 
+ | x
+ | x
+ | 
+ | 
+j)
+ | Venda casada
+ | 
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+k)
+ | Impedimento ou dificuldade para o exercício de direito.
+ | 
+ | x
+ | x
+ | x
+ | 
+ | 
+ | 
+l)
+ | Inserção indevida em cadastros de devedores
+ | 
+ | 
+ | 
+ | x
+ | x
+ | 
+ | 
+A SCO entendeu procedente as alegações da recorrente sobre o fator ano (D), pois o valor "2" é o adequado para as infrações caracterizadas no § 4º, do art 57. 
+Em conformidade com a Portaria nº 791/2014 e a tabela nela disposta referente ao Fator Dano (D), a eventual aglutinação de várias condutas não justifica, automaticamente, o agravamento do valor atribuído a esse fator. Isso porque o descumprimento de múltiplas regras contidas em um único dispositivo legal não aumenta o potencial ofensivo de cada infração para o usuário. Cada irregularidade mantém sua própria gravidade e consequências, mesmo que várias normas sejam violadas simultaneamente.
+No entanto, no presente caso em razão da infração ao § 4º do art. 57 do RGC, entende-se que deve ser mantido o fator dano "3" aplicado no Despacho Decisório recorrido. A ausência de possibilidade de o consumidor contratar o serviço sem fidelização, entende-se que a conduta se enquadra no item "k" - Impedimento ou dificuldade para o exercício de direito.
+Nessa medida, indefere-se o pedido da Recorrente, de modo que o Fator Dano (D) permaneça "3" para a infração ao § 4º do art. 57 do RGC.
+No que se refere ao fator tempo (T), a metodologia impõe a seguinte caracterização:
+Tempo
+ | 
+1
+ | Até 1 dia
+ | 
+1,5
+ | De 1 dia a 30 dias
+ | 
+2
+ | Entre 30 dias e 6 meses
+ | 
+2,5
+ | Entre 6 meses e 1 ano
+ | 
+3
+ | Mais de um ano
+ | 
+Assim, para as infrações apuradas, foi aplicado o valor do fator tempo (T) de acordo com a duração de cada infração, tendo a SCO esclarecido que as gravações e as reclamações do Focus foram avaliadas de novembro de 2016 a janeiro de 2017 (3 meses), e o site foi avaliado em apenas 1 dia.
+Neste ponto, a recorrente defende que o fator Tempo (T), a duração da infração não pode ser presumida com base no período total da fiscalização e que, no máximo, deveria ser considerada a constatação em um único dia.
+No Anexo 4.2a - ANÁLISE DOS FOCUS STFC.xlsx (SEI nº 1602058), há diversas datas dos registros que compreendem evidências nos meses de outubro, novembro e janeiro. Portanto, correto o enquadramento no "T"= 2 (entre 30 dias e 6 meses).
+A mesma situação foi constatada nas gravações analisadas pela fiscalização, que integram o SEI nº 1381847 e 1470866. Inclusive tal informação consta do relatório de fiscalização:
+4.1 Das Informações obtidas da Prestadora 
+a) Foi solicitado a Prestadora, por meio do RI SEI nº 1188367, a descrição detalhada dos procedimentos utilizados para registro e tratamento de novas contratações de serviços de telecomunicações, incluindo migrações, referentes ao período solicitado na demanda: novembro e dezembro de 2016 e janeiro de 2017. 
+A respeito da infração do § 4º do art. 57, em que pese sistêmica em razão da fiscalização do site, descumprimentos igualmente foram encontrados nas gravações, o que se impõe correto que no recálculo da sanção decorrente da diligência realizada por esta relatoria a imposição do fator tempo para esta infração de até 1 ano. 
+Sobre a gravidade das infrações, a metodologia estabelece: "Fator de Gravidade. Fator referente à Gradação da Infração, podendo assumir os seguintes valores: 5 (quando Leve), 2 (quando Média) e 1 (quando Grave)".
+O RASA define o seguinte quanto à classificação das infrações:
+Art. 9º As infrações são classificadas, segundo sua natureza e gravidade, em:
+I - leve;
+II - média; e
+III - grave.
+§ 1º A infração deve ser considerada leve quando não verificada nenhuma das hipóteses relacionadas nos §§ 2º ou 3º deste artigo.
+§ 2º A infração deve ser considerada média quando da ocorrência de uma das seguintes alternativas:
+I - vantagem indireta ao infrator em decorrência da infração cometida; ou,
+II - atingir grupo limitado de usuários.
+§ 3º A infração deve ser considerada grave quando da ocorrência de uma das seguintes alternativas:
+I - vantagem direta ao infrator em decorrência da infração cometida;
+II - má-fé;
+III - risco à vida;
+IV - atingir número significativo de usuários;
+V - não atendimento a metas de ampliação ou universalização do acesso a serviço de telecomunicações;
+VI - óbice à atividade de fiscalização regulatória; ou,
+VII - uso não autorizado de radiofrequências ou exploração de serviço de telecomunicações sem autorização da Anatel.
+§ 4º Os critérios para definição de grupo limitado e número significativo de usuários para fins deste artigo serão definidos nas Resoluções Internas que aprovarem metodologias de cálculo de multa.
+A SCO, no recálculo das infrações após as razões recursais, esclareceu que "as infrações ao art. 58, caput e parágrafo único, do RGC, possuem natureza grave, por proporcionarem vantagem direta à Prestadora, conforme o art. 9º, §3º, I, do Rasa. Por sua vez, as infrações ao art. 57, §§1º e 4º, do RGC, são de natureza média, por proporcionarem vantagem indireta à Prestadora. Por fim, as infrações ao art. 57, §§ 2º e 3º, I, II e III, do RGC, e ao art. 15, § 3º, do RSAC, são consideradas de natureza leve, pois não se enquadram em nenhuma das hipóteses previstas nos §§ 2º e 3º, do art. 9º, do Rasa, nos termos do art. 9º, § 1º, do Rasa". 
+No entanto, a proposta técnica de revisar a sanção de primeiro grau não é a mais adequada: 
+Com relação ao art. 57, § 2º, foi proposta a modificação de média para leve. O ilícito é classificado como médio por ter a SCO entendido que a vantagem auferida pela recorrente foi indireta. Isso porque, ao não disponibilizar instrumento próprio para o contrato de permanência, ela deixa de ter o custo de armazenamento ou de impressão desse documento, dificultando, ainda, o exercício dos direitos dos usuários, que deixam de entender melhor as questões relacionadas à fidelização devido à ausência de tal documento. 
+Quanto ao art. 57, § 3º, percebe-se que ocorreu a mesma situação descrita acima para o art. 57, § 2º, qual seja, a SCO propõe a revisão da gradação de média para leve. No entanto, há o enquadramento da situação do § 3º como vantagem auferida indireta, devendo permanecer como média.
+Quanto ao art. 57, § 4º, do RGC, embora a área técnica tenha indicado tratar-se de infração de natureza média, entendo que, no caso concreto, deve ser mantida sua classificação como grave. Isso porque a conduta foi caracterizada em dimensão sistêmica, com potencial de atingir indistintamente número significativo de usuários, enquadrando-se na hipótese do art. 9º, § 3º, IV, do RASA.
+No que se refere à infração ao § 1º do art. 57 do RGC, considerando os precedentes deste Conselho Diretor, a exemplo do Acórdão nº 204/2025 (SEI nº 14194501), a infração deve ser classificada como grave, ao superar a limitação do prazo de 12 (doze) meses para fidelização, há vatagem da prestadora. A manutenção do usuário fidelizado por prazo acima de 12 (doze) meses configura uma vantagem à Prestadora, que irregularmente retém o cliente para permanecer obtendo dele as quantias referentes às mensalidades e/ou outros eventuais valores, conduta que o Conselho Diretor tem entendido que se subsome ao previsto no inciso I do § 3º do art. 9º do RASA acima transcrito
+No que se refere à infração ao § 3º do art. 15 do RSAC deve permanecer a classificação conferida na sanção recorrida, qual seja de natureza média, de acordo com o art. 9º, §2º, I, do Rasa, por violação a direito dos usuários.
+O reenquadramento da infração ao art. 58, parágrafo único, de média para grave, revela-se acertado, uma vez que restou configurada inequívoca vantagem direta auferida pela recorrente. Ademais, a medida encontra respaldo na jurisprudência do Conselho Diretor e respeitou o devido processo legal inerente à reformatio in pejus, garantindo-se a prévia manifestação da prestadora sobre o agravamento da sanção.
+Os mesmos critérios foram considerados no precedente consignado no Acórdão nº 130, de 13 de maio de 2026 (SEI nº 15629737), excetuado o § 3º, do art. 57 que não foi objeto de sancionamento neste precedente, e do Acórdão nº 311, de 11 de novembro de 2025 (SEI nº 14731204).
+Ao reavaliar a dosimetria da sanção em sede recursal, propõe-se a aplicação da penalidade de advertência nas hipóteses em que tal medida se afigura cabível, com vistas a assegurar a razoabilidade e a proporcionalidade. Referida conversão abrange, portanto, as infrações classificadas como de natureza leve ou média.
+Sobre o tema, o RASA estabelece o que segue no art. 12: 
+Art. 12. A Agência aplicará a sanção de advertência quando da ocorrência de uma das seguintes alternativas: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - não justifique a imposição de pena mais grave ao infrator; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - atendimento das medidas impostas em processo de Acompanhamento do qual derivou o Pado. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Parágrafo único. Não será aplicada a sanção de advertência a: (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+I - descumprimento das obrigações relacionadas à universalização e à continuidade; ou, (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+II - infrações graves, na forma do § 3º do art. 9º deste Regulamento, ressalvada a situação prevista no inciso II do caput deste artigo. (Redação dada pela Resolução nº 746, de 22 de junho de 2021)
+Entende-se que a proposta apresentada pela SCO, por ocasião da análise das razões recursais, encontra-se em consonância com o comando regulamentar, em razão da decisão de primeira instância foi proferida em 25 de março de 2022. 
+No tocante à ROL utilizada na dosimetria, a recorrente pleiteou a adoção dos dados referentes ao exercício de 2020. Sustentou tal pedido sob o argumento de que, como a decisão de primeira instância foi proferida em março de 2022, a ROL de 2020 consistia na última informação financeira regularmente prestada à Agência por meio dos sistemas SAMIC e DICI. 
+A SCO, conforme consta do Tópico V.2 do Informe nº 194/2024/CODI/SCO (SEI nº 12126319), esclareceu que a ROL de 2019 era a mais recente disponível à época da decisão, datada de 25 de março de 2022 (SEI nº 8149175), sendo este o entendimento consolidado no Conselho Diretor da Anatel a respeito do assunto. Salientou, outrossim, que a ROL relativa a 2020 somente foi conhecida pela SCO em 31 de maio de 2022, e a relativa a 2021 somente em 10 de janeiro de 2024. Portanto, não há razão para ajustes. 
+Conforme consignado pela SCO, as infrações apuradas neste processo podem envolver cobranças indevidas aos usuários. Por esse motivo, afigura-se necessária a instauração de um Procedimento de Acompanhamento e Controle (PAC), com o escopo de verificar se tais cobranças foram efetivamente pagas e, na hipótese positiva, se a prestadora providenciou a devida restituição dos valores. A área técnica noticiou, ainda, que será acostada ao processo certidão atestando a abertura do referido PAC. Por fim, a SCO estimou a vantagem auferida pela recorrente em decorrência dessas cobranças, alcançando o montante de R$ 13.699,98.
+Assim, conforme preceitua o art. 18, §2º, do RASA, "o valor base da multa nunca será inferior ao dobro da vantagem auferida, quando estimável", sendo que o cálculo dessa vantagem deve ser feito com base no custo de oportunidade da utilização dos valores cobrados indevidamente, utilizando-se para tanto a taxa Selic, de acordo com os precedentes do Conselho Diretor constantes das Análises nº 200/2017/SEI/IF (SEI nº 1823042) e nº 13/2018/SEI/EC (SEI nº 2310525).
+Para a referida atualização, adotou-se como marco inicial a data mais recente das cobranças, qual seja, 31 de janeiro de 2017, e como termo final o dia 25 de março de 2022, data em que foi proferida a decisão de primeira instância. A correção monetária pela taxa Selic foi processada por meio da Calculadora do Cidadão, disponibilizada pelo Banco Central do Brasil, em conformidade com a Metodologia de cálculo da vantagem auferida Selic - Anexo III (SEI nº 12159766), obtendo-se os seguintes valores:
+Dispositivo
+ | Valor estimado de cobranças indevidas não ressarcidas
+ | Correção pela Taxa Selic
+ | Vantagem Auferida
+ | Dobro da Vantagem Auferida
+ | 
+Art. 58, caput, do RGC
+ | R$7.733,32
+ | R$10.407,44
+ | R$2.674,12
+ | R$5.348,24
+ | 
+Art. 58, parágrafo único, do RGC
+ | R$5.966,66
+ | R$8.029,89
+ | R$2.063,23
+ | R$4.126,46
+ | 
+Desse modo, o valor-base da sanção de multa aplicada à infração ao art. 58, caput, do RGC não pode ser inferior a R$ 5.348,24, e, para o art. 58, parágrafo único, do RGC, não pode ser inferior a R$ 4.126,46, a ser acrescido das agravantes, as quais passa-se a analisar.
+III.4. Das Agravantes e Atenuantes
+A recorrente requereu que seja aplicada a circunstância atenuante em razão da correção da conduta relativa ao art. 57, §4º, do RGC, conforme documentos juntados ao processo. 
+Na manifestação após diligência monocrática, a recorrente questiona a aplicação de agravante de 10% com fundamento na obtenção de vantagem direta e no atingimento significativo de usuários. Sustenta que tais circunstâncias já foram consideradas em outros elementos da dosimetria, como a caracterização da infração como sistêmica, a abrangência nacional, a quantidade de usuários impactados e a classificação da gravidade. Assim, argumenta que a utilização reiterada dos mesmos fatos para justificar múltiplos agravamentos configura bis in idem e afronta os princípios da proporcionalidade, individualização da pena e motivação adequada.
+Conforme consta no Informe nº 195/2022/CODI/SCO (SEI nº 8136509) que subsidiou o Despacho Decisório recorrido, houve a aplicação da agravante prevista no inciso III, do art. 19 do RASA à infração do § 4º do art. 57, pelos seguintes fundamentos:
+VIII. Atenuantes e agravantes
+(...)
+3.74 A infração ao art. 57, § 4º da Resolução nº 632/2014 deve ser agravada em 10% (dez por cento), nos termos do art. 19, III da Resolução nº 632/2014, por tratar-se de ofensa grave a mais de um inciso do art. 9º, § 3º da Resolução nº 589/2012, a saber:
+3.74.1 A Prestadora auferiu, diretamente, vantagem em decorrência da infração cometida, ainda que não quantificável, uma vez que condicionava a contratação do serviço à fidelização do usuário ou, alternativamente, ao pagamento de uma taxa de instalação exorbitante (inciso I);
+3.74.2 Essa infração, de caráter sistêmico, atingiu número significativo de usuários (inciso IV).
+A respeito das agravantes, assim dispõe o RASA:
+Art. 19. O valor da multa será acrescido, nos percentuais abaixo, caso incidam as seguintes circunstâncias agravantes:
+I - 10% (dez por cento) para cada caso de reincidência específica, até o limite de 40% (quarenta por cento);
+II - 1% (um por cento) para cada caso de antecedente, até o limite de 20%; e
+III - 10% (dez por cento) pela incidência de cada uma das hipóteses previstas no § 3º do art. 9º deste Regulamento, a partir da segunda ocorrência, até o limite de 40% (quarenta por cento).
+IV - 10% (dez por cento) para cada medida preventiva ou reparatória descumprida no processo de Acompanhamento que precedeu o Pado, até o limite de 40% (quarenta por cento). (Incluído pela Resolução nº 746, de 22 de junho de 2021)
+§ 1º Na hipótese de incidência de mais de um dos incisos deste artigo, deverão ser somados os percentuais relativos a cada fator.
+§ 2º Na hipótese de haver registros computáveis a título de reincidência específica além do suficiente para a incidência do percentual máximo de agravamento previsto no inciso I deste artigo, os excedentes ingressarão na categoria de antecedentes, para o acréscimo previsto no inciso II.
+No que se refere à circunstância agravante proposta para o § 4º do art. 57, entende-se que se mostra caracterizada sua incidência, tal qual aplicado na decisão recorrida. A conduta adotada pela recorrente ao não disponibilizar planos de serviço sem fidelização lhe proporciona vantagem direta, na medida em que mantém o usuário vinculado à Prestadora pelo prazo mínimo de 12 (doze) meses, assegurando o recebimento das mensalidades e de eventuais valores adicionais. Tal conduta amolda-se à hipótese prevista no inciso I do § 3º do art. 9º do RASA, ou seja, grave em razão de "vantagem direta ao infrator em decorrência da infração cometida". Ademais, por se tratar de infração de natureza sistêmica, conforme já anteriormente exposto, a prática alcança um número significativo de usuários, enquadrando-se igualmente na hipótese prevista no inciso IV do § 3º do art. 9º do RASA.
+No entanto, sobre a incidência de agravante, a Procuradoria Federal Especializada junto à Anatel, por meio do Parecer nº 352/2026/PFE-ANATEL/PGF/AGU (SEI nº 16386159), de 1º de outubro de 2026, opina pela não utilização, por cautela, do fator de gradação previsto no art. 9º, § 3º, IV, do RASA como elemento adicional para a incidência da circunstância agravante, com a consequente majoração do valor de multa, prevista no art. 19, III, do Regulamento de Sanções.
+A respeito do entendimento do Conselho Diretor acerca da incidência da agravante há o precedente do PADO nº 53500.000556/2021-64, no qual por meio do Acórdão nº 311, de 11 de novembro de 2025 (SEI nº 14731204), o Conselho Diretor aplicou a agravante do art. 19, inciso III do RASA:
+Acórdão nº 311, de 11 de novembro de 2025
+Processo nº 53500.000556/2021-64
+Recorrente/Interessado: CLARO S.A., EMBRATEL TVSAT TELECOMUNICAÇÕES S.A.
+CNPJ nº 40.432.544/0001-47 e nº 09.132.659/0001-76
+Conselheiro(a) Relator(a): Vicente Bandeira de Aquino Neto
+Fórum Deliberativo: Reunião nº 948, de 4 de novembro de 2025
+EMENTA
+RECURSO ADMINISTRATIVO. PROCEDIMENTO PARA APURAÇÃO DE DESCUMPRIMENTO DE OBRIGAÇÕES - PADO. DIREITOS GERAIS DOS USUÁRIOS - DGU. REGULAMENTO GERAL DE DIREITOS DO CONSUMIDOR DE SERVIÇOS DE TELECOMUNICAÇÕES - RGC/2014. ausência de incorporação entre empresas, mas pertencentes ao mesmo grupo econômico. regular manifestação da interessada em todos os momentos processuais. prejuízo ao administrado e violação ao contraditório em ampla defesa. inocorrência. RECRUDESCIMENTO DA SANÇÃO ADMINISTRATIVA EM RECURSO DO ADMINISTRADO. POSSIBILIDADE. súmula nº 22/2019. as irregularidades debatidas nestes autos foram cometidas pela EMBRATEL TVSAT TELECOMUNICAÇÕES S.A. - EBT-TVSAT e não pela claro s.a. a multa aplicada em outro Pado decorrente da violação ao art. 57, § 4º, do RGC/2014 não cONFIGURA bis in idem. Caracterização da infração. decisão de primeira instância proferida antes da entrada em vigor da nova metodologia prevista na Resolução Interna nº 219/2023. aplicação da Metodologia para o cálculo de multas por descumprimentos a direitos dos usuários constante na Portaria nº 791, de 26 de agosto de 2014. ART. 57, § 3º e INCISOS, DO RGC/2014. APLICAÇÃO DE SANÇÃO ÚNICA, DEVIDAMENTE PROPORCIONALIZADA. MAJORAÇÃO DE DANO pela AGLUTINAÇÃO DE DISPOSITIVOS. IMPOSSIBILIDADE. documentação apresentada EM sede de Alegações comprovando a cessação da infração. aplicação da atenuante de 50% (cinquenta por cento) prevista no inciso III do art. 20 do REGULAMENTO DE APLICAÇÃO DE SANÇÕES ADMINISTRATIVAS - RASA. ALINHAMENTO COM OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL - ods DA AGENDA 2030 DA Organização das Nações Unidas - ONU. RECURSO CONHECIDO E PARCIALMENTE PROVIDO. REVISÃO DE OFÍCIO.
+1. Recurso Administrativo interposto por EMBRATEL TVSAT TELECOMUNICAÇÕES S.A. - EBT-TVSAT contra o Despacho Decisório nº 460/2022/CODI/SCO, de 7 de dezembro de 2022 (SEI nº 9482513), por meio do qual o Superintendente de Controle de Obrigações - SCO aplicou multa no valor total de R$ 9.618.371,32 (nove milhões, seiscentos e dezoito mil, trezentos e setenta e um reais e trinta e dois centavos), em razão de descumprimentos a dispositivos do Regulamento Geral de Direitos do Consumidor de Serviços de Telecomunicações - RGC, aprovado pela Resolução nº 632, de 7 de março de 2014.
+2. Mesmo se tratando de uma outra empresa - com outro CNPJ, inclusive -, a EBT-TVSAT integra o GRUPO CLARO e se manifestou em todos os momentos processuais relevantes, a saber, Defesa, Alegações Finais, Recurso Administrativo e Alegações em reformatio in pejus. Não há que se falar, assim, em nulidade por violação aos princípios do contraditório e da ampla defesa. Inexiste, igualmente, demonstração concreta de prejuízo concreto ao administrado ou ao interesse público, elemento indispensável para a decretação de qualquer invalidade processual, sob pena de ofensa ao princípio da instrumentalidade das formas e da eficiência administrativa.
+3. Admite-se a reformatio in pejus, desde que, previamente, se intime o interessado, analisando-se a manifestação eventualmente apresentada e, em seguida, se remetam os autos à Procuradoria Federal Especializada junto à Anatel - PFE/Anatel, em atenção ao disposto no art. 64, parágrafo único, da Lei nº 9.784, de 29 de janeiro de 1999 (Lei de Processo Administrativo - LPA), no art. 125, §§ 1º, 3º e 4º, do Regimento Interno da Anatel - RIA, aprovado pela Resolução nº 612, de 29 de abril de 2013, e na Súmula nº 22, de 18 de outubro de 2019, da Anatel.
+4. Não sendo a CLARO a empresa que cometeu as ofensas debatidas nestes autos, é certo que a multa impingida no Pado nº 53500.005477/2019-25 decorrente da violação ao art. 57, § 4º, do RGC/2014 não caracteriza bis in idem, por diversidade de partes.
+5. A Resolução Interna nº 219, de 15 de junho de 2023, estabelece sua aplicação apenas aos processos pendentes de decisão de primeira instância quando de sua entrada em vigor (art. 3º). A decisão de primeira instância proferida neste feito data de 7 de dezembro de 2022, anterior ao início da vigência daquela Resolução. Aplica-se ao caso a Metodologia de multa aprovada pela Portaria nº 791, de 26 de agosto de 2014, relativa a descumprimentos a direito dos usuários.
+6. A inobservância dos incisos do § 3º do art. 57 não configura multiplicidade de infrações, mas sim uma única conduta ilícita consubstanciada na não disponibilização integral das informações regulamentares no Contrato de Permanência. A subdivisão do referido parágrafo em incisos é meramente de técnica legislativa, visando a detalhar o conteúdo da obrigação principal, sem estabelecer obrigações autônomas para fins de aplicação sancionatória.
+7. O agrupamento de dispositivos unicamente com fins de apenamento, quando cabível, não enseja o agravamento do Fator "D" da fórmula de cálculo da multa, cujos valores constam na tabela de referência específica constante da Portaria nº 791, de 26 de agosto de 2014, que dispõe sobre a metodologia de cálculo do valor base das sanções de multa relativa a descumprimentos a direito dos usuários previstas na regulamentação.
+8. Em sede de Alegações Finais, foi acostada aos autos documentação comprobatória da cessação da infração, ensejando, portanto, a aplicação da atenuante de 50% (cinquenta por cento) prevista no inciso III do art. 20 do Regulamento de Aplicação de Sanções Administrativas - RASA, aprovado pela Resolução nº 589, de 7 de maio de 2012.
+9. A presente proposta está alinhada aos Objetivos de Desenvolvimento Sustentável - ODS da Agenda 2030 da Organização das Nações Unidas - ONU, especialmente o ODS 16 (Paz, Justiça e Instituições Eficazes), uma vez que a transparência e a eficácia nas decisões regulatórias fortalecem as instituições e promovem a justiça.
+10. Recurso Administrativo conhecido e parcialmente provido. Revisão de ofício.
+ACÓRDÃO
+Vistos, relatados e discutidos os presentes autos, acordam os membros do Conselho Diretor da Anatel, por unanimidade, nos termos da Análise nº 107/2025/VA (SEI nº 14423357), integrante deste acórdão:
+a) conhecer do Recurso Administrativo para, no mérito, dar-lhe provimento parcial, apenas quanto:
+a.1) à substituição da Receita Operacional Líquida - ROL da CLARO pela ROL do SeAC prestado pela EBT-TVSAT;
+a.2) à classificação das violações aos §§ 2º e 3º do art. 57 do RGC/2014 como pontuais;
+a.3) à aglutinação e proporcionalização das infrações referentes aos incisos do § 3º do art. 57 do RGC/2014;
+a.4) à retificação do Fator "D" das infrações aos incisos do § 3º do art. 57 do RGC/2014; e,
+a.5) à aplicação da atenuante prevista no art. 20, inciso III, do RASA à violação ao § 4º do art. 57 do RGC/2014;
+b) rever, de ofício, a decisão consubstanciada no Despacho Decisório nº 460/2022/CODI/SCO, de 7 de dezembro de 2022 (SEI nº 9482513), a fim de alterar:
+b.1) a infração ao § 4º do art. 57 do RGC/2014 como caracterizada;
+b.2) os fatores "Ut" (Usuários totais) e "Ua" (Usuários atingidos) quanto às violações ao § 2º do art. 26, aos §§ 1º, 2º e 3º do art. 57 e ao caput e parágrafo único do art. 58 do RGC/2014;
+b.3) a classificação da transgressão ao § 4º do art. 57 do RGC/2014 como sistêmica;
+b.4) o Fator Tempo (T) quanto ao art. 58, caput, e quanto ao § 2º do art. 57 relativamente às Lojas;
+b.5) a gradação das infrações relativas ao art. 57, § 1º, ao art. 57, § 2º, ao art. 57, § 3º, e ao parágrafo único do art. 58; e,
+b.6) para 12% (doze por cento) o percentual dos antecedentes para todas as violações e, para a infração ao § 4º do art. 57, a agravante de 10% (dez por cento) prevista no inciso III do art. 19 do RASA; e,
+c) em face das modificações expostas nas alíneas "a" e "b", retificar o valor da multa aplicada à EMBRATEL TVSAT TELECOMUNICAÇÕES S.A. - EBT TVSAT, passando-a de R$ 9.618.371,32 (nove milhões, seiscentos e dezoito mil, trezentos e setenta e um reais e trinta e dois centavos) para R$ 528.109,22 (quinhentos e vinte e oito mil, cento e nove reais e vinte e dois centavos).
+Participaram da deliberação o Presidente Carlos Manuel Baigorri e os Conselheiros Alexandre Reis Siqueira Freire, Edson Victor Eugênio de Holanda, Octavio Penna Pieranti e Vicente Bandeira de Aquino Neto. (Grifou-se)
+Entende-se oportuno replicar o trecho da Análise nº 107/2025/VA (SEI nº 14423357) que motiva a aplicação da agravante:
+5.102 Quanto à agravante proposta para o § 4º do art. 57, igualmente concordo com sua aplicação. A conduta perpetrada pela Operadora em não disponibilizar planos de serviço sem fidelização constitui uma vantagem direta, fazendo com que o usuário fique comprometido junto à Prestadora pelo prazo mínimo de 12 (doze) meses, obtendo dele os valores referentes às mensalidades e/ou outras eventuais quantias, conduta que subsome-se ao previsto no inciso I do § 3º do art. 9º do RASA. E em sendo essa violação de natureza sistêmica, como explanado preteritamente, atinge número significativo de usuários, em conformidade com o inciso IV do § 3º do art. 9º do RASA.
+Portanto, mantém-se a agravante do art. 19, III do RASA aplicada em primeira instância para a infração do § 4º do art. 57 do RGC. 
+A agravante em razão de antecedente está justificadas pela SCO, que após consulta aos sistemas da Anatel, considerando-se o período precedente de 5 anos a 29 de junho de 2017, data final da ação de fiscalização em que se baseou a instauração deste processo, foram encontrados 3 antecedentes em desfavor da Claro S.A., CNPJ nº 40.432.544/0001-47, prestadora do Serviço Telefônico Fixo Comutado (STFC), conforme Consulta quantidade de antecedentes - Anexo II ( SEI nº 12159270). Dessa maneira, sobre o valor-base da multa incide agravante de 3%, nos termos do art. 19, II, do RASA. Na mesma pesquisa, não foram identificadas reincidências específicas, nos termos do art. 19, I, do RASA.
+A respeito das atenuantes, o art. 20 do RASA prevê em seus incisos as seguintes hipóteses de atenuação de pena:
+RASA:
+Art. 20. O valor da multa será reduzido, nos percentuais abaixo, caso incidam as seguintes circunstâncias atenuantes:
+I - 90% (noventa por cento), nos casos de cessação espontânea da infração e reparação total do dano ao serviço e ao usuário, previamente à ação da Agência;
+II - 70% (setenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, antes da intimação da instauração do Pado ou dentro do prazo estipulado pela Anatel, quando assim ocorrer;
+III - 50% (cinquenta por cento), nos casos de cessação da infração e reparação total ao usuário, quando cabível, até o término do prazo para a apresentação de alegações finais em âmbito de Pado;
+IV - 20% (vinte por cento), nos casos de adoção de medidas, pelo infrator, para minimizar os efeitos decorrentes da infração cometida e reparação total ao usuário, quando cabível, até o término do prazo para apresentação de alegações finais nos autos do Pado;
+V - 15% (quinze por cento), nos casos de confissão clara e expressa do infrator acerca da autoria e materialidade do fato apurado, apresentada até o término do prazo para apresentação de defesa.
+§ 1º As circunstâncias atenuantes previstas nos incisos I a IV deste dispositivo não se aplicam em Pados cuja instauração tenha decorrido de processo de Acompanhamento em que medidas reparatórias tenham restado não atendidas.
+§ 2º A reparação total ao usuário, quando cabível, deve ser comprovada à Anatel até o término do prazo para apresentação de alegações finais nos autos do Pado.
+§ 3º O reconhecimento da confissão prevista no inciso V delimitará o prosseguimento processual à apuração dos parâmetros necessários para determinar a sanção.
+§ 4º A retratação da confissão, de forma clara e expressa, em qualquer instância, torna prejudicada a incidência da atenuante prevista no inciso V e não configura agravamento de pena para efeitos do rito previsto no art. 64, parágrafo único, da Lei nº 9.784, de 1999.
+§ 5º A atenuante prevista no inciso V incidirá sobre o resultado da aplicação das atenuantes previstas nos incisos I a IV deste artigo, caso existentes.
+No que pertine à infração ao §4º do art. 57 do RGC/2014, a Recorrente pleiteou, em sua peça recursal, a concessão da atenuante referente à regularização da conduta. Arguiu ter comprovado tal regularização no presente processo.
+Como anexo às razões recursais, especificamente o documento Doc. 02_Simulação de contratação STFC_22042022.docx (SEI nº 8352432), no qual é apresentado um recorte do sítio eletrônico da Claro, em que seria possível aferir a possibilidade de se contratar planos de telefonia fixa sem fidelização. Logo, o arquivo refere-se às infrações ao § 4º do art. 57 do RGC, que prescreve que haja a opção de contratação do serviço sem o prazo de permanência mínima. 
+Analisando o documento anexado, a SCO mantém o entendimento pela não incidência da circunstância atenuante, pois a atenuante, segundo o RASA, são aplicáveis, no máximo, até o término do prazo para apresentação de alegações finais no PADO.
+Portanto, não se evidenciam circunstâncias atenuantes a serem aplicadas. 
+Passa-se então ao cálculo da sanção. 
+III.5. Da Conclusão
+III.5.1 Dos ajustes realizados no cálculo da multa em realção à sanção recorrida:
+Dispositivo infringido
+ | Conclusão da análise
+ | Tipo de infração
+ | Usuários atingidos
+ | Usuários totais
+ | Fator de gravidade
+ | Dano
+ | Tempo
+ | Ant.
+ | Agrav.
+ | Valor da multa proposta
+ | 
+art. 57, §1º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 1+6=7
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 2.000,00
+ | 
+art. 57, §2º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 31
+ | 2.180
+ | Médio
+ | 2
+ | 1 dia
+ | 3%
+ | 
+ | R$ 49.828,27
+ | 
+art. 57, §3º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 33
+ | 2.180
+ | Médio
+ | 2
+ | 1 dia
+ | 3%
+ | 
+ | R$ 51.410,51
+ | 
+art. 57, §4º, Res. 632/2014
+ | Infração caracterizada
+ | Sistêmica
+ | n/a
+ | n/a
+ | Grave
+ | 3
+ | Até 6 meses
+ | 3%
+ | 10%
+ | R$ 1.222.455,72
+ | 
+art. 58, caput, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 5+39=44
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 2.000,00
+ | 
+art. 58, § único, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 25
+ | 10.825.659
+ | Médio
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 2.000,00
+ | 
+art. 15, §3º, Dec. 6.523/2008
+ | Infração caracterizada
+ | Pontual
+ | 13
+ | 10.825.659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 2.000,00
+ | 
+Em relação a decisão recorrida: 
+a infração ao § 1º do art. 57, e 58, caput e parágrafo único do RGC, devem ser consideradas "grave";
+a base total utilizada para as infrações ao § 3º do art. 57, do RGC, quando relacionada aos usuários, deve ser utilizado a base de usuarios de junho de 2017 (SEI nº 12159262);
+a base total utilizada para as infrações ao § 2º do art. 57, do RGC, quando relacionada aos usuários, deve ser utilizado a base de usuarios de junho de 2017 (SEI nº 12159262) proporcionalizada aos estados em que foram constatadas as infrações;
+o ROL e o "Ut" deve ser proporcionalizado aos estados em que foi contatada a infração para as infrações aos §§ 2º e 3º do art. 57;
+o fator tempo das infrações aos §§ 2º e 3º do art. 57 do RGC devem ser ajustados para até 6 meses;
+aplicação do mínimo da vantagem auferida às infrações do art. 58 caput e parágrafo único do RGC; 
+ajuste no fator tempo da infração ao § 4º do art. 57 do RGC para "até 1 ano". 
+Cálculo da Sanção para usuários
+(Planilha I - Recálculo de Sanção de Multa - Brasil (15905388)
+Planilha V - Recálculo de Sanção de Multa - art. 58, par. único, do RGC - Usuários (15905526))
+Dispositivo infringido
+ | Conclusão da análise
+ | Tipo de infração
+ | Usuários atingidos
+ | Usuários totais
+ | Fator de gravidade
+ | Dano
+ | Tempo
+ | Art. 19, II
+ | Art. 19, III
+ | Valor da multa proposta
+ | 
+art. 57, §1º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 7
+ | 10.825.659
+ | Grave
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$3.000,00
+ | 
+art. 57, §2º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 39
+ | 8041466
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | 
+ | R$2.000,00
+ | 
+art. 57, §3º, I, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 53
+ | 10825659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 2.000,00
+ | 
+art. 57, §3º, II, Res. 632/2014
+ | 
+ | considerada
+anteriormente
+ | 
+ | 10825659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 
+ | 
+ | 
+ | 
+art. 57, §3º, III, Res. 632/2014
+ | 
+ | considerada
+anteriormente
+ | 
+ | 10825659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 
+ | 
+ | 
+ | 
+art. 57, §3º, IV, Res. 632/2014
+ | 
+ | considerada
+anteriormente
+ | 
+ | 10825659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 
+ | 
+ | 
+ | 
+art. 57, §4º, Res. 632/2014
+ | Infração caracterizada
+ | Sistêmica
+ | n/a
+ | n/a
+ | Grave
+ | 3
+ | Até 1 ano
+ | 3%
+ | 10%
+ | R$ 1.680.876,62
+ | 
+art. 58, caput, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 44
+ | 10.825.659
+ | Grave
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$ 5.508,69
+ | 
+art. 58, § único, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 25
+ | 10.825.659
+ | Grave
+ | 4
+ | Até 6 meses
+ | 3%
+ | 
+ | R$4.250,25
+ | 
+art. 15, §3º, Dec. 6.523/2008
+ | Infração caracterizada
+ | Pontual
+ | 13
+ | 10.825.659
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | 
+ | advertência
+ | 
+Cálculo da Sanção para lojas
+Dispositivo infringido
+ | Conclusão da análise
+ | Tipo de infração
+ | Usuários atingidos
+ | Usuários totais
+ | Fator de gravidade
+ | Dano
+ | Tempo
+ | Anteed.
+Art. 19, II
+ | Valor da multa proposta
+ | 
+art. 57, §2º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 31
+ | 1.414
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | R$ 64.901,06
+ | 
+art. 57, §3º, Res. 632/2014
+ | Infração caracterizada
+ | Pontual
+ | 33
+ | 1.044
+ | Médio
+ | 2
+ | Até 6 meses
+ | 3%
+ | R$ 60.374,74
+ | 
+art. 57, §4º, Res. 632/2014
+ | Infração caracterizada
+ | Absorvida pela Sistêmica
+ | 
+ | 
+ | 
+ | 
+ | 
+ | | 
+ | 
+Assim, a sanção aplicada à Claro S.A., CNPJ nº 40.432.544/0001-47, prestadora do Serviço Telefônico Fixo Comutado (STFC), deve ser alterada de R$ 1.331.694,50, para advertência cumulada com multa no valor de R$ 1.822.911,36, pelo descumprimento aos arts. 57, §§1º; 2º; 3º, I; II; II; 4º; 58, caput e parágrafo único, do RGC e ao art. 15, §3º, do RSAC.
+IV- Aderência aos Objetivos do Decreto nº 11.738, de 18 de outubro de 2023
+Em 19 de outubro de 2023, foi editado o Decreto Presidencial nº 11.738, cujo escopo é a institucionalização do "Programa de Fortalecimento da Capacidade Institucional para Gestão em Regulação - PRO-REG, com a finalidade de apoiar a implementação de boas práticas regulatórias e de aprimorar a coordenação do processo regulatório na administração pública federal direta, autárquica e fundacional" (art. 1º, com grifos acrescidos).
+É importante anotar que ele estabelece uma série de objetivos, os quais já comportam densidade normativa suficiente para orientar a atuação dos diversos entes que compõem a administração pública federal, incluindo a Anatel.
+Dentre esses objetivos, elencam-se os seguintes (art. 3º):
+Art. 3º O PRO-REG contemplará a formulação e a adoção de medidas que objetivem:
+I - fortalecer, simplificar e racionalizar o sistema regulatório;
+II - fortalecer a capacidade de formulação e análise de políticas públicas no processo regulatório;
+III - disseminar boas práticas regulatórias nacionais e internacionais aos órgãos e às entidades da administração pública federal direta, autárquica e fundacional;
+IV - aprimorar a coordenação e o alinhamento estratégico entre as políticas setoriais e o processo regulatório;
+V - contribuir para o desenvolvimento e fortalecimento das capacidades regulatórias dos órgãos e das entidades da administração pública federal direta, autárquica e fundacional;
+VI - desenvolver e aperfeiçoar mecanismos de controle social e de transparência no âmbito do processo regulatório;
+VII - promover o fortalecimento da autonomia, transparência e eficiência das agências reguladoras; e
+VIII - apoiar tecnicamente os órgãos e as entidades da administração pública federal direta, autárquica e fundacional na implementação de medidas de boas práticas regulatórias.
+A fundamentação apresentada está em consonância com esses objetivos, especialmente o descrito no inciso II mencionado acima. A aplicação de reprimenda à recorrente reforça os objetivos das políticas públicas da Anatel, promovendo a qualidade dos serviços de telecomunicações. Além disso, contribui para a confiabilidade esperada na correção de condutas indesejadas pelas prestadoras.
+Expõe-se, ainda, que, no âmbito do PRO-REG, publicou-se o Decreto nº 12.150, de 20 de agosto de 2024, que instituiu a Estratégia Nacional de Melhoria Regulatória - Estratégia Regula Melhor. Tal estratégia tem a finalidade estabelecer e difundir boas práticas regulatórias, com foco no cidadão, de modo a promover a evolução contínua do processo regulatório, aprimorar o ambiente de negócios e assegurar os interesses da sociedade. Tem como objetivo geral e objetivos específicos os seguintes:
+Art. 4º O objetivo geral da Estratégia Regula Melhor é aprimorar a qualidade regulatória, observada a necessidade de reduzir assimetrias na adoção de boas práticas entre agentes reguladores.
+Art. 5º São objetivos específicos da Estratégia Regula Melhor:
+I - comunicar, sensibilizar e promover o engajamento dos diversos atores envolvidos na atividade regulatória, com vistas à adoção consistente, ampla e efetiva de boas práticas;
+II - estimular a criação, o compartilhamento e o uso do conhecimento;
+III - incentivar a cooperação entre os reguladores das esferas federativas e outros atores relevantes no processo regulatório em âmbito local, nacional e internacional;
+IV - desenvolver capacidades institucionais necessárias às atividades de regulação;
+V - promover a revisão periódica do estoque regulatório, a simplificação da regulação e a adoção de medidas regulatórias para reduzir a burocracia e os custos regulatórios e para incentivar a inovação;
+VI - ampliar a transparência e a participação social efetiva, inclusiva e contínua; e
+VII - articular-se com os órgãos e as entidades da administração pública federal direta, autárquica e fundacional, com vistas a promover a coerência regulatória e a concorrência nos mercados e apoiar as decisões com base em evidências.
+O Regula Melhor estabelece a necessidade de promover uma regulação eficiente, que minimize os custos regulatórios para os agentes econômicos e a sociedade, ao mesmo tempo que simplifica o processo regulatório.
+Recentemente, o Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC) firmou um memorando de entendimento, de caráter não vinculante, com o Escritório de Informações e Assuntos Regulatórios dos Estados Unidos, buscando aprimorar as regulamentações por meio da troca de conhecimentos.
+Esse acordo é parte da Estratégia Nacional de Boas Práticas Regulatórias e inclui a criação de recomendações técnicas e a realização de projetos-piloto em ambientes controlados. Além disso, almeja fortalecer o entendimento dos sistemas regulatórios de ambos os países, promover o comércio e o investimento, e adotar práticas regulatórias eficientes e inovadoras.
+O item 1.5 do acordo em questão preconiza que as boas práticas regulatórias, aplicáveis durante a atividade normativa, devem:
+i. basear-se em processos de tomada de decisão baseados em evidências;
+ii. servir a objetivos de política claramente identificados e sejam eficazes em alcançar esses objetivos;
+iii. considerar os efeitos distributivos dos regulamentos na sociedade, incluindo efeitos econômicos, ambientais e sociais;
+iv. minimizar custos e distorções de mercado;
+v. proporcionar benefícios que justifiquem seus custos;
+vi. incentivar abordagens regulatórias que evitem encargos e restrições desnecessárias à inovação e competição no mercado;
+vii. ser claros, simples e práticos para os usuários;
+viii. não criar inconsistências com regulamentos e políticas existentes do governo federal de cada Participante;
+ix. ser compatíveis, quando apropriado, com princípios de concorrência, comércio e investimento nacionais e internacionais;
+x. ser consistentes com obrigações internacionais;
+xi. promover aspectos relacionados à transparência e participação de entidades reguladas e usuários no processo regulatório;
+xii. incentivar a previsibilidade no processo regulatório para empresas e investidores; e
+xiii. incentivar a adoção de tecnologias emergentes e a digitalização dos processos regulatórios, facilitando assim a adaptação às mudanças tecnológicas e promovendo maior eficiência e agilidade nas interações entre reguladores e partes reguladas.
+A fundamentação apresentada encontra-se alinhada aos objetivos estabelecidos, em especial àqueles dispostos no art. 5º, inciso VII, do Decreto nº 12.150/2024, bem como nos itens 1.5, i, ii e xii, do memorando supracitado. O processo pauta-se em evidências de descumprimento, respeitando o devido processo legal e, ao analisar a adequação da sanção de multa, busca assegurar que a decisão seja eficaz para alcançar os objetivos de aprimoramento da qualidade dos serviços prestados.
+Esse alinhamento reforça e legitima a capacidade regulatória da Anatel para promover intervenções no mercado e, concomitantemente, fortalece a confiança na efetividade das medidas adotadas para a correção de condutas indesejadas praticadas pelas prestadoras.
+V - As Boas Práticas Regulatórias Recomendadas pelo Programa de Aprimoramento da Qualidade da Regulação Brasileira
+O Programa de Aprimoramento da Qualidade da Regulação Brasileira (QualiREG) é uma iniciativa da Controladoria Geral da União, realizada com o apoio do Programa das Nações Unidas para o Desenvolvimento(PNUD) e do Escritório das Nações Unidas de Serviços para Projetos (UNOPS), para disseminar uma cultura de mensuração sistemática da qualidade regulatória no Brasil. O QualiREG procura compreender as dificuldades enfrentadas pelas agências e outros entes que atuam nessa área e promover ações para superá-las.
+A CGU, no livro digital “Boas Práticas Regulatórias do QualiREG– Programa de Aprimoramento da Qualidade da Regulação Brasileira”, elaborado em parceria com o UNOPS e o PNUD, reúne experiências e pesquisas aplicadas sobre a construção da capacidade institucional dessas entidades.
+A referida obra explora debates sobre os desafios e oportunidades dentro dessa temática. No capítulo 2, que trata da Autonomia Decisória, a autora Patrícia Pessoa Valente (2024, p. 49) destaca, já na introdução, que:
+Nesse debate, um dos principais, senão o principal requisito que caracteriza as agências reguladoras, é a autonomia decisória dessas entidades da administração pública indireta. Não se discute que as agências, para que possam atingir seus objetivos, devam tomar suas decisões conforme suas próprias motivações técnicas. Isso significa, na prática, garantir que essas estruturas administrativas decidam conforme seu melhor julgamento técnico, com respaldo em procedimentos que as legitimam, e em última instância sobre as matérias que a lei lhes reserva. Se na criação das agências reguladoras esses requisitos não eram familiares, passadas mais de 2 décadas, já são aceitos e espera-se que sejam aplicados na prática em diversos setores da economia brasileira.
+(...)
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para atos que contrariem obrigações de interesse público devidamente salvaguardadas pela Anatel.
+VI - As Boas Práticas Regulatórias Recomendadas pela Organização para Cooperação e Desenvolvimento Econômico (OCDE)
+Nos últimos anos, o Brasil tem aderido, ainda que não membro, a diversas recomendações da OCDE. Essa organização mantém vários grupos de trabalho que discutem temas como governança das instituições estatais, transparência, relacionamento com o cidadão, com o mercado e com as entidades da sociedade civil, regulação (incluindo a transição para a economia digital), entre outros. Dessa forma, tais temas ganham um tom estratégico que vai além do ordenamento constitucional brasileiro. Assim, busca-se fornecer não apenas soluções que melhorem o bem-estar das pessoas, mas que, igualmente, auxiliem as instituições a chegarem a soluções de forma eficiente.
+A OCDE oferece orientação para auxiliar os formuladores de políticas na avaliação e melhoria da estrutura legal, regulatória e institucional voltada para a governança corporativa. O objetivo é apoiar a confiança e a integridade do mercado, promover a eficiência econômica, fomentar o crescimento sustentável e assegurar a estabilidade financeira. Os princípios de governança estabelecidos são:
+I. Assegurar as bases para uma estrutura efetiva de governança corporativa;
+II. Os direitos e tratamento equitativo dos acionistas e as principais funções de propriedade;
+III. Investidores institucionais, bolsas de valores e outros intermediários;
+IV. Divulgação e transparência;
+V. As responsabilidades do conselho;
+VI. Sustentabilidade e resiliência.
+É importante destacar, ademais, que a OCDE tem como objetivo assegurar os fundamentos para uma estrutura de governança corporativa eficiente:
+Estes órgãos devem poder exercer as suas funções sem conflitos de interesses e as suas decisões devem estar sujeitas a revisão judicial ou administrativa.
+No presente caso, a aplicação de multa garante segurança jurídica e previsibilidade para ações que contrariem obrigações de interesse público, devidamente protegidas pela Anatel. A imposição da sanção tem como objetivo assegurar o cumprimento dos padrões mínimos de qualidade de atendimento presencial ao usuário exigidos pela Agência.
+A avaliação criteriosa da multa aplicada alinha-se com essa prática, reafirmando o compromisso da Anatel com a accountability de sua atuação.
+VII - A Relação com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da Organização das Nações Unidas (ONU)
+A Agenda 2030 constitui-se em compromisso assumido por todos os países que fizeram parte da Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em 2015, a qual contempla os 193 Estados membros da ONU, incluindo o Brasil. Conforme disposto no sítio eletrônico da Organização das Nações Unidas no Brasil (https://brasil.un.org/pt-br/sdgs):
+Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.
+O Brasil é um dos países signatários da referida Agenda, tendo, dessa forma, caráter cogente para o Poder Executivo brasileiro. Isso porque, em 2023, editou-se o Decreto nº 11.704, que instituiu a Comissão Nacional para os Objetivos de Desenvolvimento Sustentável, com a finalidade de contribuir para a internalização da Agenda 2030 no País (art. 1º, inc. I), competindo-lhe, dentre outros pontos, acompanhar e monitorar o alcance dos ODS (art. 2º, inc. II) e identificar, sistematizar e divulgar boas práticas e iniciativas que colaborem para o alcance dos ODS (art. 2º, inc. IV). Tem-se, portanto, que a República firmou seu compromisso em buscar a implementação dos objetivos e indicadores da referida Agenda.
+São 17 (dezessete) os Objetivos de Desenvolvimento Sustentável (ODS) que compõem a Agenda 2030, conforme figura abaixo:
+Fonte: https://brasil.un.org/pt-br/sdgs
+Pontua-se que a Agenda 2030 não faz incursões sobre as políticas públicas concretas de implementação desses objetivos e indicadores, cabendo essa atribuição às instituições governamentais dos países signatários. Assim, destaca-se que a edição do mencionado Decreto nº 11.704/2023 constitui um ato de reafirmação do compromisso brasileiro com a implementação dos ODS, sendo, novamente, de observância obrigatória pelos órgãos e entidades do Poder Executivo Federal, incluindo a Anatel.
+Esta Agência, enquanto responsável pela concepção, implementação e monitoramento de políticas públicas relacionadas à ampliação da conectividade no setor de telecomunicações, dispõe de margem de discricionariedade para avaliar quais são as opções concretas de políticas públicas que estão mais alinhadas com a consecução dos ODS.
+O acesso da população ao serviço de telecomunicações com qualidade auxilia na concretização do Objetivo de Desenvolvimento Sustentável nº 1, que busca erradicar a pobreza até 2030. Mais especificamente, contribuirá para o alcance da Meta 1.4, que visa "garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como acesso a serviços básicos, novas tecnologias apropriadas e serviços financeiros".
+Os serviços de telecomunicações desempenham papel fundamental na promoção da educação por meios digitais, ao facilitar o acesso à informação e ao conhecimento, em consonância com o Objetivo de Desenvolvimento Sustentável nº 4, que visa assegurar uma educação de qualidade. Ao promover a melhoria contínua da qualidade dos serviços de telecomunicações, por meio de procedimentos administrativos voltados à proteção dos direitos dos consumidores, a Anatel contribui para proporcionar a crianças, jovens e adultos a conectividade indispensável para uma educação inclusiva e eficaz.
+Essa iniciativa está diretamente alinhada à Meta 4.4, que estabelece, “até 2030, aumentar substancialmente o número de jovens e adultos com habilidades relevantes, incluindo competências técnicas e profissionais, para emprego, trabalho decente e empreendedorismo”.
+Ao proporcionar novas oportunidades socioeconômicas por meio da infraestrutura de telecomunicações, a decisão contribui para o desenvolvimento econômico sustentável do país, tendo como referência o Objetivo nº 8, especialmente a Meta 8.1 ("Manter o crescimento econômico per capita em conformidade com as condições nacionais e, em particular, pelo menos 7% de crescimento econômico anual nos países menos desenvolvidos). Nesse contexto, empresas locais poderiam expandir seus mercados por meio do trabalho e realização de reuniões remotas, inserindo seus produtos e serviços no meio digital, podendo alcançar consumidores e fornecedores até mesmo globalmente. O acesso aos serviços de telecomunicações pode proporcionar não só a comunicação da população, mas também o acesso ao conhecimento, a treinamentos, mas, igualmente, à venda dos produtos produzidos na região, promovendo o desenvolvimento socioeconômico.
+Por sua vez, observa-se que decisão a ser adotada tem fundamento no Objetivo de Desenvolvimento Sustentável nº 9, que tem por objeto "construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação" e está atrelada principalmente à Meta 9.1 que visa "desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos". Isso porque a decisão garantir a qualidade e a resiliência dos serviços de telecomunicações ofertados.
+O acesso aos serviços de telecomunicações certamente tem como referência a redução das desigualdades (ODS 10), uma vez que visa melhorar o acesso a serviços essenciais, como saúde e educação, e promover a inclusão digital. Esta última tem o potencial de permitir que a população local receba mais informações e tenha oportunidades de acessar mais produtos e serviços oferecidos. A proposta, assim, encontra-se em consonância com a Meta 10.2 dos ODS, que é "até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra", pois objetiva assegurar a inclusão de todos os consumidores sem discriminação no atendimento presencial. Além disso, auxilia no cumprimento da Meta 10.3, que é "garantir a igualdade de oportunidades e reduzir as desigualdades de resultados, inclusive por meio da eliminação de leis, políticas e práticas discriminatórias e da promoção de legislação, políticas e ações adequadas a este respeito", em que cumprimento de normas de acessibilidade é um elemento chave para essa meta.
+Compreende-se que essa iniciativa contribui para o cumprimento do Objetivo 16 da Agenda 2030, que busca promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis. A educação das empresas para que respeitem integralmente os direitos básicos dos consumidores e prestem serviços adequados está em consonância com a meta 16.3, pois promove o Estado de Direito em nível nacional, garantindo igualdade de tratamento para todas as partes interessadas no tema.
+Ademais, há uma relação direta com a meta 16.7, já que a tomada de decisão pelo ente regulador, por meio do sancionamento, assegura uma atuação responsiva, inclusiva e participativa da sociedade como um todo.
+Os Objetivos de Desenvolvimento Sustentável são interconectados e desafiadores, tendo, como foco principal, o desenvolvimento humano no Brasil e no Mundo. As principais dimensões desse projeto têm natureza social, ambiental, econômica e institucional. O desenvolvimento global somente é concebível por um caminho sustentável, com medidas verdadeiramente transformadoras. Justamente por isso, foram definidos 17 objetivos e 169 metas globais interconectadas, a serem atingidos até 2030.
+Nesse ponto, pela relevância do tema, destaca-se o Objetivo 1 da Agenda 2030, que é o de acabar com a pobreza em todas as suas formas, em todos os lugares. Para o caso analisado, destacam-se as seguintes metas:
+Meta 1.3 - Implementar, em nível nacional, medidas e sistemas de proteção social adequados, para todos, incluindo pisos, e até 2030 atingir a cobertura substancial dos pobres e vulneráveis;
+Meta 1.4 - Até 2030, garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como o acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias apropriadas e serviços financeiros, incluindo microfinanças;
+Meta 1.a - Garantir uma mobilização significativa de recursos a partir de uma variedade de fontes, inclusive por meio do reforço da cooperação para o desenvolvimento, para proporcionar meios adequados e previsíveis para que os países em desenvolvimento, em particular os países menos desenvolvidos, implementem programas e políticas para acabar com a pobreza em todas as suas dimensões; e
+Meta 1.b - Criar marcos políticos sólidos em níveis nacional, regional e internacional, com base em estratégias de desenvolvimento a favor dos pobres e sensíveis a gênero, para apoiar investimentos acelerados nas ações de erradicação da pobreza.
+O Brasil demonstra comprometimento com o cumprimento dessas metas, destacando-se o estudo realizado pelo IPEA sobre a adequação dos Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 à realidade nacional. Tal estudo constitui relevante instrumento de apoio técnico e institucional às ações governamentais, subsidiando a formulação e a reformulação de políticas públicas e programas voltados ao desenvolvimento sustentável.
+Com essa iniciativa, o Brasil consolida sua posição ao dispor de um instrumento orientador para a territorialização dos ODS, mantendo-se fiel aos fundamentos da proposta original.
+CONCLUSÃO
+Voto por:
+conhecer do recurso administrativo e, no mérito, negar-lhe provimento; e
+rever de ofício a sanção aplicada à Claro S.A., inscrita no CNPJ nº 40.432.544/0001-47, prestadora do Serviço Telefônico Fixo Comutado (STFC), alterando-a de multa no valor de R$ 1.331.694,50, para advertência cumulada com multa no valor de R$ 1.822.911,36 em razão do descumprimento dos arts. 57, §§1º; 2º; 3º, I; II; II; 4º; 58, caput e parágrafo único, do RGC e ao art. 15, §3º, do RSAC, em função de ajustes:
+a infração ao § 1º do art. 57, e 58, caput e parágrafo único do RGC, devem ser consideradas "grave";
+a base total utilizada para as infrações ao § 3º do art. 57, do RGC, quando relacionada aos usuários, deve ser utilizado a base de usuarios de junho de 2017 (SEI nº 12159262);
+a base total utilizada para as infrações ao § 2º do art. 57, do RGC, quando relacionada aos usuários, deve ser utilizado a base de usuarios de junho de 2017 (SEI nº 12159262) proporcionalizada aos estados em que foram constatadas a infração;
+para as infrações aos §§ 2º e 3º do art. 57, em lojas, em razão de o universo de lojas fiscalizado se restringir a alguns Estados da Federação, aplicar a proporcionalização aos estados em que foi constatada a infração;
+o fator tempo das infrações aos §§ 2º e 3º do art. 57 do RGC devem ser ajustados para "até 6 meses";
+aplicação do mínimo da vantagem auferida como valor mínimo da sanção de multa às infrações do art. 58 caput e parágrafo único do RGC;
+o fator tempo da infração ao § 4º do art. 57 do RGC deve ser "até 1 ano".
+ | Documento assinado eletronicamente por Alexandre Reis Siqueira Freire, Conselheiro Relator, em 08/10/2026, às 18:24, conforme horário oficial de Brasília, com fundamento no art. 4º, inciso I, da Lei nº 14.063/2020 c/c art. 4º, inciso I e § 3º, do Decreto nº 10.543/2020.
+ | 
+ | A autenticidade deste documento pode ser conferida em https://www.anatel.gov.br/autenticidade, informando o código verificador 16377916 e o código CRC CBADE585.
+ | 
+Referência: Processo nº 53500.005231/2019-53 | 
+SEI nº 16377916 |

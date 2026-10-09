@@ -48513,24 +48513,24 @@
   [
    "ANATEL",
    "(a) SEI Análise (voto escrito do relator) (série 7) 01/01–08/10/2026: contador impresso pela página × linhas lidas nas 13 páginas da listagem",
-   241,
-   241,
+   246,
+   246,
    "OK",
    "contador da página"
   ],
   [
    "ANATEL",
    "(a) SEI Análise (voto escrito do relator): listados × baixados (manifesto, sha256)",
-   241,
-   241,
+   246,
+   246,
    "OK",
    ""
   ],
   [
    "ANATEL",
    "(a) SEI Análise (voto escrito do relator): baixados × lidos/parseados",
-   241,
-   241,
+   246,
+   246,
    "OK",
    "indexados por SEI nº para resolver voto_doc"
   ],
@@ -48640,7 +48640,7 @@
    [],
    [],
    "OK",
-   "36 números distintos citados fora dos próprios acórdãos; números citados e não lidos: []"
+   "38 números distintos citados fora dos próprios acórdãos; números citados e não lidos: []"
   ],
   [
    "ANATEL",
@@ -48686,9 +48686,9 @@
    "ANATEL",
    "(d) Itens deliberados cujo relator tem linha \"RELATOR (voto proferido)\" (exceção legítima: relator = ex-Conselheiro que deixou o cargo, sem linha)",
    0,
-   1,
-   "EXCEÇÃO",
-   "9 itens com relator ex-Conselheiro Vicente Bandeira de Aquino Neto (mandato encerrado; item de diligência/prorrogação decidido sem ele): [('RCD950', 'Item V1 (RCD950)'), ('RCD953', 'Item V1 (RCD953)'), ('RCD953', 'Item V3 (RCD953)'), ('RCD953', 'Item V4 (RCD953)'), ('RCD953', 'Item V7 (RCD953)'), ('RCD953', 'Item V8 (RCD953)'), ('RCD956', 'Item V4 (RCD956)'), ('RCD956', 'Item V5 (RCD956)')]"
+   0,
+   "OK",
+   "9 itens com relator ex-Conselheiro (8 Vicente Bandeira de Aquino Neto + 1 Cristiana Quinalia no RCD953 V1; mandato encerrado; item de diligência/prorrogação decidido sem ele): [('RCD950', 'Item V1 (RCD950)'), ('RCD953', 'Item V1 (RCD953)'), ('RCD953', 'Item V3 (RCD953)'), ('RCD953', 'Item V4 (RCD953)'), ('RCD953', 'Item V7 (RCD953)'), ('RCD953', 'Item V8 (RCD953)'), ('RCD956', 'Item V4 (RCD956)'), ('RCD956', 'Item V5 (RCD956)')]"
   ],
   [
    "ANATEL",
@@ -49137,7 +49137,7 @@
   [
    "ANATEL",
    "Voto escrito publicado",
-   "241 Análises + 116 Votos",
+   "246 Análises + 116 Votos",
    "Análises dos gabinetes (OP/NP/AF/EH/CL/VA) e Votos (Presidência e gabinetes) na série pública; resolvidos em voto_doc (URL) quando citados"
   ],
   [
@@ -49262,7 +49262,7 @@
    "ANATEL",
    "RCD958",
    "2026-10-08",
-   "Realizada hoje (08/10/2026, 15h), ata e acórdãos ainda não publicados",
+   "Realizada, ata não publicada",
    "pauta com 56 itens pautados (Pauta de Reunião - RCD 958 - 08/10/2026)",
    "A ata só é publicada depois de aprovada na reunião seguinte (ata 952 → 08/05; 955 → 07/08; 956 → 04/09: 1 a 2 meses depois)",
    "Rodar scripts/anatel_sei.cjs + anatel_baixar.py + anatel_parse.py quando a ata sair na série Ata de Reunião",
@@ -49391,8 +49391,40 @@
    "Acórdãos 82 e 173",
    "2 números",
    "BLOQUEADO PELA FONTE",
-   "Ausentes da série Acórdão do SEI",
+   "Ausentes da série Acórdão do SEI (reconsultado ao vivo em 09/10/2026: série 8 de 01/01/2025 a 31/12/2026 lista \"Acórdão 82\" e \"Acórdão 173\" apenas com data de 2025 — nº 82 de 31/03/2025 e nº 173 de 24/06/2025 —, nenhum de 2026)",
    "Ver pendências"
+  ],
+  [
+   "ANATEL",
+   "Reconsulta ao vivo 09/10/2026 (SEI Publicações, Chromium)",
+   "séries 8/229/432/187/188/94/7 relistadas até 09/10/2026",
+   "MEDIDO",
+   "Nada novo desde 08/10: Acórdão 262 linhas (= 261 + 1 retificação), Ata de Reunião 8 (última 04/09), Pauta de Reunião 13 (última 01/10 = 958ª), Ata de Circuito 241, Pauta de Circuito 244 (últimas 05/10), Voto 116; só a série Análise cresceu (241 → 246 documentos, todos indexados para voto_doc, sem alterar votos). Séries Ata/Pauta de Reunião do Conselho Diretor (236/264) retornam 0 em 2026. Sem pauta/ata da 959ª em diante nem circuito além do 246",
+   "Reexecutar scripts/anatel_rodar.sh após a ata da 957ª/E32/958ª (sai 1–2 meses depois)"
+  ],
+  [
+   "ANATEL",
+   "Voto individual nos processos SEI (Voto em Circuito Deliberativo / Voto de Membro de Comissão)",
+   "não obtido",
+   "BLOQUEADO PELA FONTE (CAPTCHA)",
+   "A Pesquisa Pública de processos (sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php) exige Cloudflare Turnstile (div.cf-turnstile no formulário), verificado em 09/10/2026; o captcha não foi contornado. A série Voto (94) de Publicações Eletrônicas só traz o voto do relator/Presidência (116 em 2026), já usado como RELATOR; nenhum voto de outro conselheiro. Os 949 votos inferidos continuam INFERIDOS",
+   "Extrato nominal à SCD ou acesso autenticado/captcha resolvido por pessoa"
+  ],
+  [
+   "ANATEL",
+   "9 itens com relator ex-conselheiro (8 Vicente Bandeira de Aquino Neto + 1 Cristiana Quinalia, RCD953 V1) em conversão em diligência — o que a fonte diz",
+   "RCD950 V1; RCD953 V1, V3, V4, V7, V8; RCD956 V4, V5, V26",
+   "REGISTRADO COMO A FONTE DIZ (sem linha de voto do ex-conselheiro)",
+   "As atas listam o relator original (Vicente ou Cristiana, mandato encerrado) e dizem \"O Conselho aprovou, por unanimidade, a conversão da deliberação em diligência ... nos termos do Voto nº X\" de conselheiro em exercício: 8/2025/AF (Alexandre Freire), 10/2026/AF, 11/2026/AF, 8/2026/AF, 12/2026/AF, 19/2026/AF (idem), 4/2026/EH, 8/2026/EH, 10/2026/EH (Edson Holanda). A ata não registra voto desse relator nem declara outro conselheiro relator; por isso não foi criada linha RELATOR para ele(a) nem trocado o rótulo dos autores (permanecem ACOMPANHOU por unanimidade, voto_doc aponta o voto)",
+   "Nada a fazer; só mudaria com ata que nomeie novo relator"
+  ],
+  [
+   "ANATEL",
+   "Circuito Deliberativo 144/2026 — relator inválido na própria ata",
+   "1 circuito (processo 53500.007663/2026-28)",
+   "REGISTRADO COMO A FONTE DIZ",
+   "No campo \"Conselheiro(a) Relator(a):\" a ata traz \"Matéria Administrativa\" (que é a unidade, não uma pessoa); \"Presidente: Carlos Manuel Baigorri\"; \"Voto do(a) Conselheiro(a) Relator(a): Voto nº 65/2026/PR\"; \"Acompanha o voto do(a) Relator(a): 3\". Relator = Carlos Manuel Baigorri é INFERÊNCIA pelo Voto nº 65/2026/PR (unidade PR = Presidência), não campo da fonte",
+   "Confirmar com a SCD se desejar retificação da ata"
   ],
   [
    "ANATEL",
@@ -49429,7 +49461,7 @@
   [
    "ANATEL",
    "Limites que permanecem em votos",
-   "a) 163 de 164 circuitos sem acórdão têm modo \"unanimidade/maioria\" derivado dos votos nominais da própria ata (Resumo dos Votos), não de frase \"por unanimidade\"; b) conversão em diligência de item em sede de vista: relator ex-conselheiro sem linha; c) CD215: Carlos \"acompanha parcialmente\" – o rótulo ACOMPANHOU (parcialmente) é leitura do texto, a fonte não diz \"por maioria\" nem o placar",
+   "a) 163 de 164 circuitos sem acórdão têm modo \"unanimidade/maioria\" derivado dos votos nominais da própria ata (Resumo dos Votos), não de frase \"por unanimidade\"; b) conversão em diligência: relator ex-conselheiro sem linha (9 itens, ver linha própria); c) CD215: Carlos \"acompanha parcialmente\" – o rótulo ACOMPANHOU (parcialmente) é leitura do texto, a fonte não diz \"por maioria\" nem o placar",
    "LIMITE DA FONTE",
    "A fonte não registra o placar nem o modo nesses casos; nada foi inventado (modo de CD215 = \"não unânime ... NÃO declarado\")",
    "Extrato nominal à SCD"

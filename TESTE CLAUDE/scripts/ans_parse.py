@@ -7,9 +7,12 @@ Regras (decisoes de desenho):
     (ITEM DIPRO -> diretor da DIPRO na data), tambem 'inferido' (rotulo RELATOR). Ausente de extrato com nome = AUSENTE 'nominal'.
   * Item sem resultado publicado (pauta de reuniao sem pagina de deliberacoes/extrato) NAO gera voto: vai em pendencias.
   * 'Blocao' (COREC/SECEX) = 1 item agregado com a lista de processos da pauta (nao 1 item por processo)."""
-import sys, re, json, html, os, unicodedata, difflib
+import sys, re, json, html, os, unicodedata, difflib, datetime
 from collections import Counter, defaultdict
 man_f, inv_f, out_f = sys.argv[1:4]
+# data de referencia DINAMICA (override para reproduzir: IRIS_HOJE=AAAA-MM-DD)
+HOJE = os.environ.get('IRIS_HOJE') or datetime.date.today().isoformat()
+def br(iso): return f'{iso[8:10]}/{iso[5:7]}/{iso[:4]}'
 man = json.load(open(man_f)); inv = json.load(open(inv_f))
 G = 'https://www.gov.br/ans/pt-br'
 URL_PASTA = G + '/acesso-a-informacao/transparencia-e-prestacao-de-contas/reunioes-da-diretoria-da-ans'
@@ -430,9 +433,10 @@ for ref in todas:
     if base_pres: obs.append('presença ' + base_pres)
     if ex and ex['ausentes']: obs.append('ausência: ' + '; '.join(f'{a[0]} ({a[1]})' for a in ex['ausentes']))
     if not presentes: obs.append('presença NÃO publicada (sem página de deliberações nem extrato acessível): sem votos')
-    futura = bool(d and d > '2026-10-08')
+    # futura = ainda nao ocorreu OU e hoje e nao ha pagina/extrato com resultado
+    futura = bool(d and (d > HOJE or (d == HOJE and not pg and not ex)))
     # situacao
-    if futura: sit = 'Futura (pauta publicada; reunião em 09/10/2026)'
+    if futura: sit = f'Futura (pauta publicada; reunião em {br(d)})'
     elif key in pautas or pg or ex: sit = 'Realizada (fonte própria)'
     else: sit = 'Realizada (comprovada só por ata citada na pauta seguinte)'
     if ref in EXT and d and ref not in pautas and not pg and not ex and ref in ('X03', 'X04', 'X08'): sit = 'Realizada (comprovada só por resumo de busca de página restrita)'
@@ -511,7 +515,7 @@ for ref in todas:
         if pg and not pr and not ee and key in pautas: resultado = 'ITEM DA PAUTA SEM LINHA NA PÁGINA DE DELIBERAÇÕES (não consta como decidido; possível item retirado/reservado)'; votar = False
         area = it['area']
         rel = diretor_area(area, d) if (area and it['tipo'] == 'Deliberação') else None
-        if futura: resultado = 'REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)'; votar = False
+        if futura: resultado = f'REUNIÃO AINDA NÃO REALIZADA (pauta publicada para {br(d)})'; votar = False
         if not votar: rel = ''
         x = dict(reuniao=mid(ref), data=d, processo=proc, deliberacao=(f"Item {n}: " if n < 1000 else "Item extrapauta (só no extrato): ") + titulo_d[:200], item_n=str(n) if n < 1000 else f'E{n-1000}', relator=rel or '', interessado='ANS — Diretoria Colegiada' + (f' ({area})' if area else ''),
                  assunto=titulo_d[:500], resultado=resultado, voto_doc='', decisao_texto=decisao, tipo_item=it['tipo'], secao=('Extrapauta' if it.get('extrapauta') else 'Pauta') + (f' — {area}' if area else ''),
@@ -531,7 +535,7 @@ for ref in todas:
         n_pagina = int(mp[1]) if mp else None
         n_ret = {'um': 1, 'uma': 1, 'dois': 2, 'duas': 2, 'tres': 3, 'três': 3}.get((mret[1] if mret else '').lower(), 0) if mret else 0
         todos = 'todos aprovados' in txt_b or 'os demais todos aprovados' in txt_b
-        res_b = 'REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)' if futura else 'RESULTADO NÃO PUBLICADO (só a pauta está acessível)'; votar_b = False; modo_b = 'sem resultado publicado'; org = [pautas[key]['url']] if key in pautas else []
+        res_b = f'REUNIÃO AINDA NÃO REALIZADA (pauta publicada para {br(d)})' if futura else 'RESULTADO NÃO PUBLICADO (só a pauta está acessível)'; votar_b = False; modo_b = 'sem resultado publicado'; org = [pautas[key]['url']] if key in pautas else []
         if blocao:
             res_b = f"Foram pautados {n_pagina} processos; " + ('todos aprovados' if todos and not n_ret else f'{n_ret} retirado(s) de pauta e os demais aprovados'); votar_b = True; modo_b = 'aprovado sem divergência registrada'; org.append(pg_por_reuniao[key]['url'])
         x = dict(reuniao=mid(ref), data=d, processo=f'BLOCAO-{mid(ref)}', deliberacao=f'Blocão (COREC/SECEX): {npa or n_pagina} processos', item_n='B', relator='', interessado='ANS — Diretoria Colegiada (COREC/SECEX)',
@@ -571,7 +575,7 @@ for ref in todas:
                 else f'{G}/assuntos/noticias/sobre-ans/deliberacoes-da-{ref}a-reuniao-da-diretoria-colegiada')
     api_r = API_REUN.get(ref, {}); url_pend = (API.get('base', '') + f"&task=getDadosReuniaoAjax&id_reuniao={api_r['id']}") if api_r else URL_PASTA
     if futura:
-        pend.append(('ANS', f'{titulo(ref, d)}: resultado das deliberações', d, 'futura (reunião ainda não ocorreu)', f'pauta oficial publicada com {len(ds_ref)} itens', 'reunião marcada para 09/10/2026; hoje é 08/10/2026', 'Rodar scripts/ans_rodar.sh após a reunião (ata/página "Deliberações da 644ª")', url_pend))
+        pend.append(('ANS', f'{titulo(ref, d)}: resultado das deliberações', d, 'futura (reunião ainda não ocorreu)', f'pauta oficial publicada com {len(ds_ref)} itens', f'reunião marcada para {br(d)}; hoje é {br(HOJE)}' + (' (dia da reunião: resultado ainda não publicado)' if d == HOJE else ''), 'Rodar scripts/ans_rodar.sh após a reunião (ata/página "Deliberações da 644ª")', url_pend))
     elif pg_pend:
         pend.append(('ANS', f'Resultado/decisão dos itens da {titulo(ref, d)}', d, 'ata ainda não publicada', f'{len(pg_pend)} de {len(ds_ref)} itens (incl. blocão) só têm a pauta oficial',
                      'DICOL só publica a ata depois de aprovada na reunião seguinte (campo DE_PATH_ATA_REUNIAO ainda nulo na API oficial)', 'Rodar scripts/ans_rodar.sh quando a ata for publicada', url_pend))
@@ -581,19 +585,23 @@ for ref in todas:
 # reunioes sem nenhum documento (nem ata, nem pauta, nem pagina) -> pendencias com URL
 for ref in todas:
     r_ = next(r for r in reunioes if r['reuniao'] == mid(ref))
-    if not r_['fontes'] and r_['data'] <= '2026-10-08':
+    if not r_['fontes'] and r_['data'] <= HOJE:
+        _an = [p_['url'] for p_ in inv['paginas'] if p_['estado'] == 'OK' and ref.startswith('X') and p_['url'].endswith(f'/{int(ref[1:])}a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026')]
+        _anun = f'; anúncio oficial gov.br (sem pauta nem resultado) confirma a reunião: {_an[0]}' if _an else ''
         pend.append(('ANS', f'Reunião {r_["titulo"]}: pauta, resultado e ata', r_['data'], 'fora da lista oficial do DICOL',
-                     'reunião comprovada por ata citada em pauta/aviso posterior, mas ausente da lista oficial 2026 do DICOL (que traz só as extraordinárias 1ª a 8ª) e da varredura de IDs; nenhum documento próprio: sem itens e sem votos',
+                     'reunião comprovada por ata citada em pauta/aviso posterior' + _anun + ', mas ausente da lista oficial 2026 do DICOL (que traz só as extraordinárias 1ª a 8ª) e da varredura de IDs; nenhum documento próprio: sem itens e sem votos',
                      'o módulo DICOL ainda não cadastrou esta reunião (ou ela foi realizada em sessão não publicada)', 'Rodar scripts/ans_rodar.sh quando constar na lista; ou pedir à SECEX/CGADC', API.get('base', '') + '&task=getSelectReunioesAjax&ano=2026'))
 # ---------- pendencias estruturais da fonte (todas com URL)
-pend.append(('ANS', 'Pasta gov.br "Reuniões da Diretoria da ANS"', '2026-10-08', 'exige login (continua restrita)', 'GET devolve redirecionamento para acl_users/credentials_cookie_auth/require_login; o conteúdo útil (atas, pautas) foi obtido pelo módulo DICOL do site legado',
+pend.append(('ANS', 'Pasta gov.br "Reuniões da Diretoria da ANS"', HOJE, 'exige login (continua restrita)', 'GET devolve redirecionamento para acl_users/credentials_cookie_auth/require_login; o conteúdo útil (atas, pautas) foi obtido pelo módulo DICOL do site legado',
              'pasta restrita no portal gov.br/ans', 'Nada a fazer: o DICOL legado traz as mesmas atas; pedir publicação aberta à ANS se o legado for desligado', URL_PASTA))
-pend.append(('ANS', 'Atalho "Reuniões da Diretoria da ANS" → componentes-portal.ans.gov.br/link/listadicol', '2026-10-08', 'acessível, mas sem dados abertos', 'HTTP 303 → /index.html: aplicativo Mendix (SPA) que só carrega via JavaScript e XAS autenticado; sem HTML estático nem API pública. As atas vêm do módulo legado com_dicol (www.ans.gov.br), que a própria página legada usa',
+pend.append(('ANS', 'Atalho "Reuniões da Diretoria da ANS" → componentes-portal.ans.gov.br/link/listadicol', HOJE, 'acessível, mas sem dados abertos', 'HTTP 303 → /index.html: aplicativo Mendix (SPA) que só carrega via JavaScript e XAS autenticado; sem HTML estático nem API pública. As atas vêm do módulo legado com_dicol (www.ans.gov.br), que a própria página legada usa',
              'app Mendix exige sessão do navegador', 'Se a ANS migrar o DICOL para o Mendix, reescrever o inventário (hoje cobre o legado)', 'https://componentes-portal.ans.gov.br/link/listadicol'))
 _pptx = [p for p in inv['pdfs'] if p['estado'] == 'NAO_PDF']
-if _pptx:
-    pend.append(('ANS', f'{len(_pptx)} apresentações em PowerPoint anexas a itens (632ª e 2ª/3ª extraordinárias)', '2026-02-13', 'formato não lido (PPTX)', '; '.join(p['ref'] for p in _pptx) + ': slides de apoio da DIOPE/DIPRO; não alteram resultado nem voto',
-                 'formato .pptx fora do pipeline de PDF', 'Converter e ler se a apresentação interessar', _pptx[0]['url']))
+_pl = json.load(open('ans_pptx.json')) if os.path.exists('ans_pptx.json') else []   # gerado por scripts/ans_pptx.py (python-pptx)
+_pl_ok = {x['ref'] for x in _pl}
+if _pptx and len(_pl_ok) < len(_pptx):
+    pend.append(('ANS', f'{len(_pptx) - len(_pl_ok)} apresentações em PowerPoint anexas a itens (632ª e 2ª/3ª extraordinárias)', '2026-02-13', 'formato não lido (PPTX)', '; '.join(p['ref'] for p in _pptx if p['ref'] not in _pl_ok) + ': slides de apoio da DIOPE/DIPRO; não alteram resultado nem voto',
+                 'rodar scripts/ans_pptx.py (python-pptx) para extrair o texto', 'Rodar scripts/ans_rodar.sh', _pptx[0]['url']))
 # ---------- finalizacao
 for x in delibs:
     for k_ in ('_votar', '_modo', '_rel_prov', '_rel_mot', '_imp_txt'): x.pop(k_, None)
@@ -621,7 +629,7 @@ qual[0:0] = [
   f"a lista oficial traz 19 (632..642 + extras 1..8); a varredura de {VAR.get('ids_consultados')} IDs ({VAR.get('id_de')}..{VAR.get('id_ate')}) achou também 643/644 (fora da lista, sem ata) e os stubs 645..647 sem data; anos 2019-2025/2027 na lista: {', '.join(a + '=' + str(v['n']) for a, v in API.get('anos_consultados', {}).items())}"),
  ('ANS', 'Atas oficiais: listadas na API × baixadas (sha256) × com texto lido', _ata_api, len(_ato), 'OK' if _ata_api == len(_ato) == _lido(_ato) else 'DIVERGE', f'lidas: {_lido(_ato)}; todas com texto extraível (nenhuma é PDF imagem); 641ª–644ª e extras 9–12 sem ata publicada (ver pendências)'),
  ('ANS', 'Pautas oficiais (API): listadas × baixadas × lidas', _pau_api, len(_pau), 'OK' if _pau_api == len(_pau) == _lido(_pau) else 'DIVERGE', f'lidas: {_lido(_pau)}'),
- ('ANS', 'Anexos públicos dos itens (votos escritos): listados × baixados × lidos (PDF)', _anx_api, len(_anx), 'OK' if _lido(_anx) == len(_anx) else 'DIVERGE', f'{_anx_api - len(_anx)} anexos são PowerPoint (não lidos, ver pendências); {len(ANEXO_VOTO)} votos escritos nomeiam/identificam o diretor signatário'),
+ ('ANS', 'Anexos públicos dos itens (votos escritos): listados × baixados × lidos (PDF)', _anx_api, len(_anx), 'OK' if _lido(_anx) == len(_anx) else 'DIVERGE', f'{_anx_api - len(_anx)} anexos são PowerPoint ({len(_pl_ok)} lidos com python-pptx: {sum(x["slides"] for x in _pl)} slides; nenhum cita relator, diretor nominal ou voto); {len(ANEXO_VOTO)} votos escritos nomeiam/identificam o diretor signatário'),
  ('ANS', 'Listagem de notícias gov.br (pasta periodo-eleitoral), usada só para 641ª–644ª/extras 9–12: páginas percorridas até a página sem links novos', len(lst['paginas']), len(lst['paginas']), 'OK', f"b_start 0,30,60,90; links por página { [p['links_na_pagina'] for p in lst['paginas']] }; {lst['total_links_unicos']} notícias únicas; sem contador oficial (Plone clássico)"),
 ]
 pdf_ok = [p for p in inv['pdfs'] if p['estado'] == 'OK']; pdf_man = [m for m in man if m['formato'] == 'pdf' and m['ok']]
@@ -631,7 +639,7 @@ for r in reunioes:
     if r['fontes']: fonte_cont['com fonte própria'] += 1
     else: fonte_cont['sem fonte própria'] += 1
 _nata = len(ATAS); _sofonte = fonte_cont['sem fonte própria']
-cob.insert(0, ('ANS', 'Reuniões da Diretoria Colegiada 2026 (numeradas)', len(reunioes), f"ordinárias 632..644 (632ª 30/01 … 644ª 09/10, futura) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); {nr['Realizada']} realizadas, {nr['Futura']} futura; com ATA oficial: {_nata} (632–640 e extras 1–8); só pauta/página/extrato: {fonte_cont['com fonte própria'] - _nata}; sem nenhum documento: {_sofonte}"))
+cob.insert(0, ('ANS', 'Reuniões da Diretoria Colegiada 2026 (numeradas)', len(reunioes), f"ordinárias 632..644 (632ª 30/01 … 644ª 09/10) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); {nr['Realizada']} realizadas, {nr['Futura']} futura; com ATA oficial: {_nata} (632–640 e extras 1–8); só pauta/página/extrato: {fonte_cont['com fonte própria'] - _nata}; sem nenhum documento: {_sofonte}"))
 cob.insert(1, ('ANS', 'Itens (deliberações) por tipo', len(delibs), ', '.join(f'{k} {v}' for k, v in tipos.most_common())))
 cob.insert(2, ('ANS', 'Votos por proveniência', len(votos), ', '.join(f'{k} {v}' for k, v in prov.most_common()) + ' | rótulos: ' + ', '.join(f'{k} {v}' for k, v in rot.most_common())))
 _ata_votos = [v for v in votos if v['reuniao'] in {mid(r) for r in ATAS}]
@@ -646,10 +654,10 @@ nfeito += [
  ('ANS', 'Ligaduras e dígitos trocados nos PDFs SEI', 'PDFs com "ti" ausente/trocado por dígito', 'FEITO', 'PyMuPDF devolve a ligadura "ti" como dígito (9, 7, 6, 5, 4) entre letras; reparado por regra e verificado (zero ocorrências de letra-dígito-letra restantes)', 'Nenhuma'),
  ('ANS', 'Reuniões sem documento próprio', f"{_sofonte} reuniões", 'FORA DA LISTA OFICIAL', 'Ver pendências', 'Ver pendências'),
 ]
-hoje = '2026-10-08'
+hoje = HOJE
 saida = dict(reunioes=reunioes, deliberacoes=delibs, votos=votos, qualidade=[list(q) for q in qual], cobertura=[list(c) for c in cob], pendencias=[list(p) for p in pend], nao_feito=[list(n) for n in nfeito],
              diretores=[W, L, C, F, CE, E, J], colegiado='Diretoria Colegiada (DICOL)', meses_nota='', ex_diretores={E: 'mandato encerrado em 24/09/2026', J: 'mandato encerrado em 26/08/2026'},
-             composicao_nota='Colegiado em 08/10/2026: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D\'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.',
+             composicao_nota=f'Colegiado em {br(HOJE)}: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D\'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.',
              log_pareamento=[list(map(str, x)) for x in log_match])
 json.dump(saida, open(out_f, 'w'), ensure_ascii=False, indent=1)
 print('reunioes', len(reunioes), dict(nr), '| itens', len(delibs), dict(tipos), '| votos', len(votos), dict(prov), dict(rot))

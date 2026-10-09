@@ -1,0 +1,50 @@
+[
+ {
+  "ref": "632_92413",
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Apresenta%C3%A7%C3%A3o%20DIOPE%20-%20632%C2%AA%20DICOL%20-%2033910.057923_2025-96.pptx",
+  "arquivo": "fonte/ans/pptx/632_92413.pptx",
+  "texto": "texto_ans/anexo_pptx_632_92413.txt",
+  "sha256": "01168456008ec4ab7ef090d3ce24ccf8b2349dfefa4c5eca1b90f79f931344a7",
+  "slides": 6,
+  "caracteres": 1123,
+  "diretores_citados": [],
+  "cita_relator": false,
+  "cita_voto": false
+ },
+ {
+  "ref": "X02_92422",
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92422___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.000998_2026-86.pptx",
+  "arquivo": "fonte/ans/pptx/X02_92422.pptx",
+  "texto": "texto_ans/anexo_pptx_X02_92422.txt",
+  "sha256": "2e15477a3d285a24173bc0915153a310e43efe71e8d9fde64c6925b985f1a837",
+  "slides": 7,
+  "caracteres": 9061,
+  "diretores_citados": [],
+  "cita_relator": false,
+  "cita_voto": false
+ },
+ {
+  "ref": "X02_92423",
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92423___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%202%C2%AA%20Extraordin%C3%A1ria%20-%2033910.041022_2025-82.pptx",
+  "arquivo": "fonte/ans/pptx/X02_92423.pptx",
+  "texto": "texto_ans/anexo_pptx_X02_92423.txt",
+  "sha256": "46d2c0cda32fbd8f5b84d6dd866cfa5b657a133b4fd9a8320be829878ac42360",
+  "slides": 7,
+  "caracteres": 5987,
+  "diretores_citados": [],
+  "cita_relator": false,
+  "cita_voto": false
+ },
+ {
+  "ref": "X03_92435",
+  "url": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92435___Apresenta%C3%A7%C3%A3o%20DIPRO%20-%203%C2%AA%20Extraordin%C3%A1ria%20-%2033910.058550_2025-71.pptx",
+  "arquivo": "fonte/ans/pptx/X03_92435.pptx",
+  "texto": "texto_ans/anexo_pptx_X03_92435.txt",
+  "sha256": "ad7a89d31705345a114037e14f4ecdd8af39190dd241b69fb9c923e49351550a",
+  "slides": 7,
+  "caracteres": 7445,
+  "diretores_citados": [],
+  "cita_relator": false,
+  "cita_voto": false
+ }
+]
