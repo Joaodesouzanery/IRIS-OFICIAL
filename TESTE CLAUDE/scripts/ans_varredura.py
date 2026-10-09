@@ -76,7 +76,8 @@ for ref, m in sorted(atas.items()):
         vs = vb[(x['reuniao'], x['processo'], x['deliberacao'])]
         # tipo_item
         if re.match(r'(?i)item retirado de pauta', dec): esp = 'Retirada de pauta'
-        elif re.search(r'(?i)suspensa pelo pedido de (vistas?|dilig)', dec): esp = 'Vista'
+        elif re.search(r'(?i)suspensa pelo pedido de vistas?', dec): esp = 'Vista'
+        elif re.search(r'(?i)suspensa pelo pedido de dilig', dec): esp = 'Deliberação'   # diligência NÃO é vista
         elif re.match(r'(?i)somente informe', dec) and not re.search(r'(?i)aprov', dec): esp = 'Informe'
         elif re.match(r'(?i)aprova[çc][ãa]o d(a|as) minutas? d(a|as) atas?', assunto.strip()): esp = 'Aprovação de ata'
         elif re.match(r'(?i)informe', assunto) and not re.search(r'(?i)aprov|deliber', dec): esp = 'Informe'
@@ -114,9 +115,14 @@ for ref, m in sorted(atas.items()):
             # proveniencia nominal do relator quando ha voto escrito que nomeia
             if (ref, procn) in ANEXO and nomes(ANEXO[(ref, procn)]) and rel_j:
                 ok('relator com voto escrito nomeando o diretor → proveniência nominal', rel_j[0]['proveniencia'] == 'nominal', f'{mi} {procn}')
+        for mp_ in re.finditer(r'(?i)acrescid[ao]\s+d[ao]s?\s+propostas?,?\s+feit[ao]s?\s+pel[oa]s?\s+(Diretor\w*(?:-Presidente)?\s+[^,.;]{0,90})', dec):
+            for nm_ in nomes(mp_[1]): ok('proposta/acréscimo feito por diretor nomeado → voto nominal "ACOMPANHOU (com proposta acrescida)"', any(v['diretor'] == nm_ and v['voto'] == 'ACOMPANHOU (com proposta acrescida)' and v['proveniencia'] == 'nominal' for v in vs) or any(v['diretor'] == nm_ and v['voto'].startswith('RELATOR') for v in vs), f'{mi} {procn}: {nm_}')
         if esp == 'Retirada de pauta':
             ok('retirada → todos SEM VOTO (retirado de pauta)', all(v['voto'].startswith('SEM VOTO') for v in vs if v['diretor'] in pres), f'{mi} {procn}')
             ok('quem retirou (nome na ata) aparece no resultado', all(next(k for k, n in SOBRENOME if n == nm).upper() in x['resultado'].upper() for nm in nomes(dec)), f'{mi} {procn}')
+        if re.search(r'(?i)suspensa pelo pedido de dilig', dec):
+            ped = nomes(re.sub(r'.*?pedido de diligência', '', dec))
+            ok('diligência → pedinte SEM VOTO (diligência solicitada); demais SEM VOTO; ninguém PEDIU VISTA/ACOMPANHOU/RELATOR; sem relator', bool(ped) and not x.get('relator') and not any(v['voto'].startswith(('PEDIU VISTA', 'ACOMPANHOU', 'RELATOR')) for v in vs) and all(v['voto'].startswith('SEM VOTO') for v in vs if v['diretor'] in pres) and any(v['voto'] == 'SEM VOTO (diligência solicitada)' and v['diretor'] == ped[-1] for v in vs), f'{mi} {procn}: pedinte {ped}')
         if esp == 'Vista':
             ped = nomes(re.sub(r'.*?pedido de (?:vistas?|diligência)', '', dec))
             ok('vista/diligência → o pedinte nominal tem PEDIU VISTA', bool(ped) and any(v['voto'] == 'PEDIU VISTA' and v['diretor'] == ped[-1] for v in vs), f'{mi} {procn}: pedinte {ped}')

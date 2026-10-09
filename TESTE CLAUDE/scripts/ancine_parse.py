@@ -165,6 +165,7 @@ def rotulo(voto_modo, nome, p, manif=None):
         return 'ACOMPANHOU (manifestação própria)', 'nominal', 'o diretor publicou manifestação/voto próprio na DDC (voto e ressalvas dele são nominais)'
     if p['modo'] == 'unanimidade': return 'ACOMPANHOU', 'inferido', 'unanimidade declarada na DDC: todo signatário acompanhou' + (' (parte complementar sem modo próprio: herda a unanimidade da decisão principal)' if p['herdou'] else '')
     if p['modo'] == 'maioria':
+        if p.get('maioria_2_votantes'): return 'SEM VOTO (maioria sem nomes)', 'REVISAR', f'a fonte diz "por maioria" mas restam só {p["maioria_2_votantes"]} votantes (impedido/abstenção/ausência) e ninguém é nomeado como divergente: o acompanhamento de cada um não é inferível (possível divergência não nomeada ou "maioria" imprecisa)'
         if p['vencidos'] or p['abstencoes'] or p['impedidos']: return 'ACOMPANHOU', 'inferido', 'maioria com divergente/abstenção/impedido nomeados: os demais signatários acompanharam'
         return 'SEM VOTO (maioria sem nomes)', 'REVISAR', 'decisão por maioria sem nomear quem divergiu'
     return 'SEM VOTO (sem votação declarada)', 'REVISAR', 'a decisão registra apenas tomada de conhecimento/encaminhamento, sem declarar modo de votação'
@@ -253,6 +254,10 @@ for nm in sorted(ATAS):
             signat = A['presentes']; aus_item = A['ausentes']; part = list(A['presentes'])
         diretores_item = ordem(set(part) | set(aus_item) | set(nao_sign if ddc else []))
         multi = len(partes) > 1
+        for p_ in partes:   # maioria sem divergente nomeado e com so 2 votantes efetivos: nao inferir ACOMPANHOU
+            if p_['modo'] == 'maioria' and not p_['vencidos']:
+                vot_ef = [n_ for n_ in part if n_ not in aus_item and n_ not in p_['impedidos'] and n_ not in p_['abstencoes']]
+                if len(vot_ef) <= 2 and p_['impedidos']: p_['maioria_2_votantes'] = len(vot_ef)
         rel_manifest = ddc['manifestante'] if ddc and ddc.get('manifestante') else None
         vpp_por_dir = {}
         votos_item = []
@@ -281,7 +286,7 @@ for nm in sorted(ATAS):
         if ddc:
             for a_, y_ in re.findall(r'Delibera[çc][ãa]o Ad Referendum n\.?º\s*(\d+)-E, de (\d{4})', ddc['decisao'] + ' ' + it['assunto']):
                 k = (int(a_), int(y_)); dar.append(dict(numero=f'{a_}-E/{y_}', autores=DAR[k]['autores'], url=DAR[k]['url']) if k in DAR else dict(numero=f'{a_}-E/{y_}', autores=[], url='', nota='DAR de 2025 ou fora da coleta' if int(y_) != 2026 else 'DAR não encontrada'))
-        DEL.append(dict(reuniao=rid, data=data_item, processo=it['processo'], deliberacao=delib_id, item_n=f'{it["n"]}', relator='', interessado=it['interessado'] or it['area'],
+        DEL.append(dict(reuniao=rid, data=data_item, processo=it['processo'], deliberacao=delib_id, item_n=f'{it["n"]}', relator=(ddc['manifestante'] if ddc and ddc.get('manifestante_relator') else ''), relator_fonte=('manifestação própria do diretor na DDC ("nos termos da manifestação")' if ddc and ddc.get('manifestante_relator') else ''), interessado=it['interessado'] or it['area'],
                         assunto=it['assunto'], resultado=fmt_res(res_txt, partes), voto_doc=ddc['url'] if ddc else '', decisao_texto=(dec_txt or res_txt)[:3000],
                         tipo_item=tipo, secao=sess, unidade=it['area'], partes=[dict(parte=ROM[i], acao=p['acao'][:600], modo=p['modo'], vencidos=p['vencidos'], abstencoes=p['abstencoes'], impedidos=p['impedidos'], ressalvas=p['ressalvas']) for i, p in enumerate(partes)],
                         origem=A['url'], ddc=n, ddc_publicada=bool(ddc), extrapauta=it['extrapauta'], manifestacao=(ddc['manifestacao'][:1500] if ddc and ddc['manifestacao'] else ''),
@@ -340,12 +345,15 @@ def sigla_circ(n): return f'CD{n}-E'
 for n in sorted(CIR):
     c = CIR[n]; p = c.get('pauta'); a = c.get('ata'); pr = c.get('proc')
     ab = data_br(p['abertura']) if p and p['abertura'] else None
+    # data = DECISAO (encerramento da votacao); data_abertura = abertura do circuito. Circuito ainda em curso (sem decisao): data = abertura
+    fim_ = data_br(p['fim']) if p and p['fim'] else None
+    dec_d = fim_ if (fim_ and (pr or fim_ <= inv['gerado_em'][:10])) else (ab or (data_br(pr['pub']) if pr else None))
     rid = sigla_circ(n); rel = (p or {}).get('relator') or (a or {}).get('relator')
     part = a['participantes'] if a else ([v[0] for v in pr['votos']] if pr else [])
     presentes = ordem({nm_ for v in (pr['votos'] if pr else []) for nm_ in nomes_em(v[0])}) or (a['participantes'] if a else [])
     sit = 'Encerrado (ata e proclamação publicadas)' if a and pr else ('Votação encerrada sem ata/proclamação publicadas' if p and p['fim'] and data_br(p['fim']) <= inv['gerado_em'][:10] else 'Votação em curso (pauta publicada)')
     obs = f'Circuito Deliberativo (voto escrito de cada diretor, tabela nominal na Decisão-Proclamação); abertura {p["abertura"] if p else "?"}, votação {p["ini"] if p else "?"} a {p["fim"] if p else "?"}' + (f'; relator: {rel}' if rel else '')
-    REU.append(dict(reuniao=rid, titulo=f'Circuito Deliberativo de Diretoria Colegiada n.º {n}-E/2026 ({p["abertura"] if p else ""})', tipo='Circuito Deliberativo', data=ab or (data_br(pr['pub']) if pr else None),
+    REU.append(dict(reuniao=rid, titulo=f'Circuito Deliberativo de Diretoria Colegiada n.º {n}-E/2026 ({p["abertura"] if p else ""})', tipo='Circuito Deliberativo', data=dec_d, data_abertura=ab,
                     presentes=presentes, ausentes=[], obs=obs, situacao=sit, evidencia_data=[z for z in ('pauta do circuito' if p else '', 'ata do circuito' if a else '', 'Decisão-Proclamação' if pr else '') if z],
                     fontes=[dict(tipo=k, url=v['url']) for k, v in (('pauta', p), ('ata', a), ('proclamação', pr)) if v]))
     proc = (pr or {}).get('processo') or ((a or {}).get('processos') or (p or {}).get('processos') or [''])[0]
@@ -361,17 +369,17 @@ for n in sorted(CIR):
             elif re.match(r'(diverg|n[ãa]o acompanh)', vl): lab = 'DIVERGIU'; mot = f'tabela nominal da proclamação: "{voto_c}" (SEI {sei_c})'
             elif re.search(r'impedid', vl): lab = 'IMPEDIDO'; mot = f'tabela nominal: "{voto_c}"'
             else: lab = 'SEM VOTO (voto não classificado)'; mot = f'tabela nominal: "{voto_c}"'
-            vots.append(dict(reuniao=rid, data=ab, processo=proc, deliberacao=deli_id, diretor=dn, voto=lab, proveniencia='nominal' if not lab.startswith('SEM VOTO') else 'REVISAR', voto_por_parte='', motivo=mot))
+            vots.append(dict(reuniao=rid, data=dec_d, data_abertura=ab, processo=proc, deliberacao=deli_id, diretor=dn, voto=lab, proveniencia='nominal' if not lab.startswith('SEM VOTO') else 'REVISAR', voto_por_parte='', motivo=mot))
         VOT += vots
         res = (a or {}).get('resultado') or pr['texto'][-200:]
         modo = 'unanimidade' if 'unanimidade' in pr['texto'] else ('maioria' if 'maioria' in pr['texto'] else 'sem modo declarado')
         dec = pr['texto'][pr['texto'].find('decidiu'):]
         divg = [v['diretor'] for v in vots if v['voto'] == 'DIVERGIU']
-        DEL.append(dict(reuniao=rid, data=ab, processo=proc, deliberacao=deli_id, item_n='1', relator=rel or '', interessado=inte, assunto=ass or pr['assunto'], resultado=fmt_res(res, [dict(modo=modo, vencidos=divg, abstencoes=[], impedidos=[], ressalvas=[])]),
+        DEL.append(dict(reuniao=rid, data=dec_d, data_abertura=ab, processo=proc, deliberacao=deli_id, item_n='1', relator=rel or '', interessado=inte, assunto=ass or pr['assunto'], resultado=fmt_res(res, [dict(modo=modo, vencidos=divg, abstencoes=[], impedidos=[], ressalvas=[])]),
                         voto_doc=pr['url'], decisao_texto=pr['texto'][:3000], tipo_item='Deliberação', secao='Circuito Deliberativo', unidade='SFI', partes=[dict(parte='I', acao=dec[:600], modo=modo, vencidos=divg, abstencoes=[], impedidos=[], ressalvas=[])],
                         origem=(a or p)['url'], ddc=None, ddc_publicada=False, extrapauta=None, manifestacao='', ad_referendum=[], ausencias_txt=''))
     else:
-        DEL.append(dict(reuniao=rid, data=ab, processo=proc, deliberacao=deli_id, item_n='1', relator=rel or '', interessado=inte, assunto=ass, resultado='RESULTADO NÃO PUBLICADO (' + sit.lower() + ')',
+        DEL.append(dict(reuniao=rid, data=dec_d, data_abertura=ab, processo=proc, deliberacao=deli_id, item_n='1', relator=rel or '', interessado=inte, assunto=ass, resultado='RESULTADO NÃO PUBLICADO (' + sit.lower() + ')',
                         voto_doc='', decisao_texto='', tipo_item='Deliberação', secao='Circuito Deliberativo', unidade='SFI', partes=[], origem=(p or a)['url'], ddc=None, ddc_publicada=False, extrapauta=None, manifestacao='', ad_referendum=[], ausencias_txt=''))
         PEND.append(['ANCINE', f'Decisão-Proclamação e ata do Circuito Deliberativo {n}-E (votos nominais)', ab, 'documento não publicado' if 'encerrada' in sit else 'votação em curso',
                      f'1 item ({proc}); relator {rel}; votação {p["ini"]} a {p["fim"]}', 'a Secretaria da Diretoria Colegiada publica ata e Decisão-Proclamação só depois do encerramento da votação (os 6 circuitos fechados saíram em 31/03, 13/07 e 02/10)' if 'encerrada' in sit else 'votação aberta; resultado só após o encerramento',

@@ -235,7 +235,8 @@ def qualificadores(dec):
     q = {}
     for rx, rot, mot in ((r'(?i)(?:As|Os)?\s*(Diretor\w*\s+.{0,200}?)\s+apresentaram ressalvas', 'ACOMPANHOU (com ressalvas)', 'apresentou ressalvas registradas na ata'),
                          (r'(?i)acolhidas as observa[çc][õo]es d[ao]s?\s+(Diretor\w*\s+.{0,200}?)(?:\.|$)', 'ACOMPANHOU (com observações acolhidas)', 'teve observações acolhidas, segundo a ata'),
-                         (r'(?i)(?:retifica[çc][ãa]o|ajuste) solicitad[ao] pel[oa]\s+(Diretor\w*(?:-Presidente)?\s+[^.]{0,80})', 'ACOMPANHOU (com ajuste solicitado)', 'solicitou o ajuste/retificação aprovado, segundo a ata')):
+                         (r'(?i)(?:retifica[çc][ãa]o|ajuste) solicitad[ao] pel[oa]\s+(Diretor\w*(?:-Presidente)?\s+[^.]{0,80})', 'ACOMPANHOU (com ajuste solicitado)', 'solicitou o ajuste/retificação aprovado, segundo a ata'),
+                         (r'(?i)acrescid[ao]\s+d[ao]s?\s+propostas?,?\s+feit[ao]s?\s+pel[oa]s?\s+(Diretor\w*(?:-Presidente)?\s+[^,.;]{0,90})', 'ACOMPANHOU (com proposta acrescida)', 'fez proposta/acréscimo incorporado ao item aprovado, segundo a ata')):
         for m in re.finditer(rx, dec):
             for n in nomes_em(m[1]): q[n] = (rot, 'ata: aprovado por unanimidade; o diretor ' + mot)
     return q
@@ -245,7 +246,7 @@ def romanos(dec):
 def classifica_ata(it):
     d = it['decisao']; a = it.get('assunto', '')
     if re.match(r'(?i)item retirado de pauta pel[oa]\s+', d): return 'Retirada de pauta'
-    if re.search(r'(?i)suspensa pelo pedido de (vistas?|dilig)', d): return 'Vista'
+    if re.search(r'(?i)suspensa pelo pedido de vistas?', d): return 'Vista'   # diligência NÃO é vista: fica como Deliberação suspensa (modo 'diligencia')
     if re.match(r'(?i)somente informe\.?$', d.strip()) or (re.match(r'(?i)somente informe', d) and not re.search(r'(?i)aprov|deliber', d)): return 'Informe'
     if re.match(r'(?i)informe', it.get('secao', '').split(') ', 1)[-1]) and not re.search(r'(?i)aprov|deliberou', d): return 'Informe'   # seção de informe cuja decisão é só recomendação/encaminhamento (sem votação)
     if re.match(r'(?i)aprova[çc][ãa]o d(a|as) minutas? d(a|as) atas?', a.strip()): return 'Aprovação de ata'
@@ -253,6 +254,7 @@ def classifica_ata(it):
 def corta(t, n=300): return t if len(t) <= n else t[:n].rsplit(' ', 1)[0] + ' […]'   # corte em palavra, marcado
 def resultado_ata(tipo, d, imp_txt, imp_names=()):
     if tipo == 'Retirada de pauta': return re.sub(r'\s*Processo.*$', '', d).strip().rstrip('.').upper().replace('ITEM RETIRADO DE PAUTA', 'RETIRADO DE PAUTA')
+    if tipo == 'Deliberação' and re.search(r'(?i)suspensa pelo pedido de dilig', d): return 'DELIBERAÇÃO SUSPENSA — ' + re.sub(r'^Deliberação suspensa pel[oa]\s+', '', d).rstrip('.')
     if tipo == 'Vista': return 'SOBRESTADO — ' + re.sub(r'^Deliberação suspensa pel[oa]\s+', '', d).rstrip('.')
     if tipo == 'Informe': return 'Informe (sem deliberação nem votação)' + ('' if re.match(r'(?i)somente informe', d) else ' — registrado na ata: ' + d[:200])
     mm = re.match(r'(?i)(aprovad[oa]s?\s+por\s+unanimidade)(?:,\s*impedid[oa]s?\s+de\s+votar[^,]*?,)?[,:]?\s*(.*)', d)
@@ -298,6 +300,9 @@ def processa_ata(ref):
                 elif dr == rel and tipo == 'Deliberação': v, pv, mot = 'RELATOR', rel_prov, x['_rel_mot']
                 elif dr in ressalva: v, (pv, mot) = ressalva[dr][0], ('nominal', ressalva[dr][1])
                 else: v, pv, mot = 'ACOMPANHOU', 'inferido', 'ata diz apenas "aprovado por unanimidade" (voto individual não detalhado)' + (' dos não impedidos' if imp else '')
+            elif modo == 'diligencia':
+                if dr == pedinte: v, pv, mot = 'SEM VOTO (diligência solicitada)', 'nominal', 'ata: deliberação suspensa pelo pedido de diligência deste diretor (diligência, não vista)'
+                else: v, pv, mot = 'SEM VOTO (deliberação suspensa — diligência pendente)', 'nominal', 'ata: deliberação suspensa pelo pedido de diligência; ninguém votou na reunião'
             elif modo == 'apreciado': v, pv, mot = 'SEM VOTO (apreciação, sem votação)', 'nominal', 'ata: "Apreciado" — o colegiado tomou conhecimento, sem votação declarada'
             else: v, pv, mot = 'SEM VOTO REGISTRADO', 'REVISAR', 'a ata registra a decisão da Diretoria Colegiada sem declarar votação nem unanimidade'
             votos.append(dict(reuniao=mi, data=d, processo=x['processo'], deliberacao=x['deliberacao'], diretor=dr, voto=v, proveniencia=pv, voto_por_parte='', motivo=mot))
@@ -327,9 +332,10 @@ def processa_ata(ref):
         retirou = None; pedinte = None
         if tipo == 'Retirada de pauta':
             mm = re.match(r'(?i)item retirado de pauta pel[oa]\s+(.*?)\.', dec); retirou = curto2nome(mm[1]) if mm else None
-        if tipo == 'Vista':
+        dilig = tipo == 'Deliberação' and bool(re.search(r'(?i)suspensa pelo pedido de dilig', dec))
+        if tipo == 'Vista' or dilig:
             mm = re.search(r'pedido de (?:vistas?|diligência).*?\b(?:do|da|feito pel[oa])\s+(?:Diretor\w*(?:-Presidente)?)\s+(.*?)\.', dec); pedinte = curto2nome(mm[1]) if mm else None
-        modo = 'unanimidade' if re.search(r'(?i)por unanimidade', dec) and tipo in ('Deliberação', 'Aprovação de ata') else 'apreciado' if re.match(r'(?i)apreciad', dec) else 'decidido'
+        modo = 'diligencia' if dilig else 'unanimidade' if re.search(r'(?i)por unanimidade', dec) and tipo in ('Deliberação', 'Aprovação de ata') else 'apreciado' if re.match(r'(?i)apreciad', dec) else 'decidido'
         proc = it['processo'] or (f'ATA {mi}-{it["secao_letra"]}{it["n"]}' if tipo == 'Aprovação de ata' else f'{mi}-{it["secao_letra"]}{it["n"]}')
         rel, rel_prov, rel_mot = ('', '', '') if tipo in ('Aprovação de ata', 'Informe', 'Retirada de pauta') else relator_de(area_v, tipo, it['processo'], dec, orig)
         if tipo == 'Deliberação' and modo != 'unanimidade': rel, rel_prov, rel_mot = '', '', 'sem votação declarada na ata: sem RELATOR'
@@ -505,7 +511,7 @@ for ref in todas:
         elif pr:
             dc = pr['decisao']; origem.append(pg_por_reuniao[key]['url'])
             if dc:
-                resultado = dc.rstrip('.').capitalize(); decisao = f"DECISÃO: {dc}"; modo = 'aprovado/deliberado sem divergência registrada'; votar = True
+                resultado = dc.rstrip('.').capitalize(); decisao = f"DECISÃO: {dc}"; modo = 'apreciado' if re.match(r'(?i)(item\s+)?apreciad', dc) else 'aprovado/deliberado sem divergência registrada'; votar = True
             elif it['tipo'] == 'Informe': resultado = 'Informe (sem deliberação nem votação)'
             elif it['tipo'] == 'Aprovação de ata': resultado = 'Minuta de ata submetida; a página não registra DECISÃO do item'; modo = 'REVISAR'; votar = True
             else: resultado = 'Item apresentado; a página não registra DECISÃO'; modo = 'REVISAR'; votar = True
@@ -516,8 +522,9 @@ for ref in todas:
         area = it['area']
         rel = diretor_area(area, d) if (area and it['tipo'] == 'Deliberação') else None
         if futura: resultado = f'REUNIÃO AINDA NÃO REALIZADA (pauta publicada para {br(d)})'; votar = False
-        if not votar: rel = ''
+        if not votar or modo == 'apreciado': rel = ''   # apreciação sem deliberação: sem RELATOR (mesma regra das atas)
         x = dict(reuniao=mid(ref), data=d, processo=proc, deliberacao=(f"Item {n}: " if n < 1000 else "Item extrapauta (só no extrato): ") + titulo_d[:200], item_n=str(n) if n < 1000 else f'E{n-1000}', relator=rel or '', interessado='ANS — Diretoria Colegiada' + (f' ({area})' if area else ''),
+                 relator_proveniencia='inferido' if rel else '', relator_motivo=f'a fonte não nomeia relator; rótulo "ITEM {area}" → diretor da área na data ({rel})' if rel else '',
                  assunto=titulo_d[:500], resultado=resultado, voto_doc='', decisao_texto=decisao, tipo_item=it['tipo'], secao=('Extrapauta' if it.get('extrapauta') else 'Pauta') + (f' — {area}' if area else ''),
                  unidade=area, partes=[], origem=' | '.join(origem), _votar=votar, _modo=modo)
         if x['tipo_item'] == 'Informe' and not votar: x['partes'] = []
@@ -552,9 +559,10 @@ for ref in todas:
         if not x['_votar']: continue
         revisar = x['_modo'] == 'REVISAR'
         for dr in presentes:
-            if dr == x['relator'] and not revisar: v = 'RELATOR'; mot = 'relator = diretor da área proponente (inferido do rótulo "ITEM ' + x['unidade'] + '"; a fonte não nomeia o relator)'
+            if x['_modo'] == 'apreciado': v = 'SEM VOTO (apreciação, sem votação)'; mot = 'página oficial de deliberações: "ITEM APRECIADO" — o colegiado tomou conhecimento, sem votação declarada'
+            elif dr == x['relator'] and not revisar: v = 'RELATOR'; mot = 'relator = diretor da área proponente (inferido do rótulo "ITEM ' + x['unidade'] + '"; a fonte não nomeia o relator)'
             else: v = 'ACOMPANHOU'; mot = ('unanimidade declarada no extrato' if x['_modo'] == 'unanimidade' else 'item "aprovado/deliberado" sem divergência registrada na fonte')
-            pv = 'inferido'
+            pv = 'nominal' if x['_modo'] == 'apreciado' else 'inferido'
             if revisar: v = 'SEM VOTO REGISTRADO'; pv = 'REVISAR'; mot = 'a página de deliberações não registra DECISÃO deste item'
             votos.append(dict(reuniao=x['reuniao'], data=d, processo=x['processo'], deliberacao=x['deliberacao'], diretor=dr, voto=v, proveniencia=pv, voto_por_parte='', motivo=mot))
         for dr in ausentes:
@@ -650,7 +658,7 @@ nfeito += [
  ('ANS', 'Tipo de item "Informe"', f"{tipos.get('Informe', 0)} itens", 'EXTENSÃO DO MODELO', 'Informes não têm votação; entram como tipo_item "Informe" e sem votos', 'Ajustar build_xlsx se quiser outro rótulo'),
  ('ANS', '"Apreciado"', f"{sum(1 for v in votos if v['voto'].startswith('SEM VOTO (apreciação'))} linhas SEM VOTO (apreciação)", 'LIMITE DA FONTE', 'Quando a ata diz só "Apreciado" não há votação declarada: SEM VOTO (nominal), sem inferir ACOMPANHOU', 'Nenhuma'),
  ('ANS', 'Divergência / voto vencido / votação por maioria', '0 ocorrências nas 17 atas', 'NÃO OBSERVADO NA FONTE', 'Varredura textual das 17 atas por diverg*, vencid*, por maioria, voto contrário: nenhuma ocorrência (as 2026 DICOL são unânimes quando há decisão). Divergência só apareceria na ata de reunião não publicada ou no vídeo', 'Nenhuma'),
- ('ANS', 'Vista, diligência, impedimento, retirada, ressalva', f"vista {sum(1 for x in delibs if x['tipo_item'] == 'Vista')} itens; impedimento {" + _imp + """} linhas; retirada {tipos.get('Retirada de pauta', 0)} itens""", 'FEITO', 'Lidos nominalmente das atas; o pedido de diligência da 635ª (item E17) está como tipo Vista + PEDIU VISTA', 'Nenhuma'),
+ ('ANS', 'Vista, diligência, impedimento, retirada, ressalva', f"vista {sum(1 for x in delibs if x['tipo_item'] == 'Vista')} itens; impedimento {sum(1 for v in votos if v['voto'].startswith('IMPEDIDO'))} linhas; retirada {tipos.get('Retirada de pauta', 0)} itens""", 'FEITO', 'Lidos nominalmente das atas; o pedido de diligência da 635ª (item E17) está como Deliberação suspensa (diligência à DIOPE, NÃO vista): Eliane SEM VOTO (diligência solicitada), demais SEM VOTO (deliberação suspensa — diligência pendente)', 'Nenhuma'),
  ('ANS', 'Ligaduras e dígitos trocados nos PDFs SEI', 'PDFs com "ti" ausente/trocado por dígito', 'FEITO', 'PyMuPDF devolve a ligadura "ti" como dígito (9, 7, 6, 5, 4) entre letras; reparado por regra e verificado (zero ocorrências de letra-dígito-letra restantes)', 'Nenhuma'),
  ('ANS', 'Reuniões sem documento próprio', f"{_sofonte} reuniões", 'FORA DA LISTA OFICIAL', 'Ver pendências', 'Ver pendências'),
 ]
