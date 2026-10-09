@@ -936,7 +936,7 @@
    "data": "2026-10-15",
    "presentes": [],
    "ausentes": [],
-   "obs": "FUTURA em 2026-10-08: só pauta publicada (3 versões, 40 itens); sem ata, DDC nem votos",
+   "obs": "FUTURA em 2026-10-09: só pauta publicada (3 versões, 40 itens); sem ata, DDC nem votos",
    "situacao": "Futura (pauta publicada)",
    "evidencia_data": [
     "pauta Pauta de Reunião de Diretoria Colegiada 978 - / Pauta de Reunião de Diretoria Colegiada 978 - 15.10.2026 Versão 3"
@@ -146422,6 +146422,6 @@
  "_fonte": {
   "sei": "https://sei.ancine.gov.br/sei/publicacoes/controlador_publicacoes.php",
   "inventario": "ancine_inventario.json",
-  "gerado_em": "2026-10-08 23:21"
+  "gerado_em": "2026-10-09 02:18"
  }
 }
