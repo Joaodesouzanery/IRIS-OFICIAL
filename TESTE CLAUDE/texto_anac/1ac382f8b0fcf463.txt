@@ -1,0 +1,53 @@
+SEI/ANAC - 13731271 - Voto
+
+Voto
+
+PROCESSO: 00066.004529/2026-85
+
+interessado: GOIÁS TÁXI AÉREO LTDA.
+
+RELATOR: Antonio mathias nogueira moreira
+
+da competência
+
+O art. 8º, X, da Lei nº 11.182, de 27 de setembro de 2005, define a competência da ANAC para regular e fiscalizar os produtos aeronáuticos e a segurança da aviação civil. Adicionalmente, essa lei também estabelece no art. 11, V, a competência da Diretoria da ANAC para exercer o poder normativo da Agência.
+
+Por sua vez, o art. 31, XVII, do Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, estabelece entre as competências comuns às Superintendências avaliar e submeter à Diretoria as petições de isenção a requisitos de regulamentos, bem como rejeitar aquelas que, por mérito ou forma, não atenderem aos critérios estabelecidos.
+
+Ainda, o art. 34, II, “a”, do Regimento Interno, atribui à Superintendência de Padrões Operacionais (SPO) competência para emitir parecer relativo a padrões operacionais mínimos a fim de garantir a segurança operacional, em especial aqueles ligados à operação de aeronaves e ao transporte de artigos perigosos, coordenando, quando necessário, com os setores correlatos das demais Superintendências da ANAC.
+
+Por fim, o art. 47, §1º, da Instrução Normativa nº 154, de 20 de março de 2020, estabelece que as petições de isenção a requisitos de RBAC, recebidas em conformidade com o previsto no RBAC n.º 11, após avaliação de mérito pela área finalística competente pelo assunto, que conclua pela recomendação de deferimento, serão encaminhadas para apreciação da Diretoria.
+
+Pelo exposto, restam atendidos, portanto, os requisitos de competência quanto à elaboração da proposta, deliberação e decisão sobre a matéria.
+
+da análise e fundamentação
+
+Conforme descrito no Relatório de Diretoria (SEI nº 13727140 ), o presente processo trata de pedido de isenção ao requisito constante do parágrafo 135.25(b) do RBAC nº 135, formulado pela Goiás Táxi Aéreo Ltda. por meio do FOP 208 nº 01/GTA/2026 (SEI nº 13099191 ), com a finalidade de permitir que a aeronave PT-OGL permaneça simultaneamente vinculada às futuras Especificações Operativas da requerente e às Especificações Operativas da empresa SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda. (SEI nº 13099213 ).
+
+A matéria foi analisada pela Superintendência de Padrões Operacionais por meio da Nota Técnica nº 28/2026/GTNO-GNOS/GNOS/SPO (SEI nº 13259108 ), que concluiu pelo atendimento dos requisitos de admissibilidade previstos no RBAC nº 11 e manifestou-se favoravelmente ao deferimento da isenção pleiteada.
+
+Durante a instrução processual, a SPO examinou a origem e a finalidade regulatória do requisito previsto no parágrafo 135.25(b) do RBAC nº 135, concluindo que a exigência de uso exclusivo está associada à garantia de adequada posse, controle operacional e supervisão da manutenção da aeronave, com vistas à preservação da segurança das operações e da responsabilização do operador. A área técnica destacou, ainda, que a finalidade da norma não consiste em impedir toda forma de utilização compartilhada de aeronaves, desde que permaneçam adequadamente preservados os mecanismos de controle operacional e manutenção.
+
+Conforme evidenciado nos autos, a Goiás Táxi Aéreo Ltda. e a SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda. apresentam significativa comunalidade societária, administrativa e operacional, compartilhando gestão, estrutura operacional e recursos humanos, circunstância que levou a SPO a reconhecer a existência de efetiva comunalidade operacional entre as empresas envolvidas (SEI nº 13099211 , SEI nº 13099212 e SEI nº 13259108 ).
+
+A área técnica avaliou, ainda, os impactos do arranjo proposto sobre a segurança operacional, concluindo que a manutenção da aeronave deverá observar os requisitos mais restritivos aplicáveis às operações conduzidas sob o RBAC nº 135, ainda que a aeronave esteja sendo utilizada nas operações de lançamento de paraquedistas realizadas pela SKC. Também foram consideradas necessárias a manutenção de fluxo contínuo de comunicação entre os operadores e a adequada gestão dos registros operacionais e documentais da aeronave.
+
+Registre-se, ainda, que a proposta de decisão elaborada pela área técnica foi submetida à apreciação das empresas envolvidas, não tendo sido apresentadas objeções aos seus termos. Após solicitação da SPO para que houvesse manifestação expressa das duas operadoras potencialmente afetadas pela decisão, foi confirmado que a concordância apresentada ocorria em nome tanto da Goiás Táxi Aéreo Ltda. quanto da SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda., tendo o sócio-administrador de ambas as empresas ratificado expressamente essa posição. Desse modo, verifica-se que as operadoras anuíram ao arranjo proposto e às condicionantes consideradas pela área técnica para manutenção de nível aceitável de segurança operacional (SEI nº 13683335 ).
+
+Diante desse contexto, verifico que a instrução processual demonstrou adequadamente que o arranjo proposto preserva os objetivos regulatórios subjacentes ao requisito cuja isenção se pretende obter, especialmente aqueles relacionados ao controle operacional da aeronave, à observância dos requisitos de manutenção aplicáveis e à adequada definição de responsabilidades entre os operadores envolvidos. Assim, acompanho integralmente o entendimento da Superintendência de Padrões Operacionais quanto à conveniência e oportunidade do deferimento da isenção requerida.
+
+Do voto
+
+Assim sendo, ante o exposto, com fundamento nos elementos constantes dos autos e nas conclusões da Nota Técnica nº 28/2026/GTNO-GNOS/GNOS/SPO (SEI nº 13259108 ), VOTO FAVORAVELMENTE à concessão d e isenção ao requisito previsto no parágrafo 135.25(b) do RBAC nº 135 à GOIÁS TÁXI AÉREO LTDA., relativamente à aeronave PT-OGL, nos termos da proposta apresentada pela Superintendência de Padrões Operacionais (SEI nº 13738623 ), observadas as condicionantes ali estabelecidas.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 25/08/2026, às 11:24, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13731271 e o código CRC C0FC1529 .
+
+SEI nº 13731271

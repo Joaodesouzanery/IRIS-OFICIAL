@@ -1,0 +1,466 @@
+                                                  VOTO
+
+PROCESSO: 00058.024978/2025-68
+RELATOR: RUI CHAGAS MESQUITA
+
+1.           DA COMPETÊNCIA
+1.1.         O caput do art. 9° da Lei nº 13.848/2019, que dispõe sobre a gestão, a
+organização, o processo decisório e o controle social das agências reguladoras, determina que:
+                     “Art. 9º. Serão objeto de consulta pública, previamente à tomada de decisão pelo
+                     conselho diretor ou pela diretoria colegiada, as minutas e as propostas de alteração de
+                     atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários
+                     dos serviços prestados.
+                     (...)
+                     § 2º Ressalvada a exigência de prazo diferente em legislação especíﬁca, acordo ou
+                     tratado internacional, o período de consulta pública terá início após a publicação do
+                     respectivo despacho ou aviso de abertura no Diário Oﬁcial da União e no sítio da agência
+                     na internet, e terá duração mínima de 45 (quarenta e cinco) dias, ressalvado caso
+                     excepcional de urgência e relevância, devidamente motivado.
+                     § 3º A agência reguladora deverá disponibilizar, na sede e no respectivo sítio na internet,
+                     quando do início da consulta pública, o relatório de AIR, os estudos, os dados e o
+                     material técnico usados como fundamento para as propostas submetidas a consulta
+                     pública, ressalvados aqueles de caráter sigiloso.”
+
+
+1.2.           O art. 8° da Lei n° 11.182/2005 estabelece que cabe à Anac adotar as medidas
+necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da
+aviação civil, da infraestrutura aeronáutica e aeroportuária do país, competindo-lhe, entre outras
+atribuições:
+                     I – implementar, em sua esfera de atuação, a política de aviação civil;
+                     (...)
+                     XI – expedir regras sobre segurança em área aeroportuária e a bordo de aeronaves civis,
+                     porte e transporte de cargas perigosas, inclusive o porte ou transporte de armamento,
+                     explosivos, material bélico ou de quaisquer outros produtos, substâncias ou objetos que
+                     possam pôr em risco os tripulantes ou passageiros, ou a própria aeronave ou, ainda, que
+                     sejam nocivos à saúde;
+                     (...)
+                     XXI – regular e fiscalizar a infra-estrutura aeronáutica e aeroportuária, (...);
+                     (...)
+                     XXX – expedir normas e estabelecer padrões mínimos de segurança de vôo, de
+                     desempenho e eﬁciência, a serem cumpridos pelas prestadoras de serviços aéreos e de
+                     infra-estrutura aeronáutica e aeroportuária, inclusive quanto a equipamentos, materiais,
+                     produtos e processos que utilizarem e serviços que prestarem;
+                     (...)
+
+
+1.3.          O art. 33 do Regimento Interno estabelece que compete à Superintendência de
+Infraestrutura Aeroportuária (SIA):
+                     I - submeter à Diretoria propostas de atos normativos sobre os assuntos de sua
+                     competência, que são:
+
+                             Voto 12431403     SEI 00058.024978/2025-68 / pg. 1
+                     a) segurança de aeronaves, pessoas e bens nas operações em áreas de movimento de
+                     aeronaves e vias de serviço em aeródromos e no seu entorno;
+                     (...)
+                     c) proteção das operações de aviação civil contra atos de interferência ilícita, nos
+                     assuntos de competência da ANAC;
+                     (...)
+                     VIII - atestar os procedimentos AVSEC realizados por operadores de aeródromos e
+                     operadores aéreos;
+                     (...)
+                     XVI - emitir parecer técnico, instruções, diretrizes e recomendações sobre os assuntos de
+                     sua competência;
+                     (...)
+
+
+1.4.       O art. 41 do Regimento Interno estabelece que compete à Superintendência de
+Regulação Econômica de Aeroportos (SRA):
+
+                     II - emitir, no que tange suas competências, parecer sobre proposta de edição de normas
+                     ou procedimentos;
+                     (...)
+                     IV - monitorar a prestação dos serviços de infraestrutura aeroportuária;
+                     (...)
+                     VII - gerir os contratos de concessão de infraestrutura aeroportuária;
+                     (...)
+                     XX - avaliar os procedimentos de reequilíbrio econômico ﬁnanceiro dos contratos de
+                     concessão de aeroportos, iniciados de ofício ou a pedido da concessionária;
+                     XXI - decidir em primeira instância os processos de reequilíbrio econômico ﬁnanceiro dos
+                     contratos de concessão de aeroportos, que, por mérito ou forma, não atenderem aos
+                     critérios estabelecidos em norma e nos respectivos contratos; e
+                     XXII - submeter à decisão da Diretoria Colegiada, em primeira instância, o processo de
+                     reequilíbrio econômico ﬁnanceiro dos contratos de concessão de aeroportos, quando a
+                     avaliação sugerir o deferimento do pedido.
+
+
+1.5.        O caput do art. 9° do Regimento Interno da Anac prevê que compete à Diretoria,
+em regime de colegiado, analisar, discutir e decidir em instância administrativa ﬁnal as matérias
+de competência da Agência.
+
+1.6.         Pelo exposto, restam atendidos os requisitos de competência quanto à elaboração
+e deliberação da proposta apresentada.
+
+2.           DA ANÁLISE E FUNDAMENTAÇÃO
+
+
+2.1.         Conforme descrito no Relatório [1], a Superintendência de Infraestrutura
+Aeroportuária – SIA sugere instauração de consulta pública acerca de proposta de Resolução[2]
+que busca modernizar os equipamentos empregados na Segurança da Aviação Civil contra
+Atos de Interferência Ilícita (AVSEC), com enfoque na inspeção de pessoas e seus pertences
+de mão, especialmente nos pontos de controle de acesso de passageiros. Minutas de Aviso de
+Consulta Pública[3] e Justificativa de Consulta Pública [4] acompanham a proposta normativa.
+
+
+2.2.        De acordo com o Relatório de Análise de Impacto Regulatório (AIR) [5], foram
+considerados três cenários tanto para a inspeção de pessoas quanto para a inspeção de
+pertences de mão. A utilização do Escâner Corporal (Body Scanner) na inspeção de segurança
+
+                             Voto 12431403    SEI 00058.024978/2025-68 / pg. 2
+primária de passageiros e do equipamento de Tomograﬁa Computadorizada ( Computer
+Tomography – CT ) combinado com o detector de traço explosivo ( Explosive Trace Detection –
+ETD) na inspeção de pertences de mão foram as opções que apresentaram maior ganho na
+capacidade de detecção de ameaças à AVSEC em comparação com os equipamentos
+atualmente utilizados. Contudo, a opção de utilização de equipamentos de raios-X do
+tipo dual view combinado com ETD na inspeção de pertences de mão de passageiros
+também proporcionou um aumento signiﬁcativo na efetividade da inspeção, porém a um
+custo bastante inferior.
+
+
+2.3.        O Escâner Corporal se destaca, em comparação ao pórtico detector de metais
+(PDM) e ao detector manual de metais (DMM)
+
+
+
+
+                                  Além disso, cabe exaltar a facilitação que o equipamento traz,
+em tese, aos passageiros contraindicados aos raios-X, como pessoas com deﬁciência,
+implantes médicos, dentre outros que são sujeitos obrigatoriamente a buscas pessoais
+completas, que são claramente mais morosas e invasivas. Em suma, as vantagens do Escâner
+Corporal em termos de precisão, eﬁciência e respeito à privacidade do passageiro o tornam
+altamente eﬁcaz, além de eliminar a necessidade de inspeções aleatórias ou pessoais. Por
+outro lado, o espaço físico ocupado pelo equipamento e o seu peso, quando comparado com o
+PDM, exigem um maior planejamento da infraestrutura.
+
+
+2.4.          No que se refere à inspeção dos pertences de mão, o equipamento de raios-X
+do tipo dual view funciona de forma semelhante ao equipamento de raios-X do tipo single view
+(convencional). Porém, ele possui duas fontes geradoras de raios-X dispostas em direções
+distintas, produzindo, desta forma, duas imagens de ângulos diferentes, que ao serem
+analisadas em conjunto, aumentam a capacidade de detecção de artigos proibidos
+
+
+
+
+2.5.          O equipamento tipo CT se mostra a tecnologia mais moderna atualmente
+disponível no mercado na função de inspeção de pertences de mão, possibilitando o
+reconhecimento automatizado de explosivos e outros artigos proibidos de forma eﬁciente e não
+invasiva. Ele gera imagens volumétricas em alta resolução dos volumes da bagagem de mão,
+que podem ser rotacionadas, possibilitando análises mais detalhadas e automação na detecção
+de ameaças. Também identiﬁca materiais com base em suas densidades e assinaturas
+atômicas espectrais, o que facilita o trabalho do operador. Com isso, a taxa de alarmes falsos é
+minimizada, haja vista que a integração de IA ajuda na diferenciação entre itens inofensivos e
+ameaças reais. Ademais, a depender do nível de certiﬁcação do equipamento, a inspeção da
+bagagem de mão pode se dar sem a necessidade de retirada de computadores portáteis, outros
+aparelhos elétricos e líquidos, aerossóis e géis (LAGs), contribuindo de forma relevante à
+redução do tempo de processamento de passageiros e, consequentemente, levando a uma
+melhoria na satisfação dos usuários.
+
+
+2.6.         O ETD é um equipamento que visa identiﬁcar, por meio da análise das
+propriedades químicas de partículas coletadas de forma amostral em superfícies de contato
+suspeitas, a presença de resíduos ou traços de substâncias explosivas, que estejam em
+pessoas ou em pertences de mão. Existe ETD disponível em modelos móveis, podendo ser
+utilizado em áreas remotas e um único equipamento pode atender a mais de um módulo de
+inspeção.
+
+                         Voto 12431403    SEI 00058.024978/2025-68 / pg. 3
+2.7.         A escolha do arranjo dos equipamentos baseou-se em uma análise de custo-
+benefício, considerando os ganhos obtidos na capacidade de detecção de ameaças (a
+efetividade da inspeção), o custo de aquisição dos equipamentos e o porte dos aeródromos em
+termos de movimentação de passageiros. Entretanto, convém ressaltar que o impacto
+regulatório da proposta normativa não se limita aos custos de aquisição e manutenção
+dos novos equipamentos de inspeção e de treinamento de pessoal; eles também
+impactam o tempo de processamento de passageiros, isto é, o tempo de inspeção, além
+da infraestrutura física dos terminais de passageiros.
+
+
+2.8.          No que se refere ao tempo de processamento de passageiros (Tsec) – período em
+que efetivamente ocorre a inspeção pessoal e de pertences de mão, desconsiderado o tempo
+que o passageiro aguarda na área de formação de ﬁlas de espera para a inspeção –; se a
+adoção do equipamento de raios-X do tipo dual view (ou do equipamento tipo CT) em
+substituição ao equipamento de raios-X single view aumentar o tempo médio de processamento
+de passageiros nos pontos de controle de acesso de passageiros, domésticos ou
+internacionais, o número de módulos de inspeção[6] a serem substituídos deverá se dar em uma
+razão maior que um, visando minimamente a manutenção da capacidade de processamento de
+passageiros atual dos canais de inspeção dos aeroportos.
+
+2.9.         A esse respeito, parto do pressuposto que eventual redução da capacidade de
+processamento dos terminais de passageiros em decorrência da implementação da norma seria
+um retrocesso e, portanto, considero um cenário inadmissível, pois impactaria a oferta de voos,
+pressionando o preço das passagens aéreas, além de afetar, no caso dos aeroportos
+concedidos, o equilíbrio econômico-ﬁnanceiro dos contratos de concessão em razão de
+restrição operacional imposta pelo Poder Público.
+
+
+2.10.         Cabe rememorar que no âmbito dos contratos de concessão de aeroportos, a
+capacidade de processamento de passageiros é deﬁnida, em termos do número de
+equipamentos de inspeção de segurança disponíveis, pelo “tempo de processamento de
+passageiros (Tsec)” nos módulos de inspeção e pelo Parâmetro Mínimo de Dimensionamento
+(PMD) de “tempo máximo de ocupação do componente (Toi)”. Enquanto o tempo de
+processamento de passageiros (Tsec) deﬁne indiretamente o número esperado de passageiros
+que podem ser inspecionados por hora, o PMD estabelece o tempo máximo que os passageiros
+aguardam na ﬁla de espera para a inspeção de segurança na hora pico, isto é, estabelece o
+nível de serviço oferecido aos passageiros.
+
+2.11.        Além da inadmissibilidade da redução da capacidade de processamento de
+passageiros, defendo que o nível de serviço dos componentes operacionais de inspeção
+de segurança sejam mantidos nos termos atuais, uma vez que o aumento do tempo máximo
+de ocupação do componente (Toi), além de degradar a percepção do nível de serviço prestado
+aos usuários, pode representar um aumento dos custos de adequação dos aeroportos, tendo
+em vista que a área adicional requerida para acomodação dos passageiros em ﬁlas de espera
+provavelmente seria maior que a área adicional requerida para ocupação dos novos
+equipamentos de inspeção. Além disso, o aumento do tempo máximo de espera dos
+passageiros nas áreas de ﬁla de espera (Toi) poderia impactar a malha aérea, considerando
+que haveria um aumento do tempo mínimo de conexão (MCT - Minimum Connecting Time )
+entre voos internacionais e entre voos domésticos e internacionais; e poderia, ainda, reduzir o
+
+                        Voto 12431403    SEI 00058.024978/2025-68 / pg. 4
+tempo médio de espera dos passageiros nas salas de embarque, com impacto potencial nas
+receitas comerciais das concessionárias. Ademais, convém salientar que a própria Resolução
+n° 753/2024, que estabeleceu diretriz de modernização tecnológica, de equipamentos e de
+procedimentos aeroportuários, visou o aumento da segurança e da capacidade operacional,
+além da melhoria da experiência dos passageiros.
+
+2.12.        Logo, ao mesmo tempo em que sou favorável à modernização dos equipamentos
+empregados nos canais de inspeção de segurança, entendo ser fundamental a preservação da
+capacidade de processamento dos canais de inspeção dos terminais de passageiros e dos
+requisitos contratuais, sobretudo os Parâmetros Mínimos de Dimensionamento e os padrões
+dos Indicadores de Qualidade de Serviço, que tanto contribuíram na realização de
+investimentos em infraestrutura, aumentando a capacidade de processamento dos terminais de
+passageiros, e na adequação da prestação do serviço nos aeroportos concedidos ao longo das
+rodadas de concessão.
+
+2.13.         Quanto ao impacto na infraestrutura dos terminais de passageiros decorrente da
+modernização dos equipamentos, ele pode abranger, a depender do aeroporto, (i) a ampliação
+do espaço físico dos componentes operacionais de inspeção de passageiros; (ii) a necessidade
+de reforço estrutural de pisos e lajes; (iii) a readequação ou realocação de outros componentes
+operacionais do terminal de passageiros, como a emigração, salas de embarque, áreas de
+circulação, áreas administrativas e comerciais, entre outros.
+
+2.14.        Além do mais, é importante ressaltar que a proposta normativa altera o
+equilíbrio econômico-ﬁnanceiro dos contratos de concessão de aeroportos. De acordo
+com a matriz de risco contratual, a realização de "investimentos não previstos em equipamentos
+ou obras de infraestrutura decorrentes de nova exigência da ANAC ”[7] ou “mudanças nas
+especiﬁcações dos serviços em decorrência de novas exigências de procedimentos de
+segurança por solicitação da ANAC”[8] , que são riscos suportados pelo Poder Concedente,
+ensejam a Revisão Extraordinária do contrato em favor das concessionárias.
+
+
+2.15.          Com isso, deve-se ter em mente que a substituição dos atuais equipamentos
+utilizados na inspeção de pessoas e pertences de mão pelos equipamentos considerados na
+proposta normativa, comprovadamente apresentam ganhos substanciais na capacidade de
+detecção de ameaças à AVSEC; mas por apresentarem possivelmente tempos de
+processamento de passageiros, dimensões e pesos maiores que os equipamentos atuais, pode
+vir a ensejar intervenções na infraestrutura pelos operadores aeroportuários.
+
+2.16.         Ao passo que o impacto na infraestrutura de cada terminal de passageiros é único,
+consoante o seu layout e os ﬂuxos de processamento de passageiros existentes; as soluções
+de engenharia são variadas, das mais simples, como a realocação de paredes e divisórias, às
+mais complexas, como a necessidade de reforço estrutural de pisos e lajes e a ampliação de
+componentes operacionais, podendo alterar signiﬁcativamente o ﬂuxo de passageiros no
+terminal, ou pode envolver no limite até mesmo a necessidade de ampliação do terminal.
+
+2.17.         Considerando que a regulação da infraestrutura, estabelecida nos contratos de
+concessão, está alicerçada no desempenho obtido pela concessionária na prestação do serviço,
+as delegatárias têm, como regra geral, a liberdade de escolher os projetos de engenharia que
+melhor atendam o seu plano de negócio, desde que observados os Parâmetros Mínimos de
+Dimensionamento, as Especiﬁcações Mínimas de Infraestrutura Aeroportuária e os padrões dos
+Indicadores de Qualidade de Serviço. Todavia, como nesse caso as intervenções em
+infraestrutura deverão ser custeadas pelo Governo Federal ou pelos próprios usuários da
+
+                        Voto 12431403    SEI 00058.024978/2025-68 / pg. 5
+infraestrutura aeroportuária, a ANAC deverá se debruçar para além do atendimento dos
+parâmetros de performance contratuais, avaliando a consistência e a eﬁciência das soluções de
+engenharia consideradas, o que pode gerar controvérsias acerca da escolha do regulado e/ou
+do valor devido a ser reequilibrado.
+
+2.18.        Dentre as formas de recomposição do equilíbrio econômico-ﬁnanceiro previstas
+estão a revisão da outorga devida pela Concessionária e a alteração do valor das tarifas
+aeroportuárias. Ocorre que desde a mudança do modelo regulatório de pagamento de
+Contribuições ao Sistema ocorrida a partir da 5ª rodada de concessões, que passou a prever o
+pagamento da Contribuição Inicial ao invés de Contribuições Fixas anuais, além de
+Contribuições Variáveis anuais, o saldo dos valores de outorga que podem ser abatidos para
+revisão extraordinária reduziram signiﬁcativamente. Além disso, os saldos remanescentes de
+outorga ﬁxa dos contratos de concessão de aeroportos da 4ª rodada também reduziram
+consideravelmente em razão de outros reequilíbrios pagos pelo Poder Concedente, incluindo os
+impactos econômicos negativos em razão dos efeitos da pandemia de Covid-19, o que tem
+levado as concessionárias a requererem o reajuste da tarifa paga pelos passageiros. Se
+considerarmos ainda a renegociação dos contratos em curso no âmbito da Secretaria de
+Controle Externo de Solução Consensual e Prevenção de Conﬂitos (SecexConsenso) do
+Tribunal de Contas da União - TCU, é esperado que apenas as Contribuições Fixas dos
+Aeroportos de Guarulhos (SBGR) e Conﬁns (SBCF) estejam aptas para custear os
+investimentos.
+
+
+2.19.        Nesse cenário em que a modernização dos equipamentos empregados nos canais
+de inspeção será custeada provavelmente ou em boa parte pelos próprios usuários, mediante a
+majoração do valor das tarifas aeroportuárias, tanto nos aeroportos concedidos quanto nos
+aeroportos não concedidos, a avaliação do custo-benefício dos investimentos é
+fundamental, isto é, se o número de usuários atingidos e o risco à AVSEC dos
+aeródromos justiﬁca o valor dos investimentos e dos custos envolvidos, devendo
+a ANAC estabelecer requisitos mínimos de segurança dos aeródromos em função das
+necessidades de controle e do volume de passageiros a serem inspecionados, vide o art.
+84, parágrafo único, do Programa Nacional de Segurança da Aviação Civil contra Atos de
+Interferência Ilícita - PNAVSEC[9].
+
+
+
+
+                        Voto 12431403    SEI 00058.024978/2025-68 / pg. 6
+Voto 12431403   SEI 00058.024978/2025-68 / pg. 7
+Voto 12431403   SEI 00058.024978/2025-68 / pg. 8
+2.32.        Adicionalmente, sugiro a inclusão de artigo na Resolução que possibilite que os
+operadores de aeródromo possam propor à Agência outros equipamentos utilizados em canais
+de inspeção de pessoas e pertences de mão não previstos ou exigidos na Resolução, desde
+que contribuam para o aprimoramento da AVSEC e a melhoria da experiência do passageiro.
+                    Inclusão de novo artigo no Anexo I da Resolução
+                    Art. 6° Os operadores de aeródromos poderão propor à ANAC outros procedimentos e
+                    equipamentos utilizados em canais de inspeção de pessoas e pertences de mão não
+                    previstos nos artigos anteriores, que possibilitem o aprimoramento da AVSEC e a
+                    melhoria da experiência dos passageiros.
+
+
+2.33.         Por ﬁm, considerando (1) o impacto da norma de modernização dos equipamentos
+de inspeção de segurança sobre a infraestrutura dos terminais de passageiros dos aeroportos
+concedidos, que ensejará a análise de Revisão Extraordinária dos contratos concessão; (2) a
+possibilidade de haver controvérsias quanto à solução de engenharia a ser implementada pelas
+concessionárias e o valor a ser reequilibrado, e (3) tendo ciência do custo regulatório de a
+Agência analisar diversos pleitos de Revisão Extraordinária de alta complexidade
+simultaneamente; acolho a recomendação da SRA e proponho que a Resolução preveja uma
+etapa prévia e faseada de análise de projeto e de preciﬁcação dos investimentos e seus
+custos, que seriam avaliados conjuntamente pela SIA, nos aspectos de sua competência, e
+pela SRA, nos aspectos contratuais. Será priorizada a análise de projetos dos aeródromos cuja
+norma determine a instalação de equipamentos com maior impacto na infraestrutura, de modo
+que a recomposição do equilíbrio econômico-ﬁnanceiro poderia iniciar após aprovação do
+projeto e deferimento do pleito de Revisão Extraordinária, que deverá ser acompanhado de
+termo aditivo contratual.
+                    Inclusão de novo artigo no corpo da Resolução e renumeração dos artigos subsequentes
+                    Art. 6º As concessionárias dos aeroportos sob regime de Concessão Pública Federal
+                    deverão apresentar previamente à ANAC projeto e memorial de cálculo do impacto
+                    econômico-ﬁnanceiro dos investimentos e dos custos para o atendimento às regras
+                    estabelecidas no Anexo I desta Resolução, bem como a forma proposta para
+
+
+                        Voto 12431403      SEI 00058.024978/2025-68 / pg. 9
+                     recomposição do equilíbrio econômico-financeiro do contrato de concessão.
+                     § 1° As concessionárias dos aeroportos enquadrados no art. 1° do Anexo I desta
+                     Resolução deverão apresentar o projeto e o memorial de cálculo do impacto econômico-
+                     financeiro em até 180 (cento e oitenta) dias da data de publicação desta Resolução.
+                     § 2° As concessionárias dos aeroportos enquadrados nos arts. 2°, 3° e 5° do Anexo I
+                     desta Resolução deverão apresentar o projeto e o memorial de cálculo do impacto
+                     econômico-financeiro em até 90 (noventa) dias da data de publicação desta Resolução.
+                     § 3° A ANAC avaliará o projeto e o memorial de cálculo do impacto econômico-ﬁnanceiro
+                     no prazo de 60 (sessenta) dias, a contar dos prazos estabelecidos nos parágrafos 1° e 2°
+                     ou do recebimento do projeto e do memorial de cálculo do impacto econômico-ﬁnanceiro,
+                     o que ocorrer por último.
+                     § 4° Caso o projeto e o memorial de cálculo do impacto econômico-ﬁnanceiro não sejam
+                     aprovados pela ANAC, a concessionária terá o prazo máximo a ser ﬁxado pela ANAC
+                     para reapresentá-los, com as adequações necessárias.
+                     § 5° A recomposição do equilíbrio econômico-ﬁnanceiro do contrato de concessão
+                     iniciará após aprovação do projeto e do deferimento do pleito de Revisão Extraordinária,
+                     que deverá ser acompanhado de termo aditivo contratual.
+
+
+2.34.         No mais, registro que a presente proposta, além de ser submetida a escrutínio
+público - a partir do qual poderão ser prospectadas sugestões e reﬂexões pertinentes - não
+encerra os esforços desta ANAC em prol da modernização tecnológica, de equipamentos e de
+procedimentos aeroportuários. Iniciativas subsequentes já são ou serão estruturadas no curto
+prazo, seja para ampliação do alcance das obrigações ora sugeridas, seja para inclusão de
+novas ferramentas de segurança e controle. Serão somadas a elas, ainda, propostas
+capitaneadas pelo Ministério de Portos e Aeroportos, como a Política Nacional de Identiﬁcação
+Biométrica, cuja consulta pública já está aberta[18] . Todas essas medidas constituirão um
+conjunto coeso, a ser implementado de forma eﬁciente e racional, observadas as melhores
+práticas regulatórias e de gestão pública, em prol da otimização dos serviços aéreos no Brasil.
+
+2.35.        Diante do exposto, proponho a submissão da minuta de Resolução à Consulta
+Pública, considerando os ajustes apresentados neste Voto, pelo prazo de 45 (quarenta e cinco)
+dias, em observância ao art. 9°, § 2°, da Lei 13.848, de 25 de junho de 2019.
+
+2.36.         Ainda, considerando que os investimentos previstos na proposta normativa
+poderão ser custeados, no caso dos aeroportos concedidos pelas outorgas devidas pelas
+concessionárias e pelos usuários, através da majoração das tarifas aeroportuárias; e no caso
+de conveniados, por aportes de recursos federais, julgo oportuno dar ciência desde já ao
+Ministério de Portos e Aeroportos, em observância à Portaria n° 681, de 25 de novembro de
+2025, da proposta normativa em tela, do Relatório de AIR, do Despacho SEI! n° 11554802 e
+deste Voto, visando a avaliação de sua adequação à política pública instituída pelo Ministério
+para o setor de aviação civil.
+
+3.           DO VOTO
+3.1.        Ante o exposto, VOTO FAVORAVELMENTE à instauração de consulta pública
+acerca de proposta de Resolução que busca modernizar os equipamentos empregados na
+Segurança da Aviação Civil contra Atos de Interferência Ilícita (AVSEC), com enfoque na
+inspeção de pessoas e seus pertences de mão, especialmente nos pontos de controle de
+acesso de passageiros, observados os seguintes ajustes:
+     3.1.1.       Exclusão do teor art. 1° do Anexo I da Resolução, conforme o item 2.24 deste
+     Voto, e renumeração dos arts. 2° ao 4°, que passam a ser os arts. 1° ao 3°;
+     3.1.2.       Ajustes pontuais nos arts. 1° ao 3° do Anexo I da Resolução, já renumerados,
+     conforme o item 2.25 deste Voto;
+
+                        Voto 12431403       SEI 00058.024978/2025-68 / pg. 10
+     3.1.3.       Inclusão de novo art. 4° ao Anexo I da Resolução, conforme proposto no item
+     2.24 deste Voto;
+     3.1.4.       Alteração do art. 5° ao Anexo I da Resolução, conforme proposto nos itens
+     2.30 e 2.31 deste Voto;
+     3.1.5.     Inclusão de novo art. 6° da Resolução e renumeração dos artigos
+     subsequentes, conforme proposto no item 2.33 deste Voto .
+
+3.2.        No mais, proponho dar ciência ao Ministério de Portos e Aeroportos, em
+observância à Portaria n° 681, de 25 de novembro de 2025, da proposta normativa em tela e
+demais documentos previstos no item 2.36 deste Voto.
+
+
+               É como voto.
+
+
+                                        RUI CHAGAS MESQUITA
+                                                   Diretor
+____________________________
+[1] Relatório de Diretoria SEI! n° 12346000
+[2] Versão restrita n° SEI! 11908090 e versão pública n° SEI! 11896675.
+[3] Aviso de Consulta Pública n° SEI! 11981328
+[4] Justificativa de Consulta Pública n° SEI! 11892567
+[5] Relatório de AIR Nº 4/2025/GTNO-SIA/GNAD/SIA (n° SEI! 11495656).
+[6] Conjunto mínimo de recursos materiais e humanos em cada unidade processadora de passageiros
+[7] Conforme cláusula de alocação de risco adotada a partir da quinta rodada de concessões.
+[8] Conforme cláusula de alocação de riscos adotada até a quarta rodada de concessões.
+[9] Art. 84, parágrafo único, do PNAVSEC: "A ANAC estabelecerá requisitos mínimos de segurança para
+cada aeródromo, em função das necessidades de controle de segurança e do volume de passageiros a
+serem inspecionados".
+[10] Itens 14.7 a 14.9 do Relatório de AIR n° SEI! 11495656
+[11] Despacho DIR-MCA n° SEI! 11554802
+[12] https://www.gov.br/anac/pt-br/assuntos/regulados/aeroportos-e-aerodromos/lista-dos-aerodromos-de-
+uso-publico-por-classes-do-rbac-no-153-e-por-perfil-operacional-da-classe-i
+[13] Index of /dadosabertos/Voos e operações aéreas/Dados Estatísticos do Transporte Aéreo/
+[14] Item 4.24 da Nota Técnica n° 11/2025/GTNO-SIA/GNAD/SIA (SEI! 11644578)
+[15] Contemplados nos arts. 2° e 3° da redação original do Anexo I da Resolução (SEI! 11908090)
+[16] Contemplados no art. 4° da redação original do Anexo I da Resolução (SEI! n° 11908090)
+
+
+
+
+[18] Disponível em https://brasilparticipativo.presidencia.gov.br/processes/ouvidoria.
+
+
+
+              Documento assinado eletronicamente por Rui Chagas Mesquita, Diretor, em 22/01/2026, às
+              13:00, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543,
+              de 13 de novembro de 2020.
+
+
+
+
+                            Voto 12431403       SEI 00058.024978/2025-68 / pg. 11
+A autenticidade deste documento pode ser conferida no site
+https://sei.anac.gov.br/sei/autenticidade, informando o código verificador 12431403 e o código
+CRC 06184D97.
+
+
+
+
+                                                                                 SEI nº 12431403
+
+
+
+
+              Voto 12431403      SEI 00058.024978/2025-68 / pg. 12
+

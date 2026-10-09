@@ -1,0 +1,61 @@
+SEI/ANAC - 13819059 - Voto
+
+Voto
+
+PROCESSO: 00058.068152/2026-91
+
+RELATOR: roberto josé silveira honorato
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182/2005, por meio dos artigos 8º e 11, confere à ANAC a competência para adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da aviação civil, da infraestrutura aeronáutica e aeroportuária do País.
+
+Segundo o mesmo diploma legal, compete à Diretoria exercer o poder normativo da Agência (art. 11, inciso V), faculdade corroborada pelo Decreto nº 5.731, de 20 de março de 2006, o qual estabelece que à Diretoria compete, em regime de colegiado, analisar, discutir e decidir, em instância administrativa final, as matérias de competência da Agência, bem como exercer o poder normativo da ANAC (art. 24, inciso VIII).
+
+Dessa forma, fica evidente a competência da Diretoria Colegiada para analisar a presente proposta normativa.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+A proposta altera os parágrafos 91.207(e) e (f) do RBAC nº 91 para substituir as referências a “avião” por “aeronave”, com os ajustes de concordância. O objetivo é permitir que as exceções ali previstas também alcancem as demais aeronaves sujeitas ao requisito 91.207(a)(5), quando atendidas as condições de cada hipótese.
+
+A matéria decorre das discussões do Processo nº 00058.028886/2023-95 , apreciado na 18ª Reunião Deliberativa, realizada em 21 de novembro de 2023. A Decisão nº 640, de 23 de novembro de 2023, deferiu ao Aeroclube de Voo a Vela CTA isenção parcial do requisito 91.207(a)(5) para planadores em treinamento local dentro de 50 NM do aeródromo de origem e para planadores com capacidade para transportar somente uma pessoa. O Voto SEI nº 9166128 determinou o prosseguimento da proposta de alteração normativa em processo administrativo específico.
+
+A NT nº 5/2026/GTNO-SAG/GNAG/SAG (SEI nº 13719585 ) retoma a discussão técnica anterior e identifica tratamento distinto entre aeronaves que realizam operações abrangidas pelas mesmas hipóteses de exceção. A SAG considera razoável estender essas hipóteses às demais aeronaves alcançadas pelo parágrafo (a)(5), nos limites e condições dos parágrafos (e) e (f). Adoto, portanto, essa fundamentação de proporcionalidade para a alteração proposta.
+
+O parágrafo 91.207(a) contém exigências distintas conforme a aeronave e a operação. Seus subparágrafos (1) a (3) disciplinam hipóteses relativas a aviões, enquanto o subparágrafo (5) prevê, para as aeronaves nele relacionadas, ELT de qualquer tipo, PLB ou outro dispositivo similar autorizado pela ANAC. A análise deve considerar essas alternativas, sem pressupor que todos os operadores estejam obrigados a realizar projeto de instalação de ELT fixo. Nesse sentido, a comparação com a seção 91.207 do 14 CFR Part 91, regulamento americano , demonstra que a regra geral norte-americana se dirige a aviões civis registrados nos Estados Unidos, com as exceções nela previstas. Essa referência auxilia a compreensão da origem do regulamento, mas não permite concluir que toda aeronave leve esportiva, rebocadora de planador, acrobática ou lançadora de paraquedistas esteja dispensada de ELT. Vale dizer, essas designações podem compreender aviões, cujo enquadramento depende das regras e exceções aplicáveis.
+
+Segundo a pesquisa histórica registrada nos autos, na fase final de elaboração do RBAC nº 91, aprovado pela Resolução nº 546, de 18 de março de 2020, a retirada da exigência específica de ELT para helicópteros foi acompanhada da substituição de “aeronave” por “avião” nos parágrafos (e) e (f). A própria exigência do parágrafo (a)(5) permaneceu aplicável às aeronaves ali relacionadas, que deixaram de ser alcançadas pelas exceções quando não classificadas como aviões.
+
+A área técnica não identificou, no histórico examinado, justificativa para excluir esse conjunto de aeronaves das exceções. A proposta corrige, portanto, a inconsistência mediante ajuste dos parágrafos (e) e (f), preservando o conteúdo das condições operacionais neles estabelecidas . A alteração não modifica o parágrafo (a), nem introduz exigência específica de ELT para helicópteros, matéria tratada no Processo nº 00058.000796/2024-11 .
+
+Entendo que as exceções devem ser aplicadas segundo seus pressupostos próprios. O parágrafo (f)(1) refere-se a treinamento de voo local inteiramente contido em área de raio de 93 km (50 NM), centrada no aeródromo de origem. O parágrafo (f)(7), por sua vez, alcança aeronaves com capacidade para transportar somente uma pessoa e aeronaves de categoria primária. A simples realização de voo local não basta para enquadramento no (f)(1).
+
+Quanto à Análise de Impacto Regulatório, acolho a justificativa do Despacho GTNO-SAG SEI nº 13726231 para sua dispensa com fundamento no art. 21, inciso VI, da Instrução Normativa nº 154, de 20 de março de 2020. A proposta reduz exigências e custos regulatórios ao permitir a aplicação direta das exceções às aeronaves abrangidas, diminuindo a necessidade de processos individuais de isenção. A dispensa é apreciada juntamente com a proposta, nos termos do art. 22, § 2º, da mesma Instrução Normativa. O art. 21, § 1º, da IN nº 154/2020 prevê a realização facultativa de consulta pública nos casos de dispensa de AIR, com exigência de outro mecanismo de participação social nas hipóteses dos incisos III e V. Considerando o enquadramento no inciso VI, a natureza corretiva da proposta, a redução de exigências e a preservação das condições das exceções, acolho a não realização de consulta pública, nos termos da justificativa constante do Despacho SEI nº 13726231 .
+
+No documento SEI nº 13797738 , a Procuradoria Federal Especializada junto à ANAC registrou, a título de assessoramento jurídico, entendimento pela desnecessidade de encaminhamento dos autos para novo pronunciamento, considerando a alteração descrita como correção de erro material. Registro esse entendimento no alcance em que foi emitido, sem lhe atribuir natureza de parecer formal específico sobre a íntegra da minuta. A SPL, por sua vez, manifestou não objeção à proposta, conforme Despacho SEI nº 13806099 , com fundamento no Despacho SEI nº 13805955 .
+
+A Resolução proposta prevê entrada em vigor na sua data de publicação e, a partir desse marco, as novas hipóteses de dispensas, poderão ser aplicadas pelos operadores que preencham os seus respectivos pressupostos.
+
+Ainda, ao me preparar para a apresentação desse processo, recebi a Federação Brasileira de Voo em Planadores - FBVP, à qual agradeço pela solicitude em trazer algunas questões regulatórias para consideração da ANAC. Posteriormente, em coordenação com a SPL, entendemos que parte dessas demandas são questões que poderiam ser antecipadas para deliberação desse colegiado frente a uma revisão mais ampla que está sendo preparada pela área, assunto que tratarei nas recomendações finais.
+
+3. DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação da Emenda nº 08 ao RBAC nº 91, conforme a proposta de resolução SEI nº 13715197 e o anexo SEI nº 13719246 .
+
+Determino à SAG que promova a divulgação da alteração e oriente sua aplicação e fiscalização, observados o alcance das exceções e a data de entrada em vigor, bem como acompanhe os efeitos da medida no âmbito de suas competências.
+
+Recomendo ainda à SPL que avalie a antecipação, no âmbito do RBAC 61, do tratamento das matérias correlatas à presente alteração, que se encontram suficientemente maduras para deliberação.
+
+Por fim, endereço meu reconhecimento à SAG pela rapidez que permitiu a construção dessa solução aderente à particularidade das operações registradas pelo presente Regulamento.
+
+É como voto.
+
+ROBERTO JOSÉ SILVEIRA HONORATO
+
+Diretor
+
+Documento assinado eletronicamente por Roberto José Silveira Honorato , Diretor , em 25/09/2026, às 18:00, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13819059 e o código CRC DC4C3121 .
+
+SEI nº 13819059

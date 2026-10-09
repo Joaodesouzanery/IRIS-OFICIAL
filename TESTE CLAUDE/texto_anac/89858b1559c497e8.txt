@@ -1,0 +1,55 @@
+SEI/ANAC - 13028318 - Voto
+
+Voto
+
+PROCESSO: 00058.011199/2025-01
+
+RELATOR: roberto josé silveira honorato
+
+dA COMPETÊNCIA
+
+A Lei n.º 11.182/2005, em seus artigos 8º e 11, estabelece a competência da ANAC para regular e fiscalizar os serviços aéreos, a formação e o treinamento de pessoal especializado, a habilitação de tripulantes, bem como a competência da Diretoria Colegiada para exercer o poder normativo da Agência.
+
+O Regimento Interno da ANAC, aprovado pela Resolução n.º 381/2016, prevê, entre as competências comuns às Superintendências, avaliar e submeter à Diretoria as petições de isenção a requisitos de regulamentos. O mesmo Regimento (art. 41-A, inciso I) estabelece como competência da Superintendência de Pessoal da Aviação Civil (SPL) submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à instrução e treinamento de tripulantes.
+
+A Instrução Normativa n.º 154, de 20 de março de 2020, estabelece que as petições de isenção a requisitos de RBAC, recebidas em conformidade com o previsto no RBAC n.º 11, após avaliação de mérito pela área finalística competente pelo assunto, que conclua pela recomendação de deferimento, serão encaminhadas para apreciação da Diretoria (art. 47).
+
+Nesse sentido, fica evidente a competência da Diretoria Colegiada da Agência para analisar a presente matéria.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme exposto no Relatório, a organização CW Aviação Ltda. (nome fantasia Thrush Aircraft do Brasil ) solicitou isenção de cumprimento do requisito 61.19(b)(2) do RBAC nº 61, relativo à vigência de habilitação de tipo , de modo que a habilitação da aeronave S2R-T660 do aeronauta Ivan Alex Negretti possa ser estendida por prazo superior aos 12 (doze) meses previsto no regulamento, período no qual o fabricante (peticionário) se comprometeu a estabelecer um programa de treinamento inicial e periódico para os pilotos, de forma a permitir que a habilitação de tipo para operar o equipamento possa ser obtida conforme o rito previsto no RBAC nº 61, o que tornaria desnecessária a emissão de novas isenções desta natureza.
+
+Inicialmente, a Thrush solicitou a extensão da validade da habilitação por 12 (doze) meses, o que ensejou a uma contraproposta da SPL (SEI nº 12871262 ) sugerindo que essa prorrogação se estenda apenas até setembro de 2026. Além disso, a extensã o da isenção ficaria condicionada à apresentação, por parte do fabricante do avião, de um programa de treinamento de pilotos que possibilite aos aeronautas obter a habilitação de tipo de acordo com as exigências estabelecidas pelo RBAC nº 61, até 31/08/26, sob risco de suspensão dessa habilitação.
+
+No curso da instrução, foi realizada reunião a pedido da CW Aviação Ltda., com o objetivo de discutir o pleito formulado no SEI nº 12844666 , referente à prorrogação da isenção anteriormente concedida ao piloto CANAC 223840. Recorde-se que, por meio da Decisão nº 702, de 20 de fevereiro de 2025, foi deferida isenção parcial da seção 61.213 do RBAC nº 61, para fins de concessão da habilitação de tipo A660 ao referido piloto. Diante da proximidade do término da vigência dessa habilitação, a interessada requereu a manutenção da medida por mais 12 (doze) meses.
+
+Em atendimento às solicitações da área técnica, a empresa apresentou proposta de mitigação posteriormente juntada aos autos sob o SEI nº 12869227 , com o propósito de subsidiar a análise da extensão pretendida. A partir da avaliação desse material, a área técnica indicou, para o caso concreto, solução intermediária consistente na prorrogação, por isenção, da vigência da habilitação A660 até setembro de 2026, condicionada à realização, nessa data, de treinamento e cheque em aeronave para fins de renovação.
+
+Conforme relatado, a proposta foi amparada por elementos específicos do caso, notadamente o fato de o piloto permanecer em atividade, em período de safra, acumulando experiência operacional na aeronave, sem registro de ocorrências de segurança, bem como pela circunstância de se tratar de aeronave privada, sem autorização para prestação de serviços a terceiros, operando em regiões não povoadas. A reunião também evidenciou que a questão extrapola o caso individual, alcançando discussão mais ampla acerca dos requisitos aplicáveis à habilitação A660.
+
+Nesse contexto, ficou consignado que a Thrush manterá tratativas com a Agência para definição do treinamento inicial e periódico aplicável ao modelo, discussão que também servirá de referência para a situação do piloto, tendo a empresa assumido, ademais, o compromisso de não introduzir segunda aeronave no Brasil antes da aprovação do treinamento correspondente. Ainda na ocasião, os representantes da fabricante manifestaram interesse em rediscutir a própria exigência de habilitação de tipo para a aeronave. Sobre esse aspecto, a área técnica informou estar em elaboração proposta de revisão do processo de endosso previsto na seção 61.199 do RBAC nº 61, discussão que poderá, oportunamente, alcançar o modelo em questão, sem, contudo, produzir efeitos imediatos sobre o presente caso. Na hipótese dos autos, contempla-se, ainda, a realização de treinamento e de cheque em aeronave ao término da prorrogação ora examinada, com previsão expressa no sentido de que a referida habilitação será suspensa caso não seja apresentada à Agência proposta de programa de treinamento específico até 31 de agosto de 2026.
+
+Dessa maneira, adoto como razão de decidir o parecer favorável à aprovação emitido pela SPL, em especial o conteúdo da Nota Técnica n º 11/2026/GTNO-SPL/SPL (sei nº 13010647 ), que destaca as particularidades do ambiente operacional de uma operação aeroagrícola e as justificativas para a extensão do prazo para a referida habilitação. Ressalto ainda o caráter concreto da isenção, endereçada a um aeronauta, considerando que ainda não há, para a referida aeronave, um currículo ou programa de treinamento aprovado pela ANAC ou mesmo um CTAC .
+
+Quanto ao impacto à segurança operacional, concordo com a SPL de que este é extremamente limitado, pois seu escopo abrange apenas uma aeronave e um único piloto, o qual detém elevada experiência operacional no modelo e não possui qualquer histórico que o desabone . Inobstante, a aeronave Thrush S2R-T660 é certificada e aprovada na categoria restrita para missões com objetivos específicos e, por essa razão, as suas operações devem observar o disposto na seção 91.313 do RBAC n.º 91, ou seja, somente é permitido operar essa aeronave para os propósitos para os quais ela foi certificada, sendo vedado o transporte de passageiros ou cargas com fins lucrativos.
+
+Dessa forma, considerando os argumentos de mérito apresentados pela SPL, concordo com a proposta encaminhada e com o deferimento do pedido de isenção nos termos apresentados pela área técnica (SEI nº 13021070 ).
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE pelo deferimento do pedido de isenção protocolado pela Thrush Aircraft do Brasil , conforme proposta encaminhada pela SPL (SEI nº 13021070 ), estendendo o prazo máximo para comprovação dos requisitos de treinamento e realização de exames de proficiência referentes à habilitação de tipo A660 do piloto Ivan Alex Negretti , CANAC 223840 , até o mês de setembro de 2026.
+
+Encaminhem-se os autos à SPL para as providências administrativas cabíveis.
+
+É como voto.
+
+ROBERTO JOSÉ SILVEIRA HONORATO
+
+Diretor
+
+Documento assinado eletronicamente por Roberto José Silveira Honorato , Diretor , em 26/03/2026, às 09:41, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13028318 e o código CRC 0EBF08E5 .
+
+SEI nº 13028318

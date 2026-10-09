@@ -1,0 +1,1124 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.101007/2024-68
+
+Tipo: Aeródromos: Gestão dos Contratos de Concessão
+
+Data de Geração: 25/11/2024
+
+Interessados: Fraport Brasil S.A. Aeroporto de Fortaleza
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (105 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+10854930 Carta 25/11/2024 25/11/2024 SRA
+10854931 Recibo Eletrônico de Protocolo 25/11/2024 25/11/2024 SRA
+10855001 Anexo 25/11/2024 25/11/2024 SRA
+10855002 Anexo 25/11/2024 25/11/2024 SRA
+10855003 Anexo 25/11/2024 25/11/2024 SRA
+10855004 Anexo 25/11/2024 25/11/2024 SRA
+10855005 Anexo 25/11/2024 25/11/2024 SRA
+10855006 Anexo 25/11/2024 25/11/2024 SRA
+10855007 Anexo 25/11/2024 25/11/2024 SRA
+10855008 Anexo 25/11/2024 25/11/2024 SRA
+10855009 Anexo 25/11/2024 25/11/2024 SRA
+10855010 Recibo Eletrônico de Protocolo 25/11/2024 25/11/2024 SRA
+10902529 Nota Técnica 247 20/12/2024 20/12/2024 GEIC
+10909057 Ofício 384 20/12/2024 20/12/2024 GEIC
+10909222 Proposta de Ato (Normativo, Decisão etc.) 20/12/2024 20/12/2024 GEIC
+10971401 Certidão de Intimação Cumprida 20/12/2024 20/12/2024 GEIC
+11166556 Carta 14/02/2025 14/02/2025 GEIC
+11166557 Anexo 14/02/2025 14/02/2025 GEIC
+11166559 Recibo Eletrônico de Protocolo 14/02/2025 14/02/2025 GEIC
+11179109 Nota Técnica 34 27/02/2025 27/02/2025 GEIC
+11186205 Ofício 19/02/2025 19/02/2025 GEIC
+11190343 Proposta de Ato (Normativo, Decisão etc.) 27/02/2025 27/02/2025 GEIC
+11218114 Anexo 26/02/2025 26/02/2025 GEIC
+11256859 Despacho 12/03/2025 12/03/2025 SRA
+11390297 Parecer 10/2025/CMF/PFEANAC/PGF/AGU 07/04/2025 07/04/2025 PF-ANAC
+11390305 Despacho 31/2025/CMF/PFEANAC/PGF/AGU 07/04/2025 07/04/2025 PF-ANAC
+11390314 Despacho 14/2025/GAB/PFEANAC/PGF/AGU 07/04/2025 07/04/2025 PF-ANAC
+11390327 Despacho de Aprovação 65/2025/GAB/PFEANAC/PGF/AGU 07/04/2025 07/04/2025 PF-ANAC
+11392460 Ofício 51 08/04/2025 08/04/2025 GEIC
+11392531 Proposta de Ato (Normativo, Decisão etc.) 08/04/2025 08/04/2025 GEIC
+11393650 Certidão de Intimação Cumprida 08/04/2025 08/04/2025 GEIC
+11451915 Carta 23/04/2025 23/04/2025 GEIC
+11451916 Recibo Eletrônico de Protocolo 23/04/2025 23/04/2025 GEIC
+11454377 Despacho 30/04/2025 30/04/2025 SRA
+11496056 Certidão de Distribuição 05/05/2025 05/05/2025 ASTEC
+11528553 Despacho 12/05/2025 12/05/2025 SRA
+11528657 Proposta de Ato (Normativo, Decisão etc.) 12/05/2025 12/05/2025 SRA
+11506527 Relatório de Diretoria 13/05/2025 13/05/2025 DIR-TP
+11524993 Voto 13/05/2025 13/05/2025 DIR-TP
+11533134 Despacho 13/05/2025 13/05/2025 ASTEC
+11535463 Voto 13/05/2025 13/05/2025 DIR-MCA
+11539129 Voto 14/05/2025 14/05/2025 DIR-LRI
+11540758 Voto 15/05/2025 15/05/2025 DIR-P
+11545814 Decisão 709 15/05/2025 15/05/2025 ASTEC
+11556908 Anexo DOU 19/05/2025 19/05/2025 GTIN-Publicações
+11556924 Certidão de Deliberação 19/05/2025 19/05/2025 ASTEC
+11558213 Ofício 15 19/05/2025 19/05/2025 ASTEC
+11565900 Despacho 21/05/2025 21/05/2025 GEIC
+11568136 Certidão de Intimação Cumprida 20/05/2025 20/05/2025 ASTEC
+11593702 Despacho 26/05/2025 26/05/2025 GERE
+11581612 Ofício 75 27/05/2025 27/05/2025 SRA
+11611203 Certidão de Intimação Cumprida 29/05/2025 29/05/2025 SRA
+11716147 Carta 24/06/2025 24/06/2025 GERE
+11716148 Anexo 24/06/2025 24/06/2025 GERE
+11716149 Recibo Eletrônico de Protocolo 24/06/2025 24/06/2025 GERE
+11758230 Anexo 03/07/2025 03/07/2025 SRA
+11758231 Anexo 03/07/2025 03/07/2025 SRA
+11758232 Recibo Eletrônico de Protocolo 03/07/2025 03/07/2025 SRA
+11597495 Termo Aditivo 16/07/2025 16/07/2025 SRA
+11757905 Ofício 98 07/07/2025 07/07/2025 SRA
+11757911 Despacho 23/07/2025 23/07/2025 SRA
+11847809 Certidão de Intimação Cumprida 25/07/2025 25/07/2025 SRA
+11854872 Extrato de ACT/TED/Termo Aditivo 29/07/2025 29/07/2025 SRA
+11856451 Despacho 30/07/2025 30/07/2025 GOIA
+11884962 Anexo 04/08/2025 04/08/2025 GTIN-Publicações
+11931307 Ofício 143 14/08/2025 14/08/2025 GOIA
+11934432 Ofício 125 15/08/2025 15/08/2025 SRA
+11936015 Despacho 14/08/2025 14/08/2025 GOIA
+11940000 Recibo de Peticionamento 78.709.316-5 15/08/2025 15/08/2025 PROT-DF
+12000753 Certidão de Intimação Cumprida 29/08/2025 29/08/2025 GOIA
+12035511 Despacho 02/09/2025 08/09/2025 GERE
+13237627 Ofício 78 12/05/2026 12/05/2026 GEIC
+13281700 Certidão de Intimação Cumprida 13/05/2026 13/05/2026 GEIC
+13356927 Carta 25/05/2026 25/05/2026 GEIC
+13356929 Anexo 25/05/2026 25/05/2026 GEIC
+13356932 Recibo Eletrônico de Protocolo 25/05/2026 25/05/2026 GEIC
+13417046 Nota Técnica 65 16/06/2026 16/06/2026 GEIC
+13467754 Anexo 10/06/2026 10/06/2026 GEIC
+13467791 Proposta de Ato (Normativo, Decisão etc.) 16/06/2026 16/06/2026 GEIC
+13483335 Ofício 141 16/06/2026 16/06/2026 GEIC
+13492795 Certidão de Intimação Cumprida 16/06/2026 16/06/2026 GEIC
+13553850 Carta 01/07/2026 01/07/2026 GEIC
+13553851 Recibo Eletrônico de Protocolo 01/07/2026 01/07/2026 GEIC
+13570236 Despacho 06/07/2026 06/07/2026 GEIC
+13573648 Despacho 08/07/2026 08/07/2026 SRA
+13588996 Certidão de Distribuição 09/07/2026 09/07/2026 ASTEC
+13662751 Ofício 256 30/07/2026 30/07/2026 GEIC
+13674301 Certidão de Intimação Cumprida 30/07/2026 30/07/2026 GEIC
+13638963 Relatório de Diretoria 04/08/2026 04/08/2026 DIR-MNM
+13639363 Voto 04/08/2026 04/08/2026 DIR-MNM
+13692955 Despacho 04/08/2026 04/08/2026 ASTEC
+13693268 Voto 07/08/2026 07/08/2026 DIR-RJH
+13693436 Voto 05/08/2026 05/08/2026 DIR-CBI
+13693972 Voto 05/08/2026 05/08/2026 DIR-P
+13707065 Voto 07/08/2026 07/08/2026 DIR-RCM
+13714873 Decisão 751 11/08/2026 11/08/2026 ASTEC
+13725020 Anexo DOU 12/08/2026 12/08/2026 ASTEC
+13725025 Certidão de Deliberação 12/08/2026 12/08/2026 ASTEC
+13731685 Carta 13/08/2026 13/08/2026 GERE
+13731688 Recibo Eletrônico de Protocolo 13/08/2026 13/08/2026 GERE
+13731903 Ofício 324 14/08/2026 14/08/2026 GEIC
+13759578 Certidão de Intimação Cumprida 19/08/2026 19/08/2026 GEIC
+13809121 Carta 31/08/2026 31/08/2026 GERE
+13809123 Anexo 31/08/2026 31/08/2026 GERE
+13809128 Recibo Eletrônico de Protocolo 31/08/2026 31/08/2026 GERE
+
+Lista de Andamentos (196 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+03/09/2026 16:58
+GEIC
+
+Conclusão do processo na unidade
+
+03/09/2026 16:58
+GEIC
+
+Alterado nível de acesso do documento 13809123 (Anexo) para público
+
+03/09/2026 10:59
+DIR-CBI
+
+Conclusão do processo na unidade
+
+02/09/2026 00:02
+GEIC
+
+Reabertura do processo na unidade
+
+01/09/2026 08:29
+GERE
+
+Processo recebido na unidade
+
+31/08/2026 17:25
+GERE
+
+Processo remetido pela unidade GERE
+
+19/08/2026 16:28
+GEIC
+
+Conclusão do processo na unidade
+
+19/08/2026 16:26
+GEIC
+
+Processo recebido na unidade
+
+19/08/2026 16:25
+GEIC
+
+Processo remetido pela unidade GEIC
+
+19/08/2026 16:25
+GEIC
+
+Reabertura do processo na unidade
+
+19/08/2026 16:24
+GEIC
+
+Conclusão do processo na unidade
+
+17/08/2026 16:51
+DIR-P
+
+Conclusão do processo na unidade
+
+13/08/2026 14:54
+GERE
+
+Processo recebido na unidade
+
+13/08/2026 14:30
+GERE
+
+Processo remetido pela unidade GERE
+
+12/08/2026 17:09
+GERE
+
+Processo recebido na unidade
+
+12/08/2026 16:53
+GEIC
+
+Processo recebido na unidade
+
+12/08/2026 16:41
+GERE
+
+Processo remetido pela unidade SRA
+
+12/08/2026 16:41
+GEIC
+
+Processo remetido pela unidade SRA
+
+12/08/2026 16:38
+SRA
+
+Processo recebido na unidade
+
+12/08/2026 12:19
+SRA
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 14:34
+DIR-RCM
+
+Conclusão do processo na unidade
+
+10/08/2026 10:54
+DIR-MNM
+
+Conclusão do processo na unidade
+
+09/08/2026 15:38
+DIR-RJH
+
+Conclusão do processo na unidade
+
+04/08/2026 14:59
+DIR-P
+
+Processo recebido na unidade
+
+04/08/2026 14:05
+DIR-CBI
+
+Processo recebido na unidade
+
+04/08/2026 13:29
+DIR-RJH
+
+Processo recebido na unidade
+
+04/08/2026 12:30
+DIR-RCM
+
+Processo recebido na unidade
+
+04/08/2026 12:10
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+04/08/2026 12:10
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+04/08/2026 12:10
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+04/08/2026 12:10
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+31/07/2026 10:06
+ASTEC
+
+Reabertura do processo na unidade
+
+30/07/2026 14:17
+GEIC
+
+Conclusão do processo na unidade
+
+30/07/2026 10:46
+GEIC
+
+Processo recebido na unidade
+
+30/07/2026 10:46
+GEIC
+
+Processo remetido pela unidade GEIC
+
+28/07/2026 06:51
+GEIC
+
+Reabertura do processo na unidade
+
+10/07/2026 13:00
+DIR-MNM
+
+Processo recebido na unidade
+
+09/07/2026 16:42
+ASTEC
+
+Conclusão do processo na unidade
+
+09/07/2026 14:06
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+09/07/2026 11:37
+ASTEC
+
+Processo recebido na unidade
+
+08/07/2026 20:59
+ASTEC
+
+Processo remetido pela unidade SRA
+
+06/07/2026 10:50
+SRA
+
+Processo recebido na unidade
+
+06/07/2026 10:43
+SRA
+
+Processo remetido pela unidade GEIC
+
+01/07/2026 16:03
+GEIC
+
+Processo recebido na unidade
+
+01/07/2026 13:59
+GEIC
+
+Processo remetido pela unidade GEIC
+
+01/07/2026 13:59
+GEIC
+
+Reabertura do processo na unidade
+
+17/06/2026 10:27
+GEIC
+
+Conclusão do processo na unidade
+
+17/06/2026 10:27
+GEIC
+
+Processo recebido na unidade
+
+16/06/2026 17:59
+GEIC
+
+Processo remetido pela unidade GEIC
+
+16/06/2026 17:59
+GEIC
+
+Reabertura do processo na unidade
+
+16/06/2026 15:04
+GEIC
+
+Conclusão do processo na unidade
+
+25/05/2026 17:37
+GEIC
+
+Processo recebido na unidade
+
+25/05/2026 16:47
+GEIC
+
+Processo remetido pela unidade GEIC
+
+14/05/2026 11:16
+GEIC
+
+Processo recebido na unidade
+
+13/05/2026 18:14
+GEIC
+
+Processo remetido pela unidade GEIC
+
+07/05/2026 13:43
+GEIC
+
+Reabertura do processo na unidade
+
+21/10/2025 17:47
+GERE
+
+Conclusão do processo na unidade
+
+21/10/2025 17:46
+GERE
+
+Alterada hipótese legal do documento 11757911 (Despacho) para Inf sensíveis das empresas prestadoras de serviços (Parágrafo único do Art. 43 Decreto 5.731/2006)
+
+21/10/2025 17:46
+GERE
+
+Alterada hipótese legal do documento 11581612 (Ofício 75) para Inf sensíveis das empresas prestadoras de serviços (Parágrafo único do Art. 43 Decreto 5.731/2006)
+
+15/09/2025 15:44
+GOIA
+
+Conclusão do processo na unidade
+
+10/09/2025 14:49
+GEIC
+
+Conclusão do processo na unidade
+
+01/09/2025 08:07
+GOIA
+
+Processo recebido na unidade
+
+29/08/2025 23:03
+GOIA
+
+Processo remetido pela unidade GOIA
+
+29/08/2025 23:02
+GOIA
+
+Reabertura do processo na unidade
+
+28/08/2025 11:22
+GOIA
+
+Conclusão do processo na unidade
+
+20/08/2025 10:11
+GEIC
+
+Reabertura do processo na unidade
+
+20/08/2025 10:11
+GEIC
+
+Conclusão do processo na unidade
+
+15/08/2025 14:25
+PROT-DF
+
+Conclusão do processo na unidade
+
+15/08/2025 14:17
+PROT-DF
+
+Processo recebido na unidade
+
+15/08/2025 12:40
+SRA
+
+Conclusão do processo na unidade
+
+15/08/2025 12:07
+PROT-DF
+
+Processo remetido pela unidade SRA
+
+15/08/2025 08:12
+GEIC
+
+Processo recebido na unidade
+
+14/08/2025 17:55
+GEIC
+
+Processo remetido pela unidade GOIA
+
+14/08/2025 14:26
+SRA
+
+Reabertura do processo na unidade
+
+04/08/2025 10:20
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+01/08/2025 16:04
+GAB
+
+Conclusão do processo na unidade
+
+31/07/2025 13:52
+AUD
+
+Conclusão do processo na unidade
+
+30/07/2025 19:57
+GAB
+
+Processo recebido na unidade
+
+30/07/2025 16:28
+GTIN-Publicações
+
+Processo recebido na unidade
+
+30/07/2025 16:13
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+30/07/2025 16:13
+ASTEC
+
+Processo recebido na unidade
+
+30/07/2025 16:05
+AUD
+
+Processo recebido na unidade
+
+30/07/2025 15:46
+AUD
+
+Processo remetido pela unidade GOIA
+
+30/07/2025 15:46
+ASTEC
+
+Processo remetido pela unidade GOIA
+
+30/07/2025 15:46
+GAB
+
+Processo remetido pela unidade GOIA
+
+30/07/2025 08:49
+GOIA
+
+Processo recebido na unidade
+
+29/07/2025 21:34
+GOIA
+
+Processo remetido pela unidade SRA
+
+28/07/2025 10:32
+SRA
+
+Reabertura do processo na unidade
+
+28/07/2025 08:15
+GOIA
+
+Processo recebido na unidade
+
+25/07/2025 20:00
+GOIA
+
+Processo remetido pela unidade SRA
+
+25/07/2025 15:15
+DIR-P
+
+Conclusão do processo na unidade
+
+25/07/2025 11:55
+SRA
+
+Processo recebido na unidade
+
+25/07/2025 10:03
+DIR-P
+
+Processo recebido na unidade
+
+25/07/2025 09:25
+SRA
+
+Processo remetido pela unidade SRA
+
+25/07/2025 09:25
+SRA
+
+Reabertura do processo na unidade
+
+23/07/2025 17:49
+DIR-P
+
+Processo remetido pela unidade SRA
+
+07/07/2025 14:53
+SRA
+
+Liberada assinatura externa para o usuário LEONARDO GONCALVES CARNIELLE (leocarnielle@gmail.com) no documento 11597495 (Termo Aditivo) até 22/07/2025 (15 dias). Com visualização integral do processo.
+
+07/07/2025 14:53
+SRA
+
+Liberada assinatura externa para o usuário Andreea Pal (a.pal@fraport-brasil.com) no documento 11597495 (Termo Aditivo) até 22/07/2025 (15 dias). Com visualização integral do processo.
+
+04/07/2025 15:38
+GOIA
+
+Conclusão do processo na unidade
+
+03/07/2025 17:21
+SRA
+
+Alterado nível de acesso do documento 11757905 (Ofício 98) para público
+
+03/07/2025 15:46
+SRA
+
+Processo recebido na unidade
+
+03/07/2025 15:43
+SRA
+
+Processo remetido pela unidade SRA
+
+03/07/2025 15:06
+SRA
+
+Reabertura do processo na unidade
+
+03/07/2025 12:06
+GOIA
+
+Processo recebido na unidade
+
+03/07/2025 10:52
+GERE
+
+Processo recebido na unidade
+
+03/07/2025 09:57
+GEIC
+
+Conclusão do processo na unidade
+
+03/07/2025 09:56
+GEIC
+
+Alterado nível de acesso do documento 11528657 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+03/07/2025 09:56
+GEIC
+
+Alterado nível de acesso do documento 11392531 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+03/07/2025 09:56
+GEIC
+
+Alterado nível de acesso do documento 11392460 (Ofício 51) para público
+
+03/07/2025 09:56
+GEIC
+
+Alterado nível de acesso do documento 11190343 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+03/07/2025 09:56
+GEIC
+
+Alterado nível de acesso do documento 11179109 (Nota Técnica 34) para público
+
+03/07/2025 09:55
+GEIC
+
+Alterado nível de acesso do documento 10909222 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+03/07/2025 09:55
+GEIC
+
+Alterado nível de acesso do documento 10909057 (Ofício 384) para público
+
+03/07/2025 09:55
+GEIC
+
+Alterado nível de acesso do documento 10902529 (Nota Técnica 247) para público
+
+03/07/2025 09:54
+GEIC
+
+Reabertura do processo na unidade
+
+03/07/2025 09:54
+GOIA
+
+Processo remetido pela unidade GEIC
+
+03/07/2025 09:47
+GEIC
+
+Processo recebido na unidade
+
+03/07/2025 09:20
+GERE
+
+Processo remetido pela unidade SRA
+
+03/07/2025 09:20
+GEIC
+
+Processo remetido pela unidade SRA
+
+03/07/2025 09:19
+SRA
+
+Processo recebido na unidade
+
+02/07/2025 17:55
+SRA
+
+Processo remetido pela unidade GERE
+
+24/06/2025 19:15
+GERE
+
+Processo recebido na unidade
+
+24/06/2025 18:30
+GERE
+
+Processo remetido pela unidade GERE
+
+09/06/2025 14:28
+DIR-TP
+
+Conclusão do processo na unidade
+
+09/06/2025 12:02
+DIR-TP
+
+Reabertura do processo na unidade
+
+30/05/2025 11:07
+SRA
+
+Conclusão do processo na unidade
+
+30/05/2025 11:06
+SRA
+
+Processo recebido na unidade
+
+29/05/2025 18:16
+SRA
+
+Processo remetido pela unidade SRA
+
+29/05/2025 18:16
+SRA
+
+Reabertura do processo na unidade
+
+28/05/2025 11:09
+SRA
+
+Conclusão do processo na unidade
+
+28/05/2025 11:09
+GOIA
+
+Conclusão do processo na unidade
+
+23/05/2025 09:57
+SRA
+
+Reabertura do processo na unidade
+
+22/05/2025 10:12
+GOIA
+
+Processo recebido na unidade
+
+22/05/2025 10:11
+GOIA
+
+Processo remetido pela unidade GEIC
+
+21/05/2025 15:52
+GEIC
+
+Processo recebido na unidade
+
+21/05/2025 15:32
+GEIC
+
+Processo remetido pela unidade GOIA
+
+21/05/2025 15:23
+GOIA
+
+Processo recebido na unidade
+
+21/05/2025 15:23
+GOIA
+
+Processo remetido pela unidade GEIC
+
+21/05/2025 15:22
+GEIC
+
+Reabertura do processo na unidade
+
+21/05/2025 14:22
+GERE
+
+Processo recebido na unidade
+
+21/05/2025 14:17
+GERE
+
+Processo remetido pela unidade GEIC
+
+21/05/2025 08:49
+ASTEC
+
+Conclusão do processo na unidade
+
+21/05/2025 08:49
+ASTEC
+
+Processo recebido na unidade
+
+20/05/2025 18:11
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+20/05/2025 18:11
+ASTEC
+
+Reabertura do processo na unidade
+
+20/05/2025 11:01
+GEIC
+
+Processo recebido na unidade
+
+20/05/2025 10:42
+GEIC
+
+Processo remetido pela unidade SRA
+
+20/05/2025 10:41
+SRA
+
+Processo recebido na unidade
+
+20/05/2025 08:37
+SRA
+
+Processo remetido pela unidade ASTEC
+
+19/05/2025 22:00
+DIR-LRI
+
+Conclusão do processo na unidade
+
+19/05/2025 10:21
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+16/05/2025 09:42
+GTIN-Publicações
+
+Processo recebido na unidade
+
+16/05/2025 08:25
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+15/05/2025 12:39
+DIR-P
+
+Conclusão do processo na unidade
+
+15/05/2025 12:29
+DIR-TP
+
+Conclusão do processo na unidade
+
+15/05/2025 10:41
+DIR-MCA
+
+Conclusão do processo na unidade
+
+14/05/2025 12:46
+DIR-P
+
+Processo recebido na unidade
+
+13/05/2025 14:21
+DIR-MCA
+
+Processo recebido na unidade
+
+13/05/2025 13:00
+DIR-LRI
+
+Processo recebido na unidade
+
+13/05/2025 11:43
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+13/05/2025 11:43
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+13/05/2025 11:43
+DIR-MCA
+
+Processo remetido pela unidade ASTEC
+
+12/05/2025 18:00
+DIR-TP
+
+Processo recebido na unidade
+
+12/05/2025 18:00
+DIR-TP
+
+Processo remetido pela unidade SRA
+
+12/05/2025 15:26
+SRA
+
+Reabertura do processo na unidade
+
+12/05/2025 09:41
+ASTEC
+
+Reabertura do processo na unidade
+
+06/05/2025 10:58
+DIR-TP
+
+Processo recebido na unidade
+
+05/05/2025 17:26
+ASTEC
+
+Conclusão do processo na unidade
+
+05/05/2025 17:18
+DIR-TP
+
+Processo remetido pela unidade ASTEC
+
+05/05/2025 17:18
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+05/05/2025 11:41
+ASTEC
+
+Processo recebido na unidade
+
+30/04/2025 17:26
+ASTEC
+
+Processo remetido pela unidade SRA
+
+24/04/2025 09:53
+SRA
+
+Reabertura do processo na unidade
+
+24/04/2025 09:24
+GEIC
+
+Processo recebido na unidade
+
+23/04/2025 16:18
+GEIC
+
+Processo remetido pela unidade GEIC
+
+08/04/2025 11:10
+GEIC
+
+Processo recebido na unidade
+
+08/04/2025 11:07
+GEIC
+
+Processo remetido pela unidade GEIC
+
+08/04/2025 08:45
+GEIC
+
+Processo recebido na unidade
+
+07/04/2025 17:02
+GEIC
+
+Processo remetido pela unidade SRA
+
+07/04/2025 17:00
+SRA
+
+Processo recebido na unidade
+
+07/04/2025 16:58
+SRA
+
+Processo remetido pela unidade PF-ANAC
+
+13/03/2025 15:30
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+13/03/2025 15:30
+PF-ANAC
+
+Processo recebido na unidade
+
+12/03/2025 20:10
+PF-ANAC
+
+Processo remetido pela unidade SRA
+
+27/02/2025 18:32
+SRA
+
+Processo recebido na unidade
+
+27/02/2025 16:35
+SRA
+
+Processo remetido pela unidade GEIC
+
+14/02/2025 11:27
+GEIC
+
+Processo recebido na unidade
+
+14/02/2025 10:36
+GEIC
+
+Processo remetido pela unidade GEIC
+
+23/12/2024 08:16
+GEIC
+
+Processo recebido na unidade
+
+20/12/2024 18:01
+GEIC
+
+Processo remetido pela unidade GEIC
+
+26/11/2024 09:27
+GEIC
+
+Processo recebido na unidade
+
+26/11/2024 09:22
+GEIC
+
+Processo remetido pela unidade SRA
+
+26/11/2024 09:21
+SRA
+
+Processo recebido na unidade
+
+25/11/2024 18:42
+SRA
+
+Processo remetido pela unidade SRA
+
+25/11/2024 18:33
+SRA
+
+Processo remetido pela unidade SRA
+
+25/11/2024 18:33
+SRA
+
+Processo público gerado

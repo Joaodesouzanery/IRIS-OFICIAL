@@ -1,0 +1,55 @@
+SEI/ANAC - 12550240 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00066.007590/2024-12
+
+INTERESSADO: EMBRAER - EMPRESA BRASILEIRA DE AERONÁUTICA S.A
+
+RELATOR: LUIZ RICARDO DE SOUZA NASCIMENTO
+
+descrição dos fatos
+
+Trata-se de estabelecimento de Condição Especial referente a utilização de partes de vidro na composição de janelas dos modelos de aviões Embraer EMB-550/-545 . Essa Condição Especial é necessária para viabilizar aprovação de modificação do projeto de tipo dos citados modelos apresentada pela Empresa Brasileira de Aeronáutica S.A. - Embraer.
+
+O processo foi inaugurado em 20/06/2024 por meio do protocolo da Ficha de Controle de Assuntos Relevantes (FCAR) nº EI-43-EMB-550 [1] , emitida pela Gerência Técnica de Programas de Certificação da Superintendência de Aeronavegabilidade - GTEN/SAR, a qual motivou manifestação com posicionamento da interessada registrado na Carta AWO-1011/2024 [2] . A ficha FCAR recebeu atualizações subsequentes, conforme interações ocorridas entre a SAR e a peticionária [3] .
+
+Conforme discorre a SAR nos autos, a Embraer solicitou emenda à certificação de tipo para as aeronaves de modelos EMB-550 e EMB-545, de forma a implementar modificação que inclui a instalação de partes de vidro, um material comumente não utilizado na composição das janelas, em relativa proximidade com os ocupantes da aeronave. A instalação proposta desses itens, classificadas neste caso como grandes peças de vidro, em um compartimento de passageiros que pode ser ocupado durante o táxi, a decolagem e o pouso é um projeto inovador ou incomum em relação ao material utilizado. A SAR argumenta que os regulamentos de aeronavegabilidade aplicáveis não contêm padrões de segurança adequados ou apropriados para essas características de projeto.
+
+Por meio da Nota Técnica 33 [4] , a Gerência Técnica de Engenharia - GTEN/SAR emitiu parecer técnico quanto ao estabelecimento de Condições Especiais pela ANAC para complementar os requisitos do RBAC nº 25 , a serem incorporadas à base de certificação dos modelo EMB-550/-545. Nesse sentido, foram propostos 5 (cinco) requisitos adicionais para endereçar aspectos relacionados à fragmentação do material, resistência, retenção da peça ao local de montagem, instruções para aeronavegabilidade continuada e inflamabilidade.
+
+Subsequentemente, a Gerência Técnica de Normas e Inovação - GTNI/SAR, por meio da Nota Técnica 39 [5] , apresentou considerações adicionais a respeito do processo sob o ponto de vista normativo. Em especial, manifestou-se quanto à adequabilidade da Condição Especial como instrumento adequado ao tratamento do caso concreto, bem como pela desnecessidade de Consulta Pública e de avaliação jurídica pela Procuradoria Federal Especializada - PFE-ANAC. Concluiu a GTNI que a aprovação da Condição Especial em análise contribuirá para o interesse público, ao estabelecer nível de segurança adequado para os aviões Embraer EMB-550/-545, juntando aos autos proposta de Resolução [6] para aprovação da Condição Especial, bem como documento anexo contendo os requisitos adicionais apresentados em formato bilíngue [7] .
+
+No dia 29/12/2025 a SAR encaminhou o presente processo à Assessoria Técnica - ASTEC visando sua apreciação e deliberação pela Diretoria Colegiada.
+
+Por fim, em razão de distribuição eletrônica da matéria no sorteio realizado no mesmo dia, vieram os autos à relatoria desta Diretoria [8] .
+
+É o relatório.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor-relator
+
+____________________________
+
+[1] SEI 10189662 .
+
+[2] SEI 10747034 .
+
+[3] FCAR atualizadas nos documentos SEI 11031836 , SEI 11504998 e SEI 11799077 .
+
+[4] Nota Técnica nº 33/2025/GTEN/GCPP/SAR - SEI 11821457 .
+
+[5] Nota Técnica n° 39/2025/GTNI/SAR - SEI 12430110 .
+
+[6] SEI 12430140 .
+
+[7] SEI 12468450 .
+
+[8] SEI 12538568 .
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 13/01/2026, às 09:43, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12550240 e o código CRC BC9536AC .
+
+SEI nº 12550240

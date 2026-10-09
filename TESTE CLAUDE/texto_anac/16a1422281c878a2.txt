@@ -1,0 +1,51 @@
+SEI/ANAC - 12481641 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.014794/2023-28
+
+INTERESSADO: SUPERINTENDÊNCIA DE PADRÕES OPERACIONAIS
+
+RELATOR: RUI CHAGAS MESQUITA
+
+descrição dos fatos
+
+Trata-se de proposta de emenda ao Regulamento Brasileiro de Aviação Civil (RBAC) nº 121 com foco na revisão de disposições relativas à comunicação bilateral avião-solo, derivada de estudos conduzidos pela Superintendência de Padrões Operacionai (SPO) no âmbito do Tema nº 18 da Agenda Regulatória para o biênio 2023-2024 [1] . De acordo com a Análise de Impacto Regulatória (AIR) apresentada na etapa inaugural, a iniciativa busca adequar os requisitos de comunicação à evolução tecnológica dos sistemas disponíveis (em especial nas seções 121.99 e 121.122, com reflexo nas seções 121.609 e 121.711 do RBAC), de forma a garantir a promoção de uma troca de informações ágil, precisa e eficiente.
+
+As minutas e justificativas desenvolvidas pela área técnica foram submetidas à Consulta Pública nº 16/2023 [2] , no período de 20/11/2023 a 04/01/2024 [3] , na qual foram colhidas 3 (três) contribuições. Ainda no estágio de consulta pública, identificou a unidade proponente [4] que a nova redação proposta para os parágrafos poderia acarretar conflito normativo com outras disposições, em especial o parágrafo 121.601(c), que prevê o fornecimento pelo despachante de voo ao piloto em comando, durante a operação, de informação meteorológica e informação sobre eventos envolvendo facilidades e serviços que possam afetar a segurança operacional. Juntamente com a alteração do citado dispositivo foram promovidos ajustes pontuais de redação na seção 121.603 e em disposições já alteradas na proposta submetida à consulta pública.
+
+Em 01/10/2025 [5] o processo foi submetido ao exame jurídico pela Procuradoria Federal Especializada junto à Anac. No âmbito do Parecer nº 49/2025 [6] o órgão opinou " pela possibilidade jurídica de prosseguimento do feito " com recomendações relativas à atualização das minutas em virtude de aprovação de nova emenda ao RBAC nº 121 no curso do presente processo e à avaliação da clareza de adjetivação utilizada em dispositivos da minuta.
+
+Na sequência, implementados ajustes derivados da manifestação da Procuradoria, os documentos de instrução da proposta foram atualizados (novas minutas do ato de aprovação da emenda, do RBAC em versão consolidada e do quadro comparativo de alterações [7] ) e submetidos à Assessoria Técnica com vistas à deliberação final.
+
+E m 12/12/2025 [8] , em virtude de novo sorteio da matéria após o término do mandato do Diretor Relator na etapa de submissão da proposta à Consulta Pública, o processo foi distribuído para relatoria desta Diretoria.
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Agenda Regulatória aprovada pela Portaria nº 10.583, de 22 de fevereiro de 2023 .
+
+[2] Resultado da deliberação no âmbito da 17ª Reunião Deliberativa da Diretoria Colegiada, realizada em 14/11/2023, conforme Certidão de Deliberação SEI nº 9352039 .
+
+[3] Aviso de Consulta Pública SEI nº 9340289 .
+
+[4] Conforme Nota Técnica nº 11/2024/GTNO-GNOS/GNOS/SPO (SEI nº 9673493 ).
+
+[5] Por força do Despacho SEI nº 12139639 .
+
+[6] Parecer nº 00049/2025/CMF/PFEANAC/PGF/AGU (SEI nº 12165660 ).
+
+[7] Anexos ao Despacho SEI nº 12332444 .
+
+[8] Certidão de Distribuição SEI nº 12460831 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 21/01/2026, às 13:20, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12481641 e o código CRC 95F347F2 .
+
+SEI nº 12481641

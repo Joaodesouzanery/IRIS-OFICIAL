@@ -1,0 +1,273 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.068152/2026-91
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Regulamento de Padrões Operacionais
+
+Data de Geração: 10/08/2026
+
+Interessados: Superintendência de Operações da Aviação Geral
+Superintendência de Pessoal da Aviação Civil
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (18 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13713839 Despacho 14/08/2026 14/08/2026 GTNO-SAG
+13719585 Nota Técnica 5 14/08/2026 14/08/2026 GTNO-SAG
+13715197 Proposta de Ato (Normativo, Decisão etc.) 28/08/2026 28/08/2026 GTNO-SAG
+13719246 Anexo RBAC 91 Emd 08 28/08/2026 28/08/2026 GTNO-SAG
+13797738 Anexo 27/08/2026 27/08/2026 GTNO-SAG
+13726231 Despacho 28/08/2026 28/08/2026 GTNO-SAG
+13801023 Despacho 28/08/2026 28/08/2026 GNAG
+13805955 Despacho 31/08/2026 31/08/2026 GTNO-SPL
+13805967 Certidão de Distribuição 31/08/2026 31/08/2026 ASTEC
+13806099 Despacho 31/08/2026 31/08/2026 SPL
+13815573 Relatório de Diretoria 25/09/2026 25/09/2026 DIR-RJH
+13819059 Voto 25/09/2026 25/09/2026 DIR-RJH
+13924688 Resolução 816 01/10/2026 01/10/2026 ASTEC
+13924435 Memorando-Circular 29 28/09/2026 28/09/2026 ASTEC
+13926802 Despacho 28/09/2026 28/09/2026 SAG
+13951116 Anexo DOU 02/10/2026 02/10/2026 ASTEC
+13951120 Certidão de Deliberação 02/10/2026 02/10/2026 ASTEC
+13960707 Despacho 05/10/2026 05/10/2026 SAG
+
+Lista de Andamentos (43 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+06/10/2026 10:36
+GTNO-SAG
+
+Processo recebido na unidade
+
+05/10/2026 17:35
+GTNO-SAG
+
+Processo remetido pela unidade SAG
+
+05/10/2026 17:17
+SAG
+
+Processo recebido na unidade
+
+05/10/2026 11:38
+SAG
+
+Processo remetido pela unidade ASTEC
+
+29/09/2026 13:52
+SPL
+
+Conclusão do processo na unidade
+
+29/09/2026 09:20
+SPL
+
+Processo recebido na unidade
+
+28/09/2026 20:41
+GTNO-SAG
+
+Processo recebido na unidade
+
+28/09/2026 17:55
+GTNO-SAG
+
+Processo remetido pela unidade SAG
+
+28/09/2026 17:28
+SAG
+
+Processo recebido na unidade
+
+28/09/2026 16:06
+DIR-RJH
+
+Conclusão do processo na unidade
+
+28/09/2026 15:30
+SPL
+
+Processo remetido pela unidade ASTEC
+
+28/09/2026 15:30
+SAG
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 15:49
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+16/09/2026 15:12
+ASTEC
+
+Reabertura do processo na unidade
+
+31/08/2026 17:04
+DIR-RJH
+
+Processo recebido na unidade
+
+31/08/2026 15:04
+DIR-RJH
+
+Processo remetido pela unidade SPL
+
+31/08/2026 14:46
+GTCI
+
+Conclusão do processo na unidade
+
+31/08/2026 14:45
+GTCI
+
+Processo recebido na unidade
+
+31/08/2026 13:35
+GTCI
+
+Processo remetido pela unidade GFOP
+
+31/08/2026 13:31
+GFOP
+
+Processo recebido na unidade
+
+31/08/2026 12:10
+ASTEC
+
+Conclusão do processo na unidade
+
+31/08/2026 11:56
+DIR-RJH
+
+Processo recebido na unidade
+
+31/08/2026 11:56
+SPL
+
+Processo recebido na unidade
+
+31/08/2026 11:55
+GTNO-SPL
+
+Reabertura do processo na unidade
+
+31/08/2026 11:54
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+31/08/2026 11:54
+GFOP
+
+Processo remetido pela unidade GTNO-SPL
+
+31/08/2026 11:40
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 11:40
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+31/08/2026 11:35
+GTNO-SPL
+
+Processo recebido na unidade
+
+31/08/2026 10:46
+ASTEC
+
+Processo recebido na unidade
+
+31/08/2026 09:18
+GTNO-SPL
+
+Processo remetido pela unidade GNAG
+
+31/08/2026 09:18
+ASTEC
+
+Processo remetido pela unidade GNAG
+
+28/08/2026 14:18
+GTNO-SPL
+
+Processo recebido na unidade
+
+28/08/2026 13:45
+GNAG
+
+Processo recebido na unidade
+
+28/08/2026 13:15
+GTNO-SAG
+
+Conclusão do processo na unidade
+
+28/08/2026 13:15
+GTNO-SAG
+
+Alterada hipótese legal do documento 13726231 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+28/08/2026 13:15
+GTNO-SAG
+
+Alterado nível de acesso do documento 13726231 (Despacho) para restrito
+
+28/08/2026 13:14
+GTNO-SAG
+
+Alterada hipótese legal do documento 13719585 (Nota Técnica 5) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+28/08/2026 13:14
+GTNO-SAG
+
+Alterado nível de acesso do documento 13719585 (Nota Técnica 5) para restrito
+
+28/08/2026 13:14
+GTNO-SAG
+
+Reabertura do processo na unidade
+
+28/08/2026 13:13
+GNAG
+
+Processo remetido pela unidade GTNO-SAG
+
+28/08/2026 13:13
+GTNO-SPL
+
+Processo remetido pela unidade GTNO-SAG
+
+10/08/2026 09:33
+GTNO-SAG
+
+Processo público gerado

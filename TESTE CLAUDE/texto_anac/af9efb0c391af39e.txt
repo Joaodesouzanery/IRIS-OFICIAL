@@ -1,0 +1,101 @@
+SEI/ANAC - 13001477 - Voto
+
+Voto
+
+PROCESSO: 00058.065762/2021-29
+
+INTERESSADO: AZUL CONECTA LTDA
+
+RELATOR: ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+da competência
+
+A Lei n.º 11.182/2005, em seus artigos 8º e 11, estabelece a competência da ANAC para adotar as medidas necessárias para o atendimento do interesse público e para regular e fiscalizar os serviços aéreos, os produtos e processos aeronáuticos, a formação e o treinamento de pessoal especializado, os serviços auxiliares, a segurança da aviação civil, a facilitação do transporte aéreo, a habilitação de tripulantes, as emissões de poluentes e o ruído aeronáutico, os sistemas de reservas, a movimentação de passageiros e carga e as demais atividades de aviação civil.
+
+Também, conforme disposto no Regimento Interno da Agência - aprovado pela Resolução nº 381/2016 (art. 33, incisos I e VIII), é competência da Superintendência de Infraestrutura Aeroportuária (SIA) submeter à Diretoria proposta de atos normativos relacionados à proteção das operações de aviação civil contra atos de interferência ilícita, nos assuntos de competência da ANAC.
+
+Compete, ainda, nos termos do mesmo Regimento Interno, à Diretoria, em regime de colegiado, analisar, discutir e decidir em instância administrativa final as matérias de competência da Agência (art. 9º, caput).
+
+Dessa forma, resta evidente que foram atendidos os requisitos de competência em relação a elaboração da proposta, análise e decisão sobre a matéria.
+
+da análise e da fundamentação
+
+Conforme Relatório de Diretoria (SEI 12981685 ), trata-se de solicitação de prorrogação do prazo da isenção temporária de três anos deferida pela Decisão nº. 557, de 26 de setembro de 2022 (SEI 7735589 ), que isentou à AZUL CONECTA LTDA. de cumprimento dos requisitos que tratam os parágrafos 108.13(d), 108.13(d)(1), 108.13(d)(2) e 108.13(d)(3) do Regulamento Brasileiro da Aviação Civil - RBAC nº 108, Emenda nº 05, nas operações com aeronaves limitadas a capacidade máxima de nove assentos e em aeroportos classificados como AP-1, segundo o RBAC nº 107, Emenda nº 07, e que não operem voos comerciais regulares com mais de 60 (sessenta) assentos.
+
+Ainda como observado no Relatório de Diretoria (SEI 12981685 ), verifica-se que a isenção inicial expirou em expirou em 7 de março de 2026, considerando que a portaria que lhe deu efetividade foi a Portaria nº. 10.604, de 24 de fevereiro de 2023, publicada no Diário Oficial da União de 7 de março de 2023. Por tal motivo, passa-se a tratar a presente análise como aprovação de uma isenção temporária.
+
+Como exposto na fundamentação do Voto 7664234 da isenção originária, preferido pelo Diretor Rogério Benevides Carvalho, o foco da solicitação resta nas operações da solicitante ocorridas em aeroportos secundários de operações classificados como AP-1. Esses aeroportos são aqueles com operação da aviação comercial regular ou na modalidade de operação charter e com média aritmética anual de passageiros processados nessas operações nos últimos três anos inferior a 600.000 (seiscentos mil). A empresa intenciona, então, não ter a presença do Responsável Local AVSEC nas bases desses aeródromos AP-1, deixando de cumprir o requisito 108.13 (d) do RBAC nº 108, da atual Emenda 08, e seus três subitens.
+
+108.13 Atividades e profissionais
+
+(d) O operador aéreo deve designar, em âmbito local, profissional(is) capacitado(s) de acordo com requisitos estabelecidos em normatização específica sobre a matéria, responsável(is) por supervisionar a execução dos controles de segurança referidos neste Regulamento, garantir a implementação das atribuições do operador aéreo nas ações de contingência e participar das atividades pertinentes a AVSEC, quando for necessário, a critério do operador de aeródromo.
+
+(1) O operador aéreo deve garantir que ao menos um profissional conforme referido no parágrafo 108.13(d), devidamente capacitado, esteja atuando no aeródromo nos horários em que a empresa estiver operando, e participe das reuniões da Comissão de Segurança Aeroportuária (CSA) e dos exercícios de segurança.
+
+(2) O operador aéreo deve formalizar junto ao operador do aeródromo a designação do(s) referido(s) profissional(is) devidamente capacitado(s).
+
+(3) Os profissionais responsáveis pela AVSEC em âmbito local nas bases de operação do operador aéreo são responsáveis pela aplicação do PCQ/AVSEC nas respectivas bases.
+
+A isenção original, além de ter sido aprovada por prazo determinado de três anos, apresentou as seguintes condicionantes:
+
+Art. 1º (...).
+
+Parágrafo único. A isenção de que trata esta Decisão fica condicionada às seguintes ações:
+
+I - inclusão das medidas de segurança compensatórias definidas no Programa de Segurança do Operador Aéreo Azul Conecta Ltda.; e
+
+II - execução das medidas de segurança formalizadas no Programa de Segurança do Operador Aéreo Azul Conecta Ltda.
+
+Art. 2º Os cenários operacionais que embasaram a presente isenção deverão ser reavaliados periodicamente e realizado o devido gerenciamento do risco à Segurança da Aviação Civil contra Atos de Interferência Ilícita, devendo a ANAC ser comunicada pelo menos anualmente .
+
+Art. 3º Os efeitos desta Decisão terão validade de 3 (três) anos, contados a partir da data de publicação da portaria de aprovação do Programa de Segurança do Operador Aéreo Azul Conecta Ltda. pela ANAC, conforme inciso I do parágrafo único do art. 1º desta Decisão. ( grifo nosso )
+
+A SIA, ao longo do processo, trabalhou na análise de cumprimento das condicionantes impostas, concluído, ademais, especialmente nas Notas Técnicas nº. 9/2025/CNPE/GSEF/SIA (SEI 12471347 ) e nº 1/2026/CNPE/GSEF/SIA (SEI 12870900 ), entendeu pelo bom atendimento desses itens.
+
+Fato importante em se destacar é que, quando da primeira análise do caso em tela, a SIA estava em processo de aprofundamento de estudos sobre alteração do RBAC nº 108, tendo sido determinada a ela a priorização do andamento do tema. Neste interregno, no âmbito do processo 00058.034495/2021-48 , esta Agência aprovou a Emenda 09 do RBAC nº. 108, nos termos da Resolução nº. 796, de 19 de fevereiro de 2026. Nesse sentido, a SIA explica que os itens objeto da isenção aqui tratada passarão a ser recomendáveis à Azul Conecta, não se justificando, pois, uma isenção por período superior ao início da vigência de referida Emenda 09. Transcreve-se, in verbis , as considerações da SIA:
+
+Despacho 12881165 :
+
+(...)
+
+4. Os requisitos que a Azul Conecta pleiteou como isenção foram objeto de revisão do RBAC 108. A Resolução Nº 796, de 19 de fevereiro de 2026, publicada no Diário Oficial da União do dia 23 de fevereiro de 2026, aprovou a Emenda 09 ao RBAC nº 108, sendo que a vigência da nova emenda iniciará em 23 de fevereiro de 2027.
+
+5. A Emenda 09 ao RBAC 108 prevê a classificação dos operadores aéreos segundo o tipo de serviço realizado. Desta forma, a Classe II abrange os operadores aéreos que realizam operações de transporte aéreo público regulares e não regulares com aeronaves até 19 assentos ou com capacidade máxima de carga paga de até 3.400 kg, regidas pelo RBAC nº 135 e pelo RBAC nº 129. Ou seja, esta será a nova classificação da Azul Conecta.
+
+6. No Apêndice A do RBAC 108 Emenda 09 constam os requisitos aplicáveis a cada classe de operador aéreo. Para operadores aéreos da Classe II, o requisito 108.13(d) passa a ser Recomendável.
+
+7.Por este motivo, propõe-se que a prorrogação da isenção de requisitos seja até o dia 22 de fevereiro de 2027, pois a partir do dia 23 passará a vigorar a Emenda 09 ao RBAC nº 108.
+
+(...)
+
+Despacho 12904288 :
+
+(...)
+
+3. Em complemento, aponta-se que o RBAC nº 108 teve sua Emenda nº 09 aprovada pela Resolução nº 796, de 10 de dezembro de 2026, publicada em Diário Oficial da União nº 35, de 23 de fevereiro de 2026, Seção 1, página 144, com entrada em vigor prevista para 23 de fevereiro de 2027.
+
+4. Tal Emenda nº 09 prevê a classificação dos operadores aéreos segundo o tipo de serviço que realizam. Desta forma, para a Classe II (operadores aéreos que realizam operações de transporte aéreo público regulares e não regulares com aeronaves até 19 assentos ou com capacidade máxima de carga paga de até 3.400 kg, regidas pelo RBAC nº 135 e pelo RBAC nº 129), a qual se enquadra a pleiteante, todos os requisitos da supracitada Decisão para os quais se pretende prorrogar a isenção passam, a partir de sua entrada em vigor, a serem considerados como "Recomendável".
+
+5. Diante do exposto, submete-se o pleito à avaliação da Diretoria Colegiada, sugerindo-se que a isenção dos requisitos concedida pela Decisão nº 557, de 26 de setembro de 2022, seja prorrogada até 22 de fevereiro de 2027, de maneira a harmonizar-se com a entrada em vigor da Emenda nº 09 ao RBAC nº 108, que passa a enquadrar como uma recomendação os requisitos para os quais a isenção atualmente vigora.
+
+(...)
+
+Avaliados os autos, verifica-se estarem presentes motivações adequadas à aprovação da isenção pleiteada pela empresa aérea, em especial considerando a proximidade de vigência da Emenda 09 do RBAC nº 108, aqui destacada. Não obstante, previamente à publicação de decisão, observado o vencimento da atual isenção, indica-se a necessidade de adequação da Proposta de Ato SEI 12880928 , de forma a refletir uma nova isenção e não uma prorrogação da antiga.
+
+Por fim, observo que se faz preciso abranger na isenção proposta o período compreendido entre o término da isenção antiga, esgotada em 06 de março de 2026, e a vigência da isenção aqui debatida, evitando-se, dessa forma, vácuos regulatórios entre os períodos. Nesse sentido, tendo em observância a permanente vigência da Portaria nº. 10.604/SIA, de 24 de fevereiro de 2023, que permitiu os efeitos da isenção, propõe-se nova minuta de decisão, nos termos da Proposta SEI 13001470 .
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE ao deferimento de pedido de isenção de cumprimento dos requisitos de que tratam os parágrafos 108.13(d), 108.13(d)(1), 108.13(d)(2) e 108.13(d)(3), do RBAC nº 108, Emenda nº 8 (atualmente vigente) - Segurança da Aviação Civil Contra Atos de Interferência Ilícita – Operador Aéreo, nas operações com aeronaves limitadas à capacidade máxima de 9 (nove) assentos e em aeroportos classificados como AP-1, segundo o RBAC nº 107, Emenda nº 10 (atualmente vigente), que não operem voos regulares de aeronave com capacidade superior a 60 (sessenta) assentos, em favor da AZUL CONECTA LTDA., até 22 de fevereiro de 2027 , conforme proposto pela Área Técnica, observados os ajustes da Proposta de Ato destacados nos itens 2.7 e 2.8 deste voto.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 24/03/2026, às 12:31, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13001477 e o código CRC 8A68C4CB .
+
+SEI nº 13001477

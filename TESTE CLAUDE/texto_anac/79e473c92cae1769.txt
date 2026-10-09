@@ -1,0 +1,95 @@
+SEI/ANAC - 12814059 - Voto
+
+Voto
+
+PROCESSO: 00065.051404/2025-73
+
+interessado: renan machado melo
+
+RELATOR: antonio mathias
+
+competência
+
+A Lei nº. 11.182, de 2005, em seu art. 8º, conferiu competência à Agência Nacional de Aviação Civil (ANAC) para atendimento do interesse público e para proceder à homologação e emitir certificados, atestados, aprovações e autorizações, relativos às atividades de competência do sistema de segurança de voo da aviação civil, bem como licenças de tripulantes e certificados de habilitação técnica e de capacidade física e mental, observados os padrões e normas por ela estabelecidos. Ademais, o art. 11, inciso V, da mesma Lei estabelece a competência da Diretoria Colegiada para exercer o poder normativo da Agência.
+
+O Regimento Interno da ANAC, Resolução nº. 381, de 2016, estabelece, entre as competências comuns às Superintendências, a capacidade de avaliar e submeter à Diretoria as petições de isenção a requisitos de regulamentos, bem como rejeitar aquelas que, por mérito ou forma, não atenderem os critérios estabelecidos (art. 31, XVII). Ainda, o mesmo Regimento Interno atribui competência à Superintendência de Pessoal da Aviação Civil (SPL) para tratar sobre padrões operacionais relacionados à certificação e fiscalização de organizações de instrução, de equipamentos simuladores de voo para instrução e treinamento de tripulantes, de médicos e clínicas médicas executores de exames médicos para emissão de certificados médicos e de pessoas integrantes do cenário operacional.
+
+Ainda no que tange o Regimento Interno, esse, em seu art. 9º, atribui competência à Diretoria da ANAC, em regime colegiado, para analisar, discutir e decidir, em instância administrativa final, as matérias de competência da Agência.
+
+Pelo exposto, restam atendidos os requisitos de competência quanto à deliberação e decisão do requerimento aqui em análise.
+
+análise e fundamentação
+
+Conforme Relatório (SEI 12745287 ), trata-se de recurso apresentado por RENAN MACHADO MELO, piloto, em face de indeferimento da Superintendência de Pessoal da Aviação Civil (SPL) de pedido de isenção de realização de treinamento obrigatório em Centro de Treinamento de Aviação Civil (CTAC), nos termos previstos no parágrafo (b), da seção 61.215, do Regulamento Brasileiro da Aviação Civil (RBAC) nº. 61.
+
+O RBAC 61 estabelece as normas e procedimentos relativos à concessão de licenças, habilitações e certificados para pilotos, bem como os requisitos mínimos que devem ser cumpridos para a concessão, manutenção ou restabelecimento da vigência desses documentos e as prerrogativas e limitações relativas a cada licença, habilitação ou certificado.
+
+Ainda o RBAC 61 especifica que a vigência das habilitações de tipo concedidas deve observar os requisitos estabelecidos na seção 61.215, nesse sentido, faz-se oportuno destacar essa previsão:
+
+61.215 Manutenção ou restabelecimento de vigência de habilitação de tipo
+
+(a) Para manter ou restabelecer a vigência da habilitação de tipo, o requerente deve:
+
+(1) ter concluído, com aproveitamento, nos 6 (seis) meses anteriores ao exame de proficiência, treinamento de solo e de voo referente ao tipo da aeronave requerida; e
+
+(2) ser aprovado em exame de proficiência realizado em conformidade com o parágrafo 61.213(a)(4) deste Regulamento;
+
+(b) Os treinamentos de solo e de voo devem ser conduzidos em um CTAC, de acordo com um programa de treinamento aprovado pela ANAC.
+
+(c) Caso não exista, até a data em que o candidato iniciar o treinamento, CTAC certificado ou validado pela ANAC para ministrá-lo, esse treinamento poderá ser ministrado por um PC ou PLA habilitado e qualificado na aeronave, observando-se currículo mínimo estabelecido pela ANAC, incluindo, no mínimo, 20% (vinte por cento) das horas de voo previstas nos parágrafos 61.213(a)(3)(iii)(A), 61.213(a)(3)(iii)(B) ou 61.213(a)(3)(iii)(C), conforme aplicável.
+
+(d) [Reservado]
+
+Em retrospecto ao caso em análise, o piloto intenta isenção de cumprimento do previsto no RBAC 61.215(b), para revalidar sua Habilitação de Tipo (BE 40) sem a execução de treinamento obrigatório conduzido por CTAC, valendo-se, em contrapartida, do previsto no RBAC 61.215(c). Aponta em sua solicitação inicial (SEI 12382834 ) que o pedido decorre de “negativa de entrada do referido piloto nos dois países que possuem o FSTD [simulador de voo] correspondente à sua habilitação (EUA e Reino Unido)”. Aponta-se que conforme ficha cadastral do tripulante, o sr. Renan M. Melo possui licenças de piloto privado (emitida em 2011), de piloto comercial (emitida em 2013) e piloto de linha aérea (emitida em 2024). Já ao avaliar suas habilitações, identifica-se a habilitação de tipo BE 40, objeto do caso atual, cujo vencimento se deu ao final de outubro de 2025.
+
+Em primeira análise técnica, Nota Técnica nº. 46/2025/GTO-SPL/SPL (SEI 12455694 ), a SPL explica que atual exigência prevista no RBAC 61.215(b) significa, “na prática, a realização de treinamento em dispositivos de simulação avançados, capazes de reproduzir com alta fidelidade as características da aeronave”, sendo apontado, ainda, que tais equipamentos estão disponíveis em três localidades nos Estados Unidos da América, e em mais uma localidade no Reino Unido.
+
+Adentrando-se no mérito técnico da solicitação, a SPL aponta que a impossibilidade de realizar os treinamentos obrigatórios em decorrência de circunstâncias pessoais e externas “não constitui justificativa suficiente para aceitar treinamento e exame de proficiência nos termos do parágrafo (c) da seção 61.215, o que representaria um nível inferior de segurança em relação ao proporcionado quando essas atividades são conduzidas em um CTAC”. Assim, ao indeferir o pedido inicial, a SPL reforça que ele não demonstrou fatores mitigadores suficientes a demonstrarem que a solicitação não comprometeria a segurança operacional, ou interesse público, nos termos condicionais previstos no RBAC 11, vejamos:
+
+11.31 Solicitação de Isenção
+
+(...)
+
+(c) A solicitação deve conter as seguintes informações:
+
+(...)
+
+(4) as razões que comprovem que a isenção, conforme aplicável:
+
+não afetaria a segurança das operações ou atenderia ao interesse público em um nível de segurança aceitável; e
+
+(...)
+
+No pedido de reconsideração (SEI 12610322 ), o interessado inicia sua argumentação pontuando que a ANAC, no período de pandemia Covid-19, implementou medidas de prorrogação automática de validade de habilitações, bem como já procedeu a estudos relacionados à flexibilização de treinamento anual obrigatório em CTAC. Entende, ele, que seu caso apresenta “circunstâncias únicas e extremas” fora de seu controle, tratando-se de questões migratórias particulares dos países nos quais se localizam os CTAC disponíveis, e que “a impossibilidade de acesso físico ao CTAC é uma circunstância igualmente substancial e não imputável ao piloto, justificando uma exceção”. Termina seus argumentos indicando que a negativa da isenção pretendida lhe representará prejuízo irreparável dado o risco de perda de seu emprego atual como piloto, concluindo por solicitar a revalidação de sua habilitação em própria aeronave, observado a seção 61.215(c) do RBAC 61.
+
+Em análise de reconsideração (SEI 12700161 , 12702821 e 12703467 ), a SPL mantém seu posicionamento inicial, explicando que a exigência atualmente existente de treinamento e exame de proficiência anual em CTAC foi amplamente discutida, e a normatização atual derivou de decisão de Diretoria Colegiada no ano de 2024. Reforçam entenderem que a avaliação alternativa, via seção 61.215(c), em um cenário em que existe CTAC certificado ou validado por esta Agência, representaria redução inaceitável de nível de segurança operacional, reforçando, assim, as argumentações do indeferimento inicial, motivando-se o encaminhamento para deliberação de Diretoria.
+
+Exposto o debate técnico ocorrido entre o piloto interessado e a área técnica, passa-se, então à avaliação desta Diretoria.
+
+De pronto, cabe afastar qualquer argumentação trazida pelo recorrente no que concerne a flexibilizações ou a waiver ocorridos no período de pandemia Covid-19. A prorrogação de habilitações, certificados, autorizações, averbações, credenciamentos, treinamentos e exames constituída pela Decisão nº. 42, de 2020, e seguintes, tratada no processo 00058.010770/2020-57 , mostra-se como situação singular, circunstancial ao período de exceção derivado de emergência de saúde pública global, na qual se limitou a movimentação de toda a sociedade, não apenas restrita ao território nacional, mas a todos os países, conforme bem definido no processo referido. Não cabe, pois, em nenhuma medida, a comparação da situação de restrições generalizadas e com propósito de contenção de doença contagiosa observada no ano de 2020, à impossibilidade migratória por motivos inerentemente pessoais do solicitante.
+
+Seguindo-se ao requerido pelo solicitando, como já destacado, ele pretende aprovação e isenção de cumprimento da seção 61.215(b), utilizando-se das prerrogativas previstas na seção 61.215(c).
+
+Em primeiro passo, é necessário observar a intencionalidade de referidas previsões. Para a adequada segurança operacional da aviação civil, em especial nas atividades relacionadas à pilotagem, é essencial que os atuantes no sistema mantenham, não apenas experiencias recentes, como também proficiência em situações atípicas. Isso é dizer que não basta um piloto possuir o conhecimento prático de voos rotineiros, em situações normais e comuns de operação, é preciso também a construção de uma base sólida de capacidade de reação em situações de urgências e emergências, para que tenha o conhecimento e o temperamento de ação quando da ocorrência de situações complexas e extraordinárias. Nesse contexto, insere-se a regra de manutenção ou restabelecimento de vigência de habilitação de tipo prevista na seção 61.215(b), que cristaliza no ordenamento regulatório da Agência a importância do treinamento recorrente em instituição validada para os pilotos com habilitação de tipo.
+
+É importante repisar que o treinamento em CTAC, com o uso de simulador, expõe o piloto a uma miríade de situações cuja reprodução em uma aeronave é impossível ou indesejável. Ao se observar, por exemplo, o Relatório Anual de Segurança Operacional de 2024, publicado por esta ANAC, vê-se que o segmento de aviação privada, no qual atua o requerente, enfrentou um crescimento do número de acidentes e incidentes graves, registrando 55 acidentes e 25 incidentes graves naquele ano, sendo que os principais tipos de ocorrência para esse setor foram a excursão de pista (RE), a falha de componente do grupo motopropulsor (SCF-PP) e a perda de controle em voo (LOC-I), de modo que somente esse último tipo de ocorrência levou à 32 fatalidades. Observa-se, portanto, a inviabilidade de, apenas com treinamento prático em voo, um piloto adquirir e reter preparação técnica e emocional para uma ação rápida e efetiva numa ocorrência aeronáutica grave. O treinamento em CTAC e simuladores refletem, principalmente, a preocupação do regulador em garantir aos pilotos uma abordagem sistêmica, estruturada e segura de treinamento para que, em ocorrências reais, a atuação do profissional seja a mais psicológica e tecnicamente apropriada.
+
+Observa-se, por fim, que a previsão consignada na seção 61.215(c) comporta situação específica, que não abarca o caso em tela, considerando que existe, atualmente, CTAC validado pela ANAC para ministrar treinamento no equipamento de interesse do piloto.
+
+Diante das razões aqui trazidas, percebe-se que o requisito técnico de treinamento em CTAC e com uso de simuladores traz proteção, não somente ao sistema de aviação civil, como ao próprio piloto e usuários das aeronaves. Em adição, alinhando-me ao apontado pela SPL, não se identifica na petição inicial e no pedido de reconsideração elementos e informações que garantam que a aceitação do pedido de isenção não afetará a segurança operacional ou a manutenção de um nível de segurança aceitável na forma atualmente exigida pelo RBAC 61.
+
+voto
+
+Ante o exposto, considerando os posicionamentos técnicos emanados pela Superintendência de Pessoal da Aviação Civil e os requisitos técnicos atualmente previstos no RBAC 61, VOTO pelo conhecimento do recurso administrativo apresentado pelo piloto Renan Machado Melo, e, no mérito, por NEGAR-LHE PROVIMENTO , confirmando-se a decisão recorrida em todos os seus termos.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 19/02/2026, às 19:04, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12814059 e o código CRC 4F00A5D8 .
+
+SEI nº 12814059

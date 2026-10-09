@@ -1,0 +1,91 @@
+SEI/ANAC - 12909887 - Voto
+
+Voto
+
+PROCESSO: 00058.018087/2019-24
+
+RELATOR: RUI CHAGAS MESQUITA
+
+VOTO-VISTA
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Trata-se da análise de pedido de isenção de cumprimento do requisito de que trata o parágrafo 154.207(d)(1) do RBAC nº 154, protocolado pela Concessionária do Aeroporto de Salvador S.A. (CASSA), em virtude da presença de Casa de Transmissão (KT) na faixa da pista de pouso e decolagem 10/28, componente não frangível do Glide Slope (GS) do Sistema de Pouso por Instrumentos ( Instrument Landing System – ILS) utilizado nas operações de aproximação pela cabeceira 28.
+
+A CSSA é a responsável pela execução do Contrato de Concessão n.º 003/ANAC/2017 – SBSV, com prazo de vigência de 30 anos a contar de 31/08/2017 e também é o Operador Aeroportuário do Aeroporto Internacional Deputado Luís Eduardo Magalhães, localizado em Salvador (BA).
+
+Em setembro de 2018, a pedido da CASSA, representantes do Terceiro Centro Integrado de Defesa Aérea e Controle de Tráfego Aéreo - CINDACTA III, notadamente do Parque de Material de Eletrônica da Aeronáutica - PAME, realizaram missão técnica ( Site Survey ) no aeroporto de Salvador com vistas a identificar possíveis pontos para o reposicionamento do GS e dos auxílios meteorológicos da pista 28, uma vez que para atendimento às obrigações contratuais da Fase I-B da concessão, a Concessionária previu o recuo da cabeceira 28 em 120m. O resultado das análises consta no Relatório nº 04/AEPE/18, de 30/09/18 ( 3629527 ), o qual consignou:
+
+“4.1.3 MARCAÇÃO DOS PONTOS
+
+Houve tentativa de escolha dos pontos baseados nas seguintes regulamentações: RBAC 154 Emenda 04 — Projeto de aeródromos, sitting criteria FAA ORDER 16D, Portaria n° 957/GC3 de 2015 — PBZPA e PZPANA e ANEXO 10 ICAO (GS).
+
+Apesar de todas as análises, não foi encontrado um sítio que atendesse à norma atual completamente . Equanto (sic) de um lado da pista, orografia, obstáculos e edifícios na proximidade inviabilizam as condições técnicas de operação do equipamento, do outro lado a posição da taxiway impede que um equipamento não frangível fique distanciado a 140m de distância do eixo da pista de pouso, conforme preconiza a RBAC 154.” (grifado)
+
+Assim, apesar de não existir um local que pudesse atender a todos os regulamentos técnicos aplicáveis, o Relatório do PAME indicou dois pontos possíveis para a relocação do GS. Para o ponto G1 seria necessária “a alteração da posição da taxiway A”, criando um afastamento mínimo de 168m do eixo desta em relação ao eixo da pista”. Para o ponto G2, “conforme regulamentação da ANAC, é necessário que a estrutura total do sistema seja frangível. Apesar de o ponto estar a 125 m e não a 140m, portanto estando dentro da faixa de pista, haverá uma melhora considerável em relação aos 100m onde está atualmente em operação.”
+
+A Concessionária analisou as duas indicações possíveis e definiu o ponto G2 como a alternativa mais adequada à luz do seu planejamento para adimplemento das obrigações da Fase I-B, uma vez que, segundo ela, não havia possibilidade de mover a TWY A ( 3011070 ). Dessa forma, em maio de 2019, a CASSA apresentou à Superintendência de Infraestrutura Aeroportuária – SIA, pedido de isenção de cumprimento do requisito 154.207 do RBAC 154, uma vez que, o local definido para a nova posição do Glide Slop estaria a uma distância de 125m do eixo da pista, porém, a construção da KT não atenderia aos critérios de frangibilidade e deveria ser construída o mais próximo possível do GS, conforme recomendação do fabricante do equipamento.
+
+Ato contínuo, a SIA solicitou nova avaliação do PAME para se confirmar a inviabilidade de implantação do GS no lado direito da PPD (sentido cabeceira 28 para cabeceira 10) dado que o Relatório anterior era de 30/09/2018 ( 3011073 ) e que após isso houve obras de adequações nesta região por parte do Operador do aeródromo ( 3067158 ). Em resposta, o responsável técnico do PAME ratificou que “apesar da área próxima ao Glide ter sido melhorada, os obstáculos persistem e afetam diretamente o funcionamento do equipamento.” ( 3071951 )
+
+Outras comunicações e documentações foram trocadas entre a área técnica da SIA e da Concessionária, com o intuito de exaurir as opções de locação da KT (uma maior distância em relação ao GS ou afastar a KT para fora da faixa de pista da PPD e dentro da faixa de pista da TWY A – 3189529 , 3189564 e 3189533 ), bem como de construção (edificação enterrada na faixa de pista – 3306574 ).
+
+Assim, uma vez analisadas as possibilidades, o local e a construção foram definidos pelo Operador do aeroporto e apontado como a melhor alternativa possível dentro das opções técnicas viáveis, ainda que não permitisse o atendimento integral ( full compliance ) ao requisito estabelecido no RBAC nº 154.207(d)(1), o que motivou a Superintendência de Infraestrutura Aeroportuária a promover uma avaliação formal do pedido de isenção ora peticionado à luz do RBAC 11 (“Regras gerais para petição de emissão, alteração, revogação e isenção de cumprimento de regra”) e da Instrução Suplementar nº 154.5-001A (“Orientações para a elaboração de análise de risco com vistas à demonstração de nível aceitável de segurança operacional”). A conclusão da análise da área técnica da SIA ( 3642384 ) foi que:
+
+7.2 A avaliação do estudo, através da aplicação da IS 154.5-001 Revisão A, verificou que o objeto está em distância inferior ao critério da separação de ponta de asa (teste de rejeição nº 4) e também que pela abordagem quantitativa (teste de aceitação), o risco para saída lateral no pouso (LDVO) e também o risco total são superiores aos critérios para que a operação seja caracterizada dentro da região de aceitação. Porém, conforme a mesma IS, "caso o cenário não passe no teste, não se pode necessariamente afirmar que a operação é inaceitável (ou seja, pode ser aceito um ALARP - As Low As Reasonably Practicable)." Dessa forma, são feitas as seguintes observações:
+
+7.2.1 Pelos testes de rejeição, a localização do objeto estaria em conformidade com os critérios do FAA (Teste de Rejeição 1) e do TCCA (Teste de Rejeição 2), entidades que são referências importantes para a segurança da aviação civil.
+
+7.2.2 O aeroporto apresentou medidas adicionais para a redução do risco das operações.
+
+7.2.3 O ILS se trata de um auxílio à navegação e, caso retirado para a conformidade com o regulamento, poderia criar um cenário de maior risco do que o cenário atual, visto que o equipamento contribui com a redução do risco das operações.
+
+7.2.4 Houve manifestações formais dos operadores aéreos que operam no SBSV, de forma que estão cientes da exposição ao risco relativo ao objeto desta análise.
+
+7.3 Portanto, diante da impossibilidade técnica de cumprimento do requisito e considerando que as operações, no cenário proposto ocorrem com o risco tão baixo quanto razoavelmente praticável - ALARP, sugere-se, s.m.j., que seja deferido o pedido de isenção definitiva do requisito 154.207(d) do Regulamento Brasileiro de Aviação Civil - RBAC 154 / Emd 05 para Operador do Aeroporto de Salvador Deputado Luís Eduardo Magalhães (SBSV). (Nota Técnica 85)
+
+Veja-se que, inicialmente, a setorial técnica competente manifestou-se pelo deferimento da isenção em caráter permanente, evidenciando a complexidade do tema e a dificuldade de se encontrar solução plenamente aderente ao texto do regulamento, sem prejuízo à segurança operacional. Posteriormente, o gestor responsável, considerando a necessidade de reavaliação periódica do cenário fático e regulatório, bem como a possibilidade de evolução tecnológica ou de reconfiguração futura do auxílio à navegação, recomendou que a isenção fosse concedida por prazo determinado de 5 (cinco) anos, em substituição ao caráter permanente inicialmente sugerido. Ressaltou ainda que “ a previsão de validade para a isenção permite, em última instância, a demarcação de um momento onde haverá a devida reavaliação das condições face ao futuro contexto de operação, no caso concreto . Adicionalmente, há de ser considerado que eventuais fatos novos ou mudanças significativas no estado geral de segurança das operações no referido aeródromo podem levar à necessidade de reavaliação imediata da viabilidade técnica, conveniência e oportunidade da isenção .”
+
+A Diretoria Colegiada da Agência, em fevereiro de 2020, por unanimidade, nos termos do voto de relatoria do Diretor Juliano Noman ( 3988247 ), anuiu à análise técnica da SIA e acatou a recomendação de concessão da isenção na forma como proposta pelo gestor da SIA. Senão veja-se:
+
+2.1 Como relatado, a VINCI Airports, solicitou isenção devido a impossibilidade de adequação da faixa de pista da Pista de Pouso e Decolagem 10/28 conforme requisito 154.207(d)(1) do RBAC nº 154, visto que o COMAER, órgão responsável pela instalação do equipamento, não identificou área disponível fora da faixa de pista para a realocação do Glide Slope .
+
+2.2 Para a manutenção da segurança operacional em nível aceitável, foi apresentado pelo operador, além das tratativas com o COMAER para a realocação do equipamento, medidas adicionais para mitigar o risco.
+
+2.3 Ressalta-se também, as ações propostas pela área técnica de reavaliar os cenários operacionais periodicamente e realizar o gerenciamento do risco se necessário.
+
+2.4 Depreende-se assim que, com a implementação das medidas propostas, a isenção peticionada atende ao interesse público em um nível de segurança adequado .
+
+[...] 3.1 Por todo o exposto e, considerando o teor do Despacho GCOP, [6] com fundamento no artigo 8º, inciso XXI e no artigo 11, inciso V, ambos da Lei 11.182/2005, VOTO FAVORAVELMENTE ao deferimento de isenção temporária, pelo prazo de 60 meses , do requisito de que trata o parágrafo 154.207(d)(1) do RBAC nº 154, emenda 06, ao Operador do Aeroporto Internacional de Salvador – VINCI Airports. (Voto 3988247)
+
+Encerrado o prazo concedido, nos termos do Despacho GCOP 3720900 , a Concessionária apresentou nova análise, contemplando a situação fática atual, bem como os dados de safety acumulados no período de vigência da isenção. A documentação evidenciou que as operações transcorreram sem registro de ocorrências relacionadas ao obstáculo em questão. A área técnica da ANAC, ao reexaminar o caso, ratificou o entendimento anteriormente adotado, concluindo, novamente, pela manutenção de nível aceitável de segurança operacional, desde que preservadas as medidas mitigadoras implementadas. Assim, tanto as áreas técnicas como o gestor da SIA recomendaram à Diretoria da Agência o deferimento do pedido de isenção, em caráter definitivo, do requisito 154.207 do Regulamento Brasileiro de Aviação Civil - RBAC 154 / Emd 08 para operador do aeroporto de Salvador (SBSV).
+
+Outrossim, já no âmbito da deliberação pela Diretoria, o novo relator designado, Diretor Rui Mesquita, apresentou voto ( 12823458 ) no qual, em síntese, defere parcialmente o pleito de isenção, concedendo isenção temporária pelo prazo de 24 meses para que a Concessionária promova a adequação ao regulamento, a contar da publicação da Decisão da ANAC, em vez da isenção permanente proposta pela área técnica na Nota Técnica nº 82/2025/GTOP/GCOP/SIA (SEI 12012038 ) e respectiva proposta de ato (SEI 12048247 ).
+
+Inobstante, solicitei vista do processo para me aprofundar na avaliação do caso concreto e nas propostas de encaminhamento, considerando, inclusive, que o RBAC 154 se encontra em revisão normativa e que eventual alteração poderá implicar a reanálise do risco de violação do presente obstáculo, uma vez que a violação aqui analisada, ainda que permaneça, poderá ser reduzida caso o regulamento seja atualizado conforme proposto pela área técnica. Entretanto, dado que o término do mandato que exerço ocorrerá no dia 19 de março próximo, creio que não será possível aguardar a conclusão da revisão do RBAC 154 e, portanto, tendo em vista a sensibilidade do tema, passo as razões de decidir.
+
+Com a devida vênia ao Relator, me alinho ao entendimento da SIA. Destaco que o obstáculo constitui componente essencial do Glide Slope (GS) do ILS da Pista 28, tratando-se de auxílio fundamental à navegação aérea. Sua eventual supressão ou deslocamento para atendimento estrito ao requisito normativo da ANAC poderá, em princípio, gerar riscos superiores àqueles atualmente mitigados e gerenciados no cenário vigente, haja vista, que a Concessionária não pode, por sua livre e exclusiva iniciativa, remover, reconstruir ou retirar o equipamento e a KT do local, previamente definido e acordado entre a CASSA, o COMAER e com ciência da ANAC.
+
+Adicionalmente, ressalto o Ofício nº 142/OACO/15928, de 29/05/2025, do Cindacta III, órgão responsável pela instalação do equipamento, informando que a substituição do auxílio está prevista para ocorrer em 2029. Tal informação reforça o caráter estrutural e de médio prazo da solução atualmente adotada, indicando que eventual modificação dependerá de planejamento sistêmico no âmbito do COMAER, da Concessionária e da própria área técnica da Agência.
+
+Assim, a meu ver, estabelecer um prazo inferior ao estipulado pelo órgão responsável pelo equipamento para que a Concessionária resolva completamente a questão vai contra os princípios da eficiência e da economicidade. Isso pode resultar em reanálises administrativas e em investimentos duplicados para alcançar o mesmo objetivo - garantir que as operações aéreas no aeroporto se mantenham e ocorram com um nível de segurança adequado.
+
+Nessa esteira, avalio que os fundamentos que levaram a Diretoria a deferir a isenção anteriormente concedida pelo prazo de 5 (cinco) anos ou 60 (sessenta) meses, quais sejam, que a limitação temporal permite reavaliações periódicas e a adaptação a possíveis mudanças operacionais, tecnológicas ou regulatórias, além de proporcionar tempo suficiente para monitoramento contínuo e garantir que o contexto operacional seja revisado caso ocorram alterações significativas na segurança das operações no aeroporto, permanecem válidos para subsidiar a presente decisão.
+
+Portanto, considerando que os dados de safety e os estudos aeronáuticos mostraram que as operações realizadas no aeroporto durante o período de isenção anterior ocorreram em um nível de segurança adequado, que existe um planejamento do COMAER para substituir o equipamento no ano de 2029, que os operadores aéreos estão cientes e concordam com a continuidade da isenção, que a informação técnica está disponível no ATIS (Serviço Automático de Informação Terminal), que as ações mitigadoras implementadas pelo Operador do aeroporto serão mantidas e que a Agência tem o mais alto grau de comprometimento tanto com segurança operacional, sendo esta inegociável, como com a estabilidade e previsibilidade regulatória em suas decisões, concluo pelo deferimento da isenção peticionada pelo prazo de 60 (sessenta) meses, a contar da data de publicação da presente decisão.
+
+DO VOTO
+
+Por todo o exposto, VOTO FAVORAVELMENTE pelo deferimento de pedido de isenção de cumprimento do requisito de que trata o parágrafo 154.207(d)(1) do Regulamento Brasileiro da Aviação Civil nº 154, Emenda nº 08, peticionado pela Concessionária do Aeroporto de Salvador S.A. para o Aeroporto Internacional Deputado Luís Eduardo Magalhães, localizado em Salvador (BA), devido à presença da Casa de Transmissão (KT) do equipamento glide slope da cabeceira 28 na faixa de pista da pista de pouso e decolagem 10/28, pelo prazo de 60 (sessenta) meses a contar da publicação da presente decisão.
+
+É como voto.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 10/03/2026, às 11:02, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12909887 e o código CRC FE554EC8 .
+
+SEI nº 12909887

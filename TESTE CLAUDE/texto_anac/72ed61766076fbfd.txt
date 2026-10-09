@@ -1,0 +1,284 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00066.015589/2024-61
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas
+
+Data de Geração: 27/12/2024
+
+Interessados: Alberto Jaime Ambram
+Daniel Dias da Silva
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (39 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+10987045 Abertura de Processo Normativo 1 27/12/2024 27/12/2024 GTEN
+11404539 Nota Técnica 10 10/11/2025 10/11/2025 GTNI
+12005388 Anexo Diferenças entre o part 26 e o RBAC nº 26 01/09/2025 01/09/2025 GTNI
+12005594 Regulamento part 26 atual 01/09/2025 01/09/2025 GTNI
+12031692 Emenda 26-4 da part 26 10/03/2010 07/09/2025 GTNI
+12031693 Emenda 26-5 da part 26 15/11/2010 07/09/2025 GTNI
+12031694 Emenda 26-6 da part 26 24/05/2012 07/09/2025 GTNI
+12031695 Emenda 26-7 da part 26 05/03/2018 07/09/2025 GTNI
+12287493 Despacho Decisório 14 03/12/2025 03/12/2025 GTNI
+12961720 Anexo Part 26 09/03/2026 09/03/2026 GTNI
+12031676 Anexo Minuta RBAC 26 08/05/2026 08/05/2026 GTNI
+12961723 Anexo Part 26 09/03/2026 09/03/2026 GTNI
+12962046 Anexo Minuta RBAC 26 08/05/2026 08/05/2026 GTNI
+12961740 Anexo Part 26 09/03/2026 09/03/2026 GTNI
+12962083 Anexo Minuta RBAC 26 08/05/2026 08/05/2026 GTNI
+12961741 Anexo Part 26 09/03/2026 09/03/2026 GTNI
+12962112 Anexo Minuta RBAC 26 08/05/2026 08/05/2026 GTNI
+12031615 Proposta de Ato (Normativo, Decisão etc.) 08/05/2026 08/05/2026 GTNI
+12091142 Despacho 11/05/2026 11/05/2026 GTNI
+13280208 Despacho 20/05/2026 20/05/2026 SAR
+13483502 Parecer 21/2026/FIN/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13483506 Despacho de Aprovação 92/2026/GAB/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13485063 Despacho 17/06/2026 17/06/2026 SAR
+13607938 Proposta de Ato (Normativo, Decisão etc.) 14/07/2026 14/07/2026 GTNI
+13607958 Despacho 15/07/2026 15/07/2026 GTNI
+13633394 Despacho 27/07/2026 27/07/2026 SAR
+13663753 Certidão de Distribuição 28/07/2026 28/07/2026 ASTEC
+13714215 Proposta de Ato (Normativo, Decisão etc.) 10/08/2026 10/08/2026 GTNI
+13714497 Despacho 10/08/2026 10/08/2026 GTNI
+13716822 Despacho 10/08/2026 10/08/2026 SAR
+13664819 Relatório de Diretoria 11/08/2026 11/08/2026 DIR-RJH
+13664821 Voto 11/08/2026 11/08/2026 DIR-RJH
+13720670 Despacho 11/08/2026 11/08/2026 ASTEC
+13729586 Voto 13/08/2026 13/08/2026 DIR-RCM
+13734157 Voto 14/08/2026 14/08/2026 DIR-CBI
+13735841 Voto 18/08/2026 18/08/2026 DIR-P
+13750924 Resolução 810 19/08/2026 19/08/2026 ASTEC
+13768511 Anexo DOU 21/08/2026 21/08/2026 ASTEC
+13768633 Certidão de Deliberação 21/08/2026 21/08/2026 ASTEC
+
+Lista de Andamentos (41 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+18/09/2026 10:37
+DIR-CBI
+
+Conclusão do processo na unidade
+
+21/08/2026 17:30
+GTNI
+
+Processo recebido na unidade
+
+21/08/2026 17:30
+GTNI
+
+Processo remetido pela unidade SAR
+
+21/08/2026 17:16
+SAR
+
+Processo recebido na unidade
+
+21/08/2026 17:02
+SAR
+
+Processo remetido pela unidade ASTEC
+
+20/08/2026 14:51
+DIR-RJH
+
+Conclusão do processo na unidade
+
+20/08/2026 12:00
+DIR-RCM
+
+Conclusão do processo na unidade
+
+19/08/2026 12:33
+DIR-P
+
+Conclusão do processo na unidade
+
+11/08/2026 16:09
+DIR-CBI
+
+Processo recebido na unidade
+
+11/08/2026 16:04
+DIR-P
+
+Processo recebido na unidade
+
+11/08/2026 15:04
+DIR-RJH
+
+Processo recebido na unidade
+
+11/08/2026 12:43
+DIR-RCM
+
+Processo recebido na unidade
+
+11/08/2026 12:19
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 12:19
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 12:19
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 08:08
+DIR-RJH
+
+Processo remetido pela unidade SAR
+
+10/08/2026 13:33
+SAR
+
+Processo recebido na unidade
+
+10/08/2026 13:32
+SAR
+
+Processo remetido pela unidade GTNI
+
+10/08/2026 10:12
+GTNI
+
+Reabertura do processo na unidade
+
+06/08/2026 12:34
+ASTEC
+
+Reabertura do processo na unidade
+
+28/07/2026 11:32
+DIR-RJH
+
+Processo recebido na unidade
+
+28/07/2026 11:03
+ASTEC
+
+Conclusão do processo na unidade
+
+28/07/2026 10:30
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 10:29
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+28/07/2026 09:38
+ASTEC
+
+Processo recebido na unidade
+
+27/07/2026 18:59
+SAR
+
+Conclusão do processo na unidade
+
+27/07/2026 18:59
+ASTEC
+
+Processo remetido pela unidade SAR
+
+15/07/2026 16:41
+SAR
+
+Processo recebido na unidade
+
+15/07/2026 16:31
+SAR
+
+Processo remetido pela unidade GTNI
+
+18/06/2026 11:38
+GTNI
+
+Processo recebido na unidade
+
+17/06/2026 20:54
+GTNI
+
+Processo remetido pela unidade SAR
+
+15/06/2026 12:39
+SAR
+
+Processo recebido na unidade
+
+15/06/2026 12:31
+SAR
+
+Processo remetido pela unidade PF-ANAC
+
+21/05/2026 15:46
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+21/05/2026 15:45
+PF-ANAC
+
+Processo recebido na unidade
+
+20/05/2026 19:31
+PF-ANAC
+
+Processo remetido pela unidade SAR
+
+11/05/2026 09:58
+SAR
+
+Processo recebido na unidade
+
+11/05/2026 09:57
+SAR
+
+Processo remetido pela unidade GTNI
+
+30/12/2024 10:55
+GTNI
+
+Processo recebido na unidade
+
+27/12/2024 19:19
+GTNI
+
+Processo remetido pela unidade GTEN
+
+27/12/2024 11:06
+GTEN
+
+Processo público gerado

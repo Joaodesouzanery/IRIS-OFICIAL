@@ -1,0 +1,886 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.038667/2024-03
+
+Tipo: Aeroporto concedido: áreas aeroportuárias
+
+Data de Geração: 14/05/2024
+
+Interessados: Sindicato das Empresas de Transportes de Cargas de São Paulo e Região
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (80 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+10034199 Carta 14/05/2024 14/05/2024 GERE
+10034200 Recibo Eletrônico de Protocolo 14/05/2024 14/05/2024 GERE
+10038677 Carta 15/05/2024 15/05/2024 GERE
+10038678 Recibo Eletrônico de Protocolo 15/05/2024 15/05/2024 GERE
+10087856 Ofício 73 06/06/2024 06/06/2024 GERE
+10135121 Certidão de Intimação Cumprida 07/06/2024 07/06/2024 GERE
+10143656 Certidão de Intimação Cumprida 10/06/2024 10/06/2024 GERE
+10145538 Petição 10/06/2024 10/06/2024 GERE
+10145539 Recibo Eletrônico de Protocolo 10/06/2024 10/06/2024 GERE
+10196892 Carta 20/06/2024 20/06/2024 GERE
+10196896 Anexo 20/06/2024 20/06/2024 GERE
+10196898 Anexo 20/06/2024 20/06/2024 GERE
+10196900 Recibo Eletrônico de Protocolo 20/06/2024 20/06/2024 GERE
+10212017 Resposta 25/06/2024 25/06/2024 GERE
+10212020 Recibo Eletrônico de Protocolo 25/06/2024 25/06/2024 GERE
+10251358 Manifestação 03/07/2024 03/07/2024 GERE
+10251359 Recibo Eletrônico de Protocolo 03/07/2024 03/07/2024 GERE
+10305657 Carta 16/07/2024 16/07/2024 GERE
+10305659 Recibo Eletrônico de Protocolo 16/07/2024 16/07/2024 GERE
+10311906 Manifestação 18/07/2024 18/07/2024 GERE
+10311907 Recibo Eletrônico de Protocolo 18/07/2024 18/07/2024 GERE
+11489886 Ofício 40 09/05/2025 09/05/2025 GERE
+11515367 Ofício 39/2025/GERE/SRA-ANAC 30/04/2025 08/05/2025 GERE
+11531647 Certidão de Intimação Cumprida 13/05/2025 13/05/2025 GERE
+11562170 Carta 19/05/2025 19/05/2025 GERE
+11562171 Anexo 19/05/2025 19/05/2025 GERE
+11562172 Anexo 19/05/2025 19/05/2025 GERE
+11562174 Anexo 19/05/2025 19/05/2025 GERE
+11562175 Anexo 19/05/2025 19/05/2025 GERE
+11562176 Recibo Eletrônico de Protocolo 19/05/2025 19/05/2025 GERE
+11567251 Ofício(pdf) 20/05/2025 20/05/2025 GERE
+11567252 Recibo Eletrônico de Protocolo 20/05/2025 20/05/2025 GERE
+11593998 Certidão de Intimação Cumprida 26/05/2025 26/05/2025 GERE
+11594000 Certidão de Intimação Cumprida 26/05/2025 26/05/2025 GERE
+11907042 Ofício 71 12/09/2025 12/09/2025 GERE
+11907290 Nota Técnica 40 12/09/2025 12/09/2025 GERE
+11907122 Anexo 08/08/2025 08/08/2025 GERE
+11907149 Anexo 03/06/2025 08/08/2025 GERE
+11907156 Anexo 08/08/2025 08/08/2025 GERE
+11907164 Anexo 08/08/2025 08/08/2025 GERE
+11907170 Anexo 08/08/2025 08/08/2025 GERE
+11907175 Anexo 08/08/2025 08/08/2025 GERE
+11907180 Anexo 08/08/2025 08/08/2025 GERE
+12063375 Certidão de Intimação Cumprida 15/09/2025 15/09/2025 GERE
+12328762 Carta 12/11/2025 12/11/2025 GERE
+12328764 Recibo Eletrônico de Protocolo 12/11/2025 12/11/2025 GERE
+12347958 Nota Técnica 56 06/01/2026 06/01/2026 GERE
+13097267 Despacho 15/04/2026 15/04/2026 SRA
+13442768 Parecer 19/2026/FIN/PFEANAC/PGF/AGU 03/06/2026 03/06/2026 PF-ANAC
+13442790 Despacho de Aprovação 85/2026/GAB/PFEANAC/PGF/AGU 03/06/2026 03/06/2026 PF-ANAC
+13471689 Despacho 17/06/2026 17/06/2026 SRA
+13500490 Certidão de Distribuição 18/06/2026 18/06/2026 ASTEC
+13599933 Carta 13/07/2026 13/07/2026 DIR-CBI
+13599934 Recibo Eletrônico de Protocolo 13/07/2026 13/07/2026 DIR-CBI
+13616700 Despacho 16/07/2026 16/07/2026 DIR-CBI
+13622711 Despacho 03/08/2026 03/08/2026 GERE
+13687302 Anexo 03/08/2026 03/08/2026 GERE
+13687305 Anexo 03/08/2026 03/08/2026 GERE
+13687306 Anexo 03/08/2026 03/08/2026 GERE
+13698830 Despacho 05/08/2026 05/08/2026 SRA
+13705113 Despacho 06/08/2026 06/08/2026 DIR-CBI
+13749220 Relatório de Diretoria 25/08/2026 25/08/2026 DIR-CBI
+13769394 Voto 25/08/2026 25/08/2026 DIR-CBI
+13780709 Despacho 25/08/2026 25/08/2026 ASTEC
+13781556 Voto 28/08/2026 28/08/2026 DIR-P
+13786512 Voto 28/08/2026 28/08/2026 DIR-MNM
+13788675 Voto 28/08/2026 28/08/2026 DIR-RJH
+13799013 Voto 28/08/2026 28/08/2026 DIR-RCM
+13806283 Ofício 21 31/08/2026 31/08/2026 ASTEC
+13819987 Certidão de Deliberação 02/09/2026 02/09/2026 ASTEC
+13821136 Ofício 98 18/09/2026 18/09/2026 GERE
+13868116 Certidão de Intimação Cumprida 15/09/2026 15/09/2026 ASTEC
+13892097 Certidão de Intimação Cumprida 21/09/2026 21/09/2026 GERE
+13919449 Impugnação 25/09/2026 25/09/2026 DIR-P
+13919450 Recibo Eletrônico de Protocolo 25/09/2026 25/09/2026 DIR-P
+13948867 Carta 01/10/2026 01/10/2026 SRA
+13948868 Anexo 01/10/2026 01/10/2026 SRA
+13948869 Recibo Eletrônico de Protocolo 01/10/2026 01/10/2026 SRA
+13957460 Certidão de Distribuição 05/10/2026 05/10/2026 ASTEC
+13977122 Despacho 08/10/2026 08/10/2026 GERE
+
+Lista de Andamentos (153 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+08/10/2026 17:33
+GERE
+
+Reabertura do processo na unidade
+
+08/10/2026 17:33
+SRA
+
+Processo remetido pela unidade GERE
+
+08/10/2026 16:10
+GERE
+
+Alterada hipótese legal do documento 13977122 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+08/10/2026 16:10
+GERE
+
+Alterado nível de acesso do documento 13977122 (Despacho) para restrito
+
+08/10/2026 15:11
+SRA
+
+Reabertura do processo na unidade
+
+05/10/2026 12:03
+ASTEC
+
+Conclusão do processo na unidade
+
+05/10/2026 08:24
+ASTEC
+
+Processo recebido na unidade
+
+05/10/2026 08:02
+ASTEC
+
+Processo remetido pela unidade DIR-P
+
+02/10/2026 14:12
+GERE
+
+Processo recebido na unidade
+
+02/10/2026 13:09
+GERE
+
+Processo remetido pela unidade SRA
+
+02/10/2026 12:50
+SRA
+
+Processo recebido na unidade
+
+01/10/2026 18:08
+SRA
+
+Processo remetido pela unidade SRA
+
+28/09/2026 16:05
+DIR-P
+
+Processo recebido na unidade
+
+25/09/2026 17:48
+SRA
+
+Processo recebido na unidade
+
+25/09/2026 17:47
+SRA
+
+Processo remetido pela unidade GTAS-SRA
+
+25/09/2026 17:16
+DIR-P
+
+Processo remetido pela unidade DIR-P
+
+24/09/2026 11:02
+GERE
+
+Conclusão do processo na unidade
+
+21/09/2026 15:50
+GERE
+
+Processo recebido na unidade
+
+21/09/2026 13:41
+GERE
+
+Processo remetido pela unidade GERE
+
+21/09/2026 11:05
+GERE
+
+Alterado nível de acesso do processo para público
+
+21/09/2026 11:04
+GERE
+
+Alterada hipótese legal do documento 12328762 (Carta) para Vantagem Competitiva (Art. 19, III, da IN nº 70/2013)
+
+21/09/2026 11:04
+GERE
+
+Alterado nível de acesso do documento 13821136 (Ofício 98) para público
+
+21/09/2026 11:03
+GERE
+
+Alterada hipótese legal do documento 13698830 (Despacho) para Vantagem Competitiva (Art. 19, III, da IN nº 70/2013)
+
+21/09/2026 11:02
+GERE
+
+Alterada hipótese legal do documento 13622711 (Despacho) para Vantagem Competitiva (Art. 19, III, da IN nº 70/2013)
+
+21/09/2026 11:02
+GERE
+
+Alterada hipótese legal do documento 13599933 (Carta) para Vantagem Competitiva (Art. 19, III, da IN nº 70/2013)
+
+21/09/2026 11:01
+GERE
+
+Reabertura do processo na unidade
+
+18/09/2026 13:04
+GERE
+
+Conclusão do processo na unidade
+
+15/09/2026 11:24
+ASTEC
+
+Conclusão do processo na unidade
+
+15/09/2026 10:50
+ASTEC
+
+Processo recebido na unidade
+
+15/09/2026 10:48
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+15/09/2026 10:47
+ASTEC
+
+Reabertura do processo na unidade
+
+11/09/2026 10:37
+DIR-MNM
+
+Conclusão do processo na unidade
+
+02/09/2026 15:30
+ASTEC
+
+Conclusão do processo na unidade
+
+02/09/2026 15:29
+ASTEC
+
+Cancelado documento 13806279 (Certidão de Deliberação).
+
+Documento substituído pela Certidão de Deliberação (SEI nº 13819987)
+
+02/09/2026 15:27
+ASTEC
+
+Reabertura do processo na unidade
+
+31/08/2026 16:43
+GERE
+
+Processo recebido na unidade
+
+31/08/2026 16:42
+GERE
+
+Processo remetido pela unidade SRA
+
+31/08/2026 16:39
+SRA
+
+Processo recebido na unidade
+
+31/08/2026 14:37
+SRA
+
+Processo remetido pela unidade ASTEC
+
+29/08/2026 07:44
+DIR-RJH
+
+Conclusão do processo na unidade
+
+26/08/2026 11:15
+DIR-MNM
+
+Processo recebido na unidade
+
+25/08/2026 16:51
+DIR-RCM
+
+Processo recebido na unidade
+
+25/08/2026 14:01
+DIR-RJH
+
+Processo recebido na unidade
+
+25/08/2026 13:16
+DIR-P
+
+Processo recebido na unidade
+
+25/08/2026 11:57
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+21/08/2026 11:48
+DIR-RJH
+
+Reabertura do processo na unidade
+
+20/08/2026 12:27
+ASTEC
+
+Reabertura do processo na unidade
+
+10/08/2026 10:56
+DIR-MNM
+
+Processo recebido na unidade
+
+09/08/2026 15:39
+DIR-RJH
+
+Conclusão do processo na unidade
+
+07/08/2026 10:50
+DIR-RJH
+
+Processo recebido na unidade
+
+07/08/2026 10:43
+ASTEC
+
+Conclusão do processo na unidade
+
+07/08/2026 10:40
+ASTEC
+
+Processo recebido na unidade
+
+07/08/2026 10:15
+DIR-RCM
+
+Processo recebido na unidade
+
+06/08/2026 19:50
+DIR-P
+
+Conclusão do processo na unidade
+
+06/08/2026 19:48
+DIR-P
+
+Processo recebido na unidade
+
+06/08/2026 19:22
+ASTEC
+
+Processo remetido pela unidade DIR-CBI
+
+06/08/2026 19:22
+DIR-RJH
+
+Processo remetido pela unidade DIR-CBI
+
+06/08/2026 19:22
+DIR-RCM
+
+Processo remetido pela unidade DIR-CBI
+
+06/08/2026 19:22
+DIR-MNM
+
+Processo remetido pela unidade DIR-CBI
+
+06/08/2026 19:22
+DIR-P
+
+Processo remetido pela unidade DIR-CBI
+
+06/08/2026 10:25
+DIR-CBI
+
+Processo recebido na unidade
+
+05/08/2026 21:49
+DIR-CBI
+
+Processo remetido pela unidade SRA
+
+03/08/2026 18:08
+SRA
+
+Processo recebido na unidade
+
+03/08/2026 16:46
+SRA
+
+Processo remetido pela unidade GERE
+
+03/08/2026 11:38
+GERE
+
+Alterada hipótese legal do documento 13622711 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 11:38
+GERE
+
+Alterado nível de acesso do documento 13622711 (Despacho) para restrito
+
+03/08/2026 00:04
+SRA
+
+Reabertura do processo na unidade
+
+20/07/2026 18:01
+GERE
+
+Alterada hipótese legal do processo para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+20/07/2026 18:01
+GERE
+
+Alterado nível de acesso do processo para restrito
+
+17/07/2026 09:18
+GERE
+
+Processo recebido na unidade
+
+16/07/2026 19:08
+GERE
+
+Processo remetido pela unidade SRA
+
+16/07/2026 19:05
+SRA
+
+Processo recebido na unidade
+
+16/07/2026 18:39
+SRA
+
+Processo remetido pela unidade DIR-CBI
+
+13/07/2026 15:04
+DIR-CBI
+
+Processo recebido na unidade
+
+13/07/2026 14:05
+DIR-CBI
+
+Processo remetido pela unidade DIR-CBI
+
+18/06/2026 13:01
+ASTEC
+
+Conclusão do processo na unidade
+
+18/06/2026 11:43
+DIR-CBI
+
+Processo recebido na unidade
+
+18/06/2026 11:06
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+18/06/2026 11:06
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+18/06/2026 09:52
+ASTEC
+
+Processo recebido na unidade
+
+17/06/2026 19:31
+ASTEC
+
+Processo remetido pela unidade SRA
+
+08/06/2026 10:28
+SRA
+
+Processo recebido na unidade
+
+03/06/2026 16:17
+SRA
+
+Processo remetido pela unidade PF-ANAC
+
+16/04/2026 17:12
+PF-ANAC
+
+Processo recebido na unidade
+
+15/04/2026 16:43
+PF-ANAC
+
+Processo remetido pela unidade SRA
+
+06/04/2026 11:45
+GTAS-SRA
+
+Processo recebido na unidade
+
+06/04/2026 11:45
+GTAS-SRA
+
+Processo remetido pela unidade SRA
+
+13/01/2026 18:24
+GERE
+
+Conclusão do processo na unidade
+
+07/01/2026 09:30
+SRA
+
+Processo recebido na unidade
+
+06/01/2026 19:02
+SRA
+
+Processo remetido pela unidade GERE
+
+12/11/2025 11:43
+GERE
+
+Processo recebido na unidade
+
+12/11/2025 11:42
+GERE
+
+Processo remetido pela unidade GERE
+
+19/09/2025 15:28
+GTAS-SRA
+
+Conclusão do processo na unidade
+
+19/09/2025 15:27
+GTAS-SRA
+
+Processo recebido na unidade
+
+19/09/2025 14:32
+GERE
+
+Alterado nível de acesso do documento 11562175 (Anexo) para público
+
+19/09/2025 14:32
+SRA
+
+Conclusão do processo na unidade
+
+19/09/2025 14:31
+GERE
+
+Alterado nível de acesso do documento 11562174 (Anexo) para público
+
+19/09/2025 14:31
+GERE
+
+Alterado nível de acesso do documento 11562172 (Anexo) para público
+
+19/09/2025 14:31
+GERE
+
+Alterado nível de acesso do documento 11562170 (Carta) para público
+
+19/09/2025 14:30
+GERE
+
+Alterado nível de acesso do documento 10305657 (Carta) para público
+
+19/09/2025 14:29
+GERE
+
+Alterado nível de acesso do documento 10196898 (Anexo) para público
+
+19/09/2025 14:29
+GERE
+
+Alterado nível de acesso do documento 10196896 (Anexo) para público
+
+19/09/2025 14:29
+GERE
+
+Alterado nível de acesso do documento 10196892 (Carta) para público
+
+19/09/2025 14:26
+SRA
+
+Processo recebido na unidade
+
+19/09/2025 14:25
+GERE
+
+Reabertura do processo na unidade
+
+19/09/2025 14:25
+SRA
+
+Processo remetido pela unidade GERE
+
+19/09/2025 14:25
+GTAS-SRA
+
+Processo remetido pela unidade GERE
+
+19/09/2025 14:25
+GERE
+
+Alterado nível de acesso do processo para público
+
+15/09/2025 14:23
+GERE
+
+Processo recebido na unidade
+
+15/09/2025 11:24
+GERE
+
+Processo remetido pela unidade GERE
+
+12/09/2025 17:48
+GERE
+
+Alterado nível de acesso do documento 11907042 (Ofício 71) para público
+
+12/09/2025 17:48
+GERE
+
+Alterado nível de acesso do documento 11907290 (Nota Técnica 40) para público
+
+08/08/2025 14:51
+GERE
+
+Alterada hipótese legal do documento 11907042 (Ofício 71) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+08/08/2025 14:51
+GERE
+
+Alterado nível de acesso do documento 11907042 (Ofício 71) para restrito
+
+08/08/2025 10:51
+GERE
+
+Alterada hipótese legal do processo para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+08/08/2025 10:51
+GERE
+
+Alterado nível de acesso do processo para restrito
+
+08/08/2025 10:38
+GERE
+
+Reabertura do processo na unidade
+
+02/07/2025 17:38
+GERE
+
+Conclusão do processo na unidade
+
+27/05/2025 09:56
+GERE
+
+Processo recebido na unidade
+
+26/05/2025 23:04
+GERE
+
+Processo remetido pela unidade GERE
+
+26/05/2025 23:04
+GERE
+
+Processo remetido pela unidade GERE
+
+20/05/2025 16:39
+GERE
+
+Processo recebido na unidade
+
+20/05/2025 16:24
+GERE
+
+Processo remetido pela unidade GERE
+
+20/05/2025 09:35
+GERE
+
+Processo recebido na unidade
+
+19/05/2025 20:27
+GERE
+
+Processo remetido pela unidade GERE
+
+13/05/2025 09:20
+GERE
+
+Processo recebido na unidade
+
+13/05/2025 09:10
+GERE
+
+Processo remetido pela unidade GERE
+
+18/07/2024 09:08
+GERE
+
+Processo recebido na unidade
+
+18/07/2024 08:58
+GERE
+
+Processo remetido pela unidade GERE
+
+16/07/2024 18:19
+GERE
+
+Processo recebido na unidade
+
+16/07/2024 17:57
+GERE
+
+Processo remetido pela unidade GERE
+
+03/07/2024 17:04
+GERE
+
+Processo recebido na unidade
+
+03/07/2024 16:14
+GERE
+
+Processo remetido pela unidade GERE
+
+25/06/2024 10:31
+GERE
+
+Processo recebido na unidade
+
+25/06/2024 10:30
+GERE
+
+Processo remetido pela unidade GERE
+
+21/06/2024 13:43
+GERE
+
+Processo recebido na unidade
+
+20/06/2024 17:50
+GERE
+
+Processo remetido pela unidade GERE
+
+10/06/2024 15:05
+GERE
+
+Processo recebido na unidade
+
+10/06/2024 15:05
+GERE
+
+Processo remetido pela unidade GERE
+
+10/06/2024 11:30
+GERE
+
+Processo remetido pela unidade GERE
+
+07/06/2024 10:43
+GERE
+
+Alterado nível de acesso do documento 10087856 (Ofício 73) para público
+
+07/06/2024 10:42
+GERE
+
+Alterado nível de acesso do documento 10038677 (Carta) para público
+
+07/06/2024 10:42
+GERE
+
+Alterado nível de acesso do documento 10034199 (Carta) para público
+
+07/06/2024 09:56
+GERE
+
+Processo recebido na unidade
+
+07/06/2024 08:34
+GERE
+
+Processo remetido pela unidade GERE
+
+15/05/2024 16:31
+GERE
+
+Processo recebido na unidade
+
+15/05/2024 13:28
+GERE
+
+Processo remetido pela unidade GERE
+
+14/05/2024 16:24
+GERE
+
+Processo recebido na unidade
+
+14/05/2024 16:23
+GERE
+
+Processo remetido pela unidade GERE
+
+14/05/2024 16:23
+GERE
+
+Processo público gerado

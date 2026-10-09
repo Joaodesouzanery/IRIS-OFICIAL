@@ -1,0 +1,69 @@
+SEI/ANAC - 12628600 - Voto
+
+Voto
+
+PROCESSO: 00058.034495/2021-48
+
+INTERESSADO: SUPERINTENDÊNCIA DE INFRAESTRUTURA AEROPORTUÁRIA - SIA
+
+RELATOR: LUIZ RICARDO DE SOUZA NASCIMENTO
+
+da competência
+
+Nos termos do artigo 8º da Lei nº 11.182, de 27 de setembro de 2005, cabe à ANAC adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da aviação civil, da infraestrutura aeronáutica e aeroportuária do país, estando incumbida, entre outras competências, regular e fiscalizar a segurança da aviação civil, a facilitação do transporte aéreo, a movimentação de passageiros e carga e expedir regras sobre segurança em área aeroportuária e a bordo de aeronaves civis. À Diretoria da ANAC, conforme artigo 11, inciso V do mesmo diploma legal, compete exercer o poder normativo da Agência.
+
+Por seu turno, o Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, através de seu artigo 33, inciso I, alínea “c”, prevê que compete à Superintendência de Infraestrutura Aeroportuária - SIA submeter à Diretoria propostas de atos normativos sobre proteção das operações de aviação civil contra atos de interferência ilícita.
+
+Constata-se, portanto, que a matéria em discussão é de competência da Diretoria Colegiada da ANAC e foi corretamente encaminhada pela área técnica competente.
+
+DA análise e fundamentação
+
+Conforme exposto no Relatório (SEI 12619695 ), apresenta-se à deliberação da Diretoria Colegiada da ANAC a tranche final, última etapa do Tema 10 da Agenda Regulatória para o biênio 2023/2024, intitulado "Revisão do RBAC nº 107 e do RBAC nº 108, baseada em avaliação de risco frente aos cenários de ameaça aplicáveis às operações".
+
+Durante a presente revisão normativa, a área técnica da SIA conduziu uma análise detalhada de cada requisito dos regulamentos em questão, juntamente com a avaliação de risco das medidas de segurança. A importância de cada um desses requisitos para a proteção da aviação civil contra atos de interferência ilícita foi avaliada em relação aos cenários de ameaça identificados, de acordo com a metodologia apresentada no Relatório de Análise de Impacto, AIR n.º 3/2022/GTNO-SIA/GNAD/SIA (SEI 7366158 ).
+
+Com base nos resultados dessa avaliação, a área técnica propôs na revisão normativa, para cada requisito: manter na forma vigente; excluir; alterar a aplicabilidade; promover ajustes de redação; ou movimentar o requisito do RBAC para a Instrução Suplementar – IS ou para manuais. Manter nos regulamentos apenas o indispensável e migrar o possível para as IS e manuais, permitirá a os regulados, de forma mais abrangente, simplificada e ágil, propor à ANAC meios alternativos para atender a um princípio de segurança. Tal iniciativa reduzirá o custo regulatório tanto para os regulados como para a ANAC e não haverá qualquer prejuízo para a segurança das operações, pelo contrário, com a redução da prescritividade normativa espera-se que práticas alternativas eficientes possam surgir e serem disseminadas entre os operadores.
+
+As minutas de revisão dos RBACs e das Instruções Suplementares foram submetidas à consulta pública que resultou no envio de 267 contribuições. Destas, 56 foram acatadas, 5 estavam fora do escopo da proposta, 34 não foram acatadas, 37 foram parcialmente acatadas e 135 foram destinadas a esclarecimentos, conforme aponta a Nota Técnica nº 13/2025/GTNO-SIA/GNAD/SIA (SEI 11865672 ).
+
+Os principais ajustes e melhorias decorrentes das contribuições públicas sobre os referidos RBACs foram:
+
+No parágrafo 107.17(b)(1) do RBAC nº 107, foi explicitado que somente os projetos de reforma e/ou ampliação aeroportuária que impactem na AVSEC devem ser avaliados pela Comissão de Segurança Aeroportuária - CSA;
+
+No parágrafo 107.63(a)(1) do RBAC nº 107, para fins de clareza do regulamento, foi indicado que as áreas de estacionamento de aeronaves utilizadas em operações comerciais regulares de passageiros com capacidade superior a 19 assentos e de carga e mala postal conhecidos com capacidade máxima de carga paga acima de 3.400 kg devem ser separadas, no espaço ou no tempo, das áreas utilizadas por aeronaves das demais operações;
+
+No parágrafo 107.91(a)(4) do RBAC nº 107, foi inserido no texto do regulamento a possiblidade e condições para que uma credencial ou autorização aeroportuária tenha sua validade estendida para mais de um aeródromo;
+
+No parágrafo 107.217(a) do RBAC nº 107, foi promovido ajuste para que o Plano de Segurança de Transporte Aéreo de Valores passe a ser exigido somente quando houver tal tipo de operação no aeródromo;
+
+No Apêndice A do RBAC nº 107, foi revisada a forma de apresentação da aplicabilidade dos requisitos relacionados à avaliação de risco, facilitando a compreensão das exigências para os aeródromos de classes C e D;
+
+No Apêndice A do RBAC nº 107, foi ajustado o texto para esclarecer que para a c lasse D, caso o operador de aeródromo disponibilize um Responsável pelo PCQ/AVSEC, tal profissional poderá acumular tal função com o Responsável AVSEC; e
+
+Acerca do RBAC nº 108, a área técnica trouxe esclarecimentos acerca de alguns requisitos de controle de qualidade AVSEC, sem maiores impactos na proposta original.
+
+No que diz respeito à implementação voluntária por parte dos operadores de um Sistema de Gestão da Segurança da Aviação Civil contra Atos de Interferência Ilícita (SGSE), em consonância ao recomendado no item 2.16 do Voto SEI 11075975 , a área técnica incluiu nos regulamentos a previsão de que a ANAC poderá estabelecer benefícios para operadores aeroportuários/operadores aéreos que tiverem seu SGSE reconhecido pela Agência. Reforço que a implementação dessa medida responsiva proposta pela SIA deve ser feita o mais rápido possível, uma vez que ela servirá como um incentivo para a disseminação dessa prática positiva no setor regulado.
+
+Além das alterações apontadas acima, após a consulta pública, também foram promovidos ajustes redacionais nos RBACs nº 107 e nº 108, sem impacto material na norma, bem como ajustes nas minutas das Instruções Suplementares - IS nº 107 e nº 108, cuja aprovação é de competência da própria SIA.
+
+Em relação ao prazo de vigência das novas emendas, concordo com a posição da equipe técnica de que as contribuições recebidas durante a consulta pública demonstraram a necessidade de os operadores se ajustarem à regulamentação atualizada. Dessa forma, a proposta em discussão já apresenta o prazo estendido, ou seja, de 12 (doze) meses para a entrada em vigor das emendas aos Regulamentos, ajustando o prazo de 6 (seis) meses estipulado na proposta original.
+
+No que toca aos aspectos jurídicos, como apontado no Relatório (SEI 12619695 ) , as recomendações exaradas pela Procuradoria Federal Especializada junto à ANAC foram endereçadas pela SIA, nos termos do Despacho SEI 12446473 .
+
+Para concluir, gostaria de parabenizar a SIA pelo excelente trabalho realizado ao longo deste projeto, que revisou não apenas as normas de segurança da aviação civil contra atos de interferência ilícita, mas também atualizou e modernizou toda a abordagem e estratégia regulatória relacionada ao tema. Sem dúvida, os resultados desse esforço serão transmitidos aos regulados e à sociedade, como parte do processo de aprimoramento constante da segurança da aviação civil brasileira.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação das emendas aos Regulamentos Brasileiros de Aviação Civil (RBAC) nº 107 e RBAC nº 108 , nos termos das Propostas de Atos Normativos SEI nºs 12447782 , 12523044 e 11877238 .
+
+É como voto.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor-Relator
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 03/02/2026, às 09:26, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12628600 e o código CRC 998D68EC .
+
+SEI nº 12628600

@@ -1,0 +1,85 @@
+SEI/ANAC - 13717748 - Voto
+
+Voto
+
+PROCESSO: 00058.045226/2026-11
+
+INTERESSADO: SUPERINTENDÊNCIA DE SERVIÇOS AÉREOS
+
+RELATOR: RUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, conferiu competência à Agência Nacional de Aviação Civil para regular e fiscalizar a infraestrutura aeroportuária, para regular as autorizações de horários de pouso e decolagem de aeronaves civis, assim como para compor, administrativamente, conflitos de interesses entre prestadoras de serviços aéreos e de infraestrutura aeronáutica e aeroportuária (art. 8º, incisos XIX a XXI).
+
+Com base em tais atribuições legais, foi editada a Resolução nº 682, de 7 de junho de 2022, que regulamenta a coordenação de aeroportos e dispõe sobre as regras de alocação e monitoramento do uso da infraestrutura aeroportuária.
+
+O normativo estabelece que declaração de aeroporto coordenado se dará por ato da Diretoria da ANAC (art. 3º, inciso XI), do qual constarão, entre outros parâmetros, a “ quantidade mínima de slots para ser considerada uma série de slots no aeroporto ” (art. 31, inciso XII).
+
+O Regimento Interno da Agência, aprovado pela Resolução Interna nº 10, de 27 de julho de 2026, confere à Superintendência de Serviços Aéreos (SSA), por sua vez, as competências para “ alocar e monitorar os horários de chegadas e partidas em aeroportos coordenados e monitorar os aeroportos de interesse ” (art. 31, inciso XVI) e para submeter propostas de atos normativos nas matérias compreendidas em sua esfera de competência (art. 30, inciso VII).
+
+Em atenção às atribuições elencadas e observada a competência da Diretoria Colegiada para exercer o poder normativo da ANAC (art. 10, inciso VII, do Regimento Interno), encontra-se devidamente demonstrada a competência da Diretoria para deliberação da matéria.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme exposto no Relatório [1] , a Superintendência de Serviços Aéreos (SSA) propõe a alteração das decisões que declaram coordenados os Aeroportos de Congonhas (SBSP), Guarulhos (SBGR) e Santos Dumont (SBRJ) para atualização do parâmetro de série de slots da Temporada de Verão (Summer) [2] , com o objetivo de promover harmonização com a nova referência estabelecida no Worldwide Airport Slot Guidelines (WASG).
+
+Em síntese, prevê-se na proposta a alteração do inciso XII do art. 1º das Decisões nº 533, nº 534, e nº 535, todas de 7 de junho de 2022, que atualmente fixam como 5 (cinco) slots a quantidade mínima para ser considerada uma série de slots nos 3 (três) aeroportos atualmente coordenados. A partir das propostas de ato lançadas nos autos pela SSA, prevê-se a adoção da seguinte redação para o dispositivo: “ quantidade mínima de slots para ser considerada uma série de slots no aeroporto: 5 (cinco) slots nas temporadas de Inverno e 7 (sete) slots nas temporadas de Verão ” [3] .
+
+A alteração tem por fundamento a perspectiva de harmonização dos parâmetros brasileiros à referência estabelecida de forma consensual pela indústria em âmbito internacional [4] . O WASG se constitui como manual resultante de estudos técnicos e interlocuções envolvendo operadores aéreos, operadores aeroportuários e coordenadores de slots de diferentes países, reunidos a partir da coordenação da International Air Transport Association (IATA), do Airports Council International (ACI), e do Worldwide Airport Coordinators Group (WWACG).
+
+De acordo com a definição prevista na Resolução nº 682, de 7 de junho de 2022, a série de slots corresponde ao “ conjunto de slots alocados para a mesma empresa de transporte aéreo em semanas consecutivas, no mesmo dia da semana, no mesmo horário, cuja quantidade de slots seja igual ou maior que o valor do parâmetro estabelecido para este fim na declaração de aeroporto coordenado ” [5] . A alteração do atual parâmetro de 5 (cinco) para 7 (sete) semanas consecutivas na Temporada de Verão (Summer) tem por motivação a diferenciação estrutural entre as temporadas (duração média de 22 semanas da Temporada de Inverno (Winter) e 30 semanas da Summer).
+
+O ajuste promove, portanto, maior proporcionalidade à duração das temporadas e tem como consequência o estímulo à programação inicial das operações com séries de maior duração. Há que se destacar, entretanto, que a alteração não afeta eventuais testes de mercado por parte de operadores entrantes ou a atuação de provedores que possuam demandas pontuais de operação. Após a apresentação das demandas de slots no estágio de alocação inicial para a temporada é aberta janela para acomodação, que inclui oportunidade para conjuntos de slots que não venham a compor uma série conforme os parâmetros mínimos, da mesma forma que é mantida a oportunidade de ajuste posterior de malha a partir de alterações nas programações, cancelamentos em virtudes de necessidades técnicas previamente agendadas, entre outros fatores que tradicionalmente são acompanhados e geridos pela coordenação de slots segundo as práticas previstas no WASG.
+
+Convém destacar, ainda, que o impacto estimado a partir do levantamento realizado pela equipe técnica é residual, destacando-se que para os Aeroportos de Santos Dumont e Congonhas todas as séries alocadas nos últimos 4 (quatro) anos para a Temporada de Verão já contemplam conjuntos com ao menos 7 (sete) semanas consecutivas de duração. Somadas as Temporadas de Verão de 2023, 2024, 2025 e 2026 foram alocadas 52.969 (cinquenta e duas mil, novecentas e sessenta e nove) séries de slots para os 3 (três) aeroportos coordenados, identificando-se impacto em apenas 10 (dez) séries no aeroporto de Guarulhos (ou seja, 0,02% de séries afetadas) [6] .
+
+Com base em tais dados, a partir do baixo impacto envolvido e da perspectiva de manutenção do alinhamento com padrões internacionalmente consagrados, foi proposta a dispensa de Análise de Impacto Regulatório (AIR) no processo normativo em tela, com indicação dos permissivos previstos nos incisos III e VI do art. 4º do Decreto nº 10.411, de 30 de junho de 2020 [7] .
+
+Quando cabível a dispensa de AIR, a Instrução Normativa nº 154, de 20 de março de 2020 [8] , prevê que a realização de consulta pública assume caráter facultativo. Nas hipóteses em que a dispensa se der com base em baixo impacto da alteração ou vinculação da alteração à manutenção da convergência com padrões internacionais, entretanto, exige-se a implementação de algum outro mecanismo de participação social. A esse respeito, observa-se que a instrução processual foi complementada com a realização de reunião participativa junto aos principais atores afetados pela proposta [9] . O mecanismo da reunião participativa é previsto no “Guia de Participação Social no Processo Normativo da ANAC” [10] e na ocasião, como se extrai da ata juntada ao processo, permitiu adequado detalhamento da proposta, das motivações que a originaram e das estimativas de impacto levantadas pela ANAC.
+
+Ainda com relação ao trâmite administrativo, o processo foi submetido ao exame jurídico por parte da Procuradoria Federal Especializada junto à ANAC, que concluiu não haver ressalvas quanto à submissão do processo à deliberação final por parte da Diretoria Colegiada [11] .
+
+O sumário da instrução processual releva, portanto, que a instrução da iniciativa regulatória observou o rito estabelecido na Agência. Ademais, a harmonização aos parâmetros internacionais representa medida com impacto positivo para a coordenação dos slots nos aeroportos brasileiros, sem prejuízo à atração de novos operadores nem à promoção do uso eficiente das infraestruturas aeroportuárias, o que demonstra a pertinência da alteração sob exame. Como consequência, julgo adequada a ratificação da dispensa de AIR e de consulta pública, bem como a aprovação, na mesma deliberação, das alterações nas Decisões nº 533, nº 534 e nº 535, nos termos dos arts. 22, § 2º, e 40 da Instrução Normativa nº 154, de 2020.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à alteração das Decisões nº 533, de 7 de junho de 2022 (Declara coordenado o Aeroporto de São Paulo/Congonhas - Deputado Freitas Nobre (SBSP)), nº 534, de 7 de junho de 2022 (Declara coordenado o Aeroporto Internacional de São Paulo/Guarulhos - Governador André Franco Montoro (SBGR)) e nº 535, de 7 de junho de 2022 (Declara coordenado o Aeroporto do Rio de Janeiro - Santos Dumont (SBRJ)), nos termos das minutas submetidas pela Superintendência de Serviços Aéreos [12] .
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Relatório de Diretoria SEI nº 13717729 .
+
+[2] Seguindo referências internacionais, a designação das temporadas tem relação com as estações do hemisfério norte (versão no hemisfério norte).
+
+[3] Decisões disponíveis na página https://www.anac.gov.br/assuntos/legislacao/legislacao-1/decisoes/2022.
+
+[4] Vide Nota Técnica nº 4/2026/GTRC/GEAM/SAS (SEI nº 13382204 ).
+
+[5] Íntegra da Resolução disponível na página https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2022/resolucao-682.
+
+[6] Dados da Nota Técnica nº 4/2026/GTRC/GEAM/SAS (SEI nº 13382204 ).
+
+[7] Art. 4º A AIR poderá ser dispensada, desde que haja decisão fundamentada do órgão ou da entidade competente, nas hipóteses de: (...) III - ato normativo considerado de baixo impacto; (...) VI - ato normativo que vise a manter a convergência a padrões internacionais; (...).
+
+[8] Art. 21 (...) § 1º A realização de consulta pública é facultativa em caso de dispensa de AIR, sendo, todavia, obrigatória a utilização de algum outro mecanismo de participação social nas hipóteses dos incisos III e V do caput.
+
+[9] Conforme Ata de Reunião SEI nº 13689640 , Lista de Presença SEI nº 13689277 , Apresentação SEI nº 13689242 e Mensagem Eletrônica SEI nº 13689293 .
+
+[10] Documento interno disponível na intranet da Agência (página de qualidade normativa).
+
+[11] Parecer nº 39/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13702935 ), ratificado pelo Despacho de Aprovação nº 145/2026/GAB/PFEANAC/PGF/AGU (SEI nº 13702945 ).
+
+[12] Propostas de Ato SEI nº 13452852 , nº 13561658 e nº 13561739 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 19/08/2026, às 10:32, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13717748 e o código CRC 5DBF1AE4 .
+
+SEI nº 13717748

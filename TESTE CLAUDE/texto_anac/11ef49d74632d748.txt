@@ -1,0 +1,127 @@
+                                                                                    Seção 1                                        ISSN 1677-7042                    Nº 180, quarta-feira, 23 de setembro de 2026
+
+
+ÓRGÃO: 81000 - Ministério dos Direitos Humanos e da Cidadania
+UNIDADE: 81101 - Ministério dos Direitos Humanos e da Cidadania - Administração Direta
+ANEXO II                                                                                                                                                                                    Outras Alterações Orçamentárias
+PROGRAMA DE TRABALHO ( REDUÇÃO )                                                                                                                                                         Recurso de Todas as Fontes R$ 1,00
+     .PROGRAMÁTICA                      .PROGRAMA/AÇÃO/LOCALIZADOR/PRODUTO                                                  .FUNCIONAL          .E       .G        .R         .M      .I      .F            VALOR
+                                                                                                                                           S         N         P          O         U      T
+                                                                                                                                           F         D                    D                E
+0032                                Programa de Gestão e Manutenção do Poder Executivo                                                                                                                            2.432.095
+                                                                .Atividades
+0032 2000                            Administração da Unidade                                                            14 122                                                                                                  2.432.095
+0032 2000 0001                       Administração da Unidade - Nacional                                                 14 122                                                                                                  2.432.095
+.                                    .                                                                                   .                      .F   .4-           .2         .90       .0      .1000                            2.432.095
+                                                                                                                                                      INV
+5816                                Promoção e Proteção Integral dos Direitos Humanos de Crianças e                                                                                                                                 557.661
+                                    Adolescentes com absoluta prioridade
+                                                               .Atividades
+5816 21G0                            Promoção e Defesa dos Direitos de Crianças e Adolescentes      14 243                                                                                                                          557.661
+5816 21G0 0001                       Promoção e Defesa dos Direitos de Crianças e Adolescentes - 14 243                                                                                                                             557.661
+                                     Nacional
+.                                    .                                                              .                                           .F   .4-           .2         .50       .0      .1000                               557.661
+                                                                                                                                                      INV
+.TOTAL - FISCAL                                                                                                                                                                                                                  2.989.756
+.TOTAL - SEGURIDADE                                                                                                                                                                                                                      0
+.TOTAL - GERAL                                                                                                                                                                                                                   2.989.756
+
+ÓRGÃO: 81000 - Ministério dos Direitos Humanos e da Cidadania
+UNIDADE: 81901 - Fundo Nacional para a Criança e o Adolescente - FNCA
+ANEXO II                                                                                                                                                                                    Outras Alterações Orçamentárias
+PROGRAMA DE TRABALHO ( REDUÇÃO )                                                                                                                                                         Recurso de Todas as Fontes R$ 1,00
+     .PROGRAMÁTICA                     .PROGRAMA/AÇÃO/LOCALIZADOR/PRODUTO                                                   .FUNCIONAL          .E       .G        .R         .M      .I      .F            VALOR
+                                                                                                                                           S         N         P          O         U      T
+                                                                                                                                           F         D                    D                E
+5816                                Promoção e Proteção Integral dos Direitos Humanos de Crianças e                                                                                                               1.357.660
+                                    Adolescentes com absoluta prioridade
+                                                               .Atividades
+5816 21G0                            Promoção e Defesa dos Direitos de Crianças e Adolescentes      14 243                                                                                                                       1.357.660
+5816 21G0 0001                       Promoção e Defesa dos Direitos de Crianças e Adolescentes - 14 243                                                                                                                          1.357.660
+                                     Nacional
+.                                    .                                                              .                                           .S   .3-           .2         .90       .0      .3096                            1.357.660
+                                                                                                                                                      ODC
+.TOTAL - FISCAL                                                                                                                                                                                                                          0
+.TOTAL - SEGURIDADE                                                                                                                                                                                                              1.357.660
+.TOTAL - GERAL                                                                                                                                                                                                                   1.357.660
+
+
+                        Ministério de Portos e Aeroportos                                                                                                       ANEXO
+                                                                                                                                                     CONDIÇÃO ESPECIAL CE/SC 25-075
+
+                                     SECRETARIA EXECUTIVA                                                                           APLICABILIDADE
+                                                                                                                                    Esta Condição Especial se aplica à Variabilidade de Velocidade de Rotação
+                          PORTARIA Nº 450, DE 22 DE SETEMBRO DE 2026                                                    em Decolagens Automatizadas a ser incorporada à base de certificação da modificação
+                                                                                                                        ao projeto de tipo Embraer Enhanced Takeoff System (E2TS) do avião ERJ 190-400, e
+                                                                                                                        de outras aeronaves em cuja base de certificação a ANAC determine sua inclusão com
+                                                Torna pública a abertura de Consulta Pública sobre a                    concordância por parte do peticionário.
+                                                proposta de Portaria de Diretrizes de Política de                                   CONDIÇÃO ESPECIAL
+                                                Seguros Aplicáveis aos Contratos de Concessão e                                     Esta Condição Especial complementa o Regulamento Brasileiro da Aviação
+                                                demais modalidades de exploração pelo setor privado                     Civil - RBAC nº 25.
+                                                de Infraestrutura de Transportes no âmbito das                                      VERSÃO EM PORTUGUÊS (Em caso de divergência de interpretação,
+                                                competências do Ministério de Portos e Aeroportos.                      prevalece o texto em inglês)
+                                                                                                                                    "§ CE 25-075 Condição Especial Aplicável à Variabilidade de Velocidade de
+               A SECRETÁRIA-EXECUTIVA DO MINISTÉRIO DE PORTOS E AEROPORTOS, no uso                                      Rotação em Decolagens Automatizadas
+das atribuições que lhe conferem o art. 41 da Lei nº 14.600, de 19 de junho de 2023, o art.                                         A fim de assegurar um desempenho seguro de decolagem com o E2TS,
+11 do Decreto nº 11.354, de 1º de janeiro de 2023, tendo em vista o disposto no Decreto                                 propõe-se incluir, após o subparágrafo 25.107(e)(4), dois novos subparágrafos,
+nº 10.411, de 30 de junho de 2020, no Decreto nº 11.407, de 31 de janeiro de 2023, e                                    25.107(e)(5) e 25.107(e)(6), de acordo com esta Condição Especial:
+considerando o que consta do Processo Administrativo nº 50020.005549/2026-78, resolve:                                              25.107
+               Art. 1º Tornar pública a abertura de Consulta Pública sobre a proposta de Portaria de Diretrizes                     (e) A VR, em termos de velocidade calibrada, deve ser selecionada de
+de Política de Seguros aplicáveis aos contratos de concessão e demais modalidades de exploração pelo                    acordo com as condições dos parágrafos (e)(1) a (6) desta seção:
+setor privado de infraestrutura aeroportuária, hidroviária e portuária, incluindo os critérios de mapeamento                        (5) Em substituição ao subparágrafo (e)(3) acima, para uma decolagem
+de riscos e de avaliação da segurabilidade no âmbito do Estudo de Viabilidade Técnica, Econômica e                      automatizada, a distância de decolagem com um motor inoperante, considerando o desvio
+Ambiental (EVTEA) e dá outras providências. Esta Portaria estabelece diretrizes gerais de planejamento,                 máximo esperado de VR permitido pelo E2TS, não deve exceder a distância de decolagem
+critérios de mapeamento de riscos e avaliação de segurabilidade no EVTEA, parâmetros de verificação                     correspondente estabelecida no AFM de acordo com o RBAC 25.113(a)(1).
+prévia de mercado na estruturação editalícia e a classificação tripartida de riscos na matriz contratual.                           (6) Em substituição ao subparágrafo (e)(4) acima, para uma decolagem
+               Art. 2º A Consulta Pública estará aberta à recepção de contribuições pelo período                        automatizada, considerando o desvio máximo esperado de VR e desvios de outros
+de 30 (trinta) dias corridos, contados a partir do primeiro dia útil subsequente à data de                              parâmetros que possam influenciar a dinâmica de rotação em arfagem (por exemplo,
+publicação desta Portaria no Diário Oficial da União.                                                                   ângulo de arfagem e razão de arfagem) permitidos pelo E2TS, ou em condições fora
+               Parágrafo único. O prazo previsto no caput poderá ser prorrogado a critério desta                        do ajuste normal de compensação (out-of-trim conditions), o avião não deve
+Secretaria-Executiva, mediante decisão fundamentada divulgada nos canais oficiais do                                    apresentar um aumento acentuado na distância de decolagem correspondente
+Ministério de Portos e Aeroportos.                                                                                      estabelecida no AFM de acordo com o RBAC 25.113(a), e nem qualquer característica
+               Art. 3º Os documentos constitutivos da presente Consulta Pública, incluindo a minuta do ato              de voo insegura."
+normativo, a Nota Informativa nº 3/2026/DECON-MPOR/SE-MPOR e o Relatório de Análise de Impacto                                      ENGLISH VERSION (In case of divergence, the English version should prevail)
+Regulatório (AIR) nº 01/2026/DECON, encontrar-se-ão disponíveis integralmente na plataforma digital                                 "§ SC 25-075 Special Condition for Automated Takeoff Rotation Speed
+Brasil Participativo / Participa + Brasil e no sítio eletrônico oficial do Ministério de Portos e Aeroportos.           Variability
+               Art. 4º As contribuições de pessoas físicas ou jurídicas, devidamente identificadas e                                In order to ensure a safe takeoff performance with E2TS, after sub-
+fundamentadas, deverão ser submetidas exclusivamente por meio do formulário eletrônico                                  paragraph 25.107(e)(4), two new sub-paragraphs 25.107(e)(5) and 25.107(e)(6) shall be
+disponibilizado na plataforma digital Brasil Participativo, acessível no seguinte endereço                              included to read as follows:
+eletrônico: https://brasilparticipativo.presidencia.gov.br/.                                                                        25.107
+               § 1º As manifestações deverão indicar com clareza o dispositivo específico da                                        (e) VR, in terms of calibrated airspeed, must be selected in accordance with
+minuta de Portaria (capítulo e artigo) contendo a proposta de redação (manutenção, alteração,                           the conditions of paragraphs (e)(1) through (6) of this section:
+acréscimo ou supressão) e a respectiva fundamentação técnica, atuarial ou jurídica.                                                 (5) In lieu of above sub-paragraph (e)(3), for an automatic takeoff, the one-
+               § 2º As contribuições recebidas fora do prazo fixado no art. 2º ou encaminhadas                          engine inoperative takeoff distance, accounting for the maximum expected deviation of
+por canais diversos da plataforma oficial não serão conhecidas para fins de sistematização no                           VR allowed by E2TS, shall not exceed the corresponding AFM takeoff distance
+relatório final do certame participativo.                                                                               established in accordance with §25.113(a)(1).
+               Art. 5º Esta Portaria entra em vigor na data de sua publicação.                                                      (6) In lieu of above sub-paragraph (e)(4), for an automatic takeoff,
+                                                                                                                        accounting for the maximum expected deviation of VR and deviations of other
+                                                   THAIRYNE JESSICA MARTINS DE OLIVEIRA                                 parameters that might influence pitch rotation dynamics (e.g. pitch angle, pitch rate)
+                                                                                                                        allowed by E2TS, or in out-of-trim conditions, there shall not be a marked increase in
+                       AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL                                                                the corresponding AFM takeoff distance, established in accordance with §25.113(a), nor
+                                                                                                                        any unsafe flight characteristics."
+                      RESOLUÇÃO Nº 812, DE 21 DE SETEMBRO DE 2026
+                                                                                                                             SUPERINTENDÊNCIA DE INFRAESTRUTURA AEROPORTUÁRIA
+                                                Aprova Condição Especial aplicável à variabilidade                                             PORTARIA Nº 19.926, DE 4 DE SETEMBRO DE 2026
+                                                de velocidade de rotação em decolagens
+                                                automatizadas do avião ERJ 190-400.                                                 O SUPERINTENDENTE DE INFRAESTRUTURA AEROPORTUÁRIA, no uso das
+                                                                                                                        atribuições que lhe foram conferidas pelo art. 32 do Regimento Interno, aprovado pela
+            A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL - ANAC,                                          Resolução Interna nº 10, de 27 de julho de 2026, tendo em vista o disposto no Regulamento
+no exercício da competência que lhe foi outorgada pelo art. 11, inciso V, da Lei nº                                     Brasileiro da Aviação Civil - RBAC nº 107, e considerando o que consta do processo nº
+11.182, de 27 de setembro de 2005, tendo em vista o disposto no art. 8º, incisos X                                      00058.046238/2026-63, resolve:
+e XLVI, da mencionada Lei, e considerando o que consta do processo nº                                                               Art. 1º Aprovar o Programa de Segurança Aeroportuária (Revisão 04) do operador
+00066.024821/2018-12, deliberado e aprovado na 29ª Reunião Deliberativa Eletrônica,                                     TERMINAIS AÉREOS DE MARINGÁ - SBMG S/A., responsável pela operação do Aeroporto Silvio
+realizada nos dias 15 a 18 de setembro de 2026, resolve:                                                                Name Júnior, Código OACI: SBMG, Código CIAD: PR0004, localizado em Maringá (PR), nos
+            Art. 1º Aprovar, nos termos do Anexo, a Condição Especial CE/SC 25-075,                                     termos do RBAC nº 107, Emenda 10, e da Instrução Suplementar - IS nº 107-001, Revisão L, e
+intitulada "Condição Especial Aplicável à Variabilidade de Velocidade de Rotação em                                     considerando as seguintes especificações:
+Decolagens Automatizadas" para fins de certificação da modificação ao projeto de tipo                                               I - Classe do aeródromo: AP-2;
+Embraer Enhanced Takeoff System (E2TS) do avião ERJ 190-400, e de outras aeronaves                                                  II - Serviços aéreos: voos domésticos e internacionais de aviação geral (RNS); e
+em cuja base de certificação a ANAC determine sua inclusão com concordância por                                                     III - Capacidade da maior aeronave: superior a 60 assentos;
+parte do peticionário.                                                                                                              Art. 2º Fica revogada a Portaria nº 17.588/SIA, de 5 de agosto de 2025, publicada
+            Art. 2º Esta Resolução entra em vigor na data de sua publicação.                                            no Diário Oficial da União de 11 de agosto de 2025, Seção 1, página 78.
+                                                                                                                                    Art. 3º Esta Portaria entra em vigor na data de sua publicação.
+                                                           TIAGO CHAGAS FAIERSTEIN
+                                                               Diretor-Presidente                                                                                                       GIOVANO PALMA
+
+           Este documento pode ser verificado no endereço eletrônico                                              105                                    Documento assinado digitalmente conforme MP nº 2.200-2 de 24/08/2001,
+           http://www.in.gov.br/autenticidade.html, pelo código 05152026092300105                                                                            que institui a Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.
+

@@ -1,0 +1,249 @@
+SEI/ANAC - 13464693 - Voto
+
+Voto
+
+PROCESSO: 00058.040824/2019-75
+
+INTERESSADO: SUPERINTENDÊNCIA DE AERONAVEGABILIDADE - SAR, SUPERINTENDÊNCIA DE PADRÕES OPERACIONAIS - SPO, SUPERINTENDÊNCIA DE PESSOAL DA AVIAÇÃO CIVIL
+
+RELATOR: antonio mathias nogueira moreira
+
+DA COMPETÊNCIA
+
+A Lei nº. 11.182, de 27 de setembro de 2005, em seu art. 11, inciso V, estabelece a competência da Diretoria da Anac para exercer o poder normativo da Agência. Referida competência também é refletida no Regimento Interno da Anac, Resolução nº. 381, de 2016, art. 9º, VIII.
+
+Aponta-se ainda que, nos termos da Portaria nº. 16.003, de 16 de dezembro de 2024, foi instituída a Agenda Regulatória da Anac para o biênio 2025-2026, na qual, entre as iniciativas aprovada, destaca-se o tema “Requisitos Gerais para Aeronaves Não Tripuladas de Uso Civil – RBAC-E 94”, cujos objetivos são o de reestruturação do regulamento RBAC-E 94 para maior foco no risco operacional intrínseco e o de revisão das regras de operações em ambientes limitados.
+
+Nesse contexto, explicita-se que o Regimento Interno atribui à Superintendência de Aeronavegabilidade – SAR competência para submeter à Diretoria propostas de atos normativos relativos à requisitos de aeronavegabilidade de produtos aeronáuticos (art. 35, I); à Superintendência de Padrões Operacionais – SPO competência para submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização, no âmbito operacional, de operadores aéreos e de operações aéreas (art. 34, I); e à Superintendência de Pessoal da Aviação Civil – SPL competência para submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização de pessoas integrantes do cenário operacional (art. 41-A, I).
+
+Dessa forma, restam fundamentadas as motivações dos documentos aqui em análise, bem como os requisitos de competência quanto à elaboração da proposta, deliberação e decisão.
+
+DA ANÁLISE E DA FUNDAMENTAÇÃO
+
+Da análise de Impacto Regulatório e da proposta submetida à Consulta Pública
+
+Conforme se depreende dos autos e do exposto no Relatório de Diretoria 13153651 , o presente processo é decorrente da constituição de discussão sobre a melhoria e a evolução dos regulamentos brasileiros referentes aos aspectos operacionais e de aeronavegabilidade das aeronaves não tripuladas – em especial o Regulamento Brasileiro da Aviação Civil RBAC-E nº. 94 –, bem como de inclusão da temática na Agenda Regulatória do biênio 2025-2026.
+
+Na observância do fluxo normativo regular, foi constituído grupo de trabalho técnico composto pela Superintendência de Aeronavegabilidade – SAR, pela Superintendência de Padrões Operacionais – SPO e pela Superintendência de Pessoal da Aviação Civil – SPL. Referido grupo de trabalho elaborou o Relatório de Análise de Impacto Regulatório – AIR nº. 10/2021/GTNO-GNOS/GNOS/SPO (SEI 6384078 ), no qual se consignou os principais pontos de situação-problema identificados, conforme descritos abaixo:
+
+Os RPAS [1] são atualmente classificados com base apenas no peso máximo de decolagem - PMD, criando assim possíveis situações nas quais as regras vigentes podem ser insuficientes ou excessivas.
+
+Os requisitos de autorização de projeto para RPAS Classe 2 são bastante complexos e podem ser excessivos em alguns casos.
+
+A publicação de novas regras e requisitos por outras autoridades criam oportunidades para harmonização de regras.
+
+A regra veda a operação de mais de uma aeronave por um piloto remoto.
+
+A atual definição de operações distante de terceiros não é tecnicamente adequada em operações de longo alcance ou em grandes alturas.
+
+Ainda como problemas derivados dos inicialmente identificados, o grupo de trabalho destaca que há:
+
+Baixo índice de cumprimento dos requisitos estabelecidos no RBAC-E nº. 94;
+
+Maior custo dos operadores nacionais para obter produtos estrangeiros devido às adaptações necessárias para atender os atuais requisitos do RBAC-E nº. 94; e
+
+Barreiras para desenvolvimento do setor, que dificultam a inovação e o uso de novas tecnologias.
+
+Partindo dessa definição de situação-problema, após estudos técnicos, discussões internas e externas, e avaliação do cenário internacional de regulamentação de aeronaves não tripuladas, o grupo de trabalho apresentou à Diretoria Colegiada proposta de ação no sentido de “revisar os requisitos do RBAC-E nº. 94 de forma que sejam proporcionais ao risco da operação”. Para isso, propuseram:
+
+Realizar revisão geral da classificação das categorias e condições de sistemas de aeronaves não tripuladas com base fundamental em risco operacional (aberto, específica e certificada) e dos requisitos de forma que sejam baseados em desempenho.
+
+Aumentar os critérios de avaliação, não apenas baseado em peso máximo de decolagem – PMD ou nas condições de operação linha de visada visual - VLOS ou além da linha de visada visual – BVLOS, mas considerando o tamanho do RPA, energia cinética, densidade populacional etc.
+
+Adotar metodologia Specific Operation Risk Assessment – SORA, que auxilia a estabelecer um nível suficiente de confiança de que uma operação específica de RPAS pode ser conduzida com segurança.
+
+A fase de estudos culminou na proposição de edição de dois normativos: i) um que trata da publicação do Regulamento Brasileiro da Aviação Civil RBAC nº. 100 Emenda nº. 00, que dispõe sobre os requisitos gerais para aeronaves não tripulados de uso civil (SEI 11463905 ); e ii) outro que trata de resolução que estabelece as regras para operação de aeromodelos e aeronaves não tripuladas com peso de decolagem até 250 gramas (SEI 11327804 ).
+
+Para execução do rito de consulta a interessados, aprovou-se a Consulta Pública nº. 09/2025, pelo prazo de 45 dias, sendo que o transcurso dessa etapa ocorreu de forma regular e sem intercorrências.
+
+Do resultado da consulta pública
+
+Terminada a etapa de Consulta Pública, a equipe técnica seguiu com a análise das contribuições recebidas nos termos da Nota Técnica nº. 35/2025/GTNI/SAR (SEI 12379337 ).
+
+Destaca-se que as contribuições recebidas foram avaliadas individualmente e consignadas no relatório de análise SEI 12918053 . As principais alterações ocorridas em decorrência da Consulta Pública estão expostas na referida Nota Técnica nº. 35/2025/GTNI/SAR, e giram, principalmente, em torno de ajustes de conceituação e terminologia. Desse modo, acolho e adoto os termos daquela Nota Técnica como razões de decidir, como se transcritas neste voto estivessem.
+
+Da etapa de consulta à Procuradoria Federal Especializada junto à Anac
+
+Conforme preconiza o inciso I, do art. 5º da Instrução Normativa nº 17/2009, a fim de realizar o controle interno de legalidade administrativa, a equipe técnica submeteu as propostas normativas, após realização da consulta pública e ajustes, à avaliação da Procuradoria Federal Especializada junto à Anac – PFE-Anac.
+
+A PFE-Anac emitiu o Parecer nº. 12/2026/FIN/PFANAC/PGF/AGU (SEI 13044663 ) e o Despacho de Aprovação nº. 00043/2026/GAB/PFEANAC/PGF/AGU (SEI 13044668 ), que não vislumbraram “(...) obstáculos para a consecução do ato pretendido, não obstante a necessidade de observância das recomendações destacadas no corpo desta manifestação jurídica ”.
+
+As recomendações da Procuradoria tiveram apenas cunho de ajustes redacionais e foram acatadas pela área técnica, que deu seguimento ao processo, com a preparação dos documentos a serem deliberados pela Diretoria Colegiada, conforme listados no Despacho 13075235 :
+
+Proposta de ato da Minuta de RBAC nº. 100 (SEI 13075463 , atualizado por 13441805 );
+
+Quadro Comparativo RBAC nº. 100 (SEI 12918086 , atualizado por 13441838 );
+
+Relatório de análise das contribuições consulta pública (SEI 12918053 );
+
+Proposta de Ato da Resolução Drones até 250g e aeromodelos (SEI 11987480 );
+
+Quadro Comparativo Resolução drones até 250g e Aeromodelos (SEI 11987495 ); e
+
+Proposta de Ato da Resolução sobre aprovação do Regulamento Brasileiro da Aviação Civil - RBAC nº. 100, a Emenda 03 ao RBAC nº. 90, a Emenda 06 ao RBAC n°. 137 e altera a Resolução nº. 659, de 2 de fevereiro de 2022 (SEI 13074493 , atualizado por 13472710).
+
+Do encaminhamento para deliberação final
+
+Ao longo dos trâmites processuais, o grupo técnico envidou os melhores esforços para manter uma discussão ampla e transparente tanto internamente quanto com a sociedade interessada, constituindo uma proposta sólida de normativos para deliberação final.
+
+Importante frisar que, como reforçado ao longo da análise (SEI 13096389 ), as proposições apresentadas buscam estabelecer uma regulação baseada em desempenho, com uma abordagem aberta à inovação, adaptabilidade às mudanças tecnológicas e flexibilidade de ação; ademais, proporcionam orientações claras e adequadas para a operação de aeromodelos e aeronaves não tripuladas menores (até 250 gramas), tendo assim uma abordagem proporcional, mais compreensível e acessível pelos usuários das normas.
+
+Do destaque às principais modificações trazidas
+
+Aprofundando-se nos textos finais apresentados pelo grupo técnico, observar-se que se buscou sedimentar na regulação brasileira uma estrutura normativa clara para o uso de aeronaves não tripuladas, estando alinhados com o conteúdo discutido na etapa de consulta pública. Nesse sentido, destacam-se os principais pontos dos novos regulamentos.
+
+De pronto, o RBAC nº. 100, e documentos correlatos, trazem uma nova terminologia, alterando as siglas atualmente utilizadas – RPAS/RPA, por siglas adotadas no contexto internacional, sendo elas “UAS” para o ‘sistema de aeronave não tripulada’, e “UA” para ‘aeronave não tripulada’, intenciona-se, assim, manter o regulamento alinhado às definições mais correntes utilizadas pela Organização da Aviação Civil Internacional – OACI, bem como àquelas utilizadas pelo Departamento de Controle de Espaço Aéreo – DECEA.
+
+Passando-se a uma das principais inovações textuais, como mencionado anteriormente, o RBAC nº. 100 estabelece uma categorização das aeronaves e operações baseada no conceito de risco operacional, subdividindo-as em:
+
+categoria aberta : abrange UAS com peso em voo menor ou igual a 25kg, operando VLOS ou em linha de visada visual estendida – EVLOS, em distância até 120 metros acima do nível do solo, em áreas distantes de terceiro, sob responsabilidade do operador, e dependente de avaliação de risco operacional;
+
+categoria específica : abrange UAS que opere em condições diferentes daquelas previstas para a categoria aberta; e
+
+categoria certificada : abrange UAS em operações de transporte de artigos perigosos que possam resultar em alto risco para terceiros em caso de acidentes, ou UAS em operações em que a Anac considere que o risco da operação não pode ser mitigado sem certificação.
+
+É adicionado, também, nos regulamentos da Agência o conceito de ‘cenários padrões’ e de metodologia SORA ( Specific Operation Risk Assessment ). Os cenários padrões são cenários pré-determinados pela Anac em Instruções Suplementares para operações com UAS em serviços específicos – por exemplo, aplicação de agrotóxicos, uso para segurança pública e órgãos governamentais, show luminosos, ou uso rural. O uso de cenários padrões visa a facilitar as operações em categoria específica, principalmente para aquelas atividades mais comuns, de forma dispensar a necessidade de realização de SORA. No que diz respeito à metodologia SORA, ela se trata de uma avaliação de risco operacional específico, que permite aos operadores de UAS encontrarem os meios de mitigação mais adequados para redução de risco operacional a um nível aceitável.
+
+Entre os outros pontos trazidos pelo RBAC nº. 100, cabe, ademais, destacar os requisitos para o piloto remoto e o observador de operação, que se tornam mais adequados conforme o tipo de operação e categoria executada. São os requisitos desses profissionais:
+
+Estarem certos de sua capacidade, aptidão psicofísica e preparo para exercer suas funções durante a operação.
+
+Os pilotos devem ter sido aprovados em exame de conhecimento teórico da Anac.
+
+Os pilotos menores de 18 anos devem estar acompanhados em todos os momentos por piloto remoto maior de 18 anos, responsável pela operação.
+
+Para voos internacionais é necessário proficiência em língua inglesa.
+
+Além dos requisitos acima mencionados, a Anac definirá, mediante avaliação operacional, licenças ou habilitações de tipo para projetos certificados, bem como os treinamentos correlatos necessários em casos específicos. Observa-se, também, que o RBAC nº 100 estabelece a necessidade de contratação de seguro para a operação das UAS abrangidas por ele, nos termos específicos ali previstos.
+
+Passando-se ao texto de resolução que estabelecerá as regras para operações de aeronaves não tripuladas com peso em voo até 250 gramas e aeromodelos, aponta-se, de início, que a operação desses equipamentos só será permitida em situação VLOS ou EVLOS, com altitude máxima de 120 metros, observando-se, ainda as regras do DECEA (art. 4º e 11). Em síntese, essa resolução determina que as operações deverão ocorrer sob a responsabilidade direta do piloto remoto (art. 5º), que deve garantir sua aptidão física e técnica (art. 6º). A norma também proíbe operações que coloquem terceiros em risco, o transporte de pessoas, animais e cargas perigosas (art. 12 e 13), e exige planejamento prévio do voo, monitoramento das condições meteorológicas e possibilidade de intervenção do piloto em todas as fases da operação (art. 15 e 18). Além disso, ela estabelece regras específicas para operações em aeródromos e pousos e decolagens (art. 19 e 20), bem como obriga o cadastro e a identificação dos aeromodelos com peso superior a 250 gramas junto à Anac, prevendo validade do cadastro por 24 meses (art. 24, 25 e 26). Ao contrário do previsto no RBAC, as operações realizadas sob a égide desta resolução específica são dispensadas da contratação de seguro (art. 29).
+
+Destaca-se, também, que a presente deliberação afeta diversos outros normativos da Agência, a fim de se harmonizar o tema internamente. Nesse sentido, para se esclarecer, a proposta aqui trazida faz as seguintes modificações:
+
+Aprova resolução que contém:
+
+Regulamento Brasileiro de Aviação Civil – RBAC nº. 100 – Requisitos gerais para aeronaves não tripuladas de uso civil;
+
+a Emenda nº. 03 ao RBAC nº. 90 – Requisitos para operações especiais de aviação pública, para incluir os requisitos para exercício da função de examinador credenciado em aeronaves não tripuladas (UA) da Unidade Aérea Pública - UAP;
+
+a alteração da Resolução nº. 659/2022, que regulamenta a exploração de serviços aéreo e dá outras providências, para estabelecer que essa Res. nº. 659 também sem aplica a serviços prestados com uso de aeronaves não tripuladas da categoria certificada;
+
+a Emenda nº. 06 ao RBAC nº. 137 – Cadastro e requisitos operacionais: operações agrícolas, para a inclusão de aeronaves não tripuladas;
+
+a revogação da Resolução nº. 419/2017, que aprovou o RBAC-E nº. 94; e
+
+a revogação do RBAC-E nº. 94 – Requisitos gerais para aeronaves não tripuladas de uso civil.
+
+Aprova resolução que estabelece as regras para operação de aeronaves não tripuladas com peso em voo até 250 gramas e aeromodelos, operando em VLOS ou EVLOS.
+
+Ainda, a aprovação dos normativos prevê alguns instrumentos de transição que merecem destaque:
+
+operações de sistema de aeronave não tripulada – UAS que não atendem aos critérios da categoria aberta ou que se enquadrem na categoria específica e que não são tratadas por um cenário padrão devem obter uma autorização operacional no prazo de 2 anos após a publicação desta Resolução;
+
+a fim de reduzir os trâmites burocráticos e administrativos, aprova-se que as Superintendências, nos assuntos de sua competência, poderão autorizar manutenção temporária da aplicação de requisitos estabelecidos no RBAC-E nº. 94, observados condicionantes a serem determinados;
+
+os atos administrativos da Anac emitidos sob a égide do RBAC-E nº. 94 permanecem eficazes até que esta Agência os revogue.
+
+A edição dos normativos aqui propostos traz uma mudança e uma modernização significativa para o mercado de aeronaves não tripuladas no Brasil. Esse setor da aviação, que em nosso país se mostra pujante, tem a capacidade de impulsionar a economia brasileira de maneira significativa nos próximos anos, especialmente em áreas como a agricultura, logística e meio ambiente. Cabe a esta Agência garantir que os avanços da aviação não tripulada sejam guiados com responsabilidade e visão de longo prazo, nessa esteira, espera-se que, com esta regulamentação, nossa Nação se mantenha no pioneirismo e na vanguarda da aviação, papel esse que sempre o ocupou, ao proporcionarmos um ambiente estável para atuação dos regulados e para o desenvolvimento de novas tecnologias, métodos produtivos e serviços. A proposta de edição do RBAC nº. 100 e das resoluções aqui expostas representa uma escolha estratégica da Anac, e reforça nosso compromisso com o futuro de nosso setor.
+
+Nesse contexto, considerando toda a argumentação apesentada pela área técnica no processo, a realização de consulta pública e o parecer da PFE/ANAC, entendo que as propostas de regulamentos estão aptas a serem aprovada por esta Diretoria Colegiada.
+
+Das determinações feitas na 8ª Reunião Deliberativa da Diretoria, realizada em 22 de maio de 2025
+
+Por fim, quando da deliberação pela realização da consulta pública, ocorrida na 8ª Reunião Deliberativa da Diretoria, realizada em 22 de maio de 2025, a Diretoria Colegiada estabeleceu determinações às áreas técnicas as quais transcrevo abaixo:
+
+à Superintendência de Aeronavegabilidade - SAR, nos termos propostos pelo Diretor Adriano Miranda, que, durante o período da consulta pública, avalie a pertinência de inclusão da dosimetria na norma; e
+
+à SAR e às Superintendências de Padrões Operacionais - SPO e de Pessoal da Aviação Civil - SPL, nos termos propostos pelo Diretor-Presidente Substituto, Roberto Honorato, que explorem, com celeridade, formas de simplificação da análise de isenções ainda no escopo do Regulamento Brasileiro da Aviação Civil Especial - RBAC-E nº. 94.
+
+Em atenção à primeira determinação, a área técnica, Nota Técnica nº. 35/2025/GTNI/SAR, indicou que:
+
+(...)
+
+4.5.5. Na avaliação deste grupo de trabalho, entende-se que a Diretoria já reconheceu a necessidade de as áreas técnicas disporem de maior tempo para se ajustarem para a adequada implementação das Resoluções nº. 761/2024 e 762/2024. Por outro lado, para atender com celeridade à demanda da sociedade e viabilizar a publicação tempestiva do RBAC nº. 100 e da Resolução, considera-se mais apropriado que o regulamento seja publicado inicialmente sem a inclusão da dosimetria, permitindo que as áreas competentes conduzam, posteriormente, a análise técnica necessária para sua incorporação por meio de emenda normativa.
+
+4.5.6. Ademais, uma proposta de dosimetria não foi submetida à consulta pública e, por ora, está sendo encaminhado para publicação apenas as propostas sem as dosimetrias de sanções. Quando tal proposta for feita com vista à inclusão em emenda futura, ela deveria ser submetida à consulta pública antes da aprovação pelo colegiado.
+
+4.5.7. Destaque-se ainda que a Resolução nº. 762/2024 (que entrará em vigor em 1º de janeiro de 2026), já contém valores de referência para infrações relativas à operação, manutenção e registro de aeronaves não tripuladas, no Anexo II, Tabela 3, da referida Resolução, de modo que, ainda que possa haver algum desajuste em razão da publicação das novas normas, não haverá vácuo para a maioria das regras ora publicadas.
+
+4.5.8. Adicionalmente, estima-se que o tempo processual necessário para a publicação do RBAC nº. 100 coincidirá com a proximidade da data de vigência das Resoluções nº. 761/2024 e nº. 762/2024, o que reforça a conveniência de tratar a dosimetria em momento subsequente, de forma alinhada e integrada ao novo marco regulatório.
+
+(...)
+
+Já em atenção à segunda determinação, as áreas técnicas apontaram que:
+
+Foram realizadas reuniões iniciais entre representantes das superintendências e assessores da diretoria para discutir o tratamento da determinação. Após aprofundamento da discussão, se concluiu que seria mais produtivo dedicar esforços na análise das contribuições recebidas na consulta pública, para permitir celeridade na conclusão do processo do RBAC nº. 100, que buscar estabelecer medidas transitórias para o tratamento de isenções ao RBAC-E nº. 94, algo que somente seria utilizado enquanto o RBAC nº. 100 não fosse aprovado. Assim, por ora, houve decisão de priorizar a análise das contribuições da consulta pública. Foi incluído, no prazo de conclusão, o prazo previsto para deliberação final do processo normativo, conforme agenda regulatória 2025-2026: 31/12/2025. (informação disponibilizada no sistema SISDIR)
+
+No que concerne à segunda recomendação, entendo que a preocupação da Diretoria Colegiada foi atendida na proposta normativa atual, em especial se considerado os instrumentos de transição destacados no item 2.22 deste voto.
+
+Já quanto à primeira determinação, em que pese o argumentado pela área técnica de que a Resolução nº. 762/2024 já contemplaria parte das infrações e valores de referência de multa para infrações aos novos normativos, fica evidente a necessidade de aprofundamento de estudos sobre a questão de tipificação de condutas específicas para os novos termos e regulamentos.
+
+Nesse sentido, preservado o espírito da determinação inicial, proponho que seja determinado ao Grupo de Trabalho composto pela SAR, SPO e SPL, que, no prazo de 180 dias contados a partir da publicação dos normativos aqui em discussão, apresente à Diretoria Colegiada análise específica sobre infrações às regulamentações ora aprovadas, com avaliação da estrutura das descrições de conduta, dos valores de referência, dos fatores multiplicadores e dos demais elementos essências para o atual modelo de dosimetria de multa adotado pela Agência e de regulação responsiva, bem como indiquem a necessidade, ou não, de ajuste ou emenda às regras aqui aprovadas, bem como eventual cronograma de realização desses ajustes e emendas, caso seja o caso.
+
+Dos Ajustes propostos pelas áreas técnicas após distribuição processual
+
+Por fim, indica-se que a área técnica, após a distribuição do processo, identificou a necessidade de realização de alguns ajustes na proposta.
+
+Assim, a SAR propôs os seguintes ajustes, conforme registrado nos documentos SEI 13441805 , 13441838 , 13441841 e 13468261 :
+
+No documento SEI 13441805 , na Subparte F, foi padronizado o uso do termo “detentor de COE”, bem como removida a referência à IS nas seções 100.525 e 100.527; e
+
+No quadro comparativo, documento SEI 13441838 , nos itens 100.115(a) e 100.115(b), foi corrigida a referência de 100.11 para 100.13, bem como incorporados os ajustes mencionados no item anterior.
+
+A SPL, por sua vez, propôs o seguinte ajuste, conforme registrado nos documentos SEI 13466882 e 13467902 :
+
+No documento SEI 13074493 – Resolução que aprova o RBAC nº. 100, inclusão do seguinte parágrafo único:
+
+Art. 2º (...)
+
+Parágrafo único. O cumprimento do parágrafo 100.13(b) é dispensado até o dia 31 de dezembro de 2026.
+
+Os ajustes trazidos pela SAR possuem caráter exclusivamente de correção e padronização textual. Já o proposto pela SPL busca, como explicado pela área, conferir prazo para que os pilotos remotos se adaptem ao novo requisito de formação previsto no RBAC nº. 100, especialmente considerando que a exigência representa etapa adicional em relação ao regime atualmente previsto no RBAC-E nº. 94.
+
+Avaliado os pontos trazidos pelas áreas, não me oponho, neste sentido, a referidos ajustes, que consignarão na versão final dos atos a serem publicados.
+
+Após reunião realizada entre representantes das Diretorias e as áreas técnicas, foram propostas melhorias redacionais também à Resolução que aprova o RBAC nº. 100, destacando-se, em especial, as alterações feitas ao artigo 3º, que buscou dar maior clareza aos seus termos:
+
+Art. 3º As Superintendências, nos assuntos de sua competência, poderão autorizar a manutenção temporária da aplicação de requisitos estabelecidos no RBAC-E nº 94 em substituição a requisito estabelecido no RBAC nº 100 em cenários específicos nos quais a nova regulamentação implique, direta ou indiretamente, obrigação adicional que requeira tempo ou investimento financeiro significativo, desde que:
+
+I – sejam cumpridas condicionantes baseadas nos requisitos do RBAC-E nº 94, formalmente estabelecidas no instrumento de autorização;
+
+II – seja garantida a manutenção do nível de segurança proporcionado pelo cumprimento às disposições do RBAC-E nº 94; e
+
+III – a aplicação excepcional dos requisitos do RBAC-E nº 94 não ultrapasse a data de [2 anos após entrada em vigor do RBAC 100].
+
+Consigno, assim, referidos ajustes no documento de Proposta de Ato SEI 13472710.
+
+Ademais, previamente à publicação dos atos, determina-se à Assessoria Técnica – Astec, com apoio da SAR, SPO e SPL, que realize revisão geral de redação, sem alterações de méritos, para ajustes finos de correções redacionais e de formatação, como, por exemplo, padronização no uso e formatação de siglas, redação de numerais, concordância etc.
+
+Da proposta de realização de Avaliação de Resultado Regulatório
+
+Por fim, considerando a necessidade de se verificar os impactos normativos das proposições ora feitas, sugere-se que seja determinado às áreas técnicas que, em cinco anos a contar da vigência dos normativos, iniciem Avaliação de Resultado Regulatório, de forma a se identificar se as normas alcançaram os objetivos visionados, bem como para verificar os efeitos reais dessas regulações, identificar oportunidades de aprimoramentos mais profundos, corrigir distorções que possam ter surgido e verificar, também, se os problemas identificados na análise de impacto regulatório ainda persistem.
+
+DA VOTO
+
+Assim sendo, ante todo o exposto e com base no conteúdo dos autos, VOTO FAVORAVELMENTE à aprovação do seguinte conjunto de documentos que integram a presente proposta normativa, nos termos apresentados pelo grupo técnico composto pela Superintendência de Aeronavegabilidade, pela Superintendência de Padrões Operacionais e pela Superintendência de Pessoal da Aviação Civil, quais sejam:
+
+a proposta resolução que aprova o Regulamento Brasileiro da Aviação Civil - RBAC nº. 100, a Emenda nº. 03 ao RBAC nº. 90, a Emenda nº. 06 ao RBAC nº. 137 e altera a Resolução nº. 659, de 2 de fevereiro de 2022 (SEI 13472710);
+
+a proposta de Regulamento Brasileiro da Aviação Civil – RBAC nº. 100 Emenda nº. 00 (SEI 13441805 ); e
+
+a proposta de resolução que estabelece as regras para operação de aeronaves não tripuladas com peso em voo até 250 gramas e aeromodelos, operando em linha de visada visual – VLOS ou em linha de visada visual estendida – EVLOS (SEI 11987480 ).
+
+Solicito à Assessoria Técnica – Astec que, previamente à publicação dos atos promova o ajuste textual contido no item 2.38 do presente voto.
+
+Reforço que devem ser observadas as determinações contidas nos itens 2.30, 2.38 e 2.39 deste Voto.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor - Relator
+
+[1] Remotely-Piloted Aircraft System – RPAS ou Sistema de Aeronave Remotamente Pilotada significa a RPA, sua(s) RPS, o enlace de pilotagem e qualquer outro componente, como especificado no seu projeto. Sendo que Remote Pilot Station – RPS ou Estação de Pilotagem Remota significa o componente do RPAS contendo os equipamentos necessários à pilotagem da RPA; já Remotely-Piloted Aircraft – RPA se refere às Aeronaves Remotamente Pilotadas.
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 12/06/2026, às 17:26, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13464693 e o código CRC 3FD37254 .
+
+SEI nº 13464693

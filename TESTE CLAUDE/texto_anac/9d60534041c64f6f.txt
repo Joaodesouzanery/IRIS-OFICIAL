@@ -1,0 +1,65 @@
+SEI/ANAC - 12555470 - Voto
+
+Voto
+
+PROCESSO: 00058.066364/2023-91
+
+INTERESSADO: SUPERINTENDÊNCIA DE PADRÕES OPERACIONAIS (SPO)
+
+RELATOR: LUIZ RICARDO DE SOUZA NASCIMENTO
+
+da competência
+
+Compete à ANAC, de acordo com o art. 8º, inciso X, da Lei nº 11.182, de 27 de setembro de 2005, regular e fiscalizar os serviços aéreos, a formação e o treinamento de pessoal especializado, os serviços auxiliares, a segurança da aviação civil, a facilitação do transporte aéreo, a habilitação de tripulantes, dentre outras atribuições.
+
+Segundo o mesmo diploma legal, conforme art. 11, inciso V, compete à Diretoria exercer o poder normativo da Agência. Adicionalmente, o art. 24 do Decreto nº 5.731, de 20 de março de 2006, dispõe que cabe à Diretoria, em regime de colegiado, analisar, discutir e decidir, em instância administrativa final, as matérias de competência da Agência.
+
+O Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, por sua vez, dispõe em seu art. 34, inciso I, que compete à Superintendência de Padrões Operacionais (SPO) submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização, no âmbito operacional, de operadores aéreos, de operações aéreas, de transporte de artigos perigosos, de organizações de manutenção e de fatores humanos relacionados às operações aéreas.
+
+Constata-se, portanto, que a deliberação sobre a matéria em discussão é atribuição da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme abordado no Relatório [1] , o presente processo objetiva incorporar ao RBAC nº 90 e à Subparte K do RBAC nº 91 flexibilização quanto aos requisitos que exigem que o treinamento de pilotos seja iniciado somente após a aprovação pela ANAC do Programa de Treinamento Operacional - PTO. É relevante ressaltar que alterações semelhantes foram incorporadas aos requisitos equivalentes do RBAC nº 121 e do RBAC nº 135 [2] , estando atualmente em vigor.
+
+Inicialmente, cabe rememorar que a motivação principal para o processo normativo em tela reside no fato de que a programação e administração do treinamento de pilotos, especialmente em simuladores ( Flight Simulator Training Device - FSTD), possui elevado grau de incerteza decorrente de dificuldades de previsão do momento em que o programa de treinamento receberá a aprovação inicial da ANAC. A essa situação se soma o fato de que a grande maioria dos simuladores está localizada fora do Brasil e atende operadores e pilotos de todo o mundo, reforçando as dificuldades pontuadas pela área técnica neste processo.
+
+Para endereçar esse problema regulatório, a Superintendência de Padrões Operacionais - SPO propõe que sejam implementadas alterações às seções 90.155 do RBAC nº 90 e às seções 91.1073 e 91.1077 do RBAC nº 91, inserindo possibilidade de abordagem alternativa e excepcional para permitir a realização de treinamento antes da aprovação do PTO. Nesse sentido, a SPO propõe a utilização da expressão " Exceto se estabelecido de outra forma pela ANAC" nos citados regulamentos, possibilitando que os critérios necessários para iniciar o treinamento previamente à aprovação do PTO sejam estabelecidos em Instrução Suplementar - IS.
+
+É relevante destacar , como ponderado pela SPO, que eventuais não conformidades identificadas pela ANAC no programa de treinamento, a depender de sua criticidade, poderão requerer novo treinamento pelos pilotos, conforme necessário, e os operadores deverão considerar esse risco em seu planejamento.
+
+A proposta normativa foi submetida ao escrutínio da sociedade no âmbito da Consulta Pública nº 07/2025 [3] realizada no período de 19 de março a 5 de maio de 2025, a qual coletou 12 (doze) contribuições do público. Conforme avaliado pela área técnica, as contribuições foram majoritariamente atinentes a matérias alheias ao escopo do presente processo normativo, não gerando aperfeiçoamentos à proposta. Além disso, o trâmite processual foi objeto de análise jurídica pela Procuradoria Federal Especializada junto à ANAC - PFE-ANAC, a qual indicou não haver óbices desde que observadas as recomendações indicadas em seus pareceres [4] . Conforme consta nos autos, as recomendações da PFE-ANAC foram analisadas e processadas pela SPO [5] , tendo resultado em adequações à proposta de Resolução [6] .
+
+C onsiderando que a alteração normativa permitirá maior flexibilidade ao processo de treinamento de pilotos que atuam em Unidades Aéreas Públicas - UAP e em operadores que possuam um programa de propriedade compartilhada aprovado sob a Subparte K do RBAC nº 91, entendo que a proposta está alinhada ao interesse público e poderá proporcionar ganhos de eficiência aos operadores, sem resultar em impactos à segurança operacional.
+
+Por fim, considerando que o exercício da possibilidade de realizar o treinamento dos pilotos antes da aprovação do PTO requer o atendimento prévio a critérios que serão detalhados em Instruções Suplementares, determino que a Superintendência de Padrões Operacionais, em um prazo de até 60 (sessenta) dias , a contar da publicação das emendas no Diário Oficial da União - DOU, implemente as revisões das respectivas IS, possibilitando assim uma adequada orientação do público-alvo.
+
+do voto
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação das emendas aos Regulamentos Brasileiros da Aviação Civil nº 90 e 91 (RBACs nº 90 e 91), referentes à flexibilização dos requisitos relacionados à realização de treinamento previamente à aprovação do programa de treinamento operacional, nos termos apresentados pela Superintendência de Padrões Operacionais no documento SEI 12320660 , considerando o que consta no item 2.7 deste Voto.
+
+É como voto.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor-relator
+
+____________________________
+
+[1] SEI 12467377 .
+
+[2] Alterações implementadas na Emenda 11 ao RBAC n° 121 e na Emenda 15 ao RBAC n° 135.
+
+[3] Consulta Pública n° 07/2025 realizada no site Participa+ Brasil .
+
+[4] Parecer nº 00052/2025/CMF/PFEANAC/PGF/AGU (SEI 12228287 ) e Despacho de aprovação nº 00215/2025/GAB/PFEANAC/PGF/AGU (SEI 12228298 ).
+
+[5] Vide Despacho 12320733 .
+
+[6] SEI 12320660 .
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 13/01/2026, às 09:43, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12555470 e o código CRC B6C02556 .
+
+SEI nº 12555470

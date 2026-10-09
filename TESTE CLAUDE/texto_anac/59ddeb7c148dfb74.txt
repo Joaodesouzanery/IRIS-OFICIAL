@@ -1,0 +1,344 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+I mprimir
+
+Processo: 00066.024821/2018-12
+
+Tipo: Certificação de Produto: Ficha de Controle de Assuntos Relevantes - FCAR
+
+Data de Geração: 03/10/2018
+
+Interessados: EMBRAER S.A.
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (31 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+10638229 Carta 03/10/2024 03/10/2024 GTPR
+10638230 Recibo Eletrônico de Protocolo 03/10/2024 03/10/2024 GTPR
+12181256 Ficha de Controle de Assuntos Relevantes (FCAR) 10/10/2025 10/10/2025 GTPR
+12181511 E-mail 10/10/2025 10/10/2025 GTPR
+12190707 Carta 13/10/2025 13/10/2025 GTPR
+12190709 Recibo Eletrônico de Protocolo 13/10/2025 13/10/2025 GTPR
+12190994 Ficha de Controle de Assuntos Relevantes (FCAR) 13/10/2025 13/10/2025 GTPR
+12203444 E-mail 15/10/2025 15/10/2025 GTPR
+13708573 Ficha de Controle de Assuntos Relevantes (FCAR) 10/08/2026 10/08/2026 GTPR
+13710890 Nota Técnica 7 10/08/2026 10/08/2026 GTEV
+13713691 Memorando 2 10/08/2026 10/08/2026 GTPR
+13726624 Nota Técnica 28 25/08/2026 25/08/2026 GTNI
+13726823 Proposta de Ato (Normativo, Decisão etc.) 25/08/2026 25/08/2026 GTNI
+13779814 Anexo 1 25/08/2026 25/08/2026 GTNI
+13841844 Anexo 2 15/07/2026 09/09/2026 GTNI
+13726812 Despacho 25/08/2026 25/08/2026 GTNI
+13784005 Despacho 26/08/2026 26/08/2026 SAR
+13786821 Certidão de Distribuição 26/08/2026 26/08/2026 ASTEC
+13839882 Relatório de Diretoria 15/09/2026 15/09/2026 DIR-RCM
+13849345 Voto 15/09/2026 15/09/2026 DIR-RCM
+13868641 Despacho 15/09/2026 15/09/2026 ASTEC
+13869945 Voto 18/09/2026 18/09/2026 DIR-MNM
+13876371 Voto 18/09/2026 18/09/2026 DIR-RJH
+13876477 Voto 17/09/2026 17/09/2026 DIR-P
+13890914 Resolução 812 21/09/2026 21/09/2026 ASTEC
+13896908 Retificação 22/09/2026 22/09/2026 ASTEC
+13891071 Memorando 29 21/09/2026 21/09/2026 ASTEC
+13891852 Despacho 21/09/2026 21/09/2026 SAR
+13903246 Anexo DOU 23/09/2026 23/09/2026 ASTEC
+13903250 Certidão de Deliberação 23/09/2026 23/09/2026 ASTEC
+13911875 Despacho 30/09/2026 30/09/2026 GTNI
+
+Lista de Andamentos (55 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+01/10/2026 09:27
+GTEV
+
+Processo recebido na unidade
+
+30/09/2026 16:19
+GTEV
+
+Processo remetido pela unidade GTNI
+
+30/09/2026 11:10
+DIR-P
+
+Conclusão do processo na unidade
+
+23/09/2026 18:04
+SAR
+
+Conclusão do processo na unidade
+
+23/09/2026 18:04
+SAR
+
+Processo recebido na unidade
+
+23/09/2026 17:56
+SAR
+
+Processo remetido pela unidade ASTEC
+
+23/09/2026 11:16
+GTNO-SPL
+
+Conclusão do processo na unidade
+
+23/09/2026 10:45
+GTNO-SPL
+
+Processo recebido na unidade
+
+23/09/2026 09:26
+SPL
+
+Reabertura do processo na unidade
+
+23/09/2026 09:24
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+23/09/2026 09:23
+SPL
+
+Processo recebido na unidade
+
+22/09/2026 18:06
+SPL
+
+Processo remetido pela unidade SAR
+
+22/09/2026 18:06
+SAR
+
+Reabertura do processo na unidade
+
+21/09/2026 16:40
+GTNI
+
+Processo recebido na unidade
+
+21/09/2026 16:28
+GTNI
+
+Processo remetido pela unidade SAR
+
+21/09/2026 12:27
+SAR
+
+Processo recebido na unidade
+
+21/09/2026 12:08
+SAR
+
+Processo remetido pela unidade ASTEC
+
+21/09/2026 10:22
+DIR-MNM
+
+Conclusão do processo na unidade
+
+20/09/2026 14:45
+DIR-RJH
+
+Conclusão do processo na unidade
+
+16/09/2026 09:34
+DIR-RJH
+
+Processo recebido na unidade
+
+16/09/2026 06:06
+DIR-P
+
+Processo recebido na unidade
+
+15/09/2026 14:24
+DIR-MNM
+
+Processo recebido na unidade
+
+15/09/2026 12:00
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+15/09/2026 12:00
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+15/09/2026 12:00
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+10/09/2026 13:17
+ASTEC
+
+Reabertura do processo na unidade
+
+09/09/2026 09:17
+GTNI
+
+Conclusão do processo na unidade
+
+09/09/2026 09:05
+GTNI
+
+Reabertura do processo na unidade
+
+26/08/2026 14:13
+DIR-RCM
+
+Processo recebido na unidade
+
+26/08/2026 13:04
+ASTEC
+
+Conclusão do processo na unidade
+
+26/08/2026 11:49
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+26/08/2026 11:49
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+26/08/2026 11:19
+ASTEC
+
+Processo recebido na unidade
+
+26/08/2026 11:17
+ASTEC
+
+Processo remetido pela unidade SAR
+
+25/08/2026 17:28
+SAR
+
+Processo recebido na unidade
+
+25/08/2026 17:22
+SAR
+
+Processo remetido pela unidade GTNI
+
+11/08/2026 14:35
+GTNI
+
+Processo recebido na unidade
+
+11/08/2026 08:30
+GTNI
+
+Processo remetido pela unidade GTPR
+
+07/08/2026 16:17
+GTEV
+
+Reabertura do processo na unidade
+
+18/12/2025 09:34
+GTEV
+
+Conclusão do processo na unidade
+
+13/10/2025 15:40
+GTEV
+
+Processo recebido na unidade
+
+13/10/2025 14:13
+GTEV
+
+Processo remetido pela unidade GTPR
+
+13/10/2025 14:07
+GTPR
+
+Processo recebido na unidade
+
+13/10/2025 13:41
+GTPR
+
+Processo remetido pela unidade GTPR
+
+03/10/2024 16:47
+GTPR
+
+Processo recebido na unidade
+
+03/10/2024 15:21
+GTPR
+
+Processo remetido pela unidade GTPR
+
+06/04/2023 10:50
+GTPR
+
+Reabertura do processo na unidade
+
+02/01/2020 14:38
+GTEN
+
+Conclusão do processo na unidade
+
+05/10/2018 10:48
+GTEN
+
+Processo recebido na unidade
+
+04/10/2018 15:51
+GTEN
+
+Processo remetido pela unidade GCPR
+
+04/10/2018 15:46
+GTPR
+
+Processo recebido na unidade
+
+04/10/2018 15:46
+GTPR
+
+Processo remetido pela unidade GCEN
+
+03/10/2018 14:25
+GTEN
+
+Processo recebido na unidade
+
+03/10/2018 13:35
+GTEN
+
+Processo remetido pela unidade GCPR
+
+03/10/2018 12:56
+GTPR
+
+Processo restrito gerado, Cyber Security (4.9 DOC 8973 - OACI; Anexo 17 da Convenção AC)

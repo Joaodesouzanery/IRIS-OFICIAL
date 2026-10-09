@@ -1,0 +1,95 @@
+SEI/ANAC - 13357791 - Voto
+
+Voto
+
+PROCESSO: 00065.008321/2026-45
+
+INTERESSADO: VERONICA GORNIAK DE FREITAS, JINKOUT SERVIÇOS AERONÁUTICOS LTDA.
+
+RELATOR: RUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182/2005, em seus arts. 8º e 11º, estabelece a competência da ANAC para adotar as medidas necessárias ao atendimento do interesse público e ao desenvolvimento e fomento da aviação civil, bem como atribui à Diretoria Colegiada o exercício do poder normativo da Agência.
+
+O art. 31, inciso XVII, do Regimento Interno da ANAC, aprovado pela Resolução ANAC nº 381/2016, prevê, entre as competências comuns às Superintendências, a atribuição de avaliar e submeter à Diretoria as petições de isenção de requisitos regulamentares, bem como rejeitar aquelas que não atendam, quanto ao mérito ou à forma, aos critérios estabelecidos.
+
+Adicionalmente, nos termos do art. 41-A, incisos I e II, do referido Regimento Interno, compete à Superintendência de Pessoal da Aviação Civil (SPL) submeter à Diretoria propostas normativas relacionadas à instrução e à certificação de pessoal.
+
+O procedimento aplicável ao processamento de pedidos de isenção encontra-se disciplinado na Seção I do Capítulo V da Instrução Normativa ANAC nº 154/2020. Nos termos do §1º do art. 47 da referida Instrução Normativa, a petição de isenção de requisito de RBAC, uma vez recomendada pela área técnica competente, deve ser submetida à deliberação da Diretoria Colegiada.
+
+Dessa forma, resta evidenciada a competência da Diretoria Colegiada para deliberar sobre a matéria.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Trata-se de processo administrativo que versa sobre pedido de isenção ao parágrafo 63.39(a)(1) do RBAC nº 63, com vistas à averbação de habilitação de tipo GV (Gulfstream G550) à interessada.
+
+Conforme consignado no Relatório, a instrução processual evidenciou que, embora o treinamento apresentado pela requerente não tenha sido realizado em organização certificada pela ANAC, ele atende, sob o ponto de vista técnico, aos requisitos de treinamento exigidos pelo nível equivalente de segurança (ELOS) incorporado à certificação da aeronave GV-SP.
+
+A Nota Técnica nº 18/2026/GTNO-SPL/SPL [1] evidencia, com clareza, uma situação de desalinhamento parcial da estrutura regulatória no sentido de que a certificação da aeronave passou a estabelecer requisitos operacionais e de qualificação de tripulação sem correspondente previsão coordenada no arcabouço de licenças e habilitações.
+
+No caso específico do modelo GV-SP, a incorporação do requisito de nível equivalente de segurança (ELOS) [2] ao seu Certificado de Tipo [3] introduziu a necessidade de um tripulante adicional treinado em evacuação para operações com determinado perfil de passageiros, função que, na prática, se aproxima das atribuições típicas de um comissário de voo.
+
+Todavia, tal exigência não decorre diretamente das regras operacionais do RBAC nº 91, que não impõem a obrigatoriedade de comissários nesse tipo de operação, e não encontra correspondência adequada no RBAC nº 63, que regula o licenciamento de comissários com base em estrutura formal de treinamento aprovado e exame de proficiência.
+
+Tem-se, assim, uma situação em que a certificação da aeronave cria um requisito material de segurança (tripulante treinado em evacuação) mas o sistema de licenças não dispõe de mecanismo regulatório adequado para reconhecer ou validar essa qualificação no contexto específico de operações sob RBAC nº 91.
+
+Verifica-se, portanto, que o caso em análise não decorre de descumprimento regulatório voluntário pela interessada, mas sim de inadequação do arcabouço normativo frente a uma exigência técnica validada internacionalmente.
+
+Ademais, a área técnica destacou que:
+
+não há, no Brasil, infraestrutura certificada para oferta do treinamento requerido;
+
+o modelo adotado pelo RBAC nº 63 não encontra correspondência direta com a prática internacional para esse tipo de operação;
+
+a exigência de cumprimento estrito do regulamento, no caso concreto, revela-se desproporcional frentes aos ganhos de segurança operacional;
+
+Ressalte-se, ainda, que o treinamento realizado pela interessada encontra-se alinhado aos padrões internacionais aplicáveis (FAA, ICAO e fabricante), sendo compatível com o requisito de evacuação previsto no TCDS da aeronave.
+
+Nas análises técnicas não se identificaram riscos relevantes à segurança operacional decorrentes da concessão da isenção, ao contrário, a medida contribui para assegurar que a operação seja conduzida com tripulante adequadamente treinado e qualificado para as funções requeridas.
+
+Destaco, ainda, que os despachos complementares das áreas técnicas [4] , posteriormente juntados aos autos, reforçam a consistência do entendimento técnico consolidado, sem alterar o mérito da solução proposta, mas aprimorando o registro histórico e a fundamentação.
+
+Assim, entendo que a concessão de isenção, nos termos propostos, constitui medida:
+
+proporcional, diante da lacuna identificada;
+
+tecnicamente adequada, considerando o atendimento ao requisito de segurança; e
+
+alinhada ao interesse público, ao permitir a continuidade regular das operações com observância das condições de segurança.
+
+Não obstante a natureza potencialmente replicável da situação em análise, reconhece-se que a extensão automática dos efeitos da presente decisão a terceiros constitui uma das alternativas regulatórias possíveis para o tratamento da matéria sendo que, embora possa apresentar ganhos imediatos de celeridade administrativa, implicaria, na prática, a consolidação de um regime excepcional sem o devido enfrentamento das suas causas estruturais, o que poderia perpetuar a descoordenação já identificada entre os requisitos de certificação da aeronave e as regras de licenciamento de pessoal. Ademais, a apreciação de cada caso concreto pode envolver particularidades relevantes quanto à qualificação, à comprovação de treinamento e ao contexto operacional, recomendando, neste momento, a manutenção de análise individualizada até o estabelecimento de diretrizes normativas claras e abrangentes.
+
+Nesse contexto, reputo mais adequado que a Agência promova, por meio de suas áreas técnicas competentes, o aprofundamento da análise da lacuna regulatória identificada, com vistas à proposição de medidas normativas ou administrativas que assegurem o necessário alinhamento entre os subsistemas de certificação, operação e licenciamento. Tal abordagem permitirá a construção de solução definitiva e coerente, evitando a multiplicação de exceções e garantindo que situações semelhantes venham a ser tratadas, no futuro, de forma padronizada, transparente e consistente.
+
+Como consequência, tendo em vista que a solução efetiva ainda se encontra em fase de aprofundamento técnico pelas áreas competentes desta Agência, julgo pertinente suprimir o art. 2º da Proposta de Ato [5] 13175742 e seus respectivos incisos, afastando a previsão de extensão dos efeitos da isenção automaticamente a terceiros.
+
+DO VOTO
+
+Ante o exposto, VOTO pelo DEFERIMENTO da isenção ao requisito de que trata o parágrafo 63.39(a)(1) do RBAC nº 63, em favor da Sra. Veronica Gorniak de Freitas , para fins de averbação da habilitação de tipo GV (Gulfstream G550) e estabelecer que a validade da habilitação esteja vinculada à validade do treinamento de evacuação (12 meses), nos termos da Proposta de Ato [5] 13175742 , considerando as alterações propostas no item 2.15 deste Voto.
+
+Em complemento, voto pela determinação para que a Superintendência de Pessoal da Aviação Civil (SPL), em articulação com a Superintendência de Aeronavegabilidade (SAR) e a Superintendência de Padrões Operacionais (SPO), promova o aprofundamento da análise da lacuna regulatória identificada no presente processo, com vistas à proposição de solução normativa ou administrativa que assegure o adequado alinhamento entre os requisitos de certificação, operação e licenciamento aplicáveis ao modelo GV-SP e eventuais cenários similares.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Nota Técnica nº 18/2026/GTNO-SPL/SPL ( 13154552 ).
+
+[2] Nível Equivalente de Segurança - Equivalent Level of Safety (ELOS) 12952017 .
+
+[3] Certificado de Tipo 12952021 .
+
+[4] Incluída errata no Despacho 13281233 .
+
+[5] Proposta de Ato 13175742
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 26/05/2026, às 19:19, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13357791 e o código CRC 4F279FDD .
+
+SEI nº 13357791

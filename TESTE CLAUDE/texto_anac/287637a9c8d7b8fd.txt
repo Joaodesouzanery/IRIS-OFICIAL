@@ -1,0 +1,272 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.019228/2026-55
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas
+
+Data de Geração: 05/03/2026
+
+Interessados:
+
+Lista de Protocolos (25 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+12951157 Despacho 05/03/2026 05/03/2026 SAS
+13116646 Nota Técnica 4 05/05/2026 05/05/2026 CNAD
+13213255 Anexo I 10/02/2026 04/05/2026 CNAD
+13213279 Anexo II 10/02/2026 04/05/2026 CNAD
+13116559 Proposta de Ato (Normativo, Decisão etc.) 05/05/2026 05/05/2026 CNAD
+13264114 Despacho 12/05/2026 12/05/2026 SAS
+13483368 Parecer 26/2026/FIN/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13483375 Despacho de Aprovação 93/2026/GAB/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13485120 Despacho 16/06/2026 16/06/2026 SAS
+13494651 Certidão de Distribuição 17/06/2026 17/06/2026 ASTEC
+13524915 Relatório de Diretoria 01/07/2026 01/07/2026 DIR-RCM
+13524922 Voto 01/07/2026 01/07/2026 DIR-RCM
+13546865 Despacho 30/06/2026 30/06/2026 ASTEC
+13554933 Voto 03/07/2026 03/07/2026 DIR-P
+13558006 Voto 03/07/2026 03/07/2026 DIR-MNM
+13560422 Voto 02/07/2026 02/07/2026 DIR-CBI
+13562905 Voto 03/07/2026 03/07/2026 DIR-RJH
+13570450 Resolução 807 07/07/2026 07/07/2026 ASTEC
+13571018 Memorando 21 06/07/2026 06/07/2026 ASTEC
+13587775 Anexo DOU 09/07/2026 09/07/2026 ASTEC
+13587915 Certidão de Deliberação 09/07/2026 09/07/2026 ASTEC
+13698158 Despacho 13/08/2026 13/08/2026 SSA
+13720038 Anexo Retificação Res. 807 11/08/2026 11/08/2026 SSA
+13736898 Retificação 14/08/2026 14/08/2026 ASTEC
+13741667 Anexo DOU 17/08/2026 17/08/2026 ASTEC
+
+Lista de Andamentos (42 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+28/09/2026 16:29
+DIR-P
+
+Conclusão do processo na unidade
+
+17/08/2026 18:12
+SSA
+
+Alterado nível de acesso do documento 13698158 (Despacho) para público
+
+17/08/2026 18:11
+SSA
+
+Alterado nível de acesso do documento 13116646 (Nota Técnica 4) para público
+
+17/08/2026 11:02
+ASTEC
+
+Conclusão do processo na unidade
+
+14/08/2026 14:18
+ASTEC
+
+Processo recebido na unidade
+
+13/08/2026 18:57
+ASTEC
+
+Processo remetido pela unidade SSA
+
+05/08/2026 12:08
+SSA
+
+Alterada hipótese legal do documento 13698158 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+05/08/2026 12:08
+SSA
+
+Alterado nível de acesso do documento 13698158 (Despacho) para restrito
+
+03/08/2026 12:02
+DIR-MNM
+
+Conclusão do processo na unidade
+
+28/07/2026 14:34
+DIR-RCM
+
+Conclusão do processo na unidade
+
+10/07/2026 16:41
+DIR-CBI
+
+Conclusão do processo na unidade
+
+09/07/2026 16:01
+SAS
+
+Processo recebido na unidade
+
+09/07/2026 14:15
+SAS
+
+Processo remetido pela unidade ASTEC
+
+06/07/2026 15:48
+SAS
+
+Processo recebido na unidade
+
+06/07/2026 14:56
+SAS
+
+Processo remetido pela unidade ASTEC
+
+04/07/2026 10:20
+DIR-RJH
+
+Conclusão do processo na unidade
+
+02/07/2026 10:02
+DIR-MNM
+
+Processo recebido na unidade
+
+30/06/2026 14:02
+DIR-P
+
+Processo recebido na unidade
+
+30/06/2026 13:55
+DIR-CBI
+
+Processo recebido na unidade
+
+30/06/2026 13:23
+DIR-RJH
+
+Processo recebido na unidade
+
+30/06/2026 12:30
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+26/06/2026 10:17
+ASTEC
+
+Reabertura do processo na unidade
+
+17/06/2026 11:25
+ASTEC
+
+Conclusão do processo na unidade
+
+17/06/2026 11:09
+DIR-RCM
+
+Processo recebido na unidade
+
+17/06/2026 10:43
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+17/06/2026 10:43
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+16/06/2026 19:13
+ASTEC
+
+Processo recebido na unidade
+
+16/06/2026 18:40
+ASTEC
+
+Processo remetido pela unidade SAS
+
+15/06/2026 13:36
+SAS
+
+Processo recebido na unidade
+
+15/06/2026 12:17
+SAS
+
+Processo remetido pela unidade PF-ANAC
+
+15/06/2026 12:05
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+13/05/2026 11:59
+PF-ANAC
+
+Processo recebido na unidade
+
+12/05/2026 20:16
+PF-ANAC
+
+Processo remetido pela unidade SAS
+
+05/05/2026 15:06
+SAS
+
+Processo recebido na unidade
+
+05/05/2026 14:40
+SAS
+
+Processo remetido pela unidade CNAD
+
+09/03/2026 09:39
+CNAD
+
+Processo recebido na unidade
+
+05/03/2026 20:29
+SAS
+
+Conclusão do processo na unidade
+
+05/03/2026 20:26
+CNAD
+
+Processo remetido pela unidade SAS
+
+05/03/2026 15:49
+SAS
+
+Processo público gerado

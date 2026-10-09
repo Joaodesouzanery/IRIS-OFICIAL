@@ -1,0 +1,298 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+I mprimir
+
+Processo: 00058.045226/2026-11
+
+Tipo: Coordenação de SLOTS
+
+Data de Geração: 28/05/2026
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (25 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13382204 Nota Técnica 4 09/07/2026 09/07/2026 GTRC
+13452852 Proposta de Ato (Normativo, Decisão etc.) 09/07/2026 09/07/2026 GTRC
+13561658 Proposta de Ato (Normativo, Decisão etc.) 09/07/2026 09/07/2026 GTRC
+13561739 Proposta de Ato (Normativo, Decisão etc.) 09/07/2026 09/07/2026 GTRC
+13594800 Despacho 10/07/2026 10/07/2026 SAS
+13598912 Certidão de Distribuição 13/07/2026 13/07/2026 ASTEC
+13644872 Despacho 22/07/2026 22/07/2026 DIR-RCM
+13689299 Despacho 03/08/2026 03/08/2026 GTRC
+13689640 Ata de Reunião 03/08/2026 03/08/2026 GTRC
+13689277 Anexo 03/08/2026 03/08/2026 GTRC
+13689242 Anexo 03/08/2026 03/08/2026 GTRC
+13689293 Anexo 03/08/2026 03/08/2026 GTRC
+13702935 Parecer 39/2026/FIN/PFEANAC/PGF/AGU 06/08/2026 06/08/2026 PF-ANAC
+13702945 Despacho de Aprovação 145/2026/GAB/PFEANAC/PGF/AGU 06/08/2026 06/08/2026 PF-ANAC
+13717729 Relatório de Diretoria 19/08/2026 19/08/2026 DIR-RCM
+13717748 Voto 19/08/2026 19/08/2026 DIR-RCM
+13750032 Despacho 18/08/2026 18/08/2026 ASTEC
+13758480 Voto 21/08/2026 21/08/2026 DIR-CBI
+13760044 Voto 20/08/2026 20/08/2026 DIR-P
+13763531 Voto 21/08/2026 21/08/2026 DIR-RJH
+13775776 Decisão 752 24/08/2026 24/08/2026 ASTEC
+13779592 Anexo DOU 25/08/2026 25/08/2026 ASTEC
+13779646 Retificação 25/08/2026 25/08/2026 ASTEC
+13787064 Anexo DOU - Retificação 26/08/2026 26/08/2026 ASTEC
+13787074 Certidão de Deliberação 26/08/2026 26/08/2026 ASTEC
+
+Lista de Andamentos (47 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+03/09/2026 10:53
+DIR-CBI
+
+Conclusão do processo na unidade
+
+03/09/2026 10:26
+GEAM
+
+Conclusão do processo na unidade
+
+28/08/2026 19:25
+GTRC
+
+Conclusão do processo na unidade
+
+28/08/2026 08:56
+GEAM
+
+Processo recebido na unidade
+
+27/08/2026 12:34
+DIR-RCM
+
+Conclusão do processo na unidade
+
+27/08/2026 09:50
+GEAM
+
+Processo remetido pela unidade SSA
+
+26/08/2026 14:16
+SSA
+
+Processo recebido na unidade
+
+26/08/2026 13:04
+SSA
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 13:15
+DIR-P
+
+Conclusão do processo na unidade
+
+24/08/2026 10:58
+DIR-RJH
+
+Conclusão do processo na unidade
+
+20/08/2026 13:39
+DIR-RJH
+
+Processo recebido na unidade
+
+18/08/2026 14:49
+DIR-CBI
+
+Processo recebido na unidade
+
+18/08/2026 12:26
+DIR-P
+
+Processo recebido na unidade
+
+18/08/2026 12:04
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+18/08/2026 12:04
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+18/08/2026 12:04
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+18/08/2026 11:13
+DIR-RJH
+
+Reabertura do processo na unidade
+
+13/08/2026 17:41
+ASTEC
+
+Reabertura do processo na unidade
+
+06/08/2026 11:15
+DIR-RCM
+
+Processo recebido na unidade
+
+06/08/2026 11:02
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+06/08/2026 11:00
+DIR-RCM
+
+Processo remetido pela unidade PF-ANAC
+
+05/08/2026 12:43
+DIR-MNM
+
+Processo recebido na unidade
+
+03/08/2026 17:22
+DIR-RCM
+
+Processo recebido na unidade
+
+03/08/2026 16:41
+DIR-RCM
+
+Processo remetido pela unidade GTRC
+
+23/07/2026 14:57
+DIR-RJH
+
+Conclusão do processo na unidade
+
+23/07/2026 12:58
+DIR-RJH
+
+Processo recebido na unidade
+
+23/07/2026 07:35
+DIR-P
+
+Processo recebido na unidade
+
+22/07/2026 23:05
+DIR-CBI
+
+Processo recebido na unidade
+
+22/07/2026 19:03
+PF-ANAC
+
+Processo recebido na unidade
+
+22/07/2026 18:38
+ASTEC
+
+Conclusão do processo na unidade
+
+22/07/2026 18:37
+ASTEC
+
+Processo recebido na unidade
+
+22/07/2026 18:30
+ASTEC
+
+Processo remetido pela unidade DIR-RCM
+
+22/07/2026 18:30
+DIR-CBI
+
+Processo remetido pela unidade DIR-RCM
+
+22/07/2026 18:30
+DIR-RJH
+
+Processo remetido pela unidade DIR-RCM
+
+22/07/2026 18:30
+DIR-MNM
+
+Processo remetido pela unidade DIR-RCM
+
+22/07/2026 18:30
+DIR-P
+
+Processo remetido pela unidade DIR-RCM
+
+22/07/2026 18:30
+PF-ANAC
+
+Processo remetido pela unidade DIR-RCM
+
+13/07/2026 12:42
+ASTEC
+
+Conclusão do processo na unidade
+
+13/07/2026 12:15
+DIR-RCM
+
+Processo recebido na unidade
+
+13/07/2026 11:23
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+13/07/2026 11:22
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+13/07/2026 09:33
+ASTEC
+
+Processo recebido na unidade
+
+13/07/2026 09:30
+SAS
+
+Conclusão do processo na unidade
+
+10/07/2026 19:15
+ASTEC
+
+Processo remetido pela unidade SAS
+
+10/07/2026 08:43
+SAS
+
+Processo recebido na unidade
+
+09/07/2026 16:14
+SAS
+
+Processo remetido pela unidade GTRC
+
+28/05/2026 17:26
+GTRC
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

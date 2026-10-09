@@ -1,0 +1,702 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.038419/2024-54
+
+Tipo: Fiscalização e Vigilância Continuada: Autos de Infrações e Multas
+
+Data de Geração: 14/05/2024
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (53 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+10030921 Notificação de Infração 14/05/2024 14/05/2024 GIOS
+10030923 Relatório de Ocorrência 14/05/2024 14/05/2024 GIOS
+10030938 Anexo 14/05/2024 14/05/2024 GIOS
+10030945 Anexo 14/05/2024 14/05/2024 GIOS
+10030991 Ofício 47 14/05/2024 14/05/2024 GIOS
+10111378 Certidão de Intimação Cumprida 03/06/2024 03/06/2024 GIOS
+10210088 Defesa 24/06/2024 24/06/2024 GIOS
+10210089 Procuração 24/06/2024 24/06/2024 GIOS
+10210090 Carta 24/06/2024 24/06/2024 GIOS
+10210091 Carta 24/06/2024 24/06/2024 GIOS
+10210092 Recibo Eletrônico de Protocolo 24/06/2024 24/06/2024 GIOS
+10213992 Despacho 26/06/2024 26/06/2024 GTIM
+10224699 Ofício 44 28/06/2024 28/06/2024 GTAS-SRA
+10368892 Aviso de Recebimento - AR YJ860935356BR. 03/07/2024 01/08/2024 PROT-DF
+11665573 Ofício 118 17/06/2025 17/06/2025 GOIA
+11750264 Certidão de Intimação Cumprida 02/07/2025 02/07/2025 GOIA
+11801549 Alegações 14/07/2025 14/07/2025 GOIA
+11801550 Documento 14/07/2025 14/07/2025 GOIA
+11801551 Recibo Eletrônico de Protocolo 14/07/2025 14/07/2025 GOIA
+12591026 Proposta de Ato (Normativo, Decisão etc.) 14/01/2026 14/01/2026 GOIA
+12591497 Despacho 14/01/2026 14/01/2026 GOIA
+12858104 Decisão Primeira Instância - PAS 1 13/02/2026 13/02/2026 SRA
+12868404 Ofício 38 18/02/2026 18/02/2026 SRA
+12947955 Certidão de Intimação Cumprida 05/03/2026 05/03/2026 SRA
+12992456 Recurso 14/03/2026 14/03/2026 CNSA
+12992457 Procuração 14/03/2026 14/03/2026 CNSA
+12992458 Recibo Eletrônico de Protocolo 14/03/2026 14/03/2026 CNSA
+13043786 Despacho 14/04/2026 14/04/2026 CNSA
+13159597 Despacho 24/04/2026 24/04/2026 SRA
+13534207 Parecer 20/2026/FIN/PFEANAC/PGF/AGU 25/06/2026 25/06/2026 PF-ANAC
+13534211 Despacho de Aprovação 100/2026/GAB/PFEANAC/PGF/AGU 25/06/2026 25/06/2026 PF-ANAC
+13534214 Despacho de Aprovação 105/2026/GAB/PFEANAC/PGF/AGU 25/06/2026 25/06/2026 PF-ANAC
+13537179 Despacho 08/07/2026 08/07/2026 SRA
+13589020 Certidão de Distribuição 09/07/2026 09/07/2026 ASTEC
+13708403 Petição 07/08/2026 07/08/2026 ASTEC
+13708405 Recibo Eletrônico de Protocolo 07/08/2026 07/08/2026 ASTEC
+13711380 Despacho 07/08/2026 07/08/2026 ASTEC
+13714166 Despacho 10/08/2026 10/08/2026 DIR-RCM
+13741592 E-mail 13/08/2026 17/08/2026 ASTEC
+13657470 Relatório de Diretoria 19/08/2026 19/08/2026 DIR-RCM
+13662975 Voto 19/08/2026 19/08/2026 DIR-RCM
+13756764 Ofício 19 19/08/2026 19/08/2026 ASTEC
+13756747 Certidão de Deliberação 19/08/2026 19/08/2026 ASTEC
+13798472 Certidão de Intimação Cumprida 28/08/2026 28/08/2026 ASTEC
+13812216 Ofício 38 01/09/2026 01/09/2026 CPSA
+13814355 Extrato 01/09/2026 01/09/2026 CPSA
+13827613 Certidão de Intimação Cumprida 03/09/2026 03/09/2026 ASTEC
+13856045 Certidão de Intimação Cumprida 11/09/2026 11/09/2026 CPSA
+13899647 Ofício 42 23/09/2026 23/09/2026 CPSA
+13904671 Extrato 23/09/2026 23/09/2026 CPSA
+13969197 Aviso de Recebimento - AR YO104274192BR 14/09/2026 07/10/2026 PROT-DF
+13973923 Certidão de Intimação Cumprida 08/10/2026 08/10/2026 CPSA
+13978055 Aviso de Recebimento - AR YO107151100BR 30/09/2026 08/10/2026 PROT-DF
+
+Lista de Andamentos (122 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+08/10/2026 17:37
+CPSA
+
+Processo remetido pela unidade PROT-DF
+
+08/10/2026 17:34
+PROT-DF
+
+Reabertura do processo na unidade
+
+08/10/2026 10:41
+CPSA
+
+Conclusão do processo na unidade
+
+08/10/2026 10:34
+CPSA
+
+Processo recebido na unidade
+
+08/10/2026 09:07
+CPSA
+
+Processo remetido pela unidade CPSA
+
+07/10/2026 11:02
+CPSA
+
+Processo remetido pela unidade PROT-DF
+
+07/10/2026 10:59
+PROT-DF
+
+Reabertura do processo na unidade
+
+07/10/2026 09:54
+CPSA
+
+Conclusão do processo na unidade
+
+28/09/2026 17:36
+DIR-P
+
+Conclusão do processo na unidade
+
+24/09/2026 14:30
+PROT-DF
+
+Conclusão do processo na unidade
+
+24/09/2026 14:15
+PROT-DF
+
+Processo recebido na unidade
+
+23/09/2026 16:02
+PROT-DF
+
+Processo remetido pela unidade CPSA
+
+22/09/2026 15:55
+CPSA
+
+Reabertura do processo na unidade
+
+22/09/2026 14:05
+AUD
+
+Processo recebido na unidade
+
+21/09/2026 21:19
+AUD
+
+Processo remetido pela unidade DIR-P
+
+14/09/2026 15:47
+CPSA
+
+Conclusão do processo na unidade
+
+14/09/2026 15:47
+CPSA
+
+Processo recebido na unidade
+
+11/09/2026 11:34
+CPSA
+
+Processo remetido pela unidade CPSA
+
+11/09/2026 11:34
+CPSA
+
+Reabertura do processo na unidade
+
+10/09/2026 11:28
+CPSA
+
+Conclusão do processo na unidade
+
+08/09/2026 15:13
+DIR-MNM
+
+Conclusão do processo na unidade
+
+04/09/2026 10:12
+ASTEC
+
+Conclusão do processo na unidade
+
+04/09/2026 10:11
+ASTEC
+
+Processo recebido na unidade
+
+03/09/2026 23:21
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+03/09/2026 23:20
+ASTEC
+
+Reabertura do processo na unidade
+
+02/09/2026 14:45
+PROT-DF
+
+Conclusão do processo na unidade
+
+02/09/2026 11:49
+PROT-DF
+
+Processo recebido na unidade
+
+02/09/2026 10:22
+PROT-DF
+
+Processo remetido pela unidade CPSA
+
+01/09/2026 10:29
+CPSA
+
+Processo recebido na unidade
+
+01/09/2026 09:55
+CPSA
+
+Processo remetido pela unidade GOIA
+
+01/09/2026 09:55
+GOIA
+
+Processo recebido na unidade
+
+31/08/2026 18:09
+GOIA
+
+Processo remetido pela unidade SRA
+
+28/08/2026 09:51
+ASTEC
+
+Conclusão do processo na unidade
+
+28/08/2026 09:49
+ASTEC
+
+Processo recebido na unidade
+
+28/08/2026 09:25
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+28/08/2026 09:25
+ASTEC
+
+Reabertura do processo na unidade
+
+24/08/2026 11:01
+DIR-RJH
+
+Conclusão do processo na unidade
+
+19/08/2026 18:27
+SRA
+
+Processo recebido na unidade
+
+19/08/2026 13:43
+SRA
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 19:21
+DIR-P
+
+Processo recebido na unidade
+
+11/08/2026 16:10
+DIR-CBI
+
+Processo recebido na unidade
+
+11/08/2026 14:28
+DIR-RJH
+
+Processo recebido na unidade
+
+11/08/2026 12:19
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 12:19
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 12:19
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 10:17
+DIR-MNM
+
+Processo recebido na unidade
+
+11/08/2026 08:33
+DIR-RJH
+
+Processo recebido na unidade
+
+10/08/2026 18:32
+DIR-CBI
+
+Processo recebido na unidade
+
+10/08/2026 18:08
+DIR-P
+
+Processo recebido na unidade
+
+10/08/2026 17:29
+ASTEC
+
+Processo recebido na unidade
+
+10/08/2026 17:28
+DIR-RJH
+
+Processo remetido pela unidade DIR-RCM
+
+10/08/2026 17:28
+DIR-P
+
+Processo remetido pela unidade DIR-RCM
+
+10/08/2026 17:28
+DIR-MNM
+
+Processo remetido pela unidade DIR-RCM
+
+10/08/2026 17:28
+DIR-CBI
+
+Processo remetido pela unidade DIR-RCM
+
+10/08/2026 17:28
+ASTEC
+
+Processo remetido pela unidade DIR-RCM
+
+07/08/2026 18:38
+DIR-RCM
+
+Processo recebido na unidade
+
+07/08/2026 17:05
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+07/08/2026 17:01
+ASTEC
+
+Processo recebido na unidade
+
+07/08/2026 10:56
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+06/08/2026 12:33
+ASTEC
+
+Reabertura do processo na unidade
+
+09/07/2026 16:41
+ASTEC
+
+Conclusão do processo na unidade
+
+09/07/2026 14:34
+DIR-RCM
+
+Processo recebido na unidade
+
+09/07/2026 14:11
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+09/07/2026 14:11
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+08/07/2026 16:39
+ASTEC
+
+Processo recebido na unidade
+
+08/07/2026 16:26
+ASTEC
+
+Processo remetido pela unidade SRA
+
+26/06/2026 10:07
+SRA
+
+Processo recebido na unidade
+
+25/06/2026 17:59
+SRA
+
+Processo remetido pela unidade PF-ANAC
+
+27/04/2026 14:01
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+27/04/2026 14:01
+PF-ANAC
+
+Processo recebido na unidade
+
+24/04/2026 16:56
+PF-ANAC
+
+Processo remetido pela unidade SRA
+
+14/04/2026 19:25
+SRA
+
+Processo recebido na unidade
+
+14/04/2026 16:00
+SRA
+
+Processo remetido pela unidade CNSA
+
+16/03/2026 17:00
+CNSA
+
+Processo recebido na unidade
+
+14/03/2026 08:15
+CNSA
+
+Processo remetido pela unidade CNSA
+
+09/03/2026 10:41
+CNSA
+
+Processo recebido na unidade
+
+09/03/2026 10:36
+CNSA
+
+Processo remetido pela unidade GOIA
+
+06/03/2026 16:32
+SRA
+
+Conclusão do processo na unidade
+
+05/03/2026 16:51
+SRA
+
+Processo recebido na unidade
+
+05/03/2026 09:29
+SRA
+
+Processo remetido pela unidade SRA
+
+05/03/2026 09:29
+SRA
+
+Reabertura do processo na unidade
+
+19/02/2026 14:42
+GIOS
+
+Conclusão do processo na unidade
+
+18/02/2026 19:53
+SRA
+
+Conclusão do processo na unidade
+
+15/01/2026 09:02
+SRA
+
+Processo recebido na unidade
+
+14/01/2026 17:15
+GIOS
+
+Reabertura do processo na unidade
+
+14/01/2026 14:36
+SRA
+
+Processo remetido pela unidade GOIA
+
+15/07/2025 10:15
+GOIA
+
+Processo recebido na unidade
+
+14/07/2025 21:36
+GOIA
+
+Processo remetido pela unidade GOIA
+
+02/07/2025 11:27
+GOIA
+
+Processo recebido na unidade
+
+02/07/2025 11:24
+GOIA
+
+Processo remetido pela unidade GOIA
+
+02/07/2025 11:24
+GOIA
+
+Reabertura do processo na unidade
+
+18/06/2025 08:27
+GOIA
+
+Conclusão do processo na unidade
+
+13/01/2025 18:03
+GOIA
+
+Reabertura do processo na unidade
+
+12/08/2024 20:30
+GTAS-SRA
+
+Conclusão do processo na unidade
+
+12/08/2024 20:29
+GTAS-SRA
+
+Processo recebido na unidade
+
+01/08/2024 10:32
+GTAS-SRA
+
+Processo remetido pela unidade PROT-DF
+
+01/08/2024 10:31
+PROT-DF
+
+Reabertura do processo na unidade
+
+09/07/2024 21:00
+GOIA
+
+Conclusão do processo na unidade
+
+09/07/2024 20:59
+GOIA
+
+Processo recebido na unidade
+
+09/07/2024 20:59
+GOIA
+
+Processo remetido pela unidade GTAS-SRA
+
+09/07/2024 17:21
+SRA
+
+Conclusão do processo na unidade
+
+01/07/2024 09:22
+PROT-DF
+
+Conclusão do processo na unidade
+
+01/07/2024 09:21
+PROT-DF
+
+Processo recebido na unidade
+
+28/06/2024 16:41
+PROT-DF
+
+Processo remetido pela unidade SRA
+
+28/06/2024 14:38
+SRA
+
+Processo recebido na unidade
+
+28/06/2024 14:37
+SRA
+
+Processo remetido pela unidade GTAS-SRA
+
+26/06/2024 12:08
+GTAS-SRA
+
+Processo recebido na unidade
+
+26/06/2024 10:07
+GTAS-SRA
+
+Processo remetido pela unidade GTIM
+
+25/06/2024 14:37
+GTIM
+
+Processo recebido na unidade
+
+25/06/2024 14:37
+GTIM
+
+Processo remetido pela unidade GIOS
+
+25/06/2024 14:37
+GIOS
+
+Processo recebido na unidade
+
+24/06/2024 19:15
+GIOS
+
+Processo remetido pela unidade GIOS
+
+24/06/2024 19:15
+GIOS
+
+Reabertura do processo na unidade
+
+04/06/2024 13:42
+GIOS
+
+Conclusão do processo na unidade
+
+03/06/2024 13:34
+GIOS
+
+Processo recebido na unidade
+
+03/06/2024 10:57
+GIOS
+
+Processo remetido pela unidade GIOS
+
+03/06/2024 10:57
+GIOS
+
+Reabertura do processo na unidade
+
+15/05/2024 16:08
+GTIM
+
+Conclusão do processo na unidade
+
+15/05/2024 16:07
+GTIM
+
+Processo recebido na unidade
+
+15/05/2024 16:03
+GTIM
+
+Processo remetido pela unidade GIOS
+
+14/05/2024 10:05
+GIOS
+
+Disponibilizado acesso externo para SIS_SMA
+
+14/05/2024 10:05
+GIOS
+
+Processo público gerado

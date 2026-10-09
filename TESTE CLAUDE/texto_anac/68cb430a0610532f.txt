@@ -1,0 +1,77 @@
+SEI/ANAC - 13878152 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.069007/2026-28
+
+INTERESSADO: AENA DESARROLLO INTERNACIONAL S M E SA, RIO DE JANEIRO AEROPORTO S A, EMPRESA BRASILEIRA DE INFRA-ESTRUTURA AEROPORTUARIA, CONCESSIONÁRIA AEROPORTO RIO DE JANEIRO SA
+
+RELATOR: TIAGO CHAGAS FAIERSTEIN
+
+descrição dos fatos
+
+Trata-se de procedimento administrativo referente à fase de negociação e celebração do Contrato de Compra e Venda de Ações (CCVA) no âmbito da Venda Assistida do Aeroporto Internacional do Galeão, regida pelo Edital do Leilão nº 01/2025 [1] , com o fim de viabilizar a transferência do controle societário da Concessionária Aeroporto Rio de Janeiro S.A. (CARJ).
+
+O referido Edital estabelece no item 6.4 que quaisquer conflitos decorrentes da negociação do CCVA entre as partes serão decididos em última e única instância pela Comissão Especial de Venda. O referido dispositivo editalício não foi objeto de impugnação durante o certame, restando aceito pelos licitantes ao formularem suas propostas.
+
+Em 12 de agosto de 2026, apesar da clareza da regra, a Comissão Especial de Venda (CEV) manifestou [2] preocupação quanto à segurança jurídica do procedimento. O receio assentava-se no fato de que a definição compulsória, pela CEV, de redações de cláusulas contratuais sem consenso entre as partes poderia ensejar questionamentos judiciais, com o potencial de suspender ou postergar a assinatura do CCVA e comprometer o cronograma da operação e efetividade do procedimento.
+
+Diante disso, a CEV solicitou orientação da Procuradoria Federal Especializada junto à ANAC (PFE/ANAC), acerca da possibilidade jurídica e a conveniência de se oportunizar formalmente às partes manifestação sobre a versão final do CCVA e da submissão de eventual recurso à apreciação da Diretoria.
+
+Em 17 de agosto de 2026 a PFE/ANAC analisou [3] a matéria, concluindo que:
+
+o item 6.4 do Edital não padece de ilegalidade;
+
+o princípio da vinculação ao instrumento convocatório não impede que a Administração conheça eventual pedido de uma das partes de que a decisão da CEV seja qualificada e revisada por uma instância hierárquica superior;
+
+cabe exclusivamente à Diretoria Colegiada da ANAC avaliar a conveniência e oportunidade administrativa de admitir a revisão de decisões proferidas pela CEV; e
+
+caso a Diretoria Colegiada opte por facultar o acesso à instância superior, recomenda-se aplicar subsidiariamente o rito dos artigos 56, 59 e 60 da Lei nº 9.784/1999 .
+
+Em 16 de setembro de 2026, a CEV submeteu este processo à apreciação da Diretoria Colegiada, trazendo as seguintes considerações:
+
+a Comissão havia previamente saneado três pontos divergentes na minuta do CCVA com suporte das áreas técnicas e aprovação da PFE/ANAC [4] , e efetuou a convocação [5] das partes para assinatura do instrumento final;
+
+durante as tratativas de formalização, sobreveio nova controvérsia em virtude da memória de cálculo dos valores da operação apresentada pelas Vendedoras. A empresa Aena Desarrollo Internacional S.M.E., S.A. (Compradora) se manifestou [6] alegando divergências interpretativas quanto a cláusulas da versão definitiva do contrato;
+
+para assegurar o contraditório sem prejuízo da celeridade, a CEV notificou [7] as Vendedoras para apresentarem manifestação no prazo de 48 (quarenta e oito) horas; e
+
+ao longo das diversas tratativas havidas entre as partes, a Comissão de Venda atuou de forma a incentivar que as questões fossem resolvidas mediante acordo.
+
+Em 21 de setembro de 2026, em complementação à submissão anterior, a CEV, considerando tratar-se de fato novo superveniente ao encerramento regulamentar das negociações, propôs [8] rito procedimental específico para o tratamento da divergência, contemplando as seguintes etapas: (i) nova análise pela CEV; (ii) submissão à PFE/ANAC; (iii) nova decisão pela CEV, com possibilidade de interposição de recurso; (iv) extensão do cronograma; e (v) eventual decisão final da Diretoria Colegiada em sede de recurso.
+
+Diante das considerações e da iminência do prazo de convocação de 25 de setembro, a CEV solicitou deliberação prioritária acerca da admissibilidade do recurso administrativo e da proposta de rito apresentada.
+
+Em 17 de setembro de 2026, os autos do processo foram distribuídos para relatoria desta Diretoria [9] .
+
+É o relatório.
+
+TIAGO CHAGAS FAIERSTEIN
+
+Diretor-Presidente
+
+____________________________
+
+[1] Constante em https://www.gov.br/anac/pt-br/assuntos/concessoes/venda-assistida-do-aeroporto-do-galeao
+
+[2] Despacho SEI nº 13722826
+
+[3] Parecer 43/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13768811 ), aprovado pelos despachos de aprovação 3/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13768815 ) e 157/2026/GAB/PFEANAC/PGF/AGU (SEI nº 13768819 )
+
+[4] Parecer 44/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13782077 ), aprovado pelos despachos de aprovação 4/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13782079 ) e 160/2026/GAB/PFEANAC/PGF/AGU (SEI nº 13782083 )
+
+[5] Ofício 26 (SEI nº 13776322 )
+
+[6] Manifestação Negociações CCVA (SEI nº 13860004 )
+
+[7] Ofício 27 (SEI nº 13868220 )
+
+[8] Despacho SEI nº 13883827
+
+[9] Certidão de Distribuição (SEI nº 13893960 )
+
+Documento assinado eletronicamente por Tiago Chagas Faierstein , Diretor-Presidente , em 21/09/2026, às 19:15, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13878152 e o código CRC 5281B287 .
+
+SEI nº 13878152

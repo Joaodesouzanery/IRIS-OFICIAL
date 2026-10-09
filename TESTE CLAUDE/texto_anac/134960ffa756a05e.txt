@@ -1,0 +1,55 @@
+SEI/ANAC - 13717729 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.045226/2026-11
+
+INTERESSADO: SUPERINTENDÊNCIA DE SERVIÇOS AÉREOS
+
+RELATOR: RUI CHAGAS MESQUITA
+
+descrição dos fatos
+
+Trata-se de proposta de atualização das declarações de coordenação de aeroportos com o objetivo de promover alinhamento internacional com relação ao parâmetro de quantidade mínima de slots para caracterização de uma série. A iniciativa da Superintendência de Serviços Aéreos (SSA) tem por base estudos técnicos coordenados pela International Air Transport Association (IATA), pelo Airports Council International (ACI) e pelo Worldwide Airport Coordinators Group (WWACG) que resultaram na alteração do parâmetro de definição da série de slots para a Temporada de Verão ( Summer ) no Worldwide Airport Slot Guidelines (WASG), que passou de 5 (cinco) para 7 (sete) slots em semanas consecutivas.
+
+Em síntese, a equipe técnica da Agência sustenta [1] que a adesão do Brasil ao novo parâmetro internacional é medida oportuna e relevante em função da natureza intrinsecamente conectada das programações de malha dos operadores aéreos em âmbito global. A convergência dos parâmetros de slots entre aeroportos promove melhores condições de interoperabilidade para o setor, o que se alinha ao objetivo de otimização do uso da infraestrutura escassa buscado com a coordenação de slots.
+
+Em termos de fundamentação da alteração nas boas práticas internacionais, destacou-se que a Temporada de Verão (que tem como referência o verão no hemisfério norte) usualmente tem duração aproximada de 30 (trinta) semanas, ao passo que a Temporada de Inverno ( Winter ) tem duração de cerca de 22 (vinte e duas) semanas. Diante das características estruturais das temporadas, manteve-se o parâmetro de 5 (cinco) semanas para a Winter e ampliou-se para 7 (sete) semanas o parâmetro aplicável à Summer . Além de tornar mais proporcional o tamanho do conjunto de slots da série, a medida impulsiona o maior uso das infraestruturas, estimulando que as programações feitas para os aeroportos coordenados abarquem períodos maiores de operação.
+
+Ainda conforme a fundamentação lançada pela SSA [1] , a partir da avaliação de 52.969 (cinquenta e duas mil, novecentas e sessenta e nove) séries constantes das Bases de Referência (Baseline) das temporadas de Verão de 2023 a 2026 dos aeroportos atualmente coordenados no Brasil (Congonhas (SBSP), Guarulhos (SBGR) e Santos Dumont (SBRJ)), foram identificadas apenas 10 (dez) séries de slots abaixo de 7 (sete) semanas consecutivas, todas no Aeroporto de Guarulhos, a maior parte delas com 6 (seis) semanas. O retrospecto indica, portanto, que o ajuste da série por parte dos operadores envolveria apenas 0,02% dos casos.
+
+Acerca do aspecto procedimental, diante do reduzido impacto do ajuste normativo, propôs-se a dispensa da Análise de Impacto Regulatório (AIR) e da realização de Consulta Pública, nos moldes do que prevê a Instrução Normativa nº 154, de 20 de março de 2020. A Nota Técnica apresentada pela SSA foi acompanhada de minutas de decisão que alteram as Decisões nº 533 [2] (Aeroporto de Congonhas), nº 534 [3] (Aeroporto de Guarulhos) e nº 535 [4] (Aeroporto Santos Dumont), todas de 7 de junho de 2022.
+
+Após sorteio do processo para relatoria desta Diretoria [5] , em 13 de julho do ano corrente, determinei [6] o encaminhamento dos autos à Procuradoria Federal Especializada junto à ANAC, que exarou Parecer [7] pela ausência de óbice ao seguimento do feito. Durante o período em que o processo permaneceu sob análise jurídica, foram acostados aos autos documentos [8] relativos à reunião participativa promovida pela área técnica no dia 29 de julho, com a participação dos operadores dos aeroportos coordenados e dos operadores aéreos com operações agendadas segundo o Regulamento Brasileiro da Aviação Civil (RBAC) nº 121 em tais infraestruturas. A ata do evento [9] registra a ausência de ressalva dos participantes em relação à proposta.
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Vide Nota Técnica nº 4/2026/GTRC/GEAM/SAS (SEI nº 13382204 ).
+
+[2] Proposta de Ato SEI nº 13452852 (Congonhas).
+
+[3] Proposta de Ato SEI nº 13561658 (Guarulhos).
+
+[4] Proposta de Ato SEI nº 13561739 (Santos Dumont).
+
+[5] Certidão de Distribuição SEI nº 13598912 .
+
+[6] Despacho DIR-RCM SEI nº 13644872 , de 22 de julho de 2026.
+
+[7] Parecer nº 39/2026/FIN/PFEANAC/PGF/AGU (SEI nº 13702935 ), ratificado pelo Despacho de Aprovação nº 145/2026/GAB/PFEANAC/PGF/AGU (SEI nº 13702945 ).
+
+[8] Ata de Reunião SEI nº 13689640 , Lista de Presença SEI nº 13689277 , Apresentação SEI nº 13689242 e Mensagem Eletrônica SEI nº 13689293 .
+
+[9] Ata de Reunião SEI nº 13689640 , complementada por mensagem eletrônica da Azul Linhas Aéreas (Anexo SEI nº 13689293 ).
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 19/08/2026, às 10:31, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13717729 e o código CRC 5CB66A63 .
+
+SEI nº 13717729

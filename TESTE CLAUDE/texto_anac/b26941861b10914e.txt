@@ -1,0 +1,1309 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.023009/2022-47
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas
+
+Data de Geração: 26/04/2022
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (109 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+7112709 Despacho 27/04/2022 27/04/2022 GTNO-SPL
+7668170 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668181 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668164 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668177 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668185 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668167 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668183 Anexo 07/09/2022 08/09/2022 GTNO-SPL
+7668244 Anexo 08/09/2022 08/09/2022 GTNO-SPL
+7607580 Relatório de AIR 2 11/11/2022 11/11/2022 GTNO-SPL
+7850881 Despacho 17/11/2022 17/11/2022 GTNO-SPL
+7979379 Despacho 07/12/2022 07/12/2022 SPL
+8015694 Despacho 12/12/2022 12/12/2022 ASTEC
+8048280 Despacho 19/12/2022 19/12/2022 ASTEC
+8074123 Despacho 26/12/2022 26/12/2022 SPL
+8350519 Anexo 12/01/2023 09/03/2023 GTNO-SPL
+8350521 Anexo 12/01/2023 09/03/2023 GTNO-SPL
+8394025 Anexo 21/03/2023 21/03/2023 GTNO-SPL
+8350533 Despacho 10/03/2023 10/03/2023 GTNO-SPL
+8358017 Despacho 13/03/2023 13/03/2023 GTQC
+8393857 Despacho 21/03/2023 21/03/2023 GTNO-SPL
+8398407 Despacho 22/03/2023 22/03/2023 GTNO-GNOS
+8521045 Despacho 28/04/2023 28/04/2023 GCAC
+8399264 Nota Técnica 28 04/05/2023 04/05/2023 GTNO-GNOS
+8570077 Despacho 04/05/2023 04/05/2023 GTNO-GNOS
+8586512 Despacho 11/05/2023 11/05/2023 GNOS
+8602718 Despacho 16/05/2023 16/05/2023 SPO
+8763069 Despacho 22/06/2023 22/06/2023 GFOP
+10017491 Despacho 09/05/2024 09/05/2024 GTNO-SPL
+10025065 Despacho 14/05/2024 14/05/2024 CSAF-SPL
+10498075 Nota Técnica 33 02/09/2024 02/09/2024 GTNO-SPL
+10498462 Website da Associação ABUL 31Ago2024 31/08/2024 31/08/2024 GTNO-SPL
+10498464 Extrato Looping 31/08/2024 31/08/2024 GTNO-SPL
+10498465 Planilha de Excel 31/08/2024 31/08/2024 GTNO-SPL
+10493439 Proposta de Ato (Normativo, Decisão etc.) 02/09/2024 02/09/2024 GTNO-SPL
+10493480 Despacho 02/09/2024 02/09/2024 GTNO-SPL
+10500819 Despacho 02/09/2024 02/09/2024 SPL
+10503352 Certidão de Distribuição 02/09/2024 02/09/2024 ASTEC
+10504302 Relatório de Diretoria 03/09/2024 03/09/2024 DIR-RC
+10504318 Voto 03/09/2024 03/09/2024 DIR-RC
+10509810 Resolução 755 03/09/2024 03/09/2024 ASTEC
+10511586 Anexo DOU 04/09/2024 04/09/2024 GTIN-Publicações
+10513814 Certidão de Deliberação 04/09/2024 04/09/2024 ASTEC
+10511665 Retificação 04/09/2024 04/09/2024 ASTEC
+10516843 Anexo DOU - Retificação 05/09/2024 05/09/2024 GTIN-Publicações
+12118311 Despacho 26/09/2025 26/09/2025 GTNO-SPL
+12123250 Despacho 01/10/2025 01/10/2025 CSAF-SPL
+12187693 Anexo ManifestaçõesSEAM 12/10/2025 12/10/2025 GTNO-SPL
+11134216 Relatório de AIR 1 18/12/2025 18/12/2025 GTNO-SPL
+12483324 Planilha 01 17/12/2025 17/12/2025 GTNO-SPL
+12483286 Planilha 02 17/12/2025 17/12/2025 GTNO-SPL
+12483302 Planilha 03 17/12/2025 17/12/2025 GTNO-SPL
+12483314 Planilha 04 17/12/2025 17/12/2025 GTNO-SPL
+12483344 Planilha 05 17/12/2025 17/12/2025 GTNO-SPL
+11139009 Nota Técnica 5 17/12/2025 17/12/2025 GTNO-SPL
+12428125 Proposta de Ato (Normativo, Decisão etc.) 17/12/2025 17/12/2025 GTNO-SPL
+12486200 Despacho 18/12/2025 18/12/2025 GTNO-SPL
+12488572 Despacho 18/12/2025 18/12/2025 SPL
+12494577 Certidão de Distribuição 19/12/2025 19/12/2025 ASTEC
+12507788 Despacho 22/12/2025 22/12/2025 ASTEC
+12497949 Relatório de Diretoria 23/12/2025 23/12/2025 DIR-MNM
+12498944 Voto 23/12/2025 23/12/2025 DIR-MNM
+12517031 Despacho 23/12/2025 23/12/2025 ASTEC
+12522205 Voto 24/12/2025 24/12/2025 DIR-LRI
+12522403 Voto 24/12/2025 24/12/2025 DIR-RCM
+12523527 Despacho 24/12/2025 24/12/2025 DIR-RCM
+12534460 Voto 29/12/2025 29/12/2025 DIR-P
+12538123 Resolução 788 29/12/2025 29/12/2025 ASTEC
+12548971 Anexo 02/01/2026 02/01/2026 GTIN-Publicações
+12549130 Certidão de Deliberação 02/01/2026 02/01/2026 ASTEC
+12740752 Certidão de Deliberação 30/01/2026 30/01/2026 ASTEC
+12740609 Memorando 7 30/01/2026 30/01/2026 ASTEC
+12893776 Despacho 23/02/2026 23/02/2026 CSAF-SPL
+13472036 Nota Técnica 30 30/06/2026 30/06/2026 GTNO-SPL
+13546047 Planilha 30/06/2026 30/06/2026 GTNO-SPL
+13545301 Nota Técnica 45 03/08/2026 03/08/2026 GTNO-SPL
+13460196 Relatório de AIR 3 03/08/2026 03/08/2026 GTNO-SPL
+13466982 Planilha 01 Excel - 10/06/2026 10/06/2026 GTNO-SPL
+13467000 Planilha 02 Excel - 10/06/2026 10/06/2026 GTNO-SPL
+13467035 Planilha 03 Excel - 10/06/2026 10/06/2026 GTNO-SPL
+13467053 Planilha 04 Excel - 10/06/2026 10/06/2026 GTNO-SPL
+13687282 Relatório de AIR 5 03/08/2026 03/08/2026 GTNO-SPL
+13381563 Proposta de Ato (Normativo, Decisão etc.) 03/08/2026 03/08/2026 GTNO-SPL
+13474079 Proposta de Ato (Normativo, Decisão etc.) 03/08/2026 03/08/2026 GTNO-SPL
+13482646 Anexo minuta RBAC nº 141 03/08/2026 03/08/2026 GTNO-SPL
+13472519 Anexo minuta RBAC nº 183 03/08/2026 03/08/2026 GTNO-SPL
+13476329 Anexo minuta 03/08/2026 03/08/2026 GTNO-SPL
+13486276 Proposta de Ato (Normativo, Decisão etc.) 03/08/2026 03/08/2026 GTNO-SPL
+13486347 Anexo minuta 03/08/2026 03/08/2026 GTNO-SPL
+13689675 Apresentação 03/08/2026 03/08/2026 GTNO-SPL
+13688920 Despacho 03/08/2026 03/08/2026 GTNO-SPL
+13690053 Despacho 03/08/2026 03/08/2026 SPL
+13693148 Certidão de Distribuição 04/08/2026 04/08/2026 ASTEC
+13804631 Proposta de Ato (Normativo, Decisão etc.) 31/08/2026 31/08/2026 GTNO-SPL
+13804778 Despacho 31/08/2026 31/08/2026 GTNO-SPL
+13805790 Despacho 31/08/2026 31/08/2026 SPL
+13804391 Relatório de Diretoria 01/09/2026 01/09/2026 DIR-RCM
+13805026 Voto 01/09/2026 01/09/2026 DIR-RCM
+13812672 Despacho 01/09/2026 01/09/2026 ASTEC
+13815060 Voto 02/09/2026 02/09/2026 DIR-CBI
+13816890 Voto 04/09/2026 04/09/2026 DIR-P
+13818782 Voto 04/09/2026 04/09/2026 DIR-MNM
+13819661 Voto 04/09/2026 04/09/2026 DIR-RJH
+13835819 Aviso 409 08/09/2026 08/09/2026 ASTEC
+13836527 Resolução 811 10/09/2026 10/09/2026 ASTEC
+13850400 Anexo DOU - Aviso de Consulta Pública 10/09/2026 10/09/2026 ASTEC
+13855378 Anexo DOU 11/09/2026 11/09/2026 ASTEC
+13855384 Certidão de Deliberação 11/09/2026 11/09/2026 ASTEC
+00058.080255/2026-20 Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas 11/09/2026 11/09/2026 GTNO-SPL
+
+Lista de Andamentos (231 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+06/10/2026 10:45
+GTNO-SPL
+
+Processo 00058.080255/2026-20 anexado
+
+30/09/2026 11:12
+DIR-P
+
+Conclusão do processo na unidade
+
+18/09/2026 10:21
+DIR-CBI
+
+Conclusão do processo na unidade
+
+11/09/2026 15:25
+GTNO-SPL
+
+Processo recebido na unidade
+
+11/09/2026 14:31
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+11/09/2026 14:30
+SPL
+
+Processo recebido na unidade
+
+11/09/2026 11:05
+SPL
+
+Processo remetido pela unidade ASTEC
+
+11/09/2026 09:47
+DIR-MNM
+
+Conclusão do processo na unidade
+
+10/09/2026 11:52
+GTNO-SPL
+
+Alterado nível de acesso do documento 13545301 (Nota Técnica 45) para público
+
+10/09/2026 11:51
+GTNO-SPL
+
+Alterado nível de acesso do documento 13460196 (Relatório de AIR 3) para público
+
+10/09/2026 11:51
+GTNO-SPL
+
+Alterado nível de acesso do documento 13687282 (Relatório de AIR 5) para público
+
+10/09/2026 11:51
+GTNO-SPL
+
+Alterado nível de acesso do documento 13381563 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+10/09/2026 11:50
+GTNO-SPL
+
+Alterado nível de acesso do documento 13474079 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+10/09/2026 11:50
+GTNO-SPL
+
+Alterado nível de acesso do documento 13482646 (Anexo minuta RBAC nº 141) para público
+
+10/09/2026 11:50
+GTNO-SPL
+
+Alterado nível de acesso do documento 13472519 (Anexo minuta RBAC nº 183) para público
+
+10/09/2026 11:49
+GTNO-SPL
+
+Alterado nível de acesso do documento 13476329 (Anexo minuta) para público
+
+10/09/2026 11:49
+GTNO-SPL
+
+Alterado nível de acesso do documento 13486276 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+10/09/2026 11:49
+GTNO-SPL
+
+Alterado nível de acesso do documento 13804631 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+10/09/2026 11:49
+GTNO-SPL
+
+Alterado nível de acesso do documento 13804778 (Despacho) para público
+
+10/09/2026 11:49
+GTNO-SPL
+
+Alterado nível de acesso do documento 13805790 (Despacho) para público
+
+10/09/2026 11:48
+GTNO-SPL
+
+Reabertura do processo na unidade
+
+04/09/2026 17:00
+DIR-RJH
+
+Conclusão do processo na unidade
+
+01/09/2026 15:48
+DIR-P
+
+Processo recebido na unidade
+
+01/09/2026 15:35
+DIR-RJH
+
+Processo recebido na unidade
+
+01/09/2026 15:22
+DIR-CBI
+
+Processo recebido na unidade
+
+01/09/2026 15:07
+DIR-MNM
+
+Processo recebido na unidade
+
+01/09/2026 12:32
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 11:11
+DIR-RCM
+
+Processo recebido na unidade
+
+31/08/2026 15:03
+DIR-RCM
+
+Processo remetido pela unidade SPL
+
+31/08/2026 11:21
+SPL
+
+Processo recebido na unidade
+
+31/08/2026 11:21
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+31/08/2026 09:14
+GTNO-SPL
+
+Reabertura do processo na unidade
+
+27/08/2026 10:48
+ASTEC
+
+Reabertura do processo na unidade
+
+04/08/2026 14:21
+DIR-RCM
+
+Processo recebido na unidade
+
+04/08/2026 13:06
+ASTEC
+
+Conclusão do processo na unidade
+
+04/08/2026 12:48
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+04/08/2026 12:17
+ASTEC
+
+Processo recebido na unidade
+
+03/08/2026 18:54
+ASTEC
+
+Processo remetido pela unidade SPL
+
+03/08/2026 17:06
+SPL
+
+Processo recebido na unidade
+
+03/08/2026 17:06
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+03/08/2026 16:35
+GTNO-SPL
+
+Alterada hipótese legal do documento 13486276 (Proposta de Ato (Normativo, Decisão etc.)) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:35
+GTNO-SPL
+
+Alterado nível de acesso do documento 13486276 (Proposta de Ato (Normativo, Decisão etc.)) para restrito
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterada hipótese legal do documento 13381563 (Proposta de Ato (Normativo, Decisão etc.)) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterado nível de acesso do documento 13381563 (Proposta de Ato (Normativo, Decisão etc.)) para restrito
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterada hipótese legal do documento 13687282 (Relatório de AIR 5) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterado nível de acesso do documento 13687282 (Relatório de AIR 5) para restrito
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterada hipótese legal do documento 13460196 (Relatório de AIR 3) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterado nível de acesso do documento 13460196 (Relatório de AIR 3) para restrito
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterada hipótese legal do documento 13474079 (Proposta de Ato (Normativo, Decisão etc.)) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterado nível de acesso do documento 13474079 (Proposta de Ato (Normativo, Decisão etc.)) para restrito
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterada hipótese legal do documento 13476329 (Anexo minuta) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:34
+GTNO-SPL
+
+Alterado nível de acesso do documento 13476329 (Anexo minuta) para restrito
+
+03/08/2026 16:33
+GTNO-SPL
+
+Alterada hipótese legal do documento 13472519 (Anexo minuta RBAC nº 183) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:33
+GTNO-SPL
+
+Alterado nível de acesso do documento 13472519 (Anexo minuta RBAC nº 183) para restrito
+
+03/08/2026 16:33
+GTNO-SPL
+
+Alterada hipótese legal do documento 13482646 (Anexo minuta RBAC nº 141) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+03/08/2026 16:33
+GTNO-SPL
+
+Alterado nível de acesso do documento 13482646 (Anexo minuta RBAC nº 141) para restrito
+
+04/03/2026 09:16
+GFOP
+
+Conclusão do processo na unidade
+
+03/03/2026 16:59
+GFOP
+
+Processo recebido na unidade
+
+03/03/2026 15:23
+GFOP
+
+Processo remetido pela unidade GTNO-SPL
+
+02/03/2026 14:32
+CSAF-SPL
+
+Conclusão do processo na unidade
+
+26/02/2026 13:44
+GTNO-SPL
+
+Processo recebido na unidade
+
+23/02/2026 10:19
+GTNO-SPL
+
+Processo remetido pela unidade CSAF-SPL
+
+23/02/2026 09:59
+CSAF-SPL
+
+Processo recebido na unidade
+
+23/02/2026 09:58
+CSAF-SPL
+
+Processo remetido pela unidade SPL
+
+23/02/2026 09:58
+SPL
+
+Reabertura do processo na unidade
+
+03/02/2026 09:27
+DIR-MNM
+
+Conclusão do processo na unidade
+
+30/01/2026 13:40
+GTNO-SPL
+
+Processo recebido na unidade
+
+30/01/2026 12:04
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+30/01/2026 12:04
+SPL
+
+Processo recebido na unidade
+
+30/01/2026 11:09
+SPL
+
+Processo remetido pela unidade ASTEC
+
+29/01/2026 18:01
+DIR-MNM
+
+Reabertura do processo na unidade
+
+19/01/2026 09:54
+DIR-P
+
+Conclusão do processo na unidade
+
+14/01/2026 16:56
+DIR-P
+
+Reabertura do processo na unidade
+
+07/01/2026 10:21
+DIR-LRI
+
+Conclusão do processo na unidade
+
+07/01/2026 09:30
+GTNO-SPL
+
+Alterado nível de acesso do processo para público
+
+05/01/2026 16:36
+ASTEC
+
+Reabertura do processo na unidade
+
+05/01/2026 10:15
+GTNO-SPL
+
+Processo recebido na unidade
+
+05/01/2026 08:13
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+05/01/2026 08:13
+SPL
+
+Processo recebido na unidade
+
+02/01/2026 17:26
+SPL
+
+Processo remetido pela unidade ASTEC
+
+02/01/2026 16:27
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+31/12/2025 06:47
+GTIN-Publicações
+
+Processo recebido na unidade
+
+31/12/2025 06:47
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+30/12/2025 16:08
+DIR-MNM
+
+Conclusão do processo na unidade
+
+29/12/2025 09:57
+DIR-P
+
+Conclusão do processo na unidade
+
+29/12/2025 08:53
+GFOP
+
+Conclusão do processo na unidade
+
+29/12/2025 08:31
+DIR-P
+
+Processo recebido na unidade
+
+26/12/2025 10:29
+ASTEC
+
+Cancelado documento 12522950 (Certidão de Deliberação).
+
+Cancelada em virtude do Despacho nº 12523527.
+
+26/12/2025 09:03
+GTNO-SPL
+
+Processo recebido na unidade
+
+26/12/2025 08:34
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+26/12/2025 08:33
+SPL
+
+Processo recebido na unidade
+
+24/12/2025 11:14
+SPL
+
+Processo remetido pela unidade ASTEC
+
+23/12/2025 13:21
+DIR-RCM
+
+Processo recebido na unidade
+
+23/12/2025 12:13
+DIR-LRI
+
+Processo recebido na unidade
+
+23/12/2025 11:47
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+23/12/2025 11:47
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+23/12/2025 11:47
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 18:43
+DIR-RCM
+
+Processo recebido na unidade
+
+22/12/2025 17:10
+DIR-MNM
+
+Processo recebido na unidade
+
+22/12/2025 14:21
+DIR-LRI
+
+Processo recebido na unidade
+
+22/12/2025 12:07
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 12:07
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 12:07
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 12:07
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+19/12/2025 13:27
+DIR-MNM
+
+Processo recebido na unidade
+
+19/12/2025 12:21
+GFOP
+
+Processo recebido na unidade
+
+19/12/2025 10:49
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+19/12/2025 08:49
+ASTEC
+
+Processo recebido na unidade
+
+18/12/2025 17:17
+ASTEC
+
+Processo remetido pela unidade SPL
+
+18/12/2025 13:46
+SPL
+
+Alterada hipótese legal do documento 12486200 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+18/12/2025 13:46
+SPL
+
+Alterado nível de acesso do documento 12486200 (Despacho) para restrito
+
+18/12/2025 13:46
+SPL
+
+Alterada hipótese legal do documento 12428125 (Proposta de Ato (Normativo, Decisão etc.)) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+18/12/2025 13:46
+SPL
+
+Alterado nível de acesso do documento 12428125 (Proposta de Ato (Normativo, Decisão etc.)) para restrito
+
+18/12/2025 13:46
+SPL
+
+Alterada hipótese legal do documento 11139009 (Nota Técnica 5) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+18/12/2025 13:46
+SPL
+
+Alterado nível de acesso do documento 11139009 (Nota Técnica 5) para restrito
+
+18/12/2025 13:45
+SPL
+
+Alterada hipótese legal do documento 11134216 (Relatório de AIR 1) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+18/12/2025 13:45
+SPL
+
+Alterado nível de acesso do documento 11134216 (Relatório de AIR 1) para restrito
+
+18/12/2025 13:44
+GFOP
+
+Processo remetido pela unidade GTNO-SPL
+
+18/12/2025 13:44
+GTNO-SPL
+
+Reabertura do processo na unidade
+
+18/12/2025 13:43
+SPL
+
+Processo recebido na unidade
+
+18/12/2025 13:43
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+08/10/2025 18:25
+GTNO-SPL
+
+Processo recebido na unidade
+
+01/10/2025 09:47
+GTNO-SPL
+
+Processo remetido pela unidade CSAF-SPL
+
+26/09/2025 15:51
+CSAF-SPL
+
+Processo recebido na unidade
+
+26/09/2025 15:45
+CSAF-SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+06/02/2025 11:41
+GTNO-SPL
+
+Alterado nível de acesso do documento 7607580 (Relatório de AIR 2) para público
+
+06/02/2025 11:35
+GTNO-SPL
+
+Alterado nível de acesso do documento 8393857 (Despacho) para público
+
+05/09/2024 15:07
+GTNO-SPL
+
+Alterado nível de acesso do documento 10500819 (Despacho) para público
+
+05/09/2024 15:07
+GTNO-SPL
+
+Alterado nível de acesso do documento 10493439 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+05/09/2024 15:07
+GTNO-SPL
+
+Alterado nível de acesso do documento 10493480 (Despacho) para público
+
+05/09/2024 10:42
+GTNO-SPL
+
+Processo recebido na unidade
+
+05/09/2024 09:47
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+05/09/2024 09:10
+DIR-RC
+
+Conclusão do processo na unidade
+
+04/09/2024 16:11
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+04/09/2024 15:39
+SPL
+
+Processo recebido na unidade
+
+04/09/2024 14:08
+GTIN-Publicações
+
+Processo recebido na unidade
+
+04/09/2024 14:08
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+04/09/2024 14:06
+SPL
+
+Processo remetido pela unidade ASTEC
+
+04/09/2024 10:16
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+03/09/2024 17:15
+GTIN-Publicações
+
+Processo recebido na unidade
+
+03/09/2024 17:15
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+03/09/2024 10:41
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+03/09/2024 10:07
+ASTEC
+
+Reabertura do processo na unidade
+
+02/09/2024 16:58
+ASTEC
+
+Conclusão do processo na unidade
+
+02/09/2024 16:58
+DIR-RC
+
+Processo recebido na unidade
+
+02/09/2024 16:58
+ASTEC
+
+Reabertura do processo na unidade
+
+02/09/2024 16:58
+ASTEC
+
+Conclusão do processo na unidade
+
+02/09/2024 16:57
+DIR-RC
+
+Processo remetido pela unidade ASTEC
+
+02/09/2024 16:57
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+02/09/2024 16:53
+ASTEC
+
+Processo recebido na unidade
+
+02/09/2024 16:46
+ASTEC
+
+Processo remetido pela unidade SPL
+
+02/09/2024 12:06
+SPL
+
+Processo recebido na unidade
+
+02/09/2024 12:05
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+16/05/2024 03:48
+GTNO-SPL
+
+Processo recebido na unidade
+
+14/05/2024 09:52
+GTNO-SPL
+
+Processo remetido pela unidade CSAF-SPL
+
+10/05/2024 16:41
+CSAF-SPL
+
+Processo recebido na unidade
+
+09/05/2024 21:10
+CSAF-SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+27/06/2023 15:14
+GTVA
+
+Conclusão do processo na unidade
+
+27/06/2023 15:13
+GTVA
+
+Reabertura do processo na unidade
+
+22/06/2023 14:32
+GTNO-SPL
+
+Processo recebido na unidade
+
+22/06/2023 12:57
+GTNO-SPL
+
+Processo remetido pela unidade GTOF
+
+06/06/2023 08:55
+GTVA
+
+Conclusão do processo na unidade
+
+06/06/2023 08:55
+GTVA
+
+Reabertura do processo na unidade
+
+16/05/2023 15:57
+GTNO-SPL
+
+Processo recebido na unidade
+
+16/05/2023 14:49
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+16/05/2023 14:48
+SPL
+
+Processo recebido na unidade
+
+16/05/2023 14:27
+SPL
+
+Processo remetido pela unidade SPO
+
+12/05/2023 11:14
+SPO
+
+Processo recebido na unidade
+
+11/05/2023 21:15
+SPO
+
+Processo remetido pela unidade GNOS
+
+09/05/2023 10:51
+GNOS
+
+Processo recebido na unidade
+
+04/05/2023 20:36
+GNOS
+
+Processo remetido pela unidade GTNO-GNOS
+
+28/04/2023 17:12
+GTNO-GNOS
+
+Processo recebido na unidade
+
+28/04/2023 15:57
+GTNO-GNOS
+
+Processo remetido pela unidade GCAC
+
+28/04/2023 09:06
+GCAC
+
+Reabertura do processo na unidade
+
+27/04/2023 17:37
+GTVA
+
+Conclusão do processo na unidade
+
+27/04/2023 17:36
+GTVA
+
+Processo recebido na unidade
+
+27/04/2023 17:36
+GTVA
+
+Processo remetido pela unidade GCAC
+
+07/04/2023 08:38
+GFOP
+
+Cancelado documento 8390403 (Despacho).
+
+Substituição despacho
+
+23/03/2023 11:02
+GTNO-SPL
+
+Alterada hipótese legal do documento 7607580 (Relatório de AIR 2) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+23/03/2023 11:02
+GTNO-SPL
+
+Alterado nível de acesso do documento 7607580 (Relatório de AIR 2) para restrito
+
+23/03/2023 10:51
+GTNO-SPL
+
+Alterada hipótese legal do processo para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+23/03/2023 10:51
+GTNO-SPL
+
+Alterado nível de acesso do processo para restrito
+
+23/03/2023 10:46
+GTNO-SPL
+
+Alterado nível de acesso do processo para público
+
+23/03/2023 10:41
+GTNO-SPL
+
+Alterado nível de acesso do documento 7607580 (Relatório de AIR 2) para público
+
+22/03/2023 17:04
+GCAC
+
+Processo recebido na unidade
+
+22/03/2023 16:55
+GTNO-GNOS
+
+Reabertura do processo na unidade
+
+22/03/2023 16:55
+GCAC
+
+Processo remetido pela unidade GTNO-GNOS
+
+22/03/2023 09:45
+GTNO-GNOS
+
+Alterado nível de acesso do documento 8399264 (Nota Técnica 28) para público
+
+21/03/2023 11:38
+GTQC
+
+Conclusão do processo na unidade
+
+21/03/2023 11:36
+GTQC
+
+Reabertura do processo na unidade
+
+21/03/2023 11:24
+GTNO-GNOS
+
+Processo recebido na unidade
+
+21/03/2023 10:50
+GTNO-GNOS
+
+Processo remetido pela unidade GTNO-SPL
+
+20/03/2023 15:33
+GFOP
+
+Cancelado documento 8372873 (Despacho).
+
+Substituição Despacho
+
+13/03/2023 10:09
+GTNO-SPL
+
+Processo recebido na unidade
+
+13/03/2023 09:45
+GTNO-SPL
+
+Processo remetido pela unidade GCEP
+
+10/03/2023 09:40
+GTQC
+
+Processo recebido na unidade
+
+10/03/2023 07:49
+GFOP
+
+Processo recebido na unidade
+
+10/03/2023 07:46
+GFOP
+
+Processo remetido pela unidade GTNO-SPL
+
+10/03/2023 07:46
+GTQC
+
+Processo remetido pela unidade GTNO-SPL
+
+18/01/2023 20:27
+DIR-P
+
+Conclusão do processo na unidade
+
+13/01/2023 14:56
+DIR-RBC
+
+Conclusão do processo na unidade
+
+26/12/2022 18:30
+GTNO-SPL
+
+Processo recebido na unidade
+
+26/12/2022 10:22
+GTNO-SPL
+
+Processo remetido pela unidade SPL
+
+20/12/2022 09:47
+DIR-RC
+
+Conclusão do processo na unidade
+
+19/12/2022 15:40
+SPL
+
+Processo recebido na unidade
+
+19/12/2022 15:04
+SPL
+
+Processo remetido pela unidade ASTEC
+
+19/12/2022 11:22
+DIR-LRI
+
+Conclusão do processo na unidade
+
+19/12/2022 09:13
+DIR-TP
+
+Conclusão do processo na unidade
+
+15/12/2022 16:19
+DIR-P
+
+Processo recebido na unidade
+
+13/12/2022 11:14
+DIR-RBC
+
+Processo recebido na unidade
+
+12/12/2022 14:39
+DIR-TP
+
+Processo recebido na unidade
+
+12/12/2022 14:28
+DIR-RC
+
+Processo recebido na unidade
+
+12/12/2022 14:22
+DIR-LRI
+
+Processo recebido na unidade
+
+12/12/2022 14:16
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+12/12/2022 14:16
+DIR-TP
+
+Processo remetido pela unidade ASTEC
+
+12/12/2022 14:16
+DIR-RBC
+
+Processo remetido pela unidade ASTEC
+
+12/12/2022 14:16
+DIR-RC
+
+Processo remetido pela unidade ASTEC
+
+12/12/2022 14:16
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+07/12/2022 13:42
+ASTEC
+
+Processo recebido na unidade
+
+07/12/2022 12:26
+ASTEC
+
+Processo remetido pela unidade GTNO-SPL
+
+07/12/2022 11:57
+ASTEC
+
+Processo remetido pela unidade SPL
+
+17/11/2022 15:04
+SPL
+
+Processo recebido na unidade
+
+17/11/2022 08:40
+SPL
+
+Processo remetido pela unidade GTNO-SPL
+
+29/09/2022 09:59
+GTNO-SPL
+
+Processo recebido na unidade
+
+29/09/2022 09:58
+GTNO-SPL
+
+Processo remetido pela unidade GTQN
+
+22/09/2022 10:38
+GTQN
+
+Processo recebido na unidade
+
+22/09/2022 10:15
+GTQN
+
+Processo remetido pela unidade GTNO-SPL
+
+26/04/2022 11:50
+GTNO-SPL
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

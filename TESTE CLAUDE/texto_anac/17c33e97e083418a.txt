@@ -1,0 +1,57 @@
+SEI/ANAC - 12599222 - Voto
+
+Voto
+
+PROCESSO: 00065.038335/2021-89
+
+interessado: SUPERINTENDÊNCIA DE PESSOAL DA AVIAÇÃO CIVIL
+
+RELATOR: ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+FUNDAMENTAÇÃO JURÍDICA
+
+A Lei nº 11.182, de 27 de setembro de 2005, estabelece a competência da Diretoria da Agência Nacional de Aviação Civil (ANAC) para exercer o poder normativo da Agência (art. 11, V).
+
+Por sua vez, o Regimento Interno da ANAC, Resolução nº 381, de 14 de junho de 2016, atribui à Superintendência de Pessoal da Aviação Civil (SPL) competência para submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização de organizações de instrução, de equipamentos simuladores de voo para instrução e treinamento de tripulantes, de médicos e clínicas médicas executores de exames médicos para emissão de certificados médicos e de pessoas integrantes do cenário operacional (art. 41-A, I).
+
+Pelo exposto, restam atendidos os requisitos de competência quanto à elaboração da proposta, deliberação e decisão.
+
+DA ANÁLISE
+
+O presente processo foi inaugurado com o registro de visita técnica de servidores da ANAC à Empresa Brasileira de Aeronáutica S/A (Embraer) para discussão inicial sobre a aeronave com capacidade de decolagem e pouso vertical ( VTOL-Capable Aircraft - VCA) que estava em desenvolvimento na empresa (SEI 6235081 ).
+
+Uma das conclusões dessa visita técnica foi que a Agência precisaria analisar o cenário técnico-operacional de VCAs e desenvolver uma base de certificação de instrução e qualificação para pilotos associados à operação dessa nova categoria de aeronave.
+
+Para atingir esse objetivo, a SPL formou um grupo de estudo interno e passou a participar das discussões do subgrupo Pilot Training and Qualification for VTOL-Capable Aircraft , vinculado ao Grupo SAE G-35 - Modeling, Simulation, Training for Emerging Aviation Tech – da Society of Automotive Engineering (SAE). Esse subgrupo foi criado com o objetivo de estabelecer parâmetros para treinamento e certificação de pilotos envolvidos nas operações de VCA.
+
+O trabalho desenvolvido pelo grupo de estudo e as constatações decorrentes da participação no Grupo SAE G-35 resultaram na elaboração das Notas Técnicas nº 3/2023/GCEP/SPL (SEI 8998819 ) e nº 1/2024/GCEP/SPL (SEI 9541730 ). Nesses documentos, a SPL registrou suas conclusões iniciais sobre o tema, que embasaram a construção de proposta preliminar para requisitos de certificação e para um programa de treinamento para pilotos de VCA. Essa proposta preliminar foi levada à Consulta Setorial nº 3/2024 (SEI 10070158 ), cujas contribuições foram analisadas pela SPL, conforme registrado no Relatório SEI 10996151 .
+
+No Relatório de Análise de Impacto Regulatório (AIR) nº 2/2025/GTNO-SPL/SPL (SEI 12242913 ) , a SPL consolida os estudos até então realizados e define formalmente o problema regulatório como sendo a " i nexistência de base normativa específica que estabeleça os requisitos mínimos de certificação, formação e licenciamento de pilotos para operação de aeronaves com capacidade de decolagem e pouso verticais, comprometendo a segurança operacional, a previsibilidade regulatória e o cronograma de implementação da nova indústria de mobilidade aérea ".
+
+Como benchmark para a identificação e a avaliação das opções regulatórias para a resolução do problema definido, a SPL analisou o tratamento do tema pela autoridade de aviação estadunidense ( Federal Aviation Administration - FAA) e pela European Union Aviation Safety Agency (EASA) . A área técnica destaca que, n o âmbito da Organização da Aviação Civil Internacional (OACI), ainda não há tratativas formais sobre o tema no Personnel Training and Licensing Panel (PTLP), o que ilustra o caráter pioneiro das ações nacionais e regionais.
+
+A SPL identificou que a FAA considera como base para a definição dos aspectos de operação e certificação de pessoal para VCA os regulamentos já previstos para a categoria powered-lift aircraft , equivalente à categoria “sustentação por potência” definida no RBAC nº 61, com algumas flexibilizações. Já a EASA permite que pilotos detentores de licença comercial de avião ou helicóptero obtenham habilitação de tipo para VCA de forma similar às demais habilitações de tipo. A área técnica concluiu que ambos os modelos buscam equilibrar segurança operacional e viabilidade de implantação, mas diferem na abordagem. Enquanto a EASA adota um modelo adaptável, baseado em desempenho e focado nas operações iniciais, o modelo da FAA mantém forte vinculação a categorias preexistentes e oferece uma solução mais completa, porém prescritiva.
+
+Ao final da análise, a opção regulatória escolhida pela área técnica foi a de criar uma nova categoria de aeronaves VCA, com a previsão de transição para detentores de, no mínimo, licença de piloto comercial nas categorias avião ou helicóptero, com possibilidade de crédito para treinamentos que sigam metodologia baseada em competências ( Competency-Based Training and Assessment – CBTA). Tal transição se concluirá com a concessão de uma licença de piloto comercial na nova categoria, acompanhada de habilitações de tipo específicas para cada modelo ou família de VCA. A SPL aponta que essa abordagem possibilita uma transição regulatória gradual e segura, em consonância com a evolução tecnológica do setor de mobilidade aérea avançada, e mantém compatibilidade com metodologia de treinamento reconhecida pela OACI.
+
+Para a implementação da opção regulatória escolhida, a SPL propôs a inclusão de previsão para a nova categoria e dos requisitos para transição das licenças de piloto comercial e de linha aérea de avião e helicóptero em uma nova Subparte S no RBAC nº 61, conforme a Proposta de Ato 12430905 . Durante o período de análise de relatoria do processo, identificou-se a necessidade de ajustes redacionais e de forma à proposta original, que foram discutidos com a área técnica, conforme registrado pela SPL no Despacho 12619863 , e resultaram na Proposta de Ato 12609483 , incluída nos autos por esta Diretoria.
+
+Conforme já exposto no Relatório de Diretoria 12570751 , percebe-se que a área técnica buscou, na proposta normativa, a construção de um conjunto de requisitos que oferece o melhor equilíbrio entre segurança operacional, viabilidade administrativa e alinhamento internacional, além de permitir implementação imediata, sem ruptura do sistema existente de licenciamento de pessoal da aviação civil. Considero que o caminho seguido foi apropriado, em face da iminente introdução de VCA no mercado brasileiro.
+
+Diante de todo o exposto, entendo que a área técnica conduziu apropriada análise para a apresentação da proposta normativa a ser submetida para consulta pública . Concluo, portanto, não ser necessária a apresentação de considerações adicionais por parte desta Diretoria em relação à análise de forma e de mérito da solicitação.
+
+DO VOTO
+
+Desse modo, diante das razões expostas e com fundamento no art. 11, inciso V, da Lei nº 11.182, de 2005, VOTO FAVORAVELMENTE à instauração de consulta pública, pelo prazo de 45 (quarenta e cinco dias), acerca da proposta de emenda do RBAC nº 61, nos termos da proposta feita pela Superintendência de Pessoal de Aviação Civil, com os ajustes redacionais e de forma realizados por esta Diretoria (SEI 12609483 ) .
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 22/01/2026, às 11:18, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12599222 e o código CRC 6E02B3DB .
+
+SEI nº 12599222

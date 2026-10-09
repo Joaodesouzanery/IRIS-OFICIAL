@@ -1,6 +1,6 @@
 {
  "ano": 2026,
- "gerado_em": "2026-10-09 03:29",
+ "gerado_em": "2026-10-09 12:04",
  "fontes": [
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas",
@@ -30,442 +30,442 @@
   {
    "url": "https://departamental.anac.gov.br/menu/f?p=107101:137",
    "arquivo": "apex_presenciais_2026.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026",
    "arquivo": "apex_eletronicas_2026.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias/2025/portaria-18366",
    "arquivo": "apex_calendario_portaria_18366.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2026",
    "arquivo": "ctl_pres_2026.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2025",
    "arquivo": "ctl_pres_2025.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2025",
    "arquivo": "ctl_ele_2025.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4856",
    "arquivo": "reu/4856.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
    "arquivo": "pauta/4856.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4836",
    "arquivo": "reu/4836.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
    "arquivo": "pauta/4836.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4835",
    "arquivo": "reu/4835.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
    "arquivo": "pauta/4835.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4852",
    "arquivo": "reu/4852.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4852",
    "arquivo": "pauta/4852.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4830",
    "arquivo": "reu/4830.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4830",
    "arquivo": "pauta/4830.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4847",
    "arquivo": "reu/4847.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4847",
    "arquivo": "pauta/4847.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4828",
    "arquivo": "reu/4828.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4828",
    "arquivo": "pauta/4828.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6367",
    "arquivo": "reu/6367.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
    "arquivo": "pauta/6367.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6327",
    "arquivo": "reu/6327.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
    "arquivo": "pauta/6327.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6307",
    "arquivo": "reu/6307.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
    "arquivo": "pauta/6307.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6247",
    "arquivo": "reu/6247.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6247",
    "arquivo": "pauta/6247.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6187",
    "arquivo": "reu/6187.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6187",
    "arquivo": "pauta/6187.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6167",
    "arquivo": "reu/6167.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6167",
    "arquivo": "pauta/6167.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6207",
    "arquivo": "reu/6207.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
    "arquivo": "pauta/6207.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6128",
    "arquivo": "reu/6128.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6128",
    "arquivo": "pauta/6128.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6087",
    "arquivo": "reu/6087.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6087",
    "arquivo": "pauta/6087.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6047",
    "arquivo": "reu/6047.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6047",
    "arquivo": "pauta/6047.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6007",
    "arquivo": "reu/6007.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6007",
    "arquivo": "pauta/6007.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5967",
    "arquivo": "reu/5967.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5967",
    "arquivo": "pauta/5967.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5947",
    "arquivo": "reu/5947.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5947",
    "arquivo": "pauta/5947.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5807",
    "arquivo": "reu/5807.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5807",
    "arquivo": "pauta/5807.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5767",
    "arquivo": "reu/5767.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5767",
    "arquivo": "pauta/5767.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5727",
    "arquivo": "reu/5727.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5727",
    "arquivo": "pauta/5727.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5687",
    "arquivo": "reu/5687.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5687",
    "arquivo": "pauta/5687.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5587",
    "arquivo": "reu/5587.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5587",
    "arquivo": "pauta/5587.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5547",
    "arquivo": "reu/5547.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5547",
    "arquivo": "pauta/5547.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5507",
    "arquivo": "reu/5507.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5507",
    "arquivo": "pauta/5507.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5447",
    "arquivo": "reu/5447.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5447",
    "arquivo": "pauta/5447.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5347",
    "arquivo": "reu/5347.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5347",
    "arquivo": "pauta/5347.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5247",
    "arquivo": "reu/5247.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5247",
    "arquivo": "pauta/5247.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5287",
    "arquivo": "reu/5287.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5287",
    "arquivo": "pauta/5287.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5187",
    "arquivo": "reu/5187.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5187",
    "arquivo": "pauta/5187.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5147",
    "arquivo": "reu/5147.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5147",
    "arquivo": "pauta/5147.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5107",
    "arquivo": "reu/5107.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5107",
    "arquivo": "pauta/5107.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5067",
    "arquivo": "reu/5067.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5067",
    "arquivo": "pauta/5067.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5047",
    "arquivo": "reu/5047.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5047",
    "arquivo": "pauta/5047.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5007",
    "arquivo": "reu/5007.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5007",
    "arquivo": "pauta/5007.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4987",
    "arquivo": "reu/4987.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4987",
    "arquivo": "pauta/4987.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4947",
    "arquivo": "reu/4947.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4947",
    "arquivo": "pauta/4947.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4927",
    "arquivo": "reu/4927.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4927",
    "arquivo": "pauta/4927.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4710",
    "arquivo": "reu/4710.html",
-   "status": "cache"
+   "status": "ok"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4710",
    "arquivo": "pauta/4710.html",
-   "status": "cache"
+   "status": "ok"
   }
  ],
  "reunioes_2026": [
@@ -484,8 +484,8 @@
    "arquivo": "reu/4856.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
    "arquivo_pauta": "pauta/4856.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD6",
@@ -502,8 +502,8 @@
    "arquivo": "reu/4836.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
    "arquivo_pauta": "pauta/4836.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD5",
@@ -520,8 +520,8 @@
    "arquivo": "reu/4835.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
    "arquivo_pauta": "pauta/4835.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD4",
@@ -538,8 +538,8 @@
    "arquivo": "reu/4852.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4852",
    "arquivo_pauta": "pauta/4852.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD3",
@@ -556,8 +556,8 @@
    "arquivo": "reu/4830.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4830",
    "arquivo_pauta": "pauta/4830.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD2",
@@ -574,8 +574,8 @@
    "arquivo": "reu/4847.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4847",
    "arquivo_pauta": "pauta/4847.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RD1",
@@ -592,8 +592,8 @@
    "arquivo": "reu/4828.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4828",
    "arquivo_pauta": "pauta/4828.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE32",
@@ -611,8 +611,8 @@
    "arquivo": "reu/6367.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
    "arquivo_pauta": "pauta/6367.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE31",
@@ -630,8 +630,8 @@
    "arquivo": "reu/6327.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
    "arquivo_pauta": "pauta/6327.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE30",
@@ -649,8 +649,8 @@
    "arquivo": "reu/6307.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
    "arquivo_pauta": "pauta/6307.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE29",
@@ -668,8 +668,8 @@
    "arquivo": "reu/6247.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6247",
    "arquivo_pauta": "pauta/6247.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE28",
@@ -687,8 +687,8 @@
    "arquivo": "reu/6187.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6187",
    "arquivo_pauta": "pauta/6187.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE27",
@@ -706,8 +706,8 @@
    "arquivo": "reu/6167.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6167",
    "arquivo_pauta": "pauta/6167.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "REX2",
@@ -724,8 +724,8 @@
    "arquivo": "reu/6207.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
    "arquivo_pauta": "pauta/6207.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE26",
@@ -743,8 +743,8 @@
    "arquivo": "reu/6128.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6128",
    "arquivo_pauta": "pauta/6128.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE25",
@@ -762,8 +762,8 @@
    "arquivo": "reu/6087.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6087",
    "arquivo_pauta": "pauta/6087.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE24",
@@ -781,8 +781,8 @@
    "arquivo": "reu/6047.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6047",
    "arquivo_pauta": "pauta/6047.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE23",
@@ -800,8 +800,8 @@
    "arquivo": "reu/6007.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6007",
    "arquivo_pauta": "pauta/6007.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE22",
@@ -819,8 +819,8 @@
    "arquivo": "reu/5967.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5967",
    "arquivo_pauta": "pauta/5967.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE21",
@@ -838,8 +838,8 @@
    "arquivo": "reu/5947.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5947",
    "arquivo_pauta": "pauta/5947.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE20",
@@ -857,8 +857,8 @@
    "arquivo": "reu/5807.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5807",
    "arquivo_pauta": "pauta/5807.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE19",
@@ -876,8 +876,8 @@
    "arquivo": "reu/5767.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5767",
    "arquivo_pauta": "pauta/5767.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE18",
@@ -895,8 +895,8 @@
    "arquivo": "reu/5727.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5727",
    "arquivo_pauta": "pauta/5727.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE17",
@@ -914,8 +914,8 @@
    "arquivo": "reu/5687.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5687",
    "arquivo_pauta": "pauta/5687.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE16",
@@ -933,8 +933,8 @@
    "arquivo": "reu/5587.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5587",
    "arquivo_pauta": "pauta/5587.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE15",
@@ -952,8 +952,8 @@
    "arquivo": "reu/5547.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5547",
    "arquivo_pauta": "pauta/5547.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE14",
@@ -971,8 +971,8 @@
    "arquivo": "reu/5507.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5507",
    "arquivo_pauta": "pauta/5507.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE13",
@@ -990,8 +990,8 @@
    "arquivo": "reu/5447.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5447",
    "arquivo_pauta": "pauta/5447.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE12",
@@ -1009,8 +1009,8 @@
    "arquivo": "reu/5347.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5347",
    "arquivo_pauta": "pauta/5347.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE11",
@@ -1028,8 +1028,8 @@
    "arquivo": "reu/5247.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5247",
    "arquivo_pauta": "pauta/5247.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "REX1",
@@ -1046,8 +1046,8 @@
    "arquivo": "reu/5287.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5287",
    "arquivo_pauta": "pauta/5287.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE10",
@@ -1065,8 +1065,8 @@
    "arquivo": "reu/5187.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5187",
    "arquivo_pauta": "pauta/5187.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE9",
@@ -1084,8 +1084,8 @@
    "arquivo": "reu/5147.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5147",
    "arquivo_pauta": "pauta/5147.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE8",
@@ -1103,8 +1103,8 @@
    "arquivo": "reu/5107.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5107",
    "arquivo_pauta": "pauta/5107.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE7",
@@ -1122,8 +1122,8 @@
    "arquivo": "reu/5067.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5067",
    "arquivo_pauta": "pauta/5067.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE6",
@@ -1141,8 +1141,8 @@
    "arquivo": "reu/5047.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5047",
    "arquivo_pauta": "pauta/5047.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE5",
@@ -1160,8 +1160,8 @@
    "arquivo": "reu/5007.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5007",
    "arquivo_pauta": "pauta/5007.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE4",
@@ -1179,8 +1179,8 @@
    "arquivo": "reu/4987.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4987",
    "arquivo_pauta": "pauta/4987.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE3",
@@ -1198,8 +1198,8 @@
    "arquivo": "reu/4947.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4947",
    "arquivo_pauta": "pauta/4947.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE2",
@@ -1217,8 +1217,8 @@
    "arquivo": "reu/4927.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4927",
    "arquivo_pauta": "pauta/4927.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   },
   {
    "reuniao": "RE1",
@@ -1236,8 +1236,8 @@
    "arquivo": "reu/4710.html",
    "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4710",
    "arquivo_pauta": "pauta/4710.html",
-   "status": "cache",
-   "status_pauta": "cache"
+   "status": "ok",
+   "status_pauta": "ok"
   }
  ],
  "contadores": {

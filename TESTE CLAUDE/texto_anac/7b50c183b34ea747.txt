@@ -1,0 +1,77 @@
+SEI/ANAC - 13324507 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00065.008321/2026-45
+
+INTERESSADO: VERONICA GORNIAK DE FREITAS, JINKOUT SERVIÇOS AERONÁUTICOS LTDA.
+
+RELATOR: Rui Chagas MesquitA
+
+descrição dos fatos
+
+Trata-se de processo instaurado com vistas à análise de pedido de isenção ao parágrafo 63.39(a)(1) do Regulamento Brasileiro da Aviação Civil – RBAC nº 63, para fins de concessão de habilitação de tipo GV (Gulfstream G550) à Sra. Veronica Gorniak de Freitas, CANAC nº 313245.
+
+O processo teve início em 20 de janeiro de 2026, por meio de Requerimento [1] protocolado nesta Agência (SEI nº 12628692 ), no qual a interessada solicitou a inclusão da referida habilitação, apresentando, para tanto, documentação comprobatória de treinamento realizado no exterior, incluindo registros de treinamento e certificados emitidos pela instituição Aircare International.
+
+A instrução inicial dos autos evidenciou que o treinamento apresentado não havia sido realizado em organização certificada pela ANAC, bem como não constava o comprovante de recolhimento da Taxa de Fiscalização da Aviação Civil – TFAC aplicável, razão pela qual o pleito foi inicialmente indeferido pela área técnica em 23 de fevereiro de 2026, com base no RBAC nº 63.39(a)(1)(i).
+
+Na oportunidade, a interessada foi formalmente cientificada acerca das não conformidades identificadas, sendo-lhe oportunizada a apresentação de documentação complementar para saneamento do processo, conforme Ofício nº 5/2026/CLHA/GTQC/SPL-ANAC [2] (SEI nº 12896921 )
+
+Paralelamente, verificou-se a existência de questão regulatória mais ampla relacionada à certificação da aeronave Gulfstream GV-SP (G550), cuja base de certificação incorpora requisito de segurança equivalente (Equivalent Level of Safety – ELOS), conforme o Momorando AT5177AT-T [3] (SEI nº 12952017 ), estabelecido pela autoridade aeronáutica americana (FAA), exigindo a presença de tripulante adicional treinado em evacuação para operações com número superior a 9 passageiros, requisito que foi incorporado à base de certificação brasileira, conforme apresentado no Type Certificate Data Sheet nº EA-2005T04-21 [4] (SEI nº 12952021 ) de 12 de Fevereiro de 2020.
+
+Embora em termos gerais o RBAC nº 91 não exija formalmente a presença de comissário de voo, o cenário específico do ELOS exige para as operações em questão tal presença e a realização de qualificação específica, o que gera lacuna regulatória no ordenamento nacional quanto aos critérios de aceitação de treinamento e concessão de habilitação para esse tipo de operação.
+
+Foi realizada reunião técnica em 24 de fevereiro de 2026, com a participação de representantes da ANAC e do representante da interessada, ocasião em que se discutiu a viabilidade de solução excepcional por meio de concessão de isenção normativa, conforme registrado em Registro de Reunião [5] (SEI nº 12952022 ).
+
+Na sequência, os autos foram submetidos à análise pelas áreas técnicas competentes, em especial pela Gerência Técnica de Normas – GTNO/SPL, com participação das Superintendências de Pessoal da Aviação Civil (SPL), de Aeronavegabilidade (SAR) e de Padrões Operacionais (SPO).
+
+A análise consolidou-se na Nota Técnica nº 18/2026/GTNO-SPL/SPL [6] (SEI nº 13154552 ), que examinou a compatibilidade entre o requisito ELOS aplicável ao modelo GV-SP, as disposições do RBAC nº 63 e a realidade operacional da aviação geral sob o RBAC nº 91.
+
+A área técnica destacou que:
+
+não há, no âmbito nacional, programa de treinamento aprovado pela ANAC específico para esse tipo de operação sob o RBAC nº 91;
+
+o treinamento realizado no exterior, embora não homologado pela ANAC, atende aos requisitos técnicos de evacuação previstos na certificação da aeronave; e
+
+a exigência de exame de proficiência e certificação plena, nos moldes do RBAC nº 63, mostra-se desproporcional para o caso concreto.
+
+Ressaltou-se, ainda, que a solução tradicional prevista na norma — treinamento aprovado e exame formal — enfrenta limitações práticas, como a escassez de examinadores e a inexistência de estrutura certificada para esse fim no país, o que reforça a necessidade de solução regulatória alternativa.
+
+Com base nessas considerações, a área técnica propôs a concessão de isenção individual ao RBAC nº 63.39(a)(1), de modo a permitir a averbação da habilitação de tipo GV à interessada, considerando válido o treinamento realizado no exterior, com vigência condicionada à periodicidade de 12 meses prevista no requisito ELOS.
+
+Adicionalmente, foi sugerida a possibilidade de extensão da medida a outros profissionais em situação equivalente, bem como o prosseguimento de estudos conjuntos entre as áreas técnicas da Agência para desenvolvimento de solução regulatória definitiva para o tema.
+
+Em consonância com a manifestação técnica, foi elaborada Proposta de Decisão [7] (SEI nº 13175742 ), prevendo o deferimento da isenção pleiteada, com fundamento no interesse público, na proporcionalidade da medida e na ausência de prejuízo à segurança operacional.
+
+Os autos foram, então, encaminhados à Diretoria Colegiada, tendo sido distribuídos a esta relatoria nos termos da Certidão de Distribuição [8] SEI nº 13181298 .
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Requerimento Padrão 12628692
+
+[2] Ofício nº 5/2026/CLHA/GTQC/SPL-ANAC (SEI nº 12896921 )
+
+[3] Momorando AT5177AT-T (SEI nº 12952017 )
+
+[4] Type Certificate Data Sheet nº EA-2005T04-21 (SEI nº 12952021 )
+
+[5] Registro de Reunião (SEI nº 12952022 )
+
+[6] Nota Técnica nº 18/2026/GTNO-SPL/SPL (SEI nº 13154552 )
+
+[7] Proposta de Decisão (SEI nº 13175742 )
+
+[8] Certidão de Distribuição (SEI nº 13181298 )
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 27/05/2026, às 11:48, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13324507 e o código CRC D8B79330 .
+
+SEI nº 13324507

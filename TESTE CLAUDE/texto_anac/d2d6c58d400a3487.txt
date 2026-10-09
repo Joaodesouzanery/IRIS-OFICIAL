@@ -1,0 +1,700 @@
+SEI/ANAC - 13057081 - Edital
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+SCS, Quadra 09, Lote C, Torre A - 7º Andar, Edifício Parque Cidade Corporate - Bairro Setor Comercial Sul, Brasília/DF, CEP 70308-200
+
+Telefone: +55 (61) 3314-4154 - www.anac.gov.br
+
+Edital nº 7/ANAC/2026
+
+Processo nº 00058.014619/2026-83
+
+EDITAL DE CHAMAMENTO PÚBLICO Nº 7/ANAC/2026
+
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL - ANAC , no exercício das competências que lhe foram conferidas pelo art. 11, inciso V, da Lei nº 11.182, de 27 de setembro de 2005, tendo em vista o disposto no art. 8º, caput e inciso XLVI, da mencionada Lei, e considerando o que consta do processo nº 00058.014619/2026-83, d eliberado e aprovado na 10ª Reunião Deliberativa Eletrônica, realizada nos dias 24 a 27 de março de 2026, torna público o presente Edital de Chamamento Público relativo ao programa SustentAr, 4ª Edição, estabelecendo a metodologia de avaliação e convidando os operadores aéreos para participarem do programa.
+
+DAS DISPOSIÇÕES GERAIS
+
+1.1. O programa SustentAr é um instrumento de incentivo não-regulatório que visa à disseminação de boas práticas de gestão ambiental em operadores aéreos e ao reconhecimento de iniciativas proativas ligadas à sustentabilidade das operações aéreas.
+
+1.2. Os objetivos principais do programa são:
+
+a) acompanhar o desenvolvimento das medidas ambientais adotadas pelos operadores aéreos;
+
+b) disseminar as melhores práticas para a redução dos impactos da aviação civil no meio ambiente;
+
+c) incentivar os operadores a buscarem, de forma voluntária, o desenvolvimento de planos de ação para atuar nos diversos temas ambientais; e
+
+d) dar visibilidade à sociedade das medidas adotadas pelos operadores aéreos para a melhoria da gestão ambiental da aviação.
+
+DA ELEGIBILIDADE E DAS INSCRIÇÕES
+
+2.1. Poderão participar todos os operadores aéreos que operam sob os Regulamentos Brasileiros da Aviação Civil - RBACs nºs 121 ou 135.
+
+2.2. A adesão ao programa será voluntária e a forma de submissão de dados será declaratória, cabendo ao operador aéreo a decisão sobre sua participação.
+
+2.3. Para participar, os operadores aéreos deverão enviar e-mail para o endereço eletrônico meioambiente@anac.gov.br manifestando sua intenção em participar da 4ª Edição do programa entre a data de publicação deste Edital e o dia 24 de abril de 2026.
+
+2.4. Aos interessados será fornecido acesso ao formulário eletrônico do Programa.
+
+2.4.1. O preenchimento do formulário deverá ser realizado até o dia 15 de maio de 2026.
+
+2.4.2. As informações requisitadas por meio do formulário eletrônico estão dispostas no Anexo I.
+
+2.5. Será considerado apenas um formulário por operador.
+
+2.5.1. Somente serão considerados os formulários submetidos dentro do prazo.
+
+2.5.2. No caso de submissão de mais de um formulário por um mesmo operador, será considerado aquele enviado mais tardiamente dentro do prazo.
+
+Do desempenho ambiental dos operadores no programa sustentar
+
+3.1. A 4ª Edição do programa SustentAr avaliará os operadores por meio de indicadores, sendo 5 (cinco) indicadores no total.
+
+3.1.1. A menos que especificado de outra maneira, as informações do operador para cálculo dos indicadores são referentes ao ano de 2025.
+
+3.2. Indicador Estágio de Ruído da Frota - Avaliará a composição da frota do operador com relação ao estágio mais restritivo dentre os dispostos no RBAC nº 36 com que cada aeronave da frota cumpre.
+
+3.2.1. O cálculo do indicador será aferido pela seguinte fórmula:
+
+Onde:
+
+I N = Indicador Est á gio de ru í do da Frota
+
+E 3= n ú mero de aeronaves que atendem ao est á gio 3 como o mais restritivo
+
+E 4= n ú mero de aeronaves que atendem ao est á gio 4 como o mais restritivo
+
+E 5= n ú mero de aeronaves que atendem ao est á gio 5 como o mais restritivo
+
+T = n ú mero total de aeronaves que comp õ e a frota do operador
+
+a = 1 4
+
+b = 2 3
+
+c =1
+
+3.2.2. Será utilizada a composição da frota no mês de dezembro de 2025.
+
+3.2.3. Para determinação do estágio de ruído de cada aeronave, será utilizado levantamento interno da ANAC que correlaciona os estágios de ruído com a configuração de cada aeronave na composição da frota brasileira.
+
+3.2.4. Caso o operador possua a informação de certificação de ruído da aeronave, esta poderá ser adicionada ao formulário eletrônico e será utilizada em substituição ao levantamento da ANAC.
+
+3.3. Indicador Uso de Combustíveis Sustentáveis de Aviação - Avaliará a aquisição de Combustíveis Sustentáveis de Aviação - SAF
+
+3.3.1. O cálculo do indicador será aferido pela seguinte fórmula:
+
+Onde:
+
+S D = SAF em kg adquirido no Brasil
+
+S I = SAF em kg adquirido no exterior
+
+C D = Total em kg de combust í vel de avia çã o adquirido no Brasil
+
+C I = Total em kg de combust í vel de avia çã o adquirido no exterior
+
+3.3.2. Serão válidos os SAFs adquiridos no período 2024-2025, mesmo que não utilizados neste período.
+
+3.3.3. Os SAFs deverão obrigatoriamente atender às definições mais atuais, no momento da avaliação das respostas, do Esquema de Compensação e Redução de Carbono para a Aviação Internacional - CORSIA da Organização da Aviação Civil Internacional - OACI, ou o programa que vier a substituí-lo; ou as determinações mais recentes da Política Nacional de Biocombustíveis - RenovaBio ou de regulamento correlato, dentro das premissas adotadas pela Agência Nacional do Petróleo, Gás Natural e Biocombustíveis - ANP, mesmo que tenha sido adquirido em momento anterior à publicação desses requisitos.
+
+3.4. Indicador Eficiência de Combustível - Avaliará a eficiência de combustível do operador em relação a projeção da curva de eficiência de combustível do setor aéreo brasileiro elaborada para o Plano de Ação para Redução das Emissões da Aviação Civil .
+
+3.4.1. O cálculo do indicador será aferido pela seguinte fórmula:
+
+Onde:
+
+e i = Efici ê ncia de combust í vel em kg de combust í vel / RTK
+
+Os subscritos O, 2024 e 2050 referem-se, respectivamente, ao desempenho do operador em 2025 e projeções do Plano de Ação para a aviação brasileira nos anos de 2024 e 2050.
+
+3.4.2. Os valores médios (considerando-se ao mesmo tempo voos domésticos e internacionais) de eficiência de combustível projetados para o Plano de Ação para os anos de 2024 e 2050 serão 0,284 e 0,257, respectivamente.
+
+3.5. Indicador Consumo de Energia Elétrica Renovável - Avaliará a participação da energia elétrica proveniente de fontes renováveis no total consumido pela empresa.
+
+3.5.1. O cálculo do indicador será aferido pela seguinte fórmula:
+
+Onde:
+
+E R = Energia el é trica de fonte renov á vel
+
+E t = Energia el é trica total
+
+3.5.2. Para o cálculo deste indicador, considerar-se-á toda energia elétrica consumida pelo operador aéreo, seja em suas bases operacionais, hangares, escritórios ou centros de manutenção.
+
+3.6. Indicador Fornecedores Submetidos a Avaliação de Impacto Socioambiental - Avaliará o percentual de fornecedores e empresas terceirizadas submetidas ao cumprimento de critérios sociais e ambientais para sua contratação.
+
+3.6.1. O cálculo do indicador será aferido pela seguinte fórmula:
+
+Onde:
+
+F A = N ú mero de empresas avaliadas
+
+F t = Total de empresas contratadas
+
+3.6.2. Os critérios a serem cumpridos pelas empresas contratadas serão de livre formulação e escolha pelo operador aéreo, desde que impliquem em melhoria direta do desempenho socioambiental dos fornecedores e empresas terceirizadas.
+
+3.7. A cada indicador será atribuído um peso de acordo com a avaliação de sua importância relativa conforme a metodologia AHP, detalhada no Anexo III.
+
+3.7.1. O peso de cada indicador será calculado por meio da média simples dos pesos atribuídos por cada avaliador.
+
+3.7.2. Comporão o grupo de avaliadores os membros da Gerência Técnica de Meio Ambiente e Transição Energética da ANAC e os operadores aéreos participantes da última edição do SustentAr.
+
+3.7.3. Cada operador aéreo participante da última edição do Programa terá direito a submeter apenas uma avalição de importância relativa dos indicadores, a qual só será válida se foi submetida dentro do prazo de 6 de janeiro de 2026.
+
+3.7.4. Apenas serão consideradas para cálculo do peso médio dos indicadores as avaliações classificadas consistentes de acordo com a metodologia AHP.
+
+3.8. A pontuação de cada participante da 4ª Edição do programa SustentAr será a soma das pontuações obtidas em cada indicador multiplicadas por seu respectivo peso de acordo com a fórmula a seguir:
+
+Onde:
+
+p i = peso de acordo com metodologia AHP
+
+Da avaliação dos dados dos operadores
+
+4.1. Os dados submetidos serão verificados quanto à sua consistência com os requisitos da 4ª Edição do programa SustentAr, não sendo o objetivo desta avaliação a verificação da veracidade dos dados, visto que o programa se baseia no processo declaratório e no princípio de confiança entre os entes públicos e privados. Em caso de dúvidas sobre a consistência dos dados submetidos, caberá ao participante saná-las.
+
+4.2. Não será objetivo do programa expor informações consideradas sensíveis do ponto de vista concorrencial. Sempre que julgarem necessário, os participantes poderão generalizar as informações de forma a não evidenciar dados sigilosos, desde que não se trate dos valores indispensáveis para o cálculo dos indicadores.
+
+Da iniciativa socioambiental de destaque
+
+5.1. Os participantes do programa também poderão concorrer na categoria “Iniciativa Socioambiental de Destaque”.
+
+5.1.1. A participação nesta categoria estará condicionada ao preenchimento dos dados necessários para o cálculo dos indicadores. Desta maneira, apenas os participantes que enviarem as informações sobre os indicadores requisitadas no formulário terão suas iniciativas avaliadas.
+
+5.2. Para participar, o operador deverá descrever, em espaço reservado para tal no formulário eletrônico, alguma iniciativa de cunho social ou ambiental com sua participação que esteja em andamento ou tenha sido concluída.
+
+5.2.1. Por iniciativa socioambiental entende-se programa, projeto, ação ou atividade com impactos positivos para o meio ambiente ou para a sociedade.
+
+5.2.2. A iniciativa poderá ter sido desenvolvida por uma terceira parte, ou ser executada de maneira compartilhada com outros entes, mas o operador aéreo deve ter papel ativo na sua realização.
+
+5.3. Cada operador terá direito a submeter apenas uma inciativa.
+
+5.4. As inciativas serão avaliadas e selecionadas por um grupo de servidores de diferentes áreas da ANAC com experiência de atuação em assuntos de sustentabilidade e operadores aéreos. Os operadores cujas iniciativas tenham sido selecionadas, terão a oportunidade de apresentá-las durante a cerimônia de premiação do programa SustentAr.
+
+5.5. Dentre as iniciativas selecionadas, o grupo de servidores escolherá uma ou mais para ser reconhecida como iniciativa de destaque da 4ª Edição do programa SustentAr.
+
+Da classificação dos operadores aéreos
+
+6.1. Os operadores participantes serão separados em 2 (dois) grupos:
+
+a) Empresa aérea - Operadores aéreos que possuam especificação operativa de acordo com o RBAC nº 121, ou empresas estrangeiras que realizem o serviço de transporte aéreo internacional no Brasil, excluídas aquelas que realizem somente operações de táxi aéreo; e
+
+b) Táxi aéreo - Operadores aéreos que possuam especificação operativa de acordo com o RBAC nº 135, mas não possuam especificação operativa de acordo com o RBAC nº 121, ou empresas estrangeiras que realizem exclusivamente operações de táxi aéreo em suas operações de transporte aéreo internacional no Brasil.
+
+6.1.1. Para atribuição dos operadores aos grupos, no caso dos operadores aéreos nacionais, será consultada a especificação operativa mais restritiva que esses possuírem no momento do término das inscrições, conforme constar no portal da ANAC ( https://www.gov.br/anac/pt-br/assuntos/regulados/empresas-aereas/especificacoes-operativas ). Com relação às empresas estrangeiras, será feita consulta à Superintendência de Acompanhamento de Serviços Aéreos sobre quais tipos serviços aéreos os participantes realizaram nos anos de 2024 e 2025.
+
+6.2. Os resultados do programa com desempenho dos participantes serão divulgados no portal da ANAC.
+
+6.3. Os operadores que obtiverem a melhor pontuação dentro de cada grupo serão reconhecidos por este fato durante a cerimônia de premiação do programa.
+
+6.3.1. O reconhecimento pelas melhores pontuações do programa SustentAr, 4ª Edição, serão válidos por 1 (um) ano a partir da data de divulgação dos resultados.
+
+6.3.2. Pelo prazo de um mês após a divulgação pública dos resultados do programa pela ANAC, será possível que os demais participantes ou membros da sociedade apresentem questionamentos sobre a autenticidade das informações prestadas pelos participantes.
+
+6.3.3. O questionamento deverá ser apresentado por meio do e-mail meioambiente@anac.gov.br com a devida justificativa para o descrédito em relação à informação.
+
+6.3.4. O questionamento será avaliado pela equipe da Gerência Técnica de Meio Ambiente e Transição Energética e, caso seja considerado pertinente, o operador aéreo responsável deverá apresentar evidências satisfatórias da informação prestada em até 15 (quinze) dias úteis após ser comunicado sobre o fato pela ANAC.
+
+6.3.5. Caso não apresente as evidências dentro do prazo, ou essas não sejam satisfatórias, o participante, quando se tratar de informações suspeitas relacionadas a indicadores, perderá os pontos dos indicadores em questão e, quando se tratar de informações suspeitas relacionadas a Iniciativa Destaque, terá sua iniciativa desclassificada.
+
+6.3.6. Caso a perda de pontos ou a desclassificação da iniciativa implique em alteração dos vencedores do Programa, o novo vencedor será informado deste fato e receberá da ANAC o reconhecimento devido. Já o vencedor anterior terá seu reconhecimento anulado e deverá devolver à Agência qualquer condecoração que tenha recebido desta pela sua classificação no Programa.
+
+Disposições finais e transitórias
+
+7.1. Todas as informações enviadas pelos participantes e aceitas pela ANAC serão divulgadas em forma de relatório consolidado para disseminação à sociedade no sítio eletrônico da ANAC.
+
+7.2. Os participantes do programa SustentAr, 4° Edição 2024-2025, concordam com a metodologia descrita neste documento, com os critérios nele estabelecidos e com a divulgação pública e irrestrita dos relatórios e resultados das avaliações.
+
+7.3. Caberá à ANAC a condução das avaliações descritas neste documento, a classificação dos participantes e a divulgação dos resultados.
+
+7.4. Os casos omissos serão apreciados e decididos pela Gerência Técnica de Meio Ambiente e Transição Energética.
+
+TIAGO CHAGAS FAIERSTEIN
+
+Diretor-Presidente
+
+Documento assinado eletronicamente por Tiago Chagas Faierstein , Diretor-Presidente , em 31/03/2026, às 11:07, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13057081 e o código CRC FBB5DCA5 .
+
+ANEXO I
+
+FORMULÁRIO DE INSCRIÇÃO
+
+DADOS DO PARTICIPANTE:
+
+Informe o nome do operador aéreo
+
+Por favor, coloque sua resposta aqui:
+
+Forneça o nome pelo qual o operador prefere ser identificado na divulgação dos resultados
+
+O operador aéreo possui um designador OACI?
+
+Favor escolher apenas uma das opções a seguir:
+
+Sim
+
+Não
+
+Caso o operador possua um designador OACI, informe-o:
+
+O designador OACI para operadores aéreos é formado por três letras maiúsculas
+
+Por favor, coloque sua resposta aqui:
+
+Logomarca do operador:
+
+Por favor, envie apenas um arquivo.
+
+Caso prefira, o operador aéreo pode enviar a sua identidade visual para ser utilizada na ocasião de divulgação dos resultados.
+
+Informe os dados do responsável legal pelo operador aéreo:
+
+Adicione um endereço de e-mail válido - Informe o número de telefone com DDD (apenas dígitos)
+
+Inserir dados do representante legalmente responsável pelo operador aéreo para envio de correspondência oficial.
+
+Informe os dados do ponto focal do operador aéreo:
+
+Adicione um endereço de e-mail válido - Informe o número de telefone com DDD (apenas dígitos)
+
+Inserir dados do responsável pelo fornecimento das informações relativas a este formulário.
+
+ESTÁGIO DE RUÍDO DA FROTA
+
+Informe a quantidade de cada modelo de aeronave que integrava a frota do operador ao final do mês de dezembro de 2025:
+
+Designador de Tipo OACI -
+
+Modelo de aeronave
+
+Quantidade
+
+Aeronave 1:
+
+Aeronave 2:
+
+Aeronave 3:
+
+Aeronave 4:
+
+Aeronave 5:
+
+Aeronave 6:
+
+Aeronave 7:
+
+Aeronave 8:
+
+Aeronave 9:
+
+Aeronave 10:
+
+Aeronave 11:
+
+Aeronave 12:
+
+Aeronave 13:
+
+Aeronave 14:
+
+Aeronave 15:
+
+Aeronave 16:
+
+Aeronave 17:
+
+Aeronave 18:
+
+Aeronave 19:
+
+Aeronave 20:
+
+Designador de tipo OACI: https://www.icao.int/publications/doc-8643-aircraft-type-designators/search
+
+O operador possui dados sobre qual o estágio de ruído mais restritivo com que alguma das aeronaves listadas acima cumpre e deseja incluir essa informação para uso no cálculo do indicador?
+
+Favor escolher apenas uma das opções a seguir:
+
+Sim
+
+Não
+
+Para aeronaves cujo cumprimento com estágio de ruído não seja informado pelo operador, será utilizado levantamento interno da ANAC que correlaciona os estágios de ruído com a configuração mais comum de cada tipo de aeronave na composição da frota brasileira.
+
+Caso o operador queira informar o estágio de certificação de suas aeronaves (frota de dezembro de 2025) liste as abaixo.
+
+Modelos de aeronave e sua quantidade
+
+Estágio 3:
+
+Estágio 4:
+
+Estágio 5:
+
+Informe os modelos sobre os quais o operador possui a informação do estágio de certificação juntamente com a quantidade de cada um preferencialmente no formato: Modelo (quantidade); Modelo (quantidade); ...
+
+Envie documento demonstrando o atendimento aos estágios de certificação das aeronaves listadas acima.
+
+Por favor, envie apenas um arquivo.
+
+USO DE COMBUSTÍVEIS SUSTENTÁVEIS DE AVIAÇÃO
+
+Informe a quantidade em quilogramas de combustível de aviação adquirido pelo operador aéreo no período 2024-2025.
+
+Apenas números podem ser preenchidos nestes campos.
+
+Por favor, coloque sua(s) resposta(s) aqui:
+
+Total de SAF adquirido no Brasil
+
+Total de SAF adquirido no exterior
+
+Total de combustível de aviação adquirido no Brasil
+
+Total de combustível de aviação adquirido no exterior
+
+Liste os fornecedores dos quais o operador adquiriu SAF no período em questão.
+
+Por favor, coloque sua resposta aqui:
+
+EFICIÊNCIA DE COMBUSTÍVEL
+
+Informe os seguintes dados:
+
+Total de combustível em kg consumido em 2025
+
+RTK em toneladas quilômetros referentes ao ano de 2025
+
+RTK é a soma do produto entre a distância das etapas e os objetos pagos transportados expressos em quilogramas (carga, correio, passageiro e bagagem) dividido por 1.000. Cada passageiro possui o peso estimado de 75 kg para empresas brasileiras.
+
+Para o ano de 2025, informe os seguintes dados:
+
+CONSUMO DE ENERGIA ELÉTRICA RENOVÁVEL
+
+Informe os seguintes dados:
+
+Total de energia elétrica consumida pelo operador no ano de 2025 em kWh
+
+·Total de energia elétrica de fonte renovável consumida pelo operador no ano de 2025 em kWh
+
+Considera-se toda energia elétrica consumida pelo operador aéreo, seja em suas bases operacionais, hangares, escritórios ou centros de manutenção.
+
+Liste os locais em que ocorreu o consumo de energia elétrica pelo operador (exceto aeroportos).
+
+Por favor, coloque sua resposta aqui:
+
+FORNECEDORES SUBMETIDOS A AVALIAÇÃO DE IMPACTO SOCIOAMBIENTAL
+
+Informe os seguintes dados:
+
+Número total de empresas contratas pelo operador e 2025
+
+Número de empresas submetidas a algum critério socioambiental para contratação em 2025
+
+Considera-se todas as empresas contratadas pelo operador para fornecimento de serviços ou insumos.
+
+Exemplifique empresas e critérios socioambientais exigidos pelo operador
+
+Critérios socioambientais a serem seguidos
+
+Empresa 1:
+
+Empresa 2:
+
+Empresa 3:
+
+SUBMISSÃO DO FORMULÁRIO
+
+Termo de aceite
+
+O operador aéreo declara que as informações prestadas por ele neste formulário eletrônico são verdadeiras e que está ciente de que sua falsidade configura crime previsto no Código Penal Brasileiro, concorda com a sua publicação irrestrita conforme o que é disposto no Edital, e aceita a metodologia de avaliação e de classificação estabelecida pelo referido edital.
+
+Favor escolher apenas uma das opções a seguir:
+
+Sim
+
+Não
+
+ANEXO II
+
+PESOS DOS INDICADORES
+
+Indicador
+
+Peso
+
+Estágio de ruído da frota
+
+12,32%
+
+Uso de combustíveis sustentáveis de aviação
+
+42,16%
+
+Eficiência de combustível
+
+32,45%
+
+Consumo de energia elétrica renovável
+
+7,19%
+
+Fornecedores submetidos a avaliação de impacto socioambiental
+
+5,88%
+
+ANEXO III
+
+METODOLOGIA AHP
+
+Métodos de decisão multicritério como o  Analytic Hierarchy Process - AHP (Método de Análise Hierárquica) foram desenvolvidos para ajudar na tomada de decisão a partir de uma série de fatores, sejam quantitativos ou qualitativos.
+
+O fundamento do AHP consiste na decomposição e síntese das relações entre os critérios até que se chegue a uma priorização dos seus indicadores, aproximando-se de uma melhor resposta de medição única de desempenho (Saaty, 1991) [1] . De maneira geral, AHP é a teoria e a metodologia para medição relativa. Na medição relativa, não se está interessado na exata medição de algumas quantidades, mas sim nas proporções entre elas. A ideia central é a redução do estudo de sistemas a uma sequência de comparações aos pares. Segundo Vieira (2006) [2] , o método está construído sobre três princípios:
+
+1. Construção de hierarquias: um problema complexo geralmente requer a estruturação dos critérios em uma hierarquia, por ser um procedimento natural do raciocínio humano. O método AHP permite a estruturação dos critérios, sendo a estruturação em árvore a mais utilizada, na qual o critério de mais alto nível é decomposto a níveis mais detalhados.
+
+2. Definição de prioridades: tais prioridades são definidas a partir de comparações par a par dos elementos, à luz de determinado critério.
+
+3. Consistência lógica: o método permite, por meio da proposição de índices, avaliar a consistência da definição de prioridades, ou seja, é capaz de verificar a consistência dos julgamentos.
+
+Cotidianamente, as pessoas têm maior facilidade para expressar preferência entre critérios utilizando julgamentos verbais do que valores numéricos. Dessa maneira, relações entre números e termos linguísticos foram propostas como forma de apoiar os tomadores de decisão no processo de definição das prioridades. A Tabela 1 exibe a associação entre julgamentos verbais e a escala de intensidade de importância utilizada.
+
+Tabela 1. Comparações do AHP. Adaptado de Saaty (1991).
+
+Valor da Intensidade de Importância
+
+Definição
+
+Explicação
+
+1
+
+Mesma importância.
+
+Os dois critérios contribuem igualmente para o objetivo.
+
+2
+
+Importância pequena de um critério sobre o outro.
+
+A experiência e o julgamento favorecem levemente um critério em relação ao outro.
+
+4
+
+Importância grande ou essencial.
+
+A experiência e o julgamento favorecem fortemente um critério em relação ao outro.
+
+6
+
+Importância muito grande ou demonstrada.
+
+Um critério é muito fortemente favorecido em relação ao outro; sua dominação de importância é demonstrada na prática.
+
+8
+
+Importância absoluta.
+
+A evidência favorece um critério em relação ao outro com o mais alto grau de certeza.
+
+Inversos dos valores anteriores
+
+Se o critério i recebe um determinado valor quando comparado com o critério j, então j tem o valor inverso quando comparado com i.
+
+Uma designação razoável.
+
+Números racionais
+
+Razões resultantes da escala.
+
+Se a consistência tiver de ser forçada para obter valores numéricos n, somente para completar a matriz.
+
+Uma vez definida a estrutura hierárquica, faz-se a comparação par a par dos critérios com objetivo de definir a importância relativa dos critérios. A Tabela 2 exemplifica a matriz de comparação paritária entre os critérios específicos de um critério global genérico.
+
+Tabela 2. Exemplo de matriz de comparações paritárias
+
+Critério Global Genérico
+
+Critério Específico “A”
+
+Critério Específico “B”
+
+Critério Específico “C”
+
+Critério Específico “D”
+
+Critério Específico “A”
+
+1,000
+
+4,000
+
+1,000
+
+0,500
+
+Critério Específico “B”
+
+0,250
+
+1,000
+
+0,500
+
+0,250
+
+Critério Específico “C”
+
+1,000
+
+2,000
+
+1,000
+
+1,000
+
+Critério Específico “D”
+
+2,000
+
+4,000
+
+1,000
+
+1,000
+
+Para a matriz exibida na Tabela 2, o critério específico “A” é 4 (quatro) vezes mais importante que o critério específico “B”, por exemplo. 
+
+Após o preenchimento da matriz de comparações paritárias obtém-se o vetor peso, o qual indica a importância relativa de cada critério em relação aos demais. As formas de obtenção desse vetor são variadas e aqui optou-se pelo método da média geométrica. Nesse método cada componente do vetor peso é calculado como a média geométrica dos elementos da respectiva linha divididos por um termo de normatização, conforme a equação 1.
+
+(Equação 1)
+
+Onde:
+
+w i : peso do critério i;
+
+a i : valor de importância do critério i em relação ao critério j.
+
+Aplicando-se a equação 1 à matriz apresentada na Tabela 2 obtém-se o vetor peso exibido na Tabela 3.
+
+Tabela 3. Vetor de pesos associado à Tabela 2.
+
+Critério Específico “A”
+
+0,265
+
+Critério Específico “B”
+
+0,094
+
+Critério Específico “C”
+
+0,265
+
+Critério Específico “D”
+
+0,375
+
+Consistência é, sem sombra de dúvidas, uma propriedade desejável. Contudo, um tomador de decisão raramente consegue fazer comparações de pares perfeitamente consistentes. Uma maneira de se avaliar o grau de consistência é por meio do cálculo do Resultado da Consistência — RC. Se o valor do RC for inferior a 0,1 o grau de consistência é satisfatório, mas se RC for superior a 0,1 podem existir problemas de inconsistência e o método AHP não deverá ser utilizado (SAATY, 1991). O cálculo de RC é definido pela equação 2:
+
+(Equação 2)
+
+Onde:
+
+n é a ordem da matriz; e
+
+λ máx é dado pela equação 3:
+
+(Equação 3)
+
+Onde:
+
+A é a matriz de comparação paritária; e
+
+w é o vetor peso.
+
+Já IR é definido como Índice Randômico Médio, que varia com o tamanho da matriz, mostrado na Tabela 4 para matrizes de ordem 1 a 15.
+
+Tabela 4. Índice Randômico Médio do AHP em função do tamanho da matriz. Fonte: Saaty (1991).
+
+Ordem matriz
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+Índice randômico
+
+0,0
+
+0,0
+
+0,58
+
+0,90
+
+1,12
+
+1,24
+
+1,32
+
+1,41
+
+1,45
+
+1,49
+
+1,51
+
+1,48
+
+1,56
+
+1,57
+
+1,59
+
+Para a matriz exemplificada na Tabela 2 obteve-se valor de RC igual a 0,045.
+
+Para avaliação dos critérios foram convidadas pessoas com experiência de atuação nas áreas de aviação e meio ambiente. Aos avaliadores foi requisitado o preenchimento de uma autoavaliação sobre o tema, a qual consistiu na atribuição de notas (1, 2 ou 3) para o seu conhecimento a respeito de cada um dos critérios globais. A soma da pontuação obtida por cada avaliador foi então dividida pela soma da pontuação de todos avaliadores, obtendo-se assim o peso de cada avaliador. Por fim, a consolidação da importância relativa de cada critério foi obtida após multiplicar os pesos resultantes das comparações paritárias realizadas por cada avaliador pelo peso do seu respectivo avaliador e somar os resultados obtidos.
+
+_________________________
+
+[1] Saaty, T. L. (1991), “Método de Análise Hierárquica”, Tradução de Wainer da Silveira e Silva, McGraw-Hill, Makron, São Paulo, SP.
+
+[2] Vieira, G.H. (2006), Análise e comparação dos métodos de decisão multicritério AHP Clássico e Multiplicativo, Trabalho de Conclusão de Curso (Graduação) - Instituto Tecnológico de Aeronáutica, São José dos Campos, SP.
+
+Referência: Processo nº 00058.014619/2026-83
+SEI nº 13057081

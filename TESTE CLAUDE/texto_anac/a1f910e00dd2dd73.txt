@@ -1,0 +1,149 @@
+SEI/ANAC - 12644082 - Voto
+
+Voto
+
+PROCESSO: 00058.067945/2025-11
+
+RELATOR: rUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+O art. 8° da Lei n° 11.182/2005 estabelece que cabe à ANAC adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da aviação civil, da infraestrutura aeronáutica e aeroportuária do país, competindo-lhe, entre outras atribuições:
+
+XXI – regular e fiscalizar a infra-estrutura aeronáutica e aeroportuária, (...);
+
+(...)
+
+XXIV – conceder ou autorizar a exploração da infra-estrutura aeroportuária, no todo ou em parte;
+
+XXV - estabelecer o regime tarifário da exploração da infraestrutura aeroportuária, no todo ou em parte, e disciplinar a remuneração do seu uso;
+
+Após o regular procedimento licitatório, em 28/03/2023 foi celebrado o Contrato de Concessão nº 002/ANAC/2023 entre a ANAC e a Concessionária Bloco de Onze Aeroportos do Brasil S.A. – BOAB, cujo objeto é a concessão dos serviços públicos para ampliação, manutenção e exploração dos aeroportos integrantes do Bloco SP/MS/PA/MG, no qual inclui o Aeroporto de Congonhas (SBSP).
+
+No âmbito da ANAC, o art. 41 do Regimento Interno, aprovado pela Resolução n° 381, de 14 de julho de 2016, estabelece que compete à Superintendência de Regulação Econômica de Aeroportos – SRA:
+
+IV - monitorar a prestação dos serviços de infraestrutura aeroportuária;
+
+(...)
+
+VII - gerir os contratos de concessão de infraestrutura aeroportuária;
+
+(...)
+
+X - fixar, revisar e reajustar os valores dos tetos das tarifas aeroportuárias e de preços específicos relativos à prestação de serviços de infraestrutura aeroportuária e dos que lhe são conexos;
+
+O caput do art. 9° do Regimento Interno da ANAC prevê que compete à Diretoria, em regime de colegiado, analisar, discutir e decidir em instância administrativa final as matérias de competência da Agência.
+
+Pelo exposto, restam atendidos os requisitos de competência quanto à apreciação do recurso apresentado pela Concessionária por esta Diretoria Colegiada.
+
+Do PEDIDO DE RETIRADA DE PAUTA
+
+Antes de se avançar na análise de mérito e fundamento desta decisão, importa reiterar que a Concessionária Bloco de Onze Aeroportos do Brasil S.A. solicitou a retirada do presente processo administrativo da pauta da 4ª Reunião Deliberativa Eletrônica da Diretoria Colegiada. Argumentou, para tanto, a necessidade "de informações e documentos complementares, essenciais à adequada instrução e análise do requerimento".
+
+Nada obstante, importa esclarecer que, conforme o Relatório, a Concessionária apresentou seu pleito inicialmente em 01/08/2025, em processo relacionado ao monitoramento da qualidade e acompanhamento do Fator Q do Aeroporto de Congonhas. O pedido foi indeferido pela SRA em 21/10/2025 e reiterado em 04/11/2025, quando o pedido de revisão já se fez acompanhar, para o caso de indeferimento, de solicitação de acolhimento na forma de recurso à Diretoria Colegiada da Agência. A área técnica novamente indeferiu o pleito da Concessionária em 03/12/2025 e publicou o reajuste da Receita Teto em 23/12/2026.
+
+Postos esses eventos, e considerando que prazo para interposição de recurso administrativo é de dez dias, contado a partir da ciência ou divulgação oficial da decisão recorrida, nos termos do caput do art. 59 da Lei n° 9.784/1999, deixo de acolher o pedido de retirada de pauta, por considerar que toda matéria de defesa da interessada deveria ter sido deduzida naquele interstício, sob pena de preclusão consumativa. Ademais, a referência singela da Concessionária à necessidade de apresentar outras informações e documentos complementares, sem especificá-los, traz dúvida quanto à produtividade e eficiência de se criar exceção à Instrução Normativa nº 166, de 1º de outubro de 2020, que, ao reger as deliberações da Diretoria Colegiada da ANAC, prevê a retirada de processos de pauta, em regra, tão somente a pedido do Relator ou do Presidente, mediante a devida justificativa, ou para pronunciamento verbal da parte interessada.
+
+De todo modo, reitero que a opção por manter o processo em tela na pauta da 4ª Reunião Deliberativa Eletrônica endossa o critério objetivo do procedimento em que se insere o recurso - cálculo do Fator Q -, e como decorrência da necessidade de aplicação estrita das normas de referência, incluindo o Contrato de Concessão subscrito pelas partes e o Decreto nº 7.624/2011, como passo a expor.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme descrito no Relatório [1] , trata-se da análise de recurso apresentado pela Concessionária Bloco de Onze Aeroportos do Brasil S.A. - BOAB, em que esta requer (i) a não incidência do Fator Q, aferido no período de agosto de 2024 a julho de 2025, no terceiro Reajuste da Receita Teto do Aeroporto de Congonhas e (ii) a não incidência do IQS de “atendimento em pontes de embarque” no Fator Q até a finalização da Fase I-B.
+
+Em breve síntese, a Concessionária fundamenta seu pleito defendendo que ela só pode ser penalizada com decréscimo do Fator Q caso haja falha na prestação do serviço, isto é, uma ação ou omissão da Concessionária que impacte negativamente os IQS. Ao mesmo tempo que nega que tenha havido falha na prestação do serviço, a Concessionária afirma que os resultados abaixo do padrão dos IQS são resultado de: (i) assimetria regulatória entre o contrato do Aeroporto de Congonhas e os contratos das demais concessões aeroportuárias; (ii) limitações da própria infraestrutura do aeroporto; e (iii) fatores endógenos e exógenos que impactam diretamente na percepção do usuário .
+
+De início, é importante destacar que o art. 10 da Lei n° 8.987/1995 (“Lei de Concessões”) prevê que sempre que forem atendidas as condições do contrato, considera-se mantido seu equilíbrio econômico-financeiro. Já a cláusula 6.2 [2] do Contrato de Concessão prevê que o equilíbrio econômico-financeiro do contrato será preservado por meio de mecanismos de Reajuste, Revisão dos Parâmetros da Concessão (RPC) e de Revisão Extraordinária .
+
+Dando concretude às referidas disposições, para os aeroportos com movimentação anual igual ou superior a 5 (cinco) milhões de passageiros, como é o caso do Aeroporto de Congonhas [3] , o Reajuste da Receita Teto considera a incidência do Fator de Qualidade de Serviço (Fator Q), que é aferido mediante a avaliação do desempenho de Indicadores de Qualidade de Serviços (IQS) estabelecidos no PEA, Anexo 2 do Contrato de Concessão.
+
+O item 6.1 [4] do Apêndice B do PEA é claro ao estabelecer que o Fator Q incidiria a partir do terceiro Reajuste. Considerando a eficácia do Contrato de Concessão ocorreu em 05 de junho de 2023 e que o Reajuste deve ocorrer todo mês de dezembro após essa data, conforme preconiza a cláusula 6.3 [5] do Contrato, não resta dúvida que o Fator Q deveria incidir no Reajuste de dezembro de 2025, como de fato ocorreu com a publicação pela SRA da Portaria n° 18.463, de 18 de dezembro de 2025.
+
+Portanto, a não incidência do Fator Q no terceiro Reajuste, como pleiteado pela Concessionária, alteraria o equilíbrio econômico-financeiro do Contrato, visto que isso levaria a um aumento indevido da Receita Teto e, por conseguinte, da remuneração tarifária da Concessionária.
+
+Cumpre registrar que a adoção desse modelo regulatório vai além de uma opção técnica da ANAC. O Decreto federal nº 7.624, de 22 de novembro de 2011, ao dispor sobre as condições de exploração pela iniciativa privada da infraestrutura aeroportuária, por meio de concessão, determinou de maneira expressa:
+
+Art. 7º Na exploração de aeródromo concedido, as tarifas aeroportuárias serão aplicadas conforme regime tarifário estabelecido pela ANAC.
+
+§ 1º O regime tarifário dos contratos de concessão deverá prever a transferência de ganhos de eficiência e produtividade aos usuários, e considerar aspectos de qualidade na prestação de serviço.
+
+Assim, como bem resumido pela área técnica, o Fator Q é um mecanismo de incentivo para a melhoria do serviço prestado aos usuários da infraestrutura aeroportuária, medido pelo desempenho de IQSs e que funciona a partir de impactos na Receita Teto. Em outras palavras, o Fator Q visa refletir nas tarifas pagas pelos usuários o nível de qualidade do serviço recebido, em observância ao princípio da modicidade tarifária .
+
+O Fator Q não é um instrumento punitivo, mesmo quando o seu resultado reflete em um decréscimo nas tarifas. De acordo com os itens 18 e 19 do Apêndice B do PEA, decréscimos estão associados a falhas de serviço, que são caracterizadas de forma clara e objetiva por desempenhos inferiores aos padrões estabelecidos para os IQS, independentemente de qualquer ação ou omissão da Concessionária . A Procuradoria Especializada junto a Anac reforça esse entendimento ao afirmar em seu Parecer [6] que:
+
+“14. Vê-se, com clareza, que a apuração do Fator Q [7] e suas consequências contratuais no reajuste não guardam correlação com apuração de culpabilidade ou conduta infracional. É dizer, não se perscruta a origem ou razão do nível de serviço, limita-se à apuração da qualidade do serviço em si”.
+
+Quanto à suposta assimetria regulatória, em que a Concessionária compara o padrão dos IQS do Aeroporto de Congonhas com o padrão dos IQS das demais rodadas de concessões aeroportuárias, seja na fase inicial do Contrato, durante a Fase I-B, seja após as Revisões dos Parâmetros da Concessão, que ocorrem a cada 5 anos de cada Contrato; cabe esclarecer que a definição do conjunto de IQS e os respectivos valores de referência (padrão, meta, decréscimo, bônus etc.) foram avaliados, a cada nova rodada de concessões e RPCs, considerando as lições aprendidas e os estudos realizados ao longo do tempo pela Agência e pelo setor, com participação de concessionárias, empresas aéreas, empresas de pesquisa e entidades representativas de concessionárias, empresas aéreas e da sociedade civil. Em outras palavras, cada nova modelagem reflete os ganhos de compreensão e experiência da ANAC na gestão das concessões aeroportuárias. No âmbito dessas discussões, a escolha dos IQSs e os valores de referência não levaram em consideração a situação inicial da infraestrutura dos aeroportos, em nenhuma das rodadas de concessão, e sim o desempenho de qualidade de serviço almejado para o setor, tomando como referência os valores observados historicamente nos aeroportos brasileiros. Além disso, os documentos jurídicos da concessão, incluindo o PEA, foram precedidos de ampla discussão com a sociedade, incluindo etapas de consulta pública e fase de esclarecimentos. Desconsiderar ou alterar o padrão dos IQSs estabelecido no PEA para o Aeroporto de Congonhas neste momento, fora de um contexto formal de alteração contratual, feriria os princípios de vinculação ao instrumento convocatório, transparência e participação pública. Desta forma, a avaliação da qualidade de serviço do Aeroporto de Congonhas deve observar estritamente as obrigações previstas no respectivo Contrato de Concessão.
+
+No que concerne às limitações de infraestrutura do Aeroporto de Congonhas, em que a Concessionária informa que o Terminal de Passageiros atual é tombado, o que aumentaria a complexidade e o prazo para realização das adequações, e apresenta escassez de áreas, o que impossibilitaria a readequação das áreas internas e instalação de novas pontes de embarque; cabe salientar que o Fator Q sempre esteve desvinculado de qualquer período de obras , seja da Fase I-B, seja da Fase II da Concessão, inclusive daqueles decorrentes de disparo de gatilhos de investimentos.
+
+Em uma análise específica do IQS de “atendimento em pontes de embarque”, o seu incentivo vai além da implantação de novas pontes, ele também tem por propósito induzir, ainda durante as obras da Fase I-B, a priorização e a eficiência no uso das pontes de embarque existentes, de forma a processar o maior número possível de passageiros.
+
+As pontes de embarque têm um papel relevante na operação dos aeroportos, incluindo funções que incorporam Nível de Serviço (Parâmetros de Dimensionamento) e Qualidade de Serviço . Além de agregarem capacidade operacional (Nível de Serviço) com a redução do tempo de processamento ( turnaround ) das aeronaves em comparação às operações de aeronaves que ocorrem em posições remotas, o Indicador de “atendimento em pontes de embarque” serve como mecanismo de gatilho para expansão do Terminal de Passageiros e implantação de novas posições de aeronaves. As pontes também agregam qualidade ao serviço prestado aos usuários, propiciando conforto térmico e acústico, facilitação e acessibilidade, proteção contra condições climáticas adversas (sol, chuva, vento) e maior segurança.
+
+Em um breve giro histórico, a exigência de processamento de passageiros em pontes de embarque nos contratos da 1ª e 2ª rodadas de concessão era originalmente um requisito apenas de Nível de Serviço. A partir da 3ª rodada de concessões e das RPCs, os contratos passaram a exigir esse requisito tanto como um critério de Nível de Serviço quanto de Qualidade de Serviço, passando o IQS de “atendimento em pontes de embarque” a sempre compor o Fator Q, inclusive em períodos de obras como da Fase I-B. Com o início das concessões de aeroportos em bloco, que incluíram aeroportos com movimentação anual inferior a 1 milhão de passageiros, da 5ª rodada em diante a exigência de processamento de passageiros em pontes de embarque passou a ser aplicável apenas para aeroportos com movimentação anual igual ou superior a 1 milhão de passageiros (aeroportos enquadrados nas Faixas 2 e 3 do PEA) e o Fator Q passou a ser aplicável apenas para os aeroportos com movimentação anual igual ou superior a 5 milhões de passageiros (aeroportos enquadrados na Faixa 3 do PEA). Na 7ª rodada, em que se inclui o Aeroporto de Congonhas, a exigência de processamento de passageiros em pontes de embarque deixou de ser um requisito de Nível de Serviço apenas para os aeroportos da Faixa 3 - que comporta justamente SBSP - sendo mantido para este Aeroporto apenas como Indicador de Qualidade de Serviço. Já para os aeroportos enquadrados na Faixa 2, como eles não possuem o instrumento do Fator Q, a exigência de processamento de passageiros em pontes de embarque permaneceu como critério de Nível de Serviço.
+
+Ocorre que, em qualquer das rodadas de concessão, os requisitos de atendimento ao Nível de Serviço nunca foram exigidos durante a Fase I-B, mas somente a partir da Fase II, enquanto que o monitoramento da Qualidade de Serviço e a incidência do Fator Q sempre foram aplicáveis independentemente de períodos de obras [8] , incluindo, portanto, a Fase I-B. Uma vez que as pontes de embarque agregam funções tanto de Nível de Serviço quanto de Qualidade de Serviço, a Agência decidiu, a despeito do IQS de “atendimento em pontes de embarque” compor o Fator Q, não considerar uma infração contratual a reincidência de baixo desempenho deste IQS durante a Fase I-B, conforme preconiza o item 9.4 [9] do Apêndice B do PEA, assim como não exigiu o processamento de passageiros em pontes de embarque durante a Fase I-B, como critério de Nível de Serviço, para os aeroportos da Faixa 2, nos termos dos itens 6 e 6.7.1 [10] do PEA.
+
+Ante o exposto, a aferição de IQS e a incidência do Fator Q durante a Fase I-B, incluindo o IQS de “atendimento em pontes de embarque”, é uma escolha regulatória já consolidada pela Agência e devidamente estabelecida em contrato , visando incentivar a qualidade de serviço em períodos em que as inadequações da infraestrutura ainda não foram totalmente sanadas, e diversos questionamentos e pedidos de esclarecimento a respeito disso já foram respondidos pela ANAC.
+
+Assim, entendo que não há espaço contratual, nesse momento, para o esforço interpretativo proposto pela Concessionária para que não haja a incidência do IQS de “atendimento em pontes de embarque” durante a Fase I-B. Sua exclusão não só feriria o disposto no PEA, como alteraria o equilíbrio econômico-financeiro do Contrato. Isso porque os IQS que compõem o Fator Q estão claramente definidos no Apêndice B do PEA e a revisão do Fator Q está estritamente condicionada à Revisão dos Parâmetros da Concessão (RPC), que deve ocorrer, de acordo com a cláusula 6.11 [11] do Contrato, a cada 5 anos de Concessão. Alterar a fórmula de cálculo do Fator Q significa alterar a equação de Reajuste , e seria equivalente a uma alteração do índice de correção inflacionária, do Fator X ou do valor da Receita Teto considerada no ano-calendário anterior. Consequentemente, eventual exclusão do IQS de “atendimento em pontes de embarque” ensejaria a Revisão Extraordinária do Contrato.
+
+É importante ressaltar também que a demanda de passageiros do Aeroporto de Congonhas atingiu no ano de 2025 o maior patamar dos últimos 25 anos (considerando toda base [12] histórica da ANAC), processando aproximadamente 24 milhões de passageiros. Tendo ciência das limitações da infraestrutura do Aeroporto e considerando que a Concessionária é responsável pela declaração de capacidade do terminal de passageiros, conforme prevê o art. 6° da Resolução n° 681/2022 (que trata da coordenação de slots), concluo que, a despeito da desnecessidade de qualquer análise de culpabilidade e apesar de todos os investimentos e melhorias em infraestrutura realizadas pela Concessionária, ela não pode se eximir da responsabilidade pelo desempenho dos IQSs de “disponibilidade de banheiros”, “limpeza de banheiros”, “limpeza geral do aeroporto”, “conforto das áreas de embarque” e de “atendimento em pontes de embarque” ter ficado abaixo do padrão estabelecido no PEA no período avaliativo do Fator Q. Se o Aeroporto já apresentava limitações de infraestrutura quando a Concessionária assumiu a operação do aeroporto, o aumento de demanda assumido pela Concessionária desafiou ainda mais a performance desses Indicadores de Qualidade de Serviço e deveria ter sido por ela gerenciado.
+
+Naturalmente as pontes de embarque, assim como as áreas da sala de embarque e os banheiros, têm uma capacidade operacional limitada. Desta maneira, o excesso de demanda de passageiros em relação a esse limite são processados nas salas de embarque remoto, saturando ainda mais esse componente, além da redução do percentual de passageiros processados em pontes de embarque. Vale frisar que o IQS de “atendimento em pontes de embarque” desconsidera parte dos passageiros processados no aeroporto de forma a estimular a eficiência operacional e possibilitar o cumprimento do padrão do IQS. Não são considerados no cálculo (i) os passageiros não processados no terminal de passageiros; (ii) os passageiros de voo de retorno ou alternado que não tenham sido processados nas pontes; (iii) os passageiros transportados em aeronaves cujas características físicas impedem a operação em pontes de embarque; e (iv) os passageiros processados em posições remotas cuja operação tenha ocorrido em até 30 minutos.
+
+Por fim, no que diz respeito aos fatores endógenos e exógenos que impactam diretamente a percepção do usuário, mas que não representam, na visão da Concessionária, falhas do serviço prestado por ela, como os transtornos causados pelas obras da Fase I-B e o perfil dos passageiros do aeroporto, que seriam supostamente mais exigentes que dos demais aeroportos, por priorizarem eficiência e agilidade; eu acolho os argumentos trazidos pela SRA de que tratam de fatores já conhecidos e intrínsecos à aferição dos IQS da Pesquisa de Satisfação de Passageiros – PSP. Não cabe aos passageiros se adequarem à qualidade de serviço que a Concessionária considera adequado, e sim a Concessionária deve atender o padrão de qualidade estabelecido em contrato levando em conta as características dos seus usuários . Compete à Concessionária identificar as necessidades de seus passageiros e planejar e implementar a melhor estratégia visando a sua satisfação.
+
+Quanto ao processo citado [13] pela Concessionária em seu pleito como precedente aplicável, em que a ANAC considerou o impacto das obras da Fase I-B sobre a avaliação dos passageiros na PSP, trata-se em verdade de um processo administrativo sancionador referente à reincidência de baixo desempenho de IQS em aeroporto de Faixa 2, em que a regulação não prevê a incidência do Fator Q para esses aeroportos. O processo avaliou a razoabilidade da aplicação de multa frente as melhorias de infraestrutura que a Concessionária já havia feito. Constata-se assim que a matéria tratada naquele processo é diferente do presente processo, que gira em torno da objetividade do Fator Q para fins de reajuste tarifário. São contextos significativamente diferentes, em que o espaço discricionário da Agência é também distinto.
+
+Nesse sentido, em outro processo que dizia respeito à incidência do Fator Q da concessão do Aeroporto de Recife [14] - aliás, sob operação do mesmo grupo econômico, AENA - diante de uma solicitação de desconsideração do Fator Q em período de obras da Fase I-B, a Diretoria se manifestou ratificando a obrigação estabelecida contratualmente, nos termos do Voto [15] do Diretor Tiago Pereira:
+
+“Não obstante, o fator Q é apurado independentemente da existência ou não de obras no aeroporto e isso, inclusive, fora objeto de esclarecimentos pela ANAC durante o processo licitatório ”.
+
+DO VOTO
+
+Ante o exposto e em observância ao disposto no Contrato de Concessão do Bloco - SP/MS/PA/MG, VOTO pelo CONHECIMENTO do Recurso Administrativo interposto pela Concessionária e, no mérito, por NEGAR-LHE PROVIMENTO , mantendo a incidência do Fator Q no terceiro Reajuste realizado em dezembro de 2025, bem como a incidência do IQS de “atendimento em pontes de embarque” no Fator Q durante a Fase I-B.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Relatório de Diretoria SEI! n° 12618993.
+
+[2] Cláusula 6.2 do Contrato: “O equilíbrio econômico-financeiro do contrato será preservado por meio de mecanismos de Reajuste, Revisão dos Parâmetros da Concessão, Proposta Apoiada e de Revisão Extraordinária ”.
+
+[3] Vide o Apêndice A do Anexo 2 do Contrato de Concessão nº 002/ANAC/2023 – SP/MS/PA/MG, que enquadra o SBSP como Faixa 3.
+
+[4] Item 6.1 do Apêndice B do PEA: “ O Fator Q somente incidirá a partir do terceiro reajuste, incluindo este ”.
+
+[5] Cláusula 6.3 do Contrato: “ O Reajuste ocorrerá todo mês de dezembro após a Data de Eficácia e incidirá sobre o Teto Tarifário da Tarifa de Capatazia da Carga Importada em Trânsito e Carga Exportada em Trânsito e sobre a Receita Teto previstos no Anexo 4 – Tarifas ”.
+
+[6] Parágrafo 14 do PARECER Nº 00063/2025/FIN/PFEANAC/PGF/AGU (SEI! 12512299).
+
+[7] A redação original apresenta erro material, ao referenciar “Fator X” ao invés de “Fator Q”.
+
+[8] Com exceção da 1ª rodada, por se tratar de um projeto greenfield .
+
+[9] Item 9.4 do Apêndice B do PEA: “ A reincidência de baixo desempenho na qualidade de serviço descrita no item 9 somente poderá ser constatada para o IQS “atendimento em ponte de embarque”, a partir de período posterior ao término da Fase I-B ”.
+
+[10] Itens 6 e 6.7.1 do PEA: “ 6. O atendimento ao nível de serviço dos terminais de passageiros dar-se-á pela disponibilização de capacidade de processamento de passageiros igual ou superior à demanda de passageiros na Hora Pico de cada um dos componentes operacionais que compõem o terminal de passageiros e, para os aeroportos enquadrados na Faixa 2, pelo processamento de passageiros em posições próximas (pontes de embarque) em percentual igual ou superior ao mínimo estabelecido neste PEA ”. (...) “ 6.7.1. A partir do início da Fase II de execução do Contrato de Concessão, para aeroportos enquadrados na Faixa 2, o percentual mínimo de passageiros processados em posições próximas (ponte de embarque) no período de um ano civil não deverá ser inferior a 70% (setenta por cento) da movimentação total de passageiros processados em terminais de passageiros ”.
+
+[11] Cláusula 6.11 do Contrato: “ As Revisões dos Parâmetros da Concessão serão realizadas a cada período de 5 (cinco) anos do período da Concessão ”.
+
+[12] Dados abertos da ANAC: https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/
+
+[13] 00058.085388/2023-40
+
+[14] 00058.005393/2020-34
+
+[15] Voto SEI! 6752230
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 27/01/2026, às 18:34, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12644082 e o código CRC CEA27355 .
+
+SEI nº 12644082

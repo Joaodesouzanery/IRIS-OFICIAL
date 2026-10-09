@@ -1,0 +1,75 @@
+SEI/ANAC - 13804391 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.023009/2022-47
+
+INTERESSADO: SUPERINTENDÊNCIA DE PESSOAL DA AVIAÇÃO CIVIL (SPL)
+
+RELATOR: Rui Chagas Mesquita
+
+descrição dos fatos
+
+Trata-se de processo administrativo instaurado para avaliação regulatória acerca da utilização de aeronaves detentoras de Certificado de Autorização de Voo Experimental (CAVE) por Centros de Instrução de Aviação Civil (CIAC) na formação de candidatos ao Certificado de Piloto Aerodesportivo (CPA), incluindo estudos destinados à revisão dos Regulamentos Brasileiros da Aviação Civil nº 61, 141 e 183.
+
+No âmbito do presente processo, a Superintendência de Pessoal da Aviação Civil (SPL) elaborou o Relatório de Análise de Impacto Regulatório nº 1/2025/GTNO-SPL/SPL [1] (SEI 13460196 ), no qual concluiu pela conveniência de revisar o RBAC nº 141 de forma a permitir, em caráter permanente, a utilização de aeronaves experimentais por CIAC na instrução prática para obtenção do CPA.
+
+Considerando a necessidade de conclusão do processo normativo de revisão do RBAC nº 141 a SPL encaminhou à Diretoria Colegiada proposta de prorrogação da isenção temporária prevista na Resolução nº 572, de 8 de julho de 2020, por meio da Nota Técnica nº 5/2025/GTNO-SPL/SPL (SEI 11139009 ) [2] e da respectiva proposta de ato normativo.
+
+Na 49ª Reunião Deliberativa Eletrônica, realizada nos dias 23 e 24 de dezembro de 2025, a Diretoria Colegiada aprovou, por unanimidade, a prorrogação da vigência da Resolução nº 572/2020, resultando na edição da Resolução nº 788 [3] (SEI 12538123 ), de 29 de dezembro de 2025. A referida Resolução manteve a autorização temporária para utilização de aeronaves experimentais com peso máximo de decolagem de até 750 kg na formação de candidatos ao CPA, até 30 de junho de 2026.
+
+Paralelamente à análise da proposta de prorrogação da isenção, a Diretoria Colegiada apreciou o Relatório de Análise de Impacto Regulatório nº 1/2025/GTNO-SPL/SPL (SEI 13460196 ). Na ocasião houve manifestação favorável à alternativa regulatória proposta pela área técnica visando uma solução definitiva do problema regulatório, destacando, contudo, a necessidade de aprofundamento dos estudos relativos às associações aerodesportivas credenciadas segundo o RBAC nº 183.
+
+Na referida manifestação feita através do Despacho [4] (SEI 12523527 ), consignou-se que a assimetria existente entre os requisitos aplicáveis aos regulados submetidos aos ambientes normativos dos RBAC nº 61, 141 e 183 não deveria ser solucionada exclusivamente pela flexibilização dos requisitos aplicáveis aos CIAC. Registrou-se, ainda, a necessidade de manutenção e conclusão das iniciativas regulatórias voltadas ao aperfeiçoamento do RBAC nº 183 e da Instrução Suplementar nº 183-004, visando assegurar equilíbrio regulatório e padrões adequados de formação e segurança operacional.
+
+Dessa forma, o presente processo passou a concentrar não apenas os atos relacionados à prorrogação da isenção concedida pela Resolução nº 572/2020, mas também os estudos destinados à definição da solução regulatória definitiva para a utilização de aeronaves experimentais na formação de pilotos aerodesportivos e à revisão dos requisitos aplicáveis às associações aerodesportivas credenciadas pela ANAC.
+
+Com o objetivo de subsidiar a continuidade dos estudos regulatórios determinados pela Diretoria Colegiada, foi elaborada a Nota Técnica nº 30/2026/GTNO-SPL/SPL [5] (SEI 13472036 ), destinada ao levantamento de dados relativos à atuação das associações aerodesportivas credenciadas e dos Centros de Instrução de Aviação Civil na realização de exames de proficiência e concessão de Certificados de Piloto Aerodesportivo.
+
+O levantamento constatou que as associações aerodesportivas desempenham papel predominante na formação e certificação de pilotos aerodesportivos, respondendo por aproximadamente 82% dos exames de proficiência realizados no período analisado e por cerca de 89% das concessões de CPA identificadas. Também foram identificadas diferenças significativas entre o modelo de funcionamento das associações e dos CIAC, bem como oportunidades de aperfeiçoamento regulatório relacionadas aos critérios aplicáveis aos examinadores e instrutores envolvidos nesse segmento.
+
+Os resultados desse levantamento passaram a integrar o conjunto de evidências considerado para revisão do arcabouço regulatório aplicável ao CPA, especialmente no que se refere às assimetrias existentes entre os sistemas estabelecidos pelos RBAC nº 141 e 183 e ao desenvolvimento das medidas regulatórias determinadas pela Diretoria Colegiada.
+
+Também em atendimento a determinação da Diretoria, a Gerência Técnica de Normas elaborou a Nota Técnica nº 45/2026/GTNO-SPL/SPL [6] (SEI nº 13545301 ), na qual consolidou a fundamentação técnica e regulatória das alterações propostas aos RBAC nº 141 e nº 183. Na oportunidade, a área técnica concluiu que a redução das assimetrias regulatórias existentes entre os Centros de Instrução de Aviação Civil e as associações aerodesportivas deveria ocorrer mediante autorização definitiva para utilização de aeronaves com CAVE na formação de candidatos ao CPA e, adicionalmente, pelo aperfeiçoamento dos requisitos aplicáveis aos examinadores vinculados às associações credenciadas, recomendando a submissão da matéria à Consulta Pública e a prorrogação da Resolução nº 572/2020 até a conclusão do processo normativo.
+
+Com o objetivo de avaliar a adequação dos requisitos regulatórios aplicáveis às associações aerodesportivas que atuam na formação de candidatos ao Certificado de Piloto Aerodesportivo (CPA) foi criado o AIR nº 3/2026/GTNO-SPL/SPL [7] (SEI nº 13460196 ) e avaliou as asimetrias regulatórias entre as associações credenciadas nos termos do RBAC nº 183 e os Centros de Instrução de Aviação Civil (CIAC) certificados segundo o RBAC nº 141, especialmente quanto aos requisitos exigidos para a atuação de examinadores. Após avaliação das alternativas regulatórias disponíveis por meio de metodologia multicritério, o AIR concluiu que a medida mais adequada consistiria no aperfeiçoamento dos requisitos aplicáveis aos examinadores vinculados às associações, mediante sua regulamentação mais detalhada no RBAC nº 183, por entender que tal solução proporciona ganhos de segurança operacional e de capacidade de supervisão pela ANAC, sem impor aos regulados o conjunto completo de obrigações aplicáveis aos CIAC.
+
+E visando retidão do processo regulatório, o AIR nº 5/2026/GTNO-SPL/SPL [8] (SEI nº 13687282 ) foi juntado ao processo com o objetivo de promover correções metodológicas no Relatório de AIR nº 1/2025/GTNO-SPL/SPL e consolidar os fundamentos da solução regulatória proposta para o tema. A área técnica informou que foram identificadas inconsistências na aplicação da metodologia de análise multicritério no AIR nº 1/2025/GTNO-SPL/SPL, procedendo à revisão dos cálculos e parâmetros empregados porém sem alteração das conclusões originalmente alcançadas.
+
+Posteriormente, por meio do Despacho [9] SEI nº 13804778 , a Gerência Técnica de Normas informou que, durante as discussões realizadas com as assessorias dos Diretores da ANAC, consolidou-se o entendimento de que a solução mais adequada para a continuidade do regime excepcional aplicável à instrução para obtenção do Certificado de Piloto Aerodesportivo (CPA) seria a edição de nova resolução em substituição à Resolução nº 572, de 8 de julho de 2020, cuja vigência já havia expirado, em lugar da mera prorrogação da isenção então proposta. Na mesma oportunidade, registrou-se o entendimento de que o período transcorrido entre o término da vigência da isenção e a conclusão do presente processo normativo não decorreu de decisão deliberada da Agência, razão pela qual foi considerada pertinente a previsão de mecanismo que permitisse à Superintendência de Pessoal da Aviação Civil avaliar, caso a caso, o aproveitamento das horas de instrução realizadas no referido intervalo temporal. Ao final, foi submetida nova minuta de resolução.
+
+Em atendimento às tratativas conduzidas no âmbito do processo, foi juntada aos autos a Proposta de Resolução [10] (SEI nº 13804631 ), destinada a substituir a Resolução nº 572/2020 e disciplinar a continuidade da autorização para utilização de aeronaves detentoras de Certificado de Autorização de Voo Experimental (CAVE) por Centros de Instrução de Aviação Civil na formação prática de candidatos ao CPA. A minuta propõe a concessão de isenção temporária até 31 de agosto de 2027, mantidas as condicionantes relacionadas à informação prévia dos alunos, à manifestação expressa de ciência dos riscos inerentes à operação em aeronaves experimentais e à observância dos requisitos de aeronavegabilidade previstos na regulamentação aplicável. A proposta contempla ainda dispositivo autorizando a análise, pela Superintendência de Pessoal da Aviação Civil, do aproveitamento das horas de instrução realizadas durante o período compreendido entre o encerramento da vigência da Resolução nº 572/2020 e a publicação do novo ato normativo, bem como a revogação expressa das Resoluções nº 572/2020 e nº 788/2025.
+
+É o relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] AIR nº 1/2025/GTNO-SPL/SPL (SEI 13460196)
+
+[2] Nota Técnica nº 5/2025/GTNO-SPL/SPL (SEI 11139009)
+
+[3] Resolução nº 788 (SEI 12538123)
+
+[4] Despacho (SEI 12523527)
+
+[5] Nota Técnica nº 30/2026/GTNO-SPL/SPL (SEI 13472036)
+
+[6] Nota Técnica nº 45/2026/GTNO-SPL/SPL (SEI nº 13545301)
+
+[7] AIR nº 3/2026/GTNO-SPL/SPL (SEI nº 13460196)
+
+[8] AIR nº 5/2026/GTNO-SPL/SPL (SEI nº 13687282)
+
+[9] Despacho SEI nº 13804778
+
+[10] Proposta de Resolução (SEI nº 13804631)
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 01/09/2026, às 17:34, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13804391 e o código CRC FED6CABA .
+
+SEI nº 13804391

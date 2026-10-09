@@ -1,0 +1,313 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.085896/2024-17
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas
+
+Data de Geração: 09/10/2024
+
+Interessados: Gerência de Regulação Econômica
+Empresa Brasileira de Infraestrura Aeroportuária - Infraero
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (28 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13099468 Nota Técnica 17 11/05/2026 11/05/2026 GERE
+11629681 Ofício(pdf) 15/05/2025 03/06/2025 GERE
+13112457 Proposta de Ato (Normativo, Decisão etc.) 13/05/2026 13/05/2026 GERE
+13328692 Proposta de Ato (Normativo, Decisão etc.) 26/05/2026 26/05/2026 GERE
+13112459 Justificativa 13/04/2026 13/04/2026 GERE
+13324996 Proposta de Ato (Normativo, Decisão etc.) 22/05/2026 22/05/2026 GERE
+13324960 Despacho 26/05/2026 26/05/2026 GERE
+13516472 Despacho 08/07/2026 08/07/2026 SRA
+13600177 Despacho 14/07/2026 14/07/2026 SRA
+13600510 Justificativa 13/07/2026 13/07/2026 GERE
+13605841 Certidão de Distribuição 14/07/2026 14/07/2026 ASTEC
+13617997 Relatório de Diretoria 28/07/2026 28/07/2026 DIR-CBI
+13633243 Voto 28/07/2026 28/07/2026 DIR-CBI
+13665623 Despacho 28/07/2026 28/07/2026 ASTEC
+13667146 Voto 29/07/2026 29/07/2026 DIR-P
+13671558 Voto 31/07/2026 31/07/2026 DIR-MNM
+13677391 Voto 31/07/2026 31/07/2026 DIR-RJH
+13680916 Voto 31/07/2026 31/07/2026 DIR-RCM
+13687065 Aviso 395 03/08/2026 03/08/2026 ASTEC
+13697652 Anexo DOU 05/08/2026 05/08/2026 ASTEC
+13697659 Certidão de Deliberação 05/08/2026 05/08/2026 ASTEC
+13732335 Ofício 142 26/08/2026 26/08/2026 SRA
+13788406 Certidão de Intimação Cumprida 26/08/2026 26/08/2026 SRA
+13925533 Nota Técnica 49 01/10/2026 01/10/2026 GERE
+13947097 Anexo 23/09/2026 01/10/2026 GERE
+13922569 Manifestação 134988 28/09/2026 28/09/2026 GERE
+13922568 Manifestação 135155 28/09/2026 28/09/2026 GERE
+13928607 Relatório 29/09/2026 29/09/2026 GERE
+
+Lista de Andamentos (49 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+01/10/2026 18:20
+SRA
+
+Processo recebido na unidade
+
+01/10/2026 17:52
+SRA
+
+Processo remetido pela unidade GERE
+
+03/09/2026 10:59
+DIR-CBI
+
+Conclusão do processo na unidade
+
+26/08/2026 16:11
+SRA
+
+Conclusão do processo na unidade
+
+26/08/2026 16:09
+SRA
+
+Processo recebido na unidade
+
+26/08/2026 15:31
+SRA
+
+Processo remetido pela unidade SRA
+
+13/08/2026 15:48
+SRA
+
+Processo recebido na unidade
+
+13/08/2026 15:48
+SRA
+
+Processo remetido pela unidade GERE
+
+07/08/2026 08:52
+DIR-P
+
+Conclusão do processo na unidade
+
+06/08/2026 08:32
+GERE
+
+Processo recebido na unidade
+
+05/08/2026 16:04
+GERE
+
+Processo remetido pela unidade SRA
+
+05/08/2026 15:44
+SRA
+
+Processo recebido na unidade
+
+05/08/2026 15:34
+SRA
+
+Processo remetido pela unidade ASTEC
+
+03/08/2026 17:45
+DIR-MNM
+
+Conclusão do processo na unidade
+
+31/07/2026 18:17
+DIR-RJH
+
+Conclusão do processo na unidade
+
+30/07/2026 17:11
+GERE
+
+Alterado nível de acesso do processo para público
+
+30/07/2026 17:11
+GERE
+
+Alterado nível de acesso do documento 13099468 (Nota Técnica 17) para público
+
+30/07/2026 17:11
+GERE
+
+Alterado nível de acesso do documento 13112457 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+30/07/2026 17:09
+GERE
+
+Alterado nível de acesso do documento 13328692 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+30/07/2026 17:08
+GERE
+
+Reabertura do processo na unidade
+
+29/07/2026 15:53
+DIR-MNM
+
+Processo recebido na unidade
+
+28/07/2026 18:07
+DIR-P
+
+Processo recebido na unidade
+
+28/07/2026 16:19
+DIR-RCM
+
+Processo recebido na unidade
+
+28/07/2026 16:14
+DIR-RJH
+
+Processo recebido na unidade
+
+28/07/2026 15:17
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+24/07/2026 10:30
+ASTEC
+
+Reabertura do processo na unidade
+
+15/07/2026 08:47
+GERE
+
+Conclusão do processo na unidade
+
+14/07/2026 18:04
+ASTEC
+
+Conclusão do processo na unidade
+
+14/07/2026 18:04
+ASTEC
+
+Processo recebido na unidade
+
+14/07/2026 16:35
+ASTEC
+
+Processo remetido pela unidade SRA
+
+14/07/2026 14:43
+ASTEC
+
+Conclusão do processo na unidade
+
+14/07/2026 14:27
+DIR-CBI
+
+Processo recebido na unidade
+
+14/07/2026 14:24
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+14/07/2026 14:23
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+13/07/2026 14:56
+GERE
+
+Reabertura do processo na unidade
+
+13/07/2026 14:30
+SRA
+
+Reabertura do processo na unidade
+
+09/07/2026 11:41
+ASTEC
+
+Processo recebido na unidade
+
+08/07/2026 21:41
+ASTEC
+
+Processo remetido pela unidade SRA
+
+27/05/2026 11:24
+GTAS-SRA
+
+Conclusão do processo na unidade
+
+26/05/2026 17:56
+SRA
+
+Processo recebido na unidade
+
+26/05/2026 17:18
+GTAS-SRA
+
+Processo recebido na unidade
+
+26/05/2026 16:09
+GTAS-SRA
+
+Processo remetido pela unidade GERE
+
+26/05/2026 16:09
+SRA
+
+Processo remetido pela unidade GERE
+
+13/04/2026 11:36
+GERE
+
+Alterada hipótese legal do documento 13099468 (Nota Técnica 17) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+13/04/2026 11:36
+GERE
+
+Alterado nível de acesso do documento 13099468 (Nota Técnica 17) para restrito
+
+09/10/2024 15:56
+GERE
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

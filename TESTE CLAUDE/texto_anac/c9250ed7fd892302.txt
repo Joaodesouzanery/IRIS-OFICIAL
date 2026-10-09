@@ -1,0 +1,77 @@
+SEI/ANAC - 13727140 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00066.004529/2026-85
+
+INTERESSADO: GOIÁS TAXI AÉREO
+
+RELATOR: ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+CONDICIONANTES E REQUISITOS DA ISENÇÃO
+
+A isenção pleiteada refere-se ao requisito estabelecido no parágrafo 135.25(b) do Regulamento Brasileiro da Aviação Civil (RBAC) nº 135, que determina que o detentor de certificado possua o uso exclusivo de pelo menos uma aeronave que atenda aos requisitos de ao menos uma espécie de operação autorizada em suas Especificações Operativas (EO), conforme pedido formalizado por meio do FOP 208 nº 01/GTA/2026 (SEI nº 13099191 ).
+
+A isenção destina-se exclusivamente à aeronave abaixo identificada:
+
+Matrícula: PT-OGL;
+
+Fabricante: Cessna Aircraft;
+
+Modelo: 208;
+
+Número de Série: 20800102.
+
+A medida tem por finalidade permitir que a aeronave PT-OGL permaneça simultaneamente vinculada às Especificações Operativas da Goiás Táxi Aéreo Ltda., em processo de certificação sob o RBAC nº 135 (NUP nº 00066.003472/2026-05 ), e da SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda. (COA nº 2021-03-00HW-02-00/ANAC), possibilitando que ambas figurem como operadores registrados da aeronave, nos termos da solicitação constante do processo.
+
+Conforme entendimento da Superintendência de Padrões Operacionais consignado na Nota Técnica nº 28/2026/GTNO-GNOS/GNOS/SPO (SEI nº 13259108 ), a implementação do arranjo deverá observar, entre outros aspectos analisados durante a instrução processual:
+
+a manutenção da aeronave segundo os requisitos mais restritivos aplicáveis às operações conduzidas sob o RBAC nº 135;
+
+a preservação de fluxo contínuo de comunicação e coordenação entre os operadores envolvidos;
+
+a adequada manutenção dos registros operacionais e da documentação da aeronave, observados os procedimentos aplicáveis à transferência de controle operacional e de direito de uso.
+
+descrição dos fatos
+
+O presente processo trata de solicitação formulada pela empresa Goiás Táxi Aéreo Ltda., por meio do FOP 208 nº 01/GTA/2026 (SEI nº 13099191 ), visando à concessão de isenção permanente do requisito previsto no parágrafo 135.25(b) do RBAC nº 135. O dispositivo estabelece que o detentor de certificado deve possuir o uso exclusivo de pelo menos uma aeronave apta a atender aos requisitos de ao menos uma das espécies de operação autorizadas em suas Especificações Operativas.
+
+A requerente encontra-se em processo de certificação inicial para obtenção de Certificado de Operador Aéreo sob o RBAC nº 135, autuado no NUP nº 00066.003472/2026-05 . Nesse contexto, protocolou a Solicitação de Cumprimento de Procedimento Alternativo (FOP 208 nº 01/GTA/2026), requerendo autorização para que a aeronave PT-OGL permaneça simultaneamente vinculada à futura operação de táxi aéreo e às operações atualmente conduzidas pela empresa SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda.
+
+Segundo informado pela peticionária, a aeronave seria empregada em atividades de transporte de passageiros e carga sob o RBAC nº 135, bem como em operações de lançamento de paraquedistas conduzidas pela SKC, mantendo-se vinculada às Especificações Operativas de ambas as organizações. A empresa sustenta que tal arranjo é essencial para a viabilidade econômico-financeira do empreendimento e para a adequada utilização do ativo aeronáutico.
+
+Como fundamento para o pedido, a requerente informou que a Goiás Táxi Aéreo e a SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda. compartilham o mesmo gestor responsável, estrutura operacional comum, equipes técnicas e administrativas integradas e sistemas de controle operacional semelhantes, circunstâncias que, em seu entendimento, reduziriam potenciais conflitos relacionados à autoridade operacional sobre a aeronave e possibilitariam adequado gerenciamento da aeronavegabilidade continuada, da manutenção e dos registros operacionais.
+
+A empresa apresentou, ainda, argumentos relacionados à segurança operacional, afirmando que a aeronave continuaria sendo operada por tripulantes devidamente habilitados e treinados, que as organizações mantêm Sistema de Gerenciamento da Segurança Operacional integrado e que seriam observados os procedimentos relativos à transição operacional e aos registros em diário de bordo previstos na Instrução Suplementar nº 119-006.
+
+No curso da instrução processual, a SPO procedeu à análise da admissibilidade do pleito à luz dos requisitos estabelecidos na Seção 11.31 do RBAC nº 11, verificando a identificação do solicitante, a identificação do requisito objeto da isenção, a natureza e extensão da medida pretendida, a identificação da aeronave abrangida e as justificativas apresentadas quanto à preservação de níveis aceitáveis de segurança operacional.
+
+A área té cnica realizou, adicionalmente, pesquisa acerca da origem e da finalidade regulatória do requisito constante do parágrafo 135.25(b) do RBAC nº 135. A análise identificou que a exigência possui origem em regulamentos historicamente adotados pela autoridade de aviação civil dos Estados Unidos, tendo sido incorporada inicialmente em dispositivos voltados às operações de táxi aéreo e posteriormente consolidada no FAR Part 135. Segundo a pesquisa realizada, a finalidade da regra é assegurar que o operador detenha posse, controle e utilização efetiva de pelo menos uma aeronave, garantindo condições adequadas de supervisão operacional e de manutenção.
+
+A Nota Té cnica (SEI 13259108 ) destacou ainda que, ao longo da evolução regulatória norte-americana, foi expressamente reconhecida a possibilidade de utilização de aeronaves em outras operações, desde que preservados os elementos essenciais de controle op eracional, manutenção e posse exigidos pelo regulamento. A pesquisa conduzida pela SPO também evidenciou que o conceito regulatório de uso exclusivo está diretamente associado à posse, ao controle e ao uso da aeronave pelo operador.
+
+No exame do caso concreto, a SPO registrou que os documentos apresentados pela requerente, especialmente os contratos sociais da Goiás Táxi Aéreo Ltda. (SEI nº 13099211 ) e da SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda. (SEI nº 13099212 ), demonstram haver comunalidade societária, administrativa e operacional entre as empresas.
+
+A instrução processual evidenciou situação distinta daquela normalmente observada no setor, em que operadores certificados segundo o RBAC nº 135 dão origem a estruturas voltadas à prestação de serviços aéreos especializados. No presente caso, a empresa já certificada para operações de lançamento de paraquedistas compartilha estrutura administrativa, operacional e de gestão com organização em processo de certificação para operações de táxi aéreo. Nesse contexto, a área técnica entendeu demonstrada a comunalidade operacional entre as empresas envolvidas, elemento considerado relevante para a análise do pedido de isenção.
+
+Durante a análise, foi atribuída especial atenção aos requisitos de manutenção aplicáveis às operações pretendidas. Nesse aspecto, a SPO destacou a necessidade de adoção da abordagem prevista para situações em que uma mesma aeronave esteja sujeita a distintos regimes operacionais, concluindo que os requisitos de manutenção mais restritivos associados às operações conduzidas sob o RBAC nº 135 deverão prevalecer durante toda a vigência do arranjo pretendido.
+
+A área técnica destacou, ainda, que o adequado funcionamento do modelo proposto pressupõe a existência de fluxo permanente de comunicação entre os operadores envolvidos, de modo a assegurar a adequada coordenação operacional, a manutenção dos registros aeronáuticos e o contínuo acompanhamento das condições de aeronavegabilidade da aeronave.
+
+No decorrer da instrução processual, a SPO encaminhou aos interessados proposta de decisão contemplando as condições sob as quais entendia possível o deferimento do pedido de isenção, oportunizando manifestação prévia acerca dos encaminhamentos que seriam submetidos à deliberação da Diretoria Colegiada. Em resposta, não foram apresentadas objeções ao mérito da proposta, tendo sido apontada apenas correção relativa à identificação da razão social de uma das empresas. Posteriormente, mediante solicitação da área técnica para explicitar a concordância das duas operadoras envolvidas, foi confirmado que a manifestação apresentada ocorria em nome da Goiás Táxi Aéreo Ltda. e da SKC Serviço Aéreo Especializado de Lançamento de Paraquedistas Ltda., posicionamento que foi expressamente ratificado pelo sócio-administrador de ambas as empresas (SEI nº 13683335 ).
+
+Ao final da instrução, a SPO concluiu que o pedido atende aos requisitos de forma e admissibilidade previstos no RBAC nº 11 e que o arranjo operacional proposto não apresenta risco considerado inaceitável à segurança operacional, desde que observadas as salvaguardas analisadas ao longo do processo, manifestando-se favoravelmente ao deferimento da isenção requerida, nos termos da Nota Técnica nº 28/2026/GTNO-GNOS/GNOS/SPO (SEI nº 13259108 ) e da respectiva Proposta de Ato submetida à deliberação da Diretoria Colegiada (SEI nº 13738623 ).
+
+Em 17/07/2026, após a realização da distribuição eletrônica (SEI nº 13621553 ), os autos foram encaminhados a esta Diretoria para relatoria.
+
+É o relatório.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 25/08/2026, às 11:21, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13727140 e o código CRC D3AF9548 .
+
+SEI nº 13727140

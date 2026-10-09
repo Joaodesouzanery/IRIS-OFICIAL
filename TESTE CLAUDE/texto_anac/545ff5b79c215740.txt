@@ -1,0 +1,85 @@
+SEI/ANAC - 12576274 - Voto
+
+Voto
+
+PROCESSO: 00058.111394/2025-21
+
+RELATOR: RUI RUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, conferiu competência à Agência Nacional de Aviação Civil para regular e fiscalizar os serviços aéreos, bem como realizar estudos, estabelecer normas e promover a implementação das normas e recomendações internacionais de aviação civil, observados os acordos, tratados e convenções internacionais de que seja parte a República Federativa do Brasil (art. 8º, incisos IV e X).
+
+Em âmbito interno, compete à Superintendência de Acompanhamento de Serviços Aéreos (SAS), nos termos do Regimento Interno da ANAC (Resolução nº 381, de 14 de junho de 2016), submeter à Diretoria propostas normativas relativas “à exploração de serviços aéreos públicos, inclusive no que se refere a direitos e deveres dos usuários de serviços de transporte aéreo público e condições de acessibilidade de passageiros com necessidade de assistência especial ao transporte aéreo” (art. 32, inciso I, alínea “a”).
+
+À Diretoria Colegiada, por sua vez, compete o exercício do poder normativo da Agência (art. 9º, inciso VIII, do Regimento). Nesse sentido, aprovada a Resolução nº 400 em 13 de dezembro de 2016 pelo Colegiado, compete novamente a esta Diretoria a aprovação de suas alterações
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme exposto no Relatório [1] , cuida-se de análise relacionada às disposições da Resolução nº 400, de 13 de dezembro de 2016, aplicáveis a situações de atraso ou interrupção do serviço de transporte aéreo de passageiros. A Superintendência de Acompanhamento de Serviços Aéreos (SAS), área técnica da Agência responsável pela matéria, identificou que o setor tem observado em tais situações insegurança jurídica decorrente de compreensões falhas das regras relativas à assistência material prevista nos arts. 26 e 27 da Resolução, com repercussão na formação de expectativas assimétricas dos passageiros com relação às responsabilidades dos operadores aéreos e na consolidação de cenário jurisprudencial com baixa uniformidade.
+
+Conforme comparativo com regras americanas e europeias, a análise técnica indica ser uniforme na aviação civil a ausência de responsabilidade civil dos operadores aéreos por danos decorrentes de eventos que fogem ao controle do transportador, como nas hipóteses de atrasos e cancelamentos associados a caso fortuito ou força maior. A despeito das décadas de evolução progressiva da aviação em âmbito global, com notável desenvolvimento tecnológico dos equipamentos embarcados, das ferramentas de solo para auxílio a pousos e decolagens, bem como dos procedimentos e treinamentos aplicados aos profissionais do setor, os avanços não são suficientes para eliminar as intercorrências geradas por mau tempo, por necessidades de manutenção não programada em aeronaves e equipamentos de solo e outros eventos que acarretam impacto em cadeia para diversos operadores dependentes da infraestrutura aeroportuária.
+
+Celebrada em 1999, a Convenção da Aviação Civil Internacional, prevê em seu art. 19 que “o transportador não será responsável pelo dano ocasionado por atraso se prova que ele e seus prepostos adotaram todas as medidas que eram razoavelmente necessárias para evitar o dano ou que lhes foi impossível, a um e a outros, adotar tais medidas”. O texto, ratificado pelo Brasil em 2006 (Decreto nº 5.910, de 27 de setembro de 2006), é adotado como referência pela Organização da Aviação Civil Internacional (OACI), vinculada à Organização das Nações Unidas (ONU), em orientações aos Estados acerca das regras de proteção ao consumidor [2] .
+
+Em linha com os padrões e práticas recomendadas da organização internacional, o Código Brasileiro de Aeronáutica [3] , aprovado em 1986, prevê em sua redação original que o transportador não é responsável “se ocorrer motivo de força maior ou comprovada determinação da autoridade aeronáutica” (art. 256). A disposição já estava presente no Código Brasileiro do Ar, aprovado em 1966 [4] . No propósito de aprimorar tais dispositivos, o legislador pátrio aprovou a Lei nº 14.034, de 5 de agosto de 2020, que deu nova redação ao art. 256 do Código, prevendo que a ausência de responsabilidade civil ocorrerá quando “se comprovar que, por motivo de caso fortuito ou de força maior, foi impossível adotar medidas necessárias, suficientes e adequadas para evitar o dano”.
+
+Com o objetivo de assegurar alinhamento da Resolução ao texto legal, a proposta incorpora dois novos dispositivos à Resolução nº 400/2016 (arts. 25-A e 25-B) que reforçam a natureza técnica do transporte aéreo, permeado por ações de gestão da segurança operacional que podem demandar ajustes, reprogramações ou outras medidas operacionais voltadas à preservação da segurança e da regularidade das operações. Fica ainda mais claro, nesse sentido, que tais ações correspondem a dever primário do operador aéreo e, como consequência, não caracterizam violação contratual ou falha na prestação do serviço, permanecendo o transportador sujeito aos deveres de informação e de assistência previstos. A assistência material prevista no Código Brasileiro de Aeronáutica, portanto, não implica reconhecimento de culpa ou responsabilidade pelo atraso ou interrupção do voo, ressalva que passa a constar expressamente da Resolução.
+
+Nesse ponto, entendo pertinente a complementação da proposta da SAS com o objetivo de deixar claro que a excludente de responsabilidade do operador aéreo não afasta a responsabilidade de terceiros aos quais seja atribuída eventual falha que, por exemplo, cause a indisponibilidade da infraestrutura aeroportuária ou de outra forma dê origem ao atraso. Para esses cenários, compete à autoridade judiciária a imputação correspondente de responsabilidade, observadas as condições concretas presentes no contexto do atraso ou da interrupção e os deveres e responsabilidades atribuídos aos diferentes atores envolvidos no sistema de aviação civil. Para tanto, é proposta a seguinte redação para o art. 25-B:
+
+Art. 25-B. O transportador aéreo responde pelo eventual dano resultante de atraso significativo, não lhe sendo imputável, sem prejuízo de outras hipóteses excludentes de responsabilidade, os casos fortuitos ou de força maior, conforme o disposto na Lei nº 7.565, de 19 de dezembro de 1986, resguardado o dever de reparação atribuído ao agente responsável pela infraestrutura, pelo equipamento ou pela condição que der origem ao atraso, conforme o caso e a legislação aplicável.
+
+Ainda com relação à assistência, a proposta também prevê unificação do marco temporal de sua incidência, consolidando a prestação das assistências materiais apenas nos casos de espera pelo passageiro superior a 4 (quatro) horas. A esse respeito, observo que já está consolidada a prática do voucher de alimentação nos casos de espera superior a 2 (duas) horas, não tendo sido evidenciado na Análise de Impacto Regulatório problema concreto com a aplicação do dispositivo. Julgo pertinente, assim, a manutenção do marco temporal atual aplicável a essa assistência, sem prejuízo à possibilidade de revisão futura do tema caso sejam obtidos dados adicionais e desenvolvidas análises que revelem a conveniência ou necessidade de alteração do dispositivo. Nesse cenário, mantidos os parágrafos do art. 27, proponho a atualização do seu caput , nos seguintes termos:
+
+Art. 27. Nos casos de previsão de atraso, de interrupção do voo ou de reacomodação, o transportador deverá assegurar ao passageiro a prestação das seguintes assistências materiais:
+
+I - alimentação adequada, por meio de voucher, refeição ou solução equivalente, nos casos de espera superior a 2 (duas) horas; e
+
+II - hospedagem, quando houver necessidade de pernoite, além do transporte de ida e volta entre o aeroporto e o local de hospedagem, nos casos de espera superior a 4 (quatro) horas.
+
+Em todo caso, são mantidas e reforçadas as disposições relativas à prestação de informações aos passageiros no que se refere aos motivos do atraso, a previsão de partida e as opções de reacomodação disponíveis. A prestação de informações, nesse sentido, abarca o próprio momento de aquisição do bilhete de passagem, conforme estabelece o art. 5º da Resolução, que foi complementado na proposta com novo inciso VI, que passa a exigir " indicação de maneira clara, acessível e ostensiva, de que o transporte aéreo é sujeito a eventos decorrentes de contextos operacionais inerentes à atividade, que podem afetar a pontualidade e a regularidade do voo " [5] . Ainda sobre o tema informação ao passageiro, com o objetivo de tornar mais clara a alteração do § 1º do 20 trazida na minuta, proponho a adoção da seguinte redação:
+
+Art. 20. (...)
+
+§ 1º O transportador deverá divulgar ostensivamente, por meios acessíveis, incluídos os canais digitais de amplo acesso, as informações atualizadas sobre os motivos do atraso, a previsão de partida, as opções de reacomodação disponíveis e as orientações para obtenção da assistência material.
+
+Observo, em vista do resultado da avaliação, que a proposta traz avanços significativos para a consolidação de uma regulamentação alinhada às práticas internacionais e consistente com a realidade do setor. Vislumbro, no entanto, oportunidades adicionais de revisão, as quais serão oportunamente conduzidas em iniciativas próprias e baseadas em análises de impacto regulatório específicas, como para a matéria de alterações programadas (art. 12) e regras de reacomodação e reembolso (arts. 28 a 31).
+
+Destaco ainda que a ANAC tem continuamente buscado aproximação com o Congresso Nacional, os Tribunais e o Conselho Nacional de Justiça no intuito de compartilhar as experiências técnicas e regulatórias aplicadas pelas mais diversas autoridades de aviação civil em âmbito internacional e reforçar a vigência dos acordos internacionais ratificados pelo Brasil, com a finalidade última de garantir a estabilidade da regulação aplicável à aviação civil e com isso fomentar um ambiente de atratividade e competitividade de provedores do transporte aéreo, elemento fundamental para garantia de acesso ao modal aéreo pelos brasileiros em todas as regiões.
+
+Ainda no sentido da promoção de diálogo e busca por soluções efetivas para a aviação civil, julgo oportuna a realização de audiência pública durante o período de coleta das contribuições da consulta, de modo a ampliar a transparência e o debate acerca da proposta em exame, conforme sugestão trazida pela área proponente [6] .
+
+DO VOTO
+
+Ante o exposto, considerando o estudo conduzido pela área técnica competente para a matéria e as referências internacionais a respeito das regras aplicáveis a situações de atraso ou interrupção do serviço de transporte aéreo de passageiros, VOTO FAVORAVELMENTE à instauração de consulta pública , pelo prazo de 45 (quarenta e cinco) dias, acerca da proposta de revisão parcial da Resolução nº 400, de 2016, nos termos da Proposta de Ato SEI nº 12442188 , com os ajustes destacados nos itens 2.6 a 2. 8 do presente Voto, bem como à realização de audiência pública para colheita de manifestações verbais e aprofundamento do diálogo setorial acerca da proposta.
+
+Em virtude da relevância pública da matéria, determina-se à SAS, com apoio da Assessoria de Comunicação Social da Agência, a adoção das providências necessárias à ampla divulgação da matéria e orientação quanto ao alcance das propostas em discussão.
+
+Na oportunidade, reforço o convite para que todos os interessados, representantes do setor e dos interesses dos consumidores, assim como demais atores e instituições que têm buscado a ampliação do acesso ao transporte aéreo participem das iniciativas de audiência e consulta pública e colaborem com o aprimoramento das condições gerais do transporte aéreo.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Relatório de Diretoria SEI nº 12576270 .
+
+[2] Doc 9587 (Policy and Guidance Material on the Economic Regulation of International Air Transport), referenciado na página https://www.icao.int/consumer-protection.
+
+[3] Lei nº 7.565, de 19 de dezembro de 1986: Art. 256. O transportador responde pelo dano decorrente: (...) II - de atraso do transporte aéreo contratado. § 1° O transportador não será responsável: (...) II - no caso do inciso II do caput deste artigo, se comprovar que, por motivo de caso fortuito ou de força maior, foi impossível adotar medidas necessárias, suficientes e adequadas para evitar o dano. (Incluído pela Lei nº 14.034, de 2020).
+
+[4] Decreto-Lei nº 32, de 18 de novembro de 1966: Art. 101. O transportador responde pelos danos resultantes de antecipação ou atraso do transporte aéreo do passageiro, bagagem ou carga, salvo caso fortuito ou de fôrça maior.
+
+[5] Proposta de Ato SEI nº 12442188 .
+
+[6] Conforme minuta de Aviso de Consulta Pública SEI nº 12443632 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 20/01/2026, às 17:28, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12576274 e o código CRC FFF139F6 .
+
+SEI nº 12576274

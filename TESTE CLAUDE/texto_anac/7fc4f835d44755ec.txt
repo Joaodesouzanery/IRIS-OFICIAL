@@ -1,0 +1,69 @@
+SEI/ANAC - 12481824 - Voto
+
+Voto
+
+PROCESSO: 00058.014794/2023-28
+
+RELATOR: RUI RUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, estabelece em seu art. 8º, inciso X, a competência da Agência Nacional de Aviação Civil (ANAC) para regular e fiscalizar os serviços aéreos, os produtos e processos aeronáuticos, a formação e o treinamento de pessoal especializado, a segurança da aviação civil, a facilitação do transporte aéreo, a habilitação de tripulantes, e as demais atividades de aviação civil. Nos termos do art. 11, inciso V, da mesma Lei, compete à Diretoria Colegiada o exercício do poder normativo da Agência.
+
+Por sua vez, o Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho 2016, atribui à Superintendência de Padrões Operacionais (SPO), em seu art. 34, inciso I, competência para submeter à Diretoria Colegiada propostas de atos normativos envolvendo padrões operacionais relacionados à certificação e fiscalização, no âmbito operacional, de operadores aéreos, de operações aéreas, de transporte de artigos perigosos, de organizações de manutenção e de fatores humanos relacionados às operações aéreas.
+
+Do exposto, resta evidenciada a competência deste colegiado para a deliberação da matéria em tela.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme exposto no Relatório [1] , trata-se de proposta normativa oriunda do tema "Requisitos de comunicação bilateral avião-solo para operações 121" previsto em Agenda Regulatória. Em apertada síntese, a área técnica identificou no âmbito da vigilância continuada dificuldades envolvendo a qualidade das comunicações por rádio de alta frequência entre a tripulação em voo e o centro de despacho operacional em solo, cenário a partir do qual foram realizados estudos comparativos com os padrões e práticas recomendadas da Organização da Aviação Civil Internacional (OACI) e as regras de autoridades de referência na aviação civil, bem como análises de alternativas para superação do problema observado.
+
+Na conclusão da Superintendência de Padrões Operacionais (SPO) [2] , diante das exigências já estabelecidas para comunicação via estação de controle do tráfego aéreo, da distribuição de funções e responsabilidades entre despachante operacional de voo, piloto em comando e membros da tripulação no formato tradicionalmente adotado pelos operadores nacionais, assim como da possibilidade de que os equipamentos atualmente em uso sejam mantidos ou aprimorados pelos próprios operadores interessados para fins de otimização das rotinas e acomodação de malha, foi considerada oportuna a simplificação de regras de comunicação presentes nas seções 121.99 e 121.122, com ajustes complementares em outras disposições do RBAC para uniformização ao longo do regulamento.
+
+Nesse sentido, assegura a unidade técnica proponente que eventual cenário de emergência já acarreta a adoção de ações em contato primário com o controle de tráfego aéreo, com apoio nos procedimentos operacionais previamente definidos em manuais de gerenciamento estabelecidos pelo operador, definições concretas trazidas no procedimento de despacho operacional e especificações do equipamento, o que se considera adequado e suficiente para manutenção das condições de segurança das operações.
+
+Convém destacar que as alterações não afetam a exigência de padrões adicionais de comunicação para as operações ETOPS ( Extended Twin Engine Operations ) e sobre grandes extensões de água, não abarcadas pela alteração em tela.
+
+No âmbito da Nota Técnica nº 11/2024 [3] , foi realizada avaliação dos impactos da alteração para a atuação do despachante operacional de voo, conforme provocação trazida por representante da própria equipe da SPO, concluindo-se que a regulamentação já estabelece como responsabilidade do piloto em comando a iniciativa para acompanhamento das condições meteorológicas ao longo da rota, com disponibilidade de informações precípuas junto ao controle de tráfego, responsável pela sinalização de eventuais indisponibilidades da infraestrutura prevista originalmente no plano de voo.
+
+Em discussões adicionais sobre a matéria no âmbito de reuniões com representantes da área técnica, foi destacado que a alteração do RBAC nº 121 para tornar a comunicação bilateral com o centro de despacho do próprio operador não obrigatória a nível regulamentar promove alinhamento da regulamentação com o Anexo 6 à Convenção da Aviação Civil Internacional e não afeta o atendimento aos padrões e práticas avaliados no programa de auditorias da Associação do Transporte Aéreo Internacional (IATA) [4] , que prevê diferentes arranjos de sistemas e garantias de comunicação.
+
+A partir das discussões complementares, foi inserida nos autos manifestação adicional da área técnica [5] com relação à garantia da segurança das operações, com reforço à experiência já observada em ambientes regulados por outras autoridades de referência na aviação e às práticas já adotadas no Brasil. A conclusão reforça a avaliação no sentido de que o piloto em comando possui as informações e os recursos de cabine suficientes para a tomada de decisão em cenários de eventual desvio das condições de voo planejadas originalmente, observando-se que a eventual interação direta com o centro de controle operacional durante o voo não representa comunicação essencial à garantia dos padrões mínimos de segurança.
+
+Convém sedimentar que não fica prejudicada pela alteração normativa a manutenção das rotinas atuais de comunicação com equipes de solo por parte de operadores que vislumbrem ganhos de eficiência para suas aeronaves e malhas. Como já destacado, a proposta busca simplificar a exigência para cenários em que os ruídos envolvidos na operação do rádio no formato atualmente exigido possam comprometer a eficiência das operações, tornando desnecessária a implementação na medida em que os demais meios de comunicação disponíveis já garantem os níveis de segurança previstos, com apoio nas práticas e regras de referência adotadas em âmbito internacional. Os operadores que colhem benefícios com o sistema de comunicação direta poderão manter os equipamentos e procedimentos já implementados. Da mesma forma, é igualmente mantida a relevância das atividades de despacho operacional e a recomendação para que sejam buscadas continuamente pelo setor soluções tecnológicas e procedimentais que otimizem as rotinas operacionais a cargo dos operadores.
+
+No âmbito da Consulta pública, foi observada manifestação favorável à alteração e recomendação atrelada à garantia de clareza com relação à manutenção das regras de comunicação bilateral para operações ETOPS, oportunamente avaliada pela unidade proponente.
+
+Assim, considerando as manifestações técnicas lançadas no processo e a ausência de óbices na manifestação da Procuradoria Federal Especializada junto à ANAC, entendo oportuna a aprovação da proposta. Tendo em vista, no entanto, a oportunidade já considerada pela SPO de edição de Instrução Suplementar sobre a matéria [6] , que trará detalhamentos sobre os procedimentos e meios de comunicação conforme aplicáveis ao tipo de operação conduzida, julgo relevante que a edição da instrução se dê no prazo de 90 (noventa) dias com vistas à adequada orientação dos operadores acerca do controle operacional de voo nas operações regidas pelo RBAC nº 121.
+
+DO VOTO
+
+Ante o exposto, considerando os fundamentos técnicos constantes dos autos, as contribuições colhidas em consulta pública e a manifestação da Procuradoria Federal Especializada junto à ANAC, VOTO FAVORAVELMENTE à aprovação da emenda ao RBAC nº 121 destinada a atualizar requisitos de comunicação bilateral avião-solo nas operações sujeitas ao regulamento, nos termos da proposta submetida pela SPO [7] , com determinação para que a Superintendência conclua a edição da Instrução Suplementar referenciada no item 2.10 deste Voto em até 90 (noventa) dias da publicação da emenda ao RBAC.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Relatório de Diretoria SEI nº 12481641 .
+
+[2] Conforme Relatório de Análise de Impacto Regulatório (AIR) nº 2/2023/GTNO-GNOS/GNOS/SPO (SEI nº 8430763 ).
+
+[3] Nota Técnica nº 11/2024/GTNO-GNOS/GNOS/SPO (SEI nº 9673493 ).
+
+[4] Conforme o IATA Operational Safety Audit Standards Manual (ISM).
+
+[5] Despacho GTNO/GNOS/SPO SEI nº 12620912 , aprovado pelos Despachos SEI nº 12624139 e SEI nº 12624226 .
+
+[6] Conforme instrução já inaugurada no Processo nº 00066.014724/2022-90 , referenciado no Despacho SEI nº 11477528 .
+
+[7] Proposta de Ato SEI nº 12340574 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 21/01/2026, às 13:20, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12481824 e o código CRC EE40FF0C .
+
+SEI nº 12481824

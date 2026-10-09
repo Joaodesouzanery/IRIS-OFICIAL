@@ -1,0 +1,287 @@
+SEI/ANAC - 13789682 - Voto
+
+Voto
+
+PROCESSO: 00058.037986/2025-74
+
+RELATOR: claudio beschizza ianelli
+
+1. Da competência
+
+A Lei n.º 11.182/2005, em seu artigo 8º, inciso XIX, atribui à Anac a função de regular as autorizações de horários de pouso e decolagem de aeronaves civis, observadas as condicionantes do sistema de controle do espaço aéreo e da infraestrutura aeroportuária disponível. Em seu art. 11, inciso III, é estabelecido que compete à Diretoria Colegiada da Agência regular a exploração de serviços aéreos.
+
+Conforme Regimento Interno, aprovado pela Resolução Interna nº 10, de 27/07/26, art. 10º, inciso XXI, também compete ao Colegiado deliberar, na esfera administrativa, quanto à interpretação da legislação e sobre os casos omissos.
+
+A matéria em análise, portanto, encontra-se sob competência da Diretoria Colegiada da Anac.
+
+Análise e fundamentação
+
+Conforme relatado, trata-se de requerimento da Vara Regional de Competência Empresarial e de Conflitos relacionados à Arbitragem, Foro Especializado das 3ª e 6ª Regiões Administrativas Judiciárias, Comarca de Ribeirão Preto, Órgão do Tribunal de Justiça do Estado de São Paulo – TJSP, para manifestação da Anac acerca do processo de recuperação judicial do denominado Grupo Voepass, integrado pela MAP Transportes Aéreos Ltda. e pela Passaredo Transportes Aéreos S.A.
+
+Antes de adentrar o mérito do presente processo, julgo necessário trazer o histórico que o antecedeu. Em 10/03/2025, houve a suspensão cautelar do Certificado de Operador Aéreo – COA da Passaredo Transportes Aéreos S.A. por meio da Portaria nº 16547, de 10 de março de 2025 (SEI 11263138 ). Até então, a empresa era detentora de slots em diversos aeroportos congestionados do país.
+
+Em 12/05/25, como consequência do não cumprimento dos parâmetros de regularidade e redistribuição, a empresa perdeu os slots da temporada Summer de 2025 (S25), seguindo o rito regulamentar. Em 28/05/2025, o referido Juízo foi informado pela Anac que, naquele momento, a empresa já não possuía slots da temporada Summer e que, com relação à temporada Winter 25 (W25), a empresa possuía apenas expectativa de direito de uso temporário, caso recuperasse, em tempo, o COA e comprovasse capacidade operativa de utilizar os slots alocados, estando também sujeita ao monitoramento do uso de slots para fins de manutenção destes na própria temporada e nas futuras temporadas de Inverno (SEI 11605743 ).
+
+A empresa não recuperou suas condições operativas, tendo seu COA cassado e, consequentemente os slots da temporada W25 foram retomados e redistribuídos, conforme consta do processo SEI 00058.021107/2025-92 .
+
+Desde o início do atual processo, a então Superintendência de Acompanhamento de Serviços Aéreos (SAS), hoje denominada Superintendência de Serviços Aéreos (SSA) [1] , manifestou-se diversas vezes (SEI 12119890 , 12388334 , 13085489 ) quando questionada a respeito da situação dos slots do Grupo Voepass. Destaca-se que a área técnica reafirmou o disposto no normativo vigente quanto à possibilidade geral da cessão ou arrendamento de slots, com a ressalva de que, no caso do Grupo, não havia slots a ele alocados que pudessem ser objeto de tais instrumentos. Destacou, também, que, de forma geral, não há óbices à monetização dos slots em processos de recuperação judicial, desde que preservadas as disposições regulamentares, a saber:
+
+Despacho 12119890
+
+“5. Nos termos da regulamentação vigente, o aspecto central para a viabilidade de eventual cessão (arrendamento) de slots reside na existência de alocação vigente e no integral cumprimento dos critérios previstos na regulação .
+
+(...)
+
+12. À luz da Resolução ANAC nº 682/2022 (arts. 12 e 36 a 42), dos processos SEI mencionados e das deliberações da Diretoria Colegiada (Votos SEI nº 11325303 e nº 11572550), conclui-se que, de acordo com o status atual decorrente da implementação das decisões pretéritas, não subsistem, no presente momento, slots alocados ao Grupo Voepass (Passaredo e/ou MAP) que possam ser objeto de cessão ou arrendamento . As retomadas e redistribuições relativas às temporadas S25 e W25 foram efetivadas em conformidade com o rito regulatório aplicável.”
+
+Despacho 12388334
+
+“2. Inicialmente, no que diz respeito à atual situação dos slots alocados ao Grupo Voepass (Passaredo e/ou MAP) que possam ser objeto de cessão ou arrendamento, registra-se que o tema já foi exaustivamente tratado no Despacho SAS nº 12119890, cujas conclusões ora se ratificam.
+
+3. No tocante à eventual possibilidade jurídica de utilização ou disposição de slots no âmbito de Plano de Recuperação Judicial, cumpre esclarecer que a Resolução ANAC nº 682/2022 introduziu importante inovação regulatória ao possibilitar a existência de mercado secundário de slots e ao estabelecer os contornos regulatórios em que as operações de troca ou cessão de slots devem se dar. Dessa forma, do ponto de vista estritamente regulatório, não se vislumbram, em tese, óbices à utilização de slots em Planos de Recuperação Judicial desde que, obviamente, no momento de eventual cessão sejam observadas, em sua integralidade, as disposições regulamentares estabelecidas pela ANAC a respeito do tema .”
+
+Despacho 13085489
+
+“4. Inicialmente, registra-se que aspectos relevantes da matéria já foram objeto de manifestações anteriores desta Superintendência, especialmente no Despacho SAS nº 12119890, cujo teor integralmente se ratifica, bem como em manifestações posteriores encaminhadas ao Gabinete no âmbito de demandas relacionadas ao mesmo processo recuperacional. Nessas oportunidades, esclareceu-se que a Resolução ANAC nº 682/2022 introduziu mecanismos regulatórios que admitem, em tese, a cessão de slots entre operadores aéreos, desde que observadas integralmente as condições e os requisitos previstos na regulamentação vigente e mediante análise da autoridade competente .
+
+(...)
+
+7. Dessa forma, uma vez mantidos os efeitos da referida decisão , não subsistem, no presente momento, slots alocados ao Grupo Voepass (Passaredo e/ou MAP) que possam ser objeto de cessão, arrendamento ou outra forma de utilização operacional . Ressalva-se, todavia, que consta do processo nº 00058.018511/2026-60 pedido apresentado pelas empresas que integram o grupo Voepass no sentido de que a ANAC reconsidere os efeitos futuros da decisão acima referida , "admitindo a possibilidade de que os slots historicamente operados pelo Grupo VoePass sejam atribuídos, nas próximas temporadas, às UPIs que serão leiloadas no âmbito da Recuperação Judicial, desde que operados por empresas detentoras de COA que participem do processo competitivo e arrematem as referidas UPIs".
+
+8. Feito tal registro, quanto ao ponto 4 da petição judicial, cumpre esclarecer que a utilização de slot por empresa que não seja a designada na alocação é vedada pelo art. 11 da Resolução nº 682/2022: "É vedada a utilização do slot por empresa de transporte aéreo ou operador aéreo que não seja o designado na alocação do slot." A norma adota o princípio da intransmissibilidade operacional direta: o slot é alocado nominalmente à empresa requerente e somente ela pode operá-lo. O fato de duas empresas pertencerem ao mesmo grupo econômico não autoriza, em condições ordinárias, de maneira automática, que uma opere o slot da outra.
+
+(...)
+
+15. Em relação ao questionamento constante do ponto 6 do petitório, registra-se que eventuais modelagens societárias ou econômicas concebidas no âmbito de processos de reorganização empresarial, inclusive mediante estruturação de Unidades Produtivas Isoladas (UPIs), não afastam, por si só, a aplicação do regime regulatório setorial nem têm o condão de restaurar direitos de uso de slots já extintos em razão do descumprimento das condições estabelecidas na regulamentação vigente . É de se reafirmar aqui, contudo, que o grupo societário apresentou pedido de reconsideração dos efeitos futuros da decisão da Diretoria Colegiada que determinou a retomada e a redistribuição dos slots em questão.”
+
+(Grifei)
+
+Em sua petição (SEI 12939422 ), o Grupo Voepass argumenta que a empresa MAP Linhas Aéreas e a Passaredo Transporte Aéreo S.A. são empresas do mesmo grupo econômico e que é admitida a cessão entre empresas, conforme posicionamento técnico exarado pela Anac. Assim, em resumo, sustenta que, diante da excepcionalidade da recuperação judicial do Grupo e visando o interesse público, a Diretoria Colegiada da Agência poderia relativizar a exigência de regularidade e permitir a cessão/arrendamento de slots por meio de UPI com efeitos em temporadas futuras, mesmo que a empresa (MAP) estivesse suspensa cautelarmente e desde que o cessionário fosse operador apto e a operação atendesse aos objetivos de eficiência e contestabilidade do mercado.
+
+Argumenta que a aprovação do Plano de Recuperação Judicial é fato novo relevante e que nova decisão da Diretoria Colegiada, com efeitos prospectivos, poderia viabilizar a monetização dos slots em prol dos credores e prevenir desfecho semelhante ao caso Avianca no sentido de: i) evitar a falência e seus efeitos deletérios; ii) maior número de empresas nos aeroportos coordenados; iii) preservar a concorrência mediante a entrada de novos operadores; e iv) promover a eficiência alocativa.
+
+Ressalta que, pela Lei de Introdução às Normas do Direito Brasileiro (LINDB), é possível que a Anac reconsidere os efeitos futuros da decisão de retomada dos slots do Grupo Voepass, admitindo a possibilidade de que esses slots sejam atribuídos às UPIs que seriam leiloadas no âmbito da Recuperação Judicial, desde que empresas detentoras de COA arrematem tais UPIs. Afirma que a solução atende a múltiplos interesses públicos:
+
+a) Garante a utilização efetiva de infraestrutura aeroportuária, evitando ociosidade;
+
+b) Promove a contestabilidade e a concorrência no setor aéreo, mediante a entrada de novos operadores aptos;
+
+c) Preserva o valor dos direitos em benefício da coletividade de credores da Recuperação Judicial, inclusive a Fazenda Pública;
+
+d) Viabiliza o soerguimento do Grupo Voepass em especial por meio da MAP, evitando a falência e seus efeitos deletérios sobre trabalhadores, consumidores e credores;
+
+e) Assegura a continuidade dos serviços de transporte aéreo nos aeroportos coordenados por maior número de empresas;
+
+f) Observa os princípios da razoabilidade, proporcionalidade e eficiência consagrados na LINDB e na Lei nº 9.784/1999.
+
+A PFE-ANAC, por meio do Parecer nº 8/2026/GAB/PFEANAC/PGF/AGU (SEI 13286528 ), entende ser possível viabilizar a modulação de efeitos futuros da decisão anterior da Diretoria Colegiada:
+
+“...é possível construir argumento fático-jurídico no sentido de que existe a possibilidade de que a DC/ANAC reconsidere e module os efeitos futuros da decisão pretérita do Órgão de cúpula da Agência, para admitir que, nas próximas temporadas, os slots historicamente operados pelo Grupo Voepass possam ser vinculados às UPIs a serem leiloadas na recuperação judicial, desde que a operação seja realizada exclusivamente por empresas detentoras de COA válido e sempre mediante nova convalidação e controle regulatório da ANAC .
+
+Tal situação difere da mera restauração automática de slots que estavam em nome do Grupo Voepass e que já foram extintos ou da reabertura retroativa de alocações já redistribuídas. Antes disso, funciona como alternativa que permite reconsideração e modulação dos efeitos futuros da decisão pretérita da DC/ANAC, para admitir que, nas próximas temporadas, os slots historicamente operados pelo Grupo Voepass possam ser vinculados às UPIs a serem leiloadas na recuperação judicial, desde que, repita-se, a operação seja realizada exclusivamente por empresas detentoras de COA válido e sempre mediante nova convalidação e controle regulatório da ANAC.”
+
+(Grifei)
+
+Afirma, ainda, que a ANAC possui ampla competência legal para construir solução excepcional, desde que fique demonstrado que se trata da alternativa que melhor atende ao interesse público:
+
+Esse arcabouço permite sustentar que a Agência não está aprisionada a uma leitura puramente mecânica da Resolução ANAC n. 682/2022 quando se depara com uma situação regulatória extraordinária, complexa e com múltiplas repercussões públicas. Pelo contrário: a Lei de criação da Agência lhe outorga densidade normativa e decisória para, preservando segurança, concorrência e eficiência aeroportuária, construir solução calibrada para casos-limite. Não se trata de negar a retomada já promovida, mas de reconhecer que a mesma autoridade que retomou e redistribuiu os slots é competente para reconsiderar os efeitos futuros de sua decisão, se demonstrado que isso melhor atende ao interesse público primário e setorial . (Grifei)
+
+A PFE-ANAC argumenta que a tese apresentada pelo grupo Voepass não afronta o núcleo do sistema e que há uma “janela regulatória” para que o mercado secundário de slots opere em favor da Recuperação Judicial.
+
+Entende que o racional econômico-financeiro do plano de Recuperação Judicial aprovado está estruturado na monetização dos slots e que uma solução regulatória que “preserve, ainda que prospectivamente, o valor econômico desse ativo regulatório tende a maximizar a utilidade pública da recuperação, em vez de precipitar sua frustração econômica”. Tal solução favoreceria o mercado secundário de slots sem comprometer a regulação concorrencial.
+
+Por fim, afirma que o leilão proposto geraria uma concorrência pelo mercado, e, portanto, haveria uma seleção de quem atribui maior valor ao ativo, tendo como base as seguintes condicionantes para atribuição ou cessão dos slots :
+
+I. a operação seja realizada exclusivamente por terceiro detentor de COA válido;
+
+II. haja convalidação prévia da ANAC;
+
+III. sejam respeitados capacidade aeroportuária, histórico exigido, limites concorrenciais e teto de participação aplicável;
+
+IV. não haja prejuízo a voos já redistribuídos e comercializados; e
+
+V. os recursos fiquem submetidos ao juízo da recuperação judicial.
+
+Considerando que o Parecer nº 8/2026/GAB/PFEANAC/PGF/AGU suscitou questões de cunho econômico-regulatório, julguei relevante diligenciar a área técnica acerca de pontos de sua competência. Por meio do Despacho 13508548 , apresentei as seguintes questões à SAS:
+
+1. A proposta de modulação futura apresentada é compatível com a Resolução nº 682/2022 e seus princípios no caso concreto?
+
+2. A modulação futura proposta afronta algum direito histórico dos slots em questão?
+
+3. Quantos slots cada empresa possui atualmente no aeroporto de Congonhas e quanto isso representa do total?
+
+4. Quais seriam, atualmente, as empresas aptas a participar de um eventual recebimento de slots decorrente do leilão das UPI?
+
+5. Há alguma perspectiva de que surja uma nova empresa apta a operar no aeroporto? Em qual prazo?
+
+6. A redistribuição dos slots traz quais impactos para as empresas que atualmente os operam, para os usuários e para o setor em geral?
+
+7. Em caso da nova distribuição dos slots do Gupo Voepass não ser realizada, haverá extinção de todo o valor econômico associado a eles, conforme afirmado no Parecer nº 8/2026/GAB/PFEANAC/PGF/AGU?
+
+8. A solução favoreceria a existência de um mercado secundário de slots sem comprometer outros aspectos da regulação?
+
+9. Quais são as datas previstas para o regular processo de distribuição de slots para as próximas duas temporadas?
+
+10. Havendo distribuição dos antigos slots da Voepass, como seriam as regras e a operacionalização? Como essa distribuição se inseriria nesse calendário?
+
+11. Quais são as implicações caso uma possível decisão judicial que concretize a proposta não seja efetivada até a data da distribuição dos slots?
+
+12. Qual é o risco de haver ociosidade dos slots e quais seriam os possíveis impactos para os passageiros e para o setor?
+
+A Gerência Técnica de Registro de Serviços Aéreos e Coordenação de Slots – GTRC/GEAM/SAS, por meio do Despacho 13538045 , apresentou as seguintes considerações aqui resumidas:
+
+A proposta de modulação futura apresentada não é compatível com o procedimento ordinário estabelecido pela Resolução nº 682/2022 e afrontaria o direito histórico constituído pelos atuais operadores desses slots, criando precedente capaz de gerar insegurança jurídica, reduzir a previsibilidade e fragilizar a credibilidade do processo de alocação.
+
+A eventual retirada ou reconfiguração dos slots atualmente operados pelas empresas que os receberam poderia provocar uma desorganização do planejamento de malha já estruturado, gerando riscos de descontinuidade e instabilidade da oferta de voos aos usuários, de ociosidade e uso ineficiente da infraestrutura e de redução da concorrência.
+
+A capacidade aeroportuária não ficou ociosa com a redistribuição dos slots; ao contrário, passou a ser utilizada por operadores aptos, em benefício da conectividade, da eficiência operacional, da concorrência e dos passageiros. O valor social da infraestrutura foi, portanto, preservado e efetivamente aproveitado pelo sistema de aviação civil. Nesse caso, não há destruição de valor regulatório; há apenas a não apropriação privada, pelo plano de recuperação, de um valor econômico que depende de autorização regulatória precária.
+
+A solução aventada não fortalece o mercado secundário de slots. A vinculação de slots que já não estejam validamente mantidos por empresa apta a uma UPI judicial pode criar precedente distinto: não se trataria propriamente de mercado secundário entre operadores aptos, mas de tentativa de monetização, no âmbito recuperacional, de expectativa regulatória pretérita.
+
+Primeiramente, gostaria de destacar que se trata do primeiro caso de empresa em recuperação judicial que perdeu slots por falta de cumprimento dos requisitos normativos e que teve suas operações encerradas desde a edição da Resolução nº 682/2022. Assim, considero relevante a análise do caso por parte da Diretoria Colegiada, em respeito aos trabalhadores da empresa e aos demais credores de boa-fé do Grupo Voepass, incluindo os entes federativos.
+
+O Grupo Voepass passou a deter os slots em questão após a edição da Resolução nº 682/2022, cuja publicação ocorreu em 9 de junho de 2022. O processo normativo (SEI 00058.047435/2020-12 ) passou por Análise de Impacto Regulatório, consulta pública, com amplo debate, circundando diversos dilemas regulatórios que nem sempre são visíveis e compreensíveis sem maior aprofundamento sobre o tema.
+
+Conforme destacado no Relatório de Análise de Impacto Regulatório ( 5077329 ), a norma buscou conciliar quatro objetivos regulatórios:
+
+3.11 DESCRIÇÃO DOS OBJETIVOS
+
+3.11.10 A equipe técnica identificou 4 objetivos a serem perseguidos e avaliados durante a revisão da norma que são apresentados a seguir:
+
+I - Tornar mais eficiente o uso da infraestrutura. A maior eficiência na utilização da infraestrutura é atingida por meio da otimização do uso da infraestrutura disponível. Uma das formas é o aumento da quantidade de passageiros com origem e destino (OD) ao aeroporto. O aumento da quantidade de passageiros com OD pode ocorrer em razão do comportamento das empresas aéreas (ou seja, utilizando-se mecanismos de incentivo) por meio da redução da quantidade de passageiros em conexão no aeroporto, do aumento da oferta de assentos (maiores aeronaves), do aumento do Load Factor , etc.
+
+II - Fomentar a contestabilidade do mercado . O mercado aéreo possui características naturais que o transformam naturalmente em oligopólio. Portanto, deve-se buscar uma regulação que: 1) não represente mais uma barreira à entrada; e 2) propicie o acesso ao aeroporto a empresas que rivalizem com as incumbentes. Destaque-se que o objetivo não é simplesmente promover o acesso a qualquer empresa, mas aproximar ao máximo as condições de mercado às de concorrência perfeita, possibilitando uma competição efetiva.
+
+III - Proporcionar estabilidade regulatória. A estabilidade regulatória está associada ao alinhamento aos padrões internacionais. Esse alinhamento facilita a operação das empresas aéreas, simplificando o conjunto de regras que devem ser cumpridas, por exemplo, para conseguir operar um voo entre 2 aeroportos coordenados.
+
+IV - Proporcionar melhor custo operacional/administrativo para o sistema. A intenção é avaliar o custo operacional adicional gerado às empresas aéreas para obtenção e operação do slot, assim como os custos administrativos (ANAC) adicionais decorrentes das alternativas que serão avaliadas.
+
+Entre os fatos que contextualizaram a edição da norma, está a paralisação das operações da Avianca (Oceanair Linhas Aéreas S.A.). A empresa era detentora de slots em aeroportos coordenados, e, na ocasião de sua recuperação judicial, também se aventou a alocação de slots a UPIs para leilão e consequente levantamento de fundos, ainda que a norma vigente à época não previsse nenhum tipo de mercado secundário. Como é de conhecimento público, tal intenção não prosperou.
+
+O presente contexto difere do cenário da Avianca no aspecto de que a norma atual vislumbra a existência de um mercado secundário por possibilitar a cessão, onerosa ou não, de slots. Essa possibilidade de cessão, contudo, não torna o slot um ativo da empresa e está sujeito ao cumprimento a diversos condicionantes:
+
+Art.11. É vedada a utilização do slot por empresa de transporte aéreo ou operador aéreo que não seja o designado na alocação do slot.
+
+Art. 12. O slot não integra o patrimônio da empresa de transporte aéreo ou do operador aéreo e representa o uso temporário da infraestrutura aeroportuária, cuja manutenção dos históricos de slots depende do cumprimento dos critérios estabelecidos por esta Resolução.
+
+§ 1º Os slots recebidos por meio de cessão de slots possuem a mesma natureza precária estabelecida pelo caput.
+
+§ 2º Todo o processo de monitoramento previsto nesta Resolução, incluindo o cálculo do índice de regularidade e a avaliação de mau uso do slot, será mantido mesmo após a cessão do slot.
+
+§ 3º O direito de uso temporário do slot será estabelecido para cada temporada somente após a confirmação da ANAC, conforme condições estabelecidas nesta Resolução.
+
+(...)
+
+Art. 15. Será permitida a cessão de slots entre empresas de transporte aéreo que operam ou planejam operar no aeroporto, mediante convalidação da ANAC que avaliará as características de cada operação e a capacidade aeroportuária declarada para o aeroporto.
+
+§ 1º A empresa de transporte aéreo que ceder slots para empresas de diferentes grupos econômicos não receberá slots do banco de slots por 3 (três) temporadas equivalentes, salvo nos casos em que não houver outra empresa interessada.
+
+§ 2º Só poderá ocorrer a cessão de slots se esses slots tiverem histórico de slots reconhecido por 3 (três) temporadas equivalentes consecutivas, inclusive entre empresas de transporte aéreo de mesmo grupo econômico.
+
+Conforme destacado reiteradamente pela área técnica, após a redistribuição dos slots da Passaredo Transporte Aéreo S.A. em junho de 2025, o Grupo Voepass deixou de possuir slots, como consequência da aplicação da norma vigente. Consequentemente, não restou nenhum deles passível de cessão.
+
+Por outro lado, o Grupo solicita que a Diretoria module sua decisão de redistribuição para temporadas futuras para monetização das UPIs conforme argumentos já apresentados nesse voto e a PFE-ANAC indicou viabilidade jurídica para tal alternativa.
+
+De um modo geral, resta clara a legalidade da cessão de slots, não apenas entre empresas de um mesmo grupo econômico, como também entre outras empresas. Aplicam-se, contudo, os diversos requisitos já destacados nesse voto e em outros documentos dos autos.
+
+O presente debate, então, concentra-se na possibilidade de modulação para efeitos futuros, para que, depois de tal modulação, caso aprovada, haja a cessão dos slots.
+
+Nesse aspecto, embora a PFE-ANAC tenha apontado viabilidade legal, entendo que a análise deve transcender a estrita legalidade, considerando reflexos econômico-regulatórios e preservação da segurança jurídica, não apenas para as empresas aéreas envolvidas, mas também considerando os potenciais impactos para o setor e a sociedade como um todo em caso de modulação da decisão anterior.
+
+Como destacado pela GTRC/GEAM/SAS, a realocação dos slots pertencentes à Passaredo ocorreu conforme previsto no normativo em vigor. A partir da redistribuição, as empresas que os receberam investiram não apenas para iniciar a operação desses slots, como para mantê-los, conforme regras vigentes à época. Deve-se recordar que os custos para manutenção dos slots não são desprezíveis e já foram destacados no processo de edição da Resolução nº 682/2022 (Processo 00058.047435/2020-12 - Voto 7249564 ):
+
+Meta de regularidade em Congonhas
+
+2.28 Com relação à meta de regularidade, atualmente definida em 90% para o aeroporto de Congonhas, a área técnica reconhece que empresas aéreas mantêm aeronaves ‘reservas’, em solo, para necessidades eventuais e, que isso pode ser entendido como um impacto colateral, possivelmente associado a uma meta de regularidade superdimensionada. E ainda, avalia que ‘A manutenção de um recurso oneroso em stand by visando atender a um critério regulatório, em situação que não se reverte em benefício aos usuários do transporte aéreo, não é saudável e se configura em um custo adicional, provavelmente desnecessário, o que possivelmente poderá impactar no preço das tarifas aéreas’. Dessa forma a SAS propõe a redução dessa meta para 85%.
+
+2.29 Avalio, no entanto, que a meta de regularidade para o aeroporto de Congonhas deve se alinhar às metas dos demais aeroportos coordenados e ao WASG, que é de 80%. É um critério crítico para o planejamento das empresas aéreas e que podem retornar em benefícios aos passageiros. O principal incentivo para que uma empresa preste serviços com regularidade e pontualidade é a manutenção do seu potencial competitivo frente às demais empresas, sobretudo no bojo do incremento de concorrência no aeroporto, esperado em decorrência das alterações regulatórias tratadas no âmbito do presente processo. Ademais, a exigência superior ao padrão de 80% tende a imputar altos custos operacionais aos operadores, custos estes que acabam impactando no potencial de repasse de preço do incremento de competição promovido por esta alteração normativa. Desse modo, proponho a redução de meta de regularidade de 85% para 80% para o aeroporto de Congonhas.
+
+Quando as empresas receberam os slots, não apenas investiram capital para utilizá-los, como, ao longo da operação, enfrentaram custos reais e custos de oportunidade para mantê-los. O cumprimento das metas de regularidade em uma infraestrutura escassa beneficia, em última instância, toda a sociedade, gerando uma operação mais eficiente e evitando a ociosidade de um bem valioso.
+
+Ressalto, nesse ponto, esclarecimento feito pela GTRC/GEAM/SAS (Despacho 13538045):
+
+Considerando que os slots retornaram ao banco de slots e foram redistribuídos conforme as regras da Resolução nº 682/2022 e da Decisão nº 533/2022, a capacidade aeroportuária não ficou ociosa; ao contrário, passou a ser utilizada por operadores aptos, em benefício da conectividade, da eficiência operacional, da concorrência e dos passageiros. O valor social da infraestrutura foi, portanto, preservado e efetivamente aproveitado pelo sistema de aviação civil . Nesse caso, não há destruição de valor regulatório; há apenas a não apropriação privada, pelo plano de recuperação, de um valor econômico que depende de autorização regulatória precária.
+
+Portanto, a eventual frustração de receita esperada pelos credores ou pelo plano de recuperação não equivale, tecnicamente, à extinção de valor econômico para o sistema de aviação civil.
+
+(Grifei)
+
+Ou seja, a partir do momento em que receberam os slots oriundos da deliberação anterior, as atuais operadoras incorreram em gastos e investimentos para cumprir os requisitos de regularidade, prevenindo a ociosidade da infraestrutura escassa, gerando eficiência e benefícios à toda sociedade. A distribuição promovida em consequência da decisão anterior da Diretoria Colegiada, portanto, garantiu a utilização efetiva da infraestrutura aeroportuária.
+
+As operações com slots pressupõem uma continuidade ao longo do tempo, com estabilidade normativa e decisória da Anac que permita a execução de investimentos em longo prazo. Modular o que foi decidido pela Diretoria Colegiada no caso dos slots é semelhante a uma revisão da decisão anterior. Tal mudança implica em instabilidade regulatória, abrindo precedente para outras modulações a cada temporada, gerando imprevisibilidade e insegurança jurídica, afastando investimentos no setor e prejudicando, de forma geral, toda a sociedade.
+
+A eventual revisão de decisão anterior demanda especial atenção aos reflexos sobre a segurança jurídica, uma vez que mudanças de entendimento, ainda que juridicamente possíveis, podem comprometer a estabilidade regulatória e gerar incertezas quanto à aplicação futura de normas e decisões da Agência.
+
+As empresas que operam atualmente no aeroporto corroboram esse entendimento, como pode ser visto por meio de suas manifestações (SEI 13539716 , 13539975 e 13546513 ). Apontam, entre outras ressalvas: que a redistribuição de slots foi realizada em conformidade com os regramentos vigente e produziu efeitos regulatórios, operacionais e comerciais que passaram a integrar o planejamento das empresas aéreas; que a possibilidade aventada pelo órgão do TJSP não possui amparo na regulação vigente à época; e que a ruptura da previsibilidade do sistema de coordenação de slots geraria insegurança para o planejamento da malha aérea, incentivaria a judicialização sistêmica por outros agentes econômicos e comprometeria a isonomia entre os agentes e a confiança legítima depositada pelos operadores nas regras estabelecidas.
+
+Importa, ainda, destacar manifestação da GTRC/GEAM/SAS acerca da incompatibilidade da proposta com a norma em vigor. Observa-se, pelo posicionamento técnico, que a proposta de modulação, além dos problemas mencionados, afronta ao princípio dos direitos históricos constantes da Resolução nº 682/2022 (Despacho 13538045 ):
+
+“...a proposta de modulação futura não representa simples aplicação do mecanismo ordinário de cessão ou transação de slots previsto na regulação. Ao contrário, implicaria reabrir, em momento posterior, uma oportunidade regulatória que já se encerrou, atribuindo efeitos econômicos a slots que já retornaram ao banco, foram redistribuídos e passaram a integrar o planejamento operacional de terceiros.
+
+Por essa razão, entende-se que a proposta não é compatível com a Resolução nº 682/2022 e seus princípios no caso concreto, especialmente com a previsibilidade do processo de coordenação e das alocações de slots já realizadas, a isonomia entre operadores e o uso eficiente da infraestrutura aeroportuária escassa .
+
+(...) os slots não estariam sendo apenas ‘reaproveitados’ ou ‘modulados’ prospectivamente; estariam sendo retomados de operadores que os receberam de forma regular, que os operaram conforme a regulação e que, por isso, constituíram direito histórico legítimo sobre essas séries de slots.
+
+(...)
+
+A eventual retirada ou reconfiguração dos slots atualmente operados por empresas que os receberam regularmente no processo de redistribuição teria impactos relevantes sob as perspectivas operacional, concorrencial e institucional.
+
+Para as empresas que atualmente operam esses slots, a principal consequência seria a desorganização do planejamento de malha já estruturado com base nas alocações realizadas pela ANAC. A operação de slots em aeroportos coordenados envolve programação de voos, comercialização antecipada de bilhetes, alocação de aeronaves e tripulações, contratação de serviços aeroportuários, planejamento de manutenção de aeronaves, ajustes de conectividade e compromissos assumidos com passageiros e demais agentes da cadeia. Quanto mais avançada a temporada ou quanto mais próxima a data de operação, maior tende a ser o impacto decorrente de eventual alteração superveniente.
+
+Além do impacto operacional imediato, a retirada de slots regularmente alocados e operados conforme a Resolução nº 682/2022 afetaria a confiança legítima dos operadores no processo de coordenação. As empresas que receberam os slots do banco, passaram a operá-los e cumpriram os requisitos regulatórios aplicáveis consolidando sua estratégia operacional com base na estabilidade das decisões administrativas da Agência. A reversão posterior dessas alocações, sem descumprimento imputável aos atuais operadores, poderia gerar percepção de insegurança jurídica e reduzir a previsibilidade do regime de coordenação.
+
+Para os usuários, o principal risco está relacionado à continuidade e estabilidade da oferta. A substituição ou retirada de operadores que já estão utilizando os slots pode gerar remanejamentos de malha, cancelamentos, reacomodações, redução temporária de oferta e perda de conectividade, especialmente em aeroporto de elevada demanda como Congonhas. A preservação da operação por empresas aptas e efetivamente capazes de utilizar os slots tende a reduzir esses riscos e a assegurar melhor aproveitamento da infraestrutura disponível.
+
+Para o setor em geral, o impacto mais relevante seria sobre a confiabilidade do modelo regulatório. A coordenação de slots depende de regras estáveis, calendário previsível e respeito aos efeitos das alocações regularmente realizadas. Caso slots já redistribuídos, operados e aptos à formação de histórico sejam retomados para atender a uma solução posterior e excepcional, cria-se precedente capaz de fragilizar a credibilidade do processo de alocação, tanto perante os operadores nacionais quanto perante agentes internacionais que se orientam por calendários, práticas e padrões globais de coordenação aeroportuária.” (grifei)
+
+Nesse sentido, a modulação prospectiva da decisão anterior da Diretoria Colegiada sobre a distribuição dos slots, ao contrário do que argumenta o Grupo Voepass, a meu ver, enfraquece o mercado secundário, afastando tanto o interesse das atuais empresas, como de potenciais interessados no futuro, além dos efeitos já mencionados anteriormente.
+
+Acrescenta-se a isso a incerteza acerca da arrecadação de um eventual leilão. As atuais incumbentes no aeroporto de Congonhas (Azul, Gol e Latam) detém 99,9% de participação de mercado [2] em termos de passageiros aéreos regulares. Todas essas empresas manifestaram oposição à modulação proposta (SEI 13539716 , 13539975 e 13546513 ) e não há garantias de sua participação em um leilão. Quanto menos interessados ou potenciais participantes do leilão, menor será sua chance de êxito em termos de arrecadação.
+
+Além disso, em que pese a existência de potenciais interessados ( 13798789 ) , não há garantias de entrada de novos operadores e, portanto, não é possível afirmar que a modulação proposta promoveria a contestabilidade e a concorrência no setor aéreo. Ainda que houvesse a entrada de um novo operador, a contestabilidade e a concorrência no mercado dependem de diversos outros fatores além da entrada de uma nova empresa.
+
+Ademais, conforme destacado no Relatório de Análise de Impacto Regulatório ( 5077329 ), a Resolução ANAC nº 682/2022 buscou conciliar quatro diferentes objetivos regulatórios:
+
+I - Tornar mais eficiente o uso da infraestrutura
+
+II - Fomentar a contestabilidade do mercado
+
+III - Proporcionar estabilidade regulatória
+
+IV - Proporcionar melhor custo operacional/administrativo para o sistema
+
+Os mecanismos já existentes na norma para fomento à contestabilidade do mercado são, portanto, aqueles avaliados pela Agência como os mais adequados para a promoção do interesse público, tendo em vista os múltiplos objetivos regulatórios envolvidos. E foram assim definidos após ampla participação social e seguindo o rito regular de processo normativo da Agência.
+
+Nesse contexto, entendo que eventual medida excepcional com vistas a promover contestabilidade do mercado, para além das medidas previstas na Resolução ANAC nº 682/2022 para o caso geral, precisaria ser motivada pela identificação de um problema específico a ser resolvido no caso concreto, o que não entendo ser o caso. De fato, a promoção da contestabilidade do mercado nem mesmo consiste no objeto principal do pleito, sendo apenas um aspecto acessório da argumentação trazida pela pleiteante.
+
+Além disso, uma medida que extrapole a previsão normativa, precisaria conferir razoável grau de segurança quanto aos seus resultados, o que, como exposto acima, também não entendo ser o caso.
+
+Por fim, seus potenciais efeitos sobre a contestabilidade de mercado deveriam ser ponderados pelos impactos sobre os demais objetivos regulatórios e, como já abordado, a medida proposta pode afetar negativamente a estabilidade regulatória e a eficiência no uso da infraestrutura.
+
+Diante disso, considero que os mecanismos já previstos na Resolução ANAC nº 682/2022 para promoção da contestabilidade de mercado, os quais foram calibrados para equilibrar os diferentes objetivos regulatórios, após ampla discussão pública, devem ser privilegiados em relação à medida extraordinária ora em análise.
+
+Há um grande risco institucional e regulatório, gerando insegurança jurídica e perda de atratividade no setor, ao se modular a decisão de alocação de slots, ainda que para alocações futuras, em contrapartida da realização de um leilão com resultados incertos, que podem frustrar significativamente as necessidades da referida Recuperação Judicial.
+
+Considero, portanto, que a manutenção da decisão anterior tem maior potencial de preservar o interesse público e a segurança jurídica, resguardando os princípios da legalidade, da eficiência, da razoabilidade e da proporcionalidade previstos no arcabouço legal.
+
+Voto
+
+Ante o exposto, considero que a estabilidade e credibilidade da Resolução nº 682/2022 devem ser privilegiadas, visto que a norma passou por longo processo normativo, em que foram debatidos os mecanismos mais adequados para conciliar os diferentes objetivos regulatórios inerentes à alocação de slots. Assim, embora se vislumbre caminho jurídico para uma modulação da decisão de redistribuição para temporadas futuras, entendo que a proposta é conflitante com o marco regulatório vigente e poderia gerar insegurança jurídica e afetar os investimentos e as operações no setor.
+
+Portanto, VOTO pela NÃO modulação de efeitos futuros , mantendo-se a decisão da Diretoria Colegiada conforme deliberado na 9ª Reunião Deliberativa da Diretoria Colegiada, realizada no dia 24 de junho de 2025, no processo 00058.021107/2025-92 ( 11726646 ).
+
+É como voto
+
+CLAUDIO BESCHIZZA IANELLI
+
+Diretor
+
+[1] Conforme Resolução Interna nº 10/2026
+
+[2] Dados de demanda e oferta disponíveis em https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas/mercado-do-transporte-aereo/demanda-e-oferta . Acesso em 17/07/26.
+
+Documento assinado eletronicamente por Cláudio Beschizza Ianelli , Diretor , em 01/09/2026, às 11:21, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13789682 e o código CRC B0CACEC2 .
+
+SEI nº 13789682

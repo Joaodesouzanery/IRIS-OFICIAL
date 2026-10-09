@@ -1,0 +1,341 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.050137/2026-97
+
+Tipo: Organização e Funcionamento: Normas e Regulamentações
+
+Data de Geração: 16/06/2026
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (22 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13489764 Relatório de AIR 1 18/06/2026 18/06/2026 GMAT
+13492123 Nota Técnica 3 18/06/2026 18/06/2026 GMAT
+13492310 Proposta de Ato (Normativo, Decisão etc.) 18/06/2026 18/06/2026 GMAT
+13501799 Despacho 18/06/2026 18/06/2026 GMAT
+13514039 Despacho 22/06/2026 22/06/2026 ASTEC
+13543514 Certidão de Deliberação 29/06/2026 29/06/2026 ASTEC
+13729371 Nota Técnica 4 13/08/2026 13/08/2026 GMAT
+13729546 Relatório de AIR 2 13/08/2026 13/08/2026 GMAT
+13729597 Proposta de Ato (Normativo, Decisão etc.) 13/08/2026 13/08/2026 GMAT
+13730627 Proposta de Ato (Normativo, Decisão etc.) 13/08/2026 13/08/2026 GMAT
+13731385 Despacho 13/08/2026 13/08/2026 SGM
+13738922 Certidão de Distribuição 14/08/2026 14/08/2026 ASTEC
+13743539 Relatório de Diretoria 25/08/2026 25/08/2026 DIR-CBI
+13767696 Voto 25/08/2026 25/08/2026 DIR-CBI
+13780711 Despacho 25/08/2026 25/08/2026 ASTEC
+13785011 Voto 28/08/2026 28/08/2026 DIR-P
+13786527 Voto 28/08/2026 28/08/2026 DIR-MNM
+13788684 Voto 28/08/2026 28/08/2026 DIR-RJH
+13797905 Voto 28/08/2026 28/08/2026 DIR-RCM
+13805650 Aviso 407 31/08/2026 31/08/2026 ASTEC
+13812450 Anexo DOU 01/09/2026 01/09/2026 ASTEC
+13813328 Certidão de Deliberação 01/09/2026 01/09/2026 ASTEC
+
+Lista de Andamentos (56 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+11/09/2026 10:31
+DIR-MNM
+
+Conclusão do processo na unidade
+
+02/09/2026 14:19
+GMAT
+
+Processo recebido na unidade
+
+02/09/2026 10:25
+GMAT
+
+Processo remetido pela unidade SGM
+
+02/09/2026 10:23
+SGM
+
+Processo recebido na unidade
+
+01/09/2026 17:27
+SGM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 14:10
+GMAT
+
+Alterado nível de acesso do documento 13730627 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+01/09/2026 14:03
+GMAT
+
+Alterado nível de acesso do documento 13729371 (Nota Técnica 4) para público
+
+01/09/2026 14:03
+GMAT
+
+Alterado nível de acesso do documento 13729546 (Relatório de AIR 2) para público
+
+01/09/2026 13:52
+GMAT
+
+Alterado nível de acesso do documento 13729597 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+01/09/2026 13:50
+GMAT
+
+Alterado nível de acesso do processo para público
+
+29/08/2026 07:39
+DIR-RJH
+
+Conclusão do processo na unidade
+
+26/08/2026 11:18
+DIR-MNM
+
+Processo recebido na unidade
+
+26/08/2026 06:30
+DIR-P
+
+Processo recebido na unidade
+
+25/08/2026 16:51
+DIR-RCM
+
+Processo recebido na unidade
+
+25/08/2026 12:43
+DIR-RJH
+
+Processo recebido na unidade
+
+25/08/2026 11:57
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+25/08/2026 11:57
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+20/08/2026 12:28
+ASTEC
+
+Reabertura do processo na unidade
+
+14/08/2026 17:41
+DIR-CBI
+
+Processo recebido na unidade
+
+14/08/2026 17:37
+ASTEC
+
+Conclusão do processo na unidade
+
+14/08/2026 17:34
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+14/08/2026 14:30
+ASTEC
+
+Processo recebido na unidade
+
+14/08/2026 10:39
+SGM
+
+Conclusão do processo na unidade
+
+14/08/2026 10:38
+SGM
+
+Reabertura do processo na unidade
+
+13/08/2026 19:24
+ASTEC
+
+Processo remetido pela unidade SGM
+
+13/08/2026 13:22
+SGM
+
+Processo recebido na unidade
+
+13/08/2026 13:15
+SGM
+
+Processo remetido pela unidade GMAT
+
+13/08/2026 11:46
+GTMT
+
+Processo recebido na unidade
+
+13/08/2026 11:46
+GTMT
+
+Processo remetido pela unidade GMAT
+
+14/07/2026 15:59
+GMAT
+
+Processo recebido na unidade
+
+06/07/2026 10:54
+DIR-RJH
+
+Conclusão do processo na unidade
+
+02/07/2026 13:38
+DIR-MNM
+
+Conclusão do processo na unidade
+
+01/07/2026 09:13
+DIR-CBI
+
+Conclusão do processo na unidade
+
+30/06/2026 15:50
+GMAT
+
+Processo remetido pela unidade SGM
+
+30/06/2026 15:45
+SGM
+
+Processo recebido na unidade
+
+30/06/2026 11:37
+DIR-P
+
+Conclusão do processo na unidade
+
+29/06/2026 16:41
+SGM
+
+Processo remetido pela unidade ASTEC
+
+29/06/2026 13:34
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+23/06/2026 08:32
+DIR-CBI
+
+Processo recebido na unidade
+
+22/06/2026 16:57
+DIR-RCM
+
+Processo recebido na unidade
+
+22/06/2026 14:57
+DIR-RJH
+
+Processo recebido na unidade
+
+22/06/2026 14:48
+DIR-P
+
+Processo recebido na unidade
+
+22/06/2026 14:30
+DIR-MNM
+
+Processo recebido na unidade
+
+22/06/2026 14:00
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+22/06/2026 14:00
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+22/06/2026 14:00
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+22/06/2026 14:00
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+22/06/2026 14:00
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+19/06/2026 14:41
+GMAT
+
+Reabertura do processo na unidade
+
+19/06/2026 11:36
+ASTEC
+
+Processo recebido na unidade
+
+19/06/2026 10:38
+DIR-P
+
+Processo recebido na unidade
+
+19/06/2026 09:48
+DIR-P
+
+Processo remetido pela unidade GMAT
+
+19/06/2026 09:48
+ASTEC
+
+Processo remetido pela unidade GMAT
+
+16/06/2026 11:28
+GMAT
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

@@ -1,0 +1,169 @@
+SEI/ANAC - 12950846 - Voto
+
+Voto
+
+PROCESSO: 00058.030675/2025-84
+
+interessado: SUPERINTENDÊNCIA DE INFRAESTRUTURA AEROPORTUÁRIA - SIA
+
+RELATOR: ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+FUNDAMENTAÇÃO JURÍDICA
+
+A Lei nº 11.182, de 27 de setembro de 2005, estabelece a competência da Diretoria da Agência Nacional de Aviação Civil (ANAC) para exercer o poder normativo da Agência (art. 11, V).
+
+Por sua vez, o Regimento Interno da ANAC, Resolução nº 381, de 14 de junho de 2016, atribui competência comum às superintendências para analisar normas e recomendações da Organização da Aviação Civil Internacional (OACI) e propor medidas para implementá-las, por meio de alterações normativas, ou propor a notificação de diferença (art. 31. XXIII)
+
+Adicionalmente, o Regimento Interno da ANAC também atribui competência à Superintendência de Infraestrutura Aeroportuária (SIA) para submeter à Diretoria propostas de atos normativos sobre segurança de aeronaves, pessoas e bens nas operações em áreas de movimento de aeronaves e vias de serviço em aeródromos e no seu entorno (art. 33, I, "a").
+
+Pelo exposto, restam atendidos os requisitos de competência quanto à elaboração da proposta, deliberação e decisão.
+
+DA ANÁLISE
+
+Introdução
+
+Conforme indicado no Relatório de Diretoria 12935518 , o presente processo trata de proposta de emendas aos Regulamentos Brasileiros de Aviação Civil (RBACs) nº 153 e nº 154 elaborada pela SIA após a avaliação das contribuições recebidas durante a Consulta Pública nº 10/2025, aprovada na 11ª Reunião Deliberativa da Diretoria Colegiada, realizada no dia 26 de agosto de 2025.
+
+Inicialmente, considero pertinente recapitular os principais eventos que motivaram a elaboração da proposta normativa e as etapas do processo normativo percorridas até a presente deliberação.
+
+O Relatório de Análise de Impacto Regulatório (AIR) nº 5/2025/GTNO-SIA/GNAD/SIA (SEI 11667905 ) registra que, em 2023, durante reunião do Aerodrome Design and Operations Panel (ADOP), fórum técnico vinculado à Comissão de Navegação Aérea da Organização de Aviação Civil Internacional (OACI), foram discutidos temas que culminaram na proposição da Emenda 18 ao Volume I do Anexo 14 da Convenção de Chicago, referente a Padrões Internacionais e Práticas Recomendadas sobre Projeto e Operações de Aeródromos. Entre os temas debatidos, destacam-se:
+
+Superfícies limitadoras de obstáculos em aeródromos e heliportos/helipontos;
+
+Revisão do método de projeto e dos parâmetros que definem o Código de Referência de Aeródromo;
+
+Disposições internacionais relativas aos serviços de solo em aeródromos;
+
+Auxílios visuais para operações diurnas/noturnas e em todas as condições meteorológicas;
+
+Melhoria da segurança operacional por meio de auxílios visuais aprimorados para sinalização de obras em aeródromos.
+
+A proposta elaborada pelo ADOP foi posteriormente adotada pelo Conselho da OACI, em 28 de março de 2025, com aplicabilidade faseada em três etapas:
+
+27 de novembro de 2025 para provisões relativas a projeto de aeródromos, auxílios visuais e serviço de gerenciamento de pátio;
+
+26 de novembro de 2026 para provisões relacionadas a serviços auxiliares ao transporte aéreo;
+
+21 de novembro de 2030 para provisões relacionadas a superfícies limitadoras de obstáculos.
+
+Por meio da State Lette r AN 4/1.2.31-25/23 (SEI 11473135 ) , o Secretariado da OACI notificou os Estados Membros acerca da adoção da Emenda 18, com o destaque de que as alterações foram promovidas com os seguintes objetivos:
+
+Refletir de forma mais adequada a largura necessária da faixa de pista para pistas código 3 e eliminar discrepâncias geométricas existentes entre diferentes números de código em operações não instrumento;
+
+Proporcionar melhor consciência situacional aos pilotos mediante aprimoramento dos auxílios visuais;
+
+Assegurar que os Estados avaliem regularmente os impactos dos serviços auxiliares na segurança operacional; e
+
+Garantir proteção mais eficiente e adaptável do espaço aéreo contra obstáculos.
+
+Nesse contexto, a SIA instaurou o presente processo normativo com a finalidade de avaliar a internalização das alterações promovidas pela Emenda 18 ao ordenamento regulatório brasileiro. Para tanto, a área técnica definiu dois grandes problemas regulatórios: (i) não conformidade com a OACI, subdividida em sete temas específicos; e (ii) ajustes pontuais e melhorias no regulamento vigente.
+
+Problema 1.1: Largura da faixa de pista em pista para operação visual código 3
+
+Neste subtema, foi avaliada a proposta de redução da largura da faixa de pista para operações não instrumento em pistas código 3, de 75m para 55m.
+
+Destaca-se que, anteriormente à Emenda 18 (e como atualmente é definido no RBAC nº 154), a largura da faixa de pista para operações não instrumento em pista código 3 era a mesa largura para esse tipo de operação em pista código 4, isto é, 75m de cada lado do eixo central da pista e de seu prolongamento, ao longo de toda a extensão da faixa. Já para pistas código 2, essa distância era de 40m.
+
+O Relatório Final do ADOP/4, citado no Relatório de AIR, registra que os especialistas do Painel concluíram que esse salto de 40m para 75m na largura da faixa exigida para pistas não instrumento resultava em uma sub-representação de aeródromos código 3 em comparação com aeródromos código 2 ou código 4. Estudos conduzidos por uma força tarefa vinculada ao Painel, no qual foram avaliadas ocorrências de saídas laterais de pista entre os anos de 1995 e 2018, identificaram que a taxa de captura de saídas laterais para operações não instrumento em pistas de código 3 permanecia superior à média geral, mesmo considerando a largura reduzida de 55 metros. A conclusão do grupo de especialistas foi de que a atual exigência de largura de faixa de pista de 75m para pistas código 3 é excessivamente conservadora.
+
+Com base nas constatações do ADOP, bem como após avaliação comparativa com regulamentos de outras autoridades de aviação de referência ( Federal Aviation Administration - FAA; Transport Canada Civil Aviation - TCCA; e Civil Aviation Safety Authority - CASA), a SIA concluiu pela conveniência de incorporar ao RBAC nº 154 a alteração proposta pela Emenda 18..
+
+Problema 2.1: Auxílios visuais – compatibilização no valor do alcance visual de pista ( Runway Visual Range - RVR) para as pistas de aproximação de precisão CAT II
+
+A proposta normativa também busca harmonizar o valor do RVR aplicável às pistas de aproximação de precisão CAT II, reduzindo-o de 350m para 300m.
+
+De acordo com as conclusões dos especialistas do ADOP, a ausência de harmonização poderia resultar em situações operacionais incoerentes, nas quais aeronaves autorizadas a pousar em condições CAT II encontrariam limitações posteriores de circulação em solo decorrentes de requisitos mais restritivos aplicáveis às pistas de táxi.
+
+Estudos adicionais demonstraram que a diferença operacional entre RVR de 300m e 350m não é perceptível ao olho humano nas condições analisadas.
+
+Destaca-se que, durante discussões entre as assessorias dos diretores e a SIA, foi questionada a manutenção do valor do RVR em 350m para os requisitos relativos às luzes de barra de parada e barra de entrada proibida. A SIA esclareceu que tais dispositivos não se vinculam diretamente à categoria de aproximação da pista, razão pela qual não se justificaria a alteração correspondente.
+
+Problema 1.3: Sinalização horizontal de cabeceira
+
+A proposta normativa também incorpora exigência de sinalização horizontal de cabeceira em pistas pavimentadas não instrumento de número de código 1 ou 2 .
+
+Segundo a SIA, a medida busca conferir maior coerência ao sistema de sinalização horizontal das pistas, permitindo adequada delimitação da cabeceira e melhor organização das demais marcações horizontais.
+
+A área técnica observou, ainda, que diversos aeródromos já adotam voluntariamente esse tipo de sinalização, o que indica potencial impacto reduzido da alteração.
+
+Problema 1.4 a 1.7: Auxílios visuais, gerenciamento de pátio e ajustes pontuais
+
+Nos demais temas analisados, a proposta contempla:
+
+inclusão de parâmetros relativos à sinalização vertical de distância remanescente de pista;
+
+aprimoramento dos auxílios visuais empregados em áreas interditadas ou em obras;
+
+introdução de requisitos relacionados ao gerenciamento de pátio e aos serviços auxiliares;
+
+ajustes pontuais relativos a sinalização horizontal, iluminação, orientação visual de estacionamento, abastecimento de aeronaves e outros dispositivos correlatos.
+
+De forma geral, verifica-se que as alterações buscam promover maior padronização regulatória, aprimorar a segurança operacional e atualizar o regulamento brasileiro à luz das evoluções recentes dos padrões internacionais da OACI
+
+A SIA também esclareceu que determinados dispositivos da Emenda 18, especialmente aqueles de natureza meramente orientativa, não foram internalizados por razões técnicas e estruturais.
+
+Problema 2: Ajustes pontuais e melhorias no regulamento
+
+A área técnica também propôs ajustes terminológicos voltados à uniformização do emprego das expressões “pista instrumento” e “pista não instrumento” ao longo do RBAC nº 154.
+
+Conforme apontado pela SIA, a medida contribui para maior consistência entre o texto normativo brasileiro e o Anexo 14 da OACI em sua versão em inglês, favorecendo clareza regulatória e interpretação uniforme dos dispositivos.
+
+Consulta Pública e análise da Procuradoria Federal Especializada junto à ANAC (PFE/ANAC)
+
+Após a conclusão da AIR, a matéria foi submetida à apreciação da Diretoria colegiada na 26ª Reunião Administrativa Eletrônica da Diretoria Colegiada, realizada no período de 15 a 18 de julho de 2025. Destaca-se que o colegiado tomou ciência dos estudos (SEI 11803965 ) e não teceu quaisquer considerações ao trabalho apresentado pela área técnica.
+
+Posteriormente, na 11ª Reunião Deliberativa da Diretoria Colegiada, realizada no dia 26 de agosto 2025, a instauração de consulta pública da proposta normativa foi aprovada, por unanimidade, nos termos termos do voto do então relator da matéria (SEI 11932983 ). O referido voto ressaltou que " as soluções propostas neste projeto normativo para os temas abordados são adequadas e suficientes para alcançar, entre outros resultados, um maior alinhamento da regulamentação da Anac, no que se refere à segurança operacional, com as diretrizes da OACI, a atualização do arcabouço regulatório brasileiro com mudanças baseadas em dados e análises de impacto, seguindo boas práticas e garantindo a qualidade regulatória, bem como a atuação do Regulamento em consonância com a realidade das operações aeroportuárias em diferentes tipos de aeródromos e configurações operacionais presentes no Brasil, promovendo uma melhor gestão de riscos e mantendo um equilíbrio com as exigências impostas aos regulados ."
+
+Durante a Consulta Pública nº 10/2025, realizada no período de 29 de agosto a 30 de setembro de 2025, foram recebidas 20 contribuições, das quais 7 foram parcialmente acatadas e resultaram em ajustes textuais destinados ao aprimoramento da redação normativa, sem alteração substancial do mérito da proposta. O detalhamento da análise realizada pela SIA pode ser verificado no Relatório de Análise de Contribuições (SEI 12218393 ).
+
+Encerrada essa etapa, o processo foi submetido à análise da PFE/ANAC, que, por meio do Parecer nº 3/2026/FIN/PFEANAC/PGF/AGU (SEI 12841935 ), concluiu não haver óbices jurídicos ao prosseguimento da proposta.
+
+Proposta de alteração do requisito 154.207(d)(4) do RBAC nº 154
+
+Na Nota Técnica nº 20/2025/GTNO-SIA/GNAD/SIA (SEI 12217077 ), a SIA registrou três oportunidades adicionais de aperfeiçoamento identificadas após a consulta pública. Dentre elas, merece destaque a alteração proposta para o requisito 154.207(d)(4) do RBAC nº 154, relativa à limitação de objetos na faixa de pista..
+
+A nova redação proposta passa a admitir objetos fixos após a porção preparada da faixa de pista que ultrapassem a cota do eixo da pista, desde que respeitem um distanciamento mínimo em relação ao eixo da pista (62,5m para pista instrumento de número de código 1 e 2; e 100m para pista instrumento de número de código 3 e 4), bem como a rampa de 5% ascendente já prevista no regulamento vigente.
+
+Na prática, a alteração proposta busca antecipar parcialmente os efeitos da Emenda 18 quanto à redefinição do ponto de início das superfícies de transição, que passará a ter aplicabilidade a partir de 21 de novembro de 2030.
+
+Com a finalidade de robustecer a fundamentação dessa proposta, solicitei à SIA esclarecimentos adicionais quanto aos fundamentos legais e regulatórios da alteração, sua compatibilidade com as normas do Departamento de Controle do Espaço Aéreo (DECEA) e os impactos esperados sobre segurança operacional e custos regulatórios.
+
+No Despacho 13213840 , a área técnica e xplica que, a partir de 21 de novembro de 2030, a Emenda 18 substituirá o atual sistema de classificação baseado em Número de Código pelo sistema Aeroplane Design Group (ADG), que permitirá proteção mais aderente às características reais das aeronaves. Adicionalmente, a SIA detalha todas as alterações que serão promovidas pela Emenda 18 às superfícies limitadoras de obstáculos, também com aplicabilidade a partir de 2030.
+
+Particularmente, em relação à superfície de transição, é destacado que a Emenda 18 introduzirá modificações geométricas substanciais para refletir o comportamento das aeronaves e eliminar restrições excessivas ao uso do solo lateral à pista. A área técnica ainda informa que, no Brasil, o regulamento que trata dessa superfície é a ICA 11-408 do Departamento de Controle do Espaço Aéreo (DECEA) do Comando da Aeronáutica.
+
+A SIA esclareceu, ainda, que as superfícies de transição tratadas pela ICA 11-408 possuem natureza distinta da rampa prevista no RBAC nº 154. Enquanto esta constitui requisito relacionado à infraestrutura física de solo, aquelas correspondem a superfícies imaginárias destinadas à proteção do espaço aéreo. Dessa forma, conclui-se que a proposta normativa não gera incompatibilidade com a regulamentação do DECEA, mas racionaliza exigências relacionadas à infraestrutura aeroportuária, sem afastar a necessária avaliação aeronáutica de obstáculos.
+
+Em relação aos efeitos esperados pela alteração do requisito, a área técnica destacou que a alteração tende a reduzir custos associados a terraplenagem e intervenções civis desnecessárias, sem comprometimento da segurança operacional, conclusão respaldada por estudos quantitativos conduzidos no âmbito da OACI ao longo de vários anos .
+
+A área técnica encerra a sua argumentação afirmando que "a alteração proposta para o RBAC nº 154, mesmo ocorrendo antes da internalização definitiva do Capítulo 4 da Emenda 18 pelo DECEA, não gera incongruências nem riscos à segurança. Pelo contrário, elimina exigências de terraplenagem e demolições desnecessárias (competência exclusiva da ANAC); mantém a segurança do voo garantida pela avaliação de obstáculos do DECEA, que continua soberana sobre o espaço aéreo; e atua como um vetor de modernização, preparando a infraestrutura aeroportuária brasileira para uma transição harmoniosa quando o DECEA atualizar a ICA 11-408 até 2030".
+
+Ao final do Despacho, a SIA sugeriu ajustes na redação do parágrafo 154.207(d)(4) para evitar uma pequena zona de descontinuidade das rampas de proteção e a possibilidade de criação de uma região com restrições menos exigentes.
+
+Entendo, portanto, que a proposta promove adequado equilíbrio entre segurança operacional, racionalidade regulatória e aderência às características atuais das operações aeroportuárias.
+
+Conclusão
+
+Diante de todo o exposto, considerando os estudos técnicos desenvolvidos pela SIA, as contribuições recebidas e analisadas no âmbito da Consulta Pública nº 10/2025, bem como o entendimento manifestado pela PFE/ANAC quanto à viabilidade jurídica da proposta, entendo que as emendas aos RBACs nº 153 e nº 154 se encontram maduras e adequadamente fundamentadas para aprovação por esta Diretoria Colegiada.
+
+Considero que as alterações propostas promovem relevante atualização do arcabouço regulatório brasileiro aplicável à infraestrutura aeroportuária, alinhando-o às evoluções recentes dos padrões e práticas recomendadas da OACI, sem afastar o necessário compromisso com a segurança operacional.
+
+Ao incorporar soluções construídas a partir de estudos técnicos e evidências operacionais, com a devida avaliação do impacto regulatório, a proposta contribui para maior racionalidade, proporcionalidade e eficiência na regulação do setor, com consequente redução de exigências excessivamente conservadoras, que já não se mostram compatíveis com a realidade operacional contemporânea.
+
+Ademais, as medidas ora propostas favorecem maior previsibilidade regulatória e podem contribuir para o desenvolvimento e a modernização da infraestrutura aeroportuária nacional, inclusive da aviação regional, ao permitir soluções mais adequadas às características operacionais dos aeródromos brasileiros, preservando-se, em todos os casos, os níveis de segurança requeridos para a aviação civil.
+
+DO VOTO
+
+Desse modo, diante das razões expostas e com fundamento no art. 11, inciso V, da Lei nº 11.182, de 2005, VOTO FAVORAVELMENTE à aprovação da proposta de emendas aos RBACs nº 153 e 154, nos termos das Proposta de Ato (SEI 12246059 ) apresentada pela Superintendência de Infraestrutura Aeroportuária, com o ajuste proposto pela área técnica no parágrafo 26 do Despacho 13213840 .
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 08/05/2026, às 18:35, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12950846 e o código CRC AFC48518 .
+
+SEI nº 12950846

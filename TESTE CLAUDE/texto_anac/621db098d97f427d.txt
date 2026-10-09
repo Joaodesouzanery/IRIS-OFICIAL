@@ -1,0 +1,370 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00065.052495/2025-64
+
+Tipo: Fiscalização e Vigilância Continuada: Autos de Infrações e Multas
+
+Data de Geração: 03/12/2025
+
+Interessados: Agência Nacional de Aviação Civil
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (46 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+12414295 Auto de Infração 03/12/2025 03/12/2025 CMCP
+12414296 Relatório de Ocorrência 03/12/2025 03/12/2025 CMCP
+12414347 Anexo 03/12/2025 03/12/2025 CMCP
+12414359 Anexo 03/12/2025 03/12/2025 CMCP
+12414386 Anexo 03/12/2025 03/12/2025 CMCP
+12414402 Anexo 03/12/2025 03/12/2025 CMCP
+12414417 Anexo 03/12/2025 03/12/2025 CMCP
+12414422 Despacho 03/12/2025 03/12/2025 CMCP
+12431596 Ofício 2787 06/12/2025 06/12/2025 ASJIN
+12432088 Certidão de Intimação Cumprida 08/12/2025 08/12/2025 ASJIN
+12527970 Defesa Prévia 26/12/2025 26/12/2025 ASJIN
+12527971 Recibo Eletrônico de Protocolo 26/12/2025 26/12/2025 ASJIN
+12538354 Despacho 29/12/2025 29/12/2025 ASJIN
+12984861 Decisão Primeira Instância - PAS 35 02/04/2026 02/04/2026 Autos-CJDE-SPL
+13089060 Extrato 07/04/2026 07/04/2026 ASJIN
+13106346 Ofício 563 10/04/2026 10/04/2026 ASJIN
+13106510 Certidão de Intimação Cumprida 10/04/2026 10/04/2026 ASJIN
+13167608 Recurso 27/04/2026 27/04/2026 ASJIN
+13167610 Nota 27/04/2026 27/04/2026 ASJIN
+13167614 Nota 27/04/2026 27/04/2026 ASJIN
+13167618 Pedido 27/04/2026 27/04/2026 ASJIN
+13167622 Atestado 27/04/2026 27/04/2026 ASJIN
+13167626 Recibo Eletrônico de Protocolo 27/04/2026 27/04/2026 ASJIN
+13177470 Despacho 28/04/2026 28/04/2026 ASJIN
+13381047 Relatório 24/06/2026 24/06/2026 CJIN
+13486236 Voto 25/06/2026 25/06/2026 CJIN
+13531616 Voto 25/06/2026 25/06/2026 CJIN
+13531833 Voto 25/06/2026 25/06/2026 CJIN
+13531866 Certidão 25/06/2026 25/06/2026 CJIN
+13538176 Anexo (cópia) 26/06/2026 26/06/2026 ASJIN
+13538237 Extrato RECEITAS - DC2 - 26/06/2026 26/06/2026 ASJIN
+13538240 Despacho 30/06/2026 30/06/2026 ASJIN
+13550150 Ofício 855 30/06/2026 30/06/2026 ASJIN
+13550608 Certidão de Intimação Cumprida 30/06/2026 30/06/2026 ASJIN
+13603660 Recurso 14/07/2026 14/07/2026 ASJIN
+13603663 Recibo Eletrônico de Protocolo 14/07/2026 14/07/2026 ASJIN
+13611006 Despacho 15/07/2026 15/07/2026 ASJIN
+13689853 Despacho 07/08/2026 07/08/2026 CJIN
+13719747 Certidão de Distribuição 11/08/2026 11/08/2026 ASTEC
+13882947 Relatório de Diretoria 22/09/2026 22/09/2026 DIR-RCM
+13882953 Voto 22/09/2026 22/09/2026 DIR-RCM
+13897782 Despacho 22/09/2026 22/09/2026 ASTEC
+13902607 Voto 23/09/2026 23/09/2026 DIR-P
+13906817 Voto 25/09/2026 25/09/2026 DIR-MNM
+13907839 Voto 25/09/2026 25/09/2026 DIR-RJH
+13925188 Certidão de Deliberação 28/09/2026 28/09/2026 ASTEC
+
+Lista de Andamentos (57 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+28/09/2026 16:05
+DIR-RJH
+
+Conclusão do processo na unidade
+
+28/09/2026 15:58
+ASJIN
+
+Processo recebido na unidade
+
+28/09/2026 15:56
+ASJIN
+
+Processo remetido pela unidade ASTEC
+
+28/09/2026 10:05
+DIR-MNM
+
+Conclusão do processo na unidade
+
+24/09/2026 11:22
+GTNO-SPL
+
+Conclusão do processo na unidade
+
+24/09/2026 11:21
+GTNO-SPL
+
+Processo recebido na unidade
+
+24/09/2026 11:20
+GTNO-SPL
+
+Processo remetido pela unidade Autos-CJDE-SPL
+
+24/09/2026 11:20
+Autos-CJDE-SPL
+
+Reabertura do processo na unidade
+
+23/09/2026 08:26
+DIR-MNM
+
+Processo recebido na unidade
+
+22/09/2026 12:17
+DIR-P
+
+Processo recebido na unidade
+
+22/09/2026 12:12
+DIR-RJH
+
+Processo recebido na unidade
+
+22/09/2026 12:04
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 12:04
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 12:04
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+16/09/2026 15:09
+ASTEC
+
+Reabertura do processo na unidade
+
+11/08/2026 12:16
+ASTEC
+
+Conclusão do processo na unidade
+
+11/08/2026 10:53
+DIR-RCM
+
+Processo recebido na unidade
+
+11/08/2026 10:25
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+11/08/2026 10:25
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+10/08/2026 16:58
+ASTEC
+
+Processo recebido na unidade
+
+10/08/2026 16:23
+ASTEC
+
+Processo remetido pela unidade ASJIN
+
+10/08/2026 12:01
+ASJIN
+
+Processo recebido na unidade
+
+07/08/2026 19:08
+ASJIN
+
+Processo remetido pela unidade CJIN
+
+15/07/2026 17:00
+CJIN
+
+Processo recebido na unidade
+
+15/07/2026 13:49
+CJIN
+
+Processo remetido pela unidade ASJIN
+
+14/07/2026 14:50
+ASJIN
+
+Processo recebido na unidade
+
+14/07/2026 09:53
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+01/07/2026 14:20
+ASJIN
+
+Processo recebido na unidade
+
+30/06/2026 20:43
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+25/06/2026 16:12
+ASJIN
+
+Processo recebido na unidade
+
+25/06/2026 14:08
+ASJIN
+
+Processo remetido pela unidade CJIN
+
+30/04/2026 11:54
+CJIN
+
+Processo recebido na unidade
+
+28/04/2026 18:37
+CJIN
+
+Processo remetido pela unidade ASJIN
+
+28/04/2026 18:34
+ASJIN
+
+Alterado nível de acesso do documento 13177470 (Despacho) para público
+
+28/04/2026 09:38
+ASJIN
+
+Alterada hipótese legal do documento 13167618 (Pedido) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+28/04/2026 09:38
+ASJIN
+
+Alterado nível de acesso do documento 13167618 (Pedido) para restrito
+
+28/04/2026 09:36
+ASJIN
+
+Alterada hipótese legal do documento 13167614 (Nota) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+28/04/2026 09:36
+ASJIN
+
+Alterado nível de acesso do documento 13167614 (Nota) para restrito
+
+28/04/2026 09:35
+ASJIN
+
+Alterada hipótese legal do documento 13167610 (Nota) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+28/04/2026 09:35
+ASJIN
+
+Alterado nível de acesso do documento 13167610 (Nota) para restrito
+
+27/04/2026 16:46
+ASJIN
+
+Processo recebido na unidade
+
+27/04/2026 12:04
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+10/04/2026 11:30
+ASJIN
+
+Processo recebido na unidade
+
+10/04/2026 11:28
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+07/04/2026 07:47
+ASJIN
+
+Processo recebido na unidade
+
+07/04/2026 00:11
+ASJIN
+
+Processo remetido pela unidade Autos-CJDE-SPL
+
+31/12/2025 11:25
+Autos-CJDE-SPL
+
+Processo recebido na unidade
+
+30/12/2025 08:22
+Autos-CJDE-SPL
+
+Processo remetido pela unidade ASJIN
+
+29/12/2025 15:33
+ASJIN
+
+Processo recebido na unidade
+
+26/12/2025 10:49
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+09/12/2025 10:23
+ASJIN
+
+Processo recebido na unidade
+
+08/12/2025 07:05
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+03/12/2025 19:42
+ASJIN
+
+Disponibilizado acesso externo para SIS_SCP
+
+03/12/2025 19:42
+ASJIN
+
+Processo recebido na unidade
+
+03/12/2025 19:06
+ASJIN
+
+Processo remetido pela unidade CMCP
+
+03/12/2025 10:19
+CMCP
+
+Disponibilizado acesso externo para SIS_SMA
+
+03/12/2025 10:19
+CMCP
+
+Processo público gerado

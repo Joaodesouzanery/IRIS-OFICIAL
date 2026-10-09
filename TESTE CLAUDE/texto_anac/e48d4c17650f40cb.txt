@@ -1,0 +1,526 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00066.005356/2026-12
+
+Tipo: Demandas Institucionais: Respostas a órgãos externos
+
+Data de Geração: 28/04/2026
+
+Interessados: ABEAR
+
+Lista de Protocolos (29 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13175838 Ofício Abear nº 040/2026 28/04/2026 28/04/2026 GCTA
+13175840 Recibo Eletrônico de Protocolo 28/04/2026 28/04/2026 GCTA
+13247832 Despacho 08/05/2026 08/05/2026 CSDI
+13269054 Despacho 12/05/2026 12/05/2026 GAB
+13277858 Despacho 13/05/2026 13/05/2026 CSDI
+13321158 Despacho 26/05/2026 26/05/2026 GTRC
+13357649 Despacho 03/06/2026 03/06/2026 GNAD
+13440871 Despacho 03/06/2026 03/06/2026 SIA
+13369452 Despacho 27/05/2026 27/05/2026 SAS
+13284938 Despacho 17/06/2026 17/06/2026 GTNO-GNOS
+13498314 Despacho 17/06/2026 17/06/2026 CSDI
+13779593 Despacho 26/08/2026 26/08/2026 GAB
+13789151 Proposta de Ato (Normativo, Decisão etc.) 26/08/2026 26/08/2026 GNAD
+13789279 Despacho 26/08/2026 26/08/2026 GNAD
+13789604 Despacho 26/08/2026 26/08/2026 SIA
+13792411 Certidão de Distribuição 27/08/2026 27/08/2026 ASTEC
+13794247 Relatório de Diretoria 01/09/2026 01/09/2026 DIR-CBI
+13798917 Voto 01/09/2026 01/09/2026 DIR-CBI
+13812679 Despacho 01/09/2026 01/09/2026 ASTEC
+13816415 Voto 04/09/2026 04/09/2026 DIR-RCM
+13816927 Voto 04/09/2026 04/09/2026 DIR-P
+13821383 Voto 04/09/2026 04/09/2026 DIR-MNM
+13831022 Voto 04/09/2026 04/09/2026 DIR-RJH
+13836041 Decisão 756 10/09/2026 10/09/2026 ASTEC
+13855278 Anexo DOU 11/09/2026 11/09/2026 ASTEC
+13855308 Certidão de Deliberação 11/09/2026 11/09/2026 ASTEC
+13855979 Ofício 1013 11/09/2026 11/09/2026 GAB
+13864227 E-mail 14/09/2026 14/09/2026 GAB
+13933726 Certidão de Intimação Cumprida 29/09/2026 29/09/2026 GAB
+
+Lista de Andamentos (92 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+06/10/2026 18:58
+DIR-RCM
+
+Conclusão do processo na unidade
+
+30/09/2026 08:55
+GAB
+
+Conclusão do processo na unidade
+
+30/09/2026 08:55
+GAB
+
+Processo recebido na unidade
+
+29/09/2026 23:16
+GAB
+
+Processo remetido pela unidade GAB
+
+29/09/2026 23:16
+GAB
+
+Reabertura do processo na unidade
+
+28/09/2026 17:38
+DIR-P
+
+Conclusão do processo na unidade
+
+23/09/2026 09:20
+DIR-CBI
+
+Conclusão do processo na unidade
+
+15/09/2026 17:08
+GAB
+
+Conclusão do processo na unidade
+
+15/09/2026 14:52
+PROT-DF
+
+Conclusão do processo na unidade
+
+15/09/2026 14:18
+PROT-DF
+
+Processo recebido na unidade
+
+15/09/2026 12:46
+PROT-DF
+
+Processo remetido pela unidade GAB
+
+11/09/2026 17:57
+GNAD
+
+Conclusão do processo na unidade
+
+11/09/2026 15:52
+SIA
+
+Conclusão do processo na unidade
+
+11/09/2026 12:07
+SIA
+
+Processo recebido na unidade
+
+11/09/2026 11:32
+SIA
+
+Processo remetido pela unidade ASTEC
+
+11/09/2026 09:48
+DIR-MNM
+
+Conclusão do processo na unidade
+
+07/09/2026 14:37
+DIR-RJH
+
+Conclusão do processo na unidade
+
+02/09/2026 11:25
+DIR-MNM
+
+Processo recebido na unidade
+
+01/09/2026 17:52
+DIR-RCM
+
+Processo recebido na unidade
+
+01/09/2026 15:49
+DIR-P
+
+Processo recebido na unidade
+
+01/09/2026 14:26
+DIR-RJH
+
+Processo recebido na unidade
+
+01/09/2026 12:32
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+ASTEC
+
+Reabertura do processo na unidade
+
+27/08/2026 16:42
+ASTEC
+
+Conclusão do processo na unidade
+
+27/08/2026 16:03
+DIR-CBI
+
+Processo recebido na unidade
+
+27/08/2026 11:46
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+27/08/2026 11:46
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+27/08/2026 10:38
+ASTEC
+
+Processo recebido na unidade
+
+27/08/2026 09:18
+ASTEC
+
+Processo remetido pela unidade SIA
+
+26/08/2026 18:27
+GNAD
+
+Reabertura do processo na unidade
+
+26/08/2026 17:24
+SIA
+
+Processo recebido na unidade
+
+26/08/2026 17:18
+SIA
+
+Processo remetido pela unidade GNAD
+
+26/08/2026 16:49
+GNAD
+
+Processo recebido na unidade
+
+26/08/2026 16:10
+SIA
+
+Processo recebido na unidade
+
+26/08/2026 16:00
+GAB
+
+Alterado nível de acesso do documento 13779593 (Despacho) para público
+
+26/08/2026 16:00
+SIA
+
+Processo remetido pela unidade GAB
+
+26/08/2026 15:54
+GNAD
+
+Processo remetido pela unidade SIA
+
+26/08/2026 15:54
+SIA
+
+Reabertura do processo na unidade
+
+18/08/2026 10:54
+SSA
+
+Conclusão do processo na unidade
+
+18/08/2026 10:53
+GAB
+
+Reabertura do processo na unidade
+
+18/08/2026 10:53
+SSA
+
+Processo recebido na unidade
+
+18/08/2026 10:52
+SSA
+
+Processo remetido pela unidade GEAM
+
+28/07/2026 00:28
+GAB
+
+Conclusão do processo na unidade
+
+18/06/2026 08:35
+GAB
+
+Processo recebido na unidade
+
+17/06/2026 19:22
+GAB
+
+Processo remetido pela unidade CSDI
+
+17/06/2026 18:23
+CSDI
+
+Processo recebido na unidade
+
+17/06/2026 17:44
+CSDI
+
+Processo remetido pela unidade GTNO-GNOS
+
+08/06/2026 16:51
+GAB
+
+Conclusão do processo na unidade
+
+08/06/2026 11:33
+GAB
+
+Processo recebido na unidade
+
+03/06/2026 16:52
+GAB
+
+Processo remetido pela unidade SIA
+
+03/06/2026 10:53
+SIA
+
+Processo recebido na unidade
+
+03/06/2026 10:45
+SIA
+
+Processo remetido pela unidade GNAD
+
+01/06/2026 08:22
+GAB
+
+Conclusão do processo na unidade
+
+28/05/2026 08:51
+GAB
+
+Processo recebido na unidade
+
+27/05/2026 18:56
+SAS
+
+Conclusão do processo na unidade
+
+27/05/2026 18:32
+GAB
+
+Processo remetido pela unidade SAS
+
+27/05/2026 08:54
+GTRC
+
+Conclusão do processo na unidade
+
+26/05/2026 18:07
+SAS
+
+Processo recebido na unidade
+
+26/05/2026 16:54
+SAS
+
+Processo remetido pela unidade GTRC
+
+22/05/2026 09:07
+GNAD
+
+Processo recebido na unidade
+
+22/05/2026 09:02
+GNAD
+
+Processo remetido pela unidade SIA
+
+20/05/2026 22:00
+GAB
+
+Conclusão do processo na unidade
+
+20/05/2026 21:53
+GAB
+
+Reabertura do processo na unidade
+
+20/05/2026 09:22
+GAB
+
+Conclusão do processo na unidade
+
+20/05/2026 09:20
+GAB
+
+Reabertura do processo na unidade
+
+13/05/2026 15:18
+GTRC
+
+Processo recebido na unidade
+
+13/05/2026 14:23
+GTRC
+
+Processo remetido pela unidade GEAM
+
+13/05/2026 14:23
+GTNO-GNOS
+
+Processo recebido na unidade
+
+13/05/2026 14:21
+GEAM
+
+Processo recebido na unidade
+
+13/05/2026 11:37
+GTNO-GNOS
+
+Processo remetido pela unidade CSDI
+
+13/05/2026 10:53
+CSDI
+
+Processo recebido na unidade
+
+12/05/2026 13:35
+GAB
+
+Conclusão do processo na unidade
+
+12/05/2026 12:42
+DIR-RCM
+
+Processo recebido na unidade
+
+12/05/2026 11:23
+GEAM
+
+Processo remetido pela unidade SAS
+
+12/05/2026 11:21
+DIR-P
+
+Processo recebido na unidade
+
+12/05/2026 11:01
+SIA
+
+Processo recebido na unidade
+
+12/05/2026 10:58
+SAS
+
+Processo recebido na unidade
+
+12/05/2026 10:57
+DIR-RCM
+
+Processo remetido pela unidade GAB
+
+12/05/2026 10:57
+DIR-P
+
+Processo remetido pela unidade GAB
+
+12/05/2026 10:57
+SIA
+
+Processo remetido pela unidade GAB
+
+12/05/2026 10:57
+CSDI
+
+Processo remetido pela unidade GAB
+
+12/05/2026 10:57
+SAS
+
+Processo remetido pela unidade GAB
+
+11/05/2026 09:06
+GAB
+
+Processo recebido na unidade
+
+08/05/2026 19:16
+GAB
+
+Processo remetido pela unidade CSDI
+
+08/05/2026 16:02
+CSDI
+
+Processo recebido na unidade
+
+08/05/2026 16:00
+CSDI
+
+Processo remetido pela unidade GCTA
+
+28/04/2026 15:33
+GCTA
+
+Processo recebido na unidade
+
+28/04/2026 15:28
+GCTA
+
+Processo remetido pela unidade GCTA
+
+28/04/2026 15:28
+GCTA
+
+Processo público gerado

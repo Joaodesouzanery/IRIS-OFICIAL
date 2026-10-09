@@ -15,32 +15,36 @@ import sys, os, json, re, html, datetime, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import anac_lib as L
 
-# ---------------- colegiado 2026 (gov.br/diretoria-colegiada, atualizado em 22/05/2026) ----------------
+# ---------------- colegiado 2026 ----------------
+# Composicao CONFIRMADA PELAS ATAS (34 atas lidas em 09/10/2026): ver JANELAS (evidencia de cada limite).
 ATUAIS = ['Tiago Faierstein', 'Rui Mesquita', 'Antônio Mathias Moreira', 'Roberto Honorato', 'Cláudio Ianelli']
-EX = ['Luiz Ricardo Nascimento', 'Mariana Altoé']
+EX = ['Luiz Ricardo Nascimento', 'Mariana Altoé', 'Tiago Sousa Pereira']
 ALIAS = {'tiago faierstein': 'Tiago Faierstein', 'tiago chagas faierstein': 'Tiago Faierstein', 'faierstein': 'Tiago Faierstein',
          'rui mesquita': 'Rui Mesquita', 'rui chagas mesquita': 'Rui Mesquita', 'mesquita': 'Rui Mesquita',
          'mathias moreira': 'Antônio Mathias Moreira', 'antonio mathias moreira': 'Antônio Mathias Moreira', 'antonio mathias nogueira moreira': 'Antônio Mathias Moreira', 'mathias': 'Antônio Mathias Moreira',
          'roberto honorato': 'Roberto Honorato', 'roberto jose silveira honorato': 'Roberto Honorato', 'honorato': 'Roberto Honorato',
          'claudio ianelli': 'Cláudio Ianelli', 'claudio beschizza ianelli': 'Cláudio Ianelli', 'ianelli': 'Cláudio Ianelli',
-         'luiz ricardo nascimento': 'Luiz Ricardo Nascimento', 'luiz ricardo': 'Luiz Ricardo Nascimento',
-         'mariana altoe': 'Mariana Altoé', 'altoe': 'Mariana Altoé'}
+         'luiz ricardo nascimento': 'Luiz Ricardo Nascimento', 'luiz ricardo': 'Luiz Ricardo Nascimento', 'luiz ricardo de souza nascimento': 'Luiz Ricardo Nascimento',
+         'mariana altoe': 'Mariana Altoé', 'altoe': 'Mariana Altoé', 'mariana olivieri caixeta altoe': 'Mariana Altoé',
+         'tiago sousa pereira': 'Tiago Sousa Pereira', 'tiago pereira': 'Tiago Sousa Pereira'}
 def _nz(s):
     import unicodedata
     return ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if unicodedata.category(c) != 'Mn').strip()
 def canon(nome):
     """nome da fonte -> nome canonico, ou None se nao for membro conhecido do colegiado 2026."""
-    return ALIAS.get(_nz(re.sub(r'^(Diretor[a]?|Presidente)\s+', '', nome.strip(), flags=re.I)))
+    n = re.sub(r'^(?:o|a)\s+', '', nome.strip(), flags=re.I)
+    return ALIAS.get(_nz(re.sub(r'^(Diretor[a]?(?:-Presidente)?,?\s*|Presidente\s+)', '', n, flags=re.I)))
 D = datetime.date.fromisoformat
-# janela de exercicio (inclusiva) e a EVIDENCIA de cada limite. Presenca por reuniao = janela cobre alguma das datas da reuniao.
+# janela de exercicio (inclusiva) e a EVIDENCIA de cada limite, calibrada pelas atas. Usada SO para reunioes sem ata publicada (presenca inferida);
+# nas demais a presenca e a REAL da ata. Tiago Sousa Pereira nao tem janela de presenca: so aparece como ausente justificado nas atas de janeiro.
 JANELAS = {
- 'Tiago Faierstein': (D('2026-01-01'), D('2026-12-31'), 'relator nominal em 06/01..07/10/2026; mandato ate 19/03/2030 (gov.br)'),
- 'Rui Mesquita': (D('2026-01-01'), D('2026-12-31'), 'relator nominal em 06/01..07/10/2026; mandato ate 07/08/2029 (gov.br)'),
- 'Antônio Mathias Moreira': (D('2026-01-01'), D('2026-12-31'), 'relator nominal em 22/01..16/10/2026; mandato ate 19/03/2030 (gov.br)'),
- 'Luiz Ricardo Nascimento': (D('2026-01-01'), D('2026-03-22'), 'relator em dez/2025 e de 13/01 a 13/03/2026 (voto-vista na 9a RE); ausente a partir da substituicao de Roberto Honorato (23/03/2026): fim INFERIDO'),
- 'Mariana Altoé': (D('2026-03-03'), D('2026-04-24'), 'primeira relatoria em 03/03/2026 (8a RE) e ultima em 24-27/03 e 02/04; fim INFERIDO pela entrada de Claudio Ianelli (25/04/2026); inicio antes de 03/03 sem evidencia'),
- 'Roberto Honorato': (D('2026-03-23'), D('2026-12-31'), 'substituto desde 23/03/2026 (gov.br/diretoria-colegiada)'),
- 'Cláudio Ianelli': (D('2026-04-25'), D('2026-12-31'), 'substituto desde 25/04/2026 (gov.br/diretoria-colegiada)')}
+ 'Tiago Faierstein': (D('2026-01-01'), D('2026-12-31'), 'Diretor-Presidente: presidiu as 34 atas (RE1 06/01 .. RE29 15/09); mandato ate 19/03/2030 (gov.br)'),
+ 'Rui Mesquita': (D('2026-01-01'), D('2026-12-31'), 'presente nas 34 atas (06/01 .. 15/09); mandato ate 07/08/2029 (gov.br)'),
+ 'Antônio Mathias Moreira': (D('2026-01-01'), D('2026-12-31'), 'presente em 32 das 34 atas (ausente justificado nas RE24 e RE25, ago/2026); mandato ate 19/03/2030 (gov.br)'),
+ 'Luiz Ricardo Nascimento': (D('2026-01-01'), D('2026-03-22'), 'presente de RE1 (06/01) a RE9 (11-13/03) e RD2 (06/03); nao consta da RE10 (24/03) em diante; fim 22/03 INFERIDO pela posse de Roberto Honorato (23/03/2026) — nenhuma reuniao entre 14 e 23/03'),
+ 'Mariana Altoé': (D('2026-02-12'), D('2026-04-24'), 'primeira presenca atestada na RE6 ("nos dias 12 e 13 de fevereiro"); ausente das atas RE1-RE5 (ate 03/02); ultima presenca atestada na REX1 (06/04); fim 24/04 INFERIDO pela entrada de Claudio Ianelli (25/04/2026)'),
+ 'Roberto Honorato': (D('2026-03-23'), D('2026-12-31'), 'substituto desde 23/03/2026 (gov.br/diretoria-colegiada); primeira presenca atestada na RE10 (24/03/2026)'),
+ 'Cláudio Ianelli': (D('2026-04-25'), D('2026-12-31'), 'substituto desde 25/04/2026 (gov.br/diretoria-colegiada); primeira presenca atestada na RE11 (29/04/2026)')}
 def presentes_em(datas):
     ds = [D(x) for x in datas]
     return [n for n, (a, b, _) in JANELAS.items() if any(a <= d <= b for d in ds)]
@@ -70,22 +74,25 @@ def analisa_decisao(txt, processo_txt=''):
     ressalvas, vista_por, voto_vista_de, retirada_por, nao_resolvidos, ad_referendum). So reconhece nomes do colegiado 2026."""
     t = re.sub(r'\s+', ' ', (txt or '')).strip(); lo = t.lower(); pt = re.sub(r'\s+', ' ', processo_txt or '')
     r = {'modo': '', 'vencidos': [], 'abstencoes': [], 'impedidos': [], 'ausentes': [], 'ressalvas': [], 'vista_por': None, 'voto_vista_de': None,
-         'retirada_por': None, 'nao_resolvidos': [], 'ad_referendum': 'ad referendum' in lo or 'ad referendum' in pt.lower()}
+         'retirada_por': None, 'relator_vencido': False, 'relator_votou': '', 'nao_resolvidos': [], 'ad_referendum': 'ad referendum' in lo or 'ad referendum' in pt.lower()}
     if 'unanimidade' in lo: r['modo'] = 'unanimidade'
     if re.search(r'por maioria|\d+\s*\(?\w*\)?\s*votos? (?:a|contra) \d+', lo): r['modo'] = 'maioria'
     venc = [r'votos? vencidos? d[oa]s? ' + _DIR + _NOMES, r'vencid[oa]s? (?:o|a|os|as) ' + _DIR + _NOMES, r'com votos? contr[aá]rios? d[oa]s? ' + _DIR + _NOMES,
             r'diverg[eê]ncia d[oa]s? ' + _DIR + _NOMES, r'divergiu (?:o|a) ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+(?:divergiu|votou contra|foi vencid[oa])']
     r['vencidos'], n1 = _achar(venc, t)
+    r['relator_vencido'] = bool(re.search(r'vencid[oa] (?:o|a) Relator', t, flags=re.I))
     r['abstencoes'], n2 = _achar([r'absten[cç][aã]o d[oa]s? ' + _DIR + _NOMES, r'absteve-se (?:o|a) ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+(?:se absteve|absteve-se)'], t)
     r['impedidos'], n3 = _achar([r'impedid[oa]s? (?:o|a|os|as) ' + _DIR + _NOMES, r'impedimento d[oa]s? ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+(?:declarou-se|declarou se|esteve|estava|ficou) impedid'], t)
     r['ausentes'], n4 = _achar([r'ausen(?:te|tes|cia),? (?:d[oa]s?|o|a|os|as) ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+(?:ausente|n[aã]o participou)', r'sem a participa[cç][aã]o d[oa]s? ' + _DIR + _NOMES], t)
     r['ressalvas'], n5 = _achar([r'com ressalvas? d[oa]s? ' + _DIR + _NOMES, r'ressalva d[oa]s? ' + _DIR + _NOMES], t)
-    v1, n6 = _achar([r'pedido de vista d[oa]s? ' + _DIR + _NOMES, r'vista (?:concedida|requerida|solicitada) (?:a|ao|pela|pelo) ' + _DIR + _NOMES, r'pediu vista (?:o|a) ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+pediu vista'], t)
+    v1, n6 = _achar([r'pedido de vista d[oa]s? ' + _DIR + _NOMES, r'vista (?:concedida|requerida|solicitada) (?:a|ao|pela|pelo) ' + _DIR + _NOMES, r'pediu vista (?:o|a) ' + _DIR + _NOMES, r'pedido de vista formulado pel[oa] ' + _DIR + _NOMES, r'em virtude de pedido de vista (?:do|da|de) ' + _DIR + _NOMES, _DIR + _NOMES + r'\s+pediu vista'], t)
     r['vista_por'] = v1[0] if v1 else None
     vv, n7 = _achar([r'Voto-?Vista d[oa]s? ' + _DIR + _NOMES], t + ' ' + pt)
     r['voto_vista_de'] = vv[0] if vv else None
     rp, n8 = _achar([r'retirad[oa] (?:de pauta )?(?:pel[oa] )?' + _DIR + _NOMES], t)
     r['retirada_por'] = rp[0] if rp else None
+    mrv = re.search(r'o Relator votou (?:pel[oa]s?|contra|a favor)\s+(.+?)(?:\.|;|$)', t)
+    if mrv: r['relator_votou'] = mrv.group(0).strip()
     r['nao_resolvidos'] = list(dict.fromkeys(n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8))
     return r
 def classifica(delib, assunto=''):

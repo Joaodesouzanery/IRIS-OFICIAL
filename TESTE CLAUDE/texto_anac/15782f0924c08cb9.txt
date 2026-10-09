@@ -1,0 +1,93 @@
+SEI/ANAC - 12565487 - Voto
+
+Voto
+
+PROCESSO: 00066.012462/2023-18
+
+interessado: EMBRAER - EMPRESA BRASILEIRA DE AERONÁUTICA S.A.
+
+RELATOR: LUIZ RICARDO DE SOUZA NASCIMENTO
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, define a competência da Agência Nacional de Aviação Civil - ANAC para regular e fiscalizar os produtos aeronáuticos e a segurança da aviação civil, bem como para expedir, homologar ou reconhecer a certificação de produtos e processos aeronáuticos de uso civil, observados os padrões e normas estabelecidos (art. 8º, X e XXXIII).
+
+Por sua vez, o Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, atribui à Diretoria a competência para, em regime colegiado, analisar e decidir, em instância administrativa final, as matérias da Agência (art. 9º, caput).
+
+Ainda, nos termos do art. 35 do referido regimento interno, compete à Superintendência de Aeronavegabilidade - SAR submeter à Diretoria propostas normativas e pareceres técnicos que tratem de questões relacionadas a aeronavegabilidade, ruído e emissões de produtos aeronáuticos.
+
+Por fim, o Regulamento Brasileiro de Aviação Civil (RBAC) nº 21, em seu parágrafo 21.16, estabelece o conceito de Condição Especial, sendo ele aplicado sempre que a ANAC considerar que a regulamentação sobre aeronavegabilidade contida nos regulamentos não contém requisitos de segurança adequados ou apropriados a um determinado produto aeronáutico, face às características novas ou inusitadas do seu projeto.
+
+Pelo exposto, constata-se que a matéria em discussão é de competência da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente .
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme apresentado no Relatório [1] , trata-se do estabelecimento de Condição Especial para a instalação de baterias de lítio não recarregáveis para fins de certificação de modificação do projeto de tipo do modelo de avião Embraer EMB-550 relacionada a novas configurações internas da aeronave.
+
+Em linha com o exposto na versão final da Ficha de Controle de Assuntos Relevantes - FCAR nº SE-22-EMB-550 [2] , a Embraer apresentou à ANAC proposta de alteração de projeto [3] relativa à instalação de assentos, divãs e apoios de braços estruturais. A citada modificação incluirá a troca do módulo eletrônico de gerenciamento do sistema de airbags laterais por um novo modelo que contém baterias de lítio não recarregáveis. Essas baterias são novas e incomuns em relação ao estado da tecnologia considerado quando os requisitos aplicáveis do RBAC/ 14 CFR Part 25 foram estabelecidos.
+
+É relevante entender que as baterias de lítio são cada vez mais utilizadas em aeronaves modernas porque oferecem um desempenho elétrico superior com menor peso e volume em relação às baterias de níquel-cádmio e chumbo-ácido, melhorando diretamente a eficiência, a capacidade e a flexibilidade de projeto. Contudo, sua utilização apresenta desafios.
+
+Nesse sentido, a FCAR detalha os perigos potenciais conhecidos e modos de falhas associados às baterias de lítio não recarregáveis, tais como: falhas internas, descarga rápida ou desequilibrada e inflamabilidade. A SAR concluiu que o RBAC nº 25 não contém padrões de segurança adequados para a instalação desses componentes em aviões certificados na categoria transporte - como é o caso do modelo EMB-550 - e que Condições Especiais devem ser estabelecidas de acordo com o previsto na seção 21.16 do RBAC nº 21.
+
+Por isso a área técnica propôs, por meio da FCAR, o estabelecimento de 8 ( oito) requisitos a serem atendidos pela Embraer para mitigar os riscos associados a eventuais falhas do sistema de baterias de lítio não recarregáveis no modelo EMB-550. A SAR propõe que a Condição Especial estabeleça requisitos para que cada instalação de baterias de lítio não recarregável:
+
+seja projetada de modo que as temperaturas e pressões seguras das células sejam mantidas sob todas as condições operacionais previsíveis para evitar incêndio e explosão;
+
+seja projetada para impedir a ocorrência de aumentos autossustentados e descontrolados de temperatura ou pressão;
+
+não emita gases explosivos ou tóxicos em operação normal, ou como resultado de sua falha, que possam acumular-se em quantidades perigosas no interior da aeronave.
+
+atenda aos requisitos presentes nos parágrafos 25.863(a) à (d) do RBAC n° 25;
+
+não danifique a estrutura circundante ou sistemas adjacentes, equipamentos ou fiação elétrica do avião devido a fluídos ou gases corrosivos que possam escapar e que possam causar uma condição de falha maior ou mais grave.
+
+tenha provisões para evitar qualquer efeito perigoso na estrutura ou nos sistemas do avião causado pela quantidade máxima de calor que ela possa gerar devido a qualquer falha do mesmo ou de suas células individuais;
+
+tenha meios para detectar sua falha e alertar a tripulação de voo caso sua falha afete a operação segura da aeronave; e
+
+tenha meios para que a tripulação de voo ou o pessoal de manutenção determine o estado de carga da bateria se sua função for necessária para a operação segura do avião.
+
+Verifica-se a partir de documento juntado aos autos pela Embraer, que a empresa concordou com a maioria dos requisitos técnicos propostos na FCAR SE-22-EMB-550, contudo manifestou-se contrariamente ao estabelecimento especificamente dos requisitos #4, #7 e #8 da proposta de Condição Especial, conforme entendimento expressado na Carta AWO-1273/2023 .
+
+Nesse sentido, quanto ao requisito especificado no item #4, o qual requer cumprimento com padrões de proteção contra fogo causado por fluidos inflamáveis (conforme seção 25.863 do RBAC 25), é relevante registrar que a área técnica, por meio da Nota Técnica 16 [4] , argumentou que as baterias de lítio não recarregáveis contêm eletrólito que é um fluido inflamável. Portanto a seção 25.863, aplicável a áreas do avião que possam estar expostas a vazamentos de fluidos inflamáveis dos sistemas do avião, seria aplicável a essas baterias. Considerando os riscos já explanados relativos aos modos de falhas desses componentes, entendo que a inclusão do requisito #4 à Condição Especial mostra-se justificável.
+
+Quanto aos requisitos #7 e #8 propostos, constata-se a área técnica ponderou que poderiam ser exceções à modificação do projeto pretendida, contudo sua manutenção no compêndio de requisitos da Condição Especial fundamenta-se no fato de sua eventual utilização em futuras modificações que instalem baterias de lítio não recarregáveis na família de aeronaves Embraer EMB-550. Essa medida no meu entender torna a Condição Especial suficientemente completa para ser utilizada em outras alterações de projeto deste modelo, sem que seja necessário a emissão desse instrumento para contextos específicos, o que é positivo em termos de eficiência processual.
+
+Ademais, entendo relevante ressaltar que os requisitos propostos pela SAR para esta Condição Especial estão alinhados aos entendimentos apresentados pelas principais autoridades de aviação civil sobre o tema. Nesse sentido, registro que a Federal Aviation Administration - FAA, em 2017, emitiu Special Conditions para o modelo Embraer EMB-550 para endereçar a instalação de baterias de lítio não recarregáveis, estabelecendo os mesmos requisitos propostos pela SAR neste processo [5] . Além disso, foram identificadas outras Special Conditions emitidas pela autoridade americana estabelecendo requisitos similares para outros modelos de aeronaves certificadas na categoria transporte [6] .
+
+Complementarmente, como exposto na Nota Técnica 38 [7] , a SAR avaliou que o estabelecimento da condição especial em análise prescinde de instauração de Consulta Pública, uma vez que o seu efeito atingirá, em princípio, apenas o modelo de avião EMB-550, objeto desta análise. Além disso, por não ter sido identificado aspecto jurídico relevante, opina a área técnica pela desnecessidade de análise do processo de pela Procuradoria Federal Especializada junto à ANAC (PFE-ANAC). Concordo com o posicionamento da área técnica, por não terem sido constatados os pressupostos que justificassem a realização de consulta pública ou análise jurídica pela PFE-ANAC.
+
+Por fim, verifica-se que a área técnica conduziu análise adequada para proposição da condição especial, identificando que serão atendidos critérios que proporcionam o nível de segurança necessário para viabilização da modificação pretendida pela Embraer para o modelo de aeronave EMB-550. Concluo, portanto, não ser necessária a apresentação de considerações adicionais por parte desta Diretoria em relação à análise de forma e de mérito para a Condição Especial em tela.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação da condição especial aplicável ao uso de bateria de lítio não recarregável em aeronaves, aplicável à base de certificação do projeto de tipo da aeronave EMB-550, nos termos propostos pela Superintendência de Aeronavegabilidade nos documentos SEI 12429570 e 12434074 .
+
+É como voto.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor-relator
+
+____________________________
+
+[1] SEI 12548660 .
+
+[2] SEI 9632085 .
+
+[3] DCA 0550-025-00073-2022 - “EMB-550 - Development and installation of EAST Seats, Divans and Structural Armrest ” ( 00066.006671/2023-14 ). A DCA foi cancelada e seu conteúdo foi posteriormente transferido para a DCA 0550-025-00123-2023 - "EMB-550/EMB-545 New Interior Configuration" ( 00066.016067/2023-04 ).
+
+[4] Nota Técnica n° 16/2024/GTEN/GCPP/SAR - SEI 9899529 .
+
+[5] FAA Special Conditions nº 25-679-SC aplicável ao modelo Embraer EMB-550.
+
+[6] Exemplos: FAA Special Conditions nº 25-612-SC aplicável ao modelo Gulfstream GVI e FAA Special Conditions nº 25-712-SC aplicável ao modelo Dassault Falcon 900EX.
+
+[7] Nota Técnica nº 38/2025/GTNI/SAR - SEI 12429318 .
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 13/01/2026, às 09:43, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12565487 e o código CRC 097022C2 .
+
+SEI nº 12565487

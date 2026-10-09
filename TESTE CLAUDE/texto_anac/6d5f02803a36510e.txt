@@ -1,0 +1,175 @@
+SEI/ANAC - 12823458 - Voto
+
+Voto
+
+PROCESSO: 00058.018087/2019-24
+
+RELATOR: rUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+O art. 2° da Lei n° 11.182, de 27 de setembro de 2005, estabelece que compete à União, por intermédio da ANAC, regular e fiscalizar as atividades de aviação civil e de infraestrutura aeronáutica e aeroportuária. O art. 8° da mesma Lei prevê ainda que cabe à ANAC adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da aviação civil, da infraestrutura aeronáutica e aeroportuária do país, competindo-lhe, entre outras atribuições:
+
+XXI – regular e fiscalizar a infra-estrutura aeronáutica e aeroportuária, com exceção das atividades e procedimentos relacionados com o sistema de controle do espaço aéreo e com o sistema de investigação e prevenção de acidentes aeronáuticos;
+
+(...)
+
+XLIII – decidir, em último grau, sobre as matérias de sua competência;
+
+Após o regular procedimento licitatório, em 28 de julho de 2017 foi celebrado o Contrato de Concessão nº 003/ANAC/2017 - SBSV entre a ANAC e a Concessionária do Aeroporto de Salvador S.A., cujo objeto é a concessão dos serviços públicos para ampliação, manutenção e exploração do Aeroporto Internacional de Salvador (SBSV).
+
+A Portaria n° 3.870/SIA, de 17 de dezembro de 2018, concedeu Certificado Operacional de Aeroporto à Concessionária, operadora do SBSV, e o requisito 139.501(a) do RBAC n° 139 estabelece que o detentor de Certificado Operacional de Aeroporto pode solicitar à ANAC isenção de requisito regulamentar, nos moldes definidos no RBAC n° 11.
+
+No âmbito da ANAC, o art. 31 do Regimento Interno, aprovado pela Resolução n° 381, de 14 de julho de 2016, estabelece que compete às Superintendências planejar, organizar, executar, controlar, coordenar e avaliar os processos organizacionais e operacionais da ANAC no âmbito das competências, e, especialmente :
+
+XVII - avaliar e submeter à Diretoria as petições de isenção a requisitos de regulamentos, bem como rejeitar aquelas que, por mérito ou forma, não atenderem aos critérios estabelecidos;
+
+O art. 33 do Regimento Interno estabelece que compete à Superintendência de Infraestrutura Aeroportuária - SIA:
+
+I - submeter à Diretoria propostas de atos normativos sobre os assuntos de sua competência, que são:
+
+a) segurança de aeronaves, pessoas e bens nas operações em áreas de movimento de aeronaves e vias de serviço em aeródromos e no seu entorno;
+
+(...)
+
+d) proteção do desenvolvimento da infraestrutura aeroportuária e das operações em aeródromos em compatibilidade com seu entorno, nos assuntos de competência da ANAC.
+
+(...)
+
+III - estabelecer o planejamento, alocar os recursos disponibilizados e executar as atividades de fiscalização dos regulados, no âmbito de sua competência, em especial:
+
+a) avaliar e acompanhar os procedimentos, a estrutura organizacional e a atribuição de responsabilidades propostas, bem como a documentação, a infraestrutura e os equipamentos disponibilizados pelos regulados, visando à verificação do cumprimento dos regulamentos vigentes e manutenção das condições certificadas ou aprovadas; e
+
+b) avaliar e acompanhar medidas de mitigação do risco e correção de não conformidades pelos regulados.
+
+(...)
+
+VII - certificar aeródromos;
+
+(...)
+
+XVI - emitir parecer técnico, instruções, diretrizes e recomendações sobre os assuntos de sua competência;
+
+O caput do art. 9° do Regimento Interno da ANAC prevê que compete à Diretoria, em regime de colegiado, analisar, discutir e decidir em instância administrativa final as matérias de competência da Agência.
+
+Pelo exposto, restam atendidos os requisitos de competência quanto à apreciação do pleito de isenção de cumprimento de requisito regulamentar apresentado pela Concessionária por esta Diretoria Colegiada.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Trata-se da análise de pedido [1] de isenção do requisito de que trata o parágrafo 154.207(d)(1) do RBAC n° 154, protocolado pela Concessionária do Aeroporto de Salvador S.A., responsável pela execução do Contrato de Concessão n° 003/ANAC/2017 – SBSV, em virtude da presença da Casa de Transmissão (KT) na faixa da pista de pouso e decolagem 10/28 ("Pista 10/28"), componente não frangível do Glide Slope ( GS ) do Sistema de Pouso por Instrumentos ( Instrument Landing System – ILS) utilizado nas operações de aproximação pela cabeceira 28.
+
+A SIA avaliou o Estudo Aeronáutico [2] protocolado pela Concessionária com base no RBAC n° 11, que estabelece as regras gerais para petição de emissão de isenção de cumprimento de requisito, e na Instrução Suplementar (IS) n° 154.5-001, revisão A, que traz orientações para a elaboração de análise de risco com vistas à demonstração de nível aceitável de segurança operacional. Do Estudo Aeronáutico e da análise [3] realizada pela SIA julgo ser importante destacar os seguintes pontos:
+
+Das operações realizadas na Pista 10/28 nos anos de 2022 a 2024, cerca de 97% das operações ocorreram na Pista 10 [4] e 3% ocorreram na Pista 28 [5] ;
+
+O SBSV dispõe de defesas que minimizam o risco de colisão das aeronaves com o obstáculo, como a existência de Torre de Controle, EMS - Estação Meteorológica de Superfície, PAPI – Precision Approach Path Indicator , sinalização horizontal de zona de toque, procedimento de RNAV – Area Navegation etc. Além disso, não existem restrições ao tipo de operação, ao tipo de aeronave ou relacionadas às condições meteorológicas, que exigem elevação do teto, redução da componente de vento de través máxima permitida ou restrição de operação com vento de cauda em pista contaminada; e o operador propõe ainda medidas mitigadoras adicionais, tais como a publicação ROTAER para o obstáculo não frangível, emissão de Alerta SO para os operadores aéreos, conforme consta na AISO SEI! 11863511 ;
+
+Em que pese o Estudo Aeronáutico informe que a KT tenha uma altura de aproximadamente 3 (três) metros e que esta ultrapassa a cota do eixo da Pista 10/28, não foi informado quanto a KT viola a superfície da porção não preparada da faixa da Pista 10/28, definida pelo requisito 154.207(d)(4) do RBAC n° 154;
+
+Ocorreram 4 (quatro) excursões na operação da Pista 17 (pista auxiliar) do SBSV nos anos de 2020 a 2023, sendo 1 (uma) excursão lateral ( veer-off ) e 3 (três) excursões após o limite final de pista ( overrun ), incluindo entre estas um voo de transporte aéreo público regular;
+
+A análise de risco indicou aprovação dos Testes de Rejeição n° 1 (compatibilidade com a norma da FAA dos Estados Unidos) e n° 2 (compatibilidade com a norma do TCCA do Canadá) e reprovação do Teste de Rejeição n° 4 (distância da ponta da asa a obstáculo fixo), previstos na IS n° 154.5-001A.
+
+A análise quantitativa do risco, utilizando o software LRSARA – Lateral Runway Safety Area Risk Analysis , desenvolvido pelo ACRP – Airport Cooperative Research Program , i ndicou que os riscos de LDVO ( landing veer-off ), TOVO ( takeoff veer-off ) e total foram superiores aos valores máximos de referência estabelecidos na IS n° 154.5-001A. Além disso, o tempo esperado de acidentes é inferior a 100 anos. Portanto, houve reprovação no Teste de Aceitação estabelecida na Instrução Suplementar .
+
+Quanto à análise quantitativa do risco realizada pela Concessionária, a área técnica destacou que apesar das probabilidades indicarem níveis acima do critério de risco, o item 6 da IS n° 154.5-001A prevê que não se pode necessariamente afirmar que a operação é insegura. Acrescentou ainda que a eventual retirada do ILS da Pista 28 visando a conformidade com o regulamento poderia criar um cenário de maior risco do que o cenário atual, visto que o auxílio à navegação aérea contribui para a redução do risco das operações. Assim, diante da suposta impossibilidade de atendimento do requisito , a SIA concluiu que, mesmo com a KT violando a faixa da Pista 10/28, as operações ocorrerão em risco tão baixo quanto razoavelmente possível – ALARP [6] .
+
+De início, é importante ressaltar que o RBAC n° 11 estabelece [7] que a solicitação de isenção deve conter as razões que comprovem que a isenção não afetaria a segurança das operações ou atenderia ao interesse público em um nível de segurança aceitável .
+
+O RBAC n° 154 e demais regulamentos que tratam da segurança das operações ( safety ) da Agência não estabelecem requisitos que visam garantir o nível mínimo aceitável de segurança operacional, e sim o nível de segurança desejado e esperado para os aeroportos brasileiros. Não resta dúvida que a presença da KT na faixa da Pista 10/28, como relatado nos autos do processo, afeta negativamente a segurança das operações, vide a análise de risco realizada. Desta forma, resta avaliar, nos termos do RBAC n° 11, se a isenção atenderia ou não ao interesse público em um nível de segurança aceitável.
+
+Partindo do pressuposto que o nível de segurança das operações poderiam ocorrer em um nível aceitável de segurança operacional, ainda que a KT esteja violando a faixa da Pista 10/28, conforme o parecer da área técnica, entendo que a avaliação do interesse público da isenção pretendida passa por uma análise de custo-benefício da adequação, isto é, se a redução do nível de segurança obtido com a isenção do requisito justificaria a eliminação de eventuais impactos na operação e os custos econômicos envolvidos para a adequação.
+
+Quanto aos custos econômicos envolvidos, de acordo com os itens 3.2 e 3.3 do Anexo 2 do Contrato de Concessão (Plano de Exploração Aeroportuário – PEA), em que pese os custos de aquisição, instalação, operação e manutenção do ILS sejam atribuição exclusiva do Poder Público, os custos decorrentes de realocação do Glide Slope é da Concessionária. Ademais, o próprio item 7.4.2 do PEA previa, como obrigação da Fase I-B, a adequação da faixa da Pista 10/28.
+
+Conforme apresentarei adiante, a meu ver a Concessionária não demonstrou nos autos do processo a inviabilidade do atendimento do requisito regulamentar . Assim sendo, o exame do pleito de isenção em tela não se confunde com a necessidade de retirada ou não do ILS da Pista 28, mas tão somente do custo-benefício de eventuais impactos operacionais decorrentes da adequação ao regulamento.
+
+Conforme descrito no Relatório de Diretoria [8] , um dos pontos aventados para a instalação do Glide Slope (GS) pelo PAME [9] era a 140 metros do lado esquerdo da Pista 28 (“GS – ponto 1”), portanto, fora da faixa da Pista 10/28. Contudo, para que não houvesse violação da faixa da pista de táxi A, que é paralela à Pista 10/28, para operação de aeronaves de letra de código de referência D e E do RBAC n° 154, seria necessário deslocar a pista de táxi A. A Concessionária afirmou em seu pleito original [10] que não seria possível mover a pista de táxi A e por esse motivo foi necessário instalar o Glide Slope a 125 metros da Pista 10/28 (“GS – ponto 2”). Porém, a Concessionária não demonstrou porque seria inviável. Convém salientar que não seria necessário deslocar toda a pista de táxi A, mas apenas o trecho estritamente necessário, que é menor que o trecho da pista de táxi A que faz interseção com as pistas de táxi F e G, de forma que a KT não violasse a faixa da pista de táxi A.
+
+Ainda como narrado no Relatório de Diretoria, a própria área técnica questionou [11] a Concessionária acerca da possibilidade de instalar a KT a uma distância de 140 metros da Pista 10/28 e a cerca de 30 metros do eixo da pista de táxi A, na posição alternativa aventada pelo PAME (“GS – Ponto 1”). Nesse cenário seria avaliado o pedido de isenção da faixa da pista de táxi A para operação de aeronaves de letra de código de referência D e E do RBAC n° 154, que exigem uma área livre de obstáculos superior a 30 metros do eixo da pista de táxi, mas não feriria a faixa da pista de táxi A para operação de aeronaves de letra de código de referência C e inferiores . Desse modo, seria analisado se seria possível as aeronaves de letra de código de referência D e E taxiarem pela pista de táxi A com um nível aceitável de segurança operacional, considerando que o afastamento das aeronaves em relação à KT seria inferior ao estabelecido no RBAC n° 154, mas que poderiam ser adotados alguns procedimentos operacionais visando a mitigação do risco. Por exemplo, a velocidade de táxi das aeronaves em trecho da pista de táxi A próximo à KT poderia ser limitada a um valor mais baixo (como ocorre na pista de táxi J2 do SBSV, em que a movimentação de aeronaves está restrita a 8 nós), garantindo-se maior precisão no táxi das aeronaves sobre a sinalização horizontal de eixo da pista de táxi A. Por sua vez, a Concessionária se limitou a afirmar que o risco de colisão com KT a 125 metros da Pista 10/28 decorrente de uma excursão lateral é menor que a probabilidade de colisão de uma aeronave de letra de código de referência D ou E taxiando pela pista de táxi A, a despeito de não ter apresentado qualquer estudo comparando os riscos envolvidos em cada caso. Ademais, não foi ponderado também pela Concessionária que as consequências de uma eventual colisão com a KT em uma excursão lateral da Pista 10/28 ou sobrevoo da aeronave durante o pouso ou a decolagem certamente seriam mais danosas que uma eventual colisão com a aeronave taxiando pela pista de táxi A, em razão da diferença da energia cinética da aeronave nos dois cenários.
+
+Além disso, a Concessionária pontuou que um trecho do pavimento da pista de táxi A faria parte da área crítica do Glide Slope e que as aeronaves teriam que aguardar em posição de espera na pista de táxi A, localizada antes do Glide Slope , a partir do momento em que houvesse qualquer tipo de operação de aproximação ILS pela cabeceira 28, e que isso impactaria significativamente a capacidade do aeroporto e do espaço aéreo .
+
+Sobre esse ponto, cabe ressalvar que a área crítica do Glide Slope indicada [12] pela Concessionária nos autos do processo diverge daquela apresentada no Manual de Operações (MOPS) do Aeroporto. A planta geral do MOPS do SBSV informa que a área crítica do Glide Slope abrangeria um espaço compreendido entre o alinhamento longitudinal da borda da Pista 10/28 e o alinhamento longitudinal paralelo que o Glide Slope está instalado. Desta forma, não haveria sobreposição entre a área crítica do Glide Slope , mesmo que ele fosse instalado a 140 metros da Pista 10/28, e o pavimento da pista de táxi A, possibilitando o táxi de aeronaves de letra de código de referência D e inferiores, e parte de letra de código E [13] , pela pista de táxi A de forma concomitante às operações de aproximação ILS pela cabeceira 28.
+
+Supondo que a área crítica do Glide Slope possa realmente ser afetada pelas aeronaves taxiando pela pista de táxi A a uma distância de 140 metros da Pista 10/28, deve-se ainda considerar que, segundo informação de representante do PAME, " O Kit padrão do Glide é de 30m de distância máxima entre antena e KT " [14] . Isso quer dizer que a antena do Glide Slope , que é frangível, poderia permanecer a 125 metros da Pista 10/28, enquanto que a KT poderia ser reposicionada para uma distância de 140 metros, de tal maneira que a área crítica do Glide Slope não seria modificada.
+
+Desconsiderando a alternativa de a KT e a antena do Glide Slope ficarem afastadas em 15 metros, e mesmo no caso em que as aeronaves de letra de código de referência C [15] e superiores possam eventualmente interferir na operação do Glide Slope , isso não permite concluir que indubitavelmente o impacto na capacidade seria significativo. Considerando dados movimentação de aeronaves do ano de 2025 [16] , contata-se que cerca de 76% das operações do SBSV ocorreram na Pista 10/28 [17] e destas operações apenas 3% ocorreram pela Pista 28. As aeronaves de letra de código de referência C e inferiores não seriam impactadas quando as operações ocorrem pela Pista 10 em qualquer cenário considerado, visto que o Glide Slope da cabeceira 28 não estaria em operação. Além disso, ressalvadas as competências do órgão responsável do controle de tráfego aéreo, não se vislumbra aumento do tempo de ocupação da Pista 28 entre duas ou mais operações sucessivas de pouso, entre duas ou mais operações sucessivas de decolagem e entre operações de decolagem e pouso, nessa ordem. O aumento do tempo de ocupação da Pista 28 ocorreria apenas entre operações de pouso e decolagem com curto intervalo de tempo. No horário mais movimentado do ano de 2025 ocorreram na Pista 28, entre movimentos de pouso e decolagem, da aviação comercial e geral, 20 movimentos. A demanda de aeronaves de aviação comercial da 30ª (trigésima) hora mais movimentada [18] do ano de 2025 da Pista 28 foi de 12 movimentos, somando-se pousos e decolagens. Diante dessas estatísticas, não é esperado que o aumento no tempo de ocupação de Pista 28, considerando um intervalo de uma hora, afetaria significativamente a capacidade, a oferta e a distribuição horária dos voos do aeroporto .
+
+No que se refere à operação de aeronaves de letra de código de referência D e E, se porventura o táxi pela pista de táxi A não apresentasse um nível de segurança aceitável com a KT a 140 metros, vislumbra-se alternativamente que elas poderiam acessar a Pista 10/28 pela pista de táxi F, observados os requisitos regulamentares aplicáveis, seguindo em direção e sentido à extremidade da Pista junto à cabeceira 28, e após utilizarem a área de giro existente poderiam iniciar corrida de decolagem utilizando a toda distância disponível para a corrida de decolagem (TORA). Ainda que esse procedimento aumente o tempo de ocupação da Pista 28 [19] , entendo que o impacto na capacidade, definida em número de movimentos por hora, não seria significativo, vide que a movimentação de aeronaves de letra de código de referência D e E representa menos de 2,5% das operações do SBSV. O número médio diário de movimentos de aeronaves de letra de código D e E na Pista 10/28 observada no ano de 2025 é inferior a 4 (quatro), isto é, na média ocorreram menos de 2 (dois) pousos e 2 (duas) decolagens diárias.
+
+Outrossim, atualmente já existe uma sinalização de posição espera, padrão B, implantada após o reposicionamento do Glide Slope na pista de táxi A em trecho localizado entre as interseções que ela faz com as pistas de táxi F e G e anterior ao local em que o Glide Slope está instalado atualmente. Esse tipo de sinalização é aplicável justamente quando uma aeronave em rota de táxi possa interferir na operação de auxílios à navegação aérea [20] . Se porventura as aeronaves de letra de código de referência D ou E já interferem na operação do Glide Slope na posição atual e as aeronaves devem aguardar na posição de espera, padrão B, enquanto ocorrem as operações de aproximação ILS pela cabeceira 28, o impacto no tempo de ocupação da Pista 10/28 pela mudança da rota dessas aeronaves, que deixariam de acessar a Pista 10/28 pela pista de táxi G para acessarem a Pista 10/28 pela pista de táxi F, seria ainda menor.
+
+Cabe ainda salientar que a KT está instalada a 125 metros da Pista 10/28, portanto, está localizada na porção não preparada da faixa da Pista 10/28 e que, conforme o RBAC n° 154, não precisa ser nivelada e preparada com capacidade de suporte e declividades longitudinais e transversais para suavizar o deslocamento da aeronave em caso de uma excursão lateral . Essa porção tem função apenas proteger uma aeronave no sobrevoo durante o pouso, decolagem ou pouso interrompido. Nessa porção das faixas de pistas de pouso e decolagem podem ser instalados objetos fixos não frangíveis desde que não ultrapassem a cota do eixo da pista (medida no ponto do eixo mais próximo ao objeto), nem ultrapassem uma rampa de 5% ascendente, transversal ao eixo da pista e iniciada no término da faixa preparada [21] , vide a figura 5 da IS n° 154-002, que trata de características físicas dos aeródromos. Em outras palavras, em uma avaliação preliminar a KT não precisaria nem ser reposicionada para 140 metros da Pista 10/28, sendo suficiente que ela seja rebaixada para um nível aceitável pelo regulamento e desde que a própria superfície da faixa da Pista 10/28 não interfira nas operações do Glide Slope . Entendo que os desafios informados pela Concessionária para rebaixamento da KT não são suficientes para demonstrar que existe uma inviabilidade técnica de funcionamento do equipamento e/ou de engenharia.
+
+Diante de todo exposto, concluo que a Concessionária não demonstrou nos autos do processo a inviabilidade de atendimento do requisito 154.207(d)(1) do RBAC n° 154, assim como verificou-se que o impacto na capacidade decorrente da adequação ao regulamento poderia ser nulo ou pouco significativo. Nada obstante, considerando que a ANAC havia concedido anteriormente a isenção do requisito, em razão da presença do mesmo equipamento na faixa da Pista 10/28, nos termos da Decisão n° 19 [22] , de 07/02/2020; tendo em vista que as operações podem ocorrer em um nível aceitável de segurança operacional em um curto período de tempo e que as decisões desta Agência Reguladora devem ser guiadas por uma atuação previsível e responsiva, proponho que seja concedido uma isenção temporária, pelo prazo de 24 meses, de forma que a Concessionária tenha tempo hábil para adequação ao regulamento.
+
+Adicionalmente, considerando a operação do ILS na Pista 28, proponho que a SIA atue de forma proativa e persuasiva junto à Concessionária, ouvindo o Comando da Aeronáutica naquilo que for sua competência, buscando:
+
+prioritariamente, soluções de engenharia e/ou inovadoras que adequem a infraestrutura do SBSV ao RBAC n° 154, considerando a conformidade tanto da faixa da Pista 10/28 quanto da faixa da pista de táxi A; e
+
+alternativamente, soluções de engenharia e/ou operacionais que não violem a faixa da Pista 10/28 e que apresentem um nível aceitável de segurança operacional, minimizando eventuais impactos na capacidade da Pista 10/28.
+
+DO VOTO
+
+Ante o exposto, VOTO pelo DEFERIMENTO PARCIAL do pleito de isenção do requisito de que trata o parágrafo 154.207(d)(1) do RBAC n° 154, em virtude da presença da Casa de Transmissão (KT) na faixa da Pista 10/28 do Aeroporto de Salvador (SBSV), componente não frangível do Glide Slope ( GS ) do ILS da Pista 28, concedendo isenção temporária do requisito pelo prazo de 24 meses , a contar da publicação da Decisão da ANAC.
+
+No mais, determino que a SIA atue junto à Concessionária visando a adequação da infraestrutura do SBSV, conforme proposto no item 2.19 deste Voto.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Carta nº 3819 / 2025 / SBSV (SEI! n° 11133108), de 06/02/2025.
+
+[2] Estudo Aeronáutico (SEI! n° 11133110) e outro complementar em SEI! n° 11863511.
+
+[3] Nota Técnica n° 82/2025/GTOP/GCOP/SIA (SEI! 12012038), de 05/11/2025.
+
+[4] Pista 10 considera as operações de pouso e decolagem que ocorrem da cabeceira 10 para a cabeceira 28.
+
+[5] Pista 28 considera as operações de pouso e decolagem que ocorrem da cabeceira 28 para a cabeceira 10.
+
+[6] ALARP – As Low As Reasonably Practicable.
+
+[7] Item 11.31(c)(4)(i) do RBAC n° 11.
+
+[8] Relatório de Diretoria SEI! n° 12775192.
+
+[9] O Parque de Material de Eletrônica da Aeronáutica – PAME, da subseção de auxílios à navegação aérea, elaborou o Relatório SEI! n° 3011073, indicando dois locais possíveis para reposicionamento do Glide Slope da Pista 28.
+
+[10] Carta n° 1031/2019/CASSA (SEI! n° 3011070), de 09/05/2019.
+
+[11] Anexo SEI! n° 3189533 do e-mail GTOP SEI! n° 3189564, de 01/07/2019.
+
+[12] Carta n° 1198/2019/CASSA (SEI! 3306572) e anexo SEI! 3306574, de 02/08/2025.
+
+[13] Aeronaves com envergadura inferior a 60 metros.
+
+[14] E-mail de representante do PAME SEI! n° 3189529.
+
+[15] Considerando a área crítica do Glide Slope contida no MOPS, aeronaves de letra de código de referência D e aeronaves de letra de código de referência E com envergadura menor que 60 metros poderiam não impactar no sinal do Glide Slope.
+
+[16] Dados do Relatório de Informações de Movimentação Aeroportuária – RIMA, regulado pela Resolução n° 464/2018.
+
+[17] 34% dos movimentos do SBSV ocorreram na pista auxiliar (Pista 17/35).
+
+[18] Considerando como referência o conceito de Hora Pico definida no PEA: 30ª hora mais movimentada no ano civil.
+
+[19] Quando as operações ocorressem pela Pista 10, as aeronaves de letra de código de referência D e E também sairiam pela pista de táxi F. Eventualmente aumentaria o tempo de ocupação da Pista 10.
+
+[20] Requisito 154.223(a)(3) do RBAC n° 154.
+
+[21] Requisito 154.207(d)(4) do RBAC n° 154.
+
+[22] Decisão n° 19 (SEI! n° 4010104), de 07/02/2020.
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 19/02/2026, às 14:24, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12823458 e o código CRC 7AE9A4AD .
+
+SEI nº 12823458

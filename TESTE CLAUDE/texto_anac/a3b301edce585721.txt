@@ -1,0 +1,69 @@
+SEI/ANAC - 13132113 - Voto
+
+Voto
+
+PROCESSO: 00058.074823/2023-19
+
+interessado: superintendência de padrões operacionais
+
+RELATOR: antonio mathias nogueira moreira
+
+DA COMPETÊNCIA
+
+A Lei nº. 11.182, de 27 de setembro de 2005, em seu art. em seu art. 8º, inciso XXX, estabelece competência da Anac para expedir normas e estabelecer padrões mínimos de segurança de voo, de desempenho e de eficiência a serem cumpridos pelas prestadoras de serviços aéreos. Ainda a mesma lei, em seu art. 11, inciso V, estabelece a competência da Diretoria da Anac para exercer o poder normativo da Agência. Referida competência também é refletida no Regimento Interno da Anac, Resolução nº. 381, de 2016, art. 9º, VIII.
+
+Também, conforme disposto no Regimento Interno da Agência (art. 34, incisos I e II, a), é competência da Superintendência de Padrões Operacionais – SPO submeter à Diretoria propostas normativas relacionadas à padrões operacionais mínimos a serem observados pelos operadores aéreos.
+
+Dessa forma, restam fundamentadas as motivações dos documentos aqui em análise, bem como os requisitos de competência quanto à elaboração da proposta, deliberação e decisão.
+
+DA ANÁLISE E DA FUNDAMENTAÇÃO
+
+Conforme se depreende dos autos, o presente processo é decorrente de discussão sobre instituição de requisito obrigatório de cálculo de distância de pouso em voo ( inflight landing distance – IFLD), após inclusão do tema na Agenda Regulatória para o biênio de 2025-2026.
+
+De início, o processo normativo identificou que a Organização da Aviação Civil Internacional – OACI, por meio da Amendment 40-C, introduziu na Parte I do Anexo 6 – Operações de Aeronaves da Convenção de Aviação Civil Internacional orientação procedimental para a observância das condições de pista para pouso, de forma que aproximações para pouso só devem ocorrer se o piloto em comando estiver convencido de que, com as informações disponíveis sobre a condição da superfície da pista, os dados de desempenho da aeronave indiquem a possibilidade de realização de um pouso seguro.
+
+No Relatório de Análise de Impacto Regulatório – AIR, a área técnica, SPO, destacou que esses procedimentos trazidos pela OACI se mostram relevantes para aumentar os níveis de segurança operacional, reduzindo, especialmente, as chances de ocorrência de excursão pelo final da pista. Como destaquei em meu Voto 12434196 , tem-se no problema-regulatório que “.. .a SPO aponta que os requisitos atuais do RBAC nº 121 referentes ao desempenho de pouso de aviões a turbina aplicam um fator de segurança sobre o comprimento disponível da pista para determinar a distância de pouso utilizável, o que garante uma margem para emergências ou para condições reais menos favoráveis, como, por exemplo, pista molhada. Contudo, (...) tais requisitos se aplicam apenas ao momento de despacho dos aviões, logo, se as condições originalmente previstas se alterarem ao longo da operação, não é exigido que a distância de pouso requerida seja recalculada e nem comparada com a distância de pouso disponível do aeródromo de destino .” Verifica-se, de tal modo, que, em que pese a relevância da Amendment 40-C, os procedimentos nela contidos não foram, até o momento, incorporados no regramento nacional, em específico, o Regulamento Brasileiro de Aviação Civil – RBAC nº 121, que estabelece os requisitos operacionais paras as empresas aéreas Brasileiras, representando uma diferença da regulamentação brasileira àquela basilar estabelecida pela OACI.
+
+Observou-se, também, com a elaboração da AIR, a oportunidade de inclusão nos regramentos nacionais de prática recomendada pela OACI, de forma a determinar aos pilotos em operação no país a realização de registro, por meio de special air-report (AIREP), quando identificarem condições de frenagem não condizentes com o esperado para a pista de pouso.
+
+Partindo dessa definição de problema-regulatório, após estudos registrados na Nota Técnica nº 88/2024/GTNO/GNOS/GNOS/SPO (SEI 10802971 ), a SPO apresentou à Diretoria proposta normativa de emenda ao RBAC nº 121, na forma consignada nos documentos SEI 10802973 , 10802980 , 10802984 e 10802987 . Tais documentos foram avaliados pela Diretoria Colegiada que, na 39ª Reunião Deliberativa Eletrônica de 2025, aprovou a submissão dos autos à consulta pública.
+
+Finalizada a etapa de Consulta Pública, a equipe da SPO constatou que não foram recebidas contribuições ao tema. Entende-se que esse fato corrobora o alinhamento da proposta levada pela Agência com as práticas já observadas pelo mercado e estabelecidas pela OACI.
+
+Dando prosseguimento ao processo, conforme preconiza o inciso I, do art. 5º da Instrução Normativa nº 17/2009, a fim de realizar o controle interno da legalidade administrativa, a área técnica submeteu a proposta normativa, pós consulta pública, à avaliação da Procuradoria Federal Especializada junto à Anac – PFE/ANAC. Aquela PFE/ANAC emitiu o Parecer nº 10/2026/FIN/PFEANAC/PGF/AGU (SEI 13003109 ) e o Despacho de Aprovação nº. 00034/2026/GAB/PFEANAC/PGF/AGU (SEI 13003125 ) contendo apenas recomendações redacionais, não vislumbrando óbices jurídicos ao prosseguimento do feito.
+
+A SPO procedeu às adequações textuais e elaborou as propostas de atos normativos contidos nos documentos SEI 13024989 e 13024996 , que contempla a inclusão dos seguintes textos ao RBAC nº. 121:
+
+" 121.568 Avaliação em voo da distância de pouso
+
+O piloto em comando não pode continuar uma aproximação para além do fixo de aproximação final ou, quando tal fixo não existir, o início do segmento de aproximação final de um procedimento de aproximação por instrumentos, exceto se o piloto em comando se assegurar que, de acordo com as informações disponíveis sobre as condições da superfície da pista, os dados de desempenho do avião indicarem que um pouso seguro pode ser concluído."
+
+" 121.568a Observações meteorológicas
+
+O piloto em comando deve reportar a ação de frenagem, conforme procedimentos estabelecidos pelo Departamento de Controle do Espaço Aéreo ou pela autoridade aeronáutica competente sobre o aeródromo, quando a ação de frenagem na pista encontrada durante o pouso não for tão boa quanto o esperado."
+
+Na oportunidade, após diálogo com a SPO, e a fim de melhorar a compreensão textual, proponho o seguinte ajuste no item 121.568, em destaque abaixo:
+
+" 121.568 Avaliação em voo da distância de pouso
+
+O piloto em comando não pode continuar uma aproximação para além do fixo de aproximação final ou, quando tal fixo não existir, iniciar o segmento de aproximação final de um procedimento de aproximação por instrumentos, exceto se ele se assegurar de que, de acordo com as informações disponíveis sobre as condições da superfície da pista, os dados de desempenho do avião indicarem que um pouso seguro pode ser concluído."
+
+Nesse contexto, considerando toda a argumentação apesentada pela área técnica no processo, a realização de consulta pública e o parecer da PFE/ANAC, entendo que a proposta de emenda ao RBAC nº. 121 está apta a ser aprovada por esta Diretoria Colegiada.
+
+DA VOTO
+
+Assim sendo, ante todo o exposto e com base no conteúdo dos autos, VOTO FAVORAVELMENTE à aprovação das propostas de emenda ao RBAC nº. 121, nos termos das Propostas de Atos SEI 13024989 e 13024996 apresentadas pela Superintendência de Padrões Operacionais com a alteração proposta no item 2.9 do presente voto.
+
+Por fim, solicito à ASTEC que, quando da publicação dos atos, proceda ao ajuste textual acima proposto.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor - Relator
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 28/04/2026, às 19:04, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13132113 e o código CRC F8F84AA4 .
+
+SEI nº 13132113

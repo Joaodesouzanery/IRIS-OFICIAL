@@ -1,0 +1,490 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.111394/2025-21
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas
+
+Data de Geração: 09/12/2025
+
+Interessados:
+
+Lista de Protocolos (63 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+12454568 Relatório de AIR 1 12/12/2025 12/12/2025 SAS
+12442188 Proposta de Ato (Normativo, Decisão etc.) 12/12/2025 12/12/2025 SAS
+12443168 Anexo 1 12/12/2025 12/12/2025 SAS
+12443539 Anexo 2 12/12/2025 12/12/2025 SAS
+12443664 Anexo 3 12/12/2025 12/12/2025 SAS
+12443632 Proposta de Ato (Normativo, Decisão etc.) 12/12/2025 12/12/2025 SAS
+12462121 Despacho 12/12/2025 12/12/2025 SAS
+12477930 Despacho 16/12/2025 16/12/2025 ASTEC
+12506408 Certidão de Deliberação 22/12/2025 22/12/2025 ASTEC
+12506444 Certidão de Distribuição 22/12/2025 22/12/2025 ASTEC
+12576270 Relatório de Diretoria 20/01/2026 20/01/2026 DIR-RCM
+12576274 Voto 20/01/2026 20/01/2026 DIR-RCM
+12631696 Aviso 7 21/01/2026 21/01/2026 ASTEC
+12636965 Anexo Minuta de Resolução 21/01/2026 21/01/2026 ASTEC
+12797253 Anexo 1 04/02/2026 04/02/2026 DIR-RCM
+12645078 Anexo DOU 22/01/2026 22/01/2026 ASTEC
+12645082 Certidão de Deliberação 22/01/2026 22/01/2026 ASTEC
+12648518 Memorando-Circular 4 22/01/2026 22/01/2026 ASTEC
+12960870 Proposta 27/02/2026 09/03/2026 GTIC
+12960871 Recibo Eletrônico de Protocolo 09/03/2026 09/03/2026 GTIC
+12961883 Proposta s/n 09/03/2026 09/03/2026 SAS
+12961903 Proposta s/n 20/02/2026 09/03/2026 SAS
+12961967 Proposta s/n 18/02/2026 09/03/2026 SAS
+12964378 Carta 09/03/2026 09/03/2026 GTIC
+12964379 Recibo Eletrônico de Protocolo 09/03/2026 09/03/2026 GTIC
+13387632 Anexo 10/03/2026 29/05/2026 CNAD
+13353037 Anexo AP - R.400 11/02/2026 25/05/2026 CNAD
+13352883 Anexo CP - Email 10/03/2026 25/05/2026 CNAD
+13352927 Anexo CP - Email 09/03/2026 25/05/2026 CNAD
+13352953 Anexo CP - Email 09/03/2026 25/05/2026 CNAD
+13015200 Anexo CP - 02 09/03/2026 19/03/2026 CNAD
+13345060 Anexo CP - 04 09/03/2026 22/05/2026 CNAD
+13345142 Anexo CP - 05 09/03/2026 22/05/2026 CNAD
+13015312 Anexo CP - 06 09/03/2026 19/03/2026 CNAD
+13345151 Anexo CP - 07 09/03/2026 22/05/2026 CNAD
+13016209 Anexo CP - 09 05/03/2026 19/03/2026 CNAD
+13345220 Anexo CP - 10 09/03/2026 22/05/2026 CNAD
+13015231 Anexo CP - 11 09/03/2026 19/03/2026 CNAD
+13015093 Anexo CP - 13 09/03/2026 19/03/2026 CNAD
+13015161 Anexo CP - 15 09/03/2026 19/03/2026 CNAD
+13345376 Anexo CP - 16 09/03/2026 22/05/2026 CNAD
+13015318 Anexo CP - 17 09/03/2026 19/03/2026 CNAD
+13552381 Nota Técnica 6 01/07/2026 01/07/2026 SAS
+13552898 Anexo 1 01/07/2026 01/07/2026 SAS
+13552744 Proposta de Ato (Normativo, Decisão etc.) 01/07/2026 01/07/2026 SAS
+13552874 Relatório 01/07/2026 01/07/2026 SAS
+13556417 Anexo 01/07/2026 01/07/2026 SAS
+13556626 Despacho 01/07/2026 01/07/2026 SAS
+13645402 Parecer 34/2026/FIN/PFEANAC/PGF/AGU 22/07/2026 22/07/2026 PF-ANAC
+13645410 Despacho de Aprovação 133/2026/GAB/PFEANAC/PGF/AGU 22/07/2026 22/07/2026 PF-ANAC
+13687442 Nota Técnica 8 21/08/2026 21/08/2026 GTND
+13740053 Proposta de Ato (Normativo, Decisão etc.) 21/08/2026 21/08/2026 GTND
+13751655 Anexo 1 25/08/2026 25/08/2026 GTND
+13875245 Anexo 16/09/2026 16/09/2026 GTND
+13771621 Despacho 21/08/2026 21/08/2026 SSA
+13773812 Certidão de Distribuição 24/08/2026 24/08/2026 ASTEC
+13786349 Relatório de Diretoria 23/09/2026 23/09/2026 DIR-RCM
+13786354 Voto 23/09/2026 23/09/2026 DIR-RCM
+13907416 Resolução 813 24/09/2026 24/09/2026 ASTEC
+13907555 Memorando 31 23/09/2026 23/09/2026 ASTEC
+13910061 Retificação 24/09/2026 24/09/2026 ASTEC
+13916742 Anexo DOU 25/09/2026 25/09/2026 ASTEC
+13916769 Certidão de Deliberação 25/09/2026 25/09/2026 ASTEC
+
+Lista de Andamentos (78 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+06/10/2026 19:04
+DIR-RCM
+
+Conclusão do processo na unidade
+
+28/09/2026 15:44
+SSA
+
+Processo recebido na unidade
+
+25/09/2026 15:40
+GTND
+
+Alterado nível de acesso do documento 13552744 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+25/09/2026 15:40
+GTND
+
+Alterado nível de acesso do documento 13552381 (Nota Técnica 6) para público
+
+25/09/2026 15:40
+GTND
+
+Alterado nível de acesso do documento 13552898 (Anexo 1) para público
+
+25/09/2026 15:39
+GTND
+
+Alterado nível de acesso do documento 13687442 (Nota Técnica 8) para público
+
+25/09/2026 15:39
+GTND
+
+Alterado nível de acesso do documento 13740053 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+25/09/2026 15:39
+GTND
+
+Alterado nível de acesso do documento 13751655 (Anexo 1) para público
+
+25/09/2026 12:57
+SSA
+
+Processo remetido pela unidade ASTEC
+
+24/09/2026 10:32
+SSA
+
+Processo recebido na unidade
+
+23/09/2026 18:03
+SSA
+
+Processo remetido pela unidade ASTEC
+
+16/09/2026 15:11
+ASTEC
+
+Reabertura do processo na unidade
+
+25/08/2026 17:28
+GTND
+
+Reabertura do processo na unidade
+
+24/08/2026 13:13
+DIR-RCM
+
+Processo recebido na unidade
+
+24/08/2026 11:03
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+24/08/2026 09:46
+ASTEC
+
+Processo recebido na unidade
+
+21/08/2026 19:33
+ASTEC
+
+Processo remetido pela unidade SSA
+
+21/08/2026 18:33
+SSA
+
+Processo recebido na unidade
+
+21/08/2026 18:29
+SSA
+
+Processo remetido pela unidade GTND
+
+22/07/2026 21:45
+SAS
+
+Processo recebido na unidade
+
+22/07/2026 18:29
+SAS
+
+Processo remetido pela unidade PF-ANAC
+
+02/07/2026 12:07
+PF-ANAC
+
+Processo recebido na unidade
+
+01/07/2026 21:38
+PF-ANAC
+
+Processo remetido pela unidade SAS
+
+19/03/2026 16:59
+CNAD
+
+Processo recebido na unidade
+
+19/03/2026 16:59
+CNAD
+
+Processo remetido pela unidade SAS
+
+09/03/2026 16:38
+GTIC
+
+Processo recebido na unidade
+
+09/03/2026 16:36
+GTIC
+
+Processo remetido pela unidade GTIC
+
+09/03/2026 11:49
+GTIC
+
+Processo recebido na unidade
+
+09/03/2026 10:50
+GTIC
+
+Processo remetido pela unidade GTIC
+
+05/02/2026 11:49
+DIR-MNM
+
+Conclusão do processo na unidade
+
+04/02/2026 16:06
+DIR-LRI
+
+Conclusão do processo na unidade
+
+23/01/2026 09:45
+SAS
+
+Processo recebido na unidade
+
+22/01/2026 18:00
+GTIC
+
+Processo recebido na unidade
+
+22/01/2026 17:42
+GTIC
+
+Processo remetido pela unidade ASCOM
+
+22/01/2026 17:40
+ASCOM
+
+Processo recebido na unidade
+
+22/01/2026 16:50
+ASCOM
+
+Processo remetido pela unidade ASTEC
+
+22/01/2026 16:50
+SAS
+
+Processo remetido pela unidade ASTEC
+
+22/01/2026 15:23
+SAS
+
+Alterado nível de acesso do documento 12443632 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+22/01/2026 15:22
+SAS
+
+Alterado nível de acesso do documento 12442188 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+22/01/2026 15:22
+SAS
+
+Processo recebido na unidade
+
+22/01/2026 14:55
+ASTEC
+
+Reabertura do processo na unidade
+
+22/01/2026 14:53
+SAS
+
+Processo remetido pela unidade ASTEC
+
+21/01/2026 17:07
+ASTEC
+
+Alterado nível de acesso do documento 12443664 (Anexo 3) para público
+
+21/01/2026 17:07
+ASTEC
+
+Alterado nível de acesso do documento 12443539 (Anexo 2) para público
+
+21/01/2026 17:07
+ASTEC
+
+Alterado nível de acesso do documento 12443168 (Anexo 1) para público
+
+21/01/2026 17:06
+ASTEC
+
+Alterado nível de acesso do documento 12454568 (Relatório de AIR 1) para público
+
+20/01/2026 17:37
+ASTEC
+
+Processo recebido na unidade
+
+20/01/2026 17:33
+SAS
+
+Processo recebido na unidade
+
+20/01/2026 17:33
+SAS
+
+Processo remetido pela unidade DIR-RCM
+
+20/01/2026 17:33
+ASTEC
+
+Processo remetido pela unidade DIR-RCM
+
+20/01/2026 11:29
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+15/01/2026 11:10
+ASTEC
+
+Reabertura do processo na unidade
+
+06/01/2026 10:37
+DIR-P
+
+Conclusão do processo na unidade
+
+23/12/2025 17:38
+DIR-RCM
+
+Processo recebido na unidade
+
+23/12/2025 10:14
+DIR-TP
+
+Conclusão do processo na unidade
+
+22/12/2025 14:28
+SAS
+
+Processo recebido na unidade
+
+22/12/2025 11:46
+SAS
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 11:46
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 10:01
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+22/12/2025 08:05
+DIR-RCM
+
+Conclusão do processo na unidade
+
+18/12/2025 11:12
+DIR-P
+
+Processo recebido na unidade
+
+17/12/2025 19:09
+DIR-MNM
+
+Processo recebido na unidade
+
+16/12/2025 19:02
+DIR-TP
+
+Processo recebido na unidade
+
+16/12/2025 18:00
+DIR-RCM
+
+Processo recebido na unidade
+
+16/12/2025 17:28
+DIR-LRI
+
+Processo recebido na unidade
+
+16/12/2025 16:28
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+16/12/2025 16:28
+DIR-TP
+
+Processo remetido pela unidade ASTEC
+
+16/12/2025 16:28
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+16/12/2025 16:28
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+16/12/2025 16:28
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+16/12/2025 16:28
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+15/12/2025 10:57
+ASTEC
+
+Processo recebido na unidade
+
+12/12/2025 20:43
+ASTEC
+
+Processo remetido pela unidade SAS
+
+12/12/2025 17:08
+GCON
+
+Conclusão do processo na unidade
+
+10/12/2025 12:18
+GCON
+
+Processo recebido na unidade
+
+10/12/2025 12:18
+GCON
+
+Processo remetido pela unidade SAS
+
+09/12/2025 17:30
+SAS
+
+Alterado nível de acesso do processo para público
+
+09/12/2025 15:55
+SAS
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

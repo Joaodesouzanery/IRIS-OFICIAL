@@ -1,0 +1,190 @@
+ANAC
+RELATORIO
+PROCESSO:00058.072980/2026-24
+INTERESSADO:TOTALLINHASAEREASS.A
+RELATOR:RUICHAGASMESQUITA
+1. DESCRICAODOSFATOS
+1.1. Trata-se de processo de avaliacao dos procedimentos e controles de seguranca
+do operador Total Linhas Aéreas a partir das acoes de vigilancia continuada conduzidas pela
+Superintendencia de Padroes Operacionais (SPO) e pela Superintendencia de Infraestrutura
+Aeroportuaria (SiA) no ambito de suas respectivas esferas de competéncia.
+1.2. Conforme documento inaugural do processo (Despacho SEl n 13776332, de
+24/08/2026), foram reportados no Comite de Seguranca Operacional levantamentos relativos a
+condicao da Total Linhas Aéreas nas areas de seguranca operacional e seguranca da aviacao
+civil contra atos de interferencia ilicita, os quais exigiram aprofundamento por parte das
+superintendencias competentes, de modo a prover subsidios técnicos acerca da empresa a
+Diretoria.
+1.3. Por meio da Nota Técnica n? 15/2026/ASSOP (SEl n 13787100), de 26/08/2026,
+a Assessoria de Seguranga Operacional (AssOP) apresentou resultados de analise integrada
+de seguranca operacional
+Da amostra
+Assessoriaextraiuelementoscaracterizadores deumcontexto operacionaldesubnotificacaode
+eventos
+1.4. No ambito das medidas voltadas a seguranga da aviagao civil contra atos de
+interferencia ilicita (AVSEC), 0 Relatorio SEl n 13792466, de 27/08/2026, apresenta sintese
+dos achados extraidos das 5 atividades de controle de qualidade AvSEC conduzidas pela
+Superintendencia de Infraestrutura Aeroportuaria (SIA), nos anos de 2025 e 2026 junto a
+empresa. O Relatorio registra que as deficiencias foram consolidadas na Nota Técnica n?
+4/2026/CFAV/GTFC-SIA/GSEF/SIA(SEln? 13671472),de 31/07/2026, ue fundamentou a
+aplicacao de medida administrativa acautelatoria publicizada por meio da Portaria n?
+19.750/SlA, de 06/08/2026. A cautelar fixou proibicao de implantacao de novas bases
+operacionais e limitacao das frequencias semanais de operacao nas bases SBGR (1O), SBPA
+(5), SBFL (10) e SBRF (5), com possibilidade de agravamento das restricoes na hipotese de
+auséncia de comprovagao da adequagao das nao conformidades de maior criticidade. Segundo
+informacoes da SiA, a medida se baseou, entre outros elementos, na constatagao de:
+. “(i) tratamento tardio, parcial ou ausente dos respectivos Planos de Agao Corretiva
+(PAC) em todas as bases fiscalizadas;
+(ii)recorrenciadenaoconformidades dealta criticidade
+RelatoriodeDiretoria13805427 SEl00058.072980/2026-24/pg.1
+[pg 1]
+
+: (ili) historico de Documentos de Segurangca da Aviacao Civil (DSAC) que corroboram
+as falhas identificadas;e
+:(iv)
+1.5. O Relatorio da SIA contempla linha cronologica iniciada em 04/10/2025, data em
+que foi emitido o Relatorio de Inspecao e Achados n 161 (SEl n 12139015), contendo a
+descricao de 37naoconformidades identificadasnaAuditoriaAVSECrealizada emSBPA.Apos
+trocas de missivas entre a Agencia e o operador, chega-se a proposta de acoes corretivas
+apresentada pela Total Linhas Aéreas, em 25/08/2026, no ambito dos Processos n?
+00058.079938/2025-53, n²00058.030529/2026-30,n²00058.031863/2026-19 n?
+00058.034183/2026-49.
+1.6. A partir da analise do conjunto de providencias informadas ou propostas para
+futuro, a Superintendencia conclui que, em vista da auséncia de evidencias concretas e
+substanciais, ainda se mostra necessaria a manutencao da medida cautelar. Por oportuno,
+destaca-se que o Relatorio informa que o acompanhamento da atuacao da empresa no periodo
+revelou “historico de correcoes parciais, recorréncia de nao conformidades, auséncia de
+evidencias objetivas de saneamento e sucessivas prorrogagoes de prazo", a evidenciar (i)"a
+existencia de fragilidades na cultura de seguranga AvsEC do operador, (ii) insuficiente
+conhecimento das exigencias normativas aplicaveis por parte de seu corpo tecnico, (ili) baixa
+efetividade de seu programa de compliance regulatorio, (iv) baixo Coeficiente de
+Responsividade e(v) comprometimento ainda insuficiente da Empresa com a materia de
+Seguranga da Aviagao Civif'.
+1.7. A Superintendencia de Padroes Operacionais (SPO), por sua vez, lancou aos
+autos a Nota Técnica n 90/2026/G121/SPO (SEl n° 13802485), de 28/08/2026, em que
+apresenta historico das acoes de vigilancia e das medidas adotadas pela unidade a partir de
+2025 e recomenda, ao final, a adocao de providéncias adicionais em razao da limitacao da
+efetividade das medidasanteriormenteadotadas.
+1.8. De partida, destaca-se no levantamento que a partir da mudanca de controle
+acionario, em dezembro de 2023, foi observada elevada rotatividade em cargos de pessoal de
+administracao requeridos pela regulamentagao da Agencia, com percepcao de
+"enfraquecimento dos mecanismos internos de supervisao, controle e gerenciamento de riscos,
+reduzindo a capacidade da organizagao de identificar desvios e implementar acoes corretivas
+eficazes". Assim, em razao da observada descontinuidade de processos criticos de gestao e
+perda de conhecimento organizacional, a unidade técnica passou a observar deficiencias no
+Sistema de Gerenciamento da Seguranga Operacional (SGsO) e no Sistema de Analise e
+Supervisao Continuada (SAsC), elementos centrais a adequada gestao do risco, dos controles
+de seguranga, e, de forma geral, da conformidade regulatoria.
+1.9. Dos achados coletados em atividades de Inspecao de Base Principal e Inspecao
+do SGSO, ocorridas em julho de 2025, destacou-se numero significativode nao
+conformidades (28), mas principalmente a natureza reiterada, critica ou abrangente de parte
+dessas nao conformidades. Da Nota Técnica extrai-se:
+8das28naoconformidadesidentificadas(28% eram reincidentes,considerandoo
+historico de inspecoes realizadas pela Agencia nos 24 meses anteriores;
+todasasnaoconformidadesreincidentesestavamrelacionadasaoSistemade
+Gerenciamento da Seguranga Operacional;
+16dos25  itens avaliados durante a inspecao de SGsO foramclassificados
+como nao conformes;
+nao conformidades relacionadas ao SGSO
+13das161 （81%） receberamas
+classificagoes mais elevadas da metodologia de avaliagao de risco utilizada pela
+Agencia, enquadrando-se como desvios moderados ou significativos de natureza
+RelatoriodeDiretoria 13805427 SEl00058.072980/2026-24/pg.2
+[pg 2]
+
+sistemica."
+1.10. As falhas identificadas fundamentaram a adocao de medida cautelar de proibigao
+do aumento da complexidade operacional da empresa, com impedimento, por exemplo, da
+inclusao de novos modelos de aeronave na frota. A medida foi formalizada por meio do Oficio n?
+1705/2025/GCTA/SPO-ANAC, de 15/07/2025 (SEI n° 11805020).
+1.11. Ao final de setembro de 2025, a SPO realizou analise abrangente dos resultados
+da vigilancia nos tres primeiros trimestres do ano, incluindo a avaliacao dos planos de acoes
+corretivas apresentados pela empresa no periodo. Constatou-se, na ocasiao, a degradacao do
+SAsC e a incapacidade de solucao integral das falhas apontadas pela Agencia no periodo,
+1.12.
+entre os principais
+achados:
+:“cumprimento de Diretrizes de Aeronavegabilidade (AD) repetitivas além dos intervalos
+permitidos;
+ cumprimento de Diretrizes de Aeronavegabilidade apos o vencimento de seus prazos
+de execucao;
+execugao de atividades de manutengao em desacordo com os procedimentos
+previstos nos manuais aprovados;
+deficiencia no controle dos intervalos de inspegao associados a Grandes Modificacoes;
+: deficiencia no controle dos intervalos de inspegao associados a Grandes Reparos;
+ deficiencia no gerenciamento da implementagao e acompanhamento de Diretrizes de
+Aeronavegabilidade; e
+ deficiencia das auditorias internas, incluindo falhas na avaliacao de riscos, controle de
+prazos e acompanhamento dos Planos de Agoes Corretivas."
+1.13. Com base em tais constatacoes, a medida acautelatoria foi ampliada, fixando-se (i)
+a suspensao da prerrogativa de submissao de revisoes da Lista de Bases de Manutencao
+(LBM) pelo método de aceitacao, passando a ser exigida aprovacao prévia da ANAC para
+qualquer alteracao da LBM, e (ii) a limitacao de qualquer aumento de escopo de certificacao
+que resultasse em incremento da complexidade operacional do operador, o que inclui frota de
+aeronaves (modelos e total de aeronaves), escopos de manutencao constantes das
+Especificacoes Operativas e demais alteracoes sujeitas ao disposto na Secao 119.41 do
+Regulamento Brasileiro da Aviacao Civil (RBAC) n 119. A nova medida foi formalizada por meio
+do Oficio n 2433/2025/GTVA/GCAC/SPO-ANAC (SEl n² 12088440), de 24/09/2025, assinado
+na data seguinte.
+1.14. No acompanhamento da operacao com restricoes, a SPO identificou em auditoria
+realizada entre os dias 24 e 26/02/2026 que nao conformidades identificadas em julho
+de 2025 permaneceram nao solucionadas. Especificamente em relacao ao SGsO,
+nao conformidades originalmente identificadas ainda nao estavam presentes.
+1.15. No periodo, foi realizada vigilancia concentrada, com auditorias nas bases de Belo
+Horizonte, Guarulhos, Recife e Porto Alegre. Como resultado, novas nao conformidades foram
+identificadas, bem como foram mantidas nao conformidades identificadas ao
+achados
+da nova rodada de auditorias, o que na visao da unidade "demonstra que as causas sistemicas
+associadas a gestao da aeronavegabilidade continuada nao foram plenamente mitigadas".
+1.16. A Nota Técnica apresenta, ainda, historico de recursos empregados pela SPO na
+vigilancia da empresa. Em termos de resultado, historicamente se observa percentual médio de
+nao conformidades mais alto na Total Linhas Aéreas que nos demais operadores nacionais
+regidos pelo RBAC n 121.
+RelatoriodeDiretoria13805427 SEl00058.072980/2026-24/pg.3
+[pg 3]
+
+1.17. Por fim, a area téecnica apresenta consolidado de providencias aplicadas em face
+da empresa no periodo de 2024 a 2025, o que inclui a lavratura de autos de infracao, a
+determinacao da troca de pessoal de administracao requerido, bem como as medidas
+cautelares anteriormente referenciadas. Conclui-se que, embora tenham sido observadas
+melhoras pontuais e reducao do numero absoluto de nao conformidades em aberto, “os efeitos
+obtidos foram limitados e insuficientes para caracterizar a recuperagao plena da capacidade
+organizacional do operador. Em grande medida, as melhorias observadas dependeram,
+segundo a avaliacao técnica, de intensa fiscalizacao e interlocucao da Agencia com o operador,
+que “passou a atuar de forma predominantemente reativa, concentrando seus esforcos na
+resposta aos apontamentos realizados pela ANAC, ao invés de demonstrar capacidade
+autonoma de identificar desvios, analisar causas e implementar medidas corretivas eficazes por
+meio de seus proprios sistemas de controle interno".
+1.18. Em vista do quadro fatico relatado, a Nota Técnica apresenta duas propostas
+alternativas de linha de agao:
+ampliacao de restricoes operacionais e execucao de Vigilancia Especial, visando
+acompanhar a implementacao das acoes corretivas e verificar sua efetividade; ou
+(2) Suspensao Cautelar do Certificado de Operador Aéreo (COA), em sua
+integralidade, com interrupcao das operacoes baseadas no COA da empresa até
+que sejam demonstradas condicoes adequadas de conformidade e desempenho.
+1.19. Ao ratificar o levantamento apresentado pela Gerencia de Operacoes 121, o
+Superintendente de Padroes Operacionais recomendou, por meio do Despacho SEl n?
+13800487, de 28/08/2026, a adogao da segunda alternativa - " a suspensao integral das
+operacoes da empresa Total Linhas Aéreas, até que sejam cumpridas as condicoes resolutivas
+descritas no item 6" da Nota Técnica n 90/2026/G121/SPO (SEl n² 13802485).
+1.20. Os relatorios e analises da SIA e da SPO foram encaminhados a AsSOP, que por
+meio do Despacho SEl n 13793575, de 30/08/2026, remeteu os autos a Assessoria Técnica,
+com recomendacao de celeridade na distribuicao da matéeria a Diretoria para avaliacao “quanto
+inciso XXVll, do Regimento Interno (Resolugao Interna n 10, de 27/07/2026).
+1.21. Na presente data, por meio de sorteio (Certidao de Distribuicao SEl n? 13806127),
+a matéria foi distribuida a relatoria desta Diretoria.
+E o Relatorio.
+RUICHAGAS MESQUITA
+Diretor
+sei! Documento assinado eletronicamente por Rui Chagas Mesquita, Diretor, em 31/08/2026, as
+19:00, conforme horario oficial de Brasilia, com fundamento no art. 4, do Decreto n² 10.543.
+assinatura de 13 de novembro de 2020.
+eletronica
+A autenticidade deste documento pode ser conferida no site
+https://sei.anac.gov.br/sei/autenticidade, informando o codigo verificador 13805427 e o codigo
+CRC29843CC3.
+RelatoriodeDiretoria13805427 SEl00058.072980/2026-24/pg.4
+[pg 4]
+
+SEI n° 13805427
+Relatorio de Diretoria 13805427 SEl00058.072980/2026-24 /pg.5
+[pg 5]

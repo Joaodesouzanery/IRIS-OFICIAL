@@ -1,0 +1,1038 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+I mprimir
+
+Processo: 00058.072980/2026-24
+
+Tipo: Operador 121: Consultas, comunicações ou solicitações diversas
+
+Data de Geração: 24/08/2026
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (60 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13776332 Despacho 24/08/2026 24/08/2026 ASSOP
+13784483 Despacho 26/08/2026 26/08/2026 GSEF
+13787100 Nota Técnica 15 26/08/2026 26/08/2026 ASSOP
+13792466 Relatório 27/08/2026 27/08/2026 GTFC-SIA
+13793426 Despacho 27/08/2026 27/08/2026 SIA
+13802485 Nota Técnica 90 28/08/2026 28/08/2026 G121
+13800487 Despacho 28/08/2026 28/08/2026 SPO
+13793575 Despacho 30/08/2026 30/08/2026 ASSOP
+13806416 Proposta de Ato (Normativo, Decisão etc.) 31/08/2026 31/08/2026 SPO
+13806127 Certidão de Distribuição 31/08/2026 31/08/2026 ASTEC
+13805895 Ofício 20 31/08/2026 31/08/2026 ASTEC
+13805427 Relatório de Diretoria 31/08/2026 31/08/2026 DIR-RCM
+13813053 Relatório 31/08/2026 01/09/2026 DIR-RCM
+13805714 Voto 31/08/2026 31/08/2026 DIR-RCM
+13813045 Voto 31/08/2026 01/09/2026 DIR-RCM
+13809392 Proposta de Ato (Normativo, Decisão etc.) 31/08/2026 31/08/2026 DIR-RCM
+13806618 Despacho 31/08/2026 31/08/2026 ASTEC
+13806384 Certidão de Intimação Cumprida 31/08/2026 31/08/2026 ASTEC
+13808931 Voto 31/08/2026 31/08/2026 DIR-P
+13809503 Voto 31/08/2026 31/08/2026 DIR-CBI
+13809817 Voto 31/08/2026 31/08/2026 DIR-MNM
+13809917 Voto 31/08/2026 31/08/2026 DIR-RJH
+13810718 Decisão 755 01/09/2026 01/09/2026 ASTEC
+13810819 Memorando-Circular 27 01/09/2026 01/09/2026 ASTEC
+13810852 Despacho 01/09/2026 01/09/2026 ASTEC
+13813257 Ofício 23 01/09/2026 01/09/2026 ASTEC
+13813756 Ofício 979 01/09/2026 01/09/2026 GAB
+13813858 Ofício 980 01/09/2026 01/09/2026 GAB
+13936118 Aviso de Recebimento - AR YO104344295BR 10/09/2026 30/09/2026 PROT-DF
+13815562 Certidão de Intimação Cumprida 01/09/2026 01/09/2026 ASTEC
+13815798 E-mail 01/09/2026 01/09/2026 GAB
+13815806 E-mail 01/09/2026 01/09/2026 GAB
+13817793 Anexo DOU 02/09/2026 02/09/2026 ASTEC
+13810885 Certidão de Deliberação 02/09/2026 02/09/2026 ASTEC
+13818730 Despacho 02/09/2026 02/09/2026 GTAS-SPO
+13820865 E-mail - Confirmação de recebimento 02/09/2026 02/09/2026 GAB
+13885094 Pedido de Revisão 18/09/2026 18/09/2026 G121
+13885095 Anexo 18/09/2026 18/09/2026 G121
+13885096 Anexo 18/09/2026 18/09/2026 G121
+13885097 Anexo 18/09/2026 18/09/2026 G121
+13885099 Anexo 18/09/2026 18/09/2026 G121
+13885100 Recibo Eletrônico de Protocolo 18/09/2026 18/09/2026 G121
+13896863 Petição 22/09/2026 22/09/2026 G121
+13896866 Anexo 22/09/2026 22/09/2026 G121
+13896868 Anexo 22/09/2026 22/09/2026 G121
+13896869 Anexo 22/09/2026 22/09/2026 G121
+13896870 Recibo Eletrônico de Protocolo 22/09/2026 22/09/2026 G121
+13897759 Certidão de Distribuição 22/09/2026 22/09/2026 ASTEC
+13897980 Despacho 22/09/2026 22/09/2026 DIR-RCM
+13902619 Despacho 23/09/2026 23/09/2026 GSEF
+13906399 Despacho 25/09/2026 25/09/2026 G121
+13908969 Despacho 26/09/2026 26/09/2026 GTFC-SIA
+13921542 Despacho 27/09/2026 27/09/2026 GSEF
+13922623 Despacho 28/09/2026 28/09/2026 SIA
+13931021 Despacho 29/09/2026 29/09/2026 GTAS-SPO
+13932229 Relatório de Diretoria 06/10/2026 06/10/2026 DIR-RCM
+13932240 Voto 06/10/2026 06/10/2026 DIR-RCM
+13964155 Despacho 06/10/2026 06/10/2026 ASTEC
+13964464 Voto 08/10/2026 08/10/2026 DIR-P
+13966732 Voto 06/10/2026 06/10/2026 DIR-CBI
+
+Lista de Andamentos (186 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+06/10/2026 17:33
+GSEF
+
+Conclusão do processo na unidade
+
+06/10/2026 17:32
+GSEF
+
+Processo recebido na unidade
+
+06/10/2026 17:19
+DIR-CBI
+
+Processo recebido na unidade
+
+06/10/2026 15:12
+DIR-MNM
+
+Processo recebido na unidade
+
+06/10/2026 13:22
+DIR-RJH
+
+Processo recebido na unidade
+
+06/10/2026 12:28
+DIR-P
+
+Processo recebido na unidade
+
+06/10/2026 12:13
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+06/10/2026 12:13
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+06/10/2026 12:13
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+06/10/2026 12:13
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+06/10/2026 11:50
+ASTEC
+
+Alterado nível de acesso do documento 13964155 (Despacho) para público
+
+06/10/2026 10:47
+GSEF
+
+Processo remetido pela unidade GTFC-SIA
+
+06/10/2026 01:41
+DIR-RCM
+
+Alterada hipótese legal do documento 13932240 (Voto) para Informação de Safety. (Anexo 13, Lei 7.565 e Anexo 19)
+
+06/10/2026 01:41
+DIR-RCM
+
+Alterado nível de acesso do documento 13932240 (Voto) para restrito
+
+01/10/2026 16:37
+ASTEC
+
+Reabertura do processo na unidade
+
+30/09/2026 16:33
+G121
+
+Conclusão do processo na unidade
+
+30/09/2026 13:40
+GAB
+
+Conclusão do processo na unidade
+
+30/09/2026 13:39
+GAB
+
+Processo recebido na unidade
+
+30/09/2026 13:24
+GAB
+
+Processo remetido pela unidade PROT-DF
+
+30/09/2026 13:11
+PROT-DF
+
+Reabertura do processo na unidade
+
+28/09/2026 12:36
+DIR-RCM
+
+Processo recebido na unidade
+
+28/09/2026 12:14
+GSEF
+
+Conclusão do processo na unidade
+
+28/09/2026 12:05
+DIR-RCM
+
+Processo remetido pela unidade SIA
+
+28/09/2026 07:57
+SIA
+
+Processo recebido na unidade
+
+27/09/2026 12:17
+SIA
+
+Processo remetido pela unidade GSEF
+
+25/09/2026 17:29
+GTAS-SPO
+
+Alterada hipótese legal do documento 13906399 (Despacho) para Informação de Safety. (Anexo 13, Lei 7.565 e Anexo 19)
+
+25/09/2026 17:28
+GTAS-SPO
+
+Alterada hipótese legal do documento 13906399 (Despacho) para Inf sensíveis das empresas prestadoras de serviços (Parágrafo único do Art. 43 Decreto 5.731/2006)
+
+25/09/2026 17:28
+GTAS-SPO
+
+Alterado nível de acesso do documento 13906399 (Despacho) para restrito
+
+25/09/2026 16:10
+DIR-MNM
+
+Processo recebido na unidade
+
+23/09/2026 21:15
+GTFC-SIA
+
+Processo recebido na unidade
+
+23/09/2026 11:05
+GTAS-SPO
+
+Processo recebido na unidade
+
+23/09/2026 10:18
+GTAS-SPO
+
+Processo remetido pela unidade SPO
+
+23/09/2026 10:12
+SPO
+
+Processo recebido na unidade
+
+23/09/2026 09:48
+ASTEC
+
+Conclusão do processo na unidade
+
+23/09/2026 09:42
+ASSOP
+
+Processo recebido na unidade
+
+23/09/2026 09:02
+ASTEC
+
+Processo recebido na unidade
+
+23/09/2026 07:58
+GTFC-SIA
+
+Processo remetido pela unidade GSEF
+
+23/09/2026 07:17
+GSEF
+
+Processo recebido na unidade
+
+22/09/2026 23:15
+DIR-RJH
+
+Processo recebido na unidade
+
+22/09/2026 21:12
+DIR-P
+
+Processo recebido na unidade
+
+22/09/2026 18:53
+DIR-CBI
+
+Processo recebido na unidade
+
+22/09/2026 17:57
+GSEF
+
+Processo remetido pela unidade SIA
+
+22/09/2026 17:43
+SIA
+
+Processo recebido na unidade
+
+22/09/2026 17:37
+ASTEC
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+ASSOP
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+DIR-RJH
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+DIR-CBI
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+DIR-MNM
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+DIR-P
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+SIA
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 17:37
+SPO
+
+Processo remetido pela unidade DIR-RCM
+
+22/09/2026 12:23
+DIR-RCM
+
+Processo recebido na unidade
+
+22/09/2026 12:22
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 11:49
+ASTEC
+
+Reabertura do processo na unidade
+
+22/09/2026 10:57
+G121
+
+Processo recebido na unidade
+
+22/09/2026 10:22
+G121
+
+Processo remetido pela unidade G121
+
+21/09/2026 11:20
+GTIRS
+
+Processo recebido na unidade
+
+18/09/2026 15:14
+G121
+
+Alterada hipótese legal do processo para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+18/09/2026 15:14
+G121
+
+Alterado nível de acesso do processo para restrito
+
+18/09/2026 15:01
+G121
+
+Processo recebido na unidade
+
+18/09/2026 12:32
+G121
+
+Processo remetido pela unidade G121
+
+17/09/2026 11:01
+CODE
+
+Conclusão do processo na unidade
+
+16/09/2026 16:07
+G121
+
+Alterado nível de acesso do documento 13840293 (Despacho) para público
+
+16/09/2026 16:07
+G121
+
+Cancelado documento 13840293 (Despacho).
+
+Despacho inserido inadvertidamente no presente processo, devendo, portanto, ser desconsiderado.
+
+16/09/2026 16:06
+G121
+
+Reabertura do processo na unidade
+
+16/09/2026 15:28
+CODE
+
+Processo recebido na unidade
+
+16/09/2026 15:28
+CODE
+
+Processo remetido pela unidade SIA
+
+16/09/2026 15:28
+SIA
+
+Reabertura do processo na unidade
+
+15/09/2026 14:34
+PF-ANAC
+
+Conclusão do processo na unidade
+
+15/09/2026 14:25
+PF-ANAC
+
+Processo recebido na unidade
+
+15/09/2026 10:22
+PF-ANAC
+
+Processo remetido pela unidade ASTEC
+
+15/09/2026 10:21
+ASTEC
+
+Reabertura do processo na unidade
+
+11/09/2026 10:34
+DIR-MNM
+
+Conclusão do processo na unidade
+
+08/09/2026 17:49
+G121
+
+Conclusão do processo na unidade
+
+08/09/2026 15:32
+ASSOP
+
+Processo recebido na unidade
+
+08/09/2026 15:08
+ASSOP
+
+Processo remetido pela unidade SPO
+
+07/09/2026 14:44
+DIR-RJH
+
+Conclusão do processo na unidade
+
+04/09/2026 15:50
+DIR-P
+
+Conclusão do processo na unidade
+
+04/09/2026 08:26
+SIA
+
+Conclusão do processo na unidade
+
+03/09/2026 20:33
+GAB
+
+Conclusão do processo na unidade
+
+02/09/2026 19:26
+PROT-DF
+
+Conclusão do processo na unidade
+
+02/09/2026 18:10
+G121
+
+Alterado nível de acesso do documento 13821525 (Despacho) para público
+
+02/09/2026 18:10
+G121
+
+Cancelado documento 13821525 (Despacho).
+
+Despacho inserido inadvertidamente no presente processo, devendo, portanto, ser desconsiderado.
+
+02/09/2026 15:09
+SPO
+
+Processo recebido na unidade
+
+02/09/2026 15:00
+PROT-DF
+
+Processo recebido na unidade
+
+02/09/2026 14:38
+ASSOP
+
+Processo recebido na unidade
+
+02/09/2026 14:07
+G121
+
+Processo recebido na unidade
+
+02/09/2026 12:51
+G121
+
+Processo remetido pela unidade GTAS-SPO
+
+02/09/2026 12:51
+SPO
+
+Processo remetido pela unidade GTAS-SPO
+
+02/09/2026 12:41
+PROT-DF
+
+Processo remetido pela unidade GAB
+
+02/09/2026 11:33
+ASSOP
+
+Processo remetido pela unidade ASTEC
+
+02/09/2026 08:47
+GAB
+
+Alterado nível de acesso do documento 13813858 (Ofício 980) para público
+
+02/09/2026 08:47
+GAB
+
+Alterado nível de acesso do documento 13813756 (Ofício 979) para público
+
+02/09/2026 06:48
+SIA
+
+Processo recebido na unidade
+
+01/09/2026 22:22
+SPO
+
+Processo recebido na unidade
+
+01/09/2026 20:16
+ASSOP
+
+Processo recebido na unidade
+
+01/09/2026 19:48
+ASTEC
+
+Processo recebido na unidade
+
+01/09/2026 19:44
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 19:38
+GAB
+
+Processo recebido na unidade
+
+01/09/2026 19:36
+ASTEC
+
+Alterado nível de acesso do processo para público
+
+01/09/2026 19:36
+SIA
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 19:36
+ASSOP
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 19:36
+SPO
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 19:28
+GAB
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 16:16
+SPO
+
+Processo recebido na unidade
+
+01/09/2026 15:52
+ASSOP
+
+Processo recebido na unidade
+
+01/09/2026 15:26
+ASTEC
+
+Cancelado documento 13810302 (Ofício 22).
+
+Substituído pelo Ofício 23 (13813257)
+
+01/09/2026 14:21
+GAB
+
+Processo recebido na unidade
+
+01/09/2026 14:13
+SIA
+
+Processo recebido na unidade
+
+01/09/2026 14:11
+GAB
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 14:11
+SIA
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 14:11
+SPO
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 14:11
+ASSOP
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 11:04
+SPO
+
+Processo recebido na unidade
+
+01/09/2026 11:04
+SPO
+
+Processo remetido pela unidade G121
+
+01/09/2026 09:41
+ASTEC
+
+Alterado nível de acesso do documento 13793426 (Despacho) para público
+
+01/09/2026 09:41
+ASTEC
+
+Alterado nível de acesso do documento 13784483 (Despacho) para público
+
+01/09/2026 09:41
+ASTEC
+
+Alterado nível de acesso do documento 13776332 (Despacho) para público
+
+01/09/2026 09:17
+DIR-RJH
+
+Reabertura do processo na unidade
+
+01/09/2026 09:17
+DIR-P
+
+Alterado nível de acesso do documento 13809917 (Voto) para público
+
+01/09/2026 09:16
+ASTEC
+
+Alterado nível de acesso do documento 13809817 (Voto) para público
+
+01/09/2026 09:12
+DIR-CBI
+
+Alterado nível de acesso do documento 13809503 (Voto) para público
+
+01/09/2026 08:33
+ASTEC
+
+Alterado nível de acesso do documento 13810885 (Certidão de Deliberação) para público
+
+01/09/2026 07:53
+DIR-RJH
+
+Conclusão do processo na unidade
+
+01/09/2026 07:52
+DIR-RJH
+
+Alterada hipótese legal do documento 13809917 (Voto) para Informação de Safety. (Anexo 13, Lei 7.565 e Anexo 19)
+
+01/09/2026 07:52
+DIR-RJH
+
+Alterado nível de acesso do documento 13809917 (Voto) para restrito
+
+31/08/2026 18:00
+SIA
+
+Conclusão do processo na unidade
+
+31/08/2026 17:58
+SIA
+
+Reabertura do processo na unidade
+
+31/08/2026 17:03
+ASTEC
+
+Alterado nível de acesso do documento 13806618 (Despacho) para público
+
+31/08/2026 15:44
+GTIRS
+
+Processo remetido pela unidade ASCOM
+
+31/08/2026 15:38
+DIR-CBI
+
+Processo recebido na unidade
+
+31/08/2026 14:46
+DIR-P
+
+Processo recebido na unidade
+
+31/08/2026 14:43
+DIR-RJH
+
+Processo recebido na unidade
+
+31/08/2026 14:38
+DIR-MNM
+
+Processo recebido na unidade
+
+31/08/2026 14:30
+ASCOM
+
+Processo recebido na unidade
+
+31/08/2026 14:28
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 14:28
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 14:28
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 14:28
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 13:26
+ASTEC
+
+Processo recebido na unidade
+
+31/08/2026 12:57
+ASCOM
+
+Processo remetido pela unidade ASSOP
+
+31/08/2026 12:47
+ASTEC
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 12:02
+ASTEC
+
+Alterado nível de acesso do documento 13805072 (Certidão de Distribuição) para público
+
+31/08/2026 12:02
+ASTEC
+
+Cancelado documento 13805072 (Certidão de Distribuição).
+
+Substituída pela Certidão de Distribuição 13806127
+
+31/08/2026 10:20
+DIR-RCM
+
+Processo recebido na unidade
+
+31/08/2026 10:11
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+31/08/2026 10:10
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+31/08/2026 07:12
+ASTEC
+
+Processo recebido na unidade
+
+30/08/2026 14:43
+ASTEC
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 18:45
+G121
+
+Alterado nível de acesso do documento 13794830 (Nota Técnica 85) para público
+
+28/08/2026 18:45
+G121
+
+Cancelado documento 13794830 (Nota Técnica 85).
+
+Substituído pela Nota Técnica 90 (13802485), para ajustes textuais.
+
+28/08/2026 17:55
+DIR-P
+
+Processo recebido na unidade
+
+28/08/2026 17:50
+ASTEC
+
+Processo recebido na unidade
+
+28/08/2026 17:50
+DIR-MNM
+
+Processo recebido na unidade
+
+28/08/2026 17:42
+ASTEC
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 16:51
+DIR-CBI
+
+Processo recebido na unidade
+
+28/08/2026 16:49
+DIR-RCM
+
+Processo recebido na unidade
+
+28/08/2026 16:43
+DIR-P
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 16:43
+DIR-RCM
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 16:43
+DIR-MNM
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 16:43
+DIR-CBI
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 16:24
+DIR-RJH
+
+Processo recebido na unidade
+
+28/08/2026 16:24
+DIR-RJH
+
+Processo remetido pela unidade ASSOP
+
+28/08/2026 09:37
+ASSOP
+
+Processo recebido na unidade
+
+28/08/2026 07:44
+ASSOP
+
+Processo remetido pela unidade SIA
+
+27/08/2026 17:22
+G121
+
+Processo recebido na unidade
+
+27/08/2026 17:20
+G121
+
+Processo remetido pela unidade SPO
+
+27/08/2026 14:40
+SIA
+
+Processo recebido na unidade
+
+27/08/2026 14:40
+SIA
+
+Processo remetido pela unidade GSEF
+
+27/08/2026 14:40
+GSEF
+
+Processo recebido na unidade
+
+27/08/2026 14:39
+GSEF
+
+Processo remetido pela unidade GTFC-SIA
+
+27/08/2026 14:39
+SIA
+
+Processo remetido pela unidade GSEF
+
+27/08/2026 14:30
+GTFC-SIA
+
+Reabertura do processo na unidade
+
+27/08/2026 14:29
+GSEF
+
+Processo recebido na unidade
+
+27/08/2026 14:29
+GSEF
+
+Processo remetido pela unidade GTFC-SIA
+
+26/08/2026 17:52
+GTFC-SIA
+
+Processo recebido na unidade
+
+26/08/2026 15:22
+GTFC-SIA
+
+Processo remetido pela unidade GSEF
+
+25/08/2026 15:06
+GSEF
+
+Processo recebido na unidade
+
+25/08/2026 14:04
+GSEF
+
+Processo remetido pela unidade SIA
+
+25/08/2026 12:02
+GTAS-SPO
+
+Processo recebido na unidade
+
+25/08/2026 12:01
+GTAS-SPO
+
+Processo remetido pela unidade SPO
+
+25/08/2026 12:01
+SPO
+
+Processo recebido na unidade
+
+25/08/2026 07:54
+SIA
+
+Processo recebido na unidade
+
+24/08/2026 18:24
+SIA
+
+Processo remetido pela unidade ASSOP
+
+24/08/2026 18:24
+SPO
+
+Processo remetido pela unidade ASSOP
+
+24/08/2026 15:10
+ASSOP
+
+Processo restrito gerado, Informação de Safety. (Anexo 13, Lei 7.565 e Anexo 19)

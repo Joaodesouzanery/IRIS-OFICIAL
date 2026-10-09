@@ -1,0 +1,89 @@
+SEI/ANAC - 12572559 - Voto
+
+Voto
+
+PROCESSO: 00066.007590/2024-12
+
+interessado: EMBRAER - EMPRESA BRASILEIRA DE AERONÁUTICA S.A.
+
+RELATOR: LUIZ RICARDO DE SOUZA NASCIMENTO
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, define a competência da Agência Nacional de Aviação Civil - ANAC para regular e fiscalizar os produtos aeronáuticos e a segurança da aviação civil, bem como para expedir, homologar ou reconhecer a certificação de produtos e processos aeronáuticos de uso civil, observados os padrões e normas estabelecidos (art. 8º, X e XXXIII).
+
+Por sua vez, o Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, atribui à Diretoria a competência para, em regime colegiado, analisar e decidir, em instância administrativa final, as matérias da Agência (art. 9º, caput).
+
+Ainda, nos termos do art. 35 do referido regimento interno, compete à Superintendência de Aeronavegabilidade - SAR submeter à Diretoria propostas normativas e pareceres técnicos que tratem de questões relacionadas a aeronavegabilidade, ruído e emissões de produtos aeronáuticos.
+
+Por fim, o Regulamento Brasileiro de Aviação Civil (RBAC) nº 21, em seu parágrafo 21.16, estabelece o conceito de Condição Especial, sendo ele aplicado sempre que a ANAC considerar que a regulamentação sobre aeronavegabilidade contida nos regulamentos não contém requisitos de segurança adequados ou apropriados a um determinado produto aeronáutico, face às características novas ou inusitadas do seu projeto.
+
+Pelo exposto, constata-se que a matéria em discussão é de competência da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente .
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme apresentado no Relatório [1] , trata-se de estabelecimento de Condição Especial referente à utilização de partes de vidro na composição de janelas dos modelos de aviões Embraer EMB-550/EMB-545 . Essa Condição Especial é necessária para viabilizar aprovação de modificação do projeto de tipo dos citados modelos apresentada pela Embraer [2] .
+
+Em linha com o registrado na Ficha de Controle de Assuntos Relevantes - FCAR nº EI-43-EMB-550 [3] , a Embraer solicitou emenda à certificação de tipo para as aeronaves de modelos EMB-550 e EMB-545, com o objetivo de implementar modificação que inclui a instalação de grandes partes de vidro na composição das janelas da aeronave. A Superintendência de Aeronavegabilidade - SAR informa tratar-se de projeto inovador ou incomum com respeito ao material utilizado nas janelas da aeronave.
+
+A FCAR discorre sobre as características relevantes do vidro que devem ser consideradas para uso em aeronaves. Embora possua capacidade de transmissão de luz não distorcida (ou controlada) e transparência, devido a sua baixa resistência à fratura, baixo módulo de elasticidade e alta variabilidade de suas propriedades, o vidro possui aplicação em projetos aeronáuticos normalmente limitada a para-brisas e telas de instrumentos e displays .
+
+A SAR argumenta na FCAR que tanto a Federal Aviation Administration - FAA quanto a European Union Aviation Safety Agency - EASA incluem requisitos adicionais específicos para instalações de grandes objetos de vidro em aeronaves, a fim de abordar características únicas do material, caso sejam instalados em determinadas áreas.
+
+Adicionalmente às características do vidro já especificadas, verifica-se dos autos que o projeto da Embraer prevê duas camadas de vidro unidas por adesivo em sua interface. Considerando que o vidro não propaga chamas, a SAR informa haver risco de que o conjunto, ao sofrer deformações plásticas na forma de trincas ou fissuras, de qualquer tamanho, possa ser exposto a uma fonte de chama, levando ao vazamento de adesivo inflamável da interface das camadas de vidro, o que precisaria ser endereçado.
+
+Dado o contexto exposto, a área técnica sustenta que os regulamentos de aeronavegabilidade aplicáveis não contém padrões de segurança adequados ou apropriados para endereçar essas características de projeto, entendendo como necessária a emissão de Condição Especial para o caso em tela.
+
+Para o desenvolvimento da Condição Especial, conforme pontuado na Nota Técnica 33 [4] , a SAR entendeu relevante, primeiramente, estabelecer na Condição Especial a definição para “grandes componentes de vidro instalados em c abines de passag eiros” . Além disso, a área técnica propôs a adoção de 5 (cinco) requisitos que estabelecem padrões de segurança para os componentes de vidro, abordando aspectos como fragmentação do material, resistência, retenção no sistema de montagem, instruções para aeronavegabilidade continuada e inflamabilidade.
+
+Verifica-se, contudo, que no documento proposto contendo o texto da Condição Especial ( 12468450 ) não foi incluída a definição para "grande componente de vidro instalado na cabine de passageiros". Em interação com a SAR, esta informou que a ausência da definição foi não intencional, confirmando a importância de sua inserção no documento, visando deixar claro ao público o entendimento da Agência sobre o item. Dado o exposto, solicito que a ASTEC, quando da publicação da Condição Especial, insira os trechos destacados abaixo na seção "Aplicabilidade" e na tabela, conforme indicado a seguir (textos em negrito):
+
+APLICABILIDADE
+
+Esta Condição Especial se aplica a grandes componentes de vidro instalados em janelas em cabines de passageiros , a ser incorporada à base de certificação do projeto de tipo dos aviões Embraer EMB-550/-545, e de outras aeronaves em cuja base de certificação a ANAC determine sua inclusão com concordância por parte do peticionário.
+
+(...)
+
+“§ CE 25-XXX Condição Especial Aplicável a Instalações de Vidro em Janelas
+
+Para os fins desta Condição Especial, um grande componente de vidro instalado em cabines de passageiros é definido como um componente de vidro com peso igual ou superior a 4 kg, ou com dimensão superior a 51 cm (20 pol), ou com área de superfície superior a 0,12 m² (200 pol²). Agrupamentos de itens de vidro que, individualmente, pesem menos de 4 kg, mas, coletivamente, pesem 4 kg ou mais, também precisariam ser incluídos.
+
+1. Fragmentação do Material – O vidro utilizado deve (...)
+
+“§ SC 25-XXX Special Condition for Windows Installations with Glass
+
+For the purpose of this Special Condition, a large glass component installed in passenger cabins is defined as a glass component weighing 4 kg or more, or with a dimension that exceeds 51 cm (20 in), or with surface area that exceeds 0,12 m² (200 in²). Groupings of glass items, which individually weigh less than 4 kg but, collectively, weigh 4 kg or more, would also need to be included.
+
+1. Material Fragmentation - The glass used must (...)
+
+Considerando o exposto e a partir da análise dos argumentos apresentados nos autos, entendo que os requisitos propostos pela SAR para a Condição Especial estão tecnicamente fundamentados, de forma a estabelecer um nível de segur ança adequado para os aviões modelo Embraer EMB-550/EMB-545, considerando as modificações de projeto pretendidas pela fabricante. Além disso, conforme expresso na Nota Técnica 39 [5] , verifica-se que os requisitos propostos foram previamente discutidos com a Embraer durante o processo, de modo que a interessada já teve conhecimento dos custos e ações necessárias para demonstrar cumprimento com os padrões estabelecidos.
+
+Por fim, a SAR avaliou que o estabelecimento da Condição Especial em análise prescinde de instauração de consulta pública, uma vez que o seu efeito atingirá, em princípio, apenas os modelos de avião EMB-550/-545, objetos desta análise. Além disso, por não ter sido identificado aspecto jurídico relevante, a área técnica opinou pela dispensa de análise do processo de pela Procuradoria Federal Especializada junto à ANAC. Concordo com o posicionamento da área técnica, por não terem sido constatados os pressupostos que justificassem a realização de consulta pública ou análise pelo órgão jurídico consultivo.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação da condição especial relativa ao uso de vidro em janelas aplicável à base de certificação do projeto de tipo das aeronaves EMB-550/EMB-545, nos termos propostos pela Superintendência de Aeronavegabilidade nos documentos SEI 12430140 e 12468450 , considerando o que consta no item 2.8 deste Voto.
+
+É como voto.
+
+LUIZ RICARDO DE SOUZA NASCIMENTO
+
+Diretor-relator
+
+____________________________
+
+[1] SEI 12550240
+
+[2] DCA 0550-025-00123-2023 - Embraer EMB-550/EMB-545 New Interior Configuration - SEI 00066.016067/2023-04 .
+
+[3] SEI 10189662 .
+
+[4] Nota Técnica nº 33/2025/GTEN/GCPP/SAR - SEI 11821457 .
+
+[5] Nota Técnica nº 39/2025/GTNI/SAR - SEI 12430110 .
+
+Documento assinado eletronicamente por Luiz Ricardo de Souza Nascimento , Diretor , em 13/01/2026, às 09:43, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12572559 e o código CRC 43860693 .
+
+SEI nº 12572559

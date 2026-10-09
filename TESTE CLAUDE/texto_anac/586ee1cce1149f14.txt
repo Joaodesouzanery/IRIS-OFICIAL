@@ -1,0 +1,115 @@
+SEI/ANAC - 13657470 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.038419/2024-54
+
+INTERESSADO: CONCESSIONÁRIA DO AEROPORTO INTERNACIONAL DE GUARULHOS S.A.
+
+RELATOR: RUI CHAGAS MESQUITA
+
+descrição dos fatos
+
+Trata-se da análise de processo administrativo originado da Notificação da Infração SEI! n° 10030921 [1] , que imputou à Concessionária do Aeroporto Internacional de Guarulhos S.A. ("Concessionária") conduta de deixar de concluir o sistema automatizado de transporte de pessoas ( Automated People Mover - APM ) e respectivas Estações, em condições operacionais na data prevista no Plano de Exploração Aeroportuária ("PEA"), Anexo 2 do Contrato de Concessão de Aeroportos nº 002/ANAC/2012-SBGR ("Contrato de Concessão"), em suposta infração do que preconiza a cláusula 3.1.34 do Contrato de Concessão c/c os itens 2.1.3-A, 8.5 e 8.6 do PEA.
+
+Em 14/05/2024, a Concessionária foi comunicada [2] da instauração de processo administrativo para apuração da infração contratual, sendo-lhe apresentada, além da referida Notificação de Infração, Relatório de Ocorrência, Relatório Fotográfico e a Nota Técnica n° 19/2024 da SRA [3] .
+
+É importante salientar que a implantação do APM não estava originalmente prevista no Contrato de Concessão, sendo relevante apresentar um breve resumo dos principais fatos que antecederam a eficácia do Termo Aditivo n° 008/2021 [4] , que incluiu a obrigação no PEA.
+
+Em 17/07/2019, após provocação da Secretaria de Transportes Metropolitanos do Governo do Estado de São Paulo (STM-SP), a Secretaria Nacional de Aviação Civil (SAC) encaminhou à ANAC o Ofício nº 889/2019 [5] , informando que haveria potencial interesse público na implantação de um sistema de conexão rápida da estação Linha 13-Jade da Companhia Paulista de Trens Metropolitanos - CPTM ao Aeroporto Internacional de Guarulhos (SBGR), e assim requereu que a Agência estabelecesse tratativas com a Concessionária visando a realização de levantamento e avaliação de possíveis alternativas para implantação e operação da referida infraestrutura.
+
+Em 26/11/2020 , após a realização de consulta pública e workshop com os fornecedores das tecnologias existentes no mercado e realização de processo concorrencial, o Ministro de Estado da Infraestrutura encaminhou à ANAC o Ofício n° 271/2020 [6] , concluindo, com base nas análises realizadas pela SAC, pela Secretaria de Fomento, Planejamento e Parcerias – SFPP e pela própria ANAC [7] , que havia elementos suficientes para decidir pela inclusão do Projeto APM no rol de obrigações da Concessionária.
+
+Em 27/07/2021, a Diretoria Colegiada da ANAC aprovou, por unanimidade, a minuta de termo aditivo, na 14ª Reunião Deliberativa da Diretoria Colegiada, nos termos do Voto DIR-TP (SEI! n° 5983188) , informando que a assinatura estaria condicionada à prévia manifestação do Ministério da Infraestrutura e do Tribunal de Contas da União (TCU).
+
+Depois da manifestação favorável da Concessionária [8] e da SAC [9] acerca do termo aditivo, a Diretoria Colegiada aprovou, por unanimidade, na 31ª Reunião Deliberativa Eletrônica, realizada nos dias 6 a 8/09/2021, nos termos do Voto DIR-TP (SEI! 6173409), o Termo Aditivo n° 8/2021, para (i) incluir investimento no Contrato de Concessão para elaboração de projeto, construção, operação e manutenção do sistema de conexão rápida, no formato people mover , entre a estação Aeroporto, linha 13 – Jade da CPTM e o Aeroporto Internacional de Guarulhos/SP e (ii) promover, em razão de tal inclusão, a respectiva Revisão Extraordinária com vistas à recomposição do equilíbrio econômico-financeiro do Contrato; sendo o Extrato do Termo Aditivo publicado no Diário Oficial da União no dia 09/09/2021 [10] .
+
+Em 15/09/2021, entretanto, o Tribunal de Contas da União (TCU) suspendeu [11] , nos autos do processo TCU 011.655/2020-8, os efeitos do Termo Aditivo, sendo o feito comunicado [12] à Concessionária.
+
+Em 21/02/2022, a SRA informou [13] à Concessionária que a medida cautelar adotada pelo TCU havia sido revogada pelo Acórdão n° 226/2022 [14] , devendo a Concessionária considerar a eficácia do Termo Aditivo em 18/02/2022, data que a Agência foi notificada [15] da decisão do TCU .
+
+Com a eficácia do Termo Aditivo n° 8/2021, a Superintendência de Regulação Econômica de Aeroportos (SRA) passou a acompanhar a implantação do APM em processo administrativo específico [16] , que contém documentos acerca do cronograma de execução das obras da Concessionária e expedientes de acompanhamento e fiscalização do investimento pela área técnica da ANAC.
+
+Uma vez que o item 2.1.3-A do PEA previa a conclusão das obras e de início da completa operação do APM em até 24 (vinte e quatro) meses após a data de eficácia do Termo Aditivo n° 8/2021, a equipe técnica da SRA realizou visita às instalações do SBGR nos dias 19 e 20/02/2024, sendo constatado e registrado na Nota Técnica n° 19/2024 da SRA, que o sistema APM e suas Estações estavam em obras, sem condições de funcionamento e com cronograma de implantação seriamente comprometido, em relação ao prazo contratual.
+
+A referida Nota Técnica ainda destacou que como o investimento foi incluído no Contrato de Concessão, a escolha da tecnologia empregada, a precificação do ativo e a contratação da solução foi lastreada em Termo de Referência [17] elaborado pela Concessionária. Com isso, a SRA destaca que “ a fiscalização sobre a implantação do APM contempla os requisitos de desempenho operacional contidos no PEA e todos os requisitos constantes no Termo de Referência - documento norteador da decisão de política pública de investimento ”.
+
+Como resultado, em 14/05/2024 a SRA instaurou processo administrativo para apuração da infração contratual, conforme a Notificação de Infração SEI! n° 10030921 [1] .
+
+Em 24/06/2024, a Concessionária apresentou sua Defesa Prévia (SEI! n° 10210088) , solicitando sobrestamento do processo em razão do trâmite de outro processo [18] que tratava de pleito de reequilíbrio econômico-financeiro ao Contrato de Concessão, decorrente de eventos imprevisíveis que teriam impactado as atividades e provocado alterações não só na equação econômico-financeira do Contrato, mas nos prazos de implantação e execução do APM. No mérito, a Concessionária apontou supostos efeitos adversos ao cronograma de implantação do APM decorrente da suspensão do Termo Aditivo n° 8/2021 pelo TCU, além de eventos supervenientes e imprevisíveis verificados durante a implantação do APM.
+
+Em 17/06/2025, a SRA concedeu [19] o prazo de 10 (dez) dias à Concessionária para apresentação de alegações finais.
+
+Em 14/07/2025, a Concessionária apresentou suas Alegações Finais (SEI! n° 11801549 ), em que questiona o fim da instrução processual, reitera argumentos trazidos na Defesa Prévia e solicita que o processo fosse sobrestado até a data estimada para a conclusão do APM, qual seja, 31 de agosto de 2025.
+
+Em 18/02/2026, a SRA apresentou [20] à Concessionária a Decisão Primeira Instância (SEI! n° 12858104) [21] , aplicando a sanção de multa de 380,672 URTA (trezentos e oitenta inteiros e seiscentos e setenta e dois milésimos de Unidades de Referência da Tarifa Aeroportuária), equivalente ao valor de R$ 12.805.806,08 (doze milhões, oitocentos e cinco mil oitocentos e seis reais e oito centavos), referente ao período de infração contratual de 19/02/2024 a 14/07/2025 . Foi informado que a apuração do período de inadimplência posterior à data de 14/07/2025 e do valor da multa diária correspondente prosseguiria no mesmo processo.
+
+Em 14/03/2026, a Concessionária apresentou Recurso administrativo (SEI! n° 12992456) contra a Decisão Primeira Instância.
+
+Em 14/04/2026, o teor do recurso foi analisado pela autoridade julgadora no Despacho SEI! n° 13043786 , não sendo reconsiderado a Decisão de Primeira Instância pela SRA, que manteve a penalidade aplicada [22] e submeteu o processo à análise da Procuradoria Federal Especializada junto à ANAC.
+
+Em 25/06/2026, a Procuradoria se manifestou por meio do Parecer nº 20/2026 [23] , concluindo que o procedimento adotado no presente processo está aderente à legislação de regência e privilegiou o contraditório e a ampla defesa, estando, portanto, maduro para o julgamento do recurso.
+
+Em 08/07/2026, a SRA submeteu os presentes autos à Diretoria Colegiada. E e m virtude de sorteio [24] , o processo foi distribuído para relatoria dessa Diretoria.
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+________________________________
+
+[1] Notificação de Infração nº 000976.N/2024 (SEI! nº 10030921 ).
+
+[2] Ofício nº 47/2024/GIOS/SRA-ANAC (SEI! n° 10030991 ).
+
+[3] Relatório de Ocorrência (SEI! n° 10030923 ), Relatório Fotográfico (SEI! n° 10030938 ) e a Nota Técnica n° 19/2024/GTIM/GIOS/SRA (SEI! n° 10030945 ).
+
+[4] Termo Aditivo n° 008/2021 (SEI! n° 6149146 ).
+
+[5] Ofício nº 889/2019/GAB-SAC/SAC (SEI! n° 3304604 ).
+
+[6] Ofício n° 271/2020/GM/Minfra (SEI! n° 5061680 ).
+
+[7] Nota Técnica nº 96/2020/DPR/SAC (SEI! n° 5061699 ), Nota Informativa nº 14/2020/DEFOM/SFPP (SEI! 5061698 ) e Nota Técnica n° 5/2020/SRA (SEI! n° 4210153 ).
+
+[8] Carta DR/0472/2021 (SEI! n° 6146831 ), de 30/08/2021.
+
+[9] Ofício n° 906/2021/GAB-SAC/SAC (SEI! n° 6115794 ) e anexos, de 20/08/2021.
+
+[10] DOU SEI! n° 6191379 .
+
+[11] Despacho SEI! n° 6221084 .
+
+[12] Ofício nº 113/2021/SRA-ANAC (SEI! n° 6220443 ).
+
+[13] Ofício nº 24/2022/SRA-ANAC (SEI! n° 6843849 ).
+
+[14] Acórdão n° 226/2022 – TCU – Plenário (SEI! n° 6836219 ).
+
+[15] Ofício nº 5578/2022-TCU/Seproc (SEI! n° 6842258 ).
+
+[16] Processo nº 00058.013590/2022-99 .
+
+[17] Termo de Referência (SEI! n° 4083153 ).
+
+[18] Processo nº 00058.028821/2024-21 .
+
+[19] Ofício nº 118/2025/GOIA/SRA-ANAC (SEI! n° 11665573 ).
+
+[20] Ofício nº 38/2026/SRA-ANAC (SEI! n° 12868404 ).
+
+[21] Decisão Primeira Instância n° 1/2026/SRA (SEI! 12858104 ).
+
+[22] Despacho SEI! n° 13159597 .
+
+[23] Parecer nº 00020/2026/FIN/PFEANAC/PGF/AGU (SEI! n° 13534207 ), Aprovado pelo Despacho de Aprovação nº 00100/2026/GAB/PFEANAC/PGF/AGU (SEI! n° 13534211 ), de 18/06/2026, e pelo Despacho de Aprovação nº 00105/2026/GAB/PFEANAC/PGF/AGU (SEI! n° 13534214 ), de 25/06/2026.
+
+[24] Certidão de Distribuição SEI! n° 13589020 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 19/08/2026, às 10:31, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13657470 e o código CRC B3D01CC7 .
+
+SEI nº 13657470

@@ -1,0 +1,47 @@
+SEI/ANAC - 13815573 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.068152/2026-91
+
+INTERESSADO: SUPERINTENDÊNCIA DE OPERAÇÕES DA AVIAÇÃO GERAL, SUPERINTENDÊNCIA DE PESSOAL DA AVIAÇÃO CIVIL
+
+RELATOR: roberto josé silveira honoratO
+
+descrição dos fatos
+
+Trata-se de proposta de emenda ao Regulamento Brasileiro da Aviação Civil – RBAC nº 91, intitulado “Requisitos Gerais de Operação para Aeronaves Civis”, com o objetivo de alterar os parágrafos da seção 91.207, que dispõe sobre os requisitos relativos a Transmissores Localizadores de Emergência (ELT), Personal Locator Beacon (PLB) e dispositivos similares.
+
+O processo foi autuado por meio do Despacho GTNO-SAG SEI nº 13713839, em atenção à determinação da Diretoria Colegiada consubstanciada no Voto SEI nº 9166128, proferido no Processo nº 00058.028886/2023-95. Naquele processo, a Decisão nº 640, de 23 de novembro de 2023, deferiu pedido de isenção parcial do requisito 91.207(a)(5) formulado pelo Aeroclube de Voo a Vela CTA e a Diretoria determinou o prosseguimento da proposta normativa em processo específico.
+
+A instrução foi conduzida pela Superintendência de Operações da Aviação Geral (SAG), considerando as competências estabelecidas pelo Regimento Interno aprovado pela Resolução Interna nº 10, de 27 de julho de 2026, em vigor desde 3 de agosto de 2026. Nesse contexto, a SAG passou a exercer as atribuições pertinentes ao objeto deste processo anteriormente desempenhadas pela Superintendência de Padrões Operacionais (SPO).
+
+A análise técnica consta da Nota Técnica nº 5/2026/GTNO-SAG/GNAG/SAG (SEI nº 13719585), que retoma as discussões registradas na Nota Técnica nº 52/2023/GTNO-GNOS/GNOS/SPO (SEI nº 8614056) e examina o histórico de elaboração da versão original do RBAC nº 91. A proposta alcança as aeronaves abrangidas pelo parágrafo 91.207(a)(5) que não se enquadram como aviões, quando presentes as condições dos parágrafos (e) e (f), sem se limitar às aeronaves de asa fixa.
+
+O RBAC nº 91 foi aprovado pela Resolução nº 546, de 18 de março de 2020, em substituição ao RBHA 91. Conforme o histórico descrito na NT 5, a proposta inicial previa exigência de ELT para helicópteros e utilizava o termo “aeronave” nas exceções. Na fase final da elaboração, a exigência específica para helicópteros foi retirada, permanecendo reservado o parágrafo 91.207(a)(4), e o termo “aeronave” foi substituído por “avião” nos parágrafos (e) e (f).
+
+A exigência do parágrafo 91.207(a)(5), contudo, continuou a alcançar planadores e outras aeronaves ali previstas. A restrição das exceções aos aviões deixou as demais aeronaves fora dessas hipóteses, ainda que realizassem operações equivalentes. A área técnica não identificou, no histórico examinado, justificativa para esse tratamento distinto e propôs substituir “avião” por “aeronave” nos parágrafos (e) e (f), com os correspondentes ajustes de concordância.
+
+A mencionada Nota Técnica também registra novo pedido de isenção apresentado pelo Aeroclube do Planalto Central, no Processo nº 00058.028238/2026-81, em 3 de abril de 2026. A repetição de demandas individuais reforçou a proposta de tratamento da matéria por alteração do próprio regulamento.
+
+A proposta está formalizada na minuta de resolução SEI nº 13715197 e na minuta consolidada da Emenda nº 08 ao RBAC nº 91, SEI nº 13719246. A avaliação da exigência de ELT para helicópteros não integra o objeto destes autos e permanece vinculada ao Processo nº 00058.000796/2024-11.
+
+A Nota Técnica nº 5 e o Despacho GTNO-SAG SEI nº 13726231 recomendam a dispensa de Análise de Impacto Regulatório (AIR) e a não realização de consulta pública. O despacho fundamenta a dispensa de AIR no art. 21, inciso VI, da Instrução Normativa nº 154, de 20 de março de 2020, em razão da redução de exigências e custos regulatórios.
+
+Consta, ainda, do documento SEI nº 13797738, assessoramento jurídico da Procuradoria Federal Especializada junto à ANAC, por e-mail de 27 de agosto de 2026, no sentido de não ser necessário o envio dos autos para novo pronunciamento jurídico, considerando a descrição da alteração como correção de erro material e o histórico de exame jurídico do regulamento.
+
+A Gerência de Normas e Apoio da Aviação Geral e a SAG aprovaram o encaminhamento da proposta à Assessoria Técnica, conforme Despacho SEI nº 13801023, assinado pelo Superintendente em 29 de agosto de 2026. Em 31 de agosto de 2026, a SPL manifestou sua não objeção à proposta, por meio do Despacho SEI nº 13806099, nos termos da análise registrada no Despacho SEI nº 13805955.
+
+Em 31/08/2026, em função de sorteio público, vieram os autos a esta Diretoria para relatoria, conforme Certidão de Distribuição ASTEC (SEI nº 13805967 ).
+
+É o relatório
+
+ROBERTO JOSÉ SILVEIRA HONORATO
+
+Diretor
+
+Documento assinado eletronicamente por Roberto José Silveira Honorato , Diretor , em 25/09/2026, às 18:00, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13815573 e o código CRC CC02A8E6 .
+
+SEI nº 13815573

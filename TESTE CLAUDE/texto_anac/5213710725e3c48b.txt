@@ -1,0 +1,286 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+I mprimir
+
+Processo: 00058.069007/2026-28
+
+Tipo: Aeródromos: Gestão dos Contratos de Concessão
+
+Data de Geração: 11/08/2026
+
+Interessados: AENA DESARROLLO INTERNACIONAL S M E SA
+RIO DE JANEIRO AEROPORTO S A
+EMPRESA BRASILEIRA DE INFRA-ESTRUTURA AEROPORTUARIA
+Concessionária Aeroporto Rio de Janeiro SA
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (15 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+13722826 Despacho 12/08/2026 12/08/2026 CEL
+13768811 Parecer 43/2026/FIN/PFEANAC/PGF/AGU 21/08/2026 21/08/2026 PF-ANAC
+13768815 Despacho de Aprovação 3/2026/FIN/PFEANAC/PGF/AGU 21/08/2026 21/08/2026 PF-ANAC
+13768819 Despacho de Aprovação 157/2026/GAB/PFEANAC/PGF/AGU 21/08/2026 21/08/2026 PF-ANAC
+13770747 Despacho 16/09/2026 16/09/2026 CEL
+13883827 Despacho 21/09/2026 21/09/2026 CEL
+13893960 Certidão de Distribuição 21/09/2026 21/09/2026 ASTEC
+13878152 Relatório de Diretoria 21/09/2026 21/09/2026 DIR-P
+13878173 Voto 21/09/2026 21/09/2026 DIR-P
+13897786 Despacho 22/09/2026 22/09/2026 ASTEC
+13897988 Voto 23/09/2026 23/09/2026 DIR-MNM
+13898315 Voto 22/09/2026 22/09/2026 DIR-RCM
+13905851 Voto 23/09/2026 23/09/2026 DIR-RJH
+13907612 Despacho do Diretor-Presidente 24/09/2026 24/09/2026 ASTEC
+13909975 Certidão de Deliberação 24/09/2026 24/09/2026 ASTEC
+
+Lista de Andamentos (46 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+08/10/2026 12:11
+DIR-RJH
+
+Conclusão do processo na unidade
+
+28/09/2026 10:05
+DIR-MNM
+
+Conclusão do processo na unidade
+
+24/09/2026 14:53
+CEL-GIG
+
+Processo recebido na unidade
+
+24/09/2026 14:38
+CEL-GIG
+
+Processo remetido pela unidade ASTEC
+
+24/09/2026 10:49
+DIR-P
+
+Conclusão do processo na unidade
+
+22/09/2026 12:28
+DIR-MNM
+
+Processo recebido na unidade
+
+22/09/2026 12:16
+DIR-RCM
+
+Processo recebido na unidade
+
+22/09/2026 12:10
+DIR-RJH
+
+Processo recebido na unidade
+
+22/09/2026 12:04
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 12:04
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 12:04
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+22/09/2026 09:05
+DIR-RCM
+
+Processo recebido na unidade
+
+22/09/2026 09:04
+ASTEC
+
+Reabertura do processo na unidade
+
+22/09/2026 08:20
+DIR-MNM
+
+Processo recebido na unidade
+
+21/09/2026 17:42
+DIR-P
+
+Processo recebido na unidade
+
+21/09/2026 17:37
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+21/09/2026 17:37
+DIR-RJH
+
+Processo recebido na unidade
+
+21/09/2026 16:40
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+21/09/2026 16:24
+DIR-CBI
+
+Processo recebido na unidade
+
+21/09/2026 16:14
+ASTEC
+
+Processo recebido na unidade
+
+21/09/2026 16:07
+DIR-P
+
+Processo recebido na unidade
+
+21/09/2026 16:05
+ASTEC
+
+Processo remetido pela unidade CEL
+
+21/09/2026 16:05
+DIR-RJH
+
+Processo remetido pela unidade CEL
+
+21/09/2026 16:05
+DIR-RCM
+
+Processo remetido pela unidade CEL
+
+21/09/2026 16:05
+DIR-MNM
+
+Processo remetido pela unidade CEL
+
+21/09/2026 16:05
+DIR-CBI
+
+Processo remetido pela unidade CEL
+
+21/09/2026 16:05
+DIR-P
+
+Processo remetido pela unidade CEL
+
+16/09/2026 18:59
+DIR-MNM
+
+Processo recebido na unidade
+
+16/09/2026 17:16
+DIR-P
+
+Processo recebido na unidade
+
+16/09/2026 15:46
+ASTEC
+
+Processo recebido na unidade
+
+16/09/2026 15:35
+DIR-CBI
+
+Processo recebido na unidade
+
+16/09/2026 15:27
+ASTEC
+
+Processo remetido pela unidade CEL
+
+16/09/2026 15:24
+CEL
+
+Reabertura do processo na unidade
+
+16/09/2026 15:15
+DIR-RCM
+
+Processo recebido na unidade
+
+16/09/2026 15:08
+DIR-RJH
+
+Processo recebido na unidade
+
+16/09/2026 14:05
+DIR-RJH
+
+Processo remetido pela unidade CEL
+
+16/09/2026 14:05
+DIR-RCM
+
+Processo remetido pela unidade CEL
+
+16/09/2026 14:05
+DIR-MNM
+
+Processo remetido pela unidade CEL
+
+16/09/2026 14:05
+DIR-CBI
+
+Processo remetido pela unidade CEL
+
+16/09/2026 14:05
+DIR-P
+
+Processo remetido pela unidade CEL
+
+21/08/2026 16:12
+CEL
+
+Processo recebido na unidade
+
+21/08/2026 12:02
+CEL
+
+Processo remetido pela unidade PF-ANAC
+
+21/08/2026 11:59
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+13/08/2026 16:23
+PF-ANAC
+
+Processo recebido na unidade
+
+12/08/2026 17:12
+PF-ANAC
+
+Processo remetido pela unidade CEL
+
+11/08/2026 16:38
+CEL
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

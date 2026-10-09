@@ -1,0 +1,77 @@
+SEI/ANAC - 13182214 - Voto
+
+Voto
+
+PROCESSO: 00066.002919/2026-11
+
+RELATOR: roberto josé silveira honorato
+
+DA COMPETÊNCIA
+
+A Lei n.º 11.182/2005, de 27 de setembro de 2005, no inciso V do artigo 11º, estabelece a competência da Diretoria Colegiada da ANAC para exercer o poder normativo da Agência, corroborado pelo Decreto n.º 5.731, de 20 de março de 2006, que aprova o regulamento da ANAC. Este normativo, por sua vez, estabelece que à Diretoria compete, em regime de colegiado, analisar, discutir e decidir, em instância administrativa final, as matérias de competência da Agência, bem como exercer o poder normativo da ANAC (art. 24, inciso VIII).
+
+O Regimento Interno da ANAC, aprovado pela Resolução n.º 381/2016, de 14 de junho de 2016, prevê no art. 31 inciso XVII, entre as competências comuns às Superintendências, avaliar e submeter à Diretoria as petições de isenção a requisitos de regulamentos. O mesmo Regimento (art. 34, inciso I) estabelece como competência da Superintendência de Padrões Operacionais (SPO) submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização, no âmbito operacional, de operadores aéreos, de operações aéreas, de transporte de artigos perigosos, de organizações de manutenção e de fatores humanos relacionados às operações aéreas.
+
+A Instrução Normativa n.º 154, de 20 de março de 2020, no art. 47, estabelece que as solicitações de isenção recebidas em conformidade com o RBAC n.º 11 serão submetidas a avaliação pela unidade organizacional competente para a matéria, e que caso a conclusão da unidade organizacional seja pela recomendação de deferimento, a solicitação de isenção será encaminhada para deliberação da Diretoria Colegiada.
+
+Nesse sentido, fica evidente a competência da Diretoria Colegiada da Agência para analisar o presente pedido de isenção quanto ao cumprimento de requisito estabelecido pela ANAC .
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme observado no Relatório (SEI nº 13182150 ), trata-se do pedido de isenção de cumprimento do requisito descrito no parágrafo 91.329(a)(2) do Regulamento Brasileiro da Aviação Civil - RBAC n.º 91 apresentado pela empresa Helimotors Taxi Aéreo LTDA . A empresa requereu a isenção para viabilizar o abastecimento do(s) helicóptero(s) listado(s) em suas Especificações Operativas [1] por meio de unidade móvel de abastecimento, em locais de pouso não cadastrados pela ANAC, onde ela realiza operações de voos panorâmicos.
+
+91.329 Pousos e decolagens de helicópteros em áreas não cadastradas
+
+(a) Ressalvado o previsto no parágrafo 91.102(d) deste Regulamento, pousos e decolagens de helicópteros em áreas não cadastradas podem ser realizados, sob total responsabilidade do operador, desde que:
+
+(...)
+
+(2) não haja operação de abastecimento de aeronaves no local;
+
+Importante destacar que tal pedido foi motivado pela entrada em vigor do RBAC n.º 91, em 18 de março de 2020, em substituição ao Regulamento Brasileiro de Homologação Aeronáutica - RBHA n.º 91. O regulamento revogado não trazia em sua redação requisito que proibisse o abastecimento de helicópteros em áreas não cadastradas.
+
+A peticionária fundamenta seu pleito na natureza eventual, turística e itinerante das operações de voos panorâmicos, frequentemente realizadas em regiões que não dispõem de infraestrutura aeroportuária. A empresa demonstrou que: (i) a utilização de unidade móvel de abastecimento é a solução operacional tecnicamente adequada e necessária; (ii) o nível de risco residual permanecerá dentro de patamar aceitável mediante as mitigações propostas; e (iii) a atividade de voos panorâmicos fomenta o turismo regional, gera emprego e renda e amplia o acesso da população a experiências aéreas em regiões mais remotas.
+
+Registre-se que o pleito guarda semelhança significativa com os já analisados e deferidos por este Colegiado em relação às empresas Helisul Táxi Aéreo ( Decisão nº 573/2022 ) e Helinorte Táxi Aéreo ( Decisão nº 730/2025 ). Em ambas as oportunidades, a área técnica buscou referências nas autoridades de aviação civil de referência internacional - FAA e EASA - não sendo verificada vedação ou restrição equivalente à prevista no regramento nacional.
+
+A área técnica analisou a admissibilidade e a forma do pedido, nos termos do RBAC n.º 11, seção 11.31, verificando o atendimento de todos os requisitos formais. Quanto ao mérito, a GNOS/SPO concluiu, por meio da Nota Técnica n.º 15/2026/GTNO-GNOS/GNOS/SPO (SEI nº 13008463 ), que a proposta não traz risco considerado inaceitável à segurança da aviação e que as contingências propostas pelo operador são adequadas, notadamente após o detalhamento acostado pelo regulado (SEI nº 13122944 ), que descreve o processo de isolamento da área para abastecimento, os procedimentos para evitar derramamento de combustível, as contingências em caso de ocorrência, bem como a segregação de pessoas não envolvidas com a operação.
+
+Adicionalmente, os Relatórios Semestrais de Atividades apresentados pelos regulados segundo as Decisões anteriores não registraram deterioração do nível de segurança operacional, o que corrobora a pertinência do presente deferimento.
+
+Quanto à vigência, observo que a isenção deverá permanecer atrelada à conclusão do processo de revisão regulatória do parágrafo 91.329(a)(2) do RBAC nº 91 (processo SEI n.º 00058.002272/2022-01 ), em consonância com a política técnica adotada para situações análogas, com vistas a proporcionar isonomia de tratamento entre os regulados.
+
+De forma geral, manifesto concordância com as condicionantes propostas na Nota Técnica n.º 15/2026 e na minuta de Decisão (SEI nº 13135879 ), em especial, para: (i) que as operações sejam restritas aos modelos de helicópteros listados nas respectivas Especificações Operativas da empresa; (ii) que as operações somente ocorram em condições VMC diurno; (iii) que o abastecimento somente seja realizado com o motor(es) desligado(s) sendo vedado o abastecimento de helicópteros em operações de terceiros.
+
+Por outro lado, com relação à restrição sugerida de proibir o transporte de pessoas não envolvidas na operação, entendo que ela é inaplicável ao presente caso, uma vez que o próprio objeto da operação da Helimotors é o transporte de passageiros em voos panorâmicos. Esse entendimento foi confirmado em consulta à área proponente, devendo, portanto, ser excluída a alínea "c" do inciso III do artigo 1º da Proposta de Decisão SEI nº 13135879 .
+
+Corroboro, ainda, as seguintes condições complementares propostas pela área técnica:
+
+encaminhamento semestral à SPO/GOAG de Relatório de Atividades conduzidas sob a vigência da isenção, descrevendo sucintamente cada operação realizada, com informações sobre: local, aeronaves envolvidas, tipo de operação, total de voos, intercorrências, mitigações adotadas e lições aprendidas;
+
+comunicação imediata à SPO/GOAG de qualquer intercorrência ocorrida durante operação amparada pela isenção; e
+
+prestação de informações sobre operações cobertas pela isenção, sempre que solicitado pela ANAC.
+
+Portanto, ao tempo em que reitero a solicitação feita pelo Diretor Rui Mesquita durante a deliberação de pedido de isenção semelhante em dezembro de 2025 (Voto SEI n.º 12383772 ), manifesto-me favoravelmente à concessão da isenção e solicito à SPO que dê prosseguimento ao processo SEI n.º 00058.002272/2022-01 , com vistas à conclusão da revisão da seção 91.329 do RBAC n.º 91. Recomendo, ademais, que a matéria seja avaliada para eventual inclusão na Agenda Regulatória da Agência, tendo em conta, especialmente: (i) o histórico das discussões acerca do tema (cf. Despacho SEI n.º 6667839) nos últimos anos; (ii) a existência de denúncias e conflitos relacionados a operações de helicópteros em áreas não cadastradas pela ANAC; e (iii) o crescimento expressivo do volume de operações aéreas com helicópteros no Brasil
+
+Por fim, considerando as tratativas para a celebração do Protocolo de Intenções entre a ANAC, Ministério de Portos e Aeroportos e Confederação Nacional dos Municípios - CNM (SEI n.º 00058.038739/2026-76 ), recomendo que os possíveis Planos de Ação a serem estabelecidos com os entes públicos federativos incluam ações voltadas à capacitação, treinamento, estudos e diagnósticos, no que diz respeito à interação entre as competências e normas da ANAC e, a disciplina do uso e ocupação do solo nos municípios, especialmente em relação às operações com helicópteros.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE ao deferimento do pedido de isenção de cumprimento do requisito que trata o parágrafo 91.329(a)(2) do RBAC nº 91, protocolado pela Helimotors Táxi Aéreo Ltda ., que visa permitir o abastecimento de helicópteros quando realizando operações de pouso e decolagem em áreas não cadastradas, observadas as condicionantes destacadas na Proposta de Ato Normativo (SEI nº 13135879 ) e, observado o disposto no item 2.9 deste Voto .
+
+Encaminhem-se os autos à SPO para a adoção das providências cabíveis .
+
+É como voto.
+
+ROBERTO JOSÉ SILVEIRA HONORATO
+
+Diretor
+
+[1] https://sei.anac.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=3072660&id_documento=13635905&infra_hash=c0d0d00f27f2ee2c5937f4095e52eb77
+
+Documento assinado eletronicamente por Roberto José Silveira Honorato , Diretor , em 12/06/2026, às 20:48, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13182214 e o código CRC 72AC4FB2 .
+
+SEI nº 13182214

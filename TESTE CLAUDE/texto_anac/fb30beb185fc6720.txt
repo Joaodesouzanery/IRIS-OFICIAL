@@ -1,0 +1,455 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.019700/2026-50
+
+Tipo: Aeródromos: Gestão dos Contratos de Concessão
+
+Data de Geração: 06/03/2026
+
+Interessados: Fraport Brasil S.A. Aeroporto de Fortaleza
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (46 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+12957725 Carta 06/03/2026 06/03/2026 SRA
+12957726 Recibo Eletrônico de Protocolo 06/03/2026 06/03/2026 SRA
+12957728 Anexo 06/03/2026 06/03/2026 SRA
+12957729 Recibo Eletrônico de Protocolo 06/03/2026 06/03/2026 SRA
+13155027 Nota Técnica 37 28/04/2026 28/04/2026 GEIC
+13167523 Anexo 27/04/2026 27/04/2026 GEIC
+13245698 Ofício 81 15/05/2026 15/05/2026 SRA
+13310899 Certidão de Intimação Cumprida 18/05/2026 18/05/2026 SRA
+13390733 Carta 29/05/2026 29/05/2026 GTAS-SRA
+13390737 Anexo 29/05/2026 29/05/2026 GTAS-SRA
+13390746 Recibo Eletrônico de Protocolo 29/05/2026 29/05/2026 GTAS-SRA
+13432571 Despacho 03/06/2026 03/06/2026 GEIC
+13434285 Proposta de Ato (Normativo, Decisão etc.) 03/06/2026 03/06/2026 GEIC
+13435135 Planilha 02/06/2026 02/06/2026 GEIC
+13440305 Anexo 03/06/2026 03/06/2026 GEIC
+13471543 Despacho 17/06/2026 17/06/2026 SRA
+13571081 Parecer 31/2026/FIN/PFEANAC/PGF/AGU 06/07/2026 06/07/2026 PF-ANAC
+13571091 Despacho de Aprovação 111/2026/GAB/PFEANAC/PGF/AGU 06/07/2026 06/07/2026 PF-ANAC
+13571101 Despacho de Aprovação 118/2026/GAB/PFEANAC/PGF/AGU 06/07/2026 06/07/2026 PF-ANAC
+13573341 Despacho 08/07/2026 08/07/2026 SRA
+13589010 Certidão de Distribuição 09/07/2026 09/07/2026 ASTEC
+13621631 Relatório de Diretoria 28/07/2026 28/07/2026 DIR-CBI
+13625113 Voto 28/07/2026 28/07/2026 DIR-CBI
+13665620 Despacho 28/07/2026 28/07/2026 ASTEC
+13666223 Voto 31/07/2026 31/07/2026 DIR-RCM
+13667131 Voto 29/07/2026 29/07/2026 DIR-P
+13671254 Voto 31/07/2026 31/07/2026 DIR-MNM
+13677375 Voto 31/07/2026 31/07/2026 DIR-RJH
+13686643 Decisão 750 03/08/2026 03/08/2026 ASTEC
+13686892 Despacho 03/08/2026 03/08/2026 ASTEC
+13692948 Anexo DOU 04/08/2026 04/08/2026 ASTEC
+13692969 Retificação 04/08/2026 04/08/2026 ASTEC
+13697687 Anexo DOU 05/08/2026 05/08/2026 ASTEC
+13697688 Certidão de Deliberação 05/08/2026 05/08/2026 ASTEC
+13692792 Ofício 878 05/08/2026 05/08/2026 GAB
+13701109 Recibo Eletrônico de Protocolo - 11625116 05/08/2026 05/08/2026 GAB
+13703296 Ofício 314 13/08/2026 13/08/2026 GEIC
+13732209 Certidão de Intimação Cumprida 13/08/2026 13/08/2026 GEIC
+13795093 Carta 27/08/2026 27/08/2026 GEIC
+13795094 Anexo 27/08/2026 27/08/2026 GEIC
+13795096 Recibo Eletrônico de Protocolo 27/08/2026 27/08/2026 GEIC
+13852005 Ofício nº 340/2026/ASSAD-MPOR/GAB-MPOR 10/09/2026 10/09/2026 PROT-DF
+13852011 Anexo 01 - Ofício nº 878/2026/GAB-ANAC 05/08/2026 10/09/2026 PROT-DF
+13852013 Anexo 02 - Despacho nº 359/2026/DOPR-SAC-MPOR 21/08/2026 10/09/2026 PROT-DF
+13852015 Anexo 03 - Ofício nº 995/2026/SAC-MPOR 25/08/2026 10/09/2026 PROT-DF
+13861551 Despacho 14/09/2026 14/09/2026 GAB
+
+Lista de Andamentos (74 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+23/09/2026 05:49
+GAB
+
+Conclusão do processo na unidade
+
+23/09/2026 05:49
+GAB
+
+Reabertura do processo na unidade
+
+14/09/2026 14:26
+GEIC
+
+Conclusão do processo na unidade
+
+14/09/2026 10:42
+GEIC
+
+Processo recebido na unidade
+
+14/09/2026 10:20
+GEIC
+
+Processo remetido pela unidade SRA
+
+14/09/2026 10:19
+SRA
+
+Processo recebido na unidade
+
+14/09/2026 09:21
+SRA
+
+Processo remetido pela unidade GAB
+
+11/09/2026 16:06
+GAB
+
+Reabertura do processo na unidade
+
+28/08/2026 16:48
+GEIC
+
+Conclusão do processo na unidade
+
+28/08/2026 16:43
+GEIC
+
+Processo recebido na unidade
+
+27/08/2026 18:03
+GEIC
+
+Processo remetido pela unidade GEIC
+
+27/08/2026 00:01
+GEIC
+
+Reabertura do processo na unidade
+
+18/08/2026 11:05
+DIR-CBI
+
+Conclusão do processo na unidade
+
+13/08/2026 16:33
+GEIC
+
+Conclusão do processo na unidade
+
+13/08/2026 16:31
+GEIC
+
+Processo recebido na unidade
+
+13/08/2026 15:29
+GEIC
+
+Processo remetido pela unidade GEIC
+
+13/08/2026 15:29
+GEIC
+
+Reabertura do processo na unidade
+
+13/08/2026 12:40
+GEIC
+
+Conclusão do processo na unidade
+
+06/08/2026 11:43
+GEIC
+
+Reabertura do processo na unidade
+
+06/08/2026 11:01
+GEIC
+
+Conclusão do processo na unidade
+
+06/08/2026 09:57
+GEIC
+
+Processo recebido na unidade
+
+06/08/2026 08:27
+DIR-RCM
+
+Conclusão do processo na unidade
+
+05/08/2026 19:23
+GAB
+
+Conclusão do processo na unidade
+
+05/08/2026 18:27
+GEIC
+
+Processo remetido pela unidade SRA
+
+05/08/2026 18:25
+SRA
+
+Processo recebido na unidade
+
+05/08/2026 15:34
+SRA
+
+Processo remetido pela unidade ASTEC
+
+04/08/2026 06:02
+DIR-P
+
+Conclusão do processo na unidade
+
+03/08/2026 17:45
+DIR-MNM
+
+Conclusão do processo na unidade
+
+03/08/2026 12:50
+GAB
+
+Processo recebido na unidade
+
+03/08/2026 12:43
+GAB
+
+Processo remetido pela unidade ASTEC
+
+31/07/2026 18:20
+DIR-RJH
+
+Conclusão do processo na unidade
+
+28/07/2026 18:06
+DIR-P
+
+Processo recebido na unidade
+
+28/07/2026 16:19
+DIR-RCM
+
+Processo recebido na unidade
+
+28/07/2026 15:43
+DIR-MNM
+
+Processo recebido na unidade
+
+28/07/2026 15:39
+DIR-RJH
+
+Processo recebido na unidade
+
+28/07/2026 15:17
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 15:17
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+24/07/2026 10:29
+ASTEC
+
+Reabertura do processo na unidade
+
+09/07/2026 16:42
+ASTEC
+
+Conclusão do processo na unidade
+
+09/07/2026 14:20
+DIR-CBI
+
+Processo recebido na unidade
+
+09/07/2026 14:09
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+09/07/2026 14:08
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+09/07/2026 11:40
+ASTEC
+
+Processo recebido na unidade
+
+08/07/2026 21:03
+ASTEC
+
+Processo remetido pela unidade SRA
+
+06/07/2026 15:03
+SRA
+
+Processo recebido na unidade
+
+06/07/2026 11:56
+SRA
+
+Processo remetido pela unidade PF-ANAC
+
+06/07/2026 11:50
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+18/06/2026 15:19
+PF-ANAC
+
+Processo recebido na unidade
+
+18/06/2026 11:57
+SRA
+
+Conclusão do processo na unidade
+
+17/06/2026 19:30
+PF-ANAC
+
+Processo remetido pela unidade SRA
+
+08/06/2026 11:16
+GTAS-SRA
+
+Processo recebido na unidade
+
+08/06/2026 10:44
+SRA
+
+Processo recebido na unidade
+
+03/06/2026 14:54
+SRA
+
+Processo remetido pela unidade GEIC
+
+02/06/2026 19:27
+SRA
+
+Conclusão do processo na unidade
+
+02/06/2026 14:14
+GEIC
+
+Reabertura do processo na unidade
+
+02/06/2026 00:02
+SRA
+
+Reabertura do processo na unidade
+
+29/05/2026 15:11
+GTAS-SRA
+
+Processo remetido pela unidade GTAS-SRA
+
+18/05/2026 14:11
+SRA
+
+Conclusão do processo na unidade
+
+18/05/2026 14:07
+SRA
+
+Processo recebido na unidade
+
+18/05/2026 13:57
+SRA
+
+Processo remetido pela unidade SRA
+
+08/05/2026 12:33
+SRA
+
+Reabertura do processo na unidade
+
+30/04/2026 09:48
+GTAS-SRA
+
+Processo recebido na unidade
+
+29/04/2026 18:40
+GTAS-SRA
+
+Processo remetido pela unidade SRA
+
+29/04/2026 18:35
+SRA
+
+Processo recebido na unidade
+
+28/04/2026 15:40
+SRA
+
+Processo remetido pela unidade GEIC
+
+27/04/2026 12:17
+GEIC
+
+Alterado nível de acesso do documento 13155027 (Nota Técnica 37) para público
+
+09/03/2026 14:19
+GEIC
+
+Processo recebido na unidade
+
+09/03/2026 11:24
+GEIC
+
+Processo remetido pela unidade SRA
+
+09/03/2026 10:57
+SRA
+
+Processo recebido na unidade
+
+06/03/2026 18:00
+SRA
+
+Processo remetido pela unidade SRA
+
+06/03/2026 17:58
+SRA
+
+Processo remetido pela unidade SRA
+
+06/03/2026 17:58
+SRA
+
+Processo público gerado

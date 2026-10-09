@@ -1,0 +1,103 @@
+SEI/ANAC - 12775192 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.018087/2019-24
+
+INTERESSADO: CONCESSIONÁRIA DO AEROPORTO DE SALVADOR S.A - CASSA, SBSV - AEROPORTO DE SALVADOR
+
+RELATOR: RUI CHAGAS MESQUITA
+
+descrição dos fatos
+
+Trata-se da análise de novo pedido [1] de isenção do requisito de que trata o parágrafo 154.207(d)(1) do RBAC n° 154, protocolado pela Concessionária do Aeroporto de Salvador S.A., responsável pela execução do Contrato de Concessão n° 003/ANAC/2017 – SBSV, em virtude da presença da Casa de Transmissão (KT), componente não frangível do Glide Slope ( GS ) do Sistema de Pouso por Instrumentos ( Instrument Landing System – ILS) utilizado nas operações de aproximação pela cabeceira 28, na faixa da pista de pouso e decolagem 10/28 ("Pista 10/28"). O pedido decorre do fim do prazo de isenção em 10/02/2025 que havia sido concedido pela ANAC na Decisão n° 19 [2] , de 07/02/2020.
+
+A Concessionária explicou no pleito original [3] , apresentado no ano de 2019, que a alteração da posição da cabeceira 28, que ocorrera para atender a obrigações da Fase I-B do Contrato de Concessão, impôs a realocação de todos dos auxílios à navegação aérea que atendem a cabeceira, incluindo o Glide Slope (GS) .
+
+Cabe rememorar que o Plano de Exploração Aeroportuária – PEA (Anexo 2 do Contrato de Concessão) previa, entre outras obrigações, que a Concessionária deveria no prazo da Fase I-B: (i) adequar a faixa da Pista 10/28, de acordo com os requisitos regulamentares de projeto para o número de código 4 em pista de aproximação de precisão; (ii) implantar RESA nas cabeceiras 10 e 28, com dimensões de 240 x 150 metros; (iii) adequar as faixas de pistas de táxi, de acordo com os requisitos regulamentares de projeto para aeronave crítica em operação; e (iv) adequar a distância de separação entre o eixo da pista de táxi A e o eixo da Pista 10/28, de acordo com os requisitos regulamentares de projeto para o código 4E [4] .
+
+Assim, visando o provimento de RESA de 240 metros de comprimento junto à cabeceira 28, a Concessionária optou em seu anteprojeto por deslocar a cabeceira da extremidade inicial da Pista 28 [5] em 120 metros [6] e, por conseguinte, o Glide Slope (GS) também precisaria ser reposicionado. A Concessionária relata que assumiu as operações do SBSV com o Glide Slope (GS) da Pista 28, que é composto por uma antena frangível e a uma Casa de Transmissão (KT), que não é frangível, posicionado a cerca de 100 metros do lado esquerdo da Pista 28.
+
+A Concessionária informou no pleito original que “ se baseou no site survey , realizado pelas equipes do Terceiro Centro Integrado de Defesa Aérea e Controle de Tráfego Aéreo- CINDACTA III, para a escolha do ponto de implantação do GS ” (Glide Slope), sendo disponibilizado nos autos do processo o Relatório [7] elaborado pelo Parque de Material de Eletrônica da Aeronáutica – PAME, da subseção de auxílios à navegação aérea, que indicou que o levantamento realizado in loco contou com a participação de representantes da Concessionária, do CINDACTA III e do ICA.
+
+O Relatório do PAME registra que não era possível a instalação do Glide Slope no lado direito da Pista 28, pois a “ orografia, obstáculos e edifícios na proximidade inviabilizam as condições técnicas de operação do equipamento”. Ao ser questionado [8] pela ANAC posteriormente sobre essa possibilidade, após algumas melhorias realizadas no aeroporto, o representante do PAME, que havia elaborado o Relatório, esclareceu [9] que havia sido identificado “ Grande quantidade de edificações irregulares muito próximas (laterais e à frente do equipamento), acima do ângulo de planeio do Glide, além da vegetação, dentro das áreas críticas e sensível do Glide, o que afetam diretamente o sinal eletromagnético do equipamento ”.
+
+Com isto, o Relatório do PAME considerou apenas dois pontos para o reposicionamento do Glide Slope (GS) , ambos no lado esquerdo da Pista 28. O primeiro ponto considerado (GS – Ponto 1) seria a 140 m do eixo da Pista 28, portanto, o Glide Slope ficaria fora da faixa de pista de pouso e decolagem. Contudo, ressalvou que para não violar a faixa da pista de táxi A, que é paralela à Pista 10/28, o Relatório afirmou que seria necessário que a pista de táxi A fosse deslocada para uma distância mínima de 186 metros da Pista 10/28. Ou seja, um afastamento maior que a distância mínima regulamentar de 172,5 metros exigida para operação aeronaves de código 4E, e que seria suficiente para atender a obrigação estabelecida no item 7.4.7 do PEA.
+
+O segundo ponto considerado para instalação do Glide Slope (GS – Ponto 2) seria a 125 m da Pista 28, portanto, dentro da faixa de pista de pouso e decolagem. O Relatório do PAME relata que “ Este ponto foi escolhido distanciando o Glide o máximo possível da pista de pouso e considerando o menor afastamento da pista de taxi cuja obra está atualmente em execução, onde o distanciamento mínimo conforme o código de pista 4E seriam 43,5 m de um obstáculo” . Nada obstante, informou o Relatório do PAME que seria necessário que toda a estrutura do Glide Slope fosse frangível, conforme exigido pelo regulamento da ANAC.
+
+Diante dessas duas alternativas consideradas pelo PAME, a Concessionária informou [10] que “ dada a impossibilidade de mover a Taxiway - TWY A, foi necessário adotar o ponto G2 para a implantação do GS ”. Tendo em vista que a KT não era frangível e seria posicionada a 125 metros da Pista 28, violando a faixa de pista de pouso e decolagem, a Concessionária protocolou Estudo Aeronáutico [11] visando a isenção do requisito de que trata o parágrafo 154.207 do RBAC n° 154.
+
+Antes de avaliar o Estudo Aeronáutico, convém relatar que a Gerência Técnica de Infraestrutura e Operações Aeroportuárias – GTOP da SIA informou [12] à Concessionária que ainda não haviam sido esgotadas as possibilidades alternativas à instalação da KT dentro da faixa da Pista 10/28. Assim, questionou [13] a Concessionária acerca da possibilidade de instalar a KT a uma distância de 140 m da Pista 10/28, cerca de 30 m do eixo da pista da táxi A, isto é, na posição alternativa aventada pelo PAME (GS – Ponto 1). A área técnica da Agência ponderou que haveria violação da faixa da pista de táxi A neste cenário, em trecho localizado entre as pistas de táxi F e G, para operação de aeronaves de letra de código D e E, que exigem uma distância livre de obstáculos do eixo da pista de táxi de 37,0 e 43,5 metros, respectivamente, mas não feriria a faixa de pista da táxi A para operação de aeronaves de letra de código C. Nesse cenário, seria avaliado a isenção de requisitos para movimentação de aeronaves de letra de código D e E na pista de táxi A ao invés de uma isenção de requisito da faixa da Pista 10/28. Ainda considerando essa alternativa, a área técnica pontuou que “ No caso da movimentação de aeronaves “E” na TWY “A”, deveria ser analisado ainda se a altura da porção da asa que passará por cima da KT estará bem acima da altura da KT e a proposição de procedimentos ou rotas de táxi alternativas para minimizar ou eliminar os riscos ”.
+
+A Concessionária respondeu [14] que um “ trecho da faixa de rolamento da TWY A faria parte da área crítica do GS, onde não é permitida a existência de nenhum objeto estacionado ou em trânsito quando da operação do equipamento. Assim, as aeronaves teriam que estar estacionadas na TWY A antes desse ponto e não poderia acontecer nenhuma movimentação em direção à THR (Threshold) 28 a partir do momento em que houvesse qualquer tipo de operação de aproximação ILS (Instrument Land System) para a referida THR. Desta forma, haveria redução de capacidade significativa da pista para o Aeroporto de Salvador e espaço aéreo ”. A Concessionária avaliou ainda que o risco de colisão com a KT a 125 metros da Pista 10/28 decorrente de uma excursão lateral seria menor que a probabilidade de colisão de ponta de asa de uma aeronave de letra de código E ou F taxiando pela pista de táxi A. Ademais, pontuou alguns desafios que teria para reduzir o nível da KT de forma a não violar a faixa da Pista 10/28.
+
+Após a manifestação da Concessionária, foi então descartada a possibilidade de instalação do Glide Slope fora da faixa da Pista 10/28 e a área técnica concentrou-se na avaliação do Estudo Aeronáutico que havia sido protocolado. Após alguns apontamentos acerca da incompletude e da inconsistências de dados e revisões [15] do Estudo Aeronáutico, o processo foi submetido à apreciação da Diretoria Colegiada, que aprovou a isenção temporária pelo prazo de 60 meses proposta pela SIA, nos termos do Voto [16] do Diretor Juliano Noman, sendo proferida então a Decisão 19/2020.
+
+O novo pleito de isenção do requisito regulamentar da Concessionária foi instruído com apresentação da Revalidação do Estudo Aeronáutico [17] apresentado anteriormente, Relatórios de superfície [18] da pista de pouso e decolagem, Análise de Impacto sobre a Segurança Operacional (AISO) [19] e e-mails de representantes de empresas aéreas [20] com manifestações favoráveis ao pedido de isenção.
+
+Após a análise [21] dos documentos apresentados pela Concessionária, a GTOP concluiu [22] que não havia óbice ao deferimento do pedido de isenção, inclusive de forma permanente. A avaliação foi ratificada [23] pela SIA, e materializada conforme a Proposta de Ato [24] submetida à Diretoria.
+
+Em virtude de sorteio [25] , esse processo foi distribuído para relatoria desta Diretoria
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+[1] CARTA Nº 3819 / 2025 / SBSV (SEI! n° 11133108), de 06/02/2025.
+
+[2] Decisão 19 (SEI! n° 4010104), de 07/02/2020.
+
+[3] CARTA n° 1031/2019/CASSA (SEI! n° 3011070), de 09/05/2019.
+
+[4] Itens 7.4.4, 7.4.6 e 7.4.7 do PEA, Anexo 2 do Contrato de Concessão do Aeroporto de Salvador.
+
+[5] Pista 28 considera as operações de pouso e decolagem que ocorrem no sentido da cabeceira 28 para a cabeceira 10.
+
+[6] Para provimento de RESA por meio de medida alternativa (NESO), conforme o item G.7(c) do Apêndice G do RBAC 154.
+
+[7] Anexo_01 Estudo Aeronáutico SBSV - Site Survey, contido no SEI! n° 3011073.
+
+[8] E-mail da GTOP SEI! n° 3064009, de 27/05/2029.
+
+[9] E-mail SEI! n° 3065115 de representante do PAME.
+
+[10] CARTA n° 1031/2019/CASSA (SEI! n° 3011070), de 09/05/2019.
+
+[11] Estudo Aeronáutico e demais documentos contidos no SEI! n° 3011073.
+
+[12] E-mail GTOP SEI! n° 3189564, de 01/07/2019.
+
+[13] Anexo SEI! n° 3189533 do e-mail GTOP SEI! n° 3189564, de 01/07/2019.
+
+[14] Carta n° 1198/2019/CASSA (SEI! 3306572) e anexo SEI! 3306574, de 02/08/2025.
+
+[15] Protocolado na Carta n° 1311/2019/CASSA (SEI! n° 3574081), 03/10/2019, e na Carta n° 1358/2019/SBSV (SEI! n° 3629525), de 17/10/2019.
+
+[16] Voto SEI! n° 3988247.
+
+[17] Estudo Aeronáutico (SEI! n° 11133110) e outro complementar em SEI! n° 11863511.
+
+[18] Relatórios de Atrito, Macrotextura e Remoção Borracha da pista de pouso e decolagem (SEI! n° 11133113).
+
+[19] Análise de Impacto à Segurança Operacional – AISO nº 175/SGSO/SBSV/2025 (SEI! n° 11133114).
+
+[20] Documento SEI n° 11133115.
+
+[21] Nota Técnica n° 30/2025/GTOP/GCOP/SIA (SEI! n° 11264311), de 19/03/2025, e Nota Técnica nº 82/2025/GTOP/GCOP/SIA (SEI! n° 12012038), de 05/11/2025.
+
+[22] Despacho GTOP SEI! n° 12301291.
+
+[23] Despacho SEI! n° 12530602, de 26/12/2025, e SEI! n° 12537144, de 30/12/2025.
+
+[24] Proposta de Ato SEI! n° 12048247.
+
+[25] Certidão de Distribuição SEI! n° 12543371.
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 19/02/2026, às 14:24, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12775192 e o código CRC A9658F91 .
+
+SEI nº 12775192

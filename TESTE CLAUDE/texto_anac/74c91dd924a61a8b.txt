@@ -1,0 +1,866 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.067994/2022-01
+
+Tipo: Demandas Institucionais: Respostas a órgãos externos
+
+Data de Geração: 18/11/2022
+
+Interessados: Ministério da Infraestrutura
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (62 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+7933737 Ofício 18/11/2022 18/11/2022 GAB
+7933738 Recibo Eletrônico de Protocolo 18/11/2022 18/11/2022 GAB
+7937727 Despacho 21/11/2022 21/11/2022 GAB
+8076241 Ofício 170 27/12/2022 27/12/2022 GOIA
+8079168 E-mail 27/12/2022 27/12/2022 GOIA
+8079256 Certidão de Intimação Cumprida 27/12/2022 27/12/2022 GOIA
+8487754 Carta 12/04/2023 12/04/2023 GOIA
+8487755 Anexo 12/04/2023 12/04/2023 GOIA
+8487791 Anexo 12/04/2023 12/04/2023 GOIA
+8555551 Despacho 02/05/2023 02/05/2023 GOIA
+11734016 Ofício n° 678/2025/SAC-MPOR 27/06/2025 27/06/2025 GAB
+11927038 Despacho 02/09/2025 02/09/2025 GOIA
+12081543 Despacho 10/12/2025 10/12/2025 GIOS
+12263978 Despacho 03/11/2025 03/11/2025 SRA
+12404790 Parecer 353 03/12/2025 03/12/2025 GTOP
+12416859 Despacho 08/12/2025 08/12/2025 GTOP
+12435639 Despacho 08/12/2025 08/12/2025 GCOP
+12473838 Nota Técnica 23 17/12/2025 17/12/2025 GOIA
+12473846 Proposta de Ato (Normativo, Decisão etc.) 18/12/2025 18/12/2025 GOIA
+12473863 Ofício 200 18/12/2025 18/12/2025 GOIA
+12498769 Certidão de Intimação Cumprida 19/12/2025 19/12/2025 GOIA
+12554882 Certidão de Intimação Cumprida 05/01/2026 05/01/2026 GOIA
+12693375 Carta 26/01/2026 26/01/2026 GOIA
+13094055 Proposta de Ato (Normativo, Decisão etc.) 15/04/2026 15/04/2026 GOIA
+13121962 Planta 14/04/2026 14/04/2026 GOIA
+13121967 Ofício 33 15/04/2026 15/04/2026 GOIA
+13126483 Certidão de Intimação Cumprida 15/04/2026 15/04/2026 GOIA
+13213343 Carta 04/05/2026 04/05/2026 GOIA
+12744128 Nota Técnica 1 14/05/2026 14/05/2026 GOIA
+13483194 Parecer 24/2026/FIN/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13483201 Despacho de Aprovação 94/2026/GAB/PFEANAC/PGF/AGU 15/06/2026 15/06/2026 PF-ANAC
+13499231 Proposta de Ato (Normativo, Decisão etc.) 18/06/2026 18/06/2026 GOIA
+13499339 Despacho 18/06/2026 18/06/2026 GOIA
+13491139 Despacho 23/06/2026 23/06/2026 SRA
+13521856 Certidão de Distribuição 23/06/2026 23/06/2026 ASTEC
+13533453 Relatório de Diretoria 07/07/2026 07/07/2026 DIR-RCM
+13545094 Voto 07/07/2026 07/07/2026 DIR-RCM
+13577431 Despacho 07/07/2026 07/07/2026 ASTEC
+13577804 Voto 09/07/2026 09/07/2026 DIR-P
+13584328 Voto 09/07/2026 09/07/2026 DIR-CBI
+13592145 Voto 10/07/2026 10/07/2026 DIR-MNM
+13599211 Certidão de Deliberação 13/07/2026 13/07/2026 ASTEC
+13599228 Despacho 13/07/2026 13/07/2026 ASTEC
+13620212 Despacho 17/07/2026 17/07/2026 GAB
+13623597 Despacho 21/07/2026 21/07/2026 GOIA
+13611459 Termo Aditivo 21/07/2026 21/07/2026 GOIA
+13622853 Ofício 55 21/07/2026 21/07/2026 GOIA
+13636791 Certidão de Intimação Cumprida 21/07/2026 21/07/2026 GOIA
+13649116 Despacho 23/07/2026 23/07/2026 GOIA
+13649605 Extrato de ACT/TED/Termo Aditivo 28/07/2026 28/07/2026 GOIA
+13649709 Despacho 28/07/2026 28/07/2026 GOIA
+13679297 Anexo 31/07/2026 31/07/2026 GTIN-Publicações
+13665764 Ofício 57 11/08/2026 11/08/2026 GOIA
+13646691 Carta 23/07/2026 23/07/2026 GOIA
+13646692 Anexo 23/07/2026 23/07/2026 GOIA
+13693784 Recibo 23/07/2026 04/08/2026 GOIA
+13665856 Despacho 11/08/2026 11/08/2026 GOIA
+13700215 Ofício 58 11/08/2026 11/08/2026 GOIA
+13722237 E-mail 11/08/2026 11/08/2026 GOIA
+13729529 Ofício 141 20/08/2026 20/08/2026 SRA
+13770092 Recibo de Peticionamento 80.930.643-3 21/08/2026 21/08/2026 PROT-DF
+13790441 Certidão de Intimação Cumprida 26/08/2026 26/08/2026 GOIA
+
+Lista de Andamentos (153 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+04/09/2026 16:46
+GEIC
+
+Conclusão do processo na unidade
+
+28/08/2026 17:54
+GOIA
+
+Conclusão do processo na unidade
+
+27/08/2026 10:36
+GOIA
+
+Processo recebido na unidade
+
+26/08/2026 23:16
+GOIA
+
+Processo remetido pela unidade GOIA
+
+26/08/2026 23:16
+GOIA
+
+Reabertura do processo na unidade
+
+21/08/2026 15:07
+PROT-DF
+
+Conclusão do processo na unidade
+
+21/08/2026 14:10
+SRA
+
+Conclusão do processo na unidade
+
+21/08/2026 12:55
+PROT-DF
+
+Processo recebido na unidade
+
+21/08/2026 12:38
+PROT-DF
+
+Processo remetido pela unidade SRA
+
+12/08/2026 10:32
+SRA
+
+Processo recebido na unidade
+
+11/08/2026 16:58
+SRA
+
+Processo remetido pela unidade GOIA
+
+11/08/2026 16:58
+GOIA
+
+Reabertura do processo na unidade
+
+11/08/2026 16:20
+GEIC
+
+Processo recebido na unidade
+
+11/08/2026 15:45
+GOIA
+
+Conclusão do processo na unidade
+
+11/08/2026 15:38
+GOIA
+
+Reabertura do processo na unidade
+
+11/08/2026 15:26
+GEIC
+
+Processo remetido pela unidade GOIA
+
+05/08/2026 11:30
+GTOP
+
+Conclusão do processo na unidade
+
+05/08/2026 11:30
+GTOP
+
+Reabertura do processo na unidade
+
+03/08/2026 12:01
+DIR-MNM
+
+Conclusão do processo na unidade
+
+31/07/2026 14:02
+GTOP
+
+Conclusão do processo na unidade
+
+31/07/2026 14:02
+GTOP
+
+Reabertura do processo na unidade
+
+31/07/2026 08:14
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+29/07/2026 16:25
+AUD
+
+Conclusão do processo na unidade
+
+29/07/2026 14:42
+AUD
+
+Processo recebido na unidade
+
+28/07/2026 16:33
+GTIN-Publicações
+
+Processo recebido na unidade
+
+28/07/2026 16:01
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+28/07/2026 16:01
+ASTEC
+
+Processo recebido na unidade
+
+28/07/2026 15:34
+GAB
+
+Conclusão do processo na unidade
+
+28/07/2026 15:32
+GAB
+
+Processo recebido na unidade
+
+28/07/2026 15:32
+AUD
+
+Processo remetido pela unidade GOIA
+
+28/07/2026 15:32
+GAB
+
+Processo remetido pela unidade GOIA
+
+28/07/2026 15:32
+ASTEC
+
+Processo remetido pela unidade GOIA
+
+27/07/2026 08:23
+DIR-P
+
+Conclusão do processo na unidade
+
+24/07/2026 12:33
+GAB
+
+Conclusão do processo na unidade
+
+23/07/2026 15:45
+GAB
+
+Processo recebido na unidade
+
+23/07/2026 15:36
+GAB
+
+Processo remetido pela unidade GOIA
+
+21/07/2026 13:29
+GOIA
+
+Liberada assinatura externa para o usuário LEONARDO GONCALVES CARNIELLE (leocarnielle@gmail.com) no documento 13611459 (Termo Aditivo) até 31/07/2026 (10 dias). Sem acesso ao processo.
+
+21/07/2026 13:27
+GOIA
+
+Liberada assinatura externa para o usuário Andreea Pal (a.pal@fraport-brasil.com) no documento 13611459 (Termo Aditivo) até 31/07/2026 (10 dias). Sem acesso ao processo.
+
+21/07/2026 12:41
+GAB
+
+Conclusão do processo na unidade
+
+21/07/2026 12:33
+GOIA
+
+Processo recebido na unidade
+
+21/07/2026 12:32
+GOIA
+
+Processo remetido pela unidade GOIA
+
+21/07/2026 12:27
+GAB
+
+Processo recebido na unidade
+
+21/07/2026 12:26
+GAB
+
+Processo remetido pela unidade GOIA
+
+20/07/2026 09:36
+GOIA
+
+Processo recebido na unidade
+
+17/07/2026 17:41
+GOIA
+
+Processo remetido pela unidade SRA
+
+17/07/2026 17:40
+SRA
+
+Processo recebido na unidade
+
+17/07/2026 06:07
+SRA
+
+Processo remetido pela unidade GAB
+
+14/07/2026 15:00
+DIR-CBI
+
+Conclusão do processo na unidade
+
+14/07/2026 11:45
+GOIA
+
+Processo recebido na unidade
+
+14/07/2026 11:08
+GOIA
+
+Processo remetido pela unidade SRA
+
+14/07/2026 10:23
+SRA
+
+Processo recebido na unidade
+
+13/07/2026 15:04
+GAB
+
+Processo recebido na unidade
+
+13/07/2026 12:43
+GAB
+
+Processo remetido pela unidade ASTEC
+
+13/07/2026 12:43
+SRA
+
+Processo remetido pela unidade ASTEC
+
+10/07/2026 10:28
+DIR-MNM
+
+Processo recebido na unidade
+
+07/07/2026 14:08
+DIR-CBI
+
+Processo recebido na unidade
+
+07/07/2026 13:33
+DIR-P
+
+Processo recebido na unidade
+
+07/07/2026 12:30
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+07/07/2026 12:30
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+07/07/2026 12:30
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+02/07/2026 17:02
+ASTEC
+
+Reabertura do processo na unidade
+
+24/06/2026 15:14
+ASTEC
+
+Conclusão do processo na unidade
+
+24/06/2026 15:13
+ASTEC
+
+Reabertura do processo na unidade
+
+23/06/2026 16:50
+DIR-RCM
+
+Processo recebido na unidade
+
+23/06/2026 16:45
+ASTEC
+
+Conclusão do processo na unidade
+
+23/06/2026 16:33
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+23/06/2026 16:33
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+23/06/2026 16:02
+ASTEC
+
+Processo recebido na unidade
+
+23/06/2026 15:44
+ASTEC
+
+Processo remetido pela unidade SRA
+
+18/06/2026 10:32
+SRA
+
+Processo recebido na unidade
+
+18/06/2026 10:32
+SRA
+
+Processo remetido pela unidade GOIA
+
+18/06/2026 05:49
+GOIA
+
+Processo recebido na unidade
+
+18/06/2026 05:49
+GOIA
+
+Processo remetido pela unidade SRA
+
+16/06/2026 15:20
+SRA
+
+Processo recebido na unidade
+
+16/06/2026 15:20
+SRA
+
+Processo remetido pela unidade GOIA
+
+15/06/2026 16:17
+GOIA
+
+Processo recebido na unidade
+
+15/06/2026 11:48
+GOIA
+
+Processo remetido pela unidade SRA
+
+15/06/2026 11:47
+SRA
+
+Processo recebido na unidade
+
+15/06/2026 11:44
+SRA
+
+Processo remetido pela unidade PF-ANAC
+
+15/05/2026 15:57
+PF-ANAC
+
+Processo recebido na unidade
+
+15/05/2026 11:40
+PF-ANAC
+
+Processo remetido pela unidade GOIA
+
+15/04/2026 14:33
+GOIA
+
+Processo recebido na unidade
+
+15/04/2026 14:30
+GOIA
+
+Processo remetido pela unidade GOIA
+
+26/01/2026 18:51
+GOIA
+
+Reabertura do processo na unidade
+
+06/01/2026 10:27
+GOIA
+
+Conclusão do processo na unidade
+
+06/01/2026 09:57
+GOIA
+
+Processo recebido na unidade
+
+05/01/2026 23:25
+GOIA
+
+Processo remetido pela unidade GOIA
+
+05/01/2026 23:25
+GOIA
+
+Reabertura do processo na unidade
+
+22/12/2025 17:47
+GOIA
+
+Conclusão do processo na unidade
+
+22/12/2025 08:21
+GOIA
+
+Processo recebido na unidade
+
+19/12/2025 17:25
+GOIA
+
+Processo remetido pela unidade GOIA
+
+19/12/2025 17:25
+GOIA
+
+Reabertura do processo na unidade
+
+19/12/2025 11:56
+GOIA
+
+Conclusão do processo na unidade
+
+19/12/2025 11:45
+GOIA
+
+Reabertura do processo na unidade
+
+19/12/2025 11:07
+GOIA
+
+Conclusão do processo na unidade
+
+19/12/2025 11:07
+GOIA
+
+Alterado nível de acesso do documento 12473838 (Nota Técnica 23) para público
+
+18/12/2025 14:55
+SRA
+
+Conclusão do processo na unidade
+
+17/12/2025 18:18
+GOIA
+
+Alterada hipótese legal do documento 12473838 (Nota Técnica 23) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+17/12/2025 18:18
+GOIA
+
+Alterado nível de acesso do documento 12473838 (Nota Técnica 23) para restrito
+
+11/12/2025 14:33
+SRA
+
+Reabertura do processo na unidade
+
+11/12/2025 14:29
+GOIA
+
+Processo recebido na unidade
+
+10/12/2025 14:51
+GOIA
+
+Processo remetido pela unidade GIOS
+
+09/12/2025 10:59
+SIA
+
+Conclusão do processo na unidade
+
+09/12/2025 08:23
+GOIA
+
+Processo recebido na unidade
+
+08/12/2025 19:13
+GOIA
+
+Processo remetido pela unidade SRA
+
+08/12/2025 19:13
+SRA
+
+Processo recebido na unidade
+
+08/12/2025 16:18
+SIA
+
+Processo recebido na unidade
+
+08/12/2025 15:29
+SRA
+
+Processo remetido pela unidade GCOP
+
+08/12/2025 15:29
+SIA
+
+Processo remetido pela unidade GCOP
+
+08/12/2025 15:14
+GCOP
+
+Processo recebido na unidade
+
+08/12/2025 08:28
+GCOP
+
+Processo remetido pela unidade GTOP
+
+05/11/2025 15:19
+GTOP
+
+Processo recebido na unidade
+
+04/11/2025 16:47
+GTOP
+
+Processo remetido pela unidade GCOP
+
+04/11/2025 16:41
+GCOP
+
+Processo recebido na unidade
+
+04/11/2025 15:22
+GCOP
+
+Processo remetido pela unidade SIA
+
+04/11/2025 10:20
+SIA
+
+Processo recebido na unidade
+
+04/11/2025 10:01
+SIA
+
+Processo remetido pela unidade SRA
+
+29/10/2025 15:23
+GOIA
+
+Conclusão do processo na unidade
+
+28/10/2025 17:01
+GOIA
+
+Reabertura do processo na unidade
+
+28/10/2025 15:10
+SRA
+
+Reabertura do processo na unidade
+
+08/10/2025 11:32
+SRA
+
+Conclusão do processo na unidade
+
+04/09/2025 13:45
+GOIA
+
+Conclusão do processo na unidade
+
+04/09/2025 11:07
+GIOS
+
+Processo recebido na unidade
+
+02/09/2025 17:14
+GIOS
+
+Processo remetido pela unidade GOIA
+
+03/07/2025 17:44
+GIOS
+
+Processo recebido na unidade
+
+03/07/2025 09:05
+SRA
+
+Reabertura do processo na unidade
+
+02/07/2025 10:47
+GIOS
+
+Processo remetido pela unidade GOIA
+
+02/07/2025 10:28
+GOIA
+
+Reabertura do processo na unidade
+
+16/06/2025 14:37
+GOIA
+
+Conclusão do processo na unidade
+
+16/06/2025 14:37
+GOIA
+
+Reabertura do processo na unidade
+
+09/05/2024 17:28
+GOIA
+
+Conclusão do processo na unidade
+
+06/05/2024 16:17
+GOIA
+
+Alterado nível de acesso do documento 8555551 (Despacho) para público
+
+06/05/2024 16:17
+GOIA
+
+Reabertura do processo na unidade
+
+02/05/2023 13:38
+GOIA
+
+Conclusão do processo na unidade
+
+02/05/2023 12:04
+GOIA
+
+Alterada hipótese legal do documento 8555551 (Despacho) para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+02/05/2023 12:04
+GOIA
+
+Alterado nível de acesso do documento 8555551 (Despacho) para restrito
+
+02/05/2023 11:06
+GOIA
+
+Reabertura do processo na unidade
+
+02/05/2023 10:39
+GOIA
+
+Conclusão do processo na unidade
+
+13/04/2023 14:53
+GOIA
+
+Reabertura do processo na unidade
+
+28/12/2022 08:27
+GOIA
+
+Conclusão do processo na unidade
+
+27/12/2022 14:57
+GOIA
+
+Processo recebido na unidade
+
+27/12/2022 11:57
+GOIA
+
+Processo remetido pela unidade GOIA
+
+27/12/2022 11:57
+GOIA
+
+Reabertura do processo na unidade
+
+27/12/2022 11:46
+GOIA
+
+Conclusão do processo na unidade
+
+22/11/2022 11:11
+GOIA
+
+Processo recebido na unidade
+
+21/11/2022 17:47
+GOIA
+
+Processo remetido pela unidade SRA
+
+21/11/2022 17:38
+SRA
+
+Processo recebido na unidade
+
+21/11/2022 11:56
+GAB
+
+Conclusão do processo na unidade
+
+21/11/2022 11:56
+SRA
+
+Processo remetido pela unidade GAB
+
+18/11/2022 20:17
+GAB
+
+Disponibilizado acesso externo para SIS_SCP
+
+18/11/2022 19:24
+GAB
+
+Processo recebido na unidade
+
+18/11/2022 17:22
+GAB
+
+Processo remetido pela unidade GAB
+
+18/11/2022 17:22
+GAB
+
+Processo público gerado

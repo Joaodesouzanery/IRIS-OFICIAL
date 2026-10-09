@@ -1,0 +1,69 @@
+SEI/ANAC - 13849345 - Voto
+
+Voto
+
+PROCESSO: 00066.024821/2018-12
+
+interessado: EMBRAER S.A.
+
+RELATOR: Rui Chagas Mesquita
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, define a competência da Agência Nacional de Aviação Civil - ANAC para regular e fiscalizar os produtos aeronáuticos e a segurança da aviação civil, bem como para expedir, homologar ou reconhecer a certificação de produtos e processos aeronáuticos de uso civil, observados os padrões e normas estabelecidos (art. 8º, X e XXXIII).
+
+Por sua vez, o Regimento Interno da ANAC, aprovado pela Resolução Interna nº 10, de 27 de julho de 2026, atribui à Diretoria a competência para, em regime colegiado, analisar e decidir, em instância administrativa final, as matérias da Agência (art. 10, caput).
+
+Ainda, nos termos do art. 34 do Regimento, compete à Superintendência de Aeronavegabilidade (SAR) submeter à Diretoria propostas normativas e pareceres técnicos que tratem de questões relacionadas a aeronavegabilidade, ruído e emissões de produtos aeronáuticos.
+
+Por fim, o Regulamento Brasileiro da Aviação Civil (RBAC) nº 21, em seu parágrafo 21.16, estabelece o conceito de Condição Especial, sendo ele aplicado sempre que a ANAC considerar que a regulamentação sobre aeronavegabilidade não contém requisitos de segurança adequados ou apropriados a um determinado produto aeronáutico, face às características novas ou inusitadas do seu projeto.
+
+Pelo exposto, constata-se que a matéria em discussão é de competência da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente .
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+A presente proposta se refere ao estabelecimento de Condição Especial no âmbito de processo de certificação conduzido nos termos do RBAC nº 21, instrumento regulatório destinado a tratar características de projeto novas ou incomuns para as quais os requisitos vigentes não contenham padrões adequados e suficientes de segurança. Nessa perspectiva, a medida possui natureza eminentemente técnica e aplicação vinculada a um caso concreto de certificação, qual seja, a modificação de projeto referente à implementação da funcionalidade denominada “E2TS” na aeronave ERJ 190-400.
+
+Da instrução processual verifica-se que a Superintendência de Aeronavegabilidade (SAR) demonstrou de forma consistente que a funcionalidade proposta introduz característica de projeto inovadora cuja avaliação extrapola as premissas regulatórias subjacentes ao parágrafo 25.107 do RBAC nº 25. Em tais circunstâncias, o estabelecimento de Condição Especial encontra respaldo na seção 21.16 do RBAC nº 21, que prevê a adoção de requisitos adicionais sempre que os regulamentos de aeronavegabilidade em vigor não contenham padrões adequados para assegurar nível de segurança equivalente ao pretendido pelo sistema regulatório.
+
+A análise técnica revela que a proposta não promove flexibilização dos requisitos de segurança aplicáveis. Ao contrário, busca adaptar critérios concebidos para cenários de pilotagem manual a um contexto operacional em que a manobra de rotação da aeronave passa a ser executada por sistema automatizado, considerando, para esse fim, os desvios máximos esperados associados à precisão dos sensores e às tolerâncias do sistema. Sob essa perspectiva, os novos parágrafos propostos preservam a finalidade regulatória originalmente perseguida pelo RBAC nº 25 e mantêm o nível de segurança requerido para certificação do produto aeronáutico.
+
+Embora a aprovação da Condição Especial seja submetida à deliberação da Diretoria Colegiada, seus efeitos jurídicos são predominantemente individualizados e circunscritos ao processo de certificação em que se insere, podendo ser estendidos a outros projetos apenas mediante avaliação técnica específica e concordância do respectivo peticionário. Trata-se, portanto, de instrumento regulatório de caráter concreto, voltado ao tratamento de situação determinada e fundamentado nas particularidades técnicas da inovação apresentadas pelo requerente.
+
+Nesse contexto, entendo acertada a opção pela realização de Consulta Setorial uma vez que a matéria sob análise não possui natureza regulatória geral e abstrata, mas está vinculada à definição de requisitos especiais aplicáveis a processo de certificação específico, circunstância que recomenda a utilização dos mecanismos de participação social previstos para assuntos técnicos e de alcance delimitado. Assim, a Consulta Setorial revela-se o instrumento mais adequado para a obtenção de subsídios especializados dos agentes diretamente afetados pela medida, permitindo o aperfeiçoamento da proposta sem afastar sua natureza própria de condição especial associada à certificação aeronáutica.
+
+Registro que a Consulta Setorial nº 06/SAR/2026 foi conduzida no âmbito do Processo nº 00066.002577/2026-39 , processo instaurado especificamente para viabilizar a participação social e a coleta de subsídios técnicos relacionados à proposta de Condição Especial objeto dos presentes autos. As contribuições recebidas naquele processo foram devidamente examinadas pelas unidades técnicas competentes e serviram de fundamento para o aperfeiçoamento da redação proposta, cujos resultados foram posteriormente incorporados à versão final da Condição Especial submetida à apreciação desta Diretoria.
+
+Adicionalmente, conforme consignado pela área técnica, a presente matéria enquadra-se na hipótese prevista no art. 20 da Instrução Normativa nº 154, de 20 de março de 2020, segundo a qual não é obrigatória a realização de Análise de Impacto Regulatório (AIR) para matérias disciplinadas por Condição Especial. Assim, considerando a natureza específica do instrumento proposto e a disciplina expressamente estabelecida pela norma interna da Agência, mostra-se adequada a ratificação da dispensada da elaboração de AIR neste processo.
+
+Por fim, nos termos do art. 39, parágrafo único, da Instrução Normativa nº 154, não foram identificados aspectos jurídicos que demandassem manifestação da Procuradoria Federal junto à ANAC.
+
+Verifica-se então que a motivação adotada pelas unidades técnicas da SAR se encontra devidamente ancorada nos procedimentos estabelecidos pela ANAC, nos regulamentos de aeronavegabilidade aplicáveis e nos mecanismos específicos previstos para o tratamento de características de projeto novas ou incomuns. Não se identificam nos autos controvérsias interpretativas relevantes, dúvidas quanto à competência administrativa ou conflitos normativos.
+
+Diante desse contexto, concluo que a proposta encontra adequado respaldo técnico, observa o processo regulatório aplicável e se mostra consistente com os objetivos de preservação dos níveis de segurança exigidos para a certificação aeronáutica, razão pela qual entendo estar devidamente apta à aprovação pela Diretoria Colegiada.
+
+Consigno, na oportunidade, a necessidade de ajuste redacional pontual na minuta de Resolução constante da Proposta de Ato SEI nº 13726823 . Verifica-se que o art. 1º faz referência à modificação ao projeto de tipo do avião “ERJ 190-40”, quando, conforme os documentos técnicos que instruem os autos e a própria proposta submetida à deliberação, a designação correta da aeronave é “ERJ 190-400”. Trata-se de mero erro material, que não afeta o mérito da proposta.
+
+Registro, ainda, que a presente Condição Especial possui escopo restrito à certificação de aeronavegabilidade da funcionalidade E2TS, estabelecendo requisitos adicionais destinados à demonstração de conformidade e à manutenção de níveis equivalentes de segurança. Eventuais aspectos operacionais, de treinamento ou de aprovação operacional associados à futura introdução da funcionalidade em serviço não constituem objeto da presente deliberação e deverão observar os processos regulatórios e de certificação próprios aplicáveis à matéria.
+
+A despeito do foco na certificação de aeronavegabilidade, a inovação tecnológica associada à automação da manobra de rotação durante a decolagem representa alteração relevante na interação entre a tripulação e a aeronave em uma fase crítica do voo. Os autos demonstram que o sistema foi concebido para executar automaticamente funções tradicionalmente desempenhadas pelo piloto, cabendo à tripulação monitorar o comportamento da aeronave e atuar em situações específicas de degradação ou falha do sistema. Ainda que tais aspectos não integrem o objeto regulatório da presente deliberação, é razoável reconhecer que a futura entrada em serviço da funcionalidade poderá demandar avaliações complementares sob a perspectiva operacional.
+
+Nesse contexto, entendo ser recomendável que a introdução dessa nova funcionalidade seja acompanhada também pelas equipes responsáveis pela regulação e supervisão operacional, bem como por aquelas incumbidas dos temas relacionados ao licenciamento e à qualificação de tripulantes. Tal providência não implica reabertura das discussões técnicas de certificação ora concluídas, tampouco condiciona a aprovação da Condição Especial, mas visa assegurar que eventuais repercussões relacionadas a procedimentos operacionais, treinamento, qualificação de tripulações, gerenciamento de automação e demais requisitos afetos à operação possam ser avaliadas de maneira coordenada pela Agência, à luz dos normativos aplicáveis e da experiência que venha a ser adquirida durante a implementação da funcionalidade E2TS.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação da Condição Especial aplicável à Variabilidade de Velocidade de Rotação em Decolagens Automatizadas do avião ERJ 190-400, conforme proposto na minuta de Resolução (SEI 13726823 ) com o ajuste destacado no item 2.11 deste Voto.
+
+Considerando a inovação tecnológica apresentada pela funcionalidade, voto ainda pela determinação à Superintendência de Aeronavegabilidade (SAR) para que realize apresentação técnica da funcionalidade E2TS à Superintendência de Padrões Operacionais (SPO) e à Superintendência de Pessoal da Aviação Civil (SPL), a fim de permitir a avaliação coordenada de potenciais impactos relacionados à operação da aeronave e à qualificação de tripulantes. A medida decorre do caráter inovador da funcionalidade, cuja implementação introduz elementos inéditos de automação na condução da decolagem, e visa fortalecer a atuação integrada da Agência na análise dos reflexos da tecnologia sobre o sistema de aviação civil, contribuindo para que a sua futura introdução em serviço ocorra em consonância com os níveis de segurança operacional esperados e com as competências regulatórias de cada área técnica envolvida.
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 15/09/2026, às 16:48, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13849345 e o código CRC 136B6C6B .
+
+SEI nº 13849345

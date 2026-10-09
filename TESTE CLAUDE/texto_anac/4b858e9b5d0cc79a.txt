@@ -1,0 +1,91 @@
+SEI/ANAC - 13500773 - Voto
+
+Voto
+
+PROCESSO: 00066.005011/2023-16
+
+INTERESSADO: SUPERINTENDÊNCIA DE AERONAVEGABILIDADE (sar)
+
+RELATOR: clÁudio BESCHIZZA IANELLI
+
+DA COMPETÊNCIA DA DIRETORIA COLEGIADA
+
+A Lei nº 11.182, de 27 de setembro de 2005, conferiu à Agência Nacional de Aviação Civil (ANAC) competência para regular e fiscalizar, entre outros temas, os serviços aéreos, os produtos e os processos aeronáuticos. Essa lei estabelece, ainda, a competência da Diretoria da ANAC para exercer o poder normativo da Agência (art. 11, inciso V).
+
+O Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, estabelece no art. 35, inciso I, que compete à Superintendência de Aeronavegabilidade (SAR) submeter à Diretoria Colegiada propostas de atos normativos que versem sobre matérias relacionadas a aeronavegabilidade, ruído e emissões de produtos aeronáuticos e, em especial, sobre a certificação e aprovação de projetos e certificação de organizações de produção .
+
+Constata-se, portanto, que a deliberação sobre a matéria em discussão é atribuição da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme abordado no Relatório [1] , o presente processo trata de proposta apresentada pela Superintendência de Aeronavegabilidade (SAR) para emendas ao regulamento RBAC nº 21 intitulado "Certificação de produto e artigo aeronáuticos" e ao RBAC n° 45 que trata de "Marcas de Identificação, de Nacionalidade e de Matrícula". Em essência, a alteração normativa está relacionada a requisitos aplicáveis ao Certificado de Produto Aeronáutico Aprovado (CPAA) apresentados na Subparte K do RBAC nº 21 e ao Certificado de Produto Aeronáutico Aprovado emitido sob uma Ordem Técnica Padrão (CPAA/OTP) presentes na Subparte O do mesmo regulamento. Além disso, o processo busca implementar diversas atualizações terminológicas e incorporar aperfeiçoamentos aos citados regulamentos.
+
+A área técnica descreve nos autos que o processo normativo endereçou diferentes problemas regulatórios e propostas de melhorias que perpassam diversas seções dos regulamentos, podendo ser organizados sob 11 tópicos:
+
+possibilidade transferência dos certificados CPAA e CPAA/OTP;
+
+alteração do momento de apresentação de documentos requeridos para a obtenção de um CPAA/OTP;
+
+inclusão de critérios de elegibilidade para emissão de Certificado de Organização de Produção (COP) para manufatura de partes às quais é aplicável um CPAA ou um CPAA/OTP;
+
+adequação quanto à utilização do conceito de "fabricante" na Subparte O do RBAC n° 21;
+
+inclusão de requisitos aos detentores de CPAA e CPAA/OTP para a disponibilidade e guarda dos registros aplicáveis;
+
+adequação quanto ao uso de termos como "artigo", "produto", "parte" e "peça";
+
+necessidade de atualização de referências ao CPAA no RBAC nº 43 [2] ;
+
+ampliação do escopo de normas utilizadas para OTP abarcando padrões de desempenho europeus e canadenses, além de a ANAC poder emitir seus próprios padrões para OTP;
+
+melhorias na seção 21.17 do RBAC nº 21 sobre determinação dos requisitos aplicáveis para certificação de tipo;
+
+aperfeiçoamento de requisitos para requerimento de CPAA, CPAA/OTP e respectivos COP; e
+
+atualização na seção 21.9 quanto aos casos em que um fabricante de artigo pode apresentá-lo como adequado para instalação em produto com certificado de tipo.
+
+Inicialmente destaco a importância que os equipamentos constituídos sob um CPAA possuem dentro do sistema de aviação civil, porque permitem aumentar a disponibilidade de partes e equipamentos para os operadores, elevam a concorrência no mercado de reposição de peças e proporcionam redução aos custos de manutenção. Em situações em que os fabricantes dos equipamentos originais descontinuaram a sua produção, o conceito de CPAA se torna um mecanismo relevante para manter a operação de aeronaves durante o seu ciclo de vida, ao mesmo tempo em que preserva a segurança por meio do uso de peças que demonstraram cumprir padrões técnicos equivalentes aos quais foi submetida a peça original. De maneira análoga, os equipamentos fabricados a partir de um CPAA sob uma Ordem Técnica Padrão (CPAA/OTP) demonstraram atender a requisitos internacionalmente reconhecidos de desempenho, possibilitando seu uso em diversas aeronaves de maneira segura.
+
+Nesse contexto, a proposta da área técnica é meritória uma vez que, conforme asseverado nos autos, ela busca implementar flexibilizações ao setor, sem impactos à segurança operacional. Além disso, as alterações visam conferir clareza aos requisitos afetados, em benefício de um melhor entendimento pelo público, reduzindo eventuais dúvidas interpretativas.
+
+Em especial, sobre os tópicos anteriormente listados, faço menção a um dos principais avanços propostos, qual seja a possibilidade de transferência dos aspectos de projeto dos certificados CPAA e CPAA/OTP, ou a sua disponibilização por meio de um acordo de licenciamento, o que não é permitido pelas normas em vigor. Embora tal vedação seja justificável para os aspectos de produção sob um COP - quando há um sistema de qualidade, estrutura organizacional e procedimentos de produção que estão intrinsecamente vinculados às instalações do detentor -, não é razoável que os dados do projeto que embasam o CPAA e CPAA/OTP não possam ser transferidos, já que estão relacionados à sua propriedade intelectual. Ademais, a possibilidade de transferência é relevante na continuidade de suporte à aeronavegabilidade continuada dos produtos, na preservação da expertise técnica, bem como representa uma redução de barreiras à entrada no mercado.
+
+Quanto às demais alterações propostas, entendo que foram adequadamente justificadas pela área técnica nos autos, e compõem um conjunto de melhorias normativas aos RBAC nº 21 e 45 que conferirá clareza e consistência aos requisitos impactados, sem produzir degradação em aspectos de safety ou desarmonização relevante com requisitos similares adotados por autoridades de referência.
+
+É oportuno ressaltar que a proposta normativa foi submetida ao escrutínio da sociedade no âmbito da Consulta Pública nº 12/2025 [3] , momento em que foi oportunizada a participação da sociedade para o envio de sugestões para aperfeiçoamentos à proposta. Registro que a consulta pública foi, inclusive, realizada no idioma inglês, em plataforma específica, para possibilitar a participação de estrangeiros interessados no tema [4] . Embora as contribuições apresentadas pelo público estivessem fora do escopo do processo normativo, posteriormente à consulta pública a SAR entendeu como oportuna a incorporação de simplificações ao texto, bem como melhorias e ajustes editoriais em requisitos pontuais do RBAC nº 21, sem impacto em direitos ou obrigações estabelecidas nos mesmos. Não houve modificações à proposta de emenda ao RBAC nº 45 posteriormente à consulta pública.
+
+Além disso, em observância ao previsto no art. 39 da Instrução Normativa n° 154/2020, os autos foram submetidos ao exame jurídico da Procuradoria Federal Especializada junto à ANAC (PFE-ANAC), a qual opinou pela regularidade processual e pelo prosseguimento do feito e aprovação pela Diretoria Colegiada, ressalvadas algumas recomendações apresentadas [5] . Nesse sentido, entendo que os apontamentos da PFE-ANAC foram adequadamente endereçadas pela área técnica, resultando em atualização dos documentos pertinentes, conforme detalhamento apresentado na Nota Técnica n° 16 [6] juntada aos autos.
+
+Com respeito a eventuais desalinhamentos terminológicos que subsistirão no arcabouço normativo da Agência, em especial com respeito a definições presentes nos RBAC nº 01 e 43, dentre outros, corroboro a visão da área técnica de que tal avaliação poderá ser empreendida em momento oportuno futuro, uma vez que podem demandar uma análise de impacto que não foi realizada no presente processo. Ressalto que tais desalinhamentos já existem atualmente, e precisarão ser enfrentados, mas entendo ser possível o prosseguimento das alterações normativas em deliberação, de forma que se evite atrasar os benefícios pretendidos ao setor com as mudanças propostas ao RBAC nº 21 e 45. De todo modo, recomendo que a Superintendência de Padrões Operacionais (SPO) realize análise e os alinhamentos terminológicos necessários nos regulamentos impactados conforme os mesmos forem sendo atualizados.
+
+Considerando todo o exposto, entendo que a proposta de emendas aos RBACs nº 21 e 45 está apta a ser aprovada por esta Diretoria Colegiada, nos termos apresentados pela SAR .
+
+do voto
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação da emenda 15 ao Regulamento Brasileiro da Aviação Civil nº 21 e da emenda 05 ao Regulamento Brasileiro da Aviação Civil nº 45 , nos termos apresentados pela Superintendência de Aeronavegabilidade no documento SEI 13127574 , considerando a recomendação apresentada no item 2.9 deste Voto.
+
+É como voto.
+
+CLÁUDIO BESCHIZZA IANELLI
+
+Diretor-relator
+
+____________________________
+
+[1] SEI 13492252 .
+
+[2] Embora citado nos autos, a avaliação desse item ficou a cargo da Superintendência de Padrões Operacionais (SPO) e não é abarcado pelas alterações normativas propostas pela SAR.
+
+[3] Consulta Pública n° 12/2025 - Realizada no sítio Brasil Participativo.
+
+[4] Vide notícia no site da ANAC: https://www.gov.br/anac/en/news/2025/public-consultation-open-on-proposed-changes-to-requirements-for-the-design-production-and-identification-of-approved-aircraft-parts .
+
+[5] Parecer nº 00013/2026/FIN/PFEANAC/PGF/AGU (SEI 13114295 ), aprovado pelo Despacho de Aprovação nº 00049/2026/GAB/PFEANAC/PGF/AGU (SEI 13114301 ).
+
+[6] Nota Técnica nº 16/2026/GTNI/SAR (SEI 13124060 ).
+
+Documento assinado eletronicamente por Cláudio Beschizza Ianelli , Diretor , em 30/06/2026, às 12:38, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13500773 e o código CRC 6A1BDAE2 .
+
+SEI nº 13500773

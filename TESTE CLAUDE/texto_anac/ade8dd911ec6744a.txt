@@ -1,0 +1,81 @@
+SEI/ANAC - 13392379 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00066.010902/2025-56
+
+INTERESSADO: LUIZ DELFINO FAVERO, TRIKE ÍCAROS INDÚSTRIA AERONÁUTICA LTDA
+
+RELATOR: Rui Chagas Mesquita
+
+descrição dos fatos
+
+Trata-se de processo instaurado com vistas à análise da habilitação de pilotos para execução de voos de produção em Aeronaves Leves Esportivas (ALE) , bem como da eventual necessidade de adequação normativa ou concessão de isenção ao Regulamento Brasileiro da Aviação Civil (RBAC) nº 61.
+
+A matéria teve origem a partir de Estudo de Caso [1] elaborado no contexto de processo de enquadramento de fabricante ALE, no qual foi identificado que o piloto responsável pelos voos de ensaio detinha apenas licença de piloto desportivo, o que suscitou dúvidas quanto à conformidade regulatória.
+
+O referido estudo consolidou questionamentos acerca:
+
+da licença mínima exigida para execução de voos de produção;
+
+da existência de restrições normativas em normas ASTM ou em Instruções Suplementares da ANAC; e
+
+da realidade operacional dos fabricantes de ALE no Brasil.
+
+A Superintendência de Aeronavegabilidade (SAR) relatou [2] que, no curso de processos de certificação, foi verificada a utilização recorrente de pilotos privados ou desportivos em voos de produção, realizados mediante Autorização Especial de Voo (AEV), nos termos do RBAC nº 21.197.
+
+Nos autos, a área demandante destacou que tais voos constituem etapa inerente ao processo produtivo das aeronaves, sendo realizados em caráter operacional, o que caracteriza atividade de natureza remunerada.
+
+Nos termos do RBAC nº 61.85(a), as prerrogativas do titular de licença de piloto privado limitam-se à realização de voos não remunerados e sem qualquer tipo de aproveitamento comercial , o que motivou a consulta à Superintendência de Pessoal da Aviação Civil – SPL acerca da interpretação do dispositivo para o caso concreto.
+
+A matéria foi objeto de análise pelas áreas técnicas competentes da Agência, com destaque para a Nota Técnica nº 27/2026/GTNO-SPL/SPL [3] . As manifestações lançadas aos autos consolidaram o entendimento de que a execução de voos de produção configura atividade remunerada e com finalidade comercial , sendo, portanto, incompatível com as prerrogativas de piloto privado previstas no RBAC nº 61.85(a).
+
+Adicionalmente, foi verificado que normas técnicas aplicáveis, tais como a ASTM F3035 [4] e a Instrução Suplementar (IS) nº 21-007C , não estabelecem requisitos mínimos de qualificação de pilotos para execução de voos de ensaio ou produção, caracterizando lacuna normativa no tema.
+
+Diante disso, a área técnica passou a adotar entendimento de que a habilitação mínima exigida, nos casos em que exista previsão regulamentar, deve ser a de Piloto Comercial , em conformidade com o RBAC nº 61.
+
+Não obstante, no curso da instrução, identificou-se situação específica no segmento de aeronaves pendulares (trikes), para as quais não há previsão de licenças de piloto privado ou comercial equivalentes, sendo aplicável apenas o Certificado de Piloto Aerodesportivo (CPA) , nos termos do RBAC nº 61.
+
+Conforme relatado em documentação técnica e manifestações dos interessados, tal lacuna normativa inviabiliza, na prática, a realização de voos de produção para esse segmento, impossibilitando o processo de certificação e comercialização de aeronaves.
+
+No âmbito do Processo nº 00058.095598/2025-16 , anexo aos presentes autos, foi solicitada de Isenção de Requisito [5] pela Trike Icaros, com o objetivo de afastar a incidência do parágrafo 61.85(a)(1) do RBAC nº 61, que restringe a atuação de pilotos privados a voos não remunerados, considerando:
+
+experiência mínima de voo em comando na classe da aeronave;
+
+comprovação de familiaridade com os procedimentos operacionais de ensaio; e
+
+declaração formal do fabricante quanto à aptidão do piloto.
+
+Foi então apresentada proposta de deferimento do pleito [6] com base em análise de interesse público no cenário em questão, proporcionalidade da medida e necessidade de assegurar a continuidade das atividades industriais no setor.
+
+Adicionalmente, as áreas técnicas recomendaram a elaboração de solução normativa definitiva, mediante revisão do RBAC nº 61, a fim de contemplar expressamente a atividade de voos de produção em categorias atualmente não abrangidas pela regulamentação.
+
+Os autos foram, então, encaminhados à Diretoria Colegiada, tendo sido distribuídos a esta relatoria em virtude de sorteio [7] .
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Estudo de Caso SEI nº 12068400 .
+
+[2] Despacho SEI nº 12068404 .
+
+[3] Nota Técnica nº 27/2026//GTNO-SPL/SPL (SEI nº 13355068 ).
+
+[4] Anexo SEI nº 12068578 .
+
+[5] Solicitação de Isenção de Requisito SEI nº 12240562 .
+
+[6] Proposta de Decisão SEI nº 13357778 .
+
+[7] Certidão de Distribuição SEI nº 13360669 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 02/06/2026, às 15:01, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13392379 e o código CRC 21D02B99 .
+
+SEI nº 13392379

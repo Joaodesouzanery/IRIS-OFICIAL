@@ -1,0 +1,93 @@
+SEI/ANAC - 13732300 - Voto
+
+Voto
+
+PROCESSO: 00058.105225/2025-52
+
+INTERESSADO: SUPERINTENDENTE DE GOVERNANÇA E MEIO AMBIENTE
+
+RELATOR: ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+DA COMPETÊNCIA
+
+A Lei n.º 11.182/2005, em seus artigos 8º e 11, estabelece a competência da ANAC para adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e o fomento da aviação civil, bem como a competência da Diretoria Colegiada para exercer o poder normativo da Agência.
+
+Também, o s incisos XLIV do art. 8º da Lei nº 11.182/2005 conferem competência à ANAC para deliberar, na esfera administrativa, quanto à interpretação da legislação, sobre serviços aéreos e de infraestrutura aeronáutica e aeroportuária, inclusive casos omissos, quando não houver orientação normativa da Advocacia-Geral da União.
+
+A Resolução Interna nº 10/2026, que a prova o Regimento Interno da Agência Nacional de Aviação Civil - ANAC , estabelece no art. 10, inciso XXI, que compete à Diretoria da Agência, em regime de colegiado, deliberar, na esfera administrativa, quanto à interpretação da legislação e sobre os casos omissos.
+
+Desta forma, resta clara a competência deste Colegiado para a deliberação do presente feito.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme Relatório (SEI 13732294 ), t rata-se de proposta de alteração da Resolução nº 653, de 20 de dezembro de 2021, com o objetivo de (i) viabilizar a implementa ção de nova modalidade de credenciamento de pessoa jurídica destinada à aplicação de exames teóricos de proficiência técnica, no qual o candidato passa a pagar um valor de TFAC (Taxas de Fiscalização da Aviação Civil) r eduzido referente às atividades principais e um outro valor ( preço público) decorrente da contraprestação de um serviço acessório prestado por empresa credenciada; (ii) i ncorporar, de forma explícita, o conceito de operador simples no âmbito do RBAC 135, recentemente introduzido como alternativa regulatória mais proporcional à complexidade operacional de determinados operadores; e (iii) realizar alterações pontuais para aprimorar a redação existente, garantir maior clareza e corrigir inconsistências formais identificadas.
+
+Segundo exposto nas motivações apresentadas pela área técnica proponente, o ponto principal proposto na presente alteração normativa refere-se a viabilizar um novo modelo de negócio para aplicação de exames teóricos da ANAC, no qual o candidato passa a pagar um valor de TFAC reduzido referente às atividades principais e um outro valor ( preço público) decorrente da contraprestação de um serviço acessório prestado por um empresa credenciada;
+
+Esse modelo foi idealizado visando reduzir o peso do contrato de aplicação de provas no orçamento e mitigar o impacto de futuros contingenciamentos, resultando em duas consultas (Memorando nº 1/2025/GEPE/SPL - 11113725 e Memorando nº 2/2025/GEPE/SPL - 11687834 ) à Procuradoria Federal junto à ANAC (PF-ANAC).
+
+Por meio do Parecer n. 00010/2025/GAB/PFEANAC/PGF/AGU, a PF-ANAC, Órgão de Consultoria e Assessoramento jurídico, concluiu que:
+
+"(i) é possível a convivência da TFAC descrita no Anexo III, Cód. 2, da Lei n. 11.182/2005 com o preço público decorrente da contraprestação por uma utilidade ou serviço numa relação de cunho negocial em que está presente a voluntariedade, desde que:
+
+(i.i) não haja sobreposições de ações entre o que ficará a cargo da ANAC e o que estará sob a(s) responsabilidade(s) da(s) futura(s) credenciada(s); e
+
+(i.ii) sejam respeitadas as regras em vigor sobre a seleção do(s) interessado(s) em aplicar a prova teórica, garantido-se o respeito aos princípios da igualdade e da impessoalidade (CF/1988, artigos 5º, caput, e 37, caput);
+
+(ii) é possível que a secção intencionada avance através da cobrança da TFAC para a devida cobertura dos custos administrativos correspondentes às atividades principais e que, ao mesmo tempo, se possa atrelar uma outra cobrança, desta feita de preço público, que remunerará as atividades acessórias da(s) futura(s) credenciada(s). Consequentemente, entende-se que não se faz necessário ajuste "na definição ou na base de cálculo do fato gerador da TFAC para refletir exclusivamente as atividades de poder de polícia e regulação remanescentes sob responsabilidade da ANAC.".
+
+(iii) o novel valor da TFAC deve espelhar os custos referentes ao cipoal de atividades administrativas a ser exercida pela ANAC, bem como que este novo panorama implicará, necessariamente, na diminuição do valor atualmente cobrado, o que não significa dizer que:
+
+(iii.i) a Autarquia possa sair dos limites fixados nos campos C1, C2, C3 e C4 do Cod. 2 do Anexo III à Lei n. 11.182/2005; e
+
+(iii.ii) se possa fazer cobrança total (taxa + preço público) em valores desproporcionais em relação aos atualmente exigidos, pena de ofensa ao que aduz o art. 2º, caput e parágrafo único, inciso VI, da Lei n. 9.784/1999;
+
+...."
+
+Nesse contexto, a Superintendência de Pessoal da Aviação Civil (SPL) propõe a criação de um novo modelo, mais resiliente e financeiramente sustentável para a aplicação dos exames, por meio da criação de uma nova modalidade de credenciamento de pessoas jurídicas, prevista no RBAC nº 183, com redistribuição das responsabilidades e dos fluxos financeiros entre a Agência, os candidatos e as entidades credenciadas. O modelo permite a redução da TFAC recolhida à ANAC, mantendo a prestação do serviço de forma contínua.
+
+O detalhamento da nova solução consubstanciado na Nota Técnica 9 /2026/GTNO-SPL/SPL, constante dos autos do processo 00065.009432/2026-79 (SEI 12967773 ), p ropõe, ainda, que a implementação da solução ocorra por meio de:
+
+Atualização da Resolução nº 653, de 20 de dezembro de 2021, e da Portaria nº 8.676, de 25 de julho de 2022 , para indicar que a TFAC de código 2 terá, de forma permanente, o valor de R$ 50,00 referente à complexidade C1.
+
+Atualização do RBAC nº 183 , para incluir a possibilidade de credenciamento de organizações responsáveis pela aplicação de exames teóricos.
+
+Elaboração de nova Instrução Suplementar (IS) detalhando as condições, requisitos técnicos e critérios para o credenciamento, bem como a remuneração máxima permitida para os credenciados.
+
+Essa proposta harmoniza-se com modelos de credenciamento de pessoa jurídica já implementados pela Agência, a exemplo do aplicável às organizações responsáveis pela aplicação de exames de proficiência linguística, conforme RBAC 183.65(b) e IS nº 183-001F , podendo ampliar a capilaridade de aplicação das provas e resiliência da prestação do serviço.
+
+Além disso, a proposta busca, ainda, ajustar as TFAC códigos 10 e 14 para incorporar, de forma explícita, o conceito de operador simples no âmbito do RBAC 135, recentemente introduzido como alternativa regulatória mais proporcional à complexidade operacional de determinados operadores.
+
+A inclusão desses casos nos quadros normativos evita lacunas interpretativas e garante tratamento adequado e isonômico entre operadores padrão e simples. Adicionalmente, na TFAC de código 14, a área técnica propõe a revisão da redação com o objetivo de torná-la mais objetiva e estruturada, reduzindo ambiguidades e facilitando sua aplicação prática.
+
+Ademais, na TFAC de Código 23, também foram realizadas revisões textuais para explicitar de forma mais precisa a distinção entre processos realizados sob acordos de reconhecimento entre autoridades e aqueles conduzidos na ausência de tais instrumentos. A segregação proposta confere maior transparência e previsibilidade aos administrados, além de refletir diferenças substanciais no nível de complexidade e esforço regulatório envolvidos em cada situação.
+
+As sugestões visam uniformizar a leitura da norma, evitar interpretações equivocadas e assegurar coerência interna, sem promover mudanças conceituais ou redefinições de alcance das hipóteses de incidência.
+
+Conforme deliberado na 12ª Reunião Deliberativa Eletrônica da Diretoria Colegiada, realizada no período de 12 a 15.05.2026, foi aprovada, por unanimidade, a proposta de instauração de consulta pública acerca da alteração da Resolução nº 653, de 20 de dezembro de 2021, nos termos do Voto DIR-MNM (SEI 13261188). Em decorrência dessa deliberação, foi publicado o Aviso de Consulta Pública nº 09/2026 (SEI 13309059), no Diário Oficial da União de 19 de maio de 2026, Seção 3, página 108.
+
+Segundo informado pela área proponente (SEI 13484885 e 13503731 ) , durante o período de consulta pública houve apenas uma manifestação relacionada ao artigo primeiro. Contudo, o conteúdo apresentado não guardava pertinência com o objeto da consulta.
+
+Dessa forma, não tendo sido apresentadas contribuições capazes de ensejar alterações nas propostas inicialmente formuladas pela área técnica, os autos foram encaminhados, nos termos da Nota Técnica 12 (SEI 13503731 ), à Procuradoria Federal junto à ANAC para análise jurídica, que se manifestou por meio do Parecer 16/2026/GAB/PFEANAC/PGF/AGU (SEI 13576825 ).
+
+A Procuradoria Federal, por sua vez, não identificou óbices jurídicos à implementação da proposta, tendo formulado apenas recomendações de natureza formal. Tais recomendações foram integralmente acolhidas e incorporadas às minutas revisadas de alteração da Resolução nº 653/2021 (SEI 13578125 ) e da Portaria nº 8.676/2022 (SEI 13710581 ).
+
+Nessa oportunidade, a área proponente ressaltou que o presente processo está relacionado ao processo nº 00065.009432/2026-79 , que trata de alteração do RBAC 183 e também se encontra sob minha relatoria. Destacou, ainda, que, caso a presente proposta seja aprovada, a publicação dos atos deverá ser alinhada com a SPL, em razão da necessidade de que o novo valor da TFAC entre em vigor concomitantemente ao novo serviço de aplicação de provas, medida que, a meu ver, se mostra necessária.
+
+do voto
+
+Ante o exposto, considerando os fundamentos apresentados pela área proponente, a instrução processual realizada e a manifestação favorável da Procuradoria Federal junto à ANAC, bem como o acolhimento das recomendações de natureza formal por ela formuladas, VOTO FAVORAVELMENTE à aprovação da proposta de alteração da Resolução nº 653/2021 , nos termos da minuta revisada constante do SEI 13793614 .
+
+Na oportunidade, solicito à Assessoria Técnica (ASTEC) que observe a necessidade de alinhamento com a SPL quanto à publicação dos atos ora propostos, de forma coordenada com aqueles a serem deliberados nos autos do processo nº 00065.009432/2026-79 , a fim de assegurar que o novo valor da TFAC entre em vigor concomitantemente com a implementação do novo serviço de aplicação de provas.
+
+É como voto.
+
+ANTONIO MATHIAS NOGUEIRA MOREIRA
+
+Diretor - Relator
+
+Documento assinado eletronicamente por Antonio Mathias Nogueira Moreira , Diretor , em 08/09/2026, às 11:41, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13732300 e o código CRC 63A1389F .
+
+SEI nº 13732300

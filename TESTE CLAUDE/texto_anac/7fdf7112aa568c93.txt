@@ -1,0 +1,141 @@
+SEI/ANAC - 13882953 - Voto
+
+Voto
+
+PROCESSO: 00065.052495/2025-64
+
+RELATOR: RUI CHAGAS MESQUITA
+
+DA COMPETÊNCIA
+
+A Lei nº 11.182, de 27 de setembro de 2005, conferiu competência à Agência Nacional de Aviação Civil (ANAC) para regular e fiscalizar a formação e o treinamento de pessoal especializado, a segurança da aviação civil e a habilitação de tripulantes, reprimir infrações à legislação e aplicar as sanções cabíveis, decidir, em último grau, sobre as matérias de sua competência, e aplicar advertência, multa, suspensão ou cassação de certificados, de licenças e de autorizações (art. 8º, incisos X, XXXV, XLIII e LI).
+
+A Resolução Interna nº 10, de 27 de julho de 2026, que aprova o Regimento Interno da Anac, estabelece no caput do art. 10 que compete à Diretoria Colegiada da Agência, em regime de colegiado, analisar, discutir e decidir, em instância administrativa final, as matérias de competência da ANAC. Ainda, o inciso XXVIII do art. 10 versa sobre a competência da Diretoria Colegiada para julgar, em última instância administrativa, os recursos interpostos em face de sanções administrativas aplicadas.
+
+Por sua vez, a Resolução nº 761, de 18 de dezembro de 2024, que dispõe sobre incentivos e as providências voltados à promoção da conformidade regulatória e estabelece o rito do processo administrativo sancionador no âmbito da ANAC, estabelece, no caput do art. 52, a possibilidade de recurso à Diretoria Colegiada, em última instância administrativa, quando as decisões proferidas pela autoridade competente para julgamento implicarem sanções de cassação, suspensão ou multa em valor igual ou superior a R$ 100.000,00.
+
+Constata-se, portanto, que a matéria em discussão é de alçada da Diretoria Colegiada da ANAC, estando atendidos os requisitos de competência para a deliberação sobre o recurso administrativo interposto pelo interessado.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme exposto no Relatório de Diretoria SEI nº 13882947 , trata-se de recurso administrativo interposto pelo aeronauta Igor Novaes Barcelos, no âmbito de processo sancionador que versa sobre a imputação da prática de inserção de dados adulterados na Caderneta Individual de Voo Digital (CIV Digital) do citado aeronauta, totalizando 240 horas de voo sem respaldo no respectivo Diário de Bordo da aeronave PT-IPX, no período de 15/01/2024 a 31/05/2024. Ademais, o piloto teria utilizado essas horas de voo como comprovação do cumprimento de requisito regulamentar previsto no RBAC nº 61 (experiência de voo) no âmbito do processo de concessão da habilitação de Piloto Agrícola Avião (PAGA) deferido pela ANAC em 11/09/2024.
+
+Primeiramente, julgo imperativo destacar a gravidade da conduta aqui analisada. A utilização de experiência de voo adulterada coloca em risco não apenas o aeronauta, mas também todos os atores envolvidos na operação e, no limite, o sistema brasileiro de aviação civil. Ao estabelecer o critério de experiência mínima de voo para determinada habilitação, a Autoridade de Aviação Civil estuda meticulosamente a operação envolvida e as habilidades necessárias para ela, incluindo a expertise que é obtida ao longo do tempo realizando voos na condição de piloto.
+
+Conforme amplamente evidenciado nos autos, o interessado admitiu a infração e sua gravidade desde o primeiro momento, antes mesmo da instauração do presente Processo Administrativo Sancionador (PAS). Tal movimento, embora seja o mínimo esperado do agente infrator, demonstra boa-fé e proporciona celeridade ao andamento do processo, sendo razoável que seja considerado na análise e, inclusive, adotado como circunstância atenuante para fins de dosimetria da sanção a ser aplicada.
+
+Por outro lado, o fato de o recorrente ter refeito todo o processo de obtenção de nova habilitação PAGA não afasta a apuração sancionatória pretérita. O Ofício nº 265/2025/CMCP-INT/GTQC/SPL-ANAC (SEI nº 11589392 , datado de 29/05/2025), ato de notificação ao aeronauta sobre a anulação da habilitação PAGA, menciona expressamente em seu item 20 as possíveis consequências decorrentes do PAS que viria a ser instaurado, inclusive quanto a certificados e habilitações obtidos após o término daquela apuração administrativa. Ou seja, o aeronauta foi formalmente notificado acerca da possibilidade de eventual sanção futura recair sobre novas licenças e habilitações porventura obtidas. Ao iniciar novo processo de habilitação, o interessado o fez por sua conta e risco, não cabendo argumentação quanto a contradições entre as atividades certificadora e sancionatória da ANAC.
+
+A apuração sancionatória tem o condão de aplicar medida compatível com a infração cometida, com fins repressivos e pedagógicos, visando desincentivar comportamentos à margem da regulamentação. Caso seja afastada a penalidade de cassação da habilitação PAGA, obtida por meio de comprovação de experiência de voo inexistente, simplesmente por ela já ter sido anulada – ato administrativo vinculado da Administração, dada a ausência dos critérios necessários à sua obtenção –, a impunidade estaria concretizada e os fins supracitados restariam inócuos.
+
+Como dispõe o § 4º do art. 27 da Resolução nº 761, de 18/12/2024, a sanção de cassação tem efeitos por 2 anos a partir do trânsito em julgado da decisão administrativa. Como já destacado, no cenário das licenças e habilitações regidas pelo RBAC nº 61, a penalidade guarda relação direta com a relevância do elemento idoneidade profissional no sistema de aviação civil, amplamente dependente de um conjunto de condutas e procedimentos coordenados que garantem a segurança dos diversos pilotos que operam equipamentos compartilhados, dos usuários e de terceiros em solo não participantes da operação. Desse modo, não se trata de medida isolada focada em uma habilitação concedida numa data específica e com prazo de validade delimitado. Trata-se de uma medida pedagógica prescrita na regulamentação, que tem efeitos de impedimento da retomada de uma atividade regulada por um período de tempo com foco no desestímulo a que novas condutas semelhantes sejam observadas.
+
+Assim, caso seja confirmada na presente deliberação colegiada a aplicação da cassação, o interessado perderá a atual habilitação e ficará impedido de obter habilitação pelo período de 2 anos, independentemente de ter sido obtida habilitação mais recente ao longo do curso do processo sancionador. Trata-se de efeito direto da cassação punitiva aplicada sobre o piloto, com fundamento em conduta de lançamento de informações falsas em sistema de controle da Administração Pública.
+
+Apesar de realçar anteriormente a gravidade da conduta apurada e não acolher o argumento do aeronauta com relação à perda de objeto da cassação, observo que não há elementos nos autos que demonstrem ilicitude na obtenção das demais licenças e habilitações de que dispõe o piloto. Nessa linha, analogicamente às recentes decisões proferidas pela Diretoria Colegiada, como as integrantes dos Processos nº 00065.008270/2025-71 (Voto SEI nº 12034583 ) e 00065.020924/2025-34 (Voto SEI nº 12109210 ), e com esteio no princípio da proporcionalidade, entendo que o patamar adequado e suficiente da sanção no presente contexto seja a aplicação da cassação (com seus efeitos impeditivos por 2 anos) para a habilitação PAGA e da suspensão punitiva para as demais licenças e habilitações do recorrente.
+
+O cálculo da duração da suspensão punitiva deve observar a norma vigente à época, a Resolução nº 472/2018, salvo se a a plicação da Resolução nº 761/2024 implicar a cominação de penalidade menos gravosa. Assim, considerando a incidência de duas circunstâncias atenuantes e nenhuma agravante à luz das duas Resoluções citadas, em linha com a interpretação adotada durante todo o PAS, chega-se ao seguinte comparativo:
+
+Resolução nº 472/2018
+
+Resolução nº 761/2024
+
+Valor-base
+
+60 dias
+
+60 dias
+
+Atenuante 1
+
+o reconhecimento da prática da infração [art. 36, inciso I]: redução de 20 dias [art. 37]
+
+atenuante de reconhecimento expresso e inequívoco da prática da infração: - 40% (quarenta por cento) [art. 33, inciso I]
+
+Atenuante 2
+
+a inexistência de aplicação definitiva de sanções nos 12 (doze) meses anteriores à data do cometimento da infração em julgamento [art. 36, inciso III]: redução de 20 dias [art. 37]
+
+inexistência de sanção aplicada ao regulado em decisão que tenha se tornado definitiva no período de um ano anterior à data do cometimento da infração em julgamento: - 20% (vinte por cento) [art. 33, inciso IV]
+
+Agravante
+
+não há, nos termos do § 2º do art. 36
+
+não há, nos termos do art. 34
+
+Cálculo
+
+60 dias - 40 dias
+
+60 dias - 60%
+
+Período da suspensão punitiva
+
+20 dias
+
+24 dias
+
+A esse respeito, a norma mais benéfica ao interessado é, portanto, a Resolução nº 472/2018. Nas instâncias de origem, contudo, foi realizado cálculo comparativo da sanção pecuniária, demonstrando-se que a aplicação da Resolução nº 761/2024 resulta em menor valor de multa ao interessado. No caso sob julgamento, a nova regulamentação apresenta, assim, efeito misto, beneficiando em parte o recorrente e, em outra parte, agravando a sua condição.
+
+Tal conflito já fora detectado pela Agência e discutido no âmbito do Comitê Técnico de Instâncias Julgadoras (CTIJ) e do Projeto Prioritário de Regulação Responsiva (PPRR), havendo a formalização de uma proposta de interpretação por meio da Nota Técnica nº 7/2026/PPRR/GT-ESPRO/GAPI/SGM (SEI nº 13506335 ), parte integrante do Processo nº 00058.051312/2026-63 . Em síntese, a interpretação sugerida para o cenário em tela é de aplicar exclusivamente a norma vigente à época dos fatos, dada a inviabilidade de avaliação comparativa de dosimetria em função da divergência de variações, fato que impediria a afirmação categórica de que a nova norma resultaria em penalidade menos gravosa. Assim, diante da impossibilidade de combinação das normas, o que criaria indevidamente uma terceira regra administrativa, foi considerada administrativa e juridicamente mais adequada, segura e razoável a aplicação da norma vigente à época dos fatos. Com ela, o agente regulado não se sujeita a regra que ainda não era de seu conhecimento e que acabaria por implicar agravamento parcial da sanção aplicável.
+
+Em que pese a ausência de deliberação final acerca do referenciado Processo, observo que a matéria já foi objeto de avaliação institucional prévia e está alinhada a entendimento semelhante fixado no Processo nº 00058.055818/2025-61 , também envolvendo a regra de transição do art. 88 da Resolução nº 761/2024 . Assim, considerando o embasamento da proposta interpretativa e a segurança jurídica por ela proporcionada, entendo adequada a aplicação da norma vigente à época da inserção de dados adulterados na CIV Digital do aeronauta Igor Novaes Barcelos para o cálculo das sanções, incidindo exclusivamente a Resolução nº 472/2018 à dosimetria.
+
+Diante disso, para fins de cálculo da sanção pecuniária, ao utilizar a dosimetria presente na Resolução nº 472/2018, o cálculo detalhado nos itens 64 e 65 da Decisão de Primeira Instância nº 35/2026/Autos-CJDE-SPL/GTAS-SPL/SPL (SEI nº 12984861 ) mostra-se adequado e será utilizado no âmbito deste Voto.
+
+64. Sabendo que a multa corresponde à linha de código FDI constante no Anexo I da Resolução ANAC 472/2018, de ementa “ Fornecimento de dados, informações ou estatísticas inexatas ou adulteradas ;”, com valor mínimo (R$ 1.600,00); médio (R$ 2.800,00) e máximo (R$ 4.000,00) e tendo em vista a necessidade de aplicação da dosimetria de decaimento exponencial idêntica à prevista pelo Art. 37-B da Resolução 472/2018 (abaixo transcrita), buscando-se dar maior proporcionalidade, razoabilidade às infrações envolvendo lançamento de horas indevidas em CIV, com base na determinação da Diretoria Colegiada acatada por esta Superintendência, necessário considerar as circunstâncias agravantes e atenuantes para o cálculo da multa (Art. 36 da Res. ANAC 472/2018).
+
+Art. 37-B. Caracterizada a natureza continuada das condutas infracionais, nos termos do art. 37-A desta Resolução, será aplicada multa, considerando-se o patamar médio da tabela constante na Resolução específica vigente à época da infração, calculada de acordo com a seguinte fórmula:
+
+Valor total da multa = valor da multa unitária * quantidade de ocorrências 1/f
+
+Em que a variável “f” assume um dos seguintes valores:
+
+f1 = 1,85 quando não verificada qualquer circunstância descrita nos incisos I a V do § 2º do art. 36 desta Resolução.
+
+f2 = 1,5 quando verificada ao menos uma das circunstâncias descrita nos incisos I a V do § 2º do art. 36 desta Resolução.
+
+f3 = 1,15 quando verificadas, cumulativamente, as circunstâncias descritas no inciso III e no inciso IV do § 2º do art. 36 desta Resolução.
+
+§ 1ºA verificação de cada circunstância descrita nos incisos I a III do § 1º do art. 36 desta Resolução ensejará o acréscimo de 0,15 ao valor da variável “f” a ser aplicada.
+
+§ 2º Valores diferentes de f1, f2 e f3 poderão ser definidos em Resolução específica que disciplina a matéria objeto da autuação.
+
+a) Quanto às atenuantes:
+
+Está presente a circunstância atenuante estabelecida no inciso I do § 1º ( o reconhecimento da prática da infração; )
+
+Não está presente a circunstância atenuante estabelecida no inciso II do § 1º ( a adoção voluntária de providências eficazes para evitar ou amenizar as consequências da infração antes de proferida a decisão );
+
+Está presente a circunstância atenuante estabelecida no inciso III do § 1º ( a inexistência de aplicação definitiva de sanções nos 12 (doze) meses anteriores à data do cometimento da infração em julgamento ) - consulta de precedentes no sistema SEI.
+
+b) Quanto às agravantes:
+
+Não está presente a circunstância agravante estabelecida no inciso I do § 2º ( a reincidência; );
+
+Não está presente a circunstância agravante estabelecida no inciso II do § 2º ( a recusa em adotar medidas para reparação dos efeitos da infração );
+
+Não está presente a circunstância agravante estabelecida no inciso III do § 2º ( a obtenção, para si ou para outrem, de vantagens resultantes da infração; ) - Súmula Administrativa nº 002/ANAC/2019;
+
+Não está presente a circunstância agravante estabelecida no inciso IV do § 2º ( a exposição ao risco da integridade física de pessoas ou da segurança de voo; );
+
+Não está presente a circunstância agravante estabelecida no inciso V do § 2º ( a destruição de bens públicos; );
+
+65. Desta forma, para os registros em CIV, utilizando-se da fórmula " valor da multa unitária * quantidade de ocorrências 1/f ", aplicando ainda o valor médio da multa, a variável "f" igual à 2,15 (dois vírgula quinze) e " quantidade de ocorrências " igual à 80 (240 horas dividido por 3, arredondado para cima), temos o valor da multa resultante: R$ 21.493,95 .
+
+DO VOTO
+
+Ante o exposto, considerando os elementos constantes dos autos, VOTO pelo conhecimento do recurso administrativo interposto por Igor Novaes Barcelos e, no mérito, PELO PROVIMENTO PARCIAL , aplicando sanção de multa no valor de R$ 21.493,95 (vinte e um mil, quatrocentos e noventa e três reais e noventa e cinco centavos) , cumulada com sanção restritiva de direitos, na forma de suspensão punitiva de todas as licenças do interessado e habilitações a elas averbadas pelo prazo de 20 (vinte) dias e cassação da habilitação de Piloto Agrícola Avião (PAGA) .
+
+É como voto.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 22/09/2026, às 17:08, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13882953 e o código CRC 384B61BE .
+
+SEI nº 13882953

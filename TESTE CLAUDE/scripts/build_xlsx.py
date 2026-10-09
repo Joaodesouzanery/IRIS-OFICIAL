@@ -479,6 +479,8 @@ def _tipo_pend(sit):
 FALTAM = []   # [Agência, Tipo, Documento ou dado esperado, Data, Como sabemos que existe, URL da fonte, Situação, Votos afetados, Visto pela 1ª vez, Verificado em, Como resolver]
 for pe in P:
     ag, item, dt_, sit, existe, motivo, como = pe[:7]; url = pe[7] if len(pe) > 7 and pe[7] else (URL_FONTE['ANVISA|CD'] if ag == 'ANVISA' and item.startswith('CD ') else URL_FONTE.get(ag, ''))
+    _us = re.findall(r'https?://[^\s|]+', str(url))   # célula com várias URLs: a 1ª fica na coluna URL, as demais vão para 'como'
+    if len(_us) > 1: como = f'{como} · outras URLs: ' + ' · '.join(_us[1:]); url = _us[0]
     k = '|'.join(pe[:2] + (pe[3],)); h_ = hist.get(k, {})
     afet = 'nenhum ainda (reunião futura)' if sit.lower().startswith('futura') else ('todos os diretores × itens da reunião/circuito' if _tipo_pend(sit) in ('Documento não publicado', 'Bloqueado pela fonte') else 'ver detalhe')
     FALTAM.append([ag, _tipo_pend(sit), f'{item} — {sit}', dt_ or '', f'{existe}; {motivo}', url, 'ABERTA', afet, h_.get('primeira_vez', hoje_s), hoje_s, como])

@@ -1,0 +1,73 @@
+SEI/ANAC - 12987145 - Voto
+
+Voto
+
+PROCESSO: 00066.021549/2019-91
+
+INTERESSADO: SUPERINTENDÊNCIA DE AERONAVEGABILIDADE (sar)
+
+RELATORA: mariana olivieri caixeta altoé
+
+da competência
+
+A Lei nº 11.182, de 27 de setembro de 2005, conferiu à Agência Nacional de Aviação Civil – ANAC competência para regular e fiscalizar, dentre outros temas, os serviços aéreos, os produtos e processos aeronáuticos, as emissões de poluentes e o ruído aeronáutico (art. 8º, inciso X). Segundo o mesmo diploma legal, compete à Diretoria exercer o poder normativo da Agência (art. 11, inciso V) .
+
+O Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, dispõe, em seu art. 35, inciso I, que compete à Superintendência de Aeronavegabilidade (SAR) submeter à Diretoria Colegiada projetos de atos normativos sobre matérias relacionadas à aeronavegabilidade de produtos aeronáuticos.
+
+Constata-se, portanto, que a deliberação sobre a matéria em discussão é atribuição da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme abordado no Relatório [1] , o presente processo objetiva incorporar alterações às seções 21.3 e 21.99 do RBAC nº 21, aperfeiçoando requisitos que tratam do sistema de comunicação de falhas, maus funcionamentos e defeitos em produto aeronáutico aprovado e que tratam das modificações obrigatórias visando corrigir condições inseguras. De maneira complementar, propõe-se compatibilizar dispositivos da Resolução n° 714, de 26 de abril de 2023, para manter coerência regulatória entre os normativos.
+
+De partida, é importante reconhecer a relevância da seção 21.3 do RBAC n° 21, uma vez que ela se constitui em um dos principais mecanismos utilizados pela ANAC para detectar condições inseguras em aeronaves, motores, hélices e componentes aprovados após a sua entrada em serviço. O regulamento requer que os detentores de Certificado de Tipo (CT), de Certificado Suplementar de Tipo (CST), de um certificado de produto aeronáutico aprovado (CPAA) ou, ainda, o licenciado de um certificado de tipo reportem determinadas falhas, maus funcionamentos e defeitos à Agência. Essas comunicações permitem que a ANAC identifique problemas de segurança sistêmicos e decida se ações corretivas são necessárias.
+
+Por sua vez, a seção 21.99 do RBAC n° 21 estabelece a base regulatória para que a ANAC exija que os detentores de aprovações de projeto submetam à Agência, para aprovação, modificações apropriadas ao projeto de tipo para corrigir condições inseguras, bem como divulgue aos operadores os dados descritivos para incorporação das modificações nos produtos envolvidos.
+
+Conforme pontuado nos autos pela Superintendência de Aeronavegabilidade (SAR), as citadas seções do RBAC nº 21 têm a sua origem no correspondente regulamento part 21 da Federal Aviation Administration - FAA, conforme harmonização historicamente adotada pela autoridade de aviação civil brasileira. Contudo, a área técnica salienta que foram identificadas limitações nos atuais requisitos do RBAC n° 21 que comprometem a eficácia da atuação da ANAC na gestão de condições inseguras dos produtos aeronáuticos.
+
+É relevante destacar que a busca por solução aos problemas apontados envolveu a indústria através do estabelecimento pela SAR de um Grupo de Estudos Misto (GEM), que contou com a participação ativa de empresas e associação do setor. Por isso parabenizo a iniciativa da área técnica na construção colaborativa de uma alternativa regulatória juntamente com as entidades impactadas e seus representantes, o que é fundamental no processo de definição de soluções normativas, pois permite que a regulamentação seja elaborada com base na experiência prática dos atores envolvidos na atividade regulada. Esse diálogo contribui para que as normas sejam tecnicamente mais robustas e de implementação factível, ao mesmo tempo em que preservam os objetivos de segurança, eficiência e interesse público que orientam a atuação regulatória.
+
+Com respeito à temática em discussão, corroboro a visão da área técnica de que o modelo regulatório presente na seção 21.3 do RBAC n° 21 - em que a comunicação de condições inseguras é baseada em uma lista exaustiva de 13 ocorrências - limita a eficácia do sistema de reportes de segurança. Como apenas os eventos explicitamente listados estão sujeitos à notificação mandatória pelos detentores de aprovação de projeto ou produção, ocorrências relevantes para a segurança que não se enquadrem nas categorias predefinidas podem não ser relatadas de maneira oportuna ou sistemática, mesmo que indiquem problemas emergentes de confiabilidade ou de projeto. Essa estrutura pode criar desafios de interpretação, em que as entidades reguladas precisam determinar se um evento se enquadra em uma das categorias listadas, o que pode levar a práticas de notificação inconsistentes entre os regulados. Além disso, uma lista exaustiva pode reduzir a sensibilidade do sistema a modos de falha novos ou imprevistos, principalmente à medida que os sistemas de aeronaves evoluem e se tornam mais complexos. Não é demais lembrar que a listagem apresentada no part 21, que é a base para a lista presente no normativo brasileiro, foi adotada no início da década de 1970 pela FAA, não tendo sido atualizada desde então para considerar as evoluções ocorridas nos produtos aeronáuticos.
+
+Assim, entendo que é positiva a proposta da área técnica quanto à alteração da seção 21.3 do RBAC nº 21, tornando o sistema de reportes baseado não mais em uma lista exaustiva, mas em processo robusto para determinar a existência de uma condição insegura e a sua comunicação à Agência. Também entendo que as modificações propostas na seção 21.99 tornarão mais claro o requisito afeto a modificações de projeto de tipo necessárias para correção de condições inseguras, e mais alinhado à dinâmica processual que já ocorre atualmente.
+
+É oportuno ressaltar que a proposta normativa foi submetida ao escrutínio da sociedade no âmbito da Consulta Pública nº 12/2024 [2] , tendo coletado contribuições que geraram aperfeiçoamentos à proposta. Em especial, saliento que, como fruto da consulta, verificou-se como salutar que as entidades detentoras de aprovação de projeto e produção enviassem também à ANAC comunicação quanto aos perigos identificados no âmbito do Sistema de Gerenciamento de Segurança Operacional (SGSO) que possam resultar em uma condição insegura em um produto. Embora o SGSO esteja ainda em fase de implementação nessas entidades [3] , quando tal adequação estiver concluída, haverá benefícios na coleta dessas informações, uma vez que contribuirão na identificação antecipada de potenciais condições inseguras.
+
+No que tange às alterações normativas propostas à Resolução n° 714/2023, manifesto concordância com a alternativa apresentada pela SAR. Entendo que a área técnica encontrou o equilíbrio normativo adequado pois, ao mesmo tempo em que preserva o propósito da Resolução nº 714/2023 como normativo que unifica os reportes mandatórios dos regulados, mantém no RBAC n° 21 o detalhamento quanto a especificidades para o envio das informações de segurança operacional.
+
+Quanto à proposta normativa, registro que foi identificada a necessidade de pequeno ajuste redacional na seção 21.4 do RBAC n° 21, uma vez que há menção nessa seção ao parágrafo 21.3(c) que está sendo revogado na proposta em aprovação. Assim, proponho emenda ao parágrafo 21.4(a)(5) para que a referência seja feita à seção 21.3, de maneira que se mantém o objetivo original do requisito. Ressalto que a proposta aqui apresentada foi alinhada previamente com a área técnica:
+
+21.4 Requisitos para comunicação de ocorrências em operação prolongada (ETOPS)
+
+(a)
+
+(5) O detentor do certificado de tipo deve identificar as fontes e o conteúdo dos dados que serão usados para seu sistema. Os dados devem ser adequados para avaliar a causa específica de qualquer problema em serviço que tenha que ser comunicado de acordo com esta seção ou como requerido pelo parágrafo 21.3(c) pela seção 21.3 e que possa afetar a segurança do ETOPS.
+
+Por fim, considerando que, com a emenda ao RBAC n° 21 o sistema de reportes dos detentores de aprovação de projeto e produção passará a ser baseado, não mais em uma lista definida de eventos, mas em um processo conduzido pelo regulado, reforço a importância da emissão tempestiva e adequada divulgação pela área técnica da Instrução Suplementar [4] que conterá os critérios que nortearão a determinação de condições inseguras no ambiente de projeto e produção.
+
+do voto
+
+Ante o exposto, VOTO FAVORAVELMENTE à aprovação de emenda ao Regulamento Brasileiro da Aviação Civil nº 21 e à Resolução n° 714, de 26 de abril de 2023 , referentes à alterações nos requisitos relativos a comunicações de falhas, mau funcionamento e defeitos e alterações mandatórias de projeto, nos termos apresentados pela Superintendência de Aeronavegabilidade no documento SEI 12529563 , considerando a alteração adicional proposta no item 2.10 deste Voto.
+
+É como voto.
+
+MARIANA OLIVIERI CAIXETA ALTOÉ
+
+Diretora
+
+____________________________
+
+[1] SEI 12948951 .
+
+[2] Consulta Pública n° 12/2024 realizada no site Participa+ Brasil .
+
+[3] Conforme prazos previstos na seção 21.10a-I do RBAC nº 21.
+
+[4] IS n° 21.3-001A cujo desenvolvimento consta no processo SEI 00066.010494/2023-71 .
+
+Documento assinado eletronicamente por Mariana Olivieri Caixeta Altoé , Diretora Substituta , em 02/04/2026, às 17:47, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12987145 e o código CRC 54EB83CF .
+
+SEI nº 12987145

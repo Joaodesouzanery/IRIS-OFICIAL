@@ -1,0 +1,65 @@
+SEI/ANAC - 13767696 - Voto
+
+Voto
+
+PROCESSO: 00058.050137/2026-97
+
+INTERESSADO: SUPERINTENDÊNCIA DE GOVERNANÇA E MEIO AMBIENTE (SGM)
+
+RELATOR: CLAUDIO BESCHIZZA IANELLI
+
+DA COMPETÊNCIA
+
+De acordo com o artigo 8º da Lei nº 11.182, de 27 de setembro de 2005, cabe à ANAC adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e fomento da aviação civil, da infraestrutura aeronáutica e aeroportuária do país, competindo-lhe, entre outros aspectos, regular e fiscalizar os serviços aéreos, os produtos e processos aeronáuticos, as emissões de poluentes, a movimentação de passageiros e carga e as demais atividades de aviação civil. Especificamente à Diretoria da ANAC, conforme artigo 11, inciso V, compete exercer o poder normativo da Agência.
+
+Por seu turno, a Lei nº 14.993, de 8 de outubro de 2024, que instituiu o Programa Nacional de Combustível Sustentável de Aviação (ProBioQAV), previu também que cabe à ANAC estabelecer a metodologia de cálculo de verificação da redução de emissões associadas ao uso de combustível sustentável de aviação (SAF) e de outros meios alternativos, além de fiscalizar o cumprimento das obrigações previstas aos operadores aéreos nos termos do artigo 10 da referida Lei, notadamente a obrigação de reduzir as emissões de gases de efeito estufa (GEE) em suas operações domésticas por meio do uso de SAF, conforme percentuais mínimos legais de redução previstos para cada ano.
+
+Ao regulamentar o ProBioQAV, de que trata a Lei nº 14.993, de 2024, o Decreto nº 13.094, de 12 de agosto de 2026, atribuiu à ANAC a obrigação de editar, no âmbito de suas competências, os atos normativos necessários para sua regulamentação até 18 de dezembro de 2026, contexto em que se incluem, a título de exemplo, a definição da metodologia de cálculo para a verificação da redução de emissões associadas ao uso de SAF e ao uso de outros meios alternativos; os critérios de dispensa, total ou parcial, do cumprimento da meta regulatória; bem como as providências administrativas decorrentes do descumprimento das obrigações pelos operadores aéreos.
+
+O Regimento Interno da ANAC, aprovado pela Resolução Interna nº 10, de 27 de julho de 2026, através de seu artigo 39, inciso XXV, prevê que compete à Superintendência de Governança e Meio Ambiente (SGM) acompanhar, coordenar e propor, em articulação com as demais unidades organizacionais da ANAC afetas ao tema, a elaboração de atos normativos, medidas, estudos e ações que visem a implementação das recomendações da OACI relacionadas ao meio ambiente e de outros órgãos nacionais ou internacionais, respeitadas as competências finalísticas das demais unidades organizacionais da ANAC.
+
+Além disso, a Lei nº 13.848, de 25 de junho de 2019, através de seu artigo 9º, estabelece que serão objeto de consulta pública, previamente à tomada de decisão pela Diretoria Colegiada, as minutas e as propostas de alteração de atos normativos de interesse geral dos agentes econômicos, consumidores ou usuários dos serviços prestados. Nesse mesmo sentido, a Instrução Normativa (IN) nº 154, de 20 de março de 2020, em seu artigo 31, determina que a realização de consulta pública seja previamente deliberada pela Diretoria Colegiada, observados os procedimentos para as reuniões de Diretoria da ANAC.
+
+Constata-se, portanto, que a matéria em discussão é de competência da Diretoria Colegiada da ANAC e foi corretamente encaminhada pela área técnica competente.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme já exposto no relatório, trata-se de proposta de instauração de consulta pública sobre proposta de Resolução que regulamenta o monitoramento, o reporte, a verificação (MRV) e a fiscalização do cumprimento da meta regulatória anual de redução de emissões de dióxido de carbono (CO₂) relativas às operações aéreas domésticas, no âmbito do Programa Nacional de Combustíveis Sustentáveis de Aviação – ProBioQAV, instituído pela Lei nº 14.993, de 8 de outubro de 2024, que foi recentemente regulamentada pelo Decreto nº 13.094, de 12 de agosto de 2026 (SEI 13729597 ).
+
+Em síntese, a proposta normativa busca disciplinar o fluxo das obrigações administrativas a serem cumpridas pelos operadores aéreos e prazos regulatórios; a forma de validação das informações reportadas, baseada na submissão de informações pelos operadores aéreos e posterior análise pela ANAC; a estruturação das informações necessárias à demonstração e comprovação do cumprimento do mandato legal, através do Plano de Monitoramento das Emissões (PME) e do Relatório de Emissões (RE); a metodologia de aplicação de sanções administrativas; a definição da quantidade de emissões anuais para fins de dispensa de cumprimento do mandato; e a comprovação do cumprimento por Certificados de Sustentabilidade de SAF (CS-SAF) ou por meios alternativos.
+
+A título de exemplo de obrigações administrativas atribuídas aos operadores aéreos, cabe destacar a submissão do PME até 31 de outubro do ano-base, para análise e aprovação por parte da ANAC; a aposentadoria dos CS-SAF até 31 de janeiro do ano subsequente ao ano-base, de forma a cumprir a meta regulatória anual; e a submissão do Relatório de Emissões (RE), que é o documento pelo qual os operadores aéreos consolidam as informações relativas às suas emissões e às reduções obtidas mediante utilização de SAF ou outros meios alternativos. Por sua vez, o PME tem por finalidade descrever previamente o método de monitoramento, os procedimentos de coleta e consolidação de dados, os controles internos de qualidade e os mecanismos de tratamento de lacunas de informação.
+
+Com base em Análise de Impacto Regulatório, assim como em discussões no âmbito do fórum multissetorial Conexão SAF, a área técnica estabeleceu que a proposta somente se aplica ao operador aéreo que emitir, em um ano-calendário, quantidade igual ou superior a 10.000 (dez mil) toneladas de CO₂ em operações aéreas domésticas. Isso permite concentrar a obrigação em apenas 19% (dezenove por cento) dos operadores aéreos regulares e não regulares operando rotas domésticas no país, que correspondem a quase a totalidade das emissões, isto é, 99% (noventa e nove por cento) em estimativas conduzidas pela área técnica, mantendo-se cobertura ambiental elevada e evitando impor custos regulatórios desproporcionais a operadores de menor porte.
+
+No que concerne à metodologia de aplicação de sanções administrativas no caso descumprimento de obrigações, adotou-se uma calibragem que deve observar três princípios fundamentais: (i) proporcionalidade entre infração e penalidade; (ii) caráter dissuasório suficiente para evitar comportamentos oportunistas; e (iii) preservação da obrigação material de cumprimento das metas regulatórias anuais. Da AIR sobressaiu a proposta de adoção do modelo de multa variável por tonelada de CO₂ não reduzida, em proporção correspondente à fração não cumprida da meta regulatória anual, e adicionando a manutenção da obrigação material a ser cumprida no ciclo imediatamente posterior ao ano-calendário no qual se deu o não cumprimento, na mesma proporção não cumprida. A ideia é reduzir o risco de que a sanção aplicada seja percebida como alternativa economicamente viável ao cumprimento da obrigação, mantendo-se o incentivo à transição energética no setor aéreo brasileiro.
+
+É importante mencionar que as metas obrigatórias de redução de emissões aplicáveis às operações aéreas domésticas passam a vigorar a partir de 1º de janeiro de 2027, com percentual mínimo de redução de 1% no ano-calendário de 2027. Assim, em virtude da proximidade do início da vigência do mandato legal, da necessidade de preparação e ajustes nos processos internos dos operadores aéreos, bem como da necessidade de desenvolvimento de mecanismos operacionais e comerciais para viabilizar o mercado de SAF e de CS-SAF por parte dos agentes envolvidos na cadeia de produção e comercialização, a área técnica propôs que, especificamente para o ano de 2026, o prazo para submissão dos PME seja estendido até o dia 15 de dezembro de 2026, o que ficou estabelecido nas disposições transitórias da proposta.
+
+Ademais, a Lei nº 13.848, de 25 de junho de 2019, estabelece que “o período de consulta pública terá início após a publicação do respectivo despacho ou aviso de abertura no Diário Oficial da União e no sítio da agência na internet, e terá duração mínima de 45 (quarenta e cinco) dias, ressalvado caso excepcional de urgência e relevância, devidamente motivado”. Pelas razões já expostas, e em função do prazo exíguo para a efetiva ação dos entes regulados no cumprimento das disposições da Lei 14.993, de 2024, a SGM recomendou período reduzido de consulta pública, de 30 (trinta) dias (SEI 13731385 ) – o que considero suficiente para atender as expectativas do setor regulado, que já teve participação massiva no âmbito da iniciativa Conexão SAF, conforme esclarecido pela área técnica (SEI 13729371 ):
+
+4.1.28 A iniciativa Conexão SAF desempenhou papel relevante neste processo de construção regulatória. Trata-se de fórum multissetorial criado pela Anac e a ANP, com apoio dos respectivos ministérios, com o objetivo de reunir representantes do setor aéreo, da indústria de combustíveis, da academia e de órgãos governamentais para discutir os desafios associados à implementação do SAF no Brasil .
+
+4.1.29 Durante aproximadamente dezoito meses de discussões, foram realizados diversos encontros técnicos dos grupos de trabalho estruturados na iniciativa Conexão SAF, com participação de representantes do setor aéreo, da cadeia de combustíveis, de associações setoriais, de órgãos públicos, da academia e de demais partes interessadas . No âmbito do grupo técnico dedicado à regulamentação do mandato, foram examinados temas diretamente relacionados à implementação do ProBioQAV, tais como o ciclo de MRV e fiscalização, os dados necessários à comprovação do cumprimento das metas regulatórias anuais, a implementação do sistema de Book and Claim e o estabelecimento do CS-SAF, a eventual utilização de meios alternativos, a disponibilidade de SAF nos aeroportos, a interação entre competências da Anac e da ANP, a proporcionalidade das obrigações regulatórias, os desafios de implementação para operadores de diferentes portes, e o monitoramento do funcionamento do mandato pelo CNPE .
+
+4.1.30 Os subsídios coletados nas discussões da Conexão SAF subsidiaram o GT do CNPE e foram consideradas para a elaboração do Decreto 13.094/2026 . (original não grifado)
+
+Em todo caso, a expectativa com a consulta pública – instrumento de apoio à tomada de decisão por meio do qual a sociedade é consultada previamente, por meio de críticas, sugestões e contribuições, notadamente frente ao evidente interesse geral dos agentes econômicos, consumidores e usuários dos serviços prestados – , é permitir a apresentação formal de contribuições sobre a proposta, possibilitando a identificação de eventuais dificuldades operacionais, inconsistências ou oportunidades de aperfeiçoamento acerca sobretudo dos procedimentos de MRV, prazos e obrigações administrativas, critérios de dispensa, procedimentos de fiscalização e sanção, além das regras transitórias de implementação. A contribuições serão analisadas pela SGM, podendo resultar em adequação e melhorias da proposta antes de sua submissão à deliberação final por este Colegiado.
+
+Por fim, aproveito a oportunidade para parabenizar a área técnica pelo profícuo trabalho desenvolvido ao longo dos últimos meses, notadamente pela iniciativa Conexão SAF criada junto com a Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP), buscando sempre o diálogo entre os atores dos setores de energia e aviação com vistas a incentivar a produção e o consumo de SAF, o que resultou na proposta que ora se delibera e que se consolida como mais um passo na descarbonização do setor aéreo brasileiro.
+
+DO VOTO
+
+Diante do exposto, VOTO FAVORAVELMENTE à instauração de consulta pública , pelo prazo de 30 (trinta) dias , sobre a proposta de proposta de Resolução que regulamenta o monitoramento, o reporte, a verificação (MRV) e a fiscalização do cumprimento da meta regulatória anual de redução de emissões de dióxido de carbono (CO₂) relativas às operações aéreas domésticas, no âmbito do Programa Nacional de Combustíveis Sustentáveis de Aviação (ProBioQAV) (SEI 13729597 ).
+
+É como voto.
+
+CLAUDIO BESCHIZZA IANELLI
+
+Diretor
+
+Documento assinado eletronicamente por Cláudio Beschizza Ianelli , Diretor , em 25/08/2026, às 12:14, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13767696 e o código CRC 902A45FF .
+
+SEI nº 13767696

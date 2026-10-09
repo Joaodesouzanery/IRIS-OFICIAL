@@ -1,0 +1,75 @@
+SEI/ANAC - 13011171 - Voto
+
+Voto
+
+PROCESSO: 00058.011873/2023-87
+
+INTERESSADO: SUPERINTENDÊNCIA DE PADRÕES OPERACIONAIS (SPO)
+
+RELATORA: mariana olivieri caixeta altoé
+
+da competência
+
+Compete à ANAC, de acordo com o art. 8º, inciso X, da Lei nº 11.182, de 27 de setembro de 2005, regular e fiscalizar os serviços aéreos, a formação e o treinamento de pessoal especializado, os serviços auxiliares e a segurança da aviação civil, dentre outras atribuições.
+
+Segundo o mesmo diploma legal, conforme art. 11, inciso V, compete à Diretoria exercer o poder normativo da Agência. Adicionalmente, o art. 24 do Decreto nº 5.731, de 20 de março de 2006, dispõe que cabe à Diretoria, em regime de colegiado, analisar, discutir e decidir, em instância administrativa final, as matérias de competência da Agência.
+
+O Regimento Interno da ANAC, aprovado pela Resolução nº 381, de 14 de junho de 2016, por sua vez, dispõe em seu art. 34, inciso I, que compete à Superintendência de Padrões Operacionais (SPO) submeter à Diretoria Colegiada projetos de atos normativos sobre padrões operacionais relacionados à certificação e fiscalização, no âmbito operacional, de operadores aéreos, de operações aéreas, de transporte de artigos perigosos, de organizações de manutenção e de fatores humanos relacionados às operações aéreas.
+
+Constata-se, portanto, que a deliberação sobre a matéria em discussão é atribuição da Diretoria Colegiada da ANAC e foi encaminhada pela área técnica competente.
+
+DA ANÁLISE E FUNDAMENTAÇÃO
+
+Conforme abordado no Relatório [1] , o presente processo trata do Tema 12 da Agenda Regulatória referente ao biênio 2025/2026 intitulado "Expansão das alternativas para execução de manutenção em aeronaves leves esportivas especiais" .
+
+Inicio meu voto destacando o crescimento da frota de aeronaves leves esportivas (ALE) especiais no Brasil nos últimos anos, impulsionado principalmente por seu menor custo de aquisição e de operação, além de estar inserido em um ambiente regulatório mais flexível. Vale lembrar que alterações normativas promovidas pela ANAC em 2022 [2] expandiram as características das aeronaves ALE e as tornaram ideais não apenas para o voo recreativo, mas também para o transporte pessoal. Além disso, o seu uso tem se difundido também entre os centros de instrução pelo país, considerando que são aeronaves mais novas e com equipamentos aviônicos mais modernos, sendo uma opção atrativa para a substituição de aeronaves mais antigas.
+
+A crescente adoção dessas aeronaves na aviação geral tornou a expansão do suporte à manutenção essencial para garantir a segurança das operações, sendo um fator crítico para o crescimento sustentável do segmento. Embora essas aeronaves contem com maior flexibilidade regulatória no que tange às opções de manutenção em comparação com as aeronaves certificadas, a Superintendência de Padrões Operacionais (SPO) pontua nos autos que há diversos desafios enfrentados pelos operadores na obtenção dos serviços de manutenção para esses equipamentos. Em especial, a SPO registra haver problemas como a baixa capilaridade de Organizações de Manutenção Aeronáutica (OMA) e de mecânicos de manutenção para o atendimento da frota, bem como limitada atuação desses entes no atendimento aos operadores.
+
+Além disso, a área técnica registra que os fabricantes de ALE - os quais possuem maior conhecimento sobre as aeronaves que produzem - não estão autorizados pelo RBAC n° 43 a realizar manutenção e aprovar o retorno ao serviço dessas aeronaves, a menos que se certifiquem como OMA segundo o RBAC n° 145 ou contratem mecânicos habilitados, o que se mostrou desafiador ou desproporcionalmente oneroso para essas organizações. Outros problemas atinentes ao contexto de manutenção também foram identificados pela SPO no Relatório de Análise de Impacto Regulatório [3] (AIR) juntado aos autos, como deficiências em manuais e dificuldades de identificação e acesso a diretrizes de segurança emitidas pelos fabricantes.
+
+Com vistas a endereçar os problemas apontados, a SPO propõe alterações às seções 43.3 e 43.7 do RBAC nº 43 de forma a permitir que um fabricante de aerona ve leve esportiva especial possa executar manutenção, manutenção preventiva e alterações em modelo de aeronave que tenha sido fabricado por ele, seguindo critérios aceitáveis pela Agência. Adicionalmente, a área técnica propõe que o detentor de uma licença de mecânico de manutenção aeronáutica (MMA) habilitado em célula (CEL) ou em grupo motopropulsor (GMP) possa aprovar a manutenção de tais aeronaves, desde que o serviço executado esteja abarcado pelas prerrogativas de sua habilitação. Registro que no regramento vigente é requerido que o mecânico esteja habilitado, concomitantemente, em célula e grupo motopropulsor para que possa realizar e aprovar manutenção em aeronaves leves esportivas especiais [4] .
+
+Com respeito à possibilidade de os fabricantes realizarem manutenção, é relevante trazer à baila a ponderação feita pela área técnica em seu relatório de AIR quanto a diferenças entre as atividades de fabricação e montagem em relação a execução dos serviços de manutenção. Um dos principais aspectos apontados pela SPO refere-se a diferenças de habilidades e qualificações que são requeridas dos executores em atividades de manufatura e em manutenções, bem como a necessidade de segregação entre essas atividades no ambiente organizacional. Visando endereçar as fragilidades dessa abordagem, a área técnica entende ser necessário que os fabricantes atendam a determinados critérios para que possam realizar essas manutenções, como por exemplo, a realização de treinamento específico para os profissionais não certificados como MMA, dentre outros.
+
+Nesse sentido, entendo que a proposta da área técnica é meritória pois, ao mesmo tempo em que reconhece a elevada competência para atuação dos fabricantes, endereça vulnerabilidades importantes na atuação dessas organizações no ambiente de manutenção. Enfatizo que a proposta da SPO, nesse quesito, envolve uma abordagem normativa menos prescritiva no âmbito do RBAC n° 43, uma vez que os critérios não estarão definidos no regulamento, mas em Instrução Suplementar. Embora entenda que há benefícios nessa abordagem mais flexível, creio ser necessário também submeter tais critérios ao crivo da sociedade. Por isso, solicito que a SPO, quando da submissão dos documentos à consulta pública, atue junto à ASTEC para apresentar tais parâmetros em documento separado e que seja inserido também no ambiente de consulta, para facilitar a visualização e a contribuição pelo público-alvo.
+
+No que tange à proposta para que mecânicos de manutenção habilitados em célula ou em grupo motopropulsor possam executar manutenção nas aeronaves ALE segundo as prerrogativas de suas habilitações, ressalto que essa abordagem é similar ao que já permite a Federal Aviation Administration (FAA) em seus normativos [5] . Além disso, há manutenções específicas e afetas apenas à célula ou ao grupo motopropulsor em que se mostra excessivo exigir a dupla habilitação. Embora a SPO tenha indicado nos autos risco de perda de visão sistêmica ao se permitir a atuação dos profissionais separadamente sob cada habilitação, julgo que se pode obter uma abordagem transversal adequada contando com a coordenação entre os profissionais, o que pode ensejar a necessidade de orientações adicionais da ANAC a esses profissionais por meio de Instrução Suplementar ou material guia. Contudo, neste momento, entendo haver benefício na abordagem apresentada na medida em que se amplia o número de profissionais disponíveis para manutenção aos operadores, o que está diretamente alinhado aos objetivos do tema. Tendo em vista que a proposta será apresentada para avaliação do público, tem-se o momento oportuno para que a Agência colha manifestações e argumentos sobre essa abordagem, o que será relevante para a tomada de decisão final sobre a matéria.
+
+Ainda sobre a proposta apresentada, solicito à Assessoria Técnica (ASTEC) que, em conjunto com a SPO, avalie a pertinência quanto à adequação da redação do acrônimo da Agência para os documentos que serão submetidos à consulta, visando atendimento às normas vigentes de redação oficial para os atos normativos.
+
+Por fim, t endo em vista que foram previstas soluções não normativas para alguns dos problemas identificados neste tema, solicito:
+
+à SPO: executar as atividades necessárias, dentro da priorização possível, no que se refere à orientação e comunicação das OMA sobre as particularidades de manutenção das aeronaves ALE, tendo em vista o objetivo de aumentar a segurança jurídica e reduzir a assimetria de informação para a atuação dessas entidades. Tal abordagem está alinhada ao fomento a um maior uso das organizações de manutenção pelos operadores de ALE especiais, conforme solução proposta no relatório de AIR; e
+
+à SAR: informar quanto às ações já realizadas ou previstas visando endereçar as possíveis deficiências dos manuais de manutenção das aeronaves ALE, bem como as dificuldades na identificação e acesso a diretrizes de segurança emitidas pelos fabricantes desses produtos.
+
+Considerando todo o exposto, entendo que a proposta encaminhada pela SPO nos autos encontra-se apta a ser submetida ao escrutínio da sociedade por meio de Consulta Pública, pelo prazo de 45 (quarenta e cinco) dias, visando o recebimento de contribuições para o seu aprimoramento .
+
+do voto
+
+Ante o exposto, VOTO FAVORAVELMENTE à instauração de Consulta Pública, pelo prazo de 45 (quarenta e cinco) dias, para a emenda ao RBAC nº 43 nos termos propostos pela Superintendência de Padrões Operacionais (SPO) no documento SEI 12854433 , considerando o que consta nos itens 2.7, 2.9 e 2.10 do presente Voto.
+
+É como voto.
+
+MARIANA OLIVIERI CAIXETA ALTOÉ
+
+Diretora
+
+____________________________
+
+[1] SEI 13000748 .
+
+[2] Para aviões, alterações como aumento do peso máximo de decolagem, do número de assentos, dentre outras características conforme Emenda 11 ao RBAC n° 01 .
+
+[3] Relatório de AIR n° 4/2025/GTNO-GNOS/GNOS/SPO - SEI 11335418 .
+
+[4] Conforme parágrafo 43.7(b-I)(4) do RBAC nº 43 - Emenda 05 .
+
+[5] Conforme §43.7(b) do part 43, e §65.81, §65.85 e §65.87 do part 65 da FAA. No contexto de uma aeronave leve esportiva especial, o detentor de licença de mecânico com habilitações Airframe ou Powerplant pode atuar realizando serviços sob a sua habilitação, não estando autorizado a realizar e aprovar grandes alterações e grandes reparos em produtos que são produzidos sob uma aprovação da FAA.
+
+Documento assinado eletronicamente por Mariana Olivieri Caixeta Altoé , Diretora Substituta , em 02/04/2026, às 17:47, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13011171 e o código CRC 65DD100F .
+
+SEI nº 13011171

@@ -1,0 +1,77 @@
+SEI/ANAC - 12346000 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00058.024978/2025-68
+
+INTERESSADO: GERÊNCIA TÉCNICA DE NORMAS, GNAD/SIA, GERÊNCIA DE AVSEC E FACILITAÇÃO - GSEF, SUPERINTENDÊNCIA DE REGULAÇÃO ECONÔMICA DE AEROPORTOS
+
+RELATOR: RUI CHAGAS MESQUITA
+
+descrição dos fatos
+
+Trata-se de pedido de instauração de consulta pública acerca de proposta de Resolução [1] que estabelece procedimentos, recursos materiais e prazos para modernização dos equipamentos utilizados nos canais de inspeção dos aeroportos brasileiros.
+
+O tema é objeto do Projeto Prioritário “Aeroportos + Seguros” [2] e que culminou na publicação da Resolução nº 753, de 8 de agosto de 2024, que estabelece diretriz de modernização tecnológica de equipamentos e de procedimentos aeroportuários, adotada no presente processo. Além disso, o tema foi incluído na Agenda Regulatória da Anac para o biênio 2025-2026, conforme previsto pela Portaria n° 16003, de 16 de dezembro de 2024.
+
+Nesse contexto, a Superintendência de Infraestrutura Aeroportuária (SIA) elaborou Relatório de Análise de Impacto Regulatório (AIR) [3] contemplando estudo voltado à modernização dos equipamentos empregados na Segurança da Aviação Civil contra Atos de Interferência Ilícita (AVSEC), com especial enfoque nos canais de inspeção de passageiros dos aeródromos sob jurisdição nacional. A Diretoria foi cientificada da matéria na 18ª Reunião Administrativa Eletrônica da Diretoria Colegiada, realizada entre os dias 12 a 16 de maio de 2025 [4] .
+
+Importante destacar que na oportunidade a Diretora Substituta Mariana Altoé ressaltou [5] que o Relatório de AIR não abarcou nenhuma evolução tecnológica na inspeção de passageiros e bagagens de mão dos aeródromos com menos de 1 milhão de passageiros ao ano e, por conseguinte, propôs que fosse contemplado na proposta normativa ao menos a atualização dos equipamentos de raio-x do tipo dual view nesses aeródromos. Ademais, tendo em vista o impacto dos investimentos decorrentes da modernização tecnológica dos equipamentos e dos novos procedimentos aeroportuários no equilíbrio econômico-financeiro dos Contratos de Concessão de Aeroportos, a Diretora propôs que a Superintendência de Regulação Econômica de Aeroportos – SRA atuasse “ junto às concessionárias, durante e após o período de alteração normativa, para promover discussões acerca desses impactos, bem como maior possibilidade de previsibilidade acerca dos eventuais Reequilíbrios Econômico-Financeiros e possíveis dificuldades a serem enfrentadas durante e após a migração dos equipamentos para a necessária adequação às exigências contratuais, em especial àquelas que tratam sobre tempo de fila em canais de inspeção de segurança ”.
+
+Ato contínuo, o Gerente do Projeto Prioritário “Aeroportos + Seguros” submeteu [6] os autos à SRA, para que atue junto às concessionárias a fim de avaliar impactos econômicos e garantir previsibilidade quanto aos reequilíbrios, e à Superintendência de Pessoal da Aviação Civil (SPL), para que atue no treinamento dos profissionais AVSEC no que se refere à operação e otimização dos novos equipamentos.
+
+A SRA informou [7] que os impactos econômico-financeiros e demais implicações contratuais seriam analisadas de forma oportuna e adequada, no âmbito de processos administrativos específicos. A Coordenadoria de Instrução AVSEC da SPL informou [8] que reconhece os impactos operacionais, concluindo que a adoção desses equipamentos demanda capacitação técnica especializada e contínua, conforme as melhores práticas internacionais e os requisitos estabelecidos pela Anac. Além disso, recomendou que a SPL realizasse estudo técnico para “ avaliar e propor ajustes no RBAC n° 110 e nas Instruções Suplementares dele decorrentes... ”.
+
+Em 29/08/2025, a SIA submeteu [9] à apreciação da Diretoria Colegiada proposta de Resolução [10] , acompanhado de Aviso de Consulta Pública [11] e Justificativa de Consulta Pública [12] , tendo por fundamento a Nota Técnica n° 11/2025 [13] . Em virtude de sorteio [14] , o processo foi distribuído para relatoria desta Diretoria em 01/09/2025.
+
+Visando obter informações complementares ao Relatório de AIR, solicitei no Despacho SEI! n° 12288740 que a SIA apresentasse informações mais detalhadas acerca dos investimentos, dos custos e dos impactos operacionais dos novos equipamentos nos canais de inspeção dos aeroportos. Além disso, tendo em vista que os investimentos decorrentes da proposta normativa são vultuosos, julguei importante solicitar, nesse mesmo expediente, que a SRA se manifestasse sobre a melhor forma de proceder o reequilíbrio, precificar os investimentos e os custos envolvidos e recompor o equilíbrio econômico-financeiro dos contratos de concessão de aeroportos.
+
+A SIA destacou [15] que as informações solicitadas demandam consolidação de dados junto aos operadores aeroportuários, uma vez que a operação é afetada por diversos fatores, incluindo a tecnologia e o modelo dos equipamentos considerados, o layout dos canais de inspeção, a rotina e os procedimentos de trabalho e da integração dos processos e das pessoas. Desta forma , a área técnica entende que as contribuições dos operadores aeroportuários na Consulta Pública poderão subsidiar de forma específica a avaliação desta Diretoria.
+
+Por sua vez, em resposta [16] à diligência, a SRA (i) ressaltou a complexidade da precificação dos investimentos e do tratamento do desequilíbrio econômico-financeiro dos contratos de concessão em virtude da proposta normativa; (ii) salientou a importância da manutenção dos requisitos de nível e qualidade de serviço previstos nos contratos de concessão; (iii) recomendou, considerando as especificidades da infraestrutura de cada aeroporto, que a proposta normativa previsse uma etapa prévia e faseada de análise de projeto e precificação dos investimentos e dos custos, que seriam analisadas tanto pela SIA quanto pela SRA, conforme as competências regimentais de cada unidade; e (iv) que após essa etapa de projeto, fosse elaborado termo aditivo contratual incorporando a solução de projeto, a precificação das intervenções e a forma de recomposição do equilíbrio econômico-financeiro.
+
+É o Relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Resolução em versão restrita (SEI! n° 11908090 ) e em versão pública (SEI! n° 11896675 )
+
+[2] Processo n° 00058.023236/2024-34
+
+[3] Relatório de AIR 4 (SEI! n° 11495656 )
+
+[4] Certidão de Deliberação SEI! n° 11562865
+
+[5] Despacho SEI! n° 11554802
+
+[6] Despacho SEI! n° 11567784
+
+[7] Despacho SEI! n° 11567856
+
+[8] Despacho SEI! n° 11821936
+
+[9] Despacho SEI! n° 11973110
+
+[10] Resolução em versão restrita (SEI! n° 11908090 ) e em versão pública (SEI! n° 11896675 )
+
+[11] Aviso de Consulta Pública n° SEI! 11981328
+
+[12] Justificativa de Consulta Pública n° SEI! 11892567
+
+[13] Nota Técnica n° 11/2025/GTNO-SIA/GNAD/SIA (SEI! n° 11644578 )
+
+[14] Certidão de Distribuição SEI! n° 12003661
+
+[15] Despacho SEI! n° 12288740
+
+[16] Nota Técnica n° 34/2025/SRA (SEI! n° 12235490 )
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 22/01/2026, às 13:27, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12346000 e o código CRC CE77D043 .
+
+SEI nº 12346000

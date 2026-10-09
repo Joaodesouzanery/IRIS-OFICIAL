@@ -1,0 +1,69 @@
+SEI/ANAC - 13839882 - Relatório de Diretoria
+
+RELATÓRIO
+
+PROCESSO: 00066.024821/2018-12
+
+INTERESSADO: EMBRAER S.A.
+
+RELATOR: Rui Chagas Mesquita
+
+descrição dos fatos
+
+Trata-se de processo administrativo instaurado para apreciação de proposta de Condição Especial aplicável à funcionalidade denominada Embraer Enhanced Takeoff System (E2TS), desenvolvida pela EMBRAER S.A. para incorporação ao projeto de tipo da aeronave ERJ 190-400. A proposta objetiva estabelecer requisitos adicionais de aeronavegabilidade relativos a função implementada ao projeto de decolagens automatizadas, diante da inexistência de requisitos específicos na regulamentação vigente para esse tipo de operação.
+
+O E2TS constitui uma funcionalidade inovadora de decolagem automatizada, na qual a manobra de rotação e a subida inicial passam a ser realizadas por sistema automático, sem necessidade de intervenção direta do piloto. Segundo as unidades técnicas da Superintendência de Aeronavegabilidade (SAR), os requisitos atualmente constantes do Regulamento Brasileiro da Aviação Civil (RBAC) nº 25, especialmente o parágrafo 25.107(e), foram concebidos para operações conduzidas por piloto humano e, portanto, não contemplam adequadamente as características e variabilidades associadas à nova tecnologia.
+
+A discussão técnica sobre o tema foi desenvolvida no âmbito da Ficha de Controle de Assuntos Relevantes (FCAR) EV-50 [1] , referente ao projeto ERJ 190-400. Após avaliações conduzidas pela SAR, concluiu-se pela necessidade de adaptação dos requisitos existentes para assegurar nível de segurança equivalente ao previsto para operações convencionais de decolagem manual.
+
+Em outubro de 2025, a Superintendência formalizou sua posição preliminar na FCAR EV-50, propondo a criação dos parágrafos 25.107(e)(5) e 25.107(e)(6), destinados a regulamentar as decolagens automatizadas. A EMBRAER S.A. manifestou concordância com a proposta.
+
+Em razão da relevância técnica da matéria, do caráter inovador da funcionalidade de decolagem automatizada e dos potenciais impactos sobre futuras certificações e processos de validação internacional, a SAR instaurou o processo [2] com o objetivo específico de conduzir Consulta Setorial acerca da proposta de Condição Especial. A iniciativa decorreu de recomendação das unidades técnicas responsáveis pela certificação do projeto, que entenderam ser conveniente ampliar a discussão dos critérios propostos para adaptação dos requisitos de desempenho de decolagem previstos na seção 25.107 do RBAC com foco nos representantes da indústria que têm atuação na matéria, dada a especificidade da proposta.
+
+Na instrução do processo de consulta setorial, a área técnica destacou que os requisitos atualmente aplicáveis às chamadas “decolagens abusadas” foram concebidos para operações conduzidas por pilotos e, por essa razão, não contemplam adequadamente as variabilidades decorrentes de sistemas automáticos, cujos desvios decorrem predominantemente de tolerâncias de sistema, precisão de sensores e características próprias de automação.
+
+A Consulta Setorial nº 06/SAR/2026 foi publicada no Diário Oficial da União [3] em 16 de junho de 2026, com documentação disponibilizada em português e inglês, em razão do caráter internacional do tema e do público potencialmente interessado, mantendo-se aberta por 30 dias.
+
+Durante o período de consulta, a Agência recebeu somente uma contribuição formal da Boeing Company [4] , a qual apresentou sugestões de aperfeiçoamento da redação proposta para o novo parágrafo 25.107(e)(6), dos critérios de demonstração de conformidade e da harmonização do texto com requisitos já existentes no RBAC nº 25. As contribuições recebidas foram objeto de análise pelas áreas técnicas e serviram de subsídio para o aperfeiçoamento da versão final da Condição Especial posteriormente encaminhada para deliberação.
+
+Na etapa processual seguinte, em razão das contribuições recebidas na Consulta Setorial, o texto da FCAR foi revisado, culminando na emissão da FCAR EV-50 Revisão A [5] , mantendo-se a conclusão de que a posição da Embraer era aceitável e confirmando-se o encerramento do tema sob o aspecto técnico.
+
+A matéria foi então consolidada na Nota Técnica nº 7/2026/GTEV/GCPP/SAR [6] , que destacou o caráter inovador da modificação proposta e a necessidade de estabelecer requisitos complementares para assegurar nível de segurança equivalente ao atualmente exigido para operações de decolagem manual. A nota concluiu pela justificabilidade técnica e pelo interesse público da criação da Condição Especial.
+
+Em seguida, a Nota Técnica nº 28/2026/GTNI/SAR [7] complementou a fundamentação regulatória da proposta, esclarecendo a natureza da Condição Especial como instrumento previsto no RBAC nº 21 para situações em que os requisitos existentes não são adequados a tecnologias novas ou não usuais. O documento concluiu que a medida atende aos requisitos do RBAC nº 11, do RBAC nº 21 e da Instrução Normativa nº 154, de 20 de março de 2020, sendo dispensada a Análise de Impacto Regulatório e a manifestação da Procuradoria Federal junto à ANAC (arts. 20 e 39 da Instrução).
+
+Por fim, foi elaborada minuta de Resolução [8] destinada à aprovação da Condição Especial "aplicável à Variabilidade de Velocidade de Rotação em Decolagens Automatizadas do avião ERJ 190-400". A proposta estabelece que tais requisitos integrarão a base de certificação da modificação de projeto do E2TS e, eventualmente, de outras aeronaves cuja certificação venha a demandar tratamento equivalente.
+
+Em 26 de agosto de 2026, em virtude de sorteio [9] , vieram os autos à relatoria desta Diretoria.
+
+É o relatório.
+
+RUI CHAGAS MESQUITA
+
+Diretor
+
+____________________________
+
+[1] Ficha de Controle de Assuntos Relevantes (FCAR) EV-50 (SEI nº 13708573 ).
+
+[2] Processo nº 00066.002577/2026-39 .
+
+[3] Diário Oficial da União - Anexo (SEI nº 13487717 ).
+
+[4] Comentário da The Boeing Company (SEI nº 13841844 ).
+
+[5] Revisão A da Ficha de Controle de Assuntos Relevantes (FCAR) EV-50 (SEI nº 13708573 ).
+
+[6] Nota Técnica nº 7/2026/GTEV/GCPP/SAR (SEI nº 13710890 ).
+
+[7] Nota Técnica nº 28/2026/GTNI/SAR (SEI nº 13726624 ).
+
+[8] Proposta de Resolução SEI nº 13726823 .
+
+[9] Certidão de distribuição SEI nº 13786821 .
+
+Documento assinado eletronicamente por Rui Chagas Mesquita , Diretor , em 15/09/2026, às 16:48, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 13839882 e o código CRC A864CC82 .
+
+SEI nº 13839882

@@ -1,0 +1,905 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00066.005011/2023-16
+
+Tipo: Regulamentos e Normas: Elaboração e Revisão de Normas Finalísticas de Aeronavegabilidade
+
+Data de Geração: 25/04/2023
+
+Interessados:
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (87 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+8531462 Abertura de Processo Normativo 1 26/04/2023 26/04/2023 GTPR
+9860355 Registro de Reunião 10/05/2024 10/05/2024 GTNI
+12015183 Registro de Reunião 10/09/2025 10/09/2025 GTNI
+11476692 Nota Técnica 11 10/09/2025 10/09/2025 GTNI
+11554683 Consulta dicionários Parte, Peça, Part 16/05/2025 16/05/2025 GTNI
+11798113 Anexo Ocorrências de 'PARTE' e 'PEÇA' nos RBAC 10/09/2025 10/09/2025 GTNI
+11802899 Anexo Minuta RBAC 21 EMD 13 para Consulta Pública 10/09/2025 10/09/2025 GTNI
+11802919 Anexo Minuta RBAC 45 EMD 5 para Consulta Pública 10/09/2025 10/09/2025 GTNI
+11802923 Proposta de Ato (Normativo, Decisão etc.) 10/09/2025 10/09/2025 GTNI
+11802969 Proposta de Ato (Normativo, Decisão etc.) 10/09/2025 10/09/2025 GTNI
+11802980 Anexo Justificativa - Consulta Pública 10/09/2025 10/09/2025 GTNI
+11803000 Anexo Quadro comparativo RBAC 21 e 45 Consulta Pública 15/07/2025 15/07/2025 GTNI
+12053575 Despacho Decisório 8 12/09/2025 12/09/2025 GTNI
+11817571 Despacho 25/09/2025 25/09/2025 GTNI
+12119888 Despacho 30/09/2025 30/09/2025 SAR
+12156255 Despacho 06/10/2025 06/10/2025 ASTEC
+12188090 Certidão de Deliberação 13/10/2025 13/10/2025 ASTEC
+12188126 Certidão de Distribuição 13/10/2025 13/10/2025 ASTEC
+12248633 Despacho 28/10/2025 28/10/2025 GTNI
+12247644 Anexo Justificativa Consulta Pública (Inglês) 28/10/2025 28/10/2025 GTNI
+12248698 Anexo Quadro comparativo Consulta Pública (rev 1) 25/10/2025 25/10/2025 GTNI
+12248700 Anexo Quadro comparativo Consulta Pública (rev 1) 25/10/2025 25/10/2025 GTNI
+12257730 Despacho 30/10/2025 30/10/2025 SAR
+12269417 Anexo Quadro comparativo Consulta Pública (rev 1.1) 30/10/2025 30/10/2025 GTNI
+12222919 Relatório de Diretoria 05/11/2025 05/11/2025 DIR-LRI
+12265698 Voto 05/11/2025 05/11/2025 DIR-LRI
+12294810 Despacho 05/11/2025 05/11/2025 ASTEC
+12299893 Voto 05/11/2025 05/11/2025 DIR-TP
+12301679 Voto 06/11/2025 06/11/2025 DIR-RCM
+12303687 Voto 06/11/2025 06/11/2025 DIR-MNM
+12305198 Voto 10/11/2025 10/11/2025 DIR-P
+12317165 Aviso 329 11/11/2025 11/11/2025 ASTEC
+12320552 Memorando 46 10/11/2025 10/11/2025 ASTEC
+12327200 Anexo 12/11/2025 12/11/2025 GTIN-Publicações
+12327500 Certidão de Deliberação 12/11/2025 12/11/2025 ASTEC
+12349224 Despacho 17/11/2025 17/11/2025 SAR
+12397715 Anexo Notícia Consulta Pública 12-2025 - Inglês 21/11/2025 28/11/2025 GTNI
+12397716 Anexo Notícia Consulta Pública 12-2025 - Português 21/11/2025 28/11/2025 GTNI
+12398063 Despacho 29/12/2025 29/12/2025 GTNI
+12541107 Relatório de Contribuições - Consulta Pública 12/2025 30/12/2025 30/12/2025 GTNI
+12541123 Despacho 05/01/2026 05/01/2026 GTNI
+12557509 Despacho 06/01/2026 06/01/2026 ASTEC
+12581959 Despacho 15/01/2026 15/01/2026 GTNI
+12600938 Despacho 15/01/2026 15/01/2026 GTRAB
+12602530 Despacho 15/01/2026 15/01/2026 GTAG
+12701237 Despacho 27/01/2026 27/01/2026 GTNO-GNOS
+12567050 Nota Técnica 2 09/02/2026 09/02/2026 GTNI
+12567950 Relatório de Análise de Contruibuições CP 12/2025 08/01/2026 08/01/2026 GTNI
+12571384 Anexo Quadro comparativo após CP 12/2025 (português) 09/01/2026 09/01/2026 GTNI
+12571385 Anexo Quadro comparativo após CP 12/2025 (inglês) 09/01/2026 09/01/2026 GTNI
+12571409 Proposta de Ato (Normativo, Decisão etc.) 09/02/2026 09/02/2026 GTNI
+12571415 Anexo Minuta RBAC 21 EMD 14 após CP 12/2025 09/02/2026 09/02/2026 GTNI
+12841607 Despacho Decisório 3 03/03/2026 03/03/2026 GTNI
+12938980 Despacho 16/03/2026 16/03/2026 GTNI
+13003184 Despacho 20/03/2026 20/03/2026 SAR
+13021010 Despacho 20/03/2026 20/03/2026 ASTEC
+13114295 Parecer 13/2026/FIN/PFEANAC/PGF/AGU 13/04/2026 13/04/2026 PF-ANAC
+13114301 Despacho de Aprovação 49/2026/GAB/PFEANAC/PGF/AGU 13/04/2026 13/04/2026 PF-ANAC
+13116671 Despacho 13/04/2026 13/04/2026 SAR
+13124060 Nota Técnica 16 15/05/2026 15/05/2026 GTNI
+13127574 Proposta de Ato (Normativo, Decisão etc.) 15/05/2026 15/05/2026 GTNI
+13127616 Anexo Minuta RBAC 21 EMD 15 (até 07/04/2027) 15/05/2026 15/05/2026 GTNI
+13127664 Anexo Minuta RBAC 21 EMD 15 (a partir de 08/04/2027) 15/05/2026 15/05/2026 GTNI
+13132332 Anexo Quadro comparativo Deliberação Final (português) 16/04/2026 16/04/2026 GTNI
+13132366 Anexo Quadro comparativo Deliberação Final (inglês) 16/04/2026 16/04/2026 GTNI
+13145078 Despacho 22/05/2026 22/05/2026 GTNI
+13455903 Despacho 15/06/2026 15/06/2026 SAR
+13485711 Despacho 15/06/2026 15/06/2026 GAB
+13489426 Certidão de Distribuição 16/06/2026 16/06/2026 ASTEC
+13492252 Relatório de Diretoria 30/06/2026 30/06/2026 DIR-CBI
+13500773 Voto 30/06/2026 30/06/2026 DIR-CBI
+13546868 Despacho 30/06/2026 30/06/2026 ASTEC
+13548326 Voto 05/07/2026 05/07/2026 DIR-RCM
+13550054 Voto 01/07/2026 01/07/2026 DIR-RJH
+13557827 Voto 03/07/2026 03/07/2026 DIR-MNM
+13564877 Voto 03/07/2026 03/07/2026 DIR-P
+13571079 Resolução 808 07/07/2026 07/07/2026 ASTEC
+13571536 Memorando 22 06/07/2026 06/07/2026 ASTEC
+13572938 Despacho 07/07/2026 07/07/2026 SPO
+13581943 Anexo DOU 08/07/2026 08/07/2026 ASTEC
+13584718 Certidão de Deliberação 08/07/2026 08/07/2026 ASTEC
+13600031 Despacho 13/07/2026 13/07/2026 SAR
+13645348 E-mail Aviso de Publicação CNORMA 20/07/2026 22/07/2026 GTNI
+13646506 Anexo Quadro Comparativo Final (português) 23/07/2026 23/07/2026 GTNI
+13647617 Anexo Quadro Comparativo Final (inglês) 23/07/2026 23/07/2026 GTNI
+13647625 Relatório Análise Contribuições CP 12/2025 (inglês) 23/07/2026 23/07/2026 GTNI
+13696422 Despacho 04/08/2026 04/08/2026 GTNO-SPO
+
+Lista de Andamentos (155 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+04/08/2026 21:09
+GTNO-SPO
+
+Conclusão do processo na unidade
+
+03/08/2026 12:02
+DIR-MNM
+
+Conclusão do processo na unidade
+
+03/08/2026 10:02
+DIR-P
+
+Conclusão do processo na unidade
+
+21/07/2026 13:35
+DIR-CBI
+
+Conclusão do processo na unidade
+
+15/07/2026 13:41
+GTNI
+
+Alterado nível de acesso do documento 13600031 (Despacho) para público
+
+15/07/2026 13:41
+GTNI
+
+Alterado nível de acesso do documento 13145078 (Despacho) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 13127664 (Anexo Minuta RBAC 21 EMD 15 (a partir de 08/04/2027)) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 13127616 (Anexo Minuta RBAC 21 EMD 15 (até 07/04/2027)) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 13127574 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 13124060 (Nota Técnica 16) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 12938980 (Despacho) para público
+
+15/07/2026 13:40
+GTNI
+
+Alterado nível de acesso do documento 12841607 (Despacho Decisório 3) para público
+
+15/07/2026 13:39
+GTNI
+
+Alterado nível de acesso do documento 12571415 (Anexo Minuta RBAC 21 EMD 14 após CP 12/2025) para público
+
+15/07/2026 13:39
+GTNI
+
+Alterado nível de acesso do documento 12571409 (Proposta de Ato (Normativo, Decisão etc.)) para público
+
+15/07/2026 13:38
+GTNI
+
+Alterado nível de acesso do documento 12567050 (Nota Técnica 2) para público
+
+15/07/2026 13:38
+GTNI
+
+Alterado nível de acesso do documento 12581959 (Despacho) para público
+
+15/07/2026 13:38
+GTNI
+
+Alterado nível de acesso do documento 12398063 (Despacho) para público
+
+14/07/2026 07:33
+GTNI
+
+Processo recebido na unidade
+
+13/07/2026 16:03
+GTNI
+
+Processo remetido pela unidade SAR
+
+10/07/2026 10:28
+DIR-RCM
+
+Conclusão do processo na unidade
+
+09/07/2026 10:27
+SAR
+
+Processo recebido na unidade
+
+09/07/2026 10:25
+SAR
+
+Processo remetido pela unidade ASTEC
+
+08/07/2026 09:40
+GTNI
+
+Reabertura do processo na unidade
+
+08/07/2026 05:59
+GTNO-GNOS
+
+Processo recebido na unidade
+
+07/07/2026 20:12
+GTNO-GNOS
+
+Processo remetido pela unidade SPO
+
+06/07/2026 15:22
+SPO
+
+Processo recebido na unidade
+
+06/07/2026 15:03
+SPO
+
+Processo remetido pela unidade ASTEC
+
+04/07/2026 10:18
+DIR-RJH
+
+Conclusão do processo na unidade
+
+02/07/2026 09:39
+DIR-MNM
+
+Processo recebido na unidade
+
+30/06/2026 15:03
+DIR-RJH
+
+Processo recebido na unidade
+
+30/06/2026 14:19
+DIR-RCM
+
+Processo recebido na unidade
+
+30/06/2026 14:03
+DIR-P
+
+Processo recebido na unidade
+
+30/06/2026 12:30
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+30/06/2026 12:30
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+26/06/2026 10:18
+ASTEC
+
+Reabertura do processo na unidade
+
+17/06/2026 10:47
+ASTEC
+
+Conclusão do processo na unidade
+
+17/06/2026 10:47
+ASTEC
+
+Reabertura do processo na unidade
+
+16/06/2026 14:04
+ASTEC
+
+Conclusão do processo na unidade
+
+16/06/2026 11:40
+DIR-CBI
+
+Processo recebido na unidade
+
+16/06/2026 11:24
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+15/06/2026 16:22
+ASTEC
+
+Processo recebido na unidade
+
+15/06/2026 16:21
+ASTEC
+
+Processo remetido pela unidade GAB
+
+15/06/2026 16:17
+GAB
+
+Processo recebido na unidade
+
+15/06/2026 15:51
+GAB
+
+Processo remetido pela unidade SAR
+
+22/05/2026 11:02
+SAR
+
+Processo recebido na unidade
+
+22/05/2026 10:55
+SAR
+
+Processo remetido pela unidade GTNI
+
+14/04/2026 09:08
+GTNI
+
+Processo recebido na unidade
+
+13/04/2026 17:36
+GTNI
+
+Processo remetido pela unidade SAR
+
+13/04/2026 12:16
+SAR
+
+Processo recebido na unidade
+
+13/04/2026 12:15
+SAR
+
+Processo remetido pela unidade PF-ANAC
+
+27/03/2026 14:35
+GTCO
+
+Conclusão do processo na unidade
+
+23/03/2026 12:21
+PF-ANAC
+
+Disponibilizado acesso externo para SIS_SCP
+
+23/03/2026 12:18
+PF-ANAC
+
+Processo recebido na unidade
+
+23/03/2026 08:09
+SAR
+
+Processo recebido na unidade
+
+20/03/2026 20:16
+SAR
+
+Processo remetido pela unidade ASTEC
+
+20/03/2026 19:51
+PF-ANAC
+
+Processo remetido pela unidade SAR
+
+20/03/2026 17:11
+ASTEC
+
+Reabertura do processo na unidade
+
+16/03/2026 16:02
+SAR
+
+Processo recebido na unidade
+
+16/03/2026 16:00
+SAR
+
+Processo remetido pela unidade GTNI
+
+06/03/2026 16:28
+GCPP
+
+Conclusão do processo na unidade
+
+02/02/2026 08:58
+GTNI
+
+Processo recebido na unidade
+
+30/01/2026 15:21
+GTNI
+
+Processo remetido pela unidade GTAG
+
+28/01/2026 08:44
+GTNI
+
+Processo recebido na unidade
+
+27/01/2026 15:11
+GTNI
+
+Processo remetido pela unidade GTNO-GNOS
+
+15/01/2026 18:02
+GTAG
+
+Processo recebido na unidade
+
+15/01/2026 17:20
+GTNI
+
+Processo recebido na unidade
+
+15/01/2026 15:27
+GTNI
+
+Processo remetido pela unidade GTRAB
+
+15/01/2026 14:33
+GTNO-GNOS
+
+Processo recebido na unidade
+
+15/01/2026 14:19
+GTRAB
+
+Processo recebido na unidade
+
+15/01/2026 11:26
+GTRAB
+
+Processo remetido pela unidade GTNI
+
+15/01/2026 11:26
+GTNO-GNOS
+
+Processo remetido pela unidade GTNI
+
+15/01/2026 11:26
+GTAG
+
+Processo remetido pela unidade GTNI
+
+07/01/2026 10:24
+DIR-LRI
+
+Conclusão do processo na unidade
+
+06/01/2026 16:07
+GTNI
+
+Processo recebido na unidade
+
+06/01/2026 15:55
+GTNI
+
+Processo remetido pela unidade ASTEC
+
+06/01/2026 14:36
+ASTEC
+
+Processo recebido na unidade
+
+06/01/2026 14:34
+ASTEC
+
+Processo remetido pela unidade GTIN
+
+06/01/2026 14:33
+GTIN
+
+Processo recebido na unidade
+
+05/01/2026 15:50
+GTIN
+
+Processo remetido pela unidade GTNI
+
+29/12/2025 16:30
+GTNO-GNOS
+
+Processo recebido na unidade
+
+29/12/2025 16:17
+GTNI
+
+Reabertura do processo na unidade
+
+29/12/2025 16:13
+GTNO-GNOS
+
+Processo remetido pela unidade GTNI
+
+02/12/2025 09:31
+DIR-P
+
+Conclusão do processo na unidade
+
+18/11/2025 10:46
+GTNI
+
+Processo recebido na unidade
+
+17/11/2025 15:37
+GTNI
+
+Processo remetido pela unidade SAR
+
+17/11/2025 12:06
+DIR-MNM
+
+Conclusão do processo na unidade
+
+12/11/2025 11:02
+SAR
+
+Processo recebido na unidade
+
+12/11/2025 10:40
+SAR
+
+Processo remetido pela unidade ASTEC
+
+12/11/2025 06:40
+GTIN-Publicações
+
+Conclusão do processo na unidade
+
+11/11/2025 15:49
+GTNI
+
+Alterado nível de acesso do processo para público
+
+11/11/2025 15:49
+GTNI
+
+Alterado nível de acesso do documento 12119888 (Despacho) para público
+
+11/11/2025 15:49
+GTNI
+
+Alterado nível de acesso do documento 12257730 (Despacho) para público
+
+11/11/2025 15:47
+GTNI
+
+Reabertura do processo na unidade
+
+11/11/2025 15:40
+GTIN-Publicações
+
+Processo recebido na unidade
+
+11/11/2025 10:06
+DIR-TP
+
+Conclusão do processo na unidade
+
+11/11/2025 08:57
+GTIN-Publicações
+
+Processo remetido pela unidade ASTEC
+
+11/11/2025 00:57
+DIR-RCM
+
+Conclusão do processo na unidade
+
+10/11/2025 18:19
+SAR
+
+Processo recebido na unidade
+
+10/11/2025 18:19
+SAR
+
+Processo remetido pela unidade ASTEC
+
+06/11/2025 10:47
+DIR-P
+
+Processo recebido na unidade
+
+05/11/2025 18:33
+DIR-MNM
+
+Processo recebido na unidade
+
+05/11/2025 14:24
+DIR-RCM
+
+Processo recebido na unidade
+
+05/11/2025 14:14
+DIR-TP
+
+Processo recebido na unidade
+
+05/11/2025 13:28
+DIR-TP
+
+Processo remetido pela unidade ASTEC
+
+05/11/2025 13:28
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+05/11/2025 13:28
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+05/11/2025 13:28
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+05/11/2025 10:47
+DIR-P
+
+Reabertura do processo na unidade
+
+05/11/2025 10:45
+DIR-P
+
+Conclusão do processo na unidade
+
+04/11/2025 15:06
+ASTEC
+
+Reabertura do processo na unidade
+
+31/10/2025 14:55
+DIR-RCM
+
+Reabertura do processo na unidade
+
+30/10/2025 21:06
+DIR-LRI
+
+Processo recebido na unidade
+
+30/10/2025 18:56
+DIR-LRI
+
+Processo remetido pela unidade SAR
+
+30/10/2025 18:44
+GTNI
+
+Conclusão do processo na unidade
+
+30/10/2025 11:40
+GTNI
+
+Reabertura do processo na unidade
+
+28/10/2025 14:52
+SAR
+
+Processo recebido na unidade
+
+28/10/2025 14:47
+SAR
+
+Processo remetido pela unidade GTNI
+
+23/10/2025 18:58
+GTNI
+
+Reabertura do processo na unidade
+
+20/10/2025 23:32
+DIR-RCM
+
+Conclusão do processo na unidade
+
+13/10/2025 10:34
+DIR-LRI
+
+Processo recebido na unidade
+
+13/10/2025 10:23
+ASTEC
+
+Conclusão do processo na unidade
+
+13/10/2025 08:30
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+10/10/2025 13:56
+DIR-MNM
+
+Conclusão do processo na unidade
+
+07/10/2025 08:53
+DIR-LRI
+
+Processo recebido na unidade
+
+06/10/2025 17:44
+DIR-P
+
+Processo recebido na unidade
+
+06/10/2025 14:39
+DIR-TP
+
+Processo recebido na unidade
+
+06/10/2025 14:38
+DIR-MNM
+
+Processo recebido na unidade
+
+06/10/2025 12:04
+DIR-RCM
+
+Processo recebido na unidade
+
+06/10/2025 12:01
+DIR-LRI
+
+Processo remetido pela unidade ASTEC
+
+06/10/2025 12:01
+DIR-TP
+
+Processo remetido pela unidade ASTEC
+
+06/10/2025 12:01
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+06/10/2025 12:01
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+06/10/2025 12:01
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+06/10/2025 11:43
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+30/09/2025 18:24
+ASTEC
+
+Processo recebido na unidade
+
+30/09/2025 17:47
+ASTEC
+
+Processo remetido pela unidade SAR
+
+25/09/2025 11:26
+SAR
+
+Processo recebido na unidade
+
+25/09/2025 11:03
+SAR
+
+Processo remetido pela unidade GTNI
+
+12/09/2025 11:21
+GCPP
+
+Processo recebido na unidade
+
+11/09/2025 17:23
+GTCO
+
+Processo recebido na unidade
+
+11/09/2025 17:09
+GTNI
+
+Cancelado documento 11817525 (Despacho).
+
+Cancelado por mudança de estratégia de confirmação de concordância que passou a ser por meio de despacho decisório 12053575
+
+11/09/2025 15:54
+GCPP
+
+Processo remetido pela unidade GTNI
+
+11/09/2025 15:54
+GTCO
+
+Processo remetido pela unidade GTNI
+
+03/09/2025 11:22
+GTNI
+
+Cancelado documento 12014539 (Registro de Reunião).
+
+Substituído pelo documento SEI 12015183. É uma duplicata de ata de reunião removendo informações restritas. Na primeira versão, não constava uma assinatura.
+
+03/09/2025 09:41
+GTNI
+
+Alterado nível de acesso do documento 12014539 (Registro de Reunião) para público
+
+03/09/2025 09:25
+GTNI
+
+Alterada hipótese legal do documento 9860355 (Registro de Reunião) para Sigilo Empresarial (Art. 169 da Lei nº 11.101/2005)
+
+03/09/2025 09:25
+GTNI
+
+Alterado nível de acesso do documento 9860355 (Registro de Reunião) para restrito
+
+20/02/2025 17:59
+GTNI
+
+Alterado nível de acesso do documento 8531462 (Abertura de Processo Normativo 1) para público
+
+20/02/2025 17:59
+GTNI
+
+Alterada hipótese legal do processo para Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)
+
+10/02/2025 11:16
+GTPR
+
+Alterada hipótese legal do processo para Vantagem Competitiva (Art. 19, III, da IN nº 70/2013)
+
+28/04/2023 08:59
+GTNI
+
+Processo recebido na unidade
+
+27/04/2023 14:07
+GTNI
+
+Processo remetido pela unidade GTPR
+
+25/04/2023 08:28
+GTPR
+
+Processo restrito gerado, Documento Preparatório (Art. 7º, § 3º, da Lei nº 12.527/2011)

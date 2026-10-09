@@ -1,0 +1,954 @@
+:: Sistema Eletrônico de Informações - Pesquisa Processual ::
+
+AGÊNCIA NACIONAL DE AVIAÇÃO CIVIL
+
+ANAC
+
+Pesquisa Processual
+
+Digite o código da imagem:
+
+G erar PDF
+
+G erar PDF
+I mprimir
+
+Processo: 00058.026190/2020-81
+
+Tipo: Fiscalização e Vigilância Continuada: Autos de Infrações e Multas
+
+Data de Geração: 24/07/2020
+
+Interessados: Wadson Ranielly Fernandes
+
+Processo ou Documento de Acesso Restrito - No presente processo existe algum documento restrito. A hipótese legal de restrição de acesso está indicada no ícone de chave amarela ao lado do número de protocolo do documento ou processo. O acesso a processos restritos é concedido apenas ao interessado, ao seu representante legal ou ao seu advogado. A solicitação de acesso depende de cadastro prévio do solicitante no Protocolo Eletrônico da ANAC - como Usuário Externo. Após acessar o sistema, o solicitante deverá iniciar um novo processo no Protocolo Eletrônico com o tipo: Gestão da Informação: Solicitação de Vista de Processo . O prazo para atendimento da solicitação é de 5 (cinco) dias a contar da data de registro do pedido. O usuário terá acesso ao processo pelo período mínimo de 10 dias. Quaisquer dúvidas sobre o nível de acesso, acesse o fale com a ANAC
+
+Lista de Protocolos (83 registros):
+
+Processo / Documento
+Tipo
+Data
+Data de Inclusão
+Unidade
+
+4574803 Auto de Infração 24/07/2020 24/07/2020 GTFI
+4575574 Relatório de Ocorrência (Interno) 24/07/2020 24/07/2020 GTFI
+4575576 Anexo 24/07/2020 24/07/2020 GTFI
+4575577 Anexo 24/07/2020 24/07/2020 GTFI
+4575578 Anexo 24/07/2020 24/07/2020 GTFI
+4575579 Anexo 24/07/2020 24/07/2020 GTFI
+4575580 Anexo 24/07/2020 24/07/2020 GTFI
+4575581 Anexo 24/07/2020 24/07/2020 GTFI
+4575582 Anexo 24/07/2020 24/07/2020 GTFI
+4575583 Anexo 24/07/2020 24/07/2020 GTFI
+4742187 Ofício 8887 08/09/2020 08/09/2020 ASJIN
+4864851 Aviso de Recebimento - AR 17/09/2020 07/10/2020 PROT-DF
+4892798 Pedido 14/10/2020 14/10/2020 ASJIN
+4892799 Procuração 14/10/2020 14/10/2020 ASJIN
+4892802 Recibo Eletrônico de Protocolo 14/10/2020 14/10/2020 ASJIN
+4943329 Despacho 27/10/2020 27/10/2020 ASJIN
+4989265 Defesa Prévia 09/11/2020 09/11/2020 CCPI
+4989266 Processo 09/11/2020 09/11/2020 CCPI
+4989268 Recibo Eletrônico de Protocolo 09/11/2020 09/11/2020 CCPI
+4999239 Anexo 11/11/2020 11/11/2020 CCPI
+5896458 Extrato 29/06/2021 29/06/2021 CCPI
+5896525 Análise Primeira Instância - PAS 244 06/07/2021 06/07/2021 CCPI
+5896696 Decisão Primeira Instância - PAS 523 07/07/2021 07/07/2021 CCPI
+5981754 Extrato 20/07/2021 20/07/2021 ASJIN
+5985026 Ofício 6477 22/07/2021 22/07/2021 ASJIN
+6035861 Recurso Administrativo 2a. Instância 03/08/2021 03/08/2021 ASJIN
+6035862 Recibo Eletrônico de Protocolo 03/08/2021 03/08/2021 ASJIN
+6079882 Aviso de Recebimento - AR 29/07/2021 13/08/2021 PROT-DF
+6095124 Despacho 17/08/2021 17/08/2021 ASJIN
+6103210 Despacho 20/08/2021 20/08/2021 CCPI
+6226417 Despacho 27/09/2021 27/09/2021 ASJIN
+6292358 Despacho 04/10/2021 04/10/2021 ASTEC
+6380647 Relatório de Diretoria 04/11/2021 04/11/2021 DIR-RBC
+6397872 Voto 04/11/2021 04/11/2021 DIR-RBC
+6422768 Despacho 08/11/2021 08/11/2021 ASTEC
+6463225 Ofício 10030 17/11/2021 17/11/2021 ASJIN
+6616189 Aviso de Recebimento - AR 30/11/2021 21/12/2021 PROT-DF
+6616334 Aviso de Recebimento - AR 30/11/2021 21/12/2021 PROT-DF
+6649617 Certidão 31/12/2021 31/12/2021 ASJIN
+6649619 Extrato 30/12/2021 30/12/2021 ASJIN
+6649622 Despacho 31/12/2021 31/12/2021 ASJIN
+6817131 Anexo 14/02/2022 14/02/2022 GTPO-SAF
+6817134 Anexo 14/02/2022 14/02/2022 GTPO-SAF
+6817139 Despacho 14/02/2022 14/02/2022 GTPO-SAF
+6832119 Despacho 17/02/2022 17/02/2022 DDA
+6711802 Despacho 08/06/2022 08/06/2022 CMCP
+7291418 Portaria 8280 09/06/2022 09/06/2022 CMCP
+6711805 Despacho 08/06/2022 08/06/2022 CMCP
+7293048 Anexo 08/06/2022 08/06/2022 CMCP
+7306070 Anexo 13/06/2022 13/06/2022 ASTEC
+8770711 Petição 23/06/2023 23/06/2023 ASJIN
+8770713 Procuração 23/06/2023 23/06/2023 ASJIN
+8770714 Recibo Eletrônico de Protocolo 23/06/2023 23/06/2023 ASJIN
+8773965 Certidão 26/06/2023 26/06/2023 ASJIN
+9852307 Processo 29/03/2024 29/03/2024 ASJIN
+13520891 Pedido de autorização 23/06/2026 23/06/2026 DIR-RCM
+13520893 Recibo Eletrônico de Protocolo 23/06/2026 23/06/2026 DIR-RCM
+13522462 Despacho 23/06/2026 23/06/2026 DIR-RCM
+13533045 Certidão 25/06/2026 25/06/2026 ASJIN
+13677329 Pedido de Revisão 30/07/2026 30/07/2026 ASJIN
+13677330 Procuração (representação) 30/07/2026 30/07/2026 ASJIN
+13677331 Documento de Identidade 30/07/2026 30/07/2026 ASJIN
+13677333 Ficha 30/07/2026 30/07/2026 ASJIN
+13677337 Document I 30/07/2026 30/07/2026 ASJIN
+13677341 Document II 30/07/2026 30/07/2026 ASJIN
+13677342 Document III 30/07/2026 30/07/2026 ASJIN
+13677343 Recibo Eletrônico de Protocolo 30/07/2026 30/07/2026 ASJIN
+13678650 Despacho 31/07/2026 31/07/2026 ASJIN
+13686482 Certidão de Distribuição 03/08/2026 03/08/2026 ASTEC
+13774054 Relatório de Diretoria 01/09/2026 01/09/2026 DIR-CBI
+13774501 Voto 01/09/2026 01/09/2026 DIR-CBI
+13812674 Despacho 01/09/2026 01/09/2026 ASTEC
+13816413 Voto 04/09/2026 04/09/2026 DIR-RCM
+13816902 Voto 04/09/2026 04/09/2026 DIR-P
+13818750 Voto 04/09/2026 04/09/2026 DIR-MNM
+13820172 Voto 04/09/2026 04/09/2026 DIR-RJH
+13854963 Certidão de Deliberação 11/09/2026 11/09/2026 ASTEC
+13859093 Ofício 1246 14/09/2026 14/09/2026 ASJIN
+13917708 Solicitação de Vista de Processo 25/09/2026 25/09/2026 ASJIN
+13917712 Recibo Eletrônico de Protocolo 25/09/2026 25/09/2026 ASJIN
+13933743 Certidão de Intimação Cumprida 29/09/2026 29/09/2026 ASJIN
+13939719 Anexo 30/09/2026 30/09/2026 ASJIN
+13939725 Certidão 30/09/2026 30/09/2026 ASJIN
+
+Lista de Andamentos (166 registros):
+
+Data/Hora
+Unidade
+Descrição
+
+01/10/2026 15:12
+ASJIN
+
+Conclusão do processo na unidade
+
+29/09/2026 23:24
+ASJIN
+
+Processo recebido na unidade
+
+29/09/2026 23:18
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+28/09/2026 14:46
+ASJIN
+
+Processo recebido na unidade
+
+25/09/2026 14:12
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+18/09/2026 10:22
+DIR-CBI
+
+Conclusão do processo na unidade
+
+15/09/2026 18:52
+ASJIN
+
+Alterada hipótese legal do documento 13859093 (Ofício 1246) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+15/09/2026 18:52
+ASJIN
+
+Alterado nível de acesso do documento 13859093 (Ofício 1246) para restrito
+
+11/09/2026 17:34
+ASJIN
+
+Processo recebido na unidade
+
+11/09/2026 11:27
+ASJIN
+
+Processo remetido pela unidade ASTEC
+
+11/09/2026 11:27
+ASTEC
+
+Cancelado documento 13835961 (Certidão de Deliberação).
+
+Substituída pela Certidão de Deliberação (SEI nº 13854963)
+
+11/09/2026 10:24
+DIR-MNM
+
+Conclusão do processo na unidade
+
+11/09/2026 09:48
+ASTEC
+
+Reabertura do processo na unidade
+
+09/09/2026 09:29
+ASJIN
+
+Processo recebido na unidade
+
+08/09/2026 13:34
+ASJIN
+
+Processo remetido pela unidade ASTEC
+
+08/09/2026 08:12
+DIR-RCM
+
+Conclusão do processo na unidade
+
+07/09/2026 14:39
+DIR-RJH
+
+Conclusão do processo na unidade
+
+02/09/2026 12:47
+DIR-MNM
+
+Processo recebido na unidade
+
+02/09/2026 11:54
+DIR-CBI
+
+Alterada hipótese legal do documento 13677331 (Documento de Identidade) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+02/09/2026 11:54
+DIR-CBI
+
+Alterado nível de acesso do documento 13677331 (Documento de Identidade) para restrito
+
+01/09/2026 17:55
+DIR-RCM
+
+Processo recebido na unidade
+
+01/09/2026 15:45
+DIR-P
+
+Processo recebido na unidade
+
+01/09/2026 15:38
+DIR-RJH
+
+Processo recebido na unidade
+
+01/09/2026 12:32
+DIR-RJH
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-MNM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-P
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 12:32
+DIR-RCM
+
+Processo remetido pela unidade ASTEC
+
+01/09/2026 11:14
+DIR-CBI
+
+Alterada hipótese legal do documento 13774501 (Voto) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/09/2026 11:14
+DIR-CBI
+
+Alterado nível de acesso do documento 13774501 (Voto) para restrito
+
+01/09/2026 11:14
+DIR-CBI
+
+Alterada hipótese legal do documento 13774054 (Relatório de Diretoria) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/09/2026 11:14
+DIR-CBI
+
+Alterado nível de acesso do documento 13774054 (Relatório de Diretoria) para restrito
+
+01/09/2026 10:59
+DIR-CBI
+
+Alterado nível de acesso do documento 13774501 (Voto) para público
+
+01/09/2026 10:58
+DIR-CBI
+
+Alterado nível de acesso do documento 13774054 (Relatório de Diretoria) para público
+
+27/08/2026 10:49
+ASTEC
+
+Reabertura do processo na unidade
+
+17/08/2026 10:38
+DIR-CBI
+
+Reabertura do processo na unidade
+
+13/08/2026 12:08
+DIR-RJH
+
+Reabertura do processo na unidade
+
+11/08/2026 12:13
+DIR-RJH
+
+Conclusão do processo na unidade
+
+11/08/2026 12:12
+DIR-RJH
+
+Processo recebido na unidade
+
+11/08/2026 11:35
+DIR-RJH
+
+Processo remetido pela unidade DIR-CBI
+
+03/08/2026 10:37
+ASTEC
+
+Conclusão do processo na unidade
+
+03/08/2026 10:16
+DIR-CBI
+
+Processo recebido na unidade
+
+03/08/2026 10:10
+DIR-CBI
+
+Processo remetido pela unidade ASTEC
+
+03/08/2026 10:04
+ASTEC
+
+Processo recebido na unidade
+
+31/07/2026 17:54
+ASTEC
+
+Processo remetido pela unidade ASJIN
+
+30/07/2026 17:02
+ASJIN
+
+Alterada hipótese legal do documento 13677337 (Document I) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+30/07/2026 17:02
+ASJIN
+
+Alterado nível de acesso do documento 13677337 (Document I) para restrito
+
+30/07/2026 17:00
+ASJIN
+
+Alterada hipótese legal do documento 13677329 (Pedido de Revisão) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+30/07/2026 17:00
+ASJIN
+
+Alterado nível de acesso do documento 13677329 (Pedido de Revisão) para restrito
+
+30/07/2026 17:00
+ASJIN
+
+Alterada hipótese legal do documento 13677330 (Procuração (representação)) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+30/07/2026 17:00
+ASJIN
+
+Alterado nível de acesso do documento 13677330 (Procuração (representação)) para restrito
+
+30/07/2026 16:57
+ASJIN
+
+Processo recebido na unidade
+
+30/07/2026 16:22
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+30/07/2026 16:20
+ASJIN
+
+Reabertura do processo na unidade
+
+26/06/2026 14:45
+ASJIN
+
+Conclusão do processo na unidade
+
+24/06/2026 10:09
+ASTEC
+
+Disponibilizado acesso externo para SIS_SANTOSDUMONT
+
+24/06/2026 07:41
+ASJIN
+
+Processo recebido na unidade
+
+23/06/2026 17:39
+DIR-RCM
+
+Conclusão do processo na unidade
+
+23/06/2026 17:31
+ASJIN
+
+Processo remetido pela unidade DIR-RCM
+
+23/06/2026 15:59
+DIR-RCM
+
+Processo recebido na unidade
+
+23/06/2026 15:12
+DIR-RCM
+
+Processo remetido pela unidade DIR-RCM
+
+23/06/2026 15:12
+DIR-RCM
+
+Reabertura do processo na unidade
+
+23/05/2024 15:29
+DIR-RBC
+
+Conclusão do processo na unidade
+
+23/05/2024 15:29
+DIR-RBC
+
+Alterada hipótese legal do documento 6380647 (Relatório de Diretoria) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+23/05/2024 15:29
+DIR-RBC
+
+Alterado nível de acesso do documento 6380647 (Relatório de Diretoria) para restrito
+
+23/05/2024 15:28
+DIR-RBC
+
+Reabertura do processo na unidade
+
+29/03/2024 13:32
+ASJIN
+
+Conclusão do processo na unidade
+
+29/03/2024 13:10
+ASJIN
+
+Alterada hipótese legal do documento 8770713 (Procuração) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+29/03/2024 13:10
+ASJIN
+
+Alterado nível de acesso do documento 8770713 (Procuração) para restrito
+
+29/03/2024 13:09
+ASJIN
+
+Reabertura do processo na unidade
+
+26/06/2023 11:32
+ASJIN
+
+Conclusão do processo na unidade
+
+26/06/2023 09:08
+ASJIN
+
+Processo recebido na unidade
+
+23/06/2023 17:22
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+23/06/2023 17:22
+ASJIN
+
+Reabertura do processo na unidade
+
+06/06/2023 10:14
+ASJIN
+
+Conclusão do processo na unidade
+
+01/12/2022 14:31
+ASJIN
+
+Alterado nível de acesso do processo para público
+
+01/12/2022 13:17
+ASJIN
+
+Alterada hipótese legal do documento 6817139 (Despacho) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/12/2022 13:17
+ASJIN
+
+Alterado nível de acesso do documento 6817139 (Despacho) para restrito
+
+01/12/2022 13:14
+ASJIN
+
+Alterada hipótese legal do documento 6463225 (Ofício 10030) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/12/2022 13:14
+ASJIN
+
+Alterado nível de acesso do documento 6463225 (Ofício 10030) para restrito
+
+01/12/2022 13:10
+ASJIN
+
+Alterada hipótese legal do documento 4892799 (Procuração) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/12/2022 13:10
+ASJIN
+
+Alterado nível de acesso do documento 4892799 (Procuração) para restrito
+
+01/12/2022 12:50
+ASJIN
+
+Alterada hipótese legal do documento 4575574 (Relatório de Ocorrência (Interno)) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/12/2022 12:50
+ASJIN
+
+Alterado nível de acesso do documento 4575574 (Relatório de Ocorrência (Interno)) para restrito
+
+01/12/2022 12:50
+ASJIN
+
+Alterada hipótese legal do documento 4574803 (Auto de Infração) para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+01/12/2022 12:50
+ASJIN
+
+Alterado nível de acesso do documento 4574803 (Auto de Infração) para restrito
+
+29/11/2022 15:17
+ASJIN
+
+Reabertura do processo na unidade
+
+13/06/2022 09:39
+ASTEC
+
+Conclusão do processo na unidade
+
+09/06/2022 17:35
+ASJIN
+
+Conclusão do processo na unidade
+
+09/06/2022 16:30
+ASJIN
+
+Processo recebido na unidade
+
+09/06/2022 16:22
+ASTEC
+
+Processo recebido na unidade
+
+09/06/2022 16:22
+ASTEC
+
+Processo remetido pela unidade CMCP
+
+09/06/2022 16:22
+CMCP
+
+Reabertura do processo na unidade
+
+09/06/2022 16:21
+ASJIN
+
+Processo remetido pela unidade CMCP
+
+17/02/2022 11:47
+DDA
+
+Conclusão do processo na unidade
+
+15/02/2022 08:45
+DDA
+
+Processo recebido na unidade
+
+14/02/2022 18:55
+CCSR
+
+Processo recebido na unidade
+
+14/02/2022 18:55
+DDA
+
+Processo remetido pela unidade CCSR
+
+14/02/2022 09:05
+CCSR
+
+Processo remetido pela unidade GTPO-SAF
+
+13/02/2022 15:02
+GTPO-SAF
+
+Reabertura do processo na unidade
+
+04/01/2022 11:32
+GTPO-SAF
+
+Conclusão do processo na unidade
+
+03/01/2022 11:00
+GTPO-SAF
+
+Alterada hipótese legal do processo para Informação Pessoal (Art. 31 da Lei nº 12.527/2011)
+
+03/01/2022 11:00
+GTPO-SAF
+
+Alterado nível de acesso do processo para restrito
+
+31/12/2021 11:56
+GTPO-SAF
+
+Processo recebido na unidade
+
+31/12/2021 10:33
+CMCP
+
+Processo recebido na unidade
+
+31/12/2021 10:29
+CMCP
+
+Processo remetido pela unidade GCEP
+
+31/12/2021 10:19
+GTQC
+
+Processo recebido na unidade
+
+31/12/2021 10:10
+GTPO-SAF
+
+Processo remetido pela unidade ASJIN
+
+31/12/2021 10:10
+GTQC
+
+Processo remetido pela unidade ASJIN
+
+21/12/2021 14:56
+ASJIN
+
+Processo recebido na unidade
+
+21/12/2021 14:37
+ASJIN
+
+Processo remetido pela unidade PROT-DF
+
+21/12/2021 14:37
+PROT-DF
+
+Reabertura do processo na unidade
+
+21/12/2021 14:27
+ASJIN
+
+Processo recebido na unidade
+
+21/12/2021 14:22
+ASJIN
+
+Processo remetido pela unidade PROT-DF
+
+21/12/2021 14:22
+PROT-DF
+
+Reabertura do processo na unidade
+
+30/11/2021 12:43
+DIR-RBC
+
+Conclusão do processo na unidade
+
+23/11/2021 16:46
+PROT-DF
+
+Conclusão do processo na unidade
+
+23/11/2021 15:45
+PROT-DF
+
+Processo recebido na unidade
+
+23/11/2021 10:00
+PROT-DF
+
+Processo remetido pela unidade ASJIN
+
+22/11/2021 13:57
+PROT-DF
+
+Conclusão do processo na unidade
+
+19/11/2021 09:08
+PROT-DF
+
+Processo recebido na unidade
+
+17/11/2021 15:56
+PROT-DF
+
+Processo remetido pela unidade ASJIN
+
+08/11/2021 14:59
+ASJIN
+
+Processo recebido na unidade
+
+08/11/2021 14:52
+ASJIN
+
+Processo remetido pela unidade ASTEC
+
+28/10/2021 17:36
+GINT
+
+Conclusão do processo na unidade
+
+28/10/2021 17:36
+GINT
+
+Processo recebido na unidade
+
+28/10/2021 17:35
+GINT
+
+Processo remetido pela unidade DIR-RBC
+
+27/10/2021 17:53
+ASTEC
+
+Reabertura do processo na unidade
+
+04/10/2021 16:09
+DIR-RBC
+
+Processo recebido na unidade
+
+04/10/2021 15:52
+ASTEC
+
+Conclusão do processo na unidade
+
+04/10/2021 15:35
+DIR-RBC
+
+Processo remetido pela unidade ASTEC
+
+27/09/2021 17:13
+ASTEC
+
+Processo recebido na unidade
+
+27/09/2021 16:06
+ASTEC
+
+Processo remetido pela unidade ASJIN
+
+20/08/2021 11:52
+ASJIN
+
+Processo recebido na unidade
+
+20/08/2021 11:52
+ASJIN
+
+Processo remetido pela unidade CCPI
+
+17/08/2021 20:35
+CCPI
+
+Processo recebido na unidade
+
+17/08/2021 20:35
+CCPI
+
+Processo remetido pela unidade ASJIN
+
+13/08/2021 11:11
+ASJIN
+
+Processo recebido na unidade
+
+13/08/2021 11:06
+ASJIN
+
+Processo remetido pela unidade PROT-DF
+
+13/08/2021 11:04
+PROT-DF
+
+Reabertura do processo na unidade
+
+03/08/2021 15:30
+ASJIN
+
+Processo recebido na unidade
+
+03/08/2021 14:09
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+23/07/2021 10:01
+PROT-DF
+
+Conclusão do processo na unidade
+
+23/07/2021 09:07
+PROT-DF
+
+Processo recebido na unidade
+
+22/07/2021 13:51
+PROT-DF
+
+Processo remetido pela unidade ASJIN
+
+07/07/2021 17:54
+ASJIN
+
+Processo recebido na unidade
+
+07/07/2021 17:54
+ASJIN
+
+Processo remetido pela unidade CCPI
+
+01/06/2021 09:07
+CCPI
+
+Remoção de sobrestamento
+
+16/03/2021 10:18
+CCPI
+
+Remoção de sobrestamento
+
+09/11/2020 12:23
+CCPI
+
+Processo recebido na unidade
+
+09/11/2020 12:11
+CCPI
+
+Processo remetido pela unidade CCPI
+
+30/10/2020 08:28
+CCPI
+
+Processo recebido na unidade
+
+30/10/2020 08:28
+CCPI
+
+Processo remetido pela unidade ASJIN
+
+14/10/2020 15:43
+ASJIN
+
+Processo recebido na unidade
+
+14/10/2020 15:40
+ASJIN
+
+Processo remetido pela unidade ASJIN
+
+07/10/2020 10:27
+ASJIN
+
+Processo recebido na unidade
+
+07/10/2020 09:59
+ASJIN
+
+Processo remetido pela unidade PROT-DF
+
+07/10/2020 09:58
+PROT-DF
+
+Reabertura do processo na unidade
+
+11/09/2020 12:13
+PROT-DF
+
+Conclusão do processo na unidade
+
+09/09/2020 16:51
+PROT-DF
+
+Processo recebido na unidade
+
+09/09/2020 14:42
+PROT-DF
+
+Processo remetido pela unidade ASJIN
+
+12/08/2020 16:41
+GTFI
+
+Conclusão do processo na unidade
+
+24/07/2020 17:20
+ASJIN
+
+Disponibilizado acesso externo para SIS_SCP
+
+24/07/2020 17:20
+ASJIN
+
+Processo recebido na unidade
+
+24/07/2020 16:55
+ASJIN
+
+Processo remetido pela unidade GTFI
+
+24/07/2020 14:18
+GTFI
+
+Disponibilizado acesso externo para SIS_SMI
+
+24/07/2020 14:18
+GTFI
+
+Processo público gerado

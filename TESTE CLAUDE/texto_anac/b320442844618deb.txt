@@ -1,0 +1,59 @@
+SEI/ANAC - 12969056 - Voto
+
+Voto
+
+PROCESSO: 00058.000910/2025-93
+
+INTERESSADO: SUPERINTENDÊNCIA DE INFRAESTRUTURA AEROPORTUÁRIA - SIA
+
+RELATORa: MARIANA OLIVIERI CAIXETA ALTOÉ
+
+da competência
+
+A Lei nº 11.182/2005, em seu art.8º, incisos X e XLVI, estabelece a competência da ANAC para adotar as medidas necessárias para o atendimento do interesse público e para o desenvolvimento e o fomento da aviação civil, bem como a competência da Diretoria Colegiada para exercer o poder normativo da Agência.
+
+Nesse sentido, fica evidente a competência da Diretoria Colegiada desta Agência para deliberar sobre o presente feito.
+
+DA análise e fundamentação
+
+Conforme indicado no Relatório (SEI 12962929 ), a presente deliberação trata do d esenvolvimento de tema 3 da Agenda Regulatória da ANAC para o biênio 2025-2026, intitulado “ Reconciliação do passageiro e bagagem despachada” , visando à revisão de regulamentação quanto à possibilidade do transporte de bagagem despachada, no caso de o passageiro não embarcar no voo correspondente ( no show ), considerando a existência e aplicação de outras medidas de segurança .
+
+Originada em meados dos anos 1980, como medida de segurança contra a inserção de dispositivos explosivos em bagagens despachadas, a reconciliação do passageiro e sua bagagem despachada é processo por meio do qual o operador aéreo garante que a bagagem despachada transportada em uma aeronave seja identificada como acompanhada ou desacompanhada, bem como se pertence a passageiro ou tripulante que pode estar ou não presente na mesma aeronave. Assim, a reconciliação da bagagem despachada permite que o operador aéreo rastreie as bagagens acompanhadas e desacompanhadas desde o momento da sua aceitação para transporte até a chegada ao destino final.
+
+A emenda atual do RBAC nº 108, especificamente o requisito 108.61(a), replica regra do já revogado Decreto nº 7.168/2010 ( Programa Nacional de Segurança da Aviação Civil contra Atos de Interferência Ilícita - PNAVSEC), que estabelecia em seu art. 186 que, caso o passageiro não embarque, sua bagagem despachada deve ser retirada da aeronave e submetida a medidas de controle de segurança, sem exceções.
+
+Assim, atualmente no Brasil, quando o passageiro não embarca para o voo programado, a sua bagagem despachada precisa ser localizada e retirada da aeronave antes da decolagem, em todos os casos, gerando atrasos operacionais e transtornos aos demais passageiros do voo, além de prejuízos aos operadores aéreos e de aeródromo, conforme explicitado no Relatório de Análise de Impacto Regulatório nº 7/2025/GTNO-SIA/GNAD-SIA (SEI nº 12173762 ).
+
+Com a edição do Decreto nº 11.195/2022, versão vigente do PNAVSEC, foram revisadas as diretrizes para a regulamentação do procedimento de reconciliação da bagagem despachada, passando a ser prevista a possibilidade de transporte de bagagens despachadas sem o embarque do passageiro, desde que haja a aplicação de outros controles de segurança a serem regulamentados pela ANAC, conforme abaixo:
+
+Art. 146. Os operadores aéreos adotarão procedimentos para assegurar a reconciliação de bagagens despachadas com os passageiros.
+
+Parágrafo único. O transporte de bagagens despachadas sem o embarque do passageiro poderá ser facultado, quando houver outros controles de segurança que incluam a inspeção de segurança na bagagem e a depender de avaliação de risco, conforme regulamentação da ANAC.
+
+Para regulamentação da diretriz acima, a área técnica da SIA propõe revisão do RBAC nº 108 e da Instrução Suplementar - IS nº 108, de forma a estabelecer os requisitos e os meios aceitáveis de cumprimento para que o operador aéreo possa realizar o transporte de bagagens despachadas sem o embarque do respectivo passageiro.
+
+Em relação a proposta de emenda ao RBAC nº 108, ela estabelece a exclusão da seção 108.61 e revisão do texto da seção 108.63, que trata da bagagem desacompanhada, passando a prever que o operador aéreo deve garantir que a bagagem embarcada que , de maneira não intencional , venha a se tornar desacompanhada durante o seu processo de despacho, seja submetida a controles de segurança proporcionais aos riscos à operação aérea, excluindo a atual previsão taxativa (da seção 108.61) de que todas as bagagens nesta condição devem ser retiradas da aeronave.
+
+Acerca das alterações no RBAC nº 108, importante destacar que já foram aprovadas pela Diretoria Colegiada no âmbito do processo nº 00058.034495/2021-48 , que aprovou a Emenda nº 09 ao RBAC nº 108 (Resolução nº 796, de 19 de fevereiro de 2026), no contexto das amplas revisões normativas referentes a o Tema 10 da Agenda Regulatória para o biênio 2023/2024, intitulado "Revisão do RBAC nº 107 e do RBAC nº 108, baseada em avaliação de risco". No entanto, tal emenda só entrará em vigor em 23/02/2027.
+
+Desta forma, a alteração pontual aqui proposta para o RBAC nº 108 busca garantir uma vigência mais célere para os requisitos e procedimentos especificamente relacionados à reconciliação da bagagem despachada, atendendo à urgência para tratamento do tema demonstrada pelo setor aéreo durante a etapa de AIR. Além disso, em relação aos impactos das novas regras aos operadores aéreos, destaco que a aplicação do procedimento atual de retirada da bagagem despachada da aeronave em todos os casos de não embarque do passageiro ainda será uma solução possível para as empresas aéreas que assim optarem.
+
+A revisão da IS nº 108, cujo conteúdo é classificado como informação restrita de AVSEC, visa estabelecer os procedimentos aceitos pela ANAC para a realização do transporte das bagagens despachadas nos casos de não embarque do respectivo passageiro. Em síntese, os procedimentos propostos pela área técnica foram desenvolvidos utilizando como base o documento de orientação intitulado " Hold Baggage Screening, Handling and Processing" ( Inspeção, Manuseio e Processamento da Bagagem Despachada) , publicado pela Organização da Aviação Civil Internacional - OACI em junho de 2025.
+
+Como demonstrado acima, as alterações normativas buscam alinhar a regulamentação da ANAC com a versão atual do PNAVSEC e com as melhores práticas internacionais que buscam o melhor equilíbrio da segurança e da facilitação do transporte aéreo. Assim, concluindo, entendo que as propostas de atos normativos apresentadas pela área técnica da SIA estão maduras e aptas para a aprovação do início da fase de consulta pública, etapa essencial para coleta de subsídios da indústria e posterior refinamento dos regulamentos.
+
+DO VOTO
+
+Ante o exposto, VOTO FAVORAVELMENTE à instauração de consulta pública pelo prazo de 45 dias a respeito das propostas de regulamentação apresentadas pela SIA no item 7 da Nota Técnica nº 1/2026/GTNO-SIA/GNAD/SIA (SEI 12636477 ), destacando a necessidade de observar as regras para acesso às informações restritas de AVSEC para o conteúdo normativo classificado como tal.
+
+É como voto.
+
+MARIANA OLIVIERI CAIXETA ALTOÉ
+
+Diretora - Relatora
+
+Documento assinado eletronicamente por Mariana Olivieri Caixeta Altoé , Diretora Substituta , em 02/04/2026, às 17:47, conforme horário oficial de Brasília, com fundamento no art. 4º, do Decreto nº 10.543, de 13 de novembro de 2020 .
+
+A autenticidade deste documento pode ser conferida no site https://sei.anac.gov.br/sei/autenticidade , informando o código verificador 12969056 e o código CRC E64916D9 .
+
+SEI nº 12969056
