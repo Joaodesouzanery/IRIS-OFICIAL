@@ -2851,7 +2851,7 @@
  },
  "ANAC|RE16 item 3 (proc. 00058.035485/2026-34) — certidão desta reunião|link incorreto na fonte": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|RD5 — ata (presença, votos nominais, vencidos)|documento não publicado": {
@@ -3145,6 +3145,11 @@
   "ultima_vez": "2026-10-09"
  },
  "ANAC|Início exato do exercício de Mariana Altoé e fim dos mandatos de Luiz Ricardo Nascimento e Tiago Sousa Pereira|dado não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": "2026-10-09",
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|Fim do mandato de Mariana Altoé (Diretora Substituta) e de Tiago Sousa Pereira, e início do exercício de Altoé|dado não publicado": {
   "primeira_vez": "2026-10-09",
   "resolvida_em": null,
   "ultima_vez": "2026-10-09"

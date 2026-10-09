@@ -11602,7 +11602,7 @@
    "processo": "25351.109991/2021-79",
    "deliberacao": "3.4.1.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "voto": "RELATOR (voto proferido; vista concedida)",
    "proveniencia": "nominal"
   },
   {
@@ -30161,7 +30161,7 @@
   [
    "ANVISA",
    "Impedimento/ausência na votação em itens de sessão reservada",
-   "67 linhas lidas das notas da ata (varredura de todo o item, exceto a 1ª sentença dos bullets de histórico \"- ROP/SJO\")",
+   "66 linhas lidas das notas da ata (varredura de todo o item, exceto a 1ª sentença dos bullets de histórico \"- ROP/SJO\")",
    "FEITO",
    "O texto corrido do histórico não separa decisões anteriores do relato da sessão atual; retiradas de pauta mantêm o critério antigo (não varrem o item inteiro)",
    "Se a ANVISA mudar o layout, rever o filtro de histórico"

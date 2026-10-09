@@ -106,7 +106,9 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
         # Notas de impedimento/ausencia podem estar apos bullets de historico que, no texto corrido, engolem o relato da sessao
         # (item de "sessao reservada" nao traz o marcador "apreciado em CD"). Varre o item inteiro menos a 1a sentenca de cada
         # bullet de historico ("- ROP n/AAAA, item ..." / "- SJO ...") e une com a janela antiga `atual`. Retiradas ficam de fora (ninguem votou).
-        corpo = re.sub(r'-\s*(?:ROP|REP|SJO)\s*n?[ºo]?\s*\d+/\d{4}\b.*?(?:\.(?=\s+(?:[A-ZÀ-Ú]|-\s))|$)', ' ', btxt)
+        # bullet de historico de 2025 ou antes cuja 1a sentenca ja e uma DECISAO (tomou conhecimento/concedeu vista/decidiu): o resto do bullet (sessao reservada, ouvintes, registros) e historico, nao a sessao atual
+        btxt_h = re.sub(r'-\s*(?:ROP|REP|SJO)\s*n?[ºo]?\s*\d+/(?:20[01]\d|2025)\b[^-]{0,40}?-\s*(?:(?!\.\s+[A-ZÀ-Ú]).){0,250}?(?:tomou conhecimento do relat|concedeu vista|decidiu).*?(?=\s-\s(?:A Diretoria|Retirado|Item|ROP|REP|SJO)\b|$)', ' ', btxt)
+        corpo = re.sub(r'-\s*(?:ROP|REP|SJO)\s*n?[ºo]?\s*\d+/\d{4}\b.*?(?:\.(?=\s+(?:[A-ZÀ-Ú]|-\s))|$)', ' ', btxt_h)
         varre = atual + ' ' + corpo if tipo != 'Retirada de pauta' else ''
         imp = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,80}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]\s+(?:na|da|d[ao]) vota[çc][ãa]o', varre) + re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]', atual)))
         cds_cit = sorted({int(x.replace('.', '')) for x in re.findall(r'Circuito Deliberativo\s+n[ºo]?\s*([\d.]+)/2026', atual)})
