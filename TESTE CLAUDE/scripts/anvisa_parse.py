@@ -67,6 +67,7 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
         fin = [b for k, b in desf if k == 'fin']; vis = [b for k, b in desf if k == 'vis']
         ult = desf[-1][0] if desf else None
         tipo, res_, vencidos, vista_a, decis, vexterno, votaram = 'Deliberação', '', [], [], '', False, []
+        rel_venc, nominais_maioria = False, set()
         if ult == 'fin':
             decis = fin[-1]; mm = re.match(r'^-\s*A Diretoria Colegiada decidiu,?\s*(por unanimidade|por maioria)?,?\s*(.*)$', decis)
             modo = (mm[1] or '').replace('por ', '') if mm else ''
@@ -76,6 +77,11 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
                 vencidos = quem(vv[1]) if vv else []
                 if vv and re.search(r'Relator(?:a)?(?! à época)', vv[1]): vencidos = list(dict.fromkeys(vencidos + rel))
                 vexterno = bool(vv) and not vencidos
+                # D4: relator vencido -> quem seguiu a tese vencedora votou CONTRA o relator (convencao do extrato de CD: DIVERGIU)
+                rel_venc = bool(rel) and rel[0] in vencidos
+                ms_ = re.findall(r'((?:O|A|Os|As)\s+[^.]*?)\s+acompanhar(?:am|á)\s+o\s+voto', btxt); seguiu = quem(ms_[-1]) if ms_ else []
+                mt_ = re.search(r'nos termos do voto d[oa]s?\s+(?:Diretor[a]?(?: Substituto)?\s+)?([^.,;]+)', decis); autor = quem(mt_[1]) if mt_ else []
+                nominais_maioria = set(seguiu) | set(autor)
             runs = [x for x in re.findall(r'((?:N[ÃA]O )?[A-ZÇÃÕÉÊÍÓÚ]{4,}(?: (?:E |DE |DO |DA |O |A |OS |AS )?[A-ZÇÃÕÉÊÍÓÚ]{2,})*)', resto) if x.split()[0] not in ('DIRE', 'ANVISA', 'DIRETOR', 'PRESIDENTE', 'DIRETORA', 'SEI')]
             acao = runs[0] if runs else ''
             res_ = f"{acao or 'DECIDIU'} — {'POR UNANIMIDADE' if modo == 'unanimidade' else 'POR MAIORIA' if modo == 'maioria' else (modo or 'SEM MODO NA ATA')}".strip()
@@ -97,10 +103,16 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
             if re.match(r'^-\s*ROP\s*\d+', b): atual = atual.replace(b, ' ')
         mk = [mm.start() for mm in re.finditer(r'O item foi apreciado (?:em sigilo )?(?:no|em) Circuito Deliberativo\s+n[ºo]\s*[\d.]+/2026', btxt)]
         if mk: atual = btxt[mk[-1]:]
-        imp = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]', atual)))
+        # Notas de impedimento/ausencia podem estar apos bullets de historico que, no texto corrido, engolem o relato da sessao
+        # (item de "sessao reservada" nao traz o marcador "apreciado em CD"). Varre o item inteiro menos a 1a sentenca de cada
+        # bullet de historico ("- ROP n/AAAA, item ..." / "- SJO ...") e une com a janela antiga `atual`. Retiradas ficam de fora (ninguem votou).
+        corpo = re.sub(r'-\s*(?:ROP|REP|SJO)\s*n?[ºo]?\s*\d+/\d{4}\b.*?(?:\.(?=\s+(?:[A-ZÀ-Ú]|-\s))|$)', ' ', btxt)
+        varre = atual + ' ' + corpo if tipo != 'Retirada de pauta' else ''
+        imp = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,80}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]\s+(?:na|da|d[ao]) vota[çc][ãa]o', varre) + re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?(?:declarou-se|declarou se)\s+(?:impedid|suspeit)[oa]', atual)))
         cds_cit = sorted({int(x.replace('.', '')) for x in re.findall(r'Circuito Deliberativo\s+n[ºo]?\s*([\d.]+)/2026', atual)})
-        ausv = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?esteve ausente d[ae] vota[çc][ãa]o', atual)))
-        proferiu = quem(' '.join(re.findall(r'(?:O|A) Diretor[a]?[^.]{0,50}?proferiu o Voto', atual)))
+        ausv = quem(' '.join(re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,60}?esteve ausente d[ae] vota[çc][ãa]o', atual) + re.findall(r'(?:Diretor|Diretora|Diretor Substituto)[^.]{0,80}?(?:esteve ausente|ausentou-se)\s+(?:d[ae]|n[ae])\s+(?:vota[çc][ãa]o|sess[ãa]o reservada)', varre)))
+        proferiu = quem(' '.join(re.findall(r'(?:O|A) Diretor[a]?[^.]{0,50}?proferiu o Voto', atual + ' ' + corpo)))
+        if tipo == 'Vista': votaram = list(dict.fromkeys(votaram + [x for x in proferiu if x not in vista_a and x not in rel]))  # D5: a ata cita 'proferiu o Voto n' antes da vista
         if re.search(r'Item renumerado de [\d.]+ para [\d.]+', btxt): Qd.setdefault(tag + '_renumerados', []).append(item); continue
         if item.startswith('1.'): Qd.setdefault(tag + '_informes', []).append(item); continue
         deli = item; pr = procs[0] if procs else f'{tag}-{item}'
@@ -119,15 +131,19 @@ for tag, m in sorted(man.items(), key=lambda kv: kv[1]['data']):
             elif 'SEM DESFECHO' in res_: v, pv = 'A REVISAR (sem desfecho na ata)', 'REVISAR'
             elif 'MAIORIA' in res_:
                 if n in vencidos and n in rel: v, pv = 'RELATOR (voto vencido)', 'nominal'
+                elif rel_venc and n in vencidos: v, pv = 'ACOMPANHOU (acompanhou o relator, vencido)', 'nominal'
                 elif n in vencidos: v, pv = 'DIVERGIU (vencido)', 'nominal'
                 elif n in rel: v, pv = 'RELATOR (voto proferido)', 'nominal'
+                elif rel_venc: v, pv = 'DIVERGIU (votou contra o relator vencido; integra a maioria)', 'nominal' if n in nominais_maioria else 'inferido'
                 elif vencidos or vexterno: v, pv = 'ACOMPANHOU', 'inferido'
                 else: v, pv = 'A REVISAR (maioria sem vencidos nomeados)', 'REVISAR'
             else:
                 if n in rel: v, pv = 'RELATOR (voto proferido)', 'nominal'
                 else: v, pv = 'ACOMPANHOU', 'inferido'
             V.append(dict(base, voto=v, proveniencia=pv))
-        for n in aus: V.append({'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'diretor': n, 'voto': 'AUSENTE (não consta entre os presentes)', 'proveniencia': 'nominal'})
+        for n in aus:
+            if tipo == 'Vista' and n in vista_a: V.append({'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'diretor': n, 'voto': 'PEDIU VISTA (não consta entre os presentes do cabeçalho; a ata registra a concessão de vista)', 'proveniencia': 'nominal'}); continue  # D8
+            V.append({'reuniao': tag, 'data': m['data'], 'processo': pr, 'deliberacao': deli, 'diretor': n, 'voto': 'AUSENTE (não consta entre os presentes)', 'proveniencia': 'nominal'})
         Qd.setdefault(tag, []).append({'ausv': ausv, 'votaram': votaram, 'item': item, 'tipo': tipo, 'rel': rel, 'vencidos': vencidos, 'imp': imp, 'vista': vista_a, 'proferiu': proferiu, 'ndec': len(fin)})
     ntot_dec = len(re.findall(r'(?:^|[.;:)] )- ?A Diretoria Colegiada decidiu', h))
     R.append({'reuniao': tag, 'titulo': m['titulo'], 'tipo': m['tipo'], 'data': m['data'], 'presentes': pres, 'ausentes': aus, 'obs': '', '_ret_hdr': sorted(ret_hdr), '_sig_hdr': sorted(sig_hdr), '_ndec_total': ntot_dec, '_ndec_blocos': sum(q['ndec'] for q in Qd.get(tag, []))})
@@ -177,6 +193,9 @@ cob = [['ANVISA', 'Reuniões 2026 com ata lida', len(R), f'ROP {sorted(int(t[3:]
        ['ANVISA', 'Itens renumerados (duplicata de outro item)', sum(len(v) for k, v in Qd.items() if k.endswith('_renumerados')), 'ficam fora: contados no número novo']]
 nf = [['ANVISA', 'Votos escritos (PDF por ROP)', f'{len(inv["votos_pastas"])} pastas de votos não lidas', 'NÃO FEITO', 'Só a ata foi lida; os votos escritos detalham divergências', 'Ler os PDFs de voto das ROP com maioria'],
       ['ANVISA', 'Votos já proferidos em itens com vista', f'{sum(1 for v in V if v["voto"].startswith("SEM VOTO AINDA"))} linhas "sem voto ainda"', 'NÃO FEITO', 'A ata cita os votos já dados antes da vista ("dos votos da Diretora X, do Diretor Y"); hoje todos os não-relator ficam "sem voto ainda"', 'Registrar esses votos como nominais'],
+      ['ANVISA', 'Relator vencido: quem integra a maioria vencedora (DIVERGIU)', f'{sum(1 for v in V if v["voto"].startswith("DIVERGIU (votou contra o relator vencido") and v["proveniencia"] == "inferido")} linhas inferidas por exclusão (ROP5 4.1.2.1, ROP9 3.4.3.1) + {sum(1 for v in V if v["voto"].startswith("DIVERGIU (votou contra o relator vencido") and v["proveniencia"] == "nominal")} nominais (ROP6 3.4.1.1 nomeia quem acompanhou o voto vencedor; autor do voto vencedor nomeado nos demais)', 'LIMITE DA FONTE', 'A ata nomeia só os vencidos e o autor do voto vencedor; quem seguiu o voto vencedor sem ser nomeado entra por exclusão (todos presentes votaram). Convenção do extrato de CD: votar contra o relator = DIVERGIU', 'Conferir no voto escrito/vídeo da reunião'],
+      ['ANVISA', 'VOTOU (antes da vista) sem posição', f'{sum(1 for v in V if v["voto"].startswith("VOTOU (antes da vista"))} linhas (inclui ROP2 3.5.7.2 Thiago, Voto nº 43/2026)', 'LIMITE DA FONTE', 'A ata diz que o diretor proferiu o voto, mas não diz se acompanhou ou divergiu do relator', 'Ler o PDF do voto escrito'],
+      ['ANVISA', 'Impedimento/ausência na votação em itens de sessão reservada', f'{sum(1 for v in V if v["voto"].startswith(("IMPEDIDO", "AUSENTE DA VOTAÇÃO")))} linhas lidas das notas da ata (varredura de todo o item, exceto a 1ª sentença dos bullets de histórico "- ROP/SJO")', 'FEITO', 'O texto corrido do histórico não separa decisões anteriores do relato da sessão atual; retiradas de pauta mantêm o critério antigo (não varrem o item inteiro)', 'Se a ANVISA mudar o layout, rever o filtro de histórico'],
       ['ANVISA', 'Decisões compostas (I/II/III)', f'{sum(1 for d in D if "decisão composta" in d["resultado"])} itens', 'LIMITE DO MODELO', 'O resultado guarda a 1ª ação; as demais estão no texto da decisão', 'Listar todas as ações'],
       ['ANVISA', 'Itens com maioria sem vencido identificável', f'{sum(1 for v in V if v["proveniencia"] == "REVISAR")} linhas REVISAR', 'NÃO FEITO' if any(v['proveniencia'] == 'REVISAR' for v in V) else 'SEM CASOS', 'Ata diz "por maioria" sem nomear', 'Ler o voto escrito']]
 

@@ -28,13 +28,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-02",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -43,13 +44,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-02",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -58,13 +60,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-02",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -87,13 +90,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-05",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -102,13 +106,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-05",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -117,13 +122,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-01-05",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -150,10 +156,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -224,11 +231,12 @@
    "presentes": [
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -1555,12 +1563,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1585,12 +1594,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1600,12 +1610,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1615,12 +1626,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1630,12 +1642,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1645,12 +1658,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -1780,12 +1794,13 @@
    "data": "2026-02-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -4030,12 +4045,13 @@
    "data": "2026-04-07",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -4210,12 +4226,13 @@
    "data": "2026-04-07",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -4344,12 +4361,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-04-09",
    "presentes": [
+    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -4361,10 +4380,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -4376,10 +4396,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -4976,10 +4997,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -5036,10 +5058,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -5229,12 +5252,13 @@
    "data": "2026-04-28",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -5259,12 +5283,13 @@
    "data": "2026-04-28",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -5319,12 +5344,13 @@
    "data": "2026-04-29",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -5334,12 +5360,13 @@
    "data": "2026-04-29",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -5394,12 +5421,13 @@
    "data": "2026-04-29",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -5424,12 +5452,13 @@
    "data": "2026-04-29",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -6176,10 +6205,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -6191,10 +6221,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -6206,10 +6237,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -6221,10 +6253,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -6236,10 +6269,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -6325,11 +6359,12 @@
    "presentes": [
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -7104,11 +7139,12 @@
    "presentes": [
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -7765,10 +7801,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -7837,12 +7874,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-06-17",
    "presentes": [
+    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -7929,10 +7968,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -9485,13 +9525,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-14",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9591,12 +9632,13 @@
    "data": "2026-07-15",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -9680,13 +9722,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-17",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9755,13 +9798,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-21",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9770,13 +9814,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-21",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9785,13 +9830,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-21",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle",
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -9800,13 +9846,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-21",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle",
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -9815,13 +9862,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-22",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
-    "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle",
+    "Daniela Marreco Cerqueira"
+   ],
    "obs": ""
   },
   {
@@ -9830,13 +9878,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-22",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9845,13 +9894,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-22",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9860,13 +9910,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-22",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9875,13 +9926,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9890,13 +9942,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9905,13 +9958,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9920,13 +9974,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9935,13 +9990,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9950,13 +10006,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -9965,13 +10022,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10070,13 +10128,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10085,13 +10144,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10100,13 +10160,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10115,13 +10176,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10175,13 +10237,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-23",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10190,13 +10253,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-27",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10205,13 +10269,14 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-07-27",
    "presentes": [
-    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Leandro Pinheiro Safatle"
+   ],
    "obs": ""
   },
   {
@@ -10777,10 +10842,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -11645,12 +11711,13 @@
    "data": "2026-08-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -11857,10 +11924,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -11872,10 +11940,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -11887,10 +11956,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -11902,10 +11972,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -11992,10 +12063,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12007,10 +12079,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12020,12 +12093,13 @@
    "data": "2026-08-20",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -12052,10 +12126,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12067,10 +12142,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12082,10 +12158,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12112,10 +12189,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12127,10 +12205,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12142,10 +12221,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12172,10 +12252,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12187,10 +12268,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12202,10 +12284,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12217,10 +12300,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12232,10 +12316,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12247,10 +12332,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12262,10 +12348,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12277,10 +12364,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12292,10 +12380,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12307,10 +12396,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12322,10 +12412,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12337,10 +12428,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12352,10 +12444,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12367,10 +12460,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12382,10 +12476,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12397,10 +12492,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12427,10 +12523,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12442,10 +12539,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -12802,10 +12900,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
+    "Thiago Lopes Cardoso Campos"
+   ],
+   "ausentes": [
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
    "obs": ""
   },
   {
@@ -13070,12 +13169,13 @@
    "data": "2026-09-14",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13085,12 +13185,13 @@
    "data": "2026-09-18",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13100,12 +13201,13 @@
    "data": "2026-09-14",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13177,10 +13279,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -13312,10 +13415,11 @@
     "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
-    "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Thiago Lopes Cardoso Campos"
+   ],
    "obs": ""
   },
   {
@@ -13505,12 +13609,13 @@
    "data": "2026-09-21",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13520,12 +13625,13 @@
    "data": "2026-09-21",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13550,12 +13656,13 @@
    "data": "2026-09-21",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -13655,12 +13762,13 @@
    "data": "2026-09-21",
    "presentes": [
     "Leandro Pinheiro Safatle",
-    "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
     "Marcelo Mario Matos Moreira"
    ],
-   "ausentes": [],
+   "ausentes": [
+    "Daniel Meirelles Fernandes Pereira"
+   ],
    "obs": ""
   },
   {
@@ -14012,6 +14120,7 @@
    "tipo": "Circuito Deliberativo (DICOL)",
    "data": "2026-10-01",
    "presentes": [
+    "Leandro Pinheiro Safatle",
     "Daniel Meirelles Fernandes Pereira",
     "Daniela Marreco Cerqueira",
     "Thiago Lopes Cardoso Campos",
@@ -22254,8 +22363,8 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
-   "item_n": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
+   "item_n": "CD 386/2026 — proc. 25351.908100/2026-74",
    "relator": "Leandro Pinheiro Safatle",
    "interessado": "",
    "assunto": "Afastamento do País — Trata-se da participação da Anvisa na Décima quinta reunião do Grupo de Trabalho de Composição Aberta da Convenção da Basileia (OEWG-15), a ser realizada de 22 a 26 de junho de 2026, no Centro Internacional de Conferências de Genebra (CICG), em Genebra, Suíça.",
@@ -22278,8 +22387,8 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
-   "item_n": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
+   "item_n": "CD 386/2026 — proc. 25351.913539/2026-19",
    "relator": "Leandro Pinheiro Safatle",
    "interessado": "",
    "assunto": "Recurso LAI Ad Referendum — Trata-se de análise de recurso de 2a instância alusivo ao pedido de acesso à informação Fala.BR NUP no 25072.015244/2026-11.",
@@ -49489,6 +49598,15 @@
    "data": "2026-04-09",
    "processo": "25351.909245/2026-92",
    "deliberacao": "CD 323/2026",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU (SIM no extrato)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD323",
+   "data": "2026-04-09",
+   "processo": "25351.909245/2026-92",
+   "deliberacao": "CD 323/2026",
    "diretor": "Daniel Meirelles Fernandes Pereira",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal"
@@ -51864,7 +51982,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
    "diretor": "Leandro Pinheiro Safatle",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal"
@@ -51873,7 +51991,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
    "diretor": "Daniel Meirelles Fernandes Pereira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51882,7 +52000,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
    "diretor": "Daniela Marreco Cerqueira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51891,7 +52009,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
    "diretor": "Thiago Lopes Cardoso Campos",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51900,7 +52018,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.908100/2026-74",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.908100/2026-74",
    "diretor": "Marcelo Mario Matos Moreira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51909,7 +52027,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
    "diretor": "Leandro Pinheiro Safatle",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal"
@@ -51918,7 +52036,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
    "diretor": "Daniel Meirelles Fernandes Pereira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51927,7 +52045,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
    "diretor": "Daniela Marreco Cerqueira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51936,7 +52054,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
    "diretor": "Thiago Lopes Cardoso Campos",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -51945,7 +52063,7 @@
    "reuniao": "CD386",
    "data": "2026-04-27",
    "processo": "25351.913539/2026-19",
-   "deliberacao": "CD 386/2026",
+   "deliberacao": "CD 386/2026 — proc. 25351.913539/2026-19",
    "diretor": "Marcelo Mario Matos Moreira",
    "voto": "ACOMPANHOU (SIM no extrato)",
    "proveniencia": "nominal"
@@ -59949,6 +60067,15 @@
    "deliberacao": "CD 572/2026",
    "diretor": "Marcelo Mario Matos Moreira",
    "voto": "ACOMPANHOU (SIM no extrato)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD573",
+   "data": "2026-06-17",
+   "processo": "25351.920142/2026-83",
+   "deliberacao": "CD 573/2026",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal"
   },
   {
@@ -78444,6 +78571,15 @@
    "deliberacao": "CD 1030/2026",
    "diretor": "Marcelo Mario Matos Moreira",
    "voto": "ACOMPANHOU (SIM no extrato)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD1031",
+   "data": "2026-10-01",
+   "processo": "25351.193297/2023-93",
+   "deliberacao": "CD 1031/2026",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal"
   },
   {
@@ -78544,6 +78680,22 @@
    935,
    "OK",
    "mesmo nº de CD reutilizado para dois processos: ['CD386']"
+  ],
+  [
+   "ANVISA",
+   "Votos gerados por extrato = linhas da tabela contadas direto do pdftotext (independente do parser; inclui nome quebrado em 2 linhas)",
+   935,
+   935,
+   "OK",
+   "divergências (CD, votos gerados, linhas): []"
+  ],
+  [
+   "ANVISA",
+   "Chave (CD, deliberação) única entre extratos",
+   935,
+   935,
+   "OK",
+   "nº de CD reutilizado para processos distintos: ['CD386']"
   ],
   [
    "ANVISA",

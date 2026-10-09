@@ -5660,15 +5660,17 @@
    ],
    "ad_referendum": false,
    "decisao_ata": "aprovada, por unanimidade, a submissão da matéria à consulta pública, nos termos propostos pelo Relator, pelo prazo de quarenta e cinco dias, para recebimento de contribuições por escrito e a realização de audiência pública em formato virtual, anteriormente à assinatura do Termo de Autocomposição pelo Tribunal de Contas da União - TCU.",
-   "decisao_certidao": "",
-   "codigos_voto": [],
+   "decisao_certidao": "Submetido à Consulta Pública, por unanimidade, nos termos dos Votos DIR-P ( 13322947 e 13494965 )",
+   "codigos_voto": [
+    "DIR-P"
+   ],
    "autores_voto": [
     "Tiago Faierstein",
     "Tiago Faierstein"
    ],
    "leitura": {
     "ata": true,
-    "certidao": false,
+    "certidao": true,
     "votos_lidos": 2
    }
   },
@@ -11116,7 +11118,7 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "voto_por_parte": "",
-   "motivo": "unanimidade declarada (ata): todo presente acompanhou (presença nominal da ata)"
+   "motivo": "unanimidade declarada (ata e certidão): todo presente acompanhou (presença nominal da ata)"
   },
   {
    "reuniao": "RE16",
@@ -11127,7 +11129,7 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "voto_por_parte": "",
-   "motivo": "unanimidade declarada (ata): todo presente acompanhou (presença nominal da ata)"
+   "motivo": "unanimidade declarada (ata e certidão): todo presente acompanhou (presença nominal da ata)"
   },
   {
    "reuniao": "RE16",
@@ -11138,7 +11140,7 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "voto_por_parte": "",
-   "motivo": "unanimidade declarada (ata): todo presente acompanhou (presença nominal da ata)"
+   "motivo": "unanimidade declarada (ata e certidão): todo presente acompanhou (presença nominal da ata)"
   },
   {
    "reuniao": "RE16",
@@ -11149,7 +11151,7 @@
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "voto_por_parte": "",
-   "motivo": "unanimidade declarada (ata): todo presente acompanhou (presença nominal da ata)"
+   "motivo": "unanimidade declarada (ata e certidão): todo presente acompanhou (presença nominal da ata)"
   },
   {
    "reuniao": "RE17",
@@ -13099,9 +13101,9 @@
    "ANAC",
    "Itens decididos × certidões de deliberação lidas (a ANAC só emite certidão para item decidido; vista/retirada não têm)",
    80,
-   79,
-   "EXCEÇÃO",
-   "relator e modo da certidão conferidos com a página e a ata; RE16 item 3: o link \"Certidão de deliberação\" aponta para a certidão da 14ª Reunião Deliberativa Eletrônica da D (outra reunião); não usada"
+   80,
+   "OK",
+   "relator e modo da certidão conferidos com a página e a ata"
   ],
   [
    "ANAC",
@@ -13161,16 +13163,6 @@
   ]
  ],
  "pendencias": [
-  [
-   "ANAC",
-   "RE16 item 3 (proc. 00058.035485/2026-34) — certidão desta reunião",
-   "2026-06-16",
-   "link incorreto na fonte",
-   "o link da página aponta para a certidão da 14ª Reunião Deliberativa Eletrônica da Direto; a certidão da RE16 não está ligada",
-   "erro da página da ANAC (documentos repetidos de uma reunião anterior)",
-   "aguardar correção da ANAC; a ata da reunião cobre a decisão",
-   "https://sei.anac.gov.br/sei/documento_consulta_externa.php?id_acesso_externo=3778773&id_documento=16730858&infra_hash=8f8059b47507387629e39b977544517c"
-  ],
   [
    "ANAC",
    "RD5 — ata (presença, votos nominais, vencidos)",
@@ -13783,11 +13775,11 @@
   ],
   [
    "ANAC",
-   "Início exato do exercício de Mariana Altoé e fim dos mandatos de Luiz Ricardo Nascimento e Tiago Sousa Pereira",
+   "Fim do mandato de Mariana Altoé (Diretora Substituta) e de Tiago Sousa Pereira, e início do exercício de Altoé",
    "2026",
    "dado não publicado",
-   "as atas só provam presença/ausência por reunião: Mariana presente de 12/02 (RE6) a 06/04 (REX1), ausente de RE1-RE5; Luiz Ricardo presente até 11-13/03 (RE9), ausente a partir de 24/03; Tiago Sousa Pereira ausente justificado em RD1, RE1-RE4 (jan/2026) e não citado depois",
-   "datas de posse/fim de mandato só no DOU/portal; as janelas usadas nas reuniões sem ata são inferidas (Honorato 23/03, Ianelli 25/04: gov.br)",
+   "Nascimento: CONFIRMADO (mandato até 19/03/2026, no próprio Voto-Vista da RE9). Altoé: presente de 12/02 (RE6) a 06/04 (REX1), ausente de RE1-RE5, assinou a ata da REX1 como Diretora Substituta em 27/04, ausente da RE11 (29/04); Tiago Sousa Pereira (Diretor titular, nome correto): ausente justificado em RD1 e RE1-RE4 (jan/2026), não citado a partir da RE5 (03/02)",
+   "datas de posse/fim de mandato só no DOU/portal; as janelas usadas nas reuniões sem ata são inferidas (Honorato 23/03, Ianelli 25/04: gov.br) e nenhuma reunião sem ata cai no intervalo incerto",
    "confirmar com a ANAC (LAI) ou DOU",
    "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/diretoria-colegiada"
   ],
@@ -13836,9 +13828,7 @@
    "nenhuma"
   ]
  ],
- "conflitos_entre_fontes": [
-  "RE16 item 3: o link \"Certidão de deliberação\" aponta para a certidão da 14ª Reunião Deliberativa Eletrônica da D (outra reunião); não usada"
- ],
+ "conflitos_entre_fontes": [],
  "documentos_nao_lidos": [
   {
    "url": "https://sei.anac.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?IC2o8Z7ACQH4LdQ4jJLJzjPBiLtP6l2FsQacllhUf-duzEubalut9yvd8-CzYYNLu7pd-wiM0k633-D6khhQNfQGE9PAXFll0CbYfMPHiYe1XQZA0WxCan1_LCKZCD5j",
@@ -14586,9 +14576,9 @@
  ],
  "colegiado": "Diretoria Colegiada (ANAC)",
  "ex_diretores": {
-  "Luiz Ricardo Nascimento": "presente de 06/01 (RE1) a 11-13/03/2026 (RE9) e RD2 (06/03); ausente a partir da RE10 (24/03); fim 22/03 inferido pela posse de Roberto Honorato (23/03/2026)",
-  "Mariana Altoé": "Diretora Substituta; presente de 12/02 (RE6, \"nos dias 12 e 13\") a 06/04/2026 (REX1); ausente de RE1-RE5; fim 24/04 inferido pela entrada de Cláudio Ianelli (25/04/2026); impedida na RE7 item 2",
-  "Tiago Sousa Pereira": "Diretor titular ausente justificadamente em RD1 (20/01) e RE1-RE4 (06 a 30/01/2026); não citado nas atas seguintes; sem votos nem presença em 2026"
+  "Luiz Ricardo Nascimento": "presente de 06/01 (RE1) a 11-13/03/2026 (RE9) e RD2 (06/03); ausente a partir da RE10 (24/03); fim do mandato em 19/03/2026 confirmado no Voto-Vista da RE9 (SEI 12909887); Roberto Honorato substituto desde 23/03/2026 (gov.br)",
+  "Mariana Altoé": "Diretora Substituta; presente de 12/02 (RE6, \"nos dias 12 e 13\") a 06/04/2026 (REX1); ausente de RE1-RE5; assinou a ata da REX1 como Diretora Substituta em 27/04/2026 (último exercício documentado; fim de mandato não confirmado em ata); RE11 (29/04) já sem ela; Cláudio Ianelli substituto desde 25/04 (gov.br); impedida na RE7 item 2",
+  "Tiago Sousa Pereira": "NOME CORRETO (não é erro): Diretor titular do colegiado em jan/2026, \"ausente justificadamente\" em RD1 (20/01) e RE1-RE4 (06 a 27/01/2026), grafia idêntica nas 5 atas; deixa de ser citado a partir da RE5 (03/02, só 3 Diretores + Presidente) e não consta de gov.br/diretoria-colegiada (22/05/2026); data exata do fim do mandato não publicada nas atas; sem voto de mérito nem presença em 2026 (13 linhas AUSENTE nominais)"
  },
  "papeis": {
   "Tiago Faierstein": "Diretor-Presidente",
@@ -14598,7 +14588,7 @@
   "Cláudio Ianelli": "Diretor Substituto (desde 25/04/2026; 1ª presença atestada em 29/04)",
   "Luiz Ricardo Nascimento": "Ex-diretor",
   "Mariana Altoé": "Ex-diretora (Diretora Substituta)",
-  "Tiago Sousa Pereira": "Ex-diretor (ausente em jan/2026)"
+  "Tiago Sousa Pereira": "Ex-diretor titular (ausente justificado em jan/2026; grafia confirmada em 5 atas)"
  },
  "janelas_presenca": {
   "Tiago Faierstein": {
@@ -14618,13 +14608,13 @@
   },
   "Luiz Ricardo Nascimento": {
    "de": "2026-01-01",
-   "ate": "2026-03-22",
-   "evidencia": "presente de RE1 (06/01) a RE9 (11-13/03) e RD2 (06/03); nao consta da RE10 (24/03) em diante; fim 22/03 INFERIDO pela posse de Roberto Honorato (23/03/2026) — nenhuma reuniao entre 14 e 23/03"
+   "ate": "2026-03-19",
+   "evidencia": "presente de RE1 (06/01) a RE9 (11-13/03) e RD2 (06/03); nao consta da RE10 (24/03) em diante; fim 19/03/2026 CONFIRMADO no proprio Voto-Vista (RE9 item 1, SEI 12909887, 10/03/2026): \"o termino do mandato que exerco ocorrera no dia 19 de marco proximo\"; assinou ata como Diretor em 18/03; Honorato substituto desde 23/03 (gov.br)"
   },
   "Mariana Altoé": {
    "de": "2026-02-12",
-   "ate": "2026-04-24",
-   "evidencia": "primeira presenca atestada na RE6 (\"nos dias 12 e 13 de fevereiro\"); ausente das atas RE1-RE5 (ate 03/02); ultima presenca atestada na REX1 (06/04); fim 24/04 INFERIDO pela entrada de Claudio Ianelli (25/04/2026)"
+   "ate": "2026-04-27",
+   "evidencia": "primeira presenca atestada na RE6 (\"nos dias 12 e 13 de fevereiro\"); ausente das atas RE1-RE5 (ate 03/02); ultima presenca atestada na REX1 (06/04); ultima evidencia de exercicio: assinatura da ata da REX1 como Diretora Substituta em 27/04/2026 (SEI); fim NAO confirmado em ata (a hipotese 24/04 foi refutada pela assinatura de 27/04); RE11 (29/04) ja sem ela e Claudio Ianelli substituto desde 25/04 (gov.br)"
   },
   "Roberto Honorato": {
    "de": "2026-03-23",
@@ -14642,7 +14632,7 @@
   "apex_eletronicas": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026",
   "calendario": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias/2025/portaria-18366",
   "inventario": "anac_inventario.json",
-  "gerado_em": "2026-10-09 12:17"
+  "gerado_em": "2026-10-09 17:34"
  },
- "composicao_nota": "Presença REAL lida em 34 atas SEI (jan-set/2026): Faierstein (Presidente), Rui Mesquita, Mathias Moreira (ausente em RE24 e RE25), Luiz Ricardo Nascimento (até RE9, 11-13/03), Mariana Altoé (RE6, 12/02, a REX1, 06/04), Roberto Honorato (a partir da RE10, 24/03; ausente em RE19 e RE20), Cláudio Ianelli (a partir da RE11, 29/04; ausente em RE29); Tiago Sousa Pereira ausente justificado nas atas de janeiro. gov.br/diretoria-colegiada (22/05/2026): Honorato substituto desde 23/03, Ianelli desde 25/04. Reuniões sem ata (RD5, RD6, REX2, RE30): presença inferida pelas janelas."
+ "composicao_nota": "Presença REAL lida em 34 atas SEI (jan-set/2026): Faierstein (Presidente), Rui Mesquita, Mathias Moreira (ausente em RE24 e RE25), Luiz Ricardo Nascimento (até RE9, 11-13/03; mandato até 19/03 confirmado no Voto-Vista da RE9), Mariana Altoé (RE6, 12/02, a REX1, 06/04; assinou ata como Diretora Substituta em 27/04), Roberto Honorato (a partir da RE10, 24/03; ausente em RE19 e RE20), Cláudio Ianelli (a partir da RE11, 29/04; ausente em RE29); Tiago Sousa Pereira (Diretor titular, nome correto) ausente justificado nas atas de janeiro (RD1, RE1-RE4). gov.br/diretoria-colegiada (22/05/2026): Honorato substituto desde 23/03, Ianelli desde 25/04. Reuniões sem ata (RD5, RD6, REX2, RE30): presença inferida pelas janelas."
 }

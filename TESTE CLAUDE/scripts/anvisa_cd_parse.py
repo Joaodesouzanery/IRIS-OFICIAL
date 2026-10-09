@@ -14,7 +14,7 @@ def dt(s):
     s = re.sub(r'[oº°]', '', s); d, m, a = s.split('/'); return f'{a}-{int(m):02d}-{int(d):02d}'
 R, D, V, falhas, sem_tabela = [], [], [], [], []
 VAL = r'(SIM|N[ÃA]O|ABSTEN[ÇC][ÃA]O|IMPEDID[OA]|AUSENTE|SUSPEIT[OA]|-|–)'
-vistos_sha = {}; vistos_conteudo = {}; duplicados = []; erros_data = []
+n_linhas = {}; vistos_sha = {}; vistos_conteudo = {}; duplicados = []; erros_data = []
 for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
     if not m['ok']: falhas.append(m['arquivo']); continue
     if m['sha256'] in vistos_sha: duplicados.append((m['arquivo'], vistos_sha[m['sha256']])); continue
@@ -35,7 +35,7 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
     area = (re.search(r'[ÁA]rea:\s*(\S+)', t) or [None, ''])[1]
     votos = {}
     rawn = unicodedata.normalize('NFKC', raw).replace('\u200b', '')
-    k0 = rawn.find('INFORMAÇÕES DA VOTAÇÃO'); tpost = ''
+    deli_ = f'CD {cd}/2026'; k0 = rawn.find('INFORMAÇÕES DA VOTAÇÃO'); tpost = ''
     if k0 >= 0:
         resto = rawn[k0 + 22:]
         resto = re.sub(r'Extrato de Delibera[çc][ãa]o da Dicol\s+\d+\s+SEI\s+[\d./-]+\s*/\s*pg\.\s*\d+', ' ', resto)
@@ -44,14 +44,26 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
         tab = re.sub(r'\bDIRETOR\s+VOTO\b', ' ', tab)
         FIRST = {'LEANDRO': 'Leandro Pinheiro Safatle', 'DANIEL': 'Daniel Meirelles Fernandes Pereira', 'DANIELA': 'Daniela Marreco Cerqueira', 'THIAGO': 'Thiago Lopes Cardoso Campos', 'MARCELO': 'Marcelo Mario Matos Moreira', 'RÔMISON': 'Rômison Rodrigues Mota', 'ROMISON': 'Rômison Rodrigues Mota'}
         NT = {'LEANDRO', 'PINHEIRO', 'SAFATLE', 'DANIEL', 'MEIRELLES', 'FERNANDES', 'PEREIRA', 'DANIELA', 'MARRECO', 'CERQUEIRA', 'THIAGO', 'LOPES', 'CARDOSO', 'CAMPOS', 'MARCELO', 'MARIO', 'MÁRIO', 'MATOS', 'MATOIS', 'MOREIRA', 'RÔMISON', 'ROMISON', 'RODRIGUES', 'MOTA'}
-        tok = tab.split(); i = 0
-        while i < len(tok):
-            if tok[i] in FIRST and i + 1 < len(tok) and tok[i + 1] in NT:
-                nome = FIRST[tok[i]]; j = i + 1
-                while j < len(tok) and tok[j] in NT: j += 1
-                val = tok[j].rstrip('*').upper().replace('NAO', 'NÃO') if j < len(tok) else '-'
-                votos[nome] = val; i = j + 1
-            else: i += 1
+        # Maquina de estados por linha da tabela: um FIRST abre a linha; tokens de nome seguintes sao ignorados;
+        # o primeiro token que nao e nome e o VOTO da linha aberta (mesmo quando o nome vem quebrado em 2 linhas
+        # com o voto no meio: LEANDRO / SIM / PINHEIRO SAFATLE).
+        cur = None
+        for tk in tab.split():
+            if tk in FIRST: cur = FIRST[tk]; votos[cur] = None
+            elif tk in NT: continue
+            elif cur is not None and votos[cur] is None: votos[cur] = tk.rstrip('*').upper().replace('NAO', 'NÃO')
+        votos = {n: (v or '-') for n, v in votos.items()}
+        # contagem independente (so pdftotext -layout, sem o laco acima): linhas da regiao da tabela que terminam em token de VOTO
+        reg = rawn[k0 + 22:]; mfim = re.search(r'^\s*-\s*[A-Za-zÀ-ú]|Documento assinado|Registre-se|^\s*O Diretor\b', reg, re.M)
+        reg = reg[:mfim.start()] if mfim else reg
+        _ult = False; _n = 0
+        for ln in reg.splitlines():
+            if re.match(r'\s*Extrato de Delibera', ln) or not ln.strip(): continue
+            _val = bool(re.search(r'(?:^|\s)(?:SIM|N[ÃA]O|ABSTEN[ÇC][ÃA]O|IMPEDID[OA]|IMPEDIMENTO|SUSPEIT[OA]|AUSENTE|F[ÉE]RIAS|AFASTAD[OA]|LICEN[ÇC]A|-|–)\*?\s*$', ln.rstrip()))
+            _solo = _val and not re.search(r'[A-ZÀ-Ú]{3,}.*\s(?:SIM|N[ÃA]O|IMPEDID|AUSENTE|F[ÉE]RIAS)', ln) and len(ln.split()) == 1
+            if _val and not (_solo and _ult): _n += 1   # valor repetido em linha propria apos quebra de pagina conta uma vez
+            _ult = _solo
+        n_linhas[(cd, proc[0] if proc else deli_)] = _n
     if not votos: sem_tabela.append(m['arquivo']); 
     base_dec = tpost if tpost else re.sub(r'\s+', ' ', t)
     base_dec = re.split(r'Documento assinado', base_dec)[0]
@@ -72,7 +84,8 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
     if ck in vistos_conteudo: duplicados.append((m['arquivo'], vistos_conteudo[ck])); continue
     vistos_conteudo[ck] = m['arquivo']
     D.append({'reuniao': tag, 'data': data, 'processo': proc[0] if proc else deli, 'deliberacao': deli, 'item_n': deli, 'relator': rel[0] if rel else None, 'interessado': recte, 'assunto': (tipo + ' — ' + (ementa or recte or ''))[:600], 'resultado': res_, 'voto_doc': (re.search(r'Voto n[ºo]\s*([\d/A-Za-z.-]+)', decis) or [None, ''])[1], 'decisao_texto': decis, 'tipo_item': tipo_item, 'area': area, 'processos_do_item': proc, 'tipo_cd': tipo, 'origem_rop': (f"{ref[1]}{ref[2]}/{ref[3]}|{ref[4]}" if ref else ''), 'arquivo': m['arquivo'], 'cd_no_cabecalho': cd_h, 'secao': 'CD', 'unidade': area.split('/')[0] if area else ''})
-    pres = [n for n in votos]; R.append({'reuniao': tag, 'titulo': f'Circuito Deliberativo nº {cd}/{ano}', 'tipo': 'Circuito Deliberativo (DICOL)', 'data': data, 'presentes': pres, 'ausentes': [], 'obs': ''})
+    AUS_V = ('FÉRIAS', 'FERIAS', 'AFASTADO', 'AFASTADA', 'AUSENTE', 'LICENÇA', 'LICENCA')
+    pres = [n for n, v in votos.items() if v not in AUS_V]; auss = [n for n, v in votos.items() if v in AUS_V]; R.append({'reuniao': tag, 'titulo': f'Circuito Deliberativo nº {cd}/{ano}', 'tipo': 'Circuito Deliberativo (DICOL)', 'data': data, 'presentes': pres, 'ausentes': auss, 'obs': ''})
     for n, v in votos.items():
         base = {'reuniao': tag, 'data': data, 'processo': proc[0] if proc else deli, 'deliberacao': deli, 'diretor': n}
         if v == 'SIM': voto = 'RELATOR (voto proferido)' if n in rel else 'ACOMPANHOU (SIM no extrato)'
@@ -82,6 +95,14 @@ for m in sorted(man, key=lambda x: (x['cd'] or 0, x['arquivo'])):
         elif v in ('FÉRIAS', 'FERIAS', 'AFASTADO', 'AFASTADA', 'AUSENTE', 'LICENÇA', 'LICENCA'): voto = f'AUSENTE ({v.capitalize()} no extrato)'
         else: voto = 'SEM VOTO REGISTRADO (-) no extrato'
         V.append(dict(base, voto=voto, proveniencia='nominal'))
+# ---- chave unica: mesmo nº de CD reutilizado para processos distintos (ex.: CD 386/2026) -> deliberacao inclui o processo
+_cdn = collections.defaultdict(set)
+for d in D: _cdn[d['reuniao']].add(d['processo'])
+colis = {k for k, ps in _cdn.items() if len(ps) > 1}
+for d in D:
+    if d['reuniao'] in colis: d['deliberacao'] = d['item_n'] = f"{d['deliberacao']} — proc. {d['processo']}"
+for v in V:
+    if v['reuniao'] in colis: v['deliberacao'] = f"{v['deliberacao']} — proc. {v['processo']}"
 # ---- Qualidade
 Q = []
 def chk(nome, esp, obs, nota=''): Q.append(['ANVISA', nome, esp, obs, 'OK' if esp == obs else 'DIVERGE', nota])
@@ -92,6 +113,10 @@ rep = [k for k, n in cds.items() if n > 1]
 nums = sorted(int(k[2:]) for k in cds)
 buracos = [x for x in range(1, max(nums) + 1) if x not in nums]
 chk('Extratos distintos = pares (CD, processo) únicos', len(D), len({(d['reuniao'], d['processo']) for d in D}), 'mesmo nº de CD reutilizado para dois processos: ' + str([k for k in rep]))
+nvk = collections.Counter((v['reuniao'], v['processo']) for v in V)
+div_l = [(d['reuniao'], nvk[(d['reuniao'], d['processo'])], n_linhas.get((int(d['reuniao'][2:]), d['processo']))) for d in D if nvk[(d['reuniao'], d['processo'])] != n_linhas.get((int(d['reuniao'][2:]), d['processo']))]
+chk('Votos gerados por extrato = linhas da tabela contadas direto do pdftotext (independente do parser; inclui nome quebrado em 2 linhas)', len(D), len(D) - len(div_l), 'divergências (CD, votos gerados, linhas): ' + str(div_l[:8]))
+chk('Chave (CD, deliberação) única entre extratos', len(D), len({(d['reuniao'], d['deliberacao']) for d in D}), 'nº de CD reutilizado para processos distintos: ' + str(sorted(colis)))
 chk('Extratos com tabela nominal de votação lida', len(D), len(D) - len(sem_tabela), f'sem tabela: {sem_tabela[:6]}')
 vv = collections.Counter(d['reuniao'] for d in D); nv = collections.defaultdict(int)
 for v in V: nv[v['reuniao']] += 1

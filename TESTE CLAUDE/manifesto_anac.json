@@ -44,7 +44,7 @@
   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137",
   "arquivo": "fonte/anac/apex_presenciais_2026.html",
   "valido": true,
-  "sha256": "b1fb46fd1e0bae845460603e752da9f56b82cc64e6428debf1aab7bd892a1360",
+  "sha256": "4f21cf4f87a7259ae3b1813e64537d9e30dae26991787a4c91a8c47ff8b3a2f4",
   "bytes": 25162
  },
  {
@@ -52,8 +52,8 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026",
   "arquivo": "fonte/anac/apex_eletronicas_2026.html",
   "valido": true,
-  "sha256": "d2605f5d8b3bd5ff66cce79cf2d08f8a07ee526c113394557b45ad006cc80e62",
-  "bytes": 47859
+  "sha256": "2afce34831af0648a53db6e71272847ed5add0b4b9a6bc4f97405b8802c08dde",
+  "bytes": 47861
  },
  {
   "tipo": "pagina/indice",
@@ -68,47 +68,47 @@
   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2026",
   "arquivo": "fonte/anac/ctl_pres_2026.html",
   "valido": true,
-  "sha256": "18ef58f22dc9c5cf2a161b2fcc39dfc13be9d51e295e2096403810a9d2dde15d",
-  "bytes": 25162
+  "sha256": "99e1a3379d70e60bea1a9b84666ed543eaa30d7f01d70d8ec5ef04f5f068e9b5",
+  "bytes": 25160
  },
  {
   "tipo": "pagina/indice",
   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2025",
   "arquivo": "fonte/anac/ctl_pres_2025.html",
   "valido": true,
-  "sha256": "b0d65cefb4c4a741b1d3d452bcf1bf9218114d30d7d40ce6f20b40093a6c5142",
-  "bytes": 31554
+  "sha256": "006dd7f88d8f3f8906fc8e9e0ec194ee93e7ffb1d3075174ecdd08566875312d",
+  "bytes": 31552
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2025",
   "arquivo": "fonte/anac/ctl_ele_2025.html",
   "valido": true,
-  "sha256": "82fe7c017213b4fc069f6029c9d2595e9dd78b081330de2d3cfc426c755a4255",
-  "bytes": 53599
+  "sha256": "20426b1657c77655d2a57721471bfff9e7b52554b6000658010141ac9dc21c42",
+  "bytes": 53607
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4856",
   "arquivo": "fonte/anac/reu/4856.html",
   "valido": true,
-  "sha256": "29aee356f9d6f6f0384613bd8cdacd0924a6dfd0ec14b889604e755abc1ec46d",
-  "bytes": 46389
+  "sha256": "f3adf9d8c831508d82b5b13824195980aadd3103a3fb33a47557cf4804713f21",
+  "bytes": 46397
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
   "arquivo": "fonte/anac/pauta/4856.html",
   "valido": true,
-  "sha256": "bfe4c590cdde023d446f48ef0dc69449e4b02e623de14cfcc5f149f469e6078d",
-  "bytes": 103855
+  "sha256": "686d845a184ab2787db223d6ced5ce0acee57c1256b00e58fe2493e9b23b71c6",
+  "bytes": 103863
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4836",
   "arquivo": "fonte/anac/reu/4836.html",
   "valido": true,
-  "sha256": "a8c622b8cd2cde8ac227f89f4b99d6ef3753bf22687e356dafba6b5fb7a83339",
+  "sha256": "4c5a26575aa11c1cea2a4da61b594947f06e42f6243340824868d0fcdcc269e4",
   "bytes": 104407
  },
  {
@@ -116,24 +116,24 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
   "arquivo": "fonte/anac/pauta/4836.html",
   "valido": true,
-  "sha256": "4c3c7be0194aeda5127be04ca12d145988e9b5d7456dac5a8428632d59ac39ae",
-  "bytes": 119497
+  "sha256": "637e747bc1d5f239b5df207c57501ea08c2a904cd617318936194c0f8268c90d",
+  "bytes": 119487
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4835",
   "arquivo": "fonte/anac/reu/4835.html",
   "valido": true,
-  "sha256": "b8ba70f78352d9d25f1128456a7d424ab912c90070d0347412f46feabc0d9ca5",
-  "bytes": 61221
+  "sha256": "60e5afc233986ca10d8651d9b75e0ce86c0f70c6aa8bac6884e9f139b3d80531",
+  "bytes": 61219
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
   "arquivo": "fonte/anac/pauta/4835.html",
   "valido": true,
-  "sha256": "38bad6b65a55f550aac390afc6758ac24d848aeae2256fa6235eb168bff0deaf",
-  "bytes": 106262
+  "sha256": "682076451d2b23851a20e5a56767f805ad3765ff65c1c2ab33db2c59285dd09c",
+  "bytes": 106254
  },
  {
   "tipo": "pagina/indice",
@@ -204,48 +204,48 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6367",
   "arquivo": "fonte/anac/reu/6367.html",
   "valido": true,
-  "sha256": "e68104ea1c9e782b8dae9d7f90a5952b2cbb02e6b7ca9269158e9543a81d8475",
-  "bytes": 89462
+  "sha256": "2d8f75671fde4e07f15e3d52d559c651d64b8490f60ed25446d20152588e019e",
+  "bytes": 89464
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
   "arquivo": "fonte/anac/pauta/6367.html",
   "valido": true,
-  "sha256": "c5a18a86586befd86a835cdb45456e8f0b848fd7b6b575149d6823e9603ac055",
-  "bytes": 122438
+  "sha256": "9f9bafcf6bc77d33fabbebb6048937ec5b94afb69490c633b9f99ab66be27efb",
+  "bytes": 122440
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6327",
   "arquivo": "fonte/anac/reu/6327.html",
   "valido": true,
-  "sha256": "1e235df3398aff6c4a700648a11cc326ab4abf7c9f54587a4b3bfe881e602fcd",
-  "bytes": 115247
+  "sha256": "7cfc6ffae87dba820d57e0b3d5e61c2306ca73182ebae5dad0077b659941c1e9",
+  "bytes": 115241
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
   "arquivo": "fonte/anac/pauta/6327.html",
   "valido": true,
-  "sha256": "9ebd347302af629a22d52c1bdc1d9b2c1a04045d943927c481a0793de28e10c4",
-  "bytes": 130029
+  "sha256": "d1fee5b7237a5c33c00782b67453b2916d3910fe13f6332df760decc52f88453",
+  "bytes": 130027
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6307",
   "arquivo": "fonte/anac/reu/6307.html",
   "valido": true,
-  "sha256": "0aa04b75b1829797d9115b769c80d7a48297e3eeea1e30b575d2a7dd67e95b08",
-  "bytes": 100942
+  "sha256": "9dc194bc57bb0b051c0bcacaa0d72537144df6f6a36198a005c7650fcc109a62",
+  "bytes": 100946
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
   "arquivo": "fonte/anac/pauta/6307.html",
   "valido": true,
-  "sha256": "a9e3641a01d1d7ab56e49a4d7cfd51caabbcf5f61267d45e02809a7f9525c28e",
-  "bytes": 115565
+  "sha256": "a1f7c6a66761bdaac76158705d2826ffbfe1c1ded47a4bcb18a86ad8961f3c09",
+  "bytes": 115571
  },
  {
   "tipo": "pagina/indice",
@@ -300,16 +300,16 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6207",
   "arquivo": "fonte/anac/reu/6207.html",
   "valido": true,
-  "sha256": "3248e437718e5ce17f4f473dff398278ad998359baaaf64ea1ac9bd8b836492f",
-  "bytes": 60557
+  "sha256": "f68bdf904e2e0f557cbfd9b733ac1a6366c5287bf17ced5d5de16f8d57687c30",
+  "bytes": 60551
  },
  {
   "tipo": "pagina/indice",
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
   "arquivo": "fonte/anac/pauta/6207.html",
   "valido": true,
-  "sha256": "f7e82ab9080d5b16aa5328e313777f5fd1f794e28794051bcc18a15dad1c6a3c",
-  "bytes": 105552
+  "sha256": "98bf063484f0040d504bedf2211a3db8ee7764ae26f8e3da333da502c13cf779",
+  "bytes": 105560
  },
  {
   "tipo": "pagina/indice",
@@ -476,7 +476,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5587",
   "arquivo": "fonte/anac/reu/5587.html",
   "valido": true,
-  "sha256": "18677a2d64e2a51b61b00d957c0c4e125f87f8520f9a7855b35a18b0260d6c91",
+  "sha256": "3ebbcbc326df419ce79ca51dca92ad2830ca93beb1724a7ea0da1c04a5d96bad",
   "bytes": 94781
  },
  {
@@ -749,7 +749,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4856",
   "arquivo": "fonte/anac/reu/4856.html",
   "valido": true,
-  "sha256": "29aee356f9d6f6f0384613bd8cdacd0924a6dfd0ec14b889604e755abc1ec46d"
+  "sha256": "f3adf9d8c831508d82b5b13824195980aadd3103a3fb33a47557cf4804713f21"
  },
  {
   "tipo": "pauta",
@@ -757,7 +757,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
   "arquivo": "fonte/anac/pauta/4856.html",
   "valido": true,
-  "sha256": "bfe4c590cdde023d446f48ef0dc69449e4b02e623de14cfcc5f149f469e6078d"
+  "sha256": "686d845a184ab2787db223d6ced5ce0acee57c1256b00e58fe2493e9b23b71c6"
  },
  {
   "tipo": "pagina da reuniao",
@@ -765,7 +765,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4836",
   "arquivo": "fonte/anac/reu/4836.html",
   "valido": true,
-  "sha256": "a8c622b8cd2cde8ac227f89f4b99d6ef3753bf22687e356dafba6b5fb7a83339"
+  "sha256": "4c5a26575aa11c1cea2a4da61b594947f06e42f6243340824868d0fcdcc269e4"
  },
  {
   "tipo": "pauta",
@@ -773,7 +773,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
   "arquivo": "fonte/anac/pauta/4836.html",
   "valido": true,
-  "sha256": "4c3c7be0194aeda5127be04ca12d145988e9b5d7456dac5a8428632d59ac39ae"
+  "sha256": "637e747bc1d5f239b5df207c57501ea08c2a904cd617318936194c0f8268c90d"
  },
  {
   "tipo": "pagina da reuniao",
@@ -781,7 +781,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4835",
   "arquivo": "fonte/anac/reu/4835.html",
   "valido": true,
-  "sha256": "b8ba70f78352d9d25f1128456a7d424ab912c90070d0347412f46feabc0d9ca5"
+  "sha256": "60e5afc233986ca10d8651d9b75e0ce86c0f70c6aa8bac6884e9f139b3d80531"
  },
  {
   "tipo": "pauta",
@@ -789,7 +789,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
   "arquivo": "fonte/anac/pauta/4835.html",
   "valido": true,
-  "sha256": "38bad6b65a55f550aac390afc6758ac24d848aeae2256fa6235eb168bff0deaf"
+  "sha256": "682076451d2b23851a20e5a56767f805ad3765ff65c1c2ab33db2c59285dd09c"
  },
  {
   "tipo": "pagina da reuniao",
@@ -861,7 +861,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6367",
   "arquivo": "fonte/anac/reu/6367.html",
   "valido": true,
-  "sha256": "e68104ea1c9e782b8dae9d7f90a5952b2cbb02e6b7ca9269158e9543a81d8475"
+  "sha256": "2d8f75671fde4e07f15e3d52d559c651d64b8490f60ed25446d20152588e019e"
  },
  {
   "tipo": "pauta",
@@ -869,7 +869,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
   "arquivo": "fonte/anac/pauta/6367.html",
   "valido": true,
-  "sha256": "c5a18a86586befd86a835cdb45456e8f0b848fd7b6b575149d6823e9603ac055"
+  "sha256": "9f9bafcf6bc77d33fabbebb6048937ec5b94afb69490c633b9f99ab66be27efb"
  },
  {
   "tipo": "pagina da reuniao",
@@ -877,7 +877,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6327",
   "arquivo": "fonte/anac/reu/6327.html",
   "valido": true,
-  "sha256": "1e235df3398aff6c4a700648a11cc326ab4abf7c9f54587a4b3bfe881e602fcd"
+  "sha256": "7cfc6ffae87dba820d57e0b3d5e61c2306ca73182ebae5dad0077b659941c1e9"
  },
  {
   "tipo": "pauta",
@@ -885,7 +885,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
   "arquivo": "fonte/anac/pauta/6327.html",
   "valido": true,
-  "sha256": "9ebd347302af629a22d52c1bdc1d9b2c1a04045d943927c481a0793de28e10c4"
+  "sha256": "d1fee5b7237a5c33c00782b67453b2916d3910fe13f6332df760decc52f88453"
  },
  {
   "tipo": "pagina da reuniao",
@@ -893,7 +893,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6307",
   "arquivo": "fonte/anac/reu/6307.html",
   "valido": true,
-  "sha256": "0aa04b75b1829797d9115b769c80d7a48297e3eeea1e30b575d2a7dd67e95b08"
+  "sha256": "9dc194bc57bb0b051c0bcacaa0d72537144df6f6a36198a005c7650fcc109a62"
  },
  {
   "tipo": "pauta",
@@ -901,7 +901,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
   "arquivo": "fonte/anac/pauta/6307.html",
   "valido": true,
-  "sha256": "a9e3641a01d1d7ab56e49a4d7cfd51caabbcf5f61267d45e02809a7f9525c28e"
+  "sha256": "a1f7c6a66761bdaac76158705d2826ffbfe1c1ded47a4bcb18a86ad8961f3c09"
  },
  {
   "tipo": "pagina da reuniao",
@@ -957,7 +957,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6207",
   "arquivo": "fonte/anac/reu/6207.html",
   "valido": true,
-  "sha256": "3248e437718e5ce17f4f473dff398278ad998359baaaf64ea1ac9bd8b836492f"
+  "sha256": "f68bdf904e2e0f557cbfd9b733ac1a6366c5287bf17ced5d5de16f8d57687c30"
  },
  {
   "tipo": "pauta",
@@ -965,7 +965,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
   "arquivo": "fonte/anac/pauta/6207.html",
   "valido": true,
-  "sha256": "f7e82ab9080d5b16aa5328e313777f5fd1f794e28794051bcc18a15dad1c6a3c"
+  "sha256": "98bf063484f0040d504bedf2211a3db8ee7764ae26f8e3da333da502c13cf779"
  },
  {
   "tipo": "pagina da reuniao",
@@ -1133,7 +1133,7 @@
   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5587",
   "arquivo": "fonte/anac/reu/5587.html",
   "valido": true,
-  "sha256": "18677a2d64e2a51b61b00d957c0c4e125f87f8520f9a7855b35a18b0260d6c91"
+  "sha256": "3ebbcbc326df419ce79ca51dca92ad2830ca93beb1724a7ea0da1c04a5d96bad"
  },
  {
   "tipo": "pauta",

@@ -10945,7 +10945,7 @@
    "processo": "25351.093922/2022-17",
    "deliberacao": "3.2.2.5",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -10963,8 +10963,8 @@
    "processo": "25351.093922/2022-17",
    "deliberacao": "3.2.2.5",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -10972,7 +10972,7 @@
    "processo": "25351.093922/2022-17",
    "deliberacao": "3.2.2.5",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -11602,7 +11602,7 @@
    "processo": "25351.109991/2021-79",
    "deliberacao": "3.4.1.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido; vista concedida)",
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
    "proveniencia": "nominal"
   },
   {
@@ -12070,7 +12070,7 @@
    "processo": "25757.127356/2018-13",
    "deliberacao": "3.5.3.6",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -12079,7 +12079,7 @@
    "processo": "25757.127356/2018-13",
    "deliberacao": "3.5.3.6",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "DIVERGIU (vencido)",
+   "voto": "ACOMPANHOU (acompanhou o relator, vencido)",
    "proveniencia": "nominal"
   },
   {
@@ -12088,8 +12088,8 @@
    "processo": "25757.127356/2018-13",
    "deliberacao": "3.5.3.6",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -12097,7 +12097,7 @@
    "processo": "25757.127356/2018-13",
    "deliberacao": "3.5.3.6",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -12457,8 +12457,8 @@
    "processo": "25351.827230/2024-45",
    "deliberacao": "4.2.2.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -12565,8 +12565,8 @@
    "processo": "25351.905856/2025-81",
    "deliberacao": "4.5.2.1",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -12574,8 +12574,8 @@
    "processo": "25351.905856/2025-81",
    "deliberacao": "4.5.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -12583,8 +12583,8 @@
    "processo": "25351.905856/2025-81",
    "deliberacao": "4.5.2.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -12592,8 +12592,8 @@
    "processo": "25351.905856/2025-81",
    "deliberacao": "4.5.2.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP1",
@@ -14077,8 +14077,8 @@
    "processo": "25069.196906/2019-75",
    "deliberacao": "3.5.7.2",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "VOTOU (antes da vista; posição só no voto escrito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP2",
@@ -16471,8 +16471,8 @@
    "processo": "25351.432813/2021-49",
    "deliberacao": "3.2.10.2",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP4",
@@ -18136,8 +18136,8 @@
    "processo": "25000.004661/97-03",
    "deliberacao": "3.1.1.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18226,8 +18226,8 @@
    "processo": "25351.810703/2023-94",
    "deliberacao": "3.1.4.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18316,8 +18316,8 @@
    "processo": "25069.648382/2017-",
    "deliberacao": "3.1.7.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18361,8 +18361,8 @@
    "processo": "25351.055615/2013-67",
    "deliberacao": "3.1.9.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18379,8 +18379,8 @@
    "processo": "25351.925166/2022-03",
    "deliberacao": "3.1.10.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18424,8 +18424,8 @@
    "processo": "25351.925119/2022-51",
    "deliberacao": "3.1.10.2",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18469,8 +18469,8 @@
    "processo": "25351.925165/2022-51",
    "deliberacao": "3.1.10.3",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -18514,8 +18514,8 @@
    "processo": "25351.925201/2022-86",
    "deliberacao": "3.1.10.4",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP5",
@@ -19189,7 +19189,7 @@
    "processo": "25351.950284/2025-94",
    "deliberacao": "4.1.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -19198,2116 +19198,2116 @@
    "processo": "25351.950284/2025-94",
    "deliberacao": "4.1.2.1",
    "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU (acompanhou o relator, vencido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.950284/2025-94",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.950284/2025-94",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.925350/2025-98",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.925350/2025-98",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.925350/2025-98",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.925350/2025-98",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.925350/2025-98",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.948595/2025-93",
+   "deliberacao": "4.4.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.948595/2025-93",
+   "deliberacao": "4.4.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.948595/2025-93",
+   "deliberacao": "4.4.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.948595/2025-93",
+   "deliberacao": "4.4.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.948595/2025-93",
+   "deliberacao": "4.4.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.207485/2025-78",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.207485/2025-78",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.207485/2025-78",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.207485/2025-78",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.207485/2025-78",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.903985/2026-15",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.903985/2026-15",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.903985/2026-15",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.903985/2026-15",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP5",
+   "data": "2026-04-01",
+   "processo": "25351.903985/2026-15",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.900083/2025-46",
+   "deliberacao": "2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.900083/2025-46",
+   "deliberacao": "2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.900083/2025-46",
+   "deliberacao": "2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.900083/2025-46",
+   "deliberacao": "2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.900083/2025-46",
+   "deliberacao": "2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.948613/2025-37",
+   "deliberacao": "2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.948613/2025-37",
+   "deliberacao": "2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.948613/2025-37",
+   "deliberacao": "2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.948613/2025-37",
+   "deliberacao": "2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.948613/2025-37",
+   "deliberacao": "2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.943544/2025-75",
+   "deliberacao": "2.3",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.943544/2025-75",
+   "deliberacao": "2.3",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.943544/2025-75",
+   "deliberacao": "2.3",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.943544/2025-75",
+   "deliberacao": "2.3",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.943544/2025-75",
+   "deliberacao": "2.3",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.009486/2022-14",
+   "deliberacao": "3.1.5.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.009486/2022-14",
+   "deliberacao": "3.1.5.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.009486/2022-14",
+   "deliberacao": "3.1.5.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.009486/2022-14",
+   "deliberacao": "3.1.5.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.009486/2022-14",
+   "deliberacao": "3.1.5.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25004.360197/2008-90",
+   "deliberacao": "3.1.5.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25004.360197/2008-90",
+   "deliberacao": "3.1.5.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25004.360197/2008-90",
+   "deliberacao": "3.1.5.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25004.360197/2008-90",
+   "deliberacao": "3.1.5.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25004.360197/2008-90",
+   "deliberacao": "3.1.5.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25752.054071/2016-65",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25752.054071/2016-65",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25752.054071/2016-65",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25752.054071/2016-65",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25752.054071/2016-65",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.015740/2025-58",
+   "deliberacao": "3.2.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.015740/2025-58",
+   "deliberacao": "3.2.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.015740/2025-58",
+   "deliberacao": "3.2.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.015740/2025-58",
+   "deliberacao": "3.2.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.015740/2025-58",
+   "deliberacao": "3.2.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.382766/2020-02",
+   "deliberacao": "3.2.2.3",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.382766/2020-02",
+   "deliberacao": "3.2.2.3",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.382766/2020-02",
+   "deliberacao": "3.2.2.3",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.382766/2020-02",
+   "deliberacao": "3.2.2.3",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.382766/2020-02",
+   "deliberacao": "3.2.2.3",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25748.116020/2017-03",
+   "deliberacao": "3.2.3.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25748.116020/2017-03",
+   "deliberacao": "3.2.3.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25748.116020/2017-03",
+   "deliberacao": "3.2.3.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25748.116020/2017-03",
+   "deliberacao": "3.2.3.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25748.116020/2017-03",
+   "deliberacao": "3.2.3.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.532298/2019-77",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.532298/2019-77",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.532298/2019-77",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.532298/2019-77",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.532298/2019-77",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.238908/2021-78",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.238908/2021-78",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.238908/2021-78",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.238908/2021-78",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.238908/2021-78",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.165666/2020-13",
+   "deliberacao": "3.3.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.165666/2020-13",
+   "deliberacao": "3.3.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.165666/2020-13",
+   "deliberacao": "3.3.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.165666/2020-13",
+   "deliberacao": "3.3.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.165666/2020-13",
+   "deliberacao": "3.3.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.418461/2022-08",
+   "deliberacao": "3.4.1.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.418461/2022-08",
+   "deliberacao": "3.4.1.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.418461/2022-08",
+   "deliberacao": "3.4.1.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.418461/2022-08",
+   "deliberacao": "3.4.1.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto vencido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.418461/2022-08",
+   "deliberacao": "3.4.1.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.109991/2021-79",
+   "deliberacao": "3.4.1.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.109991/2021-79",
+   "deliberacao": "3.4.1.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.109991/2021-79",
+   "deliberacao": "3.4.1.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.109991/2021-79",
+   "deliberacao": "3.4.1.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.109991/2021-79",
+   "deliberacao": "3.4.1.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.060283/2020-41",
+   "deliberacao": "3.4.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.060283/2020-41",
+   "deliberacao": "3.4.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.060283/2020-41",
+   "deliberacao": "3.4.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.060283/2020-41",
+   "deliberacao": "3.4.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.060283/2020-41",
+   "deliberacao": "3.4.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.788437/2021-44",
+   "deliberacao": "3.4.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.788437/2021-44",
+   "deliberacao": "3.4.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.788437/2021-44",
+   "deliberacao": "3.4.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.788437/2021-44",
+   "deliberacao": "3.4.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto proferido; vista concedida)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.788437/2021-44",
+   "deliberacao": "3.4.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.115521/2020-59",
+   "deliberacao": "3.4.3.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.115521/2020-59",
+   "deliberacao": "3.4.3.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.115521/2020-59",
+   "deliberacao": "3.4.3.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.115521/2020-59",
+   "deliberacao": "3.4.3.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25069.115521/2020-59",
+   "deliberacao": "3.4.3.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.253183/2019-23",
+   "deliberacao": "3.5.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.253183/2019-23",
+   "deliberacao": "3.5.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.253183/2019-23",
+   "deliberacao": "3.5.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.253183/2019-23",
+   "deliberacao": "3.5.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.253183/2019-23",
+   "deliberacao": "3.5.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido; vista concedida)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.175737/2025-92",
+   "deliberacao": "3.5.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.175737/2025-92",
+   "deliberacao": "3.5.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.175737/2025-92",
+   "deliberacao": "3.5.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.175737/2025-92",
+   "deliberacao": "3.5.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.175737/2025-92",
+   "deliberacao": "3.5.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25767.070731/2019-08",
+   "deliberacao": "3.5.3.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25767.070731/2019-08",
+   "deliberacao": "3.5.3.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25767.070731/2019-08",
+   "deliberacao": "3.5.3.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25767.070731/2019-08",
+   "deliberacao": "3.5.3.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25767.070731/2019-08",
+   "deliberacao": "3.5.3.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25750.298982/2020-60",
+   "deliberacao": "3.5.3.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25750.298982/2020-60",
+   "deliberacao": "3.5.3.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25750.298982/2020-60",
+   "deliberacao": "3.5.3.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25750.298982/2020-60",
+   "deliberacao": "3.5.3.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25750.298982/2020-60",
+   "deliberacao": "3.5.3.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.933472/2025-58",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.933472/2025-58",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.933472/2025-58",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.933472/2025-58",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.933472/2025-58",
+   "deliberacao": "4.1.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.920618/2025-03",
+   "deliberacao": "4.2.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.920618/2025-03",
+   "deliberacao": "4.2.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.920618/2025-03",
+   "deliberacao": "4.2.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.920618/2025-03",
+   "deliberacao": "4.2.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.920618/2025-03",
+   "deliberacao": "4.2.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.905497/2026-42",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.905497/2026-42",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.905497/2026-42",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.905497/2026-42",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.905497/2026-42",
+   "deliberacao": "4.3.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.904007/2026-91",
+   "deliberacao": "4.3.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.904007/2026-91",
+   "deliberacao": "4.3.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.904007/2026-91",
+   "deliberacao": "4.3.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.904007/2026-91",
+   "deliberacao": "4.3.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.904007/2026-91",
+   "deliberacao": "4.3.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910111/2025-33",
+   "deliberacao": "4.3.2.3",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910111/2025-33",
+   "deliberacao": "4.3.2.3",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910111/2025-33",
+   "deliberacao": "4.3.2.3",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910111/2025-33",
+   "deliberacao": "4.3.2.3",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910111/2025-33",
+   "deliberacao": "4.3.2.3",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.942523/2025-32",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.942523/2025-32",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.942523/2025-32",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.942523/2025-32",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.942523/2025-32",
+   "deliberacao": "4.5.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.908040/2026-90",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.908040/2026-90",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.908040/2026-90",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.908040/2026-90",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.908040/2026-90",
+   "deliberacao": "4.5.2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido; vista concedida)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.907794/2026-22",
+   "deliberacao": "4.5.2.3",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.907794/2026-22",
+   "deliberacao": "4.5.2.3",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.907794/2026-22",
+   "deliberacao": "4.5.2.3",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.907794/2026-22",
+   "deliberacao": "4.5.2.3",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.907794/2026-22",
+   "deliberacao": "4.5.2.3",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido; vista concedida)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.944723/2025-20",
+   "deliberacao": "4.5.2.4",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.944723/2025-20",
+   "deliberacao": "4.5.2.4",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.944723/2025-20",
+   "deliberacao": "4.5.2.4",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.944723/2025-20",
+   "deliberacao": "4.5.2.4",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.944723/2025-20",
+   "deliberacao": "4.5.2.4",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910342/2022-02",
+   "deliberacao": "5.2.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910342/2022-02",
+   "deliberacao": "5.2.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910342/2022-02",
+   "deliberacao": "5.2.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910342/2022-02",
+   "deliberacao": "5.2.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP6",
+   "data": "2026-04-15",
+   "processo": "25351.910342/2022-02",
+   "deliberacao": "5.2.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.912958/2026-33",
+   "deliberacao": "2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.912958/2026-33",
+   "deliberacao": "2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido; vista concedida)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.912958/2026-33",
+   "deliberacao": "2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.912958/2026-33",
+   "deliberacao": "2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.912958/2026-33",
+   "deliberacao": "2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "SEM VOTO AINDA (vista pendente)",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.928808/2021-37",
+   "deliberacao": "2.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.928808/2021-37",
+   "deliberacao": "2.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.928808/2021-37",
+   "deliberacao": "2.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.928808/2021-37",
+   "deliberacao": "2.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.928808/2021-37",
+   "deliberacao": "2.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.940843/2025-58",
+   "deliberacao": "2.3",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.940843/2025-58",
+   "deliberacao": "2.3",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.940843/2025-58",
+   "deliberacao": "2.3",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.940843/2025-58",
+   "deliberacao": "2.3",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.940843/2025-58",
+   "deliberacao": "2.3",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911129/2026-33",
+   "deliberacao": "2.4",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911129/2026-33",
+   "deliberacao": "2.4",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911129/2026-33",
+   "deliberacao": "2.4",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911129/2026-33",
+   "deliberacao": "2.4",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911129/2026-33",
+   "deliberacao": "2.4",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.918546/2025-26",
+   "deliberacao": "2.5",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.918546/2025-26",
+   "deliberacao": "2.5",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.918546/2025-26",
+   "deliberacao": "2.5",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.918546/2025-26",
+   "deliberacao": "2.5",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.918546/2025-26",
+   "deliberacao": "2.5",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.819090/2024-31",
+   "deliberacao": "2.6",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.819090/2024-31",
+   "deliberacao": "2.6",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.819090/2024-31",
+   "deliberacao": "2.6",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.819090/2024-31",
+   "deliberacao": "2.6",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.819090/2024-31",
+   "deliberacao": "2.6",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911351/2026-36",
+   "deliberacao": "2.7",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911351/2026-36",
+   "deliberacao": "2.7",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911351/2026-36",
+   "deliberacao": "2.7",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911351/2026-36",
+   "deliberacao": "2.7",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.911351/2026-36",
+   "deliberacao": "2.7",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.941488/2025-34",
+   "deliberacao": "2.8",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.941488/2025-34",
+   "deliberacao": "2.8",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.941488/2025-34",
+   "deliberacao": "2.8",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.941488/2025-34",
+   "deliberacao": "2.8",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.941488/2025-34",
+   "deliberacao": "2.8",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.957998/2020-19",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.957998/2020-19",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.957998/2020-19",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.957998/2020-19",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.957998/2020-19",
+   "deliberacao": "3.2.2.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424452/2024-18",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424452/2024-18",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424452/2024-18",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424452/2024-18",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424452/2024-18",
+   "deliberacao": "3.2.7.1",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424457/2024-32",
+   "deliberacao": "3.2.7.2",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424457/2024-32",
+   "deliberacao": "3.2.7.2",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424457/2024-32",
+   "deliberacao": "3.2.7.2",
+   "diretor": "Daniela Marreco Cerqueira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424457/2024-32",
+   "deliberacao": "3.2.7.2",
+   "diretor": "Thiago Lopes Cardoso Campos",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.424457/2024-32",
+   "deliberacao": "3.2.7.2",
+   "diretor": "Marcelo Mario Matos Moreira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.480353/2015-58",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Leandro Pinheiro Safatle",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido"
+  },
+  {
+   "reuniao": "ROP7",
+   "data": "2026-05-06",
+   "processo": "25351.480353/2015-58",
+   "deliberacao": "3.3.2.1",
+   "diretor": "Daniel Meirelles Fernandes Pereira",
    "voto": "DIVERGIU (vencido)",
    "proveniencia": "nominal"
   },
   {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.950284/2025-94",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.950284/2025-94",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.925350/2025-98",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.925350/2025-98",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.925350/2025-98",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.925350/2025-98",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.925350/2025-98",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.948595/2025-93",
-   "deliberacao": "4.4.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.948595/2025-93",
-   "deliberacao": "4.4.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.948595/2025-93",
-   "deliberacao": "4.4.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.948595/2025-93",
-   "deliberacao": "4.4.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.948595/2025-93",
-   "deliberacao": "4.4.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.207485/2025-78",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.207485/2025-78",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.207485/2025-78",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.207485/2025-78",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.207485/2025-78",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.903985/2026-15",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.903985/2026-15",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.903985/2026-15",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.903985/2026-15",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP5",
-   "data": "2026-04-01",
-   "processo": "25351.903985/2026-15",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.900083/2025-46",
-   "deliberacao": "2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.900083/2025-46",
-   "deliberacao": "2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.900083/2025-46",
-   "deliberacao": "2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.900083/2025-46",
-   "deliberacao": "2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.900083/2025-46",
-   "deliberacao": "2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.948613/2025-37",
-   "deliberacao": "2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.948613/2025-37",
-   "deliberacao": "2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.948613/2025-37",
-   "deliberacao": "2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.948613/2025-37",
-   "deliberacao": "2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.948613/2025-37",
-   "deliberacao": "2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.943544/2025-75",
-   "deliberacao": "2.3",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.943544/2025-75",
-   "deliberacao": "2.3",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.943544/2025-75",
-   "deliberacao": "2.3",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.943544/2025-75",
-   "deliberacao": "2.3",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.943544/2025-75",
-   "deliberacao": "2.3",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.009486/2022-14",
-   "deliberacao": "3.1.5.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.009486/2022-14",
-   "deliberacao": "3.1.5.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.009486/2022-14",
-   "deliberacao": "3.1.5.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.009486/2022-14",
-   "deliberacao": "3.1.5.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.009486/2022-14",
-   "deliberacao": "3.1.5.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25004.360197/2008-90",
-   "deliberacao": "3.1.5.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25004.360197/2008-90",
-   "deliberacao": "3.1.5.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25004.360197/2008-90",
-   "deliberacao": "3.1.5.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25004.360197/2008-90",
-   "deliberacao": "3.1.5.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25004.360197/2008-90",
-   "deliberacao": "3.1.5.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25752.054071/2016-65",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25752.054071/2016-65",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25752.054071/2016-65",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25752.054071/2016-65",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25752.054071/2016-65",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.015740/2025-58",
-   "deliberacao": "3.2.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.015740/2025-58",
-   "deliberacao": "3.2.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.015740/2025-58",
-   "deliberacao": "3.2.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.015740/2025-58",
-   "deliberacao": "3.2.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.015740/2025-58",
-   "deliberacao": "3.2.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.382766/2020-02",
-   "deliberacao": "3.2.2.3",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.382766/2020-02",
-   "deliberacao": "3.2.2.3",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.382766/2020-02",
-   "deliberacao": "3.2.2.3",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.382766/2020-02",
-   "deliberacao": "3.2.2.3",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.382766/2020-02",
-   "deliberacao": "3.2.2.3",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25748.116020/2017-03",
-   "deliberacao": "3.2.3.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25748.116020/2017-03",
-   "deliberacao": "3.2.3.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25748.116020/2017-03",
-   "deliberacao": "3.2.3.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25748.116020/2017-03",
-   "deliberacao": "3.2.3.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25748.116020/2017-03",
-   "deliberacao": "3.2.3.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.532298/2019-77",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.532298/2019-77",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.532298/2019-77",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.532298/2019-77",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.532298/2019-77",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.238908/2021-78",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.238908/2021-78",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.238908/2021-78",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.238908/2021-78",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.238908/2021-78",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.165666/2020-13",
-   "deliberacao": "3.3.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.165666/2020-13",
-   "deliberacao": "3.3.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.165666/2020-13",
-   "deliberacao": "3.3.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.165666/2020-13",
-   "deliberacao": "3.3.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.165666/2020-13",
-   "deliberacao": "3.3.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.418461/2022-08",
-   "deliberacao": "3.4.1.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.418461/2022-08",
-   "deliberacao": "3.4.1.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.418461/2022-08",
-   "deliberacao": "3.4.1.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.418461/2022-08",
-   "deliberacao": "3.4.1.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto vencido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.418461/2022-08",
-   "deliberacao": "3.4.1.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.109991/2021-79",
-   "deliberacao": "3.4.1.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.109991/2021-79",
-   "deliberacao": "3.4.1.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.109991/2021-79",
-   "deliberacao": "3.4.1.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.109991/2021-79",
-   "deliberacao": "3.4.1.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.109991/2021-79",
-   "deliberacao": "3.4.1.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.060283/2020-41",
-   "deliberacao": "3.4.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.060283/2020-41",
-   "deliberacao": "3.4.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.060283/2020-41",
-   "deliberacao": "3.4.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.060283/2020-41",
-   "deliberacao": "3.4.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.060283/2020-41",
-   "deliberacao": "3.4.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.788437/2021-44",
-   "deliberacao": "3.4.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.788437/2021-44",
-   "deliberacao": "3.4.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.788437/2021-44",
-   "deliberacao": "3.4.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "PEDIU VISTA",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.788437/2021-44",
-   "deliberacao": "3.4.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido; vista concedida)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.788437/2021-44",
-   "deliberacao": "3.4.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.115521/2020-59",
-   "deliberacao": "3.4.3.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.115521/2020-59",
-   "deliberacao": "3.4.3.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.115521/2020-59",
-   "deliberacao": "3.4.3.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.115521/2020-59",
-   "deliberacao": "3.4.3.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25069.115521/2020-59",
-   "deliberacao": "3.4.3.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.253183/2019-23",
-   "deliberacao": "3.5.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.253183/2019-23",
-   "deliberacao": "3.5.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.253183/2019-23",
-   "deliberacao": "3.5.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "PEDIU VISTA",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.253183/2019-23",
-   "deliberacao": "3.5.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.253183/2019-23",
-   "deliberacao": "3.5.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido; vista concedida)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.175737/2025-92",
-   "deliberacao": "3.5.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.175737/2025-92",
-   "deliberacao": "3.5.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.175737/2025-92",
-   "deliberacao": "3.5.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.175737/2025-92",
-   "deliberacao": "3.5.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.175737/2025-92",
-   "deliberacao": "3.5.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25767.070731/2019-08",
-   "deliberacao": "3.5.3.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25767.070731/2019-08",
-   "deliberacao": "3.5.3.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25767.070731/2019-08",
-   "deliberacao": "3.5.3.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25767.070731/2019-08",
-   "deliberacao": "3.5.3.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25767.070731/2019-08",
-   "deliberacao": "3.5.3.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25750.298982/2020-60",
-   "deliberacao": "3.5.3.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25750.298982/2020-60",
-   "deliberacao": "3.5.3.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25750.298982/2020-60",
-   "deliberacao": "3.5.3.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25750.298982/2020-60",
-   "deliberacao": "3.5.3.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25750.298982/2020-60",
-   "deliberacao": "3.5.3.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.933472/2025-58",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.933472/2025-58",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.933472/2025-58",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.933472/2025-58",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.933472/2025-58",
-   "deliberacao": "4.1.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.920618/2025-03",
-   "deliberacao": "4.2.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.920618/2025-03",
-   "deliberacao": "4.2.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.920618/2025-03",
-   "deliberacao": "4.2.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.920618/2025-03",
-   "deliberacao": "4.2.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.920618/2025-03",
-   "deliberacao": "4.2.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.905497/2026-42",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.905497/2026-42",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.905497/2026-42",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.905497/2026-42",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.905497/2026-42",
-   "deliberacao": "4.3.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.904007/2026-91",
-   "deliberacao": "4.3.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.904007/2026-91",
-   "deliberacao": "4.3.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.904007/2026-91",
-   "deliberacao": "4.3.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.904007/2026-91",
-   "deliberacao": "4.3.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.904007/2026-91",
-   "deliberacao": "4.3.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910111/2025-33",
-   "deliberacao": "4.3.2.3",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910111/2025-33",
-   "deliberacao": "4.3.2.3",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910111/2025-33",
-   "deliberacao": "4.3.2.3",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910111/2025-33",
-   "deliberacao": "4.3.2.3",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910111/2025-33",
-   "deliberacao": "4.3.2.3",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO (retirado de pauta)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.942523/2025-32",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.942523/2025-32",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.942523/2025-32",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.942523/2025-32",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.942523/2025-32",
-   "deliberacao": "4.5.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.908040/2026-90",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.908040/2026-90",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.908040/2026-90",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.908040/2026-90",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "PEDIU VISTA",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.908040/2026-90",
-   "deliberacao": "4.5.2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido; vista concedida)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.907794/2026-22",
-   "deliberacao": "4.5.2.3",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.907794/2026-22",
-   "deliberacao": "4.5.2.3",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.907794/2026-22",
-   "deliberacao": "4.5.2.3",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.907794/2026-22",
-   "deliberacao": "4.5.2.3",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "PEDIU VISTA",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.907794/2026-22",
-   "deliberacao": "4.5.2.3",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido; vista concedida)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.944723/2025-20",
-   "deliberacao": "4.5.2.4",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.944723/2025-20",
-   "deliberacao": "4.5.2.4",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.944723/2025-20",
-   "deliberacao": "4.5.2.4",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.944723/2025-20",
-   "deliberacao": "4.5.2.4",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.944723/2025-20",
-   "deliberacao": "4.5.2.4",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910342/2022-02",
-   "deliberacao": "5.2.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910342/2022-02",
-   "deliberacao": "5.2.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910342/2022-02",
-   "deliberacao": "5.2.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910342/2022-02",
-   "deliberacao": "5.2.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP6",
-   "data": "2026-04-15",
-   "processo": "25351.910342/2022-02",
-   "deliberacao": "5.2.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.912958/2026-33",
-   "deliberacao": "2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.912958/2026-33",
-   "deliberacao": "2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido; vista concedida)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.912958/2026-33",
-   "deliberacao": "2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.912958/2026-33",
-   "deliberacao": "2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "PEDIU VISTA",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.912958/2026-33",
-   "deliberacao": "2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.928808/2021-37",
-   "deliberacao": "2.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.928808/2021-37",
-   "deliberacao": "2.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.928808/2021-37",
-   "deliberacao": "2.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.928808/2021-37",
-   "deliberacao": "2.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.928808/2021-37",
-   "deliberacao": "2.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.940843/2025-58",
-   "deliberacao": "2.3",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.940843/2025-58",
-   "deliberacao": "2.3",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.940843/2025-58",
-   "deliberacao": "2.3",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.940843/2025-58",
-   "deliberacao": "2.3",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.940843/2025-58",
-   "deliberacao": "2.3",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911129/2026-33",
-   "deliberacao": "2.4",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911129/2026-33",
-   "deliberacao": "2.4",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911129/2026-33",
-   "deliberacao": "2.4",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911129/2026-33",
-   "deliberacao": "2.4",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911129/2026-33",
-   "deliberacao": "2.4",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.918546/2025-26",
-   "deliberacao": "2.5",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.918546/2025-26",
-   "deliberacao": "2.5",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.918546/2025-26",
-   "deliberacao": "2.5",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.918546/2025-26",
-   "deliberacao": "2.5",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.918546/2025-26",
-   "deliberacao": "2.5",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.819090/2024-31",
-   "deliberacao": "2.6",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.819090/2024-31",
-   "deliberacao": "2.6",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.819090/2024-31",
-   "deliberacao": "2.6",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.819090/2024-31",
-   "deliberacao": "2.6",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.819090/2024-31",
-   "deliberacao": "2.6",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911351/2026-36",
-   "deliberacao": "2.7",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911351/2026-36",
-   "deliberacao": "2.7",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911351/2026-36",
-   "deliberacao": "2.7",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911351/2026-36",
-   "deliberacao": "2.7",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.911351/2026-36",
-   "deliberacao": "2.7",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.941488/2025-34",
-   "deliberacao": "2.8",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.941488/2025-34",
-   "deliberacao": "2.8",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.941488/2025-34",
-   "deliberacao": "2.8",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.941488/2025-34",
-   "deliberacao": "2.8",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.941488/2025-34",
-   "deliberacao": "2.8",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.957998/2020-19",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.957998/2020-19",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.957998/2020-19",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.957998/2020-19",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.957998/2020-19",
-   "deliberacao": "3.2.2.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "IMPEDIDO (declarou-se impedido/suspeito)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424452/2024-18",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424452/2024-18",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424452/2024-18",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424452/2024-18",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424452/2024-18",
-   "deliberacao": "3.2.7.1",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424457/2024-32",
-   "deliberacao": "3.2.7.2",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424457/2024-32",
-   "deliberacao": "3.2.7.2",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "RELATOR (voto proferido)",
-   "proveniencia": "nominal"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424457/2024-32",
-   "deliberacao": "3.2.7.2",
-   "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424457/2024-32",
-   "deliberacao": "3.2.7.2",
-   "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.424457/2024-32",
-   "deliberacao": "3.2.7.2",
-   "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.480353/2015-58",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
-  },
-  {
-   "reuniao": "ROP7",
-   "data": "2026-05-06",
-   "processo": "25351.480353/2015-58",
-   "deliberacao": "3.3.2.1",
-   "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "DIVERGIU (vencido)",
-   "proveniencia": "nominal"
-  },
-  {
    "reuniao": "ROP7",
    "data": "2026-05-06",
    "processo": "25351.480353/2015-58",
@@ -21439,8 +21439,8 @@
    "processo": "25351.171561/2024-19",
    "deliberacao": "3.5.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "AUSENTE DA VOTAÇÃO (registrado na ata)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP7",
@@ -21520,8 +21520,8 @@
    "processo": "25351.924064/2021-81",
    "deliberacao": "3.5.2.3",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP7",
@@ -21529,7 +21529,7 @@
    "processo": "25351.924064/2021-81",
    "deliberacao": "3.5.2.3",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -21538,7 +21538,7 @@
    "processo": "25351.924064/2021-81",
    "deliberacao": "3.5.2.3",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -21547,7 +21547,7 @@
    "processo": "25351.924064/2021-81",
    "deliberacao": "3.5.2.3",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -21970,7 +21970,7 @@
    "processo": "25351.178392/2025-29",
    "deliberacao": "4.5.2.1",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -21979,7 +21979,7 @@
    "processo": "25351.178392/2025-29",
    "deliberacao": "4.5.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -21988,8 +21988,8 @@
    "processo": "25351.178392/2025-29",
    "deliberacao": "4.5.2.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP7",
@@ -21997,7 +21997,7 @@
    "processo": "25351.178392/2025-29",
    "deliberacao": "4.5.2.1",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -23698,7 +23698,7 @@
    "processo": "25351.034973/2021-26",
    "deliberacao": "3.4.3.1",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -23707,8 +23707,8 @@
    "processo": "25351.034973/2021-26",
    "deliberacao": "3.4.3.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP9",
@@ -23725,7 +23725,7 @@
    "processo": "25351.034973/2021-26",
    "deliberacao": "3.4.3.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -24778,7 +24778,7 @@
    "processo": "25351.788437/2021-44",
    "deliberacao": "3.4.2.1",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -24787,7 +24787,7 @@
    "processo": "25351.788437/2021-44",
    "deliberacao": "3.4.2.1",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -24796,8 +24796,8 @@
    "processo": "25351.788437/2021-44",
    "deliberacao": "3.4.2.1",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP10",
@@ -24814,7 +24814,7 @@
    "processo": "25351.788437/2021-44",
    "deliberacao": "3.4.2.1",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "DIVERGIU (vencido)",
+   "voto": "ACOMPANHOU (acompanhou o relator, vencido)",
    "proveniencia": "nominal"
   },
   {
@@ -24913,7 +24913,7 @@
    "processo": "25351.253183/2019-23",
    "deliberacao": "3.5.2.3",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -24922,7 +24922,7 @@
    "processo": "25351.253183/2019-23",
    "deliberacao": "3.5.2.3",
    "diretor": "Daniel Meirelles Fernandes Pereira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -24931,8 +24931,8 @@
    "processo": "25351.253183/2019-23",
    "deliberacao": "3.5.2.3",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP10",
@@ -24940,7 +24940,7 @@
    "processo": "25351.253183/2019-23",
    "deliberacao": "3.5.2.3",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -26533,7 +26533,7 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.8",
    "diretor": "Leandro Pinheiro Safatle",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -26551,8 +26551,8 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.8",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido"
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
+   "proveniencia": "nominal"
   },
   {
    "reuniao": "ROP12",
@@ -26560,7 +26560,7 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.8",
    "diretor": "Thiago Lopes Cardoso Campos",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -26569,7 +26569,7 @@
    "processo": "25351.063024/2017-15",
    "deliberacao": "3.2.2.8",
    "diretor": "Marcelo Mario Matos Moreira",
-   "voto": "ACOMPANHOU",
+   "voto": "DIVERGIU (votou contra o relator vencido; integra a maioria)",
    "proveniencia": "inferido"
   },
   {
@@ -29269,7 +29269,7 @@
    "processo": "25757.127459/2018-75",
    "deliberacao": "3.4.10.4",
    "diretor": "Daniela Marreco Cerqueira",
-   "voto": "AUSENTE (não consta entre os presentes)",
+   "voto": "PEDIU VISTA (não consta entre os presentes do cabeçalho; a ata registra a concessão de vista)",
    "proveniencia": "nominal"
   },
   {
@@ -30137,10 +30137,34 @@
   [
    "ANVISA",
    "Votos já proferidos em itens com vista",
-   "95 linhas \"sem voto ainda\"",
+   "88 linhas \"sem voto ainda\"",
    "NÃO FEITO",
    "A ata cita os votos já dados antes da vista (\"dos votos da Diretora X, do Diretor Y\"); hoje todos os não-relator ficam \"sem voto ainda\"",
    "Registrar esses votos como nominais"
+  ],
+  [
+   "ANVISA",
+   "Relator vencido: quem integra a maioria vencedora (DIVERGIU)",
+   "22 linhas inferidas por exclusão (ROP5 4.1.2.1, ROP9 3.4.3.1) + 17 nominais (ROP6 3.4.1.1 nomeia quem acompanhou o voto vencedor; autor do voto vencedor nomeado nos demais)",
+   "LIMITE DA FONTE",
+   "A ata nomeia só os vencidos e o autor do voto vencedor; quem seguiu o voto vencedor sem ser nomeado entra por exclusão (todos presentes votaram). Convenção do extrato de CD: votar contra o relator = DIVERGIU",
+   "Conferir no voto escrito/vídeo da reunião"
+  ],
+  [
+   "ANVISA",
+   "VOTOU (antes da vista) sem posição",
+   "34 linhas (inclui ROP2 3.5.7.2 Thiago, Voto nº 43/2026)",
+   "LIMITE DA FONTE",
+   "A ata diz que o diretor proferiu o voto, mas não diz se acompanhou ou divergiu do relator",
+   "Ler o PDF do voto escrito"
+  ],
+  [
+   "ANVISA",
+   "Impedimento/ausência na votação em itens de sessão reservada",
+   "67 linhas lidas das notas da ata (varredura de todo o item, exceto a 1ª sentença dos bullets de histórico \"- ROP/SJO\")",
+   "FEITO",
+   "O texto corrido do histórico não separa decisões anteriores do relato da sessão atual; retiradas de pauta mantêm o critério antigo (não varrem o item inteiro)",
+   "Se a ANVISA mudar o layout, rever o filtro de histórico"
   ],
   [
    "ANVISA",
