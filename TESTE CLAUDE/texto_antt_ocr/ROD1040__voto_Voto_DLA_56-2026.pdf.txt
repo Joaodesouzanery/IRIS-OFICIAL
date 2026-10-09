@@ -1,0 +1,225 @@
+31/08/2026,19:02 SEI/ANTT-44638254-VotoDLA
+AGENCIA NACIONALDETRANSPORTES TERRESTRES
+VOTO DLA
+RELATORIA: DLA
+TERMO: VOTO A DIRETORIA COLEGIADA
+NUMERO:56/2026
+OBJETo: Proposicao de aprovacao de Resolucao que versa sobre as Regras Gerais de Outorgas Ferroviarias (ROF 1), aplicaveis aos contratos de concessao e
+autorizacao de ferrovias, sob competencia da Agencia Nacional de Transportes Terrestres, no ambito das Condicoes Gerais de Transporte Ferroviario (CGTF).
+ORIGEM: SUFER
+PROCESSO:50500.019001/2025-21
+PROPOSICAo PF/ANTT: Parecer n 00113/2026/PF-ANTT/PGF/AGU (SEIn 43127987)
+ENCAMINHAMENTO:A VOTACAO-DIRETORIA COLEGIADA
+EMENTA
+PROPOSICAO DE APROVACAO DA PRIMEIRA NORMA DAS CONDICOES GERAIS DE TRANSPORTE FERROVIARIO, DENOMINADA REGULAMENTO DE OUTORGAS
+FERROVIARIAS(ROF 1)APLICAVEIS AOS CONTRATOS DE CONCESSAO E AUTORIZACAO DE FERROVIAS,SOB COMPETENCIA DA AGENCIA NACIONAL DE
+DOOBJETO
+1.1. O presente processo tem por objeto submeter a deliberacao da Diretoria Colegiada a proposta de aprovacao da minuta de Resolucao que institui a
+primeira norma do Regulamento das Outorgas Ferroviarias, denominada Regras Gerais de Outorgas Ferroviarias (ROF 1), na versao consolidada apos a realizacao
+da Audiencia Publica n 09/2025 e apos a incorporacao dos ajustes decorrentes das manifestacoes juridicas da Procuradoria Federal junto a ANTT, constantes do
+Parecer n9 00113/2026/PF-ANTT/PGF/AGU (SEI n 43127987) e do Despacho n 05347/2026/PF-ANTT/PGF/AGU (SEI n9 43127995).
+1.2. A proposta normativa integra o projeto de revisao e consolidacao do marco regulatorio ferroviario federal, originalmente estruturado como
+Regulamento das Condicoes Gerais de Transporte Ferroviario - CGTF e, posteriormente, organizado em normas tematicas, dentre as quais se insere a presente
+norma como primeira norma do Regulamento das Outorgas Ferroviarias -ROF 1.
+1.3. A minuta em exame tem por finalidade estabelecer disciplina geral aplicavel as outorgas ferroviarias federais sob competencia da ANTT,
+contemplando diretrizes, conceitos, regras gerais de concessao e de autorizacao, procedimentos relacionados as outorgas, autorregulacao ferroviaria,
+compartilhamento, ouvidoria, prestacao de informacoes e demais materias estruturantes do regime juridico-regulatorio ferroviario, em conformidade com a Lei
+n 14.273, de 23 de dezembro de 2021.
+DOS FATOS
+2.1.
+estruturar a primeira norma do Regulamento das Outorgas Ferroviarias-ROF, em consonancia com as diretrizes da Lei n 14.273, de 23 de dezembro de 2021, e
+da Agenda Regulatoria da ANTT, tendo por antecedente a Nota Tecnica SEI n 2583/2025/GEREF/SUFER/DIR/ANTT (SEI n 30749505), que registrou a proposta
+de revisao e consolidacao do marco regulatorio do transporte ferroviario.
+2.2. A Agenda Regulatoria da ANTT do bienio 2025/2026, aprovada pela Deliberacao n 457, de 14 de novembro de 2024, e alterada pela Deliberacao
+n 147, de 25 de abril de 2025, passou a contemplar, no Eixo Tematico 4 - Transporte Ferroviario de Cargas e Passageiros, o projeto Condicoes Gerais de
+Transporte Ferroviario - Regras Gerais das Outorgas Ferroviarias (Norma 1A).
+2.3. A proposta normativa foi precedida de Consulta Interna as unidades organizacionais da ANTT, formalizada pelo Oficio Circular SEl no
+2.4. Em etapa anterior a audiencia publica, a materia foi submetida a Reuniao Participativa n 09/2025, realizada em 24 de julho de 2025, cujas
+manifestacoes foram consolidadas pela SUFER na Nota Tecnica n 10912/2025/CONOR/GEREF/SUFER/DIR/ANTT (SEI n? 36902711),com a correspondente
+atualizacao do Relatorio de Analise de Impacto Regulatorio -AIR, versao 2.0 (SEl n 36967761).
+2.5. A Procuradoria Federal junto a ANTT manifestou-se previamente por meio da Nota n 01542/2025/PF-ANTT/PGF/AGU (SEl n 37525579), ocasiao
+2.6. A abertura da Audiencia Publica n 09/2025 foi aprovada pelo Voto DLA n9 185/2025 (SEl n37774869) e autorizada pela Deliberacao n 499, de
+17 de dezembro de 2025 (SEl n9 37985869), publicada no Diario Oficial da Uniao em 18 de dezembro de 2025.
+2.7. A Audiencia Publica n 09/2025 foi realizada no periodo de 6 de janeiro a 20 de fevereiro de 2026, com sessao publica em formato hibrido em 27
+de janeiro de 2026, tendo sido recebidas 143 contribuicoes de usuarios, cidadaos, prestadores do servico de transporte, trabalhadores do setor, representantes
+do poder publico e demais interessados.
+2.8. Encerrada a fase de participacao social, a area tecnica elaborou o Relatorio Final da Audiencia Publica SEl n 1/2026 (SEl n 41322994), o relatorio
+de analise das contribuicoes, a versao ajustada da minuta de resolucao e o quadro comparativo entre a minuta submetida a audiencia publica e a minuta
+consolidada, encaminhando os autos a Procuradoria Federal junto a ANTT para analise juridica.
+2.9. A Procuradoria Federal junto a ANTT emitiu o Parecer n? 00113/2026/PF-ANTT/PGF/AGU (SEl n 43127987), no qual examinou a regularidade
+juridica da minuta e apresentou recomendacoes de aperfeicoamento relacionadas, entre outros pontos, a tecnica legislativa, a coeréncia sistemica da norma, a
+prevalencia contratual, a disciplina de alteracao contratual, ao chamamento publico, a autorregulacao ferroviaria e ao regime das autorizacoes ferroviarias.
+2.10. Na sequéncia, foi proferido o Despacho n 05347/2026/PF-ANTT/PGF/AGU (SEI n 43127995), que adotou as conclusoes do Parecer n?
+00113/2026/PF-ANTT/PGF/AGU e reforcou, em especial, o entendimento de que a apostila nao constitui instrumento juridicamente adequado para promover
+alteracoes contratuais de merito, as quais devem ser formalizadas mediante termo aditivo, nos termos do art. 136 da Lei n? 14.133, de 19 de abril de 2021.
+2.11. Em atendimento as manifestacoes juridicas,a area tecnica elaborou a Nota Tecnica SEI n? 6121/2026/CONOR/GEREF/SUFER/DIR-ANTT (SEI n?
+43139809), na qual analisou individualmente cada uma das recomendacoes da Procuradoria Federal junto a ANTT e promoveu os ajustes considerados
+pertinentes na minuta de resolugao, na forma detalhada no Capitulo 3 deste Voto.
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51943306&infra_siste... 1/4
+[pg 1]
+
+31/08/2026,19:02 SEI/ANTT-44638254-VotoDLA
+2.12.
+Por meio do Relatorio a Diretoria SEl n 238/2026 (SEl n 43139843), a SUFER submeteu a apreciacao da Diretoria Colegiada a proposta de
+Relatorio de Analise das Contribuicoes da Audiencia Publica n 09/2025, da Analise de Impacto Regulatorio e das manifestacoes juridicas pertinentes.
+2.13. Sao esses os fatos que passo a seguir a analisar com vistas a proferir meu Voto.
+3. DA ANALISE PROCESSUAL
+Ill.1.DoRitoProcessualedaParticipacaoSocial
+3.1. Nos termos do art. 14 da Resolucao ANTT n 6.020, de 28 de novembro de 2023, e do Regimento Interno da ANTT, a alteracao de atos normativos
+que afetem direitos de agentes economicos ou usuarios deve ser submetida a escrutinio publico, dever este observado no presente processo mediante a
+realizacao da Reuniao Participativa n9 09/2025 e, posteriormente, da Audiencia Publica n 09/2025.
+3.2.
+processo participativo realizado, concluindo que a Audiencia Publica n 09/2025 observou os requisitos de transparencia, publicidade e participacao social, sem
+determinar providencias adicionais quanto ao rito processual.
+3.3. Verifica-se, portanto, que a instrucao processual observou as etapas procedimentais necessarias a edicao de ato normativo pela ANTT, com a
+devida oportunidade de manifestacao dos agentes regulados, usuarios e demais interessados, em atengao aos principios da participacao e do controle social.
+Ill.2.Da Manifestagao Juridica da PF-ANTT e dosAjustes Promovidos na Minuta
+3.4. O Parecer n 00113/2026/PF-ANTT/PGF/AGU (SEI n 43127987) e o Despacho n 05347/2026/PF-ANTT/PGF/AGU (SEI n 43127995) apresentaram
+6121/2026/CONOR/GEREF/SUFER/DIR-ANTT (SEI n9 43139809).Destacam-se, dentre os ajustes promovidos, os seguintes:
+Materia Recomendagao da PF-ANTT Ajuste promovido na minuta
+Ementa e preambulo Adocao de nomenclatura inica, ante a Unificacao da denominacao da norma como
+duplicidade entre "Regulamento das primeira norma do Regulamento de
+Condicoes Gerais de Transporte Ferroviario" Outorgas Ferroviarias (ROF 1)
+e "Regulamento de Outorgas Ferroviarias"
+Aplicagao de alteracoes Risco de inseguranga juridica por Supressao do dispositivo, com preservagao
+supervenientes (art. 69) determinar aplicacao imediata de novas do regime de prevalencia contratual e
+regras aos contratos vigentes aplicacao subsidiaria da regulamentacao
+(art. 18 da minuta atual)
+Reproducao de comando Dispositivo reproduz comando da Lei n? Supressao do paragrafo unico
+legal (art. 10, paragrafo 12.379, de 6 de janeiro de 2011, dirigido a
+inico) Estados e Municipios
+Chamamento publico (art. Reorganizagao sistematica do texto Deslocamento do dispositivo para a Secao
+11) normativo especifica de chamamento publico (Capitulo
+IV)
+Ociosidade e contraditorio Redundancia e antecipagao de contraditorio Supressao dos paragrafos, com ajuste
+(art. 12, 5519 e 39) ja assegurado em etapa propria redacional do dispositivo correlato (atual
+art. 46, I)
+Extensao de regras ao Risco interpretativo quanto a Supressao do dispositivo, sem prejuizo dos
+controlador (art. 13, §19) responsabilizacao de controladores mecanismos legais de responsabilizacao ja
+vigentes
+Prevalencia contratual e Eliminacao de redundancia redacionale Ajuste redacional dos incisos e paragrafos,
+adesao normativa (art.18) esclarecimento quanto a formalizaao da com inclusao de regra de recomposicao de
+adesao regulatoria por termo aditivo equilibrio economico-financeiro
+Alteracao contratual Necessidade de vincular toda alteragao a Inclusao da expressao"sempre visando a
+unilateral (art. 20) finalidade de interesse publico e de finalidade de interesse publico" e supressao
+reformular ressalva imprecisa quanto a da ressalva relativa a encargos "nao
+extraordinarios"
+encargos adicionais
+Contagem de prazos (art. Risco de conflito normativo com a disciplina Substituicao por remissao a Lei n 9.784, de
+23) geral da Resolucao ANTT n 5.083, de 2016 29 de janeiro de 1999, com preservacao da
+regra de caducidade de direitos com data
+certa
+Vedacao ao uso de Apostila nao constitui instrumento aptoa Supressao do dispositivo que admitia
+apostila para alteracao formalizar alteracoes de merito, nos termos apostilamento; consolidacao da disciplina
+contratual (arts. 30 a 32) do art. 136 da Lei n 14.133, de 2021 de termo aditivo, com motivacao tecnica,
+analise de viabilidade economica quando
+aplicavel e analise juridica previa pela PF-
+ANTT
+Chamamento publico- Vedacao incompativel com a natureza nao Supressao do inciso Vill e do respectivo
+restricao a participacao de licitatoria do chamamento publico para paragrafo unico
+estruturadores (art. 54, autorizacao e com os objetivos da Lei n?
+VIII) 14.273, de 2021
+Informacoes falsas e Necessidade de prever o acionamento da Inclusao de regra para instauracao de
+garantia da proposta (art. garantia da proposta, alem da processo administrativo, com contraditorio
+desclassificacao
+66, 529) e ampla defesa, para execucao da garantia
+Constituicao de SPE para Exigencia de constituicao de Sociedade de Substituicao pela exigencia de qualificacao
+autorizacao (art.84, IV) Proposito Especifico incompativel com o da sociedade empresaria responsavel pela
+regime privado da autorizacao e com a Lei exploragao do objeto da autorizagao
+de Liberdade Economica
+Autorregulacao ferroviaria Necessidade de reduzir a ingerencia da Supressao de exigencias de envio periodico
+ANTT na organizacao interna das entidades
+(arts. 95, 96 e 98) de documentos internos e do dispositivo
+autorregulatorias relativo a programa de integridade, com
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51943306&infra_siste... 2/4
+[pg 2]
+
+31/08/2026,19:02 SEI/ANTT-44638254-VotoDLA
+Materia Recomendagao da PF-ANTT Ajustepromovido na minuta
+preservagao das competencias de
+supervisao regulatoria da ANTT
+Prestacao de informagoes Duvida quanto ao alcance do dispositivo,
+Reformulacao da redacao, com preservacao
+do art. 66 da Lei n? cujo comando principal e dirigido ao Poder da obrigagao de prestagao de informagoes
+14.273/2021 (art. 100) Publico pelas operadoras ferroviarias
+3.5. Cumpre registrar que, quanto a vedacao ao uso de apostila para alteracoes contratuais de merito, a area tecnica acolheu integralmente o
+entendimento da Procuradoria Federal junto a ANTT, reforcado no Despacho n 05347/2026/PF-ANTT/PGF/AGU, no sentido de que tais modificacoes, por
+envolverem investimentos, encargos ou obrigacoes contratuais, devem ser necessariamente formalizadas por termo aditivo, instrumento que assegura
+publicidade, motivacao e analise juridica previa pela Procuradoria Federal, em conformidade com o art. 136 da Lei n? 14.133, de 2021.
+3.6. Verifica-se, dessa forma, que a area tecnica examinou individualmente cada uma das recomendacoes formuladas pela Procuradoria Federal junto
+a ANTT, tendo acolhido integralmente a maior parte delas e, quanto as demais, apresentado justificativa tecnica para o acolhimento parcial, sem que subsistam
+obices juridicos ao prosseguimento do feito.
+Il.3.Da InstrucaoProcessuale daAndlisede Impacto Regulatorio
+3.7. A proposta normativa encontra-se instruida com a Analise de Impacto Regulatorio, o Relatorio de Analise das Contribuicoes da Audiencia Publica
+n 09/2025, o Relatorio a Diretoria SEl n 238/2026 (SEI n 43139843)e a manifestacao juridica da Procuradoria Federal junto a ANTT, elementos que evidenciam
+a regularidade tecnica, juridica e procedimental do processo.
+3.8. A minuta consolidada preserva a logica de prevalencia das disposicoes contratuais nas materias expressamente disciplinadas nos contratos de
+concessao, com aplicacao subsidiaria da regulamentacao da ANTT nos casos de omissao ou insuficiencia contratual, em reforco a seguranca juridica e a
+previsibilidade regulatoria do setor ferroviario.
+4. DO VOTO
+4.1. Concluida a analise processual, registro que a presente deliberacao representa mais um passo relevante na consolidagao do novo marco
+regulatorio do transporte ferroviario brasileiro, iniciado com a promulgacao da Lei n 14.273, de 23 de dezembro de 2021, a Lei das Ferrovias, que rompeu com o
+modelo ate entao centrado exclusivamente na concessao, instituiu a autorizacao como via adicional de exploracao da infraestrutura ferroviaria e conferiu a esta
+Agencia o dever de atualizar e sistematizar o arcabouco infralegal do setor.
+4.2. Ate o presente momento, a disciplina das outorgas ferroviarias federais encontrava-se dispersa em normas de diferentes periodos e contextos
+cenario de fragmentacao normativa gerava inseguranca juridica, elevava o custo de transacao para os agentes regulados e dificultava a atuacao uniforme desta
+Agencia.
+4.3. A minuta ora submetida a esta Diretoria Colegiada enfrenta diretamente esse problema regulatorio, consolidando em um unico instrumento
+normativo as regras gerais aplicaveis as outorgas ferroviarias federais, tanto no regime publico de concessao quanto no regime privado de autorizacao, alem de
+disciplinar, de forma sistemica, temas transversais como a autorregulacao ferroviaria, o compartilhamento de infraestrutura, a ouvidoria setorial e a prestacao de
+informacoes pelas operadoras ferroviarias.
+4.4. Nao se trata de proposta elaborada de forma acodada. Ao contrario, o processo observou rigorosamente as etapas de participacao e controle
+social exigidas pelo Regimento Interno da ANTT e pela Resolucao ANTT n 6.020, de 28 de novembro de 2023, com a realizacao de Consulta Interna as unidades
+tecnicas da Agencia, de Reuniao Participativa n 09/2025 e, por fim, da Audiencia Publica n 09/2025, que recebeu 143 contribuicoes de usuarios, operadores
+ferroviarios, trabalhadores do setor e representantes do poder publico, todas devidamente analisadas e, quando pertinentes, incorporadas a versao final da
+norma.
+4.5. Encerrada essa etapa, a proposta foi ainda submetida a rigoroso escrutinio juridico pela Procuradoria Federal junto a ANTT que, por meio do
+Parecer n? 00113/2026/PF-ANTT/PGF/AGU e do Despacho n2 05347/2026/PF-ANTT/PGF/AGU, examinou artigo por artigo a minuta de resolucao e apontou os
+ajustes necessarios a sua plena conformidade com o ordenamento juridico vigente, os quais foram objeto de analise individualizada pela area tecnica na Nota
+Tecnica SEI n9 6121/2026/CONOR/GEREF/SUFER/DIR-ANTT.
+4.6. Entre as contribuicoes da Procuradoria Federal, destaco, por sua relevancia pratica para a seguranca juridica dos contratos de concessao, o
+entendimento reafirmado no sentido de que a apostila nao constitui instrumento apto a formalizar alteracoes contratuais de merito, envolvam elas
+investimentos, encargos ou obrigacoes das concessionarias, providencia que somente pode ser realizada por termo aditivo, com toda a publicidade, motivacao e
+controle institucional que esse instrumento assegura, nos termos do art. 136 da Lei n 14.133, de 19 de abril de 2021. Registro que a area tecnica acolheu
+integralmente esse entendimento, suprimindo da minuta a possibilidade de apostilamento para tais hipoteses e consolidando disciplina unica e mais protetiva
+para as alteracoes contratuais.
+4.7. Da mesma forma, entendo acertado o acolhimento da recomendagao da Procuradoria Federal quanto ao chamamento publico para autorizacao
+ferroviaria: por nao se tratar de procedimento licitatorio, mas de mecanismo de identificacao de interessados em regime de direito privado, nao se justifica vedar
+a participacao, no certame, de empresas que contribuiram para a estruturacao dos estudos de viabilidade. Ao contrario, deve a Agencia incentivar que o agente
+disposto a investir na investigacao da viabilidade de um trecho ferroviario ocioso ou abandonado seja tambem aquele a explora-lo, em linha com os objetivos da
+providencia que se harmoniza com a natureza de direito privado dessa modalidade de outorga.
+4.8. Quanto a autorregulacao ferroviaria, entendo igualmente acertados os ajustes promovidos no sentido de delimitar a atuacao da Agencia na
+organizacao interna das entidades autorregulatorias, sem prejuizo da manutengao de suas competencias de supervisao regulatoria e de solugao de conflitos
+ferroviarios, nos termos do art. 43 e seguintes da Lei n 14.273, de 2021, preservando-se o equilibrio entre autonomia setorial e atuagao regulatoria do Estado.
+4.9. Por fim, entendo que a proposta normativa reune os elementos tecnicos, juridicos e procedimentais necessarios a sua aprovacao. Com esta
+deliberacao, a Agencia conclui a primeira norma de um regulamento que, a um so tempo, confere maior previsibilidade aos agentes regulados, simplifica o
+ambiente normativo do setor ferroviario e fortalece a seguranca juridica indispensavel a atracao de investimentos em infraestrutura de transporte, elemento
+estrategico para o desenvolvimento economico do Pais.
+5. DA PROPOSICAO FINAL
+5.1. Diante do exposto, e nos termos do Relatorio a Diretoria SEl n 238/2026 (SEl n 43139843), da Nota Técnica SEl no
+o Relatorio Final da Audiencia Publica n 9/2025, realizada no periodo de 6 de janeiro a 20 de fevereiro de 2026, com o objetivo de
+aplicaveis aos contratos de concessao e autorizacao de ferrovias, sob competencia da Agencia Nacional de Transportes Terrestres, no ambito
+das Condicoes Gerais de Transporte Ferroviario (CGTF);
+II - a minuta de Resolucao que institui a primeira norma das Condicoes Gerais de Transporte Ferroviario, denominada Regulamento de
+Outorgas Ferroviarias (RoF 1) aplicaveis aos contratos de concessao e autorizacao de ferrovias, sob competencia da Agencia Nacional de
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51943306&infra_siste.. 3/4
+[pg 3]
+
+31/08/2026,19:02 SEI/ANTT-44638254- Voto DLA
+Transportes Terrestres (SEl n 44640517), na versao consolidada apos a Audiencia Publica n 9/2025 e apos a incorporacao dos ajustes
+decorrentes das manifestacoes juridicas da Procuradoria Federal junto a ANTT.
+5.2. E como voto.
+Brasilia, 27 de agosto de 2026.
+(assinado eletronicamente)
+LUCAS ASFOR ROCHA LIMA
+DIRETOR
+seil Documento assinado eletronicamente por LUCAS ASFOR ROCHA LIMA, Diretor, em 28/08/2026, as 12:56, conforme horario oficial de Brasilia, com fundamento
+assinatura no art. 21, inciso Il, da Instrucao Normativa n 22/2023 da ANTT.
+A autenticidade deste documento pode ser conferida no site http://sei.antt.gov.br/sei/controlador_externo.php?
+acao=documento_conferir&id_Qrgao_acess0_externo=0, informando o codigo verificador44638254e o codigo CRC B3FB96A6.
+Referencia: Process0 n9 50500.019001/2025-21 SEI ng 44638254
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF -www.antt.gov.br
+4/4
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51943306&infra_siste..
+[pg 4]

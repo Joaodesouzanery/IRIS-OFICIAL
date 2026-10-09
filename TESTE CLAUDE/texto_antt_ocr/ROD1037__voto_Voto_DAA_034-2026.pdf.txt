@@ -1,0 +1,398 @@
+17/07/2026,10:06 SEI/ANTT-43976698-VotoDAA
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DAA
+RELATORIA: ALEX AZEVEDO
+TERMO: VOTO A DIRETORIA COLEGIADA
+NUMERO: 34/2026
+OBJETO: Proposta de reajuste anual dos coeficientes dos pisos minimos de frete do Transporte
+acumulado de 3,54% (tres virgula cinquenta e quatro por cento) no periodo de dezembro de 2025 a
+maio de 2026, nos termos do § 2 do art. 5 da Lei n 13.703, de 8 de agosto de 2018, e atualizacao do
+preco de referencia do oleo diesel S10 para Rs 6,97 (seis reais e noventa e sete centavos) por litro,
+conforme divulgacao da Agencia Nacional do Petroleo, Gas Natural e Biocombustiveis (ANP) de 10 de
+julho de 2026.
+ORIGEM: Superintendéncia de Servicos de Transporte Rodoviario e Multimodal de Cargas (SUROC)
+PROCESSO (S):50500.037810/2026-04
+PROPOSICAO PF/ANTT: Nao ha
+ENCAMINHAMENTO: A VOTACAO - DIRETORIA COLEGIADA
+1. EMENTA
+1.1. POLiTICA NACIONAL DE PISOS MiNIMOS DO TRANSPORTE RODOVIARIO DE CARGAS
+(PNPM-TRC). REAJUSTE ANUAL ORDINARIO DOS COEFICIENTES. APLICACAO DO IPCA. ATUALIZACAO DO
+PRECO DE REFERENCIA DO OLEO DIESEL S1O. Proposta de atualizacao dos coeficientes dos pisos
+minimos de frete, pela aplicacao da variacao de 3,54% do IPCA (acumulada de dezembro de 2025 a
+maio de 2026, conforme divulgacao oficial do Instituto Brasileiro de Geografia e Estatistica - IBGE, em
+12 de junho de 2026) sobre os insumos mercadologicos do modelo de calculo da Resolucao ANTT n?
+5.867/2020, e pela atualizacao do preco de referencia do oleo diesel S10 para Rs 6,97/litro (ANP,
+divulgado de 10/07/2026), nos termos do art. 5, $ 2, da Lei n? 13.703/2018. 0bedecido o prazo legal
+de publicacao até 20 de julho de 2026 (art. 5, $ 19), o ato submetido a deliberacao é o reajuste
+ordinario anual dos coeficientes, etapa ordinaria e automatica do calendario regulatorio da PNPM, sem
+deliberar sobre a metodologia de calculo ou sobre a estrutura dos coeficientes - matérias reservadas
+aos ciclos regulatorios de revisao ordinaria (art. 5, § 1, da Lei n 13.703/2018).
+1.2.
+Pela aprovacao.
+RELATORIO
+2.
+2.1. DO OBJETO
+2.1.1. Trata o presente processo da proposta da Coordenacao de Gestao de Dados e
+Acompanhamento de Mercado (CGDAM), da Gerencia de Inteligéncia de Mercado e Tecnologia do
+Transporte Rodoviario e Multimodal de Cargas (GEiNT), da Superintendéncia de Servicos de Transporte
+Rodoviario e Multimodal de Cargas (sUROC), de reajuste anual ordinario dos coeficientes dos pisos
+Consumidor Amplo (IPCA) acumulado de 3,54% (trés virgula cinquenta e quatro por cento) no periodo de
+dezembro de 2025 a maio de 2026 e pela atualizacao do preco de referencia do oleo diesel S10 para Rs
+6,97 (seis reais e noventa e sete centavos) por litro, conforme Nota Técnica SEl n?
+6.563/2026/CGDAM/GEINT/SUROC/DIR-ANTT (SEl n°43384179) e Relatorio a Diretoria SEI n? 253/2026
+(SEI n° 43400297).
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 1/9
+[pg 1]
+
+17/07/2026,10:06 SEI/ANTT - 43976698 - Voto DAA
+2.1.2. O art. 5, $ 23, da Lei n 13.703/2018 (Politica Nacional de Pisos Minimos do Transporte
+Rodoviario de Cargas - PNPM-TRC) dispoe, verbis: "Na hipotese de a norma a que se refere o caput
+deste artigo nao ser publicada nos prazos estabelecidos no $ 1, os valores anteriores permanecerao
+validos, atualizados pelo indice Nacional de Precos ao Consumidor Amplo (IPCA), ou por outro que o
+Resolucao ANTT n? 6.062/2025 - base novembro/2025) pela aplicacao do IPCA acumulado de 3,54%, na
+2.1.3. Cumpre desde logo delimitar a natureza do ato deliberativo: nao se delibera, nesta
+oportunidade, sobre a metodologia de calculo dos coeficientes, sobre a estrutura das tabelas A a D
+(Anexo Il da Resolucao ANTT n 5.867/2020), nem sobre a abertura de novo ciclo regulatorio de revisao
+ordinaria (materia afeta ao 9 ciclo, em curso na SUcON, conforme Despacho CTRNC); delibera-se, tao
+somente, sobre o reajuste automatico anual dos coeficientes pela aplicacao do IPcA e pela atualizacao do
+preco do oleo diesel S1O, etapa ordinaria e vinculada do calendario regulatorio da PNPM.
+2.2. DO HISTORICO PROCESSUAL
+2.2.1. A PNPM-TRC, instituida pela Lei n? 13.703/2018, atribuiu a ANTT a competéncia para
+publicar normas referentes ao piso minimo por quilometro rodado e por numero de eixos carregados,
+com revisoes ordinarias anuais (estudos aprofundados da metodologia, com PPcS, tomada de subsidio e
+Audiencia Publica - até 20 de janeiro de cada ano) e com revisoes extraordinarias (sempre que o preco
+do oleo diesel oscilar mais de 5% em relacao ao preco de referéncia - até a proxima janela).
+2.2.2.
+calculo - equacoes de custos fixos e variaveis, em cinco categorias de insumos) e Il (tabelas A a D com
+coeficientes de custo de deslocamento - CcD - e de carga e descarga - CC - para doze tipos de cargas
+e sete a dez configuracoes de eixos).
+2.2.3. A Resolucao ANTT n² 5.977/2022 atribuiu a CGDAM (art. 27, S 13, Il, "d", do Regulamento
+anexo) a competéncia para calcular os coeficientes dos pisos minimos de frete a fim de subsidiar a
+GRTMC - definicao institucional de competéncias que instrumentaliza a presente proposta.
+2.2.4. Desde a implementacao da PNPM-TRC, a ANTT realizou oito ciclos regulatorios de revisao
+ordinaria (matéria afeta ao $ 19 do art. 5² da Lei n² 13.703/2018), dos quais os cinco ultimos -
+Resolucoes ANTT n? 5.949/2021, 5.985/2022, 6.022/2023,6.046/2024 e 6.057/2025- constituem 
+precedente direto e consolidado para o presente reajuste anual (s 2, mesma Lei), com o mesma rito
+motivada de AIR e PPCS, nos termos do art. 7, Ill, da Resolucao ANTT n² 6.020/2023 e do art. 96, Il, do
+Regimento Interno).
+2.2.5. O ultimo ciclo regulatorio ordinario (8 ciclo) foi concluido em dezembro de 2025, com a
+publicacao da Resolucao ANTT n 6.076, de 19 de janeiro de 2026 (Voto DLA n 003, de 19/01/2026 -
+Processo n 50500.029383/2025-00, SEl n² 36474254/37991242/38147789/38147817) e da Portaria
+SUROC n 1/2026 (que contém os parametros de calculo dos coeficientes atualizados na revisao
+ordinaria), com data-base de novembro de 2025. Esse é o patamar-base sobre o qual incide o presente
+reajuste pelo IPCA, nos termos do $ 2? do art. 5? da Lei n? 13.703/2018.
+2.2.6. Em marco de 2026, foram publicadas duas revisoes extraordinarias (s 3 do art. 5? da Lei
+n? 13.703/2018) em razao da oscilacao do preco do oleo diesel S10 acima de 5% em relacao ao preco de
+referéncia: a Portaria SUR0C n 3/2026 (Processo n² 50500.017073/2026-15, SEl n 40561238) e a
+Portaria SUR0C n² 4/2026 (Processo n² 50500.018722/2026-03, SEl n² 40832129). Tais revisoes
+extraordinarias nao substituem o presente reajuste anual ordinario, que se mantem vinculado ao s 2 do
+art. 5? e ao IPCA acumulado no semestre.
+2.2.7. A Nota Técnica SEI n² 6.563/2026/CGDAM/GEINT/SUROC/DIR-ANTT (SEI n° 43384179),
+contém a analise técnica completa do reajuste, com (i) o IPCA de 3,54% (Despacho CTRNC SEl n?
+43358433 - fl. 16, com o documento-fonte do IBGE - Anexo Il IBGEIPCA2026maio.pdf); (ii) o preco do
+oleo diesel S10 de Rs 7,09/litro; (ili) a metodologia vigente (Anexos I e Il da Resolucao ANTT n?
+5.867/2020); (iv) o quadro completo de insumos (operacional, mercadologico e outros insumos) sobre os
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 2/9
+[pg 2]
+
+17/07/2026,10:06 SEI/ANTT - 43976698 - Voto DAA
+quais incide a variacao; e (v) as tabelas A, B, C e D atualizadas, com os coeficientes CCD (custo de
+deslocamento, Rs/km) e cc (carga e descarga, Rs) por tipo de carga e numero de eixos. A nota atesta a
+conformidade técnica da proposta com a Lei n? 13.703/2018, com a Resolucao ANTT n? 5.867/2020 e
+com o precedente dos cinco reajustes anuais anteriores.
+2.2.8. Em 25 de junho de 2026, a GRTMC, pelo Despacho de Instrucao SEl n? 43400311, firmado
+pela Gerente de Regulacao e Governanca do Transporte Rodoviario e Multimodal de Cargas (as 14:25) e
+ratificado pelo Superintendente de Servicos de Transporte Rodoviario e Multimodal de Cargas (em
+26/06/2026, as 16:47), declarou o processo apto a distribuicao nos termos do art. 39, s 1, do Regimento
+Interno e do checklist documental de instrucao, declarando nao se aplicarem os itens Il.a (Parecer PF-
+ANTT) e Il.b (Documentos e manifestacoes das partes), bem como os itens Ill.a (AiR) e Ill.b (Relatorios
+PPCS)  com arrimo no Voto DEM 43 (SEl n° 7194199), juntado ao Processo n² 50500.393248/2019-69
+(que trata dos procedimentos relacionados as cinco Resolucoes precedentes).
+2.2.9. Em 01 de julho de 2026, conforme Certidao de Distribuicao SEl n² 43639547 (sorteio
+realizado pela Secretaria-Geral da DicOL), o processo foi distribuido a este Relator (DAA - Alex Antonio
+de Azevedo Cruz).
+2.2.10.
+Em 15 de julho de 2026, em razao de fato superveniente, por meio do Despacho CTRNC
+(SEl n? 43996941), a Superintendencia de Servicos de Transporte Rodoviario e Multimodal de Cargas
+(SUROC) promoveu a atualizacao da proposta anteriormente instruida a Diretoria Colegiada. Tal
+atualizacao decorreu da divulgacao pela Agéncia Nacional do Petroleo, Gas Natural e Biocombustiveis
+(ANP), em 10 de julho de 2026, do novo valor médio de referencia de revenda do oleo diesel S10 no
+montante de Rs 6,97 (seis reais e noventa e sete centavos) por litro. Assim, em decorrencia de uma
+reducao significativa apresentada em relacao ao valor de referéncia vigente superior a 5% (cinco por
+cento), o gatilho do diesel foi acionado para a revisao extraordinaria da Resolucao ANTT n? 5.867/2020,
+conforme determina o $ 3 do art. 5 da Lei n? 13.703/2018. A SUROC, em sede de eficiencia regulatoria,
+concentrou ambas as matérias em um unico ato normativo para evitar a sobreposicao de procedimentos
+e publicacoes. Dessa maneira, essa atualizacao extraordinaria do gatilho passou a ser tratada de forma
+unificada no ambito do presente processo.
+2.2.11. Diante das ultimas atualizacoes, o processo encontra-se, portanto, completo e apto a
+deliberacao pela Diretoria Colegiada, na conformidade do art. 39, § 1, do Regimento Interno, com a
+competencia desta Agencia para editar o ato (Lei n 10.233/2001, art. 12, Il, e art. 13) e a habilitacao
+2.3. DA INSTRUCAO DOCUMENTAL
+2.3.1. O processo encontra-se instruido com: a) o Despacho CTRNC SEl n 43358433; b) a Nota
+Técnica SEI n² 6.563/2026/CGDAM/GEINT/SUROC/DIR-ANTT (SEI n° 43384179), com a metodologia de
+calculo, o quadro de insumos, a memoria de calculo e as tabelas A, B, C e D atualizadas (em conformidade
+44038867), que altera a Resolucao ANTT n 6.062/2025 e atualiza os coeficientes; d) a Minuta de
+Deliberacao (SEl n? 43977075), que submete a Resolucao a deliberacao da Diretoria Colegiada; e) 0
+Instrucao SEl n 43400311, com o checklist de instrucao e a invocacao do Voto DEM 43; e g) a Certidao de
+Distribuicao SEl n 43639547, com a composicao da Diretoria Colegiada e a indicacao do Relator.
+2.3.2. Conclusao parcial: a instrucao esta completa e apta a deliberacao colegiada, com o rito do
+cinco reajustes anuais anteriores expressamente invocado.
+3. FUNDAMENTACAO
+3.1. DA ANALISE DE ADMISSIBILIDADE
+3.1.1. A competéncia desta Agéncia para editar normas referentes aos pisos minimos do
+10.233/2001, art. 12, Ill, e art. 13), que erige a regulacao do transporte como atividade desta Agencia. A
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 3/9
+[pg 3]
+
+17/07/2026,10:06 SEI/ANTT - 43976698 - Voto DAA
+Lei n 13.703/2018 atribui expressamente a ANTT a competéncia para publicar normas com os pisos
+minimos e para atualizar os coeficientes (art. 5, caput, e ss 1 e 2).
+3.1.2. A Lei n? 13.703/2018 estabelece, em seu art. 5?:
+"Art. 59 Para a execucao da Politica Nacional de Pisos Minimos do Transporte Rodovidrio de Cargas,
+a ANTT publicard norma com os pisos minimos referentes ao quilometro rodado na realizacao de
+art. 3 desta Lei, bem como planilha de calculos utilizada para a obtencao dos respectivos pisos
+minimos.
+ 19 A publicacao dos pisos e da planilha a que se refere o caput deste artigo ocorrerd ate os dias 20
+de janeiro e 20 de julho de cada ano, e os valores serao validos para o semestre em que a norma for
+editada.
+§ 2 Na hipotese de a norma a que se refere o caput deste artigo nao ser publicada nos prazos
+estabelecidos no  1, os valores anteriores permanecerao validos, atualizados pelo indice
+Nacional de Pregos ao Consumidor Amplo (IPcA), ou por outro que o substitua, no periodo
+acumulado.
+S 3 Sempre que ocorrer oscilacao no preco do oleo diesel no mercado nacional superior a 5% (cinco
+por cento) em relacao ao preco considerado na planilha de calculos de que trata o caput deste
+artigo, para mais ou para menos, nova norma com pisos minimos deverd ser publicada pela ANTT,
+considerandoavariacao nopreco do combustivel."
+3.1.3. O rito procedimental é meramente aplicativo do s 2 do art. 5: a presente proposta limita-
+se a aplicar o IPCA acumulado aos insumos mercadologicos do modelo de calculo vigente (Anexos I e Il da
+Resolucao ANTT n 5.867/2020) e a atualizar o preco de referencia do oleo diesel S10 (insumo de maior
+metodologica, nao ha alteracao de estrutura de tabelas, nao ha alteracao da metodologia de calculo: o
+ato é estritamente vinculado ao indice oficial e ao preco de referencia setorial.
+3.1.4. Conclusao preliminar: a competencia desta Agencia é inconteste, os requisitos formais do
+rito do art. 39 do Regimento Interno foram plenamente atendidos, e a instrucao observou a legislacao
+aplicavel.
+3.2. DA ANALISE DE MERITO
+3.2.1. DA METODOLOGIA VIGENTE
+3.2.1.1. A metodologia de calculo dos pisos minimos de frete é a estabelecida pela Resolucao ANTT
+n? 5.867/2020 (Anexos I e Il). O Anexo I contém a metodologia de calculo, definindo as equacoes de
+custos fixos e variaveis que resultam nos coeficientes de pisos minimos; o Anexo Il contém as quatro
+tabelas com coeficientes para cada operacao do transporte rodoviario de cargas, quais sejam: Tabela A -
+desempenho. As tabelas A a D apresentam os coeficientes de custo de deslocamento (CcD) e os
+coeficientes de carga e descarga (cC) para configuracoes conforme o numero de eixos da composicao
+veicular, distribuidos em doze tipos de cargas.
+3.2.1.2. A estrutura metodologica do calculo dos pisos minimos de frete é composta por cinco
+categorias de insumos (Quadro 2 da NT 6563): (i) Informacoes da composicao veicular (numero de eixos,
+tipo de veiculo, capacidade, vida economica etc. - operacional/mercadologico); (ii) Indicadores de
+desempenho (velocidade, horas trabalhadas, rendimento médio de combustivel - operacional); (ii)
+insumos (piso salarial de motoristas, diaria, preco do oleo diesel, preco do pneu - mercadologico); e (v)
+Informacoes de diferenciacao de cargas (rendimento, adicionais de periculosidade, custos adicionais -
+operacional/mercadologico).
+3.2.1.3. Classificacao dos insumos para fins de atualizacao pelo IPCA: os insumos operacionais
+(relacionados ao desempenho dos veiculos e a operacao de transporte) possuem pouca ou nenhuma
+variacao no curto e médio prazo, associada a evolucoes tecnologicas; os insumos mercadologicos (preco
+do oleo diesel, dos pneus, dos oleos lubrificantes, valor de aquisicao e revenda do veiculo automotor e do
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 4/9
+[pg 4]
+
+17/07/2026, 10:06 SEI/ANTT - 43976698 - Voto DAA
+implemento) estao sujeitos a constantes variacoes de precos; a categoria outros insumos (taxas e valores
+percentuais de tributos) apresenta pouca variacao no curto prazo. O s 2 do art. 52 da Lei n? 13.703/2018
+incide sobre os insumos mercadologicos, que sao os diretamente atualizados pelo IPCA acumulado; a
+categoria "outros insumos" é reajustada indiretamente, na medida em que se refere a percentuais
+aplicados sobre insumos mercadologicos (exs.: valor de revenda do veiculo, despesa com seguro, IPVA).
+3.2.1.4. Conclusao parcial: a metodologia vigente é clara, estavel e auditavel; a estrutura dos
+coeficientes (CCD/cC por tipo de carga e numero de eixos) nao é alterada pelo presente ato, que se limita
+referencia do oleo diesel S10 - dentro do principio da previsibilidade que informa o § 2 do art. 5 da Lei
+n 13.703/2018.
+3.2.2. DOS PARAMETROS DO REAJUSTE
+3.2.2.1. Do IPCA de 3,54%. Conforme Despacho CTRNC SEI n? 43358433 (de 25/06/2026), o IPCA
+acumulado no periodo de dezembro de 2025 a maio de 2026 foi de 3,54% (trés virgula cinquenta e quatro
+por cento), conforme divulgacao oficial do IBGE em 12 de junho de 2026. O indice é o oficial adotado pelo
+$ 2 do art. 5? da Lei n 13.703/2018.
+Do preco do oleo diesel S10 de Rs 6,97/litro. Conforme Levantamento de Precos de
+3.2.2.2.
+Combustiveis da ANP (divulgacao de 10 de julho de 2026), o preco médio de revenda do oleo diesel S10 é
+representatividade no calculo dos coeficientes dos pisos minimos de frete (conforme Quadro 2 da NT
+atualizacao do preco de referéncia para o valor mais recente divulgado pela ANP esta em consonancia
+com a sistematica de revisoes extraordinarias adotada pela SUROC (Portarias SUROC n? 3/2026 e n?
+4/2026) e com o principio da atualidade que informa a PNPM-TRC.
+3.2.2.3. Da data-base. A data-base dos parametros do 8 ciclo regulatorio ordinario é novembro de
+2025 (Portaria SUROC n 1/2026 — SEl n 38147817). O presente reajuste pelo IPCA incide sobre 0
+periodo de dezembro de 2025 a maio de 2026, na forma do $ 2 do art. 5 da Lei n² 13.703/2018,
+mantida a data-base de novembro de 2025 dos demais parametros (metodologia, classificacao de risco,
+critérios de julgamento e de hierarquizacao das cargas).
+3.2.2.4. Conclusao parcial: os parametros do reajuste (IPCA 3,54% e oleo diesel S10 Rs 6,97/litro)
+sao oficiais, auditaveis e vinculados a legislacao de regencia; a data-base de novembro de 2025 é mantida
+para os demais parametros, em consonancia com o 8 ciclo regulatorio ordinario concluido em dezembro
+de 2025.
+3.2.3. DAS TABELAS DE COEFICIENTES ATUALIZADAS (A a D)
+3.2.4. Conforme atualizado em nova Minuta de Resolucao (SEl n 44038867), as tabelas A, B, C e
+D foram atualizadas com os coeficientes CCD (Rs/km) e CC (Rs) por tipo de carga e numero de eixos da
+composicao veicular, na forma do $ 2 do art. 59 da Lei n 13.703/2018. Os valores propostos sao
+resultado da aplicacao do IPcA de 3,54% sobre os insumos mercadologicos e da atualizacao do preco do
+oleo diesel S10 para Rs 6,97/litro, mantendo-se inalterada a estrutura das tabelas e a metodologia de
+calculo. Os dados constantes na memoria de calculo demonstram a robustez técnica da apuracao e
+o detalhamento dos coeficientes finais para todos os tipos de carga e eixos encontra-se devidamente
+demonstrado na Planilha de Piso Minimo de Frete (44001692)
+3.2.4.1. Em termos praticos, conforme o Despacho CTRNC (SEl n 43996941), a incidencia conjunta
+da inflacao nos insumos e da expressiva queda do combustivel resultou nos seguintes impactos médios
+gerais sobre os coeficientes vigentes para o mercado:
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 5/9
+[pg 5]
+
+17/07/2026,10:06 SEI/ANTT - 43976698 - Voto DAA
+Reajuste
+medio
+Tabela geral
+0,00%
+-0,50%
+-0,89%
+-1,44%
+3.2.4.2. Desse modo, considerando que o oleo diesel representa cerca de 50% do custo operacional
+total, a sua variacao negativa de 5,17% puxou o reajuste para baixo, mitigando o impacto do IPcA.
+3.2.5. DO MONITORAMENTO E DOS CONTROLES
+3.2.6. A CGDAM mantera o monitoramento continuo do IPCA e do preco do oleo diesel S10
+(publicacao semanal da ANP), com vistas a identificacao de oscilacoes superiores a 5% (s 3 do art. 5 da
+Lei n? 13.703/2018) que demandem revisao extraordinaria pela SUR0C.
+3.2.6.1. A GRTMC, no uso de suas competencias regimentares, mantera o acompanhamento da
+aplicacao dos coeficientes atualizados pelo setor de transporte rodoviario de cargas, com vistas a
+extraordinaria (s 3 do art. 5 da Lei n 13.703/2018).
+3.2.6.2. Conclusao parcial: os mecanismos de monitoramento continuo e de revisoes
+extraordinarias (s 39) e ordinarias (s 19) do art. 5 da Lei n² 13.703/2018 constituem o sistema de
+salvaguardas que, somado ao calendario regulatorio (publicacoes até 20 de janeiro e 20 de julho de cada
+ano), assegura a atualidade dos coeficientes ao longo do tempo e dispensa a realizacao de AlR e PPcS
+para o presente ato meramente aplicativo.
+3.3. DA CONFORMIDADE JURiDICA E DA DISPENSA DE AIR E PPCS
+3.3.1. O art. 7, inciso Ill, da Resolucao ANTT n² 6.020/2023 dispoe, verbis: "A realizacao de
+Audiencia Publica e Consulta Publica pode ser dispensada nos seguintes casos, dentre outros: [...] Ill -
+dos autos é exatamente a de edicao de norma que se limita a aplicar determinacao legal - o s 2? do art.
+5 da Lei n² 13.703/2018, que manda aplicar o IPCA acumulado aos insumos mercadologicos dos
+coeficientes vigentes. Nao ha discricionariedade técnica ou regulatoria no ato: o indice é oficial, a
+metodologia é vigente, os parametros sao vinculados (IPCA do IBGE e preco do oleo diesel S10 da ANP), o
+prazo é vinculado (até 20 de julho de cada ano). A edicao da norma é, portanto, vinculada e
+divulgado pelo IBGE), o efeito juridico (atualizacao dos coeficientes pelo IPCA) é automatico e
+determinado.
+3.3.2. A dispensa da Analise de Impacto Regulatorio (AlR) encontra fundamento no art. 96, Il, do
+Regimento Interno (Resolucao ANTT n? 5.976/2022), que faculta a Diretoria Colegiada dispensar,
+motivadamente, a apresentacao da AiR em "atos normativos voltados a disciplinar direitos ou obrigacoes
+definidos em norma hierarquicamente superior que nao permitam, técnica ou juridicamente, a
+possibilidade de diferentes alternativas regulatorias". A hipotese dos autos é exatamente a de ato
+normativo que disciplina direito ou obrigacao definido em norma hierarquicamente superior (Lei n?
+13.703/2018) e que nao permite, técnica ou juridicamente, a possibilidade de diferentes alternativas
+regulatorias (o IPCA é o indice oficial; a metodologia é vigente; os parametros sao vinculados). A dispensa
+GRTMC SEl n? 43400311 e complementada pela presente fundamentacao.
+3.3.3. O rito encontra arrimo consolidado no Voto DEM 43 (SEl n° 7194199), firmado no Processo
+n² 50500.393248/2019-69 (que trata dos procedimentos relacionados as cinco Resolucoes de reajuste
+anual imediatamente anteriores), o qual - em sede de orientacao vinculante as unidades técnicas da
+ANTT - estabeleceu a sistematica de que reajustes anuais meramente aplicativos do IPCA, com
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 6/9
+[pg 6]
+
+17/07/2026, 10:06 SEI/ANTT-43976698-VotoDAA
+fundamento no $ 2 do art. 5 da Lei n² 13.703/2018, nao demandam AiR nem PPCS, por se tratarem de
+ato vinculado e de aplicacao de determinacao legal e contratual. O Despacho de Instrucao GRTMC SEl n?
+43400311 invocou expressamente o Voto DEM 43 como arrimo para o rito, com a listagem dos cinco
+precedentes (Resolucoes ANTT n² 5.949/2021, 5.985/2022, 6.022/2023, 6.046/2024 e 6.057/2025).
+3.3.4.
+presente proposta foi instruida com a Nota Tecnica SEI n9 6.563/2026/CGDAM/GEINT/SUROC/DIR-ANTT,
+com a Certidao de Distribuicao SEl n? 43639547, observando-se integralmente o art. 39, $ 1, do
+Regimento Interno.
+3.3.5.
+fundamento legal (Lei n² 13.703/2018, art. 5, $ 29), regulamentar (Resolucao ANTT n 6.020/2023, art.
+7, Ill; Resolucao ANTT n² 5.976/2022, art. 96, Il) e administrativo (Voto DEM 43 SEI n 7194199; cinco
+Resolucoes precedentes), com o rito do art. 39 do Regimento Interno observado e a dispensa de AlR e
+PPCS motivada.
+3.4. CONCLUSAO DA ANALISE PROCESSUAL
+3.4.1. Apos o exame dos aspectos técnico, juridico e procedimental, conclui-se que:
+a) a competencia desta Agencia esta plenamente configurada (Lei n? 13.703/2018, art.
+5, caput, e $s 1 e 2; Lei n 10.233/2001, art. 12, Ill, e art. 13);
+b) a habilitacao teécnica da CGDAM para propor os coeficientes (Resolucao ANTT n?
+5.977/2022, art. 27, § 1, ll, "d") esta demonstrada e a instrucao é consistente com a
+metodologia vigente (Resolucao ANTT n 5.867/2020, Anexos I e Il);
+c) os parametros do reajuste (IPCA de 3,54% no periodo de dezembro de 2025 a maio
+de 2026, conforme divulgacao oficial do IBGE em 12/06/2026; preco do oleo diesel S10
+de Rs 6,97/litro, conforme ANP) sao oficiais, auditaveis e vinculados a legislacao de
+regencia;
+d) o rito procedimental (art. 39, § 1, do Regimento Interno) foi plenamente atendido e
+o presente ato é meramente aplicativo do $ 2 do art. 52 da Lei n? 13.703/2018, com
+dispensa motivada de AiR (art. 96, Il, do Regimento Interno) e de PPCS (art. 7, Ill, da
+Resolucao ANTT n 6.020/2023), com arrimo no Voto DEM 43 (SEI n° 7194199) e nos
+cinco precedentes anuais consolidados (Resolucoes ANTT n? 5.949/2021, 5.985/2022,
+6.022/2023, 6.046/2024 e 6.057/2025);
+e) as tabelas atualizadas (A, B, C e D) sao consistentes com a metodologia vigente, com
+os parametros do reajuste e com o precedente dos cinco reajustes anuais anteriores;
+f) os mecanismos de monitoramento continuo e de revisoes extraordinarias (s 3) e
+ordinarias (S 19) do art. 5 da Lei n? 13.703/2018 constituem 0 sistema de salvaguardas
+que assegura a atualidade dos coeficientes ao longo do tempo.
+3.4.2. A proposta atende aos critérios de legalidade, publicidade, transparencia, motivacao,
+eficiéncia e seguranca juridica, justificando sua aprovacao, com a edicao da Resolucao e da Deliberacao na
+conformidade das minutas constantes dos autos (SEl n 44038867 e SEl n? 43977075).
+4. PROPOSICAO FINAL
+4.1. DO VOTO
+Diante do exposto, e considerando:
+(i) a competencia desta Agencia para regular o Transporte Rodoviario de Cargas e para
+editar normas referentes aos pisos minimos de frete, nos termos do art. 21, Xil, "d", da
+CF/88 e do art. 12, Il, e art. 13 da Lei n 10.233/2001;
+(ii) a determinacao legal de atualizacao anual dos coeficientes pelo IpcA acumulado, na
+hipotese de nao-publicacao da norma nos prazos do § 1, conforme art. 5, $ 2, da Lei
+n² 13.703/2018;
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 7/9
+[pg 7]
+
+17/07/2026,10:06 SEI/ANTT - 43976698 - Voto DAA
+(ili) a observancia do prazo legal de publicacao ate 20 de julho de 2026 (art. 5, § 1, da
+Lei n 13.703/2018);
+(iv) a competéncia da CGDAM para calcular os coeficientes (Resolucao ANTT n?
+5.977/2022, art. 27, § 19, Il, "d") e a instrucao consistente da NT SEl n 6.563/2026 (SEI
+n° 43384179) e do Relatorio a Diretoria SEl n 253/2026 (SEl n° 43400297);
+(v) a metodologia vigente (Anexos I e ll da Resolucao ANTT n 5.867/2020) e a aplicacao
+da variacao do IPcA de 3,54% (acumulado de dezembro de 2025 a maio de 2026,
+conforme divulgacao oficial do IBGE em 12/06/2026) e do preco do oleo diesel S10 de
+Rs 6,97/litro (ANP, divulgacao de 10/07/2026) sobre os insumos mercadologicos do
+modelo de calculo;
+(vi) a dispensa motivada de Audiencia Publica e Consulta Publica (art. 7, Ill, da
+Resolucao ANTT n? 6.020/2023) e da Analise de Impacto Regulatorio (art. 96, Il, do
+Regimento Interno - Resolucao ANTT n 5.976/2022), com arrimo no Voto DEM 43 (SEI
+n° 7194199) e no precedente consolidado dos cinco reajustes anuais imediatamente
+anteriores (Resolucoes ANTT n? 5.949/2021, 5.985/2022, 6.022/2023, 6.046/2024 e
+6.057/2025);
+(vii) a seguranca juridica do ato, assegurada pela vinculacao legal ao s 2 do art. 5 da
+Lei n? 13.703/2018, pela ratificao da dispensa pelo Despacho GRTMC SEl n? 43400311 e
+pela consistencia metodologica da NT 6563 com a metodologia vigente e com o
+precedente;
+(vii) a observancia dos principios da publicidade, da transparencia, da motivagao, da
+eficiencia e da segregacao de funcoes (CGDAM propoe; GRTMC ratifica; SUROC instrui;
+DICOL delibera);
+4.2. VOTO pela APROVAcAo da Resolucao ANTT que atualiza os coeficientes dos pisos
+minimos de frete do Transporte Rodoviario de Cargas pela aplicacao do IPCA acumulado de 3,54% (tres
+virgula cinquenta e quatro por cento) no periodo de dezembro de 2025 a maio de 2026 e pela
+atualizacao do preco de referencia do oleo diesel S10 para Rs 6,97 (seis reais e noventa e sete centavos)
+por litro, nos termos da Lei n? 13.703/2018, art. 5, $ 2, da Resolucao ANTT n? 5.867/2020 (Anexos I e
+Il) e das minutas de Resolucao e de Deliberacao constantes dos autos (SEl n 44038867 e SEl n?
+43977075).
+4.3. PROPONHO, assim, que o presente voto seja objeto de deliberacao e aprovagao pela
+Diretoria Colegiada, nos termos da Minuta de Deliberacao (SEl n° 43977075).
+4.4. E o voto.
+Brasilia, 16 de julho de 2026.
+ALEX AZEVEDO
+Diretor
+Agéncia Nacional de Transportes Terrestres - ANTT
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste... 8/9
+[pg 8]
+
+17/07/2026,10:06 SEI/ANTT-43976698-VotoDAA
+sei!
+Documento assinado eletronicamente por ALEX ANTONIO DE AZEVEDO CRUZ, Diretor, em
+16/07/2026, as 19:57, conforme horario oficial de Brasilia, com fundamento no art. 21, inciso Il, da
+assinatura
+eletronica Instrucao Normativa n 22/2023 da ANTT.
+Aautenticidadedestedocumentopodeserconferidanosite
+http://sei.antt.gov.br/sei/controlador_externo.php?
+acao=documento_conferir&id_0rgao_acesso_externo=0, informando o codigo verificador 43976698 e
+O codigo CRCFBE5554C.
+Referencia:Processon50500.037810/2026-04 SEI n43976698
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF - www.antt.g0v.br
+6/6
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51209065&infra_siste...
+[pg 9]

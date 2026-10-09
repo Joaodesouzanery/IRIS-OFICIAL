@@ -1,0 +1,323 @@
+30/07/2026,17:37 SEI/ANTT-43936651-VOTODG
+AGENCIANACIONALDETRANSPORTESTERRESTRES
+VOTO DG
+RELATORIA: DG
+TERMO:VOTOA DIRETORIA
+NUMERO:34/2026
+oBJETo: Aprovacao das condicionantes estabelecidas pelo Ministerio dos Transportes na Portaria n9 344, de 18 de maio de 2026, por meio da Nota Tecnica
+n?14/2026-SNTF, e, pela viabilidade de implementacao dos ajustes no Plano de Outorga da Malha Centro-Leste Prorrogacao do contrato de Concessao da
+Ferrovia Centro-Atlantica S/A.
+ORIGEM: SUCON
+PROCESSO (S):50515.064660/2015-81
+PROPOSIcAo PF/ANTT:Parecer N9 00146/2026/PF-ANTT/PGF/AGU (SEI n 43742143),Despacho n9 06640/2026/PF-ANTT/PGF/AGU (SEI n 43742154)
+e Despacho n 06701/2026/PF-ANTT/PGF/AGU (SEI n 43742169)
+ENCAMINHAMENTO:AVOTACAO-DIRETORIACOLEGIADA
+1. EMENTA
+CENTRO-LESTE. PELA APROVACAO.
+2. DOOBJETO
+2.1. Trata-se de proposta de ajustes realizados no Plano de Outorga da prorrogacao antecipada da Ferrovia Centro-Atlantica S.A. (FCA), em
+atendimento as diretrizes da Nota Tecnica n 14/2026/SNTF (SEl n 42846950), considerando as analises ja realizadas pela Superintendencia de Concessao da
+Infraestrutura, conforme Nota Tecnica Conjunta n 8/2026/sUcON (SEl n 43280102) e, sobretudo considerando as premissas fixadas pelo Parecer n?
+00146/2026/PF-ANTT/PGF/AGU (SEI ng 43742143), complementado pela Nota Informativa n 955 (SEI n9 43871679).
+3. DOS FATOS
+3.1. Em 13/04/2026, a Diretoria Colegiada da ANTT deliberou, por meio da Deliberacao n 100 (SEl n 41602543), pela aprovacao do processo de
+Prorrogacao Contratual do Contrato de concessao da Malha Centro-Leste, concedida a Ferrovia Centro Atlantica (FCA),determinando, entre outros, que:
+Art. 39 Dar ciencia ao Ministerio dos Transportes das condicoes ajustadas pela ANTT em decorrencia da Audiencia Publica n 12/2020 para a prorrogagao do contrato de
+concessao da Ferrovia Centro-Atlantica S/A, permitindo a manifestacao sobre a aderencia as diretrizes de politica publica.
+Art. 49 Propor ao Ministerio dos Transportes, nos termos do inciso Il do art. 24 da Lei n 10.233, de 5 de junho de 2001, o Plano de Outorga para a prorrogacao do contrato
+de concessao da Ferrovia Centro-Atlantica S/A.
+3.2. Apos encaminhamento dos documentos, conforme determinado, aquela Pasta Ministerial, por meio da sua Secretaria Nacional de Transporte
+Ferroviario (SNTF), retornou a esta Agencia o Oficio n 511/2026/SNTF, de 26/05/2026, que encaminhou, para conhecimento e providencias cabiveis, os
+documentos que subsidiaram a aprovacao do Plano de Outorga da prorrogacao contratual da concessao da Ferrovia Centro-Atlantica S.A.,por meio da Portaria
+MT n 344, de 18 de maio de 2026, contendo na referida documentacao algumas ressalvas a serem observadas pela ANTT. O envio dos documentos teve por
+objetivo subsidiar a analise e os procedimentos a serem conduzidos por esta Agencia no ambito de suas competencias regulatorias e fiscalizatorias.
+3.3. A analise ministerial reconheceu que a modelagem apresenta elementos concretos de vantajosidade para a Administracao Publica, destacando-se
+a racionalizacao da malha ferroviaria mediante a devolucao de aproximadamente 3.11o km de trechos antieconomicos, a concentracao de investimentos em
+infraestrutura ferroviaria permanente, a mitigacao de conflitos urbanos, a modernizacao do corredor Corinto-Aratu, a ampliacao da seguranca operacional e a
+instituicao de mecanismos modernos de governanca, compartilhamento de riscos e verificagao independente.
+3.4. Nao obstante a conclusao favoravel quanto a aderencia do projeto as diretrizes de politica publica, a Nota Tecnica n 14/2026/SNTF recomendou a
+aprovacao do Plano de Outorga condicionada a implementacao de ajustes especificos, posteriormente consolidados na apresentacao tecnica encaminhada pela
+area responsavel. Ainda, foram encaminhados os seguintes documentos, em anexo ao Oficio, que integram o processo de analise:
+1. Nota Tecnica 14/2026 (SEI MT 11145439);
+2. Anexo 1 Lista de Obras BA - DF - GO (SEI MT 11230003);
+3. Nota Tecnica 2 (SEI MT 11237972);
+4. Parecer Conjur (SEI MT 11273213);
+5. Portaria 344/2026 (SEI MT 11278815); e
+6. E-mail SEI 11292831.
+3.5. Na referida Nota Tecnica n14/2026-SNTF (SEI MT 11145439), em sua conclusao, o Departamento de Outorgas Ferroviarias da SNTF recomendou
+a aprovacao do Plano de Outorgas, condicionada ao atendimento das seguintes ressalvas ao atendimento das diretrizes do modelo:
+I-O volume de investimentos que foram alocados em confitos urbanos na regiao do Distrito Federal, em trecho a ser devolvido pela Concessiondria, deverao ser realocados
+para investimentos em confitos urbanos no estado da Bahia, conforme detalhamento apresentado no Anexo 1 desta Nota Tecnica (SEI ng 11230003):
+II- Considerando a publicagao da Portaria ng 313, de 6 de maio de 2026, que preve recursos para o desenvolvimento de infraestrutura resiliente e sustentdvel, a ANTT deverd
+realizar os ajustes necessarios para alocar 1% (um por cento) do valor do CAPEx do projeto ao cumprimento dos objetivos da referida Portaria;
+Ill-Considerando a necessidade de recompor a diretriz de politica publica anteriormente estabelecida para investimentos no estado da Bahia, destinar:
+Il.1-os recursos vinculados originados a partir da retengao da receita operacional bruta do projeto, observada a mudanga citada no item ll, estimados em Rs 500 milhoes a
+valor presente liquido, para aplicagao nos projetos listados como passiveis de investimento adicional - Contorno Ferrovidrio de Sao Felix/BA; Solucao Ferroviaria em Licinio de
+A/meida/BA; e Adequacao Estrutural para Bitola Mista no trecho Tocandira/MGBrumado/BA - ou em projetos de expansdo de via permanente do corredor Minas-Bahia e
+conflitos urbanos; e
+Il.2 - destinar as parcelas de pagamento de saldo livre parcelado em 10 anos, fixados em aproximadamente Rs 600 milhoes a valor presente liquido, para aplicagao nos
+projetos listados como passiveis de investimento adicional -Contorno Ferrovidrio de Sao Felix/BA; Solugao Ferrovidria em Licinio de Almeida/BA; e Adequagao Estrutural para
+Bitola Mista no trecho Tocandira/MG-Brumado/BA-ou em projetos de expansao de via permanente do corredor Minas-Bahia e conflitos urbanos;
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51165360&infra_siste... 1/5
+[pg 1]
+
+30/07/2026, 17:37 SEI/ANTT-43936651 -VOTO DG
+IV - Para os projetos acima listados como passiveis de investimento adicional, deverd ser prevista a elaboragao de Estudos de Viabilidade Tecnica, Economica e Ambiental
+(EVTEA), a serem concluidos no prazo de 2 (dois) anos contados da assinatura do Termo Aditivo.
+3.6.
+na qual procedeu a analise individualizada das ressalvas constantes da Nota Tecnica n 14/2026/sNTF, avaliando sua implementacao e os impactos sobre os
+documentos que compoem a modelagem da prorrogacao antecipada. Conforme registrado na referida Nota Tecnica, foram indicados os apontamentos e
+condicionantes apresentados pelo Ministerio dos Transportes acerca da analise do Plano de Outorga n 344, de 18 de maio de 2026, aos termos que apontou os
+ajustes necessarios para atendimento aos apontamentos das condicionantes indicadas pelo Poder Concedente, com reflexos diretos no Termo Aditivo, no
+Caderno de Obrigacoes e no Modelo Economico-Financeiro (MEF).
+3.7. Posterirormente a SUcoN por meio do Despacho (SEl n 43386481) complementou a referida Nota Conjunta, ao tempo que informou que
+"verifica-se que as materias relacionadas as obras ferrovidrias no Estado da Bahia foram objeto de contribuicoes apresentadas durante a Audiencia Publica, razao
+pela qual tais informacoes poderao subsidiar a complementacao da Nota Tecnica Conjunta n 8, especialmente quanto a correlagao entre as manifestagoes
+recebidas e as determinacoes ministeriais incorporadas ao processo".
+3.8. Em face da analise da SUcON, promovi consulta a Procuradoria Federal junto a ANTT, por meio do Despacho (SEl n 43324070), em que formulei
+dessas prorrogacoes contratuais a um Plano de Outorga?; b) Caso a resposta ao item a) for afirmativa, uma vez aprovado esse Plano de Outorga por meio de
+deliberacao da Diretoria Colegiada a ANTT, esse Plano de Outorga podera sofrer novas alteracoes, tendo por fundamento novas diretrizes do formulador de
+politica publica? E se sim, esse novo Plano de Outorga, devera ser objeto de nova deliberacao de Diretoria Colegiada da ANTT?; e c) E possivel a implementacao
+de alteracoes propostas no Plano de Outorga, que nao passaram pelo escrutinio de Processo de Participacao e Controle Social (Audiencia Publica)?
+3.9. Em resposta a PF/ANTT emitiu o Parecer N9 00146/2026/PF-ANTT/PGF/AGU(SEI n 43742143), Despacho n9 06640/2026/PF-ANTT/PGF/AGU
+(SEI ng 43742154) e Despacho n 06701/2026/PF-ANTT/PGF/AGU (SEl n9 43742169),no qual examinou a adequacao juridica das providencias adotadas pela
+area tecnica para atendimento as condicionantes estabelecidas pelo Ministerio dos Transportes, examinando acerca da necessidade de Plano de Outorga na
+prorrogacao antecipada de concessoes ferroviarias, da possibilidade de sua alteracao por diretrizes supervenientes do Ministerio dos Transportes e da
+necessidade de novo Processo de Participacao e Controle Social (Ppcs) em razao dessas alteracoes. Em suas conclusoes, _parecer assentou que o Plano de
+Outorga nao constitui requisito legalpara aprorrogacao antecipada,embora,quando adotado, submeta-se ao regime da Portaria MT ng 87o/2025. Destacou,
+ainda, que alteracoes decorrentes de diretrizes de_politica_publica sao admissiveis, desde que_preservada a autonomia tecnica e regulatoria da ANTI. Em
+especial, o item 8o do Parecer consignou que alteracoes substanciais exigem nova deliberacao da Diretoria Colegiada da Agencia, a quem compete, em instancia
+administrativa final, decidir sobre a prorrogacao contratual, nos termos do art. 13, inciso X, do Decreto ng 4.130/2002.
+3.10. Diante disso encaminhei o Despacho (SEl n 43760122) solicitei que a SucoN promovesse os ajustes na documentacao referente a prorrogacao da
+FCA, a luz das novas diretrizes do MT e observando o que consta no PARECER N 00146/2026/PF-ANTT/PGF/AGU (SEI n 43742143), Despacho de Aprovacao (SEI
+n 43742154) e Despacho N 06701/2026/PF-ANTT/PGF/AGU (SEI n 43742169), com a devida instrucao processual
+3.11. Por sua vez a SUcON elaborou a Nota Informativa n 955/2026/sUcoN/DIR (SEl n 43871679)consolidando os ajustes realizados na proposta
+tecnicos, com destaque para o Termo Aditivo, o Caderno de Obrigacoes e o Modelo Economico-Financeiro (MEF), tudo isso em estrito atendimento as diretrizes
+da Nota Tecnica n 14/2026/SNTF (SEl n? 42846950), considerando as analises ja realizadas por meio Nota Tecnica Conjunta n? 8/2026/SUcON (SEl n?
+43280102) e, sobretudo considerando as premissas fixadas pelo Parecer n9 00146/2026/PF-ANTT/PGF/AGU (SEI ng 43742143) e Despacho n 06701/2026/PF-
+ANTT/PGF/AGU (SEIn 43742169).
+3.12. A SUcON elaborou o Relatorio a Diretoria n 315/2026 (SEl n 43770726),registrando inicialmente que"a presente submissao nao implica
+reavaliagao do merito da decisao consubstanciada na Deliberagao n 100/2026 (41602543),tampouco revisao da solugao regulatoria anteriormente
+aprovada pela Diretoria Colegiada. A materia restringe-se a apreciacao das alteracoes promovidas no Plano de Outorga em decorrencia das ressalvas
+estabelecidas pelo Ministerio dos Transportes e da orientacao juridica exarada pela Procuradoria Federal junto a ANTT, para fins de atendimento ao
+entendimento firmado quanto a necessidade de nova deliberacao colegiada",e ao final informa que"dessa forma, considerando o entendimento firmado pela
+Procuradoria Federal junto a ANTT quanto a necessidade de nova manifestacao da Diretoria Colegiada para aprovacao das alteragoes promovidas no Plano de
+Outorga, mostra-se necessdria a submissao da materia ao Colegiado, possibilitando o regular prosseguimento do processo de prorrogagao antecipada do
+contrato de concessao da Malha Centro-Leste."
+3.13. Em 10/07/0206, os autos foram remetidos a Secretaria Geral, conforme consta no Sorteio -Despacho de Instrucao (SEl n 43775893) para
+inclusao do processo na pauta de sorteio da Diretoria Colegiada. Por sua vez conforme consta no Despacho (SEl n 43872204), o processo foi distribuido para a
+minha relatoria, por prevencao, em observancia ao art. 10-A, § 1, da Instrucao Normativa n 12, de 7 de abril de 2022.
+3.14. Por meio do Despacho (SEl ng 43875004) 10 de julho de 2026, solicitei que o presente processo fosse incluido na pauta da 1.037  Reuniao de
+Deliberativa Publica - RDP, a ser realizada no dia 16/07/2026, mediante lancamento no SEI JULGAR.
+3.15. Em 29/07/2026 foi encaminhado o documento EME ng 032/26 (SEI ng 44478471) do Governo do Estado do Espirito Santo, no qual o Governador
+Ricardo Ferraco,fazendo referencia a Audiencia Publica n 12/2020 solicita que"a esta Agencia Reguladora que avalie em sua decisao acerca dessa importante
+prorrogacao contratual,a possibilidade da priorizagao do investimento no Contorno Ferroviario de Belo Horizonte por meio da utilizacao dos recursos vinculados
+disponiveis nas contas da concessao".
+3.16. Sao esses os fatos que passo a seguir a analisar com vistas a proferir meu Voto.
+4. DA ANALISEPROCESSUAL
+4.1. A presente analise processual teve por fundamento, os seguintes documentos principais constantes, nessa fase processual: (i) Nota Tecnica
+ANTT/PGF/AGU (SEI n 43742169); (ili) Nota Informativa n 955/2026/SUCON/DIR (SEI n 43871679) e (iv) Relatorio a Diretoria n 315/2026 (SEI n9 43770726).
+4.2. Apos analise das manifestacoes tecnicas e juridicas, com vistas ao atendimento das ressalvas promovidas pela Pasta Ministerial, teco a seguir
+algumas consideracoes acerca dos ajustes promovidos na documentacao do Plano de Outorga, ponderando alguns aspectos que considero relevante sobre a
+materia, para em seguida proferir meu Voto ao final.
+Nota Tecnica Conjunta n? 8/2026/GEREG/GEFER/SUCON(SEI n9 43280102)
+4.3. A analise tecnica apresentada pela Superintendencia de Concessao da Infraestrutura, por meio da Nota Tecnica Conjunta n 8/2026, examinou as
+condicionantes estabelecidas pelo Ministerio dos Transportes na Portaria n 344/2026, que aprovou com ressalvas o Plano de Outorga da Malha Centro-Leste. O
+documento destaca que, embora a modelagem original tenha sido reconhecida como vantajosa pela racionalizacao da malha e modernizacao de corredores, os
+aperfeicoamentos solicitados pelo MT demandam ajustes significativos nos instrumentos contratuais e no modelo economico-financeiro (MEF) do projeto.
+4.4. A SucoN em suas consideracoes finais assentou nos seguintes termos os ajustes constantes na Diretriz Ministerial:
+5.1. Diante da andlise tecnica realizada sobre as condicionantes estabelecidas pelo Ministerio dos Transportes na Portaria n? 344, de 18 de maio
+de 2026, conclui-se,pormeio da Nota Tecnica n14/2026-sNTF,pela viabilidade de implementacao dos ajustes no Plano de Outorga da Malha
+Centro-Leste.
+5.2. Em sintese, no entanto, apresenta ressalvas, propondo algumas alteracoes.Os ajustes necessdrios nos instrumentos contratuais (Termo
+Aditivo, CadernodeObrigacoeseMEF)compreendem:
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51165360&infra_siste... 2/5
+[pg 2]
+
+30/07/2026,17:37 SEI/ANTT - 43936651 - VOTODG
+Realocacao Geografica de Investimentos:Transferencia de aproximadamente Rs 34 milhoes previstos para conflitos urbanos no trecho
+Brasilia/DF-Luziania/GO (em devolucao)para novas intervengoes no estado da Bahia.
+Alocacao de 1% do valor do CAPEX regulatorio do projeto para o desenvolvimento de infraestrutura resiliente e sustentavel, atendendo
+novadisposicaoconformeaPortariaMTn313/2026.
+Estudos de Viabilidade: Inclusao da obrigacao de concluir os Estudos de Viabilidade Tecnica, Economica e Ambiental (EVTEA) para os
+novos projetos listados no prazo de 2 anos apos a assinatura do Termo Aditivo.
+Destinagaode Recursos Vinculados (varidveis,da ordem de,estimado em aproximadamente Rs 1,2 bilhao, considerando para projetos
+prioritarios na Bahia, como o Contorno Ferrovidrio de Sao Felix/BA e a adequacao de bitola mista no trecho Tocandira/MG-Brumado/BA,
+entre outros, aexemploderesolucaode conflitosurbanos
+Destinagao de Recursos Vinculados oriundos da retengao percentual da Receita Operacional Bruta (ROB) e de CAPEX (Resiliencia
+Climdtica)-estimada em Rs 585 milhoes-somados ao valor de Rs 600 milhoes a VPL do pagamento de Recursos Vinculados pela
+Concessiondria, para projetos prioritarios na Bahia- Contorno Ferrovidrio de Sao Felix/BA, adequacao de bitola mista no trecho
+Tocandira/MG-Brumado/BA e Solucao Ferroviaria em Licinio de Almeida/BA - entre outros projetos, a exemplo de projetos para
+resolucaodeconflitosurbanos
+Ajustes Operacionais e Temporais: Flexibilizacao do prazo de investimentos no Corredor Minas-Bahia para"ate 15 anos"e manutengao
+5.3.Ressalta-se que os montantes financeiros associados as novas obras deverao ser objeto de validacao tecnica rigorosa pela ANTT em etapa
+posterior, nao havendo correspondencia direta automdtica entre valores excluidos e incluidos sem a devida analise de engenharia e
+economicidade.
+4.5. Dentre as modificacoes, ressalta-se a realocacao geografica de investimentos, retirando obrigacoes de interferencias viarias no trecho em
+devolucao entre Brasilia/DF e Luziania/GO para priorizar conflitos urbanos no estado da Bahia. Adicionalmente, em conformidade com a Portaria MT n?
+4.6. Destinacao de Recursos Vinculados para projetos prioritarios na Bahia, como o Contorno Ferroviario de Sao Felix e a bitola mista no trecho
+Tocandira/MG-Brumado/BA. Como os custos dessas obras foram apresentados preliminarmente pela concessionaria e ainda carecem de validacao tecnica
+rigorosa, a ANTT propoe uma solucao regulatoria simplificada: a inclusao das intervencoes no Caderno de Obrigacoes condicionada a aprovacao posterior de
+projetos executivos e orcamentos detalhados, alem da exigencia de conclusao dos Estudos de Viabilidade Tecnica, Economica e Ambiental (EVTEA) em ate 2
+(dois) anos.
+4.7.
+Concessionaria, para projetos prioritarios na Bahia- Contorno Ferroviario de Sao Felix/BA, adequacao de bitola mista no trecho Tocandira/MG-Brumado/BA e
+Solucao Ferroviaria em Licinio de Almeida/BA - entre outros projetos, a exemplo de outros projetos para resolucao de conflitos urbanos, como é o caso do
+Contorno Ferroviario de BH.
+4.8. Por fim, a Nota Tecnica, nos itens 4.35 e 4.36, emite um alerta relevante quanto a liquidez contratual, advertindo que"o direcionamento integral
+dos recursos vinculados da concessdo para projetos especifico pode comprometer a solvencia financeira imediata do ajuste. Ao utilizar a totalidade dos Recursos
+Vinculados disponiveis na Conta de Ajuste, o projeto passard a operar sem um colchao de liquidez contratual, o que limita a margem de manobra da Agencia
+para o atendimento de outras recomposigoes de equilibrio economico-financeiro ou coberturas de riscos contingentes que possam surgir no inicio da vigencia do
+novo contrato".
+Parecer N 00146/2026/PF-ANTT/PGF/AGU(SEI n 43742143)e Despacho n 06701/2026/PF-ANTT/PGF/AGU (SEI n 43742169)
+4.9. A analise juridica consolidada pelo Parecer n 00146/2026 e pelo Despacho n 06701/2026 da Procuradoria Federal junto a ANTT estabelece
+premissas fundamentais para a legalidade da prorrogacao antecipada da Malha Centro-Leste. Em primeiro lugar, resta pacificado que inexiste exigencia legal, seja
+na Lei n 13.448/2017 ou em normativos do Ministerio dos Transportes, para a elaboracao de um Plano de Outorga em processos de prorrogacao contratual.O
+nucleo essencial para a validade do ato é composto pelo estudo tecnico previo de Vantajosidade, pela submissao ao controle social e pelo envio dos elementos
+ao Tribunal de Contas da Uniao (TCU). Contudo, uma vez que a ANTT optou voluntariamente por adotar o Plano de Outorga para conferir maior organicidade ao
+processo, este instrumento submete-se integralmente aos ritos da Portaria MT n 870/2025.
+4.10. No que tange a dinamica entre as instituicoes, a Procuradoria esclarece que o Plano de Outorga ja aprovado pela Diretoria Colegiada pode sofrer
+alteracoes fundamentadas em diretrizes supervenientes de politica publica emanadas pelo Ministerio dos Transportes. Todavia, preserva-se a ANTT o juizo
+regulatorio quanto a forma de implementacao dessas diretrizes, garantindo que nao haja invasao de competencias tecnicas da autarquia. E imperativo ressaltar
+que qualquer modificacao considerada substancial - ou seja, que atinja o objeto, o escopo de investimentos obrigatorios ou o equilibrio economico-financeiro -
+exige,obrigatoriamente,uma nova deliberacao da Diretoria Colegiada,pois a competencia para decidir a prorrogacao em instancia final é exclusiva do regime de
+colegiado.
+4.11. Quanto ao Processo de Participacao e Controle Social (PPcS), o entendimento juridico veda a implementacao de alteracoes substanciais ou
+inovadoras em relacao ao objeto original que nao tenham sido submetidas ao escrutinio da sociedade. A mera citacao de uma obra em contribuicoes isoladas de
+audiencias passadas nao supre a necessidade de novo processo participativo se a inovacao desvirtuar o conteudo previamente apresentado pela Administracao.
+Assim, cabe a area tecnica aferir motivadamente a materialidade das mudangas propostas para indicar a necessidade de reabertura da participacao social.
+4.12. Asseverou por fim a PF/ANTT, por meio do Despacho n? 06701/2026 que"a aprovagao do plano de outorga com condicionantes impoe nova
+analise e deliberacao, uma vez que a competencia decisoria, em situacoes dessa natureza, e propria da Diretoria Colegiada. Assim, caso se pretenda incorporar
+novas diretrizes, cabera a Diretoria Colegiada da ANTT promover nova deliberacao sobre a materia". Concluiu ao final que "ainda que se entenda pela
+possibilidade de alteracoes decorrentes de diretrizes emanadas pelo Ministerio dos Transportes, a competencia firmada no art. 13, inciso X, do Decreto n
+4.130/2002 atribui a Diretoria colegiada da ANTTa competencia para decidir em instancia administrativa final, a prorrogacao contratual",cabendo a"afericao
+da materialidade compete a area tecnica da Agencia, de forma fundamentada e justificada nos autos, e a respectiva deliberacao, a Diretoria Colegiada".
+Nota Informativa ng 955/2026/SUCON/DIR(SEl n 43871679).
+4.13. Para a conclusao da instrucao processual, a Nota Informativa consolidou os ajustes finais na proposta de prorrogacao antecipada da FCA,
+integrando as diretrizes do Ministerio dos Transportes e as premissas juridicas estabelecidas pela Procuradoria Federal. O documento materializa a adequacao
+dos instrumentos contratuais - Termo Aditivo, Caderno de Obrigacoes e Modelo Economico-Financeiro (MEF) - as ressalvas da Portaria MT n 344/2026,
+assegurando que as inovacoes propostas possuam lastro tecnico e seguranca juridica para o envio ao Tribunal de Contas da Uniao (Tcu).
+4.14. Assim, o primeiro ajuste, tratou da realocacao dos investimentos originalmente previstos para mitigacao de conflitos urbanos no Distrito Federal,
+em trecho que sera devolvido pela Concessionaria. O segundo ajuste decorre da publicacao da Portaria MT n 313, de 6 de maio de 2026, a qual passou a exigir a
+destinacao de recursos correspondentes a 1% do CAPEX regulatorio do projeto para a implementacao de acoes voltadas ao desenvolvimento de infraestrutura
+resiliente e sustentavel. O terceiro ajuste consistiu na adequacao da sistematica de destinacao dos recursos vinculados, estabelecendo que os valores
+provenientes da Receita Operacional Bruta (RoB) sejam integralmente destinados ao financiamento de investimentos adicionais ou de expansao da via
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51165360&infra_siste... 3/5
+[pg 3]
+
+30/07/2026,17:37 SEI/ANTT - 43936651- VOTO DG
+Alem disso a SUcON acatou o arredondamento da extensao do trecho Corinto/MG-Aratu/MG para 1.30o km para fins de coerencia documental,
+4.15.
+enquanto a discussao sobre gatilhos preventivos de investimento baseados no indice de saturacao (isF) foi postergada para o ambito da elaboracao das
+Condicoes Gerais de Transporte Ferroviario (CGTF) pela SUFER.
+4.16. No que tange aos investimentos estrategicos, buscou-se recompor as diretrizes de politica publica"no qual se destaca a necessidade de recompor a
+diretriz de politica publica anteriormente estabelecida para os investimentos no Estado da Bahia, mediante a destinacao prioritaria dos referidos recursos para os
+empreendimentos estrategicos definidos pelo Ministerio dos Transportes". Para assegurar a viabilidade tecnica dessas obras, a concessionaria fica
+Termo Aditivo.
+4.17. A Nota Informativa reforcou ainda que "alem disso, para atendimento a recomendacao de que fosse definido momento exato em que a
+42846950), importante tecer alguns esclarecimentos. Percebe-se que o aludido apontamento, feito pela drea tecnica da SNTF, refere-se a constituicao da "Conta
+de Ajuste", para que receba os aportes a titulo de Recursos Vinculados. Embora se entenda que a redagao da Cldusula 21.2 jd estabelece que a Conta de Ajuste
+deverd ser aberta no mes de assinatura do Termo Aditivo, conforme disciplinado pelo Contrato de Administragao de Contas, nao se vislumbrava, sob o ponto de
+vista tecnico, a necessidade de fixacao de prazo especifico. Isso porque, idealmente, a abertura da conta deve ocorrer previamente a celebragao do Termo Aditivo,
+4.18. Por fim a Nota detalha as modificacoes especificas realizadas no Caderno de Obrigacoes e no Modelo Economico-Financeiro (MEF) para alinhar o
+projeto as diretrizes ministeriais.
+4.19. No Caderno de Obrigacoes, a principal mudanca envolveu a exclusao de obras de interferencias viarias e mitigacao de conflitos urbanos no trecho
+entre Roncador/Go e Brasilia/DF, visto que este segmento sera devolvido pela concessionaria. Em contrapartida, foram incluidas novas intervencoes para
+minimizacao de conflitos urbanos no corredor Minas-Bahia, alem da obrigacao da concessionaria de elaborar e apresentar tres novos Estudos de Viabilidade
+Tecnica, Economica e Ambiental (EVTEA) para projetos estrategicos na Bahia: o Contorno de Sao Felix, a solucao em Licinio de Almeida e a bitola mista entre
+Tocandira/MG e Brumado/BA.
+4.20. No que tange ao Modelo Economico-Financeiro, os valores de CAPEx Capital foram atualizados para refletir essas novas obrigacoes. Uma alteracao
+relevante ocorreu na base de calculo do Custo de Resiliencia Climatica que, seguindo a Portaria MT n 313/2026, passou a incidir como 1% sobre o CAPEX total
+do projeto, em vez de sobre a receita bruta anual, resultando em parcelas anuais fixas. Adicionalmente, o percentual para calculo dos Recursos Vinculados foi
+ajustado para 2,39%, mantendo-se a Receita Operacional Bruta (ROB) como base de incidencia.
+4.21. Com essas providencias, a unidade tecnica conclui que os autos estao adequadamente instruidos, com o Plano de Outorga reformulado e as
+planilhas financeiras atualizadas, estando o processo apto ao prosseguimento para as etapas finais de aprovacao e controle externo.
+Relatorio a Diretoria ng 315/2026 (SEl ng 43770726)
+4.22. A analise tecnica enfatiza que as modificacoes no Plano de Outorga decorreram exclusivamente da necessidade de integrar as ressalvas da Portaria
+MT n 344/2026. A Superintendencia de Concessao da Infraestrutura (SUcON) realizou uma avaliacao individualizada de cada condicionante ministerial,
+incorporando-as ao plano ou apresentando justificativas tecnicas que asseguram o atendimento integral as diretrizes do Ministerio dos Transportes.
+4.23. O relatorio ressalta que essas adequacoes preservam a solucao regulatoria originalmente aprovada pela Diretoria Colegiada na Deliberacao n?
+100/2026. Segundo o Relatorio a Diretoria"as adequacoes promovidas preservam integralmente a solucao regulatoria aprovada pela Diretoria Colegiada, nao
+alterando a estrutura do projeto, a modelagem economico-financeira,a vantajosidade da prorrogacao, os pressupostos juridicos que fundamentaram a minuta
+do Termo Aditivo nem as conclusoes decorrentes do Processo de Participacao e Controle Social", ademais "as modificagoes promovidas tem por finalidade
+conferir plena aderencia do Plano de Outorga as diretrizes de politica publica estabelecidas pelo Ministerio dos Transportes, mantendo-se inalterados os
+fundamentos tecnicos,regulatorios e juridicos que ensejaram a aprovacao da proposta por esta Diretoria Colegiada".
+Dessa forma, conclui o Relatorio a Diretoria que "considerando o entendimento firmado pela Procuradoria Federal junto a ANTT quanto a
+4.24.
+necessidade de nova manifestagao da Diretoria Colegiada para aprovacao das alteragoes promovidas no Plano de Outorga,mostra-se necessdria a submissao da
+4.25.
+Diante do exposto, propos a Unidade Tecnica que a Diretoria Colegiada, deliberasse no sentido de:
+aprovar as alteracoes promovidas no Plano de Outorga da prorrogacao da concessao da Malha Centro-Leste, em atendimento as
+ressalvas constantes da Portaria n 344, de 18 de maio de 2026, do Ministerio dos Transportes;
+aprovar a versao consolidada do Plano de Outorga constante dos autos do Processo n? 50515.064660/2015-81; e
+II - Autorizar o encaminhamento dos autos ao Tribunal de Contas da Uniao-TCU.
+Manifestacao de VOTQ
+4.26. Considerando o pronunciamento da Procuradoria Federal junto a ANTT, materializado no Parecer N 00146/2026/PF-ANTT/PGF/AGU (SEI ng
+43742143), aprovado pelo Despacho n 06701/2026/PF-ANTT/PGF/AGU (SEl n 43742169), passo a partir de seus fundamentos, fixar meu entendimento sobre a
+materia. De inicio, a Procuradoria reconhece corretamente que nao ha exigencia legal expressa para a elaboracao de Plano de Outorga como condicao de
+validade da prorrogacao contratual. Contudo, assentou premissa central para o caso concreto: uma vez adotado esse instrumento de politica publica e
+submetido a aprovacao da Diretoria Colegiada, o Plano de Outorga se incorpora ao ato decisorio do Colegiado. Nessa linha, concluiu a area juridica que
+alteracoes substanciais no Plano de Outorga, notadamente aquelas decorrentes da incorporacao de novas diretrizes emanadas do Poder Concedente, nao
+podem ser chanceladas apenas no ambito das areas tecnicas. Impoe-se, por coerencia institucional e por respeito a cadeia decisoria, nova submissao a
+apreciacao da Diretoria Colegiada, mediante nova deliberacao.
+4.27. A competencia para decidir, em instancia administrativa final, sobre a prorrogacao contratual esta atribuida a Diretoria Colegiada por forca do art.
+13, inciso X, do Decreto n 4.130/2002. Assim, a aprovacao do Plano de Outorga por meio da Deliberacao n 100/2026 esgotou a competencia deste Colegiado
+naquele momento. De igual modo, a superveniencia de condicionantes impostas pela Portaria MT n? 344/2026 e os ajustes tecnicos promovidos pela Nota
+Tecnica Conjunta n 8/2026/sUcoN representam modificacao no conteudo do ato anteriormente aprovado. Tratar-se-ia de usurpacao de competencia colegiada
+acatar tais alteragoes sem nova deliberacao, ainda que se reconheca que o merito da solucao regulatoria se mantem preservado. Portanto, a interpretagao que
+se extrai do Parecer da PF-ANTT e no sentido de preservar a competencia decisoria da Diretoria Colegiada e a seguranca juridica do processo. As alteracoes
+promovidas no Plano de Outorga em atendimento as ressalvas ministeriais devem, necessariamente, retornar ao Colegiado para nova deliberacao colegiada e
+aprovacao.
+4.28. Adicionalmente, reforco o entendimento exarado pelas unidades tecnicas e juridicas, de que inovacoes que desvirtuem o escopo original sem a
+devida participacao social sao vedadas, garantindo que o controle social exercido na Audiencia Publica n 12/2020 seja preservado. Ocorre entretanto, conforme
+asseverado pela Unidade Tecnica, que as modificacoes promovidas nesse momento tiveram por finalidade, apenas e tao somente, conferir a plena aderencia do
+Plano de Outorga as diretrizes ministeriais, mantendo-se inalterados os fundamentos tecnicos, regulatorios e juridicos que ensejaram a aprovacao da proposta
+por esta Diretoria Colegiada.
+4.29. Em face do Parecer N 00146/2026/PF-ANTT/PGF/AGU (SEI n 43742143),aprovado pelo Despacho n 06701/2026/PF-ANTT/PGF/AGU (SEI ng
+43742169), entendo que a ANTT tem a competencia e prerrogativa legal para promover as alteracoes que ocorreram apos a Deliberacao n 10o (SEl n?
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51165360&infra_siste... 4/5
+[pg 4]
+
+30/07/2026,17:37 SEI/ANTT-43936651 - VOTODG
+41602543), sendo que tais alteracoes deverao ser objeto de nova deliberacao da Diretoria Colegiada da ANTT, tendo por fundamento as devidas analises
+tecnicas-regulatorias e juridicas.
+4.30. Assim sendo, e na qualidade de Relator, acompanho a analise tecnica da Superintendencia de Concessao da Infraestrutura (sucoN), validando os
+ajustes promovidos no Plano de Outorga da Malha Centro-Leste. Ressalto entretanto, e dentro das competencias decisorias da Diretoria Colegiada da ANTT que,
+alem dos ajustes promovidos nas obras estruturantes apontadas pela diretriz de politica do Ministerio dos Transportes para o Estado da Bahia, faco constar no
+presente Voto, e em complemento a diretriz ministerial que, deve ser tambem priorizado o investimento no Contorno Ferroviario de Belo Horizonte
+(investimento previsto nos estudos do Caderno de Obrigacoes - SEl n 43874765) para utilizacao de recursos de outorga livre e das contas vinculados da
+concessao. Assim, determino que a Unidade Tecnica consolide esse entendimento na documentacao, antes do envio ao Tribunal de Contas da Uniao.
+4.31. No tocante aos aspectos juridicos, acolho integralmente as recomendacoes da Procuradoria Federal junto a ANTT (PF/ANTT), em cuja
+manifestacao esclareceu que a elaboracao do Plano de Outorga, embora nao seja um requisito legal impositivo para prorrogacoes contratuais a luz da Lei n?
+13.448/2017, submete a Agencia aos ritos da Portaria MT n 870/2025 uma vez que foi adotado voluntariamente pela ANTT. Entendo, em consonancia com o
+orgao juridico, que alteracoes em virtude de politicas publicas sao legitimas, desde que resguardada a autonomia tecnica e regulatoria desta autarquia. E
+imperativo ressaltar que qualquer modificacao substancial no objeto ou no equilibrio economico-financeiro da concessao exige nova deliberacao desta Diretoria
+Colegiada, instancia administrativa final para decidir sobre a prorrogacao.
+4.32. Por fim e em atendimento ao Parecer N 00146/2026/PF-ANTT/PGF/AGU (SEI n 43742143),foram encaminhados pela SUcON o novo Modelo
+Economico-financeiro (planilha MEF)-SEI n 43874790, bem como os documentos juridicos atualizados (Minuta de Termo Aditivo, Anexos ao Termo Aditivo - SEI
+41713980)e de Questoes Juridicas e Regulatorias (SEl n 41713978),ja encaminhados anteriormente.
+4.33. Ante o exposto, VoTopela aprovacao das alteracoes no Plano de Outorga da Malha Centro-Leste e pela validacao da versao consolidada de seus
+instrumentos contratuais. Antes porem, determino que a Unidade Tecnicapromova os ajustes na documentacao,nos termos dopresente Voto,antes do envio
+ao Tribunal de Contas da Uniao. Esta decisao ratifica a Vantajosidade da prorrogagao antecipada da Malha Centro-Leste, em conformidade com o interesse
+publico.
+4.34. E como VOTO.
+5. DA PROPOSICAO FINAL
+5.1. Diante do exposto, propoe-se a Diretoria Colegiada, nos termos da Minuta de Deliberagao (SEl n 43979274):
+a) aprovar as alteracoes promovidas no Plano de Outorga da prorrogacao da concessao da Malha Centro-Leste, em atendimento as ressalvas
+constantes da Portaria n 344, de 18 de maio de 2026, do Ministerio dos Transportes, consubstanciado nos seguintes documentos;
+b) aprovar a versao consolidada do Plano de Outorga constante dos autos do Processo n 50515.064660/2015-81; e
+c) determinar a sucoN que promova os ajustes na documentacao conforme previsto no presente Voto ng 34/2026, antes do envio ao Tribunal
+de Contas da Uniao.
+Brasilia, 30 de julho de 2026.
+(assinado eletronicamente)
+GUILHERMETHEO SAMPAIO
+DIRETOR GERAL
+sei!
+Documento assinado eletronicamente por GUILHERME THEO RODRIGUES DA ROCHA SAMPAIO, Diretor Geral, em 30/07/2026, as 16:11, conforme horario oficial
+eletronica de Brasilia, com fundamento no art. 21, inciso Il, da Instrucao Normativa n 22/2023 da ANTT.
+A autenticidade deste documento pode ser conferida no site http://sei.antt.gov.br/sei/controlador externo.php?
+Referencia: Processo ng 50515.064660/2015-81 SEI ng 43936651
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF -www.antt.gov.br
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51165360&infra_siste... 5/5
+[pg 5]

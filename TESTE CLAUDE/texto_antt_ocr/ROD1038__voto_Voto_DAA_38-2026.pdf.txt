@@ -1,0 +1,307 @@
+30/07/2026,17:38 SEI/ANTT-44438054-VotoDAA
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DAA
+RELATORIA:ALEXAZEVEDO
+TERMO: VOTO A DIRETORIA COLEGIADA
+NUMERO:38/2026
+OBJETO: Aprovacao da 13 Revisao Extraordinaria da Tarifa Basica de Pedagio (TBP) do Contrato de Concessao celebrado com base no Edital de Concessao n?
+001/2013 (BR-050/MG/GO), Concessionaria Ecovias Minas Goias, para recomposicao do equilibrio economico-financeiro em razao de 4 eventos: (i) implantacao
+de elevador no Posto da Policia Rodoviaria Federal; (i) desapropriacoes realizadas entre o 2 e o 1o ano de vigencia contratual; (ii) obrigacao de
+disponibilizacao de servicos de conectividade 4G; e (iv) servicos emergenciais de pavimento e sinalizacao
+ORIGEM: Superintendencia de Infraestrutura Rodoviaria (SUROD), por intermedio da Gerencia de Regulacao Financeira e Economica (GEGEF) e da Gerencia de
+Regulacao Contabil e Financeira (COGIR/COFAD)
+PROCESSO:SEIn?50500.115208/2024-45
+INSTRUcAo PF/ANTT: Dispensada nesta fase, por nao haver, no momento, duvida juridica relacionada ao processo desta Revisao Extraordinaria, conforme
+Despacho de Instrucao SEI n 43974104, de 15/07/2026, do Superintendente de Infraestrutura Rodoviaria, substituto.
+ENCAMINHAMENTO: A VOTACAO -DIRETORIA COLEGIADA
+EMENTA
+1.1.
+FINANCEIRO. Proposta de aprovagao da 13a Revisao Extraordinaria da Tarifa Basica de Pedagio do Contrato de Concessao celebrado com base no Edital n?
+001/2013, formulada em favor da Concessionaria Ecovias Minas Goias (CNPJ n 19.208.022/0001-70),em razao de 4 eventos com fundamento juridico e
+tecnico proprio e individualmente rastreavel - determinacao judicial para implantagao de elevador no Posto da Policia Rodoviaria Federal (km 42,
+Araguari/MG); desapropriacoes realizadas entre o 2 e o 10 ano de vigencia contratual; obrigagao de disponibilizagao de conectividade 4G (31 sites); e
+servicos emergenciais de pavimento e sinalizagao (km 178+350 a 179+500, Uberaba/MG) - que totalizam Rs 5.126.573,60 (precos iniciais de marco de 2012)
+e ensejam a criacao de um novo fluxo de caixa marginal (FCM3), com Taxa Interna de Retorno de 9,86% a.a., calculada segundo a formula regulatoria CMPC, =
+CMPCs + TLP (Resolucoes ANTT n 6.003/2022 e n 6.004/2022).
+1.2. Pela aprovagao, com determinagao de implementagao simultanea a 11a Revisao Ordinaria.
+RELATORIO
+2.1.
+DOOBJETO
+2.1.1. Trata o presente processo da proposta da Superintendencia de Infraestrutura Rodoviaria (SUROD), consolidada na Nota Tecnica SEl n?
+866/2026/COGIR/GEGIR (SEI n°39007916) e formalizada no Relatorio a Diretoria SEl n 327/2026 (SEl n43973512), de aprovacao da 132 Revisao Extraordinaria
+da Tarifa Basica de Pedagio (TBP) do Contrato de Concessao celebrado com base no Edital n 001/2013, relativo ao trecho rodoviario BR-050/MG/GO, sob
+responsabilidade da Concessionaria Ecovias Minas Goias (CNPJ n 19.208.022/0001-70).
+2.1.2. A proposta consolida 4 eventos individualmente reconhecidos pelas areas tecnicas competentes: (a) implantacao de elevador no Posto da Policia
+Rodoviaria Federal, km 42 da BR-050/MG, Araguari/MG; (b) desapropriacoes realizadas entre o 2? e o 10 ano de vigencia contratual; (c) obrigacao de
+disponibilizagao de servicos de conectividade por sinal de telefonia 4G, ao longo da BR-05o/Go/MG; e (d) servicos emergenciais de pavimento e sinalizacao, no
+trecho compreendido entre o km 178+350 e o km 179+500, em Uberaba/MG.
+2.1.3. Cumpre desde logo delimitar o escopo do ato deliberativo: a presente 13a Revisao Extraordinaria nao abrange o pleito relativo a instalacao e
+operacao de 12 controladores de velocidade ("radares") oriundos do Departamento Nacional de Infraestrutura de Transportes (DNIT), objeto de tramitacao
+propria, em processo apartado (item 2.2.9 e 3.2.3 abaixo). Delibera-se, tao somente, sobre os 4 eventos acima elencados, cujo merito tecnico e juridico foi
+integralmente reconhecido pelas areas competentes.
+2.2. DOHISTORICOPROCESSUAL
+2.2.1. O historico deste processo organiza-se em dois arcos causais distintos. O primeiro -do qual a presente 13a Revisao Extraordinaria nao é resultado
+ é o pleito de inclusao dos 12 radares do DNIT, que nasceu com merito reconhecido, mas foi bifurcado para tramitacao propria em razao de divergencia quanto
+ao metodo de apuragao de custos. O segundo é a formacao da proposta ora submetida a deliberacao, que compreende exclusivamente os 4 eventos elencados
+no item 2.1.2.
+2.2.2.
+12 controladores de velocidade ("radares") oriundos do DNIT, monitorando 24 faixas na BR-050/GO/MG, no ambito do processo SEI n 50500.027148/2024-12.
+2.2.3. A Nota Tecnica SEl n? 3103/2024/COGIN/GEGIR (1a tentativa de formalizacao) incluiu os radares como item VI.B, no valor de RS 35.848.712,97
+(preco corrente abr/2023)-nota que veio a ser invalidada por ausencia de assinatura da SUROD.
+2.2.4. A Concessionaria, pela Carta Ec0050-GAC-0605-2024 (SEl n22962264), objetou ao metodo de rateio de custos de operacao e manutencao
+compartilhados proposto pela ANTT para o pleito dos radares.
+2.2.5. Em resposta, a Nota Tecnica SEI ng 3614/2024/COGIN/GEGIR (substituta) reapresentou o pleito dos radares com valor referencial reduzido - RS
+9.409.736,16, expressamente identificado como referencial, nao definitivo (nota de rodape [1] do quadro de eventos).
+2.2.6. A ANTT, entao, redirecionou o pleito dos radares para tramitagao em processo proprio de Termo Aditivo (SEl n 50500.114357/2024-97),
+condicionando o valor definitivo a analise de propostas comerciais pela GEENG e a comprovacao de gastos efetivos em Revisao Ordinaria futura - o Despacho
+SEl ng 23597570 chega a sugerir o sobrestamento dessa analise especifica.
+2.2.7. Checkpoints registrados em 26/02/2025 (Despacho SEl n 33092885 e Oficio SEl n 7238) situam o pleito dos radares em status "em analise": a
+GEENG objetou a documentacao apresentada, cabendo a Concessionaria reapresenta-la.O pleito nunca foi formalmente aprovado nem negado -permanece
+naomaduro paraa presente revisao.
+2.2.8. Em 22/06/2026, a Nota Tecnica SEI ng 866/2026/COGIR/GEGIR (SEI n°39007916) consolidou os 4 eventos maduros (itens VI.a a VI.d, item 2.1.2),
+no valor total de Rs 5.126.573,60, mantendo os radares fora do escopo desta revisao.
+2.2.9.
+43777670), com a analise final dos efeitos tarifarios decorrentes dos 4 eventos.
+2.2.10. Em 13/07/2026, a Concessionaria, pela Carta EMG-GED-0803-2026 (SEl n°43959745), manifestou concordancia integral com a analise tecnica e
+com os efeitos tarifarios apurados.
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51722396&infra_siste... 1/5
+[pg 1]
+
+30/07/2026,17:38 SEI/ANTT-44438054-VotoDAA
+2.2.11. Em 15/07/2026, o Relatorio a Diretoria SEl n9 327/2026 (SEl n43973512) propos formalmente a 13 Revisao Extraordinaria a Diretoria Colegiada,
+apurando a alteracao da TBP acumulada no FCM3 de Rs 0,00398/km para Rs 0,00422/km (efeito isolado desta revisao, variacao de +6,01%)- dado
+desenvolvido no item 3.2.2 desta Fundamentacao, juntamente com o efeito total (Rs 0,00406/km) que consta do Art. 19 da Minuta de Deliberacao.
+2.2.12. Ainda em 15/07/2026, foi lavrado o Despacho de Instrucao SEl n 43974104, atestando que o processo reune as condicoes do art. 39, § 1, do
+Regimento Interno para sorteio entre os Diretores, com dispensa da manifestacao da Procuradoria Federal junto a ANTT por ausencia de duvida juridica. No
+mesmo dia, o Gabinete do Diretor-Geral, pelo Despacho SEl n 44000668, encaminhou o processo para inclusao na pauta de sorteio.
+2.2.13.
+composicao vigente da Diretoria Colegiada (DicOL), tendo sido sorteado Relator o Diretor Alex Antonio de Azevedo Cruz.
+2.3. DAINSTRUCAODOCUMENTAL
+2.3.1. O processo encontra-se instruido com: Nota Tecnica SEI n 3019/2024/COGIN/GEGIR (reconhecimento inicial de merito, radares); Nota Tecnica SEl
+1655/2024/COROR/GEENG/SUROD/DIR/ANTT (elevador PRF); Nota Tecnica SEI n25382/2026/COFAD/GEENG/SUROD/DIR-ANTT(desapropriacoes); Nota Tecnica
+Diretoria SEI n 327/2026; Carta EMG-GED-0803-2026 (concordancia da Concessionaria); e Minuta de Deliberacao (SEl n° 43973803).
+2.3.2. A instrucao inclui, ainda, a memoria de calculo tarifaria (planilha "13a RE - Minas Gerais - preliminar SiR.xlsm"), com as abas Quadro Tarifario,
+Sintese (Fatores C/D/x/Q) e os 7 Fluxos de Caixa Marginal (FCM1-FCM7), e a memoria de calculo dos eventos acessorios (Quadros de investimento/cronograma
+vinculados asNotas Tecnicas 3103/3614/2024).
+2.3.3. Conclusao parcial: a instrucao processual esta completa para a fase deliberativa, contemplando o conjunto integral de notas tecnicas por evento, a
+consolidacao final, a manifestacao de concordancia da Concessionaria e a memoria de calculo tarifaria, em conformidade com o rito do art. 171-A da Resolucao
+ANTTn6.032/2023.
+3. FUNDAMENTACAO
+3.1. DAANALISEDE ADMISSIBILIDADE
+3.1.1. A competencia desta Agencia para regular a exploracao da infraestrutura rodoviaria federal e para processar pleitos de reequilibrio economico-
+financeiro de contratos de concessao rodoviaria encontra fundamento no art. 21, inciso Xil, alinea "d", e no art. 175 da Constituicao Federal, bem como no art.
+12, inciso Il, e no art. 13 da Lei n 10.233/2001, e no art. 9, § 4, da Lei ng 8.987/1995, que assegura a manutencao do equilibrio economico-financeiro do
+contrato de concessao.
+3.1.2. O rito processual observa o art. 171-A da Resolucao ANTT n 6.032/2023, segundo o qual os pleitos de reequilibrio economico-financeiro devem
+ser formulados pela Concessionaria e discutidos em autos apartados dos processos de revisao, sendo considerados na revisao subsequente ao transito em
+julgado (ou ao reconhecimento administrativo definitivo) do evento de desequilibrio - rito integralmente observado nos autos, com cada um dos 4 eventos
+tramitando e sendo reconhecido individualmente antes de sua consolidacao na Nota Tecnica SEl n 866/2026.
+3.1.3. A manifestacao da Procuradoria Federal junto a ANTT foi dispensada nesta fase, por ausencia, no momento, de duvida juridica relacionada ao
+processo, conforme expressamente justificado no Despacho de Instrucao SEl n2 43974104, de 15/07/2026 - juizo que esta relatoria, apos exame completo dos
+autos, confirma: a materia nao envolve controversia juridica substancial, cingindo-se a aplicacao de metodologia tarifaria ja disciplinada em resolucao vigente a
+fatos individualmente comprovados e reconhecidos pelas areastecnicas.
+3.1.4. Conclusao preliminar: a competencia desta Agencia é inconteste, o rito de reequilibrio economico-financeiro do art. 171-A da Resolucao ANTT n?
+6.032/2023foi integralmente observado,e a dispensa de manifestacao da Procuradoria Federal esta adequadamente justificada.
+3.2. DAANALISEDE MERITO
+3.2.1. DOS EVENTOS GERADORES DO REEQUILiBRIO
+3.2.1.1. Visao geral. A 13a Revisao Extraordinaria consolida 4 eventos com fundamento juridico e tecnico proprio e individualmente rastreavel -nao um
+bloco monolitico -, no valor total de Rs 5.126.573,60 (precos iniciais de marco de 2012), conforme a tabela do Relatorio a Diretoria SEl n 327/2026:
+Descricao
+Item Base do merito
+VI.a Elevador no Posto da PRF  km 42 da BR-050/MG, Determinacao Judicial (SEI50500.184216/2023-51)Nota Tecnica SEI n 1655/2024/COF
+Araguari/MG
+VI.b Desapropriacoes realizadas entre o 2 e o 10 ano de Subclausulas 9.1.3 +21.2.18 do Contrato -Nota Tecnica SEI n 5382/2026/COFAD/GEENG/SUROD/D
+vigencia contratual
+apresentados
+VI.c Conectividade 4G na BR-050/GO/MG (31 sites) Merito reconhecido na Nota Tecnica SEI n 10289/2024/COGIN/GEGIR; incorporado ao contrato pelo 10
+27/02/2026); aceite tecnico na Nota Tecnica SEl n 12892/2025/CORC
+VI.d Pavimento/sinalizacao emergenciais,km 178+350a Autorizado emergencialmente pela SUROD (Oficio SEl n 11419/2024) antes da formal assuncao do t
+(26/07/2024); classificado extra-PER
+179+500, Uberaba/MG
+3.2.1.2. Item VIl.a - Elevador no Posto da PRF (km 42, Araguari/MG). O Programa de Exploracao da Rodovia ja prescrevia, desde o inicio da concessao, a
+reforma e a operacionalizacao dos postos da Policia Rodoviaria Federal ate o 12 més -obrigacao que a Concessionaria cumpriu em 2014 e que a ANTT aceitou
+por meio do Oficio n 1479/2015/GEINV/SUINF (SEI n°10445985).
+3.2.1.3. Anos depois, contudo, o Ministerio Publico Federal ajuizou a Acao Civil Publica n 65 (SEl n° 11436846) perante a 2a Vara Federal Civel e Criminal
+da Subsecao Judiciaria de Uberlandia/MG, postulando a instalacao de um elevador de acesso ao pavimento superior daquele mesmo Posto. A Sentenca (ID
+1345965366, SEl n 16.133.389), de 13/03/2023,acolheu o pedido e determinou o inicio da instalacao no prazo de 180 dias a contar da intimacao.
+3.2.1.4. Diante do prazo judicial, a Concessionaria contratou os servicos em carater emergencial (Cartas Ec0050-GAC-0446-2023 e EcO050-GAC-0793-
+2023, SEl n 17.533.521 e n 19.863.225), com a execucao atestada pelo Escritorio Regional de Uberlandia/MG (Despacho SEl n 20.110.962).A prestacao de
+contas correspondentefoientaosubmetidaaGerénciadeEngenhariaRodoviaria(GEENG),quena NotaTécnicaSEIn
+1655/2024/cOROR/GEENG/sUROD/DIR/ANTT (SEI n°22014887) apurou o investimento em duas parcelas -RS 57.179,46, data-base set/2023, e RS 99.556,18,
+data-base nov/2023 -, totalizando Rs 80.736,12 a precos iniciais (mar/2012); acrescido de 3,79% de custos administrativos (Rs 3.059,90), o valor reconhecido
+perfaz RS 83.796,02.
+3.2.1.5. Entre os 4 eventos, é o unico cuja obrigatoriedade de execucao precede e independe de juizo discricionario da ANTT quanto ao merito de sua
+realizagao - decorre de ordem judicial -, cabendo a Agencia apenas o reconhecimento do direito a recomposicao tarifaria correspondente, o que foi feito sem
+ressalvas pela area tecnica.
+3.2.1.6.
+excedente: por forca da subclausula 9.1.3, combinada com o risco atribuido ao Poder Concedente pela subclausula 21.2.18, os custos efetivamente incorridos
+com desapropriacao passam a assegurar a Concessionaria o direito a recomposicao pelo Fluxo de Caixa Marginal, nos termos da subclausula 22.5.
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51722396&infra_siste... 2/5
+[pg 2]
+
+30/07/2026,17:38 SEI/ANTT- 44438054 -Voto DAA
+3.2.1.7. Foi exatamente esse o pleito trazido pela Concessionaria: pela Carta EMG-GAC-0432-2025 (SEl n°31435642), apresentou elementos
+complementares a prestacao de contas relativos a dezenas de desapropriacoes individuais realizadas ao longo de nove anos de concessao, entre 2014 e 2022-
+com maior concentracao no 2 ano, que sozinho respondeu por Rs 825.251,06 a precos iniciais.
+AGEENGavaliou essa documentacao na Nota Tecnica SEIn5382/2026/COFAD/GEENG/SUROD/DIR-ANTT (SEI n°42778441)eaprovouapenas
+3.2.1.8.
+parcialmente os valores apresentados - circunstancia que evidencia o exercicio efetivo de controle tecnico sobre o pleito, e nao mera chancela. O montante
+reconhecido foi de Rs 1.795.543,01 a precos iniciais; acrescido de 3,79% de custos administrativos (Rs 68.051,08), perfaz Rs 1.863.594,09 - o item de maior
+valor entre os 4 eventos.
+3.2.1.9. Item VI.c - Conectividade 4G (31 sites, BR-050/GO/MG).A Concessionaria apresentou o pleito pela Carta EMG-GAC-1064-2025 (SEI n°37783001),
+no ambito do processo relacionado SEl n 50500.123511/2024-11, propondo a implantacao, operacao e manutencao de cobertura de sinal de telefonia 4G ao
+longo de toda a rodovia.
+3.2.1.10. A GEGIR reconheceu o merito da inclusao na Nota Tecnica SEI n 10289/2024/COGIN/GEGIR/SUROD/DIR/ANTT (SEI n°26777516), em razao de
+interesse publico relevante - seguranca viaria e otimizacao da infraestrutura concedida. Por se tratar de obrigacao nova, nao prevista no PER original, sua
+inclusao contratual (subclausula 21.2.13) enseja recomposicao por Fluxo de Caixa Marginal, nos termos da subclausula 22.5 e do art. 150, 5 1, I, da Resolucao
+ANTT n6.032/2023.
+3.2.1.11. Reconhecido o mérito, a obrigacao foi formalmente incorporada ao Contrato pelo 10 Termo Aditivo, aprovado pela Deliberacao ANTT n 48, de
+27/02/2026 (SEl n°39999089), e comunicada a Concessionaria pelo Oficio SEl n 8499/2026/SUROD (SEl n°40265976).O aceite tecnico definitivo veio na
+sequencia,pela Nota Tecnica SEIn12892/2025/cOROR/GEENG/SUROD/DIR/ANTT(SEIn37908124),que confirmouos 31 sites, o prazo de implantacaode 11
+meses e o prazo de operacao e manutencao de 6o meses, sem obices técnicos.
+3.2.1.12. O valor apresentado-Rs 4.278.000,06, data-base mar/2025-foi convertido a precos iniciais pelo IRT de 2,06415491915331, resultando em Rs
+2.072.518,89; acrescido de 3,79% de custos administrativos, perfaz Rs 2.151.067,36. E o unico dos 4 eventos que percorreu o tramite contratual completo -
+reconhecimento de merito, incorporacao por termo aditivo e aceite tecnico final -, sem etapas suprimidas.
+3.2.1.13. Item Vl.d - Pavimento e sinalizacao emergenciais (km 178+350 a 179+500, Uberaba/MG).O segmento encontrava-se em tratativas avancadas
+para a celebracao do Termo de Arrolamento e Transferencia de Bens entre ANTT, Concessionaria e DNIT quando se constatou elevada degradacao do pavimento
+e deficiencias de sinalizacao e drenagem. Diante do risco a seguranca dos usuarios - e por estar o aditivo de arrolamento ainda em tramitacao -, a SUROD
+emitiu Autorizacao Excepcional para a intervengao, por meio do Oficio SEI n2 11419/2024/SUROD/DIR-ANTT (SEI n° 22886859), de 11/04/2024, com nao objecao
+manifestada pelo Oficio SEI n 11682/2024/COGIP/GEGIR (SEI n°22893836).
+3.2.1.14.
+Carta ECO050-GAC-0954-2024 (SEIl n°25175571). O projeto executivo e o orcamento foram entao analisados pela GEENG (Notas Tecnicas n 1435/2025 e n
+9582/2025/COROR/GEENG, SEI n9 35.635.617), com sucessivas reapresentacoes da Concessionaria ao longo da instrucao (Cartas EMG-GAC-0572-2025 e EMG-
+GAC-1057-2025, SEI ng 37.303.246).
+3.2.1.15. O segmento foi formalmente incorporado a concessao pelo 3 Termo Aditivo, de 26/07/2024, e tratado como Extra-PER por nao constar do
+Programa de Exploracao da Rodovia original - a intervengao decorreu, afinal, de determinacao do Poder Concedente, via SUROD, para a execucao de um servico
+em segmento que ainda estava sob responsabilidade do DNIT, antes de sua efetiva transferencia.
+Concluida a instrucao, a Nota Tecnica SEI n 3114/2026/COROR/GEENG/SUROD/DIR-ANTT (SEl n°40829113) aceitou, em analise definitiva, 0
+3.2.1.16.
+valor de Rs 1.936.505,85 (data-base jan/2024), convertido a precos iniciais pelo IRT de 1,95493424585173 para Rs 990.573,39; acrescido de 3,79% de custos
+administrativos (Rs 37.542,73), perfaz Rs 1.028.116,13. Trata-se, em suma, de intervencao autorizada emergencialmente pela SUROD, antes mesmo da formal
+assuncao do trecho pela Concessionaria, e so depois regularizada pela incorporacao ao 3 Termo Aditivo -tratamento coerente com a natureza excepcional e
+superveniente da intervencao.
+3.2.1.17. Conclusao parcial: os 4 eventos apresentam fundamentacao juridica e tecnica proprias, rastreaveis e distintas entre si; nenhum decorre de mera
+liberalidade administrativa, e o item de maior valor (desapropriacoes) foi submetido a controle tecnico que resultou em aprovacao parcial, nao integral, do
+quanto pleiteado.
+3.2.2. DA METODOLOGIA TARIFARIA E DOS EFEITOS SOBRE A TBP
+3.2.2.1.
+A adequagao metodologica do calculo da Taxa Interna de Retorno aplicavel ao novo fluxo de caixa marginal (FCM3) tem fundamento na Resolucao
+ANTT n9 6.003/2022 (spread CMPC, por perfil de risco de projeto) e na Resolucao ANTT n 6.004/2022 (CMPC, = CMPC, + TLP, art. 29) - base normativa cuja
+aplicacao concreta aos 4 eventos ora deliberados é demonstrada nos itens seguintes.
+3.2.2.2.
+Para a incorporacao dos 4 eventos, foi criado um novo fluxo de caixa marginal - o FCM3 - com Taxa Interna de Retorno definida pela formula
+regulatoria CMPC, = CMPCs + TLP (Resolucao ANTT n? 6.004/2022, art. 29; Resolucao ANTT n9 6.003/2022, art. 19): spread CMPC = 2,09% a.a. (perfil de risco
+CR0, correspondente a fluxo marginal de concessao vigente sem elementos de risco relevantes, nos termos do art. 1, inciso I, da Resolucao ANTT n 6.003/2022)
+somado a TLP = 7,77% a.a. (media aritmetica das Taxas de Longo Prazo de abril, maio e junho de 2026 - 7,77%, 7,73% e 7,80%, respectivamente, nos termos do
+art.2 da Resolucao ANTT n 6.003/2022), resultando em CMPC, = 9,86% a.a.valor confirmado na Nota Tecnica SEl n 7337/2026.
+Da coexistencia de dois valores tarifarios. A instrucao processual apresenta dois valores para a nova TBP acumulada no FCM3, e a distincao entre
+3.2.2.3.
+eles - verificada e confirmada nesta relatoria por leitura direta e integral dos tres documentos-fonte (Relatorio a Diretoria SEl n 327/2026, Nota Tecnica SEl n?
+7337/2026 e Minuta de Deliberacao SEl n 43973803) - nao configura divergencia ou erro material, mas medida de grandezas distintas:
+(a) o efeito TOTAL, que soma os efeitos ordinario e extraordinario da tarifa, eleva a TBP acumulada no FCM3 de Rs 0,00398/km para RS o,00406/km
+é este o valor que consta do Art. 1 da Minuta de Deliberagao, o dispositivo que efetivamente altera a tarifa contratual;
+(b) o efeito IsoLADo, atribuivel especificamente aos 4 eventos desta 13 Revisao Extraordinaria - descontada a substituicao do trafego projetado
+pelo real nos FCM1/FCM2, que por si so varia -0,59404% e -3,51405%, somando -4,10809%, patamar abaixo do gatilho de 5% que obrigaria a revisao
+das projecoes de trafego -, eleva a TBP acumulada no FCM3 de Rs 0,00398/km para Rs o,00422/km, correspondente a uma variagao positiva de
+6,01%, numero que a Nota Tecnica SEl n 7337/2026 e o Relatorio a Diretoria SEl n? 327/2026 utilizam para demonstrar o merito especifico desta
+revisao.
+3.2.2.4. Registre-se que a substancia economica dos eventos esta integralmente demonstrada no Relatorio SEl n 327/2026 e na Nota Tecnica SEl n?
+7337/2026, por meio da metodologia de Fluxo de Caixa Marginal com CMPC proprio - metodologia distinta do indice de Reajuste Tarifario periodico classico, o
+que e proprio da natureza extraordinaria, e nao ordinaria, da presente revisao.
+3.2.2.5. Conclusao parcial: a metodologia tarifaria esta corretamente fundamentada em resolucao regulatoria propria, os dois valores de TBP constantes
+dos autos (Rs 0,00406/km e Rs 0,00422/km) sao mutuamente consistentes e nao conflitantes, cada qual medindo uma grandeza distinta e devidamente
+identificada - recomendando-se, para a redacao final da deliberacao e de eventual comunicacao externa, que ambos os valores permanegam expressos com a
+explicitacao de seu respectivo significado, de modo a prevenir leitura equivocada por parte de terceiros que tenham acesso a apenas um dos documentos da
+instrucao.
+3.2.3. DOS EVENTOSNAO INCLUiDOS-OPLEITODERADARES
+3.2.3.1. Cumpre a relatoria esclarecer, para a seguranca do encaminhamento, por que o pleito relativo aos 12 radares oriundos do DNIT (SEl n?
+50500.027148/2024-12)
+presente13a RevisaoExtraordinaria.
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51722396&infra_siste... 3/5
+[pg 3]
+
+30/07/2026,17:38 SEI/ANTT- 44438054 -Voto DAA
+3.2.3.2.
+Conforme reconstituido no historico processual (itens 2.2.2 a 2.2.7), o pleito dos radares nasceu com merito reconhecido (NT 3019/2024), mas foi
+redirecionado para tramitacao em processo proprio de Termo Aditivo (SEl n 50500.114357/2024-97), em razao de divergencia quanto ao metodo de apuracao
+de custos de operacao e manutencao compartilhados. Permanece, ate a presente data, em status "em analise", sem aprovacao nem negacao definitiva. Trata-se,
+3.2.3.3. Da divergencia de numeracao"12a RE" vs."13a RE". Identificou-se, em um unico registro da memoria de calculo (planilha"TABELAS.xlsx", aba
+"QUADRO 2", celula E3),mengao ao pleito dos radares como associado a"12a Revisao Extraordinaria"-divergindo das aproximadamente 60 demais mencoes
+no corpus textual do processo, que se referem consistentemente a"13a Revisao Extraordinaria". Considerando que o pleito dos radares é o unico item que nunca
+integrou a sintese de merito reconhecido para esta revisao, a leitura mais consentanea com a evidencia disponivel é a de que"12a" constitui rotulo residual de
+fase anterior do proprio pleito de radares, em documento de trabalho interno - nao uma disputa substantiva sobre a numeracao oficial da presente revisao.
+Recomenda-se, por cautela, que a area tecnica confirme essa leitura antes da publicacao da deliberacao.
+3.2.3.4. Conclusao parcial: a exclusao do pleito de radares desta 13a Revisao Extraordinaria esta adequadamente justificada pela sua imaturidade
+processual, decorrente de tramitacao propria e ainda nao concluida, nao afetando a completude ou a autonomia dos 4 eventos ora submetidos a deliberacao.
+3.3. DACONFORMIDADEJURiDICAEDA IMPLEMENTACAOCONDICIONADA
+3.3.1. A Minuta de Deliberacao (SEl n° 43973803), submetida a esta relatoria, contempla, em seu Art. 2, determinacao expressa de que os efeitos
+economico-financeiros decorrentes desta 13a Revisao Extraordinaria sejam implementados de forma simultanea a 11a Revisao Ordinaria (SEl n?
+50500.003042/2026-87), com data-base de reequilibrio contratual em 08/07/2026 - condicao explicitamente reconhecida, tambem, no Relatorio SEl n?
+327/2026 e na Nota Tecnica SEl ng 7337/2026, ambos consignando que os resultados apresentados tem validade restrita a esse cenario de implementacao
+conjunta.
+3.3.2. A propria Minuta de Deliberagao ja contempla a salvaguarda para a hipotese de descompasso temporal: o paragrafo unico do Art.2 dispoe que os
+efeitos economico-financeiros decorrentes de eventual atraso na implementacao da 11 Revisao Ordinaria serao computados na Revisao Ordinaria subsequente
+de modo que a unica condicionalidade relevante identificada nesta relatoria, a saber, a vinculacao da presente revisao a data de implementacao da 11a
+Revisao Ordinaria, ja se encontra normativamente enderecada no proprio instrumento submetido a deliberacao, nao configurando lacuna a ser suprida por esta
+relatoria.
+3.3.3. A submissao da materia a Diretoria Colegiada observa os principios da legalidade, publicidade, motivacao e eficiencia (art. 37, caput, da CF/88; art.
+50 da Lei n 9.784/1999), tendo sido assegurada, ainda, a possibilidade de dispensa fundamentada da manifestacao da Procuradoria Federal, nos termos
+examinados no item 3.1.3.
+3.3.4. Conclusao parcial: a seguranga juridica da proposta esta assegurada; a condicionalidade de implementacao simultanea a 11a Revisao Ordinaria
+esta normativamente prevista e resolvida na propria Minuta de Deliberacao, com salvaguarda expressa para a hipotese de descompasso temporal.
+3.4. CONCLUSAODAANALISEPROCESSUAL
+3.4.1. Apos o exame dos aspectos tecnicos, economico-financeiros, juridicos e procedimentais,conclui-se que:
+a) a competencia desta Agencia esta plenamente configurada;
+b) o rito de reequilibrio economico-financeiro (art. 171-A da Resolucao ANTT n 6.032/2023) foi integralmente observado, com cada um dos 4
+eventos tramitando e sendo reconhecido individualmente antes de sua consolidacao;
+c) os 4 eventos geradores (elevador, desapropriacoes, conectividade 4G, pavimento emergencial) apresentam fundamentacao juridica e tecnica
+proprias e rastreaveis, com controle tecnico efetivo demonstrado inclusive pela aprovacao apenas parcial do item de desapropriacoes;
+d) a metodologia tarifaria (CMPC, = 9,86% a.a., FCM3) esta corretamente fundamentada em resolucao regulatoria propria, e os dois valores de
+TBP constantes dos autos (Rs 0,00406/km total e Rs 0,00422/km isolado, +6,01%) sao mutuamente consistentes, recomendando-se sua
+explicitacao conjunta na comunicacao da deliberacao;
+e) a exclusao do pleito de radares desta revisao esta adequadamente justificada por sua bifurcacao procedimental e imaturidade processual;
+f) a condicionalidade de implementagao simultanea a 11a Revisao Ordinaria esta normativamente prevista e resolvida na propria Minuta de
+Deliberacao, com salvaguarda paraa hipotese de descompassotemporal;
+g) a dispensa de manifestacao da Procuradoria Federal esta adequadamente justificada pela ausencia de duvida juridica substancial.
+3.4.2. A proposta atende aos criterios de legalidade, publicidade, motivacao, razoabilidade e eficiencia, justificando sua aprovacao, com a determinacao
+adiante especificada.
+4. PROPOSICAO FINAL
+4.1. DOVOTO
+4.2. Diante do exposto, e considerando:
+(i) a competencia desta Agencia para regular a exploracao da infraestrutura rodoviaria federal e processar pleitos de reequilibrio economico-
+financeiro, nos termos do art. 21, Xll,"d", e do art. 175 da CF/88, dos arts. 12, Il, e 13 da Lei ng 10.233/2001, e do art. 99, § 49, da Lei ng 8.987/1995;
+(i) a observancia do rito do art. 171-A da Resolucao ANTT n 6.032/2023, com o reconhecimento individual e tempestivo de cada um dos 4 eventos
+geradores do reequilibrio;
+(ii) o reconhecimento tecnico do merito dos 4 eventos pelas areas competentes - Nota Tecnica SEl n 1655/2024 (elevador), Nota Tecnica SEl n?
+5382/2026 (desapropriacoes, aprovacao parcial), Notas Tecnicas SEl n 10289/2024 e n 12892/2025 (conectividade 4G) e Oficio SEl n 11419/2024
+(pavimento emergencial), consolidados na Nota Tecnica SEI n 866/2026/COGIR/GEGIR;
+(iv) a metodologia tarifaria fundamentada nas Resolucoes ANTT n9 6.003/2022 e n 6.004/2022 (CMPC, = 9,86% a.a.), apurada na Nota Tecnica SEl ng
+7337/2026/CGEFI/GEGEF e no Relatorio a Diretoria SEI n9327/2026;
+(v) a concordancia expressa da Concessionaria com a analise tecnica e com os efeitos tarifarios, manifestada na Carta EMG-GED-0803-2026 (SEl n°
+43959745);
+(vi) a determinacao de implementacao simultanea a 11a Revisao Ordinaria (SEl n 50500.003042/2026-87), com data-base de reequilibrio contratual
+em08/07/2026;
+(vii) a dispensa fundamentada da manifestacao da Procuradoria Federal junto a ANTT (Despacho de Instrucao SEl n 43974104);
+(vii) os principios da legalidade, da publicidade, da motivacao, da razoabilidade e da modicidade tarifaria;
+4.3. VOTO pela APROVAcAo da 13a Revisao Extraordinaria da Tarifa Basica de Pedagio do Contrato de Concessao celebrado com base no Edital de
+Concessao n 001/2013 (BR-050/MG/GO), em favor da Concessionaria Ecovias Minas Goias, nos termos da Minuta de Deliberagao SEI n 44441431.
+4.4. PROPONHO, assim, que o presente voto seja objeto de deliberagao e aprovagao pela Diretoria Colegiada, nos termos da Minuta de Deliberagao
+(SEI n°44441431).
+4.5. E o voto.
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51722396&infra_siste... 4/5
+[pg 4]
+
+30/07/2026,17:38 SEI/ANTT-44438054-Voto DAA
+ALEXAZEVEDO
+Diretor
+Agencia Nacional de Transportes Terrestres -ANTT
+sei! Documento assinado eletronicamente por ALEX ANTONIO DE AZEVEDO CRUZ, Diretor, em 30/07/2026, as 13:03, conforme horario oficial de Brasilia, com
+assinatura fundamento no art. 21, inciso Il, da Instrucao Normativa n 22/2023 da ANTT.
+eletronica
+A autenticidade deste documento pode ser conferida no site http://sei.antt.gov.br/sei/controlador_externo.php?
+acao=documento_conferir&id_orgao_acesso_externo=Q, informando o codigo verificador 44438054 e o codigo CRC 1D0A1350.
+Referencia: Processo ng 50500.115208/2024-45 SEI ng 44438054
+St. de Clubes Esportivos Sul Trecho 3 - Telefone Sede: 61 3410-1000 Ouvidoria ANTT: 166
+CEP 70200-003 Brasilia/DF -www.antt.gov.br
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=51722396&infra_siste... 5/5
+[pg 5]

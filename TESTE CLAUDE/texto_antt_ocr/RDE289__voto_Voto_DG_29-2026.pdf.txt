@@ -1,0 +1,232 @@
+30/07/2026,11:03 SEI/ANTT-43655626- VOTO DG
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DG
+RELATORIA: DG
+TERMO: Voto a Diretoria Colegiada
+NUMERO: 29/2026
+OBJETO: Proposta de atualizacao dos instrumentos relacionados a gestao de riscos institucionais da
+Agéncia Nacional de Transportes Terrestres (ANTT)
+ORIGEM: Superintendéncia de Governanca, Gestao da Estrategia e Informacoes - SUESP
+PROCESSO (S): 50500.040030/2026-33
+PROPOSICAo PF/ANTT: Nao ha.
+ENCAMINHAMENTO: A VOTACAO - DIRETORIA COLEGIADA
+1. DO OBJETO
+1.1. Trata-se de proposta de atualizacao dos instrumentos relacionados a gestao de riscos
+institucionais da Agencia Nacional de Transportes Terrestres (ANTT), referente a Politica de Gestao de
+Riscos, regulamentada pela lnstrucao Normativa n? 30,_de 30 de setembro de 2024); revisao da
+Metodologia de Avaliacao e Tratamento de Riscos; e aprovacao do Plano de Gestao de Riscos (PGR) para o
+quadrienio 2026-2029.
+2. DOS FATOS
+2.1. A gestao de riscos é um processo sistematico de identificacao, avaliacao e controle de
+riscos que visa proteger e gerar valor para uma organizacao, quer seja ela publica ou privada. Dentro
+desse contexto, o Governo Federal editou a Instrucao Normativa Conjunta MP/CGU n 01, de 10 de maio
+federal. Com a publicacao dessa norma, os orgaos e entidades do Poder Executivo federal tornaram-se
+obrigados a implementar e revisar um processo de gestao de riscos, compativel com sua missao e seus
+objetivos estratégicos.
+2.2. Além da Instrucao Normativa supramencionada, o Decreto n? 9.203, de 22 de novembro
+de 201Z, que institui a politica de governanca da administracao publica federal direta, autarquica e
+fundacional, também passou a exigir que cada orgao estabeleca, mantenha, monitore e aprimore o seu
+sistema de gestao de riscos e seus controles internos. No ambito do arcabouco legal, faz-se importante
+mencionar, ainda, a Lei das Agencias Reguladoras, estabelecida pela Lei n? 13.848, de 25 de_junho de
+2019, que reitera a obrigatoriedade da adocao de praticas de gestao de riscos e de controle interno.
+2.3. No sentido de dar cumprimento as normas supralegais, a ANTT possui atualmente a
+Politica de Governanca, instituida por meio da Instrucao Normativa ANTT n? 29, de 30 de setembro de
+setembro de 2024, entre outros instrumentos que complementam o sistema de gestao de riscos da
+Agéncia.
+2.4. No entanto, a experiéncia recente de implementacao evidenciou oportunidades de
+melhoria para eliminar sobreposicoes de competencias; harmonizar conceitos, etapas e criterios; e
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 1/6
+[pg 1]
+
+30/07/2026,11:03 SEI/ANTT-43655626 - VOTO DG
+alinhar o ciclo de planejamento de riscos ao planejamento institucional de médio prazo (Plano
+Estrategico).
+2.5. Registre-se, ainda, que a propria Politica de Gestao de Riscos preve revisao sempre que
+necessario, com vistas a sua atualizacao diante de mudancas no ambiente interno ou externo, a partir de
+proposta da unidade competente.
+2.6. Assim sendo, e considerando a competencia da Superintendencia de Governanca, Gestao
+da Estratégia e Informacoes (SUESP) disposta no art. 28, Inciso IV, do Regimento Interno da ANTT,
+aprovado pela Resolucao ANTT n 5.976, de 2022, de “coordenar e implantar acoes visando 0
+projetos, compliance e governanca", foi feito um estudo do atual sistema de gestao de riscos da ANTT,
+cujas analises e resultados encontram-se consolidados na Nota Técnica n 6085/2026/GEGOP/SUESP (SEl
+n 43552353).
+2.7. Nesse sentido, em 26/06/2026, a SUROD instruiu os autos com o Relatorio a Diretoria n?
+286/2026 (43552577), bem como a Minuta de Deliberacao (43552405), e encaminhou os autos a
+Diretoria Colegiada para analise e deliberacao. Assim, tendo em vista se tratar de matéria de natureza
+administrativa, os autos foram distribuidos a esta Diretoria-Geral, nos termos do art. 39, $6? do
+Regimento Interno, conforme Certidao (43609886).
+2.8. E o relatorio. Passa-se a analise.
+3. DA ANALISE PROCESSUAL
+3.1. Ao analisar a base normativa relacionada a gestao de riscos no ambito da ANTT, observou-
+se a necessidade de ajustes pontuais e atualizacao de alguns documentos, visando manté-los alinhados
+com o contexto atual de maturidade institucional da Agéncia.
+POLiTICA DE GESTAO DE RISCOS
+3.2. No ambito da Politica de Gestao de Riscos, aprovada pela IN n? 30, de 2024, a aglutinacao
+dos riscos de integridade no escopo dos riscos em processo converge com as diretrizes da norma ABNT
+NBR ISO 31000, que estabelece que a gestao de riscos deve ser integrada e parte integrante de todas as
+atividades organizacionais. Nesse sentido tratar a integridade como um componente intrinseco aos
+processos de trabalho, e nao como uma categoria apartada, eleva o nivel de maturidade da gestao da
+ANTT.
+Incorporacao dos Riscos de Integridade no escopo dos Riscos em Processo:
+3.3. A aglutinacao dos riscos de integridade no escopo dos riscos em processo converge com as
+parte integrante de todas as atividades organizacionais. Nesse sentido tratar a integridade como um
+maturidade da gestao da ANTT. Ou seja, os riscos de integridade continuarao a ser mapeados, avaliados,
+processo, a fim de evitar duplicidade. Assim, no ambito da Politica de Gestao de Riscos, a proposta
+Redagao atual:
+Art. 2 A Politica de Gestao de Riscos da Agéncia Nacional de Transportes Terrestres
+deverd observar o disposto nesta Instrucao Normativa.
+(...)
+Riscos em Processos e Riscos de Integridade. (Grifo nosso)
+Redacao proposta:
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 2/6
+[pg 2]
+
+30/07/2026,11:03 SEI/ANTT-43655626- VOTO DG
+Art. 2 A Politica de Gestao de Riscos da Agencia Nacional de Transportes Terrestres
+devera observar o disposto nesta Instrucao Normativa.
+(..)
+§ 2 A Politica de Gestao de Riscos abrange Riscos Estratégicos, Riscos em Projetos e
+Riscos em Processo, nestes compreendidos os Riscos de Integridade. (Grifo nosso)
+Inclusao no art. 3 o conceito de "Sistema de gestao de riscos"
+3.4. Sugere-se a inclusao do conceito no art. 3 da IN n? 30, de 2024, na secao que que trata
+Gestao de Riscos da ANTT
+Redacao proposta:
+Art. 3 Para os efeitos desta Instrucao Normativa, entende-se por:
+(.)
+Xlll - Sistema de gestao de riscos: conjunto de instrumentos de governanca e de gestao,
+estruturas organizacionais, responsabilidades, processos e recursos que suportam a
+concepcao, implementacao, monitoramento da gestao de riscos na Agéncia.
+Etapas previstas na Metodologia de Avaliagao e Tratamento de Riscos
+3.5. Adequacao das etapas descritas no art. 6, de forma a ficarem coerentes com a
+Metodologia de Avaliacao e Tratamento de Riscos. A "melhoria continua", antes prevista como etapa na
+atual Metodologia de Avaliacao e Tratamento de Riscos, passa a ser tratada como boa pratica no processo
+de aperfeicoamento de gestao de riscos.
+Redagdo atual:
+Art. 6 O processo de gestao de riscos na ANTT contempla:
+(.)
+Vill - melhoria continua: compreende o aperfeicoamento ou ajuste de aspectos da gestao
+de riscos avaliados no monitoramento.
+Redacao proposta:
+Art. 6 O processo de gestao de riscos na ANTT contempla, dentre outras etapas: (Grifo
+nosso)
+(.)
+Vill - registrar e relatar riscos: compreende a documentacao e comunicacao das
+informacoes relacionadas aos riscos, decisoes e acoes implementadas.
+Paragrafo unico. O processo de gestao de riscos na ANTT devera ser continuamente
+aperfeicoado, considerando os resultados do monitoramento, das andlises criticas e das
+avaliacoes realizadas.
+Correcao da competencia do Diretor-Geral
+3.6. Conforme $s 2 e 5 do art. 8 da IN n? 30, de 2024, o Diretor-Geral e a Superintendencia
+de Governanca, Gestao da Estratégia e Informacoes possuem competéncia para “propor" limites de
+exposicao a riscos de abrangéncia institucional.
+3.7. Contudo, considerando as competéncias estabelecidas no Regimento Interno da ANTT,
+verifica-se provavel erro material na redacao original do s 2 do art. 8 da referida Instrucao Normativa.
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 3/6
+[pg 3]
+
+30/07/2026,11:03 SEI/ANTT-43655626- VOTO DG
+Nesse dispositivo, o verbo mais adequado seria “aprovar", e nao “propor", especialmente no que se
+refere a definicao dos limites de exposicao ao risco no ambito da ANTT.
+Redacao atual:
+Art. 8o Sao instancias responsdveis pelo Sistema de Gestao de Riscos da ANTT:
+S 2? Compete ao Diretor-Geral propor os limites de exposicao a riscos de abrangencia
+institucional.
+Redacao proposta:
+Art. 8o Sao instancias responsdveis pelo Sistema de Gestao de Riscos da ANTT:
+(...)
+s 29 Compete ao Diretor-Geral aprovar os limites de exposicao a riscos de abrangencia
+institucional.
+de Pessoal
+3.8. A alteracao proposta visa conferir maior perenidade e estabilidade ao normativo,
+alinhando-o as melhores praticas de técnica legislativa na Administracao Publica Federal. A especificacao
+nominal de superintendéncias ou unidades de segundo nivel em atos normativos finalisticos gera um
+engessamento desnecessario, sujeitando a Instrucao Normativa a revisoes frequentes decorrentes de
+eventuais reestruturacoes regimentais na Agencia. Ademais, a terminologia "unidade organizacional
+termos da IN n 29, de 2024.
+Redacao atual:
+Art. 8o Sao instancias responsdveis pelo Sistema de Gestao de Riscos da ANTT:
+(.)
+s 59 A Superintendencia de Governanca, Gestao Estratégica e de Pessoal desempenha o
+papel de unidade central de coordenagao e supervisao da gestao de riscos, sendo
+implantacao e a operacao do Sistema de Gestao de Riscos, monitorar riscos e propor
+limites de exposicao a riscos de abrangéncia institucional e assessorar o Diretor-Geral e o
+Art. go A Politica de Gestao de Riscos deverd ser revista sempre que necessario, com o
+objetivo de mante-la atualizada diante de mudangas no ambiente interno ou externo, a
+partir de proposta elaborada pela Superintendencia de Governanca, Gestao Estrategica
+e de Pessoal. (grifo nosso).
+Redacao proposta:
+Art. 8 Sao instancias responsdveis pelo Sistema de Gestao de Riscos da ANTT:
+s 59 A unidade organizacional responsdvelpela_governanca e_gestao estrategica na
+ANTT deverd desempenhar opapel de unidade centralde coordenacao e supervisao da
+gestao de riscos, sendo responsdvel por avaliar e propor mudancas no Sistema de
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 4/6
+[pg 4]
+
+30/07/2026,11:03 SEI/ANTT - 43655626 - VOTO DG
+Gestao de Riscos, coordenar a implantacao e a operacao do Sistema de Gestao de
+institucional e assessorar o Diretor-Geral e o Comité de Governanca em matéerias
+relacionadas a gestao de riscos. (grifo nosso).
+Art. go A Politica de Gestao de Riscos deverd ser revista sempre que necessdrio, com o
+objetivo de manté-la atualizada diante de mudangas no ambiente interno ou externo, a
+partir de proposta elaborada pela unidade organizacional responsdvel pela governanca
+Egestao estratégica na ANTT (grifo nosso).
+3.9. Registre-se, por fim, que a proposta de alteracao da Politica de Gestao de Riscos, nos
+Governanca, na Reuniao de Alinhamento Estratégico (RAE), ocorrida em 08/06/2026, em atencao ao § 1?
+do art. 8 da IN n? 30, de 2024:
+Art. 8o Sao instancias responsdveis pelo Sistema de Gestao de Riscos da ANTT:
+I - a Diretoria Colegiada;
+Il - o Diretor-Geral;
+IV - Unidade de Gestao de Integridade - UGl;
+V - os titulares das unidades organizacionais;
+VI - os gestores de risco; e
+Vll - a Auditoria Interna.
+ 19 Propostas de mudangas na Politica de Gestao de Riscos devem ser submetidas ao
+Comité de Governanca. (grifo nosso)
+METODOLOGIA DE AVALIACAO E TRATAMENTO DE RISCOS
+3.10. A Metodologia é o principal instrumento que estabelece diretrizes, conceitos, critérios e
+riscos que possam impactar na implementacao da estrategia e na consecucao dos objetivos institucionais.
+3.11. As etapas de gestao de riscos institucionais na ANTT foram atualizadas, apresentando
+agora 08 (oito) etapas:
+1) estabelecimento de contexto;
+2) identificacao de riscos;
+3) analise de riscos;
+4) avaliacao de riscos;
+5) comunicacao e consulta;
+6) tratamento de riscos;
+7) monitoramento e analise critica; e
+8) registro e relato de riscos.
+3.12.
+Estrategicos e Riscos em Projetos, em razao das particularidades inerentes a esses temas.
+3.13. Nesse contexto, propoe-se a revisao da Metodologia de Avaliacao e Tratamento de Riscos,
+conforme Anexo I (SEl n 43552461) da Minuta de Deliberacao (SEl n 43552405).
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 5/6
+[pg 5]
+
+30/07/2026,11:03 SEI/ANTT-43655626-VOTODG
+PLANO DE GESTAO DE RISCOS
+3.14. Quanto ao Plano de Gestao de Riscos - PGR propoe-se que sua vigéncia passe a ser
+quadrienal, em alinhamento ao Plano Estratégico. Ressalte-se que o PGR pode ser revisto a qualquer
+3.15. Nesse sentido, com fundamento nas manifestacoes técnicas acostadas aos autos, entendo
+pela aprovacao da Politica de Gestao de Riscos, conforme Minuta de Instrucao Normativa (SEl n?
+43552388) e da Metodologia de Avaliacao e Tratamento de Riscos e aprovacao do Plano de Gestao de
+Riscos 2026-2029, na forma dos Anexos I e Il (SEl n²s 43552461 e 43552471).
+4. DA PROPOSTA DE ENCAMINHAMENTO
+4.1. Ante o exposto, VOTO por aprovar a alteracao da Politica de Gestao de Riscos, conforme
+Minuta de Instrucao Normativa (SEl n? 43552388) e da Metodologia de Avaliacao e Tratamento de Riscos
+e aprovacao do Plano de Gestao de Riscos 2026-2029, na forma dos Anexos I e Il (SEl n?s 43552461 e
+43552471), conforme Minuta de Deliberacao (SEl n 43656900).
+Brasilia, 13 de julho de 2026.
+GUILHERMETHEOSAMPAIO
+Diretor-Geral
+sei!
+Diretor Geral, em 13/07/2026, as 12:58, conforme horario oficial de Brasilia, com fundamento no art.
+assinatura
+eletronica 21, inciso Il, da Instrucao Normativa n 22/2023 da ANTT.
+Aautenticidadedestedocumentopodeserconferidanosite
+http://sei.antt.gov.br/sei/controlador_externo.php?
+aca0=documento _conferir&id_orgao _acesso _externo=0, informando o codigo verificador 43655626 e
+O codigo CRC EEC1A1FE.
+Referencia:Processon50500.040030/2026-33 SEl n 43655626
+CEP 70200-003 Brasilia/DF - www.antt.g0v.br
+https:/sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=50786985&infra_siste... 6/6
+[pg 6]
