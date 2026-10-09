@@ -14,6 +14,14 @@ Não altera código nem banco.
 - [ ] Decidir se os níveis assimétricos (Processo: 1 condição em Gerenciado) serão normalizados.
 - [ ] Teto verificável só por fonte pública: ~55 de 100 (Capacitação é dado interno).
 - [ ] Quando aprovado: rota de escrita de `condicoes_avaliadas` + checklist na aba Diagnóstico.
+- [ ] **Fontes e monitoramento (09/out/2026):** `docs/metodologia/fontes-monitoramento.json` (16 fontes nacionais,
+  34 sinais, 73 condições mapeadas, 120 linhas agência × critério) alimenta as abas Fontes/Sinais/Mapa/Monitor/Achados
+  do workbook e a aba "Fontes & Monitoramento" do HTML. URLs são "encontradas em busca", NÃO abertas por navegador;
+  6 linhas "a descobrir". Revisar as URLs antes de ligar qualquer coletor.
+- [ ] ⚠️ **Base legal desatualizada na própria matriz:** Estoque cita o Decreto 10.139/2019, substituído pelo
+  Decreto 12.002/2024 (segundo páginas da Anatel/ANAC) — conferir os artigos.
+- [ ] Próxima fase (só com aval): tabelas `qualidade_fontes`/`qualidade_sinais`, coleta fatiada por cursor
+  (Hobby: 1 cron, orçamento 70 s), adaptadores por plataforma de participação (5 famílias).
 
 ## 🔴 FASE 39 (05/out/2026) — datas, depois votos (o cadastro está FECHADO)
 
