@@ -4,8 +4,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa",
   "arquivo": "fonte/ana/web/govbr_reuniao_deliberativa.html",
   "http": "200",
-  "bytes": 208768,
-  "sha256": "97cb5046ec024317bc02d5e9ecbe5b5c72e2525ef2762eb54e5c80de8167d778",
+  "bytes": 208774,
+  "sha256": "3250a8c04dc1686c2d811d9201f61a6c784a21543c9f32815942e9c0649b4d5a",
   "ok": true
  },
  "web:govbr_calendario": {
@@ -31,8 +31,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/pautas-das-reunioes-deliberativas",
   "arquivo": "fonte/ana/web/govbr_pautas.html",
   "http": "200",
-  "bytes": 209286,
-  "sha256": "a029a3e01899c3bb06cfc0f7c78a73b5299040404214267ab9205d6fcb2ab932",
+  "bytes": 209292,
+  "sha256": "13e8e169b4e6fb611b6669a00864045be986f1bdd3a09f1985cce3c07d61e18e",
   "ok": true
  },
  "web:govbr_circuitos": {
@@ -40,8 +40,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/circuitos-deliberativos",
   "arquivo": "fonte/ana/web/govbr_circuitos.html",
   "http": "200",
-  "bytes": 201071,
-  "sha256": "09f387039521787a95923be9fc815e51956798f6af809453725a67eabfefff02",
+  "bytes": 201065,
+  "sha256": "b5db0226d4ea0bb887f639ae6769a34f03859c05c09db0a736857b206f2264f0",
   "ok": true
  },
  "web:govbr_circuitos_atas": {
@@ -86,7 +86,7 @@
   "arquivo": "fonte/ana/web/www2_atas_deliberativas.html",
   "http": "200",
   "bytes": 201355,
-  "sha256": "88105bc79b040fe5ac01bfbb463700e071f932115e97d9a3fb823ab8cefdf4b2",
+  "sha256": "5d7099ad12d6de2a830ff30ef39f0b8c6c1585674c2acc5f698ad37a50655527",
   "ok": true
  },
  "web:www2_pautas_deliberativas": {
@@ -95,7 +95,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html",
   "http": "200",
   "bytes": 204476,
-  "sha256": "d14b0a508285460ec7d37d33a03c21d89f2d89f902c5a2645d4b9b12c6b3f3b6",
+  "sha256": "e0a958cd53952a1999b348dfd7a50fe493ccfe65b12b601d26b87368742e2351",
   "ok": true
  },
  "web:www2_atas_administrativas": {
@@ -104,7 +104,7 @@
   "arquivo": "fonte/ana/web/www2_atas_administrativas.html",
   "http": "200",
   "bytes": 61060,
-  "sha256": "91828a77a7e959012da9c02a5755bbd33898231653339f89b359227c3e38935b",
+  "sha256": "472170f9930a570c82b957dc2798dab3c5d89454415f649a7becaca98e73339f",
   "ok": true
  },
  "web:www2_pautas_administrativas": {
@@ -113,7 +113,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_administrativas.html",
   "http": "200",
   "bytes": 60955,
-  "sha256": "0191c85099e9372af4f08197da9e6949f0ad35eb358c4c64b6af618251799a5b",
+  "sha256": "a5059b047036002dc19d92fd72574365ac34816a06bbdd9b10e05a27fab3e193",
   "ok": true
  },
  "pdf:ata:949": {
