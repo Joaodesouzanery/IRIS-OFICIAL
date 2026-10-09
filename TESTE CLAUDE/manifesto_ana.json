@@ -13,8 +13,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/calendario-das-reunioes-deliberativas",
   "arquivo": "fonte/ana/web/govbr_calendario.html",
   "http": "200",
-  "bytes": 205157,
-  "sha256": "194f382817ad00327bb688ee6e948ed96b0c0e6ec797ac3c4bec1fcd2034bb6d",
+  "bytes": 205151,
+  "sha256": "06408e007d44e53b3848113806f400448c7bd8238174478ec274c88ea25ac726",
   "ok": true
  },
  "web:govbr_atas": {
@@ -49,8 +49,8 @@
   "url": "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/circuitos-deliberativos/atas-dos-circuitos-deliberativos",
   "arquivo": "fonte/ana/web/govbr_circuitos_atas.html",
   "http": "200",
-  "bytes": 190888,
-  "sha256": "5036f3375353923a26064334aa264f9b1e4eed9bf66581db01b1a36ecf88bc5c",
+  "bytes": 190882,
+  "sha256": "8157923ea8f3670a9789ffe84efcd01f595b4e66b747df647b7aaef4a9388f8e",
   "ok": true
  },
  "web:govbr_diretoria": {
@@ -86,7 +86,7 @@
   "arquivo": "fonte/ana/web/www2_atas_deliberativas.html",
   "http": "200",
   "bytes": 201355,
-  "sha256": "5d7099ad12d6de2a830ff30ef39f0b8c6c1585674c2acc5f698ad37a50655527",
+  "sha256": "6fe892892aac09d635703e777fb0be277124b369ed6f3ad126a3672e3a9e17bb",
   "ok": true
  },
  "web:www2_pautas_deliberativas": {
@@ -95,7 +95,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_deliberativas.html",
   "http": "200",
   "bytes": 204476,
-  "sha256": "e0a958cd53952a1999b348dfd7a50fe493ccfe65b12b601d26b87368742e2351",
+  "sha256": "4e1beeddb0a1c03c7980660023883c4ee501042ec86a6ac557929aa6819cf9d6",
   "ok": true
  },
  "web:www2_atas_administrativas": {
@@ -104,7 +104,7 @@
   "arquivo": "fonte/ana/web/www2_atas_administrativas.html",
   "http": "200",
   "bytes": 61060,
-  "sha256": "472170f9930a570c82b957dc2798dab3c5d89454415f649a7becaca98e73339f",
+  "sha256": "5925002208ca0e0e6b1ffc31dbb9d1666ef4cc60994c79169082ba43021ad3a9",
   "ok": true
  },
  "web:www2_pautas_administrativas": {
@@ -113,7 +113,7 @@
   "arquivo": "fonte/ana/web/www2_pautas_administrativas.html",
   "http": "200",
   "bytes": 60955,
-  "sha256": "a5059b047036002dc19d92fd72574365ac34816a06bbdd9b10e05a27fab3e193",
+  "sha256": "243c770b73c2b4743bd282405736a081d8c976baa1c4faf901286279f77f822d",
   "ok": true
  },
  "pdf:ata:949": {

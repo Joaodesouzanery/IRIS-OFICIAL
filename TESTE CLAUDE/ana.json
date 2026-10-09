@@ -4187,7 +4187,7 @@
    "Texto integral dos Votos (Voto nº X/2026/DIREC)",
    null,
    "Documento do voto não publicado nas listagens",
-   "46 deliberações citam o Voto (nº/ano/unidade e SEI) e transcrevem o parágrafo final do voto na ata; nenhuma das listagens (www2 atas/pautas, circuitos, gov.br) publica o PDF do voto, nem os PDFs de ata/pauta o anexam",
+   "46 deliberações citam o Voto (nº/ano/unidade e SEI) e transcrevem o parágrafo final do voto na ata; nenhuma das listagens (www2 atas/pautas, circuitos, gov.br) publica o PDF do voto, nem os PDFs de ata/pauta o anexam; busca refeita em 2026-10-09: arquivos.ana.gov.br/votos/ e /votos/2026/voto-N-2026-direc.pdf = 404, busca do portal gov.br e busca web sem resultado, SEI da ANA (sei/super.sei.ana.gov.br) inacessível no egress (CONNECT recusado)",
    "Fonte não publica os votos (ficam no SEI)",
    "Pedir à ANA via LAI/Fala.BR os Votos citados (SEI nº na coluna voto_doc); só então haveria voto individual além do relator",
    "https://www.gov.br/ana/pt-br/acesso-a-informacao/institucional/reuniao-deliberativa/atas-das-reunioes-deliberativas"

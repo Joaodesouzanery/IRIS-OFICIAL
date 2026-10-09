@@ -49873,7 +49873,7 @@
    20,
    16,
    "OK",
-   "4 anexos são PowerPoint (não lidos, ver pendências); 13 votos escritos nomeiam/identificam o diretor signatário"
+   "4 anexos são PowerPoint (4 lidos com python-pptx: 27 slides; nenhum cita relator, diretor nominal ou voto); 13 votos escritos nomeiam/identificam o diretor signatário"
   ],
   [
    "ANS",
@@ -50700,7 +50700,7 @@
    "Reunião 10ª Reunião Extraordinária da Diretoria Colegiada da ANS (03/09/2026): pauta, resultado e ata",
    "2026-09-03",
    "fora da lista oficial do DICOL",
-   "reunião comprovada por ata citada em pauta/aviso posterior, mas ausente da lista oficial 2026 do DICOL (que traz só as extraordinárias 1ª a 8ª) e da varredura de IDs; nenhum documento próprio: sem itens e sem votos",
+   "reunião comprovada por ata citada em pauta/aviso posterior; anúncio oficial gov.br (sem pauta nem resultado) confirma a reunião: https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026, mas ausente da lista oficial 2026 do DICOL (que traz só as extraordinárias 1ª a 8ª) e da varredura de IDs; nenhum documento próprio: sem itens e sem votos",
    "o módulo DICOL ainda não cadastrou esta reunião (ou ela foi realizada em sessão não publicada)",
    "Rodar scripts/ans_rodar.sh quando constar na lista; ou pedir à SECEX/CGADC",
    "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=getSelectReunioesAjax&ano=2026"
@@ -50734,16 +50734,6 @@
    "app Mendix exige sessão do navegador",
    "Se a ANS migrar o DICOL para o Mendix, reescrever o inventário (hoje cobre o legado)",
    "https://componentes-portal.ans.gov.br/link/listadicol"
-  ],
-  [
-   "ANS",
-   "4 apresentações em PowerPoint anexas a itens (632ª e 2ª/3ª extraordinárias)",
-   "2026-02-13",
-   "formato não lido (PPTX)",
-   "632_92413; X02_92422; X02_92423; X03_92435: slides de apoio da DIOPE/DIPRO; não alteram resultado nem voto",
-   "formato .pptx fora do pipeline de PDF",
-   "Converter e ler se a apresentação interessar",
-   "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=anexo/92413___Apresenta%C3%A7%C3%A3o%20DIOPE%20-%20632%C2%AA%20DICOL%20-%2033910.057923_2025-96.pptx"
   ]
  ],
  "nao_feito": [

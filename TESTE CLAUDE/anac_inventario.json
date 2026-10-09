@@ -1,667 +1,1377 @@
 {
  "ano": 2026,
+ "gerado_em": "2026-10-09 03:21",
  "fontes": [
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026",
-   "arquivo": "g_pres2026.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026",
-   "arquivo": "g_ele2026.html",
-   "status": "http404"
-  },
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas",
    "arquivo": "g_pres.html",
-   "status": "ok"
+   "status": "cache"
   },
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas",
    "arquivo": "g_ele.html",
-   "status": "ok"
+   "status": "cache"
   },
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/calendarios-das-reunioes/calendario-de-reunioes",
    "arquivo": "g_cal.html",
-   "status": "ok"
+   "status": "cache"
   },
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/diretoria-colegiada",
    "arquivo": "g_dir.html",
-   "status": "ok"
+   "status": "cache"
   },
   {
    "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-da-diretoria-colegiada",
    "arquivo": "g_rdc.html",
-   "status": "ok"
+   "status": "cache"
   },
   {
    "url": "https://departamental.anac.gov.br/menu/f?p=107101:137",
    "arquivo": "apex_presenciais_2026.html",
-   "status": "bloqueado"
+   "status": "cache"
   },
   {
    "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026",
    "arquivo": "apex_eletronicas_2026.html",
-   "status": "bloqueado"
+   "status": "cache"
   },
   {
    "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias/2025/portaria-18366",
    "arquivo": "apex_calendario_portaria_18366.html",
-   "status": "bloqueado"
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/1a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_1.html",
-   "status": "http404"
+   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2026",
+   "arquivo": "ctl_pres_2026.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/1a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_1.html",
-   "status": "http404"
+   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137:0:::137:P137_ANO:2025",
+   "arquivo": "ctl_pres_2025.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/2a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_2.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2025",
+   "arquivo": "ctl_ele_2025.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/2a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_2.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4856",
+   "arquivo": "reu/4856.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/3a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_3.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
+   "arquivo": "pauta/4856.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/3a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_3.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4836",
+   "arquivo": "reu/4836.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/4a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_4.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
+   "arquivo": "pauta/4836.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/4a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_4.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4835",
+   "arquivo": "reu/4835.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/5a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_5.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
+   "arquivo": "pauta/4835.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/5a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_5.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4852",
+   "arquivo": "reu/4852.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/6a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_6.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4852",
+   "arquivo": "pauta/4852.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/6a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_6.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4830",
+   "arquivo": "reu/4830.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/7a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_7.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4830",
+   "arquivo": "pauta/4830.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/7a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_7.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4847",
+   "arquivo": "reu/4847.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/8a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_8.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4847",
+   "arquivo": "pauta/4847.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/8a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_8.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4828",
+   "arquivo": "reu/4828.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/9a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_9.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4828",
+   "arquivo": "pauta/4828.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/9a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_9.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6367",
+   "arquivo": "reu/6367.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/10a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_10.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
+   "arquivo": "pauta/6367.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/10a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_10.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6327",
+   "arquivo": "reu/6327.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/11a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_11.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
+   "arquivo": "pauta/6327.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/11a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_11.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6307",
+   "arquivo": "reu/6307.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/12a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_12.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
+   "arquivo": "pauta/6307.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/12a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_12.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6247",
+   "arquivo": "reu/6247.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/13a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_13.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6247",
+   "arquivo": "pauta/6247.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/13a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_13.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6187",
+   "arquivo": "reu/6187.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/14a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_14.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6187",
+   "arquivo": "pauta/6187.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/14a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_14.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6167",
+   "arquivo": "reu/6167.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/15a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_15.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6167",
+   "arquivo": "pauta/6167.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/15a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_15.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6207",
+   "arquivo": "reu/6207.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/16a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_16.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
+   "arquivo": "pauta/6207.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/16a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_16.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6128",
+   "arquivo": "reu/6128.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/17a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_17.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6128",
+   "arquivo": "pauta/6128.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/17a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_17.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6087",
+   "arquivo": "reu/6087.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/18a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_18.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6087",
+   "arquivo": "pauta/6087.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/18a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_18.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6047",
+   "arquivo": "reu/6047.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/19a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_19.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6047",
+   "arquivo": "pauta/6047.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/19a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_19.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6007",
+   "arquivo": "reu/6007.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/20a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_20.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6007",
+   "arquivo": "pauta/6007.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/20a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_20.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5967",
+   "arquivo": "reu/5967.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/21a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_21.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5967",
+   "arquivo": "pauta/5967.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/21a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_21.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5947",
+   "arquivo": "reu/5947.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/22a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_22.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5947",
+   "arquivo": "pauta/5947.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/22a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_22.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5807",
+   "arquivo": "reu/5807.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/23a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_23.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5807",
+   "arquivo": "pauta/5807.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/23a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_23.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5767",
+   "arquivo": "reu/5767.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/24a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_24.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5767",
+   "arquivo": "pauta/5767.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/24a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_24.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5727",
+   "arquivo": "reu/5727.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/25a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_25.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5727",
+   "arquivo": "pauta/5727.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/25a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_25.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5687",
+   "arquivo": "reu/5687.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/26a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_26.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5687",
+   "arquivo": "pauta/5687.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/26a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_26.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5587",
+   "arquivo": "reu/5587.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/27a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_27.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5587",
+   "arquivo": "pauta/5587.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/27a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_27.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5547",
+   "arquivo": "reu/5547.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/28a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_28.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5547",
+   "arquivo": "pauta/5547.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/28a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_28.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5507",
+   "arquivo": "reu/5507.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/29a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_29.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5507",
+   "arquivo": "pauta/5507.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/29a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_29.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5447",
+   "arquivo": "reu/5447.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/30a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_30.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5447",
+   "arquivo": "pauta/5447.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/30a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_30.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5347",
+   "arquivo": "reu/5347.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/31a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_31.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5347",
+   "arquivo": "pauta/5347.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/31a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_31.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5247",
+   "arquivo": "reu/5247.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/32a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_32.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5247",
+   "arquivo": "pauta/5247.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/32a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_32.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5287",
+   "arquivo": "reu/5287.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/33a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_33.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5287",
+   "arquivo": "pauta/5287.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/33a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_33.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5187",
+   "arquivo": "reu/5187.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/34a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_34.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5187",
+   "arquivo": "pauta/5187.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/34a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_34.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5147",
+   "arquivo": "reu/5147.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/35a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_35.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5147",
+   "arquivo": "pauta/5147.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/35a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_35.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5107",
+   "arquivo": "reu/5107.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/36a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_36.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5107",
+   "arquivo": "pauta/5107.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/36a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_36.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5067",
+   "arquivo": "reu/5067.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/37a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_37.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5067",
+   "arquivo": "pauta/5067.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/37a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_37.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5047",
+   "arquivo": "reu/5047.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/38a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_38.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5047",
+   "arquivo": "pauta/5047.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/38a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_38.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5007",
+   "arquivo": "reu/5007.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/39a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_39.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5007",
+   "arquivo": "pauta/5007.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/39a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_39.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4987",
+   "arquivo": "reu/4987.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/40a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_40.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4987",
+   "arquivo": "pauta/4987.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/40a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_40.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4947",
+   "arquivo": "reu/4947.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/41a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_41.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4947",
+   "arquivo": "pauta/4947.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/41a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_41.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4927",
+   "arquivo": "reu/4927.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/42a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_42.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4927",
+   "arquivo": "pauta/4927.html",
+   "status": "ok"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/42a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_42.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4710",
+   "arquivo": "reu/4710.html",
+   "status": "cache"
   },
   {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/43a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_43.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/43a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_43.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/44a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_44.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/44a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_44.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/45a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_45.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/45a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_45.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/46a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_46.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/46a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_46.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/47a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_47.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/47a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_47.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/48a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_48.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/48a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_48.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/49a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_49.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/49a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_49.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/50a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_50.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/50a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_50.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/51a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_51.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/51a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_51.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/52a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_52.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/52a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_52.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/53a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_53.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/53a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_53.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/54a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_54.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/54a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_54.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/55a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_55.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/55a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_55.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/56a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_56.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/56a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_56.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/57a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_57.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/57a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_57.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/58a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_58.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/58a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_58.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/59a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_59.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/59a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_59.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/60a-reuniao-deliberativa-da-diretoria-colegiada",
-   "arquivo": "p2026_60.html",
-   "status": "http404"
-  },
-  {
-   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/60a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
-   "arquivo": "e2026_60.html",
-   "status": "http404"
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4710",
+   "arquivo": "pauta/4710.html",
+   "status": "ok"
   }
  ],
- "reunioes_2026_gov_br": [],
+ "reunioes_2026": [
+  {
+   "reuniao": "RD7",
+   "id_apex": "4856",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 7,
+   "titulo": "7ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "06/10/2026",
+   "datas": [
+    "2026-10-06"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4856",
+   "arquivo": "reu/4856.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4856",
+   "arquivo_pauta": "pauta/4856.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD6",
+   "id_apex": "4836",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 6,
+   "titulo": "6ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "22/09/2026",
+   "datas": [
+    "2026-09-22"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4836",
+   "arquivo": "reu/4836.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4836",
+   "arquivo_pauta": "pauta/4836.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD5",
+   "id_apex": "4835",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 5,
+   "titulo": "5ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "17/08/2026",
+   "datas": [
+    "2026-08-17"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4835",
+   "arquivo": "reu/4835.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4835",
+   "arquivo_pauta": "pauta/4835.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD4",
+   "id_apex": "4852",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 4,
+   "titulo": "4ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "12/06/2026",
+   "datas": [
+    "2026-06-12"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4852",
+   "arquivo": "reu/4852.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4852",
+   "arquivo_pauta": "pauta/4852.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD3",
+   "id_apex": "4830",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 3,
+   "titulo": "3ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "02/04/2026",
+   "datas": [
+    "2026-04-02"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4830",
+   "arquivo": "reu/4830.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4830",
+   "arquivo_pauta": "pauta/4830.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD2",
+   "id_apex": "4847",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 2,
+   "titulo": "2ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "06/03/2026",
+   "datas": [
+    "2026-03-06"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4847",
+   "arquivo": "reu/4847.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4847",
+   "arquivo_pauta": "pauta/4847.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RD1",
+   "id_apex": "4828",
+   "tipo": "presencial",
+   "extraordinaria": false,
+   "n": 1,
+   "titulo": "1ª Reunião Deliberativa da Diretoria Colegiada",
+   "realizacao": "20/01/2026",
+   "datas": [
+    "2026-01-20"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4828",
+   "arquivo": "reu/4828.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4828",
+   "arquivo_pauta": "pauta/4828.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE32",
+   "id_apex": "6367",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 32,
+   "titulo": "32ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "13 e 16/10/2026",
+   "datas": [
+    "2026-10-13",
+    "2026-10-16"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6367",
+   "arquivo": "reu/6367.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6367",
+   "arquivo_pauta": "pauta/6367.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE31",
+   "id_apex": "6327",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 31,
+   "titulo": "31ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "06 e 09/10/2026",
+   "datas": [
+    "2026-10-06",
+    "2026-10-09"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6327",
+   "arquivo": "reu/6327.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6327",
+   "arquivo_pauta": "pauta/6327.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE30",
+   "id_apex": "6307",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 30,
+   "titulo": "30ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "22 e 25/09/2026",
+   "datas": [
+    "2026-09-22",
+    "2026-09-25"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6307",
+   "arquivo": "reu/6307.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6307",
+   "arquivo_pauta": "pauta/6307.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE29",
+   "id_apex": "6247",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 29,
+   "titulo": "29ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "15 e 18/09/2026",
+   "datas": [
+    "2026-09-15",
+    "2026-09-18"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6247",
+   "arquivo": "reu/6247.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6247",
+   "arquivo_pauta": "pauta/6247.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE28",
+   "id_apex": "6187",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 28,
+   "titulo": "28ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "08 e 11/09/2026",
+   "datas": [
+    "2026-09-08",
+    "2026-09-11"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6187",
+   "arquivo": "reu/6187.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6187",
+   "arquivo_pauta": "pauta/6187.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE27",
+   "id_apex": "6167",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 27,
+   "titulo": "27ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "01 e 04/09/2026",
+   "datas": [
+    "2026-09-01",
+    "2026-09-04"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6167",
+   "arquivo": "reu/6167.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6167",
+   "arquivo_pauta": "pauta/6167.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "REX2",
+   "id_apex": "6207",
+   "tipo": "eletronica",
+   "extraordinaria": true,
+   "n": 2,
+   "titulo": "2ª Reunião Deliberativa Eletrônica Extraordinária da Diretoria Colegiada",
+   "realizacao": "31/08/2026",
+   "datas": [
+    "2026-08-31"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6207",
+   "arquivo": "reu/6207.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6207",
+   "arquivo_pauta": "pauta/6207.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE26",
+   "id_apex": "6128",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 26,
+   "titulo": "26ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "25 e 28/08/2026",
+   "datas": [
+    "2026-08-25",
+    "2026-08-28"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6128",
+   "arquivo": "reu/6128.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6128",
+   "arquivo_pauta": "pauta/6128.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE25",
+   "id_apex": "6087",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 25,
+   "titulo": "25ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "18 e 21/08/2026",
+   "datas": [
+    "2026-08-18",
+    "2026-08-21"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6087",
+   "arquivo": "reu/6087.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6087",
+   "arquivo_pauta": "pauta/6087.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE24",
+   "id_apex": "6047",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 24,
+   "titulo": "24ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "11 e 14/08/2026",
+   "datas": [
+    "2026-08-11",
+    "2026-08-14"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6047",
+   "arquivo": "reu/6047.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6047",
+   "arquivo_pauta": "pauta/6047.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE23",
+   "id_apex": "6007",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 23,
+   "titulo": "23ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "04 e 07/08/2026",
+   "datas": [
+    "2026-08-04",
+    "2026-08-07"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:6007",
+   "arquivo": "reu/6007.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:6007",
+   "arquivo_pauta": "pauta/6007.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE22",
+   "id_apex": "5967",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 22,
+   "titulo": "22ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "28 e 31/07/2026",
+   "datas": [
+    "2026-07-28",
+    "2026-07-31"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5967",
+   "arquivo": "reu/5967.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5967",
+   "arquivo_pauta": "pauta/5967.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE21",
+   "id_apex": "5947",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 21,
+   "titulo": "21ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "21 e 24/07/2026",
+   "datas": [
+    "2026-07-21",
+    "2026-07-24"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5947",
+   "arquivo": "reu/5947.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5947",
+   "arquivo_pauta": "pauta/5947.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE20",
+   "id_apex": "5807",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 20,
+   "titulo": "20ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "14 e 17/07/2026",
+   "datas": [
+    "2026-07-14",
+    "2026-07-17"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5807",
+   "arquivo": "reu/5807.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5807",
+   "arquivo_pauta": "pauta/5807.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE19",
+   "id_apex": "5767",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 19,
+   "titulo": "19ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "07 e 10/07/2026",
+   "datas": [
+    "2026-07-07",
+    "2026-07-10"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5767",
+   "arquivo": "reu/5767.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5767",
+   "arquivo_pauta": "pauta/5767.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE18",
+   "id_apex": "5727",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 18,
+   "titulo": "18ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "30/06 e 03/07/2026",
+   "datas": [
+    "2026-06-30",
+    "2026-07-03"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5727",
+   "arquivo": "reu/5727.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5727",
+   "arquivo_pauta": "pauta/5727.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE17",
+   "id_apex": "5687",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 17,
+   "titulo": "17ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "24 e 26/06/2026",
+   "datas": [
+    "2026-06-24",
+    "2026-06-26"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5687",
+   "arquivo": "reu/5687.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5687",
+   "arquivo_pauta": "pauta/5687.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE16",
+   "id_apex": "5587",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 16,
+   "titulo": "16ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "16 e 19/06/2026",
+   "datas": [
+    "2026-06-16",
+    "2026-06-19"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5587",
+   "arquivo": "reu/5587.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5587",
+   "arquivo_pauta": "pauta/5587.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE15",
+   "id_apex": "5547",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 15,
+   "titulo": "15ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "02 e 03/06/2026",
+   "datas": [
+    "2026-06-02",
+    "2026-06-03"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5547",
+   "arquivo": "reu/5547.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5547",
+   "arquivo_pauta": "pauta/5547.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE14",
+   "id_apex": "5507",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 14,
+   "titulo": "14ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "26 e 29/05/2026",
+   "datas": [
+    "2026-05-26",
+    "2026-05-29"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5507",
+   "arquivo": "reu/5507.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5507",
+   "arquivo_pauta": "pauta/5507.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE13",
+   "id_apex": "5447",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 13,
+   "titulo": "13ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "19 e 22/05/2026",
+   "datas": [
+    "2026-05-19",
+    "2026-05-22"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5447",
+   "arquivo": "reu/5447.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5447",
+   "arquivo_pauta": "pauta/5447.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE12",
+   "id_apex": "5347",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 12,
+   "titulo": "12ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "12 e 15/05/2026",
+   "datas": [
+    "2026-05-12",
+    "2026-05-15"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5347",
+   "arquivo": "reu/5347.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5347",
+   "arquivo_pauta": "pauta/5347.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE11",
+   "id_apex": "5247",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 11,
+   "titulo": "11ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "29 e 30/04/2026",
+   "datas": [
+    "2026-04-29",
+    "2026-04-30"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5247",
+   "arquivo": "reu/5247.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5247",
+   "arquivo_pauta": "pauta/5247.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "REX1",
+   "id_apex": "5287",
+   "tipo": "eletronica",
+   "extraordinaria": true,
+   "n": 1,
+   "titulo": "1ª Reunião Deliberativa Eletrônica Extraordinária da Diretoria Colegiada",
+   "realizacao": "06/04/2026",
+   "datas": [
+    "2026-04-06"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5287",
+   "arquivo": "reu/5287.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5287",
+   "arquivo_pauta": "pauta/5287.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE10",
+   "id_apex": "5187",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 10,
+   "titulo": "10ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "24 e 27/03/2026",
+   "datas": [
+    "2026-03-24",
+    "2026-03-27"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5187",
+   "arquivo": "reu/5187.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5187",
+   "arquivo_pauta": "pauta/5187.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE9",
+   "id_apex": "5147",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 9,
+   "titulo": "9ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "11 e 13/03/2026",
+   "datas": [
+    "2026-03-11",
+    "2026-03-13"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5147",
+   "arquivo": "reu/5147.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5147",
+   "arquivo_pauta": "pauta/5147.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE8",
+   "id_apex": "5107",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 8,
+   "titulo": "8ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "03 e 06/03/2026",
+   "datas": [
+    "2026-03-03",
+    "2026-03-06"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5107",
+   "arquivo": "reu/5107.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5107",
+   "arquivo_pauta": "pauta/5107.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE7",
+   "id_apex": "5067",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 7,
+   "titulo": "7ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "19 e 20/02/2026",
+   "datas": [
+    "2026-02-19",
+    "2026-02-20"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5067",
+   "arquivo": "reu/5067.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5067",
+   "arquivo_pauta": "pauta/5067.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE6",
+   "id_apex": "5047",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 6,
+   "titulo": "6ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "10 e 13/02/2026",
+   "datas": [
+    "2026-02-10",
+    "2026-02-13"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5047",
+   "arquivo": "reu/5047.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5047",
+   "arquivo_pauta": "pauta/5047.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE5",
+   "id_apex": "5007",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 5,
+   "titulo": "5ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "03 e 06/02/2026",
+   "datas": [
+    "2026-02-03",
+    "2026-02-06"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:5007",
+   "arquivo": "reu/5007.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:5007",
+   "arquivo_pauta": "pauta/5007.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE4",
+   "id_apex": "4987",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 4,
+   "titulo": "4ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "27 e 30/01/2026",
+   "datas": [
+    "2026-01-27",
+    "2026-01-30"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4987",
+   "arquivo": "reu/4987.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4987",
+   "arquivo_pauta": "pauta/4987.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE3",
+   "id_apex": "4947",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 3,
+   "titulo": "3ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "22 e 23/01/2026",
+   "datas": [
+    "2026-01-22",
+    "2026-01-23"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4947",
+   "arquivo": "reu/4947.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4947",
+   "arquivo_pauta": "pauta/4947.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE2",
+   "id_apex": "4927",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 2,
+   "titulo": "2ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "13 e 14/01/2026",
+   "datas": [
+    "2026-01-13",
+    "2026-01-14"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4927",
+   "arquivo": "reu/4927.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4927",
+   "arquivo_pauta": "pauta/4927.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  },
+  {
+   "reuniao": "RE1",
+   "id_apex": "4710",
+   "tipo": "eletronica",
+   "extraordinaria": false,
+   "n": 1,
+   "titulo": "1ª Reunião Deliberativa Eletrônica da Diretoria Colegiada",
+   "realizacao": "06 e 07/01/2026",
+   "datas": [
+    "2026-01-06",
+    "2026-01-07"
+   ],
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:139:0:::139:P139_ID_REUNIAO_DIRETORIA:4710",
+   "arquivo": "reu/4710.html",
+   "url_pauta": "https://santosdumont.anac.gov.br/menu/f?p=107101:141:0:::141:P141_ID_REUNIAO_DIRETORIA:4710",
+   "arquivo_pauta": "pauta/4710.html",
+   "status": "cache",
+   "status_pauta": "ok"
+  }
+ ],
  "contadores": {
-  "oficial_apex_presenciais": null,
-  "oficial_apex_eletronicas": null,
-  "calendario_portaria_18366": null,
-  "listadas_gov_br_2026": 0
+  "listadas_apex_presenciais": 7,
+  "listadas_apex_eletronicas": 34,
+  "listadas_apex_total": 41,
+  "paginas_reuniao_baixadas": 41,
+  "pautas_baixadas": 41,
+  "calendario_portaria_18366_ano": 24,
+  "calendario_ate_hoje": 19,
+  "calendario_ate_hoje_com_reuniao_na_data": 3,
+  "presenciais_realizadas_fora_do_calendario": [
+   "2026-03-06",
+   "2026-04-02",
+   "2026-06-12",
+   "2026-08-17"
+  ],
+  "oficial_contador_exibido": null
+ },
+ "calendario": {
+  "datas": [
+   "2026-01-20",
+   "2026-02-03",
+   "2026-02-24",
+   "2026-03-10",
+   "2026-03-24",
+   "2026-04-07",
+   "2026-04-22",
+   "2026-05-05",
+   "2026-05-19",
+   "2026-06-02",
+   "2026-06-16",
+   "2026-06-30",
+   "2026-07-14",
+   "2026-07-28",
+   "2026-08-11",
+   "2026-08-25",
+   "2026-09-08",
+   "2026-09-22",
+   "2026-10-06",
+   "2026-10-20",
+   "2026-11-03",
+   "2026-11-17",
+   "2026-12-01",
+   "2026-12-15"
+  ],
+  "hoje": "2026-10-09",
+  "sem_reuniao_na_data": [
+   "2026-02-03",
+   "2026-02-24",
+   "2026-03-10",
+   "2026-03-24",
+   "2026-04-07",
+   "2026-04-22",
+   "2026-05-05",
+   "2026-05-19",
+   "2026-06-02",
+   "2026-06-16",
+   "2026-06-30",
+   "2026-07-14",
+   "2026-07-28",
+   "2026-08-11",
+   "2026-08-25",
+   "2026-09-08"
+  ]
+ },
+ "numeracao": {
+  "presenciais": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "buracos_presenciais": [],
+  "eletronicas": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32
+  ],
+  "buracos_eletronicas": [],
+  "extraordinarias_eletronicas": [
+   1,
+   2
+  ],
+  "buracos_extra": []
+ },
+ "paginacao": {
+  "marcadores_de_paginacao_na_pagina": {
+   "presenciais": [],
+   "eletronicas": []
+  },
+  "controle_lista_inteira_do_ano": {
+   "pres_2026_param": 7,
+   "pres_2025": 15,
+   "ele_2025": 41
+  },
+  "conclusao": "regiao HTML unica sem paginador; o indice devolve o ano inteiro (2025: 15 presenciais e 41 eletronicas na mesma pagina)"
  },
  "acesso": {
-  "govbr_html_via_chromium": "ok",
-  "govbr_pastas_2026": "http404",
-  "apex_2026": "bloqueado pelo egress (403 CONNECT)"
+  "apex_2026": "ok",
+  "calendario": "ok",
+  "sei.anac.gov.br": "bloqueado pelo egress (CONNECT 403): atas, votos, certidoes, relatorios",
+  "pergamum.anac.gov.br": "bloqueado pelo egress (CONNECT 403)"
  }
 }
