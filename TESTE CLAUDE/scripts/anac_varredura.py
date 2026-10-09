@@ -56,16 +56,69 @@ for d in J['deliberacoes']: dj[d['reuniao']].append(d)
 rj = {r['reuniao']: r for r in J['reunioes']}
 vj = collections.defaultdict(list)
 for v in J['votos']: vj[(v['reuniao'], v['processo'], v['deliberacao'])].append(v)
+MANIF = json.load(open(MAN)); TXT = os.path.join(os.path.dirname(os.path.abspath(DIR.rstrip('/'))), 'texto_anac') if False else 'texto_anac'
+def texto_de(e): 
+    f = os.path.join(TXT, str(e.get('id')) + '.txt'); return re.sub(r'\s+', ' ', rd(f)).replace('V erificado', 'Verificado') if e.get('texto') and os.path.exists(f) else ''
+ATA_T = {e['reuniao']: texto_de(e) for e in MANIF if e['tipo'] == 'documento (Ata)' and e.get('texto')}
+DOC_URL = {e['url']: e for e in MANIF if e['tipo'].startswith('documento')}
+def sobrenomes(trecho):
+    """quais membros (por sobrenome) aparecem num trecho de texto"""
+    t = nz(trecho); return {nome for sob, nome in SOBRE.items() if re.search(r'\b' + sob + r'\b', t)}
+SOBRE['pereira'] = 'Tiago Sousa Pereira'
+def presenca_ata(t):
+    """independente do parser: preâmbulo -> (presentes, ausentes). Presidente conta como presente."""
+    i = t.find('teve início'); j = t.find('Verificado', i); pre = t[i:j]
+    aus_m = re.search(r'ausentes?\s+justificadamente\s+(?:o|a|os|as)\s+Diretor\w*\s+([^.]+?)\s*\.', pre)
+    aus = sobrenomes(aus_m.group(1)) if aus_m else set()
+    corpo = pre[:aus_m.start()] if aus_m else pre
+    corpo = re.sub(r'Diretora? Substitut\w*', '', corpo)
+    return sobrenomes(corpo) - aus, aus
+def chunk_item(t, proc):
+    """trecho da ata do item: de 'Processo: <proc>' até o próximo item/relatoria/encerramento; devolve (chunk, voto_vista_antes)"""
+    k = t.find('Processo: ' + proc)
+    if k < 0: return '', ''
+    ant = t[max(0, k - 160):k]
+    rest = t[k:]; fim = re.search(r'\s\d+\s?\)\s*Processo:|Relatoria d[oa]|Em \d+ de \w+ de \d{4}, foi submetido|Na sequência|A reunião encerrou-se|Nada mais havendo', rest[20:])
+    return rest[:(fim.start() + 20) if fim else len(rest)], ant
+def cert_de(item_docs, rid):
+    """certidão ligada ao item (por link) e lida: (relator por sobrenome, modo, texto) ou None se for de outra reunião"""
+    for x in item_docs:
+        if x['rotulo'] == 'Certidão de deliberação':
+            e = DOC_URL.get(x['url']); 
+            if not e or not e.get('texto'): continue
+            c = texto_de(e); m = re.search(r'apreciação da matéria abaixo na (\d+)ª Reunião Deliberativa( Eletrônica)?( Extraordinária)?|pela Diretoria Colegiada na (\d+)ª Reunião Deliberativa( Eletrônica)?( Extraordinária)?', c)
+            if m:
+                g = [x_ for x_ in m.groups()]; num = g[0] or g[3]; ele = bool(g[1] or g[4])
+                if num != re.sub(r'\D', '', rid) or ele != rid.startswith('RE'): return None
+            mr = re.search(r'Relator (.+?) Deliberação (.*?)(?: Ato decorrente| À | Ao | Documento assinado)', c)
+            if mr: return (quem(mr.group(1)), mr.group(2), c)
+            return (None, c, c)
+    return None
 tot_it = tot_dec = tot_votos_esp = 0; paginas = 0; hoje = INV['calendario']['hoje']
-PRESIDX = {}
+n_pres_real = n_pres_inf = 0; cont_prov = collections.Counter()
 for r in J['reunioes']:
     pg = os.path.join(DIR, 'reu', r['id_apex'] + '.html')
     if not os.path.exists(pg): F('página da reunião existe', r['reuniao']); continue
     h = rd(pg); paginas += 1; its = itens_pagina(h)
     if len(its) != len(dj[r['reuniao']]): F('nº de itens por reunião', f"{r['reuniao']}: página {len(its)} × JSON {len(dj[r['reuniao']])}")
-    # datas: do índice
     real = apex[r['id_apex']][2].replace('Realização:', '').strip()
     if real not in r['titulo']: F('data/título da reunião', f"{r['reuniao']}: índice '{real}' não está em '{r['titulo']}'")
+    ds = apex[r['id_apex']][2].replace('Realização:', ''); mes_fim = int(re.search(r'/(\d{1,2})/\d{4}', ds).group(1)); dts = []
+    for p in re.split(r'\s+e\s+', re.sub(r'/\d{4}', '', ds).strip()):
+        mm = re.fullmatch(r'(\d{1,2})(?:/(\d{1,2}))?', p.strip())
+        if mm: dts.append(f'2026-{int(mm.group(2) or mes_fim):02d}-{int(mm.group(1)):02d}')
+    ata_t = ATA_T.get(r['reuniao']); decidida = any(a['delib'] for a in its)
+    # ---- presença: REAL (ata) ou janela (sem ata) ----
+    if decidida:
+        if ata_t:
+            pres_esp, aus_esp = presenca_ata(ata_t); n_pres_real += 1
+            if r.get('presenca') != 'real (ata)': F('presença marcada como real quando há ata', r['reuniao'])
+        else:
+            pres_esp = {n for n, (x, y) in JAN.items() if any(x <= dd <= y for dd in dts)} | {quem(a['relator']) for a in its if a['relator'] and quem(a['relator'])}; aus_esp = set(); n_pres_inf += 1
+            if r.get('presenca') != 'inferida': F('presença marcada como inferida quando não há ata', r['reuniao'])
+        if set(r['presentes']) != pres_esp: F('presentes = presença da ata/janela', f"{r['reuniao']}: JSON {sorted(r['presentes'])} × esperado {sorted(pres_esp)}")
+        if set(r['ausentes']) != aus_esp: F('ausentes = ausentes justificados da ata', f"{r['reuniao']}: JSON {sorted(r['ausentes'])} × esperado {sorted(aus_esp)}")
+    else: pres_esp, aus_esp = set(), set()
     for a, d in zip(its, dj[r['reuniao']]):
         tot_it += 1
         mproc = re.search(r'\d{5}\.\d{6}/\d{4}-\d{2}', a['proc'] or '')
@@ -81,62 +134,115 @@ for r in J['reunioes']:
             if vs: F('item sem desfecho não tem voto', f"{r['reuniao']}#{a['n']}: {len(vs)} votos")
             continue
         tot_dec += 1
-        # presentes esperados pelas janelas (código próprio)
-        ds = apex[r['id_apex']][2].replace('Realização:', '')
-        ano = 2026; mes_fim = int(re.search(r'/(\d{1,2})/\d{4}', ds).group(1)); dts = []
-        for p in re.split(r'\s+e\s+', re.sub(r'/\d{4}', '', ds).strip()):
-            mm = re.fullmatch(r'(\d{1,2})(?:/(\d{1,2}))?', p.strip())
-            if mm: dts.append(f'2026-{int(mm.group(2) or mes_fim):02d}-{int(mm.group(1)):02d}')
-        esp = {n for n, (x, y) in JAN.items() if any(x <= dd <= y for dd in dts)} | ({quem(a['relator'])} if a['relator'] else set())
+        rel = quem(a['relator']) if a['relator'] else None
+        esp = set(pres_esp) | aus_esp | ({rel} if rel else set())
         got = [v['diretor'] for v in vs]
         if len(got) != len(set(got)): F('voto duplicado', f"{r['reuniao']}#{a['n']}")
-        if set(got) != esp: F('votantes = colegiado em exercício na data', f"{r['reuniao']}#{a['n']}: JSON {sorted(set(got))} × esperado {sorted(esp)}")
-        if sorted(r['presentes']) != sorted(esp) and False: pass
+        if set(got) != esp: F('votantes = presentes + ausentes da reunião', f"{r['reuniao']}#{a['n']}: JSON {sorted(set(got))} × esperado {sorted(esp)}")
         tot_votos_esp += len(esp)
-        lo = txt.lower()
+        lo = txt.lower(); ch, ant = chunk_item(ata_t, d['processo']) if ata_t else ('', '')
+        if ata_t and not ch: F('item localizado na ata (por nº do processo)', f"{r['reuniao']}#{a['n']} {d['processo']}")
+        cert = cert_de(d['documentos'], r['reuniao'])
+        if cert:
+            if cert[0] and a['relator'] and cert[0] != quem(a['relator']): F('relator página = certidão', f"{r['reuniao']}#{a['n']}: {quem(a['relator'])} × {cert[0]}")
+            mc = 'unanimidade' if 'unanimidade' in cert[1].lower() else ('maioria' if 'maioria' in cert[1].lower() else '')
+            mp = 'unanimidade' if 'unanimidade' in lo else ('maioria' if 'maioria' in lo else '')
+            if mp and mc and mp != mc: F('modo página = certidão', f"{r['reuniao']}#{a['n']}: {mp} × {mc}")
+        # textos que valem para o item: página + ata + certidão
+        T = ' '.join(x for x in (lo, ch.lower(), (cert[1].lower() if cert else '')) if x)
+        vista_m = re.search(r'pedido de vista formulado pel[oa] diretor[a]? ([^.;]+)', ch, flags=re.I); vista_p = quem(vista_m.group(1)) if vista_m else None
+        imped = {quem(m.group(1)) for m in re.finditer(r'diretor[a]? ([\wÀ-ÿ ]+?) declarou-se imped', ch, flags=re.I)}
+        vv_m = re.search(r'Voto-Vista do Diretor[a]? ([\wÀ-ÿ ]+?):', ant + ' ' + ch[:0]); vv_p = quem(vv_m.group(1)) if vv_m else None
+        rel_venc = bool(re.search(r'vencido o relator', T))
+        relator_votou = 'o relator votou' in ch.lower()
+        tp = d['tipo_item']
         for v in vs:
-            L_, pv = v['voto'], v['proveniencia']
+            L_, pv, dn = v['voto'], v['proveniencia'], v['diretor']; cont_prov[(L_.split(' (')[0], pv)] += 1
             if pv not in ('nominal', 'inferido', 'REVISAR'): F('proveniência válida', f"{r['reuniao']}#{a['n']} {pv}")
             if not re.match(r'(ACOMPANHOU|DIVERGIU|RELATOR|AUSENTE|IMPEDIDO|SEM VOTO|PEDIU VISTA|VOTOU|NÃO PARTICIPOU|VISTA COLETIVA)', L_): F('rótulo de voto válido', f"{r['reuniao']}#{a['n']} {L_!r}")
-            if pv == 'REVISAR' and not v.get('motivo'): F('REVISAR tem motivo', f"{r['reuniao']}#{a['n']} {v['diretor']}")
-            is_rel = quem(a['relator'] or '') == v['diretor']
+            if pv == 'REVISAR': F('sem REVISAR', f"{r['reuniao']}#{a['n']} {dn}: {L_}")
+            if not v.get('motivo'): F('todo voto tem motivo', f"{r['reuniao']}#{a['n']} {dn}")
+            if dn in aus_esp:
+                if not (L_.startswith('AUSENTE') and pv == 'nominal'): F('ausente justificado => AUSENTE nominal', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+                continue
+            if L_.startswith('AUSENTE'): F('AUSENTE só para ausente justificado da ata', f"{r['reuniao']}#{a['n']} {dn}")
+            is_rel = (dn == rel)
+            if dn in imped:
+                if not (L_.startswith('IMPEDIDO') and pv == 'nominal'): F('impedido na ata => IMPEDIDO nominal', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+                continue
+            if L_.startswith('IMPEDIDO'): F('IMPEDIDO só com declaração na ata', f"{r['reuniao']}#{a['n']} {dn}")
+            if vista_p and dn == vista_p:
+                if not (L_.startswith('PEDIU VISTA') and pv == 'nominal'): F('pedido de vista da ata => PEDIU VISTA nominal', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+                continue
+            if L_.startswith('PEDIU VISTA') and dn != vista_p: F('PEDIU VISTA só para quem a ata nomeia', f"{r['reuniao']}#{a['n']} {dn}")
+            if tp == 'Vista':
+                if is_rel and not L_.startswith('RELATOR'): F('relator em vista => RELATOR', f"{r['reuniao']}#{a['n']} {L_}")
+                if is_rel and relator_votou and 'votou antes da vista' not in L_: F('relator votou antes da vista (ata)', f"{r['reuniao']}#{a['n']} {L_}")
+                if not is_rel and not L_.startswith(('SEM VOTO', 'PEDIU VISTA')): F('vista => demais sem voto de mérito', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+                continue
+            if is_rel and rel_venc:
+                if not (L_.startswith('DIVERGIU') and pv == 'nominal'): F('relator vencido (ata) => DIVERGIU nominal', f"{r['reuniao']}#{a['n']} {L_}")
+                continue
+            if vv_p and dn == vv_p and rel_venc:
+                if not (L_.startswith('VOTOU') and pv == 'nominal'): F('autor do voto-vista vencedor => VOTOU nominal', f"{r['reuniao']}#{a['n']} {L_}")
+                continue
             if is_rel and not L_.startswith('RELATOR'): F('relator vota como RELATOR', f"{r['reuniao']}#{a['n']} {L_}")
-            if L_.startswith('RELATOR') and not is_rel: F('RELATOR só para o relator', f"{r['reuniao']}#{a['n']} {v['diretor']}")
-            if L_.startswith('ACOMPANHOU') and not ('unanimidade' in lo or 'maioria' in lo): F('ACOMPANHOU só com unanimidade/maioria', f"{r['reuniao']}#{a['n']}")
-            if L_.startswith('ACOMPANHOU') and ('retirad' in lo or 'vista' in lo): F('ACOMPANHOU em retirada/vista', f"{r['reuniao']}#{a['n']}")
-            if 'unanimidade' in lo and not is_rel and 'retirad' not in lo and not L_.startswith('ACOMPANHOU'): F('unanimidade => ACOMPANHOU', f"{r['reuniao']}#{a['n']} {v['diretor']} {L_}")
-            if 'maioria' in lo and not re.search(r'venc|contr', lo) and not is_rel and pv != 'REVISAR' and not L_.startswith(('VOTOU', 'PEDIU')): F('maioria sem vencidos => REVISAR', f"{r['reuniao']}#{a['n']} {v['diretor']}")
-            if L_.startswith('DIVERGIU') and not re.search(r'venc|contr|diverg', lo): F('DIVERGIU exige nome no texto', f"{r['reuniao']}#{a['n']}")
-            if 'retirado de pauta' in lo and 'vista' not in lo and not (L_.startswith('RELATOR') or L_.startswith('SEM VOTO')): F('retirada => sem voto', f"{r['reuniao']}#{a['n']} {L_}")
-        tp = d['tipo_item']
+            if L_.startswith('RELATOR') and not is_rel: F('RELATOR só para o relator', f"{r['reuniao']}#{a['n']} {dn}")
+            if is_rel: continue
+            if tp == 'Retirada de pauta':
+                if not L_.startswith('SEM VOTO'): F('retirada => sem voto', f"{r['reuniao']}#{a['n']} {L_}")
+                continue
+            if 'unanimidade' in T and not rel_venc:
+                if not L_.startswith('ACOMPANHOU'): F('unanimidade => ACOMPANHOU', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+                if L_.startswith('ACOMPANHOU') and pv == 'nominal' and L_ == 'ACOMPANHOU': F('ACOMPANHOU simples por unanimidade é inferido', f"{r['reuniao']}#{a['n']} {dn}")
+            elif rel_venc:
+                if not (L_.startswith('ACOMPANHOU') and pv == 'inferido'): F('maioria com relator vencido => demais ACOMPANHOU inferido', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+            else: F('decisão sem modo reconhecido', f"{r['reuniao']}#{a['n']} {dn} {L_}")
+        if tp == 'Vista' and not vista_p and ata_t: F('vista com pedinte na ata', f"{r['reuniao']}#{a['n']}")
         if ('vista' in lo and tp != 'Vista') or ('retirado' in lo and 'vista' not in lo and tp != 'Retirada de pauta') or (not ('vista' in lo or 'retirado' in lo) and tp != 'Deliberação'): F('tipo_item', f"{r['reuniao']}#{a['n']} {tp}")
-    # presença inferida e exclusão de ex-membros fora da janela
-    if r['presentes'] and any(not (JAN[quem(p)][0] <= max(r['datas']) and min(r['datas']) <= JAN[quem(p)][1]) for p in r['presentes']): F('ex-membros fora da presença', r['reuniao'])
+        if not (d.get('decisao_ata') or not ata_t): F('decisao_ata preenchida quando há ata', f"{r['reuniao']}#{a['n']}")
 # pautas
 for r in INV['reunioes_2026']:
     pp = os.path.join(DIR, r['arquivo_pauta'])
     if not os.path.exists(pp) or os.path.getsize(pp) < 10000: F('pauta baixada', r['reuniao'])
-# --- 4. manifesto: sha256 de tudo
-man = json.load(open(MAN)); nsha = nbad = 0
+# --- 4. manifesto: sha256 de tudo, arquivo e texto
+man = MANIF; nsha = nbad = 0
 for e in man:
     if e.get('sha256'):
         nsha += 1
         if not os.path.exists(e['arquivo']) or hashlib.sha256(open(e['arquivo'], 'rb').read()).hexdigest() != e['sha256']: nbad += 1; F('sha256 do manifesto', e['arquivo'])
 docs = [e for e in man if e['tipo'].startswith('documento')]
-# --- 5. totais do JSON
-if len(J['votos']) != sum(1 for _ in J['votos']) or len(J['votos']) != tot_votos_esp: F('total de votos', f'JSON {len(J["votos"])} × esperado {tot_votos_esp}')
-pend_txt = json.dumps(J['pendencias'], ensure_ascii=False)
+# cadeia listado (links nas páginas) x baixado x lido, recontada das PÁGINAS salvas
+links = set()
+for r in INV['reunioes_2026']:
+    h = rd(os.path.join(DIR, r['arquivo']))
+    reg = h[h.find('<div class="conteudo">'):] if '<div class="conteudo">' in h else h
+    cab = reg[:reg.find('<table')] if '<table' in reg else reg
+    for href, rot in re.findall(r'<a [^>]*?href=\s*"?([^\s">]+)[^>]*>(.*?)</a>', cab, flags=re.S):
+        if limpa(rot) == 'Ata': links.add(html.unescape(href))
+    for blk in re.findall(r'<table\s+class="c">(.*?)</table>', reg, flags=re.S):
+        if 'Documentos' not in blk: continue
+        for href in re.findall(r'<a [^>]*?href=\s*"?([^\s">]+)', blk.split('Documentos')[-1]):
+            u = html.unescape(href)
+            if 'sei.anac.gov.br' in u or 'pergamum.anac.gov.br' in u: links.add(u)
+n_baix = sum(1 for e in docs if e['valido'] and os.path.exists(e['arquivo'])); n_lido = sum(1 for e in docs if e.get('texto') and os.path.exists(os.path.join(TXT, str(e['id']) + '.txt')) and len(rd(os.path.join(TXT, str(e['id']) + '.txt')).strip()) > 80)
+if links != {e['url'] for e in docs}: F('documentos listados nas páginas = documentos do manifesto', f'páginas {len(links)} × manifesto {len(docs)}')
+nao_lidos_json = {x['url'] for x in J.get('documentos_nao_lidos', [])}
 for e in docs:
-    if not e['valido'] and e['url'] not in pend_txt and not any(e['url'].split('&infra_hash')[0] in str(p) for p in J['pendencias']):
-        # o documento bloqueado precisa estar coberto por uma pendência da reunião (URL da página ou do documento)
-        rr = next((r for r in J['reunioes'] if r['reuniao'] == e['reuniao']), None)
-        if not rr or not any(rr['fontes'][0]['url'] == p[7] or e['reuniao'] + ' —' in p[1] for p in J['pendencias']): F('documento bloqueado coberto por pendência', e['url'][:90])
+    if e['valido'] and not e.get('texto') and e['url'] not in nao_lidos_json: F('documento baixado e não lido está declarado', e['url'][:90])
+    if not e['valido'] and not any((e['reuniao'] + ' —') in p[1] for p in J['pendencias']): F('documento não baixado coberto por pendência', e['url'][:90])
+# --- 5. totais do JSON
+if len(J['votos']) != tot_votos_esp: F('total de votos', f'JSON {len(J["votos"])} × esperado {tot_votos_esp}')
+for p in J['pendencias']:
+    if len(p) < 8 or not str(p[7]).startswith('http'): F('toda pendência tem URL', str(p[1])[:80])
 print('=== VARREDURA ANAC (independente do parser) ===')
 print(f"índice APEX: presenciais {n_apex_p} + eletrônicas {n_apex_e} = {len(apex)} | reuniões no JSON {len(J['reunioes'])} | páginas de reunião lidas {paginas} | pautas {sum(1 for r in INV['reunioes_2026'] if os.path.exists(os.path.join(DIR, r['arquivo_pauta'])))}")
 print(f"calendário Portaria 18.366: {len(cal)} datas no ano, {sum(1 for c in cal if c <= hoje)} até {hoje}; presenciais listadas {n_apex_p}")
+print(f"presença: REAL (ata, recontada por sobrenome) em {n_pres_real} reuniões; inferida (sem ata) em {n_pres_inf}")
 print(f"itens: páginas {tot_it} × JSON {len(J['deliberacoes'])} (decididos {tot_dec}) | votos: esperados {tot_votos_esp} × JSON {len(J['votos'])}")
-print(f"manifesto: {len(man)} entradas, {nsha} com sha256 ({nbad} divergentes); documentos SEI/pergamum tentados {len(docs)}, baixados {sum(1 for e in docs if e['valido'])}")
-tot_regras = 0
+print(f"documentos: listados nas páginas {len(links)} × manifesto {len(docs)} × baixados {n_baix} × lidos {n_lido} (não lidos declarados: {len(nao_lidos_json)})")
+print(f"manifesto: {len(man)} entradas, {nsha} com sha256 ({nbad} divergentes)")
+print('votos por rótulo×proveniência:', dict(sorted(cont_prov.items())))
 for k, v in sorted(falhas.items()): print(f'FALHA [{k}] {len(v)}:', v[:4])
 print('RESULTADO:', 'OK (0 falhas)' if not falhas else f'{sum(len(v) for v in falhas.values())} falha(s) em {len(falhas)} regra(s)')
 sys.exit(1 if falhas else 0)

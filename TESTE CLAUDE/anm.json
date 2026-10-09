@@ -7,8 +7,7 @@
     "Mauro Henrique Moreira Sousa",
     "Tasso Mendonça Júnior",
     "Roger Romão Cabral",
-    "Caio Mário Trivellato Seabra Filho",
-    "Guilherme Gomes"
+    "Caio Mário Trivellato Seabra Filho"
    ],
    "itens_duplicados_na_ata": 0
   },
@@ -21,6 +20,12 @@
     "Roger Romão Cabral",
     "Caio Mário Trivellato Seabra Filho"
    ],
+   "ausentes_ata": [
+    {
+     "diretor": "Luiz Paniago Neves",
+     "motivo": "hospitalizado"
+    }
+   ],
    "itens_duplicados_na_ata": 0
   },
   {
@@ -30,7 +35,7 @@
     "Mauro Henrique Moreira Sousa",
     "Tasso Mendonça Júnior",
     "Roger Romão Cabral",
-    "José Fernando de Mendonça Gomes Jr"
+    "José Fernando de Mendonça Gomes Júnior"
    ],
    "itens_duplicados_na_ata": 0
   },
@@ -174,7 +179,10 @@
    "processos_do_item": [
     "48405.851331/2013-15"
    ],
-   "dissidentes": [],
+   "dissidentes": [
+    "Roger Romão Cabral",
+    "Guilherme Santana Lopes Gomes"
+   ],
    "favoraveis": [],
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
@@ -224,7 +232,9 @@
    ],
    "dissidentes": [],
    "favoraveis": [],
-   "vista_por": [],
+   "vista_por": [
+    "Tasso Mendonça Júnior"
+   ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor Tasso Mendonça Jr. O Diretor Caio Mário Trivellato Seabra Filho, relator original para a matéria, e o Diretor Roger Romão Cabral consignaram que aderiram ao voto vista apresentado pelo Diretor-Geral na presente sessão.",
    "tem_impedimento": false,
@@ -248,7 +258,9 @@
    ],
    "dissidentes": [],
    "favoraveis": [],
-   "vista_por": [],
+   "vista_por": [
+    "Tasso Mendonça Júnior"
+   ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada pelo pedido de vistas ao processo pelo Diretor Tasso Mendonça Jr.",
    "tem_impedimento": false,
@@ -319,7 +331,9 @@
     "48401.810363/2018-05",
     "48401.810560/2018-16"
    ],
-   "dissidentes": [],
+   "dissidentes": [
+    "Caio Mário Trivellato Seabra Filho"
+   ],
    "favoraveis": [],
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
@@ -1012,15 +1026,15 @@
    "interessado": "Três Picos Participações e Empreendimentos Ltda. Item retirado de pauta pelo Diretor Revisor, com solicitação de prorrogação de prazo para apresentação do voto vista, nos termos do art. 22 do Regimento Interno da ANM, aprovado na forma da Resolução ANM nº 181 de 03 de outubro de 2024, o que foi deferido por unanimidade dos diretores presentes. 4.3. ASSUNTO: Voto Vista. Recurso contra o indeferimento de requerimento de PLG. 4.3.1.",
    "assunto": "",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "revisor",
    "processos_do_item": [
     "48409.890582/2014-58"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1065,7 +1079,9 @@
    "processos_do_item": [
     "48064.000356/2023-20"
    ],
-   "dissidentes": [],
+   "dissidentes": [
+    "Mauro Henrique Moreira Sousa"
+   ],
    "favoraveis": [],
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
@@ -1084,15 +1100,15 @@
    "interessado": "Mineração Comisa Ltda. Item retirado de pauta pelo Diretor Revisor, com solicitação de prorrogação de prazo para apresentação do voto vista, nos termos do art. 22 do Regimento Interno da ANM, aprovado na forma da Resolução ANM nº 181 de 03 de outubro de 2024, o que foi deferido por unanimidade dos diretores presentes. Em razão da ausência justificada do Diretor Luiz Paniago Neves, conforme informado no início da sessão, os votos por ele pautados serão lidos pelo Diretor-Geral, nos termos da prerrogativa constante no art. 21, §2º do Regimento Interno, aprovado na forma da Resolução ANM nº 181, de 03 de outubro de 2024. 5. DIRETOR LUIZ PANIAGO NEVES 5.1. ASSUNTO: Pedido de cancelamento de Bloqueio de Área. 5.1.1",
    "assunto": "",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "revisor",
    "processos_do_item": [
     "27203.831339/1984-68"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1420,15 +1436,15 @@
    "interessado": "Miranda Mineracao Ltda. Item retirado de pauta pelo Diretor-Geral. 5.10. ASSUNTO: Pedido de reconsideração contra indeferimento do requerimento de Autorização de Pesquisa por não cumprimento de exigência. 5.10.1",
    "assunto": "Recurso contra o ato de indeferimento do requerimento de transformação de regime de Autorização de Pesquisa.",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "diretor-geral",
    "processos_do_item": [
     "48415.846038/2017-32"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1444,15 +1460,15 @@
    "interessado": "Areal Minas Ltda. Item retirado de pauta pelo Diretor-Geral. 5.11. ASSUNTO: Reconsideração contra Indeferimento de Plano do Requerimento de Autorização de Pesquisa. 5.11.1-",
    "assunto": "Pedido de reconsideração contra indeferimento do requerimento de Autorização de Pesquisa por não cumprimento de exigência.",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "diretor-geral",
    "processos_do_item": [
     "48401.810603/2015-11"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1468,15 +1484,15 @@
    "interessado": "Quésia Gonçalves Rodrigues. Item retirado de pauta pelo Diretor-Geral. 5.12. ASSUNTO: Recurso contra o ato que negou a prorrogação do prazo de Alvará de Pesquisa. 5.12.1",
    "assunto": "Pedido de reconsideração contra indeferimento do requerimento de Autorização de Pesquisa por não cumprimento de exigência.",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "diretor-geral",
    "processos_do_item": [
     "48059.850528/2021-16"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1492,15 +1508,15 @@
    "interessado": "Vale S.A. Item retirado de pauta pelo Diretor-Geral. 5.13. ASSUNTO: Recurso contra indeferimento de requerimento de PLG - Terceira Instância Administrativa. 5.13.1",
    "assunto": "",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "diretor-geral",
    "processos_do_item": [
     "27205.851353/1996-00"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1516,15 +1532,15 @@
    "interessado": "Coop de Peq. Mineradores de Ouro e P. Preciosas de N. Bandeirantes e Outros Municípios. Item retirado de pauta pelo Diretor-Geral. O Diretor-Geral informou a retirada de pauta dos itens 5.9.1 a 5.13.1 para que sejam inseridos em uma próxima reunião ordinária, sendo que a presente se trata de reunião extraordinária e já conta com uma longa duração. Findadas as deliberações, o Diretor-Geral agradeceu a presença de todos e encerrou a 32ª Reunião Extraordinária Pública da Diretoria Colegiada da ANM. Eu, Caio Vasconcelos de Azevedo, Secretário- Geral, lavrei a presente ata, que, após aprovada, será assinada pelos diretores presentes. Diretor CAIO MÁRIO TRIVELLATO SEABRA FILHO Diretor ROGER ROMÃO CABRAL Diretor TASSO MENDONÇA JUNIOR Diretor-Geral MAURO HENRIQUE MOREIRA SOUSA Documento assinado eletronicamente por Roger Romão Cabral, Diretor da Agência Nacional da Mineração, em 31/07/2025, às 16:07, conforme horário oficial de Brasília, com fundamento no § 3º do art. 4º do Decreto nº 10.543, de 13 de novembro de 2020. Documento assinado eletronicamente por Caio Mário Trivellato Seabra Filho , Diretor da Agência Nacional da Mineração, em 07/08/2025, às 11:58, conforme horário oficial de Brasília, com fundamento no § 3º do art. 4º do Decreto nº 10.543, de 13 de novembro de 2020. Documento assinado eletronicamente por Tasso Mendonça Junior, Diretor da Agência Nacional de Mineração, em 08/08/2025, às 09:11, conforme horário oficial de Brasília, com fundamento no § 3º do art. 4º do Decreto nº 10.543, de 13 de novembro de 2020. Documento assinado eletronicamente por Mauro Henrique Moreira Sousa, Diretor-Geral da Agência Nacional de Mineração, em 08/08/2025, às 16:46, conforme horário oficial de Brasília, com fundamento no § 3º do art. 4º do Decreto nº 10.543, de 13 de novembro de 2020. A autenticidade do documento pode ser conferida no site www.gov.br/anm/pt-br/autenticidade, informando o código verificador 17291515 e o código CRC F7AD2480. 48051.004620/2025-13 17291515v7",
    "assunto": "Recurso contra indeferimento de requerimento de PLG - Terceira Instância Administrativa.",
    "voto_resumo": "",
-   "tipo_item": "Deliberação",
-   "retirada_por": "",
+   "tipo_item": "Retirada de pauta",
+   "retirada_por": "diretor-geral",
    "processos_do_item": [
     "48059.851060/2020-04"
    ],
    "dissidentes": [],
    "favoraveis": [],
    "vista_por": [],
-   "resultado": "SEM DELIBERACAO NO TEXTO",
+   "resultado": "RETIRADO DE PAUTA",
    "deliberacao_texto": "",
    "tem_impedimento": false,
    "impedidos": [],
@@ -1859,7 +1875,9 @@
    ],
    "dissidentes": [],
    "favoraveis": [],
-   "vista_por": [],
+   "vista_por": [
+    "Tasso Mendonça Júnior"
+   ],
    "resultado": "SOBRESTADO (vista)",
    "deliberacao_texto": "Deliberação sobrestada em razão do pedido de vistas ao processo peloDiretor Tasso Mendonça Jr. 3.5. ASSUNTO: Revisão de prazo para Guia de Utilização.",
    "tem_impedimento": false,
@@ -1934,7 +1952,6 @@
     "Roger Romão Cabral"
    ],
    "vista_por": [
-    "Tasso Mendonça Júnior",
     "José Fernando de Mendonça Gomes Júnior"
    ],
    "resultado": "SOBRESTADO (vista)",
@@ -2743,7 +2760,7 @@
   },
   {
    "deliberacao": "2.1.1",
-   "revisor": "Substituto Luiz Paniago Neves",
+   "revisor": "Luiz Paniago Neves",
    "reuniao": "ROP81",
    "data": "2026-01-28",
    "processo": "48403.930959/2014-79",
@@ -3349,7 +3366,7 @@
    "reuniao": "ROP81",
    "data": "2026-01-28",
    "processo": "27213.826299/1997-38",
-   "relator": "Caio Mário Seabra Filho",
+   "relator": "Caio Mário Trivellato Seabra Filho",
    "interessado": "Calpar Comércio de Calcário Ltda.; Agro Mercantil Kraemer Ltda.",
    "assunto": "Voto vista. Recurso contra inabilitação em edital de disponibilidade.",
    "voto_resumo": "",
@@ -9144,7 +9161,10 @@
    "processos_do_item": [
     "48406.963012/2008-76"
    ],
-   "dissidentes": [],
+   "dissidentes": [
+    "José Fernando de Mendonça Gomes Júnior",
+    "Luiz Paniago Neves"
+   ],
    "favoraveis": [],
    "vista_por": [],
    "resultado": "APROVADO POR MAIORIA",
@@ -12053,22 +12073,13 @@
   {
    "reuniao": "REP31",
    "data": "2024-12-06",
-   "processo": "48051.003300/2024-57",
-   "deliberacao": "1.1.1",
-   "diretor": "Guilherme Gomes",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
-   "tipo_item": "Deliberação"
-  },
-  {
-   "reuniao": "REP31",
-   "data": "2024-12-06",
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
    "voto": "RELATOR (voto proferido)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação"
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "REP31",
@@ -12076,9 +12087,10 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator (era o Revisor 2; acompanhou o Diretor-Geral)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "REP31",
@@ -12086,9 +12098,10 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "DIVERGIU (acompanhou o voto do Revisor 1, Diretor Guilherme Gomes)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "REP31",
@@ -12096,19 +12109,21 @@
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "voto": "ACOMPANHOU o relator (acompanhou o voto do Revisor 2, que seguiu o Diretor-Geral)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fonte_voto": "narrativa do Secretário-Geral na ata"
   },
   {
    "reuniao": "REP31",
    "data": "2024-12-06",
    "processo": "48405.851331/2013-15",
    "deliberacao": "3.1.1",
-   "diretor": "Guilherme Gomes",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
-   "tipo_item": "Deliberação"
+   "diretor": "Guilherme Santana Lopes Gomes",
+   "voto": "DIVERGIU (Revisor 1; voto escrito; já fora da Diretoria na sessão)",
+   "proveniencia": "nominal",
+   "tipo_item": "Deliberação",
+   "fora_total": true
   },
   {
    "reuniao": "REP32",
@@ -12166,8 +12181,8 @@
    "processo": "27213.826299/1997-38",
    "deliberacao": "1.3.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
-   "proveniencia": "inferido",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal",
    "tipo_item": "Vista"
   },
   {
@@ -12206,8 +12221,8 @@
    "processo": "27207.872093/1996-88",
    "deliberacao": "3.3.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
-   "proveniencia": "inferido",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal",
    "tipo_item": "Vista"
   },
   {
@@ -12326,8 +12341,8 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -12336,8 +12351,8 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -12346,7 +12361,7 @@
    "processo": "48401.810363/2018-05",
    "deliberacao": "1.2.1",
    "diretor": "Caio Mário Trivellato Seabra Filho",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "DIVERGIU (relator original; voto vencido)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -13429,6 +13444,46 @@
    "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
    "proveniencia": "inferido",
    "tipo_item": "Vista"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48409.890582/2014-58",
+   "deliberacao": "4.2.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48409.890582/2014-58",
+   "deliberacao": "4.2.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48409.890582/2014-58",
+   "deliberacao": "4.2.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48409.890582/2014-58",
+   "deliberacao": "4.2.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
   },
   {
    "reuniao": "REP32",
@@ -13487,7 +13542,7 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "RELATOR (voto proferido)",
+   "voto": "DIVERGIU (relator original; voto vencido)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -13497,8 +13552,8 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Tasso Mendonça Júnior",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -13507,8 +13562,8 @@
    "processo": "48064.000356/2023-20",
    "deliberacao": "4.4.1",
    "diretor": "Roger Romão Cabral",
-   "voto": "REVISAR (maioria sem divergentes nomeados na ata)",
-   "proveniencia": "REVISAR",
+   "voto": "ACOMPANHOU (por exclusão: um só divergente nomeado)",
+   "proveniencia": "inferido",
    "tipo_item": "Deliberação"
   },
   {
@@ -13524,6 +13579,46 @@
   {
    "reuniao": "REP32",
    "data": "2025-07-16",
+   "processo": "27203.831339/1984-68",
+   "deliberacao": "4.5.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27203.831339/1984-68",
+   "deliberacao": "4.5.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27203.831339/1984-68",
+   "deliberacao": "4.5.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27203.831339/1984-68",
+   "deliberacao": "4.5.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
    "processo": "27209.890204/1998-80",
    "deliberacao": "5.1.1",
    "diretor": "Mauro Henrique Moreira Sousa",
@@ -13567,10 +13662,9 @@
    "processo": "27209.890204/1998-80",
    "deliberacao": "5.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13618,10 +13712,9 @@
    "processo": "27209.890205/1998-24",
    "deliberacao": "5.1.2",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13669,10 +13762,9 @@
    "processo": "48420.996118/2017-69",
    "deliberacao": "5.2.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13720,10 +13812,9 @@
    "processo": "48406.860296/2014-98",
    "deliberacao": "5.3.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13771,10 +13862,9 @@
    "processo": "48416.858095/2013-21",
    "deliberacao": "5.4.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13822,10 +13912,9 @@
    "processo": "48403.831009/2014-62",
    "deliberacao": "5.4.2",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13873,10 +13962,9 @@
    "processo": "48422.806052/2008-13",
    "deliberacao": "5.5.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13924,10 +14012,9 @@
    "processo": "48418.878053/2006-67",
    "deliberacao": "5.5.2",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -13975,10 +14062,9 @@
    "processo": "48413.826431/2013-04",
    "deliberacao": "5.5.3",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -14026,10 +14112,9 @@
    "processo": "48063.980034/2024-49",
    "deliberacao": "5.6.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -14077,10 +14162,9 @@
    "processo": "48403.933830/2011-70",
    "deliberacao": "5.7.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
+   "voto": "AUSENTE (hospitalizado; relator da matéria — voto lido pelo Diretor-Geral, conforme a ata)",
    "proveniencia": "nominal",
-   "tipo_item": "Deliberação",
-   "fora_total": true
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "REP32",
@@ -14163,6 +14247,206 @@
    "tipo_item": "Retirada de pauta"
   },
   {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48415.846038/2017-32",
+   "deliberacao": "5.9.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48415.846038/2017-32",
+   "deliberacao": "5.9.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48415.846038/2017-32",
+   "deliberacao": "5.9.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48415.846038/2017-32",
+   "deliberacao": "5.9.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48401.810603/2015-11",
+   "deliberacao": "5.10.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48401.810603/2015-11",
+   "deliberacao": "5.10.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48401.810603/2015-11",
+   "deliberacao": "5.10.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48401.810603/2015-11",
+   "deliberacao": "5.10.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.850528/2021-16",
+   "deliberacao": "#53",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.850528/2021-16",
+   "deliberacao": "#53",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.850528/2021-16",
+   "deliberacao": "#53",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.850528/2021-16",
+   "deliberacao": "#53",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27205.851353/1996-00",
+   "deliberacao": "5.12.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27205.851353/1996-00",
+   "deliberacao": "5.12.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27205.851353/1996-00",
+   "deliberacao": "5.12.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "27205.851353/1996-00",
+   "deliberacao": "5.12.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.851060/2020-04",
+   "deliberacao": "5.13.1",
+   "diretor": "Mauro Henrique Moreira Sousa",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.851060/2020-04",
+   "deliberacao": "5.13.1",
+   "diretor": "Tasso Mendonça Júnior",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.851060/2020-04",
+   "deliberacao": "5.13.1",
+   "diretor": "Roger Romão Cabral",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
+   "reuniao": "REP32",
+   "data": "2025-07-16",
+   "processo": "48059.851060/2020-04",
+   "deliberacao": "5.13.1",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
+   "voto": "SEM VOTO (retirado de pauta)",
+   "proveniencia": "n/a",
+   "tipo_item": "Retirada de pauta"
+  },
+  {
    "reuniao": "REP33",
    "data": "2025-10-15",
    "processo": "48051.001387/2025-17",
@@ -14197,7 +14481,7 @@
    "data": "2025-10-15",
    "processo": "48051.001387/2025-17",
    "deliberacao": "3.1.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
@@ -14237,7 +14521,7 @@
    "data": "2025-10-15",
    "processo": "48051.006673/2024-80",
    "deliberacao": "3.3.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
@@ -14277,7 +14561,7 @@
    "data": "2025-10-15",
    "processo": "48051.001278/2022-49",
    "deliberacao": "3.2.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
@@ -14317,7 +14601,7 @@
    "data": "2025-10-15",
    "processo": "48051.003872/2025-17",
    "deliberacao": "1.1.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
@@ -14357,7 +14641,7 @@
    "data": "2025-10-15",
    "processo": "48411.915345/2016-20",
    "deliberacao": "2.1.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14397,7 +14681,7 @@
    "data": "2025-10-15",
    "processo": "48411.915346/2016-74",
    "deliberacao": "2.1.2",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14437,7 +14721,7 @@
    "data": "2025-10-15",
    "processo": "48411.915347/2016-19",
    "deliberacao": "2.1.3",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14477,7 +14761,7 @@
    "data": "2025-10-15",
    "processo": "48411.915348/2016-63",
    "deliberacao": "2.1.4",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14517,7 +14801,7 @@
    "data": "2025-10-15",
    "processo": "48411.915349/2016-16",
    "deliberacao": "2.1.5",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14557,7 +14841,7 @@
    "data": "2025-10-15",
    "processo": "48411.915350/2016-32",
    "deliberacao": "2.1.6",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14597,7 +14881,7 @@
    "data": "2025-10-15",
    "processo": "48411.915359/2016-43",
    "deliberacao": "2.1.7",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14637,7 +14921,7 @@
    "data": "2025-10-15",
    "processo": "48411.915363/2016-10",
    "deliberacao": "2.1.8",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -14677,7 +14961,7 @@
    "data": "2025-10-15",
    "processo": "27212.866883/2005-05",
    "deliberacao": "2.2.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "ACOMPANHOU",
    "proveniencia": "inferido",
    "tipo_item": "Deliberação"
@@ -14698,6 +14982,16 @@
    "processo": "27205.850006/1996-51",
    "deliberacao": "3.4.1",
    "diretor": "Tasso Mendonça Júnior",
+   "voto": "PEDIU VISTA",
+   "proveniencia": "nominal",
+   "tipo_item": "Vista"
+  },
+  {
+   "reuniao": "REP33",
+   "data": "2025-10-15",
+   "processo": "27205.850006/1996-51",
+   "deliberacao": "3.4.1",
+   "diretor": "Roger Romão Cabral",
    "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
    "proveniencia": "inferido",
    "tipo_item": "Vista"
@@ -14707,17 +15001,7 @@
    "data": "2025-10-15",
    "processo": "27205.850006/1996-51",
    "deliberacao": "3.4.1",
-   "diretor": "Roger Romão Cabral",
-   "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
-   "proveniencia": "inferido",
-   "tipo_item": "Vista"
-  },
-  {
-   "reuniao": "REP33",
-   "data": "2025-10-15",
-   "processo": "27205.850006/1996-51",
-   "deliberacao": "3.4.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO AINDA (vista pendente; os demais aguardam o retorno)",
    "proveniencia": "inferido",
    "tipo_item": "Vista"
@@ -14757,7 +15041,7 @@
    "data": "2025-10-15",
    "processo": "27216.858075/2001-01",
    "deliberacao": "3.5.1",
-   "diretor": "José Fernando de Mendonça Gomes Jr",
+   "diretor": "José Fernando de Mendonça Gomes Júnior",
    "voto": "SEM VOTO (retirado de pauta)",
    "proveniencia": "n/a",
    "tipo_item": "Retirada de pauta"
@@ -17218,7 +17502,7 @@
    "data": "2026-01-28",
    "processo": "27213.826299/1997-38",
    "deliberacao": "2.2.1",
-   "diretor": "Caio Mário Seabra Filho",
+   "diretor": "Caio Mário Trivellato Seabra Filho",
    "voto": "RELATOR (voto de ex-diretor; fora da reunião e dos totais de 2026)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação",
@@ -25548,7 +25832,7 @@
    "processo": "48054.930255/2020-51",
    "deliberacao": "1.4.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISOR (voto proferido; ata cita o revisor)",
+   "voto": "DIVERGIU (revisor; ata: divergência apresentada pelo revisor)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -25588,7 +25872,7 @@
    "processo": "27202.820791/1987-57",
    "deliberacao": "1.5.1",
    "diretor": "Mauro Henrique Moreira Sousa",
-   "voto": "REVISOR (voto proferido; ata cita o revisor)",
+   "voto": "DIVERGIU (revisor; ata: divergência apresentada pelo revisor)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação"
   },
@@ -26714,7 +26998,7 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "Luiz Paniago Neves",
-   "voto": "ACOMPANHOU o relator (manteve o voto antecipado; vencido)",
+   "voto": "DIVERGIU (manteve o voto antecipado com o relator; vencido por voto de qualidade do Diretor-Geral)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação",
    "fonte_voto": "narrativa do Secretário-Geral na ata"
@@ -26725,7 +27009,7 @@
    "processo": "48406.963012/2008-76",
    "deliberacao": "1.1.1",
    "diretor": "José Fernando de Mendonça Gomes Júnior",
-   "voto": "RELATOR (voto vencido)",
+   "voto": "DIVERGIU (relator original; voto vencido por voto de qualidade do Diretor-Geral)",
    "proveniencia": "nominal",
    "tipo_item": "Deliberação",
    "fonte_voto": "narrativa do Secretário-Geral na ata"

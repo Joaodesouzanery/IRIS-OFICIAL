@@ -15,9 +15,10 @@ def get(url, out=None, tries=6):
         time.sleep(2 * (i + 1))
     return False if out else ''
 html = get(PAG)
-links = sorted(set(re.findall(r'href="(/anpd/[^"]*?/cd-(\d+)-2026-(ata|votos|pauta)\.pdf)/@@display-file/file"', html)))
+# aceita sufixo de reenvio na fonte ('cd-23-2026-ata-1.pdf'); o arquivo local e a chave seguem sem sufixo. Sem sufixo tem prioridade.
+links = sorted(set(re.findall(r'href="(/anpd/[^"]*?/cd-(\d+)-2026-(ata|votos|pauta)(-\d+)?\.pdf)/@@display-file/file"', html)), key=lambda x: (x[1], x[2], x[3] != '', x[3]))
 inv = {}
-for href, n, tipo in links: inv.setdefault(int(n), {})[tipo] = href
+for href, n, tipo, suf in links: inv.setdefault(int(n), {}).setdefault(tipo, href)
 json.dump({str(k): v for k, v in sorted(inv.items())}, open(inv_out, 'w'), indent=1)
 man = {}
 for n, d in sorted(inv.items()):

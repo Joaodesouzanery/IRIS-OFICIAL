@@ -343,6 +343,14 @@
   "sha256": "13e79338e46c44a5636a889801524d789a95048fc28123b786093b8ef903f95e",
   "ok": true
  },
+ "cd-23-ata": {
+  "cd": 23,
+  "tipo": "ata",
+  "url": "https://www.gov.br/anpd/pt-br/assuntos/deliberacoes-do-conselho-diretor/circuitos-deliberativos-ano-2026/cd-23-2026-ata-1.pdf",
+  "arquivo": "fonte/anpd/cd-23-2026-ata.pdf",
+  "sha256": "b9eb6530878791af94e95b9fe254c3cd46b28b768d69b816931416626365749e",
+  "ok": true
+ },
  "cd-23-votos": {
   "cd": 23,
   "tipo": "votos",

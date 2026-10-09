@@ -13,6 +13,39 @@ def txt(cd, tipo):
     if len(t.strip()) < 400 and os.path.exists(f'texto_anpd_ocr/cd-{cd:02d}-2026-{tipo}.txt'): return open(f'texto_anpd_ocr/cd-{cd:02d}-2026-{tipo}.txt', encoding='utf8').read(), True
     return t, False
 def dt(s): d, m, a = s.split('/'); return f'{a}-{m}-{d}'
+
+import html as _html
+def _toks(f):
+    x = subprocess.run(['pdftotext', '-bbox', f, '-'], capture_output=True).stdout.decode('utf8', 'ignore'); out = []; pg = 0
+    for line in x.splitlines():
+        if '<page ' in line: pg += 1
+        m = re.search(r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="[\d.]+" yMax="[\d.]+">(.*?)</word>', line)
+        if m: out.append((pg, float(m[2]), float(m[1]), _html.unescape(m[3])))
+    return out
+def votos_pdf(f):
+    """PDF de votos do circuito (um formulario por diretor) -> ({diretor: 'RELATOR'|'ACOMPANHA'|'NAO'|'?'}, [datas de assinatura]).
+    Associa cada formulario ao signatario ('assinado eletronicamente por ...') e le o X pela posicao vertical em relacao as opcoes
+    'Acompanho/Acompanha a Relatoria' e 'Nao acompanho' (o X pode estar na linha da opcao, na de cima ou na de baixo)."""
+    T = _toks(f); tx = [t[3] for t in T]; out = {}; datas = []; ult = 0
+    for i in [i for i, w in enumerate(tx) if norm(w).startswith('assinado') and i + 1 < len(tx) and norm(tx[i + 1]).startswith('eletron')]:
+        q = quem((' '.join(tx[i + 3:i + 12])).split(',')[0]); dm = re.search(r'em (\d{2}/\d{2}/\d{4})', ' '.join(tx[i:i + 40]))
+        if dm: datas.append(dm[1])
+        seg = T[ult:i]; ult = i
+        if not q: continue
+        A = N = None; Xs = []
+        for k, (pg, y, x, w) in enumerate(seg):
+            nw = norm(w); nx = norm(seg[k + 1][3]) if k + 1 < len(seg) else ''
+            if re.fullmatch(r'acompanh[ao]', nw) and k > 0 and norm(seg[k - 1][3]) != 'nao' and nx in ('a', 'o'): A = A or (pg, y)
+            if nw == 'nao' and re.fullmatch(r'acompanh[ao]', nx): N = N or (pg, y)
+            if w in ('X', 'x'): Xs.append((pg, y))
+        if not (A or N): out[q[0]] = 'RELATOR'; continue
+        marca = None
+        for xp, xy in Xs:
+            ya = A[1] if A and A[0] == xp else None; yn = N[1] if N and N[0] == xp else None
+            if ya is not None and ya - 8 <= xy and (yn is None or xy < yn - 8): marca = 'ACOMPANHA'
+            elif yn is not None and yn - 8 <= xy < yn + 22: marca = 'NAO'
+        out[q[0]] = marca or '?'
+    return out, datas
 cds = sorted({v['cd'] for v in man.values()})
 R, D, V, Q_tot, pend, assin = [], [], [], [], [], {}
 nums_esp = []
@@ -27,16 +60,30 @@ for cd in cds:
         proc = (re.search(r'PROCESSO N\.?[º°o]\s*(\d[\d./-]+)', h) or [None, ''])[1]
         rel = quem((re.search(r'RELATORA?\s+(.*?)\s+1\.\s+ASSUNTO', h) or [None, ''])[1])
         ass = (re.search(r'ASSUNTO\s+(.*?)\s+2\.\s+EMENTA', h) or [None, ''])[1].strip(' .')
-        dv = (re.search(r'(?:assinado|ssinado) eletronicamente por.{0,160}?em (\d{2}/\d{2}/\d{4})', re.sub(r'\s+', ' ', t)) or [None, None])[1]; dfx = dt(dv) if dv else None
-        R.append({'reuniao': tag, 'titulo': f'Circuito Deliberativo nº {cd}/2026', 'tipo': 'Circuito Deliberativo', 'data': dfx, 'presentes': [], 'ausentes': [], 'obs': 'SEM ATA PUBLICADA (só o PDF de votos)'})
-        D.append({'reuniao': tag, 'data': dfx, 'processo': proc, 'deliberacao': dlb, 'relator': rel[0] if rel else None, 'interessado': 'ANPD', 'assunto': ass, 'resultado': 'SEM ATA — só o voto do relator', 'voto_doc': '', 'decisao_texto': '', 'tipo_item': 'Só voto do relator (sem ata)', 'natureza': ''})
-        if rel: V.append({'reuniao': tag, 'data': dfx, 'processo': proc, 'deliberacao': dlb, 'diretor': rel[0], 'voto': 'RELATOR (proposta; resultado sem ata)', 'proveniencia': 'nominal'})
-        pend.append(['ANPD', tag, dfx, 'Ata do circuito não publicada (só PDF de votos)', 'PDF de votos existe; ata não', 'Circuito já realizado', 'Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD'])
+        vp, datas = votos_pdf(f) if f else ({}, [])
+        dfx = max((dt(x) for x in datas), default=None)   # fim do circuito = ultima assinatura
+        rel = [n for n, v in vp.items() if v == 'RELATOR'] or rel
+        pres = [n for n, _ in ROST if n in vp or n in rel]; aus = [n for n, _ in ROST if n not in pres]
+        lidos = all(vp.get(n) in ('ACOMPANHA', 'NAO') for n in vp if n not in rel) and len(vp) >= 2
+        R.append({'reuniao': tag, 'titulo': f'Circuito Deliberativo nº {cd}/2026', 'tipo': 'Circuito Deliberativo', 'data': dfx, 'presentes': pres, 'ausentes': aus, 'obs': 'SEM ATA PUBLICADA: votos lidos do PDF de votos (marcação X de cada diretor)'})
+        nao_v = [n for n, v in vp.items() if v == 'NAO']
+        res_ = ('APROVADO NO CIRCUITO — todos os votantes acompanharam o relator (lido do PDF de votos; ata não publicada)' if lidos and not nao_v
+                else 'DIVERGÊNCIA — há voto que não acompanha o relator (PDF de votos; ata não publicada)' if nao_v else 'SEM ATA — marcação do PDF de votos ilegível (revisar)')
+        D.append({'reuniao': tag, 'data': dfx, 'processo': proc, 'deliberacao': dlb, 'relator': rel[0] if rel else None, 'interessado': 'ANPD', 'assunto': ass, 'resultado': res_, 'voto_doc': '', 'decisao_texto': f'Sem ata: PDF de votos com {len(vp)} diretores ({sum(1 for v in vp.values() if v == "ACOMPANHA")} acompanham o relator, {len(nao_v)} não acompanham)', 'tipo_item': 'Deliberação (lida do PDF de votos, sem ata)', 'natureza': ''})
+        for n, _ in ROST:
+            base = {'reuniao': tag, 'data': dfx, 'processo': proc, 'deliberacao': dlb, 'diretor': n}; v = vp.get(n)
+            if n in rel: V.append(dict(base, voto='RELATOR (voto proferido)', proveniencia='nominal'))
+            elif v == 'ACOMPANHA': V.append(dict(base, voto='ACOMPANHOU', proveniencia='nominal'))
+            elif v == 'NAO': V.append(dict(base, voto='DIVERGIU (não acompanhou o relator, PDF de votos)', proveniencia='nominal'))
+            elif v == '?': V.append(dict(base, voto='VOTOU (marcação ilegível no PDF de votos)', proveniencia='REVISAR'))
+            else: V.append(dict(base, voto='SEM VOTO (não votou no circuito)', proveniencia='nominal'))
+        assin[tag] = {'assinante': None, 'total': None, 'votantes': len(set(vp) | set(rel)), 'acomp': None, 'nao': None, 'ocr': False, 'rel': rel, 'voters': list(vp), 'sem_ata': True}
+        pend.append(['ANPD', tag, dfx, 'Ata do circuito não publicada (só PDF de votos)', 'PDF de votos existe; ata não', 'Votos individuais lidos do PDF de votos; falta só a ata oficial (data de encerramento e contagem)', 'Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD'])
         continue
     t, ocr = txt(cd, 'ata'); h = re.sub(r'\s+', ' ', t); h = re.sub(r'Ata de Circuito Deliberativo n?[º°o²]? ?\d+/2026 \(\d+\) S[EI]+l? [\d./-]+ ?/ ?pg\. ?\d+', '', h)
     cab = h.split('Decisão do Circuito')[0] if 'Decisão do Circuito' in h else h.split('Decisao do Circuito')[0]
     corpo_ata = re.split(r'ATA DE CIRCUITO DELIBERATIVO', cab, maxsplit=1, flags=re.I)[-1]
-    proc = (re.search(r'Process[o0] n\.?[º°o²]?\s*(\d[\d./-]+)', corpo_ata, re.I) or [None, ''])[1]
+    proc = (re.search(r'Pr[o0]cess[o0]\s+n\.?\s*[º°o²?]?\s*(\d[\d./-]+)', corpo_ata, re.I) or [None, ''])[1]   # tolera OCR ('Pr0cess0')
     inter = re.sub(r'\s*Fim:?$', '', (re.search(r'Interessado:\s*(.*?)\s+(?:Per[ií]odo|Periodo)', cab) or [None, 'ANPD'])[1].strip())
     per = re.search(r'(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})', cab); ini, fim = (dt(per[1]), dt(per[2])) if per else (None, None)
     nat = re.sub(r'\s*mat[eé]ria\s*$', '', (re.search(r'Natureza da\s+(?:matéria|materia)?\s*(.*?)\s+Assunto', cab) or [None, ''])[1].strip(), flags=re.I).strip()
@@ -68,13 +115,24 @@ for cd in cds:
 Q = []
 def chk(nome, esp, obs, nota=''): Q.append(['ANPD', nome, esp, obs, 'OK' if esp == obs else 'DIVERGE', nota])
 com_total = [k for k, a in assin.items() if a['total'] is not None]
-chk('Nº de votantes citados × "Total de votos" da própria ata', len(com_total), sum(1 for k in com_total if assin[k]['total'] == assin[k]['votantes']), f'{len(assin) - len(com_total)} atas por OCR sem a contagem')
+chk('Nº de votantes citados × "Total de votos" da própria ata', len(com_total), sum(1 for k in com_total if assin[k]['total'] == assin[k]['votantes']), f'{sum(1 for a in assin.values() if a["ocr"])} atas por OCR sem a contagem; {sum(1 for a in assin.values() if a.get("sem_ata"))} circuito sem ata (votos do PDF)')
 chk('Acompanha + relator = Total (aritmética da ata)', len(com_total), sum(1 for k in com_total if (assin[k]['acomp'] or 0) + (assin[k]['nao'] or 0) + 1 == assin[k]['total']))
-chk('Ata assinada por diretor do colegiado (presidente/substituta)', len(assin), sum(1 for a in assin.values() if a['assinante']))
+com_ata = [a for a in assin.values() if not a.get('sem_ata')]
+chk('Ata assinada por diretor do colegiado (presidente/substituta)', len(com_ata), sum(1 for a in com_ata if a['assinante']))
 nums = sorted(cds)
 Q.append(['ANPD', 'Numeração dos circuitos 1..max sem buraco', 0, len([x for x in range(1, max(nums) + 1) if x not in nums]), 'OK' if nums == list(range(1, max(nums) + 1)) else 'EXCEÇÃO', f'1..{max(nums)} na página oficial'])
-Q.append(['ANPD', 'Votos por circuito = 4 diretores (1 por membro do colegiado)', len(cds), sum(1 for c in cds if sum(1 for v in V if v['reuniao'] == f'CD{c:02d}') == (4 if f'cd-{c:02d}-ata' in man and man[f'cd-{c:02d}-ata']['ok'] else 1)), 'OK' if True else ''])
+Q.append(['ANPD', 'Votos por circuito = 4 diretores (1 por membro do colegiado)', len(cds), sum(1 for c in cds if sum(1 for v in V if v['reuniao'] == f'CD{c:02d}') == 4), '', ''])
 Q[-1][4] = 'OK' if Q[-1][2] == Q[-1][3] else 'DIVERGE'
+chk('Processo preenchido em todos os circuitos (inclusive os lidos por OCR)', len(cds), sum(1 for d in D if d['processo']))
+# PDF de votos x ata: quem assinou formulario de voto (relator ou X em 'acompanho') = votantes da ata
+_vp_ok = _vp_n = 0
+for c in cds:
+    fa = man.get(f'cd-{c:02d}-ata', {}).get('ok'); fv = man.get(f'cd-{c:02d}-votos', {}).get('arquivo')
+    if fa and fv:
+        vp, _ = votos_pdf(fv)
+        if len(vp) >= 2:
+            _vp_n += 1; a = assin[f'CD{c:02d}']; _vp_ok += int({n for n, v in vp.items() if v in ('ACOMPANHA', 'RELATOR')} <= (set(a['voters']) | set(a['rel'])))
+chk('PDF de votos (X em acompanho) × votantes da ata: formulários marcados ⊆ votantes da ata', _vp_n, _vp_ok, 'confere a leitura do X contra a fonte independente (ata)')
 cob = [['ANPD', 'Circuitos deliberativos 2026 na página oficial', len(cds), 'cd-01 a cd-%02d, sem buraco' % max(nums)],
        ['ANPD', 'Circuitos com ata lida', len(cds) - len(pend), f'{sum(1 for a in assin.values() if a["ocr"])} por OCR (cd-02, cd-04)'],
        ['ANPD', 'Reuniões deliberativas marcadas em 2026 (página oficial de avisos, modificada em 11/09/2026)', 9, 'todas 9 constam como "Reunião cancelada em função de ausência de processos" (23/01 a 18/09); a deliberação ocorre só por circuito. Conferido na página em 08/10/2026; reuniões após 18/09 não constam da página']]

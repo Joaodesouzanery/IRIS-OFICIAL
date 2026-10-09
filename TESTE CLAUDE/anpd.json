@@ -97,10 +97,16 @@
    "reuniao": "CD07",
    "titulo": "Circuito Deliberativo nº 7/2026",
    "tipo": "Circuito Deliberativo",
-   "data": "2026-03-26",
-   "presentes": [],
-   "ausentes": [],
-   "obs": "SEM ATA PUBLICADA (só o PDF de votos)"
+   "data": "2026-03-30",
+   "presentes": [
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
+   "ausentes": [
+    "Waldemar Gonçalves Ortunho Júnior"
+   ],
+   "obs": "SEM ATA PUBLICADA: votos lidos do PDF de votos (marcação X de cada diretor)"
   },
   {
    "reuniao": "CD08",
@@ -338,9 +344,15 @@
    "titulo": "Circuito Deliberativo nº 23/2026",
    "tipo": "Circuito Deliberativo",
    "data": "2026-08-31",
-   "presentes": [],
+   "inicio": "2026-08-31",
+   "presentes": [
+    "Waldemar Gonçalves Ortunho Júnior",
+    "Miriam Wimmer",
+    "Lorena Giuberti Coutinho",
+    "Iagê Zendron Miola"
+   ],
    "ausentes": [],
-   "obs": "SEM ATA PUBLICADA (só o PDF de votos)"
+   "obs": ""
   },
   {
    "reuniao": "CD24",
@@ -481,7 +493,7 @@
   {
    "reuniao": "CD04",
    "data": "2026-03-13",
-   "processo": "",
+   "processo": "00261.004679/2025-00",
    "deliberacao": "CD 4/2026",
    "relator": "Miriam Wimmer",
    "interessado": "ANPD",
@@ -522,16 +534,16 @@
   },
   {
    "reuniao": "CD07",
-   "data": "2026-03-26",
+   "data": "2026-03-30",
    "processo": "00261.000650/2026-21",
    "deliberacao": "CD 7/2026",
    "relator": "Lorena Giuberti Coutinho",
    "interessado": "ANPD",
    "assunto": "1.1. Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala.BR 00263.000215/2026-87]",
-   "resultado": "SEM ATA — só o voto do relator",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator (lido do PDF de votos; ata não publicada)",
    "voto_doc": "",
-   "decisao_texto": "",
-   "tipo_item": "Só voto do relator (sem ata)",
+   "decisao_texto": "Sem ata: PDF de votos com 3 diretores (2 acompanham o relator, 0 não acompanham)",
+   "tipo_item": "Deliberação (lida do PDF de votos, sem ata)",
    "natureza": ""
   },
   {
@@ -752,11 +764,11 @@
    "relator": "Lorena Giuberti Coutinho",
    "interessado": "ANPD",
    "assunto": "Recurso em 2ª Instância - Lei de Acesso a Informações (LAI) - [NUP Fala BR 00263.001457/2026-98]",
-   "resultado": "SEM ATA — só o voto do relator",
+   "resultado": "APROVADO NO CIRCUITO — todos os votantes acompanharam o relator",
    "voto_doc": "",
-   "decisao_texto": "",
-   "tipo_item": "Só voto do relator (sem ata)",
-   "natureza": ""
+   "decisao_texto": "Total de votos 4; acompanha 3; não acompanha 0; levar à reunião: Não",
+   "natureza": "Organização e Funcionamento",
+   "tipo_item": "Deliberação"
   },
   {
    "reuniao": "CD24",
@@ -955,7 +967,7 @@
   {
    "reuniao": "CD04",
    "data": "2026-03-13",
-   "processo": "",
+   "processo": "00261.004679/2025-00",
    "deliberacao": "CD 4/2026",
    "diretor": "Waldemar Gonçalves Ortunho Júnior",
    "voto": "ACOMPANHOU",
@@ -964,7 +976,7 @@
   {
    "reuniao": "CD04",
    "data": "2026-03-13",
-   "processo": "",
+   "processo": "00261.004679/2025-00",
    "deliberacao": "CD 4/2026",
    "diretor": "Miriam Wimmer",
    "voto": "RELATOR (voto proferido)",
@@ -973,7 +985,7 @@
   {
    "reuniao": "CD04",
    "data": "2026-03-13",
-   "processo": "",
+   "processo": "00261.004679/2025-00",
    "deliberacao": "CD 4/2026",
    "diretor": "Lorena Giuberti Coutinho",
    "voto": "ACOMPANHOU",
@@ -982,7 +994,7 @@
   {
    "reuniao": "CD04",
    "data": "2026-03-13",
-   "processo": "",
+   "processo": "00261.004679/2025-00",
    "deliberacao": "CD 4/2026",
    "diretor": "Iagê Zendron Miola",
    "voto": "ACOMPANHOU",
@@ -1062,11 +1074,38 @@
   },
   {
    "reuniao": "CD07",
-   "data": "2026-03-26",
+   "data": "2026-03-30",
+   "processo": "00261.000650/2026-21",
+   "deliberacao": "CD 7/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "SEM VOTO (não votou no circuito)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD07",
+   "data": "2026-03-30",
+   "processo": "00261.000650/2026-21",
+   "deliberacao": "CD 7/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD07",
+   "data": "2026-03-30",
    "processo": "00261.000650/2026-21",
    "deliberacao": "CD 7/2026",
    "diretor": "Lorena Giuberti Coutinho",
-   "voto": "RELATOR (proposta; resultado sem ata)",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD07",
+   "data": "2026-03-30",
+   "processo": "00261.000650/2026-21",
+   "deliberacao": "CD 7/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
    "proveniencia": "nominal"
   },
   {
@@ -1614,8 +1653,35 @@
    "data": "2026-08-31",
    "processo": "00261.004526/2026-35",
    "deliberacao": "CD 23/2026",
+   "diretor": "Waldemar Gonçalves Ortunho Júnior",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD23",
+   "data": "2026-08-31",
+   "processo": "00261.004526/2026-35",
+   "deliberacao": "CD 23/2026",
+   "diretor": "Miriam Wimmer",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD23",
+   "data": "2026-08-31",
+   "processo": "00261.004526/2026-35",
+   "deliberacao": "CD 23/2026",
    "diretor": "Lorena Giuberti Coutinho",
-   "voto": "RELATOR (proposta; resultado sem ata)",
+   "voto": "RELATOR (voto proferido)",
+   "proveniencia": "nominal"
+  },
+  {
+   "reuniao": "CD23",
+   "data": "2026-08-31",
+   "processo": "00261.004526/2026-35",
+   "deliberacao": "CD 23/2026",
+   "diretor": "Iagê Zendron Miola",
+   "voto": "ACOMPANHOU",
    "proveniencia": "nominal"
   },
   {
@@ -1839,24 +1905,24 @@
   [
    "ANPD",
    "Nº de votantes citados × \"Total de votos\" da própria ata",
-   25,
-   25,
+   26,
+   26,
    "OK",
-   "2 atas por OCR sem a contagem"
+   "2 atas por OCR sem a contagem; 1 circuito sem ata (votos do PDF)"
   ],
   [
    "ANPD",
    "Acompanha + relator = Total (aritmética da ata)",
-   25,
-   25,
+   26,
+   26,
    "OK",
    ""
   ],
   [
    "ANPD",
    "Ata assinada por diretor do colegiado (presidente/substituta)",
-   27,
-   27,
+   28,
+   28,
    "OK",
    ""
   ],
@@ -1873,7 +1939,24 @@
    "Votos por circuito = 4 diretores (1 por membro do colegiado)",
    29,
    29,
-   "OK"
+   "OK",
+   ""
+  ],
+  [
+   "ANPD",
+   "Processo preenchido em todos os circuitos (inclusive os lidos por OCR)",
+   29,
+   29,
+   "OK",
+   ""
+  ],
+  [
+   "ANPD",
+   "PDF de votos (X em acompanho) × votantes da ata: formulários marcados ⊆ votantes da ata",
+   25,
+   25,
+   "OK",
+   "confere a leitura do X contra a fonte independente (ata)"
   ]
  ],
  "cobertura": [
@@ -1886,7 +1969,7 @@
   [
    "ANPD",
    "Circuitos com ata lida",
-   27,
+   28,
    "2 por OCR (cd-02, cd-04)"
   ],
   [
@@ -1900,19 +1983,10 @@
   [
    "ANPD",
    "CD07",
-   "2026-03-26",
+   "2026-03-30",
    "Ata do circuito não publicada (só PDF de votos)",
    "PDF de votos existe; ata não",
-   "Circuito já realizado",
-   "Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD"
-  ],
-  [
-   "ANPD",
-   "CD23",
-   "2026-08-31",
-   "Ata do circuito não publicada (só PDF de votos)",
-   "PDF de votos existe; ata não",
-   "Circuito já realizado",
+   "Votos individuais lidos do PDF de votos; falta só a ata oficial (data de encerramento e contagem)",
    "Rodar rodar_tudo.sh; conferir a página de circuitos da ANPD"
   ]
  ],
