@@ -1,0 +1,311 @@
+15/09/2026, 10:31 SEI/ANTT-45515225-VotoDAA
+AGENCIA NACIONAL DE TRANSPORTES TERRESTRES
+VOTO DAA
+RELATORIA:ALEX AZEVEDO
+TERMO: VOTO A DIRETORIA COLEGIADA
+NUMERO: 47/2026
+oBJETo: Celebracao do 6° Termo Aditivo ao Contrato de Concessao decorrente do Edital n° 001/2019, firmado com a Concessionaria
+Ecovias do Cerrado S.A., para incorporar, em carater definitivo, o Sistema de Pesagem Veicular em Movimento - HS-WIM (High Speed
+Weigh-in-Motion) ao Contrato, disciplinando os seus aspectos operacionais, patrimoniais e economico-financeiros; e para alterar o
+Programa de Exploracao da Rodovia  PER, substituindo as obrigacoes relativas aos Postos de Pesagem Veicular pelas obrigacoes
+associadas a implantacao, operacao e monitoracao do Hs-WIM, em razao da viabilidade tecnica da solucao constatada no ambito do
+Sandbox Regulatorio.
+oRIGEM: Superintendencia de Infraestrutura Rodoviaria  SUROD, com atuacao da Superintendencia de Fiscalizacao de Servicos de
+Transporte Rodoviario de Cargas e Passageiros (SUFIS), da Superintendencia de Servicos de Transporte Rodoviario e Multimodal de Cargas
+(SUROC) e da Superintendencia de Desenvolvimento e Gestao (SUDEG).
+PROCESSO (S): 50500.033354/2025-34
+PROPOSIcAo PF/ANTT: Parecer n° 00157/2026/PF-ANTT/PGF/AGU
+ENCAMINHAMENTO: A VOTACAO - DIRETORIA COLEGIADA
+1. EMENTA
+DECLARACAO DE VIABILIDADE. INCORPORACAO DEFINITIVA DO SISTEMA DE PESAGEM VEICULAR EM MOVIMENTO - HS-WIM.
+DOS ATIVOS AO INVENTARIO DE BENS REVERSiVEIS. PARECER DA PROCURADORIA FEDERAL PELA JURIDICIDADE. ANUENCIA DA
+CONCESSIONARIA. INSTRUCAO COMPLETA.
+PELAAPROVACAO.
+2. RELATORIO
+2.1. DO OBJETO
+2.1.1. Identificacao do instrumento. Trata-se da proposta de celebracao do 6o Termo Aditivo ao Contrato de Concessao decorrente
+do Edital n 001/2019, firmado entre a Agéncia Nacional de Transportes Terrestres e a Concessionaria Ecovias do Cerrado S.A.
+2.1.2. Objeto especifico - Sistema Hs-WiM. O instrumento incorpora, em carater definitivo, o Sistema de Pesagem Veicular em
+Movimento - HS-WiM ao Contrato de Concessao, em substituicao aos Postos de Pesagem Veicular (PPV), alterando o Programa de
+Exploracao da Rodovia  PER (subclausula 1.1, incisos I e ll, da minuta constante do SEl n 44254283).
+2.1.3. Pecas que acompanham a proposta. Acompanham a proposta a Minuta de Extrato (SEl n 44036805) e a Minuta de
+Deliberacao (SEl n 44036809).
+2.1.4. DO HISTORICO PROCESSUAL
+2.1.5.
+regulatorio experimental destinado a testar a viabilidade tecnica e regulatoria do Sistema de Pesagem Veicular em Movimento em Alta
+Velocidade na Rodovia BR-364/365/GO/MG, em substituicao ao modelo convencional de Postos de Pesagem Veicular originalmente previsto
+no PER. A vigencia foi fixada em 24 meses a partir de 26/06/2023, nos termos do art. 18 da Resolucao ANTT n° 5.999/2022. O instrumento
+suspendeu as obrigacoes contratuais originais relativas aos postos fixos, instituiu parametros operacionais provisorios para o HS-WIM e
+determinou, na sua Clausula 4.2, que o encerramento da participacao da Concessionaria no ambiente experimental fosse seguido da
+celebracao de novo Termo Aditivo - definitivo, caso constatada a viabilidade do projeto (subclausula 4.2.1) - conforme registra o
+Parecer n° 00157/2026/PF-ANTT/PGF/AGU (SEI n° 43756863), itens 9 e 10.
+2.1.6. A conclusao do experimento. Pela Carta ECC-GAC-0748-2025 (SEI n° 33376929), protocolada em 26/06/2025, a
+Concessionaria comunicou o encerramento do ambiente experimental em 27/06/2025 e manifestou o interesse na continuidade operacional da
+solucao tecnologica ate a formalizacao do instrumento contratual definitivo. Em 22/08/2025, o Despacho da COTIC (SEI n° 34929398), a
+vista do Relatorio Final apresentado pela Concessionaria (SEI n° 34256641l) e do Relatorio Final da Comissao do Sandbox Regulatorio
+(SEI n° 34033310), registrou que o ambiente experimental havia sido devidamente concluido. Esta ai o marco que autoriza este Termo
+Aditivo: a experimentacao foi levada a termo e a solucao foi declarada viavel.
+2.1.7. A construcao do instrumento. Reconhecida a viabilidade, a instrucao voltou-se integralmente a elaboracao do aditivo
+definitivo, em processo dialético que se estendeu por aproximadamente um ano e mobilizou as areas tecnicas da Agencia e a Concessionaria.
+definicoes operacionais, parametros de desempenho e disposicoes sobre a responsabilidade orcamentaria pelo processamento da fiscalizacao
+2.1.8. Seguiu-se a consulta as unidades competentes, cujas contribuicoes moldaram o texto que ora se submete:
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52955379&infra_siste... 1/6
+[pg 1]
+
+15/09/2026,10:31 SEI/ANTT - 45515225 - Voto DAA
+medicao, classes de exatidao, prazos de envio de dados, limites de inconsisténcias e assertividade do leitor OcR - por serem
+essenciais a atuacao fiscalizatoria;
+o Despacho coExP (SEl n? 36956863) respondeu a cada uma delas, precisando o conceito de Taxa de Aproveitamento,
+recomendando a adocao de equipamentos de Classe de Exatidao 1A, o prazo maximo de sete dias para envio dos dados a fiscalizacao
+e os critérios minimos de qualidade da informacao encaminhada;
+Concessionaria dos custos operacionais vinculados ao processamento dos autos de infracao decorrentes da fiscalizacao eletronica;
+2.1.9. Consolidadas as manifestacoes, foi elaborada a versao inicial da minuta pela Agencia (SEI n° 36607479), a que se seguiu nova
+proposta da Concessionaria (Carta ECC-GAC-1151-2025, SEI n° 37723726).
+2.1.10. O aperfeicoamento regulatorio. A Nota Técnica n° 1286/2026/COGIP/GEGIR/SUROD/ANTT (SEI n° 3946156Q)
+promoveu a harmonizacao do texto com os Regulamentos das Concessoes Rodoviarias, substituindo a classificacao de logica contabil -
+"CAPEX/OPEX" - pela classificacao regulatoria de "custos de implantacao" e "custos relacionados", estes subdivididos em operacao,
+manutencao e conservacao, e monitoracao. A mesma Nota Técnica atualizou o PER com a retirada das referencias a postos fisicos, a inclusao
+dos elementos integrantes da infraestrutura Hs-WIM, o aperfeicoamento das definicoes contratuais e a previsao de incorporacao
+patrimonial dos ativos - porticos, sensores de pista, cameras OCR, softwares, equipamentos elétricos, sistemas de comunicacao e demais
+bens reversiveis - ao inventario de Bens da Concessao. Dela resultou a minuta SEI n° 39304839.
+2.1.11. Em paralelo, a Gerencia de Engenharia Rodoviaria procedeu a apuracao dos valores relacionados ao sistema, considerando
+exclusivamente despesas comprovadas mediante documentacao idonea - notas fiscais, comprovantes de pagamento, instrumentos
+contratuais e recolhimentos tributarios.
+2.1.12. O dialogo final e a manifestacao juridica. Pelo Oficio n° 6554/2026/COGIP/GEGIR/SUROD/DIR-ANTT (SEI n°
+39798597), a Agencia encaminhou a minuta consolidada a Concessionaria, que respondeu pela Carta ECC-GED-0448-2026 (SEI n°
+42734479), com a minuta SEI n° 42734485. O Despacho GEGIR (SEI n° 42785354) consolidou as alteracoes e submeteu-as a SUFIS e a
+GEENG; a SUFIS manifestou concordancia pelo Despacho COEXP (SEI n° 42998253), e o Despacho GEENG (SEI n° 42987450) examinou
+a metodologia de apuracao dos custos relacionados e o valor provisorio entao proposto.
+2.1.13.
+GEGIR apresentou a Concessionaria a nova versao da minuta (SEI n° 43804531) com quadro comparativo das alteracoes, todas voltadas ao
+atendimento do Parecer: a Clausula do Reequilibrio passou a explicitar o rito da Revisao Extraordinaria como instrumento de
+Ratificacao recebeu a redacao sugerida pela Procuradoria; os campos de assinatura de testemunhas foram excluidos, por desnecessarios a
+validade do contrato administrativo; e o Anexo IV do PER passou a arrolar tambem o Relatorio Mensal de Monitoracao do HS-WIM,
+conferindo maior sistematizacao ao conjunto de obrigacoes de reporte.
+2.1.14. A anuencia e o fecho da instrucao. A Concessionaria manifestou concordancia pelas Cartas ECC-GED-0614-2026 (SEI n°
+44015811) e ECC-GED-0624-2026 (SEI n° 44151346), com sugestoes pontuais acolhidas em sua maioria pela area tecnica, conforme
+resposta pelo Oficio n° 30689/2026 (SEI n° 44036954). Resultou dai a minuta final, SEI n° 44254283.
+2.1.15. Em 24 de julho de 2026, a SUROD atestou a completude da instrucao, com os documentos exigidos pelo art. 39, s 2°, do
+Regimento Interno (Despacho de Instrucao, SEI n° 44036949), e firmou o Relatorio a Diretoria n° 331/2026 (SEI n° 44036825), concluindo
+pela aptidao da materia a deliberacao colegiada. Deu-se ciencia a Concessionaria do encaminhamento pelo Oficio n° 31744/2026 (SEI n°
+44255013). 0 feito foi distribuido a esta Relatoria, por prevencao, em 28 de julho de 2026 (Certidao de Distribuicao, SEI n° 44410264),
+conforme designacao registrada na Ata da 176a Reuniao de Diretoria Administrativa (SEI n° 40791154) e encaminhamento do Gabinete do
+Diretor-Geral (SEI n° 44313651).
+E o relatorio.
+3. FUNDAMENTACAO
+3.1. DAANALISE DE ADMISSIBILIDADE
+3.1.1. Da competencia. A matéria foi analisada e submetida pela Superintendéncia de Infraestrutura Rodoviaria no exercicio da
+atribuicao do art. 32, inciso Xll, do Regimento Interno da ANTT, aprovado pela Resolucao n? 5.976, de 7 de abril de 2022, com a redacao
+aprimoramento e alteracoes dos contratos de concessao rodoviaria e de reajuste e revisao". A inclusao do Sistema de Pesagem Hs-WiM,
+em substituicao dos Postos de Pesagem Veicular no Programa de Exploracao da Rodovia, é medida de aprimoramento tecnologico-
+operacional do Contrato de Concessao (e nao mera alteracao formal), o que se insere no dispositivo invocado. A deliberacao sobre alteracao
+de contrato de concessao é da Diretoria Colegiada, e a este Relator compete instruir e submeter o voto.
+3.1.2. Da instrucao. A instrucao esta completa desde 24 de julho de 2026, atestada pela unidade competente no Despacho de
+Instrucao (SEl n9 44036949) e detalhada no Relatorio a Diretoria n? 331/2026 (SEl n? 44036825). Constam dos autos as manifestacoes
+téecnicas de todas as unidades cuja competéncia é tocada pela matéria - engenharia, tecnologia, fiscalizacao, orcamento e gestao -, a
+3.1.3.
+celebracao, e as recomendacoes de aprimoramento foram acolhidas na versao final da minuta, conforme o quadro comparativo do Oficio n°
+29416/2026 (SEI n° 43804780). A cadeia de aprovacao interna da Procuradoria esta completa (Despacho n° 06650/2026, SEI n° 43756872).
+3.1.4. Estao presentes, portanto, todos os pressupostos de admissibilidade.
+3.2. DAANALISE DE MERITO
+3.2.1. O exito de um ciclo completo de inovacao regulatoria
+2/6
+[pg 2]
+
+15/09/2026, 10:31 SEI/ANTT - 45515225- Voto DAA
+3.2.2.
+O que se submete a Diretoria nao é uma alteracao contratual comum. E o fecho bem-sucedido de um ciclo regulatorio
+inteiro, percorrido na ordem que o desenho normativo previu: a Agencia autorizou uma experimentacao delimitada, a experimentacao foi
+conduzida sob acompanhamento, uma Comissao a avaliou, a viabilidade foi declarada (Despacho coTIC, SEl n² 34929398, a vista do
+Relatorio Final da Comissao do Sandbox Regulatorio, SEl n? 34033310), e agora o resultado positivo é convertido em regime contratual
+permanente, exatamente como determinava a subclausula 4.2.1 do 12 Termo Aditivo.
+3.2.3. Esse percurso tem valor proprio, independentemente da tecnologia testada. Ele demonstra que o Sandbox Regulatorio
+funciona como instrumento: permite a Agencia admitir uma solucao nova sem comprometer-se com ela antes da prova, e converter em
+obrigacao contratual apenas aquilo que a experimentacao sustentou. Aprovar este Termo Aditivo é, portanto, também confirmar a utilidade
+3.2.4. O ganho fiscalizatorio é mensuravel, e é grande
+3.2.5.
+O argumento decisivo de mérito nao é de promessa, mas de medicao ja registrada nos autos.
+3.2.6. O Despacho coTIc/sUROC (SEl n? 36285681) consignou que a média de operacao dos Postos de Pesagem Veicular
+tradicionais, em 2025, foi de 15 horas e 30 minutos por dia - o equivalente a 64,6% de disponibilidade. E registrou a razao da diferenca:
+"uma das grandes vantagens dos equipamentos Hs-WiM é o seu maior tempo de operacao, principalmente porque nao ha influencia por
+limitacoes de patio, intempéries e formacao de filas". O modelo fixo depende de patio para acomodar veiculos, de condicoes
+meteorologicas favoraveis e da auséncia de congestionamento na area de retencao; o sistema em movimento nao depende de nenhum dos
+trés.
+3.2.7.
+superam com folga o desempenho do modelo que se substitui:
+parametro a partir da assinatura apos 12 meses apos 36 meses
+Performance de Operacionalidade (disponibilidade mensal) 80% 95%
+Taxa de Aproveitamento (registros aptos a subsidiar autuacao) 90% 95% 97%
+3.2.8. O contraste é eloquente: o modelo anterior entregava, na pratica, 64,6% de disponibilidade; o instrumento passa a exigir 80%
+desde a assinatura e 95% ao fim do primeiro ano. A fiscalizacao de excesso de peso na BR-364/365/GO/MG ganha, por obrigacao
+contratual, cerca de trinta pontos percentuais de disponibilidade em relacao ao desempenho medido do sistema que sai. E a minuta
+acrescenta a exigencia de que, em condicoes normais, o Sistema esteja apto a operar de forma continua, durante 24 horas por dia e todos
+os dias da semana.
+3.2.9. A qualidade da medicao tambem esta assegurada. A minuta exige que todos os equipamentos atendam a Classe de Exatidao
+1A, definida na Portaria INMETRO n? 375/2013  exigencia que responde diretamente a observacao da COEXP de que "existem
+equipamentos homologados pelo Inmetro cuja precisao nao atende as necessidades da fiscalizacao de excesso de peso veicular". E fixa a
+assertividade minima do leitor OcR em 9o%, excluidos do calculo, com acerto, os casos de evidenciada tentativa de burla pelo usuario e os
+veiculos nao aptos ao processo fiscalizatorio.
+3.2.10. O Despacho SUROc (SEl n 36392573) registra ainda o resultado pratico ja observado: em evento realizado na ANTT, em
+11/09/2025, apresentou-se "o grande numero de autuacoes geradas pelo sistema, frente a todos os outros sistemas de pesagem veicular
+3.2.11. O ganho para o usuario e para a via
+3.2.12. A pesagem em movimento dispensa a retencao do veiculo para a afericao. Onde o modelo fixo obrigava o caminhao a deixar a
+rodovia, entrar no patio, aguardar fila e ser pesado em balanca estatica, o HS-WIM afere na velocidade da via, por sensores instalados no
+pavimento e equipamentos montados em porticos.
+3.2.13. Os efeitos se somam. Para o transportador, elimina-se o tempo de parada e a incerteza da fila - ganho direto de
+produtividade logistica. Para a seguranca viaria, suprime-se a manobra de saida e reentrada de veiculos pesados no fluxo principal, que é,
+por natureza, um ponto de conflito. Para a fluidez do trafego, desaparece a formacao de filas na area de retencao. Para a infraestrutura, o
+asfaltico, e uma fiscalizacao que opera 95% do tempo dissuade muito mais do que uma que opera 64,6%.
+3.2.14.  A minuta cuida tambem da informaao ao usuario: a Clausula Segunda determina, no Escopo de Recuperacao n° 17 do item
+3.1.2 do PER, a implantacao de placas de advertencia informando a presenca do sistema de pesagem a frente, placas de regulamentacao de
+velocidade e placas com a mensagem expressa "Fiscalizacao por agente remoto e videomonitoramento", em conformidade com as
+Resolucoes CONTRAN n° 902 e n° 909/2022. A fiscalizacao eletronica é ostensiva, como deve ser.
+3.2.15. O ganho fundiario e patrimonial
+3.2.16. Ha um beneficio menos visivel e de grande alcance. No modelo originalmente previsto no Contrato, a implantacao de balanca
+fixa exigia posto de pesagem e estruturas de apoio, demandando areas alem da faixa de dominio e justificando o ajuizamento de acoes de
+desapropriacao. O HS-WIM opera integralmente dentro da faixa de dominio existente, por meio de porticos e equipamentos instalados na
+propria via.
+3.2.17. A consequencia foi comunicada pela Concessionaria na Carta ECC-GED-0433-2026 (SEI n° 42566219): a intencao de desistir
+das acoes judiciais de desapropriacao originalmente ajuizadas para os antigos Postos de Pesagem Veicular, por se terem tornado
+desnecessarias. Aprovada a modernizacao contratual, deixa de haver fundamento para a intervencao estatal na propriedade privada -
+resultado que serve simultaneamente ao interesse dos proprietarios atingidos, a economia processual e a reducao do passivo indenizatorio da
+concessao. A matéria é tratada nos autos do processo n° 50505.046869/2026-35.
+3.2.18. No plano patrimonial, a subclausula 4.4 assegura a reversibilidade dos ativos: os bens e sistemas integrantes do HS-WIM -
+porticos, sensores de pista, cameras OCR, softwares, gabinetes, equipamentos elétricos e de comunicacao, sinalizacao e demais ativos
+vinculados - deverao ser formalmente arrolados e apresentados a ANTT para insercao no inventario de Bens da Concessao, observado o
+rito da subclausula 4.2.4 do Contrato. O Poder Concedente recebe, ao fim da concessao, a infraestrutura tecnologica que a tarifa custeou.
+3.2.19. A higidez economico-financeira
+3/6
+[pg 3]
+
+15/09/2026, 10:31 SEI/ANTT - 45515225- Voto DAA
+A estrutura de recomposicao adotada é a que o Contrato e a regulamentacao ja previam, e a Procuradoria Federal confirmou o
+3.2.20.
+seu fundamento.
+3.2.21. Pela exclusao da obrigacao original relativa aos itens 3.4.7 (Sistema de Pesagem) e 3.4.3.5 (Sistema de deteccao de altura),
+aplica-se o Desconto de Reequilibrio - Fator D até o final do prazo contratual, com ajuste em Revisao Ordinaria, nos moldes da Resolucao
+ANTT n° 6.032/2023 e da Clausula 9.1.9 do Contrato. A subclausula 3.1.1 assegura a coerencia do computo, ao determinar que o Fator D
+abranja "a totalidade dos encargos previstos originalmente para a pesagem fixa, incluindo o custo de implantacao e revitalizacao, bem como o
+custo relacionado das referidas instalacoes" - de modo que nada do que a Concessionaria deixa de fazer permanece remunerado.
+3.2.22. Pela inclusao da obrigacao de implantar e operar o HS-WIM, a recomposicao se processa por Fluxo de Caixa Marginal. O
+Parecer registrou que a previsao encontra amparo nas subclausulas 9.1.9(ii) e 9.1.9(ii) do Contrato e na Resolucao ANTT n° 6.032/2023, e
+que a mesma sistematica ja constava da subclausula 5.4(i) do proprio 1° Termo Aditivo (itens 16 e 17).
+3.2.23. Atendendo a recomendacao do item 21 do Parecer, a subclausula 3.3 passou a identificar expressamente o rito: as
+recomposicoes serao reconhecidas por meio de Revisao Extraordinaria, produzindo os seus efeitos financeiros na Revisao Ordinaria
+subsequente a aprovacao pela ANTT. Ganhou-se em precisao e em seguranca juridica.
+3.2.24. Quanto ao valor, a subclausula 4.2 fixa o montante provisorio dos custos de implantacao em Rs 21.679.420,25,
+correspondente exclusivamente aos dispendios de implantacao inicial. A subclausula 4.2.1 é expressa em que a adocao de valor provisorio
+nao dispensa a posterior aprovacao dos valores definitivos pela ANTT, a ser formalizada mediante termo aditivo retificador, em estrita
+observancia ao art. 27-D, s 4°, da Resolucao ANTT n° 5.950/2021. A Agencia nao se vincula, portanto, a nenhum montante definitivo neste
+ato.
+3.2.25. Quanto aos custos relacionados - operacao, manutencao e conservacao, e monitoracao -, a solucao adotada merece registro
+por ser mais protetiva do interesse publico do que a alternativa inicialmente cogitada. Em vez de fixar desde logo uma estimativa apoiada
+em dados do periodo experimental, a Agencia optou por apura-los a partir dos custos efetivamente verificados na operacao, mediante
+prestacao de contas: ano a ano nos dois primeiros anos (subclausula 4.3.1) e, depois, com base nos valores ja verificados, podendo ser
+projetados para o prazo remanescente (subclausula 4.3.2). A escolha substitui projecao por medicao, e submete cada ciclo a validacao da
+ANTT. O Parecer examinou a solucao e a qualificou como "opcao metodologica deliberada e tecnicamente fundamentada pela area
+competente", sem vicio juridico (itens 25 e 26).
+3.2.26. A escolha metodologica dos custos relacionados. Desse exame nasceu um dos aperfeicoamentos mais relevantes do
+instrumento. Verificou-se que os custos observados durante o Sandbox - periodo naturalmente marcado por calibracoes, ajustes tecnologicos
+e atividades de validacao - nao representariam adequadamente o comportamento dos custos em regime de operacao plena. Consolidou-se,
+entao, o entendimento de que a metodologia mais aderente a realidade é a apuracao dos custos efetivamente incorridos nos dois primeiros
+anos de operacao contratual definitiva, mediante prestacao de contas validada pela ANTT, com projecao subsequente para o prazo
+remanescente da concessao.
+3.2.27. Registre-se, por fim, que o exame da Agencia sobre os valores foi rigoroso, e o registro dos autos o demonstra em dois
+Rs 16.828.660,26 - o que veio acompanhado de documentacao idonea. No segundo, sobre a proposta de fixar o valor provisorio da
+subclausula 4.2 em Rs 32.488.065,01, a precos de junho de 2025, apresentada pela Concessionaria nas minutas SEI n° 42734485 e 43146692
+e reproduzida no Oficio n° 21655/2026 (SEI n° 43026666), a area tecnica se pronunciou pelo Despacho GEENG (SEI n° 42987450), e a
+minuta submetida a Procuradoria trouxe valor diverso. A Agencia examinou o pleito com o criterio que dele se esperava, e o fez mais de uma
+vez.
+3.2.28. A qualidade do processo dialético
+3.2.29. Merece registro o metodo pelo qual este instrumento foi construido. O texto submetido nao é a proposta da Concessionaria
+nem a imposicao unilateral da Agencia: é o produto de sucessivas rodadas em que cada unidade tecnica formulou exigencias, a delegataria
+respondeu, e a redacao evoluiu.
+3.2.30. Sao exemplos verificaveis nos autos: a definicao da Taxa de Aproveitamento foi precisada pela COEXP diante de
+ambiguidade apontada pela COTIC; a exigencia de Classe de Exatidao 1A nasceu da constatacao de que a homologacao do Inmetro,
+isoladamente, nao garante a precisao que a fiscalizacao exige; a responsabilidade pelos custos de processamento das autuacoes foi trazida
+pela SUDEG; a substituicao da terminologia contabil pela regulatoria veio da Nota Técnica n° 1286/2026, por aderencia aos
+Regulamentos das Concessoes Rodoviarias; e a metodologia de apuracao dos custos reais resultou do exame conjunto entre a GEGIR e a
+GEENG. Cada uma dessas contribuicoes melhorou o instrumento.
+3.2.31. A Procuradoria Federal, por sua vez, aprimorou a tecnica juridica em quatro pontos, todos incorporados: o rito do reequilibrio,
+o tratamento do instrumento exaurido, a clausula de ratificacao e a supressao dos campos de testemunhas.
+3.2.32. O alcance da decisao: um paradigma para o setor
+3.2.33. Esta é a primeira conversao, no ambito desta Agencia, de um Sandbox Regulatorio de pesagem veicular em movimento
+em regime contratual definitivo. As solucoes aqui consolidadas - a estrutura de recomposicao por Fator D e Fluxo de Caixa Marginal, a
+apuracao dos custos relacionados por observacao empirica validada, os patamares progressivos de Performance de Operacionalidade e de
+constituem um modelo replicavel.
+Por essa razao, e para que a seguranca juridica alcance tambem os demais contratos, entende esta Relatoria que o presente
+3.2.34.
+Termo Aditivo deve ser expressamente declarado o padrao para os demais contratos de concessao que venham a incorporar a pesagem
+veicular em movimento em carater definitivo. A declaracao expressa é preferivel a consequencia implicita: ela da previsibilidade ao setor
+regulado, uniformidade a atuacao das areas tecnicas e cumpre o dever de motivacao do art. 50 da Lei n° 9.784/1999.
+3.3. CONCLUSAO DA ANALISE PROCESSUAL
+A materia esta madura para deliberacao e o seu merito é favoravel.
+O objeto tem pressuposto material demonstrado - a viabilidade tecnica declarada ao cabo do ambiente experimental. Tem base
+contratual expressa - a subclausula 4.2.1 do 1° Termo Aditivo, que determinava exatamente este desfecho. Tem amparo regulatorio - a
+Clausula 9.1.9 do Contrato e a Resolucao ANTT n 6.032/2023 para a recomposicao, 0 art. 27-D, $ 4°, da Resolucao ANTT n° 5.950/2021
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52955379&infra_siste.. 4/6
+[pg 4]
+
+15/09/2026, 10:31 SEI/ANTT-45515225-Voto DAA
+para a formalizacao do valor definitivo. Tem manifestacao juridica favoravel da Procuradoria Federal. Tem anuencia da delegataria. E
+entrega ao interesse publico um ganho fiscalizatorio que os autos medem, nao presumem.
+Esta Relatoria acompanha integralmente a proposta de encaminhamento da Superintendencia de Infraestrutura Rodoviaria.
+4. PROPOSICAO FINAL
+4.1. DO VOTO
+4.1.1. Ante o exposto, considerando que:
+a) o Sistema de Pesagem Veicular em Movimento - HS-WIM foi declarado viavel pela Comissao do Sandbox
+(Despacho COTIC, SEI n° 34929398), atendendo-se ao pressuposto da subclausula 4.2.1 do 1° Termo Aditivo para a
+celebracao deste instrumento definitivo;
+b) a instrucao esta completa, conforme Despacho de Instrucao (SEI n° 44036949) e Relatorio a Diretoria n° 331/2026 (SEI
+n° 44036825), com manifestacoes favoraveis de todas as unidades técnicas consultadas e anuencia da Concessionaria as
+minutas correspondentes;
+c) a Procuradoria Federal junto a ANTT manifestou-se pela juridicidade do instrumento pelo Parecer n° 00157/2026/PF-
+ANTT/PGF/AGU (SEI n° 43756863), item 31, com recomendacoes integralmente incorporadas na minuta final SEI n°
+44254283, conforme o quadro comparativo do Oficio n° 29416/2026 (SEI n° 43804780);
+d) a elevacao dos patamares contratuais é mensuravel e codificada: o modelo fixo operou em 2025 com disponibilidade
+media de 15h30 p0r dia, equivalente a 64,6% (Despacho COTIC/SUROC, SEI n° 36285681), e a minuta final passa a
+exigir desempenho progressivo - Performance de Operacionalidade de 80% desde a assinatura e 95% apos doze meses,
+Taxa de Aproveitamento de 90% / 95% / 97% (crescente em 12, 24 e 36 meses), Classe de Exatidao 1A e assertividade
+minima do leitor OCR de 90%;
+e) a higidez economico-financeira esta estruturada na Clausula 9.1.9 do Contrato e na Resolucao ANTT n° 6.032/2023,
+com a Clausula Terceira aplicando o Fator D pela exclusao dos postos fixos e o Fluxo de Caixa Marginal pela inclusao do
+HS-WIM, com identificacao expressa do rito de Revisao Extraordinaria no reconhecimento das recomposicoes, em
+atendimento a recomendacao do item 21 do Parecer;
+f) a operacao e a fiscalizacao seguem em curso na rodovia desde 27 de junho de 2025, com a aplicabilidade do ato
+mantida por Declaracao de Viabilidade e pela preservacao dos efeitos juridicos produzidos no periodo experimental, na
+forma do Oficio n° 29416/2026;
+g) a presente aprovacao é o fecho bem-sucedido de um ciclo regulatorio completo, no qual a inovacao foi testada sob
+acompanhamento, declarada viavel e convertida em regime contratual definitivo exatamente como previsto no desenho
+original do Sandbox Regulatorio;
+h) a presente deliberacao nao vincula a Agencia a qualquer valor monetario definitivo na subclausula 4.2, cuja definicao
+sera formalizada por termo aditivo retificador, na forma do art. 27-D, s 4°, da Resolucao ANTT n° 5.950/2021, ficando os
+efeitos do Fator D e do Fluxo de Caixa Marginal condicionados aos ritos proprios de Revisao;
+i) a presente deliberacao cria precedente apto a servir de referencia para os demais contratos que venham a incorporar a
+pesagem veicular em movimento em carater definitivo, em beneficio da previsibilidade regulatoria e da uniformidade das
+areas técnicas da Agencia,
+4.2. VOTO por:
+-- APROVAR a celebracao do 6° Termo Aditivo ao Contrato de Concessao decorrente do Edital n° 001/2019, firmado
+com a Concessionaria Ecovias do Cerrado S.A., nos termos da minuta constante do SEI n° 44254283, e da Minuta de
+Deliberacao 45521779 para incorporar em carater definitivo o Sistema de Pesagem Veicular em Movimento - HS-WIM ao
+Contrato de Concessao, disciplinando os seus aspectos operacionais, patrimoniais e economico-financeiros;
+E o voto.
+4.3.
+Brasilia, 04 de setembro de 2026.
+ALEX AZEVEDO
+DIRETOR
+Agencia Nacional de Transportes Terrestres - ANTT
+sei!
+Documento assinado eletronicamente por ALEX ANTONIO DE AZEVEDO CRUZ, Diretor, em 04/09/2026, as 17:14, conforme horario oficial
+de Brasilia, com fundamento no art. 21, inciso Il, da Instrucao Normativa n 22/2023 da ANTT.
+eletronica assinatura
+5/6
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52955379&infra_siste...
+[pg 5]
+
+15/09/2026,10:31 SEI/ANTT-45515225-VotoDAA
+aca0=documento_conferir&id_orga0_acesso_externo=0, informando o codigo verificador 45515225 e o codigo CRC 3D7D359C.
+Referencia:Processon50500.033354/2025-34 SEI n 45515225
+CEP 70200-003 Brasilia/DF - www.antt.gov.br
+https://sei.antt.gov.br/sei/controlador.php?acao=documento_imprimir_web&acao_origem=arvore_visualizar&id_documento=52955379&infra_siste... 6/6
+[pg 6]

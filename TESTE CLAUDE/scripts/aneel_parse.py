@@ -52,6 +52,7 @@ def roster(data): return [SANDOVAL, AGNES, GENTIL, WILLAMY, FERNANDO if data < T
 # ---------------------------------------------------------------- leitura do CSV
 raw = list(csv.DictReader(open('fonte/aneel/pautas_atas.csv', encoding='utf8'), delimiter=';'))
 rows = [r for r in raw if r['DatReuniao'].startswith('2026')]
+DATA_CSV = max(r['DatGeracaoConjuntoDados'] for r in raw)      # data de geração do CSV (nao fixa no codigo)
 def tag_de(ide):
     m = re.match(r'(\d+)/2026 - (RPO|RPC|RPE)$', ide); return f'{m[2]}{int(m[1])}' if m else None
 TIPO = {'RPO': 'Reunião Pública Ordinária (RPO)', 'RPC': 'Circuito Deliberativo Público Ordinário (CDPO/RPC)', 'RPE': 'Reunião Pública Extraordinária (RPE)'}
@@ -198,11 +199,13 @@ def analisa(texto, relator, resultado_col):
         if m and ns: ctx['destaque'].extend(ns[-1:])
         ns, m = antes(r'declar\w+ (?:sua|seu|suas|seus) (?:suspei|impedi)|declar\w+-se (?:suspeit|impedid)')
         if m: ctx['impedidos'].extend([x for x in ns if x not in ctx['impedidos']])
-        ns, m = antes(r'estava ausente|estavam ausentes|ausente no momento|consignou seu voto|consignando seu voto')
+        ns, m = antes(r'estava ausente|estavam ausentes|ausente no momento|consign(?:ou|ando|aram)\s+seus?\s+votos?')
         if m and ns and re.search(r'ausen', n):
             cons = bool(re.search(r'consign', n))
             tipo = 'acompanhou o relator' if re.search(r'acompanhar o voto d[oa] diretor[a]?-relator', n) else ('acompanhou a divergência' if re.search(r'acompanhar a diverg', n) else ('voto consignado' if cons else ''))
             for x in ns: ctx['ausentes'][x] = tipo or ctx['ausentes'].get(x, '')
+        ns, m = antes(r'disponibiliz\w+ (?:seu )?voto')       # ausente que disponibilizou o voto por escrito (lido por outro diretor; RPO20-11): voto consignado
+        if m and ns: ctx.setdefault('disp', []).extend(ns[-1:])
         ns, m = antes(r'nao participou|nao participaram')
         if m: ctx['nao_part'].extend([x for x in ns if x not in ctx['nao_part']])
         m = re.search(r'votos? subsistentes?', n)
@@ -225,6 +228,8 @@ def analisa(texto, relator, resultado_col):
                 else: fol = lead[1:] if re.search(r'votaram|apresentaram', n[m.start():m.end() + 12]) else []
                 ctx['camps'].append({'lider': lead[0], 'seguidores': fol, 'txt': s[:240], 'full': s})
         if re.match(r'(?:o )?processo (?:acima )?foi retirado|decididas as preliminares', n) and 'retirad' in n: ctx['retirada'] = True
+    for x_ in ctx.get('disp', []):
+        if x_ in ctx['ausentes'] and not ctx['ausentes'][x_]: ctx['ausentes'][x_] = 'voto consignado'
     # rotulos das partes: o marcador do texto quando e' sequencia consecutiva a partir de (i); senao, ordem de aparicao
     ms_ = [x['marca'] for x in partes]
     seq_ok = bool(ms_) and all(ms_) and ms_[0] == 'i' and all(rv(m_) == k for k, m_ in enumerate(ms_))
@@ -409,7 +414,7 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
     itens = sorted(por_reuniao[ide], key=lambda x: int(x['NumOrdem'] or 0))
     if ide in pauta_so:
         R.append({'reuniao': tag, 'titulo': f'{num}{"º" if kind == "RPC" else "ª"} {ORD[kind]} da Diretoria da ANEEL ({dmy(data)}) - pauta publicada; ata/resultados ainda não publicados', 'tipo': TIPO[kind], 'data': data,
-                  'presentes': [], 'ausentes': [], 'obs': f'Realizada em {dmy(data)}; a fonte tem só a pauta ({len(itens)} itens) e nenhum resultado: fora de deliberacoes/votos até a ata sair.'})
+                  'presentes': [], 'ausentes': [], 'obs': (f'Realizada em {dmy(data)}; ' if data <= HOJE else f'Ainda NÃO realizada (marcada para {dmy(data)}; coleta em {dmy(HOJE)}); ') + f'a fonte tem só a pauta ({len(itens)} itens) e nenhum resultado: fora de deliberacoes/votos até a ata sair.'})
         continue
     txt_dump = []
     aus_item = collections.Counter()
@@ -489,6 +494,7 @@ for ide in sorted(por_reuniao, key=lambda i: (reuniao_data[i], i)):
                 if d in c['impedidos']: L[d] = ('IMPEDIDO (declarou suspeição/impedimento)', 'nominal', 'única: impedido'); continue
                 if d in c['ausentes']: L[d] = (aus_lbl(d, c), 'nominal', 'única: ausente' + (f' ({c["ausentes"][d]})' if c['ausentes'][d] else '')); continue
                 if d in pedinte: L[d] = ('PEDIU VISTA' + (' (vista coletiva)' if c['coletiva'] else ''), 'nominal', 'única: pediu vista'); continue
+                if d in c['nao_part'] and d != relator: L[d] = ('NÃO PARTICIPOU (voto subsistente de ex-diretor; art. 54 NO-1)', 'nominal', 'única: não participou (voto subsistente de ex-diretor)'); continue
                 if d == relator: L[d] = (('RELATOR (voto proferido; vista concedida)', 'nominal', 'única: relator votou; vista concedida') if d in votou_antes else ('RELATOR (vista concedida; sem voto proferido na ata)', 'nominal', 'única: relator; vista concedida')); continue
                 if d in div_antes:      # divergiu do relator antes da vista (RPO18-4, RPO14-7, RPO15-4, RPO16-16, RPO16-17): nao e' um 'votou' igual ao de quem acompanhou
                     parc, tx_ = div_antes[d]; L[d] = ('DIVERGIU (antes da vista' + ('; divergência parcial' if parc else '') + ')', 'nominal', 'única: divergiu do relator antes da vista — ' + tx_[:170]); continue
@@ -588,9 +594,10 @@ pdf_ok = [k for k, v in man.items() if v.get('ok') and re.search(r'ata_diretoria
 qa('(a) Atas 2026 listadas (dataset de reuniões: executadas) × listadas no dataset de itens × atas lidas (texto de decisão)',
    f"{sum(1 for x in inv['dataset_reunioes_2026'] if x['situacao'] == 'Executada')} executadas", f'{len(realizadas)} com resultado lido',
    sum(1 for x in inv['dataset_reunioes_2026'] if x['situacao'] == 'Executada') == len(realizadas) + sum(1 for i in pauta_so if ide_rr.get(i, {}).get('situacao') == 'Executada'),
-   f'{len(pauta_so)} reunião(ões) só com pauta: {pauta_so}. Atas em PDF baixadas: {len(pdf_ok)} (www2/reuniaodiretoria bloqueados; a fonte lida é o texto de ata do dataset de dados abertos)')
+   f'{len(pauta_so)} reunião(ões) só com pauta: {pauta_so}; com ata lida mas situação ≠ "Executada" no dataset de reuniões (esse CSV é gerado em outra data e fica defasado): {sorted(i for i in realizadas if ide_rr.get(i, {}).get("situacao") != "Executada")}. Atas em PDF baixadas: {len(pdf_ok)} (www2/reuniaodiretoria bloqueados; a fonte lida é o texto de ata do dataset de dados abertos)')
 ids_rr = {x['ide'] for x in inv['dataset_reunioes_2026']}
-qa('(a2) Reuniões do dataset de reuniões × reuniões do dataset de itens (2 arquivos independentes)', len(ids_rr), len(por_reuniao), ids_rr == set(por_reuniao), f'só em um: {sorted(ids_rr ^ set(por_reuniao))}')
+FUT = {i for i in pauta_so if reuniao_data[i] > HOJE}      # reuniao/circuito AINDA NAO realizado, com pauta ja publicada: nao e divergencia
+qa('(a2) Reuniões do dataset de reuniões × reuniões do dataset de itens (2 arquivos independentes)', len(ids_rr), len(set(por_reuniao) - FUT), ids_rr == set(por_reuniao) - FUT, f'só em um: {sorted(ids_rr ^ (set(por_reuniao) - FUT))}; pauta de reunião futura (fora da comparação): {sorted(FUT)}')
 # (b) calendario oficial x atas
 cal_rpo, cal_cir = inv['calendario_oficial']['rpo'], inv['calendario_oficial']['circuitos_cdpo']
 hoje = HOJE
@@ -600,8 +607,8 @@ qa('(b) RPOs do calendário oficial (Portaria 7.014/2025) = denominador', 25, le
 qa('(b) RPOs do calendário já passadas × RPOs com ata/pauta no dataset', len(cal_rpo_pass), len(datas_rpo), len(cal_rpo_pass) == len(datas_rpo), f'ata com resultado: {len(datas_rpo) - len([i for i in pauta_so if "RPO" in i])}; só pauta: {[i for i in pauta_so if "RPO" in i]}')
 dif_rpo = sorted(set(cal_rpo_pass) ^ set(datas_rpo))
 qa('(b) Datas das RPOs: calendário × dataset (mesma data)', 0, len(dif_rpo), not dif_rpo, f'divergentes: {dif_rpo} (calendário 2026-08-25 × dataset 2026-08-24 → RPO 17; ver pendências)')
-dif_c = sorted(set(cal_cir_pass) ^ set(datas_rpc))
-qa('(b) Circuitos CDPO do calendário já passados × RPC no dataset', len(cal_cir_pass), len(datas_rpc), not dif_c, f'divergentes: {dif_c}')
+dif_c = sorted(set(cal_cir_pass) ^ {d for d in datas_rpc if d <= hoje})
+qa('(b) Circuitos CDPO do calendário já passados × RPC no dataset', len(cal_cir_pass), len([d for d in datas_rpc if d <= hoje]), not dif_c, f'divergentes: {dif_c}; circuitos futuros com pauta já publicada (fora da comparação): {sorted(reuniao_data[i] for i in FUT if "RPC" in i)}')
 exp_extra = [i for i in por_reuniao if '- RPE' in i]
 COB.append([AG, 'RPOs do calendário oficial (denominador)', 25, f'{len(cal_rpo_pass)} já passadas ({len(datas_rpo)} no dataset: {len(datas_rpo) - len([i for i in pauta_so if "RPO" in i])} com ata + {len([i for i in pauta_so if "RPO" in i])} só pauta); {25 - len(cal_rpo_pass)} futuras: {[dmy(d) for d in cal_rpo if d > hoje]}'])
 COB.append([AG, 'Circuitos CDPO (calendário)', len(cal_cir), f'{len(cal_cir_pass)} já passados, todos com ata/resultado no dataset; futuros: {[dmy(d) for d in cal_cir if d > hoje]}'])
@@ -620,7 +627,7 @@ ds = inv['dataset_pautas_atas']
 cmp_ds = [(d, n, ds['itens_por_data_datastore'].get(d)) for d, n in ds['itens_por_data_csv'].items() if ds['itens_por_data_datastore'].get(d) and ds['itens_por_data_datastore'].get(d) != n]
 so_csv = [d for d, n in ds['itens_por_data_csv'].items() if not ds['itens_por_data_datastore'].get(d)]
 qa('(c) Itens por data: CSV × API datastore do mesmo portal (contador independente; datas presentes nos dois)', len(ds['itens_por_data_csv']) - len(so_csv), len(ds['itens_por_data_csv']) - len(so_csv) - len(cmp_ds), not cmp_ds,
-   f'divergências: {cmp_ds}; datas só no CSV (datastore ainda não atualizado; CSV de 02/10/2026): {so_csv}')
+   f'divergências: {cmp_ds}; datas só no CSV (datastore ainda não atualizado; CSV de {dmy(DATA_CSV)}): {so_csv}')
 # ancoras no TEXTO (contagem independente, por item): paragrafos/sentencas "A Diretoria ..." e marcadores romanos de nivel 1 x partes emitidas
 bad, ancoras = [], 0
 for d_ in D:
@@ -720,14 +727,14 @@ COB.append([AG, 'Itens (deliberações) lidos', len(D), '; '.join(f'{k}: {n}' fo
 COB.append([AG, 'Linhas de voto (1 por diretor por item)', tot, f'nominal {nom} ({100 * nom / tot:.1f}%); inferido {inf} ({100 * inf / tot:.1f}%); REVISAR {rev} ({100 * rev / tot:.1f}%)'])
 COB.append([AG, 'Itens com decisão composta (≥2 partes)', sum(1 for d_ in D if len(d_['partes']) > 1), f"partes emitidas: {sum(len(d_['partes']) for d_ in D)}; itens com parte por maioria: {len(it_maioria_p)}"])
 COB.append([AG, 'Ex-diretores com voto subsistente (linhas extras)', len(set(extras_log)), f"{dict(collections.Counter(x for _, x in set(extras_log)))}"])
-COB.append([AG, 'Itens da pauta de 06/10/2026 (RPO 20) sem resultado', sum(len(por_reuniao[i]) for i in pauta_so), 'pauta publicada; ata ainda não publicada em 08/10/2026'])
+COB.append([AG, f'Itens de pauta sem resultado ({", ".join(sorted(tag_de(i) + " de " + dmy(reuniao_data[i]) for i in pauta_so)) or "nenhuma reunião"})', sum(len(por_reuniao[i]) for i in pauta_so), f'pauta publicada; resultado/ata ainda não publicado no dataset (coleta em {dmy(HOJE)})'])
 
 # ---------------------------------------------------------------- pendencias / nao_feito
-MOT = 'www2.aneel.gov.br (ata_diretoria e noticias_area) responde 403 do Cloudflare ("Sorry, you have been blocked" / "Attention Required") ao IP do ambiente, em curl, Chromium headless e headed (xvfb); reuniaodiretoria.aneel.gov.br reseta a conexão (ERR_CONNECTION_RESET); biblioteca/sei.aneel via proxy do ambiente = 403 no túnel. Captcha não é resolvido.'
+MOT = 'Reteste em 09/10/2026 com hosts liberados no egress: www2.aneel.gov.br, www.aneel.gov.br, biblioteca.aneel.gov.br e sei.aneel.gov.br respondem HTTP 403 com cabeçalho "cf-mitigated: challenge" e página "Just a moment..." (desafio Cloudflare/Turnstile, não resolvido: curl com User-Agent de navegador + 2 tentativas, Chromium headless e headed/xvfb em sessão única); antes, "Sorry, you have been blocked" / "Attention Required"; reuniaodiretoria.aneel.gov.br segue resetando a conexão (curl 35 / ERR_CONNECTION_RESET); no Chromium biblioteca.aneel.gov.br fica em chrome-error e sei.aneel.gov.br não carrega (curl: 403 do mesmo desafio). Captcha não é resolvido.'
 for r_ in sorted(R, key=lambda x: (x['data'], x['reuniao'])):
     tag = r_['reuniao']; ide = next(i for i in por_reuniao if tag_de(i) == tag); n_it = len(por_reuniao[ide])
     if ide in pauta_so:
-        PEN.append([AG, f'{tag} ({r_["titulo"][:60]}…)', r_['data'], 'Realizada, ata ainda não publicada', f'só a pauta ({n_it} itens, dataset gerado em 02/10/2026) sem resultado/decisão', 'ata sai dias após a reunião; reunião de 06/10/2026', 'Rodar scripts/aneel_baixar.py e aneel_parse.py quando o dataset "Pautas e Atas" for atualizado (CKAN, atualização diária)', URL_ATAS])
+        PEN.append([AG, f'{tag} ({r_["titulo"][:60]}…)', r_['data'], ('Realizada, ata ainda não publicada' if r_['data'] <= HOJE else 'Reunião futura: só a pauta publicada'), f'só a pauta ({n_it} itens, dataset gerado em {dmy(DATA_CSV)}) sem resultado/decisão', f'reunião de {dmy(r_["data"])}; ata sai dias após a reunião', 'Rodar scripts/aneel_baixar.py e aneel_parse.py quando o dataset "Pautas e Atas" for atualizado (CKAN, atualização diária)', URL_ATAS])
     else:
         PEN.append([AG, f'{tag} - ata em PDF (presença nominal da reunião inteira, ordem de votação, texto integral)', r_['data'], 'bloqueado pela fonte',
                     f'{n_it} itens com relator, resultado e texto da decisão da ata, via Dados Abertos', MOT, 'Abrir a ata em www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm (ou idAreaNoticia=425) num navegador comum / de outro IP e conferir presença e ausências', URL_WWW2])
@@ -753,18 +760,19 @@ for did in trunc_log:
                 'a cauda do texto (impedimentos, ausências, vistas, divergências) foi cortada em 4.000 caracteres; quem nela fosse nomeado aparece aqui como ACOMPANHOU inferido, sem alerta por linha', 'Conferir o final da decisão na ata em PDF (www2.aneel.gov.br ata_diretoria)', URL_WWW2])
 PEN.append([AG, 'Colegiado 2026 (composição por reunião)', '2026-08-18', 'inferido', 'Sandoval (DG), Agnes, Gentil, Willamy e Fernando até a RPO de 11/08; Ludimila Lima no lugar de Fernando Mosna a partir do CDPO de 18/08',
             'a fonte coletada não traz lista de presentes; a troca foi inferida pelas atuações nominais em texto (1ª atuação de Ludimila 18/08; última de Fernando 11/08) e pelo art. 54 da NO-1 ("voto subsistente")', 'Conferir a portaria de posse/vacância e as listas de presentes das atas', 'https://www.gov.br/aneel/pt-br/composicao/diretoria'])
+VVD = [x_ for x_ in vvdiv_log if any(v_['deliberacao'] == x_[0] and nome_col(x_[1]) == v_['diretor'] and v_['voto'].startswith('DIVERGIU') for v_ in V)]      # so' os que viraram DIVERGIU na linha de voto (RPO20-11: autor ausente -> nao entra)
 NF += [[AG, 'Atas em PDF (presença/ausência da reunião inteira, ordem da apuração nominal, sustentações)', f'{len(realizadas)} reuniões', 'PARCIAL (bloqueado pela fonte)', MOT, 'Obter as atas em outro IP/navegador e reprocessar'],
        [AG, 'Votos dos demais diretores (extrato nominal)', f'{inf} de {tot} linhas ({100 * inf / tot:.1f}%) seguem INFERIDAS', 'PARCIAL (limite da fonte)', 'a ata registra só relator, vencidos, impedidos, ausentes e vistas; "ACOMPANHOU" = unanimidade ou exclusão dos vencidos nomeados', 'Pedir o extrato nominal de votação à Secretaria-Geral/SGE (reuniaodir@aneel.gov.br)'],
        [AG, 'Votos escritos dos relatores (SEI) e declarações de voto', '0 lidos', 'NÃO FEITO', 'SEI público/biblioteca da ANEEL bloqueados pelo proxy do ambiente (403 no túnel)', 'Ler os votos pelo SEI (consulta pública) fora do ambiente'],
        [AG, 'Pedinte de vista nos itens "Pedido de Vista + Retirado de Pauta/Prorrogação"', f'{len(set(vista_sem_pedinte_log))} itens sem pedinte nominal', 'SEM SOLUÇÃO (limite da fonte)', 'o texto da ata no dataset (ex.: "O processo foi retirado da pauta" / "conceder prazo adicional") não nomeia quem pediu vista; medido na varredura independente (scripts/aneel_varredura2.py): 0 itens com pedinte recuperável do texto', 'Conferir na ata em PDF (www2.aneel.gov.br ata_diretoria)'],
        [AG, 'Textos de decisão truncados na fonte (limite de 4.000 caracteres)', f'{len(set(trunc_log))} itens', 'SEM SOLUÇÃO (limite da fonte)', 'impedimentos, ausências e vistas do fim do texto podem não constar; os votos inferidos desses itens não têm alerta por linha', 'Conferir o final da decisão na ata em PDF'],
        [AG, 'Não deliberado (art. 8º, §3º do Decreto 2.335/1997): posição de diretores não registrada no texto', f'{sum(1 for v_ in V if v_["voto"].startswith("SEM VOTO REGISTRADO"))} linhas em {len({v_["deliberacao"] for v_ in V if v_["voto"].startswith("SEM VOTO REGISTRADO")})} itens (rótulo SEM VOTO REGISTRADO, proveniência REVISAR)', 'SEM SOLUÇÃO (limite da fonte)', 'a ata nomeia só os diretores de dois campos; quem não aparece pode ter se ausentado, se abstido ou ter votado numa 3ª posição; não é inferível do texto', 'Conferir a ata em PDF / extrato de votação da Secretaria-Geral'],
-       [AG, 'Divergência ANTES da vista inferida de voto-vista autoral (sem a palavra "divergência" no texto)', f'{len(vvdiv_log)} voto(s)-vista em {len({d_ for d_, _, _ in vvdiv_log})} itens: ' + '; '.join(f'{d_} ({curto(l_).split()[0]})' for d_, l_, _ in vvdiv_log), 'INFERIDO (regra textual, substituiu a exceção manual VISTA_DIV_MANUAL)', 'regra: o autor do voto-vista não é o relator, o relator tem frase própria que não o inclui, o autor não "acompanha o relator" e o relator não adere ao voto-vista (RPO6-3 fica de fora); seguidores do autor recebem o mesmo rótulo; conteúdo divergente confirmado por leitura humana em RPO15-4, RPO9-4 e RPC1-7 (RPC8-9 depois adota o voto-vista de Gentil)', 'Conferir na ata em PDF se o voto-vista foi divergente ou concordante com o relator'],
+       [AG, 'Divergência ANTES da vista inferida de voto-vista autoral (sem a palavra "divergência" no texto)', f'{len(VVD)} voto(s)-vista em {len({d_ for d_, _, _ in VVD})} itens: ' + '; '.join(f'{d_} ({curto(l_).split()[0]})' for d_, l_, _ in VVD), 'INFERIDO (regra textual, substituiu a exceção manual VISTA_DIV_MANUAL)', 'regra: o autor do voto-vista não é o relator, o relator tem frase própria que não o inclui, o autor não "acompanha o relator" e o relator não adere ao voto-vista (RPO6-3 fica de fora); seguidores do autor recebem o mesmo rótulo; conteúdo divergente confirmado por leitura humana em RPO15-4, RPO9-4 e RPC1-7 (RPC8-9 depois adota o voto-vista de Gentil)', 'Conferir na ata em PDF se o voto-vista foi divergente ou concordante com o relator'],
        [AG, 'Tipo "Aprovação de ata"', '0 itens', 'N/A', 'o dataset de dados abertos não traz item de aprovação de ata (a ANEEL aprova atas por outro rito)', ''],
        [AG, 'Presença da reunião inteira', f'{len(R)} reuniões com colegiado inferido', 'LIMITE', 'sem lista de presentes na fonte coletada; só ausência por item', 'Conferir as atas em PDF']]
 diretores = [SANDOVAL, AGNES, GENTIL, WILLAMY, FERNANDO, LUDIMILA] + sorted({x for _, x in extras_log if x not in (SANDOVAL, AGNES, GENTIL, WILLAMY, FERNANDO, LUDIMILA)})
 res = {'reunioes': R, 'deliberacoes': D, 'votos': V, 'qualidade': Q, 'cobertura': COB, 'pendencias': PEN, 'nao_feito': NF, 'diretores': diretores, 'colegiado': 'Diretoria Colegiada',
-       '_fonte': {'dataset': URL_CSV, 'gerado_em': HOJE, 'nota': 'Texto de decisão da ata via Dados Abertos ANEEL (CSV, atualização de 02/10/2026); ata prévia sujeita a ajustes até a assinatura.'}}
+       '_fonte': {'dataset': URL_CSV, 'gerado_em': HOJE, 'nota': 'Texto de decisão da ata via Dados Abertos ANEEL (CSV, atualização de ' + dmy(DATA_CSV) + '); ata prévia sujeita a ajustes até a assinatura.'}}
 json.dump(res, open(out, 'w'), ensure_ascii=False, indent=1)
 print('reunioes', len(R), '| deliberacoes', len(D), '| votos', len(V), f'| nominal {100 * nom / tot:.1f}% inferido {100 * inf / tot:.1f}% REVISAR {rev}', '| pendencias', len(PEN))
 for q_ in Q: print(q_[4], '|', q_[1][:100], '|', q_[2], '|', q_[3])

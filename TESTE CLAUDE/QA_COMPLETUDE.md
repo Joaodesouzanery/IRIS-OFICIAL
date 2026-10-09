@@ -35,11 +35,11 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANATEL | Votos: nominal + inferido + REVISAR = total | 2922 | 2922 | OK | {'inferido': 949, 'nominal': 1973} |
 | ANATEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANATEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 22 | 22 | OK |  |
-| ANEEL | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1001 | 1001 | OK | 0 itens sem resultado publicado/informe |
+| ANEEL | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1049 | 1049 | OK | 0 itens sem resultado publicado/informe |
 | ANEEL | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANEEL | Votos: nominal + inferido + REVISAR = total | 5023 | 5023 | OK | {'inferido': 3423, 'nominal': 1588, 'REVISAR': 12} |
-| ANEEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (divergência de data, buraco, truncad, sem pedinte) | 0 | 0 | OK | 4 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANEEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 87 | 87 | OK |  |
+| ANEEL | Votos: nominal + inferido + REVISAR = total | 5268 | 5268 | OK | {'inferido': 3577, 'nominal': 1679, 'REVISAR': 12} |
+| ANEEL | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (divergência de data, buraco, truncad, sem pedinte) | 0 | 0 | OK | 5 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
+| ANEEL | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 92 | 92 | OK |  |
 | ANA | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 61 | 61 | OK | 0 itens sem resultado publicado/informe |
 | ANA | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANA | Votos: nominal + inferido + REVISAR = total | 244 | 244 | OK | {'inferido': 166, 'nominal': 78} |
@@ -49,27 +49,27 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANS | Votos: nominal + inferido + REVISAR = total | 1260 | 1260 | OK | {'inferido': 1147, 'nominal': 108, 'REVISAR': 5} |
 | ANS | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, fora da allowlist, sem documento) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 10 | 10 | OK |  |
+| ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 9 | 9 | OK |  |
 | ANCINE | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1835 | 1835 | OK | 3 itens sem resultado publicado/informe |
 | ANCINE | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
 | ANCINE | Votos: nominal + inferido + REVISAR = total | 7000 | 7000 | OK | {'inferido': 6793, 'nominal': 128, 'REVISAR': 79} |
 | ANCINE | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, não baixado, sem DDC, sem ata) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANCINE | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 52 | 52 | OK |  |
-| ANAC | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 0 | 0 | OK | 0 itens sem resultado publicado/informe |
+| ANAC | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 86 | 86 | OK | 9 itens sem resultado publicado/informe |
 | ANAC | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANAC | Votos: nominal + inferido + REVISAR = total | 0 | 0 | OK | {} |
+| ANAC | Votos: nominal + inferido + REVISAR = total | 411 | 411 | OK | {'nominal': 87, 'inferido': 318, 'REVISAR': 6} |
 | ANAC | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (bloqueado pela fonte) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
-| ANAC | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 3 | 3 | OK |  |
+| ANAC | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 85 | 85 | OK |  |
 | ANVISA | Votos no JSON final × linhas na aba Votos | 5795 | 5795 | OK |  |
 | ANPD | Votos no JSON × linhas na aba Votos | 110 | 110 | OK |  |
 | ANP | Votos no JSON × linhas na aba Votos | 695 | 695 | OK |  |
 | ANTAQ | Votos no JSON × linhas na aba Votos | 3413 | 3413 | OK |  |
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
-| ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5023 | 5023 | OK |  |
+| ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5268 | 5268 | OK |  |
 | ANA | Votos no JSON × linhas na aba Votos | 244 | 244 | OK |  |
 | ANS | Votos no JSON × linhas na aba Votos | 1260 | 1260 | OK |  |
 | ANCINE | Votos no JSON × linhas na aba Votos | 7000 | 7000 | OK |  |
-| ANAC | Votos no JSON × linhas na aba Votos | 0 | 0 | OK |  |
+| ANAC | Votos no JSON × linhas na aba Votos | 411 | 411 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |
 | ANPD | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 2 | 2 | OK | ausentes da aba: [] |
-| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 549 | 549 | OK | sem URL: [] |
+| TODAS | Linhas da aba "Faltam na fonte" com URL da página-fonte | 634 | 634 | OK | sem URL: [] |

@@ -10,7 +10,7 @@
 > | ANS | **parcial**: 281 itens, 1.260 votos (1.147 inferidos, 108 nominais, 5 REVISAR; blocões = 2.064 decisões individuais) | 17 atas oficiais lidas | atas 641–643 ainda não publicadas, 644ª em 09/10, extraordinárias 9–11 só por citação; relator inferido pela área em 192 itens; zero voto vencido/divergente nas atas |
 > | ANA | feito, varredura 930/930 + auditoria 527/527 | 244 (78 nominais, 166 inferidos) | atas 100% 'por unanimidade'; voto integral só via LAI |
 > | ANCINE | feito, varredura 100% (28.459/28.459) + auditoria 44/44 | 7.000 (6.793 inferidos, 128 nominais, 79 REVISAR) | só resultado + exceções nomeadas na DDC; relator não publicado em reuniões; 10 itens de sessão reservada sem DDC |
-> | ANAC | pipeline pronto, **0 votos** | — | índices 2026 migraram para APEX em `departamental.anac.gov.br`/`santosdumont.anac.gov.br` (CONNECT 403); `www.gov.br/anac` só tem reuniões até out/2025; sem captcha observado |
+> | ANAC | **parcial**: 41 reuniões (7 presenciais + 34 eletrônicas), 95 itens, 411 votos (87 nominais, 318 inferidos, 6 REVISAR) | páginas de reunião lidas; 454 documentos SEI/pergamum não baixados | `sei.anac.gov.br` e `pergamum.anac.gov.br` bloqueados (CONNECT 403); presença inferida pelo colegiado em exercício; CAPTCHA só no gov.br/search |
 
 
 Pesquisa de 08/10/2026 com WebSearch/WebFetch/curl pelo proxy com allowlist. **Verificado** = abri a página ou o PDF; **não verificado** = não consegui abrir (bloqueio, timeout ou captcha) e a informação vem de busca. Hoje o IRIS só coleta **notícias** destas agências; nenhuma tem ata, voto ou pauta coletados (ver `MONITORAMENTO.md`).

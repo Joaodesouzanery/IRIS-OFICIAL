@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-08",
+ "gerado_em": "2026-10-09",
  "agencia": "ANEEL",
  "calendario_oficial": {
   "url": "https://www.gov.br/aneel/pt-br/reunioes-publicas/calendario",
@@ -57,8 +57,8 @@
  },
  "dataset_pautas_atas": {
   "url": "https://dadosabertos.aneel.gov.br/dataset/a9fb5b4b-59ca-4be8-9690-876d9547271d/resource/43386a8b-4781-44ec-a082-fa7fdfe33186/download/pautas-atas-reunioes-publicas-diretoria.csv",
-  "linhas_csv_total": 16238,
-  "linhas_csv_2026": 1049,
+  "linhas_csv_total": 16272,
+  "linhas_csv_2026": 1083,
   "datastore_total": 16144,
   "itens_por_data_csv": {
    "2026-01-20": 31,
@@ -101,7 +101,8 @@
    "2026-09-15": 25,
    "2026-09-22": 27,
    "2026-09-29": 46,
-   "2026-10-06": 48
+   "2026-10-06": 48,
+   "2026-10-13": 34
   },
   "itens_por_data_datastore": {
    "2026-01-20": 31,
@@ -144,7 +145,8 @@
    "2026-09-15": 25,
    "2026-09-22": 27,
    "2026-09-29": 0,
-   "2026-10-06": 0
+   "2026-10-06": 0,
+   "2026-10-13": 0
   }
  },
  "dataset_reunioes_2026": [
@@ -412,7 +414,7 @@
    "modo": "headless",
    "status": 403,
    "title": "Um momento…",
-   "bytes": 31549,
+   "bytes": 31528,
    "aberto": false
   },
   {
@@ -439,7 +441,7 @@
    "modo": "headless",
    "status": 403,
    "title": "Um momento…",
-   "bytes": 31379,
+   "bytes": 31358,
    "aberto": false
   },
   {
@@ -453,14 +455,17 @@
    "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
    "n": 5,
    "modo": "headless",
-   "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+   "erro": "Error: page.goto: Navigation to \"https://biblioteca.aneel.gov.br/acervo/detalhe/257019\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"",
    "aberto": false
   },
   {
    "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
    "n": 6,
    "modo": "headless",
-   "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+   "status": 403,
+   "bloqueio": "Cloudflare: Sorry, you have been blocked",
+   "title": "Attention Required! | Cloudflare",
+   "bytes": 5738,
    "aberto": false
   },
   {
@@ -468,8 +473,9 @@
    "n": 0,
    "modo": "headed(xvfb)",
    "status": 403,
-   "title": "Um momento…",
-   "bytes": 31549,
+   "bloqueio": "Cloudflare: Sorry, you have been blocked",
+   "title": "Attention Required! | Cloudflare",
+   "bytes": 5738,
    "aberto": false
   },
   {
@@ -478,7 +484,7 @@
    "modo": "headed(xvfb)",
    "status": 403,
    "title": "Um momento…",
-   "bytes": 31480,
+   "bytes": 31458,
    "aberto": false
   },
   {
@@ -487,7 +493,7 @@
    "modo": "headed(xvfb)",
    "status": 403,
    "title": "Um momento…",
-   "bytes": 31875,
+   "bytes": 31854,
    "aberto": false
   },
   {
@@ -496,7 +502,7 @@
    "modo": "headed(xvfb)",
    "status": 403,
    "title": "Um momento…",
-   "bytes": 31379,
+   "bytes": 31358,
    "aberto": false
   },
   {
@@ -510,14 +516,14 @@
    "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
    "n": 5,
    "modo": "headed(xvfb)",
-   "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+   "erro": "Error: page.goto: Navigation to \"https://biblioteca.aneel.gov.br/acervo/detalhe/257019\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"",
    "aberto": false
   },
   {
    "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
    "n": 6,
    "modo": "headed(xvfb)",
-   "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+   "erro": "Error: page.goto: Navigation to \"https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar",
    "aberto": false
   }
  ]

@@ -32,19 +32,20 @@
   "publicacao": "02/10/2026",
   "url": "https://portal.antt.gov.br/reuniao/-/asset_publisher/9NmL6MbUt7f1/content/id/7242710/1043-reuniao-de-diretoria",
   "abas": [
-   "Pauta"
+   "Pauta",
+   "Video"
   ],
   "docs": [
    {
     "tipo": "pauta",
     "rotulo": "Pauta da 1043ª Reunião de Diretoria",
-    "arquivo": "fonte/antt/ROD1043/pauta_1.043ª_REUNIÃO_DE_DIRETORIA_PÚBLICA_DE_8.10.2026.pdf",
-    "url": "https://portal.antt.gov.br/documents/498202/0/1.043%C2%AA+REUNI%C3%83O+DE+DIRETORIA+P%C3%9ABLICA%2C+DE+8.10.2026.pdf/bc66ec5f-3f66-d55a-cd19-65bf35015fc0",
-    "bytes": 61412,
-    "sha256": "7152479f5717a1f4abae2e0413de41a921db9c4947610330ec03f3822820b158",
+    "arquivo": "fonte/antt/ROD1043/pauta_1.043ª_REUNIÃO_DE_DIRETORIA_PÚBLICA_DE_8.10.2026_1_.pdf",
+    "url": "https://portal.antt.gov.br/documents/498202/0/1.043%C2%AA+REUNI%C3%83O+DE+DIRETORIA+P%C3%9ABLICA%2C+DE+8.10.2026+%281%29.pdf/f806046e-72ba-51b0-47f1-b1ecf029c075",
+    "bytes": 62153,
+    "sha256": "ef1cc9c7f65dbef29e1cd4e15ef5a5e6e98fd7e0456e7c7895899c2959fc804e",
     "pdf": true,
-    "texto": "texto_antt/ROD1043__pauta_1.043ª_REUNIÃO_DE_DIRETORIA_PÚBLICA_DE_8.10.2026.pdf.txt",
-    "chars": 4621
+    "texto": "texto_antt/ROD1043__pauta_1.043ª_REUNIÃO_DE_DIRETORIA_PÚBLICA_DE_8.10.2026_1_.pdf.txt",
+    "chars": 4718
    }
   ],
   "erro": null

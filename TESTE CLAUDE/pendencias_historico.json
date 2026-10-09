@@ -1186,7 +1186,7 @@
  },
  "ANATEL|RCD958|Realizada hoje (08/10/2026, 15h), ata e acórdãos ainda não publicados": {
   "primeira_vez": "2026-10-08",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANATEL|RCDE32|Realizada, ata não publicada": {
@@ -1441,7 +1441,7 @@
  },
  "ANEEL|RPO20 (20ª Reunião Pública Ordinária da Diretoria da ANEEL (06/10/2…)|Realizada, ata ainda não publicada": {
   "primeira_vez": "2026-10-08",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANEEL|RPO12-17|Numeração com buraco": {
@@ -2016,7 +2016,7 @@
  },
  "ANS|4 apresentações em PowerPoint anexas a itens (632ª e 2ª/3ª extraordinárias)|formato não lido (PPTX)": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANCINE|Decisão-Proclamação e ata do Circuito Deliberativo 7-E (votos nominais)|documento não publicado": {
@@ -2281,15 +2281,475 @@
  },
  "ANAC|Índice de reuniões presenciais 2026 (REDIR, atas, pautas, deliberações)|bloqueado pela fonte/egress": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|Índice de reuniões eletrônicas 2026|bloqueado pela fonte/egress": {
   "primeira_vez": "2026-10-09",
-  "resolvida_em": null,
+  "resolvida_em": "2026-10-09",
   "ultima_vez": "2026-10-09"
  },
  "ANAC|Calendário 2026 (Portaria 18.366) = denominador independente|bloqueado pela fonte/egress": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": "2026-10-09",
+  "ultima_vez": "2026-10-09"
+ },
+ "ANATEL|RCD958|Realizada, ata não publicada": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPO20 - ata em PDF (presença nominal da reunião inteira, ordem de votação, texto integral)|bloqueado pela fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPC18 (18º Circuito Deliberativo Público Ordinário da Diretoria da …)|Reunião futura: só a pauta publicada": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPO20-14|texto truncado na fonte": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPO20-8|pedido de vista sem pedinte identificado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPO20-9|pedido de vista sem pedinte identificado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANEEL|RPO20-14|texto truncado: votos inferidos sem sinal de risco": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 item 1 (proc. 00058.078676/2024-29) — quem pediu vista|dado não publicado na página": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE9 item 1 (proc. 00058.018087/2019-24) — quem divergiu (\"Deferido parcialmente por maioria\")|dado não publicado na página": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD5 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX2 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD6 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE30 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD7 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD7 — deliberações (1 item(ns) na pauta)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE31 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE31 — deliberações (5 item(ns) na pauta)|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE32 — ata|documento não publicado": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE32 — deliberações (3 item(ns) na pauta)|reunião futura": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE2 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE3 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE4 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE5 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE7 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE8 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD2 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE9 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE10 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD3 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX1 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE11 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE12 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE13 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE14 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE15 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD4 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE16 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE17 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE18 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE19 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE20 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE21 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE22 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE23 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE24 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE25 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE26 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE27 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE28 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE29 — ata (presença, votos nominais, vencidos)|bloqueado pelo egress (sei.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE3 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE4 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE5 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE6 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE7 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE8 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE9 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE10 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD3 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX1 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE11 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE12 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE13 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE14 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE15 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD4 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE16 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE18 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE19 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE20 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE21 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE22 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE23 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE24 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD5 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE25 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE26 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|REX2 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE27 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE28 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE29 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RD6 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|RE30 — votos, relatórios e certidões de deliberação (SEI)|bloqueado pelo egress (sei.anac.gov.br / pergamum.anac.gov.br)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|Composição do colegiado em jan-fev/2026 e fim exato dos mandatos de Luiz Ricardo Nascimento e Mariana Altoé|bloqueado pela fonte (CAPTCHA no gov.br/search; nunca resolvido)": {
+  "primeira_vez": "2026-10-09",
+  "resolvida_em": null,
+  "ultima_vez": "2026-10-09"
+ },
+ "ANAC|Votos em vídeo (YouTube) das reuniões presenciais|fora de escopo": {
   "primeira_vez": "2026-10-09",
   "resolvida_em": null,
   "ultima_vez": "2026-10-09"

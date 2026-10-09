@@ -16,7 +16,7 @@ Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Document
 | ANA | feito + varredura + auditoria | 61 itens, 244 votos (68% inferidos); atas só dizem 'por unanimidade' |
 | ANS | **parcial**: 281 itens/1.260 votos (91% inferidos) | atas 641–643 não publicadas; relator inferido pela área |
 | ANCINE | feito + varredura 100% + auditoria | 1.838 deliberações, 7.000 votos (97% inferidos); só circuitos têm votação nominal |
-| ANAC | pipeline pronto, **0 votos** | índices 2026 em `departamental.anac.gov.br`/`santosdumont.anac.gov.br` e calendário em `www.anac.gov.br`: bloqueados no egress; liberar os hosts ou enviar os PDFs |
+| ANAC | **parcial**: 41 reuniões, 95 itens, 411 votos (318 inferidos) | atas/votos/certidões em `sei.anac.gov.br`/`pergamum.anac.gov.br` bloqueados no egress; presença inferida |
 
 ## Como funciona
 - `scripts/agencias.py` é o **registro único** das agências com pipeline próprio (arquivo JSON, URL da fonte, regra de ex-membros fora dos totais).

@@ -5,7 +5,7 @@
   "arquivo": "fonte/aneel/pkg_pautas-e-atas-das-reunioes-publicas-da-diretoria.json",
   "http": 200,
   "ok": true,
-  "sha256": "2ae4fff5ea6c596ef208f3d25c637f2f8963e8efd6bdd14fa08b98f9e2f9335d",
+  "sha256": "8bb4b89ecf7db3ebb01af8d1a7ede0a93aa0d1621e649dcd6ea27c97fb9f4b90",
   "bytes": 6962,
   "erro": "",
   "obs": ""
@@ -27,10 +27,10 @@
   "arquivo": "fonte/aneel/pautas_atas.csv",
   "http": 200,
   "ok": true,
-  "sha256": "5ee85938a04d5d5a7739e8153fc5a5658ecd5e954167ac1ac11203fd0377c425",
-  "bytes": 19015119,
+  "sha256": "356bab8bd7837bb5e7a594ee9ef1a122fe9e26ca9d7ecc3ee12db9eddd7a39a8",
+  "bytes": 19095667,
   "erro": "",
-  "obs": "modificado 2026-10-02T03:04:43.673170; resource_id 43386a8b-4781-44ec-a082-fa7fdfe33186"
+  "obs": "modificado 2026-10-09T03:05:30.424894; resource_id 43386a8b-4781-44ec-a082-fa7fdfe33186"
  },
  "csv:reunioes": {
   "fonte": "dadosabertos.aneel.gov.br",
@@ -71,8 +71,8 @@
   "arquivo": "fonte/aneel/rp_pautas-e-atas.html",
   "http": 200,
   "ok": true,
-  "sha256": "f862f2dab24faad1085bf52ee58c1d6954af664d1232de9ee807d92552a85bea",
-  "bytes": 220198,
+  "sha256": "4e803e5879a174f70ddcbd499e30e32774628f45d418b1abec38fd05fcdb021b",
+  "bytes": 220192,
   "erro": "",
   "obs": ""
  },
@@ -104,8 +104,8 @@
   "arquivo": "fonte/aneel/rp_informativo-aneel-de-deliberacoes-da-diretoria.html",
   "http": 200,
   "ok": true,
-  "sha256": "271a36ea3d33347e7e98f94d420768ffd3f107371b5f9315f9f9ca1bb119c53c",
-  "bytes": 218342,
+  "sha256": "35c6ed42153b0425c81c888df6cb333136771aa2a650988fd8cae9e8f290837d",
+  "bytes": 218336,
   "erro": "",
   "obs": ""
  },
@@ -193,7 +193,7 @@
   "arquivo": null,
   "ok": false,
   "http": null,
-  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "erro": "Error: page.goto: Navigation to \"https://biblioteca.aneel.gov.br/acervo/detalhe/257019\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"",
   "obs": "Chromium headless"
  },
  "chromium:headless:https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
@@ -201,8 +201,8 @@
   "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
   "arquivo": null,
   "ok": false,
-  "http": null,
-  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+  "http": 403,
+  "erro": "Cloudflare: Sorry, you have been blocked",
   "obs": "Chromium headless"
  },
  "chromium:headed(xvfb):https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425": {
@@ -211,7 +211,7 @@
   "arquivo": null,
   "ok": false,
   "http": 403,
-  "erro": "status 403 / titulo 'Um momento…'",
+  "erro": "Cloudflare: Sorry, you have been blocked",
   "obs": "Chromium headed(xvfb)"
  },
  "chromium:headed(xvfb):https://www2.aneel.gov.br/aplicacoes_liferay/ata_diretoria/ata.cfm": {
@@ -256,7 +256,7 @@
   "arquivo": null,
   "ok": false,
   "http": null,
-  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
+  "erro": "Error: page.goto: Navigation to \"https://biblioteca.aneel.gov.br/acervo/detalhe/257019\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"",
   "obs": "Chromium headed(xvfb)"
  },
  "chromium:headed(xvfb):https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
@@ -265,7 +265,7 @@
   "arquivo": null,
   "ok": false,
   "http": null,
-  "erro": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_orige",
+  "erro": "Error: page.goto: Navigation to \"https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar",
   "obs": "Chromium headed(xvfb)"
  },
  "curl:https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425": {
@@ -318,8 +318,8 @@
   "url": "https://biblioteca.aneel.gov.br/acervo/detalhe/257019",
   "arquivo": null,
   "ok": false,
-  "http": 0,
-  "erro": "curl: (56) CONNECT tunnel failed, response 403",
+  "http": 403,
+  "erro": "HTTP 403",
   "obs": "curl"
  },
  "curl:https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0": {
@@ -327,8 +327,8 @@
   "url": "https://sei.aneel.gov.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_pesquisar&acao_origem=publicacao_pesquisar&id_orgao_publicacao=0",
   "arquivo": null,
   "ok": false,
-  "http": 0,
-  "erro": "curl: (56) CONNECT tunnel failed, response 403",
+  "http": 403,
+  "erro": "HTTP 403",
   "obs": "curl"
  }
 }

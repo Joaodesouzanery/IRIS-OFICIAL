@@ -1,0 +1,390 @@
+[
+ {
+  "reuniao": "ROD1041",
+  "processo": "50500.055643/2025-94",
+  "relator": "Alessandro Baumgartner",
+  "votos": {
+   "Guilherme Theo Rodrigues da Rocha Sampaio": [
+    "ACOMPANHOU (Voto Vista DG 3/2026: acompanha integralmente o relator)",
+    "nominal",
+    "ata: \"apresentou o Voto Vista DG - 3/2026\"; PDF Voto Vista DG 003-2026 §3.1 \"acompanho integralmente o encaminhamento proposto pelo Diretor Relator em seu Voto n 027/2026\" (DAB)"
+   ]
+  },
+  "fonte": "ata ROD1041 + voto vista (texto do PDF)",
+  "obs": "Relator original (Alessandro Baumgartner, Voto DAB 27/2026 na RDE286) não integra a presença da ROD1041: sem linha de voto.",
+  "checar": [
+   [
+    "texto_antt/ROD1041__ata_*",
+    "Voto Vista DG - 3/2026"
+   ],
+   [
+    "texto_antt/ROD1041__voto_Voto_Vista_DG_003-2026.pdf.txt",
+    "acompanho integralmente o encaminhamento proposto pelo Diretor Relator"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1039",
+  "processo": "50505.066566/2024-77",
+  "relator": "Alex Antônio de Azevedo Cruz",
+  "votos": {
+   "Guilherme Theo Rodrigues da Rocha Sampaio": [
+    "ACOMPANHOU (Voto Vista DG 2/2026: acompanha integralmente o relator)",
+    "nominal",
+    "ata ROD1039 \"apresentou o Voto Vista DG - 02/2026, por meio do qual informou que acompanha integralmente o voto do Diretor Relator\"; PDF Voto Vista DG 002-2026 §5.1 \"ACOMPANHO integralmente o Voto DAA nº 31/2026\""
+   ]
+  },
+  "fonte": "ata ROD1039 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1039__ata_*",
+    "Voto Vista DG - 02/2026"
+   ],
+   [
+    "texto_antt/ROD1039__voto_Voto_Vista_DG_002-2026.pdf.txt",
+    "ACOMPANHO integralmente o Voto DAA nº 31/2026"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1039",
+  "processo": "50500.204399/2023-38",
+  "relator": "Felipe Fernandes Queiroz",
+  "votos": {
+   "Alessandro Baumgartner": [
+    "ACOMPANHOU (Voto Vista DAB 1/2026: acompanha integralmente o relator)",
+    "nominal",
+    "ata ROD1039 \"apresentou o Voto Vista DAB - 1/2026 ... acompanha integralmente\"; PDF Voto Vista DAB 001-2026 §4.1 \"acompanho integralmente a proposição do Voto DFQ 40\""
+   ]
+  },
+  "fonte": "ata ROD1039 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1039__ata_*",
+    "Voto Vista DAB - 1/2026"
+   ],
+   [
+    "texto_antt/ROD1039__voto_Voto_Vista_DAB_001-2026.pdf.txt",
+    "acompanho integralmente a proposição do Voto DFQ 40"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1035",
+  "processo": "50500.016127/2025-44",
+  "relator": "Alessandro Baumgartner",
+  "votos": {
+   "Felipe Fernandes Queiroz": [
+    "ACOMPANHOU (Voto Vista DFQ 2/2026: acompanha o relator)",
+    "nominal",
+    "ata ROD1035 \"apresentou Voto Vista DFQ - 02/2026 ... acompanha o voto do Diretor Relator\"; PDF (OCR) Voto Vista DFQ 002-2026 §3.1 \"acompanho integralmente o encaminhamento proposto pelo Diretor Relator em seu Voto n 015/2026\""
+   ]
+  },
+  "fonte": "ata ROD1035 + voto vista (OCR do PDF-imagem)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1035__ata_*",
+    "Voto Vista DFQ - 02/2026"
+   ],
+   [
+    "texto_antt_ocr/ROD1035__voto_Voto_Vista_DFQ_002-2026.pdf.txt",
+    "acompanho integralmente o encaminhamento proposto pelo Diretor Relator"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1035",
+  "processo": "50500.008470/2026-04",
+  "relator": "Alessandro Baumgartner",
+  "votos": {
+   "Alex Antônio de Azevedo Cruz": [
+    "ACOMPANHOU (Voto Vista DAA 3/2026: segue o relator, não conhecimento por intempestividade)",
+    "nominal",
+    "ata ROD1035 \"acolheu a proposição do Revisor ... Voto Vista DAA - 3/2026\"; PDF (OCR) Voto Vista DAA 003-2026 §4 \"este Diretor segue o encaminhamento sugerido pelo voto do Diretor Alessandro Baumgartner\""
+   ],
+   "Alessandro Baumgartner": [
+    "RELATOR (voto proferido na 1.033ª RDP; mantido)",
+    "nominal",
+    "Voto Vista DAA 003-2026 §2: \"o Diretor Relator Alessandro Baumgartner proferiu seu voto\" (ROD1033, não conhecimento)"
+   ]
+  },
+  "fonte": "ata ROD1035 + voto vista (OCR do PDF-imagem)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1035__ata_*",
+    "Voto Vista DAA - 3/2026"
+   ],
+   [
+    "texto_antt_ocr/ROD1035__voto_Voto_Vista_DAA_003-2026.pdf.txt",
+    "segue o encaminhamento sugerido pelo voto do Diretor Alessandro Baumgartner"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1031",
+  "processo": "50500.070671/2021-16",
+  "relator": "Alex Antônio de Azevedo Cruz",
+  "votos": {
+   "Lucas Asfor da Rocha Lima": [
+    "ACOMPANHOU (Voto Vista DLA 2/2026: converge com o relator, com ressalva de acompanhamento do RNTRC)",
+    "nominal",
+    "ata ROD1031 \"Voto Vista DLA 2/2026, que está em convergência com a conclusão alcançada no Voto DAA nº 15/2026\"; PDF Voto Vista DLA 002-2026 ementa \"ACOMPANHAMENTO DO VOTO RELATOR, COM RESSALVA\""
+   ],
+   "Alex Antônio de Azevedo Cruz": [
+    "RELATOR (voto proferido na RDE273; mantido)",
+    "nominal",
+    "ata ROD1031 \"apresentada na 273ª ... pelo Diretor Relator Alex Azevedo\""
+   ]
+  },
+  "fonte": "ata ROD1031 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1031__ata_*",
+    "Voto Vista DLA 2/2026, que está em convergência"
+   ],
+   [
+    "texto_antt/ROD1031__voto_Voto_Vista_DLA_002-2026.pdf.txt",
+    "ACOMPANHAMENTO DO VOTO RELATOR, COM RESSALVA"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1027",
+  "processo": "50505.015809/2025-90",
+  "relator": "Lucas Asfor da Rocha Lima",
+  "votos": {
+   "Alex Antônio de Azevedo Cruz": [
+    "ACOMPANHOU (Voto Vista DAA 2/2026: alinha-se ao relator, com complementação)",
+    "nominal",
+    "ata ROD1027 \"acolheu a proposição do Revisor ... Voto Vista DAA - 2/2026\"; PDF Voto Vista DAA 002-2026 §4.1 \"alinho-me com o voto do Diretor Relator (Voto DLA 16/2026)\""
+   ],
+   "Lucas Asfor da Rocha Lima": [
+    "RELATOR (voto proferido na RDE266; mantido)",
+    "nominal",
+    "PDF Voto Vista DAA 002-2026 cabeçalho \"RELATORIA: DLA / VISTA: DAA\""
+   ]
+  },
+  "fonte": "ata ROD1027 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1027__ata_*",
+    "Voto Vista DAA - 2/2026"
+   ],
+   [
+    "texto_antt/ROD1027__voto_Voto_Vista_DAA_002-2026.pdf.txt",
+    "alinho-me com o voto do Diretor Relator (Voto DLA 16/2026"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1027",
+  "processo": "50505.020549/2025-74",
+  "relator": "Severino Medeiros Ramos Neto",
+  "votos": {
+   "Alex Antônio de Azevedo Cruz": [
+    "ACOMPANHOU (Voto Vista DAA 1/2026: alinha-se ao relator, com complementação)",
+    "nominal",
+    "ata ROD1027 \"acolheu a proposição do Revisor ... Voto Vista DAA - 1/2026\"; PDF Voto Vista DAA 001-2026 §4.1 \"alinho-me com o voto do Diretor Relator (Voto DSM 10/2026)\""
+   ],
+   "Alessandro Baumgartner": [
+    "NÃO PARTICIPOU (sem direito a voto: sucedeu o relator, art. 59, parágrafo único, do RI)",
+    "nominal",
+    "ata ROD1027: \"o Diretor Alessandro Baumgartner, que veio a suceder o Diretor Relator cujo mandato terminou, não teve direito a voto\""
+   ]
+  },
+  "fonte": "ata ROD1027 + voto vista (texto do PDF)",
+  "obs": "Relator (Severino Medeiros Ramos Neto, ex-diretor) não integra a presença da ROD1027: sem linha de voto.",
+  "checar": [
+   [
+    "texto_antt/ROD1027__ata_*",
+    "não teve direito a voto"
+   ],
+   [
+    "texto_antt/ROD1027__voto_Voto_Vista_DAA_001-2026.pdf.txt",
+    "alinho-me com o voto do Diretor Relator (Voto DSM 10/2026"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1027",
+  "processo": "50500.046167/2021-97",
+  "relator": "Felipe Fernandes Queiroz",
+  "votos": {
+   "Lucas Asfor da Rocha Lima": [
+    "ACOMPANHOU (Voto Vista DLA 1/2026: acompanha integralmente o relator)",
+    "nominal",
+    "ata ROD1027 \"na condição de Revisor, o Diretor Lucas Asfor, apresentou o Voto Vista DLA - 1/2026, ... acompanhou integralmente o Voto do Relator\"; PDF Voto Vista DLA 001-2026 §3.12"
+   ],
+   "Felipe Fernandes Queiroz": [
+    "RELATOR (voto proferido; Voto DFQ 6/2026)",
+    "nominal",
+    "ata ROD1027 \"acolheu a proposição do Relator, apresentada no Voto DFQ - 6/2026\"; PDF Voto Vista DLA 001 \"RELATORIA: DFQ\""
+   ]
+  },
+  "fonte": "ata ROD1027 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1027__ata_*",
+    "Voto Vista DLA - 1/2026"
+   ],
+   [
+    "texto_antt/ROD1027__voto_Voto_Vista_DLA_001-2026.pdf.txt",
+    "acompanho integralmente a proposta de relatoria do Voto DFQ 6"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1025",
+  "processo": "50500.176692/2024-89",
+  "relator": "Lucas Asfor da Rocha Lima",
+  "votos": {
+   "Felipe Fernandes Queiroz": [
+    "ACOMPANHOU (Voto Vista DFQ 1/2026: acompanha o relator, com ajuste de competência)",
+    "nominal",
+    "ata ROD1025 \"acolheu a proposição do Revisor ... Voto Vista DFQ - 1/2026\"; PDF Voto Vista DFQ 001-2026 §1.1/§3.1 (vista do Voto DLA 117/2025 do Diretor Lucas Asfor; \"analisou, de maneira assertiva todos os aspectos\")"
+   ],
+   "Lucas Asfor da Rocha Lima": [
+    "RELATOR (voto proferido na 247ª RDE, Voto DLA 117/2025)",
+    "nominal",
+    "PDF Voto Vista DFQ 001-2026 §2.7 \"o Diretor Relator proferiu seu voto na 247ª RDE, por meio do Voto DLA 117\""
+   ]
+  },
+  "fonte": "ata ROD1025 + voto vista (texto do PDF)",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1025__ata_*",
+    "Voto Vista DFQ - 1/2026"
+   ],
+   [
+    "texto_antt/ROD1025__voto_Voto_Vista_DFQ_001-2026.pdf.txt",
+    "VOTO DLA 117, proferido pelo Diretor Lucas Asfor"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1025",
+  "processo": "50500.017831/2025-14",
+  "relator": "Lucas Asfor da Rocha Lima",
+  "votos": {
+   "Alex Antônio de Azevedo Cruz": [
+    "DIVERGIU (parcial: divergiu dos termos do voto do relator; acompanhou o envio ao TCU)",
+    "nominal",
+    "ata ROD1025: \"por maioria ... Registra-se que o Diretor Alex Azevedo divergiu dos termos do voto proposto pelo Relator, porém acompanhou no que se refere ao envio dos autos ao TCU\""
+   ],
+   "Guilherme Theo Rodrigues da Rocha Sampaio": [
+    "ACOMPANHOU",
+    "inferido",
+    "ata: \"por maioria\" com um único divergente nomeado (Alex Azevedo): os demais presentes acompanharam por exclusão"
+   ],
+   "Felipe Fernandes Queiroz": [
+    "ACOMPANHOU",
+    "inferido",
+    "idem"
+   ],
+   "Severino Medeiros Ramos Neto": [
+    "ACOMPANHOU",
+    "inferido",
+    "idem"
+   ],
+   "Lucas Asfor da Rocha Lima": [
+    "RELATOR (voto proferido)",
+    "nominal",
+    "ata: \"acolheu a proposição do Relator, apresentada no Voto DLA - 15/2026\""
+   ]
+  },
+  "fonte": "ata ROD1025",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1025__ata_*",
+    "Alex Azevedo divergiu dos termos do voto proposto pelo Relator"
+   ]
+  ]
+ },
+ {
+  "reuniao": "RDE268",
+  "processo": "50500.047133/2025-43",
+  "relator": "Lucas Asfor da Rocha Lima",
+  "votos": {
+   "Severino Medeiros Ramos Neto": [
+    "AUSENTE (considerado ausente nesta deliberação, art. 81, §3º, do RI)",
+    "nominal",
+    "ata RDE268: \"o Diretor Severino Medeiros Ramos Neto foi considerado ausente na deliberação deste processo, com fulcro no art. 81, §3º, do Regimento Interno\""
+   ],
+   "Guilherme Theo Rodrigues da Rocha Sampaio": [
+    "REVISAR",
+    "REVISAR",
+    "ata diz \"por maioria\" sem nomear o divergente; votaram Guilherme, Lucas (relator) e Alex (Felipe ausente por férias, Severino considerado ausente): ao menos um dos dois não acompanhou"
+   ],
+   "Alex Antônio de Azevedo Cruz": [
+    "REVISAR",
+    "REVISAR",
+    "idem"
+   ]
+  },
+  "fonte": "ata RDE268",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/RDE268__ata_*",
+    "considerado ausente na deliberação deste processo"
+   ],
+   [
+    "texto_antt/RDE268__ata_*",
+    "por maioria"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1031",
+  "processo": "50500.000001/2025-58",
+  "relator": "Lucas Asfor da Rocha Lima",
+  "votos": {
+   "Felipe Fernandes Queiroz": [
+    "ACOMPANHOU (Declaração de Voto DFQ 1/2026: ratifica o Voto DLA 37, com proposta de ajuste)",
+    "nominal",
+    "PDF Declaração de Voto DFQ 001-2026 §5 \"ratifico a minha concordância com o Voto DLA 37 ... proponho a inserção de comando\" e §8 \"meu alinhamento com a manifestação do Diretor Relator\""
+   ]
+  },
+  "fonte": "declaração de voto (texto do PDF) + ata ROD1031",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1031__outro_Declara*",
+    "ratifico a minha concordância com o Voto DLA 37"
+   ]
+  ]
+ },
+ {
+  "reuniao": "ROD1040",
+  "processo": "50505.009485/2025-51",
+  "relator": "Alex Antônio de Azevedo Cruz",
+  "votos": {
+   "Felipe Fernandes Queiroz": [
+    "SEM VOTO (retirado de pauta pelo revisor)",
+    "nominal",
+    "ata ROD1040 \"Processo retirado de pauta pelo Revisor\"; Felipe pediu vista na ROD1033 (Voto DAA 23/2026 de Alex Azevedo, relator)"
+   ]
+  },
+  "fonte": "ata ROD1040 + ata ROD1033",
+  "obs": "",
+  "checar": [
+   [
+    "texto_antt/ROD1040__ata_*",
+    "pelo Revisor, com fulcro no art. 55"
+   ],
+   [
+    "texto_antt/ROD1033__ata_*",
+    "pediu vista ao processo o Diretor Felipe Queiroz"
+   ]
+  ]
+ }
+]

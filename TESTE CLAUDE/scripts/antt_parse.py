@@ -69,8 +69,9 @@ def parse(r, ata):
             if pos < m.start(): rel = h
         g = lambda k: (lambda x: re.sub(r'\s+', ' ', x[1]).strip() if x else '')(re.search(k + r'\s*:\s*(.+?)(?=\n\s*(?:Interessad|A\s?ssunto|Decis)|\Z)', b, re.S))
         dec = corta(g('Decis[ãa]o')); dn = norm(dec)
-        voto = re.search(r'Voto\s+(Vista\s+)?([A-Z]+)\s*-\s*(\d+/\d{4})', dec)
-        if voto and not voto[1] and voto[2] in PREFIXO and not re.search(r'proposi[cç][aã]o do revisor', dn): rel = PREFIXO[voto[2]]   # relatoria = prefixo do Voto (confere com RELATORIA do PDF)
+        # voto ACOLHIDO: o que vem depois de "acolheu a proposição do Relator/Revisor, apresentada no" ou "Conforme"; senão o primeiro citado
+        voto = re.search(r'(?:acolheu a proposi[cç][aã]o d[oa] \w+,? apresentad[oa] no|[Cc]onforme)\s+Voto\s+(Vista\s+)?([A-Z]+)\s*-\s*(\d+/\d{4})', dec) or re.search(r'Voto\s+(Vista\s+)?([A-Z]+)\s*-\s*(\d+/\d{4})', dec)
+        if voto and not voto[1] and voto[2] in PREFIXO: rel = PREFIXO[voto[2]]   # relatoria = prefixo do Voto acolhido (confere com RELATORIA do PDF)
         coletiva = re.search(r'vista\s+cole\s?(?:ti)?\s?va', dn)
         m_un, m_ma = re.search(r'por unanimidade', dn), re.search(r'por maioria', dn)
         if coletiva: res = 'SOBRESTADO (vista coletiva)'
@@ -128,3 +129,9 @@ if __name__ == '__main__':
     print('reunioes', len(out['reunioes']), 'delib', len(out['deliberacoes']), 'votos', len(out['votos']))
     print(collections.Counter(d['resultado'] for d in out['deliberacoes'])); print(collections.Counter(v['proveniencia'] for v in out['votos']))
     print('sem presentes:', [r['reuniao'] for r in out['reunioes'] if not r['presentes'] and not r['obs']])
+    # etapa final (aditiva): revisão curada + cruzamento com os PDFs de voto (texto/OCR) + pendências com URL. Só roda se antt_revisao.json existir (degrada para o parse puro)
+    import os
+    if os.path.exists('antt_revisao.json'):
+        import antt_votos_pdf, antt_finalizar
+        antt_votos_pdf.main(sys.argv[1], 'antt_votos_pdf.json')
+        antt_finalizar.main(sys.argv[2], sys.argv[1], 'antt_inventario.json', 'antt_votos_pdf.json', 'antt_revisao.json', 'antt_sem_ata.json')

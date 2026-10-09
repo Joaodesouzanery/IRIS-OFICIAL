@@ -84,6 +84,32 @@
    "votos": "60/60 itens (100%), 0 linhas erradas (cerca de 300 linhas)",
    "erros": "nenhum erro de voto; 1 rótulo de resultado truncado (RPO4-32 III)",
    "correcao": "nenhuma necessária nos votos; rótulo de resultado fica como achado aberto"
+  },
+  {
+   "semente": 20261009,
+   "momento": "Fase 13 (09/10/2026): CSV de 09/10 com RPO20 decidida (48 itens novos) + 23 itens alterados na fonte",
+   "n": 45,
+   "universo": "48 itens novos (RPO20) + 23 alterados (processo/ato/assunto); 40 novos + 5 alterados sorteados, texto lido ANTES do JSON",
+   "relator": "45/45",
+   "resultado": "45/45",
+   "partes": "45/45",
+   "vencidos": "45/45",
+   "votos": "43/45 itens (4 linhas erradas de ~225)",
+   "erros": "RPO20-11 (vista coletiva): Ludimila VOTOU(antes da vista) em vez de NÃO PARTICIPOU (frase \"não participou ... Fernando proferiu voto subsistente\" contada como campo de voto) e Agnes ausente que \"disponibilizou seu voto\" sem nota de voto consignado; RPO20-12: \"consignaram\\xa0 seus votos\" (nbsp+espaço) não casava a regex, Sandoval e Agnes ficaram AUSENTE sem \"acompanhou o relator\"",
+   "correcao": "aneel_parse.py: nao_part tratado no ramo Pedido de Vista; \"disponibiliz* voto\" -> voto consignado; regex consign(ou|ando|aram)\\s+seus?\\s+votos?; nao_feito \"Divergência ANTES da vista\" só lista voto-vista que virou DIVERGIU"
+  },
+  {
+   "semente": "leitura integral (reauditoria)",
+   "momento": "após as correções",
+   "n": 53,
+   "universo": "os 48 itens da RPO20 (todos lidos, 40 da amostra + 8 restantes) + 5 alterados",
+   "relator": "53/53",
+   "resultado": "53/53",
+   "partes": "53/53",
+   "vencidos": "53/53",
+   "votos": "53/53 itens",
+   "erros": "nenhum",
+   "correcao": "-"
   }
  ],
  "final": {
@@ -99,5 +125,12 @@
  "varredura": {
   "script": "scripts/aneel_varredura2.py (independente do parser) + scripts/aneel_varredura.py",
   "resultado": "ver relatório da fase 10b: diferenças brutas, falsos positivos e erros reais por categoria"
+ },
+ "varredura3_fase13": {
+  "script": "scripts/aneel_varredura3.py (independente do parser)",
+  "itens_csv_com_resultado": 1049,
+  "checagens": "11306/11306 (100%) após a correção; com o JSON antes da correção: 11304/11306 (pegou RPO20-12)",
+  "observacao": "o script foi ajustado após ver 16 falsos positivos (7 linhas por item com ex-diretores subsistentes, \"DIVERGIU na parte\", ACOMPANHOU nominal em Não Deliberado, Retirado da Pauta->Deliberação em Não Deliberado), todos conferidos à mão no texto",
+  "processo_ato": "0/1049 divergências entre processo/ato do JSON e do CSV"
  }
 }
