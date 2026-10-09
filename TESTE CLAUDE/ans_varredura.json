@@ -171,8 +171,18 @@
    "taxa": 100.0
   },
   "vista/diligência → o pedinte nominal tem PEDIU VISTA": {
-   "acertos": 2,
-   "total": 2,
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "diligência → pedinte SEM VOTO (diligência solicitada); demais SEM VOTO; ninguém PEDIU VISTA/ACOMPANHOU/RELATOR; sem relator": {
+   "acertos": 1,
+   "total": 1,
+   "taxa": 100.0
+  },
+  "proposta/acréscimo feito por diretor nomeado → voto nominal \"ACOMPANHOU (com proposta acrescida)\"": {
+   "acertos": 1,
+   "total": 1,
    "taxa": 100.0
   },
   "atas listadas na API oficial = atas baixadas e lidas": {
@@ -212,8 +222,8 @@
   }
  },
  "total": {
-  "acertos": 8459,
-  "total": 8459,
+  "acertos": 8460,
+  "total": 8460,
   "taxa": 100.0
  },
  "divergencias": {}

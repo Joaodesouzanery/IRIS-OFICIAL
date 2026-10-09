@@ -1,6 +1,6 @@
 {
  "total": 28459,
- "ok": 28459,
+ "ok": 28455,
  "por_checagem": {
   "ddc_citada_em_ata": [
    1819,
@@ -27,7 +27,7 @@
    6857
   ],
   "rotulo do signatario coerente com a DDC": [
-   6857,
+   6853,
    6857
   ],
   "modo = JSON": [
@@ -91,5 +91,12 @@
    1
   ]
  },
- "divergencias": {}
+ "divergencias": {
+  "rotulo do signatario coerente com a DDC": [
+   "DDC 1007: Alex Braga Muniz = SEM VOTO (maioria sem nomes) (fonte: unan=False maioria=True div=[] abst=[] imp=['Paulo Xavier Alcoforado'])",
+   "DDC 1007: Patrícia Barcelos = SEM VOTO (maioria sem nomes) (fonte: unan=False maioria=True div=[] abst=[] imp=['Paulo Xavier Alcoforado'])",
+   "DDC 1098: Alex Braga Muniz = SEM VOTO (maioria sem nomes) (fonte: unan=False maioria=True div=[] abst=[] imp=['Paulo Xavier Alcoforado'])",
+   "DDC 1098: Patrícia Barcelos = SEM VOTO (maioria sem nomes) (fonte: unan=False maioria=True div=[] abst=[] imp=['Paulo Xavier Alcoforado'])"
+  ]
+ }
 }

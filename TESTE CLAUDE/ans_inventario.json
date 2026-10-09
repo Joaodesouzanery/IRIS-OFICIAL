@@ -1366,7 +1366,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "OK",
-   "bytes": 179304,
+   "bytes": 179298,
    "arquivo_local": "fonte/ans/html/10a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026.html"
   },
   {
@@ -1379,7 +1379,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/12a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "OK",
-   "bytes": 179371,
+   "bytes": 179377,
    "arquivo_local": "fonte/ans/html/12a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026.html"
   },
   {
@@ -1498,7 +1498,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/644a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 178775,
+   "bytes": 178769,
    "arquivo_local": "fonte/ans/html/644a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -1652,7 +1652,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-642a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "OK",
-   "bytes": 181994,
+   "bytes": 182000,
    "arquivo_local": "fonte/ans/html/deliberacoes-da-642a-reuniao-da-diretoria-colegiada.html"
   },
   {
@@ -1702,7 +1702,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/diretoria-colegiada-da-ans-tem-nova-composicao",
    "http": 200,
    "estado": "OK",
-   "bytes": 180248,
+   "bytes": 180242,
    "arquivo_local": "fonte/ans/html/diretoria-colegiada-da-ans-tem-nova-composicao.html"
   },
   {
@@ -1914,13 +1914,13 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/3a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/4a-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/4a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -1932,7 +1932,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/5a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/632a-reuniao-da-diretoria-colegiada",
@@ -1950,7 +1950,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/634a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56719
+   "bytes": 56713
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/635a-reuniao-da-diretoria-colegiada",
@@ -1980,7 +1980,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/639a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/640a-reuniao-da-diretoria-colegiada",
@@ -2022,7 +2022,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/6a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/7a-reuniao-extraordinaria-da-diretoria-colegiada-de-2026",
@@ -2143,7 +2143,7 @@
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-639a-reuniao-da-diretoria-colegiada",
    "http": 200,
    "estado": "RESTRITO",
-   "bytes": 56713
+   "bytes": 56719
   },
   {
    "url": "https://www.gov.br/ans/pt-br/assuntos/noticias/sobre-ans/deliberacoes-da-640a-reuniao-da-diretoria-colegiada",

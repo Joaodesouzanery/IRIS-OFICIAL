@@ -1,5 +1,6 @@
 """ANAC: varredura 100% INDEPENDENTE (NAO importa o parser nem anac_lib): relê TODAS as páginas salvas em fonte/anac (APEX, calendário,
-páginas de reunião, pautas) com regex própria e confere contra anac.json item a item e voto a voto; confere sha256 do manifesto.
+páginas de reunião, pautas) E os textos das atas/certidões/votos lidos (texto_anac/, com regex própria, por sobrenome) e confere contra anac.json
+item a item e voto a voto (presença real, ausentes, impedidos, vencidos, vista, relator); confere sha256 do manifesto e a cadeia listado×baixado×lido.
 uso: python3 -I scripts/anac_varredura.py anac.json anac_inventario.json [fonte/anac] [manifesto_anac.json]
 saída: contadores oficial × listado × baixado × lido; falhas por regra; exit 1 se alguma regra falhar."""
 import sys, os, re, json, html, hashlib, datetime, unicodedata, collections, glob
@@ -13,7 +14,7 @@ def nz(s): return ''.join(c for c in unicodedata.normalize('NFD', s.lower()) if 
 SOBRE = {'faierstein': 'Tiago Faierstein', 'mesquita': 'Rui Mesquita', 'moreira': 'Antônio Mathias Moreira', 'honorato': 'Roberto Honorato', 'ianelli': 'Cláudio Ianelli', 'nascimento': 'Luiz Ricardo Nascimento', 'altoe': 'Mariana Altoé'}
 def quem(nome): return SOBRE.get(nz(nome.split()[-1])) if nome.strip() else None
 JAN = {'Tiago Faierstein': ('2026-01-01', '2026-12-31'), 'Rui Mesquita': ('2026-01-01', '2026-12-31'), 'Antônio Mathias Moreira': ('2026-01-01', '2026-12-31'),
-       'Luiz Ricardo Nascimento': ('2026-01-01', '2026-03-22'), 'Mariana Altoé': ('2026-03-03', '2026-04-24'), 'Roberto Honorato': ('2026-03-23', '2026-12-31'), 'Cláudio Ianelli': ('2026-04-25', '2026-12-31')}
+       'Luiz Ricardo Nascimento': ('2026-01-01', '2026-03-22'), 'Mariana Altoé': ('2026-02-12', '2026-04-24'), 'Roberto Honorato': ('2026-03-23', '2026-12-31'), 'Cláudio Ianelli': ('2026-04-25', '2026-12-31')}
 # --- 1. índices APEX: ids e títulos
 apex = {}
 for arq, tipo in (('apex_presenciais_2026.html', 'p'), ('apex_eletronicas_2026.html', 'e')):

@@ -386,7 +386,13 @@ for r, cb, its in todos:
             for k, x in enumerate(ata['itens']):
                 if k not in usados and x['processo'] == proc: ai = x; usados.add(k); break
             if ai is None: conflitos.append(f'{rid} item {it["n"]} (proc. {proc}): não encontrado na ata')
-        ce_e = CERTS.get((rid, it['n'])); ce = le_certidao(le_doc(ce_e)) if ce_e else None
+        ce_e = next((DOCS[u] for rot, u in it['docs'] if rot == 'Certidão de deliberação' and u in DOCS and DOCS[u].get('texto')), None); ce = le_certidao(le_doc(ce_e)) if ce_e else None   # por LINK do item (o mesmo documento pode servir a 2 reunioes)
+        if ce:   # a certidao tem de ser DESTA reuniao (a pagina da RE16 reaponta o item 3 para a certidao da RE14)
+            nr_c = re.match(r'(\d+)', ce['reuniao_txt']); eh_ele = 'Eletrônica' in ce['reuniao_txt']
+            if not nr_c or nr_c.group(1) != re.sub(r'\D', '', rid) or eh_ele != rid.startswith('RE'):
+                conflitos.append(f'{rid} item {it["n"]}: o link "Certidão de deliberação" aponta para a certidão da {ce["reuniao_txt"][:40]} (outra reunião); não usada')
+                pend.append(['ANAC', f'{rid} item {it["n"]} (proc. {proc}) — certidão desta reunião', data, 'link incorreto na fonte', f'o link da página aponta para a certidão da {ce["reuniao_txt"][:45]}; a certidão da {rid} não está ligada', 'erro da página da ANAC (documentos repetidos de uma reunião anterior)', 'aguardar correção da ANAC; a ata da reunião cobre a decisão', ce_e['url']])
+                ce = None
         if ce and ce['processo'] and ce['processo'] != proc: conflitos.append(f'{rid} item {it["n"]}: processo da certidão {ce["processo"]} ≠ página {proc}'); ce = None
         t_ata = ai['chunk'] if ai else ''; t_ce = ce['deliberacao'] if ce else ''
         an = analisa_decisao(' '.join(x for x in (txt, t_ata, t_ce) if x), it['processo_txt'])
@@ -416,7 +422,8 @@ for r, cb, its in todos:
             mi = re.search(r'em razão d[^.]+?(?=\s*\.\s)', ai['chunk']); extra['impedimento_motivo'] = mi.group(0)[:160] if mi else ''
         # votos escritos proprios de nao-relator (assinatura do documento Voto lido)
         autores = []
-        for ve in VOTOS_DOC.get((rid, it['n']), []):
+        votos_it = [DOCS[u] for rot, u in it['docs'] if rot in ('Voto', 'Voto-vista') and u in DOCS and DOCS[u].get('texto')]
+        for ve in votos_it:
             au = assina_voto(le_doc(ve))
             if au: autores.append(au)
             if au and au != canon(rel_raw) and au in pres and au != an['voto_vista_de']:
@@ -426,7 +433,7 @@ for r, cb, its in todos:
         res_txt = txt + (' [ad referendum]' if an['ad_referendum'] else '')
         delib.append(dict(base, resultado=res_txt, decisao_texto=txt, tipo_item=tipo, partes=ps, ad_referendum=an['ad_referendum'],
                           decisao_ata=ai['decisao'] if ai else '', decisao_certidao=t_ce, codigos_voto=ce['codigos_voto'] if ce else [], autores_voto=autores,
-                          leitura={'ata': bool(ai), 'certidao': bool(ce), 'votos_lidos': len(VOTOS_DOC.get((rid, it['n']), []))}))
+                          leitura={'ata': bool(ai), 'certidao': bool(ce), 'votos_lidos': len(votos_it)}))
         votos += votos_item(rid, data, proc, it['n'], tipo, an, rel, pres, ps, extra, aus)
         if an['modo'] == 'maioria' and not an['vencidos'] and not an['relator_vencido']:
             pend.append(['ANAC', f'{rid} item {it["n"]} (proc. {proc}) — quem divergiu ("{txt}")', data, 'dado não publicado', 'votos individuais REVISAR', 'decisão "por maioria" sem nomear os vencidos', 'ler a certidão: ' + (urls.get('Certidão de deliberação') or ''), urls.get('Certidão de deliberação') or r['url']])
@@ -473,7 +480,7 @@ qual = [
  ['ANAC', 'Cada deliberação decidida tem 1 voto por presente + 1 AUSENTE por ausente justificado', len(dec), OKV, ok_(OKV == len(dec)), f'presença REAL (ata) em {n_ata} reuniões; INFERIDA em {n_dec_reun - n_ata} (sem ata publicada)'],
  ['ANAC', 'Reuniões com deliberações publicadas × atas lidas (presença real)', n_dec_reun, n_ata, 'EXCEÇÃO' if n_ata < n_dec_reun else 'OK', 'faltam as atas de ' + ', '.join(x['reuniao'] for x in reun if x['presentes'] and not x['presenca'].startswith('real')) + ' (página: "Ata em breve"); presença inferida nelas'],
  ['ANAC', 'Itens decididos × itens localizados na ata lida (por nº do processo)', sum(1 for d in dec if rm[d['reuniao']]['presenca'].startswith('real')), n_ata_it, ok_(n_ata_it == sum(1 for d in dec if rm[d['reuniao']]['presenca'].startswith('real'))), 'todo item de reunião com ata foi localizado na ata'],
- ['ANAC', 'Itens decididos × certidões de deliberação lidas (a ANAC só emite certidão para item decidido; vista/retirada não têm)', sum(1 for d in dec if d['tipo_item'] == 'Deliberação'), n_cert, ok_(n_cert == sum(1 for d in dec if d['tipo_item'] == 'Deliberação')), 'relator e modo da certidão conferidos com a página e a ata'],
+ ['ANAC', 'Itens decididos × certidões de deliberação lidas (a ANAC só emite certidão para item decidido; vista/retirada não têm)', sum(1 for d in dec if d['tipo_item'] == 'Deliberação'), n_cert, 'OK' if n_cert == sum(1 for d in dec if d['tipo_item'] == 'Deliberação') else 'EXCEÇÃO', 'relator e modo da certidão conferidos com a página e a ata' + ('; ' + '; '.join(c_ for c_ in conflitos if 'outra reunião' in c_) if any('outra reunião' in c_ for c_ in conflitos) else '')],
  ['ANAC', 'Modo de votação (unanimidade/maioria) igual entre página, ata e certidão', n_modo_tot, n_modo_ok, ok_(n_modo_ok == n_modo_tot), 'itens com 2+ fontes comparáveis; divergências em `conflitos` do log'],
  ['ANAC', 'Documentos SEI/pergamum ligados nas páginas (únicos) × baixados', TD['total'], TD['baixados'], ok_(TD['baixados'] == TD['total']), f"sei.anac.gov.br {sei.get('baixados')}/{sei.get('tentados')}, pergamum.anac.gov.br {perg.get('baixados')}/{perg.get('tentados')}; sha256 de todos no manifesto_anac.json"],
  ['ANAC', 'Documentos baixados × lidos (texto extraído; PDF imagem por OCR RapidOCR)', TD['baixados'], TD['com_texto_lido'], 'EXCEÇÃO' if TD['com_texto_lido'] < TD['baixados'] else 'OK', f"{len(docs_nao_lidos)} não lidos: {sum(1 for d in docs_nao_lidos if 'pergamum' in d['url'])} ementas pergamum (SPA/API autenticada) e {sum(1 for d in docs_nao_lidos if 'pergamum' not in d['url'])} pesquisas públicas SEI que devolvem 'Processo não encontrado.'; lidos = {sei.get('lidos')} de {sei.get('tentados')} do SEI"],
@@ -482,7 +489,7 @@ decididas = sum(1 for x in reun if x['presentes'])
 cob = [
  ['ANAC', 'Reuniões deliberativas 2026 (índice APEX)', len(reun), f"{cont['listadas_apex_presenciais']} presenciais (1ª..{max(num['presenciais'])}ª) + {cont['listadas_apex_eletronicas']} eletrônicas ({max(num['eletronicas'])} ordinárias + {len(num['extraordinarias_eletronicas'])} extraordinárias); {decididas} com deliberações publicadas ({n_ata} com ata lida), {sum(1 for x in reun if x['situacao'].startswith('Realizada, '))} realizada(s) sem resultado publicado, {sum(1 for x in reun if x['situacao'].startswith('Futura'))} futura(s)"],
  ['ANAC', 'Calendário 2026 (Portaria 18.366) = denominador independente', cont['calendario_portaria_18366_ano'], f"{cont['calendario_ate_hoje']} datas até {HOJE}; {cont['calendario_ate_hoje_com_reuniao_na_data']} coincidem com reunião presencial realizada; as demais foram remarcadas/não realizadas (presenciais fora do calendário: {cont['presenciais_realizadas_fora_do_calendario']})"],
- ['ANAC', 'Documentos (atas/votos/certidões) listados × baixados × lidos', TD['total'], f"{TD['baixados']} baixados, {TD['com_texto_lido']} lidos (SEI {sei.get('lidos')}/{sei.get('tentados')}: {sum(1 for e in man if e['tipo']=='documento (Ata)' and e.get('texto'))} atas, {len(CERTS)} certidões, {sum(len(v) for v in VOTOS_DOC.values())} votos); 2 PDFs imagem lidos por OCR; sha256 de todos no manifesto_anac.json"],
+ ['ANAC', 'Documentos (atas/votos/certidões) listados × baixados × lidos', TD['total'], f"{TD['baixados']} baixados, {TD['com_texto_lido']} lidos (SEI {sei.get('lidos')}/{sei.get('tentados')}: {sum(1 for e in man if e['tipo']=='documento (Ata)' and e.get('texto'))} atas, {len({x['url'] for d in delib for x in d['documentos'] if x['rotulo'] == 'Certidão de deliberação' and x['lido']})} certidões, {len({u for d in delib for x in d['documentos'] for u in [x['url']] if x['rotulo'] in ('Voto', 'Voto-vista') and x['lido']})} votos); 2 PDFs imagem lidos por OCR; sha256 de todos no manifesto_anac.json"],
  ['ANAC', 'Deliberações / votos extraídos', nitens, f"{nitens} itens ({sum(1 for d in delib if d['tipo_item']=='Deliberação' and d['decisao_texto'])} deliberações decididas, {sum(1 for d in delib if d['tipo_item']=='Retirada de pauta')} retiradas de pauta, {sum(1 for d in delib if d['tipo_item']=='Vista')} vistas, {sum(1 for d in delib if not d['decisao_texto'])} sem desfecho publicado) e {len(votos)} votos ({nv['nominal']} nominais, {nv['inferido']} inferidos, {nv['REVISAR']} REVISAR)"],
  ['ANAC', 'Itens da ata por tipo (todos têm 1 linha de voto por diretor, exceto Cancelada)', nitens, '; '.join(f'{k}: {v}' for k, v in collections.Counter(d['tipo_item'] for d in delib).most_common())],
 ]

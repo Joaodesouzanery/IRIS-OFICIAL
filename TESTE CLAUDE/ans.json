@@ -13750,20 +13750,27 @@
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
    "assunto": "VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
-   "resultado": "SOBRESTADO — pedido de diligência à DIOPE feito pela Diretora Eliane Aparecida de Castro Medeiros",
+   "resultado": "DELIBERAÇÃO SUSPENSA — pedido de diligência à DIOPE feito pela Diretora Eliane Aparecida de Castro Medeiros",
    "voto_doc": "",
    "decisao_texto": "Deliberação suspensa pelo pedido de diligência à DIOPE feito pela Diretora Eliane Aparecida de Castro Medeiros.",
-   "tipo_item": "Vista",
+   "tipo_item": "Deliberação",
    "secao": "E) Deliberações – Sessão Reservada [sessão reservada]",
    "unidade": "DIFIS",
-   "partes": [],
+   "partes": [
+    {
+     "parte": "item",
+     "acao": "VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
+     "modo": "diligencia",
+     "vencidos": []
+    }
+   ],
    "origem": "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=downloadArquivoAjax&fileName=ata/92466___Ata%20da%20635%C2%AA%20DICOL%20-%20retificada.pdf",
    "sessao": "Reservada",
    "area_do_voto": "DIFIS",
    "area_do_voto_fonte": "numero do voto",
    "impedidos": [],
    "relator_proveniencia": "",
-   "relator_motivo": "o autor do voto (diretor da área) é o próprio pedinte da diligência/vista: lançado como PEDIU VISTA, sem RELATOR"
+   "relator_motivo": "sem votação declarada na ata: sem RELATOR"
   },
   {
    "reuniao": "DICOL635",
@@ -33864,6 +33871,8 @@
    "item_n": "1",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO da minuta da ata da 640ª Reunião Ordinária de Diretoria Colegiada, de 17/07/206.",
    "resultado": "Item aprovado",
    "voto_doc": "",
@@ -33889,8 +33898,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "item_n": "2",
-   "relator": "Wadih Nemer Damous Filho",
+   "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIDES)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "resultado": "Item apreciado",
    "voto_doc": "",
@@ -33902,7 +33913,7 @@
     {
      "parte": "item",
      "acao": "APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
-     "modo": "aprovado/deliberado sem divergência registrada",
+     "modo": "apreciado",
      "vencidos": []
     }
    ],
@@ -33918,6 +33929,8 @@
    "item_n": "3",
    "relator": "Wadih Nemer Damous Filho",
    "interessado": "ANS — Diretoria Colegiada (PRESI)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM PRESI\" → diretor da área na data (Wadih Nemer Damous Filho)",
    "assunto": "REFERENDO da decisão do Diretor-Presidente que (i) prorroga o Chamamento Público pelo período de quinze dias, com a redução do número de questionamentos obrigatórios, sobre os cartões de desconto, cartões pré-pagos ou serviços correlatos; e (ii) autoriza a possibilidade de que os participantes do chamamento público possam ser diretamente arguidos pela ANS. Processo nº 33910.011904/2026-02.",
    "resultado": "Item referendado",
    "voto_doc": "",
@@ -33945,6 +33958,8 @@
    "item_n": "4",
    "relator": "Lenise Barcellos de Mello Secchin",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIPRO\" → diretor da área na data (Lenise Barcellos de Mello Secchin)",
    "assunto": "DELIBERAÇÃO sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Abertura de Consulta Pública e Audiência Pública. Processo nº 33910.021273/2026-21.",
    "resultado": "Item deliberado",
    "voto_doc": "",
@@ -34169,6 +34184,8 @@
    "item_n": "1",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (PRESI)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO da minuta da ata da 641ª Reunião Ordinária de Diretoria Colegiada, de 07/08/2026, e da minuta da ata da 9ª Reunião Extraordinária de Diretoria Colegiada, de 21/08/2026.",
    "resultado": "Item aprovado",
    "voto_doc": "",
@@ -34194,8 +34211,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "item_n": "2",
-   "relator": "Wadih Nemer Damous Filho",
+   "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIDES)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e recursos no processo administrativo de ressarcimento ao SUS, proposto no projeto de parametrização de dados e análise em lote. Processo nº 33910.022773/2026-81.",
    "resultado": "Item apreciado",
    "voto_doc": "",
@@ -34207,7 +34226,7 @@
     {
      "parte": "item",
      "acao": "APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apr",
-     "modo": "aprovado/deliberado sem divergência registrada",
+     "modo": "apreciado",
      "vencidos": []
     }
    ],
@@ -34223,6 +34242,8 @@
    "item_n": "3",
    "relator": "Eliane Aparecida de Castro Medeiros",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Eliane Aparecida de Castro Medeiros)",
    "assunto": "APROVAÇÃO da proposta de declaração de descumprimento do Termo de Compromisso de Ajuste de Conduta - TCAC nº 002/2024 celebrado entre a ANS e a ORAL GAM ASSISTENCIA ODONTOLÓGICA LTDA. Processo nº 33910.036962/2023-98.",
    "resultado": "Item aprovado",
    "voto_doc": "",
@@ -34250,6 +34271,8 @@
    "item_n": "4",
    "relator": "Eliane Aparecida de Castro Medeiros",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Eliane Aparecida de Castro Medeiros)",
    "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o MINISTÉRIO PÚBLICO DO ESTADO DE MATO GROSSO DO SUL, no âmbito do Programa Parceiros da Cidadania. Processo nº 33902.119363/2017-60.",
    "resultado": "Itens aprovados",
    "voto_doc": "",
@@ -34277,6 +34300,8 @@
    "item_n": "5",
    "relator": "Eliane Aparecida de Castro Medeiros",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Eliane Aparecida de Castro Medeiros)",
    "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL DE JUSTIÇA DO ESTADO DO TOCANTINS – TJ/TO, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.013588/2022-71.",
    "resultado": "Itens aprovados",
    "voto_doc": "",
@@ -34304,6 +34329,8 @@
    "item_n": "6",
    "relator": "Wadih Nemer Damous Filho",
    "interessado": "ANS — Diretoria Colegiada (DIDES)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIDES\" → diretor da área na data (Wadih Nemer Damous Filho)",
    "assunto": "APROVAÇÃO da proposta de alteração dos Anexos I e I-d da Resolução Regimental - RR nº 21, de 26 de janeiro de 2022, no âmbito da Diretoria de Desenvolvimento Setorial. Processo nº 33910.024041/2026-25.",
    "resultado": "Item aprovado",
    "voto_doc": "",
@@ -34331,6 +34358,8 @@
    "item_n": "7",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "INFORME sobre a divulgação das metas de Excelência e Redução de IGR trimestral referente ao ciclo avaliativo da RN nº 623/2024 correspondente aos meses de abril a junho de 2026. Processo nº 33910.060457/2025-26.",
    "resultado": "Informe (sem deliberação nem votação)",
    "voto_doc": "",
@@ -34621,6 +34650,8 @@
    "item_n": "1",
    "relator": "Wadih Nemer Damous Filho",
    "interessado": "ANS — Diretoria Colegiada (PRESI)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM PRESI\" → diretor da área na data (Wadih Nemer Damous Filho)",
    "assunto": "Referendo da decisão do Diretor-Presidente que suspendeu a eficácia da Resolução Regimental ANS nº 38, de 27 de agosto de 2026 até 15 de setembro de 2026, de forma retroativa a 28 de agosto de 2026. Processo nº 33910.024041/2026-25.",
    "resultado": "Item referendado",
    "voto_doc": "",
@@ -34648,6 +34679,8 @@
    "item_n": "2",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO da minuta da ata da 642ª Reunião Ordinária de Diretoria Colegiada, de 26/08/206 e da minuta da ata da 10ª Reunião Extraordinária de Diretoria Colegiada, de 03/09/2026.",
    "resultado": "Item aprovado",
    "voto_doc": "",
@@ -34675,6 +34708,8 @@
    "item_n": "3",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "INFORME sobre a conclusão do mandato da Diretora Eliane Medeiros à frente da Diretoria de Fiscalização.",
    "resultado": "Informe (sem deliberação nem votação)",
    "voto_doc": "",
@@ -34695,6 +34730,8 @@
    "item_n": "4",
    "relator": "Lenise Barcellos de Mello Secchin",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIPRO\" → diretor da área na data (Lenise Barcellos de Mello Secchin)",
    "assunto": "DELIBERAÇÃO sobre a proposta tecnologia em saúde recomendada positivamente pela Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC, para incorporação ao Sistema Único de Saúde – SUS. Tecnologia para incorporação ao Rol de Procedimentos e Eventos e Saúde. Processo: 33910.000122/2026-30.",
    "resultado": "Item deliberado",
    "voto_doc": "",
@@ -34722,6 +34759,8 @@
    "item_n": "5",
    "relator": "Eliane Aparecida de Castro Medeiros",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Eliane Aparecida de Castro Medeiros)",
    "assunto": "APROVAÇÃO da Proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Tribunal de Justiça do Estado de São Paulo - TJ/SP. Processo: 33902.002784/2015-91.",
    "resultado": "Itens aprovados",
    "voto_doc": "",
@@ -34749,6 +34788,8 @@
    "item_n": "6",
    "relator": "Eliane Aparecida de Castro Medeiros",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Eliane Aparecida de Castro Medeiros)",
    "assunto": "APROVAÇÃO da Proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o Ministério Público do Estado do Ceará – MP/CE. Processo: 33902.047499/2017-61.",
    "resultado": "Itens aprovados",
    "voto_doc": "",
@@ -34887,6 +34928,8 @@
    "item_n": "1",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
    "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
    "voto_doc": "",
@@ -34912,6 +34955,8 @@
    "item_n": "2",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistência à saúde (Monitoramento da Garantia de Atendimento). Processo: 33910.009781/2026-31.",
    "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
    "voto_doc": "",
@@ -34937,6 +34982,8 @@
    "item_n": "3",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação da proposta de Resolução Normativa. Processo nº 33910.018676/2026-93.",
    "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
    "voto_doc": "",
@@ -34962,6 +35009,8 @@
    "item_n": "4",
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
+   "relator_proveniencia": "",
+   "relator_motivo": "",
    "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.026708/2026-24.",
    "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
    "voto_doc": "",
@@ -35959,6 +36008,8 @@
    "item_n": "2",
    "relator": "Lenise Barcellos de Mello Secchin",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIPRO\" → diretor da área na data (Lenise Barcellos de Mello Secchin)",
    "assunto": "Deliberação sobre a proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Nota Técnica de Recomendação Final – NTRF referente à UAT nº 199. Aprovação da proposta de Resolução Normativa.",
    "resultado": "Aprovado por unanimidade — Voto nº 942/2026/DIPRO: (i) pela apreciação do relatório de consolidação das contribuições da participação social: Consulta Pública - CP nº 175, de 07 de agosto 2026 e o Relatório da Audiência Pública - AP nº 68, de 11 de agosto de 2026; (ii) pela apreciação dos relatórios finais da COSAÚDE para as ",
    "voto_doc": "",
@@ -41322,10 +41373,10 @@
    "processo": "33910.025946/2025-31",
    "deliberacao": "Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
    "diretor": "Wadih Nemer Damous Filho",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (deliberação suspensa — diligência pendente)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "deliberação suspensa; os demais não votaram na reunião"
+   "motivo": "ata: deliberação suspensa pelo pedido de diligência; ninguém votou na reunião"
   },
   {
    "reuniao": "DICOL635",
@@ -41333,10 +41384,10 @@
    "processo": "33910.025946/2025-31",
    "deliberacao": "Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
    "diretor": "Eliane Aparecida de Castro Medeiros",
-   "voto": "PEDIU VISTA",
+   "voto": "SEM VOTO (diligência solicitada)",
    "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "ata: deliberação suspensa a pedido deste diretor"
+   "motivo": "ata: deliberação suspensa pelo pedido de diligência deste diretor (diligência, não vista)"
   },
   {
    "reuniao": "DICOL635",
@@ -41344,10 +41395,10 @@
    "processo": "33910.025946/2025-31",
    "deliberacao": "Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
    "diretor": "Jorge Antônio Aquino Lopes",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (deliberação suspensa — diligência pendente)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "deliberação suspensa; os demais não votaram na reunião"
+   "motivo": "ata: deliberação suspensa pelo pedido de diligência; ninguém votou na reunião"
   },
   {
    "reuniao": "DICOL635",
@@ -41355,10 +41406,10 @@
    "processo": "33910.025946/2025-31",
    "deliberacao": "Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
    "diretor": "Lenise Barcellos de Mello Secchin",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (deliberação suspensa — diligência pendente)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "deliberação suspensa; os demais não votaram na reunião"
+   "motivo": "ata: deliberação suspensa pelo pedido de diligência; ninguém votou na reunião"
   },
   {
    "reuniao": "DICOL635",
@@ -41366,10 +41417,10 @@
    "processo": "33910.025946/2025-31",
    "deliberacao": "Item E17: VOTO Nº 0145/2026/ASSNT-DIFIS/DIRAD-DIFIS/DIFIS em face de UNIMED DO ESTADO DO RIO DE JANEIRO - FEDERAÇÃO ESTADUAL DAS COOPERATIVAS MÉDICAS, ANS nº 31.236-3.",
    "diretor": "Carla de Figueiredo Soares",
-   "voto": "SEM VOTO AINDA (vista pendente)",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (deliberação suspensa — diligência pendente)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "deliberação suspensa; os demais não votaram na reunião"
+   "motivo": "ata: deliberação suspensa pelo pedido de diligência; ninguém votou na reunião"
   },
   {
    "reuniao": "DICOL635",
@@ -48142,10 +48193,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "diretor": "Wadih Nemer Damous Filho",
-   "voto": "RELATOR",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "relator = diretor da área proponente (inferido do rótulo \"ITEM DIDES\"; a fonte não nomeia o relator)"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL641",
@@ -48153,10 +48204,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "diretor": "Eliane Aparecida de Castro Medeiros",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL641",
@@ -48164,10 +48215,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "diretor": "Lenise Barcellos de Mello Secchin",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL641",
@@ -48175,10 +48226,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "diretor": "Carla de Figueiredo Soares",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL641",
@@ -48186,10 +48237,10 @@
    "processo": "33910.024041/2026-25",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração regimental no âmbito da Diretoria de Desenvolvimento Setorial da ANS. Processo nº 33910.024041/2026-25.",
    "diretor": "Jorge Antônio Aquino Lopes",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL641",
@@ -48417,10 +48468,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "diretor": "Wadih Nemer Damous Filho",
-   "voto": "RELATOR",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "relator = diretor da área proponente (inferido do rótulo \"ITEM DIDES\"; a fonte não nomeia o relator)"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL642",
@@ -48428,10 +48479,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "diretor": "Eliane Aparecida de Castro Medeiros",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL642",
@@ -48439,10 +48490,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "diretor": "Lenise Barcellos de Mello Secchin",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL642",
@@ -48450,10 +48501,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "diretor": "Carla de Figueiredo Soares",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL642",
@@ -48461,10 +48512,10 @@
    "processo": "33910.022773/2026-81",
    "deliberacao": "Item 2: APRECIAÇÃO da proposta normativa que visa alterar a Resolução Normativa nº 502, de 2022, e revogar a Instrução Normativa ANS nº 26, de 2022. Novo formato de apresentação de petições de impugnações e r",
    "diretor": "Jorge Antônio Aquino Lopes",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
   },
   {
    "reuniao": "DICOL642",
@@ -49605,10 +49656,10 @@
    "processo": "33910.011904/2026-02",
    "deliberacao": "Item A1: Deliberação acerca dos cartões de desconto, cartões pré-pagos ou serviços correlatos.",
    "diretor": "Lenise Barcellos de Mello Secchin",
-   "voto": "ACOMPANHOU",
-   "proveniencia": "inferido",
+   "voto": "ACOMPANHOU (com proposta acrescida)",
+   "proveniencia": "nominal",
    "voto_por_parte": "",
-   "motivo": "ata diz apenas \"aprovado por unanimidade\" (voto individual não detalhado)"
+   "motivo": "ata: aprovado por unanimidade; o diretor fez proposta/acréscimo incorporado ao item aprovado, segundo a ata"
   },
   {
    "reuniao": "DICOLE06",
@@ -50503,13 +50554,13 @@
    "ANS",
    "Itens (deliberações) por tipo",
    281,
-   "Deliberação 232, Informe 24, Aprovação de ata 13, Retirada de pauta 10, Vista 2"
+   "Deliberação 233, Informe 24, Aprovação de ata 13, Retirada de pauta 10, Vista 1"
   ],
   [
    "ANS",
    "Votos por proveniência",
    1260,
-   "inferido 1147, nominal 108, REVISAR 5 | rótulos: ACOMPANHOU 935, RELATOR 209, SEM VOTO (retirado de pauta) 50, SEM VOTO (apreciação, sem votação) 30, IMPEDIDO (por ter proferido a decisão recorrida / participado do processo) 14, SEM VOTO AINDA (vista pendente) 7, SEM VOTO REGISTRADO 5, ACOMPANHOU (com ajuste solicitado) 2, ACOMPANHOU (com observações acolhidas) 2, PEDIU VISTA 2, ACOMPANHOU (com ressalvas) 2, RELATOR (vista concedida; sem voto proferido na ata) 1, AUSENTE 1"
+   "inferido 1132, nominal 123, REVISAR 5 | rótulos: ACOMPANHOU 926, RELATOR 207, SEM VOTO (retirado de pauta) 50, SEM VOTO (apreciação, sem votação) 40, IMPEDIDO (por ter proferido a decisão recorrida / participado do processo) 14, SEM VOTO REGISTRADO 5, SEM VOTO (deliberação suspensa — diligência pendente) 4, SEM VOTO AINDA (vista pendente) 3, ACOMPANHOU (com ajuste solicitado) 2, ACOMPANHOU (com observações acolhidas) 2, ACOMPANHOU (com ressalvas) 2, PEDIU VISTA 1, RELATOR (vista concedida; sem voto proferido na ata) 1, SEM VOTO (diligência solicitada) 1, AUSENTE 1, ACOMPANHOU (com proposta acrescida) 1"
   ],
   [
    "ANS",
@@ -50772,7 +50823,7 @@
   [
    "ANS",
    "Voto individual e relator nas atas",
-   "1147 de 1260 votos inferidos; 5 de 210 linhas RELATOR nominais",
+   "1132 de 1260 votos inferidos; 5 de 208 linhas RELATOR nominais",
    "LIMITE ESTRUTURAL DA FONTE",
    "As atas oficiais NÃO usam a palavra \"relator\" e só registram: \"aprovado por unanimidade\", impedimento (nominal), retirada de pauta/vista/diligência (nominal) e ressalvas (nominal). Convenção: \"por unanimidade\" → ACOMPANHOU inferido por presente não impedido; relator = diretor da área do voto citado na ata (inferido), exceto onde o voto escrito (anexo) nomeia o diretor (nominal)",
    "Voto escrito de cada item só existe como anexo em 632ª, 633ª (parcial) e extras 1–4; vídeo da sessão aberta mostraria o resto"
@@ -50796,7 +50847,7 @@
   [
    "ANS",
    "\"Apreciado\"",
-   "30 linhas SEM VOTO (apreciação)",
+   "40 linhas SEM VOTO (apreciação)",
    "LIMITE DA FONTE",
    "Quando a ata diz só \"Apreciado\" não há votação declarada: SEM VOTO (nominal), sem inferir ACOMPANHOU",
    "Nenhuma"
@@ -50812,9 +50863,9 @@
   [
    "ANS",
    "Vista, diligência, impedimento, retirada, ressalva",
-   "vista 2 itens; impedimento  + _imp +  linhas; retirada 10 itens",
+   "vista 1 itens; impedimento 14 linhas; retirada 10 itens",
    "FEITO",
-   "Lidos nominalmente das atas; o pedido de diligência da 635ª (item E17) está como tipo Vista + PEDIU VISTA",
+   "Lidos nominalmente das atas; o pedido de diligência da 635ª (item E17) está como Deliberação suspensa (diligência à DIOPE, NÃO vista): Eliane SEM VOTO (diligência solicitada), demais SEM VOTO (deliberação suspensa — diligência pendente)",
    "Nenhuma"
   ],
   [
