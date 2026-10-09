@@ -1,0 +1,65 @@
+{
+ "reunioes": [],
+ "deliberacoes": [],
+ "votos": [],
+ "qualidade": [],
+ "cobertura": [
+  [
+   "ANAC",
+   "Reuniões 2026 listadas (gov.br)",
+   0,
+   "índices oficiais de 2026 inacessíveis; calendário não lido"
+  ]
+ ],
+ "pendencias": [
+  [
+   "ANAC",
+   "Índice de reuniões presenciais 2026 (REDIR, atas, pautas, deliberações)",
+   "2026",
+   "bloqueado pela fonte/egress",
+   "host fora da allowlist do proxy (403 CONNECT); gov.br/anac/.../2026 retorna 404 (2026 só existe no APEX)",
+   "liberar o host ou o usuário enviar os PDFs/HTML",
+   "reexecutar scripts/anac_rodar.sh",
+   "https://departamental.anac.gov.br/menu/f?p=107101:137"
+  ],
+  [
+   "ANAC",
+   "Índice de reuniões eletrônicas 2026",
+   "2026",
+   "bloqueado pela fonte/egress",
+   "host fora da allowlist do proxy (403 CONNECT); gov.br/anac/.../2026 retorna 404 (2026 só existe no APEX)",
+   "liberar o host ou o usuário enviar os PDFs/HTML",
+   "reexecutar scripts/anac_rodar.sh",
+   "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026"
+  ],
+  [
+   "ANAC",
+   "Calendário 2026 (Portaria 18.366) = denominador independente",
+   "2026",
+   "bloqueado pela fonte/egress",
+   "host fora da allowlist do proxy (403 CONNECT); gov.br/anac/.../2026 retorna 404 (2026 só existe no APEX)",
+   "liberar o host ou o usuário enviar os PDFs/HTML",
+   "reexecutar scripts/anac_rodar.sh",
+   "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias/2025/portaria-18366"
+  ]
+ ],
+ "nao_feito": [
+  [
+   "ANAC",
+   "Votos de diretores 2026",
+   "todos",
+   "BLOQUEADO PELA FONTE",
+   "índices/atas 2026 em hosts fora da allowlist",
+   "liberar departamental/santosdumont/www.anac.gov.br"
+  ]
+ ],
+ "diretores": [],
+ "colegiado": "Diretoria Colegiada (ANAC)",
+ "ex_diretores": {},
+ "papeis": {},
+ "_fonte": {
+  "govbr": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria",
+  "inventario": "anac_inventario.json"
+ },
+ "composicao_nota": "Pág. gov.br/diretoria-colegiada (22/05/2026): Tiago Faierstein (Presidente), Rui Mesquita, Antônio Mathias Moreira, Roberto Honorato (substituto desde 23/03/2026), Cláudio Ianelli (substituto desde 25/04/2026). Nenhum voto atribuído."
+}

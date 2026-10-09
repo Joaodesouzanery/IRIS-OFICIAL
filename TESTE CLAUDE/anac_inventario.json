@@ -1,0 +1,667 @@
+{
+ "ano": 2026,
+ "fontes": [
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026",
+   "arquivo": "g_pres2026.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026",
+   "arquivo": "g_ele2026.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas",
+   "arquivo": "g_pres.html",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas",
+   "arquivo": "g_ele.html",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/calendarios-das-reunioes/calendario-de-reunioes",
+   "arquivo": "g_cal.html",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/diretoria-colegiada",
+   "arquivo": "g_dir.html",
+   "status": "ok"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-da-diretoria-colegiada",
+   "arquivo": "g_rdc.html",
+   "status": "ok"
+  },
+  {
+   "url": "https://departamental.anac.gov.br/menu/f?p=107101:137",
+   "arquivo": "apex_presenciais_2026.html",
+   "status": "bloqueado"
+  },
+  {
+   "url": "https://santosdumont.anac.gov.br/menu/f?p=107101:138:0:::138:P138_ANO:2026",
+   "arquivo": "apex_eletronicas_2026.html",
+   "status": "bloqueado"
+  },
+  {
+   "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias/2025/portaria-18366",
+   "arquivo": "apex_calendario_portaria_18366.html",
+   "status": "bloqueado"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/1a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_1.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/1a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_1.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/2a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_2.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/2a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_2.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/3a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_3.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/3a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_3.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/4a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_4.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/4a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_4.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/5a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_5.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/5a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_5.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/6a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_6.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/6a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_6.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/7a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_7.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/7a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_7.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/8a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_8.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/8a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_8.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/9a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_9.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/9a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_9.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/10a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_10.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/10a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_10.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/11a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_11.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/11a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_11.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/12a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_12.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/12a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_12.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/13a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_13.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/13a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_13.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/14a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_14.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/14a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_14.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/15a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_15.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/15a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_15.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/16a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_16.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/16a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_16.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/17a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_17.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/17a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_17.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/18a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_18.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/18a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_18.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/19a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_19.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/19a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_19.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/20a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_20.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/20a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_20.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/21a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_21.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/21a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_21.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/22a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_22.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/22a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_22.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/23a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_23.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/23a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_23.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/24a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_24.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/24a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_24.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/25a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_25.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/25a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_25.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/26a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_26.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/26a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_26.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/27a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_27.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/27a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_27.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/28a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_28.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/28a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_28.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/29a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_29.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/29a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_29.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/30a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_30.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/30a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_30.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/31a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_31.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/31a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_31.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/32a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_32.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/32a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_32.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/33a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_33.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/33a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_33.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/34a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_34.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/34a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_34.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/35a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_35.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/35a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_35.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/36a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_36.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/36a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_36.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/37a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_37.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/37a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_37.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/38a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_38.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/38a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_38.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/39a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_39.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/39a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_39.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/40a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_40.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/40a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_40.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/41a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_41.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/41a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_41.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/42a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_42.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/42a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_42.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/43a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_43.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/43a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_43.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/44a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_44.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/44a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_44.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/45a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_45.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/45a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_45.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/46a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_46.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/46a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_46.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/47a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_47.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/47a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_47.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/48a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_48.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/48a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_48.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/49a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_49.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/49a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_49.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/50a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_50.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/50a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_50.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/51a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_51.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/51a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_51.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/52a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_52.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/52a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_52.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/53a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_53.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/53a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_53.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/54a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_54.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/54a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_54.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/55a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_55.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/55a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_55.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/56a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_56.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/56a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_56.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/57a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_57.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/57a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_57.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/58a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_58.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/58a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_58.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/59a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_59.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/59a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_59.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas/2026/60a-reuniao-deliberativa-da-diretoria-colegiada",
+   "arquivo": "p2026_60.html",
+   "status": "http404"
+  },
+  {
+   "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/institucional/reunioes-da-diretoria/reunioes-deliberativas-eletronicas/2026/60a-reuniao-deliberativa-eletronica-da-diretoria-colegiada",
+   "arquivo": "e2026_60.html",
+   "status": "http404"
+  }
+ ],
+ "reunioes_2026_gov_br": [],
+ "contadores": {
+  "oficial_apex_presenciais": null,
+  "oficial_apex_eletronicas": null,
+  "calendario_portaria_18366": null,
+  "listadas_gov_br_2026": 0
+ },
+ "acesso": {
+  "govbr_html_via_chromium": "ok",
+  "govbr_pastas_2026": "http404",
+  "apex_2026": "bloqueado pelo egress (403 CONNECT)"
+ }
+}

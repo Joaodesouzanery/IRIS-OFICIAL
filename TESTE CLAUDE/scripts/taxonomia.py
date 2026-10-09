@@ -342,3 +342,14 @@ SETOR['ANCINE'] = {'modal': 'Audiovisual', 'temas': [
     ('Mercado e serviços audiovisuais', 'TV por assinatura, VOD e salas de exibição', [r'video sob demanda', r'\bvod\b', r'tv por assinatura', r'servico de acesso condicionado', r'sala de exibicao', r'cinema', r'streaming', r'programadora'], 6),
     ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'acordo de cooperacao', r'ata '], 4),
 ]}
+
+SETOR['ANAC'] = {'modal': 'Aviação civil', 'temas': [
+    ('Fiscalização e sanções', 'Auto de infração / multa / sanção', [r'auto de infracao', r'multa', r'sancao', r'infracao', r'penalidade', r'processo administrativo sancionador'], 8),
+    ('Aeroportos e infraestrutura', 'Concessões aeroportuárias, tarifas e outorgas', [r'aeroporto', r'concessao', r'aerodromo', r'tarifa aeroportuaria', r'infraero', r'outorga', r'slot'], 7),
+    ('Serviços aéreos e empresas', 'Autorização de operação, HOTRAN e direitos de tráfego', [r'hotran', r'servicos aereos', r'empresa aerea', r'direitos de trafego', r'autorizacao de funcionamento', r'codigo compartilhado', r'transporte aereo'], 7),
+    ('Segurança operacional e certificação', 'Certificação, aeronavegabilidade e pessoal', [r'certificacao', r'aeronavegabilidade', r'seguranca operacional', r'licenca', r'piloto', r'rbac', r'homologacao'], 6),
+    ('Regulação e normas', 'Resolução / consulta pública / agenda regulatória', [r'resolucao', r'consulta publica', r'audiencia publica', r'agenda regulatoria', r'norma', r'regulamento'], 6),
+    ('Recursos administrativos', 'Recurso / reconsideração', [r'recurso', r'reconsideracao', r'embargos'], 6),
+    ('Direitos do passageiro', 'Atendimento e direitos do consumidor', [r'passageiro', r'consumidor', r'atendimento', r'bagagem', r'overbooking'], 5),
+    ('Gestão institucional e administrativa', 'Estrutura, pessoal, orçamento e reuniões', [r'orcamento', r'pessoal', r'servidor', r'regimento interno', r'calendario', r'cooperacao', r'convenio', r'ata '], 4),
+]}

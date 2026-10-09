@@ -13,10 +13,10 @@ Artifact publicado a partir de `votos_2026_artifact.html` (gitignored). Document
 | ANM, ANTT, ARTESP | feito | atas em PDF; ANTT: 99 PDFs de voto em imagem não lidos; ANM: 5 linhas REVISAR |
 | ANPD, ANVISA, ANP, ANTAQ | feito + QA + auditoria | ANVISA inclui Circuitos Deliberativos |
 | ANATEL, ANEEL | feito + varredura 100% + auditoria | ANEEL: atas em PDF bloqueadas (Cloudflare) → presença inferida, ~68% dos votos inferidos |
-| ANA | inventário e pendências; **0 votos** | PDFs em `arquivos.ana.gov.br`, recusado pelo egress do ambiente (liberar o host e rodar `scripts/ana_rodar.sh`) |
+| ANA | feito + varredura + auditoria | 61 itens, 244 votos (68% inferidos); atas só dizem 'por unanimidade' |
 | ANS | **parcial**: 281 itens/1.260 votos (91% inferidos) | atas 641–643 não publicadas; relator inferido pela área |
 | ANCINE | feito + varredura 100% + auditoria | 1.838 deliberações, 7.000 votos (97% inferidos); só circuitos têm votação nominal |
-| ANAC | não iniciada | por último (captcha) |
+| ANAC | pipeline pronto, **0 votos** | índices 2026 em `departamental.anac.gov.br`/`santosdumont.anac.gov.br` e calendário em `www.anac.gov.br`: bloqueados no egress; liberar os hosts ou enviar os PDFs |
 
 ## Como funciona
 - `scripts/agencias.py` é o **registro único** das agências com pipeline próprio (arquivo JSON, URL da fonte, regra de ex-membros fora dos totais).

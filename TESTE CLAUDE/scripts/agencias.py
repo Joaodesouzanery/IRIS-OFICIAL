@@ -26,6 +26,9 @@ AGENCIAS = [
  {'sg': 'ANCINE', 'json': 'ancine.json', 'desc': 'atas, pautas e Decisões da Diretoria Colegiada (SEI)', 'ex_fora_total': False,
   'diverge_ok': ('restrit', 'bloqueado', 'não baixado', 'sem DDC', 'sem ata'),
   'url': 'https://www.gov.br/ancine/pt-br/acesso-a-informacao/institucional/diretoria-colegiada/reunioes-da-diretoria-colegiada'},
+ {'sg': 'ANAC', 'json': 'anac.json', 'desc': 'atas e deliberações das REDIR (índices 2026 em sistema APEX, bloqueado no ambiente)', 'ex_fora_total': False,
+  'diverge_ok': ('bloqueado pela fonte',),
+  'url': 'https://departamental.anac.gov.br/menu/f?p=107101:137'},
 ]
 # Novas (ANS, ANA, ...) entram aqui quando o json existir; arquivo ausente = agência ignorada (degrada sem quebrar)
 def ativas(): return [a for a in AGENCIAS if os.path.exists(a['json'])]
