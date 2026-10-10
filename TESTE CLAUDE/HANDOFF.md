@@ -24,6 +24,7 @@ Tudo que a fonte não publica/bloqueia vai para a aba **Faltam na fonte** com UR
 - Por agência: `scripts/<sg>_{inventario,baixar,parse,auditoria,varredura}.py`, `<sg>.json` (reunioes, deliberacoes, votos, qualidade, cobertura, pendencias, nao_feito, diretores, colegiado), `manifesto_<sg>.json` (sha256), `<sg>_inventario.json`, `texto_<sg>/`.
 - Build (nesta ordem): `python3 -I scripts/temas.py` → `build_xlsx.py` → `qa_completude.py [--online]` → `build_html.py` (falha se HTML ≠ xlsx).
 - Legado (ANM, ANTT, ARTESP) tem tratamento próprio no `build_xlsx.py`; ANPD/ANVISA/ANP/ANTAQ/ANATEL/ANEEL/ANA/ANS/ANCINE/ANAC entram via `agencias.py`.
+- `ambiente/` — hosts a liberar, `requirements.txt`, `env.example` (só nomes; **sem segredos**) e `setup.sh`.
 - Docs: `README.md`, `ANALISE_MELHORIAS.md` (fases 1–14, decisões), `MAPEAMENTO_AGENCIAS.md` (status por agência), `QA_COMPLETUDE.md`, `MONITORAMENTO.md` (só desenho; **adiado por decisão do dono**).
 
 ## 4. Estado por agência (xlsx de 10/10/2026: 32.976 votos nos totais, QA 0 falhas)
@@ -57,7 +58,7 @@ Tudo que a fonte não publica/bloqueia vai para a aba **Faltam na fonte** com UR
 - **Revisão cega:** acertos medidos (esperado escrito do texto antes de abrir o JSON): ANTT 52/52, ARTESP 41/41 (voto), ANM 2026 20/20, ANTAQ 98,5%, ANATEL 98,7%, ANEEL 94,6% bruto, ANA 98,4%, ANCINE 100%, ANS 97,5% sem convenções, ANPD 94,8%, ANVISA 98,3%, ANP 100%. Isso mostra fidelidade ao texto da fonte, **não** o voto real nas unanimidades.
 - **Monitoramento** (`MONITORAMENTO.md`): só desenho; o dono pediu para deixar para o final, depois de fechar os pontos acima.
 
-## 6. Hosts a liberar na rede para rodar as coletas
+## 6. Hosts a liberar na rede para rodar as coletas (lista completa e `setup.sh` em `ambiente/`)
 gov.br das agências (anm, antt/portal.antt.gov.br, artesp, anpd, anvisa, anp, antaq/sophia.antaq.gov.br, anatel/sei.anatel.gov.br, aneel, ana, ans, ancine/sei.ancine.gov.br, anac), `arquivos.ana.gov.br`, `www.ans.gov.br`, `componentes-portal.ans.gov.br`, `sei.anac.gov.br`, `pergamum.anac.gov.br`, `departamental.anac.gov.br`, `santosdumont.anac.gov.br`, `www.anac.gov.br`, Dados Abertos da ANEEL (CKAN). Ferramentas: Python 3 + `pdftotext`, Node + Playwright/Chromium, RapidOCR (ANTT/ANAC; `tesseract` não existe no ambiente anterior).
 
 ## 7. Convenções de rótulo e regras de negócio

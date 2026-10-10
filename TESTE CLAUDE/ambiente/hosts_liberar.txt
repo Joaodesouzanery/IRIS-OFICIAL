@@ -1,0 +1,34 @@
+# Hosts que o ambiente de rede (Claude Code na nuvem ou local com proxy) precisa permitir para rodar as coletas.
+# Lista extraída dos scripts e JSON do projeto em 10/10/2026. Um por linha. NÃO contém credenciais.
+www.gov.br
+www.ana.gov.br
+arquivos.ana.gov.br
+www.ans.gov.br
+componentes-portal.ans.gov.br
+www.anac.gov.br
+sei.anac.gov.br
+pergamum.anac.gov.br
+departamental.anac.gov.br
+santosdumont.anac.gov.br
+www.anatel.gov.br
+sei.anatel.gov.br
+sistemas.anatel.gov.br
+informacoes.anatel.gov.br
+www2.aneel.gov.br
+reuniaodiretoria.aneel.gov.br
+biblioteca.aneel.gov.br
+sei.aneel.gov.br
+dadosabertos.aneel.gov.br
+sei.ancine.gov.br
+portal.antt.gov.br
+sophia.antaq.gov.br
+sei.antaq.gov.br
+www.artesp.sp.gov.br
+admin.cms.sp.gov.br
+*.token.awswaf.com
+# Opcional (só para o piloto de vídeo, ainda não testado):
+# www.youtube.com
+# *.googlevideo.com
+# *.ytimg.com
+# pypi.org / files.pythonhosted.org / huggingface.co  (instalar modelo de transcrição)
+# Observações medidas: www2.aneel.gov.br fica atrás de Cloudflare (403 mesmo liberado) e o SEI da ANATEL tem Turnstile: NÃO contornar.
