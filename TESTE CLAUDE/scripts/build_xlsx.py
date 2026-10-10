@@ -532,7 +532,7 @@ def cob_ag(ag):
 cal_n = sum(1 for dt in json.load(open('calendario_anm_2026.json'))['rops'].values() if datetime.date.fromisoformat(dt) <= hoje)
 antt_real = sum(1 for r in R if r['agencia'] == 'ANTT' and datetime.date.fromisoformat(r['data']) <= hoje); antt_ata = sum(1 for r in R if r['agencia'] == 'ANTT' and not r.get('obs'))
 art_ok = sum(1 for r in R if r['agencia'] == 'ARTESP' and not r.get('obs')); art_tot = sum(1 for r in R if r['agencia'] == 'ARTESP')
-ws.cell(row=1, column=1, value=f'PAINEL — votos dos diretores em 2026 ({', '.join(AGS)}) · gerado em {hoje.strftime("%d/%m/%Y")}').font = Font(bold=True, size=15, color='2E7D32')
+ws.cell(row=1, column=1, value='PAINEL — votos dos diretores em 2026 (' + ', '.join(AGS) + f') · gerado em {hoje.strftime("%d/%m/%Y")}').font = Font(bold=True, size=15, color='2E7D32')
 r0 = bloco(ws, '1. Placar do objetivo final', ['Parte', 'Situação', 'Evidência medida'], [
     ['1. Coleta sem perda silenciosa', 'Quase', f'ANM {sum(1 for r in R if r["agencia"] == "ANM")}/{cal_n} ROPs realizadas · ANTT {antt_ata}/{antt_real} realizadas com ata · ARTESP {art_ok}/{art_tot} atas corretas' + ''.join(f' · {sg} {sum(1 for r in R if r["agencia"] == sg and not r.get("obs"))} reuniões com ata lida' for sg in EXTRAS) + f' · {n_pend} pendências da fonte abertas (aba Controle)'],
     ['2. Extração (relator, resultado, processo, interessado)', 'Bom, com furos', 'Contagens batem com as âncoras das atas (aba Controle > Qualidade); modal e tema ≈ 94% em amostra manual (AMOSTRA_TEMAS.md); ARTESP não publica o relator em ~91% das deliberações'],

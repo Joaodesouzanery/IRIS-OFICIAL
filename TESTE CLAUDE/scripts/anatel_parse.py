@@ -864,7 +864,7 @@ if True:
     for t in sorted(PAUTAS):
         if t not in {r['reuniao'] for r in R}:
             pa = pauta_vigente(t); d_ = pa['data']
-            add_reuniao(t, f'{re.sub(r"\D", "", t)}ª Reunião do Conselho Diretor da ANATEL ({d_[8:]}/{d_[5:7]}/{d_[:4]})', 'Ordinária (RCD)', d_, [], [], 'Realizada em 08/10/2026 (15h, videoconferência); só a pauta foi publicada — ata e acórdãos ainda não')
+            add_reuniao(t, re.sub(r"\D", "", t) + f'ª Reunião do Conselho Diretor da ANATEL ({d_[8:]}/{d_[5:7]}/{d_[:4]})', 'Ordinária (RCD)', d_, [], [], 'Realizada em 08/10/2026 (15h, videoconferência); só a pauta foi publicada — ata e acórdãos ainda não')
 R.sort(key=lambda r: (r['reuniao'].startswith('CD'), r['data'], r['reuniao']))
 cob = [[AG, 'Reuniões do Conselho Diretor 2026 (pauta publicada)', len(nums_pauta) + 1, f'ordinárias {lo}..{hi} (950ª 12/02 … {hi}ª 08/10) + 1 extraordinária (RCDE32, 03/09); atas lidas: {", ".join("RCD" + str(n) for n in nums_ata)}; acórdão sem ata: RCD957, RCDE32; só pauta: RCD958'],
        [AG, 'Atas de reunião lidas', len(ATAS), f'{sum(len(a["itens"]) for a in ATAS.values())} itens pautados nas atas (= {sum(len(pauta_vigente(t)["itens"]) for t in ATAS)} itens nas pautas)'],

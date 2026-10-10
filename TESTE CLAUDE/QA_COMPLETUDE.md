@@ -45,9 +45,9 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANA | Votos: nominal + inferido + REVISAR = total | 244 | 244 | OK | {'inferido': 166, 'nominal': 78} |
 | ANA | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (NÃO baixado, bloqueado pela fonte) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 12 | 12 | OK |  |
-| ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 252 | 252 | OK | 29 itens sem resultado publicado/informe |
+| ANS | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 257 | 257 | OK | 24 itens sem resultado publicado/informe |
 | ANS | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
-| ANS | Votos: nominal + inferido + REVISAR = total | 1260 | 1260 | OK | {'inferido': 1132, 'nominal': 123, 'REVISAR': 5} |
+| ANS | Votos: nominal + inferido + REVISAR = total | 1285 | 1285 | OK | {'inferido': 1152, 'nominal': 128, 'REVISAR': 5} |
 | ANS | Verificações da aba qualidade do parser sem DIVERGE não explicada em pendências (restrit, bloqueado, fora da allowlist, sem documento) | 0 | 0 | OK | 0 DIVERGE de fonte, todas em pendencias/Faltam na fonte |
 | ANS | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 9 | 9 | OK |  |
 | ANCINE | Itens com resultado publicado têm ao menos 1 voto registrado (itens só com pauta/informe: pendência da fonte) | 1835 | 1835 | OK | 3 itens sem resultado publicado/informe |
@@ -67,7 +67,7 @@ Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (list
 | ANATEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 2922 | 2922 | OK |  |
 | ANEEL | Votos no JSON × linhas na aba Votos (inclui quem saiu do colegiado, fora dos totais) | 5268 | 5268 | OK |  |
 | ANA | Votos no JSON × linhas na aba Votos | 244 | 244 | OK |  |
-| ANS | Votos no JSON × linhas na aba Votos | 1260 | 1260 | OK |  |
+| ANS | Votos no JSON × linhas na aba Votos | 1285 | 1285 | OK |  |
 | ANCINE | Votos no JSON × linhas na aba Votos | 7000 | 7000 | OK |  |
 | ANAC | Votos no JSON × linhas na aba Votos | 428 | 428 | OK |  |
 | ANVISA | Documentos pendentes do JSON × linhas da aba "Faltam na fonte" | 133 | 133 | OK | ausentes da aba: [] |

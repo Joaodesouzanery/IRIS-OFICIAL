@@ -76,5 +76,5 @@ for k, (est, x) in enumerate(amostra):
         if x['deliberacao'].startswith('Acórdão'): print(trecho_ac(int(re.search(r'\d+', x['deliberacao'])[0])))
         if x['reuniao'] in ('RCD957', 'RCDE32') or x['tipo_item'] == 'Aprovação de ata':
             if x['tipo_item'] == 'Aprovação de ata':
-                t = open(f'texto_anatel/s229_{[v for v in man.values() if v["serie"]=="229" and f"RCD {x["reuniao"][3:]} " in v["resumo"]][0]["id_documento"]}.txt', encoding='utf8').read(); i = t.find('O Presidente'); print(t[i:i + 700])
+                t = open(f'texto_anatel/s229_{[v for v in man.values() if v["serie"]=="229" and ("RCD " + x["reuniao"][3:] + " ") in v["resumo"]][0]["id_documento"]}.txt', encoding='utf8').read(); i = t.find('O Presidente'); print(t[i:i + 700])
         else: print(trecho_ata(x))

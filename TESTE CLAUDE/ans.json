@@ -356,10 +356,16 @@
    "titulo": "644ª Reunião Ordinária da Diretoria Colegiada da ANS (09/10/2026)",
    "tipo": "Ordinária",
    "data": "2026-10-09",
-   "presentes": [],
+   "presentes": [
+    "Wadih Nemer Damous Filho",
+    "Carla de Figueiredo Soares",
+    "Celina Maria Ferro de Oliveira",
+    "Francisco José D'Ângelo Pinto",
+    "Lenise Barcellos de Mello Secchin"
+   ],
    "ausentes": [],
-   "obs": "presença NÃO publicada (sem página de deliberações nem extrato acessível): sem votos",
-   "situacao": "Futura (pauta publicada; reunião em 09/10/2026)",
+   "obs": "presença nominal (página de deliberações)",
+   "situacao": "Realizada (fonte própria)",
    "evidencia_data": [
     "cabeçalho da pauta 644"
    ],
@@ -367,6 +373,10 @@
     {
      "tipo": "pauta",
      "url": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf"
+    },
+    {
+     "tipo": "deliberações (notícia)",
+     "url": "https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada"
     }
    ]
   },
@@ -34931,9 +34941,9 @@
    "relator_proveniencia": "",
    "relator_motivo": "",
    "assunto": "APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
-   "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
+   "resultado": "Item aprovado",
    "voto_doc": "",
-   "decisao_texto": "",
+   "decisao_texto": "DECISÃO: ITEM APROVADO.",
    "tipo_item": "Aprovação de ata",
    "secao": "Pauta",
    "unidade": "",
@@ -34941,11 +34951,13 @@
     {
      "parte": "item",
      "acao": "APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09",
-     "modo": "sem resultado publicado",
+     "modo": "aprovado/deliberado sem divergência registrada",
      "vencidos": []
     }
    ],
-   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf"
+   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf | https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada",
+   "minuto_video": "00:06:41",
+   "pareamento_pagina_pauta": 1.15
   },
   {
    "reuniao": "DICOL644",
@@ -34958,9 +34970,9 @@
    "relator_proveniencia": "",
    "relator_motivo": "",
    "assunto": "APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistência à saúde (Monitoramento da Garantia de Atendimento). Processo: 33910.009781/2026-31.",
-   "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
+   "resultado": "Item apreciado",
    "voto_doc": "",
-   "decisao_texto": "",
+   "decisao_texto": "DECISÃO: ITEM APRECIADO.",
    "tipo_item": "Deliberação",
    "secao": "Pauta — DIPRO",
    "unidade": "DIPRO",
@@ -34968,11 +34980,13 @@
     {
      "parte": "item",
      "acao": "APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários",
-     "modo": "sem resultado publicado",
+     "modo": "apreciado",
      "vencidos": []
     }
    ],
-   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf"
+   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf | https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada",
+   "minuto_video": "00:07:05",
+   "pareamento_pagina_pauta": 1.3
   },
   {
    "reuniao": "DICOL644",
@@ -34980,14 +34994,14 @@
    "processo": "33910.018676/2026-93",
    "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
    "item_n": "3",
-   "relator": "",
+   "relator": "Lenise Barcellos de Mello Secchin",
    "interessado": "ANS — Diretoria Colegiada (DIPRO)",
-   "relator_proveniencia": "",
-   "relator_motivo": "",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIPRO\" → diretor da área na data (Lenise Barcellos de Mello Secchin)",
    "assunto": "APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação da proposta de Resolução Normativa. Processo nº 33910.018676/2026-93.",
-   "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
+   "resultado": "Item aprovado e apreciado",
    "voto_doc": "",
-   "decisao_texto": "",
+   "decisao_texto": "DECISÃO: ITEM APROVADO E APRECIADO.",
    "tipo_item": "Deliberação",
    "secao": "Extrapauta — DIPRO",
    "unidade": "DIPRO",
@@ -34995,11 +35009,13 @@
     {
      "parte": "item",
      "acao": "APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final –",
-     "modo": "sem resultado publicado",
+     "modo": "aprovado/deliberado sem divergência registrada",
      "vencidos": []
     }
    ],
-   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf"
+   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf | https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada",
+   "minuto_video": "00:38:22",
+   "pareamento_pagina_pauta": 1.16
   },
   {
    "reuniao": "DICOL644",
@@ -35007,14 +35023,14 @@
    "processo": "33910.026708/2026-24",
    "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
    "item_n": "4",
-   "relator": "",
+   "relator": "Celina Maria Ferro de Oliveira",
    "interessado": "ANS — Diretoria Colegiada (DIFIS)",
-   "relator_proveniencia": "",
-   "relator_motivo": "",
+   "relator_proveniencia": "inferido",
+   "relator_motivo": "a fonte não nomeia relator; rótulo \"ITEM DIFIS\" → diretor da área na data (Celina Maria Ferro de Oliveira)",
    "assunto": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.026708/2026-24.",
-   "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
+   "resultado": "Item aprovado",
    "voto_doc": "",
-   "decisao_texto": "",
+   "decisao_texto": "DECISÃO: ITEM APROVADO.",
    "tipo_item": "Deliberação",
    "secao": "Extrapauta — DIFIS",
    "unidade": "DIFIS",
@@ -35022,11 +35038,13 @@
     {
      "parte": "item",
      "acao": "APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceir",
-     "modo": "sem resultado publicado",
+     "modo": "aprovado/deliberado sem divergência registrada",
      "vencidos": []
     }
    ],
-   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf"
+   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf | https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada",
+   "minuto_video": "00:47:28",
+   "pareamento_pagina_pauta": 1.24
   },
   {
    "reuniao": "DICOL644",
@@ -35037,9 +35055,9 @@
    "relator": "",
    "interessado": "ANS — Diretoria Colegiada (COREC/SECEX)",
    "assunto": "Blocão de 322 processos da pauta (sancionadores e ressarcimento ao SUS) aprovados em bloco",
-   "resultado": "REUNIÃO AINDA NÃO REALIZADA (pauta publicada para 09/10/2026)",
+   "resultado": "Foram pautados 322 processos; todos aprovados",
    "voto_doc": "",
-   "decisao_texto": "",
+   "decisao_texto": "BLOCÃO - Foram pautados 322 processos, todos aprovados.",
    "tipo_item": "Deliberação",
    "secao": "Blocão",
    "unidade": "COREC/SECEX",
@@ -35047,11 +35065,11 @@
     {
      "parte": "blocão",
      "acao": "aprovar processos em bloco",
-     "modo": "sem resultado publicado",
+     "modo": "aprovado sem divergência registrada",
      "vencidos": []
     }
    ],
-   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf",
+   "origem": "https://www.gov.br/ans/pt-br/arquivos/assuntos/noticias/Pauta_Dicol_644ANS09.10.2026.pdf | https://www.gov.br/ans/pt-br/assuntos/noticias-1/periodo-eleitoral/deliberacoes-da-644a-reuniao-da-diretoria-colegiada",
    "processos_do_bloco": [
     "33902.185729/2004-74",
     "33902.219670/2015-88",
@@ -35377,7 +35395,7 @@
     "33910.042612/2022-80"
    ],
    "n_processos_pauta": 322,
-   "n_processos_pagina": null,
+   "n_processos_pagina": 322,
    "n_retirados": 0
   },
   {
@@ -49123,6 +49141,281 @@
    "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
   },
   {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "ATA DICOL644-i1",
+   "deliberacao": "Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
+   "diretor": "Wadih Nemer Damous Filho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "ATA DICOL644-i1",
+   "deliberacao": "Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
+   "diretor": "Carla de Figueiredo Soares",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "ATA DICOL644-i1",
+   "deliberacao": "Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
+   "diretor": "Celina Maria Ferro de Oliveira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "ATA DICOL644-i1",
+   "deliberacao": "Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
+   "diretor": "Francisco José D'Ângelo Pinto",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "ATA DICOL644-i1",
+   "deliberacao": "Item 1: APROVAÇÃO das minutas das atas da 643ª Reunião Ordinária de Diretoria Colegiada, de 18/09/2026, e da 11ª Reunião Extraordinária de Diretoria Colegiada, de 25/09/2026.",
+   "diretor": "Lenise Barcellos de Mello Secchin",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.009781/2026-31",
+   "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc",
+   "diretor": "Wadih Nemer Damous Filho",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "",
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.009781/2026-31",
+   "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc",
+   "diretor": "Carla de Figueiredo Soares",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "",
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.009781/2026-31",
+   "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc",
+   "diretor": "Celina Maria Ferro de Oliveira",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "",
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.009781/2026-31",
+   "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc",
+   "diretor": "Francisco José D'Ângelo Pinto",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "",
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.009781/2026-31",
+   "deliberacao": "Item 2: APRECIAÇÃO da proposta de alteração da Instrução Normativa ANS nº 31, que dispõe sobre o acompanhamento e avaliação da garantia de atendimento dos beneficiários pelas operadoras de planos de assistênc",
+   "diretor": "Lenise Barcellos de Mello Secchin",
+   "voto": "SEM VOTO (apreciação, sem votação)",
+   "proveniencia": "nominal",
+   "voto_por_parte": "",
+   "motivo": "página oficial de deliberações: \"ITEM APRECIADO\" — o colegiado tomou conhecimento, sem votação declarada"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.018676/2026-93",
+   "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
+   "diretor": "Wadih Nemer Damous Filho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.018676/2026-93",
+   "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
+   "diretor": "Carla de Figueiredo Soares",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.018676/2026-93",
+   "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
+   "diretor": "Celina Maria Ferro de Oliveira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.018676/2026-93",
+   "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
+   "diretor": "Francisco José D'Ângelo Pinto",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.018676/2026-93",
+   "deliberacao": "Item 3: APROVAÇÃO da proposta de atualização do Rol de Procedimentos e Eventos em Saúde. Retorno da Consulta Pública. Apreciação da Nota Técnica de Recomendação Final – NTRF, referente à UAT nº 201. Aprovação",
+   "diretor": "Lenise Barcellos de Mello Secchin",
+   "voto": "RELATOR",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "relator = diretor da área proponente (inferido do rótulo \"ITEM DIPRO\"; a fonte não nomeia o relator)"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.026708/2026-24",
+   "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
+   "diretor": "Wadih Nemer Damous Filho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.026708/2026-24",
+   "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
+   "diretor": "Carla de Figueiredo Soares",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.026708/2026-24",
+   "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
+   "diretor": "Celina Maria Ferro de Oliveira",
+   "voto": "RELATOR",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "relator = diretor da área proponente (inferido do rótulo \"ITEM DIFIS\"; a fonte não nomeia o relator)"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.026708/2026-24",
+   "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
+   "diretor": "Francisco José D'Ângelo Pinto",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "33910.026708/2026-24",
+   "deliberacao": "Item 4: APROVAÇÃO da proposta de celebração de Acordo de Cooperação Técnica entre a ANS e o TRIBUNAL REGIONAL FEDERAL DA 5ª REGIÃO - TRF5, no âmbito do Programa Parceiros da Cidadania. Processo nº 33910.02670",
+   "diretor": "Lenise Barcellos de Mello Secchin",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "BLOCAO-DICOL644",
+   "deliberacao": "Blocão (COREC/SECEX): 322 processos",
+   "diretor": "Wadih Nemer Damous Filho",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "BLOCAO-DICOL644",
+   "deliberacao": "Blocão (COREC/SECEX): 322 processos",
+   "diretor": "Carla de Figueiredo Soares",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "BLOCAO-DICOL644",
+   "deliberacao": "Blocão (COREC/SECEX): 322 processos",
+   "diretor": "Celina Maria Ferro de Oliveira",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "BLOCAO-DICOL644",
+   "deliberacao": "Blocão (COREC/SECEX): 322 processos",
+   "diretor": "Francisco José D'Ângelo Pinto",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
+   "reuniao": "DICOL644",
+   "data": "2026-10-09",
+   "processo": "BLOCAO-DICOL644",
+   "deliberacao": "Blocão (COREC/SECEX): 322 processos",
+   "diretor": "Lenise Barcellos de Mello Secchin",
+   "voto": "ACOMPANHOU",
+   "proveniencia": "inferido",
+   "voto_por_parte": "",
+   "motivo": "item \"aprovado/deliberado\" sem divergência registrada na fonte"
+  },
+  {
    "reuniao": "DICOLE01",
    "data": "2026-01-26",
    "processo": "33910.048937/2025-19",
@@ -49932,7 +50225,7 @@
    4,
    4,
    "OK",
-   "b_start 0,30,60,90; links por página [30, 30, 25, 0]; 85 notícias únicas; sem contador oficial (Plone clássico)"
+   "b_start 0,30,60,90; links por página [30, 30, 26, 0]; 86 notícias únicas; sem contador oficial (Plone clássico)"
   ],
   [
    "ANS",
@@ -50296,6 +50589,30 @@
   ],
   [
    "ANS",
+   "DICOL644: processos do blocão na pauta × \"pautados\" na página de deliberações",
+   322,
+   322,
+   "OK",
+   "pauta (versão acessível) × página"
+  ],
+  [
+   "ANS",
+   "DICOL644: itens da pauta × itens com linha na página de deliberações",
+   4,
+   4,
+   "OK",
+   "todos casados (pareamento por similaridade + número)"
+  ],
+  [
+   "ANS",
+   "DICOL644: presentes na página × membros do colegiado na data",
+   5,
+   5,
+   "OK",
+   "colegiado: Wadih; Lenise; Carla; Francisco; Celina"
+  ],
+  [
+   "ANS",
    "DICOLE01: itens públicos da API oficial (com diretoria) × itens da sessão aberta na ata",
    1,
    1,
@@ -50548,7 +50865,7 @@
    "ANS",
    "Reuniões da Diretoria Colegiada 2026 (numeradas)",
    25,
-   "ordinárias 632..644 (632ª 30/01 … 644ª 09/10) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); 24 realizadas, 1 futura; com ATA oficial: 17 (632–640 e extras 1–8); só pauta/página/extrato: 5; sem nenhum documento: 3"
+   "ordinárias 632..644 (632ª 30/01 … 644ª 09/10) + extraordinárias 1..12 (1ª 26/01 … 12ª 02/10); 25 realizadas, 0 futura; com ATA oficial: 17 (632–640 e extras 1–8); só pauta/página/extrato: 5; sem nenhum documento: 3"
   ],
   [
    "ANS",
@@ -50559,8 +50876,8 @@
   [
    "ANS",
    "Votos por proveniência",
-   1260,
-   "inferido 1132, nominal 123, REVISAR 5 | rótulos: ACOMPANHOU 926, RELATOR 207, SEM VOTO (retirado de pauta) 50, SEM VOTO (apreciação, sem votação) 40, IMPEDIDO (por ter proferido a decisão recorrida / participado do processo) 14, SEM VOTO REGISTRADO 5, SEM VOTO (deliberação suspensa — diligência pendente) 4, SEM VOTO AINDA (vista pendente) 3, ACOMPANHOU (com ajuste solicitado) 2, ACOMPANHOU (com observações acolhidas) 2, ACOMPANHOU (com ressalvas) 2, PEDIU VISTA 1, RELATOR (vista concedida; sem voto proferido na ata) 1, SEM VOTO (diligência solicitada) 1, AUSENTE 1, ACOMPANHOU (com proposta acrescida) 1"
+   1285,
+   "inferido 1152, nominal 128, REVISAR 5 | rótulos: ACOMPANHOU 944, RELATOR 209, SEM VOTO (retirado de pauta) 50, SEM VOTO (apreciação, sem votação) 45, IMPEDIDO (por ter proferido a decisão recorrida / participado do processo) 14, SEM VOTO REGISTRADO 5, SEM VOTO (deliberação suspensa — diligência pendente) 4, SEM VOTO AINDA (vista pendente) 3, ACOMPANHOU (com ajuste solicitado) 2, ACOMPANHOU (com observações acolhidas) 2, ACOMPANHOU (com ressalvas) 2, PEDIU VISTA 1, RELATOR (vista concedida; sem voto proferido na ata) 1, SEM VOTO (diligência solicitada) 1, AUSENTE 1, ACOMPANHOU (com proposta acrescida) 1"
   ],
   [
    "ANS",
@@ -50728,12 +51045,12 @@
   ],
   [
    "ANS",
-   "644ª Reunião Ordinária da Diretoria Colegiada da ANS (09/10/2026): resultado das deliberações",
+   "Ata oficial da 644ª Reunião Ordinária da Diretoria Colegiada da ANS (09/10/2026)",
    "2026-10-09",
-   "futura (reunião ainda não ocorreu)",
-   "pauta oficial publicada com 5 itens",
-   "reunião marcada para 09/10/2026; hoje é 09/10/2026 (dia da reunião: resultado ainda não publicado)",
-   "Rodar scripts/ans_rodar.sh após a reunião (ata/página \"Deliberações da 644ª\")",
+   "ata ainda não publicada",
+   "resultado lido da página de deliberações (notícia) e da pauta oficial; relator = diretor da área proponente (inferido) e votos inferidos de \"aprovado\"",
+   "DICOL só publica a ata depois de aprovada na reunião seguinte (campo DE_PATH_ATA_REUNIAO nulo na API oficial)",
+   "Rodar scripts/ans_rodar.sh quando a ata for publicada; ela substitui a leitura da página",
    "https://www.ans.gov.br/index.php?option=com_dicol&format=json&task=getDadosReuniaoAjax&id_reuniao=92600"
   ],
   [
@@ -50769,7 +51086,7 @@
   [
    "ANS",
    "Pasta gov.br \"Reuniões da Diretoria da ANS\"",
-   "2026-10-09",
+   "2026-10-10",
    "exige login (continua restrita)",
    "GET devolve redirecionamento para acl_users/credentials_cookie_auth/require_login; o conteúdo útil (atas, pautas) foi obtido pelo módulo DICOL do site legado",
    "pasta restrita no portal gov.br/ans",
@@ -50779,7 +51096,7 @@
   [
    "ANS",
    "Atalho \"Reuniões da Diretoria da ANS\" → componentes-portal.ans.gov.br/link/listadicol",
-   "2026-10-09",
+   "2026-10-10",
    "acessível, mas sem dados abertos",
    "HTTP 303 → /index.html: aplicativo Mendix (SPA) que só carrega via JavaScript e XAS autenticado; sem HTML estático nem API pública. As atas vêm do módulo legado com_dicol (www.ans.gov.br), que a própria página legada usa",
    "app Mendix exige sessão do navegador",
@@ -50823,7 +51140,7 @@
   [
    "ANS",
    "Voto individual e relator nas atas",
-   "1132 de 1260 votos inferidos; 5 de 208 linhas RELATOR nominais",
+   "1152 de 1285 votos inferidos; 5 de 210 linhas RELATOR nominais",
    "LIMITE ESTRUTURAL DA FONTE",
    "As atas oficiais NÃO usam a palavra \"relator\" e só registram: \"aprovado por unanimidade\", impedimento (nominal), retirada de pauta/vista/diligência (nominal) e ressalvas (nominal). Convenção: \"por unanimidade\" → ACOMPANHOU inferido por presente não impedido; relator = diretor da área do voto citado na ata (inferido), exceto onde o voto escrito (anexo) nomeia o diretor (nominal)",
    "Voto escrito de cada item só existe como anexo em 632ª, 633ª (parcial) e extras 1–4; vídeo da sessão aberta mostraria o resto"
@@ -50847,7 +51164,7 @@
   [
    "ANS",
    "\"Apreciado\"",
-   "40 linhas SEM VOTO (apreciação)",
+   "45 linhas SEM VOTO (apreciação)",
    "LIMITE DA FONTE",
    "Quando a ata diz só \"Apreciado\" não há votação declarada: SEM VOTO (nominal), sem inferir ACOMPANHOU",
    "Nenhuma"
@@ -50900,6 +51217,13 @@
   "Eliane Aparecida de Castro Medeiros": "mandato encerrado em 24/09/2026",
   "Jorge Antônio Aquino Lopes": "mandato encerrado em 26/08/2026"
  },
- "composicao_nota": "Colegiado em 09/10/2026: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.",
- "log_pareamento": []
+ "composicao_nota": "Colegiado em 10/10/2026: Wadih Damous (presidente/DIDES), Lenise Secchin (DIPRO), Carla Soares (DIOPE interina desde 03/09; DIGES interina antes), Francisco D'Ângelo (DIGES interino desde 03/09), Celina Oliveira (DIFIS interina desde 25/09). Fonte: notícia de 28/09/2026.",
+ "log_pareamento": [
+  [
+   "644",
+   "pagina sem par na pauta",
+   "[5]",
+   "XTRAPAUTA DIPRO – Informe sobre exame NAT/Malária por componente hemoterápico de"
+  ]
+ ]
 }

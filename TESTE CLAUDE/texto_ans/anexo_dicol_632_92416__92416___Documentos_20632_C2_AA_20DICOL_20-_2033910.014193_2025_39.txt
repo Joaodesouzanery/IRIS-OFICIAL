@@ -1049,7 +1049,7 @@ O Programa de Capacitação poderá ser realizado de forma presencial ou remota,
 programático administrado de forma síncrona e assíncrona. 
 Carga Horária Total para os primeiros 30 meses: 138 horas, sendo o total de 78 horas síncronas
 divididas e em três módulos:
-Primeiro Módulo: Aspectos Gerais da Atenção Primária à Saude na Saúde Suplementar - 60
+Primeiro Módulo: Aspectos Gerais da Atenção Primária à Saude na Saúde Suplementar  - 60
 horas, sendo 36 horas síncronas, e 24 horas assíncronas, a serem ministrada no primeiro
 ano; e
 Segundo Módulo: Saúde Mental na Atenção Primária à Saude na Saúde Suplementar - 63
@@ -1169,7 +1169,7 @@ Meses
 1. Elaboração e Divulgação do Edital
 ANS
 X
-X 
+X  
  
  
  
@@ -1493,7 +1493,7 @@ do seminário ainda a ser acordado pelo Grupo
 Gestor
 ANS/ HAOC X
 X
-X 
+X  
  
  
  
@@ -1503,7 +1503,7 @@ X
  
  
 Realização do Primeiro Webinário
-ANS/ HAOC 
+ANS/ HAOC  
  
  
 X
@@ -1518,7 +1518,7 @@ X
 Elaboração de Relatórios de Acompanhamento
 Anual de simpósios, seminários/webinários
  
-ANS/ HAOC 
+ANS/ HAOC  
  
  
  
@@ -1579,7 +1579,7 @@ X
 Relatório contendo as mudanças e os níveis de
 evidências
 IHI, HAOC,
-SBMFC e ANS 
+SBMFC e ANS  
  
  
  
@@ -1594,7 +1594,7 @@ X
 Elaboração de Relatórios de Acompanhamento
 Anual do produto
 IHI, HAOC,
-SBMFC e ANS 
+SBMFC e ANS  
  
  
  
@@ -1722,7 +1722,7 @@ inovadores de cuidados e disseminação das melhores práticas em saúde.
 11.
 O IHI tem por missão o propósito de  avançar cinco ideais prioritários na área de saúde,
 em nível internacional, que são, a saber:
-a) criar capacidade e desenvolver as habilidades necessárias, para a melhoria conOnua
+a)  criar capacidade e desenvolver as habilidades necessárias, para a melhoria conOnua
 dos serviços de saúde;
 b) melhorar a qualidade da atenção à saúde ofertada aos pacientes e suas famílias;
 c) garantir a segurança dos pacientes;

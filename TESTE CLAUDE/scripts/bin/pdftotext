@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+"""Substituto local do pdftotext (poppler ausente nesta maquina): mesma interface usada pelos scripts
+([-layout] [-f N] [-l N] arquivo.pdf [saida|-]). Usa pdfplumber: com -layout, extract_text(layout=True)
+(calibrado contra textos do poppler versionados: pauta ANS 643 identica linha a linha); sem -layout, extract_text(). Paginas separadas por \\f, como o poppler. Ver ANALISE_MELHORIAS (Fase 15)."""
+import sys, pdfplumber
+a = sys.argv[1:]; layout = False; f = l = None; pos = []
+i = 0
+while i < len(a):
+    x = a[i]
+    if x == '-layout': layout = True
+    elif x in ('-f', '-l'): v = int(a[i+1]); i += 1; f, l = (v, l) if x == '-f' else (f, v)
+    elif x in ('-enc',): i += 1
+    elif x.startswith('-') and x != '-': pass
+    else: pos.append(x)
+    i += 1
+src = pos[0]; dst = pos[1] if len(pos) > 1 else src[:-4] + '.txt'
+pdf = pdfplumber.open(src); n = len(pdf.pages)
+ini = (f or 1) - 1; fim = min(l or n, n)
+partes = [(pdf.pages[p].extract_text(layout=layout) or '') for p in range(ini, fim)]
+out = '\f'.join(partes) + '\f'
+if dst == '-': sys.stdout.write(out)
+else: open(dst, 'w', encoding='utf-8').write(out)

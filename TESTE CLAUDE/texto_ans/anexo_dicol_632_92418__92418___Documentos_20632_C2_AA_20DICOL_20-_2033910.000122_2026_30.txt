@@ -643,7 +643,7 @@ Conitec:
 - 4 Relatórios de Recomendação com decisão de incorporação: nº 864/2025 nº 1056/2025,
 nº 1058/2025, e nº 1062/2025;
 - 2 Relatórios de Recomendação com decisão de exclusão: nº 1059/2025; e nº 1060/2025;
-- 4 Relatórios de Recomendação com decisão de aprovação de Protocolos Clínicos e
+- 4 Relatórios de Recomendação com decisão de aprovação  de Protocolos Clínicos e
 Diretrizes Terapêuticas (PCDT): nº 944/2024, nº 1046/2026, nº 1047/2025; e nº
 1051/2025;
 - 5 Relatórios de Recomendação com decisão de não incorporação: nº 1057/2025, nº
@@ -1281,7 +1281,7 @@ tecnologia em saúde.
 4.
 VACÂNCIA
 4.1.
-No que se refere à vacância da norma sobre a incorporação no Rol das tecnologias em saúde
+No que se refere à vacância da norma sobre a incorporação no Rol  das tecnologias em saúde
 recomendadas posivamente pela CONITEC, com decisão de incorporação ao SUS, publicadas no DOU, no Rol
 de Procedimentos e Eventos em Saúde, em cumprimento ao § 10 do art. 10, da Lei nº 9.656/1998. A referida
 legislação é silente quanto ao prazo para que as tecnologias em saúde recomendadas posivamente pela

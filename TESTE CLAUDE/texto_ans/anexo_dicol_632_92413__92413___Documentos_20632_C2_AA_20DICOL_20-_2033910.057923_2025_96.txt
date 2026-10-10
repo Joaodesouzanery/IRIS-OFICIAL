@@ -449,7 +449,7 @@ disponibilização dos arquivos através do Sistema de Transferência de Arquivo
 SISBACEN, para o qual a ANS já possuía convênio e acesso, o que gerou apenas a necessidade de
 desenvolvimento de uma API por parte da ANS para automatizar a recepção dos arquivos.
 1.11.
-Quanto aos administradores de FDSS, a GETI possibilitou a conexão através de SFTP
+Quanto aos administradores de FDSS, a GETI possibilitou a conexão através de  SFTP
 (Secure File Transfer Protocol) - SSH File Transfer Protocol diretamente via IP público e, adicionalmente,
 possibilitou o estabelecimento de túnel VPN IPsec Site-to-Site (S2S) combinado com o protocolo SFTP,
 que garante a confidencialidade e integridade dos dados durante a transferência, ulizando criptografia
