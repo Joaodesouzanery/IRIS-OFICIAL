@@ -1,0 +1,42 @@
+# ESPERADO ANP escrito ANTES de abrir relator/resultado/votos do anp.json
+# Diretores: AW Artur, SA Symone, DV Daniel, FM Fernando, PM Pietro
+# valores: R relator proferiu, A acompanhou, D divergiu, V vista(pedinte), AP acomp. parcialmente, AV acompanhou provisorio(vista), -- sem voto/nao se aplica, X ausente
+# chave: (reuniao,item_n,secao-prefixo)
+E_=lambda **k:k
+EXP={
+('RD1175','18','Sessão Regulatória'):dict(rel='PM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='A',PM='R')),
+('RD1175','3','Sessão Regulatória'):dict(rel='SA',res='vista',vista=['PM'],v=dict(PM='V')),
+('RD1175','7','Sessão Regulatória'):dict(rel='PM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='A',PM='R')),
+('RD1175','1','Sessão Administrativa'):dict(rel='AW',res='retirada',v={}),
+('RD1176','6','Sessão Regulatória'):dict(rel='PM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='A',PM='R')),
+('RD1176','8','Sessão Regulatória'):dict(rel='PM',res='vista',vista=['AW'],v=dict(AW='V')),
+('RD1176','2','Sessão Regulatória'):dict(rel='DV',res='vista',vista=['SA'],v=dict(SA='V')),
+('RD1177','7','Sessão Regulatória'):dict(rel='DV',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='R',FM='A',PM='A')),
+('RD1177','10','Sessão Regulatória'):dict(rel='PM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='A',PM='R')),
+('RD1178','2','Sessão Regulatória'):dict(rel='DV',res='aprovado',modo='unanimidade',aus=['FM'],nota='FM ausente mas voto encaminhado ao DG (itens 1-5 Reg, 1-3 Reservada): esperado A (voto antecipado) - ambíguo vs AUSENTE',v=dict(AW='A',SA='A',DV='R',FM='A?',PM='A')),
+('RD1178','1','Sessão Reservada'):dict(rel='SA',res='vista',vista=['DV'],aus=['FM'],nota='FM voto encaminhado; ata: acompanharam PM e FM; AW nao citado',v=dict(SA='R',PM='A',FM='A?',DV='V',AW='--')),
+('RD1178','3','Sessão Reservada'):dict(rel='PM',res='aprovado',modo='unanimidade',aus=['FM'],v=dict(AW='A',SA='A',DV='A',FM='A?',PM='R')),
+('RD1179','10','Sessão Regulatória'):dict(rel='FM',res='aprovado',modo='unanimidade',nota='retirada desistida na retomada 2/4 e deliberado',v=dict(AW='A',SA='A',DV='A',FM='R',PM='A')),
+('RD1179','6','Sessão Regulatória'):dict(rel='DV',res='retirada',v={}),
+('RD1179','7','Sessão Regulatória'):dict(rel='FM',res='vista',vista=['PM'],nota='retirada desistida, depois vista PM',v=dict(PM='V')),
+('RD1179','1','Sessão Regulatória'):dict(rel='SA',res='retirada',v={}),
+('RD1179','4','Sessão Regulatória'):dict(rel='SA',res='aprovado',modo='unanimidade',nota='vista PM desistida; deliberado 2/4',v=dict(AW='A',SA='R',DV='A',FM='A',PM='A')),
+('RD1179','2','Sessão Regulatória'):dict(rel='DV',res='vista',vista=['PM','SA'],v=dict(PM='V',SA='V')),
+('RD1180','1','Sessão Regulatória'):dict(rel='SA',res='maioria; relatora vencida; redator FM',modo='maioria absoluta',venc=['SA','PM'],v=dict(SA='R(vencida)',PM='A relatora(vencido)',FM='D(proposta alternativa vencedora)',DV='A FM',AW='AP FM')),
+('RD1180','5','Sessão Regulatória'):dict(rel='PM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='A',PM='R')),
+('RD1181','2','Sessão Regulatória'):dict(rel='PM',res='rejeitado',modo='maioria absoluta',venc=['PM','SA'],v=dict(PM='R(vencido)',SA='A relator(vencida)',FM='D',DV='D',AW='D')),
+('RD1181','3','Sessão Reservada'):dict(rel='FM',res='vista',vista=['PM'],v=dict(FM='R',DV='A',AW='A',PM='V',SA='--')),
+('RD1182','4','Sessão Regulatória – Pauta Pública'):dict(rel='FM',res='aprovado',modo='unanimidade entre presentes',aus=['PM'],v=dict(AW='A',SA='A',DV='A',FM='R',PM='X')),
+('RD1182','7','Sessão Regulatória – Pauta Pública'):dict(rel='FM',res='retirada (pelo DG; PM ausente)',aus=['PM'],v=dict(PM='X')),
+('RD1183','1','Sessão Regulatória – Pauta Reservada'):dict(rel='FM',res='aprovado por maioria',modo='maioria absoluta',venc=['PM','SA'],v=dict(FM='R',DV='A',AW='A',PM='D',SA='D')),
+('RD1183','6','Sessão Regulatória – Pauta Pública'):dict(rel='FM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='R',PM='A')),
+('RD1183','12','Sessão Regulatória – Pauta Pública'):dict(rel='DV',res='retirada',v={}),
+('RD1183','1','Sessão Regulatória – Pauta Pública'):dict(rel='DV',res='retirada',v={}),
+('RD1184','1','Sessão Regulatória – Pauta Pública'):dict(rel='AW',res='aprovado',modo='unanimidade',v=dict(AW='R',SA='A',DV='A',FM='A',PM='A')),
+('RD1184','2','Sessão Regulatória – Pauta Pública'):dict(rel='DV',res='retirada',v={}),
+('RD1185','1','Sessão Regulatória – Pauta Reservada'):dict(rel='FM',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='A',FM='R',PM='A')),
+('RD1185','2','Sessão Regulatória – Pauta Pública'):dict(rel='DV',res='vista',vista=['AW'],v=dict(DV='R',AW='V',PM='AV',SA='AV',FM='AV')),
+('RD1185','3','Sessão Regulatória – Pauta Pública'):dict(rel='DV',res='vista',vista=['PM','SA'],v=dict(DV='--(leu relatorio, nao proferiu)',AW='A(aprova recomendacao)',PM='V',SA='V',FM='--')),
+('RDE69','1','Sessão Regulatória'):dict(rel='DV',res='aprovado',modo='unanimidade',v=dict(AW='A',SA='A',DV='R',FM='A',PM='A')),
+('RDE70','1','Sessão Regulatória – Pauta Pública'):dict(rel='SA',res='aprovado',modo='unanimidade entre presentes',aus=['FM'],v=dict(AW='A',SA='R',DV='A',FM='X',PM='A')),
+}

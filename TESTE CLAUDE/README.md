@@ -1,5 +1,7 @@
 # TESTE CLAUDE — votos de diretores de agências reguladoras, 2026
 
+> **Para continuar em outra sessão ou conta do Claude Code: leia [`HANDOFF.md`](HANDOFF.md) primeiro.** Revisões cegas em `revisao_cega/`; planos em `planos/`.
+
 Coleta **independente** (não usa o pipeline do IRIS) dos votos individuais dos diretores em 2026, com proveniência por voto
 (`nominal` = a fonte nomeia · `inferido` = "por unanimidade" vira 1 voto ACOMPANHOU por presente · `REVISAR` = indeterminado, com motivo).
 

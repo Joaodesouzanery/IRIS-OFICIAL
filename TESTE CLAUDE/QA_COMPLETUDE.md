@@ -1,14 +1,9 @@
 # QA de completude 2026 — ANPD e ANVISA
 
-Gerado por `scripts/qa_completude.py --online`. Esperado = denominador independente (listagem oficial, numeração, texto das atas); Coletado = o que está na planilha.
+Gerado por `scripts/qa_completude.py`. Esperado = denominador independente (listagem oficial, numeração, texto das atas); Coletado = o que está na planilha.
 
 | Agência | Verificação | Esperado | Coletado | Status | Nota |
 |---|---|---|---|---|---|
-| ANVISA | listagem oficial ao vivo: atas/2026 (items_total do site × itens devolvidos pela API com b_size grande) | 13 | 13 | OK |  |
-| ANVISA | listagem oficial ao vivo: pautas/2026 (items_total do site × itens devolvidos pela API com b_size grande) | 19 | 19 | OK |  |
-| ANVISA | listagem oficial ao vivo: votos/2026 (items_total do site × itens devolvidos pela API com b_size grande) | 18 | 18 | OK |  |
-| ANVISA | listagem oficial ao vivo: extratos-dos-circuitos-deliberativos-1/2026 (items_total do site × itens devolvidos pela API com b_size grande) | 945 | 945 | OK |  |
-| ANVISA | listagem oficial ao vivo: votos-dos-circuitos-deliberativos-1/2026-1 (items_total do site × itens devolvidos pela API com b_size grande) | 698 | 698 | OK |  |
 | ANVISA | Atas ROP/REP 2026: listadas × baixadas com PDF válido | 13 | 13 | OK |  |
 | ANVISA | Atas ROP/REP 2026: baixadas × reuniões lidas | 13 | 13 | OK |  |
 | ANVISA | Extratos de CD 2026: listados × (lidos + repetidos idênticos) | 940 | 940 | OK |  |
@@ -20,15 +15,12 @@ Gerado por `scripts/qa_completude.py --online`. Esperado = denominador independe
 | ANVISA | Itens de ROP que a ata diz terem passado por CD (extrato publicado) × itens com a tabela nominal do extrato aplicada | 209 | 209 | OK |  |
 | ANVISA | CDs citados nas atas sem extrato publicado (pendência da fonte) | 0 | 37 | OK | 37 CDs: [61, 109, 112, 113, 119, 120, 122, 123, 168, 240, 244, 245, 246, 253, 298, 300, 301, 355, 356, 358, 364, 365, 458, 460, 461] |
 | ANVISA | CD 1..1057: números sem extrato publicado (pendência da fonte) | 0 | 123 | OK | 123 números; 42 deles têm só o PDF do voto escrito do relator (CD [112, 113, 119, 120, 122, 123, 168, 244, 245, 246, 298, 300, 301, 643, 646]) |
-| ANPD | circuitos 2026 na página oficial (ao vivo) × circuitos coletados | 29 | 29 | OK |  |
-| ANPD | reuniões deliberativas de 2026 canceladas por falta de processo (página de avisos ao vivo) | 9 | 9 | OK | nenhuma reunião deliberativa realizada: toda decisão é por circuito |
 | ANPD | Circuitos 1..29 sem buraco | 29 | 29 | OK |  |
 | ANPD | Circuitos: listados × baixados (PDFs válidos) | 58 | 58 | OK |  |
 | ANPD | Circuitos com ata lida + sem ata (só voto) = todos | 29 | 29 | OK | sem ata publicada: ['CD07'] |
 | ANPD | 4 votos (1 por membro do Conselho Diretor) em cada circuito com ata | 28 | 28 | OK |  |
 | ANPD | Presença: assinante da ata é diretor do colegiado | 26 | 26 | OK | conferido no parser (27/27) |
 | ANPD | Circuitos com "não acompanha o relator" > 0 ou levados à reunião | 0 | 0 | OK |  |
-| ANP | atas linkadas na página oficial (ao vivo) × atas lidas | 13 | 13 | OK | ata-1175, ata-1176, ata-1177... |
 | ANP | atas baixadas válidas × reuniões lidas | 13 | 13 | OK |  |
 | ANP | 5 votos (1 por diretor) em cada item | 139 | 139 | OK |  |
 | ANP | Votos duplicados (item, diretor) | 0 | 0 | OK |  |
