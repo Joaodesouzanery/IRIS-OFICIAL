@@ -20,6 +20,12 @@ Não altera código nem banco.
   6 linhas "a descobrir". Revisar as URLs antes de ligar qualquer coletor.
 - [ ] ⚠️ **Base legal desatualizada na própria matriz:** Estoque cita o Decreto 10.139/2019, substituído pelo
   Decreto 12.002/2024 (segundo páginas da Anatel/ANAC) — conferir os artigos.
+- [x] **10/out — URLs verificadas por GET** (`docs/metodologia/teste-claude/fontes-verificacao-2026-10-10.json`): 112 URLs
+  distintas → 92 respondem, 4 quebradas (404: MDIC agenda das agências, ANEEL AIR, ANA IQAIR 2020-2024 PDF, ANA ARR),
+  9 bloqueadas (401/403), 3 exigem login (ANS ARR, ANS PGA, notícia ANEEL), 4 inacessíveis (juris.antaq sem DNS,
+  IN ANAC 154 reset). "Responde" ≠ conteúdo conferido. O `fontes-monitoramento.json` NÃO foi reescrito.
+- [x] **Decreto 10.139/2019 revogado pelo 12.002/2024** — confirmado no Planalto. Falta mapear os artigos na aba Estoque.
+- [ ] Trocar as 4 URLs quebradas; achar as 6 "a descobrir"; ANS Agenda 2026-2028; enquadramento da ANPD.
 - [ ] Próxima fase (só com aval): tabelas `qualidade_fontes`/`qualidade_sinais`, coleta fatiada por cursor
   (Hobby: 1 cron, orçamento 70 s), adaptadores por plataforma de participação (5 famílias).
 
