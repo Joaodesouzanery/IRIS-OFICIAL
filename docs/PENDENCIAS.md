@@ -5,7 +5,7 @@ Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 
 
 ## 🟡 Qualidade Regulatória — workbook IMQN das 12 agências (09/out/2026)
 
-`docs/metodologia/IMQN_agencias_workbook.xlsx` + `IMQN_agencias_prototipo.html`: desenho próprio a
+Tudo em `docs/metodologia/teste-claude/` (ver o README de lá). `IMQN_agencias_workbook.xlsx` + `IMQN_agencias_prototipo.html`: desenho próprio a
 partir da planilha rev2022 (73 condições, 12 agências, avaliação por condição, nota **estimada ×
 comprovada**). **Nenhuma agência foi avaliada** — as respostas nascem em branco (≠ "não atende").
 Não altera código nem banco.
@@ -14,7 +14,7 @@ Não altera código nem banco.
 - [ ] Decidir se os níveis assimétricos (Processo: 1 condição em Gerenciado) serão normalizados.
 - [ ] Teto verificável só por fonte pública: ~55 de 100 (Capacitação é dado interno).
 - [ ] Quando aprovado: rota de escrita de `condicoes_avaliadas` + checklist na aba Diagnóstico.
-- [ ] **Fontes e monitoramento (09/out/2026):** `docs/metodologia/fontes-monitoramento.json` (16 fontes nacionais,
+- [ ] **Fontes e monitoramento (09/out/2026):** `docs/metodologia/teste-claude/fontes-monitoramento.json` (16 fontes nacionais,
   34 sinais, 73 condições mapeadas, 120 linhas agência × critério) alimenta as abas Fontes/Sinais/Mapa/Monitor/Achados
   do workbook e a aba "Fontes & Monitoramento" do HTML. URLs são "encontradas em busca", NÃO abertas por navegador;
   6 linhas "a descobrir". Revisar as URLs antes de ligar qualquer coletor.
