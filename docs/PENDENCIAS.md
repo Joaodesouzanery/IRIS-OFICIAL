@@ -3,6 +3,32 @@
 Ações manuais recorrentes, datas sensíveis e itens adiados por decisão de produto.
 Atualize este arquivo quando resolver ou adiar algo (última revisão: Fase 37, 04/out/2026).
 
+## 🟡 Qualidade Regulatória — workbook IMQN das 12 agências (09/out/2026)
+
+Tudo em `docs/metodologia/teste-claude/` (ver o README de lá). `IMQN_agencias_workbook.xlsx` + `IMQN_agencias_prototipo.html`: desenho próprio a
+partir da planilha rev2022 (73 condições, 12 agências, avaliação por condição, nota **estimada ×
+comprovada**). **Nenhuma agência foi avaliada** — as respostas nascem em branco (≠ "não atende").
+Não altera código nem banco.
+- [ ] Revisar a classificação pública/interna, as perguntas e os termos de busca (são proposta).
+- [ ] Conferir a base legal (PS: Lei 13.848 arts. 9º–11; ARR: Decreto 10.411) e o ministério supervisor.
+- [ ] Decidir se os níveis assimétricos (Processo: 1 condição em Gerenciado) serão normalizados.
+- [ ] Teto verificável só por fonte pública: ~55 de 100 (Capacitação é dado interno).
+- [ ] Quando aprovado: rota de escrita de `condicoes_avaliadas` + checklist na aba Diagnóstico.
+- [ ] **Fontes e monitoramento (09/out/2026):** `docs/metodologia/teste-claude/fontes-monitoramento.json` (16 fontes nacionais,
+  34 sinais, 73 condições mapeadas, 120 linhas agência × critério) alimenta as abas Fontes/Sinais/Mapa/Monitor/Achados
+  do workbook e a aba "Fontes & Monitoramento" do HTML. URLs são "encontradas em busca", NÃO abertas por navegador;
+  6 linhas "a descobrir". Revisar as URLs antes de ligar qualquer coletor.
+- [ ] ⚠️ **Base legal desatualizada na própria matriz:** Estoque cita o Decreto 10.139/2019, substituído pelo
+  Decreto 12.002/2024 (segundo páginas da Anatel/ANAC) — conferir os artigos.
+- [x] **10/out — URLs verificadas por GET** (`docs/metodologia/teste-claude/fontes-verificacao-2026-10-10.json`): 112 URLs
+  distintas → 92 respondem, 4 quebradas (404: MDIC agenda das agências, ANEEL AIR, ANA IQAIR 2020-2024 PDF, ANA ARR),
+  9 bloqueadas (401/403), 3 exigem login (ANS ARR, ANS PGA, notícia ANEEL), 4 inacessíveis (juris.antaq sem DNS,
+  IN ANAC 154 reset). "Responde" ≠ conteúdo conferido. O `fontes-monitoramento.json` NÃO foi reescrito.
+- [x] **Decreto 10.139/2019 revogado pelo 12.002/2024** — confirmado no Planalto. Falta mapear os artigos na aba Estoque.
+- [ ] Trocar as 4 URLs quebradas; achar as 6 "a descobrir"; ANS Agenda 2026-2028; enquadramento da ANPD.
+- [ ] Próxima fase (só com aval): tabelas `qualidade_fontes`/`qualidade_sinais`, coleta fatiada por cursor
+  (Hobby: 1 cron, orçamento 70 s), adaptadores por plataforma de participação (5 famílias).
+
 ## 🔴 FASE 39 (05/out/2026) — datas, depois votos (o cadastro está FECHADO)
 
 O SQL B confirmou os mandatos (ANM e ANTT batem com o DOU) e o SQL A provou que os 81 votos "fora do

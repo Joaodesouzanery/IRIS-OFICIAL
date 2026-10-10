@@ -1,0 +1,631 @@
+[
+ {
+  "id": 1,
+  "aba": "AIR",
+  "nome": "Análise de Impacto Regulatório (AIR)",
+  "peso": 25,
+  "criterios": [
+   {
+    "codigo": "AIR_CAP",
+    "nome": "Capacitação em AIR",
+    "peso": 0.3,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em técnicas de AIR;",
+      "original": "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em técnicas de AIR;",
+      "celula": "AIR!A3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Capacitações em AIR estão institucionalizadas, sem um plano formalizado;",
+      "original": "I – Capacitações em AIR estão institucionalizadas, sem um plano formalizado;",
+      "celula": "AIR!B3"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "Capacitações em AIR não estão institucionalizadas;",
+      "original": "I - Capacitações em AIR não estão institucionalizadas;",
+      "celula": "AIR!C3"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+      "original": "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+      "celula": "AIR!A4"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 2020;",
+      "original": "II – no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 2020;",
+      "celula": "AIR!B4"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 30 de junho de 2020;",
+      "original": "II - de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 30 de junho de2020;",
+      "celula": "AIR!C4"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "III",
+      "texto": "no mínimo 50% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+      "original": "III – no mínimo 50% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+      "celula": "AIR!A5"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "III",
+      "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+      "original": "III – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+      "celula": "AIR!B5"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "III",
+      "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida.",
+      "original": "III – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida.",
+      "celula": "AIR!C5"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "IV",
+      "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+      "original": "IV – de 25% da 49% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+      "celula": "AIR!B6"
+     }
+    ]
+   },
+   {
+    "codigo": "AIR_MET",
+    "nome": "Metodologia de AIR",
+    "peso": 0.35,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade da AIR;",
+      "original": "I – Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade da AIR;",
+      "celula": "AIR!A8"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Existência de manual ou ato normativo interno instituindo a aplicabilidade institucional da AIR;",
+      "original": "I – Existência de manual ou ato normativo interno instituindo a aplicabilidade institucional da AIR;",
+      "celula": "AIR!B8"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "houve a publicação de normativo interno dispondo sobre a aplicação da AIR na instituição, conforme Decreto nº 10.411, de 2020.",
+      "original": "I - houve a publicação de normativo interno dispondo sobre a aplicação da AIR na instituição, conforme Decreto nº 10.411, de 2020.",
+      "celula": "AIR!C8"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Metodologia contempla participação social prévia e posterior à elaboração da AIR, conforme complexidade do ato.",
+      "original": "II – Metodologia contempla participação social prévia e posterior à elaboração da AIR, conforme complexidade do ato.",
+      "celula": "AIR!A9"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "Existência de manual ou ato normativo dispondo sobre a participação social posterior relativa à AIR.",
+      "original": "II – Existência de manual ou ato normativo dispondo sobre a participação social posterior relativa à AIR.",
+      "celula": "AIR!B9"
+     }
+    ]
+   },
+   {
+    "codigo": "AIR_PRO",
+    "nome": "Processo de AIR",
+    "peso": 0.35,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Há processo contínuo de avaliação e melhoria do processo de elaboração de AIR;",
+      "original": "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de AIR;",
+      "celula": "AIR!A11"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Todas as AIRs são sempre realizadas conforme manual ou ato normativo interno e publicadas e acessíveis ao público na internet;",
+      "original": "I – Todas as AIRs são sempre realizadas conforme manual ou ato normativo interno e publicadas e acessíveis ao público na internet;",
+      "celula": "AIR!B11"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "AIR é sempre realizada e a dispensa justificada, conforme critérios objetivos estabelecidos, conforme Decreto nº 10.411, de 2020;",
+      "original": "I – AIR é sempre realizada e a dispensa justificada, conforme critérios objetivos estabelecidos, conforme Decreto nº 10.411, de 2020;",
+      "celula": "AIR!C11"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Existência de instrumento de avaliação de qualidade das AIRs realizadas;",
+      "original": "II – Existência de instrumento de avaliação de qualidade das AIRs realizadas;",
+      "celula": "AIR!A12"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "O processo de elaboração de AIR está mapeado na instituição;",
+      "original": "II – O processo de elaboração de AIR está mapeado na instituição;",
+      "celula": "AIR!B12"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "Todas as AIRs são publicadas e acessíveis ao público na internet;",
+      "original": "II – Todas as AIRs são publicadas e acessíveis ao público na internet;",
+      "celula": "AIR!C12"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "III",
+      "texto": "As AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior.",
+      "original": "III – As AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior.",
+      "celula": "AIR!A13"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "III",
+      "texto": "As AIRs são objeto de participação social posterior, conforme decisão técnica.",
+      "original": "III – As AIRs são objeto de participação social posterior, conforme decisão técnica.",
+      "celula": "AIR!B13"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "III",
+      "texto": "Participação Social é realizada, conforme Decreto nº 10.411, de 2020.",
+      "original": "III – Participação Social é realizada, conforme Decreto nº 10.411, de 2020.",
+      "celula": "AIR!C13"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "aba": "PS",
+  "nome": "Participação Social",
+  "peso": 15,
+  "criterios": [
+   {
+    "codigo": "PS",
+    "nome": "Participação Social",
+    "peso": 1.0,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "A instituição realiza eventos de participação social para a construção do conhecimento sobre dada matéria e para o desenvolvimento de propostas;",
+      "original": "I – A instituição realiza eventos de participação social para a construção do conhecimento sobre dada matéria e para o desenvolvimento de propostas;",
+      "celula": "PS!A2"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Existência de manual ou ato normativo interno instituindo metodologia e procedimento de participação social;",
+      "original": "I – Existência de manual ou ato normativo interno instituindo metodologia e procedimento de participação social;",
+      "celula": "PS!B2"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "existe dispositivo interno orientando a participação social conforme disposto na legislação específica vigente, tais como as Leis nº 13.848, de 25 de junho de 2019 e nº 13.874, de 20 de setembro de 2019 e o Decreto nº 10.411, de 2020.",
+      "original": "I - existe dispositivo interno orientando a participação social conforme disposto na legislação específica vigente, tais como as Leis nº 13.848, de 25 de junho de 2019 e nº 13.874, de 20 de setembro de 2019 e o Decreto nº 10.411, de 2020.",
+      "celula": "PS!C2"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Relatórios da Ouvidoria, relatórios do portal consumidor.gov, pesquisas de satisfação e dados de atendimento são utilizados para subsidiar as decisões regulatórias;",
+      "original": "II – Relatórios da Ouvidoria, relatórios do portal consumidor.gov, pesquisas de satisfação e dados de atendimento são utilizados para subsidiar as decisões regulatórias;",
+      "celula": "PS!A3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "Os relatórios da Ouvidoria e os relatórios do portal consumidor.gov são utilizados para subsidiar as decisões regulatórias;",
+      "original": "II – Os relatórios da Ouvidoria e os relatórios do portal consumidor.gov são utilizados para subsidiar as decisões regulatórias;",
+      "celula": "PS!B3"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "III",
+      "texto": "Todos os instrumentos, processos e relatórios contendo as contribuições analisadas são divulgados no portal do órgão e/ou plataforma Participa Mais Brasil;",
+      "original": "III – Todos os instrumentos, processos e relatórios contendo as contribuições analisadas são divulgados no portal do órgão e/ou plataforma Participa Mais Brasil;",
+      "celula": "PS!A4"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "III",
+      "texto": "Todas as informações relativas aos processos em andamento são divulgadas no portal do órgão e/ou plataforma Participa Mais Brasil;",
+      "original": "III – Todas as informações relativas aos processos em andamento são divulgadas no portal do órgão e/ou plataforma Participa Mais Brasil;",
+      "celula": "PS!B4"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "IV",
+      "texto": "A efetividade do evento de participação social é mensurada, conforme metodologia instituída.",
+      "original": "IV – A efetividade do evento de participação social é mensurada, conforme metodologia instituída.",
+      "celula": "PS!A5"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "IV",
+      "texto": "A efetividade do evento de participação social é avaliada de forma intuitiva.",
+      "original": "IV – A efetividade do evento de participação social é avaliada de forma intuitiva.",
+      "celula": "PS!B5"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "aba": "Estoque",
+  "nome": "Gestão de Estoque Regulatório",
+  "peso": 20,
+  "criterios": [
+   {
+    "codigo": "EST",
+    "nome": "Gestão de Estoque Regulatório",
+    "peso": 1.0,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "As alterações do estoque regulatório da instituição são priorizadas por meio de uma agenda regulatória;",
+      "original": "I – As alterações do estoque regulatório da instituição são priorizadas por meio de uma agenda regulatória;",
+      "celula": "Estoque!A2"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Normas publicadas e disponíveis de maneira sistematizada para consulta pública no portal gov.br;",
+      "original": "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública no portal gov.br;",
+      "celula": "Estoque!B2"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "Normas publicadas e disponíveis de maneira sistematizada para consulta pública na internet;",
+      "original": "I – Normas publicadas e disponíveis de maneira sistematizada para consulta pública na internet;",
+      "celula": "Estoque!C2"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Todas as novas normas passam pela análise de consolidação e compatibilização de normas vigentes.",
+      "original": "II – Todas as novas normas passam pela análise de consolidação e compatibilização de normas vigentes.",
+      "celula": "Estoque!A3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "Foi realizado levantamento quantitativo de todas as normas do órgão, bem como análise qualitativa, indexação e classificação por tema;",
+      "original": "II – Foi realizado levantamento quantitativo de todas as normas do órgão, bem como análise qualitativa, indexação e classificação por tema;",
+      "celula": "Estoque!B3"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "Foi realizado levantamento quantitativo de todas as normas do órgão.",
+      "original": "II – Foi realizado levantamento quantitativo de todas as normas do órgão.",
+      "celula": "Estoque!C3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "III",
+      "texto": "Para toda a nova norma de alto impacto/alta complexidade foi estimado o fardo regulatório; e",
+      "original": "III – Para toda a nova norma de alto impacto/alta complexidade foi estimado o fardo regulatório; e",
+      "celula": "Estoque!B4"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "IV",
+      "texto": "Existe manutenção da consolidação normativa, conforme art. 19 do Decreto nº 10.139, de 28 de novembro de 2019.",
+      "original": "IV – Existe manutenção da consolidação normativa, conforme art. 19 do Decreto nº 10.139, de 28 de novembro de 2019.",
+      "celula": "Estoque!B5"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "aba": "Agenda",
+  "nome": "Agenda Regulatória",
+  "peso": 15,
+  "criterios": [
+   {
+    "codigo": "AGE",
+    "nome": "Agenda Regulatória",
+    "peso": 1.0,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, respondida e divulgada;",
+      "original": "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, respondida e divulgada;",
+      "celula": "Agenda!A2"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, porém não respondida e divulgada;",
+      "original": "I – A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, porém não respondida e divulgada;",
+      "celula": "Agenda!B2"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "Os temas da agenda regulatória são elencados e priorizados pelos gestores da agência;",
+      "original": "I – Os temas da agenda regulatória são elencados e priorizados pelos gestores da agência;",
+      "celula": "Agenda!C2"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Os projetos da Agenda Regulatória estão aderentes ao planejamento estratégico vigente e estão correlacionados ao Plano de Gestão Anual;",
+      "original": "II – Os projetos da Agenda Regulatória estão aderentes ao planejamento estratégico vigente e estão correlacionados ao Plano de Gestão Anual;",
+      "celula": "Agenda!A3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "O Ministério Setorial é oficiado, por meio do Ministro e da Secretaria Finalística, quando da abertura do processo de participação social. O Ministério deve oficiar as agências reguladoras vinculadas, visando a integração das agendas;",
+      "original": "II – O Ministério Setorial é oficiado, por meio do Ministro e da Secretaria Finalística, quando da abertura do processo de participação social. O Ministério deve oficiar as agências reguladoras vinculadas, visando a integração das agendas;",
+      "celula": "Agenda!B3"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "É avaliada a aderência da proposta de Agenda às políticas públicas.",
+      "original": "II – É avaliada a aderência da proposta de Agenda às políticas públicas.",
+      "celula": "Agenda!C3"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "III",
+      "texto": "Cumprimento de, no mínimo, 80% da Agenda Regulatória;",
+      "original": "III - Cumprimento de, no mínimo, 80% da Agenda Regulatória;",
+      "celula": "Agenda!A4"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "III",
+      "texto": "Cumprimento de 50% a 79% da Agenda Regulatória;",
+      "original": "III – Cumprimento de 50% a 79% da Agenda Regulatória;",
+      "celula": "Agenda!B4"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "IV",
+      "texto": "A execução da Agenda Regulatória é periodicamente monitorada e divulgada.",
+      "original": "IV – A execução da Agenda Regulatória é periodicamente monitorada e divulgada.",
+      "celula": "Agenda!A5"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "IV",
+      "texto": "A execução da Agenda Regulatória é periodicamente monitorada.",
+      "original": "IV – A execução da Agenda Regulatória é periodicamente monitorada.",
+      "celula": "Agenda!B5"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "aba": "Processo",
+  "nome": "Gestão do Processo Normativo",
+  "peso": 10,
+  "criterios": [
+   {
+    "codigo": "PRO",
+    "nome": "Gestão do Processo Normativo",
+    "peso": 1.0,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Indicadores de processo normativo estabelecidos e monitorados;",
+      "original": "I – Indicadores de processo normativo estabelecidos e monitorados;",
+      "celula": "Processo!A2"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "as intervenções de participação social estão claramente inseridas no processo.",
+      "original": "I - as intervenções de participação social estão claramente inseridas no processo.",
+      "celula": "Processo!B2"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "O fluxo do processo normativo é formalizado de forma bem definida e clara;",
+      "original": "I – O fluxo do processo normativo é formalizado de forma bem definida e clara;",
+      "celula": "Processo!C2"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Há processo contínuo de avaliação e melhoria do processo normativo, utilizando o resultado dos indicadores.",
+      "original": "II – Há processo contínuo de avaliação e melhoria do processo normativo, utilizando o resultado dos indicadores.",
+      "celula": "Processo!A3"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "As instâncias de aprovação estabelecidas são claras e formalizadas.",
+      "original": "II – As instâncias de aprovação estabelecidas são claras e formalizadas.",
+      "celula": "Processo!C3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "aba": "ARR",
+  "nome": "Análise de Resultado Regulatório (ARR)",
+  "peso": 15,
+  "criterios": [
+   {
+    "codigo": "ARR_CAP",
+    "nome": "Capacitação em ARR",
+    "peso": 0.3,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em ARR;",
+      "original": "I – Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em ARR;",
+      "celula": "ARR!A3"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Capacitações institucionalizadas, sem um plano formalizado;",
+      "original": "I – Capacitações institucionalizadas, sem um plano formalizado;",
+      "celula": "ARR!B3"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "Capacitações não estão institucionalizadas;",
+      "original": "I – Capacitações não estão institucionalizadas;",
+      "celula": "ARR!C3"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "No mínimo, 75% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+      "original": "II – No mínimo, 75% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+      "celula": "ARR!A4"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em ARR;",
+      "original": "II – de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em ARR;",
+      "celula": "ARR!B4"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+      "original": "II – de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+      "celula": "ARR!C4"
+     }
+    ]
+   },
+   {
+    "codigo": "ARR_MET",
+    "nome": "Metodologia de ARR",
+    "peso": 0.35,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Metodologia de elaboração de ARR contempla a participação social, conforme complexidade do ato;",
+      "original": "I – Metodologia de elaboração de ARR contempla a participação social, conforme complexidade do ato;",
+      "celula": "ARR!A6"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "Existência de manual ou ato normativo instituindo a aplicabilidade de ARR no órgão;",
+      "original": "I – Existência de manual ou ato normativo instituindo a aplicabilidade de ARR no órgão;",
+      "celula": "ARR!B6"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "existe Agenda de ARR, conforme determinado no Decreto nº 10.411, de 2020.",
+      "original": "I - existe Agenda de ARR, conforme determinado no Decreto nº 10.411, de 2020.",
+      "celula": "ARR!C6"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "Existência de Agenda de ARR integrada com a Agenda Regulatória.",
+      "original": "II – Existência de Agenda de ARR integrada com a Agenda Regulatória.",
+      "celula": "ARR!A7"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "Metodologia de elaboração da Agenda de ARR contempla participação social.",
+      "original": "II – Metodologia de elaboração da Agenda de ARR contempla participação social.",
+      "celula": "ARR!B7"
+     }
+    ]
+   },
+   {
+    "codigo": "ARR_PRO",
+    "nome": "Processo de ARR",
+    "peso": 0.35,
+    "conds": [
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "I",
+      "texto": "Há processo contínuo de avaliação e melhoria do processo de elaboração de ARR;",
+      "original": "I – Há processo contínuo de avaliação e melhoria do processo de elaboração de ARR;",
+      "celula": "ARR!A9"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "I",
+      "texto": "ARR é realizada conforme manual ou ato normativo;",
+      "original": "I – ARR é realizada conforme manual ou ato normativo;",
+      "celula": "ARR!B9"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "I",
+      "texto": "Todas as ARRs são publicadas e acessíveis ao público na internet;",
+      "original": "I – Todas as ARRs são publicadas e acessíveis ao público na internet;",
+      "celula": "ARR!C9"
+     },
+     {
+      "nivel": "melhoria_continua",
+      "ordem": "II",
+      "texto": "A execução da Agenda de ARR é periodicamente monitorada e divulgada.",
+      "original": "II – A execução da Agenda de ARR é periodicamente monitorada e divulgada.",
+      "celula": "ARR!A10"
+     },
+     {
+      "nivel": "gerenciado",
+      "ordem": "II",
+      "texto": "ARRs de alto impacto/alta complexidade foram submetidas à participação social.",
+      "original": "II – ARRs de alto impacto/alta complexidade foram submetidas à participação social.",
+      "celula": "ARR!B10"
+     },
+     {
+      "nivel": "inicial",
+      "ordem": "II",
+      "texto": "A agenda de ARR está publicada no site do órgão.",
+      "original": "II – A agenda de ARR está publicada no site do órgão.",
+      "celula": "ARR!C10"
+     }
+    ]
+   }
+  ]
+ }
+]

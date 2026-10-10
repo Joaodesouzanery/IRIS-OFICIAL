@@ -1,0 +1,3587 @@
+{
+ "gerado_em": "2026-10-09",
+ "aviso": "Nenhuma URL foi aberta por navegador; \"encontrada em busca\" = retornada por mecanismo de busca em 2026-10-09. Nenhuma nota é atribuída por este arquivo.",
+ "nacionais": [
+  {
+   "id": "N01",
+   "nome": "Diário Oficial da União (DOU)",
+   "entidade": "Imprensa Nacional",
+   "url": "https://www.in.gov.br",
+   "formato": "HTML + XML diário (INLABS)",
+   "periodicidade": "diária",
+   "status": "padrão conhecido (não aberto nesta sessão)",
+   "cobre": "AGE,AIR,ARR,EST,PRO",
+   "uso": "Publicação de portarias/resoluções que aprovam agenda, manual de AIR/ARR e consolidações; contagem de normas por agência/ano; aderência norma×agenda.",
+   "risco": "Baixo (XML oficial); busca por título exige normalização"
+  },
+  {
+   "id": "N02",
+   "nome": "Planalto — legislação federal",
+   "entidade": "Presidência da República",
+   "url": "http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13848.htm",
+   "formato": "HTML",
+   "periodicidade": "sob demanda",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "base legal",
+   "uso": "Texto da Lei 13.848/2019 (art. 15 relatório anual, art. 17 plano estratégico, arts. 18–20 PGA, art. 21 agenda); Decreto 10.411/2020; Decreto 12.002/2024.",
+   "risco": "Baixo"
+  },
+  {
+   "id": "N03",
+   "nome": "Brasil Participativo (plataforma federal)",
+   "entidade": "Presidência da República",
+   "url": "https://brasilparticipativo.presidencia.gov.br",
+   "formato": "HTML (páginas por processo)",
+   "periodicidade": "contínua",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "PS,AGE,ARR",
+   "uso": "Consultas/tomadas de subsídio de ANVISA, ANEEL, ANM, ANP, ANPD e outras; datas e status por processo.",
+   "risco": "Médio (a plataforma mudou de nome; ver N04)"
+  },
+  {
+   "id": "N04",
+   "nome": "Participa + Brasil (plataforma anterior)",
+   "entidade": "Presidência da República",
+   "url": "https://www.gov.br/participamaisbrasil",
+   "formato": "HTML",
+   "periodicidade": "histórico",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "PS,AGE,ARR",
+   "uso": "Histórico de consultas 2022–2025 (ANM, ANTT, ANCINE, ANAC…). Páginas por agência.",
+   "risco": "Médio (migração para Brasil Participativo)"
+  },
+  {
+   "id": "N05",
+   "nome": "Portal Brasileiro de Dados Abertos",
+   "entidade": "CGU/MGI",
+   "url": "https://dados.gov.br",
+   "formato": "CSV/JSON (CKAN)",
+   "periodicidade": "variável por conjunto",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "AGE,PS",
+   "uso": "Conjuntos como \"Regulamentação — Agenda Regulatória\" (ANAC) e \"Audiências e Consultas Públicas\" (ANEEL, atualização trimestral). Fonte mais estável para automação.",
+   "risco": "Baixo"
+  },
+  {
+   "id": "N06",
+   "nome": "Portal de Governança Regulatória (MDIC)",
+   "entidade": "MDIC",
+   "url": "https://portalreg.mdic.gov.br",
+   "formato": "HTML + PDF",
+   "periodicidade": "sob demanda",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "AIR,ARR,EST,PRO",
+   "uso": "Relatórios de benchmarking de governança de agências (FGV, mar/2026) e de ARR; referência externa para validar critérios e comparar agências.",
+   "risco": "Médio (conteúdo em PDF)"
+  },
+  {
+   "id": "N07",
+   "nome": "MDIC — Agenda regulatória das agências",
+   "entidade": "MDIC",
+   "url": "https://www.gov.br/mdic/pt-br/acesso-a-informacao/reg/agenda-regulatoria/agencias-reguladoras",
+   "formato": "HTML",
+   "periodicidade": "sob demanda",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "AGE",
+   "uso": "Índice cruzado de agendas das agências (segunda fonte para detectar agenda vigente).",
+   "risco": "Baixo"
+  },
+  {
+   "id": "N08",
+   "nome": "Ministério da Fazenda/SRE — manifestações em consultas públicas de órgãos reguladores",
+   "entidade": "MF/SRE",
+   "url": "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-reformas-economicas/manifestacoes-em-consultas-publicas-de-orgaos-reguladores",
+   "formato": "HTML + PDF (pareceres)",
+   "periodicidade": "contínua",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "PS,AIR",
+   "uso": "Revisor externo: parecer sobre propostas das agências (ex.: ANTT 2026). Indício de AIR/competição avaliada por terceiro.",
+   "risco": "Baixo"
+  },
+  {
+   "id": "N09",
+   "nome": "CGU — e-Aud (relatórios de avaliação)",
+   "entidade": "CGU",
+   "url": "https://eaud.cgu.gov.br/relatorios",
+   "formato": "PDF",
+   "periodicidade": "anual",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "PRO,PS,AIR",
+   "uso": "Auditorias de governança regulatória por agência (ex.: ANATEL, ANM).",
+   "risco": "Médio (PDF, publicação irregular)"
+  },
+  {
+   "id": "N10",
+   "nome": "TCU — acórdãos e e-Contas",
+   "entidade": "TCU",
+   "url": "https://pesquisa.apps.tcu.gov.br",
+   "formato": "HTML/PDF",
+   "periodicidade": "contínua",
+   "status": "padrão conhecido (não aberto nesta sessão)",
+   "cobre": "AIR,PRO,CAP",
+   "uso": "Recomendações de governança regulatória e relatórios de gestão das agências (prestação de contas).",
+   "risco": "Médio"
+  },
+  {
+   "id": "N11",
+   "nome": "Casa Civil — conteúdo de regulação (guias de AIR/ARR)",
+   "entidade": "Casa Civil",
+   "url": "https://www.gov.br/casacivil/pt-br/conteudo-de-regulacao/regulacao",
+   "formato": "HTML + PDF",
+   "periodicidade": "sob demanda",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "AIR,ARR",
+   "uso": "Guia orientativo federal de AIR/ARR — régua de conteúdo mínimo para avaliar qualidade de relatórios.",
+   "risco": "Baixo"
+  },
+  {
+   "id": "N12",
+   "nome": "Fala.BR / e-SIC (Lei de Acesso à Informação)",
+   "entidade": "CGU",
+   "url": "https://falabr.cgu.gov.br",
+   "formato": "Pedido formal",
+   "periodicidade": "sob demanda",
+   "status": "padrão conhecido (não aberto nesta sessão)",
+   "cobre": "CAP,PRO",
+   "uso": "ÚNICO caminho para dado interno (% de servidores capacitados em AIR/ARR; indicadores internos do processo normativo). Resposta fica pública quando a agência a publica.",
+   "risco": "Alto (depende de resposta da agência; prazo legal de 20+10 dias)"
+  },
+  {
+   "id": "N13",
+   "nome": "Internet Archive — Wayback Machine",
+   "entidade": "Internet Archive",
+   "url": "https://web.archive.org",
+   "formato": "HTML (snapshots) + API CDX",
+   "periodicidade": "histórico",
+   "status": "padrão conhecido (não aberto nesta sessão)",
+   "cobre": "todos",
+   "uso": "Reconstituir o estado das páginas das agências em 2019–2025 (baseline para o Prêmio Evolução) e provar o que estava publicado numa data.",
+   "risco": "Médio (nem toda página foi arquivada)"
+  },
+  {
+   "id": "N14",
+   "nome": "SEI — pesquisa pública de processos (por agência)",
+   "entidade": "cada agência",
+   "url": "https://sei.antaq.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php",
+   "formato": "HTML (consulta externa)",
+   "periodicidade": "contínua",
+   "status": "encontrada em busca (2026-10-09) (exemplo ANTAQ)",
+   "cobre": "PRO,AIR",
+   "uso": "Datas de abertura/encerramento do processo normativo (tempo de tramitação) e relatórios de AIR com nº SEI. Cada agência tem seu domínio.",
+   "risco": "Alto (CAPTCHA/ritmo; cada SEI é distinto)"
+  },
+  {
+   "id": "N15",
+   "nome": "ENAP — Escola Virtual (cursos de AIR/ARR)",
+   "entidade": "ENAP",
+   "url": "https://suap.enap.gov.br/vitrine/curso/1600/",
+   "formato": "HTML",
+   "periodicidade": "sob demanda",
+   "status": "encontrada em busca (2026-10-09)",
+   "cobre": "CAP",
+   "uso": "Apenas confirma que a capacitação existe no ecossistema federal; NÃO informa quantos servidores de cada agência a fizeram.",
+   "risco": "Baixo (mas não resolve a condição)"
+  },
+  {
+   "id": "N16",
+   "nome": "Painel Estatístico de Pessoal (agregado por órgão)",
+   "entidade": "MGI",
+   "url": "https://www.gov.br/gestao/pt-br",
+   "formato": "painel",
+   "periodicidade": "mensal",
+   "status": "padrão conhecido (não aberto nesta sessão)",
+   "cobre": "CAP (contexto)",
+   "uso": "Apenas contexto de porte (nº de servidores por carreira). Só dados agregados — nunca nominais (LGPD).",
+   "risco": "Médio"
+  }
+ ],
+ "sinais": [
+  {
+   "id": "S01",
+   "nome": "Página de agenda regulatória com ciclo vigente",
+   "automacao": "A",
+   "metodo": "HTTP 200 na página da agenda + texto \"Agenda Regulatória\" + biênio/quadriênio que cobre o ano corrente",
+   "fontes": "portal da agência; N07",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S02",
+   "nome": "Ato de aprovação da agenda publicado no DOU",
+   "automacao": "A",
+   "metodo": "busca no DOU por título \"Agenda Regulatória\" + agência + ano",
+   "fontes": "N01",
+   "frequencia": "diária"
+  },
+  {
+   "id": "S03",
+   "nome": "Participação social na elaboração da agenda (tomada de subsídios/consulta)",
+   "automacao": "A",
+   "metodo": "processo com \"Agenda Regulatória\" no título na plataforma de participação",
+   "fontes": "N03,N04, plataforma própria",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S04",
+   "nome": "Relatório/painel de execução da agenda (% de cumprimento)",
+   "automacao": "B",
+   "metodo": "PDF/painel periódico; extrai \"nível de execução\", \"ICAR\" ou \"% concluído\"",
+   "fontes": "portal da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S05",
+   "nome": "Aderência: normas do DOU ligadas a itens da agenda",
+   "automacao": "B",
+   "metodo": "cruza títulos de normas do DOU com itens da agenda vigente",
+   "fontes": "N01 + agenda",
+   "frequencia": "semestral"
+  },
+  {
+   "id": "S06",
+   "nome": "Plano Estratégico e PGA publicados e alinhados à agenda",
+   "automacao": "B",
+   "metodo": "páginas \"Plano de Gestão Anual\"/\"Planejamento estratégico\" + citação da agenda",
+   "fontes": "portal; Lei 13.848 arts. 17–21",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S07",
+   "nome": "Índice/acervo de relatórios de AIR publicado",
+   "automacao": "A",
+   "metodo": "página de AIR com lista de relatórios; conta PDFs por ano",
+   "fontes": "portal da agência",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S08",
+   "nome": "Relatórios de AIR novos no ano",
+   "automacao": "A",
+   "metodo": "diferença de PDFs de AIR entre coletas",
+   "fontes": "portal da agência",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S09",
+   "nome": "Manual/ato interno que institui a AIR",
+   "automacao": "A",
+   "metodo": "ato na legislação da agência/DOU com \"Análise de Impacto Regulatório\" no título",
+   "fontes": "portal; N01",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S10",
+   "nome": "Dispensa de AIR justificada e publicada",
+   "automacao": "A",
+   "metodo": "nota técnica/tabela de dispensas no portal",
+   "fontes": "portal da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S11",
+   "nome": "Índice próprio de qualidade das AIR (ex.: IQR Anatel, IQAIR ANA)",
+   "automacao": "B",
+   "metodo": "relatório/painel de qualidade; extrai nota média",
+   "fontes": "portal da agência",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S12",
+   "nome": "Relatório de AIR anexado à consulta pública",
+   "automacao": "B",
+   "metodo": "anexos da consulta contêm \"Relatório de AIR\"",
+   "fontes": "plataformas de participação",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S13",
+   "nome": "Agenda de ARR publicada",
+   "automacao": "A",
+   "metodo": "página/ato de agenda de ARR",
+   "fontes": "portal; N01",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S14",
+   "nome": "Relatórios de ARR publicados",
+   "automacao": "A",
+   "metodo": "lista de relatórios de ARR; conta PDFs",
+   "fontes": "portal da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S15",
+   "nome": "Manual/ato interno que institui a ARR",
+   "automacao": "A",
+   "metodo": "ato com \"Resultado Regulatório\" no título",
+   "fontes": "portal; N01",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S16",
+   "nome": "Participação social na agenda de ARR",
+   "automacao": "A",
+   "metodo": "tomada de subsídios com \"Agenda de ARR\"",
+   "fontes": "N03,N04, plataforma própria",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S17",
+   "nome": "Execução da agenda de ARR monitorada/divulgada",
+   "automacao": "B",
+   "metodo": "relatório de acompanhamento da agenda (inclui ARR)",
+   "fontes": "portal da agência",
+   "frequencia": "semestral"
+  },
+  {
+   "id": "S18",
+   "nome": "Lista de consultas/audiências (status e datas)",
+   "automacao": "A",
+   "metodo": "plataforma própria, Brasil Participativo ou dataset aberto",
+   "fontes": "N03,N05, plataforma própria",
+   "frequencia": "semanal"
+  },
+  {
+   "id": "S19",
+   "nome": "Relatório/nota de análise das contribuições publicado",
+   "automacao": "B",
+   "metodo": "por consulta encerrada, procura relatório de contribuições; razão com/sem",
+   "fontes": "plataformas de participação",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S20",
+   "nome": "Prazo da consulta vs mínimo normativo (45 dias p/ normas)",
+   "automacao": "A",
+   "metodo": "datas de abertura/encerramento → dias; compara com norma interna",
+   "fontes": "plataformas de participação",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S21",
+   "nome": "Ato interno de participação social",
+   "automacao": "A",
+   "metodo": "resolução/portaria sobre consultas e audiências",
+   "fontes": "portal; N01",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S22",
+   "nome": "Relatórios de ouvidoria/consumidor.gov.br usados em decisões",
+   "automacao": "C",
+   "metodo": "citação em votos/notas técnicas; exige leitura humana",
+   "fontes": "relatório anual de ouvidoria; votos",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S23",
+   "nome": "Efetividade da participação mensurada (ex.: RAPS Anvisa)",
+   "automacao": "B",
+   "metodo": "relatório de análise de participação social",
+   "fontes": "portal da agência",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S24",
+   "nome": "Consolidação normativa por tema",
+   "automacao": "A",
+   "metodo": "atos \"consolidam\" no DOU/legislação da agência",
+   "fontes": "N01; legislação da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S25",
+   "nome": "Levantamento/painel quantitativo do estoque",
+   "automacao": "B",
+   "metodo": "painel com normas publicadas/vigentes/revogadas",
+   "fontes": "portal da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S26",
+   "nome": "Normas classificadas/indexadas por tema",
+   "automacao": "B",
+   "metodo": "sistema de legislação com filtro temático",
+   "fontes": "sistema de legislação da agência",
+   "frequencia": "trimestral"
+  },
+  {
+   "id": "S27",
+   "nome": "Revisão/revogação em lote do estoque",
+   "automacao": "A",
+   "metodo": "resoluções de revogação (ex.: \"guilhotina\") no DOU",
+   "fontes": "N01",
+   "frequencia": "mensal"
+  },
+  {
+   "id": "S28",
+   "nome": "Fardo regulatório estimado em AIR de alto impacto",
+   "automacao": "C",
+   "metodo": "leitura do relatório de AIR (custos de conformidade)",
+   "fontes": "relatórios de AIR",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S29",
+   "nome": "Manual/regimento do processo normativo",
+   "automacao": "A",
+   "metodo": "manual/regimento publicado no portal",
+   "fontes": "portal da agência",
+   "frequencia": "semestral"
+  },
+  {
+   "id": "S30",
+   "nome": "Indicadores do processo normativo monitorados (ex.: ICPN ANEEL)",
+   "automacao": "B",
+   "metodo": "relatório/painel de indicadores",
+   "fontes": "portal da agência",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S31",
+   "nome": "Instâncias de aprovação formalizadas",
+   "automacao": "A",
+   "metodo": "regimento interno/competências publicadas",
+   "fontes": "portal; N01",
+   "frequencia": "semestral"
+  },
+  {
+   "id": "S32",
+   "nome": "Plano de capacitação (PDP) menciona AIR/ARR",
+   "automacao": "B",
+   "metodo": "PDF do plano de desenvolvimento de pessoas/PGA",
+   "fontes": "portal; N10",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S33",
+   "nome": "% de servidores capacitados em AIR/ARR",
+   "automacao": "C",
+   "metodo": "dado interno — pedido via LAI (N12)",
+   "fontes": "N12",
+   "frequencia": "anual"
+  },
+  {
+   "id": "S34",
+   "nome": "Evidência de melhoria contínua (revisão do próprio processo)",
+   "automacao": "C",
+   "metodo": "relatórios de revisão do processo; leitura humana",
+   "fontes": "portal; N09; N10",
+   "frequencia": "anual"
+  }
+ ],
+ "mapa": [
+  {
+   "condicao": "AIR_CAP.MC.I",
+   "critério": "AIR_CAP",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "AIR!A3",
+   "texto": "Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em técnicas de AIR;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.GER.I",
+   "critério": "AIR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "AIR!B3",
+   "texto": "Capacitações em AIR estão institucionalizadas, sem um plano formalizado;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.INI.I",
+   "critério": "AIR_CAP",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "AIR!C3",
+   "texto": "Capacitações em AIR não estão institucionalizadas;",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "AIR_CAP.MC.II",
+   "critério": "AIR_CAP",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "AIR!A4",
+   "texto": "no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.GER.II",
+   "critério": "AIR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "AIR!B4",
+   "texto": "no mínimo 75% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 2020;",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "AIR_CAP.INI.II",
+   "critério": "AIR_CAP",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "AIR!C4",
+   "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível básico, ou seja, capazes de reconhecer o objetivo de uma AIR, bem como nomear as etapas de uma AIR e possibilidades de dispensa e não aplicabilidade, nos termos no Decreto nº 10.411, de 30 de junho de 2020;",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "AIR_CAP.MC.III",
+   "critério": "AIR_CAP",
+   "nivel": "melhoria_continua",
+   "ordem": "III",
+   "celula_planilha": "AIR!A5",
+   "texto": "no mínimo 50% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.GER.III",
+   "critério": "AIR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "III",
+   "celula_planilha": "AIR!B5",
+   "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.INI.III",
+   "critério": "AIR_CAP",
+   "nivel": "inicial",
+   "ordem": "III",
+   "celula_planilha": "AIR!C5",
+   "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível intermediário, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida.",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_CAP.GER.IV",
+   "critério": "AIR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "IV",
+   "celula_planilha": "AIR!B6",
+   "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em nível avançado, ou seja, capazes de desenvolver as etapas de mapeamento do problema (incluindo atores, objetivos e base legal), levantamento de alternativas, análises qualitativas e quantitativas dos impactos das alternativas e elaboração do plano de implementação da alternativa sugerida (incluindo avaliação de riscos).",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_MET.MC.I",
+   "critério": "AIR_MET",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "AIR!A8",
+   "texto": "Critérios objetivos estabelecidos para classificação quanto ao nível de impacto e complexidade da AIR;",
+   "sinais": [
+    "S09"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_MET.GER.I",
+   "critério": "AIR_MET",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "AIR!B8",
+   "texto": "Existência de manual ou ato normativo interno instituindo a aplicabilidade institucional da AIR;",
+   "sinais": [
+    "S09"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_MET.INI.I",
+   "critério": "AIR_MET",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "AIR!C8",
+   "texto": "houve a publicação de normativo interno dispondo sobre a aplicação da AIR na instituição, conforme Decreto nº 10.411, de 2020.",
+   "sinais": [
+    "S09"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_MET.MC.II",
+   "critério": "AIR_MET",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "AIR!A9",
+   "texto": "Metodologia contempla participação social prévia e posterior à elaboração da AIR, conforme complexidade do ato.",
+   "sinais": [
+    "S12",
+    "S09"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_MET.GER.II",
+   "critério": "AIR_MET",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "AIR!B9",
+   "texto": "Existência de manual ou ato normativo dispondo sobre a participação social posterior relativa à AIR.",
+   "sinais": [
+    "S12",
+    "S09"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_PRO.MC.I",
+   "critério": "AIR_PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "AIR!A11",
+   "texto": "Há processo contínuo de avaliação e melhoria do processo de elaboração de AIR;",
+   "sinais": [
+    "S11"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_PRO.GER.I",
+   "critério": "AIR_PRO",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "AIR!B11",
+   "texto": "Todas as AIRs são sempre realizadas conforme manual ou ato normativo interno e publicadas e acessíveis ao público na internet;",
+   "sinais": [
+    "S07",
+    "S08"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_PRO.INI.I",
+   "critério": "AIR_PRO",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "AIR!C11",
+   "texto": "AIR é sempre realizada e a dispensa justificada, conforme critérios objetivos estabelecidos, conforme Decreto nº 10.411, de 2020;",
+   "sinais": [
+    "S10"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_PRO.MC.II",
+   "critério": "AIR_PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "AIR!A12",
+   "texto": "Existência de instrumento de avaliação de qualidade das AIRs realizadas;",
+   "sinais": [
+    "S11"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_PRO.GER.II",
+   "critério": "AIR_PRO",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "AIR!B12",
+   "texto": "O processo de elaboração de AIR está mapeado na instituição;",
+   "sinais": [
+    "S29"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_PRO.INI.II",
+   "critério": "AIR_PRO",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "AIR!C12",
+   "texto": "Todas as AIRs são publicadas e acessíveis ao público na internet;",
+   "sinais": [
+    "S07",
+    "S08"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AIR_PRO.MC.III",
+   "critério": "AIR_PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "III",
+   "celula_planilha": "AIR!A13",
+   "texto": "As AIRs de alto impacto/alta complexidade são submetidas à participação social prévia e posterior.",
+   "sinais": [
+    "S12"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_PRO.GER.III",
+   "critério": "AIR_PRO",
+   "nivel": "gerenciado",
+   "ordem": "III",
+   "celula_planilha": "AIR!B13",
+   "texto": "As AIRs são objeto de participação social posterior, conforme decisão técnica.",
+   "sinais": [
+    "S12"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AIR_PRO.INI.III",
+   "critério": "AIR_PRO",
+   "nivel": "inicial",
+   "ordem": "III",
+   "celula_planilha": "AIR!C13",
+   "texto": "Participação Social é realizada, conforme Decreto nº 10.411, de 2020.",
+   "sinais": [
+    "S12"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PS.MC.I",
+   "critério": "PS",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "PS!A2",
+   "texto": "A instituição realiza eventos de participação social para a construção do conhecimento sobre dada matéria e para o desenvolvimento de propostas;",
+   "sinais": [
+    "S18",
+    "S20"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PS.GER.I",
+   "critério": "PS",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "PS!B2",
+   "texto": "Existência de manual ou ato normativo interno instituindo metodologia e procedimento de participação social;",
+   "sinais": [
+    "S21"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PS.INI.I",
+   "critério": "PS",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "PS!C2",
+   "texto": "existe dispositivo interno orientando a participação social conforme disposto na legislação específica vigente, tais como as Leis nº 13.848, de 25 de junho de 2019 e nº 13.874, de 20 de setembro de 2019 e o Decreto nº 10.411, de 2020.",
+   "sinais": [
+    "S21"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PS.MC.II",
+   "critério": "PS",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "PS!A3",
+   "texto": "Relatórios da Ouvidoria, relatórios do portal consumidor.gov, pesquisas de satisfação e dados de atendimento são utilizados para subsidiar as decisões regulatórias;",
+   "sinais": [
+    "S22"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "PS.GER.II",
+   "critério": "PS",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "PS!B3",
+   "texto": "Os relatórios da Ouvidoria e os relatórios do portal consumidor.gov são utilizados para subsidiar as decisões regulatórias;",
+   "sinais": [
+    "S22"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "PS.MC.III",
+   "critério": "PS",
+   "nivel": "melhoria_continua",
+   "ordem": "III",
+   "celula_planilha": "PS!A4",
+   "texto": "Todos os instrumentos, processos e relatórios contendo as contribuições analisadas são divulgados no portal do órgão e/ou plataforma Participa Mais Brasil;",
+   "sinais": [
+    "S19"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PS.GER.III",
+   "critério": "PS",
+   "nivel": "gerenciado",
+   "ordem": "III",
+   "celula_planilha": "PS!B4",
+   "texto": "Todas as informações relativas aos processos em andamento são divulgadas no portal do órgão e/ou plataforma Participa Mais Brasil;",
+   "sinais": [
+    "S19"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PS.MC.IV",
+   "critério": "PS",
+   "nivel": "melhoria_continua",
+   "ordem": "IV",
+   "celula_planilha": "PS!A5",
+   "texto": "A efetividade do evento de participação social é mensurada, conforme metodologia instituída.",
+   "sinais": [
+    "S21"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PS.GER.IV",
+   "critério": "PS",
+   "nivel": "gerenciado",
+   "ordem": "IV",
+   "celula_planilha": "PS!B5",
+   "texto": "A efetividade do evento de participação social é avaliada de forma intuitiva.",
+   "sinais": [
+    "S23"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "EST.MC.I",
+   "critério": "EST",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "Estoque!A2",
+   "texto": "As alterações do estoque regulatório da instituição são priorizadas por meio de uma agenda regulatória;",
+   "sinais": [
+    "S01",
+    "S24"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "EST.GER.I",
+   "critério": "EST",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "Estoque!B2",
+   "texto": "Normas publicadas e disponíveis de maneira sistematizada para consulta pública no portal gov.br;",
+   "sinais": [
+    "S24",
+    "S25"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "EST.INI.I",
+   "critério": "EST",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "Estoque!C2",
+   "texto": "Normas publicadas e disponíveis de maneira sistematizada para consulta pública na internet;",
+   "sinais": [
+    "S24",
+    "S25"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "EST.MC.II",
+   "critério": "EST",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "Estoque!A3",
+   "texto": "Todas as novas normas passam pela análise de consolidação e compatibilização de normas vigentes.",
+   "sinais": [
+    "S24"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "EST.GER.II",
+   "critério": "EST",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "Estoque!B3",
+   "texto": "Foi realizado levantamento quantitativo de todas as normas do órgão, bem como análise qualitativa, indexação e classificação por tema;",
+   "sinais": [
+    "S26"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "EST.INI.II",
+   "critério": "EST",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "Estoque!C3",
+   "texto": "Foi realizado levantamento quantitativo de todas as normas do órgão.",
+   "sinais": [
+    "S25"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "EST.GER.III",
+   "critério": "EST",
+   "nivel": "gerenciado",
+   "ordem": "III",
+   "celula_planilha": "Estoque!B4",
+   "texto": "Para toda a nova norma de alto impacto/alta complexidade foi estimado o fardo regulatório; e",
+   "sinais": [
+    "S28"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "EST.GER.IV",
+   "critério": "EST",
+   "nivel": "gerenciado",
+   "ordem": "IV",
+   "celula_planilha": "Estoque!B5",
+   "texto": "Existe manutenção da consolidação normativa, conforme art. 19 do Decreto nº 10.139, de 28 de novembro de 2019.",
+   "sinais": [
+    "S24"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.MC.I",
+   "critério": "AGE",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "Agenda!A2",
+   "texto": "A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, respondida e divulgada;",
+   "sinais": [
+    "S03"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.GER.I",
+   "critério": "AGE",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "Agenda!B2",
+   "texto": "A elaboração da agenda regulatória tem ampla participação social, a qual é analisada, porém não respondida e divulgada;",
+   "sinais": [
+    "S03"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.INI.I",
+   "critério": "AGE",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "Agenda!C2",
+   "texto": "Os temas da agenda regulatória são elencados e priorizados pelos gestores da agência;",
+   "sinais": [
+    "S01",
+    "S02"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.MC.II",
+   "critério": "AGE",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "Agenda!A3",
+   "texto": "Os projetos da Agenda Regulatória estão aderentes ao planejamento estratégico vigente e estão correlacionados ao Plano de Gestão Anual;",
+   "sinais": [
+    "S06"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AGE.GER.II",
+   "critério": "AGE",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "Agenda!B3",
+   "texto": "O Ministério Setorial é oficiado, por meio do Ministro e da Secretaria Finalística, quando da abertura do processo de participação social. O Ministério deve oficiar as agências reguladoras vinculadas, visando a integração das agendas;",
+   "sinais": [
+    "S03"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.INI.II",
+   "critério": "AGE",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "Agenda!C3",
+   "texto": "É avaliada a aderência da proposta de Agenda às políticas públicas.",
+   "sinais": [
+    "S01",
+    "S02"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "AGE.MC.III",
+   "critério": "AGE",
+   "nivel": "melhoria_continua",
+   "ordem": "III",
+   "celula_planilha": "Agenda!A4",
+   "texto": "Cumprimento de, no mínimo, 80% da Agenda Regulatória;",
+   "sinais": [
+    "S04"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AGE.GER.III",
+   "critério": "AGE",
+   "nivel": "gerenciado",
+   "ordem": "III",
+   "celula_planilha": "Agenda!B4",
+   "texto": "Cumprimento de 50% a 79% da Agenda Regulatória;",
+   "sinais": [
+    "S04"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AGE.MC.IV",
+   "critério": "AGE",
+   "nivel": "melhoria_continua",
+   "ordem": "IV",
+   "celula_planilha": "Agenda!A5",
+   "texto": "A execução da Agenda Regulatória é periodicamente monitorada e divulgada.",
+   "sinais": [
+    "S04"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "AGE.GER.IV",
+   "critério": "AGE",
+   "nivel": "gerenciado",
+   "ordem": "IV",
+   "celula_planilha": "Agenda!B5",
+   "texto": "A execução da Agenda Regulatória é periodicamente monitorada.",
+   "sinais": [
+    "S04"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PRO.MC.I",
+   "critério": "PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "Processo!A2",
+   "texto": "Indicadores de processo normativo estabelecidos e monitorados;",
+   "sinais": [
+    "S30",
+    "S34"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PRO.GER.I",
+   "critério": "PRO",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "Processo!B2",
+   "texto": "as intervenções de participação social estão claramente inseridas no processo.",
+   "sinais": [
+    "S29"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PRO.INI.I",
+   "critério": "PRO",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "Processo!C2",
+   "texto": "O fluxo do processo normativo é formalizado de forma bem definida e clara;",
+   "sinais": [
+    "S29"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "PRO.MC.II",
+   "critério": "PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "Processo!A3",
+   "texto": "Há processo contínuo de avaliação e melhoria do processo normativo, utilizando o resultado dos indicadores.",
+   "sinais": [
+    "S30",
+    "S34"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "PRO.INI.II",
+   "critério": "PRO",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "Processo!C3",
+   "texto": "As instâncias de aprovação estabelecidas são claras e formalizadas.",
+   "sinais": [
+    "S31"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_CAP.MC.I",
+   "critério": "ARR_CAP",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "ARR!A3",
+   "texto": "Plano de capacitação formalizado e em execução, incluindo permanente reciclagem em ARR;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "ARR_CAP.GER.I",
+   "critério": "ARR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "ARR!B3",
+   "texto": "Capacitações institucionalizadas, sem um plano formalizado;",
+   "sinais": [
+    "S33",
+    "S32"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "ARR_CAP.INI.I",
+   "critério": "ARR_CAP",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "ARR!C3",
+   "texto": "Capacitações não estão institucionalizadas;",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "ARR_CAP.MC.II",
+   "critério": "ARR_CAP",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "ARR!A4",
+   "texto": "No mínimo, 75% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "ARR_CAP.GER.II",
+   "critério": "ARR_CAP",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "ARR!B4",
+   "texto": "de 50% a 74% dos servidores envolvidos em elaboração de regulação capacitados em ARR;",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "ARR_CAP.INI.II",
+   "critério": "ARR_CAP",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "ARR!C4",
+   "texto": "de 25% a 49% dos servidores envolvidos em elaboração de regulação capacitados em ARR.",
+   "sinais": [
+    "S33"
+   ],
+   "grau": "C"
+  },
+  {
+   "condicao": "ARR_MET.MC.I",
+   "critério": "ARR_MET",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "ARR!A6",
+   "texto": "Metodologia de elaboração de ARR contempla a participação social, conforme complexidade do ato;",
+   "sinais": [
+    "S16"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_MET.GER.I",
+   "critério": "ARR_MET",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "ARR!B6",
+   "texto": "Existência de manual ou ato normativo instituindo a aplicabilidade de ARR no órgão;",
+   "sinais": [
+    "S15"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_MET.INI.I",
+   "critério": "ARR_MET",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "ARR!C6",
+   "texto": "existe Agenda de ARR, conforme determinado no Decreto nº 10.411, de 2020.",
+   "sinais": [
+    "S13"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_MET.MC.II",
+   "critério": "ARR_MET",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "ARR!A7",
+   "texto": "Existência de Agenda de ARR integrada com a Agenda Regulatória.",
+   "sinais": [
+    "S13"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_MET.GER.II",
+   "critério": "ARR_MET",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "ARR!B7",
+   "texto": "Metodologia de elaboração da Agenda de ARR contempla participação social.",
+   "sinais": [
+    "S16"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_PRO.MC.I",
+   "critério": "ARR_PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "I",
+   "celula_planilha": "ARR!A9",
+   "texto": "Há processo contínuo de avaliação e melhoria do processo de elaboração de ARR;",
+   "sinais": [
+    "S17"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "ARR_PRO.GER.I",
+   "critério": "ARR_PRO",
+   "nivel": "gerenciado",
+   "ordem": "I",
+   "celula_planilha": "ARR!B9",
+   "texto": "ARR é realizada conforme manual ou ato normativo;",
+   "sinais": [
+    "S14"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_PRO.INI.I",
+   "critério": "ARR_PRO",
+   "nivel": "inicial",
+   "ordem": "I",
+   "celula_planilha": "ARR!C9",
+   "texto": "Todas as ARRs são publicadas e acessíveis ao público na internet;",
+   "sinais": [
+    "S14"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_PRO.MC.II",
+   "critério": "ARR_PRO",
+   "nivel": "melhoria_continua",
+   "ordem": "II",
+   "celula_planilha": "ARR!A10",
+   "texto": "A execução da Agenda de ARR é periodicamente monitorada e divulgada.",
+   "sinais": [
+    "S17"
+   ],
+   "grau": "B"
+  },
+  {
+   "condicao": "ARR_PRO.GER.II",
+   "critério": "ARR_PRO",
+   "nivel": "gerenciado",
+   "ordem": "II",
+   "celula_planilha": "ARR!B10",
+   "texto": "ARRs de alto impacto/alta complexidade foram submetidas à participação social.",
+   "sinais": [
+    "S14",
+    "S16"
+   ],
+   "grau": "A"
+  },
+  {
+   "condicao": "ARR_PRO.INI.II",
+   "critério": "ARR_PRO",
+   "nivel": "inicial",
+   "ordem": "II",
+   "celula_planilha": "ARR!C10",
+   "texto": "A agenda de ARR está publicada no site do órgão.",
+   "sinais": [
+    "S13"
+   ],
+   "grau": "A"
+  }
+ ],
+ "monitor": [
+  {
+   "agencia": "ANATEL",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-divulga-metodologia-para-avaliar-a-qualidade-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://informacoes.anatel.gov.br/legislacao/component/content/article/149-resolucoes-internas/1511-resolucao-interna-8",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "IQR — Índice de Qualidade Regulatória das AIR (piloto: 18 relatórios, média 72,5%)",
+   "painel": "Painel de normas (publicadas/revogadas/vigentes)"
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-divulga-metodologia-para-avaliar-a-qualidade-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://informacoes.anatel.gov.br/legislacao/component/content/article/149-resolucoes-internas/1511-resolucao-interna-8",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "IQR — Índice de Qualidade Regulatória das AIR (piloto: 18 relatórios, média 72,5%)",
+   "painel": "Painel de normas (publicadas/revogadas/vigentes)"
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://apps.anatel.gov.br/ParticipaAnatel/Home.aspx",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Participa Anatel (própria)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/revisao-e-consolidacao-de-atos-normativos",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/simplificacao-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://informacoes.anatel.gov.br/legislacao",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel de normas (publicadas/revogadas/vigentes)"
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/2025-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "IQR — Índice de Qualidade Regulatória das AIR (piloto: 18 relatórios, média 72,5%)",
+   "painel": "Painel de normas (publicadas/revogadas/vigentes)"
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://informacoes.anatel.gov.br/legislacao/component/content/article/149-resolucoes-internas/1511-resolucao-interna-8",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-publica-relatorio-de-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANATEL",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-publica-relatorio-de-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/air/saiba-mais",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Informe de resultados e monitoramento trimestral da agenda; RAPS (relatório de análise de participação social)",
+   "painel": "Painel diário de acompanhamento da agenda"
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/air/saiba-mais",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Informe de resultados e monitoramento trimestral da agenda; RAPS (relatório de análise de participação social)",
+   "painel": "Painel diário de acompanhamento da agenda"
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/acessoainformacao/participacaosocial",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://brasilparticipativo.presidencia.gov.br/processes/Participa-anvisa",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Brasil Participativo + páginas próprias",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://anvisalegis.datalegis.net",
+     "status": "padrão provável (não verificado)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel diário de acompanhamento da agenda"
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/agenda-2024-2025/construcao-da-agenda-2024-2025",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Informe de resultados e monitoramento trimestral da agenda; RAPS (relatório de análise de participação social)",
+   "painel": "Painel diário de acompanhamento da agenda"
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/avaliacao-do-resultado-regulatorio/saiba-mais",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANVISA",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/avaliacao-do-resultado-regulatorio/saiba-mais",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/instrumentos-regulatorios/analise-de-impacto-regulatorio/air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.aneel.gov.br/impacto-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "ICPN — Índice de Conformidade do Processo Normativo",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/instrumentos-regulatorios/analise-de-impacto-regulatorio/air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.aneel.gov.br/impacto-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "ICPN — Índice de Conformidade do Processo Normativo",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://dadosabertos.aneel.gov.br/dataset/audiencias-e-consultas-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Própria + dataset aberto (CSV, trimestral)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2024/consolidacao-do-estoque-regulatorio-da-aneel-entra-em-discussao",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://biblioteca.aneel.gov.br/index.html",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria/2025-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "ICPN — Índice de Conformidade do Processo Normativo",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www2.aneel.gov.br/cedoc/ren2021941.html",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANEEL",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "ICAR — Índice de Cumprimento da Agenda Regulatória (painel público)",
+   "painel": "Painel da Agenda 2025-2026; painel de AIR (pós-Decreto 10.411)"
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "ICAR — Índice de Cumprimento da Agenda Regulatória (painel público)",
+   "painel": "Painel da Agenda 2025-2026; painel de AIR (pós-Decreto 10.411)"
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/consulta-publica",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/audiencia-publica",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/participamaisbrasil/agencia-nacional-de-transportes-terrestres",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "ParticipANTT (própria) + Participa + Brasil",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/governanca/gestao-do-estoque-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://anttlegis.antt.gov.br",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel da Agenda 2025-2026; painel de AIR (pós-Decreto 10.411)"
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/painel-de-acompanhamento-da-agenda-regulatoria-antt-2025-2026-ja-esta-disponivel",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "ICAR — Índice de Cumprimento da Agenda Regulatória (painel público)",
+   "painel": "Painel da Agenda 2025-2026; painel de AIR (pós-Decreto 10.411)"
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/documentos-orientativos-da-agenda-regulatoria/MANUALDEPROCEDIMENTOSDAAGENDAREGULATRIAaprovado1.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTT",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/analise-de-impacto-regulatorio-2013-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "Painel Interativo do Estoque Regulatório"
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/analise-de-impacto-regulatorio-2013-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "Painel Interativo do Estoque Regulatório"
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/participamaisbrasil/dir-anac",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Própria (consultas CP nn/AAAA com anexo de AIR)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/gestao-do-estoque-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel Interativo do Estoque Regulatório"
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/agenda-regulatoria/agenda-regulatoria-2025-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://dados.gov.br/dataset/regulamentacao-agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "Painel Interativo do Estoque Regulatório"
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/instrucoes-normativas/2020/instrucao-normativa-no-154-20-03-2020",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANAC",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://juris.antaq.gov.br/index.php/tag/analise-de-impacto-regulatorio-air/",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air-3",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Boletim mensal da agenda; Plano Anual de Governança Regulatória",
+   "painel": "Painel de AIR e ARR (atualização mensal prevista)"
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://juris.antaq.gov.br/index.php/tag/analise-de-impacto-regulatorio-air/",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air-3",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Boletim mensal da agenda; Plano Anual de Governança Regulatória",
+   "painel": "Painel de AIR e ARR (atualização mensal prevista)"
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Própria (audiências/consultas por número/ano)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://juris.antaq.gov.br",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel de AIR e ARR (atualização mensal prevista)"
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria-ar/14.BoletimAR20252028fevereiro26.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Boletim mensal da agenda; Plano Anual de Governança Regulatória",
+   "painel": "Painel de AIR e ARR (atualização mensal prevista)"
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/PlanoAnualdeGovernanaRegulatria2026191125_documento.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://juris.antaq.gov.br/index.php/tag/avaliacao-de-resultado-regulatorio-arr/",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/PlanoAnualdeGovernanaRegulatria2026191125_documento.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANTAQ",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://juris.antaq.gov.br/index.php/tag/avaliacao-de-resultado-regulatorio-arr/",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/PlanoAnualdeGovernanaRegulatria2026191125_documento.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/assuntos/analise-de-impacto-regulatorio-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Painel dinâmico da agenda (via SEI)",
+   "painel": "Painel Dinâmico da Agenda Regulatória"
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/assuntos/analise-de-impacto-regulatorio-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Painel dinâmico da agenda (via SEI)",
+   "painel": "Painel Dinâmico da Agenda Regulatória"
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/assuntos/consultas-e-audiencias-publicas",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://brasilparticipativo.presidencia.gov.br/processes/ANP-13-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Brasil Participativo + página própria",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel Dinâmico da Agenda Regulatória"
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/ar/ar-2025-2026-rev-set.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Painel dinâmico da agenda (via SEI)",
+   "painel": "Painel Dinâmico da Agenda Regulatória"
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/arq/manual-boas-praticas-regulatorias.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/plano-de-gestao-anual",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/agenda-de-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANP",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/agenda-de-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/air-realizadas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/iqair/relatorio-resultados-2020-2024-final.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "IQAIR — Indicador de Qualidade das AIR (média 89 em 2023, escala 0–100)",
+   "painel": "Painel de monitoramento da agenda"
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/air-realizadas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/iqair/relatorio-resultados-2020-2024-final.pdf",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "IQAIR — Indicador de Qualidade das AIR (média 89 em 2023, escala 0–100)",
+   "painel": "Painel de monitoramento da agenda"
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://participacao-social.ana.gov.br",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Sistema de Participação Social nas Decisões da ANA (próprio)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/legislacao/resolucoes/resolucoes-regulatorias",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel de monitoramento da agenda"
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "IQAIR — Indicador de Qualidade das AIR (média 89 em 2023, escala 0–100)",
+   "painel": "Painel de monitoramento da agenda"
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/programa-de-qualidade-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/monitoramento-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANA",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/monitoramento-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/governanca-regulatoria/copy_of_analise-de-impacto-regulatorio-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/governanca-regulatoria/copy_of_analise-de-impacto-regulatorio-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/consultas-publicas-em-andamento",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.ans.gov.br/participacao-da-sociedade/consultas-e-participacoes-publicas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Própria (formulário no portal)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/ans",
+     "status": "padrão provável (não verificado)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "—",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://bvsms.saude.gov.br/bvs/saudelegis/ans/2021/res0071_17_06_2021.html",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/plano-de-gestao-anual",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/agenda-de-avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANS",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/agenda-de-avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air/relatorios-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Selo de Boas Práticas Regulatórias (critérios: AIR, participação social, custos)",
+   "painel": "Painel de projetos da agenda"
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air/relatorios-air",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Selo de Boas Práticas Regulatórias (critérios: AIR, participação social, custos)",
+   "painel": "Painel de projetos da agenda"
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/audiencias-publicas",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/participamaisbrasil/agencia-nacional-de-mineracao",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Brasil Participativo",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "Painel de projetos da agenda"
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/governanca-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/participamaisbrasil/agenda-regulatoria-anm",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Selo de Boas Práticas Regulatórias (critérios: AIR, participação social, custos)",
+   "painel": "Painel de projetos da agenda"
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-lanca-manual-e-cartilha-sobre-processos-de-participacao-e-controle-social",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-ganha-selo-de-boas-praticas-regulatorias",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria/agenda-e-relatorios-de-arr/agenda-arr_2023-a-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANM",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria/agenda-e-relatorios-de-arr/agenda-arr_2023-a-2026",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/analise-de-impacto-regulatorio-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Relatório de cumprimento da agenda (por biênio)",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/analise-de-impacto-regulatorio-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Relatório de cumprimento da agenda (por biênio)",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social-novo/consultas-publicas-da-ancine",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social/consulta-publica/encerradas",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Participa + Brasil / Brasil Participativo",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-regulatoria",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Relatório de cumprimento da agenda (por biênio)",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/institucional/competencias/plano-de-gestao-anual",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-de-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANCINE",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-de-arr",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "AIR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "AIR_MET",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/analise-de-impacto-regulatorio-1",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Balanço semestral da agenda",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "AIR_PRO",
+   "chave": "AIR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/analise-de-impacto-regulatorio-1",
+     "status": "inferida do caminho de arquivo encontrado",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "análise de impacto regulatório relatórios",
+   "plataforma_ps": "",
+   "metrica_propria": "Balanço semestral da agenda",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "PS",
+   "chave": "PS",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/consultas_a_sociedade",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    },
+    {
+     "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/participacao-social",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "consultas públicas audiências participação social",
+   "plataforma_ps": "Brasil Participativo (antes Participa + Brasil)",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "EST",
+   "chave": "EST",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "estoque regulatório consolidação normativa",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "AGE",
+   "chave": "AGE",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/agenda-regulatoria-1",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "agenda regulatória",
+   "plataforma_ps": "",
+   "metrica_propria": "Balanço semestral da agenda",
+   "painel": "—"
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "PRO",
+   "chave": "PRO",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "a descobrir",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "processo normativo manual regimento",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "ARR_CAP",
+   "chave": "CAP",
+   "fontes": [
+    {
+     "url": "a descobrir",
+     "status": "dado interno — via LAI (N12); PGA/relatório de gestão podem citar o plano",
+     "tipo": "interno"
+    }
+   ],
+   "busca": "plano de desenvolvimento de pessoas capacitação regulação",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "ARR_MET",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  },
+  {
+   "agencia": "ANPD",
+   "criterio": "ARR_PRO",
+   "chave": "ARR",
+   "fontes": [
+    {
+     "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio",
+     "status": "encontrada em busca (2026-10-09)",
+     "tipo": "externo"
+    }
+   ],
+   "busca": "avaliação de resultado regulatório agenda",
+   "plataforma_ps": "",
+   "metrica_propria": "",
+   "painel": ""
+  }
+ ],
+ "agencias": [
+  {
+   "sigla": "ANATEL",
+   "nome": "Agência Nacional de Telecomunicações",
+   "lei": "Lei 9.472/1997",
+   "plataforma_ps": "Participa Anatel (própria)",
+   "metrica_propria": "IQR — Índice de Qualidade Regulatória das AIR (piloto: 18 relatórios, média 72,5%)",
+   "painel": "Painel de normas (publicadas/revogadas/vigentes)"
+  },
+  {
+   "sigla": "ANVISA",
+   "nome": "Agência Nacional de Vigilância Sanitária",
+   "lei": "Lei 9.782/1999",
+   "plataforma_ps": "Brasil Participativo + páginas próprias",
+   "metrica_propria": "Informe de resultados e monitoramento trimestral da agenda; RAPS (relatório de análise de participação social)",
+   "painel": "Painel diário de acompanhamento da agenda"
+  },
+  {
+   "sigla": "ANEEL",
+   "nome": "Agência Nacional de Energia Elétrica",
+   "lei": "Lei 9.427/1996",
+   "plataforma_ps": "Própria + dataset aberto (CSV, trimestral)",
+   "metrica_propria": "ICPN — Índice de Conformidade do Processo Normativo",
+   "painel": "—"
+  },
+  {
+   "sigla": "ANTT",
+   "nome": "Agência Nacional de Transportes Terrestres",
+   "lei": "Lei 10.233/2001",
+   "plataforma_ps": "ParticipANTT (própria) + Participa + Brasil",
+   "metrica_propria": "ICAR — Índice de Cumprimento da Agenda Regulatória (painel público)",
+   "painel": "Painel da Agenda 2025-2026; painel de AIR (pós-Decreto 10.411)"
+  },
+  {
+   "sigla": "ANAC",
+   "nome": "Agência Nacional de Aviação Civil",
+   "lei": "Lei 11.182/2005",
+   "plataforma_ps": "Própria (consultas CP nn/AAAA com anexo de AIR)",
+   "metrica_propria": "—",
+   "painel": "Painel Interativo do Estoque Regulatório"
+  },
+  {
+   "sigla": "ANTAQ",
+   "nome": "Agência Nacional de Transportes Aquaviários",
+   "lei": "Lei 10.233/2001",
+   "plataforma_ps": "Própria (audiências/consultas por número/ano)",
+   "metrica_propria": "Boletim mensal da agenda; Plano Anual de Governança Regulatória",
+   "painel": "Painel de AIR e ARR (atualização mensal prevista)"
+  },
+  {
+   "sigla": "ANP",
+   "nome": "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "lei": "Lei 9.478/1997",
+   "plataforma_ps": "Brasil Participativo + página própria",
+   "metrica_propria": "Painel dinâmico da agenda (via SEI)",
+   "painel": "Painel Dinâmico da Agenda Regulatória"
+  },
+  {
+   "sigla": "ANA",
+   "nome": "Agência Nacional de Águas e Saneamento Básico",
+   "lei": "Lei 9.984/2000",
+   "plataforma_ps": "Sistema de Participação Social nas Decisões da ANA (próprio)",
+   "metrica_propria": "IQAIR — Indicador de Qualidade das AIR (média 89 em 2023, escala 0–100)",
+   "painel": "Painel de monitoramento da agenda"
+  },
+  {
+   "sigla": "ANS",
+   "nome": "Agência Nacional de Saúde Suplementar",
+   "lei": "Lei 9.961/2000",
+   "plataforma_ps": "Própria (formulário no portal)",
+   "metrica_propria": "—",
+   "painel": "—"
+  },
+  {
+   "sigla": "ANM",
+   "nome": "Agência Nacional de Mineração",
+   "lei": "Lei 13.575/2017",
+   "plataforma_ps": "Brasil Participativo",
+   "metrica_propria": "Selo de Boas Práticas Regulatórias (critérios: AIR, participação social, custos)",
+   "painel": "Painel de projetos da agenda"
+  },
+  {
+   "sigla": "ANCINE",
+   "nome": "Agência Nacional do Cinema",
+   "lei": "MP 2.228-1/2001",
+   "plataforma_ps": "Participa + Brasil / Brasil Participativo",
+   "metrica_propria": "Relatório de cumprimento da agenda (por biênio)",
+   "painel": "—"
+  },
+  {
+   "sigla": "ANPD",
+   "nome": "Autoridade Nacional de Proteção de Dados",
+   "lei": "Lei 13.709/2018 (LGPD), art. 55-A",
+   "plataforma_ps": "Brasil Participativo (antes Participa + Brasil)",
+   "metrica_propria": "Balanço semestral da agenda",
+   "painel": "—"
+  }
+ ]
+}

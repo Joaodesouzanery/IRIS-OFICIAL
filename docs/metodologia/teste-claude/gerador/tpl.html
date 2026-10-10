@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IMQN — Qualidade Regulatória (protótipo)</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1b2430;--mut:#667085;--bd:#e1e5ea;--br:#1f3a5f;--ok:#1a7f4b;--no:#b42318;--q:#b54708}
+@media (prefers-color-scheme:dark){:root{--bg:#10151c;--card:#182029;--tx:#e8edf3;--mut:#9aa7b6;--bd:#2a3541;--br:#7fb0ef;--ok:#4ac98a;--no:#ff8a80;--q:#f5b355}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,sans-serif}
+header{padding:18px 16px 0;max-width:1100px;margin:auto}h1{font-size:20px;margin:0 0 4px}.sub{color:var(--mut);font-size:13px}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin:14px 0 0;border-bottom:1px solid var(--bd)}nav button{background:none;border:0;padding:9px 14px;color:var(--mut);cursor:pointer;font:inherit;border-bottom:2px solid transparent}nav button.on{color:var(--br);border-color:var(--br);font-weight:600}
+main{max-width:1100px;margin:auto;padding:16px}.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-bottom:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:7px 8px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600;font-size:12px}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:8px;border-radius:4px;background:var(--bd);overflow:hidden;min-width:70px}.bar i{display:block;height:100%;background:var(--br)}
+select,input{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:5px 7px}input[type=url]{width:100%}
+.pill{font-size:11px;padding:2px 7px;border-radius:9px;border:1px solid var(--bd);color:var(--mut)}.lv{font-weight:600;margin:14px 0 4px}
+.warn{background:color-mix(in srgb,var(--q) 14%,var(--card));border-color:var(--q);font-size:13px}.row{display:grid;grid-template-columns:1fr 92px;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
+.row .ev{grid-column:1/-1;display:grid;grid-template-columns:1fr 130px;gap:8px}.kpi{display:flex;gap:18px;flex-wrap:wrap}.kpi b{font-size:24px;display:block}
+button.act{background:var(--br);color:var(--bg);border:0;border-radius:6px;padding:7px 12px;font:inherit;cursor:pointer}
+@media(max-width:600px){.row{grid-template-columns:1fr}.row .ev{grid-template-columns:1fr}}
+</style></head><body>
+<header><h1>IMQN — Qualidade Regulatória das 12 agências</h1>
+<div class="sub">Protótipo da futura aba · matriz rev2022 (INFRA Competitividade) · avalia instituições, nunca pessoas · respostas ficam só neste navegador</div>
+<nav id="nav"></nav></header><main id="m"></main>
+<script>
+const D=__DATA__;
+const NL={inicial:'Inicial',gerenciado:'Gerenciado',melhoria_continua:'Melhoria Contínua'},NK=['inicial','gerenciado','melhoria_continua'];
+let S={};try{S=JSON.parse(localStorage.getItem('imqn')||'{}')}catch(e){}
+function save(){try{localStorage.setItem('imqn',JSON.stringify(S))}catch(e){}}
+const get=(a,c)=>(S[a]&&S[a][c])||{r:'',u:'',s:'pendente'};
+function set(a,c,p){S[a]=S[a]||{};S[a][c]={...get(a,c),...p};save()}
+function cls(crit,a,mode){let b=0,prog=null;
+ const v=D.niv;let base=0,res=null;
+ for(const n of NK){const cs=D.conds.filter(x=>x.crit===crit&&x.nivel===n);
+  const ok=cs.filter(x=>{const g=get(a,x.id);return g.r==='SIM'&&(mode==='est'||(g.s==='validado'&&g.u.trim()))}).length;
+  if(ok<cs.length){res=base+(v[n]-base)*ok/cs.length;break}base=v[n]}
+ return res===null?1:res}
+function score(a,mode){const out={};let t=0;for(const d of D.dims){let s=0;for(const c of D.crits.filter(c=>c.dim===d.id))s+=c.peso*cls(c.codigo,a,mode);out[d.id]=s*d.peso;t+=out[d.id]}return{dim:out,total:t}}
+function answered(a){return D.conds.filter(c=>['SIM','NÃO'].includes(get(a.sigla,c.id).r)).length}
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+let tab='rank',ag=D.ag[0].sigla;
+const T={rank:'Ranking',ficha:'Ficha da agência',fontes:'Fontes & Monitoramento',crit:'Critérios',aud:'Como funciona'};
+const SG=Object.fromEntries(D.reg.sinais.map(s=>[s.id,s])),MP=Object.fromEntries(D.reg.mapa.map(m=>[m.condicao,m]));
+let fag='TODAS';
+function nav(){document.getElementById('nav').innerHTML=Object.entries(T).map(([k,v])=>`<button class="${k===tab?'on':''}" data-t="${k}">${v}</button>`).join('');
+ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;render()})}
+function rank(){const rows=D.ag.map(a=>({a,e:score(a.sigla,'est'),c:score(a.sigla,'comp'),n:answered(a)}));
+ rows.sort((x,y)=>y.e.total-x.e.total);
+ return `<div class="card warn">Resposta em branco é <b>sem avaliação</b>, não “não atende”. Enquanto uma agência não tiver condições respondidas, ela aparece sem posição. A nota <b>comprovada</b> exige SIM + URL de evidência + status “validado”.</div>
+ <div class="card"><table><tr><th>#</th><th>Agência</th>${D.dims.map(d=>`<th class="n" title="${esc(d.nome)}">${esc(d.nome.split(' (')[0].replace('Gestão do ','').replace('Gestão de ','').replace('Análise de ',''))}<br>(${d.peso})</th>`).join('')}<th class="n">Estimado</th><th class="n">Comprovado</th><th>Respondido</th></tr>
+ ${rows.map((r,i)=>`<tr><td>${r.n?i+1:'—'}</td><td><b>${r.a.sigla}</b><div class="sub">${esc(r.a.setor)}</div></td>${D.dims.map(d=>`<td class="n">${r.n?r.e.dim[d.id].toFixed(1):'—'}</td>`).join('')}<td class="n"><b>${r.n?r.e.total.toFixed(1):'—'}</b></td><td class="n">${r.c.total.toFixed(1)}</td><td><div class="bar"><i style="width:${r.n/D.conds.length*100}%"></i></div><span class="sub">${r.n}/${D.conds.length}</span></td></tr>`).join('')}</table></div>
+ <button class="act" id="csv">Exportar respostas (CSV)</button>`}
+function ficha(){const a=D.ag.find(x=>x.sigla===ag),e=score(ag,'est'),c=score(ag,'comp');
+ const sel=`<select id="sel">${D.ag.map(x=>`<option ${x.sigla===ag?'selected':''}>${x.sigla}</option>`).join('')}</select>`;
+ let h=`<div class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">${sel}<div><b>${esc(a.nome)}</b><div class="sub">${esc(a.lei)} · <a href="${a.url}" target="_blank" rel="noopener">portal gov.br</a></div></div></div>
+ <div class="kpi" style="margin-top:12px"><div><span class="sub">IMQN estimado</span><b>${e.total.toFixed(1)}</b></div><div><span class="sub">IMQN comprovado</span><b>${c.total.toFixed(1)}</b></div></div></div>`;
+ for(const d of D.dims){h+=`<div class="card"><b>${esc(d.nome)}</b> <span class="pill">${e.dim[d.id].toFixed(1)} / ${d.peso}</span>`;
+  for(const cr of D.crits.filter(c=>c.dim===d.id)){h+=`<div class="sub" style="margin-top:10px">${esc(cr.nome)} — classificação ${cls(cr.codigo,ag,'est').toFixed(3)} · <a target="_blank" rel="noopener" href="https://www.google.com/search?q=${encodeURIComponent('site:gov.br/'+a.slug+' "'+cr.keywords.split(';')[0].trim()+'"')}">buscar no portal</a></div>`;
+   for(const n of NK){const cs=D.conds.filter(x=>x.crit===cr.codigo&&x.nivel===n);h+=`<div class="lv">${NL[n]}</div>`;
+    for(const x of cs){const g=get(ag,x.id);const mp=MP[x.id];h+=`<div class="row"><div>${esc(x.texto)} <span class="pill">${x.verif}</span> <span class="pill" title="${mp?esc(mp.sinais.map(s=>SG[s].nome).join(' · ')):''}">monitor ${mp?mp.grau:'-'}</span><div class="sub">Origem: ${mp?esc(mp.celula_planilha):''} · sinais ${mp?mp.sinais.join(', '):''}</div></div><select data-c="${x.id}" data-f="r"><option value="">—</option>${['SIM','NÃO','?'].map(o=>`<option ${g.r===o?'selected':''}>${o}</option>`).join('')}</select>
+     <div class="ev"><input type="url" placeholder="URL da evidência" value="${esc(g.u)}" data-c="${x.id}" data-f="u"><select data-c="${x.id}" data-f="s">${['pendente','preliminar','em_revisao','validado','rejeitado'].map(o=>`<option ${g.s===o?'selected':''}>${o}</option>`).join('')}</select></div></div>`}}}
+  h+='</div>'}
+ return h}
+function fontes(){const R=D.reg,mon=R.monitor.filter(m=>fag==='TODAS'||m.agencia===fag);
+ const st=s=>s.startsWith('encontrada')?'ok':s.startsWith('inferida')||s.startsWith('padrão')?'q':'no';
+ const sel=`<select id="fsel"><option>TODAS</option>${D.ag.map(x=>`<option ${x.sigla===fag?'selected':''}>${x.sigla}</option>`).join('')}</select>`;
+ const cnt={A:0,B:0,C:0};R.mapa.forEach(m=>cnt[m.grau]++);
+ return `<div class="card warn">Nenhuma URL foi aberta por navegador: “encontrada em busca” = devolvida por mecanismo de busca em ${R.gerado_em}. Este mapa <b>não atribui nota</b>; cada sinal só sugere uma condição, sempre “pendente”. Das 73 condições: <b>${cnt.A}</b> automatizáveis por página/DOU (A), <b>${cnt.B}</b> exigem ler PDF/painel (B), <b>${cnt.C}</b> só com dado interno (C).</div>
+ <div class="card"><b>Fontes nacionais e transversais</b><table><tr><th>ID</th><th>Fonte</th><th>Cobre</th><th>Para quê</th><th>Risco</th></tr>${R.nacionais.map(f=>`<tr><td>${f.id}</td><td><a href="${f.url}" target="_blank" rel="noopener">${esc(f.nome)}</a><div class="sub">${esc(f.status)}</div></td><td>${esc(f.cobre)}</td><td>${esc(f.uso)}</td><td>${esc(f.risco)}</td></tr>`).join('')}</table></div>
+ <div class="card"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b>Monitor por agência × critério</b>${sel}</div><table><tr><th>Agência</th><th>Critério</th><th>URL a monitorar</th><th>Status</th></tr>${mon.map(m=>m.fontes.map(f=>`<tr><td>${m.agencia}</td><td>${m.criterio}</td><td>${f.url.startsWith('http')?`<a href="${f.url}" target="_blank" rel="noopener">${esc(f.url.replace('https://',''))}</a>`:esc(f.url)}${m.metrica_propria?`<div class="sub">Métrica própria: ${esc(m.metrica_propria)}</div>`:''}</td><td><span class="pill" style="color:var(--${st(f.status)})">${esc(f.status)}</span></td></tr>`).join('')).join('')}</table></div>
+ <div class="card"><b>Dicionário de sinais</b><table><tr><th>ID</th><th>Sinal</th><th>Auto.</th><th>Como detectar</th><th>Freq.</th></tr>${R.sinais.map(s=>`<tr><td>${s.id}</td><td>${esc(s.nome)}</td><td>${s.automacao}</td><td>${esc(s.metodo)}</td><td>${s.frequencia}</td></tr>`).join('')}</table></div>`}
+function crit(){return D.dims.map(d=>`<div class="card"><b>${esc(d.nome)}</b> <span class="pill">peso ${d.peso}</span>${D.crits.filter(c=>c.dim===d.id).map(c=>`<div style="margin-top:10px"><b>${esc(c.nome)}</b> <span class="pill">${c.peso*100}% da dimensão</span><div class="sub">Base legal (a conferir): ${esc(c.base)}</div><div class="sub">Termos: ${esc(c.keywords)}</div><div class="sub">Onde: ${esc(c.onde)}</div></div>`).join('')}</div>`).join('')}
+function aud(){return `<div class="card"><b>Regra de nível</b><p>Níveis cumulativos: Inexistente 0 → Inicial 0,35 → Gerenciado 0,70 → Melhoria Contínua 1,00. Nível-base = mais alto com todas as condições atendidas (e as de baixo). A fração do nível seguinte é a proporção das condições dele atendidas. Ex.: Inicial completo + 2 de 4 do Gerenciado = 0,35 + 0,35×0,5 = 0,525.</p><p>Nota da dimensão = Σ(peso do critério × classificação) × peso da dimensão. IMQN = soma das 6 dimensões (0–100).</p><p class="sub">Classificação pública/interna, perguntas e termos de busca são proposta, a validar. Detalhes e auditoria da planilha original: ver o workbook .xlsx.</p></div>`}
+function render(){nav();const m=document.getElementById('m');m.innerHTML={rank,ficha,fontes,crit,aud}[tab]();
+ const fs=document.getElementById('fsel');if(fs)fs.onchange=()=>{fag=fs.value;render()};
+ const s=document.getElementById('sel');if(s)s.onchange=()=>{ag=s.value;render()};
+ m.querySelectorAll('[data-c]').forEach(el=>el.onchange=()=>{set(ag,el.dataset.c,{[el.dataset.f]:el.value});const y=scrollY;render();scrollTo(0,y)});
+ const b=document.getElementById('csv');if(b)b.onclick=()=>{const L=['agencia,condicao_id,resposta,url_evidencia,status_revisao'];
+  for(const a of D.ag)for(const c of D.conds){const g=get(a.sigla,c.id);if(g.r||g.u)L.push([a.sigla,c.id,g.r,g.u,g.s].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(','))}
+  const u=URL.createObjectURL(new Blob([L.join('\n')],{type:'text/csv'}));const e=document.createElement('a');e.href=u;e.download='imqn_respostas.csv';e.click()}}
+render();
+</script></body></html>

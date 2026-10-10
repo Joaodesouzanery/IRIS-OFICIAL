@@ -1,0 +1,1033 @@
+{
+ "verificado_em": "2026-10-10",
+ "metodo": "GET urllib, UA navegador, 2 tentativas; 401/403/429 = não sei; redirecionamento para require_login = exige login (não sei); 200 = página respondeu, NÃO confere o conteúdo",
+ "urls": {
+  "https://www.in.gov.br": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "N01"
+   ]
+  },
+  "http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13848.htm": {
+   "http": 200,
+   "final": "http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13848.htm",
+   "titulo": "L13848",
+   "classe": "verificada",
+   "usada_por": [
+    "N02"
+   ]
+  },
+  "https://brasilparticipativo.presidencia.gov.br": {
+   "http": 200,
+   "final": "https://brasilparticipativo.presidencia.gov.br",
+   "titulo": "Brasil Participativo",
+   "classe": "verificada",
+   "usada_por": [
+    "N03"
+   ]
+  },
+  "https://www.gov.br/participamaisbrasil": {
+   "http": 200,
+   "final": "https://www.gov.br/participamaisbrasil/",
+   "titulo": "Governo Federal - Participa + Brasil - Página Inicial",
+   "classe": "verificada",
+   "usada_por": [
+    "N04"
+   ]
+  },
+  "https://dados.gov.br": {
+   "http": 200,
+   "final": "https://dados.gov.br",
+   "titulo": "Portal de Dados Abertos",
+   "classe": "verificada",
+   "usada_por": [
+    "N05"
+   ]
+  },
+  "https://portalreg.mdic.gov.br": {
+   "http": 200,
+   "final": "https://portalreg.mdic.gov.br",
+   "titulo": "Portal da Regulação",
+   "classe": "verificada",
+   "usada_por": [
+    "N06"
+   ]
+  },
+  "https://www.gov.br/mdic/pt-br/acesso-a-informacao/reg/agenda-regulatoria/agencias-reguladoras": {
+   "http": 404,
+   "classe": "quebrada",
+   "usada_por": [
+    "N07"
+   ]
+  },
+  "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-reformas-economicas/manifestacoes-em-consultas-publicas-de-orgaos-reguladores": {
+   "http": 200,
+   "final": "https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-reformas-economicas/manifestacoes-em-consultas-publicas-de-orgaos-reguladores",
+   "titulo": "Manifestações em Consultas Públicas — Ministério da Fazenda",
+   "classe": "verificada",
+   "usada_por": [
+    "N08"
+   ]
+  },
+  "https://eaud.cgu.gov.br/relatorios": {
+   "http": 200,
+   "final": "https://eaud.cgu.gov.br/relatorios",
+   "titulo": "Página Inicial - Relatórios de Auditoria da CGU",
+   "classe": "verificada",
+   "usada_por": [
+    "N09"
+   ]
+  },
+  "https://pesquisa.apps.tcu.gov.br": {
+   "http": 200,
+   "final": "https://pesquisa.apps.tcu.gov.br",
+   "titulo": "Pesquisa textual | Tribunal de Contas da União",
+   "classe": "verificada",
+   "usada_por": [
+    "N10"
+   ]
+  },
+  "https://www.gov.br/casacivil/pt-br/conteudo-de-regulacao/regulacao": {
+   "http": 200,
+   "final": "https://www.gov.br/casacivil/pt-br/conteudo-de-regulacao/regulacao",
+   "titulo": "Regulação — Casa Civil",
+   "classe": "verificada",
+   "usada_por": [
+    "N11"
+   ]
+  },
+  "https://falabr.cgu.gov.br": {
+   "http": 200,
+   "final": "https://falabr.cgu.gov.br/web/home",
+   "titulo": "Fala.BR - Plataforma Integrada de Ouvidoria e Acesso à Informação",
+   "classe": "verificada",
+   "usada_por": [
+    "N12"
+   ]
+  },
+  "https://web.archive.org": {
+   "http": 200,
+   "final": "https://web.archive.org",
+   "titulo": "Wayback Machine",
+   "classe": "verificada",
+   "usada_por": [
+    "N13"
+   ]
+  },
+  "https://sei.antaq.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "N14"
+   ]
+  },
+  "https://suap.enap.gov.br/vitrine/curso/1600/": {
+   "http": 200,
+   "final": "https://suap.enap.gov.br/vitrine/curso/1600/",
+   "titulo": "Avaliação de Resultado Regulatório (ARR) - Conceitos Básicos — Enap",
+   "classe": "verificada",
+   "usada_por": [
+    "N15"
+   ]
+  },
+  "https://www.gov.br/gestao/pt-br": {
+   "http": 200,
+   "final": "https://www.gov.br/gestao/pt-br",
+   "titulo": "Ministério da Gestão e da Inovação em Serviços Públicos",
+   "classe": "verificada",
+   "usada_por": [
+    "N16"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-divulga-metodologia-para-avaliar-a-qualidade-regulatoria": {
+   "http": 401,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANATEL/AIR_MET",
+    "ANATEL/AIR_PRO"
+   ]
+  },
+  "https://informacoes.anatel.gov.br/legislacao/component/content/article/149-resolucoes-internas/1511-resolucao-interna-8": {
+   "http": 200,
+   "final": "https://informacoes.anatel.gov.br/legislacao/component/content/article/149-resolucoes-internas/1511-resolucao-interna-8",
+   "titulo": "Anatel - Anatel",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/AIR_MET",
+    "ANATEL/AIR_PRO",
+    "ANATEL/PRO"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/anatel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+   "titulo": "Consultas Públicas",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/PS"
+   ]
+  },
+  "https://apps.anatel.gov.br/ParticipaAnatel/Home.aspx": {
+   "http": 200,
+   "final": "https://apps.anatel.gov.br/ParticipaAnatel/Home.aspx",
+   "titulo": "Participa Anatel",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/PS"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/revisao-e-consolidacao-de-atos-normativos": {
+   "http": 200,
+   "final": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/revisao-e-consolidacao-de-atos-normativos",
+   "titulo": "Revisão e consolidação de atos normativos",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/EST"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/simplificacao-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/simplificacao-regulatoria",
+   "titulo": "Simplificação Regulatória",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/EST"
+   ]
+  },
+  "https://informacoes.anatel.gov.br/legislacao": {
+   "http": 200,
+   "final": "https://informacoes.anatel.gov.br/legislacao/",
+   "titulo": "Anatel - Agência Nacional de Telecomunicações",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/EST"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/2025-2026": {
+   "http": 200,
+   "final": "https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/2025-2026",
+   "titulo": "2025-2026",
+   "classe": "verificada",
+   "usada_por": [
+    "ANATEL/AGE"
+   ]
+  },
+  "https://www.gov.br/anatel/pt-br/assuntos/noticias/anatel-publica-relatorio-de-avaliacao-de-resultado-regulatorio": {
+   "http": 401,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANATEL/ARR_MET",
+    "ANATEL/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/air/saiba-mais": {
+   "http": 200,
+   "final": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/air/saiba-mais",
+   "titulo": "Saiba mais sobre Análise de Impacto Regulatório",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/AIR_MET",
+    "ANVISA/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/anvisa/pt-br/acessoainformacao/participacaosocial": {
+   "http": 200,
+   "final": "https://www.gov.br/anvisa/pt-br/acessoainformacao/participacaosocial",
+   "titulo": "Participação Social",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/PS"
+   ]
+  },
+  "https://brasilparticipativo.presidencia.gov.br/processes/Participa-anvisa": {
+   "http": 200,
+   "final": "https://brasilparticipativo.presidencia.gov.br/processes/Participa-anvisa",
+   "titulo": "Agência Nacional de Vigilância Sanitária - Anvisa - Brasil Participativo",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/PS"
+   ]
+  },
+  "https://anvisalegis.datalegis.net": {
+   "http": 200,
+   "final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=apresentacao&cod_menu=9434&cod_modulo=310",
+   "titulo": "AnvisaLegis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/EST"
+   ]
+  },
+  "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/agenda-2024-2025/construcao-da-agenda-2024-2025": {
+   "http": 200,
+   "final": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores/agenda-2024-2025",
+   "titulo": "Agenda 2024-2025",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/AGE"
+   ]
+  },
+  "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores": {
+   "http": 200,
+   "final": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/agenda-regulatoria/anteriores",
+   "titulo": "Agendas anteriores",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/AGE"
+   ]
+  },
+  "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/avaliacao-do-resultado-regulatorio/saiba-mais": {
+   "http": 200,
+   "final": "https://www.gov.br/anvisa/pt-br/assuntos/regulamentacao/avaliacao-do-resultado-regulatorio/saiba-mais",
+   "titulo": "Saiba mais sobre ARR",
+   "classe": "verificada",
+   "usada_por": [
+    "ANVISA/ARR_MET",
+    "ANVISA/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/assuntos/instrumentos-regulatorios/analise-de-impacto-regulatorio/air": {
+   "http": 404,
+   "classe": "quebrada",
+   "usada_por": [
+    "ANEEL/AIR_MET",
+    "ANEEL/AIR_PRO"
+   ]
+  },
+  "https://www.aneel.gov.br/impacto-regulatorio": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANEEL/AIR_MET",
+    "ANEEL/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social": {
+   "http": 200,
+   "final": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social",
+   "titulo": "Participação Social — Agência Nacional de Energia Elétrica",
+   "classe": "verificada",
+   "usada_por": [
+    "ANEEL/PS"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+   "titulo": "Consultas Públicas — Agência Nacional de Energia Elétrica",
+   "classe": "verificada",
+   "usada_por": [
+    "ANEEL/PS"
+   ]
+  },
+  "https://dadosabertos.aneel.gov.br/dataset/audiencias-e-consultas-publicas": {
+   "http": 200,
+   "final": "https://dadosabertos.aneel.gov.br/dataset/audiencias-e-consultas-publicas",
+   "titulo": "Audiências e Consultas Públicas - Conjunto de dados - Portal de Dados Abertos - Agência Nacional de Energia Elétrica",
+   "classe": "verificada",
+   "usada_por": [
+    "ANEEL/PS"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/assuntos/noticias/2024/consolidacao-do-estoque-regulatorio-da-aneel-entra-em-discussao": {
+   "http": 200,
+   "final": "https://www.gov.br/aneel/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//www.gov.br/aneel/pt-br/assuntos/noticias/2024/consolidacao-do-estoque-regulatorio-da-aneel-entra-em-discussao",
+   "titulo": "Agência Nacional de Energia Elétrica",
+   "classe": "exige login (não sei)",
+   "usada_por": [
+    "ANEEL/EST"
+   ]
+  },
+  "https://biblioteca.aneel.gov.br/index.html": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANEEL/EST"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria/2025-2026": {
+   "http": 200,
+   "final": "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria/2025-2026",
+   "titulo": "2025-2026 — Agência Nacional de Energia Elétrica",
+   "classe": "verificada",
+   "usada_por": [
+    "ANEEL/AGE"
+   ]
+  },
+  "https://www2.aneel.gov.br/cedoc/ren2021941.html": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANEEL/PRO"
+   ]
+  },
+  "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr": {
+   "http": 200,
+   "final": "https://www.gov.br/aneel/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+   "titulo": "Avaliação de Resultado Regulatório — Agência Nacional de Energia Elétrica",
+   "classe": "verificada",
+   "usada_por": [
+    "ANEEL/ARR_MET",
+    "ANEEL/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/air": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/air",
+   "titulo": "Análise de Impacto Regulatório - AIR — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/AIR_MET",
+    "ANTT/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/consulta-publica": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/consulta-publica",
+   "titulo": "Consulta Pública — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/PS"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/audiencia-publica": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/participacao-social/audiencia-publica",
+   "titulo": "Audiência Pública — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/PS"
+   ]
+  },
+  "https://www.gov.br/participamaisbrasil/agencia-nacional-de-transportes-terrestres": {
+   "http": 200,
+   "final": "https://www.gov.br/participamaisbrasil/agencia-nacional-de-transportes-terrestres",
+   "titulo": "Governo Federal - Participa + Brasil - Agência Nacional de Transportes Terrestres",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/PS"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/governanca/gestao-do-estoque-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/governanca/gestao-do-estoque-regulatorio",
+   "titulo": "Gestão do Estoque Regulatório — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/EST"
+   ]
+  },
+  "https://anttlegis.antt.gov.br": {
+   "http": 200,
+   "final": "https://anttlegis.antt.gov.br/action/ActionDatalegis.php?acao=apresentacao&cod_menu=9230&cod_modulo=623",
+   "titulo": "ANTTlegis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/EST"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria",
+   "titulo": "Agenda Regulatória na ANTT — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/AGE"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/painel-de-acompanhamento-da-agenda-regulatoria-antt-2025-2026-ja-esta-disponivel": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/painel-de-acompanhamento-da-agenda-regulatoria-antt-2025-2026-ja-esta-disponivel",
+   "titulo": "Painel de acompanhamento da Agenda Regulatória ANTT 2025-2026 já está disponível — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/AGE"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/documentos-orientativos-da-agenda-regulatoria/MANUALDEPROCEDIMENTOSDAAGENDAREGULATRIAaprovado1.pdf": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/documentos-orientativos-da-agenda-regulatoria/MANUALDEPROCEDIMENTOSDAAGENDAREGULATRIAaprovado1.pdf",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/PRO"
+   ]
+  },
+  "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/arr": {
+   "http": 200,
+   "final": "https://www.gov.br/antt/pt-br/acesso-a-informacao/acoes-e-programas/agenda-regulatoria/arr",
+   "titulo": "Avaliação de Resultado Regulatório – ARR — Agência Nacional de Transportes Terrestres - ANTT",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTT/ARR_MET",
+    "ANTT/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/analise-de-impacto-regulatorio-2013-air": {
+   "http": 200,
+   "final": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/analise-de-impacto-regulatorio-2013-air",
+   "titulo": "Análise de Impacto Regulatório – AIR — Agência Nacional de Aviação Civil (Anac)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/AIR_MET",
+    "ANAC/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/consultas-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+   "titulo": "Consultas e Audiências Públicas — Agência Nacional de Aviação Civil (Anac)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/PS"
+   ]
+  },
+  "https://www.gov.br/participamaisbrasil/dir-anac": {
+   "http": 200,
+   "final": "https://www.gov.br/participamaisbrasil/dir-anac",
+   "titulo": "Governo Federal - Participa + Brasil - Página Inicial",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/PS"
+   ]
+  },
+  "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/gestao-do-estoque-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria/gestao-do-estoque-regulatorio",
+   "titulo": "Gestão do Estoque Regulatório — Agência Nacional de Aviação Civil (Anac)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/EST"
+   ]
+  },
+  "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/agenda-regulatoria/agenda-regulatoria-2025-2026": {
+   "http": 200,
+   "final": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/agenda-regulatoria/agenda-regulatoria-2025-2026",
+   "titulo": "Agenda Regulatória 2025-2026 — Agência Nacional de Aviação Civil (Anac)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/AGE"
+   ]
+  },
+  "https://dados.gov.br/dataset/regulamentacao-agenda-regulatoria": {
+   "http": 401,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANAC/AGE"
+   ]
+  },
+  "https://www.anac.gov.br/assuntos/legislacao/legislacao-1/instrucoes-normativas/2020/instrucao-normativa-no-154-20-03-2020": {
+   "http": null,
+   "erro": "[Errno 54] Connection reset by peer",
+   "classe": "inacessível (não sei)",
+   "usada_por": [
+    "ANAC/PRO"
+   ]
+  },
+  "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/anac/pt-br/acesso-a-informacao/participacao-social/governanca-regulatoria",
+   "titulo": "Governança Regulatória — Agência Nacional de Aviação Civil (Anac)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANAC/ARR_MET",
+    "ANAC/ARR_PRO"
+   ]
+  },
+  "https://juris.antaq.gov.br/index.php/tag/analise-de-impacto-regulatorio-air/": {
+   "http": null,
+   "erro": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+   "classe": "inacessível (não sei)",
+   "usada_por": [
+    "ANTAQ/AIR_MET",
+    "ANTAQ/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air-3": {
+   "http": 200,
+   "final": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air-3",
+   "titulo": "Análise de Impacto Regulatório - AIR — Agência Nacional de Transportes Aquaviários (ANTAQ)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTAQ/AIR_MET",
+    "ANTAQ/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/antaq/pt-br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas",
+   "titulo": "Audiências e Consultas Públicas — Agência Nacional de Transportes Aquaviários (ANTAQ)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTAQ/PS"
+   ]
+  },
+  "https://juris.antaq.gov.br": {
+   "http": null,
+   "erro": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+   "classe": "inacessível (não sei)",
+   "usada_por": [
+    "ANTAQ/EST"
+   ]
+  },
+  "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria-ar/14.BoletimAR20252028fevereiro26.pdf": {
+   "http": 200,
+   "final": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria-ar/14.BoletimAR20252028fevereiro26.pdf",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTAQ/AGE"
+   ]
+  },
+  "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/PlanoAnualdeGovernanaRegulatria2026191125_documento.pdf": {
+   "http": 200,
+   "final": "https://www.gov.br/antaq/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/PlanoAnualdeGovernanaRegulatria2026191125_documento.pdf",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANTAQ/PRO",
+    "ANTAQ/ARR_MET",
+    "ANTAQ/ARR_PRO"
+   ]
+  },
+  "https://juris.antaq.gov.br/index.php/tag/avaliacao-de-resultado-regulatorio-arr/": {
+   "http": null,
+   "erro": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+   "classe": "inacessível (não sei)",
+   "usada_por": [
+    "ANTAQ/ARR_MET",
+    "ANTAQ/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/assuntos/analise-de-impacto-regulatorio-air": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/assuntos/analise-de-impacto-regulatorio-air",
+   "titulo": "Análise de Impacto Regulatório (AIR) — Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/AIR_MET",
+    "ANP/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/assuntos/consultas-e-audiencias-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/assuntos/consultas-e-audiencias-publicas",
+   "titulo": "Consultas e Audiências Públicas — Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/PS"
+   ]
+  },
+  "https://brasilparticipativo.presidencia.gov.br/processes/ANP-13-2026": {
+   "http": 200,
+   "final": "https://brasilparticipativo.presidencia.gov.br/processes/ANP-13-2026",
+   "titulo": "Consulta e Audiência Públicas ANP nº 13/2026 - Brasil Participativo",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/PS"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/acesso-a-informacao/agenda-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/acesso-a-informacao/agenda-regulatoria",
+   "titulo": "Agenda Regulatória — Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/AGE"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/acesso-a-informacao/ar/ar-2025-2026-rev-set.pdf": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/acesso-a-informacao/ar/ar-2025-2026-rev-set.pdf",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/AGE"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/acesso-a-informacao/arq/manual-boas-praticas-regulatorias.pdf": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/acesso-a-informacao/arq/manual-boas-praticas-regulatorias.pdf",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/PRO"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/plano-de-gestao-anual": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/plano-de-gestao-anual",
+   "titulo": "Plano de Gestão Anual — Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/PRO"
+   ]
+  },
+  "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/agenda-de-avaliacao-de-resultado-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/anp/pt-br/acesso-a-informacao/acoes-e-programas/agenda-de-avaliacao-de-resultado-regulatorio",
+   "titulo": "Agenda de Avaliação de Resultado Regulatório — Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+   "classe": "verificada",
+   "usada_por": [
+    "ANP/ARR_MET",
+    "ANP/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/air-realizadas": {
+   "http": 200,
+   "final": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/air-realizadas",
+   "titulo": "AIR Realizadas - v2 — Agência Nacional de Águas e Saneamento Básico (ANA)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/AIR_MET",
+    "ANA/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/analise-de-impacto-regulatorio-air/iqair/relatorio-resultados-2020-2024-final.pdf": {
+   "http": 404,
+   "classe": "quebrada",
+   "usada_por": [
+    "ANA/AIR_MET",
+    "ANA/AIR_PRO"
+   ]
+  },
+  "https://participacao-social.ana.gov.br": {
+   "http": 200,
+   "final": "https://participacao-social.ana.gov.br",
+   "titulo": "Sistema de Participação Social",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/PS"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/legislacao/resolucoes/resolucoes-regulatorias": {
+   "http": 200,
+   "final": "https://www.gov.br/ana/pt-br/legislacao/resolucoes/resolucoes-regulatorias",
+   "titulo": "Resoluções Regulatórias — Agência Nacional de Águas e Saneamento Básico (ANA)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/EST"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/agenda-regulatoria",
+   "titulo": "Agenda Regulatória — Agência Nacional de Águas e Saneamento Básico (ANA)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/AGE"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/programa-de-qualidade-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/programa-de-qualidade-regulatoria",
+   "titulo": "Programa de Qualidade Regulatória — Agência Nacional de Águas e Saneamento Básico (ANA)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/PRO"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/avaliacao-de-resultado-regulatorio": {
+   "http": 404,
+   "classe": "quebrada",
+   "usada_por": [
+    "ANA/ARR_MET",
+    "ANA/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/monitoramento-e-avaliacao-de-resultado-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/ana/pt-br/assuntos/governanca-regulatoria/monitoramento-e-avaliacao-de-resultado-regulatorio",
+   "titulo": "Monitoramento e Avaliação de Resultado Regulatório - ARR — Agência Nacional de Águas e Saneamento Básico (ANA)",
+   "classe": "verificada",
+   "usada_por": [
+    "ANA/ARR_MET",
+    "ANA/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/governanca-regulatoria/copy_of_analise-de-impacto-regulatorio-air": {
+   "http": 200,
+   "final": "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/governanca-regulatoria/copy_of_analise-de-impacto-regulatorio-air",
+   "titulo": "Análise de Impacto Regulatório (AIR) — Agência Nacional de Saúde Suplementar",
+   "classe": "verificada",
+   "usada_por": [
+    "ANS/AIR_MET",
+    "ANS/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/ans/pt-br/consultas-publicas-em-andamento": {
+   "http": 200,
+   "final": "https://www.gov.br/ans/pt-br/consultas-publicas-em-andamento",
+   "titulo": "Consultas Públicas em andamento — Agência Nacional de Saúde Suplementar",
+   "classe": "verificada",
+   "usada_por": [
+    "ANS/PS"
+   ]
+  },
+  "https://www.ans.gov.br/participacao-da-sociedade/consultas-e-participacoes-publicas": {
+   "http": 200,
+   "final": "https://www.ans.gov.br/participacao-da-sociedade/consultas-e-participacoes-publicas",
+   "titulo": "Consultas e Participações Públicas  - ANS - Agência Nacional de Saúde Suplementar",
+   "classe": "verificada",
+   "usada_por": [
+    "ANS/PS"
+   ]
+  },
+  "https://bvsms.saude.gov.br/bvs/saudelegis/ans": {
+   "http": 403,
+   "classe": "bloqueada (não sei)",
+   "usada_por": [
+    "ANS/EST"
+   ]
+  },
+  "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/agenda-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/agenda-regulatoria",
+   "titulo": "Agenda Regulatória — Agência Nacional de Saúde Suplementar",
+   "classe": "verificada",
+   "usada_por": [
+    "ANS/AGE"
+   ]
+  },
+  "https://bvsms.saude.gov.br/bvs/saudelegis/ans/2021/res0071_17_06_2021.html": {
+   "http": 200,
+   "final": "https://bvsms.saude.gov.br/bvs/saudelegis/ans/2021/res0071_17_06_2021.html",
+   "titulo": "Ministrio da Sade",
+   "classe": "verificada",
+   "usada_por": [
+    "ANS/PRO"
+   ]
+  },
+  "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/plano-de-gestao-anual": {
+   "http": 200,
+   "final": "https://www.gov.br/ans/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/plano-de-gestao-anual",
+   "titulo": "Agência Nacional de Saúde Suplementar",
+   "classe": "exige login (não sei)",
+   "usada_por": [
+    "ANS/PRO"
+   ]
+  },
+  "https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/agenda-de-avaliacao-de-resultado-regulatorio-arr": {
+   "http": 200,
+   "final": "https://www.gov.br/ans/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/agenda-de-avaliacao-de-resultado-regulatorio-arr",
+   "titulo": "Agência Nacional de Saúde Suplementar",
+   "classe": "exige login (não sei)",
+   "usada_por": [
+    "ANS/ARR_MET",
+    "ANS/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air/relatorios-air": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/analise-de-impacto-regulatorio-air/relatorios-air",
+   "titulo": "Relatórios de AIR — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/AIR_MET",
+    "ANM/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/audiencias-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/audiencias-publicas",
+   "titulo": "Audiências Públicas — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/PS"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/consultas-publicas": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
+   "titulo": "Consultas Públicas — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/PS"
+   ]
+  },
+  "https://www.gov.br/participamaisbrasil/agencia-nacional-de-mineracao": {
+   "http": 200,
+   "final": "https://www.gov.br/participamaisbrasil/agencia-nacional-de-mineracao",
+   "titulo": "Governo Federal - Participa + Brasil - Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/PS"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/governanca-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/governanca-regulatoria",
+   "titulo": "Governança Regulatória — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/AGE"
+   ]
+  },
+  "https://www.gov.br/participamaisbrasil/agenda-regulatoria-anm": {
+   "http": 200,
+   "final": "https://www.gov.br/participamaisbrasil/agenda-regulatoria-anm",
+   "titulo": "Governo Federal - Participa + Brasil - Tomada de Subsídios nº 1/2024: elaboração da Agenda Regulatória 2025/2026",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/AGE"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-lanca-manual-e-cartilha-sobre-processos-de-participacao-e-controle-social": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-lanca-manual-e-cartilha-sobre-processos-de-participacao-e-controle-social",
+   "titulo": "ANM lança manual e cartilha sobre Processos de Participação e Controle Social — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/PRO"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-ganha-selo-de-boas-praticas-regulatorias": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/assuntos/noticias/anm-ganha-selo-de-boas-praticas-regulatorias",
+   "titulo": "ANM ganha Selo de Boas Práticas Regulatórias — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/PRO"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/avaliacao-de-resultado-regulatorio-arr",
+   "titulo": "Avaliação de Resultado Regulatório (ARR) — Agência Nacional de Mineração",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/ARR_MET",
+    "ANM/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria/agenda-e-relatorios-de-arr/agenda-arr_2023-a-2026": {
+   "http": 200,
+   "final": "https://www.gov.br/anm/pt-br/acesso-a-informacao/acoes-e-programas/governanca-regulatoria/agenda-regulatoria/agenda-e-relatorios-de-arr/agenda-arr_2023-a-2026",
+   "titulo": "",
+   "classe": "verificada",
+   "usada_por": [
+    "ANM/ARR_MET",
+    "ANM/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/analise-de-impacto-regulatorio-e-avaliacao-de-resultado-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/analise-de-impacto-regulatorio-e-avaliacao-de-resultado-regulatorio",
+   "titulo": "Análise de Impacto Regulatório &amp; Avaliação de Resultado Regulatório",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/AIR_MET",
+    "ANCINE/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social-novo/consultas-publicas-da-ancine": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social-novo/consultas-publicas-da-ancine",
+   "titulo": "Consultas Públicas da ANCINE",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/PS"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social/consulta-publica/encerradas": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/participacao-social/consulta-publica/encerradas",
+   "titulo": "Consultas Públicas Encerradas",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/PS"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-regulatoria": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-regulatoria",
+   "titulo": "Agenda Regulatória",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/AGE"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/acesso-a-informacao/institucional/competencias/plano-de-gestao-anual": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/institucional/competencias/plano-de-gestao-anual",
+   "titulo": "Plano de Gestão Anual",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/PRO"
+   ]
+  },
+  "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-de-arr": {
+   "http": 200,
+   "final": "https://www.gov.br/ancine/pt-br/assuntos/atribuicoes-ancine/regulacao/agenda-de-arr",
+   "titulo": "Agenda de ARR",
+   "classe": "verificada",
+   "usada_por": [
+    "ANCINE/ARR_MET",
+    "ANCINE/ARR_PRO"
+   ]
+  },
+  "https://www.gov.br/anpd/pt-br/assuntos/regulacao/analise-de-impacto-regulatorio-1": {
+   "http": 200,
+   "final": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/analise-de-impacto-regulatorio",
+   "titulo": "Análise de Impacto Regulatório",
+   "classe": "verificada",
+   "usada_por": [
+    "ANPD/AIR_MET",
+    "ANPD/AIR_PRO"
+   ]
+  },
+  "https://www.gov.br/anpd/pt-br/assuntos/regulacao/consultas_a_sociedade": {
+   "http": 200,
+   "final": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/consultas_a_sociedade",
+   "titulo": "Consultas à Sociedade",
+   "classe": "verificada",
+   "usada_por": [
+    "ANPD/PS"
+   ]
+  },
+  "https://www.gov.br/anpd/pt-br/acesso-a-informacao/participacao-social": {
+   "http": 200,
+   "final": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/participacao-social",
+   "titulo": "Participação Social",
+   "classe": "verificada",
+   "usada_por": [
+    "ANPD/PS"
+   ]
+  },
+  "https://www.gov.br/anpd/pt-br/assuntos/regulacao/agenda-regulatoria-1": {
+   "http": 200,
+   "final": "https://www.gov.br/anpd/pt-br/assuntos/regulacao/agenda-regulatoria-1",
+   "titulo": "Agenda Regulatória",
+   "classe": "verificada",
+   "usada_por": [
+    "ANPD/AGE"
+   ]
+  },
+  "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio": {
+   "http": 200,
+   "final": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio",
+   "titulo": "ANPD abre tomadas de subsídios sobre próxima agenda regulatória e avaliação do resultado regulatório",
+   "classe": "verificada",
+   "usada_por": [
+    "ANPD/ARR_MET",
+    "ANPD/ARR_PRO"
+   ]
+  }
+ },
+ "achados": [
+  {
+   "achado": "Decreto 10.139/2019 revogado",
+   "confirmado": true,
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d10139.htm",
+   "trecho": "(Revogado pelo Decreto nº 12.002, de 2024)",
+   "pendente": "conferir quais artigos do 12.002 substituem os citados na dimensão Estoque"
+  }
+ ],
+ "resumo": {
+  "bloqueada (não sei)": 9,
+  "verificada": 92,
+  "quebrada": 4,
+  "exige login (não sei)": 3,
+  "inacessível (não sei)": 4
+ }
+}
